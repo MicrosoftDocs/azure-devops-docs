@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Trello with VSTS
-description: Use Trello with your VSTS account
+title: Trello with Azure DevOps Services
+description: Use Trello with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -12,28 +12,28 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Trello with VSTS
+# Trello with Azure DevOps Services
 
-Create cards and lists in Trello in response to events from VSTS.
+Create cards and lists in Trello in response to events from Azure DevOps Services.
 For example, when code is pushed, or a build occurs.
 
 ## Get a Trello authorization token
 
 1. If you don't have a Trello account, get one [here](https://trello.com/signup).
 
-2. Go to the [Authorize VSTS for Trello page](https://trello.com/1/authorize?key=7d6630fd03ac2b6fc9fde2f2ef0c4096&name=Visual%20Studio%20Online&expiration=never&response_type=token&scope=read%2cwrite), and sign in with your Trello credentials.
+2. Go to the [Authorize Azure DevOps Services for Trello page](https://trello.com/1/authorize?key=7d6630fd03ac2b6fc9fde2f2ef0c4096&name=Visual%20Studio%20Online&expiration=never&response_type=token&scope=read%2cwrite), and sign in with your Trello credentials.
 
-3. Allow VSTS to use your Trello account.
+3. Allow Azure DevOps Services to use your Trello account.
 
-   <img alt="Allow VSTS" src="./_img/trello/allow.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Allow Azure DevOps Services" src="./_img/trello/allow.png" style="border: 1px solid #CCCCCC" />
 
 4. Copy the authorization token.
 
    <img alt="Trello authorization token" src="./_img/trello/authorization-token.png" style="border: 1px solid #CCCCCC" />
 
-Create a Trello card or list from a VSTS event
+Create a Trello card or list from an Azure DevOps Services event.
 
-0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
@@ -96,7 +96,7 @@ To understand what fields are available to use, look at the [events reference](.
 
 Work item fields appear in the event in the fields array, like this:
 
-```json
+```
     " fields": {
                 " System.AreaPath": "Fabrikam-Fiber-Git", 
                 " System.TeamProject": "Fabrikam-Fiber-Git", 
@@ -109,7 +109,7 @@ Work item fields appear in the event in the fields array, like this:
                 " System.ChangedDate": "2014-11-05T21:11:29.23Z", 
                 " System.ChangedBy": "Normal Paulk", 
                 " System.Title": "Test PBI", 
-                " Microsoft.VSTS.Common.BacklogPriority": 999999999, 
+                " Microsoft.Azure DevOps Services.Common.BacklogPriority": 999999999, 
                 " WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New"
            },
 ```
@@ -120,7 +120,7 @@ Working directly from the event definition, we would have created our card name 
     {{workitem.fields["System.workItemType"]}} #{{workitem.fields["System.id"]}: {{workitem.fields["System.title"]}}
 ```
 
-As a shortcut, you can reference any fields in the System or Microsoft.VSTS.Common namespaces
+As a shortcut, you can reference any fields in the System or Microsoft.Azure DevOps Services.Common namespaces
 as if they were fields of the resource.
 So ```{{workitem.fields["System.workItemType"]}}``` becomes ```{{workitem.workItemType}}```.
 
@@ -141,7 +141,7 @@ Handlerbars paths          | ...<br/>this<br/>For example, ```{{../comment/id}}`
 Template comments          | ```{{!-- this is a handlebar comment --}}``` 
 
 ## Pricing
-VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

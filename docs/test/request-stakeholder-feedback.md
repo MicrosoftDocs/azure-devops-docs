@@ -1,6 +1,6 @@
 ---
-title: Request stakeholder feedback using the Test &amp; Feedback extension
-description: Request stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
+title: Request stakeholder feedback
+description: Request stakeholder feedback in Azure DevOps or TFS using the Exploratory Testing browser extension
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
 ms.prod: devops
 ms.technology: devops-test
@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 [!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
 
 <a name="request"></a>
 ## Request feedback from stakeholders
 
-Request feedback from stakeholders directly from a VSTS or TFS work item. 
+Request feedback from stakeholders directly from an Azure DevOps or TFS work item. 
 
 1. Open the work item form for the user story or feature for which
    you want to request feedback.

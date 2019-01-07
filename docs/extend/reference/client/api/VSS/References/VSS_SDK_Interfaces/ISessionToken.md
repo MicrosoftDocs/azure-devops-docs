@@ -1,6 +1,6 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces ISessionToken API | Extensions for Visual Studio Team Services
-description: Session token whose value can be added to the Authorization header in requests to VSTS endpoints
+title: VSS/References/VSS.SDK.Interfaces ISessionToken API | Extensions for Azure DevOps Services
+description: Session token whose value can be added to the Authorization header in requests to Azure DevOps Services endpoints
 ms.assetid: e31f5820-ea3a-0adc-0975-118982dcb331
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 Defined in vss.d.ts
 
 
-Session token whose value can be added to the Authorization header in requests to VSTS endpoints 
+Session token whose value can be added to the Authorization header in requests to Azure DevOps Services endpoints 
 
 ### Members
 

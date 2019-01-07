@@ -1,10 +1,10 @@
 ---
-title: Work Items | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work items programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Work Items | REST API Reference for Team Foundation Server
+description: Work with work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 2762B459-BD46-493C-998F-A14EE1DA4C94
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/23/2016
 ---
 
 # Work items
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -91,19 +94,97 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={versio
 | Parameter         | Type 	                                                            | Default | Notes
 |:------------------|:------------------------------------------------------------------|:--------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                                            |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                                            |         | TFS server name ({server:port}).
 | Query
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | ids				| string                                                            |         | A comma-separated list of up to 200 IDs of the work items to get.
 | fields	    	| string                                                            |         | A comma-separated list of up to 100 fields to get with each work item.<br/>If not specified, all fields with values are returned. Calculated fields such as Attached File Count must be specifically queried for using this parameter.
-| asOf				| [DateTime](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) |         | Gets the work items as they existed at this time.
+| asOf				| [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) |         | Gets the work items as they existed at this time.
 | $expand			| enum { all, relations, none }										| none    | Gets work item relationships (work item links, hyperlinks, file attachments, etc.).
 | ErrorPolicy		| string { throw, omit }                                            | throw   | Determines if the call will throw an error when encountering a work item (default behavior) that doesn't exist or simply omit it.
 
 ###	By IDs
 <a name="byids" />
 
-[!code-REST [GET__wit_workitems_ids-_ids__json](./_data/workitems/GET__wit_WorkItems_ids-_ids_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "id": 297,
+      "rev": 1,
+      "fields": {
+        "System.AreaPath": "Fabrikam-Fiber-Git",
+        "System.TeamProject": "Fabrikam-Fiber-Git",
+        "System.IterationPath": "Fabrikam-Fiber-Git",
+        "System.WorkItemType": "Product Backlog Item",
+        "System.State": "New",
+        "System.Reason": "New backlog item",
+        "System.CreatedDate": "2014-12-29T20:49:20.77Z",
+        "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.ChangedDate": "2014-12-29T20:49:20.77Z",
+        "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.Title": "Customer can sign in using their Microsoft Account",
+        "Microsoft.VSTS.Scheduling.Effort": 8,
+        "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
+        "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
+    },
+    {
+      "id": 299,
+      "rev": 7,
+      "fields": {
+        "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+        "System.TeamProject": "Fabrikam-Fiber-Git",
+        "System.IterationPath": "Fabrikam-Fiber-Git",
+        "System.WorkItemType": "Task",
+        "System.State": "To Do",
+        "System.Reason": "New task",
+        "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+        "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+        "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.ChangedDate": "2014-12-29T20:49:28.74Z",
+        "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.Title": "JavaScript implementation for Microsoft Account",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+        "System.Description": "Follow the code samples from MSDN",
+        "System.Tags": "Tag1; Tag2"
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    {
+      "id": 300,
+      "rev": 1,
+      "fields": {
+        "System.AreaPath": "Fabrikam-Fiber-Git",
+        "System.TeamProject": "Fabrikam-Fiber-Git",
+        "System.IterationPath": "Fabrikam-Fiber-Git",
+        "System.WorkItemType": "Task",
+        "System.State": "To Do",
+        "System.Reason": "New task",
+        "System.CreatedDate": "2014-12-29T20:49:22.103Z",
+        "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.ChangedDate": "2014-12-29T20:49:22.103Z",
+        "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.Title": "Unit Testing for MSA login",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 3,
+        "System.Description": "We need to ensure we have coverage to prevent regressions"
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300"
+    }
+  ]
+}
+```
+
 
 ### Sample code
 
@@ -113,7 +194,54 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={versio
 ###	With specific fields
 <a name="withspecificfields" />
 
-[!code-REST [GET__wit_workitems_ids-_ids__fields-_columns__json](./_data/workitems/GET__wit_WorkItems_ids-_ids__fields-_columns_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fields=System.Id,System.Title,System.WorkItemType,Microsoft.VSTS.Scheduling.RemainingWork&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "id": 297,
+      "rev": 1,
+      "fields": {
+        "System.Id": 297,
+        "System.WorkItemType": "Product Backlog Item",
+        "System.Title": "Customer can sign in using their Microsoft Account"
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
+    },
+    {
+      "id": 299,
+      "rev": 7,
+      "fields": {
+        "System.Id": 299,
+        "System.WorkItemType": "Task",
+        "System.Title": "JavaScript implementation for Microsoft Account",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 4
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    {
+      "id": 300,
+      "rev": 1,
+      "fields": {
+        "System.Id": 300,
+        "System.WorkItemType": "Task",
+        "System.Title": "Unit Testing for MSA login",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 3
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300"
+    }
+  ]
+}
+```
+
 
 #### Sample code
 
@@ -123,7 +251,54 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={versio
 ###	As of a date
 <a name="asofdate" />
 
-[!code-REST [GET__wit_workitems_ids-_ids__fields-_columns__asOf-_asof__json](./_data/workitems/GET__wit_WorkItems_ids-_ids__fields-_columns__asOf-_asof_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fields=System.Id,System.Title,System.WorkItemType,Microsoft.VSTS.Scheduling.RemainingWork&asOf=2014-12-29T20:49:22.103Z&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "id": 297,
+      "rev": 1,
+      "fields": {
+        "System.Id": 297,
+        "System.WorkItemType": "Product Backlog Item",
+        "System.Title": "Customer can sign in using their Microsoft Account"
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
+    },
+    {
+      "id": 299,
+      "rev": 1,
+      "fields": {
+        "System.Id": 299,
+        "System.WorkItemType": "Task",
+        "System.Title": "JavaScript implementation for Microsoft Account",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 4
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    {
+      "id": 300,
+      "rev": 1,
+      "fields": {
+        "System.Id": 300,
+        "System.WorkItemType": "Task",
+        "System.Title": "Unit Testing for MSA login",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 3
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300"
+    }
+  ]
+}
+```
+
 
 #### Sample code
 
@@ -133,7 +308,268 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={versio
 ###  With links and attachments
 <a name="withlinksandattachments" />
 
-[!code-REST [GET__wit_workitems_ids-_ids___expand-relations_json](./_data/workitems/GET__wit_WorkItems_ids-_ids___expand-all.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&$expand=all&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "id": 297,
+      "rev": 1,
+      "fields": {
+        "System.Id": 297,
+        "System.AreaId": 3570,
+        "System.AreaPath": "Fabrikam-Fiber-Git",
+        "System.NodeName": "Fabrikam-Fiber-Git",
+        "System.TeamProject": "Fabrikam-Fiber-Git",
+        "System.AreaLevel1": "Fabrikam-Fiber-Git",
+        "System.Rev": 1,
+        "System.AuthorizedDate": "2014-12-29T20:49:20.77Z",
+        "System.RevisedDate": "9999-01-01T00:00:00Z",
+        "System.IterationId": 3570,
+        "System.IterationPath": "Fabrikam-Fiber-Git",
+        "System.IterationLevel1": "Fabrikam-Fiber-Git",
+        "System.WorkItemType": "Product Backlog Item",
+        "System.State": "New",
+        "System.Reason": "New backlog item",
+        "System.CreatedDate": "2014-12-29T20:49:20.77Z",
+        "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.ChangedDate": "2014-12-29T20:49:20.77Z",
+        "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.AuthorizedAs": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.PersonId": 77331,
+        "System.Watermark": 607,
+        "System.Title": "Customer can sign in using their Microsoft Account",
+        "Microsoft.VSTS.Scheduling.Effort": 8,
+        "WEF_6CB513B6E70E43499D9FC94E5BBFB784_System.ExtensionMarker": true,
+        "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
+        "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299",
+          "attributes": {
+            "isLocked": false,
+            "comment": "decomposition of work"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+          "attributes": {
+            "isLocked": false
+          }
+        },
+        {
+          "rel": "AttachedFile",
+          "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/098a279a-60b9-40a8-868b-b7fd00c0a439",
+          "attributes": {
+            "authorizedDate": "2014-12-29T20:49:20.77Z",
+            "id": 65273,
+            "resourceCreatedDate": "2014-12-29T20:49:20.77Z",
+            "resourceModifiedDate": "2014-12-29T20:49:20.77Z",
+            "revisedDate": "9999-01-01T00:00:00Z",
+            "comment": "Spec for the work",
+            "name": "Spec.txt"
+          }
+        }
+      ],
+      "_links": {
+        "self": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
+        },
+        "workItemUpdates": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297/updates"
+        },
+        "workItemRevisions": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297/revisions"
+        },
+        "workItemHistory": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297/history"
+        },
+        "html": {
+          "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=297"
+        },
+        "workItemType": {
+          "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+        },
+        "fields": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+        }
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
+    },
+    {
+      "id": 299,
+      "rev": 7,
+      "fields": {
+        "System.Id": 299,
+        "System.AreaId": 4486,
+        "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+        "System.NodeName": "Website",
+        "System.TeamProject": "Fabrikam-Fiber-Git",
+        "System.AreaLevel1": "Fabrikam-Fiber-Git",
+        "System.AreaLevel2": "Website",
+        "System.Rev": 7,
+        "System.AuthorizedDate": "2014-12-29T20:49:28.74Z",
+        "System.RevisedDate": "9999-01-01T00:00:00Z",
+        "System.IterationId": 3570,
+        "System.IterationPath": "Fabrikam-Fiber-Git",
+        "System.IterationLevel1": "Fabrikam-Fiber-Git",
+        "System.WorkItemType": "Task",
+        "System.State": "To Do",
+        "System.Reason": "New task",
+        "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+        "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+        "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.ChangedDate": "2014-12-29T20:49:28.74Z",
+        "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.AuthorizedAs": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.PersonId": 77331,
+        "System.Watermark": 616,
+        "System.Title": "JavaScript implementation for Microsoft Account",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+        "System.Description": "Follow the code samples from MSDN",
+        "System.Tags": "Tag1; Tag2"
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+          "attributes": {
+            "isLocked": false,
+            "comment": "decomposition of work"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Related",
+          "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+          "attributes": {
+            "isLocked": false,
+            "comment": "adding another task"
+          }
+        },
+        {
+          "rel": "Hyperlink",
+          "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+          "attributes": {
+            "authorizedDate": "2014-12-29T20:49:27.98Z",
+            "id": 65275,
+            "resourceCreatedDate": "2014-12-29T20:49:27.98Z",
+            "resourceModifiedDate": "2014-12-29T20:49:27.98Z",
+            "revisedDate": "9999-01-01T00:00:00Z"
+          }
+        }
+      ],
+      "_links": {
+        "self": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+        },
+        "workItemUpdates": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+        },
+        "workItemRevisions": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+        },
+        "workItemHistory": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+        },
+        "html": {
+          "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+        },
+        "workItemType": {
+          "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+        },
+        "fields": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+        }
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    {
+      "id": 300,
+      "rev": 1,
+      "fields": {
+        "System.Id": 300,
+        "System.AreaId": 3570,
+        "System.AreaPath": "Fabrikam-Fiber-Git",
+        "System.NodeName": "Fabrikam-Fiber-Git",
+        "System.TeamProject": "Fabrikam-Fiber-Git",
+        "System.AreaLevel1": "Fabrikam-Fiber-Git",
+        "System.Rev": 1,
+        "System.AuthorizedDate": "2014-12-29T20:49:22.103Z",
+        "System.RevisedDate": "9999-01-01T00:00:00Z",
+        "System.IterationId": 3570,
+        "System.IterationPath": "Fabrikam-Fiber-Git",
+        "System.IterationLevel1": "Fabrikam-Fiber-Git",
+        "System.WorkItemType": "Task",
+        "System.State": "To Do",
+        "System.Reason": "New task",
+        "System.CreatedDate": "2014-12-29T20:49:22.103Z",
+        "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.ChangedDate": "2014-12-29T20:49:22.103Z",
+        "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.AuthorizedAs": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+        "System.PersonId": 77331,
+        "System.Watermark": 610,
+        "System.Title": "Unit Testing for MSA login",
+        "Microsoft.VSTS.Scheduling.RemainingWork": 3,
+        "System.Description": "We need to ensure we have coverage to prevent regressions"
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+          "attributes": {
+            "isLocked": false
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Related",
+          "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299",
+          "attributes": {
+            "isLocked": false,
+            "comment": "adding another task"
+          }
+        }
+      ],
+      "_links": {
+        "self": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300"
+        },
+        "workItemUpdates": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300/updates"
+        },
+        "workItemRevisions": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300/revisions"
+        },
+        "workItemHistory": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300/history"
+        },
+        "html": {
+          "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=300"
+        },
+        "workItemType": {
+          "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+        },
+        "fields": {
+          "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+        }
+      },
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300"
+    }
+  ]
+}
+```
+
 
 #### Sample code
 
@@ -150,13 +586,67 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}?api-version={v
 | Parameter         | Type 	                                                            | Default | Notes
 |:------------------|:------------------------------------------------------------------|:--------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                                            |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                                            |         | TFS server name ({server:port}).
 | id				| string                                                            |         | ID of the work item to retrieve.
 | Query
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | $expand			| enum { all, relations, none }										| none    | Gets work item relationships (work item links, hyperlinks and file attachments).
 
-[!code-REST [GET__wit_workitems__PBIId__json](./_data/workitems/GET__wit_workitems__PBIId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 309,
+  "rev": 1,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Product Backlog Item",
+    "System.State": "New",
+    "System.Reason": "New backlog item",
+    "System.CreatedDate": "2015-01-07T18:13:01.807Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2015-01-07T18:13:01.807Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "Customer can sign in using their Microsoft Account",
+    "Microsoft.VSTS.Scheduling.Effort": 8,
+    "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
+    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=309"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309"
+}
+```
+
 
 #### Sample code
 
@@ -165,12 +655,167 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}?api-version={v
 <a name="getaworkitemwithlinksandattachments" />
 ###  With links and attachments
 
-[!code-REST [GET__wit_workitems__PBIId___expand-all_json](./_data/workitems/GET__wit_workitems__PBIId___expand-relations.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?$expand=relations&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 309,
+  "rev": 1,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Product Backlog Item",
+    "System.State": "New",
+    "System.Reason": "New backlog item",
+    "System.CreatedDate": "2015-01-07T18:13:01.807Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2015-01-07T18:13:01.807Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "Customer can sign in using their Microsoft Account",
+    "Microsoft.VSTS.Scheduling.Effort": 8,
+    "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
+    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/311",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/312",
+      "attributes": {
+        "isLocked": false
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=309"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309"
+}
+```
+
 
 ###  Fully expanded
 <a name="fullyexpanded" />
 
-[!code-REST [GET__wit_workitems__PBIId___expand-all_json](./_data/workitems/GET__wit_workitems__PBIId___expand-all.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?$expand=all&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 309,
+  "rev": 1,
+  "fields": {
+    "System.Id": 309,
+    "System.AreaId": 3570,
+    "System.AreaPath": "Fabrikam-Fiber-Git",
+    "System.NodeName": "Fabrikam-Fiber-Git",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.AreaLevel1": "Fabrikam-Fiber-Git",
+    "System.Rev": 1,
+    "System.AuthorizedDate": "2015-01-07T18:13:01.807Z",
+    "System.RevisedDate": "9999-01-01T00:00:00Z",
+    "System.IterationId": 3570,
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.IterationLevel1": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Product Backlog Item",
+    "System.State": "New",
+    "System.Reason": "New backlog item",
+    "System.CreatedDate": "2015-01-07T18:13:01.807Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2015-01-07T18:13:01.807Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.AuthorizedAs": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.PersonId": 77331,
+    "System.Watermark": 649,
+    "System.Title": "Customer can sign in using their Microsoft Account",
+    "Microsoft.VSTS.Scheduling.Effort": 8,
+    "WEF_6CB513B6E70E43499D9FC94E5BBFB784_System.ExtensionMarker": true,
+    "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
+    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/311",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/312",
+      "attributes": {
+        "isLocked": false
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=309"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/309"
+}
+```
+
 
 #### Sample code
 
@@ -189,13 +834,44 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workitems/${workIte
 | Parameter         | Type 		| Notes
 |:------------------|:----------|:-------------------------------------------------------------------
 | URL
-| instance          | string	| [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string	| TFS server name ({server:port}).
 | project			| string	| Name or ID of a [project](../tfs/projects.md) where the work item type is defined.
 | workItemTypeName	| string    | Name of the [work item type](./work-item-types.md).
 | Query
 | api-version       | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__wit_workitems__Task_json](./_data/workitems/GET__wit_workitems__Task.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems/$Task?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "fields": {
+    "System.WorkItemType": "Task",
+    "System.AreaPath": "Fabrikam-Fiber-Git",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>"
+  },
+  "_links": {
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems"
+}
+```
+
 
 #### Sample code
 
@@ -271,7 +947,7 @@ Content-Type: application/json-patch+json
 | Parameter         | Type 	                                |  Notes
 |:------------------|:--------------------------------------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                | TFS server name ({server:port}).
 | project			| string								| Name or ID of a [project](../tfs/projects.md) where the work item should be created.
 | workItemTypeName	| string                                | Name of the [work item type](./work-item-types.md).
 | Query
@@ -289,7 +965,67 @@ Content-Type: application/json-patch+json
 
 If any of the new field values or relations are not valid, the work item will not be created.
 
-[!code-REST [PATCH__wit_workitems__Task_json](./_data/workitems/PATCH__wit_workitems__Task.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems/$Task?api-version=1.0
+```
+```json
+[
+  {
+    "op": "add",
+    "path": "/fields/System.Title",
+    "value": "JavaScript implementation for Microsoft Account"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 298,
+  "rev": 1,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.CreatedDate": "2014-12-29T20:49:21.21Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:21.21Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account"
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/298"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/298/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/298/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/298/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=298"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/298"
+}
+```
+
 
 #### Sample code
 
@@ -298,7 +1034,106 @@ If any of the new field values or relations are not valid, the work item will no
 <a name="withaworkitemlink" />
 ### With a work item link
 
-[!code-REST [PATCH__wit_workitems__Task2_json](./_data/workitems/PATCH__wit_workitems__Task2.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems/$Task?api-version=1.0
+```
+```json
+[
+  {
+    "op": "add",
+    "path": "/fields/System.Title",
+    "value": "JavaScript implementation for Microsoft Account"
+  },
+  {
+    "op": "add",
+    "path": "/fields/Microsoft.VSTS.Scheduling.RemainingWork",
+    "value": 4
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.Description",
+    "value": "Follow the code samples from MSDN"
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.History",
+    "value": "Jim has the most context around this."
+  },
+  {
+    "op": "add",
+    "path": "/relations/-",
+    "value": {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "comment": "decomposition of work"
+      }
+    }
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 1,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:21.617Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.History": "Jim has the most context around this."
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -340,7 +1175,7 @@ Content-Type: application/json-patch+json
 | Parameter         | Type 	                                |  Notes
 |:------------------|:--------------------------------------|:-------------------------------------------------------------------
 | URL
-| instance          | string                                | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string                                | TFS server name ({server:port}).
 | id				| string                               	| ID of the work item to retrieve.
 | Query
 | api-version       | string                                | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -360,7 +1195,90 @@ If any of the new field values or relations are not valid, or if the work item h
 ### Update a field
 <a name="updateafield" />
 
-[!code-REST [PATCH__wit_workitems__taskId__json](./_data/workitems/PATCH__wit_workitems__taskId_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 1
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.AreaPath",
+    "value": "Fabrikam-Fiber-Git\\Website"
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.History",
+    "value": "Moving to the right area path"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 2,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:23.933Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.History": "Moving to the right area path"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -373,7 +1291,87 @@ If any of the new field values or relations are not valid, or if the work item h
 
 In order to move a work item, we need to update 3 fields (System.TeamProject, System.AreaPath and System.IterationPath). The below example shows that a work item was moved to a destination project (Fabrikam-Scrum). 
 
-[!code-REST [PATCH__wit_workitems__taskId__json](./_data/witChangeProjectAndType/PATCH__wit_workitems__bug1Id_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/398?api-version=1.0
+```
+```json
+[
+  {
+    "op": "add",
+    "path": "/fields/System.TeamProject",
+    "value": "Fabrikam-Scrum"
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.AreaPath",
+    "value": "Fabrikam-Scrum"
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.IterationPath",
+    "value": "Fabrikam-Scrum"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 398,
+  "rev": 2,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Scrum",
+    "System.TeamProject": "Fabrikam-Scrum",
+    "System.IterationPath": "Fabrikam-Scrum",
+    "System.WorkItemType": "Bug",
+    "System.State": "New",
+    "System.Reason": "New defect reported",
+    "System.CreatedDate": "2016-04-07T16:42:06.55Z",
+    "System.CreatedBy": "Chuck Reinhart <fabrikamfiber3@hotmail.com>",
+    "System.ChangedDate": "2016-04-07T16:42:07.737Z",
+    "System.ChangedBy": "Chuck Reinhart <fabrikamfiber3@hotmail.com>",
+    "System.Title": "First bug",
+    "System.BoardColumn": "New",
+    "System.BoardColumnDone": false,
+    "Microsoft.VSTS.Common.StateChangeDate": "2016-04-07T16:42:06.55Z",
+    "Microsoft.VSTS.Common.Priority": 2,
+    "Microsoft.VSTS.Common.Severity": "3 - Medium",
+    "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column": "New",
+    "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done": false,
+    "Microsoft.VSTS.Common.ValueArea": "Business",
+    "WEF_F571AABFDCE945628B5E816FF5294898_Kanban.Column": "New",
+    "WEF_F571AABFDCE945628B5E816FF5294898_Kanban.Column.Done": false
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=398"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/b5c43ab0-20bb-44df-9690-7d3ea77c31cc/_apis/wit/workItemTypes/Bug"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398"
+}
+```
+
 
 #### Sample code
 
@@ -387,7 +1385,80 @@ In order to move a work item, we need to update 3 fields (System.TeamProject, Sy
 
 In order to change a work item type, we need to update the System.WorkItemType field as well as any required fields on the target work item type. In the sample request below a Bug work item was converted to a Task.
 
-[!code-REST [PATCH__wit_workitems__taskId__json](./_data/witChangeProjectAndType/PATCH__wit_workitems__bug1Id_2.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/398?api-version=1.0
+```
+```json
+[
+  {
+    "op": "add",
+    "path": "/fields/System.WorkItemType",
+    "value": "Task"
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.State",
+    "value": "To Do"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 398,
+  "rev": 3,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Scrum",
+    "System.TeamProject": "Fabrikam-Scrum",
+    "System.IterationPath": "Fabrikam-Scrum",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New defect reported",
+    "System.CreatedDate": "2016-04-07T16:42:06.55Z",
+    "System.CreatedBy": "Chuck Reinhart <fabrikamfiber3@hotmail.com>",
+    "System.ChangedDate": "2016-04-07T16:42:08.167Z",
+    "System.ChangedBy": "Chuck Reinhart <fabrikamfiber3@hotmail.com>",
+    "System.Title": "First bug",
+    "Microsoft.VSTS.Common.StateChangeDate": "2016-04-07T16:42:08.167Z",
+    "Microsoft.VSTS.Common.Priority": 2,
+    "Microsoft.VSTS.Common.Severity": "3 - Medium",
+    "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column": "New",
+    "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done": false,
+    "Microsoft.VSTS.Common.ValueArea": "Business",
+    "WEF_F571AABFDCE945628B5E816FF5294898_Kanban.Column": "New",
+    "WEF_F571AABFDCE945628B5E816FF5294898_Kanban.Column.Done": false
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=398"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/b5c43ab0-20bb-44df-9690-7d3ea77c31cc/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/398"
+}
+```
+
 
 #### Sample code
 
@@ -396,7 +1467,105 @@ In order to change a work item type, we need to update the System.WorkItemType f
 ### Add a tag
 <a name="addatag" />
 
-[!code-REST [PATCH__wit_workitems__taskId_9_json](./_data/workitems/PATCH__wit_workitems__taskId_9.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 6
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.Tags",
+    "value": "Tag1; Tag2"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 7,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:28.74Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.Tags": "Tag1; Tag2"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    },
+    {
+      "rel": "Hyperlink",
+      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "attributes": {
+        "authorizedDate": "2014-12-29T20:49:27.98Z",
+        "id": 65275,
+        "resourceCreatedDate": "2014-12-29T20:49:27.98Z",
+        "resourceModifiedDate": "2014-12-29T20:49:27.98Z",
+        "revisedDate": "9999-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -405,7 +1574,108 @@ In order to change a work item type, we need to update the System.WorkItemType f
 ### Add a link
 <a name="addalink" />
 
-[!code-REST [PATCH__wit_workitems__taskId_3_json](./_data/workitems/PATCH__wit_workitems__taskId_3.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 3
+  },
+  {
+    "op": "add",
+    "path": "/relations/-",
+    "value": {
+      "rel": "System.LinkTypes.Dependency-forward",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "comment": "Making a new link for the dependency"
+      }
+    }
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 3,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:24.67Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.History": "Johnnie is going to take this work over."
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Dependency-Forward",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "Making a new link for the dependency"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -414,7 +1684,102 @@ In order to change a work item type, we need to update the System.WorkItemType f
 ### Update a link
 <a name="updatealink" />
 
-[!code-REST [PATCH__wit_workitems__taskId_4_json](./_data/workitems/PATCH__wit_workitems__taskId_4.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 3
+  },
+  {
+    "op": "replace",
+    "path": "/relations/2/attributes/comment",
+    "value": "Adding traceability to dependencies"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 3,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:24.67Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.History": "Johnnie is going to take this work over."
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Dependency-Forward",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "Adding traceability to dependencies"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -423,7 +1788,93 @@ In order to change a work item type, we need to update the System.WorkItemType f
 ### Remove a link
 <a name="removealink" />
 
-[!code-REST [PATCH__wit_workitems__taskId_5_json](./_data/workitems/PATCH__wit_workitems__taskId_5.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 3
+  },
+  {
+    "op": "remove",
+    "path": "/relations/2"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 3,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:24.67Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.History": "Johnnie is going to take this work over."
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -435,7 +1886,118 @@ In order to change a work item type, we need to update the System.WorkItemType f
 To attach a file to a work item,
 [upload the attachment](./attachments.md#uploadanattachment) to the attachment store, then attach it to the work item.
 
-[!code-REST [PATCH__wit_workitems__taskId_6_json](./_data/workitems/PATCH__wit_workitems__taskId_6.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 3
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.History",
+    "value": "Adding the necessary spec"
+  },
+  {
+    "op": "add",
+    "path": "/relations/-",
+    "value": {
+      "rel": "AttachedFile",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/098a279a-60b9-40a8-868b-b7fd00c0a439?fileName=Spec.txt",
+      "attributes": {
+        "comment": "Spec for the work"
+      }
+    }
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 4,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:26.99Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.History": "Adding the necessary spec"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    },
+    {
+      "rel": "AttachedFile",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/098a279a-60b9-40a8-868b-b7fd00c0a439",
+      "attributes": {
+        "authorizedDate": "2014-12-29T20:49:26.99Z",
+        "id": 65274,
+        "resourceCreatedDate": "2014-12-29T20:49:26.99Z",
+        "resourceModifiedDate": "2014-12-29T20:49:26.99Z",
+        "revisedDate": "9999-01-01T00:00:00Z",
+        "comment": "Spec for the work",
+        "name": "Spec.txt"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -444,7 +2006,92 @@ To attach a file to a work item,
 ### Remove an attachment
 <a name="removeanattachment" />
 
-[!code-REST [PATCH__wit_workitems__taskId_7_json](./_data/workitems/PATCH__wit_workitems__taskId_7.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 4
+  },
+  {
+    "op": "remove",
+    "path": "/relations/2"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 5,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:27.48Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -453,7 +2100,113 @@ To attach a file to a work item,
 ### Add a hyperlink
 <a name="addhyperlink" />
 
-[!code-REST [PATCH__wit_workitems__taskId_8_json](./_data/workitems/PATCH__wit_workitems__taskId_8.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=1.0
+```
+```json
+[
+  {
+    "op": "test",
+    "path": "/rev",
+    "value": 5
+  },
+  {
+    "op": "add",
+    "path": "/fields/System.History",
+    "value": "Linking to a blog article for context"
+  },
+  {
+    "op": "add",
+    "path": "/relations/-",
+    "value": {
+      "rel": "Hyperlink",
+      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx"
+    }
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 299,
+  "rev": 6,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Website",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Johnnie McLeod <fabrikamfiber2@hotmail.com>",
+    "System.CreatedDate": "2014-12-29T20:49:21.617Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2014-12-29T20:49:27.98Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.History": "Linking to a blog article for context"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    },
+    {
+      "rel": "Hyperlink",
+      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "attributes": {
+        "authorizedDate": "2014-12-29T20:49:27.98Z",
+        "id": 65275,
+        "resourceCreatedDate": "2014-12-29T20:49:27.98Z",
+        "resourceModifiedDate": "2014-12-29T20:49:27.98Z",
+        "revisedDate": "9999-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=299"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
+}
+```
+
 
 #### Sample code
 
@@ -464,11 +2217,104 @@ To attach a file to a work item,
 
 For scenarios, such as migration or synchronization tools, when you want to make changes to a work item that otherwise would be invalid, you may optionally choose to bypass the rules engine on a work item update.  This allows you to modify the work item fields without any restrictions, for example you can assign a work item to a user no longer in the organization.
 
-To modify the System.CreatedBy, System.CreatedDate, System.ChangedBy, or System.ChangedDate fields, you must be a member of the "Project Collection Service Acccounts" group.
+To modify the System.CreatedBy, System.CreatedDate, System.ChangedBy, or System.ChangedDate fields, you must be a member of the "Project Collection Service Accounts" group.
 
 NOTE: System.CreatedBy and System.CreatedDate can only be modified using bypass rules on work item creation, i.e. the first revision of a work item.
 
-[!code-REST [PATCH__wit_workitems__taskId__bypassRules-true_json](./_data/workitems/PATCH__wit_workitems__taskId__bypassRules-true.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/335?bypassRules=true&api-version=1.0
+```
+```json
+[
+  {
+    "op": "add",
+    "path": "/fields/System.AssignedTo",
+    "value": "Invalid Value"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "id": 335,
+  "rev": 8,
+  "fields": {
+    "System.AreaPath": "Fabrikam-Fiber-Git\\Web",
+    "System.TeamProject": "Fabrikam-Fiber-Git",
+    "System.IterationPath": "Fabrikam-Fiber-Git",
+    "System.WorkItemType": "Task",
+    "System.State": "To Do",
+    "System.Reason": "New task",
+    "System.AssignedTo": "Invalid Value",
+    "System.CreatedDate": "2015-03-06T21:34:17.777Z",
+    "System.CreatedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.ChangedDate": "2015-03-06T21:34:23.167Z",
+    "System.ChangedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
+    "System.Title": "JavaScript implementation for Microsoft Account",
+    "Microsoft.VSTS.Scheduling.RemainingWork": 4,
+    "System.Description": "Follow the code samples from MSDN",
+    "System.Tags": "Tag1; Tag2"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Reverse",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/333",
+      "attributes": {
+        "isLocked": false,
+        "comment": "decomposition of work"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Related",
+      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/336",
+      "attributes": {
+        "isLocked": false,
+        "comment": "adding another task"
+      }
+    },
+    {
+      "rel": "Hyperlink",
+      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "attributes": {
+        "authorizedDate": "2015-03-06T21:34:22.32Z",
+        "id": 135231,
+        "resourceCreatedDate": "2015-03-06T21:34:22.32Z",
+        "resourceModifiedDate": "2015-03-06T21:34:22.32Z",
+        "revisedDate": "9999-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335"
+    },
+    "workItemUpdates": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335/revisions"
+    },
+    "workItemHistory": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335/history"
+    },
+    "html": {
+      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=335"
+    },
+    "workItemType": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Task"
+    },
+    "fields": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/335"
+}
+```
+
 
 #### Sample code
 
@@ -477,7 +2323,12 @@ NOTE: System.CreatedBy and System.CreatedDate can only be modified using bypass 
 ## Delete a work item
 <a name="deleteaworkitem" />
 
-[!code-REST [DELETE__wit_workitems__taskID_json](./_data/workitems/DELETE__wit_workitems__taskId_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workitems/72?api-version=1.0
+```
+
 
 #### Sample code
 

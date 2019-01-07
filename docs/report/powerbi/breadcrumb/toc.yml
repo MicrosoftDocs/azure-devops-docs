@@ -1,11 +1,11 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps Services
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
-  - name: Reporting
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+  - name: Analytics
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/report/index
     items:
-    - name: Power BI (VSTS)
-      tocHref: /vsts/report/powerbi/
-      topicHref: /vsts/report/powerbi/index
+    - name: Power BI
+      tocHref: /azure/devops/
+      topicHref: /azure/devops/report/powerbi/index

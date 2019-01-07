@@ -78,7 +78,7 @@ ms.date: 01/12/2017
  For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 ##  <a name="changingname"></a> Changing the Name of a Mapped Enterprise Project Plan Requires You to Refresh the Mapped Team Project  
- If you save a mapped enterprise project under a different name and then publish the project to Project Server, you must refresh the mapped project. Otherwise, the new name will not appear in the **Enterprise Project** field on the **Project Server** tab. For more information, see [Refresh your Team Foundation client](../../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#refresh-the-web-portal).  
+ If you save a mapped enterprise project under a different name and then publish the project to Project Server, you must refresh the mapped project. Otherwise, the new name will not appear in the **Enterprise Project** field on the **Project Server** tab. For more information, see [Refresh your Team Foundation client](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json#refresh-the-web-portal).  
   
 ##  <a name="StressError"></a> Multiple errors and deadlock conditions may be reported under stress conditions  
  Under certain load conditions, multiple errors and deadlock conditions may be reported in the Windows event log and in the synchronization messages. For example, these messages might appear if multiple project collections are mapped to a single instance of PWA. No user action is required.  

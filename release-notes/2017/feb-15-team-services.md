@@ -3,7 +3,7 @@ title: PR usability improvements & richer GitHub build integration – Feb 15
 description: VSTS release notes for Feb 15 2017
 ms.ContentId: 9b76c2f3-39ce-4c98-9cef-237853ee0349
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
 ---
@@ -23,7 +23,7 @@ After selecting __for this account__, switch on the __Team expansion for notific
 
 ![team notification preview](_img/02_15_09.png)
 
-In a future release, we’ll be adding support for PRs assigned to Azure Active Directory (AAD) groups and teams containing AAD groups.
+In a future release, we’ll be adding support for PRs assigned to Azure Active Directory (Azure AD) groups and teams containing AAD groups.
 
 ##Improved CTAs for PR author and reviewers
 For teams using branch policies, it can sometimes be hard to know exactly what action is required when you view a pull request. If the main call to action is the __Complete__ button, does that mean it’s ready to complete? Using information about the person viewing the page and the state of configured branch policies, the PR view will now present the call to action that makes the most sense for that user.
@@ -97,7 +97,7 @@ For more information, refer to the [this post](https://aka.ms/testingwithphases)
 ##Multiple versions of Extension tasks
 Extension authors can now create extensions with multiple versions of a given task, which enables them to ship patches for each major version they have in production.
 
-See [Reference for creating custom build tasks within extensions](/vsts/integrate/extensions/develop/build-task-schema).
+See [Reference for creating custom build tasks within extensions](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/build-task-schema).
 
 ##Extension management permissions and new email notifications
 Any user or group can be given permission to manage extensions for the account. Previously, only account administrators could review extension requests or install, disable, or uninstall extensions. To grant this permission, an administrator can navigate to the __Extensions__ admin hub by opening the __Marketplace__ menu, selecting __Manage extensions__, and then click the __Security button__.
@@ -107,19 +107,19 @@ Any user or group can be given permission to manage extensions for the account. 
 Also new this sprint, a user who requests an extension is now notified via email when that request is approved or rejected.
 
 ##Updated Package Management experience
-We’ve updated the Package Management user experience to make it faster, address common user-reported issues, and make room for upcoming package lifecycle features. [Learn more about the update here](/vsts/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
+We’ve updated the Package Management user experience to make it faster, address common user-reported issues, and make room for upcoming package lifecycle features. [Learn more about the update here](https://visualstudio.microsoft.com/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
 
 ![package management](_img/02_15_19.png)
 
 ##Support for AAD conditional access
-Team Services can now be explicitly selected as the target for Azure Active Directory (AAD) conditional access policy. This lets enterprises control where and how their users can access VSTS. Visit the [Microsoft Azure documentation site](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access) to learn more about conditional access policy (CAP).
+Team Services can now be explicitly selected as the target for Azure Active Directory (Azure AD) conditional access policy. This lets enterprises control where and how their users can access VSTS. Visit the [Microsoft Azure documentation site](/azure/active-directory/active-directory-conditional-access) to learn more about conditional access policy (CAP).
 
 NOTE: CAP is enforced when a user signs into VSTS with their AAD credentials. Therefore, subsequent accesses to VSTS via mechanisms including personal access tokens, alternate authentication, OAuth and SSH keys do not fall under conditional access policy.
 
 ![aad conditional access](_img/02_15_05.png)
 
 ##Pipelines queue
-We have now moved all the Team Services accounts from the agent-based pricing model to [pipeline-based pricing model](/vsts/pipelines/licensing/concurrent-jobs-vsts). In this new model, users can run as many builds or releases concurrently as the number of pipelines configured in their account. Additional builds and releases beyond this limit are queued and wait for earlier builds and releases to complete. The __Pipelines queue__ feature provides users with more visibility into where their builds or releases are.
+We have now moved all the Team Services accounts from the agent-based pricing model to [pipeline-based pricing model](/azure/devops/pipelines/licensing/concurrent-jobs-vsts). In this new model, users can run as many builds or releases concurrently as the number of pipelines configured in their account. Additional builds and releases beyond this limit are queued and wait for earlier builds and releases to complete. The __Pipelines queue__ feature provides users with more visibility into where their builds or releases are.
 
 ![resource limits](_img/02_15_06.png)
 

@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts AgentQueueEvent API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts AgentQueueEvent API | Extensions for Azure DevOps Services
 ms.assetid: dbabcc8e-210d-59f6-596d-3662e2116e9a
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Project management 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
 ms.prod: devops
 ms.technology: devops-agile
@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 03/16/2017
 ---
 
 # Project management (CMMI)  
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use the Project Management section of the MSF for CMMI process improvement guidance to better understand how to manage, plan, and coordinate the development and maintenance of software products. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
   

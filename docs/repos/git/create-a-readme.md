@@ -1,5 +1,6 @@
 ---
-title: Create a readme for your Git repo | VSTS & TFS
+title: Create a readme for your Git repo
+titleSuffix: Azure Repos
 description: Tips, advice, and suggestions on how to create a great readme file for your Git repo.
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 # Create a README for your repo
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
 Your Git repo should have a readme file so that viewers know what your code does and how they can get started using it. 
 Your readme should speak to the following audiences:

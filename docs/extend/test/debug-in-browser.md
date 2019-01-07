@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Extension Debugging in a Browser | Extensions for VSTS
-description: How to debug your VSTS extension using browser tools.
+title: Extension Debugging in a Browser | Extensions for Azure DevOps Services
+description: How to debug your Azure DevOps Services extension using browser tools.
 ms.assetid: 8dc00666-844c-404a-9699-512261e53ddf
 ms.topic: conceptual
 ms.manager: douge
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Debug a web extension
 
-Modern web browsers, like Microsoft Edge and Google Chrome, include tools for debugging the JavaScript that runs on a web page. Usually these are referred to as the "F12 Tools", "Inspector", or "Developer Tools". Since your extension is loaded onto a VSTS page in an iframe, you can use these browser tools to debug the JavaScript portion of your extension. The standard shortcut to launch the browser developer tools is F12. 
+Modern web browsers, like Microsoft Edge and Google Chrome, include tools for debugging the JavaScript that runs on a web page. Usually these are referred to as the "F12 Tools", "Inspector", or "Developer Tools". Since your extension is loaded onto an Azure DevOps Services page in an iframe, you can use these browser tools to debug the JavaScript portion of your extension. The standard shortcut to launch the browser developer tools is F12. 
 
 ![IE11 F12 Tools](../_shared/procedures/_img/debug-in-browser/ief12tools.png)    
 *The Internet Explorer 11 F12 Tools*
@@ -58,7 +58,7 @@ Once you select your script, you can click in the gutter to set breakpoints. If 
 
 ### Viewing callback context objects
 
-Extension developers often need context information from VSTS to perform various actions. For example, an extension that adds a Work Item Action would probably be interested in details about the work item that is being viewed. When VSTS makes a call to a function contributed by an extension, it will pass an object containing relevant context information as an argument to the function. The most reliable way to determine the format of data in this callback is by using the Debugger to inspect this context object.
+Extension developers often need context information from Azure DevOps Services to perform various actions. For example, an extension that adds a Work Item Action would probably be interested in details about the work item that is being viewed. When Azure DevOps Services makes a call to a function contributed by an extension, it will pass an object containing relevant context information as an argument to the function. The most reliable way to determine the format of data in this callback is by using the Debugger to inspect this context object.
 
 1. Set a breakpoint on the first line of the function whose context object you want to inspect.
 

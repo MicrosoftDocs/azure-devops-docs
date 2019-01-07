@@ -1,5 +1,6 @@
 ---
 title: Use Visual Studio and Team Foundation Server with Git
+titleSuffix: Azure Repos
 description: Use Visual Studio and Team Foundation Server with Git
 ms.assetid: 0017E2D7-ECD9-44B9-9AF0-8279136E6B9B
 ms.prod: devops
@@ -8,13 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: 'tfs-2013'
 ---
 
 
 #  Use Visual Studio and Team Foundation Server with Git
-#### VSTS | TFS 2015 | Visual Studio 2013
+#### Azure Repos | TFS 2015 | Visual Studio 2013
 
 <table>
 <tr>
@@ -26,7 +27,7 @@ monikerRange: 'tfs-2013'
 
 <p>All this is done on your local dev machine, with no server required. When you're ready, you can quickly share your code and begin collaborating in TFS or on a third-party Git service.</p>
 
-<p>You can use Visual Studio and Git to collaborate with your team using Team Foundation Server (on-premises or on [VSTS](http://tfs.visualstudio.com/)), on [CodePlex](http://www.codeplex.com/), or on a third-party service such as GitHub or Bitbucket.</p>
+<p>You can use Visual Studio and Git to collaborate with your team using Azure DevOps Services or TFS, on [CodePlex](http://www.codeplex.com/), or on a third-party service such as GitHub or Bitbucket.</p>
 
 <ul>
 <li>[Get started using Git](gitquickstart.md)</li>
@@ -35,7 +36,7 @@ monikerRange: 'tfs-2013'
 <li>[Rebase a topic branch in Visual Studio](rebase.md)</li>
 <li>[Work from the Git command prompt](command-prompt.md)</li>
 <li>[Rename a Git repository](repo-rename.md)</li>
-<li>[Learn about Git permissions](http://msdn.microsoft.com/en-us/library/ms252587.aspx#git)</li>
+<li>[Learn about Git permissions](http://msdn.microsoft.com/library/ms252587.aspx#git)</li>
 </ul>
 </td>
 </tr>

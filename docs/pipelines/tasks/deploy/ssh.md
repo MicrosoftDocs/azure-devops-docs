@@ -1,32 +1,32 @@
 ---
-title: SSH deployment task for Microsoft VSTS and TFS
-description: SSH task for use in the phases of all of your build and release pipelines in Microsoft VSTS and Team Foundation Server (TFS)
+title: SSH Deployment task
+description: SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy: SSH
+# SSH Deployment task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+
+Use this task in a build or release pipeline to run shell commands or a script on a remote machine using SSH.
+This task enables you to connect to a remote machine using SSH and run commands or a script.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-![icon](_img/ssh.png) Run shell commands or a script on a remote machine using SSH.
-
-This task enables you to connect to a remote machine using SSH and run commands or a script.
-
 ## Prerequisites
 
-* The task supports use of an SSH key pair to connect to the remote machine(s). 
+* The task supports use of an SSH key pair to connect to the remote machine(s).
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
@@ -48,7 +48,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## See also
 
-* [Install SSH Key task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallSSHKey)
+* [Install SSH Key task](../utility/install-ssh-key.md)
 
 * [Copy Files Over SSH](copy-files-over-ssh.md)
 
@@ -56,17 +56,15 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

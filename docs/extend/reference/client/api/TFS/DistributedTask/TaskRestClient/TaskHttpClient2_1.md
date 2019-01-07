@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/TaskRestClient TaskHttpClient2_1 API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/TaskRestClient TaskHttpClient2_1 API | Extensions for Azure DevOps Services
 ms.assetid: f36d9960-013f-1ca3-0f1c-8598cace1f4d
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Extension Report | VSTS
+title: Extension Report | Azure DevOps Services
 description: An overview of reports available for an extension. 
 monikerRange: '>= tfs-2017'
 ms.author: elbatk

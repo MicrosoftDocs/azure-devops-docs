@@ -1,11 +1,7 @@
-- name: VSTS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps Services
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
-  - name: Collaboration
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
-    items:
-    - name: Public Projects
-      tocHref: /vsts/organizations/public/
-      topicHref: /vsts/organizations/public/index
+  - name: Public Projects
+    tocHref: /azure/devops/organizations/public/
+    topicHref: /azure/devops/organizations/public/index

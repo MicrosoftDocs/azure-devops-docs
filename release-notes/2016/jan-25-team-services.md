@@ -2,7 +2,7 @@
 title: Dashboard widget SDK, create branch from work item, test visualizations and so much more – Jan 25
 description: VSTS release notes for January 25 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 5f275e4c-86c9-44fa-8d53-cf7a0d1d792a
 ms.date: 06/01/2016
@@ -16,9 +16,9 @@ Happy New Year! Because of the holidays, we skipped our December deployment, so 
 
 ##Public preview of the dashboard widget SDK
 
-It’s here! When we launched dashboards, we mentioned that our widgets are written as [extensions](https://visualstudio.microsoft.com/integrate/extensions/overview), which would also allow you to write and share your own widgets in time. Today, we’re releasing a public preview of our widget SDK. You can get started at [Add a dashboard widget](https://visualstudio.microsoft.com/integrate/extensions/develop/add-dashboard-widget).
+It’s here! When we launched dashboards, we mentioned that our widgets are written as [extensions](/azure/devops/integrate/), which would also allow you to write and share your own widgets in time. Today, we’re releasing a public preview of our widget SDK. You can get started at [Add a dashboard widget](/azure/devops/integrate/).
 
-As a reminder, widgets are implemented as a [contribution point](https://visualstudio.microsoft.com/integrate/extensions/develop/contributions-overview) in the extension framework. You’ll need some knowledge of JavaScript, HTML, CSS, and a good idea to build a widget. If you run into issues or have feedback, feel free reach out to us at vsointegration@microsoft<dot>com.
+As a reminder, widgets are implemented as a [contribution point](/azure/devops/integrate/) in the extension framework. You’ll need some knowledge of JavaScript, HTML, CSS, and a good idea to build a widget. If you run into issues or have feedback, feel free reach out to us at vsointegration@microsoft<dot>com.
 
 ##Create branch and links to related artifacts
 
@@ -92,7 +92,7 @@ We’re heard your feedback on working with tags, and with this update, you’ll
 
 ##Deleting a custom field
 
-In the last [deployment](../2015/dec-10-team-services.md), we introduced the ability to customize work items and add new fields. With this update, users with process editing permissions can now delete custom fields created within their process. This action will delete all data associated with the field, including current values and revision history, and free up the field name for reuse. You can delete a field from the Fields tab on the process administration page. To delete a field, it must first be removed from all work item types that reference it.
+In the last [deployment](https://visualstudio.microsoft.com/articles/news/2015/dec-10-team-services), we introduced the ability to customize work items and add new fields. With this update, users with process editing permissions can now delete custom fields created within their process. This action will delete all data associated with the field, including current values and revision history, and free up the field name for reuse. You can delete a field from the Fields tab on the process administration page. To delete a field, it must first be removed from all work item types that reference it.
 
 ##Keyboard shortcuts
 
@@ -188,7 +188,7 @@ The default retention policy for all release definitions is 60 days. By default,
 
 At this point, the retention policies for release management are independent from builds. In a future version, we will help you retain builds based on their usage in release management.
 
-For more information, see [documentation](http://aka.ms/rmpreview) for release management. You can track all of the new features as and when they get deployed in the [What's new section](/vsts/release/getting-started/release-notes). Have a question? Follow us on Twitter (@vsreleasemgmt).
+For more information, see [documentation](http://aka.ms/rmpreview) for release management. You can track all of the new features as and when they get deployed in the [What's new section](/azure/devops/release/getting-started/release-notes). Have a question? Follow us on Twitter (@vsreleasemgmt).
 
 ##UI extensibility for release management
 
@@ -198,7 +198,7 @@ Write-Verbose ##vso[Task.UploadSummary] Attachments.md
 
 You can also add new sections or new tabs in the release summary using UI contribution points. Learn more about these contacts here:
 
-[https://visualstudio.microsoft.com/en-us/integrate/extensions/reference/targets/overview](https://visualstudio.microsoft.com/en-us/integrate/extensions/reference/targets/overview)
+[/azure/devops/integrate/](/azure/devops/integrate/)
 
 ##Search scope selector
 

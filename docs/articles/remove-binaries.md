@@ -26,7 +26,7 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 
 *Adding large file to the local repository*
 
-> ![Server and local repos, both with a copy of the large video file](./_img/remove-binaries/RemoveBinaries-diagram-local-after-large-file-added.png)
+> ![Server and local repos, both with a copy of the large video files](./_img/remove-binaries/RemoveBinaries-diagram-local-after-large-file-added.png)
 
 *After committing from the local repository, the server will also have the large file*
 
@@ -35,10 +35,10 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 > [!IMPORTANT]
 >
 > The following steps will remove the video from your branch history,
-> but the file remains in your repo history when you clone your repo from VSTS. Removing the files from your branch history prevents the files from being updated, which will
+> but the file remains in your repo history when you clone your repo from Azure Repos. Removing the files from your branch history prevents the files from being updated, which will
 > create another version of the large file in your repo. Learn more about [managing large files in Git](../repos/git/manage-large-files.md) and 
 > see this [blog post](https://blogs.msdn.microsoft.com/congyiw/2015/12/14/why-does-cloning-from-vsts-return-old-unreferenced-objects/) for a detailed explanation and workaround for this behavior 
-> when using VSTS Git repos.
+> when using Azure Repos Git repos.
 
 To fix this, you have to start at the source, which, in this case, is the server repository. Ask the team to stop pushing to the repository, but if additional pushes happen during this process, you will have to account for them, too, so as not to lose any data.
 
@@ -116,7 +116,7 @@ __Use with caution, as you can easily lose data on the server!!__
 
 *Notice that you must authenticate to the server for this to work*
 
-If you are using VSTS, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](../repos/git/auth-overview.md?view=vsts#personal-access-tokens).
+If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](../repos/git/auth-overview.md?view=vsts#personal-access-tokens).
 
 Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files you were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
 

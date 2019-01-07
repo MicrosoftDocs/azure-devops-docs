@@ -1,7 +1,7 @@
 ---
 title: Data model for the Analytics Service
-titleSuffix: VSTS 
-description: Describes the data entities and relationships provided by the Analytics service for Visual Studio Team Services  
+titleSuffix: Azure DevOps Services 
+description: Describes the data entities and relationships provided by the Analytics service for Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
@@ -10,22 +10,41 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 2/18/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/1/2018
 ---
 
 # Data model for the Analytics Service  
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-The Analytics service data model for Visual Studio Team Services (VSTS) consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
+The Analytics service data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
+>Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: 
+
+::: moniker range="vsts"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+```
+
+::: moniker-end
 
 The data model contains the following entity sets:  
 
@@ -35,13 +54,13 @@ The data model contains the following entity sets:
 |Iterations | The work item iteration paths, with properties for grouping and filtering by iteration hierarchy |  
 |BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes historic board settings|  
 |Dates | The dates used to filter and group other entities using relationships |  
-|Projects | All projects defined for the account or collection |
+|Projects | All projects defined for an organization |
 |Process | Backlog information - used to expand or filter work items and work item types|  
 |Tags | All work item tags for each project |  
 |Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) |  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
 |WorkItems | The current state of work items|  
-|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
+|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes only latest revision of links (no history) - hyperlinks not included  
 |WorkItemRevisions | All historic work item revisions, including the current revision - does not include deleted work items|  
 |WorkItemSnapshot | (Composite) The state of each work item on each calendar date - used for trend reporting|  
 |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  
@@ -73,22 +92,22 @@ The following table provides a partial list of the WorkItemRevision entity prope
 
 | Property | Type | Description|  
 |--------|------------|------------|  
-|WorkItemRevisionSK | Int32 | The VSTS Analytics unique key for the work item revision - used by external tools to join related entities.
-|WorkItemId | Int32 | The VSTS id for the work item.
+|WorkItemRevisionSK | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities.
+|WorkItemId | Int32 | The Id for the work item.
 |Revision | Int32 | The revision of the work item. 
 |Title | String | The work item title. 
 |WorkItemType | String | The work item type (e.g. Bug, Task, User Story).
 |StoryPoints | Double | The points assigned to this work item - commonly aggregated as a sum.
 | Tags | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags.
-|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the time zone for the account. Commonly used for filtering and for display.
-|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone for the account. Used by external tools to join related entities.
-|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone for the account. Commonly used to reference properties from the Date entity in ```groupby``` statements.
+|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display.
+|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone defined for the organization. Used by external tools to join related entities.
+|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements.
 
 >[!NOTE]
->Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of this field. 
+>Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of the new field. 
 
 
-##Related articles 
+## Related articles 
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)

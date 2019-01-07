@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/RestClient WorkItemTrackingHttpClient2_2 API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/RestClient WorkItemTrackingHttpClient2_2 API | Extensions for Azure DevOps Services
 ms.assetid: 736e67ae-ab1d-fde5-e67a-71042ec709ea
 ms.prod: devops
 ms.technology: devops-ecosystem

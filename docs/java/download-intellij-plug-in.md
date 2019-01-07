@@ -1,6 +1,6 @@
 ---
-title: Get the IntelliJ IDEA VSTS plug-in
-description: Information and download links for the IntelliJ IDEA VSTS plug-in
+title: Get the IntelliJ IDEA Azure DevOps Services plug-in
+description: Information and download links for the IntelliJ IDEA Azure DevOps Services plug-in
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Visual Studio Team Services Plugin for IntelliJ IDEA and Android Studio
+# Azure DevOps Services Plugin for IntelliJ IDEA and Android Studio
 
 *Compatible with `IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE` and `CLion`.*
 
@@ -39,7 +39,7 @@ The plugin can be installed from IntelliJ by browsing the Plugin Repository.
 1. Click the `Install plugin` button and restart IntelliJ IDEA. 
  
  ## Next Steps 
-* Learn more about the IntelliJ plugin from our [VSTS Git with IntelliJ documentation](/vsts/repos/git/create-repo-intellij).
+* Learn more about the IntelliJ plugin from our [Azure DevOps Services Git with IntelliJ documentation](/azure/devops/repos/git/create-repo-intellij).
  
  ## Frequently Asked Questions (FAQ)
 

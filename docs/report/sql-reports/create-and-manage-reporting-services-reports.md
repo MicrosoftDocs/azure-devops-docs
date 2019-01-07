@@ -7,7 +7,8 @@ ms.topic: conceptual
 description: Understand how to use SQL Server Reporting Services to analyze the progress and quality of your project - Team Foundation Server 
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -16,7 +17,7 @@ ms.date: 10/17/17
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse, SQL Server Analysis Services cube, and Reporting Services Reports. If you didn't add these services previously and want to add them now, see [Add a report server to your deployment](../admin/add-a-report-server.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json ).  
+If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse, SQL Server Analysis Services cube, and Reporting Services Reports. If you didn't add these services previously and want to add them now, see [Add a report server to your deployment](../admin/add-a-report-server.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json ).  
   
  You can create or customize your own Reporting Services reports which support the following scenarios:  
   
@@ -48,7 +49,7 @@ If you added SQL Server Reporting Services at installation, then your on-premise
   
      ![Analysis Services Data Cube Measure Groups](_img/rpt_measuregroups.png "RPT_MeasureGroups")  
   
--   [Reportable fields reference](../../reference/xml/reportable-fields-reference.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json). All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The reportable attribute assigned to each work item field determines whether data is written to only the relational warehouse database or to both the relational warehouse and the OLAP cube. Reportable fields have their reportable attribute set to detail, dimension, or measure.  
+-   [Reportable fields reference](../../reference/xml/reportable-fields-reference.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json). All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The reportable attribute assigned to each work item field determines whether data is written to only the relational warehouse database or to both the relational warehouse and the OLAP cube. Reportable fields have their reportable attribute set to detail, dimension, or measure.  
   
 ## Tools for creating reports  
  You can access both the relational data warehouse and the Analysis Services cube to create highly customized reports by using these authoring tools.  

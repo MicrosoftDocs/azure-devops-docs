@@ -6,7 +6,7 @@ ms.topic: include
 
 If you are building a solution, in most cases you should use the [Visual Studio Build task](../build/visual-studio-build.md). This task automatically:
 
-* Sets the ```/p:VisualStudioVersion``` property for you. This forces MSBuild to use a particular set of targets that increase the likelihood of a successful build. 
+* Sets the ```/p:VisualStudioVersion``` property for you. This forces MSBuild to use a particular set of targets that increase the likelihood of a successful build.
 
 * Specifies the MSBuild version argument.
 

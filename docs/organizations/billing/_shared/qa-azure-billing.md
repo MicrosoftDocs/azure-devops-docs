@@ -1,77 +1,43 @@
 ### Q: How does Azure billing work?
 
-A:	When you buy from the Visual Studio Marketplace, 
-you select an Azure subscription to use for billing. 
-If you don't have an Azure subscription, 
-you can [sign up](https://portal.azure.com) 
-either before or during your first purchase. 
-You can set up payment with a credit card, 
-or by invoice in some cases. Charges for your 
-purchases will show up on your monthly Azure bill.
+A:	When you buy from the Visual Studio Marketplace, you select an Azure subscription to use for billing. If you don't have an Azure subscription, you can [sign up](https://portal.azure.com) either before or during your first purchase. You can set up payment with a credit card, or by invoice in some cases. Charges for your purchases show up on your monthly Azure bill.
 
 >[!NOTE] 
-> You must keep your Azure subscription in good 
-> standing to use your Visual Studio Marketplace purchases. 
-> If your Azure subscription is canceled or becomes disabled, 
-> for example, because the credit card used for payment expires, 
-> then any purchases with this Azure subscription will be 
-> deactivated on the 1st day of next month. 
-> To continue using your Visual Studio Marketplace purchases, 
-> please keep your Azure subscription active and updated.
+> You must keep your Azure subscription in good standing to use your Visual Studio Marketplace purchases. If your Azure subscription is canceled or is disabled (for example, because the credit card used for payment expires), any purchases with the Azure subscription are deactivated on the first day of next month. To continue using your Visual Studio Marketplace purchases, keep your Azure subscription active and updated.
 
 
 ### Q:	Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
 
-A:	Yes, please buy directly from the Visual Studio Marketplace 
-where you can bill purchases to the Azure subscription that was created 
-under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). 
-Don't order Visual Studio Marketplace services through your reseller.
+A:	Yes. Buy directly from the Visual Studio Marketplace, Azure DevOps tab. You can bill purchases to the Azure subscription that was created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller.
 
 ### Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
 
-A:	Yes.  You can use these prepaid funds to pay for: 
+A:	Yes. You can use these prepaid funds to pay for the following:
 
-*	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
-*	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
-*	[Virtual user minutes for Cloud-based Load Testing](/../organizations/billing/buy-more-build-vs)
-*   [Xamarin University](https://www.xamarin.com/university)
+*	[Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
+*	[Microsoft-published extensions for Azure DevOps Services and Microsoft Team Foundation Server](https://marketplace.visualstudio.com/azuredevops).
+*	[Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs).
+*   [Xamarin University](https://www.xamarin.com/university).
 
-You can't use these funds to pay for Visual Studio cloud 
-subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
+You can't use these funds to pay for Visual Studio cloud subscriptions and non-Microsoft extensions for Azure DevOps Services and Team Foundation Server.
 
-### Q:	Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
+### Q:	Can I use the Azure free account to buy from the Visual Studio Marketplace?
 
-A:	No, you can't use the 
-[Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) 
-to pay for Visual Studio Marketplace purchases, 
-which applies to VSTS, Xamarin University, and so on. 
-Instead, set up a separate Pay-As-You-Go Azure subscription,
-which you can do before or during your purchase. 
+A:	No. You can't use the [Azure free account](https://azure.microsoft.com/pricing/free-trial/) to pay for Visual Studio Marketplace purchases, which applies to Azure DevOps, Xamarin University, and so on. Instead, set up a separate Pay-As-You-Go Azure subscription, which you can do before or during your purchase. 
 
 ### Q:	Can I use the monthly Azure credits from Visual Studio subscriptions or Visual Studio Dev Essentials to buy from the Visual Studio Marketplace?
 
-A:	No, you can't use the monthly Azure credits from 
-[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs) 
-and [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/products/visual-studio-dev-essentials-vs.aspx) 
-to pay for Visual Studio Marketplace purchases. 
-However, you can use the included Azure subscriptions to bill your purchases. 
-Before you make purchases, you must 
-[remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/) 
-from these subscriptions.
+A:	No. You can't use the monthly Azure credits from [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs) or [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/products/visual-studio-dev-essentials-vs.aspx) to pay for Visual Studio Marketplace purchases. You can use the included Azure subscriptions to bill your purchases. Before you make purchases, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/) from these subscriptions:
 
 <img alt="Spending limit" src="_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 <a name="spending-limit"></a>
 
-**Important:** Remove your spending limit indefinitely.
-This prevents disabling your Azure subscription 
-when your monthly charges are billed the next month.
-Otherwise, all resources billed to this subscription will be suspended,
-including virtual machines and all other workloads. 
+> [!Important]
+> To prevent your Azure subscription from being disabled when your monthly charges are billed the following month, remove your spending limit indefinitely. Otherwise, all resources billed to the subscription are suspended, including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 ### Q: Where can I check my bill or correct any billing information on my Azure subscription?
 
-A:	If you're the Azure account administrator, 
-[visit the Azure Account portal](https://account.windowsazure.com).
+A:	If you're the Azure account administrator, [visit the Azure Account portal](https://account.windowsazure.com).

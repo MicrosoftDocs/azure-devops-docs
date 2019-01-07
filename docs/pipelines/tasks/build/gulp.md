@@ -1,6 +1,7 @@
 ---
-title: Gulp build and release task | VSTS or Team Foundation Server
-description: Gulp build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Gulp build and release task
+ms.custom: seodec18
+description: Gulp build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: Gulp
+# Gulp task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/gulp.png) Node.js streaming task based build system
+Use this task in a build or release pipeline to run gulp tasks using the Node.js streaming task based build system.
 
 ## Demands
 
@@ -25,7 +26,7 @@ gulp
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/GulpV0.md)]
+[!INCLUDE [temp](../_shared/yaml/GulpV1.md)]
 ::: moniker-end
 
 ## Arguments
@@ -38,12 +39,12 @@ gulp
 </tr>
 </thead>
 <tr>
-<td>Gulp file path</td>
+<td>gulp file path</td>
 <td>Relative path from the repo root to the gulp script that you want to run. The default value is ```gulpfile.js```
 </td>
 </tr>
 <tr>
-<td>Gulp task(s)</td>
+<td>gulp task(s)</td>
 <td>(Optional) Space delimited list of tasks to run.  If you leave it blank, the default task will run.</td>
 </tr>
 <tr>
@@ -52,7 +53,7 @@ gulp
 <tr>
 <td>Arguments</td>
 <td><p>Additional arguments passed to gulp.</p>
-<p>Tip: ```--gulpfile``` is not needed. This argument is handled by the Gulp file path argument shown above.</p>
+<p>Tip: ```--gulpfile``` is not needed. This argument is handled by the gulp file path argument shown above.</p>
 </td>
 </tr>
 <tr>
@@ -83,11 +84,11 @@ On the [Build](../../index.md) tab:
 </td>
 </tr>
 <tr>
-<td>![Build: Gulp](_img/gulp.png)<br/>[Build: Gulp](gulp.md)</td>
+<td>![Build: gulp](_img/gulp.png)<br/>[Build: gulp](gulp.md)</td>
 <td>
 <p>Run your script.</p>
 <ul>
-<li>Gulp file path: `gulpfile.js`</li>
+<li>gulp file path: `gulpfile.js`</li>
 <li>Advanced, gulp.js location: `node_modules/gulp/bin/gulp.js`</li>
 </ul>
 </td>
@@ -97,11 +98,11 @@ On the [Build](../../index.md) tab:
 
 ### Build a Node.js app
 
-[Build your Node.js app with Gulp](../../apps/nodejs/build-gulp.md)
+[Build your Node.js app with gulp](../../languages/javascript.md)
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

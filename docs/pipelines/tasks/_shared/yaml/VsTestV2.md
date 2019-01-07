@@ -34,6 +34,8 @@
     #platform: # Optional
     #configuration: # Optional
     #publishRunAttachments: true # Optional
+    #diagnosticsEnabled: True # Optional
+    #collectDumpOn: 'onAbortOnly' # Optional. Options: onAbortOnly, always, never
     #rerunFailedTests: False # Optional
     #rerunType: 'basedOnTestFailurePercentage' # Optional. Options: basedOnTestFailurePercentage, basedOnTestFailureCount
     #rerunFailedThreshold: '30' # Optional

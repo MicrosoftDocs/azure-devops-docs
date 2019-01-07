@@ -1,21 +1,22 @@
 ---
-title: Understand how area and iteration paths are used in projects
-titleSuffix: VSTS & TFS
-description: Understand how areas and iterations are used in Visual Studio Team Services & Team Foundation Server
+title: How are area and iteration paths used?
+titleSuffix: Azure DevOps & TFS
+description: Understand how areas and iterations are used in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 06/19/2018
+ms.date: 11/19/2018
 ---
 
 
 # About area and iteration paths (aka sprints) 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
@@ -51,7 +52,7 @@ Add iterations to support these requirements:
 * Filter queries based on sprints, milestones, or cycle time for your project 
 * Support future work that you're not ready to assign to a target release cycle.  
 
-In the following example, Backlog, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
+In the following example, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
 
 <img src="_img/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
 
@@ -82,11 +83,10 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../refe
 ## Related articles 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
-*	[Set project-level area paths](set-area-paths.md)  
-*	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
-*	[Set team defaults](set-team-defaults.md)  
-*	[Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)  
-*	[Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
+- [Define area paths and assign to a team](set-area-paths.md)
+- [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md)
+- [Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)  
+- [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 
 
 <a name="export"></a>

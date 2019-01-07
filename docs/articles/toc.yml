@@ -1,11 +1,11 @@
 - name: Technical Articles 
   href: index.md
-- name: High-Fidelity Migration
+- name: High-fidelity migration
   items:
-  - name: Migrate data from TFS to VSTS
+  - name: Migrate data from TFS to Azure DevOps Services
     href: migration-overview.md
   - name: Migrate options
-    href: migrate-to-vsts-from-tfs.md
+    href: migrate-from-tfs.md
   - name: Import
     href: migration-import.md
   - name: Process Templates
@@ -14,7 +14,7 @@
     href: migration-post-import.md
   - name: Troubleshooting
     href: migration-troubleshooting.md
-- name: Version Control
+- name: Version control
   items:
     - name: Git lost my changes?
       href: git-log-history-simplification.md
@@ -42,13 +42,17 @@
       href: phase-rollout-with-rings.md
 - name: Security
   items:
-  - name: VSTS Data Protection
+  - name: Azure DevOps Services data protection
     href: team-services-security-whitepaper.md
+  - name: Azure DevOps Services credential storage
+    href: credential-storage.md
 - name: Journey articles
   items:
     - name: Agile
-      href: /azure/devops/agile/what-is-agile
-    - name: Devops
-      href: /azure/devops/what-is-devops
+      href: /azure/devops/learn/agile/what-is-agile
+    - name: DevOps
+      href: /azure/devops/learn/what-is-devops
     - name: Git at Scale
-      href: /azure/devops/git/git-at-scale
+      href: /azure/devops/learn/git/git-at-scale
+- name: Service Status Documentation
+  href: service-status-info.md

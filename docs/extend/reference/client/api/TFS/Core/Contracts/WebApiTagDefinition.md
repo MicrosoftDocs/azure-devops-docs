@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts WebApiTagDefinition API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts WebApiTagDefinition API | Extensions for Azure DevOps Services
 description: The representation of a tag definition which is sent across the wire.
 ms.assetid: 031940e6-6203-0a3b-58af-2629ed438606
 ms.prod: devops

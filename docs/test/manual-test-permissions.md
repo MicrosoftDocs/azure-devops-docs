@@ -1,6 +1,6 @@
 ---
 title: Permissions and access for manual testing
-description: Default permissions and access levels in Microsoft VSTS and TFS for manual and exploratory testing topics and problems
+description: Default permissions and access levels in Azure DevOps and TFS for manual and exploratory testing topics and problems
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Default manual testing permissions and access 
- 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2017 | TFS 2015**
+
+[!INCLUDE [version-header](_shared/version-header.md)]
 
 You can access most manual testing features when you are added as a team member or a member
 of the Contributors group for a project. The most common built-in groups include Readers,
@@ -34,6 +34,7 @@ To learn more, see [About access levels](../organizations/security/access-levels
 | Request feedback using the Test & Feedback extension |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
 | Manage test configurations and test environments |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
 | Manage test plans and test suites |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
+| Run automated tests from test plans |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
 | Test Manager (purchased separately) |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

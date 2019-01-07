@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IDocumentOptions API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IDocumentOptions API | Extensions for Azure DevOps Services
 description: Interface for options that can be supplied with document actions
 ms.assetid: c6508b2d-6e58-5e26-552a-052ab2a99279
 ms.prod: devops

@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts JobRequestMessage API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts JobRequestMessage API | Extensions for Azure DevOps Services
 ms.assetid: 82ef08c9-37ab-873e-8003-7bd8f8894d70
 ms.prod: devops
 ms.technology: devops-ecosystem

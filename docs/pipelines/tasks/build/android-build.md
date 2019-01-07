@@ -1,6 +1,7 @@
 ---
-title: Android build build and release task
-description: Android Build build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Android build and release task
+ms.custom: seodec18
+description: Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,12 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Build: Android build (deprecated; use Gradle)
+# Android build task (deprecated; use Gradle)
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/android-build.png) Build an Android app using Gradle and optionally start the emulator for unit tests
+Use this task in a build or release pipeline to build an Android app using Gradle and optionally start the emulator for unit tests.
 
 ## Deprecated
 **The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**
@@ -64,7 +64,7 @@ The build agent must have the following capabilities:
 </td>
 <td>
 Name of the AVD to be started or created.
-<blockquote><strong>Note: </strong> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a hosted pool if you want to create an AVD.
+<blockquote><strong>Note: </strong> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to create an AVD.
 </blockquote>
 </td>
 </tr>
@@ -106,7 +106,7 @@ Name of the AVD to be started or created.
 <td>Start and Stop Android Emulator</td>
 <td>
 <p>Check if you want the emulator to be started and stopped when Android Build task finishes.</p>
-<blockquote><strong>Note: </strong> You must deploy your own [agent](../../agents/agents.md)  to use this option. You cannot use a hosted pool if you want to use an emulator.
+<blockquote><strong>Note: </strong> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to use an emulator.
 </blockquote>
 </td>
 </tr>

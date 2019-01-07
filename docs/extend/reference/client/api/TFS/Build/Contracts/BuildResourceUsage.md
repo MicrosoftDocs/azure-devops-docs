@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildResourceUsage API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildResourceUsage API | Extensions for Azure DevOps Services
 ms.assetid: 1f7f680c-c954-b1d6-f438-42cd6ec5ae45
 ms.prod: devops
 ms.technology: devops-ecosystem

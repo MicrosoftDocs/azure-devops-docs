@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Slack with VSTS
-description: Use Slack with your VSTS account
+title: Slack with Azure DevOps Services
+description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -12,9 +12,9 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Slack with VSTS
+# Slack with Azure DevOps Services
 
-Post messages to [Slack](https://slack.com/) in response to events in your VSTS account,
+Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps Services organization,
 like completed builds, code changes, pull requests, releases, work items changes, and more.
 
 ## Create the Slack integration
@@ -23,17 +23,17 @@ like completed builds, code changes, pull requests, releases, work items changes
 to open up the menu, and find **Apps and integrations**:
 <img alt="Integrations link on the account home page" src="./_img/slack/slack-integrations.png" style="border: 1px solid #CCCCCC; width:35%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-1. Search for and click the VSTS integration:
-<img alt="VSTS link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+1. Search for and click the Azure DevOps Services integration (Search "Visual Studio Team Services"):
+<img alt="Azure DevOps Services link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-1. On the VSTS integration page, click **Install**.
+1. On the Azure DevOps Services integration page, click **Install**.
 1. Choose a channel to have notifications posted to from the dropdown and click **Add Visual Studio Integration**. 
-1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your VSTS account.
+1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your organization.
 <img alt="Web hook URL in the integration settings section" src="./_img/slack/webhook-url.png" style="border: 1px solid #CCCCCC; width:70%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-## Create a service hook subscription in your VSTS account
+## Create a service hook subscription in your organization
 
-0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
@@ -51,7 +51,7 @@ to open up the menu, and find **Apps and integrations**:
 <img alt="General channel with a real pull request notification" src="./_img/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ## Pricing
-VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

@@ -7,14 +7,14 @@
     #dockerRegistryEndpoint: # Optional
     #azureSubscriptionEndpoint: # Optional
     #azureContainerRegistry: # Optional
-    #command: 'Build an image' # Options: build An Image, tag Image, push An Image, run An Image
-    #dockerFile: '**/Dockerfile' # Required when command == Build An Image
+    #command: 'Build an image' # Options: build An Image, tag Image, push An Image, run An Image, login, logout
+    #dockerFile: '**/Dockerfile' # Required when command == Build An Image || Command == Build
     #arguments: # Optional
     #useDefaultContext: true # Optional
     #buildContext: # Optional
     #pushMultipleImages: false # Optional
     #tagMultipleImages: false # Optional
-    #imageName: '$(Build.Repository.Name):$(Build.BuildId)' # Required when command == Build An Image || Command == Run An Image || PushMultipleImages == False || TagMultipleImages == False
+    #imageName: '$(Build.Repository.Name):$(Build.BuildId)' # Required when command == Build An Image || Command == Build || Command == Run An Image || Command == Run || PushMultipleImages == False || TagMultipleImages == False
     #imageNamesPath: # Required when tagMultipleImages == True || PushMultipleImages == True
     #qualifyImageName: true # Optional
     #includeSourceTags: false # Optional
@@ -29,7 +29,7 @@
     #entrypointOverride: # Optional
     #containerCommand: # Optional
     #runInBackground: true # Optional
-    #restartPolicy: 'no' # Required when command == Run An Image && RunInBackground == True# Options: no, onFailure, always, unlessStopped
+    #restartPolicy: 'no' # Required when runInBackground == True# Options: no, onFailure, always, unlessStopped
     #maxRestartRetries: # Optional
     #dockerHostEndpoint: # Optional
     #enforceDockerNamingConvention: true # Optional

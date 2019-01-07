@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Iteration activities
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Specify the set of requirements, review the requirements that are assigned to the iteration and create task work items for the work that must be performed to implement and test each requirement - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
 ---
 
 # Iteration activities
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 In MSF for CMMI Process Improvement, you plan a project as a series of iterations. Each iteration is typically four to six weeks long, during which the development team implements a specified set of requirements.  
   
@@ -45,10 +45,10 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
  Development work for the tests should be included in the tasks that are linked to the product requirement.  
   
 ### Rolling and nightly builds  
- The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Continuous integration & delivery](/vsts/pipelines/index).  
+ The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Continuous integration & delivery](/azure/devops/pipelines/index).  
   
 ### Stand-up meeting  
- The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [task board](../../../sprints/task-board.md) or project the [Progress Dashboard](../../../../report/sharepoint-dashboards/progress-dashboard-agile-cmmi.md) on the wall, share it by using Office Live Meeting, or both.  
+ The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [taskboard](../../../sprints/task-board.md) or project the [Progress Dashboard](../../../../report/sharepoint-dashboards/progress-dashboard-agile-cmmi.md) on the wall, share it by using Office Live Meeting, or both.  
   
 -   Each team member briefly reports recent progress, work in hand for the day, and any blocking issues.  
   

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts AgentStatus API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts AgentStatus API | Extensions for Azure DevOps Services
 ms.assetid: bca01c71-5269-60b7-7d51-0da8e79933c7
 ms.prod: devops
 ms.technology: devops-ecosystem

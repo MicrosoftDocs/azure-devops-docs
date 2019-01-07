@@ -1,6 +1,6 @@
 ---
 title: Provide feedback using the Test &amp; Feedback extension
-description: Provide feedback in VSTS or TFS using the Exploratory Testing browser extension
+description: Provide feedback in Azure DevOps or TFS using the Exploratory Testing browser extension
 ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
 ms.prod: devops
 ms.technology: devops-test
@@ -8,14 +8,12 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Provide feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 [!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
 
 <a name="provide"></a>
@@ -42,7 +40,7 @@ to assist test teams by providing feedback.
  
    ![Choosing the Provide feedback link in the request email](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-04.png)
 
-1. The VSTS or TFS landing page opens to confirm
+1. The Azure DevOps or TFS landing page opens to confirm
    that the extension has been automatically configured with 
    the feedback request. Choose the ![launch extension](_img/_shared/exp-test-icon.png)
    icon in the toolbar to launch the extension.
@@ -99,7 +97,7 @@ to assist test teams by providing feedback.
 
    ![Entering a title and star rating](_img/_shared/provide-stakeholder-feedback-09.png)
 
-1. Save your feedback. This create a work item in VSTS
+1. Save your feedback. This create a work item in Azure DevOps
    or TFS containing all your feedback.
  
 1. Continue to capture more feedback if required. You can submit 

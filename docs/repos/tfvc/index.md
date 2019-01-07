@@ -1,5 +1,6 @@
 ---
 title: Team Foundation Version Control (TFVC) index to content   
+titleSuffix: Azure Repos
 description: Guide to getting started with TFVC documentation  
 ms.prod: devops
 ms.technology: devops-code-git  
@@ -20,7 +21,7 @@ Whether your software project is large or small, using version control as soon a
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
-VSTS and TFS provide two models of version control: [Git](../../repos/git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](use-team-foundation-version-control-commands.md), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of VSTS/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md). 
+Azure DevOps Services and TFS provide two models of version control: [Git](../../repos/git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](use-team-foundation-version-control-commands.md), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of Azure DevOps Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md). 
 
 ## 5-Minute Quickstarts 
 
@@ -28,7 +29,7 @@ Get started by creating a project, configuring your workspace, and reviewing and
 
 <!--- All images are Placeholder --> 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div></div>
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="Visual Studio" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="Xcode" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="Eclipse" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div></div>
 
 
 ## Step-by-Step Tutorials  
@@ -41,6 +42,6 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 ## Resources 
 
-- [What is version control?](/azure/devops/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git)  
+- [What is version control?](/azure/devops/learn/git/what-is-version-control)  
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)  
 - [Learn more about TFVC](overview.md)

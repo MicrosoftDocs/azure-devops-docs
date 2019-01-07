@@ -1,5 +1,6 @@
 ---
 title: System requirements for Microsoft Release Management
+ms.custom: seodec18
 description: Learn about the system requirements for Release Management server and client for VS 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: 5B39B13E-166B-48DF-B8CB-45725355F644
 ms.prod: devops
@@ -22,7 +23,7 @@ hardware requirements described in this topic.
 
 ## Release Management server
 
-These are the software requirements for the Release Management server. 
+These are the software requirements for the Release Management server.
 
 **Operating systems:**
 
@@ -97,7 +98,7 @@ Release Management client can connect to the following versions of TFS:
 
 > [!NOTE]
 > _TFS is not a mandatory requirement. Release Management Client 
-> can connect to VSTS to deploy applications._
+> can connect to Azure Pipelines to deploy applications._
 
 These are the hardware requirements for the Release Management client.
 

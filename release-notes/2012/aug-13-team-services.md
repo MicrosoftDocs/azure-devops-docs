@@ -3,7 +3,7 @@ title: Team Foundation Service updates - Aug 13
 description: VSTS release notes for August 13 2012
 ms.assetid: e9fe612f-7435-4cf5-b476-666952ef9139
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.date: 06/01/2016
 ms.author: douge
@@ -40,7 +40,7 @@ This is just the beginning of our kanban support. We’re practicing build-measu
 
 But more importantly than that, in the spirit of Build-Measure-Learn, we want to know what enhancements you want to see. Get started using kanban on your project today.
 
-We’re committed to continuing to bring great tools to Agile development teams. Team Foundation Service will continue to be the easiest way to get started and move fast with the latest in software development and collaboration tools. You can learn more about our kanban board [here in our learn section](https://docs.microsoft.com/vsts/work/kanban/index?view=vsts). Please try it out ([sign-up](http://go.microsoft.com/fwlink/?LinkId=307137) for a new account; existing users can [sign-in](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=11&ct=1366668045&rver=6.0.5276.0&wp=MCLBI&wlcxt=VisualStudio%24VisualStudio%24VisualStudio&wreply=https%3a%2f%2ftfs.visualstudio.com%2faccount%2ftfs-subscriptions%3fauth_redirect%3d1&lc=1033&id=290275&mkt=en-US)) and let us know what you think.
+We’re committed to continuing to bring great tools to Agile development teams. Team Foundation Service will continue to be the easiest way to get started and move fast with the latest in software development and collaboration tools. You can learn more about our kanban board [here in our learn section](/azure/devops/work/kanban/index?view=vsts). Please try it out ([sign-up](http://go.microsoft.com/fwlink/?LinkId=307137) for a new account; existing users can [sign-in](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=11&ct=1366668045&rver=6.0.5276.0&wp=MCLBI&wlcxt=VisualStudio%24VisualStudio%24VisualStudio&wreply=https%3a%2f%2ftfs.visualstudio.com%2faccount%2ftfs-subscriptions%3fauth_redirect%3d1&lc=1033&id=290275&mkt=en-US)) and let us know what you think.
 
 Thanks,
 

@@ -1,6 +1,7 @@
 ---
 title: Run the agent behind a web proxy
-description: Learn how you can run a v2 private build and release agent behind a web proxy for VSTS and Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Learn how you can run a v2 private build and release agent behind a web proxy for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,93 +9,71 @@ ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/16/2017
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Run a self-hosted agent behind a web proxy
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This topic explains how to run a v2 self-hosted agent behind a web proxy. 
+This topic explains how to run a v2 self-hosted agent behind a web proxy.
 
 ::: moniker range=">= tfs-2018"
 
-## VSTS, TFS 2018 RTM and newer
+## Azure Pipelines, TFS 2018 RTM and newer
 
 (Applies to agent version 2.122 and newer.)
 
 When your self-hosted agent is behind a web proxy, you can:
 
-* Allow your agent to connect to VSTS or TFS behind a web proxy.
+* Allow your agent to connect to Azure Pipelines or TFS behind a web proxy.
 
 * Allow your agent to get sources in the build job and download artifacts in the release job.
-
 * Develop custom vsts-task-lib tasks that leverage the proxy agent configuration.
 
-To enable the agent to run behind a web proxy
-
-1. Pass `--proxyurl`, `--proxyusername` and `--proxypassword` during agent configuration.  
+To enable the agent to run behind a web proxy, pass `--proxyurl`, `--proxyusername` and `--proxypassword` during agent configuration.  
   
  For example:
  
  # [Windows](#tab/windows)
 
  ```
-./config.cmd --proxyurl http://127.0.0.1:8888 --proxyusername "1" --proxypassword "1"
+./config.cmd --proxyurl http://127.0.0.1:8888 --proxyusername "myuser" --proxypassword "mypass"
 ```
 
  # [macOS and Linux](#tab/unix)
 
  ```
-./sh --proxyurl http://127.0.0.1:8888 --proxyusername "1" --proxypassword "1"
+./config.sh --proxyurl http://127.0.0.1:8888 --proxyusername "myuser" --proxypassword "mypass"
 ```
  ---
  
- We store your proxy credential securely on each platform.  
- 
- # [Windows](#tab/windows)
+We store your proxy credential securely on each platform.
+On Linux, the credential is encrypted with a symmetric key based on the machine ID.
+On macOS, we use the Keychain.
+On Windows, we use the Credential Store.
 
- Windows Credential Store
-
- # [macOS and Linux](#tab/unix)
-
- OSX: OSX Keychain
- 
- Linux: Encrypted with symmetric key based on machine id
-
- ---
-
-1. **Limitation of agent version 122.0**
-
- This applies to TFS 2018 RTM. It also could apply to VSTS, unless you upgrade your agent.
-
- # [Windows](#tab/windows)
-
- The Windows Credential Store will cause a limitation for configuring agent as Windows service**  
-    Since we store your proxy credential into `Windows Credential Store` and the `Windows Credential Store` is per user, when you configure the agent as Windows service, you need run the configuration as the same user as the service is going to run as.  
-    Ex, in order to configure the agent service run as `mydomain\buildadmin`, you need either login the box as `mydomain\buildadmin` and run `config.cmd` or login the box as someone else but use `Run as different user` option when you run `config.cmd` to run as `mydomain\buildadmin`  
-
- # [macOS and Linux](#tab/unix)
-
- No limitation.
-
- ---
+> [!Note]
+> Agent version 122.0, which shipped with TFS 2018 RTM, has a known issue configuring as a service on Windows.
+> Because the Windows Credential Store is per user, you must configure the agent using the same user the service
+> is going to run as. For example, in order to configure the agent service run as `mydomain\buildadmin`,
+> you must launch `config.cmd` as `mydomain\buildadmin`. You can do that by logging into the machine with
+> that user or using `Run as a different user` in the Windows shell.
 
 ### How the agent handles the proxy within a build or release job
 
-After configuring proxy for agent, agent infrastructure will start talk to VSTS/TFS service through the web proxy specified in the `.proxy` file.  
+The agent will talk to Azure DevOps/TFS service through the web proxy specified in the `.proxy` file.
 
 Since the code for the `Get Source` task in builds and `Download Artifact` task in releases are also baked into the agent, those tasks will follow the agent proxy configuration from the `.proxy` file.  
 
-Agent will expose proxy configuration via environment variables for every task execution, task author need to use `vsts-task-lib` methods to retrieve back proxy configuration and handle proxy with their task.
-
-### Get proxy configuration by using [VSTS-Task-Lib](https://github.com/Microsoft/vsts-task-lib) method
-
-See [VSTS-Task-Lib doc](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/proxy.md) for details.
+The agent exposes proxy configuration via environment variables for every task execution.
+Task authors need to use `[vsts-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib)` methods to retrieve proxy configuration and [handle the proxy](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/node/docs/proxy.md) within their task.
 
 ::: moniker-end
 
@@ -102,13 +81,13 @@ See [VSTS-Task-Lib doc](https://github.com/Microsoft/vsts-task-lib/blob/master/n
 
 ## TFS 2017.2 and older
 
-(You also can use this method for VSTS and newer versions of TFS, but we recommend the above method in those cases.)
+(You also can use this method for Azure Pipelines and newer versions of TFS, but we recommend the above method in those cases.)
 
 In the agent root directory, create a .proxy file with your proxy server url.
 
 # [Windows](#tab/windows)
 
-```powershell
+```ps
 echo http://name-of-your-proxy-server:8888 | Out-File .proxy
 ```  
 
@@ -133,7 +112,7 @@ If your proxy requires authentication, the simplest way to handle it is to grant
 
 # [Windows](#tab/windows)
 
-```powershell
+```ps
 $env:VSTS_HTTP_PROXY_USERNAME = "proxyuser"
 $env:VSTS_HTTP_PROXY_PASSWORD = "proxypassword"
 ```  
@@ -147,7 +126,7 @@ export VSTS_HTTP_PROXY_PASSWORD=proxypassword
 
 If you are running your agent as a service:
 
-1. 
+1.
 
  ```bash
 export VSTS_HTTP_PROXY_USERNAME=proxyuser
@@ -164,8 +143,7 @@ export VSTS_HTTP_PROXY_PASSWORD=proxypassword
 
 ## Specify proxy bypass URLs
 
-Create a `.proxybypass` file under agent root to specify proxy bypass Url's Regex (ECMAScript syntax).  
-For example:
+Create a `.proxybypass` file in the agent's root directory that specifies regular expressions (in ECMAScript syntax) to match URLs that should bypass the proxy. For example:
 
 ```
 github\.com

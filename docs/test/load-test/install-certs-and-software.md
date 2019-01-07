@@ -1,6 +1,6 @@
 ---
-title: Install certificates and custom software on agent machines
-description: Install certificates and custom software on agent machines with VSTS
+title: Install certificates and software on agents
+description: Install certificates and custom software on agent machines with Azure DevOps
 ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Install certificates and custom software on agent machines
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 In some test scenarios you might need to set up the environment for the test, such as installing certificates
 or custom software, and then clean up the environment afterwards (such as removing temporary files or folders created during test execution).
@@ -42,7 +42,7 @@ Some examples are:
 
 1. Double-click the active test settings (such as **Local.testsettings**) to open **Test Settings** dialog.
 
-1. Select the **Deployment** tab and set the **Enable deployment** checkbox.
+1. Select the **Deployment** page and set the **Enable deployment** checkbox.
 
    ![Enable deployment of artifacts](_img/install-certs-and-software/enable-deloyment.png)
 
@@ -50,7 +50,7 @@ Some examples are:
 
    ![Add certificate to deploy](_img/install-certs-and-software/add-certificate.png)
 
-1. Select the **Setup and Cleanup Scripts** tab in left-hand navigation bar.
+1. Select the **Setup and Cleanup Scripts** page in left-hand navigation bar.
 
 1. Choose the ellipsis (**...**), browse to the location of the file or other artifact you want to deploy, and add it to the deployment items list.
 
@@ -75,8 +75,8 @@ Script to import a certificate into the Trusted Root Certification Authorities c
 certutil.exe -f -user -p password -importpfx %DeploymentDirectory%\mycertitficate.pfx NoRoot
 ```
 
-> See [CertMgr](https://docs.microsoft.com/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)
-  and [Certutil](https://docs.microsoft.com/windows-server/administration/windows-commands/certutil)
+> See [CertMgr](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)
+  and [Certutil](/windows-server/administration/windows-commands/certutil)
   for more information about using these utilities.
 
 You can use the deployment options and a setup script to add **.exe** files or other files you want to deploy to the machines running the agent,
@@ -90,7 +90,7 @@ in the cloud, assuming you have added `WebDeploy_x64_en-US.msi` to the deploymen
 ## See also
 
 * [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with VSTS](get-started-simple-cloud-load-test.md) 
+* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

@@ -1,12 +1,13 @@
 ---
 title: Version Control - Branching strategies with TFVC
+titleSuffix: Azure Repos
 description: Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
 ms.prod: devops
 ms.technology: devops-code-tfvc 
 ms.manager: douge
 ms.date: 04/25/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
@@ -14,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 
 # Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Do you plan to adopt Team Foundation Version Control ([TFVC](index.md)) with Team Foundation Server (TFS) or Visual StudioTeam Services (VSTS)? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
+Do you plan to adopt Team Foundation Version Control ([TFVC](index.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
 
 Unlike Git branches, which are repository scoped, TFVC branches are path scoped and not as lightweight. Set your bar for creating branches high and only branch when you have a need for code or release isolation.
 

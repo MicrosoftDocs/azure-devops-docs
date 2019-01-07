@@ -1,7 +1,8 @@
 ---
-title: Project and navigational elements, key concepts, objects, and terms
-titleSuffix: VSTS & TFS
-description: Understand the key concepts that support navigation and managing projects available with Visual Studio Team Services and Team Foundation Server  
+title: Key concepts, objects, and terms
+titleSuffix: Azure DevOps Services & TFS
+description: Understand the key concepts that support navigation and managing projects available with Azure DevOps & Team Foundation Server  
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -10,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 07/21/2018
+ms.date: 11/19/2018
 ---
 
 
@@ -18,7 +19,7 @@ ms.date: 07/21/2018
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
  
-This glossary describes terms used when navigating in the web portal for  Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  See also: 
+This glossary describes terms used when navigating in the web portal for  Azure DevOps Services and Team Foundation Server (TFS).  See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 
 - [Security glossary](../../organizations/security/security-glossary.md)  
 
@@ -28,9 +29,9 @@ An interactive list of work items that corresponds to a team's project plan or r
 
 Each product backlog can be customized by a team. Learn more: [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
-::: moniker range="vsts" 
+::: moniker range=">= azdevserver-2019"
 ## Analytics views
-Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for VSTS. 
+Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics service. The Analytics service is the reporting platform for Azure DevOps Services. 
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
@@ -38,6 +39,7 @@ Analytics views provide a simplified way to specify the filter criteria for a Po
 ## Boards (Kanban) 
 An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../../boards/boards/kanban-basics.md).
 
+[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
 
@@ -52,16 +54,16 @@ An interactive, electronic sign board that supports visualization of the flow of
 A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.md).  
 
 > [!NOTE]   
-> Git in Visual Studio and VSTS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with VSTS.
+> Git in Visual Studio and Azure DevOps Services is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with Azure DevOps Services.
 
 [!INCLUDE [temp](../../_shared/glossary-terms/notifications.md)]
 
 
 ## Pipelines 
 
-Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs-vsts.md). 
+Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs.md). 
 
-![Pipeline concept end-to-end](/vsts/pipelines/_img/pipeline-concept-end-to-end.png)
+![Pipeline concept end-to-end](/azure/devops/pipelines/_img/pipeline-concept-end-to-end.png)
 
 [!INCLUDE [temp](../../_shared/glossary-terms/plans.md)] 
 
@@ -88,9 +90,7 @@ An interactive list of work items that have been assigned to the same sprint or 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
-
 [!INCLUDE [temp](../../_shared/glossary-terms/tfvc-repo.md)] 
-
 
 [!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 
 

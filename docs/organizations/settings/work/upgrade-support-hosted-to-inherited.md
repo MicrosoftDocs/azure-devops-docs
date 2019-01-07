@@ -1,7 +1,8 @@
 ---
-title: Customizations preserved or ignored with the clone of Hosted XML to Inheritance  
-titleSuffix: VSTS
-description: Describes the set of customizations that are preserved versus those that are ignored when upgrading a Hosted XML process to Inheritance in Visual Studio Team Services
+title: Customizations when cloning a Hosted XML process 
+titleSuffix: Azure DevOps Services
+description: Describes the set of customizations that are preserved versus those that are ignored when upgrading a Hosted XML process to Inheritance 
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -16,10 +17,7 @@ ms.date: 05/30/2018
 
 # Supported operations when moving from Hosted XML to an inherited process   
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
-
-> [!NOTE]  
-> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your organization(s).
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 

@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts ReferenceLink API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts ReferenceLink API | Extensions for Azure DevOps Services
 description: ReferenceLink API Contract
 ms.assetid: c158c5e8-8ad0-7ffe-17f2-54622dcfdbf6
 ms.prod: devops

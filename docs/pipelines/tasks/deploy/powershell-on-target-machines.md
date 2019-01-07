@@ -1,33 +1,34 @@
 ---
+title: PowerShell on Target Machines task
 description: PowerShell on Target Machines build task
-title: PowerShell on Target Machines task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Deploy: PowerShell on Target Machines
+# PowerShell on Target Machines task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
-::: moniker-end
+Use this task in a build or release pipeline to execute PowerShell scripts on remote machine(s).
 
-![icon](_img/powershell-on-target-machines-icon.png) Execute PowerShell scripts on remote machine(s).
-
-This task can run both PowerShell scripts and PowerShell-DSC scripts. 
+This task can run both PowerShell scripts and PowerShell-DSC scripts:
 
 * For PowerShell scripts, the computers must have PowerShell 2.0 or higher installed.
 * For PowerShell-DSC scripts, the computers must have 
   [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855&40ddd5bd-f9e7-49a6-3526-f86656931a02=True)
   installed. This is installed by default on Windows 8.1, Windows Server 2012 R2, and later.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Prerequisites
 
@@ -50,27 +51,25 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 | **Deployment - PowerShell Script** | The location of the PowerShell script on the target machine. Can include environment variables such as `$env:windir` and `$env:systemroot` Example: `C:\FabrikamFibre\Web\deploy.ps1` |
 | **Deployment - Script Arguments** | The arguments required by the script, if any. Example: `-applicationPath $(applicationPath) -username $(vmusername) -password $(vmpassword)` |
 | **Deployment - Initialization Script** | The location on the target machine(s) of the data script used by PowerShell-DSC. It is recommended to use arguments instead of an initialization script. |
-| **Deployment - Session Variables** | Used to set up the session variables for the PowerShell scripts. A comma-separated list such as `$varx=valuex, $vary=valuey` Most commonly used for backward compatibility with earlier versions of Release Management. It is recommended to use arguments instead of session variables. |
+| **Deployment - Session Variables** | Used to set up the session variables for the PowerShell scripts. A comma-separated list such as `$varx=valuex, $vary=valuey` Most commonly used for backward compatibility with earlier versions of the release service. It is recommended to use arguments instead of session variables. |
 | **Advanced - Run PowerShell in Parallel** | Set this option to execute the PowerShell scripts in parallel on all the target machines |
 | **Advanced - Select Machines By** | Depending on how you want to specify the machines in the group when using the **Filter Criteria** parameter, choose **Machine Names** or **Tags**. |
-| **Advanced - Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FDQNs or IP addresses.<br />Specify tag names for a filter as {TagName}<strong>:</strong>{Value} Example: `Role:DB;OS:Win8.1` |
+| **Advanced - Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FQDNs or IP addresses.<br />Specify tag names for a filter as {TagName}<strong>:</strong>{Value} Example: `Role:DB;OS:Win8.1` |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 > Version 3.x of the task includes the **Inline script** setting where you can enter your PowerShell script code.
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

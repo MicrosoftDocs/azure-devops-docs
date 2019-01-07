@@ -2,7 +2,7 @@
 title: Improved commit traceability, custom multiline fields, and board/test integration - Mar 24
 description: VSTS release notes for March 24 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 82e1be4f-ab46-40e1-a3f2-ad8fb9e18a67
 ms.date: 06/01/2016
@@ -56,7 +56,7 @@ With this new capability, you can now perform the following actions directly fro
 -Run the test by launching it in the Web Test Runner, from which you can pass or fail individual steps, file bugs, etc.
 -View a summary of the roll-up status indicating how many tests have passed and how many remain for that story
 
-If you need advanced test management capabilities (like assign testers, assign configurations, centralized parameters, exporting test results, etc.), you can then switch over to Test Hub and start using the default test plan/requirement-based suites that have been auto-created for you. You can learn about this capability [here](https://msdn.microsoft.com/en-us/Library/vs/alm/Work/kanban/add-run-update-tests).
+If you need advanced test management capabilities (like assign testers, assign configurations, centralized parameters, exporting test results, etc.), you can then switch over to Test Hub and start using the default test plan/requirement-based suites that have been auto-created for you. You can learn about this capability [here](https://msdn.microsoft.com/Library/vs/alm/Work/kanban/add-run-update-tests).
 
 ##Capture screen recordings
 

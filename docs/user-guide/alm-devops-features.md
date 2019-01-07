@@ -1,33 +1,33 @@
 ---
-title: Feature overview 
-titleSuffix: VSTS & TFS 
-description: Comprehensive index to all features in Visual Studio Team Services & Team Foundation Server 
+title: Feature overview for Azure DevOps
+titleSuffix: Azure DevOps 
+description: Comprehensive index to all features for Azure DevOps
 ms.prod: devops
 ms.technology: devops-new-user  
-ms.article: get-started-article
+ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 08/02/2018
+ms.date: 12/14/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Features
+# What are the features in Azure DevOps?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications.  
+Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
-If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other overview topics designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
+If you're new to Azure DevOps Services or TFS, see the [Key concepts](concepts.md) and other overview topics designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
 
->[!NOTE]  
-><b>Feature availability: </b>Some features are platform dependent and are noted as follows:  
->- **VSTS** - Available from VSTS (cloud service)  
+> [!NOTE]  
+> Some features are platform dependent and are noted as follows:  
+>- **Azure DevOps Services** - Available from Azure DevOps Services (cloud service)  
 >- **TFS** - Available from Team Foundation Server (on-premises)
 
-##Access and supported clients
+## Access and supported clients
 
 <table>
 <tbody>
@@ -54,7 +54,7 @@ Track work and integrate with your code, build, and test environments from the f
 - [IntelliJ](/../java/download-intellij-plug-in)   
 - [Visual Studio Code](/../java/vscode-extension)   
  
-To learn how to connect, see [Connect to a team project](../organizations/projects/connect-to-projects.md).  
+To learn how to connect, see [Connect to a project](../organizations/projects/connect-to-projects.md).  
 <br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.  
@@ -68,23 +68,23 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage users and groups</b></p>
-<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
+<p>Add members to your project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add users to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../organizations/settings/add-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add users to [Azure DevOps Services](../organizations/accounts/add-team-members.md) or your [TFS](../organizations/settings/add-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
-<p><b>Azure Active Directory (AAD) (VSTS)</b></p>
-<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md). </p>
+<p><b>Azure Active Directory (Azure AD) (Azure DevOps Services)</b></p>
+<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md). </p>
 
 </td>
 <td width="30%">
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your VSTS organization or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (VSTS)](../organizations/accounts/add-organization-users-from-user-hub.md)   
+<p>All users that you add to your Azure DevOps organization or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+- [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
@@ -96,7 +96,7 @@ Use features supported by these familiar clients to manage your project and illu
 - [TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
 - [Queries](../boards/queries/set-query-permissions.md)   
-- [Team admin role](../organizations/settings/team-administrator-permissions.md)  
+- [Manage teams and configure team tools](../organizations/settings/manage-teams.md)  
 - [Test](../organizations/security/set-project-collection-level-permissions.md)  
 - [Work item tags](../organizations/security/permissions.md#tags)  
 
@@ -143,8 +143,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 </td>
 <td width="320">
-<p><b>Move work item to a different team project (VSTS)</b></p>
-<p>Choose the ![Change team project icon](../boards/_img/icons/change-team-project-icon.png) Change team project menu option ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different team project](../boards/backlogs/remove-delete-work-items.md#move). </p>
+<p><b>Move work item to a different project (Azure DevOps Services)</b></p>
+<p>Choose the ![Change project icon](../boards/_img/icons/change-team-project-icon.png) Change project menu option ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move). </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose ![full screen icon](../boards/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/_img/icons/exitfullscreen_icon.png)  to enter or exit full screen mode.  </p>
@@ -162,13 +162,13 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Multi-team backlog ownership</b></p>
-<p>Easily view and track items [owned by other teams](../boards/backlogs/work-multi-team-ownership-backlogs.md) and quickly reorder and re-parent items to effectively manage your backlog. </p>
+<p>Easily view and track items [owned by other teams](../boards/backlogs/backlogs-overview.md#multi-team) and quickly reorder and re-parent items to effectively manage your backlog. </p>
 
 
 </td>
 
 <td width="30%">
-<p><b>Change work item type (VSTS)</b></p>
+<p><b>Change work item type (Azure DevOps Services)</b></p>
 <p>If you've added a task instead of a bug and want to change the work item type to bug, you can. Choose the ![Change type icon](../boards/_img/icons/change-type-icon.png) Change type option from the ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [change the work item type](../boards/backlogs/remove-delete-work-items.md#change-type). </p>
 
 <p><b>Filter your backlog</b></p>
@@ -299,7 +299,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field ([VSTS](../organizations/settings/work/customize-process.md) | [TFS](../reference/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field ([Azure DevOps Services](../organizations/settings/work/customize-process.md) | [TFS](../reference/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -320,7 +320,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="customize-vsts">  </a>
 
-### Customize (VSTS)
+### Customize (Azure DevOps Services)
 
 
 <table>
@@ -329,7 +329,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Create an inherited process</b></p>
-<p>The first step in customizing a team project is to [create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
+<p>The first step in customizing a project is to [create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process). You can only customize inherited processes.  </p>
 ![Customize process](_img/features/customize-vsts-process.png)   
 <br/>
 
@@ -337,7 +337,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>The [new work item experience](../reference/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 <p><b>Customize a process</b></p>
-<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
+<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your project as follows:</p>
 <ul>
 <li>[Add and modify fields](../organizations/settings/work/customize-process-field.md)</li>
 <li>[Modify the web form layout](../organizations/settings/work/customize-process-form.md)</li>
@@ -346,11 +346,11 @@ Use features supported by these familiar clients to manage your project and illu
 <li>[Add a custom control](../organizations/settings/work/custom-controls-process.md) </li>
 </ul>
 
-<p><b>Change the process used by a team project</b></p>
+<p><b>Change the process used by a project</b></p>
 <p>To apply customizations to one or more team projects, you [change the process they reference to a customized inherited process](../organizations/settings/work/manage-process.md#migrate).  </p>
 
 <p><b>Enable/disable a process</b></p>
-<p>To make sure no one creates a team project from a process that you don't want used, [you can disable it](../organizations/settings/work/manage-process.md#enable-process).  </p>
+<p>To make sure no one creates a project from a process that you don't want used, [you can disable it](../organizations/settings/work/manage-process.md#enable-process).  </p>
 
 
 
@@ -590,7 +590,7 @@ Use features supported by these familiar clients to manage your project and illu
 ![Multiple teams](_img/features/alm-feature-multiple-teams.png)  
 <br/>
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../organizations/settings/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. [Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).</p>
 
 </td>
 <td width="33%">
@@ -644,7 +644,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Schedule and activate your team's sprints](../boards/sprints/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
 
 <p><b>Select team sprints, set team defaults</b></p>
-<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s) and iteration paths](../organizations/settings/set-team-defaults.md) to support their work tracking activities. </p>
+<p>Several tools reference the team's default and active iteration paths or sprints. For the Agile tools to work best, each team needs to [set their team area path(s)](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md) to support their work tracking activities. </p>
 
 
 <p><b>Plan sprints</b></p>
@@ -723,7 +723,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For VSTS: [add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
+<p>For Azure DevOps Services: [add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md).  For TFS: [Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx) by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
 <p>States allow you to [track the status of work](https://msdn.microsoft.com/library/ms194981.aspx). For  example, a bug moves from **Active**, **Resolved**, and **Closed** to correspond to when it's defined, fixed, and verified as fixed.</p>
@@ -774,7 +774,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/manage-personal-notifications.md) or [team notifications](../notifications/manage-team-notifications.md).</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/howto-manage-personal-notifications.md) or [team notifications](../notifications/howto-manage-team-notifications.md).</p>
 ![Open Notifications from Organization menu](_img/features/features-notifications-option.png)  
 <br/>
 
@@ -814,7 +814,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Frequent on-line feature updates</b></p>
-<p>Check the [News](https://visualstudio.microsoft.com/news-overview-vs) for product updates, or read about them by accessing the News link in your web portal.</p>
+<p>Check the [News](/visualstudio/releasenotes/vs2017-relnotes) for product updates, or read about them by accessing the News link in your web portal.</p>
 
  <br/>
 
@@ -840,7 +840,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with Git in Visual Studio </b></p>
-<p>To get started working with Git, [clone a repository, add code, and create topic branches in VSTS](../repos/git/create-new-repo.md) or [Visual Studio](../repos/git/gitquickstart.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
+<p>To get started working with Git, [clone a repository, add code, and create topic branches in Azure DevOps Services](../repos/git/create-new-repo.md) or [Visual Studio](../repos/git/gitquickstart.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
 ![Visual Studio Git UI pages](_img/features/features-git-vs-ui.png)  
 <br/>
 
@@ -862,7 +862,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Get started using Eclipse</b></p>
-<p>[Work with Git repositories](../repos/git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
+<p>[Work with Git repositories](../repos/git/share-your-code-in-git-eclipse.md) using the Team Explorer Everywhere IDE for Eclipse.  </p>
 
 <p><b>Add reviewers to get feedback </b></p>
 <p>Use the [**@mention** control to add reviewers](../notifications/at-mentions.md) to your pull request to get their feedback about your changes.  </p>
@@ -888,7 +888,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Set a branch policy to [automatically generate a build for a pull request to selected branches](../repos/git/branch-policies.md).</p>
 
 <p><b>Create Git repositories </b></p>
-<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../repos/git/repo-rename.md) from the admin context. </p>
+<p>When you create a project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../repos/git/repo-rename.md) from the admin context. </p>
 
 
 <p><b>Rename a Git repository </b></p>
@@ -998,7 +998,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Subscribe to alerts when check-ins occur</b></p>
-<p>Get notified when someone checks in code to your TFVC team project by [subscribing to receive email alerts](https://msdn.microsoft.com/library/ms181407.aspx#alerts).</p>
+<p>Get notified when someone checks in code to your TFVC project by [subscribing to receive email alerts](https://msdn.microsoft.com/library/ms181407.aspx#alerts).</p>
 
 <p><b>Version control locks</b></p>
 <p>[Lock files or folders](https://msdn.microsoft.com/library/ms181418.aspx) when you need to prevent them from being checked out or modified. </p>
@@ -1009,7 +1009,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>TFVC permissions</b></p>
-<p>Set permissions on [select code management tasks](../organizations/security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
+<p>Set permissions on [select code management tasks](../organizations/security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the project.</p>
 
 
 </td>
@@ -1021,7 +1021,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="package-management"></a>
 
-### Package management (VSTS)
+## Azure Artifacts (Azure DevOps Services)
 
 <table>
 <tbody>
@@ -1029,14 +1029,14 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 
-<p><b>What is package management?</b></p>
-<p>Package management helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](../package/what-is-packaging.md).</p>
+<p><b>What is Azure Artifacts?</b></p>
+<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md).</p>
 
 <p><b>Create feeds </b></p>
-<p>[Create feeds](../package/feeds/create-feed.md) to share code through packages.</p>
+<p>[Create feeds](../artifacts/feeds/create-feed.md) to share code through packages.</p>
 
 <p><b>Move existing file shares to the cloud</b></p>
-<p>Eliminate dependencies on on-premises file shares and hosted instances of NuGet.Server by [moving your packages to VSTS](../package/nuget/move-from-fileshares.md).</p>
+<p>Eliminate dependencies on on-premises file shares and hosted instances of NuGet.Server by [moving your packages to Azure DevOps Services](../artifacts/nuget/move-from-fileshares.md).</p>
 
 
 
@@ -1044,27 +1044,27 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Discover and consume packages </b></p>
-<p>[Consume packages](../package/nuget/consume.md) by connecting to a feed.</p>
+<p>[Consume packages](../artifacts/nuget/consume.md) by connecting to a feed.</p>
 
 <p><b>Publish packages to feeds</b></p>
-<p>[Publish packages](../package/nuget/publish.md) to share code with your team and your organization.</p>
+<p>[Publish packages](../artifacts/nuget/publish.md) to share code with your team and your organization.</p>
 
 <p><b>Add identities to your feeds </b></p>
-<p>[Give teams and service identities](../package/feeds/common-identities.md) access to your feeds.</p>
+<p>[Give teams and service identities](../artifacts/feeds/feed-permissions.md) access to your feeds.</p>
 
 
 </td>
 <td width="33%">
 
 <p><b>Bootstrap the developer environment</b></p>
-<p>Increase your team's velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating VSTS NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](../package/nuget/bootstrap-nuget.md).</p>
+<p>Increase your team's velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Azure DevOps Services NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](../artifacts/nuget/bootstrap-nuget.md).</p>
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
-<p>[Unlist or remove a package](../package/nuget/remove.md) you no longer want users to discover.</p>
+<p>[Unlist or remove a package][Delete packages and recover deleted packages from the recycle bin in Azure Artifacts](../artifacts/how-to/delete-and-recover-packages.md) you no longer want users to discover.</p>
 
 <p><b>Secure feeds </b></p>
-<p>Control who can [contribute to or consume from a feed](../package/feeds/feed-permissions.md).</p>
+<p>Control who can [contribute to or consume from a feed](../artifacts/feeds/feed-permissions.md).</p>
 </td>
 </tr>
 </tbody>
@@ -1096,7 +1096,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.</p>
 
 
-<p><b>Gated check-in (TFVC, VSTS) </b></p>
+<p><b>Gated check-in (TFVC, Azure DevOps Services) </b></p>
 <p>Use [gated check-in](../pipelines/build/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
 
 
@@ -1178,8 +1178,8 @@ pipelines\tasks\build\_img
 <br />
 
 
-<p><b>When to use Release Management?</b></p>
-<p>Evaluate how Release Management can help you in [your development and deployment efforts](../pipelines/overview.md).</p>
+<p><b>When to use Azure Pipelines or Build &amp; Release in TFS?</b></p>
+<p>Evaluate how Azure Pipelines and Build &amp; Release in TFS can help you in [your development and deployment efforts](../pipelines/overview.md).</p>
 
 
 <p><b>Release definitions</b></p>
@@ -1237,7 +1237,7 @@ pipelines\tasks\build\_img
 ![View test results for a release](_img/features/devops-feature-release-view-tests.png)
 <br />
 
-<p><b>Add release summary to dashboard (VSTS) </b></p>
+<p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
 <p>[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
@@ -1267,7 +1267,7 @@ pipelines\tasks\build\_img
 <p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
-<p>Create [unit tests](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
+<p>Create [unit tests](/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
 ![view tests in test explorer](_img/features/alm-feature-test-unittests.png)  
 <br />
 
@@ -1377,7 +1377,7 @@ pipelines\tasks\build\_img
 </td>
 <td width="33%">
 
-<p><b>Restrict or allow team members to manage dashboards (VSTS)</b></p>
+<p><b>Restrict or allow team members to manage dashboards (Azure DevOps Services)</b></p>
 <p>Set permissions to [restrict or allow team members to manage dashboards](../report/dashboards/dashboards.md#manage).  </p>
 
 
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-organization-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([Azure DevOps Services](../organizations/accounts/add-organization-users.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1401,7 +1401,7 @@ pipelines\tasks\build\_img
 ![Sprint burndown chart](_img/features/alm-index-sprint-burndown-widget.png)  
 <br/>
 
-<p><b>Add release summary to dashboard (VSTS) </b></p>
+<p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
 <p>[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 </td>
@@ -1431,7 +1431,7 @@ pipelines\tasks\build\_img
 <p><b>Cumulative flow diagrams</b></p>
 <p>Track the progress of work on your backlogs [through the CFD charts](../report/dashboards/cumulative-flow.md).  </p>
 
-<p><b>Power BI dashboards (VSTS)</b></p>
+<p><b>Power BI dashboards (Azure DevOps Services)</b></p>
 <p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online account once you [connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md). </p>
 
 
@@ -1444,7 +1444,7 @@ pipelines\tasks\build\_img
 
 <a id="power-bi">  </a>
 
-### Power BI dashboards and reports (VSTS)
+### Power BI dashboards and reports (Azure DevOps Services)
 
 <table>
 <tbody>
@@ -1457,7 +1457,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Get started </b></p>
-<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS organization once you connect to Power BI. </p>
+<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your organization once you connect to Power BI. </p>
 
 
  
@@ -1466,7 +1466,7 @@ pipelines\tasks\build\_img
 <td width="50%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your VSTS organization](../report/powerbi/data-connector-connect.md).</p>
+<p>[Steps required to authorize Power BI to access your organization](../report/powerbi/data-connector-connect.md).</p>
 
 
 <p><b>Available data</b></p>
@@ -1492,10 +1492,10 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Reporting Services reports</b></p>
-<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a team project based on the process - [Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md) - that you choose.   </p>
+<p>You can [analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx). These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process - [Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md) - that you choose.   </p>
 
 <p><b>Add Reporting Services reports</b></p>
-<p>If you need to add reporting services to a team project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md).</p>
+<p>If you need to add reporting services to a project or on-premises TFS after you've created your team projects, you can by [adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md).</p>
 
 <p><b>Manage the data warehouse</b></p>
 <p>The reporting warehouse is a traditional data warehouse that consists of a [relational database and an Analysis Services database](../report/admin/manage-reports-data-warehouse-cube.md). You manage it through the following activities:</p>
@@ -1667,7 +1667,7 @@ pipelines\tasks\build\_img
 <h4><i>Plan and track work (continued)</i></h4>
 
 <!---
-<p><b>Cumulative flow diagram (VSTS)  </b></p>
+<p><b>Cumulative flow diagram (Azure DevOps Services)  </b></p>
 <p>Configurable tile to display the [cumulative flow for a product or portfolio backlog](../report/dashboards/cumulative-flow.md).
 </p>
 -->
@@ -1694,7 +1694,7 @@ pipelines\tasks\build\_img
 <p>Configurable tile to display the [histogram for a specific build definition](../report/dashboards/widget-catalog.md#build-history-widget).
  </p>
 
-<p><b>Deployment status (VSTS)</b></p>
+<p><b>Deployment status (Azure DevOps Services)</b></p>
 <p>Configurable tile that shows you a consolidated view of the [deployment status and test pass rate across multiple environments for a recent set of builds](../report/dashboards/widget-catalog.md#deployment-status-widget).  
  </p>
 
@@ -1731,7 +1731,7 @@ pipelines\tasks\build\_img
 
 ### Marketplace
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for VSTS or TFS 2015.2 or later version or for Visual Studio or Visual Studio Code.
+<blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for Azure DevOps Services or TFS 2015.2 or later version or for Visual Studio or Visual Studio Code.
 </blockquote> 
 
 <table>
@@ -1741,19 +1741,19 @@ pipelines\tasks\build\_img
 
 
 <p><b>What is the Marketplace?</b></p>
-<p>From the [Marketplace](https://marketplace.visualstudio.com/), you can extend the functionality available to you by installing free extensions or purchasing a subscription or paid extension. Extensions support adding new capabilities to Visual Studio, Visual Studio Code, VSTS, or TFS.  </p>
+<p>From the [Marketplace](https://marketplace.visualstudio.com/), you can extend the functionality available to you by installing free extensions or purchasing a subscription or paid extension. Extensions support adding new capabilities to Visual Studio, Visual Studio Code, Azure DevOps Services, or TFS.  </p>
 
-![Featured extensions for VSTS](_img/features/featured-extensions.png)
+![Featured extensions for Azure DevOps Services](_img/features/featured-extensions.png)
 
 </td>
 <td width="45%">
 
 
 <p><b>Subscriptions</b></p>
-<p>[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs) are a way for you to get the Visual Studio IDE, team collaboration benefits like VSTS and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
+<p>[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs) are a way for you to get the Visual Studio IDE, team collaboration benefits like Azure DevOps Services and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
 
 <p><b>Extensions</b></p>
-<p>You can [get and quickly install extensions](../marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or VSTS.</p>
+<p>You can [get and quickly install extensions](../marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or Azure DevOps Services.</p>
 
 <p><b>Try extensions for free</b></p>
 <p>You can [start a trial extension for free](../billing/try-additional-features-vs.md).</p>
@@ -1761,9 +1761,9 @@ pipelines\tasks\build\_img
 
 <p><b>Get extensions for...</b></p>
 <ul>
-<li>[VSTS](https://marketplace.visualstudio.com/#VSTS)</li>
-<li>[Visual Studio](https://marketplace.visualstudio.com/#VS)</li>
-<li>[Visual Studio Code](https://marketplace.visualstudio.com/#VSCode)</li>
+<li>[Azure DevOps Services](https://marketplace.visualstudio.com/#vsts)</li>
+<li>[Visual Studio](https://marketplace.visualstudio.com/#vs)</li>
+<li>[Visual Studio Code](https://marketplace.visualstudio.com/#vscode)</li>
 </ul>
 <br/>
 
@@ -1789,13 +1789,13 @@ pipelines\tasks\build\_img
 
 
 <p><b>Get started with REST APIs</b></p>
-<p>Learn the basic patterns for [using the REST APIs](../integrate/get-started/rest/basics.md) for VSTS and TFS.</p>
+<p>Learn the basic patterns for [using the REST APIs](../integrate/get-started/rest/basics.md) for Azure DevOps Services and TFS.</p>
 
 <p><b>Authorization</b></p>
-<p>Get authorization from your customers to access VSTS resources using [OAuth 2.0](../integrate/get-started/Authentication/oauth.md).</p>
+<p>Get authorization from your customers to access Azure DevOps Services resources using [OAuth 2.0](../integrate/get-started/Authentication/oauth.md).</p>
 
 <p><b>REST API reference</b></p>
-<p>Use the [REST APIs](../integrate/index.md) to work with VSTS and TFS resources.</p>
+<p>Use the [REST APIs](../integrate/index.md) to work with Azure DevOps Services and TFS resources.</p>
 
 </td>
 <td width="33%">
@@ -1839,7 +1839,7 @@ when events happen in your Visual Studio Online projects</p>
 <p><b>Create integrations</b></p>
 <p>Integrate other services like [HipChat](../service-hooks/services/hipchat.md),
 [Slack](../service-hooks/services/slack.md),
-and [UserVoice](../service-hooks/services/uservoice.md) with VSTS
+and [UserVoice](../service-hooks/services/uservoice.md) with Azure DevOps
 using [service hooks](../service-hooks/overview.md).</p>
 
 
@@ -1853,7 +1853,7 @@ using [service hooks](../service-hooks/overview.md).</p>
 <td width="33%">
 
 <p><b>Authorize</b></p>
-<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS organization using the industry standard OAuth 2.0.
+<p>[Authorize](../service-hooks/authorize.md) other services to access your organization using the industry standard OAuth 2.0.
 Oauth 2.0 provides safe, secure access to your resources like work items, source code and build results by those other services.</p>
 
 </td>
@@ -1872,19 +1872,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
+<p><p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md) and set your web portal preferences which include language (currently only English is supported for Azure DevOps), date and time pattern, and time zone.</p>
 ![Profile drop down menu](_img/features/features-global-profile.png)  
 <br/>
 
 
 <p><b>Language Interface Packs (LIPs)</b></p>
-<p>By using a [Windows Language Interface Pack (LIP)](https://msdn.microsoft.com/library/ms246590.aspx), you can install a language version of Windows and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and will have a majority of the user interface localized. </p>
+<p>By using a [Windows Language Interface Pack (LIP)](https://msdn.microsoft.com/library/ms246590.aspx), you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and will have a majority of the user interface localized. </p>
 
 </td>
 <td width="33%">
 
 <p><b>Localized content</b></p>
-<p>Most content that supports VSTS and TFS is localized into the following 14 languages.</p>
+<p>Most content that supports Azure DevOps Services and TFS is localized into the following 14 languages.</p>
 
 
 <ul>
@@ -1957,7 +1957,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is Application Insights</b></p>
-<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can [detect and diagnose performance issues, and understand what users actually do with your app](/azure/application-insights/app-insights-overview). </p>
+<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can [detect and diagnose performance issues, and understand what users actually do with your app](https://azure.microsoft.com/en-in/documentation/articles/app-insights-overview/). </p>
 
 
 <p><b>Web site availability monitoring </b></p>
@@ -1975,7 +1975,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Dashboard</b></p>
-<p>Get the full picture with [customizable dashboards that track application health alongside usage metrics and app crashes](https://docs.microsoft.com/azure/application-insights/app-insights-overview). Within the dashboard, you can filter, search, and drill down to an event instance for more detail or to segment data.</p>
+<p>Get the full picture with [customizable dashboards that track application health alongside usage metrics and app crashes](/azure/application-insights/app-insights-overview). Within the dashboard, you can filter, search, and drill down to an event instance for more detail or to segment data.</p>
 ![Application insight dashboard blades](_img/features/features-app-insights-dashboard-blades.png)  
 <br/>
 
@@ -1992,7 +1992,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Gain a clear view of [where your users are coming from and how they use your app ](https://azure.microsoft.com/documentation/articles/app-insights-overview-usage/). Add custom instrumentation to determine usage patterns and next version investment areas.  </p>
 
 <p><b>Diagnose dependency issues</b></p>
-<p>See how long your application [waits for dependencies and how often a dependency call fails](/azure/application-insights/app-insights-asp-net-dependencies). Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
+<p>See how long your application [waits for dependencies and how often a dependency call fails](https://azure.microsoft.com/en-in/documentation/articles/app-insights-dependencies/). Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
 
 
 <p><b>Custom data collectors </b></p>
@@ -2027,8 +2027,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution) and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
-<p><b>Integrate with VSTS and TFS</b></p>
-<p>[Integrate HockeyApp directly in VSTS or TFS](https://visualstudio.microsoft.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
+<p><b>Integrate with Azure DevOps Services and TFS</b></p>
+<p>[Integrate HockeyApp directly in Azure DevOps Services or TFS](https://visualstudio.microsoft.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
 
 
 
@@ -2094,18 +2094,18 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [Project page](../project/navigation/work-across-projects.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (VSTS)](../repos/git/command-prompt.md#pat), [set alerts](../boards/queries/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat), [set alerts](../boards/queries/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
 <p><b>Switch team context</b></p>
-<p>Navigate to a different team or team project from the top row.</p>
+<p>Navigate to a different team or project from the top row.</p>
 ![Switch team context](_img/features/alm-feature-switch-team-context.png)  
 <br/>
 
 
 <p><b>Change team settings</b></p>
-<p>Customize features to meet your team needs by [configuring your team assets](../organizations/settings/configure-team-settings.md).</p>
+<p>Customize features to meet your team needs by [configuring your team assets](../organizations/settings/manage-teams.md).</p>
 ![Switch team context](_img/features/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
@@ -2133,10 +2133,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Test</b></p>
 <p>[Create and run manual tests](../test/create-a-test-plan.md) and [load tests for your app](../test/load-test/getting-started-with-performance-testing.md).</p>
 
-<p><b>Package (VSTS, Preview)</b></p>
-<p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../package/what-is-packaging.md).</p>
+<p><b>Package (Azure DevOps Services, Preview)</b></p>
+<p>Share code as binary assets and control dependencies by [subscribing to and working with Azure Artifacts feeds](../artifacts/overview.md).</p>
 
-<p><b>Release (VSTS, Preview)</b></p>
+<p><b>Release (Azure DevOps Services, Preview)</b></p>
 <p>Manage the release of your app by [deploying it to a specific environment for each separate release step](../pipelines/overview.md), and by controlling the process through approvals for each step.</p>
 
 
@@ -2171,14 +2171,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 
-<p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../organizations/settings/add-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p><b>Project admin context</b></p>
+<p>Open the admin context to [add teams](../organizations/settings/add-teams.md) and [manage permissions](../organizations/security/change-individual-permissions.md). From any project hub, choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../boards/_img/icons/gear_icon.png) gear icon to open the admin context, and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2233,7 +2233,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Tags</b></p>
-<p>[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries. Bulk update work items to add or remove tags: [VSTS](../boards/backlogs/bulk-modify-work-items.md#tags) | [TFS](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). </p>
+<p>[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries. Bulk update work items to add or remove tags: [Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags) | [TFS](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). </p>
 ![Add tags to filter backlogs, boards, and queries](_img/features/alm-feature-tags.png)  
 <br/>
 
@@ -2252,7 +2252,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li style="margin-bottom:0px">Delete</li>
 <li style="margin-bottom:0px">Link to a new or existing work item </li>
 <li style="margin-bottom:0px">Change work item type </li>
-<li style="margin-bottom:0px">Move to another team project</li>
+<li style="margin-bottom:0px">Move to another project</li>
 <li style="margin-bottom:0px">Create a new Git branch</li>
 </ul>
 <br/>
@@ -2285,18 +2285,18 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage users and groups</b></p>
-<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>Permission states</b></p>
 <p>Understand how [Allow, Deny, Not set and other permissions states](../organizations/security/about-permissions.md) control access to features and objects. </p>
 ![permission states](_img/features/alm-feature-permission-states.png)  
 <br/>
 
-<p><b>Manage work access (VSTS)</b></p>
-<p>[Control user access with a directory](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) to enforce policies about accessing company resources.  </p>
+<p><b>Manage work access (Azure DevOps Services)</b></p>
+<p>[Control user access with a directory](../organizations/accounts/manage-azure-active-directory-groups.md) to enforce policies about accessing company resources.  </p>
 
-<p><b>Azure Active Directory (VSTS) </b></p>
-<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md).</p>
+<p><b>Azure Active Directory (Azure DevOps Services) </b></p>
+<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
 <p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
@@ -2328,7 +2328,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)</li>
 <li>[Query permissions](../boards/queries/set-query-permissions.md)</li>
 <li>[Work item tags](../organizations/security/permissions.md#tags)</li>
-<li>[Move work items to another team project](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Move work items to another project](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
 <li>[Permanently delete work items](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
 <li>[Provide feedback through the Microsoft Feedback client](../project/feedback/give-permissions-feedback.md)</li>
 </ul>
@@ -2336,20 +2336,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team admin role and permissions</b></p>
-<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../organizations/settings/configure-team-settings.md).</p>
+<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../organizations/settings/manage-teams.md).</p>
 
 
 <p><b>Manage administrative permissions </b></p>
 <p>[Add users to one of the following built-in groups] to provide them permissions assigned to that group: </p>
 <ul>
-<li>[Project Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
+<li>[Project Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage shared features for a project </li>
 <li>[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage collection-level features </li>
 <li>[Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs), who manage on-premises application servers </li>
 </ul>
 <br/>
 
 <p><b>Restrict access</b></p>
-<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual userss or a security group.</p>
+<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual users or a security group.</p>
 
 
 </td>
@@ -2372,7 +2372,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Permission reference</b></p>
-<p>[Provide or restrict access](../organizations/security/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
+<p>[Provide or restrict access](../organizations/security/permissions.md) for practically any feature, function, or object at the collection or project level. </p>
 
 <p><b>SharePoint permissions (TFS)</b></p>
 <p>Grant permissions to [view and contribute to SharePoint project portals](https://msdn.microsoft.com/library/bb558971.aspx).</p>
@@ -2404,7 +2404,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Free developer offers</b></p>
-<p>To get started, [download and install Visual Studio](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) an integrated development environment (IDE) that works with VSTS and TFS. </p>
+<p>To get started, [download and install Visual Studio](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) an integrated development environment (IDE) that works with Azure DevOps Services and TFS. </p>
 
 
 <p><b>Migrate from on-premises to hosted</b></p>
@@ -2413,8 +2413,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 
-<p><b>Sign up for VSTS </b></p>
-<p>[Store your code, tests, and test results in the cloud with VSTS](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services), as well as plan your project and track progress. </p>
+<p><b>Sign up for Azure DevOps Services </b></p>
+<p>[Store your code, tests, and test results in the cloud with Azure DevOps Services](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services), as well as plan your project and track progress. </p>
 
 
 
@@ -2459,11 +2459,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process?</b></p>
-<p>A [process defines the building blocks](../boards/work-items/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your team project.  </p>
+<p>A [process defines the building blocks](../boards/work-items/guidance/choose-process.md) of the work item tracking system as well as other sub-systems you access through your project.  </p>
 
 
 <p><b>Compare and choose a process</b></p>
-<p>Compare the three core system processes--[Agile, Scrum, CMMI](../boards/work-items/guidance/choose-process.md)--before you choose one to create a team project. </p>
+<p>Compare the three core system processes--[Agile, Scrum, CMMI](../boards/work-items/guidance/choose-process.md)--before you choose one to create a project. </p>
 
 
 <p><b>Agile process </b></p>
@@ -2471,8 +2471,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ![Agile process work item types](_img/features/features-agile-wits.png)  
 <br/>
 
-<p><b>Customize a process (VSTS) </b></p>
-<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
+<p><b>Customize a process (Azure DevOps Services) </b></p>
+<p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your project as follows:</p>
 <ul>
 <li>[Add and modify fields](../organizations/settings/work/customize-process-field.md)</li>
 <li>[Modify the web form layout](../organizations/settings/work/customize-process-form.md)</li>
@@ -2480,7 +2480,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Add a custom work item type](../organizations/settings/work/customize-process-wit.md) </li>
 </ul>
 
-<p><b>Manage processes (VSTS) </b></p>
+<p><b>Manage processes (Azure DevOps Services) </b></p>
 <p>[Create inherited processes and migrate team projects to use them](../organizations/settings/work/manage-process.md). Set the default process and enable, disable, or delete processes you no longer want to use.   </p>
 
 
@@ -2491,7 +2491,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Kanban process tools</b></p>
-<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Kanban tools support working with the [Kanban board](../boards/boards/kanban-basics.md), [adding task checklists](../boards/boards/add-task-checklists.md), [setting WIP limits](../boards/boards/wip-limits.md), [custom columns](../boards/boards/add-columns.md), [split columns](../boards/boards/split-columns.md), [custom swimlanes](../boards/boards/expedite-work.md), and [customizing cards](../boards/boards/customize-cards.md). </p>
+<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or project that you select or create. Agile Kanban tools support working with the [Kanban board](../boards/boards/kanban-basics.md), [adding task checklists](../boards/boards/add-task-checklists.md), [setting WIP limits](../boards/boards/wip-limits.md), [custom columns](../boards/boards/add-columns.md), [split columns](../boards/boards/split-columns.md), [custom swimlanes](../boards/boards/expedite-work.md), and [customizing cards](../boards/boards/customize-cards.md). </p>
 
 
 <p><b>Scrum process</b></p>
@@ -2512,11 +2512,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Scrum process tools</b></p>
-<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../boards/sprints/assign-work-sprint.md), [capacity planning](../boards/sprints/set-capacity.md), [task boards](../boards/sprints/task-board.md), and [burndown charts](../boards/sprints/sprint-burndown.md).  </p>
+<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or project that you select or create. Agile Scrum tools support [sprint planning](../boards/sprints/assign-work-sprint.md), [capacity planning](../boards/sprints/set-capacity.md), [task boards](../boards/sprints/task-board.md), and [burndown charts](../boards/sprints/sprint-burndown.md).  </p>
 
 
-<p><b>Manage processes (VSTS) </b></p>
-<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p><b>Manage processes (Azure DevOps Services) </b></p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>CMMI process</b></p>
 <p>Choose [CMMI](../boards/work-items/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
@@ -2546,7 +2546,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process template?</b></p>
-<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your team project. Process templates support full [customization of all its objects](https://msdn.microsoft.com/library/ms243782.aspx). </p>
+<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your project. Process templates support full [customization of all its objects](https://msdn.microsoft.com/library/ms243782.aspx). </p>
 
 <p><b>Manage process templates </b></p>
 <p>[Download and upload process templates](../boards/work-items/guidance/manage-process-templates.md) to support customization and upgrade of your work tracking experience and team projects. </p>
@@ -2594,17 +2594,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 
-<p><b>What is a team project?</b></p>
-<p>A [team project](../organizations/projects/create-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
+<p><b>What is a project?</b></p>
+<p>A [project](../organizations/projects/create-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A project lives within a project collection. You can grant permissions to and customize a project to support your business needs. </p>
 
-<p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../organizations/projects/create-project.md).</p>
+<p><b>Create a project </b></p>
+<p>You can [create a project hosted in the cloud (Azure DevOps Services)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a project on an on-premises TFS](../organizations/projects/create-project.md).</p>
 
 
-<p><b>Rename a team project</b></p>
-<p>[Rename a team project](../organizations/projects/rename-project.md) as needed to reflect changes that occur within your org.</p>
+<p><b>Rename a project</b></p>
+<p>[Rename a project](../organizations/projects/rename-project.md) as needed to reflect changes that occur within your org.</p>
 
-<p><b>Delete a team project</b></p>
+<p><b>Delete a project</b></p>
 <p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../organizations/projects/delete-project.md). </p>
 
 </td>
@@ -2615,8 +2615,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)
 <br/>
 
-<p><b>Change the process (VSTS) </b></p>
-<p>You [change the process of a team project](../organizations/settings/work/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../organizations/settings/work/customize-process.md) defined for that process.  </p>
+<p><b>Change the process (Azure DevOps Services) </b></p>
+<p>You [change the process of a project](../organizations/settings/work/manage-process.md) to apply customizations you've made to an inherited process. You can [add and modify fields and modify the layout of each work item type](../organizations/settings/work/customize-process.md) defined for that process.  </p>
 
 
 </td>
@@ -2625,15 +2625,15 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>View your work across teams and team projects</b></p>
 <p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
 
-<p><b>Customize a team project (TFS) </b></p>
-<p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md).  </p>
+<p><b>Customize a project (TFS) </b></p>
+<p>You customize a project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md).  </p>
 
-<p><b>Update a team project after an upgrade (TFS)</b></p>
+<p><b>Update a project after an upgrade (TFS)</b></p>
 <p>Some features added when you upgrade your on-premises application server may require you to [configure features to access them](../reference/configure-features-after-upgrade.md). </p>
 
 
 <p><b>Upload reports (TFS) </b></p>
-<p>[Upload the latest reports provided for your process](../report/admin/upload-reports.md) or add reports after you've already created a team project by adding SQL Server Reporting Services.  </p>
+<p>[Upload the latest reports provided for your process](../report/admin/upload-reports.md) or add reports after you've already created a project by adding SQL Server Reporting Services.  </p>
 </td>
 </tr>
 </tbody>
@@ -2653,10 +2653,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team?</b></p>
-<p>A team is an organizing unit used to support a number of [team-configurable tools](../organizations/settings/configure-team-settings.md) to plan and manage work and facilitate collaboration.  </p>
+<p>A team is an organizing unit used to support a number of [team-configurable tools](../organizations/settings/manage-teams.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add organizations-[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../organizations/security/add-users-team-project.md)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations-[Azure DevOps Services](../organizations/accounts/add-team-members.md) | [TFS](../organizations/security/add-users-team-project.md)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
@@ -2666,7 +2666,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Add a team admin</b></p>
-<p>Add users to the team admin role to enable them to [configure team settings](../organizations/settings/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
+<p>Add users to the team admin role to enable them to [Manage teams and configure team tools](../organizations/settings/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
@@ -2689,7 +2689,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>By [configuring your teams and backlogs into an hierarchical structure](../boards/plans/portfolio-management.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. </p>
 
 <p><b>Set team defaults</b></p>
-<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used and how to [set the defaults for your team](../organizations/settings/set-team-defaults.md).</p>
+<p>Several Agile tools reference the team's default area path, iteration path, and activated sprints to automatically filter the set of work items they display. Understand how defaults are used](../organizations/settings/about-teams-and-settings.md).</p>
 
 <p><b>Select team sprints</b></p>
 <p>[Select your team's sprints](../boards/sprints/define-sprints.md) to gain access to sprint backlogs and task boards.</p>
@@ -2698,8 +2698,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 
-<p><b>Manage team assets</b></p>
-<p>Configure, customize, and manage all [team-related activities](../organizations/settings/configure-team-settings.md)</p>
+<p><b>Configure team settings</b></p>
+<p>Configure, customize, and manage all [team-related activities](../organizations/settings/manage-teams.md)</p>
 
 
 
@@ -2747,7 +2747,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Rich text comments</b></p>
 <p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md).  </p>
 
-<p><b>Discussion (VSTS) </b></p>
+<p><b>Discussion (Azure DevOps Services) </b></p>
 <p>[Add or review comments](../boards/backlogs/add-work-items.md) added to a work item. Start by choosing the ![Discussions icon](../boards/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
 ![Discussion section](_img/features/alm-feature-add-work-items-discussion.png)  
 <br/>
@@ -2763,7 +2763,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Git code changes </b></p>
 <p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](../repos/git/history.md), compare files and folders, review history of commits and file changes. </p>
 
-<p><b>Integrate Git development with work tracking (VSTS) </b></p>
+<p><b>Integrate Git development with work tracking (Azure DevOps Services) </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
 ![Work item form Development section](_img/features/alm-feature-git-dev-section.png)  
 <br/>
@@ -2786,49 +2786,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 
-## Related notes
+## Related articles
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/)
+- [Azure DevOps Services - Features update](/../../release-notes.md)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
-- [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 
 <br/>
-Get started today using our cloud offering, [VSTS](https://visualstudio.microsoft.com/team-services/), or our [on-premises TFS server](https://visualstudio.microsoft.com/downloads/).  
+Get started today using our cloud offering, [Azure DevOps Services](https://visualstudio.microsoft.com/team-services/), or our [on-premises TFS server](https://visualstudio.microsoft.com/downloads/).  
 
-
+<!---   
 ### We welcome your feedback
 
-Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/vsts) @vsts**.
+Send suggestions on **[UserVoice](https://developercommunity.visualstudio.com/content/idea/post.html?space=21)**, and follow us on **[Twitter](https://twitter.com/AzureDevOps) @AzureDevOps**.
 
 See also our [comprehensive feedback and support page](provide-feedback.md).
 
-
-<!---   
-S98 updates
-
-TFS 2015 Update 2 updates
-Reorder cards on board - Updated
-Delete work items, recycle bin - Updated
-Global shortcut keys
-Dashboard edit mode
-@Mentions and #ID in code and work
-Pull request widget
-Common identity picker
-Gated Checkin for Team Foundation Version Control
-Support for Extensions
-
-
-Common Identity Picker
-
-A new identity picker experience is getting rolled out in Version Control, @Mentions and Release Management areas where customers can now do prefix based searches on attributes like Display Name, User Principal Name and alias that provides a rich identity search experience. The new identity picker will continue to support existing search mechanism using search by domain\alias.
-
-
-Keyboard shortcuts for Kanban Board
-
-You now have the ability to choose a work item and perform specific actions using keyboard shortcut keys on the Kanban board. To name a few, you can now use your keyboard shortcut keys to create new work items, move work items within or across columns and swimlanes, expand and collapse work items.
-
-
-
-Support for Extensions
 --> 

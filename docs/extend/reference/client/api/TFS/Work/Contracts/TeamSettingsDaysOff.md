@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts TeamSettingsDaysOff API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts TeamSettingsDaysOff API | Extensions for Azure DevOps Services
 ms.assetid: 7e5b5693-b5ee-0951-316b-6924e06bd2db
 ms.prod: devops
 ms.technology: devops-ecosystem

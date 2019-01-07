@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts WebApiConnectedServiceDetails API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts WebApiConnectedServiceDetails API | Extensions for Azure DevOps Services
 ms.assetid: ac6590ce-301f-fd1f-8f29-e41c5a86b660
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -19,7 +19,7 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/DistributedTask/Contracts/WebA
 
 ### Members
 
-* `connectedServiceMetaData`: [WebApiConnectedService](../../../TFS/DistributedTask/Contracts/WebApiConnectedService.md). Meta data for service connection
+* `connectedServiceMetaData`: [WebApiConnectedService](../../../TFS/DistributedTask/Contracts/WebApiConnectedService.md). Meta data for service endpoint
 
 * `credentialsXml`: string. Credential info
 

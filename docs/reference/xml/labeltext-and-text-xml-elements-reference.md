@@ -1,13 +1,12 @@
 ---
 title: LabelText and Text XML elements reference 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Adds a standalone label or informational text to a work item form by using the LabelText element
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6ff20e50-cef6-4278-96c4-9fd69f7e2d3a
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.date: 02/14/2017
 ---
 
@@ -26,14 +25,14 @@ The `LabelText` element is a child element of the `Control` element.
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<LabelText>
-   <Text>
-      <Link OpenInNewWindow="true | false" UrlPath="URLLinkWithParameters">
-         <Param Index="IndexValue" Value="ParamValue" Type="Original | Current"/>
-      </Link>
-      LabelText
-   </Text>
-</LabelText>
+<LabelText>  
+   <Text>  
+      <Link OpenInNewWindow="true | false" UrlPath="URLLinkWithParameters">  
+         <Param index="IndexValue " value="ParamValue " type ="Original | Current"/>  
+      </Link>  
+      LabelText  
+   </Text>  
+</LabelText>  
 ```  
   
 ## Attributes and elements  

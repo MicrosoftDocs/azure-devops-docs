@@ -2,7 +2,8 @@
 ms.prod: devops
 title: Build and release retention policies
 ms.topic: conceptual
-description: Build and release retention policies in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Build and release retention policies
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -43,13 +44,13 @@ if you are building from [Git repositories](#git-repositories).
 
 If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using VSTS, you can view but not change these settings for your organization.
+If you are using Azure Pipelines, you can view but not change these settings for your organization.
 
-Global build retention policy settings can be managed from the **Build and Release** settings of your organization or project collection:
+Global build retention policy settings can be managed from the **Pipelines** settings of your organization or project collection:
 
 ::: moniker range="vsts"
 
-* VSTS: `https://{your_organization}.visualstudio.com/_admin/_buildQueue`
+* Azure Pipelines: `https://dev.azure.com/{your_organization}/_admin/_buildQueue`
 
 ::: moniker-end
 
@@ -78,9 +79,9 @@ The **build destruction policy** helps you keep the builds for a certain period 
 
 ### Git repositories
 
-If your [repository type](../build/repository.md) is one of the following, you can define multiple retention policies with branch filters:
+If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Git in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+* Azure Repos Git or TFS Git
 * GitHub
 * External Git
 
@@ -109,7 +110,7 @@ refs/pull/*
 
 ### TFVC and Subversion repositories
 
-For TFVC and Subversion [repository types](../build/repository.md) you can modify a single policy with the same options shown above.
+For TFVC and Subversion [repository types](../repos/index.md) you can modify a single policy with the same options shown above.
 
 ### Policy order
 
@@ -135,7 +136,7 @@ The following information is deleted when a build is deleted:
 
 ### When are builds deleted
 
-#### VSTS
+#### Azure Pipelines
 
 Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
 
@@ -146,23 +147,23 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 <h2 id="release">Release retention</h2>
 
 The release retention policies for a release pipeline determine how long a release
-and the build linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to an environment. The minimum number or releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
+and the build linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number or releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
 recent three will be retained indefinitely - irrespective of the number of
 days specified. However, you can manually delete these releases when you no longer require them.
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
-You can also customize these policies on an [environment-by-environment basis](#environment-specific-retention).
+You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention).
 
 ### Global release retention policy
 
 If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using VSTS, you can view but not change these settings for your project.
+If you are using Azure Pipelines, you can view but not change these settings for your project.
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* VSTS: `https://{your_organization}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
-* On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* Azure Pipelines: `https://dev.azure.com/{your_organization}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
 for all release pipelines. Authors of release pipelines cannot
@@ -174,15 +175,15 @@ The **destruction policy** helps you keep the releases for a certain period of t
 
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
-### Environment-specific retention
+### Stage-specific retention
 
-You may want to retain more releases that have been deployed to specific environments.
+You may want to retain more releases that have been deployed to specific stages.
 For example, your team may want to keep:
 
-* Releases deployed to Production environment for 60 days, with a minimum of three last deployed releases.
-* Releases deployed to Pre-production environment for 15 days, with a minimum of one last deployed release.
-* Releases deployed to QA environment for 30 days, with a minimum of two last deployed releases.
-* Releases deployed to Dev environment for 10 days, with a minimum of one last deployed release.
+* Releases deployed to Production stage for 60 days, with a minimum of three last deployed releases.
+* Releases deployed to Pre-production stage for 15 days, with a minimum of one last deployed release.
+* Releases deployed to QA stage for 30 days, with a minimum of two last deployed releases.
+* Releases deployed to Dev stage for 10 days, with a minimum of one last deployed release.
 
 The following example retention policy for a release pipeline meets the above requirements:
 
@@ -203,7 +204,7 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 The build linked to a release has its own retention policy,
 which may be shorter than that of the release. If you want to retain
 the build for the same period as the release, set the
-**Retain build** checkbox for the appropriate environments. This
+**Retain build** checkbox for the appropriate stages. This
 overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
 
@@ -246,13 +247,13 @@ policy as explained above.
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
-Test results published within an environment of a release are
+Test results published within a stage of a release are
 associated with both the release and the build. These test results
 are retained as specified by the retention policy configured for
 the build and for the test results. If you are not deploying Team
-Foundation or VSTS Build through Release Management, and are still
+Foundation or Azure Pipelines Build, and are still
 publishing test results, the retention of these results is
-governed by the retention of the release they belong to.
+governed by the retention settings of the release they belong to.
 
 <!-- [!INCLUDE [temp](../_shared/qa-agents.md)] -->
 

@@ -1,6 +1,7 @@
 ---
-title: npm Authenticate (for task runners)
-description: Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like Gulp and Grunt to authenticate with private registries.
+title: npm Authenticate task (for task runners)
+ms.custom: seodec18
+description: Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,9 +12,14 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Package: npm Authenticate (for task runners)
+# Package: npm Authenticate task (for task runners)
 
-![](_img/npmauthenticate.png) Don't use this task if you're also using the npm task. Provides npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like Gulp and Grunt to authenticate with private registries.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to provide npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
+
+>[!WARNING]
+> Don't use this task if you're also using the npm task.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -30,7 +36,7 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

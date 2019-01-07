@@ -1,5 +1,5 @@
 ---
-title: Validation of process templates for migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS
+title: Validation of process templates for migration import from TFS to Azure DevOps Services | Azure DevOps Services & TFS
 description: Guidance for fixing common TfsMigrator process template issues.
 ms.prod: devops
 ms.topic: article
@@ -15,7 +15,7 @@ ms.date: 04/13/2018
 # Process Templates
 
 > [!NOTE]
-> The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
+> The TFS Database Import Service for Azure DevOps Services is currently in preview.
 >
 > It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
 
@@ -35,7 +35,7 @@ We recommend that for any project that has not been customized, that you review 
 
 ## Update to a System Process
 
-If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](../reference/configure-features-after-upgrade.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) then TfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not reslove the errors.
+If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) then TfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not resolve the errors.
 
 Here are some examples of error messages you will probably receive:
 
@@ -72,22 +72,22 @@ Make sure you do this for each and every project.
 <a id="dealing-with-process-errors"></a>
 ## Dealing with Process Errors
 
-Are your process templates customized? Are you using an older outdated process template? If so, you will most likely have process validation errors. TfsMigrator does an exhaustive check against your process templates. It checks to make sure that it is valid for VSTS. Odds are you will need to make some adjustments and apply them to your TFS collection.
+Are your process templates customized? Are you using an older outdated process template? If so, you will most likely have process validation errors. TfsMigrator does an exhaustive check against your process templates. It checks to make sure that it is valid for Azure DevOps Services. Odds are you will need to make some adjustments and apply them to your TFS collection.
 
 > If you are using an OOB Agile, Scrum, or CMMI process you probably won't see any errors in TfsMigrator.log. Instead, check the TryMatchOobProcesses.log for errors. If you are error free then your project will map to an OOB process.
 
-There are variety of customizations that will not work in VSTS. Make sure you review the [list of customizations](../organizations/settings/work/import-process/differences.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) that are supported. 
+There are variety of customizations that will not work in Azure DevOps Services. Make sure you review the [list of customizations](../organizations/settings/work/import-process/differences.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) that are supported. 
 
-If you have projects that are using an older process template, TfsMigrator will find several errors. This is because your process templates have not been updated to match the most recent process templates. To start, try running the [Configure Features Wizard](../reference/configure-features-after-upgrade.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) for each project. This will attempt to update your process templates with the most recent features. Doing so should drastically reduce the error count. 
+If you have projects that are using an older process template, TfsMigrator will find several errors. This is because your process templates have not been updated to match the most recent process templates. To start, try running the [Configure Features Wizard](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) for each project. This will attempt to update your process templates with the most recent features. Doing so should drastically reduce the error count. 
 
-Finally, make sure you have [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) on the machine that you intend to use to fix the process errors. This can be your local desktop. Witadmin is used in the automated scripts and is required whenever making changes to the process templates.
+Finally, make sure you have [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) on the machine that you intend to use to fix the process errors. This can be your local desktop. Witadmin is used in the automated scripts and is required whenever making changes to the process templates.
 
 ### Step 1 - Review Errors
 TfsMigrator.log file will be generated and contains the list of errors that the validation process found. To view the logs, open TfsMigrator.log file. Search for the string "Validation - Starting validation of project 1". Each project is validated so you will need to scan through all the projects. Examine any lines that have a prefix of "[Error ...".
 
 ![Process logging file generated by TfsMigrator](_img/migration-troubleshooting/witLogFile.png)
 
-We have documented the majority of the [validation errors](../organizations/settings/work/import-process/resolve-errors.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json). For each validation error we have provided the error number, description, and the method to resolve. 
+We have documented the majority of the [validation errors](../organizations/settings/work/import-process/resolve-errors.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json). For each validation error we have provided the error number, description, and the method to resolve. 
 
 ### Step 2 - Fix Errors
 Now you know what projects have errors, the details of those errors, and how to fix them. Fixing the errors requires that you to change the xml and apply the changes back into the project. 
@@ -106,9 +106,9 @@ Now you need to fix the xml. Use the logs from the ```TfsMigrator.log``` file to
 
 ![Process logging file generated by TfsMigrator](_img/migration-troubleshooting/witLogFile.png)
 
-Some errors will require you to do use a [witamdin changefield](../reference/witadmin/manage-work-item-fields.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) command. Changing a field name is the most common example. To save yourself some time, we recommend you run the ```witadmin changfield ...``` command and then re-run TfsMigrator tool. Doing this will re-export the xml with the corrected names. Otherwise you will need manually fix the fields in the xml as well.
+Some errors will require you to do use a [witadmin changefield](../reference/witadmin/manage-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) command. Changing a field name is the most common example. To save yourself some time, we recommend you run the ```witadmin changefield ...``` command and then re-run TfsMigrator tool. Doing this will re-export the xml with the corrected names. Otherwise you will need manually fix the fields in the xml as well.
 
-Once you make a fix then you need to conform. Conform is defined as taking the XML you just changed and applying it back into TFS. To do this, depending on the changes you made, you will need to run one or more [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) commands. To make this easier for you, we created a PowerShell script to automate the process. The script contains all of the witadmin commands needed to conform the entire process.
+Once you make a fix then you need to conform. Conform is defined as taking the XML you just changed and applying it back into TFS. To do this, depending on the changes you made, you will need to run one or more [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) commands. To make this easier for you, we created a PowerShell script to automate the process. The script contains all of the witadmin commands needed to conform the entire process.
 
 You can get the scripts at https://github.com/Microsoft/process-customization-scripts. Use the import/ConformProject.ps1 script.
 
@@ -125,7 +125,7 @@ When the script has completed you need to re-run TfsMigrator to validate the col
 
 #### VS402841: Field X in work item type Bug has syncnamechanges=false but has rules making it an identity field. Identity fields must have syncnamechanges=true. Please update your process template to include this change.
 
-In VSTS we added a rule so that every identity field must have the syncnamechanges=true attribute. In TFS that rule does not apply. Therefore, TfsMigrator will identify this as an issue. Don't worry, making this change on TFS on-prem will not cause any harm.
+In Azure DevOps Services we added a rule so that every identity field must have the syncnamechanges=true attribute. In TFS that rule does not apply. Therefore, TfsMigrator will identify this as an issue. Don't worry, making this change on TFS on-prem will not cause any harm.
 
 To fix this you will need to run the witadmin changefield command. Syntax for the command will look something like this:
 
@@ -133,28 +133,28 @@ To fix this you will need to run the witadmin changefield command. Syntax for th
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:fieldname /syncnamechanges:true
 ```
 
-For more information on the changefield command see https://msdn.microsoft.com/en-us/library/dd236909.aspx
+For more information on the changefield command see https://msdn.microsoft.com/library/dd236909.aspx
 
 #### TF402556: For field System.IterationId to be well defined, you must name it Iteration ID and set its type to Integer.
 
-This error is typical for old process templates that have not been updated in some time. Try running the [configure features wizard](../reference/configure-features-after-upgrade.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) on each project. Alternatively you can run the follow witadmin command: 
+This error is typical for old process templates that have not been updated in some time. Try running the [configure features wizard](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) on each project. Alternatively you can run the follow witadmin command: 
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:fieldname /name:newname
 ```
 #### TF402571: Required element BugWorkItems is missing from Process Configuration.
 
-This error typically occurs when a process has not been updated in a while. Try running the [configure features wizard](../reference/configure-features-after-upgrade.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) on each project to resolve.
+This error typically occurs when a process has not been updated in a while. Try running the [configure features wizard](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) on each project to resolve.
 
 #### TF402564: You've defined XX global lists. Only 64 are allowed.
 
-By default, VSTS will support 64 global lists. You will typically run across this error if you have a large amount of build pipelines. The global list named Builds - **TeamProjectName** gets created for each new build pipeline. You will need remove the outdated global lists.
+By default, Azure DevOps Services will support 64 global lists. You will typically run across this error if you have a large amount of build pipelines. The global list named Builds - **TeamProjectName** gets created for each new build pipeline. You will need remove the outdated global lists.
 
 ### Additional Resources
 
-* [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
-* [Differences between VSTS and TFS process template customizations](../organizations/settings/work/import-process/differences.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
-* [Configure features after TFS upgrade](../reference/configure-features-after-upgrade.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
-* [Resolve validation errors](../organizations/settings/work/import-process/resolve-errors.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
-* [Defining global lists in TFS](../reference/xml/define-global-lists.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
+* [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+* [Differences between Azure DevOps Services and TFS process template customizations](../organizations/settings/work/import-process/differences.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+* [Configure features after TFS upgrade](../reference/configure-features-after-upgrade.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+* [Resolve validation errors](../organizations/settings/work/import-process/resolve-errors.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+* [Defining global lists in TFS](../reference/xml/define-global-lists.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 * [Process customization PowerShell scripts](https://github.com/Microsoft/process-customization-scripts)

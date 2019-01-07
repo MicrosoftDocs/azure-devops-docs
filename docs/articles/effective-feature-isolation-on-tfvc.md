@@ -7,15 +7,14 @@ ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 04/25/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---
 
 # Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
 
-
-Are you planning to implement Team Foundation Version Control's feature isolation strategy ([TFVC](../repos/tfvc/overview.md) in Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)? You probably have a few questions, such as:
+Are you planning to implement [Team Foundation Version Control](../repos/tfvc/overview.md)'s feature isolation strategy in Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
@@ -117,7 +116,7 @@ Now that you're using feature isolation, you should explore continuous integrati
 ## Reference information
 * [Branching Strategies with TFVC (new guidance)](./effective-tfvc-branching-strategies-for-devops.md)
 * [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
-* [Continuous Integration](/azure/devops/what-is-continuous-integration)
+* [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
 * [Feature Toggles](https://msdn.microsoft.com/magazine/dn683796.aspx)
 * [Team Foundation Version Control (TFVC)](../repos/tfvc/overview.md)
 

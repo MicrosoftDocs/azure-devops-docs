@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Develop requirements
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Describes the requirements what the stakeholders expect from the product and allowing them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -8,13 +8,13 @@ ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 04/28/2017
 ---
 
 # Develop requirements
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Requirements describe what the stakeholders expect from the product. You should express your requirements in terms that allow them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain. Requirements should neither discuss nor depend on the implementation. Requirements include not only the behavioral and quality of service expectations of the users but also statutory constraints and commercial standards.  
   
@@ -230,7 +230,7 @@ Requirements describe what the stakeholders expect from the product. You should 
 ## Additional resources  
  For more information, see the following Web resources:  
   
--   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with VSTS and TFS to increase stakeholder engagement and provide end-to-end traceability.  
+-   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
     
 -   [A Practical Guide to Feature Driven Development](http://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
   

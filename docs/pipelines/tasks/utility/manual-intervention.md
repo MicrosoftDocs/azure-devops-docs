@@ -1,26 +1,30 @@
 ---
-title: Manual intervention task for Microsoft VSTS and TFS 
-description: Build and release task to pause an active deployment within an environment with a build or release pipeline in VSTS and TFS
+title: Manual Intervention task 
+description: Pause an active deployment within a stage in a release pipeline in Azure Pipelines and TFS
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
-# Utility: Manual intervention
+# Manual Intervention task
 
-![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment tasks.
+**Azure Pipelines**
+
+Use this task in a release pipeline to pause an active deployment within a stage,
+typically to perform some manual steps or actions, and then continue the automated deployment tasks.
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline. This task is not supported in a build pipeline.
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/ManualInterventionV8.md)]
 ::: moniker-end
@@ -36,14 +40,14 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 The **Manual Intervention** task does not perform deployment actions directly.
-Instead, it allows you to pause an active deployment within an environment, typically to perform some
+Instead, it allows you to pause an active deployment within a stage, typically to perform some
 manual steps or actions, and then continue the automated deployment tasks. For example, the user may
 need to edit the details of the current release before continuing; perhaps by entering the values for
 custom variables used by the tasks in the release.
 
 The **Manual Intervention** task configuration includes an **Instructions** parameter that
 can be used to provide related information, or to specify the manual steps
-the user should execute during the Agentless phase. You can configure the task to
+the user should execute during the agentless job. You can configure the task to
 send email notifications to users and user groups when it is awaiting intervention,
 and specify the automatic response (reject or resume the deployment) after a configurable
 timeout occurs.
@@ -56,8 +60,6 @@ When the Manual Intervention task is activated during a deployment, it sets
 the deployment state to **IN PROGRESS** and displays
 a message bar containing  a link that opens the Manual Intervention dialog containing the instructions.
 After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
-Users with **Manage deployment** permission on the environment can resume or reject the manual intervention.
+Users with **Manage deployment** permission on the stage can resume or reject the manual intervention.
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
-
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).

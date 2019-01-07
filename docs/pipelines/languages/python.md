@@ -1,6 +1,6 @@
 ---
-title: Python
-description: CI and CD for Python projects.
+title: Build and test Python apps
+description: Build and test Python apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,49 +8,63 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/03/2018
+ms.custom: seodec18
+ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Python
+# Build Python apps in Azure Pipelines
 
-This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+**Azure Pipelines**
 
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
+This guidance explains how to use Azure Pipelines to automatically build, test, and deploy Python apps or scripts with CI/CD pipelines. 
 
-## Get started
+## Example
 
-You can build Python projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Python. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
+For a working example of how to build a Python app with Django, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
-Create a file named **.vsts-ci.yml** in the root of your repository. Then, add applicable phases and tasks to the YAML file as described below.
+```
+https://github.com/MicrosoftDocs/pipelines-python-django
+```
 
-## Use a specific Python version
+The sample code includes an `azure-pipelines.yml` file at the root of the repository.
+You can use this file to build the project.
 
-Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This sample sets subsequent pipeline tasks to use Python 3.6.
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample project.
+
+## Build environment
+
+You can use Azure Pipelines to build your Python projects without needing to set up any infrastructure of your own. Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
+
+For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
+
+### Use a specific Python version
+
+Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
 ```yaml
-# https://aka.ms/yaml
-queue: 'Hosted Linux Preview'
-steps:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+pool:
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
+steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.6'
     architecture: 'x64'
 ```
 
-## Use multiple Python versions
+### Use multiple Python versions
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
+To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many parallel jobs are available.
 
 ```yaml
 # https://aka.ms/yaml
-phases:
-- phase: 'Test'
-  queue:
-    name: 'Hosted Linux Preview'
-    parallel: 1
+jobs:
+- job: 'Test'
+  pool:
+    vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
+  strategy:
     matrix:
       Python27:
         python.version: '2.7'
@@ -58,8 +72,9 @@ phases:
         python.version: '3.5'
       Python36:
         python.version: '3.6'
-  steps:
+    maxParallel: 3
 
+  steps:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '$(python.version)'
@@ -68,32 +83,110 @@ phases:
   # Add additional tasks to run using each Python version in the matrix above
 ```
 
-## Activate an Anaconda environment
+### Create and activate an Anaconda environment
 
-As an alternative to the **Use Python Version** task, create and activate a conda environment and Python version using the [Conda Environment](../tasks/package/conda-environment.md) task. Add the following YAML to activate an environment named `myEnvironment` with the Python 3 package.
+As an alternative to the **Use Python Version** task, create and activate an Anaconda environment with a specified version of Python. The following YAML uses the same `python.version` variable defined in the job matrix above.
+
+# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
 
 ```yaml
-- task: CondaEnvironment@0
-  inputs:
-    environmentName: 'myEnvironment'
-    packageSpecs: 'python=3'
+- bash: echo "##vso[task.prependpath]/usr/share/miniconda/bin"
+  displayName: Add conda to PATH
+
+- bash: conda create --yes --quiet --name myEnvironment python=$PYTHON_VERSION # [other packages ...]
+  displayName: Create Anaconda environment
 ```
+
+# [Hosted macOS](#tab/macos)
+
+```yaml
+- bash: echo "##vso[task.prependpath]$CONDA/bin"
+  displayName: Add conda to PATH
+
+- bash: conda create --yes --quiet --name myEnvironment python=$PYTHON_VERSION # [other packages ...]
+  displayName: Create Anaconda environment
+```
+
+# [Hosted VS2017](#tab/vs2017)
+
+```yaml
+- powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
+  displayName: Add conda to PATH
+
+- script: conda create --yes --quiet --name myEnvironment python=%PYTHON_VERSION% # [other packages ...]
+  displayName: Create Anaconda environment
+```
+
+---
+
+If you have an [`environment.yml`](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) defined for your Anaconda environment, you can also use that to create your environment:
+
+```yaml
+- script: conda env create --quiet --file environment.yml
+  displayName: Create Anaconda environment
+```
+
+> [!NOTE]
+> When you activate an Anaconda environment, it changes the current environment by doing things like editing `$PATH`.
+> However, because each build step runs in its own process, these changes won't be persisted in subsequent steps.
+
+When you run a script in a later step after creating an Anaconda environment, you need to activate the environment for each step:
+
+# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
+
+```yaml
+- bash: |
+    source activate myEnvironment
+    pytest -m unit --junitxml=junit/unit-test.xml
+  displayName: 'Unit tests'
+
+- bash: |
+    source activate myEnvironment
+    pytest -m integration --junitxml=junit/integration-test.xml
+  displayName: 'Integration tests'
+```
+
+# [Hosted macOS](#tab/macos)
+
+```yaml
+- bash: |
+    source activate myEnvironment
+    pytest -m unit --junitxml=junit/unit-test.xml
+  displayName: 'Unit tests'
+
+- bash: |
+    source activate myEnvironment
+    pytest -m integration --junitxml=junit/integration-test.xml
+  displayName: 'Integration tests'
+```
+
+# [Hosted VS2017](#tab/vs2017)
+
+```yaml
+- script: |
+    call activate myEnvironment
+    pytest -m unit --junitxml=junit/unit-test.xml
+  displayName: 'Unit tests'
+
+- script: |
+    call activate myEnvironment
+    pytest -m integration --junitxml=junit/integration-test.xml
+  displayName: 'Integration tests'
+```
+
+---
 
 ## Run a Python script
 
-Run a Python script in your pipeline by adding the [Python Script](../tasks/utility/python-script.md) task. The script can be defined in a file or in-line with the task.
-
-Add the following YAML to run a Python script file named `myPythonScript.py`.
+If you have a Python script checked into the repo, you can run it using **script**.
+Add the following YAML to run a Python file named `example.py`.
 
 ```yaml
-- task: PythonScript@0
-  inputs:
-    targetType: 'filePath'
-    filePath: 'src/myPythonScript.py'
-    arguments: ''
+- script: python src/example.py
 ```
 
-Alternatively, set the **targetType** to `inline` to define the script in YAML.
+If you want to write a Python script inline in the YAML file, use the [Python Script](../tasks/utility/python-script.md) task.
+Set the **targetType** to `inline` and put your code in the **script** section.
 
 ```yaml
 - task: PythonScript@0
@@ -102,19 +195,9 @@ Alternatively, set the **targetType** to `inline` to define the script in YAML.
     script: |
       print('Hello world 1')
       print('Hello world 2')
-    arguments: ''
 ```
 
 ## Install dependencies
-
-### Install requirements with pip
-
-Add the following YAML to install or upgrade `pip` and requirements specified in `requirements.txt`.
-
-```yaml
-- script: python -m pip install --upgrade pip && pip install -r requirements.txt
-  displayName: 'Install requirements'
-```
 
 ### Install specific PyPI packages with pip
 
@@ -122,27 +205,75 @@ Add the following YAML to install or upgrade `pip` and two specific packages: `s
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
-  displayName: 'Install dependencies'
+  displayName: 'Install tools'
+```
+
+### Install requirements with pip
+
+After updating `pip` and friends, a typical next step is to install from `requirements.txt`.
+
+```yaml
+- script: pip install -r requirements.txt
+  displayName: 'Install requirements'
 ```
 
 ### Install Anaconda packages with conda
 
-Add the following YAML to install the `scipy` package in the conda environment named `myEnvironment`. See [Activate an Anaconda environment](#activate-an-anaconda-environment) above.
+Add the following YAML to install the `scipy` package in the conda environment named `myEnvironment`.
+
+# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
 
 ```yaml
-- script: conda install -n myEnvironment scipy
+- bash: |
+    source activate myEnvironment
+    conda install -n myEnvironment scipy
   displayName: 'Install conda libraries'
 ```
 
-## Test
-
-### Test with pytest
-
-Add the following YAML to install `pytest`, run tests, and output results in JUnit format.
+# [Hosted macOS](#tab/macos)
 
 ```yaml
-- script: pip install pytest && pytest tests --doctest-modules --junitxml=junit/test-results.xml
-  displayName: 'pytest'
+- bash: |
+    source activate myEnvironment
+    conda install -n myEnvironment scipy
+  displayName: 'Install conda libraries'
+```
+
+# [Hosted VS2017](#tab/vs2017)
+
+```yaml
+- script: |
+    call activate myEnvironment
+    conda install -n myEnvironment scipy
+  displayName: 'Install conda libraries'
+```
+
+---
+
+## Test
+
+### Run lint tests with Flake8
+
+Add the following YAML to install or upgrade `flake8` and use it to run lint tests.
+
+```yaml
+
+- script: |
+    python -m pip install flake8
+    flake8 .
+  displayName: 'Run lint tests'
+```
+
+### Test with pytest and collect coverage metrics with pytest-cov
+
+Add the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format, and output code coverage results in Cobertura XML format.
+
+```yaml
+- script: |
+    pip install pytest
+    pip install pytest-cov
+    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+  displayName: 'Test with pytest'
 ```
 
 ### Publish test results
@@ -151,39 +282,53 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
 
 ```yaml
 - task: PublishTestResults@2
+  condition: succeededOrFailed()
   inputs:
     testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Test results for Python $(python.version)'
+    testRunTitle: 'Publish test results for Python $(python.version)'
 ```
 
-## Deploy
+### Publish code coverage results
 
-### Deploy to a PyPI-compatible index
-
-Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and publish to a PyPI-compatible index.
+Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
 
 ```yaml
-- task: PyPIPublisher@0
+- task: PublishCodeCoverageResults@1
   inputs:
-    pypiConnection: ''
-    packageDirectory: '$(build.sourcesDirectory)'
-    alsoPublishWheel: false
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 ```
 
-## Retain artifacts
+## Package and deliver your code
 
-Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+### Authenticate with twine
+
+The [Twine Authenticate task](../tasks/package/twine-authenticate.md) stores authentication credentials for twine in the `PYPIRC_PATH` environment variable.
 
 ```yaml
-- task: PublishBuildArtifacts@1
-  pathToPublish: 'dist'
+- task: TwineAuthenticate@0
+  inputs:
+    artifactFeeds: 'feed_name1, feed_name2'
+    externalFeeds: 'feed_name1, feed_name2'
 ```
+
+### Publish with twine
+
+Then, add a [custom script task](../yaml-schema.md#script) to use `twine` to publish your packages.
+
+```yaml
+- script: 'twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
+```
+
+## Build a container image
+
+You can also build and publish a Docker container image for your app. For more information, see [Docker](docker.md).
 
 ## Related extensions
 
-[Python Build Tools (for Windows)](https://marketplace.visualstudio.com/items?itemName=stevedower.python) (Steve Dower)  
-[PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-[Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)  
-[VSTS Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
-[Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (Microsoft)  
-[VSTS extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) (Microsoft)  
+- [Python Build Tools (for Windows)](https://marketplace.visualstudio.com/items?itemName=stevedower.python) (Steve Dower)  
+- [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
+- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)  
+- [Azure Pipelines Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
+- [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (Microsoft)  

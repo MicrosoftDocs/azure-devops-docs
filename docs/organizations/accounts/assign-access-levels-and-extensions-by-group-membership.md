@@ -1,57 +1,99 @@
 ---
-title: Assign access levels and extensions to users by group membership
-description: Learn how to assign group-based licensing for users in Azure AD and VSTS groups by adding a group rule.
+title: Assign access levels, extensions to users by group membership
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn how to assign group-based licensing for users in Azure Active Directory and Azure DevOps groups by adding a group rule.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/17/2018
+ms.date: 12/31/2018
 monikerRange: 'vsts'
 ---
 # Add a group rule to assign access levels and extensions to users
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-VSTS includes group-based licensing for Azure AD groups and VSTS groups.
-You can assign an access level or extensions to a group, and VSTS will ensure that those resources are assigned to all members of the group.
+Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can assign an access level or extensions to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are used only for *licensing* and not for permissions.
 
-When users leave the group, those licenses are freed up and returned to your pool.
-This eliminates the need for automating license management on your own to reflect changes in your organizational structure on a per-user basis.
+When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
 ## Prerequisites
 
-To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the VSTS organization. If you're not a member of the Project Collection Administrators Group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
-To assign an extension to a user (and, consequently, a group) a PCA must have first [installed the extension on the organization](../../marketplace/install-vsts-extension.md).
+To manage licenses and group rules, you must be a project collection administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
+To assign an extension to a user (and consequently, a group) a PCA must first [install the extension on the organization](../../marketplace/install-extension.md).
 
 ## Assign required licenses
 
-1. Sign in to your VSTS organization and go to the **Users** page in your organization settings.
-2. Go to the **Security** page and check the membership of the Project Collection Administrators group.
-3. Choose the **Group rules** tab. This view shows you all your created group rules.
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
-   ![view-group-rules](_img/manage-group-licensing/view-group-rules.png)
+# [New navigation](#tab/new-nav)
 
-4. Choose **Add a group rule** and complete the resulting dialog for the group that you would like to create a rule for, including an access level for that group and any optional project access or extensions that you would like the group to have.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-    ![choose-add-group-rule](_img/manage-group-licensing/add-a-group-rule.png)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-5. To complete the assignment, choose **Add** at the bottom of the dialog.
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-    ![choose-add-to-add-group-rule](_img/manage-group-licensing/adding-group-rule.png)
+3. Go to the **Security** page and check the membership of the **Project Collection Administrators** group.
 
-A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your VSTS organization didn't have enough licenses purchased), choose **View status** to view details.
+   ![Project collection administrators group members](_img/assign-access-levels/project-collection-administrators-group-members-new.png)
+
+4. Select **Users** > **Group rules** . This view shows you all of your created group rules.
+
+   ![View group rules](_img/assign-access-levels/see-group-rules.png)
+
+5. Select **Add a group rule**.
+
+   ![Select Add a group rule](_img/manage-group-licensing/add-group-rule.png)
+
+6. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group. Select **Add**.
+
+   ![Complete add a group rule dialog](_img/assign-access-levels/add-group-rule-dialog-new.png)
+
+A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
+
+![Group rule completed successfully](_img/assign-access-levels/group-rule-completed-successfully.png)
+
+# [Previous navigation](#tab/previous-nav)
+
+1. Sign in to your organization (`https://<yourorganization>.visualstudio.com`).
+
+2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
+
+   ![Open Organization Settings](../../_shared/_img/settings/open-account-settings.png)
+
+3. Select **Security** and check the membership of the **Project Collection Administrators** group.
+
+   ![Project collection administrators group members](_img/assign-access-levels/project-collection-administrators-group-members-prev.png)
+
+4. Select **Users** > **Group rules**. This view shows you all of your created group rules.
+
+   ![View group rules](_img/assign-access-levels/view-group-rules.png)
+
+5. Select **Add a group rule**. Complete the next dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group.
+
+   ![Create a new group rule](_img/assign-access-levels/add-a-group-rule.png)
+
+6. To complete the assignment, select **Add**.
+
+   ![Add the group rule](_img/assign-access-levels/add-group-rule-dialog-new.png)
+
+A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
+
+---
 
 ## Resolve assignment errors
 
-As users sign in to your VSTS organization, they will be assigned access levels and extensions based on their group memberships. If there are not enough licenses or extensions to assign the specified resources to the user, based on their group memberships, VSTS will notify all Project Collection Administrators via email that further resources need to be purchased. To find users in an error state, the Project Collection Administrator can do the following.
+As users sign in to your organization, they're assigned access levels and extensions based on their group memberships. If there aren't enough licenses or extensions to assign the specified resources to the user, based on their group memberships, Azure DevOps notifies all **Project Collection Administrators** via email that further resources need to be purchased. To find users in an error state, the Project Collection Administrator can do the following steps:
 
-1. Go to the **Users** page in organization settings. There will be a notification indicating that there are users missing extensions or basic access levels.
-2. To see how many of each resource is missing, choose **Fix assignment errors**.
-3. Complete purchases for any missing resources, and then choose **Fix errors** to have them automatically assigned to the specified users.
+1. Go to the **Users** page in **Organization settings**. A notification on the page indicates there are users who are missing extensions or basic access levels.
+2. To see how many of each resource are missing, choose **Fix assignment errors**.
+3. Complete purchases for any missing resources, and then choose **Fix errors** to have the purchases automatically assigned to the specified users.
 
 ## Related articles
 
-* [Buy and install paid VSTS extensions](../../marketplace/install-paid-vsts-extension.md)
-* [Install Active Directory/Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
+* [Buy and install paid extensions](../../marketplace/install-paid-extension.md)
+* [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)

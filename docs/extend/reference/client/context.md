@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Web Context | Extensions for VSTS
-description: Context data avaialble in your web extensions 
+title: Web Context | Extensions for Azure DevOps Services
+description: Context data available in your web extensions 
 ms.assetid: b926a050-1e70-4907-8963-e4f2ee9939e5
 ms.manager: douge
 ms.author: elbatk
@@ -23,7 +23,7 @@ The `core SDK` provides an API for getting context information, for example the 
 
 #### Example
 
-```
+```json
 {
     "id": "my-extension",
     ...
@@ -54,23 +54,23 @@ The `core SDK` provides an API for getting context information, for example the 
     "collection": {
         "id": "7696cd7b-25fd-4378-b5f2-7c97228ee542",
         "name": "DefaultCollection",
-        "uri": "https://fabrikam.visualstudio.com/DefaultCollection/",
+        "uri": "https://dev.azure.com/fabrikam/DefaultCollection/",
         "relativeUri": "/DefaultCollection/"
     },
     "account": {
         "id": "dab4b99d-4317-4b8a-98b8-f02ecaceb5b4",
         "name": "fabrikam",
-        "uri": "https://fabrikam.visualstudio.com/",
+        "uri": "https://dev.azure.com/fabrikam/",
         "relativeUri": "/"
     },
     "host": {
         "id": "7696cd7b-25fd-4378-b5f2-7c97228ee542",
         "name": "DefaultCollection",
-        "uri": "https://fabrikam.visualstudio.com/DefaultCollection/",
+        "uri": "https://dev.azure.com/fabrikam/DefaultCollection/",
         "relativeUri": "/DefaultCollection/",
         "hostType": "projectCollection",
         "scheme": "https",
-        "authority": "fabrikam.visualstudio.com"
+        "authority": "dev.azure.com/fabrikam"
     }
 }
 ```

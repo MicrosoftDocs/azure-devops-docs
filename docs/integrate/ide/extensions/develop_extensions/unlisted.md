@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # My "how-to" is not listed
 
-Most content on this site is currently under development. In the meantime you can find more topics on [MSDN.](https://docs.microsoft.com/en-us/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)
+Most content on this site is currently under development. In the meantime you can find more topics on [MSDN.](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)
 
 For immediate help, you can also try our ExtendVS room on [Gitter.](https://gitter.im/Microsoft/extendvs)
 

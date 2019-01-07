@@ -1,5 +1,6 @@
 ---
-title: Get started with Git and Visual Studio 2013 | VSTS & TFS
+title: Get started with Git and Visual Studio 2013
+titleSuffix: Azure Repos
 description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
@@ -21,7 +22,7 @@ monikerRange: '>= tfs-2013'
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 
 
 Whether your software project is large, small, or brand new, in most cases you'll be better off if you use version control as early as possible. 
 Here, we'll show you how to get started with Git, a distributed version control system. 
@@ -36,7 +37,7 @@ If you don't already have a project [create a new project](#create_team_project)
 To use Git, you'll need to have the client tools installed on your computer.
 
 [//]: # (Fix the 2015 link)
-* Install [Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=309297) or [Visual Studio 2015](https://visualstudio.microsoft.com/en-us/downloads/visual-studio-2015-downloads-vs)
+* Install [Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=309297) or [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/visual-studio-2015-downloads-vs)
 * Or, if you're not using Visual Studio, [install the latest command line tools](http://git-scm.com/downloads) 
 
 [//]: # (The walkthrough below shows the steps for getting started with Git using Visual Studio.  If you're not using Visual Studio, check out one of these topics:)
@@ -48,11 +49,11 @@ To use Git, you'll need to have the client tools installed on your computer.
 ## Clone
 To get started, you'll first need to clone your repo to your local machine.  Once you have a local clone, you can start adding code to your repo.
 
-0. Go to your team's project page (`https://{youraccount}.visualstudio.com/DefaultCollection/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
+0. Go to your team's project page (`https://dev.azure/{yourorganization}/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to VSTS from Visual Studio.
+0. Sign in to Azure DevOps Services from Visual Studio.
 
 0. Clone the repository to your computer.
 
@@ -77,7 +78,7 @@ Let's add a new app to the repo so we can make some changes.
 
 	![Navigate to the Changes page](_img/get-started/VSChanges1.png)
 	
-0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to VSTS.
+0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Azure DevOps Services.
 If you haven't previously used Git on this computer, you may have to [configure your username and email address](#configure_username_email).
 
 	![Enter a message and click Commit](_img/get-started/VSChangesCommitPush.png)
@@ -134,7 +135,7 @@ To share the changes in your topic branch, you'll need to publish it to the serv
 ## Conduct a pull request
 Pull Requests are a common workflow for reviewing code created in a topic branch and merging changes.  Let's create a pull request to see how it works.
 
-0. In your browser, open the **CODE** hub and click **Pull Requests** to view the Pull Requests hub.
+0. In your browser, open the **Code** page and click **Pull requests** to view the **Pull Requests** page.
 
 	![Click CODE, then Pull Requests](_img/get-started/WebPullRequestHub.png)
 
@@ -167,8 +168,8 @@ Now you can add reviewers to get their feedback on your changes before you merge
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a name="create_team_project"></a>
-#### Q: How do I create a project on VSTS?
-* [Sign up and create your project](../../organizations/accounts/create-organization-msa-or-work-student.md).  Be sure to select **Git** from the version control options:
+#### Q: How do I create a project on Azure DevOps Services?
+* [Sign up and create your project](../../organizations/accounts/create-organization.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitFirstRun.png)
 	
@@ -187,11 +188,11 @@ First you'll need to:
 
  ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
 
-* Get the clone URL from the CODE hub in VSTS.
+* Get the clone URL from the Repos page in Azure DevOps Services.
 
-For the Fabrikam project on VSTS, the command to clone would look like this:
+For the Fabrikam project on Azure DevOps Services, the command to clone would look like this:
 
-`git clone https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam`
+`git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam`
 
 Once you have the repo cloned, create a new topic branch:
 
@@ -205,7 +206,7 @@ Then commit to the local repo:
 
 `git commit -a -m "Initial commit"`
 
-When you're ready to publish your topic branch to the repo on VSTS, push the changes:
+When you're ready to publish your topic branch to the repo on Azure DevOps Services, push the changes:
 
 `git push origin users/jamal/new_branch`
 

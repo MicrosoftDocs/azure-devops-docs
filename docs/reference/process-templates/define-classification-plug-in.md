@@ -1,6 +1,6 @@
 ---
 title: Define the classification plug-in 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Define areas to organize work items into logical, physical, or functional categories-Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
@@ -24,7 +24,7 @@ The classifications that you define appear on the **Areas** and **Iterations** p
 
 <img src="../_img/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for project" style="border: 1px solid #C3C3C3;" /> 
 
-For an overview of using the web portal, see [Navigation basics](../../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).  
+For an overview of using the web portal, see [Web portal navigation](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json).  
   
  After a project has been created, you [modify the areas](../../organizations/settings/set-area-paths.md) and [iterations](../../organizations/settings/set-iteration-paths-sprints.md) from the web portal. You can also define permissions to control access to a project area or iteration.  
   
@@ -196,7 +196,7 @@ Required child element of **properties**. Defines project-related data such as t
 </code></pre>
 <p>Where the following definitions apply for each attribute:</p>
 <ul><li>`name`: Required. Defines the name of the property. The only valid names are `MSPROJ` and `Process Template`.</li>
-<li>`value`: Required. For `MSPROJ`, defines the relative path to the field mapping file. For `Process Template`, contains the name of the process that's associated with the process template. This property is added to the classification file when you [import a process to VSTS](../../organizations/settings/work/import-process/import-process.md).</li>
+<li>`value`: Required. For `MSPROJ`, defines the relative path to the field mapping file. For `Process Template`, contains the name of the process that's associated with the process template. This property is added to the classification file when you [import a process for Hosted XML](../../organizations/settings/work/import-process/import-process.md).</li>
 <li>`isFile`: Optional. Specifies whether the property is defined in a file. If the value is true, the file must exist, or process template validation fails.</li>
 </ul>
 </td>

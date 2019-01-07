@@ -1,6 +1,6 @@
 ---
 title: Record and play back manual tests
-description: Record and play back manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+description: Record and play back manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
 ms.prod: devops
 ms.technology: devops-test
@@ -8,19 +8,22 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Record and play back manual tests
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
 Record keystrokes and mouse actions with Microsoft Test Manager 
 while you are testing an app. You can then play back your actions 
 quickly and accurately the next time you run the test. 
 
-Playback is very useful for reproducing bugs. You can retrace the 
+Playback is useful for reproducing bugs. You can retrace the 
 exact actions that the tester performed to the point where the 
 problem was found. Playback also helps you run a test with 
 [different data](../repeat-test-with-different-data.md), 
@@ -33,7 +36,7 @@ to the next to make sure that everything still works correctly.
 You can record and play back tests in a wide range of desktop apps, 
 and also web apps that you access through a supported browser. 
 For a detailed list, see 
-[Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+[Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
@@ -125,9 +128,5 @@ you'll have to manually perform that step.
 1. You have to check the result of each step. The recording doesn't check the outputs.
 
    ![Play each step and then check the result.](_img/record-play-manual-tests/play-check-result.png)
-
-## See Also
-
-* [FAQs for recording and playing back manual tests](../reference-qa.md#mtmqna)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

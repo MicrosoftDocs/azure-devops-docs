@@ -1,6 +1,6 @@
 ---
 title: Analytics Service permissions and security
-titleSuffix: VSTS     
+titleSuffix: Azure DevOps     
 description: Required permissions necessary to access the Analytics Service and how to handle project access denied errors
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,15 +9,16 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.date: 11/13/2017
 ---
 
+
 # Set permissions to access the Analytics Service and Analytics views
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-To use [Power BI for VSTS](index.md) or to exercise an OData query for the Analytics Service, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
+To use [Power BI for Azure DevOps](index.md) or to exercise an OData query for the Analytics Service, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
 
 To edit an Analytics view or connect to an Analytics view in Power BI, you must have permissions for that view. 
 
@@ -25,7 +26,7 @@ If you are just adding an Analytics widget to a dashboard or viewing an Analytic
 
 ## Set permissions 
 
-You grant or restrict permissions to a user by setting one or more permissions for the Analytics service to **Allow** or **Deny** through the team project **Security** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics service data.  
+You grant or restrict permissions to a user by setting one or more permissions for the Analytics service to **Allow** or **Deny** through the project **Security** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics service data.  
   
 0. Open **Project Settings>Security**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
   
@@ -36,10 +37,10 @@ You grant or restrict permissions to a user by setting one or more permissions f
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](_img/analytics-security-permissions.png) 
 
-	To learn more about working with permissions, see [Security & Identity](../../organizations/security/index.md).
+	To learn more about working with permissions, see [Security & identity](../../organizations/security/index.md).
 
 > [!NOTE]  
-> The Analytics Service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics Service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics Service for any user who does not have access to all data within a team project.  
+> The Analytics Service does not support security at the area path level. Therefore, if a user has access to a project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics Service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics Service for any user who does not have access to all data within a project.  
 
 
 [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]

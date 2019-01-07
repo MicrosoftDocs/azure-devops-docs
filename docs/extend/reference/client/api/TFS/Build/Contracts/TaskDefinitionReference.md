@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts TaskDefinitionReference API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts TaskDefinitionReference API | Extensions for Azure DevOps Services
 ms.assetid: 89a6788a-18ab-e767-45e7-ce0c7a09f5dc
 ms.prod: devops
 ms.technology: devops-ecosystem

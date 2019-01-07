@@ -1,7 +1,8 @@
 ---
 title: Individual versus shared queries
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Work with queries to support your and team usage   
+ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
@@ -9,7 +10,8 @@ robots: NOINDEX, NOFOLLOW
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 08/11/2017  
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 
@@ -18,7 +20,6 @@ ms.date: 08/11/2017
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 !!! WORK IN PROGRESS !!! 
-
 
 Managed queries help you find work items that you want to review, triage, update, or list in a report. Also, with flat-list queries, you can create status and trend charts and place them on your team dashboard. 
 
@@ -63,7 +64,7 @@ Here are some of the tools you can use to manage queries:
 
  
 Quick tips on shared queries
-If you are new to VSTS and TFS and shared queries, review these tips to learn how you can manage work more effectively:
+If you are new to Azure Boards and TFS and shared queries, review these tips to learn how you can manage work more effectively:
 
 To find work items that are assigned to you, add @Me as the value for the Assigned To field in one of the query clauses.
 All valid users with standard access can create queries and folders under the My Queries area. To create queries and query folders under Shared Queries, you must have the Contribute permission set. For more information, see Set permissions on queries.

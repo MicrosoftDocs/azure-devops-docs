@@ -1,20 +1,22 @@
 ---
 title: Customize a work item type for an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a work item type for a project 
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts'
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= azdevserver-2019'
 ms.topic: conceptual
 ms.date: 05/31/2018
 ---
 
 # Add and manage work item types      
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You use different work item types (WITs) to plan and track different types of work. Your project contains several WITs that you can customize, based on the process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
 
@@ -22,6 +24,10 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 > [!div class="mx-imgBorder"]  
 > ![Custom Ticket work item form](_img/process/custom-wit-new-ticket-form.png) 
+
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -34,14 +40,11 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 0. From the **Work Item Types** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
-	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
 
 	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
-
-
- 
 
 
 0.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. For details, see [Add and manage fields](customize-process-field.md) or [Customize the web layout for a process](customize-process-form.md).    
@@ -65,7 +68,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
-0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png) 
@@ -112,7 +115,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
  
 ### WIT extensibility
 
-To work with WITs programmatically, see [Work Item Types REST API](https://docs.microsoft.com/rest/api/vsts/processdefinitions/work%20item%20types). 
+To work with WITs programmatically, see [Work Item Types REST API](/rest/api/vsts/processdefinitions/work%20item%20types). 
 
 
 ## Related articles  

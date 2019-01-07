@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-**VSTS** | **TFS**
+**Azure DevOps Services** | **TFS**

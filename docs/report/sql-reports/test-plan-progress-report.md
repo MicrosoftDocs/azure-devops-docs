@@ -15,7 +15,7 @@ ms.date: 10/17/17
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
-After the team creates test plans and starts to run tests by using the test management tools provided with Team Foundation Server (TFS) which include Test Runner, Microsoft Test Manager, or Team Web Access (TWA) Test hub. With the Test Plan Progress report, you can track the team's progress in testing the product.  
+After the team creates test plans and starts to run tests by using the test management tools provided with Team Foundation Server (TFS) which include Test Runner, Microsoft Test Manager, or web portal **Test**. With the Test Plan Progress report, you can track the team's progress in testing the product.  
   
  For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   

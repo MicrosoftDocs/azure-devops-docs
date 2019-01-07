@@ -5,7 +5,7 @@ ms.topic: include
 ## Agent variables
 
 > [!NOTE]
-> You can use agent variables as environment variabes in your scripts and as parameters in your build tasks. 
+> You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
 > You cannot use them to customize the build number or to apply a version control label or tag.
 
 <table>
@@ -88,7 +88,7 @@ For example: `c:\agent\_work`.
 <td>Build.ArtifactStagingDirectory</td>
 <td>The local path on the agent where any artifacts are copied to before being pushed to their destination.
 <br/><br/>
-A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Team Build](../artifacts.md).
+A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Azure Pipelines](../artifacts.md).
 <br/><br/>
 For example:
 <ul>
@@ -98,7 +98,7 @@ For example:
 </ul>
 This directory is purged before each new build, so you don't have to clean it up yourself.
 <br/><br/>
-In **TFS 2015.4**, Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. 
+In **TFS 2015.4**, Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -177,6 +177,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.LocalPath</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+<p>This variable is synonymous with Build.SourcesDirectory.</p>
 </td>
 </tr>
 
@@ -265,6 +266,14 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourcesDirectory</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+<p>This variable is synonymous with Build.Repository.LocalPath.</p>
+</td>
+</tr>
+
+<tr>
+<td>Build.SourcesDirectoryHash</td>
+<td>
+Note: This variable is available in TFS 2015 RTM, but not in TFS 2015.4.
 </td>
 </tr>
 
@@ -276,6 +285,14 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <li>TFVC: the [changeset](../../../repos/tfvc/find-view-changesets.md).</li>
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
+</td>
+</tr>
+
+<tr>
+<td>Build.SourceVersionMessage</td>
+<td>The comment of the commit or changeset.
+
+Note: This variable is available in TFS 2015.4.
 </td>
 </tr>
 
@@ -294,7 +311,7 @@ The local path on the agent where any artifacts are copied to before being pushe
 <br/><br/>
 This directory is purged before each new build, so you don't have to clean it up yourself.
 <br/><br/>
-A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Team Build](../artifacts.md).
+A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Azure Pipelines](../artifacts.md).
 <br/><br/>
 In **TFS 2015.4**, Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable.
 <br/><br/>
@@ -344,7 +361,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.CollectionId</td>
-<td>The GUID of the TFS collection or VSTS organization</td>
+<td>The GUID of the TFS collection or Azure DevOps organization</td>
 </tr>
 
 <tr>
@@ -361,7 +378,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.HostType</td>
-<td>Set to `build` if the process is a build or `release` if the process is a release.</td>
+<td>Set to `build` if the pipeline is a build or `release` if the pipeline is a release.</td>
 <tr>
 
 <tr>
@@ -376,7 +393,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
-<td>The URL to the repo that contains the pull request. For example: `http://our-server:8080/tfs/DefaultCollection/_git/OurProject`. (This variable is initialized only if the build ran because of a [VSTS Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).)</td>
+<td>The URL to the repo that contains the pull request. For example: `http://our-server:8080/tfs/DefaultCollection/_git/OurProject`. (This variable is initialized only if the build ran because of a [Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).)</td>
 </tr>
 
 <tr>

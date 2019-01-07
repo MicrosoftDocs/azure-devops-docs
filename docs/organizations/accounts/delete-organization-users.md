@@ -1,6 +1,8 @@
 ---
-title: Delete users from Visual Studio Team Services
-description: Steps for how to delete or remove organization users from Visual Studio Team Services (VSTS) and removing users from a team or team project
+title: Delete or remove users from team or project
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -8,100 +10,104 @@ ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/31/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
+# Remove users from Azure DevOps  
 
-# Delete users from Visual Studio Team Services (VSTS)
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-**VSTS**
+If users no longer require access to a project or your organization, you can remove their access to the project or your organization.  
 
-If a user no longer requires access to a team project or your VSTS organization, you can remove their access to a team project or your organization.
+## Prerequisites  
 
-## Prerequisites
+- You need [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
-- You'll need [VSTS project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
+## Remove users from your organization
 
-## Remove users from your VSTS organization
-
-[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Go to your VSTS admin settings.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-    ![Open VSTS admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Open the context menu **...** ,for the user to be removed, and select **Remove from organization**.
+3. Select **Users**.
 
-   ![Remove user from organization](_img/delete-user/remove-user-from-organization.png)
+    ![Organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
 
-4. Choose **Remove** in the confirmation dialog.
+4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 
-   ![Confirm to remove existing user](_img/delete-user/confirm-remove-existing-user.png)
+   ![Remove a user from your organization](_img/delete-user/remove-user-from-organization-new.png)
 
-5. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+5. Choose **Remove** in the confirmation dialog.
 
-   [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
+   ![Confirm removing an existing user](_img/delete-user/confirm-remove-existing-user.png)
 
-6. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also [reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md),so you're not charged in your next Azure billing cycle.
+6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   > To reduce or cancel these users for the next month, you must make updates before the last day of the current month.
-   > Your bill won't show these changes until the next month because paid users are monthly purchases.
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
 
-# [Previous navigation](#tab/prev-nav)
+7. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), Azure DevOps tab. Then you're not charged in your next Azure billing cycle.
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+   To reduce or cancel users for the next month, you must make updates before the last day of the current month.
+   Your bill won't show the changes until the next month because paid users are monthly purchases.
 
-   [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
+# [Previous navigation](#tab/previous-nav)
+
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
+
+   [Why am I asked to choose between my work or school account and my personal account?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
 2. Go to the **Users** page.
 
-3. Open the context menu **...** for the user to remove and select **Remove from organization**.
+   ![Open Organization settings, users](../../_shared/_img/settings/open-admin-settings-users-prev.png)
 
-   ![![Remove user from organization](_img/delete-user/remove-user.png)
-](_img/_shared/remove-from-organization-menu-selection.png)
+3. Open the context menu **...** for the user to remove. Select **Remove from organization**.
+
+   ![Remove user from your organization](_img/delete-user/remove-user-from-organization-prev.png)
 
 4. Choose **Remove** in the confirmation dialog.
 
-5. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+5. To confirm that you've removed the users completely, make sure they're not in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
 
-6. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also [reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md),so you're not charged in your next Azure billing cycle.
+6. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), Azure DevOps tab. Then you're not charged in your next Azure billing cycle.
 
-   > To reduce or cancel these users for the next month, you must make updates before the last day of the current month.
-   > Your bill won't show these changes until the next month because paid users are monthly purchases.
+   To reduce or cancel users for the next month, you must make updates before the last day of the current month.
+   Your bill won't show the changes until the next month because paid users are monthly purchases.
 
 ---
 
->[!Note]
->Azure AD-backed organizations: Once you remove a user from Azure AD, you will not be able to assign artifacts (work items, pull requests, etc.) to this user anymore. However, we will preserve the history of artifacts that has already been assigned to this user.
->MSA-backed organizations: Once you remove a user from your MSA-backed VSTS organization, the user will remain within the tenant and can therefore be re-added at any time.
+> [!NOTE]
+> - Azure Active Directory (AD)-backed organizations. After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+> - Managed service account (MSA)-backed organizations. After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
-## Remove users from a team or team project
+## Remove users from a team or project
 
-To remove users from a team project, remove them from the Teams groups they belong to or the Contributors group for the team project. See [Add users to a team project or specific team](../../organizations/security/add-users-team-project.md). From the Members page of a team group or security group, you can Remove a user.
+To remove users from a project, remove them from the **Teams** groups they belong to or the **Contributors** group for the project. See [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). You can remove a user from the **Members** page of a team group or security group.
 
 # [New navigation](#tab/new-nav)
 
-![Remove user from a security group](_img/delete-user/remove-user-from-project.png)
+![Remove a user from a security group, new navigation](_img/delete-user/remove-user-vert.png)
 
-# [Previous navigation](#tab/prev-nav)
+# [Previous navigation](#tab/previous-nav)
 
-![Remove user from a security group](_img/delete-user/remove-user.png)
+![Remove a user from a security group, previous navigation](_img/delete-user/remove-user-prev.png)
 
 ---
 
 ## Related articles
 
-- [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
-- [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+- [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
+- [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Troubleshoot adding and deleting organization users in the VSTS user hub](faq-add-delete-users.md)
-- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
+- [Troubleshoot adding and deleting organization users in the Users page](faq-add-delete-users.md)
+- [Troubleshoot adding members to projects](faq-add-team-members.md)

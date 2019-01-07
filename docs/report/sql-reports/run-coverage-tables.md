@@ -7,7 +7,8 @@ ms.topic: reference
 description: Uses FactRunCoverage to query for data in Team Foundation Server
 ms.assetid: 4868da2c-9402-444e-a4a4-6b99e71a27ac
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -37,5 +38,5 @@ You can query for data about how thoroughly a particular test run covered the co
 ## Related notes
 -  [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
 -  [Code Churn](../excel/code-coverage-excel-report.md)  
--  [Build](https://docs.microsoft.com/visualstudio/ide/walkthrough-building-an-application)   
+-  [Build](/visualstudio/ide/walkthrough-building-an-application)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

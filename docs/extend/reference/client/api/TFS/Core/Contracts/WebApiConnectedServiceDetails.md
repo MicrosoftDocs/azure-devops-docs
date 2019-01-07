@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts WebApiConnectedServiceDetails API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts WebApiConnectedServiceDetails API | Extensions for Azure DevOps Services
 ms.assetid: c62f3d01-9ba3-3ec5-970a-124a9e27c2e0
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -19,7 +19,7 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnected
 
 ### Members
 
-* `connectedServiceMetaData`: [WebApiConnectedService](../../../TFS/Core/Contracts/WebApiConnectedService.md). Meta data for service connection
+* `connectedServiceMetaData`: [WebApiConnectedService](../../../TFS/Core/Contracts/WebApiConnectedService.md). Meta data for service endpoint
 
 * `credentialsXml`: string. Credential info
 

@@ -1,5 +1,6 @@
 ---
 title: Manage your release with RM for VS and TFS
+ms.custom: seodec18
 description: Manage your release with Microsoft Release Management server and client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
 ms.prod: devops
@@ -17,17 +18,17 @@ monikerRange: '>= tfs-2013'
 [!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
 
 Improve the process of managing the release of your app. Deploy your app to a specific 
-environment for each separate stage. 
+environment for each separate stage.
 Manage the steps in the process with approvals for each step.
 
 ## Before you start
 
-* **How many stages do you need?** You might need only test and production. 
+* **How many stages do you need?** You might need only test and production.
   But if you need a different environment for a pre-production stage that needs testing, 
-  consider adding a pre-production stage. 
+  consider adding a pre-production stage.
   And if it's important to track who approves that the dev work is ready to test, you might 
   want to add a dev stage, too.
-* **Who needs to approve each stage?** You can have multiple approvers for each stage. 
+* **Who needs to approve each stage?** You can have multiple approvers for each stage.
   You must add each approver as a user and assign them permissions.
 * **What environments do you need for each of these stages to deploy your app?** 
   How many servers do you need for each environment to host your app? 
@@ -37,7 +38,7 @@ Manage the steps in the process with approvals for each step.
   Or, do you want to use deployment agents?
 * **What are the necessary steps to set up each server?** Do you need to configure 
   the web app each time? Do you need to stop and start services? 
-  Do you need to run a script from the command line? Think through all of these steps. 
+  Do you need to run a script from the command line? Think through all of these steps.
   You'll add actions that perform these steps.
 * **Are a set of these actions common to servers?** If so, you can set up these actions 
   once for each of these servers.
@@ -46,7 +47,7 @@ Manage the steps in the process with approvals for each step.
 * **Do you want to use an on-premises server or the cloud to manage your releases?** 
   You can maintain your own Release Management server on-premises, 
   or you can skip buying and maintaining a server and use Release Management as a service 
-  on VSTS instead.
+  on Azure Pipelines instead.
 
 ## Set up and start a release
 
@@ -57,15 +58,15 @@ Manage the steps in the process with approvals for each step.
 
 You have the following options for managing your releases:
 
-* **Using Release Management as a service on VSTS**: 
-  You need a VSTS account. 
+* **Using Release Management as a service on Azure Pipelines**: 
+  You need an organization in Azure DevOps.
   You cannot use Chef and you can deploy only to vNext environments based on Azure IaaS services
 * **Using an on-premises server**: You need to install Release Management Server; 
   do that **[here](install-release-management/install-server-and-client.md#installserver)**.
 
-In both options, you'll use the Release Management Client to set up and run your releases. 
+In both options, you'll use the Release Management Client to set up and run your releases.
 You can install the client 
-**[here](install-release-management/install-server-and-client.md#installclient)**. 
+**[here](install-release-management/install-server-and-client.md#installclient)**.
 If you manage your releases with an on-premises server, install the client on the machine 
 that runs Release Management Server, too.
 
@@ -73,7 +74,7 @@ that runs Release Management Server, too.
 a non-trial version, see 
 [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
 or 
-[Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs). 
+[Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
 If you are an MSDN subscriber, you can download a non-trial version from the 
 [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._
 
@@ -81,22 +82,22 @@ If you are an MSDN subscriber, you can download a non-trial version from the
 ### Connect to Release Management
 
 Start the Release Management Client and connect to your Release Management URL, either a 
-VSTS URL or an on-premises server URL. 
+Azure Pipelines URL or an on-premises server URL.
 If you are not prompted automatically, go to **Administration**, **Settings**.
 
 ![Configure service URL](_img/manage-release-02.png) 
 
-View the guide and checklist that is provided to help you to set up your release process. 
+View the guide and checklist that is provided to help you to set up your release pipeline.
 First **[add users, set up groups, and control access](add-users-and-groups.md)**.  
 
-![Get started screen to help you with your release process steps](_img/manage-release-03.png) 
+![Get started screen to help you with your release pipeline steps](_img/manage-release-03.png) 
 
-The following steps guide you through the essential parts of the release process.
+The following steps guide you through the essential parts of the release pipeline.
 
 <a name="AddStages"></a>
 ### Set up stages
 
-From the **Administration** tab, add a stage type for each step you need in the release process of your app.
+From the **Administration** tab, add a stage type for each step you need in the release pipeline of your app.
 
 ![Add a stage type](_img/manage-release-04.png) 
 
@@ -108,23 +109,23 @@ View the stage types that you have added.
 ### Set up servers and environments
 
 You need to register the servers where your app will be deployed, and then set up environments 
-that contain these servers. 
+that contain these servers.
 
 With Visual Studio 2015, you can use 
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
 Windows PowerShell Desired State Configuration 
 ([DSC](https://technet.microsoft.com/library/dn249912.aspx)), 
-or [Chef](http://www.getchef.com/) to deploy to a server without a deployment agent. 
+or [Chef](http://www.getchef.com/) to deploy to a server without a deployment agent.
 If you already deploy using any of these tools, 
 you can use the same scripts with Release Management. Or, you can use deployment agents 
-to deploy to a server. 
+to deploy to a server.
 So that you can tell which type of environment you create, environments of servers with 
 deployment agents are called agent-based environments, 
-and environments of servers without deployment agents are called vNext environments. 
+and environments of servers without deployment agents are called vNext environments.
 Differences in how the Release Management Client is used, 
 based on environment type, are called out in these instructions.
 
-An environment can contain multiple servers. Each environment will be assigned to a stage later. 
+An environment can contain multiple servers. Each environment will be assigned to a stage later.
 
 Use tags to make it easier to set up your servers when you deploy to a stage. Perform 
 deployment actions based on tags and not server names.
@@ -158,7 +159,7 @@ Name the release and choose the release template that you want to use.
 
 ![Start a release](_img/manage-release-07.png)
 
-The release process begins.
+The release pipeline begins.
 
 ![Release in progress](_img/manage-release-08.png)
 
@@ -178,7 +179,7 @@ next step or the next stage.
 Manual steps must be approved before automated steps in a stage can continue.
 
 If you're managing your releases with an on-premises Release Management server, you can also 
-use the Release Management web browser client to find requests and approve actions for each stage. 
+use the Release Management web browser client to find requests and approve actions for each stage.
 To access this client, use the following URL: 
 
 `http://<your-team-foundation-server-name>:1000/ReleaseManagement`
@@ -210,15 +211,15 @@ paste it, and use its shortcut menu to **Paste Deployment Sequence**.
 <a name="ServerTags"></a>
 ### Q: How can tags for servers help me set up my environments for each stage?
 
-**A**: Simply add tags for servers that require the same set of deployment actions for setup. 
-For example, if you have multiple web servers in your environment then you can tag them all with **WebServer**. 
+**A**: Simply add tags for servers that require the same set of deployment actions for setup.
+For example, if you have multiple web servers in your environment then you can tag them all with **WebServer**.
 If only some of the web servers need a specific service configured on that machine then you can 
 add a tag **ServiceX** for that.
 
 ![Enter tags as a comma-separated list in the tags field for each server in your environment](_img/manage-release-13.png)
 
 Next set up the actions for each tag. After you drag the tag to the deployment sequence, drag 
-each required action into the tag and configure the action. 
+each required action into the tag and configure the action.
 When a stage is deployed, these actions are performed on any server with this tag. So you only 
 have to create the set of actions once for multiple servers.
 
@@ -227,7 +228,7 @@ have to create the set of actions once for multiple servers.
 You can create multiple sets of actions for each tag if you need to add another action for a 
 specific server between these sets.
 
-You can **[copy the actions](#CopySequence)** for a tag between stages and release templates. 
+You can **[copy the actions](#CopySequence)** for a tag between stages and release templates.
 When you copy a sequence for a tag, 
 you can remap these tag sequences to a different tag if you want.
 
@@ -237,13 +238,13 @@ you can remap these tag sequences to a different tag if you want.
 
 **A**: If you are using TFVC for your version control system and a 
 **[vNext release path](release-without-agents.md)**, 
-you can use the change summary to see these work items that were completed since the previous release. 
+you can use the change summary to see these work items that were completed since the previous release.
 It makes it easier to know what to test and what to put in your release notes. More details are 
 **[here](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
 
 ![Configure Apps tab; vNext Release Templates tab; Change Summary tab](_img/manage-release-16.png)
 
-You can also view the change summary using the Release Management web browser client. 
+You can also view the change summary using the Release Management web browser client.
 To access this client, use the following URL:
  
 `http://<your-team-foundation-server-name>:1000/ReleaseManagement`

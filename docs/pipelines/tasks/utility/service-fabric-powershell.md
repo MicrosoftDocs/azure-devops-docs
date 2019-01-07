@@ -1,21 +1,23 @@
 ---
 title: Service Fabric PowerShell Utility task
-description: Service Fabric PowerShell build task for use in all your build or release pipelines in Microsoft VSTS and Team Foundation Server 
+description: Service Fabric PowerShell task for use in build or release pipelines in Azure Pipelines and Team Foundation Server 
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
-# Utility: Service Fabric PowerShell
+# Service Fabric PowerShell task
 
-![icon](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
+**Azure Pipelines**
 
+Use this task in a build or release pipeline to run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.
 
 ## Prerequisites
@@ -27,7 +29,7 @@ deploy to a Service Fabric cluster.
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShellV1.md)]
 ::: moniker-end
@@ -47,7 +49,7 @@ Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -55,5 +57,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

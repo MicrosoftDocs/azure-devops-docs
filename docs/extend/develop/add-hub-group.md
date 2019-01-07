@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Add a Hub Group | Extensions for VSTS
-description: Add a hub group in VSTS for your extension.
+title: Add a Hub Group | Extensions for Azure DevOps Services
+description: Add a hub group in Azure DevOps Services for your extension.
 ms.assetid: 8186f578-27a0-4130-ace0-0279c863b1a5
 ms.topic: conceptual
 ms.manager: douge
@@ -22,38 +22,38 @@ then follow these steps to create the hub group.
 
 Here's the complete extension manifest with Hello in the samples hub group.
 
-	```
-	{
-		"namespace": "Fabrikam.myextension",
-		"name": "My Extension",
-		"description": "This is my first extension",
-		"version": "1.0",
-		"provider": {
-			"name": "Fabrikam Fiber Inc"
-		},
-		"baseUri": "https://localhost:port",
-		"icon": "images/logo.png",
-		"links": {
-			"info": "info.html",
-			"support": "support.html",
-			"termsOfService": "terms-of-service.html"
-		},
-		"contributions": {
-			"vss.web#hubGroups.project": [
-				{
-					"id": "samples",
-					"name": "Samples",
-					"order":  30
-				}
-			],
-			"vss.web#hubs": [
-				{
-					"id": "myhub",
-					"name": "Hello",
-					"groupId": "samples",
-					"uri": "hello-world.html"
-				}
-			]
-		}
+```json
+{
+	"namespace": "Fabrikam.myextension",
+	"name": "My Extension",
+	"description": "This is my first extension",
+	"version": "1.0",
+	"provider": {
+		"name": "Fabrikam Fiber Inc"
+	},
+	"baseUri": "https://localhost:port",
+	"icon": "images/logo.png",
+	"links": {
+		"info": "info.html",
+		"support": "support.html",
+		"termsOfService": "terms-of-service.html"
+	},
+	"contributions": {
+		"vss.web#hubGroups.project": [
+			{
+				"id": "samples",
+				"name": "Samples",
+				"order":  30
+			}
+		],
+		"vss.web#hubs": [
+			{
+				"id": "myhub",
+				"name": "Hello",
+				"groupId": "samples",
+				"uri": "hello-world.html"
+			}
+		]
 	}
-	```
+}
+```

@@ -1,7 +1,7 @@
 ---
 title: Resolve data validation errors
-titleSuffix: VSTS & TFS
-description: Address rule errors that occur when publishing a list from Excel or Project to Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Address rule errors that occur when publishing a list from Excel or Project to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
@@ -75,7 +75,7 @@ A data validation error occurs when a change in the work item list or project pl
 ## Related articles
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
--  [Work in Excel and Project](track-work-vsts-tfs.md) 
+-  [Work in Excel and Project](track-work.md) 
 
 
 ###Required permissions  

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces PageContext API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces PageContext API | Extensions for Azure DevOps Services
 description: Global context placed on each VSSF web page (through json island data) which gives enough information for core TypeScript modules/controls on the page to operate
 ms.assetid: 9a3b5883-8245-6560-dbd9-ea56b6d2c802
 ms.prod: devops
@@ -40,7 +40,7 @@ Global context placed on each VSSF web page (through json island data) which giv
 
 * `navigation`: [NavigationContext](../../../VSS/References/SDK_Interfaces/NavigationContext.md). Current navigation context.
 
-* `serviceInstanceId`: string. The service instance type ID for the VSTS service serving this page
+* `serviceInstanceId`: string. The service instance type ID for the Azure DevOps Services service serving this page
 
 * `serviceLocations`: [ServiceLocations](../../../VSS/References/SDK_Interfaces/ServiceLocations.md). 
 

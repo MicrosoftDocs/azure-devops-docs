@@ -1,6 +1,6 @@
 ---
-title: Configure package management for Maven with VSTS
-description: Tutorial lab for configuring packagement and building with Maven and Visual Studio Team Services (VSTS)
+title: Configure package management for Maven with Azure DevOps Services
+description: Tutorial lab for configuring package management and building with Maven and Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,9 +13,9 @@ monikerRange: '>= tfs-2018'
 ---
 
 
-# Configure VSTS for Maven package management
+# Configure Azure DevOps Services for Maven package management
 
-In this exercise, you are going to set up package management with Maven in VSTS. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure a VSTS build to publish the MyShuttleCalc package to a VSTS Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
+In this exercise, you are going to set up package management with Maven in Azure DevOps Services. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure an Azure DevOps Services build to publish the MyShuttleCalc package to an Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -24,15 +24,15 @@ In this exercise, you are going to set up package management with Maven in VSTS.
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private VSTS agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your VSTS team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md) This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private Azure DevOps Services agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your Azure DevOps Services team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md) This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: This exercise shows how to do a Maven build using just VSTS. To see how to perform a Maven build using Jenkins that still integrates into the VSTS Package Feed, please refer to the Maven Package Management with VSTS Team Build lab.
+> **Note**: This exercise shows how to do a Maven build using just Azure DevOps Services. To see how to perform a Maven build using Jenkins that still integrates into the Azure DevOps Services Package Feed, please refer to the Maven Package Management with Azure DevOps Services Team Build lab.
 
 ## Create a Maven Package Feed
 
 In this task you will create a Maven package feed. You will publish packages to this feed as well as consume packages from this feed.
 
-1. In VSTS, click on "Build & Release" and then Packages to go to the Package Hub. Click "+ New Feed" to create a new feed.
+1. In Azure DevOps Services, click on "Build & Release" and then Packages to go to the Package Hub. Click "+ New Feed" to create a new feed.
 
     ![Create a new feed](../_img/mavenpmvsts/vsts-create-feed.png)
 
@@ -56,7 +56,7 @@ In this task you will create credentials for the Maven feed. You will then creat
 
     ![Generate Maven Credentials](../_img/mavenpmvsts/maven-generate-creds.png)
 
-1. VSTS creates a credentials snippet. Click the Copy to Clipboard button to copy the snippet to the clipboard.
+1. Azure DevOps Services creates a credentials snippet. Click the Copy to Clipboard button to copy the snippet to the clipboard.
 
     ![Copy the Maven Credentials](../_img/mavenpmvsts/maven-creds.png)
 
@@ -68,9 +68,9 @@ In this task you will create credentials for the Maven feed. You will then creat
 
 1. Press Ctrl-S (or File->Save) and save the file.
 
-1. In VSTS, go back to the Connect to Feed dialog on your Maven feed. Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
+1. In Azure DevOps Services, go back to the Connect to Feed dialog on your Maven feed. Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
 
-    ![Get the package repository settings from VSTS](../_img/mavenpmvsts/maven-packagefeed-settings.png)
+    ![Get the package repository settings from Azure DevOps Services](../_img/mavenpmvsts/maven-packagefeed-settings.png)
 
 1. In your editor, open the `pom.xml` file. Update the `<repositories>` tag as well as the `<distributionManagement>` tag so that they point to your feed.
 
@@ -78,7 +78,7 @@ In this task you will create credentials for the Maven feed. You will then creat
 
 1. Commit your changes to the repo.
 
-    > **Note**: If this is your first commit to VSTS, you will be prompted to update your display name and email address for the repo. These are simply for display purposes, but usually are matched to your VSTS profile.
+    > **Note**: If this is your first commit to Azure DevOps Services, you will be prompted to update your display name and email address for the repo. These are simply for display purposes, but usually are matched to your Azure DevOps Services profile.
 
 **IntelliJ**
 
@@ -106,7 +106,7 @@ Click VCS->Commit Changes to commit your changes to the repo.
 
     | Name | Value |
     |---|---|
-    | User | `_VSTS_Code_Access_Token` |
+    | User | `_Azure DevOps Services_Code_Access_Token` |
     | Password | `{PAT that you copied earlier}` |
 
   ![Login to Eclipse](../_img/mavenpmvsts/eclipse-login.png)
@@ -119,11 +119,11 @@ Click VCS->Commit Changes to commit your changes to the repo.
 
 1. **Important**: If you have the MyShuttle2 project already open in IntelliJ or Eclipse, close the instance of the IDE and reopen it.
 
-## Creating a VSTS Build for Publishing a Maven Package
+## Creating an Azure DevOps Services Build for Publishing a Maven Package
 
 In this task you will create a build that will publish the MyShuttleCalc library to the Maven feed.
 
-1. Open VSTS and connect to your team project. Click on the Build & Release Hub and then click Builds. Click on +New to create a new build pipeline.
+1. Open Azure DevOps Services and connect to your team project. Click on the Build & Release Hub and then click Builds. Click on +New to create a new build pipeline.
 
     ![New build pipeline](../_img/mavenpmvsts/new-build.png)
 
@@ -137,7 +137,7 @@ In this task you will create a build that will publish the MyShuttleCalc library
 
 1. Click on Options.
 
-1. Update the Build number format to `0.0$(rev:.r)` and update the build queue to `default` (this is the queue that the VSTS agent in the container is joined to).
+1. Update the Build number format to `0.0$(rev:.r)` and update the build queue to `default` (this is the queue that the Azure DevOps Services agent in the container is joined to).
 
     ![Build options](../_img/mavenpmvsts/build-options.png)
 

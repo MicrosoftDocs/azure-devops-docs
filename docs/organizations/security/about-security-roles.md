@@ -1,7 +1,7 @@
 ---
 title: Understand how security roles work
-titleSuffix: VSTS & TFS
-description: Learn about security roles and where they are used to manage permissions to select features and functions of TFS and VSTS
+titleSuffix: Azure DevOps & TFS
+description: Learn about security roles and where they are used to manage permissions to select features and functions of TFS and Azure DevOps
 ms.technology: devops-security
 ms.assetid: 
 toc: show
@@ -10,18 +10,18 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 02/12/2018
 monikerRange: '>= tfs-2015'
+ms.date: 11/19/2018
 ---
 
 # About security roles
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="security-roles" />
 While the majority of features and functional tasks are managed by [individual permissions](about-permissions.md), there are several artifacts and features that the system manages through role-based permissions. You can add users or groups to a role. Each role determines the set of operations that the user can perform as described in the following sections.  
 
-Many role-based permissions can be set for all artifacts of a specific type in a team project, or for the project or collection and then selectively inherited for a specific artifact. Role memberships for individual items  automatically inherit those set for the project or collection. If required, you can turn off Inheritance for a specific artifact.
+Many role-based permissions can be set for all artifacts of a specific type in a project, or for the project or collection and then selectively inherited for a specific artifact. Role memberships for individual items  automatically inherit those set for the project or collection. If required, you can turn off Inheritance for a specific artifact.
 
 <!---
 You manage the security for the following artifacts and features by adding a user or group to the roles which are described in the following sections. 
@@ -29,9 +29,9 @@ You manage the security for the following artifacts and features by adding a use
 [Agent queues](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools](../../pipelines/policies/set-permissions.md)<br/>- [Deployment groups](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools](../../pipelines/policies/set-permissions.md#deployment-group) - [Secure files](../../pipelines/policies/set-permissions.md#library)<br/>- [Service connections](../../pipelines/policies/set-permissions.md)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#library)
 
  
-##Default role assignments
+## Default role assignments
 
-By default, all contributors in a team project are members of the User role on each hosted queue.  This allows every contributor in a team project to author and run build and release pipelines using hosted queues.
+By default, all contributors in a project are members of the User role on each hosted queue.  This allows every contributor in a project to author and run build and release pipelines using hosted queues.
 -->
 
 ## Agent queue security roles
@@ -48,19 +48,19 @@ You [add users to the following security roles](../../pipelines/policies/set-per
 
 ## Deployment group security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md#library) from the user context, **Build and Release** hub.  For information on adding and managing deployment groups, see [Deployment groups](/vsts/pipelines/release/deployment-groups). 
+You [add users to the following roles](../../pipelines/policies/set-permissions.md#library) from **Pipelines** or **Build and Release**.  For information on adding and managing deployment groups, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups). 
 
 [!INCLUDE [temp](_shared/deployment-group-roles.md)]
 
 ## Deployment pool security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/pipelines/release/deployment-groups).   
+You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups).   
 
 [!INCLUDE [temp](_shared/deployment-pool-roles.md)]
 
 ## Library asset security roles: Variable groups and secure files
 
-You [add users to a library role](../../pipelines/policies/set-permissions.md#library) from the user context, **Build and Release** hub. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
+You [add users to a library role](../../pipelines/policies/set-permissions.md#library) from **Pipelines** or **Build and Release**. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
 
 [!INCLUDE [temp](_shared/library-roles.md)]
 
@@ -80,7 +80,7 @@ To learn more, see [Grant permissions to manage extensions](../../marketplace/ho
 
 For [each team that you add](../../organizations/settings/add-teams.md), you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing team assets.
 
-For details, see [Team administrator role and permissions](../settings/team-administrator-permissions.md).
+For details, see [Manage teams and configure team tools](../settings/manage-teams.md).
 
 > [!NOTE]
 > Members of the Project Administrators or Project Collection Administrators groups can manage all team admin areas for all teams.
@@ -89,6 +89,6 @@ For details, see [Team administrator role and permissions](../settings/team-admi
 
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md). 
  
  

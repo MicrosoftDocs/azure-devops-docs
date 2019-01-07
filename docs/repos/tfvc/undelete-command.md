@@ -1,5 +1,6 @@
 ---
 title: Undelete Command
+titleSuffix: Azure Repos
 description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Undelete Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **undelete** command restores items that were previously deleted.
 

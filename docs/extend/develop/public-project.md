@@ -1,7 +1,7 @@
 ---
 title: Developing extensions for Public Projects
-titleSuffix: VSTS
-description: Guidance for developing VSTS extensions that support non-member and public users.
+titleSuffix: Azure DevOps Services
+description: Guidance for developing Azure DevOps Services extensions that support non-member and public users.
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
@@ -14,13 +14,13 @@ ms.date: 05/14/2018
 ---
 
 > [!NOTE]
-> VSTS public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [VSTS Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
+> Azure DevOps Services public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [Azure DevOps Services Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
 
-# Public project support by VSTS extensions
+# Public project support by Azure DevOps Services extensions
 
-Prior to public project support, all VSTS projects were private, meaning that only authenticated users with access to the project could see or interact with it. A public project allows non-member users to view the contents of that project in a read-only state. 
+Prior to public project support, all Azure DevOps Services projects were private, meaning that only authenticated users with access to the project could see or interact with it. A public project allows non-member users to view the contents of that project in a read-only state. 
 
-> A non-member user is either **anonymous** (not authenticated to VSTS) or **public** (are authenticated to VSTS, but do not belong to the account).
+> A non-member user is either **anonymous** (not authenticated to Azure DevOps Services) or **public** (are authenticated to Azure DevOps Services, but do not belong to the organization).
 
 Non-member users generally see the same views as authenticated users, with non-public functionality such as settings and actions (such as queue build) either hidden or disabled.
 
@@ -34,14 +34,14 @@ Use this checklist to help decide if you should make your extension available to
 * Data presented by your extension is relevant to non-member users
 * Your extension contributes capabilities at the project level
 * Your extension contributes to areas of the product that are accessible by non-member users
-* Your extension does not extend or rely on features that are unavailable to non-member users, for example the Data Service or certain VSTS REST APIs. See the [Limitations](#limitations) section below for more details.
+* Your extension does not extend or rely on features that are unavailable to non-member users, for example the Data Service or certain Azure DevOps Services REST APIs. See the [Limitations](#limitations) section below for more details.
 
 ## Contribution visibility
 
-By default, contributions are only visible to account members. To give non-member users visibility to a contribution, set the `restrictedTo` attribute on that contribution. The value is a string array that lists which types of users should have visibility to the contribution. The possible values are:
+By default, contributions are only visible to organization members. To give non-member users visibility to a contribution, set the `restrictedTo` attribute on that contribution. The value is a string array that lists which types of users should have visibility to the contribution. The possible values are:
 
-* `member` an authenticated user that is a member of the account
-* `public` an authenticated user that is **not** a member of the account
+* `member` an authenticated user that is a member of the organization
+* `public` an authenticated user that is **not** a member of the organization
 * `anonymous` an un-authenticated user
 
 ### Example: make a hub visible to anonymous, public, and member users
@@ -152,17 +152,17 @@ VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
 
 ### REST APIs
 
-A limited set of VSTS REST APIs are available to non-member users. This includes most account-level APIs and project-level APIs for features unavailable to non-member users in general. You should take this into consideration when deciding whether or not to make your extension available to non-member users.
+A limited set of Azure DevOps Services REST APIs are available to non-member users. This includes most organization-level APIs and project-level APIs for features unavailable to non-member users in general. You should take this into consideration when deciding whether or not to make your extension available to non-member users.
 
 It is also recommended that you use version 5.0 and later APIs, as certain APIs are only available to non-member users starting with version 5.0.
 
 #### Identity references
 
-A majority of VSTS REST APIs use a common "contract" to represent a user or group. To protect member information, like email addresses, when a REST API is invoked by an anonymous or public user, certain fields, like `uniqueName` are omitted.
+A majority of Azure DevOps Services REST APIs use a common "contract" to represent a user or group. To protect member information, like email addresses, when a REST API is invoked by an anonymous or public user, certain fields, like `uniqueName` are omitted.
 
 ## Checking user permissions
 
-A good best practice in general is to use permissions to decide whether or not to surface or enable a capability in your extension. The Security REST API can be used from web extension code to check whether the current user has permission in VSTS to perform the task. This avoids the user thinking they have permission to do something, only to find they don't after they try to do it.
+A good best practice in general is to use permissions to decide whether or not to surface or enable a capability in your extension. The Security REST API can be used from web extension code to check whether the current user has permission in Azure DevOps Services to perform the task. This avoids the user thinking they have permission to do something, only to find they don't after they try to do it.
 
 #### Example: check whether the user has permission to queue builds
 
@@ -250,7 +250,7 @@ Individual widget instances can also indicate that its settings are project-spec
 
 ## Build and release considerations
 
-If your extension contributes a build or release task, no change is required to make use of that task from a definition in a public project.
+If your extension contributes a build or release task, no change is required to make use of that task from a pipeline in a public project.
 
 ## Work item tracking considerations
 
@@ -262,11 +262,11 @@ All work item updates or deletes will fail for non-member users.
 
 ### Identities
 
-In VSTS REST API version 5.0 and later, identities are returned as `IdentityRef` objects instead of strings. As described above, certain fields, like `uniqueName` are not returned in these objects if the API call was made by a non-member user.
+In Azure DevOps Services REST API version 5.0 and later, identities are returned as `IdentityRef` objects instead of strings. As described above, certain fields, like `uniqueName` are not returned in these objects if the API call was made by a non-member user.
 
 ### APIs
 
-Only project-scoped REST APIs can be invoked by an extension when the current user is not an account member. Any REST API call this is not scoped to a project will be rejected.
+Only project-scoped REST APIs can be invoked by an extension when the current user is not an organization member. Any REST API call this is not scoped to a project will be rejected.
 
 ### Queries
 

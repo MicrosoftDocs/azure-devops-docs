@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Package, publish, & unpublish extensions | VSTS
-description: An overview of packaging, publishing, unpublishing, and sharing an extension for VSTS.
+title: Package, publish, & unpublish extensions | Azure DevOps Services
+description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps Services.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.topic: conceptual
 ms.manager: douge
@@ -12,9 +12,9 @@ author: elbatk
 ms.date: 08/29/2016
 ---
 
-# Package, publish, unpublish, and install VSTS extensions
+# Package, publish, unpublish, and install Azure DevOps Services extensions
 
-After writing a Visual Studio Team Services (VSTS) extension, the next step is to package it. After packaging, extensions are published, or uploaded, to the [Visual Studio Marketplace](https://marketplace.visualstudio.com), where they can be installed by users that the extensions are shared with. The Marketplace is a centralized, global repository for private and public extensions, integrations, and other offers from Microsoft.
+After writing an Azure DevOps Services extension, the next step is to package it. After packaging, extensions are published, or uploaded, to the [Visual Studio Marketplace](https://marketplace.visualstudio.com), where they can be installed by users that the extensions are shared with. The Marketplace is a centralized, global repository for private and public extensions, integrations, and other offers from Microsoft.
 
 >[!NOTE]
 >For information on the discovery properties available in your extension's manifest file that will help users discover and learn about your extension, 
@@ -61,7 +61,7 @@ tfx extension create --manifest-globs vss-extension.json
 ## Share
 <a name="shareextension" />
 
-Before an extension can be installed into a VSTS account, it must be shared with that account. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
+Before an extension can be installed into an organization in Azure DevOps Services, it must be shared with that organization. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
 
 To share an extension so it can be installed:
 
@@ -70,8 +70,8 @@ To share an extension so it can be installed:
 
   ![Share Extensions](../_img/share-extension.png)
 
-3. Specify the name of the VSTS account to make this extension visible to
-  - For example, to make an extension visible to the fabrikam-fiber-inc.visualstudio.com account, specify `fabrikam-fiber-inc`.
+3. Specify the name of the organization to make this extension visible to
+  - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 
 
 
@@ -80,17 +80,17 @@ To share an extension so it can be installed:
 
 To install an extension that has been shared:
 
-1. From your VSTS account home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
+1. From your organization home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
 
   ![Manage Extensions](_img/manage-extensions.png)
 
-2. Find the extension under the **Shared with this account** category:
+2. Find the extension under the **Shared with this organization** category:
 
   ![Shared with me](./_img/extensions-tab-shared.png)
 
 3. Click the card to open the item in the Marketplace
 4. From the item's details page, click the **Install** button
-5. Choose the account you shared the extension with and proceed through the installation process. 
+5. Choose the organization you shared the extension with and proceed through the installation process. 
   
 ## Update
 

@@ -1,6 +1,6 @@
 ---
-title: Manage ratings and reviews for your published extension | Extensions for VSTS
-description: Guidelines for responding to and requesting to void reviews for a published extension in the VSTS Marketplace.
+title: Manage ratings and reviews for your published extension | Extensions for Azure DevOps Services
+description: Guidelines for responding to and requesting to void reviews for a published extension in the Visual Studio Marketplace.
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: f814d685-c0e0-48dc-adb6-ad8571a9fb73

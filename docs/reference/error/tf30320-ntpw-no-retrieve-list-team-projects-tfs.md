@@ -1,5 +1,5 @@
 ---
-title: TF30320-The New Team Project Wizard could not retrieve the list of projects  titleSuffix: VSTS & TFS
+title: TF30320-The New Team Project Wizard...titleSuffix: Azure DevOps & TFS
 description: Display an error when the New Team Project Wizard could not retrieve the list of projects on the Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-agile

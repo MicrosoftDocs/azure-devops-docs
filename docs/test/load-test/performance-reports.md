@@ -1,6 +1,6 @@
 ---
-title: View and compare your Visual Studio load test runs 
-description: Get started with web performance tests - view and compare your load test runs using the features of the Test hub in Microsoft VSTS
+title: View and compare load test runs 
+description: Get started with web performance tests - view and compare your load test runs using the features of Azure DevOps
 ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # View and compare your load test runs
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)] 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two
@@ -25,17 +25,16 @@ information.
 
 > [!NOTE]
 > You can open load tests in Visual Studio to analyse and compare results.
-> See [How to: Access Load Test Results for Analysis](https://docs.microsoft.com/visualstudio/test/how-to-access-load-test-results-for-analysis)
-> and [How to: Create Load Test Performance Reports Using Microsoft Excel](https://docs.microsoft.com/visualstudio/test/how-to-create-load-test-performance-reports-using-microsoft-excel).
+> See [How to: Access Load Test Results for Analysis](/visualstudio/test/how-to-access-load-test-results-for-analysis)
+> and [How to: Create Load Test Performance Reports Using Microsoft Excel](/visualstudio/test/how-to-create-load-test-performance-reports-using-microsoft-excel).
 
 <a name="opents"></a>
-## Open a load test in VSTS
+## Open a load test in Azure DevOps
 
 * If you are running URL-based or Apache JMeter load tests, you
-  can see the list of all the test runs in Visual Studio Team
-  Services **Load test** list. 
+  can see the list of all the test runs in the **Load test** list. 
 
-  ![List of load test runs in VSTS](_img/performance-reports/LoadTestViewListTS.png)
+  ![List of load test runs in Azure DevOps](_img/performance-reports/LoadTestViewListTS.png)
 
 <a name="filterselect"></a>
 ## Filter and select a load test
@@ -44,7 +43,7 @@ information.
 
    ![Filter load test runs by state, date, or user](_img/performance-reports/LoadTestFilterView.png)
 
-1. Select a test run and open the shortcut menu (in VSTS you can
+1. Select a test run and open the shortcut menu (in Azure DevOps you can
    use the ![down arrow](_img/performance-reports/LoadTestListMenu-icon.png) 
    icon) to see details of the test run, or stop a running test. 
 

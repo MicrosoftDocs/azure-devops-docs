@@ -1,7 +1,7 @@
 ---
 title: Sprint and scrum best practices
-titleSuffix: VSTS & TFS 
-description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards 
+description: Best practice guidance to implement scrum and use sprint tools in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
@@ -10,13 +10,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/07/2018
+ms.date: 11/19/2018
 ---
 
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
 ## Sprint planning meetings 
@@ -25,14 +25,14 @@ Much of sprint planning involves a negotiation between the product owner and the
 
 In the first part of the meeting, your product owner meets with your team to discuss the user stories that might be included in the sprint. Your product owner will share information and answer any questions that your team has about those stories. This conversation might reveal details such as data sources, user interface layout, response time expectations, and considerations for security and usability. Your team should capture these details within the backlog items form. During this part of the meeting, your team learns what it must build.
 
-As you plan your sprints, you may discover additional requirements that you should capture and add to your backlog. Before your sprint planning meeting, you'll want to [groom and refine your backlog](../backlogs/best-practices-product-backlog.md#groom) to make sure that it is well defined and in priority order. 
+As you plan your sprints, you may discover additional requirements that you should capture and add to your backlog. Before your sprint planning meeting, you'll want to [refine your backlog](../backlogs/best-practices-product-backlog.md#refine) to make sure that it is well defined and in priority order. 
 
 Also, setting a sprint goal as part of your planning efforts can help the team stay focused on what's most important for each sprint. 
 
 After you've planned your sprint, you may want to [share the plan](share-plan.md) with key stakeholders. 
 
 You can learn more from these resources: 
-*	[What is Scrum?](/azure/devops/agile/what-is-scrum)
+*	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 *	[Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
 *	[The Scrum Guide](http://www.scrumguides.org/scrum-guide.html)
 *	[Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
@@ -164,7 +164,7 @@ Many teams delay discussions by using the "virtual parking lot" method. As topic
 
 <a id="sprint-review-meeting">  </a>
 ## Sprint review meetings
-Conduct your sprint review meetings on the last day of the sprint. Your team demonstrates each product backlog item that it completed in the sprint. The product owner, customers, and stakeholders accept the user stories that meet their expectations and identify any new requirements. Customers often understand their additional needs more fully after seeing the demonstrations and may identify  changes that they want to see.
+Conduct your sprint review meetings on the last day of the sprint. Your team demonstrates each product backlog item that it completed in the sprint. The product owner, customers, and stakeholders accept the user stories that meet their expectations and identify any new requirements. Customers often understand their additional needs more fully after seeing the demonstrations and may identify changes that they want to see.
 
 Based on this meeting, some user stories will be accepted as complete. Incomplete user stories will remain in the product backlog, and new user stories will be added to the  backlog. Both sets of stories will be ranked and either estimated or re-estimated in the next sprint planning meeting.  
 
@@ -192,5 +192,5 @@ In some cases, your team may need to do some work to implement an improvement. F
 
 ## Related articles
 
-*	[What is Scrum?](/azure/devops/agile/what-is-scrum)
+*	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 *	[Agile Retrospectives: Making Good Teams Great](http://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

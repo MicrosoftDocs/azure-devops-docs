@@ -1,6 +1,7 @@
 ---
-title: Conditional expressions | VSTS or Team Foundation Server
-description: Learn about how you can write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS).
+title: Conditional tasks
+ms.custom: seodec18
+description: Learn about how you can write custom conditions for running your task in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,23 +9,57 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/22/2017
+ms.date: 01/02/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Specify conditions
 
-**VSTS | TFS 2018 | TFS 2017.3** 
+**Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release pipeline,
-you can specify the conditions under which the task or phase will run:
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+On each step and job, you can specify the conditions under which the step or job will run.
+[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+* Custom conditions
+
+By default, steps and jobs run if all previous steps/jobs have succeeded.
+It's as if you specified "condition: succeeded()" (see [Job status functions](#job-status-functions) below).
+
+```yaml
+jobs:
+- job: Foo
+  
+  steps:
+  - script: echo Hello!
+    condition: always() # this step will always run, even if the pipeline is cancelled
+
+- job: Bar
+  dependsOn: Foo
+  condition: failed() # this job will only run if Foo fails
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
+you can specify the conditions under which the task or job will run:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
+
+---
 
 ## Enable a custom condition
 
@@ -36,7 +71,10 @@ If the built-in conditions don't meet your needs, then you can specify **custom 
 
 ::: moniker-end
  
-Express the condition as a nested set of functions. The agent evaluates the innermost function and works its way out. The final result is a boolean value that determines if the task is run or not. Details on syntax are described below.
+Conditions are written as expressions.
+The agent evaluates the expression beginning with the innermost function and works its way out.
+The final result is a boolean value that determines if the task is run or not.
+See the [expressions](expressions.md) topic for a full guide to the syntax.
 
 Do any of your conditions make it possible for the task to run even after the build is canceled by a user? If so, then specify a reasonable value for **Build job cancel timeout in minutes** [in the options](../build/options.md) so that these kinds of tasks have enough time to complete after the user clicks **Cancel**.
 
@@ -80,250 +118,94 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 > **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
-## Types
+## Job status functions
 
-### Boolean
-`true` or `false` (ordinal case insensitive)
+In addition to the [general functions](expressions.md#functions) available in expressions,
+you can use the following as shortcuts for common job status checks.
 
-### Null
-Null is a special type that is returned from a dictionary miss only, e.g. (`variables['noSuch']`). There is no keyword for null, but you can test for it by using the implicit type casting described below.
+<h3 id="always">always</h3>
+* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
 
-### Number
-Starts with `-` `.` or `0-9`. Cannot contain `,`.
+### canceled
+* Evaluates to `True` if the pipeline was canceled.
 
-### String
-Must be single-quoted. For example: `'this is a string'`.
+### failed
+* For a step, equivalent to `eq(variables['Agent.JobStatus'], 'Failed')`.
+* For a job:
+ * With no arguments, evaluates to `True` only if any previous job in the dependency graph failed.
+ * With job names as arguments, evaluates to `True` only if any of those jobs failed.
 
-To express a literal single-quote, escape it with a single quote. For example: `'It''s OK if they''re using contractions.'`.
+### succeeded
+* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
+* For a job:
+ * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+ * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
 
-### Version
-A version number with up to four segments. Must start with a number and contain two or three period (`.`) characters. For example: `1.2.3.4`.
+### succeededOrFailed
+* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`
+* For a job:
+ * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
+ * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
 
-## Type Casting
-
-### Conversion chart
-Detailed conversion rules are listed further below.
-
-|          |             | To          |             |             |             |             |
-| -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|          |             | **Boolean** | **Null**    | **Number**  | **String**  | **Version** |
-| **From** | **Boolean** | -           | -           | Yes         | Yes         | -           |
-|          | **Null**    | Yes         | -           | Yes         | Yes         | -           |
-|          | **Number**  | Yes         | -           | -           | Yes         | Partial     |
-|          | **String**  | Yes         | Partial     | Partial     | -           | Partial     |
-|          | **Version** | Yes         | -           | -           | Yes         | -           |
-
-### Boolean to Number
-
-False =\> 0
- 
-True =\> 1
-
-### Boolean to String
-
-False =\> 'False'
-
-True =\> 'True'
-
-### Null to Boolean
-
-=\> False
-
-### Null to Number
-
-=\> 0
-
-### Null to String
-
-=\> Empty string
-
-### Number to Boolean
-
-0 =\> False
-
-Otherwise =\> True
-
-### Number to Version
-
-Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
-
-#### Number to String
-
-Converts the number to a string with no thousands separator and no decimal separator.
-
-### String to Boolean
-
-Empty string =\> False
-
-Otherwise =\> True
-
-### String to Null
-
-Empty string =\> Null
-
-Otherwise not convertible
-
-### String to Number
-
-Empty string =\> 0
-
-Otherwise try-parse using [InvariantCulture](https://msdn.microsoft.com/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx)  and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If try-parse fails, then not convertible.
-
-### String to Version
-
-Try-parse. Must contain Major and Minor component at minimum. If try-parse fails, then not convertible.
-
-### Version to Boolean
-
-=\> True
-
-### Version to String
-
-Major.Minor or Major.Minor.Build or Major.Minor.Build.Revision.
+ > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
 
 ## Variables
 
-Alias to reference a build variable. For example:
-
-* Index syntax: `variables['Build.SourceBranch']`
-
-* Property dereference syntax: `variables.Build.SourceBranch`. In order to use this syntax, the property name must:
-
- - Start with `a-Z` or `_`
-
- - Be followed by `a-Z` `0-9` or `_`
+[Build](../build/variables.md) or [Release](../release/variables.md) variables are available.
+For agent jobs, variables marked agent-scoped are available.
 
 Some of the more useful predefined variables include:
 
 * `Build.Reason` which you can use to check whether the build was the result of a [build trigger](../build/triggers.md), a [Git PR affected by a branch policy](../../repos/git/branch-policies.md), or a [TFVC gated check-in](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
-
 * `Build.SourceBranch`
-
 * `Release.Artifacts.{artifact-alias}.SourceBranch`
 
-For details on these and other variables, including predefined variables and their possible values, see [Build variables](../build/variables.md) and [Release variables](../release/variables.md).
+## Dependencies
 
-## Job status functions
+For jobs which depend on other jobs, expressions may also use context about previous jobs in the dependency graph.
+The context is called `dependencies` and works much like [`variables`](expressions.md#variables).
 
-<h3 id="always">always</h3>
-* Always evaluates True (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
-* Min parameters: 0. Max parameters: 0
+Structurally, the `dependencies` object is a map of job names to `results` and `outputs`.
+Expressed as JSON, it would look like:
 
-### canceled
-* Evaluates True when `eq(variables['Agent.JobStatus'], 'Canceled')`.
-* Min parameters: 0. Max parameters: 0
+```json
+"dependencies": {
+  "<JOB_NAME>" : {
+    "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
+    "outputs": { // only variables explicitly made outputs will appear here
+      "variable1": "value1",
+      "variable2": "value2"
+    }
+  },
+  "...": {
+    // another job
+  }
+}
+```
 
-### failed
-* Evaluates True when `eq(variables['Agent.JobStatus'], 'Failed')`.
-* Min parameters: 0. Max parameters: 0
+::: moniker range="vsts"
 
-### succeeded
-* Evaluates True when `in(variables['Agent.JobStatus'], 'Succeeded', 'PartiallySucceeded')`
-* Min parameters: 0. Max parameters: 0
+For instance, in a YAML pipeline, you could use it like this:
 
-### succeededOrFailed
-* Evaluates True when `in(variables['Agent.JobStatus'], 'Succeeded', 'PartiallySucceeded', 'Failed')`
-* Min parameters: 0. Max parameters: 0
+```yaml
+jobs:
+- job: A
+  steps:
+  - script: "echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+    name: printvar
 
-## General functions
+- job: B
+  condition: and(succeeded(), ne(dependencies.A.outputs['printvar.skipsubsequent'], 'true'))
+  dependsOn: A
+  steps:
+  - script: echo hello from B
+```
 
-### and
-* Evaluates True if all parameters are True
-* Min parameters: 2. Max parameters: N
-* Casts parameters to Boolean for evaluation
-* Short-circuits after first False
-
-### contains
-* Evaluates True if left parameter String contains right parameter
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to String for evaluation
-* Performs ordinal ignore-case comparison
-
-### endsWith
-* Evaluates True if left parameter String ends with right parameter
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to String for evaluation
-* Performs ordinal ignore-case comparison
-
-### eq
-* Evaluates True if parameters are equal
-* Min parameters: 2. Max parameters: 2
-* Converts right parameter to match type of left parameter. Returns False if conversion fails.
-* Ordinal ignore-case comparison for Strings
-
-### ge
-* Evaluates True if left parameter is greater than or equal to the right parameter
-* Min parameters: 2. Max parameters: 2
-* Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
-
-### gt
-* Evaluates True if left parameter is greater than the right parameter
-* Min parameters: 2. Max parameters: 2
-* Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
-
-### in
-* Evaluates True if left parameter is equal to any right parameter
-* Min parameters: 1. Max parameters: N
-* Converts right parameters to match type of left parameter. Equality comparison evaluates False if conversion fails.
-* Ordinal ignore-case comparison for Strings
-* Short-circuits after first match
-
-### le
-* Evaluates True if left parameter is less than or equal to the right parameter
-* Min parameters: 2. Max parameters: 2
-* Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
-
-### lt
-* Evaluates True if left parameter is less than the right parameter
-* Min parameters: 2. Max parameters: 2
-* Converts right parameter to match type of left parameter. Errors if conversion fails.
-* Ordinal ignore-case comparison for Strings
-
-### ne
-* Evaluates True if parameters are not equal
-* Min parameters: 2. Max parameters: 2
-* Converts right parameter to match type of left parameter. Returns True if conversion fails.
-* Ordinal ignore-case comparison for Strings
-
-### not
-* Evaluates True if parameter is False
-* Min parameters: 1. Max parameters: 1
-* Converts value to Boolean for evaluation
-
-### notIn
-* Evaluates True if left parameter is not equal to any right parameter
-* Min parameters: 1. Max parameters: N
-* Converts right parameters to match type of left parameter. Equality comparison evaluates False if conversion fails.
-* Ordinal ignore-case comparison for Strings
-* Short-circuits after first match
-
-### or
-* Evaluates True if any parameter is true
-* Min parameters: 2. Max parameters: N
-* Casts parameters to Boolean for evaluation
-* Short-circuits after first True
-
-### startsWith
-* Evaluates true if left parameter string starts with right parameter
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to String for evaluation
-* Performs ordinal ignore-case comparison
-
-### xor
-* Evaluates True if exactly one parameter is True
-* Min parameters: 2. Max parameters: 2
-* Casts parameters to Boolean for evaluation
+::: moniker-end
 
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
-
-### What about string parsing and other operations?
-
-We might add these later. [Vote on user voice](https://visualstudio.uservoice.com/forums/330519-team-services)
 
 ### I've got a condition that runs even when build was cancelled. Does this affect a build that I cancelled in the queue?
 

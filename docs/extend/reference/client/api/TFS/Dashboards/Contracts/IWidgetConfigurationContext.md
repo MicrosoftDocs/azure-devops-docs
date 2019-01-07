@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: TFS/Dashboards/WidgetContracts IWidgetConfigurationContext API | Extensions for Visual Studio Team Services
+title: TFS/Dashboards/WidgetContracts IWidgetConfigurationContext API | Extensions for Azure DevOps Services
 description: Documentation for the IWidgetConfigurationContext contract.
 ms.assetid: 4BA1E4DC-AD0C-46A8-92F3-0BA6230EE308
 ms.manager: douge

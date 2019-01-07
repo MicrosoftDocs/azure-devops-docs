@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDefinitionSourceProvider API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildDefinitionSourceProvider API | Extensions for Azure DevOps Services
 ms.assetid: b27a8546-1b49-bad2-0f2d-6f241cdfe87c
 ms.prod: devops
 ms.technology: devops-ecosystem

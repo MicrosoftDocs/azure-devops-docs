@@ -8,7 +8,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/15/2017
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 # Add a report server
@@ -24,7 +25,7 @@ This is the first task in the four-task sequence to add reports to a team projec
 
 
 >[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS. If you're using VSTS, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
 
 
 

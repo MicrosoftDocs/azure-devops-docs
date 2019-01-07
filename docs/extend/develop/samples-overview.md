@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Samples Overview | Extensions for VSTS
+title: Samples Overview | Extensions for Azure DevOps Services
 description: Overview of the available extension samples, including a description, the link to the repo and the contributions they touch
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.topic: conceptual
@@ -12,7 +12,7 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# VSTS extension samples
+# Azure DevOps Services extension samples
 
 You can get started developing your extension by working from an sample. 
 The Microsoft samples listed below show the capabilities of the extension framework and how to 
@@ -25,8 +25,8 @@ number of contributions for each sample to increase understanding of the extensi
 | [Countdown Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.CountdownWidget) | [GitHub](https://github.com/ALM-Rangers/Countdown-Widget-Extension) | Dashboard Widget | Every team has important dates to remember. Make them visible for your team on your dashboard! |
 | [File Owner](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.FileOwner) | [GitHub](https://github.com/ALM-Rangers/File-Owner-Extension) | Context menu action (source explorer) | Allows users to see who owns a file from the Source Explorer |
 | [Folder Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.FolderManagement) | [GitHub](https://github.com/ALM-Rangers/VSO-Extension-FolderManagement) | Context menu action (code explorer tree) | Create a folder in your source repositories from the code explorer tree. No need to clone the repository or install extra tools |
-| Print Cards | [GitHub](https://github.com/ALM-Rangers/VSTS-Extension-PrintCards) | Toolbar action (Kanban board) | Print cards from your Kanban board for use on a physical board |
-| [Offline Test Execution](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution) | [GitHub](https://github.com/ALM-Rangers/Offline-Test-Execution-extension) | Test plan tab | Allows the tester to perform the test steps even if disconnected from Visual Studio Team Services (VSTS). It can be done using the exported Excel Spreadsheet. |
+| Print Cards | [GitHub](https://github.com/ALM-Rangers/Print-Cards-Extension) | Toolbar action (Kanban board) | Print cards from your Kanban board for use on a physical board |
+| [Offline Test Execution](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution) | [GitHub](https://github.com/ALM-Rangers/Offline-Test-Execution-extension) | Test plan tab | Allows the tester to perform the test steps even if disconnected from Azure DevOps Services. It can be done using the exported Excel Spreadsheet. |
 | [Release Management Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.utilitytasks) | [GitHub](https://github.com/openalm/Extension-UtilitiesPack) | Release Management tasks | Utility tasks for Release Management: Tokenizer, Powershell++, Shell++, Zip & Unzip, Powershell to rollback  |
 | [Roll-up Board](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) | [GitHub](https://github.com/ALM-Rangers/Roll-Up-Board-Widget-Extension) | Dashboard Widget | This widget shows the number of cards in each column of the Kanban board |
 | [Sample Data](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.SampleDataWidget) | [GitHub](https://github.com/ALM-Rangers/Sample-Data-Widget-Extension) | Dashboard Widget | Lets you create and remove sample data in your project. |
@@ -45,4 +45,4 @@ To get you started as quickly as possible, there is a [seed project](https://git
 that contains the files required to build an extension using TypeScript. To automate building, packaging and publishing the extension a grunt script is 
 added.
 
-If you are interested in a sample project that contains the majority of the contributions, see the [VSTS Sample Extensions](https://github.com/Microsoft/vsts-extension-samples) repository on GitHub.
+If you are interested in a sample project that contains the majority of the contributions, see the [Azure DevOps Services Sample Extensions](https://github.com/Microsoft/vsts-extension-samples) repository on GitHub.

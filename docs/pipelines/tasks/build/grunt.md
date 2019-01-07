@@ -1,6 +1,7 @@
 ---
 title: Grunt build and release task
-description: Grunt build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Grunt build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,12 +13,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Build: Grunt 
+# Grunt task
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/grunt.png) The JavaScript Task Runner
+Use this task in a build or release pipeline to run Grunt tasks using the JavaScript Task Runner.
 
 ## Demands
 
@@ -41,7 +41,7 @@ The build agent must have the following capability:
 </thead>
 <tr>
 <td>Grunt File Path</td>
-<td>Relative path from the repo root to the grunt script that you want to run. The default value is ```gruntfile.js```
+<td>Relative path from the repo root to the Grunt script that you want to run. The default value is ```gruntfile.js```
 </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The build agent must have the following capability:
 <tr>
 <td>Arguments</td>
 <td>
-<p>Additional arguments passed to grunt. See [Using the CLI](http://gruntjs.com/using-the-cli).</p><p>Tip: ```--gruntfile``` is not needed. This argument is handled by the Grunt file path argument shown above.</p>
+<p>Additional arguments passed to Grunt. See [Using the CLI](http://gruntjs.com/using-the-cli).</p><p>Tip: ```--gruntfile``` is not needed. This argument is handled by the Grunt file path argument shown above.</p>
 </td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ See [Sample Gruntfile](http://gruntjs.com/sample-gruntfile).
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -1,6 +1,6 @@
 ---
-title: Search your code in VSTS and Team Foundation Server
-description: Get started with Code Search in Microsoft VSTS and TFS across all your projects to debug and manage your codebases
+title: Search your code across your projects
+description: Get started with Code Search in Azure DevOps and TFS across all your projects to debug and manage your codebases
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: devops
 ms.technology: devops-collab
@@ -8,13 +8,13 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Search your code
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
+[!INCLUDE [version-header](_shared/version-header.md)]
 
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search
@@ -22,13 +22,26 @@ and easily drill down or widen your search
 ## Prepare
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in VSTS as an administrator.
-Non-administrative users can also go here to request the extension be added to VSTS. 
-For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
+to install the extension as an administrator.
+Non-administrative users can also go here to request the extension be added. 
+For more details, see [Install an extension](../../marketplace/install-extension.md#install-extension) in the Marketplace documentation.
 
 >Only users with Basic access can use Code Search.
 
-## Get searching
+## Start searching
+
+# [New navigation](#tab/new-nav)
+
+1. Open the **Azure Repos** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
+
+1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+
+   ![The Code Search textbox in the title bar](_img/code-search-get-started/title-bar-search-box-empty-new.png)    
+
+1. Enter a search string in the textbox, and press _Enter_ (or choose the 
+   ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
+
+# [Previous navigation](#tab/previous-nav)
 
 1. In the search textbox at the top right of the window, check that the text says
    _Search code_. The search text box may say _Search work items_. In this case, use the drop-down selector to change it.
@@ -37,12 +50,16 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 
    If you don't see the ![select search type](_img/_shared/search-select-type-icon.png)
    selector in the Search box, open the **Manage extensions** page 
-   and check that Code Search is installed.
+   and check that Code Search is installed ([see Administer Search](administration.md)).
 
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
 
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search.
+
+---
+
+## View the results
 
 1. The search page shows a list of the matching code files. The selected file has all
    instances of the search string highlighted (only the first 100 hits are highlighted). 
@@ -51,11 +68,21 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 
    If you see a list of work items, ensure that **Code** is selected in the top left.
 
+1. Sort the results as you need using the drop-down list of properties, or by relevance.
+
+   ![Sort drop-down list](_img/code-search-get-started/sort-order.png)    
+
+   > Open the search results in a new browser tab from either search box by
+   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   ![start search icon](_img/_shared/start-search-icon-new.png) icon.
+   In Google Chrome and Firefox press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   to the new browser tab.
+
 1. Try assembling more complex search strings using the operators and functions listed in the handy 
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list, and type the criteria value.
 
-   ![Search from VSTS title bar](_img/code-search-get-started/title-bar-search-functionlist.png)    
+   ![Search from title bar](_img/code-search-get-started/title-bar-search-functionlist.png)    
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -74,7 +101,7 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 
    * See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails). 
 
-1. Widen your search to all projects, or narrow it to specific areas and types of code,
+1. Widen your search to all projects, your entire organization, or narrow it to specific areas and types of code
    by selecting from the drop-down lists at the top of the page.
 
    ![Use drop-down lists to widen or narrow your search](_img/code-search-get-started/select-projects.png)
@@ -83,15 +110,13 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 
    ![Use tabs to view history and compare files](_img/code-search-get-started/compare-tab.png)
 
-   >Open the search results in a new browser tab from either search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](_img/_shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab.
-
 1. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
 
    ![Open the file in Code Explorer](_img/code-search-get-started/open-in-code-explorer.png)
+
+1. Quickly [search for work items](work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for work items or wiki containing the same search string](_img/code-search-get-started/open-workitem.png)
  
 ## Next step
 

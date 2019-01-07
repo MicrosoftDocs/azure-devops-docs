@@ -1,5 +1,6 @@
 ---
 title: Install RM server/client for Visual Studio
+ms.custom: seodec18
 description: Learn how you can install the Release Management server/client for Visual Studio 2015 and Team Foundation Server (TFS) 2015 
 ms.assetid: AEED8FFC-D902-4789-8FBA-A6DAD4F6D34B
 ms.prod: devops
@@ -20,17 +21,17 @@ monikerRange: '>= tfs-2013'
 
 Release Management provides a continuous deployment solution that makes release
 cycles repeatable, visible, and more efficient by automating deployments 
-through every environment from test to production. 
+through every environment from test to production.
 
 To get started, install Release Management Server. If you are going to use TFS, 
 you should already have it installed and ready to use. See 
 **[system requirements](install-release-management/system-requirements.md)** 
 for details of compatible versions. If you haven't set up TFS yet, 
-**[do that now](../../../../organizations/accounts/organization-management.md)**. 
+**[do that now](../../../../organizations/accounts/organization-management.md)**.
 You can use the same SQL Server instance for TFS and the 
 Release Management server (as we will in this guide) or you can use a 
 different SQL Server instance (or even 
-**[install a new instance](/tfs/server/install/sql-server/install-sql-server)**). 
+**[install a new instance](/tfs/server/install/sql-server/install-sql-server)**).
 Next, install Release Management Client. After the client and the server are set up, 
 you'll set up the machines to deploy your app for your releases. You can 
 install deployment agents on each machine. Or, you can use Windows PowerShell, 
@@ -56,7 +57,7 @@ ready to manage releases.
   Management server, use the same SQL Server instance that you used before for 
   the database server.
 
-* Consider your Release Management topology, especially if you will use TFS. 
+* Consider your Release Management topology, especially if you will use TFS.
   You should install the server separately from 
   the application tier of the TFS server (as we will) although nothing prevents 
   you from installing the Release Management server together with TFS. If you 
@@ -68,19 +69,19 @@ ready to manage releases.
 * Download Release Management Server, its client, and the deployment agent from
   [VisualStudio.com](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)
   and then 
-  **[install the server and client](install-release-management/install-server-and-client.md)**. 
+  **[install the server and client](install-release-management/install-server-and-client.md)**.
 
   ***Important:*** _This is a 90-day trial version of Release Management. For information about obtaining 
   a non-trial version, see 
   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
   or 
-  [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs). 
+  [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
   If you are an MSDN subscriber, you can download a non-trial version from the 
   [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
 
 * On computers that will make up the environments where you will deploy 
   your release, 
-  **[install the deployment agent](install-release-management/install-deployment-agent.md)**. 
+  **[install the deployment agent](install-release-management/install-deployment-agent.md)**.
   These computers can be test, QA, or production environments.
 
 * In the Release Management client, you can 

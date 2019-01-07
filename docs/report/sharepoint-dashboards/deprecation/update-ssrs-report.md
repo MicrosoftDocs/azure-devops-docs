@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/28/2017
 ms.topic: 
 ---
@@ -22,7 +23,7 @@ Displaying SSRS Reports on a SharePoint will continue to work, even after disabl
 
 The TFS site used the standard [SharePoint Page Viewer web part](https://support.office.com/article/Display-a-Web-page-on-a-SharePoint-page-by-adding-the-Page-Viewer-Web-Part-7F61FEEC-9B3D-4805-A960-07636BA59527) with a URL to the SSRS Report.
 
-The TFS Extension for SharePoint provided a URL re-director called *tfsRedirect.aspx* which would look up the location of the SQL Services Reporting Server and redirect to the URL to display the report. If you edited the properites of the Page Viewer web part hosting the SSRS report, you would see a URL that looks something like this:
+The TFS Extension for SharePoint provided a URL re-director called *tfsRedirect.aspx* which would look up the location of the SQL Services Reporting Server and redirect to the URL to display the report. If you edited the properties of the Page Viewer web part hosting the SSRS report, you would see a URL that looks something like this:
 
 ```
 PATHTOCURRENTSITE/_layouts/TfsRedirect.aspx?tf:Type=Report&tf:ReportName=REPORTNAME&tf:ShowToolbar=0&Width=381pt&Height=180pt
@@ -52,4 +53,4 @@ http://REPORTSERVER/ReportServer?%2fTfsReports%2fCOLLECTIONNAME%2fPROJECTNAME%2f
 1. Save your changes to the PageViewer web part.
 
 ## Related articles
-* [SSRS Report URL Access Parameter Reference](https://docs.microsoft.com/sql/reporting-services/url-access-parameter-reference)
+* [SSRS Report URL Access Parameter Reference](/sql/reporting-services/url-access-parameter-reference)

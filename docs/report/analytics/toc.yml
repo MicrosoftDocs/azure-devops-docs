@@ -1,12 +1,13 @@
-- name: "Analytics (VSTS)" 
+- name: Analytics Service
   href: index.md
 - name: Overview
+  expanded: true
   items:
   - name: What is Analytics?
     href: what-is-analytics.md
   - name: What are Analytics views?
     href: what-are-analytics-views.md
-  - name: VSTS/TFS Reporting roadmap
+  - name: Reporting roadmap
     href: reporting-roadmap.md
 - name: Quickstarts
   items:
@@ -19,19 +20,19 @@
   - name: Manage Analytics views
     href: ../analytics/analytics-views-manage.md
   - name: Configure burndown or burnup
-    href: ../dashboards/configure-burndown-burnup-widgets.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Configure cumulative flow 
-    href: ../dashboards/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/cumulative-flow.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Configure lead/cycle time
-    href: ../dashboards/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/cycle-time-and-lead-time.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Configure velocity
-    href: ../dashboards/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/team-velocity.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Data available
     href: data-available-in-analytics.md
   - name: Analytics widgets
-    href: analytics-widgets-vsts.md
+    href: analytics-widgets.md
   - name: Default Analytics views
     href: analytics-default-views.md
   - name: Filters applied to historical data
@@ -40,10 +41,14 @@
     href: performance-latency.md
 - name: How-to Guides
   items:
+  - name: Install the Analytics Marketplace extension 
+    href: analytics-extension.md
   - name: Set permissions (Security) 
     href: analytics-security.md
   - name: Connect using Excel
     href: access-analytics-excel.md
+  - name: Analyze test results
+    href: ../../pipelines/test/test-analytics.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view
@@ -51,19 +56,19 @@
 - name: Reference
   items:
   - name: Work item field index
-    href: ../../boards/work-items/guidance/work-item-field.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Analytics OData v4 endpoint
-    href: ../extend-analytics/data-model-analytics-service.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../extend-analytics/data-model-analytics-service.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: API versioning
-    href: ../extend-analytics/odata-api-version.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../extend-analytics/odata-api-version.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Dashboards
     href: ../dashboards/index.md
-  - name: "Power BI (VSTS)"
+  - name: "Power BI Overview"
     href: ../powerbi/index.md
   - name: Extend Analytics with OData
     href: ../extend-analytics/index.md
-  - name: Work Items
+  - name: Work items
     href: ../../boards/work-items/index.md
 

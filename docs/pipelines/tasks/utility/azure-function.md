@@ -1,20 +1,23 @@
 ---
-title: Azure function task for Microsoft VSTS and TFS 
-description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in VSTS and TFS
+title: Invoke Azure Function task 
+description: Invoke a HTTP triggered function in an Azure function app and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Invoke Azure function
+# Invoke Azure Function task
 
-![icon](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+Use this task in a build or release pipeline to invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -22,9 +25,9 @@ monikerRange: '>= tfs-2017'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.md)]
 ::: moniker-end
@@ -47,4 +50,4 @@ Succeeds if the function returns success and the response body parsing is succes
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
+Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunction).

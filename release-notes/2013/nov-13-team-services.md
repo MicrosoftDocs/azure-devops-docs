@@ -2,7 +2,7 @@
 title: Visual Studio Online updates - Nov 13
 description: VSTS release notes for November 13 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 18bb7318-c598-49ff-bbcc-ed92e2e419a0
 ms.date: 06/01/2016
@@ -110,7 +110,7 @@ Without Application Insights, “what’s next” decisions are often guesswork.
 
 If you are already Visual Studio Online user and want to participate in the limited preview, request an invitation code via the new Application Insights tile on your Visual Studio Online home page. If you aren’t yet a Visual Studio Online user, you can quickly sign up [here](http://go.microsoft.com/fwlink/?LinkId=307137).
 
-As always we’re eager to hear any feedback on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads) and [Twitter](http://twitter.com/search?q=%23tfservice).
+As always we’re eager to hear any feedback on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads) and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

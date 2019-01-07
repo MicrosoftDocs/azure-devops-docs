@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestIterationDetailsModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestIterationDetailsModel API | Extensions for Azure DevOps Services
 ms.assetid: ac6b14d4-e067-9dd5-1f46-6f8803401a59
 ms.prod: devops
 ms.technology: devops-ecosystem

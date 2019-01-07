@@ -1,5 +1,5 @@
 ---
-title: Configure work item form extensions in TFS | Extensions for VSTS
+title: Configure work item form extensions in TFS | Extensions for Azure DevOps Services
 description: Describes how to add and configure work item form extensions in TFS.
 ms.prod: devops
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
@@ -12,11 +12,11 @@ author: elbatk
 ms.date: 10/10/2017
 ---
 
-<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not VSTS</blockquote>  
+<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not Azure DevOps Services</blockquote>  
 
 # Add extensions in work item form via work item type definition xml
 
-A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walkthrough, you will add the page, group and control contibutions to the layout.  [Read more information on WebLayout XML](/vsts/reference/xml/weblayout-xml-elements). In this example, we will add the control to the Agile "User Story" work item type.
+A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walkthrough, you will add the page, group and control contributions to the layout.  [Read more information on WebLayout XML](/azure/devops/reference/xml/weblayout-xml-elements). In this example, we will add the control to the Agile "User Story" work item type.
 
 **Step 1:**  Install work item form extensions in TFS.
 
@@ -116,12 +116,12 @@ Note that if a control contribution has any required input defined, users must g
             ...
                 <ControlContribution Label="Priority" Id="example.color-control-dev.color-control-contribution">
                     <Inputs>
-                        <Input Id="FieldName" Value="Microsoft.VSTS.Common.Priority" />
+                        <Input Id="FieldName" Value="Microsoft.Azure DevOps Services.Common.Priority" />
                         <Input Id="Colors" Value="red;green" />
                     </Inputs>
                 </ControlContribution>
 
-                <Control Label="Risk" Type="FieldControl" FieldName="Microsoft.VSTS.Common.Risk" />
+                <Control Label="Risk" Type="FieldControl" FieldName="Microsoft.Azure DevOps Services.Common.Risk" />
 ```
 
 

@@ -1,6 +1,7 @@
 ---
 title: Archived release notes for Microsoft Release Management
-description: Archived release for VSTS and TFS
+ms.custom: seodec18
+description: Archived release for Azure Pipelines and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,17 +9,17 @@ ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2013'
 ---
 
 # Archived release notes for Microsoft Release Management
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 **NOTE**: Release Management has now been combined with the Build features
-of VSTS and Team Foundation Server (TFS) in the new 
-**Build &amp; Release** hub. For details of new features and changes, see
+of Azure Pipelines and Team Foundation Server (TFS) in the new 
+**Pipelines** hub. For details of new features and changes, see
 [Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
@@ -30,7 +31,7 @@ The following changes, categorized by release date, were added to Release Manage
  - [November 16, 2016 Update](#update-nov16)
  - [Mar 3, 2016 Update](#update-mar3-16)
  - [Feb 12, 2016 Update](#update-feb12-16)
-* **VSTS**
+* **Azure Pipelines**
  - [November 23, 2016 Update](#update-nov23-16)
  - [November 16, 2016 Update](#update-nov16)
  - [October 12, 2016 Update](#update-oct12-16)
@@ -52,7 +53,7 @@ The following changes, categorized by release date, were added to Release Manage
  - [September 4, 2015 Update](#update-sep4-15)
 
 <a name="update-nov23-16"></a>
-### November 23, 2016 Update (VSTS)
+### November 23, 2016 Update (Azure Pipelines)
 
 This update has the following new features:
 
@@ -73,7 +74,7 @@ The maximum number of concurrent builds you can run and releases
 you can deploy at the same time is limited only by the number
 of pipelines you have.
 
-Your VSTS account includes these free amounts:
+Your organization includes these free amounts:
 
 * One free Hosted Pipeline: With this free hosted pipeline, you get
   four hours (240 minutes) per month and a maximum duration of 30
@@ -85,13 +86,13 @@ Your VSTS account includes these free amounts:
 * One free Private Pipeline: With this free private pipeline, run
   unlimited concurrent builds or deploy one release at a time in
   Team Foundation Server 2017, or run one build or deploy one release
-  at a time in VSTS on agent software from Microsoft.
+  at a time in Azure Pipelines on agent software from Microsoft.
   Private agents are now free and unlimited. In TFS, each Visual
   Studio Enterprise subscriber also contributes a private pipeline
   that you can use. You can also buy more private pipelines.
 
 For more information, see
-[Concurrent build and release pipelines in VSTS](../../licensing/concurrent-jobs-vsts.md)
+[Concurrent build and release pipelines in Azure Pipelines](../../licensing/concurrent-jobs.md)
 and [Concurrent release pipelines in TFS](../../licensing/concurrent-pipelines-tfs.md).
 
 If you previously bought private agents in the Azure portal, they'll
@@ -111,7 +112,7 @@ To make continuous integration and deployment (CI/CD) of Docker apps a lot simpl
 * Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/)
   and included [new continuous delivery tools](../apps/aspnet/aspnetcore-docker-to-azure.md)
   for ASP.NET Core Preview apps. You can use these tools to configure a
-  CI/CD process quickly in VSTS. Any ASP.NET Core project with
+  CI/CD pipeline quickly in Azure Pipelines. Any ASP.NET Core project with
   Docker support enabled can be set up to run an automated build and
   deployment to Azure Container Service with every Git push.
 
@@ -126,7 +127,7 @@ The agents in the hosted Linux pool run on an Ubuntu Linux host inside the
 This container includes all the standard Java, Node, Docker and .NET Core tooling.
 When we start the container we map in the Docker socket from the host VM and the
 working folder from /opt/vsts/work. This enables you to create or spawn other
-Docker containers as part of your build or release process using either a script or the
+Docker containers as part of your build or release pipeline using either a script or the
 [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)
 in the Visual Studio Marketplace.
 
@@ -174,27 +175,27 @@ current project. Now, you can now link build artifacts from another project
 as well. While linking an artifact, the project drop down will list all
 the projects in the account.
 
-![Build artifacts dialog](_img\rm-archived\release-notes-29.png)
+![Build artifacts dialog](_img/rm-archived/release-notes-29.png)
 
 <a name="update-nov16"></a>
-### November 16, 2016 Update (VSTS, TFS 2017)
+### November 16, 2016 Update (Azure Pipelines, TFS 2017)
 
-Today we're announcing TFS 2017, which includes all the Release Management features that you currently get on VSTS. We're introducing a pricing model based on concurrent pipelines for Release Management in TFS 2017.
+Today we're announcing TFS 2017, which includes all the Release Management features that you currently get on Azure Pipelines. We're introducing a pricing model based on concurrent pipelines for Release Management in TFS 2017.
 
-We're also announcing general availability of Release Management in VSTS. Also, later this month, we're moving to a pricing model based on concurrent pipelines for both Team Foundation (TFBuild) and Release Management in VSTS. (Previously you paid for agents.)
+We're also announcing general availability of Release Management in Azure Pipelines. Also, later this month, we're moving to a pricing model based on concurrent pipelines for both Team Foundation (TFBuild) and Release Management in Azure Pipelines. (Previously you paid for agents.)
 
-**Release Management users are free:** Your team members no longer need subscriptions to author definitions. VSTS users (with [basic access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs)) and users with a TFS Client Access License (CAL) can author releases for no additional charge. All types of users (including stakeholders) can approve releases for free.
+**Release Management users are free:** Your team members no longer need subscriptions to author definitions. Azure Pipelines users (with [basic access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs)) and users with a TFS Client Access License (CAL) can author releases for no additional charge. All types of users (including stakeholders) can approve releases for free.
 
-**No charge for private agents:** [Private agents](../../agents/agents.md) are now free. In VSTS, you used to have to license each private agent after the first. Now you can run deployments concurrently for no additional charge.
+**No charge for private agents:** [Private agents](../../agents/agents.md) are now free. In Azure Pipelines, you used to have to license each private agent after the first. Now you can run deployments concurrently for no additional charge.
 
-**Concurrent pipelines:** For each release process that you want to run concurrently, you need a concurrent pipeline. Some concurrent pipelines are included. If you need more, you can add more in a few ways.
+**Concurrent pipelines:** For each release pipeline that you want to run concurrently, you need a concurrent pipeline. Some concurrent pipelines are included. If you need more, you can add more in a few ways.
 
 [Concurrent pipelines for your releases in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md)
 
-[Concurrent pipelines for your builds and releases in VSTS](../../licensing/concurrent-jobs-vsts.md)
+[Concurrent pipelines for your builds and releases in Azure Pipelines](../../licensing/concurrent-jobs.md)
 
 <a name="update-oct12-16"></a>
-### October 12, 2016 Update (VSTS)
+### October 12, 2016 Update (Azure Pipelines)
 
 This update has the following new features:
 
@@ -234,7 +235,7 @@ resources that are not in your template. By default,
 
 ![Azure Resource Group improvements](_img/rm-archived/release-notes-27.png)
 
-See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
+See [Azure Resource Group Deployment Task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
 
 <a name="oct12-clitask"></a>
 **Azure CLI task**
@@ -253,20 +254,20 @@ See [Deploy: Azure CLI](../../tasks/deploy/azure-cli.md).
 **Simplified Azure endpoint creation**
 
 In an earlier sprint, we made it easier to create a new
-Azure Resource Manager service connection from VSTS.
+Azure Resource Manager service connection from Azure Pipelines.
 That experience only worked in accounts that are backed by
 Azure Active Directory. In this deployment, we are bringing
 the same simplified experience for all the other accounts
-not backed by an AAD. So, if you have a Microsoft account
+not backed by an Azure AD. So, if you have a Microsoft account
 and an Azure subscription that you would like to deploy to
-from VSTS, you can create an Azure Resource Manager
+from Azure Pipelines, you can create an Azure Resource Manager
 endpoint without needing to run tedious PowerShell scripts
 or follow the steps in a blog.
 
 See [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
 <a name="update-sep21-16"></a>
-### September 21, 2016 Update (VSTS)
+### September 21, 2016 Update (Azure Pipelines)
 
 **Deployment Status widget**
 
@@ -278,7 +279,7 @@ across multiple environments for a recent set of builds
 from a build pipeline.
 
 <a name="update-sep2-16"></a>
-### September 2, 2016 Update (VSTS)
+### September 2, 2016 Update (Azure Pipelines)
 
 This update has the following new features:
 
@@ -292,7 +293,7 @@ This update has the following new features:
 
 Jenkins connections can now be configured to accept
 untrusted SSL certificates of Jenkins servers. This is
-useful when VSTS service hooks, or build and
+useful when Azure Pipelines service hooks, or build and
 release processes, integrate with Jenkins. For example,
 if a Jenkins server is configured to use SSL with a
 self-signed certificate or a certificate that cannot be
@@ -303,7 +304,7 @@ lets administrators deliberately trust the certificate.
 
 For more information about Jenkins integration
 capabilities, see
-[VSTS Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 <a name="sep2-manualinter"></a>
 **Deployment manual intervention**
@@ -337,7 +338,7 @@ The scripts can be provided as a file, or inline within the task.
 ![Using a script with an Azure SQL Database Deployment task](_img/rm-archived/release-notes-25.png)
 
 <a name="update-jul28-16"></a>
-### July 28, 2016 Update (VSTS)
+### July 28, 2016 Update (Azure Pipelines)
 
 This update has the following new features:
 
@@ -380,7 +381,7 @@ For more details, see [Configure agent pools and queues](../../agents/pools-queu
 Two new features make it easier to deploy applications to Azure:
 
 * **Simplified Service Principal Authentication configuration**.
-  If the VSTS or TFS instance you are using is backed by Azure Active
+  If the Azure Pipelines or TFS instance you are using is backed by Azure Active
   Directory authentication, a simplified version of the service connection dialog
   allows you to select an existing Azure subscription. This automatically
   creates a new Azure service principal that is assigned the **Contributor** role
@@ -455,7 +456,7 @@ release, you see a list of commits and work items that will be rolled back. You 
 to make sure that the automation scripts for the deployment can handle the rollback scenario.
 
 <a name="update-jun24-16"></a>
-### June 24, 2016 Update (VSTS)
+### June 24, 2016 Update (Azure Pipelines)
 
 This update has the following new features:
 
@@ -475,7 +476,7 @@ This update has the following new features:
 
 By popular demand, we have incorporated the ability to
 clone, export, and import release pipelines within the Release hub
-in VSTS, without requiring installation of an extension.
+in Azure Pipelines, without requiring installation of an extension.
 If you are using Team Foundation Server 2015 Update 2 or higher, you
 can download and install **[this extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-import-export)**
 from Visual Studio Marketplace to get the same functionality.
@@ -486,7 +487,7 @@ from Visual Studio Marketplace to get the same functionality.
 **Test results displayed in the release summary**
 
 In the release summary page, we have enabled a contribution point for an
-external service to show environment-specific information. In VSTS,
+external service to show environment-specific information. In Azure Pipelines,
 this functionality is used to display a summary of test results when tests
 are run as part of a release environment.
 
@@ -496,7 +497,7 @@ are run as part of a release environment.
 **Pass OAuth tokens to scripts**
 
 If you need to run a custom PowerShell script that invokes the REST APIs
-on VSTS, perhaps to create a work item or query a build for information,
+on Azure Pipelines, perhaps to create a work item or query a build for information,
 you need to pass the OAuth token in the script. A new option when you configure
 an environment allows scripts run as tasks in the environment to access the
 current OAuth token.
@@ -555,7 +556,7 @@ For more details, see [Environment deployment triggers](../../release/triggers.m
 **Consume artifacts stored in GitHub directly**
 
 Sometimes you may want to consume artifacts stored in a version control system
-directly, without passing them through a build process, as described in
+directly, without passing them through a build pipeline, as described in
 **[this topic](../../release/artifacts.md#tfvcsource)**.
 You can now do the same if your code in stored in a GitHub repository.
 
@@ -567,9 +568,9 @@ For more details, see [TFVC, Git, and GitHub sources](../../release/artifacts.md
 **Jenkins plug-in for Release Management**
 
 Users of Jenkins CI can now create releases more easily by using the
-**[VS VSTS Continuous Deployment Plugin](https://wiki.jenkins-ci.org/display/JENKINS/VS+Team+Services+Continuous+Deployment+Plugin)**,
+**[VS Azure Pipelines Continuous Deployment Plugin](https://wiki.jenkins-ci.org/display/JENKINS/VS+Team+Services+Continuous+Deployment+Plugin)**,
 available from the Jenkins website. This plugin triggers a release in
-TFS or VSTS when a build completes successfully. Use it to
+TFS or Azure Pipelines when a build completes successfully. Use it to
 add post-build tasks right into Jenkins CI projects to create a new release.
 This, along with the ability for Release Management to understand and download
 Jenkins artifacts, provides great end-to-end integration between these two tools.
@@ -592,13 +593,13 @@ actions. To upload a new file, use the following agent command in your script:
 The **[IIS Web App deployment using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)**
 extension available from Visual Studio Marketplace now supports
 deployment of database DACPACs. Use this capability to deploy
-IIS web apps and databases from VSTS and TFS.
+IIS web apps and databases from Azure Pipelines and TFS.
 
 <a name="jun24-webappdeploy"></a>
 **Web app deployment using ARM**
 
 A new version of the **Azure Web App Deployment** task is available, called
-**[AzureRM Web App Deployment](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
+**[AzureRM Web App Deployment](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
 It uses MSDeploy and an Azure Resource Manager service connection connection.
 Use this task to deploy Azure Web Jobs and Azure API apps, in addition to
 ASP.NET 4, Node, and Python based web apps. The task also supports common
@@ -609,7 +610,7 @@ configuration transformations, may appear in forthcoming versions.
 ![Using the AzureRM Web App Deployment task in a release pipeline](_img/rm-archived/release-notes-22.png)
 
 <a name="update-may23-16"></a>
-### May 23, 2016 Update (VSTS)
+### May 23, 2016 Update (Azure Pipelines)
 
 This update has the following new features:
 
@@ -621,14 +622,14 @@ This update has the following new features:
 <a name="may23-docker"></a>
 **Docker integration**
 
-Take advantage of the VSTS cloud based build
+Take advantage of the Azure Pipelines cloud based build
 capabilities to build your Docker images, and upload
 them to Docker Hub as part of your continuous integration flow.
 Then deploy those images to a number of Docker hosts as
 part of Release Management. The [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)
 in VisualStudio Marketplace adds all the service connection
 types and tasks necessary for you to work with Docker
-from VSTS.
+from Azure Pipelines.
 
 <a name="may23-teamcity"></a>
 **TeamCity integration**
@@ -653,7 +654,7 @@ such as Slack to receive such notifications.
 **Release Management client SDK**
 
 In the last update, we published the
-[Release Management REST APIs](https://visualstudio.microsoft.com/integrate/api/rm/overview).
+[Release Management REST APIs](/azure/devops/integrate/).
 In this update, we are publishing a C# client SDK
 to help you easily integrate your applications with
 Release Management. The SDK is available as a
@@ -662,7 +663,7 @@ Example usage for this SDK can be found
 [here](http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
 
 <a name="update-apr26-16"></a>
-### Apr 26, 2016 Update (VSTS)
+### Apr 26, 2016 Update (Azure Pipelines)
 
 This update provides several major improvements to Release Management:
 
@@ -727,7 +728,7 @@ You can use the REST APIs for the Release Management service to
 create release pipelines and releases, and manage many aspects of
 deploying a release. Most of these APIs also work with the
 on-premises releases of Release Management in TFS 2015 Update 2
-(the differences between TFS and VSTS versions are indicated
+(the differences between TFS and Azure Pipelines versions are indicated
 in the documentation). You'll find some basic examples that use the APIs in
 [this blog post](http://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
 
@@ -773,21 +774,21 @@ Replace `[variable-name]` with one of the following:
 * TYPE
 
 <a name="update-apr8-16"></a>
-### Apr 8, 2016 Update (VSTS)
+### Apr 8, 2016 Update (Azure Pipelines)
 
-**Consume TFS build artifacts in VSTS Release Management**
+**Consume TFS build artifacts in Azure Pipelines Release Management**
 
 A new extension makes it easy to deploy on-premises
-TFS builds with VSTS Release Management,
+TFS builds with Azure Pipelines Release Management,
 even if the TFS machine is not reachable directly
-from VSTS. The extension adds a TFS
+from Azure Pipelines. The extension adds a TFS
 service connection connection, and you use a new type of
 artifact named **Team Build (external)** through
 which you deploy builds from the TFS machine.
 
 You must install a non-hosted agent on a machine
 that is able to connect to your TFS machine and
-configure this agent in VSTS. The extension
+configure this agent in Azure Pipelines. The extension
 does not yet work for deploying XAML builds.
 
 For more information, see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
@@ -815,7 +816,7 @@ this video demonstrates.
 For more details, see [Parallel forked and joined deployments](../../release/triggers.md#parallel-forked-and-joined-deployments)
 
 <a name="update-mar15-16"></a>
-### Mar 15, 2016 Update (VSTS)
+### Mar 15, 2016 Update (Azure Pipelines)
 
 **Inline scripting with the PowerShell task**
 
@@ -862,7 +863,7 @@ in this guidance are now available within Team
 Foundation Server 2015 Update 2 Release Candidate 2.
 
 <a name="update-feb24-16"></a>
-### Feb 24, 2016 Update (VSTS)
+### Feb 24, 2016 Update (Azure Pipelines)
 
 This update provides several major improvements to Release Management:
 
@@ -890,7 +891,7 @@ analyze their trends.
 
 With the new [VMware extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
 published to Visual Studio Marketplace, you can
-connect to a VMware vCenter server from VSTS
+connect to a VMware vCenter server from Azure Pipelines
 or Team Foundation Server and create, delete, or
 apply snapshots to virtual machines managed in
 vCenter.
@@ -1009,7 +1010,7 @@ All the features of Release Management described in this guidance
 are now available within Team Foundation Server 2015 Update 2 Release Candidate 1.
 
 <a name="update-feb11-16"></a>
-### Feb 11, 2016 Update (VSTS)
+### Feb 11, 2016 Update (Azure Pipelines)
 
 This update provides several major improvements to
 Release Management:
@@ -1101,7 +1102,7 @@ contents of the file you specify:
 `Write-Verbose ##vso[Task.UploadSummary] Attachments.md`
 
 <a name="update-dec1-15"></a>
-### December 1, 2015 Update (VSTS)
+### December 1, 2015 Update (Azure Pipelines)
 
 * **More tasks**. Until now, only a subset of tasks that were available in Build were available in Release Management.
 With this update, the set of tasks that you can use in Build and Release Management are exactly the same.
@@ -1114,12 +1115,12 @@ dynamically provision virtual machines, and run remote PowerShell scripts using 
 Tie the output of the first task to the input list of machines in the second task.
 
 <a name="update-nov18-15"></a>
-### November 18, 2015 Update (VSTS)
+### November 18, 2015 Update (Azure Pipelines)
 
 * **Public preview**. Release management service is open to everyone as part of the public preview program.
 
 <a name="update-nov3-15"></a>
-### November 03, 2015 Update (VSTS)
+### November 03, 2015 Update (Azure Pipelines)
 
 * **Work items and commits in a release**. You can now see the new work items and
   commits that went into a release when compared with the previous release. This
@@ -1133,7 +1134,7 @@ Tie the output of the first task to the input list of machines in the second tas
   notified of all deployments, or only failed deployments.
 
 <a name="update-oct19-15"></a>
-### October 19, 2015 Update (VSTS)
+### October 19, 2015 Update (Azure Pipelines)
 
 * **Hosted agents support**. You can now use hosted agent pool for running
   deployment tasks in your releases. To start using the hosted agent, select
@@ -1150,19 +1151,19 @@ Tie the output of the first task to the input list of machines in the second tas
   ![Branch information is shown in release status](_img/rm-archived/release-notes-02.png)
 
 <a name="update-sep21-15"></a>
-### September 21, 2015 Update (VSTS)
+### September 21, 2015 Update (Azure Pipelines)
 
 * **Live logs**. Live view in your browser of deployment logs streamed from the automation agent.
 
 * **Release name configuration**. Specify the name and sequential numbering format for releases by
-  entering a format mask. 
+  entering a format mask.
 
 * **Deploy from Build hub**. Create a release and deploy it right from
   the Build hub. Simply right click on a completed build, and select the
   **Release** menu.
 
 * **Integration with TFS on-premises builds**. Now you can start using
-  Release Management service in VSTS, even when you have been using
+  Release Management service in Azure Pipelines, even when you have been using
   an on-premises TFS server for your builds. See
   [On-premises TFS sources](../../release/artifacts.md#onpremtfssource)
   for more details.
@@ -1171,7 +1172,7 @@ Tie the output of the first task to the input list of machines in the second tas
   and DACPACs with ease using these tasks.
 
 <a name="update-sep4-15"></a>
-### September 4, 2015 Update (VSTS)
+### September 4, 2015 Update (Azure Pipelines)
 
  * **Consume Build artifacts more easily**. You can now easily consume multiple
   artifacts published within a Team Build from RM. Linking a build

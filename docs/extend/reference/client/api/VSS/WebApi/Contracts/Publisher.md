@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts Publisher API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts Publisher API | Extensions for Azure DevOps Services
 ms.assetid: cc78e4fe-6f40-2719-de7e-4aa4022d62dd
 ms.prod: devops
 ms.technology: devops-ecosystem

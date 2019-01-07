@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '<= azdevserver-2019'
 ms.date: 03/20/2018
 ---
 
@@ -22,7 +22,7 @@ ms.date: 03/20/2018
 You can change how you track your team's progress by creating and customizing objects that track work items. By using the **witadmin** command-line tool, you can create, delete, import, and export objects such as categories, global lists, global workflow, types of links, and types of work items. You can also permanently delete types of work item types, and you can delete, list, or change the attributes of fields in work item.  
   
 > [!NOTE]   
-> The **witadmin** command-line tool is not supported on Visual Studio Team Services. Instead, you use [inherited processes](../../organizations/settings/work/manage-process.md). 
+> The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../../organizations/settings/work/manage-process.md). 
 
 
 As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  

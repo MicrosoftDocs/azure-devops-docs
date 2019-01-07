@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts TfvcLabelRef API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts TfvcLabelRef API | Extensions for Azure DevOps Services
 ms.assetid: 20ca99f7-e0bb-2ec8-7071-fedcb4b5f2a4
 ms.prod: devops
 ms.technology: devops-ecosystem

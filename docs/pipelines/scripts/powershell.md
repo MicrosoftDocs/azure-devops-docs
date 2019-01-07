@@ -1,6 +1,7 @@
 ---
-title: Use a PowerShell script to customize your build process
-description: Learn how you can use a script to customize the build process in your workflow by using Team Foundation Server (TFS) or VSTS.
+title: Use a PowerShell script to customize your build pipeline
+ms.custom: seodec18
+description: Learn how you can use a script to customize the build pipeline in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,15 +13,15 @@ ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Use a PowerShell script to customize your build process
+# Use a PowerShell script to customize your build pipeline
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build process.
+When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
 
 You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
 
@@ -40,14 +41,14 @@ You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.
 
 For example, to version to your assemblies, copy and upload this script to your project:
 
-```powershell
+```ps
 ##-----------------------------------------------------------------------
 ## <copyright file="ApplyVersionToAssemblies.ps1">(c) Microsoft Corporation. This source is subject to the Microsoft Permissive License. See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx. All other rights reserved.</copyright>
 ##-----------------------------------------------------------------------
-# Look for a 0.0.0.0 pattern in the build number. 
+# Look for a 0.0.0.0 pattern in the build number.
 # If found use it to version the assemblies.
 #
-# For example, if the 'Build number format' build process parameter 
+# For example, if the 'Build number format' build pipeline parameter 
 # $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 # then your build numbers come out like this:
 # "Build HelloWorld_2013.07.19.1"
@@ -149,11 +150,11 @@ $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 <a name="oauth"></a>
 ## Use the OAuth token to access the REST API
 
-To enable your script to use the build process OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
+To enable your script to use the build pipeline OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
 
-After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [VSTS REST API](../../integrate/index.md). For example:
+After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
 
-```powershell
+```ps
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
 Write-Host "URL: $url"
 $pipeline = Invoke-RestMethod -Uri $url -Headers @{

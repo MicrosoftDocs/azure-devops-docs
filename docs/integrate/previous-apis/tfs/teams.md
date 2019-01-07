@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Teams | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with teams programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Teams | REST API Reference for Team Foundation Server
+description: Work with teams programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 5DF98D4C-7E59-4C44-B495-D664AC2AC71B
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Teams
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -28,14 +31,43 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams?api-vers
 | Parameter  | Type    | Default | Notes
 |:-----------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string  |         | Name or ID of the project.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | $top       | integer | 100     | Maximum number of teams to return.
 | $skip      | integer | 0       | Number of teams to skip.
 
-[!code-REST [GET__projects__projectId__teams_json](./_data/teams/GET__projects__projectId__teams.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams?api-version=2.2
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "id": "564e8204-a90b-4432-883b-d4363c6125ca",
+      "name": "Quality assurance",
+      "url": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca",
+      "description": "Testing staff",
+      "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/564e8204-a90b-4432-883b-d4363c6125ca"
+    },
+    {
+      "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
+      "name": "Fabrikam-Fiber-TFVC Team",
+      "url": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd",
+      "description": "The default project team.",
+      "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/66df9be7-3586-467b-9c5f-425b29afedfd"
+    }
+  ],
+  "count": 2
+}
+```
+
 
 #### Sample code
 * [C# (ListOrderedTeams method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/TeamsSample.cs#L13)
@@ -44,7 +76,29 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams?api-vers
 <a id="GetTeamsPageAtATime"></a>
 ### A page at a time
 
-[!code-REST [GET__projects__projectId__teams__top-_top___skip-_skip__json](./_data/teams/GET__projects__projectId__teams__top-_top___skip-_skip_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams?$top=1&$skip=1&api-version=2.2
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
+      "name": "Fabrikam-Fiber-TFVC Team",
+      "url": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd",
+      "description": "The default project team.",
+      "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/66df9be7-3586-467b-9c5f-425b29afedfd"
+    }
+  ],
+  "count": 1
+}
+```
+
 
 ## Get a team
 <a id="GetTeam"></a>
@@ -56,14 +110,31 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}?a
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 
-[!code-REST [GET__projects__projectId__teams__teamId__json](./_data/teams/GET__projects__projectId__teams__teamId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca?api-version=2.2
+```
+
+#### Sample response
+
+```json
+{
+  "id": "564e8204-a90b-4432-883b-d4363c6125ca",
+  "name": "Quality assurance",
+  "url": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca",
+  "description": "Testing staff",
+  "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/564e8204-a90b-4432-883b-d4363c6125ca"
+}
+```
+
 
 #### Sample code
 
@@ -79,7 +150,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}/m
 | Parameter  | Type     | Default | Notes
 |:-----------|:---------|:--------|:-----------------------------------------------------
 | URL
-| instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   |         | Name or ID of the project.
 | team       | string   |         | Name or ID of the team. 
 | Query
@@ -87,7 +158,43 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}/m
 | $top       | integer  | `100`   | Maximum number of teams to return.
 | $skip      | integer  | `0`     | Number of teams to skip.
 
-[!code-REST [GET__projects__projectId__teams__teamId__members__json](./_data/teams/GET__projects__projectId__teams__teamId__members_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/564e8204-a90b-4432-883b-d4363c6125ca/members/?api-version=2.2
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "id": "3b5f0c34-4aec-4bf4-8708-1d36f0dbc468",
+      "displayName": "Christie Church",
+      "uniqueName": "fabrikamfiber1@hotmail.com",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/3b5f0c34-4aec-4bf4-8708-1d36f0dbc468",
+      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=3b5f0c34-4aec-4bf4-8708-1d36f0dbc468"
+    },
+    {
+      "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+      "displayName": "Chuck Reinhart",
+      "uniqueName": "fabrikamfiber3@hotmail.com",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    },
+    {
+      "id": "19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+      "displayName": "Johnnie McLeod",
+      "uniqueName": "fabrikamfiber2@hotmail.com",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=19d9411e-9a34-45bb-b985-d24d9d87c0c9"
+    }
+  ],
+  "count": 3
+}
+```
+
 
 #### Sample code
 
@@ -95,7 +202,29 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}/m
 
 ### A page at a time
 
-[!code-REST [GET__projects__projectId__teams__top-_top___skip-_skip__json](./_data/teams/GET__projects__projectId__teams__top-_top___skip-_skip_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams?$top=1&$skip=1&api-version=2.2
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
+      "name": "Fabrikam-Fiber-TFVC Team",
+      "url": "https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd",
+      "description": "The default project team.",
+      "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/66df9be7-3586-467b-9c5f-425b29afedfd"
+    }
+  ],
+  "count": 1
+}
+```
+
          
 ## Create a team
 <a id="Create"></a>
@@ -127,7 +256,29 @@ Content-Type: application/json
 | name         | string | Name of the team.
 | description  | string | Description of the team.
 
-[!code-REST [POST__projects__projectId__teams__json](./_data/teams/POST__projects__projectId__teams.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams?api-version=2.2
+```
+```json
+{
+  "name": "My new team"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "8e8aa4ff-848a-474a-9033-93190137c8e4",
+  "name": "My New Team",
+  "url": "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/8e8aa4ff-848a-474a-9033-93190137c8e4",
+  "description": "",
+  "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/8e8aa4ff-848a-474a-9033-93190137c8e4"
+}
+```
+
 
 #### Sample code
 
@@ -164,7 +315,30 @@ Content-Type: application/json
 | name         | string | New name of the team.
 | description  | string | New description of the team.
 
-[!code-REST [PATCH__projects__projectId__teams__json](./_data/teams/PATCH__projects__projectId__teams.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams?api-version=2.2
+```
+```json
+{
+  "name": "My new team",
+  "description": "Description of my team"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "8e8aa4ff-848a-474a-9033-93190137c8e4",
+  "name": "My New Team",
+  "url": "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/8e8aa4ff-848a-474a-9033-93190137c8e4",
+  "description": "Description of my team",
+  "identityUrl": "https://mytfsserver/DefaultCollection/_apis/Identities/8e8aa4ff-848a-474a-9033-93190137c8e4"
+}
+```
+
 
 #### Sample code
 
@@ -192,7 +366,12 @@ DELETE https://{instance}.VisualStudio.com/DefaultCollection/_apis/projects/{pro
 DELETE https://fabrikam.VisualStudio.com/DefaultCollection/_apis/projects/fabrikam-fiber/teams/2ddc9d25-b0fe-45ed-97d1-d94c5a562c0b?api-version=2.2
 ```
 
-[!code-REST [DELETE__projects__projectId__teams__newTeamId___json](./_data/teams/DELETE__projects__projectId__teams__newTeamId_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/8e8aa4ff-848a-474a-9033-93190137c8e4?api-version=2.2
+```
+
 
 #### Sample code
 

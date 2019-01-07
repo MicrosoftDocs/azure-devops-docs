@@ -1,6 +1,6 @@
 ```YAML
 # Azure App Service Deploy
-# Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
+# Update Azure App Services on Windows, Web App on Linux with built-in images or Docker containers, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Function Apps, Mobile Apps, API applications, Web Jobs using Web Deploy / Kudu REST APIs
 - task: AzureRmWebAppDeployment@3
   inputs:
     azureSubscription: 
@@ -24,7 +24,7 @@
     #virtualApplication: # Optional
     #package: '$(System.DefaultWorkingDirectory)/**/*.zip' # Required when appType != Linux && WebAppKind != Applinux &&  WebAppKind != ""
     #packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip' # Required when appType != App && WebAppKind != Functionapp && WebAppKind != Api && WebAppKind != Mobileapp && ImageSource == Builtin
-    #runtimeStack: # Required when appType != App && WebAppKind != Functionapp && WebAppKind != Api && WebAppKind != Mobileapp && ImageSource == Builtin# Options: node|4.4, node|4.5, node|6.2, node|6.6, node|6.9, node|6.10, node|6.11, node|8.0, node|8.1, php|5.6, php|7.0, dotnetcore|1.0, dotnetcore|1.1, dotnetcore|2.0, ruby|2.3
+    #runtimeStack: # Required when appType != App && WebAppKind != Functionapp && WebAppKind != Api && WebAppKind != Mobileapp && ImageSource == Builtin
     #startupCommand: # Optional
     #webAppUri: # Optional
     #scriptType: # Optional. Options: , inline Script, file Path

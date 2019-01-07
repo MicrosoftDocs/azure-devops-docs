@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts DefinitionQueueStatus API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts DefinitionQueueStatus API | Extensions for Azure DevOps Services
 ms.assetid: 7586dd3e-2742-6bb2-3764-d6ebab7c99e8
 ms.prod: devops
 ms.technology: devops-ecosystem

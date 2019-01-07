@@ -1,5 +1,6 @@
 ---
 title: Delete or restore files and folders using TFVC 
+titleSuffix: Azure Repos
 description: Delete or restore files and folders using Team Foundation Version control
 ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Delete or restore files and folders in Team Foundation Version Control (TFVC)
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can delete files and folders from TFVC and also restore them, from both in the workspace on your dev machine or on the server.
 
@@ -27,11 +28,11 @@ See [Permissions and groups reference](../../organizations/security/permissions.
 
 Before you delete an item:
 
--   ![](_img/delete-restore-files-folders/IC572373.png) Before you delete a file, look for a check mark icon ![](_img/delete-restore-files-folders/IC51402.gif), which indicates pending edits in the file . If there are pending edits, you should view them (open the context menu by right-clicking the file and choosing **Compare**) and make sure that you do not need them. If you think you might need the edits in the future, consider checking in the file before you delete it.
+-   ![Delete item](_img/delete-restore-files-folders/IC572373.png) Before you delete a file, look for a check mark icon ![Delete item](_img/delete-restore-files-folders/IC51402.gif), which indicates pending edits in the file . If there are pending edits, you should view them (open the context menu by right-clicking the file and choosing **Compare**) and make sure that you do not need them. If you think you might need the edits in the future, consider checking in the file before you delete it.
 
--   ![](_img/delete-restore-files-folders/important.png) If you delete a folder, the system will pend delete actions for any folders and files that it contains.
+-   ![Delete item](_img/delete-restore-files-folders/important.png) If you delete a folder, the system will pend delete actions for any folders and files that it contains.
 
--   ![](_img/delete-restore-files-folders/important.png) If you delete a file on which other files have dependencies, the system will automatically pend delete actions for those files. For example, if you delete a form file, the code and resource file will also be pended for deletion.
+-   ![Delete item](_img/delete-restore-files-folders/important.png) If you delete a file on which other files have dependencies, the system will automatically pend delete actions for those files. For example, if you delete a form file, the code and resource file will also be pended for deletion.
 
 ### To delete an item
 
@@ -49,7 +50,7 @@ Before you delete an item:
 
 > [!NOTE] 
 > If you're already checked in the delete of an item in TFVC, you can restore the deleted item from the server long as no one on your team has [destroyed](destroy-command-team-foundation-version-control.md) it.  
-> If you're not using TFVC, use [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to delete items and files in your Visual Studio solution. 
+> If you're not using TFVC, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to delete items and files in your Visual Studio solution. 
 > Files deleted through Solution Explorer are moved to the Recycle Bin on your computer, where they can be restored.
 > Once restored from the Recycle Bin, right-click your solution in Solution Explorer and select **Add..** and then **Existing item...** to restore the file into your solution.
 
@@ -87,7 +88,7 @@ When you use a local workspace, Visual Studio detects and enables you to resolve
 
 ### To use a local workspace to restore an item you deleted outside Visual Studio
 
-1.  In Team Explorer, choose ![](_img/delete-restore-files-folders/IC547418.png) **Home**, and then choose **Pending Changes**.
+1.  In Team Explorer, choose ![Home](_img/delete-restore-files-folders/IC547418.png) **Home**, and then choose **Pending Changes**.
 
 2.  In the **Excluded Changes** section, choose the **Detected changes** link.
 

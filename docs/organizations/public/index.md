@@ -1,13 +1,13 @@
 ---
 title: Public Projects 
-titleSuffix: VSTS Public Project 
-description: Index to topics for creating and working in public projects for Visual Studio Team Services (VSTS)
+titleSuffix: Azure DevOps Services Public Project 
+description: Index to topics for creating and working in public projects for Azure DevOps Services
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -22,7 +22,7 @@ Create a public project, make an existing project public, or work in a public pr
 
 ## 5-Minute Quickstarts  
 
-* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)
+* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
 * [Create a public project](create-public-project.md)
 * [Invite users to contribute to your public project](invite-users-public.md)
 * [Make a project public](make-project-public.md)
@@ -50,6 +50,6 @@ Create a public project, make an existing project public, or work in a public pr
 ## Resources
 - [Git Repositories](../../git/index.md)  
 - [Work Items](../../boards/work-items/index.md)  
-- [Project Management](../projects/index.md)  
+- [Manage projects](../projects/index.md)  
 - [Process Customization](../settings/work/customize-process.md)   
 

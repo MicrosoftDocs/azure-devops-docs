@@ -2,7 +2,7 @@
 title: Team Foundation Service Updates for TechEd 2013
 description: VSTS release notes for June 3 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 9f20ce95-1478-47e5-94e7-37d942316c28
 ms.date: 06/01/2016
@@ -38,7 +38,7 @@ Over the past 6 months or so, we released constant improvements to our capabilit
 
 ![Manage your test plans](_img/6_03_04.png)
 
-We’ve also improved test editing by enabling you to add step attachments, use shared steps, parameterized step data and more.
+We’ve also improved test editing by enabling you to add step attachments, use shared steps, parameterize step data and more.
 
 ![Improved test editing](_img/6_03_05.png)
 

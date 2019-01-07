@@ -1,19 +1,22 @@
 ---
-title: Chef Knife
-description: Run Scripts with knife commands on your chef workstation
+title: Chef Knife task
+description: Run scripts with Knife commands on your Chef workstation
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C7B7CCF9-D6E0-472B-97BB-06B6E43504F3
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Chef Knife
+# Chef Knife task
 
-![](_img/chefknife.png) Run Scripts with knife commands on your chef workstation
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to run scripts with Knife commands on your Chef workstation.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -31,10 +34,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

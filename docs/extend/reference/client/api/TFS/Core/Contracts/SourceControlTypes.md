@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts SourceControlTypes API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts SourceControlTypes API | Extensions for Azure DevOps Services
 ms.assetid: 28a68a91-c346-8e28-2b9a-62fdb905997e
 ms.prod: devops
 ms.technology: devops-ecosystem

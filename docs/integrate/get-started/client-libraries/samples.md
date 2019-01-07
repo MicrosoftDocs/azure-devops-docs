@@ -1,6 +1,6 @@
 ---
-title: .NET Client Library Samples for VSTS
-description: C# samples showing how to integrate with VSTS and Team Foundation Server from apps and services on Windows.
+title: .NET Client Library Samples for Azure DevOps Services
+description: C# samples showing how to integrate with Azure DevOps Services and Team Foundation Server from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # C# client library samples 
 
-Samples showing how to extend and integrate with Team Foundation Server and VSTS using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
+Samples showing how to extend and integrate with Team Foundation Server and Azure DevOps Services using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
 
 ## Samples in GitHub
@@ -205,7 +205,7 @@ public static void MixedSample()
 }
 ```
 
-## Authenticating (VSTS)
+## Authenticating (Azure DevOps Services)
 
 ### Creating a VssConnection instance to get HttpClients for REST services
 
@@ -213,7 +213,7 @@ public static void MixedSample()
 ```cs
 public static void AADRestSample()
 {
-    // Create instance of VssConnection using AAD Credentials for AAD backed account
+    // Create instance of VssConnection using Azure AD Credentials for Azure AD backed account
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssAadCredential());
 
     WorkItemTrackingHttpClient witClient = connection.GetClient<WorkItemTrackingHttpClient>();
@@ -264,7 +264,7 @@ public static void OAuthSample()
 ```cs
 public static void AADSoapSample()
 {
-	// Authenticate using Azure Active Directory credential (requires a AAD-backed VSTS Account)
+	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed organization)
 	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new AadCredential()))
 	{
 		tpc.Authenticate();

@@ -1,9 +1,9 @@
-- name: Navigation Basics 
-  href: index.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json 
+- name: Web portal navigation 
+  href: index.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   items:
-  - name: Open a service or page
+  - name: Open a service, page, or settings
     href: go-to-service-page.md   
-  - name: Add an artifact or team 
+  - name: Add an artifact or team artifacts
     href: add-artifact-team.md  
   - name: Open team artifacts, use breadcrumbs & selectors
     href: use-breadcrumbs-selectors.md  
@@ -11,7 +11,7 @@
     href: go-to-project-repo.md 
   - name: Enable a preview feature  
     href: preview-features.md  
-  - name: Work with Favorites 
+  - name: Work with favorites 
     href: set-favorites.md  
   - name: Work across projects
     href: work-across-projects.md   
@@ -22,7 +22,7 @@
   - name: Go mobile 
     href: mobile-work.md  
   - name: Set your preferences  
-    href: ../../organizations/settings/set-your-preferences.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json 
+    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   - name: Glossary
     href: glossary.md  
 - name: Resources
@@ -33,7 +33,7 @@
     href: ../wiki/index.md  
   - name: Notifications 
     href: ../../notifications/index.md
-  - name: Project Management 
+  - name: Manage projects 
     href: ../../organizations/projects/index.md
   - name: Settings 
     href: ../../organizations/settings/index.md

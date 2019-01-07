@@ -1,5 +1,6 @@
 ---
 title: Configuration and system variables for Release Management
+ms.custom: seodec18
 description: Configuration variables and system variables for Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 50D20F24-19E6-4660-B3EC-25148BDFE2A3
 ms.prod: devops
@@ -28,12 +29,12 @@ Configuration variables provide reusable and customizable settings that are
 available during action execution. You can set configuration variables and 
 default values on servers, components and globally, and then use those 
 values in your PowerShell scripts and configuration scripts. And, if you 
-don't want to use a default value during a deployment, you can override it. 
+don't want to use a default value during a deployment, you can override it.
 An example for using configuration variables is setting the user name and 
-password used for deploying your app on the server. 
+password used for deploying your app on the server.
 
 Configuration variables can be set at the global, server, component, and 
-action levels. 
+action levels.
 
 * Global configuration variables: Set from **Administration**, **Settings**,
   **Configuration Variables**. Available everywhere.
@@ -52,7 +53,7 @@ action levels.
 
 The order of precedence, from highest to lowest, when a configuration 
 variable name is used in more than one level is **Configuration Script** 
-file, **Action**, **Component**, **Server**, **Global**. 
+file, **Action**, **Component**, **Server**, **Global**.
 
 To manage configuration variables, in the bottom left corner of the **Release 
 Templates** and **Releases** views are tabs named **Configuration Variables**
@@ -99,7 +100,7 @@ available:
 * **ApplicationPath**: Destination path, including the component name, 
   where the component is copied.
 
-* **ApplicationPathRoot**: Destination path where the component is copied. 
+* **ApplicationPathRoot**: Destination path where the component is copied.
   The default is C:\\Windows\\dtlDownloads. You can over-ride this value to 
   specify an alternative destination path.
 
@@ -109,7 +110,7 @@ available:
 
 * **Environment**: The environment for the release.
 
-* **PackageLocation**: The source path from which the component is copied. 
+* **PackageLocation**: The source path from which the component is copied.
   For builds dropped to a Standard server, the path points to the 
   container-id. For builds dropped to Azure, the path points to the storage 
   blob GUID.
@@ -127,7 +128,7 @@ available:
 * **TFSUrl**: TFS URL for the component.
 
 When using configuration or system variables in scripts, prefix the variable 
-name with a dollar sign (**$**). For example: **$Stage**. 
+name with a dollar sign (**$**). For example: **$Stage**.
 
 Note a value could be unassigned. For example, if you are deploying your 
 app to a server that wasn't grouped by a tag, the value of the **$Tag**

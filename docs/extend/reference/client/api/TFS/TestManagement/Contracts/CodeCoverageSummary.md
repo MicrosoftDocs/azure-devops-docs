@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts CodeCoverageSummary API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts CodeCoverageSummary API | Extensions for Azure DevOps Services
 description: Represents the code coverage summary results Used to publish or retrieve code coverage summary against a build
 ms.assetid: 098e1c8c-a7b6-0deb-a1ce-74efc4ac59c6
 ms.prod: devops

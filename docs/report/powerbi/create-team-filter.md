@@ -1,6 +1,6 @@
 ---
-title: Apply a team filter to a Power BI report that uses Analytics views
-titleSuffix: VSTS 
+title: Apply a team filter to a Power BI report
+titleSuffix: Azure DevOps Services 
 description: Sample report that show how to create a trend report with a team filter using an Analytics view
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,13 +9,13 @@ ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
 ms.topic: sample
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.date: 05/18/2018 
 ---
 
 # Create a Power BI report filtered by team using a custom Analytics view
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Analytics views support field criteria to filter work items based on teams. However, there is no team-specific field available to support filtering a Power BI report. While each work item is associated with a specific area path, area paths can be associated with more than one team. Due to this one-to-many associations, the Analytics service doesn't provide a team-specific field. 
 
@@ -50,7 +50,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
     > [!div class="mx-imgBorder"]    
     > ![Advanced Editor](_img/AdvancedEditor.png) 
 
-5. Add the following query code, substituting account information and team names to match your Analytics view. 
+5. Add the following query code, substituting organization information and team names to match your Analytics view. 
    
     ```Query
     let
@@ -67,7 +67,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 7. From the **Home** tab, choose **New Source** to add another blank query and rename it to 
  *Areas*. 
 
-8. Open **Advanced Editor** and add the following query code, substituting account information to match your view.
+8. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
 
     ```Query
     let
@@ -79,7 +79,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
 9. From the **Home** tab, choose **New Source** to add another blank query and rename it to *AreaToTeam*.
 
-10. Open **Advanced Editor** and add the following query code, substituting account information to match your view.
+10. Open **Advanced Editor** and add the following query code, substituting organization information to match your view.
 
     ```Query
     let
@@ -117,7 +117,7 @@ The last step is to create the necessary relationships in Power BI.
 	
 3. In the Manage Relationships dialog:  
 	a. Delete any relationships that might have been automatically detected.   
-	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-bidirectional-filtering).  
+	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Power BI Desktop, Manage Relationships dialog, View To Area](_img/ViewToArea.png)
@@ -155,5 +155,5 @@ Now you can filter all visualization on a report using a slicer or any other sup
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
-- [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
-- [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-bidirectional-filtering)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering)

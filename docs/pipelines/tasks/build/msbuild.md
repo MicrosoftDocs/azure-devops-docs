@@ -1,6 +1,7 @@
 ---
 title: MSBuild build and release task
-description: MSBuild build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: MSBuild build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +13,7 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: MSBuild
+# MSBuild task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
@@ -20,13 +21,13 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-![](_img/msbuild.png) Build with MSBuild
+Use this task in a build or release pipeline to build with MSBuild.
 
 ## Demands
 
 msbuild
 
-> **VSTS:** If your team uses Visual Studio 2017 and you want to use our Microsoft-hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
+> **Azure Pipelines:** If your team uses Visual Studio 2017 and you want to use the Microsoft-hosted agents, make sure you select as your default pool the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -79,7 +80,7 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

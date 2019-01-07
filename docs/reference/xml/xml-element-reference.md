@@ -1,6 +1,6 @@
 ---
 title: XML element index
-titleSuffix: TFS
+titleSuffix: Azure DevOps & TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -42,8 +42,8 @@ By using the index of elements in this topic, you can look up the syntax structu
  The following table provides an index to the reference topics for all child elements of the parent container element. Also, you can access the topic that provides detailed information and examples for each child element.  
 
 > [!NOTE]    
->**Feature availability:**&#160;&#160;The new form elements (**FORM-WebLayout**) and its corresponding features are available from VSTS and the web portal for TFS 2017. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
-> - For users of VSTS working with [hosted XML customization](../../organizations/settings/work/import-process/import-process.md), an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
+> The new form elements (**FORM-WebLayout**) and its corresponding features are available from the web portal for TFS 2017 and later versions. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
+> - For users of Azure DevOps Services working with [hosted XML customization](../../organizations/settings/work/import-process/import-process.md), an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
 > - For TFS 2017 users, the new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../process/new-work-item-experience.md).<br/>
 > - For TFS 2015 users, the new form isn't available. Use the (**FORM-Layout**) elements to customize your WIT definitions. You must [upgrade to TFS 2017 or later version](https://visualstudio.microsoft.com/downloads) to access the new form.  
 
@@ -138,35 +138,35 @@ By using the index of elements in this topic, you can look up the syntax structu
 - [ControlContribution](weblayout-xml-elements.md)  
 - [ExternalLinkFilter](linkscontroloptions-xml-elements.md)    
 - [ExternalLinkFilters](apply-rule-work-item-field.md)  
-- [Extension](weblayout-xml-elements.md)  
-- [Extensions](weblayout-xml-elements.md) 
-- [Filter](linkscontroloptions-elements.md)
+- [Extension](weblayout-xml-elements.md)    
+- [Extensions](weblayout-xml-elements.md)    
+- [Filter](linkscontroloptions-elements.md)    
 - [FORM](weblayout-xml-elements.md)   
-- [Group](weblayout-xml-elements.md)  
+- [Group](weblayout-xml-elements.md)   
 - [GroupContribution](weblayout-xml-elements.md)   
 - [Input](weblayout-xml-elements.md)    
-- [Inputs](weblayout-xml-elements.md)   
-- [LabelText](labeltext-and-text-xml-elements-reference.md)
-- [Layout](layout-xml-element-reference.md)
-- [Link (Hyperlink)](link-param-xml-elements-reference.md)
-- [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)
-- [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)
-- [LinkColumn](linkscontroloptions-elements.md)
-- [LinkColumns](linkscontroloptions-elements.md)
+- [Inputs](weblayout-xml-elements.md)    
+- [LabelText](labeltext-and-text-xml-elements-reference.md)    
+- [Layout](layout-xml-element-reference.md)    
+- [Link (Hyperlink)](link-param-xml-elements-reference.md)    
+- [Link (Label Text)](labeltext-and-text-xml-elements-reference.md)    
+- [Link (Web page)](webpagecontroloptions-xml-elements-reference.md)    
+- [LinkColumn](linkscontroloptions-elements.md)    
+- [LinkColumns](linkscontroloptions-elements.md)    
 - [LinkFilters](linkscontroloptions-xml-elements.md)   
-- [LinksControlOptions](linkscontroloptions-elements.md)
+- [LinksControlOptions](linkscontroloptions-elements.md)    
 - [ListViewOptions](linkscontroloptions-xml-elements.md)   
-- [Page](weblayout-xml-elements.md)  
+- [Page](weblayout-xml-elements.md)    
 - [PageContribution](weblayout-xml-elements.md)  
 - [Param](link-param-xml-elements-reference.md)   
 - [Section](weblayout-xml-elements.md)  
-- [SystemControls](weblayout-xml-elements.md) 
+- [SystemControls](weblayout-xml-elements.md)     
 - [Text](labeltext-and-text-xml-elements-reference.md)      
 - [WebLayout](weblayout-xml-elements.md)  
 - [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)      
 - [WorkItemLinkFilter](linkscontroloptions-xml-elements.md)   
-- [WorkItemLinkFilters](linkscontroloptions-elements.md)
-- [WorkItemTypeFilters](linkscontroloptions-elements.md)
+- [WorkItemLinkFilters](linkscontroloptions-elements.md)    
+- [WorkItemTypeFilters](linkscontroloptions-elements.md)    
 </td>
 </tr>
 </table>

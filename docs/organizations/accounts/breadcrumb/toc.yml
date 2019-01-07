@@ -1,11 +1,11 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
-  - name: Admin
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+  - name: Settings
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index
     items:
-    - name: Organization Management
-      tocHref: /vsts/
-      topicHref: /vsts/organizations/accounts/index
+    - name: Manage organizations
+      tocHref: /azure/devops/organizations/accounts/
+      topicHref: /azure/devops/organizations/accounts/index

@@ -1,5 +1,6 @@
 ---
 title: Create and work with workspaces
+titleSuffix: Azure Repos
 description: Create and work with workspaces
 ms.assetid: 1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Create and work with workspaces
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
 

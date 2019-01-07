@@ -1,12 +1,13 @@
 ---
-title: Define the initial configuration of Test Manager 
-titleSuffix: VSTS & TFS
-description: Use the plug-in for Microsoft Test Manager to define the project's initial test management setup for Team Foundation Server  
+title: Define Test Manager initial configuration
+titleSuffix: Azure DevOps & TFS
+description: Use the plug-in for Microsoft Test Manager to define the project's initial test management setup 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a72625e1-afa2-4707-9a20-bb7927a0aeaf
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 09/08/2017
 ---
@@ -123,7 +124,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 ##  Define test configurations  
  You use the **TestConfiguration** and **TestVariable** elements to define test configurations that combine one or more test configuration variables. One default configuration is defined in the testconfiguration.xml file: Windows Vista and Internet Explorer 7.0. After the project is created, you can delete these configurations and create other configurations. For more information, see [Test configurations: specifying test platforms](../../test/test-different-configurations.md).  
   
- You must enscapsulate the **TestConfiguration** element within its corresponding container element: **TestConfigurations**. You use the following syntax structure for these elements:  
+ You must encapsulate the **TestConfiguration** element within its corresponding container element: **TestConfigurations**. You use the following syntax structure for these elements:  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML 

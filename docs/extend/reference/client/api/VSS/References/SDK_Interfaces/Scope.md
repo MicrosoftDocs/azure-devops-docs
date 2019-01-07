@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces Scope API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces Scope API | Extensions for Azure DevOps Services
 ms.assetid: 4a0c69cf-9514-2614-2325-9ea35a8f256a
 ms.prod: devops
 ms.technology: devops-ecosystem

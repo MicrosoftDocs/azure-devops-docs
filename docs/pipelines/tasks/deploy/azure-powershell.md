@@ -1,19 +1,22 @@
 ---
-title: Azure PowerShell
+title: Azure PowerShell task
 description: Run a PowerShell script within an Azure environment
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 72A1931B-EFFB-4D2E-8FD8-F8472A07CB62
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure PowerShell
+# Azure PowerShell task
 
-![](_img/azurepowershell.png) Run a PowerShell script within an Azure environment
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to run a PowerShell script within an Azure environment.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -32,20 +35,14 @@ monikerRange: 'vsts'
 <tr><td>Script Arguments</td><td>(Optional) Additional parameters to pass to PowerShell.  Can be either ordinal or named parameters.</td></tr>
 <tr><td>ErrorActionPreference</td><td>(Optional) Select the value of the ErrorActionPreference variable for executing the script.</td></tr>
 <tr><td>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream.</td></tr>
-<tr><td>Azure PowerShell Version</td><td>(Optional) In case of Microsoft-hosted agents, the supported Azure PowerShell Versions are: 2.1.0, 3.8.0, 4.2.1 and 5.1.1(Hosted VS2017 Queue), 3.6.0(Hosted Queue).
+<tr><td>Azure PowerShell Version</td><td>(Optional) In case of Microsoft-hosted agents, the supported Azure PowerShell Versions are: 2.1.0, 3.8.0, 4.2.1 and 5.1.1 (Hosted VS2017 pool), 3.6.0 (Hosted pool).
 To pick the latest version available on the agent, select "Latest installed version".
 
 For self-hosted agents you can specify preferred version of Azure PowerShell using "Specify version"</td></tr>
-<tr><td>Preferred Azure PowerShell Version</td><td>(Required) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported. The Hosted VS2017 Pool currently supports versions: 2.1.0, 3.8.0, 4.2.1, 5.1.1</td></tr>
+<tr><td>Preferred Azure PowerShell Version</td><td>(Required) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported. The Hosted VS2017 pool currently supports versions: 2.1.0, 3.8.0, 4.2.1, 5.1.1</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

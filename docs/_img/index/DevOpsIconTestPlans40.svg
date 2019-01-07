@@ -1,0 +1,41 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="DevOpsIconTestPlans40">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="39" height="40">
+<path id="Mask" d="M11 0.834961C11 0.374023 11.3736 0 11.8346 0H27.1654C27.6263 0 28 0.374023 28 0.834961V2.16504C28 2.62598 27.6263 3 27.1654 3H26V11L38.3206 32.4443C40.2509 35.8027 37.838 40 33.9774 40H5.02257C1.16197 40 -1.25093 35.8027 0.679368 32.4443L13 11V3H11.8346C11.3736 3 11 2.62598 11 2.16504V0.834961Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<g id="Beaker">
+<path id="Polygon" d="M15.1568 2.51865C17.0871 -0.839549 21.9129 -0.839549 23.8432 2.51865L38.3206 27.7051C40.2509 31.0633 37.838 35.2611 33.9774 35.2611H5.0226C1.16196 35.2611 -1.25094 31.0633 0.67938 27.7051L15.1568 2.51865Z" transform="translate(0 4.73926)" fill="#854CC7"/>
+<path id="Vector" d="M13 8V0H0V8H13Z" transform="translate(13 3)" fill="url(#paint0_linear)"/>
+<path id="Rectangle 2.1" d="M0 0.834592C0 0.37366 0.37366 0 0.834592 0H16.1654C16.6263 0 17 0.37366 17 0.834592V2.16541C17 2.62634 16.6263 3 16.1654 3H0.834592C0.37366 3 0 2.62634 0 2.16541V0.834592Z" transform="translate(11)" fill="#A676DF"/>
+<path id="Vector 2 (Stroke).1" fill-rule="evenodd" clip-rule="evenodd" d="M13 3H0V0H13V3Z" transform="translate(13)" fill="#854CC7"/>
+</g>
+<path id="Liquid" fill-rule="evenodd" clip-rule="evenodd" d="M35.766 0L38.3206 4.44434C40.2509 7.80273 37.838 12 33.9774 12H5.02257C1.16197 12 -1.25093 7.80273 0.679368 4.44434L3.23399 0H35.766Z" transform="translate(-0.00012207 28)" fill="#5F1FAA"/>
+<g id="Union" opacity="0.5" filter="url(#filter0_f)">
+<path d="M13.6015 7.66504C15.0134 7.04785 15.9999 5.63867 15.9999 3.99902C15.9999 1.79004 14.2091 0 12 0C10.1054 0 8.51849 1.31641 8.10498 3.08496C7.74506 3.02832 7.37598 2.99805 6.99994 2.99805C3.13397 2.99805 0 6.13184 0 9.99805C0 13.8633 3.13397 16.9971 6.99994 16.9971C10.8658 16.9971 13.9998 13.8633 13.9998 9.99805C13.9998 9.17969 13.8594 8.39453 13.6015 7.66504Z" transform="translate(10 18.001)" fill="#4D008A"/>
+</g>
+<g id="Bubbles">
+<path id="Vector_2" d="M3.99997 7.99812C6.20909 7.99812 7.99994 6.20768 7.99994 3.99906C7.99994 1.79044 6.20909 0 3.99997 0C1.79085 0 0 1.79044 0 3.99906C0 6.20768 1.79085 7.99812 3.99997 7.99812Z" transform="translate(18 18.002)" fill="#B68CE6"/>
+<path id="Vector_3" d="M8.74989 17.4988C13.5823 17.4988 17.4998 13.5816 17.4998 8.74942C17.4998 3.91725 13.5823 0 8.74989 0C3.91746 0 0 3.91725 0 8.74942C0 13.5816 3.91746 17.4988 8.74989 17.4988Z" transform="translate(10 21) scale(0.8)" fill="#C9A4F3"/>
+<path id="Intersect" fill-rule="evenodd" clip-rule="evenodd" d="M5.60101 4.57812C5.11078 4.79199 4.56927 4.91113 4 4.91113C1.79083 4.91113 0 3.12109 0 0.912109C0 0.598633 0.0361938 0.292969 0.104553 0C2.66186 0.405273 4.75818 2.19531 5.60101 4.57812Z" transform="translate(18.0001 21.0869)" fill="#E3CCFE"/>
+<path id="Intersect_2" d="M13.9998 0C13.9998 3.8659 10.8659 6.99954 6.99991 6.99954C3.13397 6.99954 0 3.8659 0 0H13.9998Z" transform="translate(10.0002 28)" fill="#9B60DB"/>
+</g>
+<path id="Overlay gradient" opacity="0.25" d="M11 0.834961C11 0.374023 11.3736 0 11.8346 0H27.1654C27.6263 0 28 0.374023 28 0.834961V2.16504C28 2.62598 27.6263 3 27.1654 3H26V11L38.3206 32.4443C40.2509 35.8027 37.838 40 33.9774 40H5.02257C1.16197 40 -1.25093 35.8027 0.679368 32.4443L13 11V3H11.8346C11.3736 3 11 2.62598 11 2.16504V0.834961Z" fill="url(#paint1_linear)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="-3.35347" y="4.6475" width="42.7069" height="43.704" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="6.67674" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.812401 3.1999) scale(6.5 3.2) rotate(-89.9991)">
+<stop stop-color="#7B3FC0"/>
+<stop offset="1" stop-color="#6724B4"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39) scale(39 40) rotate(90)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,5 +1,6 @@
 ---
 title: Unshelve Command
+titleSuffix: Azure Repos
 description: Unshelve Command
 ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Unshelve Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Restores shelved file revisions, check-in notes, comments, and work item associations to the current workspace or removes an existing shelveset from the server.
 

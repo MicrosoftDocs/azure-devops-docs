@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/Services Work Item Form Service API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/Services Work Item Form Service API | Extensions for Azure DevOps Services
 description: Host service for interacting with the currently active work item form (work item currently displayed in the UI).
 ms.assetid: 49bc7312-2aee-433d-9336-394b6c426051
 ms.prod: devops
@@ -152,7 +152,7 @@ Gets field values of active work item.
 
 #### Parameters
 
-* `fieldReferenceNames`: string[]. An arrary of field reference names.
+* `fieldReferenceNames`: string[]. An array of field reference names.
 * `returnOriginalValue`: boolean. Optional. If false, gets unsaved field values. Default is false.
 
 #### Returns

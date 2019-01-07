@@ -1,6 +1,8 @@
 ---
-title: Add more VSTS users with Basic features or Visual Studio subscriptions
-description: Learn how to pay for additional users if you have more than 5 users who need Basic features and assign VS subscriptions
+title: Add users with Basic features or Visual Studio subscriptions
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn how to pay for additional users if you have more than five users who need Basic features and assign VS subscriptions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2
@@ -8,22 +10,25 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 03/22/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-# Add more users with Basic features or Visual Studio subscriptions
+# Add more users to Azure DevOps with Basic features or Visual Studio subscriptions
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When your organization stays within the free limits, you don't have to pay for users to join your organization.
-You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.
-You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md),
-return to your VSTS organization, add these users, and assign them Basic access.
-You pay monthly for their access and can cancel the access anytime.
+Learn how to pay for additional users if you have more than five users who need Basic features and assign Visual Studio subscriptions. When your organization stays within the free limits, you don't have to pay for users to join your organization - you pay only if you have more than five users who need Basic features and the users don't have Visual Studio subscriptions.
 
-Visual Studio subscriptions give you flexible ways to access VSTS and to license the Visual Studio IDE and other Microsoft software for dev and test.
-Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+## Add users
 
-Learn [how to assign Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/assign-license)
-in the [Visual Studio Subscriptions Administration portal](https://manage.visualstudio.com/_apis/Home/redirect?RedirectSource=Commerce).
-Make sure to sign in with the identity that you used to purchase your subscriptions.
+1. [Pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), Azure DevOps tab.
+2. Return to your organization in Azure DevOps.
+3. [Add the users](add-organization-users.md) and assign them Basic access.
+
+You pay monthly for their access and can cancel the access at any time.
+
+Visual Studio subscriptions give you flexible ways to access Azure DevOps and to license the Visual Studio IDE and other Microsoft software for development and test. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
+
+## Related articles
+
+Learn [how to assign Visual Studio subscriptions](/visualstudio/subscriptions/assign-license) in the [Visual Studio Subscriptions Administration portal](https://manage.visualstudio.com/_apis/Home/redirect?RedirectSource=Commerce). Make sure to sign in with the identity that you used to buy your subscriptions.

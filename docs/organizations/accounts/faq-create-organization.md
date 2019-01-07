@@ -1,6 +1,8 @@
 ---
-title: Troubleshoot creating a VSTS organization
-description: Troubleshoot creating a VSTS organization, including differences between using Microsoft account vs. work or school account
+title: Troubleshoot creating an organization
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn the answers to frequently asked questions (FAQs), like the differences between using a Microsoft account versus a work or school account, and more.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
@@ -8,88 +10,71 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/10/2017
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-#	Troubleshoot creating a VSTS organization
 
-**VSTS**
+# Troubleshoot creating an organization
 
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="free-users"></a>
 
-#### Q: What users can join for free?  What do they get in VSTS?
+#### Q: What users can join for free? What benefits do users get from joining Azure DevOps?
 
-A: VSTS is free for these users to join:
+A: Azure DevOps is free for these users to join:
 
-* 5 users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) 
-like version control, tools for Agile, Java, build, release management, and more. 
+* Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), like version control and tools for Agile, Java, and build and release management. 
 
-* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) 
-like working with your backlog, work items, and queries.
+* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), like working with your backlog, work items, and queries.
 
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) 
-who also get Basic features, and in some cases, additional features with specific extensions, like 
-[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
- Learn what else you get with [VSTS](https://visualstudio.microsoft.com/team-services/pricing/).
-
-
+	[Learn what else you get with Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/).
 
 <a name="browser-problems"></a>
 
 [!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
 
-#### Q:  Which Visual Studio subscriptions can I use with VSTS?
+#### Q:  Which Visual Studio subscriptions can I use with Azure DevOps?
 
-A:	Go here to find 
-[Visual Studio subscriptions that include VSTS](faq-add-delete-users.md#EligibleMSDNSubscriptions).
+A:	[Find Visual Studio subscriptions that include Azure DevOps](faq-add-delete-users.md#EligibleMSDNSubscriptions).
 
 #### Q:	Why am I asked to provide profile details?
 
-A:	If you're a new user, you can change your profile details. 
-You only have to do this step once. 
+A:	If you're a new user, you can change your profile details. You need to do this only once.
 
-0.	Confirm your profile details. 
+1.	Confirm your profile details.
 
 	![Confirm profile details](_img/sign-up-visual-studio-team-services/create-profile-msa.png)
 
-0.	Continue creating your VSTS organization.
+1.	Continue creating your organization.
 
-	![Create your VSTS organization](_img/sign-up-visual-studio-team-services/my-info-new-organization.png)
+	![Create your organization](_img/sign-up-visual-studio-team-services/my-info-new-organization.png)
 
 <a name="organization-location"></a>
 
 [!INCLUDE [organization-location-process-template](../../_shared/qa-organization-location-process-template.md)]
 
-#### Q:	Why are some features not available with my organization?
+#### Q:	Why are some features not available in my organization?
 
-A:	Some features require that you install an extension, 
-which may be available for free or paid. 
+A: Some features require you to install an extension, which might be available for free or paid.
 
-For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-requires that you install the Test Manager extension, 
-but you can [try paid extensions for free](../billing/try-additional-features-vs.md), 
-if you haven't started the extension trials already. 
-Otherwise, you can [pay for user access](../../marketplace/install-vsts-extension.md)
-to these features.
+For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) requires you to install the Test Manager extension. You can [try paid extensions for free](../billing/try-additional-features-vs.md) if you haven't started the extension trials already. Otherwise, you can [pay for user access](../../marketplace/install-extension.md) to these features.
 
-#### Q:	How many VSTS organizations can I create?
+#### Q:	How many organizations can I create?
 
-A:	You can [create multiple VSTS organizations](#create-another-organization). 
-But rather than create another organization, you might consider 
-[creating another team project](#another-team-project). 
-Your organization can have unlimited private team projects using Git or TFVC. 
+A: You can [create multiple organizations](#create-another-organization). But instead of creating another organization, you might consider [creating another project](#another-team-project). Your organization can have unlimited private projects by using Git or Microsoft Team Foundation Version Control.
 
-There's no limit on how many VSTS organizations where you can be a member.  
+There's no limit to the number of organizations that you can join.  
 
 <a name="create-another-organization"></a>
 
-#### Q:	How do I create another VSTS organization?
+#### Q:	How do I create another organization?
 
-A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
+A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-![Create your VSTS organization](_img/sign-up-visual-studio-team-services/my-info-organization-list.png)
+![Create your organization](_img/sign-up-visual-studio-team-services/my-info-organization-list.png)
 
 <a name="another-team-project"></a>
 
@@ -109,48 +94,35 @@ A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 #### Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
 
-A:	Your choice affects how you control access and 
-authenticate users for your VSTS organization.
+A: Your choice of account type affects how you control access and authenticate users for your organization.
 
 When you sign up with a Microsoft account:
 
-*	You're solely responsible for managing access 
-to your VSTS organization.
-*	All users must sign in with Microsoft accounts.
+* You're solely responsible for managing access to your organization.
+* All users must sign in with Microsoft accounts.
 
 When you sign up with a work or school account:
 
-*	Your VSTS organization is 
-automatically connected to your directory in Azure AD.
-*	All users must members in the connected directory 
-to get access to your VSTS organization.
-*	The directory administrator has control over who can join the directory.
-*	You sign in with work or school accounts, 
-or with Microsoft accounts if your company allows that.
+* Your organization is automatically connected to your directory in Azure Active Directory.
+* All users must be members in the connected directory to get access to your organization.
+* The directory administrator has control over who can join the directory.
+* You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
 
-To [add users to the directory](https://docs.microsoft.com/azure/active-directory/active-directory-create-users), 
-you must be a directory administrator. If you don't have access, 
-work with your directory administrator to add users.
-Learn more about 
-[work or school accounts for your organization](https://docs.microsoft.com/azure/active-directory/sign-up-organization).
+To [add users to the directory](/azure/active-directory/active-directory-create-users), you must be a directory administrator. If you don't have access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](/azure/active-directory/sign-up-organization).
 
 <a name="ChangeDirectory"></a>
 
 #### Q:	Can I change the directory after signup?
 
-A:	Yes, see [Change your organization's Azure AD](change-organization-location.md).
+A: Yes, see [Disconnect your organization from Azure Active Directory](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
 [!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
 
-*	Choose **Work or school account** if you want to use your organization's directory 
-to authenticate VSTS users and to control VSTS organization access.  This limits access to members in your 
-organization's directory. 
-All other users must sign in with work or school accounts too. 
+* Choose **Work or school account** if you want to use your directory to authenticate users and control organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts. 
 
-*	Choose **Personal account** if you want to use your Microsoft account with VSTS. 
-All other users must sign in with Microsoft accounts too.
+* Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 

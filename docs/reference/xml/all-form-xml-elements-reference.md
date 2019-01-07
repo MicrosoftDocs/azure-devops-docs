@@ -1,6 +1,6 @@
 ---
 title: All FORM XML elements reference
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
@@ -80,8 +80,8 @@ You can specify how information and work item fields are grouped and appear in a
 </tr>
 <tr><td data-th="Element"><p><strong>Column</strong></p></td><td data-th="Description"><p>Divides a form's regions into columns.</p>
 <code>
-&lt;Column PercentWidth="WidthPerceOfContainingElement" FixedWidth="WidthInPixels"&gt;  
-&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group  
+&lt;Column PercentWidth="WidthPercentOfContainingElement" FixedWidth="WidthInPixels"&gt;  
+&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
 &#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
 &#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  
 &#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;  
@@ -140,7 +140,7 @@ Margin="(left, top, right, bottom)" ControlSpacing="Distance" LabelSpacing="Dist
 <tr><td data-th="Element"><p><strong>Tab</strong></p></td><td data-th="Description"><p>Defines the layout of a single tab in a tab group.</p>
 <code>
 &lt;Tab Label="LabelText" Padding="(top, bottom, left, right)" Margin="(top, bottom, left, right)"&gt;  
-&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group  
+&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
 &#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
 &#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  
 &#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;  
@@ -186,14 +186,14 @@ You can control the spacing and size of many elements on a work item form by spe
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false">
-    <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">
-        <Param Index="IndexValue" Value="ParamValue" Type="Original | Current"/>
-    </Link>
-    <Content>
-    <![CDATA[Contents of HTML]]>
-    </Content>
-</WebpageControlOptions>
+<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
+      <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
+      <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
+      </Link>  
+      <Content>  
+      <![CDATA[Contents of HTML]]>  
+      </Content>  
+</WebpageControlOptions>  
 ```  
   
  You use the elements that are described in the following table to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. For more information, see [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md).  
@@ -202,8 +202,8 @@ You can control the spacing and size of many elements on a work item form by spe
 |-------------|---------------|-----------------|  
 |`Content`|Optional `WebpageControlOptions` element.|Specifies the CDATA HTML-based content to appear in a work item form.<br /><br /> `<Content>    <![CDATA[Contents of HTML]]> </Content>`<br /><br /> For more information, see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md).|  
 |`LabelText`|Optional `Control` element when `type="LabelControl"`.|Defines either a plain or hyperlinked label.<br /><br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
-|`Link`|Optional `Control` element when `type="FieldControl"`.<br /><br /> Optional `Text` element.<br /><br /> Optional `WebpageControl` element.<br /><br /> Optional `WebpageControlOptions` element.|Defines the hyperlink for a field, label, or Web browser content to appear in a work item form.<br /><br /> `<Link URLRoot="URLRoot" URLPath="URLPathWithParameters">    <Param /> </Link>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
-|`Param`|Optional `Link` element.|Specifies a value to determine the URL of the hyperlink when `URLPath` is specified for the `Link` element.<br /><br /> `<Param Index="IndexValue" Value="ParamValue" Type="Original &#124; Current"/>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
+|`Link`|Optional `Control` element when `type="FieldControl"`.<br /><br /> Optional `Text` element.<br /><br /> Optional `WebpageControl` element.<br /><br /> Optional `WebpageControlOptions` element.|Defines the hyperlink for a field, label, or Web browser content to appear in a work item form.<br /><br /> `<Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">    <Param /> </Link>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
+|`Param`|Optional `Link` element.|Specifies a value to determine the URL of the hyperlink when `URLPath` is specified for the `Link` element.<br /><br /> `<Param index="IndexValue " value="ParamValue " type ="Original &#124; Current"/>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
 |`Text`|Optional `LabelText` element.|Container element for the information or label to appear on the work item form.<br /><br /> `<Text>    <Link >       <Param />    </Link>LabelText </Text>`<br /><br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
 |`WebpageControlOptions`|Optional `Control` element when `type="WebpageControl"`|Container element that specifies the options for the Web page control.<br /><br /> For more information, see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md).|  
   

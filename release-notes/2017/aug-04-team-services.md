@@ -3,7 +3,7 @@ title: Visual Studio Team Services (VSTS) Sprint 121 Update
 description: Visual Studio Team Services (VSTS) release notes for Sprint 121 Update on August 4 2017 including Wiki in Public Preview and Ansible Integration
 ms.ContentId: 63246e8f-c7a0-4f3a-8c75-a30c30502139
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: alexn
 author: alexn
 ---
@@ -62,7 +62,7 @@ Each project in VSTS now supports its own Wiki. Now you can conveniently write p
 ![Wiki](_img/08_04_26.png)
 
 Some of the key features of the new Wiki include:
-- Simplified editing experience using [markdown syntax](/vsts/reference/markdown-guidance).
+- Simplified editing experience using [markdown syntax](https://visualstudio.microsoft.com/docs/reference/markdown-guidance).
 
 ![Wiki markdown](_img/08_04_27.png)
 
@@ -71,11 +71,11 @@ Some of the key features of the new Wiki include:
 
 ![Wiki menu](_img/08_04_28.png)
 
-- [Offline updates](/vsts/project/wiki/add-edit-wiki#clone-your-wiki-repo-and-edit-wiki-pages-offline) of Wiki for power users.
+- [Offline updates](/azure/devops/project/wiki/add-edit-wiki#clone-your-wiki-repo-and-edit-wiki-pages-offline) of Wiki for power users.
 
-Learn more about [getting started with Wiki](/vsts/project/wiki/add-edit-wiki#create-your-wiki-and-first-wiki-page). 
+Learn more about [getting started with Wiki](/azure/devops/project/wiki/add-edit-wiki#create-your-wiki-and-first-wiki-page). 
 
-The [Wiki extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) on the Marketplace is now deprecated. If you are an existing Wiki extension user, then you can migrate your wiki pages to the new wiki using an this [migration tool](https://github.com/Microsoft/vsts-wikiTools). Learn more to [migrate your existing wiki pages to the new Wiki](/vsts/project/wiki/migrate-extension-wiki-pages).
+The [Wiki extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) on the Marketplace is now deprecated. If you are an existing Wiki extension user, then you can migrate your wiki pages to the new wiki using an this [migration tool](https://github.com/Microsoft/vsts-wikiTools). Learn more to [migrate your existing wiki pages to the new Wiki](/azure/devops/project/wiki/migrate-extension-wiki-pages).
 
 ###Improvements in Wiki edit experience
 The new Wiki edit experience now supports HTML tags in markdown. 
@@ -171,7 +171,7 @@ Previously if you were using an extension that had build tasks and build summary
 View the sample included in the [Microsoft vsts-extension-samples repository](https://github.com/Microsoft/vsts-extension-samples/blob/master/build-results-enhancer/src/enhancer/status.ts).
 
 ###Variable group support
-Variable groups have been available to use in release definitions, and now they are ready to be used in build definitions too. Learn more about [creating a variable group](/vsts/build/concepts/library/variable-groups). This has been developed and prioritized based on related suggestions for [project-level build/release variables](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/14515326-project-level-build-release-variables) and [variable groups in build definitions](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/17646697-make-library-variable-groups-available-for-use-in).
+Variable groups have been available to use in release definitions, and now they are ready to be used in build definitions too. Learn more about [creating a variable group](https://visualstudio.microsoft.com/docs/build/concepts/library/variable-groups). This has been developed and prioritized based on related suggestions for [project-level build/release variables](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/14515326-project-level-build-release-variables) and [variable groups in build definitions](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/17646697-make-library-variable-groups-available-for-use-in).
 
 ###dotnet task supports authenticated feeds, web projects
 The next major version of the __dotnet__ task (2.x) addresses many of your feedback requests and fixes a set of bugs we’ve tracked for a while.
@@ -240,7 +240,7 @@ We are adding support for **Release Environments** in the **Test Result Trend** 
 ![test trend charts](_img/08_04_22.png)
 
 ###Markdown formatting support for Test Run and Test Result comments
-We are adding support for formatting **Test Run** and **Test Result** comments with [markdown syntax](/vsts/reference/markdown-guidance). You can use this feature to create formatted text or quick links to URLs in your comments. You can update **Test Result** comments in the **Result Summary** page with **Update analysis** and **Test Run** comments in the **Run Summary** page with **Update comments** in **Test** hub.
+We are adding support for formatting **Test Run** and **Test Result** comments with [markdown syntax](https://visualstudio.microsoft.com/docs/reference/markdown-guidance). You can use this feature to create formatted text or quick links to URLs in your comments. You can update **Test Result** comments in the **Result Summary** page with **Update analysis** and **Test Run** comments in the **Run Summary** page with **Update comments** in **Test** hub.
 
 ###Add link to existing bug for a failing test
 While analyzing the test result in the **Build** or **Release** summary page, or in the **Test** hub, you can now associate an existing bug to a failed test. This is helpful when a test is failing for a known reason that has a bug already filed.

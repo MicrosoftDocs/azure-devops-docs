@@ -1,5 +1,5 @@
 ---
-title: Add a custom control to the work item form | Extensions for VSTS
+title: Add a custom control to the work item form | Extensions for Azure DevOps Services
 description: Describes how to extend the work item form by adding a custom control.
 ms.prod: devops
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
@@ -14,11 +14,11 @@ ms.date: 10/10/2017
 
 # Add a custom control to the work item form
 
-> This is only available on VSTS and TFS 2017 or later.
+> This is only available on Azure DevOps Services and TFS 2017 or later.
 
 Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  At the end of the article you will understand how to build your own custom control.
 
-<img src="./_img/customcontrol.png" style="width: 600px;"/>
+<img alt="custom control in work item form" src="./_img/customcontrol.png" style="width: 600px;"/>
 
 ## Add the custom control
 To add a control to the main page, add a contribution to your [extension manifest](../develop/manifest.md). The type of this contribution should be `ms.vss-work-web.work-item-form-control`
@@ -88,10 +88,10 @@ These properties define a user input that the contribution can use:
 
 * **id** - A unique id for the input.
 * **description** - A few sentences describing the input.
-* **type (optional)** - The type of input. Only supported on VSTS and TFS 15 RC2 and later.
+* **type (optional)** - The type of input. Only supported on Azure DevOps Services and TFS 15 RC2 and later.
   * Valid values: 
     * `WorkItemField` - Indicates that the input is a Work Item field. This means that the value provided by the user for this input should be a valid work item field's reference name.
-* **properties (optional)** - Custom properties for the input. Only supported on VSTS and TFS 15 RTM.
+* **properties (optional)** - Custom properties for the input. Only supported on Azure DevOps Services and TFS 15 RTM.
   * Valid keys:
     * `workItemFieldTypes` - Defines an array of field types that this input supports. Valid values are -
         * `String`
@@ -109,7 +109,7 @@ These properties define a user input that the contribution can use:
             * `String`
             * `Number`
             * `Boolean`
-            * `Field` - Only supported in TFS 15 RC1 and RC2 and not in VSTS.
+            * `Field` - Only supported in TFS 15 RC1 and RC2 and not in Azure DevOps Services.
         * `isRequired` - A boolean value which indicates if the input is required to have a value or not
 
 

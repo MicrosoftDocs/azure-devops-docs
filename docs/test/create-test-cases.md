@@ -1,6 +1,6 @@
 ---
-title: Create manual tests - VSTS and Team Foundation Server TestTools
-description: Test tools - Create manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+title: Create manual tests
+description: Test tools - Create manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Create manual test cases
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+[!INCLUDE [version-header](_shared/version-header.md)] 
 
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
@@ -50,9 +50,9 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
    Now you've created a test case that you can run.
 
->Test iterations are design to support data-driven scenarios, not workflow-driven scenarios.
-From a best practice perspective, if you have two test scenarios where the workflows are
-different, consider creating separate test cases. 
+> Test iterations are designed to support data-driven scenarios, not workflow-driven scenarios.
+  From a best practice perspective, if you have two test scenarios where the workflows are
+  different, consider creating separate test cases. 
 
 <a name="assigncase"></a>
 ## Assign testers
@@ -72,7 +72,7 @@ different, consider creating separate test cases.
 1. After you select the testers, email them so they
    know the tests are ready for them to run. (You just need 
    [Basic access](https://visualstudio.microsoft.com/products/visual-studio-online-Basic-vs)
-   to run tests from VSTS.)
+   to run tests from Azure DevOps.)
 
    ![Assign testers to run all tests and send emails to them](_img/create-test-cases/AssignMultipleTestersEmail.png)
 

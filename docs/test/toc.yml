@@ -1,4 +1,4 @@
-- name: Test
+- name: Azure Test Plans
   href: index.md
 - name: Overview
   items:
@@ -28,7 +28,7 @@
     items:
     - name: Load test with Visual Studio
       href: load-test/getting-started-with-performance-testing.md
-    - name: Load test with VSTS
+    - name: Load test with Azure DevOps
       href: load-test/get-started-simple-cloud-load-test.md
     - name: Load test with Azure portal
       href: load-test/app-service-web-app-performance-test.md
@@ -37,7 +37,7 @@
 - name: Tutorials
   items:
   - name: Test from the Kanban board
-    href: ../boards/boards/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
+    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Load test before release
     href: load-test/run-performance-tests-app-before-release.md
 - name: How-to Guides
@@ -47,7 +47,7 @@
     - name: Track test status
       href: track-test-status.md
     - name: Delete test artifacts
-      href: ../boards/backlogs/remove-delete-work-items.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
+      href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     - name: Perform user acceptance testing
       href: user-acceptance-testing.md
     - name: Test different configurations
@@ -62,10 +62,10 @@
       href: how-long-to-keep-test-results.md
     - name: Associate tests with test cases
       href: associate-automated-test-with-test-case.md
-    - name: Run tests from the Test hub
+    - name: Run tests from test plans
       href: run-automated-tests-from-test-hub.md
     - name: Associate results with requirements
-      href: associate-automated-results-with-requirements.md
+      href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: "Test & Feedback extension"
     items:
     - name: Explore work items
@@ -129,7 +129,7 @@
   - name: Load testing FAQs
     href: load-test/reference-qa.md
   - name: Unable to connect
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
+    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json
   - name: Default permissions (Security)
     href: manual-test-permissions.md
 - name: Resources
@@ -137,19 +137,19 @@
   - name: Get Stakeholder feedback
     href: ../project/feedback/index.md 
   - name: Using Microsoft Test Manager
-    href: https://msdn.microsoft.com/en-us/library/jj635157%28v=vs.120%29.aspx
+    href: https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx
   - name: Load test with Visual Studio
-    href: https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project
+    href: /visualstudio/test/quickstart-create-a-load-test-project
   - name: Create custom code & plug-ins
-    href: https://docs.microsoft.com/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
+    href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
   - name: Edit load tests
-    href: https://docs.microsoft.com/visualstudio/test/edit-load-tests
+    href: /visualstudio/test/edit-load-tests
   - name: Analyze load test results
-    href: https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer
+    href: /visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer
   - name: REST API for test management
     href: ../integrate/index.md
   - name: Web Performance Test API
-    href: https://docs.microsoft.com/visualstudio/test/how-to-use-the-web-performance-test-api
+    href: /visualstudio/test/how-to-use-the-web-performance-test-api
   - name: ALM Blog posts
     items:
     - name: Manual test posts
@@ -157,9 +157,9 @@
     - name: Test management posts
       href: https://blogs.msdn.microsoft.com/devops/?s=test+management
     - name: "Test & Feedback posts"
-      href: https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+      href: https://social.msdn.microsoft.com/Search?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
     - name: Load test posts
-      href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+      href: https://social.msdn.microsoft.com/Search?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
   - name: Plug-ins for Visual Studio
     href: http://go.microsoft.com/fwlink/?LinkID=246630
   - name: Continuous testing

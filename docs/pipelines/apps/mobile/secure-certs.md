@@ -1,6 +1,7 @@
 ---
 title: Simple, Secure CI App Signing
-description: Sign your mobile app during CI with VSTS or Team Foundation Server
+ms.custom: seodec18
+description: Sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2017 < tfs-2018'
 
 # Sign your mobile app
 
-**[VSTS](app-signing.md) | [TFS 2018](app-signing.md) | TFS 2017.2**
+**[Azure Pipelines](app-signing.md) | [TFS 2018](app-signing.md) | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -53,7 +54,7 @@ This article covers:
 
 3. At this point you can opt to add these two files directly to source control or add an extra layer of security by encrypting them first. **See the next section for details on this step.**
 
-4. Next, go to VSTS / TFS and open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab. Here, enter the password for the .p12 file:
+4. Next, go to Azure Pipelines / TFS and open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab. Here, enter the password for the .p12 file:
   - **P12_PWD**: Password to the .p12 file in its unencrypted form. *Be sure to click the "lock" icon.* This will secure your password and obscure it in all logs.
 	![Xcode Build settings](_img/secure-certs/secure-certs-10.png)
 

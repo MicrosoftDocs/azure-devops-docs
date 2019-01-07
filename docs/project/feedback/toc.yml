@@ -1,23 +1,19 @@
 - name: Feedback 
-  href: index.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json
-- name: Overview
-  items:
-  - name: About feedback
-    href: about-feedback.md 
+  href: index.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Request feedback (Test & Feedback extension) 
-    href: ../../test/request-stakeholder-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json  
+    href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
   - name: Request feedback (Work tracking)
     href: get-feedback.md  
   - name: Provide feedback (Test & Feedback extension)
-    href: ../../test/provide-stakeholder-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json  
+    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
   - name: Provide feedback (Feedback client)
     href: give-feedback.md
   - name: Track feedback (Test & Feedback extension)
-    href: ../../test/track-stakeholder-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json  
+    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
   - name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
-    href: ../../test/voluntary-stakeholder-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json  
+    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
   - name: "Set feedback permissions (Security)"
     href: give-permissions-feedback.md
   - name: Enable remote audio capture
@@ -27,16 +23,16 @@
 - name: Reference
   items:
   - name: "Default permissions (Security)" 
-    href: ../../project/wiki/wiki-readme-permissions.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json  
+    href: ../../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
   - name: Give us feedback, get support
-    href: ../../user-guide/provide-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json  
+    href: ../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
 - name: Resources 
   items:
-  - name: Agile
-    href: /vsts/index#pivot=services&panel=agile
-  - name: Testing
-    href:  /vsts/index#pivot=services&panel=testing
-  - name: Uservoice Integration (Marketplace extension)
+  - name: Azure Boards
+    href: /azure/devops/boards/index
+  - name: Azure Test Plans
+    href: /azure/devops/test/index-tp
+  - name: UserVoice Integration (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
   - name: UserVoice UI (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui

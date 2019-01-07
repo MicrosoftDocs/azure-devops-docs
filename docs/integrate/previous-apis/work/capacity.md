@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Capacity | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with capacity programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Capacity | REST API Reference for Team Foundation Server
+description: Work with capacity programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: bfcad439-f8a2-4a73-9276-485fdf01aaaf
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Capacity
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -27,14 +30,45 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationid| string   | ID of the iteration.
 | Query
 | api-version| string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__work_teamsettings_iterations__iterationId__capacities_json](./_data/capacities/GET__work_teamsettings_iterations__iterationId__capacities.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "values": [
+    {
+      "teamMember": {
+        "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "displayName": "Chuck Reinhart",
+        "uniqueName": "fabrikamfiber3@hotmail.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      },
+      "activities": [
+        {
+          "capacityPerDay": 0,
+          "name": null
+        }
+      ],
+      "daysOff": [],
+      "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    }
+  ]
+}
+```
+
 
 ## Get a team member's capacity
 <a id="GetTeamMemberCapacity"></a>
@@ -46,7 +80,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationid| string   | ID of the iteration.
@@ -54,7 +88,57 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | Query
 | api-version| string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__work_teamsettings_iterations__iterationId__capacities__teammemberId__json](./_data/capacities/GET__work_teamsettings_iterations__iterationId__capacities__teammemberId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "teamMember": {
+    "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "displayName": "Chuck Reinhart",
+    "uniqueName": "fabrikamfiber3@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+  },
+  "activities": [
+    {
+      "capacityPerDay": 0,
+      "name": null
+    }
+  ],
+  "daysOff": [],
+  "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    },
+    "project": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e"
+    },
+    "team": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e/teams/748b18b6-4b3c-425a-bcae-ff9b3e703012"
+    },
+    "teamSettings": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings"
+    },
+    "teamIterations": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations"
+    },
+    "teamIteration": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee"
+    },
+    "capacity": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities"
+    }
+  }
+}
+```
+
 
 ## Update a team member's capacity
 <a id="UpdateTeamMemberCapacity"></a>
@@ -66,7 +150,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | TFS server name ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationid| string   | ID of the iteration.
@@ -76,6 +160,65 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 
 | Parameter  	| Allowed Values     
 |:-----------	|:---------
-| activity name	| Deployment, Design, Development, Documentation, Localization, Program Managment, Testing (localized)
+| activity name	| Deployment, Design, Development, Documentation, Localization, Program Management, Testing (localized)
 
-[!code-REST [PATCH__work_teamsettings_iterations__iterationId__capacities__teammemberId__json](./_data/capacities/PATCH__work_teamsettings_iterations__iterationId__capacities__teammemberId_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d?api-version=2.0-preview.1
+```
+```json
+{
+  "activities": [
+    {
+      "name": "newActivity",
+      "capacityPerDay": 6
+    }
+  ]
+}
+```
+
+#### Sample response
+
+```json
+{
+  "teamMember": {
+    "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "displayName": "Chuck Reinhart",
+    "uniqueName": "fabrikamfiber3@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+  },
+  "activities": [
+    {
+      "name": "newActivity",
+      "capacityPerDay": 6
+    }
+  ],
+  "daysOff": [],
+  "url": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    },
+    "project": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e"
+    },
+    "team": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projects/6d823a47-2d51-4f31-acff-74927f88ee1e/teams/748b18b6-4b3c-425a-bcae-ff9b3e703012"
+    },
+    "teamSettings": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings"
+    },
+    "teamIterations": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations"
+    },
+    "teamIteration": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee"
+    },
+    "capacity": {
+      "href": "https://mytfsserver/DefaultCollection/6d823a47-2d51-4f31-acff-74927f88ee1e/748b18b6-4b3c-425a-bcae-ff9b3e703012/_apis/work/teamsettings/iterations/2ec76bfe-ba74-4060-970d-4567a3e997ee/capacities"
+    }
+  }
+}
+```

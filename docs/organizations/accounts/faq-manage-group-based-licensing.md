@@ -1,6 +1,8 @@
 ---
 title: Troubleshoot managing group-based licensing
-description: Troubleshoot managing group-based licensing (what does remove group do? remove group rule? Will users lose access level and project membership?)
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn the answers to frequently asked questions (FAQs), like how to remove a group, remove a group rule, and how user access level and project membership is affected.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -9,27 +11,28 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 03/21/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot managing group-based licensing
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 #### Q: Will my users lose their access level and project membership if I remove a group rule?
 
-A: Users in the group "TestGroup" will lose access to group resources if they have not been explicitly assigned to them or via a different group rule.
+A: Users in the group **TestGroup** lose access to group resources if the users haven't been explicitly assigned to the resources, or assigned via a different group rule.
 
 > [!div class="mx-imgBorder"]
 ![remove-test-group-group-rule-managing_group-based-licensing](_img/faq/remove-test-group-rule.png)
 
-#### Q: Will my VSTS or Azure AD group be deleted if I remove its group rule?
+#### Q: Will my Azure DevOps or Azure AD group be deleted if I remove its group rule?
 
-A: No, your groups will not be deleted.
+A: No. Your groups won't be deleted.
 
-#### Q: What does the option to “Remove <group> from all project level groups” do?
+#### Q: What does the option "Remove <group> from all project level groups" do?
 
-A: It will remove the VSTS or Azure AD group from any project-level default groups, such as Project Readers or Project Contributors.
+A: This option removes the Azure DevOps or Azure AD group from any project-level default groups, such as **Project Readers** or **Project Contributors**.
 
 ## Related articles
 

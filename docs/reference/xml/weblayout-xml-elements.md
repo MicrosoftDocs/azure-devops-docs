@@ -1,6 +1,6 @@
 ---
 title: WebLayout XML elements reference 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
@@ -87,9 +87,9 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
 > The [**Link** element](link-param-xml-elements-reference.md) is not an allowed element within the **SystemControls** section. 
 
 
-**For TFS 2017 On-premises XML process model**:  You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the **System.Title** field. In general, we recommend you don't customize this section much more than that. For example, you can't remove fields from or add other fields within this section.  
+**For TFS 2017, On-premises XML process model**:  You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the **System.Title** field. In general, we recommend you don't customize this section much more than that. For example, you can't remove fields from or add other fields within this section.  
 
-**For TFS 2018 RC2 On-premises XML and Hosted XML process models**:  You can specify the **ShowEmptyReadOnlyFields** attribute, or select to hide or replace select fields defined within the **SystemControls** section.  
+**For TFS 2018, On-premises XML and Azure DevOps Services, Hosted XML process models**:  You can specify the **ShowEmptyReadOnlyFields** attribute, or select to hide or replace select fields defined within the **SystemControls** section.  
 
 For example, to hide the Reason field, you modify the **Control** element with the `Visible` attribute.
    
@@ -252,7 +252,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 
 <tr>
 	<td><p>**ControlContribution**</p></td>
-	<td><p>Optional child element of **Group** within **WebLayout** used to secify a field-level work item extension to appear on the form.   </p>
+	<td><p>Optional child element of **Group** within **WebLayout** used to specify a field-level work item extension to appear on the form.   </p>
 <pre><code>&lt;ControlContribution Id="ContributionId" Label="Name"  &gt;
    &lt;Inputs&gt;
       &lt;Input Id="FieldName" Value="Value" /&gt;
@@ -452,7 +452,7 @@ FieldName="ReplacementFieldRefName" Replaces="FieldRefName"] />
 <ul>
 <li><strong>DateTimeControl</strong>: Use to display formatted date fields with a field type of <strong>DateTime</strong>.</li>
 <li><strong>FieldControl</strong>: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of <strong>Boolean</strong>, <strong>Double</strong>, <strong>Identity</strong>, <strong>Integer</strong>,<strong>PlainText</strong>m and <strong>String</strong>.
-<blockquote>**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
+<blockquote>**Feature availability:** The Boolean data type field is supported for TFS 2017 and later versions.    
 </blockquote></li>
 <li><strong>HtmlFieldControl</strong>: Use to display multi-line, rich-text format of fields with a field type of <strong>HTML</strong>.</li>
 <li><strong>LabelControl</strong>: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements.</li>
@@ -529,7 +529,7 @@ Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 ![Date-Time control, Calendar field](_img/weblayout-date-time-control.png)   
 <pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
-<blockquote>**Note:**The date-time format displayed matches the [user profile user profile](/vsts/organizations/settings/set-user--preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
+<blockquote>**Note:**The date-time format displayed matches the [user profile user profile](/azure/devops/organizations/settings/set-your-preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
 </blockquote>
 </td>
 </tr>
@@ -541,7 +541,7 @@ Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;S
 Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 <blockquote>
-**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
+**Feature availability:** The Boolean data type field is only supported for TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
 ![Boolean field display in web work item form](_img/weblayout-ref-checkbox-control-boolean-field.png)
  

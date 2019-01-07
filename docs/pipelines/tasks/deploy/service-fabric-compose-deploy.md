@@ -1,27 +1,29 @@
 ---
+title: Service Fabric Compose Deploy task
 description: Service Fabric Compose Deploy Deployment task
-title: Service Fabric Compose Deploy task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
-# Deploy: Service Fabric Compose Deploy
+# Service Fabric Compose Deploy task
 
-![icon](_img/azure-service-fabric.png) Deploy a Docker-compose application to a Service Fabric cluster.
+**Azure Pipelines**
 
+Use this task in a build or release pipeline to deploy a Docker-compose application to a Service Fabric cluster.
 This task deploys an Azure Service Fabric application to a cluster according to the settings defined in the compose file.
 
 ## Prerequisites
 
-NOTE: This task is currently in preview and requires a preview version of Service Fabric that supports compose deploy. 
-See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compose](https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compose).
+NOTE: This task is currently in preview and requires a preview version of Service Fabric that supports compose deploy.
+See [/azure/service-fabric/service-fabric-docker-compose](/azure/service-fabric/service-fabric-docker-compose).
 
 ### Service Fabric
 
@@ -51,7 +53,7 @@ Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powersh
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -59,5 +61,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

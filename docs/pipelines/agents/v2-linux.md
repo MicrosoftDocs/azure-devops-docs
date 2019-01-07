@@ -1,6 +1,7 @@
 ---
 title: Deploy a build and release agent on Linux
-description: Learn how you can easily deploy a private build and release agent on Linux for VSTS and Team Foundation Server (TFS).
+ms.custom: seodec18
+description: Learn how you can easily deploy a private build and release agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,11 +9,13 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Deploy an agent on Linux
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -21,7 +24,7 @@ monikerRange: '>= tfs-2015'
 To build or deploy you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
 
 > Before you begin:
-> * If your build and release pipelines are in [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
+> * If your build and release pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
 > *  Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
@@ -32,7 +35,7 @@ Where are your builds and releases running?
 
 ::: moniker range="vsts"
 
-**VSTS**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
+**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
 
 ::: moniker-end
 
@@ -57,13 +60,38 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range=">= tfs-2017"
+::: moniker range="vsts"
 
-### VSTS and TFS 2017 and newer
+### Azure Pipelines
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
+[!INCLUDE [include](_shared/agent-pools-tab.md)]
+</li>
+
+<li>Click **Download agent**.</li>
+
+<li>On the **Get agent** dialog box, click **Linux**.</li>
+
+<li>On the left pane, select the processor architecture (x64 or ARM).</li>
+
+<li>On the right pane, click the **Download** button.
+
+<li>Follow the instructions on the page.</li>
+
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.</li>
+</ol>
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+### TFS 2017 and TFS 2018
+
+<ol>
+<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
+<li>In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 
@@ -74,6 +102,8 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <li>Click the **Download** button.
 
 <li>Follow the instructions on the page.</li>
+
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
 </ol>
 
 ::: moniker-end
@@ -82,7 +112,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
+0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
 0. Follow the instructions on that page to download the agent.
 
@@ -97,7 +127,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range="vsts"
 
-VSTS: `https://{your-organization}.visualstudio.com`
+Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
 
@@ -130,6 +160,9 @@ To run the agent interactively:
 ./run.sh
  ```
 
+To use your agent, run a [job](../process/phases.md) using the agent's pool.
+If you didn't choose a different pool, your agent will be in the **Default** pool.
+
 ## Run as a systemd service
 
 If your agent is running on these operating systems you can run the agent as a systemd service:
@@ -137,7 +170,7 @@ If your agent is running on these operating systems you can run the agent as a s
 * Ubuntu 16 LTS or newer
 * Red Hat 7.1 or newer
 
-We provide the `./svc.sh` script for you to run and manage your agent as a systemd service.
+We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. This script will be generated after you configure the agent.
 
 > [!NOTE]
 > If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
@@ -234,7 +267,7 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* VSTS: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+* Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 
@@ -262,11 +295,13 @@ You can use the template described above as to facilitate generating other kinds
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 ### Why is sudo needed to run the service commands?
 
 `./svc.sh` uses `systemctl`, which requires `sudo`.
 
-Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vsts-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
+Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/azure-pipelines-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
 ::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]

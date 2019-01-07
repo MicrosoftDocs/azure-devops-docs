@@ -1,5 +1,6 @@
 ---
-title: TRANSITION XML element | VSTS & TFS
+title: TRANSITION XML element 
+titleSuffix: TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
 ms.prod: devops
 ms.technology: devops-agile
@@ -13,15 +14,12 @@ ms.date: 10/27/2017
 
 # TRANSITION XML element  
 
-
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **TRANSITION** element to specify a valid progression or regression from one state to another for a type of work item. The **TRANSITION** element is a required child element of the **TRANSITIONS** element.  
   
 To modify the workflow, you modify the definition for a work item type. See [Modify or add a custom work item type](../add-modify-wit.md).  
- 
- 
-  
+
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
@@ -46,7 +44,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 |`not`|`Transition` attribute.<br /><br /> Optional. The name of a user or group who is restricted from performing the transition.|  
   
 > [!NOTE]   
-> for and not rules are not natively supported in VSTS at this time.
+> Rules that use `for` and `not` attributes aren't supported in Azure DevOps Services.
 
 ### Child elements  
   
@@ -101,14 +99,18 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 </TRANSITION>  
 ```  
   
+::: moniker range=">= tfs-2018" 
 ## Auto completion of work items with pull requests  
 
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR. 
 
 > [!NOTE]   
-> **Feature availability**: The **Complete linked work items after merging** option is available from VSTS only at this time. It will become available with the release of TFS 2018 RTW.
+> **Feature availability**: The **Complete linked work items after merging** option is available in TFS 2018 and later versions. 
 
 To learn more, see [Workflow states & state categories](../../boards/work-items/workflow-and-state-categories.md).
+
+::: moniker-end  
+
 
 ## Related articles 
 - [Change the workflow](change-workflow-wit.md)

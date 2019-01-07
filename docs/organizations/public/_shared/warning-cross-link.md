@@ -3,12 +3,12 @@ ms.topic: include
 ---
 
 
-In VSTS, you can link objects that exist in different projects defined in the same organization. For example, you can link a bug in Project A to a pull request in Project B. If links exist between a public and a private project, details about the linked artifact in the private project are visible within the public project.
+In Azure DevOps, you can link objects that exist in different projects defined in the same organization. For example, you can link a bug in Project A to a pull request in Project B. If links exist between a public and a private project, details about the linked artifact in the private project are visible within the public project.
 
 
-The link types used to construct these links&mdash;as illustrated in the following imagemdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
+The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
 
-![Cross project link types](/vsts/boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png) 
+![Cross project link types](/../../boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png)
 
 Five kinds of cross-project links expose content from the private project.
 

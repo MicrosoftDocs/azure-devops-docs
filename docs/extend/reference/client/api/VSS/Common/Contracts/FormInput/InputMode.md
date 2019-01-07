@@ -1,5 +1,5 @@
 ---
-title: VSS/Common/Contracts/FormInput InputMode API | Extensions for Visual Studio Team Services
+title: VSS/Common/Contracts/FormInput InputMode API | Extensions for Azure DevOps Services
 ms.assetid: 86571b4c-9141-183d-429d-cf3f12718d9a
 ms.prod: devops
 ms.technology: devops-ecosystem

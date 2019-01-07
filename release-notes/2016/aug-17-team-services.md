@@ -2,7 +2,7 @@
 title: Pull Requests refresh and much, much more – Aug 17
 description: VSTS release notes for August 17 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 7ecf0247-57e9-4439-97cc-730d78905324
 ms.date: 06/01/2016
@@ -52,7 +52,7 @@ Use the full power of markdown in all of your discussions, including formatting,
 
 ###Auto-complete pull requests waiting on policies
 
-Teams that are using branch policies ([https://docs.microsoft.com/vsts/git/branch-policies-overview](https://docs.microsoft.com/vsts/git/branch-policies-overview?view=vsts)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
+Teams that are using branch policies ([/vsts/repos/git/branch-policies-overview](/azure/devops/repos/git/branch-policies-overview?view=vsts)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
 
 ![Auto-complete](_img/8_17_06.png)
 
@@ -248,7 +248,7 @@ If the user does not have an email address—for example, if the “user” is a
 
 ![Usage page showing rate limiting instance](_img/8_17_25.png)
 
-These changes will be rolled out slowly to avoid having unexpected impacts on large numbers of users. As such, the Usage page may not be available in all accounts for some time. For more information, see [https://docs.microsoft.com/vsts/reference/rate-limits](/vsts/reference/rate-limits).
+These changes will be rolled out slowly to avoid having unexpected impacts on large numbers of users. As such, the Usage page may not be available in all accounts for some time. For more information, see [https://visualstudio.microsoft.com/docs/reference/rate-limits](https://visualstudio.microsoft.com/docs/reference/rate-limits).
 
 That’s it for this sprint. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 

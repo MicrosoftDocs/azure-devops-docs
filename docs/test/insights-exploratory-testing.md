@@ -1,5 +1,5 @@
 ---
-title: Get insights across your exploratory testing sessions
+title: Get insights across exploratory test sessions
 description: Manual and exploratory testing - get insights with exploratory testing across your test sessions by using the Microsoft Test & Feedback extension
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.prod: devops
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Get insights across your exploratory testing sessions
- 
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
 
+[!INCLUDE [version-header](_shared/version-header.md)]
+ 
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
 
@@ -28,9 +28,9 @@ at team or individual level, and for a specific period.
  
      ![Opening the insights page from the extension](_img/insights-exploratory-testing/insights-exploratory-testing-01.png)
  
-   - From the VSTS or TFS **Test** hub by opening the **Runs** tab and choosing **Recent exploratory sessions**.  
+   - From [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
 
-     ![Opening the insights page from the Test hub](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
+     ![Opening the insights page](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
 
 1. Explore the **Recent exploratory sessions** page. It contains three main sections:
 
@@ -98,7 +98,7 @@ app from the information collected during your exploratory testing sessions.
 
 Use a query to explore the work items that users have not yet explored.
 
-1. Create a shared query in VSTS or TFS that selects work items
+1. Create a shared query in Azure DevOps or TFS that selects work items
    that can be explored using the Test &amp; Feedback extension, such as
    work items in the epic category, feature category, requirement category, 
    requirement-based suites, or test cases. 

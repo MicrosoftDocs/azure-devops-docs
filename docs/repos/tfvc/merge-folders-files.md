@@ -1,5 +1,6 @@
 ---
 title: Merge folders and files
+titleSuffix: Azure Repos
 description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Merge folders and files
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that is forked into various branches. If you use branches, eventually your team must integrate the work that has been completed on different branches during certain phases of your project. For example, when you are ready to test a full version of your software, you will need the changes made on different feature team branches to be merged together.
 
@@ -126,7 +127,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
     >**Tip:**
     >  If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
 
-    -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items **page appears. Select the version of the items that you want to use.
+    -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
 
         <table>
                 <tbody>

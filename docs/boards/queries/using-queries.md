@@ -1,7 +1,8 @@
 ---
 title: Create managed queries with the Query Editor
-titleSuffix: VSTS & TFS
-description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -10,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018  
+ms.date: 12/10/2018  
 ---
 
 # Create managed queries with the query editor
@@ -35,7 +36,7 @@ In this topic you'll learn:
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
@@ -48,12 +49,12 @@ The following example shows how to find all closed bugs by modifying the
 *Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
 
 0.	Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
-	::: moniker range="vsts"
+	::: moniker range=">= azdevserver-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
 	::: moniker-end  
 	::: moniker range=">= tfs-2013 <= tfs-2018"
-	![Web portal, Work>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
+	![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
 	::: moniker-end  
 
 	> [!TIP]  
@@ -61,8 +62,9 @@ The following example shows how to find all closed bugs by modifying the
 
 0.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).   	
-	::: moniker range="vsts"	
-	![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
+	::: moniker range=">= azdevserver-2019"	
+	> [!div class="mx-imgBorder"]
+	> ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	::: moniker-end
 	::: moniker range=">= tfs-2015 <= tfs-2018"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
@@ -72,9 +74,9 @@ The following example shows how to find all closed bugs by modifying the
 	::: moniker-end
 
 0.	Save the query to your **My Queries** folder.  
-	::: moniker range="vsts"
+	::: moniker range=">= azdevserver-2019"
 	> [!div class="mx-imgBorder"]  
-	> ![Save Query As dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
+	> ![Save As query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
 	::: moniker-end
 	::: moniker range=">= tfs-2015 <= tfs-2018"	 
 	![Save Query As](_img/6.png)    
@@ -87,7 +89,7 @@ The following example shows how to find all closed bugs by modifying the
 
 You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019" 
 > [!div class="mx-imgBorder"]  
 > ![Add new query, new experience](_img/view-run-queries/new-query-new-exp.png)  
 ::: moniker-end
@@ -107,10 +109,16 @@ In the next example, the first expression returns all work items that are priori
 | ![Filter Using an OR/AND Operator](_img/8.png) | Priority = 1 OR (Work Item Type=Bug AND State=Active) |
 | ![Filter Using an AND/OR OR Operator](_img/9.png) | Priority = 1 AND (Work Item Type=Bug OR State=Active) |
 
-To group one or more clauses, select them and then choose the ![Group Query Clause icon](../_img/icons/group-clauses-icon.png) group clauses icon.
+To group one or more clauses, select them and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Group Selected Query Clauses](_img/view-run-queries/group-clauses.png)
+
+You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
+
+> [!div class="mx-imgBorder"]  
+> ![Group multiple query clauses](_img/using-queries/multiple-clauses.png)
+
 
 If your query results do not return your expected set of work items, follow these steps: 
 
@@ -125,7 +133,7 @@ If your query results do not return your expected set of work items, follow thes
 
 Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) leaf nodes to focus on different parts of the tree.  
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019" 
 > [!div class="mx-imgBorder"]  
 > ![Results List Showing a Tree Query, new experience](_img/view-run-queries/tree-query-new-exp.png)  
 ::: moniker-end  
@@ -177,7 +185,7 @@ Filter your first-tier list of work items by choosing one of these options:
 
 - **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
 
-To learn more about each link type, see [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md).
+To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
 
 <a id="across-projects" />  
@@ -200,7 +208,7 @@ To list work items defined in two or more projects, checkmark **Query across pro
 ::: moniker range=">= tfs-2015"
 With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
 
-<img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="_img/using-queries-query-across-select-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]    
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
@@ -221,9 +229,9 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 
 ::: moniker-end
 
-## Task board versus query list items
+## Taskboard versus query list items
 
-You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
 ## Export a query  
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../../reference/process-templates/define-work-item-query-process-template.md). 
@@ -235,7 +243,7 @@ See also:
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+> The WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
 ::: moniker-end
 
 ## Related articles
@@ -245,7 +253,7 @@ That's the basics about using queries. For an index of query examples, see [Crea
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](../backlogs/set-column-options.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

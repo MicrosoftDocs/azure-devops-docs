@@ -18,61 +18,59 @@
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Connect VSTS to Azure AD
-    href: ../accounts/change-organization-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: Connect to Azure AD
+    href: ../accounts/connect-organization-to-azure-ad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Manage billing 
+  - name: Billing management
     items:
     - name: Add user to make purchases
       href: add-backup-billing-managers.md
     - name: Change Azure subscription
       href: change-azure-subscription.md
     - name: Change number of paid users
-      href: reduce-cancel-paid-vsts-users.md
-    - name: Buy TFS CALs or Test hub
+      href: reduce-cancel-paid-users.md
+    - name: Buy TFS CALs or Test
       href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
-      href: vsts-billing-faq.md
-  - name: Manage Marketplace extensions
+      href: billing-faq.md
+  - name: Manage extensions (Marketplace)
     items:
     - name: Change number of paid users
       href: change-number-paid-extension-users.md
     - name: Approve requests
-      href: ../../marketplace/approve-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/approve-vsts-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
     - name: Assign paid extensions to users
-      href: ../../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
-    - name: Buy TFS CALs or Test hub  
+      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
+    - name: Buy TFS CALs or Test  
       href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
     items:
     - name: "CSPs: Set up your customer"
       href: csp/set-up-csp-customer.md
-    - name: "CSPs: Buy VSTS for your customers"
-      href: csp/buy-csp-vsts.md
+    - name: "CSPs: Buy Azure DevOps for your customers"
+      href: csp/buy-csp-azure-devops.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
-      href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp
+      href: /visualstudio/subscriptions/vscloud-csp
     - name: "CSPs: Buy App Center resources"
       href: csp/buy-vs-app-center.md
-- name: Troubleshooting
-  items:
-  - name: Trials FAQ
-    href: faq-extension-trials.md
 - name: Reference
   items:
   - name: Permissions 
-    href: ../../security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../security/permissions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
   - name: About access levels
-    href: ../../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
   - name: Default permissions & access
-    href: ../../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Organization Management
+  - name: Start using Azure DevOps
+    href: ../../user-guide/index.yml
+  - name: Manage organizations
     href: ../accounts/index.md
-  - name: "Security & Identity"
+  - name: "Security & identity"
     href: ../../security/index.md
   - name: Marketplace extensions
     href: ../../marketplace/index.md

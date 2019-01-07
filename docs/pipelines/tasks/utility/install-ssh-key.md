@@ -1,19 +1,22 @@
 ---
-title: Install SSH Key
+title: Install SSH Key task
 description: Install an SSH key prior to a build or release
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5c9af2eb-5fc5-42dc-9b91-dc234a8c4400
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Install SSH Key
+# Install SSH Key task
 
-![](_img/installsshkey.png) Install an SSH key prior to a build or release
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to install an SSH key prior to a build or release.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -32,10 +35,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

@@ -1,6 +1,7 @@
 ---
 title: Jenkins Queue Job build and release task
-description: Queue a job on a Jenkins server build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Queue a job on a Jenkins server build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +13,11 @@ ms.date: 08/30/2016
 monikerRange: '>= tfs-2017'
 ---
 
-# Build: Jenkins Queue Job
+# Jenkins Queue Job task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/jenkins-queue-job.png) Queue a job on a Jenkins server
+Use this task in a build or release pipeline to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -72,14 +73,14 @@ None
 <tr>
 <td>Parameterized job</td>
 <td>
-<p>Select this option if the Jekins job requires parameters.</p>
+<p>Select this option if the Jenkins job requires parameters.</p>
 </td>
 </tr>
 
 <tr>
 <td>Job parameters</td>
 <td>
-<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the paramter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> paramter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
+<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
 </td>
 </tr>
 
@@ -94,14 +95,14 @@ None
 
 ## Team Foundation Server Plug-in
 
-You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatically collect files from the Jenkins workspace and download them into the build. 
+You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatically collect files from the Jenkins workspace and download them into the build.
 
 To set it up:
 
 <ol>
 <li>Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
 </li>
-<li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for TFS/VSTS</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
+<li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for Azure Pipelines/TFS</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
 </li>
 <li>On the Jenkins Queue Job build task enable the <b>Capture console output and wait for completion</b> to collect results from the root level job, or the <b>Capture pipeline output and wait for pipeline completion</b> to collect results from all pipeline jobs.
 </ol>
@@ -111,7 +112,7 @@ Results will be downloaded to the <b>$(Build.StagingDirectory)/jenkinsResults/&l
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

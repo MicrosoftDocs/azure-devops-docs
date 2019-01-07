@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2013'
 
 # Grant permissions to manage extensions
 
-**VSTS** | **TFS** 
+**Azure DevOps Services** | **TFS** 
 
 ::: moniker range="vsts"
 
 ## Grant management permissions 
 
-To grant permissions to manage extensions (install, disable/enable, review and approve extension requests) for an on-prem collection or Visual Studio Team Services (VSTS) account, go to the collection/account level Extension settings hub:
+To grant permissions to manage extensions (install, disable/enable, review and approve extension requests) for an on-prem collection or Azure DevOps Services organization, go to the collection/organization level Extension settings hub:
 
 ![Extension settings hub](../_img/manage-permissions/extensions-settings.png)
 

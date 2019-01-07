@@ -1,6 +1,6 @@
 ---
-title: Integrate with service hooks | VSTS
-description: Perform tasks with other services when events happen in VSTS projects
+title: Integrate with service hooks | Azure DevOps Services
+description: Perform tasks with other services when events happen in Azure DevOps Services projects
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Integrate with service hooks
 
-Service hooks enable you to perform tasks on other services when events happen in your VSTS
+Service hooks enable you to perform tasks on other services when events happen in your Azure DevOps Services
 projects. For example, create a card in Trello when a work item is created 
 or send a push notification to your team's mobile devices when a build fails. Service hooks 
 can also be used in custom apps and services as a more efficient way to drive activities 
@@ -22,7 +22,7 @@ when events happen in your projects.
 
 ## Available services
 
-> These services are available as the target of service hooks. To learn about others apps and services that integrate with VSTS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#VSTS)
+> These services are available as the target of service hooks. To learn about others apps and services that integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#AzureDevOpsServices)
 
 Build and release                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
@@ -30,11 +30,11 @@ Build and release                  |  Collaborate 	                    | Custome
 [Bamboo](./services/bamboo.md)	   |	[Flowdock](./services/flowdock.md)	|	[Zendesk](./services/zendesk.md) 		|			|	[Azure Storage](./services/azure-storage.md)
 [Jenkins](./services/jenkins.md)   |	[HipChat](./services/hipchat.md)	|											|			|	[Web Hooks](./services/webhooks.md) |
 [MyGet](./services/myget.md)	   |	[Hubot](./services/hubot.md)		|											|			|	[Zapier](./services/zapier.md) |
-								   |	[Slack](./services/slack.md)		|											|			|
+								   |	[Slack](./services/slack.md)		|											|			| |
 
 ## Create a subscription
 
-When you integrate one of these services with VSTS, 
+When you integrate one of these services with Azure DevOps Services, 
 you have to create a new subscription, something like this. In many cases, 
 you have to do some work in the other service, too. For specific details, 
 look at the information on the service that you're interested in.
@@ -80,16 +80,16 @@ have these permissions. To grant them to other users directly, use **tfssecurity
 from the command line. For example:
 
 ```
-tfssecurity /a+ /collection:https://fabrikam.visualstudio.com/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 ViewSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
+tfssecurity /a+ /collection:https://dev.azure.com/fabrikam/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 ViewSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
 and
 
 ```
-tfssecurity /a+ /collection:https://fabrikam.visualstudio.com/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
+tfssecurity /a+ /collection:https://dev.azure.com/fabrikam/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
-The GUID is the ID of the project. You can get it using the [Projects](https://docs.microsoft.com/en-us/rest/api/vsts/) REST API.
+The GUID is the ID of the project. You can get it using the [Projects](/rest/api/vsts/) REST API.
 
 ####Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
@@ -110,15 +110,15 @@ don't otherwise have access to.
 
 A: Yes. Go [here](create-subscription.md) for more details.
 
-####Q: Can I remove an app's access to my account after I've authorized it?
+####Q: Can I remove an app's access to my organization after I've authorized it?
 
 A: Yes. You can revoke authorizations from your profile.
 
 1. 	Go to your profile page from http://visualstudio.com. 
 
 	Make sure you start from the Visual Studio site (http://visualstudio.com) 
-	instead of your account (```https://{account}.visualstudio.com```) because, right now, 
-	your profile accessed from your account will take you to the wrong implementation 
+	instead of your organization (```https://dev.azure.com/{orgName}```) because, right now, 
+	your profile accessed from your organization will take you to the wrong implementation 
 	of the authorizations management feature.
 
 2.	Manage your authorizations.

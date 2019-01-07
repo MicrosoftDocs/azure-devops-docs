@@ -1,22 +1,23 @@
 ---
-title: PowerShell | VSTS or Team Foundation Server
-description: Learn about how you can execute powershell scripts when you are building your code in VSTS and Team Foundation Server TFS
+title: PowerShell task
+description: Execute PowerShell scripts in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: PowerShell
+# PowerShell task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/powershell.png) Run a PowerShell script
+Use this task in a build or release pipeline to run a PowerShell script.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -24,21 +25,57 @@ monikerRange: '>= tfs-2015'
 
 ## Demands
 
-DotNetFramework
+* DotNetFramework
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/PowerShellV2.md)]
+
+The Powershell task also has a shortcut syntax in YAML:
+
+```yaml
+- powershell:  # inline script
+  workingDirectory:  #
+  displayName:  #
+  failOnStderr:  #
+  errorActionPreference:  #
+  ignoreLASTEXITCODE:  #
+  env:  # mapping of environment variables to add
+```
 ::: moniker-end
 
 ## Arguments
 
-| Argument | Description |
-| -------- | ----------- |
-| Script filename | Specify the path to the script to you want to run. The path must be a fully qualified path or a valid path relative to the default working directory. In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../build/variables.md). |
-| Arguments | Specify arguments to pass to the script. You can use ordinal or named parameters. |
-| Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
+<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file.</td></tr>
+<tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code>.</td></tr>
+<tr><td>Arguments</td><td>Arguments passed to the Powershell script.</td></tr>
+<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code>.</td></tr>
+<tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code>[$(Build.SourcesDirectory)](../../build/variables.md)</code>.</td></tr>
+<tr>
+<td>Fail on standard error</td>
+<td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
+</tr>
+<tr>
+<td>errorActionPreference</td>
+<td>Set PowerShell's error action preference. One of: <code>stop</code>, <code>continue</code>, <code>silentlyContinue</code>. Defaults to <code>stop</code>.</td>
+</tr>
+<tr>
+<td>Ignore $LASTEXITCODE</td>
+<td>By default, the last exit code returned from your script will be checked and, if non-zero, treated as a step failure. If you don't want this behavior, set this to <code>true</code>.</td>
+</tr>
+<tr>
+<td>Env[ironment variables]</td>
+<td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+```yaml
+- script: echo $env:MYSECRET
+  env:
+    MySecret: $(Foo)
+```
+</td>
+</tr>
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+</table>
 
 ## Examples
 
@@ -46,7 +83,7 @@ DotNetFramework
 
 Create ```test.ps1``` at the root of your repo:
 
-```powershell
+```ps
 Write-Host "Hello World from $Env:AGENT_NAME."
 Write-Host "My ID is $Env:AGENT_ID."
 Write-Host "AGENT_WORKFOLDER contents:"
@@ -76,7 +113,7 @@ On the Build tab of a build pipeline, add this task:
 
 * Script
 
- ```powershell
+ ```ps
 Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 ```
 
@@ -84,16 +121,16 @@ Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 
 * Script
 
- ```powershell
+ ```ps
 # Writes a warning to build summary and to log in yellow text
-Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Team Build logging command.")"
+Write-Host  "$("##vso[task.LogIssue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
 ```
 
 ![icon](_img/powershell.png) Write warning using PowerShell command
 
 * Script
 
- ```powershell
+ ```ps
 # Writes a warning to log preceded by "WARNING: "
 Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")"
 ```
@@ -110,7 +147,7 @@ Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")
 
 * Script
 
- ```powershell
+ ```ps
 Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 ```
 
@@ -118,15 +155,15 @@ Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 
 * Script
 
- ```powershell
+ ```ps
 # Writes an error to the build summary and to the log in red text
-Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Team Build logging command reported that") $($env:ErrorMessage)"
+Write-Host  "$("##vso[task.LogIssue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
 ```
 
 > [!TIP]
 > 
 > If you want this error to fail the build, then add this line:
- ```powershell
+ ```ps
 exit 1
 ``` 
 
@@ -134,7 +171,7 @@ exit 1
 
 * Script
 
- ```powershell
+ ```ps
 # Writes an error to the build summary and the log with details about the error
 Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorMessage)"
 ```
@@ -146,11 +183,11 @@ Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorM
 
 ### ApplyVersionToAssemblies.ps1
 
-[Use a script to customize your build process](../../scripts/powershell.md)
+[Use a script to customize your build pipeline](../../scripts/powershell.md)
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

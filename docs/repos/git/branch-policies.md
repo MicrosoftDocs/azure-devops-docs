@@ -1,5 +1,6 @@
 ---
-title: Protect your Git branches with policies | VSTS & TFS
+title: Protect your Git branches with policies
+titleSuffix: Azure Repos
 description: Branch policies provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.prod: devops
@@ -8,37 +9,38 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 07/13/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Improve code quality with branch policies
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
 Branch policies help teams protect their important [branches](branches.md) of development. 
 Policies enforce your team's code quality and change management standards.
 
 ## Configure branch policies
 
-0. Open the **Branches** view in the **Code** area on the web portal while viewing your repo.
+1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-	![Open up the Branches view on the web](_img/branches/branches_nav.png)
+  ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
-0. Locate your branch in the view. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+  If you're not using the new navigation preview, select **Code**, **Branches**.
 
-0. Open the context menu for the branch by selecting the **...** icon. Select **Branch policies** from the context menu.
+  ![Open up the Branches page on the web](_img/branches/branches_nav.png)
 
-	![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)   
+1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-0. Configure your desired policies in the **Policies** tab. See the following sections in this article for descriptions for each policy type. Once your policies are configured, select **Save changes** to apply your new policy configuration.
+  ![Branches page](_img/branches/branches-page.png)
+
+1. Open the context menu for the branch by selecting the **...** icon. Select **Branch policies** from the context menu.
+
+  ![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)
+
+1. Configure your desired policies in the **Policies** page. See the following sections in this article for descriptions for each policy type. Once your policies are configured, select **Save changes** to apply your new policy configuration.
 
   ![Policies tab](_img/branch-policies/save-policy-changes.png)  
-
-
-
-
 
 <a name="require_reviewers"></a>
    
@@ -83,8 +85,6 @@ Configure a comment resolution policy for your branch by selecting **Check for c
 
 For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
 
-
-
 ## Enforce a merge strategy
 
 Maintain a consistent branch history by enforcing a merge strategy when a pull request is completed. 
@@ -105,7 +105,7 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 ## Build validation
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Even if you're using [continuous integration](/azure/devops/what-is-continuous-integration) (CI) on your development branches to catch problems early, build policies reduce 
+Even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early, build policies reduce 
 build breaks and keep your tests results passing. 
 
 When a build validation policy is enabled, a new build is queued when a new pull request is created or when changes are pushed to an existing pull request targeting this branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
@@ -177,7 +177,7 @@ When the required reviewers approve the code, you can complete the pull request.
 >- When completing a pull request, opt-in to override policies and complete a pull request even if the current set of branch policies is not satisfied.
 >- Push directly to a branch even if that branch has branch policies set. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
 >
->[In VSTS](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission is removed and its functionality divided into the following two new permissions:
+>[In Azure DevOps Services](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission is removed and its functionality divided into the following two new permissions:
 >
 >- **Bypass policies when completing pull requests**
 >- **Bypass policies when pushing**
@@ -219,7 +219,6 @@ No. After you set up a branch policy, you cannot directly push changes to the br
 
 When a pull request is made into a branch with branch policies configured, the **Set auto-complete** button is enabled for the pull request. If you don't expect any problems with your changes and you want your pull request to complete once all policies are met, you can set the pull request to [automatically complete](pull-requests.md#complete-the-pull-request). 
 
-
 <a name="how_works"></a>
 
 #### When are the conditions set in branch policies checked?
@@ -229,8 +228,6 @@ If there is a build triggered by the policy, the build status is set to waiting 
 
 #### Can I use XAML build definitions in branch policies?
 You cannot use [XAML build definitions](https://msdn.microsoft.com/library/ms181715%28v=vs.120%29.aspx) in branch policies.
-
-
 
 #### What type of wildcard characters are supported when configuring required code reviewers?
 Single asterisks (`*`) are supported, and will match any number of characters, including both forward-slashes (`/`) and back-slashes (`\`).  Question marks (`?`) will match any single character.  
@@ -245,10 +242,8 @@ Examples:
 #### Are the required code reviewer paths case-sensitive?
 No, branch policies are not case-sensitive at this time.
 
-
-
 #### How can I configure multiple users as required reviewers, but only require that one of them approve?
-You can [add the users to a group](../../organizations/accounts/add-team-members-vs.md), and then add the group as a reviewer.  Any member of the group can then approve on behalf of the group to meet the policy requirement.
+You can [add the users to a group](../../organizations/accounts/add-team-members.md), and then add the group as a reviewer.  Any member of the group can then approve on behalf of the group to meet the policy requirement.
 
 #### I have the exempt from policy permission set, why am I still seeing policy failures in the pull request status?
 Even for users that are exempt from policy enforcement, the configured policies are still evaluated when changes are added to a pull request.  For exempt users, policy status is advisory only and will not block completion of the pull request.

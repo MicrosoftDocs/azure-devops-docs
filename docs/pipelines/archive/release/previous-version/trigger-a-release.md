@@ -1,5 +1,6 @@
 ---
 title: Trigger a release in Release Management
+ms.custom: seodec18
 description: Trigger a release from a build in Release Management server/client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: A6079FE1-80FC-4C98-8F4A-832AB99CC5D3
 ms.prod: devops
@@ -17,9 +18,9 @@ monikerRange: '>= tfs-2013'
 [!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
 
 Start a release automatically when you build your app using Team Foundation 
-Build (TFBuild). You can choose which stage of your release process to start 
+Build (TFBuild). You can choose which stage of your release pipeline to start 
 with. To trigger a release from a build, you must configure both your build 
-process and your release path. 
+process and your release path.
 
 **Note**: This procedure applies only to releases that use a deployment agent 
 and a Build template in TFS. For information about other release scenarios, 
@@ -31,7 +32,7 @@ If you haven't created your release path yet, go
 Also, if you haven't yet set up your build system, 
 **[do that now](https://msdn.microsoft.com/library/ms252495.aspx)**.
 
-## Configure your build process
+## Configure your build pipeline
  
 1. If you don't have permission to edit build definitions, 
    **[get them now](https://msdn.microsoft.com/library/ms252587%28v%3Dvs.140%29.aspx)**.
@@ -53,30 +54,30 @@ Also, if you haven't yet set up your build system,
 
    If the **Release** section doesn't appear:
 
-   * [Q: I use the default template. Which build process template should I use for Release Management and how do I add it to TFS?](#add_template) 
+   * [Q: I use the default template. Which build pipeline template should I use for Release Management and how do I add it to TFS?](#add_template) 
 
-   * [Q: I use the upgrade template. Which build process template should I use for Release Management?](#upgrade_template) 
+   * [Q: I use the upgrade template. Which build pipeline template should I use for Release Management?](#upgrade_template) 
 
-   * [Q: I use a custom build process template. How do I add the workflow logic to trigger a release?](#custom_build_template) 
+   * [Q: I use a custom build pipeline template. How do I add the workflow logic to trigger a release?](#custom_build_template) 
 
    If you have components with configuration files that need different values 
    based on the target environment, you can 
    **[tokenize the configuration file](#token_files)**.
 
-1. Specify any other settings that your build process requires and then save 
+1. Specify any other settings that your build pipeline requires and then save 
    your build definition.
 
 ## Configure your release template
  
 1. If you haven't installed the Release Management client for Visual Studio 
    on the build server, 
-   **[do that now](install-release-management/install-server-and-client.md#installclient)**. 
+   **[do that now](install-release-management/install-server-and-client.md#installclient)**.
 
 1. Configure the Release Management client to connect to the Release 
    Management server.
 
 1. From your release template, choose the build definition that you have set 
-   to trigger a build and select the check box to enable the build process to 
+   to trigger a build and select the check box to enable the build pipeline to 
    trigger a release.
 
    ![Properties page for a release template ](_img/trigger-release-02.png)
@@ -108,7 +109,7 @@ Also, if you haven't yet set up your build system,
 * [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](http://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/how-to-trigger-deployments-to-chef-managed-environment-from-release-management.aspx) 
 
 <a name="add_template"></a>
-### Q: I use the default template. Which build process template should I use for Release Management and how do I add it to TFS?
+### Q: I use the default template. Which build pipeline template should I use for Release Management and how do I add it to TFS?
   
 **A**: If you are using the default template, all you need to do is replace it 
 with the corresponding release management process template.
@@ -145,20 +146,20 @@ with the corresponding release management process template.
    template that you just added.)
 
 <a name="custom_build_template"></a>
-### Q: I use a custom build process template. How do I add the workflow logic to trigger a release?
+### Q: I use a custom build pipeline template. How do I add the workflow logic to trigger a release?
 
-**A**: Add sections to your custom build process template to provide the 
+**A**: Add sections to your custom build pipeline template to provide the 
 workflow logic. Download the snippets file with these sections 
 **[here](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/09/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build.aspx)**.
-Use the snippets to add these arguments to your build process template: 
+Use the snippets to add these arguments to your build pipeline template: 
 **ConfigurationsToRelease**, **ReleaseBuild**, **ReleaseTargetStage**, 
 **DropBuild**.
 
-Save the build process template. If you use Team Foundation version control, 
-check it in. If you use Git, commit and push the build process template.
+Save the build pipeline template. If you use Team Foundation version control, 
+check it in. If you use Git, commit and push the build pipeline template.
 
 <a name="upgrade_template"></a>
-### Q: I use the upgrade template. Which build process template should I use for Release Management?
+### Q: I use the upgrade template. Which build pipeline template should I use for Release Management?
 
 **A**: Learn what you need to do 
 **[here](http://blogs.msdn.com/b/visualstudioalm/archive/2014/01/31/how-to-modify-the-upgradetemplate-xaml-to-enable-releasing-from-a-build.aspx)**.
@@ -224,7 +225,7 @@ package location at the time of deployment.
 <a name="token_files"></a>
 ### Q: How can I handle configuration files that need different values based on the target environment?
 
-**A**: Use tokenized configuration files. 
+**A**: Use tokenized configuration files.
 For each configuration file in your solution that requires different values 
 in different environments, create a tokenized version of that file.
 

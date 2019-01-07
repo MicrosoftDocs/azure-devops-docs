@@ -1,5 +1,5 @@
 ---
-title: Explore work items when using exploratory testing - TestTools
+title: Explore work items when exploratory testing
 description: Test tools - Manual and exploratory testing - explore work items from the Kanban board or by using the Microsoft Test & Feedback extension
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.prod: devops
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Explore work items with the Test &amp; Feedback extension
- 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+
+[!INCLUDE [version-header](_shared/version-header.md)]
 
 Use the Test &amp; Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 

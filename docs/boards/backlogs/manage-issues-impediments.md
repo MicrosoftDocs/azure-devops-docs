@@ -1,17 +1,16 @@
 ---
-title: Manage issues or impediments 
-titleSuffix: VSTS & TFS 
-ms.global_help.title: Manage issues or impediments 
-ms.global_help.keywords: ms.vss-work-web.work-items-hub, 6
-description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Visual Studio Team Services (VSTS) and Team Foundation 
+title: Add and manage issues or impediments 
+titleSuffix: Azure Boards 
+description: Track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards & TFS
+ms.custom: "boards-backlogs, seodec18"   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.topic: get-started-article
-ms.date: 03/20/2018
+ms.topic: quickstart
+ms.date: 11/19/2018
 ---
 
 # Manage issues or impediments 
@@ -31,25 +30,40 @@ In this topic you'll learn:
  
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]   
 
-## Add an issue or impediment 
-
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
 
-::: moniker range=">= tfs-2017"
-<!---#### VSTS, TFS 2018, TFS 2017 (new form enabled) --> 
-From **Work**, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+## Add an issue or impediment 
 
-<img src="_img/cyb-new-work-item-impediment.png" alt="VSTS, TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+
+# [New navigation](#tab/new-nav)  
+
+::: moniker range=">= azdevserver-2019"  
+
+Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
+
+> [!div class="mx-imgBorder"]  
+> ![Add issue, new nav](_img/manage-issues/add-issue-vert.png)   
+
+Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
+
+::: moniker-end   
+
+::: moniker range=">= tfs-2013 <= tfs-2018"   
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end   
+
+# [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+
+From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+
+<img src="_img/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   
-<!--- Or, from the Queries page, you can add a new work item.  
-
-<img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 1px solid #C3C3C3;" />  
--->
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-<!---#### TFS 2015 | TFS 2013 (old web form) --> 
 
 From the Queries page, choose Impediment from the **New** drop down menu.
 
@@ -57,15 +71,21 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ::: moniker-end
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
+---
 
 <a id="customize"> </a>
 ## Customize issues tracking
 
 [!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
+
+::: moniker range="<= tfs-2018"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 

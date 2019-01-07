@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts ProjectChangeType API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts ProjectChangeType API | Extensions for Azure DevOps Services
 ms.assetid: ea68debd-11f8-d513-0635-487e6b795c0f
 ms.prod: devops
 ms.technology: devops-ecosystem

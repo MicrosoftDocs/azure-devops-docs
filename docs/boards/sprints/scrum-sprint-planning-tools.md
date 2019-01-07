@@ -1,7 +1,8 @@
 ---
 title: Scrum and sprint planning tools
-titleSuffix: VSTS & TFS 
-description: Understand the tools available to you to support Scrum and working in sprints in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards 
+description: Understand the tools available to you to support Scrum and working in sprints in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -9,19 +10,20 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 08/19/2017
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 
 # Scrum and sprint planning tools
  
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-
+<!--- ADD WIDGET INFO AS WELL --> 
 
 <a id="sprint-tools">   </a>
 
-Once you've [defined and selected the sprints for your team](../../organizations/settings/set-team-defaults.md), you can start using the following tools to plan your sprint.  
+Once you've [defined iteration paths (aka sprints) and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md), you can start using the following tools to plan your sprint.  
 
 
 ## Track team capacity
@@ -70,19 +72,19 @@ At the start of each sprint, you'll want to plan the work that your team can com
 
 
 ##  Update tasks, monitor burndown 
-During a sprint, your team can use the task board and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
+During a sprint, your team can use the taskboard and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
  
 <table valign="top">
 <tr valign="top" > 
 <td width="35%">
 <p>
-<b>Task board</b>
+<b>Taskboard</b>
 </p>
-<p>Your [task board](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. </p>
+<p>Your [Taskboard](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. </p>
 <p>Updating tasks daily or several times a week yields a smoother burndown chart. </p>
 </td>
 <td width="520px">
-![Task board](_img/ALM_DS_Task_board_S.png)
+![taskboard](_img/ALM_DS_Task_board_S.png)
 </td>
 </tr>
 <tr valign="top" > 
@@ -110,7 +112,7 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 <tr valign="top" > 
 <td>
 <p>
-<b>Velocity chart</b>
+<b>**Velocity chart**</b>
 </p>
 <p>Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)  </p>
 <p>Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. </p>
@@ -123,10 +125,10 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 <tr valign="top" > 
 <td>
 <p>
-<b>Forecast tool</b>
+**Forecast tool**
 </p>
 <p>You can use the forecast tool to get an idea of how many and which items you can complete within a sprint. </p>
-<p>By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown. </p>
+<p>*By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown. *</p>
 </td>
 <td>
 ![Forecast tool](_img/forecast-tool.png)
@@ -134,29 +136,13 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 </tr>
 </table>  
 
-## How selected sprints show up on the backlog 
-Each sprint that you select for your team provides access to a sprint backlog, task board, and other Agile tools for planning and tracking work. 
-
-<a id="ts-sprints" /> 
-**VSTS, TFS 2017**
-
-For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
-
-<img src="_img/define-sprints/selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
-
-**TFS 2015**
-<a id="tfs2015-sprints" />
-
-For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
-
-<img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 ## Related articles 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../../organizations/settings/set-team-defaults.md) .  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path.  
 
-- [What is Scrum?](/azure/devops/agile/what-is-scrum)
+- [About Sprints, Scrum and project management](scrum-overview.md)
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Define iterations for a project](../../organizations/settings/set-iteration-paths-sprints.md) 
-- [Configure team settings](../../organizations/settings/configure-team-settings.md)  
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
 
-<!--- ADD WIDGET INFO AS WELL --> 

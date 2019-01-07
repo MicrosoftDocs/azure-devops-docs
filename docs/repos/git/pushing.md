@@ -1,5 +1,6 @@
 ---
-title: Sync your changes to a remote Git repo | VSTS & TFS
+title: Sync your changes to a remote Git repo
+titleSuffix: Azure Repos
 description: Using Git Push to share code with Git.
 ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
 ms.prod: devops
@@ -8,14 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
+# Share code with push
 
-#  Share code with push
-
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Share changes made in [commits](commits.md) and [branches](branches.md) using the `push` command. 
 Push your branches to the remote repository, where Git takes the commits and adds them to an existing branch on the remote or creates a new branch with the same commits as your local branch.
@@ -38,14 +38,19 @@ In this tutorial you learn how to:
 
 # [Visual Studio](#tab/visual-studio)
 
-In **Team Explorer**, open the **Sync** view. The view lists outgoing commits and will present you with one of two links to push them to your remote repo:
+0. Open up the **Synchronization** view in Team Explorer by selecting the **Home** icon and choosing **Sync**. 
 
-- **Publish** when there is not a branch on the remote repo associated with the current local branch. This will create a branch with the same name on the remote repo
-and push the commits to it. Later you will **Push**, not publish changes when using this branch since the relationship between the branch on the local branch and the remote repo exists. 
+  ![Synchronization](_img/gitquickstart-vs2017/sync.png)
 
-- **Push** when there is a relationship between the local branch and  the remote repo. Clicking this will `push` the commits to the remote branch.    
+  You can also navigate to the **Synchronization** view from the **Changes** view by choosing **Sync** immediately after making a commit.
 
-    ![Pushing Changes with Git in Visual Studio](_img/vspush.gif)
+  ![Synchronization](_img/gitquickstart-vs2017/commit-created-locally.png)
+
+0. Select **Push** to share your commit with the remote repository.
+
+  ![Push](_img/gitquickstart-vs2017/push-to-origin.png)
+
+  If this is your first push to the repository you'll see the following message in place of the outgoing commits list: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` Select **Push** to push your changes to a new branch on the remote repository and set the upstream branch. The next time you push changes you'll see the list of commits.
 
 # [Command Line](#tab/command-line)
 

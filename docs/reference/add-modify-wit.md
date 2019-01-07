@@ -1,7 +1,7 @@
 ---
 title: Add or modify a work item type (WIT) 
-titleSuffix: VSTS & TFS 
-description: Modify or add a work item type to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps & TFS 
+description: Modify or add a work item type to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
@@ -25,13 +25,29 @@ See [Add or modify a field](add-modify-field.md) if you want to add a custom fie
 Most WIT customizations are made to the WIT definition, however, other customization are made through the Process Configuration definition or via the **witadmin** command line tool.  
 
 > [!NOTE]    
-><b>Feature availability: </b>You can exercise some features only from an on-premises TFS and are noted as such. 
+><b>Feature availability: </b>You can exercise some features only from an on-premises deployment and are noted as such. 
 
-> [!div class="mx-tdBreakAll"]  
-> |WIT definition  |ProcessConfiguration definition  |Command line change| 
-> |-------------|----------|----------|    
-> |- [Add or modify a field to an existing WIT](#modify-field)<br/>- [Add a custom WIT, modify a WIT](#add-wit)<br/>- [Change the workflow (states, reasons, transitions)](#modify-workflow)<br/>- [Modify the work item form](xml/change-work-item-form-layout.md) |- [Specify the WIT color](#change-wit-color) <br/>- [Specify the WIT icon](#change-wit-color) (TFS 2017.2)<br/>- [Specify the workflow state color](#change-wit-color)<br/>- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)<br/>- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  <br/>- [Add a portfolio backlog ](add-portfolio-backlogs.md)|- [List WITs](witadmin/witadmin-import-export-manage-wits.md)<br/>- [Deactivate or disable a WIT](#deactivate-wit)<br/>- [Rename a WIT](#rename-wit) (TFS only)<br/>- [Delete a WIT](#delete-wit) (TFS only) |
- 
+#### WIT definition  
+- [Add or modify a field to an existing WIT](#modify-field)
+- [Add a custom WIT, modify a WIT](#add-wit)
+- [Change the workflow (states, reasons, transitions)](#modify-workflow)
+- [Modify the work item form](xml/change-work-item-form-layout.md)
+
+#### ProcessConfiguration definition  
+
+- [Specify the WIT color](#change-wit-color)
+- [Specify the WIT icon](#change-wit-color) (TFS 2017.2 and later versions)
+- [Specify the workflow state color](#change-wit-color)
+- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)
+- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)
+- [Add a portfolio backlog ](add-portfolio-backlogs.md)
+
+#### Command line change
+- [List WITs](witadmin/witadmin-import-export-manage-wits.md)
+- [Deactivate or disable a WIT](#deactivate-wit)
+- [Rename a WIT](#rename-wit) (on-premises deployments only)
+- [Delete a WIT](#delete-wit) (on-premises deployments only) 
+
 
 <a id="add-wit">  </a>
 <a id="edit-wit">  </a>
@@ -170,8 +186,8 @@ Other related topics or resources:
 ### Required permissions
 
 - To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
-- (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
-- (VSTS)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
+- (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
+- (Azure DevOps Services, Hosted XML)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
   
 To get added as an administrator, see [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 
@@ -204,7 +220,7 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 ### Enable features after upgrade (On-premises XML) 
 
 > [!NOTE]    
-><b>Feature availability: </b>You can exercise the Configure Features Wizard only from an on-premises TFS. 
+> You can exercise the Configure Features Wizard only from an on-premises deployment. 
 
 What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
@@ -218,7 +234,7 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 ### Rename a WIT (On-premises XML) 
 
 > [!NOTE]    
-><b>Feature availability: </b>You can exercise **witadmin renamewitd** only from an on-premises TFS. 
+> You can exercise **witadmin renamewitd** only from an on-premises deployment. 
 
 To rename an existing WIT use **witadmin renamewitd**. For example, you can rename a WIT labeled "QoS Item" to "Service Agreement."
 

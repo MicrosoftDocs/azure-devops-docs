@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Manage change 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
@@ -8,13 +8,13 @@ ms.assetid: 9c6fde5a-fdbd-4ac4-bd29-8049ff316351
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
 ---
 
 # Manage change
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use change request work items to track and control all changes to the product and supporting systems. All change requests are initiated as the result of a deviation from the baseline, which consists of the original requirements that were identified for the project. For example, if a meeting with a user uncovers new requirements, a change request should be created to propose updating the requirements baseline. For more information about CMMI see [Background to CMMI](guidance-background-to-cmmi.md).  
   

@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestConfiguration API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestConfiguration API | Extensions for Azure DevOps Services
 ms.assetid: 9f166ac5-4400-e1c5-419a-d04d5a77822b
 ms.prod: devops
 ms.technology: devops-ecosystem

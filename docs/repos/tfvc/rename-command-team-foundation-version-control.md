@@ -1,5 +1,6 @@
 ---
 title: Rename Command (Team Foundation Version Control)
+titleSuffix: Azure Repos
 description: Rename Command (Team Foundation Version Control)
 ms.assetid: 5d754d91-41b0-40bd-a57a-aa22518deb23
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Rename Command (Team Foundation Version Control)
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **rename** command changes the name or the path of a file or folder. You can use the **rename** command or the aliases **move** or **ren**, to move a file or folder to a new location.
 

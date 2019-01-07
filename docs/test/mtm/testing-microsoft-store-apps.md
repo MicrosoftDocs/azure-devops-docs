@@ -1,5 +1,5 @@
 ---
-title: Testing Microsoft Store apps
+title: Test Microsoft Store apps
 description: Manual and exploratory testing - Testing Microsoft Store apps
 ms.assetid: e10d1cad-ebea-43ed-92ac-3391e5119fe7
 ms.prod: devops
@@ -8,13 +8,16 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Testing Microsoft Store apps
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
 You have two options if you want to test Microsoft Store apps on a phone, tablet, or other device:  
   
@@ -30,7 +33,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   
 1. If possible, use the same user credentials or the same Microsoft Live ID on the Windows device and on the computer that is running Microsoft Test Manager. If the user is different, the machine that you are running Microsoft Test Manager from will display a credentials dialog box when you try to connect.  
   
-1. Install the Remote Debugger on the device that you want to test. See [Installing the Remote Debugger](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine#BKMK_download).
+1. Install the Remote Debugger on the device that you want to test. See [Installing the Remote Debugger](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine#BKMK_download).
    (This is only supported for Windows client operating systems. Windows Server 2012 is not supported.)  
   
    The Microsoft Test Tools Adapter Configuration Tool will appear on the device as a new tile.  
@@ -61,7 +64,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   
 1. Choose **Install Microsoft Store App**, and then enter the path and name of the .appx file for the Microsoft Store app that you want to install.  
   
-   ![Install Microsoft Store app from MTM](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
+   ![Install Microsoft Store app from Microsoft Test Manager](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
   
 1. Follow the steps in the installation wizard.  
   

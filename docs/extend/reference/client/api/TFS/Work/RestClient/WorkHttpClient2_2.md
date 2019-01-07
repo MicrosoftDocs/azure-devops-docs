@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/RestClient WorkHttpClient2_2 API | Extensions for Visual Studio Team Services
+title: TFS/Work/RestClient WorkHttpClient2_2 API | Extensions for Azure DevOps Services
 ms.assetid: 5e8b67ac-1688-5e70-deb8-860c5ca502e5
 ms.prod: devops
 ms.technology: devops-ecosystem

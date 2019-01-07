@@ -7,4 +7,4 @@
 | Unlist/deprecate packages                     |          | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
 | Delete/unpublish package                      |          |          | ![checkmark](_img/checkmark.png) |
 | Edit feed permissions                         |          |          | ![checkmark](_img/checkmark.png) | 
-| [Rename and delete feed](/vsts/package/feeds/edit-feed)        |          |          | ![checkmark](_img/checkmark.png) |
+| [Rename and delete feed](/azure/devops/artifacts/feeds/edit-feed)        |          |          | ![checkmark](_img/checkmark.png) |

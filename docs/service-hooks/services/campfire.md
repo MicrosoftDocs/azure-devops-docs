@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Campfire with VSTS
-description: Use Campfire with your VSTS account
+title: Campfire with Azure DevOps Services
+description: Use Campfire with your Azure DevOps Services organization
 ms.assetid: 38a3f329-96c5-49a2-a88d-523356c496f0
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Notifications and Campfire
 
-Post messages to a room in Campfire in response to events from VSTS.
+Post messages to a room in Campfire in response to events from Azure DevOps Services.
 For example, you can post a message when a work item is created or changed, or a build occurs.
 
 ## Get a Campfire authorization token
@@ -27,13 +27,13 @@ For example, you can post a message when a work item is created or changed, or a
 
 ## Post messages to a room
 
-0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
 	Click **Create Subscription**.
 
-3. Configure the VSTS event that will post a message in a Campfire room.
+3. Configure the Azure DevOps Services event that will post a message in a Campfire room.
 
    <img alt="Configure event" src="./_img/campfire/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -50,12 +50,12 @@ For example, you can post a message when a work item is created or changed, or a
     <img alt="Results" src="./_img/campfire/results.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
 
-<!-- BEGINSECTION class="m-qanda" -->
+<!-- BEGINSECTON class="m-qanda" -->
 
 ####Q: Can I programmatically create subscriptions?
 

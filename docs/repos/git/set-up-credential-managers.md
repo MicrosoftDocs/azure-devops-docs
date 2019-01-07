@@ -1,6 +1,7 @@
 ---
-title: Connect to your Git repos using credential managers | VSTS & TFS
-description: Authenticate to VSTS and TFS Git repos using credential managers
+title: Connect to your Git repos using credential managers
+titleSuffix: Azure Repos
+description: Authenticate to Azure DevOps Services and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -8,17 +9,16 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
+#  Use Git Credential Managers to Authenticate to Azure Repos
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-#  Use Git Credential Managers to Authenticate to VSTS
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+Git Credential Managers simplify authentication with your Azure DevOps Services/TFS Git repos. Credential Managers let you use the same credentials that you use for the Azure DevOps Services/TFS web portal and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (Azure AD). In addition to supporting multi-factor authentication with Azure DevOps Services, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).
 
-Git Credential Managers simplify authentication with your VSTS/TFS Git repos. Credential Managers let you use the same credentials that you use for the VSTS/TFS web portal and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (AAD). In addition to supporting multi-factor authentication with VSTS, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).
-
-VSTS provides IDE support for MSA and AAD authentication through [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md), [IntelliJ and Android Studio with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in), and [Eclipse (with the Team Explorer Everywhere plug-in)](https://github.com/Microsoft/team-explorer-everywhere). If your environment doesn't have an integration available, configure your IDE  with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect with your to your repos.
+Azure DevOps Services provides IDE support for MSA and Azure AD authentication through [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md), [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/azure/devops/java/download-intellij-plug-in), and [Eclipse (with the Team Explorer Everywhere plug-in)](https://github.com/Microsoft/team-explorer-everywhere). If your environment doesn't have an integration available, configure your IDE  with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect with your to your repos.
 
 ## Install the Git Credential Manager
  
@@ -38,11 +38,11 @@ On macOS and Linux, there are [several install options](https://github.com/Micro
 
 ## Using the Git Credential Manager
 
-When you connect to a VSTS Git repository from your Git client for the first time, the credential manager  prompts for your Microsoft Account or Azure Active Directory credentials. If your account has multi-factor authentication enabled, you are prompted to go through that experience as well.
+When you connect to a Git repo in Azure Repos from your Git client for the first time, the credential manager  prompts for your Microsoft Account or Azure Active Directory credentials. If your account has multi-factor authentication enabled, you are prompted to go through that experience as well.
 
 ![Git Credential Manager prompting during Git pull](_img/gcm_login_prompt.gif)
    
-Once authenticated, the credential manager creates and caches a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account won't prompt for user credentials until the token expires or is revoked through VSTS/TFS.
+Once authenticated, the credential manager creates and caches a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account won't prompt for user credentials until the token expires or is revoked through Azure DevOps Services/TFS.
 
 ### Getting help 
 

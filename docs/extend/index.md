@@ -1,6 +1,6 @@
 ---
-title: Develop extensions content index for VSTS and TFS  
-description: Index of developing extensions for VSTS and Team Foundation Server
+title: Develop extensions content index for Azure DevOps Services and TFS  
+description: Index of developing extensions for Azure DevOps Services and Team Foundation Server
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd
@@ -14,7 +14,7 @@ ms.date: 08/23/2016
 
 # Develop Extensions
 
-Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Visual Studio Team Services (VSTS). They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
+Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Azure DevOps Services. They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
 
 <a name ="customApps"/>
 
@@ -24,7 +24,7 @@ Check out the quick starts to get you started:
 
 ## Videos
 
-Develop Visual Studio Team Services extension with continuous delivery pipeline:
+Develop Azure DevOps Services extension with continuous delivery pipeline:
 
 <a href="https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3" target="_blank"><img src="_img/develop-extension-video.png" alt="Develop Extensions" width="200" /></a>
 
@@ -47,7 +47,7 @@ Develop Visual Studio Team Services extension with continuous delivery pipeline:
 
 ## Reference
 * [Manifest reference](develop/manifest.md)
-* [Build task reference](develop/build-task-schema.md)
+* [Build task reference](develop/integrate-build-task.md)
 * [Endpoint authentication schemes](develop/auth-schemes.md)
 * [Content hosting](develop/static-content.md)
 * [Modal dialog](develop/using-host-dialog.md)

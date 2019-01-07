@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IExtensionDataService API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IExtensionDataService API | Extensions for Azure DevOps Services
 description: Service which allows for getting and setting of extension data
 ms.assetid: 8692bca2-8ce7-a91f-d508-1f2f1535c4c7
 ms.prod: devops

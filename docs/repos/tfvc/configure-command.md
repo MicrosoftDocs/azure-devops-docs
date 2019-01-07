@@ -1,5 +1,6 @@
 ---
 title: Configure Command
+titleSuffix: Azure Repos
 description: Configure Command
 ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Configure Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Enables an administrator to view and change the following configuration settings for a project in the **Source Control Settings** dialog box:
 

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ExtensionState API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ExtensionState API | Extensions for Azure DevOps Services
 description: The state of an extension
 ms.assetid: e859c469-cb91-8fb4-97f6-f6472c452dd0
 ms.prod: devops

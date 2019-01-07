@@ -5,7 +5,7 @@ ms.author: alexn
 ms.date: 2/14/2018
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 description: In the Sprint 130 Update of Visual Studio Team Services (VSTS), we continue to improve our integration with tools and services that help you establish a full DevOps pipeline.
 hide_comments: true
@@ -52,7 +52,7 @@ When discussions about work items or pull requests include several people&#8212;
 
 ### Use VSTS as a symbol server
 
-VSTS Symbol Server, which enables you to host and share symbols with your organization, is now generally available. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/vsts/pipelines/symbols/) for more information.
+VSTS Symbol Server, which enables you to host and share symbols with your organization, is now generally available. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/azure/devops/pipelines/symbols/) for more information.
 
 This feature was prioritized based on a top [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
 
@@ -126,7 +126,7 @@ For now, these benefits apply only to feeds created after this announcement, unl
 
 ### View quality of a package version in the package list
 
-On the package list, you can now see the view(s) of each package version to quickly determine their quality. See the [release views](/vsts/package/concepts/views) documentation for more information.
+On the package list, you can now see the view(s) of each package version to quickly determine their quality. See the [release views](/azure/devops/artifacts/concepts/views) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Views in package list](_img/130_02.png)
@@ -158,15 +158,15 @@ We’ve made it easy for administrators to manage large groups of users by enabl
 > [!div class="mx-imgBorder"]
 ![Group licensing](_img/130_07.png)
 
-See the [large account user management roadmap post](https://blogs.msdn.microsoft.com/devops/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/) on the Microsoft DevOps Blog from last year and the [Assign access levels and extensions to users by group membership](/vsts/accounts/assign-access-levels-and-extensions-by-group-membership) documentation for more information.
+See the [large account user management roadmap post](https://blogs.msdn.microsoft.com/devops/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/) on the Microsoft DevOps Blog from last year and the [Assign access levels and extensions to users by group membership](/azure/devops/accounts/assign-access-levels-and-extensions-by-group-membership) documentation for more information.
 
 ### Reduced latency for AAD group membership changes
 
-If you are managing permissions through Azure Active Directory (AAD) group memberships, any membership changes in AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
+If you are managing permissions through Azure Active Directory (Azure AD) group memberships, any membership changes in AAD in the past may have taken 24 to 48 hours to be recognized by VSTS. This latency is now down to 1 hour, enabling you to get new team members up and running quicker.
 
 ### Manage users with Graph REST APIs Public Preview
 
-The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Azure Active Directory (AAD) user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](/vsts/integrate/api/graph/overview) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
+The Graph REST API resources allow developers to write applications that manage users, groups, and group memberships. The set of APIs cover key user management scenarios including adding a Microsoft Account (MSA) or Azure Active Directory (Azure AD) user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. See the Graph REST API [documentation](https://visualstudio.microsoft.com/docs/integrate/api/graph/overview) and [samples](https://github.com/Microsoft/vsts-dotnet-samples) for more information.
 
 ### Leave account
 

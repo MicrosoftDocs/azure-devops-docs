@@ -1,6 +1,6 @@
 ---
-title: Service hooks consumers for VSTS
-description: Service hooks consumer documentation for VSTS
+title: Service hooks consumers for Azure DevOps Services
+description: Service hooks consumer documentation for Azure DevOps Services
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.prod: devops
@@ -52,7 +52,7 @@ This action sends a generic, template notification to the specified Azure Notifi
    * Required: **Yes**
  * **tagsExpression**
    * Tags
-   * The tags expression (for targeting specific sets of devices). [Learn more](http://msdn.microsoft.com/en-us/library/windowsazure/dn530749.aspx).
+   * The tags expression (for targeting specific sets of devices). [Learn more](http://msdn.microsoft.com/library/windowsazure/dn530749.aspx).
    * Data type: **string**
    * Required: **No**
 

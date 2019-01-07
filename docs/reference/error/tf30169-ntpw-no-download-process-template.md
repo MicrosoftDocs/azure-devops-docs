@@ -1,6 +1,6 @@
 ---
-title: TF30169-The New Team Project Wizard was unable to download the process template {0}. 
-titleSuffix: VSTS & TFS
+title: TF30169-The New Team Project Wizard ... 
+titleSuffix: Azure DevOps & TFS
 description: Provides the list of errors when the New Team Project Wizard unable to download the process template.
 ms.prod: devops
 ms.technology: devops-agile

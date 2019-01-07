@@ -1,13 +1,12 @@
 ---
 title: WebpageControlOptions XML elements reference 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.date: 04/05/2017
 ---
 
@@ -26,14 +25,14 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false">
-    <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">
-        <Param Index="IndexValue" Value="Param Value" Type="Original | Current" />
-    </Link>
-    <Content>
-    <![CDATA[Contents of HTML]]>
-    </Content>
-</WebpageControlOptions>
+<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
+      <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
+      <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
+      </Link>  
+      <Content>  
+      <![CDATA[Contents of HTML]]>  
+      </Content>  
+</WebpageControlOptions>  
 ```  
   
 ## Attributes and elements  

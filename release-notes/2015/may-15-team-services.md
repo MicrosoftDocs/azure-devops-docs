@@ -2,7 +2,7 @@
 title: Build preview, updated backlog navigation, branch policies, and more... – May 15
 description: VSTS release notes for May 15 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: fbacd947-48da-4483-b04b-60170c11b221
 ms.date: 06/01/2016
@@ -22,7 +22,7 @@ The next version of our build system is now publicly available on Visual Studio 
 
 Included in the preview is support for building projects hosted in public or private GitHub repositories. You can now set up a continuous integration build in Visual Studio Online that kicks off when code is pushed to your GitHub repository. The build results page provides a link to the associated GitHub commits and the status of these commits updates based on the result of the build. You can also show the status of the build on your GitHub repository’s readme file or on your own web site. To enable, navigate to the **General** tab of your build definition and check the **Badge enabled** box. You can then embed the provided image URL onto a markdown or HTML page so users can see the latest status of the repository.
 
-To learn more, please visit [https://msdn.microsoft.com/en-us/Library/vs/alm/Build/overview](https://msdn.microsoft.com/en-us/Library/vs/alm/Build/overview).
+To learn more, please visit [https://msdn.microsoft.com/Library/vs/alm/Build/overview](https://msdn.microsoft.com/Library/vs/alm/Build/overview).
 
 ##Backlog navigation updates
 
@@ -80,7 +80,7 @@ Code review policies can be used to set a minimum number of reviewers for pull r
 
 ##OAuth support for accessing Git repos on VSO
 
-Third-party tools and services can now access Git repositories hosted in Visual Studio Online via the "vso.code" or "vso.code_write" OAuth scopes. This enables source code access from standard Git tools and enables clone, fetch, and push operations. Previously, enabling access was available only through our REST API. See [Authorize access with OAuth 2.0](https://visualstudio.microsoft.com/integrate/get-started/auth/oauth) for more details.
+Third-party tools and services can now access Git repositories hosted in Visual Studio Online via the "vso.code" or "vso.code_write" OAuth scopes. This enables source code access from standard Git tools and enables clone, fetch, and push operations. Previously, enabling access was available only through our REST API. See [Authorize access with OAuth 2.0](/azure/devops/integrate/) for more details.
 
 ##New filtering options for Git service hook events
 

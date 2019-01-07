@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Integrate VSTS with third party apps using service hooks
-description: Index of using service hooks to integrate third party apps with VSTS
+title: Integrate Azure DevOps Services with third party apps using service hooks
+description: Index of using service hooks to integrate third party apps with Azure DevOps Services
 ms.assetid: ae372488-1430-4b68-b12e-a0a09ecad685
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -12,9 +12,9 @@ author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Integrate VSTS with other applications
+# Integrate Azure DevOps Services with other applications
 
-Service hooks enable you to perform tasks on other services when events happen in your Visual Studio Team Services (VSTS) projects. For example, create a card in Trello when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
+Service hooks enable you to perform tasks on other services when events happen in your Azure DevOps Services projects. For example, create a card in Trello when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
 ## 5-minute Quickstarts 
 * [Integrate with Slack](services/slack.md)
@@ -36,7 +36,7 @@ Service hooks enable you to perform tasks on other services when events happen i
 * [Integrate with WebHooks](services/webhooks.md)
 * [Integrate with Zapier](services/zapier.md)
 * [Integrate with Zendesk](services/zendesk.md)
-* [Authorize applications with VSTS](./authorize.md)
+* [Authorize applications with Azure DevOps Services](./authorize.md)
 
 ## Troubleshooting
 * [Troubleshoot service hooks and FAQs](./troubleshoot.md)

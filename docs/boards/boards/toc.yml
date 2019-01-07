@@ -1,15 +1,22 @@
 - name: Boards (Kanban) 
   href: index.md
 - name: Overview
+  expanded: true
   items:
-  - name: About Kanban and Agile project management
+  - name: About boards & Kanban
     href: kanban-overview.md
   - name: "Backlogs, boards, & plans"
-    href: ../backlogs/backlogs-boards-plans.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
+    href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
+  - name: Start using Azure Boards
+    href: ../get-started/index.md 
 - name: Quickstarts
   items:
   - name: Kanban board quickstart
     href: kanban-quickstart.md
+  - name: Enable live updates
+    href: live-updates.md
+  - name: Drive Git development
+    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Kanban board basics
@@ -24,37 +31,38 @@
   items:
   - name: Kanban best practices
     href: best-practices-kanban.md
+  - name: Kanban key concepts
+    href: kanban-key-concepts.md
   - name: "Workflow states & state categories"
-    href: ../work-items/workflow-and-state-categories.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
+    href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
   - name: About teams and Agile tools
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
-  - name: Agile glossary
-    href: ../work-items/agile-glossary.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
-- name: How-to guides
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
+- name: How-to guides 
   items:
-
+  - name: Add tags to work items
+    href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
   - name: Add or edit columns
     href: add-columns.md
   - name: Customize cards
-    href: ../../boards/boards/customize-cards.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json  
+    href: ../../boards/boards/customize-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
   - name: WIP limits
     href: wip-limits.md
-  - name: Expedite work
+  - name: Expedite work (swimlanes)
     href: expedite-work.md
   - name: Split columns
     href: split-columns.md
   - name: Definition of done
     href: definition-of-done.md
   - name: Reorder cards
-    href: ../../boards/boards/reorder-cards.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json
+    href: ../../boards/boards/reorder-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json
   - name: Filter your Kanban board
     href: filter-kanban-board.md 
   - name: "Manage permissions (Security)"
-    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
 - name: Samples
   items:
   - name: Boards (Kanban) query examples 
-    href: ../queries/query-by-workflow-changes.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json  
+    href: ../queries/query-by-workflow-changes.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Boards (Kanban) board controls
@@ -62,11 +70,11 @@
   - name: Boards (Kanban) board keyboard shortcuts
     href: kanban-board-keyboard-shortcuts.md
   - name: Work item field index
-    href: ../work-items/guidance/work-item-field.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
+    href: ../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
   - name: "Default permissions (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
   - name: REST API, Boards
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/work/boards
+    href: /rest/api/vsts/work/boards/set%20board%20options
 - name: Resources
   items:
   - name: Backlogs

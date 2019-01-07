@@ -1,7 +1,7 @@
 ---
-title: Understand how permissions and groups are defined 
-titleSuffix: VSTS & TFS
-description: Understand how permissions are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+title: How are permissions and groups defined?
+titleSuffix: Azure DevOps & TFS
+description: Understand how permissions are managed in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/07/2018
 monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # About permissions and groups
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with VSTS, or Active Directory if integrated with TFS. 
+To access the resources you manage in Azure DevOps Services or Team Foundation Server (TFS)&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS. 
 
-Permissions may apply to a specific team project or objects within the team project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire VSTS account or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
+Permissions may apply to a specific project or objects within the project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire Azure DevOps organization or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
 
 You manage security groups and permissions from the web portal administration context. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server level to which you add groups.
 
@@ -65,11 +65,12 @@ then the parent node is not inherited, regardless of whether it is denied or all
 If it's not set, then the permissions for that node are inherited from the closest ancestor
 that has the permission explicitly set.
 
-To understand why a permission is inherited, you can pause over the permission setting, and then choose **Why?**.
+To understand why a permission is inherited, you can pause over a permission setting, and then choose **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
 
 ::: moniker range=">= tfs-2017"
 
-![Permissions, Why link](_img/about-permissions-why.png)
+> [!div class="mx-imgBorder"]  
+> ![Permissions, Why link](_img/about-permissions-why.png)
 
 A new window opens that shows the inheritance information for that permission.  
 
@@ -92,14 +93,14 @@ Use this option to disable inheritance for folders, shared queries, and other ob
  
 **Do:**  
 - Use Windows groups when managing lots of users.  
-- Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the team project.  
+- Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.  
 - When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.  
 - When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.  
 
 
 **Don't:**  
-- Don't add users to the team project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
-- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
+- Don't add users to the project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
 
@@ -108,12 +109,12 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 ## Permissions versus access levels 
 
 Permissions are different from access levels. Access levels control what features are 
-visible to users in the web portal, and are dependent on user licenses; permissions control a user's  ability to use features across TFS. 
+visible to users in the web portal, and are dependent on user licenses; permissions control a user's ability to use web portal features. 
 If you're just trying to give someone access to a team room or to Agile portfolio management 
 and test case management features, 
 you'll want to [change access levels](change-access-levels.md), not permissions.
 
-Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or security group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project or a team](add-users-team-project.md).
+Setting the access level for  users or groups doesn't provide them access to a project or the web portal. Only users or groups added to a team or security group can connect to a project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the project or a team](add-users-team-project.md).
 
 
 ## Manage large numbers of users 
@@ -126,7 +127,7 @@ and add the same groups to grant access to additional resources.
 ![Conceptual image showing defining AD groups](_img/permissions/grant-permissions.png)
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-Of course, you don't need to grant permissions for reports or the project portalif your project doesn't use SQL Server Reporting Services or a SharePoint site.
+Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
 ::: moniker-end
 
 <a name="validusers"></a>
@@ -137,29 +138,29 @@ When you add accounts of users directly to a built-in group or through a Windows
 
 -   *Server*\\Team Foundation Valid Users: All members added to server-level groups.
 -   *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
--   *TeamProjectName*\\Project Valid Users: All members added to team project-level groups.
+-   *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
 
 The default permissions assigned to these groups are primarily limited to
 read access, such as **View build resources**, **View project-level
 information**, and **View collection-level information**.
 
-This means that all users that you add to one team project can view the objects in other team projects within a collection.
+This means that all users that you add to one project can view the objects in other projects within a collection.
 If you need to restrict view access, then you can [set restrictions through the area path node](../../organizations/security/set-permissions-access-work-tracking.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
-no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.
+no users in the group will be able to access the project, collection, or deployment, depending on the group you set.
 
 ## Tools used to set permissions
 
 You set most permissions through the web portal. You can use the tools listed in the following table to set permissions.
-Different tools are used depending on whether you are setting permissions at a server, collection, or team project level.
+Different tools are used depending on whether you are setting permissions at a server, collection, or project level.
 You use the [web portal administration context](../../organizations/security/add-users-team-project.md) to set most permissions.
 
 |Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Server-level](permissions.md#server)||![check mark](../../_img/check.png)|![check mark](../../_img/check.png)|||
 |[Collection-level](permissions.md#collection)|![check mark](../../_img/check.png)|![check mark](../../_img/check.png)|![check mark](../../_img/check.png)|||
-|[Team project and test level](permissions.md#project_test)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
+|[Project and test level](permissions.md#project_test)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
 |[Build level](permissions.md#build)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
 |[Git repository](permissions.md#git-repo)|![check mark](../../_img/check.png)|||![check mark](../../_img/check.png)||
 |[Team Foundation Version Control](permissions.md#tfvc)|![check mark](../../_img/check.png)|||![check mark](../../_img/check.png)||
@@ -168,7 +169,7 @@ You use the [web portal administration context](../../organizations/security/add
 |[Work item query](permissions.md#query)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
 |[Work item tags](permissions.md#tags)|||![check mark](../../_img/check.png)|||
 |[Alerts](permissions.md#alerts)|||![check mark](../../_img/check.png)|||
-|[Release Management](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
+|[Releases](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
 |[Lab Management](permissions.md#lab)|||||![check mark](../../_img/check.png)|
 
 

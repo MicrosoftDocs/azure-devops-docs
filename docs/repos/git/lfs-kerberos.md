@@ -1,5 +1,6 @@
 ---
-title: Kerberos and Git LFS | TFS
+title: Kerberos and Git LFS
+titleSuffix: Azure Repos
 description: Using Git LFS versions older than 2.4.0 with TFS
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -13,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Kerberos authentication
 If you use TFS, Git may be using the Kerberos protocol to authenticate.
-(This doesn't apply to VSTS, which uses a different form of authentication.)
+(This doesn't apply to Azure DevOps Services, which uses a different form of authentication.)
 LFS doesn't support Kerberos, so you can get errors which say "Your user name must be of the form DOMAIN\user".
 As of Git LFS version 2.4.0, [NTLM authentication with SSPI](https://github.com/git-lfs/git-lfs/pull/2871) has been added.
 You'll no longer receive these errors and authentication will work without extra configuration.

@@ -1,6 +1,6 @@
 ---
 title: Repeat a test with different data
-description: Manual and exploratory testing - repeat a test with different data in Team Services (VSTS) and Team Foundation Server (TFS)
+description: Manual and exploratory testing - repeat a test with different data in Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Repeat a test with different data
- 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+
+[!INCLUDE [version-header](_shared/version-header.md)] 
 
 When you write a [manual test](create-test-cases.md), 
 you often want to specify that the test should be repeated several 
@@ -26,7 +26,7 @@ To do this, you insert parameters in your test steps. Along with
 the test steps, you provide a table of parameter values. You can 
 also share parameters and their data between test cases when you 
 use the web portal with TFS 2015 and later or 
-VSTS. That way you can run multiple test cases with the 
+Azure DevOps. That way you can run multiple test cases with the 
 same data.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
@@ -68,13 +68,13 @@ same data.
    shared parameter is displayed. 
  
 1. Add, edit and rename your shared parameter sets in the 
-   **Parameters** tab. View the test cases that reference 
+   **Parameters** page. View the test cases that reference 
    them in the **Test cases** pane.
 
    ![Adding, editing, viewing, and renaming a shared parameter](_img/repeat-test-with-different-data/repeat-test-with-different-data-05.png)
  
 1. Each shared parameter set is a work item. Open the **Properties**
-   tab to view or make changes to this work item. For example, 
+   page to view or make changes to this work item. For example, 
    you can assign owners and track changes.
 
 >You can't add more than one shared parameter set to a single test case. If two test cases share similar data, for example, one test case needs
@@ -136,7 +136,7 @@ values, and then play it back for the other sets.
    verify the results. 
 
 Record and playback doesn't work with all applications. For details, see 
-[Supported Configurations and Platforms for Coded UI Tests and Action Recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+[Supported Configurations and Platforms for Coded UI Tests and Action Recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 ## See also
 

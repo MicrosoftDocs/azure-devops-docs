@@ -1,15 +1,17 @@
 ---
-title: System and default fields index
-titleSuffix: VSTS & TFS
-description: Index to all fields used in the Agile, Scrum, and CMMI processes and process templates for Visual Studio Team Services & Team Foundation Server 
+title: Index of default and system work item fields 
+titleSuffix: Azure Boards
+description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
-ms.topic: reference   
+ms.topic: reference  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/26/2017
----
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
+--- 
 
 # Work item field index  
 
@@ -17,9 +19,13 @@ ms.date: 05/26/2017
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
-To support additional tracking needs, you can define your own custom work item fields. For more information, see:  
-- **VSTS**:  [Customize process](../../../organizations/settings/work/customize-process.md)  
-- **TFS**: [Modify or add a custom field](../../../reference/add-modify-field.md)  
+::: moniker range="vsts"  
+To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevserver-2019"  
+To support additional tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
+::: moniker-end  
 
 
 ## Alphabetical index 
@@ -32,24 +38,226 @@ Values in parenthesis indicate the following:
 - **TCM**: Used to support Test case management   
 
 
-> [!div class="mx-tdBreakAll"]  
-> |  A through C | D through Q| R through W | 
-> |-------------|----------|---------|---------|    
-> |**A**<br/>- [Acceptance Criteria](../../queries/titles-ids-descriptions.md) (Scrum)<br/>- [Accepted By](guidance-code-review-feedback-field-reference.md) <br/>- [Accepted Date](guidance-code-review-feedback-field-reference.md)<br/>- [Activated By](../../queries/query-by-workflow-changes.md)<br/>- [Activated Date](../../queries/query-by-workflow-changes.md)<br/>- [Activity](../../queries/query-numeric.md)<br/>- [Actual Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>- [Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/> - [Application Launch Instructions](guidance-code-review-feedback-field-reference.md)<br/> - [Application Start Information](guidance-code-review-feedback-field-reference.md) <br/>- [Application Type](guidance-code-review-feedback-field-reference.md) <br/>- [Area ID](../../queries/query-by-area-iteration-path.md) (System)<br/>- [Area Path](../../queries/query-by-area-iteration-path.md) (System)<br/>- [Assigned To](../../queries/query-by-workflow-changes.md)<br/>- [Associated Context](guidance-code-review-feedback-field-reference.md)<br/>- [Associated Context Code](guidance-code-review-feedback-field-reference.md)<br/>- [Associated Context Owner](guidance-code-review-feedback-field-reference.md)<br/>- [Associated Context Type](guidance-code-review-feedback-field-reference.md)<br/> - [Attached File Count](../../queries/linking-attachments.md)<br/>- Authorized As (Not used)<br/>- [Automated Test Id](../../queries/build-test-integration.md)  (TCM)<br/>- [Automated Test Name](../../queries/build-test-integration.md)  (TCM) <br/>- [Automated Test Storage](../../queries/build-test-integration.md) (TCM)<br/> - [Automated Test Type](../../queries/build-test-integration.md)  (TCM) <br/>- [AutomatedTestId](../../queries/build-test-integration.md) (TCM) <br/>- [AutomatedTestName](../../queries/build-test-integration.md)  (TCM)<br/> -[Automation Status](../../queries/build-test-integration.md)  (TCM)<br/>**B**<br/> - [Backlog Priority](../../queries/planning-ranking-priorities.md) (Scrum)<br/>- [Blocked](../../queries/planning-ranking-priorities.md)<br/>- [Board Column](../../queries/query-by-workflow-changes.md)<br/>- [Board Column Done](../../queries/query-by-workflow-changes.md)<br/>- [Board Lane](../../queries/query-by-workflow-changes.md)<br/>- [Business Value](../../queries/query-numeric.md)<br/>**C**<br/>- [Called By](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>  - [Called Date](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>- [Changed By](../../queries/history-and-auditing.md) (System)<br/>- [Changed Date](../../queries/history-and-auditing.md) (System)<br/>- [Closed By](../../queries/query-by-workflow-changes.md) (System)<br/>- [Closed Date](../../queries/query-by-workflow-changes.md) (System) <br/>  - [Closed Status](guidance-code-review-feedback-field-reference.md)<br/>  - [Closed Status Code](guidance-code-review-feedback-field-reference.md) <br/>  - [Closing Comment](guidance-code-review-feedback-field-reference.md) <br/>- [Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>- [Committed](../../queries/planning-ranking-priorities.md) (CMMI)<br/>- [Completed Work](../../queries/query-numeric.md)<br/>- [Contingency Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>  - [Corrective Action Actual Resolution](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>- [Corrective Action Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>- [Created By](../../queries/query-by-workflow-changes.md) (System)<br/>- [Created Date](../../queries/query-by-workflow-changes.md) (System)|**D**<br/>- [Discipline](../../queries/query-numeric.md) (CMMI)<br/>- [Description](../../queries/titles-ids-descriptions.md) (System)<br/>- [Due Date](../../queries/query-by-date-or-current-iteration.md)  (Agile)<br/>**E**<br/>  - [Effort](../../queries/query-numeric.md) (Scrum) <br/>  - [Escalate](../../queries/planning-ranking-priorities.md) (CMMI)<br/>- [External Link Count](../../queries/linking-attachments.md) <br/>**F**<br/>- [Finish Date](../../queries/query-by-date-or-current-iteration.md)<br/>  - [Found In Build](../../queries/build-test-integration.md)  (TCM)<br/>  - [Found In Environment](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>**H**<br/>  - [History](../../queries/history-and-auditing.md) (System)<br/>- [How Found](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>- [Hyperlink Count](../../queries/linking-attachments.md)<br/>**I**<br/>- [ID](../../queries/titles-ids-descriptions.md) (System)<br/>- [Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)<br/>- [Impact on Architecture](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)<br/> - [Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)<br/>- [Impact on Technical Publications](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)<br/>- [Impact on Test](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)<br/>- [Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)<br/>- [Integrated in Build](../../queries/build-test-integration.md) (TCM)<br/>- [Issue](../../queries/build-test-integration.md) (TCM)<br/>- [Iteration Id](../../queries/query-by-area-iteration-path.md)  (System)<br/>- [Iteration Path](../../queries/query-by-area-iteration-path.md) (System)<br/>**J**<br/>- [Justification](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)<br/>**L**<br/>- [Link Comment](../../queries/linking-attachments.md) (System)<br/>- [Link Description](../../queries/linking-attachments.md) (System)<br/>- [Local Data Source](../../queries/build-test-integration.md)  (TCM)<br/>**M**<br/>- [Meeting Type](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>- [Minutes](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI) <br/>- [Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI) <br/>- [Mitigation Triggers](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>**N**<br/>- [Node Name](../../queries/query-by-area-iteration-path.md) (System)<br/>**O - P -Q**<br/>- [Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>- [Original Estimate](../../queries/query-numeric.md)<br/>- [Parameters](../../queries/build-test-integration.md) (TCM)<br/>- [Priority](../../queries/planning-ranking-priorities.md) <br/>- [Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>- [Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI) <br/>- [Purpose](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>- [Query Text](../../queries/build-test-integration.md) (TCM)|**R**<br/>- [Rating](guidance-code-review-feedback-field-reference.md)<br/>- [Reason](../../queries/query-by-workflow-changes.md) (System)<br/>- [Related Link Count](../../queries/linking-attachments.md) (System)<br/>- [Remaining Work](../../queries/query-numeric.md) <br/>- [Repro Steps](../../queries/titles-ids-descriptions.md)<br/>- [Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)<br/>- [Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)<br/>    - [Requires Review](../../queries/query-numeric.md) (CMMI)<br/>- [Requires Test](../../queries/query-numeric.md) (CMMI)<br/>- [Resolution]](../../queries/titles-ids-descriptions.md) (Scrum)<br/>- [Resolved By](../../queries/query-by-workflow-changes.md)<br/>- [Resolved Date](../../queries/query-by-workflow-changes.md) <br/> - [Resolved Reason](../../queries/query-by-workflow-changes.md)<br/>- [Reviewed By](guidance-code-review-feedback-field-reference.md)<br/>  - [Reviewed Date](guidance-code-review-feedback-field-reference.md)<br/>- [Rev](../../queries/history-and-auditing.md) (System) <br/> - [Risk](../../queries/planning-ranking-priorities.md) (Agile)<br/>- [Root Cause](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI) <br/>**S**<br/>- [Severity](../../queries/planning-ranking-priorities.md)<br/>- [Size](../../queries/query-numeric.md) (CMMI)<br/> - [Stack Rank](../../queries/planning-ranking-priorities.md)<br/>- [Start Date](../../queries/query-by-date-or-current-iteration.md)<br/> - [State](../../queries/query-by-workflow-changes.md) (System)<br/>- [State Change Date](../../queries/query-by-workflow-changes.md)<br/>  - [State Code](guidance-code-review-feedback-field-reference.md)<br/>- [Steps](../../queries/build-test-integration.md) (TCM)<br/>  - [Steps to Reproduce](../../queries/titles-ids-descriptions.md) (TCM)<br/>- [Story Points](../../queries/query-numeric.md) (Agile)<br/> - [Subject Matter Expert 1-3](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)<br/>- [Symptom](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>- [System Info](../../queries/titles-ids-descriptions.md) (TCM) <br/>**T**<br/> - [Tags](../../queries/add-tags-to-work-items.md)<br/>- [Target Date](../../queries/query-by-date-or-current-iteration.md)<br/>- [Target Resolve Date](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)<br/>- [Task Type](../../queries/query-numeric.md) (CMMI)<br/> - [Team Project](../../queries/titles-ids-descriptions.md) (System) <br/>- [Test Suite Audit](../../queries/build-test-integration.md) (TCM)<br/>- [Test Suite Type](../../queries/build-test-integration.md) (TCM)<br/>- [Test Suite Type ID](../../queries/build-test-integration.md) (TCM)<br/>- [Time Criticality](../../queries/planning-ranking-priorities.md)<br/>- [Title](../../queries/titles-ids-descriptions.md) (System)<br/>- [Triage](../../queries/planning-ranking-priorities.md) (CMMI)<br/>**U - V - W**<br/>- [User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md)  (CMMI)<br/>- [Value Area](../../queries/planning-ranking-priorities.md)<br/>- [Work Item Type](../../queries/titles-ids-descriptions.md) (System) |
+<table>
+<tbody valign="top">
+<tr>
+<td width="33%"><h3>A</h3>
+<ul>
+<li>[Acceptance Criteria](../../queries/titles-ids-descriptions.md) (Scrum)</li>
+<li>[Accepted By](guidance-code-review-feedback-field-reference.md) </li>
+<li>[Accepted Date](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Activated By](../../queries/query-by-workflow-changes.md)</li>
+<li>[Activated Date](../../queries/query-by-workflow-changes.md)</li>
+<li>[Activity](../../queries/query-numeric.md)</li>
+<li>[Actual Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Analysis](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Application Launch Instructions](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Application Start Information](guidance-code-review-feedback-field-reference.md) </li>
+<li>[Application Type](guidance-code-review-feedback-field-reference.md) </li>
+<li>[Area ID](../../queries/query-by-area-iteration-path.md) (System)</li>
+<li>[Area Path](../../queries/query-by-area-iteration-path.md) (System)</li>
+<li>[Assigned To](../../queries/query-by-workflow-changes.md)</li>
+<li>[Associated Context](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Associated Context Code](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Associated Context Owner](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Associated Context Type](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Attached File Count](../../queries/linking-attachments.md)</li>
+<li>Authorized As (Not used)</li>
+<li>[Automated Test Id](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Automated Test Name](../../queries/build-test-integration.md) (TCM) </li>
+<li>[Automated Test Storage](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Automated Test Type](../../queries/build-test-integration.md) (TCM) </li>
+<li>[AutomatedTestId](../../queries/build-test-integration.md) (TCM) </li>
+<li>[AutomatedTestName](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Automation Status](../../queries/build-test-integration.md) (TCM)</li>
+</ul>
+<h3>B</h3>
+<ul><li>[Backlog Priority](../../queries/planning-ranking-priorities.md) (Scrum)</li>
+<li>[Blocked](../../queries/planning-ranking-priorities.md)</li>
+<li>[Board Column](../../queries/query-by-workflow-changes.md)</li>
+<li>[Board Column Done](../../queries/query-by-workflow-changes.md)</li>
+<li>[Board Lane](../../queries/query-by-workflow-changes.md)</li>
+<li>[Business Value](../../queries/query-numeric.md)</li>
+</ul>
+<h3>C</h3>
+<ul><li>[Called By](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Called Date](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Changed By](../../queries/history-and-auditing.md) (System)</li>
+<li>[Changed Date](../../queries/history-and-auditing.md) (System)</li>
+<li>[Closed By](../../queries/query-by-workflow-changes.md) (System)</li>
+<li>[Closed Date](../../queries/query-by-workflow-changes.md) (System)</li>
+<li>[Closed Status](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Closed Status Code](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Closing Comment](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Comment Count](../../queries/linking-attachments.md)</li>
+<li>[Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Committed](../../queries/planning-ranking-priorities.md) (CMMI)</li>
+<li>[Completed Work](../../queries/query-numeric.md)</li>
+<li>[Contingency Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Corrective Action Actual Resolution](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Corrective Action Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Created By](../../queries/query-by-workflow-changes.md) (System)</li>
+<li>[Created Date](../../queries/query-by-workflow-changes.md) (System)</li>
+</ul>
+</td>
+<td width="33%">
+<h3>D-E-F</h3>
+<ul>
+<li>[Discipline](../../queries/query-numeric.md) (CMMI)</li>
+<li>[Description](../../queries/titles-ids-descriptions.md) (System)</li>
+<li>[Due Date](../../queries/query-by-date-or-current-iteration.md)</li>
+<li>[Effort](../../queries/query-numeric.md) </li>
+<li>[Escalate](../../queries/planning-ranking-priorities.md) (CMMI)</li>
+<li>[External Link Count](../../queries/linking-attachments.md#external-link-count) </li>
+<li>[Finish Date](../../queries/query-by-date-or-current-iteration.md)</li>
+<li>[Found In Build](../../queries/build-test-integration.md)  (TCM)</li>
+<li>[Found In Environment](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+</ul>
+<h3>H</h3>
+<ul>
+<li>[History](../../queries/history-and-auditing.md) (System)</li>
+<li>[How Found](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Hyperlink Count](../../queries/linking-attachments.md#hyper-link-count)</li>
+</ul>
+<h3>I</h3>
+<ul>
+<li>[ID](../../queries/titles-ids-descriptions.md) (System)</li>
+<li>[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
+<li>[Impact on Architecture](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Impact on Technical Publications](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Impact on Test](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Integrated in Build](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Issue](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Iteration Id](../../queries/query-by-area-iteration-path.md)  (System)</li>
+<li>[Iteration Path](../../queries/query-by-area-iteration-path.md) (System)</li>
+</ul>
+<h3>J-L-M-N</h3>
+<ul>
+<li>[Justification](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Link Comment](../../queries/linking-attachments.md) (System)</li>
+<li>[Link Description](../../queries/linking-attachments.md) (System)</li>
+<li>[Local Data Source](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Meeting Type](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Minutes](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI) </li>
+<li>[Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI) </li>
+<li>[Mitigation Triggers](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Node Name](../../queries/query-by-area-iteration-path.md) (System)</li>
+</ul>
+<h3>O-P-Q</h3>
+<ul>
+<li>[Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Original Estimate](../../queries/query-numeric.md)</li>
+<li>[Parameters](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Priority](../../queries/planning-ranking-priorities.md) </li>
+<li>[Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI) </li>
+<li>[Purpose](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Query Text](../../queries/build-test-integration.md) (TCM)</li>
+</ul>
+</td>
+<td width="33%"><h3>R</h3>
+<ul>
+<li>[Rating](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Reason](../../queries/query-by-workflow-changes.md) (System)</li>
+<li>[Related Link Count](../../queries/linking-attachments.md) (System)</li>
+<li>[Remaining Work](../../queries/query-numeric.md) </li>
+<li>[Remote Link Count](../../queries/linking-attachments.md#remote-link-count) (System)</li>
+<li>[Repro Steps](../../queries/titles-ids-descriptions.md)</li>
+<li>[Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
+<li>[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
+<li>[Requires Review](../../queries/query-numeric.md) (CMMI)</li>
+<li>[Requires Test](../../queries/query-numeric.md) (CMMI)</li>
+<li>[Resolution]](../../queries/titles-ids-descriptions.md) (Scrum)</li>
+<li>[Resolved By](../../queries/query-by-workflow-changes.md)</li>
+<li>[Resolved Date](../../queries/query-by-workflow-changes.md)</li>
+<li>[Resolved Reason](../../queries/query-by-workflow-changes.md)</li>
+<li>[Reviewed By](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Reviewed Date](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Rev](../../queries/history-and-auditing.md) (System)</li>
+<li>[Risk](../../queries/planning-ranking-priorities.md) (Agile)</li>
+<li>[Root Cause](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+</ul>
+<h3>S</h3>
+<ul>
+<li>[Severity](../../queries/planning-ranking-priorities.md)</li>
+<li>[Size](../../queries/query-numeric.md) (CMMI)</li>
+<li>[Stack Rank](../../queries/planning-ranking-priorities.md)</li>
+<li>[Start Date](../../queries/query-by-date-or-current-iteration.md)</li>
+<li>[State](../../queries/query-by-workflow-changes.md) (System)</li>
+<li>[State Change Date](../../queries/query-by-workflow-changes.md)</li>
+<li>[State Code](guidance-code-review-feedback-field-reference.md)</li>
+<li>[Steps](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Steps to Reproduce](../../queries/titles-ids-descriptions.md) (TCM)</li>
+<li>[Story Points](../../queries/query-numeric.md) (Agile)</li>
+<li>[Subject Matter Expert](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
+<li>[Symptom](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[System Info](../../queries/titles-ids-descriptions.md) (TCM) </li>
+</ul>
+<h3>T</h3>
+<ul>
+<li>[Tags](../../queries/add-tags-to-work-items.md)</li>
+<li>[Target Date](../../queries/query-by-date-or-current-iteration.md)</li>
+<li>[Target Resolve Date](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
+<li>[Task Type](../../queries/query-numeric.md) (CMMI)</li>
+<li>[Team Project](../../queries/titles-ids-descriptions.md) (System) </li>
+<li>[Test Suite Audit](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Test Suite Type](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Test Suite Type ID](../../queries/build-test-integration.md) (TCM)</li>
+<li>[Time Criticality](../../queries/planning-ranking-priorities.md)</li>
+<li>[Title](../../queries/titles-ids-descriptions.md) (System)</li>
+<li>[Triage](../../queries/planning-ranking-priorities.md) (CMMI)</li>
+</ul>
+<h3>U-V-W</h3>
+<ul>
+<li>[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
+<li>[Value Area](../../queries/planning-ranking-priorities.md)</li>
+<li>[Watermark](../../queries/history-and-auditing.md) (System)</li>
+<li>[Work Item Type](../../queries/titles-ids-descriptions.md) (System) </li> 
 
-  
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<hr/>
+<br/>
+
 By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
 
 
-### Field reference topics 
+## Field reference topics 
 
-The following topics describe fields that are used in common by several WITs, or those that are functionally specific to just one or a few WITs.  
+The following articles describe fields that are used in common by several WITs, or those that are functionally specific to just one or a few WITs.  
 
-> [!div class="mx-tdBreakAll"]  
-> |Fields common<br/>to many work types|Fields used<br/>by specific work item types|Fields used<br/>to track CMMI work items|
-> |-----------------------------|------------------------|------------------------|
-> |-[Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)<br/>- [History and revision changes](../../queries/history-and-auditing.md)<br/>- [Areas and iterations](../../../organizations/settings/set-area-paths.md)<br/> - [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md)<br/> - [Planning, ranking, and priorities](../../queries/planning-ranking-priorities.md)<br/>- [Work estimates, activity, and other numeric fields](../../queries/query-numeric.md)<br/>- [Build and test integration fields](../../queries/build-test-integration.md)<br/>- [Links and attachment related fields](../../queries/linking-attachments.md) |- [Code Review Request](guidance-code-review-feedback-field-reference.md)<br/>- [Code Review Response](guidance-code-review-feedback-field-reference.md)<br/>- [Feedback Request](guidance-code-review-feedback-field-reference.md)<br/>- [Feedback Response](guidance-code-review-feedback-field-reference.md)<br/>- [Shared Steps](../../queries/build-test-integration.md)<br/>- [Test Case](../../queries/build-test-integration.md)|- [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md)<br/>- [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)<br/>- [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md)<br/>- [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)<br/>- [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md)<br/>- [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) |
+### Fields common to many work types
+- [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
+- [History and revision changes](../../queries/history-and-auditing.md)
+- [Areas and iterations](../../../organizations/settings/set-area-paths.md)
+- [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md)
+- [Planning, ranking, and priorities](../../queries/planning-ranking-priorities.md)
+- [Work estimates, activity, and other numeric fields](../../queries/query-numeric.md)
+- [Build and test integration fields](../../queries/build-test-integration.md)
+- [Links and attachment related fields](../../queries/linking-attachments.md) 
 
+### Fields used by specific work item types
+
+- [Code Review Request](guidance-code-review-feedback-field-reference.md)
+- [Code Review Response](guidance-code-review-feedback-field-reference.md)
+- [Feedback Request](guidance-code-review-feedback-field-reference.md)
+- [Feedback Response](guidance-code-review-feedback-field-reference.md)
+- [Shared Steps](../../queries/build-test-integration.md)
+- [Test Case](../../queries/build-test-integration.md)
+
+### Fields used to track CMMI work items
+- [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md)
+- [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
+- [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md)
+- [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
+- [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md)
+- [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) 
 
 
 <a id="field-reference">  </a>  
@@ -68,6 +276,19 @@ Because custom fields are defined for the account collection, you can't add a cu
 When adding custom fields, note the following limits:  
 *   A maximum of 256 fields can be defined for each WIT  
 *   A maximum of 512 fields can be defined per process   
+
+
+::: moniker range="vsts"  
+## Add and modify fields    
+To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../../organizations/settings/work/customize-process.md).  
+
+Also, you can [view the list of fields defined for an organization](../../../organizations/settings/work/customize-process.md) and the WITs which reference them. 
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevserver-2019"  
+## Modify the field name and other field attributes  
+You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../../reference/witadmin/manage-work-item-fields.md).  
+::: moniker-end  
 
 <a id="wi-explorer">  </a>
 ## Hidden field attributes and the Work Item Field Explorer 
@@ -92,13 +313,3 @@ To access the Work Item Field Explorer, you must install the Process Editor (req
 - [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
 
 You can list the attributes of fields using the [**witadmin listfields** command](../../../reference/witadmin/manage-work-item-fields.md). 
-
-### VSTS and the Inheritance process model  
-To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../../organizations/settings/work/customize-process.md).  
-
-Also, you can [view the list of fields defined for a process](../../../organizations/settings/work/customize-process.md) and the WITs which reference them. 
-
-
-### TFS   
-You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../../reference/witadmin/manage-work-item-fields.md).  
-

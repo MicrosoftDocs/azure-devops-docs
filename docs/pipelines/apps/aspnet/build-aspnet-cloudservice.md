@@ -1,8 +1,9 @@
 ---
 ms.assetid: EEA8E5DA-50B6-427B-B67E-32E926DC4A02
-title: Build your Azure cloud service
+title: Build your Azure Cloud Service
 ms.topic: conceptual
-description: Define a continuous integration (CI) build for your Azure cloud service in VSTS or Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Define a continuous integration (CI) build for your Azure Cloud Service in Azure Pipelines or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: douge
@@ -12,20 +13,20 @@ ms.date: 01/02/2017
 monikerRange: 'vsts'
 ---
 
-# Build your Azure cloud service
+# Build your Azure Cloud Service
 
 [!INCLUDE [temp](../../_shared/version.md)]
 
-Here we'll show you how to define your continuous integration (CI) process for your Azure cloud service project.
+Here we'll show you how to define your continuous integration (CI) pipeline for your Azure Cloud Service project.
 
 ## Get set up
 
-For the instructions in this topic, you need an Azure cloud service project in Visual Studio.
+For the instructions in this topic, you need an Azure Cloud Service project in Visual Studio.
 
 > [!TIP]
 > If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
 
-## Define your CI build process
+## Define your CI build pipeline
 
 ### Create the build pipeline
 
@@ -52,13 +53,13 @@ Save the build pipeline and queue a new build by selecting the **Queue new build
 
 After you've run the build, you're ready to create a release pipeline to deploy your app to:
 
-* <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure cloud service</a>
+* <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure Cloud Service</a>
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-<h3 id="new_solution">How do I create an Azure cloud service solution?</h3>
+<h3 id="new_solution">How do I create an Azure Cloud Service solution?</h3>
 
 0. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
 

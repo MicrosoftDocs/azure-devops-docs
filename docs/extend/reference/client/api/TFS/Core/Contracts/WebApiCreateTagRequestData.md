@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts WebApiCreateTagRequestData API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts WebApiCreateTagRequestData API | Extensions for Azure DevOps Services
 description: The representation of data needed to create a tag definition which is sent across the wire.
 ms.assetid: cce0f29e-f8fd-c682-8aae-0547d7922dca
 ms.prod: devops

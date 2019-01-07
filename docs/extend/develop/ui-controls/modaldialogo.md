@@ -1,6 +1,6 @@
 ---
-title: Use the Dialog Control | Extensions for VSTS
-description: Use the modal dialog control to collect user input or display message in your app for VSTS.
+title: Use the Dialog Control | Extensions for Azure DevOps Services
+description: Use the modal dialog control to collect user input or display message in your app for Azure DevOps Services.
 ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -113,7 +113,7 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 
 <a name="confirmation"></a>
 ## Confirmation dialog
-Below sample displays how to use modal dialgo as a confirmation dialog.
+Below sample displays how to use modal dialog as a confirmation dialog.
 
 ``` javascript
 	import Dialogs = require("VSS/Controls/Dialogs");

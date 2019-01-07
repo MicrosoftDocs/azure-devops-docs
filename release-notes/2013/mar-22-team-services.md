@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Mar 22
 description: VSTS release notes for March 22 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: cb4abbef-5cca-433a-b70d-5c2c759a8dec
 ms.date: 06/01/2016
@@ -42,7 +42,7 @@ Our web based test runner also got some nice additions this sprint:
 
 ![Issue with test case](_img/3_22_03.png)
 
-That’s all for this sprint. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s all for this sprint. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

@@ -1,6 +1,7 @@
 ---
 title: Deploy a CI/CD pipeline ASP.NET web app to Azure
-description: Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure in VSTS or Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,15 +10,15 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.date: 02/10/2017
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
-In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) process to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/). 
+In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) pipeline to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/).
 
 [!INCLUDE [include](../../../apps/aspnet/_shared/ci-cd-description.md)]
 
@@ -28,15 +29,15 @@ In this walkthrough we'll show how to use Visual Studio to automatically define 
 
 ## Install the Continuous Delivery Tools extension
 
-The quickest way to create a continuous delivery process is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer),
-which automate the creation of build and release definitions. The tools assume that you have an existing VSTS subscription,
+The quickest way to create a continuous delivery pipeline is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer),
+which automate the creation of build and release definitions. The tools assume that you have an existing Azure Pipelines subscription,
 and that your project has been added to source control.
 
 To install the extension within Visual Studio, select **Tools > Extensions and Updates...** and search for **Continuous Delivery Tools for Visual Studio**. Alternatively, you can download the installer from the [Visual Studio Gallery](http://aka.ms/CD4VS).
 
 ## Create the build and release definitions automatically
 
-To create both the build (CI) and release (CD) definitions for a project, in Visual Studio, right-click the Solution node in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
+To create both the build (CI) and release (CD) pipelines for a project, in Visual Studio, right-click the Solution node in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
 
 [!INCLUDE [include](../../../apps/aspnet/_shared/commit-build-release.md)]
 

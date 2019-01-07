@@ -1,6 +1,7 @@
 ---
-title: Connect to your Git repos with SSH | VSTS & TFS
-description: Authenticate to VSTS Git Repositories with SSH Keys
+title: Connect to your Git repos with SSH
+titleSuffix: Azure Repos
+description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -8,23 +9,22 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14//2018
+ms.date: 09/26/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Use SSH key authentication
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 Update 3
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 >[!IMPORTANT]
-> SSH URLs have changed. Old SSH URLs will continue to work through December 1, 2017. If you have already set up SSH, you will need to update your remote URLs:
+> SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
 > - Verify which remotes are using SSH by running ```git remote -v ``` in your Git client. 
 > - Visit your repository on the web and select the **Clone** button in the upper right.
 > - Select **SSH** and copy the new SSH URL.
-> - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to **Repository Settings**, and edit your remotes.
+> - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to [Repository Settings](git-config.md#remotes), and edit your remotes.
 
 >[!NOTE]
 > As of Visual Studio 2017, SSH can be used to connect to Git repos.
@@ -49,10 +49,11 @@ Other shell environments will work, but are not covered in this article.
 
 ### Step 1: Create your SSH keys
 
+>[!NOTE]
 > If you have already created SSH keys on your system, skip this step and go to [configuring SSH keys](use-ssh-keys-to-authenticate.md#configuration).   
 
 The commands here will let you create new default SSH keys, overwriting existing default keys. Before continuing, check your 
-`~/.ssh` folder (for example, /home/frank/.ssh or C:\Users\frank\\.ssh) and look for the following files:
+`~/.ssh` folder (for example, /home/jamal/.ssh or C:\Users\jamal\\.ssh) and look for the following files:
 
 - _id_rsa_
 - _id_rsa.pub_
@@ -63,37 +64,54 @@ Create your SSH keys with the `ssh-keygen` command from the `bash` prompt. This 
 for your private key when prompted&mdash;this provides another layer of security for your private key. 
 If you give a passphrase be sure to [configure the SSH agent](use-ssh-keys-to-authenticate.md#rememberpassphrase) to cache your passphrase so you don't have to enter it every time you connect.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt;  ssh-keygen -C "frank@fabrikam.com"
+```
+$ ssh-keygen -C "jamal@fabrikam.com"
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/frank/.ssh/id_rsa): /home/frank/.ssh/id_rsa</font>
-Enter passphrase (empty for no passphrase): passphrase</font>
-Enter same passphrase again: passphrase
-Your identification has been saved in /home/frank/.ssh/id_rsa.
-Your public key has been saved in /home/frank/.ssh/id_rsa.pub.
-</pre>
+Enter file in which to save the key (/c/Users/jamal/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/jamal/.ssh/id_rsa.
+Your public key has been saved in /c/Users/jamal/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:******************************************* jamal@fabrikam.com
+The key's randomart image is:
++---[RSA 2048]----+
+|+.   +yX*o .     |
+|... ..E+*=o      |
+|  ..o.=E=.o      |
+|   . * =.o .     |
+|    . S o o..    |
+|       + .oo     |
+|        S+.  .   |
+|        ..+.+    |
+|          o*..   |
++----[SHA256]-----+
+```
 
 This produces the two keys needed for SSH authentication: your private key ( _id_rsa_ ) and the public key ( _id_rsa.pub_ ). It is important to never share the contents of your private key. If the private key is
 compromised, attackers can use it to trick servers into thinking the connection is coming from you.
 
 <a name="configuration"></a>
 
-### Step 2:  Add the public key to VSTS/TFS
+### Step 2:  Add the public key to Azure DevOps Services/TFS
 
 Associate the public key generated in the previous step with your user ID.
 
-0.  Open your security settings by browsing to the web portal and selecting your name in the upper right of the
-user interface. Select **My security** in the menu that appears.
+0.  Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
+user interface. Select **Security** in the menu that appears.
 
-    ![Accessing User Profile in VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
+    ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
 
 0. Select **SSH Public Keys** , then select **Add**.
 
-    ![Accessing Security Configuration in VSTS](_img/use-ssh-authentication/ssh_accessing_security_key.png)
+    ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
-0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. Avoid adding whitespace or new lines into the **Key Data** field-they can cause VSTS to use an invalid public key. 
+0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. 
 
-    ![Configuring Public Key in VSTS](_img/use-ssh-authentication/ssh_key_input.png)
+  >[!IMPORTANT]
+  >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
+
+    ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
 
 0. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
   
@@ -101,29 +119,60 @@ user interface. Select **My security** in the menu that appears.
 
 ### Step 3: Clone the Git repository with SSH
 
+>[!NOTE]
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an account named **fabrikops2**, as indicated by the first part of the URL before the `@`.
+0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
-   ![VSTS SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
-   
+   ![Azure Repos SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
+
+   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+ 
 0. Run `git clone` from the command prompt. 
 
    ```
-   git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools
+   git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
    ```
 
 SSH will ask you to verify that the SSH fingerprint for the server you are connecting to. You should verify that the shown fingerprint matches the fingerprint on the **SSH public keys**  page.
-SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/en-us/library/cc959354.aspx).
+SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/library/cc959354.aspx).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
 
 ```
-git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools
+$ git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
+Cloning into 'FabrikamFiber'...
+The authenticity of host 'ssh.dev.azure.com (65.52.8.37)' can't be established.
+RSA key fingerprint is SHA256:********************************************
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ssh.dev.azure.com,65.52.8.37' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/jamal/.ssh/id_rsa':
+remote:
+remote:                    vSTs
+remote:                  vSTSVSTSv
+remote:                vSTSVSTSVST
+remote: VSTS         vSTSVSTSVSTSV
+remote: VSTSVS     vSTSVSTSV STSVS
+remote: VSTSVSTSvsTSVSTSVS   TSVST
+remote: VS  tSVSTSVSTSv      STSVS
+remote: VS   tSVSTSVST       SVSTS
+remote: VS tSVSTSVSTSVSts    VSTSV
+remote: VSTSVST    SVSTSVSTs VSTSV
+remote: VSTSv        STSVSTSVSTSVS
+remote:                VSTSVSTSVST
+remote:                  VSTSVSTs
+remote:                    VSTs    (TM)
+remote:
+remote:  Microsoft (R) Visual Studio (R) Team Services
+remote:
+remote: Found 127 objects to send. (50 ms)
+Receiving objects: 100% (127/127), 56.67 KiB | 2.58 MiB/s, done.
+Resolving deltas: 100% (15/15), done.
 ```
 
 When you are asked if you want to continue connecting, type `yes`. Git will clone the repo and set up the `origin` remote to connect with SSH for future Git commands. 
 
-> Avoid trouble: Windows users will need to [run a command](use-ssh-keys-to-authenticate.md#rememberpassphrase) to have Git reuse their SSH key passphrase. 
+>[!TIP]
+> Avoid trouble: Windows users will need to [run a command](use-ssh-keys-to-authenticate.md#rememberpassphrase) to have Git reuse their SSH key passphrase.
 
 ## Questions and Troubleshooting
 
@@ -143,7 +192,7 @@ If you are using the Bash shell (including Git Bash), start ssh-agent with:
 eval `ssh-agent`
 ```
 
-### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with VSTS?
+### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
 
 Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
@@ -159,7 +208,7 @@ ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
 ```
 
 You can then compare the MD5 signature to the one in your  profile. This is useful if you have connection problems or have concerns about incorrectly
-pasting in the public key into the **Key Data** field when adding the key to VSTS.
+pasting in the public key into the **Key Data** field when adding the key to Azure DevOps Services.
 
 <a name="migrate"></a>
  
@@ -168,18 +217,18 @@ pasting in the public key into the **Key Data** field when adding the key to VST
 You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the [SSH clone URL](#step-3-clone-the-git-repository-with-ssh), run the following command:
 
 ```
-git remote set-url origin ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools
+git remote set-url origin git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
 ```
 
 You can now run any Git command that connects to `origin`.
 
 <a name="newkeys"></a>
 
-### I'm using Git LFS with VSTS and I get errors when pulling files tracked by Git LFS.
+### I'm using Git LFS with Azure DevOps Services and I get errors when pulling files tracked by Git LFS.
 
-VSTS currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
+Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
  
-### How can I use a non default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub ?
+### How can I use a non default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
 
 To use keys created with `ssh-keygen` in a different place than the default, you do two things:
 
@@ -187,7 +236,7 @@ To use keys created with `ssh-keygen` in a different place than the default, you
 0. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
 
 ```
-ssh-add /home/frank/.ssh/id_frank.rsa 
+ssh-add /home/jamal/.ssh/id_jamal.rsa
 ```
 
 On Windows, before running `ssh-add`, you will need to run the following command from included in Git for Windows:
@@ -209,7 +258,7 @@ takes care of starting `ssh-agent` for you.
 
 ### What notifications may I receive regarding my SSH keys?
 
-Whenever you register a new SSH Key with VSTS, you will receive an email notification informing you that a new SSH key has been added to your account.
+Whenever you register a new SSH Key with Azure DevOps Services, you will receive an email notification informing you that a new SSH key has been added to your account.
 
 ![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
 

@@ -1,20 +1,21 @@
 ---
-title: Implement deployment of your app to Azure Virtual Machine Scale Set
+title: Deploy apps to an Azure VM Scale Set
 description: Implement deployment of your app to an Azure Virtual Machine Scale Set without learning concepts such as provisioners and builders
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-VSTS | TFS 2018 | TFS 2017
+Azure Pipelines | TFS 2018 | TFS 2017
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -45,14 +46,14 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 ## Create the release pipeline
 
-1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
+1. Open the **Releases** tab of **Azure Pipelines** and choose the
    "**+**" icon to create a new release pipeline.
 
 1. In the **Create release pipeline** dialog, select the **Empty** template and choose **Next**.
 
 1. In the next page, select the build pipeline you created 
    earlier and choose **Create**. This creates a new release pipeline 
-   with one default environment.
+   with one default stage.
 
 1. In the new release pipeline, select **+ Add tasks** and add these tasks:
 
@@ -85,7 +86,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    - **Output - Image URL**: Provide a name for the output variable that will hold the URL of the generated machine image. For example, `bakedImageUrl`<p />
    
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
    
    - **Azure Connection Type**: Select `Azure Resource Manager`
    
@@ -114,7 +115,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    You can use variables to pass values such as the resource group and virtual machine scale set names to the script if you wish.
 
-1. In the **Deployment conditions** dialog for the environment, ensure that the **Trigger** section is set to **After release creation**. 
+1. In the **Deployment conditions** dialog for the stage, ensure that the **Trigger** section is set to **After release creation**.
 
 1. Enter a name for the release pipeline and save it.
 
@@ -125,7 +126,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

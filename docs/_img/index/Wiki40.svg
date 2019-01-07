@@ -1,0 +1,67 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="CodexIconWiki40" clip-path="url(#clip0)">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+<g id="Union">
+<path d="M 38.3334 0C 39.2538 0 40 0.746094 40 1.66699L 40 18.333C 40 19.2539 39.2538 20 38.3334 20L 28 20L 28 38.333C 28 39.2539 27.2538 40 26.3334 40L 1.66663 40C 0.746216 40 0 39.2539 0 38.333L 0 9.66699C 0 8.74609 0.746216 8 1.66663 8L 16 8L 16 1.66699C 16 0.746094 16.7462 0 17.6666 0L 38.3334 0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0)">
+<g id="Rectangle">
+<path d="M 0 1.66667C 0 0.746192 0.746192 0 1.66667 0L 26.3333 0C 27.2538 0 28 0.746192 28 1.66667L 28 30.3333C 28 31.2538 27.2538 32 26.3333 32L 1.66667 32C 0.746192 32 0 31.2538 0 30.3333L 0 1.66667Z" transform="translate(0 8)" fill="#0078D7"/>
+</g>
+<g id="Union_2">
+<path d="M 16 0L 0 0L 0 2L 16 2L 16 0Z" transform="translate(6 13)" fill="#48A6F0"/>
+</g>
+<g id="Union_3">
+<path d="M 16 0L 0 0L 0 2L 16 2L 16 0Z" transform="translate(6 18)" fill="#48A6F0"/>
+</g>
+<g id="Union_4">
+<path d="M 16 0L 0 0L 0 2L 16 2L 16 0Z" transform="translate(6 23)" fill="#48A6F0"/>
+</g>
+<g id="Union_5">
+<path d="M 16 0L 0 0L 0 2L 16 2L 16 0Z" transform="translate(6 28)" fill="#48A6F0"/>
+</g>
+<g id="Union_6">
+<path d="M 9.77778 0L 0 0L 0 2L 9.77778 2L 9.77778 0Z" transform="translate(6 33)" fill="#48A6F0"/>
+</g>
+<g id="Union_7" opacity="0.75" filter="url(#filter0_f)">
+<path d="M 22.3334 0C 23.2538 0 24 0.746094 24 1.66699L 24 18.333C 24 19.2539 23.2538 20 22.3334 20L 12 20L 6 26L 6 20L 1.66663 20C 0.746216 20 0 19.2539 0 18.333L 0 1.66699C 0 0.746094 0.746216 0 1.66663 0L 22.3334 0Z" transform="translate(16 0)" fill="#0039A8"/>
+</g>
+<g id="Union_8">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M 1.66663 0C 0.746216 0 0 0.746094 0 1.66699L 0 18.333C 0 19.2539 0.746216 20 1.66663 20L 12 20L 18 26L 18 20L 22.3334 20C 23.2538 20 24 19.2539 24 18.333L 24 1.66699C 24 0.746094 23.2538 0 22.3334 0L 1.66663 0Z" transform="translate(40 0) scale(-1 1)" fill="#96D1FF"/>
+</g>
+<g id="Intersect" opacity="0.5">
+<path d="M 12 12L 12 1.66699C 12 0.746094 11.2538 0 10.3334 0L 0 0L 0 10.333C 0 11.2539 0.746216 12 1.66663 12L 6 12L 6 18L 12 12Z" transform="translate(16 8)" fill="#6ABEFF"/>
+</g>
+<g id="Rectangle 2.1">
+<rect width="6" height="2" transform="translate(16 13)" fill="#96D1FF"/>
+</g>
+<g id="Rectangle 3">
+<path d="M 0 0L 6 0L 6 2L 1.7 2C 0.761116 2 0 1.23888 0 0.3L 0 0Z" transform="translate(16 18)" fill="#96D1FF"/>
+</g>
+<g id="Union_9" opacity="0.25">
+<path d="M 38.3334 0C 39.2538 0 40 0.746094 40 1.66699L 40 18.333C 40 19.2539 39.2538 20 38.3334 20L 28 20L 28 38.333C 28 39.2539 27.2538 40 26.3334 40L 1.66663 40C 0.746216 40 0 39.2539 0 38.333L 0 9.66699C 0 8.74609 0.746216 8 1.66663 8L 16 8L 16 1.66699C 16 0.746094 16.7462 0 17.6666 0L 38.3334 0Z" fill="url(#paint0_linear)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="12" y="-4" width="32" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+</filter>
+
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 40 -40 0 40 0)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+
+<clipPath id="clip0">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+
+</defs>
+</svg>
+

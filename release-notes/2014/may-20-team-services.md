@@ -2,7 +2,7 @@
 title: Visual Studio Online Updates - May 20
 description: VSTS release notes for May 20 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 764a35d1-3785-45ef-b339-8c2714b4f836
 ms.date: 06/01/2016
@@ -14,15 +14,15 @@ author: yukom
 
 ##Using corporate identities
 
-For a while now, one of the [top customer requests](http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2605763-adfs-federated-authentication-for-visual-studio-on) for Visual Studio Online has been the ability to connect with corporate (Active Directory) identities rather than Microsoft accounts (Live IDs). Today we are taking an important next step on that journey. With this deployment you can now create a new Visual Studio Online account linked to an Azure Active Directory (AAD) tenant. Linking to an Azure Active Directory allows customers to centralize identity management, enable single sign-on across a broad array of cloud services, enforce multi-factor authentication and integrate with an on-premises Active Directory. This also allows you to use the same identity management across your Office 365 deployment and Visual Studio Online.
+For a while now, one of the [top customer requests](http://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2605763-adfs-federated-authentication-for-visual-studio-on) for Visual Studio Online has been the ability to connect with corporate (Active Directory) identities rather than Microsoft accounts (Live IDs). Today we are taking an important next step on that journey. With this deployment you can now create a new Visual Studio Online account linked to an Azure Active Directory (Azure AD) tenant. Linking to an Azure Active Directory allows customers to centralize identity management, enable single sign-on across a broad array of cloud services, enforce multi-factor authentication and integrate with an on-premises Active Directory. This also allows you to use the same identity management across your Office 365 deployment and Visual Studio Online.
 
 **Important:** Unfortunately, we do not yet support linking an existing VS Online account to AAD, and therefore there’s no way to use your AD credentials to log into an account you’ve already created. However, that scenario is next on our list and we are hard at work and will enable it as soon as we can.
 
-[Find out more about Azure Active Directory](/azure/active-directory/)
+[Find out more about Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
 
 ###Create a new account and connect it to Azure Active Directory
 
-You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs) on how to do it.
+You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://visualstudio.microsoft.com/get-started/connect-to-vs) on how to do it.
 
 ![Logging into VS Online](_img/5_20_01.png)
 
@@ -34,7 +34,7 @@ It’s also possible to create an Azure Active Directory–connected Visual Stud
 
 If you want to find out more, head over to:
 
-[Connecting to an Azure Active Directory based account](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs)
+[Connecting to an Azure Active Directory based account](https://visualstudio.microsoft.com/get-started/connect-to-vs)
 
 ###Leverage your MSDN Visual Studio Online benefit with organizational credentials
 

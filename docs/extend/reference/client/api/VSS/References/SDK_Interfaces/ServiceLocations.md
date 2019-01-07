@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ServiceLocations API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ServiceLocations API | Extensions for Azure DevOps Services
 description: Holds a lookup of urls for different services (at different host levels)
 ms.assetid: ac3915ec-2e27-faab-5b72-621e5f094aeb
 ms.prod: devops

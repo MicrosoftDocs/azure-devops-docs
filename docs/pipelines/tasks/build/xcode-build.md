@@ -1,6 +1,7 @@
 ---
 title: Xcode Build build and release task
-description: Xcode Build build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Xcode Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
@@ -10,12 +11,11 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 
+# Xcode Build task
 
-# Build: Xcode Build
+**[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
 
-**[VSTS](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
-
-![icon](_img/xcode.png) Build an Xcode workspace on macOS
+Use this task in a build or release pipeline to build an Xcode workspace on macOS.
 
 ## Demands
 
@@ -33,7 +33,7 @@ xcode
 <tr>
 <td>Actions</td>
 <td>
-Space-delimited list of actions.  Valid options are `build`, `clean`, `test`, `analyze`, and `archive`.  For example: `clean build` would run a clean build.  See [xcodebuild man page](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html).
+Space-delimited list of actions.  Valid options are `build`, `clean`, `test`, `analyze`, and `archive`.  For example: `clean build` would run a clean build.  See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 </td>
 </tr>
 <tr>
@@ -134,14 +134,14 @@ Optionally specify the destination for the product exported from the archive.
 <tr>
 <td>Export Options</td>
 <td>
-Pick a way to pass in Export Options when exporting the archive. The task automatically detects the export method from the archive when the default `Auto` is selected. 
+Pick a way to pass in Export Options when exporting the archive. The task automatically detects the export method from the archive when the default `Auto` is selected.
 You can specify the export method and Team ID in the task by selecting `Specify` or provide the export options via a plist file by choosing `Plist`.
 </td>
 </tr>
 <tr>
 <td>Export Method</td>
 <td>
-Method for how Xcode should export the archvie. E.g. app-store, package, ad-hoc, enterprise, development.
+Method for how Xcode should export the archive. E.g. app-store, package, ad-hoc, enterprise, development.
 </td>
 </tr>
 <tr>
@@ -162,7 +162,7 @@ Path to a plist file that configures archive exporting.
 <tr>
 <td>Arguments</td>
 <td>
-(Optional) Specify additional command-line arguments for this build. See [xcodebuild man page](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html).
+(Optional) Specify additional command-line arguments for this build. See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 </td>
 </tr>
 <tr>
@@ -191,9 +191,9 @@ Use [xcpretty](https://github.com/supermarin/xcpretty/blob/master/README.md) to 
 </td>
 </tr>
 <tr>
-<td>Publish to VSTS/TFS</td>
+<td>Publish to Azure Pipelines/TFS</td>
 <td>
-If you have selected Use xcpretty (described above), select this option if you want to publish JUnit Test results to VSTS/TFS.
+If you have selected Use xcpretty (described above), select this option if you want to publish JUnit Test results to Azure Pipelines/TFS.
 </td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ If you have selected Use xcpretty (described above), select this option if you w
 <tr>
 <td>Use xctool</td>
 <td>
-Select if you want to run [xctool](https://github.com/facebook/xctool/blob/master/README.md) instead of [xcodebuild](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html). You must have xctool installed on the agent.
+Select if you want to run [xctool](https://github.com/facebook/xctool/blob/master/README.md) instead of [xcodebuild](https://developer.apple.com/library/archive/technotes/tn2339/_index.html). You must have xctool installed on the agent.
 <blockquote>If you select this option, make sure that <strong>Use xcpretty</strong> is cleared.</blockquote>
 </td>
 </tr>
@@ -217,11 +217,11 @@ You can specify this argument if you have selected Use xctool and included `test
 
 ## Example
 
-[Build and test Xcode projects](../../apps/mobile/xcode-ios.md)
+[Build and test Xcode projects](../../languages/xcode.md)
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

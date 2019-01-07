@@ -1188,7 +1188,7 @@
 {
 "id": "tagsExpression",
 "name": "Tags",
-"description": "The tags expression (for targeting specific sets of devices). <a href=\"http://msdn.microsoft.com/en-us/library/windowsazure/dn530749.aspx\">Learn more</a>",
+"description": "The tags expression (for targeting specific sets of devices). <a href=\"http://msdn.microsoft.com/library/windowsazure/dn530749.aspx\">Learn more</a>",
 "inputMode": "textBox",
 "isConfidential": false,
 "useInDefaultDescription": false,

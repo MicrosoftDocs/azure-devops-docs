@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azdevserver-2019'
 ms.date: 04/14/2017
 ---
 
@@ -24,7 +24,7 @@ The default configuration for projects configures each team as an area path. For
 
 If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
-Many features available through the web portal for TFS are scoped to a team. Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. To learn more, see [Configure team settings](../organizations/settings/configure-team-settings.md).
+Many features available through the web portal for TFS are scoped to a team. Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. To learn more, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md).
 
 
 
@@ -106,7 +106,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
     > [!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
-3.  Add the **Team** field to the [Layout section](xml/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](xml/weblayout-xml-elements.md) of the WIT definition. 
+3.  Add the **Team** field to the [Layout section](xml/layout-xml-element-reference.md) of the work item form. You'll also need to edit the [**WebLayout** section](xml/weblayout-xml-elements.md) of the WIT definition. 
 
         > [!div class="tabbedCodeSnippets"]
 		```XML
@@ -252,4 +252,5 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 ### Credits
 
-Guidance for [customizing teams decoupled from area paths](http://blog.hinshelwood.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshel](http://blog.hinshelwood.com), a senior devops consultant and Microsoft Visual Studio ALM MVP.
+Guidance for [customizing teams decoupled from area paths](https://nkdagility.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshelwood](https://nkdagility.com/about-martin-hinshelwood/
+), a devops consultant and Developer Technologies MVP.

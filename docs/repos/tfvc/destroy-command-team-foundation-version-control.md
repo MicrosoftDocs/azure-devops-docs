@@ -1,5 +1,6 @@
 ---
 title: Destroy Command (Team Foundation Version Control)
+titleSuffix: Azure Repos
 description: Destroy Command (Team Foundation Version Control)
 ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Destroy Command (Team Foundation Version Control)
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use the **tf destroy** command to destroy, or permanently delete, version-controlled files from Team Foundation version control.
 

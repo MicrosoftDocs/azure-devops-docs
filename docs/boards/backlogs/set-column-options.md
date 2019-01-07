@@ -1,8 +1,7 @@
 ---
-title: Add or remove columns, change column width, or sort order 
-titleSuffix: VSTS & TFS
-ms.global_help.title: Change column options
-description: Set column fields to show and sort fields for a backlog or query in Visual Studio Team Services or Team Foundation Server 
+title: Add or remove columns 
+titleSuffix: Azure Boards
+description: Set column fields to show and sort fields for a backlog or query in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
@@ -10,10 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 11/19/2018
 ---
-
-
 
 # Change column options 
 
@@ -23,31 +20,57 @@ ms.date: 03/20/2018
 
 From each backlog page or query, you can add or remove columns. Or, you can drag a column to a new position. Your settings persist for each page you customize and are only valid for your views.    
 
-Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across user sessions.    
-
-<img src="_img/set-column-open-dialog-s125.png" alt="Open column options" style="border: 1px solid #C3C3C3;" /> 
-
 > [!TIP]    
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
 
+Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across user sessions.    
 
-::: moniker range=">= tfs-2018"
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
-In the Column options dialog, click **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, click the ![delete icon](../_img/icons/delete_icon.png).
+# [New navigation](#tab/new-nav)
+
+::: moniker range=">= azdevserver-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Open column options, new navigation](_img/columns/open-column-options-menu.png)  
+ 
+::: moniker-end 
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker-end 
+
+# [Previous navigation](#tab/previous-nav)
+
+ ::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
+![Open column options](_img/set-column-open-dialog-s125.png) 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
+---
+
+::: moniker range=">= tfs-2018 || azdevserver-2019"
+
+In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../_img/icons/delete_icon.png).
 
 ::: moniker-end
 ::: moniker range="tfs-2018"
 > [!NOTE]    
 > The following dialog is available from TFS 2018.2 and later versions. 
 ::: moniker-end
-::: moniker range=">= tfs-2018"
-<img src="_img/set-column-options-s125.png" alt="Column options dialog, VSTS" style="border: 1px solid #C3C3C3;" /> 
-
+::: moniker range=">= tfs-2018 || azdevserver-2019"
+![Column options dialog](_img/set-column-options-s125.png)  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
-Find the field you want to add from the Available columns set and click **>** (greater-than character) to move it into the Selected columns. You can then change the order of the columns with the ![up arrow](../_img/icons/Arrow_Up.png)/![down arrow](../_img/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then click the **<** (less-than character).  
+Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../_img/icons/Arrow_Up.png)/![down arrow](../_img/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
  
 <img src="_img/b-vs-b-column-options.png" alt="Column options dialog, TFS" style="border: 1px solid #C3C3C3;" /> 
 

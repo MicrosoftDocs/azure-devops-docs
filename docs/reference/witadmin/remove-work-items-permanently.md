@@ -8,7 +8,7 @@ ms.assetid: 345641a1-0c8d-4af8-84ce-37a449627a52
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '<= azdevserver-2019'
 ms.date: 07/12/2018
 ---
 
@@ -39,7 +39,7 @@ witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
 
 ::: moniker range="tfs-2018"
 > [!NOTE]
-> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items) to permanently delete work items, or use [REST API `DELETE`](https://docs.microsoft.com/rest/api/vsts/wit/work%20items/delete).
+> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items) to permanently delete work items, or use [REST API `DELETE`](/rest/api/vsts/wit/work%20items/delete).
 ::: moniker-end
 
 #### Parameters  

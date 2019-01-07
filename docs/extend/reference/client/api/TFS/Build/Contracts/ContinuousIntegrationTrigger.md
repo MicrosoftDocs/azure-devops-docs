@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts ContinuousIntegrationTrigger API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts ContinuousIntegrationTrigger API | Extensions for Azure DevOps Services
 ms.assetid: 89b6ae91-8256-6d42-d859-c72fbe21690a
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -27,5 +27,5 @@ Extends: [BuildTrigger](./BuildTrigger.md)
 
 * `pollingInterval`: number. The polling interval in seconds.
 
-* `pollingJobId`: string. This is the ID of the polling job that polls the external repository.  Once the build pipeline is saved/updated, this value is set.
+* `pollingJobId`: string. This is the ID of the polling job that polls the external repository.  Once the build definition is saved/updated, this value is set.
 

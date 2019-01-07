@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Azure Storage with VSTS
-description: Use Azure Storage with your VSTS account
+title: Azure Storage with Azure DevOps Services
+description: Use Azure Storage with your Azure DevOps Services organization
 ms.assetid: ca016666-8e07-42a6-a6c5-09fceba179da
 ms.manager: douge
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Azure Storage Queue
 
 Insert a JSON string message in a storage queue in response to
-[events](../events.md) from VSTS.
+[events](../events.md) from Azure DevOps Services.
 For example, you can insert a queue message when a work item is created or changed, or a build occurs.
 
 The storage queue provides reliable, persistent messaging within and between services.
@@ -62,13 +62,13 @@ This can be done when you create a service hook subscription.
 
 ## Create a service hook subscription
 
-0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./_img/add-service-hook.png)
 
 	Click **Create Subscription**.
 
-3. Pick the VSTS event to use as a trigger to insert a message in a storage queue.
+3. Pick the Azure DevOps Services event to use as a trigger to insert a message in a storage queue.
 
    <img alt="Configure the event" src="./_img/azure-storage/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -90,9 +90,9 @@ to the selected storage queue as a JSON string.
 You can then use APIs provided by the Microsoft Azure SDK
 for .NET Framework (and other languages) to access the message:
 
-1. [How to: Peek at the next message](http://www.windowsazure.com/en-us/develop/net/how-to-guides/queue-service/#peek-message)
+1. [How to: Peek at the next message](http://www.windowsazure.com/develop/net/how-to-guides/queue-service/#peek-message)
 
-2. [How to: Dequeue the next message](http://www.windowsazure.com/en-us/develop/net/how-to-guides/queue-service/#get-message)
+2. [How to: Dequeue the next message](http://www.windowsazure.com/develop/net/how-to-guides/queue-service/#get-message)
 
 Example:
 
@@ -115,7 +115,7 @@ Example:
 ```
 
 ## Pricing
-VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
+Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
@@ -128,6 +128,6 @@ A: Yes, go [here](/azure/storage/queues/storage-dotnet-how-to-use-queues).
 
 #### Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](../../integrate/get-started/service-hooks/create-subscription.
+A: Yes, see details [here](../create-subscription.md)
 
 <!-- ENDSECTION -->

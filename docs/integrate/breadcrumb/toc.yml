@@ -1,11 +1,7 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name: Integrate
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=integrate
-    items:
-    - name: Integrate
-      tocHref: /vsts/
-      topicHref: /vsts/integrate/index
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/integrate/index

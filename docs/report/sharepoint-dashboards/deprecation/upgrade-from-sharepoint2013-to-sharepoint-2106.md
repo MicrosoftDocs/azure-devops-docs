@@ -136,7 +136,7 @@ Deploying Office Online Server requires a considerable amount of configuration. 
 * [Configure Office Online Server for SharePoint Server 2016](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx)
 * [Configure server-to-server authentication between Office Online Server and SharePoint Server 2016](https://technet.microsoft.com/library/mt346470%28v=office.16%29.aspx)
 * [Configure an Analysis Services (data model) server for Excel Online](https://technet.microsoft.com/library/jj219698%28v=office.16%29.aspx#SSAS)
-* [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](https://docs.microsoft.com/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)
+* [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)
 * [ExcelWarnOnDataRefresh](https://technet.microsoft.com/library/jj219442.aspx)
 
 

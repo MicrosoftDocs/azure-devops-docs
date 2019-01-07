@@ -1,5 +1,6 @@
 ---
 title: Check in your work to the team's codebase
+titleSuffix: Azure Repos
 description: Check in your work to the team's codebase
 ms.assetid: 325ef815-f163-4b3c-8fcb-2b7faf09c83d
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Check in your work to the team's codebase
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Use the **Pending Changes** page (Keyboard: Ctrl + 0, P) in Team Explorer to check in your code into a new changeset.
 

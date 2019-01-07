@@ -2,7 +2,7 @@
 title: Extensions, Previews, and more – Nov 18
 description: VSTS release notes for November 18 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: a3dd10a2-5d57-4168-9b5a-0a14e82ac9eb
 ms.date: 06/01/2016

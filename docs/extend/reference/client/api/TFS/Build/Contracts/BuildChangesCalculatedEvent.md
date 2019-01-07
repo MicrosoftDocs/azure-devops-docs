@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildChangesCalculatedEvent API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildChangesCalculatedEvent API | Extensions for Azure DevOps Services
 ms.assetid: 1a63b153-3cce-5d7f-b713-bd44c5cf9134
 ms.prod: devops
 ms.technology: devops-ecosystem

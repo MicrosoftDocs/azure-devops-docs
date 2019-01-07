@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
 ms.manager: douge
 ms.date: 04/27/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 monikerRange: '>= tfs-2013'
 ---
@@ -31,10 +31,10 @@ As shown, you need to move the MigrationDemo repo, from the FabrikamOld to the n
 
 ## How do I move?
 
-You have two options as outlined below. Import functionality is easier, but is only available in VSTS and TFS 2017 Update 1 and above.  
+You have two options as outlined below. Import functionality is easier, but is only available in Azure DevOps Services and TFS 2017 Update 1 and above.  
 
 ### Use Import Git repository functionality
-Using the Import Repository feature, you can import a Git repository to your team project from Team Foundation Server (TFS), Visual Studio Team Services (VSTS) or any other Git source code provider like GitHub. Review the [import repository documentation](../repos/git/import-git-repository.md) for more details.
+Using the Import Repository feature, you can import a Git repository to your team project from Team Foundation Server (TFS), Azure Repos or any other Git source code provider like GitHub. Review the [import repository documentation](../repos/git/import-git-repository.md) for more details.
 
 ### Manually migrate the Git repo in five easy steps:
 
@@ -48,7 +48,7 @@ Once the repo is created, you are presented with step-by-step instructions to qu
 
 ![New Repo Information](./_img/move-git-repos-between-team-projects/MoveRepo-NewRepoInfo.png)
 
-> Important - Clear the **Automatically create links for work items mentioned in a commit comment** if you are importing from a different project collection or a foreign git repository. VSTS will otherwise associate the commits to existing work items of unrelated team projects in the team project collection.
+> Important - Clear the **Automatically create links for work items mentioned in a commit comment** if you are importing from a different project collection or a foreign git repository. Azure DevOps will otherwise associate the commits to existing work items of unrelated team projects in the team project collection.
 
 ![New Repo Options and Links Warning](./_img/move-git-repos-between-team-projects/MoveRepo-Warning.png)
 
@@ -72,7 +72,7 @@ The `--mirror` option is used with both the clone and push command. The option e
 
 #### Validate the new repository
 
- Switch to the VSTS web portal and validate the new repository and the history in the **CODE** hub.
+ Switch to the Azure DevOps web portal and validate the new repository and the history in the **CODE** hub.
 
 ![Repo Validation in CODE Explorer](./_img/move-git-repos-between-team-projects/MoveRepo-Validate.png)
 

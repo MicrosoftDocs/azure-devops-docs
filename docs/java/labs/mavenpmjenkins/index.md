@@ -1,6 +1,6 @@
 ---
-title: Build a package for Maven with Jenkins and VSTS
-description: Tutorial lab for building a package for Maven with Jenkins and Visual Studio Team Services (VSTS)
+title: Build a package for Maven with Jenkins and Azure DevOps Services
+description: Tutorial lab for building a package for Maven with Jenkins and Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,9 +13,9 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Build a Maven package using Jenkins and VSTS
+# Build a Maven package using Jenkins and Azure DevOps Services
 
-In this exercise, you are going to clone a GitHub repo into VSTS, if you have not already done so. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure a Jenkins build to get the source code from the VSTS repo, build and then publish the MyShuttleCalc package to a VSTS Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
+In this exercise, you are going to clone a GitHub repo into Azure DevOps Services, if you have not already done so. This repo contains a class library (MyShuttleCalc) that is used by the MyShuttle2 application. You will configure a Jenkins build to get the source code from the Azure DevOps Services repo, build and then publish the MyShuttleCalc package to an Azure DevOps Services Maven Package feed so that it can be consumed by MyShuttle2 and any other applications that require the calculation code.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -24,22 +24,22 @@ In this exercise, you are going to clone a GitHub repo into VSTS, if you have no
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private VSTS agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your VSTS team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private Azure DevOps Services agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your Azure DevOps Services team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: It is not necessary to clone GitHub repos into VSTS. VSTS will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in VSTS.
+> **Note**: It is not necessary to clone GitHub repos into Azure DevOps Services. Azure DevOps Services will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps Services.
 
-> **Note**: Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with VSTS anyway. 
+> **Note**: Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps Services anyway. 
 
 ## Configure Package Management
 
-Before getting to the build, you will need to create the Maven Package Feed and then update the Maven settings file in the project to specify where to publish the package to. All these instructions are in the [Maven Package Management with VSTS Team Build](../mavenpmvsts/index.md). Please complete the following exercises from that lab:
+Before getting to the build, you will need to create the Maven Package Feed and then update the Maven settings file in the project to specify where to publish the package to. All these instructions are in the [Maven Package Management with Azure DevOps Services Team Build](../mavenpmvsts/index.md). Please complete the following exercises from that lab:
 
 - Create a Maven Package Feed
 - Create a Maven Settings File with the Feed Credentials
 
 ## Create an SSH Key for Git authentication
 
-In this task you will create an SSH key to authenticate to the VSTS repo. You need to create an SSH key if you do not already have one, then upload the public key to VSTS. The Jenkins job will use the key to authenticate to the repo.
+In this task you will create an SSH key to authenticate to the Azure DevOps Services repo. You need to create an SSH key if you do not already have one, then upload the public key to Azure DevOps Services. The Jenkins job will use the key to authenticate to the repo.
 
 1. On your VM, open a terminal by clicking on the Terminal Emulator icon in the toolbar.
 
@@ -65,7 +65,7 @@ In this task you will create an SSH key to authenticate to the VSTS repo. You ne
 
 1. Select all of the text (from `ssh-rsa` to `jdev.com`), right-click and select "Copy".
 
-1. Go back to Chrome and browse to your VSTS Team Project.
+1. Go back to Chrome and browse to your Azure DevOps Services Team Project.
 
 1. Click on your profile image in the upper right. In the menu, click Security.
 
@@ -97,9 +97,9 @@ In this task you will configure the Maven installation settings for Jenkins.
 
 ## Create a Maven Job
 
-In this task you will create a Maven job in Jenkins to build MyShuttleCalc and to deploy the package to the VSTS Package feed.
+In this task you will create a Maven job in Jenkins to build MyShuttleCalc and to deploy the package to the Azure DevOps Services Package feed.
 
-1. Open your VSTS Team Project in Chrome and click on Code to open the Code Hub. Select "MyShuttleCalc" from the list of repos.
+1. Open your Azure DevOps Services Team Project in Chrome and click on Code to open the Code Hub. Select "MyShuttleCalc" from the list of repos.
 
     ![Navigate to MyShuttleCalc repo](../_img/mavenpmjenkins/navigate-to-repo.png)
 
@@ -139,12 +139,12 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
 1. Add a new post-build action - this time select "Archive the artifacts". Set "Files to archive" to `**/MyShuttleCalc*.jar`. This saves the MyShuttleCalc jar file as an artifact from this job.
 
-1. Add a new post-build action - this time select "Collect results for TFS/Team Services". This step allows Jenkins to collect test results and coverage results so that they are available to VSTS. Click the Add button twice to add 2 collectors:
+1. Add a new post-build action - this time select "Collect results for TFS/Azure DevOps Services". This step allows Jenkins to collect test results and coverage results so that they are available to Azure DevOps Services. Click the Add button twice to add 2 collectors:
 
     - **Type**: JUnit, **Files to include**: `**/TEST-*.xml`
     - **Type**: JaCoCo, **Files to include**: `**/jacoco/**`
 
-    ![VSTS Results action](../_img/mavenpmjenkins/vsts-post-build.png)
+    ![Azure DevOps Services Results action](../_img/mavenpmjenkins/vsts-post-build.png)
 
 1. Click the Save button.
 
@@ -162,13 +162,13 @@ In this task you will run the build to ensure that it runs successfully.
 
     ![Jenkins build results](../_img/mavenpmjenkins/jenkins-results.png)
 
-1. Navigate to the Maven Package feed in VSTS. You should see the latest package with the version number matching 1.0._jenkins-build-number_.
+1. Navigate to the Maven Package feed in Azure DevOps Services. You should see the latest package with the version number matching 1.0._jenkins-build-number_.
 
     ![Package in feed](../_img/mavenpmjenkins/package-feed.png)
 
-## Integrate VSTS Team Build and Jenkins
+## Integrate Azure DevOps Services Team Build and Jenkins
 
-In this task you will configure a VSTS Team Build in VSTS that will trigger the Jenkins job and collect the results. This technique offers the integration from source control, work item tracking, test and release that you get in VSTS but allows the build itself to be in Jenkins.
+In this task you will configure an Azure DevOps Services Team Build in Azure DevOps Services that will trigger the Jenkins job and collect the results. This technique offers the integration from source control, work item tracking, test and release that you get in Azure DevOps Services but allows the build itself to be in Jenkins.
 
 1. In Jenkins, click on the Jenkins logo to navigate to the dashboard.
 
@@ -180,7 +180,7 @@ In this task you will configure a VSTS Team Build in VSTS that will trigger the 
 
 1. On the upper-right of the black toolbar, click "sign up". Create a new user account, making a note of the username and password because you'll need them later on.
 
-1. Navigate to your VSTS Team Project and click on the gear icon and then Services.
+1. Navigate to your Azure DevOps Services Team Project and click on the gear icon and then Services.
 
 1. Click "+ New service connection" and select Jenkins from the list.
 
@@ -197,7 +197,7 @@ In this task you will configure a VSTS Team Build in VSTS that will trigger the 
 
     ![Jenkins endpoint](../_img/mavenpmjenkins/jenkins-endpoint.png)
 
-1. In VSTS, click on Build & Release->Builds to open the builds hub.
+1. In Azure DevOps Services, click on Build & Release->Builds to open the builds hub.
 
 1. Click the "+ New" button to create a new pipeline.
 
@@ -207,7 +207,7 @@ In this task you will configure a VSTS Team Build in VSTS that will trigger the 
 
     | Parameter | Value | Notes |
     | --------------- | ---------------------------- | --------------------------------------- |
-    | Default agent queue | `default` | Run this build on your VSTS agent container |
+    | Default agent queue | `default` | Run this build on your Azure DevOps Services agent container |
     | Job Name | `MyShuttleCalc` | The name of the Jenkins job
     | Jenkins service connection | `Azure VM Jenkins` | The endpoint you just created to Jenkins |
 

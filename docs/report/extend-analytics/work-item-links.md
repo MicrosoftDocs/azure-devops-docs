@@ -1,7 +1,7 @@
 ---
 title: Query for linked work items 
-titleSuffix: VSTS 
-description: How to guidance for creating a query for linked work items using the Analytics service for Visual Studio Team Services   
+titleSuffix: Azure DevOps Services 
+description: How to guidance for creating a query for linked work items using the Analytics service for Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -9,14 +9,13 @@ ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/2/2018
 ---
 
 # Query for linked work items 
 
-**VSTS**  
-
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
@@ -30,6 +29,17 @@ In this topic you'll learn:
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
+::: moniker range=">= azdevserver-2019"
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+::: moniker-end
+
 
 ## Parent/Child hierarchy
 You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
@@ -42,7 +52,7 @@ To return information about an item's children use ```$expand``` on the **Childr
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq 103
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Children($select=WorkItemId,Title,State)&$filter=WorkItemId eq 103
 ```
 
 
@@ -51,7 +61,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-	"@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))",
+	"@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItems(WorkItemId,Title,State,Children,Children(WorkItemId,Title,State))",
 	"value": [{
 		"WorkItemId": 103,
 		"Title": "Feature Y",
@@ -81,7 +91,7 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
 ```
 
 **Response**
@@ -89,7 +99,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-	"@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))",
+	"@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItems(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State,Parent,Parent(WorkItemId,Title,State)))",
 	"value": [{
 		"WorkItemId": 105,
 		"Title": "Task B",
@@ -118,7 +128,7 @@ To retrieve the links associated with an item you may ```$expand``` the **Links*
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName)
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName)
 ```
 
 **Response**
@@ -126,7 +136,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-	"@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName))",
+	"@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName))",
 	"value": [{
 		"WorkItemId": 103,
 		"Title": "Feature Y",
@@ -159,7 +169,7 @@ You may include the details of your linked work items by using ```$expand``` on 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId%20eq%20103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
 **Response**
@@ -167,7 +177,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-	"@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
+	"@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
 	"value": [{
 		"WorkItemId": 103,
 		"Title": "Feature Y",
@@ -221,7 +231,7 @@ You may also be interested in a particular type of link between items, in which 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId eq 103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,WorkItemType,State&$filter=WorkItemId eq 103&$expand=Links($select=SourceWorkItemId,TargetWorkItemId,LinkTypeName;$filter=LinkTypeName eq 'Related';$expand=TargetWorkItem($select=WorkItemId,Title,State))
 ```
 
 **Response**
@@ -229,7 +239,7 @@ https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Work
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-	"@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
+	"@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItems(WorkItemId,Title,WorkItemType,State,Links(SourceWorkItemId,TargetWorkItemId,LinkTypeName,TargetWorkItem(WorkItemId,Title,State)))",
 	"value": [{
 		"WorkItemId": 103,
 		"Title": "Feature Y",

@@ -1,7 +1,7 @@
 ---
 title: TF31002-Unable to connect  
-titleSuffix: VSTS & TFS 
-description: Receive the error when you try to connect to VSTS or an on-premises Team Foundation Server.
+titleSuffix: Azure DevOps & TFS 
+description: Receive the error when you try to connect to Azure DevOps Services or an on-premises Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
@@ -15,16 +15,16 @@ ms.date: 01/20/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You might receive this error when you try to connect to VSTS or an on-premises Team Foundation Server from Visual Studio.  
+You might receive this error when you try to connect to Azure DevOps Services or an on-premises Team Foundation Server from Visual Studio.  
   
-##You receive this error when you try to connect to VSTS   
+##You receive this error when you try to connect to Azure DevOps Services   
   
 |Problem|Resolution|  
 |-------------|----------------|  
-|You don't have an active account or license.|Check with your administrator that you're a member of the account and have an active, valid license. See [Assign licenses to users](../../organizations/accounts/add-organization-users-from-user-hub.md) for details.| 
-|Your VSTS organization is connected to the Azure Active Directory.|When your VSTS organization is connected to a directory that is associated with an Office 365 or Microsoft Azure subscription, only members in the directory can access the account.<br /><br /> Check with your directory administrator to have them [create an organizational account for you or add your account to the directory as external member](https://docs.microsoft.com/azure/active-directory/active-directory-create-users).|  
-|You can't switch between different organizational accounts.|If you work with several VSTS organizations that connect to different directories, such as accounts that are created from the Microsoft Azure Preview Portal, the sign-out function might not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.<br /><br /> When this problem occurs, you see a flashing blank sign in dialog box several times. Then, you receive either TF31002 or TF31003 error after you connect to or add a new connection in "Connect to Team Foundation Server" dialog box.<br /><br /> To resolve this problem, apply the most recent [Visual Studio update](http://visualstudio.microsoft.com/downloads) .<br /><br /> To learn more, see [KB Article ID 2958966, You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-studio-online).|  
-|You want to sign in to VSTS from Visual Studio using different credentials.|See [Connect to projects, Sign in with different credentials](../../organizations/projects/connect-to-projects.md).|  
+|You don't have an active account or license.|Check with your administrator that you're a member of the account and have an active, valid license. See [Assign licenses to users](../../organizations/accounts/add-organization-users.md) for details.| 
+|Your Azure DevOps Services organization is connected to the Azure Active Directory.|When your Azure DevOps Services organization is connected to a directory that is associated with an Office 365 or Microsoft Azure subscription, only members in the directory can access the account.<br /><br /> Check with your directory administrator to have them [create an organizational account for you or add your account to the directory as external member](/azure/active-directory/active-directory-create-users).|  
+|You can't switch between different organizational accounts.|If you work with several Azure DevOps Services organizations that connect to different directories, such as accounts that are created from the Microsoft Azure Preview Portal, the sign-out function might not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.<br /><br /> When this problem occurs, you see a flashing blank sign in dialog box several times. Then, you receive either TF31002 or TF31003 error after you connect to or add a new connection in "Connect to Team Foundation Server" dialog box.<br /><br /> To resolve this problem, apply the most recent [Visual Studio update](http://visualstudio.microsoft.com/downloads) .<br /><br /> To learn more, see [KB Article ID 2958966, You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-studio-online).|  
+|You want to sign in to Azure DevOps Services from Visual Studio using different credentials.|See [Connect to projects, Sign in with different credentials](../../organizations/projects/connect-to-projects.md).|  
   
 ### You receive this error when you try to connect to an on-premises TFS from your client computer  
   

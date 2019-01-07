@@ -1,21 +1,23 @@
 ---
-title: Email or print work items
-titleSuffix: VSTS & TFS
-description: Email or print work items to share work tracking information in Visual Studio Team Services & Team Foundation Server
+title: Email or print user stories, issues, bugs, or other work items
+titleSuffix: Azure Boards
+description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
-ms.date: 11/27/2017  
----
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
+--- 
 
 
+# Email or print user stories, bugs, and other work items 
 
-# Email or print work items 
-
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
+**Azure DevOps Services | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
@@ -23,7 +25,7 @@ Using work items to track your work provides a host of benefits, including the a
 Here's a list of the most common ways in which teams share information and plans using work item tracking. 
 
 > [!NOTE]    
-><b>Feature availability: </b>Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
+> Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
 
 <table >
 <thead align="center">
@@ -72,7 +74,7 @@ Here's a list of the most common ways in which teams share information and plans
 
 
 <tr>
-<td align="left">[Release summary (VSTS)](#release-summary) </td>
+<td align="left">[Release summary](#release-summary) </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>  </td>
 <td>  </td>
@@ -81,6 +83,11 @@ Here's a list of the most common ways in which teams share information and plans
 
 </tbody>
 </table>
+
+::: moniker range="<= azdevserver-2019"  
+> [!NOTE]   
+> For the email feature to work, your administrator for Azure DevOps Server or Team Foundation Server must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
+::: moniker-end 
 
 In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
 
@@ -94,29 +101,40 @@ Some of the most common ways information is shared within a team or across teams
 
 You can quickly email a summary of one or more work items. Summaries include the values assigned to these fields: work item ID, title, work item type, assigned to, state, and tags.  
 
-> [!NOTE]    
->You can only send the email to addresses that are recognized by the system, that is accounts of team members or stakeholders. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't  permissions to read the mailed work items.  
+> [!IMPORTANT]     
+> If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
 # [Browser](#tab/browser)
 
-### VSTS
+::: moniker range=">= tfs-2018"  
 <a id="team-services-email" />  
-**From the web portal**, open the ![Actions icon](../_img/icons/actions-icon.png) Actions menu and choose the email option. 
-   
-![Email work item from VSTS](../queries/_img/share-plans-email-work-item-ts.png)    
+**From the web portal**, open the work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon, and select the **Email work item** option. 
 
-### TFS, Web Portal
+> [!div class="mx-imgBorder"]  
+> ![Email work items](_img/email/email-work-item.png)   
+::: moniker-end  
+
+::: moniker range="tfs-2017"  
+
+**From the web portal**, open the work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon, and select the **Email work item** option. 
+
+![Email work item](../queries/_img/share-plans-email-work-item-ts.png)    
+::: moniker-end  
+
+::: moniker range="<= tfs-2015"  
 <a id="tfs-portal-email" />
 
-**From the web portal**, open the work item and click the ![mail icon](../_img/icons/mail_icon.png) mail icon.   
+**From the web portal**, open the work item and choose the ![ ](../_img/icons/mail_icon.png) mail icon.   
 
 ![Email work item from on-prem TFS](../queries/_img/share-plans-email-work-item-tfs.png)  
 
+::: moniker-end  
+::: moniker range="<= azdevserver-2019"  
 > [!NOTE]  
 > If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.   
+::: moniker-end  
 
-
-# [Visual Studio](#tab/visual-studio) 
+# [Visual Studio 2015](#tab/visual-studio) 
 
 <a id="team-explorer-email" />
 
@@ -128,7 +146,7 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 <a id="tee-email" />
 
-**From Eclipse**, open the work item and click the ![mail icon](../_img/icons/mail_icon.png) mail icon.  
+**From Eclipse**, open the work item and choose the ![mail icon](../_img/icons/mail_icon.png) mail icon.  
 
 ![Email work item from TEE](../queries/_img/share-plans-email-work-item-tfs.png)  
  
@@ -144,38 +162,54 @@ Depending on the option and client you choose, summary lists may or may not incl
  
 # [Browser](#tab/browser)
 
-### VSTS, TFS 2017 
+::: moniker range=">= tfs-2017"  
 
 <a id="team-services-email-list" /> 
 <a id="email-list-web-portal" >  </a> 
 
 **To email items from the web portal**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.   
-   
-![Email selected items from a list](../queries/_img/share-plans-email-selected-work-items-tfs-15.png) 
+::: moniker-end  
+::: moniker range=">= tfs-2018"
 
-If you want to mail a list of all items in the backlog or query, simply click the ![mail icon](../_img/icons/mail_icon.png) mail icon. 
+> [!div class="mx-imgBorder"]  
+> ![Email work items](_img/email/bulk-email-backlog-items.png)   
+::: moniker-end  
+
+::: moniker range="tfs-2017"
+![Email selected items from a list](../queries/_img/share-plans-email-selected-work-items-tfs-15.png) 
+::: moniker-end  
+
+::: moniker range=">= tfs-2018"
+If you want to mail a list of all items in the backlog or query, choose the ![ ](../_img/icons/actions-icon.png) actions icon, and select the **Email** option. 
+
+> [!div class="mx-imgBorder"]  
+> ![Email backlog or query results list](_img/email/email-backlog.png)  
+
+::: moniker-end  
+
+::: moniker range="tfs-2017"
+If you want to mail a list of all items in the backlog or query, simply choose the ![ ](../_img/icons/mail_icon.png) mail icon. 
 
 ![Email full backlog or query results list](../queries/_img/share-plans-email-summary-list-web-portal.png)  
 
-### TFS 2015
-<a id="tfs-portal-email-list" />
+::: moniker-end  
 
-> [!NOTE]   
-> Your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.  
+::: moniker range="<= tfs-2015"
 
 **To email items from the web portal for TFS 2015**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.
     
 ![Email selected items from a list](../queries/_img/share-plans-email-summary-list-ts.png)  
 
-If you want to mail a list of all items in the backlog or query, simply click the ![mail icon](../_img/icons/mail_icon.png) mail icon. 
+If you want to mail a list of all items in the backlog or query, simply choose the ![mail icon](../_img/icons/mail_icon.png) mail icon. 
  
 ![Email full backlog or query results list](../queries/_img/share-plans-email-summary-list-web-portal.png)  
- 
 
-# [Visual Studio](#tab/visual-studio) 
+::: moniker-end  
+
+# [Visual Studio 2015](#tab/visual-studio) 
 <a id="team-explorer-email-list" />
 
-**To email items from Visual Studio**: Open a query, highlight the items from the list, and then choose the Send selection to Microsoft Outlook from the context menu. This option requires that you configure Office Outlook on your client computer.  
+**To email items from Visual Studio**: Open a query, highlight the items from the list, choose the context menu, and select **Send selection to Microsoft Outlook** from the menu. This option requires that you configure Office Outlook on your client computer.  
 
 ![Email selected items from Visual Studio query result list ](../queries/_img/share-plans-email-work-item-list.png)   
  
@@ -220,14 +254,16 @@ To print the details of a work item, open a query in Visual Studio that contains
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
 # [Browser](#tab/browser)
-### VSTS, TFS 2017 
+
+::: moniker range=">= tfs-2017"  
 <a id="team-services-copy-url" />
 
 **From the web portal**, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.
 
 <img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #C3C3C3;" />  
 
-### TFS 2015, TFS 2013   
+::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2015" 
 
 <s id="tfs-portal-copy-url" />
 
@@ -235,8 +271,10 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 ![Copy hyperlink for a work item from web portal for TFS item](../queries/_img/share-plans-copy-URL-wi-tfs.png) 
 
+::: moniker-end  
 
-# [Visual Studio](#tab/visual-studio)
+
+# [Visual Studio 2015](#tab/visual-studio)
 <a id="team-explorer-copy-url" />
 
 **From Visual Studio**, right-click the work item tab to copy the URL. The URL opens the work item in the web portal. 
@@ -253,15 +291,13 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 --- 
 
+<!---
+::: moniker range=">= tfs-2018"
+
 <a id="release-summary"></a>
 ## Email release summary
 
-From **Build and release>Releases**, choose a specific release and click the ![email](../_img/icons/email-icon.png) Send Email icon to share the results of that release.  
-
-
-> [!NOTE]    
-><b>Feature availability: </b>This feature is available from VSTS and TFS 2018 and later versions.
- 
+From **Build and release>Releases**, choose a specific release and click the ![ ](../_img/icons/email-icon.png) **Send Email** icon to share the results of that release.  
 
 ![Release summary, send email](../queries/_img/share-plans-email-release-definition.png)
 
@@ -271,17 +307,15 @@ In the To box, start typing the name of the team member you want to send the sum
 
 Optionally, enter a note about the release or un-check any section you don't want included. The default is to include all details, environmental summary, issues, and work items associated with the release.   
 
+::: moniker-end  
 
+-->
 
 ## Related articles  
 
-As you can see, there are many ways to share information using work items alone.  
-
-See also the following topics:
-
 - [Use templates to add and update work items](../backlogs/work-item-template.md)  
-- [Share work plans and progress](../queries/share-plans.md) 
+- [Share information in work items and social tools](../queries/share-plans.md) 
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
- 
+- [Configure an SMTP server](/tfs/server/admin/setup-customize-alerts)
 
  

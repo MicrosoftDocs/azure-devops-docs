@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts ServiceEvent API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts ServiceEvent API | Extensions for Azure DevOps Services
 ms.assetid: 8bae4734-8da6-c9c0-d93e-babeb0900aa1
 ms.prod: devops
 ms.technology: devops-ecosystem

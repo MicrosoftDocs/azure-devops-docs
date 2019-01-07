@@ -1,5 +1,6 @@
 ---
-title: Update your branch history with rebase | VSTS & TFS
+title: Update your branch history with rebase
+titleSuffix: Azure Repos
 description: Rewriting History using Git rebase
 ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 #  Apply changes with rebase
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 One of the tradeoffs from the [Git feature branch workflow](gitworkflow.md) is that you do not actively manage your version control history. 
 Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the master branch with [pull requests](pullrequest.md).  
@@ -126,7 +127,7 @@ Git will now attempt to condense the commits into a single commit. After the reb
 window open up where Git asks you to give a commit message for the commit with the combined changes. You'll want to condense
 this down to one line of text (just like you would have for a normal commit) and save and quit the editor. 
 
-> VSTS and TFS users can [squash merge](merging-with-squash.md) their pull requests to consolidate commits added to the master branch.
+> Azure DevOps Services and TFS users can [squash merge](merging-with-squash.md) their pull requests to consolidate commits added to the master branch.
 
 ## Next steps
 

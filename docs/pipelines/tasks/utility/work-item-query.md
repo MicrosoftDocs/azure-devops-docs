@@ -1,22 +1,25 @@
 ---
-title: Work item query task for Microsoft VSTS and TFS 
-description: Build and release task to ensure the number of matching items returned by a work item query in within the configured threshold in VSTS and TFS
+title: Query Work Items task 
+description: Ensure the number of matching items returned by a work item query is within the configured threshold
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Query Work Items
+# Query Work Items task
 
-![icon](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Use this task in a build or release pipeline to ensure the number of matching items returned by a work item query is within the configured thresholds.
+
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -26,7 +29,7 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 None
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.md)]
 ::: moniker-end
@@ -46,4 +49,4 @@ For more information about using this task, see [Approvals and gates overview](.
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

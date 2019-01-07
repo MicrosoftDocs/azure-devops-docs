@@ -1,7 +1,7 @@
 ---
 title: CMMI process template artifacts
-titleSuffix: VSTS & TFS  
-description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards  
+description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
@@ -10,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
----
+ms.date: 12/20/2018
+--- 
 
 # CMMI process
  
@@ -30,7 +30,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 > You can customize the work tracking system for your project based on the CMMI process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 > [!NOTE]  
 > The latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../../reference/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
@@ -41,12 +41,14 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 >Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a project from TFS. Other resource requirements apply. 
 ::: moniker-end
 
-
-## Plan and track work
+<a id="start-using" />
+## Plan and track work with CMMI
 <meta name="description" content="CMMI project management" />
 Teams plan their project by capturing features and requirements. When teams work in sprints, they define tasks and link them to requirements. To gain insight into a rollup of requirements across teams, program managers link requirements to a feature. Blocking issues are tracked using issues. For details on using these WITs, see [CMMI process work item types and workflow](cmmi-process-workflow.md)
 
-The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../backlogs/overview.md).  
+The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
+
+*Click on one of the following images to go to the linked article.*
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
@@ -84,11 +86,11 @@ To get started, you can open a shared query and create a chart based on your tra
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 <a id="reports"></a>
 ## SQL Server reports  
 
@@ -115,7 +117,7 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 ### CMMI process versions  
 
-As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
+As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |

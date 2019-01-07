@@ -1,6 +1,6 @@
 ---
-title: Uninstall or disable extensions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-description: Uninstall or disable extensions for Visual Studio Team Services or Team Foundation Server
+title: Uninstall or disable extensions in Azure DevOps Services or Team Foundation Server (TFS)
+description: Uninstall or disable extensions for Azure DevOps Services or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -8,31 +8,47 @@ ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
-ms.date: 12/04/2017
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
  
-
 # Uninstall or disable extensions
 
-**VSTS** | **TFS** 
+**Azure DevOps Services** | **TFS** 
 
 When you don't need an extension anymore, you can uninstall or disable this extension.
 
-> **Charges will continue for a paid extension until you [reduce all users to zero (0) for this extension](./how-to/change-paid-extension-users.md)**. 
+> **Charges will continue for a paid extension until you [reduce all users to zero (0) for this extension](./how-to/change-paid-extension-users.md)**.
 
-Only [Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) can uninstall or disable extensions. 
+## Prerequisites
 
+You must be a [Project collection administrator](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) to uninstall or disable extensions.
 
-0. Go to your VSTS or TFS home page, then go to your project:
-    * VSTS: ```https://{account-name}.visualstudio.com/{team-project}```
-    * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
+## Disable or uninstall extensions
 
-0. Manage your extensions:
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
-    ![Manage extensions](_img/manage-extensions-vsts.png)
+# [New navigation](#tab/new-nav)
 
-0. You can right click or click on the ellipses (...) on the extension and choose uninstall or disable.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
+
+2. Select the shopping bag icon and **Manage extensions**.
+
+   ![Shopping bag icon, Browse Marketplace](../organizations/billing/_img/_shared/shopping-bag-browse-marketplace.png)
+
+3. Right click or choose the ellipses (...) on the extension and then choose **uninstall** or **disable**.
+
+   ![Disable or uninstall extension](_img/disable-or-uninstall-extension.png)
+
+# [Previous navigation](#tab/previous-nav)
+
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
+
+2. Select the shopping bag icon and **Manage extensions**.
+
+   ![Shopping bag icon, Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
+
+3. Right click or choose the ellipses (...) on the extension and then choose **uninstall** or **disable**.
 
     ![Uninstall or disable extensions](_img/disable-uninstall-extension.png)

@@ -1,18 +1,21 @@
 ---
-title: SCVMM 
+title: Deploy with SCVMM
 description: Provision and manage your virtual machines in System Center Virtual Machine Manager (SCVMM)
 ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2018'
 ---
 
-# SCVMM deployment
+# Deploy with System Center Virtual Machine Manager
+
+**Azure Pipelines | TFS 2018**
 
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
 
@@ -24,7 +27,7 @@ You can automatically provision new virtual machines in System Center Virtual Ma
 
 ::: moniker range="vsts"
 
-You need to first configure how VSTS connects to SCVMM. You cannot use Microsoft-hosted agents to run SCVMM tasks since the VMM Console is not installed on hosted agents. You must set up a self-hosted build and release agent on the same network as your SCVMM server.
+You need to first configure how Azure Pipelines connects to SCVMM. You cannot use Microsoft-hosted agents to run SCVMM tasks since the VMM Console is not installed on hosted agents. You must set up a self-hosted build and release agent on the same network as your SCVMM server.
 
 ::: moniker-end
 
@@ -35,13 +38,13 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
 ::: moniker-end
 
 1. Install the **Virtual Machine Manager** (VMM) console on the agent machine by
-   following [these instructions](https://docs.microsoft.com/system-center/vmm/install-console).
+   following [these instructions](/system-center/vmm/install-console).
    Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
 
 1. Install the **System Center Virtual Machine Manager (SCVMM)** extension
-   from Visual Studio Marketplace into TFS or VSTS:
+   from Visual Studio Marketplace into TFS or Azure Pipelines:
 
-   * If you are using **VSTS**,
+   * If you are using **Azure Pipelines**,
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
      in Visual Studio Marketplace.
    * If you are using **Team Foundation Server**, download
@@ -51,9 +54,9 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
 
 1. Create an SCVMM service connection in your project:
 
-   * In your VSTS or TFS project in your web browser, navigate to the project settings and select **Services**.
+   * In your Azure Pipelines or TFS project in your web browser, navigate to the project settings and select **Service connections**.
 
-   * In the **Services** tab, choose **New service connection**, and select **SCVMM**.
+   * In the **Service connections** tab, choose **New service connection**, and select **SCVMM**.
 
    * In the **Add new SCVMM Connection** 
      dialog, enter the values required to connect to the 
@@ -74,7 +77,7 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
 
 One of the common actions that you can perform with every build is to create a new virtual machine to deploy the build to. You use the SCMVMM task from the extension to do this and configure the properties of the task as follows:
 
-* **Display name**: The name for the task as it appears in the task list. 
+* **Display name**: The name for the task as it appears in the task list.
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select **New Virtual Machine using Template/Stored VM/VHD**.
 * **Create virtual machines from VM Templates**: Set this option if you want to use a template.
@@ -95,62 +98,54 @@ One of the common actions that you can perform with every build is to create a n
 * **Placement path for VM**: If you selected **Host** as the deployment target, enter the path to be used during virtual machine placement. Example `C:\ProgramData\Microsoft\Windows\Hyper-V`
 * **Additional Arguments**: Enter any arguments to pass to the virtual machine creation template. Example `-StartVM -StartAction NeverAutoTurnOnVM -StopAction SaveVM`
 * **Wait Time**: The time to wait for the virtual machine to reach ready state.
-* **Network Virtualization**: Set this option to enable network virtualization for your virtual machines. For more information, see [Create a virtual network isolated environment](create-virtual-network.md). 
+* **Network Virtualization**: Set this option to enable network virtualization for your virtual machines. For more information, see [Create a virtual network isolated environment](create-virtual-network.md).
 * **Show minimal logs**: Set this option if you don't want to create detailed live logs about the VM provisioning process.
-
-![Task configuration for create new virtual machines](_img/scvmm/scvmm-create-vm-using-template.png)
 
 <a name="delete"></a>
 ## Delete virtual machines
 
 After validating your build, you would want to delete the virtual machines that you created. You use the SCMVMM task from the extension to do this and configure the properties of the task as follows:
 
-* **Display name**: The name for the task as it appears in the task list. 
+* **Display name**: The name for the task as it appears in the task list.
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select **New Virtual Machine using Template/Stored VM/VHD**.
 * **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
 * **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
 
-![Task configuration for deleting a virtual machine](_img/scvmm/scvmm-delete-vm.png)
-
 <a name="startstop"></a>
 ## Start and stop virtual machines
 
 You can start a virtual machine prior to deploying a build, and then stop the virtual machine after running tests. Use the SCVMM task as follows in order to achieve this:
 
-* **Display name**: The name for the task as it appears in the task list. 
+* **Display name**: The name for the task as it appears in the task list.
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select **Start Virtual Machine** or **Stop Virtual Machine**.
 * **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
 * **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
 * **Wait Time**: The time to wait for the virtual machine to reach ready state.
- 
-![Task configuration for start and stop virtual machines](_img/scvmm/scvmm-start-vm.png)
 
 <a name="checkpoint"></a>
 ## Create, restore, and delete checkpoints
 
 A quick alternative to bringing up a virtual machine in desired state prior to running tests is to restore it to a known checkpoint. Use the SCVMM task as follows in order to do this:
 
-* **Display name**: The name for the task as it appears in the task list. 
+* **Display name**: The name for the task as it appears in the task list.
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select one of the checkpoint actions **Create Checkpoint**, **Restore Checkpoint**, or **Delete Checkpoint**.
 * **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
 * **Checkpoint Name**: For the **Create Checkpoint** action, enter the name of the checkpoint that will be applied to the virtual machines. For the **Delete Checkpoint** or **Restore Checkpoint** action, enter the name of an existing checkpoint.
-* **Description for Checkpoint**: Enter a description for the new checkpoint when creating it. 
+* **Description for Checkpoint**: Enter a description for the new checkpoint when creating it.
 * **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
-
-![Task configuration for create, restore, and delete checkpoint](_img/scvmm/scvmm-create-checkpoint.png)
 
 <a name="runscript"></a>
 ## Run custom PowerShell scripts for SCVMM
 
 For functionality that is not available through the in-built actions, you can run custom SCVMM PowerShell scripts using the task. The task helps you with setting up the connection with SCVMM using the credentials configured in the service connection, and then runs the script.
 
-* **Display name**: The name for the task as it appears in the task list. 
+* **Display name**: The name for the task as it appears in the task list.
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select **Run PowerShell Script for SCVMM**.
 * **Script Type**: Select either **Script File Path** or **Inline Script**.
@@ -158,8 +153,6 @@ For functionality that is not available through the in-built actions, you can ru
 * **Inline Script**: If you selected **Inline Script**, enter the PowerShell script lines to execute.
 * **Script Arguments**: Enter any arguments to be passed to the PowerShell script. You can use either ordinal parameters or named parameters.
 * **Working folder**: Specify the current working directory for the script when it runs. The default if not provided is the folder containing the script.
-
-![Task configuration for running a PowerShell script for SCVMM](_img/scvmm/scvmm-powershell-script.png)
 
 ## Deploying build to virtual machines
 

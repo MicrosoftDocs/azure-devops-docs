@@ -1,6 +1,8 @@
 ---
-title: Billing overview for Visual Studio Team Services
-description: Overview of billing management tasks in VSTS (Visual Studio Team Services), including how to set up billing, make purchases, and change Azure subscription for billing
+title: Overview of billing articles
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Understand billing management tasks, including how to set up billing, make purchases, and change the Azure subscription for billing.
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
@@ -8,56 +10,53 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
+# Billing overview for Azure DevOps
 
-# Billing overview for VSTS
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-**VSTS**
+Set up billing when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), on the Azure DevOps tab.
 
-Set up billing when you need more than the **Free Tier** of resources in your VSTS organization or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+The Free tier includes:
 
-The Free Tier includes:
+* Five Azure DevOps users (Basic).
+* Five Azure Artifacts users.
+* Free Tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month).
+* One self-hosted CI/CD concurrent job.
+* 20,000 virtual user minutes of cloud-based load testing.
 
-* 5 VSTS users (Basic)
-* 5 Package Management users
-* Free Tier of Microsoft-hosted CI/CD (1 concurrent job, up to 4 hours per month)
-* 1 self-hosted CI/CD concurrent job
-* 20,000 virtual user minutes of cloud-based load testing
-
-> During your first purchase for your VSTS organization, we'll prompt you to select the Azure subscription to use for billing. This can be part of your
-> Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or many other types of Azure subscriptions. All VSTS services are billed via Azure, though you are not required to pay for or
-> use any other Azure services.
+> During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services are billed via Azure. You aren't required to pay for or use any other Azure services.
 > 
-> These are the paid services offered by Microsoft:
+> These are the paid services that are offered by Microsoft:
 >
-> * [VSTS users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
+> * [Azure DevOps users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
 > * [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
 > * [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
-> * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-> * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+> * [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) (formerly Test Manager)
+> * [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (formerly Package Management)
 >
-> [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests you run. By default, paid usage is turned off for your VSTS organization.
+> [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests that you run. By default, paid usage is turned off for your organization.
 > You can only enable paid usage via the Azure portal.
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+The first time that you set up billing for your organization, whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, Azure DevOps tab, you need:
 
-* [VSTS project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner) 
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
+* [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
 
-You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS organization.
+To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
 
 ## Next steps
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Add a backup billing manager](add-backup-billing-managers.md)
+* [Add user who can make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 
 ## Related articles
 
-* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

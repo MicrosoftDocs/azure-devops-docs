@@ -1,22 +1,22 @@
 ---
-title: Aggregate work tracking data using the OData Analytics Service
-titleSuffix: VSTS
-description: How to guide to aggregate and filter data with the Analytics Service and the OData aggregation extension in Visual Studio Team Services
+title: Aggregate work tracking data 
+titleSuffix: Azure DevOps Services
+description: How to guide to aggregate and filter data with the Analytics Service and the OData aggregation extension in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
-ms.date: 3/16/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/1/2018
 ---
 
 # Aggregate work tracking data using the Analytics service   
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-You can get a sum of your VSTS work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
+You can get a sum of your work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
 In this topic you'll learn: 
 
@@ -32,24 +32,37 @@ In this topic you'll learn:
 
 ## What is the Aggregation Extension for OData?
 
-Analytics relies on OData to author queries over your VSTS data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
+Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
 ## Basic root URL
-Use the following basic root URL as a prefix for all the examples provided in this topic. Replace `{account}` with your VSTS account. 
+Use the following basic root URL as a prefix for all the examples provided in this topic.
+
+::: moniker range="vsts"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
 ``` 
 
-Use the above URL as a prefix for all the examples.   
+::: moniker-end
 
+::: moniker range=">= azdevserver-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+
+::: moniker-end
 
 ## Simple count aggregations
 
 First, let's look at how to do counts without the aggregation extensions.
 
-Basic counting is done by adding the `$count` query option to the end of the URL. For example, to find out how many work items defined in an account, you add the following to your query:
+Basic counting is done by adding the `$count` query option to the end of the URL. For example, to find out how many work items are defined in your organization, you add the following to your query:
 
 `/WorkItems/$count`
 
@@ -57,7 +70,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count
 ``` 
 
 For comparison, using the OData aggregation extension, you add the following to your query:
@@ -68,7 +81,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate($count as Count)
 ``` 
 
@@ -85,7 +98,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count?
   $filter=State eq 'In Progress'
 ```
 
@@ -97,7 +110,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=
    filter(State eq 'In Progress')/
    aggregate($count as Count)
@@ -117,7 +130,7 @@ Where:
 
 ## Aggregated data using the apply extension 
 
-Using the `$apply` extension, you can obtain counts, sums, and additional information when you query your VSTS data. 
+Using the `$apply` extension, you can obtain counts, sums, and additional information when you query your work tracking data. 
 
 <!---  Commenting these examples out as they are currently not supported. 
 
@@ -125,7 +138,7 @@ Using the `$apply` extension, you can obtain counts, sums, and additional inform
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -133,7 +146,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
   $apply=aggregate($count as Count)
 ```
 
@@ -144,7 +157,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate(RemainingWork with sum as SumOfRemainingWork)
 ```
 
@@ -152,7 +165,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate(WorkItemId with max as MaxWorkItemId)
 ```
 
@@ -165,7 +178,7 @@ For example, the following clause will return a  count of work items:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -173,7 +186,7 @@ Add the `groupby` clause to return a count of work items by type:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=groupby((WorkItemType), aggregate($count as Count))
 ```
 
@@ -182,7 +195,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata#WorkItems(WorkItemType,Count)","value":[
     {
       "@odata.id":null,"WorkItemType":"Bug","Count":3
     },
@@ -197,7 +210,7 @@ You can also group by multiple properties as in the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=groupby((WorkItemType, State), aggregate($count as Count))
 ```
 
@@ -206,7 +219,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata#WorkItems(WorkItemType,State,Count)",
   "value": [
     {
       "@odata.id": null,
@@ -243,7 +256,7 @@ For example, suppose you wanted to know how many areas are in each project. In O
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
@@ -257,7 +270,7 @@ Filters look like the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=
     filter(Iteration/IterationName eq 'Sprint 89')/
     filter(WorkItemType eq 'User Story')/
@@ -279,7 +292,7 @@ This will return a result that looks like the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
       "@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
     }
@@ -296,7 +309,7 @@ When you need to use a mathematical expression to calculate properties for use i
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
       "@odata.id":null,"DonePercentage":0.96760221857946638,"SumOfRemainingWork":50715.95,"SumOfCompletedWork":1514698.3400000033
     }
@@ -310,7 +323,7 @@ Let's say you want to create a [cumulative flow diagram](../guidance/cumulative-
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
 ```
 
 This returns a result similar to the following, which you can then use directly within your data visualization of choice.
@@ -318,7 +331,7 @@ This returns a result similar to the following, which you can then use directly 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
   "value": [
     {
       "@odata.id": null,

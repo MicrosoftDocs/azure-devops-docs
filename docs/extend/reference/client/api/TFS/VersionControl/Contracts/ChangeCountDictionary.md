@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts ChangeCountDictionary API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts ChangeCountDictionary API | Extensions for Azure DevOps Services
 ms.assetid: ac25a2c8-55c7-deca-8874-1e1288de7680
 ms.prod: devops
 ms.technology: devops-ecosystem

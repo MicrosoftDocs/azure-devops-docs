@@ -1,6 +1,6 @@
 ---
 title: All WORKFLOW XML elements reference
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Quick reference to all WORKFLOW XML elements and main attributes for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile

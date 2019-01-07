@@ -1,6 +1,8 @@
 ---
-title: Troubleshoot setting up Visual Studio with VSTS
-description: Having problems installing Visual Studio, signing in, creating an organization, or handling an expired subscription? Read these frequently asked questions and answers. 
+title: Troubleshoot setting up Visual Studio - Azure DevOps
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Having problems installing Visual Studio, signing in, creating an organization, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs). 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
@@ -8,12 +10,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/31/2018
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
-# Troubleshoot setting up Visual Studio with VSTS
 
-**VSTS**
+# Troubleshoot setting up Visual Studio with Azure DevOps
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## Visual Studio
 
@@ -36,7 +39,7 @@ learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.
 *	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
-you can also create a Visual Studio Team Services (VSTS) organization. 
+you can also create an organization.
 
 Learn more about 
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
@@ -74,13 +77,13 @@ A:	Learn more about:
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 
-## VSTS
+## Azure DevOps Services
 
 <a name="WhatIsVSO"></a>
 
-#### Q: How can I create a VSTS organization later?
+#### Q: How can I create an organization later?
 
-A:	Learn how to [sign up for VSTS](create-organization-msa-or-work-student.md).
+A:	Learn how to [sign up for Azure DevOps](create-organization.md).
 
 <a name="browser-problems"></a>
 
@@ -92,7 +95,7 @@ A:	Learn how to [sign up for VSTS](create-organization-msa-or-work-student.md).
 
 <a name="change-location"></a>
 
-#### Q: Can I change my VSTS organization location?
+#### Q: Can I change my organization location?
 
 A:	Yes. For a better experience, 
 you can change your organization's location during sign-up
@@ -102,7 +105,7 @@ so that your organization is closest to most users.
 
 Your organization's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/regions) 
-where VSTS is available. 
+where Azure DevOps is available.
 
 [!INCLUDE [secure-protect-data](../../_shared/qa-secure-protect-data.md)]
 

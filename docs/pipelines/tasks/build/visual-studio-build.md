@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Build build and release task
-description: Visual Studio Build build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Visual Studio Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +13,7 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Visual Studio Build
+# Visual Studio Build task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
@@ -20,13 +21,13 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-![](_img/visual-studio-build.png) Build with MSBuild and set the Visual Studio version property.
+Use this task in a build or release pipeline to build with MSBuild and set the Visual Studio version property.
 
 ## Demands
 
 msbuild, visualstudio
 
-> **VSTS:** If your team wants to use Visual Studio 2017 with our Microsoft-hosted agents, select **Hosted VS2017** as your default build queue.. See [Microsoft-hosted agents](../../agents/hosted.md).
+> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -71,7 +72,7 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 <p>The value you select here adds the ```/p:VisualStudioVersion={numeric_visual_studio_version}``` argument to the MSBuild command run by the build. For example, if you select <strong>Visual Studio 2015</strong>, ```/p:VisualStudioVersion=14.0``` is added to the MSBuild command.
 </p>
 <blockquote>
-<p><strong>VSTS:</strong>If your team wants to use Visual Studio 2017 with our Microsoft-hosted agents, select **Hosted VS2017** as your default build queue. See [Microsoft-hosted agents](../../agents/hosted.md).</p>
+<p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).</p>
 </blockquote>
 </td>
 </tr>
@@ -88,7 +89,7 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

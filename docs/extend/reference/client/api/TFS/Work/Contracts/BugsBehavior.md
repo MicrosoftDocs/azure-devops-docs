@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts BugsBehavior API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts BugsBehavior API | Extensions for Azure DevOps Services
 ms.assetid: b29a7aee-c7fa-3e00-b5c2-bdcb69985f83
 ms.prod: devops
 ms.technology: devops-ecosystem

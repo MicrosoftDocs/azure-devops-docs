@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Develop a web extension for VSTS
-description: Tutorial for creating your first web extension for VSTS
+title: Develop a web extension for Azure DevOps Services
+description: Tutorial for creating your first web extension for Azure DevOps Services
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
 ms.manager: douge
@@ -12,9 +12,9 @@ author: willsmythe
 ms.date: 05/11/2018
 ---
 
-# Develop a web extension for VSTS
+# Develop a web extension for Azure DevOps Services
 
-Extensions enhance Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) by contributing enhancements like new web experiences, dashboard widgets, build tasks, and more. Extensions are developed using standard technologies like HTML, JavaScript, and CSS, are packaged and published to the Visual Studio Marketplace, and can then be installed into a VSTS account.
+Extensions enhance Azure DevOps Services and Team Foundation Server (TFS) by contributing enhancements like new web experiences, dashboard widgets, build tasks, and more. Extensions are developed using standard technologies like HTML, JavaScript, and CSS, are packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 
 This tutorial will guide you through creating your first web extension.
 
@@ -25,7 +25,7 @@ You will:
 > * Ready a local directory for your extension
 > * Create an extension manifest file and hub contribution
 > * Package and publish your extension to the Marketplace
-> * Test your extension in a VSTS account
+> * Test your extension in an organization
 
 [!INCLUDE [preview](../_data/get-help.md)]
 
@@ -33,9 +33,9 @@ You will:
 
 To develop and test your extension you will need:
 
-1. A VSTS account where you have permission to install extensions to (i.e. you are the owner). 
+1. An organization where you have permission to install extensions to (i.e. you are the owner). 
 
-   > If you don't have a personal VSTS account, you can [create an account for free](https://app.vsaex.visualstudio.com/profile/account).
+   > If you don't have a personal organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
 
 2. Install [Node.js](https://nodejs.org)
 
@@ -75,7 +75,7 @@ An extension is composed of a set of files, including a required manifest file, 
 		"name": "My First Extension",
 		"description": "A sample Visual Studio Services extension",
 		"public": false,
-		"categories": ["Code"],
+		"categories": ["Azure Repos"],
 		"targets": [
 			{
 				"id": "Microsoft.VisualStudio.Services"
@@ -139,7 +139,7 @@ An extension is composed of a set of files, including a required manifest file, 
 	</html>
 	```
 
-	This will be the content for the view (also known as a hub) contributed into the VSTS web experience.
+	This will be the content for the view (also known as a hub) contributed into the Azure DevOps Services web experience.
 
 6. At this point your extension directory should look like this:
 
@@ -203,62 +203,62 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 1. From the [management portal](https://aka.ms/vsmarketplace-manage) select your publisher from the drop-down at the top of the page.
 
-2. Tap **New Extension** and select **Visual Studio Team Services**:
+2. Tap **New Extension** and select **Azure DevOps**:
    	
-	![Upload new extension for VSTS or TFS](_img/upload-new-extension.png)
+	![Upload new extension for Azure DevOps Services or TFS](_img/upload-new-extension.png)
 
 3. Click the link in the center of the Upload dialog to open a browse dialog. 
 
 4. Locate the .vsix file (created in the packaging step above) and choose **Upload**:
 
-   ![Upload new extension for VSTS or TFS](_img/upload-new-extension2.png)
+   ![Upload new extension for Azure DevOps Services or TFS](_img/upload-new-extension2.png)
 
 4. After a few seconds your extension will appear in the list of published extensions. Don't worry, the extension is only visible to you.
 
-   ![Upload new extension for VSTS or TFS](_img/published-extension.png)
+   ![Upload new extension for Azure DevOps Services or TFS](_img/published-extension.png)
 
 ## Install your extension
 
-To test an extension, it must be installed to a VSTS account. Installing requires being the owner of the account (or having the necessary permissions). Because your extension is private, it must first be shared with the account you want to install it to.
+To test an extension, it must be installed to an organization in Azure DevOps Services. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** .
 
-   ![Upload new extension for VSTS or TFS](_img/share-menu.png)
+   ![Upload new extension for Azure DevOps Services or TFS](_img/share-menu.png)
 
-2. Click the **+ Account** button, enter the name of your account, and press enter.
+2. Click the **+ Organization** button, enter the name of your organization, and press enter.
 
    ![Share with account](_img/share-dialog.png)
 
 3. Click the **X** to close this panel.
 
-Your extension can now be installed into this account.
+Your extension can now be installed into this organization.
 
 4. Right-click your extension and choose  **View Extension** to open its details page
 
    ![Details page](_img/details-page.png)
 
    >[!NOTE]
-   >Because your extension is private, only you (as the publisher of the extension) and any member of the account it is shared with can see this page.
+   >Because your extension is private, only you (as the publisher of the extension) and any member of the organization it is shared with can see this page.
 
-5. Click **Get it free** to start the installation process. The account you shared the extension with should be selected:
+5. Click **Get it free** to start the installation process. The organization you shared the extension with should be selected:
 
    ![Install extension panel](_img/install-dialog.png)
 
 6. Click **Install**.
 
-Congratulations! Your extension is now installed into an account and is ready to be tested.
+Congratulations! Your extension is now installed into an organization and is ready to be tested.
 
 ## Try your extension
 
 Your extension contributed a view named "My Hub" to the project-level Code area. Let's navigate to it.
 
-1. Tap the **Proceed to account** button at the end of the installation wizard to navigate to the home page of the account the extension was installed to (`https://{youraccountname}.visualstudio.com`).
+1. Tap the **Proceed to organization** button at the end of the installation wizard to navigate to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
 
 2. Click any of the projects listed to navigate into it:
 
    ![Install extension panel](_img/account-home2.png)
 
-   > If there are no projects in your account, you will be prompted to create one.
+   > If there are no projects in your organization, you will be prompted to create one.
 
 3. Navigate to the Code area and then to the hub contributed by your extension (**My Hub**):
 

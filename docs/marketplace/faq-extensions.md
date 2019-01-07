@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting getting extensions for VSTS
-description: Troubleshooting getting and paying for extensions for VSTS
+title: Troubleshooting getting extensions for Azure DevOps Services
+description: Troubleshooting getting and paying for extensions for Azure DevOps Services
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
@@ -12,9 +12,9 @@ monikerRange: '>= tfs-2017'
 ms.topic: conceptual
 ---
 
-# Troubleshooting extensions for VSTS
+# Troubleshooting extensions for Azure DevOps Services
 
-**VSTS** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2017**
 
 
 ## General
@@ -32,9 +32,9 @@ Paid extensions are supported and generally are charged per user per month.
 
 ## Install, request, assign, and access extensions
 
-#### Q: Who can install extensions for VSTS?
+#### Q: Who can install extensions for Azure DevOps Services?
 
-A: The VSTS account owner and project collection administrator can install extensions. If you don't have permissions, but you're an account member, 
+A: The organization owner and project collection administrator can install extensions. If you don't have permissions, but you're an organization member, 
 you can request extensions instead. 
 
 <a name="find-owner"></a>
@@ -43,24 +43,24 @@ you can request extensions instead.
 
 [!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-<a name="no-accounts"></a>
+<a name="no-organizations"></a>
 
 [!INCLUDE [no-organizations](../organizations/billing/_shared/qa-no-organizations.md)]
 
-#### Q: Why can't I install extensions for VSTS?
+#### Q: Why can't I install extensions for Azure DevOps Services?
 
 A:	This might happen for these reasons:
 
 <a name="no-permissions"></a>
-*	You must have VSTS 
-[project collection administrator or account owner permissions](#find-owner). 
-If you don't have permissions, but you're an account member, 
+*	You must have Azure DevOps Services 
+[project collection administrator or organization owner permissions](#find-owner). 
+If you don't have permissions, but you're an organization member, 
 you can request extensions instead.
 
 <a name="no-assignment"></a>
 *	If you get an error that your extension is already installed or 
 requested, check with your project collection administrator 
-or account owner, and ask them to assign the extension to you.
+or organization owner, and ask them to assign the extension to you.
 
 
 <a name="paid-access"></a>
@@ -85,8 +85,8 @@ for users who need access.
 
 A:	This might happen for several reasons.
 
-*	You don't have VSTS 
-[project collection administrator or account owner permissions](#find-owner).
+*	You don't have Azure DevOps Services 
+[project collection administrator or organization owner permissions](#find-owner).
 
 *	Your users don't have the correct access levels. 
 Most extensions require that users have Basic access, not Stakeholder.
@@ -115,7 +115,7 @@ A: This might happen for these reasons:
   To buy non-Microsoft extensions from the Visual Studio Marketplace, your Azure Enterprise Agreement administrator must enable Azure Marketplace purchases. Go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) >Manage > Enrollment, and enable Azure Marketplace.
 
   >[!NOTE]
-  If you get this message: "The ordering account is not eligible to purchase from azure store using Enterprise Agreement.", have your Azure Enterprise Agreement administrator go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) > Manage > Enrollment, and enable Azure Marketplace.
+  If you get this message: "The ordering organization is not eligible to purchase from azure store using Enterprise Agreement.", have your Azure Enterprise Agreement administrator go to the Microsoft Azure Enterprise Portal (https://ea.azure.com) > Manage > Enrollment, and enable Azure Marketplace.
 
 * Credit card problems
   Purchases from non-Microsoft publishers are charged immediately, not at the end of your billing cycle, like Microsoft resources. This means that if your credit card is declined for any reason, your purchase won't be completed. If this happens, try your purchase again, or contact your credit card customer service.
@@ -129,9 +129,9 @@ A: This might happen for these reasons:
 
 ## Troubleshooting purchases & billing
 
-- [VSTS billing overview](../organizations/billing/overview.md)
-- [VSTS billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [Azure DevOps Services billing overview](../organizations/billing/overview.md)
+- [Azure DevOps Services billing FAQ](../organizations/billing/billing-faq.md)
 - [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
-- [How to buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
-- [Visual Studio cloud subscription billing FAQ](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)
+- [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
+- [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)
 - [How to buy Xamarin University](../organizations/billing/xamarin-univ.md)

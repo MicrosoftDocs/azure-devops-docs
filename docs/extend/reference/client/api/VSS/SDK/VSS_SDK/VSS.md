@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: VSS SDK Reference for Visual Studio Team Services
-description: An overview of the VSS SDK in Visual Studio Team Services Integration
+title: VSS SDK Reference for Azure DevOps Services
+description: An overview of the VSS SDK in Azure DevOps Services Integration
 ms.assetid: 19744f62-02a9-479b-8b9c-e52800e6c24c
 ms.manager: douge
 ms.author: elbatk
@@ -260,7 +260,7 @@ Get an instance of an object registered with the given id
 ### Parameters
 
 * `instanceId`: string. unique ID of the registered object
-* `contextData`: Object. Optional. Optional context data to pass to the contructor of an object factory method
+* `contextData`: Object. Optional. Optional context data to pass to the constructor of an object factory method
 
 ### Returns
 
@@ -269,7 +269,7 @@ Get an instance of an object registered with the given id
 <a name="method_getAccessToken"></a>
 <h2 class='method'>getAccessToken()</h2>
 
-Fetch an access token which will allow calls to be made to other VSTS services
+Fetch an access token which will allow calls to be made to other Azure DevOps Services services
 
 ### Syntax
 <pre class='syntax'>

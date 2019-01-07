@@ -1,22 +1,24 @@
 ---
-title: Archive Files | VSTS or Team Foundation Server
-description: Learn all about how you can use an archive file to then create a source folder in VSTS and Team Foundation Server (TFS).  
+title: Archive Files task
+description: Use an archive file to then create a source folder in Azure Pipelines and Team Foundation Server (TFS)  
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/30/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Archive Files
+# Archive Files task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/archive-files.png) Create an archive file from a source folder.  A variety of standard archive formats are supported including: .zip, .jar, .war, .ear, .tar, .7z., and others.
+Use this task in a build or release pipeline to create an archive file from a source folder.
+A range of standard archive formats are supported including .zip, .jar, .war, .ear, .tar, .7z, and more.
 
 ## Demands
 
@@ -47,7 +49,7 @@ None
 <tr>
 <td>Prefix root folder name to archive paths</td>
 <td>If selected, the root folder name will be prefixed to file paths within the archive.  Otherwise, all file paths will start one level lower.
-<p>For example, suppose the selected root folder is: <b>`/home/user/output/classes/`</b>, and contains: <b>`com/acme/Main.class`</b>. 
+<p>For example, suppose the selected root folder is: <b>`/home/user/output/classes/`</b>, and contains: <b>`com/acme/Main.class`</b>.
 <ul>
     <li>If selected, the resulting archive would contain: <b>`classes/com/acme/Main.class`</b>.
     </li>
@@ -87,7 +89,7 @@ None
 </tr>
 <tr>
 <td>Replace existing archive</td>
-<td>If an existing archive exists, specify whether to overwrite it.  Otherwise, files will be added to it as long as it is not a comprssed tar.
+<td>If an existing archive exists, specify whether to overwrite it.  Otherwise, files will be added to it as long as it is not a compressed tar.
 <p>If adding to an existing archive, these types are supported:</p>
 <ul>
 <li><b>`zip`</b></li>
@@ -104,7 +106,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

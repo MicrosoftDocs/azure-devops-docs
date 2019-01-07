@@ -4,48 +4,63 @@
   items:
   - name: About notifications
     href: about-notifications.md
-- name: Quickstarts
+  - name: Navigating the UI
+    href: navigating-the-ui.md 
+- name: Concepts
   items:
-  - name: View your subscriptions, opt-out as needed
-    href: unsubscribe-default-notification.md
-  - name: Change your preferred email address 
-    href: change-email-address.md
+  - name: Events and notifications
+    href: concepts-events-and-notifications.md
+  - name: How email recipients are determined
+    href: concepts-email-recipients.md
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Manage your personal notifications
-    href: manage-personal-notifications.md
-- name: How-to Guides
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+  - name: Manage personal notifications
+    href: howto-manage-personal-notifications.md
+  - name: Manage team and group notifications
+    href: howto-manage-team-notifications.md
+
+- name: How-to guides
   items:
+  - name: Manage organization notifications
+    href: howto-manage-organization-notifications.md
+  - name: Manage organization default delivery settings
+    href: howto-manage-organization-notifications-settings.md
+  - name: View notification statistics for your organization
+    href: howto-view-organization-notification-statistics.md
+  - name: Change your preferred email address
+    href: change-email-address.md
+  - name: Use subscription logging for troubleshooting
+    href: howto-use-subscription-logging.md
+  - name: Exclude yourself from notification of events initiated by you
+    href: howto-exclude-self-from-email.md
   - name: "Use @mentions to further discussion"
     href: at-mentions.md
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
-  - name: Manage team notifications
-    href: manage-team-notifications.md
-  - name: Microsoft Teams Integration
-    href: ../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Campfire
-    href: ../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Flowdock
-    href: ../service-hooks/services/flowdock.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Hipchat
-    href: ../service-hooks/services/hipchat.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Get notified with Slack
-    href: ../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Set alerts (TFS) 
-    href: ../boards/queries/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Collaborate in a team room (TFS)
-    href: collaborate-in-a-team-room.md
+  - name: Send notifications to third-party services (Slack, Teams, etc)
+    href: howto-integrate-third-party-services.md
+- name: Troubleshooting
+  items:
+  - name: Why am I not getting an email
+    href: troubleshoot-not-getting-email.md
+  - name: Why am I getting this email
+    href: troubleshoot-unexpected-email.md
+  - name: Why are my emails delayed
+    href: troubleshoot-delayed-email.md
+  - name: Contacting support
+    href: troubleshoot-contact-support.md
 - name: Reference
   items:
   - name: Default notifications
-    href: oob-built-in-notifications.md 
+    href: oob-built-in-notifications.md
+  - name: Events
+    href: oob-supported-event-types.md
+  - name: Default permissions (Security)  
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
   - name: FAQs 
     href: faq-notifications.md 
-  - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
 - name: Resources    
   items:
   - name: Git
@@ -55,5 +70,5 @@
   - name: Service Hooks
     href: ../service-hooks/index.md
   - name: REST API
-    href: https://visualstudio.microsoft.com/en-us/docs/integrate/api/notification/subscriptions
+    href: https://visualstudio.microsoft.com/docs/integrate/api/notification/subscriptions
 

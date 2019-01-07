@@ -1,7 +1,7 @@
 ---
 title: Scrum process template artifacts
-titleSuffix: VSTS & TFS
-description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
@@ -10,13 +10,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
----
+ms.date: 11/19/2018
+--- 
 
 
 # Scrum process   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
@@ -30,7 +30,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 > [!NOTE]  
 > The latest version of the Scrum process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../../reference/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
@@ -44,11 +44,14 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 In addition to WITs, reports, and dashboards, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. 
 
+<a id="start-using-scrum" />
 ## Plan and track work with Scrum  
 
 You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. You track bugs, tasks, and blocking issues using the bug, task, and impediment WITs. To support portfolio management, teams create features and epics to view a roll up of their product backlog items within or across teams. For details about using Scrum WITs, see [Scrum process work item types and workflow](scrum-process-workflow.md).  
 
-The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../backlogs/overview.md).  
+The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
+
+*Click on one of the following images to go to the linked article.*
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
@@ -84,12 +87,12 @@ To get started, you can open a shared query and create a chart based on your tra
 
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
 ::: moniker-end
 
 <a id="reports"></a>
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 ## Scrum process and SQL Server reports
 
 If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Scrum reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
@@ -113,7 +116,7 @@ To access this dashboard, your project must have a [project portal configured an
 
 ### Scrum process versions  
 
-As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
+As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | Scrum process name | Major version |

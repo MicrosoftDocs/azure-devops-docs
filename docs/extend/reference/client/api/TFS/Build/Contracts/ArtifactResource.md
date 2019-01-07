@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts ArtifactResource API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts ArtifactResource API | Extensions for Azure DevOps Services
 ms.assetid: 0ffa722a-ec5e-c172-2c19-da69ed149d79
 ms.prod: devops
 ms.technology: devops-ecosystem

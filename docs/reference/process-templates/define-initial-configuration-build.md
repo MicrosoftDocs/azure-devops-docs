@@ -1,6 +1,6 @@
 ---
-title: Define the initial configuration of Team Foundation Build 
-titleSuffix: VSTS & TFS
+title: Define build initial configuration
+titleSuffix: Azure Pipelines & TFS
 description: Customize the security permissions for build activities of all projects that are created with the same process template for Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
@@ -21,7 +21,7 @@ You can customize a project's initial build permissions that are used by Team Fo
   
 > [!IMPORTANT]  
 >  For TFS 2013 and later versions, the build.xml plug-in no longer uploads 
->  build template files. Also, for VSTS and for TFS 2018 and later versions, 
+>  build template files. Also, for TFS 2018 and later versions, 
 >  customization of build permissions using the build plug-in isn't supported. 
 >  Instead, default permissions are set for project-level and collection-level  
 >  security groups for [build pipelines (object-level)](../../organizations/security/permissions.md#build). 

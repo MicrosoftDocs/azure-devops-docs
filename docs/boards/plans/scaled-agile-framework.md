@@ -1,13 +1,14 @@
 ---
 title: Scaled Agile Framework
-titleSuffix: VSTS & TFS
-description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 07/22/2017
 ---
 
@@ -35,7 +36,7 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Azure Boards or an on-premises TFS.
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
@@ -115,11 +116,7 @@ Another view available to program teams shows query-based graphs of release trai
 
 ![Team dashboard](_img/safe-team-dashboard.png)  
 
-Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the rich reporting options and the built-in reports the following services have to offer:
-
-- VSTS or TFS: [Dashboards, charts, and widgets](../../report/overview.md)
-- When connecting to VSTS: [Power BI integration overview](../../report/powerbi/overview.md) 
-- On-premises TFS: [SQL Server Reports](../../report/sql-reports/reporting-services-reports.md)  
+Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the [rich reporting options and built-in reports](../../report/dashboards/overview.md).
 
 ###Feature teams' view of progress
 For individual feature teams, their backlog view shows the Stories that they're working on.
@@ -130,15 +127,15 @@ Because feature teams don't own epics or features, epics and features don't appe
 
 ![Migrate team backlog of stories to epics](_img/safe-migrate-team-stories-to-epics.png)  
 
-They can also break down their work into tasks and use the task board to keep themselves on track during specific sprints.
+They can also break down their work into tasks and use the taskboard to keep themselves on track during specific sprints.
 
-![Migrate team Sprint 3 task board](_img/safe-migrate-sprint3-task-board.png)
+![Migrate team Sprint 3 taskboard](_img/safe-migrate-sprint3-task-board.png)
 
 The chart view of queries becomes very useful in the Innovation and Planning (IP) sprint, when feature teams work together to stabilize the features scheduled for a Release.  
 
 ![Bug charts](_img/safe-feature-team-active-bug-charts.png)  
 
-For everything else, it is very much business as usual for individual feature teams. They can sprint in their usual cadences, use their Kanban board and task board to track progress and break down work into manageable chunks.  
+For everything else, it is very much business as usual for individual feature teams. They can sprint in their usual cadences, use their Kanban board and taskboard to track progress and break down work into manageable chunks.  
 
 However, now their progress on individual stories is visible to their program and portfolio management teams. The management view reflects what they do.  
 
@@ -324,13 +321,15 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ![User Story work item form](_img/safe-user-story-new-form.png)  
 
+::: moniker range="tfs-2013" 
 
-## Related articles
+## Required customization
 
-There's no customization required to implement SAFe when working in VSTS or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
+If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 
+::: moniker-end 
 
-###Resources
+## Resources
 Resources mentioned earlier in this article and a few more are provided here for convenient reference.  
 - SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
 
@@ -342,11 +341,11 @@ Resources mentioned earlier in this article and a few more are provided here for
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
 - [Track your work when assigned to two or more teams](../sprints/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.  
 
-###About the authors
+### About the authors
 This article has been updated from the previous white paper developed in collaboration with the following authors:  
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
 - Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
-- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by VSTS and on-premises TFS.
+- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
 - Willy-Peter Schaub is a program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  

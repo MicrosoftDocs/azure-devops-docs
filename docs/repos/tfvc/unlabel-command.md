@@ -1,5 +1,6 @@
 ---
 title: Unlabel Command
+titleSuffix: Azure Repos
 description: Unlabel Command
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Unlabel Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Removes an item from an existing label in the server for Team Foundation version control.
 

@@ -2,7 +2,7 @@
 title: Better exploratory testing, test results for release environments, squash merge, and more – Mar 3
 description: VSTS release notes for March 3 2016
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 66042038-4458-4bd3-8257-91e3cd7c7ee4
 ms.date: 06/01/2016
@@ -26,7 +26,7 @@ Additionally, you can now create release definitions that release to an environm
 
 ##Epic and Feature board drill-down
 
-Last summer we released a [feature](../2015/sep-18-team-services.md) that lets you drill down to tasks directly from a Kanban board of stories. We’ve extended that feature to boards at any level, giving you the ability to drill down on your Epic and Feature boards. The checklist format lets you easily mark work as completed, and provides a handy bird’s eye view of the completed versus outstanding work.
+Last summer we released a [feature](https://visualstudio.microsoft.com/articles/news/2015/sep-18-team-services) that lets you drill down to tasks directly from a Kanban board of stories. We’ve extended that feature to boards at any level, giving you the ability to drill down on your Epic and Feature boards. The checklist format lets you easily mark work as completed, and provides a handy bird’s eye view of the completed versus outstanding work.
 
 ![Board drill-down](_img/3_3_02.png)
 

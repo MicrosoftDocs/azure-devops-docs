@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Areas and Iterations | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item areas and iterations programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+monikerRange: '>= tfs-2015 < vsts'
+title: Work Item Areas and Iterations | REST API Reference for Team Foundation Server
+description: Work with work item areas and iterations programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 8AD3C764-692D-440D-8133-311CD6A0FC94
 ms.manager: douge
 ms.topic: article
@@ -13,10 +13,13 @@ ms.date: 08/04/2016
 ---
 
 # Work item classification nodes
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 All work items have an area and an iteration field. 
-The values that these fields can have are defined in the [classification hierarchies](http://msdn.microsoft.com/en-us/library/ms181692.aspx). 
+The values that these fields can have are defined in the [classification hierarchies](http://msdn.microsoft.com/library/ms181692.aspx). 
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -29,7 +32,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 | Property  	| Type 		| Description |
 |:--------------|:----------|:------------
 | URL
-| instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string    | TFS server name ({server:port}).
 | project 		| string 	| Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string    | Path of the classification node. |
@@ -38,12 +41,118 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 | $depth		| int		| Depth of children to retrieve.  
 
 ### Get the root area tree
-[!code-REST [GET__wit_classificationnodes_areas_json](./_data/classificationnodes/GET__wit_classificationnodes_areas.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 3568,
+  "name": "Fabrikam-Fiber-Git",
+  "structureType": "area",
+  "hasChildren": true,
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas"
+}
+```
+
 <a name="gettheareatreeroot" />
 
 ### Get the area tree with 2 levels of children
 <a name="gettheareatreewith2levelsofchildren" />
-[!code-REST [GET__wit_classificationnodes_areas__depth-2_json](./_data/classificationnodes/GET__wit_classificationnodes_areas__depth-2.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas?$depth=2&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 3568,
+  "name": "Fabrikam-Fiber-Git",
+  "structureType": "area",
+  "hasChildren": true,
+  "children": [
+    {
+      "id": 4482,
+      "name": "Devices",
+      "structureType": "area",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 4483,
+          "name": "Windows Phone",
+          "structureType": "area",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Devices/Windows%20Phone"
+        },
+        {
+          "id": 4484,
+          "name": "Surface",
+          "structureType": "area",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Devices/Surface"
+        },
+        {
+          "id": 4485,
+          "name": "iPhone",
+          "structureType": "area",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Devices/iPhone"
+        }
+      ],
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Devices"
+    },
+    {
+      "id": 4486,
+      "name": "Website",
+      "structureType": "area",
+      "hasChildren": false,
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Website"
+    },
+    {
+      "id": 4487,
+      "name": "Backend",
+      "structureType": "area",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 4488,
+          "name": "Database",
+          "structureType": "area",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Backend/Database"
+        },
+        {
+          "id": 4489,
+          "name": "Middle-tier",
+          "structureType": "area",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Backend/Middle-tier"
+        }
+      ],
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Backend"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas"
+}
+```
+
 
 #### Sample code
 
@@ -51,11 +160,137 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 
 ### Get the root iteration tree
 <a name="gettheiterationroot" />
-[!code-REST [GET__wit_classificationnodes_iterations_json](./_data/classificationnodes/GET__wit_classificationnodes_iterations.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 3569,
+  "name": "Fabrikam-Fiber-Git",
+  "structureType": "iteration",
+  "hasChildren": true,
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+}
+```
+
 
 ### Get the iteration tree with 2 levels of children
 <a name="gettheiterationtreewith2levelsofchildren" />
-[!code-REST [GET__wit_classificationnodes_iterations__depth-2_json](./_data/classificationnodes/GET__wit_classificationnodes_iterations__depth-2.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations?$depth=2&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 3569,
+  "name": "Fabrikam-Fiber-Git",
+  "structureType": "iteration",
+  "hasChildren": true,
+  "children": [
+    {
+      "id": 3566,
+      "name": "Release 3",
+      "structureType": "iteration",
+      "hasChildren": false,
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%203"
+    },
+    {
+      "id": 3571,
+      "name": "Release 2",
+      "structureType": "iteration",
+      "hasChildren": false,
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%202"
+    },
+    {
+      "id": 3572,
+      "name": "Release 4",
+      "structureType": "iteration",
+      "hasChildren": false,
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%204"
+    },
+    {
+      "id": 3576,
+      "name": "Release 1",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 3564,
+          "name": "Sprint 4",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%204"
+        },
+        {
+          "id": 3565,
+          "name": "Sprint 2",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "attributes": {
+            "startDate": "2014-03-17T00:00:00Z",
+            "finishDate": "2014-03-28T00:00:00Z"
+          },
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%202"
+        },
+        {
+          "id": 3567,
+          "name": "Sprint 6",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%206"
+        },
+        {
+          "id": 3573,
+          "name": "Sprint 5",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%205"
+        },
+        {
+          "id": 3574,
+          "name": "Sprint 1",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "attributes": {
+            "startDate": "2014-03-03T00:00:00Z",
+            "finishDate": "2014-03-14T00:00:00Z"
+          },
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%201"
+        },
+        {
+          "id": 3575,
+          "name": "Sprint 3",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201/Sprint%203"
+        }
+      ],
+      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Release%201"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+}
+```
+
 
 #### Sample code
 
@@ -70,7 +305,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 | Parameter Name| Type 		| Description 	|
 |:--------------|:----------|:------------
 | URL
-| instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string    | TFS server name ({server:port}).
 | project 		| string 	| Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 	| Path of the classification node. |
@@ -79,14 +314,69 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 | $depth		| int		| Depth of children to retrieve.  
 
 ### Get an area
-[!code-REST [GET__wit_classificationnodes_areas__areaPath__json](./_data/classificationnodes/GET__wit_classificationnodes_areas__areaPath_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas/Web?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126391,
+  "identifier": "d5d98099-47ac-468a-9579-c059c90bf7c5",
+  "name": "Web",
+  "structureType": "area",
+  "hasChildren": false,
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Web"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Web"
+}
+```
+
 
 #### Sample code
 
 * [C# (GetArea method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/ClassificationNodesSample.cs#L266)
 
 ### Get an iteration
-[!code-REST [GET__wit_classificationnodes_iterations__iterationPath__json](./_data/classificationnodes/GET__wit_classificationnodes_iterations__iterationPath_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Final%20Iteration?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126392,
+  "name": "Final Iteration",
+  "structureType": "iteration",
+  "hasChildren": false,
+  "attributes": {
+    "startDate": "2014-10-27T00:00:00Z",
+    "finishDate": "2014-10-31T00:00:00Z"
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
+}
+```
+
 
 #### Sample code
 
@@ -101,7 +391,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 | Parameter Name| Type          		| Description 	|
 |:--------------|:--------------------|:------------
 | URL
-| instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string              | TFS server name ({server:port}).
 | project 		| string			  | Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 			  | Path of the classification nodes. |
@@ -113,7 +403,37 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 
 ### Create an area
 
-[!code-REST [POST__wit_classificationnodes_iterations__areaPath__json](./_data/classificationnodes/POST__wit_classificationnodes_areas.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas?api-version=1.0
+```
+```json
+{
+  "name": "Web"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126391,
+  "name": "Web",
+  "structureType": "area",
+  "hasChildren": false,
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Web"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Web"
+}
+```
+
 
 #### Sample code
 
@@ -121,7 +441,45 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 
 ### Create an iteration
 
-[!code-REST [POST__wit_classificationnodes_iterations__iterationPath__json](./_data/classificationnodes/POST__wit_classificationnodes_iterations.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations?api-version=1.0
+```
+```json
+{
+  "name": "Final Iteration",
+  "attributes": {
+    "startDate": "2014-10-27T00:00:00Z",
+    "finishDate": "2014-10-31T00:00:00Z"
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126392,
+  "name": "Final Iteration",
+  "structureType": "iteration",
+  "hasChildren": false,
+  "attributes": {
+    "startDate": "2014-10-27T00:00:00Z",
+    "finishDate": "2014-10-31T00:00:00Z"
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Final%20Iteration"
+}
+```
+
 
 #### Sample code
 
@@ -136,7 +494,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnod
 | Parameter Name| Type          		| Description 	|
 |:--------------|:--------------------|:------------
 | URL
-| instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string              | TFS server name ({server:port}).
 | project 		| string              | Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 	          | Path of the classification nodes. |
@@ -151,7 +509,44 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnod
 
 Start and end dates for iterations can be accessed and set through the startDate and finishDate attributes on iteration nodes.
 
-[!code-REST [PATCH__wit_classificationnodes_iterations__iterationPathNew_json](./_data/classificationnodes/PATCH__wit_classificationnodes_iterations__iterationPathNew_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Ultimate%20iteration?api-version=1.0
+```
+```json
+{
+  "attributes": {
+    "startDate": "2015-01-26T00:00:00Z",
+    "finishDate": "2015-01-30T00:00:00Z"
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126392,
+  "name": "Ultimate iteration",
+  "structureType": "iteration",
+  "hasChildren": false,
+  "attributes": {
+    "startDate": "2015-01-26T00:00:00Z",
+    "finishDate": "2015-01-30T00:00:00Z"
+  },
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Ultimate%20iteration"
+}
+```
+
 
 #### Sample code
 
@@ -159,7 +554,37 @@ Start and end dates for iterations can be accessed and set through the startDate
 
 ### Rename a classification node
 
-[!code-REST [PATCH__wit_classificationnodes_areas__areaPath_json](./_data/classificationnodes/PATCH__wit_classificationnodes_areas__areaPath_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas/Web?api-version=1.0
+```
+```json
+{
+  "name": "Website team"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126391,
+  "name": "Website team",
+  "structureType": "area",
+  "hasChildren": false,
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Website%20team"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Website%20team"
+}
+```
+
 
 #### Sample code
 
@@ -175,7 +600,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 | Parameter Name| Type          		| Description 	|
 |:--------------|:--------------------|:------------
 | URL
-| instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string              | TFS server name ({server:port}).
 | project 	| string                  | Name or ID of a project that contains the classification nodes. |
 | nodeType	| enum {areas, iterations} | The type of classification node you are trying access. |
 | targetNodePath| string 	          | Path of the target parent classification node.  |
@@ -186,7 +611,37 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 
 ### Move an area node
 
-[!code-REST [POST__wit_classificationnodes_areas__areaParent__json](./_data/classificationnodes/POST__wit_classificationnodes_areas__areaParent_.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas/Parent%20Area?api-version=1.0
+```
+```json
+{
+  "id": 126391
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126391,
+  "name": "Website team",
+  "structureType": "area",
+  "hasChildren": false,
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Areas/Parent%20Area/Website%20team"
+}
+```
+
 
 #### Sample code
 
@@ -194,7 +649,37 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 
 ### Move an iteration node
 
-[!code-REST [POST__wit_classificationnodes_iterations__iterationParent__json](./_data/classificationnodes/POST__wit_classificationnodes_iterations__iterationParent_.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Parent%20Iteration?api-version=1.0
+```
+```json
+{
+  "id": 126392
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": 126392,
+  "name": "Ultimate iteration",
+  "structureType": "iteration",
+  "hasChildren": false,
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Parent%20Iteration/Ultimate%20iteration"
+    },
+    "parent": {
+      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Parent%20Iteration"
+    }
+  },
+  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/classificationNodes/Iterations/Parent%20Iteration/Ultimate%20iteration"
+}
+```
+
 
 ## Delete a classification node
 
@@ -205,7 +690,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/classificationno
 | Parameter Name       | Type          		      | Description 	|
 |:--------------       |:--------------------     |:------------
 | URL
-| instance             | string                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string                   | TFS server name ({server:port}).
 | project              | string                   | Name or ID of a project that contains the classification nodes. |
 | nodeType		       | enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath             | string 	              | Path of the classification nodes.|
@@ -215,7 +700,12 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/classificationno
 
 ### Delete an area node
 
-[!code-REST [DELETE__wit_classificationNodes_areas__areaParent___reclassifyId-_rootAreaId_](./_data/classificationnodes/DELETE__wit_classificationNodes_areas__areaParent___reclassifyId-_rootAreaId_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/areas/Parent%20Area?$reclassifyId=3568&api-version=1.0
+```
+
 
 #### Sample code
 
@@ -223,7 +713,12 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/classificationno
 
 ###Delete an iteration node
 
-[!code-REST [DELETE__wit_classificationNodes_iterations__iterationParent___reclassifyId-_rootIterationId_](./_data/classificationnodes/DELETE__wit_classificationNodes_iterations__iterationParent___reclassifyId-_rootIterationId_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classificationNodes/iterations/Parent%20Iteration?$reclassifyId=3569&api-version=1.0
+```
+
 
 #### Sample code
 * [C# (DeleteIteration method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/ClassificationNodesSample.cs#L339)

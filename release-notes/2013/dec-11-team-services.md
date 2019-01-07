@@ -2,7 +2,7 @@
 title: Visual Studio Online updates - Dec 11
 description: VSTS release notes for December 11 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 6e13356b-2fb3-45eb-8e41-38d7d423ac8e
 ms.date: 06/01/2016
@@ -28,7 +28,7 @@ This tile simultaneously allows visibility into the trend of the overall request
 
 In the initial release of Application Insights, we provided telemetry SDKs for web server, Windows Phone 8 and a JavaScript (for sending telemetry from the browser). In today’s update we added support for Windows Store apps. As with our other SDKs, you can use this capability to emit telemetry from your app for analysis in the Application Insights portal. 
 
-You can read more about emitting telemetry from your Windows Store apps on [MSDN](https://msdn.microsoft.com/en-us/library/). And, we published the SDK to [NuGet.org](http://www.nuget.org/packages/Microsoft.ApplicationInsights.Telemetry.WindowsPhone/) for consumption.
+You can read more about emitting telemetry from your Windows Store apps on [MSDN](https://msdn.microsoft.com/library/). And, we published the SDK to [NuGet.org](http://www.nuget.org/packages/Microsoft.ApplicationInsights.Telemetry.WindowsPhone/) for consumption.
 
 ![NuGet gallery screen](_img/12_11_02.png)
 

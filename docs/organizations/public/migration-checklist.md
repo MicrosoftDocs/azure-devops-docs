@@ -1,14 +1,14 @@
 ---
 title: Migration checklist
-titleSuffix: VSTS Public Project 
+titleSuffix: Azure DevOps Services Public Project 
 description: Best practices when changing a private project to a public project 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -35,7 +35,7 @@ When you invite someone to become a member of a project, that person will gain a
 > | Process metadata | All picklist values in all projects in the account  |
 
 ## Cross-project linked objects
-In VSTS, you can link objects that exist in different projects defined in the same organization. For example, you can link a bug in Project A to a pull request in Project B. If links exist between a public and a private project, details about the linked artifact in the private project are visible within the public project.
+In Azure DevOps, you can link objects that exist in different projects defined in the same organization. For example, you can link a bug in Project A to a pull request in Project B. If links exist between a public and a private project, details about the linked artifact in the private project are visible within the public project.
 
 
 The link types used to construct these links, as illustrated in the following image, are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
@@ -81,7 +81,7 @@ Because work-items maintain their history when migrated from a private to public
 * Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
 * Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members cannot.
 
-If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/build/yaml.md).
+If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/get-started-yaml.md).
 
 ## Test
 
@@ -95,7 +95,7 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 Are any extensions vital to your project's experience?
 For instance, do you have a control on your work item form which renders data in a particular way?
-Are there custom hubs which expose important details?
+Are there custom extensions which expose important details?
 
 * Confirm that each extension's author has made it available for non-members by testing it.
 * If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md). 

@@ -1,19 +1,21 @@
 ---
-title: Use work item form controls to track your work
-titleSuffix: VSTS & TFS 
-description: Use work item form controls to update status, link work items, and more in Visual Studio Team Services & Team Foundation Server  
+title: Update status, assign work, and link work items using work item form controls 
+titleSuffix: Azure Boards 
+description: Use work item form controls to update status, link work items, and more in Azure Boards, Azure DevOps, & Team Foundation Server  
+ms.custom: seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/14/2018 
+monikerRange: '>= tfs-2017'
+ms.date: 11/19/2018
 ---
 
-# Use work item form controls
+# Work item form controls
 
-<b>VSTS | TFS 2018 | TFS 2017</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;as well as fields specific to the type. You can link work items to one another, as well as to changesets and source code files. 
 
@@ -22,8 +24,8 @@ As the following image shows, each work item form comes with a number of control
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
 > [!NOTE]    
->Depending on the process chosen when the project was created&mdash;[Scrum](./guidance/scrum-process.md), 
-[Agile](./guidance/agile-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the project was created&mdash;
+[Agile](./guidance/agile-process.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all three processes, see [Choose a process](./guidance/choose-process.md). 
 	 
@@ -127,7 +129,7 @@ Team Foundation version control (TFVC) lets you link work items to version contr
 Git lets you link work items to commits by using the Commit link type. To learn how, see [Manage and commit your changes](../../repos/git/commits.md).  
 
 ### Related scoped links control 
-The Related Work links control displays links to other work items in a set order on the front page of the form. It supports these link types: Duplicate/Duplicate of, Parent/Child, Predecessor/Successor, Related, and Tests/Tested by. To learn more about different link types, see [Link work items to support traceability and manage dependencies](../queries/link-work-items-support-traceability.md).
+The Related Work links control displays links to other work items in a set order on the front page of the form. It supports these link types: Duplicate/Duplicate of, Parent/Child, Predecessor/Successor, Related, and Tests/Tested by. To learn more about different link types, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).
 
 ### Links control tab 
 
@@ -146,14 +148,17 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
+::: moniker range="vsts" 
 > [!NOTE]   
-> **Feature availability**: From VSTS, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+> You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+::: moniker-end 
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]  
->For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
-
+> For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
+::: moniker-end 
 
 <a id="copy-url">  </a>
 ## Copy the URL
@@ -162,12 +167,11 @@ From the web portal, simply copy the URL from the web browser address or hover o
 <img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #C3C3C3;" />  
 
 
-
 <a id="start-storyboarding">  </a>
 ## Start storyboarding  
 
 > [!NOTE]    
-><b>Feature availability: </b>The Start storyboarding menu option is only available from the new web form. However, from TFS, you can click the Start Storyboarding link from the Storyboard tabs from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
+> </b>The **Start storyboarding** menu option is only available from the new web form. However, from TFS, you can choose the **Start Storyboarding** link from the **Storyboard** tab from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
 
 You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
 
@@ -201,5 +205,5 @@ From the [New work item widget](../../Report/widget-catalog.md#new-work-item-wid
 
 If you have a number of product backlog items, user stories, requirements, or tasks that you want to bulk add, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
-If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read [Agile tools, Scale: Manage work across the enterprise](../backlogs/overview.md#scale).
+If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read [Agile tools, Scale: Manage work across the enterprise](../get-started/what-is-azure-boards.md#scale).
 -->

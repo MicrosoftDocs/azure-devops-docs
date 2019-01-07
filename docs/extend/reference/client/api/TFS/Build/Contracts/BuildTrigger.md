@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildTrigger API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildTrigger API | Extensions for Azure DevOps Services
 ms.assetid: 3baef78c-b0af-c054-5d17-dc57b7eb1a7a
 ms.prod: devops
 ms.technology: devops-ecosystem

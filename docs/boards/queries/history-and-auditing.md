@@ -1,7 +1,7 @@
 ---
-title: History and auditing 
-titleSuffix: VSTS & TFS
-description: Track changes and use tools to support audit requirements when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+title: Query by history  
+titleSuffix: Azure Boards
+description: Track changes and use tools to support audit requirements when working in Azure Boards and Team Foundation Server (TFS) 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
@@ -9,10 +9,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
-ms.date: 06/25/2018  
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018  
 ---
 
-# History & auditing  
+# Query by history   
  
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -31,11 +32,11 @@ You can use either the web portal or Team Explorer to view the history of a work
 ::: moniker-end
 
 
-# [Visual Studio](#tab/visual-studio) 
+# [Visual Studio 2015](#tab/visual-studio) 
 
 <a id="tee-query-history" />
 <a id="team-explorer" />
-#### Visual Studio, Team Explorer, Team Explorer Everywhere
+**Visual Studio 2015/Team Explorer and Team Explorer Everywhere**
 ![Search for items based on words contained in the History field](_img/hist-audit-query-team-explorer.png) 
 
 ---
@@ -174,9 +175,9 @@ You can use the following fields to filter queries and create reports. Several o
 <table width="100%">
 <tbody valign="top">
 <tr>
-  <th width="15%">Field name</th>
-  <th width="70%">Description</th>
-  <th width="15%">Work item type</th>
+  <th width="18%">Field name</th>
+  <th width="64%">Description</th>
+  <th width="18%">Work item type</th>
 </tr>
 
 <tr>
@@ -238,11 +239,11 @@ All
     <p>Resolved Date <sup>1</sup> </p>
   </td>
   <td>
-    <p>The date and time when the work item was moved into a Resolved state. (Agile, CMMI)</p>
+    <p>The date and time when the work item was moved into a Resolved state. </p>
 
 	<p>Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime</p>
   </td>
-  <td>Bug 
+  <td>Bug (Agile, CMMI) 
   </td>
 </tr>
 
@@ -271,16 +272,32 @@ All
 
 <tr>
   <td>
-Test Suite Audit
+<a id="test-suite-audit"/>Test Suite Audit
   </td>
   <td>
-Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
+    <p>Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.</p>
+	<p>Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText</p>
 
   </td>
   <td>
 Test Suite
   </td>
 </tr>
+
+<tr>
+  <td>
+<a id="watermark"/>Watermark
+  </td>
+  <td>
+    <p>A system managed field (not editable) that increments with changes made to a work item.</p>
+	<p>Reference name=System.Watermark, Data type=Integer</p>
+
+  </td>
+  <td>
+All
+  </td>
+</tr>
+
 </tbody>
 </table>
 
@@ -302,7 +319,7 @@ To learn more about creating and saving queries, see also:
 
 
 ### Get history programmatically
-See [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
+See [Work item tracking](/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  

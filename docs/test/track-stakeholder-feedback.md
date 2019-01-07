@@ -1,6 +1,6 @@
 ---
-title: Track stakeholder feedback using the Test &amp; Feedback extension
-description: Track stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension when you want to test your applications
+title: Track stakeholder feedback
+description: Track stakeholder feedback in Azure DevOps or TFS using the Exploratory Testing browser extension when you want to test your applications
 ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.prod: devops
 ms.technology: devops-test
@@ -8,23 +8,21 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Track stakeholder feedback using the Test &amp; Feedback extension
- 
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
+
+[!INCLUDE [version-header](_shared/version-header.md)] 
 
 [!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
 
 <a name="track"></a>
 ## Track feedback requests
 
-1. In VSTS or TFS, select your project and open 
-   the **Queries** tab of the **Work** hub.
-
-   ![Opening the Queries tab of the Work hub](_img/track-stakeholder-feedback/track-stakeholder-feedback-30.png)
+1. Select your project and open the **Queries** page of the **Agile** section in Azure DevOps or the **Work** hub in TFS.
+   [Web portal navigation](../project/navigation/index.md)
 
 1. In the list of shared queries, select **Feedback**. 
    This query displays a list of all the feedback responses received.

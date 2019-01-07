@@ -1,5 +1,6 @@
 ---
 title: Branch Command
+titleSuffix: Azure Repos
 description: Branch Command
 ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 The **branch** command copies an item or set of items, including metadata and version control history, from one location to another in the Team Foundation version control server and in the local workspace.
 

@@ -1,5 +1,6 @@
 ---
-title: Save your changes with Git commits | VSTS & TFS
+title: Save your changes with Git commits
+titleSuffix: Azure Repos
 description: Use Git commit to save your work into Git version control with Visual Studio or the command line.
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.prod: devops
@@ -8,14 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 11/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
+# Save work with commits
 
-#  Save work with commits
-
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 Git does not automatically snapshot your code as you make edits to files in your repo.  You must tell Git exactly which changes you want to add to the next snapshot by staging those changes.
 After staging your changes, create a commit to save the snapshot to your repo. 
@@ -59,7 +59,7 @@ Commits include the following information:
 
 Git uses the references between commits along with the file snapshots to maintain a complete record of development in your repo.
 
-[Learn more about Git history](/azure/devops/git/understand-git-history) and how to [review history](history.md) to investigate changes made to your code.
+[Learn more about Git history](/azure/devops/learn/git/understand-git-history) and how to [review history](history.md) to investigate changes made to your code.
 
 <a name="stage-your-changes-and-commit"></a>
 
@@ -162,7 +162,7 @@ Amend your last commit to correct small errors without making a new commit.
 0. Use the `--amend` option to the `commit` command to update the most recent commit with the staged changes and updated description.
 
     ```
-    git commit -m --amend <font color="#b5bd68">"short descriptive message"
+    git commit -m --amend "short descriptive message"
     ```
 
 ---

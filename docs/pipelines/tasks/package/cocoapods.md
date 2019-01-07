@@ -1,6 +1,7 @@
 ---
-title: CocoaPods | VSTS or Team Foundation Server (TFS)
-description: Learn all about how you can use CocoaPods packages when you are building code in VSTS or Team Foundation Server (TFS).
+title: CocoaPods task
+ms.custom: seodec18
+description: Learn all about how you can use CocoaPods packages when you are building code in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,14 +13,13 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Package: CocoaPods 
+# CocoaPods task
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/cocoapods.png) Runs CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html)
+Use this task in a build or release pipeline to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
 
-[CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects. 
+[CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects. This task optionally runs `pod repo update` and then runs `pod install`.
 
 ## Demands
 
@@ -32,25 +32,16 @@ None
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Working Directory</td>
-<td>
-Working directory. If you leave it blank, the working directory is the root of your repo.
-</td>
-</tr>
+<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
+<tr><td>Working directory</td><td>(Optional) Specify the working directory in which to execute this task. If left empty, the repository directory will be used.</td></tr>
+<tr><td>Force repo update</td><td>(Required) Selecting this option will force running 'pod repo update' before install.</td></tr>
+<tr><td>Project directory</td><td>(Optional) Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

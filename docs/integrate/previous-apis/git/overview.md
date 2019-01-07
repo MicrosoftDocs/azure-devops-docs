@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Git | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Git | REST API Reference for Team Foundation Server
+description: Work with Git programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 19DFAB3F-274F-41DF-ACD5-93DCEE626121
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 06/22/2017
 ---
 
 # Git API
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 Use these APIs to work with Git repositories in VSTS/TFS.

@@ -1,6 +1,7 @@
 ---
-title: Git documentation home | VSTS & TFS 
-description: Overview of Git version control in VSTS and Team Foundation Server
+title: Git documentation home
+titleSuffix: Azure Repos 
+description: Overview of Git version control in Azure DevOps Services and Team Foundation Server
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -8,42 +9,43 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: overview
-ms.date: 04/19/2018
+ms.date: 09/10/2018
 layout: LandingPage
 monikerRange: '>= tfs-2015'
 ---
 
 
-#  Git and VSTS
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+# Git and Azure Repos
 
-Host and manage your code in Git version control with VSTS and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-New to Git? [Learn more](/azure/devops/git/learn-git-with-team-services) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
+Host and manage your code in Git version control with Azure DevOps Services and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+
+New to Git? [Learn more](/azure/devops/learn/git/learn-git-with-team-services) about how Git and Azure Repos can help your team ship great code, and learn [how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 ## Get started
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-![Use your favorite IDE with VSTS and Git](_img/overview/get-started-favorite-ide.png)
+![Use your favorite IDE with Azure Repos and Git](_img/overview/get-started-favorite-ide.png)
 </div>
 <div class="col-sm-6 col-md-6">
 
-<p>Connect your favorite development environment to VSTS to access your repos and manage your work.
-VSTS IDE integrations are available for [Visual Studio](../../organizations/accounts/set-up-vs.md), 
-[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/vsts/java/download-eclipse-plug-in), 
-and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
+<p>Connect your favorite development environment to Azure DevOps Services to access your repos and manage your work.
+Azure DevOps Services IDE integrations are available for [Visual Studio](../../organizations/accounts/set-up-vs.md), 
+[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](/azure/devops/java/download-eclipse-plug-in), 
+and [IntelliJ](/azure/devops/java/download-intellij-plug-in).</p>
 
 
-<p>New to Git? Learn how to share code with Git and VSTS with the following getting started guides:</p>
+<p>New to Git? Learn how to share code with Git and Azure Repos with the following getting started guides:</p>
 </div>
 </div>
 
 <!--- All images are Placeholder --> 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_web.svg"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="Web" src="https://docs.microsoft.com/media/common/i_web.svg"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="Visual Studio" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="Command-line" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="Xcode" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="Eclipse" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
 
-<div class="ico48Link"><a href="create-repo-intellij.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+<div class="ico48Link"><a href="create-repo-intellij.md"><img width="48" height="48" alt="IntelliJ" src="https://docs.microsoft.com/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
 
 </div>
 
@@ -51,13 +53,13 @@ and [IntelliJ](/vsts/java/download-intellij-plug-in).</p>
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-<p>Get up and running with Git and VSTS in just a few minutes with the [VSTS Git quick start](gitquickstart.md).</p>
+<p>Get up and running with Git and Azure Repos in just a few minutes with the [Azure Repos Git quick start](gitquickstart.md).</p>
 
-<p>The [VSTS Git tutorial](gitworkflow.md) walks you through Git tasks like [creating repos](creatingrepo.md), [working in branches](branches.md), [saving your work](commits.md), and [sharing your changes](pushing.md). 
+<p>The [Azure Repos Git tutorial](gitworkflow.md) walks you through Git tasks like [creating repos](creatingrepo.md), [working in branches](branches.md), [saving your work](commits.md), and [sharing your changes](pushing.md). 
 Every task is presented step-by-step in Visual Studio or from the command line.</p>
 </div>
 <div class="col-sm-6 col-md-6">
-![VSTS Git tutorial workflow](_img/gitworkflow.png)
+![Azure Repos Git tutorial workflow](_img/gitworkflow.png)
 
 </div>
 </div>   
@@ -67,15 +69,15 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-![Connect to VSTS from anywhere](_img/overview/IC839946.png)   
+![Connect to Azure DevOps Services from anywhere](_img/overview/IC839946.png)   
 
 </div>
 
 <div class="col-sm-6 col-md-6"> 
 
-<p>You can authenticate with your VSTS Git repo from any platform using [cross-platform credential managers](set-up-credential-managers.md) or [SSH public key authentication](use-ssh-keys-to-authenticate.md).</p>
+<p>You can authenticate with your Azure Repos/TFS Git repo from any platform using [cross-platform credential managers](set-up-credential-managers.md) or [SSH public key authentication](use-ssh-keys-to-authenticate.md).</p>
 
-<p>If you have code ready to share in VSTS, our getting started guides take you through the steps to connect your development environment to a VSTS Git repo and share your code with your team.</p>
+<p>If you have code ready to share in Azure Repos, our getting started guides take you through the steps to connect your development environment to a Git repo in Azure Repos and share your code with your team.</p>
 
 <ul>
 <li>[Get Started with Visual Studio](share-your-code-in-git-vs.md)</li>
@@ -113,7 +115,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-![Review code with pull requests in VSTS and TFS](_img/overview/pull-request.png)
+![Review code with pull requests in Azure DevOps Services and TFS](_img/overview/pull-request.png)
 
 </div>
 <div class="col-sm-6 col-md-6"> 
@@ -128,7 +130,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                            <img width="48" height="48" alt="Create a pull request" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +148,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Link work items to pull requests" src="../../_img/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -164,7 +166,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Set up branch policies" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -182,7 +184,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
+                            <img width="48" height="48" alt="Squash merge pull requests" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -200,7 +202,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Git branch and pull request workflows" src="../../_img/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">

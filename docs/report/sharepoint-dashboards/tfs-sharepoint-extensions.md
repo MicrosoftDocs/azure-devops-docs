@@ -26,8 +26,8 @@ Additionally, your users in your collection will not have a Documents folder ava
 
 ## Activating dashboard features 
 
-When you create a team project, you have an option to include a SharePoint portal. If you choose this option, then the system activates certain dashboard features according to the process template selected. To learn more, see [Define the project portal plug-in for a process template](../../reference/process-templates/define-project-portal-plug-in.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json). 
+When you create a team project, you have an option to include a SharePoint portal. If you choose this option, then the system activates certain dashboard features according to the process template selected. To learn more, see [Define the project portal plug-in for a process template](../../reference/process-templates/define-project-portal-plug-in.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json). 
 
 ## Related notes
 
-- [Configure Team Foundation Server Extensions for SharePoint Products](/tfs/server/install/sharepoint/setup-remote-sharepoint?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
+- [Configure Team Foundation Server Extensions for SharePoint Products](/tfs/server/install/sharepoint/setup-remote-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json) 

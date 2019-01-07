@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for VSTS and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for VSTS and Team Foundation Server.
+title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
+description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -13,9 +13,9 @@ ms.date: 08/04/2016
 robots: NOINDEX, NOFOLLOW
 ---
 
-# VSTS REST API Reference
+# Azure DevOps Services REST API Reference
 
-Welcome to the VSTS REST API Reference. 
+Welcome to the Azure DevOps Services REST API Reference. 
 
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This article walks you through:
 
@@ -32,10 +32,10 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 A REST API request/response pair can be separated into five components:
 
 1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-    * *instance*: The VSTS account or TFS server you're sending the request to. They are structured as follows,
-        * VSTS: `{account}.visualstudio.com`
+    * *instance*: The Azure DevOps Services organization or TFS server you're sending the request to. They are structured as follows,
+        * Azure DevOps Services: `dev.azure.com/{organization}`
         * TFS: `server:port` (the default port is 8080)
-    * *collection*: The value for collection should be `DefaultCollection` for both TFS and VSTS.
+    * *collection*: The value for collection should be `DefaultCollection` for both TFS and Azure DevOps Services.
     * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
     * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
         * `api-version=1.0`
@@ -60,43 +60,43 @@ A REST API request/response pair can be separated into five components:
 
 ### Authenticate 
 
-There are many ways to authenticate your application or service with VSTS or TFS. The following table is an excellent way to decide which method is the best for you:
+There are many ways to authenticate your application or service with Azure DevOps Services or TFS. The following table is an excellent way to decide which method is the best for you:
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
-| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
+| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](../extend/get-started/node.md) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
+| [Azure DevOps Services Extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
 > You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
 
 ### Assemble the request
 
-**VSTS**
+**Azure DevOps Services**
 
-For VSTS, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
+For Azure DevOps Services, *instance* is `dev.azure.com/{organization}` and *collection* is `DefaultCollection`, so the pattern looks like this:
 
 ```
-VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
+VERB https://dev.azure.com/{organization}/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of projects in a VSTS account.
+For example, here's how to get a list of projects in an organization.
 
 ```dos
-curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
+curl -u {username}[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
 ```
 
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 
-```
+```http
 Authorization: Basic BASE64PATSTRING
 ``` 
 
-Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 
 ```cs
 public static async void GetProjects()
@@ -116,7 +116,7 @@ public static async void GetProjects()
 						string.Format("{0}:{1}", "", personalaccesstoken))));
 
 			using (HttpResponseMessage response = client.GetAsync(
-						"https://{account}.visualstudio.com/DefaultCollection/_apis/projects").Result)
+						"https://dev.azure.com/{organization}/_apis/projects").Result)
 			{
 				response.EnsureSuccessStatusCode();
 				string responseBody = await response.Content.ReadAsStringAsync();
@@ -132,7 +132,7 @@ public static async void GetProjects()
 ```
 
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](./get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](./get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 **TFS**
 
@@ -157,35 +157,35 @@ You should get a response like this.
         {
             "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "name": "Fabrikam-Fiber-TFVC",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "description": "TeamFoundationVersionControlprojects",
             "collection": {
                 "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
                 "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
             },
             "defaultTeam": {
                 "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
                 "name": "Fabrikam-Fiber-TFVCTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
             }
         },
         {
             "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
             "name": "Fabrikam-Fiber-Git",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
             "description": "Gitprojects",
             "collection": {
                 "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
                 "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
             },
             "defaultTeam": {
                 "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
                 "name": "Fabrikam-Fiber-GitTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
             }
         }
     ],

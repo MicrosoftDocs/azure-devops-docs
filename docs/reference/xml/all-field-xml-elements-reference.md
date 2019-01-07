@@ -1,6 +1,6 @@
 ---
 title: All FIELD XML elements reference 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements for the FIELD element for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -25,7 +25,7 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
  You use the following syntax to define the data fields for a type of work item. This example shows the format of the **FIELD** (Definition) element and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
 
 > [!NOTE]    
->**Feature availability:**The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
+> The Boolean data type is supported for Azure DevOps Services (Hosted XML) and for TFS 2017.2 and later versions (On-Premises XML). 
   
 > [!div class="tabbedCodeSnippets"]
 ```XML

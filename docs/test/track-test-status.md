@@ -1,6 +1,6 @@
 ---
-title: Track test status - manual testing in VSTS
-description: Track test status with charts and graphs using VSTS
+title: Track test status
+description: Track test status with charts and graphs using Azure DevOps
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Track test status
 
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-header](_shared/version-header.md)] 
 
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,
@@ -22,7 +22,7 @@ or how many tests are passing and failing in each test suite.
 You can pin these charts to your home page, then all the team 
 can see the progress at a glance.
 
-![On the Charts tab, view test plan status with charts that you created](_img/track-test-status/OverviewTrackResults.png) 
+![On the Charts page, view test plan status with charts that you created](_img/track-test-status/OverviewTrackResults.png) 
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
@@ -34,18 +34,18 @@ By default, a pie chart is created for each test plan.
 This chart is grouped by the outcome field to show the latest results
 for all the tests in the test plan.
 
-View this default chart from the Charts tab.
+View this default chart from the Charts page.
 
-![Select test plan. Go to Charts tab to view default chart](_img/track-test-status/DefaultChart.png)
+![Select test plan. Go to Charts page to view default chart](_img/track-test-status/DefaultChart.png)
 
 Add your own charts for test results to visualize what's important 
 for your team. If you already know how to add a chart, jump to the 
 [examples](#TestResultsExamples) below of charts that you can create.
 
 1. Select the test plan or test suite for your chart in the 
-   Test plan tab. Then create a new chart.
+   Test plans page. Then create a new chart.
 
-   ![On the Charts tab; click New. Select New Test Result Chart](_img/track-test-status/NewTestResultChart.png)
+   ![On the Charts page; click New. Select New Test Result Chart](_img/track-test-status/NewTestResultChart.png)
 
 1. Select the chart type. Based on the chart, configure the 
    fields that you want to use to group by, or for rows and columns.
@@ -55,7 +55,7 @@ for your team. If you already know how to add a chart, jump to the
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.
 
-1. Save the chart. Now it will be displayed in the charts tab 
+1. Save the chart. Now it will be displayed in the Charts page 
    for the test plan or test suite that you selected.
 
 <a name="TestResultsExamples"></a>
@@ -63,10 +63,10 @@ for your team. If you already know how to add a chart, jump to the
 
 **What's the test status for a specific test suite?**
 
-Select the test suite from the Test plan tab and add 
+Select the test suite from the Test plans page and add 
 a test results pie chart. Group by outcome.
 
-![On the chart tab, choose New test result chart; choose Pie chart. In Group By, select Outcome](_img/track-test-status/ExampleOutcome.png)
+![On the chart page, choose New test result chart; choose Pie chart. In Group By, select Outcome](_img/track-test-status/ExampleOutcome.png)
 
 **What's the test status for user stories that my team's testing this sprint?**
 
@@ -76,7 +76,7 @@ plan for your user stories, you can create a chart for this.
 1. Group these requirement-based test suites together 
    in a static test suite.
 
-1. Select this static test suite in the Test plan tab.
+1. Select this static test suite in the Test plans page.
 
 1. Add a test results stacked bar chart. Choose Suite 
    as the rows pivot and Outcome as the columns pivot.
@@ -85,7 +85,7 @@ plan for your user stories, you can create a chart for this.
 
 **How many tests has each tester left to run?**
 
-Select your test plan from the Test plan tab and add a test 
+Select your test plan from the Test plans page and add a test 
 results pivot table chart. Choose Tester as the rows pivot and
 Outcome as the columns pivot.
 
@@ -116,22 +116,22 @@ results can only be set using Microsoft Test Manager.)
 Use test case charts to find out the progress of your 
 test case authoring. The charts for test cases give 
 you the flexibility to report on columns that you add 
-to the Tests tab. By default, test case fields are not 
-added to the view in the Tests tab.
+to the tests page. By default, test case fields are not 
+added to the view in the tests page.
 
 If you already know how to add a chart, jump to the
 [examples](#ExamplesTestCase) below of charts that you can 
 create for test cases.
 
 1. Add any fields you want to use for your test case chart 
-   from the Tests tab with Column options. Then the fields will 
+   from the tests page with Column options. Then the fields will 
    appear as choices in the drop-down lists for grouping for 
    your test case charts.
 
 1. Select the test plan or test suite for your chart in 
-   the Test plan tab. Then add a test case chart.
+   the Test plans page. Then add a test case chart.
 
-   ![Test hub: select test suite; Charts tab; New test case chart](_img/track-test-status/NewTestCaseChart.png)
+   ![Select test suite; Charts page; New test case chart](_img/track-test-status/NewTestCaseChart.png)
 
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.
@@ -144,8 +144,8 @@ create for test cases.
 
    You can't group by test suite for the test case charts.
 
-1.  Save the chart. Now it will be displayed in the charts 
-   tab for the test plan or test suite that you selected.
+1. Save the chart. Now it will be displayed in the charts 
+   page for the test plan or test suite that you selected.
 
 <a name="ExamplesTestCase"></a>
 ### Test case examples
@@ -197,7 +197,7 @@ Stakeholder access can view the charts on the dashboard.
 Learn more about
 [dashboards](../report/dashboards.md). 
 Or learn more about
-[team administration](../organizations/settings/configure-team-settings.md).
+[team administration](../organizations/settings/manage-teams.md).
 
 ## See also
 

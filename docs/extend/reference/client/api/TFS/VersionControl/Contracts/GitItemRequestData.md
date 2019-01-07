@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitItemRequestData API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitItemRequestData API | Extensions for Azure DevOps Services
 ms.assetid: 393af0f2-79a6-6514-fa7f-3f4d9d05f38b
 ms.prod: devops
 ms.technology: devops-ecosystem

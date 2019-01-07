@@ -1,41 +1,69 @@
 ---
-title: Approve extension requests in Visual Studio Team Services and Team Foundation Server
-description: Approve extension requests for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Approve extension requests in Azure DevOps Services and Team Foundation Server
+description: Approve extension requests for Azure DevOps Services and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: c34bdc56-c731-4211-b8f4-802973d864da
 ms.manager: douge
-ms.author: elbatk
-author: elbatk
-ms.date: 12/04/2017
+ms.author: chcomley
+author: chcomley
+ms.date: 09/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
- 
+# Approve extension requests
 
-# Approve extensions for a project collection
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
-**VSTS** | **TFS**
+As a project collection administrator, you receive an email when another project member requests an extension. When you approve the request, the extension is automatically installed to Azure DevOps Services or Team Foundation Server (TFS).
 
-As a project collection administrator, you'll get an email when another project member requests an extension. When you approve the request, Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) automatically installs the extension.
+## Prerequisites
 
-To approve extensions, you must also have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
+To approve extensions, you must have [**edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
-0.	Go to your VSTS or TFS home page, then go to your project:
-    * VSTS:```https://{account-name}.visualstudio.com/{team-project}```
+## Approve requests
+
+[!INCLUDE [temp](../_shared/new-navigation.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Go to your Azure DevOps Services or TFS home page, then go to your project:
+    * Azure DevOps Services:```https://dev.azure.com/{organization}/{project}```
     * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
-0.	Manage your extensions:
+2. Select the shopping bag icon and **Manage extensions**.
 
-    ![Manage extensions](_img/manage-extensions-vsts.png)
+   ![Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
 
-0. Review and approve your requested extensions.
+3. Review and approve your requested extensions.
 
-    <img alt="Extensions tab, requested extensions" src="_img/get-tfs-extensions/connected/approve-request-tfs.png" style="border: 1px solid #CCCCCC" />
+   > [!div class="mx-imgBorder"] 
+   > ![Extensions tab, requested extensions](_img/get-tfs-extensions/connected/approve-request-tfs.png)
 
-    After you approve extension requests, TFS automatically installs those extensions. 
+    After you approve extension requests, the extensions are automatically installed.
 
-0. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md), to users who need access so they can start using those extensions. 
+4. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md) to users who need access.
 
-0. Remember to tell your team about installed extensions, so they can start using their capabilities.
+# [Previous navigation](#tab/previous-nav)
+
+1. Go to your Azure DevOps Services or TFS home page, then go to your project:
+    * Azure DevOps Services:```https://dev.azure.com/{organization}/{project}```
+    * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
+
+2. Select the shopping bag icon and **Manage extensions**.
+
+   ![Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
+
+3. Review and approve your requested extensions.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Extensions tab, requested extensions](_img/get-tfs-extensions/connected/approve-request-tfs.png)
+
+    After you approve extension requests, the extensions are automatically installed.
+
+4. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md) to users who need access.
+
+---
+
+Remember to tell your team about installed extensions, so they can start using their capabilities.

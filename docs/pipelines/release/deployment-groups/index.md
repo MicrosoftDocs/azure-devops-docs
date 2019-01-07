@@ -1,6 +1,7 @@
 ---
-title: Deployment groups in Release Management
-description: Deployment Groups for Microsoft Release Management on Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Use deployment groups in a release pipeline
+ms.custom: seodec18
+description: Deployment Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,13 +9,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Deployment groups
 
-**VSTS | TFS 2018**
+**Azure Pipelines | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -26,8 +27,8 @@ for example, "Dev", "Test", "UAT", and "Production". In effect, a
 deployment group is just another grouping of agents, much like an
 [agent pool](../../agents/pools-queues.md).
 
-When authoring a VSTS or TFS Release pipeline, you
-can specify the deployment targets for a [phase](../../process/phases.md)
+When authoring an Azure Pipelines or TFS Release pipeline, you
+can specify the deployment targets for a [job](../../process/phases.md)
 using a deployment group. This makes it easy to define
 [parallel execution](../../process/phases.md#parallelexec)
 of deployment tasks.
@@ -48,14 +49,15 @@ Deployment groups:
 
 ## Create a deployment group
 
-You define groups on the **Deployment Groups** tab of the **Build &amp; Release**
-hub, and install the agent on each server in the group. After you prepare your
+You define groups on the **Deployment Groups** tab of the **Azure Pipelines**
+section, and install the agent on each server in the group. After you prepare your
 target servers, they appear in the **Deployment Groups** tab. The list indicates if a
 server is available, the tags you assigned to each server, and the latest
 deployment to each server.
 
 The tags you assign allow you to limit deployment to specific servers when 
-the deployment group is used in a [Deployment group phase](../../process/deployment-group-phases.md).
+the deployment group is used in a [Deployment group job](../../process/deployment-group-phases.md).
+Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
 You manage the security for a deployment group by
 [assigning security roles](../../agents/pools-queues.md#security).
 
@@ -63,14 +65,18 @@ You manage the security for a deployment group by
 
 Every target machine in the deployment group requires the build and release agent
 to be installed. You can do this using the script that is generated in the
-**Deployment Groups** tab of the **Build &amp; Release** hub. You can choose the
+**Deployment Groups** tab of **Azure Pipelines**. You can choose the
 type of agent to suit the target operating system and platform; such as Windows
 and Linux.
 
 If the target machines are Azure VMs, you can quickly and easily prepare them by
-by installing the **VSTS Agent** Azure VM extension on each of the VMs,
+by installing the **Azure Pipelines Agent** Azure VM extension on each of the VMs,
 or by using the **Azure Resource Group Deployment** task in your release pipeline
-to create a deployment group dynamically. 
+to create a deployment group dynamically.
+
+You can force the agents on the target machines to be upgraded to the latest version
+without needing to redeploy them by choosing the **Upgrade targets** command on the shortcut
+menu for a deployment group.  
 
 For more information, see [Provision agents for deployment groups](howto-provision-deployment-group-agents.md).
  
@@ -80,7 +86,7 @@ When release is executing, you see an entry in the live logs page
 for each server in the deployment group. After a release has completed,
 you can download the log files for every server to examine the deployments
 and resolve issues. To navigate quickly to a release pipeline or a release,
-use the links in the **Releases** tab. 
+use the links in the **Releases** tab.
 
 ## Share a deployment group
 
@@ -115,7 +121,7 @@ will see the deployment group you added and you can assign project-specific mach
 
 ## Related topics
 
-* [Run on machine group phase](../../process/deployment-group-phases.md)
+* [Run on machine group job](../../process/deployment-group-phases.md)
 * [Deploy an agent on Windows](../../agents/v2-windows.md)
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)

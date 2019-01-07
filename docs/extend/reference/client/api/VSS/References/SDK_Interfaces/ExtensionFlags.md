@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ExtensionFlags API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ExtensionFlags API | Extensions for Azure DevOps Services
 description: Set of flags applied to extensions that are relevant to contribution consumers
 ms.assetid: 90a2fa91-5044-8ba1-a562-ff10432ceeca
 ms.prod: devops
@@ -19,7 +19,7 @@ Defined in vss.d.ts
 
 ### Values
 
-* `BuiltIn` A built-in extension is installed for all VSTS accounts by default
+* `BuiltIn` A built-in extension is installed for all Azure DevOps Services organizations by default
 
 * `Trusted` The extension comes from a fully-trusted publisher
 

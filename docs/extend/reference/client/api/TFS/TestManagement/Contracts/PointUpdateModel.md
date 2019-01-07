@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts PointUpdateModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts PointUpdateModel API | Extensions for Azure DevOps Services
 ms.assetid: 2ef33303-363a-b033-f771-49f1204f3b8d
 ms.prod: devops
 ms.technology: devops-ecosystem

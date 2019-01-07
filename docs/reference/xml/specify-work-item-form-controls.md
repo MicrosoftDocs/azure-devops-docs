@@ -1,5 +1,6 @@
 ---
-title: Specify work item form controls | VSTS & TFS
+title: Specify work item form controls 
+titleSuffix: TFS
 description: Provides a quick reference to the Control element, its child elements, and attributes.
 ms.prod: devops
 ms.technology: devops-agile
@@ -7,13 +8,14 @@ ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 06/16/2017
 ---
 
 
 # Specify work item form controls
 
-<p><b>TFS 2017 | TFS 2015  | TFS 2013 </b></p>
+[!INCLUDE [temp](../../_shared/version-tfs-2013-2015.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
@@ -78,7 +80,7 @@ Specify the `PlainText` control when you want to capture text that contains desc
 ### Add a checkbox or Boolean field 
 
 > [!NOTE]    
->**Feature availability:**The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
+>**Feature availability:**The Boolean data type is supported for Hosted XML (Azure DevOps Services) and for On-Premises XML, for TFS 2017.2 and later versions. 
 
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 
@@ -92,7 +94,7 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
 
 ```xml
-<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triag" /> 
+<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triage" /> 
 ```
  
 The field will appear as a checkbox on the form. 
@@ -127,9 +129,7 @@ Label="Preferred Start Time:" LabelPosition="Left" Format="Time" />
 
 Specify the `HTMLControl` to add an `HTML` field to capture rich-text formatting, as shown in the following illustration.
 
-```xml
-<Control Type="HtmlFieldControl" FieldName="Microsoft.VSTS.Notes" Label="Notes" Dock="Fill" />
-```
+`<Control Type="HtmlFieldControl" FieldName="Microsoft.VSTS.Notes" Label="Notes" Dock="Fill" />`  
 
 ![HTML field shown on work item form](_img/alm_wit_custom_htmlfield.png "ALM_WIT_Custom_HTMLField")
 
@@ -192,7 +192,7 @@ To add the `StoryboardsControl` to the `FORM` section, add the following code sn
 You use the `WorkItemClassificationControl` type to add fields whose data type is `TreePath`. This control provides support to display area path fields and iteration path fields in a hierarchical, nested tree format. The tree shows hierarchical nodes that you can expand and collapse.  
   
 ```xml
-<Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
+<Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area"LabelPosition="Left" />  
 ```  
   
 > [!NOTE]  

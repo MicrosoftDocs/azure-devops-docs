@@ -1,7 +1,8 @@
 ---
 title: Kanban board controls  
-titleSuffix: VSTS & TFS
-description: Use board controls available with your Kanban board in Visual Studio Team Services & Team Foundation Server    
+titleSuffix: Azure Boards
+description: Use board controls available with your Kanban board in Azure Boards, Azure DevOps, & Team Foundation Server   
+ms.custom: boards-kanban  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
@@ -9,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 11/19/2018
 ---
 
 # Kanban board controls

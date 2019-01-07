@@ -1,6 +1,6 @@
 ---
-title: Record and replay cloud-based load tests with VSTS
-description: Get app performance data by recording and replaying cloud-based load tests using the features of the Test hub in Microsoft VSTS
+title: Record and replay load tests
+description: Get app performance data by recording and replaying cloud-based load tests using the features of Azure DevOps
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
 ms.prod: devops
 ms.technology: devops-test
@@ -8,30 +8,30 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Record and replay cloud-based load tests
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 You can record and then replay cloud-based load tests on your web app or website directly
-using an HTTP Archive file and Visual Studio Team Services (VSTS).
+using an HTTP Archive file and Azure DevOps.
 
 Before you start:
 
-* Create a VSTS subscription if you don't have one already. 
+* Create an Azure DevOps subscription if you don't have one already. 
 
 * You can use your monthly free 20,000 virtual user minutes (VUM) allowance to try it. 
   If you want to use load testing beyond this, you can
-  [set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md) for your VSTS account.
+  [set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md) for Azure DevOps.
 
 ## About HTTP Archive testing
 
 If you have used cloud-based load testing before, you may be 
 familiar with the ability to get performance information on your
-app when under load by using the VSTS web 
+app when under load by using the Azure DevOps web 
 portal. It's a great way to:
 
 * Quickly run a URL-based load test for your app; you just need to enter the app URL.
@@ -51,7 +51,7 @@ to create plugins necessary to suit complex testing requirements.
 
 **HTTP Archive testing** also allows you to create load tests
 that mimic end-to-end user scenarios, but with fewer 
-capabilties than the rich Visual Studio 
+capabilities than the rich Visual Studio 
 Enterprise load tests. However, by using HTTP Archive files
 you can represent user scenarios that:
 
@@ -105,7 +105,7 @@ using your browser.
 
    >As you go through these steps, you will see that all the 
    traffic between the browser and the server is shown in the 
-   **Network** tab of the developer tools.
+   **Network** page of the developer tools.
 
 1. After you have finished recording your user scenario, save the 
    URLs as HTTP Archive (**.har**) file. In Chrome, do this by 
@@ -125,12 +125,12 @@ using your browser.
  
 ## Create a load test using the HTTP Archive file
 
-Follow these steps to create a load test in the VSTS
+Follow these steps to create a load test in the Azure DevOps
 web portal using an HTTP Archive (**.har**) file.
 
-1. Sign into VSTS (**https://**your-subscription-name**.visualstudio.com**).
+1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** hub, open the **+ New**
+1. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **HTTP Archive based test**.
 
    ![Selecting a HTTP archive test](_img/record-and-replay-cloud-load-tests/05-start-http-archive-import.png)
@@ -161,7 +161,7 @@ web portal using an HTTP Archive (**.har**) file.
    identified and extracted from a request and correlated
    in any subsequent requests that use them.
 
-1. Open the **Settings** tab to view and change any 
+1. Open the **Settings** page to view and change any 
    load test settings.
 
    ![Editing the test settings](_img/record-and-replay-cloud-load-tests/07c-har-import.png)
@@ -182,7 +182,7 @@ web portal using an HTTP Archive (**.har**) file.
    ![The test results](_img/record-and-replay-cloud-load-tests/07e-har-import.png)
 
    For more information about the results and reports, see 
-   [URL-based load testing with VSTS](get-started-simple-cloud-load-test.md#viewresults).
+   [URL-based load testing with Azure DevOps](get-started-simple-cloud-load-test.md#viewresults).
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
@@ -236,7 +236,7 @@ If you find that this is the cause of your test failures, you can export and run
 
 This export mechanism downloads a Visual Studio load test project containing the required web performance 
 test and load test for your application. See 
-[how to fix dynamic parameters using Visual Studio](https://docs.microsoft.com/visualstudio/test/fix-non-detectable-dynamic-parameters-in-a-web-performance-test). 
+[how to fix dynamic parameters using Visual Studio](/visualstudio/test/fix-non-detectable-dynamic-parameters-in-a-web-performance-test). 
 Sean Lumley's [blog post](https://blogs.msdn.microsoft.com/slumley/2007/04/10/how-to-debug-a-web-test/)
 has a detailed example of how dynamic parameters can be identified by inspecting the test and test results.
 
@@ -246,7 +246,7 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Run Apache JMeter load tests with VSTS](get-started-jmeter-test.md)
-* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
+* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

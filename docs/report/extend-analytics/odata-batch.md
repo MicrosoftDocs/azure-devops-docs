@@ -1,6 +1,6 @@
 ---
 title: OData batch support 
-titleSuffix: VSTS 
+titleSuffix: Azure DevOps Services 
 description: Guidelines for extension developers who want to learn how to write good OData queries 
 ms.prod: devops
 ms.technology: devops-analytics
@@ -8,21 +8,42 @@ ms.manager: douge
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
-ms.date: 11/13/2017
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/2/2018
 ---
 
 # OData batch support
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-Batch requests are part of the OData spec, and the Analytics service for Visual Studio Team Services (VSTS) provides limited support, as a means to submit large requests. For more information about batch operations in OData see section [11.7 Batch Requests](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
+Batch requests are part of the OData spec, and the Analytics service for Azure DevOps provides limited support, as a means to submit large requests. For more information about batch operations in OData see section [11.7 Batch Requests](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## The Analytics $batch endpoint
-The $batch endpoint is located at ```https://{OrganizationName}.analytics.visualstudio.com/_odata/{version}/$batch```. Note that the $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
+The $batch endpoint is located at:
+
+::: moniker range="vsts"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+``` 
+>[!NOTE] 
+>The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+```
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+>The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
+::: moniker-end
 
 ### Supported $batch operations
 The OData spec allows for numerous operations per $batch request, however the Analytics service limits each $batch request to a single query. The Analytics $batch endpoint is also read-only, no change sets may be published to it.
@@ -32,7 +53,7 @@ Use $batch requests when you are in danger of exceeding the browser's limit on U
 
 ## $batch request example
 ### Request
-URL: ```https://{OrganizationName}.analytics.visualstudio.com/_odata/{version}/$batch```  
+URL: ```https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$batch```  
 Content-Type: ```multipart/mixed; boundary=batch_2af9a11e-9dec-4266-a3ab-0db9d10fb55a```  
 Request payload:
 ```

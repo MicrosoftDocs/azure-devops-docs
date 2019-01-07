@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts CloneStatistics API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts CloneStatistics API | Extensions for Azure DevOps Services
 ms.assetid: 8c8d8154-7404-3593-320c-597c59f0bce3
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -18,7 +18,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `clonedRequirementsCount`: number. Number of Requirments cloned so far.
+* `clonedRequirementsCount`: number. Number of Requirements cloned so far.
 
 * `clonedSharedStepsCount`: number. Number of shared steps cloned so far.
 

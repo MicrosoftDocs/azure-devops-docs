@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for VSTS and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for VSTS and Team Foundation Server.
+title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
+description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Get started with the REST APIs
 
-Integrate your app with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) using these REST APIs.
+Integrate your app with Azure DevOps Services and Team Foundation Server (TFS) using these REST APIs.
 
 These APIs follow a common pattern: 
 
@@ -24,19 +24,19 @@ VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}
 
 > Tip: To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
 
-## VSTS
+## Azure DevOps Services
 
-For VSTS, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
+For Azure DevOps Services, `instance` is `dev.azure.com/{organization}` and `collection` is `DefaultCollection`,
 so the pattern looks like this:
 
 ```no-highlight
-VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
+VERB https://dev.azure.com/{organization}/_apis[/{area}]/{resource}?api-version={version}
 ```
 <br />
-For example, here's how to get a list of projects in a VSTS account.
+For example, here's how to get a list of projects in an organization.
 
 ```dos
-curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
+curl -u {username}[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
 ```
 <br />
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
@@ -45,7 +45,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 <br />
-Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 
 ```cs
 public static async void GetProjects()
@@ -65,7 +65,7 @@ public static async void GetProjects()
 						string.Format("{0}:{1}", "", personalaccesstoken))));
 
 			using (HttpResponseMessage response = client.GetAsync(
-						"https://{account}.visualstudio.com/DefaultCollection/_apis/projects").Result)
+						"https://dev.azure.com/{organization}/_apis/projects").Result)
 			{
 				response.EnsureSuccessStatusCode();
 				string responseBody = await response.Content.ReadAsStringAsync();
@@ -80,10 +80,10 @@ public static async void GetProjects()
 }
 ```
 <br />
-If you don't have a VSTS account,
+If you don't have an organization,
 you can [set one up for free](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 ## TFS
 
@@ -108,35 +108,35 @@ You should get a response like this.
         {
             "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "name": "Fabrikam-Fiber-TFVC",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "description": "TeamFoundationVersionControlprojects",
             "collection": {
                 "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
                 "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
             },
             "defaultTeam": {
                 "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
                 "name": "Fabrikam-Fiber-TFVCTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
             }
         },
         {
             "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
             "name": "Fabrikam-Fiber-Git",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+            "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
             "description": "Gitprojects",
             "collection": {
                 "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
                 "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl": "https: //dev.azure.com/fabrikam-fiber-inc"
             },
             "defaultTeam": {
                 "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
                 "name": "Fabrikam-Fiber-GitTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
+                "url": "https: //dev.azure.com/fabrikam-fiber-inc/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
             }
         }
     ],
@@ -169,7 +169,7 @@ DELETE | Delete a resource
 When you provide request body (usually with the POST, PUT and PATCH verbs), include request headers that describe the body. For example,
 
 ```no-highlight
-POST https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/_apis/build-release/requests
+POST https://dev.azure.com/fabrikam-fiber-inc/_apis/build-release/requests
 ```
 ```http
 Content-Type: application/json
@@ -193,7 +193,7 @@ You can pass the proper verb (PATCH in this case) as an HTTP request header para
 
 
 ```no-highlight
-POST https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/_apis/wit/workitems/3
+POST https://dev.azure.com/fabrikam-fiber-inc/_apis/wit/workitems/3
 ```
 ```http
 X-HTTP-Method-Override: PATCH
@@ -219,12 +219,12 @@ Response | Notes
 
 ## Cross-origin resource sharing (CORS)
 
-VSTS supports CORS. This enables JavaScript code served from a domain other than *.visualstudio.com to make Ajax requests to VSTS REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
+Azure DevOps Services supports CORS. This enables JavaScript code served from a domain other than `dev.azure.com/*` to make Ajax requests to Azure DevOps Services REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
 
 ```js
     $( document ).ready(function() {
         $.ajax({
-            url: 'https://fabrikam.visualstudio.com/defaultcollection/_apis/projects?api-version=1.0',
+            url: 'https://dev.azure.com/fabrikam/_apis/projects?api-version=1.0',
             dataType: 'json',
             headers: {
                 'Authorization': 'Basic ' + btoa("" + ":" + myPatToken)
@@ -240,7 +240,7 @@ VSTS supports CORS. This enables JavaScript code served from a domain other than
 <a name="versions"></a>
 ## Versioning
 
-VSTS and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Azure DevOps Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
 ### Guidelines
 
@@ -261,14 +261,14 @@ Accept: application/json;api-version=1.0
 
 Query parameter:
 ```no-highlight
-GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}?api-version=1.0
+GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 ```
 
 ### Supported versions
 
 | Product                     | 1.0    | 2.0    | 3.0    |
 |:----------------------------|:------:|:------:|:------:|
-| VSTS | X      | X      | X      | 
+| Azure DevOps Services | X      | X      | X      | 
 | Team Foundation Server 2017 | X      | X      | X      |
 | Team Foundation Server 2015 | X      | X      | -      |
 

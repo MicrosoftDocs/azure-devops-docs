@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDefinitionVariable API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildDefinitionVariable API | Extensions for Azure DevOps Services
 ms.assetid: 4e8de1da-1f80-ae79-b3a1-e7a601fb9db2
 ms.prod: devops
 ms.technology: devops-ecosystem

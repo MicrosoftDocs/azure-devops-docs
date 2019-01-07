@@ -1,5 +1,6 @@
 ---
-title: View commit details | VSTS & TFS
+title: View commit details
+titleSuffix: Azure Repos
 description: View Git commit details in Visual Studio
 ms.assetid: 82aa7c10-c304-400a-84c9-d5ed87d66180
 toc: show
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 # Commit details
 
-#### VSTS | TFS 2018 | TFS 2017 Update 1 
+#### Azure Repos | TFS 2018 | TFS 2017 Update 1 
 
 ## Commit details view
 

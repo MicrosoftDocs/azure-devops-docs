@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Get Help | Developing for VSTS
-description: Get help with your extension or custom application for VSTS.
+title: Get help | Developing for Azure DevOps Services
+description: Get help with your extension or custom application or third party service for Azure DevOps Services.
 ms.assetid: fdfc7d19-e17a-420a-881a-b88092624d58
 ms.topic: conceptual
 ms.manager: douge
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Get help
 
-Our goal is to help you be successful developing for **VSTS**. For any of the following:
+Our goal is to help you be successful developing for Azure DevOps Services. For any of the following:
 
 * Technical / how-to questions
 * Bugs (or potential bugs)

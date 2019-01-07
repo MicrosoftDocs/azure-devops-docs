@@ -1,6 +1,6 @@
 ---
-title: Define dependencies for task groups and tasks in plug-in files
-titleSuffix: VSTS & TFS
+title: Define dependencies for task groups & tasks 
+titleSuffix: TFS
 description: Add a task group or a task to a plug-in file process template to declare dependencies in Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

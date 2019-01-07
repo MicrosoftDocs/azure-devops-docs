@@ -1,6 +1,7 @@
 ---
-title: Build a repository with YAML
-description: Set up CI for a repository containing a YAML file
+title: Create your first pipeline
+ms.custom: seodec18
+description: Create your first pipeline using Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,141 +9,110 @@ ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 8/03/2018
-monikerRange: '> tfs-2018'
+ms.date: 11/19/2018
+monikerRange: 'vsts'
 ---
 
-# Build a repository with YAML
+# Create your first pipeline
 
-If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can use VSTS pipelines to easily build the repo by adding a YAML file to it. VSTS pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
+**Azure Pipelines**
 
-> [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](../project/navigation/preview-features.md) enabled on your organization.
+This is a step-by-step guide to using Azure Pipelines to build a GitHub repository.
 
 ## Prerequisites
 
 [!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
 
+* You need a GitHub account, where you can create a repository.
+
 ## Get the sample code
 
-Choose the sample application for the language of your choice from one of the following repositories.
+You can use Azure Pipelines to build an app written in any language.
+Select a sample repository of your choice from the following languages and fork it into your own GitHub user account:
 
-| Programming language | Repository with a sample application |
+| Programming language | Repository with a sample app |
 |----------------------|----------------------------|
-| .NET Core | `https://github.com/MicrosoftDocs/pipelines-dotnet-core` |
-| Android | `https://github.com/adventworks/android-sample` |
-| Go | `https://github.com/adventworks/go-sample` |
-| Java | `https://github.com/adventworks/java-sample` |
-| JavaScript | `https://github.com/adventworks/nodejs-sample` |
+| .NET Core | https://github.com/MicrosoftDocs/pipelines-dotnet-core |
+| Go | https://github.com/MicrosoftDocs/pipelines-go |
+| Java | https://github.com/MicrosoftDocs/pipelines-java |
+| Node.js | https://github.com/MicrosoftDocs/pipelines-javascript |
+| Python | https://github.com/MicrosoftDocs/pipelines-python-django |
 
-Get the code for the sample application into your own GitHub or VSTS repository.
-
-# [VSTS Git repo](#tab/gitvsts)
-
-[!INCLUDE [include](apps/_shared/get-sample-code-vsts.md)]
-
-# [GitHub repo](#tab/github)
-
-[!INCLUDE [include](apps/_shared/get-sample-code-github.md)]
-
----
+You should now have a sample app in your GitHub account.
 
 ## Get your first build
 
-# [VSTS Git repo](#tab/gitvsts)
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In VSTS, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+1. In your project, navigate to the **Pipelines** page. Then choose **New pipeline**.
 
-1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build process. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-  ```yaml
-  queue: 'Hosted VS2017'
+   > [!div class="mx-imgBorder"]
+   ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
 
-  steps:  
-  - task: Gradle@2
-    inputs:
-      gradleWrapperFile: 'gradlew'
-      testResultsFiles: '**/TEST-*.xml'
-      tasks: 'build'
-  ```
+1. For the second step, choose to **Authorize with OAuth** by selecting **Authorize**. You might be redirected to GitHub to sign in. Enter your GitHub credentials.
 
-  The next time you push a change to this YAML file, VSTS automatically builds your code.
+1. When you're redirected back to Azure Pipelines, select the **sample app** repository.
 
-1. Choose **Edit** to make a change to the YAML file.
+1. For the third step, Azure Pipelines analyzes the code in your repository. If your repository already contains an `azure-pipelines.yml` file, which is the case for all sample repositories, then this step is skipped. Or else, Azure Pipelines recommends a starter template based on the code in your repository.
 
-1. Add the following comment:
+1. In the final step, you're shown the YAML file that will be used.
 
-  ```
-  # This repository is built using VSTS.
-  ```
+1. If you see the **Run**, button, then choose it and skip to the next step. If you see the **Save and run** button, then first select **Commit directly to the master branch**, and then choose **Save and run**.
 
-1. Commit the above change to the master branch.
+1. Wait for the build to finish.
 
-1. Navigate to the **Build and Release** hub.
+<a name="get-the-status-badge"></a>
+## Add a CI status badge to your repository
 
-1. Observe that there's a new build pipeline named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
+Many developers like to show that they're keeping their code quality high by displaying a CI build status badge in their repo.
 
-1. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+> [!div class="mx-imgBorder"]
+![Status badge shows Azure pipeline succeeded](_img/get-started-yaml/azure-pipelines-succeeded.png)
 
-# [GitHub repo](#tab/github)
+To copy the status badge to your clipboard:
 
-In VSTS:
+1. In Azure Pipelines, go to the Build page to view the list of pipelines.
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New Build Pipeline**.
+1. Select the pipeline that was created for you.
 
-1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service connection.
+1. In the context menu for the pipeline, select **Status badge**.
 
-1. You are then asked to select a template for the pipeline. Select **YAML**, and then select **Apply**.
+   > [!div class="mx-imgBorder"]
+   ![Status badge](_img/get-started-yaml/status-badge.png)
 
-1. Select **Process**.
+1. Copy the sample Markdown from the status badge panel.
 
-1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your application.
+Now with the status badge in your clipboard, take the following steps in GitHub:
 
-1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
+1. Inspect the `azure-pipelines.yml` file at the root of your repository. The YAML file contains the instructions for the pipeline. The next time you change any file in this repository, Azure Pipelines will automatically build your code.
 
-In GitHub:
+1. Go back to the list of files and select the `Readme.md` file. Then choose **Edit**.
 
-1. Inspect the `.vsts-ci.yml` file at the root of your forked repository. The YAML file contains the instructions for the build process. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
+1. Paste the status badge Markdown that you copied in the previous section at the beginning of the `Readme.md` file.
 
-  ```yaml
-  queue: 'Hosted VS2017'
+1. Commit the change to the master branch.
 
-  steps:  
-  - task: Gradle@2
-    inputs:
-      gradleWrapperFile: 'gradlew'
-      testResultsFiles: '**/TEST-*.xml'
-      tasks: 'build'
-  ```
+1. Notice that the status badge appears in the description of your repository.
 
-  The next time you change any file in this repository, VSTS Pipelines will automatically build your code.
-
-1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
-
-1. Add the following comment:
-
-  ```
-  # This repository is built using VSTS.
-  ```
-
-1. Commit the above change to the master branch.
-
-Back in VSTS:
-
-1. Observe that a new build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
-
-1. In the left column of the running build, select **Job**. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
-
-[//]: # (TODO: Add link to GitHub tutorial after advice is added there on authentication)
-
----
-
-## View the build summary
-
-[!INCLUDE [include](apps/_shared/view-build-summary.md)]
+Back in Azure Pipelines, observe that a new build is queued. Its status might be either not started or running.
 
 ## Next steps
 
-You've just learned the basics of using YAML to create and run a VSTS build process.
-This pipeline automatically builds and validates whatever code is checked in by your team.
-Now you're ready to configure your CI pipeline for the [programming language you're using](index.md).
+You've just learned the basics of using Azure Pipelines. Now you're ready to further configure your pipeline to run tests, publish test results, create container images, or even deploy the app to a cloud service. Follow a track for the language of your choice:
+
+* [.NET Core](languages/dotnet-core.md)
+* [Docker](languages/docker.md)
+* [Go](languages/go.md)
+* [Java](languages/java.md)
+* [Node.js](languages/javascript.md)
+* [Python](languages/python.md)
+
+To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
+
+To run your pipeline in a container, see [Container jobs](process/container-phases.md).
+
+For details about building GitHub repositories, see [Build GitHub repositories](repos/github.md).
+
+To learn what else you can do in YAML pipelines, see [YAML schema reference](yaml-schema.md).

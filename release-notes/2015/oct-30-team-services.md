@@ -2,7 +2,7 @@
 title: Dashboards, improved pull requests, test results and more – Oct 30
 description: VSTS release notes for October 30 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 961ad637-4194-4b9c-8042-0d4537a71b43
 ms.date: 06/01/2016
@@ -22,7 +22,7 @@ I’m excited to announce that we have released our [dashboards feature](http://
 - **Customizable dashboards.** The existing project home pages are now a completely customizable experience, giving you full control of all the data on your screen. As a team admin, you can rearrange, remove, or add the widgets that you want and use. A new widget catalog is accessible to team admins through the large green plus (+) button at the lower right side of the dashboard.
 - **New dashboard widgets.** All the pieces of data that used to be available on the previous Team Overview page are now available through the widget catalog. You can still add multiple charts to the dashboard through the Work, Test, and Build hubs. In addition, we’ve brought new widgets into the catalog: a conditional query tile (that allows you to set red or green if the number of work items crosses a threshold); a code tile (recent commits in the last seven days); a query results widget (allows you to see all work items from a query); and a markdown widget (enables custom text, images, and links).
 
-We are continuing to invest in additional widgets that pull data from all parts of the production: Work, Code, Build, Test, and Release. Widgets are written as [extensions](https://visualstudio.microsoft.com/integrate/extensions/overview), allowing you to write and share your own widgets. As we continue to roll in this space, we’d love to hear what kinds of widgets you’d like to see us invest in. If you’ve got feedback here, please reach out to us at [dashboard-feedback@microsoft.com](mailto:dashboard-feedback@microsoft.com) and continue to help us build an incredible product.
+We are continuing to invest in additional widgets that pull data from all parts of the production: Work, Code, Build, Test, and Release. Widgets are written as [extensions](/azure/devops/integrate/), allowing you to write and share your own widgets. As we continue to roll in this space, we’d love to hear what kinds of widgets you’d like to see us invest in. If you’ve got feedback here, please reach out to us at [dashboard-feedback@microsoft.com](mailto:dashboard-feedback@microsoft.com) and continue to help us build an incredible product.
 
 ##Improved pull request experience
 
@@ -54,7 +54,7 @@ We’ve introduced the ability to reorder and re-parent tasks within a checklist
 
 ##Extensibility on the work item form
 
-For those of you eager to get started writing [extensions](https://visualstudio.microsoft.com/integrate/extensions/overview), the ability to extend both the existing and the new work item form is now available! The open extensibility points include:
+For those of you eager to get started writing [extensions](/azure/devops/integrate/), the ability to extend both the existing and the new work item form is now available! The open extensibility points include:
 
 - New page contributions shown as an additional page on the work item form
 - New group contributions will be added as a group in the form

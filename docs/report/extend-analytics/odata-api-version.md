@@ -1,7 +1,7 @@
 ---
 title: OData API versioning
-titleSuffix: VSTS 
-description: How the Analytics service for Visual Studio Team Services manages changes to the OData API  
+titleSuffix: Azure DevOps Services 
+description: How the Analytics service for Azure DevOps manages changes to the OData API  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
@@ -9,22 +9,36 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 11/13/2017
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/1/2018
 ---
 
 # OData API versioning
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service for Visual Studio Team Services (VSTS) provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
+As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
 
+::: moniker range="vsts"
+
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
 ```
+
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -103,10 +117,10 @@ Once a preview version matures enough for release it will be made available with
 ### 3 - Deprecated
 Deprecated versions are no longer supported, and requests made to them will not be fulfilled. If you attempt to request a deprecated or unsupported version you will receive an HTTP 410 response code and a message like:
 
-
+<!--- This FWLINK points back to the topic 
 > *The {version} OData endpoint for Analytics is not supported. Information on the latest recommended version is available here: https://go.microsoft.com/fwlink/?linkid=856818*
 
-
+-->
 
 ## Preview versions
 None

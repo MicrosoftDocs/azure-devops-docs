@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Jan 21
 description: VSTS release notes for January 21 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: d5e11b3d-9e8d-4964-ba4e-821ff1a00a49
 ms.date: 06/01/2016
@@ -20,7 +20,7 @@ Just one small update for everyone in this sprint. In our continued effort to im
 
 That’s it for this sprint.
 
-As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

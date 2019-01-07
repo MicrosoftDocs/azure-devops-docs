@@ -1,6 +1,7 @@
 ---
 title: Android signing build and release task
-description: Android signing build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Android signing build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: Android signing
+# Android signing task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/android-signing.png) Sign and align Android APK files
+Use this task in a build or release pipeline to sign and align Android APK files.
 
 ## Demands
 

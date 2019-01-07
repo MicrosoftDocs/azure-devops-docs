@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot tracing permissions
-description: Learn how to trace permissions if you are having permissions issues with VSTS
+description: Learn how to trace permissions if you are having permissions issues with Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Troubleshoot tracing permissions
 
-**VSTS**
+**Azure DevOps**
 
 ### Q: Why doesn't a user have access to something?
 
@@ -37,16 +37,16 @@ If one of your users is having permissions issues and you make use of default se
 
 A 2: Their permissions haven't propagated yet
 
-It can take from 1 hour to 24 hours for Azure AD group memberships or permissions changes to propagate throughout VSTS. If a user is having issues that do not seem to clear up immediately, please wait a day to see if they resolve.
+It can take from 1 hour to 24 hours for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user is having issues that do not seem to clear up immediately, please wait a day to see if they resolve.
 
 A 3: The user does not have the necessary access level
 
 Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following topics:
 
-* For VSTS: [Manage users and access in VSTS](../accounts/add-organization-users-from-user-hub.md) 
-* For on-premises TFS: [Change access levels](https://docs.microsoft.com/vsts/organizations/security/change-access-levels?view=vsts)
+* For Azure DevOps: [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
+* For on-premises TFS: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=vsts)
 
 ## Related articles
 
-* [Grant or restrict access to select features and functions](https://docs.microsoft.com/vsts/organizations/security/restrict-access?view=vsts)
-* [Change individual permissions](https://docs.microsoft.com/vsts/organizations/security/change-individual-permissions?view=vsts)
+* [Grant or restrict access to select features and functions](/azure/devops/organizations/security/restrict-access?view=vsts)
+* [Change individual permissions](/azure/devops/organizations/security/change-individual-permissions?view=vsts)

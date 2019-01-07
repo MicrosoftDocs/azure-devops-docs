@@ -1,7 +1,7 @@
 ---
 title: Analytics Service
-titleSuffix: VSTS
-description: Index to topics for using the Analytics Service on Visual Studio Team Services
+titleSuffix: Azure DevOps
+description: Index to topics for using the Analytics Service on Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: pantal
@@ -9,17 +9,17 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
-ms.date: 3/29/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018
 ---
 
-# Analytics (VSTS) 
+# Analytics 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-Analytics provides advanced widgets you can add to a dashboard, Power BI integration for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Visual Studio Team Services (VSTS). 
+Analytics provides [advanced widgets](analytics-widgets.md) you can add to a dashboard, [Power BI integration](../powerbi/index.md) for more advanced reporting, and [OData access](../extend-analytics/index.md) for extensibility. Analytics is the reporting solution for Azure DevOps. 
 
-For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md).
+For more information, read [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](./reporting-roadmap.md).
 
 <!---
 [!INCLUDE [temp](../_shared/analytics-preview.md)] 
@@ -30,21 +30,30 @@ For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/
  - [Add an Analytics widget to a dashboard](enable-analytics-velocity.md)
 
 ## Videos
-| | |
-| --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Build/2018/THR2020/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe> |
-| | |
+
+<div style="float:left">
+   <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe>
+</div>
+<div style="float:left;width:40px;margin:40px">
+</div>
+<div style="float:left">
+   <iframe src="https://www.youtube.com/embed/VXdgjRdtBQI" width="560" height="314"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen frameBorder="0"></iframe>
+</div>
+
+<div style="clear:left">
+</div>
+
 
 ## Step-by-Step Tutorials
-- [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Configure a Lead Time or Cycle Time widget](../guidance/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Configure a Cumulative Flow chart](../guidance/cumulative-flow.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
+- [Configure a Lead Time or Cycle Time widget](../guidance/cycle-time-and-lead-time.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
+- [Configure or view Velocity chart](../guidance/team-velocity.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
 - [Create an Analytics view](analytics-views-create.md)
 - [Manage Analytics views](analytics-views-manage.md)
 
 ## Concepts
 - [Data available in the Analytics Service](data-available-in-analytics.md)
-- [Analytics widgets](analytics-widgets-vsts.md)
+- [Analytics widgets](analytics-widgets.md)
 - [What are Analytics views](what-are-analytics-views.md)
 - [Default Analytics views](analytics-default-views.md)
 - [Performance and latency](performance-latency.md)
@@ -58,8 +67,8 @@ For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/
 - [Resolve errors associated with an Analytics view](troubleshooting-views.md)
 
 ## Reference 
-- [Analytics OData v4 endpoint](../extend-analytics/data-model-analytics-service.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [API versioning](../extend-analytics/odata-api-version.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Analytics OData v4 endpoint](../extend-analytics/data-model-analytics-service.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
+- [API versioning](../extend-analytics/odata-api-version.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
 
 <!---
 Future:
@@ -68,12 +77,12 @@ Understanding Analytics Service data Acquisition
 -->
 
 ## Resources
-- [Dashboards](../dashboards/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Connect to VSTS using Power BI](../powerbi/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Connect to VSTS using Excel](access-analytics-excel.md)
-- [Power BI (VSTS)](../powerbi/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Extend Analytics with OData](../extend-analytics/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Dashboards](../dashboards/index.md)
+- [Connect to Azure DevOps using Power BI](../powerbi/index.md)
+- [Connect to Azure DevOps using Excel](access-analytics-excel.md)
+- [Power BI integration](../powerbi/index.md)
+- [Extend Analytics with OData](../extend-analytics/index.md)
+
 
 
 <!---

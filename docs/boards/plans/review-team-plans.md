@@ -1,7 +1,7 @@
 ---
 title: Review team delivery plans 
-titleSuffix: VSTS & TFS
-description: Add & use plans to review scheduled multi-team deliverables in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure Boards
+description: Add & use plans to review scheduled multi-team deliverables in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
@@ -10,13 +10,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 08/06/2018
+ms.date: 11/19/2018
 ---
+
 
 
 # Review team Delivery Plans 
 
-<b>VSTS | TFS 2018 | TFS 2017.2</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
@@ -27,7 +28,7 @@ Delivery plans is also interactive. You can change the assigned sprint of a work
 
 Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
 
-In this topic you'll learn:
+In this article you'll learn:
 
 >[!div class="checklist"]   
 > - How to review a plan with your teams
@@ -39,20 +40,21 @@ In this topic you'll learn:
 
 
 ## Prerequisites
-In order to add and configure a plan, you must have the following in place:  
-- [Installed the Plans extension](#install-plans)  
-- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
-- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project  
-- [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
-- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
-
-All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../organizations/security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
+- In order to add and configure a Delivery Plan, you must have the following in place:  
+	- [Installed the Delivery Plans extension](#install-plans).  
+	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md). Users granted **Stakeholder** access for a public project can add and view plans.
+	- [Configured teams](../../organizations/settings/add-teams.md)
+	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+	- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
 
 
 <a id="install-plans">  </a>
-### Install the Plans page extension 
+### Install the Delivery Plans extension 
 
-The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans). To provide feedback, visit our [Uservoice page](https://visualstudio.uservoice.com/forums/330519-team-services).
+The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), Azure DevOps tab. 
 
 ::: moniker range="tfs-2017" 
 Installation of Delivery Plans requires TFS 2017.2 or later version.
@@ -67,9 +69,9 @@ Regular reviews of the project schedule with these teams help ensure that the te
 Some questions you might address during the review: 
 - *How confident are the teams in meeting the deliverables scheduled for each sprint?* 
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
-- *Are their gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
+- *Are there gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
 
-For example, we use Delivery Plans internally to share the schedule of Features that we add to VSTS. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
+For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
@@ -78,13 +80,13 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 Once you have [installed Delivery Plans](#install-plans), the **Plans** appears under **Work**.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-7.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
-0. Open **Work>Plans**. 
+0. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, new nav](_img/plans/open-plans-vert.png) 
@@ -100,15 +102,17 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2017 <= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Open **Work>Plans**. 
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+
+0. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, previous nav](_img/plans/open-plans-horz.png) 
@@ -119,7 +123,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 	::: moniker-end  
-	::: moniker range=">= tfs-2017  <= tfs-2018"  
+	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Add a plan](_img/review-team-plans-no-plans-defined.png)  
 	::: moniker-end  
 
@@ -129,6 +133,12 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 
 ---
 
@@ -144,13 +154,13 @@ When defining a plan, note the following:
 
 Once you've defined a plan, you can further customize it. 
 
-1. Choose the ![](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
+1. Choose the ![ ](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
 	- Edit the teams you've selected and their backlog level  
 	- Set field criteria to further limit the work items that will appear on the plan 
 	- Add markers to show important upcoming events on your timeline 
-	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or task board](../../boards/boards/customize-cards.md).  
+	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
 
 	Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
@@ -237,13 +247,13 @@ For additional resources for working with multiple teams, see these additional t
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  
-- [Configure team settings](../../organizations/settings/configure-team-settings.md)  
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
 - [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
 
 
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
-You can manage plans using the [REST API, Plans](https://docs.microsoft.com/rest/api/vsts/work/plans).
+You can manage plans using the [REST API, Plans](/rest/api/vsts/work/plans).
 
 
  

@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestFailuresAnalysis API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestFailuresAnalysis API | Extensions for Azure DevOps Services
 ms.assetid: a071376d-6809-f9dd-14be-d3a917d13835
 ms.prod: devops
 ms.technology: devops-ecosystem

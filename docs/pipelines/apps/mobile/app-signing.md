@@ -1,6 +1,7 @@
 ---
-title: Sign Your Mobile App During CI | VSTS or Team Foundation Server
-description: How to sign your mobile app during CI with VSTS or Team Foundation Server
+title: Sign Your Mobile App During CI
+ms.custom: seodec18
+description: How to sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 # Sign your mobile app
 
-**VSTS | TFS 2018 | [TFS 2017.2](secure-certs.md)**
+**Azure Pipelines | TFS 2018 | [TFS 2017.2](secure-certs.md)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -23,7 +24,7 @@ monikerRange: '>= tfs-2018'
 
 When developing an app for Android or Apple operating systems, you will eventually need to manage signing certificates, and in the case of Apple apps, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article describes how to securely manage them for signing and provisioning your app.
 
-> **Tip**: Use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. See [Build and Release Agents](../../agents/agents.md).
+> **Tip**: Use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. See [Build and release agents](../../agents/agents.md).
 
 This article covers:
 - [Sign your Android app](#android)

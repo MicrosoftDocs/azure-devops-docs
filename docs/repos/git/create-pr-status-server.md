@@ -1,5 +1,6 @@
 ---
 title: Create a pull request status server with Node.js
+titleSuffix: Azure Repos
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
@@ -8,19 +9,19 @@ ms.manager: douge
 ms.author: mmitrik
 author: mmitrik
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
 ---
 
 
 # Create a pull request status server with Node.js
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
-* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+* An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
 * Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
@@ -40,7 +41,7 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
 
     ```
     npm init
-    ````
+    ```
 
     Press Enter to accept the defaults for all of the options except the entry point. Change it to `app.js` 
 
@@ -86,7 +87,7 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
   Verify the server is running by browsing to `http://localhost:3000/`.
 
 ## Listen for HTTP POST requests
-The web server is going to receive `POST` requests from VSTS, so you need to handle those requests in your server.
+The web server is going to receive `POST` requests from Azure DevOps Services, so you need to handle those requests in your server.
 
 1. At the end of the `app.js` file, add the following code, and save the file.
 
@@ -103,7 +104,7 @@ The web server is going to receive `POST` requests from VSTS, so you need to han
     ```
 
 ## Configure a service hook for PR events
-Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
+Service hooks are an Azure DevOps Services feature that can alert external services when certain events occur. For this sample, you'll want to set up two service hooks for PR events, so the status server can be notified. The first will be for the **Pull request created** event and the second will be for the **Pull request updated** event.
 
 In order to receive the service hook notifications, you'll need to expose a port to the public internet. The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 
@@ -121,7 +122,7 @@ In order to receive the service hook notifications, you'll need to expose a port
     http://c3c1bffa.ngrok.io
     ```
 
-3. Browse to your VSTS project, e.g. `https://<your account>.visualstudio.com/<your project name>`
+3. Browse to your project in Azure DevOps, e.g. `https://dev.azure.com/<your account>/<your project name>`
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -162,8 +163,13 @@ In order to receive the service hook notifications, you'll need to expose a port
 
 9. Close the Test Notification window, and select **Finish** to create the service hook.  
 
+Go through steps 3-9 again but this time configure the **Pull request updated** event.
+
+>[!IMPORTANT]
+> Be sure to go through the preceding steps twice and create service hooks for both the **Pull request created** and **Pull request updated** events.
+
 ## Post status to PRs
-Now that your server can receive service hook events when new PRs are created,update it to post back status to the PR.
+Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR.
 
 1. Service hook requests include a JSON payload describing the event. To help parse the JSON returned by the service hook, install the [body-parser](https://www.npmjs.com/package/body-parser) package.
 
@@ -173,22 +179,22 @@ Now that your server can receive service hook events when new PRs are created,up
 
 2. Update `app.js` to use body-parser for parsing `application/json`.
 
-    ```
+    ```js
     var bodyParser = require('body-parser')
 
     app.use(bodyParser.json());
     ```
 
-3. To simplify making REST API call to VSTS, install the [vso-node-api](https://www.npmjs.com/package/vso-node-api) package.
+3. To simplify making REST API calls to Azure Repos, install the [azure-devops-node-api](https://www.npmjs.com/package/azure-devops-node-api) package.
 
     ```
-    npm install vso-node-api 
+    npm install azure-devops-node-api 
     ```
 
-4. Update `app.js` to use the vso-node-api package, set up the details for a connection to your account, and get an instance of the Git API.
+4. Update `app.js` to use the azure-devops-node-api package, set up the details for a connection to your account, and get an instance of the Git API.
 
     ``` javascript
-    const vsts = require("vso-node-api");
+    const vsts = require("azure-devops-node-api");
 
     const collectionURL = process.env.COLLECTIONURL;    
     const token = process.env.TOKEN;
@@ -196,13 +202,13 @@ Now that your server can receive service hook events when new PRs are created,up
     var authHandler = vsts.getPersonalAccessTokenHandler(token);
     var connection = new vsts.WebApi(collectionURL, authHandler);
 
-    var vstsGit = connection.getGitApi();
+    var vstsGit = connection.getGitApi().then( success => { console.log(success); }, error => { console.log(error); } );
     ```
 
-5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your VSTS account.
+5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
 
     ```
-    setx COLLECTIONURL "https://<your account>.visualstudio.com/DefaultCollection"
+    setx COLLECTIONURL "https://dev.azure.com/<your account>"
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
@@ -224,7 +230,7 @@ Now that your server can receive service hook events when new PRs are created,up
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/pull-requests/pullrequeststatuses#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+  `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 

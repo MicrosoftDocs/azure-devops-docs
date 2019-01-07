@@ -9,7 +9,8 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/15/2017
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 # Grant permissions to view or create SQL Server reports in TFS
@@ -24,7 +25,7 @@ This is the third task in the four-task sequence to add reports to your team pro
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 >[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS. If you're using VSTS, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
 
 
 Now that you've uploaded reports, you'll want to enable members of your team to view or manage them. Also, to create or modify reports, you'll need to grant them access to read databases. 

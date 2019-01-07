@@ -1,7 +1,7 @@
 ---
-title: Configure initial groups, teams, members, and permissions
-titleSuffix: VSTS & TFS
-description: Configure the initial security settings for a project using the plug-in file for Groups and Permissions in Team Foundation Server  
+title: Configure initial security settings 
+titleSuffix: Azure DevOps & TFS
+description: Configure the initial security settings for a project using the plug-in file
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
@@ -44,7 +44,7 @@ The following table describes the attributes for the **group**, **member**, and 
 |**group**|**name**|Specifies the name of the group that you are creating.|  
 ||**isTeam**|Indicates if the group is a team (**true**) or not (`false`).|  
 ||**description**|Describes the purpose of the group to other users.|  
-|**member**|**name**|Specifies the name of a group that you are adding as a member of another group. You can create groups and pre-populate them with any of the following types of members:<br /><br /> <ul><li>Default groups that are defined in Team Foundation Server</li><li>Project groups that have been previously created in the groupsandpermissions.xml file (for example, [$$PROJECTNAME$$]\Contributors)</li><li>Groups and users who are defined in Active Directory, which you specify by using the following format:<br /><br /> <ul><li>DOMAIN\USERNAME</li><li>DOMAIN\GROUPNAME</li></ul></li></ul><br /> For information about the format to use when you specify default groups, see [Group macros and default groups](#group-macros) later in this topic.<br /><br /> The **permissions** container element must precede the **members** container element.|  
+|**member**|**name**|Specifies the name of a group that you are adding as a member of another group. You can create groups and pre-populate them with any of the following types of members:<br /><br /> <ul><li>Default groups that are defined in Team Foundation Server</li><li>Project groups that have been previously created in the GroupsandPermissions.xml file (for example, [$$PROJECTNAME$$]\Contributors)</li><li>Groups and users who are defined in Active Directory, which you specify by using the following format:<br /><br /> <ul><li>DOMAIN\USERNAME</li><li>DOMAIN\GROUPNAME</li></ul></li></ul><br /> For information about the format to use when you specify default groups, see [Group macros and default groups](#group-macros) later in this topic.<br /><br /> The **permissions** container element must precede the **members** container element.|  
 |**permission**|**name**|Identifies which permission is being applied. For a list of the supported permissions, see the following sections later in this topic:<br /><br /> -   [Assign collection-level permissions](#CollectionLevel)<br />-   [Assign project-level permissions](#Project)<br />-   [Assign permissions to control area paths](#AreaPaths)<br />-   [Assign permissions to control iteration paths](#IterationPaths)<br /><br /> The **permissions** container element must precede the **members** container element.|  
 ||**class**|Identifies the class, or area, where the group permission is granted. The following values are valid:<br /><br /> -   **NAMESPACE**: Specifies collection-level permissions.<br />-   **PROJECT**: Specifies project-level permissions.<br />-   **CSS_NODE**: Specifies permissions for viewing and managing area paths for a project.<br />-   **ITERATION_NODE**: Specifies permissions for viewing and managing iteration paths for a project.<br />-|  
 ||**allow**|Uses a **true** or **false** value to indicate whether the permission is allowed or denied.|  
@@ -272,7 +272,7 @@ The following table describes the permissions that you can assign to control acc
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
 - [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)   
-- [Permission reference](/vsts/repos/tfvc/permission-command)
+- [Permission reference](/azure/devops/repos/tfvc/permission-command)
 - [Change groups and permissions with TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
 - [tf permission Command](../../repos/tfvc/permission-command.md).  
   

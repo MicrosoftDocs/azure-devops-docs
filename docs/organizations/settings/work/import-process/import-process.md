@@ -1,7 +1,7 @@
 ---
 title: Import a process
-titleSuffix: VSTS     
-description: Add or update a process by importing a process to support customization of tracking work in Visual Studio Team Services (VSTS).
+titleSuffix: Azure DevOps Services     
+description: Add or update a process by importing a process to support customization of tracking work in Azure DevOps Services.
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
@@ -14,16 +14,16 @@ ms.date: 03/20/2018
 
 # Process and projects    
 
-<b>VSTS (Hosted XML)</b>   
+**Azure DevOps Services (Hosted XML)**
 
 > [!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 >
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
+> If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
->To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
+> To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
 
-In VSTS, you manage customization of work tracking objects through a process.
+In Azure DevOps Services, you manage customization of work tracking objects through a process.
 Processes are imported and exported through a web based administration experience. 
 
 When you import a new process, you're able to create new projects using it.  
@@ -44,10 +44,10 @@ Import process supports the following scenarios:
 <a id="import-from-TFS">  </a>
 ## Import a process from an on-premises TFS 
 
-These steps can be followed if you want to test your process in TFS to see if it works in VSTS.
+These steps can be followed if you want to test your process in TFS to see if it works in Azure DevOps Services.
 
 In Team Foundation Server, each project has its own copy of process so careful consideration needs to be made as to which processes should exist for your organization.
-Migration to VSTS is a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
+Migration to Azure DevOps Services is a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
  
 1.  Run the [process export script](customize-process.md#open-process-wit) to generate a process for a given project.   
 
@@ -57,16 +57,14 @@ Migration to VSTS is a great time to think about process alignment across your o
 
 4.  [Import the zip file of your custom process by following the steps in the next section](#import-process).  
 
-5.  Repeat the above process for each process you want to import to VSTS.
+5.  Repeat the above process for each process you want to import to Azure DevOps Services.
 
-6.  Using the imported process(es), create projects on VSTS for each you want to migrate. 
+6.  Using the imported process(es), create projects on Azure DevOps Services for each you want to migrate. 
 
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
-
-
+[!INCLUDE [temp](../../_shared/open-process-admin-context-ts-only.md)]
 
 <a id="import-process">  </a>
 ## Import a process
@@ -79,7 +77,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 2.  From the Process tab, choose import and then browse to the zip file of the process you've customized.  
   
     > [!NOTE]    
-    >If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
+    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
 
     <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />
 
@@ -90,7 +88,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 	> [!IMPORTANT]  
 	>You can't update one of the locked processes: Agile, CMMI, and Scrum.  
 
-3.  Upon successful import, you'll see the following messsage.  
+3.  Upon successful import, you'll see the following message.  
 
     <img src="_img/ALM_IP_AddNewProcessSuccess.png" alt="Import process dialog, Process file successfully imported" style="border: 2px solid #C3C3C3;" />
 
@@ -119,7 +117,7 @@ Once you've added a process, you can update it by importing a zip file where you
 
     <img src="_img/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" />
 
-4.  Upon successful import, you'll see the following messsage. All projects that were created with the process are updated with the modifications. 
+4.  Upon successful import, you'll see the following message. All projects that were created with the process are updated with the modifications. 
 
     <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and projects updated" style="border: 2px solid #C3C3C3;" />
 

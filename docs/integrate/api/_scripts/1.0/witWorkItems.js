@@ -48,7 +48,7 @@ exports.getContext = function() {
         queryId: null,
         rootAreaId: null,
         ids: null,
-        columns: "System.Id,System.Title,System.WorkItemType,Microsoft.VSTS.Scheduling.RemainingWork",
+        columns: "System.Id,System.Title,System.WorkItemType,Microsoft.Azure DevOps Services.Scheduling.RemainingWork",
         asof: null,
     };
 };
@@ -83,7 +83,7 @@ exports.submitRequests = function() {
                     },
                     {
                         "op": "add",
-                        "path": "/fields/Microsoft.VSTS.Scheduling.Effort",
+                        "path": "/fields/Microsoft.Azure DevOps Services.Scheduling.Effort",
                         "value": 8
                     },
                     {
@@ -153,7 +153,7 @@ exports.submitRequests = function() {
                     },
                     {
                         "op": "add",
-                        "path": "/fields/Microsoft.VSTS.Scheduling.RemainingWork",
+                        "path": "/fields/Microsoft.Azure DevOps Services.Scheduling.RemainingWork",
                         "value": 4
                     },
                     {
@@ -207,7 +207,7 @@ exports.submitRequests = function() {
                     },
                     {
                         "op": "add",
-                        "path": "/fields/Microsoft.VSTS.Scheduling.RemainingWork",
+                        "path": "/fields/Microsoft.Azure DevOps Services.Scheduling.RemainingWork",
                         "value": 3
                     },
                     {
@@ -523,7 +523,7 @@ exports.submitRequests = function() {
     apiwriter.postJson('/wit/wiql',
         function (context, result) {
             return {
-                "query": "Select [System.WorkItemType],[System.Title],[System.State],[Microsoft.VSTS.Scheduling.Effort],[System.IterationPath] FROM WorkItemLinks WHERE Source.[System.WorkItemType] IN GROUP 'Microsoft.RequirementCategory' AND Target.[System.WorkItemType] IN GROUP 'Microsoft.RequirementCategory' AND Target.[System.State] IN ('New','Approved','Committed') AND [System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward' ORDER BY [Microsoft.VSTS.Common.BacklogPriority] ASC,[System.Id] ASC MODE (Recursive, ReturnMatchingChildren)"
+                "query": "Select [System.WorkItemType],[System.Title],[System.State],[Microsoft.Azure DevOps Services.Scheduling.Effort],[System.IterationPath] FROM WorkItemLinks WHERE Source.[System.WorkItemType] IN GROUP 'Microsoft.RequirementCategory' AND Target.[System.WorkItemType] IN GROUP 'Microsoft.RequirementCategory' AND Target.[System.State] IN ('New','Approved','Committed') AND [System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward' ORDER BY [Microsoft.Azure DevOps Services.Common.BacklogPriority] ASC,[System.Id] ASC MODE (Recursive, ReturnMatchingChildren)"
             }
         }
     );
@@ -532,7 +532,7 @@ exports.submitRequests = function() {
     apiwriter.postJsonEx('/wit/wiql',
         function (context, result) {
             return {
-                "query": "Select [System.Id], [System.Title], [System.State] From WorkItems Where [System.WorkItemType] = 'Task' AND [State] <> 'Closed' AND [State] <> 'Removed' order by [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc"
+                "query": "Select [System.Id], [System.Title], [System.State] From WorkItems Where [System.WorkItemType] = 'Task' AND [State] <> 'Closed' AND [State] <> 'Removed' order by [Microsoft.Azure DevOps Services.Common.Priority] asc, [System.CreatedDate] desc"
             }
         },
         collectionScopeUrl,

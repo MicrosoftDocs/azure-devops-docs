@@ -1,7 +1,8 @@
 ---
 title: Kanban best practices
-titleSuffix: VSTS & TFS
-description: Best practices when implementing Kanban in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+titleSuffix: Azure Boards
+description: Best practices when implementing Kanban in Azure Boards and Team Foundation Server (TFS)  
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
@@ -9,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/20/2017
---- 
+ms.date: 11/19/2018
+---
 
 # Kanban best practices
 
@@ -61,7 +62,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 * **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenant underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
 
- 
+<a id="dod" />
 ## Your team, working software and the Definition of Done  
 
 One of the [12 principles of Agile software development](http://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."
@@ -149,8 +150,8 @@ The Definition of Done, on the other hand, is about delivering an incremental pi
 
 ## Additional resources
 - [DoD Goes Agile](https://www.scruminc.com/dod-goes-agile/) 
-- [Walking Through/azure/devops/agile/agile-cultureurces/blog/walking-through-definition-done)
-- [Agile Culture](/azure/devops/agile/agile-culture)
+- [Walking Through a Definition of Done](https://www.scrum.org/resources/blog/walking-through-definition-done)
+- [Agile Culture](/azure/devops/learn/agile/agile-culture)
 - [What is Kanban?](http://kanbanblog.com/explained/) 
 - [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](http://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)
 - [Agile Project Management with Kanban by Eric Brechner](http://www.amazon.com/Project-Management-Kanban-Developer-Practices/dp/0735698953/)

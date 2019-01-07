@@ -1,41 +1,43 @@
-- name: "Organization Management"
+- name: "Manage organizations"
   href: index.md
 - name: Overview
   items:
-  - name: About organization management
+  - name: About managing organizations
     href: organization-management.md
   - name: Access with Azure AD
     href: access-with-azure-ad.md
 - name: Quickstarts
   items:
-  - name: Create your VSTS organization
-    href: create-organization-msa-or-work-student.md
+  - name: Create your organization
+    href: create-organization.md
   - name: Try extensions for free
-    href: ../billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Set permissions
-    href: ../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json 
+    href: ../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json 
   - name: Add a team admin
-    href: ../settings/add-team-administrator.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../settings/add-team-administrator.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Connect VSTS to Azure AD
+  - name: Connect to Azure AD
     href: connect-organization-to-aad.md
   - name: Change individual permissions 
-    href: ../../organizations/security/change-individual-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../../organizations/security/change-individual-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Grant or restrict permissions
-    href: ../../organizations/security/restrict-access.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../../organizations/security/restrict-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Add subscription user to organization
+  - name: Plan your org structure
+    href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+  - name: Add a subscription user
     href: add-basic-or-vs-subscription-users.md
-  - name: Resources granted to project members
+  - name: Project member resources
     href: resources-granted-to-project-members.md
   - name: Glossary
-    href: ../../organizations/security/security-glossary.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../../organizations/security/security-glossary.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Set your preferences
-    href: ../settings/set-your-preferences.md
+    href: ../settings/set-your-preferences.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Manage your organization
     items:
     - name: Change organization owner
@@ -43,51 +45,53 @@
     - name: Rename organization
       href: rename-vsts-organization.md
     - name: Delete organization
-      href: delete-your-vsts-organization.md
+      href: delete-your-organization.md
     - name: Recover organization
       href: recover-your-vsts-organization.md
-    - name: Sign in with different credentials
-      href: ../../organizations/projects/connect-to-projects.md#logindifferentcred
-    - name: Change organization location (region)
+    - name: Use different credentials
+      href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+    - name: Change organization location
       href: change-organization-location.md
-  - name: Manage access to your organization
+    - name: Add privacy URL
+      href: add-privacy-url.md
+  - name: Manage access
     items:
     - name: Add users to your organization
-      href: add-organization-users-from-user-hub.md
+      href: add-organization-users.md
     - name: Manage users
       href: manage-users-table-view.md
     - name: Manage conditional access
       href: manage-conditional-access.md
-    - name: Link work accounts to MSDN subscriptions
-      href: ../../billing/link-msdn-subscription-to-organizational-account-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
-    - name: Authenticate with personal access tokens
+    - name: Link to VS subscriptions
+      href: ../../billing/link-msdn-subscription-to-organizational-account-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+    - name: Authenticate with PATs
       href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies
-      href: change-application-access-policies-vs.md
+      href: change-application-access-policies.md
     - name: Delete users from organization
       href: delete-organization-users.md
     - name: Add external users
       href: add-external-user.md
     - name: Access with Azure AD
       items:
-      - name: Add Azure AD group to VSTS group
+      - name: Manage groups
         href: manage-azure-active-directory-groups-vsts.md
-      - name: Add VSTS users to Azure AD
-        href: add-users-to-aad.md
-      - name: Disconnect VSTS organization from Azure AD
+      - name: Add users to Azure AD
+        href: add-users-to-azure-ad.md
+      - name: Disconnect from Azure AD
         href: disconnect-organization-from-aad.md
-      - name: Delete VSTS users connected to Azure AD
+      - name: Delete users connected to Azure AD
         href: delete-users-from-services-aad.md 
   - name: Manage extensions
     items:
-    - name: Install extension for VSTS
-      href: ../../marketplace/install-vsts-extension.md
+    - name: Install extensions
+      href: ../../marketplace/install-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Assign paid extensions access
-      href: ../../marketplace/assign-paid-extensions.md
+      href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Approve requests for extensions
-      href: ../../marketplace/approve-vsts-extensions.md
+      href: ../../marketplace/approve-vsts-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../../marketplace/uninstall-disable-vsts-extensions.md
+      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Manage group-based licensing 
     items:
     - name: Assign access levels and extensions
@@ -113,7 +117,7 @@
   - name: Change organization ownership
     href: faq-change-organization-ownership.md
   - name: Delete and restore organization
-    href: faq-delete-restore-vsts-organization.md
+    href: faq-delete-restore-organization.md
   - name: Set up Visual Studio
     href: faq-set-up-vs.md
   - name: Manage group-based licensing
@@ -121,26 +125,26 @@
 - name: Reference
   items:
   - name: "Permissions and access (Security)"
-    href: ../../organizations/security/permissions-access.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: "Permission lookup guide (Security)"
-    href: ../../organizations/security/permissions-lookup-guide.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-lookup-guide.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: "Permissions and groups reference (Security)"
-    href: ../../organizations/security/permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
-  - name: VSTS data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
-  - name: Migrate from TFS to VSTS
-    href: ../../articles/migrate-to-vsts-from-tfs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../../organizations/security/permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+  - name: Azure DevOps data protection overview
+    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+  - name: Migrate from TFS to Azure DevOps
+    href: ../../articles/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: New User Guide
-    href: ../../user-guide/index.md
-  - name: Project Management
+  - name: Start using Azure DevOps
+    href: ../../user-guide/index.yml
+  - name: Manage projects
     href: ../projects/index.md
-  - name: "Security & Identity"
+  - name: "Security & identity"
     href: ../../organizations/security/index.md
   - name: Billing
     href: ../billing/index.md
-  - name: Manage Extensions
+  - name: Manage extensions
     href: ../../marketplace/index.md
   - name: Service hooks
     href: ../../service-hooks/index.md

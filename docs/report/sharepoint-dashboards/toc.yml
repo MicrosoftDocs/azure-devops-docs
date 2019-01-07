@@ -42,31 +42,31 @@
       href: ./configure-sharepoint-tfs-2017-earlier.md
       items:
       - name: Install on same server
-        href: /tfs/server/install/sharepoint/install-sharepoint?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /tfs/server/install/sharepoint/install-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
       - name: Install on different server
-        href: /tfs/server/install/sharepoint/setup-remote-sharepoint?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /tfs/server/install/sharepoint/setup-remote-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
       - name: Configure enterprise app definition
-        href: /tfs/server/install/sharepoint/config-enterprise-app-def?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /tfs/server/install/sharepoint/config-enterprise-app-def?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
       - name: Verify SharePoint
-        href: /tfs/server/install/sharepoint/verify-sharepoint?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+        href: /tfs/server/install/sharepoint/verify-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
       - name: Move SharePoint to new hardware
-        href: /tfs/server/install/sharepoint/move-sharepoint-new-hardware?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json
+        href: /tfs/server/install/sharepoint/move-sharepoint-new-hardware?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json
   - name: Set SharePoint permissions
-    href: ../../organizations/security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
+    href: ../../organizations/security/set-sharepoint-permissions.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json  
   - name: Manage SharePoint integration
     items:
     - name: Add SharePoint products to TFS
-      href: /tfs/server/admin/add-sharepoint-to-tfs?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+      href: /tfs/server/admin/add-sharepoint-to-tfs?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
     - name: Modify or remove access between SharePoint web app and TFS
-      href: /tfs/server/admin/modify-remove-access-shareport-tfs?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
+      href: /tfs/server/admin/modify-remove-access-shareport-tfs?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json  
     - name: Configure SharePoint Server 2010 or 2007 for dashboards
-      href: /tfs/server/admin/config-ent-sharepoint0710-dashboards?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
+      href: /tfs/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json  
   - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
     href: ./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md 
 - name: Troubleshooting
   items:
   - name: "Resolve conflicts & errors"
-    href: ../../boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json 
+    href: ../../boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: SharePoint dashboards 
@@ -149,10 +149,10 @@
   - name: Excel workbooks 
     items:
     - name: Issues and Triage workbooks
-      href: ../guidance/workbooks.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json
+      href: ../guidance/workbooks.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Microsoft Teams
     href: ../../service-hooks/services/teams.md
   - name: OneDrive for Business sync client
-    href: https://support.office.com/en-us/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49
+    href: https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49

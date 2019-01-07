@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts Change API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts Change API | Extensions for Azure DevOps Services
 description: Represents a change associated with a build.
 ms.assetid: ce66a017-4343-3e06-3d07-21f20bb6f36d
 ms.prod: devops

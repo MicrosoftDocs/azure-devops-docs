@@ -1,14 +1,14 @@
 ---
 title: View and filter project wiki pages 
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: View public project wikis 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -24,25 +24,24 @@ You can view public project wikis. If you're a contributor, you can also [add an
 [!INCLUDE [temp](_shared/anon-user.md)]   
 
 
-## Open the Wiki hub  
-
-Choose **Wiki**.  
-
+## Open Wiki   
 
 # [New navigation](#tab/new-nav)
 
+Choose **Overview>Wiki**.
 > [!div class="mx-imgBorder"]
 > ![Open the Wiki link, new navigation](_img/wiki/open-wiki-vert-brn.png) 
 
 
 # [Previous navigation](#tab/previous-nav)
 
+Choose **Wiki**.
 > [!div class="mx-imgBorder"]  
-> ![Open Wiki hub](/vsts/project/wiki/_img/wiki/wiki-connect-browser.png)
+> ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
  
-If you don't see the **Wiki** hub, your screen size may be reduced. Choose the ![](/vsts/_shared/_img/ellipses-reduced-screen-size.png) three dots (ellipses), and then choose **Wiki>Wiki**.
+If you don't see **Wiki**, your screen size may be reduced. Choose the ![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (ellipses), and then choose **Wiki>Wiki**.
 
-![Open wiki hub, reduced screen size](/vsts/project/wiki/_img/wiki/open-wiki-hub.png)
+![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
 
 
 ---

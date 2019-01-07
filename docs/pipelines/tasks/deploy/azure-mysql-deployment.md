@@ -1,19 +1,22 @@
 ---
-title: Azure Database for Mysql Deployment
-description: This is an early preview. Run your scripts and make changes to your Azure DB for Mysql?.
+title: Azure Database for Mysql Deployment task
+description: Run your scripts and make changes to your Azure DB for Mysql. 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BD1BED02-F04E-11E7-8C3F-9A214CF093AE
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
-# Deploy: Azure Database for Mysql Deployment
+# Azure Database for Mysql Deployment task
 
-![](_img/azuremysqldeployment.png) This is an early preview. Run your scripts and make changes to your Azure DB for Mysql?.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to run your scripts and make changes to your Azure DB for Mysql. Note that this is an early preview version.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -27,7 +30,7 @@ monikerRange: 'vsts'
 <tr><td>Host Name</td><td>(Required) Server name of 'Azure DB for Mysql'.Example: fabrikam.mysql.database.azure.com. When you connect using Mysql Workbench, this is the same value that is used for 'Hostname' in 'Parameters'</td></tr>
 <tr><td>Database Name</td><td>(Optional) The name of database, if you already have one, on which the below script is needed to be run, else the script itself can be used to create the database.</td></tr>
 <tr><td>Server Admin Login</td><td>(Required) Azure Database for MySQL server supports native MySQL authentication. You can connect and authenticate to a server with the server's admin login. Example:  bbo1@fabrikam. When you connect using Mysql Workbench, this is the same value that is used for 'Username' in 'Parameters'.</td></tr>
-<tr><td>Password</td><td>(Required) Administrator password for Azure DB for Mysql. In case you don't recall the password you can change the password from [Azure portal](https://docs.microsoft.com/azure/mysql/howto-create-manage-server-portal).<br>It can be variable defined in the pipeline. Example : $(password).<br>Also, you may mark the variable type as 'secret' to secure it.</td></tr>
+<tr><td>Password</td><td>(Required) Administrator password for Azure DB for Mysql. In case you don't recall the password you can change the password from [Azure portal](/azure/mysql/howto-create-manage-server-portal).<br>It can be variable defined in the pipeline. Example : $(password).<br>Also, you may mark the variable type as 'secret' to secure it.</td></tr>
 <tr><td>Type</td><td>(Optional) Select one of the options between Script File & Inline Script.</td></tr>
 <tr><td>MySQL Script</td><td>(Required) Full path of the script file on the automation agent or on a UNC path accessible to the automation agent like,  \\\\BudgetIT\DeployBuilds\script.sql. Also, predefined system variables like, $(agent.releaseDirectory) can also be used here. A file containing SQL statements can be used here.?</td></tr>
 <tr><td>Inline MySQL Script</td><td>(Required) Enter the MySQL script to execute on the Database selected above.</td></tr>
@@ -41,10 +44,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

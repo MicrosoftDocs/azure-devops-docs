@@ -1,7 +1,7 @@
 ---
 title: Practices that scale
-titleSuffix: VSTS & TFS
-description: Scaling Agile recommended practices for working in Visual Studio Team Services & Team Foundation Server    
+titleSuffix: Azure Boards
+description: Scaling Agile recommended practices for working in Azure Boards, Azure DevOps, & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
@@ -9,8 +9,10 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 08/02/2017
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
+
 
 #Scaling Agile - Practices that scale  
 
@@ -45,7 +47,7 @@ By adopting a shared cadence and set of periodic communications, you create a co
 Engaging customers throughout your product lifecycle is a primary Agile principle. Empower each team to interact directly with customers on the feature sets they own. 
 
 - **Continuous feedback**: Build in customer feedback loops. These can take many forms: 
-	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website similar to [Visual studio User Voice](https://visualstudio.uservoice.com/forums/330519-team-services). 
+	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website. 
 	- **Product feedback**: In-product feedback buttons are another way to solicit feedback about the product experience or specific features. 
 	- **Customer demos**: Regularly scheduled demos that solicit feedback from your customers can help shape next generation products and keep you on track to build applications your customers want to consume.  
 - **Early adopter programs**: Such programs should be developed with the idea that all teams may want to participate as some point. Early adopters gain access to early versions of working software which they then can provide feedback. Oftentimes, these programs work by turning select [feature flags](#feature-flags) on for an early adopter list. 
@@ -98,9 +100,8 @@ You improve organizational effectiveness by attending to the culture you want to
 
 ##Working software
 
-><p align="center" style="font-size: 13px">"Deliver working software frequently, from a couple of weeks to a couple of months, <br/>with a preference to the shorter timescale." <br/>  
-"Working software is the primary measure of progress."</p>
-<p align="right" style="font-size: 13px"> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)</p>    
+> *"Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."*   
+> *"Working software is the primary measure of progress."*<br/> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)   
 
 As the amount of software, features, and complexity increase, you'll need to adopt practices that help you produce consumable solutions.  
  
@@ -119,8 +120,7 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Add teams](../../organizations/settings/add-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
-- [Scaled Agile Framework](scaled-/azure/devops/agile/scale-agile-large-teams
-- [Scaling Agile to large teams] (/azure/devops/agile/scale-agile-large-teams)
+- [Scaling Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
 
 ###Industry resources
 - [Agile manifesto](http://agilemanifesto.org)

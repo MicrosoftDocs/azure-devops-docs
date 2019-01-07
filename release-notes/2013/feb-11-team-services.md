@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Feb 11
 description: VSTS release notes for February 11 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 566cb23b-4e26-4e37-8494-8791fcce6317
 ms.date: 06/01/2016
@@ -18,7 +18,7 @@ We have a fair number of updates this sprint.
 
 Recently we announced the ability to use Git as your source control system with TFS. Not all automated build features are supported yet for Team Projects using Git. Today we are taking a big step in filling that gap by enabling the Continuous Integration (CI) trigger for Git based builds. Now you can build your project every time someone commits to Git.
 
-Note: To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2012-update2-vs).
+Note: To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](/visualstudio/releasenotes/vs2012-update2-vs).
 
 ##Test Case Management Improvements
 
@@ -70,7 +70,7 @@ Also of note, during this sprint [Brian Keller announced](http://blogs.msdn.com/
 
 ![Odata](_img/2_11_07.png)
 
-That's it for this sprint. See you again in 3 weeks. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That's it for this sprint. See you again in 3 weeks. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

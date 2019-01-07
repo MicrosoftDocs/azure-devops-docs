@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Add a chart | Extensions for VSTS
-description: Add a chart to your extension in VSTS.
+title: Add a chart | Extensions for Azure DevOps Services
+description: Add a chart to your extension in Azure DevOps Services.
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.topic: conceptual
 ms.manager: douge
@@ -14,9 +14,9 @@ ms.date: 10/10/2016
 
 # Add a chart
 
-This page demonstrates how you can add charts to your extensions. Charts can be added to any VSTS extension. 
+This page demonstrates how you can add charts to your extensions. Charts can be added to any Azure DevOps Services extension. 
 
-These charts are easy to create, resizable, interactive and consistent with the VSTS look and feel. 
+These charts are easy to create, resizable, interactive and consistent with the Azure DevOps Services look and feel. 
 The following chart types are supported: 
 
 0. Line
@@ -65,14 +65,14 @@ Add the following images to an `img` folder in your project directory so that th
 0. [Catalog icon](https://github.com/Microsoft/vsts-extension-samples/blob/master/charts/img/CatalogIcon.png)
 
 ### Extension manifest file
-In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md. Create a `vss-extension.json` file with the following contents: 
+In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md). Create a `vss-extension.json` file with the following contents: 
 
 ```json
 {
     "manifestVersion": 1,
     "id": "samples-charts",
     "version": "1.0.0",
-    "name": "Interactive Charts in VSTS",
+    "name": "Interactive Charts in Azure DevOps Services",
     "description": "Samples of interactive charts from the Chart SDK.",
     "publisher": "Fabrikam",
     "targets": [

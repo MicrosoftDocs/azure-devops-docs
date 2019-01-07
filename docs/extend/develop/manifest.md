@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Extension Manifest Reference| Extensions for VSTS
-description: How to create a manifest for your extension to VSTS.
+title: Extension Manifest Reference| Extensions for Azure DevOps Services
+description: How to create a manifest for your extension to Azure DevOps Services.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: conceptual
 ms.manager: douge
@@ -45,7 +45,8 @@ Here is an example of what a typical manifest will look like:
 
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
-#### Public flag
+<a id="public-flag" />
+#### Mark an extension public
 
 By default, all extensions on the Visual Studio Marketplace are private (only visible to the publisher and accounts the publisher has shared the extension with). If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
 
@@ -67,7 +68,7 @@ Or simply:
 
 See [Package/Publish/Install](../publish/overview.md) for additional details.
 
-#### Preview flag
+#### Mark an extension to be in preview
 
 If your extension is ready for users on the Marketplace to try, but you are still working out a few bugs or adding function, you can mark it as `preview`:
 
@@ -78,22 +79,9 @@ If your extension is ready for users on the Marketplace to try, but you are stil
     ]
 }            
 ```
-#### Paid flag
+#### Mark an extension as paid preview
 
-If you want to sell your extension on the Marketplace, you can mark it as `paid`:
-
-```json
-{
-    "galleryFlags": [
-        "Paid"
-    ]
-}            
-```
-Currently, this is in limited Beta. All paid extensions are mandated to define privacy and end user licence agreement. Additional configuration steps are required to sell extension in Marketplace. 
-
-#### Paid Preview flag
-
-If you intend to sell your extension on the Marketplace in the future, you have to mark it as `paid preview`:
+If you intend to sell your extension on the Marketplace in the future, you should mark it as paid preview. An extension once marked free cannot be marked paid later.
 
 ```json
 {
@@ -103,9 +91,60 @@ If you intend to sell your extension on the Marketplace in the future, you have 
     ]
 }            
 ```
-Only extensions marked as `paid preview` can be converted to `paid`.
 
-Note: If you do want to target TFS but do not wish to surface a Download option for your extension then add __DoNotDownload tag (starts with two underscores) to the extension manifest.
+#### Mark an extension as paid
+
+If you want to sell your extension on the Marketplace, you can mark it with the `Paid` flag and `__BYOL` tag (starts with two underscores) :
+
+```json
+{
+    "galleryFlags": [
+        "Paid"        
+    ],
+     "tags": [        
+        "__BYOL"
+    ]
+}            
+```
+
+Both the `Paid` flag and `__BYOL` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+
+```json
+{
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }, 
+        "pricing": {
+            "path": "pricing.md"
+        }
+    }
+}          
+```
+
+You will also need to add a new section in your extension manifest to override paid licensing. In the future, we will remove the paid licensing check and this override will no longer be required, but for now you will need it to ensure your extension is displayed as expected. Each override consists of an “id” and a “behavior.” The “id” must match the ID of the contributions defined in the manifest.
+```json
+"licensing": {
+
+      "overrides": [
+
+        { "id": "my-hub", "behavior": " AlwaysInclude" }
+      ]
+    }
+
+```
+
+If your paid BYOL extension offers a trial period (we recommend so), then you can specify the length of the trial in days: 
+
+```json
+{
+    "galleryproperties": {
+        "trialDays ": "30"
+    } 
+}          
+```
+
+> **Note:** If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
 
 ### Example of additional properties
 
@@ -138,10 +177,10 @@ For a different experience than one of the default options use the **CustomerQnA
 
 ```json
 {
-    "customerQnaSupport": {
+    "CustomerQnASupport": {
         "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
-    }
+    } 
 }
 ```
 
@@ -159,28 +198,28 @@ Properties for the CustomerQnASupport section:
 
 ```json
 {
-    "customerQnaSupport": {
-        "enableqna": true,
+     "CustomerQnASupport": {
+        "enableqna":"true",
         "url": "http://uservoice.visualstudio.com"
-    }
+    } 
 }
 ```
 #### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
 
 ```json
 {
-    "customerQnaSupport": {
-        "enableqna": true
-    }
+     "CustomerQnASupport": {
+        "enableqna":"true"
+    } 
 }
 ```
 #### Example 12: Extension disabling Q&A section
 
 ```json
 {
-    "customerQnaSupport": {
-        "enableqna": false
-    }
+     "CustomerQnASupport": {
+        "enableqna":"false"
+    } 
 }
 ```
 
@@ -208,25 +247,25 @@ An administrator can then review and authorize the new set of scopes:
 
 ## Installation targets
 
-As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into VSTS and Team Foundation Server 2015 Update 2 and later (the version when extension were introduced in Team Foundation Server).
+As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps Services and Team Foundation Server 2015 Update 2 and later (the version when extension were introduced in Team Foundation Server).
 
 The installation targets for an extension or integration are specified via the `targets` field in the manifest. 
 
 Supported identifiers for **extensions**:
 
-* `Microsoft.VisualStudio.Services.Cloud`: installs into VSTS
+* `Microsoft.VisualStudio.Services.Cloud`: installs into Azure DevOps Services
 * `Microsoft.TeamFoundation.Server`: installs into Team Foundation Server
 * `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
 
-Supported identifiers for **integrations** (tools or services that integrate with VSTS or Team Foundation Server):
+Supported identifiers for **integrations** (tools or services that integrate with Azure DevOps Services or Team Foundation Server):
 
-* `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with VSTS
+* `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
 * `Microsoft.TeamFoundation.Server.Integration`: integrates with Team Foundation Server
 * `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
 ### Examples
 
-#### Example 1: Extension that works with VSTS and Team Foundation Server
+#### Example 1: Extension that works with Azure DevOps Services and Team Foundation Server
 
 ```json
 {
@@ -238,7 +277,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 }
 ```
 
-#### Example 2: Extension that works only with VSTS
+#### Example 2: Extension that works only with Azure DevOps Services
 
 ```json
 {
@@ -250,9 +289,9 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 }
 ```
 
-Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, VSTS or Team Foundation Server. For example:
+Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, Azure DevOps Services or Team Foundation Server. For example:
 
-#### Example 3: Integration that works with VSTS and Team Foundation Server
+#### Example 3: Integration that works with Azure DevOps Services and Team Foundation Server
 
 ```json
 {
@@ -301,7 +340,7 @@ Version numbers for Team Foundation Server:
 
 ### Examples showing versions
 
-#### Example 5: Extension that works with VSTS and Team Foundation Server 2017 and later
+#### Example 5: Extension that works with Azure DevOps Services and Team Foundation Server 2017 and later
 
 ```json
 {
@@ -345,7 +384,7 @@ Version numbers for Team Foundation Server:
 
 ### Shortcuts
 
-`Microsoft.VisualStudio.Services` is a shortcut for VSTS and Team Foundation Server 2015 Update 2 and later. So this:
+`Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps Services and Team Foundation Server 2015 Update 2 and later. So this:
 
 ```json
 {
@@ -375,7 +414,7 @@ is equivalent to:
 
 ### Using installation targets and demands
 
-Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with VSTS and Team Foundation Server 2017 RTM and later:
+Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps Services and Team Foundation Server 2017 RTM and later:
 
 #### Example 8: Extension that uses version 3.0 APIs
 
@@ -434,7 +473,7 @@ Demands are specified in the extension manifest. For example:
 }
 ```
 
-In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to VSTS or Team Foundation Server 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
+In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Azure DevOps Services or Team Foundation Server 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
 
 ### Supported demands
 
@@ -450,7 +489,7 @@ In this example, the extension demands version 3.0 of the APIs, which means it c
 #### Notes
 
 * `environment/cloud` and `environment/onprem` should only be used when your extension has topology-related requirements that require running in that particular environment.
-* `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the account/collection. 
+* `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the organization/collection. 
 
 ## Files
 

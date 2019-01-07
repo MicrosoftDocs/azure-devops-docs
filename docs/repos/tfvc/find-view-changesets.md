@@ -1,5 +1,6 @@
 ---
 title: Find and view changesets
+titleSuffix: Azure Repos
 description: Find and view changesets
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Find and view changesets
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
 

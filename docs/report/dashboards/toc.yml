@@ -6,12 +6,12 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: "Add & manage dashboards"
+  - name: "Add, rename, & delete dashboards"
     href: dashboards.md
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
   - name: Add an Analytics widget to a dashboard
-    href: ../analytics/enable-analytics-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../analytics/enable-analytics-velocity.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: Add markdown to a dashboard
     href: add-markdown-to-dashboard.md
 - name: Tutorials
@@ -27,7 +27,9 @@
   - name: View the built-in velocity chart  
     href: velocity-chart-data-store.md
   - name: Work with sprint burndown
-    href: ../../boards/sprints/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+  - name: Configure test trend results
+    href: configure-test-results-trend.md
 - name: Concepts
   items:
   - name: Burndown guidance
@@ -36,8 +38,8 @@
     href: cumulative-flow-cycle-lead-time-guidance.md 
   - name: Velocity guidance
     href: velocity-guidance.md
-  - name: "Analytics widgets (VSTS)"
-    href: ../analytics/analytics-widgets-vsts.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+  - name: Analytics widgets
+    href: ../analytics/analytics-widgets.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Add charts to a dashboard
@@ -45,34 +47,37 @@
   - name: Create work tracking charts
     href: charts.md
   - name: "Create test progress & result charts"
-    href: ../../test/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../test/track-test-status.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: Set dashboard permissions (Security)
     href: dashboard-permissions.md
 - name: "Samples (REST API)"
   items:
   - name: Add a dashboard widget
-    href: ../../extend/develop/add-dashboard-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: Add a chart widget 
-    href: ../../extend/develop/add-chart.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../extend/develop/add-chart.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: Add an Analytics widget  
-    href: ../extend-analytics/example-analytics-widget.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json    
+    href: ../extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Widget catalog
     href: widget-catalog.md
   - name: Markdown guidance
-    href: ../../project/wiki/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
+  - name: Reporting roadmap
+    href: ../analytics/reporting-roadmap.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: REST API, Dashboards
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/
+    href: /rest/api/vsts/dashboard/
 - name: Resources
   items:
-  - name: Agile
-    href: /vsts/#pivot=services&panel=agile
-  - name: Testing
-    href: /vsts/#pivot=services&panel=testing 
+  - name: Analytics
+    href: ../analytics/index.md
+  - name: Azure Boards
+    href: /azure/devops/boards/index
+  - name: Azure Test Plans
+    href: /azure/devops/test/index-tp 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
-  - name: VSTS/TFS Reporting Roadmap
-    href: ../analytics/reporting-roadmap.md
+

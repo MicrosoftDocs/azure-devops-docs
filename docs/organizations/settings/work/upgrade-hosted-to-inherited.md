@@ -1,7 +1,8 @@
 ---
 title: Clone a Hosted XML process to an inherited process
-titleSuffix: VSTS     
-description: Clone a Hosted XML process model to an inherited process in Visual Studio Team Services
+titleSuffix: Azure DevOps Services     
+description: Clone a Hosted XML process model to an inherited process in Azure DevOps Services
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.manager: douge
@@ -14,10 +15,7 @@ ms.date: 05/30/2018
 
 # Clone a Hosted XML process to an Inheritance process   
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
-
-> [!NOTE]  
-> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your organization(s).
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 Cloning your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -33,13 +31,13 @@ Before you clone a Hosted XML process, we recommend that you review [Supported o
 ## Sequence of steps
 
 The general sequence of steps to support clone are:  
-0. Open the **Settings>Process** hub 
+0. Open **Settings>Process** 
 0. Choose the Hosted XML process you want to clone and select **Clone process to inheritance** from its context menu
 0. Verify the customizations that are present in the inherited process created as part of the clone
 0. Manually reapply customizations that were ignored during clone
 0. Create a test project to verify customizations. 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../_shared/open-process-admin-context-ts-only.md)]
 
 
 ## Clone a Hosted XML process to an Inheritance process 
@@ -75,7 +73,7 @@ The general sequence of steps to support clone are:
 
 We recommend that you create a test project based on the inherited process created in the previous step to verify the customizations preserved and any additional changes you make to it. 
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/migration/create-team-project-inherited-process.png)  

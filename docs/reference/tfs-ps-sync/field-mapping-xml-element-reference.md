@@ -77,19 +77,19 @@ ms.date: 01/12/2017
   
 ```xml
 <mappingFile>  
-    <persistables>  
-      <Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
-         <field tfsName="System.Title" tfsMirrorName="Mirror.System.Title" displayTfsField="false" displayTfsMirror="false" onConflict="PSWin">  
-            <tfsToTarget>  
-               <target provider="ProjectServerStatusQueue" name="pjTaskName" />  
-            </tfsToTarget>  
-            <targetToTfs>  
-               <target provider="ProjectServerPublished" name="pjTaskName" />  
-            </targetToTfs>  
-         </targetToTfs>  
+&nbsp;&nbsp;&nbsp;<persistables>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<field tfsName="System.Title" tfsMirrorName="Mirror.System.Title" displayTfsField="false" displayTfsMirror="false" onConflict="PSWin">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tfsToTarget>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerStatusQueue" name="pjTaskName" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tfsToTarget>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<targetToTfs>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerPublished" name="pjTaskName" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</targetToTfs>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</targetToTfs>  
       </field>  
   
-         . . .  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .  
   
     </Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
   </persistables>  
@@ -167,9 +167,9 @@ ms.date: 01/12/2017
         </tfsToTarget>  
         <targetToTfs>  
           <target provider="ProjectServerPublished" name="pjTaskActualWork" />  
-            <transforms>  
-               <transform transformType="clearValueIfParent">  
-            </transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transform transformType="clearValueIfParent">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</transforms>  
         </targetToTfs>  
       </field>  
       <field tfsName="Microsoft.VSTS.Scheduling.RemainingWork" tfsMirrorName="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" displayTfsField="true" displayTfsMirror="true">  
@@ -178,9 +178,9 @@ ms.date: 01/12/2017
         </tfsToTarget>  
         <targetToTfs>  
           <target provider="ProjectServerPublished" name="pjTaskRemainingWork" />  
-            <transforms>  
-               <transform transformType="clearValueIfParent">  
-            </transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transforms>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transform transformType="clearValueIfParent">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</transforms>  
         </targetToTfs>  
       </field>  
       <field tfsName="Microsoft.VSTS.Scheduling.OriginalEstimate" tfsMirrorName="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" displayTfsField="false" displayTfsMirror="true" onConflict="PSWin">  

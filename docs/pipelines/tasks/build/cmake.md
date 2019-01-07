@@ -1,6 +1,7 @@
 ---
 title: CMake build and release task
-description: CMake build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+ms.custom: seodec18
+description: CMake build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: CMake
+# CMake task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/cmake.png) Build with the CMake cross-platform build system
+Use this task in a build or release pipeline to build with the CMake cross-platform build system.
 
 ## Demands
 
@@ -43,7 +44,7 @@ cmake
 <p>Working directory when CMake is run. The default value is `build`.</p>
 <p>If you specify a relative path, then it is relative to your repo. For example, if you specify `build`, the result is the same as if you specified `$(Build.SourcesDirectory)\build`.</p>
 <p>You can also specify a full path outside the repo, and you can use [variables](../../build/variables.md). For example: `$(Build.ArtifactStagingDirectory)\build`</p>
- <p>If the path you specify does not exist, CMAke creates it.</p>
+ <p>If the path you specify does not exist, CMake creates it.</p>
 </td>
 </tr>
 <tr>
@@ -57,7 +58,7 @@ Arguments that you want to pass to CMake.
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -71,7 +72,7 @@ The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed, but 
 [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
 </li>
 
-<li>In the left column, click the name of the hosted pool that you are using. In the right column click **Capabilities**.</li>
+<li>In the left column, click the name of the Microsoft-hosted pool that you are using. In the right column click **Capabilities**.</li>
 
 <li>Click **Add capability** and set the fields to `cmake` and `yes`.</li>
 

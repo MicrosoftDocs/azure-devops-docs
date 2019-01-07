@@ -1,21 +1,20 @@
 ---
-title: Background to Capability Maturity Model Integration (CMMI)
-titleSuffix: VSTS & TFS
-description: Guide to the Capability Maturity Model Integration (CMMI) for Development - Team Foundation Server (TFS)
+title: Capability Maturity Model Integration (CMMI)
+titleSuffix: Azure Boards
+description: Guide to the Capability Maturity Model Integration (CMMI) for Development 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
 ms.topic: conceptual
-ms.author: kaelli  
-author: KathrynEE  
+ms.author: kaelli  author: KathrynEE  
 ms.manager: douge
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
 ---
 
 # Background to CMMI
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The definitive guide to the Capability Maturity Model Integration (CMMI) for Development is published by the Software Engineering Institute as "CMMI: Guidelines for Process Integration and Product Improvement." This book specifically describes the CMMI for Development (CMMI-DEV) version 1.3, which is one of the models within the current CMMI product suite at the time of this writing. This model is extremely stable and should continue to be current well beyond 2010. You may also find "CMMI Distilled: A Practical Introduction to Integrated Process Improvement" to be a useful and accessible book about the topic.   
   

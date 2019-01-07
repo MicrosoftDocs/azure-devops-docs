@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts WorkItemReference API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts WorkItemReference API | Extensions for Azure DevOps Services
 ms.assetid: 3c9c560e-8e34-65b2-0e18-1b734f81ee88
 ms.prod: devops
 ms.technology: devops-ecosystem

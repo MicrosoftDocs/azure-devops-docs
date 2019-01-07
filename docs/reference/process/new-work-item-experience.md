@@ -8,7 +8,7 @@ ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017 <= tfs-2018'
+monikerRange: '>= tfs-2017 <= azdevserver-2019'
 ms.date: 03/20/2018
 ---
 
@@ -72,7 +72,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 <img src="../../boards/backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
 
 > [!IMPORTANT]
-> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.     
+> For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.     
 
 ### Access to other tasks
 
@@ -115,15 +115,8 @@ For guidance in using the new form, see:
 - [Drive Git development for a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
-- [VSTS Features Timeline](/vsts/release-notes/index)  
+- [Azure DevOps Services Features Timeline](/azure/devops/release-notes/index)  
 - [REST API, Work Item Types](/rest/api/vsts/processdefinitions/work%20item%20types)  
-
-
-### Will the new work item experience become permanent?  
-
-Yes, however, we're always interested in how to improve the experience. What do you like or don't like about the new form layout and experience?  
-
-Send your suggestions to **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**
 
 
 ### Will this impact Visual Studio work item forms?  

@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Git Refs | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git references programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Git Refs | REST API Reference for Team Foundation Server
+description: Work with Git references programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 7E4F1631-12C0-4B17-A460-6A6BE002C838
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Git refs
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -32,7 +35,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | TFS server name ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | filter         | string | Git ref name filter. If you specify this parameter, only refs that start with that string are returned.
@@ -42,21 +45,158 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]
 
-[!code-REST [GET__git_repositories__repositoryId__refs_json](./_data/refs/GET__git_repositories__repositoryId__refs.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 6,
+  "value": [
+    {
+      "name": "refs/heads/develop",
+      "objectId": "67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads/develop"
+    },
+    {
+      "name": "refs/heads/master",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads/master"
+    },
+    {
+      "name": "refs/heads/npaulk/feature",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads/npaulk/feature"
+    },
+    {
+      "name": "refs/tags/v1.0",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/tags/v1.0"
+    },
+    {
+      "name": "refs/tags/v1.1",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/tags/v1.1"
+    },
+    {
+      "name": "refs/tags/v2.0",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/tags/v2.0"
+    }
+  ]
+}
+```
+
 
 ### Just branches
 
-[!code-REST [GET__git_repositories__repositoryId__refs_heads_json](./_data/refs/GET__git_repositories__repositoryId__refs_heads.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "name": "refs/heads/develop",
+      "objectId": "67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads/develop"
+    },
+    {
+      "name": "refs/heads/master",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads/master"
+    },
+    {
+      "name": "refs/heads/npaulk/feature",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads/npaulk/feature"
+    }
+  ]
+}
+```
+
 
 ### Just tags
 
-[!code-REST [GET__git_repositories__repositoryId__refs_tags_json](./_data/refs/GET__git_repositories__repositoryId__refs_tags.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/tags?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "name": "refs/tags/v1.0",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/tags/v1.0"
+    },
+    {
+      "name": "refs/tags/v1.1",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/tags/v1.1"
+    },
+    {
+      "name": "refs/tags/v2.0",
+      "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/tags/v2.0"
+    }
+  ]
+}
+```
+
 
 ### Include commit status
 
 See also: [commit status](./commits.md#commit_status)
 
-[!code-REST [GET__git_repositories__repositoryId__refs_heads_statuses_json](./_data/refs/GET__git_repositories__repositoryId__refs_heads_statuses.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs/heads/master?includeStatuses=true&api-version=2.1
+```
+
+#### Sample response
+
+```json
+{
+  "name": "refs/tags/v1.0",
+  "objectId": "278d5cd2-584d-4b63-824a-2ba458937249",
+  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs?filter=heads%2Fmaster",
+  "statuses": {
+    "state": "succeeded",
+    "description": "The build is successful",
+    "context": {
+      "name": "Build123",
+      "genre": "continuous-integration"
+    },
+    "creationDate": "2016-01-27T09:33:07Z",
+    "createdBy": {
+      "id": "278d5cd2-584d-4b63-824a-2ba458937249",
+      "displayName": "Norman Paulk",
+      "uniqueName": "Fabrikamfiber16",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/278d5cd2-584d-4b63-824a-2ba458937249",
+      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=278d5cd2-584d-4b63-824a-2ba458937249"
+    },
+    "targetUrl": "https://ci.fabrikam.com/my-project/build/123 "
+  }
+}
+```
+
 
 ## Modify one or more refs
 
@@ -86,7 +226,7 @@ Content-Type: application/json
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | TFS server name ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | Query
@@ -96,7 +236,68 @@ Content-Type: application/json
 | oldObjectId    | string | The current commit id the ref is at. `0000000000000000000000000000000000000000` when creating a new ref.
 | newObjectId    | string | The new commit id for the ref. `0000000000000000000000000000000000000000` when deleting a ref.
 
-[!code-REST [POST__git_repositories__repositoryId__refs_json](./_data/refs/POST__git_repositories__repositoryId__refs.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/refs?api-version=1.0
+```
+```json
+[
+  {
+    "name": "refs/heads/live",
+    "oldObjectId": "0000000000000000000000000000000000000000",
+    "newObjectId": "4b223e9c93ec3b6aaa6499f06e3ebb7c702e6106"
+  },
+  {
+    "name": "refs/heads/master",
+    "oldObjectId": "4b223e9c93ec3b6aaa6499f06e3ebb7c702e6106",
+    "newObjectId": "7b019e53c7980d7fafcbd84aa71946793d10a881"
+  },
+  {
+    "name": "refs/heads/fabrikamfiber16",
+    "oldObjectId": "4b223e9c93ec3b6aaa6499f06e3ebb7c702e6106",
+    "newObjectId": "0000000000000000000000000000000000000000"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "repositoryId": "278d5cd2-584d-4b63-824a-2ba458937249",
+      "name": "refs/heads/live",
+      "oldObjectId": "0000000000000000000000000000000000000000",
+      "newObjectId": "4b223e9c93ec3b6aaa6499f06e3ebb7c702e6106",
+      "isLocked": "false",
+      "updateStatus": "succeeded",
+      "success": true
+    },
+    {
+      "repositoryId": "278d5cd2-584d-4b63-824a-2ba458937249",
+      "name": "refs/heads/master",
+      "oldObjectId": "4b223e9c93ec3b6aaa6499f06e3ebb7c702e6106",
+      "newObjectId": "7b019e53c7980d7fafcbd84aa71946793d10a881",
+      "isLocked": "false",
+      "updateStatus": "succeeded",
+      "success": true
+    },
+    {
+      "repositoryId": "7ba192ab-3f08-4fae-a233-ca1fb08c59bf",
+      "name": "refs/heads/fabrikamfiber16",
+      "oldObjectId": "4b223e9c93ec3b6aaa6499f06e3ebb7c702e6106",
+      "newObjectId": "0000000000000000000000000000000000000000",
+      "isLocked": "false",
+      "updateStatus": "succeeded",
+      "success": true
+    }
+  ],
+  "count": 3
+}
+```
+
 
 ## Lock a branch
 
@@ -107,11 +308,39 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositorie
 | Parameter      | Type   | Notes
 |:-----------    |:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance       | string | TFS server name ({server:port}).
 | project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID or name of the [repository](./repositories.md).
 | ref            | string | Git ref name.
 | Query
 | api-version    | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [PATCH__git_repositories__repositoryId__refs_json](./_data/refs/PATCH__git_repositories__repositoryId__refs.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/refs/heads/master?api-version=1.0
+```
+```json
+{
+  "isLocked": true
+}
+```
+
+#### Sample response
+
+```json
+{
+  "name": "refs/heads/master",
+  "objectId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
+  "isLockedBy": {
+    "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+    "displayName": "Normal Paulk",
+    "uniqueName": "fabrikamfiber16@hotmail.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+  },
+  "isLocked": true,
+  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/refs?filter=heads%2Fmaster"
+}
+```
+

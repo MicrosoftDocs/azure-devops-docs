@@ -1,19 +1,21 @@
 ---
 title: Define the hyperlink for a work item
-titleSuffix: VSTS & TFS
-description: Construct a URL for a work item for Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Construct a URL for a work item for Azure Boards, Azure DevOps & TFS
+ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-agile   
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: reference
-ms.date: 11/27/2017  
+ms.topic: reference   
+monikerRange: '>= tfs-2013'   
+ms.date: 11/19/2018
 ---
 
 
 
-# Define the hyperlink for a work item 
+# Define the URL for a work item 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -21,7 +23,7 @@ You can define the URL for a work item using the syntax provided based on the ve
 
 Examples in this topic use the following conventions:
 
--   *OrganizationName* specifies the name of the VSTS organization  
+-   *OrganizationName* specifies the name of the Azure Boards organization  
 -   *ServerName* specifies the name of the TFS application tier server   
 -   *Port* specifies the port, default=8080
 -   *CollectionName* specifies the name of the project collection.
@@ -31,11 +33,24 @@ Examples in this topic use the following conventions:
 
 ::: moniker range="vsts"  
 
-## VSTS
+```
+https://dev.azure.com/OrganizationName/ProjectName/_workitems/edit/WorkItemNumber
+```
 
-<b>https://</b>*OrganizationName.visualstudio.com/ProjectName/*<b>_workitems/edit/</b>*WorkItemNumber*
+or
 
-**Example:** 
+```
+https://OrganizationName.visualstudio.com/DefaultCollection/ProjectName/_workitems/edit/WorkItemNumber
+```
+
+
+**Examples:** 
+
+```
+https://dev.azure.com/fabrikam/Phone%20Saver/_workitems/edit/390
+```  
+
+or
 
 ```
 https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
@@ -43,9 +58,7 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015"  
-
-##TFS 2018, TFS 2017, and TFS 2015
+::: moniker range=">= tfs-2015 <= azdevserver-2019"  
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 
@@ -58,7 +71,7 @@ http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=
 
 ::: moniker range="tfs-2013"  
 
-##TFS 2013.2
+## TFS 2013.2
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems/edit/</b>*WorkItemNumber*
 
@@ -67,7 +80,7 @@ http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=
 http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/edit/133
 ```
 
-##TFS 2013.1 and earlier versions
+## TFS 2013.1 and earlier versions
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems#_a=edit&id=</b>*WorkItemNumber*  
 

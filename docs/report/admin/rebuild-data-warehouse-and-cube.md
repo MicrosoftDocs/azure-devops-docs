@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 08/11/2016
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 # Rebuild the data warehouse and cube
@@ -54,9 +55,9 @@ In addition to these permissions, you might need to address these requirements o
 
 * To access Report Manager, reports, or websites for Reporting Services, you might need to add these sites to the list of trusted sites in Internet Explorer or start Internet Explorer as an administrator.  
 
-For more information, see [User Account Control](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).
+For more information, see [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).
 
-With the rebuild operation, you re-create both the relational database and the cube. TFS rebuilds the relational database from the operational data stores. It then re-creates the SQL Server Analysis Services cube and processes the cube to populate it by using data from the relational database. If you want to rebuild just the cube, you can use the **TFSConfig RebuildWarehouse** command-line tool. See [RebuildWarehouse Command](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120)).
+With the rebuild operation, you re-create both the relational database and the cube. TFS rebuilds the relational database from the operational data stores. It then re-creates the SQL Server Analysis Services cube and processes the cube to populate it by using data from the relational database. If you want to rebuild just the cube, you can use the **TFSConfig RebuildWarehouse** command-line tool. See [RebuildWarehouse Command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120)).
  
 <a id="verify-services">  </a>
 
@@ -186,7 +187,7 @@ Deleting builds doesn't remove all associated data from the database. To do that
 
 ##Related content
 
-- [RebuildWarehouse Command](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120))  
+- [RebuildWarehouse Command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120))  
 - [Components of the TFS data warehouse](../dashboards/choose-source-data-authoring-tool.md)  
 - [Manage TFS reports, data warehouse, and analysis services cube](manage-reports-data-warehouse-cube.md)
 - [Add reports to a team project](add-reports-to-a-team-project.md).    

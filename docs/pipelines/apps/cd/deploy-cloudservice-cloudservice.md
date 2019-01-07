@@ -1,18 +1,21 @@
 ---
-title: Deploy ASP.NET app to an Azure cloud service
-description: Example of deploying an Azure cloud services package from Release Management in VSTS or Microsoft Team Foundation Server
+title: Deploy an ASP.NET Cloud Service app 
+description: Example of deploying an Azure cloud services package in Azure Pipelines or Team Foundation Server
 ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Deploy your ASP.NET app to an Azure cloud service
+# Deploy your ASP.NET app to an Azure Cloud Service
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
@@ -20,8 +23,8 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure cloud service using Release Management.
-Continuous deployment means starting an automated deployment process whenever a new successful build is available.
+Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Azure Pipelines.
+Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
 
 You can also use these steps to deploy your app to an [Azure Government Cloud](../../library/government-cloud.md)
 or to [Azure Stack](../../targets/azure-stack.md).
@@ -32,7 +35,7 @@ or to [Azure Stack](../../targets/azure-stack.md).
 
 Before you begin, you'll need a CI build that publishes your Cloud Service package. To set up CI, see:
 
-* [Build your Azure cloud service](../aspnet/build-aspnet-cloudservice.md)
+* [Build your Azure Cloud Service](../aspnet/build-aspnet-cloudservice.md)
 
 ### Azure storage
 
@@ -61,9 +64,9 @@ Carry out the following steps in the Azure portal to create one.
 1. In the **New Container** blade, type a name for the container.
    Select **Container** in the **Access type** list, and choose **Create**.   
 
-<h2 id="cd">Define and test your CD release process</h2>
+<h2 id="cd">Define and test your CD release pipeline</h2>
 
-Continuous deployment (CD) means starting an automated release process whenever a new successful build is available. Your CD release process picks up the artifacts published by your CI build and then deploys them to your Azure cloud service.
+Continuous deployment (CD) means starting an automated release pipeline whenever a new successful build is available. Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your Azure Cloud Service.
 
 1. Do one of the following:
 
@@ -71,7 +74,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
      **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
      This starts a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
+   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Select the **Azure Cloud Service Deployment** template and choose **Apply**.
@@ -87,7 +90,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
    ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
 
-1. Open the **Tasks** tab and select the **Environment 1** item. Configure the task variables as follows:
+1. Open the **Tasks** tab and select the **Stage 1** item. Configure the task variables as follows:
    
    * **Azure Subscription (Classic)**: Select an Azure Classic service connection. If you have not created one already, create one now by choosing **Add**. Then return to your release pipeline, refresh the **Azure Subscription** list, and select the connection you just created.
    
@@ -95,13 +98,13 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    * **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
 
-   > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../library/government-cloud.md).
+   > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment pipeline meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../library/government-cloud.md).
 
    [!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
    
-1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
+1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default stage is named Stage1, which you can edit by clicking directly on the name.
 
-You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to Azure:
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to Azure:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
@@ -109,7 +112,7 @@ You're now ready to create a release, which means to start the process of runnin
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Projects and Teams Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with teams, projects, and project collections programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Projects and Teams Overview | REST API Reference for Team Foundation Server
+description: Work with teams, projects, and project collections programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 2FFBCD08-28E6-4EB4-86E4-557E416E4380
 ms.manager: douge
 ms.topic: article
@@ -14,7 +14,10 @@ ms.date: 08/04/2016
 
 # Projects and teams
 
-A Visual Studio Team Services account has one or more [projects](./projects.md). Each project has one or more [teams](./teams.md) that contribute to that project.
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
+
+A VSTS organization has one or more [projects](./projects.md). Each project has one or more [teams](./teams.md) that contribute to that project.
 
 ![Project and team resources](./_img/projects-and-teams.png)
 
@@ -27,7 +30,7 @@ A Visual Studio Team Services account has one or more [projects](./projects.md).
 
 ### Get a list of projects
 
-Get the [projects](./projects.md) in the account.
+Get the [projects](./projects.md) in the organization. 
 
 ### Get a project's source control provider
 
@@ -41,12 +44,12 @@ Get a [project's capabilities](./projects.md#withcapabilities) to see whether it
 ### Get the project collection
 
 Each project is in a project collection.
-Right now, a Visual Studio Team Services account just has one project collection named "DefaultCollection" so you can use that assumption when you call other APIs.
+Right now, a VSTS organization just has one project collection named "DefaultCollection" so you can use that assumption when you call other APIs.
 You can also look up the [collection](./project-collections.md).
 
 ### Create a project
 
-Create a [project](./projects.md#createateamproject) in a Visual Studio Team Services account. Currently, this is only supported on Visual Studio Team Services, but not on Team Foundation Server.
+Create a [project](./projects.md#createateamproject) in a VSTS organization. Currently, this is only supported on VSTS, but not on Team Foundation Server.
 
 ### Update a project
 

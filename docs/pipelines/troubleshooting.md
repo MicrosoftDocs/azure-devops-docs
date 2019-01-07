@@ -1,13 +1,14 @@
 ---
-title: Troubleshoot Builds and Releases | VSTS or Team Foundation Server
-description: Learn how you can troubleshoot Team Foundation Build (TFBuild) and Release in Team Foundation Server (TFS) and VSTS.
+title: Troubleshoot builds and releases
+description: Learn how to troubleshoot builds and releases in Azure Pipelines and Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.manager: douge
 ms.author: chrispat
 ms.reviewer: chrispat
-ms.date: 08/04/2016
+ms.custom: seodec18
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,11 +23,11 @@ This topic provides general troubleshooting guidance. For specific troubleshooti
 ::: moniker-end
 
 ## Run commands locally at the command prompt
-It is helpful to narrow whether a build or release failure is the result of a TFS/VSTS product issue (agent or tasks). Build and release failures may also result from external commands.
+It is helpful to narrow whether a build or release failure is the result of an Azure Pipelines/TFS product issue (agent or tasks). Build and release failures may also result from external commands.
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/library/dd393574.aspx) problem.
+For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/library/dd393574.aspx) problem.
 
 ### Differences between local command prompt and agent
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
@@ -53,7 +54,7 @@ Start by looking at the logs in your completed build or release. If they don't p
 
 0. Queue the build.
 
-0. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per phase. If you would like to download everything you can also choose to **Download all logs as zip**.
+0. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per job. If you would like to download everything you can also choose to **Download all logs as zip**.
 
 > Diagnostic logs are not yet available for releases.
 
@@ -75,7 +76,7 @@ Agent diagnostic logs provide a record of how the agent was configured and what 
 
  - Cannot be opened until the process is terminated.
 
- - Attempts to connect to your Team Foundation Server or VSTS organization.
+ - Attempts to connect to your Azure DevOps organization or Team Foundation Server.
 
  - Shows when each job was run, and how it completed
 
@@ -83,7 +84,7 @@ Both logs show how the agent capabilities were detected and set.
 
 #### Other logs
 
-Inside the diagnostic logs you will find environment.txt and capabilities.txt. 
+Inside the diagnostic logs you will find environment.txt and capabilities.txt.
 
 The environment.txt file has various information about the environment within which your build ran. This includes information like what Tasks are run, whether or not the firewall is enabled, Powershell version info, and some other items. We continually add to this data to make it more useful.
 
@@ -110,7 +111,7 @@ macOS/Linux:
 
 ##### Windows
 
-0. Start [Fiddler](http://www.telerik.com/fiddler). 
+0. Start [Fiddler](http://www.telerik.com/fiddler).
 
 0. We recommend you listen only to agent traffic.  File > Capture Traffic off (F12)  
 
@@ -141,7 +142,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 export VSTS_HTTP_PROXY=http://127.0.0.1:8888
  ```
 
-0. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/nixsvc.md)
+0. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
 0. Restart the agent.
 
@@ -168,7 +169,7 @@ The MSBuild and Visual Studio Build tasks already add `/nr:false` to the argumen
 <!-- This header is linked internally from this document. Any changes to the header text must be made to the link as well. -->
 ### MSBuild and /maxcpucount:[n]
 
-By default the build tasks such as [MSBuild](tasks/build/msbuild.md) and [Visual Studio Build](tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues. 
+By default the build tasks such as [MSBuild](tasks/build/msbuild.md) and [Visual Studio Build](tasks/build/visual-studio-build.md) run MSBuild with the `/m` switch. In some cases this can cause problems such as multiple process file access issues.
 
 Try adding the `/m:1` argument to your build tasks to force MSBuild to run only one process at a time.
 
@@ -192,6 +193,21 @@ Analyzing a dump of the process can help to identify what a deadlocked process i
 
 ### WiX project
 Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
+
+## Line endings for multiple platforms
+
+When you run pipelines on multiple platforms, you can sometimes encounter problems with different line endings.
+Historically, Linux and macOS used linefeed (LF) characters while Windows used a carriage return plus a linefeed (CRLF).
+Git tries to compensate for the difference by automatically making lines end in LF in the repo but CRLF in the working directory on Windows.
+
+Most Windows tools are fine with LF-only endings, and this automatic behavior can cause more problems than it solves.
+If you encounter issues based on line endings, we recommend you configure Git to prefer LF everywhere.
+To do this, add a [`.gitattributes`](https://www.git-scm.com/docs/gitattributes) file to the root of your repository.
+In that file, add the following line:
+
+```
+* text eol=lf
+```
 
 ## Agent connection issues
 
@@ -221,7 +237,7 @@ This error may indicate the agent lost communication with the server for a span 
 * If the agent is running on a virtual machine, avoid any live migration or other VM maintenance operation that may severely impact the health of the machine for multiple minutes.
 * If the agent is running on a virtual machine, the same operating-system-update recommendations and sleep-setting recommendations apply to the host machine. And also any other maintenance operations that several impact the host machine.
 * Performance monitor logging or other health metric logging can help to correlate this type of error to constrained resource availability on the agent machine (disk, memory, page file, processor, network).
-* Another way to correlate the error with network problems is to ping a server indefinitely and dump the output to a file, along with timestamps. Use a healthy interval, for example 20 or 30 seconds. If you are using VSTS, then you would want to ping an internet domain, for example bing.com. If you are using an on-premises TFS server, then you would want to ping a server on the same network.
+* Another way to correlate the error with network problems is to ping a server indefinitely and dump the output to a file, along with timestamps. Use a healthy interval, for example 20 or 30 seconds. If you are using Azure Pipelines, then you would want to ping an internet domain, for example bing.com. If you are using an on-premises TFS server, then you would want to ping a server on the same network.
 * Verify the network throughput of the machine is adequate. You can perform an online speed test to check the throughput.
 * If you use a proxy, verify the agent is configured to use your proxy. Refer to the agent deployment topic.
 
@@ -242,11 +258,14 @@ This may be characterized by a message in the log "All files up to date" from th
 
 ### Get sources through Team Foundation Proxy
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
-```
+
 Windows:
+```cmd
     set TFSPROXY=http://tfvcproxy:8081
     setx TFSPROXY=http://tfvcproxy:8081 // If the agent service is running as NETWORKSERVICE or any service account you can't easily set user level environment variable
+```
 macOS/Linux:
+```bash
     export TFSPROXY=http://tfvcproxy:8081
 ```
 
@@ -258,4 +277,4 @@ Report any problems on [Developer Community](https://developercommunity.visualst
 
 We welcome your suggestions:
 
-* Propose and vote on ideas on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).
+* Send feedback and report problems through the [Developer Community](https://developercommunity.visualstudio.com/).

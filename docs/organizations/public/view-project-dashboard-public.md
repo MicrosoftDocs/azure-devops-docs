@@ -1,14 +1,14 @@
 ---
 title: View a project page or dashboard
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: View a project home page or dashboard 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 The project homepage typically provides information about the project, and dashboards provide charts, links, or focused information for a team or project.   
 
-If you're a contributor, you can also [edit README files for a project](../../project/wiki/project-vision-status.md#create-a-repository-readme-or-welcome-page) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
+If you're a contributor, you can also [edit README files for a project](../../project/wiki/project-vision-status.md) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
 
 [!INCLUDE [temp](_shared/anon-user.md)]   
 
@@ -28,7 +28,7 @@ If you're a contributor, you can also [edit README files for a project](../../pr
 
 From your web browser, open the public project.   
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 
 # [New navigation](#tab/new-nav)

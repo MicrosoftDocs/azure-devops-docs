@@ -1,7 +1,7 @@
 ---
 title: Resolve invalid links
-titleSuffix: VSTS & TFS
-description: Address invalid link error messages that occur when publishing an Excel tree list to Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards
+description: Address invalid link error messages that occur when publishing an Excel tree list to Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f2250e37-5150-4546-81b8-4ec8023046c2
@@ -119,7 +119,7 @@ This message indicates that you can publish the changes that you made to the fie
 2.  Choose **Refresh**.  
 
 <a name="tf208104"></a>   
-##  TF208104: Hierarchical link Rrlationship is locked  
+##  TF208104: Hierarchical link Relationship is locked  
  If you publish a worksheet that contains work items that are synchronized with Project Server and whose hierarchical link relationships are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")), the following error message may appear:  
   
 >TF208104: You have modified one or more hierarchical link relationships that may have been locked by other processes, such as Project Server.
@@ -139,7 +139,7 @@ This message indicates that you can publish the changes that you made to the fie
 ## Related articles
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
--  [Work in Excel or Project](track-work-vsts-tfs.md)
+-  [Work in Excel or Project](track-work.md)
 
 ###Required permissions  
   

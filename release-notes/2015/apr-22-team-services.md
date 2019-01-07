@@ -2,7 +2,7 @@
 title: Application Insights – Synthetic Data Filtering, New Usage Experience for ASP.NET, and Daily Active User Calculations – Apr 22
 description: VSTS release notes for April 22 2015
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 40e151ba-193b-4f02-9b66-60d8788b70db
 ms.date: 06/01/2016
@@ -53,7 +53,7 @@ A new calculation for Daily Active Users (DAU) has been added to the usage repor
 
 ##Feedback please!
 
-That’s a wrap for Sprint 81. Next update immediately after [Build 2015](http://www.buildwindows.com/). If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=ApplicationInsights), bugs to [Connect](http://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
+That’s a wrap for Sprint 81. Next update immediately after [Build 2015](http://www.buildwindows.com/). If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights), bugs to [Connect](http://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
 
 Thanks,
 

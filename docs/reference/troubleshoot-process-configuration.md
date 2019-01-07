@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot process configuration issues
-titleSuffix: VSTS & TFS 
-description: Resolve process configuration issues in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps & TFS 
+description: Resolve process configuration issues in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  

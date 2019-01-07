@@ -1,6 +1,6 @@
 ---
-title: Get Application Insights performance data with load tests
-description: Get app performance data from Application Insights using the features of the Test hub in Microsoft VSTS and TFS
+title: Get App Insights data with load tests
+description: Get app performance data from Application Insights using the features of Azure DevOps and TFS
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.prod: devops
 ms.technology: devops-test
@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Get app performance data with your load tests
 
-[!INCLUDE [version-header-vs-ts](../_shared/version-header-vs-ts.md)]
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 <a name="ApplicationInsights"></a>
 
-When you load test your app in the cloud using Visual Studio Team Services (VSTS), 
+When you load test your app in the cloud using Azure DevOps, 
 you can compare app performance with virtual user load using 
 [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/).
 Then, by doing a quick root cause analysis, you can figure out which code 
@@ -29,13 +29,13 @@ is causing performance problems.
    if you haven't already done so.
 
 1. [Enable Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
-   for your VSTS subscription, if you haven't already done so.
+   for your Azure DevOps subscription, if you haven't already done so.
 
-1. [Link VSTS with your Azure subscription](../../organizations/accounts/connect-organization-to-aad.md),
+1. [Link Azure DevOps with your Azure subscription](../../organizations/accounts/connect-organization-to-azure-ad.md),
    if you haven't already done so.
 
-1. Sign in to VSTS from your web browser to refresh the Azure Resources Manager access token. 
-   The token is valid for 12 hours in the context of VSTS.
+1. Sign in to Azure DevOps from your web browser to refresh the Azure Resources Manager access token. 
+   The token is valid for 12 hours in the context of Azure DevOps.
 
    - If you have already signed, you must sign out and then sign in again.<p />
 
@@ -80,9 +80,9 @@ is causing performance problems.
 
 * [FAQs for load testing](reference-qa.md#qaappinsights)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with VSTS](get-started-simple-cloud-load-test.md) 
+* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

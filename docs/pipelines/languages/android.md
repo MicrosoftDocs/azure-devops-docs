@@ -1,6 +1,6 @@
 ---
-title: Android
-description: CI and CD for Android projects.
+title: Build, test, and deploy Android apps
+description: Set up CI/CD to build, test, and deploy Android projects.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,13 +8,16 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/03/2018
+ms.custom: seodec18
+ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Android
+# Build, test, and deploy Android apps in Azure Pipelines
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017**
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build, test, and deploy Android apps with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -23,38 +26,68 @@ monikerRange: '>= tfs-2017'
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
 > 
-> This guidance applies to Visual Studio Team Services.
+> This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
 This guide explains creating pipelines for Android projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
-
-::: moniker range="vsts"
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-::: moniker-end
 
 ## Get started
 
 You can build Android projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Android. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-Start by adding the following YAML to a file named **vsts-ci.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+### Sample code
+
+To get started using a sample Android project, fork this repository in GitHub, or import it into Azure Repos or TFS:
+
+```
+https://github.com/MicrosoftDocs/pipelines-android
+```
+
+### Your code
+
+To get started using your own code, add the following YAML to a file named **azure-pipelines.yml** in the root of your repository.
+Change values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
-# https://aka.ms/yaml
-queue: 'Hosted VS2017'
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+pool:
+  vmImage: 'macOS-10.13'
+
 steps:
 - task: Gradle@2
   inputs:
+    workingDirectory: ''
     gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx2048m'
-    tasks: 'assembleRelease'
+    gradleOptions: '-Xmx3072m'
+    publishJUnitResults: false
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: 'assembleDebug'
 ```
+
+### Adjust the build path
+
+Adjust the **workingDirectory** value if your `gradlew` file isn't in the root of the repository.
+The directory value should be relative to the root of the repository,
+such as `AndroidApps/MyApp` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp`.
+
+Adjust the **gradleWrapperFile** value if your `gradlew` file isn't in the root of the repository.
+The file path value should be relative to the root of the repository,
+such as `AndroidApps/MyApp/gradlew` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp/gradlew`.
+
+### Adjust Gradle tasks
+
+Adjust the **tasks** value for the build variant you prefer, such as `assembleDebug` or `assembleRelease`.
+For details, see Google's Android development documentation:
+[Build a debug APK](https://developer.android.com/studio/build/building-cmdline#DebugMode) and
+[Configure build variants](https://developer.android.com/studio/build/build-variants.html).
 
 ## Sign and align an Android APK
 
-Add the [Android Signing](../tasks/build/android-signing.md) task to sign and zipalign a built APK. An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM it consumes.
+If your build does not already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK,
+add the [Android Signing](../tasks/build/android-signing.md) task to the YAML.
+An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM consumed by the app.
 
-<blockquote><strong>Important: </strong>We recommend storing each of the specified passwords in a [secret variable](../process/variables.md#secret-variables).</blockquote>
+<blockquote><strong>Important: </strong>We recommend storing each of the following passwords in a [secret variable](../process/variables.md#secret-variables).</blockquote>
 
 ::: moniker range="> tfs-2018"
 
@@ -76,6 +109,32 @@ Add the [Android Signing](../tasks/build/android-signing.md) task to sign and zi
 
 > Note: The Android Emulator is currently available only on the **Hosted macOS** agent.
 
+Create the [Bash](../tasks/utility/bash.md) Task and copy paste the code below in order to install and run the emulator. 
+Don't forget to arrange the emulator parameters to fit your testing environment.
+ The emulator will be started as a background process and available in subsequent tasks.
+
+```bash
+#!/usr/bin/env bash
+
+# Install AVD files
+# echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+
+# Create emulator
+echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
+
+echo $ANDROID_HOME/emulator/emulator -list-avds
+
+echo "Starting emulator"
+
+# Start emulator in background
+nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
+$ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
+
+$ANDROID_HOME/platform-tools/adb devices
+
+echo "Emulator started"
+```
+
 ## Test on Azure-hosted devices
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
@@ -86,9 +145,10 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ::: moniker-end
 
-## Retain artifacts
+## Retain artifacts with the build record
 
-Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
+to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ::: moniker range="> tfs-2018"
 
@@ -106,7 +166,8 @@ Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifact
 
 ### App Center
 
-Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users, or promote the app to Intune or Google Play. A free [App Center]( https://appcenter.ms) account is required (no payment is necessary).
+Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users,
+or promote the app to Intune or Google Play. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
 
 ::: moniker range="> tfs-2018"
 
@@ -116,11 +177,14 @@ Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task t
 
 ### Google Play
 
-Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) and use the following tasks to automate interaction with Google Play. By default, these tasks authenticate to Google Play using a [service connection](..//library/service-endpoints.md) that you configure.
+Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)
+and use the following tasks to automate interaction with Google Play. By default, these tasks authenticate to Google Play
+using a [service connection](..//library/service-endpoints.md) that you configure.
 
 #### Release
 
-Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release) task to release a new Android app version to the Google Play store.
+Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release)
+task to release a new Android app version to the Google Play store.
 
 ::: moniker range="> tfs-2018"
 
@@ -136,7 +200,8 @@ Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemNam
 
 #### Promote
 
-Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote) task to promote a previously-released Android app update from one track to another, such as `alpha` &rarr; `beta`.
+Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote)
+task to promote a previously-released Android app update from one track to another, such as `alpha` &rarr; `beta`.
 
 ::: moniker range="> tfs-2018"
 
@@ -153,7 +218,8 @@ Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemNam
 
 #### Increase rollout
 
-Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout) task to increase the rollout percentage of an app that was previously released to the `rollout` track.
+Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout)
+task to increase the rollout percentage of an app that was previously released to the `rollout` track.
 
 ::: moniker range="> tfs-2018"
 
@@ -169,8 +235,8 @@ Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/item
 
 ## Related extensions
 
-[Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
-[Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (Microsoft)  
-[Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
-[Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
-[React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
+- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
+- [Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (Microsoft)  
+- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
+- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
+- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  

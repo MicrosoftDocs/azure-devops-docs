@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts FieldSetting API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts FieldSetting API | Extensions for Azure DevOps Services
 ms.assetid: 1eaad17a-3dc6-8c6e-c8e7-57aeb2f20424
 ms.prod: devops
 ms.technology: devops-ecosystem

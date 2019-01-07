@@ -1,5 +1,6 @@
 ---
-title: Define global lists | TFS
+title: Define global lists 
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the GLOBALLIST elements for defining pick lists used across several projects and work item types  
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,13 +12,12 @@ ms.date: 05/23/2017
 ---
 
 
-
 # Define global lists  
 
-<b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../../organizations/settings/work/import-process/differences.md).
+>This topic applies to project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Process template customization differences](../../organizations/settings/work/import-process/differences.md).
 >
 >The Inheritance process model doesn't support global lists. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 

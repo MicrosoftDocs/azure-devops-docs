@@ -1,5 +1,6 @@
 ---
-title: Review your repo history | VSTS & TFS
+title: Review your repo history
+titleSuffix: Azure Repos
 description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.prod: devops
@@ -8,14 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 10/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Review history
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.

@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Add an Action | Extensions for VSTS
-description: Add an action for your extension that extends VSTS.
+title: Add an Action | Extensions for Azure DevOps Services
+description: Add an action for your extension that extends Azure DevOps Services.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.topic: conceptual
 ms.manager: douge
@@ -51,7 +51,7 @@ Below is the code snippet that adds your action to the contributions section of 
 | text               | Text that will appear on the menu item.                                                                         |                  
 | title              | Tooltip text that will appear on the menu item.                                                                 |                   
 | icon               | URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri.                     |                   
-| groupId            | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers] (../test/discover-menu-group-ids.md). |
+| groupId            | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers](../test/discover-menu-group-ids.md). |
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 

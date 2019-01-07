@@ -1,6 +1,7 @@
 ---
-title: How to provision agents for deployment groups
-description: How to provision agents for deployment groups using Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Provision agents for deployment groups
+ms.custom: seodec18
+description: How to provision agents for deployment groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,13 +9,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # How To: Provision agents for deployment groups
 
-**VSTS | TFS 2018**
+**Azure Pipelines | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -27,20 +28,20 @@ and install and provision the agent on each virtual or physical machine in your 
 You can install the agent in any one of these ways:
 
 * [Run the script](#runscript) that is generated automatically when you create a deployment group.
-* [Install the **VSTS Agent** Azure VM extension](#azureext) on each of the VMs.
+* [Install the **Azure Pipelines Agent** Azure VM extension](#azureext) on each of the VMs.
 * [Use the **Azure Resource Group Deployment** task](#deploytask) in your release pipeline.
 
 For information about agents and pipelines, see:
 
-* [Concurrent pipelines in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
-* [Concurrent jobs in VSTS](../../licensing/concurrent-jobs-vsts.md).
-* [Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
+* [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
+* [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs.md).
+* [Pricing for Azure Pipelines features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 <a name="runscript"></a>
 
 ## Run the installation script on the target servers
 
-1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
@@ -61,34 +62,34 @@ For information about agents and pipelines, see:
    - When prompted to configure tags for the agent, press `Y` and enter any tags you will use to identify subsets of the machines in the group for partial deployments.
 
      > Tags you assign allow you to limit deployment to specific servers when 
-     the deployment group is used in a [**Run on machine group** phase](../../process/deployment-group-phases.md).
+     the deployment group is used in a [**Run on machine group** job](../../process/deployment-group-phases.md).
 
    - When prompted for the user account, press *Return* to accept the defaults.
 
    - Wait for the script to finish with the message `Service vstsagent.{organization-name}.{computer-name} started successfully`.<p />
 
-1. In the **Deployment groups** page of the **Build &amp; Release** hub, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
+1. In the **Deployment groups** page of **Azure Pipelines**, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
  
 <a name="azureext"></a>
 
-## Install the VSTS Agent Azure VM extension
+## Install the Azure Pipelines Agent Azure VM extension
 
-1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
 1. In the Azure portal, for each VM that will be included in the deployment group
-   open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **VSTS Agent**.
+   open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **Azure Pipelines Agent**.
 
-   ![Installing the VSTS Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
+   ![Installing the Azure Pipelines Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the VSTS subacription to use. For example, if the URL is `https://contoso.visualstudio.com`, just specify **contoso**.
+1. In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 
 1. Specify the project name and the deployment group name.
    
 1. Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
 
-1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against VSTS.
+1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against Azure Pipelines.
 
 1. Optionally, specify a comma-separated list of tags that will be configured on the agent.
    Tags are not case-sensitive, and each must no more than 256 characters.
@@ -102,13 +103,13 @@ For information about agents and pipelines, see:
 ## Use the Azure Resource Group Deployment task
 
 You can use the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
-to deploy an Azure Resource Manager (ARM) template that installs the VSTS Agent
+to deploy an Azure Resource Manager (ARM) template that installs the Azure Pipelines Agent
 Azure VM extension as you create a virtual machine, or to update the resource group
 to apply the extension after the virtual machine has been created.
 Alternatively, you can use the advanced deployment options of the
-Azure Resource Group Deployment task to deploy the agent to deployment groups. 
+Azure Resource Group Deployment task to deploy the agent to deployment groups.
 
-### Install the "VSTS Agent" Azure VM extension using an ARM template
+### Install the "Azure Pipelines Agent" Azure VM extension using an ARM template
 
 An ARM template is a JSON file that declaratively defines a set of Azure resources.
 The template can be automatically read and the resources provisioned by Azure.
@@ -150,24 +151,24 @@ For a Windows VM, create an ARM template and add a resources element under the
 
 where:
 
-* **VSTSAccountName** is required. The VSTS subscription to use. Example: If your URL is `https://contoso.visualstudio.com`, just specify `contoso`
+* **VSTSAccountName** is required. The Azure Pipelines subscription to use. Example: If your URL is `https://dev.azure.com/contoso`, just specify `contoso`
 * **TeamProject** is required. The project that has the deployment group defined within it
 * **DeploymentGroup** is required. The deployment group against which deployment agent will be registered
 * **AgentName** is optional. If not specified, the VM name with `-DG` appended will be used
 * **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters
-* **PATToken** is required. The Personal Access Token that will be used to authenticate against VSTS to download and configure the agent
+* **PATToken** is required. The Personal Access Token that will be used to authenticate against Azure Pipelines to download and configure the agent
 
 >**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
-For more information about ARM templates, see [Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates/).
+For more information about ARM templates, see [Define resources in Azure Resource Manager templates](/azure/templates/).
 
 To use the template:
 
-1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Build &amp; Release** hub, create a release pipeline with an environment that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
 1. Provide the parameters required for the task such as the Azure subscription, resource group name,
    location, and template information, then save the release pipeline.
@@ -176,18 +177,18 @@ To use the template:
 
 ### Install agents using the advanced deployment options
 
-1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
+1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Build &amp; Release** hub, create a release pipeline with an environment that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
 1. Select the task and expand the **Advanced deployment options for virtual machines** section.
    Configure the parameters in this section as follows:
 
    * **Enable Prerequisites**: select **Configure with Deployment Group Agent**.
 
-   * **TFS/VSTS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
+   * **Azure Pipelines/TFS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
      to your target. Agent registration for deployment groups requires access to your Visual
      Studio project. If you do not have an existing service connection, choose **Add** and create one now.
      Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
@@ -199,10 +200,8 @@ To use the template:
 
    * **Copy Azure VM tags to agents**: When set (ticked), any tags already configured on the Azure VM will
      be copied to the corresponding deployment group agent. By default, all
-     [Azure tags](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)
+     [Azure tags](/azure/azure-resource-manager/resource-group-using-tags)
      are copied using the format `Key: Value`. For example, `Role: Web`.
-
-   ![Configuring the Azure Resource Group Deployment task](_img/howto-provision-azure-vm-agents/deploy-arg-task.png)
 
 1. Provide the other parameters required for the task such as the Azure subscription, resource group name,
    and location, then save the release pipeline.
@@ -211,7 +210,7 @@ To use the template:
 
 ## Related topics
 
-* [Run on machine group phase](../../process/deployment-group-phases.md)
+* [Run on machine group job](../../process/deployment-group-phases.md)
 * [Deploy an agent on Windows](../../agents/v2-windows.md)
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)

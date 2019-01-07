@@ -1,6 +1,7 @@
 ---
-title: Service connections in VSTS and Team Foundation Server
-description: Service connections in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Service connections in Azure Pipelines and Team Foundation Server
+ms.custom: seodec18
+description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,13 +9,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Service connections for builds and releases
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 
@@ -27,13 +28,14 @@ for a build or deployment. For example, you may need to connect to your Microsof
 subscription, to a different build server or file server, to an online continuous
 integration environment, or to services you install on remote computers.
 
-You can define service connections in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) that are available for use in all
+You can define service connections in Azure Pipelines or Team Foundation Server (TFS) that are available for use in all
 your tasks. For example, you can create a service connection for your Azure subscription
 and use this service connection name in an Azure Web Site Deployment task in a release pipeline.
 
-You define and manage service connections from the Admin settings of your project.
-* VSTS: `https://{organization}.visualstudio.com/{teamproject}/_admin/_services`
-* TFS: `https://{tfsserver}/{collection}/{teamproject}/_admin/_services`
+You define and manage service connections from the Admin settings of your project:
+
+* Azure DevOps: `https://dev.azure.com/{organization}/{project}/_admin/_services`
+* TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
 Service connections are created at project scope. A service connection created in one project is not visible in another project.
 
@@ -41,23 +43,21 @@ Service connections are created at project scope. A service connection created i
 
 ## Create a service connection
 
-1. Open the **Services** page from the "settings" icon in the top menu bar.
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
-   ![Opening the Services page](_img/new-service-endpoint-1.png)
+2. Choose **+ New service connection** and select the type of service connection you need.
 
-1. Choose **+ New service connection** and select the type of service connection you need.
-
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
-
-1. Fill in the parameters for the service connection. The list of parameters differs for each  type of service connection - see the [following list](#ep-types).
+3. Fill in the parameters for the service connection. The list of parameters differs for each  type of service connection - see the [following list](#ep-types).
    For example, this is the default **Azure Resource Manager** connection dialog:
 
-   ![Azure Resource Manager connection dialog](_img/connection-dialog-arm.png)
+   ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
 
-1. Choose **OK** to create the connection.
+4. Choose **OK** to create the connection.
 
+> For more information about Azure Resource Manager service connections, see [Create an Azure service connection](connect-to-azure.md).
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
- 
+
 <a name="security"></a>
 
 ## Secure a service connection
@@ -70,15 +70,17 @@ You can control who can define new service connections in a library, and who can
 | User | Members of this role can use the service connection when authoring build or release pipelines. |
 | Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection. The user that created the service connection is automatically added to the Administrator role for that service connection.
 
-Two special groups called **Service connection administrators** and **Service connection creators** are added to every project. 
-Members of the Service connection administrators group can manage all service connections. By default, project administrators are added as members of this group. This group is also added as an administrator to every service connection created.
-Members of the Service connection creators group can create new service connections. By default, project contributors are added as members of this group. 
+Two special groups for service connections, endpoint administrators and creators, are added to every project.
+Members of the administrators group can manage all service connections.
+By default, project administrators are added as members of this group.
+This group is also added as an administrator to every service connection created.
+Members of the creators group can create new service connections.
+By default, project contributors are added as members of this group.
 
 To modify the security for a connection:
 
-1. Open the **Services** page from the "settings" icon in the top menu bar.
-
-   ![Opening the Services page](_img/new-service-endpoint-1.png)
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 1. Choose the **Roles** link to open the security tab.
 
@@ -86,6 +88,7 @@ To modify the security for a connection:
 
 1. Add users or groups, turn on and off inheritance, or change the role for existing users and groups as required.
 
+> For more information about securing an Azure Resource Manager service connection, see [Create an Azure service connection](connect-to-azure.md).
 
 ## Use a service connection
 
@@ -105,12 +108,12 @@ After the new service connection is created:
 
 ## Common service connection types
 
-VSTS and TFS support a variety of service connection types by default. Some of these are described below:
+Azure Pipelines and TFS support a variety of service connection types by default. Some of these are described below:
 
 * [Azure Classic service connection](#sep-azure-classic)
 * [Azure Resource Manager service connection](#sep-azure-rm)
 * [Azure Service Bus service connection](#sep-servbus)
-* [Bitbucket service connection](#sep-bbucket)
+* [Bitbucket Cloud service connection](#sep-bbucket)
 * [Chef service connection](#sep-chef)
 * [Docker Host service connection](#sep-dochost)
 * [Docker Registry service connection](#sep-docreg)
@@ -122,10 +125,12 @@ VSTS and TFS support a variety of service connection types by default. Some of t
 * [Kubernetes service connection](#sep-kuber)
 * [npm service connection](#sep-npm)
 * [NuGet service connection](#sep-nuget)
+* [Python package download service connection](#sep-python-download)
+* [Python package upload service connection](#sep-python-upload)
 * [Service Fabric service connection](#sep-fabric)
 * [SSH service connection](#sep-ssh)
 * [Subversion service connection](#sep-subversion)
-* [Team Foundation Server / VSTS service connection](#sep-tfsts)
+* [Team Foundation Server / Azure Pipelines service connection](#sep-tfsts)
 * [Visual Studio App Center service connection](#sep-vsmobile)
 
 After you enter the parameters when creating a service connection, validate the
@@ -161,14 +166,15 @@ using Azure credentials or an Azure management certificate.
 <h3 id="sep-azure-rm">Azure Resource Manager service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
-using Service Principal Authentication (SPA). The dialog offers two modes:
+using Service Principal Authentication (SPA) or an Azure Managed Service Identity.
+The dialog offers two main modes:
 
-* **Automated subscription detection**. In this mode, VSTS and TFS will attempt to query Azure for all of the subscriptions and instances to which you have access using the credentials you are currently logged on with in VSTS or TFS (including Microsoft accounts and School or Work accounts). 
-  If no subscriptions are shown, or subscriptions other than the one you want to use, you must sign out of VSTS or TFS and sign in again
+* **Automated subscription detection**. In this mode, Azure Pipelines and TFS will attempt to query Azure for all of the subscriptions and instances to which you have access using the credentials you are currently logged on with in Azure Pipelines or TFS (including Microsoft accounts and School or Work accounts).
+  If no subscriptions are shown, or subscriptions other than the one you want to use, you must sign out of Azure Pipelines or TFS and sign in again
   using the appropriate account credentials.
 
 * **Manual subscription pipeline**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
-  Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in VSTS or TFS.
+  Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in Azure Pipelines or TFS.
   This is also a useful way to maximize security and limit access.
 
 For more information, see [Create an Azure service connection](connect-to-azure.md)
@@ -184,7 +190,7 @@ Defines and secures a connection to a Microsoft Azure Service Bus queue.
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Service Bus ConnectionString | The URL of your Azure Service Bus instance. [More information](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-fundamentals-hybrid-solutions). |
+| Service Bus ConnectionString | The URL of your Azure Service Bus instance. [More information](/azure/service-bus-messaging/service-bus-fundamentals-hybrid-solutions). |
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
 <p />
 
@@ -274,9 +280,9 @@ Defines and secures a connection to a Docker registry.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription**, **endpoint**, or the equivalent name value in the script. |
 | Docker Registry | Required. The URL of the Docker registry. A default value is provided. |
-| Docker ID | Required. The identifier of the Docker account user. |
+| Docker ID | Required. The identifier of the Docker account user. For Azure Container Registry, this is likely to be a service principal. |
 | Password | Required. The password for the account user identified above. |
 | Email | Optional. An email address to receive notifications. |
 
@@ -343,7 +349,7 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your organization name at the right of the VSTS page heading.
+* Open your profile from your organization name at the right of the Azure Pipelines page heading.
 * At the top of the left column, under **DETAILS**, choose **Security**.
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
@@ -360,13 +366,15 @@ and [standard GitHub service connections](#sep-github).
 
 | Parameter | Description |
 | --------- | ----------- |
-| Choose authorization | Required. Either **Personal access token** or **Username and Password**. See notes below. |
+| Choose authorization | Required. Either **Personal access token**, **Username and Password**, or **OAuth2**. See notes below. |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | Token | Required for Personal access token authorization. See notes below. |
 | User name | Required for Username and Password authentication. The username to connect to the service. |
 | Password | Required for Username and Password authentication. The password for the specified username. |
+| OAuth configuration | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
+| GitHub Enterprise configuration URL| The URL is fetched from OAuth configuration. |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -379,7 +387,7 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your account name at the right of the VSTS page heading.
+* Open your profile from your account name at the right of the Azure Pipelines page heading.
 * At the top of the left column, under **DETAILS**, choose **Security**.
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
@@ -401,7 +409,7 @@ Defines a connection to the Jenkins service.
 
 [How do I create a new service connection?](#create-new)
 
-Also see [VSTS Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
+Also see [Azure Pipelines Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../release/artifacts.md#jenkinssource).
 
 *****
@@ -429,9 +437,9 @@ Defines and secures a connection to an npm server.
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Registry URL | Required. The URL of the npm server. |
-| Username | Required when connection type is **Basic authentication**. The username for authentication. |
-| Password | Required when connection type is **Basic authentication**. The password for the username. |
-| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
+| Personal Access Token | Required when connection type is **External Azure Pipelines**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -447,9 +455,44 @@ Defines and secures a connection to a NuGet server.
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Feed URL | Required. The URL of the NuGet server. |
 | ApiKey | Required when connection type is **ApiKey**. The authentication key. |
-| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required when connection type is **External Azure Pipelines**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
+<p />
+
+[How do I create a new service connection?](#create-new)
+
+*****
+
+<h3 id="sep-python-download">Python package download service connection</h3>
+
+Defines and secures a connection to a Python repository for downloading Python packages.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Python repository url for download | Required. The URL of the Python repository. |
+| Personal Access Token | Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
+<p />
+
+[How do I create a new service connection?](#create-new)
+
+*****
+
+<h3 id="sep-python-upload">Python package upload service connection</h3>
+
+Defines and secures a connection to a Python repository for uploading Python packages.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Python repository url for upload | Required. The URL of the Python repository. |
+| EndpointName | Required. Unique repository name used for twine upload. Spaces and special characters are not allowed. |
+| Personal Access Token | Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -516,25 +559,25 @@ Defines and secures a connection to the Subversion repository.
 
 *****
 
-<h3 id="sep-tfsts">Team Foundation Server / VSTS service connection</h3>
+<h3 id="sep-tfsts">Team Foundation Server / Azure Pipelines service connection</h3>
 
-Defines and secures a connection to another TFS or VSTS organization.
+Defines and secures a connection to another TFS or Azure DevOps organization.
 
 | Parameter | Description |
 | --------- | ----------- |
 | (authentication) | Select **Basic** or **Token Based** authentication. |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Connection URL | Required. The URL of the TFS or VSTS instance. |
+| Connection URL | Required. The URL of the TFS or Azure Pipelines instance. |
 | User name | Required for Basic authentication. The username to connect to the service. |
 | Password | Required for Basic authentication. The password for the specified username. |
-| Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and VSTS only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and Azure Pipelines only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
 [How do I create a new service connection?](#create-new)
 
 Use the **Verify connection** link to validate your connection information.
 
-See also [Authenticate access with personal access tokens for VSTS and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+See also [Authenticate access with personal access tokens for Azure DevOps and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 *****
 
@@ -545,7 +588,7 @@ Defines and secures a connection to Visual Studio App Center.
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| API Token | Required. The token to use to authenticate with the service. [Learn more](https://docs.microsoft.com/appcenter/api-docs/). |
+| API Token | Required. The token to use to authenticate with the service. [Learn more](/appcenter/api-docs/). |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -554,23 +597,23 @@ Defines and secures a connection to Visual Studio App Center.
 
 ## Extensions for other service connections
 
-Other service connection types and tasks can be installed in VSTS
+Other service connection types and tasks can be installed in Azure Pipelines
 and Team Foundation Server as extensions. Some examples of service connections currently
 available through extensions are:
 
-* [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
-  Deploy on-premises TFS builds with VSTS
-  Release Management through a TFS service connection
+* [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
+  Deploy on-premises TFS builds with Azure Pipelines
+  through a TFS service connection
   connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
-  from VSTS. For more information, see
+  from Azure Pipelines. For more information, see
   [External TFS](../release/artifacts.md#onpremtfssource) and
   [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
-* [TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
+* [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
   This extension provides integration with TeamCity through a TeamCity service connection,
   enabling artifacts produced in TeamCity to be deployed
-  by using Release Management. See
+  by using Azure Pipelines. See
   [TeamCity](../release/artifacts.md#teamcitysource)
   for more details.
 

@@ -1,7 +1,7 @@
 ---
-title: Explore Analytics OData metadata for VSTS  
-titleSuffix: VSTS  
-description: How to guide to explore the entity model OData metadata defined for the Analytics service in Visual Studio Team Services  
+title: Explore the OData metadata for the Analytics service 
+titleSuffix: Azure DevOps Services  
+description: Understand the entity model OData metadata defined for the Analytics service in Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
@@ -9,44 +9,52 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: '>= azdevserver-2019'
+ms.date: 12/04/2018
 ---
 
 # Explore the Analytics OData metadata
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Understanding the metadata associated with the entity model for the Analytics service is a pre-requisite for programmatically querying the [Data model for the Analytics Service](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
 
 In this topic you'll learn how to:
 >[!div class="checklist"]
 
->* Query the metadata on a specific team project
->* Query the metadata on a Account
+>* Query the metadata on a specific project
+>* Query the metadata on an organization
 >* Identify the keys, properties, and navigational properties associated with an Entity
 >* Identify the capabilities of the Analytics OData endpoint
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## How to query the service for metadata
-Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [team project or an entire VSTS account](account-scoped-queries.md).
+Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [project or an entire  organization in Azure DevOps](account-scoped-queries.md).
 
-### Query for metadata on a specific team project
-You construct the service root URL for a team project as shown:
+### Query for metadata on a specific project
+You construct the service root URL for a project as shown:
 
-> [!div class="tabbedCodeSnippets"]
-```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata
-```
-
-### Query for metadata on an organization
-The service root URL at the organization-level is constructed as:
+::: moniker range="vsts"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
 ```
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+
+::: moniker-end
 
 ## Interpret the metadata response
 The core components of the metadata response are EntityType and EntityContainer.
@@ -134,7 +142,7 @@ A Navigational Property with a Collection type represents a many to many relatio
 <NavigationProperty Name="Teams" Type="Collection(Microsoft.VisualStudio.Services.Analytics.Model.Team)"/>
 ```
 
-ReferentialConstraints tie Navigational Properties to a specific key of an Entity, represeting a many to one relationship in the model.
+ReferentialConstraints tie Navigational Properties to a specific key of an Entity, representing a many to one relationship in the model.
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

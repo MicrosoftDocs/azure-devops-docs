@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts PointWorkItemProperty API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts PointWorkItemProperty API | Extensions for Azure DevOps Services
 ms.assetid: b46f37a9-2858-c0dd-69fc-4242868fb7a8
 ms.prod: devops
 ms.technology: devops-ecosystem

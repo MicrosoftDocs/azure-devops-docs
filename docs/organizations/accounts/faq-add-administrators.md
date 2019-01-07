@@ -1,6 +1,8 @@
 ---
-title: Troubleshooting adding administrators to VSTS project collections and projects
-description: Troubleshooting adding administrators to VSTS project collections and projects 
+title: Troubleshoot adding administrators to projects and project collections
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn the answers to frequently asked questions (FAQs), about adding administrator to projects and collections
 ms.assetid: 7ad07299-c9c5-4748-bf31-6518356ee0d0
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,53 +10,49 @@ ms.topic: conceptual
 ms.manager: douge  
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
+# Troubleshoot adding administrators to projects and project collections
 
-# Troubleshooting adding administrators to VSTS project collections and projects
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-**VSTS**
+#### Q: When do I need to add someone to the project collection administrator role in TFS?
 
-#### Q: When do I need to add someone to the team project collection administrator role in TFS?
+A: It varies. For most organizations that use TFS, project collection administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
 
-**A:** It varies. For most organizations that use TFS, project collection administrators manage the collections that members of the Team Foundation Administrators group create, but members of the **Project Collection Administrators** group do not create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection, such as creating team projects, adding users to groups, and modifying the settings for the collection.
+#### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
 
-#### Q: What are the optimal permissions needed to administer a team project collection across all its components and dependencies?
+A: Project collection administrators for TFS must be members of the following groups or have the following permissions:
 
-**A:** A team project collection administrator for TFS must be a member of the following groups or have the following permissions:
+- Team Foundation Server: A member of the **Project Collection Administrators** group, or have the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
 
--   Team Foundation Server: **Project Collection Administrators** or the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
+- SharePoint Products: If the collection is configured with a site collection resource, then a member of the **Site Collection Administrators** group.
 
--   SharePoint Products: If the collection is configured with a site collection resource, **Site Collection Administrators**.
+- Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
 
--   Reporting Services: If the collection is configured with reporting resources, **Team Foundation Content Manager**.
+#### Q: I'm an admin, but I don't have permission to add a project collection administrator. What do I need?
 
-#### Q: I'm an admin, but I don't seem to have all the permissions I need to add a team project collection administrator. What might I need?
+A: The following permissions are required:
 
-**A: These are the required permissions:**
+- In TFS, you must belong to the **Project Collection Administrators** group, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
 
--   In TFS, you must belong to the **Project Collection Administrators** group, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
+- To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** or **Farm Administrators** groups for SharePoint Products.
 
--   To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** group or the **Farm Administrators** group for SharePoint Products.
+- To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
 
--   To add permissions for Reporting Services, you must be a member of the **Content Managers** group or the **Team Foundation Content Managers** group for Reporting Services.
+> [!Important]
+> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
 
->**Important:**
->  To perform administrative tasks such as creating team project collections, your user requires administrative permissions, and the service account that the Team Foundation Background Job Agent uses also must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
+#### Q: Where can I find information about each individual permission?
 
-#### Q: Where can I find information about each individual permission? 
+A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md). To give a user project administration permissions, complete the following steps:
 
-**A:** You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md).
-
-## Team project
-
-1. From the team page, choose the ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
+1. From the team page, select the settings icon ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
 
 2. Add the user to the **Project Administrators** group.
 
-3. If you use SharePoint with TFS, go to the team project portal and choose **Share** to give the user **Full Control**.
+3. If you use SharePoint with TFS, go to the project portal and choose **Share** to give the user **Full Control**.
 
-    ![Choose the SharePoint group and add users](_img/add-administrator-tfs/invite-administrators.png)
-
+   ![Choose the SharePoint group and add users](_img/add-administrator-tfs/invite-administrators.png)

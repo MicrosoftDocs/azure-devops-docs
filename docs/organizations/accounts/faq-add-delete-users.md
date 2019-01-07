@@ -1,6 +1,8 @@
 ---
-title: Troubleshoot adding and deleting organization users in the Visual Studio Team Services Users hub
-description: Permissions required to manage users and user access, find project collection administrator or organization owner, and manage Visual Studio subscriptions.
+title: Troubleshoot adding, removing users in an organization
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, find the organization owner, manage Visual Studio subscriptions, and more.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
@@ -8,22 +10,19 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/6/2017
+ms.date: 12/06/2018
 monikerRange: 'vsts'
 ---
 
+# Troubleshoot adding and deleting organization users
 
-# Troubleshoot adding and deleting organization users in the VSTS Users hub
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-**VSTS**
-
-## Permissions 
+## Permissions
 
 #### Q: Why can't I manage users?
 
-A: To access the Users hub and manage users, you must have Visual Studio Team Services (VSTS)
-[project collection administrator or organization owner permissions](#find-owner).
-
+A: To access and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-owner).
 
 <a name="find-owner"></a>
 
@@ -31,11 +30,9 @@ A: To access the Users hub and manage users, you must have Visual Studio Team Se
 
 [!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
 
-
 <a name="users-delay"></a>
 
 [!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
-
 
 ## Visual Studio subscriptions
 
@@ -43,15 +40,15 @@ A: To access the Users hub and manage users, you must have Visual Studio Team Se
 
 #### Q: When do I select "Visual Studio/MSDN Subscriber"?
 
-A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). VSTS automatically recognizes and validates Visual Studio subscribers who have VSTS as a benefit. You need the email address that's associated with the VSTS subscription. 
+A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the subscription.
 
 For example, if a user selects **Visual Studio/MSDN Subscriber** but the user doesn't have a valid, active Visual Studio subscription, the user can work only [as a stakeholder](../../organizations/security/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
-#### Q: Which Visual Studio subscriptions can I use with VSTS?
+#### Q: Which Visual Studio subscriptions can I use with Azure DevOps?
 
-A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/visualstudio/subscriptions/vs-vsts).
+A:  See [Azure DevOps benefits for Visual Studio subscribers](/visualstudio/subscriptions/vs-vsts).
 
 <a name="enterprise-professional"></a>
 
@@ -59,13 +56,13 @@ A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com
 
 #### Q: Why won't my Visual Studio subscription validate?
 
-A: See [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#faq)
+A: See [Why won't Azure DevOps recognize my Visual Studio subscription?](/visualstudio/subscriptions/vs-alternate-identity#faq)
 
 <a name="why-access-changed"></a>
 
 #### Q: Why do Visual Studio subscriber access levels change after a subscriber signs in?
 
-A: VSTS recognizes Visual Studio subscribers. VSTS automatically assigns a user access that's based on the user's subscription and not on the current access level that's assigned to the user.
+A: Azure DevOps recognizes Visual Studio subscribers. Azure DevOps automatically assigns a user access that's based on the user's subscription and not on the current access level that's assigned to the user.
 
 <a name="subscription-expired"></a>
 
@@ -79,27 +76,26 @@ A: If no other access levels are available, users can [work as stakeholders](../
 
 A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Users are transitioned automatically to the subscription.
 
-Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users will be transitioned systematically. The transition provides an upgrade by offering access to unlimited VSTS organizations (not just one organization) like Visual Studio Online Professional. 
+Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users are transitioned systematically. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
 
 The rest stays the same. You get monthly access to the Visual Studio Professional IDE. Pricing remains the same at $45 per user, per month. Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
-If you're purchasing user access to Visual Studio Professional for a specific VSTS organization (possible only if you purchased before November 2015) and want to upgrade, do this:
-	
+If you're purchasing user access to Visual Studio Professional for a specific organization (possible only if you purchased before November 2015) and want to upgrade, do the following:
+
 1. Before the last day of the calendar month, sign in to the [Azure portal](https://portal.azure.com). Reduce the number of paid Visual Studio Online Professional users to 0. 
 
 	This change takes effect on the first day of the next month. For the rest of the current calendar month, you aren't billed for any Visual Studio Online Professional users.
 
-1. On the first day of the next calendar month, [go to the Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+1. On the first day of the next calendar month, [go to the Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), Azure DevOps tab, and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
 
-	> [!NOTE]
-	> If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/vsts-billing-faq.md).
-
+   > [!NOTE]
+   > If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/billing-faq.md).
 
 ## User access
 
 #### Q: What does "Last Access" mean in the All Users view?
 
-The value in **Last Access** is the last date a user accessed any VSTS resources or services. Accessing VSTS includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the Package Management service from a build pipeline, or you might access the service by pushing code to VSTS from a Git command line or IDE.
+The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you might access the service by pushing code to Azure DevOps from a Git command line or IDE.
 
 <a name="paid-basic-access-join-other-organizations"></a>
 
@@ -115,13 +111,13 @@ The value in **Last Access** is the last date a user accessed any VSTS resources
 
 A: This might happen for different reasons (although the user can continue to [work as a stakeholder](../../organizations/security/get-started-stakeholder.md)):
 
-*	The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, VSTS restores access automatically.
+*	The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
 
 *	The Azure subscription used for billing is no longer active. This affects all purchases made with this subscription, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 
-*	The Azure subscription used for billing was unlinked from your VSTS organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
+*	The Azure subscription used for billing was unlinked from your organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
 
-*	Your VSTS organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../../billing/buy-basic-access-add-users.md). 
+*	Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../../billing/buy-basic-access-add-users.md). 
 
 	Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
 
@@ -131,16 +127,15 @@ A: This might happen for different reasons (although the user can continue to [w
 
 	*	The extension was uninstalled. Users can reinstall the extension by visiting the extension page in the [Marketplace](https://marketplace.visualstudio.com).
 
-	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your VSTS organization or might no longer be active. Learn more about [linking your VSTS organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
+	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your organization or might no longer be active. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
 
-
-###	Azure Active Directory and your organization
+### Azure Active Directory and your organization
 
 <a name="AddUserDirectory"></a>
 
 #### Q: Why do I have to add users to a directory?
 
-A: Your VSTS organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
+A: Your organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
 If you're a directory administrator, you can [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). If you're not an administrator, work with your directory administrator to add users. Learn more about [how to control access by using a directory](access-with-azure-ad.md).
 
@@ -152,7 +147,7 @@ If you're a directory administrator, you can [add users to the directory](https:
 
 #### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
-A: Yes, but deleting a user from the directory removes the user's access to all VSTS organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
+A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
@@ -162,8 +157,6 @@ A: Yes, but deleting a user from the directory removes the user's access to all 
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-
 ###	More support
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
-

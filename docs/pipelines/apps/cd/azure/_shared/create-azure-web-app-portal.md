@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-## Create an Azure web app using the portal
+## Create an Azure Web App using the portal
 
 > [!NOTE]
 > If you already have a web app that you want to use, you can skip this and move to the next section.  
@@ -26,7 +26,7 @@ ms.topic: include
 
 1. Choose the **App Services** icon in the left navigation bar.
    After a few minutes, you'll see the new web app appear in the list.
-   Ensure that it is running. 
+   Ensure that it is running.
 
    ![Checking the new web app is running](_img/create-webapp-04.png)
 

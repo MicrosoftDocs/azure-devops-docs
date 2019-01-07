@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitBaseVersionDescriptor API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitBaseVersionDescriptor API | Extensions for Azure DevOps Services
 ms.assetid: 34b7e04d-66df-1209-7118-871feb47fc93
 ms.prod: devops
 ms.technology: devops-ecosystem

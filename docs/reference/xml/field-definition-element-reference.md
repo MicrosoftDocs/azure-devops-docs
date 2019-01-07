@@ -1,5 +1,6 @@
 ---
-title: FIELD (Definition) element reference | VSTS & TFS
+title: FIELD (Definition) element reference 
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
 ms.prod: devops
 ms.technology: devops-agile
@@ -12,7 +13,6 @@ ms.date: 06/16/2017
 
 # FIELD (Definition) element reference
 
-
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **FIELD** (Definition) element to define a work item field and specify the rules and conditions that apply to it. The attributes that you assign to a field determines its data type and whether it is available for inclusion in reports.  
@@ -23,12 +23,13 @@ You use the **FIELD** (Definition) element to define a work item field and speci
 ## Syntax  
   
 > [!NOTE]    
->**Feature availability:** The Boolean data type is supported for VSTS and for on-Premises TFS, for TFS 2017.2 and later versions. 
+> The Boolean data type is supported for Azure DevOps Services and for on-premises TFS 2017.2 and later versions. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML  
-<FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
-syncnamechanges ="true | false" reportable="Dimension | Detail | Measure"formula="sum"  
+<FIELD name="fieldDisplayName" refname="fieldReferenceName" 
+type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
+syncnamechanges ="true | false" reportable="Dimension | Detail | Measure" formula="sum" 
 reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >  
    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
    <ALLOWEXISTINGVALUE />  

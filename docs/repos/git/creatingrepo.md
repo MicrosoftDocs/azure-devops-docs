@@ -1,5 +1,6 @@
 ---
-title: Create a new Git repo | VSTS & TFS
+title: Create a new Git repo
+titleSuffix: Azure Repos
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.prod: devops
@@ -8,14 +9,14 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
 #  Create a new Git repo
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
 
 A Git repository, or repo, is a folder that you've told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 
@@ -61,7 +62,7 @@ Create a new Git repo for your new Visual Studio solution by selecting **Create 
 ### From an existing solution
 
 To create a repo from an existing solution not in version control, select the **Publish** button in the bottom-right of the lower status bar ![Visual Studio publish button](_img/share-your-code-in-git-vs/publish_status_bar.png).
-This creates a new Git repo in the same directory as your solution and opens up the **Publish** view in Team Explorer so you can [push](pushing.md) your code to VSTS or 
+This creates a new Git repo in the same directory as your solution and opens up the **Publish** view in Team Explorer so you can [push](pushing.md) your code to Azure Repos or 
 another remote Git repository.
 
 ![Publishing a solution to a new remote Git repository in Visual Studio Team Explorer](_img/vspublish.gif)
@@ -100,7 +101,7 @@ Once you are ready to share your code, [get the clone URL](clone.md#clone_url) f
 can [push](pushing.md) changes to a shared repo.
 
 ```
-git remote add origin https://fabrikam.visualstudio.com/Fabrikam/_git/FabrikamFiber
+git remote add origin https://dev.azure.com/fabrikam/Fabrikam/_git/FabrikamFiber
 ```
 
 [Push](pushing.md) your changes to the `origin` repository to share with others:
@@ -110,7 +111,7 @@ git push origin users/frank/feature
 ```
 
 > [!NOTE]
-> You can also create and get repos from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/vsts/overview?view=vsts-cli-latest).
 
 ---
 

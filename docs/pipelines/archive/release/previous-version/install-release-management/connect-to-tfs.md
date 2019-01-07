@@ -1,5 +1,6 @@
 ---
 title: Connect Microsoft Release Management server/client to TFS
+ms.custom: seodec18
 description: Learn how you can connect Release Management to Team Foundation Server (TFS) using server and client for VS 2015 and TFS 2015
 ms.assetid: CEB0875B-F42A-45F3-B743-D6C522F7E5A6
 ms.prod: devops
@@ -25,7 +26,7 @@ for details of compatible versions of TFS. If you want to connect TFS, you
 will need a user account to act as an intermediary between TFS and Release
  Management. We show an account being created for this purpose, but you can 
 use an account that already exists in TFS as long as it has the appropriate 
-permissions. 
+permissions.
 
 ## Connect Release Management to TFS
  
@@ -33,7 +34,7 @@ permissions.
    Management. In addition, to manage permissions in TFS, you must be a member 
    of the **Project Collection Administrators** group. To add a user account, 
    you must be a member of the Windows **Administrators** group (local user) 
-   or the **Domain Administrators** group (domain account). 
+   or the **Domain Administrators** group (domain account).
 
     > [!TIP]
     > _Do you need to add team mates to the **Release Manager** role 
@@ -42,7 +43,7 @@ permissions.
 1. Either designate an existing account or create a user account in TFS 
    to act as intermediary account for Release Management. This can be a local 
    or domain account. It doesn't need any special Windows or Domain permissions.
-   We're creating a local Windows account named RMTFS here. 
+   We're creating a local Windows account named RMTFS here.
 
    ![Selecting an intermediary account for TFS](_img/connect-tfs-02.png)
 
@@ -54,13 +55,13 @@ permissions.
 1. In TFS, make the account a member of the **Project Collection 
    Administrators** group. For more details, see
    [Set administrator permissions for project collections](../../../../../organizations/security/set-project-collection-level-permissions.md),
-   though you can ignore the procedures for SharePoint and Reporting Services. 
+   though you can ignore the procedures for SharePoint and Reporting Services.
    Release Management doesn't require access to these features.
 
    ![Adding the account to the Project Collection Administrators group](_img/connect-tfs-03.png)
 
 1. In TFS, select the account and set the **Make requests on behalf of 
-   others** permission to **Allow**. 
+   others** permission to **Allow**.
 
    ![Allowing requests on behalf of others](_img/connect-tfs-04.png)
 
@@ -74,7 +75,7 @@ permissions.
    ![Setting the TFS configuration values in Release Management client](_img/connect-tfs-06.png)
 
 1. Enter the name and password of the account that you permissioned in step 2
-   and then **Verify** the password for the account. 
+   and then **Verify** the password for the account.
 
    ![Setting the connection identity in Release Management client](_img/connect-tfs-07.png)
 

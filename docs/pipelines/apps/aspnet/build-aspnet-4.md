@@ -1,148 +1,89 @@
 ---
-title: Build your ASP.NET 4 app | VSTS or Team Foundation Server
-description: Define a continuous integration (CI) build for your ASP.NET 4 app in VSTS or Microsoft Team Foundation Server (TFS)
+title: Build ASP.NET apps
+description: Build ASP.NET apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 12/20/2017
-ms.topic: quickstart
+ms.custom: seodec18
+ms.date: 08/27/2017
 monikerRange: '>= tfs-2017'
 ---
 
-# Build your ASP.NET 4 app
+# Build ASP.NET apps in Azure Pipelines
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-ASP.NET is a mature web platform that provides all the services that you require to build enterprise-class server-based web applications using .NET on Windows. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../languages/dotnet-core.md).
 
-## Prerequisites
+::: moniker range="tfs-2017"
 
-[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
+> [!NOTE]
+> 
+> This guidance applies to TFS version 2017.3 and newer.
 
-* While the simplest way to try this quickstart is to use a VSTS organization, you can also use a TFS server instead of a VSTS organization. Make sure that you have [configured a build agent](../../agents/v2-windows.md) for your project, and that you have a version of Visual Studio matching your development machine installed on the agent machine.
+::: moniker-end
 
-## Get the sample code
+## Example
 
-[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
+This example shows how to build an ASP.NET project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
-https://github.com/adventworks/aspnet4-sample
+https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/webapp/Application
 ```
 
-# [VSTS or TFS repo](#tab/vsts)
+The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project.
 
-[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+::: moniker range="< vsts"
+> [!NOTE]
+> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
+::: moniker-end
 
-# [GitHub repo](#tab/github)
+* After you have the sample code in your own repository, create a pipeline using the instructions in [Use the designer](../../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
+
+* Save the pipeline and queue a build to see it in action.
+
+## Build environment
 
 ::: moniker range="vsts"
 
-[!INCLUDE [include](../_shared/get-sample-code-github.md)]
+You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
+Use the **Hosted VS2017** agent pool to build on Visual Studio 2017 or Visual Studio 15.* versions. Use the **Hosted** agent pool to build using the tools in Visual Studio 2013 or Visual Studio 2015.
+
+To change the agent pool on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent pool** that you want to use.
+
+You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. This is particularly helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-**TFS**: Does not apply.
+Your builds run on a [self-hosted agent](../../agents/agents.md#install).
+Make sure that you have the necessary version of the Visual Studio installed on the agent.
 
 ::: moniker-end
 
----
+## Build multiple configurations
 
-This quickstart works for apps targeting the .NET Framework 4 or newer. The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project.
+It is often required to build your app in multiple configurations. The following steps extend the example above to build the app on four configurations: [Debug, x86], [Debug, x64], [Release, x86], [Release, x64].
 
-## Set up continuous integration
+1. Click the **Variables** tab and modify these variables:
 
-[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
+ * `BuildConfiguration` = `debug, release`
 
-[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
+ * `BuildPlatform` = `x86, x64`
 
-1. Create a new build pipeline.
+1. Select **Tasks** and click on the **agent job** to change the options for the job:
 
- # [VSTS or TFS repo](#tab/vsts)
+ * Select **Multi-configuration**.
 
- Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+ * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
- ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
-
- You are taken to the **Build and Release** hub and asked to **Select a template** for the new build pipeline.
-
- # [GitHub repo](#tab/github)
-
- ::: moniker range="vsts"
-
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
-
- ::: moniker-end
-
- ::: moniker range="< vsts"
-
- **TFS**: Does not apply.
-
- ::: moniker-end
-
-  ---
-
-1. In the right panel, click **ASP.NET**, and then click **Apply**.
-
- You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
-
-1. For the **Agent queue**:
-
- ::: moniker range="vsts"
-
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
- 
- ::: moniker-end
-
- ::: moniker range="< vsts"
-
- * **TFS:** Select a queue that includes a [Windows build agent](../../agents/v2-windows.md).
- 
- ::: moniker-end
-
-1. Click **Get sources** and then:
-
- # [VSTS or TFS repo](#tab/vsts)
-
- Observe that the new build pipeline is automatically linked to your repository.
-
- # [GitHub repo](#tab/github)
-
- ::: moniker range="vsts"
-
- Select your version control repository. You'll need to authorize access to your repo.
-
- ::: moniker-end
-
- ::: moniker range="< vsts"
-
- **TFS**: Does not apply.
-
- ::: moniker-end
-
- ---
-
-1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
-
-1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
-
-1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
-
-[//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
-
-## View build summary
-
-[!INCLUDE [include](../_shared/view-build-summary.md)]
-
-## Next steps
-
-[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
+1. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.

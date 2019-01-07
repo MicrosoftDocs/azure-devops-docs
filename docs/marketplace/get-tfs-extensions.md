@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015 < vsts'
 
 To add new features and capabilities to your TFS, 
 install extensions from the 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). 
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). 
 
 *	Working with TFS 2017? [Connect to TFS](#connected-tfs), 
 so you can install [free, preview, and paid extensions](#difference).
@@ -54,7 +54,7 @@ you can create a new subscription when you make your first purchase.
 > you must have at least Co-administrator permissions for that subscription. 
 > If you don't have permissions, have an Azure Account Administrator 
 > or Service Administrator go to the Azure classic portal and 
-> [add you as Co-administrator](https://docs.microsoft.com/en-us/azure/billing-add-change-azure-subscription-administrator) 
+> [add you as Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
 > to the Azure subscription that you want to use for billing. 
 > Co-administrator permissions are available only in the classic Azure portal.
 
@@ -132,7 +132,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Download from Visual Studio Marketplace
 
-0.  Sign in to [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
+0.  Sign in to [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/azuredevops).
 
 0.	Find the extension that you want to install.
 

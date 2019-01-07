@@ -1,5 +1,5 @@
 ---
-title: VSS/SDK/Services/Navigation HostNavigationService API | Extensions for Visual Studio Team Services
+title: VSS/SDK/Services/Navigation HostNavigationService API | Extensions for Azure DevOps Services
 description: Service which allows interaction with the browser location and navigation of the host frame
 ms.assetid: 2eb91c1e-0665-771c-e764-8a1982fdf35e
 ms.prod: devops

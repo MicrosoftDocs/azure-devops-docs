@@ -1,5 +1,6 @@
 ---
 title: Deploy an agent on Windows for TFS 2015
+titleSuffix: TFS
 description: Use Build and Release agents for Team Foundation Server (TFS) 2015 to build or deploy your Windows and Azure applications.
 ms.topic: conceptual
 ms.prod: devops
@@ -14,12 +15,12 @@ monikerRange: 'tfs-2015'
 
 # Deploy an agent on Windows for TFS 2015
 
-**[VSTS](v2-windows.md) | [TFS 2018](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**[Azure Pipelines](v2-windows.md) | [TFS 2018](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you may need a Windows agent. Windows agents can also build and deploy Java and Android apps.
 
 > Before you begin:
- * If you use [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
+ * If you use [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
  * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](/tfs/server/install/single-server).
  *  Otherwise, you've come to the right place to set up an agent on Windows for TFS 2015. Continue to the next section.
 
@@ -81,7 +82,7 @@ You can use command-line parameters when you configure the agent (```ConfigureAg
 ### Common parameters
 
 */Login:UserName,Password[;AuthType=(AAD|Basic|PAT)]*  
-Used for configuration commands against a VSTS organization. The parameter is used to specify the pool administrator credentials. The credentials are used to perform the pool administration changes and are not used later by the agent.  
+Used for configuration commands against an Azure DevOps organization. The parameter is used to specify the pool administrator credentials. The credentials are used to perform the pool administration changes and are not used later by the agent.  
 
 When using personal access tokens (PAT) authentication type, specify anything for the user name and specify the PAT as the password.
 
@@ -105,7 +106,7 @@ Configure supports the /NoPrompt switch for automated installation scenarios and
 For troubleshooting configuration errors, detailed logs can be found in the \_diag folder under the agent installation directory.
 
 */ServerUrl:ServerUrl*  
-The server URL should not contain the collection name. For example, `http://example:8080/tfs` or `https://example.visualstudio.com`
+The server URL should not contain the collection name. For example, `http://example:8080/tfs` or `https://dev.azure.com/example`
 
 */Name:AgentName*  
 The friendly name to identify the agent on the server.

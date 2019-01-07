@@ -4,4 +4,4 @@ ms.topic: include
  
 ## Dashboards 
 
-User-configurable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable widgets to display information. Learn more: [Add and manage dashboards](/vsts/report/dashboards/dashboards.md).
+Dashboards are user-configurable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable widgets to show information. To learn more, see [Add and manage dashboards](/azure/devops/report/dashboards/dashboards).

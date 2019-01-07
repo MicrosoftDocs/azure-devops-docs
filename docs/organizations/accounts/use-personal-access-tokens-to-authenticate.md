@@ -1,6 +1,8 @@
 ---
-title: Authenticate access with personal access tokens | VSTS & TFS
-description: Use personal access tokens to authenticate access to VSTS and Team Foundation Server (TFS)
+title: Authenticate with personal access tokens
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Use personal access tokens (PATs) as alternate passwords to authenticate access to Azure DevOps.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
@@ -8,53 +10,51 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/13/2018
+ms.date: 12/19/2018
 monikerRange: '>= tfs-2017'
 ---
-# Authenticate access with personal access tokens for VSTS and TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+# Authenticate access with personal access tokens
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) use enterprise-grade authentication, backed by Microsoft account or Azure Active Directory (Azure AD), to protect and secure your data.  Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in)
-natively support Microsoft account and Azure AD authentication, so you can directly use those authentication methods to sign in.
+[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
-For non-Microsoft tools that integrate into VSTS but do not support Microsoft account or Azure AD authentication
-interactions (for example, Git, NuGet, or Xcode), you need to set up personal access tokens by using [Git credential managers](../../repos/git/set-up-credential-managers.md) or by creating PATs manually (see below).  You can also use personal access tokens when there is no "pop up UI" such as with command-line tools, integrating tools or tasks into build pipelines, or using  [REST APIs](../../integrate/get-started/rest/basics.md).
+Personal access tokens (PATs) are alternate passwords that you can use to authenticate in to Azure DevOps and Team Foundation Server (TFS). In this article, we walk you through how to create or revoke PATS.
 
-Personal access tokens essentially are alternate passwords that you create in a secure way using your normal authentication, and PATs can have expiration dates, limited scopes (for example, only certain REST APIs or command line operations are valid), and specific VSTS organizations.  You can put them into environment variables so that scripts do not hard code passwords.  For more information, see [Authentication overview](../../repos/git/auth-overview.md) and  [scopes](../../integrate/get-started/authentication/oauth.md#scopes).
+Azure DevOps Services and TFS use enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication.
+
+For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
 [!INCLUDE [personal-access-tokens-procedure](../../repos/git/_shared/personal-access-tokens.md)]
 
-## Using PATs
+## Frequently asked questions  
 
-For example using PATs, see using [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../package/nuget/consume.md#mac-os), and [Reporting clients](../../report/analytics/client-authentication-options.md#enter-credentials-within-a-client).
+### What is my Azure DevOps Services URL?
 
-## Frequently asked questions (FAQ)  
+https://dev.azure.com/{yourorganization}
 
-### Q: What is my Visual Studio Team Services URL?
+### Where can I learn more about how to use PATs?
 
-**A:** https://{yourorganization}.visualstudio.com, for example.
+For examples of how to use PATs, see [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../artifacts/nuget/consume.md#mac-os), and [Reporting clients](../../report/analytics/client-authentication-options.md#enter-credentials-within-a-client).
 
-### Q: What notifications may I receive regarding my PAT?
+### What notifications will I get about my PAT?
 
-**A:** Users will receive two notifications during the lifetime of a PAT, one at creation and the other 7 days approaching the expiration.
+Users receive two notifications during the lifetime of a PAT, one at creation and the other seven days before the expiration.
 
-PAT creation
+The following notification is sent at PAT creation:
 
 ![PAT creation notification](_img/use-personal-access-tokens-to-authenticate/PAT-creation.png)
 
-PAT nearing expiration
+The following notification is sent - a PAT is near expiration:
 
-![PAT nearing expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
+![PAT near expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
-### Q: What do I do if I believe that someone other than me is creating access tokens on my organization?
+### What do I do if I get an unexpected PAT notification?
 
-**A:** If you receive a notification of a PAT being created and you're unaware of what caused this, there are a number of actions that may have automatically create a PAT on your behalf, for example:
+An administrator or a tool might have created a PAT on your behalf. See the following examples:
 
-- Connecting to a VSTS git repo using git.exe.  This creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine".
-- Setting up an Azure App Service web app deployment.  This creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app".
-- Setting up web load testing as part of a pipeline.  This creates a token with a display name like "WebAppLoadTestCDIntToken".
-- Setting up Microsoft Teams Integration Messaging Extension.  This creates a token with a display name like "Microsoft Teams Integration".
+- When you connect to an Azure DevOps Services Git repo through git.exe. it creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
+- When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app."
+- When you or an admin sets up web load testing as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
+- When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
-If you still believe a PAT was created in error, we suggest [revoking the PAT](../../integrate/get-started/authentication/PATs.md). The next step would be to investigate whether or not your password has been compromised; changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your organization was used from an unknown source/location.  
-
+If you still believe that a PAT exists in error, we suggest that you [revoke the PAT](../../integrate/get-started/authentication/PATs.md). Next, change your password. As an Azure Active Directory user, check with your administrator to see if your organization was used from an unknown source or location.

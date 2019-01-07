@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts VersionControlRecursionType API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts VersionControlRecursionType API | Extensions for Azure DevOps Services
 ms.assetid: d82962b4-8e79-a65e-4357-d35a1de0acce
 ms.prod: devops
 ms.technology: devops-ecosystem

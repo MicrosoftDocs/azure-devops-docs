@@ -13,7 +13,7 @@ public partial class Program
 		// For more info: https://www.visualstudio.com/integrate/api/tfs/projects
     	using(var client = new HttpClient())
         {
-    		var baseUrl = "https://fabrikam-fiber-inc.visualstudio.com/defaultcollection/_apis/projects";
+    		var baseUrl = "https://dev.azure.com/fabrikam-fiber-inc/_apis/projects";
 
 			// Get the current user's ID
 			using(var request = new HttpRequestMessage(HttpMethod.Get, baseUrl) 

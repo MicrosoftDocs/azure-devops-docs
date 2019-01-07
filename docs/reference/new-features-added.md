@@ -8,7 +8,7 @@ ms.assetid: 1A7B7A18-457F-4AFF-9151-FCF13B850907
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azdevserver-2019'
 ms.date: 04/05/2017
 ---
 
@@ -21,7 +21,7 @@ Supports the following FWLINK: Learn more about these configuration changes: htt
 <b>TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 > [!NOTE]    
-<b>Feature availability: </b>This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
+<b>Feature availability: </b>This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index).
   
 The Configure Features Wizard detects which features have and haven't been configured. Most new features include additions or changes to work item types (WITs), categories, or process configuration. New features are introduced with different updates to Team Foundation Server (TFS).  
 

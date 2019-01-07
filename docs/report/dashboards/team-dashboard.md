@@ -1,6 +1,8 @@
 ---
-title: TFS team home page or dashboard  
-description: View progress and gain quick access to code, builds, and work items from the team home page in Visual Studio Team Services (VSTS)  and Team Foundation Server (TFS)  
+title: Team home page or dashboard  
+titleSuffix: TFS
+description: View progress and gain quick access to code, builds, and work items from the team home page in Team Foundation Server (TFS)  
+ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
@@ -8,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2015'
+monikerRange: '<= tfs-2015'
 ms.date: 08/11/2016
 ---
 
@@ -31,7 +33,7 @@ If you need to add a team first, see [Add teams](../../organizations/settings/ad
 
 You pin an item to the team dashboard from the code, work, and build pages.
 
-1.  If you aren't a team administrator, [get added as one](../../organizations/settings/configure-team-settings.md).  
+1.  If you aren't a team administrator, [get added as one](../../organizations/settings/manage-teams.md).  
 
 2.	Pin a work item query from its context menu.
 
@@ -47,7 +49,7 @@ You pin an item to the team dashboard from the code, work, and build pages.
 
 	Using Internet Explorer 10 or Internet Explorer 11, you can also tab to a tile and press Shift+L or Shift+R to move the selected tile to the left or to the right.
 
-5.	Click a tile or link to open it. 
+5.	Choose a tile or link to open it. 
 
 ###Remove an item or chart from your dashboard 
 

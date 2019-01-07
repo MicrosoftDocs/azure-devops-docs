@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - May 13
 description: VSTS release notes for May 13 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 6def2b57-0807-4355-a22f-7d10d74ccb8c
 ms.date: 06/01/2016
@@ -68,7 +68,7 @@ The final change in this sprint’s deployment is an update to our login page so
 
 ![Multiple repositories](_img/5_13_08.png)
 
-That’s it for sprint 47. Let us know what you think. We're listening on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for sprint 47. Let us know what you think. We're listening on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

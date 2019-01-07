@@ -121,7 +121,7 @@ Example steps:
 	```
 3. Import the updated categories.xml file. 
 
-	```witadmin importglobalworkflow /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
+	```witadmin importcategories /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
 
 
 ## 5. Delete TFS-PS global workflow rules from projects and project collections  
@@ -255,14 +255,14 @@ The final elements which remain correspond to entries in the TFS_Configuration d
 
 If you choose to remove these entries, run the following commands on the data-tier server in the order provided:  
 
-```sql
+```SQL
 DELETE FROM <TFS Configuration Database>.[dbo].[tbl_CatalogNode]    
 	WHERE PartitionId>=0 AND ResourceIdentifier IN     
 	(SELECT [Identifier] FROM <TFS Configuration Database>.dbo.tbl_CatalogResource   
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0)
 ```
  
-```sql
+```SQL
 DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource  
 	WHERE resourcetype = '289DD275-CECA-4698-8042-38D2E86FC682' and PartitionId>=0
 ```

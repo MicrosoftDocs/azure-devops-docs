@@ -89,7 +89,7 @@ go to the top right corner of the page, and click your user name to view your pr
 with the identity that's a user in the project collection 
 where you want to install the extension.
 
-	> If you're asked to choose "work or school account" or 
+	> If you're asked to choose "work or school organization" or 
 	> "personal account", this means you used an email address 
 	> that's the same for a Microsoft account and a "work or school account" 
 	> that's managed by your organization in Azure Active Directory. 
@@ -105,11 +105,11 @@ where you want to install the extension.
 
 ### Q: Why doesn't the extension I want show a download button?
 
-A: Some extensions work only with VSTS, not TFS, for one of these reasons:
+A: Some extensions work only with Azure DevOps Services, not TFS, for one of these reasons:
 
-- The extension uses VSTS features that aren't released yet for TFS.
+- The extension uses Azure DevOps Services features that aren't released yet for TFS.
 - The [extension manifest](../extend/develop/manifest.md) indicates that the extension 
-is available only for VSTS (targets = Microsoft.Visualstudio.Services.Cloud).
+is available only for Azure DevOps Services (targets = Microsoft.Visualstudio.Services.Cloud).
 - The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
 
 <a name="no-upload"></a>
@@ -135,6 +135,6 @@ for the Team Foundation Server where you want to upload extensions.
 
 ## Purchases & billing
 
-- [VSTS billing overview](../organizations/billing/overview.md)
-- [VSTS billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [Azure DevOps Services billing overview](../organizations/billing/overview.md)
+- [Azure DevOps Services billing FAQ](../organizations/billing/billing-faq.md)
 - [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)

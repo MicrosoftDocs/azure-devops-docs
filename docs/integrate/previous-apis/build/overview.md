@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Build Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Visual Studio Team Services builds programmatically using the REST APIs.
+monikerRange: '>= tfs-2015 < vsts'
+title: Build Overview | REST API Reference for Team Foundation Server
+description: Work with VSTS builds programmatically using the REST APIs.
 ms.assetid: 6C2E7900-891E-4C9E-9FD1-4798E37019FB
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Build
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2.md)]
 
 * [Builds](./builds.md)

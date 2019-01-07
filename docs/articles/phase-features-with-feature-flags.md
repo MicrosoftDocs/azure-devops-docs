@@ -6,7 +6,7 @@ ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 04/26/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 monikerRange: '>= tfs-2013'
 ---
@@ -21,7 +21,7 @@ Are you planning to continuously integrate features into your application while 
 - How can you revert a change deployed to production without rolling back your release?
 - How can you present users with variants of a feature, to determine which one performs better?
 
-This topic aims to answer these questions and share an implementation of feature flags (FF) and A|B testing used with Visual Studio Team Service (VSTS) extensions.
+This topic aims to answer these questions and share an implementation of feature flags (FF) and A|B testing used with Azure DevOps extensions.
 
 ## Considerations
 
@@ -71,12 +71,12 @@ They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for 
 	- No upgrades - you're always using the latest and greatest
 	- No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on
 	- Always on and optimized for the Internet
-- It's integrated with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+- It's integrated with Azure DevOps Services and Team Foundation Server (TFS)
 - It's simple and cost-effective for an open-source project
 
 ## Common Scenarios
 
-You have a [CI/CD pipeline ](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every VSTS extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
+You have a [CI/CD pipeline ](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
 * Continuously deploy to production
 * Never roll back in production
 * Fine-tune the user experience in production
@@ -101,7 +101,7 @@ Lastly, you'd like to give the users a list of preview features and allow each u
 
 ## Managing features with feature flags in your engineering process
 
-To protect the flags from malicious users, you need to generate and pass the hash of the user key to the LaunchDarkly API calls. As VSTS extensions can only use client-side code, the ALM | DevOps Rangers chose Azure Functions to help generate the hash, as shown. Read [how we checked and fixed the 503 error and Performance issue in our Azure Function](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2018/04/03/how-we-checked-and-fixed-the-503-error-and-performance-issue-in-our-azure-function/) for details.
+To protect the flags from malicious users, you need to generate and pass the hash of the user key to the LaunchDarkly API calls. As Azure DevOps extensions can only use client-side code, the ALM | DevOps Rangers chose Azure Functions to help generate the hash, as shown. Read [how we checked and fixed the 503 error and Performance issue in our Azure Function](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2018/04/03/how-we-checked-and-fixed-the-503-error-and-performance-issue-in-our-azure-function/) for details.
 
 ![Extension calls an Azure Function, which calls the LaunchDarkly SDK](./_img/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
 
@@ -142,9 +142,9 @@ Now that you've covered the concepts and considerations of feature flags, you sh
 
 ## Q&A
 
-### How does the VSTS team use feature flags?
+### How does the Azure DevOps team use feature flags?
 
-Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/azure/devops/devops-at-microsoft/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Visual Studio Team Services (VSTS).
+Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/azure/devops/learn/devops-at-microsoft/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Azure DevOps Services.
 
 ### How do the ALM | DevOps Rangers use feature flags?
 

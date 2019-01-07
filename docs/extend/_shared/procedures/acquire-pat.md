@@ -1,10 +1,10 @@
-0. Sign in to your VSTS account 
-(```https://{youraccount}.visualstudio.com```).
+1. Sign in to your organization 
+(```https:dev.azure.com/{organization}```).
 
 0.	From your home page, open your profile. 
 Go to your security details.
 
-	<img alt="Go to VSTS home, open your profile, go to Security" src="./_img/create-pat/my-profile.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to Azure DevOps Services home, open your profile, go to Security" src="./_img/create-pat/my-profile.png" style="border: 1px solid #CCCCCC" />
  
 0. Under **Security**, go to **Personal access tokens**, 
 then choose **Add**.
@@ -17,7 +17,7 @@ then select an expiration timeframe for your token.
 0. In the **Accounts** list, 
 select **All accessible accounts**. 
 This is required because the Visual Studio Marketplace 
-publishing APIs work outside the context of an account.
+publishing APIs work outside the context of an organization.
 
 0. Select the **Marketplace (publish)** scope. 
 This will limit the token to only being able 

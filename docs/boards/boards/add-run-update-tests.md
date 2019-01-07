@@ -1,7 +1,8 @@
 ---
 title: Add, run, and update inline tests
-titleSuffix: VSTS & TFS  
-description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure Boards  
+description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Azure Boards, Azure DevOps, & Team Foundation Server   
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
@@ -10,19 +11,17 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 03/20/2018
+ms.date: 11/19/2018
 ---
 
 #Add, run, and update inline tests
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
-
+[!INCLUDE [temp](../../_shared/dev15-and-ts-version-header.md)]  
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
 
-
 In this topic, you'll learn: 
->[!div class="checklist"]    
+> [!div class="checklist"]    
 > * How to add inline tests to a backlog item from your Kanban board  
 > * How to run tests and update the status of tests  
 > * How to expand or collapse inline tests   
@@ -38,39 +37,41 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ## Open your Kanban board from the web portal
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-7.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. To view your Kanban board, open your project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
 
 	![Open your Kanban board](_img/quickstart/open-kanban-board-agile.png)  
 
-	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/vsts/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/azure/devops/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team's board](_img/quickstart/select-kanban-team-board.png)  
 
 	> [!TIP]    
-	> Choose the ![](/vsts/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/vsts/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the ![ ](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+
 0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](_img/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
-	![Open Work hub when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
+	![Open Work when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
 0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -79,7 +80,13 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 0. Your Kanban board displays. 
 
-	![Kanban board, Agile template](_img/kanban-basics-intro.png)   
+	![Kanban board, Agile template](_img/kanban-basics-intro.png)  
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 
@@ -88,15 +95,16 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 1. To start adding tests, open the menu for the work item.  
 
-	<img src="_img/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Open the context menu of a backlog item to add inline test case](_img/i-test-add-test.png)   
 
-  Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
+	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.
 
-  For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
+	For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
 
-	<img src="_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 1px solid #C3C3C3;" /> 
+	![Inline test cases get added to test suites and test plans](_img/i-test-plan-suite.png) 
 
-  To learn more about test plans and test suites, see [Plan your tests](../../test/create-a-test-plan.md).  
+	To learn more about test plans and test suites, see [Plan your tests](../../test/create-a-test-plan.md).  
 
 2. If you have a number of tests to add, simply keep typing each title and click Enter. 
 
@@ -160,21 +168,9 @@ Additional ways you can quickly add linked items and objects to user stories fro
 - [Add inline tasks](add-task-checklists.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
-To initiate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../../test/perform-exploratory-tests.md).
+To initiate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
 
 <a name="test-status-kanban"></a>
 ### Test status in the Kanban board
 
 Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later, when required. When test cases are created from the Kanban board and updated afterwards in Test Manager, the Kanban board shows the correct status. However, integration is not optimized to work in the other direction; for example, when users create requirement-based suites with Test Manager instead of in the Kanban board. We intend to make some major performance improvements to this integration in future releases.
-
-
-<!---
-
-> [!NOTE]   
-> Running inline tests from the Kanban board is a supported feature in TFS 2017 and later versions. 
-
-
-> [!NOTE]    
-><b>Feature availability: </b>The Kanban board inline tests feature is supported from VSTS and TFS 2017 and later versions.  
-
--->

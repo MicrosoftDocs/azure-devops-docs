@@ -6,8 +6,10 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/09/2017
+monikerRange: '>=tfs-2013'
 ms.topic: tutorial
 ---
 
@@ -17,17 +19,16 @@ ms.topic: tutorial
 
 Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
   
- If your team project was created using the Basic configuration or is hosted on VSTS, neither your project portal nor process guidance is enabled. This means that the links that redirect F1 help within a work item form aren't available.  
+ If your team project was created using the Basic configuration or is hosted on Azure DevOps Services, neither your project portal nor process guidance is enabled. This means that the links that redirect F1 help within a work item form aren't available.  
   
  To configure a project portal, see [Configure or add a project portal](configure-or-add-a-project-portal.md). If you want to configure process guidance, choose from one of the following options based on your deployment configuration and team requirements:  
   
--   [Determine if process guidance is enabled for your team project](#guid_enabled).  
-  
+-   [Determine if process guidance is enabled for your team project](#guid_enabled). 
      Choose this option to determine if process guidance is enabled.  
   
 -   [Specify a website that hosts your custom process guidance](#simple).  
   
-     Choose this option if you want to use a website that doesn't require SharePoint integration or your team project is hosted on VSTS. Note that with this option, F1 help links within work item forms will not be redirected to your custom process guidance.  
+     Choose this option if you want to use a website that doesn't require SharePoint integration or your team project is hosted on Azure DevOps Services. Note that with this option, F1 help links within work item forms will not be redirected to your custom process guidance.  
   
 -   [Specify a SharePoint document library that contains your process guidance](#sp).  
   
@@ -43,7 +44,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 ##  <a name="guid_enabled"></a> Determine if process guidance is enabled for your team project portal  
   
-1.  From Visual Studio or Team Explorer, [connect to your team project](/vsts/organizations/projects/connect-to-projects).  
+1.  From Visual Studio or Team Explorer, [connect to your team project](/azure/devops/organizations/projects/connect-to-projects).  
   
 2.  Open Portal Settings.  
   
@@ -56,9 +57,9 @@ Your team can use process guidance to capture how they coordinate work on a team
      When process guidance is not enabled, F1 help links within work item forms will not open help content.  
   
 ##  <a name="simple"></a> Specify a website for your process guidance  
- Choose this option when you aren't using SharePoint Products or when your team project is hosted on VSTS.  
+ Choose this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -71,7 +72,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="sp"></a> Specify a SharePoint document library that contains your process guidance  
  Some process guidance links will work only if process guidance has been enabled for your team project.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -113,13 +114,13 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 2.  In each file, locate the `meta` statement that specifies the URL. For example:  
   
-    ```  
+    ```html
     <meta http-equiv="Refresh" content="0;URL=http://go.microsoft.com/fwlink/?LinkId=190653" />  
     ```  
   
 3.  Replace the value specified for the URL with the URL of the customized guidance stored on your configured process guidance website. For example:  
   
-    ```  
+    ```html
     <meta http-equiv="Refresh" content="0;URL=http://YourPortal/Process Guidance/scrum/html/Bug.html" />  
     ```  
   

@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-title: Authorization using OAuth 2.0 | VSTS REST APIs
-description: Use OAuth 2.0 authentication to get started with the REST APIs for VSTS.
+title: Authorization using OAuth 2.0 | Azure DevOps Services REST APIs
+description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.manager: douge
 monikerRange: '>= tfs-2013'
@@ -15,13 +15,13 @@ ms.date: 08/04/2016
 # Authorize access to REST APIs with OAuth 2.0
 
 Authenticate your web app's users to access the REST APIs so that your app doesn't have to keep asking for their usernames and passwords.
-VSTS uses the [OAuth 2.0 protocol](http://oauth.net/2/) to authorize your app for a user and generate an access token.
+Azure DevOps Services uses the [OAuth 2.0 protocol](http://oauth.net/2/) to authorize your app for a user and generate an access token.
 Use this token when you call the REST APIs from your app.
 
-First, you'll register your web app and get an app ID from VSTS.
-Using that app ID, you'll send your users to VSTS to authorize your app to access their accounts there.
+First, you'll register your web app and get an app ID from Azure DevOps Services.
+Using that app ID, you'll send your users to Azure DevOps Services to authorize your app to access their organizations there.
 Once they've done that, you'll use that authorization to get an access token for that user.
-When you call VSTS APIs on behalf of that user, you'll use that user's access token.
+When you call Azure DevOps Services APIs on behalf of that user, you'll use that user's access token.
 Access tokens expire, so you'll also need to refresh the access token if it's expired.
 
 ![Process to get authorization](./_img/oauth-overview.png)
@@ -36,14 +36,14 @@ Make sure you select the [scopes](#scopes) that your application needs,
 and then use the exact same scopes when you [authorize your app](#authorize-your-app).
 If you registered your app using the preview APIs, you'll want to re-register because the scopes that you used are now deprecated.
 
-When VSTS presents the authorization approval page to your user,
+When Azure DevOps Services presents the authorization approval page to your user,
 it will use your company name, and app name and descriptions,
 along with the URLs for your company's web site, your app's website, and your terms of service and privacy statements, like this.
 
 <img alt="Visual Studio Online authorization page with your company and app information" src="./_img/grant-access.png" style="border: 1px solid #CCCCCC" />
 
-When you call VSTS to ask for a user's authorization, and the user grants it,
-VSTS will redirect the user's browser to your authorization callback URL with the authorization code for that authorization.
+When you call Azure DevOps Services to ask for a user's authorization, and the user grants it,
+Azure DevOps Services will redirect the user's browser to your authorization callback URL with the authorization code for that authorization.
 The callback URL must be a secure connection (https) to transfer the code back to the app. It must exactly match the URL registered in your app.
 If it doesn't, a 400 error page is displayed instead of a page asking the user to grant authorization to your app.
 
@@ -52,14 +52,14 @@ When your register your app, the application settings page is displayed.
 <img alt="Application settings for your app" src="./_img/app-settings.png" style="border: 1px solid #CCCCCC" />
 
 You'll call the authorization URL and pass your app ID and authorized scopes
-when you want to have a user authorize your app to access his/her VSTS account.
-You'll call the access token URL when you want to get an access token to call a VSTS REST API.
+when you want to have a user authorize your app to access their organization.
+You'll call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
 The settings for each app that you register are available from your profile (https://app.vssps.visualstudio.com/profile/view).
 
 ## Authorize your app
 
-If your user hasn't yet authorized your app to access his/her VSTS account,
+If your user hasn't yet authorized your app to access their organization,
 call the authorization URL. 
 
 ```no-highlight
@@ -77,12 +77,12 @@ client_id     | GUID   | The ID assigned to your app when it was registered
 response_type | string | `Assertion`
 state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
-redirect_uri  | URL    | Callback URL for your appp. **This must exactly match the URL registered with the app**
+redirect_uri  | URL    | Callback URL for your app. **This must exactly match the URL registered with the app**
 
-VSTS will ask your user to authorize your app.
+Azure DevOps Services will ask your user to authorize your app.
 It will handle authentication and then call you back with an authorization code, if the user approves the authorization.
 
-Add a link or button to your site that navigates the user to the VSTS authorization endpoint:
+Add a link or button to your site that navigates the user to the Azure DevOps Services authorization endpoint:
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -93,9 +93,9 @@ https://app.vssps.visualstudio.com/oauth2/authorize
         &redirect_uri=https://fabrikam.azurewebsites.net/myapp/oauth-callback
 ```
 <br>
-VSTS will ask the user to authorize your app.
+Azure DevOps Services will ask the user to authorize your app.
 
-Assuming the user accepts, VSTS will redirect the user's browser to your callback URL, including a short-lived authorization code and the state value provided in the authorization URL:
+Assuming the user accepts, Azure DevOps Services will redirect the user's browser to your callback URL, including a short-lived authorization code and the state value provided in the authorization URL:
 
 ```no-highlight
 https://fabrikam.azurewebsites.net/myapp/oauth-callback
@@ -105,7 +105,7 @@ https://fabrikam.azurewebsites.net/myapp/oauth-callback
 
 ## Get an access and refresh token for the user
 
-Now use the authorization code to request an access token (and refresh token) for the user. This requires your service making a service-to-service HTTP request to VSTS.
+Now use the authorization code to request an access token (and refresh token) for the user. This requires your service making a service-to-service HTTP request to Azure DevOps Services.
 
 ### URL
 ```no-highlight
@@ -171,7 +171,7 @@ Authorization: Bearer {access_token}
 For example, the HTTP request to [get recent builds](https://visualstudio.com/api/build-release/builds.md#getalistofbuilds) for a project:
 
 ```no-highlight
-GET https://myaccount.visualstudio.com/myproject/_apis/build-release/builds?api-version=3.0
+GET https://dev.azure.com/myaccount/myproject/_apis/build-release/builds?api-version=3.0
 Authorization: Bearer {access_token}
 ```
 
@@ -226,18 +226,18 @@ Replace the placeholder values in the sample request body above:
 
 > IMPORTANT: Scopes only enable access to REST APIs and select Git endpoints. SOAP API access is not supported.  
 
-[!INCLUDE [scopestable](../../_shared/scopes.md)]
+[!INCLUDE [scopes table](../../_shared/scopes.md)]
 
 When you [register your app](#register-your-app),
-you'll use scopes to indicate which permissions in VSTS your app will require.
-When your users authorize your app to access their account,
+you'll use scopes to indicate which permissions in Azure DevOps Services your app will require.
+When your users authorize your app to access their organization,
 they'll authorize it for those scopes.
 When you call to [request that authorization](#authorize-your-app),
 you'll pass the same scopes that you registered.
 
 ## Samples
 
-You can find a C# sample that implements OAuth to call VSTS REST APIs in our [C# OAuth GitHub Sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
+You can find a C# sample that implements OAuth to call Azure DevOps Services REST APIs in our [C# OAuth GitHub Sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
 
 ## Q&A
 
@@ -245,8 +245,8 @@ You can find a C# sample that implements OAuth to call VSTS REST APIs in our [C#
 
 #### Q: Can I use OAuth with my phone app?
 
-A: No. Right now, VSTS only support the web server flow,
-so there's no supported way to implement OAuth for VSTS from an app like a phone app,
+A: No. Right now, Azure DevOps Services only support the web server flow,
+so there's no supported way to implement OAuth for Azure DevOps Services from an app like a phone app,
 since there's no way to securely store the app secret.
 
 #### Q: What errors or special conditions do I need to handle in my code?
@@ -258,7 +258,7 @@ A: Make sure that you handle these conditions:
 
 #### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
-A: VSTS does not allow localhost to be the hostname in your callback URL. You can edit the hosts file on your 
+A: Azure DevOps Services does not allow localhost to be the hostname in your callback URL. You can edit the hosts file on your 
 local computer to map a hostname to 127.0.0.1. Then use this hostname when you register your app. Or, you can deploy your 
 app when testing to a Microsoft Azure website to be able to debug and use HTTPS for the callback URL.
 

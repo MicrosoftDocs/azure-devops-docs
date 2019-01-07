@@ -1,7 +1,7 @@
 ---
 title: Add last refresh date to a PowerBI report 
-titleSuffix: VSTS
-description: Sample report that shows how to add a field showing the last refresh date to an existing PowerBI report based on the Analytics service for VSTS   
+titleSuffix: Azure DevOps Services
+description: Sample report that shows how to add a field showing the last refresh date to an existing PowerBI report based on the Analytics service  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
@@ -14,7 +14,7 @@ ms.date: 05/18/2018
 
 # Create a column in Power BI for last refresh date
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 After [creating a report](create-quick-report.md) and [publishing it to Power BI.com](publish-power-bi-desktop-to-power-bi.md) one of the most common requests is a way to determine the last time the data was refreshed.  
 
@@ -36,7 +36,7 @@ The steps below show how to add a column to your model which will contain the la
 	 
     ```Query 
     let
-        Source = VSTS.AnalyticsViews("{OrganizationName}", "{project}", null),
+        Source = VSTS.AnalyticsViews("{OrganizationName}", "{ProjectName}", null),
         #"{tableid}_Table" = Source{[Id="{tableid}",Kind="Table"]}[Data],
     in
         #"{tableid}_Table"
@@ -81,4 +81,4 @@ The steps below show how to add a column to your model which will contain the la
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
-- [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)

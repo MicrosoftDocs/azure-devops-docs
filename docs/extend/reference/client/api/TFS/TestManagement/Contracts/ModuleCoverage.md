@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts ModuleCoverage API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts ModuleCoverage API | Extensions for Azure DevOps Services
 ms.assetid: 35dcab83-60a7-2019-336c-78dfb3d55868
 ms.prod: devops
 ms.technology: devops-ecosystem

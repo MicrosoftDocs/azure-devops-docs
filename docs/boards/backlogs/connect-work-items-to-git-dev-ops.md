@@ -1,7 +1,8 @@
 ---
-title: Drive Git or TFVC development from a work item
-titleSuffix: VSTS & TFS 
-description: Create a branch or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+title: Create a Git branch or initiate Git commits or pull requests from a user story, issue, or bug
+titleSuffix: Azure Boards 
+description: Create a branch, commit, or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
@@ -10,13 +11,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
-ms.date: 03/20/2018
+ms.date: 12/04/2018
 ---
 
 # Drive Git development from a work item   
 
-
-**VSTS | TFS 2018 | TFS 2017**
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -31,9 +31,24 @@ Review this topic to learn:
 > * Link a work item to existing development and build objects    
 -->
 
+
+::: moniker range="vsts"
+
+> [!IMPORTANT]   
+> This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
+
+::: moniker-end
+
+
 The Development section records all Git development processes that support completion of the work item. This section can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.    
 
 <img src="_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+
+::: moniker range="tfs-2017"
+> [!NOTE]   
+> The Development section within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
+
+::: moniker-end
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
@@ -71,7 +86,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 3. Add or modify files in the branch that you created.   
 
-	From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository.    
+	From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository.  
 
 	![Commit and push changes](_img/git-dev-commit-sync.png)  
 
@@ -88,7 +103,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
  	<img src="_img/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]  
-	>Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
+	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
 	 
 	<img src="_img/git-dev-pr-complete.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" /> 
 
@@ -98,7 +113,8 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 6. Upon completion, you should see a similar screen as follows.   
 
-	<img src="_img/git-dev-pr-completed.png" alt="Pull request, completed notification" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]
+	> ![Pull request, completed notification](_img/git-dev-pr-completed.png)
 
 7.	Open the work item form or refresh the form, expand the Development section (click the ![full screen icon](../_img/icons/fullscreen_icon.png) icon), and you'll see the links that have been added to support the operations you just completed.  
 
@@ -130,7 +146,7 @@ To link a work item to an existing object, click the ![Add link](../_img/icons/a
 
 ![Select multiple items from backlog](_img/add-work-items-link-to-existing-branch.png)
 
-[Link work items to support traceability](../queries/link-work-items-support-traceability.md).   
+[Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).   
 
 
 ### Remove a link 
@@ -144,15 +160,23 @@ Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Lin
 
 Learn more about tracking work with work items and developing with Git from these resources: 
 
+::: moniker range="vsts"
+- [Add work items](add-work-items.md)  
+- [Git overview](../../repos/git/overview.md) 
+- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
+- [TFVC overview](../../repos/tfvc/overview.md)  
+- [Create your backlog](create-your-backlog.md)   
+
+::: moniker-end
+
+::: moniker range="<= azdevserver-2019"
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/overview.md)  
 - [TFVC overview](../../repos/tfvc/overview.md)  
 - [Create your backlog](create-your-backlog.md)   
+::: moniker-end
 
 Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 
-
-> [!NOTE]   
-> The Development section within the work item form is not supported in TFS 2013 or TFS 2015. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
 
 ### Associated work items in build 
 
@@ -163,7 +187,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
 
-::: moniker range=">= tfs-2017"
+
 ### Link types showing in the Development section
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    
@@ -171,8 +195,8 @@ Links shown in this section appear as a result of these actions:
 - Specifically linking the work item from the Development section or ![Links tab icon](_img/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.  
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
-::: moniker-end
-::: moniker range="vsts"
+
+::: moniker range=">= azdevserver-2019"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 <img src="../queries/_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
@@ -183,6 +207,9 @@ The link types you can add within the development section are Branch, Build, Cha
 
 <img src="_img/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
 To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
  
 ::: moniker-end

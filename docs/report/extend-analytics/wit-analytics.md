@@ -1,7 +1,7 @@
 ---
-title: Query work tracking data using the OData Analytics service
-titleSuffix: VSTS
-description: How to generate work item tracking reports for Visual Studio Team Services (VSTS) using the OData Analytics service  
+title: Query work tracking data using OData 
+titleSuffix: Azure DevOps Services
+description: How to generate work item tracking reports for Azure DevOps using the OData Analytics service  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -9,22 +9,38 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/13/2017
+monikerRange: '>= azdevserver-2019'
+ms.date: 12/04/2018
 ---
 
 # Query your work tracking data using the OData Analytics service
 
-**VSTS**  
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 
-Using the Analytics Service for Visual Studio Team Services (VSTS), you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
+Using the Analytics Service for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
 In this topic, the base root URL is scoped to a project as shown:  
 
+::: moniker range="vsts"
+
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}
 ``` 
+
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}
+```
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+
+::: moniker-end
 
 All additional URL parts are specified as an additional part of the query string.
 
@@ -32,13 +48,13 @@ All additional URL parts are specified as an additional part of the query string
 
 ## Prerequisites
 
-- You will need to have a VSTS account and team project. If you don't have one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
-- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
+- You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
+- You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
+- Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
 
 ## Construct a basic query 
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{project}` with your account name and  the name of a team project that you want to query. 
+You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
 
 ### Query a single entity set
 To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).
@@ -47,7 +63,7 @@ For example, you query Areas by adding `/Areas`. The full URL is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/Areas 
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/Areas 
 ```
 
 This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds. If you have more than 10000 work items [server-side paging will be enforced](#server-force-paging).
@@ -61,7 +77,7 @@ For example, to return only the Work Item ID, Work Item Type, Title, and State o
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,WorkItemType,Title,State
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State
 ```
 
 This is equivalent to selecting all rows in the entity, but returning only these specific fields.  
@@ -78,7 +94,7 @@ With the full OData query:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=State eq 'In Progress'
 ```
 
 Alternatively, you can exclude the ```$select``` clause altogether and just filter the results as follows:
@@ -89,7 +105,7 @@ With the full OData query:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=State eq 'In Progress'
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=State eq 'In Progress'
 ```
 
 Also, you can apply multiple filters by concatenating two or more filters. For example, here we filter for In Progress tasks.
@@ -100,13 +116,13 @@ With the full OData query:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=WorkItemType eq 'Task' and State eq 'In Progress'
 ```
 
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
 
 ## Filter using related entities such as Area Path, Iteration Path, and more 
-Querying work items is helpful, but you will eventually want to filter by other data such as the Iteration Path, Area Path,  or Team Project. To do this, you need to understand the navigation properties of the entity model. You can get metadata using `/$metadata` URL. For details, see [Explore Analytics OData metadata](analytics-metadata.md) 
+Querying work items is helpful, but you will eventually want to filter by other data such as the Iteration Path, Area Path,  or project. To do this, you need to understand the navigation properties of the entity model. You can get metadata using `/$metadata` URL. For details, see [Explore Analytics OData metadata](analytics-metadata.md) 
 
 Here is a partial view of the metadata for the Work Items entity:
 
@@ -145,7 +161,7 @@ With the full OData query:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$filter=Iteration/IterationPath eq 'Project Name\Iteration 1'
 ```
 
 In this example, `Iteration` is the navigation property name and `IterationPath` corresponds to the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
@@ -170,7 +186,7 @@ This returns the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)",
   "value":[
     {
       "WorkItemId":10000,
@@ -206,7 +222,7 @@ Which returns the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration,Iteration(Name,IterationPath))",
   "value":[
     {
       "WorkItemId":10000,
@@ -231,7 +247,7 @@ This results in:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems",
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems",
   "value":[
     {
       "WorkItemId":10000,
@@ -279,7 +295,7 @@ This results in:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems(Iteration(IterationId,IterationPath,Project))",
   "value":[
     {
       "WorkItemId":10000,
@@ -332,11 +348,11 @@ The Analytics Service forces paging when query results exceed 10000 records. In 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItems",
+  "@odata.context":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata#WorkItems",
   "value":[
    // 10000 values here
   ],
-  "@odata.nextLink":"https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?$skiptoken=10000"
+  "@odata.nextLink":"https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$skiptoken=10000"
 }
 ``` 
 
@@ -346,7 +362,7 @@ The Analytics Service forces paging when query results exceed 10000 records. In 
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Project & account-scoped queries](account-scoped-queries.md)
+> [Project & organization-scoped queries](account-scoped-queries.md)
 
  
 ## Related articles

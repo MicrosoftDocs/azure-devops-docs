@@ -1,5 +1,6 @@
 ---
 title: Install Release Management server and client for VS 2015 and TFS 2015
+ms.custom: seodec18
 description: Learn how you can install the Release Management server and client for VS 2015 and Team Foundation Server (TFS) 2015.
 ms.assetid: 6F4596D5-848B-42AF-BFDD-7698BC815942
 ms.prod: devops
@@ -19,14 +20,14 @@ monikerRange: '>= tfs-2013'
 ![Installing Release Management on TFS](_img/install-server-client-01.png)
 
 These are the instructions for installing the Release Management 
-**[server](#installserver)** and the **[client](#installclient)**. 
+**[server](#installserver)** and the **[client](#installclient)**.
 Each tool has its own permission requirements. For the server, 
 you'll need access to a SQL Server instance to complete the install. You can 
 use the same SQL Server instance that you use for TFS or you can 
 **[download SQL Server Express](https://www.microsoft.com/download/details.aspx?id=42299)**.
 
 If you are upgrading to the latest version of Release Management, first 
-uninstall the previous update of the Release Management server and client. 
+uninstall the previous update of the Release Management server and client.
 No data will be lost when you uninstall because the SQL Server instance is 
 not removed. Then install the latest server and client. When you configure 
 the latest update for your Release Management server, use the same SQL Server 
@@ -54,17 +55,17 @@ administration console. Scroll down to **Data Tier Summary** and look for
    information about obtaining a non-trial version, see 
    [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs). 
+   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
 1. Launch **rm_Server.exe**. If you want to install to a specific location 
    in the file system, choose the browse button (...) next to the default 
-   install location. Then choose **Install**. 
+   install location. Then choose **Install**.
    
    ![Starting the installation of the server](_img/install-server-client-02.png)
 
-1. Restart your computer, if prompted, and then choose **Launch**. 
+1. Restart your computer, if prompted, and then choose **Launch**.
 
    ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
    you can **[opt out](../manage-your-release.md#optout)** at any time._ 
@@ -77,7 +78,7 @@ administration console. Scroll down to **Data Tier Summary** and look for
    and
    [Accounts required for installation of Team Foundation Server](/tfs/server/requirements#accounts).
    Release Management server uses the identity set here for its Application 
-   Pools in IIS and the Release Management Monitor Windows service. 
+   Pools in IIS and the Release Management Monitor Windows service.
 
    ***Important:*** _If you specify an alternative account as the identity for 
    the service, this must be in the form **domain\user**. Do not use the format 
@@ -108,17 +109,17 @@ administration console. Scroll down to **Data Tier Summary** and look for
    information about obtaining a non-trial version, see 
    [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs). 
+   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
 1. Launch **rm_Client.exe**. If you want to install to a specific location 
    in the file system, choose the browse button (...) next to the default 
-   install location. Then choose **Install**. 
+   install location. Then choose **Install**.
    
    ![Starting the installation of the client](_img/install-server-client-05.png)
 
-1. Restart your computer, if prompted, and then choose **Launch**. 
+1. Restart your computer, if prompted, and then choose **Launch**.
 
    ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
    you can **[opt out](../manage-your-release.md#optout)** at any time._ 

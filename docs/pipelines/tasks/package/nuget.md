@@ -1,6 +1,7 @@
 ---
-title: NuGet restore, pack, and publish
-description: Learn all about how you can make use of NuGet packages when you are building code in VSTS and Team Foundation Server (TFS).
+title: NuGet restore, pack, and publish task
+ms.custom: seodec18
+description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -12,13 +13,13 @@ ms.date: 07/05/2017
 monikerRange: '>= tfs-2018'
 ---
 
-# Package: NuGet
+# NuGet task
 
 **Version 2.\* | [Other versions](#versions)**
 
-**VSTS | TFS 2018**
+**Azure Pipelines | TFS 2018**
 
-![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
+Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -27,7 +28,7 @@ monikerRange: '>= tfs-2018'
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
-> Looking for help to get started? See the how-tos for [restoring](../../../package/nuget/consume.md) and [publishing](../../../package/nuget/publish.md) packages.
+> Looking for help to get started? See the how-tos for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
 
 > [!TIP]
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
@@ -81,14 +82,14 @@ None
         <td>
             **Feed(s) I select here:**
             <ul>
-                <li>Select this option to use NuGet.org and/or one Package Management feed in the same organization/collection as the build.</li>
+                <li>Select this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
             </ul>
             **Feeds in my NuGet.config:**
             <ul>
                 <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
                     file you've checked into source control.</li>
                 <li>Credentials for feeds outside this organization/collection can be used to inject credentials you've provided as a [NuGet service connection](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
-                <li>See the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple VSTS organizations.</li>
+                <li>Azure Artifacts users: see the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple Azure DevOps organizations.</li>
             </ul>
         </td>
     </tr>
@@ -267,11 +268,11 @@ None
         <td>Target feed location</td>
         <td>
             <ul>
-                <li>**This organization/collection** publishes to a Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
-                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on VSTS.
+                <li>**This organization/collection** publishes to an Azure Artifacts/Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
+                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.
                     </li></ul>
                 </li>
-                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
+                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or an Azure Artifacts/Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
                 </li>
             </ul>
         </td>
@@ -289,10 +290,10 @@ None
 </table>
 
 ### Publishing symbols
-When you push packages to a Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md). 
+When you push packages to an Azure Artifacts/Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md).
 
 ### Publishing packages to TFS with IIS Basic authentication enabled
-This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/vsts/integrate/get-started/auth/tfs-basic-auth) for more details.
+This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/azure/devops/integrate/get-started/auth/tfs-basic-auth) for more details.
 
 ## Custom NuGet command
 
@@ -318,7 +319,13 @@ This task is unable to publish NuGet packages to a TFS Package Management feed t
 </table>
 
 ## End-to-end example
-You want to package and publish some projects in a C# class library to your VSTS feed.
+
+::: moniker range="> tfs-2018"
+You want to package and publish some projects in a C# class library to your Azure Artifacts feed.
+::: moniker-end
+::: moniker range="<= tfs-2018"
+You want to package and publish some projects in a C# class library to your TFS Package Management feed.
+::: moniker-end
 
 ```
 `-- Message
@@ -355,9 +362,15 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
 
 
-### Option 1: publish to VSTS
+::: moniker range="> tfs-2018"
+### Publish to Azure Artifacts
+::: moniker-end
+::: moniker range="<= tfs-2018"
+### Publish to a TFS feed
+::: moniker-end
+
 1. Make sure you've prepared the build as described [above](#prepare).
-2. If you haven't already, [create a feed](../../../package/feeds/create-feed.md).
+2. If you haven't already, [create a feed](../../../artifacts/feeds/create-feed.md).
 3. Add the following build steps:
 
 <table>
@@ -399,7 +412,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
     <tr>
         <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
         <td>
-            <p>Publish your packages to VSTS.</p>
+            <p>Publish your packages.</p>
             <ul>
                 <li>Command: push</li>
                 <li>Path to NuGet package(s) to publish: ```$(Build.ArtifactStagingDirectory)```</li>
@@ -436,30 +449,30 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 ## Task versions
 
 ### Task: NuGet (formerly NuGet Restore at 1.\*, NuGet Installer at 0.\*)
-| Task version                                | VSTS                     | TFS                                           |
+| Task version                                | Azure Pipelines                     | TFS                                           |
 |---------------------------------------------|--------------------------|-----------------------------------------------|
 | 2.*                                         | Available                | Appeared in 2018                              |
 | [1.*](#restore-nuget-packages)              | Deprecated but available | Appeared in 2017 Update 2, deprecated in 2018 |
 | [0.*](./prev-versions/nuget-installer-0.md) | Deprecated but available | Appeared in 2017, deprecated in 2017 Update 2 |
 
 ### Task: NuGet Packager
-| Task version | VSTS                         | TFS                                           |
+| Task version | Azure Pipelines                         | TFS                                           |
 |--------------|------------------------------|-----------------------------------------------|
 | [0.*](./prev-versions/nuget-packager-0.md)  | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
 
 ### Task: NuGet Publisher
-| Task version | VSTS                         | TFS                                           |
+| Task version | Azure Pipelines                         | TFS                                           |
 |--------------|------------------------------|-----------------------------------------------|
 | [0.*](./prev-versions/nuget-publisher-0.md) | Deprecated but available | Available in TFS < 2018, deprecated in TFS >= 2018 |
 
 ### Task: NuGet Command
-| Task version | VSTS                     | TFS                                           |
+| Task version | Azure Pipelines                     | TFS                                           |
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
 
 ## Open source
 
-These tasks are open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

@@ -1,14 +1,16 @@
 ---
 title: Query by title, ID, or rich-text fields 
-titleSuffix: VSTS & TFS
-description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Example work queries based on titles, IDs, rich-text fields in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
-ms.date: 03/20/2018  
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018  
 ---
 
 # Query by titles, IDs, and rich-text fields
@@ -21,7 +23,7 @@ When you want to find work items based on a keyword or phrase, you can do so by 
 <a id="keyword"/>
 ## List items based on keywords or phrases
 
-Use **Contains** and **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
+Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
 ![Editor for flat list query for filtering key words](_img/example-work-item-queries/IC675039.png)   
 
@@ -70,9 +72,9 @@ The following table describes common fields used to filter queries. The **ID** f
 <table width="100%">
 <tbody valign="top">
 <tr>
-  <th width="17%">Field name</th>
-  <th width="66%">Description</th>
-  <th width="17%">Work item type</th>
+  <th width="22%">Field name</th>
+  <th width="56%">Description</th>
+  <th width="22%">Work item type</th>
 </tr>
 <tr>
 	<td><p>Acceptance Criteria  <sup>1</sup></p></td>
@@ -142,7 +144,7 @@ Team Project
 </td>
 <td>
 <p>The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. </p>
-<blockquote>**Note:**&#160;&#160;For VSTS or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). </blockquote>
+<blockquote>**Note:**&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). </blockquote>
  
 	<p>Reference name=System.TeamProject, Data type=String</p>
 </td>
@@ -177,7 +179,7 @@ Work Item Type
 
 ####Notes:   
 
-0. To learn more about working with rich-text fields, see [Share plans](share-plans.md#rich-text).   
+0. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
 0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 ## Related articles

@@ -1,10 +1,10 @@
 ---
-title: Rows for Kanban Boards | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Kanban board rows programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+title: Rows for Kanban Boards | REST API Reference for Team Foundation Server
+description: Work with Kanban board rows programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 01F3FEF0-DCCA-4CB0-B723-A546CE0935B0
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Rows on a Kanban board
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -27,7 +30,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
@@ -36,11 +39,65 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 
 ### By ID
 
-[!code-REST [GET__work_boards__boardId__rows_json](./_data/GET__work_boards__boardId__rows.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/rows?api-version=2.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": null
+    },
+    {
+      "id": "6dc43426-d087-4047-b0b7-44c03afed8df",
+      "name": "Expedite"
+    },
+    {
+      "id": "41c6173f-13a2-42b8-ab75-d96eca02b0bc",
+      "name": "Live Site"
+    }
+  ]
+}
+```
+
 
 ### By name
 
-[!code-REST [GET__work_boards__boardName__rows_json](./_data/GET__work_boards__boardName__rows.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/Backlog%20items/rows?api-version=2.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": null
+    },
+    {
+      "id": "6dc43426-d087-4047-b0b7-44c03afed8df",
+      "name": "Expedite"
+    },
+    {
+      "id": "41c6173f-13a2-42b8-ab75-d96eca02b0bc",
+      "name": "Live Site"
+    }
+  ]
+}
+```
+
 
 ## Update rows on a board
 <a name="updaterowsonaboard" />
@@ -53,7 +110,7 @@ PUT https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |   | TFS server name ({server:port}).
 | project   | string  |  | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  |  | Name or ID of the specific board.
@@ -94,7 +151,49 @@ Status code: 400
 }
 ```
 
-[!code-REST [PUT__work_boards__boardName__rows_json](./_data/PUT__work_boards__boardName__rows.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/boards/Backlog%20items/rows?api-version=2.0-preview
+```
+```json
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "name": null
+  },
+  {
+    "name": "New Expedite"
+  },
+  {
+    "id": "41c6173f-13a2-42b8-ab75-d96eca02b0bc",
+    "name": "Live Site"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": null
+    },
+    {
+      "id": "4ca9a913-9cf5-4c19-9935-f0e7dc347379",
+      "name": "New Expedite"
+    },
+    {
+      "id": "41c6173f-13a2-42b8-ab75-d96eca02b0bc",
+      "name": "Live Site"
+    }
+  ]
+}
+```
+
 
 ## Get available board rows
 
@@ -105,15 +204,60 @@ GET https://{instance}/defaultcollection/[{project}/]_apis/work/boardrows/?api-v
 | Parameter | Type    |Default Value | Notes	
 |:----------|:--------|:------------ |:------------------------------
 | URL
-| instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | | TFS server name ({server:port}).
 | project   | string  | | Name or ID of a project.
 | Query
 | api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ### For a project
 
-[!code-REST [GET__work_boards__boardId__columns_json](./_data/boardSuggestedValues/project/GET__work_boardRows_.json)]
+#### Sample request
+
+```
+GET mytfsserver/defaultcollection/fabrikam/_apis/work/boardRows/?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "name": "Default"
+    },
+    {
+      "name": "Expedite"
+    }
+  ]
+}
+```
+
 
 ### For a collection
 
-[!code-REST [GET__work_boards__boardName__columns_json](./_data/boardSuggestedValues/collection/GET__work_boardRows_.json)]
+#### Sample request
+
+```
+GET mytfsserver/defaultcollection/_apis/work/boardRows/?api-version=2.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "name": "Blocked"
+    },
+    {
+      "name": "Default"
+    },
+    {
+      "name": "Expedite"
+    }
+  ]
+}
+```
+

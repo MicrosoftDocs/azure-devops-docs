@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Create your first Extension with Visual Studio | Extensions for VSTS
-description: Use Visual Studio with ASP.NET to create your first extension for VSTS.
+title: Create your first Extension with Visual Studio | Extensions for Azure DevOps Services
+description: Use Visual Studio with ASP.NET to create your first extension for Azure DevOps Services.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.topic: conceptual
 ms.manager: douge
@@ -16,9 +16,9 @@ ms.date: 08/04/2016
 
 [!INCLUDE [preview](../_data/get-help.md)]
 
-Extensions enable you to create first-class integration experiences within VSTS.
+Extensions enable you to create first-class integration experiences within Azure DevOps Services.
 An extension can be a simple context menu or toolbar action
-or it can be a complex and powerful custom UI experience that light up within the account, collection, or project hubs.
+or it can be a complex and powerful custom UI experience that light up within the organization, collection, or project hubs.
 
 Get started now by creating your own hub that displays the results a query,
 and an action on the queries context menu to launch your hub.
@@ -39,10 +39,10 @@ and an action on the queries context menu to launch your hub.
 <a id="hub"></a>
 ## Create a hub
 
-Use a hub to surface your web app in an iframe in VSTS.
+Use a hub to surface your web app in an iframe in Azure DevOps Services.
 The one we're creating here will show up in the project's **Work** hub group.
 
-![Location of a new hub in VSTS](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)
 
 <a id="app"></a>
 ### Create the web app
@@ -61,11 +61,11 @@ We'll display it when someone installs your extension.
 <a id="manifest"></a>
 ### Create the extension manifest
 
-The extension manifest tells VSTS about your extension.
+The extension manifest tells Azure DevOps Services about your extension.
 
 [!INCLUDE [Extension_manifest](../_shared/procedures/create-base-manifest.md)]
 
-[!INCLUDE [Contribuion_manifest](../_shared/procedures/create-hub-manifest.md)]
+[!INCLUDE [Contribution_manifest](../_shared/procedures/create-hub-manifest.md)]
 
 <a id="package"></a>
 ### Package and publish your extension
@@ -85,7 +85,7 @@ The extension manifest tells VSTS about your extension.
 
 	![Properties dialog with SSL enabled](../_shared/procedures/_img/create-hub-app-asp4/enable-ssl.png)
 
-1. Start your app in Visual Studio so that VSTS can access it.
+1. Start your app in Visual Studio so that Azure DevOps Services can access it.
 
 1. Go to your hub in the **Work** hub group.
 
@@ -107,7 +107,7 @@ Call a REST API and display the results in the grid control.
 
 	Change this:
 	```javascript
-    // Load VSTS controls
+    // Load Azure DevOps Services controls
 	VSS.require(["VSS/Controls", "VSS/Controls/Grids"],
 		function (Controls, Grids) {
 	```
@@ -115,12 +115,12 @@ Call a REST API and display the results in the grid control.
 	to this:
 
 	```javascript
-    // Load VSTS controls and REST client
+    // Load Azure DevOps Services controls and REST client
     VSS.require(["VSS/Controls", "VSS/Controls/Grids",
         "VSS/Service", "TFS/WorkItemTracking/RestClient"],
         function (Controls, Grids, VSS_Service, TFS_Wit_WebApi) {
 
-        // Get a WIT client to make REST calls to VSTS
+        // Get a WIT client to make REST calls to Azure DevOps Services
         var witClient = VSS_Service.getCollectionClient(TFS_Wit_WebApi.WorkItemTrackingHttpClient);
 	```
 
@@ -188,7 +188,7 @@ with a callback that loads the grid control with the results.
 <a id="action"></a>
 ## Add an action
 
-You can add actions to the VSTS user interface that call your extension. 
+You can add actions to the Azure DevOps Services user interface that call your extension. 
 In this case, you'll add an action to the context menu for queries and folders in the work hub
 that launches the Hello hub and send it a query to run.
 
@@ -202,11 +202,11 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 	execute: function (actionContext) {
 
 		// Get the Web Context to create the uri
-		var VSTSContext = VSS.getWebContext();
+		var Azure DevOps ServicesContext = VSS.getWebContext();
 
 		// Navigate to the new View Associated Work Items hub.
 		// Fabrikam is the extension's namespace and Fabrikam.HelloWorld is the hub's id.
-		window.parent.location.href = VSTSContext.host.uri +
+		window.parent.location.href = Azure DevOps ServicesContext.host.uri +
 			vstsContext.project.name + "/_apps/hub/" +
 			VSS.getExtensionContext().namespace + "/Fabrikam.HelloWorld";
 	}
@@ -217,7 +217,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 1. Update your action again to pass the selected item to your hub.
 
 	```javascript
-	window.parent.location.href = VSTSContext.host.uri +
+	window.parent.location.href = Azure DevOps ServicesContext.host.uri +
 		vstsContext.project.name + "/_apps/hub/" +
 		VSS.getExtensionContext().namespace + "/Fabrikam.HelloWorld?queryId=" +
 		actionContext.queryId;
@@ -226,12 +226,12 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 1. Update ```hello-world.html``` to run the query from the action context instead of getting a hardcoded set of work items.
 
 	```javascript
-    // Load VSTS controls and REST client
+    // Load Azure DevOps Services controls and REST client
     VSS.require(["VSS/Controls", "VSS/Controls/Grids",
 		"VSS/Service", "TFS/WorkItemTracking/RestClient"],
 		function (Controls, Grids, VSS_Service, TFS_Wit_RestClient) {
         
-        // Get a WIT client to make REST calls to VSTS
+        // Get a WIT client to make REST calls to Azure DevOps Services
         var witClient = VSS_Service.getCollectionClient(TFS_Wit_RestClient.WorkItemTrackingHttpClient);
 
         // Call the "queryById" REST endpoint, giving a query ID

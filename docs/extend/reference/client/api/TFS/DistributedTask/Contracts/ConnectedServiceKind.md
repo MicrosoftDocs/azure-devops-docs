@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts ConnectedServiceKind API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts ConnectedServiceKind API | Extensions for Azure DevOps Services
 ms.assetid: de0051da-b780-1e52-6e3c-713051ec9dfb
 ms.prod: devops
 ms.technology: devops-ecosystem

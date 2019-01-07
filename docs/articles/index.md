@@ -1,6 +1,7 @@
 ---
 title: Technical Articles 
-description: A public collection of VSTS-specific topics shared for partners.
+titleSuffix: Azure DevOps Services & TFS
+description: A public collection of specific topics shared for partners.
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
@@ -10,21 +11,21 @@ ms.author: kaelli
 author: kaelli
 ---
 
-# Technical Articles
+# Technical articles
 
-**VSTS | TFS**
+**Azure DevOps Services | TFS**
 
-Here you'll find more resources to support your development efforts with Visual Studio Team Services (VSTS), Team Foundation Server (TFS), and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
+Here you'll find more resources to support your development efforts with Azure DevOps Services, Team Foundation Server (TFS), and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
 
 > [!NOTE]
-> For the full documentation set, go to [VSTS Documentation](../index.md).
+> For the full documentation set, go to the [Azure DevOps Documentation](../index.md).
    
 ##	Migration and integration
 
-*   [Migrate data from TFS to VSTS](migration-overview.md)
-*   [Migration options](migrate-to-vsts-from-tfs.md)  
+*   [Migrate data from TFS to Azure DevOps Services](migration-overview.md)
+*   [Migration options](migrate-from-tfs.md)  
 
-## Version Control
+## Version control
 
 *   [Git lost my changes?](git-log-history-simplification.md)
 *   [Manage branching strategies in TFVC for DevOps](effective-tfvc-branching-strategies-for-devops.md)
@@ -35,7 +36,7 @@ Here you'll find more resources to support your development efforts with Visual 
 
 ##	DevOps: Continuous integration and continuous delivery
 
-*   [Add Continuous Security Validation to your CICD Pipeline](security-validation-cicd-pipeline.md)
+*   [Add Continuous Security Validation to your CI/CD Pipeline](security-validation-cicd-pipeline.md)
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
 *   [Progressively expose your features using feature flags](phase-features-with-feature-flags.md)
 *   [Progressively expose your releases using deployment rings](phase-rollout-with-rings.md)
@@ -48,6 +49,6 @@ Here you'll find more resources to support your development efforts with Visual 
 
 Learn more about how we use DevOps and Agile practices at Microsoft, best practices research, lessons learned, and more.
 
-*   [Agile](/azure/devops/agile/what-is-agile)
-*   [DevOps](/azure/devops/what-is-devops)
-*   [Git at Scale](/azure/devops/git/git-at-scale)
+*   [Agile](/azure/devops/learn/agile/what-is-agile)
+*   [DevOps](/azure/devops/learn/what-is-devops)
+*   [Git at Scale](/azure/devops/learn/git/git-at-scale)

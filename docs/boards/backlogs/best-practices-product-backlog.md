@@ -1,7 +1,8 @@
 ---
-title: Backlog best practices 
-titleSuffix: VSTS & TFS
-description: Best practices to manage your product backlog in Visual Studio Team Services (VSTS) and Team Foundation 
+title: What are best practices for working with product and portfolio backlogs 
+titleSuffix: Azure Boards
+description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
+ms.custom: "boards-backlogs, seodec18"     
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
@@ -9,10 +10,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/11/2017
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
-# Groom your backlog  
+# Refine your backlog  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
  
@@ -20,8 +22,7 @@ A great backlog conveys customer needs and value. Over the course of the project
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
 implement them and deliver the results to your customers. 
 
-To get started, see [Create your backlog](create-your-backlog.md).  
-
+To get started, see [Create your backlog](create-your-backlog.md). 
 
 <a name="product-owner-role"></a>
 ## Role of the product owner  
@@ -34,10 +35,9 @@ Product owners play an important role in Scrum, primarily as the interface betwe
 * Helping stakeholders understand the decisions underlying the priority order of your backlog  
 * Responding to any and all requests from your team for more information concerning backlog priorities and requirements  
 
-If they will also be responsible for configuring team settings, [add them as a team administrator](../../organizations/settings/configure-team-settings.md).  
+If they will also be responsible for configuring team settings, [add them as a team administrator](../../organizations/settings/add-team-administrator.md).  
 
 A product owner can reduce the need for detailed specifications by being more responsive to the team's questions about implementation details and clearly articulating acceptance criteria within each requirement.
-
 
  
 <a name="acceptance"></a>
@@ -61,7 +61,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > Inevitably we all start with our own ideas about what "done" means for a given story.  
 >  
 > However, as we begin to discuss the acceptance criteria presented by the product owner what 
-> ensues is a series of "[ah-ha moments](http://www.bing.com/search?q=Ah-ha moments)." 
+> ensues is a series of "[ah-ha moments](https://www.bing.com/search?q=Ah-ha%20moments)." 
 > A shared understanding of the story begins to emerge. A comment one team member might elicit 
 > the following response from someone else. . .  "Ah-ha, great point. . . I never thought of that."  
 > 
@@ -83,7 +83,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 
 
 
-<a id="groom">  </a>
+<a id="refine">  </a>
 ## Refine your backlog
   
 Backlog refinement supports your sprint planning efforts and helps minimize these often seen challenges:
@@ -114,5 +114,5 @@ In addition to new features and requirements to build, you can capture non-featu
 As the need to perform this work arises, capture it along with other items on your backlog. To track that it is a spike, you can either preface the title with the word "[Spike]" or add the tag "Spike" to the work item.  
 
 ## Additional resources
-- [What is Agile?](/azure/devops/agile/what-is-agile)  
-- [Building productive, customer focused teams](/azure/devops/agile/productive-teams)  
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)  
+- [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams)  

@@ -1,5 +1,5 @@
 ---
-title: Add findings to  existing bugs with exploratory testing
+title: Add findings to existing bugs
 description: Manual and exploratory testing - add findings to  existing bugs existing bugs when using the Test &amp; Feedback extension
 ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.prod: devops
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Add findings to existing bugs with exploratory testing
- 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+ 
 To help avoid duplication, the Test &amp; Feedback extension automatically 
 searches for and displays existing bugs, based on the keywords in the title,
 as you file a new bug. You can choose to continue creating a new bug or add

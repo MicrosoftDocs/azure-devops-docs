@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Modal Dialog | Extensions for VSTS
+title: Modal Dialog | Extensions for Azure DevOps Services
 description: Use the modal dialog provided by the host
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: conceptual
@@ -39,7 +39,7 @@ To start, declare a contribution of type `ms.vss-web.control` in your extension 
 
 The `uri` property references a page that will be rendered within the content area of the dialog:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -52,7 +52,7 @@ The `uri` property references a page that will be rendered within the content ar
             <input id="inpName" />
         </p>
         <p>
-            <label>Data of birth:</label>
+            <label>Date of birth:</label>
             <input id="inpDob" />
         </p>
         <p>

@@ -1,6 +1,6 @@
 ---
 title: All WITD XML elements reference
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for work item tracking for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
@@ -16,7 +16,7 @@ ms.date: 02/14/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a project, such as a bug, requirement, or risk. You create a project either in [VSTS](../../organizations/accounts/create-organization-msa-or-work-student.md) or on an [on-premises Team Foundation Server (TFS)](../../organizations/projects/create-project.md).  
+You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a project, such as a bug, requirement, or risk. You [create a project](../../organizations/projects/create-project.md) either in Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
   
  The root element in each definition of a WIT is the `WITD` element, which must have only one `WORKITEMTYPE` element defined. The name of each WIT must be unique in a project, and each type name must be no more than 128 Unicode characters long.  
   

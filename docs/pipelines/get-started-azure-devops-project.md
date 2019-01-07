@@ -1,34 +1,27 @@
 ---
-title: Create a CI/CD pipeline for your app with the Azure DevOps Project | Quickstart
-description: The DevOps Project makes it easy to get started on Azure. It helps you launch an app on an Azure service of your choice in few quick steps.
+title: Use the Azure portal to create a pipeline
+description: Use the Azure portal to create a pipeline
 ms.prod: devops
 ms.technology: devops-cicd
-services: vsts
-documentationcenter: vs-devops-build
-author: mlearned
-manager: douge
-editor: ''
-ms.assetid:
-ms.workload: web
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: quickstart
-ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
-ms.date: 05/06/2018
 ms.author: mlearned
-ms.custom: mvc
+author: mlearned
+ms.manager: douge
+ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
+ms.custom: "mvc, seodec18"
+ms.date: 05/06/2018
 monikerRange: 'vsts'
 ---
 
-# Create an Azure Devops project
+# Use the Azure portal
 
-The Azure DevOps Project presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Visual Studio Team Services (VSTS), which is Microsoft's DevOps solution for Azure, to configure the pipeline.
+**Azure Pipelines**
+
+The Azure portal presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Azure Pipelines, which is the CI/CD solution for Azure, to configure the pipeline.
 
 If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 ## Sign in to the Azure portal
-
-The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a free **new VSTS** organization or use an **existing organization**.  The DevOps Project also creates **Azure resources** in the **Azure subscription** of your choice.
 
 1. Sign into the [Microsoft Azure portal](https://portal.azure.com).
 
@@ -44,21 +37,21 @@ The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a fre
 
 1. **Web App on Windows** is the default deployment target.  The application framework, which you chose on the previous steps, dictates the type of Azure service deployment target available here.  Leave the default service, and then choose **Next**.
  
-## Configure VSTS and an Azure subscription
+## Configure an Azure DevOps organization and an Azure subscription
 
-1. Create a **new** VSTS organization or choose an **existing** organization.  Choose a **name** for your VSTS project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
+1. Create a **new** Azure DevOps organization or choose an **existing** organization.  Choose a **name** for your Azure DevOps project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
 
-   	![Enter VSTS info](_img/azure-devops-project/vstsazureinfo.png)
+   	![Enter Azure Pipelines info](_img/azure-devops-project/vstsazureinfo.png)
 
-1. In a few minutes, the **project dashboard** loads in the Azure portal.  A sample application is set up in a repository in your VSTS organization, a build executes, and your application deploys to Azure.  This dashboard provides visibility into your **code repository**, **VSTS CI/CD pipeline**, and your **application in Azure**.  On the right side of the dashboard, select **Browse** to view your running application.
+2. In a few minutes, the **project dashboard** loads in the Azure portal.  A sample application is set up in a repository in your Azure DevOps organization, a build executes, and your application deploys to Azure.  This dashboard provides visibility into your **code repository**, **Azure Pipelines CI/CD pipeline**, and your **application in Azure**.  On the right side of the dashboard, select **Browse** to view your running application.
 
    	![Dashboard view](_img/azure-devops-project/dashboardnopreview.png) 
 	
-The Azure DevOps project automatically configures a CI build and release trigger.  You're now ready to collaborate with a team on a Node.js app with a CI/CD process that automatically deploys your latest work to your web site.
+The Azure DevOps Project automatically configures a CI build and release trigger.  You're now ready to collaborate with a team on a Node.js app with a CI/CD pipeline that automatically deploys your latest work to your web site.
 
 ## Commit code changes and execute CI/CD
 
-The Azure DevOps project created a Git repository in your VSTS or GitHub organization.  Follow the steps below to view the repository and make code changes to your application. Some of these steps will vary depending on the language that you started with.
+The Azure DevOps Project created a Git repository in your Azure Repos or GitHub organization.  Follow the steps below to view the repository and make code changes to your application. Some of these steps will vary depending on the language that you started with.
 
 1. On the left-hand side of the DevOps project dashboard, select the link for your **master** branch.  This link opens a opens a view to the newly created Git repository.
 
@@ -70,13 +63,13 @@ The Azure DevOps project created a Git repository in your VSTS or GitHub organiz
 
 1. Choose **Commit**, then save your changes.
 
-1. In your browser, navigate to the **Azure DevOps project dashboard**.  You should now see a build is in progress.  The changes you just made are automatically built and deployed via a VSTS CI/CD pipeline.
+1. In your browser, navigate to the **Azure DevOps project dashboard**.  You should now see a build is in progress.  The changes you just made are automatically built and deployed via an Azure Pipelines CI/CD pipeline.
 
-## Examine the VSTS CI/CD pipeline
+## Examine the Azure Pipelines CI/CD pipeline
 
-The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in your VSTS organization.  Explore and customize the pipeline as needed.  Follow the steps below to familiarize yourself with the VSTS build and release pipelines.
+The Azure DevOps Project automatically configured a full Azure Pipelines CI/CD pipeline in your Azure DevOps organization.  Explore and customize the pipeline as needed.  Follow the steps below to familiarize yourself with the Azure Pipelines build and release pipelines.
 
-1. Select **Build Pipelines** from the **top** of the Azure DevOps project dashboard.  This link opens a browser tab and opens the VSTS build pipeline for your new project.
+1. Select **Build Pipelines** from the **top** of the Azure DevOps Project dashboard.  This link opens a browser tab and opens the Azure Pipelines build pipeline for your new project.
 
 1. Move the mouse cursor to the right of the build pipeline next to the **Status** field. Select the **ellipsis** that appears.  This action opens a menu where you can perform several activities such as queue a new build, pause a build, and edit the build pipeline.
 
@@ -88,40 +81,40 @@ The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in 
 
 1. Change the **name** of your build pipeline to something more descriptive.  Select **Save & queue**, then select **Save**.
 
-1. Under your build pipeline name, select **History**.  You see an audit trail of your recent changes for the build.  VSTS keeps track of any changes made to the build pipeline, and allows you to compare versions.
+1. Under your build pipeline name, select **History**.  You see an audit trail of your recent changes for the build.  Azure Pipelines keeps track of any changes made to the build pipeline, and allows you to compare versions.
 
-1. Select **Triggers**.  The Azure DevOps project automatically created a CI trigger, and every commit to the repository initiates a new build.  You can optionally choose to include or exclude branches from the CI process.
+1. Select **Triggers**.  The Azure DevOps Project automatically created a CI trigger, and every commit to the repository initiates a new build.  You can optionally choose to include or exclude branches from the CI pipeline.
 
 1. Select **Retention**.  Based on your scenario, you can specify policies to keep or remove a certain number of builds.
 
-1. Select **Build and Release**, then choose **Releases**.  The Azure DevOps project created a VSTS release pipeline to manage deployments to Azure.
+1. Select **Pipelines**, then choose **Releases**.  The Azure DevOps Project created an Azure Pipelines release pipeline to manage deployments to Azure.
 
 1. On the left-hand side of the browser, select the **ellipsis** next to your release pipeline, then choose **Edit**.
 
-1. The release pipeline contains a **pipeline**, which defines the release process.  Under **Artifacts**, select **Drop**.  The build pipeline you examined in the previous steps produces the output used for the artifact. 
+1. The release pipeline contains a **pipeline**, which defines the release pipeline.  Under **Artifacts**, select **Drop**.  The build pipeline you examined in the previous steps produces the output used for the artifact.
 
-1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger**.  This release pipeline has an enabled CD trigger, which executes a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments require manual execution. 
+1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger**.  This release pipeline has an enabled CD trigger, which executes a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments require manual execution.
 
-1. On the left-hand side of the browser, select **Tasks**.  The tasks are the activities your deployment process performs.  In this example, a task was created to deploy to **Azure App service**.
+1. On the left-hand side of the browser, select **Tasks**.  The tasks are the activities your deployment pipeline performs.  In this example, a task was created to deploy to **Azure App service**.
 
 1. On the right-hand side of the browser, select **View releases**.  This view shows a history of releases.
 
 1. Select the **ellipsis** next to one of your releases, and choose **Open**.  There are several menus to explore from this view such as a release summary, associated work items, and tests.
 
-1. Select **Commits**.  This view shows code commits associated with the specific deployment. 
+1. Select **Commits**.  This view shows code commits associated with the specific deployment.
 
-1. Select **Logs**.  The logs contain useful information about the deployment process.  They can be viewed both during and after deployments.
+1. Select **Logs**.  The logs contain useful information about the deployment pipeline.  They can be viewed both during and after deployments.
 
 ## Clean up resources
 
-When no longer needed, you can delete the Azure App service and related resources created in this quickstart by using the **Delete** functionality on the Azure DevOps project dashboard.
+When no longer needed, you can delete the Azure App service and related resources created in this quickstart by using the **Delete** functionality on the Azure DevOps Project dashboard.
 
 ## Next steps
 
-When you configured your CI/CD process in this quickstart, a build and release pipeline were automatically created in your VSTS project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
+When you configured your CI/CD pipeline in this quickstart, a build and release pipeline was automatically created in your Azure DevOps project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
 
 > [!div class="nextstepaction"]
-> [Customize CD process](release/define-multistage-release-process.md)
+> [Customize CD pipeline](release/define-multistage-release-process.md)
 
 ## Videos
 

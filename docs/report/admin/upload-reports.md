@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/02/2017
+monikerRange: "<= azdevserver-2019" 
+ms.date: 11/19/2018
 ---
 
 #Upload reports to a team project
@@ -24,7 +25,7 @@ This is the second task in the four-task sequence to add reports to your team pr
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 >[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS. If you're using VSTS, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
 
 
 By adding a report server to your TFS (on-premises) deployment, you can access a wealth of data about your team's projects, such as build quality, bug trends, burndown, and test progress. SQL Server Reporting Services (SSRS) reports provide insight to help teams manage work and improve processes.  
@@ -158,8 +159,8 @@ You can always check the names by opening the context menu for any report, choos
 ####Q: What about uploading Excel reports?
 **A:** For TFS 2015 and earlier versions, you can use **tfpt addprojectportal** command to add a project portal and Excel reports once you have [added a SharePoint web application](https://msdn.microsoft.com/library/ee805928.aspx) to your team project collection. 
 
-####Q: Can I get these same reports using VSTS?
-**A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../charts.md).
+####Q: Can I get these same reports using Azure DevOps Services?
+**A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../charts.md) or use the [Analytics Service](../analytics/index.md).
 
 ####Q: How do I customize a report?
 **A:** You can customize the reports you uploaded using [SQL Server Report Builder 2012](https://www.microsoft.com/download/details.aspx?id=29072). To learn more, see [Creating Reports for Team Foundation Server 2010](https://msdn.microsoft.com/library/ff730837.aspx) and [Customizing Reports for Team Foundation Server 2010](https://msdn.microsoft.com/library/ff730838.aspx). Even though these articles are based on TFS 2010, they are valid for TFS 2013 and later versions. 

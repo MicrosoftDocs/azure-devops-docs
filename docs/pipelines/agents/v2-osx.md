@@ -1,6 +1,7 @@
 ---
 title: Deploy a build and release agent on macOS
-description: Learn how to deploy a macOS agent to build and deploy your iOS application for VSTS and Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,11 +9,13 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Deploy an agent on macOS
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -21,14 +24,14 @@ monikerRange: '>= tfs-2015'
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > Before you begin:
-> * If your build and release pipelines are in [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private macOS agent.
+> * If your build and release pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private macOS agent.
 > *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem). 
+Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem).
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -41,21 +44,23 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range=">= tfs-2017"
 
-### VSTS and TFS 2017 and newer
+### Azure Pipelines and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 
 <li>Click **Download agent**.</li>
 
-<li>On the **Get agent** dialog box, click **OS X**.</li>
+<li>On the **Get agent** dialog box, click **macOS**.</li>
 
 <li>Click the **Download** button.
 
 <li>Follow the instructions on the page.</li>
+
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
 </ol>
 
 ::: moniker-end
@@ -64,7 +69,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
+0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
 0. Follow the instructions on that page to download the agent.
 
@@ -79,7 +84,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range="vsts"
 
-VSTS: `https://{your-organization}.visualstudio.com`
+Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
 
@@ -112,9 +117,12 @@ To run the agent interactively:
 ./run.sh
  ```
 
+To use your agent, run a [job](../process/phases.md) using the agent's pool.
+If you didn't choose a different pool, your agent will be in the **Default** pool.
+
 ## Run as a launchd service
 
-We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. The service has access to the UI to run your UI tests.
+We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. This script will be generated after you configure the agent. The service has access to the UI to run your UI tests.
 
 > [!NOTE]
 > If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service_files).
@@ -129,7 +137,7 @@ In the section below, these tokens are replaced:
 
 For example, you have configured an agent (see above) with the name `our-osx-agent`. In the following examples, `{tfs-name}` will be either:
 
-* VSTS: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `vsts.agent.fabrikam.our-osx-agent`
+* Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `vsts.agent.fabrikam.our-osx-agent`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `
 vsts.agent.our-server.our-osx-agent`
@@ -227,9 +235,9 @@ Command:
 ./svc.sh uninstall
 ```
 
-#### Automatic log on and lock
+#### Automatic login and lock
 
-The service runs when the user logs in. If you want the agent service start when the machine restarts, you can configure the machine it to automatically log on and lock on startup. See [Auto Logon and Lock](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/).
+Normally, the agent service runs only after the user logs in. If you want the agent service to automatically start when the machine restarts, you can configure the machine to automatically log in and lock on startup. See [Set your Mac to automatically log in during startup - Apple Support](https://support.apple.com/HT201476).
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
@@ -261,7 +269,7 @@ You can also run your own instructions and commands to run when the service star
 
 0. Replace the following line with your instructions:
 
-```
+```bash
 
 # insert anything to setup env when running as a service
 
@@ -309,11 +317,11 @@ You can use the template described above as to facilitate generating other kinds
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 ### Where can I learn more about how the launchd service works?
 
-[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
-
-[launchd.plist manpage](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html)
+[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 ::: moniker range="vsts"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]

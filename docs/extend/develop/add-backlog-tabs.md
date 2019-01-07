@@ -1,6 +1,6 @@
 ---
-title: Add tabs on backlog pages | Extensions for VSTS
-description: Extend VSTS with your own hub.
+title: Add tabs on backlog pages | Extensions for Azure DevOps Services
+description: Extend Azure DevOps Services with your own hub.
 ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -14,12 +14,12 @@ ms.date: 08/22/2016
 
 # Add tabs on backlog pages
 
-If you have a web page that can be hosted in an iframe, it can be hosted in VSTS as a tab on the backlog pages.
+If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps Services as a tab on the backlog pages.
 In this example, we'll add a simple Hello World tab on the Product Backlog and the Iteration Backlog.
 
-![Tab location on the VSTS Product backlog page](../_shared/procedures/_img/backlog-tab/product-backlog-tab.png)
+![Tab location on the Azure DevOps Services Product backlog page](../_shared/procedures/_img/backlog-tab/product-backlog-tab.png)
 
-![Tab location on the VSTS Product backlog page](../_shared/procedures/_img/backlog-tab/iteration-backlog-tab.png)
+![Tab location on the Azure DevOps Services Product backlog page](../_shared/procedures/_img/backlog-tab/iteration-backlog-tab.png)
 
 ## Create your web page
 

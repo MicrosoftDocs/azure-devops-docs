@@ -1,6 +1,6 @@
 ---
 title: Add tasks to support sprint planning
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Add tasks to user stories assigned to a sprint or iteration working with Scrum methods 
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,15 +10,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 11/19/2018
 ---
 
 
 
 <a id="define-tasks">  </a>
-# Add tasks to backlog items 
+# 2. Add tasks to backlog items 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 You add tasks to backlog items when you want to track the work required to implement them and to estimate the work assigned to individual team members and the team. The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 
@@ -37,15 +37,15 @@ Add as many tasks as needed to capture the work required to complete each item. 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 ## Open a Sprint backlog for a team 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
-0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
@@ -66,17 +66,19 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -92,6 +94,15 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
+::: moniker-end
+
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
+
 ---
 
 <a id="define-tasks" />
@@ -100,12 +111,13 @@ Add as many tasks as needed to capture the work required to complete each item. 
 If you haven't yet assigned backlog items to your sprint, [do that now](assign-work-sprint.md). Also, you'll want to have [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
 
 For each sprint backlog item, add a task. Adding tasks from the sprint backlog or board automatically links the task to its parent backlog item. 
+
 > [!TIP]    
-> You can quickly add several tasks on the task board by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the task board](../../boards/boards/customize-cards.md#task-board). 
+> You can quickly add several tasks on the taskboard by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the taskboard](../../boards/boards/customize-cards.md#task-board). 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 
 You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
@@ -116,10 +128,10 @@ From the **Backlog** view, choose the plus sign to open the work item form for a
 
 Fill out the form as described in the next section. 
 
-Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the ![](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.   
+Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the ![ ](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.   
 
 > [!div class="mx-imgBorder"]
-> ![Add task from the task board](_img/add-tasks/add-task-board-agile.png)
+> ![Add task from the taskboard](_img/add-tasks/add-task-board-agile.png)
 
 > [!TIP]    
 > You can quickly add tasks through the Taskboard by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).   
@@ -127,49 +139,58 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)
 
-You can add tasks from the sprint **Backlog** or **Board** (aka task board). 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
 
-From the **Backlog** view, choose the ![](../../_img/icons/blue-add-icon.png) plus icon to add a new task.  
+You can add tasks from the sprint **Backlog** or **Board** (aka taskboard). 
+
+From the **Backlog** view, choose the ![ ](../../_img/icons/blue-add-icon.png) plus icon to add a new task.  
 
 > [!div class="mx-imgBorder"]
 > ![print backlog page, add task](_img/add-tasks/sp-add-tasks.png)
 
 Fill out the form as described in the next section. 
 
-Another option, is to open the **Board**, and add tasks as cards. Simply click the ![](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
+Another option, is to open the **Board**, and add tasks as cards. Simply click the ![ ](../../_img/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
 
 > [!div class="mx-imgBorder"]
-> ![Add task from the task board](_img/add-tasks/add-task-board-standard.png)
+> ![Add task from the taskboard](_img/add-tasks/add-task-board-standard.png)
 
 > [!TIP]    
 > You can quickly add tasks through the Board by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).  
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 ---
 
 ## Fill out the task form 
 
 Name the task and enter an estimate for *Remaining Work*. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 > [!div class="mx-imgBorder"]  
 > ![Add task](_img/add-tasks/add-task-form.png)
 ::: moniker-end	
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 <a id="task-form-team-services" /> 
 <!--- Task form, new form -->
-<img src="_img/sp-scrum-task-form.png" alt="New task form" style="border: 2px solid #C3C3C3;" />	
+![New task form](_img/sp-scrum-task-form.png)  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 <a id="task-form-tfs-2015-13" /> 
 <!--- Task form, old form -->
 
-<img src="_img/IC797606.png" alt="Web portal, Task form, old form"  style="border: 1px solid #C3C3C3;" />  	
+!["Web portal, Task form, old form](_img/IC797606.png)  	
 ::: moniker-end
 
 At the planning stage, *Remaining Work* corresponds to an estimate of how long it will take to complete the task.  
@@ -208,23 +229,33 @@ During the sprint, team members update remaining work to continually reflect the
 <a id="unparented-tasks">  </a>
 ## Unparented tasks
 
-Tasks without links to parent backlog items or user stories appear at the top of the task board. You can track unparented tasks in similar ways to other tasks, or drag them to an existing backlog item to parent them. The Unparented card tracks the total of remaining work defined for all unparented tasks, however, it isn't associated with any work item.
+Tasks without links to parent backlog items or user stories appear at the top of the taskboard. You can track unparented tasks in similar ways to other tasks, or drag them to an existing backlog item to parent them. The Unparented card tracks the total of remaining work defined for all unparented tasks, however, it isn't associated with any work item.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevserver-2019 || vsts"
 > [!div class="mx-imgBorder"]  
 > ![Unparented tasks, agile taskboard](_img/add-tasks/unparented-tasks.png) 
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
+::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+
 ![Unparented tasks](_img/ALM_TB_UnparentedTasks_CO.png)
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
+::: moniker-end
 
 ---
 

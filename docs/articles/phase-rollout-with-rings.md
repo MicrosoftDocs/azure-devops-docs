@@ -1,27 +1,27 @@
 ---
 title: Progressively expose your releases using deployment rings
-description: Explore how to progressively expose your VSTS Extension releases in production to validate, before impacting all users
+description: Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 04/26/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 monikerRange: '>= tfs-2013'
 ---
 
-# Explore how to progressively expose your VSTS Extension releases in production to validate, before impacting all users
+# Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
 
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
-Are you planning to build and deploy Visual Studio Team Services (VSTS) extensions to production? You probably have a few questions, such as:
+Are you planning to build and deploy Azure DevOps extensions to production? You probably have a few questions, such as:
 * How do you embrace DevOps to deliver changes and value faster?
 * How do you mitigate the risk of deploying to production?
 * How do you automate the build and deployment?
 
-This topic aims to answer these questions and share learnings using rings with VSTS extensions. For an insight into the Microsoft guidelines, read [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/).
+This topic aims to answer these questions and share learnings using rings with Azure DevOps extensions. For an insight into the Microsoft guidelines, read [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/).
 
 ## One or more rings to rule your deployments
 
@@ -58,7 +58,7 @@ Next you need to map the topology of your application to the ringed deployment m
 > The ringed deployment model is not a silver bullet!
 > Start small, prototype, and continuously compare impact, value, and cost.
 
-At the application level, the composition of VSTS extensions is innocuous, easy to digest, scale, and deploy independently. Each extension:
+At the application level, the composition of Azure DevOps extensions is innocuous, easy to digest, scale, and deploy independently. Each extension:
 * Has one of more web and script files
 * Interfaces with Core client
 * Interfaces with REST client and REST APIs
@@ -66,7 +66,7 @@ At the application level, the composition of VSTS extensions is innocuous, easy 
 
 ![Progressive exposure of the application layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
-At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in VSTS accounts, they are hosted by the VSTS web application, with state persisted to Azure storage and/or the extension [data storage](/vsts/extend/develop/data-storage).
+At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in organization, they are hosted by the Azure DevOps service portal, with state persisted to Azure storage and/or the extension [data storage](/azure/devops/extend/develop/data-storage).
 
 ![Progressive exposure of the infrastructure layer](./_img/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
@@ -81,9 +81,9 @@ The extension topology is perfectly suited for the ring deployment model and to 
 
 ## Moving changes through deployment rings
 
-Let's observe how a change triggers and moves through the ring-based deployment process, using the [VSTS Developer Tools Build Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) extension.
+Let's observe how a change triggers and moves through the ring-based deployment process, using the [Azure DevOps Developer Tools Build Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) extension.
 
-**VSTS Developer Tools Build Tasks** extension is the secret sauce, used to package and publish VSTS extensions to the Visual Studio Marketplace.
+**Azure DevOps Developer Tools Build Tasks** extension is the secret sauce, used to package and publish Azure DevOps extensions to the Visual Studio Marketplace.
  
 ![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
@@ -91,22 +91,22 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 2. The commit triggers a continuous integration build.
 3. The new build triggers a continuous deployment trigger, which automatically starts the **Canaries** environment deployment.
-4. The **Canaries** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. Only the **Canaries** are impacted by the change.
+4. The **Canaries** deployment publishes a private extension to the marketplace and shares it with predefined organizations. Only the **Canaries** are impacted by the change.
 5. The **Canaries** deployment triggers the **Early Adopter** environment deployment. A pre-deployment approval gate requires any one of the authorized users to approve the release.
 
 	![Pre-deployment approval for Early Adopter environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-early-approval.png)
 
-6. The **Early Adopter** deployment publishes a private extension to the marketplace and shares it with predefined VSTS accounts. Both the **Canaries** and **Early Adopter** are impacted by the change.
+6. The **Early Adopter** deployment publishes a private extension to the marketplace and shares it with predefined organizations. Both the **Canaries** and **Early Adopter** are impacted by the change.
 7. The **Early Adopter** deployment triggers the **Users** environment deployment. A stricter pre-deployment approval gate requires all of the authorized users to approve the release.
 
 	![Pre-deployment approval for User environment](./_img/phase-rollout-with-rings/phase-rollout-with-rings-users-approval.png)
 
-8. The **Users** deployment publishes a public extension to the marketplace. At this stage, everyone who has installed the extension in their VSTS account is affected by the change.
+8. The **Users** deployment publishes a public extension to the marketplace. At this stage, everyone who has installed the extension in their organization is affected by the change.
 9. It's key to realize that the impact ("blast radius") increases as your change moves through the rings. Exposing the change to the **Canaries** and the **Early Adopters**, is giving two opportunities to validate the change and hotfix critical bugs before a release to production.
 
 > [!NOTE]
 >
-> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/vsts/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for release management.
+> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
 
 ## Dealing with monitoring and noise
 
@@ -117,7 +117,7 @@ You need **effective** monitoring and **actionable** alerts to detect and mitiga
 
 Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) and out-of-the-box extensions you can build overview of your pipelines, lead and cycle times, and other information. In the sample dashboard, it's evident that there are 34 successful builds, 21 successful releases, 1 failed release, and 2 releases in progress.
 
-![High-level dashboard on VSTS](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
+![High-level dashboard on Azure DevOps](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
 # What's the value?
 
@@ -145,7 +145,7 @@ No, rings and feature flags are symbiotic. Feature flags give you fine-grained c
 
 ![Feature flags](./_img/phase-rollout-with-rings/phase-rollout-with-rings-feature-flags.png)
 
-[LaunchDarkly](https://launchdarkly.com/microsoft/) provides an extension for VSTS & Team Foundation Server. It integrates with VSTS RM and gives you "run-time" control of features deployed with your ring deployment process.
+[LaunchDarkly](https://launchdarkly.com/microsoft/) provides an extension for Azure DevOps Services & Team Foundation Server. It integrates with Azure Pipelines and gives you "run-time" control of features deployed with your ring deployment process.
 
 ## Conclusion
 
@@ -167,7 +167,7 @@ The ring deployment model allows you to process a hotfix like any other change. 
 
 ### How do you deal with variables that span (shared) release environments?
 
-Refer to [Variables in Release Management](/vsts/pipelines/release/variables).
+Refer to [Default and custom release variables](/azure/devops/pipelines/release/variables).
 
 ### How can you manage secrets used by the pipeline?
 

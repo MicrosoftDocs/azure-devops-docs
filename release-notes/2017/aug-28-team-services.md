@@ -3,7 +3,7 @@ title: Customizable work item rules – VSTS Sprint 122 Update
 description: Visual Studio Team Services (VSTS) release notes for Sprint 122 Update on August 28 2017 with customizable work item rules, forks, and work items hub.
 ms.ContentId: 1d14aa73-d447-4d5e-8ea4-f1890b1d5c29
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: alexn
 author: alexn
 ---
@@ -27,7 +27,7 @@ Some of the other key feature highlights include:
 
 > **Preview feature**
 >
-> To use this capability you must have the **New Work Items Hub** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile and/or account.
+> To use this capability you must have the **New Work Items Hub** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile and/or account.
 
 The **Work Items** hub allows you to focus on relevant items inside a team project via 5 pivots:
 
@@ -55,7 +55,7 @@ While developing the new **Work Items** hub, we wanted to ensure that you could 
 > [!div class="mx-imgBorder"]
 ![filters](_img/08_28_29.png)
 
-See the [documentation for the Work Items hub](/vsts/work/work-items/view-add-work-items) for more information.
+See the [documentation for the Work Items hub](https://visualstudio.microsoft.com/docs/work/work-items/view-add-work-items) for more information.
 
 ### Customizable work item rules
 
@@ -78,7 +78,7 @@ To get started with rules, simply follow these steps:
 1. Create or select an existing inherited process
 1. Select the work item type you would like to add rules on, click **Rules**, and click **New rule**
 
-Check out the [documentation for custom rules](/vsts/work/process/custom-rules) for more information.
+Check out the [documentation for custom rules](https://visualstudio.microsoft.com/docs/work/process/custom-rules) for more information.
 
 ### Mentioned support for the My work items page
 
@@ -112,7 +112,7 @@ New feature ideas can arrive at any moment, so we’ve made it easier to add new
 
 > **Preview feature**
 >
-> This capability is enabled through the **Git Forks** [preview feature](/vsts/project/navigation/preview-features) on your account.
+> This capability is enabled through the **Git Forks** [preview feature](/azure/devops/project/navigation/preview-features) on your account.
 >
 > With this update you can fork and push changes back **within an account**. This is the 1st step on our journey with forks. The next step will be to enable you to fork a repository into a different VSTS account.
 
@@ -131,7 +131,7 @@ A fork starts with all the contents of its upstream (original) repository. When 
 
 You can create PRs in either direction: from fork to upstream, or upstream to fork. The most common direction will be from fork to upstream. The destination repository’s permissions, policies, builds, and work items will apply to the PR.
 
-Read the [documentation for forks](/vsts/git/concepts/forks) for more information.
+Read the [documentation for forks](https://visualstudio.microsoft.com/docs/git/concepts/forks) for more information.
 
 ### File minimap
 
@@ -165,7 +165,7 @@ The email body is consistent with other emails, emphasizing why the email was se
 
 ### Complete Work Items settings
 
-The feature to [complete work items when completing pull requests](../2017/jul-14-team-services.md#automatically-complete-work-items-when-completing-pull-requests) now has a new repository setting to control the default behavior. The new setting to **Remember user preferences for completing work items with pull requests** is enabled by default, and will honor the user’s last state when completing future PRs in the repo. If the new setting is disabled, then the **Complete linked work items after merging** option will default to disabled for all PRs in the repository. Users can still choose to transition linked work items when completing PRs, but they will need to opt-in each time.
+The feature to [complete work items when completing pull requests](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#automatically-complete-work-items-when-completing-pull-requests) now has a new repository setting to control the default behavior. The new setting to **Remember user preferences for completing work items with pull requests** is enabled by default, and will honor the user’s last state when completing future PRs in the repo. If the new setting is disabled, then the **Complete linked work items after merging** option will default to disabled for all PRs in the repository. Users can still choose to transition linked work items when completing PRs, but they will need to opt-in each time.
 
 ### Find lost commits due to a Force Push
 
@@ -187,7 +187,7 @@ For new repositories and new projects, administrators will no longer be granted 
 
 ### CI builds for Bitbucket repositories
 
-It's now possible to run CI builds from connected Bitbucket repositories. To get started, set up a [service endpoint to connect to Bitbucket](/vsts/pipelines/library/service-endpoints). Then in your build definition, on the Tasks tab select the Bitbucket source.
+It's now possible to run CI builds from connected Bitbucket repositories. To get started, set up a [service endpoint to connect to Bitbucket](/azure/devops/pipelines/library/service-endpoints). Then in your build definition, on the Tasks tab select the Bitbucket source.
 
 > [!div class="mx-imgBorder"]
 ![get sources bitbucket repo](_img/08_28_25.png)
@@ -212,9 +212,9 @@ Read more about the goals and usage on the [vsts-tasks repo page](https://github
 
 > **Preview feature**
 >
-> This capability is enabled through the **New Release Definition Editor** [preview feature](/vsts/project/navigation/preview-features) on your profile and/or account.
+> This capability is enabled through the **New Release Definition Editor** [preview feature](/azure/devops/project/navigation/preview-features) on your profile and/or account.
 
-Earlier last month we announced a [preview of the new release definition editor](../2017/jul-14-team-services.md#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the [new release definition editor](/vsts/pipelines/preview/new-release-landing-page) for everyone by default. An administrator can disable it from the [Preview features option](/vsts/project/navigation/preview-features) in their account profile menu.
+Earlier last month we announced a [preview of the new release definition editor](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the [new release definition editor](/azure/devops/pipelines/preview/new-release-landing-page) for everyone by default. An administrator can disable it from the [Preview features option](/azure/devops/project/navigation/preview-features) in their account profile menu.
 
 ### Enhancements in new Release Definition editor
 
@@ -227,7 +227,7 @@ You can now delete custom templates in the new release definition editor.
 
 #### Visually handle permissions on the editor
 
-The new release definition editor now has specific in context messages to handle the various [permissions](/vsts/build/concepts/policies/permissions#release-permissions).
+The new release definition editor now has specific in context messages to handle the various [permissions](https://visualstudio.microsoft.com/docs/build/concepts/policies/permissions#release-permissions).
 
 #### Drag and drop tasks across phases
 
@@ -239,7 +239,7 @@ Release templates let you create a baseline for you to get started when defining
 
 ### Conditional release tasks and phases
 
-Similar to [conditional build tasks](/vsts/build/concepts/process/conditions), you can now run a task or phase only if specific conditions are met. This will help you in modeling rollback scenarios.
+Similar to [conditional build tasks](https://visualstudio.microsoft.com/docs/build/concepts/process/conditions), you can now run a task or phase only if specific conditions are met. This will help you in modeling rollback scenarios.
 
 If the built-in conditions don’t meet your needs, or if you need more fine-grained control over when the task or phase runs, you can specify custom conditions. Express the condition as a nested set of functions. The agent evaluates the innermost function and works its way outwards. The final result is a boolean value that determines if the task to be run.
 
@@ -286,9 +286,9 @@ Cloud load testing agents are now able to run the JMeter 3.2 engine. Load tests 
 
 > **Preview feature**
 >
-> This capability is enabled through the **Streamlined User Management** [preview feature](/vsts/project/navigation/preview-features) on your profile and/or account.
+> This capability is enabled through the **Streamlined User Management** [preview feature](/azure/devops/project/navigation/preview-features) on your profile and/or account.
 
-Effective user management helps administrators ensure they are paying for the right resources and enabling the right access in their projects. We’ve repeatedly heard in support calls, and from our customers that they want capabilities to simplify this process in VSTS. This sprint, we are releasing an experience to general availability, which begins to address these issues. See the [documentation for the User hub](/vsts/setup-admin/team-services/manage-users-and-access-user-hub-team-services) for more information. Here are some of the changes that you’ll see light up:
+Effective user management helps administrators ensure they are paying for the right resources and enabling the right access in their projects. We’ve repeatedly heard in support calls, and from our customers that they want capabilities to simplify this process in VSTS. This sprint, we are releasing an experience to general availability, which begins to address these issues. See the [documentation for the User hub](https://visualstudio.microsoft.com/docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services) for more information. Here are some of the changes that you’ll see light up:
 
 #### Invite people to the account in one easy step
 
@@ -320,20 +320,20 @@ We want to make sure each of your administrators has the tools they need to easi
 
 ### Graph REST APIs in Public Preview
 
-The **Graph REST API** resources allow developers to write applications that manage users, groups and group memberships in VSTS. The API set covers key user management scenarios including adding an MSA or AAD user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. Learn more about the API in our [documentation and samples](/vsts/integrate/api/graph/overview).
+The **Graph REST API** resources allow developers to write applications that manage users, groups and group memberships in VSTS. The API set covers key user management scenarios including adding an MSA or AAD user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. Learn more about the API in our [documentation and samples](https://visualstudio.microsoft.com/docs/integrate/api/graph/overview).
 
 ### Profile Card
 
 We want to promote better connections between users within VSTS. As a part of this effort, we’re updating the user profile card, which allows you to interact with, and learn more about others within your VSTS account. Through integration with your default email and IM client, you can send emails and start chats directly from the profile card. Profile cards can be activated within work items, pull requests, and security settings by clicking on the contact card icon, profile picture, or a user’s name within comments.
 
-Azure Active Directory (AAD) users will be able to see a users **Reports to** hierarchy as well as direct reports.
+Azure Active Directory (Azure AD) users will be able to see a users **Reports to** hierarchy as well as direct reports.
 
 > [!div class="mx-imgBorder"]
 ![profile card](_img/08_28_21.png)
 
 ### Improved authentication documentation and samples
 
-In the past, our REST documentation has been focused solely on using PATs for access to our REST APIs. We’ve updated our documentation for extensions and integrations to give guidance on how best to authenticate given your application scenario. Whether you’re developing a native client application, interactive web app, or simply calling an API via Powershell, we have clear sample on how best to authenticate with VSTS. For more information see the [documentation](/vsts/integrate/get-started/authentication/authentication_guidance).
+In the past, our REST documentation has been focused solely on using PATs for access to our REST APIs. We’ve updated our documentation for extensions and integrations to give guidance on how best to authenticate given your application scenario. Whether you’re developing a native client application, interactive web app, or simply calling an API via Powershell, we have clear sample on how best to authenticate with VSTS. For more information see the [documentation](https://visualstudio.microsoft.com/docs/integrate/get-started/authentication/authentication_guidance).
 
 ## Feedback
 

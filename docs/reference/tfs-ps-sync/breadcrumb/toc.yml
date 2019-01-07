@@ -1,11 +1,7 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Team Foundation Server
+  tocHref: /tfs/
+  topicHref: /tfs/index
   items: 
-  - name: Admin
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
-    items:
-    - name: Project Server Integration
-      tocHref:  /vsts/reference/tfs-ps-sync/
-      topicHref: /vsts/reference/tfs-ps-sync/index
+  - name: Project Server Integration
+    tocHref: /azure/devops/tfs-ps-sync/
+    topicHref: /azure/devops/reference/tfs-ps-sync/index

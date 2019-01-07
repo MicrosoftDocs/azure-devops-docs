@@ -1,5 +1,6 @@
 ---
-title: gitconfig files | Team Services, TFS, and Visual Studio
+title: gitconfig files
+titleSuffix: Azure Repos
 description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
 ms.prod: devops
@@ -8,12 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 05/04/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Git preferences and settings in Visual Studio
-#### VSTS | TFS 2018
+
+#### Azure Repos | TFS 2018
 
 Visual Studio allows you to configure and view common Git settings and preferences, such as your name and email address, your preferred diff and merge tools, and more. These preferences and settings can be viewed and configured in **Team Explorer** on either the **Global Settings** page (applies to all your repositories) or the **Repository Settings** page (applies to the current repository).
 
@@ -150,7 +152,7 @@ git config [--local|--global|--system] pull.rebase [true|false|interactive|prese
 Cryptographic network provider is a Git configuration setting at global scope that configures which SSL backend to use at runtime, and corresponds to the `git config` [http.sslBackend](https://github.com/git-for-windows/repos/git/commit/d81216ee4dd46ae59a388044d1266d6fa9030c19) setting. The values are:
 
 - OpenSSL: Use [OpenSSL](https://www.openssl.org/) for TLS and SSL protocols.
-- Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
+- Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
 Windows solution, accessing the Windows Credential Store, thereby
 allowing for enterprise-wide management of certificates.
 - Unset (default): If this setting is unset, OpenSSL is the default.
@@ -172,9 +174,6 @@ git config --global http.sslBackend [openssl|schannel]
 ```
 
 ---
-
-
-
 
 ### Ignore & attributes files
 

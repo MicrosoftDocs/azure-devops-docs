@@ -1,12 +1,13 @@
 ---
 title: Process template and plug-in files 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Describes each process template and plug-in file and what is supported when you create a project via Visual Studio or the web portal  
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 10/19/2017
 ---
@@ -24,9 +25,9 @@ For information about the default process templates, see [Choose a process](../.
 <a name="client-support"></a> 
 ## Client support for project creation
 
-Depending on whether you work from the VSTS or TFS, you can create a project from the web portal or from Visual Studio/Team Explorer.
+Depending on whether you work from the Azure DevOps Services or TFS, you can create a project from the web portal or from Visual Studio/Team Explorer.
 
-| Client | VSTS | TFS 2018 and TFS 2017 |  TFS 2015 and earlier versions |  
+| Client | Azure DevOps Services | TFS 2018 and TFS 2017 |  TFS 2015 and earlier versions |  
 |--------|---------------|-----------------|-----------------|  
 |Web portal | ![supported](../../_img/icons/checkmark.png)| ![supported](../../_img/icons/checkmark.png) | ![not supported](../../_img/icons/delete_icon.png)  |
 |Visual Studio/Team Explorer | ![not supported](../../_img/icons/delete_icon.png) | ![supported](../../_img/icons/checkmark.png) |![supported](../../_img/icons/checkmark.png)|  
@@ -36,7 +37,7 @@ Depending on whether you work from the VSTS or TFS, you can create a project fro
 When you create a project from the web portal, the following plug-in files are ignored. 
 
 - **Build**: Default security permissions are defined for build functions.
-- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
+- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
 - **Reports**: See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md) to add SQL Reports after you create the project. 
 - **Version Control**: Default security permissions and TFVC check-in policies are defined for git and TFVC functions.
 - **Windows SharePoint Services**: TFS 2018 and later versions no longer support native integration with SharePoint products. See [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. 
@@ -44,11 +45,6 @@ When you create a project from the web portal, the following plug-in files are i
 
 For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).
 
-
-<!---
-> [!NOTE]    
->For VSTS, even if you initiate creating a project from Visual Studio/Team Explorer, you'll be taken to the web portal to complete the operation. For TFS 2017.3 and later versions, you'll be redirected to the web portal to create a project. 
---> 
   
 <a name="Root"></a> 
 ##  The root process template file  
@@ -88,7 +84,7 @@ The following table describes each plug-in file and whether or not it is support
 <td>![not supported](../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions used by Team Foundation Build and uploads build template files.
 <blockquote>
-For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. 
+For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. 
 </blockquote></td>
 </tr>
 
@@ -119,7 +115,7 @@ For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only def
 <td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. 
 
 <blockquote>
- For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
+ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
 </blockquote>
 
 </td>
@@ -168,7 +164,7 @@ Test Management<br/>
 <td>![not supported](../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
 <blockquote>
-For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage [TFVC check-in policies](../../repos/tfvc/add-check-policies.md) or [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.
+For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage [TFVC check-in policies](../../repos/tfvc/add-check-policies.md) or [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.
 </blockquote>
 </td>
 </tr>
@@ -185,13 +181,13 @@ Windows SharePoint Services<br/>
 <p>Defines the project portal based on a template for a SharePoint site. Only supported for on-premises TFS. 
 
 <blockquote>
-TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). Creating a project from the web portal will ignore the WssTasks.xml plug-in. 
+TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). Creating a project from the web portal will ignore the WssTasks.xml plug-in. 
 </blockquote>
 
 <p>This plug-in also uploads the information contained in the following files and folders:</p> 
 <ul>
 <li>**Process Guidance**: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance. </li> 
-<li>**Samples and Templates**: Uploads one or more Excel workbooks (.xslx files) to support bug triage and track issues. </li> 
+<li>**Samples and Templates**: Uploads one or more Excel workbooks (.xlsx files) to support bug triage and track issues. </li> 
 <li>**Shared Documents**: Uploads one or more sample document and template files as a starting point for creating work products.</li>  
 </ul>
 
@@ -227,7 +223,7 @@ Work Item Tracking <br/>
 <li>**[TypeDefinitions](add-wit-definitions-process-template.md)**: Defines the 15 or more work item type XML definition files contained within the TypeDefinition folder. The definitions differ depending on the process template selected. </li>
 <li>**[Work items](add-work-item-instance-process-template.md)**: Defines one or more work items. No definitions are defined within the default process templates. 
 <blockquote>
-For VSTS and TFS 2017.3 and later versions, definitions for work item instances will be ignored when creating projects.  </blockquote></li>
+For Azure DevOps Services and TFS 2017.3 and later versions, definitions for work item instances will be ignored when creating projects.  </blockquote></li>
 </ul> 
 
 </td>

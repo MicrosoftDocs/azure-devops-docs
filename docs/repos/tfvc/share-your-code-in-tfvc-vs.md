@@ -1,5 +1,6 @@
 ---
-title: Develop and share your code in TFVC using Visual Studio | VSTS
+title: Develop and share your code in TFVC using Visual Studio
+titleSuffix: Azure Repos
 description: Share code in Team Foundation Version Control using Visual Studio
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 # Develop and share your code in TFVC using Visual Studio
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
@@ -24,7 +25,7 @@ as early as possible.
 Here, we'll show you how to get started with 
 Team Foundation Version Control (TFVC), a centralized system.
 If you want to work in a distributed system, 
-you can instead use [Git with VSTS](../../repos/git/share-your-code-in-git-vs.md).
+you can instead use [Git with Azure Repos](../../repos/git/share-your-code-in-git-vs.md).
 
 Is your code in another place? [Learn how to migrate it here](#migrate).
 
@@ -77,13 +78,13 @@ Now that you've added your app, you can skip down to
  ![Open your solution in Visual Studio](_img/share-your-code-in-tfvc-vs/open-solution-from-team-explorer-home.png)
 
 
-### Add the solution to VSTS
+### Add the solution to Azure Repos
 
 0. Open the solution explorer (Keyboard: Ctrl + Alt + L).
 
 0. Add your solution to version control.
 
- ![Add the solution to VSTS](_img/share-your-code-in-tfvc-vs/IC682953.png)
+ ![Add the solution to Azure Repos](_img/share-your-code-in-tfvc-vs/IC682953.png)
 
 0. Check in the solution.
 
@@ -146,16 +147,16 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
 ## Troubleshooting
 
-* [My code is somewhere else. Can I migrate it to my TFVC project on VSTS?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-visual-studio-team-services)
+* [My code is somewhere else. Can I migrate it to my TFVC project on Azure DevOps Services?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-azure-devops-services)
 * [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
 
 <a name="migrate"></a>
-### My code is somewhere else. Can I migrate it to my TFVC project on VSTS?
+### My code is somewhere else. Can I migrate it to my TFVC project on Azure DevOps Services?
 
 Yes:
 
  * [Upgrade From Visual SourceSafe](http://msdn.microsoft.com/library/ms253060).
- * [Migrate from Team Foundation Server into VSTS](../../articles/migrate-to-vsts-from-tfs.md).
+ * [Migrate from Team Foundation Server into Azure DevOps Services](../../articles/migrate-from-tfs.md).
 
 <a name="workspace_exists"></a>
 ### I don't see the Configure Workspace link shown in the steps above. What do I do next?

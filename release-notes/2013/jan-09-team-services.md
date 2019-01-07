@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Jan 9
 description: VSTS release notes for January 9 2013
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 8359e77b-38a3-4558-8cee-6f9751cb9704
 ms.date: 06/01/2016
@@ -22,7 +22,7 @@ Click the small gear in the top right hand corner of the navigation and then cli
 
 Simply follow the instructions on the page and your account URL will be renamed.
 
-As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and (Twitter)[http://twitter.com/search?q=%23tfservice].
+As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and (Twitter)[http://twitter.com/search?q=%23tfservice].
 
 Thanks,
 

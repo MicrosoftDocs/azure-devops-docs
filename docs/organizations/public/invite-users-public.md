@@ -1,15 +1,16 @@
 ---
-title: Invite users to collaborate on your public project
-titleSuffix: VSTS Public Project  
+title: Invite users
+titleSuffix: Azure DevOps Services Public Project  
 description: Invite others to contribute to you public project  
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.reviewer:
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
-ms.date: 07/02/2018
+ms.date: 12/10/2018
 monikerRange: 'vsts'
 ---
 
@@ -19,6 +20,8 @@ monikerRange: 'vsts'
 
 # Invite users to contribute to your public project
 
+[!INCLUDE [temp](_shared/version-public-projects.md)]  
+
 To enable users to contribute to your project, you must add them as a member.
 
 > [!IMPORTANT]
@@ -26,17 +29,16 @@ To enable users to contribute to your project, you must add them as a member.
 > the [additional cross-project resources](../accounts/resources-granted-to-project-members.md) this grants.
 
 
-## Open Settings>Users hub
+## Open Organization Settings>Users
 
-[!INCLUDE [temp](_shared/navigation.md)] 
-
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 
 # [New navigation](#tab/new-nav)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
+0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
@@ -49,7 +51,7 @@ To enable users to contribute to your project, you must add them as a member.
 
 # [Previous navigation](#tab/previous-nav)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. You also must be the owner, belong to the Project Collection Administrators security group, or have been granted the necessary permissions to manage users.  
+0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. You also must be the owner, belong to the Project Collection Administrators security group, or have been granted the necessary permissions to manage users.  
 
 0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
 
@@ -73,7 +75,7 @@ To enable users to contribute to your project, you must add them as a member.
 	- **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that for Microsoft accounts (MSAs), the email addresses display in red.
 	- **Access level**: You can add up to 5 users (total including your own user account) with *Basic* access. Otherwise, you can add an unlimited number of users with *Stakeholder* access. In public projects, both the Stakeholder and the Basic access level grant full access to **Code**, **Work**, and **Build and Release**, but Stakeholders only get partial access to **Test** and **Dashboards**.  To learn more, see [Default roles & access for public projects](default-roles-access-public.md).
 	- **Add to projects**: Select the public project that you created, or select **Add All** to add the user to all projects defined for the organization.  
-	- **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
+	- **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
 
 5. When done, choose **Add** to complete your invitation.
 

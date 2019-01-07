@@ -1,6 +1,6 @@
 ---
-title: Run cloud-based load tests using your own machines
-description: Run cloud-based load tests by using your own subscription and machines using the Test hub in Microsoft VSTS
+title: Run cloud-based load tests on your own machines
+description: Run cloud-based load tests by using your own subscription and machines using Azure DevOps and TFS
 ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
 ms.prod: devops
 ms.technology: devops-test
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
 # Run cloud-based load tests using your own machines
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 When you run a cloud-based load test, the Cloud Load Test (CLT) service automatically provisions
 the necessary machines (load agents) to generate the load on your application.
@@ -30,10 +30,10 @@ This topic shows two primary scenarios where such a configuration may be useful.
   load test run has completed execution. When these machines are used, you are charged
   [VUMs](reference-qa.md#VUM) as applicable for your load test run.
 * **Self-provisioned machines**. These are load-generating machines that you provision yourself (in your Azure
-  subscription or on-premises). These machines can be configured to register themselves against your VSTS subscription
+  subscription or on-premises). These machines can be configured to register themselves against your Azure DevOps subscription
   and then they can run a cloud-based load test. This scenario is the focus of this topic.
 * **Cloud load agent**. This is the agent that works with the CLT service. This agent will be installed when
-  you use self-provisioned machines, and must be configured for your VSTS subscription. Once configured, it can then
+  you use self-provisioned machines, and must be configured for your Azure DevOps subscription. Once configured, it can then
   be used for running a load test. The cloud-load agent is NOT the same as the Test Controller and Test Agent
   combination that you may have used previously for running load tests or automated tests.
 
@@ -55,13 +55,13 @@ This topic shows two primary scenarios where such a configuration may be useful.
 ## Solutions
 
 * **Use machines located on-premises**. You can provision as many machines as you need on-premises and run a PowerShell
-  script that installs the cloud load agents and configures these machines against your VSTS subscription. For more details
+  script that installs the cloud load agents and configures these machines against your Azure DevOps subscription. For more details
   and to obtain the PowerShell script, see
   [Testing private and intranet apps using cloud-based load testing](clt-behind-firewall.md).
   The agents communicate with the CLT service only using HTTP(S), so you don't need to open any other ports.
 * **Use virtual machines in Azure**. While you can certainly adopt the same approach as above by provisioning the machines
   and then running the PowerShell script to install and configure the load agents, a simpler approach is to use Azure Resource
-  Manager (ARM) templates. You specify just a few inputs such as your VSTS subscription, a PAT token for authentication, and the
+  Manager (ARM) templates. You specify just a few inputs such as your Azure DevOps subscription, a PAT token for authentication, and the
   number of agent machines you need. The machines are provisioned in your Azure subscription and you have complete
   control over them. Two ARM templates are available in the
   [Azure quick-start templates repository](https://github.com/Azure/azure-quickstart-templates) on GitHub:
@@ -85,7 +85,7 @@ For more information about using the ARM templates, see [Test private and intran
 ## Comparison with Test Controllers and Test Agents
 
 If you have previously used Visual Studio load testing (rather than cloud load testing), you will have used
-[Test Controllers and Test Agents (TC/TA)](https://docs.microsoft.com/visualstudio/test/configure-test-agents-and-controllers-for-load-tests)
+[Test Controllers and Test Agents (TC/TA)](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests)
 to run load tests. The differences between these and cloud load test agents are:
 
 * The cloud load agent does not need a controller. The CLT service acts as a lightweight controller instead.
@@ -127,9 +127,9 @@ A build template to help with this configuration is under development.
 
 * [FAQs for load testing](reference-qa.md#jmeter-tests)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with VSTS](get-started-simple-cloud-load-test.md) 
+* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

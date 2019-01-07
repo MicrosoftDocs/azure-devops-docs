@@ -1,6 +1,7 @@
 ---
-title: Set Git branch security and permissions |  VSTS & TFS
-description: Set permissions for Git branches in VSTS/TFS.
+title: Set Git branch security and permissions
+titleSuffix: Azure Repos
+description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -8,14 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 07/13/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Set branch permissions
 
-#### VSTS | TFS 2018 | TFS 2017 Update 1
+#### Azure Repos | TFS 2018 | TFS 2017 Update 1
 
 ## Overview
 
@@ -24,13 +24,19 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Use the branches view to configure security
 
-0. Open the **Branches** view while viewing your repo on the web.
+1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-   ![Access the branches view on the web](_img/branches/branches_nav.png)
+  ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
-0. Locate the branch on the **Branches** view. You can search for your branch using the **Search all branches** box in the upper right.
+  If you're not using the new navigation preview, select **Code**, **Branches**.
 
-0. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu. 
+  ![Open up the Branches page on the web](_img/branches/branches_nav.png)
+
+1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+
+  ![Branches page](_img/branches/branches-page.png)
+
+0. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
 
    ![Open the branch permissions page from the branches context menu](_img/branches/branches_context_menu_permissions.png)
 
@@ -38,15 +44,15 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 > Avoid trouble:  You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
 
-Add users or groups to your branch permissions by selecting **Add**, then choosing **Add user** or **Add VSTS group**. 
-Enter the display name or their Microsoft Account, then select **Save Changes**.
+Add users or groups to your branch permissions by selecting **Add** 
+Enter the sign-in address or group alias, then select **Save Changes**.
 
 ## Remove users or groups
 
-Remove permissions for a user or group by selecting the user or VSTS group, then selecting **Remove**. 
+Remove permissions for a user or group by selecting the user or Azure DevOps group, then selecting **Remove**. 
 The user or group will still exist in your Project and this change will not affect other permissions for the user or group.    
 
-![Remove branch permissions for a user in VSTS or TFS](_img/branches/remove_permissions.png)
+![Remove branch permissions for a user in Azure DevOps Services or TFS](_img/branches/remove_permissions.png)
  
 ## Set permissions 
 
@@ -54,19 +60,18 @@ Control branch permission settings from the branch permission view. Users and gr
 [inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. 
 
 > [!NOTE] 
-> These permissions have changed in TFS 2017 Update 1 and VSTS.
+> These permissions have changed in TFS 2017 Update 1 and Azure DevOps Services.
 > Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
 > in the upper left corner of the window.
 >
 > ![Documentation version selector](../../_img/documentation-version-selector.png)
 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 ### Permissions in TFS 2017 Update 1 through TFS 2018 Update 2
 
-| Permission | Description                                                                                                 |
-|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Permission | Description |
+|------------|-------------|
 | Contribute                                       | Users with this permission can push new commits to the branch and lock the branch.                          |
 | Edit Policies                                    | Can edit [branch policies](branch-policies.md).                                                                                   |
 | Exempt from policy enforcement                   | Users with this permission are exempt from the [branch policy](branch-policies.md) set for the branch when completing pull requests and can override the policies by checking **Override branch policies and enable merge** when completing a PR. Users with this permission can also push to a branch that has branch policies enabled. |
@@ -91,10 +96,10 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker range="vsts" 
 
-### Permissions in VSTS
+### Permissions in Azure DevOps Services
 
 >[!NOTE]
->[In VSTS](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
+>[In Azure DevOps Services](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
 >
 >- **Bypass policies when completing pull requests**
 >- **Bypass policies when pushing**

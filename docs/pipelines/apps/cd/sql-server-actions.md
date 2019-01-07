@@ -1,30 +1,31 @@
 ---
-title: Perform SQL server actions in VSTS or TFS
-description: Use the SQL DACPAC task to perform SQL server actions in VSTS or Team Foundation Server (TFS) using Microsoft Release Management
+title: Execute SQL server actions
+description: Use the SQL DACPAC task to perform SQL server actions in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 3736CADE-5710-420C-B192-C3A03BFD9B0B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Perform SQL server actions in VSTS or TFS
+# Perform SQL server actions in Azure Pipelines or TFS
 
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
-VSTS and TFS include a SQL task named [SQL Azure Dacpac Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
+Azure Pipelines and TFS include a SQL task named [SQL Azure Dacpac Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 that helps you publish to SQL server.
 However, you may want to perform other SQL server actions
 as part of your release workflow.
 
-At present, the SQL task does not support other actions. 
+At present, the SQL task does not support other actions.
 Instead, you can use the [PowerShell task]()
 in your workflow to execute a SQL script.
-The SQL script can be specified either as an artifact or as an inline script. 
+The SQL script can be specified either as an artifact or as an inline script.
 
 ## Requirements
 
@@ -104,7 +105,7 @@ Exports a live database, including database schema and user data, from SQL Serve
 
 ```command
 SqlPackage.exe /TargetFile:"<Target location for bacpac file>" /Action:Export /SourceServerName:"<ServerName>.database.windows.net"
-/SourceDatabaseName:"<DatabaseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
+/SourceDatabaseName:"<DatabseName>" /SourceUser:"<Username>" /SourcePassword:"<Password>"
 ```
 
 **Example:**
@@ -220,6 +221,6 @@ sqlpackage.exe /Action:Script /?
 ## See also
 
 * [Deploy your database to Azure SQL Database](../../targets/azure-sqldb.md)
-* [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
+* [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

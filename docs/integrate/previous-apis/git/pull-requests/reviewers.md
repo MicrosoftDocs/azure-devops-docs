@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Git Pull Request Reviewers | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with Git pull requests programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Git Pull Request Reviewers | REST API Reference for Team Foundation Server
+description: Work with Git pull requests programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 65A2ED69-31E1-47D8-BEF9-7BE5CC2AACFB
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 11/3/2016
 ---
 
 # Git pull request reviewers
+
+[!INCLUDE [azure-devops](../../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../../_data/version3-preview.md)]
 
 [!INCLUDE [disclaimer](../../_data/disclaimer.md)]
@@ -32,7 +35,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
-| instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | TFS server name ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
@@ -41,7 +44,31 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 
 [!INCLUDE [ID_vs_Name](../_data/id_or_name.md)]
 
-[!code-REST [GET__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers_json](../_data/pullRequests/GET__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers?api-version=3.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "reviewerUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/d6245f20-2af8-44f4-9451-8107cb2767db",
+      "vote": 0,
+      "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+      "displayName": "Normal Paulk",
+      "uniqueName": "fabrikamfiber16@hotmail.com",
+      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    }
+  ]
+}
+```
+
 
 ## Get a reviewer
 
@@ -52,7 +79,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type    | Notes
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
-| instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | TFS server name ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
@@ -61,7 +88,26 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 
-[!code-REST [GET__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__additionalReviewerID__json](../_data/pullRequests/GET__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__additionalReviewerId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9?api-version=3.0
+```
+
+#### Sample response
+
+```json
+{
+  "reviewerUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+  "vote": 0,
+  "id": "19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+  "displayName": "Johnnie McLeod",
+  "uniqueName": "fabrikamfiber2@hotmail.com",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Identities/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+  "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=19d9411e-9a34-45bb-b985-d24d9d87c0c9"
+}
+```
+
 
 ## Add a reviewer
 
@@ -79,7 +125,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type                | Default | Notes
 |:------------|:--------------------|:--------|---------------------
 | URL
-| instance    | string              |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string              |         | TFS server name ({server:port}).
 | project     | string              |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string              |         | ID of the [repository](../repositories.md).
 | pullRequest | integer             |         | ID of the pull request.
@@ -89,7 +135,31 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Body
 | vote        | enum {-10, -5, 0, 5, 10} | -10 means "Rejected", -5 means "Waiting for author", 0 means "No response", 5 means "Approved with suggestions", and 10 means "Approved".
 
-[!code-REST [PUT__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__additionalReviewerId__json](../_data/pullRequests/PUT__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__additionalReviewerId_.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9?api-version=3.0
+```
+```json
+{
+  "vote": 0
+}
+```
+
+#### Sample response
+
+```json
+{
+  "reviewerUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+  "vote": 0,
+  "id": "19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+  "displayName": "Johnnie McLeod",
+  "uniqueName": "fabrikamfiber2@hotmail.com",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Identities/19d9411e-9a34-45bb-b985-d24d9d87c0c9",
+  "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=19d9411e-9a34-45bb-b985-d24d9d87c0c9"
+}
+```
+
 
 ## Remove a reviewer
 
@@ -102,7 +172,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositori
 | Parameter   | Type    | Notes
 |:------------|:--------|:------------
 | URL
-| instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string  | TFS server name ({server:port}).
 | project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
@@ -110,7 +180,12 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositori
 | Query
 | api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [DELETE__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__additionalReviewerId__json](../_data/pullRequests/DELETE__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__additionalReviewerId_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/19d9411e-9a34-45bb-b985-d24d9d87c0c9?api-version=3.0
+```
+
 
 ## Update a reviewer's vote
 
@@ -126,7 +201,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Parameter   | Type              | Notes |
 |:------------|:------------------|:------------|
 | URL
-| instance    | string            | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string            | TFS server name ({server:port}).
 | project     | string            | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string            | ID of the [repository](../repositories.md).
 | pullRequest | integer           | ID of the pull request. |
@@ -136,5 +211,29 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | Body
 | vote        | enum {-10, -5, 0, 5, 10} | -10 means "Rejected", -5 means "Waiting for author", 0 means "No response", 5 means "Approved with suggestions", and 10 means "Approved".
 
-[!code-REST [PUT__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__initialReviewerId__json](../_data/pullRequests/PUT__git_repositories__repositoryId__pullRequests__pullRequestId__reviewers__initialReviewerId_.json)]
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/d6245f20-2af8-44f4-9451-8107cb2767db?api-version=3.0
+```
+```json
+{
+  "vote": 10
+}
+```
+
+#### Sample response
+
+```json
+{
+  "reviewerUrl": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/reviewers/d6245f20-2af8-44f4-9451-8107cb2767db",
+  "vote": 10,
+  "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
+  "displayName": "Normal Paulk",
+  "uniqueName": "fabrikamfiber16@hotmail.com",
+  "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+  "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+}
+```
+
 

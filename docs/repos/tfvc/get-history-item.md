@@ -1,5 +1,6 @@
 ---
 title: Get the history of an item
+titleSuffix: Azure Repos
 description: Get the history of an item
 ms.assetid: 5a29031c-7fb6-42ac-885c-276b59a4b951
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Get the history of an item
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation version control maintains historical data related to every version of every file that has ever been checked in.
 

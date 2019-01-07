@@ -1,7 +1,8 @@
 ---
 title: Filter lists & boards
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure DevOps Services & TFS  
 description: Filter your view to focus on items of interest 
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -9,8 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
-ms.date: 07/21/2018
+monikerRange: '>= tfs-2017'
+ms.date: 11/19/2018
 ---
   
 
@@ -35,11 +36,11 @@ You can filter most items using keywords or a user name for an author of an item
 ::: moniker range=">= tfs-2018"
 ## Filter work tracking backlogs, boards, and queries based on keywords, tags, or fields
 
-To turn filtering on, choose the ![](../../_img/icons/filter-icon.png) filter icon. 
+To turn filtering on, choose the ![ ](../../_img/icons/filter-icon.png) filter icon. 
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
-![Work>Backlogs, turn filtering on](../../boards/backlogs/_img/filter-backlogs-options.png)
+![Backlogs, turn filtering on](../../boards/backlogs/_img/filter-backlogs-options.png)
 
 The filtered set is always a flat list, even if you've selected to show parents. 
 
@@ -49,7 +50,7 @@ The filter criteria ignores the following characters: `,` (comma), `.` (period),
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="tfs-2017"
 
 ## Filter work items based on keywords
 
@@ -67,7 +68,7 @@ The filtered set is always a flat list, even if you've selected to show parents.
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
+::: moniker range="tfs-2017"
 ## Filter work tracking backlogs and queries based on tags
 
 If you've [added tags to your work items](../../boards/queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../../boards/_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
@@ -83,17 +84,3 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 - [Filter your Kanban board](../../boards/boards/filter-kanban-board.md)
 - [Add tags to work items](../../boards/queries/add-tags-to-work-items.md) 
 
-
-<!---
-* Code>Commits: Simple history, Author, From date, To date 
-* Code>Pushes
-* Code>Branches (Filter icon is there, but doesn't appear active. 
-* Code> Pull Request (In active filter icon) 
-* Code> Pull Request> Search 
-* Work>Work Items - Keyword, Types, Assigned to, States, Area, Tags 
-* Work> Board (Kanban) - Keyword, Types, Assigned To, Tags, Iteration, Parent Work Item 
-* Work>Backlogs - Keyword, Types, Assigned to, States, Tags
-* Work>Sprint Backlogs - Keyword, Types, Assigned to, States, Tags
-* Work>Taskboard 
-
---> 

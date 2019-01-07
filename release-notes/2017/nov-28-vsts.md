@@ -5,7 +5,7 @@ ms.author: alexn
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 description: Visual Studio Team Services (VSTS) release notes for Sprint 126 Update on November 28, 2017.
 hide_comments: true
@@ -40,12 +40,12 @@ DevOps Projects are powered by VSTS and gives you a head start in developing and
 > [!div class="mx-imgBorder"]
 ![Azure DevOps Project](_img/126_AzureDevOpsProject.gif)
 
-See the [documentation for deploying to Azure](/vsts/deploy-azure/) for more information.
+See the [documentation for deploying to Azure](/azure/devops/deploy-azure/) for more information.
 
 ### Configuration as code (YAML) builds in Public Preview ![Build tag](_img/release-notes-tag_build.png)
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on both your profile and account.
+> To use this capability, you must have the **Build Yaml definitions** [preview feature](/azure/devops/project/navigation/preview-features) enabled on both your profile and account.
 
 When you define a CI build on VSTS, you’ve now got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_.
 
@@ -65,13 +65,13 @@ steps:
 
 After you commit the changes, a build definition is automatically created and queued! Ready to go beyond “hello world”?
 
-- [Get started configuring your CI Build in code using YAML](/vsts/build-release/actions/build-yaml-get-started)
-- [How to use YAML builds](/vsts/build-release/actions/build-yaml)
+- [Get started configuring your CI Build in code using YAML](/azure/devops/build-release/actions/build-yaml-get-started)
+- [How to use YAML builds](/azure/devops/build-release/actions/build-yaml)
 
 ### Release gates in Public Preview ![Release tag](_img/release-notes-tag_release.png)
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Approval gates in releases** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
+> To use this capability, you must have the **Approval gates in releases** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile.
 
 Continuous monitoring is an integral part of DevOps pipelines. Ensuring the app in a release is healthy after deployment is as critical as the success of the deployment process. Enterprises adopt various tools for automatic detection of app health in production and for keeping track of customer reported incidents.
 Until now, approvers had to manually monitor the health of the apps from all the systems before promoting the release. However, Release Management now supports integrating continuous monitoring into release pipelines. Use this to ensure the system repeatedly queries all the health signals for the app until all of them are successful at the same time, before continuing the release.
@@ -88,11 +88,11 @@ At the time of execution, the **Release** starts to sample all the gates and col
 
 Initial samples from the monitoring systems may not be accurate, as not enough information may be available for the new deployment. The “Delay before evaluation” option ensures the **Release** does not progress during this period, even if all samples are successful.
 
-No agents or pipelines are consumed during sampling of gates. See the [documentation for release gates](/vsts/pipelines/release/approvals/gates) for more information.
+No agents or pipelines are consumed during sampling of gates. See the [documentation for release gates](/azure/devops/pipelines/release/approvals/gates) for more information.
 
 ### Hosted Mac agents for CI/CD pipelines in Public Preview ![Build tag](_img/release-notes-tag_build.png)
 
-VSTS now has cloud-hosted CI/CD agents running on macOS. This allows building and releasing Apple apps in the cloud (including iOS, macOS, tvOS, and watchOS), eliminating the need for providing and maintaining your own dedicated Mac hardware. VSTS now offers hosted CI/CD agents running on three operating systems – Linux, macOS, and Windows. For more information, see [Hosted agents](/vsts/pipelines/agents/hosted).
+VSTS now has cloud-hosted CI/CD agents running on macOS. This allows building and releasing Apple apps in the cloud (including iOS, macOS, tvOS, and watchOS), eliminating the need for providing and maintaining your own dedicated Mac hardware. VSTS now offers hosted CI/CD agents running on three operating systems – Linux, macOS, and Windows. For more information, see [Hosted agents](/azure/devops/pipelines/agents/hosted).
 
 To use the hosted macOS agents, select **Hosted macOS Preview** for your build or release pipeline:
 
@@ -124,12 +124,12 @@ To learn more, see the [VSTS CLI docs](https://aka.ms/vsts-cli). To view the sou
 
 ### Query last run by information
 
-As your project’s **Shared Queries** tree grows, it can be difficult to determine that a query is no longer being used and can be deleted. To help you manage your **Shared Queries**, we have added two new pieces of metadata to our [query REST APIs](/vsts/integrate/api/wit/queries#get-a-query-or-folder), last executed by and last executed date, so that you can write clean-up scripts to delete stale queries.
+As your project’s **Shared Queries** tree grows, it can be difficult to determine that a query is no longer being used and can be deleted. To help you manage your **Shared Queries**, we have added two new pieces of metadata to our [query REST APIs](https://visualstudio.microsoft.com/docs/integrate/api/wit/queries#get-a-query-or-folder), last executed by and last executed date, so that you can write clean-up scripts to delete stale queries.
 
 ### Create work items from the Queries hub
 
 > [!IMPORTANT]
-> To use this capability, you must have the **[New Queries Experience](/vsts/work/track/view-run-query)** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
+> To use this capability, you must have the **[New Queries Experience](/azure/devops/work/track/view-run-query)** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile.
 
 Easily create work items from the **Queries** hub with the addition of a **+ New** command bar action.
 
@@ -149,7 +149,7 @@ You can now expand or collapse all the items on the sprint **Task board** with j
 
 Often, when migrating work items from another source, organizations want to retain all the original properties of the work item. For example, you may want to create a bug that retains the original created date and created by values from the system where it originated.
 
-The API to [update a work item](/vsts/integrate/api/wit/work-items#make-an-update-bypassing-rules) has a bypassrule flag to enable that scenario. Previously the identity who made that API request had to be member of the Project Collection Administrators group. With this deployment we have added a permission at the project level to execute the API with the bypassrule flag.
+The API to [update a work item](https://visualstudio.microsoft.com/docs/integrate/api/wit/work-items#make-an-update-bypassing-rules) has a bypassrule flag to enable that scenario. Previously the identity who made that API request had to be member of the Project Collection Administrators group. With this deployment we have added a permission at the project level to execute the API with the bypassrule flag.
 
 > [!div class="mx-imgBorder"]
 ![Grant bypassrule](_img/126_03.png)
@@ -214,7 +214,7 @@ Whenever a topic branch is updated in a repository, a “suggestion” to create
 
 ### Editor settings
 
-Last Update we exposed [new editor settings for word wrap and white space](/vsts/release-notes/2017/oct-30-vsts#toggle-word-wrap-and-white-space-in-diff-views). This Update we’re making it easier to manage those settings and persist them with other editor preferences. Click on the editor preferences gear in the pull request editor or diff view. In the Files view, select the User Preferences option on the right-click menu.
+Last Update we exposed [new editor settings for word wrap and white space](/azure/devops/release-notes/2017/oct-30-vsts#toggle-word-wrap-and-white-space-in-diff-views). This Update we’re making it easier to manage those settings and persist them with other editor preferences. Click on the editor preferences gear in the pull request editor or diff view. In the Files view, select the User Preferences option on the right-click menu.
 
 > [!div class="mx-imgBorder"]
 ![Editor gear](_img/126_08.png)
@@ -263,9 +263,9 @@ Within **Version Control** administration, if you want to merely edit the reposi
 ### Use VSTS as a symbol server
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Symbol server** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use this capability, you must have the **Symbol server** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your account.
 
-VSTS Symbol Server enables you to host and share symbols with your organization. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/vsts/pipelines/symbols/) for more information.
+VSTS Symbol Server enables you to host and share symbols with your organization. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/azure/devops/pipelines/symbols/) for more information.
 
 > [!div class="mx-imgBorder"]
 ![Symbol server task](_img/126_32.png)
@@ -278,9 +278,9 @@ Your build process is defined by the tasks it performs. Until now, all these tas
 
 We’ve added some agentless build tasks to the catalog:
 
-- [Delay](/vsts/pipelines/tasks/utility/delay)
-- [Invoke REST API](/vsts/pipelines/tasks/utility/http-rest-api)
-- [Publish to Azure Service Bus](/vsts/pipelines/tasks/utility/publish-to-azure-service-bus)
+- [Delay](/azure/devops/pipelines/tasks/utility/delay)
+- [Invoke REST API](/azure/devops/pipelines/tasks/utility/http-rest-api)
+- [Publish to Azure Service Bus](/azure/devops/pipelines/tasks/utility/publish-to-azure-service-bus)
 
 You can add an agentless phase to your build definition and then add one of these tasks to run it on VSTS.
 
@@ -300,7 +300,7 @@ The **Install Apple Provisioning Profile** task already supports installing (on 
 
 ### Secure files can be downloaded to agents during build or release
 
-The new **Download Secure File** task supports downloading (to agent machines) encrypted files from the **VSTS Secure Files** library. As the file is downloaded, it is decrypted and stored on the agent’s disk. When the build or release completes, the file is deleted from the agent. This allows your build or release to use sensitive files, such as certificates or private keys, that are otherwise securely encrypted and stored in VSTS. For more information, see [Secure files documentation](/vsts/pipelines/library/secure-files).
+The new **Download Secure File** task supports downloading (to agent machines) encrypted files from the **VSTS Secure Files** library. As the file is downloaded, it is decrypted and stored on the agent’s disk. When the build or release completes, the file is deleted from the agent. This allows your build or release to use sensitive files, such as certificates or private keys, that are otherwise securely encrypted and stored in VSTS. For more information, see [Secure files documentation](/azure/devops/pipelines/library/secure-files).
 
 ### Specific Java Development Kits (JDKs) can be installed during builds and releases
 
@@ -422,7 +422,7 @@ The Test Platform package on nuget is cross-platform, but VSTest task currently 
 ### Wiki Search
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New experience in Code & Work Item search and new Wiki search** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
+> To use this capability, you must have the **New experience in Code & Work Item search and new Wiki search** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile.
 
 Over time as teams document more content in wiki pages across multiple projects in VSTS, finding relevant content becomes increasingly difficult. To maximize collaboration, you need the ability to easily discover content across all your projects. Now you can use **Wiki Search** to quickly find relevant wiki pages by title or page content across all projects in your VSTS account.
 
@@ -433,7 +433,7 @@ This feature was prioritized based on a [suggestion](http://visualstudio.uservoi
 
 ### Link work items and Wiki pages
 
-Earlier you were able to [reference work items to a wiki page](/vsts/release-notes/2017/oct-06-vsts#reference-work-items-in-wiki). Now you can link a work item to a wiki and vice versa. You can link work items to wiki to create epic pages, release notes, and planning content that will help you track the work items associated with a wiki page and validate what % of your epic page is complete.
+Earlier you were able to [reference work items to a wiki page](/azure/devops/release-notes/2017/oct-06-vsts#reference-work-items-in-wiki). Now you can link a work item to a wiki and vice versa. You can link work items to wiki to create epic pages, release notes, and planning content that will help you track the work items associated with a wiki page and validate what % of your epic page is complete.
 
 > [!div class="mx-imgBorder"]
 ![Link work items from a wiki](_img/126_13.png)
@@ -463,7 +463,7 @@ If your application deals with mathematical formulas and equations, you can now 
 
 ### Analytics OData in Public Preview
 
-Analytics OData is now in full public preview and available to everyone. OData provides developers access to Analytics data, to build their own widgets and tools. Also launching is [documentation](/vsts/report/analytics/what-is-analytics) which includes: an overview of Analytics, OData API guidance, and a working example of a widget built upon Analytics.
+Analytics OData is now in full public preview and available to everyone. OData provides developers access to Analytics data, to build their own widgets and tools. Also launching is [documentation](/azure/devops/report/analytics/what-is-analytics) which includes: an overview of Analytics, OData API guidance, and a working example of a widget built upon Analytics.
 
 ### Deprecating the PowerBI.com Content Pack
 

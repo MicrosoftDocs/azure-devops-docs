@@ -1,5 +1,5 @@
 ---
-title: Plan manual tests with Microsoft Test Manager
+title: Plan manual tests with MTM
 description: Manual and exploratory testing - Plan manual tests with Microsoft Test Manager when you want to test web applications
 ms.assetid: 809F112E-062F-466A-A8AB-84A87431533D
 ms.prod: devops
@@ -8,13 +8,16 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Plan manual tests with Microsoft Test Manager
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
 At the start of a sprint, find out what you need to test. Discussing test cases is a great way to help the team understand the detail of what your users need. Tests planned in this way provide a clear target for the development team.  
 
@@ -41,7 +44,7 @@ At the start of a sprint, find out what you need to test. Discussing test cases 
   
    To add multiple lines in a step, press ALT + Enter.  
   
-Now that you've defined a manual test case, you can run it from MTM and keep the results in TFS.  
+Now that you've defined a manual test case, you can run it from Microsoft Test Manager and keep the results in TFS.  
   
 ## Organize your test cases with test suites  
 

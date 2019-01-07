@@ -1,6 +1,6 @@
-- name: VSTS Demo Generator
+- name: Demo Generator
   href: index.md
 - name: Overview
   items:
   - name: Get started
-    href: use-vsts-demo-generator-v2.md
+    href: use-demo-generator-v2.md

@@ -1,20 +1,20 @@
 ---
 title: CMMI process guidance, Implement development tasks
-titleSuffix: VSTS & TFS
-description:  Implements the development task that involves adding the appropriate new functionality to your software - VSTS & TFS
+titleSuffix: Azure Boards
+description:  Implements the development task that involves adding the appropriate new functionality to your software
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e3345668-394d-419a-b813-8fa68b6b1bfc
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
 ---
 
 # Implement development tasks
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 A development task is a small piece of development work that stems from a requirement. Implementing a development task involves adding the appropriate new functionality to your software. After you complete a development task, it should be unit tested, reviewed, code analyzed, and integrated into the existing code base.  
    

@@ -1,5 +1,6 @@
 ---
-title: Help text, hyperlinks, web content | VSTS & TFS
+title: Help text, hyperlinks, web content 
+titleSuffix: TFS
 description: Customize your work item form to provide information or links to content.
 ms.prod: devops
 ms.technology: devops-agile
@@ -12,12 +13,7 @@ ms.date: 01/20/2017
 
 # Provide help text, hyperlinks, or web content on a work item form
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
-
-> [!IMPORTANT]  
-><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML or On-premises process models. The customizations addressed in this topic aren't available for the [Inheritance process model](../../organizations/settings/work/customize-process.md). 
->
->For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
 When you customize your work item form, you may want to provide information or links to content that helps your team define the fields in the form. If you embed information in the form or make it easily available, team members will be better able to track useful data.  
   
@@ -64,7 +60,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
  The following example illustrates how to add a hyperlink to a field label.  
   
 ```xml
-<Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1">  
+<Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
       <LabelText>  
       <Text>  
          <Link UrlRoot="http://www.live.com/" />  
@@ -81,17 +77,16 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
  The following example illustrates how to add a hyperlink to part of a field label. In this example, the URL is determined by the values that are assigned to the `Param` elements based on the specific work item.  
   
 ```xml
-<Control Type="FieldControl" FieldName="System.IterationPath">
-    <LabelText LabelPosition="Left">
-        <Text>
-            <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">
-                <Param Index="0" Value="System.WorkItemType" />
-            </Link>
-            Iteration Path
-        </Text>
-        <Text> (must be 3 levels deep)</Text>
-    </LabelText>
-</Control>
+<Control Type="FieldControl" FieldName="System.IterationPath">  
+      <LabelText LabelPosition="Left">  
+      <Text>  
+         <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">  
+               <Param Index="0" vValue"System.WorkItemType"/>         </Link>  
+               Iteration Path  
+      </Text>  
+      <Text> (must be 3 levels deep)</Text>  
+      </LabelText>  
+</Control>  
 ```  
   
 #### Example: hyperlink text label  
@@ -142,11 +137,10 @@ Combining Text and Hyperlinks in a Single Label
  The following example illustrates how to add a hyperlink to a field label that is generated from parameter values that are evaluated for the open work item.  
   
 ```xml
-<Control Type="FieldControl" FieldName="System.State" Label="&amp;State:" LabelPosition="Left">
-    <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&amp;id=">
-        <Param Index="0" Value="System.State" Type="Original" />
-    </Link>
-</Control>
+<Control Type="FieldControl" FieldName="System.State" Label="&State:" LabelPosition="Left">  
+      <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&id=">      <Param Index="0" Value="System.State" Type ="Original"/>  
+      </Link>  
+</Control>  
 ```  
   
 ##  <a name="WebBrowserControl"></a> Displaying web content  

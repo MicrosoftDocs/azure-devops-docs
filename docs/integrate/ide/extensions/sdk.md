@@ -16,4 +16,4 @@ ms.date: 08/04/2016
 
 As a Visual Studio extension developer you have access to a vast number of internal interfaces, the same interfaces the Visual Studio product team uses.
 
-For the latest documentation, see [Visual Studio SDK Reference](https://docs.microsoft.com/en-us/visualstudio/extensibility/visual-studio-sdk-reference)
+For the latest documentation, see [Visual Studio SDK Reference](/visualstudio/extensibility/visual-studio-sdk-reference)

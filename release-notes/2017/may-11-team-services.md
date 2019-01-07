@@ -3,7 +3,7 @@ title: Delivery plans and simple VM deployment – May 11
 description: VSTS release notes for May 11 2017
 ms.ContentId: bf9d6890-7a2f-4105-9687-61e406b1cdec
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
 ---
@@ -70,12 +70,12 @@ A new preview task, __Install SSH Key (Preview)__, installs an SSH key prior to
 Over the next few weeks we'll be retiring the old build definition editor. We’ve designed the new editor to provide a more intuitive experience, fix some pain points, and add new capabilities. We hope that you’ll find it easier to use templates, add tasks, and change settings. And now you can use process parameters to make it easier to specify the most important bits of data without having to go deep into your tasks. Learn more in this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/10/announcing-general-availability-of-the-new-build-editor/).
 
 ## Heads up: The hosted XAML controller is going away
-On July 1st, 2017, we will stop supporting XAML Build controllers in our Team Services hosted build pool. You will still be able to do XAML-based builds, but you will need to set up your own (private) controller/agent. You can do this either in a cloud VM (such as Azure) or on your own on-premises hardware. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see the topic [I’m looking for the hosted XAML build controller. Where did it go?](/vsts/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go).
+On July 1st, 2017, we will stop supporting XAML Build controllers in our Team Services hosted build pool. You will still be able to do XAML-based builds, but you will need to set up your own (private) controller/agent. You can do this either in a cloud VM (such as Azure) or on your own on-premises hardware. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see the topic [I’m looking for the hosted XAML build controller. Where did it go?](https://visualstudio.microsoft.com/docs/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go).
 
 Over time, you should be planning to migrate to our newer pipeline/task-based build version, where you will have access to the full range of capabilities, including hosted builds.
 
 ## Tasks fail if Visual Studio 2017 is specified but not present on agent
-The [Visual Studio Build](/vsts/build/steps/build/visual-studio-build) and [MSBuild](/vsts/build/steps/build/msbuild) tasks enable you to select a specific version of Visual Studio. Until now, if the **Visual Studio 2017** version was not available, these tasks would automatically pick the next available version.
+The [Visual Studio Build](https://visualstudio.microsoft.com/docs/build/steps/build/visual-studio-build) and [MSBuild](https://visualstudio.microsoft.com/docs/build/steps/build/msbuild) tasks enable you to select a specific version of Visual Studio. Until now, if the **Visual Studio 2017** version was not available, these tasks would automatically pick the next available version.
 
 We’re changing this behavior. Now the build will fail if you select **Visual Studio 2017** but it is not present on the agent.
 
@@ -203,7 +203,7 @@ The tree also shows comments in a more compact way. Files with comments show a c
 ![new tree view](_img/05_10_16.png)
 
 ##Maven for Package Management (Public Preview)
-Java developers share components by packaging up their code in Maven artifacts (the Java equivalent of a NuGet package). Team Services customers needing a place to host Maven artifacts used to have to use third-party services, like Nexus or Artifactory, to meet their needs.  We’re proud to announce that [Team Services Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) now supports hosting Maven artifacts! Check out our [getting started guide](/vsts/package/preview/maven-docs).
+Java developers share components by packaging up their code in Maven artifacts (the Java equivalent of a NuGet package). Team Services customers needing a place to host Maven artifacts used to have to use third-party services, like Nexus or Artifactory, to meet their needs.  We’re proud to announce that [Team Services Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) now supports hosting Maven artifacts! Check out our [getting started guide](https://visualstudio.microsoft.com/docs/package/preview/maven-docs).
 
 ##NuGet Restore, Command, and Tool Installer build tasks
 We’ve made major updates to the __NuGet Installer__ (now called __NuGet Restore__) task, and added two new NuGet tasks: __NuGet Command__ and __NuGet Tool Installer__. Most notably, the __NuGet Command__ and __NuGet Restore__ tasks now use nuget.exe 4.0.0 by default.
@@ -217,7 +217,7 @@ Recipients for the same email notification are now included together on the to: 
 
 This feature is on by default, but can be disabled by an account administrator by switching off the account-level __Combine email recipients__ feature via the __Preview features__ panel under the user profile menu. 
 
-Learn more about [combining email recipients](/vsts/notifications/manage-team-notifications).
+Learn more about [combining email recipients](/azure/devops/notifications/howto-manage-team-notifications).
 
 ##Out-of-the-box notifications out of preview
 The out-of-the-box notifications feature is now out of preview and available on all accounts. Users and teams are now automatically notified via email when there is activity in the account directly relevant to them, such as:
@@ -233,7 +233,7 @@ Users can unsubscribe from any of these subscriptions by going to Notification s
 
 An account admin can disable one or more of these automatic subscriptions by navigating to the account-level __Notifications__ hub under the settings gear. Any of these subscriptions can be disabled by clicking __Disable__ under the "..." action. Once a subscription is disabled, it will no longer appear for users in their personal notification settings page.
 
-Learn more about [out-of-the-box notifications](/vsts/notifications/manage-personal-notifications#out-of-the-box-notifications).
+Learn more about [out-of-the-box notifications](/azure/devops/notifications/manage-personal-notifications#out-of-the-box-notifications).
 
 ##Enhanced publisher experience in the Marketplace
 Publishers of free extensions will now have access to new acquisition data, including aggregated acquisition in the selected time period to overall acquisition, daily trend on extension page views with acquisition, uptake on Team Services and TFS Connected, and conversion from page views to acquisition. This data is also available for download in XLS format to help you create your own custom reports. 

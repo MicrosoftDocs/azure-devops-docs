@@ -1,7 +1,7 @@
 ---
-title: About team, project & organizational-level settings
-titleSuffix: VSTS & TFS
-description: Overview of configuring team, project, and organizational-level settings in VSTS Agile & Team Foundation Server
+title: What settings are supported? 
+titleSuffix: Azure DevOps & TFS
+description: Configure team, project, collection, and organizational-level settings in Azure DevOps
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -10,9 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 12/4/2018
 ---
-
 
 ::: moniker range="vsts" 
 # About user, team, project, and organization-level settings 
@@ -21,20 +20,26 @@ ms.date: 07/27/2018
 
 You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
 
+If you're just getting started as a project administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
+
+> [!NOTE]  
+> You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
+
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-# About user, team, project, and collection-level settings 
+::: moniker range="<= azdevserver-2019"
+
+# About user, team, project, and collection-level settings
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
+You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
 
 ::: moniker-end  
 
-
 ## User settings
-Individual contributors can set their user preferences, enable features that are in preview, and manage their favorites and notifications. 
+
+Individual contributors can set their user preferences, enable features that are in preview, and manage their favorites and notifications.
 
 
 <table>
@@ -56,7 +61,7 @@ Individual contributors can set their user preferences, enable features that are
 <td>**Security**</td>
 <td><ul>
 <li>[View permissions](../security/view-permissions.md)</li>
-<li>[Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)</li>
+<li>[Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity)</li>
 </ul></td>
 <td>For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md).</td>
 </tr>
@@ -81,20 +86,21 @@ Individual contributors can set their user preferences, enable features that are
 <td><ul>
 <li>[View your subscriptions, opt-out as needed](../../notifications/unsubscribe-default-notification.md)</li>
 <li>[Change your preferred email address](../../notifications/change-email-address.md)</li>
-<li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
+<li>[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)</li>
 </ul></td>
-<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When an VSTS project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
+<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
 </ul></td>
 </tr>
 </tbody>
 </table>
  
 
+<a id="team" />
 ## Team administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
 
-For a complete overview of all Agile tools that you can configure, see [Configure team settings](configure-team-settings.md).  
+For a complete overview of all Agile tools that you can configure, see [Manage teams and configure team tools](manage-teams.md).  
 
 
 <table>
@@ -113,13 +119,13 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 <td>Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions.</td>
 </tr>
 <tr>
-<td>**Work, Team configuration**</td>
+<td>**Boards, Team configuration**</td>
 <td><ul>
-<li>[Backlog levels](select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Set working days](set-working-days.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Define work item templates](../../boards/backlogs/work-item-template.md)</li>
 </ul></td>
 <td>For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view: [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). </td>
@@ -135,7 +141,7 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 <tr>
 <td> **Notifications** </td>
 <td><ul>
-<li>[Manage team notifications](../../notifications/manage-team-notifications.md)</li>
+<li>[Manage team notifications](../../notifications/howto-manage-team-notifications.md)</li>
 </ul></td>
 <td>A number of team notifications are automatically defined when a team is added. To learn more about how notifications are managed, see [About notifications](../../notifications/about-notifications.md).   </td>
 </tr>
@@ -143,26 +149,22 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 </table>
 
 <a id="project" />
+
 ## Project administrator role and managing projects
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
 
+See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-::: moniker range="vsts"
-> [!NOTE]  
-> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
-::: moniker-end
-
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"   
+::: moniker range=">= azdevserver-2019"
 **Project settings**  
-From the administrative **Project settings** page, you can configure the settings shown in the following image. 
+From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
-![Project settings, conceptual](_img/about/project-settings-concept.png) 
+![Project settings, new nav](_img/about/project-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -172,14 +174,21 @@ From the administrative **Project settings** page, you can configure the setting
 
 # [Previous navigation](#tab/previous-nav)
 
-**Project-level settings**  
-From the administrative pages for a project, you can configure the settings shown in the following image. 
+::: moniker range="<= tfs-2018 || vsts"
 
+**Project-level settings**  
+From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
+
+![Project settings, conceptual](_img/about/project-settings-prev-nav.png)  
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]  
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
+::: moniker-end
 
-::: moniker range=">= tfs-2013"
-![Project settings, conceptual](_img/about/project-settings-concept-prev-nav.png) 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
@@ -195,14 +204,14 @@ From the administrative pages for a project, you can configure the settings show
 <td>**General**</td>
 <td><ul>
 <li>Set project description</li>
-<li>[Change the project visibility, public or private](../public/make-project-public.md) (VSTS only) </li>
+<li>[Change the project visibility, public or private](../public/make-project-public.md) (Azure DevOps Services only) </li>
 </ul></td>
 <td>Update the project description or change it's visibility.</p></td>
 </tr>
 <tr>
-<td>**Services** (VSTS only)</td>
+<td>**Services** </td>
 <td><ul>
-<li>[Turn a service on or off ](set-services.md)</li>
+<li>[Turn a service on or off ](set-services.md) (Azure DevOps Services only)</li>
 </ul></td>
 <td>Services that aren't use by project members can be disabled so that they don't appear in the web portal. Turning a service off removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn the service on. </p></td>
 </tr>
@@ -212,7 +221,7 @@ From the administrative pages for a project, you can configure the settings show
 <li>[Add another team and team members](../../organizations/settings/add-teams.md)</li>
 <li>[Add a team administrator](../../organizations/settings/add-team-administrator.md)</li>
 </ul></td>
-<td>A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more.<p>For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</p></td>
+<td>A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, portfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more.<p>For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</p></td>
 </tr>
 <tr>
 <td>**Security**</td>
@@ -231,7 +240,7 @@ From the administrative pages for a project, you can configure the settings show
 <td><ul>
 <li>Manage project-level notifications</li>
 </ul></td>
-<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md).</td>
+<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md).</td>
 </tr>
 <tr>
 <td>**Service Hooks**</td>
@@ -248,7 +257,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td>**Work, Project configuration**</td>
+<td><a id="work" />**Boards, Project configuration**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -257,7 +266,7 @@ From the administrative pages for a project, you can configure the settings show
 </td>
 </tr>
 <tr>
-<td>**CI/CD** </td>
+<td><a id="pipelines" />**Build and release (Agent Pools, Release)** </td>
 <td><ul>
 <li>[Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)</li>
 <li>[Manage service connections](../../pipelines/library/service-endpoints.md)</li>
@@ -267,7 +276,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td>**Code** </td>
+<td><a id="repos" />**Code (Version control)** </td>
 <td><ul>
 <li>[Create additional Git repos](../../repos/git/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
@@ -277,7 +286,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>You can manage code using [Git repositories](../../repos/git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md). </td>
 </tr>
 <tr>
-<td>**Test** </td>
+<td><a id="test-center" />**Test** </td>
 <td><ul>
 <li>[Set test retention policies](../../test/how-long-to-keep-test-results.md)</li>
 <li>[Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)</li>
@@ -290,7 +299,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>**Wiki**</td>
 <td><ul>
 <li>[Create a wiki for your project](../../project/wiki/wiki-create-repo.md)</li>
-<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) (VSTS only)</li>
+<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) </li>
 <li>[Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)</li>
 </ul></td>
 <td>To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. To learn more, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).</td>
@@ -311,49 +320,46 @@ From the administrative pages for a project, you can configure the settings show
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all projects defined for an organization or collection. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
 
-::: moniker range="vsts"
-> [!NOTE]  
-> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
-::: moniker-end
-
 # [New navigation](#tab/new-nav)  
 
-::: moniker range="vsts"   
+::: moniker range=">= azdevserver-2019"   
 **Organization settings**  
-From the administrative **Project settings** page, you can configure the settings shown in the following image. 
+From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
-![Project settings, conceptual](_img/about/organization-settings-concept.png) 
+![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-
 
 ::: moniker range="vsts"   
 
 **Organization settings**  
 From the **Admin settings** page, you can configure the settings shown in the following image. 
 
-![Organization settings, conceptual](_img/about/collection-settings-concept-prev-nav.png) 
+![Organization settings, conceptual](_img/about/organization-settings-prev-nav.png) 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"  
+::: moniker range="<= tfs-2018"  
 **Project collection-level settings**  
 From the administrative pages for a collection, you can configure the settings shown in the following image. 
 
 > [!NOTE]  
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
-![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-concept-prev-nav.png) 
+![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
-
 
 ::: moniker range="vsts" 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
@@ -373,9 +379,9 @@ For an overview of managing your organization, see [About organization managemen
 <td>Organization administrators can enable or disable account-level features that are in preview.</td>
 </tr>
 <tr>
-<td>**Overview**</td>
+<td>**Overview (Settings)**</td>
 <td><ul>
-<li>Add and manage organization information: [change organization owner](../accounts/change-organization-ownership-vs.md), [Rename](../accounts/rename-vsts-organization.md), [Delete](../accounts/delete-your-vsts-organization.md), [Recover](../accounts/recover-your-vsts-organization.md)</li>
+<li>Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md), [Recover](../accounts/recover-your-organization.md)</li>
 <li>[Find or change your organization location](../accounts/change-organization-location.md)</li>
 <li>[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)</li>
 </ul></td>
@@ -405,14 +411,14 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Policy**</td>
 <td><ul>
-<li>[Change application access policies](../accounts/change-application-access-policies-vs.md) </li>
+<li>[Change application access policies](../accounts/change-application-access-policies.md) </li>
 </ul></td>
-<td>VSTS owners can set policies to allow or disallow access by other applications or services to their VSTS account. </td>
+<td>Set policies to allow or disallow access by other applications or services to the organization. </td>
 </tr>
 <tr>
 <td>**Users**</td>
 <td><ul>
-<li>[Add users](../accounts/add-organization-users-from-user-hub.md)</li>
+<li>[Add users](../accounts/add-organization-users.md)</li>
 <li>[Add external users](../accounts/add-external-user.md)</li>
 <li>[Manage user access levels](../accounts/manage-users-table-view.md)</li>
 <li>[Remove users](../accounts/delete-organization-users.md)</li>
@@ -426,8 +432,8 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Change individual permissions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
-<li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md)</li>
-<li>[Connect to Azure Active Directory](../accounts/connect-organization-to-aad.md)</li>
+<li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)</li>
+<li>[Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)</li>
 <li>[Manage conditional access](../accounts/manage-conditional-access.md)</li>
 </ul></td>
 <td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
@@ -435,21 +441,21 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td>**Notifications**</td>
 <td><ul>
-<li>Manage collection-level notifications </li>
+<li>[Manage collection-level notifications](../../notifications/howto-manage-organization-notifications.md) </li>
 </ul></td>
-<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>
 <tr>
 <td>**Extensions**</td>
 <td><ul>
-<li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
+<li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
 <li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your VSTS projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members.
 </td>
 </tr>
 <tr>
@@ -460,15 +466,15 @@ For an overview of managing your organization, see [About organization managemen
 <td>Certain rate limits are in place to ensure performance across the cloud service platform.  </td>
 </tr>
 <tr>
-<td>**Work, Process**</td>
+<td>**Boards, Process** </td>
 <td><ul>
 <li>[Customize a project](./work/customize-process.md)</li>
 <li>[Add and manage processes](./work/manage-process.md)</li>
 </ul></td>
-<td>Process customization applies to VSTS Agile only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes ](./work/inheritance-process-model.md). </td>
+<td>Process customization applies to Azure Boards only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes](./work/inheritance-process-model.md). </td>
 </tr>
 <tr>
-<td>**CI/CD**</td>
+<td>**Build and release**</td>
 <td><ul>
 <li>[Set retention policies](../../pipelines/policies/retention.md)</li>
 <li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
@@ -482,7 +488,7 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
+::: moniker range="azdevserver-2019"
 For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
 
 
@@ -494,7 +500,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <th width="45%">Notes</th>
 </tr>
 <tr>
-<td>**Overview, Admin settings**</td>
+<td>**Settings**</td>
 <td><ul>
 <li>[Change access levels](../security/change-access-levels.md)</li>
 </ul></td>
@@ -514,7 +520,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td><ul>
 <li>[Change individual permissions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
-<li>[Add collectino-level administrators](../security/set-project-collection-level-permissions.md)</li>
+<li>[Add collection-level administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)</li>
 <li>[Add administrators to TFS](/tfs/server/admin/add-administrator-tfs)</li>
 </ul></td>
@@ -525,7 +531,99 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
+</tr>
+<tr>
+<td>**Boards, Process** </td>
+<td><ul>
+<li>[Customize a project](./work/customize-process.md)</li>
+<li>[Add and manage processes](./work/manage-process.md)</li>
+</ul></td>
+<td>Process customization applies to Azure Boards only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes](./work/inheritance-process-model.md). </td>
+</tr>
+<tr>
+<td>**Build and release, Agent pools, Deployment pools**</td>
+<td><ul>
+<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
+<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
+<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
+<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
+</ul></td>
+<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
+</tr>
+<tr>
+<td>**Extensions**</td>
+<td><ul>
+<li>[Install and manage Marketplace extensions](../../marketplace/install-extension.md)</li>
+<li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
+<li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
+<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
+<li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
+<li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
+</ul></td>
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members.
+</td>
+</tr>
+
+</tbody>
+</table>
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
+
+
+<table>
+<tbody valign="top">
+<tr>
+<th width="15%">Area</th>
+<th width="40%">Supported tasks</th>
+<th width="45%">Notes</th>
+</tr>
+<tr>
+<td>**Settings**</td>
+<td><ul>
+<li>[Change access levels](../security/change-access-levels.md)</li>
+</ul></td>
+<td>From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects defined under your account.</td>
+</tr>
+<tr>
+<td>**Projects**</td>
+<td><ul>
+<li>Add and manage projects: [Create](../projects/create-project.md), [Rename](../projects/rename-project.md), [Delete](../projects/delete-project.md)</li>
+<li>[Add users to projects](../security/add-users-team-project.md)</li>
+<li>[Save project data](../accounts/save-team-project-data.md)</li>
+</ul></td>
+<td>A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of projects you create, to keep things simple. Learn more [About projects and scaling your organization](../projects/about-projects.md). </td>
+</tr>
+<tr>
+<td>**Security**</td>
+<td><ul>
+<li>[Change individual permissions](../security/change-individual-permissions.md)</li>
+<li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
+<li>[Add collection-level administrators](../security/set-project-collection-level-permissions.md)</li>
+<li>[Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)</li>
+<li>[Add administrators to TFS](/tfs/server/admin/add-administrator-tfs)</li>
+</ul></td>
+<td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
+</tr>
+<tr>
+<td>**Notifications**</td>
+<td><ul>
+<li>Manage collection-level notifications </li>
+</ul></td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
+</tr>
+<tr>
+<td>**Build and release, Agent pools, Deployment pools**</td>
+<td><ul>
+<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
+<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
+<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
+<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
+</ul></td>
+<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
 </tr>
 <tr>
 <td>**Extensions**</td>
@@ -537,27 +635,20 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your VSTS projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members.
 </td>
 </tr>
-<tr>
-<td>**CI/CD**</td>
-<td><ul>
-<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
-<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
-<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
-<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
-</ul></td>
-<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
-</tr>
+
 </tbody>
 </table>
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
+
 <a id="admin" />
+
 ## Server administrator role 
 
 Members of the [Team Foundation Server Administrators group](/tfs/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
@@ -568,7 +659,8 @@ For additional information, see [Team Foundation Server Administration Documenta
 
 ::: moniker-end
 
-## Related articles 
+## Related articles
+
 - [Resources granted to project members](../accounts/resources-granted-to-project-members.md) 
 - [Permissions and groups reference](../security/permissions.md) 
 - [Rate limits](../../integrate/concepts/rate-limits.md)

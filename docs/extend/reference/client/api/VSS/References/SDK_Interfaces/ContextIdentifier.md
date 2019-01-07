@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ContextIdentifier API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ContextIdentifier API | Extensions for Azure DevOps Services
 ms.assetid: 1bf137cb-a293-a6e2-c0d6-dfcbffefd8fb
 ms.prod: devops
 ms.technology: devops-ecosystem

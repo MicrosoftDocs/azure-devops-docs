@@ -1,10 +1,10 @@
 ---
-title: Policy Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with policies programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Policy Overview | REST API Reference for Team Foundation Server
+description: Work with policies programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: c7fc7c92-075e-4bfc-8b66-9a9a5f28bdbd
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Policy
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
@@ -30,5 +33,5 @@ If you haven’t already, look at the information on getting started with these 
 
 ### Get a list of policy configurations
 
-* Get the available [policy types](./types.md) for an account.
+* Get the available [policy types](./types.md) for an organization. 
 * Get the [policy configurations](./configurations.md) for a project.

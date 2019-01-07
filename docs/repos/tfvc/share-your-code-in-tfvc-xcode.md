@@ -1,5 +1,6 @@
 ---
-title: Share your code in TFVC using Xcode | VSTS
+title: Share your code in TFVC using Xcode
+titleSuffix: Azure Repos
 description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
 ms.prod: devops
@@ -15,9 +16,9 @@ monikerRange: '>= tfs-2015'
 
 # Share your code in TFVC using Xcode
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Share your Xcode projects in VSTS using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repository to TFVC.
+Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repository to TFVC.
 
 ## Download and configure Git-tf
 
@@ -36,14 +37,14 @@ Share your Xcode projects in VSTS using a TFVC repository by using the Git-tf co
     pushd /ws/FabrikamFiber
     ```
 
-4. To share your Git repository in VSTS, configure the connection and check in your code. You'll be prompted for credentials. 
+4. To share your Git repository in Azure Repos, configure the connection and check in your code. You'll be prompted for credentials. 
 
     ```
     git tf configure https://fabrikamfiber.visualstudio.com $/FabrikamFiber 
     git tf checkin
     ```
 
-    Or, if your team's code is already in VSTS, you can clone a local repository using Git-tf.
+    Or, if your team's code is already in Azure Repos, you can clone a local repository using Git-tf.
 
     ```
     git tf clone https://fabrikamfiber.visualstudio.com $/FabrikamFiber
@@ -59,14 +60,14 @@ Share your Xcode projects in VSTS using a TFVC repository by using the Git-tf co
 ## Share your code
 
 
-1. After you commit changes to your local Git repository, and you're ready to share them in VSTS, check them in.
+1. After you commit changes to your local Git repository, and you're ready to share them in Azure Repos, check them in.
 
     ```
     git commit -a 
     git tf checkin
     ```
 
-    If you've committed multiple changes locally, you'll still get just one changeset in VSTS.
+    If you've committed multiple changes locally, you'll still get just one changeset in Azure Repos.
 
 2. Resolve a bug or close a task when you check in by providing the work item ID with the resolve flag.
 
@@ -76,7 +77,7 @@ Share your Xcode projects in VSTS using a TFVC repository by using the Git-tf co
 
     The changeset and the work item are linked, and you'll be able to see which bugs are resolved and which tasks were completed in the build reports.
 
-3. You can make sure you're working with your team's latest code by pulling from VSTS.
+3. You can make sure you're working with your team's latest code by pulling from Azure Repos.
 
     ```
     git tf pull
@@ -92,7 +93,7 @@ Share your Xcode projects in VSTS using a TFVC repository by using the Git-tf co
 ## Additional information
 
 * [Should I use Git or TFVC for my project?](#should-i-use-git-or-tfvc-for-my-team-project)
-* [If my project uses Git Version control, can I still share my Xcode projects in VSTS?](#if-my-team-project-uses-git-version-control-can-i-still-share-my-xcode-projects-in-visual-studio-team-services)
+* [If my project uses Git Version control, can I still share my Xcode projects in Azure DevOps Services?](#if-my-team-project-uses-git-version-control-can-i-still-share-my-xcode-projects-in-azure-devops-services)
 
 ### Should I use Git or TFVC for my project?
 
@@ -100,7 +101,7 @@ That depends on a number of factors, like the size of your codebase and the size
 Learn which version control ([Git](../../repos/git/overview.md) or [Team Foundation Version Control](overview.md)) 
 works best for you.
 
-### If my project uses Git Version control, can I still share my Xcode projects in VSTS?
+### If my project uses Git Version control, can I still share my Xcode projects in Azure DevOps Services?
 
 Yes, see [Share your code in Git using Xcode](../../repos/git/share-your-code-in-git-xcode.md).
 

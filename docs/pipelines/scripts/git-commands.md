@@ -1,6 +1,7 @@
 ---
 title: Run Git commands in a script
-description: Learn how you can run a Git command in a build script for your workflow by using Team Foundation Server (TFS) or VSTS.
+ms.custom: seodec18
+description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,9 +21,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-For some workflows you need your build process to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
+For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
 
-Git.exe is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
+Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
 
 
 <a name="enable"></a>
@@ -35,9 +36,9 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 <div class="collapse" id="expando-version-control-permissions">
 
 <ul>
-<li>VSTS: <code>https:&#x2F;&#x2F;{your-organization}.visualstudio.com/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
+<li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
 
-<li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
+<li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-project}/_admin/_versioncontrol</code></li>
 </ul>
 
 <p>![manage project](_img/manage-project.png)</p>
@@ -63,7 +64,9 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
-### Enable your build pipeline to run git.exe
+::: moniker range="< tfs-2018"
+
+### Enable your pipeline to run command-line Git
 
 On the [variables tab](../build/variables.md) set this variable:
 
@@ -71,27 +74,87 @@ On the [variables tab](../build/variables.md) set this variable:
 |---|---|
 | ```system.prefergit``` | ```true``` |
 
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+### Allow scripts to access the system token
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+# [YAML](#tab/yaml)
+
+Add a `checkout` section with `persistCredentials` set to `true`.
+
+```yaml
+steps:
+- checkout: self
+  persistCredentials: true
+```
+
+Learn more about [`checkout`](../yaml-schema.md#checkout).
+
+# [Designer](#tab/designer)
+
 On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+
+---
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+
+::: moniker-end
 
 ## Make sure to clean up the local repo
 
-Certain kinds of changes to the local repository are not automatically cleaned up by the build process. So make sure to:
+Certain kinds of changes to the local repository are not automatically cleaned up by the build pipeline. So make sure to:
 
 * Delete local branches you create.
 * Undo git config changes.
 
-If you run into problems using an on-premises agent, to make sure the repo is clean:
+If you run into problems using an on-premises agent, make sure the repo is clean:
 
-* On the [repository tab](../build/repository.md) set **Clean** to true.
+::: moniker range="vsts"
+
+# [YAML](#tab/yaml)
+
+Make sure `checkout` has `clean` set to `true`.
+
+```yaml
+steps:
+- checkout: self
+  clean: true
+```
+
+# [Designer](#tab/designer)
+
+* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
+
+---
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 
 * On the [variables tab](../build/variables.md) create or modify the ```Build.Clean``` variable and set it to ```source```
+
+::: moniker-end
 
 ## Examples
 
 
 ### List the files in your repo
 
-Make sure to follow the above steps to [enable git.exe](#enable).
+::: moniker range="< tfs-2018"
+Make sure to follow the above steps to [enable Git](#enable).
+::: moniker-end
 
 On the [build tab](../tasks/index.md) add this task:
 
@@ -103,7 +166,9 @@ On the [build tab](../tasks/index.md) add this task:
 
 You want a CI build to merge to master if the build succeeds.
 
-Make sure to follow the above steps to [enable git.exe](#enable).
+::: moniker range="< tfs-2018"
+Make sure to follow the above steps to [enable Git](#enable).
+::: moniker-end
 
 On the [Triggers tab](../build/triggers.md) select **Continuous integration (CI)** and include the branches you want to build.
 
@@ -162,10 +227,13 @@ Yes
 
 Add ```***NO_CI***``` to your commit message. For example, ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
 
+::: moniker range="< tfs-2018"
 
-### How does enabling scripts to run Git commands affect how the build process gets build sources?
+### How does enabling scripts to run Git commands affect how the build pipeline gets build sources?
 
-When you set ```system.prefergit``` to ```true```, the build process uses git.exe instead of LibGit2Sharp to clone or fetch the source files.
+When you set ```system.prefergit``` to ```true```, the build pipeline uses command-line Git instead of LibGit2Sharp to clone or fetch the source files.
+
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 

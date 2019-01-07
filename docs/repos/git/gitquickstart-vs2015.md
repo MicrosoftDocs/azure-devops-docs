@@ -1,6 +1,7 @@
 ---
-title: Get started with Git and Visual Studio | VSTS & TFS
-description: Quick Start with Git and VSTS
+title: Get started with Git and Visual Studio
+titleSuffix: Azure Repos
+description: Quick Start with Git and Azure DevOps Services
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -13,25 +14,25 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-#  Get Started with Git and VSTS
+#  Get Started with Git and Azure DevOps Services
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
-This guide covers the basics so you can get up and running using Git with code already in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
+This guide covers the basics so you can get up and running using Git with code already in Azure DevOps Services or Team Foundation Server (TFS). 
 Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 
 
-If you don't have your code in a VSTS or TFS Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to VSTS.
+If you don't have your code in an Azure DevOps Services or TFS Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to Azure Repos.
 
 <a name="clone"></a>
 
 ## Get your code 
 
-To get a copy of the source code, you will [clone](clone.md) a VSTS Git repository. Cloning creates both a copy
+To get a copy of the source code, you will [clone](clone.md) a Git repository. Cloning creates both a copy
 of the source code for you to work with and all the version control information so Git can manage the source code.
 
 If you don't have a Git repository yet, you can create one [using your own code](creatingrepo.md) and continue with the steps to commit and share your work.
@@ -40,29 +41,29 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
  0. In Team Explorer, open up the Connect page by choosing **Projects and My Teams** then **Manage Connections**    
 
-  ![Cloning VSTS Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
+  ![Cloning Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
   
-0. Choose **Connect**, select your VSTS account, choose the projects you want to work on, then
+1. Choose **Connect**, select your organization, choose the projects you want to work on, then
 click **Connect**.   
 
 0. Right click on the project and click **Clone...**. Then enter a local folder on your drive to store the downloaded code.      
    
-   ![Cloning a Git Repository from a Connected VSTS Account](_shared/_img/cloneVsRepo.png)
+   ![Cloning a Git Repository from a connected organization in Azure DevOps](_shared/_img/cloneVsRepo.png)
 
 # [Command Line](#tab/command-line)
 
-0. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
-0. Open the VSTS web portal in your browser and find your Git repository. 
+1. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
+2. Open the Azure DevOps Services web portal in your browser and find your Git repository. 
 Copy the command line instructions from the **Clone** pop-up.   
 
-  ![Finding the Clone URL for your Git Repository in VSTS](_shared/_img/cloneURL.png)
+  ![Finding the Clone URL for your Git Repository in Azure DevOps Services](_shared/_img/cloneURL.png)
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, paste the command you copied from the command line instructions. It will look like this
 on the command prompt:
 
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git clone <a style="color: #b5bd68;">https://fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamFiber</a>  
+    &gt; git clone <a style="color: #b5bd68;">https://dev.azure.com/fabrikam/DefaultCollection/Fabrikam/_git/FabrikamFiber</a>  
     </pre>
 
 Git will download and create your own copy of the code in a new folder for you to work with. 
@@ -131,7 +132,7 @@ branch of the code.
 
   ![Create a Pull Request in Visual Studio](_shared/_img/newVsPullRequest.png)
 
-0. You can review comments made in your [pull request](pullrequest.md) in a web browser on the VSTS project page. Once all changes are approved by the
+0. You can review comments made in your [pull request](pullrequest.md) in a web browser on the Azure Repos pull request page. Once all changes are approved by the
 team, you complete the pull request through the web browser.
 
 # [Command Line](#tab/command-line)
@@ -141,13 +142,13 @@ team, you complete the pull request through the web browser.
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git push -u origin <font color="#b5bd68">dev</font></pre>
 
-0. Open up the VSTS project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
+1. Open up the project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
 
-   ![Creating a new Pull Request in VSTS](_shared/_img/vstsCreatePullReq.png)   
+   ![Creating a new Pull Request in Azure Repos](_shared/_img/vstsCreatePullReq.png)   
 
-0. Create the pull request, adding in team members to review and approve the code changes.
+2. Create the pull request, adding in team members to review and approve the code changes.
 
-0. Once the changes are approved, complete the pull request in VSTS. 
+3. Once the changes are approved, complete the pull request. 
 This will pull your changes from the branch into the master branch of the code.
 
 ---

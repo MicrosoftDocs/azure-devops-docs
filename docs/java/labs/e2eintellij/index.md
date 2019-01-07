@@ -1,6 +1,6 @@
 ---
-title: IntelliJ end-to-end workflow for your Java project with VSTS 
-description: Tutorial lab for an end-to-end IntelliJ workflow with Visual Studio Team Services (VSTS)
+title: IntelliJ end-to-end workflow for your Java project with Azure DevOps Services 
+description: Tutorial lab for an end-to-end IntelliJ workflow with Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Build and deploy a Java project with IntelliJ and VSTS
+# Build and deploy a Java project with IntelliJ and Azure DevOps Services
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -22,9 +22,9 @@ monikerRange: '>= tfs-2017'
 
 In this exercise, you are going to see a typical end-to-end workflow for a Java developer using IntelliJ. You should have completed the labs that set up automated build and release (this is a CI/CD pipeline). 
 
-In this scenario, you will open the running MyShuttle application and discover a bug. You will then use the [Exploratory Testing extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) to create a Bug work item in VSTS. You will then branch the code for fixing the bug. Once the bug is fixed on the branch, you will merge the code in via a Pull Request and code review. This will then automatically queue the build/release pipeline and your fix will be deployed.
+In this scenario, you will open the running MyShuttle application and discover a bug. You will then use the [Exploratory Testing extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) to create a Bug work item in Azure DevOps Services. You will then branch the code for fixing the bug. Once the bug is fixed on the branch, you will merge the code in via a Pull Request and code review. This will then automatically queue the build/release pipeline and your fix will be deployed.
 
-This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private VSTS agent. You should also have completed the labs to set up an automated build for both the MyShuttleCalc and the MyShuttle2 repos. You should also have complete the release management lab. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises to create a Team Project and have set up the Docker private Azure DevOps Services agent. You should also have completed the labs to set up an automated build for both the MyShuttleCalc and the MyShuttle2 repos. You should also have complete the release management lab. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 ## Install the Exploratory Testing Extension for Chrome
 
@@ -36,11 +36,11 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 1. Once installed, a beaker icon appears in the top right of the Chrome toolbar. Click it to open the UI.
 
-1. Click on the gear icon to open the settings. Select "Connected" and enter your VSTS account URL and click Next.
+2. Click on the gear icon to open the settings. Select "Connected" and enter your organization URL and click Next.
 
-    ![Connect to VSTS](../_img/e2eintellij/connect-to-vsts.png)
+    ![Connect to Azure DevOps Services](../_img/e2eintellij/connect-to-vsts.png)
 
-1. Select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
+3. Select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
 
     ![Select the Team to Connect to](../_img/e2eintellij/select-team.png)
 
@@ -50,7 +50,7 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 In this task you will enforce quality on the master branch by creating branch policies.
 
-1. In Chrome, connect to your VSTS Team Project. Click on Code to open the Code Hub.
+1. In Chrome, connect to your Azure DevOps Services Team Project. Click on Code to open the Code Hub.
 
 1. Click the Repo dropdown and select "Manage Repositories".
 
@@ -72,7 +72,7 @@ In this task you will enforce quality on the master branch by creating branch po
 
 ## Log a Bug using the Exploratory Test Extension
 
-In this task you will start a test session, discover a bug in the MyShuttle app and log it to VSTS.
+In this task you will start a test session, discover a bug in the MyShuttle app and log it to Azure DevOps Services.
 
 1. In the Test extension toolbar of the Exploratory Test extension, click the Play icon to start a testing session.
 
@@ -104,11 +104,11 @@ In this task you will start a test session, discover a bug in the MyShuttle app 
 
     ![Log the Bug](../_img/e2eintellij/log-bug.png)
 
-    > **Note**: All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". VSTS checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
+    > **Note**: All the pages visited, notes, screenshots and other information from the test session is included as details for the Bug, so you don't have to add these details manually. You also should see a button next to the title box reading "0 Similar". Azure DevOps Services checks to see if there are bugs already logged with similar titles, therefore minimizing duplicate bugs being logged.
 
 1. Once the bug has been created, click the Stop button in the Test Extension toolbar to end the test session.
 
-1. Navigate to your VSTS team project. Click Work to navigate to the Work Hub. In the toolbar, enter "driver" into the Search Work Items box and press enter or click the magnifying glass icon.
+1. Navigate to your Azure DevOps Services team project. Click Work to navigate to the Work Hub. In the toolbar, enter "driver" into the Search Work Items box and press enter or click the magnifying glass icon.
 
     ![Search for the Bug](../_img/e2eintellij/search-bug.png)
 
@@ -136,7 +136,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     ![New branch](../_img/e2eintellij/create-new-branch.png)
 
-1. The branch is created both locally and in the remote (on VSTS). The VSTS extension informs you that the new branch has been created and that it has been associated with the Bug.
+1. The branch is created both locally and in the remote (on Azure DevOps Services). The Azure DevOps Services extension informs you that the new branch has been created and that it has been associated with the Bug.
 
     ![Notifications when creating a branch](../_img/e2eintellij/branch-notifications.png)
 
@@ -146,7 +146,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     Change this line of code:
     ```java
-        session.setAttribute("driverFeeTotal", totalFareforDriver);
+        session.setAttribute("driverFeeTotal", totalFareForDriver);
     ```
     to
     ```java
@@ -155,17 +155,17 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
 1. Commit your changes by selecting VCS->Git->Commit File. Enter "Fixing totals bug" as the Commit message.
 
-1. On the upper right of the Commit message box there is a VSTS icon. Click it to open the Work Item dialog. This dialog would allow you to associate your commit with a work item. Close the dialog by pressing Cancel.
+1. On the upper right of the Commit message box there is an Azure DevOps Services icon. Click it to open the Work Item dialog. This dialog would allow you to associate your commit with a work item. Close the dialog by pressing Cancel.
 
     > **Note**: In this case we don't need to associate the checkin with the Bug since the branch is already associated with the Bug.
 
     ![Associate a work item with a commit](../_img/e2eintellij/associate-commit.png)
 
-1. Hover the mouse over the Commit button and select "Commit and Push" to push the changes to VSTS. In the Push commits dialog click the Push button.
+1. Hover the mouse over the Commit button and select "Commit and Push" to push the changes to Azure DevOps Services. In the Push commits dialog click the Push button.
 
     ![Commit and Push](../_img/e2eintellij/commit-and-push.png)
 
-1. Now that the fix has been pushed to VSTS on a branch, you can create a Pull Request. In the Code History panel click the Pull Request tab. Click the green + button to add a new Pull Request. Accept the defaults and click Create Pull Request.
+1. Now that the fix has been pushed to Azure DevOps Services on a branch, you can create a Pull Request. In the Code History panel click the Pull Request tab. Click the green + button to add a new Pull Request. Accept the defaults and click Create Pull Request.
 
     ![Create Pull Request](../_img/e2eintellij/create-pull-request.png)
 
@@ -173,7 +173,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     ![Build is running to validate the PR](../_img/e2eintellij/pr-overview.png)
 
-    > **Note**: If there was a merge conflict, VSTS would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
+    > **Note**: If there was a merge conflict, Azure DevOps Services would warn you on the overview page. If there is no warning to this effect, then Git will be able to auto-merge the PR into the target branch.
 
     > **Note**: You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
 

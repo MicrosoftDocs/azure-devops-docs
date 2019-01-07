@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IOpenMessageDialogOptions API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IOpenMessageDialogOptions API | Extensions for Azure DevOps Services
 description: Used by IHostDialogService.openMessageDialog().
 ms.assetid: 21a31ff8-ee59-07a2-14d7-8898ef676d1c
 ms.prod: devops

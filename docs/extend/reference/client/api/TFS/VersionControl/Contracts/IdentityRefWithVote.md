@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts IdentityRefWithVote API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts IdentityRefWithVote API | Extensions for Azure DevOps Services
 ms.assetid: bcc5666f-cdb1-23a0-18fa-d6a93bffb079
 ms.prod: devops
 ms.technology: devops-ecosystem

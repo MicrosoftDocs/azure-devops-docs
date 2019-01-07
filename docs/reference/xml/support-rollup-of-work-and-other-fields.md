@@ -1,21 +1,22 @@
 ---
 title: Support rollup of work and other fields
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Provides summed values of select fields for all child work items of a parent.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/16/2018
 ---
 
 
 # Rollup of work and other fields
 
-[!INCLUDE [temp](../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Rollup provides summed values of select fields for all child work items of a parent. Because Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
+Rollup provides summed values of select fields for all child work items of a parent. Because Azure DevOps Services and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
   
 > [!NOTE]    
 >The system doesn't support rollup of the Effort, Story Points, or Size fields across product backlogs and portfolio backlogs.
@@ -40,9 +41,9 @@ When you update the status of a task as Completed, the system automatically zero
 
 ## Other tools that support rollup 
 
-You can obtain rollup of additional data fields in VSTS or TFS data by using one of the following methods:  
+You can obtain rollup of additional data fields in Azure DevOps Services or TFS data by using one of the following methods:  
  
-|Method|VSTS|On-premises TFS|  
+|Method|Azure DevOps Services|On-premises TFS|  
 |------------|----------|----------------------|  
 |Work item query charts|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |Microsoft Excel|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|
@@ -51,8 +52,6 @@ You can obtain rollup of additional data fields in VSTS or TFS data by using one
 | Analytics |![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![Not supported](_img/icon_witerror.png "Icon_WITerror")|  
 |SQL Server Reporting Services report|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |TFS-Project Server integration|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-
- 
  
 <a name="charts"></a>
 ## Work item query charts and rollup
@@ -69,7 +68,7 @@ You can export a query to Excel that contains the work items you want to provide
 To learn more about Excel macros, see [Automate tasks with the Macro Recorder](https://support.office.com/article/Automate-tasks-with-the-Macro-Recorder-974ef220-f716-4e01-b015-3ea70e64937b).  
 
 > [!TIP]
-> To provide support for opening work items and query results in Excel from the web portal of VSTS or TFS, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your organization or collection.
+> To provide support for opening work items and query results in Excel from the web portal, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your organization or collection.
 
 ## Microsoft Project and rollup of work tracking data  
  Project natively supports rollup of summary tasks. With Project, you can round trip work tracking data to obtain rollup values.  
@@ -83,21 +82,25 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
 ## Marketplace extensions and custom controls   
 There are several extensions available from the [Marketplace](https://marketplace.visualstudio.com/vsts) that provide rollup. Here are a few that may support your needs: 
 
-- [VSTS Rollup](https://marketplace.visualstudio.com/items?itemName=canarysautomationspvtltd.vstsrollup) supports VSTS only
-- [TFS Aggregrator](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-server-plugin#) supports VSTS and TFS 
+- [VSTS Rollup](https://marketplace.visualstudio.com/items?itemName=canarysautomationspvtltd.vstsrollup), supports Azure DevOps Services only
+- [TFS Aggregator](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-server-plugin), supports Azure DevOps Services and TFS 
 
-Or, you can write an extension using the [REST API for work tracking](https://docs.microsoft.com/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
+Or, you can write an extension using the [REST API for work tracking](/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregator](https://tfsaggregator.github.io/).  
+
+::: moniker range="vsts"  
 
 <a name="marketplace"></a>
-## Analytics (VSTS only) 
+## Analytics service
 
-You can use the [Analytics Service](../../report/analytics/what-is-analytics.md), the reporting platform for VSTS, to answer quantitative questions about your projects. With this service, you can add [Analytics widgets](../../report/analytics/analytics-widgets-vsts.md) to your dashboard. Or, you can create additional reports using [Power BI](../../report/powerbi/overview.md).  
+You can use the [Analytics Service](../../report/analytics/what-is-analytics.md) to answer quantitative questions about your projects. With this service, you can add [Analytics widgets](../../report/analytics/analytics-widgets.md) to your dashboard. Or, you can create additional reports using [Power BI](../../report/powerbi/overview.md).  
 
 > [!NOTE]
 > **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/?s=VSTS+Analytics+Extension).
 
+::: moniker-end   
 
-## SQL Server Reporting Services report (TFS only)
+::: moniker range=">= tfs-2013 <= azdevserver-2019"  
+## SQL Server Reporting Services report  
  Several OOB reports provide rollup. Here's an example of rollup of completed and remaining work that the Stories Overview report provides. This report is part of the default TFS Agile process template.  
   
  ![Stories Overview example report](_img/procguid_agilereports.png "ProcGuid_AgileReports")  
@@ -109,15 +112,19 @@ You can use the [Analytics Service](../../report/analytics/what-is-analytics.md)
 -   [Requirements Overview](../../report/sql-reports/requirements-overview-report-cmmi.md)  
   
 If you need to add reports to your on-premises TFS deployment, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
-  
-## TFS-Project Server integration (TFS only)
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015"  
+## TFS-Project Server integration 
 
 Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  
   
 
 > [!IMPORTANT]  
->TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md). 
-
+> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md).
+>  
+::: moniker-end 
 
 <a name="requirements"></a>   
 ##  Rollup requirements  

@@ -1,6 +1,6 @@
 ---
-title: Subscribe to VSTS events from another service | VSTS REST APIs
-description: Use service hooks to set up actions to take when specific events occur in VSTS.
+title: Subscribe to Azure DevOps Services events from another service | Azure DevOps Services REST APIs
+description: Use service hooks to set up actions to take when specific events occur in Azure DevOps Services.
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 # Create a service hooks subscription programmatically
 
-Using the [Subscriptions](../integrate/previous-apis/hooks/subscriptions.md) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/?view=vsts-rest-4.1) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 
@@ -34,14 +34,14 @@ For a complete set of supported consumer services and actions, see the [consumer
 ## Create a subscription for a project
 
 To create a subscription for an event, choose which consumer to use and the action you want to take. You will create an HTTP POST 
-request to the subscriptions URL for the VSTS account with the event, consumer and action to 
+request to the subscriptions URL for the Azure DevOps Services organization with the event, consumer and action to 
 take for the subscription.
 
 ### Before you begin
 
 To create a subscription, the following data will be required:
 
-- project ID (use the [Project REST API](../extend/reference/client/api/TFS/Core/Contracts/ProjectInfo.md) to get the project ID)
+- project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects?view=vsts-rest-4.1) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
@@ -75,7 +75,7 @@ Here is the response to the request to create the subscription:
 ```js
 {
     "id": "74aeeed0-bf5d-48dc-893f-f862b80987e9",
-    "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/hooks/subscriptions/74aeeed0-bf5d-48dc-893f-f862b80987e9",
+    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/hooks/subscriptions/74aeeed0-bf5d-48dc-893f-f862b80987e9",
     "publisherId": "tfs",
     "eventType": "build.complete",
     "resourceVersion": "1.0",

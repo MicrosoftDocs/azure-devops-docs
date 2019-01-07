@@ -1,7 +1,7 @@
 ---
 title: Schedule projects using Microsoft Project
-titleSuffix: VSTS & TFS
-description: Use Microsoft Project 2010 to plan work, schedule tasks, assign resources, and track changes in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure Boards
+description: Use Microsoft Project 2010 to plan work, schedule tasks, assign resources, and track changes in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c8d9ea81-ebde-47e5-b813-473018177aa9
@@ -18,12 +18,12 @@ ms.date: 02/22/2017
 
 
 > [!IMPORTANT]  
->You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in VSTS or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
+> You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Azure Boards or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in VSTS and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
+You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in Azure Boards and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 > [!NOTE]  
->For version compatibility between VSTS/TFS and Office clients, see [Requirements and compatibility, Office](/tfs/server/compatibility#office).  
+>For version compatibility and Office clients, see [Requirements and compatibility, Office](/tfs/server/compatibility#office).  
  
 **Project team tab ribbon** 
 
@@ -58,7 +58,7 @@ To learn more, see [Changes in Project 2010](http://go.microsoft.com/fwlink/?Lin
 By using Active Mode, you can determine the impact to the schedule when you specify some tasks as inactive. When you mark a task as inactive, you maintain all the data that is associated with the task, but you remove it from consideration in the schedule and resource allocation. 
 
 > [!IMPORTANT]  
->When you inactivate a task in Project, you do not inactivate the task in VSTS and TFS. Inactive tasks are published and refreshed according to their **Publish and Refresh** assignment in the Project plan.   
+>When you inactivate a task in Project, you do not inactivate the task in Azure Boards and TFS. Inactive tasks are published and refreshed according to their **Publish and Refresh** assignment in the Project plan.   
 
 **Scalable 64-bit support**. With 64-bit compatibility, Project provides performance improvements to support creation of very large and complex projects.
 

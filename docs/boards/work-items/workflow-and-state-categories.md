@@ -1,17 +1,19 @@
 ---
-title: Workflow states and state categories
-titleSuffix: VSTS & TFS   
-description: Understand how workflow states map to state categories in Visual Studio Team Services and Team Foundation Server   
+title: Understand how backlogs and boards use workflow states and state categories
+titleSuffix: Azure Boards   
+description: Understand how workflow states map to state categories and are used in boards and backlogs in Azure Boards & TFS
+ms.custom: seodec18   
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
-# Workflow states and state categories
+# How workflow states and state categories are used in Backlogs and Boards
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -51,7 +53,7 @@ Here's how the default, inherited states map to the state categories for all thr
 <th width="16%">Test WITs </th>
 </tr>
 <tr valign="top" >
-<td>**Proposed:** Assign to states associated with newly added work items that should appear on the backlog. The first column on the Kanban or task board maps to a Proposed state. </td> 
+<td>**Proposed:** Assign to states associated with newly added work items that should appear on the backlog. The first column on the Kanban or taskboard maps to a Proposed state. </td> 
 <td>New</td> 
 <td>New<br/>Approved<br/>To Do (Task) </td> 
 <td>Proposed<br/></td> 
@@ -113,7 +115,7 @@ In the following circumstances the system won't automatically update the work it
 - The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   
 - The work item is already in a State that belongs to the Completed category. No further transition is required. 
 - The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.  
-- For TFS and VSTS Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
+- For TFS and Azure Boards Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
 
 To learn more about process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
 
@@ -125,6 +127,14 @@ To learn more about process models, see [Customize your work tracking experience
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end
+
+::: moniker range="azdevserver-2019"
+- [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
+- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
+- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 - [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)

@@ -1,6 +1,6 @@
 ---
 title: Add and share storyboard shapes
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Add and share storyboard shapes with members of your team  using the  Storypoint add-in to PowerPoint
 ms.prod: devops
 ms.technology: devops-agile
@@ -19,28 +19,9 @@ ms.date: 06/22/2017
 Adding to your gallery of storyboard shapes can boost your ability to [storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md). You can import storyboard shapes created by other members of your team. To share custom shapes that you've created, you can export them to a storyboard shapes file.  
   
 > [!IMPORTANT]  
->The Visual Studio Gallery for PowerPoint Storyboarding has been deprecated. 
+> The Visual Studio Gallery for PowerPoint Storyboarding has been deprecated. Also, starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project and Storyboarding with PowerPoint.  
 
-<!---
-## Find storyboard shapes and import them  
 
-0.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](/tfs/server/compatibility#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
-  
-0.  If you haven't installed Visual Studio, you'll need to [install Visual Studio Community or other version](https://visualstudio.microsoft.com/downloads/) or  [Team Foundation Server Office&reg; Integration](https://go.microsoft.com/fwlink/?LinkId=832492&clcid=0x409) to install the Storyboarding add-in to PowerPoint.  
-  
-0.  Open the [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/16/storyboard-shapes-extensions-being-deprecated-from-visual-studio-marketplace/) and click a link to download the corresponding storyboard shapes file.  
-
-0.  Save the file to the Shapes folder (*Drive*:Program Files\Common Files\microsoft shared\Team Foundation Server\14.0\PowerPoint\Shapes).  
-  
-0.  Close and reopen PowerPoint.  
-  
-    > [!TIP]  
-    > If you save the download file to a location other than the Shapes folder, you can import the file using **Import Shapes** from the Storyboarding tab.  If you don't see the Storyboarding tab, you don't have the Team Foundation add-in for PowerPoint Storyboarding. See step 2.   
-  
-0.  Start using the Misc Windows 8 shapes.  
-  
-     ![Expand the Storytelling Common category of shapes](_img/alm_sb_shp_stellingcommon.png "ALM_SB_SHP_STellingCommon")  
--->
 
 ## Share shapes that you create with your team  
  At any time, you can export custom storyboard shapes that you've created and share them with your team. You can create storyboard shapes with any combination of PowerPoint shapes, screenshots, inserted images, or storyboard shapes.  

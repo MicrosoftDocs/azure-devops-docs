@@ -1,5 +1,6 @@
 ---
-title: Git branching guidance | VSTS & TFS
+title: Git branching guidance
+titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.prod: devops
@@ -8,10 +9,9 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 07/20/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Adopt a Git branching strategy
 
@@ -21,7 +21,7 @@ Your team should find a balance between this flexibility and the need to collabo
 Team members publish, share, review, and iterate on code changes through Git branches shared with others. 
 Adopt a branching strategy for your team so that you collaborate better and spend less time managing version control and more time developing code. 
 
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 ## Keep your branch strategy simple
 
@@ -83,7 +83,7 @@ Distribute reviewer responsibilities to share ideas across your team and spread 
 
 Some suggestions for successful pull requests:    
    
-- Two reviewers is an optimal number [based on research](https://www.microsoft.com/en-us/research/publication/convergent-software-peer-review-practices/). 
+- Two reviewers is an optimal number [based on research](https://www.microsoft.com/research/publication/convergent-software-peer-review-practices/). 
 - If your team already has a code review process, bring pull requests into what you're already doing.
 - Take care assigning the same reviewer(s) to a large number of pull requests. Pull requests work better when reviewer responsibilities are shared across the team.
 - Provide enough detail in the description to quickly bring reviewers up to speed with your changes.   
@@ -162,7 +162,7 @@ Your team should agree on a process to update deployment branches with the code 
 Cherry-pick bugfixes in the deployment branch back to the master branch using the same steps as porting changes from a release branch.
 
 An exception to this recommendation is if you are using a form of continuous deployment. 
-Use [release management](../../pipelines/index.md) tools when working with continuous deployment to promote builds from your master branch to your deployment targets.
+Use [Azure Pipelines or Build &amp; Release in TFS](../../pipelines/index.md) when working with continuous deployment to promote builds from your master branch to your deployment targets.
 
 ## Videos
 > [!VIDEO https://www.youtube.com/embed/t_4lLR6F_yk?start=0]

@@ -1,27 +1,27 @@
 ---
 title: Burndown guidance
-titleSuffix: VSTS & TFS  
-description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services (VSTS) and Team Foundation Server 
+titleSuffix: Azure DevOps & TFS  
+description: Review Scrum progress during and at the end of a sprint when working in Azure DevOps and Team Foundation Server 
+ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual
 ms.reviewer: greggboe
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.date: 11/16/2017
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 11/01/2018
 ---
 
-
-
 # Burndown guidance
- 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 
 > [!div class="checklist"]   
 > * Is remaining work getting updated regularly? Flat spaces within the blue area indicate a lack of updates.  
-> * Is remaining work increasing instead of decreasing? Increases can indicate unestimated or unplanned work.  Both signal a need for the team to discuss how they'll complete the sprint tasks on time.   
+> * Is remaining work increasing instead of decreasing? Increases can indicate work that wasn't estimated or planned. Both signal a need for the team to discuss how they'll complete the sprint tasks on time.  
 > * Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?    
 
 
@@ -77,12 +77,10 @@ In addition to the sprint burndown chart, teams can review the velocity at which
 You can use your team [velocity](team-velocity.md) as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 
 
-
 ### Industry resources:  
 *	[Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  
 *	[Task sizing in Agile software development](http://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
 <!---
 For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
-
 --> 

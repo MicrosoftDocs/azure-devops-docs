@@ -1,20 +1,23 @@
 ---
-title: Invoke HTTP REST API task for Microsoft VSTS and TFS 
-description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in VSTS and TFS
+title: Invoke HTTP REST API task
+description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2018'
 ---
 
-# Utility: Invoke REST API
+# Invoke REST API task
 
-![icon](_img/http-rest-api.png) &nbsp; Invoke an HTTP API and parse the response.
+**Azure Pipelines | TFS 2018**
+
+Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -28,9 +31,9 @@ This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM
 
 ## Demands
 
-This task can be used in only an [agentless phase](../../process/server-phases.md).
+This task can be used in only an [agentless job](../../process/server-phases.md).
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
 ::: moniker-end
@@ -45,17 +48,19 @@ This task can be used in only an [agentless phase](../../process/server-phases.m
 | **Body** | Optional. The request body for the function call in JSON format. |
 | **URL suffix and parameters** | The string to append to the baseUrl from the Generic service connection while making the HTTP call | 
 | **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
-| **Success criteria** | Optional. How to parse the response body for success. |
+| **Success criteria** | Optional. How to parse the response body for success. By default the task passes when 200 OK is returned from the call. Additionally, the success criteria - if specified - is evaluated. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Succeeds if the API returns success and the response body parsing is successful, or when the API updates the timeline record with success.
 
 The **Invoke REST API task** does not perform deployment actions directly.
 Instead, it allows you to invoke any generic HTTP REST API as part of the automated
-pipeline and, optionally, wait for it to be completed. 
+pipeline and, optionally, wait for it to be completed.
 
 ![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InvokeRestApiV1).
+## Open source
+
+Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).

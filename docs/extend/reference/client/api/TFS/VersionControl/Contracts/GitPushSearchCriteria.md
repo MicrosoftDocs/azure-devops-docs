@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitPushSearchCriteria API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitPushSearchCriteria API | Extensions for Azure DevOps Services
 ms.assetid: 47c919bb-b0df-e4ab-431b-29fd26936e68
 ms.prod: devops
 ms.technology: devops-ecosystem

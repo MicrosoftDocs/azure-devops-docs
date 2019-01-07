@@ -1,23 +1,25 @@
 ---
-title: Node Tool Installer | VSTS or Team Foundation Server
-description: Learn how to use the Node Tool Installer for VSTS and TFS to find, download, and cache the specified version of Node.js.
+title: Node.js Tool Installer task
+description: Find, download, and cache a specified version of Node.js and add it to the PATH
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 546DE4F0-79B7-43F0-AD1F-BCD20FEB2B37
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 4/17/2017
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
+# Node.js Tool Installer task
 
-# Tool: Node Tool Installer
+**Azure Pipelines**
 
 **Build**
 
-![icon](_img/node.png) Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH
+Use this task in a build or release pipeline to find, download, and cache a specified version of [Node.js](https://nodejs.org/) and add it to the PATH.
 
 ## Demands
 
@@ -33,12 +35,12 @@ None
 | Argument | Description |
 |----------|-------------|
 | Version Spec | Specify which [Node.js version](https://nodejs.org/en/download/releases/) you want to use. Examples: `7.x`, `6.x`, `6.10.0`, `>=6.10.0` |
-| Check for Latest Version | Select if you want the agent to check for the latest available version that satisfies the version spec. For example, you select this option because you run this build on your [self-hosted agent](../../agents/agents.md#install) and you want to always use the latest `6.x` version. <div class="tip"><h5>TIP</h5><p>If you're using [our Microsoft-hosted agents](../../agents/hosted.md), you should leave this check box cleared. We update the Microsoft-hosted agents on a regular basis, but they're often slightly behind the latest version. So selecting this box will result in your build spending a lot of time updating to a newer minor version.</p></div>|
+| Check for Latest Version | Select if you want the agent to check for the latest available version that satisfies the version spec. For example, you select this option because you run this build on your [self-hosted agent](../../agents/agents.md#install) and you want to always use the latest `6.x` version. <div class="tip"><h5>TIP</h5><p>If you're using [the Microsoft-hosted agents](../../agents/hosted.md), you should leave this check box cleared. We update the Microsoft-hosted agents on a regular basis, but they're often slightly behind the latest version. So selecting this box will result in your build spending a lot of time updating to a newer minor version.</p></div>|
 | Control options | See [Control options](../../process/tasks.md#controloptions). |
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

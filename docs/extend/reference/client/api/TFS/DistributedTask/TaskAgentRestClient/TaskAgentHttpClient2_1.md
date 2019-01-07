@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/TaskAgentRestClient TaskAgentHttpClient2_1 API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/TaskAgentRestClient TaskAgentHttpClient2_1 API | Extensions for Azure DevOps Services
 ms.assetid: e4fcbead-7a65-986f-ad2f-d24fc93800db
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -760,7 +760,7 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 <a name="method_queryEndpoint"></a>
 <h2 class='method'>queryEndpoint()</h2>
 
-Proxy for a GET request defined by an &#x27;endpoint&#x27;. The request is authorized using a service connection. The response is filtered using an XPath/Json based selector.
+Proxy for a GET request defined by an &#x27;endpoint&#x27;. The request is authorized using a service endpoint. The response is filtered using an XPath/Json based selector.
 
 ### Syntax
 <pre class='syntax'>

@@ -1,26 +1,33 @@
 ---
 title: Add a custom field to an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add a custom field to the web form of a work item type for an Inheritance process model and apply to a project 
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
-ms.date: 05/31/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018 
 ---
 
-# Add a custom field to a work item type    
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+# Add a custom field to a work item type (Inheritance process)    
+
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
 > [!TIP]    
-> To customize a single project, always start by [creating an inherited process and migrating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
+> To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
+
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -40,7 +47,7 @@ You always add a field to an existing work item type.
 	> [!div class="mx-imgBorder"]  
 	> ![All Processes-Process-WIT breadcrumb links](_img/field/breadcrumbs-bug-wit.png) 
 	
-0. With the WIT selected, choose the ![](_img/process/new-field-icon.png) (**New Field** icon).  
+0. With the WIT selected, choose the ![ ](_img/process/new-field-icon.png) (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png) 
@@ -102,13 +109,14 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
 
-0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
 	
 
 # [Previous navigation](#tab/previous-nav)
+::: moniker range="vsts"
 
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
@@ -125,12 +133,19 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
 
-0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
 
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---	
+
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
 
 

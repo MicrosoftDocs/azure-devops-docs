@@ -1,25 +1,26 @@
 ---
-title: VSTS and Team Foundation Server Build and Test - Xamarin Test Cloud
-description: Learn all about how you can use Xamarin Test Cloud when you are building your code in VSTS and Team Foundation Server (TFS) 
+title: Xamarin Test Cloud task
+description: This task is deprecated. Use the App Center Test task instead. 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/16/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 
-# Test: Xamarin Test Cloud
+# Xamarin Test Cloud task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/xamarin-test-cloud-icon.png) Test mobile apps with Xamarin Test Cloud using Xamarin.UITest
+This task was used in a build or release pipeline to test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 
->**NOTE:** This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AppCenterTest) task instead.
+>**NOTE:** This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AppCenterTest) task instead.
 
 ## Demands
 
@@ -45,7 +46,7 @@ None
 | **Advanced - System Language** | Select your language. If it isn't displayed, select Other and then enter its locale below. For example: `en_AU`. |
 | **Advanced - test-cloud.exe Location** | Location of test-cloud.exe. In most cases leave this set to the default value. |
 | **Advanced - Optional Arguments** | (Optional) Arguments passed to test-cloud.exe. See [Submitting UITests at the Command Line](https://developer.xamarin.com/guides/testcloud/uitest/working-with/submitting-tests-at-command-line/). |
-| **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or VSTS. |
+| **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or Azure Pipelines. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 ## Example
@@ -54,7 +55,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

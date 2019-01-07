@@ -1,5 +1,6 @@
 ---
-title: Predefined Build variables | VSTS or Team Foundation Server
+title: Predefined build variables
+ms.custom: seodec18
 description: A comprehensive list of all available predefined build variables
 ms.topic: reference
 ms.prod: devops
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Predefined build variables
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="< vsts"
 > [!NOTE]

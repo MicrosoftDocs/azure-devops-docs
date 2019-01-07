@@ -1,5 +1,5 @@
 - name: TFS-Project Server Integration
-  href: index.md?toc=/vsts/reference/tfs-ps-sync/toc.json&bc=/vsts/reference/tfs-ps-sync/breadcrumb/toc.json 
+  href: index.md?toc=/azure/devops/reference/tfs-ps-sync/toc.json&bc=/azure/devops/reference/tfs-ps-sync/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: Third-party support for synchronization

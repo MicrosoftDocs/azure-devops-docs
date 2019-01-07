@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts Build API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts Build API | Extensions for Azure DevOps Services
 description: Data representation of a build
 ms.assetid: c9030833-785f-f748-cbd7-2269619f1fd7
 ms.prod: devops

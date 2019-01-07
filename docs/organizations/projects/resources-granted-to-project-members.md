@@ -1,7 +1,8 @@
 ---
-title: Resources granted to project members
-titleSuffix: VSTS & TFS
-description: Security and data access considerations and resources granted when you add members to a project or organization 
+title: Resources granted to project members - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn about security and data access considerations and resources granted when you add members to a project or organization 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
@@ -11,9 +12,8 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 05/01/2018
+ms.date: 12/07/2018
 ---
-
 
 # Resources granted to project members
 
@@ -34,7 +34,7 @@ User accounts backed by [Azure Active Directory](/azure/active-directory/) can h
 ## Organization-level resources
 
 Project members have access to resources beyond the specific project.
-Those resources include those defined at the organization-level (VSTS) or project collection level (TFS):
+Those resources include those defined at the organization-level (Azure DevOps Services) or project collection level (TFS):
 
 * Information about other members, including their email address and other contact details, that is hidden from non-members.
 * The Settings area, including security groups and permissions.

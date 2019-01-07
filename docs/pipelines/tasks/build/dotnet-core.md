@@ -1,6 +1,7 @@
 ---
 title: .NET Core build and release task
-description: How to use npm packages build and release task for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+ms.custom: seodec18
+description: How to use npm packages build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
@@ -10,11 +11,11 @@ ms.date: 05/16/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build: .NET Core
+# .NET Core task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/dotnet-core.png) Build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool.
+Use this task in a build or release pipeline to build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool.
 
 If your .NET Core or .NET Standard build depends on NuGet packages, make sure to add two copies of this step: one with the `restore` command and one with the `build` command.
 
@@ -159,7 +160,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -167,7 +168,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### Why is my build or publish step failing to restore packages?
 
-Most `dotnet` commands, including `build` and `publish`, include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used. 
+Most `dotnet` commands, including `build` and `publish`, include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used.
 
 To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 

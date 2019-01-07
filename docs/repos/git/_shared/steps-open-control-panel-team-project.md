@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-0. Open a project (on-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_project}``` or VSTS ```https://{your_account}.visualstudio.com/DefaultCollection/{your_project}```) in your web browser.
+0. Open a project (on-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_project}``` or Azure DevOps Services ```https://dev.azure.com/{your_account}/{your_project}```) in your web browser.
 
 0. Go to the control panel.
 

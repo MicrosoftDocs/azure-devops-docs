@@ -1,6 +1,6 @@
 ---
-title: Create an Active bugs Power BI report with a custom Analytics view
-titleSuffix: VSTS
+title: Create an Active bugs Power BI report 
+titleSuffix: Azure DevOps Services
 description: Sample report that shows how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI
 ms.prod: devops
 ms.technology: devops-analytics
@@ -14,7 +14,7 @@ ms.date: 04/04/2018
 
 # Create an active bugs report in Power BI based on a custom Analytics view
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 In this article, we'll show you how to create a custom Analytics view for active bugs and then generate a Power BI report based on that view. You'll learn how to filter the Analytics view, create a trend chart, as well as a card showing the current count of active bugs. 
 
@@ -23,27 +23,25 @@ In this article, we'll show you how to create a custom Analytics view for active
 Follow these steps to create a report in Power BI desktop that shows a **daily active trend of  bugs** based on a custom **Analytics view**:
 
 
-1. From the web portal for VSTS   
-	a. Open Analytics hub  
-	b. Create a custom Analytics view for your data   
-2. From the Power BI Desktop  
+1. From the web portal for Azure DevOps:   
+	a. Open **Analytics views**  
+	b. Create a custom Analytics view for your data.   
+2. From the Power BI Desktop:  
 	a. Get the dataset defined by the Analytics view   
 	b. Create a trend report  
 	c. Apply filters to your trend report  
-	d. Create a card and apply the Is Current=True filter to show current count  
+	d. Create a card and apply the Is Current=True filter to show current count.  
 
-
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]  
 
 <a id="prerequisites">  </a>
 ## Prerequisites  
 
 In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
-* You must be a member of a team project. If you don't have a team project yet, create one. See [Sign up for a free VSTS account](/vsts/user-guide/sign-up-invite-teammates). 
-* If you haven't been added as a team member, [get added now](/vsts/organizations/accounts/add-account-users-assign-access-levels). Anyone with access to the team project, except stakeholders, can view Analytics views.
-* Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](/vsts/organizations/security/set-project-collection-level-permissions) to add extensions.
-* Have the **View Analytics** permission set to Allow. See [Grant permissions  to access the Analytics Service](/vsts/report/analytics/analytics-security).
+* You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
+* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+* Have installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time on which to generate a trend report. 
 
@@ -52,7 +50,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 ## Create a view to only include Active bugs
 
-From the **Analytics** hub, choose ![plus icon](../_img/icons/blue-plus.png) **New View** to create a custom view. Fill out the forms provided in each tab as shown in the steps below. 
+From the web portal, **Analytics view**, choose ![plus icon](../_img/icons/blue-plus.png) **New View** to create a custom view. Fill out the forms provided in each tab as shown in the steps below. 
 
 Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, simply click the tab title. 
 
@@ -67,12 +65,12 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 0. From the **Work items** tab, select the Project and Team that contain the data you want to report on.  
  
-	Here we choose the FabrikamFiber team project and the Fiber Suite App team.
+	Here we choose the FabrikamFiber project and the Fiber Suite App team.
     
     > [!div class="mx-imgBorder"]
     > ![Filter by team](_img/active-bugs-report/active-bugs-team.png)
 
-	To add additional projects or teams, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row and then select the team project and team. 
+	To add additional projects or teams, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row and then select the project and team. 
 
 0. Under **Backlogs and work items**, click ![Add row icon](../_img/icons/add_row_icon.png) to add a new row, and then select **Bug** from the list of work items types.
 
@@ -86,7 +84,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 	Choose **Continue** to move to the next tab. 
 
-0. In the next tab, **Fields**, we'll keep the most common fields selection. This selection will also include any custom fields that have been added to your team project.  
+0. In the next tab, **Fields**, we'll keep the most common fields selection. This selection will also include any custom fields that have been added to your project.  
     
     > [!div class="mx-imgBorder"]
     > ![Fields](_img/active-bugs-report/fields-common.png)
@@ -121,21 +119,21 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 0. Open Power BI Desktop.  
  
-0. Choose (1) **Get Data**, choose (2) **Online Services**, then (3) **Visual Studio Team Services (Beta)**, and then click (4) **Connect**. 
+0. Choose (1) **Get Data**, choose (2) **Online Services**, then (3) **Azure DevOps (Beta)**, and then click (4) **Connect**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Connect to VSTS data](_img/create-report/get-data-2.png)
+    > ![Connect to work tracking data](_img/create-report/get-data-2.png)
 
-0. Enter your account name, the same VSTS account you used to create the Active Bugs view,  and the same team project for which you defined the Active Bugs view. 
+0. Enter your organization name, the same Azure DevOps name you used to create the Active Bugs view, and the same project for which you defined the Active Bugs view. 
 
-	![VSTS account and project name](_img/create-report/specify-account.png) 
+	![Organization and project name](_img/create-report/specify-account.png) 
 
 0. Expand the **Private Views** folder, choose the **Active Bugs** view you saved in the previous section, and then click **Load**. 
 
     > [!div class="mx-imgBorder"]
     > ![Active bugs load in Power BI ](_img/active-bugs-report/choose-view.png)
 
-	Need help connecting? See [Connect to VSTS with Power BI Data Connector](data-connector-connect.md).
+	Need help connecting? See [Connect with Power BI Data Connector](data-connector-connect.md).
 
 ## Create a daily bug trend report 
 
@@ -209,7 +207,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 0. Choose **File > Save As** to save your report to your local workspace. 
 
-0. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
+0. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
 
     > [!div class="mx-imgBorder"]
     > ![Latest active bug count](_img/active-bugs-report/publish-powerbi.png)
@@ -227,9 +225,9 @@ Analytics views provide you with a great deal of power and flexibility to filter
 
 ## Related articles 
 
-- [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
-- [Connect to VSTS with Power BI Data Connector](./data-connector-connect.md)
+- [Connect with Power BI Data Connector](./data-connector-connect.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
 - [Functions available in Power BI Data Connector](data-connector-functions.md)

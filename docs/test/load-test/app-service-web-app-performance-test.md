@@ -1,5 +1,5 @@
 ---
-title: Test your Azure web app performance under load from the Azure portal
+title: Test performance from the Azure portal
 description: Run Azure web app performance tests to check how your app handles user load. Measure response time and find failures that might indicate problems.
 ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.prod: devops
@@ -8,13 +8,13 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Load test with the Azure portal
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)] 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 Check your web app's performance before you launch it or deploy updates to production by running load tests. 
 That way, you can better assess whether your app is ready for release. Feel more
@@ -25,7 +25,7 @@ confident that your app can handle the traffic during peak use or at your next m
 
 * You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* You'll need a VSTS subscription to keep your performance test history. A suitable subscription will be created 
+* You'll need an Azure DevOps subscription to keep your performance test history. A suitable subscription will be created 
   automatically when you set up your performance test. Or you can create a new subscription 
   or use an existing subscription if you're the owner. 
 
@@ -37,7 +37,7 @@ confident that your app can handle the traffic during peak use or at your next m
 ## Set up and run your performance test
 
 1. Sign in to the [Azure Portal](https://portal.azure.com). 
-   To use a VSTS subscription that you own, 
+   To use an Azure DevOps subscription that you own, 
    sign in as the owner.
 
 1. Go to your web app.
@@ -48,13 +48,13 @@ confident that your app can handle the traffic during peak use or at your next m
 
    ![Go to Development Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
-1. Now you'll link a VSTS subscription to keep your performance test history. Choose **Set Account**.
+1. Now you'll link an Azure DevOps subscription to keep your performance test history. Choose **Set Account**.
 
-   ![Select existing VSTS subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
+   ![Select existing Azure DevOps subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
 
-1. If you have a VSTS subscription to use, select that. If you don't, create a new one.
+1. If you have an Azure DevOps subscription to use, select that. If you don't, create a new one.
 
-   ![Select existing VSTS subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-select-vso-account.png)
+   ![Select existing Azure DevOps subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-select-vso-account.png)
 
 1. Choose **+ New** to create a new performance test.
 
@@ -102,7 +102,7 @@ Visual Studio Web Test file are:
 To upload and run a Visual Studio Web Test file:
  
 1. Follow the [steps above](#singletest) to open the **New performance test** blade.
-   In this blade, choose the CONFIGFURE TEST USING option to open the 
+   In this blade, choose the CONFIGURE TEST USING option to open the 
    **Configure test using** blade.  
 
    ![Opening the Configure load testing blade](_img/app-service-web-app-performance-test/multiple-01-authoring-blade.png)

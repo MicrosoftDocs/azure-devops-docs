@@ -1,7 +1,7 @@
 ---
 title: Agile process template artifacts
-titleSuffix: VSTS & TFS  
-description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards  
+description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
@@ -10,13 +10,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 12/20/2018
 ---
 
 
 # Agile process 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a project using the Agile  process. They are based on Agile principles and values.  
  
@@ -29,7 +29,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 > You can customize the work tracking system for your project based on the Agile process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 > [!NOTE]  
 > The latest version of the Agile process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../../reference/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
@@ -40,11 +40,15 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 >Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a project from an on-premises TFS. Other resource requirements apply. 
 ::: moniker-end
 
-## Plan and track work
+
+<a id="start-using" />
+## Plan and track work with Agile
  
 You build your project plan by creating a backlog of user stories that represent the work you want to develop and ship. You track bugs, tasks, and blocking issues using the bug, task, and issue WITs. To support portfolio management, teams create features and epics to view a roll up of user stories within or across teams. For details about using Agile WITs, see [Agile process work item types and workflow](agile-process-workflow.md).  
 
-The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../backlogs/overview.md).  
+The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
+
+*Click on one of the following images to go to the linked article.*
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
@@ -78,11 +82,11 @@ To get started, you can open a shared query and create a chart based on your tra
 
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
-::: moniker range="vsts"
+::: moniker range=">= azdevserver-2019"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 <a id="reports"></a>
 ## SQL Server reports
 
@@ -109,7 +113,7 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 ### Agile process versions  
 
-As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
+As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | Agile process name | Major version |

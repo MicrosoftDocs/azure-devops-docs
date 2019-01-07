@@ -20,7 +20,7 @@ ms.date: 02/26/2018
 Global lists are pick lists that you can include in one or more fields and types of work items. Use them to minimize the work that is required to update a list that is shared by multiple types of work items. Because global lists are defined for a project collection, they can be included in work item types for all projects within the collection.  
   
 > [!NOTE]    
->**Feature availability:**&#160;Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../../organizations/settings/work/import-process/differences.md).   
+>**Feature availability:**&#160;Hosted XML customization supports adding and updating global lists. To learn more, see [Process template customizations differences](../../organizations/settings/work/import-process/differences.md).   
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:    
 -   **destroygloballist**:  Destroys a global list.    
@@ -72,16 +72,7 @@ To create a new global list, start with the following code and modify it as need
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
-<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
-  <GLOBALLIST name="Disciplines">
-    <LISTITEM value="Architecture" />
-    <LISTITEM value="Requirements" />
-    <LISTITEM value="Development" />
-    <LISTITEM value="Release Management" />
-    <LISTITEM value="Project Management" />
-    <LISTITEM value="Test" />
-  </GLOBALLIST>
-</gl:GLOBALLISTS>  
+<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists"> <GLOBALLIST name="Disciplines"> <LISTITEM value="Architecture" /> <LISTITEM value="Requirements" /> <LISTITEM value="Development" /> <LISTITEM value="Release Management" /> <LISTITEM value="Project Management" /> <LISTITEM value="Test" /> </GLOBALLIST></gl:GLOBALLISTS>  
 ```  
   
  Don't include project-scoped security groups within a global list, because global lists are scoped to a collection and not a project.  

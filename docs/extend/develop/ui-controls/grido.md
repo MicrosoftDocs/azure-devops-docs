@@ -1,6 +1,6 @@
 ---
-title: Use the Grid Control | Extensions for VSTS
-description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for VSTS.
+title: Use the Grid Control | Extensions for Azure DevOps Services
+description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for Azure DevOps Services.
 ms.assetid: 9933E798-3D75-A5FD-919E-F38EA313872B
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -469,7 +469,7 @@ This sample shows dragging grid rows and dropping them to the same grid which ba
           left: offset.left - dragStartInfo.left + canvasScrollLeft + this._cursorOffset.left
         };
     
-      // The the left or right of the canvas, invalid drop
+      // The left or right of the canvas, invalid drop
       if (offset.left <= 0 || offset.left > dragStartInfo.canvasWidth) {
         return null;
       }

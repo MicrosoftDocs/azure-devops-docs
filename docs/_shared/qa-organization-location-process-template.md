@@ -1,28 +1,19 @@
+#### Q: How do I find the region where my organization is located? 
 
-#### Q: How do I find the region where my VSTS organization is located? 
+A: [Find your organization's region](/azure/devops/organizations/accounts/change-organization-location).
 
-A: [Find your organization's region](../organizations/accounts/change-organization-location.md)
+#### Q: How do I change my project name, organization location, or process? 
 
-
-#### Q: How do I change my team project name, organization location, or process? 
-
-A:	Change these when you sign up for your VSTS organization. 
+A:	Change these when you sign up for your organization. 
 
 <img alt="Change organization details" src="../_shared/_img/change-details-standard1.png" style="border: 1px solid #CCCCCC">
 
-VSTS uses Agile as the default 
-[process](/vsts/boards/work-items/guidance/choose-process) 
-to organize your work. And your organization's default location is based on the closest 
-[Microsoft Azure region](https://azure.microsoft.com/regions) 
-where VSTS is available. For a better experience, 
-select a location that's closest to most users in your organization. If a new VSTS region or location opens later, you can 
-[change your organization location or region](/vsts/organizations/accounts/change-organization-location).
-You can select another process, like Scrum, if that works best for you.
+Azure DevOps uses Agile as the default [process](/azure/devops/boards/work-items/guidance/choose-process) to organize your work. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available. For a better experience, select a location that's closest to most users in your organization. 
 
-<img alt="Rename team project, change organization location, or select another process" src="../_shared/_img/change-details-standard2.png" style="border: 1px solid #CCCCCC">
+If a new region or location opens later, you can [change your organization location or region](/azure/devops/organizations/accounts/change-organization-location). You can also select another process, like Scrum, if that works best for you.
 
-If you connected your VSTS organization to an Azure Active Directory, 
-but you belong to multiple directories and want to select a different directory, 
-change your directory here:
+<img alt="Rename project, change organization location, or select another process" src="../_shared/_img/change-details-standard2.png" style="border: 1px solid #CCCCCC">
+
+If you connected your organization to Azure Active Directory but you belong to multiple directories and want to select a different directory, change your directory here:
 
 <img alt="Change your directory" src="../_shared/_img/change-details-standard2-with-directory.png" style="border: 1px solid #CCCCCC">

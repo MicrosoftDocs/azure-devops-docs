@@ -1,7 +1,8 @@
 ---
 title: Web portal& Team Explorer keyboard shortcuts 
-titleSuffix: VSTS & TFS   
-description: Keyboard shortcuts for the VSTS and TFS web portal, and Team Explorer  
+titleSuffix: Azure DevOps Services & TFS   
+description: Keyboard shortcuts for the web portal for Azure DevOps Services, TFS, and Team Explorer
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: reference
@@ -14,17 +15,17 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Keyboard shortcuts for VSTS, TFS, and Team Explorer
+# Keyboard shortcuts for Azure DevOps Services, TFS, and Team Explorer
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
 
-You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services (VSTS), the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
+You can use the keyboard shortcuts listed in this topic when you work within Azure DevOps Services, the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
-For specific guidance on navigating within the web portal, see [Navigation basics](index.md).
+For specific guidance on navigating within the web portal, see [Web portal navigation](index.md).
 
 ## Web portal
 
-You can use these keyboard shortcuts when working in the web portal for VSTS or TFS.  
+You can use these keyboard shortcuts when working in the web portal for Azure DevOps or TFS.  
 
 <table width="70%">
 <tbody valign="top">
@@ -35,16 +36,16 @@ You can use these keyboard shortcuts when working in the web portal for VSTS or 
 **Ctrl+Alt,a**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to ![admin link](../../boards/_img/icons/gear_icon.png) admin link  
 **Ctrl+Alt,h**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to ![help link](../../boards/_img/icons/help.png) help link  
 **Ctrl+Alt,s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><br/>
-**Ctrl+Alt,**![Down arrow](/vsts/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next section   
-**Ctrl+Alt,**![Up arrow](/vsts/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to previous section   
+**Ctrl+Alt,**![Down arrow](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next section   
+**Ctrl+Alt,**![Up arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to previous section   
 
 </td>
 <td width="50%">
 
 <p>**Navigate within lists**</p>
 **Tab**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus  
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](/vsts/boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
-![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png) ![ ](/vsts/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
+![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
+![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
 **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of list  
 **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to bottom of list<br/>
 **Ctrl+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;Move item up/down within list  
@@ -65,9 +66,15 @@ You can use these keyboard shortcuts when working in the web portal for VSTS or 
 ## Web portal, global shortcuts
 
 Type **?** to access the Global and page-specific shortcuts.   
+::: moniker-end
 
->[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
+::: moniker range="tfs-2015"
+> [!NOTE]  
+> The following shortcuts are available for TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/global-shortcuts.md)]
 
@@ -81,7 +88,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range="vsts"
 
-## Work>Work Items 
+## Work Items 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
@@ -91,17 +98,17 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker-end
 
-## Work>Backlogs 
+## Backlogs 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
 ::: moniker range=">= tfs-2015"
 
-## Work>Boards 
+## Boards 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-board-shortcuts.md)]
 
-## Work>Queries 
+## Queries 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-shortcuts.md)]
 
@@ -109,7 +116,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= tfs-2017"
 
-## Work>Plans
+## Plans
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
@@ -117,7 +124,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= tfs-2015"
 
-## Test>Test Plans, Parameters, and Runs  
+## Test Plans, Parameters, and Runs  
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/test-shortcuts.md)]
 
@@ -129,7 +136,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2). 
+> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
@@ -247,8 +254,8 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 - [Keyboard shortcuts for Microsoft Test Manager](https://msdn.microsoft.com/library/ff458183.aspx)  
 - [Customize Visual Studio keyboard shortcuts](https://msdn.microsoft.com/library/5zwses53.aspx)  
 - [Default keyboard shortcuts for Visual Studio](https://msdn.microsoft.com/library/da5kh0wa.aspx)  
-- [Accessibility Features of Visual Studio](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Navigation basics](..//navigation/index.md) 
+- [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
+- [Web portal navigation](..//navigation/index.md) 
 
 ###Install Team Explorer  
 

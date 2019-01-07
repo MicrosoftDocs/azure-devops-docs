@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Tutorials catalog for developing extensions in VSTS
-description: Follow tutorials to create an extension in VSTS
+title: Tutorials catalog for developing extensions in Azure DevOps Services
+description: Follow tutorials to create an extension in Azure DevOps Services
 ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd
 ms.topic: conceptual
 ms.manager: douge
@@ -12,7 +12,7 @@ author: elbatk
 ms.date: 08/19/2016
 ---
 
-# Tutorials for developing VSTS extensions
+# Tutorials for developing Azure DevOps Services extensions
 
 Because of the diverse nature of extensions, we wanted to provide the right tutorial for you. 
 
@@ -21,7 +21,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../get-started/node.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-    <img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+    <img alt="Visual Studio Code icon" src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -33,7 +33,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    This tutorial walks you through the entire extension creation process while you create a hub within VSTS. 
+    This tutorial walks you through the entire extension creation process while you create a hub within Azure DevOps Services. 
     From start to finish, you'll learn everything that you need to know about writing an extension and publishing it 
     to the Marketplace.
     </div>
@@ -60,7 +60,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    Learn the basics of how to create a hub that can host a web page within a hub group within VSTS. 
+    Learn the basics of how to create a hub that can host a web page within a hub group within Azure DevOps Services. 
     </div>
 </div>
 </div>
@@ -182,15 +182,15 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center">
-    <b>Add a new Service Connection</b>
+    <b>Add a new Service Endpoint</b>
     </div>
 </div>
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    Service connections are a way for VSTS to connect to external systems or services. Extensions can acquire stored details from the service connection 
-    to perform operations on that service. This tutorial walks through creating a custom service connection with data sources, and a build task that calls it. 
+    Service endpoints are a way for Azure DevOps Services to connect to external systems or services. Extensions can acquire stored details from the service endpoint 
+    to perform operations on that service. This tutorial walks through creating a custom service endpoint with data sources, and a build task that calls it. 
     </div>
 </div>
 </div>
@@ -242,8 +242,8 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    Widgets can be implemented into your VSTS dashboard via contribution extensions. This tutorial is split into three parts: 
-    Creating a "Hello World" widget, Adding a call to a VSTS REST API, Adding configuration to your widget. 
+    Widgets can be implemented into your Azure DevOps Services dashboard via contribution extensions. This tutorial is split into three parts: 
+    Creating a "Hello World" widget, Adding a call to an Azure DevOps Services REST API, Adding configuration to your widget. 
     </div>
 </div>
 </div>

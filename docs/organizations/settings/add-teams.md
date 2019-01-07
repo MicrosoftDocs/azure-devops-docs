@@ -1,7 +1,7 @@
 ---
 title: Add a team, move from one team to several teams
-titleSuffix: VSTS & TFS 
-description: Add a team to scale your Agile tools in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps & TFS 
+description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 12/20/2018
 ---
 
 # Add a team, move from one default team to several teams
@@ -21,15 +21,15 @@ ms.date: 07/27/2018
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
 > [!NOTE]    
-> This article describes how to add a team or team members to a project defined in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
+> This article describes how to add a team or team members to a project defined in Azure DevOps Services or Team Foundation Server (TFS). To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
-> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/agile/scale-agile-large-teams) article.
+> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams) article.
 
 <!---
 In this topic you'll learn:  
 
 >[!div class="checklist"]    
-> * How to add a team, moving from one team to two teams   
+> * How to add a team, move from one team to two teams   
 > * How to add team members  
 > * How to move work items assigned to one team to another team  
 > * How to delete a team      
@@ -66,7 +66,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> [!div class="mx-imgBorder"]
 	> ![Create a sub-team with its own area path](_img/add-team/create-new-team-new-nav.png)
 
-0. Select the team to configure it. To select the set of sprints and area paths the team will use, choose **Iterations and areas** See [Set team defaults](set-team-defaults.md).
+0. Select the team to configure it. To select the set of sprints and area paths the team will use, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team profile, choose Iterations and areas link](_img/add-team/team-profile-choose-iterations-and-areas.png)
@@ -77,10 +77,10 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	From the team profile, you can perform these additional tasks:  
 	- [Add team administrators](add-team-administrator.md)  
 	- [Add team members](#add-team-members)  
-	- [Navigate to team notifications](../../notifications/manage-team-notifications.md)
+	- [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
 	- [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)  
 
-	To configure other team features, see [Configure team settings](configure-team-settings.md).
+	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 ::: moniker-end
 
@@ -94,7 +94,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 <a id="add-team-team-services" /> 
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
 
 	![Open project admin page](_img/add-team/open-admin-context-tfs-2017.png) 
 
@@ -110,12 +110,12 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Team profile, choose Iterations and areas link](_img/add-team/team-profile-tfs.png)  
 
-0. To select the set of sprints and area paths the team will use, see [Set team defaults](set-team-defaults.md).
+0. To select the set of sprints and area paths the team will use, see [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md).
 
 	> [!IMPORTANT]  
 	> Team tools aren't available until the team's default area path is set. 
 
-	To configure other team features, see [Configure team settings](configure-team-settings.md).
+	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 
 ::: moniker-end  
@@ -123,7 +123,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 ::: moniker range=">= tfs-2013  <= tfs-2015"
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
 
 	<img src="../../_shared/_img/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -137,9 +137,9 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Web portal, admin context, project, Overview page, Select a sub-team to configure it](_img/add-team/scale-agile-select-team-to-configure-it-co.png)
 
-4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](set-team-defaults.md#activate).  
+4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md#activate).  
 
-5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-team-defaults.md#team-area-paths).  
+5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-area-paths.md#team-area-paths).  
  
 ::: moniker-end   
 
@@ -154,7 +154,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 ::: moniker range="vsts"  
 > [!NOTE]   
-> You must first [add user to a project or to your organization](../accounts/add-organization-users-from-user-hub.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
+> You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
 ::: moniker-end 
 
 
@@ -318,7 +318,7 @@ Once you've created a team, you'll want to configure your Agile tools to support
 > [!div class="nextstepaction"]
 > [Add team administrator](add-team-administrator.md)
 > or
-> [Configure team settings](configure-team-settings.md)
+> [Manage teams and configure team tools](manage-teams.md)
 
 
 

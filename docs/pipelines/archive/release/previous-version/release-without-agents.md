@@ -1,5 +1,6 @@
 ---
 title: Release without deployment agents in Release Management
+ms.custom: seodec18
 description: Release your app to Microsoft Azure or on-premises without using deployment agents
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
 ms.prod: devops
@@ -34,16 +35,16 @@ for instructions.
 * Create complex scripts to deploy using all the features of 
   PowerShell or DSC.
 * If you want to deploy your app to a server machine that is 
-  not running a Windows operating system, you can use Chef to do that. 
+  not running a Windows operating system, you can use Chef to do that.
   (In this version, Chef is supported if you manage your release with 
   an on-premises Release Management server, 
   but it is not supported if you manage your release with Visual 
-  Studio VSTS.)
+  Studio Azure Pipelines.)
 
 <a name="SetupEnv"></a>
 ## Set up your environment
 
-Environments without deployment agents are called **vNext environments**. 
+Environments without deployment agents are called **vNext environments**.
 You can only use these vNext environments with vNext Components, 
 vNext Release Templates and vNext Release Paths to deploy without 
 deployment agents.
@@ -90,7 +91,7 @@ for any computer you plan on using in your environment.
 * Add an attribute to the cookbook that maps to build drop location.
 * Upload cookbooks to the Chef server.
 * Assign recipes to the target node.
-* Set up your Release Management Server as a Chef Workstation. 
+* Set up your Release Management Server as a Chef Workstation.
   Instructions are **[here](http://learn.chef.io/)**.
 * Release Management uses Knife to communicate with Chef. Run 
   the following commands to install the Windows plugin for Knife:
@@ -102,33 +103,33 @@ for any computer you plan on using in your environment.
 
 Microsoft Azure makes it easy to set up VMs to use as servers 
 in your environment. Azure adds your VMs to
-**[cloud services](http://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**. 
-You'll need a Microsoft Azure account to create your VMs. 
+**[cloud services](http://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**.
+You'll need a Microsoft Azure account to create your VMs.
 If you don't have one yet, sign up for free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 In Release Management, you'll create an Azure environment 
-for each release stage. 
+for each release stage.
 You then link your environment to a cloud service 
-associated with your Azure subscription. 
+associated with your Azure subscription.
 Release Management can then access any of the VMs in this 
-cloud service to use in the environment. 
+cloud service to use in the environment.
 If you have multiple VMs associated with a cloud service, 
 you can add any of these VMs as servers to your Azure 
 environment in Release Management.  
 
 1. In the Azure portal, create the VMs that you want to use in your 
    release environment. By default, each VM you create is added to its 
-   own cloud service. 
+   own cloud service.
    If you want to use multiple VMs in an environment, they must all 
-   be in the same cloud service. 
-   To add a VM to a specific cloud service, choose **From Gallery** when you create the VM. 
+   be in the same cloud service.
+   To add a VM to a specific cloud service, choose **From Gallery** when you create the VM.
 
    ![Windows Azure portal, Virtual Machines tab](_img/release-without-agents-01.png) 
 
 1. For each Azure VM that runs Windows, if the prerequisites 
    listed above for PowerShell and DSC are not yet met, 
    add the Visual Studio Release Management extension to meet 
-   the prerequisites. 
+   the prerequisites.
    **[Learn how](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/10/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management.aspx)**.
 
 1. Add the details for your Azure subscription to Release Management.
@@ -137,7 +138,7 @@ environment in Release Management.
 
    **[Download the settings file](https://manage.windowsazure.com/publishsettings)** 
    from the Azure portal and open it with a text editor, 
-   such as Notepad, to get your subscription ID and Management Certificate key. 
+   such as Notepad, to get your subscription ID and Management Certificate key.
    (After using the settings file, consider deleting or 
    securing it as it contains information that can be used by others to access your 
    Azure account.) Go 
@@ -156,16 +157,16 @@ environment in Release Management.
 
    ![Configure Paths tab; Environments tab; click Link Azure Environment](_img/release-without-agents-05.png)
 
-   Select the Azure subscription that you want to use with this environment. 
+   Select the Azure subscription that you want to use with this environment.
    (Sometimes it takes a few minutes to load your subscription.) The Azure 
-   cloud services for this subscription are displayed. 
+   cloud services for this subscription are displayed.
    Select a cloud service to link the subscription to the environment.
 
    ![Select subscription from dropdown list; choose the VM; click Link](_img/release-without-agents-06.png)
 
    If there are no cloud services for your Azure subscription, you cannot link 
-   it to the environment. Go to the Azure portal and create a VM for this subscription. 
-   When you create a VM, a cloud service with the same name is created by default. 
+   it to the environment. Go to the Azure portal and create a VM for this subscription.
+   When you create a VM, a cloud service with the same name is created by default.
    Refresh to select this cloud service.
 
 1. Link your Azure VMs in the cloud service as servers for the environment.
@@ -177,7 +178,7 @@ environment in Release Management.
    ![Select the server to use and click Link](_img/release-without-agents-08.png)
 
 1. For each server, you can add configuration variables that can be used by 
-   your deployment actions. 
+   your deployment actions.
    For example, you can add username and password here.
 
    ![Configure Paths tab; Servers tab; Configuration Variables tab; click Add and add details for variable](_img/release-without-agents-09.png)
@@ -190,13 +191,13 @@ environment in Release Management.
 <a name="SetupOnPrem"></a>
 ### Set up on-premises (standard) environments
 
-Servers in your on-premises environment must have a fully qualified domain name. 
-They can be virtual or physical machines. 
-All these machines must be in the same domain, or in two-way trusted domains. 
+Servers in your on-premises environment must have a fully qualified domain name.
+They can be virtual or physical machines.
+All these machines must be in the same domain, or in two-way trusted domains.
 Use on-premises environments if you want to deploy using Chef.
 
 1. For PowerShell or DSC deployment, enable PowerShell remoting and set up the 
-   WinRM port for HTTP communication. 
+   WinRM port for HTTP communication.
    Run these commands from a PowerShell session with administrator privileges on 
    all the server machines in your environment:
    - `Enable-PSRemoting -Force`  
@@ -212,21 +213,21 @@ Use on-premises environments if you want to deploy using Chef.
 
    ![Configure Paths tab; Environments tab; click New and select New vNext: Standard](_img/release-without-agents-10.png)
 
-1. Open an on-premises environment to add your servers for the environment. 
-   You need to supply the DNS name and the WinRM port number. 
+1. Open an on-premises environment to add your servers for the environment.
+   You need to supply the DNS name and the WinRM port number.
    If you don't know the port number, run this command:
    
    `winrm e winrm/config/listener`
 
    To deploy with Chef, add your Chef node as a server. This machine can run 
-   any OS supported by Chef and can be a virtual or physical machine. 
+   any OS supported by Chef and can be a virtual or physical machine.
    The server name and port must match the node name and port that's registered 
    with the Chef server. For Unix-based machines, use `ssh port` to find the port.
    
    ![Configure Paths tab; Environments tab; from the Servers section, click Add](_img/release-without-agents-11.png)
 
 1. For each server, you can add configuration variables that can be used by your 
-   deployment actions. For example, you can add username and password here. 
+   deployment actions. For example, you can add username and password here.
    If you add configuration variables with the same name for actions in your 
    release template, the values in any actions will override the values that you set here.
 
@@ -238,14 +239,14 @@ Use on-premises environments if you want to deploy using Chef.
 <a name="CreateReleaseTemplate"></a>
 ## Create a release template
 
-Check that the code for your app has been added to version control. 
+Check that the code for your app has been added to version control.
 You also need a build definition that builds your app.
 
 1. Create a vNext release path to represent the stages that your release must go through.
 
    ![Configure Paths tab; vNext Release Paths tab; click New](_img/release-without-agents-13.png)
 
-   Choose the environment and approvers to use for each stage of your release. 
+   Choose the environment and approvers to use for each stage of your release.
    You can add multiple final approvers for each stage if you want to.
 
    ![vNext Release Paths tab; click Add in Stages section](_img/release-without-agents-14.png)
@@ -253,14 +254,14 @@ You also need a build definition that builds your app.
 1. Create a vNext component for each component of your app that you need to 
    deploy separately. For example, 
    you might have a component to deploy your web server and another component 
-   to deploy your database. 
+   to deploy your database.
    Choose the location of the build package for each component to use when 
    your app is deployed.
 
    ![Configure Apps tab; Components tab; click New to add a component](_img/release-without-agents-15.png)
 
    For Chef deployments, use the **Build externally** option and supply the 
-   path to the package. This can be a URL or an FTP path. 
+   path to the package. This can be a URL or an FTP path.
    This path will be used as the node's attribute value by the cookbooks 
    to access the package for your app.
 
@@ -268,7 +269,7 @@ You also need a build definition that builds your app.
 
    ![Configure Apps tab; vNext Release Templates tab; click New](_img/release-without-agents-16.png)
 
-   Add all the vNext components that you created to this vNext release template. 
+   Add all the vNext components that you created to this vNext release template.
    (Right-click **Components** in the toolbox to show the context menu.)
 
    ![Configure Apps tab; vNext Release Templates tab; right-click Components in the Toolbox and click Add in the context menu](_img/release-without-agents-17.png)
@@ -281,7 +282,7 @@ You also need a build definition that builds your app.
    parameters for your deployment actions.
 
 1. Add the deployment actions from the toolbox based on your environment type 
-   and how you want to deploy your app. 
+   and how you want to deploy your app.
    You need to do this for each stage in this vNext release path.
 
    ![Drag the deployment action from the toolbox to the deployment sequence](_img/release-without-agents-19.png)
@@ -289,23 +290,23 @@ You also need a build definition that builds your app.
    **For on-premises environments:** Open the **Standard** section in the toolbox.
 
    * To deploy with Powershell or DSC, drag the **Deploy to Standard Environment** 
-     action into the deployment sequence. 
+     action into the deployment sequence.
      Parameter details for this action are 
      **[here](#StandardActions)**.
    * To deploy with Chef, drag the **Deploy Using 
-     Chef** action into the deployment sequence. 
+     Chef** action into the deployment sequence.
      Parameter details for this action are 
      **[here](#ChefActions)**.
 
-   **For Windows Azure environments:** Open the **Azure** section in the toolbox. 
+   **For Windows Azure environments:** Open the **Azure** section in the toolbox.
    Drag the **Deploy to Azure Environment**, the **Start Environment**, or 
-   the **Stop Environment** actions into the deployment sequence. 
+   the **Stop Environment** actions into the deployment sequence.
    Parameter details for the **Deploy to Azure Environment** action are 
    **[here](#AzureActions)**.
 
-   Add your PowerShell or DSC script name and relative path to the action. 
+   Add your PowerShell or DSC script name and relative path to the action.
    A DSC script must contain a DSC configuration and a command to 
-   create a .mof file for that DSC configuration. 
+   create a .mof file for that DSC configuration.
    You should not call `Start -DscConfiguration` here. Release 
    Management will do this for you.
    You can use `$applicationPath` in your script - this is the 
@@ -334,9 +335,9 @@ You also need a build definition that builds your app.
    ```
    
    The parameter values `$AllNodes` and `$Node` in this example are from 
-   an optional configuration file - not to be confused with the DSC configuration. 
+   an optional configuration file - not to be confused with the DSC configuration.
    Use configuration files if you want to use the same script but parameterize 
-   the values when you deploy to a different stage. 
+   the values when you deploy to a different stage.
    Here's what this configuration file looks like.
 
    ```Configuration
@@ -364,11 +365,11 @@ You also need a build definition that builds your app.
 
 **A**: Apart from not needing deployment agents, these are the other differences:
 
-* You cannot drag components and servers into the deployment sequence editor. 
+* You cannot drag components and servers into the deployment sequence editor.
   These are parameters to deployment actions only.
 * The vNext components are not associated with tools.
 * You cannot use custom tools, or custom actions for your deployment.
-* Flow control is not supported, so if an action fails all previous actions will be rolled back. 
+* Flow control is not supported, so if an action fails all previous actions will be rolled back.
   It is recommended to handle this in your scripts.
 
 <a name="StandardActions"></a>
@@ -383,16 +384,16 @@ You also need a build definition that builds your app.
 
 * **Password:** Password for the user account.
 
-* **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component. 
+* **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component.
   This path is relative to the package path for the component.
 
 * **PSConfigurationPath:** Path and filename of PowerShell or DSC script to configure the 
   server before deployment of this component. This script is optional. It will be run before 
-  the script in the PSScriptPath parameter. 
+  the script in the PSScriptPath parameter.
   This path is relative to the package path for the component.
 
 * **UseCredSSP:** If set to true, the scripts use the same PowerShell session as Release 
-  Management when it connects remotely to the server. 
+  Management when it connects remotely to the server.
   You must manually enable CredSSP. Run the following PowerShell command on the server with 
   administrator privileges.
 
@@ -404,9 +405,9 @@ You also need a build definition that builds your app.
   enabled for HTTPS on the target server. The default value is false.
 
 * **SkipCACheck:** The Release Management Server and the deployment machine use an SSL 
-  connection to communicate if UseHTTPS is set to true. 
-  This parameter determines if certificate verification is required to set up this connection. 
-  If it is true, the verification is skipped. 
+  connection to communicate if UseHTTPS is set to true.
+  This parameter determines if certificate verification is required to set up this connection.
+  If it is true, the verification is skipped.
   If it is set to false, a certificate for the deployment machine must be installed.
 
 <a name="AzureActions"></a>
@@ -421,12 +422,12 @@ You also need a build definition that builds your app.
 
 * **Password:** Password for the user account.
 
-* **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component. 
+* **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component.
   This path is relative to the package path for the component.
 
 * **PSConfigurationPath:** Path and filename of PowerShell or DSC script to configure the VM 
-  before deployment of this component. 
-  This script is optional. It will be run before the script in the PSScriptPath parameter. 
+  before deployment of this component.
+  This script is optional. It will be run before the script in the PSScriptPath parameter.
   This path is relative to the package path for the component.
 
 * **UseHTTPS:** This is always set to true for the connection to the Azure VM. A secure 
@@ -434,9 +435,9 @@ You also need a build definition that builds your app.
   enabled for HTTPS on the virtual machine.
 
 * **SkipCACheck:** The Release Management Server and the Azure VM use an SSL connection to 
-  communicate because UseHTTPS is always set to true. 
-  This parameter determines if certificate verification is required to set up this connection. 
-  If it is true, the verification is skipped. 
+  communicate because UseHTTPS is always set to true.
+  This parameter determines if certificate verification is required to set up this connection.
+  If it is true, the verification is skipped.
   If it is set to false, a certificate for the deployment machine must be installed.
 
 <a name="ChefActions"></a>
@@ -450,7 +451,7 @@ You also need a build definition that builds your app.
 * **IsUnixNode:** Set this parameter to true if it is a UNIX based machine.
 
 * **UserName:** Account name to connect to the node. For UNIX based systems this should be a 
-  user that has sudo privileges with ssh permissions. 
+  user that has sudo privileges with ssh permissions.
   For Windows based systems this should be a user with winRM permissions, or a local administrator.
 
 * **Password:** Password for the user account.
@@ -458,7 +459,7 @@ You also need a build definition that builds your app.
 * **ComponentName:** Name of the component to be deployed.
 
 * **AttributeName:** Name of the Chef node attribute which is used by the cookbooks to get the 
-  application package. Nested attributes are supported. 
+  application package. Nested attributes are supported.
   The format of this name is: &#91;'AttributeLevel1'&#93;&#91;'AttributeLevel2'&#93;&#91;...&#93;
 
 * **KnifeInstallationPath:** The absolute path to the knife.bat file on the Release Management Server.

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces WebPageDataProviderPageSource API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces WebPageDataProviderPageSource API | Extensions for Azure DevOps Services
 description: Contextual data for web-page-related data providers about the originating (host/source) page
 ms.assetid: 851f3787-a045-eca0-354f-5de943261595
 ms.prod: devops

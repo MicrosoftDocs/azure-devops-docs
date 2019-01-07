@@ -1,7 +1,7 @@
 ---
 title: Add a team administrator 
-titleSuffix: VSTS & TFS
-description: Add a user to the team administrator role in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure DevOps & TFS
+description: Add a user to the team administrator role in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -10,7 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 07/27/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Add a team administrator 
@@ -20,7 +21,7 @@ ms.date: 07/27/2018
 
 <a id="add-team-admin">  </a>  
 
-It's always a good idea to have more than one person with administration permissions for an area. You need to be a team administrator to [configure team settings](configure-team-settings.md). 
+It's always a good idea to have more than one person with administration permissions for an area. You need to be a team administrator to [Manage teams and configure team tools](manage-teams.md). 
 
 As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. 
 
@@ -32,7 +33,7 @@ As a team administrator, you can configure, customize, and manage all team-relat
 * You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). 
 * You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 * You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). * You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
 ::: moniker-end
 To get added as a team administrator, ask another team admin, the organization owner, or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
@@ -49,7 +50,7 @@ From the web portal, open the admin page for the team.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range=">= azdevserver-2019"
 
 0. Choose **Project Settings** and choose **Teams**. 
 
@@ -68,21 +69,21 @@ From the web portal, open the admin page for the team.
    
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 
-0. From the web portal and team context, choose the ![](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
+0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Team Settings](_img/add-team-admin/open-team-settings-horz.png)
 
-	If you choose the ![](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
+	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.  
 
@@ -95,15 +96,14 @@ From the web portal, open the admin page for the team.
    
 ::: moniker-end     
 
-
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-0. From the web portal and team context, choose the ![](../../_img/icons/gear_icon.png) gear icon to open the administration page.
+0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, TFS, Open Admin context, project level](../../_shared/_img/settings/open-admin-page-tfs2015.png)
 
-	If you choose the ![](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
+	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.    
   
@@ -115,12 +115,16 @@ From the web portal, open the admin page for the team.
 	
 ::: moniker-end  
 
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
+
 ---   
 
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Configure team settings](configure-team-settings.md) 
+> [Manage teams and configure team tools](manage-teams.md) 
 
 ## Related articles
 

@@ -1,5 +1,5 @@
 ---
-title: VSS/References/VSS.SDK.Interfaces IDefaultGetServiceContext API | Extensions for Visual Studio Team Services
+title: VSS/References/VSS.SDK.Interfaces IDefaultGetServiceContext API | Extensions for Azure DevOps Services
 description: Context passed to GetServiceInstance
 ms.assetid: 8b2653a7-2a13-4d86-9581-827e8d6df5af
 ms.prod: devops

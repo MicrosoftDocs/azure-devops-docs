@@ -1,22 +1,23 @@
 ---
-title: Shell Script | VSTS or Team Foundation Server
-description: Learn all about how you can execute a bash script when you are building your code in VSTS and Team Foundation Server (TFS)
+title: Shell Script task
+description: Execute a bash script when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Shell Script
+# Shell Script task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/shell-script.png) Run a shell script using bash
+Use this task in a build or release pipeline to run a shell script using bash.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -80,7 +81,9 @@ Select if you want this task to fail if any errors are written to the StandardEr
 
 ## Example
 
-Create ```test.sh``` at the root of your repo:
+Create ```test.sh``` at the root of your repo.
+We recommend creating this file from a Linux environment (such as a real Linux machine or Windows Subsystem for Linux) so that line endings are correct.
+Also, don't forget to `chmod +x test.sh` before you commit it.
 
 ```sh
 #!/bin/bash
@@ -91,9 +94,7 @@ ls -1 $AGENT_WORKFOLDER
 echo "AGENT_BUILDDIRECTORY is $AGENT_BUILDDIRECTORY"
 echo "AGENT_BUILDDIRECTORY contents:"
 ls -1 $AGENT_BUILDDIRECTORY
-echo "BUILD_SOURCESDIRECTORY is $BUILD_SOURCESDIRECTORY"
-echo "BUILD_SOURCESDIRECTORY contents:"
-ls -1 $BUILD_SOURCESDIRECTORY
+echo "SYSTEM_HOSTTYPE is $SYSTEM_HOSTTYPE"
 echo "Over and out."
 ```
 
@@ -111,10 +112,11 @@ On the [Build tab](../../index.md) of a build pipeline, add this task:
 </tr>
 </table>
 
+This example also works with release pipelines.
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

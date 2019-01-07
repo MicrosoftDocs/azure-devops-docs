@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts JWTAlgorithm API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts JWTAlgorithm API | Extensions for Azure DevOps Services
 ms.assetid: 7f6556c5-a72a-151b-aad7-6259225b5ce7
 ms.prod: devops
 ms.technology: devops-ecosystem

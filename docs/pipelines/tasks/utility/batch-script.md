@@ -1,22 +1,23 @@
 ---
-title: Batch script | VSTS or Team Foundation Server
-description: Learn all about how you can execute .bat or .cmd scripts when building your code in VSTS and Team Foundation Server (TFS).
+title: Batch Script task
+description: Execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Batch script
+# Batch Script task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the environment.
+Use this task in a build or release pipeline to run a Windows .bat or .cmd script and optionally allow it to change the stage.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -50,7 +51,7 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../bu
 <tr>
 <tr>
 <td>Modify environment</td>
-<td>Select this check box if you want environment variable modifications in the script to affect subsequent tasks.</td>
+<td>Select this check box if you want stage variable modifications in the script to affect subsequent tasks.</td>
 </tr>
 <th style="text-align: center" colspan="2">Advanced</th>
 </tr>
@@ -100,19 +101,15 @@ On the Build tab of a build pipeline, add this task:
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Where can I learn about batch files?
-
-[Using batch files](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/batch.mspx?mfr=true)
-
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD command line](http://ss64.com/nt/)
 
 [!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 

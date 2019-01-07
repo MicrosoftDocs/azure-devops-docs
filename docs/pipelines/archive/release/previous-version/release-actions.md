@@ -1,6 +1,7 @@
 ---
 title: Release actions to deploy an app with Release Management
-description: Learn about the release actions to define the deployment sequence for an app in VSTS and Team Foundation Server (TFS).
+ms.custom: seodec18
+description: Learn about the release actions to define the deployment sequence for an app in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: FE87197A-610D-4426-A812-2322EAA8700C
 ms.prod: devops
 ms.technology: devops-cicd
@@ -33,7 +34,7 @@ After adding a release action to the sequence, you can edit the
 configuration variables as necessary. For details about predefined 
 release actions and their configuration variables go 
 **[here](#actions_variables)**. Find out about the tools used by release 
-actions **[here](release-actions/release-action-tools.md)**. 
+actions **[here](release-actions/release-action-tools.md)**.
 
 <a name="custom"></a>
 ## Add a custom release action
@@ -42,7 +43,7 @@ Add a new release action and choose the tool that you want this action
 to use. Or, you can copy an existing action and use that as a basis to 
 create a custom release action. You can't edit an existing release action.
 
-1. From the Release Management client, open the **Inventory** page. 
+1. From the Release Management client, open the **Inventory** page.
    (If the page doesn't appear, then request the **Can Manage Inventory**
    permission.)
 
@@ -57,7 +58,7 @@ create a custom release action. You can't edit an existing release action.
 
 1. In the **Execution section**, enter any required arguments with 
    their tokens in the necessary format. You must add the prefix and 
-   suffix consisting of two underscores (**\_\_**) to each parameter. 
+   suffix consisting of two underscores (**\_\_**) to each parameter.
    Whenever you delete or add arguments with their tokens, they appear 
    in the **Parameters** list. For example, add the following arguments 
    with tokens:
@@ -203,7 +204,7 @@ as manage files, folders, environment variables, and Windows registry keys
 and values. The system executes these actions using several predefined 
 Release Management tools, including **Command Line Runner**, **Windows Process**, 
 and **XCOPY Deployer**. For details about these tools, go
-**[here](release-actions/release-action-tools.md)**. 
+**[here](release-actions/release-action-tools.md)**.
 
 | **Action** | **Usage and deployment failure conditions** |
 |------------|---------------------------------------------|

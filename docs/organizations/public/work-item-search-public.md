@@ -1,6 +1,6 @@
 ---
-title: Search for work items in a public project
-titleSuffix: VSTS Public Project
+title: Search for work items
+titleSuffix: Azure DevOps Services Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -25,11 +25,11 @@ With work item search, you can quickly find work items defined within a public p
 <a name="start-search"></a>
 ## Initiate a search 
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
 
 # [New navigation](#tab/new-nav)
 
-0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    
@@ -55,7 +55,7 @@ With work item search, you can quickly find work items defined within a public p
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the VSTS title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Work Item Search textbox in the title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon) to start your search. 
@@ -89,7 +89,7 @@ With work item search, you can quickly find work items defined within a public p
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/search-work-vert.png)    
+	> ![Search from the title bar](_img/search/search-work-vert.png)    
 
    The quick filters you can use are:
 
@@ -98,16 +98,16 @@ With work item search, you can quickly find work items defined within a public p
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
  
-1. Start typing the name of a field in your work items; for example, type `ta`.
+1. Start to enter the name of a field in your work items; for example, enter `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you enter](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)
 
-   The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
-   **tags:Critical** finds all work items tagged 'Critical'. 
+   The dropdown list shows work item field name suggestions
+   that match user input thereby helping the user to complete the search faster. For example, a search such as
+   **tags:Critical** finds all work items tagged 'Critical'.
 
 1. Add more filters to further narrow your search, and use Boolean operators
-   to combine terms if required. For example, 
+   to combine terms if required. For example,
    **a: Chris t: Bug s: Active** finds all active bugs assigned
    to a user named Chris.
 
@@ -121,7 +121,7 @@ With work item search, you can quickly find work items defined within a public p
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/work-item-search-filters.png)    
+	> ![Search from the title bar](_img/search/work-item-search-filters.png)    
 
    The quick filters you can use are:
 
@@ -130,12 +130,12 @@ With work item search, you can quickly find work items defined within a public p
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
  
-1. Start typing the name of a field in your work items; for example, type `ta`.
+1. Start to enter the name of a field in your work items; for example, enter `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you enter](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)
 
    The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
+   that match user input thereby helping the user to complete the search faster. For example, a search such as
    **tags:Critical** finds all work items tagged 'Critical'. 
 
 1. Add more filters to further narrow your search, and use Boolean operators

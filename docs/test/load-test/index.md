@@ -1,6 +1,6 @@
 ---
-title: Load Testing index and overview in VSTS and TFS
-description: Load Testing with Visual Studio and Visual Studio Team Services (VSTS)
+title: Load Testing index and overview
+description: Load Testing with Visual Studio and Azure DevOps
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
 ms.prod: devops
 ms.technology: devops-test
@@ -8,15 +8,15 @@ ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Load Testing
 
-**Visual Studio 2017 | Visual Studio 2015 | VSTS | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
-Load test your app with hundreds of thousands of users using Visual Studio Team Services (VSTS).
+Load test your app with hundreds of thousands of users using Azure DevOps Test Plans.
 
 ## 5-Minute Quickstarts
 
@@ -24,7 +24,7 @@ Load test from your preferred UI, and compare the results.
 
 | | |
 | --- | --- |
-| ![icon](_img/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](_img/vsts-icon.png)<br />[Load test with VSTS](get-started-simple-cloud-load-test.md) |
+| ![icon](_img/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](_img/vsts-icon.png)<br />[Load test with Azure DevOps](get-started-simple-cloud-load-test.md) |
 | ![icon](_img/azure-icon.png)<br />[Load test with Azure portal](app-service-web-app-performance-test.md) | ![icon](_img/reviewresults-icon.png)<br />[View and compare results](performance-reports.md) |
 | | |
 
@@ -53,7 +53,7 @@ Learn how to run performance and load tests against your app.
 
 ## Troubleshooting
 
-* [VSTS connectivity](reference-qa.md#qaconnectts)
+* [Azure DevOps connectivity](reference-qa.md#qaconnectts)
 * [Visual Studio connectivity](reference-qa.md#troubleshooting)
 
 ## Reference
@@ -62,11 +62,11 @@ Learn how to run performance and load tests against your app.
 
 ## Resources
 
-* [Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project)
-* [Edit load tests](https://docs.microsoft.com/visualstudio/test/edit-load-tests)
-* [Create custom code &amp; plug-ins](https://docs.microsoft.com/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
-* [Analyze load test results](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
-* [Web Performance Test API](https://docs.microsoft.com/visualstudio/test/how-to-use-the-web-performance-test-api)
+* [Load test with Visual Studio](/visualstudio/test/quickstart-create-a-load-test-project)
+* [Edit load tests](/visualstudio/test/edit-load-tests)
+* [Create custom code &amp; plug-ins](/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
+* [Analyze load test results](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Web Performance Test API](/visualstudio/test/how-to-use-the-web-performance-test-api)
 * [Manual and exploratory testing](../index.md)
 * [Continuous testing](../../pipelines/index.md)
-* [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)
+* [Unit testing](/visualstudio/test/developer-testing-scenarios)

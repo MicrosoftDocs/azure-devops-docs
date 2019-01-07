@@ -1,6 +1,6 @@
 ---
-title: Test different configurations when manual or exploratory testing
-description: Manual and exploratory testing - test different configurations with Team Services (VSTS) and Team Foundation Server (TFS)
+title: Test different configurations
+description: Manual and exploratory testing - test different configurations with Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.prod: devops
 ms.technology: devops-test
@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Test different configurations
- 
-[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+
+[!INCLUDE [version-header](_shared/version-header.md)] 
 
 Your users will probably install or run your app 
 on a wide variety of configurations, such as different 
 operating systems, web browsers, and other variations. 
 You will want to run at least some of your tests in 
-environments that have those different configurations. 
+stages that have those different configurations. 
 
 Use your test plan to decide which tests you want to run 
 on which configurations. You have to make sure that when 
-you run your tests that you have set up your environments 
+you run your tests that you have set up your stages 
 for the configurations that you need.
 
 You might draw up a schematic matrix of the combinations that you want to test:
@@ -38,7 +38,7 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-> **Note**: This feature is available only in VSTS.
+> **Note**: This feature is available only in Azure DevOps.
 In addition, Stakeholders and Basic users cannot create or manage configurations.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
@@ -54,7 +54,7 @@ might be "Windows 8 + 32-bit CPU" or "Windows 10 + 64-bit CPU."
 You must create the configuration variables first. Then combine 
 multiple variable values to create a configuration.
  
-1. Open the **Configurations** tab in the **Test** hub, choose 
+1. Open the **Configurations** page in [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose 
    the ![new](_img/plus-and-arrow-icon.png) icon, and select 
    **New configuration variable**.
 
@@ -93,7 +93,7 @@ You can assign configurations to a test plan, a test suite,
 or an individual test case. Configurations assigned to a test plan 
 or test suite apply to all tests or suites within it.
 
-1. To assign a configuration to a test plan, open the shortcut
+1. To assign a configuration to a test plan, in the **Test plans** page, open the shortcut
    menu for the plan and choose **Assign configuration to test plan**. 
 
    ![Assigning a configuration to a test plan](_img/testing-configurations/testing-configurations-03.png)
@@ -137,7 +137,7 @@ or test suite apply to all tests or suites within it.
 <a name="track-configs"></a>
 ## Track test results for each configuration
 
-1. Open the **Charts** tab for your test plan or test suite, choose 
+1. Open the **Charts** page for your test plan or test suite, choose 
    **New**, and select **New test result chart**.
  
    ![Creating a new test result chart](_img/testing-configurations/testing-configurations-09.png)

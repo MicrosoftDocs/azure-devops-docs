@@ -1,6 +1,8 @@
 ---
-title: Buy cloud-based load testing | VSTS
-description: Steps to purchase and enable cloud-based load testing in VSTS (Visual Studio Online, VSO, VSTS) via the Azure portal
+title: Buy cloud-based load testing - Azure DevOps
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18 Services
+description: Purchase and enable cloud-based load testing in Azure DevOps via the Azure portal.
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
@@ -8,69 +10,60 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/18/2018
+ms.date: 12/07/2018
 monikerRange: 'vsts'
 ---
 
+# Quickstart: Buy cloud-based load testing for Azure DevOps
 
-# Quickstart: Buy cloud-based load testing in VSTS
+## Azure DevOps
 
-**VSTS**
+In this quickstart, you learn how to enable paid load testing in Azure DevOps.
 
-In this quickstart, you'll learn how to enable paid load testing.
+Azure DevOps offers a cloud-based solution for [load testing your apps](../../test/load-test/index.md). You can create load tests by using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. Then you can run these tests in Azure DevOps.
 
-VSTS offers a cloud-based solution for [load testing your apps](../../test/load-test/index.md). You can create load tests using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. You can then run these tests in VSTS.
+Load tests are measured and billed in virtual user minutes (VUMs) as described in this Q&A: [What are VUMs? How many minutes will my load test use?](../../test/load-test/reference-qa.md#VUM)
 
-Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../../test/load-test/reference-qa.md#VUM).
-
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 <a name="buy-load-testing"></a>
 
 ## Prerequisites
 
-Your VSTS organization includes a **Free Tier** of 20,000 virtual user minutes per month for cloud-based load testing.
-If you need more than this amount, you must first do the following:
-
-1. [Set up billing for your VSTS organization](set-up-billing-for-your-organization-vs.md).
-2. [Enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com) for your VSTS organization.
-
-The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need the following:
-
-* [VSTS project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner)
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
-
-To make subsequent edits to paid quantities in your VSTS organization, you only need the owner or contributor role on your Azure subscription.
+[Set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
 ## Enable paid load testing
 
-**Azure portal**
+### Azure portal
 
 1. [Sign in to the Azure portal](https://portal.azure.com/).
 
-   >If you experience browser problems with Azure, make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+    > [!NOTE]
+    > If you experience browser problems with Azure, make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Select **All services**, choose **Team Services administration**, and select your VSTS organization.
+2. Select **All services**, choose **Azure DevOps organizations**, and select your organization.
 
-   ![Browse, VSTS organizations, select your organization](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Azure DevOps organizations, select your organization](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
-3. Select **Cloud-based load testing**, to the right of your screen.
+3. Select **Cloud-based load testing** on the right side of your screen.
 
-    ![Choose Settings, select cloud-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
+    ![Settings, select cloud-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
 
-4. Move the toggle to **PAID** to turn on paid load testing.
+4. Move the toggle key to **PAID** to turn on paid load testing.
 
-    If you want, set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** dropdown menu. When you're done, choose **Save**.
+    You can set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** drop-down menu. When you're done, choose **Save**.
 
-    ![Choose Paid, select an optional monthly limit, save changes](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
+    ![Choose PAID and select an optional monthly limit](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
+
+Cloud-based load testing is enabled for your organization.
 
 ## Billing and free monthly usage
 
-You're charged only for virtual user minutes of cloud-based load testing used above the Free Tier (20,000 virtual user minutes per month).
+You're charged for only the virtual user minutes of cloud-based load testing used above the free tier of 20,000 virtual user minutes per month.
 
-* The Free Tier resets on the 1st of the month.
+* The free tier resets on the first day of the month.
 
-* No additional virtual user minutes are included with Visual Studio subscriptions - the free amounts are per VSTS organization, not per user.
+* Visual Studio subscriptions don't include any additional virtual user minutes. The free amounts are per organization, not per user.
 
 * For cloud-based load testing, you're charged for each 
    [virtual user minute](../../test/load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
@@ -79,11 +72,11 @@ You're charged only for virtual user minutes of cloud-based load testing used ab
 
 ## Limits on load test runs
 
-There's a limit on the duration for each test run. For cloud-based load testing, the limit depends on where you're running your test.  For details, see [this Q&A](../../test/load-test/reference-qa.md#test-limits).
+There's a limit on the duration for each test run. For cloud-based load testing, the limit depends on where you run your test. For details, see [this Q&A](../../test/load-test/reference-qa.md#test-limits).
 
 ## Clean up resources
 
-To turn off paid cloud-based load testing, go to your organization in the Azure portal, choose **Cloud-based load testing**, move the toggle from PAID to **FREE**, and then choose **Save**.
+To turn off paid cloud-based load testing, go to your organization in the Azure portal. Choose **Cloud-based load testing**. Move the toggle key from **PAID** to **FREE**. Then choose **Save**.
 
 ## Next steps
 
@@ -92,5 +85,5 @@ To turn off paid cloud-based load testing, go to your organization in the Azure 
 
 ## Related articles
 
-* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

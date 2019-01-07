@@ -1,25 +1,30 @@
 ---
 title: Cycle time and lead time control charts
-titleSuffix: VSTS  
+titleSuffix: Azure DevOps Services  
 description: Configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes  
+ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts' 
-ms.date: 03/20/2018 
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= azdevserver-2019' 
+ms.date: 12/05/2018 
 ---
+
 
 # Lead time and cycle time control charts
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-> [!NOTE]  
-> <b>Feature availability:</b> The Lead Time and Cycle Time widgets are only available for VSTS at this time.
 
 Both lead time and cycle time measures are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
+
+The following diagram illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
+
+![Conceptual image of how cycle time and lead time are measured](_img/cycle-lead-time-concept-intro.png) 
 
 These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has.
  
@@ -30,6 +35,7 @@ In this topic you'll learn:
 > * How to interpret the scatter-plot control charts  
 > * How moving average and standard deviation are calculated in the charts
 
+To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
 <a id="configure-widget"></a>
 ## Configure the Cycle Time and Lead Time widgets    
@@ -38,17 +44,17 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 ### Pre-requisites
 In order to configure the Cycle Time and Lead Time widgets, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+- Installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
 
 ### Configuration dialog 
-1. If you haven't yet added the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now. 
+1. If you haven't yet added the [Analytics Marketplace extension](../analytics/analytics-extension.md), do that now. 
 
 2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 
 3. If you haven't yet [added the widgets to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
-4. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+4. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 2px solid #C3C3C3;" />    
 
@@ -58,7 +64,7 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 	The main difference between these two types of charts is that the fixed scope chart will provide information (in most cases) of scope change.    
 
-7. Click Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
+7. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
 	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 
@@ -66,7 +72,6 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 
 ## Interpret the scatter-plot control charts 
-
 Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. 
 
 **Example Lead Time widget**  
@@ -76,7 +81,6 @@ The chart dots represent completed work items where their position on the horizo
 - Larger dots represent multiple work items with the same lead/cycle time 
 - Dot color corresponds to the work item type displayed in the legend
 - Dark gray dots correspond to a mix of work item types.
-  
 
 #### Summary elements include: 
 - Days on average (average lead time or cycle time) for the main work item types configured for the chart 
@@ -86,12 +90,11 @@ The chart dots represent completed work items where their position on the horizo
 
 #### Interactive elements include:  
 - Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
-- Click a dot to open the work item or query that lists the work items   
-- To filter the chart, click a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
+- Choose a dot to open the work item or query that lists the work items   
+- To filter the chart, choose a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
 
 
 ## Moving average and standard deviation calculations 
-
 The daily moving average value corresponds to the average of data points that fall within the moving average window. 
 The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
 
@@ -103,9 +106,9 @@ The standard deviation appears as a band that encompasses the moving average. St
 
 
 ## Related notes
-
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
+- [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)  
 - [Kanban basics](../../boards/boards/kanban-basics.md)  
 - [Cumulative flow diagram](cumulative-flow.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)

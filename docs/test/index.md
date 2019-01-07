@@ -1,5 +1,5 @@
 ---
-title: Exploratory and Manual Testing -  TestTools
+title: Exploratory and manual testing index
 description: Test tools - Manual and exploratory testing index
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
 ms.prod: devops
@@ -8,22 +8,20 @@ ms.topic: overview
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory &amp; Manual Testing
  
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
-
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
+Azure DevOps and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
 
 See also: [Load testing](load-test/index.md)
 
 ## 5-Minute Quickstarts
 
-Learn how to create tests plans and test cases, and run them using the VSTS or TFS web portal.
+Learn how to create tests plans and test cases, and run them using the Azure DevOps or TFS web portal.
 Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
 
 | | | |
@@ -42,7 +40,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 ## Step-by-Step Tutorials
 
-* [Test from the Kanban board](../boards/boards/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
+* [Test from the Kanban board](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
 
 ## How-to Guides
 
@@ -57,7 +55,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 ## Reference
 
 * [FAQs for manual testing](reference-qa.md)
-* [Unable to connect](../reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
+* [Unable to connect](../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
 
 ## Resources
 
@@ -69,4 +67,4 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 * [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management)
 * [Load and performance testing](load-test/index.md)
 * [Continuous testing](../pipelines/index.md)
-* [Unit testing](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)
+* [Unit testing](/visualstudio/test/unit-test-your-code)

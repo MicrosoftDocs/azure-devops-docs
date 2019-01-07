@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts TfvcItemRequestData API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts TfvcItemRequestData API | Extensions for Azure DevOps Services
 ms.assetid: c8611123-6b22-0aa9-06e8-f8e1b62dc771
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -4,7 +4,7 @@ description: Work with Visual Studio Online builds programmatically using the RE
 ms.assetid: a5af63ab-36dd-4370-b962-ffbd6c1c4f58
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < vsts'
 ms.manager: douge
 ms.topic: article
 ms.author: elbatk
@@ -13,6 +13,9 @@ ms.date: 06-01-2017
 ---
 
 # Release Management
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
 **Using on-premises:** An earlier, and slightly different, version of this Release Management API is available in Team Foundation Server 2015 Update 2. To use, you must specify an API version of **2.2-preview.1**.

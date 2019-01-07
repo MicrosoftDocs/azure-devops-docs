@@ -8,7 +8,7 @@ ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '<= azdevserver-2019'
 ms.date: 03/20/2018
 ---
 
@@ -176,7 +176,7 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment"   
 ```  
   
-When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. In particular, the [Agile planning tools](../../boards/backlogs/overview.md) will not work until you update the categories definition.  
+When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. In particular, the [Agile planning tools](../../boards/get-started/what-is-azure-boards.md) will not work until you update the categories definition.  
   
 For more information, see [Import and export categories](witadmin-import-export-categories.md).  
   

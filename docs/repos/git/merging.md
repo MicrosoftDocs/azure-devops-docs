@@ -1,5 +1,6 @@
 ---
-title: Resolve Git merge conflicts | VSTS & TFS
+title: Resolve Git merge conflicts
+titleSuffix: Azure Repos
 description: Resolving Merge Conflicts in Git from Visual Studio or the command line.
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.prod: devops
@@ -8,14 +9,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
+# Resolve merge conflicts
 
-#  Resolve merge conflicts
-
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes the other.
 Git attempts to resolve these changes by using the [history](review-history.md) in your repo to determine what the merged files should look like.

@@ -1,6 +1,7 @@
 ---
 title: Run the agent with a self-signed certificate
-description: Learn how to run the build and release agent with a self-signed certificate for VSTS and Team Foundation Server (TFS)
+ms.custom: seodec18
+description: Learn how to run the build and release agent with a self-signed certificate for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,11 +10,13 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: chrispat
-ms.date: 01/25/2018
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2017 < vsts'
 ---
 
-# Run the agent with self-signed certificate
+# Run the agent with a self-signed certificate
+
+**TFS 2018 | TFS 2017**
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 
@@ -36,7 +39,7 @@ This error may indicate the server certificate you used on your TFS server is no
 Windows: Windows certificate store
 Linux: OpenSSL certificate store
 macOS: OpenSSL certificate store for agent version 2.124.0 or below
-       Keychian for agent version 2.125.0 or above
+       Keychain for agent version 2.125.0 or above
 ```
 
 You can easily verify whether the certificate has been installed correctly by running few commands.
@@ -53,7 +56,7 @@ The agent version 2.125.0 or above has the ability to ignore SSL server certific
 
 > [!IMPORTANT]
 > 
-> This is not secure and not recommended, we highly suggest you to install the certificate into your machine certificate store. 
+> This is not secure and not recommended, we highly suggest you to install the certificate into your machine certificate store.
 
 Pass `--sslskipcertvalidation` during agent configuration
 ```
@@ -66,9 +69,10 @@ Pass `--sslskipcertvalidation` during agent configuration
 > The libcurl library on your Linux or macOS machine needs to built with OpenSSL, [More Detail](https://github.com/dotnet/corefx/issues/9728)
 
 ### Git get sources fails with SSL certificate problem (Windows agent only)
-We ship git.exe as part of windows agent, we use this git.exe for all Git related operation. 
-When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the git.exe we shipped to allow that self-signed SSL certificate.
-There are 2 approach to solve the problem.
+We ship command-line Git as part of the Windows agent.
+We use this copy of Git for all Git related operation.
+When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the Git we shipped to allow that self-signed SSL certificate.
+There are 2 approaches to solve the problem.
 
 1. Set the following git config in global level by the agent's run as user.
 ```bash
@@ -76,7 +80,7 @@ git config --global http."https://tfs.com/".sslCAInfo certificate.pem
 ```
 > [!NOTE]
 >
-> Setting system level git config is not reliable on Windows, since the system level .gitconfig file is stored at the copy of git.exe we packaged which will get replaced whenever the agent is upgraded to a new version.
+> Setting system level Git config is not reliable on Windows. The system .gitconfig file is stored with the copy of Git we packaged, which will get replaced whenever the agent is upgraded to a new version.
 
 2. Enable git to use SChannel during configure with 2.129.0 or higher version agent
 Pass `--gituseschannel` during agent configuration
@@ -102,20 +106,20 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
   - Use `SAME` password to protect Client certificate private key and Client certificate archive package, since they both have client certificate's private key  
 
 - Install CA certificate(s) into machine certificate store
-  - Windows: Windows certificate store
   - Linux: OpenSSL certificate store
-  - macOS: System or User Keychian
+  - macOS: System or User Keychain
+  - Windows: Windows certificate store
 
 - Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive` and `--sslclientcertpassword` during agent configuration.   
  ```
  .\config.cmd/sh --sslcacert ca.pem --sslclientcert clientcert.pem --sslclientcertkey clientcert-key-pass.pem --sslclientcertarchive clientcert-archive.pfx --sslclientcertpassword "mypassword"
  ```
 
- We store your client cert private key password securely on each platform.  
+ Your client certificate private key password is securely stored on each platform.  
  ```
- Windows: Windows Credential Store
- macOS: macOS Keychain
  Linux: Encrypted with a symmetric key based on the machine ID
+ macOS: macOS Keychain
+ Windows: Windows Credential Store
  ```
 
-Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more detail information about agent client certificate support.
+Learn more about [agent client certificate support](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/design/clientcert.md).

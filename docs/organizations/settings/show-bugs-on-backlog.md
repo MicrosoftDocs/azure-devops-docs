@@ -1,21 +1,20 @@
 ---
 title: Show bugs on backlogs and boards
-titleSuffix: VSTS & TFS 
-description: Choose how bugs appear on Agile tools in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps & TFS 
+description: Choose how bugs appear on Agile tools in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 09/24/2018
 ---
 
 # Show bugs on backlogs and boards  
 
-
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
-
+[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
  
@@ -23,54 +22,95 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 
 ## Set your team's preferences for tracking bugs  
 
-1. From your team's backlog page, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the common configuration team settings.  
-	::: moniker range=">= tfs-2017"  
-	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
-	::: moniker-end
-	::: moniker range="tfs-2015" 
-	**TFS 2015.1**
-	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
-	**TFS 2015**
-	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
+You can change the setting from a backlog or board view. Here we show how to change it from the board view.
 
-	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
+In the **Working with bugs** dialog, you can select from the following three options.
 
-	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
-	::: moniker-end
-	::: moniker range="tfs-2013"
-	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page. Requires TFS 2013.4 or later version.  
+* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
 
-	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
+* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs will be associated with the Task category. 
 
-	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
-	::: moniker-end
+* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs will be associated with the Bugs category. 
 
-2. Choose the **Working with bugs** tab and select from the three options available.
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-	* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
+# [New navigation](#tab/new-nav)
 
-	* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs will be associated with the Task category. 
+::: moniker range="vsts"  
 
-	* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs will be associated with the Bugs category. 
+0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-	> [!NOTE]    
-	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
-	
-	::: moniker range=">= tfs-2018"  	
-	<img src="_img/show-bugs-settings-ts.png" alt="VSTS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
-	::: moniker-end
-	::: moniker range="tfs-2017"     
-	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
-	::: moniker-end
-	::: moniker range=">= tfs-2013 <= tfs-2015"  
-	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
-	::: moniker-end 
+0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
-3. To see the changes, open or refresh the team's [backlog]((../../boards/backlogs/create-your-backlog.md), [sprint backlog pages]((../../boards/sprints/assign-work-sprint.md), or [Kanban board]((../../boards/boards/kanban-basics.md).
+	> [!div class="mx-imgBorder"]
+	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
+
+0. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
+
+	> [!div class="mx-imgBorder"]
+	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
+
+0. When done with your changes, choose **Save**.  
+
+0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+# [Previous navigation](#tab/previous-nav)
+
+::: moniker range=">= tfs-2017"  
+
+0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+
+0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Open board settings for a team](_img/configure-team/open-settings-tfs.png)  
+
+0. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
+
+	> [!div class="mx-imgBorder"]
+	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
+
+0. When done with your changes, choose **Save**.  
+
+0. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015"  
+
+Requires TFS 2013.4 or later version. 
+
+0. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
+
+0. Choose the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
+
+	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
+
+0. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
+
+	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />  
+
+0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
+
+::: moniker-end
+
+---
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+
+## Nested items  
 
 > [!TIP]  
-> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items]((../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
+> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.   
 
+When you manage bugs with requirements or with tasks, they'll show up on one or more of your Agile tool backlogs and boards. However, if you nest items&mdash;create parent-child links of items that belong in either the Requirements or Task categories&mdash;then not all items may appear on your backlogs and boards. To learn more about how nested items are treated, see [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). 
+::: moniker-end
 
 <a id="add-other-wits" /> 
 ## Add other work item types to your backlogs or boards
@@ -93,9 +133,6 @@ For an overview of process models, see [Customize your work tracking experience]
 
 ## Related articles
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
-- [Configure team settings](configure-team-settings.md)  
+- [Manage teams and configure team tools](manage-teams.md)  
 
-### Nested items  
-As indicated in this topic, bugs can appear alongside user stories (requirements or product backlog items) or tasks. You don't need to link bugs to one of these items in order to manage them.
 
-When you manage bugs with requirements or with tasks, they'll show up on one or more of your Agile tool backlogs and boards. However, if you nest items&mdash;create parent-child links of items that belong in either the Requirements or Task categories&mdash;then not all items may appear on your backlogs and boards. To learn more about how nested items are treated, see [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md).

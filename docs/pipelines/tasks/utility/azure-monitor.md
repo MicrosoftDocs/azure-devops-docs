@@ -1,22 +1,25 @@
 ---
-title: Azure monitor task for Microsoft VSTS and TFS
-description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS with a build or release pipeline
+title: Query Azure Monitor Alerts task
+description: Observe the configured Azure monitor rules for active alerts in Azure Pipelines and TFS in a build or release pipeline
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Query Azure Monitor Alerts
+# Query Azure Monitor Alerts task
 
-![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
+
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -26,7 +29,7 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 None
 
-::: moniker range="> tfs-2018"
+::: moniker range="vsts"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
 ::: moniker-end
@@ -46,4 +49,4 @@ Succeeds if none of the alert rules are activated at the time of sampling.
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureMonitor).
+Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureMonitorV0).

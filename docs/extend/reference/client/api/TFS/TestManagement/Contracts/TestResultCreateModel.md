@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestResultCreateModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestResultCreateModel API | Extensions for Azure DevOps Services
 ms.assetid: acd2bfb5-06c4-21b8-d09b-1121deabd091
 ms.prod: devops
 ms.technology: devops-ecosystem

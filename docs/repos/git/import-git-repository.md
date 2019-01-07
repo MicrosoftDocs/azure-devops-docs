@@ -1,6 +1,7 @@
 ---
-title: Import a Git repo into your project | VSTS & TFS
-description: Import a repo from GitHub, GitLab, or Bitbucket into your VSTS/TFS Project
+title: Import a Git repo into your project
+titleSuffix: Azure Repos
+description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure DevOps Services/TFS Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -8,15 +9,15 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 07/20/2018
+ms.date: 11/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
 # Import a Git repo
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
 
-This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your VSTS project.
+This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -40,7 +41,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
 * To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
@@ -48,7 +49,27 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Import into a new repo
 
-From the repo drop-down, select **Import repository**. 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Select **Repos**, **Files**.
+
+  ![View your branches](_img/repos-navigation/repos-files.png)
+
+0. From the repo drop-down, select **Import repository**.
+
+  ![Manage repositories](_img/repo-mgmt/import-repository.png)
+
+0. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
+
+  If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
+
+  ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+
+# [Previous navigation](#tab/previous-nav)
+
+From the repo drop-down, select **Import repository**.
 
 ![Import Repository Option](_img/Import-Repo/ImportRepository.png)
 
@@ -57,6 +78,10 @@ If the source repo is publicly available, just [enter the clone URL](clone.md#cl
 If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
 
 ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+
+---
+
+
 
 ## Import into an existing empty repo
 
@@ -72,7 +97,7 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 
 ## Manually import a repo
 
-The import repo feature was introduced in TFS 2017 Update 1. If you are using TFS 2017 RTM or earlier, you can use the following steps to manually import a repo into TFS. You can also follow these steps to manually import a repo into a VSTS repo by replacing TFS with VSTS in the following steps.
+The import repo feature was introduced in TFS 2017 Update 1. If you are using TFS 2017 RTM or earlier, you can use the following steps to manually import a repo into TFS. You can also follow these steps to manually import a repo into an Azure DevOps Services repo by replacing TFS with Azure Repos in the following steps.
 
 0. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. Note that when cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
 
@@ -81,12 +106,12 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     cd old-contoso-repo.git
     ```
 
-0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
 
 0. Run the following command to copy the source repo to the target repo.
 
     ```
-    git push --mirror https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo
+    git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ``` 
 
 0. Delete the temporary folder by running the following commands.
@@ -112,7 +137,7 @@ Although most of the time the import is successful, the following conditions can
 ### What if my source repository is behind two-factor authentication?
 
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
-Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [VSTS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
+Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps Services](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
 
 ### What if my source repository does not support multi_ack?
 
@@ -125,7 +150,7 @@ This failure can happen when creating import request or while import is in progr
 
 ### Can I import from previous versions of Team Foundation Server?
 If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import will fail.
-This happens because of a contract mismatch between the latest VSTS/TFS and pre-2017 RTM versions of TFS.
+This happens because of a contract mismatch between the latest Azure DevOps Services/TFS and pre-2017 RTM versions of TFS.
 
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
@@ -145,7 +170,7 @@ You can migrate code from an existing TFVC repository to a new Git repository wi
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [New to Git repos? Learn more](/azure/devops/git/set-up-a-git-repository)
+> [New to Git repos? Learn more](/azure/devops/learn/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](gitworkflow.md)

@@ -1,15 +1,17 @@
 ---
-title: Resolve backlog issues 
-titleSuffixe: VSTS & TFS
-description: Resolve error messages when working in backlogs or boards in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Fix backlog reorder and nesting issues
+titleSuffix: Azure Boards
+description: Fix error messages due to nesting issues that occur in a Backlog or Board in Azure Boards & TFS 
+ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/29/2017  
----
+monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.date: 09/13/2018
+--- 
 
 
 
@@ -18,15 +20,15 @@ ms.date: 09/29/2017
 <a id="display-hierarchy">  </a>
 
 
-<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
+**TFS 2018 | TFS 2017 | TFS 2015**
 
 <!--- Supports FWLINK 529135 --> 
 
-When a sprint backlog contains same-category, nested  work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
+When a product, portfolio, or sprint backlog contains same-category, nested work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
 
 To fix this, take the following actions: 
 
-1. Click the **Create query** link on the backlog page. 
+1. Choose the **Create query** link on the backlog page. 
     
 	![Create query of backlog](_img/overview/backlogs-boards-create-query.png)
 
@@ -44,11 +46,11 @@ To fix this, take the following actions:
 <a id="nested">  </a>
 ## How backlogs and boards display hierarchical (nested) items 
  
-While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don't recommend that you create same-category hierarchies. That is, don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task. The reason is that the Kanban board, sprint backlog, and task board only show the last node in a same-category hierarchy, called the leaf node. For example, if you link items within a same-category hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board.  
+[!INCLUDE [temp](../_shared/display-leaf-nodes.md)]  
 
-Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list. In other words, only create parent-child links one level deep between items that belong to a different category. Use the Feature work item type when you want to group user stories (Agile), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](../backlogs/organize-backlog.md), which creates parent-child links in the background.    
+Use the Feature work item type when you want to group user stories (Agile), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](/azure/devops/boards/backlogs/organize-backlog), which creates parent-child links in the background.    
 
-<img src="../../reference/_img/create-hierarchy-with-different-wits.png" alt="Create work items using different hiearchy" style="border: 1px solid #C3C3C3;" /> 
+![Create work items using different hierarchy](../../reference/_img/create-hierarchy-with-different-wits.png)  
 
 <a id="leaf-nodes">  </a>
 ## When you track bugs as requirements
@@ -70,9 +72,9 @@ The child bug, *Save takes too long*, appears on the Kanban board, but not the p
 <a id="bugs-as-tasks">  </a>
 ## When you track bugs as tasks
 
-When you choose to have bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them accordingly on the sprint backlog and task board.  
+When you choose to have bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them accordingly on the sprint backlog and taskboard.  
 
-However, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task will appear on the sprint backlog and task board, but not the bug. 
+However, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task will appear on the sprint backlog and taskboard, but not the bug. 
 
 **Hierarchy of items assigned to the sprint backlog**  
 
@@ -82,7 +84,7 @@ However, if you create parent-child links between a requirement and a bug, and t
 
 ![Sprint backlog, leaf node task ](../../reference/_img/sprint-backlog-leaf-only.png)  
 
-**Only leaf nodes appear on the task board**   
+**Only leaf nodes appear on the taskboard**   
 ![Sprint board, leaf node task appears](../../reference/_img/bugs-appear-on-taskboard.png)  
 
 Is there a workaround to display intermediate nodes within a hierarchy?  Not at this time. You can always check the entire list of items assigned to a sprint by using the **Create Query** link. 

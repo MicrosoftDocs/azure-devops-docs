@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Plan an iteration  
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards
 description: Understand the planning iterations to decide how long you want your iterations to be, determining how much work your team can get done in that time, and planning what work should be included in each iteration - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -8,13 +8,13 @@ ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
 ---
 
 # Plan an iteration (CMMI)
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Developing software in iterations means that you divide your work into incremental stages such that you have software with progressively more working features at the end of each iteration. Ideally, you have something to show the customer after even the first iteration. Iterations let you receive feedback early so that you can make course corrections early.  
   
@@ -25,7 +25,7 @@ Developing software in iterations means that you divide your work into increment
 ## Create tasks to implement and test each requirement  
  The iteration plan is represented by the list of tasks that are scheduled for the iteration. Each task is linked to the product requirement that it implements.  
   
- The task list is visible in the [task board](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), Work Breakdown query, and on the [Progress Dashboard](http://msdn.microsoft.com/4aa21c4a-651b-4cec-a204-59524abdae82).  
+ The task list is visible in the [taskboard](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), Work Breakdown query, and on the [Progress Dashboard](http://msdn.microsoft.com/4aa21c4a-651b-4cec-a204-59524abdae82).  
   
  At the start of the iteration, the team reviews the requirements that are scheduled for this iteration and creates task work items. The task work items describe the work (such as design, development, and testing) that is required to complete the requirement.  
   
@@ -53,7 +53,7 @@ Developing software in iterations means that you divide your work into increment
  Kick off the iteration with a mini-version of the project launch. Bring the team together. Outline the goals and the scope of the iteration. Discuss and present the plan and any targets. Ensure that all team members have enough context to continue with the work in a self-organizing manner. Make time and space for questions from team members, and record any issues or risks that are brought up during the meeting. Store these as minutes in the project portal. As a project manager, follow up by creating risk and issue work items, as appropriate.  
   
 ##  <a name="Tracking"></a> Track an iteration  
- Throughout the iteration, you can monitor its progress daily by using the burndown chart shown on the task board, or the reports that are provided with the template. You will want to pay extra attention to the [Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx), [Unplanned Work](https://msdn.microsoft.com/library/ee707132.aspx), and [Requirements Overview](https://msdn.microsoft.com/library/ee461517.aspx) to make sure that the iteration is tracking against expectations.  
+ Throughout the iteration, you can monitor its progress daily by using the burndown chart shown on the taskboard, or the reports that are provided with the template. You will want to pay extra attention to the [Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx), [Unplanned Work](https://msdn.microsoft.com/library/ee707132.aspx), and [Requirements Overview](https://msdn.microsoft.com/library/ee461517.aspx) to make sure that the iteration is tracking against expectations.  
   
 ##  <a name="AdditionalResources"></a> Additional resources  
  For more information, see the following Web resources:  

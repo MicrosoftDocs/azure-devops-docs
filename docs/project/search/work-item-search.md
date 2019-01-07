@@ -1,6 +1,6 @@
 ---
-title: Search for work items in VSTS
-description: How To Use Work Item Search to search across all work item fields over all projects of your VSTS and TFS projects
+title: Search for work items across your projects
+description: How To Use Work Item Search to search across all work item fields over all projects of your Azure DevOps and TFS projects
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: devops
 ms.technology: devops-collab
@@ -8,31 +8,49 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Search for work items
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
+[!INCLUDE [version-header](_shared/version-header.md)]
 
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
-See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json)
+See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 
 <a name="start-search"></a>
-## Get searching
+
+## Start searching
+
+# [New navigation](#tab/new-nav)
+
+1. Open the **Azure Boards** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
+
+1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+
+   ![The Work Item Search textbox in the title bar](_img/work-item-search-get-started/show-search-box.png)    
+
+1. Enter a search string in the textbox, and press _Enter_ (or choose the 
+   ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
+
+# [Previous navigation](#tab/previous-nav)
 
 1. In the search textbox at the top right of the window, check that the text says
    _Search work items_.
 
-   ![The Work Item Search textbox in the VSTS title bar](_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Work Item Search textbox in the title bar](_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
 
-   If you have the Code Search extension installed, the search text box may
+1. If you have the Code Search extension installed, the search text box may
    say _Search code_. In this case, use the drop-down selector to change it. 
 
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search. 
+
+---
+
+## View the results
 
 1. Search results are displayed in a snippet view, where matches found are shown in bold.
 
@@ -47,10 +65,10 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
    ![Display a work item](_img/work-item-search-get-started/search-results-02.png)
 
-   >Open the search results in a new browser tab from a search box by
+   > Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](_img/_shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   ![start search icon](_img/_shared/start-search-icon-new.png) icon.
+   In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
@@ -79,11 +97,21 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    to a user named Chris.
 
 1. Widen your search across all projects, or narrow it to specific types
-   and states, by using the drop-down selector lists at the top of the results page.
+   and states. Use the "filter" icon to show the selector lists.
+
+   ![Showing the filter lists](_img/_shared/show-filters.png)    
+
+1. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 
    ![Selector drop-down lists](_img/work-item-search-get-started/area-selectors.png)    
 
-   >Work Item search remembers your filter settings. For example, the project and area path that you have selected in a search will be applied in your subsequent searches.
+1. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
+
+   ![Sort drop-down list](_img/work-item-search-get-started/sort-order.png)    
+
+1. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for code or wiki containing the same search string](_img/work-item-search-get-started/view-code-search.png)
 
 ## Next step
 

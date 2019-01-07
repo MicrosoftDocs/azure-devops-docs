@@ -7,14 +7,14 @@ ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: douge
 ms.date: 04/25/2018
-ms.author: willys
+ms.author: douge
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---
 
 # Explore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/repos/tfvc/index)) with Team Foundation Server (TFS) or Visual Studio Team Services (VSTS)? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/azure/devops/repos/tfvc/index)) with Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
 - How do I decide on the right branching strategy? 
 - Is there an effective strategy for DevOps?
@@ -43,7 +43,7 @@ To embrace DevOps, it's important to keep your branch strategy simple and strive
 - Frequently reverse integrate (RI) and merge into your main branch
 - Encourage consistent code reviews - garbage in, garbage out
 - Implement a CI/CD pipeline, using:
-	- [Gated](/vsts/repos/tfvc/check-folder-controlled-by-gated-check-build-process) checkins
+	- [Gated](/azure/devops/repos/tfvc/check-folder-controlled-by-gated-check-build-process) checkins
 	- Automated testing
 
 ## Start with a simple branching strategy
@@ -72,10 +72,10 @@ When you complete a release cycle, create a **release** branch. Use the release 
 
 ![Version 1.0 is released](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-vnext.png)
 
-Automate your build to:
+Automate your build and release to:
 - Trigger with every checkin to the release branch 
 - Run automated tests
-- Use release management to deploy to your development and other environments
+- Deploy to your development and other environments
 
 |Branch|Build|Pipelines|Notes|
 |------|-----|---------|-----|
@@ -122,7 +122,7 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 - Do not attempt to solve **people** or **process** problems with tools
 
 #Reference information
-- [Continuous Integration](/azure/devops/what-is-continuous-integration)
+- [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
 - [Interview with Abel Wang and Steve St Jean](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean)
 - [Team Foundation Version Control (TFVC)](../repos/tfvc/overview.md)
 - [What is DevOps - Definition](http://donovanbrown.com/post/what-is-devops)

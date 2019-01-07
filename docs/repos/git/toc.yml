@@ -10,6 +10,8 @@
     href: branch-policies-overview.md
   - name: Learn about forks
     href: forks-overview.md 
+  - name: Start using Azure Repos
+    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: Create repo - Web
@@ -71,6 +73,8 @@
     items:
     - name: Review code with pull requests
       href: pull-requests.md
+    - name: Pull request templates
+      href: pull-request-templates.md
     - name: Squash merge pull requests
       href: merging-with-squash.md
     - name: Extend pull request workflows with pull request status
@@ -83,8 +87,8 @@
     href: git-dates.md
   - name: Understand names in Git
     href: git-names.md
-  - name: Case sensitivity
-    href: case-sensitivity.md
+  - name: Cross-Platform Compatibility
+    href: os-compatibility.md
   - name: Git preferences and settings
     href: git-config.md
   - name: Repository settings
@@ -108,9 +112,9 @@
     - name: Configure branch policy for an external service
       href: pr-status-policy.md
   - name: Define a CI build for your repo
-    href: ../../pipelines/build/ci-build-git.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
-    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
   - name: Manage repos
@@ -126,7 +130,7 @@
     - name: Git and TFVC repos
       href: team-projects.md
     - name: "Set Git permissions (Security)"
-      href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+      href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Manage branches
     items:
     - name: Manage your branches
@@ -156,7 +160,7 @@
   - name: Command reference
     href: command-prompt.md
   - name: Format comments with markdown
-    href: ../../project/wiki/markdown-guidance.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Frequently asked questions
     href: howto.md
   - name: History
@@ -166,29 +170,31 @@
     - name: Commit details
       href: commit-details.md
   - name: "Default Git permissions (Security)"
-    href: ../../organizations/security/default-git-permissions.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: Git limits
     href: limits.md
 - name: Resources
   items:
   - name: What is Git?
-    href: /azure/devops/git/what-is-git
+    href: /azure/devops/learn/git/what-is-git
   - name: What is version control?
-    href: /azure/devops/git/what-is-version-control
+    href: /azure/devops/learn/git/what-is-version-control
+  - name: GitHub & Azure Boards 
+    href: ../../boards/github/index.md
   - name: Plan your migration to Git
-    href: /azure/devops/git/centralized-to-git
+    href: /azure/devops/learn/git/centralized-to-git
   - name: Migrate from TFVC to Git
-    href: /azure/devops/git/migrate-from-tfvc-to-git
+    href: /azure/devops/learn/git/migrate-from-tfvc-to-git
   - name: Git REST APIs
     href: https://visualstudio.com/docs/integrate/api/repos/git/overview
   - name: Pro Git
     href: https://www.git-scm.com/book/en/v2
     name: Learn Git
-    href: /azure/devops/git/learn-git-with-team-services/
+    href: /azure/devops/learn/git/learn-git-with-team-services/
   - name: Git at Scale
-    href: /azure/devops/git/git-at-scale
+    href: /azure/devops/learn/git/git-at-scale
   - name: How we use Git at Microsoft
-    href: /azure/devops/devops-at-microsoft/use-git-microsoft
+    href: /azure/devops/learn/devops-at-microsoft/use-git-microsoft
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
   - name: IDE integration and extension
@@ -198,6 +204,6 @@
     - name: Visual Studio Code
       href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
     - name: Eclipse
-      href: /vsts/java/download-eclipse-plug-in
+      href: /azure/devops/java/download-eclipse-plug-in
     - name: IntelliJ IDEA
-      href: /vsts/java/download-intellij-plug-in
+      href: /azure/devops/java/download-intellij-plug-in

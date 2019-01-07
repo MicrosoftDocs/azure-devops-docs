@@ -1,6 +1,7 @@
 ---
-title: NuGet Packager Version 0.* | VSTS or Team Foundation Server
-description: Learn all about how you can produce NuGet packages when building code in Visual Studio Team Services and Team Foundation Server
+title: NuGet Packager task Version 0.*
+ms.custom: seodec18
+description: Learn all about how you can produce NuGet packages when building code in Azure Pipelines and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
@@ -9,11 +10,11 @@ ms.author: amullans
 ms.date: 08/10/2016
 ---
 
-# Package: NuGet Packager version 0.*
+# NuGet Packager task version 0.*
 
-**VSTS (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
+**Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
-![](../_img/nuget-packager.png) Create a NuGet package from either a .csproj or .nuspec file.
+Use this task in a build or release pipeline to create a NuGet package from either a .csproj or .nuspec file.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -66,7 +67,7 @@ Specify .csproj files (for example, ```**\*.csproj```) for simple projects. In t
 Select if you want to use the build number to version your package. If you select this option, for the [pipeline options](../../../build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```
 <p>The build number format must be ```{some_characters}_0.0.0.0```. The characters and the underscore character are omitted from the output. The version number at the end must be a unique number in a format such as ```0.0.0.0``` that is higher than the last published number.</p>
 <p>The version number is passed to [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack) with the ```-Version``` option.</p>
-<p>Versions are shown prominently on NuGet servers. For example they are listed on the Visual Studio Team Services feeds page and on the NuGet.org package page.</p>
+<p>Versions are shown prominently on NuGet servers. For example they are listed on the Azure Artifacts feeds page and on the NuGet.org package page.</p>
 </td>
 </tr>
 <tr>

@@ -1,6 +1,7 @@
 ---
-title: CI build Node.js app | VSTS or Team Foundation Server
-description: Learn how you can set up a continuous integration (CI) build for your Node.js app in VSTS or Microsoft Team Foundation Server (TFS)
+title: CI build Node.js app | Azure Pipelines or Team Foundation Server
+ms.custom: seodec18
+description: Learn how you can set up a continuous integration (CI) build for your Node.js app in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,9 +16,9 @@ monikerRange: 'tfs-2017'
 
 # Define a continuous integration build for your Node.js app
 
-**[VSTS](quick-to-azure.md) | TFS 2017 RTM**
+**TFS 2017**
 
-Here we'll show you how to define a continuous integration (CI) build process for your Node.js app. If you want to also continuously deploy (CD) your app to Azure, you'll be set up to make that happen after you're done creating this CI build process.
+Here we'll show you how to define a continuous integration (CI) build pipeline for your Node.js app. If you want to also continuously deploy (CD) your app to Azure, you'll be set up to make that happen after you're done creating this CI build pipeline.
 
 ## Upload your code
 
@@ -25,13 +26,13 @@ Here we'll show you how to define a continuous integration (CI) build process fo
 
 0. Do you have your own code?
 
- * No: Upload the sample app to Visual Studio Team Services (VSTS) or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
+ * No: Upload the sample app to Azure Pipelines or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
  * Yes:
 
     0. Copy the **gulpfile.js** and **web.config** files from the sample app to the root folder of your app.
 
-    0. Upload your code to VSTS or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
+    0. Upload your code to Azure Repos or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
 
 [What code is in the sample app?](#code)
 
@@ -40,7 +41,7 @@ Here we'll show you how to define a continuous integration (CI) build process fo
 <ol>
 [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
 
-<li>Click Empty to start with an empty definition.</li>
+<li>Click Empty to start with an empty pipeline.</li>
 </ol>
 
 ### Add the build tasks
@@ -60,11 +61,11 @@ On the **Tasks** or **Build** tab, add these tasks.
 </tr>
 
         <tr>
-            <td>![Build: Gulp](../../../tasks/build/_img/gulp.png)<br/>**Build: Gulp**</td>
+            <td>![Build: gulp](../../../tasks/build/_img/gulp.png)<br/>**Build: gulp**</td>
             <td>
 <p>Pack your files into a .zip file.</p>
 <ul>
-<li><p>Gulp File Path: ```gulpfile.js```</p>
+<li><p>gulp File Path: ```gulpfile.js```</p>
 </li>
 <li>
 <p>Advanced, Arguments: ```--packageName=$(Build.BuildId).zip --packagePath=$(Build.ArtifactStagingDirectory)```
@@ -105,11 +106,11 @@ On the **Triggers** tab, enable **Continuous integration** (CI). This tells the 
 
 ### Save, queue, and test the build
 
-Save and queue the build. Once the build is done, click the link to the completed build (for example, _Build 1634_), click **Artifacts**, and then click **Explore** to see the .zip file produced by the build. This is the web deploy package that your release definition will consume to deploy your app.
+Save and queue the build. Once the build is done, click the link to the completed build (for example, _Build 1634_), click **Artifacts**, and then click **Explore** to see the .zip file produced by the build. This is the web deploy package that your release pipeline will consume to deploy your app.
 
 ## Continuously deploy (CD) your app
 
-After you've run the CI build, you're ready to create a continuous deployment (CD) release definition so that you can deploy your app to:
+After you've run the CI build, you're ready to create a continuous deployment (CD) release pipeline so that you can deploy your app to:
 
 * [![Azure Web App Deploy](../../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../../../apps/cd/deploy-webdeploy-webapps.md)
 

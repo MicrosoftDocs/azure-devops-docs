@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces CoreReferencesContext API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces CoreReferencesContext API | Extensions for Azure DevOps Services
 description: Contains lists of script and css references that need to be included on the page in order for the controls used by the page to work.
 ms.assetid: 0410dde6-fb97-8f67-e8e2-539d16bea304
 ms.prod: devops

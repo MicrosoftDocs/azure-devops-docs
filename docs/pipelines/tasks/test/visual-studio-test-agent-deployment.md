@@ -1,18 +1,21 @@
 ---
-title: Build and Test - Visual Studio Test Agent Deployment task
+title: Visual Studio Test Agent Deployment task
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Visual Studio Test Agent Deployment
+# Visual Studio Test Agent Deployment task
+
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -20,21 +23,16 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range=">= tfs-2018"
 
-This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
-task together with [phases](../../process/phases.md) to run unit and functional tests on the universal agent.
-
-For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
+This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
+task together with [jobs](../../process/phases.md) to run unit and functional tests on the universal agent.
+For more details, see [Testing with unified agents and jobs](../../test/test-with-unified-agent-and-phases.md).
 
 ::: moniker-end
 
 ## TFS 2017 and earlier
 
-![icon](_img/visual-studio-test-agent-deployment-icon.png)
-Deploy and configure the test agent to run tests on a set of machines.
-
-The test agent deployed by this task can collect data
-or run distributed tests using the [Visual Studio Test](vstest.md)
-task.
+Use this task in a build or release pipeline to deploy and configure the test agent to run tests on a set of machines.
+The test agent deployed by this task can collect data or run distributed tests using the [Visual Studio Test](vstest.md) task.
 
 ### Demands and prerequisites
 
@@ -83,21 +81,21 @@ Use this task for:
 The supported options for these scenarios are:
 
 * **TFS**
-  - On-premises and VSTS<p />
+  - On-premises and Azure Pipelines<p />
 * **Build and release agents**
   - Hosted and on-premises agents are supported.
-  - The agent must be able to communicate with all test machines. 
-    If the test machines are on-premises behind a firewall, a VSTS Microsoft-hosted agent
+  - The agent must be able to communicate with all test machines.
+    If the test machines are on-premises behind a firewall, an Azure Pipelines Microsoft-hosted agent
     cannot be used because it will not be able to communicate with the test machines.
-  - The agent must have Internet access to download test agents. 
+  - The agent must have Internet access to download test agents.
     If this is not the case, the test agent must be manually 
     downloaded, uploaded to a network location accessible to
     the agent, and the **Test Agent Location** parameter used 
     to specify the location. The user must manually check for 
     new versions of the agent and update the test machines.<p /> 
 * **Continuous integration/continuous deployment workflows**
-  - Build/deploy/test tasks are supported in both Build and 
-    Release Management workflows.<p /> 
+  - Build/deploy/test tasks are supported in both build and 
+    release workflows.<p /> 
 * **Machine group configuration**
   - Only Windows-based machines are supported inside a 
     machine group for build/deploy/test tasks. Linux, macOS, or 
@@ -149,7 +147,7 @@ The supported options for these scenarios are:
 
 ### Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -168,12 +166,10 @@ machines.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-::: moniker-end
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]

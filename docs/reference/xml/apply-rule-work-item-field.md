@@ -1,20 +1,21 @@
 ---
 title: Apply a field rule
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts || >= tfs-2013'
+monikerRange: '>= tfs-2013 <= azdevserver-2019'
 ms.date: 05/10/2017
 ---
 
 # Add a rule to a work item type  
  
-<p><b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b></p>
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../../organizations/settings/work/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -50,7 +51,7 @@ The following example shows the assignment of Help text to a custom Business Jus
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Business Justification" refname="Fabrikam.BusinessJustification" type="String">
-   <HELPTEXT>Only required when you set the Urgencyfield to Need Immediately. </HELPTEXT>
+   <HELPTEXT>Only required when you set the Urgency field to Need Immediately. </HELPTEXT>
 </FIELD>
 ```
 

@@ -157,7 +157,7 @@ For more information, see [Add administrators, set permissions at the project-le
   
      For *DirectoryPath*, specify the directory location of the TypeDefinitions folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:*MSFTemplateFolder* WorkItem TrackingTypeDefinitions.  
   
--   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.  
+-   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.  
   
 ## 7. Import the categories file  
  Import the category file located in the WorkItem Tracking folder of the process template that you downloaded. Categories support intelligent grouping of work item types. To learn more, see [Use categories to group work item types](use-categories-to-group-work-item-types.md).  

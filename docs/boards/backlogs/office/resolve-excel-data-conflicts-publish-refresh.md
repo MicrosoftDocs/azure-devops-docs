@@ -1,7 +1,7 @@
 ---
 title: Resolve data conflicts (publish and refresh)
-titleSuffix: VSTS & TFS
-description: Resolves data conflicts when publishing a work item from Excel or Project to Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Resolves data conflicts when publishing a work item from Excel or Project to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 # Resolve data conflicts (publish and refresh)
 
-[!INCLUDE [temp](../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 A data conflict occurs when you try to publish a work item from [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and the version of that work item differs from the version in the work item database. The following example shows how two team members can create such a conflict.  
   
@@ -48,7 +48,7 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
 ## Related articles
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
--  [Work in Excel and Project](track-work-vsts-tfs.md)  
+-  [Work in Excel and Project](track-work.md)  
 
 
 ###Required permissions  

@@ -1,7 +1,7 @@
 ---
-title: Request feedback using the work tracking feedback tool
-titleSuffix: VSTS & TFS 
-description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application developed using Visual Studio Team Services & Team Foundation Server  
+title: Request feedback 
+titleSuffix: Azure DevOps Services & TFS 
+description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application developed using Azure DevOps Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -17,7 +17,7 @@ ms.date: 08/15/2017
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE]  
-> **Feature availability**: For Visual Studio Team Services (VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../organizations/security/change-access-levels.md) to request feedback. 
+> **Feature availability**: For Azure DevOps Services and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../organizations/security/change-access-levels.md) to request feedback. 
 >
 >In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
  
@@ -110,8 +110,8 @@ Reviewers launch your application and provide feedback through the free Microsof
 
 	With the feedback experience, you can engage stakeholders frequently to provide continuous feedback. Interacting with your working apps, your stakeholders can record rich and actionable data that the system automatically stores in the form of video or audio recordings, comments, and annotated screenshots. You can then take action on each feedback response by assigning it to a team member or creating bugs or backlog items to the linked feedback. 
 
-##Related feedback notes  
-- You can only request feedback from a team project hosted on VSTS or an on-premises TFS. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).  
+## Related notes  
+- You can only request feedback from a team project hosted on Azure DevOps Services or an on-premises TFS. If you don't have a team project yet, create one in [Azure DevOps Services](../../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).  
 - You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
 - If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).  
 - You can download the Feedback client from here: [Visual Studio download site](https://www.microsoft.com/download/details.aspx?id=48142).  

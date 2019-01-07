@@ -1,5 +1,6 @@
 ---
 title: Release your app with deployment agents in Release Management
+ms.custom: seodec18
 description: Release your app to environments with deployment agents in Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 34E3CA4A-A37E-4B8F-9BC2-4613851469A1
 ms.prod: devops
@@ -18,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 If you want to use PowerShell, DSC or Chef to deploy your app, you must 
 use vNext environments; go 
-**[here](release-without-agents.md)** for instructions. 
+**[here](release-without-agents.md)** for instructions.
 Otherwise if you are using deployment agents, follow these steps.
 
 If you haven't already done so, 
@@ -32,7 +33,7 @@ for your release.
 1. **[Install and configure a deployment agent](install-release-management/install-deployment-agent.md)** 
    on any machine that will be part of the environment used to deploy your app.
 
-1. Scan for new servers that already have deployment agents installed. 
+1. Scan for new servers that already have deployment agents installed.
    If the server you want to use is not in the list, 
    check that the service for the deployment agent (Microsoft Deployment Agent) 
    is started on that machine.
@@ -40,9 +41,9 @@ for your release.
    ![Scan for servers](_img/release-with-agents-01.png)
 
 1. Register the servers to use for your environments. You will deploy your app to 
-   the servers in an environment as part of your release process.
+   the servers in an environment as part of your release pipeline.
 
-   ![Register your server to use in the release process](_img/release-with-agents-02.png)
+   ![Register your server to use in the release pipeline](_img/release-with-agents-02.png)
 
 1. Create environments for each of your stages. Link the servers to your environments.
 
@@ -53,19 +54,19 @@ for your release.
 <a name="CreateReleaseTemplate"></a>
 ## Create a release template
 
-Check the code for your app has been added to version control. 
+Check the code for your app has been added to version control.
 You also need a build definition that builds your app.
 
 1. Create a release path to represent the stages that your release must go through.
 
    ![Create a release path](_img/release-with-agents-04.png)
 
-   Choose the environment and approvers to use for each stage of your release. 
+   Choose the environment and approvers to use for each stage of your release.
    You can add multiple final approvers for each stage if you want to.
 
-   ![Add the stages and approvers for your release process](_img/release-with-agents-05.png)
+   ![Add the stages and approvers for your release pipeline](_img/release-with-agents-05.png)
 
-1. Create a release template and use the release path that you just added. 
+1. Create a release template and use the release path that you just added.
    Link your build definition to this release template to have access to the build.
    
    ![Add a release template](_img/release-with-agents-06.png)
@@ -75,7 +76,7 @@ You also need a build definition that builds your app.
    ![From the Release Templates page add the deployment sequence](_img/release-with-agents-07.png)
 
    The deployment agent must have sufficient permissions to perform 
-   any of the actions in your sequence. 
+   any of the actions in your sequence.
    For example, to remove a web site the deployment agent service must 
    run as a local administrator on that machine.
 
@@ -103,7 +104,7 @@ component to any stage that needs it.
 
 ### Q: How do I copy a deployment sequence of one stage to another?
 
-**A**: Use the shortcut menu of a sequence to copy it. 
+**A**: Use the shortcut menu of a sequence to copy it.
 Select the sequence where you want to paste it, 
 and use its shortcut menu to **Paste Deployment Sequence**.  
 

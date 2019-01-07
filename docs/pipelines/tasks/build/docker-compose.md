@@ -1,5 +1,6 @@
 ---
-title: Docker Compose
+title: Docker Compose task
+ms.custom: seodec18
 description: Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
 ms.topic: reference
 ms.prod: devops
@@ -11,9 +12,11 @@ ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
-# Build: Docker Compose
+# Docker Compose task
 
-![](_img/dockercompose.png) Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to build, push or run multi-container Docker applications. This task can be used with Docker or Azure Container registry.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -59,7 +62,7 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

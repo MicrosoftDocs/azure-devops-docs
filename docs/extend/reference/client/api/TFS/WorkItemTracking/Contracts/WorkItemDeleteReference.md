@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/Contracts WorkItemDeleteReference API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/Contracts WorkItemDeleteReference API | Extensions for Azure DevOps Services
 ms.assetid: 921f32c8-de86-88ee-2239-ecc7f1f1c555
 ms.prod: devops
 ms.technology: devops-ecosystem

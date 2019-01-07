@@ -1,20 +1,22 @@
 ---
 title: Add a custom field to an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add a custom work item type for an Inheritance process model and apply to a project  
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
-ms.date: 05/31/2018
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/19/2018
 ---
 
-# Add a custom work item type     
+# Add a custom work item type (Inheritance process)     
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 You use different work item types (WITs) to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
@@ -28,12 +30,14 @@ For example, you may want to capture customer issues in a custom WIT labeled Tic
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
- 
 [!INCLUDE [temp](../_shared/create-inherited-process.md)] 
 
 <a id="add-wit">  </a>
@@ -41,7 +45,7 @@ To learn more about what you can customize, see [About process customization and
 
 0. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
-	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
@@ -70,7 +74,7 @@ To learn more about what you can customize, see [About process customization and
 	<a id="layout">  </a>
 0.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field will appear on the form.  
 
-	Here we choose to add a new field. Choose the ![](_img/process/new-field-icon.png) (**New Field** icon).  
+	Here we choose to add a new field. Choose the ![ ](_img/process/new-field-icon.png) (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![New WIT, customize layout](_img/process/cpwit-new-ticket-define.png) 	
@@ -88,9 +92,7 @@ To learn more about what you can customize, see [About process customization and
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-
 # [New navigation](#tab/new-nav)
-
 
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
@@ -101,7 +103,6 @@ We recommend that you create a test project and apply your customized  inherited
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](_img/process/create-test-project.png) 
-
 
 0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
@@ -115,13 +116,14 @@ We recommend that you create a test project and apply your customized  inherited
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
-0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png)  
 
-
 # [Previous navigation](#tab/previous-nav)
+
+::: moniker range="vsts"
 
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
@@ -140,10 +142,16 @@ We recommend that you create a test project and apply your customized  inherited
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
-0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png) 
+
+::: moniker-end
+
+::: moniker range="azdevserver-2019"
+[!INCLUDE [temp](../../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker-end
 
 ---
 

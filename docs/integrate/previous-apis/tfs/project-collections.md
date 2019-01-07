@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Project Collections | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with project collections programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < vsts'
+title: Project Collections | REST API Reference for Team Foundation Server
+description: Work with project collections programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 8172F58D-5131-4571-91D0-C1E11B05C4FE
 ms.manager: douge
 ms.topic: article
@@ -13,11 +13,14 @@ ms.date: 08/04/2016
 ---
 
 # Project collections
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version-preview2.md)]
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
 
-[Project collections](http://msdn.microsoft.com/en-us/library/dd236915.aspx) contain [projects](./projects.md) that have source code, work items, and other resources.
+[Project collections](http://msdn.microsoft.com/library/dd236915.aspx) contain [projects](./projects.md) that have source code, work items, and other resources.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -31,12 +34,36 @@ GET https://{instance}/_apis/projectcollections/{collection}?api-version={versio
 | Parameter   | Type   | Notes                                                                                                                       
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | TFS server name ({server:port}).
 | collection  | string | Name or ID of the project collection.                                                     
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-[!code-REST [GET__projectCollections__collectionId__json](./_data/projectCollections/GET__projectCollections__collectionId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16?api-version=1.0-preview.2
+```
+
+#### Sample response
+
+```json
+{
+  "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+  "name": "DefaultCollection",
+  "url": "https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+  "state": "Started",
+  "_links": {
+    "self": {
+      "href": "https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16"
+    },
+    "web": {
+      "href": "https://mytfsserver/DefaultCollection"
+    }
+  }
+}
+```
+
 
 #### Sample code
 

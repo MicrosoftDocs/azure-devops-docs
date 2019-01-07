@@ -1,5 +1,5 @@
 ---
-title: Add a dashboard widget | Extensions for VSTS
+title: Add a dashboard widget | Extensions for Azure DevOps Services
 description: Tutorial for creating a widget that you can then add to a dashboard  
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -20,12 +20,12 @@ A single extension can have multiple contributions. In this guide we will show y
 This guide is divided into three parts, each building on the previous ones. The goal is to start with a simple widget and end with a comprehensive one.
 
 ## Preparation and required setup for this tutorial
-In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
+In order to create extensions for Azure DevOps Services, there are some prerequisite software and tools you'll need:
 
 **Knowledge:**
 Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
-- A **VSTS account** for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-vs.aspx)
+- An **organization** in Azure DevOps Services for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
@@ -48,7 +48,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
 ## What you'll find in the tutorial
 1. The first part of this guide shows you how to create a new widget which prints a simple "Hello World" message. 
-2. The [second part](#part-2) builds on the first one by adding a call to a VSTS REST API. 
+2. The [second part](#part-2) builds on the first one by adding a call to an Azure DevOps Services REST API. 
 3. The [third part](#part-3) explains how to add configuration to your widget. 
 
 > If you're in a hurry and want to get your hands on the code right away, you can download the complete samples [here](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets).
@@ -64,7 +64,7 @@ This part presents a widget that prints "Hello World" using JavaScript.
 <a name="step-1-files" />
 
 ### Step 1: Get the client SDK - `VSS.SDK.min.js`
-The core SDK script, `VSS.SDK.min.js`, enables web extensions to communicate to the host VSTS frame and to perform operations like initializing, notifying extension is loaded or getting context about the current page. 
+The core SDK script, `VSS.SDK.min.js`, enables web extensions to communicate to the host Azure DevOps Services frame and to perform operations like initializing, notifying extension is loaded or getting context about the current page. 
 Get the Client SDK `VSS.SDK.min.js` file and add it to your web app. Place it in the `home/sdk/scripts` folder.
 
 Use the 'npm install' command to retrieve the SDK:
@@ -79,7 +79,7 @@ npm install vss-web-extension-sdk
 This is the glue that holds your layout together and includes references to CSS and JavaScript. 
 You can name this file anything, just be sure to update all references to `hello-world` with the name you use.
 
-Your widget is HTML based and will be hosted in an [iframe](https://msdn.microsoft.com/en-us/library/windows/apps/hh465955.aspx). 
+Your widget is HTML based and will be hosted in an [iframe](https://msdn.microsoft.com/library/windows/apps/hh465955.aspx). 
 Add the below HTML in `hello-world.html`. We add the mandatory reference to `VSS.SDK.min.js` file and include an `h2` element in the `body` which will be updated with the string Hello World in the upcoming step.
 
 ```html
@@ -132,7 +132,7 @@ In our case, below is the code that would print "Hello World" in the widget. Add
 
 `VSS.init` initializes the handshake between the iframe hosting the widget and the host frame..
 We pass `explicitNotifyLoaded: true` so that the widget can explicitly notify the host when we are done loading. This control allows us to notify load completion after ensuring that the dependent modules are loaded.
-We pass `usePlatformStyles: true` so that the VSTS core styles for html elements (such as body, div etc) can be used by the Widget. If the widget prefers to not use these styles, they can pass in `usePlatformStyles: false`.
+We pass `usePlatformStyles: true` so that the Azure DevOps Services core styles for html elements (such as body, div etc) can be used by the Widget. If the widget prefers to not use these styles, they can pass in `usePlatformStyles: false`.
 
 `VSS.require` is used to load the required VSS script libraries. A call to this method automatically loads general libraries like [JQuery](https://jquery.com/)  and [JQueryUI](https://jqueryui.com/). 
 In our case we depend on the WidgetHelpers library which is used to communicate widget status to the widget framework.
@@ -312,21 +312,21 @@ You can optionally use ```--share-with``` to share your extension with one or mo
 You'll need a personal access token, too.
 
 ```no-highlight
-tfx extension publish --manifest-globs your-manifest.json --share-with youraccount
+tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
 ```
 
 <a name="add-from-catalog"/>
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://yourAccount.visualstudio.com/DefaultCollection/yourProject. If this page is already open, then refresh it. 
+Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and click on the Add button. This should open the widget catalog where you will find the widget you just installed. 
 Choose your widget and click the 'Add' button to add it to your dashboard.
 
 
 <a name="part-2"/>
 
-## Part 2: Hello World with VSTS REST API
-Widgets can call any of the [REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts/?view=vsts) in VSTS to interact with VSTS resources.
+## Part 2: Hello World with Azure DevOps Services REST API
+Widgets can call any of the [REST APIs](/rest/api/vsts/?view=vsts) in Azure DevOps Services to interact with Azure DevOps Services resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
@@ -390,8 +390,8 @@ This will allow the framework to uniquely identify the widget within the extensi
 </html>
 ```
 
-### Step 2: Access VSTS Resources
-To enable access to VSTS resources, [scopes](./manifest.md#scopes) need to be specified in the extension manifest. We will add the `vso.work` scope to our manifest.  
+### Step 2: Access Azure DevOps Services Resources
+To enable access to Azure DevOps Services resources, [scopes](./manifest.md#scopes) need to be specified in the extension manifest. We will add the `vso.work` scope to our manifest.  
 This scope indicates the widget needs read-only access to queries and workitems. See all available scopes [here](./manifest.md#scopes).
 Add the below at the end of your extension manifest.
 
@@ -412,7 +412,7 @@ Add the below at the end of your extension manifest.
 
 ### Step 3: Make the REST API Call 
 
-There are many client-side libraries that can be accessed via the SDK to make REST API calls in VSTS. 
+There are many client-side libraries that can be accessed via the SDK to make REST API calls in Azure DevOps Services. 
 These are called REST clients and are JavaScript wrappers around Ajax calls for all available server side endpoints.
 You can use methods provided by these clients instead of writing Ajax calls yourself. These methods map the API responses to objects that can be consumed by your code.
 
@@ -434,7 +434,7 @@ VSS.require(["TFS/Dashboards/WidgetHelpers", "TFS/WorkItemTracking/RestClient"],
 		    var projectId = VSS.getWebContext().project.id;
 			
 			var getQueryInfo = function (widgetSettings) {
-				// Get a WIT client to make REST calls to VSTS
+				// Get a WIT client to make REST calls to Azure DevOps Services
                 return TFS_Wit_WebApi.getClient().getQuery(projectId, "Shared Queries/Feedback")
                     .then(function (query) {
                         // Do something with the query
@@ -503,7 +503,7 @@ Your final `hello-world2.html` will be as follows:
 					var projectId = VSS.getWebContext().project.id;
 
 					var getQueryInfo = function (widgetSettings) {
-						// Get a WIT client to make REST calls to VSTS
+						// Get a WIT client to make REST calls to Azure DevOps Services
 						return TFS_Wit_WebApi.getClient().getQuery(projectId, "Shared Queries/Feedback")
 							.then(function (query) {
 								// Create a list with query details                                
@@ -611,7 +611,7 @@ If you have already published the extension before this point, you can repackage
 
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://yourAccount.visualstudio.com/DefaultCollection/yourProject. If this page is already open, then refresh it. 
+Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and click on the Add button. This should open the widget catalog where you will find the widget you just installed. 
 Choose your widget and click the 'Add' button to add it to your dashboard.
 
@@ -849,7 +849,7 @@ return {
 
 <br>
 The hard-coded query path in `getQueryInfo` should be replaced with the configured query path which can be extracted from the parameter `widgetSettings` that is passed to the method.
-Add the below in the very beginning of the `getQueryInfo` method and replace the hard-coded query path with `settings.queryPath`.
+Add the below in the very beginning of the `getQueryInfo` method and replace the hard-coded querypath with `settings.queryPath`.
 
 ```JavaScript
 var settings = JSON.parse(widgetSettings.customSettings.data);
@@ -958,7 +958,7 @@ If you have not published your extension yet, then read [this](#package-publish-
 If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the marketplace.
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://yourAccount.visualstudio.com/DefaultCollection/yourProject. If this page is already open, refresh it. 
+Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
 Hover on the Edit button in the bottom right, and click on the Add button. This should open the widget catalog where you will find the widget you just installed. 
 Choose your widget and click the 'Add' button to add it to your dashboard.
 

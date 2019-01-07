@@ -3,13 +3,13 @@
 # Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
 - task: Kubernetes@1
   inputs:
-    #connectionType: 'Azure Resource Manager' # Options: azure Resource Manager, kubernetes Service Connection
+    #connectionType: 'Azure Resource Manager' # Options: azure Resource Manager, kubernetes Service Connection, none
     #kubernetesServiceEndpoint: # Required when connectionType == Kubernetes Service Connection
     #azureSubscriptionEndpoint: # Required when connectionType == Azure Resource Manager
     #azureResourceGroup: # Required when connectionType == Azure Resource Manager
     #kubernetesCluster: # Required when connectionType == Azure Resource Manager
     #namespace: # Optional
-    #command: 'apply' # Options: apply, create, delete, exec, expose, get, logs, run, set, top
+    #command: 'apply' # Options: apply, create, delete, exec, expose, get, login, logout, logs, run, set, top
     #useConfigurationFile: false # Optional
     #configuration: # Required when useConfigurationFile == True
     #arguments: # Optional

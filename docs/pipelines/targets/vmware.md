@@ -1,18 +1,21 @@
 ---
-title: VMware deployment
-description: Provision and manage virtual machines (VMs) in VMware vCenter Server from Microsoft Release Management in VSTS or TFS
+title: Deploy to VMware
+description: Provision and manage virtual machines (VMs) in VMware vCenter Server
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# VMware deployment
+# Deploy to VMware vCenter Server
+
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -24,7 +27,7 @@ You can automatically provision virtual machines in a VMware environment and dep
 
 ::: moniker range="vsts"
 
-You need to first configure how VSTS connects to vCenter. You cannot use Microsoft-hosted agents to run VMware tasks since the vSphere SDK is not installed on these machines. You have to a set up a self-hosted agent that can communicate with the vCenter server.
+You need to first configure how Azure Pipelines connects to vCenter. You cannot use Microsoft-hosted agents to run VMware tasks since the vSphere SDK is not installed on these machines. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 
 ::: moniker-end
 
@@ -64,11 +67,11 @@ the agent machine:
      `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
 
 1. Install the VMware extension 
-   from Visual Studio Marketplace into TFS or VSTS.
+   from Visual Studio Marketplace into TFS or Azure Pipelines.
 
-   * If you are using **VSTS**, 
+   * If you are using **Azure Pipelines**, 
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
-     in Visual Studio Marketplace. 
+     in Visual Studio Marketplace.
    * If you are using **Team Foundation Server**, download 
      the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
      in Visual Studio Marketplace, upload it to your 
@@ -76,7 +79,7 @@ the agent machine:
 
 1. Follow these steps to create a vCenter Server service connection in your project:
 
-   * Open your VSTS or TFS project in 
+   * Open your Azure Pipelines or TFS project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New service connection**, and select **VMware vCenter Server**.
@@ -91,7 +94,7 @@ the agent machine:
        vCenter server, in the form `https://machine.domain.com/`.
        Note that only **HTTPS** connections are supported.
      - **Username** and **Password**: Enter the credentials
-       required to connect to the vCenter Server. 
+       required to connect to the vCenter Server.
        Username formats such as **username**, **domain\\username**,
        **machine-name\\username**, and **.\\username** are supported.
        UPN formats such as **username@domain.com** and built-in system 
@@ -103,7 +106,7 @@ Use the **VMware Resource Deployment** task from the VMware extension and config
    
    - **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
    
-   - **Action**: Select one of the actions: **Take Snapshot of Virtual Machines**, **Revert Snapshot of Virtual Machines**, or **Delete Snapshot of Virtual Machines**. 
+   - **Action**: Select one of the actions: **Take Snapshot of Virtual Machines**, **Revert Snapshot of Virtual Machines**, or **Delete Snapshot of Virtual Machines**.
    
    - **Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`
    
@@ -123,7 +126,7 @@ Use the **VMware Resource Deployment** task from the VMware extension and config
    on the vCenter Server, open the VMware vSphere Web 
    Client in your browser and check for a certificate
    error page. The vSphere Web Client URL will be 
-   of the form `https://machine.domain/vsphere-client/`. 
+   of the form `https://machine.domain/vsphere-client/`.
    Good practice guidance for vCenter Server certificates 
    can be found in the [VMware Knowledge Base](http://aka.ms/vcentercertificate)
    (article 2057223).

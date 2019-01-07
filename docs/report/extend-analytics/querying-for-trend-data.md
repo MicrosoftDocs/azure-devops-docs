@@ -1,7 +1,7 @@
 ---
 title: Query trend data
-titleSuffix: VSTS 
-description: How to query the Analytics service trend data and consume it in a client tool when working from Visual Studio Team Services   
+titleSuffix: Azure DevOps Services 
+description: How to query the Analytics service trend data and consume it in a client tool when working from Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
@@ -9,16 +9,17 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 11/13/2017
+monikerRange: '>= azdevserver-2019'
+ms.date: 11/2/2018
 ---
 
 # Query trend data
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. The Analytics service supports these capabilities.
 
-Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an account with only one work item that was created a year ago, there are 365 rows in this entity. For very large projects, these entities would be impractical to use with client tools.
+Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an organization with only one work item that was created a year ago, there are 365 rows in this entity. For very large projects, these entities would be impractical to use with client tools.
 
 What is the solution? Use the [Aggregation Extensions](aggregated-data-analytics.md). 
 
@@ -31,8 +32,18 @@ In this topic you'll learn:
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
-Using the OData Aggregation Extensions, you can return aggregated data from VSTS that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
+Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
+::: moniker range=">= azdevserver-2019"
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+::: moniker-end
 
 ## Construct a basic query for trend data   
  
@@ -45,7 +56,7 @@ With this in mind, the query to create a bug trend report looks like the followi
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
   $apply=
     filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
     groupby((DateValue,State), aggregate($count as Count))
@@ -58,7 +69,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
   "value": [
     {
       "@odata.id": null,
@@ -86,7 +97,7 @@ To construct that query, do the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemSnapshot?
   $apply=
     filter(WorkItemType eq 'Bug')/
     filter(Iteration/IterationName eq 'Sprint 99')/
@@ -100,7 +111,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemSnapshot(DateValue,State,Count)",
   "value": [
     {
       "@odata.id": null,

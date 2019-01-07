@@ -1,5 +1,5 @@
 ---
-title: Use the Combo Control | Extensions for VSTS
+title: Use the Combo Control | Extensions for Azure DevOps Services
 description: Use the combo control to have an editable control with the drop down support like list, tree, date-time and multi-value.
 ms.assetid: 03575E92-8FA7-7DC6-5699-2E5811A332CA
 ms.prod: devops
@@ -153,7 +153,7 @@ VSS.require(["VSS/Controls", "VSS/Controls/Combos"], function(Controls, Combos) 
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/list_combo.gif" /> 
+<img alt="Basic list combo gif" src="_img/list_combo.gif" /> 
 </div>
 
 <a name="searchTree"></a>
@@ -237,12 +237,12 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/tree_combo.gif" /> 
+<img alt="Basic tree combo gif" src="_img/tree_combo.gif" /> 
 </div>
 
 <a name="date-time"></a>
 ### Datetime picker
-This sample shows the usage of combo by type `date-time`. Please note that selecting different day from the picker will preseverse the hour value.
+This sample shows the usage of combo by type `date-time`. Please note that selecting different day from the picker will preserve the hour value.
 
 <ul class="nav nav-tabs" data-tabs="tabs">
 <li class="active"><a data-toggle="tab" href="#typescript_datetime">TypeScript</a></li>
@@ -299,7 +299,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/datetime_combo.gif" /> 
+<img alt="Basic date time combo gif" src="_img/datetime_combo.gif" /> 
 </div>
 
 
@@ -367,5 +367,5 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img src="_img/multivalue_combo.gif" /> 
+<img alt="Basic multivalue combo gif" src="_img/multivalue_combo.gif" /> 
 </div>

@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts TfvcBranchRef API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts TfvcBranchRef API | Extensions for Azure DevOps Services
 ms.assetid: df222d4f-5226-b708-a8ef-7e9707515ffd
 ms.prod: devops
 ms.technology: devops-ecosystem

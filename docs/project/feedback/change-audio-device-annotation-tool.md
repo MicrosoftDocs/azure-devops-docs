@@ -1,7 +1,7 @@
 ---
 title: Change the audio device or annotation tool
-titleSuffix: VSTS & TFS
-description: Change the default settings used for the annotation tool or audio device in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: Change the default settings used for the annotation tool or audio device in Azure DevOps Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -47,5 +47,5 @@ You can change the default settings used by Microsoft Feedback Client for the an
   
 4.  Choose the **Save** button.  
   
-## Related notes 
+## Related articles 
 - [Provide feedback](give-feedback.md)

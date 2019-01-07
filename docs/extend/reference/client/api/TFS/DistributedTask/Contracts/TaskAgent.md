@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts TaskAgent API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts TaskAgent API | Extensions for Azure DevOps Services
 ms.assetid: 218462f5-7b2d-42a4-de7c-c39047987f1f
 ms.prod: devops
 ms.technology: devops-ecosystem

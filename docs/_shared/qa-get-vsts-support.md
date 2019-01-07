@@ -1,5 +1,10 @@
 
 
-#### Q: How do I get help or support for VSTS?
+#### Q: How do I get help or support for Azure DevOps?
 
-A:	You have several options for support. You can report a problem with VSTS on [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), provide a suggestion on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services), get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services), and get support on [Visual Studio Team Services Support](https://visualstudio.microsoft.com/team-services/support). You can also view the archives of the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService) on MSDN.
+A:	You have several options for support:
+* Report a problem with Azure DevOps on [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+* Provide a suggestion on [Developer Community](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).
+* Get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services).
+* Get support on [Azure DevOps Support](https://azure.microsoft.com/support/devops).
+* View the archives of the [Azure DevOps forum](https://social.msdn.microsoft.com/Forums/home?forum=TFService) on MSDN.

@@ -1,6 +1,6 @@
 ---
 title: Add work item queries to a process template
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Define the initial set of shared queries and query folder structure for a project in Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile

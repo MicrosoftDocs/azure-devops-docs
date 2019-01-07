@@ -1,22 +1,24 @@
 ---
-title: Naming restrictions and conventions 
-titleSuffix: VSTS & TFS
-description: Length, uniqueness, and special character requirements to meet when labeling objects such as an organization, project, tags, templates, and more
+title: Restrictions and conventions for naming
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Requirements to meet when labeling objects such as an organization, project, tags, templates, and more, like length, uniqueness, and special characters 
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 06/26/2018
+ms.date: 12/06/2018
 ---
 
 # Naming restrictions and conventions  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
-Most components in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
+
+Most components in Azure DevOps Services and Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
@@ -348,7 +350,7 @@ Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://m
 
 ### Process and process templates 
 
-A process defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or the web portal for an on-premises TFS. 
+A process defines the building blocks of the work item tracking system as well as other sub-systems you access when you connect to a project.  
 
 > [!NOTE]   
 >  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../boards/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
@@ -785,7 +787,7 @@ For descriptions of system fields and fields defined in the default process temp
 
 <a id="ExamplesFieldReferenceNames">  </a>
     
-**Examples of field reference names  **
+**Examples of field reference names**
 
 The following examples show valid field reference names, in various namespaces. Customers and partners can also define their own namespaces to support their custom work item types.   
 
@@ -1134,6 +1136,7 @@ Team Foundation version control (TFVC) provides a central repository for files a
 
 Version control paths must conform to the following restrictions. See also [Optimize your workspace](https://msdn.microsoft.com/library/ms181378.aspx).
 
+In the web portal and REST API certain operations (Edit, Rename, and Delete) have a more restrictive path length than Visual Studio and TF.exe clients.  This is due to web portal/REST utilizing a randomly generated workspace for concurrency when pending the changes.
 <table>
 <tr>
 <th width="20%">Restriction type</th>
@@ -1168,6 +1171,18 @@ Version control paths must conform to the following restrictions. See also [Opti
 </li>
 <li>
 <p>Must not contain more than 260 Unicode characters for a combined directory and file name.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Web portal and REST specific length restrictions</p>
+</td>
+<td>
+<ul>
+<li>
+<p>Must not contain more than 215 Unicode characters for a combined project name, directory and file name.</p>
 </li>
 </ul>
 </td>
@@ -1291,7 +1306,7 @@ Shelveset names must conform to the following restrictions.
 </tr>
 </table>
 
-##TFVC workspaces
+## TFVC workspaces
 
 A workspace is a client-side copy of the files and folders in Team Foundation version control (TFVC). When you create multiple workspaces, you can have different versions of the same version control folder on a client computer. [Create and work with workspaces](../../repos/tfvc/create-work-workspaces.md) provides more details. 
 

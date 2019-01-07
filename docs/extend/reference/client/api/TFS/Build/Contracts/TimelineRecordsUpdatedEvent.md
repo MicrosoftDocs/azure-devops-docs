@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts TimelineRecordsUpdatedEvent API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts TimelineRecordsUpdatedEvent API | Extensions for Azure DevOps Services
 ms.assetid: 703aafe9-6593-72bf-8fb1-a90f5fbf6f82
 ms.prod: devops
 ms.technology: devops-ecosystem

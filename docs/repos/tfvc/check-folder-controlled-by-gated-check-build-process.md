@@ -1,5 +1,6 @@
 ---
 title: Check in to a folder that is controlled by a gated check-in build process
+titleSuffix: Azure Repos
 description: Check in to a folder that is controlled by a gated check-in build process
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
 ms.prod: devops
@@ -15,11 +16,11 @@ monikerRange: '>= tfs-2015'
 
 # Check in to a folder that is controlled by a gated check-in build process
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 
-![](_img/check-folder-controlled-by-gated-check-build-process/IC572351.png)
+![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC572351.png)
 **Required permissions**
 
 You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
@@ -62,7 +63,7 @@ The gated check-in process provides a way to proceed with the check-in and conti
 
 2.  In the **Gated Check-in** dialog box, choose **Build Changes**.
 
-    In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![](_img/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![](_img/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
+    In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
 
 3.  After the build is completed:
 
@@ -86,7 +87,7 @@ If you want to proceed with the gated check-in operation and you do not plan to 
 
     -   Choose **Build Changes**.
 
-3.  In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![](_img/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![](_img/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
+3.  In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
 
 4.  After the build is completed:
 

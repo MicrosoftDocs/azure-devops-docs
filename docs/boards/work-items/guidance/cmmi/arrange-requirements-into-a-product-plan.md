@@ -1,20 +1,21 @@
 ---
-title: CMMI process guidance, Arrange requirements in a product plan
-titleSuffix: VSTS & TFS
-description: Obtain and arrange a plan, starting from a set of requirements - Team Foundation Server (TFS)
+title: Arrange requirements in a product plan
+titleSuffix: Azure Boards
+description: CMMI process guidance, Create a plan from a set of requirements 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171
 ms.topic: conceptual
-ms.author: kaelli  author: KathrynEE 
+ms.author: kaelli  
+author: KathrynEE 
 ms.manager: douge
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017 
 ---
 
 # Arrange requirements into a product plan
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 After you analyze your customer requirements sufficiently to understand what the product should do, you must work out a plan to implement the product. Or, for an existing product, you must work out what functionality is missing and work out a plan for making the changes. But the requirements do not automatically tell you the plan.  
   
@@ -83,7 +84,7 @@ After you analyze your customer requirements sufficiently to understand what the
 ##  <a name="Decomp"></a> Scenario decomposition  
  To help you arrange the requirements into features, it helps to decompose the scenarios into smaller steps.  
   
- Storyboards often help with this activity. A storyboard is a sequence of pictures that illustrate the scenario. UML activity diagrams are useful for showing alternative paths, and UML sequence diagrams can help you discuss interactions between several actors. After you use these tools to analyze a scenario, you can enter the decomposed scenarios into Team Explorer. This lets you link test cases to the scenarios and thereby ensure that the requirements have been satisfied. For more information, see [UML Activity Diagrams: Guidelines](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams) and [UML Sequence Diagrams: Guidelines](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
+ Storyboards often help with this activity. A storyboard is a sequence of pictures that illustrate the scenario. UML activity diagrams are useful for showing alternative paths, and UML sequence diagrams can help you discuss interactions between several actors. After you use these tools to analyze a scenario, you can enter the decomposed scenarios into Team Explorer. This lets you link test cases to the scenarios and thereby ensure that the requirements have been satisfied. For more information, see [UML Activity Diagrams: Guidelines](/visualstudio/modeling/create-uml-modeling-projects-and-diagrams) and [UML Sequence Diagrams: Guidelines](/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
   
 ##  <a name="Features"></a> Features - requirements fulfilled in each iteration  
  A feature is a requirement that summarizes what the users can do at the completion of each iteration. You can create more than one feature for each iteration. Enter them as requirement work items, setting the Requirement Type to Feature.  

@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-You want to package and publish some projects in a C# class library to your VSTS feed.
+You want to package and publish some projects in a C# class library to your Azure Artifacts feed.
 
 ```
 `-- Message
@@ -44,14 +44,14 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
 
 
-### Publish to VSTS
+### Publish to Azure Artifacts
 
 Make sure you've prepared the build as described [above](#prepare).
 
 
 #### Create the feed
 
-See [Create a feed](../../../package/feeds/create-feed.md).
+See [Create a feed](../../../artifacts/feeds/create-feed.md).
 
 
 #### [Build](../../index.md) tasks
@@ -83,11 +83,11 @@ See [Create a feed](../../../package/feeds/create-feed.md).
 <tr>
 <td>![Package: NuGet Publisher](../package/_img/nuget-publisher.png)<br/>**Package: NuGet Publisher**</td>
 <td>
-<p>Publish your packages to VSTS.</p>
+<p>Publish your packages to Azure Artifacts.</p>
 <ul>
 <li>Path/Pattern to nupkg: ```**\*.nupkg```</li>
 <li>Feed type: Internal NuGet Feed</li>
-<li>Internal feed URL: See [Find your NuGet package source URL](../../../package/nuget/consume.md#get-nuget-pkg-url).
+<li>Internal feed URL: See [Find your NuGet package source URL](../../../artifacts/nuget/consume.md#get-nuget-pkg-url).
 </li>
 </ul>
 </td>

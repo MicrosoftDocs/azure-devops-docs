@@ -1,7 +1,8 @@
 ---
 title: Query by numeric field
-titleSuffix: VSTS & TFS
-description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards
+description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards, Azure DevOps, & Team Foundation Server
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
@@ -9,7 +10,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
-ms.date: 02/05/2018  
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018  
 ---
 
 # Query by numeric fields    
@@ -21,7 +23,7 @@ How do I determine how much work each developer has completed on my team? Is the
 The most common numeric fields track effort for items in the Requirements category or estimated, remaining, and completed work for items in the Task category. With queries you can list the work items of interest, and then define a chart that shows either a count of work items or a sum of a numeric field. 
 
 
-###Tips for developing chart-based-queries: 
+### Tips for developing chart-based-queries: 
 
 - You can only add charts for flat-list queries  
 - Chart options reference either query filters or fields displayed through column options
@@ -88,7 +90,7 @@ Unestimated user stories
 
 All queries show a count of items when you run the query. Here we define a flat-list query that filters for bugs in any state.  
 
-<img src="_img/query-effort-active-bugs-count-summary.png" alt="Query bugs any state, count of work items summary" style="border: 2px solid #C3C3C3;" />
+![Query bugs any state, count of work items summary](_img/query-effort-active-bugs-count-summary.png)  
 
 In addition, all charts contain a Values selection designed to display a count of work items within the chart. 
 
@@ -96,13 +98,28 @@ In addition, all charts contain a Values selection designed to display a count o
  
 Create an  active bugs query and modify the column options to show Assigned To and State. Then, add a pivot chart that displays the assignments and state. 
 
+::: moniker range=">= azdevserver-2019"
+> [!div class="mx-imgBorder"]  
+> ![Configure chart dialog, pivot by assigned to and state](_img/numeric/config-pivot-items-developer.png)  
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 <img src="_img/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" />  
+::: moniker-end
 
 ### Count of bugs by state and area 
 
 Using the same flat-list query that filters for bugs shown in the previous section, you can show a count based on area. Modify the column options to show the Area Path. Then, add a pivot chart that displays the state and area path. 
 
-<img src="_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png" alt="Configure chart, count of bugs by area, state, pivot chart" style="border: 2px solid #C3C3C3;" />
+::: moniker range=">= azdevserver-2019"
+> [!div class="mx-imgBorder"]  
+> ![Configure chart dialog, pivot by state and area](_img/numeric/config-pivot-state-area.png)  
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+![Configure chart, count of bugs by area, state, pivot chart](_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png)
+::: moniker-end
+
 
 <a id="effort"/>
 ##Queries and charts based on effort or story points 
@@ -111,19 +128,27 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 
 ### Sum of story points and their status   
 
-> [!NOTE]    
->**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
-
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
 
 <img src="_img/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" style="border: 2px solid #C3C3C3;" />
 
 Then, add a stacked bar chart that sums the Story Points. 
 
-<img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
+::: moniker range=">= azdevserver-2019"
+> [!div class="mx-imgBorder"]  
+> ![Configure chart dialog, stacked bar, sum of story points](_img/numeric/config-psum-story-points-stacked-bar.png)  
+::: moniker-end
 
+::: moniker range="<= tfs-2018"
+<img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
+::: moniker-end
+
+::: moniker range="tfs-2013"
 > [!NOTE]    
->For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
+> The **Sum** feature is supported for TFS 2013.4 and later versions.
+::: moniker-end
+
+For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
 
 ###Show a burnup chart of user stories for an iteration 
 
@@ -133,7 +158,15 @@ Create a query that filters for User Story as the work item type and in the Acti
 
 Then, add a stacked area trend chart that sums the Story Points. 
 
+::: moniker range=">= azdevserver-2019"
+> [!div class="mx-imgBorder"]  
+> ![Configure chart dialog, trend, sum of story points](_img/numeric/config-trend-sum-story-points.png)  
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 <img src="_img/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
+::: moniker-end
+
 
 <a id="work"/>
 ##Queries and charts based on remaining and completed work 
@@ -147,13 +180,7 @@ Based on the process your project references, you can assign the following field
 | CMMI  | Original Estimate, Remaining Work, Completed Work  |
 
 
-
-
-
 ### Sum of remaining work per developer 
-
-> [!NOTE]    
->**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
 
@@ -161,11 +188,21 @@ If you follow Scrum practices and estimate Remaining Work for your tasks and bug
 
 Add Remaining Work as a column option to the query and save. To view a sum of the remaining work, add a pivot chart as shown. 
 
-<img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" />  
+::: moniker range=">= azdevserver-2019"
+> [!div class="mx-imgBorder"]  
+> ![Configure chart dialog, pivot, sum of remaining work per developer](_img/numeric/config-pivot-remaining-work-per-developer-area.png)  
+::: moniker-end
 
+::: moniker range="<= tfs-2018"
+<img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" /> 
+::: moniker-end
 
+::: moniker range="tfs-2013"
 > [!NOTE]    
->For information on system-defined sprint burndown charts, see [Sprint burndown](../sprints/sprint-burndown.md).
+> The **Sum** feature is supported for TFS 2013.4 and later versions.
+::: moniker-end
+ 
+For information on system-defined sprint burndown charts, see [Sprint burndown](../sprints/sprint-burndown.md).
 
 
 ## Fields used to estimate and track work
@@ -176,9 +213,9 @@ The following table describes the activity-based and numeric fields that you can
 <table width="100%">
 <thead>
 <tr>
-  <th width="17%">Field name</th>
-  <th width="66%">Description</th>
-  <th width="17%">Work item type</th>
+  <th width="20%">Field name</th>
+  <th width="55%">Description</th>
+  <th width="25%">Work item type</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -222,7 +259,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. </p><p>This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file.</p>
 <p>Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double</p>
 </td>
-<td>Product Backlog Item, Bug <sup>4</sup> (Scrum)</td>
+<td>Product Backlog Item, Bug <sup>4</sup> (Scrum)<p>Feature, Epic</p></td>
 </tr>
 <tr>
 	<td><p>Story Points</p></td>
@@ -249,7 +286,7 @@ The following table describes the activity-based and numeric fields that you can
 	<td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
 <blockquote>
-<b>Note:</b> For VSTS, the task board always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label.  
+<b>Note:</b> For Azure Boards, the taskboard always shows "h" for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label.  
 </blockquote>
 <p>Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double</p>
 </td>
@@ -304,7 +341,7 @@ The main tools you use to plan and track work are described here:
 - [Create your backlog](../backlogs/create-your-backlog.md)
 - [Sprint planning](../sprints/assign-work-sprint.md)
 - [Capacity planning](../sprints/set-capacity.md)
-- [Task board](../sprints/task-board.md)
+- [taskboard](../sprints/task-board.md)
 - [Kanban board](../boards/kanban-basics.md)
 
 For more information on using work items and queries, see: 
@@ -319,7 +356,7 @@ For more information on using work items and queries, see:
 <a id="rollup"/>
 ### Rollup numeric values across work item types  
 
-Rollup provides summed values of select fields for all child work items of a parent. Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
+Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
 -[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)

@@ -1,5 +1,6 @@
 ---
-title: Rename a Git repo in your project | VSTS & TFS
+title: Rename a Git repo in your project
+titleSuffix: Azure Repos
 description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.prod: devops
@@ -8,20 +9,55 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 05/08/2018
+ms.date: 11/02/2018
 monikerRange: '>= tfs-2017'
 ---
 
 
 #  Rename a Git repository in your project
-#### VSTS | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
+#### Azure Repos | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team will have to take a few steps to re-enable their dev machines to connect to the repo on the server.
 
 >[!NOTE]
->The steps in this article refer to VSTS and TFS 2017 and higher. For TFS 2015, see [Rename a Git repository in TFS 2015](repo-rename-tfs2015.md).
+>The steps in this article refer to Azure Repos and TFS 2017 and higher. For TFS 2015, see [Rename a Git repository in TFS 2015](repo-rename-tfs2015.md).
 
-## Rename the repo in VSTS or TFS
+## Rename the repo in the web
+
+> [!IMPORTANT]
+> This step requires [Rename Repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"
+
+0. Select **Repos**, **Files**.
+
+  ![View your files](_img/repos-navigation/repos-files.png)
+
+0. From the repo drop-down, select **Manage repositories**.
+
+  ![Manage repositories](_img/repo-mgmt/manage-repositories.png)
+
+0. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Rename repository**.
+
+  ![Rename repository](_img/repo-mgmt/rename-repository.png)
+
+0. Rename the repository by typing the repo's new name and selecting **Rename**.
+
+  ![Rename repository confirm](_img/repo-mgmt/rename-repository-confirm.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
+
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
 
 0. Open the project administration page while working in your project on the web and select **Version Control**.
 
@@ -39,7 +75,9 @@ You can rename a Git repository in a project from your web browser. After you re
 
 0. Enter a new repo name in the **Repository name** field in the dialog, then select **Rename**.
 
-> This step requires [Rename Repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+  ![Rename repository confirm](_img/repo-mgmt/rename-repository-confirm.png)
+
+---
 
 ## Update the Git remotes on your dev machines
 
@@ -50,9 +88,24 @@ Each member of your team must update their local Git repos to continue connectin
 <a name="copy_remote_repo_url"></a>
 ### Get the new URL for the repo
 
-Copy the repository clone URL to your clipboard.
+# [New navigation](#tab/new-nav)
 
-![Remote URL for the repository from the Clone button in TFS and VSTS](_img/get_clone_url.gif)
+0. Select **Repos**, **Files**.
+
+  ![View your files](_img/repos-navigation/repos-files.png)
+
+1. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
+
+   ![Retrieve the clone URL](../get-started/_img/clone-repo/clone-repo.png)
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
+
+  ![Retrieve the clone URL](_img/repo-mgmt/clone-git-repo.png)
+
+---
 
 ### Update your remote in Visual Studio 2015 or 2017
 

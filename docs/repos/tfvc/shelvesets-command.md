@@ -1,5 +1,6 @@
 ---
 title: Shelvesets Command
+titleSuffix: Azure Repos
 description: Shelvesets Command
 ms.assetid: 731a4339-1ba7-45ab-a551-51c3f4ae158c
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Shelvesets Command
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Displays information about a set of shelved changes.
 

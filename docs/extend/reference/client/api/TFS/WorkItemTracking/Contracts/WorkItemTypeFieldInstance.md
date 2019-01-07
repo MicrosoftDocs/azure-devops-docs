@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/Contracts WorkItemTypeFieldInstance API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/Contracts WorkItemTypeFieldInstance API | Extensions for Azure DevOps Services
 ms.assetid: 8873a938-cc43-2991-2fe5-b45ce83628bf
 ms.prod: devops
 ms.technology: devops-ecosystem

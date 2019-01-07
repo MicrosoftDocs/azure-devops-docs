@@ -1,6 +1,6 @@
 ---
-title: Apache JMeter cloud-based load testing with VSTS
-description: Using JMeter to performance test your application in the cloud using the features of the Test hub in Microsoft VSTS
+title: Run Apache JMeter load tests
+description: Using JMeter to performance test your application in the cloud using the features of Azure DevOps and TFS
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.prod: devops
 ms.technology: devops-test
@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
-# Run Apache JMeter load tests with VSTS
+# Run Apache JMeter load tests with Azure DevOps
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 Before you start your load testing:
 
-* [Create your Visual Studio Team Services (VSTS) subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
+* [Create your Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already.
 
 **To run a JMeter load test:**
 
-1. Sign into VSTS.
+1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** hub, open the **+ New**
+1. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **Apache JMeter test**.
 
    ![Start a new load test from the New menu](_img/get-started-jmeter-test/JMeterLoadTestVSO-new-menu-item.png)
@@ -47,42 +47,42 @@ Before you start your load testing:
 
 1. When your test is done, look at the results to see how 
    well your app performed. For example, you can see an overview
-   of your app's performance in the **Summary** tab.
-   This tab shows all of the main metrics such as average response
+   of your app's performance in the **Summary** page.
+   This page shows all of the main metrics such as average response
    time, user load, requests per second, failed requests, any errors
    that might have occurred, and test usage.
 
    ![Load test Summary tab results](_img/get-started-jmeter-test/JMeterLoadTestVSO-summary-tab.png)
  
-   The lower section of the **Summary** tab shows the settings used
+   The lower section of the **Summary** page shows the settings used
    for the test, and details of the five slowest requests during the test.
-   If there are any transaction tests, the tab will also show the five slowest of these.
+   If there are any transaction tests, the page will also show the five slowest of these.
    Use the ![down arrow](_img/_shared/SimpleLoadTestVSO-sort-column.png)
    icon above a column to sort the list based on the contents of that column.
 
-1. Open the **Charts** tab to see a graphical representation of 
+1. Open the **Charts** page to see a graphical representation of 
    the test results over time. The charts show the average
    performance, throughput, errors, and the results of each test 
    request. Hover your mouse pointer over a chart to 
    see more details. 
 
-   ![Load test Charts tab results](_img/_shared/LoadTestVSO-charts.png)
+   ![Load test Charts page results](_img/_shared/LoadTestVSO-charts.png)
 
-1. Open the **Diagnostics** tab to see detailed information such as a list
+1. Open the **Diagnostics** page to see detailed information such as a list
    of errors and status messages.
 
-   ![Load test Diagnostics tab results](_img/get-started-jmeter-test/JMeterLoadTestVSO-diagnostics-tab.png)
+   ![Load test Diagnostics page results](_img/get-started-jmeter-test/JMeterLoadTestVSO-diagnostics-tab.png)
 
    You can also use the ![arrow](_img/_shared/SimpleLoadTestVSO-summary-errors-icon.png)
-   icon in the **Errors** section of the **Summary** tab to go directly to the 
-   **Diagnostics** tab.
+   icon in the **Errors** section of the **Summary** page to go directly to the 
+   **Diagnostics** page.
 
-   ![Opening the Diagnostics tab from the Summary tab](_img/_shared/SimpleLoadTestVSO-summary-errors-link.png)
+   ![Opening the Diagnostics page from the Summary tab](_img/_shared/SimpleLoadTestVSO-summary-errors-link.png)
 
-1. Open the **Logs** tab to see a list of test runs. Choose the link in
+1. Open the **Logs** page to see a list of test runs. Choose the link in
    the **Attachment** column to download the detailed log as a text file.
 
-   ![Load test Logs tab results](_img/get-started-jmeter-test/JMeterLoadTestVSO-logs-tab.png)
+   ![Load test Logs page results](_img/get-started-jmeter-test/JMeterLoadTestVSO-logs-tab.png)
 
 1. If you have a favorite listener that you use to analyze results in
    the JMeter IDE, download the test results in .CSV format and the logs
@@ -100,9 +100,9 @@ Before you start your load testing:
 
 * [FAQs for load testing](reference-qa.md#jmeter-tests)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with VSTS](get-started-simple-cloud-load-test.md) 
+* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

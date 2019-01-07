@@ -2,7 +2,7 @@
 title: Turn bugs on/off on your backlog – Nov 4
 description: VSTS release notes for November 04 2014
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: 31dc487d-11d6-4aea-9c4f-255b4bd61bf5
 ms.date: 06/01/2016
@@ -28,7 +28,7 @@ In future updates you can expect more configurations like these, including confi
 
 ##Test execution charts
 
-We’ve extended our charting capability to include test artifacts in the Test hub. Each test plan now includes a prepackaged chart showing the progress of all tests in the plan, and of course you can create as many snapshot and trend charts as necessary to monitor and track your test authoring activity. Like all charts, test charts can be pinned to your team and project home pages for visibility and sharing. And in case you’re wondering, yes: even Stakeholders can view test charts pinned to the home page. We’ve got a detailed walkthrough in our [Get Started](https://docs.microsoft.com/vsts/manual-test/getting-started/track-test-status?view=vsts) section where you can learn more.
+We’ve extended our charting capability to include test artifacts in the Test hub. Each test plan now includes a prepackaged chart showing the progress of all tests in the plan, and of course you can create as many snapshot and trend charts as necessary to monitor and track your test authoring activity. Like all charts, test charts can be pinned to your team and project home pages for visibility and sharing. And in case you’re wondering, yes: even Stakeholders can view test charts pinned to the home page. We’ve got a detailed walkthrough in our [Get Started](/azure/devops/manual-test/getting-started/track-test-status?view=vsts) section where you can learn more.
 
 ![Test execution chart](_img/11_04_03.png)
 
@@ -52,7 +52,7 @@ We’ve added a new dialog to all work item forms to aid in creating link relati
 
 ##REST batch support
 
-The new batch endpoint for [REST APIs](https://visualstudio.microsoft.com/integrate/reference/reference-vso-overview-vsi) lets you create and update multiple work items in a single call. For example, you can now change the states of a large number of work items or even create multiple work items and link them together, all in a single call.
+The new batch endpoint for [REST APIs](/azure/devops/integrate/) lets you create and update multiple work items in a single call. For example, you can now change the states of a large number of work items or even create multiple work items and link them together, all in a single call.
 
 ##Third-party OAuth scopes
 
@@ -60,7 +60,7 @@ We’ve enhanced our third-party authorization support by adding new OAuth scope
 
 ![Authorize application dialog](_img/11_04_07.png)
 
-To learn more about Visual Studio Online authorization for third-party apps and services, see [Authorize access with OAuth 2.0](https://docs.microsoft.com/vsts/integrate/get-started/authentication/oauth?view=vsts).
+To learn more about Visual Studio Online authorization for third-party apps and services, see [Authorize access with OAuth 2.0](/azure/devops/integrate/get-started/authentication/oauth?view=vsts).
 
 That’s it for Sprint 73.
 

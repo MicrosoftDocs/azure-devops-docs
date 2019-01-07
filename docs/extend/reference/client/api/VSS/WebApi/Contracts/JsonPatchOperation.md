@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts JsonPatchOperation API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts JsonPatchOperation API | Extensions for Azure DevOps Services
 description: The JSON model for a JSON Patch operation
 ms.assetid: 1f557561-697d-c417-cb20-0dcc06efed68
 ms.prod: devops

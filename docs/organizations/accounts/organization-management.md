@@ -1,6 +1,8 @@
 ---
-title: Create and manage your VSTS organization 
-description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions
+title: About creating and managing organization - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
@@ -8,15 +10,15 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# About organization management
+# About organization management in Azure DevOps
 
-**VSTS|TFS 2018|TFS 2017|TFS 2015|TFS 2013**
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-With a Visual Studio Team Services (VSTS) organization, you gain access to the platform in which you can:
+With an organization, you gain access to the platform in which you can do the following:
 
 * Collaborate with others to develop applications by using our cloud service.
 * Plan and track your work as well as code defects and issues.
@@ -26,15 +28,15 @@ With a Visual Studio Team Services (VSTS) organization, you gain access to the p
 
 ## Create your organization
 
-To get started, [create your VSTS organization](create-organization-msa-or-work-student.md) and then invite others so they can access your organization.
+Before you get started, read [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
-so that VSTS can create your team project for code and other assets,
+so that Azure DevOps can create your project for code and other assets,
 like builds, tests, and work items. If you're starting with Visual Studio
-as your development environment, you can create your VSTS organization when you
+as your development environment, you can create your organization when you
 [set up Visual Studio](set-up-vs.md).
 
-Your VSTS organization includes five free users
+Your organization includes five free users
 with Basic access, plus unlimited Visual Studio
 subscribers and stakeholders at no extra charge.
 Your organization also includes free monthly amounts
@@ -43,14 +45,14 @@ and cloud-based load testing.
 
 ## Connect to your organization
 
-After VSTS creates your organization,
-[connect to your organization](../../organizations/projects/connect-to-projects.md)
+When your organization is created,
+[connect to your projects](../../organizations/projects/connect-to-projects.md)
 with tools like Xcode, Eclipse, or Visual Studio,
-and add code to your team project.
+and add code to your project.
 
 Some clients, like Xcode, Git, and NuGet, require basic credentials
-(a username and password) for you to access VSTS.
-To connect these clients to VSTS,
+(a username and password) for you to access Azure DevOps.
+To connect these clients to Azure DevOps,
 create personal access tokens to authenticate your identity.
 Use a credential manager to create, store, and secure your tokens,
 so you don't have to reenter them every time you push.
@@ -60,15 +62,15 @@ Or if you don't want to use a credential manager, you can
 ## Add users and assign access
 
 To share work with others,
-[add users and assign access](add-organization-users-from-user-hub.md).
-That way, you control the access that each user gets.
-Or [add users to your project](add-team-members-vs.md),
-and let VSTS assign the next available access to them.
+[add users and assign access](add-organization-users.md).
+That way, you control each user's access.
+Or [add users to your project](add-team-members.md),
+and let Azure DevOps assign the next available access to them.
 
 ## Try extensions for free
 
 Help your team do more with [Marketplace extensions](https://marketplace.visualstudio.com/).
-For example, VSTS organization owners can
+For example, organization owners can
 try the Test Manager extension free for 90 days.
 During the trial, all users with Basic access can
 [try Test Manager for free](../billing/try-additional-features-vs.md).
@@ -83,11 +85,11 @@ buy more services, and purchase extensions for your organization.
 
 ## Access with Azure AD
 
-VSTS works with Azure Active Directory (Azure AD),
+Azure DevOps works with Azure Active Directory (Azure AD),
 so that you can control access the same way that you do
 with Microsoft services like Office 365 and Microsoft Azure.
 If your enterprise uses a directory managed by Azure AD,
-your VSTS organization can also
+your organization can also
 [use your directory to authenticate access](access-with-azure-ad.md).
 Or [change your Azure AD instance](change-organization-location.md),
 if you're already connected to an existing directory.

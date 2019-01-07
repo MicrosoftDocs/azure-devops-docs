@@ -1,5 +1,6 @@
 ---
 title: Release Management server/client for VS 2015 and TFS 2015 - overview
+ms.custom: seodec18
 description: Learn about Microsoft Release Management server and client for Visual Studio 2015 and Team Foundation Server (TFS) 2015.
 ms.assetid: 1FBA8A92-BC8C-452A-A5BD-FA6A3D2E2F0B
 ms.prod: devops
@@ -17,10 +18,10 @@ monikerRange: '>= tfs-2013'
 [!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
 
 Support a rapid release cadence and manage simultaneous releases. Set up 
-release paths that represent your stages from development to production. 
+release paths that represent your stages from development to production.
 Run actions to deploy your app to an environment for that stage. Add 
 approvers to sign off that the app has successfully passed each stage.
-Start your release process manually or automatically from a build. Then track your 
+Start your release pipeline manually or automatically from a build. Then track your 
 releases as they move through your release path.
 
 ![Overview of Release Management](_img/overview-01.png)

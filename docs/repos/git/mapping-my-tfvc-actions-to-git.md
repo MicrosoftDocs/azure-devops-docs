@@ -1,11 +1,12 @@
 ---
 title: Version Control - Map TFVC actions to Git
+titleSuffix: Azure Repos
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
 ms.manager: douge
-ms.author: willys
+ms.author: douge
 author: wpschaub
 ms.topic: conceptual
 ms.date: 04/25/2018
@@ -23,15 +24,15 @@ This article will not delve deep into the [Git commands](http://git-scm.com/book
 
 Each Project can host [TFVC and Git repositories in the same project](http://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
 
-![Create a new VSTS Git Repository](./_img/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
+![Create a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
 
 Once the repo is created, you are presented with step-by-step instructions to quickly get started. 
 
-![Get Started with a new VSTS Git Repository](./_img/mapping-my-tfvc-actions-to-git/actionmap-newrepoinfo.png)
+![Get Started with a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/actionmap-newrepoinfo.png)
 
 Click on the `Create a ReadMe file' at the end of the instruction page, to give the repo context and to create some history.
 
-![Create a README to initialize a new VSTS Git repo](./_img/mapping-my-tfvc-actions-to-git/actionmap-readme.png)
+![Create a README to initialize a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/actionmap-readme.png)
 
 ## Create a workspace and get latest
 
@@ -42,12 +43,12 @@ Similar to a workspace in TFVC you `clone` the Git repository to a folder on you
 # [Command Line](#tab/command-line)
 
 ```
-git clone https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git/Mapping-TFVC-actions-to-Git
+git clone https://dev.azure.com/demo-fabrikam/Fabrikam/_git/Mapping-TFVC-actions-to-Git
 ```
 
 # [Visual Studio](#tab/visual-studio)
 
-![Connect to a VSTS Git repo in Visual Studio](./_img/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
+![Connect to a Git repo in Azure Repos from Visual Studio](./_img/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
 
 ---
 
@@ -215,11 +216,11 @@ In Visual Studio, choose **Team Explorer > Branches | Changes | Sync > Actions >
 
 ---
 
-You can also view the history of the **centralized** repository using the VSTS web portal.
+You can also view the history of the **centralized** repository using the Azure DevOps Services web portal.
 
-In the VSTS web portal, choose **CODE > History** or **CODE > Explorer > History**
+In the Azure DevOps Services web portal, choose **CODE > History** or **CODE > Explorer > History**
 
-![Viewing Branch history in VSTS](./_img/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
+![Viewing Branch history in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
 
 At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TFVC actions. 
 

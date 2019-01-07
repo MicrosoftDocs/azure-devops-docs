@@ -1,13 +1,13 @@
-- name: "Power BI (VSTS)"
+- name: "Power BI (Azure DevOps Analytics)"
   href: index.md
 - name: Overview
   items:
   - name: Power BI integration
     href: overview.md
   - name: What are Analytics views?
-    href: ../analytics/what-are-analytics-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: VSTS/TFS Reporting Roadmap
-    href: ../analytics/reporting-roadmap.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: ../analytics/what-are-analytics-views.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+  - name: Reporting roadmap
+    href: ../analytics/reporting-roadmap.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Create a report using an Analytics view
@@ -15,17 +15,17 @@
 - name: Tutorials
   items:
   - name: Create an Analytics view
-    href: ../analytics/analytics-views-create.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: ../analytics/analytics-views-create.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Manage Analytics views
-    href: ../analytics/analytics-views-manage.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: ../analytics/analytics-views-manage.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Data available
-    href: ../analytics/data-available-in-analytics.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: ../analytics/data-available-in-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Default Analytics views
-    href: ../analytics/analytics-default-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: ../analytics/analytics-default-views.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Filters applied to historical data
-    href: ../analytics/analytics-historical-filtering.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: ../analytics/analytics-historical-filtering.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Connect using Data Connector 
@@ -34,8 +34,8 @@
     href: access-analytics-power-bi.md
   - name: Connect using Power Query (Advanced)
     href: data-connector-functions.md
-  - name: Client authentication 
-    href: ../analytics/client-authentication-options.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Client OData authentication 
+    href: ../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: "Publish to PowerBI.com"
     href: publish-power-bi-desktop-to-power-bi.md  
   - name: Set permissions (Security)
@@ -55,24 +55,24 @@
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view
-    href: ../analytics/troubleshooting-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: ../analytics/troubleshooting-views.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Work item field index
-    href: ../../boards/work-items/guidance/work-item-field.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Dataset design 
-    href: data-connector-dataset.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    href: data-connector-dataset.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: "Analytics (VSTS)"
+  - name: Analytics
     href: ../analytics/index.md
   - name: Extend Analytics with OData
     href: ../extend-analytics/index.md
   - name: Dashboards
     href: ../dashboards/index.md
   - name: Power BI Desktop
-    href: https://docs.microsoft.com/power-bi/desktop-getting-started
+    href: /power-bi/desktop-getting-started
   - name: Power BI Documentation
-    href: https://docs.microsoft.com/en-us/power-bi/
+    href: /power-bi/
   - name: "Developer Community: PowerBI support forum"
     href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI

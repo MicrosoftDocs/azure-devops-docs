@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: WIT Attachments | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with work item attachments programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server. 
+monikerRange: '>= tfs-2015 < vsts'
+title: WIT Attachments | REST API Reference for Team Foundation Server
+description: Work with work item attachments programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 55EF1F80-21BC-4497-9D17-1171C5F504BD
 ms.manager: douge
 ms.topic: article
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Work item attachments
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -40,7 +43,7 @@ Content-Type: application/octet-stream
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | TFS server name ({server:port}).
 | Query
 | api-version| string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | filename  | string  | The name of the file in the attachment store (typically the same as the name of the source of the attachment).
@@ -49,7 +52,24 @@ Content-Type: application/octet-stream
 | file-contents | string | The contents of the file.
 
 ### A text file
-[!code-REST [POST__wit_attachments_api-version-_version__fileName-_textFile__json](./_data/attachments/POST__wit_attachments_fileName-_textFile_.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/wit/attachments?fileName=textAsFileAttachment.txt&api-version=1.0
+```
+```json
+"User text content to upload"
+```
+
+#### Sample response
+
+```json
+{
+  "id": "6b2266bf-a155-4582-a475-ca4da68193ef",
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/6b2266bf-a155-4582-a475-ca4da68193ef?fileName=textAsFileAttachment.txt"
+}
+```
+
 
 ### Sample code
 [View sample](./work-items.md#addanattachment) for a full example on uploading an attachment to a work item.
@@ -87,7 +107,7 @@ Content-Type: application/octet-stream
 >    
 >    reader.readAsArrayBuffer(file);
 >}
-```
+>```
 <!-- ENDSECTION --> 
 
 ### Chunked upload
@@ -98,7 +118,21 @@ On accounts with higher attachment upload limits (>130MB), you will need to used
 POST https://{account}.VisualStudio.com/DefaultCollection/_apis/wit/attachments?uploadType=chunked&fileName={filename}&api-version={version}
 ```
 
-[!code-REST [POST__wit_attachments_api-version-_version__fileName_chunked_register__json](./_data/attachments/POST_wit_attachments_fileName_chunked_register.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/wit/attachments?uploadType=chunked&fileName=largefile.zip&api-version=2.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": "de471719-27b2-40ab-ac40-4890f3eb1443",
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443?fileName=test.txt"
+}
+```
+
 
 Next, upload your content to the attachment endpoint returned in the previous request via PUT.
 
@@ -108,9 +142,43 @@ PUT https://{account}.VisualStudio.com/DefaultCollection/_apis/wit/attachments/{
 
 Specify the byte range of the chunk using Content-Length. For example: "Content-Length": "bytes 0-39999/50000" for the first 40000 bytes of a 50000 byte file.
 
-[!code-REST [POST__wit_attachments_api-version-_version__fileName_chunked_content1__json](./_data/attachments/POST_wit_attachments_fileName_chunked_content1.json)]
+#### Sample request
 
-[!code-REST [POST__wit_attachments_api-version-_version__fileName_chunked_content2__json](./_data/attachments/POST_wit_attachments_fileName_chunked_content2.json)]
+```
+POST https://mytfsserver/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443?uploadType=chunked&api-version=2.0
+```
+```json
+"{zip content chunk 1}"
+```
+
+#### Sample response
+
+```json
+{
+  "id": "de471719-27b2-40ab-ac40-4890f3eb1443",
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443"
+}
+```
+
+
+#### Sample request
+
+```
+PUT https://mytfsserver/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443?uploadType=chunked&api-version=2.0
+```
+```json
+"{zip content chunk 2}"
+```
+
+#### Sample response
+
+```json
+{
+  "id": "de471719-27b2-40ab-ac40-4890f3eb1443",
+  "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/de471719-27b2-40ab-ac40-4890f3eb1443"
+}
+```
+
 
 ## Download an attachment
 
@@ -121,14 +189,14 @@ GET https://{instance}/DefaultCollection/_apis/wit/attachments/{attachment}?api-
 | Parameter  | Type    | Notes	
 |:-----------|:--------|:------------------------------
 | URL
-| instance   | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string  | TFS server name ({server:port}).
 | attachment | GUID    | ID of the attachment to download.
 | Query
 | api-version| string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ####Sample request
 ```no-highlight
-GET https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/_apis/wit/attachments/fbb31ee5-740d-4254-9453-07c1bd189ead?api-version=1.0
+GET https://fabrikam-fiber-inc:8080/DefaultCollection/_apis/wit/attachments/fbb31ee5-740d-4254-9453-07c1bd189ead?api-version=1.0
 ```
 
 ####Response

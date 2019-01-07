@@ -1,11 +1,11 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
-  - name: Reporting
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+  - name: Analytics
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/report/index
     items:
-    - name: SQL Server Reporting (TFS)
-      tocHref: /vsts/
-      topicHref: /vsts/report/sql-reports/index
+    - name: SQL Server Reporting 
+      tocHref: /azure/devops/report/sql-reports/
+      topicHref: /azure/devops/report/sql-reports/index

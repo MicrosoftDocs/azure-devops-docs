@@ -1,6 +1,7 @@
 ---
-title: Get started with Git and Visual Studio 2017 | VSTS & TFS
-description: Quick Start with Git and VSTS and Visual Studio 2017
+title: Get started with Git and Visual Studio 2017
+titleSuffix: Azure Repos
+description: Quick Start with Azure Repos and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -8,59 +9,64 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
 ---
 
 
-#  Get Started with Git and VSTS
+#  Get Started with Azure Repos and Visual Studio
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md)   
    
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017  
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017  
 
-This guide covers the basics so you can get up and running using Git with code already in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
+This guide covers the basics so you can get up and running using Git with code already in Azure DevOps Services or Team Foundation Server (TFS). 
 Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 
 
-If you don't have your code in a VSTS or TFS Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to VSTS.
+If you don't have your code in an Azure DevOps Services or TFS Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to Azure Repos.
 
 <a name="clone"></a>
 
-## Get your code 
+## Get your code
 
-To get a copy of the source code, you [clone](clone.md) a VSTS Git repository. Cloning creates both a copy of the source code for you to work with and all the version control information so Git can manage the source code.
+To get a copy of the source code, you [clone](clone.md) a Git repository. Cloning creates both a copy of the source code for you to work with and all the version control information so Git can manage the source code.
 
 If you don't have a Git repository yet, you can create one [using your own code](creatingrepo.md) and continue with the steps in this article to commit and share your work.
 
 # [Visual Studio](#tab/visual-studio)
 
-0. In Team Explorer, open up the **Connect** page by selecting the **Connect** icon, and then choose **Manage Connections**, **Connect to Project**.    
+0. In Team Explorer, open up the **Connect** page by selecting the **Connect** icon, and then choose **Manage Connections**, **Connect to Project**.
 
-  ![Cloning VSTS Git repositories in Visual Studio](_img/gitquickstart-vs2017/manage-connections.png) 
+  ![Cloning Azure DevOps Services Git repositories in Visual Studio](_img/gitquickstart-vs2017/manage-connections.png) 
   
 0. On the **Connect to a Project** dialog, select the repo you want to clone from the list and select **Clone**. If you don't see your repo listed, you can filter the list 
-to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add TFS Server** link.   
+to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add TFS Server** link.
    
-   ![Cloning a Git Repository from a Connected VSTS Account](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
+   ![Cloning a Git Repository from a connected organization in Azure DevOps](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
 
-0. Verify the location of the cloned repo on your PC and select **Clone**.
+  [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+
+
+1. Verify the location of the cloned repo on your PC and select **Clone**.
 
 
 # [Command Line](#tab/command-line)
 
 0. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
-0. Open the VSTS web portal in your browser by navigating to `https://<your account name>.visualstudio.com` and find your Git repository. Copy the clone URL from the **Clone** pop-up.   
+0. Open the Azure DevOps Services web portal in your browser by navigating to `https://<your account name>.visualstudio.com` and find your Git repository. Copy the clone URL from the **Clone** pop-up.   
 
-  ![Finding the Clone URL for your Git Repository in VSTS](_img/gitquickstart-vs2017/clone-url.png)
+  ![Finding the Clone URL for your Git Repository in Azure DevOps Services](_img/gitquickstart-vs2017/clone-url.png)
+
+  [!INCLUDE [project-urls](../../_shared/project-urls.md)]
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, run `git clone` followed by the clone URL, as shown in the following example.
 
     ```cmd
-    git clone https://fabrikam-fiber.visualstudio.com/DefaultCollection/_git/FabrikamFiber
+    git clone https://dev.azure.com/fabrikam-fiber/_git/FabrikamFiber
     ```
 
 Git downloads and creates your own copy of the code in a new folder for you to work with. 
@@ -166,13 +172,13 @@ branch of the code.
 
   ![Pull Requests](_img/gitquickstart-vs2017/pull-requests.png)
 
-0. From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the VSTS web portal.
+0. From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
 
   ![Pull Requests](_img/gitquickstart-vs2017/new-pull-request.png)
 
 0. Verify your branches (in this example we want to merge the commits from the `ReadMeFix` branch into the `master` branch), enter a title and optional description, specify any reviewers, optionally associate any work items, and select **Create**.
 
-  ![Create a Pull Request in the VSTS web portal](_img/gitquickstart-vs2017/create-pull-request.png)
+  ![Create a Pull Request in the Azure DevOps Services web portal](_img/gitquickstart-vs2017/create-pull-request.png)
 
   For more information on pull requests, see the [pull request](pullrequest.md) tutorial.
 
@@ -184,15 +190,15 @@ branch of the code.
     git push -u origin ReadMeFix
     ```
 
-0. Open up the VSTS project in the web portal and browse to your repository under the **Code** tab. Select the **Create a pull request** link to create a pull request for the branch that you pushed.   
+1. Open up the project in the web portal and browse to your repository under the **Code** tab. Select the **Create a pull request** link to create a pull request for the branch that you pushed.   
 
-  ![Creating a new Pull Request in VSTS](_img/gitquickstart-vs2017/create-pull-request-web-portal.png)   
+  ![Creating a new Pull Request in Azure DevOps Services](_img/gitquickstart-vs2017/create-pull-request-web-portal.png)   
 
 0. Verify your branches (in this example we want to merge the commits from the `ReadMeFix` branch into the `master` branch), enter a title and optional description, specify any reviewers, optionally associate any work items, and select **Create**.
 
-  ![Create a Pull Request in the VSTS web portal](_img/gitquickstart-vs2017/create-pull-request.png)
+  ![Create a Pull Request in the Azure DevOps Services web portal](_img/gitquickstart-vs2017/create-pull-request.png)
 
-0. Once the changes are approved, complete the pull request in VSTS. 
+0. Once the changes are approved, complete the pull request. 
 This will pull your changes from the branch into the master branch of the code.
 
   For more information on pull requests, see the [pull request](pullrequest.md) tutorial.

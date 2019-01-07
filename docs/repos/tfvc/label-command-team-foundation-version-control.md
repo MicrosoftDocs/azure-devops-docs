@@ -1,5 +1,6 @@
 ---
 title: Label Command (Team Foundation Version Control)
+titleSuffix: Azure Repos
 description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Label Command (Team Foundation Version Control)
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Updated: October 2011
 

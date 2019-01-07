@@ -1,16 +1,16 @@
-To configure a CI build process for your app, the source code needs to be in a version control system. VSTS and TFS integrate with various version control systems such as Git in VSTS or TFS, Team Foundation Version Control (TFVC), GitHub, and Subversion.
+To configure a CI build pipeline for your app, the source code needs to be in a version control system. Azure Pipelines and TFS integrate with various version control systems such as Git in Azure Repos or TFS, Team Foundation Version Control (TFVC), GitHub, and Subversion.
 
 For a simple way to follow this quickstart, get the following sample app code and put it into your own version control repository:
 
 ```
-https://github.com/adventworks/dotnetcore-sample
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
 You've got a few version control options. Some common ones are:
 
-* To import the sample app into a Git repo in VSTS or TFS:
+* To import the sample app into a Git repo in Azure Repos or TFS:
 
- 1. On the **Code** hub for your project in VSTS/TFS, select the option to **Import repository**.
+ 1. on the **Code** page for your project in Azure Repos/TFS, select the option to **Import repository**.
 
  1. In the **Import a Git repository** dialog box, paste the above URL into the **Clone URL** text box.
 

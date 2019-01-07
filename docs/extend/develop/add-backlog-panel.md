@@ -1,6 +1,6 @@
 ---
-title: Add panels on backlog pages | Extensions for VSTS
-description: Extend VSTS with panels on backlogs.
+title: Add panels on backlog pages | Extensions for Azure DevOps Services
+description: Extend Azure DevOps Services with panels on backlogs.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -17,14 +17,14 @@ ms.date: 08/22/2016
 In this example, we'll add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
 
 <!---
-![panel extension on the VSTS Portfolio backlog page](../_shared/procedures/_img/backlog-pane/portfolio-backlog-pane.png)
+![panel extension on the Azure DevOps Services Portfolio backlog page](../_shared/procedures/_img/backlog-pane/portfolio-backlog-pane.png)
 -->
 
-![Open panel extension on the VSTS Stories backlog page](_img/add-panel-intro-show-mapping-hello-world.png)
+![Open panel extension on the Azure DevOps Services Stories backlog page](_img/add-panel-intro-show-mapping-hello-world.png)
 
 The custom panel opens in the same space that the mapping panel opens if it were selected.  
 
-![panel extension on the VSTS Portfolio backlog page](_img/add-panel-show-custom-panel.png)
+![panel extension on the Azure DevOps Services Portfolio backlog page](_img/add-panel-show-custom-panel.png)
 
 
 There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representative of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
@@ -35,7 +35,7 @@ There are three types of backlogs that can be targets for panel extensions: Port
 
 ![backlog panel contribution point breakdown](_img/add-panel-show-three-types.png)
 
-See the [VSTS Extension Samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/backlogs-panel) on GitHub for the full source of an example extension.
+See the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/backlogs-panel) on GitHub for the full source of an example extension.
 
 ## Update your extension manifest
 

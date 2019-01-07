@@ -39,6 +39,6 @@ A: Submit your feature request at [Visual Studio UserVoice](https://visualstudio
 <a name="bug"></a>
 #### Q: I found a bug, how do I report it?
 
-A: Submit your bug report through the [report a problem option within Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+A: Submit your bug report through the [report a problem option within Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
 
 <!-- ENDSECTION -->

@@ -1,5 +1,6 @@
 ---
 title: Optimize your workspace
+titleSuffix: Azure Repos
 description: Optimize your workspace
 ms.assetid: 0ad2897c-5a99-455e-a5ee-16e4413d0b6b
 ms.prod: devops
@@ -15,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Optimize your workspace
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Does your team have a large and complex codebase? Do you want your workspace to contain only the files you need to improve performance, reduce network traffic, and reduce the disk space required on your dev machine?
 
@@ -49,9 +50,9 @@ When you look at the workspace of fictitious developer, Raisa, below, you might 
 
 The main problem with this approach is that it would also provide her with a lot of files she does not need, and thus waste time and resources. So Raisa creates some tailored folder mappings.
 
-![](_img/optimize-your-workspace/IC720115.png)
+![Folder mappings](_img/optimize-your-workspace/IC720115.png)
 
-![](_img/optimize-your-workspace/IC720116.png)
+![Folder mappings](_img/optimize-your-workspace/IC720116.png)
 
 <table><tbody>
 <tr>
@@ -79,7 +80,7 @@ If your company uses [branches to isolate risk](use-branches-isolate-risk-team-f
 
 For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolate the risk among their many teams, they've branched their codebase. Raisa continues her work within her small team, but now she uses a few workspaces to manage the work that she now does in multiple branches.
 
-![](_img/optimize-your-workspace/IC578257.png)
+![Branches](_img/optimize-your-workspace/IC578257.png)
 
 <table><tbody>
 <tr>
@@ -92,7 +93,7 @@ For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolat
 
 Raisa manages her work in three workspaces, each of which maps folders in a branch on the server with the folders on her dev machine.
 
-![](_img/optimize-your-workspace/IC720117.png)
+![Branches](_img/optimize-your-workspace/IC720117.png)
 
 > **Note:**  
 > [Branching](use-branches-isolate-risk-team-foundation-version-control.md) or [suspending (or shelving)](suspend-your-work-manage-your-shelvesets.md) are the preferred ways to isolate different work efforts against the same codebase. However, if neither of these approaches meets your needs, you can map the same server folder in more than one workspace. In most cases you should not need to do this. If you do map the same server folder in more than one workspace, remember that you could have separate and different pending changes to the same file stored in each workspace.

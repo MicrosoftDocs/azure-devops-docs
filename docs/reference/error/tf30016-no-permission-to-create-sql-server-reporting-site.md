@@ -1,6 +1,6 @@
 ---
 title: TF30016-No permissions to create a SQL Server Reporting Services site
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 description: Occurs when the permissions granted to the user account are not sufficient to enable to create the reporting site.
 ms.prod: devops
 ms.technology: devops-agile

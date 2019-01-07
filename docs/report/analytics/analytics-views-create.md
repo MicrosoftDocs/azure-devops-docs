@@ -1,7 +1,7 @@
 ---
 title: Create an Analytics view 
-titleSuffix: VSTS
-description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Visual Studio Team Services
+titleSuffix: Azure DevOps
+description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
@@ -9,29 +9,29 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.date: 06/30/2018 
 ---
 
 
-# Create an Analytics view in Visual Studio Team Services (VSTS) 
+# Create an Analytics view in Azure DevOps 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
 
-You create custom views in the web portal for VSTS, and then load the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
+You create custom views in the web portal for Azure DevOps, and then load the view using the [Power BI Data Connector](../powerbi/data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
+
+[!INCLUDE [temp](../_shared/boards-disabled.md)]
 
 Use this article to learn how to:
 
 > [!div class="checklist"]
 > * Meet prerequisites to access Analytics views
-> * Open the Analytics hub 
+> * Open **Analytics views**
 > * Browse your Analytics views
 > * Create a custom Analytics view
 > * Review filter criteria for a view 
-
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)] 
 
 [!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
 
@@ -39,10 +39,10 @@ Use this article to learn how to:
 
 ## Browse your views
 
-From the **All** page as shown in the following image, you can access all Analytics views defined for the team project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the team project. Anyone on your team can connect and use shared views in Power BI.
+From the **All** page as shown in the following image, you can access all Analytics views defined for the project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the project. Anyone on your team can connect and use shared views in Power BI.
 
 > [!div class="mx-imgBorder"]
-> ![Analytics Views directory](_img\editable-views\directory-actions.png)
+> ![Analytics Views directory](_img/editable-views/directory-actions.png)
 
 [!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
 
@@ -66,7 +66,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
 
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](_img\editable-views\general.png)
+> ![Analytics views General](_img/editable-views/general.png)
 
 
 <a id="specify-wi-filters" />
@@ -74,32 +74,32 @@ Enter a name for the view and provide a description. To allow others to view and
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](_img\editable-views\work-items-default.png)
+> ![Analytics views General](_img/editable-views/work-items-default.png)
 
 > [!TIP]
 > Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.
 
 * **Add Teams or Area Path filters**
 
-   By default, a view includes all the teams defined in the current team project. You can specifically select teams in the current team project or add additional team projects defined in the account to the filter. 
+   By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add additional projects defined in the organization to the filter. 
 
  You can change the selected teams for the current project or add additional projects to the filter. You can also change from filtering on teams to area Paths. Here is a view filtered by two Fabrikam area paths.
 > [!div class="mx-imgBorder"]
-> ![Area Path picker example](_img\editable-views\area-path.png)
+> ![Area Path picker example](_img/editable-views/area-path.png)
 
 * **Add filters for backlogs and work items types**
 
    Scope the data to specific Work item types in your project. You can specify a backlog to filter by work item types associated with a specific backlog level or add individual specific work item types. Work items of the selected types are included in the view.
 
     > [!div class="mx-imgBorder"]
-    > ![Work item type picker](_img\editable-views\wi-type-picker.png)
+    > ![Work item type picker](_img/editable-views/wi-type-picker.png)
 
 * **Add filters by field criteria**
 
     In addition to all previous filter criteria, you can add filters based on different work item fields. You specify these fields in the same way you do for fields you add to a work item query. As shown in the following example, you can filter to show only high Priority bugs with the specific "Hotfix" tag.
 
     > [!div class="mx-imgBorder"] 
-    > ![Filter by Bugs, Priority, and Tags example](_img\editable-views\field-criteria.png)
+    > ![Filter by Bugs, Priority, and Tags example](_img/editable-views/field-criteria.png)
 
 	For details about working with tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
@@ -149,7 +149,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 **Exclude closed items**  - The Analytics service stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view if you select a rolling period of 14 days your view will include the current revision for all work items that were closed before this period. To Exclude work items that were completed before a specific date,simply check the corresponding box under any of the options for history. This greatly decreases the amount of data loaded into Power BI and helps advanced calculations, like [time in state](../powerbi/create-timeinstate-report.md) to be much more performant. For Rolling period and Date range, the date work items will be excluded by is set by the start of the period. For Current only and All history, you need to provide that date. For example, the image below excludes all work times that were completed before Mon May 14.
 
  > [!div class="mx-imgBorder"]
- >![Exclude work itmes for a rolling period of 14 days](_img/editable-views/history-exclude.png)
+ >![Exclude work items for a rolling period of 14 days](_img/editable-views/history-exclude.png)
 
 #### Granularity
 
@@ -204,9 +204,3 @@ Choose the **Edit** link to edit a view.
 - [Grant permissions to access the Analytics service](./analytics-security.md)
 - [Power BI integration overview](../powerbi/overview.md)
 
-
-<!---
-Each default Analytics view returns a filtered set of data in a team project along with a common set of fields. These views work well for customers with small dataset sizes and general scenarios. With larger accounts, the volume of data may be too much for Power BI to load.
-
-To fine tune the fields, scope or history of views, you create a custom Analytics view. 
--->

@@ -1,7 +1,7 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items:
-  - name: Java
-    tocHref: /vsts/java/
-    topicHref: /vsts/java/index
+  - name: Demo Generator
+    tocHref: /azure/devops/demo-gen/
+    topicHref: /azure/devops/demo-gen/index

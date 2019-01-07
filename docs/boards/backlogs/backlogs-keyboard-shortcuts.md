@@ -1,7 +1,8 @@
 ---
-title: Keyboard shortcuts for working with backlogs
-titleSuffix: VSTS & TFS
-description: Use keyboard shortcuts to interact with product, portfolio, and sprint backlogs   
+title: Keyboard shortcuts for working with product, portfolio, and sprint backlogs
+titleSuffix: Azure Boards
+description: Use keyboard shortcuts in the web portal product, portfolio, and sprint backlogs 
+ms.custom: seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -10,19 +11,25 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 01/18/2017
+ms.date: 11/19/2018
 ---
+
 
 # Backlog keyboard shortcuts
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
-  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)] 
+
+::: moniker range="tfs-2015"
+> [!NOTE]   
+> Requires TFS 2015.2 or later version.
+::: moniker-end
+
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)] 
 
 
 ## Related articles
 
-- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
+- [Keyboard shortcuts for the web portal and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
 
 

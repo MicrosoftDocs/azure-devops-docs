@@ -1,6 +1,7 @@
 ---
-title: Build pipeline options | VSTS or Team Foundation Server
-description: Learn about building your code or deploying your software using build options on VSTS and Team Foundation Server (TFS).
+title: Build pipeline options
+ms.custom: seodec18
+description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -41,11 +42,9 @@ If you specify a description here, it is shown near the name of the build pipeli
 
 <h2 id="build-number-format">Build number format</h2>
 
-# [Designer](#tab/designer)
-
-If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
-
 # [YAML](#tab/yaml)
+
+::: moniker range="vsts"
 
 In YAML, this property is called `name`.
 If not specified, your completed build is given a unique integer as its name.
@@ -57,6 +56,16 @@ name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)
 steps:
 - script: echo hello world
 ```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
 
 ---
 
@@ -131,14 +140,14 @@ Select if you want to show the latest outcome of this build on external web site
 
 0. Save the pipeline.
 
-0. When the **Show url** link appears, click it and copy the URL to your clipboard.
+0. When the **Show URL** link appears, click it and copy the URL to your clipboard.
 
 0. Use the URL as the source of an image in the HTML of the page of the external web site. For example: ```<img src="{URL you copied from the link}"/>```
 
 
 ## Create a work item on failure
 
-If the build process fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type.
+If the build pipeline fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type.
 
 You can also select if you want to assign the work item to the requestor. For example, if this is a CI build, and a team member checks in some code that breaks the build, then the work item is assigned to that person.
 
@@ -154,12 +163,12 @@ You can also select if you want to assign the work item to the requestor. For ex
 
 ## Allow scripts to access the OAuth token
 
-Select this check box if you want to enable your script to use the build process OAuth token.
+Select this check box if you want to enable your script to use the build pipeline OAuth token.
 
-For an example, see [Use a script to customize your build process](../scripts/powershell.md).
+For an example, see [Use a script to customize your build pipeline](../scripts/powershell.md).
 
 
-## Default agent queue
+## Default agent pool
 
 ::: moniker range="<= tfs-2017"
 
@@ -169,9 +178,9 @@ For an example, see [Use a script to customize your build process](../scripts/po
 
 ::: moniker-end
 
-Select the [queue](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
+Select the [pool](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
 
-**Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
+**Tip:**  If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 
 ## Build job authorization scope
 
@@ -243,7 +252,7 @@ Some build tasks won't run unless one or more demands are met by the build agent
 
 ### Manually entered demands
 
-You might need to use on-premises build agents with special capabilities. For example, your build process requires SpecialSoftware.
+You might need to use on-premises build agents with special capabilities. For example, your build pipeline requires SpecialSoftware.
 
 Add the demand to your build pipeline.
 
@@ -269,7 +278,7 @@ Register each build agent that has the capability.
 ## Multi-configuration
 
 Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms.
-In VSTS and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your pipeline (not in the **Options** tab).
+In Azure Pipelines and TFS 2018, you set this option in the **Tasks** tab for each **Job** in your pipeline (not in the **Options** tab).
 To learn about multi-configuration, see the example [Build your C++ app for Windows](../apps/windows/cpp.md).
 
 ## Q & A
@@ -280,7 +289,7 @@ To learn about multi-configuration, see the example [Build your C++ app for Wind
 
 ::: moniker range="vsts"
 
-If you are using VSTS, then the time zone is UTC.
+If you are using Azure Pipelines, then the time zone is UTC.
 
 ::: moniker-end
 

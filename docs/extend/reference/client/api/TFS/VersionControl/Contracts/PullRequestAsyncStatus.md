@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts PullRequestAsyncStatus API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts PullRequestAsyncStatus API | Extensions for Azure DevOps Services
 ms.assetid: 7a1ff74a-5b16-e249-160e-7c6672cc35fb
 ms.prod: devops
 ms.technology: devops-ecosystem

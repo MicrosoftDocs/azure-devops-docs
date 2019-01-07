@@ -1,5 +1,5 @@
 ---
-title: VSS/References/SDK.Interfaces ConfigurationContext API | Extensions for Visual Studio Team Services
+title: VSS/References/SDK.Interfaces ConfigurationContext API | Extensions for Azure DevOps Services
 description: Web Access configuration data. This information is used to process requests on the server.  This data is also placed in a json island on each page in order for JavaScript to know key configuration data required to things like construct proper urls
 ms.assetid: ab7f95da-825c-bc81-b488-d41a0c5d6e00
 ms.prod: devops

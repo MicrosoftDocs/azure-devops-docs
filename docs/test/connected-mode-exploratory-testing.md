@@ -1,5 +1,5 @@
 ---
-title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
+title: Exploratory testing in connected mode
 description: Manual and exploratory testing - exploratory testing by using the Test & Feedback extension in Connected mode
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.prod: devops
@@ -8,16 +8,16 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+[!INCLUDE [version-header](_shared/version-header.md)] 
 
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
-to VSTS or TFS 2015 and later.
+to Azure DevOps or TFS 2015 and later.
 This automatically configures the extension based on your access level: 
 
 * Users with **Basic** access can use the extension to perform exploratory
@@ -34,10 +34,10 @@ This automatically configures the extension based on your access level:
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
 <a name="connectvtfs"></a>
-## Connect to VSTS or TFS
+## Connect to Azure DevOps or TFS
 
-1. If you want to use VSTS, and you haven't already done so, 
-   [sign up for a VSTS subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
+1. If you want to use Azure DevOps, and you haven't already done so, 
+   [sign up for a subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
    now. Make sure you create a project when you create your subscription.
 
 1. If you haven't already, [install the Test &amp; Feedback extension](perform-exploratory-tests.md).
@@ -46,9 +46,9 @@ This automatically configures the extension based on your access level:
 
    ![Start the extension in Connected mode](_img/_shared/connectedmode-01.png)
  
-1. Enter the VSTS or TFS URL you want to connect to and choose **Next**.
+1. Enter the Azure DevOps or TFS URL you want to connect to and choose **Next**.
 
-   ![Enter the VSTS or TFS URL you want to connect to](_img/_shared/connectedmode-02.png)
+   ![Enter the Azure DevOps or TFS URL you want to connect to](_img/_shared/connectedmode-02.png)
 
    If you are connecting for the first time, you may be prompted to sign in. 
  
@@ -119,13 +119,13 @@ After you have connected, you are ready to begin testing your app.
    ![Review your captured information](_img/connected-mode-exploratory-testing/create-bugs-08.png)
 
    > You can use the extension to [explore work items](explore-workitems-exploratory-testing.md)
-   in VSTS or TFS.
+   in Azure DevOps or TFS.
 
-1. To view a bug or task in VSTS or TFS, choose the link in the session timeline.
+1. To view a bug or task in Azure DevOps or TFS, choose the link in the session timeline.
 
    ![View a bug or task](_img/connected-mode-exploratory-testing/create-bugs-09.png)
 
-   This opens the work item form in VSTS or TFS.
+   This opens the work item form in Azure DevOps or TFS.
 
    ![The bug or task in TS or TFS](_img/connected-mode-exploratory-testing/create-bugs-10.png)
 
@@ -161,12 +161,12 @@ The extension lets you create test cases as you explore your application.
 
    ![Stop the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-05.png)
 
-1. If you are using VSTS, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
-   sessions in VSTS or TFS.
+1. If you are using Azure DevOps, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
+   sessions in Azure DevOps or TFS.
 
    ![View the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-06.png)
 
-   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** tab of the Test hub.
+   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
  
    ![View exploratory testing sessions on the server](_img/connected-mode-exploratory-testing/create-bugs-07.png)
 

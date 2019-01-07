@@ -1,6 +1,7 @@
 ---
-title: Forks | VSTS & TFS     
-description: Learn about forks in VSTS & TFS  
+title: Forks
+titleSuffix: Azure Repos     
+description: Learn about forks in Azure DevOps Services & TFS  
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
@@ -8,18 +9,17 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: overview
-ms.date: 04/19/2018
+ms.date: 09/10/2018
 layout: LandingPage
 monikerRange: '>= tfs-2018'
 ---
 
-
 # Forks
 
-#### VSTS | TFS 2018
+#### Azure Repos | TFS 2018
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
-After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to push the changes back to the original repository.
+After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests-overview.md) to push the changes back to the original repository.
 
 ## The forking workflow
 
@@ -42,7 +42,7 @@ When working with forks, you typically use the following workflow:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_forks.svg" />
+                            <img width="48" height="48" alt="Forks" src="https://docs.microsoft.com/media/common/i_forks.svg" />
                         </div>
                     </div>
                     <div class="cardText">

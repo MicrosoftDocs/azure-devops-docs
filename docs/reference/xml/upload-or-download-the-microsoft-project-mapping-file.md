@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/15/2017
 ---
 
@@ -19,7 +20,7 @@ Use **TFSFieldMapping** to upload and download the Microsoft Project mapping fil
   
  You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   
-The **TFSFieldMapping** command-line tool works for both on-premises TFS and cloud-hosted VSTS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
+The **TFSFieldMapping** command-line tool works for both Azure DevOps Services and on-premises TFS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
  
 |Version | Change directory |
 |--------|-----------|
@@ -33,7 +34,7 @@ On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programf
 
   
 > [!NOTE]  
->  Even if you are logged on with administrative permissions, you must open an elevated Command Prompt to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the [User Account Control](http://technet.microsoft.com/library/cc772207.aspx).  
+>  Even if you are logged on with administrative permissions, you must open an elevated Command Prompt to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
  **Requirements**  
   
@@ -51,7 +52,7 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
 |------------------|---------------------|  
 |**upload &#124; download**|Specifies whether to download or upload the field mapping file.|  
 |**/collection**:<i>CollectionURL</i>|Specifies the URI of the project collection in the following format: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory is used, you must use the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*<br /><br /> If you have previously connected to the server, you can specify the friendly name for the server instead of the URI.|  
-|**/teamproject:**<i>ProjectName</i>|Specfies the name of the project whose mapping parameters you want to modify. If the name contains spaces, enclose it in quotation marks.|  
+|**/teamproject:**<i>ProjectName</i>|Specifies the name of the project whose mapping parameters you want to modify. If the name contains spaces, enclose it in quotation marks.|  
 |**/mappingfile:**<i>MappingFile</i>|Specifies the name and file path of the mapping file.|  
   
 ## To change how work item fields are mapped to Project  

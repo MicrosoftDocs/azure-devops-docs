@@ -1,6 +1,6 @@
 ---
-title: Load test your app before release
-description: Run load tests on your app before release with Visual Studio Team Services (VSTS), Cloud-based Load Testing, and Visual Studio
+title: Load test before release
+description: Run load tests on your app before release with Azure DevOps, Cloud-based Load Testing, and Visual Studio
 ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.prod: devops
 ms.technology: devops-test
@@ -8,18 +8,18 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Tutorial: Load test your app before release
 
-[!INCLUDE [version-header-vs-ts](../_shared/version-header-vs-ts.md)] 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
 Find performance issues before you release your app by running load tests with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
-All you need is a [Visual Studio Team Services (VSTS) subscription](http://go.microsoft.com/fwlink/?LinkId=307137).
+All you need is an [Azure DevOps subscription](http://go.microsoft.com/fwlink/?LinkId=307137).
 
 In this tutorial, you'll learn how to:
 
@@ -108,7 +108,7 @@ actions in your app at the same time.
 
    ![Select which tests to include in the test mix](_img/run-performance-tests-app-before-release/select-tests-for-test-mix.png)
 
-1. When you run cloud-based load tests using VSTS, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
+1. When you run cloud-based load tests using Azure DevOps, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
    Select the location where you want to run your load test.
 
    ![Select load test location](_img/run-performance-tests-app-before-release/select-load-test-location.png)
@@ -120,8 +120,8 @@ actions in your app at the same time.
 <a name="runanalyze"></a>
 ## Run and analyze your load test
 
-You can run your load test locally, or you can run it in the cloud using VSTS. 
-All you need is a [VSTS subscription](../../organizations/accounts/set-up-vs.md). 
+You can run your load test locally, or you can run it in the cloud using Azure DevOps. 
+All you need is an [Azure DevOps subscription](../../organizations/accounts/set-up-vs.md). 
 If you run the load test in the cloud, you can generate more load without setting up test controllers and test agents. 
 To learn how easy it is to use Cloud-based Load Testing to run your load tests, go 
 [here](getting-started-with-performance-testing.md).
@@ -158,8 +158,8 @@ Follow these steps to run your load test on your local machine.
 
 You can improve your test to better simulate 
 real-world loads by specifying various load test 
-[scenario properties](https://docs.microsoft.com/visualstudio/test/edit-load-test-scenarios)
-and [run settings properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
+[scenario properties](/visualstudio/test/edit-load-test-scenarios)
+and [run settings properties](/visualstudio/test/load-test-run-settings-properties).
 For example, you can specify the number of new users that will use web cache data in your load test.
 
 ![Percentage of new users property](_img/run-performance-tests-app-before-release/percentage-new-users.png)

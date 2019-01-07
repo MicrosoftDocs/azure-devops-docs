@@ -1,28 +1,28 @@
 ---
-title: Xamarin license | VSTS or Team Foundation Server
-description: Learn how you can activate or deactivate a Xamarin license when building code in VSTS and Team Foundation Server (TFS).
+title: Xamarin License task
+description: Activate or deactivate a Xamarin license when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 07F571D7-DB66-4B8E-8CB1-F37B6D56EBD7
 ms.manager: douge
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Xamarin license
+# Xamarin License task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/xamarin-license.png) Activate or deactivate Xamarin licenses
-
->**NOTE:** This task is deprecated. Use the free version of Xamarin from [https://store.xamarin.com](https://store.xamarin.com).
+This task was used in a build or release pipeline to activate or deactivate Xamarin licenses.
 
 ## Deprecated
 
-> This task is deprecated because you no longer need a Xamarin license to [build your Xamarin app](../../apps/mobile/xamarin.md).
+> **NOTE:** This task is deprecated because you no longer need a Xamarin license to [build your Xamarin app](../../apps/mobile/xamarin.md).
+> Use the free version of Xamarin from [https://store.xamarin.com](https://store.xamarin.com).
 
 ## Demands
 
@@ -45,7 +45,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

@@ -1,6 +1,6 @@
 ---
-title: Advanced search options in Microsoft Work Item Search in VSTS
-description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft VSTS and TFS for all projects of your projects 
+title: Use advanced workitem search options
+description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps and TFS for all projects of your projects 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: devops
 ms.technology: devops-collab
@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 07/09/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # How To: Use Work Item Search
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
+[!INCLUDE [version-header](_shared/version-header.md)]
 
-Work Item Search is available as a built-in extension in Visual Studio Team Services (VSTS).
+Work Item Search is available as a built-in extension in Azure DevOps and TFS.
 Users can use Work Item Search by default without any installation.
 
 By using Work Item Search you can:
 
 * **Search over all your projects**:
   Search in your own and your partner teams' backlog. Use cross-project 
-  searches over all the work items in VSTS to search 
+  searches over all the work items to search 
   across your enterprise's entire work items. Narrow your search by using project and 
   area path filters. 
   
@@ -39,7 +39,7 @@ By using Work Item Search you can:
   State:Active** finds all active bugs assigned to a user named Chris. 
 
 * **Take advantage of integration with work item tracking**:
-  The Work Item Search interface integrates with familiar controls in the **Work** hub,
+  The Work Item Search interface integrates with familiar controls for managing your work items;
   letting you view, edit, comment, share, and much more.
 
 <a name="acrossfield"></a>
@@ -65,10 +65,8 @@ The selected projects are always at the top of the list.
 Notice that hit counts are also shown for projects that are not selected. 
 
 Open the search results in a new browser tab from either search box by
-pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+pressing _Ctrl+Shift+Enter_ or by holding _Ctrl_ and clicking  the
 ![start search icon](_img/_shared/start-search-icon.png) icon.
-In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-to the new browser tab. 
 
 <a name="quickfilters"></a>
 ## Quick Filters for matching in specific fields
@@ -88,7 +86,7 @@ For example, a search such as **t: Bug path:"project\search"** finds all bugs in
 For example, a search such as **t: Bug CreatedDate> @Today-7** finds all bugs created in the last week
 
 * For the search query that contain multiple terms and users looking for exact match, embed the search term inside " ";
-for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that neccesarily contain the path "tools.demoproject.com". 
+for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com". 
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="_img/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
@@ -102,8 +100,6 @@ The common inline search filters can be quickly accessed using shortcuts:
 * `t:` for **Work item type**
 
 For example, you can use quick searches such as **a:@Me s:active t:bug** to find all bugs assigned to you.
-
-![Quick Filters shortcuts](_img/advanced-work-item-search-syntax/title-bar-search-quick-filters.png)
 
 <a name="locationfunctions"></a>
 ## Filters to scope projects, area and iteration paths
@@ -122,11 +118,19 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
 <a name="quicknavigation"></a>
 ## Quickly navigate to a work item using its ID
 
-Type or paste the work item ID in the search box in the VSTS title bar 
+Type or paste the work item ID in the search box in the Azure DevOps or TFS title bar 
 to quickly navigate to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
+# [New navigation](#tab/new-nav)
+
+![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
 ![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal.png)
+
+---
 
 <a name="boolean"></a>
 ## Narrow your search with Boolean operators

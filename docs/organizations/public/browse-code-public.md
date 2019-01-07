@@ -1,6 +1,6 @@
 ---
-title: Browse repos, files, branches, pushes, commits, & pull requests 
-titleSuffix: VSTS Public Project
+title: Browse repos, files, branches, pushes, commits, pull requests 
+titleSuffix: Azure DevOps Services
 description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -24,22 +24,22 @@ When viewing a public project, you're able to browse and download the code store
 
 [!INCLUDE [temp](_shared/anon-user.md)]   
 
-## Open the Code hub 
+## Open Repos>Files or Code>Files
 
 # [New navigation](#tab/new-nav)  
 
-Choose **Code>Files**.
+Choose **Repos>Files**.
 
 > [!div class="mx-imgBorder"]
-> ![Open Code, anonymous user](_img/browse-code/open-code-vert-brn.png) 
+> ![Open Repos, anonymous user](_img/browse-code/open-code-vert-brn.png) 
 
 
 
 # [Previous navigation](#tab/previous-nav)  
 
-Choose **Code**.  
+Choose **Code>Files**.  
 
-![Open Code hub](_img/browse-code/select-code-hub.png)
+![Open Code](_img/browse-code/select-code-hub.png)
 
 
 
@@ -52,12 +52,12 @@ Select the repository of interest from the repository selector.
 # [New navigation](#tab/new-nav)  
 
 > [!div class="mx-imgBorder"]
-> ![Open Code, anonymous user](_img/browse-code/select-repository-vert.png) 
+> ![Choose repository, anonymous user](_img/browse-code/select-repository-vert.png) 
 
 
 # [Previous navigation](#tab/previous-nav)  
 
-![Open Code hub](_img/browse-code/select-repository.png)
+![Choose repository](_img/browse-code/select-repository.png)
 
 
 ---

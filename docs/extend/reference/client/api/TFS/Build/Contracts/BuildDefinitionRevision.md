@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDefinitionRevision API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildDefinitionRevision API | Extensions for Azure DevOps Services
 ms.assetid: 034ae70d-27d7-f9e3-af1e-f20aac9d35f9
 ms.prod: devops
 ms.technology: devops-ecosystem

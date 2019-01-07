@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts ConnectedServiceKind API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts ConnectedServiceKind API | Extensions for Azure DevOps Services
 ms.assetid: 92b8ab43-a24b-7b2b-c58b-8902aed6bf49
 ms.prod: devops
 ms.technology: devops-ecosystem

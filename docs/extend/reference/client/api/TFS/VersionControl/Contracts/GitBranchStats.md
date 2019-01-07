@@ -1,5 +1,5 @@
 ---
-title: TFS/VersionControl/Contracts GitBranchStats API | Extensions for Visual Studio Team Services
+title: TFS/VersionControl/Contracts GitBranchStats API | Extensions for Azure DevOps Services
 ms.assetid: 4f2547b0-0fc1-931e-14c2-d487fdf00331
 ms.prod: devops
 ms.technology: devops-ecosystem

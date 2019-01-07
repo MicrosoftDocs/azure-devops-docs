@@ -1,39 +1,80 @@
 ---
-title: Plan and track work with work items
-titleSuffix: VSTS & TFS
-description: Use work items to plan, track, & collaborate with others when developing software apps in Visual Studio Team Services & Team Foundation Server
+title: Understand how work items are used to track user stories, issues, bugs, features, and epics 
+titleSuffix: Azure Boards and TFS
+description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
-ms.date: 03/20/2018
----
+monikerRange: '>= tfs-2013'
+ms.date: 12/04/2018
+--- 
 
-# About work items 
+# Understand how work items are used to track user stories, issues, bugs, features, and epics 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You can use work items to track anything you need to track. 
+You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the process used when your project was created.  
 
-Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier, an ID, which is unique within an account or project collection.  
 
-## Work item types
+####In a nutshell:
 
-To track different types of work, different work item types (WITs) are defined. The WITs available to you differ depending on the process or process template used to create your project.  
+::: moniker range=">= tfs-2018"
+- You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
+- You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
+- You can add and modify work items using the [web portal and other supported clients](#portal-clients)
+- You can [assign a work item](#assign) to one and only one project member 
+- You [assign work items to a sprint](#assign-to-sprint) via the iteration path
+- You can use [adhoc search or queries to find or list work items](#queries)  
+- You can [use work item templates](#templates) to quickly fill in work item fields
+- Teams can [choose how they track bugs](#track), either as requirements or as tasks
+- You or a project administrator can [add and customize work item types](#customize)
+- [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access.
 
-For example, the following WITs are available to you when you choose the Agile project. 
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+- You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
+- You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items and attach files  
+- You can add and modify work items using the [web portal and other supported clients](#portal-clients)
+- You can [assign a work item](#assign) to one and only one project member 
+- You [assign work items to a sprint](#assign-to-sprint) via the iteration path
+- Teams can [choose how they track bugs](#track), either as requirements or as tasks
+- You can use [adhoc search or queries to find or list work items](#queries)  
+- You can [use work item templates](#templates) to quickly fill in work item fields
+- You can [add and customize work item types and your backlog](#customize)
+- [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access. 
+
+::: moniker-end
+
+
+<a id="wit" />
+## Work item types (WITs)
+
+To track different types of work, different WITs are defined. The WITs available to you differ depending on the process or process template used to create your project.
+
+For example, the following WITs are available to you when you choose the Agile process. 
 
 <img src="guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
+> [!NOTE]  
+> The WITs available to you depend on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). The items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+
 To learn more about processes and process templates, see [Choose a process](./guidance/choose-process.md).
 
- 
+<a id="form" />
 ## Work item form 
 
-Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the History field. 
-
+::: moniker range=">= tfs-2018" 
+Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. To learn more about each field, see [Work item field index](./guidance/work-item-field.md). To learn about the different tabs and sections of the form, see [Work item form controls](work-item-form-controls.md).
+::: moniker-end
+::: moniker range="<= tfs-2017" 
+Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field. To learn more about each field, see [Work item field index](./guidance/work-item-field.md).
+::: moniker-end
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
 ::: moniker range=">= tfs-2018"
@@ -41,17 +82,15 @@ Each form contains a number of controls as shown below and described in [Work it
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../../reference/manage-new-form-rollout.md). To learn about the different tabs and sections of the new form, see [Work item form controls](work-item-form-controls.md).
 
-The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../../reference/manage-new-form-rollout.md).
-
-# [New web form](#tab/new-web-form)
+**New web form**
 
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
-
-# [Old web form](#tab/old-web-form)
+**Old web form** 
 
 ![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
 
@@ -59,36 +98,55 @@ The new web form provides a number of experiences not provided with the old web 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 ![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
 ::: moniker-end
 
-<a id="assign-work-items"></a>
-## Assign work items to a team member
 
-You can only assign a work item to one person at a time. The Assigned To field is person-name field designed to hold an account identity recognizable by the system. Within the work item form, click the Assigned To field to select a team member. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
+<a id="portal-clients"></a>  
+## Track work in the web portal 
+You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items ](best-tool-add-update-link-work-items.md). 
+
+
+## Web portal and clients that support tracking work items  
+You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
+
+###Web portal 
+
+Use the web portal to accomplish the following tasks. 
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+[!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
+
+
+<a id="assign" />
+<a id="assign-work-items"></a>
+## Assign work items to a project member
+
+You can only assign a work item to one person at a time. The **Assigned To** field is a person-name field designed to hold an user identity recognizable by the system. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin typing the name of a project member to quickly focus your search to a select few. 
 
 ![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
 
-Anyone who has write access to a project can assign work items to a team member. This includes team members and [stakeholders](../../organizations/security/get-started-stakeholder.md).  
+Anyone who has write access to a project can assign work items, including users with [Basic and Stakeholder access](#permissions-access).   
 
 **Note the following:**
-- You can assign a work item only to team members recognized by the system, ones that you have added as team members 
-- You can assign a work item to one and only one team member at a time. If work is split across two or more team members, then you should consider creating additional work items that you'll assign to each member responsible for the work to be completed  
-- Over time, the drop-down menu of person-name fields will display most recently selected names
-- Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members   
-- The system shows the display name and adds the account name when required to disambiguate identical display names  
+- You can assign a work item only to users that have been [added a project or team](../../organizations/security/add-users-team-project.md)  
+- You can assign a work item to one and only one user at a time. If work is split across two or more users, then you should consider creating additional work items that you'll assign to each user responsible for the work to be completed  
+- Over time, the drop-down menu of person-name fields will display the names you have most recently selected  
+- Some drop-down menus that support assignment from a team backlog or board are automatically limited to users assigned to the team   
+- The system shows the display name and adds the user name when required to disambiguate identical display names  
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
 
 ::: moniker range="vsts" 
 ###Integration with Azure Active Directory 
 
-When your system is configured with Azure Active Directory (AAD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
+When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-aad.md).
+You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-azure-ad.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
+::: moniker range="<= azdevserver-2019" 
 ###Integration with Active Directory
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
@@ -97,7 +155,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
  
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azdevserver-2019"
 
 > [!NOTE]    
 >To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
@@ -107,7 +165,7 @@ You can grant access to a project by adding security groups that you created in 
 <a id="assign-to-sprint"></a>
 ## Assign work items to a sprint 
 
-To schedule work items to be worked on during at specific time period, you assign the Iteration field. to learn more, see [Schedule sprints](../sprints/define-sprints.md). 
+To schedule work items to be worked on during a specific time period, you assign the **Iteration Path**. First, you define the Iteration Paths for use in the project, and then each team selects the Iteration Paths that they'll use. To learn more, see [Assign work to sprints](../sprints/assign-work-sprint.md). 
 
 
 <a id="track"> </a>
@@ -117,7 +175,9 @@ Many Scrum teams treat bugs the same as any backlog item or user story. Others s
 
 Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
+For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
 
+<a id="queries" />
 ## Find or list work items 
 
 You can use the search box to perform an adhoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
@@ -128,71 +188,49 @@ To learn more, see these topics:
 - [Adhoc vs managed queries](../queries/adhoc-vs-managed-queries.md)  
 - [Work item query charts](../../report/dashboards/charts.md)  
 
-
-<a id="customize"> </a>
-## Customize a work item type (WIT) 
-
-You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in effect for your project. 
-::: moniker range="vsts"
-To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-::: moniker-end
-
-
-## Fill in work item fields quickly using work item templates 
+<a id="templates" />
+## Use work item templates to quickly fill in forms
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 
-<!---
-Based on the platform or version you use, you can perform the following tasks. 
-- Capture a work item as a template 
-- Add a work item using a template
-- Apply templates to work items
-- Manage work item templates
- 
-Prior to creating templates, consider how you and your team(s) will use the templates. If you'll be using several templates, determine a naming convention that will help users easily select the right template for their use. To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md).
+To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md).
 
-If you want to use custom fields in your templates, define those fields prior to creating your templates. 
+Once you have a template defined, you can share it via email or a [dashboard](../../report/dashboards/add-markdown-to-dashboard.md).  
 
-You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
 
-Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget. See [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md).  
--->
- 
+<a id="customize" />
+## Customize a WIT 
 
-## Required permissions
-
-As a member added to the Contributors group of a project, you can use most features provided under **Work**. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). 
-
-To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
-
-::: moniker range="vsts" 
-To add team members to a project, see [Add users to your VSTS organization](../../organizations/accounts/add-team-members-vs.md).
-::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
-To add team members to a project, see [TFS project](../../organizations/security/add-users-team-project.md). 
+::: moniker range="vsts"
+You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-To learn more about user accounts, permissions, and access, see [Security & Identity](../../organizations/security/index.md).
-<!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
+::: moniker range="<= azdevserver-2019"
+You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+::: moniker-end
 
+ 
+<a id="permissions-access" />
+## Required permissions and access
 
-<a id="clients"></a>  
-## Clients that support tracking work items  
-You can add work items from various clients, such as: 
-- From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
-- From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add most types of work items from the Work page.  
-- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in). 
-- From Test Manager or the web portal, you can [create test cases that automatically link to a user story or product backlog item](../../test/create-test-cases.md).
-- You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
+As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/access-levels.md#stakeholder-access). 
 
-For an overview of all clients that connect to your project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
+To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [About access levels](../../organizations/security/access-levels.md).  
+
+To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
+
 
 
 ## Try this next 
 
 > [!div class="nextstepaction"]
-> [Add a work item](../backlogs/add-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
+> [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+
+
+## Related articles 
+- [Web portal navigation](../../project/navigation/index.md) 
+- [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
+- [About Kanban and Agile project management](../boards/kanban-overview.md) 
+- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
+- [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)  
+- [Work item field index](./guidance/work-item-field.md)  

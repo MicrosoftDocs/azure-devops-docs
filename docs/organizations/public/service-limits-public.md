@@ -1,14 +1,14 @@
 ---
-title: Rate and service limits on public projects
-titleSuffix: VSTS Public Project
+title: Rate and service limits 
+titleSuffix: Azure DevOps Services Public Project
 description: Terms of service  
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
 monikerRange: 'vsts'
@@ -20,10 +20,12 @@ monikerRange: 'vsts'
 
 Public projects are subject to the limits documented in this article. 
 
- 
+<!---
 ## Pipelines
 
 TBD
+
+-->
 
 ## Work items
 - A long text field can contain 1M characters.

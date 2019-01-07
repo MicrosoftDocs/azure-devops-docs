@@ -1,26 +1,29 @@
 ---
 title: Scrum process work items types & workflow
-titleSuffix: VSTS & TFS
-description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards
+description: How to guide for using the Scrum process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/05/2017
----
+ms.date: 11/19/2018
+--- 
 
 # Scrum process work item types and workflow  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
 <img src="_img/scrum-process-plan-wits.png" alt="Scrum process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
-Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues.
+Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues. 
+
+If you are new to the Scrum process, review the section [Plan and track work with Scrum](scrum-process.md#start-using-scrum) to get started. 
 
 [!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
 
@@ -70,8 +73,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-> [!TIP]    
-> Use the [Discussion section](../../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed.  
+[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
 
 ## Track progress
 
@@ -98,9 +100,9 @@ PBIs and bugs follow this typical workflow progression:
 -   The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.  
 
 
-### Update status with Kanban or task boards
+### Update status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of PBIs, and the [sprint task board](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of PBIs, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
 ![Track progress on the Kanban board](../../boards/_img/ALM_CC_MoveCard.png)
 
@@ -182,7 +184,7 @@ You can add an impediment from the [New work item widget](../../../report/dashbo
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/plans/toc.json&bc=/vsts/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
 ### Backlog list order

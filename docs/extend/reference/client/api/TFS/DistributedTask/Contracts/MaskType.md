@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts MaskType API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts MaskType API | Extensions for Azure DevOps Services
 ms.assetid: 4c3e1ede-5960-85fb-7a06-0ba1310787e5
 ms.prod: devops
 ms.technology: devops-ecosystem

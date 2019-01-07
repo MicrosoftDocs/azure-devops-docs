@@ -1,5 +1,6 @@
 ---
 title: Add users and groups and control access in Release Management
+ms.custom: seodec18
 description: Add users and groups and control access in Release Management server/client for Visual Studio 2015 and Team Foundation Server 2015
 ms.assetid: AEB78F81-1F59-47DE-AED0-F38C724024FC
 ms.prod: devops
@@ -23,12 +24,12 @@ are used in deploying applications in your release environment. You can add
 **[group of users](#add_group)** 
 defined in Team Foundation Server (TFS), Active Directory (AD), or Release 
 Management. Control access to release functions based on user role or group 
-permissions. 
+permissions.
 
 All users you add, whether individually or through a group, belong to the 
 **Everyone** group. By default, members of the Everyone group have access to 
 all Release Management operations, including adding users and setting 
-permissions. 
+permissions.
 
 If you want to restrict access, then you'll want to follow these steps: 
 
@@ -43,28 +44,28 @@ If you want to restrict access, then you'll want to follow these steps:
 ## Add an individual user or service account
  
 1. If you haven't installed the Release Management client, 
-   **[do that now](install-release-management/install-server-and-client.md#installclient)**. 
+   **[do that now](install-release-management/install-server-and-client.md#installclient)**.
 
 1. If you haven't been added to the **Release Manager** role, get added now 
-   from someone with that role. This role is required to manage security. 
+   from someone with that role. This role is required to manage security.
 
-1. Open the New User page from the **Administration** | **Manage Users** tab. 
+1. Open the New User page from the **Administration** | **Manage Users** tab.
 
    ![Open the New User page](_img/add-users-01.png)
 
 1. Choose a user account using the ellipsis (**...**) button, and set the 
    user role.
 
-   Do not assign any role when you want to restrict access to functional areas. 
-   Instead, link the user account to the group where you set permissions. 
+   Do not assign any role when you want to restrict access to functional areas.
+   Instead, link the user account to the group where you set permissions.
 
    Assign the **Release Manager** role to grant access to the following 
    functions: 
 
    * Manage the connection between TFS and Release Management.
-   * View and edit all release paths and stages that are defined in a release path. 
+   * View and edit all release paths and stages that are defined in a release path.
    * For release templates, create and edit the templates, view and edit the deployment sequence and configuration variables for all stages that are defined, and add custom tools and actions.
-   * Manage servers, environments, actions, tools, and security. 
+   * Manage servers, environments, actions, tools, and security.
 
 <a name="add_group"></a>
 ## Add a group
@@ -76,18 +77,18 @@ If you want to restrict access, then you'll want to follow these steps:
 
    The **Manage Groups** tab is available only when you are connected to 
    Release Management Server. You cannot add groups when you are connected
-   to VSTS.
+   to Azure Pipelines.
 
 1. On the **Security** tab, select the permissions that you want to enable 
-   for this group. 
+   for this group.
 
    ![Select the permissions for a group ](_img/add-users-03.png)
 
 1. Under **Stages**, keep the default **All Stage Types** or add one or more 
-   stages. 
+   stages.
 
    * **Edit Values and Target Servers**: Users in this group can edit 
-     deployment sequence and configuration variables for a release or stage. 
+     deployment sequence and configuration variables for a release or stage.
      Without this permission, stage information is read-only.
 
    * **Edit Approvals and Environment**: Users in this group can edit 
@@ -99,14 +100,14 @@ If you want to restrict access, then you'll want to follow these steps:
  
    ![Link existing user accounts as members of group ](_img/add-users-04.png)
 
-   Or, you can add a user account by choosing the **Create** button. 
+   Or, you can add a user account by choosing the **Create** button.
 
 1. Edit the **Everyone** group to remove permissions to which you want to 
-   restrict access. 
+   restrict access.
 
 1. Notify the users that you added. Let them know that they have to install 
    the Release Management client, or restart their client. This is required 
-   for their client to register the changes in permission. 
+   for their client to register the changes in permission.
 
 ## Q&A
 
@@ -130,19 +131,19 @@ Release Management client itself:
 
 * **Approvers**: These users approve or validate a task or stage during a 
   release cycle. They need the **Edit Approvals and Environment** permission set 
-  for all stage types that they will be required to approve. 
+  for all stage types that they will be required to approve.
 
 * **Deployers**: These users will create release templates and initiate 
   releases based on the release paths created by the release architects. They 
   need the **Can Create Release Template** and **Edit Values and Target 
-  Servers** permissions for all stage types. 
+  Servers** permissions for all stage types.
 
 * **Tool and action developers**: These users will add or modify tools and 
   actions. Release actions define the deployment sequence for each stage of a 
   release. Each action uses a specific tool to run a command with a set of 
   arguments. Enable these permissions for these users: **Can Manage Inventory**
   and **Can Use Custom Tool in Actions and Components**. To learn more, see 
-  [Release actions to deploy an app](release-actions.md). 
+  [Release actions to deploy an app](release-actions.md).
 
 * **Administrators**: These users will manage the servers and security for 
   all release management operations. Enable all permissions for users in this
@@ -163,13 +164,13 @@ Release Management client itself:
 
 **A**: Based on your user role or the permissions assigned to your group, some
 UI elements may not appear. For example, if you do not have permissions to 
-**Can Manage Inventory**, the **Inventory** tab does not display. 
+**Can Manage Inventory**, the **Inventory** tab does not display.
 
 Similarly, if you don't have permissions to edit an object, you might be able 
 to view it, but the **Save** button will be inactive. If you don't have one 
 of the permissions listed in the following table, the corresponding UI element
 will either be hidden or disabled. Release Managers, however, can view and 
-edit all information. 
+edit all information.
 
 | **Permission** | **UI element** |
 |----------------|----------------|

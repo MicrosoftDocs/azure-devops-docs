@@ -1,5 +1,6 @@
 ---
-title: Get your code reviewed with Visual Studio | VSTS
+title: Get your code reviewed with Visual Studio
+titleSuffix: Azure Repos
 description: Get a code review from your team using Visual Studio
 ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 # Get your code reviewed with Visual Studio
 
-#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Before you check in your code, you can use Visual Studio to ask someone else from your team to review it. Your request will show up in his team explorer, in the my work page.
 

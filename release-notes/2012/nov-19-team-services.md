@@ -2,7 +2,7 @@
 title: Team Foundation Service updates - Nov 19
 description: VSTS release notes for November 19 2012
 ms.prod: devops
-ms.technology: vsts-release-notes
+ms.technology: devops-release-notes
 ms.manager: douge
 ms.assetid: df593025-ff5b-4410-88bb-b350ea9f19f1
 ms.date: 06/01/2016
@@ -34,7 +34,7 @@ Build summary reports have been updated to include the count and size of files s
 
 Finally, we made some very minor updates to the account landing page to improve the discoverability of the new team project action.
 
-That’s our list for sprint 39. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice). See you again on December 10th.
+That’s our list for sprint 39. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice). See you again on December 10th.
 
 Thanks,
 

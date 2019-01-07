@@ -5,7 +5,9 @@
   - name: About managed queries
     href: example-queries.md
   - name: Adhoc vs managed queries
-    href: adhoc-vs-managed-queries.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json
+    href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
+  - name: Start using Azure Boards
+    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: View, run, or email a query 
@@ -19,8 +21,13 @@
   - name: Triage work items  
     href: triage-work-items.md
   - name: Bulk modify work items
-    href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json
+    href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
+- name: Concepts
+  items:
+  - name: Linking & traceability
+    href: link-work-items-support-traceability.md
 - name: Samples
+  expanded: true
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 
@@ -43,19 +50,19 @@
 - name: How-to Guides
   items:
   - name: Create work tracking charts
-    href: ../../report/dashboards/charts.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json
+    href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Organize queries with folders
     href: organize-queries.md
   - name: Set query permissions (Security) 
     href: set-query-permissions.md
   - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json
+    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Add tags to work items
     href: add-tags-to-work-items.md
   - name: "Filter backlogs & queries"
-    href: ../backlogs/filter-backlogs.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json
+    href: ../backlogs/filter-backlogs.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Copy list of work items 
-    href: ../backlogs/copy-list.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json
+    href: ../backlogs/copy-list.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
 - name: Reference
@@ -65,15 +72,17 @@
   - name: Query keyboard shortcuts
     href: queries-keyboard-shortcuts.md
   - name: Work item field index
-    href: ../work-items/guidance/work-item-field.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json 
+    href: ../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
   - name: WIQL syntax
     href: wiql-syntax.md
+  - name: Link types 
+    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
   - name: "Default permissions (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: REST API, Queries
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/queries 
+    href: /rest/api/vsts/wit/queries 
   - name: REST API, Wiql
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql 
+    href: /rest/api/vsts/wit/wiql 
 - name: Resources
   items:
   - name: Work Items

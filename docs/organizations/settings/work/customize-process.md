@@ -1,36 +1,41 @@
 ---
 title: Customize a project  
-titleSuffix: VSTS
-description: Your guide to configuring and customizing work tracking processes for a project by customizing an  inherited process
+titleSuffix: Azure DevOps Services
+description: Your guide to configuring and customizing work tracking processes for a project by customizing an inherited process
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azdevserver-2019'
 ms.topic: tutorial
-ms.date: 05/31/2018
---- 
+ms.date: 11/19/2018
+---
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/vsts/boards/work-items/guidance/agile-process), [Scrum](/vsts/boards/work-items/guidance/scrum-process), or [CMMI](/vsts/boards/work-items/guidance/cmmi-process). 
-
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
 You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the projects that use that process. 
+
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 The general sequence for customizing a project is to customize an inherited process, verify your customizations, and then change the process of the project(s) to use that process. 
 
 [![Create an inherited process](_img/process/customize-work-phase2-step1.png)](manage-process.md#create-inherited-process)[![Customize the inherited process](_img/process/customize-work-phase2-step2.png)](customize-process.md)[![Apply inherited process to  project(s)](_img/process/customize-work-phase2-step3.png)](manage-process.md#migrate)![Refresh and verify changes](_img/process/customize-work-phase2-step4.png)  
+
 
 You primarily customize a process by adding or modifying a work item type (WIT) defined for that process.  
 
 Learn how to perform these tasks:  
 
 > [!div class="checklist"] 
-> * Open the **Settings>Process** hub
+> * Open **Settings>Process**
 > * Create an  inherited process to customize   
 > * Add or modify a field 
 > * Add or modify a rule for a work item type 
@@ -53,11 +58,11 @@ Learn how to perform these tasks:
 
 ## Add or modify a field 
 
-Locked ![](_img/process/locked-icon.png) fields and inherited ![](_img/process/inherited-icon.png) fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
+Locked ![ ](_img/process/locked-icon.png) fields and inherited ![ ](_img/process/inherited-icon.png) fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
 
 0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
-0. To add a field, choose the ![](_img/process/new-field-icon.png) (**New Field** icon).  
+0. To add a field, choose the ![ ](_img/process/new-field-icon.png) (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png)
@@ -96,7 +101,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 0. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
-	<img src="_img/process/cpwit-add-new-wit.png" alt="Process hub, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
 
 0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
@@ -159,7 +164,7 @@ An extension is an installable unit that contributes new capabilities to your pr
 0. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
+	> ![Visual Studio Marketplace, install extension](_img/process/cprocess-install-extension.png) 
 
 	Extensions are available to add to all projects and processes. 
 
@@ -195,12 +200,12 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 
 We recommend that you create a test project and apply your customized inherited process to it to verify the changes you've made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods: 
 - [Create a test project and copy of your customized process](#test-project-copy-process)
-- [Create a test VSTS organization and import/export your process](#test-import-export-process)
+- [Create a test organization and import/export your process](#test-import-export-process)
 
 <a id="test-project-copy-process" />
 ### Create a test project and copy of your customized process
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
@@ -215,17 +220,17 @@ We recommend that you create a test project and apply your customized inherited 
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
 
-0.  Verify that the field(s) you added appear on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+0.  Verify that the field(s) you added appear on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
-### Create a test VSTS organization and import/export your process
+### Create a test organization and import/export your process
 
 You can also use the following steps to verify the customizations you've made to an inherited process. 
  
-0. Create a test VSTS organization.  
-0. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
-0. Verify the process customizations in the test organization.   
-0. Use the import/export process tool again to import the modified process to the production organization.  
+1. Create a test organization.  
+2. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
+3. Verify the process customizations in the test organization.   
+4. Use the import/export process tool again to import the modified process to the production organization.  
 
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
@@ -234,7 +239,7 @@ You can also use the following steps to verify the customizations you've made to
 <a id="process-rest-api">  </a>
 ## Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/vsts/processes/processes).
 
 ## Related articles
 

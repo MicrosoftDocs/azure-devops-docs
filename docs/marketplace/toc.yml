@@ -1,4 +1,4 @@
-- name: Manage Extensions
+- name: Extension management
   href: index.md
 - name: Overview
   items:
@@ -6,12 +6,12 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install free VSTS extensions
-    href: install-vsts-extension.md
-  - name: Preview paid VSTS extensions
-    href: start-trial-vsts-extension.md
-  - name: Buy and install paid VSTS extensions
-    href: install-paid-vsts-extension.md
+  - name: Install free Azure DevOps extensions
+    href: install-extension.md
+  - name: Preview paid Azure DevOps extensions
+    href: start-trial-extension.md
+  - name: Buy and install paid Azure DevOps extensions
+    href: install-paid-extension.md
   - name: Assign paid extensions
     href: assign-paid-extensions.md
   - name: Install TFS extensions
@@ -29,7 +29,7 @@
   - name: Approve extension requests
     href: approve-extensions.md
   - name: Respond to Marketplace extension reviews
-    href: ../extend/publish/manage-ratings-reviews.md?toc=/vsts/marketplace/toc.json&bc=/vsts/marketplace/breadcrumb/toc.json 
+    href: ../extend/publish/manage-ratings-reviews.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
   - name: Uninstall or disable extensions
     href: uninstall-disable-extensions.md
   - name: Change number of paid users for extensions for TFS
@@ -52,8 +52,8 @@
     items:
     - name: Code search extension
       href: ../project/search/overview.md
-    - name: Package Management extension
-      href: ../package/overview.md
+    - name: Azure Artifacts extension
+      href: ../artifacts/overview.md
     - name: Work item search extension
       href: ../project/search/work-item-search.md
   - name: Build extensions

@@ -1,6 +1,6 @@
 ---
-title: Set up Active Directory or Azure Active Directory for VSTS & TFS
-description: Manage large groups of users using Active Directory (AD) for Team Foundation Server (TFS) or Azure Active Directory (Azure AD) for VSTS 
+title: Set up Active Directory or Azure Active Directory for Azure DevOps & TFS
+description: Manage large groups of users using Active Directory (AD) for Team Foundation Server (TFS) or Azure Active Directory (Azure AD) for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -8,45 +8,72 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 02/28/2018
 monikerRange: '>= tfs-2013'
+ms.date: 12/04/2018
 ---
+
+
 # Set up Active Directory or Azure Active Directory
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The method we recommend for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Visual Studio Team Services (VSTS) and Active Directory (AD) for Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
+The method we recommend for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Azure DevOps Services and Active Directory (AD) for Azure DevOps Server or Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
 
-If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with VSTS or TFS to support billing.
+If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps or TFS to support billing.
+
+::: moniker range="vsts"
+Use this topic to access articles that will show you how to:
+> [!div class="checklist"]
+> * Set up Azure Active Directory for use with Azure DevOps Services
+> * Manage organizational access with Azure AD
+::: moniker-end
+
+::: moniker range="<= azdevserver-2019"
 
 Use this topic to access articles that will show you how to:
 > [!div class="checklist"]
-> * Set up Azure Active Directory for use with VSTS or TFS
-> * Manage organizational access with Azure AD
 > * Set up Active Directory for use with TFS
 
+::: moniker-end
+
 > [!NOTE]
-> Without Azure AD, all VSTS users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../../billing/set-up-billing-for-your-organization-vs.md).
+> Without Azure AD, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../../billing/set-up-billing-for-your-organization-vs.md).
 
-## Set up Azure Active Directory for use with VSTS or TFS
+::: moniker range="vsts"
 
-* [Access VSTS with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
+## Set up Azure Active Directory for use with Azure DevOps Services
+
+* [Access Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
 
 ## Manage organizational access with Azure AD
 
-* [Add VSTS users to your Azure AD](../../organizations/accounts/add-users-to-aad.md)
-* [Connect VSTS account to Azure AD](../../organizations/accounts/connect-organization-to-aad.md)
-* [Disconnect VSTS account from Azure AD](../../organizations/accounts/disconnect-organization-from-aad.md)
-* [Delete users from VSTS connected to Azure AD](../../organizations/accounts/delete-users-from-services-aad.md)
-* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
+* [Add Azure DevOps users to your Azure AD](../../organizations/accounts/add-users-to-azure-ad.md)
+* [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
+* [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
+* [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-azure-ad.md)
+* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 
+::: moniker-end
 
-## Set up Active Directory for use with TFS
+::: moniker range="azdevserver-2019"
+## Set up Active Directory for use with Azure DevOps Server
 
 Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.
 
-* [Install Active Directory Domain Services (Level 100)](https://docs.microsoft.com/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 * [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+## Set up Active Directory for use with an on-premises TFS
+
+Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.
+
+* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+* [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+
+::: moniker-end
 
 ## Next steps
 
@@ -57,7 +84,7 @@ Use these resources to learn about installing Active Directory. Typically, you s
 
 * [About security and identity](about-security-identity.md)
 * [How billing works](../../billing/overview.md)
-* [Set up billing to pay for users, pipelines, and cloud-based load testing in VSTS](../../billing/set-up-billing-for-your-organization-vs.md) 
-* [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)
-* [Get started with Azure AD](https://docs.microsoft.com/azure/active-directory/get-started-azure-ad)
+* [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../../billing/set-up-billing-for-your-organization-vs.md) 
+* [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
+* [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)
  

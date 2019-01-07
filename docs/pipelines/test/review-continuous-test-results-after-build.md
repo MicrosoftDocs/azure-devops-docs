@@ -1,85 +1,229 @@
 ---
-title: Review continuous test results after a build VSTS and TFS 
-description: Review continuous test results after a build with a build or release pipeline in Microsoft VSTS or Team Foundation Server (TFS)
-ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
+title: Review test results
+description: Review continuous test results with a build or release pipeline in Azure Pipelines or Team Foundation Server (TFS)
+ms.assetid: EA5D7524-3683-4660-B3B6-3F29AD3587AC
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
+ms.custom: "continuous-test, seodec18"
 ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 07/16/2018
+ms.author: vinojos
+author: vinojos
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Review continuous test results after a build
+# Review test results
 
-After your build finishes running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS),
-review your test results to start analyzing any problems that you found. Note that some features are not available in TFS 2015.
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+
+<a name="prerequisites"></a>  
+<a name="testreporting"></a>
+
+Automated tests can be configured to run as part of a build or release for various [languages](../languages/javascript.md).
+Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
+in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
+In addition, it provides many advanced reporting capabilities explored in the following sections.
+
+> Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
-<a name="reviewtests"></a>  
-## Review your test results
+Published test results can be viewed in the **Tests** tab in a build or release summary.
 
-1. In VSTS or TFS, go to your project.
+> [!NOTE]
+> Test report is available in TFS 2015 and above, however the new experience
+> described in this document is available only with Azure Pipelines at present.
 
-1. Find your build and open the build summary.
+<a name="viewbuildresults"></a>  
 
-   ![Go to Build hub, build pipeline, build summary](_img/review-continuous-test-results-after-build/open-summary.png)
+## View test results in build
 
-1. Review the summary for your test run results.
-   Here you'll find changes in new, failed, and passed tests, 
-   how long these tests took to run, how long these tests have been failing, and more.
+The build summary provides a timeline view of the key steps executed in the build.
+If tests were executed and reported as part of the build, a test milestone appears
+in the timeline view. The test milestone provides a summary of the
+test results as a measure of **pass percentage** along with indicators for **failures** and **aborts** if these exist.
 
-   ![View test run results summary](_img/test-results-summary.png)
+![View test in build timeline view](_img/review-continuous-test-results-after-build/build-timeline-view.png)
 
-1. If you collected code coverage information, the build **Summary** page displays an overview of the blocks and lines covered.
-   You can download the code coverage results for a drill-down analysis in Visual Studio.
+<a name="viewreleaseresults"></a>  
 
-   ![View code coverage information](_img/review-continuous-test-results-after-build/code-coverage-results.png)
+## View test results in release
 
-<a name="organizetests"></a>  
-## Organize your test results
+In the pipeline view you can see all the stages and associated tests.
+The view provides a summary of the test results as a measure of **pass percentage** along with indicators for
+**failures** and **aborts** if these exist. These indicators are same as in the build timeline view, giving
+a consistent experience across build and release.
 
-1. Choose the **Show filter bar** icon.
+![View test in release canvas view](_img/review-continuous-test-results-after-build/release-canvas-view.png)
 
-   ![Show the filters bar](_img/review-continuous-test-results-after-build/show-filters.png)
+<a name="teststab"></a> 
 
-1. Organize your test results using the group and outcome lists.
+## Tests tab
 
-   ![Organize your test results](_img/organize-test-results.png)
+Both the build and release summaries provide details of test execution. Choose **Test summary** to view the details in the **Tests** tab.
+This page has the following sections
 
-<a name="debugtests"></a>  
-## Debug failed tests
+* **Summary**: provides key quantitative metrics for the test execution such as the total test count, failed tests, pass percentage, and more.
+  It also provides differential indicators of change compared to the previous execution.
 
-1. To start debugging a failed test, review the resulting error and stack trace.
+* **Results**: lists all tests executed and reported as part of the current build or release.
+  The default view shows only the failed and aborted tests in order to focus on tests that require attention.
+  However, you can choose other outcomes using the filters provided. 
 
-   ![Error and stack trace for a failed test](_img/review-continuous-test-results-after-build/build-error-message.png)
+* **Details**: A list of tests that you can sort, group, search, and filter to find the test results you need.
 
-1. To trace the results of a test across builds, view the test history.
+![View tests tab](_img/review-continuous-test-results-after-build/view-tests-tab-2.png)
 
-   ![Open the test history page](_img/review-continuous-test-results-after-build/test-history-01.png)
+Select any test run or result to view the details pane that displays additional information required for troubleshooting
+ such as the error message, stack trace, attachments, work items, historical trend, and more.
 
-1. In the history page, review when a test started to pass or fail.
+![View details tab](_img/review-continuous-test-results-after-build/view-tests-tab.png)
 
-   ![Viewing the test history across builds](_img/review-continuous-test-results-after-build/test-history-02.png)
+The following capabilities of the **Tests** tab help to improve productivity and troubleshooting experience.
 
-   Group the list of results using the drop-down list.
-   Mouse over a bar in the chart to see a pop-up summary, or select
-   a bar to view the detailed test results for that build.
- 
-<a name="viewrelease"></a>  
-## View tests in the Release hub
+<a name="teststab"></a>
 
-* Test results are also summarized in the release summaries in the **Release** hub.
-  Choose any of the percentage values to see the full summary in the **Test** hub. 
+### Filter large test results
 
-  ![Test result summary in Release hub](_img/review-continuous-test-results-after-build/release-test-results-01.png)
+Over time, tests accrue and, for large applications, can easily grow to tens of thousands of tests.
+For these applications with very many tests, it can be hard to navigate through the results to identify test failures,
+associate root causes, or get ownership of issues. Filters make it easy to quickly navigate to the test results of your interest.
+You can filter on **Test Name**, **Outcome** (failed, passed, and more), **Test Files** (files holding tests) and **Owner** (for test files).
+All of the filter criteria are cumulative in nature.
 
-## Next step
+![Filter large test result set](_img/review-continuous-test-results-after-build/filter-large-test-results.png)
 
-> [!div class="nextstepaction"]
-> [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+Additionally, with multiple **Grouping** options such as **Test run**, **Test file**, **Priority**, **Requirement**, and more,
+you can organize the **Results** view exactly as you require.
+
+<a name="fullpageview"></a>
+
+### Immersive troubleshooting experience
+
+Error messages and stack traces are lengthy in nature and need enough real estate to view the details during troubleshooting.
+To provide an immersive troubleshooting experience, the **Details** view can be expanded to full page view while still being
+able to perform the required operations in context, such as bug creation or requirement association for the selected test result.
+
+![Full page panel view](_img/review-continuous-test-results-after-build/full-page-panel-view.png)
+
+<a name="historyview"></a>
+
+### Test trends with historical data
+
+History of test execution can provide meaningful insights into reliability or performance of tests.
+When troubleshooting a failure, it is valuable to know how a test has performed in the past.
+The **Tests** tab provides test history in context with the test results.
+The test history information is exposed in a progressive manner starting with the current build pipeline to other branches,
+or the current stage to other stages, for build and release respectively.
+
+![View historical trends](_img/review-continuous-test-results-after-build/view-historical-trend.png)
+
+<a name="inprogressview"></a>
+
+### View execution of in-progress tests
+
+Tests, such as integration and functional tests, can run for a long time.
+Therefore, it is important to see the current or near real-time status of test execution at any given time.
+Even for cases where tests run quickly, it's useful to know the status of the relevant test result(s) as early as possible;
+especially when failures occur. The **in-progress** view eliminates the need to wait for test execution to finish.
+Results are available in near real-time as execution progresses, helping you to take actions faster.
+You can debug a failure, file a bug, or abort the pipeline. 
+
+![In progress release view](_img/review-continuous-test-results-after-build/inprogress-canvas-view.png)
+
+> [!NOTE]
+> The feature is currently available for both build and release, using
+> [Visual Studio Test](../tasks/test/vstest.md) task in a Multi Agent job. 
+> It will be available for Single Agent jobs in a future release.
+
+The view below shows the **in-progress** test summary in a release, reporting the total test count and the number of test failures
+at a given point in time. The test failures are available for troubleshooting, creating bug(s), or to take any other appropriate action. 
+
+![In progress summary view](_img/review-continuous-test-results-after-build/inprogress-summary-view.png)
+
+<a name="summarizedresults"></a>
+
+### View summarized test results
+
+During test execution, a test might spawn multiple instances or tests that contribute to the overall outcome.
+Some examples are, tests that are rerun, tests composed of an ordered combination of other tests (ordered tests)
+or tests having different instances based on an input parameter (data driven tests).
+
+<!-- see also [rerun](./test-reliability.md) -->
+
+As these tests are related, they must be reported together with the overall outcome derived from the individual instances or tests.
+These test results are reported as a summarized test result in the **Tests** tab:
+
+* **Rerun failed tests**: The ability to rerun failed tests is available in the latest version of the [Visual Studio Test](../tasks/test/vstest.md) task.
+  During a rerun, multiple attempts can be made for a failed test, and each failure could have a different root cause due to the non-deterministic behavior of the test.
+  Test reports provide a combined view for all the attempts of a rerun, along with the overall test outcome as a summarized unit.
+  Additionally the [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0)
+  now support the ability to publish and query summarized test results.
+
+  ![Rerun failed tests](_img/review-continuous-test-results-after-build/rerun-failed-test.png)
+
+* **Data driven tests**: Similar to the rerun of failed tests, all iterations of data driven tests are reported under that test.
+  The summarized result view for data driven tests depends on the behavior of the test framework.
+  If the framework produces a hierarchy of results (for example, MSTest v1 and v2) they will be reported in a summarized view.
+  If the framework produces individual results for each iteration (for example, xUnit) they will not be grouped together.
+  The summarized view is also available for ordered tests (**.orderedtest** in Visual Studio).
+
+  ![Data driven test](_img/review-continuous-test-results-after-build/data-driven-test.png)
+
+> [!NOTE]
+> Metrics in the test summary section, such as the total number of tests, passed, failed, or other are
+> computed using the root level of the summarized test result.
+
+<a name="abortedtest"></a>
+
+### View aborted tests
+
+Test execution can abort due to several reasons such as bad test code, errors in the source under test, or environmental issues.
+Irrespective of the reason for the abort, it is important to be able to diagnose the behavior and identify the root cause.
+The aborted tests and test runs can be viewed alongside the completed runs in the **Tests** tab. 
+
+![Data driven test](_img/review-continuous-test-results-after-build/aborted-test-run.png)
+
+> [!NOTE]
+> The feature is currently available for both build and release, using the
+> [Visual Studio Test](../tasks/test/vstest.md) task in a Multi Agent job 
+> or publishing test results using the
+> [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0). 
+> It will be available for Single Agent jobs in a future release.
+
+## Surface test results in the Tests tab 
+
+Tests results can be surfaced in the **Tests** tab using one of the following options:
+
+* **Test execution tasks**: built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
+  that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
+  [Maven](../tasks/build/maven.md), [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and
+  [Xcode](../tasks/build/xcode.md) that provide this capability as an option within the task.  
+
+* **Publish Test Results task**: publishes test results to Azure Pipelines or TFS when tests are executed using
+  your choice of runner, and results are available in any of the [supported test result formats](../tasks/test/publish-test-results.md). 
+
+* **API(s)**: test results published directly using the [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0).
+
+## Surface test information beyond the Tests tab
+
+The **Tests** tab provides a detailed summary of the test execution.
+This is helpful in tracking the quality of the pipeline, as well as troubleshooting failures.
+Azure DevOps also provides other ways to surface the test information: 
+
+* The [Dashboard](../../report/dashboards/dashboards.md) provides visibility into your team's is progress.
+  Add one or more widgets that surface test related information:
+
+  - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget)
+  - [Test results trend](../../report/dashboards/widget-catalog.md#test-results-widget)
+  - [Deployment status](../../report/dashboards/widget-catalog.md#deployment-status-widget)
+  
+* [Test analytics](test-analytics.md) provides rich insights into test results measured over a period of time.
+  It can help identify problematic areas in your test by providing data such as the top failing tests, and more.
+
+[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
 
-When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/azure/devops/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a history *with* migration.
+When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/azure/devops/learn/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a history *with* migration.
 
 SVN migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, and whether you're using regular SVN or close relative like SVK. 
 
@@ -30,15 +30,15 @@ There are several ways to migrate from SVN to Git. The approach outlined in this
 
 > [!NOTE]
 >
-> Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team's migration](/azure/devops/git/centralized-to-git). After you've prepared, you can begin the migration.
+> Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team's migration](/azure/devops/learn/git/centralized-to-git). After you've prepared, you can begin the migration.
 
 The high-level workflow for migrating from SVN to Git is as follows:
 
 * Prepare a migration environment
 * Convert the source SVN repository to a local Git repository
 * (Optional) Synchronize the local Git repository with any changes from SVN repository while developers continue using SVN
-* Push the local Git repository to a remote Git repository hosted on Visual Studio Team Services (VSTS)
-* Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on VSTS
+* Push the local Git repository to a remote Git repository hosted on Azure Repos
+* Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on Azure Repos
 * Developers switch to Git as main source control system
 
 ## Prepare a migration environment
@@ -49,12 +49,12 @@ Configure a migration environment on a local workstation and install the followi
 * [Subversion](http://subversion.apache.org/packages.html)
 * [git-svn utility](https://www.kernel.org/pub/software/scm/repos/git/docs/git-svn.html) (already part of Git)
 
-You will also need to create a Git repository on your VSTS account to host the converted SVN repository, you may follow [Create a new Git repo in your project
-](https://docs.microsoft.com/en-us/vsts/repos/git/create-new-repo)
+You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
+](/azure/devops/repos/git/create-new-repo)
 
 ## Convert the source SVN repository to a local Git repository
 
-The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be changed, instead it only contains the repository's history and the metadata about the repository itself. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like Visual Studio Team Services (VSTS).
+The goal of this step is to convert the source Subversion repository to a local *bare* Git repository. A *bare* Git repository does not have a local working checkout of files that can be changed, instead it only contains the repository's history and the metadata about the repository itself. This is the recommended format for sharing a Git repository via a remote repository hosted on a service like Azure Repos.
 
 > [!TIP]
 >
@@ -77,7 +77,7 @@ Subversion just uses the username for each commit, while Git stores both a real 
 To extract a list of all SVN users from the root of your local Subversion checkout, run this PowerShell command:
 
 ```
-svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' \| ')[1] } | Select-Object -Unique
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique
 ```
 This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `jamal = jamal <jamal>` to `jamal =  Jamal Hartnett <jamal@fabrikam-fiber.com>`.
 
@@ -116,8 +116,8 @@ git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
 > [!TIP]
 >
-> Read more about **.gitignore**: [Ignore file changes with Git](
-https://docs.microsoft.com/en-us/vsts/repos/git/ignore-files?tabs=visual-studio)
+> Read more about **.gitignore**: [Ignore file changes with Git]
+(/azure/devops/repos/git/ignore-files?tabs=visual-studio)
 
 ### Push repository to a bare git repository
 
@@ -174,14 +174,14 @@ git for-each-ref --format='%(refname)' refs/remotes | % { $_.Replace('refs/remot
 
 ## Update your workflow
 
-Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](/azure/devops/git/centralized-to-git).
+Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](/azure/devops/learn/git/centralized-to-git).
 
 ## Reference information
 
-- [Choosing the right version control for your project](https://docs.microsoft.com/en-us/vsts/repos/tfvc/comparison-git-tfvc)
-- [Learn Git](/azure/devops/git/learn-git-with-team-services/)
-- [Ignore file changes with Git](https://docs.microsoft.com/en-us/vsts/repos/git/ignore-files?tabs=visual-studio)
-- [Migrate from TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git)
+- [Choosing the right version control for your project](/azure/devops/repos/tfvc/comparison-git-tfvc)
+- [Learn Git](/azure/devops/learn/git/learn-git-with-team-services/)
+- [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
 
 > Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 

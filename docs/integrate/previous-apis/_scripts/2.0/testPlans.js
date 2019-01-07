@@ -5,7 +5,7 @@ var apiwriter = require('apiwriter');
  * 
  * Because these APIs are project-scoped, the value for cfgApisUrl should be project-scoped, for example: 
  *
- *  set cfgApisUrl=https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/Fabrikam-Fiber-TFVC/_apis
+ *  set cfgApisUrl=https://fabrikam-fiber-inc:8080/DefaultCollection/Fabrikam-Fiber-TFVC/_apis
  *
 */ 
 

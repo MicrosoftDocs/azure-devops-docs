@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts TeamProjectCollectionReference API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts TeamProjectCollectionReference API | Extensions for Azure DevOps Services
 description: Reference object for a TeamProjectCollection.
 ms.assetid: 682474cc-f255-85c5-9636-09c2aa644e9c
 ms.prod: devops
