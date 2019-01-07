@@ -79,7 +79,7 @@ var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
 
 ## Reference
 
-You can find detailed, up-to-date reference documentation in the [Azure DevOps Services .NET SDK API Reference browser](https://docs.microsoft.com/en-us/dotnet/api/index?view=azure-devops-dotnet).
+You can find detailed, up-to-date reference documentation in the [Azure DevOps Services .NET SDK API Reference browser](https://docs.microsoft.com/dotnet/api/index?view=azure-devops-dotnet).
 
 ## Samples
 
