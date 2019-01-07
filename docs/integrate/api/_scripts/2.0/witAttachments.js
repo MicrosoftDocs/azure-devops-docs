@@ -40,7 +40,7 @@ exports.submitRequests = function () {
         input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
 
         for (i = 0; i < bytes; i += 3) {
-            //get the 3 octects in 4 ascii chars
+            //get the 3 octets in 4 ascii chars
             enc1 = keyStr.indexOf(input.charAt(j++));
             enc2 = keyStr.indexOf(input.charAt(j++));
             enc3 = keyStr.indexOf(input.charAt(j++));
