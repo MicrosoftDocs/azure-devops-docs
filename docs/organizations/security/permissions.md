@@ -613,7 +613,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="alter-trace-settings-permission">Alter trace settings</td>
 		<td>
-			Can [change the trace settings](https://docs.microsoft.com/en-us/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps/TFS Web services.
+			Can [change the trace settings](https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps/TFS Web services.
 		</td>
 	</tr>
 	<tr>
