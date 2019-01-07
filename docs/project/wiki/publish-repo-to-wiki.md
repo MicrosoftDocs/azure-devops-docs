@@ -21,7 +21,7 @@ ms.date: 12/14/2018
 
 Content that you already maintain in a Git repository can be published to a wiki. For example, content written to support a software development kit (SDK), product documentation, or README files can quickly be published to a wiki. Multiple wikis can be published within a single team project.
 
-By publishing yourMarkdown files to a wiki, you gain the following benefits:
+By publishing your Markdown files to a wiki, you gain the following benefits:
 
 - Organize the content into a hierarchical page structure
 - Table of contents that readers can browse and filter
