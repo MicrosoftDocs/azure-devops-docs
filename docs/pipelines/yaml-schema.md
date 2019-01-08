@@ -301,6 +301,7 @@ Full syntax:
 
 ```yaml
 pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR, will cancel in-progress runs for the same PR. Defaults to true
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
