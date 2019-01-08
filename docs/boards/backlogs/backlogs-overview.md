@@ -37,7 +37,7 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 ## Product and portfolio backlogs 
 
-Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.. 
+Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. 
 
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
