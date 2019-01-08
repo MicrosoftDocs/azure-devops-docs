@@ -135,3 +135,8 @@ Administer permissions at the top-level **Git repositories** entry.
 </table>
 
 ::: moniker-end
+
+<a name="pcbs-has-read-by-default"></a>
+The Project Collection Build Service can read from all repositories by default.
+Any pipeline which runs with project collection scope can potentially read any repository in the organization/collection.
+You can remove this permission for a repository: set "Read" to "Deny" for the Project Collection Build Service.
