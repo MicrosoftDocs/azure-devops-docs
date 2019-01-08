@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 12/14/2018
+ms.date: 1/8/2019
 monikerRange: 'vsts'
 ---
 
@@ -367,7 +367,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable ]
-  steps: [ script | bash | powershell | checkout | task | stepTemplate ]
+  steps: [ script | bash | pwsh | powershell | checkout | task | stepTemplate ]
 ```
 
 # [Example](#tab/example)
@@ -386,7 +386,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
 
 Learn more about [variables](process/variables.md?tabs=yaml). Also see
 the schema references for [pool](#pool), [server](#server), [script](#script),
-[bash](#bash), [powershell](#powershell), [checkout](#checkout), [task](#task),
+[bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
 and [step templates](#step-template).
 
 > [!Note]
@@ -717,6 +717,45 @@ It will run a script in Bash on Windows, macOS, or Linux.
 Learn more about [conditions](process/conditions.md?tabs=yaml) and
 [timeouts](process/phases.md?tabs=yaml#timeouts).
 
+## Pwsh
+
+`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md).
+It will run a script in PowerShell on Windows, macOS, or Linux.
+
+# [Schema](#tab/schema)
+
+```yaml
+- pwsh: string  # contents of the script to run
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  errorActionPreference: enum  # see below
+  ignoreLASTEXITCODE: boolean  # see below
+  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
+  workingDirectory: string  # initial working directory for the step
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether or not to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  env: { string: string }  # list of environment variables to add
+```
+
+# [Example](#tab/example)
+
+```yaml
+- pwsh: echo Hello $(name)
+  displayName: Say hello
+  name: firstStep
+  workingDirectory: $(build.sourcesDirectory)
+  failOnStderr: true
+  env:
+    name: Microsoft
+```
+
+---
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
 ## PowerShell
 
 `powershell` is a shortcut for the [PowerShell task](tasks/utility/powershell.md).
@@ -890,7 +929,7 @@ And in the included template:
 
 ```yaml
 parameters: { string: any } # expected parameters
-steps: [ script | bash | powershell | checkout | task ]
+steps: [ script | bash | pwsh | powershell | checkout | task | stepTemplate ]
 ```
 
 # [Example](#tab/example)
