@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.custom: seodec18
-ms.date: 12/13/2018
+ms.date: 1/8/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -202,6 +202,17 @@ pr:
     - docs/*
     exclude:
     - docs/README.md
+```
+
+You can specify whether additional pushes to a PR, will cancel in-progress runs for the same PR. The default is `true`.
+
+```yaml
+# auto cancel false
+pr:
+  autoCancel: false
+  branches:
+    include:
+    - master
 ```
 
 You can opt out of pull request builds entirely by specifying `pr: none`.
