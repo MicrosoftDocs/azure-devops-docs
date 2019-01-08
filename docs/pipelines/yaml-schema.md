@@ -70,8 +70,8 @@ Note: Azure Pipelines doesn't support all features of YAML, such as complex keys
 ```yaml
 name: string  # build numbering format
 resources:
-  containers: [ container ]
-  repositories: [ repository ]
+  containers: [ containerResource ]
+  repositories: [ repositoryResource ]
 variables: { string: string } | [ variable ]
 trigger: trigger
 pr: pr
@@ -89,7 +89,7 @@ variables:
 ---
 
 Learn more about [multi-job pipelines](process/multiple-phases.md?tabs=yaml),
-using [containers](#container) and [repositories](#repository) in pipelines,
+using [containers](#container-resource) and [repositories](#repository-resource) in pipelines,
 [triggers](#trigger), [PR triggers](#pr-trigger), [variables](process/variables.md?tabs=yaml), and
 [build number formats](build/options.md#build-number-format).
 
@@ -134,7 +134,7 @@ variables:
 
 ---
 
-### Container
+### Container resource
 
 [Container jobs](process/container-phases.md) let you isolate your tools and
 dependencies inside a container. The agent will launch an instance of your
@@ -159,12 +159,12 @@ resources:
 resources:
   containers:
   - container: linux
-    image: ubuntu-16.04
+    image: ubuntu:16.04
 ```
 
 ---
 
-### Repository
+### Repository resource
 
 If your pipeline has [templates](#job-templates) in another repository, you must
 let the system know about that repository. The `repository` resource lets you
@@ -364,7 +364,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   pool: pool # see pool schema
   workspace:
     clean: outputs | resources | all # what to clean up after the job runs
-  container: string # container resource to run this job inside
+  container: containerReference # container to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable ]
@@ -393,6 +393,52 @@ and [step templates](#step-template).
 > [!Note]
 > If you have only one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
 > which omits many of the keywords here.
+
+### Container reference
+
+`container` is supported by jobs.
+
+# [Schema](#tab/schema)
+
+```yaml
+container: string # Docker Hub image reference or resource alias
+```
+
+```yaml
+container:
+  image: string  # container image name
+  options: string  # arguments to pass to container at startup
+  endpoint: string  # endpoint for a private container registry
+  env: { string: string }  # list of environment variables to add
+```
+
+# [Example](#tab/example)
+
+```yaml
+container: ubuntu:16.04 # Docker Hub image reference
+```
+
+```yaml
+container: # inline container specification
+  image: ubuntu:16.04
+  options: --hostname container-test --ip 192.168.0.1
+```
+
+```yaml
+resources:
+  containers:
+  - container: linux # reusable alias
+    image: ubuntu:16.04
+
+jobs:
+- job: a
+  container: linux # reference
+
+- job: b
+  container: linux # reference
+```
+
+---
 
 ### Strategies
 
