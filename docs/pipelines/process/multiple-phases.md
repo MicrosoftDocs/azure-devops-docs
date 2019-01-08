@@ -34,6 +34,9 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 * Reduce deployment time by selectively downloading different artifacts in different jobs of a deployment pipeline
 * [Conditionally execute](conditions.md) a set of tasks
 
+> [!NOTE]
+> Running multiple jobs in parallel is supported only in build pipelines at present. It is not yet supported in release pipelines.
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"

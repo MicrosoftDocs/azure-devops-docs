@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 12/14/2018
+ms.date: 1/8/2019
 monikerRange: 'vsts'
 ---
 
@@ -70,8 +70,8 @@ Note: Azure Pipelines doesn't support all features of YAML, such as complex keys
 ```yaml
 name: string  # build numbering format
 resources:
-  containers: [ container ]
-  repositories: [ repository ]
+  containers: [ containerResource ]
+  repositories: [ repositoryResource ]
 variables: { string: string } | [ variable ]
 trigger: trigger
 pr: pr
@@ -89,7 +89,7 @@ variables:
 ---
 
 Learn more about [multi-job pipelines](process/multiple-phases.md?tabs=yaml),
-using [containers](#container) and [repositories](#repository) in pipelines,
+using [containers](#container-resource) and [repositories](#repository-resource) in pipelines,
 [triggers](#trigger), [PR triggers](#pr-trigger), [variables](process/variables.md?tabs=yaml), and
 [build number formats](build/options.md#build-number-format).
 
@@ -134,7 +134,7 @@ variables:
 
 ---
 
-### Container
+### Container resource
 
 [Container jobs](process/container-phases.md) let you isolate your tools and
 dependencies inside a container. The agent will launch an instance of your
@@ -159,12 +159,12 @@ resources:
 resources:
   containers:
   - container: linux
-    image: ubuntu-16.04
+    image: ubuntu:16.04
 ```
 
 ---
 
-### Repository
+### Repository resource
 
 If your pipeline has [templates](#job-templates) in another repository, you must
 let the system know about that repository. The `repository` resource lets you
@@ -301,6 +301,7 @@ Full syntax:
 
 ```yaml
 pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR, will cancel in-progress runs for the same PR. Defaults to true
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -363,11 +364,11 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   pool: pool # see pool schema
   workspace:
     clean: outputs | resources | all # what to clean up after the job runs
-  container: string # container resource to run this job inside
+  container: containerReference # container to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable ]
-  steps: [ script | bash | powershell | checkout | task | stepTemplate ]
+  steps: [ script | bash | pwsh | powershell | checkout | task | stepTemplate ]
 ```
 
 # [Example](#tab/example)
@@ -386,12 +387,58 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
 
 Learn more about [variables](process/variables.md?tabs=yaml). Also see
 the schema references for [pool](#pool), [server](#server), [script](#script),
-[bash](#bash), [powershell](#powershell), [checkout](#checkout), [task](#task),
+[bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
 and [step templates](#step-template).
 
 > [!Note]
 > If you have only one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
 > which omits many of the keywords here.
+
+### Container reference
+
+`container` is supported by jobs.
+
+# [Schema](#tab/schema)
+
+```yaml
+container: string # Docker Hub image reference or resource alias
+```
+
+```yaml
+container:
+  image: string  # container image name
+  options: string  # arguments to pass to container at startup
+  endpoint: string  # endpoint for a private container registry
+  env: { string: string }  # list of environment variables to add
+```
+
+# [Example](#tab/example)
+
+```yaml
+container: ubuntu:16.04 # Docker Hub image reference
+```
+
+```yaml
+container: # inline container specification
+  image: ubuntu:16.04
+  options: --hostname container-test --ip 192.168.0.1
+```
+
+```yaml
+resources:
+  containers:
+  - container: linux # reusable alias
+    image: ubuntu:16.04
+
+jobs:
+- job: a
+  container: linux # reference
+
+- job: b
+  container: linux # reference
+```
+
+---
 
 ### Strategies
 
@@ -717,6 +764,45 @@ It will run a script in Bash on Windows, macOS, or Linux.
 Learn more about [conditions](process/conditions.md?tabs=yaml) and
 [timeouts](process/phases.md?tabs=yaml#timeouts).
 
+## Pwsh
+
+`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md).
+It will run a script in PowerShell on Windows, macOS, or Linux.
+
+# [Schema](#tab/schema)
+
+```yaml
+- pwsh: string  # contents of the script to run
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  errorActionPreference: enum  # see below
+  ignoreLASTEXITCODE: boolean  # see below
+  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
+  workingDirectory: string  # initial working directory for the step
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether or not to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  env: { string: string }  # list of environment variables to add
+```
+
+# [Example](#tab/example)
+
+```yaml
+- pwsh: echo Hello $(name)
+  displayName: Say hello
+  name: firstStep
+  workingDirectory: $(build.sourcesDirectory)
+  failOnStderr: true
+  env:
+    name: Microsoft
+```
+
+---
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
 ## PowerShell
 
 `powershell` is a shortcut for the [PowerShell task](tasks/utility/powershell.md).
@@ -890,7 +976,7 @@ And in the included template:
 
 ```yaml
 parameters: { string: any } # expected parameters
-steps: [ script | bash | powershell | checkout | task ]
+steps: [ script | bash | pwsh | powershell | checkout | task | stepTemplate ]
 ```
 
 # [Example](#tab/example)
