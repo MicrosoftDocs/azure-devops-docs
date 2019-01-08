@@ -1,30 +1,26 @@
 
 <table>
 <tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team admins</th>
-<th width="20%">Account Owner/<br/>Project Admins</th>
+<th width="41%">Task</th>
+<th width="12%">Readers</th>
+<th width="15%">Contributors</th>
+<th width="17%">Project admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View Analytics service
+<td align="left">View a shared Analytics view
 </td>
 <td> </td>
-<td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
 
 <tr>
-<td align="left">View, edit, and delete a shared Analytics view 
+<td align="left">Edit and delete Analytics views 
 </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td> </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
