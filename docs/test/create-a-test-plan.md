@@ -16,14 +16,19 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header](_shared/version-header.md)] 
 
-Create test plans to track manual testing for sprints or milestones. That way, 
-you can see when the testing for a specific sprint or milestone is complete.
+Create test plans and test suites for your teams to use to track manual testing for sprints or milestones.
+That way, you can see when the testing for a specific sprint or milestone is complete.
+You can export and share the test plans and test suites with your team.
+For more information about manual testing, see [Planned manual testing](overview.md#planned-manual-testing)
+and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
 
 Test plans are used to group together test suites and individual test cases.
 This includes static test suites, requirement-based suites, and
 [query-based suites](reference-qa.md#query-based-suites). You can add individual test cases to a test plan without creating
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
+
+Test plans and test cases are stored in your Azure DevOps or TFS organization as special types of work items.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
@@ -33,7 +38,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 <a name="testplan"></a>
 ## Create a test plan
 
-1. If you haven't already, 
+1. If you want to use Azure DevOps, and haven't done so already, 
    [sign up for Azure DevOps](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
    [create your project](../organizations/accounts/organization-management.md), 
    and [create your backlog](../boards/backlogs/create-your-backlog.md). 
