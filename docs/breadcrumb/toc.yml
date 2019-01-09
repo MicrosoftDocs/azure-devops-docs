@@ -163,7 +163,7 @@
   tocHref: /azure/devops/
   topicHref: /tfs/index
   items:
-  - name: "TFS administation"
+  - name: "TFS administration"
     tocHref: /tfs/server/
     topicHref: /tfs/index
   - name: Project Server integration

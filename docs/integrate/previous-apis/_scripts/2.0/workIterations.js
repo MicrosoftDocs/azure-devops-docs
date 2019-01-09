@@ -27,7 +27,7 @@ exports.submitRequests = function () {
             context.iterationPath = result.responseBody.path;
         });
 
-    // Remove an iteration from a team's iteraitons
+    // Remove an iteration from a team's iterations
     apiwriter.deleteJson('/work/teamsettings/iterations/{iterationId}', null);
 
     // Keep it clean!
@@ -35,7 +35,7 @@ exports.submitRequests = function () {
             return context.iterationId;
     });
 /*
-    // Remove an iteration from a team's iteraitons
+    // Remove an iteration from a team's iterations
     apiwriter.deleteJson('/work/teamsettings/iterations/{iterationId}', null);
 
     // Keep it clean!
