@@ -54,7 +54,7 @@ screenshots, video, logs, and attachments is often useful to help troubleshoot f
 
 ## Collect video using the Visual Studio Test task
 
-1. To collect video, specify the data collector you want to use in a [runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#video-data-collector).
+1. To collect video, specify the data collector you want to use in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#video-data-collector).
    The video data collector captures a screen recording when tests are run.
 
 1. In the [Visual Studio Test](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md) task,
@@ -81,7 +81,6 @@ so the **Publish Test Results** task cannot publish attachments when these forma
 * [Continuous testing scenarios and capabilities](index.md)
 * [Set up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md)
 * [Test with unified agents and jobs](../pipelines/test/set-up-continuous-testing-builds.md)
-* [Pass parameters to tests from a build or release pipeline](../pipelines/test/reference-qa.md#pass-params)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

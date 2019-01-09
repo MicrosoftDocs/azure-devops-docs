@@ -56,9 +56,6 @@ Succeeds if the API returns success and the response body parsing is successful,
 The **Invoke REST API task** does not perform deployment actions directly.
 Instead, it allows you to invoke any generic HTTP REST API as part of the automated
 pipeline and, optionally, wait for it to be completed.
-
-![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
-
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
 ## Open source
