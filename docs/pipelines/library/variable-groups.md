@@ -38,6 +38,7 @@ Choose **+ Variable group**.
 1. Enter a name and description for the group. Then enter the name and value for each
    [variable](../release/variables.md#custom-variables)
    you want to include in the group, choosing **+ Add** for each one.
+   Decide if you want the variable group to be accessible for any pipeline if you have more than one.
    If you want to encrypt and securely store the value, choose the "lock" icon 
    at the end of the row. When you're finished adding variables, choose **Save**.
 
