@@ -42,12 +42,14 @@ This task can be used in only an [agentless job](../../process/server-phases.md)
 
 | Parameter | Comments |
 | --- | --- | --- |
-| **Generic endpoint** | Required. Select a Generic service connection. Provides the baseUrl for the call and the authorization to use. |
+| **Connection type** | Required. Select "Azure Resource Manager" to invoke an Azure managment API or "Generic" for all other APIs. |
+| **Generic service connection** | Required. Generic service connection that provides the baseUrl for the call and the authorization to use. |
+| **Azure subscription** | Required. Azure Resource Manager subscription to configure and use for invoking Azure management APIs. |
 | **Method** | Required. The HTTP method with which the API will be invoked; for example, **GET**, **PUT**, or **UPDATE**. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the API. |
 | **Body** | Optional. The request body for the function call in JSON format. |
 | **URL suffix and parameters** | The string to append to the baseUrl from the Generic service connection while making the HTTP call | 
-| **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
+| **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success within 20 seconds and success criteria evaluates to true, or **Callback** - the external service makes a callback to update the timeline record. [More info](https://github.com/Microsoft/azure-pipelines-extensions/blob/master/ServerTaskHelper/HttpRequestSampleWithoutHandler)  |
 | **Success criteria** | Optional. How to parse the response body for success. By default the task passes when 200 OK is returned from the call. Additionally, the success criteria - if specified - is evaluated. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
