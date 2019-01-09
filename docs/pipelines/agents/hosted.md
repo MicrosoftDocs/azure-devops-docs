@@ -126,7 +126,7 @@ In some setups, you may need to know the range of IP addresses where agents are 
 
 We publish a [weekly XML file](https://www.microsoft.com/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://dev.azure.com/<your_organization>/_settings/overview`. Under **Organization information**, you will see a field indicating your region.
 
-*This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/support/devops/ip-addresses-used-hosted-build/).*
+*This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/en-us/support/devops/).*
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
