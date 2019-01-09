@@ -251,7 +251,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
    ![Setting the test platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
 
-   [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
+   [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
 
 1. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release pipeline.

@@ -73,7 +73,7 @@ running 4 agents apiece.
 
 > [!Tip]
 > Choose the processor according to the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
-> You can find which version of Windows your machine is running [by following these instructions](https://docs.microsoft.com/en-us/windows/client-management/windows-version-search).
+> You can find which version of Windows your machine is running [by following these instructions](https://docs.microsoft.com/windows/client-management/windows-version-search).
 
 ::: moniker-end
 
