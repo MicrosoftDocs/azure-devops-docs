@@ -11,7 +11,7 @@ ms.topic: include
 <th>Readers</th>
 <th>Contributors</th>
 <th>Build<br/>Admins</th>
-<th>Organization Owner/<br/>Project Admins</th>
+<th>Project Admins</th>
 <th>Release Admins</th>
 </tr>
 <tbody valign="top" align="center">

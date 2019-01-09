@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/07/2018
 ---
 
 # Set permissions and access for work tracking
@@ -75,7 +75,7 @@ To add a user to the team administrator role, see [Add a team administrator](../
 <td>
 <ul>
 <li>Create, delete, or edit a process (Inheritance process model)</li> 
-<li>Delete field from account(Inheritance process model)</li>
+<li>Delete field from account (Inheritance process model)</li>
 <li>Manage process permissions (Inheritance process model)</li> 
 <li>Edit collection level permissions</li>  
 </ul>
