@@ -23,7 +23,7 @@ ms.date: 11/19/2018
 
 To get notified of changes made to a work item or a pull request, you can elect to follow them. 
 
-This topic shows you how to:
+this article shows you how to:
 
 >[!div class="checklist"]  
 > * Follow a work item

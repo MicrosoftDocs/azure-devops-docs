@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Search for work items
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 

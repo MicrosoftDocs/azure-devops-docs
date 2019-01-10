@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Use the visual designer
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]

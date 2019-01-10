@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 A **release** is the package or container that holds a versioned set of artifacts
 specified in a [release pipeline](index.md) in your DevOps CI/CD processes.

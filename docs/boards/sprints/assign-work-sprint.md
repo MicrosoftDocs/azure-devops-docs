@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -35,7 +35,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Sprint planning, vertical nav](_img/assign-items-sprint/assign-intro.png)
@@ -61,7 +61,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 
 ---
 
-In this topic you'll learn how to:  
+In this article you'll learn how to:  
 
 > [!div class="checklist"]   
 > * Open your product backlog 
@@ -83,18 +83,19 @@ some or all of the items based on these estimates.
 [!INCLUDE [temp](../_shared/prerequisites.md)]
  
 
-> [!NOTE]  
-> Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
->
-> For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
 
 
 ## Open your team's product backlog
 
 
+> [!NOTE]  
+> Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
+>
+> For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
+
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -172,7 +173,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">=azdevserver-2019"
 
 0. The next step is to open the Planning pane. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are Off. You can choose to set **In Progress items** to On or Off. 
 

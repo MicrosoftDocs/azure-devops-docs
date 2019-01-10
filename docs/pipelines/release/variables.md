@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Default and custom release variables and debugging
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

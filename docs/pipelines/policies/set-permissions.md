@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Set build and release permissions
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 

@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -22,7 +22,7 @@ ms.date: 11/19/2018
 
 You add tasks to backlog items when you want to track the work required to implement them and to estimate the work assigned to individual team members and the team. The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 
-In this topic you'll learn how to:  
+In this article you'll learn how to:  
 
 > [!div class="checklist"]
 > * Select a sprint backlog for a team
@@ -37,13 +37,13 @@ Add as many tasks as needed to capture the work required to complete each item. 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 ## Open a Sprint backlog for a team 
+
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -117,7 +117,7 @@ For each sprint backlog item, add a task. Adding tasks from the sprint backlog o
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
@@ -177,7 +177,7 @@ Another option, is to open the **Board**, and add tasks as cards. Simply click t
 
 Name the task and enter an estimate for *Remaining Work*. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 > [!div class="mx-imgBorder"]  
 > ![Add task](_img/add-tasks/add-task-form.png)
 ::: moniker-end	
@@ -233,7 +233,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 > [!div class="mx-imgBorder"]  
 > ![Unparented tasks, agile taskboard](_img/add-tasks/unparented-tasks.png) 
 ::: moniker-end
@@ -261,6 +261,6 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [3. Set team capacity](set-capacity.md) 
+> [3. Set sprint capacity](set-capacity.md) 
 
 
