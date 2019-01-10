@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 #Add, run, and update inline tests
@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
 
-In this topic, you'll learn: 
+In this article, you'll learn: 
 > [!div class="checklist"]    
 > * How to add inline tests to a backlog item from your Kanban board  
 > * How to run tests and update the status of tests  
@@ -31,8 +31,7 @@ In this topic, you'll learn:
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
-
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
 
 ## Open your Kanban board from the web portal

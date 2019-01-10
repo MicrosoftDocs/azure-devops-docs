@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and push Docker container apps in Azure Pipelines
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as Docker Hub or Azure Container Registry with continuous integration and delivery (CI/CD) pipelines.
 

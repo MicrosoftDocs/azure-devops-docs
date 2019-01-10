@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017 < vsts'
 
 # Run the agent with a self-signed certificate
 
-**TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-only-2017](../_shared/version-tfs-only-2017.md)]
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 

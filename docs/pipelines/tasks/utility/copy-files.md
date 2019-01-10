@@ -53,11 +53,12 @@ None
 <td><p>Specify match pattern filters (one on each line) that you want to apply to the list of files to be copied. For example:
 </p>
 <ul>
-<li>```*``` copies all files in the root folder.</li>
-<li>```**\*``` copies all files in the root folder and all files in all sub-folders.</li>
+<li>```*``` copies all files in the specified source folder.</li>
+<li>```**\*``` copies all files in the specified source folder and all files in all sub-folders.</li>
 <li>```**\bin\**``` copies all files recursively from any ```bin``` folder.</li>
 </ul>
 <p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
+<p>You must use the path separator that matches your build agent type, e.g. `/` must be used for Linux agents.
 <p>More examples are shown below.</p>
 </td>
 </tr>

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Archived release notes for Microsoft Release Management
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 **NOTE**: Release Management has now been combined with the Build features
 of Azure Pipelines and Team Foundation Server (TFS) in the new 

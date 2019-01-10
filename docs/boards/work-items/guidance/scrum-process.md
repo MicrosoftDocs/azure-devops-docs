@@ -68,7 +68,7 @@ To list work items for a current sprint or the product backlog, use the shared q
 
 ![Shared queries (Scrum process)](_img/IC665405.png)  
 
-[Descriptions of predefined queries](#predefined-queries) are listed later in this topic.   
+[Descriptions of predefined queries](#predefined-queries) are listed later in this article.   
 
 You can open a query from the work items page and then use the [query editor to apply different filter criteria](../../queries/using-queries.md). Also, you can [add queries to team dashboards](../../../report/dashboards.md). From Team Explorer, you can open any [work item query in Excel](../../backlogs/office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
 

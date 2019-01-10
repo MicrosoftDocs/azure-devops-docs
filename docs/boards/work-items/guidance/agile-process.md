@@ -63,7 +63,7 @@ You can manage your workload more effectively by frequently reviewing the status
 
 ![Agile work item queries](_img/IC667910.png)  
 
-[Descriptions of predefined queries](#predefined-queries) are listed later in this topic.  
+[Descriptions of predefined queries](#predefined-queries) are listed later in this article.  
 
 You can open these queries from the **Work/Queries** page in the web portal or from the **Work Items** page in Team Explorer. You can modify a query using the [query editor to apply different filter criteria](../../queries/using-queries.md). Also, you can [add queries to team dashboards](../../../report/dashboards.md).  
 

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # App Center Test task
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to test app packages with Visual Studio App Center.
 

@@ -34,7 +34,7 @@ Below, you can learn how to link objects and which link types to use. You can li
 > [!NOTE]    
 > Work item forms and features available to you can differ depending on whether you open the form from the web portal or Visual Studio Team Explorer. 
 
-This topic describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
+this article describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
 
 <a id="link-work-items">  </a>
 ## Work items linked to work items

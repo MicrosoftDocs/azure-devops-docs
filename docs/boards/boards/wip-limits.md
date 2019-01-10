@@ -26,6 +26,7 @@ You define WIP limits for each work stage, corresponding to each intermediate co
 
 While [setting WIP limits](#Set) is simple, adhering to the limits takes a team commitment. Successful adoption of WIP limits involves a culture change. It moves teams from a focus on individual productivity to one of team productivity. 
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
 
 <a id="Initial WIP" />
 

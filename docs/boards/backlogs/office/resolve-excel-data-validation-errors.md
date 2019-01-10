@@ -33,7 +33,7 @@ A data validation error occurs when a change in the work item list or project pl
 1.  In the **Work Item Publishing Errors** dialog box, for each work item that appears with a data validation error, follow these steps.  
   
     > [!NOTE]  
-    >  If the data validation error is an invalid work item type, the **Edit Work Item** button is not visible, and a work item form does not appear. You must correct the error in the Office Excel worksheet or the Office Project plan. For information about how to resolve an error in Office Excel, see the next procedure in this topic.  
+    >  If the data validation error is an invalid work item type, the **Edit Work Item** button is not visible, and a work item form does not appear. You must correct the error in the Office Excel worksheet or the Office Project plan. For information about how to resolve an error in Office Excel, see the next procedure in this article.  
   
     1.  In the **Unpublished work items** box, click the work item, and then click **Edit Work Item**.  
   

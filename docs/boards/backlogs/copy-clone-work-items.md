@@ -22,7 +22,7 @@ There are two types of copy functions you can use. The first is to duplicate a s
 
 The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
 
-Use this topic to learn how to:  
+Use this article to learn how to:  
 
 >[!div class="checklist"]      
 > * Copy or clone a work item, essentially making a duplicate of a work item     

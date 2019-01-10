@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 <a id="set-capacity">  </a>
@@ -34,8 +34,11 @@ Because days off and time available for each team member can vary from sprint to
 
 If you haven't set up sprints yet for your team, go [here to do that now](define-sprints.md).
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+## Prerequisites
 
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
+* To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Users with **Stakeholder** access can't view or set capacity.
 
 
 ## Open a Sprint backlog for a team 
@@ -142,8 +145,10 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -213,7 +218,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Copy capacity, vertical nav](_img/capacity/copy-capacity-from-previous-sprint-vert.png)

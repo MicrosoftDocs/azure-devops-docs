@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Set up environments to run continuous test tasks with your build tasks
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 To test your app using different platforms and configurations using test automation,
 set up separate environments to run your app and tests with your

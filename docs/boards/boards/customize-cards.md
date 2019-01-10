@@ -51,6 +51,8 @@ You can either increase or simplify the information that displays on your cards.
 
 Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and taskboards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../boards/boards/kanban-basics.md) and [Sprint planning](../../boards/sprints/assign-work-sprint.md). 
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+
 
 <a id="fields"></a>
 ## Update fields from the cards
