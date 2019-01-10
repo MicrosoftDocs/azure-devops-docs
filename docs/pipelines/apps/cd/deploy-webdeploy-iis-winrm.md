@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Deploy your Web Deploy package to IIS servers using WinRM
 
-[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

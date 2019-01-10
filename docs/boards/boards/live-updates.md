@@ -23,6 +23,9 @@ ms.date: 11/19/2018
 
 Enable live updates to automatically refresh your Kanban board when changes occur. As other team members move or reorder cards, your board will automatically update with the changes. With live updates enabled, you no longer have to press F5 to see the latest changes.  
 
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
+
+
 [!INCLUDE [temp](../../_shared/new-navigation-7.md)]
 
 # [New navigation](#tab/new-nav)

@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 01/08/2018
 ---
 
 
@@ -21,9 +21,8 @@ ms.date: 11/19/2018
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
-By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
+[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open Queries 
 
@@ -182,7 +181,8 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
+- [Create and save managed queries with the query editor](using-queries.md)
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
-- [Set personal or team favorites](../../project/navigation/set-favorites.md)  
+- [Set personal or team favorites](../../project/navigation/set-favorites.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
-
+- [About access levels](../../organizations/security/access-levels.md)

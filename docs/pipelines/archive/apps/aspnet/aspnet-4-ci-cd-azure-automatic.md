@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-changes-existing-services/)

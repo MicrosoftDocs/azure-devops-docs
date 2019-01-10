@@ -21,7 +21,7 @@ ms.date: 12/04/2018
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
 <!---
-Review this topic to learn:  
+Review this article to learn:  
 
 >[!div class="checklist"]    
 > * How to create a new branch or pull request from a work item   
@@ -52,7 +52,7 @@ The Development section records all Git development processes that support compl
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 
 <a id="git-development">  </a>

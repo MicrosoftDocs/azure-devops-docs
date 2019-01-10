@@ -29,31 +29,32 @@ Newly created projects contain a single, root area that corresponds to the proje
 ## Prerequisites
 <a name="permissions"></a>
 
-- You add iteration paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
-- To add an iteration path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group or have **Edit project-level information** permission set to **Allow**. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).  
-- To add, edit, or delete iteration paths under a root or child note, you must be a member of the **Project Administrators** group or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the node that you want to modify. To acquire these permissions, see [Set permissions: Create child nodes, modify work items under an area path](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
-- To set team iteration paths, you must be added as the team administrator or be a member of the **Project Administrators** group. To be added to the team administrator role, see [Add a team administrator](add-team-administrator.md). 
-	
-For naming restrictions on iteration paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+- You add Iteration Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
+- To add an Iteration Path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).  
+- Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**.  By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
+- To set team Iteration Paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
+
+
+For naming restrictions on Iteration Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
 ## Get started sequence
 
 If you are new to managing projects and teams, the most straight forward sequence for configuring iterations for your project and teams is as follows:  
 
-0. First, define the area paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
+0. First, define the Area Paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
 0. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence. For guidance, review [About areas and iterations](about-areas-iterations.md).
 0. Determine if you want a flat structure or hierarchy of sprints and releases.
-0. Open Project settings>Project configuration and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add iterations and set iteration dates](#iterations). 
-0. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default iteration path(s)](#team-area-paths).
+0. Open **Project settings>Project configuration** and define the Iteration Paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add iterations and set iteration dates](#iterations). 
+0. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default iteration path(s)](#activate).
 0. Each team should assign the default Iteration Path they selected to their work items. This is needed in order for those work items to show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 As needed, you can perform the following actions at any time: 
 
 - Add additional child iteration nodes
-- Rename an iteration path (except the root path)
-- Move a child iteration path under another node 
-- Delete a child iteration path 
-- Change the default and selected iteration paths assigned to a team
+- Rename an Iteration Path (except the root path)
+- Move a child Iteration Path under another node 
+- Delete a child Iteration Path 
+- Change the default and selected Iteration Paths assigned to a team
 
 <a id="default_path">  </a>
 ## Backlog iteration versus default iteration 

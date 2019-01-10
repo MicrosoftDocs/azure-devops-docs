@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Glossary
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 The section lists commonly used terms for [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md) in the pipeline.
 

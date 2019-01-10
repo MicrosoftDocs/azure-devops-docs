@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Set up and administer Code Search, Wiki Search and Work Item Search
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 In this topic:
 

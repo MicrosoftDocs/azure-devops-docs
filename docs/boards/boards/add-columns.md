@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Add columns to your Kanban board
@@ -40,6 +40,9 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
+
+
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
 
 <a id="map-the-flow-of-work">  </a>
 

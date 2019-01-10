@@ -22,7 +22,7 @@ ms.date: 11/19/2018
 You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
 
 
-Use this topic to learn how to:  
+Use this article to learn how to:  
 
 ::: moniker range="vsts"  
 >[!div class="checklist"]      
@@ -35,7 +35,7 @@ Use this topic to learn how to:
 ::: moniker-end    
 
 
-::: moniker range=">= tfs-2013  <= azdevserver-2019"  
+::: moniker range="<= azdevserver-2019"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
@@ -46,7 +46,7 @@ Use this topic to learn how to:
 
 For a list of all link types and supported link relationships, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites.md)] 
 
 <a id="link"> </a>  
 ## Link several work items 

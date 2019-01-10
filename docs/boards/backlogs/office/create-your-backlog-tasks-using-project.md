@@ -23,9 +23,9 @@ If Office Project is your preferred tool for tacking projects, you can use it to
 > [!IMPORTANT]  
 > Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project. You can continue to use Office Excel. 
 
-Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#differences).
+Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this article](#differences).
 
-Use this topic to learn how to:  
+Use this article to learn how to:  
 
 > [!div class="checklist"]      
 > * Connect a Project plan to a project  
