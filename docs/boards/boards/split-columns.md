@@ -32,6 +32,8 @@ Split columns lets your team implement a pull mechanism within the workflow proc
 
 By contrast, with split columns, your team knows exactly how many items sit idle, waiting for work to begin. You now have greater visibility into the quantity of items that sit idle at each stage throughout your workflow process. 
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+
 ## Push items into Done, pull items into Doing 
 
 With split columns turned on, you update status of items on the Kanban board in the same way you have before. However, now when you've completed work on an item, you move it into Done, instead of a downstream column. When the next team member becomes free to work on the next high priority item, she pulls it into Doing and reassigns it to herself.  

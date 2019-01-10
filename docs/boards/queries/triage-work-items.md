@@ -11,7 +11,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 01/08/2018
 ---
 
 
@@ -26,13 +26,13 @@ Using a work item query you can quickly review and update work items. Oftentimes
 - Link related work items 
 - Update the status of work items 
 
-In this topic you'll learn how to:
+In this article you'll learn how to:
 
 >[!div class="checklist"]      
 > * Use triage query mode to update a list of work items   
 > * Bulk save work items that you've updated  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
 
 ## Open Queries 
@@ -48,14 +48,17 @@ The buttons to move up or down within the query results list are outside the wor
 
 ![Web portal, choose Boards>Queries](_img/triage-queries/triage-buttons-new-exp.png)
 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-The buttons to move up or down within the query results list are inside the work item form. Click Bottom to cycle through the choices for where the work item form appears: Bottom, Right, or Off.
+The buttons to move up or down within the query results list are inside the work item form. Choose **Bottom** to cycle through the choices for where the work item form appears: **Bottom**, **Right**, or **Off**.
 
 ![Triage query results ](_img/triage-queries/scrum-active-bug-triage-mode-co.png)
 
+> [!TIP]    
+> The same buttoms to move up or down within a work item list are available from a **Work Items** page when you choose a work item. See 
 ::: moniker-end
 
 
@@ -108,6 +111,7 @@ Choose the ![double-save-icon](../_img/icons/icon-double-save.png) double-save i
 
 ## Related articles
 
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Manage bugs](../backlogs/manage-bugs.md) 
 - [Create a query](using-queries.md) 
 

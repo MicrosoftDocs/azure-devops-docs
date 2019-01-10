@@ -15,9 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Deploy your ASP.NET app to an Azure Cloud Service
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
-
-[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Associate automated tests with test cases
 
-**Visual Studio 2017 and later | [Previous version](https://msdn.microsoft.com/library/dd380741%28v=vs.110%29.aspx)**
+[!INCLUDE [version-header](_shared/version-vs-only.md)] 
 
 Consider using Visual Studio to associate automated tests with a test case when:
 

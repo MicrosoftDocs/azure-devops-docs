@@ -22,9 +22,7 @@ ms.date: 11/19/2018
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders.
  
-## Prerequisites
-If you're not a member of the Project Administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.  
-
+[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
 ## Open Queries 
 

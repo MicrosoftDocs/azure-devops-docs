@@ -15,7 +15,12 @@ monikerRange: '>= tfs-2017'
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-**Visual Studio 2015.3 and later | TFS 2017.1 and later | Azure Pipelines**
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+
+::: moniker range="<= tfs-2018"
+> [!NOTE] 
+> Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
+::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.

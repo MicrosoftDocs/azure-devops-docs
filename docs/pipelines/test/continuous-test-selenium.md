@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # UI test with Selenium
 
-[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 

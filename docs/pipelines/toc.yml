@@ -580,3 +580,5 @@
       href: tasks/file-matching-patterns.md
     - name: File and variable transform
       href: tasks/transforms-variable-substitution.md
+  - name: REST API reference
+    href: /rest/api/vsts/

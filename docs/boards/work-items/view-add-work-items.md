@@ -14,7 +14,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azdevserver-2019'
-ms.date: 12/04/2018
+ms.date: 01/08/2018
 ---
 
 # View and add work items using the Work Items page  
@@ -27,10 +27,7 @@ View work items that you created or are assigned to you. The **Work Items** page
 > [!NOTE]     
 > The **Work Items** page is currently available from Azure DevOps Services, Azure DevOps Server 2019 RC1, and Visual Studio 2019 RC1. 
 
-## Prerequisites 
-
-- You must connect to a project. If you don't have a project yet, [create one](../get-started/index.md). You can then [connect to a project from your web portal or Visual Studio](../../organizations/projects/connect-to-projects.md).
-- To view or add work items, you must be a member of the Contributors group or have [Stakeholder access](../../organizations/security/get-started-stakeholder.md). If you don't have access to the project, ask the [organization owner or project administrator](../../organizations/security/lookup-organization-owner-admin.md) to add you.
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 
 ## Open Work Items
@@ -237,7 +234,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
 
-You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
+You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
  
 <a id="filter" />
@@ -332,6 +329,7 @@ Use the following three controls to manage your views in the web portal.
 > | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
 ## Related articles
+- [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Enable preview features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)

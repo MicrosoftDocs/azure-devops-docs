@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and deploy Android apps in Azure Pipelines
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build, test, and deploy Android apps with CI/CD pipelines.
 

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Create an Azure service connection
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
