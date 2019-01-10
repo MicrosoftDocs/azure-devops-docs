@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-Azure Pipelines | TFS 2018 | TFS 2017
+[!INCLUDE [version-tfs-2017-rtm](../../../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
