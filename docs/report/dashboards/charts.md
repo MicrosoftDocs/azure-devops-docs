@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 01/08/2019
 ---
 
 # Track progress by creating status and trend query-based charts 
@@ -27,22 +27,41 @@ For example, the following image illustrates four different charts created from 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
 ## Prerequisites
-::: moniker range=">= tfs-2017"
-- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
-- All members who belong to the Contributors group can create charts
-- To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions](dashboard-permissions.md)
-- You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.  
+
+By default, users with **Basic** access or higher can create charts from a flat list query. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+
+::: moniker range="vsts"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
+* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
+
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+
 ::: moniker-end
 
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
+* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
+
+::: moniker-end 
+
+
 ::: moniker range="tfs-2015"
-- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
-- All members who belong to the Contributors group can create charts
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 - You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
-- All members who belong to the Contributors group can create charts
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 ::: moniker-end
 
 To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).

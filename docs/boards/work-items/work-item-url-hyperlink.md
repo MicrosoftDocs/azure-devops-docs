@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
 
-Examples in this topic use the following conventions:
+Examples in this article use the following conventions:
 
 -   *OrganizationName* specifies the name of the Azure Boards organization  
 -   *ServerName* specifies the name of the TFS application tier server   

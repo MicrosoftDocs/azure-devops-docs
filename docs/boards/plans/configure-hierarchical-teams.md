@@ -22,7 +22,7 @@ Specifically, we'll show you how to configure a team structure like the one show
 
 ![Each team has its own view of the work](_img/pm-team-structure.png) 
 
-In this topic you'll learn how to:  
+In this article you'll learn how to:  
 
 ::: moniker range=">= tfs-2017" 
 >[!div class="checklist"]    

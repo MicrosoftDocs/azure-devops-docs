@@ -33,6 +33,7 @@ When set, team members can quickly double-check the done criteria.
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to implement Kanban.
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
 
 ## Specify the Definition of Done for a column 
 
