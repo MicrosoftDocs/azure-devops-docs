@@ -87,25 +87,6 @@ Tutorials, references, and other documentation show you how to configure and man
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="yaml-schema.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/i_kanban.svg" alt="designer" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>YAML schema</h3>
-                                                            <p>Detailed reference guide to YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="get-started-multiplatform.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
@@ -118,6 +99,25 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         <div class="cardText">
                                                             <h3>Create a multi-platform pipeline</h3>
                                                             <p>Use Azure Pipelines to build an app written in any language, on multiple platforms.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="yaml-schema.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="../_img/index/i_kanban.svg" alt="designer" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>YAML schema</h3>
+                                                            <p>Detailed reference guide to YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.</p>
                                                         </div>
                                                     </div>
                                                 </div>
