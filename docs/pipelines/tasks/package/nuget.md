@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2018'
 
 **Version 2.\* | [Other versions](#versions)**
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 

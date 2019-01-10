@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Invoke REST API task
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
 

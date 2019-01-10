@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Jenkins Download Artifacts task
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to download artifacts produced by a Jenkins job.
 

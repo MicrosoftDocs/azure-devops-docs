@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Perform SQL server actions in Azure Pipelines or TFS
 
-[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 Azure Pipelines and TFS include a SQL task named [SQL Azure Dacpac Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 that helps you publish to SQL server.
