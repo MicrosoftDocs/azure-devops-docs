@@ -28,7 +28,7 @@ You add work items to plan and manage your project. You use different types of w
 
 For additional clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 
 

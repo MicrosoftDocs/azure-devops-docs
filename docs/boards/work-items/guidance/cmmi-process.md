@@ -62,7 +62,7 @@ You can use shared work item queries to list work items based on their type, suc
 
 ![CMMI shared queries](_img/IC667909.png)
 
-[Descriptions of predefined queries](#predefined-queries) are listed later in this topic.  
+[Descriptions of predefined queries](#predefined-queries) are listed later in this article.  
 
 You can open a query from the work items page and then use the [query editor to apply different filter criteria](../../queries/using-queries.md). Also, you can [add queries to team dashboards](../../../report/dashboards.md).  
 

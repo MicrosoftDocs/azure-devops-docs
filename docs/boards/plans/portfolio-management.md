@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 Portfolio backlogs provide product owners insight into the work performed by several agile feature teams. Product owners can define the high-level goals as Epics or Features, and feature teams can break these down into the user stories they'll prioritize and develop.  
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * How to support a management view of multiple team progress

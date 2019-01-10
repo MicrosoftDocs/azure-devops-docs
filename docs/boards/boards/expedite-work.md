@@ -27,6 +27,7 @@ For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked
 > [!TIP]
 >Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows. For more tips, see [kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
 
 ## Types of swimlanes  
 You can use swimlanes to sort work on your Kanban board to track items that you differentiate as follows: 

@@ -11,10 +11,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 12/10/2018  
+ms.date: 01/08/2018
 ---
 
-# Create managed queries with the query editor
+# Create and save managed queries with the query editor
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -22,7 +22,7 @@ Managed queries generate a list of work items based on the filter criteria you p
 
 For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * How to open and edit a query   
@@ -32,7 +32,7 @@ In this topic you'll learn:
 > * How to query across projects    
 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
 ## Open Queries 
 

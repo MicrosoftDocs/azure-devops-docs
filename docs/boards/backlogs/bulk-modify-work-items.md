@@ -10,15 +10,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Bulk modify work items  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-
-<!--- UPDATES REQUIRED FOR MULTI-VERSION TAGGING -->  
 
 Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
 
@@ -27,7 +24,7 @@ Use bulk modify when you need to quickly make the same change to a number of wor
 
 With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 ::: moniker range=">= tfs-2015"
 >[!div class="checklist"]    
@@ -44,6 +41,9 @@ In this topic you'll learn:
 > * Assign work from a backlog to a sprint using drag-and-drop 
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+## Supported tasks
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
 ::: moniker range=">= azdevserver-2019"
@@ -250,7 +250,6 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  
@@ -422,12 +421,22 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 ## Bulk modify tags 
 
 From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.  
+::: moniker-end
 
-Here we choose to add the Beta tag to the selected work items. 
+::: moniker range=">= tfs-2017"
+
+Here we choose to add the *Service* tag to the selected work items. 
+
+> [!div class="mx-imgBorder"]
+> ![Edit work items dialog, Add tags](_img/bulk-modify/edit-tags-dialog.png)
+> 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+Here we choose to add the *Beta* tag to the selected work items. 
 
 ![Edit work items - Add tags](../queries/_img/tags-bulk-add.png) 
-::: moniker-end 
-::: moniker range="tfs-2015" 
+
 Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 ::: moniker-end 
 

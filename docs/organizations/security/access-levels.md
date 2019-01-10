@@ -243,7 +243,7 @@ The following features are available to Stakeholders from the web portal for bot
 
 </tr>
 <tr>
-<td>Standard Features: Organization, Dashboards, Wiki, and Notifications</td>
+<td>Standard Features: Organization, Charts, Dashboards, Wiki, and Notifications</td>
 <td>
 <ul>
 <li>[Work across projects](../../project/navigation/work-across-projects.md)</li>
@@ -255,6 +255,7 @@ The following features are available to Stakeholders from the web portal for bot
 </td>
 <td>
 <ul>
+<li>Can't view query charts from the Queries page, however can view them when added to a team dashboard.</li>
 <li>Can't view markdown README files defined for repositories. </li>
 <li>Have read-only permissions to wiki pages. These permissions can't be changed.</li>
 </ul>

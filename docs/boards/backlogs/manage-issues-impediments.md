@@ -23,7 +23,7 @@ If you have known issues you want to track, you can do so by defining an impedim
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to address feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
-In this topic you'll learn: 
+In this article you'll learn: 
 
 >[!div class="checklist"]      
 > * How to capture issues or impediments as a work item   

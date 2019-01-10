@@ -109,10 +109,10 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>A character string that represents a unique ID.</p></td></tr>
 <tr>
 	<td><p><strong>History</strong> </p></td>
-	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this topic.  For query examples, see [History and auditing](history-and-auditing.md). </p></td></tr>
+	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article.  For query examples, see [History and auditing](history-and-auditing.md). </p></td></tr>
 <tr>
 	<td><p> <strong>HTML</strong> </p></td>
-	<td><p>Text strings that support formatted descriptions, such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. These fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this topic. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). </p>
+	<td><p>Text strings that support formatted descriptions, such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. These fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). </p>
 </td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>A 32-bit integer that is signed, such as 0, 1, 2, 34.</p></td></tr>
 <tr>
 	<td><p> <strong>PlainText</strong> </p></td>
-	<td><p>Text strings that support long descriptions, such as the <strong>Application Start Information</strong> field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this topic. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).</p></td></tr>
+	<td><p>Text strings that support long descriptions, such as the <strong>Application Start Information</strong> field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).</p></td></tr>
 <tr>
 	<td><p> <strong>String</strong> </p></td>
 	<td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support pick lists or drop-down menus.  </p></td></tr>

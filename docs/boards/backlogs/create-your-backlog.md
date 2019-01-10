@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Create your product backlog 
@@ -127,6 +127,8 @@ Your backlog shows work that you plan to do or have started to work on. As soon 
 > [!TIP]  
 > If you already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 
+Users with **Stakeholder** access can only add work items to the end of the backlog. For details, see [About access levels](../../organizations/security/access-levels.md).
+
 # [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azdevserver-2019"
@@ -175,7 +177,9 @@ Repeat this step until you capture all your main ideas.
 
 <a id="move-items-priority-order">  </a>
 ## Move items into priority order
-After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next.
+After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
+
+To reorder a backlog, you must must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 To reorder your backlog, drag the work items. Or, if you prefer to use the keyboard, hold down the Alt key and use the up and down arrows.
 
