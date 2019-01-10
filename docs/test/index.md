@@ -13,7 +13,9 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory &amp; Manual Testing
- 
+
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 Azure DevOps and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
 
