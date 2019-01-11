@@ -45,15 +45,21 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 
 ### Do I need an agent?
+
 You do not need an agent to run this task. This task Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ### Where should a task signal completion?
+
 To signal completion, the external service should POST completion data to the following pipelines REST endpoint.
+
+```
 {planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1
 
 **Request Body**
  { "name": "TaskCompleted", "taskId": "taskInstanceId", "jobId": "jobId", "result": "succeeded" }
-Refer to this simple cmdline application for specifics.
-Moreover, A c# helper library is available to enable live logging and managing task status for agentless tasks. Learn more
+```
 
-<!-- ENDSECTION -->
+See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
+
+In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
+
