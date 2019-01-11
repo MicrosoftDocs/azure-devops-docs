@@ -289,8 +289,6 @@
       href: test/parallel-testing-vstest.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
-    - name: FAQs for testing
-      href: test/reference-qa.md
   - name: Package
     items:
     - name: NuGet

@@ -10,12 +10,17 @@ ms.manager: douge
 ms.author: pbora
 author: pboraMSFT
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '> tfs-2017'
 ---
 
 # Run tests in parallel for any test runner
 
-**Azure Pipelines | TFS 2018.2 and later**
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+
+::: moniker range="<= tfs-2018"
+> [!NOTE]
+> For TFS, this topic applies to only TFS 2018 Update 2 and later.
+::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
