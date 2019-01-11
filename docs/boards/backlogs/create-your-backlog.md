@@ -188,7 +188,7 @@ To reorder your backlog, drag the work items. Or, if you prefer to use the keybo
 
 
 > [!TIP]  
-> You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+> You can't sort your backlog on a column. To view a sorted list, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 
 <a id="estimates">  </a>
