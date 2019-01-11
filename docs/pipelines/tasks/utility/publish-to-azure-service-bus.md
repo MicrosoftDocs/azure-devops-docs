@@ -38,16 +38,22 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 | **Wait for Task Completion** | Optional. Set this option to force the task to halt until a response is received. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
-Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishToAzureServiceBusV1).
-
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishToAzureServiceBusV1). Feedback and contributions are welcome.
 
 ## Q & A
 
-<!-- BEGINSECTION class="md-qanda" -->
+### Do I need an agent?
+You do not need an agent to run this task. This task Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+### Where should a task signal completion?
+To signal completion, the external service should POST completion data to the following pipelines REST endpoint.
+{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1
+
+**Request Body**
+ { "name": "TaskCompleted", "taskId": "taskInstanceId", "jobId": "jobId", "result": "succeeded" }
+Refer to this simple cmdline application for specifics.
+Moreover, A c# helper library is available to enable live logging and managing task status for agentless tasks. Learn more
 
 <!-- ENDSECTION -->
