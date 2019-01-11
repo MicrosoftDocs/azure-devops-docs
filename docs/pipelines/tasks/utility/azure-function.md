@@ -58,6 +58,7 @@ This task is open source on [GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q&A
 
 ### Where should a task signal completion when **Callback** is chosen as the completion event?
+
 To signal completion, the Azure function should POST completion data to the following pipelines REST endpoint.
 
 ```
@@ -67,5 +68,5 @@ To signal completion, the Azure function should POST completion data to the foll
 { "name": "TaskCompleted", "taskId": "taskInstanceId", "jobId": "jobId", "result": "succeeded" }
 
 ```
-Refer to [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
-Moreover, A c# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
+See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
+In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
