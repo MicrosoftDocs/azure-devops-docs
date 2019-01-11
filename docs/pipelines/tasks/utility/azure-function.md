@@ -50,4 +50,22 @@ Succeeds if the function returns success and the response body parsing is succes
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
-Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunction).
+## Open source
+
+This task is open source on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunction). Feedback and contributions are welcome.
+
+
+## Q&A
+
+### Where should a task signal completion when **Callback** is chosen as the completion event?
+To signal completion, the Azure function should POST completion data to the following pipelines REST endpoint.
+
+```
+{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1
+
+**Request Body**
+{ "name": "TaskCompleted", "taskId": "taskInstanceId", "jobId": "jobId", "result": "succeeded" }
+
+```
+Refer to [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
+Moreover, A c# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
