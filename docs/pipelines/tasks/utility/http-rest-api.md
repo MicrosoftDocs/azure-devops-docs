@@ -65,14 +65,16 @@ For more information about using this task, see [Approvals and gates overview](.
 
 ## Open source
 
-Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
+Also see [this task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
 
 ## Q&A
 
 ### What base URLs are used when invoking Azure Management APIs?
-Azure management APIs are invoked using *ResourceManagerEndpoint* of the selected environment. For example *https://management.Azure.com* is used when the subscription is in *AzureCloud* environment.
+
+Azure management APIs are invoked using *ResourceManagerEndpoint* of the selected environment. For example `https://management.Azure.com` is used when the subscription is in **AzureCloud** environment.
 
 ### Where should a task signal completion when **Callback** is chosen as the completion event?
+
 To signal completion, the external service should POST completion data to the following pipelines REST endpoint.
 ```
 {planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1
@@ -81,8 +83,8 @@ To signal completion, the external service should POST completion data to the fo
  { "name": "TaskCompleted", "taskId": "taskInstanceId", "jobId": "jobId", "result": "succeeded" }
  ```
  
- Refer to [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
+See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
  
- Moreover, A c# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
+In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
  
  
