@@ -72,7 +72,7 @@ Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-task
 ### What base URLs are used when invoking Azure Management APIs?
 Azure management APIs are invoked using *ResourceManagerEndpoint* of the selected environment. For example *https://management.Azure.com* is used when the subscription is in *AzureCloud* environment.
 
-## Where should a task signal completion when **Callback** is chosen as the completion event?
+### Where should a task signal completion when **Callback** is chosen as the completion event?
 To signal completion, the external service should POST completion data to the following pipelines REST endpoint.
 ```
 {planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1
