@@ -63,6 +63,8 @@ Below are the steps to create a build or release task extension and put it on th
 <a name="createtask" />
 ## Step 1: Create the custom task
 
+Step 1 is all about setting up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
+
 ### Create task scaffolding
 
 The first step is to create the folder structure for the task and install the required libraries and dependencies.
@@ -121,7 +123,7 @@ Now that the scaffolding is complete, we can start to create our custom task.
 
 #### task.json
 
-Next, we will create a ```task.json``` file in the root directory. The ```task.json``` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
+Next, we will create a ```task.json``` file in the ``buildAndReleaseTask`` folder. The ```task.json``` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
 
 Copy the code below and replace the ```{{placeholders}}``` with your tasks information. The most important placeholder is the ```taskguid```, which must be unique and can be generated [here](https://www.guidgen.com/).
 
