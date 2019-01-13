@@ -181,6 +181,9 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 		"name": "My First Set of Widgets",
 		"description": "Samples containing different widgets extending dashboards",
 		"publisher": "fabrikam",
+		"categories": [
+        		"Azure Boards"
+		],
 		"targets": [
 			{
 				"id": "Microsoft.VisualStudio.Services"
@@ -217,7 +220,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
                 "path": "hello-world.html", "addressable": true
             },
             {
-                "path": "sdk/scripts", "addressable": true
+                "path": "node_modules/vss-web-extension-sdk/lib", "addressable": true, "packagePath": "sdk/scripts"
             },
             {
                 "path": "img", "addressable": true
