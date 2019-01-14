@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 1/8/2019
+ms.date: 01/14/2019
 monikerRange: 'vsts'
 ---
 
@@ -30,9 +30,8 @@ Then, each step of the job will run inside the container.
 ## Requirements
 
 The Azure Pipelines system requires a few things in Linux-based containers:
-- Bash
-- `which`
-- glibc
+- Bash (for the `bash` step / task, which most container pipelines will use)
+- glibc-based
 - Can run Node.js (which the agent provides)
 - Does not define an `ENTRYPOINT`, or if it does, that `ENTRYPOINT` is a shell
 
