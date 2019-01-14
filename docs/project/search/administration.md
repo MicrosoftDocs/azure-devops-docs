@@ -22,15 +22,15 @@ In this topic:
   - [Install Search extension in Azure DevOps Services](#config-ts-azuredevops)
   - [Uninstall Search extension in Azure DevOps Services](#uninstall-ts-azuredevops)<p />
 
-* **Configure Search (Code, Work Item and Wiki) in Team Foundation Server(TFS)**
-  - [Install Search extension in TFS](#install-tfs)
-  - [Configure Search in TFS](#config-tfs)
-  - [Secure Search in TFS](#secure-search)
-  - [Upgrade Search in TFS](#upgrading-search)
-  - [Manage Search in TFS](#manage-tfs)
-  - [Uninstall Search in TFS](#uninstall-tfs)
-  - [Limitations of Search in TFS](#limit-tfs)
-  - [Troubleshoot Search in TFS](#trouble-tfs)
+* **Configure Search (Code, Work Item and Wiki) in Azure DevOps Server**
+  - [Install Search extension](#install-tfs)
+  - [Configure Search](#config-tfs)
+  - [Secure Search](#secure-search)
+  - [Upgrade Search](#upgrading-search)
+  - [Manage Search](#manage-tfs)
+  - [Uninstall Search](#uninstall-tfs)
+  - [Limitations of Search](#limit-tfs)
+  - [Troubleshoot Search](#trouble-tfs)
 
 Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
 and [TFS requirements and compatibility](/tfs/server/requirements).
@@ -57,7 +57,7 @@ For Code Search, see [Uninstall or disable an extension](../../marketplace/unins
 in the Marketplace documentation. 
 
 <a name="install-tfs"></a>
-## Install Search extension in TFS
+## Install Search extension
 
 Code Search is available in TFS 2017 and later.
 Work Item Search is available in TFS 2017 Update 2 and later.
@@ -73,7 +73,7 @@ Non-administrative users can also go here to request the extension be added to T
 For more details, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Marketplace documentation.
 
 <a name="config-tfs"></a>
-## Configure Search in TFS
+## Configure Search
 
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
@@ -235,7 +235,7 @@ Consider the following when configuring Search:
 * If you are **upgrading your TFS to new hardware**,
   depending on how Search was previously configured, you have two options:
 
-  - If Search was configured on a separate server, you must select **Install and Configure Search** in the TFS wizard,
+  - If Search was configured on a separate server, you must select **Install and Configure Search** in the Azure DevOps Server wizard,
     and subsequently select **Use an existing Search instance** 
     and provide the URL of your existing Search instance to complete the Search configuration. 
     
@@ -245,7 +245,7 @@ Consider the following when configuring Search:
     This will cause all Search indexes for all collections to be re-created which,
     depending on the size of each collection, might take some time.<p />
     
-* If you are **detaching a collection** from one TFS instance in order to attach it to another TFS instance, ensure that:
+* If you are **detaching a collection** from one Azure DevOps Server instance in order to attach it to another TFS instance, ensure that:
 
   - Search has been configured on the target TFS instance.
   - Before you detach the collection, you have uninstalled the Search extension (Code, Work Item or Wiki) for that collection from the **Manage Extensions** page of your source TFS instance.
@@ -278,7 +278,7 @@ follow these steps:
    [security settings](#secure-search) for both servers.
 
 <a name="secure-search"></a>
-## Secure Search in TFS 
+## Secure Search
 
 The Search service uses a modified version of 
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) 
@@ -327,7 +327,7 @@ TFS App Tier servers).
 Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](https://technet.microsoft.com/library/cc772460%28v%3Dws.10%29.aspx).
 
 <a name="upgrading-search"></a>
-## Upgrade Search in TFS
+## Upgrade Search
 
 TFS 2017 Update 1 includes updated Search components. If the Search
 service was configured in TFS 2017 RTM then, during an upgrade, the
@@ -509,7 +509,7 @@ to a few hours, depending on the size of the collection.
 Also see **[Troubleshoot Search](#trouble-tfs)**.
 
 <a name="uninstall-tfs"></a>
-## Uninstall Search in TFS
+## Uninstall Search
 
 In cases such as a pre-production upgrade, production upgrade, new hardware migration, cloning,
 or other maintenance operation, the TFS wizard will unconfigure Search in a way that makes it easy to re-configure it after the TFS 
