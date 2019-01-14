@@ -9,7 +9,7 @@ ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/05/2018
+ms.date: 01/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -26,6 +26,10 @@ You can build up complex behavior by stacking multiple patterns.
 ### Match characters
 
 Most characters are used as exact matches.
+What counts as an "exact" match is platform-dependent:
+the Windows filesystem is case-insensitive, so the pattern "ABC" would match a file called "abc".
+On case-sensitive filesystems, that pattern and name would not match.
+
 The following characters have special behavior.
 
 * `*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
