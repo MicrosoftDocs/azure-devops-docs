@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 # Search
 
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+
 Search makes it easy to locate information across all your projects, from anywhere and any computer or mobile device,
 using just a web browser.
 

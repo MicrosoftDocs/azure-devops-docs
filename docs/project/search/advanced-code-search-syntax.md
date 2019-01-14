@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # How To: Use Code Search
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 By using Code Search you can:
 

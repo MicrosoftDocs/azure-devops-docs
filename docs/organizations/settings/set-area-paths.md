@@ -31,22 +31,22 @@ To understand how the system uses area paths, see [About area and iteration path
 ## Prerequisites
 <a name="permissions"></a>
 
-- You add area paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
-- To add an area path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group or have **Edit project-level information** permission set to **Allow**. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).  
-- To add, edit, or delete area paths under a root or child note, you must be a member of the **Project Administrators** group or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the node that you want to modify. To acquire these permissions, see [Set permissions: Create child nodes, modify work items under an area path](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
-- To set team area paths, you must be added as the team administrator or be a member of the **Project Administrators** group. To be added to the team administrator role, see [Add a team administrator](add-team-administrator.md). 
-	
-For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+- You add Area Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
+- To add an Area Path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- Or, to add, edit, and manage Area Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions in this node**.  By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).    
+- To set team Area Paths, you must be [added as a team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
+
+For naming restrictions on Area Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
 <a id="guidance" />
 ## Get started sequence
 
 If you are new to managing projects and teams, the most straight forward sequence for configuring your project and teams is as follows: 
-0. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, you'll want to add one area path for each team that you'll define. For guidance, review [About areas and iterations](about-areas-iterations.md).
+0. Determine the number and names of Area Paths that you want to support to categorize your work. At a minimum, you'll want to add one Area Path for each team that you'll define. For guidance, review [About areas and iterations](about-areas-iterations.md).
 0. Determine the number and names of teams you will want to support. For guidance, review [About teams and Agile tools](about-teams-and-settings.md).
-0. Open Project settings>Project configuration and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
+0. Open **Project settings>Project configuration** and define the Area Paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
 0. Define the teams you need to support step 2. For guidance, see [Add a team, move from one default team to several teams](add-teams.md).  
-0. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
+0. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
 0. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 ::: moniker range=">= tfs-2017"
@@ -57,11 +57,11 @@ If you are new to managing projects and teams, the most straight forward sequenc
 As needed, you can perform the following actions at any time: 
 
 - Add additional child nodes
-- Rename an area path (except the root area path)
+- Rename an Area Path (except the root area path)
 - Move a child node under another node 
 - Delete a child node 
 - Rename a team 
-- Change the area path assignments made to a team
+- Change the Area Path assignments made to a team
 
 <a id="open-project-settings" />
 <a id="open-admin-context" />  

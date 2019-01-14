@@ -130,7 +130,7 @@ Azure App Service.
 
 An example of a deployment script is:
 
-```script
+```bat
 @echo off
 if NOT exist requirements.txt (
  echo No Requirements.txt found.

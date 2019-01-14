@@ -13,13 +13,13 @@ ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
 
+# Server jobs
+
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
-
-# Server jobs
-
-**Azure Pipelines | TFS 2018**
 
 Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server job at present.
 
@@ -168,3 +168,4 @@ Job variables are not yet supported in the web editor.
 * [Jobs](phases.md)
 * [Multiple jobs](multiple-phases.md)
 * [Deployment group jobs](deployment-group-phases.md)
+* [Specify conditions](conditions.md)

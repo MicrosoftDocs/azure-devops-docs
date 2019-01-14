@@ -1,6 +1,6 @@
 ---
 title: Deploy to IIS using WinRM
-description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Mamangement (WinRM)
+description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Management (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Deploy your Web Deploy package to IIS servers using WinRM
 
-[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

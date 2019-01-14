@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # What are release pipelines?
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -145,6 +145,25 @@ Simply follow these steps:
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     
 1. **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
+
+<a name="draftrelease"></a>
+## What is a draft release?
+
+Creating a draft release allows you to edit some of the settings for the release and the tasks,
+depending on your role permissions, before starting the deployment.
+The changes apply only to that release, and do not affect the settings of the original pipeline.
+
+Create a draft release using the "..." ellipses link in the list of releases:
+
+![Create a draft release in the list of releases](_img/what-is-release-management/draft-release.png)
+
+... or the **Release** drop-down in the pipeline definition page: 
+
+![Create a draft release in the pipeline definition page](_img/what-is-release-management/new-draft-release.png)
+
+After you finish editing the draft release, choose **Start** from the draft release toolbar. 
+
+![Start a draft release](_img/what-is-release-management/start-draft.png)
 
 ## Related topics
 

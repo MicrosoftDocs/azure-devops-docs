@@ -11,8 +11,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
---- 
+ms.date: 01/08/2018
+---
 
 # Work items
 
@@ -24,7 +24,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ## 5-Minute Quickstarts  
 
-::: moniker range="azdevserver-2019"
+::: moniker range=">= azdevserver-2019"
 - [View and add work items](view-add-work-items.md)  
 - [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json) 

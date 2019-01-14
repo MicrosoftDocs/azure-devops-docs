@@ -901,7 +901,7 @@ Module path: `TFS/Build/RestClient`
 <a name="method_getWorkItemsBetweenBuilds"></a>
 <h2 class='method'>getWorkItemsBetweenBuilds()</h2>
 
- Gets all the work item IDs inbetween fromBuildId to toBuildId
+ Gets all the work item IDs in-between fromBuildId to toBuildId
 
 ### Syntax
 <pre class='syntax'>

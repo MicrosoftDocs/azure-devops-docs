@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Query Work Items task
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to ensure the number of matching items returned by a work item query is within the configured thresholds.
 

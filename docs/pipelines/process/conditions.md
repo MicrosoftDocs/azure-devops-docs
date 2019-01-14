@@ -9,7 +9,7 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/22/2017
+ms.date: 01/02/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -28,6 +28,9 @@ monikerRange: '>= tfs-2017'
 On each step and job, you can specify the conditions under which the step or job will run.
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
+
+By default, steps and jobs run if all previous steps/jobs have succeeded.
+It's as if you specified "condition: succeeded()" (see [Job status functions](#job-status-functions) below).
 
 ```yaml
 jobs:

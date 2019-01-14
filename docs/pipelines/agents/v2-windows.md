@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/29/2018
+ms.date: 01/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -73,7 +73,7 @@ running 4 agents apiece.
 
 > [!Tip]
 > Choose the processor according to the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
-> You can find which version of Windows your machine is running [by following these instructions](https://docs.microsoft.com/en-us/windows/client-management/windows-version-search).
+> You can find which version of Windows your machine is running [by following these instructions](https://docs.microsoft.com/windows/client-management/windows-version-search).
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ running 4 agents apiece.
 ::: moniker-end
 
 > [!Note]
-> We recommend you configure the agent from an elevated Command Prompt.
+> We recommend you configure the agent from an elevated PowerShell window.
 
 ### Server URL and authentication
 

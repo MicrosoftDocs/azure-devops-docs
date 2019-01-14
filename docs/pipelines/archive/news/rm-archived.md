@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Archived release notes for Microsoft Release Management
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 **NOTE**: Release Management has now been combined with the Build features
 of Azure Pipelines and Team Foundation Server (TFS) in the new 
@@ -175,7 +175,7 @@ current project. Now, you can now link build artifacts from another project
 as well. While linking an artifact, the project drop down will list all
 the projects in the account.
 
-![Build artifacts dialog](_img\rm-archived\release-notes-29.png)
+![Build artifacts dialog](_img/rm-archived/release-notes-29.png)
 
 <a name="update-nov16"></a>
 ### November 16, 2016 Update (Azure Pipelines, TFS 2017)

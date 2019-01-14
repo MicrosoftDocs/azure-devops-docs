@@ -1,0 +1,10 @@
+- name: Azure DevOps
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
+  items: 
+  - name: Azure Boards
+    tocHref: /azure/devops/boards/
+    topicHref: /azure/devops/boards/index
+    items: 
+    - name: Start using Azure Boards (Agile process)
+      topicHref: /azure/devops/boards/get-started/index-agile

@@ -164,12 +164,12 @@ When you run a script in a later step after creating an Anaconda environment, yo
 
 ```yaml
 - script: |
-    activate myEnvironment
+    call activate myEnvironment
     pytest -m unit --junitxml=junit/unit-test.xml
   displayName: 'Unit tests'
 
 - script: |
-    activate myEnvironment
+    call activate myEnvironment
     pytest -m integration --junitxml=junit/integration-test.xml
   displayName: 'Integration tests'
 ```
@@ -219,12 +219,36 @@ After updating `pip` and friends, a typical next step is to install from `requir
 
 ### Install Anaconda packages with conda
 
-Add the following YAML to install the `scipy` package in the conda environment named `myEnvironment`. See [Activate an Anaconda environment](#activate-an-anaconda-environment) above.
+Add the following YAML to install the `scipy` package in the conda environment named `myEnvironment`.
+
+# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
 
 ```yaml
-- script: conda install -n myEnvironment scipy
+- bash: |
+    source activate myEnvironment
+    conda install -n myEnvironment scipy
   displayName: 'Install conda libraries'
 ```
+
+# [Hosted macOS](#tab/macos)
+
+```yaml
+- bash: |
+    source activate myEnvironment
+    conda install -n myEnvironment scipy
+  displayName: 'Install conda libraries'
+```
+
+# [Hosted VS2017](#tab/vs2017)
+
+```yaml
+- script: |
+    call activate myEnvironment
+    conda install -n myEnvironment scipy
+  displayName: 'Install conda libraries'
+```
+
+---
 
 ## Test
 

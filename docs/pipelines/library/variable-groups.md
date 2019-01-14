@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Variable groups for builds and releases
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -38,6 +38,7 @@ Choose **+ Variable group**.
 1. Enter a name and description for the group. Then enter the name and value for each
    [variable](../release/variables.md#custom-variables)
    you want to include in the group, choosing **+ Add** for each one.
+   Decide if you want the variable group to be accessible for any pipeline if you have more than one.
    If you want to encrypt and securely store the value, choose the "lock" icon 
    at the end of the row. When you're finished adding variables, choose **Save**.
 

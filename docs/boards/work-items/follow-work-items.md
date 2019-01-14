@@ -23,7 +23,7 @@ ms.date: 11/19/2018
 
 To get notified of changes made to a work item or a pull request, you can elect to follow them. 
 
-This topic shows you how to:
+this article shows you how to:
 
 >[!div class="checklist"]  
 > * Follow a work item
@@ -39,7 +39,8 @@ This topic shows you how to:
 
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
-<img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](_img/follow-work/follow-work-item.png) 
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   

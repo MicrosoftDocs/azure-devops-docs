@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Create an Azure service connection
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -127,7 +127,7 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 ## Create an Azure Resource Manager service connection to a VM with a managed service identity
 
 You can configure Azure Virtual Machines (VM)-based agents with an
-[Azure Managed Service Identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/overview)
+[Azure Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)
 in Azure Active Directory (Azure AD). This lets you use the system assigned identity (Service Principal)
  to grant the Azure VM-based agents access to any Azure resource that supports Azure AD,
 such as Key Vault, instead of persisting credentials in Azure DevOps for the connection.
@@ -161,7 +161,7 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
 
 1. Ensure that the VM (agent) has the appropriate permissions.
    For example, if your code needs to call Azure Resource Manager, assign the VM the appropriate role using Role-Based Access Control (RBAC) in Azure AD.
-   For more details, see [How can I use managed identities for Azure resources?](https://docs.microsoft.com/en-gb/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
+   For more details, see [How can I use managed identities for Azure resources?](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).

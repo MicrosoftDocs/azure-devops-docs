@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Azure SQL database deployment
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -254,7 +254,7 @@ To learn more, see [Release, branch, and stage triggers](../release/triggers.md)
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
 that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need.
-This section shows some of the common use cases for invoking the [SqlPackage.exe tool](https://docs.microsoft.com/en-us/sql/tools/sqlpackage-download).
+This section shows some of the common use cases for invoking the [SqlPackage.exe tool](https://docs.microsoft.com/sql/tools/sqlpackage-download).
 As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
 
 > [!NOTE]

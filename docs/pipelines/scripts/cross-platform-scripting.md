@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Run cross-platform scripts
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
 
 With Azure Pipelines and Team Foundation Server (TFS), you can run your builds on macOS, Linux, and Windows.
 If you develop on cross-platform technologies such as Node.js and Python, these capabilities bring benefits, and also some challenges.

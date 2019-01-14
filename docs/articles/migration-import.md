@@ -261,7 +261,7 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 > [!NOTE]   
 > If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/AzureDevOpsImportLargeCollection.
 
-Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to Azure DevOps Services and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools]/sql/ssdt/download-sql-server-data-tools-ssdt). 
+Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to Azure DevOps Services and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
 There are multiple versions of SqlPackage.exe installed with SQL Server Data Tools, located under folders with names such as 120, 130, and 140. When using SqlPackage.exe it is important to use the right version to prepare the DACPAC.
 
@@ -399,15 +399,15 @@ Next you will need to grant access to the TFS Database Import Service itself. Yo
   
 Next you will need to grant Azure DevOps Services access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
-|    Service                                              |    IP                                           |
-|---------------------------------------------------------|-------------------------------------------------|
-|    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.169   |
-|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212                  |
-|    Azure DevOps Services - Australia East                        |    13.75.145.145                                |
-|    Azure DevOps Services - Brazil South                          |    191.232.37.247                               |
-|    Azure DevOps Services - India South                           |    104.211.227.29                               |
-|    Azure DevOps Services - Canada Central                        |    52.237.19.6                                  |
-|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40                                 |
+|    Service                                                       |    IP                                                                                  |
+|------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+|    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181   |
+|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103         |
+|    Azure DevOps Services - Australia East                        |    13.75.145.145, 40.82.217.103                                                        |
+|    Azure DevOps Services - Brazil South                          |    191.232.37.247                                                                      |
+|    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130                                                        |
+|    Azure DevOps Services - Canada Central                        |    52.237.19.6, 40.82.190.38                                                           |
+|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218                                                          |
 
 Next you will need to grant Azure Pipelines Releases service access. You only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.
 

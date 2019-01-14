@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Search your code
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search

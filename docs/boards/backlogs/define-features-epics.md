@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Define features and epics  
@@ -29,7 +29,7 @@ Use your backlogs to plan your project and to:
 *	Group items into a release train  
 *	Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
-Use this topic to learn how to: 
+Use this article to learn how to: 
 >[!div class="checklist"]      
 > * Determine what is a good feature or epic
 > * View a backlog or portfolio backlog  
@@ -41,7 +41,7 @@ Use this topic to learn how to:
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## What comprises a feature or epic?  
 
@@ -63,6 +63,7 @@ A feature typically represents a shippable component of software. An epic repres
 - Support integration with external services 
 - Support mobile apps
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 <a id="view-portfolio-backlog" />
 ## View a backlog or portfolio backlog 
@@ -318,7 +319,9 @@ The work item types you'll see depends on the [process you selected to create yo
 
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../../organizations/settings/show-bugs-on-backlog.md). 
 
- 
+
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+
 ## Try this next  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 

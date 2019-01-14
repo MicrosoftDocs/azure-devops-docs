@@ -1,0 +1,41 @@
+- name: Start using Azure Boards (Agile process)
+  href: ../get-started/index-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json
+  items:
+  - name: "What is Azure Boards?"
+    href: ../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  - name: Sign up and invite some teammates 
+    href: ../get-started/sign-up-invite-teammates.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  - name: Plan and track work
+    href: ../get-started/plan-track-work.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  - name: Customize your boards
+    href: ../get-started/customize-boards-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  - name: Manage your project
+    href: ../get-started/manage-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+  - name: Reference
+    items:
+    - name: Basic fields reference
+      href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+    - name: Key concepts
+      href: ../get-started/key-concepts-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+    - name: Best tool for the job
+      href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+    - name: Default permissions & access (Security)
+      href: ../get-started/permissions-access-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+    - name: "Why use Azure Boards?"
+      href: ../get-started/why-use-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+    - name: Connect a project to GitHub  
+      href: ../github/connect-to-github.md 
+  - name: Resources
+    items:
+    - name: Web portal navigation
+      href: ../../project/navigation/index.md
+    - name: GitHub & Azure Boards
+      href: ../github/index.md
+    - name: Work items
+      href: ../work-items/index.md
+    - name: Sprints (Scrum)
+      href: ../sprints/index.md
+    - name: Process customization
+      href: ../../organizations/settings/work/inheritance-process-model.md
+
+

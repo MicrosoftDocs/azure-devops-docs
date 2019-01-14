@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Kanban basics
@@ -25,7 +25,7 @@ To maximize a team's ability to consistently deliver high quality software, Kanb
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work.
 
-Review this topic to gain an understanding of how to configure and start working with your Kanban boards:   
+Review this article to gain an understanding of how to configure and start working with your Kanban boards:   
 
 >[!div class="checklist"]    
 > * View your Kanban board    
@@ -36,13 +36,10 @@ Review this topic to gain an understanding of how to configure and start working
 > * How to turn live updates on or off  
 
 
-[!INCLUDE [temp](../_shared/image-differences.md)] 
-
-
 User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
 
 [!INCLUDE [temp](../_shared/open-kanban-board.md)] 
