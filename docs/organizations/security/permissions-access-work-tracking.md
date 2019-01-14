@@ -104,7 +104,7 @@ The **Manage test plans** permission enables users to:
 
 ## Resources defined for the project
 
-You set project-level information permissions from the admin page for a project. You set permissions for area and iteration paths under **Project Settings**>**Work**. These resources are defined for a project which all valid users of the project can view. 
+You set project-level information permissions from **Project Settings**>**Security**. You set permissions for area and iteration paths under **Project Settings**>**Boards**. These resources are defined for a project which all valid users of the project can view. 
 
 <table>
 <tr valign="bottom">

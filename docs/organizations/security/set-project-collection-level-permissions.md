@@ -168,10 +168,10 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range=">= azdevserver-2019"
 
-0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. From your project web portal, choose the ![](../../_img/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert-2.png)  
 
 0.	Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
 

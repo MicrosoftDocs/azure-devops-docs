@@ -7,8 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -220,12 +219,10 @@ The following table describes the activity-based and numeric fields that you can
 </thead>
 <tbody valign="top">
 <tr>
-	<td><p>Activity <sup>1, 2</sup></p></td>
+	<td><p>Activity <sup>1, 2, 3</sup></p></td>
 	<td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
 
-
-  <blockquote><b>Note:</b> This field <sup>3</sup> is also used to calculate capacity by activity. It is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file. 
-</blockquote>
+<p>The Activity field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.</p>
 <p>Reference name=Microsoft.VSTS.Common.Activity, Data type=String</p>
 </td>
 	<td>Task, Bug<sup>4</sup> (Agile and Scrum)</td>
@@ -245,9 +242,10 @@ The following table describes the activity-based and numeric fields that you can
 <td>Task, Bug<sup>4</sup></td>
 </tr>
 <tr>
-	<td><p>Discipline <sup>1, 2</sup></p></td>
-	<td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul><blockquote>Note: This field <sup>3</sup> is also used to calculate capacity by activity. It is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.
-</blockquote>
+	<td><p>Discipline <sup>1, 2, 3</sup></p></td>
+	<td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul>
+
+<p>The Discipline field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.</p>
 
 <p>Reference name=Microsoft.VSTS.Common.Discipline, Data type=String</p>
 </td>
