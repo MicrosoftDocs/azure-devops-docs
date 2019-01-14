@@ -37,7 +37,7 @@ If it is your first time opening the **Work**, the page opens to **Favorites** w
 > Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Project page. To learn more, see [Set personal or team favorites](/azure/devops/project/navigation/set-favorites). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 From your web browser, open **Boards>Queries**. 
 
 ![Web portal, choose Boards>Queries](/azure/devops/boards/queries/_img/view-run-queries/open-hub-page.png) 

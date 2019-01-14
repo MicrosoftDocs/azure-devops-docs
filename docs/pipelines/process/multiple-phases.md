@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Multiple jobs
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -33,6 +33,9 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 * Reduce build time by running multiple jobs in parallel
 * Reduce deployment time by selectively downloading different artifacts in different jobs of a deployment pipeline
 * [Conditionally execute](conditions.md) a set of tasks
+
+> [!NOTE]
+> Running multiple jobs in parallel is supported only in build pipelines at present. It is not yet supported in release pipelines.
 
 ::: moniker-end
 
@@ -302,3 +305,4 @@ Use the **Run this job** option on an agent or server job to run the tasks
 * [Jobs](phases.md)
 * [Server jobs](server-phases.md)
 * [Deployment group jobs](deployment-group-phases.md)
+* [Specify conditions](conditions.md)

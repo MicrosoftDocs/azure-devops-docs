@@ -37,7 +37,7 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 ## Product and portfolio backlogs 
 
-Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.. 
+Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. 
 
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
@@ -264,38 +264,8 @@ To learn more about permissions and access, see [Permissions and access for work
 
 To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-## Customize your backlogs 
 
-::: moniker range="vsts"
-If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-
-You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-
-::: moniker-end
-
-
-::: moniker range="azdevserver-2019"
-
-If you need more than three backlog levels, you can add more. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project: 
-
-**Inheritance process model:**
-- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-
-**On-premises XML process model:**
-- [Customize work tracking](../../reference/customize-work.md)
-- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
-
-::: moniker-end
-
- 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-
-If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
-
-You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-::: moniker-end
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
 ## Try this next  
 

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Run unit tests with your builds
 
-[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -69,7 +69,7 @@ solution - on the same build machine.
    The Visual Studio Test task version 2 supports [Test Impact Analysis](test-impact-analysis.md).
    For information about all the task settings, see [Visual Studio Test task](../tasks/test/vstest.md).
 
-   [How do I pass parameters to my test code from a build pipeline?](reference-qa.md#pass-params)
+   [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
 
 1. If you also want to test code coverage, set the **Code coverage enabled** checkbox in the
    **Execution options** section.
@@ -78,10 +78,10 @@ solution - on the same build machine.
 
    When tests are run with this option, code coverage information is collected dynamically and assemblies
    do not need to be instrumented. By default, all assemblies are profiled for collecting coverage information. If you need to
-   [exclude specific assemblies and customize code coverage](/visualstudio/test/customizing-code-coverage-analysis),
-   use a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
+   [exclude specific assemblies and customize code coverage](https://docs.microsoft.com/visualstudio/test/customizing-code-coverage-analysis),
+   use a [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
 
-   [How do I collect and publish code coverage data if I'm not using the Visual Studio Test task?](reference-qa.md#code-coverage)
+   > Use the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md) to collect and publish code coverage data if you are not using the Visual Studio Test task.
 
 1. When you're done, save your build pipeline.
 

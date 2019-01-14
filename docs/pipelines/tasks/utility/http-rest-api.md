@@ -9,13 +9,13 @@ ms.manager: douge
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/07/2018
+ms.date: 01/10/2019
 monikerRange: '>= tfs-2018'
 ---
 
 # Invoke REST API task
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
 
@@ -42,13 +42,15 @@ This task can be used in only an [agentless job](../../process/server-phases.md)
 
 | Parameter | Comments |
 | --- | --- | --- |
-| **Generic endpoint** | Required. Select a Generic service connection. Provides the baseUrl for the call and the authorization to use. |
+| **Connection type** | Required. Select **Azure Resource Manager** to invoke an Azure managment API or **Generic** for all other APIs. |
+| **Generic service connection** | Required. Generic service connection that provides the baseUrl for the call and the authorization to use. |
+| **Azure subscription** | Required. Azure Resource Manager subscription to configure and use for invoking Azure management APIs. |
 | **Method** | Required. The HTTP method with which the API will be invoked; for example, **GET**, **PUT**, or **UPDATE**. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the API. |
 | **Body** | Optional. The request body for the function call in JSON format. |
 | **URL suffix and parameters** | The string to append to the baseUrl from the Generic service connection while making the HTTP call | 
-| **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
-| **Success criteria** | Optional. How to parse the response body for success. By default the task passes when 200 OK is returned from the call. Additionally, the success criteria - if specified - is evaluated. |
+| **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when the function returns success within 20 seconds and the success criteria evaluates to true, or **Callback** - the external service makes a callback to update the timeline record. [More info](https://github.com/Microsoft/azure-pipelines-extensions/blob/master/ServerTaskHelper/HttpRequestSampleWithoutHandler)  |
+| **Success criteria** | Optional. How to parse the response body for success. By default, the task passes when 200 OK is returned from the call. Additionally, the success criteria - if specified - is evaluated. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Succeeds if the API returns success and the response body parsing is successful, or when the API updates the timeline record with success.

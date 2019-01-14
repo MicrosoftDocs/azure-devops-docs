@@ -11,9 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
-
 
 
 <a id="share" >  </a>
@@ -30,14 +29,13 @@ Once you've completed your sprint plan, you can easily share it with other membe
 Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-
 ## Open a Sprint backlog for a team 
+
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -102,7 +100,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 

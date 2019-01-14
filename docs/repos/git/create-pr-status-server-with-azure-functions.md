@@ -28,8 +28,6 @@ An organization in Azure DevOps with a Git repo. If you don't have an organizati
 Follow the [create your first Azure function](/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
 
 ```cs
-#r "Newtonsoft.Json"
-
 using System;
 using System.Net;
 using System.Net.Http;
@@ -146,8 +144,6 @@ Make sure to update the code with your account name, project name, repository na
 This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, the sample code changes the status posted back to the PR. Replace the code in your Azure function with the following code to implement updating the status posted back to the PR.
 
 ```cs
-#r "Newtonsoft.Json"
-
 using System;
 using System.Net;
 using System.Net.Http;

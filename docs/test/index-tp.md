@@ -110,25 +110,6 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/test/load-test/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/i_load-testing.svg" alt="Load testing icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Load testing</h3>
-                                                            <p>Performance test your code with hundreds of thousands of users.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="/azure/devops/organizations/settings/about-settings#test-center">
                                             <div class="cardSize">
                                                 <div class="cardPadding">

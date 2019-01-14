@@ -23,6 +23,9 @@ If you have known issues you want to track, you can do so by defining an impedim
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to address feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
+> [!IMPORTANT]  
+> Issues and impediments discussed in this article are defined for projects created with the Agile, Scrum, or CMMI process. If your project was created using the Basic process, then you track issues using the product backlog. to learn more, see [Track issues and tasks](../get-started/track-issues-tasks.md).
+
 In this topic you'll learn: 
 
 >[!div class="checklist"]      

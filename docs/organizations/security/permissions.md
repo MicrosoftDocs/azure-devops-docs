@@ -377,7 +377,7 @@ For each project that you create, the system creates the followings project-leve
 		<td>Readers</td>
 		<td>Has permissions to view the project but not modify it.</td>
 		<td>
-			Assign to members of your organization who you want to provide view-only permissions to a project. These users will be able to view backlogs, boards, dashboards, and more, but not add or edit anything. Typically, these aer members who aren't granted an access level ([Basic, Stakeholder, or other level](../../organizations/security/access-levels.md)) within the organization or on-premises deployment.
+			Assign to members of your organization who you want to provide view-only permissions to a project. These users will be able to view backlogs, boards, dashboards, and more, but not add or edit anything. Typically, these are members who aren't granted an access level ([Basic, Stakeholder, or other level](../../organizations/security/access-levels.md)) within the organization or on-premises deployment.
 			who want to be able to view work in progress.
 		</td>
 	</tr>
@@ -613,7 +613,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="alter-trace-settings-permission">Alter trace settings</td>
 		<td>
-			Can [change the trace settings](https://docs.microsoft.com/en-us/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps/TFS Web services.
+			Can [change the trace settings](https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps/TFS Web services.
 		</td>
 	</tr>
 	<tr>

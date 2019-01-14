@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). 
 
-Use this topic to learn:
+Use this article to learn:
 
 >[!div class="checklist"]      
 > * How to view current and past sprint burndowns 
@@ -55,13 +55,15 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 <a id="open-chart">  </a>
 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+
 
 ## Open the Sprint backlog for your team 
 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 1. 
@@ -127,7 +129,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 Choose the chart to display it in a larger view. 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/open-burndown-chart-agile.png)
 
@@ -202,7 +204,7 @@ If your sprint burndown chart appears empty, check the following:
 As you complete each sprint, the system maintains a history of your activity. 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 To view a past sprint and its burndown chart, select the sprint from the Sprint selector.  
 > [!div class="mx-imgBorder"]  
 > ![Select a past sprint from the sprint selector](_img/burndown/select-past-sprint.png) 

@@ -35,11 +35,11 @@ requests, you can use Git with IIS Basic Authentication:
    The extra header must include a base 64 encoding of "user:PAT"
    
    **Form**:
-   ````
+   ```
    git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:PAT"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
-   ````
+   ```
    
    **Example**:
-   ````
+   ```
    git -c http.extraheader='Authorization: Basic a2FzYW50aGE6bzN3cDVndmw2YXRkajJkam83Znd4N2k3NDdhbGxjNXp4bnc3b3o0dGQycmd3d2M1eTdjYQ==' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
-   ````
+   ```

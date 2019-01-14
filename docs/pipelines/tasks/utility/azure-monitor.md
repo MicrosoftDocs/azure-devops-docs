@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Query Azure Monitor Alerts task
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
 

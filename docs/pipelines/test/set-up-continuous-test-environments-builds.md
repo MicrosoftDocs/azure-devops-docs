@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Set up environments to run continuous test tasks with your build tasks
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 To test your app using different platforms and configurations using test automation,
 set up separate environments to run your app and tests with your
@@ -127,7 +127,7 @@ Parallel Test Execution is **not** supported in the following cases:
 
 ### Enable parallel tests in Visual Studio 2017 Update 1 and VS Test task v1.x
 
-Configure a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+Configure a [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 in the app source repository for Visual Studio IDE or the CLI, and in Azure Pipelines when using
 version 1.x of the  [Visual Studio Test](../tasks/test/vstest.md)
 task.

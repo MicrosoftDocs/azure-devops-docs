@@ -77,6 +77,10 @@ GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
 var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
 ```
 
+## Reference
+
+You can find detailed, up-to-date reference documentation in the [Azure DevOps Services .NET SDK API Reference browser](https://docs.microsoft.com/dotnet/api/index?view=azure-devops-dotnet).
+
 ## Samples
 
 You can check out samples on our [.NET Samples Page](../get-started/client-libraries/samples.md) or directly on our [.NET GitHub Repo](https://github.com/Microsoft/vsts-dotnet-samples).

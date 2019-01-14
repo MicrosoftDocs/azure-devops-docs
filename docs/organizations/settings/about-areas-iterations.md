@@ -28,7 +28,35 @@ The areas and iterations you see depend on the process you used to create your p
 > |Iterations| Areas |
 > |-------------|----------| 
 > |<img src="_img/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="_img/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
-  
+
+
+
+<a id="area-path-guidance" />
+## End-to-end sequence to define and assign Area Paths
+
+If you are new to managing projects and teams, the most straight forward sequence for configuring your project and teams is as follows: 
+0. Determine the number and names of Area Paths that you want to support to categorize your work. At a minimum, you'll want to add one Area Path for each team that you'll define. 
+0. Determine the number and names of teams you will want to support. For guidance, review [About teams and Agile tools](about-teams-and-settings.md).
+0. Open **Project settings>Project configuration** and define the Area Paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration]((set-area-paths.md#open-project-settings) and [Add area paths](set-area-paths.md#add-areas).
+0. Define the teams you need to support step 2. For guidance, see [Add a team, move from one default team to several teams](add-teams.md).  
+0. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings]((set-area-paths.md#open-team-settings) and [Set team default area path(s)]((set-area-paths.md#team-area-paths).
+0. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
+ 
+::: moniker range=">= tfs-2017"
+> [!NOTE] 
+> While you can assign the same area path to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).  
+::: moniker-end
+
+As needed, you can perform the following actions at any time: 
+
+- Add additional child nodes
+- Rename an Area Path (except the root area path)
+- Move a child node under another node 
+- Delete a child node 
+- Rename a team 
+- Change the Area Path assignments made to a team
+
+
 ## How many areas should a team define?
 
 You add areas to support your team's trace-ability and security requirements. Use areas to represent logical or physical components, and then create child areas to represent specific features.  
@@ -41,6 +69,27 @@ Add areas when you have these requirements:
 Each team can create a hierarchy of areas under which the team can organize their backlog items, user stories, requirements, tasks, and bugs.
 
 Avoid creating an area structure that is too complex. You can create areas to partition permissions on work items, but complex trees require significant overhead for permission management. You might find that it is too much work to duplicate the structure and permissions in other projects.
+
+
+
+<a id="area-path-guidance" />
+## End-to-end sequence to define and assign Iteration Paths
+
+Use the following guidance to configure Iteration Paths (aka sprints) for your project and teams:  
+
+0. First, define the Area Paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
+0. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence.  
+0. Determine if you want a flat structure or hierarchy of sprints and releases.
+0. Open **Project settings>Project configuration** and define the Iteration Paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations). 
+0. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-iteration-paths-sprints.md#open-team-settings) and [Set team default iteration path(s)](set-iteration-paths-sprints.md#activate).
+0. Each team should assign the default Iteration Path they selected to their work items. This is needed in order for those work items to show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
+
+As needed, you can perform the following actions at any time: 
+- Add additional child iteration nodes
+- Rename an Iteration Path (except the root path)
+- Move a child Iteration Path under another node 
+- Delete a child Iteration Path 
+- Change the default and selected Iteration Paths assigned to a team
 
 ## How many iterations should a team define?
 

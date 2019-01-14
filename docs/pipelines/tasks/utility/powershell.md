@@ -123,7 +123,7 @@ Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 
  ```ps
 # Writes a warning to build summary and to log in yellow text
-Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
+Write-Host  "$("##vso[task.LogIssue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
 ```
 
 ![icon](_img/powershell.png) Write warning using PowerShell command
@@ -157,7 +157,7 @@ Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 
  ```ps
 # Writes an error to the build summary and to the log in red text
-Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
+Write-Host  "$("##vso[task.LogIssue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
 ```
 
 > [!TIP]

@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!IMPORTANT]  
->This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in Azure Boards and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/howto-manage-personal-notifications.md) and  [Manage notifications for a team](../../notifications/howto-manage-team-notifications.md). 
+>this article describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in Azure Boards and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/howto-manage-personal-notifications.md) and  [Manage notifications for a team](../../notifications/howto-manage-team-notifications.md). 
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts or [team alerts](#team-alerts).
 

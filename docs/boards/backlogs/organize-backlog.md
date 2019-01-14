@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -22,7 +22,7 @@ ms.date: 11/19/2018
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
 
 
-In this topic you'll learn how to:  
+In this article you'll learn how to:  
 
 ::: moniker range=">= tfs-2018"
 
@@ -46,12 +46,20 @@ In this topic you'll learn how to:
  
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> The epic portfolio backlog is supported in TFS 2015 and later versions.  
+> The Epic portfolio backlog is supported in TFS 2015 and later versions.  
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
+::: moniker range="vsts"
+Users with **Stakeholder** access for a private project can't use drag and drop to map or reparent work items or change their sprint. 
+::: moniker-end
+
+
+::: moniker range="<= azdevserver-2019"
+Users with **Stakeholder** access can't use drag and drop to map or reparent work items or change their sprint. 
+::: moniker-end
 
 ## Open your backlog from the web portal
 
@@ -269,6 +277,7 @@ From the product backlog you can multi-select several work items and choose **Ch
 
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
 ## Related articles  
 

@@ -27,6 +27,8 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they are reorder based on the Card reordering setting selected.  
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+
 
 <a id="card-reorder-setting"></a>
 

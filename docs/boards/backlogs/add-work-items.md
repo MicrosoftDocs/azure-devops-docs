@@ -28,7 +28,7 @@ You add work items to plan and manage your project. You use different types of w
 
 For additional clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 
 
@@ -213,7 +213,8 @@ To find work items based on their history, see [History & auditing](../queries/h
 
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.   
 
-![Work item form, Follow icon control](_img/follow-work-item.png) 
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](../work-items/_img/follow-work/follow-work-item.png) 
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 

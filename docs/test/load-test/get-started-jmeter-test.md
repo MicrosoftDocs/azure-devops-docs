@@ -25,7 +25,7 @@ Before you start your load testing:
 
 1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
+1. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **Apache JMeter test**.
 
    ![Start a new load test from the New menu](_img/get-started-jmeter-test/JMeterLoadTestVSO-new-menu-item.png)

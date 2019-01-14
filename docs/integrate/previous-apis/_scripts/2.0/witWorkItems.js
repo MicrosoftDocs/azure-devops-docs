@@ -98,10 +98,10 @@ exports.submitRequests = function() {
 
     apiwriter.setEnableWrite(true);
 
-    // Get a specfic work item
+    // Get a specific work item
     apiwriter.getJsonEx('/wit/workitems/{PBIId}', collectionScopeUrl);
 
-    // Get a specfic work item expanded 
+    // Get a specific work item expanded 
     apiwriter.getJsonEx('/wit/workitems/{PBIId}?$expand=all', collectionScopeUrl);
 	
     // Get a specific work item type stub

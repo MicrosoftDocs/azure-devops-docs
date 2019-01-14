@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -42,7 +42,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -110,7 +110,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Turn work details on](_img/adjust-work/work-details-on.png)
@@ -152,7 +152,10 @@ If your team's over capacity, you can move items from the sprint backlog back to
 Here we select two items at the bottom of the sprint backlog, open the ![ ](../../_img/icons/actions-icon.png) action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Move work items to backlog](_img//adjust-work/move-items-to-backlog-agile.png)
+> ![Move work items to backlog](_img/adjust-work/move-items-to-backlog-agile.png)
+
+> [!TIP]    
+> Optionally, you can open the **Planning** pane and drag a work item to the backlog or another sprint which will reassign all child tasks to the same iteration path. See [Assign work to a sprint](assign-work-sprint.md#drag-drop). Also, you can multi-select several items and drag them to the backlog or another sprint. Users with **Stakeholder** access can't drag-and-drop work items.
 
 ::: moniker-end
 
@@ -169,6 +172,9 @@ Here we select the last item in the sprint backlog and drag it to the product ba
 
 ![Drag items back to product backlog](_img/IC797613.png)  
 
+> [!TIP]    
+> Dragging a backlog item to the backlog or another sprint reassigns all child tasks to the same iteration path. Also, you can multi-select several items and drag them to the backlog or another sprint. Users with **Stakeholder** access can't drag-and-drop work items.
+
 ::: moniker-end
 
 ::: moniker range="azdevserver-2019"
@@ -179,9 +185,9 @@ Here we select the last item in the sprint backlog and drag it to the product ba
 
 ---
 
-> [!TIP]    
-> Dragging a backlog item to the backlog or another sprint reassigns all child tasks to the same iteration path. 
-> Also, you can multi-select several items and drag them to the backlog or another sprint. 
+
+
+
 
 ## Load balance work across the team
 

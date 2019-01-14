@@ -15,13 +15,16 @@ monikerRange: '>= tfs-2017'
 
 # UI testing considerations
 
-**Azure Pipelines | TFS 2017.1 and later**
+[!INCLUDE [version-header-vsts-tfs2017](../_shared/version-tfs-2017-rtm.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
 the typical considerations for running UI tests. 
 
 ::: moniker range="<= tfs-2018"
+
+> [!NOTE] 
+> Applies only to TFS 2017 Update 1 and later.
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 

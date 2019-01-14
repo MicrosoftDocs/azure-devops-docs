@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 12/14/2018
+ms.date: 1/8/2019
 monikerRange: 'vsts'
 ---
 
@@ -53,15 +53,10 @@ The Hosted macOS pool does not support running containers.
 A simple example:
 
 ```yaml
-resources:
-  containers:
-  - container: my_container
-    image: ubuntu:16.04
-
 pool:
   vmImage: 'ubuntu-16.04'
 
-container: my_container
+container: ubuntu:16.04
 
 steps:
 - script: printenv
@@ -79,6 +74,73 @@ This tells the system to fetch the `ubuntu` image tagged `16.04` from
 
 Containers are also useful for running the same steps in [multiple jobs](multiple-phases.md).
 In the following example, the same steps run in multiple versions of Ubuntu Linux.
+
+```yaml
+pool:
+  vmImage: 'ubuntu-16.04'
+
+strategy:
+  matrix:
+    ubuntu14:
+      containerImage: ubuntu:14.04
+    ubuntu16:
+      containerImage: ubuntu:16.04
+    ubuntu18:
+      containerImage: ubuntu:18.04
+
+container: $[ variables['containerImage'] ]
+
+steps:
+  - script: printenv
+```
+
+## Other settings
+
+### Endpoints
+
+Containers can be hosted on registries other than Docker Hub. To host
+an image on [Azure Container Registry](/azure/container-registry/) or
+another private container registry,
+add a [service connection](../library/service-endpoints.md) to the
+private registry. Then you can reference it in a container spec:
+
+```yaml
+container:
+  image: myprivate/registry:ubuntu1604
+  endpoint: private_dockerhub_connection
+
+steps:
+- script: echo hello
+```
+
+or
+
+```yaml
+container:
+  image: myprivate.azurecr.io/windowsservercore:1803
+  endpoint: my_acr_connection
+
+steps:
+- script: echo hello
+```
+
+### Options
+
+If you need to control container startup, you can specify `options`.
+
+```yaml
+container:
+  image: ubuntu:16.04
+  options: --hostname container-test --ip 192.168.0.1
+
+steps:
+- script: echo hello
+```
+
+### Reusable container definition
+
+In the following example, the containers are defined in the resources section.
+Each container is then referenced later, by referring to its assigned alias.
 
 ```yaml
 resources:
@@ -108,40 +170,6 @@ container: $[ variables['containerResource'] ]
 
 steps:
   - script: printenv
-```
-
-## Other settings
-
-### Endpoints
-
-Containers can be hosted on registries other than Docker Hub. To host
-an image on [Azure Container Registry](/azure/container-registry/) or
-another private container registry,
-add a [service connection](../library/service-endpoints.md) to the
-private registry. Then you can reference it in a container spec:
-
-```yaml
-resources:
-  containers:
-  - container: private_ubuntu1604
-    image: myprivate/registry:ubuntu1604
-    endpoint: private_dockerhub_connection
-  
-  - container: acr_win1803
-    image: myprivate.azurecr.io/windowsservercore:1803
-    endpoint: my_acr_connection
-```
-
-### Options
-
-If you need to control container startup, you can specify `options`.
-
-```yaml
-resources:
-  containers:
-  - container: my_container
-    image: ubuntu:16.04
-    options: --hostname container-test --ip 192.168.0.1
 ```
 
 # [Designer](#tab/designer)

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # UI test with Selenium
 
-[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -159,14 +159,14 @@ from Visual Studio Test Explorer.
    
 4. Run the Selenium test locally using Test Explorer and check that it works.
 
-## Define your CI build pipeline
+## Define your build pipeline
 
 You'll need a continuous integration (CI) build pipeline that builds your Selenium tests.
 For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
 
 ## Create your web app
 
-You'll need a web app to test. You can use an existing app, or deploy one in your CD release pipeline.
+You'll need a web app to test. You can use an existing app, or deploy one in your continuous deployment (CD) release pipeline.
 The example code above runs tests against Bing.com. For details of how to set up your own release pipeline
 to deploy a web app, see [Deploy to Azure Web Apps](../targets/webapp.md).
 
@@ -176,20 +176,23 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
 
 * When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
   pre-installed on the Windows agents (agents named **Hosted VS 20xx**) because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
-  The file paths to these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
-  `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox). For example,  
+  The paths to the folders containing these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
+  `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox).
+  The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
+
+<!--
+For example,  
 
   ```csharp
   driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver")); 
   ```
-  <p />
-  The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
+-->
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
   See [Build and release agents](../agents/agents.md#account).
 
 <a name="include-test"></a>
-## Include the test in a CD release
+## Include the test in a release
 
 ::: moniker range="<= tfs-2017"
 
@@ -248,7 +251,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
    ![Setting the test platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
 
-   [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
+   [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
 
 1. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release pipeline.

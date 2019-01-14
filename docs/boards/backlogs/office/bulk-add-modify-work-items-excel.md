@@ -22,7 +22,7 @@ When you have a lot of work items to add or modify, using Excel can save you tim
 
 You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * Connect to a project from Excel 

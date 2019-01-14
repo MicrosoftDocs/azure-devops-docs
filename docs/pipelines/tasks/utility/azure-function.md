@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Invoke Azure Function task
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to invoke a HTTP triggered function in an Azure function app and parse the response.
 

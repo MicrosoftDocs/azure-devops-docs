@@ -156,14 +156,17 @@
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
     items:
-    - name: Integrate GitHub with Azure Boards
-      tocHref: /azure/devops/boards/github/
+    - name: Start using Azure Boards (Basic process)
+      topicHref: /azure/devops/boards/get-started/index
+    - name: Start using Azure Boards (Agile process)
+      topicHref: /azure/devops/boards/get-started/index-agile
+    - name: GitHub with Azure Boards
       topicHref: /azure/devops/boards/github/index
 - name: Team Foundation Server
   tocHref: /azure/devops/
   topicHref: /tfs/index
   items:
-  - name: "TFS administation"
+  - name: TFS administation
     tocHref: /tfs/server/
     topicHref: /tfs/index
   - name: Project Server integration
