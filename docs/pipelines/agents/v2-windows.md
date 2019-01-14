@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/29/2018
+ms.date: 01/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -102,7 +102,7 @@ running 4 agents apiece.
 ::: moniker-end
 
 > [!Note]
-> We recommend you configure the agent from an elevated Command Prompt.
+> We recommend you configure the agent from an elevated PowerShell window.
 
 ### Server URL and authentication
 
