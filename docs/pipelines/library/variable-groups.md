@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/11/2018
+ms.date: 01/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -86,11 +86,13 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 ## Use a variable group
 
-# [Schema](#tab/yaml)
+# [YAML](#tab/yaml)
 
 ::: moniker range="> tfs-2018"
 
-To use a variable group, reference it in your variables mapping:
+To use a variable group, open your build or release pipeline, select the **Variables**
+tab, select **Variable groups**, and then choose **Link variable group**.
+Then, reference it in your variables mapping:
 
 ```yaml
 variables:
@@ -106,6 +108,11 @@ variables:
   value: 'value of my-bare-variable'
 ```
 
+> [!Note]
+> You must link your variable groups in the UI before they'll be available to your pipeline.
+> This is a security feature: if you only had to name the variable group in YAML, then anyone who can push code
+> to your repository could extract the contents of secrets in the variable group.
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -114,7 +121,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Example](#tab/designer)
+# [Designer](#tab/designer)
 
 To use a variable group, open your build or release pipeline, select the **Variables**
 tab, select **Variable groups**, and then choose **Link variable group**.
