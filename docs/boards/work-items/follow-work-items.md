@@ -39,7 +39,8 @@ this article shows you how to:
 
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
-<img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](_img/follow-work/follow-work-item.png) 
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
