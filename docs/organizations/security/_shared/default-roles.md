@@ -10,7 +10,7 @@ Agent queues - Hosted - Contributors - User
 <th>Readers</th>
 <th>Contributors</th>
 <th>Team Admins</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
+<th width="16%">Organization Owner/<br/>Project Admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>
