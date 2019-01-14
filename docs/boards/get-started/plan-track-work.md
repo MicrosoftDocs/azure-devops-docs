@@ -125,7 +125,7 @@ To open the Features board from the User Stories board, choose **Features** from
 </tr>
 <tr>
 	<td>[Iteration](/azure/devops/organizations/settings/set-area-paths)</td>
-	<td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprintss.md).</td>
+	<td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).</td>
 </tr>
 <tr>
 <td>[Description](../queries/titles-ids-descriptions.md)</td> 
