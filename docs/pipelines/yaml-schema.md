@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 1/8/2019
+ms.date: 01/14/2019
 monikerRange: 'vsts'
 ---
 
@@ -131,6 +131,9 @@ variables:
 - group: my-variable-group-1  # variable group
 - group: my-variable-group-2  # another variable group
 ```
+
+> [!Note]
+> You must also link your [variable groups](library/variable-groups.md) in the pipeline editor before they'll be available.
 
 ---
 
