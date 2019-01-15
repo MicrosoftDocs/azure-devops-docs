@@ -60,12 +60,6 @@
     href: targets/webapp.md
   - name: Linux VM
     href: apps/cd/deploy-linuxvm-deploygroups.md
-  - name: npm
-    href: artifacts/npm.md
-  - name: NuGet
-    href: artifacts/nuget.md
-  - name: PyPI
-    href: targets/pypi.md
   - name: SCVMM
     href: targets/scvmm.md
   - name: VMware
