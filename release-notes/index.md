@@ -1,8 +1,8 @@
 ---
 title: Azure DevOps Features Timeline
-author: alexcnichols
-ms.author: alexn
-ms.date: 12/13/2018
+author: gloridelmorales
+ms.author: glmorale
+ms.date: 01/14/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -93,6 +93,36 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="27">[14 January 2019](2019/sprint-146-update.md)</td>
+            <td>Simplify the organization of your work using the Basic process</td><td>Boards</td><td>Future</td>
+        </tr>
+        <tr><td>GitHub Enterprise support in the pipeline wizard</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Automatic GitHub service connections in pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Display status for each pipeline job in GitHub Checks</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Default authorization for YAML resources in GitHub</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Service containers for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Work items linked to GitHub commits in Release Summary</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>New Azure App Service tasks optimized for YAML</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Azure AD authentication support for Azure SQL task</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Grafana annotations service hook</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Query Azure Monitor alerts tasks</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Inline input of spec file in Deploy to Kubernetes task</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Docker CLI Installer task</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Java long-term support (LTS) on Microsoft hosted agents</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>YAML support for Bitbucket Cloud pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Avoid triggering multiple CI builds for pull requests</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Change build numbers, upload and download artifacts in forked repository builds</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>New option in 'Publish Test Results' task to fail build on failed tests</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to the Azure Portal for creating an Azure DevOps project</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use the Azure Portal to setup and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Setup builds and release pipelines for Functions in Azure Portal</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Package usage stats</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Monospaced font for Wiki markdown editor</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Bold Wiki page titles</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Insert Markdown table</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Embed Azure Boards query results in Wiki</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Restore deleted projects</td><td>Administration</td><td>N/A</td></tr>
         <tr>
             <td rowspan="14">[04 December 2018](2018/sprint-144-update.md)</td>
             <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Boards</td><td>Future</td>
@@ -196,25 +226,25 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Add Stakeholder users to save on Azure Pipelines license costs</td><td>Administration</td><td>N/A</td></tr>
         <tr>
             <td rowspan="6">[21 August 2018](2018/aug-21-vsts.md)</td>
-            <td>Create table of contents for wiki pages</td><td></td><td>*2019*</td>
+            <td>Create table of contents for wiki pages</td><td>Wiki</td><td>*2019*</td>
         </tr>
-        <tr><td>Ease customization by migrating projects to the Inheritance process model</td><td></td><td>N/A</td></tr>
-        <tr><td>Chat about the latest status using the improved Microsoft Teams integration</td><td></td><td>2017.2</td></tr>
-        <tr><td>Standardize pull request descriptions using templates</td><td></td><td>*2019*</td></tr>
-        <tr><td>Perform additional testing using a pull request release trigger</td><td></td><td>*2019*</td></tr>
-        <tr><td>Deploy Go apps to Azure Kubernetes Service (AKS) using Azure DevOps Projects</td><td></td><td>N/A</td></tr>
+        <tr><td>Ease customization by migrating projects to the Inheritance process model</td><td>Work</td><td>N/A</td></tr>
+        <tr><td>Chat about the latest status using the improved Microsoft Teams integration</td><td>Work</td><td>2017.2</td></tr>
+        <tr><td>Standardize pull request descriptions using templates</td><td>Code</td><td>*2019*</td></tr>
+        <tr><td>Perform additional testing using a pull request release trigger</td><td>Build and Release</td><td>*2019*</td></tr>
+        <tr><td>Deploy Go apps to Azure Kubernetes Service (AKS) using Azure DevOps Projects</td><td>Build and Release</td><td>N/A</td></tr>
         <tr>
             <td rowspan="9">[3 August 2018](2018/aug-03-vsts.md)</td>
-            <td>Surface metadata for wiki pages and code preview using YAML tags</td><td></td><td>*2019*</td>
+            <td>Surface metadata for wiki pages and code preview using YAML tags</td><td>Wiki</td><td>*2019*</td>
         </tr>
-        <tr><td>View work for your team in the Work Items hub</td><td></td><td>*2019*</td></tr>
-        <tr><td>Check installed software on Microsoft-hosted agent pools</td><td></td><td>N/A</td></tr>
-        <tr><td>Review summarized test results</td><td></td><td>*2019*</td></tr>
-        <tr><td>View package download and user metrics</td><td></td><td>*2019*</td></tr>
-        <tr><td>Browse dependencies in npm packages</td><td></td><td>*2019*</td></tr>
-        <tr><td>View VSTS dashboards within Microsoft Teams</td><td></td><td>N/A</td></tr>
-        <tr><td>Investigate build history through a new build dashboard widget</td><td></td><td>*2019*</td></tr>
-        <tr><td>Manage billing for your organization directly through the Azure Portal</td><td></td><td>N/A</td></tr>
+        <tr><td>View work for your team in the Work Items hub</td><td>Work</td><td>*2019*</td></tr>
+        <tr><td>Check installed software on Microsoft-hosted agent pools</td><td>Build and Release</td><td>N/A</td></tr>
+        <tr><td>Review summarized test results</td><td>Test</td><td>*2019*</td></tr>
+        <tr><td>View package download and user metrics</td><td>Package</td><td>*2019*</td></tr>
+        <tr><td>Browse dependencies in npm packages</td><td>Package</td><td>*2019*</td></tr>
+        <tr><td>View VSTS dashboards within Microsoft Teams</td><td>Reporting</td><td>N/A</td></tr>
+        <tr><td>Investigate build history through a new build dashboard widget</td><td>Reporting</td><td>*2019*</td></tr>
+        <tr><td>Manage billing for your organization directly through the Azure Portal</td><td>Admin</td><td>N/A</td></tr>
         <tr>
             <td rowspan="14">[10 July 2018](2018/jul-10-vsts.md)</td>
             <td>Create pull requests without a default team as reviewer</td><td></td><td>*2019*</td>
