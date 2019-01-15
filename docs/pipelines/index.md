@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 02/19/2018
+ms.date: 01/11/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -703,6 +703,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h3>Step-by-step tutorials</h3>
                                 <p>
                                     <a href="repos/github.md">Build GitHub repositories</a><br />
+                                    <a href="repos/azure-repos-git.md">Build Azure Repos Git repositories</a><br />
                                     <a href="build/ci-build-git.md">Build multiple branches</a><br />
                                     <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br />
                                 </p>
@@ -721,6 +722,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                     <a href="agents/agents.md">Build and release agents</a><br />
                                     <a href="licensing/concurrent-jobs.md">Parallel jobs</a><br />
                                     <a href="release/index.md">Release pipelines</a><br />
+                                    <a href="repos/index.md">Repositories</a><br />
                                 </p>
                             </div>
                         </div>

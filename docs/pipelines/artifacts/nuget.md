@@ -153,7 +153,7 @@ steps:
   displayName: 'NuGet push'
   inputs:
     command: push
-    publishVstsFeed: 'af432f1b-f4b2-4a4f-bc9c-fef924f8f823'
+    publishVstsFeed: '<feedName>'
     allowPackageConflicts: true
 ```
 
@@ -168,7 +168,7 @@ To publish a package to a NuGet feed, add the following snippet to your `azure-p
     nuGetFeedType: external
     publishFeedCredentials: '<Name of the NuGet service connection>'
     versioningScheme: byEnvVar
-    versionEnvVar: Version
+    versionEnvVar: <VersionVariableName>
 ```
 ::: moniker-end
 
