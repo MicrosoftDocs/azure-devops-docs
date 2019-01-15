@@ -46,7 +46,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
 
-For **byEnvVar**, the version will be set as whatever environment variable, e.g. $(MyVersion), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
 
 For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`.
 
@@ -186,7 +186,7 @@ None
                 <li>The packager does not compile the .csproj files for packaging.</li>
                 <li>Each project is packaged only if it has a .nuspec file checked in.</li>
                 <li>The packager does not replace tokens in the .nuspec file (except the <code>&lt;version/&gt;</code> element,
-                    see <strong>Use build number to version package</strong>, below). You must supply values for elements
+                    see [versioning schemes](#versioning-schemes) for version options). You must supply values for elements
                     such as <code>&lt;id/&gt;</code> and <code>&lt;description/&gt;</code>. The most common way to do this
                     is to hardcode the values in the .nuspec file.
                 </li>
