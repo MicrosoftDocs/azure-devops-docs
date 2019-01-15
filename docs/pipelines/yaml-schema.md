@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 1/8/2019
+ms.date: 01/14/2019
 monikerRange: 'vsts'
 ---
 
@@ -132,6 +132,9 @@ variables:
 - group: my-variable-group-2  # another variable group
 ```
 
+> [!Note]
+> You must also link your [variable groups](library/variable-groups.md) in the pipeline editor before they'll be available.
+
 ---
 
 ### Container resource
@@ -140,6 +143,9 @@ variables:
 dependencies inside a container. The agent will launch an instance of your
 specified container, then run steps inside it. The `container` resource lets
 you specify your container images.
+
+[Service containers](process/service-containers.md) run alongside a job to
+provide various dependencies such as databases.
 
 # [Schema](#tab/schema)
 
@@ -151,6 +157,8 @@ resources:
     options: string  # arguments to pass to container at startup
     endpoint: string  # endpoint for a private container registry
     env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
 ```
 
 # [Example](#tab/example)
@@ -160,6 +168,13 @@ resources:
   containers:
   - container: linux
     image: ubuntu:16.04
+  - container: my_service
+    image: my_service:tag
+    ports:
+    - 8080:80 # bind container port 80 to 8080 on the host machine
+    - 6379 # bind container port 6379 to a random available port on the host machine
+    volumes:
+    - /src/dir:/dst/dir # mount /src/dir on the host into /dst/dir in the container
 ```
 
 ---
@@ -367,8 +382,9 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   container: containerReference # container to run this job inside
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable ]
+  variables: { string: string } | [ variable ] 
   steps: [ script | bash | pwsh | powershell | checkout | task | stepTemplate ]
+  services: { string: string | container } # container resources to run as a service container
 ```
 
 # [Example](#tab/example)
