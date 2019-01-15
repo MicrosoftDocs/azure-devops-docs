@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: macoope
-ms.date: 01/14/2019
+ms.date: 01/15/2019
 monikerRange: 'vsts'
 ---
 
@@ -69,10 +69,28 @@ This tells the system to fetch the `ubuntu` image tagged `16.04` from
 > You must specify "Hosted Ubuntu 1604" as the
 > pool name in order to run Linux containers. Other pools won't work.
 
+A Windows example:
+
+```yaml
+pool:
+  vmImage: 'win1803'
+
+container: mcr.microsoft.com/windows/servercore:1803
+
+steps:
+- script: set
+```
+
+> [!Note]
+> Windows requires that the kernel version of the host and container match.
+> Since this example uses the hosted Windows Container pool, which is running an 1803
+> build, we also use the `1803` tag for the container.
+
 ## Multiple jobs
 
 Containers are also useful for running the same steps in [multiple jobs](multiple-phases.md).
 In the following example, the same steps run in multiple versions of Ubuntu Linux.
+(And we don't have to mention the `jobs` keyword, since there's only a single job defined.)
 
 ```yaml
 pool:
@@ -140,6 +158,7 @@ steps:
 
 In the following example, the containers are defined in the resources section.
 Each container is then referenced later, by referring to its assigned alias.
+(Here, we explicitly list the `jobs` keyword for clarity.)
 
 ```yaml
 resources:
@@ -153,22 +172,24 @@ resources:
   - container: u18
     image: ubuntu:18.04
 
-pool:
-  vmImage: 'ubuntu-16.04'
+jobs:
+- job: RunInContainer
+  pool:
+    vmImage: 'ubuntu-16.04'
 
-strategy:
-  matrix:
-    ubuntu14:
-      containerResource: u14
-    ubuntu16:
-      containerResource: u16
-    ubuntu18:
-      containerResource: u18
+  strategy:
+    matrix:
+      ubuntu14:
+        containerResource: u14
+      ubuntu16:
+        containerResource: u16
+      ubuntu18:
+        containerResource: u18
 
-container: $[ variables['containerResource'] ]
+  container: $[ variables['containerResource'] ]
 
-steps:
-  - script: printenv
+  steps:
+    - script: printenv
 ```
 
 # [Designer](#tab/designer)
