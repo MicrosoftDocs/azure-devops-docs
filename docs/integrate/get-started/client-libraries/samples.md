@@ -32,6 +32,8 @@ SOAP examples on this page require the following NuGet packages:
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 * [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
+>[!NOTE]
+> The Work Item Tracking (WIT) and Test Client OM are scheduled to be deprecated in 2020. For more information, see [Deprecation of WIT and Test Client OM](../../concepts/wit-client-om-deprecation.md).
 
 #### Example 1: Using a REST-based HTTP client
 
