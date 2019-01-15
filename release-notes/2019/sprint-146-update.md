@@ -10,7 +10,7 @@ description: In the Sprint 146 Update of Azure DevOps, we added more functionali
 
 # GitHub Enterprise support and automatic GitHub service connections in build pipelines - Sprint 146 Update
 
-In the **Sprint 146 Update** of Azure DevOps, we improved our GitHub integration with Azure Pipelines. In addition, the New build pipeline wizard can now create pipelines for GitHub Enterprise repositories. It also analyzes your repository to provide a suggested language template. It also can create and re-use service connections for the GitHub repositories you select.
+In the **Sprint 146 Update** of Azure DevOps, we improved our GitHub integration with Azure Pipelines. The New build pipeline wizard can now create pipelines for **GitHub Enterprise** repositories. It also analyzes your repository to provide a suggested language template. In addition, it can create and re-use service connections for the GitHub repositories you select.
 
 Check out the [Features](#features) list below for more.
 
