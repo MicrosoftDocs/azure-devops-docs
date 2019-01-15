@@ -184,6 +184,8 @@
         href: process/deployment-group-phases.md
       - name: Multiple jobs
         href: process/multiple-phases.md
+      - name: Service containers
+        href: process/service-containers.md
     - name: Conditions
       href: process/conditions.md
     - name: Expressions
