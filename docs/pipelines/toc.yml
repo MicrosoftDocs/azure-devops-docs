@@ -184,6 +184,8 @@
         href: process/deployment-group-phases.md
       - name: Multiple jobs
         href: process/multiple-phases.md
+      - name: Service containers
+        href: process/service-containers.md
     - name: Conditions
       href: process/conditions.md
     - name: Expressions
@@ -249,6 +251,8 @@
       href: release/define-multistage-release-process.md
     - name: Use approvals and gates
       href: release/deploy-using-approvals.md
+    - name: Integrate with ServiceNow
+      href: release/approvals/servicenow.md
     - name: Deploy pull request builds
       href: release/deploy-pull-request-builds.md
     - name: Jenkins CI for Azure Pipelines Azure CD
