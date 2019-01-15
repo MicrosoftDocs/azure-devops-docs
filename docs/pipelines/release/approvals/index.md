@@ -56,11 +56,15 @@ are useful include the following.
 
 You can, of course, combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
 
+In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
+though service management methodologies such as ITIL. For more details, see [Release deployment control using ServiceNow](servicenow.md).
+
 ## Related topics
 
 * [Approvals](approvals.md)
 * [Gates](gates.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
+* [ServiceNow release and deployment control](servicenow.md)
 * [Stages](../environments.md)
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](index.md)
