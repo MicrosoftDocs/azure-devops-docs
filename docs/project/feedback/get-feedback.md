@@ -9,26 +9,150 @@ ms.assetid: b8fc1618-6501-41dd-86a6-78290bb84dcd
 ms.manager: douge
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
-ms.date: 08/15/2017
+ms.date: 01/15/2019
 ---
 
 # Get feedback
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-> [!NOTE]  
-> **Feature availability**: For Azure DevOps Services and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../organizations/security/change-access-levels.md) to request feedback. 
->
->In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
- 
 Once you have working software, you're ready to get feedback from your stakeholders. You can ask reviewers to provide videos, screenshots, type-written comments, and ratings. Their feedback is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 
 Before requesting feedback, make sure that you [provide stakeholders who'll you request feedback from the necessary permissions](give-permissions-feedback.md).
 
-## Request feedback
+
+> [!NOTE]  
+> **Feature availability**: 
+>
+>In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
+ 
+
+
+
+
+
+## Prerequisites
+
+::: moniker range="vsts"
+
+* You must connect to a team project. If you don't have a project yet, create one in [Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md).  
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
+* To request feedback, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To provide or review feedback, you must be granted **Stakeholder** access or higher. 
+* To view or modify feedback responses, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to the Request feedback feature just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azdevserver-2019"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To request feedback, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To provide or review feedback, you must be granted **Stakeholder** access or higher. 
+* To view or modify feedback responses, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+* To send feedback requests, the server administrator must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+
+::: moniker-end 
+
+::: moniker range="tfs-2015"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To request feedback, you must be granted **Basic** access or higher for TFS 2015.1 and later versions. For TFS 2015, you must be granted **Advanced** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To provide or review feedback, you must be granted **Stakeholder** access or higher. 
+* To view or modify feedback responses, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+* To send feedback requests, the server administrator must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+
+::: moniker-end 
+
+
+::: moniker range="tfs-2013"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To request feedback, you must be granted **Advanced** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+* To send feedback requests, the server administrator must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+
+::: moniker-end 
+
+
+## Request feedback 
+
 To request feedback, you fill out a form that generates an email request to your stakeholders.
 
-1. From the web portal home page, start a feedback request. 
+::: moniker range="vsts"  
+
+0. Add the **Other links** widget to a web portal team dashboard. For details, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Other links widget](_img/get-feedback/add-other-links-widget.png)   
+
+0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
+
+	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
+
+0. Add the feedback reviewers. If you don't see the names you want in the browse list, [grant them permissions to provide feedback](give-permissions-feedback.md).
+
+	![Select stakeholders on Request Feedback form](_img/ALM_GF_FeedbackReviewers.png)  
+
+3. Tell your reviewers how to run the app they'll be reviewing.
+
+	![Launch application instructions rich-text area on Request Feedback form](_img/ALM_GF_TellStakeholders.png)  
+
+4. For each area of interest, decide what type of feedback you want. Set the context for the reviewers by providing enough background information. Add up to four more areas of interest with the **add feedback item** link. 
+
+	![Feedback focus textbox on Request Feedback form](_img/ALM_GF_FocusFeedback.png)  
+
+5. Send the request. 
+
+	![Send Button on Request Feedback form](_img/ALM_GF_SendRequest.png)  
+
+::: moniker-end 
+
+
+::: moniker range=">= tfs-2015 <= azdevserver-2019"  
+
+0. Add the **Other links** widget to a web portal team dashboard. For details, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Other links widget](_img/get-feedback/add-other-links-widget.png)   
+
+0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
+
+	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
+
+	If the following message appears, you need to [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+
+	![Error message about email notifications not configured](_img/ALM_GF_SMTPServer.png)  
+
+0. Add the feedback reviewers. If you don't see the names you want in the browse list, [grant them permissions to provide feedback](give-permissions-feedback.md).
+
+	![Select stakeholders on Request Feedback form](_img/ALM_GF_FeedbackReviewers.png)  
+
+3. Tell your reviewers how to run the app they'll be reviewing.
+
+	![Launch application instructions rich-text area on Request Feedback form](_img/ALM_GF_TellStakeholders.png)  
+
+4. For each area of interest, decide what type of feedback you want. Set the context for the reviewers by providing enough background information. Add up to four more areas of interest with the **add feedback item** link. 
+
+	![Feedback focus textbox on Request Feedback form](_img/ALM_GF_FocusFeedback.png)  
+
+5. Send the request. 
+
+	![Send Button on Request Feedback form](_img/ALM_GF_SendRequest.png)  
+
+::: moniker-end 
+
+
+::: moniker range="<= tfs-2013"  
+
+1. From the web portal team home page, choose **Request feedback** to start a feedback request. 
 
 	![Request feedback link in Homepage](_img/request-feedback-link.png)  
 
@@ -54,6 +178,9 @@ To request feedback, you fill out a form that generates an email request to your
 5. Send the request. 
 
 	![Send Button on Request Feedback form](_img/ALM_GF_SendRequest.png)  
+
+::: moniker-end 
+
 
 ## Provide Feedback
 Reviewers launch your application and provide feedback through the free Microsoft Feedback Client.
@@ -111,7 +238,7 @@ Reviewers launch your application and provide feedback through the free Microsof
 	With the feedback experience, you can engage stakeholders frequently to provide continuous feedback. Interacting with your working apps, your stakeholders can record rich and actionable data that the system automatically stores in the form of video or audio recordings, comments, and annotated screenshots. You can then take action on each feedback response by assigning it to a team member or creating bugs or backlog items to the linked feedback. 
 
 ## Related notes  
-- You can only request feedback from a team project hosted on Azure DevOps Services or an on-premises TFS. If you don't have a team project yet, create one in [Azure DevOps Services](../../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).  
+
 - You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
 - If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).  
 - You can download the Feedback client from here: [Visual Studio download site](https://www.microsoft.com/download/details.aspx?id=48142).  
