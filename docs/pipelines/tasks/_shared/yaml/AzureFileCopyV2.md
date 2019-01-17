@@ -4,7 +4,7 @@
 - task: AzureFileCopy@2
   inputs:
     sourcePath: 
-    #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
+    #azureConnectionType: 'ConnectedServiceNameARM' # Options: connectedServiceName, connectedServiceNameARM
     #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
     #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
     destination: # Options: azureBlob, azureVMs

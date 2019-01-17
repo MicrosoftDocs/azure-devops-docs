@@ -10,16 +10,12 @@ ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2018'
 ---
 
 # How To: Extend your deployments to IIS Deployment Groups
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 You can quickly and easily deploy your ASP.NET or Node.js app to an IIS Deployment Group using
 Azure Pipelines or Team Foundation Server (TFS),
