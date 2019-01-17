@@ -93,6 +93,8 @@
     href: work-team-explorer.md  
   - name: FAQs
     href: faqs.md
+  - name: Data protection overview
+    href: ../articles/team-services-security-whitepaper.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Web portal navigation

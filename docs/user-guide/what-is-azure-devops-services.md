@@ -9,7 +9,7 @@ ms.assetid: 4
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 01/15/2019
 ms.topic: overview
 monikerRange: 'vsts'
 ---
@@ -35,7 +35,8 @@ Choose Azure DevOps Services when you want the following results:
 - Maintenance-free operations
 - Easy collaboration across domains
 - Elastic scale
-- Rock-solid security
+- Rock-solid security ([learn more about data protection](../articles/team-services-security-whitepaper.md))
+
 
 You'll also have access to cloud load testing, cloud build servers, and application insights.
 

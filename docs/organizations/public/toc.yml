@@ -26,7 +26,7 @@
     href: migration-checklist.md
   - name: Glossary of key terms
     href: glossary-public.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: Clone a repository
     href: clone-git-repo-public.md 
@@ -52,6 +52,8 @@
     href: feature-differences.md 
   - name: Extensions and public project support 
     href: ../../extend/develop/public-project.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
+  - name: Data protection overview
+    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Git Repositories
@@ -62,6 +64,4 @@
     href: ../projects/index.md 
   - name: Process Customization
     href: ../settings/work/customize-process.md 
-  - name: Data protection overview
-    href: ../../articles/team-services-security-whitepaper.md 
 
