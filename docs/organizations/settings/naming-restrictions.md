@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 12/06/2018
+ms.date: 01/11/2019
 ---
 
 # Naming restrictions and conventions  
@@ -1189,7 +1189,52 @@ In the web portal and REST API certain operations (Edit, Rename, and Delete) hav
 </tr>
 </table>
 
+## Azure Repos
 
+A Git repo in Azure Repos establishes a repository for source code. Each project can contain multiple Git repos. The names you assign to Git repos that you create must conform to the following restrictions.  
+ 
+<table>
+<tr>
+<th width="20%">Restriction type</th>
+<th>Restriction</th>
+</tr>
+<tr>
+<td>Length</td>
+<td>
+<ul>
+<li>Must not contain more than 64 Unicode characters</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+Uniqueness
+</td>
+<td>
+<ul>
+<li>Must not be identical to any other Git repo name in the project.
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Special characters</td>
+<td>
+<ul>
+<li>Must not contain any Unicode control characters or surrogate characters</li>
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+</li>
+<li>Must not start with an underscore (&#95;)</li>
+<li>Must not start or end with a period (.)</li>
+</ul>
+</td>
+</tr>
+</table>
+
+>[!IMPORTANT]
+>Although spaces are permitted in repo names, it is not recommended.
+
+For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format).
 
 ## TFVC files
 
