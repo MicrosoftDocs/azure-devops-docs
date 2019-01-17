@@ -64,6 +64,8 @@
     href: ../../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
   - name: Default permissions & access
     href: ../../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
+  - name: Data protection overview
+    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Start using Azure DevOps

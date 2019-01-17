@@ -10,16 +10,12 @@ ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ---
 
 # Deploy to a Linux Virtual Machine
 
 [!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
-::: moniker-end
 
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines or Team Foundation Server (TFS) 2018. You can use the steps in this

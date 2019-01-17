@@ -83,7 +83,7 @@ You can also explore [multiple work items in the same session](#multipleitems).
    ![Viewing the current work item](_img/explore-workitems-exploratory-testing/explore-workitems-04.png)
  
 <a name="multipleitems"></a>
-## Explore multiple work items  in the same session
+## Explore multiple work items in the same session
 
 To explore another work item, you must first dissociate the current work item from the in-progress session.
 
@@ -92,6 +92,12 @@ To explore another work item, you must first dissociate the current work item fr
    ![Changing the work item you are exploring](_img/explore-workitems-exploratory-testing/explore-workitems-09.png)
 
 2. Associate the new work item with the in-progress session as [described above](#extension).
+
+## See your exploratory session results 
+
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+
+* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 
