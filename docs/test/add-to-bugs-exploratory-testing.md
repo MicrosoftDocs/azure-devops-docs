@@ -59,6 +59,12 @@ your findings to an existing bug.
    
 1. Continue exploring your app, filing bugs and tasks, and creating test cases. 
 
+## See your exploratory session results 
+
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+
+* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
+
 ## See Also
 
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)

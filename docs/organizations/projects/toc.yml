@@ -84,6 +84,8 @@
     href: ../security/permissions-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: "Permission lookup guide"
     href: ../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+  - name: Data protection overview
+    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/project/toc.json&bc=/azure/devops/organizations/project/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Start using Azure DevOps

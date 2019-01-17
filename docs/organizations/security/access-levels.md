@@ -284,6 +284,7 @@ Test summary access to stakeholder license users
 <ul>
 <li>[Perform user acceptance testing](../../test/user-acceptance-testing.md)</li>
 <li>[Request stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</li>
+<li>[Request feedback using the Microsoft Feedback client](../../project/feedback/get-feedback.md)</li>
 </ul>
 </td>
 <td>
@@ -374,10 +375,16 @@ Test summary access to stakeholder license users
 </td>
 <td>
 <ul>
-<li>TBD</li>
+<li>[Perform user acceptance testing](../../test/user-acceptance-testing.md)</li>
+<li>[Request stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</li>
+<li>[Request feedback using the Microsoft Feedback client](../../project/feedback/get-feedback.md)</li>
 </ul>
 </td>
+<td>
+</td>
 </tr>
+
+
 <tr>
 <td>Administer organization</td>
 <td>
@@ -1005,20 +1012,20 @@ With VS Enterprise access, users have access to any fee-based, Marketplace exten
 
 ::: moniker-end
 ::: moniker range="tfs-2017"
-For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/how-to/assign-paid-extension-access.md).
+For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension for Azure Test Plans.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension for Azure Test Plans](../../marketplace/how-to/assign-paid-extension-access.md).
 
 ::: moniker-end
 
 ::: moniker range="<= azdevserver-2019"
 ## Advanced access
-Users assigned Advanced access can manage test cases when you have [purchased Test Manager extensions and assigned to the user accounts](access-levels.md#test-manager) to gain full access to [Web-based test case management tools](../../test/create-a-test-plan.md).
+Users assigned Advanced access can manage test cases when you have [purchased Test Manager extension for Azure Test Plans and assigned to the user accounts](access-levels.md#test-manager) to gain full access to [Web-based test case management tools](../../test/create-a-test-plan.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azdevserver-2019"
 
 > [!NOTE]   
-> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to **Test**, assign them to the **Advanced** access level and the Test Manager extension.  
+> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to **Test**, assign them to the **Advanced** access level and the Test Manager extension for Azure Test Plans.  
  
 ::: moniker-end
 
@@ -1052,13 +1059,13 @@ In addition to the features listed for **Basic** access, the following features 
 For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
 - Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN Platforms subscriptions.
 These include a TFS CAL plus the rights to access the full set of Test features.  
-- A paid Azure DevOps user (which includes a TFS CAL) plus the [Test Manager extension](#test-manager). 
+- A paid Azure DevOps user (which includes a TFS CAL) plus the [Test Manager extension for Azure Test Plans](#test-manager). 
 
 For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platforms or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md).
 	
 
 > [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or TFS Test](../../billing/buy-access-tfs-test-hub.md). 
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension for Azure Test Plans](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or TFS Test](../../billing/buy-access-tfs-test-hub.md). 
 
 ::: moniker-end
 
@@ -1067,7 +1074,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 ::: moniker range=">= azdevserver-2019"
 ## Test Plans, load testing, and Marketplace extensions
 
-Full access to **Test Plans** and load testing features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+Full access to **Test Plans** and load testing features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Planss from the Marketplace.  
 
 To learn more, see [Start free trials for paid Azure DevOps Services features and extensions](../billing/try-additional-features-vs.md). 
 
@@ -1076,7 +1083,7 @@ To learn more, see [Start free trials for paid Azure DevOps Services features an
 ::: moniker range=">=tfs-2015 <= tfs-2018"
 ## Test features and Marketplace extensions
 
-Full access to **Test** features requires **Advanced** (TFS 2017 or earlier versions) or **VS Enterprise** (TFS 2017.1 or later version) access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+Full access to **Test** features requires **Advanced** (TFS 2017 or earlier versions) or **VS Enterprise** (TFS 2017.1 or later version) access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Plans from the Marketplace.  
 
 To learn how to grant access to an extension, see [Get extensions for TFS](../../marketplace/get-tfs-extensions.md).  
 
