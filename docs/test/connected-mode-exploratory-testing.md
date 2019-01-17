@@ -170,11 +170,11 @@ The extension lets you create test cases as you explore your application.
  
    ![View exploratory testing sessions on the server](_img/connected-mode-exploratory-testing/create-bugs-07.png)
 
-1. Now see how you can [view your sessions and get insights](insights-exploratory-testing.md).
+## See your exploratory session results 
+
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+
+* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 [How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
 
-## Next step
-
-> [!div class="nextstepaction"]
-> [Get insights across your sessions](insights-exploratory-testing.md)

@@ -10,19 +10,24 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 01/16/2019
 ---
 
+::: moniker range=">= azdevserver-2019"
+# Use breadcrumbs, selectors, and directories to navigate and open artifacts 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 # Use breadcrumbs and selectors to navigate and open artifacts 
+::: moniker-end
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
-To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs or selectors. 
+To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs, selectors, and directories. 
 
 [!INCLUDE [temp](_shared/new-navigation-wp.md)] 
 
 ## Organization and project breadcrumbs 
-
 
 # [New navigation](#tab/new-nav)
 
@@ -214,6 +219,35 @@ Choose the **Deployment** breadcrumb link to return to the *Deployment* folder.
 ::: moniker-end
 
 ---
+
+::: moniker range=">= azdevserver-2019"
+
+## Directories 
+
+Directories provide a filterable list of all artifacts defined for a service area. Often times when you navigate to an application, it will open the application's directory. 
+
+For example, here is the **Boards>Boards** directory. 
+
+> [!div class="mx-imgBorder"]  
+> ![Boards directory](_img/breadcrumbs/boards-directory.png)
+
+It lists boards in the following order: 
+- Your last visited board
+- Your favorited boards
+- All boards of teams that you belong to
+- All boards defined for the project in alphabetical order. 
+
+Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list as described in [Filter basics](filter-basics.md).
+
+From a specific page, you can open the directory from the breadcrumbs or a selector. For example, choose **Browse all boards** from the Boards selector. 
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |  Open from breadcrumb | Open from selector |
+> |------|---------|
+> | ![Open Boards directory from breadcrumb](_img/breadcrumbs/open-directory-boards-from-breadcrumbs.png)|![Open Boards directory from selector](_img/breadcrumbs/open-directory-boards.png)|
+
+::: moniker-end
+
 
 ## Related articles
 

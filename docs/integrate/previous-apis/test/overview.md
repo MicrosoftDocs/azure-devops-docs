@@ -68,4 +68,4 @@ Test resources are subject to specific licensing and access restrictions. Please
 
 [Access Levels for Test Manager](https://visualstudio.microsoft.com/docs/work/connect/change-access-levels#test-manager)
 
-[Test Manager Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+[Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)

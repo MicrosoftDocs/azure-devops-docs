@@ -420,7 +420,7 @@ If you need to permanently delete work items, see [Remove or delete work items](
 ## Work item types added to all processes 
 The following WITs are the same across all processes.
 
-  ![Work item types used by MTM, My Work, and Feedback](_img/ALM_PT_WITS_Shared.png)
+  ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](_img/ALM_PT_WITS_Shared.png)
 
 Teams create and work with these types using the corresponding tool: 
 
