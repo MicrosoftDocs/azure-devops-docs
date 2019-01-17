@@ -20,16 +20,12 @@ Once you have working software, you're ready to get feedback from your stakehold
 
 Before requesting feedback, make sure that you [provide stakeholders who'll you request feedback from the necessary permissions](give-permissions-feedback.md).
 
+::: moniker range=">= tfs-2017"
 
 > [!NOTE]  
-> **Feature availability**: 
->
->In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
- 
-
-
-
-
+> You can also [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
+> 
+::: moniker-end
 
 ## Prerequisites
 
@@ -81,17 +77,21 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ::: moniker-end 
 
+::: moniker range=">= tfs-2015"  
+## Add the Other links widget to your dashboard
+
+Add the **Other links** widget to a web portal team dashboard. For details, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)  
+
+> [!div class="mx-imgBorder"]  
+> ![Other links widget](_img/get-feedback/add-other-links-widget.png)   
+
+::: moniker-end 
 
 ## Request feedback 
 
 To request feedback, you fill out a form that generates an email request to your stakeholders.
 
 ::: moniker range="vsts"  
-
-0. Add the **Other links** widget to a web portal team dashboard. For details, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Other links widget](_img/get-feedback/add-other-links-widget.png)   
 
 0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
@@ -116,13 +116,7 @@ To request feedback, you fill out a form that generates an email request to your
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019"  
-
-0. Add the **Other links** widget to a web portal team dashboard. For details, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Other links widget](_img/get-feedback/add-other-links-widget.png)   
-
+::: moniker range=">= tfs-2015 <= azdevserver-2019" 
 0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
