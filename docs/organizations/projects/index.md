@@ -58,6 +58,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 - [Default permissions and access](../../organizations/security/permissions-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 - [Permission lookup guide (Security)](../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 ## Resources
 

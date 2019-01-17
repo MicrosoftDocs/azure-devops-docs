@@ -182,4 +182,4 @@ REST APIs are provided to support building extensions to Azure DevOps Services a
 - [Essential services](services.md)
 - [Software development roles](roles.md)
 - [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
- 
+- [Azure DevOps data protection overview](../articles/team-services-security-whitepaper.md)
