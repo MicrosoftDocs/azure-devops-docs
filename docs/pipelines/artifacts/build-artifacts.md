@@ -264,9 +264,21 @@ Use these tasks to publish artifacts:
 
 ## Explore, download, and deploy your artifacts
 
+::: moniker range="vsts"
+
+When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
+
+![Artifacts tab of a build with one artifact](_img/build-artifact-tab-current.png)
+
+::: moniker-end
+
+::: moniker range=">=tfs-2015 < vsts"
+
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
 ![Artifacts tab of a build with one artifact](_img/build-artifact-tab.png)
+
+::: moniker-end
 
 From here, you can explore or download the artifacts.
 

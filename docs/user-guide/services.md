@@ -10,7 +10,7 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 01/15/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -283,6 +283,7 @@ There are features and tasks associated with administering a collaborative softw
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)  
 - [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps data protection overview](../articles/team-services-security-whitepaper.md)
 
 <!---
 **System Center integration**: Enables a release pipeline to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Azure DevOps Services or TFS to provision, start, stop, or snapshot VMware virtual machines. 

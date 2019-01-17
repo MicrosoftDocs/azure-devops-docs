@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 11/21/2018
+ms.date: 01/15/2019
 monikerRange: 'vsts'
 ---
 
@@ -64,7 +64,7 @@ Azure DevOps uses Azure Storage as the primary repository for service metadata a
 **Azure SQL database storage** is used to store the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project and provides indexes into the blob storage to look up files and attachments. For more information, see documentation on
 [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/).
 
-Administrators can manage access to resources by granting or restricting permissions on user identities or groups. Azure DevOps uses federated authentication of user identities via Azure Active Directory (Azure AD) and Microsoft Accounts (MSA, formerly LiveID). During authentication, the user is routed to the authentication provider (Azure AD or MSA) where they provide their credentials. Once the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user, which allows them to remain authenticated against Azure DevOps. In this way, the user's credential information is never shared directly with Azure DevOps. For each Azure DevOps resource that the user attempts to access, permissions are validated based on the user's explicit permissions as well as permissions inherited through group membership. Administrators can leverage access controls to protect access to organization, project collection, team project, and team scoped data and functionality, as well as to more specific assets like version control folders and work item area paths.
+Administrators can manage access to resources by [granting or restricting permissions](../reference/process-templates/configure-initial-groups-teams-members-permissions.md) on user identities or groups. Azure DevOps uses federated authentication of user identities [via Azure Active Directory](../organizations/accounts/access-with-azure-ad.md) (Azure AD) and Microsoft Accounts (MSA, formerly LiveID). During authentication, the user is routed to the authentication provider (Azure AD or MSA) where they provide their credentials. Once the authentication provider has verified the user's credentials, Azure DevOps issues an authentication cookie to the user, which allows them to remain authenticated against Azure DevOps. In this way, the user's credential information is never shared directly with Azure DevOps. For each Azure DevOps resource that the user attempts to access, permissions are validated based on the user's explicit permissions as well as permissions inherited through group membership. Administrators can leverage access controls to protect [access to organization](../organizations/accounts/connect-organization-to-azure-ad.md), project collection, team project, and team scoped data and functionality, as well as to more specific assets like version control folders and work item area paths.
 
 ## Data availability
 
