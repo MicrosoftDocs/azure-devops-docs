@@ -129,7 +129,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 	> [!TIP]  
 	> Although Project supports allocation of more than one resource to a task, Azure Boards work tracking does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a project member as a resource to those tasks that you will publish.
     >  
-    >Specify resources by their display names from Azure Active Direct (for Azure DevOps Services) or Active Directory Domain Services (for TFS). If you assign a resource by its alias or other name, you risk incurring validation errors.
+    >Specify resources by their display names from Azure Active Directory (for Azure DevOps Services) or Active Directory Domain Services (for TFS). If you assign a resource by its alias or other name, you risk incurring validation errors.
 
 7.  Save your project plan to retain scheduling and other data that Azure Boards doesn't store.
 
