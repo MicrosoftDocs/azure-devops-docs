@@ -97,6 +97,7 @@ Wikis and repository README files are great ways to share information with your 
 - [Markdown guidance](markdown-guidance.md)
 - [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
 - [Navigate in the web portal](..//navigation/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
 
 ## Resources
 

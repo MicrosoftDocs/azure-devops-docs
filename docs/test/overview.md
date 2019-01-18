@@ -71,7 +71,7 @@ testing capabilities. It includes all the capabilities
 required for the testing lifecycle - including test planning, authoring,
 execution, and tracking. Get started using the advanced manual 
 testing features with the
-[Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+[Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
 #### Test planning
 
