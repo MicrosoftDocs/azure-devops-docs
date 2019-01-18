@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
 ms.manager: douge
-ms.author: alewis
-author: andyjlewis
+ms.author: sdanie
+author: steved0x
 ms.custom: seodec18
-ms.date: 1/8/2019
+ms.date: 01/17/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-On the **Triggers** tab you specify the events that will trigger the build. You can use the same build pipeline for both CI and scheduled builds.
+On the Triggers tab, you specify the events that trigger the build. You can use the same build pipeline for both CI and scheduled builds.
 
 <a name="ci"></a>
 ## Continuous integration (CI)
@@ -56,7 +56,7 @@ trigger:
     - releases/old*
 ```
 
-If you have a lot of team members uploading changes often, then you might want to reduce the number of builds you're running.
+If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
 If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
 
 ```yaml
@@ -91,6 +91,11 @@ You can opt out of CI builds entirely by specifying `trigger: none`.
 trigger: none
 ```
 
+>[!IMPORTANT]
+>When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
+
+For more information, see [Trigger](../yaml-schema.md#trigger) in the [YAML schema](../yaml-schema.md).
+
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -103,7 +108,7 @@ Select this trigger if you want the build to run whenever someone checks in code
 
 ### Batch changes
 
-Select this check box if you have a lot of team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
+Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
 
 > You can batch changes when your code is in Git in the project or on GitHub. This option is not available if your code is in a remote Git repo or in Subversion.
 
@@ -221,6 +226,11 @@ You can opt out of pull request builds entirely by specifying `pr: none`.
 # no PR builds
 pr: none
 ```
+
+>[!IMPORTANT]
+>When you create a pull request, or push a change to the source branch of a PR, the YAML file in the source branch is evaluated to determine if a PR build should be run.
+
+For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
 ::: moniker-end
 
@@ -402,6 +412,17 @@ Your organization goes dormant five minutes after the last user signed out of Az
  * A nightly build of code in your organization will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
+
+::: moniker-end
+
+::: moniker range="vsts"
+
+### The YAML file in my branch is different than the YAML file in my master branch, which one is used?
+
+When you have configured a [CI trigger](#continuous-integration-ci) or a [PR trigger](#pull-request-validation), the YAML file that is in the branch being pushed is used.
+
+* For CI triggers, the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
+* For PR triggers, the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.
 
 ::: moniker-end
 

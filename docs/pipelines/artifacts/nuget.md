@@ -189,7 +189,17 @@ To publish NuGet packages created by your build, add the **NuGet** task and conf
 
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
 
+::: moniker range=">= tfs-2018"
+
 To publish to an external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. To connect to the feed, fill in the feed URL and the API key or token.
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+To publish to an external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service Endpoint**. Select the **NuGet** option for the service connection. To connect to the feed, fill in the feed URL and the API key or token.
+
+> If you are running TFS Update 2 or older, **Nuget** is not a service endpoint option, you must use the **Generic** connection.
 
 ---
 
