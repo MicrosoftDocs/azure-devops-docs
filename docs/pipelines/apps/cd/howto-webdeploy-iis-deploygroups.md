@@ -80,7 +80,7 @@ To deploy a database with your app:
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    
-   - **Machine tags**: `web`<p />
+   - **Required tags**: `web`<p />
    
    Then add an **IIS Web App Deploy** task to this job.
    
@@ -88,6 +88,6 @@ To deploy a database with your app:
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    
-   - **Machine tags**: `database`<p />
+   - **Required tags**: `database`<p />
    
    Then add a **SQL Server Database Deploy** task to this job.
