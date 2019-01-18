@@ -22,7 +22,7 @@ Locks or unlocks a file or folder to deny or restore the right of users to check
 
 **Required Permissions**
 
-To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md#lock-permission).
 
     tf lock itemspec /lock:(none|checkout|checkin) 
     [/workspace:workspacename] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl] 

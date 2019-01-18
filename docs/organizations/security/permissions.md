@@ -1362,7 +1362,7 @@ In version control permissions, explicit deny takes precedence over administrato
 			Lock  
 		</td>
 		<td data-th="Description">
-			Can lock and unlock folders or files. A folder or file tracked can be locked or unlocked to deny or restore a user's privileges. Privileges include checking out an item for edit into a different workspace or checking in Pending Changes to an item from a different workspace. 
+			Can lock and unlock folders or files. A folder or file tracked can be locked or unlocked to deny or restore a user's privileges. Privileges include checking out an item for edit into a different workspace or checking in Pending Changes to an item from a different workspace. For more information, see [Lock command](../../repos/tfvc/lock-command.md).
 		</td>
 	</tr>
 	<tr>
