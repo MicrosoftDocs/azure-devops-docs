@@ -48,7 +48,7 @@ Managed queries are useful for monitoring progress. All projects created with a 
 - Work I'm focused on this sprint 
 - Work I completed in the past week or sprint   
 
-As your organization scales, the number of queries can quickly multiple. It helps to implement a plan to organize the shared query set and use Favorites to quickly mark those queries that you or your team is interested in monitoring. 
+As your organization scales, the number of queries can quickly multiply. It helps to implement a plan to organize the shared query set and use Favorites to quickly mark those queries that you or your team is interested in monitoring. 
 
 Here are some of the tools you can use to manage queries: 
 - Create query folders 

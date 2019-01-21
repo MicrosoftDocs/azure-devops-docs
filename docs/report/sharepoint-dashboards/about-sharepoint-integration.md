@@ -42,7 +42,7 @@ If you are running TFS 2017 or earlier and want to configure your integration wi
 
 
 <a id="compat" />
-## TFS-SharePoint version compability  
+## TFS-SharePoint version compatibility  
 
 > [!IMPORTANT]  
 > TFS 2018 and Azure DevOps Server 2019 RC1 don't support the TFS Extension for SharePoint. For more information, see [Discontinue SharePoint integration: TFS 2017 and earlier versions](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).

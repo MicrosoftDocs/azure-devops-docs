@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 01/16/2019
 ---
 
 # Create your product backlog 
@@ -45,7 +45,7 @@ From your web browser, open your product backlog.
 
 	![Open Boards > Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To select another team, open the selector. Then select a different team, or select the ![home icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+	To select another backlog, open the selector and then choose a different team or select the ![home icon](../../_img/icons/home-icon.png) **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
