@@ -128,6 +128,8 @@
     href: reference-qa.md
   - name: Load testing FAQs
     href: load-test/reference-qa.md
+  - name: TCM Reporting FAQs
+    href: reference-tcm.md
   - name: Unable to connect
     href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json
   - name: Default permissions (Security)

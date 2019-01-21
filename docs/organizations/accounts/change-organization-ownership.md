@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/19/2018
+ms.date: 01/18/2019
 monikerRange: 'vsts'
 ---
 
@@ -50,17 +50,14 @@ Make sure the new owner has completed the following tasks:
 
    ![Select "Organization settings"](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**. The organization owner is listed under *Organization information*.
+3. Select **Overview**, and then **Change owner**.  
 
-   ![Overview pane displaying the organization owner](_img/change-organization-ownership/find-organization-owner.png)
+   ![Select Overview, and the Change owner](_img/change-organization-ownership/select-overview-change-owner.png)
 
-4. To change the organization owner, select **X**.
+4. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
-   ![Change organization owner](_img/change-organization-ownership/change-organization-owner.png)
+   ![Enter and save a new organization owner](_img/change-organization-ownership/save-new-organization-owner.png)
 
-5. Enter a new organization owner name, and then select **Save**.
-
-   ![Enter and save a new organization owner](_img/change-organization-ownership/save-new-organization-owner.png)  
 
 # [Previous navigation](#tab/previous-nav)
 
