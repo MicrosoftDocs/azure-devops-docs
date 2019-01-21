@@ -68,7 +68,7 @@ You should create branches in the following situations:
 
 -   When functionality is released to a customer and your team plans to make changes that do not affect the planned release cycle.
 
-You should not create a branching for each user story because it creates a high integration cost. Although makes branching easy, the overhead of managing branches can become significant if you have many branches.
+You should not create a branching for each user story because it creates a high integration cost. Although TFVC makes branching easy, the overhead of managing branches can become significant if you have many branches.
 
 ## How does the team manage releases from the version control perspective?
 

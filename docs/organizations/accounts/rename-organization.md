@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 01/19/2019
 monikerRange: 'vsts'
 ---
 
@@ -41,7 +41,7 @@ To change your organization URL, you need at least Basic access and organization
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**, and then choose the edit icon (pencil) next to your organization URL.
+3. Select **Overview**, enter a new name for the organization, and then select **Save**.
 
    ![Rename you organization](_img/rename-vso-organization/rename-organization-new.png)
 
@@ -55,7 +55,7 @@ To change your organization URL, you need at least Basic access and organization
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Go to  **Organization settings**.
+2. Go to **Organization settings**.
 
    ![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
 
@@ -63,7 +63,7 @@ To change your organization URL, you need at least Basic access and organization
 
    ![Change your organization name](_img/rename-vso-organization/vsorenameorganization.png)
 
-4. Confirm that you want to rename your organization. Give your organization a new name and **Save changes**.
+4. Confirm that you want to rename your organization. Enter the new name and **Save**.
 
    ![Confirm rename of your organization and provide a new organization name](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
 
