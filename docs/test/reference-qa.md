@@ -364,11 +364,18 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Where can I download Azure Test Runner client?
 
-**A:** Azure Test runner client can be downloaded from [here](http://aka.ms/ATRDownload).
+**A:** Azure Test Runner client can be downloaded from [here](https://aka.ms/ATPTestRunnerDownload).
 
 ### Q: What are the supported operating systems for Azure Test Runner client?
 
-**A:** Azure Test runner client is currently supported on only Windows. 
+**A:** Azure Test Runner client is currently supported on only Windows. 
+
+### Q: Can I opt out of telemetry for Azure Test Runner client? 
+
+**A:** No. The Azure Test Runner client does not collect any user-identifiable data and so,
+in adherance to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+no opt-out mechanism is provided. 
+
 
 <a name="runoffline"></a>
 ### Q: Can I run tests offline and then import the results?
