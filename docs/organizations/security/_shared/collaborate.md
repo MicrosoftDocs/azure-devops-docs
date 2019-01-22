@@ -62,8 +62,17 @@
 </tr>
 
 <tr>
-<td align="left">View Wikis</td>
+<td align="left">View Project Wikis</td>
 <td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+<td>![check mark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">View Code Wikis</td>
+<td></td>
 <td>![check mark](_img/checkmark.png)</td>
 <td>![check mark](_img/checkmark.png)</td>
 <td>![check mark](_img/checkmark.png)</td>
@@ -78,6 +87,16 @@
 <td> </td>
 <td>![check mark](_img/checkmark.png)</td>
 </tr>
+
+<tr>
+<td align="left">Publish Code as Wiki</td>
+<td> </td>
+<td> </td>
+<td>![check mark](_img/checkmark.png) </td>
+<td>See Note 3 </td>
+<td>See Note 3</td>
+</tr>
+
 
 
 <tr>
@@ -157,4 +176,4 @@
 #### Notes
 0. Team (chat) rooms have been deprecated for Azure DevOps Services and TFS 2018 and later versions. 
 1. Can view project READMEs, but not READMEs defined for a repository.
-
+2. Project Admin or Team Admin with contribute permission can publish code as wiki. Project Admins have this permission by default.
