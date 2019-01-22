@@ -17,8 +17,9 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to publish test results to Azure Pipelines or TFS when tests are
-executed using your choice of runner, and when results are available in any of the supported result formats.
+Use this task in a build pipeline to publish code coverage results produced when running tests to Azure Pipelines
+or TFS in order to obtain coverage reporting. The task supports popular coverage result formats such as
+[Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
 
 ::: moniker range="<= tfs-2018"
 
@@ -29,16 +30,14 @@ executed using your choice of runner, and when results are available in any of t
 The test result formats supported by the task include [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
 [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
-Other built-in tasks such as [Visual Studio Test](vstest.md) automatically publish test results to the pipeline,
-while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md),
-[Grunt](../build/grunt.md), and [Xcode](../build/xcode.md) provide this as an option within the task.
 
-The following example shows a Maven task configured to publish test results.
-
-![Open the test history page](_img/publish-test-result-maven.png)
+The [Visual Studio Test task](vstest.md) automatically publishes test results to the pipeline, while tasks such as
+[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+provide publishing results as an option within the task.
+If you are using these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
 The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
-in a build or release summary.
+in a pipeline summary.
 
 <a name="demands"></a>
 
