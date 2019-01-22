@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 12/12/2018
+ms.date: 01/18/2019
 monikerRange: 'vsts'
 ---
 
@@ -68,7 +68,7 @@ permissions. [How do I find the organization owner?](faq-delete-restore-organiza
 
    ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
-4. In the resulting dialog box, from the drop-down menu, choose your reason for deleting the organization. Then enter the name of your organization, and select **Delete**.
+4. In the resulting dialog box, enter the name of the organization, and select **Delete**.
 
    ![Screenshot of Delete Account dialog box](_img/delete-organization/delete-organization-popup.png)
 

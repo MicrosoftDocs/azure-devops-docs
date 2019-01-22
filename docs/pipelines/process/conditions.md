@@ -9,7 +9,7 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/02/2019
+ms.date: 01/18/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -185,7 +185,7 @@ Expressed as JSON, it would look like:
 
 ::: moniker range="vsts"
 
-For instance, in a YAML pipeline, you could use it like this:
+For instance, in a YAML pipeline, you could check output variables:
 
 ```yaml
 jobs:
@@ -199,6 +199,32 @@ jobs:
   dependsOn: A
   steps:
   - script: echo hello from B
+```
+
+Or you can check job status. In this example, Job A will always be skipped and Job B will run.
+Job C will run, since all of its dependencies either succeed or are skipped.
+
+```yaml
+jobs:
+- job: a
+  condition: false
+  steps:
+  - script: echo Job A
+- job: b
+  steps:
+  - script: echo Job B
+- job: c
+  dependsOn:
+  - a
+  - b
+  condition: |
+    and
+    (
+      in(dependencies.a.result, 'Succeeded', 'SucceededWithIssues', 'Skipped'),
+      in(dependencies.b.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+    )
+  steps:
+  - script: Job C
 ```
 
 ::: moniker-end

@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: alewis
 author: vtbassmatt
-ms.date: 10/10/2018
+ms.date: 01/18/2019
 monikerRange: 'vsts'
 ---
 
@@ -174,6 +174,7 @@ resources:
     - repository: templates
       type: github
       name: Contoso/BuildTemplates
+      ref: refs/tags/v1.0 # optional ref to pin to
 
 jobs:
 - template: common.yml@templates  # Template reference
@@ -186,6 +187,10 @@ After that, the same resource is used for the duration of the pipeline.
 Only the template files are used.
 Once the templates are fully expanded, the final pipeline runs as if it were defined entirely in the source repo.
 This means that you can't use scripts from the template repo in your pipeline.
+
+If you want to use a particular, fixed version of the template, be sure to pin to a ref.
+Refs are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
+If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
 ## Template expressions
 
