@@ -26,6 +26,8 @@
   items:
   - name: Create a private PowerShell repository
     href: tutorials/private-powershell-library.md
+  - name: Protect OSS packages with upstream sources
+    href: tutorials/protect-oss-packages-with-upstream-sources.md
   - name: Communicate quality with release views
     href: feeds/views.md
   - name: Move your packages to the cloud
