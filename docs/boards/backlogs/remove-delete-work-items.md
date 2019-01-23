@@ -103,8 +103,6 @@ You can access the following actions for which you have permissions. If you are 
 </table>
 
 
-You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
-
 ::: moniker-end
 
 ::: moniker range="azdevserver-2019"

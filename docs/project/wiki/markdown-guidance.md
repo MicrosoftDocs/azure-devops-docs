@@ -280,30 +280,6 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 ```
 
-## YAML tags
-
-Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
-
-Basic example:
-
-```yaml
-tag: post
-title: Hello world
-```
- 
-![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
-
-Tags with list:
-```yaml
-tags: 
-- post
-- code
-- web
-title: Hello world
-```
-
-![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
-
 ## Tables
 
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has
@@ -891,6 +867,54 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 (The ending ":::" is required to prevent a break in the page)
+
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"
+
+## YAML tags
+
+Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
+
+Basic example:
+
+```yaml
+tag: post
+title: Hello world
+```
+ 
+![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
+
+Tags with list:
+```yaml
+tags: 
+- post
+- code
+- web
+title: Hello world
+```
+
+![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
+
+::: moniker-end
+
+::: moniker range=">= azdevserver-2019"
+
+## Embed Azure Boards query results in Wiki
+
+To embed Azure Boards query results in a wiki page as a table, use the following syntax:
+
+```Boards query
+::: query-table <query-id>
+:::
+```
+
+Alternatively, you can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+
+> ![Query Results Icon](_img/query_selector_icon.png)
+
+> ![Query Selector Pane](_img/query_selector_pane.png)
+
 
 ::: moniker-end
 
