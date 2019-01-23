@@ -26,6 +26,11 @@ Permissions can be given at [Project level](../organizations/security/permission
 Stakeholders have limited access to manual testing features.
 To learn more, see [About access levels](../organizations/security/access-levels.md).
 
+These permissions assume you have either an [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/),
+[Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/) subscription
+subscription; or have installed the [Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+available from Visual Studio Marketplace.
+
 | Task | Stakeholders | Readers | Contributors | Account Owner &amp;<br/>Project Admins |
 | --- |:---:|:---:|:---:|:---:| 
 | Exploratory testing, view test runs | | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
