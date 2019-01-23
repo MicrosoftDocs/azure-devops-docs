@@ -13,7 +13,7 @@ ms.date: 01/10/2019
 monikerRange: '>= tfs-2018'
 ---
 
-# Release deployment control using ServiceNow
+# Integrate with ServiceNow change management
 
 [!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
 
