@@ -139,7 +139,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```json
 {
     "galleryproperties": {
-        "trialDays ": "30"
+        "trialDays": "30"
     } 
 }          
 ```
