@@ -157,6 +157,8 @@
     href: git-tags.md
 - name: Reference
   items:
+  - name: RPC failures & http.postBuffer
+    href: rpc-failures-http-postbuffer.md
   - name: Command reference
     href: command-prompt.md
   - name: Format comments with markdown
