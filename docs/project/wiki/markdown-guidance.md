@@ -904,8 +904,8 @@ title: Hello world
 
 To embed Azure Boards query results in a wiki page as a table, use the following syntax:
 
-```Boards query
-::: query-table <query-id>
+```boards-query
+::: query-table <queryid>
 :::
 ```
 
