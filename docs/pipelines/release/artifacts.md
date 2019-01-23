@@ -513,9 +513,6 @@ the source alias from the artifacts tab of a release pipeline; for example, when
 the name of the build pipeline and you want to use a
 source alias that reflects the name of the build pipeline.
 
-> The source alias can contain only alphanumeric characters
-and underscores, and must start with a letter or an underscore
-
 <a name="art-primary"></a>
 
 <h2 id="primary-source">Primary source</h2>
