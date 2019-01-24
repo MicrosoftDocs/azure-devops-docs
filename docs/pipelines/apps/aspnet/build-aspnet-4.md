@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.custom: seodec18
-ms.date: 08/27/2017
+ms.date: 01/24/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -33,7 +33,13 @@ This guidance explains how to build .NET Framework projects. For guidance on .NE
 
 ## Example
 
-This example shows how to build an ASP.NET project. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+This example shows how to build an ASP.NET project. To start, [import](../../../repos/git/import-git-repository.md) (into Azure Repos or TFS) or fork (into GitHub) this repo using the following clone URL:
+
+```
+https://github.com/Microsoft/devops-project-samples.git
+```
+
+The sample repo includes several different projects, and the sample application for this article is located in the following path:
 
 ```
 https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/webapp/Application
