@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Campfire with Azure DevOps Services
 description: Use Campfire with your Azure DevOps Services organization
 ms.assetid: 38a3f329-96c5-49a2-a88d-523356c496f0
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

@@ -9,7 +9,7 @@ f1_keywords:
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -51,7 +51,7 @@ You can start viewing and adding work items once you connect to a project.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Open a browser window, choose **Work**, and then **Work Items**. 
 
@@ -117,7 +117,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <table>
 <tbody valign="top">
@@ -204,7 +204,7 @@ For example, here we choose User Story.
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
@@ -250,7 +250,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!div class="mx-imgBorder"]
 ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
@@ -282,7 +282,7 @@ Use the **Discussion** section in the work item form to add and review comments 
 
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 

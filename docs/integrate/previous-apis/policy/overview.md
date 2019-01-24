@@ -4,8 +4,8 @@ description: Work with policies programmatically using the REST APIs for Team Fo
 ms.assetid: c7fc7c92-075e-4bfc-8b66-9a9a5f28bdbd
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azdevops'
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

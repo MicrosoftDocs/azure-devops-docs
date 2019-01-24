@@ -5,7 +5,7 @@ description: Understand how you can use the Analytics Service to answer quantita
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -47,7 +47,7 @@ If you want to develop your own widget based on the Analytics Service, see [Crea
 
 The easiest way to pull Azure DevOps data into Power BI is to use the [Power BI Data Connector](../powerbi/data-connector-connect.md). The Azure DevOps Power BI Data connector works with Analytics views. For more information, read [What are Analytics views](./what-are-analytics-views.md).
  
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ![Power BI Azure DevOps Connector (Beta)](../powerbi/_img/pbi-getstarted-123.png)
 

@@ -5,12 +5,12 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
 ms.custom: seodec18
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Build GitHub repositories

@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Azure Service Bus with Azure DevOps Services
 description: Use Azure Service Bus with your Azure DevOps Services organization
 ms.assetid: bffe0cee-2c1c-4e7a-adbe-f6dc6a94f735
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

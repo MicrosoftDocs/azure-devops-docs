@@ -5,7 +5,7 @@ description: Work with a hierarchical team structure to manage product and portf
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
@@ -60,7 +60,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017  <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017  <= tfs-2018 || azdevops" 
 
 In this example, we show the **Epics** portfolio backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.   
 
@@ -81,7 +81,7 @@ All work items under the Fabrikam/Account Management area path appear in their b
 ::: moniker-end  
 ---
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 > [!TIP]    
 > Program managers can also gain insight into progress across teams using [Delivery plans](review-team-plans.md). See also [Visibility across teams](visibility-across-teams.md).  
 > 
@@ -119,7 +119,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
@@ -177,7 +177,7 @@ Here, all backlog items have been assigned to feature teams. While all features 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
 

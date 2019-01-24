@@ -6,14 +6,14 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 12/4/2018
 ---
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 # About user, team, project, and organization-level settings 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
@@ -174,7 +174,7 @@ From the administrative **Project settings** pages, you can configure settings a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
@@ -336,7 +336,7 @@ From the administrative **Organization settings** pages, you can configure setti
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"   
+::: moniker range="azdevops"   
 
 **Organization settings**  
 From the **Admin settings** page, you can configure the settings shown in the following image. 
@@ -361,7 +361,7 @@ From the administrative pages for a collection, you can configure the settings s
 
 ---
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
 
 <table>

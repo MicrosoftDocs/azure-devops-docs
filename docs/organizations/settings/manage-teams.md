@@ -5,7 +5,7 @@ description: Get started as a team admin to manage team resources and tools in A
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -62,28 +62,28 @@ For details, see [Define area paths and assign to a team](set-area-paths.md) and
 
 ## Configure team backlogs and other common settings 
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015"  
 Team administrators can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. Also, admins can choose whether bugs are treated similar to user stories and requirements or as tasks. 
 
 Team admins can also choose which days are non-working days for the team. Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown.  
-::: moniker-end 
+::: moniker-end  
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015"  
 You can configure most of your team settings from the common configuration dialog. 
-::: moniker-end 
+::: moniker-end  
 
-::: moniker range="tfs-2015"  
+::: moniker range="tfs-2015"  
 > [!NOTE]
 > **Feature availability:** The common configuration dialog is available for TFS 2015.1 and later versions.  
-::: moniker-end 
+::: moniker-end  
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015"      
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
-::: moniker-end 
+::: moniker-end   
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azdevserver-2019"  
 
 0. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
 
@@ -106,15 +106,15 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
 
-::: moniker-end  
+::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 
 0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
@@ -128,24 +128,24 @@ You can configure most of your team settings from the common configuration dialo
 1. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
-	::: moniker range="tfs-2017"  
+	::: moniker range="tfs-2017"  
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, open common configuration settings](_img/configure-team/open-settings-vsts-horz.png)
-	::: moniker-end  
-	::: moniker range="tfs-2015"  
+	::: moniker-end  
+	::: moniker range="tfs-2015"  
 	![Kanban board, open common configuration settings](_img/configure-team/open-settings-tfs-2015-horz.png)
-	::: moniker-end  
+	::: moniker-end  
 2. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
 
 	::: moniker range=">= tfs-2017"  
 	> [!div class="mx-imgBorder"]  
 	> ![Common configuration dialog team settings]../.../boards/boards/_img/customize-cards/common-config-141.png)
-	::: moniker-end  
-	::: moniker range="tfs-2015"  
+	::: moniker-end  
+	::: moniker range="tfs-2015"  
 	![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
-	::: moniker-end 
+	::: moniker-end  
 
-::: moniker-end 
+::: moniker-end   
 
 
 ::: moniker range="azdevserver-2019"
@@ -154,7 +154,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ---
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017"      
 
 For details on each configuration option, see one of these topics:  
 
@@ -208,10 +208,10 @@ For details on each configuration option, see one of these topics:
 </tbody>
 </table>
 
-::: moniker-end 
+::: moniker-end   
 
 
-::: moniker range="tfs-2015"  
+::: moniker range="tfs-2015"      
 
 For details on each configuration option, see one of these topics:  
 
@@ -261,7 +261,7 @@ For details on each configuration option, see one of these topics:
 </table>
 
 
-::: moniker-end 
+::: moniker-end   
 
 
 

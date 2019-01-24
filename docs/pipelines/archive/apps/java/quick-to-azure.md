@@ -6,11 +6,11 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E67B2B25-5928-4784-A6CD-E998F4FDE620
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 06/27/2017
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 

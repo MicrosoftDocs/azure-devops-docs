@@ -6,16 +6,16 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: KathrynEE
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ms.date: 07/27/2018
 ---
 
 # Scale & configure teams 
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Give your teams the autonomy they need as your organization grows. Add teams to give each team their set of Agile tools which they can configure their way.
 

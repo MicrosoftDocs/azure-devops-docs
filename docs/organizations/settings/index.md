@@ -7,7 +7,7 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
@@ -16,7 +16,7 @@ ms.date: 01/15/2019
 
 # Settings for projects, collections, and organizations
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Define area and iteration paths, add teams, and configure additional team, project, and organizational-level resources. For a comprehensive index of all configurable settings, see [About user, team, project, and collection-level settings](about-settings.md).
 

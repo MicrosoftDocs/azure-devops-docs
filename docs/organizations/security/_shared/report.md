@@ -1,6 +1,6 @@
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <table>
 <tr valign="bottom">
@@ -91,7 +91,7 @@
 **Notes:**
 1. Public project Stakeholders have full access to all features. 
 
-::: moniker-endÂ 
+::: moniker-end   
 
 
 ::: moniker range="<= azdevserver-2019"
@@ -171,4 +171,4 @@
 </tbody>
 </table>
 
-::: moniker-endÂ 
+::: moniker-end   

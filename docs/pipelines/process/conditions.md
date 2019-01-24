@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 01/18/2019
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 On each step and job, you can specify the conditions under which the step or job will run.
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
@@ -183,7 +183,7 @@ Expressed as JSON, it would look like:
 }
 ```
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 For instance, in a YAML pipeline, you could check output variables:
 

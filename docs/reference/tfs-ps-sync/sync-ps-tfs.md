@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops 
 ms.assetid: 0CDB65B6-FA2D-41D1-8E1E-41E38F235762  
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
 ms.date: 09/19/2017  

@@ -5,7 +5,7 @@ title: Data and Setting Storage | Extensions for Azure DevOps Services
 description: Add an action for your extension that extends Azure DevOps Services.
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

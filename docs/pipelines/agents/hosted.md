@@ -6,11 +6,11 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 07/11/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Microsoft-hosted agents

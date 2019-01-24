@@ -5,7 +5,7 @@ description: Filtered set of data based on the Analytics Service for Azure DevOp
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

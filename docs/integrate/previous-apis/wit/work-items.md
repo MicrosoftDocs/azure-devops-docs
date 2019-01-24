@@ -4,8 +4,8 @@ description: Work with work items programmatically using the REST APIs for Team 
 ms.assetid: 2762B459-BD46-493C-998F-A14EE1DA4C94
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azdevops'
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

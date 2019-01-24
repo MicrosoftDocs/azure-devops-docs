@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
 robots: NOINDEX, NOFOLLOW
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -141,7 +141,7 @@ A team refers to a group of project members who work in a particular product are
 
 The Agile tools Boards, Backlogs, Sprints, and Plans rely on team configurations. For example, if you want to add a Kanban board or product backlog, you define a team. For more information on teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
-::: moniker range="vsts"   
+::: moniker range="azdevops"   
 Your view and options available differ somewhat depending on whether you [enabled the New Navigation feature](../../project/navigation/preview-features.md). This feature displays a vertical navigation interface along with several changes to navigation of Agile tools. 
 ::: moniker-end  
 
@@ -162,7 +162,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"   
+::: moniker range="azdevops"   
 > [!div class="mx-imgBorder"]
 > ![Work>Work Items ](../work-items/_img/view-add/view-work-items-hub-s136.png)
 ::: moniker-end
@@ -196,7 +196,7 @@ Boards present work items as cards and support quick status updates through a dr
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
 ![Kanban board, Agile template](../boards/_img/kanban-basics-intro.png)     
 ::: moniker-end   
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
@@ -220,13 +220,13 @@ Backlogs present work items as lists. A product backlog represents your project 
 ![New Navigation, Work>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
 ::: moniker-end
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 !["Web portal, choose Work>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range="<= tfs-2015"
@@ -255,7 +255,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team assi
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 !["Web portal, choose Work>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -287,7 +287,7 @@ Delivery plans display work items as cards along a timeline or calendar view. Th
 ![Moving a card to a different iteration](../plans/_img/plans_move1.png)
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## GitHub integration 
 

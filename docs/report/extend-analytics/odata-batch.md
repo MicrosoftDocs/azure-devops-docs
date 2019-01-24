@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Guidelines for extension developers who want to learn how to write good OData queries 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE
@@ -24,7 +24,7 @@ Batch requests are part of the OData spec, and the Analytics service for Azure D
 ## The Analytics $batch endpoint
 The $batch endpoint is located at:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

@@ -5,7 +5,7 @@ description: Provides the list of errors when the New Team Project Wizard unable
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6fda9d67-bbdc-432d-949a-2814e499b2c3
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

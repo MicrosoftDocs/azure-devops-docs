@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
@@ -41,7 +41,7 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 Select **Permissions**.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -55,7 +55,7 @@ Select **Permissions**.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azdevops"
 
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
 

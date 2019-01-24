@@ -5,7 +5,7 @@ description: Choose which backlog and portfolio backlogs are active for your tea
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -19,7 +19,7 @@ ms.date: 09/24/2018
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 If you want additional portfolio backlogs, see the following topics based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)  
 - **Hosted XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
@@ -49,7 +49,7 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops" 
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -69,8 +69,8 @@ You can change the setting from a backlog or board view. Here we show how to cha
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)

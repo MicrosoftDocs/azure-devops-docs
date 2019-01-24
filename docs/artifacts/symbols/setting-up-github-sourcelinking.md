@@ -4,7 +4,7 @@ description: Using build to index and publish symbols from an Azure DevOps Servi
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 03/02/2018
 ms.author: elbatk
 author: elbatk

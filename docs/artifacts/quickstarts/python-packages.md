@@ -4,11 +4,11 @@ description: Quickly start hosting python packages in Azure DevOps Services
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 10/31/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Get started with Python packages in Azure Artifacts

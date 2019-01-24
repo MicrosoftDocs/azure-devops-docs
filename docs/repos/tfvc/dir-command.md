@@ -5,7 +5,7 @@ description: Displays all or some of the contents of the server for Team Foundat
 ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

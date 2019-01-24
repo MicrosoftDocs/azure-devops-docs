@@ -5,12 +5,12 @@ description: Use Work Item Search to search across all work item fields over one
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: 
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 

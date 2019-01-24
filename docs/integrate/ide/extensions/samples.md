@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Extensibility samples on GitHub
 description: Find sample code in our Git repository or other locations.
 ms.assetid: B3B400BD-006C-481A-A156-6847CAB00D4B
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk

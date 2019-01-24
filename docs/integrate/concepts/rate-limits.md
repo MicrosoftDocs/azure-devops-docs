@@ -6,11 +6,11 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/07/2017
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 <!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->

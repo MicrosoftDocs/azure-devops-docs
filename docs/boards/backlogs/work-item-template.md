@@ -5,7 +5,7 @@ description: Add and manage work item templates to pre-populate fields in work i
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -164,7 +164,7 @@ The main method for adding a work item using a template is to open the template 
 <a id="team-services-copy-link" /> 
 ### Copy the link to a template 
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 # [Browser](#tab/browser)
 

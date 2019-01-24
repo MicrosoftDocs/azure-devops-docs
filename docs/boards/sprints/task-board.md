@@ -5,7 +5,7 @@ description: Implement scrum using the sprint taskboard in Azure Boards & Team F
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -85,7 +85,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
 
@@ -121,7 +121,7 @@ Each team can customize their **Taskboard** in the following ways:
 
 Unlike the Kanban board for a product backlog, you can't add additional columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. This would  update the columns for the **Taskboard** for all teams within the project.
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
 - [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
@@ -182,12 +182,12 @@ With this view, you can quickly see which items are nearing completion and which
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops" 
 You can expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 ![Group by backlog items, show All team members](_img/taskboard/group-items-all.png)
 
@@ -223,13 +223,13 @@ To filter on the tasks for a specific team member, choose the ![ ](../../_img/ic
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!div class="mx-imgBorder"]
 > ![taskboard, filter on a person](_img/taskboard/group-by-people.png)
 ::: moniker-end
@@ -273,7 +273,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 

@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

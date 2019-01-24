@@ -5,7 +5,7 @@ title: Publishing and Packaging an Extension from the Command Line | Extensions 
 description: How to package and publish your Azure DevOps Services Extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

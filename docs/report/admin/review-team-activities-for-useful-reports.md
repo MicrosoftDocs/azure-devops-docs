@@ -6,7 +6,7 @@ ms.assetid: 46456FBF-EECC-4096-9A98-3A9457F97EB2
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azdevserver-2019" 

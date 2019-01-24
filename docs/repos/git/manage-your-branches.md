@@ -5,7 +5,7 @@ description: Find your work and search for branches using the branches page in A
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -24,7 +24,7 @@ Customize the view to track the branches you care most about so you can stay on 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 
@@ -116,7 +116,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
 
