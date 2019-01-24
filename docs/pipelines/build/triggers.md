@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 01/17/2019
+ms.date: 01/23/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -209,7 +209,7 @@ pr:
     - docs/README.md
 ```
 
-You can specify whether additional pushes to a PR, will cancel in-progress runs for the same PR. The default is `true`.
+You can specify whether additional pushes to a PR should cancel in-progress runs for the same PR. The default is `true`.
 
 ```yaml
 # auto cancel false
@@ -258,7 +258,7 @@ If you choose to build fork pull requests, you may also choose whether or not to
 ::: moniker range="vsts"
 
 Scheduled builds are not yet supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
+After you create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
 
 ::: moniker-end
 
@@ -321,7 +321,7 @@ Otherwise, you can clear this check box and specify the paths in the trigger.
 
 ### How it affects your developers
 
-When a developers try to check-in, they are prompted to build their changes.
+When developers try to check-in, they are prompted to build their changes.
 
 ![Gated check-in prompt](_img/triggers/tfvc-gated-check-in-prompt.png)
 
@@ -351,7 +351,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 # [YAML](#tab/yaml)
 
 Build completion triggers are not yet supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a build completion trigger.
+After you create your YAML build pipeline, you can use the designer to specify a build completion trigger.
 
 # [Designer](#tab/designer)
 
@@ -368,7 +368,7 @@ After you add a **build completion** trigger, select the **triggering build**. I
 
 ### Download artifacts from the triggering build
 
-In many cases you'll want to download artifacts from the triggering build. To do this:
+In many cases, you'll want to download artifacts from the triggering build. To do this:
 
 1. Edit your build pipeline.
 
