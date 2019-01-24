@@ -5,7 +5,7 @@ description: Workspaces Command
 ms.assetid: 4b6f05fb-0520-44f8-8a31-7108ff956a72
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

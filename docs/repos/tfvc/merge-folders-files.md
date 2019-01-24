@@ -5,7 +5,7 @@ description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

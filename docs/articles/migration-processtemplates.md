@@ -5,7 +5,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 monikerRange: '>= tfs-2013'

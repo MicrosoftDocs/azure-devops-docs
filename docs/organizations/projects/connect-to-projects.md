@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.date: 12/19/2018 
@@ -43,7 +43,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 
 2.  Open a browser window and enter a URL that uses the following form:  
 
-	::: moniker range="vsts"
+	::: moniker range="azdevops"
 	<pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
 	::: moniker-end
 
@@ -224,7 +224,7 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Azure DevOps Services provides access to the first 5 account users free. After that, you need to [pay for more users](../../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 

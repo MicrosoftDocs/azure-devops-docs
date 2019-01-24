@@ -5,7 +5,7 @@ description: Get notified when changes occur to source code, git, work items, an
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
@@ -34,12 +34,12 @@ A subscription lets you control what your team should be notified about and how 
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
 	::: moniker-end
 
-    ::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+    ::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
     [!INCLUDE [new-navigation-not-supported](../_shared/new-navigation-not-supported.md)]
     ::: moniker-end
 
 	# [Previous navigation](#tab/previous-nav)  
-	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
    ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)  
 	::: moniker-end  
 
@@ -57,7 +57,7 @@ A subscription lets you control what your team should be notified about and how 
 	::: moniker-end  
 
 	# [Previous navigation](#tab/previous-nav)  
-	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
    ![New subscription](_img/new-subscription.png)
 	::: moniker-end  
 

@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azdevops'
 title: Projects | REST API Reference for Team Foundation Server
 description: Work with projects programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 537E1A1F-DAE8-4110-AF0F-63D5D52F2AB6
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

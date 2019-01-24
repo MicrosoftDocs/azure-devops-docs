@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 01/18/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Change the organization owner in Azure DevOps

@@ -5,7 +5,7 @@ description: How to use npm packages build and release task for Azure Pipelines 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 ms.date: 05/16/2018
 monikerRange: '>= tfs-2017'
@@ -178,7 +178,7 @@ To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

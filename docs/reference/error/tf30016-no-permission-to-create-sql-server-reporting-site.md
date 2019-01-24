@@ -5,7 +5,7 @@ description: Occurs when the permissions granted to the user account are not suf
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: edb242fd-5839-440d-9ee1-f24e0b279137
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

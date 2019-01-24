@@ -5,12 +5,12 @@ description: Index to topics for creating and working in public projects for Azu
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 01/15/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Public Projects

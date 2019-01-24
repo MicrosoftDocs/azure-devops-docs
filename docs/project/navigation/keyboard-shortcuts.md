@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: reference
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/18/2017
@@ -86,7 +86,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Work Items 
 

@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 * You must have an organization created in Azure DevOps Services. If you haven't created one yet, [do that now](/azure/devops/user-guide/sign-up-invite-teammates).  
 * Users granted Basic or Stakeholder access are automatically granted permission to create, edit, and delete processes, change the process of a project, and administer process permissions. To change these defaults, you can restrict access by setting permissions at the organization level and set permissions explicitly. 

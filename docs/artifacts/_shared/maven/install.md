@@ -6,7 +6,7 @@ Install Maven artifacts from your feed by using the Maven client.
 
 The most common way to install a Maven artifact is as a dependency of another artifact.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. Create a Maven artifact by using the following command: 
 

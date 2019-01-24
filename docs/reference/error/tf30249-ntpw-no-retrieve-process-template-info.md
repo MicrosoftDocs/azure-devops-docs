@@ -4,7 +4,7 @@ description: Occurs an error when the New Team Project Wizard cannot download th
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3bdffbfa-9b0d-4222-8630-5e76330a511e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

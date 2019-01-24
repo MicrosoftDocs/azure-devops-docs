@@ -5,7 +5,7 @@ description: Data available for reporting purposes using the Analytics Service f
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe   
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

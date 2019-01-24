@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azdevops'
 title: Git Commits | REST API Reference for Team Foundation Server
 description: Work with Git commits programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: DD768682-3DC8-4E00-85E8-699633A93EB2
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

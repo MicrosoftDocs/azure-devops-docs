@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -75,7 +75,7 @@ You only have access to those actions that are supported on your platform and fo
 
 You can access the following actions for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <table>
 <tbody valign="top">
@@ -218,7 +218,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 
 ## Prerequisites  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 

@@ -6,7 +6,7 @@ description: FAQs to support getting started using the hosted cloud offering of 
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 ms.date: 12/06/2018
 monikerRange: '>= tfs-2013'

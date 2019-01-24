@@ -5,7 +5,7 @@ ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

@@ -5,11 +5,11 @@ description: Learn how to add your Organization’s privacy URL to comply with t
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/21/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Add a privacy URL for your organization

@@ -4,7 +4,7 @@ description: TFS SharePoint integration - Disable SharePoint integration after T
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelliauthor: KathrynEE
 ms.date: 09/28/2017

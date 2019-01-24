@@ -6,12 +6,12 @@ description: Get an integrated set of features to help you plan, code, collabora
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 01/15/2019
 ms.topic: overview
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # What is Azure DevOps Services?

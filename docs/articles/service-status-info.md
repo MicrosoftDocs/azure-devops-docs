@@ -5,11 +5,11 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 09/19/2018
 ms.author: ahomer
 author: alexhomer1
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Azure DevOps Service Status

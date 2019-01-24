@@ -5,10 +5,10 @@ description: Learn how Azure Pipelines works with your code and tools to automat
 ms.topic: overview
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: douge
-ms.author: douge
+ms.manager: jillfra
+ms.manager: elbatk
 ms.date: 01/16/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Key concepts for new Azure Pipelines users

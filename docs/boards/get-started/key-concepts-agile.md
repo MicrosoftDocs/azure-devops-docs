@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
 robots: NOINDEX, NOFOLLOW
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +15,9 @@ monikerRange: '>= tfs-2013'
 ms.date: 01/11/2019
 ---
 
+
 # Key concepts and terms used for Azure Boards
+
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

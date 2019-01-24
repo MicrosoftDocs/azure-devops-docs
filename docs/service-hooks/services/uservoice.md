@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: UserVoice with Azure DevOps Services
 description: Use UserVoice with your Azure DevOps Services organization
 ms.assetid: c0f08f71-39cd-48ac-aff0-0618c57229c7
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

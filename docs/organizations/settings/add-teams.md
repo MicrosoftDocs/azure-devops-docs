@@ -6,7 +6,7 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -54,7 +54,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 
 # [New navigation](#tab/new-nav)  
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 0. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -84,7 +84,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
@@ -120,7 +120,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013  <= tfs-2015"
+::: moniker range=">= tfs-2013 <= tfs-2015"
 <a id="add-team-tfs-2015" />
 
 1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
@@ -152,7 +152,7 @@ If you're moving from one team to two teams, team members already have access to
 
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 > [!NOTE]   
 > You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
 ::: moniker-end 
@@ -171,7 +171,7 @@ Now that your two feature teams are configured, you'll want to move existing wor
 
 1.	The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
 
-	::: moniker range="vsts"  
+	::: moniker range="azdevops"  
 	> [!div class="mx-imgBorder"]  
 	>![Web portal, Queries page, Bulk modify select work items](_img/add-team/query-bulk-edit-area-path.png)
 	::: moniker-end  
@@ -180,7 +180,7 @@ Now that your two feature teams are configured, you'll want to move existing wor
 	::: moniker-end  
 2.	After you bulk modify, do a bulk save.  
 
-	::: moniker range="vsts"  
+	::: moniker range="azdevops"  
 	> [!div class="mx-imgBorder"]  
 	>![Bulk save edited work items](_img/add-team/query-bulk-save.png)
 	::: moniker-end  
@@ -195,25 +195,25 @@ One last step in moving from one team to two teams requires configuring the defa
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 0. Open **Project Settings>Team Configuration** settings page for the default project team, and change the setting as shown.  
 	> [!div class="mx-imgBorder"]  
-	> ![New nav, default project team configuration , Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
+	> ![New nav, default project team configuration, Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
 
 0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Product backlog, default project team](_img/add-team/product-backlog-default-team.png)
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017"
 0. Open the **Work>Areas** settings page for the default project team, and change the setting as shown.  
 
 	> [!div class="mx-imgBorder"]  
@@ -224,9 +224,9 @@ One last step in moving from one team to two teams requires configuring the defa
 	> [!div class="mx-imgBorder"]  
 	> ![Backlog view of default team](_img/add-team/product-backlog-default-team-horz.png)  
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015"  
 0. Open the **Areas** settings page for the default project team, and change the setting as shown.  
 
 	![Web portal, Admin context, default project, Exclude work items defined in sub-area paths](_img/add-team/multiple-teams-exclude-sub-area-paths.png)  
@@ -235,7 +235,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	![Web portal, Backlog view of default team](_img/add-team/multiple-teams-product-backlog-default-team.png)  
 
-::: moniker-end  
+::: moniker-end
 
 --- 
 
@@ -243,7 +243,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"
 
 0. To delete a team, open **Project Settings>Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 	> [!div class="mx-imgBorder"]  
@@ -256,16 +256,16 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	![Delete team confirmation dialog](_img/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013"  
+::: moniker range=">= tfs-2013"
 
 1. To delete a team, open **Project Settings>Work>Overview**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 
@@ -278,7 +278,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	![Delete team confirmation dialog](_img/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
-::: moniker-end  
+::: moniker-end
 
 ---
 
@@ -295,13 +295,13 @@ For teams to work autonomously, you may want to provide them with permissions th
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
 
-::: moniker range="tfs-2018" 
+::: moniker range="tfs-2018 || azdevserver-2019" 
 
-If your TFS deployment is integrated withSQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
+If your Azure DevOps Server or TFS deployment is integrated with SQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2017" 
+::: moniker range="<= tfs-2017" 
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
 

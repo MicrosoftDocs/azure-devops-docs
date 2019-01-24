@@ -4,12 +4,12 @@ description: Share your NuGet, npm, or Maven packages from Azure DevOps Services
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 02/16/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 

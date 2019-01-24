@@ -9,7 +9,7 @@ ms.assetid: bf316d3c-5d74-42d4-90f1-bb411b0bf13d
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016
-ms.manager: douge
+ms.manager: jillfra
 ---
 
 # Code Coverage Excel Report

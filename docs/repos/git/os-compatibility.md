@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Git Cross-Platform Compatibility
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 #### Azure Repos
 
@@ -93,7 +93,7 @@ The Windows, Mac OS, and Linux operating systems each have various naming limita
 
 For example, let's say a developer on one platform commits a change to the shared repository that contains a file name or path length that is invalid on another platform. Later, another developer attempts to checkout that commit on a platform where the contents are invalid. This results in a corrupted working directory creating the potential to damage your repo with corrupted data.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Azure Repos offers file name and max path [repository settings](repository-settings.md) that block pushes containing commits that violate one or more of the below limitations.
 

@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -24,7 +24,7 @@ The Agile process supports the following work item types (WITs) to plan and trac
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions.  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]  
 > You can customize the work tracking system for your project based on the Agile process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end

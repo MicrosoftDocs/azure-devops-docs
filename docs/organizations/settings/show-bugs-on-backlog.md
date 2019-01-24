@@ -5,7 +5,7 @@ description: Choose how bugs appear on Agile tools in Azure Boards & Team Founda
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -36,7 +36,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -54,15 +54,15 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018"
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017"
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -80,9 +80,9 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 0. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 Requires TFS 2013.4 or later version. 
 
@@ -119,7 +119,7 @@ Bugs are a common item that teams want to track, and choose how they track it. S
 
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,  
 - For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).

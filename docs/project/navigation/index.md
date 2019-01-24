@@ -6,7 +6,7 @@ ms.custom: "Navigation, seodec18"
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on the navigation selected: 
 - **New navigation**: **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**
@@ -64,7 +64,7 @@ Here's what you need to know to get up and running using the web portal.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams 
@@ -82,7 +82,7 @@ Here's what you need to know to get up and running using the web portal.
 ::: moniker-end
 ---
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]  
 > Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -100,7 +100,7 @@ In **New navigation**, you select services&mdash;such as **Boards**, **Repos**, 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 With the previous navigation enabled, you select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
 
 ![Previous navigation experience with horizontal navigation](_img/gif-images/horizontal-nav.gif)
@@ -121,7 +121,7 @@ To start planning and tracking work, see [About Agile tools](../../boards/get-st
 
 ## Connect to the web portal, user accounts and licensing  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 You connect to the web portal through a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/accounts/add-organization-users.md) can connect. This is typically done by the organization owner. 
 

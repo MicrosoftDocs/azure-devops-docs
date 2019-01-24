@@ -176,7 +176,7 @@ To learn more, see [Testing overview](../test/index.md).
 
 The following services work across the previously mentioned services to support:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 - Team dashboards
 - Project wiki
@@ -186,7 +186,7 @@ The following services work across the previously mentioned services to support:
 - Ability to request and manage feedback
 - Analytics service, analytic views, and Power BI reporting
 
-::: moniker-endÂ Â 
+::: moniker-end  
 
 ::: moniker range="tfs-2018"
 
@@ -198,7 +198,7 @@ The following services work across the previously mentioned services to support:
 - Ability to request and manage feedback
 - SQL Server Reporting
 
-::: moniker-endÂ Â 
+::: moniker-end  
 
 ::: moniker range="tfs-2017"
 
@@ -212,7 +212,7 @@ The following services work across the previously mentioned services to support:
 
 > [!NOTE]  
 > Team rooms are deprecated for TFS 2017.2. Instead, we recommend that you [use service hooks to integrate with Microsoft Teams](../service-hooks/services/teams.md).
-::: moniker-endÂ Â 
+::: moniker-end  
 
 ::: moniker range="tfs-2015"
 
@@ -223,7 +223,7 @@ The following services work across the previously mentioned services to support:
 - Team (chat) rooms
 - SQL Server Reporting
 
-::: moniker-endÂ Â 
+::: moniker-end  
 
 ::: moniker range="tfs-2013"
 

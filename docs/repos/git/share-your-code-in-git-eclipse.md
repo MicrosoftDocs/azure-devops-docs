@@ -5,7 +5,7 @@ description: Share code in Git using Eclipse
 ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart

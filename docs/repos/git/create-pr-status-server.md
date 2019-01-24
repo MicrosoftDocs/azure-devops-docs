@@ -5,7 +5,7 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: jillfra
 ms.author: mmitrik
 author: mmitrik
 ms.topic: conceptual

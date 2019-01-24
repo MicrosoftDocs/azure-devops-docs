@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 2BFC43A2-4F6C-4A5C-86EE-6DDA8733829D
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 12/20/2017
@@ -43,13 +43,13 @@ https://github.com/adventworks/net-sample
 
 # [GitHub repo](#tab/github)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 **TFS**: Does not apply.
 

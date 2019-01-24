@@ -6,7 +6,7 @@ ms.custom: "dashboards, seodec18"
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -34,7 +34,7 @@ The Overview page provides access to a default team dashboard which you can cust
 ::: moniker-end
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]  
 ::: moniker-end
 
@@ -82,7 +82,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
 
@@ -106,7 +106,7 @@ Open a web browser, connect to your project, and choose **Dashboards**.
 ![Dashboards directory, previous navigation](_img/dashboards-go-to.png) 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"  
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 ::: moniker-end  
 

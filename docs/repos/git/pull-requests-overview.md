@@ -5,7 +5,7 @@ description: Learn about pull requests in Azure DevOps Services & TFS
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: overview

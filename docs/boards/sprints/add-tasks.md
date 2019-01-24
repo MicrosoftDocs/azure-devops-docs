@@ -5,7 +5,7 @@ description: Add tasks to user stories assigned to a sprint or iteration working
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -73,7 +73,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -145,7 +145,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 You can add tasks from the sprint **Backlog** or **Board** (aka taskboard). 
 
@@ -245,7 +245,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 ![Unparented tasks](_img/ALM_TB_UnparentedTasks_CO.png)
 

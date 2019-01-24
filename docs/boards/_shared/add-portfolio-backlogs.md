@@ -7,7 +7,7 @@ ms.topic: include
 
 If you need more than two portfolio backlogs, you can add up to two more for a total of five backlog levels. 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 You can add them by customizing your process, adding new work item types, and then configuring your backlogs and boards. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) and [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 
 ::: moniker-end

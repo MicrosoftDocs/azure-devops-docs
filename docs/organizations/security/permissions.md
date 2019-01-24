@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -21,7 +21,7 @@ ms.date: 12/05/2018
 
 This article provides a comprehensive reference for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Work tracking, dashboard, & analytics permissions  |  
@@ -1121,7 +1121,7 @@ You manage the security of each [Git repository](set-git-tfvc-repository-permiss
 > If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
 ::: moniker-end
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 
 > [!div class="mx-imgBorder"]  
 > ![Git repository permissions dialog](_img/permissions/git-repo-permissions-vsts.png)
@@ -1710,12 +1710,12 @@ Consider granting the Contribute permissions to users or groups that require the
 ## Delivery Plans (object-level)   
 
 You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!NOTE]  
 > For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 <table valign="top" width="100%">
@@ -1747,7 +1747,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 <a id="inherited-process">  </a>
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 
 ## Process (object-level)   
@@ -1897,7 +1897,7 @@ In addition, you can assign approvers to specific steps within a release definit
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release definition, or environment level.
 
->  [!div class="mx-tdCol2BreakAll"]  
+>  [!div class="mx-tdCol2BreakAll"] 
 > | Permission | Description | Scopes |
 > |------------|-------------|--------|
 > | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release definition, Environment |

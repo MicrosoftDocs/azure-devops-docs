@@ -5,7 +5,7 @@ description: Steps to add a custom Analytics view to for easy generation of Powe
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

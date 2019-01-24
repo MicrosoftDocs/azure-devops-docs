@@ -5,7 +5,7 @@ ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

@@ -5,7 +5,7 @@ description: Update the ProcessConfiguration bug category states to support code
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/20/2017

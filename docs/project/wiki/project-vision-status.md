@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
@@ -15,7 +15,7 @@ ms.date: 12/17/2018
 
 # Quickstart: Share your project mission, view project activity
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= tfs-2018"
 
@@ -52,7 +52,7 @@ From the project home page, share your project with your team, add project membe
 # [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azdevserver-2019"
-  
+      
 From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
@@ -74,12 +74,12 @@ To support your project mission, choose a README file that you maintain in a pro
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
 ![Open Project Summary, previous nav](_img/project-vision-status-project-home-page.png)  
@@ -140,12 +140,12 @@ You can share your project and objective, as well as ways for team members to co
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range="tfs-2018 || azdevops"
 
 1. Open the Project home page.
 
@@ -165,7 +165,7 @@ You can share your project and objective, as well as ways for team members to co
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015  <= tfs-2017"  
+::: moniker range=">= tfs-2015 <= tfs-2017"  
 
 1. You can start editing directly from the Welcome page.
 
@@ -236,12 +236,12 @@ For projects that selected TFVC for version control, the README.md file needs to
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 
 1. Open the Project home page.
 
@@ -282,7 +282,7 @@ To add users to the project, choose the ![ ](_img/share-project/add-members-new-
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).  
+To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).    
 
 ![Project Home Page, Activity](_img/project-home-page-activity.png)  
 
@@ -323,7 +323,7 @@ You can change the repository used to support your project vision, including poi
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 
 1. From your project home page, choose **Change**.
 

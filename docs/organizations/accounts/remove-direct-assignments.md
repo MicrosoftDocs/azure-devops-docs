@@ -6,11 +6,11 @@ description: To manage a user's resources only by the groups that they're in, yo
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Remove direct assignments from users in Azure DevOps

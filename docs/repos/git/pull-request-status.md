@@ -5,7 +5,7 @@ description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

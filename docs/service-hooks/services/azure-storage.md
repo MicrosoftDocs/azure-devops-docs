@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Azure Storage with Azure DevOps Services
 description: Use Azure Storage with your Azure DevOps Services organization
 ms.assetid: ca016666-8e07-42a6-a6c5-09fceba179da
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

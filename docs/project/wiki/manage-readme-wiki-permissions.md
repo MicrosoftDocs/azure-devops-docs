@@ -7,7 +7,7 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
