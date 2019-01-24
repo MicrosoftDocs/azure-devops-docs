@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: douge
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 01/15/2019
+ms.date: 01/23/2019
 monikerRange: 'vsts'
 ---
 
@@ -316,7 +316,7 @@ Full syntax:
 
 ```yaml
 pr:
-  autoCancel: boolean # indicates whether additional pushes to a PR, will cancel in-progress runs for the same PR. Defaults to true
+  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
