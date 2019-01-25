@@ -4,7 +4,7 @@ description: Data types supported by work item fields to support queries, report
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/08/2017

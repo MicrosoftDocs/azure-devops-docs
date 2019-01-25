@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/21/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Quickstart: Set up billing for your organization

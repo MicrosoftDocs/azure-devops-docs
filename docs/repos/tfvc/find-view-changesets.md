@@ -5,7 +5,7 @@ description: Find and view changesets
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

@@ -4,11 +4,11 @@ ms.technology: devops-ecosystem
 title: Azure DevOps Services Extension Data Service Example
 description: A sample that shows how to use a extension data service with an Azure DevOps Services extension
 ms.assetid: 4e66185f-a91d-4e2b-82b8-fd43f3db9fb6
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---

@@ -5,7 +5,7 @@ description: Use Office Excel or Project to track work in Azure Boards, Azure De
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

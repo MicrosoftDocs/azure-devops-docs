@@ -5,7 +5,7 @@ description: Map a project collection to an instance of Project Web Access or Pr
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d873f68e-3e88-4daa-9c28-a192dab86765
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017

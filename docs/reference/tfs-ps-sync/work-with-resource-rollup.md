@@ -4,7 +4,7 @@ titleSuffix: TFS
 description: Work with resource rollup in enterprise projects when synchronizing data between Team Foundation Server & Project Server
 ms.technology: devops-agile
 ms.assetid: 72efdffb-ea99-4b89-b681-53bc1dcb2ac9
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017

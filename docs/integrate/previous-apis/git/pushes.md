@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azdevops'
 title: Git Pushes | REST API Reference for Team Foundation Server
 description: Work with Git pushes programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 20422F1A-30A6-405F-AAE2-BABDA6371E40
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

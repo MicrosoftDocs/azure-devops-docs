@@ -5,7 +5,7 @@ ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

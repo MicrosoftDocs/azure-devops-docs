@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
@@ -111,7 +111,7 @@ On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 **Example with multiple match patterns:**
 
@@ -156,7 +156,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -223,7 +223,7 @@ These files are copied to the staging directory:
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 **Example with multiple match patterns:**
 
@@ -241,7 +241,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -292,7 +292,7 @@ See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

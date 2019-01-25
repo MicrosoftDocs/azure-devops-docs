@@ -6,10 +6,10 @@ ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: dakale
 ms.date: 01/14/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Service Containers

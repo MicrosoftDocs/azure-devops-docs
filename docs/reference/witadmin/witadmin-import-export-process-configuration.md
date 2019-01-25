@@ -5,7 +5,7 @@ description: Modify the display of the Agile planning tool pages that you view t
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

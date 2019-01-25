@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -51,7 +51,7 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 -   You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
 -   You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 For additional tips when working with the new queries experience or the directory-focused queries views, see [Tips for working with the directory-focused **Queries** pages](view-run-query.md#tips-queries-hub). 
 ::: moniker-end
 

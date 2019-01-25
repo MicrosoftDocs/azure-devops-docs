@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 01/24/2018
@@ -20,7 +20,7 @@ Azure Artifacts is an *extension* to Azure DevOps Services and TFS. The Azure Ar
 
 Azure Artifacts is required for each user that consumes packages from (e.g., nuget restore or npm install) or produces packages to (e.g., nuget push or npm publish) Azure Artifacts feeds. Azure Artifacts is also required for each user that consumes or publishes symbols.
 
-::: moniker range=">= tfs-2017 < vsts" 
+::: moniker range=">= tfs-2017 < azdevops" 
 
 ## Install Azure Artifacts in TFS
 
@@ -30,7 +30,7 @@ Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrad
 
 ::: moniker-end
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 
 ## Assign Artifacts in Azure DevOps Services
 
@@ -58,7 +58,7 @@ If you have a Visual Studio Enterprise license, you already have access to Packa
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts" 
+::: moniker range=">= tfs-2017 < azdevops" 
 
 ## Assign licenses in TFS
 

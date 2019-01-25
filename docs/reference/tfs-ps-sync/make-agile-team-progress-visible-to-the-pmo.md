@@ -5,7 +5,7 @@ description: View work progress and resource usage using Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 865f7e20-cc67-4279-b625-a27ac3f1e88f
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

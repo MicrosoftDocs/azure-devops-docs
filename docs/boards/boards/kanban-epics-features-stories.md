@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/08/2018
@@ -83,7 +83,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 0. To view a portfolio backlog, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
 1. 

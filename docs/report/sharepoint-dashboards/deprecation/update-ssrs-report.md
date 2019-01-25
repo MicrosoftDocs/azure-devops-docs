@@ -5,7 +5,7 @@ description: TFS SharePoint integration - Update an SSRS Report on a SharePoint 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE

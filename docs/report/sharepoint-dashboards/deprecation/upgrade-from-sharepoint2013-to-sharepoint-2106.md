@@ -5,7 +5,7 @@ description: TFS SharePoint integration - Upgrade from SharePoint 2013 with TFS 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE

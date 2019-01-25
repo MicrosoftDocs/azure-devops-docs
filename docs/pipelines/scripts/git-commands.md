@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 01/03/2019
@@ -82,7 +82,7 @@ On the [variables tab](../build/variables.md) set this variable:
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 # [YAML](#tab/yaml)
 
@@ -104,7 +104,7 @@ On the [options tab](../build/options.md) select **Allow scripts to access OAuth
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
 
@@ -119,7 +119,7 @@ Certain kinds of changes to the local repository are not automatically cleaned u
 
 If you run into problems using an on-premises agent, make sure the repo is clean:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 # [YAML](#tab/yaml)
 
@@ -139,7 +139,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 * On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 
@@ -237,7 +237,7 @@ When you set ```system.prefergit``` to ```true```, the build pipeline uses comma
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

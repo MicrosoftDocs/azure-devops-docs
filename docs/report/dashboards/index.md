@@ -7,7 +7,7 @@ ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= tfs-2013"

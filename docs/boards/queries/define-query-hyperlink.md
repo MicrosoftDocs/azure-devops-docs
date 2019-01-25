@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -29,7 +29,7 @@ The easiest way to define a hyperlink is to create a query that matches what you
 
 ## Query hyperlink syntax 
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 

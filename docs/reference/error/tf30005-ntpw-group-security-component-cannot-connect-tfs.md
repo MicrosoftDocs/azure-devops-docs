@@ -5,7 +5,7 @@ description: Occurs when the New Team Project Wizard is unable to connect to the
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eecc6e96-3c39-4cff-aad4-5ab57582ba2e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

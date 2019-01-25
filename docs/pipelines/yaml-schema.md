@@ -5,11 +5,11 @@ description: An overview of all YAML features.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
-ms.manager: douge
+ms.manager: jillfra
 ms.author: macoope
 ms.reviewer: macoope
 ms.date: 01/23/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # YAML schema reference

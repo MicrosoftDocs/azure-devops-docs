@@ -5,7 +5,7 @@ description: Update a project based on a Microsoft Solutions Framework (MSF) ver
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/15/2017

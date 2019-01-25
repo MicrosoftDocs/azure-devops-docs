@@ -6,7 +6,7 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
@@ -93,7 +93,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -141,7 +141,7 @@ Choose the chart to display it in a larger view.
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/sprint-burndown-open-chart.png)
 ::: moniker-end
@@ -222,7 +222,7 @@ To view a past sprint and its burndown chart, select the sprint from the Sprint 
 # [Previous navigation](#tab/previous-nav)
 
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 > [!div class="mx-imgBorder"]  
 > ![Past sprints provide historical record](_img/burndown/past-sprints.png) 
 ::: moniker-end

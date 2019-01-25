@@ -7,11 +7,11 @@ ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 author: alexmullans
 ms.date: 10/29/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Pipeline artifacts in Azure Pipelines

@@ -6,11 +6,11 @@ ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ms.date: 01/11/2019
 ---
 

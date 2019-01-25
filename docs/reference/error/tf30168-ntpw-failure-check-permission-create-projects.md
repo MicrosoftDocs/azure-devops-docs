@@ -5,7 +5,7 @@ description: Occurs when the New Team Project Wizard starts and then checks to s
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 5ec922a9-9b7a-4ccc-b1c5-5f8432e0c385
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

@@ -7,10 +7,10 @@ ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ms.date: 12/12/2018
 ---
 

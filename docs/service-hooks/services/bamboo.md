@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Bamboo with Azure DevOps Services
 description: Use Atlassian Bamboo with your Azure DevOps Services organization
 ms.assetid: a5cb1028-9b46-4106-9fdd-5b8059b4dedd
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

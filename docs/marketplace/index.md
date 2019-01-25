@@ -4,7 +4,7 @@ ms.technology: devops-marketplace
 title: Index for installing Azure DevOps Services and Team Foundation Server extensions from the Visual Studio Marketplace
 description: Index of Visual Studio Marketplace information for Azure DevOps Services and Team Foundation Server extensions.
 ms.assetid: afd7c3b8-a09f-4a38-8207-bc84e678a39b
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/12/2018

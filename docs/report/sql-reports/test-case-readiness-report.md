@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Determine how many test cases have been defined and are ready to run 
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---

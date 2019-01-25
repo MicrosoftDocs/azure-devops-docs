@@ -8,7 +8,7 @@ ms.manager: sriramb
 ms.custom: seodec18
 ms.author: omeshp
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Download Fileshare Artifacts task
@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 Use this task in a build or release pipeline to download fileshare artifacts.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/DownloadFileshareArtifactsV0.md)]
 ::: moniker-end

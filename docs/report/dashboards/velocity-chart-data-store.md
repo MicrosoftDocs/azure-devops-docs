@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: tutorial
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -94,7 +94,7 @@ From your web browser, open your product backlog.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 1.	From the backlog page, open the velocity chart.  
 

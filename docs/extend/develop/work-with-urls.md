@@ -5,8 +5,8 @@ title: Working with URLs in extensions | Azure DevOps Services
 description: Best practices for working with URLs in Azure DevOps extensions and integrations
 ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe
 ms.topic: conceptual
-ms.manager: douge
-monikerRange: 'vsts'
+ms.manager: jillfra
+monikerRange: 'azdevops'
 ms.author: wismythe
 author: willsmythe
 ms.date: 08/31/2018

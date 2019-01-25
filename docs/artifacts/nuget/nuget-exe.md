@@ -4,12 +4,12 @@ description: Authenticating to feeds with NuGet in Azure DevOps Services
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2017
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Use NuGet with Azure DevOps Services feeds

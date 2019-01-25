@@ -7,10 +7,10 @@ ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ms.date: 12/04/2018
 ---
 

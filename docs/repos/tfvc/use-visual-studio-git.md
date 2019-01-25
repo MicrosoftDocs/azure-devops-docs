@@ -5,7 +5,7 @@ description: Use Visual Studio with Git
 ms.assetid: 32f46ecd-1b03-4ef0-a9c4-8a120da2b03f
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

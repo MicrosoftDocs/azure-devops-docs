@@ -5,7 +5,7 @@ description: Occurs an error when a third-party plug-in does not operate in the 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 47085404-d5ec-4811-9fbd-84da3be422e6
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

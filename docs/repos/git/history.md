@@ -5,7 +5,7 @@ description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

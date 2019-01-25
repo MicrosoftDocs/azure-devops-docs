@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.custom: seodec18
@@ -47,7 +47,7 @@ https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/we
 
 The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project.
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 ::: moniker-end
@@ -58,7 +58,7 @@ The sample app is a Visual Studio solution that has two projects: An ASP.NET Web
 
 ## Build environment
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
 Use the **Hosted VS2017** agent pool to build on Visual Studio 2017 or Visual Studio 15.* versions. Use the **Hosted** agent pool to build using the tools in Visual Studio 2013 or Visual Studio 2015.
@@ -69,7 +69,7 @@ You can also use a [self-hosted agent](../../agents/agents.md#install) to run yo
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 Your builds run on a [self-hosted agent](../../agents/agents.md#install).
 Make sure that you have the necessary version of the Visual Studio installed on the agent.

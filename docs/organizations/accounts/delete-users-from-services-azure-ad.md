@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: eb0d51c2-fb28-4c55-9fcd-33a5942130f0
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Delete users from your organization connected to Azure Active Directory

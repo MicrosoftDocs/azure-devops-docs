@@ -5,7 +5,7 @@ ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -33,7 +33,7 @@ This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM
 
 This task can be used in only an [agentless job](../../process/server-phases.md).
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
 ::: moniker-end

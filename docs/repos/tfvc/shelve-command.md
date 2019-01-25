@@ -5,7 +5,7 @@ description: Shelve Command
 ms.assetid: f6b9e3c8-9a5a-4ebb-9823-d3a430ca08de
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

@@ -4,7 +4,7 @@ description: Troubleshooting getting and paying for extensions for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 04/04/2018
