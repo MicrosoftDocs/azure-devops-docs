@@ -86,7 +86,7 @@ To learn more, see [Install free extensions for Azure DevOps](../../marketplace/
 - [Web portal navigation](../../project/navigation/index.md)  
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)  
 - [Enable a preview feature](../../project/navigation/preview-features.md)   
- 
+- [Get started as an administrator for Azure DevOps](../../user-guide/project-admin-tutorial.md)
 
 <!---
 

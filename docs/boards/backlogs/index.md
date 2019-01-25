@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 01/23/2019
 ---
 
 # Backlogs
@@ -24,6 +24,8 @@ Start planning your project by quickly adding user stories or requirements to yo
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 ::: moniker-end
+
+If your a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md) to learn more about defining area and iteration paths and customizing your work item types. If you want to add another product backlog, you do that by adding a team. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json).
 
 ::: moniker range=">= tfs-2017"
 ## 5-Minute Quickstarts  
@@ -60,7 +62,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## How-to Guides
 
 * [Filter backlogs & queries](filter-backlogs.md)
-* [Change column options](set-column-options.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
+* [Change column options](set-column-options.md)
 * [Email/print work items](../work-items/email-work-items.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
 
 
@@ -72,8 +74,8 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## Resources 
 
 - [Work Items](../work-items/index.md)
-- [Kanban](../boards/index.md)
-- [Scrum](../sprints/index.md)
+- [Boards (Kanban)](../boards/index.md)
+- [Sprints (Scrum)](../sprints/index.md)
 - [Queries](../queries/index.md)
 - [Work item customization](../../reference/index.md)
 - [What is Agile?](/azure/devops/learn/agile/what-is-agile)   

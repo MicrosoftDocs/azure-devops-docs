@@ -299,9 +299,14 @@ Repeat this step for all your management areas. Also, if you want to enable roll
 
 ## Define a single sprint cadence for all teams 
 
-If your feature teams use Scrum  or use sprints to assign their work, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). 
+If your feature teams use Scrum or use sprints to assign their work, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). You can rename and edit the default sprints as needed.
 
-Here we've defined the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
+> [!NOTE]  
+> While maintaining a single sprint cadence simplifies project administration, you can create different cadences as needed. For example, some teams may follow a monthly cadence while others follow a 3-week cadence. Simply define a node under the top project node for each cadence, and then define the sprints under those nodes. For example: 
+> - Fabrikam Fiber/CY2019
+> - Fabrikam Fiber/3Week Sprints
+> 
+Here we define the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
 
 ::: moniker range=">= tfs-2017"  
 > [!div class="mx-imgBorder"]  
