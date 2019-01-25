@@ -108,11 +108,11 @@ The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories 
 However, you can navigate to it from the following URL:
 
 ::: moniker range=">= azdevserver-2019"
-`https://<AccountName>.visualstudio.com/DefaultCollection/<TeamProjectName>/_git/<TeamProjectName>.wiki` 
+`https://<AccountName>.visualstudio.com/DefaultCollection/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-`https://<ServerName>/DefaultCollection/<TeamProjectName>/_git/<TeamProjectName>.wiki` 
+`https://<ServerName>/DefaultCollection/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
 Choose **More**, and then **Clone Wiki** to access the Wiki URL.
