@@ -4,11 +4,11 @@ description: Use the treeview to display hierarchical data in your app for Azure
 ms.assetid: 20DE4AA3-3B76-CAAF-0683-81F85BDE4F39
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---

@@ -4,7 +4,7 @@ description: Manage large groups of users using Active Directory (AD) for Team F
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -21,7 +21,7 @@ The method we recommend for managing a large set of user accounts is to use Azur
 
 If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps or TFS to support billing.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Use this topic to access articles that will show you how to:
 > [!div class="checklist"]
 > * Set up Azure Active Directory for use with Azure DevOps Services
@@ -39,7 +39,7 @@ Use this topic to access articles that will show you how to:
 > [!NOTE]
 > Without Azure AD, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../../billing/set-up-billing-for-your-organization-vs.md).
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Set up Azure Active Directory for use with Azure DevOps Services
 

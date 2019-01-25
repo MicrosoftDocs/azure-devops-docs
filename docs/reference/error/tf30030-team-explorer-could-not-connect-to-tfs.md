@@ -4,7 +4,7 @@ description: Occurs when Team Explorer is not synchronized with or cannot establ
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c93d61bf-718f-4dc0-b77a-6c596c9fff1d
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 02/22/2017

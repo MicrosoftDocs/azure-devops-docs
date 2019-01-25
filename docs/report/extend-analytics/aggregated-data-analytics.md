@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: How to guide to aggregate and filter data with the Analytics Service and the OData aggregation extension in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -37,7 +37,7 @@ Analytics relies on OData to author queries over your work tracking data. Aggreg
 ## Basic root URL
 Use the following basic root URL as a prefix for all the examples provided in this topic.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

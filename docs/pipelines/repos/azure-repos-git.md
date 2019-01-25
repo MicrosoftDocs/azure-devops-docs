@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
@@ -30,7 +30,7 @@ For an introduction to creating a pipeline, follow the steps in [Create your fir
 [!INCLUDE [temp](_shared/pipeline-options-for-git.md)]
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Make open source projects public
 
@@ -41,7 +41,7 @@ If your Azure Repos Git repository is open source, you can make your Azure DevOp
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ### Access restrictions
 

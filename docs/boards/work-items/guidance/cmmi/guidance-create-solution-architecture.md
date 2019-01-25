@@ -8,7 +8,7 @@ ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/20/2017
 ---

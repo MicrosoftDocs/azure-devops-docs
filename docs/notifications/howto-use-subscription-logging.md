@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services & TFS
 description: How to use subscription logging to troubleshoot Azure DevOps Services notifications
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

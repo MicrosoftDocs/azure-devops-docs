@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -138,7 +138,7 @@ Anyone who has write access to a project can assign work items, including users 
 - The system shows the display name and adds the user name when required to disambiguate identical display names  
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 ###Integration with Azure Active Directory 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
@@ -201,7 +201,7 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 <a id="customize" />
 ## Customize a WIT 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 

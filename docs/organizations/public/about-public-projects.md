@@ -5,12 +5,12 @@ description: Understand the benefits of creating a public project, provide anony
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # What is a public project?

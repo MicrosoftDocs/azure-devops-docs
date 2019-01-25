@@ -5,7 +5,7 @@ description: Resolve Team Foundation Version Control conflicts
 ms.assetid: 61cae295-0864-4ae9-8327-9bd1dd14cae9
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

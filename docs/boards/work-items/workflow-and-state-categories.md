@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
@@ -123,7 +123,7 @@ To learn more about process models, see [Customize your work tracking experience
 
 ## Related articles
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end

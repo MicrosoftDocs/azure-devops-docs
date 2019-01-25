@@ -5,7 +5,7 @@ description: Squash merge your pull requests to keep a linear Git history
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

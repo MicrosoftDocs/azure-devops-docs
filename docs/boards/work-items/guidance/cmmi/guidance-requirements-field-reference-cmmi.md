@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013 || azdevserver-2019'
 ms.date: 01/24/2017

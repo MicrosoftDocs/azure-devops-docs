@@ -9,7 +9,7 @@ ms.manager: madhurig
 ms.author: brcrista
 ms.reviewer: dastahel
 ms.date: 5/7/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Package: PyPI Publisher task (deprecated)

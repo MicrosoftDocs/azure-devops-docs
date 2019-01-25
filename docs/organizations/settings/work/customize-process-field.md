@@ -6,7 +6,7 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'

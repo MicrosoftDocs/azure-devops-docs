@@ -5,7 +5,7 @@ title: Make Your Extension or Integration Public | Extensions for Azure DevOps S
 description: Guideline for making an integration or extension publicly visible on the Visual Studio Marketplace
 ms.assetid: d4dab00f-5089-4754-85f0-19bff1cb364a
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

@@ -25,7 +25,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 From your web browser, (1) select the project, choose (2) **Work**, (3) **Queries**, and then (4) **All**.
 
 > [!div class="mx-imgBorder"]  

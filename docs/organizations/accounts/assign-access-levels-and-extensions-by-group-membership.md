@@ -6,11 +6,11 @@ description: Learn how to assign group-based licensing for users in Azure Active
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/31/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 # Add a group rule to assign access levels and extensions to users
 

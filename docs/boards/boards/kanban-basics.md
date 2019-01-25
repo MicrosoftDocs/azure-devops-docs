@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

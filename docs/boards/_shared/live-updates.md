@@ -35,7 +35,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Choose the ![ ](/azure/devops/boards/_img/icons/live-updates-icon.png) **Live updates** icon.  
 

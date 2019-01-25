@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Manage conditional access to Azure DevOps

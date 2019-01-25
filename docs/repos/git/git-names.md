@@ -5,7 +5,7 @@ description: How Git stores author names
 ms.assetid: 09e60acb-fa48-4843-9f5d-5dfed981f467
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

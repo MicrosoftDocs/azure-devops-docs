@@ -5,10 +5,10 @@ description: Learn how to automatically build, test, and deploy your code with A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
-ms.author: douge
+ms.manager: jillfra
+ms.manager: elbatk
 ms.date: 07/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # What is Azure Pipelines?

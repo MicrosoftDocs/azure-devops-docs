@@ -4,7 +4,7 @@ ms.assetid: 56a035fb-2942-ff0f-d92f-9aec63fa62ec
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk

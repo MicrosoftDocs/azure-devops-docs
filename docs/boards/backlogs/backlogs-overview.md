@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -52,7 +52,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 !["Web portal, choose Boards>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -157,7 +157,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
@@ -208,7 +208,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
 
 Here's another example that shows the **Epics** backlog for the **Management** team. 
 Drilling down, you can see all the backlog items and features, even though they 

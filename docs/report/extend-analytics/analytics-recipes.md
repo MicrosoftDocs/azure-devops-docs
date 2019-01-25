@@ -5,7 +5,7 @@ description: Examples of how to create queries of work item tracking from the An
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

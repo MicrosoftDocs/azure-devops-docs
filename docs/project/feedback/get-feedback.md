@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.assetid: b8fc1618-6501-41dd-86a6-78290bb84dcd  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 01/15/2019
@@ -29,7 +29,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 * You must connect to a team project. If you don't have a project yet, create one in [Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md).  
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
@@ -91,7 +91,7 @@ Add the **Other links** widget to a web portal team dashboard. For details, see 
 
 To request feedback, you fill out a form that generates an email request to your stakeholders.
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 

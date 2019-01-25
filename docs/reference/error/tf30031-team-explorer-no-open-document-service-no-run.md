@@ -4,7 +4,7 @@ description: Occurs when Team Explorer tries to open a document stored in the do
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 80812479-89ac-41e8-8f6f-21bd4254f863
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

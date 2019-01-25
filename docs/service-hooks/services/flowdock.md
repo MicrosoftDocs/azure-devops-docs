@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Flowdock with Azure DevOps Services
 description: Use Flowdock with your Azure DevOps Services organization
 ms.assetid: 191c21d1-17d7-4d33-9a5f-231bc70edd0f
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

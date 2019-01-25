@@ -5,7 +5,7 @@ description: Resolve data validation errors that appear in the Unpublished work 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 72c1dd06-a3a1-499c-b2a3-4d7f884033fd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/12/2017

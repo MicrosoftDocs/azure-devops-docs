@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services & TFS
 description: How to integrate third party services such as Slack, Microsoft Teams and others with Azure DevOps Services and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

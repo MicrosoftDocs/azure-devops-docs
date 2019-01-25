@@ -6,7 +6,7 @@ keywords: Download TFS clients
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -56,10 +56,10 @@ The Git and TFVC repos support different pages and functions. For a comparison o
 
 The following images show the pages available when you connect to a Git repository from Team Explorer. 
 
->  [!div class="mx-tdCol2BreakAll"]Â Â 
-> |Â Visual Studio 2019Â Â | Visual Studio 2017 | Visual Studio 2015 |
-> |------|---------|---------|
-> | ![Visual studio 2019, Team Explorer Home page with Git as source control](_img/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](_img/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](_img/IC827210.png) |
+>  [!div class="mx-tdCol2BreakAll"]  
+> | Visual Studio 2019  | Visual Studio 2017 | Visual Studio 2015 |  
+> |------|---------|---------|  
+> | ![Visual studio 2019, Team Explorer Home page with Git as source control](_img/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](_img/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](_img/IC827210.png) |  
 
 To learn more about each page, see the following articles. 
 
@@ -130,8 +130,8 @@ To learn more about each page, see the following articles.
 
 The following images show the pages available when you connect to a Git repository from Team Explorer. 
 
->  [!div class="mx-tdCol2BreakAll"]Â Â 
-> |Â Visual Studio 2019Â Â | Visual Studio 2017 | Visual Studio 2015 |
+>  [!div class="mx-tdCol2BreakAll"]  
+> | Visual Studio 2019  | Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|
 > | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](_img/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](_img/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](_img/IC827209.png) |  
 

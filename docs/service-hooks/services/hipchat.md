@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: HipChat with Azure DevOps Services
 description: Use HipChat with your Azure DevOps Services organization
 ms.assetid: 43ef12ac-4541-436c-b6df-343e6e321cf9
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

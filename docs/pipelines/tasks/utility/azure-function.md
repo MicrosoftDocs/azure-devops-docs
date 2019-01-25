@@ -5,7 +5,7 @@ ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -27,7 +27,7 @@ Use this task in a build or release pipeline to invoke a HTTP triggered function
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.md)]
 ::: moniker-end

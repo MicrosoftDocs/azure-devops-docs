@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 01/18/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Delete your organization

@@ -4,7 +4,7 @@ description: Occurs when the instance of Team Foundation on the local computer c
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f0bcc998-859f-4b75-bb3d-3976cd8578f6
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

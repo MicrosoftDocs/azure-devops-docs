@@ -5,12 +5,12 @@ description: View build and release status an pipelines for a public project
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 ms.date: 11/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # View build and release pipelines

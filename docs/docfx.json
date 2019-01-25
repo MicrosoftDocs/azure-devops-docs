@@ -43,8 +43,8 @@
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "searchScope": ["Azure DevOps Services", "Azure DevOps", "VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
-      "author": "erickson-doug",
-      "ms.author": "douge",
+      "author": "steved0x",
+      "ms.author": "jillfra",
       "ms.date": "09/05/2018",
       "ms.prod": "devops",
       "ms.version": "ALM",
@@ -78,7 +78,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "vsts || >= tfs-2013 <= tfs-2018 || >= azdevserver-2019"
+        "moniker_range": "azdevops || >= tfs-2013 <= tfs-2018 || >= azdevserver-2019"
       }
     }
   }

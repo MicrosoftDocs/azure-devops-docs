@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: f280fa1f-a147-4b85-b233-5982a1eac4ac
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016

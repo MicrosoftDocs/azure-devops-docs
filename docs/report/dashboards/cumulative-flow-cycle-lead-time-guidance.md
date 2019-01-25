@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-analytics  
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,7 +17,7 @@ ms.date: 11/01/2018
 # Cumulative flow, lead time, and cycle time guidance 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-::: moniker range="azdevserver-2019 || vsts" 
+::: moniker range=">= azdevserver-2019" 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
 ::: moniker-end
 

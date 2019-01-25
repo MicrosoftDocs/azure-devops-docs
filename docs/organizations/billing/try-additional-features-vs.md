@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/14/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Quickstart: Start free trials for paid features and extensions

@@ -5,7 +5,7 @@ description: Index to permissions defined for Azure DevOps Services and Team Fou
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -21,7 +21,7 @@ Use this index to locate the topic on how to manage a specific permission. Most 
 
 Values in parenthesis indicate what level the permission is managed:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 - **Object**: Permissions are managed at the object-level    
 - **Project**: Permissions are managed at the project level

@@ -5,11 +5,11 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 248a9282-487c-4ec9-b0d1-0eb1da981157
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Quickstart: Buy and install paid extensions

@@ -6,7 +6,7 @@ description: Learn how to add, run, and quickly update manual test cases
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2018
@@ -44,13 +44,13 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"  
 
 1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
@@ -98,13 +98,13 @@ Prior to running the test, you must add details.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 1. To add tests, open the menu for the work item.
 
@@ -148,13 +148,13 @@ Microsoft Test Runner starts in a new browser instance. For information on how t
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run test** from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.  
 
@@ -170,7 +170,7 @@ Microsoft Test Runner starts in a new browser instance. For information on how t
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azdevserver-2019"  
 
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
@@ -180,13 +180,13 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
@@ -214,13 +214,13 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"  
 
 When you first open the Kanban board, you'll see an unexpanded view of checklists.
 

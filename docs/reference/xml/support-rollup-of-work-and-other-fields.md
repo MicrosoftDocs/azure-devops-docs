@@ -5,7 +5,7 @@ description: Provides summed values of select fields for all child work items of
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/16/2018
@@ -87,7 +87,7 @@ There are several extensions available from the [Marketplace](https://marketplac
 
 Or, you can write an extension using the [REST API for work tracking](/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregator](https://tfsaggregator.github.io/).  
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 <a name="marketplace"></a>
 ## Analytics service
@@ -97,7 +97,7 @@ You can use the [Analytics Service](../../report/analytics/what-is-analytics.md)
 > [!NOTE]
 > **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/?s=VSTS+Analytics+Extension).
 
-::: moniker-end  Â 
+::: moniker-end    
 
 ::: moniker range=">= tfs-2013 <= azdevserver-2019"  
 ## SQL Server Reporting Services report  
