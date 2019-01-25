@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ---
 
 # Manage and configure team tools
@@ -34,7 +34,7 @@ Optional tasks to consider include:
 
 ## Add users to a team
  
-Once users have been added to a project, you can add them as members of a team. Several tools, such as capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the users that have been added as members of a team to support planning activities or sending alerts. 
+Several tools, such as capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the users that have been added as members of a team to support planning activities or sending alerts. 
 
 To add users to a team, see [Add users to a project or specific team](../security/add-users-team-project.md). 
 
@@ -85,7 +85,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range=">= azdevserver-2019"  
 
-0. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
+1. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Kanban board, new navigation](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)

@@ -38,7 +38,7 @@ Currently, you can access the following data from the Analytics Service. This in
 </tr>
 <tr>
 <td>[Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)</td>
-<td>[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=vsts)</td>
+<td>[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azdevops)</td>
 <td>Same as Azure DevOps</td>
 <td>Build/Release - 2019</td>
 </tr>
