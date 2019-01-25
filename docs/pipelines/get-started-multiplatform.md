@@ -47,7 +47,7 @@ In the sample repo, the Node.js app is configured to run on Ubuntu Linux. You're
 
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=vsts
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=azdevops
 strategy:
   matrix:
     linux:

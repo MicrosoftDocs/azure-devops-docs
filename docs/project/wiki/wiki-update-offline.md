@@ -80,7 +80,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=vsts&tabs=visual-studio)
+	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azdevops&tabs=visual-studio)
 
 ## Add pages to your local Git repository
 
