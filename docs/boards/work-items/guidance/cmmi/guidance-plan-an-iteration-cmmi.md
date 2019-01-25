@@ -8,7 +8,7 @@ ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 || azdevserver-2019'
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 

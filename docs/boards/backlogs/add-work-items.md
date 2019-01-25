@@ -30,8 +30,6 @@ For additional clients that you can use, see [Best tools for adding, updating, a
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
-
-
 <a id="define-new-work">  </a>
 ## Add a work item 
 You can start adding work items once you connect to a project. 

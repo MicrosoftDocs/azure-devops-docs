@@ -14,17 +14,22 @@ monikerRange: '>= tfs-2013'
 ms.date: 12/04/2018
 --- 
 
-# Understand how work items are used to track user stories, issues, bugs, features, and epics 
+# Track work with user stories, issues, bugs, features, and epics 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the process used when your project was created.  
+You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the [process used when your project was created](guidance/choose-process.md) (Basic, Agile, Scrum, or CMMI).  
 
 
 ####In a nutshell:
 
 ::: moniker range=">= tfs-2018"
-- You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
+- You use different [work item types (WITs)](#wit) to track different types of information. Specific tools 
+	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
+	- [Define Features and Epics](../backlogs/define-features-epics.md)
+	- [Define Features and Epics](../backlogs/define-features-epics.md)
+	- [Define, triage, and manage Bugs](../backlogs/manage-bugs.md)
+	- [Add Tasks to backlog items](../sprints/add-tasks.md)
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
 - You can [assign a work item](#assign) to one and only one project member 
