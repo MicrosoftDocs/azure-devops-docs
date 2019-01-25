@@ -9,14 +9,14 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 02/02/2017
+ms.date: 01/24/2019
 ---
 
 # Add or modify a work item type 
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-Your project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
+Your project contains a number of work item types (WITs), based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
 
 You can modify an existing WIT or add a custom WIT based on your team's tracking requirements or workflow processes. The most common reasons to modify a WIT are to add or modify the set of fields or field rules, change the workflow, or customize the work item form.   
 
@@ -48,6 +48,40 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 - [Rename a WIT](#rename-wit) (on-premises deployments only)
 - [Delete a WIT](#delete-wit) (on-premises deployments only) 
 
+
+## Prerequisites
+
+- To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
+- (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
+- (Azure DevOps Services, Hosted XML)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
+  
+To get added as an administrator, see [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
+
+
+<a id="witadmin">  </a>  
+## Import and export WIT definition files (On-premises XML)
+
+> [!NOTE]    
+>If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
+
+0. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
+[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+
+0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+
+    `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
+
+    An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
+
+0.  Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
+
+0.  Import the WIT definition file.  
+
+	`witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
+
+0.  Open the web portal or refresh the page to view the changes.  
+
+    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="add-wit">  </a>
 <a id="edit-wit">  </a>
@@ -160,7 +194,7 @@ To learn how to add or remove WITs from the backlog or task board, see [Add a wo
 
 
 <a id="change-wit-color">  </a>
-### Change the WIT color, icon, or workflow state color
+## Change the WIT color, icon, or workflow state color
 
 In the web portal, work items appear in query results and on the backlog and board pages of the Agile tools. To change the color or icon associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](xml/process-configuration-xml-element.md#wit-colors). To change the color for a workflow state, you also [edit the process configuration](xml/process-configuration-xml-element.md#state-colors). 
 
@@ -169,85 +203,20 @@ In the web portal, work items appear in query results and on the backlog and boa
  
 <img src="_img/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
 
-## Related articles
 
-This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](../organizations/settings/work/customize-process.md).  
+## Change the type of an existing work item  
 
-Other related topics or resources: 
+See [Move, change, or delete work items](../boards/backlogs/remove-delete-work-items.md) for the features available to you based on your platform. 
 
-- [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
-- [ProcessConfiguration XML elements](xml/process-configuration-xml-element.md)
-- [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-- [Customize the work tracking experience](customize-work.md)  
-- [Customize cards on boards](../boards/boards/customize-cards.md)  
-- [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
+When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../boards/backlogs/copy-clone-work-items.md#copy-clone). For instance, you can copy an existing product backlog item and change the type to bug, as shown in the following illustration.
 
+![Clone a WIT](_img/IC710198.png)  
 
-### Required permissions
+Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
 
-- To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
-- (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
-- (Azure DevOps Services, Hosted XML)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.    
-  
-To get added as an administrator, see [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
-
-
-<a id="witadmin">  </a>  
-### Import and export WIT definition files (On-premises XML)
-
-> [!NOTE]    
->If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
-
-0. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
-
-0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
-
-    `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
-
-    An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
-
-0.  Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
-
-0.  Import the WIT definition file.  
-
-	`witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
-
-0.  Open the web portal or refresh the page to view the changes.  
-
-    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
-
-### Enable features after upgrade (On-premises XML) 
-
-> [!NOTE]    
-> You can exercise the Configure Features Wizard only from an on-premises deployment. 
-
-What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
-
-You can add custom WITs and change the form layout. The [Configure Features Wizard](configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.
-
-Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
-
-
-<a name="rename-wit" />
-
-### Rename a WIT (On-premises XML) 
-
-> [!NOTE]    
-> You can exercise **witadmin renamewitd** only from an on-premises deployment. 
-
-To rename an existing WIT use **witadmin renamewitd**. For example, you can rename a WIT labeled "QoS Item" to "Service Agreement."
-
-```
-witadmin renamewitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"QoS Item" /new:"Service Agreement"
-```
-
-When you rename a WIT that belongs to a category, you have to update the categories definition for the project to reflect the new name. In particular, the [backlogs and boards](../boards/backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
-
-For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).
 
 <a id="deactivate-wit">  </a>
-### Deactivate or disable a WIT (On-premises XML) 
+## Deactivate or disable a WIT (On-premises XML) 
 
 How do you restrict users from creating work items of a certain type?
 
@@ -277,13 +246,59 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
         </TRANSITION> 
 
 <a id="delete-wit">  </a>
-### Delete a WIT (On-premises XML) 
+## Delete a WIT (On-premises XML) 
 
 To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
 
     witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
 
 When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).
+
+
+
+## Related articles
+
+This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](../organizations/settings/work/customize-process.md).  
+
+Other related topics or resources: 
+
+- [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
+- [ProcessConfiguration XML elements](xml/process-configuration-xml-element.md)
+- [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Customize the work tracking experience](customize-work.md)  
+- [Customize cards on boards](../boards/boards/customize-cards.md)  
+- [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
+
+
+## Rename a WIT (On-premises XML) 
+
+> [!NOTE]    
+> You can exercise **witadmin renamewitd** only from an on-premises deployment. 
+
+To rename an existing WIT use **witadmin renamewitd**. For example, you can rename a WIT labeled "QoS Item" to "Service Agreement."
+
+```
+witadmin renamewitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"QoS Item" /new:"Service Agreement"
+```
+
+When you rename a WIT that belongs to a category, you have to update the categories definition for the project to reflect the new name. In particular, the [backlogs and boards](../boards/backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
+
+For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).  
+
+
+### Enable features after upgrade (On-premises XML) 
+
+> [!NOTE]    
+> You can exercise the Configure Features Wizard only from an on-premises deployment. 
+
+What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
+
+You can add custom WITs and change the form layout. The [Configure Features Wizard](configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.
+
+Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
+
+
+<a name="rename-wit" />
 
 
 ### How do WIT modifications affect existing work items?
@@ -299,16 +314,6 @@ The following table summarizes the effect on existing work items when you modify
 |Delete a WIT|All data for work items created as the deleted WIT is permanently removed with no chance for recovery.| 
 
 If you want to completely remove the fields from the data store, use [**witadmin deletefield** command line tool](witadmin/manage-work-item-fields.md).
-
-### Change the type of an existing work item  
-
-See [Move, change, or delete work items](../boards/backlogs/remove-delete-work-items.md) for the features available to you based on your platform. 
-
-When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../boards/backlogs/copy-clone-work-items.md#copy-clone). For instance, you can copy an existing product backlog item and change the type to bug, as shown in the following illustration.
-
-![Clone a WIT](_img/IC710198.png)  
-
-Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
 
 
 ### Workflow changes and earlier versions of the Test Manager client
