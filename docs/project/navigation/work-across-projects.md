@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -40,7 +40,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - **Projects**: Team projects and teams within the projects that you work in  
 - **My Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited
 - **My work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated  
@@ -103,7 +103,7 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
@@ -112,7 +112,7 @@ Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **P
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Choose **My work items** to access the set of work items assigned to you or followed by you. The lists available from each page span all projects that you work in.
 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, choose its title.
@@ -191,13 +191,13 @@ To view pull requests you created  or that are assigned to you across projects, 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Open the **Projects>Pull requests** page to access any pull request that's relevant to you across all projects you work in. Choose **Active** or **Completed** to pivot between the active or completed set of pull requests. To initiate a pull request, choose **New pull request**.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!div class="mx-imgBorder"]  
 > ![Account home, My Pull requests, Active](_img/projects-page/account-home-pull-requests.png)  
 ::: moniker-end
@@ -206,7 +206,7 @@ Open the **Projects>Pull requests** page to access any pull request that's relev
 ![Account home, Pull requests, Active](_img/org-hub-tfs/account-home-pull-requests.png) 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 From each page, you're one choice away from navigating to the branch or repository for a pull request. This mirrors capabilities on the  project **Code>Pull Requests** page.
 
@@ -245,7 +245,7 @@ Choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Favo
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Open the **My favorites** page to quickly access any object or item that you've marked as a favorite.
 ::: moniker-end
 
@@ -253,7 +253,7 @@ Open the **My favorites** page to quickly access any object or item that you've 
 Open the **Favorites** page to quickly access any object or item that you've marked as a favorite.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 > [!div class="mx-imgBorder"]  
 > ![Account home favorites page](_img/projects-page/account-home-favorites.png)

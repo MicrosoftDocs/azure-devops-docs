@@ -5,7 +5,7 @@ description: Choose between HTTPS, SSH, personal access tokens, and alternate cr
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -65,7 +65,7 @@ If you don't have SSH set up on your computer, you should use personal access to
 
 Learn more about [setting up SSH with Azure DevOps Services](use-ssh-keys-to-authenticate.md)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Alternate credentials
 

@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Zapier with Azure DevOps Services
 description: Use Zapier with your Azure DevOps Services organization
 ms.assetid: 93b2aed5-2f28-41a3-b1b7-2d88b4feec09
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

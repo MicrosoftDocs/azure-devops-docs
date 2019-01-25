@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 01/18/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Recover your deleted organization in Azure DevOps

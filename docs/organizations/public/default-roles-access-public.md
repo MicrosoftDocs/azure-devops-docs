@@ -5,12 +5,12 @@ description: Overview of public project user roles and access
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 07/02/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 

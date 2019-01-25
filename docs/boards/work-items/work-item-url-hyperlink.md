@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-agile   
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 ms.topic: reference   
 monikerRange: '>= tfs-2013'   
@@ -31,7 +31,7 @@ Examples in this article use the following conventions:
 -   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 ```
 https://dev.azure.com/OrganizationName/ProjectName/_workitems/edit/WorkItemNumber

@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/28/2018

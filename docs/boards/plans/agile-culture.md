@@ -5,7 +5,7 @@ description: Create an Agile culture of autonomous teams and an aligned enterpri
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

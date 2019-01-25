@@ -6,12 +6,12 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.reviewer:
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/19/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 

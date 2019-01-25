@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 # Add more users to Azure DevOps with Basic features or Visual Studio subscriptions
 

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 88920723-19B7-4A49-96E1-9618C384F730
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 12/20/2017
@@ -91,6 +91,6 @@ We also recommend that for testing purposes you minimize costs by selecting a sm
 
 Try reselecting your User account to refresh the dialog, or close it and reopen it. A newly-created Azure Container Service should then appear.
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end

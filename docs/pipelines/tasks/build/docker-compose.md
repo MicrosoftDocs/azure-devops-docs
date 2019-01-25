@@ -9,7 +9,7 @@ ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Docker Compose task

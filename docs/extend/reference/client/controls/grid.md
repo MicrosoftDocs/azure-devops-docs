@@ -4,11 +4,11 @@ description: Use the grid control to show rows and columns items that can be sor
 ms.assetid: d0b0cded-3e7f-4972-95bb-8b634fb13f94
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---

@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -139,7 +139,7 @@ Workflow states are defined for each work item type to support tracking the stat
 > |-------------|----------|---------| 
 > |![User Story workflow states, Agile process](../work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png)|![Product backlog item workflow states, Scrum process](../work-items/guidance/_img/ALM_PT_Scrum_WF_PBI.png)|![Requirement workflow states, CMMI process](../work-items/guidance/_img/ALM_PT_CMMI_WF_Requirement.png)|
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 You can customize your workflow states, adding states or renaming states. Learn more: [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md). 
 ::: moniker-end  
 

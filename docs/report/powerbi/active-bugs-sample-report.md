@@ -5,7 +5,7 @@ description: Sample report that shows how to create an Analytics view to filter 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

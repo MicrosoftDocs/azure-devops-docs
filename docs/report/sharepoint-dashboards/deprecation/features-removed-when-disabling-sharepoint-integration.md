@@ -5,7 +5,7 @@ description: TFS SharePoint integration - Features removed when disabling ShareP
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: greggboe
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>=tfs-2013 <= tfs-2017'

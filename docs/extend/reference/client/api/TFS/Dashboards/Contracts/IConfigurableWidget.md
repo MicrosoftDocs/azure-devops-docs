@@ -4,7 +4,7 @@ ms.technology: devops-ecosystem
 title: TFS/Dashboards/WidgetContracts IConfigurableWidget API | Extensions for Azure DevOps Services
 description: Documentation for the IConfigurableWidget contract.
 ms.assetid: EE51192C-4294-41AE-A24D-C1F26FE76617
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk

@@ -4,7 +4,7 @@ description: Use packages from npmjs.com in Azure DevOps Services and Team Found
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
@@ -44,7 +44,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 > [!NOTE]
 > Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=vsts#determine-if-your-feed-is-a-legacy-feed) and consider upgrading it, if needed.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 # [New navigation](#tab/new-nav)
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
@@ -56,7 +56,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range=">=tfs-2017 < azdevops"
 
 ![Viewing your cached packages](_img/view-cached-packages.png)
 

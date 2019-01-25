@@ -5,7 +5,7 @@ description: Define the iterations or sprints to use when assigning work items i
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -98,13 +98,13 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
 
 0. From the web portal, open **Project settings**. 
 
@@ -207,7 +207,7 @@ From a web browser, open the web portal administrative context for your team.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
@@ -253,7 +253,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azdevserver-2019"  
 
 0.	Open **Project settings>Boards>Team Configuration>Iterations** for a team.  
 
@@ -288,16 +288,16 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 
 1.	Open **Work>Iterations** for a team.  
 
@@ -334,7 +334,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 <a id="activate-sprints-tfs">  </a>
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 1.	Open the Iterations page for the team context.  
 

@@ -5,7 +5,7 @@ title: Basic styles for widgets | Extensions for Azure DevOps Services
 description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps Services.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

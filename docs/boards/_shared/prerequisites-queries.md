@@ -7,7 +7,7 @@ ms.topic: include
 
 By default, all project members and users with **Stakeholder** access can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](/azure/devops/boards/queries/set-query-permissions).  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
 * To view, run, or email a query, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).

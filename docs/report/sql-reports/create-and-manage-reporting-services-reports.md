@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 description: Understand how to use SQL Server Reporting Services to analyze the progress and quality of your project - Team Foundation Server 
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/17

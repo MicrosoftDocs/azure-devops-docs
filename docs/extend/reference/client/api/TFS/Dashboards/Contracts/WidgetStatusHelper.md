@@ -4,7 +4,7 @@ ms.technology: devops-ecosystem
 title: TFS/Dashboards/WidgetHelpers WidgetStatusHelper API | Extensions for Azure DevOps Services
 description: Documentation for the WidgetStatusHelper helper class.
 ms.assetid: 56D8E588-8873-47A8-AE58-48CA0530D5A5
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk

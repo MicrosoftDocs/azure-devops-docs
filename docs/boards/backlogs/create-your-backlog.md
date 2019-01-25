@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -74,7 +74,7 @@ From your web browser, open your product backlog.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
@@ -154,7 +154,7 @@ Users with **Stakeholder** access can only add work items to the end of the back
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**.
 
@@ -296,11 +296,11 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 1. On your team's backlog page, select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
 ::: moniker-end
-	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"   
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"   
 	![Backlog board, open team settings](_img/organize-backlog-open-ccdialog.png)  
 	::: moniker-end
 	::: moniker range="tfs-2015"  
@@ -321,10 +321,10 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 	On the Overview tab, select the team whose settings you want to configure, and then select **Settings**.  
 	::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 2. Select the **Working with bugs** tab, and select one of the three options available.  
 ::: moniker-end  
-	::: moniker range=">= tfs-2018 || vsts"
+	::: moniker range=">= tfs-2018 || azdevops"
 	> [!div class="mx-imgBorder"]  
 	> ![Open configuration settings](_img/create-backlog/settings-working-with-bugs.png)  
 	::: moniker-end
@@ -334,7 +334,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 	::: moniker range=">= tfs-2013 <= tfs-2015"  
 	<img src="../../organizations/settings/_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
-	::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+	::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 	* Select the first option when your team wants to manage bugs in a similar manner to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
 
 	* Select the second option when your team wants to manage bugs in a similar manner to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 

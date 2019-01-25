@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services & TFS
 description: Manage notifications for an organization in Azure DevOps Services or Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

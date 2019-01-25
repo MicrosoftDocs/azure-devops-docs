@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Integrate Azure DevOps Services with third party apps using service hooks
 description: Index of using service hooks to integrate third party apps with Azure DevOps Services
 ms.assetid: ae372488-1430-4b68-b12e-a0a09ecad685
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

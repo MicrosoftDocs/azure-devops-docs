@@ -10,7 +10,7 @@ ms.custom: seodec18
 ms.prod: devops 
 ms.technology: devops-analytics
 ms.assetid:  
-ms.manager: douge 
+ms.manager: jillfra 
 ms.author: kaelli 
 ms.date: 10/23/2018
 featureFlags:

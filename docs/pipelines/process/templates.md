@@ -6,11 +6,11 @@ ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
 ms.date: 01/18/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Job and step templates

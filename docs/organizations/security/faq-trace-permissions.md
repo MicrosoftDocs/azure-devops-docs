@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/23/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 # Troubleshoot tracing permissions
 

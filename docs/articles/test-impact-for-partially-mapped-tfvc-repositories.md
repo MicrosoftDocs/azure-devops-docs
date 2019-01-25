@@ -8,7 +8,7 @@ ms.technology: devops-whitepapers
 ms.date: 03/08/2018
 ms.author: sdanie
 author: steved0x
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ---
 

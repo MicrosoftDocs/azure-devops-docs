@@ -5,7 +5,7 @@ description: Xcode Build build and release task for Azure Pipelines and Team Fou
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
-ms.manager: douge
+ms.manager: jillfra
 ms.author: dastahel
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015 <= tfs-2018'
@@ -228,7 +228,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

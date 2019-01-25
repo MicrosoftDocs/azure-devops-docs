@@ -5,12 +5,12 @@ description: Create or add a public project to your organization
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 ms.date: 12/04/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Create a public project in your organization

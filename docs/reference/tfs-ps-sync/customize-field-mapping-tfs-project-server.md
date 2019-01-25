@@ -5,7 +5,7 @@ description: Associate the fields in Team Foundation Server with fields in Proje
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: e2785458-f618-42b4-ab77-fbe4cb41c493
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017

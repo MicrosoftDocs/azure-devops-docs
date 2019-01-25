@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'

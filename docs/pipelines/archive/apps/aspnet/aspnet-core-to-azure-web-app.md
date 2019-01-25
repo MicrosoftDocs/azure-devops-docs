@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: alewis
 author: andyjlewis
-manager: douge
+ms.manager: jillfra
 ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
 ms.custom: "mvc, seodec18"
 ms.date: 06/24/2017

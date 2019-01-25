@@ -6,7 +6,7 @@ description: What is source control or version control in Azure DevOps Services 
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

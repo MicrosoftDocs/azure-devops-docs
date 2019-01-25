@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -32,7 +32,7 @@ Review this article to learn:
 -->
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!IMPORTANT]   
 > This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
@@ -160,7 +160,7 @@ Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Lin
 
 Learn more about tracking work with work items and developing with Git from these resources: 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/overview.md) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 

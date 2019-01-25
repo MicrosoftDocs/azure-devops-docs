@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -24,7 +24,7 @@ You can add a link to a work item from within the work item form or from a backl
 
 Use this article to learn how to:  
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
@@ -100,7 +100,7 @@ From the Add link dialog, select the link type, enter a work item ID, and then c
 
 For example, here we use the **Related** link type to link three items to the bug with ID of *400*. 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/add-link-dialog-s136.png)  
 
@@ -170,7 +170,7 @@ Here, we have selected to add a link to the selected work items.
 
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 <a id="remote-link"> </a>  
 ## Link to a remote work item 
 
@@ -269,7 +269,7 @@ Additional features you can use to quickly link or change links that use the par
 
 ## Related articles
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
