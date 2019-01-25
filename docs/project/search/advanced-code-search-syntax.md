@@ -67,7 +67,7 @@ Specify the branches for each repository that you want Code
 Search to index in the **Options** tab of the **Repositories** section in the
 [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
-::: moniker range="= vsts"
+::: moniker range="azdevops"
 
 ![Configure Git branches to include in search](_img/advanced-work-item-search-syntax/configure-branches.png)
 
