@@ -116,7 +116,7 @@ __Use with caution, as you can easily lose data on the server!!__
 
 *Notice that you must authenticate to the server for this to work*
 
-If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](../repos/git/auth-overview.md?view=vsts#personal-access-tokens).
+If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](../repos/git/auth-overview.md?view=azdevops#personal-access-tokens).
 
 Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files you were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
 
