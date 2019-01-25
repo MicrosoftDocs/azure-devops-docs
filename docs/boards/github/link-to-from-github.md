@@ -16,11 +16,11 @@ ms.date: 12/04/2018
 
 # Link GitHub commits and pull requests to work items
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]  
+[!INCLUDE[temp](../_shared/version-vsts-only.md)] 
 
  When using GitHub with Azure Boards, it's easy to keep all of your work connected. Links can be added using the **#mention** syntax familiar to GitHub users or from the Azure Boards work item.
 
-[!INCLUDE [temp](../_shared/github-platform-support.md)]  
+[!INCLUDE[temp](../_shared/github-platform-support.md)]
 
 ## Prerequisites 
 
@@ -50,6 +50,10 @@ Examples:
 | `Fixes AB#123, AB#124, and AB#126`          | Links to Azure Boards work items 123, 124, and 126. Transitions only the first item, 123 to the "done" state. |
 | `Fixes AB#123, Fixes AB#124, Fixes AB#125` | Links to Azure Boards work items 123, 124, and 126. Transitions all items to the "done" state. |
 | `Fixing multiple bugs: issue #123 and user story AB#234` | Links to GitHub issue 123 and Azure Boards work item 234. No transitions. |
+
+
+> [!NOTE]   
+> If you have connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you may see unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-git-hub-connection.md#integrate-repo-to-several-organizations). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
 
 
 <a id="link-existing"> </a>  
@@ -84,5 +88,5 @@ Choose the link provided to open the commit or pull request in GitHub.
 
 - [Connect Azure Boards to GitHub](connect-to-github.md)  
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
-
+- [Troubleshoot GitHub & Azure Boards integration](troubleshoot-git-hub-connection.md)
 

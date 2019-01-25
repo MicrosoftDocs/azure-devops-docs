@@ -22,7 +22,7 @@ You can track change requests for CMMI work items by using these six fields: Jus
   
  None of these fields are reportable or indexed. They all have a data type of HTML.  
   
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Reference name**|  
 > |--------------------|---------------------|--------------------|  
 > |**Justification**|Why the change has been proposed and what value it would bring to the product and the customer.|Microsoft.VSTS.CMMI.Justification|  

@@ -23,7 +23,7 @@ Use this guide to connect Azure Boards with one or more GitHub repositories. If 
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.  
 
-[!INCLUDE [temp](../_shared/github-platform-support.md)]  
+[!INCLUDE[temp](../_shared/github-platform-support.md)]
 
 Integration steps include: 
 - [Connect Azure Boards to GitHub](connect-to-github.md)  

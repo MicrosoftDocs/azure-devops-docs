@@ -21,8 +21,8 @@ ms.date: 01/11/2019
 
 With Azure Boards, you can quickly and easily start tracking user stories, backlog items, task, features, and bugs associated with your project. You do this by adding one of three work item types&mdash;user stories, bugs, features, epics, and tasks&mdash;that the Agile process provides. As works progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
 
->  [!div class="mx-tdCol2BreakAll"]  
-> |  Work item types  | Workflow |
+> [!div class="mx-tdCol2BreakAll"]
+> |Work item types| Workflow |
 > |------|---------|
 > |![Basic process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Agile process workflow, conceptual image](_img/about-boards/agile-process-workflow.png) 
 
