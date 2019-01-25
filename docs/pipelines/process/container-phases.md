@@ -6,10 +6,10 @@ ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: macoope
 ms.date: 01/15/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Container jobs

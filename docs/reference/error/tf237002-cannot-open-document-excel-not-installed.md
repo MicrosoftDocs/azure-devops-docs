@@ -5,7 +5,7 @@ description: Appears when a Team Foundation add-in has been disabled in an Offic
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e10dc22d-2d09-40d8-8a90-37f6f54412ee
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

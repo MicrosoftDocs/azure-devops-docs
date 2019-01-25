@@ -5,7 +5,7 @@ description: Add & use plans to review scheduled multi-team deliverables in Azur
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -110,7 +110,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 0. Open **Boards>Plans**. 
 
@@ -119,7 +119,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 0. To add a plan, choose **New Plan** . 
 
-	::: moniker range="vsts"  
+	::: moniker range="azdevops"  
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 	::: moniker-end  

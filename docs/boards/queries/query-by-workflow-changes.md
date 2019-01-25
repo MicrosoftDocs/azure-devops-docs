@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -134,7 +134,7 @@ You can use the **In Group** or **Not In Group** operators to filter a query bas
 
 <a id="workflow-change"/> 
 
-## Query based on workflow changes
+## Query based on workflow states and changes
 
 You use the State, Reason, and Resolved Reason fields to query for items based on workflow changes. 
 
@@ -153,6 +153,17 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
     <p style="margin-bottom:0px">
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type _ = _ User Story```</p>
 <p style="margin-bottom:0px">```And _ State _ = _ Resolved```</p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>Stories, bugs, and tasks that are new or active
+    </p>
+</td>
+  <td>
+    <p style="margin-bottom:0px">
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type _ In _ User Story,Bug,Task```</p>
+<p style="margin-bottom:0px">```And _ State _ In _ New,Active```</p>
   </td>
 </tr>
 <tr>

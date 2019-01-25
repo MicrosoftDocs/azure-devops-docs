@@ -6,7 +6,7 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
@@ -25,7 +25,7 @@ Access levels grant or restrict access to select web portal features. This is in
 
 When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups&#151;**Readers**, **Contributors**, and **Project Administrators**&#151;as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
 ::: moniker-end
 
@@ -37,7 +37,7 @@ To add user accounts or groups to specific access levels, see [Change access lev
 
 You assign users or groups of users to one of the following access levels:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an organization. 
 - **Visual Studio Subscription**: provides access to premium features and all published DevOps extensions. Assign to users with a Visual Studio Enterprise subscription.
@@ -105,7 +105,7 @@ As the following images illustrate, **Basic** access includes all **Stakeholder*
 
 # [Visual Studio Subscription](#tab/vs-subscription) 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!div class="mx-imgBorder"]  
 > ![VS Enterprise access level](_img/access-levels/vs-enterprise-2019.png) 
 ::: moniker-end
@@ -117,7 +117,7 @@ Not supported for on-premises versions.
 
 # [Advanced](#tab/advanced) 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Not supported for Azure DevOps Services.
 ::: moniker-end
 
@@ -133,7 +133,7 @@ Not supported for Azure DevOps Services.
 
 # [VS Enterprise](#tab/vs-enterprise) 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Not supported for Azure DevOps Services.
 ::: moniker-end
 
@@ -170,7 +170,7 @@ With Stakeholder access, users can create and modify all work items, and can cre
 ::: moniker-end
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ### Public versus private feature access
 **Stakeholder** access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
@@ -193,7 +193,7 @@ With Stakeholder access, users can create and modify all work items, and can cre
 
 
 ### Stakeholder feature access
-::: moniker range="vsts"
+::: moniker range="azdevops"
 The following features are available to Stakeholders from the web portal for both public and private projects. For private projects, there are some limitations as noted. To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-stakeholder.md).   
 
 <table width="80%">
@@ -513,7 +513,7 @@ Test summary access to stakeholder license users
 
 If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to grant them **Basic** access.  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 **For Private projects:**
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
@@ -918,7 +918,7 @@ Can add features and epics from the Kanban board. Can change the backlog priorit
 
 ::: moniker-end  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Visual Studio Subscription access
 Visual Studio subscribers are entitled to **Visual Studio Subscription** features as a subscriber benefit. When you add those users be sure to assign them **Visual Studio Subscription** access level and the system will automatically recognize their subscription and enable any other features that are included based on their subscription level. 
@@ -1103,7 +1103,7 @@ Service accounts don't require a TFS CAL or other purchase.
 
 ## Related articles  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - [Manage users and access](../accounts/add-organization-users.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)

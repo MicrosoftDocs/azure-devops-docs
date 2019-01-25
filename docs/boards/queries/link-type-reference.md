@@ -5,7 +5,7 @@ description: Reference guide to all link types defined for Azure DevOps and Team
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 <a id="link-type-guidance"></a>
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Four link types are supported. A specific field maintains a count of links for each of these link types. 
 
 - [**Work link types**](#work-link-types) support creating relationships among work items including select test case management work items
@@ -197,7 +197,7 @@ Link category: Process-defined</p></td>
 
 
 
-::: moniker range="vsts"   
+::: moniker range="azdevops"   
 
 <a id= "remote-work-link-types" />
 ## Remote work link types
@@ -286,7 +286,7 @@ External link types are system-defined link types. They support linking work ite
 > [!div class="mx-imgBorder"]  
 > ![External link types, conceptual image](_img/link-type-reference/linkscontrol-external-link-types.png) 
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
 ::: moniker-end  
 

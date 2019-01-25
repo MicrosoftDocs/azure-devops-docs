@@ -93,6 +93,8 @@
     href: office/resolve-excel-invalid-links-tree-list.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
 - name: Reference
   items:
+  - name: Work item field index
+    href: ../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Product backlog controls
     href: product-backlog-controls.md 
   - name: Backlog keyboard shortcuts

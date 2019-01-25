@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -52,7 +52,7 @@ In this article you'll learn how to:
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Users with **Stakeholder** access for a private project can't use drag and drop to map or reparent work items or change their sprint. 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ From your web browser, open your product backlog.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -165,7 +165,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag and drop items to reparent items from this view.   
 
@@ -218,7 +218,7 @@ If you've already created your backlog, and now you want to organize it, you can
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 To map a backlog item under a feature, you first turn mapping on from your backlog (Backlog items, Stories, or Requirements). Next, find the Unparented backlog items group by turning the Parents control to Show. Unparented backlog items will appear at the end of the parented set of backlog items. 
  
@@ -228,7 +228,7 @@ Drag items that are currently unparented to the feature under which they belong.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 You can multi-select work items on the backlog and sprint backlogs in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 ::: moniker-end
@@ -236,7 +236,7 @@ You can multi-select work items on the backlog and sprint backlogs in the same w
 Multi-select of work items on the backlog and sprint backlogs requires TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 It's the same process to map features to epics. From the Features backlog, drag features to an epic listed under the mapping pane.  
 
 ::: moniker-end

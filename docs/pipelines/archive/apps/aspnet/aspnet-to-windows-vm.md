@@ -7,7 +7,7 @@ ms.topic: conceptual
 author: alewis
 ms.author: alewis
 author: andyjlewis
-manager: douge
+ms.manager: jillfra
 ms.assetid: 6728CA49-5D44-4603-96E1-3BC3CF8D9793
 ms.date: 06/27/2017
 ms.custom: "mvc, seodec18"

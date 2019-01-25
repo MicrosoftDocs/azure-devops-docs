@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -22,7 +22,7 @@ ms.date: 11/19/2018
 
 You can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
  
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!TIP]  
 >The data copied with **Copy to clipboard** is the same as that copied when you select **Email ...**.  
 ::: moniker-end

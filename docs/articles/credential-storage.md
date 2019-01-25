@@ -6,9 +6,9 @@ ms.topic: article
 ms.technology: devops-whitepapers
 ms.author: chcomley
 author: chcomley
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 12/04/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # How we store your credentials for Azure DevOps Services

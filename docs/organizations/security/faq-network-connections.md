@@ -5,12 +5,15 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 7c8ff784-ffc2-4378-bc29-a7e5632ab776
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/24/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
+
+
+
 # Troubleshoot network connections and whitelist addresses
 
 **Azure DevOps**

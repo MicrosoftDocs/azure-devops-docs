@@ -5,7 +5,7 @@ ms.topic: include
 <a id="open-process-wit">  </a>
 ## Open Settings>Process
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!NOTE]
 > Your web portal uses either the **New navigation** or **Previous navigation** user interface. Choose the **New navigation** tab if the **New Navigation** feature is enabled. You'll see a vertical sidebar along with other navigational features when **New Navigation** has been enabled for the signed-in user or the organization. Choose **Previous navigation** when you see a top-level, blue-bar&mdash;indicating that **New navigation** isn't enabled. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
@@ -39,7 +39,7 @@ You create, manage, and make customizations to processes from **Organization Set
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 You create, manage, and make customizations to processes from **Settings>Process**. 
 

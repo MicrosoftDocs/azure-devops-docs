@@ -5,7 +5,7 @@ description: Syntax and usage of the FIELD element used to specify rules and con
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 62ee6ea1-bb55-4462-93ff-224ad799812a
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 02/10/2017
 ---

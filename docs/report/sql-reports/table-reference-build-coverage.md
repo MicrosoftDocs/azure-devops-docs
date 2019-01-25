@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about how thoroughly source code was covered by the tests that use specific builds.
 ms.assetid: 262d8253-6e8c-4c2f-8b11-db3f9a5bcd89
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2017'

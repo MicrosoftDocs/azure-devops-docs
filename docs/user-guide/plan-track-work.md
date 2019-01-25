@@ -5,7 +5,7 @@ description: Learn how to add work items from the web portal and view work items
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW

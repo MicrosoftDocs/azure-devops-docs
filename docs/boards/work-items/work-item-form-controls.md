@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 monikerRange: '>= tfs-2017'
 ms.date: 11/19/2018
@@ -148,7 +148,7 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 > [!NOTE]   
 > You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
 ::: moniker-end 

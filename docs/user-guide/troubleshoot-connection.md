@@ -6,7 +6,7 @@ description: Follow these steps to resolve connection issues with Azure DevOps S
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Troubleshoot connectivity
 
@@ -85,7 +85,7 @@ If you enter your credentials correctly but you're redirected back to the origin
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < vsts"
+::: moniker range=">= tfs-2013 < azdevops"
 
 ## Troubleshoot TFS connectivity
 
@@ -105,7 +105,7 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Switch organizations
 
@@ -123,7 +123,7 @@ Another solution is to delete your browser cookies. For more information, see th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < vsts"
+::: moniker range=">= tfs-2013 < azdevops"
 
 ## Connect to TFS with Secure Sockets Layer
 

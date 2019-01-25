@@ -5,7 +5,7 @@ description: Search your Git repo in Azure DevOps Services or TFS for a specific
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: atinb
 author: steved0x
 ms.topic: conceptual
@@ -31,7 +31,7 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 0. Select **Repos**, **Files**.
 

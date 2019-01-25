@@ -5,7 +5,7 @@ description: Team Explorer will not connect to a server that does not have a val
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb239d52-9b7b-41c9-98c6-118fb2f2173e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

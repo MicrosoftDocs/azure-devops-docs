@@ -5,7 +5,7 @@ description: Remove Access to Version Control Files
 ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

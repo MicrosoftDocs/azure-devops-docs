@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.assetid: 9C3231E4-FD2F-4F22-BEA0-C1AA0DE294C6  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 08/31/2017

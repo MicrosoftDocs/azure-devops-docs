@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/14/2018
@@ -83,13 +83,13 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
    > [!div class="mx-imgBorder"]
 ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)

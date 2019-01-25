@@ -137,6 +137,8 @@
     href: email-work-items.md  
   - name: Delete test artifacts
     href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+  - name: Change column options
+    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Switch project or team focus
     href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Set the Work Items experience (Visual Studio)

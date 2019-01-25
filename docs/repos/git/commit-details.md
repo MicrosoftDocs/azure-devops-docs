@@ -6,7 +6,7 @@ ms.assetid: 82aa7c10-c304-400a-84c9-d5ed87d66180
 toc: show
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sancha
 author: steved0x
 ms.topic: reference

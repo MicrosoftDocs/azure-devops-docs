@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -43,9 +43,9 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 You can plan and track work from the web portal **Boards** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
-::: moniker-end  
+::: moniker-end      
 
 ::: moniker range="<= tfs-2018"
 ## Work tracking
@@ -106,13 +106,11 @@ In addition to the permissions set at the [project level via the built-in groups
 
 
 <!---
-::: moniker range=">= tfs-2013  <= tfs-2018"  
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 > [!NOTE]  
 > There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).   
-::: moniker-end  
-
+::: moniker-end  
 -->
-
 
 
 ::: moniker range=">= azdevserver-2019"
@@ -120,7 +118,7 @@ In addition to the permissions set at the [project level via the built-in groups
 You can manage your source code from the web portal **Repos** hub, or using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, or Visual Studio Code. 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Stakeholders for private projects have no access to **Repos**. Stakeholders for pub;ic projects have the same access to **Repos** as **Contributors**.  
 ::: moniker-end
 
@@ -164,28 +162,28 @@ From **Project Settings**, you can [set permissions on a repository](set-git-tfv
 You can define and manage your builds and releases from the web portal **Pipelines** hub. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 ## Build and Release
 
 You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2015" 
+::: moniker range=">= tfs-2015"  
 From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
-::: moniker-end  
+::: moniker-end      
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]   
 >  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![ ](/azure/devops/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
-::: moniker-end 
- 
+::: moniker-end   
+   
 ::: moniker range=">= azdevserver-2019"
 [!INCLUDE [temp](_shared/pipelines.md)]
-::: moniker-end  
+::: moniker-end      
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2015 <= tfs-2018"   
 [!INCLUDE [temp](_shared/build-release.md)]
 ::: moniker-end
 
@@ -193,11 +191,11 @@ From the web portal, you can set permissions for all or individual build pipelin
 ## Test Plans
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 ## Test
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 " 
+::: moniker range=">= tfs-2015"  
 You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.md). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
 
 [!INCLUDE [temp](_shared/test.md)]
@@ -205,7 +203,7 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azdevserver-2019"  
 ## Azure Artifacts
 
 You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages** Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
@@ -213,7 +211,7 @@ You can manage feeds from the web portal, **Artifacts** or **Build and release >
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 ## Package management
 
 You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
@@ -225,22 +223,22 @@ You can manage feeds from the web portal, **Build and release > Packages**.  Fee
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015"      
 ## Dashboards and charts
 
 You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
-::: moniker-end 
+::: moniker-end   
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Users granted Stakeholder access to private projects can't view or create query charts. Stakehoder access to public projects can view and create query charts.
-::: moniker-end  
+::: moniker-end      
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015"
 [!INCLUDE [temp](_shared/report.md)]
 
-::: moniker-end 
+::: moniker-end   
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azdevserver-2019" 
 
 ## Analytics
 

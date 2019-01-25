@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 83301736-4DC7-4581-9AFD-4678BA0D3659
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
@@ -27,7 +27,7 @@ Use this task in a build or release pipeline to upload files to a remote machine
 
 None
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/FtpUploadV1.md)]
 ::: moniker-end

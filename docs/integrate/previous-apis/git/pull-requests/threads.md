@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azdevops'
 title: Git Pull Request Comments | REST API Reference for Team Foundation Server
 description: Work with Git pull requests programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: A2B50741-6909-4C7A-BAEB-13F2D7239246
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

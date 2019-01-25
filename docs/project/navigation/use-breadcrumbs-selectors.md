@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -45,7 +45,7 @@ To navigate to the project summary page, choose the project link within the brea
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Horizontal navigation doesn't provide a breadcrumb structure for the organization and project levels. Instead, you can select a recent team or project from the project/team selector. 
 
@@ -104,7 +104,7 @@ This particular selector features these navigational elements:
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Within **Dashboards**, you select the team whose dashboards you want to view. 
 
@@ -149,7 +149,7 @@ Or, choose **Browse all team backlogs** to open the **Backlogs>All** page.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -205,7 +205,7 @@ Breadcrumb-and-selector navigation elements are used within most services that s
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Choose the **Deployment** breadcrumb link to return to the *Deployment* folder. 
 
@@ -241,8 +241,8 @@ Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list
 
 From a specific page, you can open the directory from the breadcrumbs or a selector. For example, choose **Browse all boards** from the Boards selector. 
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |  Open from breadcrumb | Open from selector |
+> [!div class="mx-tdCol2BreakAll"]  
+> |      Open from breadcrumb | Open from selector |
 > |------|---------|
 > | ![Open Boards directory from breadcrumb](_img/breadcrumbs/open-directory-boards-from-breadcrumbs.png)|![Open Boards directory from selector](_img/breadcrumbs/open-directory-boards.png)|
 

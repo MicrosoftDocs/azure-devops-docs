@@ -5,7 +5,7 @@ description: Define each point of integration by mapping server products, projec
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e4ae6a70-0e75-4387-a466-a2b882d23ed2
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017

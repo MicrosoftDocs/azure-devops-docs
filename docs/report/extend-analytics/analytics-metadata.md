@@ -5,7 +5,7 @@ description: Understand the entity model OData metadata defined for the Analytic
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -35,7 +35,7 @@ Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0
 ### Query for metadata on a specific project
 You construct the service root URL for a project as shown:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

@@ -8,10 +8,10 @@ ms.prod: devops
 ms.topic: quickstart
 robots: NOINDEX, NOFOLLOW
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ms.date: 01/11/2019
 ---
 

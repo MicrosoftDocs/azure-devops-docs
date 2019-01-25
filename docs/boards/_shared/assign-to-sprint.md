@@ -33,7 +33,7 @@ From any product, sprint, or portfolio backlog, you can drag a multi-selected li
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 From any backlog or board, you can drag a multi-selected list of work items and drop it onto a sprint to change it's iteration path. From a Kanban or taskboard, you can drag a single work item onto a sprint. (Not supported for users with **Stakeholder** access.)
 
 > [!div class="mx-imgBorder"]  

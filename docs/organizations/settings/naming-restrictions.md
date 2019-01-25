@@ -7,7 +7,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
@@ -1393,7 +1393,6 @@ Workspace names must conform to the following restrictions.
 <a id="page-title-names"></a>
 ## Wiki page title naming conventions
 
-Each wiki page corresponds to a file within the wiki Git repo.  
 [!INCLUDE [temp](../../../docs/project/wiki/_shared/wiki-naming-conventions.md)]
 
 

@@ -6,7 +6,7 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -32,7 +32,7 @@ Permissions are set at the collection, project, and object level as described in
 
 ## View project-level permissions
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -62,16 +62,16 @@ Permissions are set at the collection, project, and object level as described in
 	> ![Security tab, User name, Members tab](_img/view-permissions/project-level-member-of-permissions-vsts.png)  
 
 
-::: moniker-end  
+::: moniker-end      
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"      
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end      
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
 
@@ -154,15 +154,15 @@ Open admin settings for the organization or a project collection.
 
 0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
-::: moniker-end  
+::: moniker-end      
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"      
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end      
 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
 

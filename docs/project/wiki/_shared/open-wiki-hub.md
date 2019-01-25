@@ -26,7 +26,7 @@ If you need to switch your team project, choose the ![ ](/azure/devops/boards/_i
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range="tfs-2018 || azdevops"
 
 > [!div class="mx-imgBorder"]  
 > ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)

@@ -9,7 +9,7 @@ ms.manager: hdixon
 ms.author: midenn
 author: mitchdenny
 ms.date: 10/26/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Use the .artifactignore file

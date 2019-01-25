@@ -7,7 +7,7 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid:
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
@@ -76,7 +76,7 @@ If you need to switch your team project, choose the ![ ](/azure/devops/boards/_i
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Choose **Wiki**.
 

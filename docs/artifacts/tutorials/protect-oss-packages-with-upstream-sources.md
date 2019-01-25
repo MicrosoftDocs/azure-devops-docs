@@ -3,7 +3,7 @@ title: Keep your OSS packages safe with upstream sources | Azure Artifacts
 description: Use upstream sources in Azure Artifacts to keep your OSS packages safe from failing dependencies.
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.reviewer: amullans
@@ -27,7 +27,7 @@ In this tutorial, you will:
 
 ## Create a feed with upstream sources enabled
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. Navigate to **Azure Artifacts**:
 
@@ -67,7 +67,7 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range=">=tfs-2017 < azdevops"
 
 1. Navigate to the **Packages** page:
 
@@ -98,7 +98,7 @@ The next step is to update your configuration file to point to the new Azure Art
 
 # [npm](#tab/npm)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. From your **Packages** page, click _Connect to Feed_
 
@@ -126,7 +126,7 @@ The next step is to update your configuration file to point to the new Azure Art
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azdevops"
 
 1. From your **Packages** page, click _Connect to Feed_
 

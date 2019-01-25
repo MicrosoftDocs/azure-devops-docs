@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -241,7 +241,7 @@ See also:
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]  
 > The WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
 ::: moniker-end

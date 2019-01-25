@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/03/2018

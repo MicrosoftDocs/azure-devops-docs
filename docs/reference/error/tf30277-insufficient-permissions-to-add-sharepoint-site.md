@@ -4,7 +4,7 @@ description: Occurs when the permissions are not sufficient to allow the user to
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d78a08a0-5dfc-4152-abf4-32b02ba51d36
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

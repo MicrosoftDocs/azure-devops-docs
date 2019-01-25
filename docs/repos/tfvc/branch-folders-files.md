@@ -5,7 +5,7 @@ description: Branch folders and files
 ms.assetid: 437854e0-3f64-4d68-8e18-748ea7f889aa
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

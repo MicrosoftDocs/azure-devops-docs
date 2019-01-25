@@ -5,7 +5,7 @@ description: Undo command
 ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

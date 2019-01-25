@@ -4,7 +4,7 @@ description: Frequently asked questions for Marketplace
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 10db7a0a-f57b-4bef-82e2-8cc163ebaa2e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/04/2016
@@ -182,7 +182,7 @@ The build runs the script same branch of the code you are building.
 
 You can use named parameters. Other kinds of parameters, such as switch parameters, are not yet supported and will cause errors.
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 
