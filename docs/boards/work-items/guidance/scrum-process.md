@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
-<img src="_img/scrum-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
+![Scrum process work item types, conceptual image](_img/scrum-process-work-tracking-wits.png)  
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards).  
 
@@ -28,7 +28,6 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 > [!NOTE]  
 > You can customize the work tracking system for your project based on the Scrum process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
-
 
 ::: moniker range="<= azdevserver-2019"
 > [!NOTE]  

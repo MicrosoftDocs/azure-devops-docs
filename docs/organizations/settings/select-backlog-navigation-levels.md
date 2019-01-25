@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 09/24/2018
+ms.date: 01/23/2019
 ---
 
 # Select backlog navigation levels for your team
@@ -36,6 +36,8 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](../../re
 > [!NOTE]    
 > **Feature availability**: The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 ::: moniker-end
+
+[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
 
 <a id="activate-backlogs"></a>
 

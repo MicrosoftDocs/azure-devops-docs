@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/23/2019
 ---
 
 # Change column options 
@@ -23,7 +23,7 @@ From each backlog page or query, you can add or remove columns. Or, you can drag
 > [!TIP]    
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
 
-Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across user sessions.    
+Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across the user's sessions.    
 
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
@@ -32,20 +32,21 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 ::: moniker range=">= azdevserver-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Open column options, new navigation](_img/columns/open-column-options-menu.png)  
- 
+> ![Open column options, new navigation](_img/columns/open-column-options-menu.png) 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
+::: moniker range="<= tfs-2018" 
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
- ::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+ ::: moniker range="<= tfs-2018 || azdevops"
 
 ![Open column options](_img/set-column-open-dialog-s125.png) 
-::: moniker-end
+
+::: moniker-end 
+
 
 ::: moniker range="azdevserver-2019"
 
@@ -55,26 +56,48 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 
 ---
 
-::: moniker range=">= tfs-2018 || azdevserver-2019"
+::: moniker range=">= tfs-2018"
 
 In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../_img/icons/delete_icon.png).
 
 ::: moniker-end
+
 ::: moniker range="tfs-2018"
 > [!NOTE]    
 > The following dialog is available from TFS 2018.2 and later versions. 
 ::: moniker-end
-::: moniker range=">= tfs-2018 || azdevserver-2019"
+
+::: moniker range=">= tfs-2018"
 ![Column options dialog](_img/set-column-options-s125.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="azdevops"
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
+
+::: moniker-end 
+
+::: moniker range="azdevserver-2019"
+
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
+::: moniker-end 
+
+
+::: moniker range="tfs-2018"
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project.
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
 
 Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../_img/icons/Arrow_Up.png)/![down arrow](../_img/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
  
 <img src="_img/b-vs-b-column-options.png" alt="Column options dialog, TFS" style="border: 1px solid #C3C3C3;" /> 
 
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project.
+
 ::: moniker-end
+
+
+
 
 ## Use keyboard shortcuts to change the column order, column width, or sort options
 
@@ -93,7 +116,6 @@ For additional keyboard shortcuts, enter **Shift-?** to display available comman
 
 ## Related articles
 
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)  
-- [Query keyboard shortcuts](../queries/queries-keyboard-shortcuts.md)
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [Create managed queries](../queries/using-queries.md)
