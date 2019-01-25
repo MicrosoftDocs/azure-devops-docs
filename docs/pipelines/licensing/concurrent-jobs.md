@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 8/22/2018
-monikerRange: '>=vsts'
+monikerRange: '>= azdevops'
 ---
 # Parallel jobs
 

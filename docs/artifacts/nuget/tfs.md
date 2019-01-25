@@ -9,7 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2017
-monikerRange: '>= tfs-2017 < vsts'
+monikerRange: '>= tfs-2017 < azdevops'
 ---
 
 # Use NuGet or dotnet with Team Foundation Server feeds

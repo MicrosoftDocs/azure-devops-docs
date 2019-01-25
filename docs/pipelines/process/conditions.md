@@ -47,7 +47,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 

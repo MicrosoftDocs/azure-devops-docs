@@ -72,7 +72,7 @@ To configure validation builds for an Azure Repos Git repository, you must be a 
 2. Next, hover over the branch you wish to protect, click `...` to display its context menu, and then select **Branch policies**.
 3. Finally, click **Add build policy** and choose the pipeline and methods of protecting the branch as detailed in the Azure Repos documentation [here](../../repos/git/branch-policies.md#build-validation).
 
-::: moniker range=">=tfs-2018 || vsts"
+::: moniker range=">=tfs-2018 || azdevops"
 
 ## Validate contributions from forks
 
@@ -80,7 +80,7 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 ::: moniker-end
 
-::: moniker range=">tfs-2018 || vsts"
+::: moniker range=">tfs-2018 || azdevops"
 
 ## Add a build badge
 

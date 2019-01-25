@@ -54,7 +54,7 @@ Azure using Azure Pipelines.
 
 Create a Jenkins service connection from the **Service connections** section of the project settings page.
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 ::: moniker-end
 
@@ -111,7 +111,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds aren't yet available on TFS.
 
