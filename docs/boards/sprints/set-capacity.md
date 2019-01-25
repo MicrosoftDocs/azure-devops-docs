@@ -190,7 +190,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 	<a id="customize-activity-list">  </a>  
 
-	::: moniker range="vsts"  
+	::: moniker range="azdevops"  
 
 	> [!NOTE]    
 	> Customizing the pick list of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  

@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.reviewer: sancha
-monikerRange: 'tfs-2018 || vsts'
+monikerRange: 'tfs-2018 || azdevops'
 ms.date: 12/17/2018  
 ---  
 
