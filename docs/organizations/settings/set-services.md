@@ -7,7 +7,7 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -23,7 +23,7 @@ You can control which services are available through the web portal by turning a
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 - You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
@@ -65,7 +65,7 @@ If you disable **Boards**, you also disable [**Analytics views**](../../report/a
 
 ## Related articles
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [Change the project visibility, public or private](../public/make-project-public.md)
 - [About user, team, project, and organization-level settings](about-settings.md)

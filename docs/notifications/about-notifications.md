@@ -4,7 +4,7 @@ description: Understand how notifications or alerts are managed in Azure DevOps 
 ms.prod: devops
 ms.technology: devops-collab
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -50,7 +50,7 @@ If your team uses an external service to collaborate&mdash;such as Campfire, Flo
 
 You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and Azure DevOps Services integration](../service-hooks/services/zapier.md).
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azdevops"
 
 ## On-premises SMTP server (TFS)
  

@@ -5,7 +5,7 @@ description: Index to topics for using the Analytics Service on Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: pantal
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

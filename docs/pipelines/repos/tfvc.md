@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
@@ -56,7 +56,7 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]
 > Cleaning is not relevant if you are using a [Microsoft-hosted agent](../agents/hosted.md) because you get a new agent every time in that case.
 ::: moniker-end

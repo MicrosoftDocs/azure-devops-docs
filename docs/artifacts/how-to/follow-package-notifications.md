@@ -4,7 +4,7 @@ description: Following a package in Azure DevOps Services or TFS will allow you 
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 05/10/2018

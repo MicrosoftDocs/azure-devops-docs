@@ -5,9 +5,9 @@ ms.assetid: D46740A0-BEF0-421E-9B64-08287777458D
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 04/26/2018
-ms.author: douge
+ms.author: sdanie
 author: mikedouglasdev
 monikerRange: '>= tfs-2015'
 ---

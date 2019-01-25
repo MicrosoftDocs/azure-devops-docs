@@ -5,7 +5,7 @@ description: View and manage past versions
 ms.assetid: 752b4a6f-4212-4117-a994-03856d0c8ea9
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

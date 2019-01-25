@@ -5,7 +5,7 @@ description:  Conduct a code review in a Git with Azure DevOps Services or TFS, 
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -32,7 +32,7 @@ New to pull requests? [Learn more](/azure/devops/learn/git/git-pull-requests) ab
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. To view pull requests in a specific repository in a project, [navigate](../../project/navigation/go-to-project-repo.md) to that project in the web portal and select **Repos**, **Pull requests**.
 
@@ -103,7 +103,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 When you publish or update a feature branch in Azure Repos, you get a prompt asking if you would like to create a pull request. This prompt is displayed on the **Pull Requests** page and the **Files** page.
 
@@ -177,7 +177,7 @@ For more information about working with the Azure DevOps Services CLI, see [Get 
 
 <a name="finish"></a>
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Draft pull requests
 
@@ -259,7 +259,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Add reviewers to your pull request. 
 
 1. Select the **Overview** tab in the pull request.
@@ -309,7 +309,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Link work items to your pull request:
 
@@ -442,7 +442,7 @@ You can make quick updates to your branch directly from the **Files** tab in the
 
 ![Updating code directly during a pull request in Azure Repos](./_img/pull-requests/pr_editing_changes.png)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Change the target branch of a pull request
 
@@ -516,7 +516,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**, **Notifications** to view your notification settings
 
@@ -596,7 +596,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
 

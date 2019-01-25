@@ -5,7 +5,7 @@ ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

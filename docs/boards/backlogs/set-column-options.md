@@ -5,7 +5,7 @@ description: Set column fields to show and sort fields for a backlog or query in
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -42,7 +42,7 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 
 # [Previous navigation](#tab/previous-nav)
 
- ::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+ ::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 ![Open column options](_img/set-column-open-dialog-s125.png) 
 ::: moniker-end

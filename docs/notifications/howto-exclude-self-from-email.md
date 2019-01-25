@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services & TFS
 description: Learn how to exclude the initiator of an event in Azure DevOps Services from receiving notification emails
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

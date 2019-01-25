@@ -5,7 +5,7 @@ title: Develop a web extension for Azure DevOps Services
 description: Tutorial for creating your first web extension for Azure DevOps Services
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: wismythe
 author: willsmythe

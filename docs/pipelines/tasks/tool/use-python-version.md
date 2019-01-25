@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.author: brcrista
 ms.reviewer: dastahel
 ms.date: 12/13/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Use Python Version task

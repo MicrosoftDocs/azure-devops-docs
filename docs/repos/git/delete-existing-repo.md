@@ -5,7 +5,7 @@ description: Remove an existing Git repo in an Azure DevOps Services or Team Fou
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -37,7 +37,7 @@ Remove unused Git repos from your project when they are no longer needed.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 0. Select **Repos**, **Files**.
 

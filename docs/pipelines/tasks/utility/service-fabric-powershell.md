@@ -5,7 +5,7 @@ ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -29,7 +29,7 @@ deploy to a Service Fabric cluster.
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShellV1.md)]
 ::: moniker-end

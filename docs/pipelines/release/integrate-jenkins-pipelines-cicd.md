@@ -7,7 +7,7 @@ ms.topic: tutorial
 ms.author: ahomer
 author: mlearned
 ms.reviewer: vijayma
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
 ms.custom: "mvc, seodec18"
 ms.date: 01/15/2019
@@ -85,7 +85,7 @@ of your release pipeline. For example, add the **Azure App Service Deploy** task
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Add the **Azure App Service Deploy** task YAML code to a job in the  `.yml` file at the root of the repository.
 

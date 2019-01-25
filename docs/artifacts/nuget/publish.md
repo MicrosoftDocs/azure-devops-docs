@@ -4,7 +4,7 @@ description: Publish NuGet packages to Azure DevOps Services or Team Foundation 
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual

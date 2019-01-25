@@ -5,7 +5,7 @@ description: Define a CI pipeline that builds your Universal Windows Platform (U
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 12/20/2017

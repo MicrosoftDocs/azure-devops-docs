@@ -5,11 +5,11 @@ description: Learn how to sign up for Azure Pipelines.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 09/05/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Sign up for Azure Pipelines

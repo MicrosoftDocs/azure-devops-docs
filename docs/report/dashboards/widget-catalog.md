@@ -8,7 +8,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -29,7 +29,7 @@ Widgets display information and charts on dashboards. Many of them are configura
 To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
@@ -71,7 +71,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, work tracking Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end

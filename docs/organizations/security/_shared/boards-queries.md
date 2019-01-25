@@ -72,8 +72,8 @@ ms.topic: include
 
 </tbody>
 </table>
-Â 
-::: moniker-endÂ Â 
+   
+::: moniker-end      
 
 
 
@@ -131,7 +131,7 @@ ms.topic: include
 
 </tbody>
 </table>
-Â 
-::: moniker-endÂ Â 
+   
+::: moniker-end      
 
 

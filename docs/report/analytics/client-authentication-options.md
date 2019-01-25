@@ -5,7 +5,7 @@ description: Enter or change authentication credentials when you connect to the 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.date: 11/13/2017
 
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**Azure AD**) then Personal Access Tokens (**PAT**s).
 
@@ -32,7 +32,7 @@ In general, the order of authentication options should be the following (in orde
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## Azure Active Directory (Azure AD) 
 
 "Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through OAuth selection when configuring data refresh.
@@ -113,7 +113,7 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
 4. Enter the URL for the OData endpoint and choose **OK**.  
 
-	::: moniker range="vsts"
+	::: moniker range="azdevops"
 
 	<img src="_img/authentication-6.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
 	
@@ -129,7 +129,7 @@ authentication screens are identical. This walkthrough is done using Power BI De
 	- If you are using an AAC, enter your username and password  
 	- If you are using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.  
 
-	::: moniker range="vsts"
+	::: moniker range="azdevops"
 
 	<img src="_img/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
 
@@ -152,7 +152,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 2. Click **File** > **Options and Settings** > **Data Source Settings**. Select the correct URL to the OData Feed and click **Edit**.  
 
-	::: moniker range="vsts"
+	::: moniker range="azdevops"
 
 	<img src="_img/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
 
@@ -166,7 +166,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 3. In the next **Data Source Settings** dialog, click the Edit button under the Credentials setting.   
 
-	::: moniker range="vsts"
+	::: moniker range="azdevops"
 
 	<img src="_img/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
 
@@ -190,7 +190,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 3. Select the correct URL to the OData Feed and click **Edit**.  
 
-	::: moniker range="vsts"
+	::: moniker range="azdevops"
 
 	<img src="_img/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
 
@@ -204,7 +204,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 5. In the next **Data Source Settings** dialog, click the Edit button under the Credentials setting. 
  
-	::: moniker range="vsts"
+	::: moniker range="azdevops"
 
 	<img src="_img/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
 

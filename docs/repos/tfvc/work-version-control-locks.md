@@ -5,7 +5,7 @@ description: Work with version control locks
 ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

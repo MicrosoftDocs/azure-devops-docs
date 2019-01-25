@@ -6,7 +6,7 @@ description: Change picture, set preferred email, or other user preferences from
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -70,7 +70,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 1. To change your user preferences, open your profile menu.
 
 	> [!div class="mx-imgBorder"]  
@@ -101,7 +101,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 # [Previous navigation](#tab/previous-nav)
 
 0. To change your user preferences, open your profile menu.
-	::: moniker range="vsts"  
+	::: moniker range="azdevops"  
 	> [!div class="mx-imgBorder"]  
 	> ![Open profile menu](../../_shared/_img/settings/profile-menu-horz.png)
 	::: moniker-end  

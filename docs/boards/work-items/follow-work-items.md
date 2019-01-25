@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -105,7 +105,7 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 Open **Work>Queries** and choose **Followed work items**.  
 
@@ -121,12 +121,12 @@ From this view, you can view all items you're following across all projects. Als
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 You can also view and manage work that you're following from **Work>Work Items** and pivot to **Following**. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018 || vsts"     
+::: moniker range=">= tfs-2017  <= tfs-2018 || azdevops"     
 
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 

@@ -5,7 +5,7 @@ ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

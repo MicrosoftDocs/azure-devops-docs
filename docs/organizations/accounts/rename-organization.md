@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 01/19/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Rename your organization in Azure DevOps

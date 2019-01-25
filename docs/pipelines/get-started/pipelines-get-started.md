@@ -5,10 +5,10 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
-ms.author: douge
+ms.manager: jillfra
+ms.manager: elbatk
 ms.date: 07/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 # Use Azure Pipelines
 

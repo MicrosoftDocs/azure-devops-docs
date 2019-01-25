@@ -5,7 +5,7 @@ description: Create, use, and delete Git Branches in Visual Studio and from the 
 ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial

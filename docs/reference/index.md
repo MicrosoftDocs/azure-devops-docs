@@ -5,7 +5,7 @@ description: Index to topics for customizing your work tracking experience in Az
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. 
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 Most customers use the [Inheritance process model](../organizations/settings/work/inheritance-process-model.md), which provides a convenient user interface to support customization of the work tracking experience. 
 
 A select few customers use the Hosted XML process model, which requires that they have opted into this method. This model relies on updating XML files and then importing the process template of these files. To learn more, see [Customize your work tracking experience](../organizations/settings/work/hosted-xml-process-model.md).  
@@ -33,7 +33,7 @@ With Azure DevOps Server 2019, you have a choice of using the Inheritance proces
 Team Foundation Server uses the On-premises XML process model to support customizations. This model relies on updating and importing XML files using the **witadmin** command line tool. For details, see [On-premises XML process model](on-premises-xml-process-model.md).
 ::: moniker-end  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## 5-Minute Quickstarts  
 
 - [Define area paths](../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
@@ -51,7 +51,7 @@ Team Foundation Server uses the On-premises XML process model to support customi
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## Tutorials 
 - [Customize a project](../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)   
 - [Create and manage a process](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) 
@@ -80,7 +80,7 @@ Use the guidance provided in the following topics based on the process model or 
 
 ::: moniker-end
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 - **Hosted XML process model**
 	- [Supported upgrade operations](../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 	- [Clone a Hosted XML process to Inheritance](../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  

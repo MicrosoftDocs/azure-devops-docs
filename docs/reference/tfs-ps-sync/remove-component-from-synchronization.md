@@ -5,7 +5,7 @@ description: Remove components configured to participate in data synchronization
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6e0dbfd4-e830-4b5a-a42f-536e744665fa
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

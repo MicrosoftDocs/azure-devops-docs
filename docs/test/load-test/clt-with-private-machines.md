@@ -5,11 +5,11 @@ ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Run cloud-based load tests using your own machines

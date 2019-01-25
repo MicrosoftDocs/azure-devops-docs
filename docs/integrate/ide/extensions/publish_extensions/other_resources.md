@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Visual Studio Marketplace
 description: Describes the new Visual Studio Marketplace
 ms.assetid: 87B662CC-6003-4B4A-9617-05ECBB6AC055
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk

@@ -5,7 +5,7 @@ ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -29,13 +29,13 @@ The simplest way to deploy a database is to create [data-tier package or DACPAC]
 
 # [YAML](#tab/yaml)
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML is not supported in TFS.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 To deploy a DACPAC to an Azure SQL database, add the following snippet to your azure-pipelines.yml file.
 
@@ -126,7 +126,7 @@ If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $A
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
@@ -164,7 +164,7 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML is not supported in TFS.
 
@@ -186,7 +186,7 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 
 The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The easiest way to get started with this task is to be signed in as a user that owns both the Azure DevOps organization and the Azure subscription.
 In this case, you won't have to manually create the service connection.
@@ -194,7 +194,7 @@ Otherwise, to learn how to create an Azure service connection, see [Create an Az
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -206,7 +206,7 @@ You may choose to deploy only certain builds to your Azure database.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -231,7 +231,7 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 

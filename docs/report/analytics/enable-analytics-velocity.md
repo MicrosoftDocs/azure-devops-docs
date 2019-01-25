@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
@@ -27,7 +27,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 - You must have a project defined for an organization in Azure DevOps. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).  
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md).
@@ -74,7 +74,7 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 0. Connect to the web portal for your project and choose **Dashboards**.  
 
 	![Open Dashboards](../dashboards/_img/dashboards-go-to.png)

@@ -5,7 +5,7 @@ title: Extension Manifest Reference| Extensions for Azure DevOps Services
 description: How to create a manifest for your extension to Azure DevOps Services.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

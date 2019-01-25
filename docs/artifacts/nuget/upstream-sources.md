@@ -5,7 +5,7 @@ ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 01/20/2018
@@ -63,7 +63,7 @@ To use your feed and upstream source, follow the instructions to [consume NuGet 
 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 # [New navigation](#tab/new-nav)
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
@@ -75,7 +75,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range=">=tfs-2017 < azdevops"
 
 ![Viewing your cached packages](_img/view-cached-packages.png)
 

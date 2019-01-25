@@ -6,9 +6,9 @@ ms.topic: article
 ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 01/15/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Data protection overview

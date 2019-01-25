@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -47,7 +47,7 @@ Choose the ![ ](../_img/icons/view-options-icon.png) view options icon and move 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
 
 Choose the ![ ](../_img/icons/live-updates-icon.png) **Live updates** icon.  
 

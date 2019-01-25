@@ -6,7 +6,7 @@ ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: alewis
 ms.date: 5/3/2018
@@ -27,14 +27,14 @@ You can select specific sets of servers from a deployment group to receive the d
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!NOTE]
 > Deployment group jobs are not yet supported in YAML.
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 

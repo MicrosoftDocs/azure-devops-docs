@@ -5,7 +5,7 @@ description: Syntax and usage for the WebpageControlOptions to display content d
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 04/05/2017
 ---

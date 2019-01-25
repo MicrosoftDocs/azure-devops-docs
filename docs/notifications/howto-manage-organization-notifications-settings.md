@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services & TFS
 description: Manage organization notification delivery settings
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

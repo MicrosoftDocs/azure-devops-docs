@@ -5,7 +5,7 @@ description: Describes each process template and plug-in file and what is suppor
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

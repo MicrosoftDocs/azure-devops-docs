@@ -5,7 +5,7 @@ description: Create a serverless function to listen to pull request events and p
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: jillfra
 ms.author: yohasna
 author: steved0x
 ms.topic: conceptual

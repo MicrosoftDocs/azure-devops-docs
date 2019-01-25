@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

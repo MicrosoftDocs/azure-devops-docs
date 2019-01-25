@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Shows how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.
 ms.assetid: 9044206f-c993-451d-bcc8-6f3980c90b3e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---

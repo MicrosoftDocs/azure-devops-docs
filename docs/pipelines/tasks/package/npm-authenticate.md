@@ -9,7 +9,7 @@ ms.assetid: ad884ca2-732e-4b85-b2d3-ed71bcbd2788
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Package: npm Authenticate task (for task runners)

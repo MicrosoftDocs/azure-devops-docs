@@ -6,7 +6,7 @@ ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
