@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 || azdevserver-2019'
+monikerRange: '>= tfs-2013'
 ms.date: 03/16/2017
 ---
 

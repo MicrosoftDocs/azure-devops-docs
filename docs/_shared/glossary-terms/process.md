@@ -1,7 +1,5 @@
 ---
 ms.topic: include
-monikerRange: 'vsts'
-
 ---
  
 ::: moniker range="azdevops"  
