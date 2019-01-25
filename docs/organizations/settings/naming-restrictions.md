@@ -1393,7 +1393,6 @@ Workspace names must conform to the following restrictions.
 <a id="page-title-names"></a>
 ## Wiki page title naming conventions
 
-Each wiki page corresponds to a file within the wiki Git repo.  
 [!INCLUDE [temp](../../../docs/project/wiki/_shared/wiki-naming-conventions.md)]
 
 
