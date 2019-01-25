@@ -5,7 +5,7 @@ ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/04/2018
@@ -71,7 +71,7 @@ testing capabilities. It includes all the capabilities
 required for the testing lifecycle - including test planning, authoring,
 execution, and tracking. Get started using the advanced manual 
 testing features with the
-[Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+[Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
 #### Test planning
 

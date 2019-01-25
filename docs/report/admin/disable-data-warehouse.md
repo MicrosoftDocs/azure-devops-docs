@@ -6,7 +6,7 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= tfs-2013 <= tfs-2018 || azdevserver-2019" 

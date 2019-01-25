@@ -5,7 +5,7 @@ ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

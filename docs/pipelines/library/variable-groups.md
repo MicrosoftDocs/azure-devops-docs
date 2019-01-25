@@ -6,10 +6,10 @@ ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/11/2018
+ms.date: 01/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -35,12 +35,19 @@ multiple build and release pipelines. Variable groups are defined and managed in
 1. Open the **Library** tab to see a list of existing variable groups for your project.
 Choose **+ Variable group**.
 
-1. Enter a name and description for the group. Then enter the name and value for each
-   [variable](../release/variables.md#custom-variables)
+1. Enter a name and description for the group.
+ 
+1. Decide if you want the variable group to be accessible for any pipeline if you have more than one
+   by setting the **Allow access to all pipelines** option.
+
+1. If you want to link secrets from an Azure key vault as variables, see the following section of this topic. 
+
+1. Enter the name and value for each [variable](../release/variables.md#custom-variables)
    you want to include in the group, choosing **+ Add** for each one.
-   Decide if you want the variable group to be accessible for any pipeline if you have more than one.
    If you want to encrypt and securely store the value, choose the "lock" icon 
-   at the end of the row. When you're finished adding variables, choose **Save**.
+   at the end of the row.
+
+1. When you're finished adding variables, choose **Save**.
 
    ![Saving a variable group](_img/save-variable-group.png) 
 
@@ -86,11 +93,13 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 ## Use a variable group
 
-# [Schema](#tab/yaml)
+# [YAML](#tab/yaml)
 
 ::: moniker range="> tfs-2018"
 
-To use a variable group, reference it in your variables mapping:
+To use a variable group, open your build or release pipeline, select the **Variables**
+tab, select **Variable groups**, and then choose **Link variable group**.
+Then, reference it in your variables mapping:
 
 ```yaml
 variables:
@@ -106,6 +115,11 @@ variables:
   value: 'value of my-bare-variable'
 ```
 
+> [!Note]
+> You must link your variable groups in the UI before they'll be available to your pipeline.
+> This is a security feature: if you only had to name the variable group in YAML, then anyone who can push code
+> to your repository could extract the contents of secrets in the variable group.
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -114,7 +128,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Example](#tab/designer)
+# [Designer](#tab/designer)
 
 To use a variable group, open your build or release pipeline, select the **Variables**
 tab, select **Variable groups**, and then choose **Link variable group**.

@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Hubot with Azure DevOps Services
 description: Use Hubot with your Azure DevOps Services organization
 ms.assetid: FA7D521A-4B4A-43A8-8443-F86687B46339
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

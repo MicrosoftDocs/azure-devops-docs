@@ -8,7 +8,7 @@ ms.topic: reference
 ms.assetid: ecd05065-521c-451f-acd9-efde10fa1822
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 12/30/2016
 ---
 

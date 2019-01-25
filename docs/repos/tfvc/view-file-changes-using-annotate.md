@@ -5,7 +5,7 @@ description: View file changes using annotate
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

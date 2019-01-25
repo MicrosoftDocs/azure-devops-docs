@@ -57,7 +57,7 @@
       href: ../../notifications/about-notifications.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Process customization
       href: ./work/inheritance-process-model.md
-- name: How-to Guides
+- name: How-to guides
   items:
     - name: Manage profile preferences
       items:
@@ -216,6 +216,8 @@
           href: /rest/api/vsts/processdefinitions/work%20item%20types
         - name: Add a custom control to a form
           href: ../../extend/develop/custom-control.md
+        - name: Data protection overview
+          href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Resources
   items:
     - name: Manage projects

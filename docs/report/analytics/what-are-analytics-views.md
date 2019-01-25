@@ -5,7 +5,7 @@ description: Describes how Analytics views work with Azure DevOps and Power BI i
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -39,7 +39,7 @@ Here we show the default views created for a project based on the Agile process.
 
 When using the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history which are loaded into Power BI.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ![Power BI Azure DevOps Connector (Beta)](../powerbi/_img/pbi-getstarted-123.png)
 

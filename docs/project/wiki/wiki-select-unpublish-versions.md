@@ -7,7 +7,7 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
@@ -49,7 +49,7 @@ If your published wiki corresponds to a product version, you can publish new ver
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 1. To create a new branch from the web portal, open the **Code > Branches** page, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the branch you have previously published, and select **New branch**.
 

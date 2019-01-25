@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
@@ -71,7 +71,7 @@ and let Azure DevOps assign the next available access to them.
 
 Help your team do more with [Marketplace extensions](https://marketplace.visualstudio.com/).
 For example, organization owners can
-try the Test Manager extension free for 90 days.
+try the Test Manager extension for Azure Test Plans free for 90 days.
 During the trial, all users with Basic access can
 [try Test Manager for free](../billing/try-additional-features-vs.md).
 

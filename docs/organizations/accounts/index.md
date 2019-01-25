@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
@@ -83,7 +83,7 @@ Sign up for an organization, add users, and manage permissions and access.
 * [Permission lookup guide (Security)](../security/permissions-lookup-guide.md)
 * [Permissions and groups reference (Security)](../security/permissions.md)
 * [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md)
-* [Migrate from TFS to Azure DevOps](../../articles/migrate-from-tfs.md)
+* [Migrate from TFS to Azure DevOps](../../articles/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
 ## Resources
 

@@ -6,7 +6,7 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -27,7 +27,7 @@ By default, members of the project Contributors group have permissions to contri
 
 ## Default repository permissions  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as Contributors and those granted **Basic** access. To learn more, see [About access levels](access-levels.md).
 ::: moniker-end
 
@@ -82,16 +82,16 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 4. When done, choose **Save changes**. 
 
-::: moniker-endÂ Â 
+::: moniker-end      
 
-::: moniker range="<= tfs-2018"Â Â 
-[!INCLUDEÂ [temp](../../_shared/new-navigation-not-supported.md)]Â Â 
-::: moniker-endÂ Â 
+::: moniker range="<= tfs-2018"      
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end      
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -141,16 +141,16 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 3. Save your changes.  
 
-::: moniker-endÂ Â 
+::: moniker-end      
 
-::: moniker range="<= tfs-2018"Â Â 
-[!INCLUDEÂ [temp](../../_shared/new-navigation-not-supported.md)]Â Â 
-::: moniker-endÂ Â 
+::: moniker range="<= tfs-2018"      
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end      
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 0. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 

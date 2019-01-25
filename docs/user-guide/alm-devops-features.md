@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
@@ -316,7 +316,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <a id="customize-vsts">  </a>
 
@@ -1017,7 +1017,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <a id="package-management"></a>
 
@@ -1440,7 +1440,7 @@ pipelines\tasks\build\_img
 </tbody>
 </table>
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <a id="power-bi">  </a>
 

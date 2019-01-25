@@ -5,7 +5,7 @@ description: XML syntax and usage for all ProcessConfiguration elements to suppo
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -156,7 +156,7 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 </table>
 
 #### Implementation notes
-::: moniker range="vsts"
+::: moniker range="azdevops"
 -   Each backlog is restricted to a total of 1000 work items. You can't modify this limit for Azure DevOps Services.  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= azdevserver-2019"

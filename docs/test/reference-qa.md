@@ -5,7 +5,7 @@ ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/01/2018
@@ -364,11 +364,18 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Where can I download Azure Test Runner client?
 
-**A:** Azure Test runner client can be downloaded from [here](http://aka.ms/ATRDownload).
+**A:** Azure Test Runner client can be downloaded from [here](https://aka.ms/ATPTestRunnerDownload).
 
 ### Q: What are the supported operating systems for Azure Test Runner client?
 
-**A:** Azure Test runner client is currently supported on only Windows. 
+**A:** Azure Test Runner client is currently supported on only Windows. 
+
+### Q: Can I opt out of telemetry for Azure Test Runner client? 
+
+**A:** No. The Azure Test Runner client does not collect any user-identifiable data and so,
+in adherance to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+no opt-out mechanism is provided. 
+
 
 <a name="runoffline"></a>
 ### Q: Can I run tests offline and then import the results?

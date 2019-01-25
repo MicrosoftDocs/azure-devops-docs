@@ -5,12 +5,12 @@ description: Modify or add a work item field to support queries, reports, and wo
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= azdevserver-2019'
-ms.date: 03/20/2018
+ms.date: 01/24/2019
 ---
 
 # Add or modify a field to track work 

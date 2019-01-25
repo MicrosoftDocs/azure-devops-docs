@@ -4,7 +4,7 @@ titleSuffix: TFS
 description: Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013 when using Team Foundation Server & Project Server
 ms.technology: devops-agile
 ms.assetid: d28658f8-d503-4e67-95e3-ab304462daa9
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017

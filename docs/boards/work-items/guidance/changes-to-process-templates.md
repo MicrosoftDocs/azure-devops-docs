@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: reference 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -182,7 +182,7 @@ If you've customized your project and haven't upgraded TFS for a while, you may 
 <li>Categories added: Feature Category </li>
 <li>Process configuration changes: Replaced AgileConfiguration and CommonConfiguration with a single file, [ProcessConfiguration](../../../reference/xml/process-configuration-xml-element.md), supports these additional features: portfolio backlogs, color assignment to WITs, tags added to the default columns on all backlog pages. </li>
 <li>Build changes: Removed the build templates from the build plug-in. You now access build templates through the user interface <a href="https://msdn.microsoft.com/library/dd647547(v=vs.120).aspx">Use the Default Template for your build process</a>. </li>
-<li>Reporting Services updates: Backlog Overview (Scrum), <a href="https://msdn.microsoft.com/library/dd380648.aspx">Stories Overview</a> and <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile), and <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> and <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI). These updates reflect changes required with the introduction of the Feature portfolio backlog work item type as described in this blog post: <a href="http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/22/update-your-overview-and-progress-reports-to-support-the-portfolio-backlogs.aspx">Update your Overview and Progress reports to support the Portfolio backlogs</a>.   
+<li>Reporting Services updates: Backlog Overview (Scrum), <a href="https://msdn.microsoft.com/library/dd380648.aspx">Stories Overview</a> and <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile), and <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> and <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI). These updates reflect changes required with the introduction of the Feature portfolio backlog work item type as described in this blog post: <a href="http://blogs.msdn.com/devops/2013/10/22/update-your-overview-and-progress-reports-to-support-the-portfolio-backlogs.aspx">Update your Overview and Progress reports to support the Portfolio backlogs</a>.   
 <p>To update your project with the latest reports, see [Upload reports to a project](../../../Report/admin/upload-reports.md).</p>
 </li>
 </ul>

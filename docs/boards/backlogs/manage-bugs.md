@@ -6,11 +6,11 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 11/19/2018
+ms.date: 01/23/2019
 ---
 
 # Define, triage, and manage bugs
@@ -30,20 +30,40 @@ In a nutshell, you manage bugs through the following tasks:
 > * Monitor bug assignments and trends    
 
 
-> [!NOTE]  
-> Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
-the items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+> [!IMPORTANT]  
+> Depending on the process chosen to create your project&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+the items in your backlog may be called issues, user stories, product backlog items (PBIs), or requirements. All these work item types are similar: they describe the customer value to be delivered and the work to be performed.   
 >
->By default, user stories on Agile backlogs, product backlog items (PBIs) and bugs appear on Scrum backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+>By default, user stories on Agile backlogs, product backlog items (PBIs) and bugs appear on Scrum backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). The Bug work item type isn't defined for the Basic process. Instead, you should track bugs and code defects using the Issue work item type. 
+
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]    
 
-## Capture bugs  
-You can track bugs in much the same way that you track product backlog items (PBIs) or user stories. Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
+## Define and list bugs  
 
-You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or through one of the [testing tools](../../test/overview.md).  
+When bugs are managed along with requirements, you can add them through the [product backlog](create-your-backlog.md) or [Kanban board](../boards/kanban-quickstart.md). When bugs are managed along with tasks, you can add them to a [sprint backlog or taskboard](../sprints/add-tasks.md). 
 
-### Bug work item form 
+Or, you can define a bug from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or using [test tools](#test-tools). Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
+
+You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query, **Active Bugs** (Agile and CMMI) or **Work in Progress** (Scrum). For other bug related tasks, see the following articles:  
+
+::: moniker range=">= azdevserver-2019"
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+
+::: moniker-end
+
+
+## Bug work item form 
 
 The bug work item form tracks similar information to the one shown for the Scrum process. 
 
@@ -78,7 +98,7 @@ To learn more about working in the old web form, see [Add work items to plan and
 
 ---
 
-### Fields specific to bugs
+## Fields specific to bugs
 
 When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
 
@@ -180,6 +200,7 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 
 [!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
+<a id="test-tools"> </a>
 ## Capture bugs using test tools
 
 You can create bugs during test sessions using one of the following tools: 
@@ -210,7 +231,7 @@ From the query results page, you can quickly move up and down within the list of
 To learn more, see [Triage work items](../queries/triage-work-items.md). 
 
 
-### Assign bugs to a sprint  
+## Assign bugs to a sprint  
 Once bugs have been triaged, it's time to assign them to a sprint to get fixed. By addressing a set of bugs to get fixed every sprint, your team can keep the total number of bugs to a reasonable size.  
 
 When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do PBIs and user stories](../sprints/assign-work-sprint.md) during your sprint planning sessions. 
@@ -347,4 +368,4 @@ By integrating your on-premises TFS with a SonarQube server, you can get the fol
 - Code coverage data from tests  
 - Metrics for .NET and JavaScript  
 
-See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.
+See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/devops/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.

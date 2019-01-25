@@ -5,7 +5,7 @@ description: Configure teams to support portfolio backlogs to track progress acr
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -77,7 +77,7 @@ The first step is to add a team for each feature team and management area. You c
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 <a id="add-team-team-services" /> 
 
@@ -162,10 +162,10 @@ You do this by opening each area path associated with a feature team and changin
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 
 0. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](../../organizations/settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
 
@@ -256,7 +256,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"   
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"   
 
 0.  You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -299,9 +299,14 @@ Repeat this step for all your management areas. Also, if you want to enable roll
 
 ## Define a single sprint cadence for all teams 
 
-If your feature teams use Scrum  or use sprints to assign their work, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). 
+If your feature teams use Scrum or use sprints to assign their work, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). You can rename and edit the default sprints as needed.
 
-Here we've defined the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
+> [!NOTE]  
+> While maintaining a single sprint cadence simplifies project administration, you can create different cadences as needed. For example, some teams may follow a monthly cadence while others follow a 3-week cadence. Simply define a node under the top project node for each cadence, and then define the sprints under those nodes. For example: 
+> - Fabrikam Fiber/CY2019
+> - Fabrikam Fiber/3Week Sprints
+> 
+Here we define the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
 
 ::: moniker range=">= tfs-2017"  
 > [!div class="mx-imgBorder"]  
@@ -344,7 +349,7 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 From **Project Settings>Work>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
  
 > [!div class="mx-imgBorder"]  

@@ -7,34 +7,35 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 layout: HubPage 
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 02/19/2018
-monikerRange: '>= tfs-2013'
+ms.date: 01/11/2019
+monikerRange: '<= azdevserver-2019 || azdevops'
 ---
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 # Azure Pipelines
 ::: moniker-end
-::: moniker range="< vsts"
+
+::: moniker range="< azdevops"
 # Build and release
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Azure Pipelines helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azdevops"
 
 Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <div id="main" class="v2">
     <div class="container">
@@ -703,6 +704,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h3>Step-by-step tutorials</h3>
                                 <p>
                                     <a href="repos/github.md">Build GitHub repositories</a><br />
+                                    <a href="repos/azure-repos-git.md">Build Azure Repos Git repositories</a><br />
                                     <a href="build/ci-build-git.md">Build multiple branches</a><br />
                                     <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br />
                                 </p>
@@ -721,6 +723,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                     <a href="agents/agents.md">Build and release agents</a><br />
                                     <a href="licensing/concurrent-jobs.md">Parallel jobs</a><br />
                                     <a href="release/index.md">Release pipelines</a><br />
+                                    <a href="repos/index.md">Repositories</a><br />
                                 </p>
                             </div>
                         </div>
@@ -750,7 +753,7 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azdevops"
 
 <div id="main" class="v2">
     <div class="container">
@@ -1383,6 +1386,6 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker range="tfs-2013"
 
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
 ::: moniker-end

@@ -5,7 +5,7 @@ description: Build your C++ app using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/27/2018
@@ -39,7 +39,7 @@ This example shows how to build a C++ project. To start, import (into Azure Repo
 https://github.com/adventworks/cpp-sample
 ```
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 ::: moniker-end

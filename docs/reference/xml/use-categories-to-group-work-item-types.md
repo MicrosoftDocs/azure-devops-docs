@@ -5,7 +5,7 @@ description: Generate flexible reports, and support increased integration across
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/04/2017

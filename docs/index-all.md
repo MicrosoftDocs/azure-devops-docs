@@ -8,7 +8,7 @@ ms.topic: hub-page
 ms.prod: devops 
 ms.technology: vs-devops-overview 
 ms.assetid:  
-ms.manager: douge 
+ms.manager: jillfra 
 ms.author: kaelli 
 ms.date: 09/05/2018
 featureFlags:

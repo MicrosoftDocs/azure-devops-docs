@@ -6,7 +6,7 @@ ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -66,7 +66,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 7. Choose (1) **Online Services**, (2) **Azure DevOps (Beta)**, and then **Connect**.
 

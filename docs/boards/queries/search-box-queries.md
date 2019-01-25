@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
@@ -87,7 +87,7 @@ Free text search easily searches across all work item fields, including custom f
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -169,7 +169,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
@@ -229,7 +229,7 @@ Use the `=`, `:`, and `-` operators to specify the operations **Equals**, **Cont
 
 ### From the web portal 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Adhoc search isn't available from Azure DevOps Services. Only [semantic search](#start-search). 
 
 ::: moniker-end

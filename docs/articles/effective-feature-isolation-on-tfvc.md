@@ -5,9 +5,9 @@ ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 04/25/2018
-ms.author: douge
+ms.author: sdanie
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---

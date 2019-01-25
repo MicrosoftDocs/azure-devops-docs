@@ -5,7 +5,7 @@ description: How the Analytics service for Azure DevOps manages changes to the O
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -22,7 +22,7 @@ As the Analytics Service grows and changes we are dedicated to providing consist
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

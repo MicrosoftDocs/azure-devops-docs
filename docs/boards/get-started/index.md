@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-new-user
 ms.topic: conceptual 
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ms.date: 01/11/2019
 ---
 

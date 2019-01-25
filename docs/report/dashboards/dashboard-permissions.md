@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -40,13 +40,22 @@ To learn more about adding and viewing dashboards, see [Add, rename, and delete 
 
 ::: moniker range=">= azdevserver-2019"
 
+
+<a id="permissions">  </a>
+## Prerequisites  
+
+- If you haven't been added as a team member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- Anyone with access to a project, including [stakeholders](/azure/devops/organizations/security/get-started-stakeholder), can view dashboards.
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](/azure/devops/organizations/settings/add-team-administrator), a project admin, or have dashboard permissions. In general, you need to be a team member for the currently selected team to edit dashboards.
+
+
 ## Set default dashboard permissions for a project
 
 By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for members of the Project Administrators group. You can change the default permissions a project from the Project settings. 
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 [!INCLUDE [temp](../../_shared/new-navigation-7.md)] 
 

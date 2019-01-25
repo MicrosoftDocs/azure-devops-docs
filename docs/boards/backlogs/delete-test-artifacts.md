@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -49,7 +49,7 @@ To delete test artifacts, the following restrictions and operations apply:
 
 <a id="test-experience"></a>
 ## Work item types that support the test experience  
-The following image illustrates the set of work item types that support the test experience and work with Microsoft Test Manager (MTM). These work item types are linked together using the link types shown. 
+The following image illustrates the set of work item types that support the test experience and work with Microsoft Test Manager. These work item types are linked together using the link types shown. 
 
   ![Test management work item types](../work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
 

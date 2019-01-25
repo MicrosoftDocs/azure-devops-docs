@@ -5,7 +5,7 @@ description: History command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

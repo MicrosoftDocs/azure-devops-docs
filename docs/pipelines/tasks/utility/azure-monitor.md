@@ -5,7 +5,7 @@ ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -29,7 +29,7 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 
 None
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
 ::: moniker-end

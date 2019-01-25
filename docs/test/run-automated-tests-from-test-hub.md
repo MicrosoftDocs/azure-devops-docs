@@ -5,7 +5,7 @@ ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -141,7 +141,6 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
    You may be able to minimize test times by distributing tests across multiple
    agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
-   [More details](../pipelines/test/set-up-continuous-test-environments-builds.md#unified-agents).
 
    > **Note**: If you are running UI tests such as CodeUI or Selenium
    on physical browsers such as IE, Firefox, or Chrome, the agent

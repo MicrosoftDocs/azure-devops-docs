@@ -5,7 +5,7 @@ description: Occurs when a user tries to create a project and doesn't have the r
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 885f02d8-c070-4709-a34d-c891cad30493
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

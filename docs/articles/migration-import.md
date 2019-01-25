@@ -7,7 +7,7 @@ ms.topic: article
 ms.technology: devops-learn
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.date: 04/13/2018
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 monikerRange: '>= tfs-2013'
@@ -387,15 +387,15 @@ Next you will need to grant access to the Regional Identity Service. You only ne
 
 Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into.  
 
-|    Service                                      |    IP                                 |
-|-------------------------------------------------|---------------------------------------|
-|    Import Service - Central United States       |    52.173.74.9, 52.165.184.188        |
-|    Import Service - West Europe                 |    40.115.43.138, 13.95.15.128        |
-|    Import Service - Australia East              |    13.75.134.204                      |
-|    Import Service - Brazil South                |    104.41.24.164                      |
-|    Import Service - India South                 |    13.71.120.31                       |
-|    Import Service - Canada Central              |    52.237.18.100, 52.237.24.61        |
-|    Import Service - East Asia (Hong Kong)       |    13.75.106.194                      |
+|    Service                                      |    IP                                                      |
+|-------------------------------------------------|------------------------------------------------------------|
+|    Import Service - Central United States       |    52.173.74.9, 52.165.184.188, 20.45.1.234, 13.86.39.123  |
+|    Import Service - West Europe                 |    40.115.43.138, 13.95.15.128, 52.236.146.105             |
+|    Import Service - Australia East              |    13.75.134.204, 40.82.219.41                             |
+|    Import Service - Brazil South                |    104.41.24.164, 20.40.115.123                            |
+|    Import Service - India South                 |    13.71.120.31, 40.81.76.137                              |
+|    Import Service - Canada Central              |    52.237.18.100, 52.237.24.61, 40.82.191.163              |
+|    Import Service - East Asia (Hong Kong)       |    13.75.106.194, 40.81.27.181                             |
   
 Next you will need to grant Azure DevOps Services access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
@@ -404,7 +404,7 @@ Next you will need to grant Azure DevOps Services access. Again, you only need t
 |    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181   |
 |    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103         |
 |    Azure DevOps Services - Australia East                        |    13.75.145.145, 40.82.217.103                                                        |
-|    Azure DevOps Services - Brazil South                          |    191.232.37.247                                                                      |
+|    Azure DevOps Services - Brazil South                          |    20.40.114.3                                                                         |
 |    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130                                                        |
 |    Azure DevOps Services - Canada Central                        |    52.237.19.6, 40.82.190.38                                                           |
 |    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218                                                          |
@@ -413,15 +413,15 @@ Next you will need to grant Azure Pipelines Releases service access. You only ne
 
 **Release Management IPs**
 
-|    Service                                    |    IP                                              |
-|-----------------------------------------------|----------------------------------------------------|
-|    Releases service - United States           |    23.102.153.83, 23.101.127.247, 23.100.85.250    |
-|    Releases service - West Europe             |    13.95.223.69                                    |
-|    Releases service - Australia East          |    13.73.204.151                                   |
-|    Releases service - Brazil South            |    191.235.94.154                                  |
-|    Releases service - India South             |    52.172.15.233                                   |
-|    Releases service - Canada Central          |    52.237.28.171                                   |
-|    Releases service - East Asia (Hong Kong)   |    13.107.6.175                                    |
+|    Service                                    |    IP                                                                        |
+|-----------------------------------------------|------------------------------------------------------------------------------|
+|    Releases service - United States           |    23.102.153.83, 23.101.127.247, 23.100.85.250, 13.86.39.233, 40.80.217.53  |
+|    Releases service - West Europe             |    13.95.223.69, 104.45.64.13                                                |
+|    Releases service - Australia East          |    13.73.204.151, 20.40.176.135                                              |
+|    Releases service - Brazil South            |    191.235.94.154, 20.40.116.69                                              |
+|    Releases service - India South             |    52.172.15.233, 40.81.79.60                                                |
+|    Releases service - Canada Central          |    52.237.28.171, 40.82.189.127                                              |
+|    Releases service - East Asia (Hong Kong)   |    13.107.6.175, 40.81.29.43                                                 |
 
 If you're planning on using the [preview](https://aka.ms/AzureDevOpsImportPreviewFeatures) feature to include Package Management data with your import, then you will need to grant access for that feature as well. 
 
@@ -429,25 +429,25 @@ If you're planning on using the [preview](https://aka.ms/AzureDevOpsImportPrevie
 
 You will need to add exceptions for all three services that make up Package Management.
 
-|    Service                                         |    IP               |
-|----------------------------------------------------|---------------------|
-|    Package Management - United States              |    52.173.148.93, 104.43.253.181, 23.99.179.148 |
-|    Package Management - West Europe                |    104.46.45.12     |
-|    Package Management - Australia East             |    13.73.100.166    |
-|    Package Management - Brazil South               |    191.234.179.224  |
-|    Package Management - India South                |    52.172.11.191    |
-|    Package Management - Canada Central             |    52.237.24.224, 40.85.224.121, 13.71.189.199 |
-|    Package Management - East Asia (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71    |
+|    Service                                         |    IP                                                                                                                                  |
+|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|    Package Management - United States              |    52.173.148.93, 104.43.253.181, 23.99.179.148, 40.80.222.154, 40.119.0.130, 40.119.0.139,  13.86.125.169, 20.41.44.47, 40.90.219.165 |
+|    Package Management - West Europe                |    104.46.45.12, 52.236.148.212                                                                                                        |
+|    Package Management - Australia East             |    13.73.100.166, 20.40.176.15, 40.81.59.69                                                                                            |
+|    Package Management - Brazil South               |    191.234.179.224, 20.40.115.214                                                                                                      |
+|    Package Management - India South                |    52.172.11.191, 40.81.74.79                                                                                                          |
+|    Package Management - Canada Central             |    52.237.24.224, 40.85.224.121, 13.71.189.199, 40.82.188.122                                                                          |
+|    Package Management - East Asia (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71, 40.81.27.130                                                                              |
 
-|    Service                                         |    IP               |
-|----------------------------------------------------|---------------------|
-|    Package Management Feed - United States         |    52.173.251.89    |
-|    Package Management Feed - West Europe           |    40.118.19.43     |
-|    Package Management Feed - Australia East        |    13.70.143.138    |
-|    Package Management Feed - Brazil South          |    191.235.93.87    |
-|    Package Management Feed - India South           |    52.172.8.41      |
-|    Package Management Feed - Canada Central        |    52.237.19.70     |
-|    Package Management Feed - East Asia (Hong Kong) |    52.229.163.155   |
+|    Service                                         |    IP                                                                              |
+|----------------------------------------------------|------------------------------------------------------------------------------------|
+|    Package Management Feed - United States         |    52.173.251.89, 20.45.1.3, 40.67.190.224, 20.41.58.125, 40.119.1.14, 20.45.1.249 |
+|    Package Management Feed - West Europe           |    40.118.19.43, 52.236.146.118                                                    |
+|    Package Management Feed - Australia East        |    13.70.143.138, 20.40.176.80                                                     |
+|    Package Management Feed - Brazil South          |    191.235.93.87, 20.40.116.17                                                     |
+|    Package Management Feed - India South           |    52.172.8.41,40.81.79.49                                                         |
+|    Package Management Feed - Canada Central        |    52.237.19.70, 40.82.188.254                                                     |
+|    Package Management Feed - East Asia (Hong Kong) |    52.229.163.155, 40.81.28.59, 40.81.59.77                                        |
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|

@@ -5,10 +5,10 @@ description: Sets up authentication with twine to Python feeds so you can publis
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 ms.date: 10/31/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Package: Python Twine Upload Authenticate

@@ -7,7 +7,7 @@ ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/14/2018
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Create a project in Azure DevOps and TFS
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  � 
 
 Create a project to establish a repository for source code, where a group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects and must be managed and structured to support your business needs. To learn more about projects and when or when not to create one, see [About projects and scaling your organization](about-projects.md).
 
@@ -39,7 +39,7 @@ If you have a project already, and want to start coding an application project, 
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 To create a project, you must first have [created an organization in Azure DevOps](../../user-guide/sign-up-invite-teammates.md).
 
@@ -70,7 +70,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
 
@@ -107,7 +107,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 

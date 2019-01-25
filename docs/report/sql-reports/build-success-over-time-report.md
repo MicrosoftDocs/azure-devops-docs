@@ -8,7 +8,7 @@ description: Displays the status of the last build for each build category run f
 ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---

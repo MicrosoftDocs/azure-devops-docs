@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/12/2018
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Manage projects in Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Structure your projects by adding area paths, iteration paths, and teams.  
 
@@ -48,7 +48,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 - [Create a project](create-project.md)
 - [Rename a project](rename-project.md)
 - [Delete a project](delete-project.md)
-::: moniker range="vsts"
+::: moniker range="azdevops"
 - [Restore a project](restore-project.md)
 ::: moniker-end
 - [Change service visibility](../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
@@ -58,6 +58,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 - [Default permissions and access](../../organizations/security/permissions-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 - [Permission lookup guide (Security)](../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 ## Resources
 

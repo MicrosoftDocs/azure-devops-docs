@@ -6,9 +6,9 @@ ms.technology: devops-cicd
 ms.topic: overview
 ms.custom: java
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 layout: LandingPage
 monikerRange: '>= tfs-2013'

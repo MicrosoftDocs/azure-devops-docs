@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -19,29 +19,82 @@ ms.date: 11/19/2018
 
 Anytime you create a project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
+- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards or an on-premises Azure DevOps Server or Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
 
-To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
+For details on creating a project using the process of your choice, see [Create a project](../../../organizations/projects/create-project.md). To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
+
+
+::: moniker range="azdevops"
+
+> [!TIP]  
+> To view and manage Inherited process models, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
+
+::: moniker-end
 
 [!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
-The work tracking objects contained within the three default processes and process templates&mdash;Agile, CMMI, and Scrum&mdash;are the same and are summarized below. For simplicity, they are referred to as a "process."
+
+The work tracking objects contained within the  default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. (Currently, the Basic process is in Preview and available from the Azure Boards cloud service.) For simplicity, they are referred to as a "process."
 
 
 <a id="template_intro"></a>
 
-## Agile, CMMI, and Scrum
-The three default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
-Scrum is the most light-weight and CMMI, which stands for Capability Maturity Model Integration, 
-provides the most support for formal processes and change management. 
+::: moniker range="azdevops"
+## Basic, Agile, Scrum, and CMMI
+
+The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
+
+Basic is the most lightweight and is in a selective Preview. 
+Scrum is the next most light-weight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
+
+
+::: moniker-end
+
+::: moniker range="<= azdevserver-2019"
+## Agile, Scrum, and CMMI
+
+The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
+Scrum is the next most light-weight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
+
+::: moniker-end
 
 Choose the process that provides the best fit for your team.  
 
+::: moniker range="<= tfs-2015"
 > [!NOTE]    
->**Feature availability**: Epics are supported on Azure Boards and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
+>Epics are supported on Azure Boards and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
+
+::: moniker-end
 
 <table valign="top" width="100%">
 <tbody>
+            <tr valign="top">
+            <td>
+            <p><b>Basic</b></p>
+            <p>Choose [Basic](../../get-started/track-issues-tasks.md) when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.</p>
+
+             <p>Tasks support tracking Remaining Work.</p>
+            </td>
+        <td>
+            ![Basic work item types](../../get-started/_img/about-boards/basic-process-epics-issues-tasks-2.png)
+        </td>
+        </tr>
+            <tr valign="top">
+            <td>
+            <p><b>Agile</b></p>
+            <p>Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum,
+            and tracks development and test activities separately. This process works great if you want to track user stories and
+            (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.</p>
+
+                <p>You can learn more about Agile methodologies at the
+                <a href="http://www.agilealliance.org/">Agile Alliance</a>.
+                </p>
+             <p>Tasks support tracking Original Estimate, Remaining Work, and Completed Work.</p>
+            </td>
+        <td>
+            ![Agile work item types](_img/ALM_PT_Agile_WIT_Artifacts.png)
+        </td>
+        </tr>
     <tr valign="top">
         <td width="40%">
             <p><b>Scrum</b></p>
@@ -53,7 +106,6 @@ Choose the process that provides the best fit for your team.
             <p>This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).</p>
             <p>Tasks support tracking remaining work only.</p>
         </td>
-
 
             <td width="60%">
             ![Scrum work item types](_img/ALM_PT_Scrum_WIT_Artifacts.png)
@@ -97,7 +149,7 @@ Choose the process that provides the best fit for your team.
 </tbody>
 </table>
 
-If you need more than three backlog levels, you can add more based on the process model you use: 
+If you need more than two or three backlog levels, you can add more based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)  
 - **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md).  
 	
@@ -114,16 +166,19 @@ used by the three default processes.
 <table valign="top">
 <tbody>
     <tr>
-        <td width="31%">
+        <td width="22%">
             <b>Tracking area</b>
         </td>
-        <td width="25%">
-            <b>Scrum</b>
+        <td width="18%">
+            <b>Basic</b>
         </td>
-        <td width="22%">
+        <td width="18%">
             <b>Agile</b>
         </td>
-        <td width="22%">
+        <td width="24%">
+            <b>Scrum</b>
+        </td>
+        <td width="18%">
             <b>CMMI</b>
         </td>
     </tr>
@@ -131,16 +186,15 @@ used by the three default processes.
         <td>
             Workflow states
         </td>
-        <td>
-    <ul>
-        <li>New</li>
-        <li>Approved</li>
-        <li>Committed</li>
-        <li>Done</li>
-        <li>Removed</li>
-    </ul>
-
     </td>
+    <td>
+    <ul>
+    <li>To Do</li>
+    <li>Doing</li>
+    <li>Done</li>
+    </ul>
+    </td>
+
     <td>
     <ul>
     <li>New</li>
@@ -149,8 +203,17 @@ used by the three default processes.
     <li>Closed</li>
     <li>Removed</li>
     </ul>
-
     </td>
+
+   <td>
+    <ul>
+        <li>New</li>
+        <li>Approved</li>
+        <li>Committed</li>
+        <li>Done</li>
+        <li>Removed</li>
+    </ul>
+
     <td>
     <ul>
     <li>Proposed</li>
@@ -165,23 +228,31 @@ used by the three default processes.
     <td>
     Product planning (see note 1)
     </td>
+
     <td>
     <ul>
-    <li>Product backlog item</li>
-    <li>Bug (configurable)</li>
+    <li>Issue</li>
     </ul>
     </td>
+
     <td>
     <ul>
     <li>User story</li>
-    <li>Bug (configurable)</li>
+    <li>Bug (optional)</li>
     </ul>
-
     </td>
+
+    <td>
+    <ul>
+    <li>Product backlog item</li>
+    <li>Bug (optional)</li>
+    </ul>
+    </td>
+
     <td>
     <ul>
     <li>Requirement</li>
-    <li>Bug (configurable)</li>
+    <li>Bug (optional)</li>
     </ul>
 
     </td>
@@ -189,6 +260,11 @@ used by the three default processes.
     <tr>
     <td>
     Portfolio backlogs (2)
+    </td>
+    <td>
+    <ul>
+    <li>Epic</li>
+    </ul>
     </td>
     <td>
     <ul>
@@ -219,20 +295,33 @@ used by the three default processes.
     <li>Task</li>
     </ul>
     </td>
+    <td>
+   <ul>
+    <li>Task</li>
+    <li>Bug (optional)</li>
+    </ul>
+    </td>
                <td>
                    <ul>
                        <li>Task</li>
+    <li>Bug (optional)</li>
                    </ul>
                </td>
     <td>
       <ul>
     <li>Task</li>
+    <li>Bug (optional)</li>
     </ul>
     </td>
     </tr>
     <tr>
     <td>
     Bug backlog management (1)
+    </td>
+    <td>
+      <ul>
+    <li>Issue</li>
+    </ul>
     </td>
     <td>
       <ul>
@@ -254,16 +343,21 @@ used by the three default processes.
     <td>
     Issue and risk management 
     </td>
+    <td>
+      <ul>
+    <li>Issue</li>
+    </ul>
+    </td>
+    <td>
+      <ul>
+    <li>Issue</li>
+    </ul>
+    </td>
         <td>
             <ul>
                 <li>Impediment</li>
             </ul>
         </td>
-    <td>
-    <ul>
-    <li>Issue</li>
-    </ul>
-    </td>
     <td>
     <ul>
     <li>Issue</li>
@@ -418,9 +512,9 @@ If you need to permanently delete work items, see [Remove or delete work items](
 
 <a id="wits-all"></a>
 ## Work item types added to all processes 
-The following WITs are the same across all processes.
+The following WITs are added to all processes except the Basic process.  
 
-  ![Work item types used by MTM, My Work, and Feedback](_img/ALM_PT_WITS_Shared.png)
+  ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](_img/ALM_PT_WITS_Shared.png)
 
 Teams create and work with these types using the corresponding tool: 
 
@@ -431,6 +525,8 @@ Teams create and work with these types using the corresponding tool:
 Work items from these type definitions are not meant to be created manually and therefore are added to the Hidden Types category. 
 Work item types that are added to the Hidden Types category don't appear in the menus used to create new work items.   
 
+::: moniker range="<= tfs-2015"
+
 
 > [!NOTE]    
 >**Feature availability**:  If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md).  
@@ -439,6 +535,7 @@ Work item types that are added to the Hidden Types category don't appear in the 
 >- Shared Parameters added with TFS 2013.2  
 >- Test Plan and Test Suite added with TFS 2013.3  
 
+::: moniker-end
 
 <a id="test-experience"></a>
 ### WITs that support the test experience  
@@ -464,4 +561,4 @@ You can customize a process before or after you create a project that uses that 
 - [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md)  
 
 
-If you have additional questions, search for answers or post a question in the [Team Foundation Server - Team Project and Work Item forum](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads).
+If you have additional questions, see [Azure DevOps support page](https://azure.microsoft.com/en-us/support/devops/).

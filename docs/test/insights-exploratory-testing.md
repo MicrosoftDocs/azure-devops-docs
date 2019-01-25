@@ -5,7 +5,7 @@ ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

@@ -4,7 +4,7 @@ description: Componentize a large codebase with source and package composition u
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/29/2016

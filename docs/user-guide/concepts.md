@@ -6,7 +6,7 @@ description: Before you start to use our products, you'll want to become familia
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -81,7 +81,7 @@ To learn more, see [About projects and scaling your organization](../organizatio
 
 You can configure and customize most services and applications to support your business needs or the way your teams work. For a comprehensive view of what resources can be configured, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md). 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../report/dashboards/dashboards.md) to share information and monitor their progress. 
 - **Source control**: For each [Git repository](../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../repos/tfvc/add-check-policies.md).
@@ -114,3 +114,4 @@ In addition to the pre-built functionality that's available to you, you can add 
 ## Resources
 
 - [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps data protection overview](../articles/team-services-security-whitepaper.md)

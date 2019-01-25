@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 || azdevserver-2019'
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 

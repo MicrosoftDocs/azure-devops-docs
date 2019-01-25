@@ -6,7 +6,7 @@ description: Understand the tools that support connecting to Azure DevOps Servic
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -182,4 +182,4 @@ REST APIs are provided to support building extensions to Azure DevOps Services a
 - [Essential services](services.md)
 - [Software development roles](roles.md)
 - [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
- 
+- [Azure DevOps data protection overview](../articles/team-services-security-whitepaper.md)

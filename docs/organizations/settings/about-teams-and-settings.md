@@ -5,7 +5,7 @@ description: Guide to adding and configuring teams in Azure DevOps Services & Te
 ms.technology: devops-settings
 ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -31,7 +31,7 @@ For example, each feature team can be associated with a single feature area path
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-::: moniker range=">= tfs-2018 || azdevserver-2019"
+::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 
@@ -45,8 +45,7 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 
 These tools reference the team's default area path, iteration path, and selected sprints to automatically filter the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
 
-::: moniker range=">= tfs-2017 || azdevserver-2019"
-
+::: moniker range=">= tfs-2017"
 
 
 <table width="100%">
@@ -460,7 +459,7 @@ When you add a team, a security group is automatically created with the team nam
 
 <img src="../../boards/plans/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker range=">= tfs-2017 || azdevserver-2019"
+::: moniker range=">= tfs-2017"
 You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Simply start typing the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).     
 ::: moniker-end
 

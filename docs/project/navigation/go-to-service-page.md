@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 
 The web portal for Azure DevOps Services or Team Foundation Server (TFS) provides support for software development teams to collaborate through the planning, development, and release cycles. You can manage source code, plan and track work, define builds, run tests, and manage releases. 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 This article shows you how to navigate to functional and administrative tasks available from the web portal. There are three levels of administrative tasks: team, project, and organization.  
 
@@ -43,7 +43,7 @@ If you don't have a project yet, [create one](../../organizations/projects/creat
 
 Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on.  
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]  
 > Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -69,7 +69,7 @@ Within the page you may select a specific view or artifact, such as a team backl
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 You open a service by choosing it from the horizontal blue bar. Then, select from the available pages.
 
@@ -124,7 +124,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
 
@@ -172,12 +172,12 @@ Administrators configure resources for a project and manage project-level permis
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 From a user context, open **Project settings** by choosing the ![ ](../../_img/icons/gear_icon.png) gear icon. 
 ::: moniker-end
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range="tfs-2018 || azdevops"
 
 <a id="admin-intro" />
 <a id="admin-intro-team-services" /> 
@@ -217,7 +217,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![ ](../../_
 
 <a id="collection-admin-context" /> 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## Open Organization settings 
 
 Organization owners and members of the Project Collection Administrators group configure resources for all projects or the entire organization, including adding users, from the Organization settings pages. This includes managing permissions at the organization-level. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
@@ -254,7 +254,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 0. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
 

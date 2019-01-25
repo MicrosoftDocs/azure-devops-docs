@@ -11,7 +11,7 @@ ms.reviewer: divais
 ms.manager: 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts' 
+monikerRange: 'azdevops' 
 ms.date: 11/19/2018 
 ---
 

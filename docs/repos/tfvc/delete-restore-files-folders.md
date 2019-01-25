@@ -5,7 +5,7 @@ description: Delete or restore files and folders using Team Foundation Version c
 ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

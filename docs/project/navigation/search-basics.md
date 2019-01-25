@@ -7,7 +7,7 @@ ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -52,7 +52,7 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 0. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
@@ -138,7 +138,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -215,7 +215,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
@@ -290,7 +290,7 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="tfs-2018 || vsts"  
+::: moniker range="tfs-2018 || azdevops"  
 
 Open **Wiki** and type your keyword or phrase into the search box. 
 

@@ -6,10 +6,10 @@ description: Visual Studio Team Services has been rebranded and is now Azure Dev
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 12/19/2018
-ms.author: douge
-author: erickson-doug
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
 ---
 
