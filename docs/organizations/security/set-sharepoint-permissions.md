@@ -6,7 +6,7 @@ ms.technology: devops-security
 ms.topic: conceptual
 ms.assetid: 
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/02/2017

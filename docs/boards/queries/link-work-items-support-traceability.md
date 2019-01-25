@@ -5,7 +5,7 @@ description: Manage dependencies, link work items to other work items, code and 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -61,7 +61,7 @@ Also, you can use the context menu in the web portal or Team Explorer.
 > [!NOTE]
 > For each work item, you can add a maximum of 1000 links to other work items.  
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 <a id="link-remote-work-items">  </a>
 ## Cross-organization work item linking 
 
@@ -222,7 +222,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 ::: moniker-end
 
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 <a id="link-github">  </a>
 ## Work items linked to GitHub commits and pull requests  
 

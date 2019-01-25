@@ -7,11 +7,11 @@ ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/05/2018 
+ms.date: 01/23/2019 
 ---
 
 
@@ -19,9 +19,13 @@ ms.date: 12/05/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-This article provides a comprehensive reference for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
+This article provides a comprehensive reference for each built-in group and permission. It's a lot of information describing each built-in security group as well as each permission. 
 
-::: moniker range="vsts"
+For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and groups](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md) which provide permissions for select areas. 
+
+To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
+
+::: moniker range="azdevops"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Work tracking, dashboard, & analytics permissions  |  
@@ -370,12 +374,12 @@ For each project that you create, the system creates the followings project-leve
 	</tr>
 	<tr>
 		<td>Contributors</td>
-		<td>Has permissions to contribute fully to the project code base and work item tracking.</td>
+		<td>Has permissions to contribute fully to the project code base and work item tracking. The main permissions they don't have or those that manage or administer resources.</td>
 		<td>By default, the team group created when you create a project is added to this group, and any user you add to the team will be a member of this group. In addition, any team you create for a project will be added to this group by default, unless you choose a different group from the list.</td>
 	</tr>
 	<tr>
 		<td>Readers</td>
-		<td>Has permissions to view the project but not modify it.</td>
+		<td>Has permissions to view project information, the code base, work items, and other artifacts but not modify them.</td>
 		<td>
 			Assign to members of your organization who you want to provide view-only permissions to a project. These users will be able to view backlogs, boards, dashboards, and more, but not add or edit anything. Typically, these are members who aren't granted an access level ([Basic, Stakeholder, or other level](../../organizations/security/access-levels.md)) within the organization or on-premises deployment.
 			who want to be able to view work in progress.
@@ -1121,7 +1125,7 @@ You manage the security of each [Git repository](set-git-tfvc-repository-permiss
 > If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
 ::: moniker-end
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 
 > [!div class="mx-imgBorder"]  
 > ![Git repository permissions dialog](_img/permissions/git-repo-permissions-vsts.png)
@@ -1710,12 +1714,12 @@ Consider granting the Contribute permissions to users or groups that require the
 ## Delivery Plans (object-level)   
 
 You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!NOTE]  
 > For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 <table valign="top" width="100%">
@@ -1747,7 +1751,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 <a id="inherited-process">  </a>
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 
 ## Process (object-level)   
@@ -1897,7 +1901,7 @@ In addition, you can assign approvers to specific steps within a release definit
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release definition, or environment level.
 
->  [!div class="mx-tdCol2BreakAll"]  
+>  [!div class="mx-tdCol2BreakAll"] 
 > | Permission | Description | Scopes |
 > |------------|-------------|--------|
 > | **Administer release permissions** | Can change any of the other permissions listed here. | Project, Release definition, Environment |

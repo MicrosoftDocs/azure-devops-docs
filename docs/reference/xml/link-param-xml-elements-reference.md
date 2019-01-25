@@ -5,7 +5,7 @@ description: Adds a hyperlink to a field or a standalone label on a work item fo
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6651e599-52d4-4edc-87cf-264d64befbac
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 04/05/2017

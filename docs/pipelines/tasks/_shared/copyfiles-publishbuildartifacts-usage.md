@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ## Usage
 
 A typical pattern for using this task is:

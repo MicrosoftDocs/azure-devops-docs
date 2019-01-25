@@ -5,7 +5,7 @@ description: How to guide to query the OData Analytics service for an organizati
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: kokosins
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -32,7 +32,7 @@ Project-scope queries help answer questions about a single project whereas organ
 ## Project-scoped queries
 Base URL for project level queries:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/

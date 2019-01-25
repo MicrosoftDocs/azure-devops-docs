@@ -4,7 +4,7 @@ description: Customize how work item fields map to Project fields for Team Found
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 09/08/2017
 ---

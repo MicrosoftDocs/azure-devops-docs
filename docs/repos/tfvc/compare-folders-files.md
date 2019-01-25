@@ -5,7 +5,7 @@ description: Compare folders and files
 ms.assetid: 62dd76a4-8315-4415-8bd9-4cbddc689e7f
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

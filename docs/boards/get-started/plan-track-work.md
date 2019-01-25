@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
 robots: NOINDEX, NOFOLLOW
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

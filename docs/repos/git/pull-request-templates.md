@@ -5,12 +5,12 @@ description:  Learn how to standardize pull request descriptions using pull requ
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
 ms.date: 12/10/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Improve pull request descriptions using templates

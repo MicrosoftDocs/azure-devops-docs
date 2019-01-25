@@ -6,7 +6,7 @@ ms.custom: seodec18
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/26/2016
@@ -48,7 +48,7 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global build retention policy settings can be managed from the **Pipelines** settings of your organization or project collection:
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 * Azure Pipelines: `https://dev.azure.com/{your_organization}/_admin/_buildQueue`
 

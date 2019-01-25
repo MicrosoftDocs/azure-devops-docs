@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.author: mlearned
 author: mlearned
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.custom: "mvc, seodec18"
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Deploy your ASP.NET Core app as a container

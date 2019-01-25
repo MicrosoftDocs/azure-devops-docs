@@ -5,7 +5,7 @@ ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -67,7 +67,7 @@ Specify the branches for each repository that you want Code
 Search to index in the **Options** tab of the **Repositories** section in the
 [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
-::: moniker range="= vsts"
+::: moniker range="azdevops"
 
 ![Configure Git branches to include in search](_img/advanced-work-item-search-syntax/configure-branches.png)
 

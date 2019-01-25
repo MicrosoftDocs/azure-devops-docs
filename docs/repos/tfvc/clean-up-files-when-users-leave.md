@@ -5,7 +5,7 @@ description: Clean Up Files When Users Leave
 ms.assetid: 7e8249cc-2933-4caa-8bee-ea93a3aff01a
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

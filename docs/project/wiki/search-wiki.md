@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
@@ -41,12 +41,12 @@ Choose **Overview>Wiki** and enter your keyword or phrase into the search box.
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range="tfs-2018 || azdevops"
 
 Open **Wiki** and enter your keyword or phrase into the search box.
 

@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -73,7 +73,7 @@ The specific set of formatting features differs depending on the client you use.
 
 # [Browser](#tab/browser) 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The editor toolbar appears below each text box that accepts formatted text. It only becomes active when you move your cursor within the text box.
 
@@ -194,7 +194,7 @@ You can continue viewing the attachments as a list or switch to a grid view to s
 
 ::: moniker-end 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 You can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.
 
 ::: moniker-end 

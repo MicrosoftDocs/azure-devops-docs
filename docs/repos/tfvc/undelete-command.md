@@ -5,7 +5,7 @@ description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

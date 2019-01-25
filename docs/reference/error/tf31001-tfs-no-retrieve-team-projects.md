@@ -5,7 +5,7 @@ description: Occurs when Team Explorer can't display the list of projects define
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a8f6ad82-e1e0-4659-8e97-c88ece4c23f5
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

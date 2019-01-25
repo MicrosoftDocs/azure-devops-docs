@@ -9,7 +9,7 @@ ms.assetid: 068D5909-43E6-48C5-9E01-7C8A94816220
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 01/18/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Helm Tool Installer task

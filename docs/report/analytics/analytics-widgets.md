@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn about the widgets generated from data from the Analytics Service that you can add to a dashboard in Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE

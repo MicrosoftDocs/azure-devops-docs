@@ -5,7 +5,7 @@ title: Contributions Model Fundamentals | Extensions for Azure DevOps Services
 description: Overview of the contribution model, including an overview of contributions, types, and targeting other contributions
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

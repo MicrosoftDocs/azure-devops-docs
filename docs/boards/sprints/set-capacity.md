@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.custom: boards-sprints
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -78,7 +78,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 0. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -153,7 +153,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 0. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
@@ -188,10 +188,26 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	![TFS 2015, Set Capacity](_img/capacity/set-sprint1-capacity.png)"   
 	::: moniker-end  
 
-	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	<a id="customize-activity-list">  </a>  
+
+	::: moniker range="azdevops"  
+
 	> [!NOTE]    
-	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) field by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
+	> Customizing the pick list of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  
+
+	::: moniker-end
+
+	::: moniker range="azdevserver-2019"  
+	> [!NOTE]    
+	> If you the On-premises XML process model to customize work tracking, you can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  If you use the Inheritance process model, customization of the pick list isn't supported at this time. 
+
+	::: moniker-end
+
+	::: moniker range="<= tfs-2018"  
+
+	> [!NOTE]    
+	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
+
 	::: moniker-end
 
 
@@ -232,7 +248,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 
 For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
 
@@ -277,7 +293,7 @@ To remove a user, choose the option from the users ![ ](../../_img/icons/actions
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
 ![Capacity planning, Remove a user](_img/capacity/capacity-planning-remove-user.png) 
 ::: moniker-end
 

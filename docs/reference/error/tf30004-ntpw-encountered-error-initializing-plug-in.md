@@ -4,7 +4,7 @@ description: The Wizard was not able to initialize the plug-in after an attempt 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 40cfd0f7-87fb-451e-a49d-7ffea4011e24
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 02/22/2017

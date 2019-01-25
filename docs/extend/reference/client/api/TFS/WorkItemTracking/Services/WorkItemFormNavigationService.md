@@ -4,7 +4,7 @@ description: Host service for opening the work item form
 ms.assetid: 924f89e9-0914-2308-8090-b0543fac0556
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk

@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azdevops'
 title: Team Room Overview | REST API Reference for Team Foundation Server
 description: Work with team rooms, users, and messages programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 8A15216E-A1DC-423A-939C-981C95648307
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

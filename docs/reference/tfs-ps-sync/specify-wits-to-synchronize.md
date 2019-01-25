@@ -5,7 +5,7 @@ description: Specify the types of work items that you want to participate in syn
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: fc034114-fce1-48ca-a4e9-df41081a4bbb
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

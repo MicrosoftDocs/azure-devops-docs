@@ -5,12 +5,12 @@ description: Resource limits applied to Git operations
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
 ms.date: 04/23/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 

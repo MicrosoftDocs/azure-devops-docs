@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.author: dastahel
 ms.reviewer: lukillgo
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Use Ruby Version task

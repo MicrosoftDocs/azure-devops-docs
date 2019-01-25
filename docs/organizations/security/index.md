@@ -5,7 +5,7 @@ description: Index to permissions, groups, security, roles, and access level top
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

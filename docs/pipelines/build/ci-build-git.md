@@ -7,7 +7,7 @@ ms.author: mlearned
 ms.topic: conceptual
 ms.author: mlearned
 author: mlearned
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 10/19/2018
 ms.custom: "mvc, seodec18"
@@ -43,7 +43,7 @@ A common workflow with Git is to create temporary branches from your master bran
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Unless you specify a [trigger](../yaml-schema.md#trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features/*` branches to be automatically built.
 
@@ -54,7 +54,7 @@ trigger:
 ```
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -93,14 +93,14 @@ The master branch typically produces deployable artifacts such as binaries.  You
 
 Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ```yaml
 - task: PublishBuildArtifacts@1
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 ```
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -134,7 +134,7 @@ Use policies to protect your branches by requiring successful builds before merg
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds. 
@@ -150,7 +150,7 @@ For more details, see [Triggers](../build/triggers.md).
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 

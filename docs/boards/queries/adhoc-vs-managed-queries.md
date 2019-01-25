@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
@@ -46,7 +46,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"     
+::: moniker range="<= tfs-2018 || azdevops"     
 
 You perform semantic or adhoc searches using the work item search box (shown below). 
 
@@ -56,7 +56,7 @@ In the search box, check that the text says _Search work items_. If it doesn't, 
 
 You add and run managed queries using the built-in query-editor available from the **Work>Queries** page.
 ::: moniker-end 
-::: moniker range="vsts"	
+::: moniker range="azdevops"	
 > [!div class="mx-imgBorder"]
 > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 ::: moniker-end

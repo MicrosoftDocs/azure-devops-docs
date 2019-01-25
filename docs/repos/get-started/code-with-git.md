@@ -5,12 +5,12 @@ description: Share code in a Git repo and a new team project
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.date: 09/10/2018
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Code with Git

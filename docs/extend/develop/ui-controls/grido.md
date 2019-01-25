@@ -5,7 +5,7 @@ ms.assetid: 9933E798-3D75-A5FD-919E-F38EA313872B
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

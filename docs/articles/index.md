@@ -5,7 +5,7 @@ description: A public collection of specific topics shared for partners.
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 01/04/2018
 ms.author: kaelli
 author: kaelli

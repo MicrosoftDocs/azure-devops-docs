@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
 robots: NOINDEX, NOFOLLOW
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'

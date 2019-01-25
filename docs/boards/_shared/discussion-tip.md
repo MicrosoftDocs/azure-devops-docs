@@ -14,7 +14,7 @@ Use the **Discussion** section to add and review comments made about the work be
 
 ::: moniker-end 
 
-::: moniker range="vsts"   
+::: moniker range="azdevops"   
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 

@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
@@ -30,7 +30,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]   
 > Users with **Stakeholder** access for public projects are allowed to add new tags. 
 ::: moniker-end
@@ -58,7 +58,7 @@ To add several tags at one time, type a comma between tags. Tags are case sensit
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 > [!NOTE]   
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
