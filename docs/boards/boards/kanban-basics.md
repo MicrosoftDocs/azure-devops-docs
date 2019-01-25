@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -35,8 +35,10 @@ Review this article to gain an understanding of how to configure and start worki
 > * View the Cumulative flow chart     
 > * How to turn live updates on or off  
 
+> [!NOTE]  
+> Both Kanban boards and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).
 
-User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
+User stories and bugs correspond to types of work items. You use [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
 
 [!INCLUDE [temp](../_shared/prerequisites-kanban.md)]

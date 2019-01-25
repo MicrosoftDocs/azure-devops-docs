@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -66,7 +66,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 
 Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
 
@@ -90,7 +90,7 @@ For example, here we choose to view the Work in Progress dashboard.
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"  
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 ::: moniker-end  
 
@@ -147,7 +147,7 @@ To configure a widget, add the widget to a dashboard, choose open the ![actions 
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 Additional information is provided to configure the following widgets: 
 - [Burndown/burnup](configure-burndown-burnup-widgets.md)
 - [Cumulative flow](cumulative-flow.md)
@@ -185,7 +185,7 @@ Just as you have to be a team or project admin to add items to a dashboard, you 
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 Choose ![ ](_img/icons/edit-icon.png) **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
 
 To remove a widget, choose the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
@@ -230,7 +230,7 @@ When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](
 You can copy a widget to another dashboard defined for your team. If you want to move widgets you have configured to another dashboard, this is how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 To copy a configured widget to another team dashboard, choose the ![Actions icon](../../_img/icons/actions-icon.png) actions icon and select **Copy to dashboard** and then the dashboard to copy it to. 
 
 > [!div class="mx-imgBorder"]  
@@ -245,7 +245,7 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 <img src="_img/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 2px solid #C3C3C3;" />  
 ::: moniker-end
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azdevserver-2019"
 ## Analytics Service widgets 
 The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
 - [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)

@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azdevops'
 title: Work Item Types | REST API Reference for Team Foundation Server
 description: Work with work item types programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: C58D078F-9310-4BE9-95A5-715CB70370FD
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

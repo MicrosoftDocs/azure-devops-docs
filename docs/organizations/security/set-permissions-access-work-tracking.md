@@ -5,7 +5,7 @@ description: How to grant or restrict access to work tracking tasks for Azure De
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -167,7 +167,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
@@ -199,7 +199,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 	![Open the security dialog](../../reference/_img/ALM_CW_OpenSecurityDialog.png)  
 
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
 0. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
 	For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
@@ -264,7 +264,7 @@ In this example, we grant members assigned to the team administrator role, who b
 > [!div class="mx-imgBorder"]  
 > ![Set project-level permissions for a custom group, Team Admin](_img/set-permissions-project-level-dialog.png)  
 
-::: moniker-endÂ Â 
+::: moniker-end      
 
 ::: moniker range=">= tfs-2017"
 
@@ -283,7 +283,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 ![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
-::: moniker-endÂ Â 
+::: moniker-end      
 
 ::: moniker range=">= azdevserver-2019"
 

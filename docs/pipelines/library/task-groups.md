@@ -6,7 +6,7 @@ ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018

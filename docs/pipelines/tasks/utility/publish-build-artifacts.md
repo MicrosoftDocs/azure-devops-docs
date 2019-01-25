@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3**
 
-Use this task in a build or release pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
+Use this task in a build pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
 
 > [!TIP]
 > Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).

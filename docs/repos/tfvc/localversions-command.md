@@ -5,7 +5,7 @@ description: LocalVersions Command
 ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

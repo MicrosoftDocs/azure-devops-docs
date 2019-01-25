@@ -6,11 +6,11 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
 ms.date: 1/8/2019
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Resources

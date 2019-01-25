@@ -6,12 +6,12 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Private-to-public migration checklist
@@ -26,7 +26,7 @@ The checklist provided in this article indicates those items you may want to rev
 ## Account identities and settings
 When you invite someone to become a member of a project, that person will gain access to additional resources and details about the account. Specifically they will have access to the following information. 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > | Area             | Additional details a member receives                |
 > |------------------|-----------------------------------------------------|
 > | Identities       | List of all members added to the organization       |
@@ -44,7 +44,7 @@ The link types used to construct these links, as illustrated in the following im
 
 Five kinds of cross-project links expose content from the private project.
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > | Link type            | Exposed content         |
 > |----------------------|-------------------------|
 > | Versioned Item       | Project name, file name |

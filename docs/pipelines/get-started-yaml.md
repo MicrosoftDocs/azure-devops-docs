@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/19/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Create your first pipeline

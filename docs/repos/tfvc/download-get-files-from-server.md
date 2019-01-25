@@ -5,7 +5,7 @@ description: Download (get) files from the Server
 ms.assetid: 33798544-9e9e-4200-b7d8-127fb088c735
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

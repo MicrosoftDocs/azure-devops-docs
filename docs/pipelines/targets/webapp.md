@@ -5,7 +5,7 @@ services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-manager: douge
+ms.manager: jillfra
 ms.assetid:
 ms.custom: seodec18
 ms.author: ahomer
@@ -46,7 +46,7 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The preceding sample code includes an `azure-pipelines.yml` file at the root of the repository.
 This file contains code to build, test, and publish the source as an artifact.
@@ -54,7 +54,7 @@ To learn more about building .NET Core apps, see [Build .NET Core projects with 
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -72,7 +72,7 @@ Then read through the rest of this topic to learn some of the more common change
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
 
@@ -131,7 +131,7 @@ For information on Azure service connections, see the [following section](#endpo
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -158,13 +158,13 @@ input. The Azure service connection stores the credentials to connect from Azure
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -172,7 +172,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The easiest way to get started with this task is to be signed in as a user who owns both the Azure DevOps Services organization and the Azure subscription.
 In this case, you won't have to manually create the service connection.
@@ -180,7 +180,7 @@ Otherwise, to learn how to create an Azure service connection, see [Create an Az
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -192,7 +192,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application by using the following:
 
@@ -204,7 +204,7 @@ By default, your deployment happens to the root application in the Azure Web App
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -221,7 +221,7 @@ enter its name in the **Virtual Application** property of the **Azure App Servic
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
@@ -245,7 +245,7 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 ```
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -262,7 +262,7 @@ Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to sp
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 You can use [jobs](../process/phases.md) in your YAML file to set up a pipeline of deployments.
 By using jobs, you can control the order of deployment to multiple web apps.
@@ -305,7 +305,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -328,7 +328,7 @@ a Web.config transformation or by substituting variables in your Web.config file
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 The following snippet shows an example of variable substitution:
 
@@ -358,7 +358,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 
@@ -381,7 +381,7 @@ You can choose to deploy only certain builds to your Azure Web App.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -402,7 +402,7 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 
 YAML builds are not yet available on TFS.
 

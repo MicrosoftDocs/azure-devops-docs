@@ -5,7 +5,7 @@ ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 2/6/2018

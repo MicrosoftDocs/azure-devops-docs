@@ -5,7 +5,7 @@ description: Understand how to change some parts of the work item type definitio
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 85408917-99ad-4153-8377-661801c85b14
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 01/20/2017
 ---

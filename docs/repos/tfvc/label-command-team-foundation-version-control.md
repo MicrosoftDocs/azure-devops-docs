@@ -5,7 +5,7 @@ description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

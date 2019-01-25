@@ -60,12 +60,6 @@
     href: targets/webapp.md
   - name: Linux VM
     href: apps/cd/deploy-linuxvm-deploygroups.md
-  - name: npm
-    href: artifacts/npm.md
-  - name: NuGet
-    href: artifacts/nuget.md
-  - name: PyPI
-    href: targets/pypi.md
   - name: SCVMM
     href: targets/scvmm.md
   - name: VMware
@@ -184,6 +178,8 @@
         href: process/deployment-group-phases.md
       - name: Multiple jobs
         href: process/multiple-phases.md
+      - name: Service containers
+        href: process/service-containers.md
     - name: Conditions
       href: process/conditions.md
     - name: Expressions
@@ -249,6 +245,8 @@
       href: release/define-multistage-release-process.md
     - name: Use approvals and gates
       href: release/deploy-using-approvals.md
+    - name: Integrate with ServiceNow
+      href: release/approvals/servicenow.md
     - name: Deploy pull request builds
       href: release/deploy-pull-request-builds.md
     - name: Jenkins CI for Azure Pipelines Azure CD
@@ -267,10 +265,6 @@
     items:
     - name: Test glossary
       href: test/test-glossary.md
-    - name: Set up environments
-      href: test/set-up-continuous-test-environments-builds.md
-    - name: Unit test with builds
-      href: test/getting-started-with-continuous-testing.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
     - name: Review test results
@@ -299,6 +293,8 @@
         href: packages/jenkins.md
   - name: Migrate
     items:
+    - name: Migrate from Travis
+      href: migrate/from-travis.md
     - name: Migrate from XAML builds
       href: build/migrate-from-xaml-builds.md
     - name: Migrate from Lab Management

@@ -5,7 +5,7 @@ description: Understand how to map enterprise projects using Team Foundation Ser
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b759773e-1c79-4e2e-abdf-522e1a34fdfb
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017

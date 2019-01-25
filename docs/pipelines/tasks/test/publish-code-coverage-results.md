@@ -5,7 +5,7 @@ ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: vinojos
 ms.date: 12/07/2018
@@ -16,15 +16,16 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build pipeline to publish code coverage results to Azure Pipelines or TFS,
-which were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format.
-In addition, there are built-in tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md), [Ant](../build/ant.md),
-[Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md) and [Gradle](../build/gradle.md)
-that provide the option to publish code coverage data to the pipeline.
+Use this task in a build pipeline to publish code coverage results produced when
+running tests to Azure Pipelines or TFS in order to obtain coverage reporting.
+The task supports popular coverage result formats such as
+[Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
 
-The example below shows the **Ant** task with the option to publish code coverage data in Cobertura or JaCoCo format.
-
-![Publish code coverage results ant](_img/publish-code-coverage-result-ant.png)
+Tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md),
+[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+also provide the option to publish code coverage data to the pipeline.
+If you are using these tasks, you do not need a separate [Publish Test Results task](publish-test-results.md)
+in the pipeline.
 
 ## Demands
 
@@ -68,7 +69,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 

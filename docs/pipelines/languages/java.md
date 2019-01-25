@@ -4,7 +4,7 @@ description: Building Java apps in Azure Pipelines, Azure DevOps, & Team Foundat
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel

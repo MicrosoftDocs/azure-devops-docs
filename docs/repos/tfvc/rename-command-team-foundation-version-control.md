@@ -5,7 +5,7 @@ description: Rename Command (Team Foundation Version Control)
 ms.assetid: 5d754d91-41b0-40bd-a57a-aa22518deb23
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

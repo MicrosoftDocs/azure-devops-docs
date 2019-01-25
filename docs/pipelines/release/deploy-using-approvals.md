@@ -6,7 +6,7 @@ ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -201,4 +201,4 @@ auditing capabilities you may require.
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy to IIS web servers on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+> [Integrate with ServiceNow change management](approvals/servicenow.md)

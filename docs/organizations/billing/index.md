@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Billing for Azure DevOps
 
@@ -28,7 +28,7 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azdevops"
 
 ## Billing for Microsoft Team Foundation Server (TFS)  
 
@@ -39,7 +39,7 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## 5-Minute quickstarts  
 
@@ -81,6 +81,7 @@ Guidance for Cloud Solution Providers
 * [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
 * [About access levels](../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
 * [Default permissions & access](../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
+* [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json)
 
 ::: moniker-end
 

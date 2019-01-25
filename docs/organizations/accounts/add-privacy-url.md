@@ -5,18 +5,18 @@ description: Learn how to add your Organization’s privacy URL to comply with t
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/21/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Add a privacy URL for your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this article, we explain how to add your privacy URL to your organization in Azure DevOps. Any member of your organization can add the privacy URL.
+In this article, we explain how to add your privacy URL to your organization in Azure DevOps. Your privacy URL links to your organization’s document that describes how you handle both internal and external guest data privacy. Any member of your organization can add the privacy URL.
 
 > [!NOTE]
 > If you’re interested in viewing or deleting personal data, please see [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure). If you’re looking for general info about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
@@ -32,3 +32,5 @@ In this article, we explain how to add your privacy URL to your organization in 
    ![Screenshot showing where you can add your privacy URL in Organization settings](_img/add-privacy-url/privacy-url-in-organization-settings.png)
 
 A link is added to your organization’s document that describes how you handle both internal and external guest data privacy.
+
+To learn more about how we manage and protect your data, read our [Data Protection Overview](../../articles/team-services-security-whitepaper.md).

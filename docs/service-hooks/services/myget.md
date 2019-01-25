@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: MyGet with Azure DevOps Services
 description: Use MyGet with your Azure DevOps Services organization
 ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

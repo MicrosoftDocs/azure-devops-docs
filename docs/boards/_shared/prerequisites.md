@@ -5,7 +5,7 @@ ms.topic: include
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 

@@ -6,7 +6,7 @@ titleSuffix: TFS
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azdevserver-2019'

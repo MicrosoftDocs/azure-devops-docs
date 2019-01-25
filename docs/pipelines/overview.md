@@ -5,12 +5,12 @@ description: Build and deploy your app using Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B1233296-C583-4F2E-981C-82D6A39CFEE4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/31/2018
 ms.topic: overview
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azdevops'
 ---
 
 # Start using Build and Release

@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: reference  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,9 +17,9 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
+Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/track-issues-tasks.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 ::: moniker-end  
 
@@ -278,7 +278,7 @@ When adding custom fields, note the following limits:
 *   A maximum of 512 fields can be defined per process   
 
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 ## Add and modify fields    
 To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../../organizations/settings/work/customize-process.md).  
 
@@ -297,7 +297,7 @@ There are several non-changeable and virtually hidden attributes for each field.
 
 ![Work item field explorer](../../../reference/_img/IC633020.png)
 
-For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/b/visualstudioalm/archive/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
+For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
 
 To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio):
  - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../../reference/process/new-work-item-experience.md). 

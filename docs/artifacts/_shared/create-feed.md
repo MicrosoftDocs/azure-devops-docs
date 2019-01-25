@@ -5,7 +5,7 @@ ms.topic: include
 A feed is a container for packages.
 You consume and publish packages through a particular feed.
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 1. Go to **Azure Artifacts**:
 
@@ -51,7 +51,7 @@ You consume and publish packages through a particular feed.
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range=">=tfs-2017 < azdevops"
 
 1. Go to the **Packages** page:
 

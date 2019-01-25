@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -122,7 +122,7 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 ::: moniker-end
 
 ### Add custom fields
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
 ::: moniker-end

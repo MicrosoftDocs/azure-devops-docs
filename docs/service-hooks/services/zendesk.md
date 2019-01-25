@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Zendesk with Azure DevOps Services
 description: Use Zendesk with your Azure DevOps Services organization
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

@@ -6,10 +6,10 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 12/13/2018
+ms.date: 01/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -99,7 +99,7 @@ Both of these are considered user-defined variables.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 YAML builds can have variables defined at the pipeline or [job](../process/phases.md) level.
 They can also access variables defined when the build is queued.
@@ -306,7 +306,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 YAML builds are not yet supported on TFS.
 ::: moniker-end
 
@@ -340,7 +340,7 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 **Important:** By default with GitHub repositories, secret variables associated with your build pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
@@ -380,7 +380,7 @@ This works: ***
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -403,6 +403,7 @@ You can also pass them explicitly into a script from your build task (for exampl
 You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
 If a variable appears in the `variables` block of a YAML file, it is fixed and cannot be overridden at queue time.
 To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job.
+You can set a default value in the editor, and that value can be overridden by the person queuing the pipeline.
 
 # [Designer](#tab/designer)
 
@@ -437,7 +438,7 @@ For example, on the [Build tab](../tasks/index.md) of a build pipeline, add this
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

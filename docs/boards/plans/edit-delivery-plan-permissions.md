@@ -5,7 +5,7 @@ description: Edit or change permissions for a delivery plan
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2017'

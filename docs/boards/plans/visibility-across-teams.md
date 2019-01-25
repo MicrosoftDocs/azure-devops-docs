@@ -5,7 +5,7 @@ description: Determine which methods best support your ability to monitor status
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -87,7 +87,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -133,7 +133,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
    
 > [!div class="mx-imgBorder"]  

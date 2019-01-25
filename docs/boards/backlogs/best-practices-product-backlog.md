@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -48,7 +48,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 
 > **Tips from the trenches: Start to love and embrace acceptance criteria.**  
 > 
-> Ask 10 mature agile teams ["How do you know when you're "done done"?](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
+> Ask 10 mature agile teams "How do you know when you're "done done"?
 > and you'll get the same answer from each one. . . get serious about writing acceptance criteria.  
 > 
 > Acceptance criteria are the handshake between the product owner and the team on what "done done" really means.  
@@ -61,7 +61,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > Inevitably we all start with our own ideas about what "done" means for a given story.  
 >  
 > However, as we begin to discuss the acceptance criteria presented by the product owner what 
-> ensues is a series of "[ah-ha moments](https://www.bing.com/search?q=Ah-ha%20moments)." 
+> ensues is a series of "ah-ha moments." 
 > A shared understanding of the story begins to emerge. A comment one team member might elicit 
 > the following response from someone else. . .  "Ah-ha, great point. . . I never thought of that."  
 > 
@@ -78,8 +78,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > 
 > Start learning to love acceptance criteria and see if your team isn't more successful delivering software.  
 > 
-> &mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
-> blog post: [Agile Tip #5 &mdash;Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
+> &mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services
 
 
 

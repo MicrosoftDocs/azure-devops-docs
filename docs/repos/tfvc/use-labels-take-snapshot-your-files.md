@@ -5,7 +5,7 @@ description: Use labels to take a snapshot of your files
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

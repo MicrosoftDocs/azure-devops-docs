@@ -6,7 +6,7 @@ ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018

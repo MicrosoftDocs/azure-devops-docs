@@ -5,7 +5,7 @@ description: Describes the different integration options you can use to connect 
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.author: stansw
 ms.topic: conceptual
 ms.author: kaelli

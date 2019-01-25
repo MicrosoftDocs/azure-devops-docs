@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 # Add members to projects
 

@@ -5,7 +5,7 @@ description: Quick start helping users to create a trend report using an Analyti
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azdevserver-2019'
@@ -100,7 +100,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Connect to an Analytics view 
 

@@ -8,11 +8,11 @@ ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 author: alexmullans
 ms.date: 08/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Publish and download Universal Packages in Azure Pipelines

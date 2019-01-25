@@ -6,7 +6,7 @@ description: Learn how you can automatically generate a CI/CD pipeline to deploy
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 01/02/2017
@@ -252,7 +252,7 @@ may encounter the following known issues:
 
 1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [qa-versions](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

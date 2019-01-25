@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -29,8 +29,6 @@ You add work items to plan and manage your project. You use different types of w
 For additional clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
-
-
 
 <a id="define-new-work">  </a>
 ## Add a work item 
@@ -56,14 +54,14 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
 	<img src="_img/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!NOTE]  
-	>Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
+	>Depending on the process chosen when the project was created&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
 	or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 	>
 	> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 

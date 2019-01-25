@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 
 # Quickstart: Buy CI/CD for Azure DevOps

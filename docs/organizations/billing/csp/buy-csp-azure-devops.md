@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 11/14/2018
-monikerRange: 'vsts'
+monikerRange: 'azdevops'
 ---
 # Cloud Solution Providers: Buy Azure DevOps resources for your customers
 

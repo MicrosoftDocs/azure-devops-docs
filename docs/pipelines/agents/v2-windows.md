@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/29/2018
+ms.date: 01/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -47,7 +47,7 @@ running 4 agents apiece.
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ### Azure Pipelines
 
@@ -102,24 +102,24 @@ running 4 agents apiece.
 ::: moniker-end
 
 > [!Note]
-> We recommend you configure the agent from an elevated Command Prompt.
+> We recommend you configure the agent from an elevated PowerShell window.
 
 ### Server URL and authentication
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azdevops"
 When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`.
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 When setup asks for your authentication type, choose **PAT**.
 Then paste the [PAT token you created](#permissions) into the command prompt window.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azdevops"
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
@@ -209,7 +209,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 ::: moniker-end
 
@@ -221,7 +221,7 @@ The help provides information on authentication alternatives and unattended conf
 
 [Run the agent behind a web proxy](proxy.md)
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 ### How do I set different environment variables for each individual agent?
 
 Create a `.env` file under agent's root directory and put environment variables you want to set into the file as following format:
@@ -235,15 +235,15 @@ MyEnv4=MyEnvValue4
 ```
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [include](../_shared/qa-versions.md)]
 ::: moniker-end
 

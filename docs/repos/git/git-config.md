@@ -5,7 +5,7 @@ description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

@@ -5,7 +5,7 @@ description: Query work items based on link type, link count, link restrictions,
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following fields:
 
-::: moniker range="vsts"  
+::: moniker range="azdevops"  
 - Attachment File Count
 - (Discussion) Comment Count 
 - External Link count

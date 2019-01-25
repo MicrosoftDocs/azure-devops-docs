@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
@@ -123,7 +123,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 <a id="effort"/>
 ##Queries and charts based on effort or story points 
 
-You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
+You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
 
 ### Sum of story points and their status   
 

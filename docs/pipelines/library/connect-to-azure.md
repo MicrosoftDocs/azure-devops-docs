@@ -6,7 +6,7 @@ ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/18/18
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ## Create an Azure Resource Manager service connection using automated security
 

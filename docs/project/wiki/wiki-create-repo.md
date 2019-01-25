@@ -7,7 +7,7 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
@@ -43,10 +43,10 @@ In this article, we show you how to:
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 * You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).  
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md).
+*  You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end
@@ -54,7 +54,7 @@ In this article, we show you how to:
 ::: moniker range="tfs-2018 || azdevserver-2019"
 
 * You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) to provision a wiki or publish Markdown files from an existing Git repo to a wiki.
+* You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end

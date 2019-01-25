@@ -61,6 +61,8 @@
     href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
   - name: FAQs 
     href: faq-notifications.md 
+  - name: Data protection overview
+    href: ../articles/team-services-security-whitepaper.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
 - name: Resources    
   items:
   - name: Git

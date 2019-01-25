@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'

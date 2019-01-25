@@ -5,7 +5,7 @@ description: Steps for how to look up users who can help you gain access or chan
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 # Look up administrators and organization owner 
 ::: moniker-end
 
@@ -55,15 +55,15 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Security tab, Project Administrators Group, Members tab](_img/view-permissions-project-level-membership.png) 
 
-::: moniker-end  
+::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018" 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end      
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -105,16 +105,16 @@ To find out who is a member, check the **Security** settings at the collection l
 	> [!div class="mx-imgBorder"]  
 	> ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins-vert.png)  
 
-::: moniker-end  
+::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end      
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azdevops"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.
 
@@ -134,7 +134,7 @@ To find out who is a member, check the **Security** settings at the collection l
 ---
 
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 <a name="find-owner"></a>
 

@@ -6,7 +6,7 @@ ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
 ms.prod: devops
 ms.technology: devops-code-git 
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart

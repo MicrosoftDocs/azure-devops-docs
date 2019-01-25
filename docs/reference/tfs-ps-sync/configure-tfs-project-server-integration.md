@@ -5,7 +5,7 @@ description: Configure integration between Team Foundation Server & Project Serv
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 809f7eb3-f336-4f7d-b7a8-2b67366f3915
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 01/12/2017
 ---

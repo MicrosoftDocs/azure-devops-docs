@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 22fc4e22-ef0a-4c55-8cce-20ad2fa14342
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 10/15/2018
@@ -292,7 +292,7 @@ The following will also need to be in your path:
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azdevops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

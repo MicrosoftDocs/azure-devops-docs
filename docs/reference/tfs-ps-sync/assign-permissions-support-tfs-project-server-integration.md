@@ -5,7 +5,7 @@ description: Assign permissions to support configuration and working with Team F
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: d71eb502-00d0-4904-ac79-23195a707dc9
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

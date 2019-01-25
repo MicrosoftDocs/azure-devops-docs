@@ -6,7 +6,7 @@ description: Understand how Azure DevOps Services and Team Foundation Server too
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -102,12 +102,12 @@ To get started, see [Manage teams and configure team tools](../organizations/set
 
 Responsible for configuring project-level resources, including:
 
-::: moniker range="vsts" 
+::: moniker range="azdevops" 
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
 - [Build agents, pools, and service connections](../pipelines/overview.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
-::: moniker-end  Â 
+::: moniker-end   
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -116,9 +116,9 @@ Responsible for configuring project-level resources, including:
 - [Customizing work tracking objects](../reference/customize-work.md)  
 - [Build agents, pools, and service connections](../pipelines/overview.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
-::: moniker-end  Â 
+::: moniker-end   
 
-::: moniker range="vsts"
+::: moniker range="azdevops"
 
 ### Organization owners and project collection administrators
 

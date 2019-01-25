@@ -5,7 +5,7 @@ description: Remove Check-In Policies
 ms.assetid: fb4b62ef-e413-4f03-81fe-ae560c9f60ff
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
