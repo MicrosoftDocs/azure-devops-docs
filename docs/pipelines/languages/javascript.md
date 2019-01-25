@@ -681,7 +681,7 @@ The first example assumes that you manage version information (such as through a
 - script: npm publish
 ```
 
-The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/vsts/pipelines/library/service-endpoints?view=vsts#sep-npm) to inject authentication credentials into the connection as the build runs.
+The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/vsts/pipelines/library/service-endpoints?view=azdevops#sep-npm) to inject authentication credentials into the connection as the build runs.
 
 ```yaml
 - task: Npm@1
@@ -742,7 +742,7 @@ To create a .zip file archive that is ready for publishing to a web app, use the
 You can build a Docker image and push it to a container registry after you build your project. 
 
 
-If your application doesn't require orchestration with other containers, use the [Docker](/vsts/pipelines/tasks/build/docker?view=vsts) task to build a container with your packaged application code and push it to your Docker registry.
+If your application doesn't require orchestration with other containers, use the [Docker](/vsts/pipelines/tasks/build/docker?view=azdevops) task to build a container with your packaged application code and push it to your Docker registry.
 
 This example builds a Docker image. The `Dockerfile` for the image is located in the root of the source code repo, but you can configure it by using the `dockerFile` input.
 The image is not pushed to a Docker registry after it's built.
@@ -751,7 +751,7 @@ The image is not pushed to a Docker registry after it's built.
 - script: docker build -f Dockerfile -t contoso/myjavascriptapp:$(Build.BuildId)
 ```
 
-After the Docker image is built, push it to a container registry by using the [Docker](/vsts/pipelines/tasks/build/docker?view=vsts) task but with `command` set to `push An Image`. This example pushes to any container registry, including Docker Hub. 
+After the Docker image is built, push it to a container registry by using the [Docker](/vsts/pipelines/tasks/build/docker?view=azdevops) task but with `command` set to `push An Image`. This example pushes to any container registry, including Docker Hub. 
 
 ```yaml
 - task: Docker@1

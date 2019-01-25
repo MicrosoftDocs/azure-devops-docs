@@ -52,7 +52,7 @@ Use the full power of markdown in all of your discussions, including formatting,
 
 ###Auto-complete pull requests waiting on policies
 
-Teams that are using branch policies ([/vsts/repos/git/branch-policies-overview](/azure/devops/repos/git/branch-policies-overview?view=vsts)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
+Teams that are using branch policies ([/vsts/repos/git/branch-policies-overview](/azure/devops/repos/git/branch-policies-overview?view=azdevops)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
 
 ![Auto-complete](_img/8_17_06.png)
 

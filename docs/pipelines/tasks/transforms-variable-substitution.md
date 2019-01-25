@@ -155,14 +155,14 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
 * XML transformation takes effect only when the configuration file and transform file
   are in the same folder within the specified package.
- 
-* Set the **Copy to Output Directory** property for the configuration transform files to **Copy If Newer**.
 
 * By default, MSBuild applies the transformation as it generates the web package if the `<DependentUpon>` element
   is already present in the transform file in the `*.csproj` file. In such cases, the **Azure App Service Deploy**
   task will fail because there is no further transformation applied on the `Web.config` file. Therefore, it is
   recommended that the `<DependentUpon>` element is removed from all the transform files to disable any build-time
   configuration when using XML transformation.
+  
+* Set the **Build Action** property for each of the transformation files (`Web.config`) to **Content** so that the files are copied to the root folder.
 
   ```xml
   ...

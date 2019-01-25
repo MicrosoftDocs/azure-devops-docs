@@ -65,9 +65,9 @@ Billing management
 Marketplace extension management
 
 * [Change the number of paid users for an extension](change-number-paid-extension-users.md)
-* [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
-* [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
-* [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
+* [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
+* [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
+* [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
 
 Guidance for Cloud Solution Providers
 
@@ -78,9 +78,9 @@ Guidance for Cloud Solution Providers
 
 ## Reference
 
-* [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
-* [About access levels](../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
-* [Default permissions & access](../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
+* [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
+* [About access levels](../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
+* [Default permissions & access](../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
 * [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json)
 
 ::: moniker-end
@@ -89,6 +89,6 @@ Guidance for Cloud Solution Providers
 
 * [Start using Azure DevOps](../../user-guide/index.yml)
 * [Manage organizations](../accounts/index.md)
-* [TFS Server Administration documentation](/tfs/server/index?view=vsts)
+* [TFS Server Administration documentation](/tfs/server/index?view=azdevops)
 * [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)
