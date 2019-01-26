@@ -42,12 +42,17 @@ Backlogs present work items as lists. A product backlog represents your project 
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)
+
 ::: moniker range=">= azdevserver-2019"
-![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
+
+![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
@@ -61,7 +66,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 ::: moniker range="azdevserver-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end 
+::: moniker-end
 
 ---
 

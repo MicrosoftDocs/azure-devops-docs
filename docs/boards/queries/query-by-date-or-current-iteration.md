@@ -36,7 +36,7 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
-Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the format accepted by your computer's operating system. 
+Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the **Date Pattern** you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)   
 
 <table valign="top">
 <tbody valign="top">
@@ -327,7 +327,7 @@ To query for items based on text entered in the History field, see [History and 
 - [Query operators & macros](query-operators-variables.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query permissions](set-query-permissions.md)
-
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
 

@@ -18,8 +18,6 @@ ms.date: 01/23/2019
 
 When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this article. 
 
-[!INCLUDE [temp](../_shared/search-box.md)]
-
 <a id="keyword"/>
 ## List items based on keywords or phrases
 
@@ -39,6 +37,19 @@ You can find work items that have an undefined field value by using the equals o
 ![Filter based on blank entries](_img/example-work-item-queries/IC736440.png)
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
+
+
+
+
+<a id="undefined-value"/>
+## List items based on empty or not empty HTML fields
+
+You can find work items where no **Description** has been entered. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
+
+For example, the following query filters will list all work items where some entries have been made into the **Description** field.  
+
+![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
+
 
 <a id="category"/>
 ## List items based on categories
