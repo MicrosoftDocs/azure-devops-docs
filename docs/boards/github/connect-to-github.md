@@ -15,11 +15,11 @@ ms.date: 12/04/2018
 
 # Connect Azure Boards to GitHub  
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]  
+[!INCLUDE[temp](../_shared/version-vsts-only.md)] 
 
 By connecting your Azure Boards project with GitHub repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.  
 
-[!INCLUDE [temp](../_shared/github-platform-support.md)]  
+[!INCLUDE[temp](../_shared/github-platform-support.md)]
 
 
 ## Prerequisites 
@@ -65,6 +65,10 @@ By connecting your Azure Boards project with GitHub repositories, you support li
 	> [!div class="mx-imgBorder"]  
 	> ![List of GitHub repositories connected](_img/github/repos-list.png)   
 
+> [!TIP]   
+> We recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected AB# mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-git-hub-connection.md#integrate-repo-to-several-organizations). 
+
+
 ## Add or remove repositories, or remove a connection 
 
 0. To add or remove repositories, open the ![ ](../../_img/icons/actions-icon.png) for the connection and choose **Add** repositories or **Remove** repositories from the menu. 
@@ -109,7 +113,7 @@ See [Troubleshoot GitHub repository connection](troubleshoot-git-hub-connection.
 ## Related articles
 
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
-
+- [Troubleshoot GitHub & Azure Boards integration](troubleshoot-git-hub-connection.md)
 
 <!---
  Enter the name of the GitHub repository and then choose **Save**. 

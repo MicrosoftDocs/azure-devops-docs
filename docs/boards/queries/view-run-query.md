@@ -123,7 +123,7 @@ Choose the ![ ](../_img/icons/context_menu.png) context menu icon of a query to 
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol2BreakAll"]
 > |Task |Favorites |All | 
 > |-------------|----------|---------| 
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 

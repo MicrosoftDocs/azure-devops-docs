@@ -636,8 +636,9 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Additional resources</h3>
                                                         <p><a href="/azure/devops/index-all">Index</a></p>
-                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
-                                                        <p><a href="/azure/devops/learn/">DevOps resource center</a></p>
+                                                        <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
+                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
+                                                        <p><a href="/azure/devops/learn/">DevOps Resource Center</a></p>
                                                         <p><a href="/tfs/index">TFS Administrator Guide</a></p>
                                                     </div>
                                                 </div>
