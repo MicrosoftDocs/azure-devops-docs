@@ -20,8 +20,8 @@ ms.date: 01/11/2019
 
 With Azure Boards, you can quickly and easily start tracking tasks, features, and bugs associated with your project. You do this by adding one of three work item types&mdash;epics, issues, and tasks&mdash;that the Basic process provides. As works progresses from not started to completed, you update the State workflow field from **To Do**, **Doing**, and **Done**.
 
->  [!div class="mx-tdCol2BreakAll"]  
-> |  Work item types  | Workflow |
+> [!div class="mx-tdCol2BreakAll"]
+> |Work item types| Workflow |
 > |------|---------|
 > |![Basic process work item types, conceptual image](_img/track-issues/basic-process-epics-issues-tasks.png) | ![Basic process workflow, conceptual image](_img/track-issues/basic-process-workflow.png) 
 

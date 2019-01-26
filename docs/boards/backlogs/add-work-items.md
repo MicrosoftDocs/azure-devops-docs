@@ -76,7 +76,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 	Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 

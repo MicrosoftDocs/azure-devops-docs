@@ -32,8 +32,8 @@ This article walks you through creating issues and tasks using a Kanban board fo
 
 Your first project uses the Basic process which provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue.  
 
->  [!div class="mx-tdCol2BreakAll"]  
-> |  Work item types  | Backlog hierarchy |
+> [!div class="mx-tdCol2BreakAll"]
+> |Work item types| Backlog hierarchy |
 > |------|---------|
 > |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) 
 
