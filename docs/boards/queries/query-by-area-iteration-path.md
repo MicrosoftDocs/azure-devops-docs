@@ -25,7 +25,7 @@ To better understand how to work with area and iteration paths, see [About teams
 ## Supported operators and macros 
 When creating queries and specifying the Area Path and Iteration Path fields, you can use the following operators: 
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol2BreakAll"]  
 > |Operator     | Use when you want to...| 
 > |-------------|--------------|
 > | **=**           | Specify one specific area or iteration path  |
@@ -38,7 +38,7 @@ When creating queries and specifying the Area Path and Iteration Path fields, yo
 
 In addition to these operators, you can use the following macros when you select the Iteration Path. For examples, see [Query by date or current iteration](query-by-area-iteration-path.md). 
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol2BreakAll"]  
 > |Macro   | Use when you want to...|
 > |-------------|--------------|
 > | **@CurrentIteration**    | Specify the current iteration associated with the selected team context.  |
@@ -93,7 +93,7 @@ Use the **@TeamAreas** macro to quickly find items assigned to the area paths as
 ## Classification field reference 
 
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > |**Field name**|**Description**|**Reference name**|
 > |---|---|---|
 > |**Area Path**|Groups work items into product feature or team areas. The area must be a valid node in the project hierarchy.|System.AreaPath |
@@ -107,7 +107,7 @@ You can't apply most field rules to the System.AreaPath and System.IterationPath
 
 The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > |**Field name**|**Description**|**Reference name**|**Data type**|
 > |---|---|---|---|
 > |Area ID|The unique ID of the area to which this work item is assigned.|System.AreaId|Integer|
