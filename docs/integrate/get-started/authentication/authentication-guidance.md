@@ -28,13 +28,13 @@ When writing an application which interfaces with Azure DevOps Services, you wil
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [Azure DevOps Services Extension](../../../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
 
+To learn more about how security and identity are managed, see [About security and identity](../../../organizations/security/about-security-identity.md).
 
+To learn more about how we store your credentials, see [Credential storage for Azure DevOps](../../../articles/credential-storage.md).
 
 ## Enabling IIS Basic Authentication invalidates using PATs for TFS
 
 Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic-auth.md).
-
-
 
 ## Q&A
 
