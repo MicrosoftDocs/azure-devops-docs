@@ -9,7 +9,7 @@ ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/04/2016
+ms.date: 01/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -155,12 +155,12 @@ To enable your script to use the build pipeline OAuth token, go to the **Options
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
 
 ```ps
-$url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
+$url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
 Write-Host "URL: $url"
 $pipeline = Invoke-RestMethod -Uri $url -Headers @{
     Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
 }
-Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 1000)"
+Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
 
 

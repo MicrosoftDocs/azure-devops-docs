@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -25,6 +25,10 @@ Azure DevOps Services and TFS use enterprise-grade authentication to help protec
 For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
 [!INCLUDE [personal-access-tokens-procedure](../../repos/git/_shared/personal-access-tokens.md)]
+
+To learn more about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
+
+To learn more about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
 
 ## Frequently asked questions  
 
@@ -58,3 +62,4 @@ An administrator or a tool might have created a PAT on your behalf. See the foll
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
 If you still believe that a PAT exists in error, we suggest that you [revoke the PAT](../../integrate/get-started/authentication/PATs.md). Next, change your password. As an Azure Active Directory user, check with your administrator to see if your organization was used from an unknown source or location.
+
