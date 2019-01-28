@@ -34,8 +34,8 @@ This article walks you through creating user stories and tasks using a Kanban bo
 
 Your first project uses the default Agile process which provides several work item types&mdash;for example, user stories, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding user stories. If you need to group them into a hierarchy, you can define features. If you want to track additional details of work, you can add tasks to a user story.  
 
->  [!div class="mx-tdCol2BreakAll"]  
-> |  Work item types  | Backlog hierarchy |
+> [!div class="mx-tdCol2BreakAll"]
+> |Work item types| Backlog hierarchy |
 > |------|---------|
 > |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) 
 

@@ -142,10 +142,10 @@ For additional tips when working with the new queries experience or the director
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-> [!div class="mx-tdBreakAll"]  
-> |Team focus |  
-> |-------------| 
-> |- [Assigned to a member of a team](query-by-workflow-changes.md#group)<br/>- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
+### Team focus 
+
+- [Assigned to a member of a team](query-by-workflow-changes.md#group)
+- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
 
 ::: moniker-end
 

@@ -46,6 +46,15 @@ SELECT Select_List
 ```
 
 
+### Date-time pattern
+You specify the date-time pattern according to one of two patterns: 
+- The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
+- The pattern specified by UTC which follows this pattern (with Z appended to the date-time): 
+	`AND System.ChangedDate >= '1/1/2019 00:00:00Z' `
+
+
+### Example clauses
+
 The following example statements show specific qualifying clauses.
 
 <table width="80%">
