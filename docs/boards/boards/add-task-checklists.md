@@ -50,7 +50,7 @@ In this article, you'll learn:
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+	::: moniker range=">= tfs-2017"  
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
 	::: moniker-end
 	::: moniker range="tfs-2015"
