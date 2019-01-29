@@ -6,7 +6,7 @@
     #createCustomEnvironment: # Optional
     #environmentName: # Required when createCustomEnvironment == True
     #packageSpecs: 'python=3' # Optional
-    #updateConda: # Optional
+    #updateConda: true # Optional
     #installOptions: # Optional
     #createOptions: # Optional
     #cleanEnvironment: # Optional

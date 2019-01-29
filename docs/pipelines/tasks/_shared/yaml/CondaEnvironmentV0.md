@@ -5,7 +5,7 @@
   inputs:
     environmentName: 
     #packageSpecs: 'python=3' # Optional
-    #updateConda: # Optional
+    #updateConda: true # Optional
     #createOptions: # Optional
     #cleanEnvironment: # Optional
 ```
