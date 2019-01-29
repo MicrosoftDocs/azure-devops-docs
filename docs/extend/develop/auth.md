@@ -14,6 +14,9 @@ ms.date: 08/29/2016
 
 # Auth and security
 
+> [!NOTE]
+> This page pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
+
 ## Calling REST APIs from your extension
 
 Most extensions have a need to call Azure DevOps Services REST APIs on behalf of the current user. 

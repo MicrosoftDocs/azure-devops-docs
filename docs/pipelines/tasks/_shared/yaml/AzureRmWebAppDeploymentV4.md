@@ -12,8 +12,8 @@
     #deployToSlotOrASE: false # Optional
     #resourceGroupName: # Required when deployToSlotOrASE == True
     #slotName: 'production' # Required when deployToSlotOrASE == True
-    #dockerNamespace: # Required when appType == WebAppContainer || WebAppKind == FunctionAppContainer
-    #dockerRepository: # Required when appType == WebAppContainer || WebAppKind == FunctionAppContainer
+    #dockerNamespace: # Required when appType == WebAppContainer || WebAppkind == FunctionAppContainer
+    #dockerRepository: # Required when appType == WebAppContainer || WebAppkind == FunctionAppContainer
     #dockerImageTag: # Optional
     #virtualApplication: # Optional
     #packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip' # Required when connectionType == PublishProfile || WebAppKind == WebApp || WebAppKind == ApiApp || WebAppKind == FunctionApp || WebAppKind == MobileApp || WebAppKind == WebAppLinux || WebAppKind == FunctionAppLinux

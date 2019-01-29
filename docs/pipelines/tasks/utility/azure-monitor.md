@@ -31,7 +31,7 @@ None
 
 ::: moniker range="azdevops"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
+[!INCLUDE [temp](../_shared/yaml/AzureMonitorV1.md)]
 ::: moniker-end
 
 ## Arguments

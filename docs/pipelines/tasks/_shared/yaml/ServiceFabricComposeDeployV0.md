@@ -11,7 +11,7 @@
     #azureSubscription: # Required when registryCredentials == AzureResourceManagerEndpoint
     #registryUserName: # Optional
     #registryPassword: # Optional
-    #passwordEncrypted: # Optional
+    #passwordEncrypted: true # Optional
     #upgrade: # Optional
     #deployTimeoutSec: # Optional
     #removeTimeoutSec: # Optional
