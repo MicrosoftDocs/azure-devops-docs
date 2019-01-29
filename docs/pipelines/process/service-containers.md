@@ -17,7 +17,7 @@ monikerRange: 'azdevops'
 **Azure Pipelines**
 
 If your pipeline requires the support of one or more services, in many cases you'll want to create, connect to, and clean up each
-service on a per-job basis. For instance, a pipeline may run unit tests that require access to
+service on a per-job basis. For instance, a pipeline may run integration tests that require access to
 a database and a memory cache. The database and memory cache need to be freshly created for each job in the pipeline.
 
 A container provides a simple and portable way to run a service that your pipeline depends on.
