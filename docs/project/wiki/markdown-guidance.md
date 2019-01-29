@@ -845,7 +845,7 @@ For example: Adding bold and italics to a heading text renders the TOC as follow
 Consistency is maintained in the formatting in TOC.
 
 > [!NOTE] 
-> The tag [[\_TOC\_]] is case-sensitive. For example, [>> [\_toc\_]] may not render the TOC.
+> The tag [[\_TOC\_]] is case-sensitive. For example, [[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
 ::: moniker-end
 
@@ -879,19 +879,23 @@ Any file that contains a YAML block in a Wiki is processed by a table with one h
 Basic example:
 
 ```yaml
+---
 tag: post
 title: Hello world
+---
 ```
  
 ![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
 
 Tags with list:
 ```yaml
+---
 tags: 
 - post
 - code
 - web
 title: Hello world
+---
 ```
 
 ![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)

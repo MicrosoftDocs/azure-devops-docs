@@ -75,8 +75,8 @@ The following table describes the work item link types you can specify to scope 
 ![Affects link type image](_img/link-work-items-support-traceability/affects-cmmi.png) 
 ![Affected by link type image](_img/link-work-items-support-traceability/affected-by-cmmi.png) 
 </td>
-<td><p>Microsoft.VSTS.Common.Affects.Forward<br/>
-Microsoft.VSTS.Common.Affects.Reverse</p>
+<td><p>Microsoft.VSTS.Common.Affects-Forward<br/>
+Microsoft.VSTS.Common.Affects-Reverse</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p>
 </td>

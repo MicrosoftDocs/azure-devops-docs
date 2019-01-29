@@ -17,6 +17,7 @@
     #feedsToUsePublish: 'internal' # Options: internal, external
     #publishFeedCredentials: # Required when feedsToUsePublish == External
     #vstsFeedPublish: # Required when feedsToUsePublish == Internal
+    #publishPackageMetadata: true # Optional
     #vstsFeedPackagePublish: # Required when feedsToUsePublish == Internal
     #feedPublishExternal: # Required when feedsToUsePublish == External
     #packagePublishExternal: # Required when feedsToUsePublish == External
@@ -24,4 +25,5 @@
     #versionPublish: # Required when versionOption == Custom
     packagePublishDescription: 
     #verbosity: 'None' # Options: none, trace, debug, information, warning, error, critical
+    #publishedPackageVar: # Optional
 ```
