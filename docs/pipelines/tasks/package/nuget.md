@@ -48,7 +48,7 @@ For **byPrereleaseNumber**, the version will be set to whatever you choose for m
 
 For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
 
-For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`.
+For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`. If you select **byBuildNumber**, the task will extract a dotted version, `1.2.3.4` and use only that, dropping any label. To use the build number as is, you should use **byEnvVar** as described above, and set the environment variable to `BUILD_BUILDNUMBER`.
 
 ::: moniker-end
 
