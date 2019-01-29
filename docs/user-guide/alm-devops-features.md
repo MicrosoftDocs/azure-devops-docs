@@ -1295,7 +1295,7 @@ pipelines\tasks\build\_img
 <p>Use Visual Studio to create [coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx) to test your application's user interface.</p>
 
 <p><b>Run test with your builds for continuous integration</b></p>
-<p>Use continuous integration builds to [run tests automatically](../pipelines/test/getting-started-with-continuous-testing.md).</p>
+<p>Use continuous integration builds to [run tests automatically](../pipelines/languages/dotnet-core.md#run-your-tests).</p>
 
 <p><b>Review automated test results after a build</b></p>
 <p>[Review your test results](../pipelines/test/review-continuous-test-results-after-build.md) to analyze any problems that were found.</p>
