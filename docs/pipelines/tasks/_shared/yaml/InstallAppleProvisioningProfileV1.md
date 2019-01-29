@@ -6,5 +6,5 @@
     #provisioningProfileLocation: 'secureFiles' # Options: secureFiles, sourceRepository
     #provProfileSecureFile: # Required when provisioningProfileLocation == SecureFiles
     #provProfileSourceRepository: # Required when provisioningProfileLocation == SourceRepository
-    #removeProfile: # Optional
+    #removeProfile: true # Optional
 ```

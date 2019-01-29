@@ -18,8 +18,8 @@ monikerRange: 'azdevops'
 
 Use this task in a build or release pipeline to provide npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
 
->[!WARNING]
-> Don't use this task if you're also using the npm task.
+>[!NOTE]
+> If you are using the npm task, you do not need to use the npm authenticate task. Instead use the feed configuration parameters that are available in the npm task.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

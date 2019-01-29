@@ -111,24 +111,6 @@ Choose the process that provides the best fit for your team.
             ![Scrum work item types](_img/ALM_PT_Scrum_WIT_Artifacts.png)
             </td>
             </tr>
-            <tr valign="top">
-            <td>
-            <p><b>Agile</b></p>
-            <p>Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum,
-            and tracks development and test activities separately. This process works great if you want to track user stories and
-            (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.</p>
-
-
-
-                <p>You can learn more about Agile methodologies at the
-                <a href="http://www.agilealliance.org/">Agile Alliance</a>.
-                </p>
-             <p>Tasks support tracking Original Estimate, Remaining Work, and Completed Work.</p>
-            </td>
-        <td>
-            ![Agile work item types](_img/ALM_PT_Agile_WIT_Artifacts.png)
-        </td>
-        </tr>
 
     <tr valign="top"> 
         <td>
@@ -156,7 +138,7 @@ If you need more than two or three backlog levels, you can add more based on the
 <a id="main-distinctions"></a>
 ## Main distinctions among the default processes
 The default processes are designed to meet the needs of most teams. 
-If your team has unusual needs and connects to an on-premises TFS, 
+If your team has unusual needs and connects to an on-premises server, 
 you can customize a process and then create the project. 
 Or, you can create a project from a process and then customize the project.  
 
@@ -400,10 +382,10 @@ Each image shows only the default reason associated with the transition.
 <tbody>
     <tr >
         <td width="33%">
-           <b>Scrum</b>
+            <b>Agile</b>
         </td>
         <td width="33%">
-            <b>Agile</b>
+           <b>Scrum</b>
         </td>
         <td width="33%">
             <b>CMMI</b>
@@ -412,13 +394,14 @@ Each image shows only the default reason associated with the transition.
     <tr valign="top">
         <td>
 <h4>Epic</h4>
-            ![Epic workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Epic.png)
-        </td>
-        <td>
-<h4>Epic</h4>
             ![Epic workflow states, Agile process](_img/ALM_PT_Agile_WF_Epic.png)
 
         </td>
+        <td>
+<h4>Epic</h4>
+            ![Epic workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Epic.png)
+        </td>
+
         <td>
 <h4>Epic</h4>
             ![Epic workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Epic.png)
@@ -428,13 +411,14 @@ Each image shows only the default reason associated with the transition.
     <tr valign="top">
         <td>
 <h4>Feature</h4>
-            ![Feature workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Feature.png)
-        </td>
-        <td>
-<h4>Feature</h4>
             ![Feature workflow states, Agile process](_img/ALM_PT_Agile_WF_Feature.png)
 
         </td>
+        <td>
+<h4>Feature</h4>
+            ![Feature workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Feature.png)
+        </td>
+
         <td>
 <h4>Feature</h4>
             ![Feature workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Feature.png)
@@ -443,14 +427,15 @@ Each image shows only the default reason associated with the transition.
     </tr>
     <tr valign="top">
         <td>
-<h4>Product backlog item</h4>
-            ![Product backlog item workflow states, Scrum process](_img/ALM_PT_Scrum_WF_PBI.png)
-        </td>
-        <td>
 <h4>User story</h4>
             ![User story workflow states, Agile process](_img/ALM_PT_Agile_WF_UserStory.png)
 
         </td>
+        <td>
+<h4>Product backlog item</h4>
+            ![Product backlog item workflow states, Scrum process](_img/ALM_PT_Scrum_WF_PBI.png)
+        </td>
+
         <td>
 <h4>Requirement</h4>
             ![Requirement workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Requirement.png)
@@ -460,13 +445,14 @@ Each image shows only the default reason associated with the transition.
     <tr valign="top">
         <td>
 <h4>Bug</h4>
-            ![Bug workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Bug.png)
-        </td>
-        <td>
-<h4>Bug</h4>
             ![Bug workflow states, Agile process](_img/ALM_PT_Agile_WF_Bug.png)
 
         </td>
+        <td>
+<h4>Bug</h4>
+            ![Bug workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Bug.png)
+        </td>
+
         <td>
 <h4>Bug</h4>
             ![Bug workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Bug.png)
@@ -476,12 +462,13 @@ Each image shows only the default reason associated with the transition.
     <tr valign="top">
         <td>
 <h4>Task</h4>
-            ![Task workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Task.png)
+            ![Task workflow states, Agile process](_img/ALM_PT_Agile_WF_Task.png)
         </td>
         <td>
 <h4>Task</h4>
-            ![Task workflow states, Agile process](_img/ALM_PT_Agile_WF_Task.png)
+            ![Task workflow states, Scrum process](_img/ALM_PT_Scrum_WF_Task.png)
         </td>
+
         <td>
 <h4>Task</h4>
             ![Task workflow states, CMMI process](_img/ALM_PT_CMMI_WF_Task.png)

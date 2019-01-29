@@ -38,5 +38,5 @@
     #azureSubscription: # Required when configureDockerSettings == True && RegistryCredentials == AzureResourceManagerEndpoint
     #registryUserName: # Optional
     #registryPassword: # Optional
-    #passwordEncrypted: # Optional
+    #passwordEncrypted: true # Optional
 ```

@@ -9,9 +9,11 @@
     #azureResourceGroup: # Required when connectionType == Azure Resource Manager
     #kubernetesCluster: # Required when connectionType == Azure Resource Manager
     #namespace: # Optional
-    #command: 'apply' # Options: apply, create, delete, exec, expose, get, login, logout, logs, run, set, top
+    #command: # Optional. Options: apply, create, delete, exec, expose, get, login, logout, logs, run, set, top
     #useConfigurationFile: false # Optional
-    #configuration: # Required when useConfigurationFile == True
+    #configurationType: 'configuration' # Optional. Options: configuration, inline
+    #configuration: # Required when configurationType == Configuration
+    #inline: # Required when configurationType == Inline
     #arguments: # Optional
     #secretType: 'dockerRegistry' # Options: dockerRegistry, generic
     #secretArguments: # Optional
