@@ -483,7 +483,7 @@ For example, the following query returns the number of work items for each day s
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateSK gt 20170101)/
     filter(RevisedDateSK eq null or RevisedDateSK gt 20170101)/
