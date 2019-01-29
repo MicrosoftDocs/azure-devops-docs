@@ -45,7 +45,7 @@ Build reports track the quality of software under development. By defining tests
 <ol>
 <li>[Configure a build system](../../pipelines/agents/agents.md)</li>
 <li>[Get started with CI/CD](../../pipelines/get-started-designer.md)</li>
-<li>[Run tests in your build process](../../pipelines/test/getting-started-with-continuous-testing.md)</li>
+<li>[Run tests in your build process](../../pipelines/languages/dotnet-core.md#run-your-tests)</li>
 <li>(Optional) [Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx) to populate the Build Quality dimension.</li>
 </ol>
 </td>
