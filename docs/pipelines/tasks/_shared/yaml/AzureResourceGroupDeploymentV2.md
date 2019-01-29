@@ -18,10 +18,12 @@
     #teamServicesConnection: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
     #teamProject: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
     #deploymentGroupName: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
-    #copyAzureVMTags: # Optional
+    #copyAzureVMTags: true # Optional
     #runAgentServiceAsUser: # Optional
     #userName: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent && RunAgentServiceAsUser == True
     #password: # Optional
     #outputVariable: # Optional
+    #deploymentName: # Optional
     #deploymentOutputs: # Optional
+    #addSpnToEnvironment: false # Optional
 ```

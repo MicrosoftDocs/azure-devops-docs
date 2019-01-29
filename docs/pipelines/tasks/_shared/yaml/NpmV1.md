@@ -12,5 +12,6 @@
     #customEndpoint: # Optional
     #publishRegistry: 'useExternalRegistry' # Optional. Options: useExternalRegistry, useFeed
     #publishFeed: # Required when publishRegistry == UseFeed
+    #publishPackageMetadata: true # Optional
     #publishEndpoint: # Required when publishRegistry == UseExternalRegistry
 ```
