@@ -19,7 +19,7 @@ ms.date: 12/17/2018
 
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-When you publish a Git repository to a wiki, you can publish new branch versions of the repo, select a version to view, or unpublish the repo.
+When you publish a Git repository to a wiki, you can publish new branch of the repo as versions, select a version to view, or unpublish the repo.
 
 ## Publish a new wiki version
 
