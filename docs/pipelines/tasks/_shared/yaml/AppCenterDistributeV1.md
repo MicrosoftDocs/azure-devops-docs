@@ -15,5 +15,6 @@
     #releaseNotesOption: 'input' # Options: input, file
     #releaseNotesInput: # Required when releaseNotesOption == Input
     #releaseNotesFile: # Required when releaseNotesOption == File
+    #isMandatory: false # Optional
     #distributionGroupId: # Optional
 ```

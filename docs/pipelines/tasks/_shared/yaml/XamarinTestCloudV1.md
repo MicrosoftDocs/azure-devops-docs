@@ -1,6 +1,6 @@
 ```YAML
 # Xamarin Test Cloud
-# [Depreciated] Testing mobile apps with Xamarin Test Cloud using Xamarin.UITest - recommended task is now AppCenterTest
+# [Deprecated] Testing mobile apps with Xamarin Test Cloud using Xamarin.UITest - recommended task is now AppCenterTest
 - task: XamarinTestCloud@1
   inputs:
     appFile: 

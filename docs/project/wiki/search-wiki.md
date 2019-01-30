@@ -29,38 +29,17 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
-# [New navigation](#tab/new-nav)  
+
 
 ::: moniker range=">= azdevserver-2019"
 
-Choose **Overview>Wiki** and enter your keyword or phrase into the search box.
+Choose **Overview > Wiki** and enter your keyword or phrase into the search box.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki search option](_img/search/search-wiki-vert.png)
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="tfs-2018 || azdevops"
-
-Open **Wiki** and enter your keyword or phrase into the search box.
-
-> [!div class="mx-imgBorder"]
-> ![Wiki search option](_img/search/search-wiki-horz.png)
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
----
 
 The search feature quickly returns wiki pages by title or page content.
 

@@ -406,7 +406,6 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-* [Test with unified agents and jobs](../pipelines/test/set-up-continuous-test-environments-builds.md)
 * [Continuous testing scenarios and capabilities](index.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

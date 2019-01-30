@@ -6,7 +6,7 @@
     #solutionFile: '**/*.sln' 
     #configuration: 'Release' 
     #clean: false # Optional
-    packageApp: 
+    #packageApp: true 
     #buildForSimulator: false # Optional
     #runNugetRestore: false 
     #args: # Optional
