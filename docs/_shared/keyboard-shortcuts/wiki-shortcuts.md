@@ -21,6 +21,7 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new sub-page<br/><br/>
 **Ctrl+**![Up arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order<br/>
 **Ctrl+**![Down arrow](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order<br/><br/>
+**Ctrl+P**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print page<br/>
 **Ctrl+Shift+f**&nbsp;&nbsp;Filter page<br/>
 </td>
 </tr>
