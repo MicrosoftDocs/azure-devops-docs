@@ -32,14 +32,14 @@ By publishing your Markdown files to a wiki, you gain the following benefits:
 Use this article to learn how to:  
 
 > [!div class="checklist"]
-> * Open **Wiki**
+> * Open Wiki
 > * Publish a Git repo to a wiki
 > * Edit pages of a published wiki
 > * Add pages to a published wiki
 > * Change the page sequence of a published wiki
 > * Make a page the wiki home page
 
-To perform these steps, you'll want to understand the underlying structure of your wiki Git repo. For details, see [Wiki Git repository files and file structure](wiki-file-structure.md). To understand how to manage the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
+To understand how to manage the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 
 > [!TIP]
 > You can add and edit content you've published to a wiki using the steps outlined in this article. Or, you can also work offline and update wiki content in the same way you collaborate on code through a Git repository. For more information, see [Update wiki pages offline](wiki-update-offline.md).
@@ -50,7 +50,7 @@ To perform these steps, you'll want to understand the underlying structure of yo
 
 * You must have a team project. If you don't have a team project yet, [create one](../../organizations/projects/create-project.md).  
 * You must have enabled Azure Repos service for your project.
-* You must have a Git repository defined in your team project. Ideally, this repository contains at least oneMarkdown file which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
+* You must have a Git repository defined in your team project. Ideally, this repository contains at least one Markdown file which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
 * You must have the permission **Contribute** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 * Anyone who has permissions to contribute to the Git repository can add or edit wiki pages.
 
@@ -68,7 +68,7 @@ Begin by connecting to your project using a [supported web browser](/tfs/server/
 Choose **Overview>Wiki**.
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki, provision a Git repo for your wiki or publish existing repoMarkdown files](/azure/devops/project/wiki/_img/wiki/open-wiki-vert-brn.png)
+> ![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](/azure/devops/project/wiki/_img/wiki/open-wiki-vert-brn.png)
 
 If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
 
@@ -98,12 +98,12 @@ Choose **Wiki**.
 
 ## Publish a Git repository to a wiki
 
-Choose this option when you maintainMarkdown files in an existing Git repo and you want to publish them to a wiki.
+Choose this option when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
 1. Select **Publish code as Wiki**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create wiki, publish existing repoMarkdown files](_img/wiki/create-wiki-or-publish-publish-option.png) 
+	> ![Create wiki, publish existing repo Markdown files](_img/wiki/create-wiki-or-publish-publish-option.png) 
 
 	> [!NOTE]
 	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md), and then return and refresh this page.
@@ -113,32 +113,32 @@ Choose this option when you maintainMarkdown files in an existing Git repo and y
 	> [!div class="mx-imgBorder"]  
 	> ![Publish code as wiki menu option](_img/wiki/publish-code-menu-option.png)
 
-2. Choose the repository, branch, and folder that contain theMarkdown files and name the wiki repository. The Git repo must reside within the team project.
+2. Choose the repository, branch, and folder that contain the Markdown files and name the wiki repository. The Git repo must reside within the team project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create wiki, publish existing repoMarkdown files](_img/wiki/publish-wiki-options.png)
+	> ![Create wiki, publish existing repo Markdown files](_img/wiki/publish-wiki-options.png)
 
-	Specify the root of the repository when you want to publish allMarkdown files in the repository to your wiki.  
+	Specify the root of the repository when you want to publish all Markdown files in the repository to your wiki.  
 
-3. Choose **Publish**. The wiki repo is populated with theMarkdown files and folders included within the repo you selected. If a sub-folder does not contain aMarkdown file, it doesn't appear in the  Wiki.
+3. Choose **Publish**. The wiki repo is populated with the Markdown files and folders included within the repo you selected. If a sub-folder does not contain a Markdown file, it doesn't appear in the  Wiki.
 
 	For example, the following image shows the published repo for the files contained in the azure-docs-sdk-node repository selected in Step 2.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Published wiki from existing repoMarkdown files](_img/wiki/published-wiki.png)
+	> ![Published wiki from existing repo Markdown files](_img/wiki/published-wiki.png)
  
 	The wiki Table of Contents (TOC) contains the following: 
-	- EachMarkdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from theMarkdown file name
-	- A parent page for each sub-folder defined within the published folder, even if it doesn't contain anyMarkdown files.
+	- Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
+	- A parent page for each sub-folder defined within the published folder, even if it doesn't contain any Markdown files.
 
 	And here is an image of the contents of the azure-docs-sdk-node repository.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Repo withMarkdown files published to wiki](_img/wiki/publish-wiki-sample-code-repo.png)
+	> ![Repo with Markdown files published to wiki](_img/wiki/publish-wiki-sample-code-repo.png)
 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved. 
 
-With the Wiki provisioned with theMarkdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
+With the Wiki provisioned with the Markdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
 
 ## Edit, rename, or delete pages  
 
@@ -154,7 +154,7 @@ With the Wiki provisioned with theMarkdown files you've added, you can now add o
 
 ### Edit a page
 
-You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supportedMarkdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).  
+You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](../../reference/markdown-guidance.md).  
 
 0. When finished with your updates, choose **Commit**, and then fill in the Commit dialog form.
 
@@ -178,11 +178,11 @@ For example, here we rename *new-home-page.md* to *New-Home-Page.md*. This page 
 > [!div class="mx-imgBorder"]  
 > ![Rename Commit dialog](_img/wiki/publish-wiki-rename-file-commit-dialog.png)
 
-Page titles are case sensitive and must be unique within the folder, and 235 characters or less. For other title restrictions, see [Page title naming restrictions](#page-title-names).
+Page titles are case sensitive and must be unique within the folder, and 235 characters or less. For other title restrictions, see [Page title naming restrictions](wiki-file-structure.md#file-naming-conventions).
 
 ### Delete a page
 
-AnyMarkdown files that you don't want to appear in the wiki, you can delete from the published folder. If you have included the file in a **.order** file, then delete it's entry from the **.order** file. To learn more, jump to [Change the page sequence, add or update a .order file](#page-sequence).
+Any Markdown files that you don't want to appear in the wiki, you can delete from the published folder. If you have included the file in a **.order** file, then delete it's entry from the **.order** file. To learn more, jump to [Change the page sequence, add or update a .order file](#page-sequence).
 
 <a id="add-page" />
 
@@ -203,14 +203,14 @@ Each update you make requires you commit your changes to the repository. You can
 	> [!div class="mx-imgBorder"]  
 	> ![Add a page to the wiki from the web portal](_img/wiki/publish-code-add-edit-files-folder.png)
 
-0. Enter a name for the page, make sure to specify the **.md** file type. The file name should correspond to the page title that you want to appear in the TOC, with dashes in place of spaces. You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Page title naming restrictions](#page-title-names).
+0. Enter a name for the page, make sure to specify the **.md** file type. The file name should correspond to the page title that you want to appear in the TOC, with dashes in place of spaces. You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Page title naming restrictions](wiki-file-structure.md#file-naming-conventions).
 
 	For example, to add a page that appears in the TOC as *Page 4*, add a file named *Page-4.md*.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Filter wiki TOC](_img/wiki/publish-wiki-new-file-dialog.png)
 
-1. Enter the contents of the page. For details about supportedMarkdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+1. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
 
 2. When done, choose **Commit**, and then fill in the Commit dialog form.
 
@@ -230,7 +230,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 ### Add a parent page and sub-pages
 
-To add a parent page, you'll first add aMarkdown file at the root folder level and then add a folder with the same label.
+To add a parent page, you'll first add a Markdown file at the root folder level and then add a folder with the same label.
 
 0. To add a folder, choose **Folder**, and then fill in the New folder dialog form. Specify at least one file to correspond to a sub-page in the folder.
 
@@ -254,7 +254,7 @@ Each **.order** file defines the sequence of pages contained within a folder. Th
 
 You can add a **.order** file in the same way as you add any file from the **Code>Files** page. Name the file *.order*.
 
-Then, edit the contents of the file to reflect the sequence ofMarkdown files contained within the folder. Each entry should mirror the file name with dashes replaced with a space and without the **.md** file type. Titles are case sensitive, so the entry should match the case used in the file name.
+Then, edit the contents of the file to reflect the sequence of Markdown files contained within the folder. Each entry should mirror the file name with dashes replaced with a space and without the **.md** file type. Titles are case sensitive, so the entry should match the case used in the file name.
 
 For example:  
 

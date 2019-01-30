@@ -7,7 +7,7 @@
     #customTemplateLocation: # Required when templateType == Custom
     #customTemplateParameters: '{}' # Optional
     connectedServiceName: 
-    isManagedImage: 
+    #isManagedImage: true 
     #managedImageName: # Required when isManagedImage == True
     location: 
     storageAccountName: 
@@ -19,7 +19,8 @@
     packagePath: 
     deployScriptPath: 
     #deployScriptArguments: # Optional
-    #additionalBuilderParameters: '{}' # Optional
-    #skipTempFileCleanupDuringVMDeprovision: # Optional
+    #additionalBuilderParameters: '{vm_size:Standard_D3_v2}' # Optional
+    #skipTempFileCleanupDuringVMDeprovision: true # Optional
     #imageUri: # Optional
+    #imageId: # Optional
 ```

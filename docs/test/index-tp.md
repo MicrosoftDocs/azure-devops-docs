@@ -71,7 +71,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/test/getting-started-with-continuous-testing">
+                                        <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

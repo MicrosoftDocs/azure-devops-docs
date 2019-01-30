@@ -7,6 +7,7 @@
     #testResultsFiles: '**/TEST-*.xml' 
     #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
     #mergeTestResults: false # Optional
+    #failTaskOnFailedTests: false # Optional
     #testRunTitle: # Optional
     #buildPlatform: # Optional
     #buildConfiguration: # Optional

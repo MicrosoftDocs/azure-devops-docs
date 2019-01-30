@@ -56,7 +56,7 @@ None
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/AzureFileCopyV2.md)]
+[!INCLUDE [temp](../_shared/yaml/AzureFileCopyV3.md)]
 ::: moniker-end
 
 ## Arguments

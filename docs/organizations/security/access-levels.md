@@ -673,7 +673,7 @@ In addition to the features listed for **Stakeholder** access, the following fea
 <td>Test services in build and release</td>
 <td>
 <ul>
-<li>[Run unit tests with your builds](../../pipelines/test/getting-started-with-continuous-testing.md)</li>
+<li>[Run unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)</li>
 <li>[Review test results](../../pipelines/test/review-continuous-test-results-after-build.md)</li>
 <li>[Analyze test results](../../pipelines/test/test-analytics.md) </li>
 </ul>

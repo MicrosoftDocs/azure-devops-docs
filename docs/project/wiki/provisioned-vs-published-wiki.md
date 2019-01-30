@@ -44,7 +44,7 @@ The unavailable menu options for the wiki pages are shown in the following illus
 > |------|---------|
 > | ![Provisioned wiki page menu options](_img/wiki/diff-menu-options-provisioned.png) | ![Publish code page menu options](_img/wiki/diff-menu-options.png) |
 
-For example, the **Edit** option for the publish code as wiki takes you to the **Code** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
+For example, the **Edit** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
 
 ## Supported features and operational differences
 
@@ -81,15 +81,15 @@ The following table summarizes those operations or features that may differ, dep
 
 For a *provisioned wiki*, select **New page** or **Add subpage**. To learn more, see [Add and edit wiki pages](add-edit-wiki.md#add-page).
 
-For a *publish code as wiki*, add a Markdown file under the folder of the branch that you published. The file must end in **.md** for the wiki to recognize it as a page to publish. To learn more, see [Publish a Git repository to a wiki](add-edit-wiki.md#add-page).
+For a *publish code as wiki*, add a Markdown file under the folder of the branch that you published. The file must end in **.md** for the wiki to recognize it as a page to publish. To learn more, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
 
 <a id="toc"></a>
 
-## Page sequence and the table of contents (TOC)
+## Page sequence and page list in navigation pane
 
-The *provisioned wiki* manages the page sequence and table of contents automatically as you add or move pages within the TOC.
+The *provisioned wiki* manages the page sequence and page list automatically as you add or move pages within the navigation pane.
 
-To structure the TOC for a *publish code as wiki*, define the **.order** file at the root, and for each subfolder or parent page that contains subpages.
+To structure the list of pages in the navigation pane for a *publish code as wiki*, define the **.order** file at the root, and for each subfolder or parent page that contains subpages.
 
 Both types of wikis follow the same file structure, it's just that the publish code as wiki requires you to maintain the page sequence manually.
 
@@ -104,7 +104,7 @@ From the **Wiki**, you can view the revisions of any wiki page by choosing **Rev
 However, the revert process differs depending on the wiki page type.  
 
 - For a *provisioned wiki* page, select **Revert**, as described in [Revert a commit to a provisioned wiki page](wiki-view-history.md#revert-provision)
-- For a *publish as code wiki* page, work from a local branch and submit a pull request to update the branch you're working from. For more details, see [Revert a commit to a provisioned wiki page](wiki-view-history.md#revert-publish).
+- For a *publish as code wiki* page, work from a local branch and submit a pull request to update the branch you're working from.
 
 <a id="versioning"></a>
 

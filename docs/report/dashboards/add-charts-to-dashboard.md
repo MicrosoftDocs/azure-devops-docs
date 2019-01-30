@@ -116,7 +116,7 @@ Open **Test>Test Plans** and then **Charts** and select the dashboard to add the
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
 
-You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/test/getting-started-with-continuous-testing.md).
+You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/languages/dotnet-core.md#run-your-tests).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
