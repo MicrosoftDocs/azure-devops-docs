@@ -5,7 +5,7 @@ ms.topic: include
 
 <a id="plan-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [interacting with a delivery plan](/azure/devops/boards/plans/review-team-plans). To view the valid shortcuts, enter **Shift+?** when viewing a plan from the **Work>Plans** page.
+You can use the following keyboard shortcuts when [interacting with a delivery plan](/azure/devops/boards/plans/review-team-plans). To view the valid shortcuts, enter **Shift+?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
 
 ::: moniker range="tfs-2017"
 > [!NOTE]
