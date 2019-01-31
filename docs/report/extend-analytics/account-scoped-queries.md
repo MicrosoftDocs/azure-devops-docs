@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 
@@ -32,7 +32,7 @@ Project-scope queries help answer questions about a single project whereas organ
 ## Project-scoped queries
 Base URL for project level queries:
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
@@ -40,7 +40,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ```OData
 https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/

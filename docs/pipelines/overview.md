@@ -10,7 +10,7 @@ ms.author: alewis
 author: andyjlewis
 ms.date: 08/31/2018
 ms.topic: overview
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
 # Start using Build and Release

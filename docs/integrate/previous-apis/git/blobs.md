@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Blobs | REST API Reference for Team Foundation Server
 description: Work with Git blobs programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 681BE5A9-6228-4A4B-AD90-0E79277394B9

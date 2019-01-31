@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.date: 09/19/2018
 ms.author: ahomer
 author: alexhomer1
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Azure DevOps Service Status

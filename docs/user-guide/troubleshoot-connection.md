@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Troubleshoot connectivity
 
@@ -85,7 +85,7 @@ If you enter your credentials correctly but you're redirected back to the origin
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < azdevops"
+::: moniker range=">= tfs-2013 < azure-devops"
 
 ## Troubleshoot TFS connectivity
 
@@ -105,7 +105,7 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Switch organizations
 
@@ -123,7 +123,7 @@ Another solution is to delete your browser cookies. For more information, see th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < azdevops"
+::: moniker range=">= tfs-2013 < azure-devops"
 
 ## Connect to TFS with Secure Sockets Layer
 

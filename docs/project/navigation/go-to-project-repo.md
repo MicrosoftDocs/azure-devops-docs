@@ -31,7 +31,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
@@ -59,7 +59,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 From the **Projects** page you can quickly navigate to a project or a team that you've accessed or worked in previously. Projects and teams are listed in the order you've last accessed, with the most recent five projects accessed appearing first. All projects you've accessed are listed within the **All** section. 
 
@@ -90,14 +90,14 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
 
 <!---
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
@@ -164,7 +164,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Choose **Repos>Files**.
 
@@ -177,14 +177,14 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 0. Choose **Code**.  
  
@@ -197,7 +197,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 	> ![Select repository](../../organizations/public/_img/browse-code/select-repository.png)
 ::: moniker-end  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]  
 ::: moniker-end
@@ -211,7 +211,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 From a user page, one under&mdash;**Boards**, **Repos**, **Pipelines**, or **Test Plans**&mdash;you can't switch to a different team, you can [only select team artifacts](use-breadcrumbs-selectors.md). 
 
@@ -227,7 +227,7 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="tfs-2018 || azdevops"
+::: moniker range="tfs-2018 || azure-devops"
 You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](work-across-projects.md).  
 
 ![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
@@ -250,7 +250,7 @@ Open the project/team drop-down menu and select the project/team that you've rec
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end

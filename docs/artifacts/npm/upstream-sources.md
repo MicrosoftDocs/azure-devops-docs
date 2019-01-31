@@ -42,9 +42,9 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 > [!NOTE]
-> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azdevops#determine-if-your-feed-is-a-legacy-feed) and consider upgrading it, if needed.
+> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops#determine-if-your-feed-is-a-legacy-feed) and consider upgrading it, if needed.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
@@ -56,7 +56,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ![Viewing your cached packages](_img/view-cached-packages.png)
 

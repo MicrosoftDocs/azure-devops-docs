@@ -49,7 +49,7 @@ The following example shows how to find all closed bugs by modifying the
 *Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
 
 0.	Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
-	::: moniker range=">= azdevserver-2019"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
 	::: moniker-end  
@@ -62,7 +62,7 @@ The following example shows how to find all closed bugs by modifying the
 
 0.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).   	
-	::: moniker range=">= azdevserver-2019"	
+	::: moniker range=">= azure-devops-2019"	
 	> [!div class="mx-imgBorder"]
 	> ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	::: moniker-end
@@ -74,7 +74,7 @@ The following example shows how to find all closed bugs by modifying the
 	::: moniker-end
 
 0.	Save the query to your **My Queries** folder.  
-	::: moniker range=">= azdevserver-2019"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Save As query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
 	::: moniker-end
@@ -89,7 +89,7 @@ The following example shows how to find all closed bugs by modifying the
 
 You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 > [!div class="mx-imgBorder"]  
 > ![Add new query, new experience](_img/view-run-queries/new-query-new-exp.png)  
 ::: moniker-end
@@ -133,7 +133,7 @@ If your query results do not return your expected set of work items, follow thes
 
 Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) leaf nodes to focus on different parts of the tree.  
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 > [!div class="mx-imgBorder"]  
 > ![Results List Showing a Tree Query, new experience](_img/view-run-queries/tree-query-new-exp.png)  
 ::: moniker-end  
@@ -241,7 +241,7 @@ See also:
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]  
 > The WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
 ::: moniker-end

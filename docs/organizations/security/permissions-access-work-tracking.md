@@ -18,7 +18,7 @@ ms.date: 01/07/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 As a member of an Azure DevOps project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
@@ -271,7 +271,7 @@ By default, team members inherit the permissions afforded to members of the proj
 
 ![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-::: moniker range="tfs-2018 < azdevops"
+::: moniker range="tfs-2018 < azure-devops"
 
 If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 

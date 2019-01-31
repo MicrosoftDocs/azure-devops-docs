@@ -29,7 +29,7 @@ Wikis and repository README files are great ways to share information with your 
 
 ## 5-minute quickstarts  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
@@ -65,7 +65,7 @@ Wikis and repository README files are great ways to share information with your 
 
 ## How-to guides
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [View wiki history and revert](wiki-view-history.md)
 - [Filter or print wiki content](filter-print-wiki.md)  

@@ -25,11 +25,11 @@ Access levels grant or restrict access to select web portal features. This is in
 
 When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups&#151;**Readers**, **Contributors**, and **Project Administrators**&#151;as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 To add user accounts or groups to specific access levels, see [Change access levels](change-access-levels.md). Make sure to set each user's access level based on what you've purchased for that user. 
 ::: moniker-end
 
@@ -37,13 +37,13 @@ To add user accounts or groups to specific access levels, see [Change access lev
 
 You assign users or groups of users to one of the following access levels:
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 - **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an organization. 
 - **Visual Studio Subscription**: provides access to premium features and all published DevOps extensions. Assign to users with a Visual Studio Enterprise subscription.
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 - **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign  to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos. 
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
@@ -79,7 +79,7 @@ As the following images illustrate, **Basic** access includes all **Stakeholder*
 
 # [Stakeholder](#tab/stakeholder) 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Stakeholder access level](_img/access-levels/stakeholder-2019.png) 
 ::: moniker-end
@@ -92,7 +92,7 @@ As the following images illustrate, **Basic** access includes all **Stakeholder*
 
 # [Basic](#tab/basic) 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Basic access level](_img/access-levels/basic-2019.png) 
 ::: moniker-end
@@ -105,23 +105,23 @@ As the following images illustrate, **Basic** access includes all **Stakeholder*
 
 # [Visual Studio Subscription](#tab/vs-subscription) 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![VS Enterprise access level](_img/access-levels/vs-enterprise-2019.png) 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 Not supported for on-premises versions.
 ::: moniker-end
 
 
 # [Advanced](#tab/advanced) 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Not supported for Azure DevOps Services.
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Basic access level](_img/access-levels/advanced-2019.png) 
 ::: moniker-end
@@ -133,11 +133,11 @@ Not supported for Azure DevOps Services.
 
 # [VS Enterprise](#tab/vs-enterprise) 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Not supported for Azure DevOps Services.
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![VS Enterprise access level](_img/access-levels/vs-enterprise-2019.png) 
 ::: moniker-end
@@ -158,7 +158,7 @@ Not supported for TFS 2015 or earlier versions.
 
 ## Stakeholder access
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 With Stakeholder access, users can create and modify work items, and can create and save queries. They have limited access to many of the Azure Boards features. They also can view and approve release pipelines and perform some administrative tasks. 
 ::: moniker-end
@@ -170,7 +170,7 @@ With Stakeholder access, users can create and modify all work items, and can cre
 ::: moniker-end
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ### Public versus private feature access
 **Stakeholder** access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
@@ -193,7 +193,7 @@ With Stakeholder access, users can create and modify all work items, and can cre
 
 
 ### Stakeholder feature access
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 The following features are available to Stakeholders from the web portal for both public and private projects. For private projects, there are some limitations as noted. To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-stakeholder.md).   
 
 <table width="80%">
@@ -318,7 +318,7 @@ Test summary access to stakeholder license users
 
 ::: moniker-end  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 <table width="80%">
 <tbody valign="top">
 <tr>
@@ -513,7 +513,7 @@ Test summary access to stakeholder license users
 
 If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to grant them **Basic** access.  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 **For Private projects:**
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
@@ -527,7 +527,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
@@ -561,7 +561,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 <a id="basic" />
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Basic access, Azure Boards and Azure Repos
 
 In addition to the features listed for **Stakeholder** access, the following features are available to users with **Basic** access. Basic access allows users to access features provided in the **Repos**, **Pipelines**, and **Test Plans** hubs in addition to **Dashboards** and **Boards**. 
@@ -918,14 +918,14 @@ Can add features and epics from the Kanban board. Can change the backlog priorit
 
 ::: moniker-end  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Visual Studio Subscription access
 Visual Studio subscribers are entitled to **Visual Studio Subscription** features as a subscriber benefit. When you add those users be sure to assign them **Visual Studio Subscription** access level and the system will automatically recognize their subscription and enable any other features that are included based on their subscription level. 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 ## VS Enterprise access
 
 In addition to the features listed for **Basic** access, the following features are available to users with **VS Enterprise** access from the web portal. 
@@ -933,7 +933,7 @@ In addition to the features listed for **Basic** access, the following features 
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 
 <table width="80%">
@@ -1007,7 +1007,7 @@ In addition to the features listed for **Basic** access, the following features 
 
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 With VS Enterprise access, users have access to any fee-based, Marketplace extension published by Microsoft Marketplace extension published by Microsoft that is included for active Visual Studio Enterprise subscribers. Examples include [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is also free for 5 users who are not Visual Studio Enterprise subscribers) and [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
 ::: moniker-end
@@ -1016,20 +1016,20 @@ For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for w
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 ## Advanced access
 Users assigned Advanced access can manage test cases when you have [purchased Test Manager extension for Azure Test Plans and assigned to the user accounts](access-levels.md#test-manager) to gain full access to [Web-based test case management tools](../../test/create-a-test-plan.md).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!NOTE]   
 > The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to **Test**, assign them to the **Advanced** access level and the Test Manager extension for Azure Test Plans.  
  
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 In addition to the features listed for **Basic** access, the following features are available to users with **Advanced** access from the web portal. 
 
@@ -1071,7 +1071,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 
 <!--- This section will change based on RC2 or RTW -->
 <a id="test-manager"  >  </a>
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Test Plans, load testing, and Marketplace extensions
 
 Full access to **Test Plans** and load testing features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Planss from the Marketplace.  
@@ -1089,7 +1089,7 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 ## What features can users access who are added to two different groups?
 If a user belongs to a group that has **Basic** access and another group that has **VS Enterprise** access, the user has access to all features available through **VS Enterprise**, which is a superset of **Basic**.
@@ -1103,14 +1103,14 @@ Service accounts don't require a TFS CAL or other purchase.
 
 ## Related articles  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 - [Manage users and access](../accounts/add-organization-users.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
 ::: moniker-end
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 - [Change access levels](change-access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md) 

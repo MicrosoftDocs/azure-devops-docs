@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Fields | REST API Reference for Team Foundation Server
 description: Work with work item fields programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A2365AB4-482A-46A5-A235-2D3C94C2ED96

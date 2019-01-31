@@ -19,7 +19,7 @@ ms.date: 01/23/2019
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 If you want additional portfolio backlogs, see the following topics based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)  
 - **Hosted XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
@@ -51,7 +51,7 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 

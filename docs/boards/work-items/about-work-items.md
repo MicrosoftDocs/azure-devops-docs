@@ -143,7 +143,7 @@ Anyone who has write access to a project can assign work items, including users 
 - The system shows the display name and adds the user name when required to disambiguate identical display names  
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 ###Integration with Azure Active Directory 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
@@ -151,7 +151,7 @@ When your system is configured with Azure Active Directory (Azure AD), then the 
 You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-azure-ad.md).
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019" 
+::: moniker range="<= azure-devops-2019" 
 ###Integration with Active Directory
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
@@ -160,7 +160,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
  
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]    
 >To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
@@ -206,11 +206,11 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 <a id="customize" />
 ## Customize a WIT 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 

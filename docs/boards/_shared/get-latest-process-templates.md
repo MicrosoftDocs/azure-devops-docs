@@ -2,10 +2,10 @@
 ms.topic: include
 ---
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 > [!TIP]  
-> With Azure DevOps Server, you can choose between using the Inherited process model or the On-premesis XML process model. For details, see [Customize your work tracking experience, Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azdevserver-2019#choose-the-process-model-for-your-project-collection). To access the latest versions of the default processes/process templates: 
+> With Azure DevOps Server, you can choose between using the Inherited process model or the On-premesis XML process model. For details, see [Customize your work tracking experience, Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-the-process-model-for-your-project-collection). To access the latest versions of the default processes/process templates: 
 >- **For Inherited process model**: Open the Process page from organizations settings. To learn more, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
 >- **For the On-premises XML process model**:   
 	><ul><li>[Install or upgrade to the latest version of Azure DevOps Server](https://visualstudio.microsoft.com/downloads/).</li> 

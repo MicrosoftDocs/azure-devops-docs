@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/21/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Tutorial: Connect your organization to Azure Active Directory
@@ -186,17 +186,17 @@ When you inform your users of the completed change, include the tasks that each 
 
 After you connect your organization to Azure AD, you might need to update the Azure subscription that you've been using to pay for Azure DevOps.
 
-If your Azure DevOps subscription is associated with a directory other than the one you connect to, you can't buy or change the purchases you’ve already made. Your existing paid resources continue to work and charges renew each month. But, when you try to make changes in the Visual Studio Marketplace, Azure DevOps tab, you’ll see something similar to the following message:
+If your Azure DevOps subscription is associated with a directory other than the one you connect to, you can't buy or change the purchases you've already made. Your existing paid resources continue to work and charges renew each month. But, when you try to make changes in the Visual Studio Marketplace, Azure DevOps tab, you'll see something similar to the following message:
 
 ![Select Azure subscription for Azure DevOps billing](_img/connect-organization-to-aad/select-azure-subscription.png)
 
 Set up billing by using one of the following options:
 
-* [Associate the subscription with the directory](/azure/active-directory/active-directory-how-subscriptions-associated-directory) that you’re now using to sign in to Azure DevOps. If you’re unable to change the directory in the Azure portal, you can [transfer the subscription to your work Azure AD identity](/azure/billing/billing-subscription-transfer).
+* [Associate the subscription with the directory](/azure/active-directory/active-directory-how-subscriptions-associated-directory) that you're now using to sign in to Azure DevOps. If you're unable to change the directory in the Azure portal, you can [transfer the subscription to your work Azure AD identity](/azure/billing/billing-subscription-transfer).
 
 * If you have a different Azure subscription to use for billing, you can [change the Azure subscription Azure DevOps uses for billing](../billing/change-azure-subscription.md).
   > [!IMPORTANT]
-  > Follow the article instructions carefully, because this option can disrupt billing for your organization if it isn’t set up correctly.
+  > Follow the article instructions carefully, because this option can disrupt billing for your organization if it isn't set up correctly.
 
 ## FAQ
 

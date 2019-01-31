@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: dahellem
 author: DanHellem
 ms.topic: reference
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 08/29/2018
 ---
 

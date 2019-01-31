@@ -111,7 +111,7 @@ On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 **Example with multiple match patterns:**
 
@@ -156,7 +156,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -223,7 +223,7 @@ These files are copied to the staging directory:
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 **Example with multiple match patterns:**
 
@@ -241,7 +241,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -292,7 +292,7 @@ See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

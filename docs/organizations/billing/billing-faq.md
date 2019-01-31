@@ -118,7 +118,7 @@ A: If you're the owner or contributor for the Azure subscription used for billin
 
 ### Q: Why do I no longer see Team Projects in the Azure portal?
 
-A: Starting September 28th, 2018 you can no longer create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects youâ€™ve created via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
+A: Starting September 28th, 2018 you can no longer create Team Projects or view them in the Azure portal. You can continue to **access** any Team Projects you have created via the Azure portal through your organization URL (`https://dev.azure.com/{yourorganization}`) and you can always [create new organizations and projects from visualstudio.com](https://app.vsaex.visualstudio.com/me?mkt=en-US&campaign=o~msft~vscom~vssignin). Going forward, the best way for Azure users to get started using Azure DevOps is to [create a project](https://azure.microsoft.com/features/devops-projects/).
 
 ### Q: Why is my organization already linked to an Azure subscription?
 
@@ -154,7 +154,7 @@ A: You can find the current owner in your organization settings.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -166,7 +166,7 @@ A: You can find the current owner in your organization settings.
 
    ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
 
-::: moniker-end      
+::: moniker-end  �  �
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
@@ -175,7 +175,7 @@ A: You can find the current owner in your organization settings.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 1. Go to your organization settings.
 
@@ -187,7 +187,7 @@ A: You can find the current owner in your organization settings.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
 ::: moniker-end
 

@@ -141,7 +141,7 @@ A team refers to a group of project members who work in a particular product are
 
 The Agile tools Boards, Backlogs, Sprints, and Plans rely on team configurations. For example, if you want to add a Kanban board or product backlog, you define a team. For more information on teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
-::: moniker range="azdevops"   
+::: moniker range="azure-devops"   
 Your view and options available differ somewhat depending on whether you [enabled the New Navigation feature](../../project/navigation/preview-features.md). This feature displays a vertical navigation interface along with several changes to navigation of Agile tools. 
 ::: moniker-end  
 
@@ -151,7 +151,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Open Work>Work Items, new navigation](../work-items/_img/about-agile/view-work-items-page.png)
 ::: moniker-end
@@ -162,7 +162,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"   
+::: moniker range="azure-devops"   
 > [!div class="mx-imgBorder"]
 > ![Work>Work Items ](../work-items/_img/view-add/view-work-items-hub-s136.png)
 ::: moniker-end
@@ -172,7 +172,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 The **Work Items** page isn't available for TFS 2018 and earlier versions.  
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -185,7 +185,7 @@ The **Work Items** page isn't available for TFS 2018 and earlier versions.
 Boards present work items as cards and support quick status updates through a drag-and-drop feature. The feature is similar to sticky notes on a physical whiteboard. Each board supports many Kanban practices. You can define columns and swim lanes, set Work-in-Progress (WIP) limits, define the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ![New Navigation, Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
@@ -196,7 +196,7 @@ Boards present work items as cards and support quick status updates through a dr
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 ![Kanban board, Agile template](../boards/_img/kanban-basics-intro.png)     
 ::: moniker-end   
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
@@ -204,7 +204,7 @@ Boards present work items as cards and support quick status updates through a dr
 > ![TFS 2015, Kanban board, Agile template](../boards/_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -216,24 +216,24 @@ Boards present work items as cards and support quick status updates through a dr
 Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. To get started, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ![New Navigation, Work>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
 ::: moniker-end
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 !["Web portal, choose Work>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range="<= tfs-2015"
 ![Work>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -245,7 +245,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path by using the drag-and-drop feature. You then can view that work in a separate *sprint backlog*. 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ![New Navigation, Work>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
@@ -255,14 +255,14 @@ Sprint backlogs and taskboards provide a filtered view of work items a team assi
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 !["Web portal, choose Work>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Work>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -287,7 +287,7 @@ Delivery plans display work items as cards along a timeline or calendar view. Th
 ![Moving a card to a different iteration](../plans/_img/plans_move1.png)
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## GitHub integration 
 

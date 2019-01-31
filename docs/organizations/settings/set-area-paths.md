@@ -74,7 +74,7 @@ From the web portal, open **Project Settings**.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
 0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
@@ -90,17 +90,17 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
 
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)
 
@@ -122,7 +122,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"  
+::: moniker range="azure-devops-2019"  
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]  
 ::: moniker-end
 
@@ -185,7 +185,7 @@ From a web browser, open the web portal administrative context for your team.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 

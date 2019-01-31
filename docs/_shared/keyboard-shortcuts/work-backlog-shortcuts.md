@@ -5,7 +5,7 @@ ms.topic: include
 
 <a id="work-backlog-shortcuts"></a>
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 You can use the following keyboard shortcuts when working from a **Boards>Backlogs** page. These shortcuts work when you are on a product backlog, portfolio backlog, or sprint backlog page.  
 <br/>

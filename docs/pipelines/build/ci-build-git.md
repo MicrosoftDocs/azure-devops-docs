@@ -43,7 +43,7 @@ A common workflow with Git is to create temporary branches from your master bran
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Unless you specify a [trigger](../yaml-schema.md#trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features/*` branches to be automatically built.
 
@@ -54,7 +54,7 @@ trigger:
 ```
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -93,14 +93,14 @@ The master branch typically produces deployable artifacts such as binaries.  You
 
 Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ```yaml
 - task: PublishBuildArtifacts@1
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 ```
 ::: moniker-end
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -134,7 +134,7 @@ Use policies to protect your branches by requiring successful builds before merg
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds. 
@@ -150,7 +150,7 @@ For more details, see [Triggers](../build/triggers.md).
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 

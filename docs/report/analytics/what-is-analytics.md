@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/04/2018
 ---
 
@@ -47,13 +47,13 @@ If you want to develop your own widget based on the Analytics Service, see [Crea
 
 The easiest way to pull Azure DevOps data into Power BI is to use the [Power BI Data Connector](../powerbi/data-connector-connect.md). The Azure DevOps Power BI Data connector works with Analytics views. For more information, read [What are Analytics views](./what-are-analytics-views.md).
  
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ![Power BI Azure DevOps Connector (Beta)](../powerbi/_img/pbi-getstarted-123.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 ![Power BI Azure DevOps Server Connector (Beta)](../powerbi/_img/pbi-getstarted-123-onprem.png)
 

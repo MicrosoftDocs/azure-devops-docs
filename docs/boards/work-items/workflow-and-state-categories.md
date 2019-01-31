@@ -123,12 +123,12 @@ To learn more about process models, see [Customize your work tracking experience
 
 ## Related articles
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 - [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
 - [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)

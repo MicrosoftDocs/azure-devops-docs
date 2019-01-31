@@ -93,7 +93,7 @@ echo This is pipeline $(System.DefinitionId)
 
 If you have more complex scripting needs than the examples shown above, then consider writing them in Bash.
 Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash.
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 For Azure Pipelines, the Microsoft-hosted agents always have Bash available.
 ::: moniker-end
 

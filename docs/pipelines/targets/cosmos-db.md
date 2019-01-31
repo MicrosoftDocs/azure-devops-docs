@@ -9,7 +9,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.date: 12/07/2018
 author: mlearned
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 

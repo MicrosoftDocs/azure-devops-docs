@@ -29,7 +29,7 @@ The easiest way to define a hyperlink is to create a query that matches what you
 
 ## Query hyperlink syntax 
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 

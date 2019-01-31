@@ -91,6 +91,6 @@ We also recommend that for testing purposes you minimize costs by selecting a sm
 
 Try reselecting your User account to refresh the dialog, or close it and reopen it. A newly-created Azure Container Service should then appear.
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end

@@ -6,7 +6,7 @@ description: Best practices for working with URLs in Azure DevOps extensions and
 ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe
 ms.topic: conceptual
 ms.manager: jillfra
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.author: wismythe
 author: willsmythe
 ms.date: 08/31/2018

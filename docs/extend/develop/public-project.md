@@ -7,7 +7,7 @@ ms.technology: devops-ecosystem
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 ms.manager: jillfra
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.author: wismythe
 author: willsmythe
 ms.date: 05/14/2018

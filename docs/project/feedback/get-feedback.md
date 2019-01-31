@@ -29,7 +29,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ## Prerequisites
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 * You must connect to a team project. If you don't have a project yet, create one in [Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md).  
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
@@ -43,7 +43,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -91,7 +91,7 @@ Add the **Other links** widget to a web portal team dashboard. For details, see 
 
 To request feedback, you fill out a form that generates an email request to your stakeholders.
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
@@ -116,7 +116,7 @@ To request feedback, you fill out a form that generates an email request to your
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019" 
+::: moniker range=">= tfs-2015 <= azure-devops-2019" 
 0. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  

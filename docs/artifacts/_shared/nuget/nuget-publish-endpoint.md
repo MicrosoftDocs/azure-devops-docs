@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
 
@@ -32,7 +32,7 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
 
