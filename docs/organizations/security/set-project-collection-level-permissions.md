@@ -20,11 +20,11 @@ ms.date: 12/20/2018
 Several permissions are set at the project or at the organization/project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a custom security group within a level and add members to that group. You can then change the default permission settings.
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 An organization is the container for several projects that share resources. For more information about projects and project collections, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 A project collection is the container for several projects that share resources. For more information about projects and project collections, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 ::: moniker-end
 
@@ -33,7 +33,7 @@ A project collection is the container for several projects that share resources.
 > |-------------|----------| 
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Security Service Group | 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 > [!Note]  
 > The above list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
 
@@ -53,10 +53,10 @@ For a description of each group and each permission, see [Permissions and groups
 
 ## Prerequisites
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 * You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users.md). 
 ::: moniker-end  
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 * You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end  
 * To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
@@ -74,7 +74,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -98,16 +98,16 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 0. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
-::: moniker-end  Â   Â 
+::: moniker-end      
 
-::: moniker range="<= tfs-2018"  Â   Â 
+::: moniker range="<= tfs-2018"      
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  Â   Â 
+::: moniker-end      
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -133,7 +133,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -166,7 +166,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. From your project web portal, choose the ![](../../_img/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
 
@@ -195,15 +195,15 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	> [!NOTE]   
 	> You can't change the permission settings for the Project Collection Administrators group. This is by design. 
-::: moniker-end  Â   Â 
+::: moniker-end      
 
-::: moniker range="<= tfs-2018"  Â   Â 
+::: moniker range="<= tfs-2018"      
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  Â   Â 
+::: moniker-end      
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (TFS).  
 	
@@ -235,13 +235,13 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 ## On-premises deployments
 
 For on-premises deployments, see these additional topics: 
@@ -249,9 +249,9 @@ For on-premises deployments, see these additional topics:
 - [Add a user as a TFS server administrator](/tfs/server/admin/add-administrator-tfs) 
 - [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs)  
 
-::: moniker-end  Â 
+::: moniker-end   
 
-::: moniker range="tfs-2018 < azdevops"
+::: moniker range="tfs-2018 < azure-devops"
 
 If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 

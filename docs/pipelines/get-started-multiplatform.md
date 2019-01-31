@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
 ms.date: 12/14/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Create a multi-platform pipeline
@@ -47,7 +47,7 @@ In the sample repo, the Node.js app is configured to run on Ubuntu Linux. You're
 
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=azdevops
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=azure-devops
 strategy:
   matrix:
     linux:

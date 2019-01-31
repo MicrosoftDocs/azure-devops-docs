@@ -8,7 +8,7 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 **90-day token:**
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. From **Azure Artifacts**, select **Connect to feed**.
 
@@ -28,7 +28,7 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 1. From the **Packages** page, select **Connect to feed**.
 

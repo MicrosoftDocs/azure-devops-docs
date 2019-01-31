@@ -84,7 +84,7 @@ Available Settings:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

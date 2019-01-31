@@ -33,7 +33,7 @@ This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM
 
 This task can be used in only an [agentless job](../../process/server-phases.md).
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
 ::: moniker-end

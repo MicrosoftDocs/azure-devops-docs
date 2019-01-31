@@ -3,7 +3,7 @@ title: Project API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
 ms.manager: jillfra
 ms.topic: article

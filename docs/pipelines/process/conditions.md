@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 On each step and job, you can specify the conditions under which the step or job will run.
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
@@ -47,7 +47,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Expressed as JSON, it would look like:
 }
 ```
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 For instance, in a YAML pipeline, you could check output variables:
 

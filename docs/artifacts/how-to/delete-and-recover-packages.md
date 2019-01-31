@@ -42,7 +42,7 @@ Deprecating a version can help you discourage new usage of it by presenting a wa
 
 Deprecate and unpublish both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Deprecate or unpublish an npm package in Azure DevOps Services
 
@@ -62,7 +62,7 @@ Choose the package from the **Packages** page in the **Build and Release** page 
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ### Deprecate or unpublish an npm package in TFS
 
@@ -93,7 +93,7 @@ There are two options available to remove a version of a NuGet package from a fe
 Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Unlisting or deleting a NuGet package in Azure DevOps Services
 
@@ -113,7 +113,7 @@ Choose the package from the **Packages** page in the **Build and Release** page 
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ### Unlisting or deleting a NuGet package in Team Foundation Server
 

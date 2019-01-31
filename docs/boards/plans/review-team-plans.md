@@ -41,7 +41,7 @@ In this article you'll learn:
 
 ## Prerequisites
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Installed the Delivery Plans extension](#install-plans).  
@@ -55,7 +55,7 @@ In this article you'll learn:
 - 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azdevops"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Installed the Delivery Plans extension](#install-plans).  
@@ -104,7 +104,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Open **Boards>Plans**. 
 
@@ -130,7 +130,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 0. Open **Boards>Plans**. 
 
@@ -139,7 +139,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 0. To add a plan, choose **New Plan** . 
 
-	::: moniker range="azdevops"  
+	::: moniker range="azure-devops"  
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 	::: moniker-end  
@@ -155,7 +155,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

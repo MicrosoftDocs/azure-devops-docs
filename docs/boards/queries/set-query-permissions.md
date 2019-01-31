@@ -47,7 +47,7 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 If you're not a member of the project administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Contribute** permission set to **Allow** for the Shared query folder.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Choose **All**. Expand **Shared Queries**. 
  
@@ -106,7 +106,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
 To keep anyone else from modifying a shared query that you create, you may want to set permissions on a specific query. You can do this by opening the permissions dialog for the specific query.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  Choose  the ![ ](../_img/icons/actions-icon.png) actions icon and select **Security**.  
 

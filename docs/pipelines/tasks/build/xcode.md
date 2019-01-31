@@ -8,7 +8,7 @@ ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
 ms.manager: jillfra
 ms.author: dastahel
 ms.date: 04/18/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Xcode task

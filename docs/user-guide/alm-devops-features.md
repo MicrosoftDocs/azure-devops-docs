@@ -316,7 +316,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <a id="customize-vsts">  </a>
 
@@ -1017,7 +1017,7 @@ Use features supported by these familiar clients to manage your project and illu
 </tbody>
 </table>
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <a id="package-management"></a>
 
@@ -1440,7 +1440,7 @@ pipelines\tasks\build\_img
 </tbody>
 </table>
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <a id="power-bi">  </a>
 

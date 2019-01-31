@@ -13,7 +13,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 01/08/2018
 ---
 
@@ -43,7 +43,7 @@ You can start viewing and adding work items once you connect to a project.
 > [!div class="mx-imgBorder"]  
 > ![Open Boards>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 > [!NOTE]   
 > The new Work Items experience is available when you connect to a GitHub repository. If you connect to a TFVC repository, you'll continue to see the legacy query-focused experience. 
@@ -51,7 +51,7 @@ You can start viewing and adding work items once you connect to a project.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Open a browser window, choose **Work**, and then **Work Items**. 
 
@@ -60,7 +60,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -117,7 +117,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <table>
 <tbody valign="top">
@@ -142,7 +142,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -204,14 +204,14 @@ For example, here we choose User Story.
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -250,14 +250,14 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]
 ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -282,7 +282,7 @@ Use the **Discussion** section in the work item form to add and review comments 
 
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 

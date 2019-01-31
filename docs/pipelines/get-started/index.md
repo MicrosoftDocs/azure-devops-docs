@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 09/05/2018
 ---
 

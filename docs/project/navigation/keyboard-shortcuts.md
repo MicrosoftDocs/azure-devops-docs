@@ -86,7 +86,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Work Items 
 

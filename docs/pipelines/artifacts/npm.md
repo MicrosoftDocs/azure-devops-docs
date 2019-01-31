@@ -31,7 +31,7 @@ Before you read this topic, you should understand the kind of build pipeline you
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
 
 To publish to an external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry.
@@ -49,7 +49,7 @@ For a list of other options, see the [npm task](../tasks/package/npm.md).
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML is not supported in TFS.
 ::: moniker-end
 

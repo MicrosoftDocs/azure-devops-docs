@@ -24,7 +24,7 @@ You can add a link to a work item from within the work item form or from a backl
 
 Use this article to learn how to:  
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
@@ -35,7 +35,7 @@ Use this article to learn how to:
 ::: moniker-end    
 
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
@@ -100,7 +100,7 @@ From the Add link dialog, select the link type, enter a work item ID, and then c
 
 For example, here we use the **Related** link type to link three items to the bug with ID of *400*. 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/add-link-dialog-s136.png)  
 
@@ -126,7 +126,7 @@ To view the work items selected for linking, you can choose the ![info icon](../
 
 If you are working from the Query Results page, you'll need to bulk save the work items you've modified. When you work from a backlog, work items are automatically saved.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Query results page, save bulk modified items](_img/bulk-modify/query-results-bulk-save-items.png) 
 ::: moniker-end	
@@ -170,7 +170,7 @@ Here, we have selected to add a link to the selected work items.
 
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 <a id="remote-link"> </a>  
 ## Link to a remote work item 
 
@@ -269,7 +269,7 @@ Additional features you can use to quickly link or change links that use the par
 
 ## Related articles
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
@@ -279,7 +279,7 @@ Additional features you can use to quickly link or change links that use the par
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)

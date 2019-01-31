@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/14/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Start free trials for paid features and extensions

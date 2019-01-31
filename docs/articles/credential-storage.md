@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.manager: jillfra
 ms.date: 01/25/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # How we store your credentials for Azure DevOps Services

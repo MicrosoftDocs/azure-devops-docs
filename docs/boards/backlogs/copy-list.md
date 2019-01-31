@@ -22,12 +22,12 @@ ms.date: 11/19/2018
 
 You can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
  
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!TIP]  
 >The data copied with **Copy to clipboard** is the same as that copied when you select **Email ...**.  
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 > [!TIP]  
 >The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). 
 ::: moniker-end  

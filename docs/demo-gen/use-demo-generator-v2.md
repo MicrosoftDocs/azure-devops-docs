@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.manager: jillfra
 ms.author: sdanie
 ms.topic: conceptual
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 05/09/2018
 ---
 # Get started creating and populating demo Azure DevOps Services projects with the Azure DevOps Demo Generator

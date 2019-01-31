@@ -9,7 +9,7 @@ ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 01/18/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Deploy to Kubernetes task

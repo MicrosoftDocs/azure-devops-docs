@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Change the project visibility, public or private

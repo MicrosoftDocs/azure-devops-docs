@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/19/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Create your first pipeline

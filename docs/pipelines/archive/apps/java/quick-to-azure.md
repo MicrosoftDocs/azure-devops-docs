@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 06/27/2017
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 

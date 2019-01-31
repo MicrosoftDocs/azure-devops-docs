@@ -200,7 +200,7 @@ Save your build pipeline, and you are all set! The build agent will now be able 
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

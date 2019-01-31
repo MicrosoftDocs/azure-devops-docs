@@ -148,7 +148,7 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 > [!NOTE]   
 > You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
 ::: moniker-end 

@@ -43,7 +43,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)  
 
@@ -57,14 +57,14 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 !["Web portal, choose Boards>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -145,7 +145,7 @@ you'll see the parent epic of the features and backlog items, even if the epic o
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -162,7 +162,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
@@ -185,7 +185,7 @@ Items that are owned by other teams appear with hollow-filled bars.
 ![Team backlog is filtered based on area path ownership](_img/ALM_OB_CustServTeamBacklog.png)  
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -201,7 +201,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/management-team-backlog-epics.png)   
@@ -213,7 +213,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 
 Here's another example that shows the **Epics** backlog for the **Management** team. 
 Drilling down, you can see all the backlog items and features, even though they 
@@ -230,7 +230,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

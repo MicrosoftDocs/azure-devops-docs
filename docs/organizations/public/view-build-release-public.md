@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 ms.date: 11/06/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # View build and release pipelines

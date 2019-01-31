@@ -55,7 +55,7 @@ The first step is to add a team for each feature team and management area. You c
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)  
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -77,7 +77,7 @@ The first step is to add a team for each feature team and management area. You c
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 <a id="add-team-team-services" /> 
 
@@ -110,7 +110,7 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -138,7 +138,7 @@ You do this by opening each area path associated with a feature team and changin
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
 
@@ -162,10 +162,10 @@ You do this by opening each area path associated with a feature team and changin
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 
 0. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](../../organizations/settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
 
@@ -206,7 +206,7 @@ You do this by opening each area path associated with a feature team and changin
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -219,7 +219,7 @@ By including sub-area paths for the management teams, you automatically include 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from **Teams**. 
 
 0.  From **Project Settings**, choose **Teams**, and then choose the team whose settings you want to modify. 
@@ -256,7 +256,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"   
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"   
 
 0.  You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -291,7 +291,7 @@ Repeat this step for all your management areas. Also, if you want to enable roll
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -336,7 +336,7 @@ For additional details, see [Manage and configure team tools](../../organization
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 From **Project Settings>Project configuration>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
 
@@ -349,7 +349,7 @@ From **Project Settings>Project configuration>Areas**, you can review which **Ar
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 From **Project Settings>Work>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
  
 > [!div class="mx-imgBorder"]  
@@ -360,7 +360,7 @@ From **Project Settings>Work>Areas**, you can review which **Area Paths** have b
 This feature isn't supported for TFS 2015 and earlier versions.
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

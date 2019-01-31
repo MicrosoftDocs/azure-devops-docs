@@ -9,7 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2017
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Use NuGet with Azure DevOps Services feeds

@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/21/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 # Separate your organization from Azure Active Directory
 

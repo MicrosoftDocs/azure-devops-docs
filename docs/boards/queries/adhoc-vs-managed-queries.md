@@ -23,7 +23,7 @@ You have two ways to perform work item searches: semantic or adhoc searches and 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 You perform semantic or adhoc searches using the work item search box (shown below)   
 
@@ -46,7 +46,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"     
+::: moniker range="<= tfs-2018 || azure-devops"     
 
 You perform semantic or adhoc searches using the work item search box (shown below). 
 
@@ -56,7 +56,7 @@ In the search box, check that the text says _Search work items_. If it doesn't, 
 
 You add and run managed queries using the built-in query-editor available from the **Work>Queries** page.
 ::: moniker-end 
-::: moniker range="azdevops"	
+::: moniker range="azure-devops"	
 > [!div class="mx-imgBorder"]
 > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 ::: moniker-end
@@ -67,7 +67,7 @@ You add and run managed queries using the built-in query-editor available from t
 ![Editor View of a Flat List Query - On-premises TFS](_img/5.png)  
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

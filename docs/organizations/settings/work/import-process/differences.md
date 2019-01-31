@@ -8,7 +8,7 @@ ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
