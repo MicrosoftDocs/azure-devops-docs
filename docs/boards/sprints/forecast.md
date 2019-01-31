@@ -30,7 +30,7 @@ Use this article to learn:
 
 ## Prerequisites
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
 * You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project). 
@@ -42,7 +42,7 @@ Use this article to learn:
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project). 
@@ -85,7 +85,7 @@ To forecast your product backlog, perform the following actions.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -133,7 +133,7 @@ To forecast your product backlog, perform the following actions.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 To forecast your product backlog, perform the following actions.
 
@@ -164,7 +164,7 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 

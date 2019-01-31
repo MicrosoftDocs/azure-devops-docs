@@ -292,7 +292,7 @@ The following will also need to be in your path:
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

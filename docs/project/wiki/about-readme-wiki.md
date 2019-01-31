@@ -15,7 +15,7 @@ ms.date: 12/17/2018
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 # About Wikis, READMEs, and Markdown
 
@@ -45,7 +45,7 @@ You can provide guidance to your team in the following places using Markdown:
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
   
 - [Team project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
@@ -111,7 +111,7 @@ Use your team project wiki to share information with other team members. When yo
 > The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 The following features are supported for the team project wiki.
 
@@ -168,7 +168,7 @@ The following features are supported for the team project wiki you create in the
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Publish existing Git repositories to a wiki  
 

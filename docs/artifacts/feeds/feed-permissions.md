@@ -41,7 +41,7 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 Select **Permissions**.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -55,7 +55,7 @@ Select **Permissions**.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azdevops"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
 

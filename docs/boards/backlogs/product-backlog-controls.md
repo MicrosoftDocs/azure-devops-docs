@@ -26,7 +26,7 @@ Once you've defined your product backlog, you can use the following controls to 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 | Icon  | Control                  | Function              |
 |---------|------------------------|--------------------|
@@ -59,7 +59,7 @@ Once you've defined your product backlog, you can use the following controls to 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 | Control                  | Function                      |
 |--------------------------|-------------------------------|
@@ -81,7 +81,7 @@ Once you've defined your product backlog, you can use the following controls to 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 

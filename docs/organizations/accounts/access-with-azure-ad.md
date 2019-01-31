@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Access your organization with Azure Active Directory

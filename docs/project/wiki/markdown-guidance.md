@@ -24,7 +24,7 @@ Having the right guidance at the right time is critical to success. Use [Markdow
 
 You can provide guidance in the following areas using Markdown:
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [Project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
@@ -188,7 +188,7 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 
 Combine these elements to apply emphasis to text.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!NOTE]  
 > There is noMarkdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
 ::: moniker-end
@@ -823,7 +823,7 @@ $$
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 <a id="toc-wiki" > </a>
 
 ## Table of contents (TOC) for Wiki pages
@@ -849,7 +849,7 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Embed Videos in a Wiki page
 
@@ -870,7 +870,7 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## YAML tags
 
@@ -902,7 +902,7 @@ title: Hello world
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Embed Azure Boards query results in Wiki
 

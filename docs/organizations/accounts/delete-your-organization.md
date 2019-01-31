@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 01/18/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Delete your organization

@@ -47,7 +47,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
 
@@ -78,7 +78,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -101,7 +101,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -115,7 +115,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
@@ -153,7 +153,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 0. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
@@ -190,14 +190,14 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 	<a id="customize-activity-list">  </a>  
 
-	::: moniker range="azdevops"  
+	::: moniker range="azure-devops"  
 
 	> [!NOTE]    
 	> Customizing the pick list of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  
 
 	::: moniker-end
 
-	::: moniker range="azdevserver-2019"  
+	::: moniker range="azure-devops-2019"  
 	> [!NOTE]    
 	> If you the On-premises XML process model to customize work tracking, you can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  If you use the Inheritance process model, customization of the pick list isn't supported at this time. 
 
@@ -211,7 +211,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	::: moniker-end
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 ---
@@ -234,7 +234,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Copy capacity, vertical nav](_img/capacity/copy-capacity-from-previous-sprint-vert.png)
@@ -248,7 +248,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
 
@@ -256,7 +256,7 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -281,7 +281,7 @@ To remove a user, choose the option from the users ![ ](../../_img/icons/actions
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Remove user from capacity list](_img/capacity/remove-user-agile.png)
@@ -293,11 +293,11 @@ To remove a user, choose the option from the users ![ ](../../_img/icons/actions
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 ![Capacity planning, Remove a user](_img/capacity/capacity-planning-remove-user.png) 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -310,7 +310,7 @@ As you define tasks and estimate the work, you'll see capacity charts start to f
 
 You'll also see a roll-up of the remaining work required to complete each requirement or bug.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Wiki view keyboard shortcuts popup](_img/capacity/work-details.png)   
 ::: moniker-end
@@ -321,7 +321,7 @@ You'll also see a roll-up of the remaining work required to complete each requir
 
 From this view, you can easily see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.

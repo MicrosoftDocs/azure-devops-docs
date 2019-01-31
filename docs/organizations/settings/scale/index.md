@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: KathrynEE
 author: KathrynEE
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 07/27/2018
 ---
 

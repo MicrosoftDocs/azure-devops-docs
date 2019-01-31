@@ -50,7 +50,7 @@ The number of paid extension users is updated.
 ## Next steps
 
 - [Assign features or extensions to users](../../marketplace/assign-paid-extensions.md)
-- [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=azdevops)
+- [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=azure-devops)
 
 ## Related articles
 

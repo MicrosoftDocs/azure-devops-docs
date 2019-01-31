@@ -12,7 +12,7 @@ ms.manager: jillfra
 ms.author: amullans
 author: alexmullans
 ms.date: 08/06/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Publish and download Universal Packages in Azure Pipelines

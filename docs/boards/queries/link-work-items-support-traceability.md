@@ -61,7 +61,7 @@ Also, you can use the context menu in the web portal or Team Explorer.
 > [!NOTE]
 > For each work item, you can add a maximum of 1000 links to other work items.  
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 <a id="link-remote-work-items">  </a>
 ## Cross-organization work item linking 
 
@@ -187,7 +187,7 @@ From **Test** you can add test plans, test suites, and test cases&mdash;which ar
 
 As you develop your software, you can capture which code changes and builds support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 <img src="_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
@@ -222,7 +222,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 ::: moniker-end
 
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 <a id="link-github">  </a>
 ## Work items linked to GitHub commits and pull requests  
 

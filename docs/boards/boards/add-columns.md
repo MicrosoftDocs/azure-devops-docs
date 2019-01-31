@@ -27,14 +27,14 @@ For example, the main workflow stages performed by our example dev team are capt
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]    
 >If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Customize your work flow](../../reference/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 > [!NOTE]    
 >If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
@@ -105,7 +105,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -153,7 +153,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="tfs-2018 || azdevops"  
+::: moniker range="tfs-2018 || azure-devops"  
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -312,7 +312,7 @@ You'll see different column titles and choices based on the [Process](../work-it
  
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

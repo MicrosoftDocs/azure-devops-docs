@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Team Field Values | REST API Reference for Team Foundation Server
 description: Work with team field values programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: eb99bcf1-7f2b-4db5-bfdf-f2b923ff9d5a

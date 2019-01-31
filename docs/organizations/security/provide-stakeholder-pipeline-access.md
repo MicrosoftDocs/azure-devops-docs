@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 09/05/2018
 ---
 

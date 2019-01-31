@@ -26,7 +26,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
     1. From your **Packages** page, click _Connect to Feed_
 
-        ::: moniker range="azdevops"
+        ::: moniker range="azure-devops"
 
         # [New navigation](#tab/new-nav)
         > [!div class="mx-imgBorder"] 
@@ -40,7 +40,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
         ::: moniker-end
 
-        ::: moniker range=">= tfs-2017 < azdevops"
+        ::: moniker range=">= tfs-2017 < azure-devops"
 
         ![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed.png)
 
@@ -48,7 +48,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
     2. Copy the "registry" text:
 
-        ::: moniker range="azdevops"
+        ::: moniker range="azure-devops"
 
         # [New navigation](#tab/new-nav)
         > [!div class="mx-imgBorder"] 
@@ -62,7 +62,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
         ::: moniker-end
 
-        ::: moniker range=">= tfs-2017 < azdevops"
+        ::: moniker range=">= tfs-2017 < azure-devops"
 
         ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry.png)
 
@@ -77,7 +77,7 @@ You should have a project specific **_.npmrc_** containing only your feed's regi
 
 > **IMPORTANT:** There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [upstream sources](../concepts/upstream-sources.md), or by using [scopes](..//npm/scopes.md) (not recommended).
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Windows
 If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
@@ -95,7 +95,7 @@ If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we r
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azdevops"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 [!INCLUDE [](../_shared/npm/npmrc.md)]
 
@@ -112,7 +112,7 @@ There are two options for setting up authentication in a build task:
 ### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
- ::: moniker range="azdevops"
+ ::: moniker range="azure-devops"
 
 1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
@@ -184,7 +184,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
  ::: moniker-end
 
- ::: moniker range=">= tfs-2017 < azdevops"
+ ::: moniker range=">= tfs-2017 < azure-devops"
 
 1. Select **Build and Release**, and then choose **Builds**.
 
@@ -231,7 +231,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your project's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
- ::: moniker range="azdevops"
+ ::: moniker range="azure-devops"
 
 1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
@@ -295,7 +295,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
  ::: moniker-end
 
- ::: moniker range=">= tfs-2017 < azdevops"
+ ::: moniker range=">= tfs-2017 < azure-devops"
 
 1. Select **Build and Release**, and then choose **Builds**.
 

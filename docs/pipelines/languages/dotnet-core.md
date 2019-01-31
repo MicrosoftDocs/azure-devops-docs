@@ -44,7 +44,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 The sample code includes an `azure-pipelines.yml` file at the root of the repository.
 You can use this file to build the app.
@@ -55,7 +55,7 @@ To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds aren't yet available on TFS.
 
@@ -63,7 +63,7 @@ YAML builds aren't yet available on TFS.
 
 # [Designer](#tab/designer)
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you're using. Also, you'll need to set up a self-hosted agent and possibly also install software. If you're a new user, you might have a better learning experience if you try this procedure out first by using a free Azure DevOps Services organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps Services**.  
 ::: moniker-end
@@ -78,7 +78,7 @@ Read through the rest of this topic to learn some of the common ways to customiz
 
 ## Build environment
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
 The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
@@ -131,7 +131,7 @@ If you need a version of the .NET Core SDK that isn't already installed on the M
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 You can build your .NET Core projects by using the .NET Core SDK and runtime on Windows, Linux, or macOS. 
 Your builds run on a [self-hosted agent](../agents/agents.md#install). 
@@ -187,7 +187,7 @@ If your feed is authenticated, manage its credentials by creating a NuGet servic
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 If you use Microsoft-hosted agents, you get a new machine every time your run a build, which means restoring the packages every time. 
 This restoration can take a significant amount of time. To mitigate this issue, you can either use Azure Artifacts or a self-hosted agent, in which case, 
@@ -197,7 +197,7 @@ you get the benefit of using the package cache.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 To restore packages, use the `dotnet restore` command:
 
@@ -220,7 +220,7 @@ Or to restore packages from a custom feed, use the **.NET Core** task:
 For more information about NuGet service connections, see [publish to NuGet feeds](../artifacts/nuget.md).
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds aren't yet available on TFS.  
 ::: moniker-end
 
@@ -246,7 +246,7 @@ You build your .NET Core project by running the `dotnet build` command in your p
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 To build your project by using the .NET Core task, add the following snippet to your `azure-pipelines.yml` file:
 
@@ -263,7 +263,7 @@ You can run any `dotnet` command in your pipeline. The following example shows h
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds aren't yet available on TFS.
 
@@ -304,7 +304,7 @@ These results are then made available to you in the build summary and can be use
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
@@ -329,7 +329,7 @@ An alternative is to run the `dotnet test` command with a specific logger and th
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds aren't yet available on TFS.
 
@@ -349,7 +349,7 @@ If you use the **.NET Core** task to run tests, coverage data is automatically p
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
@@ -373,7 +373,7 @@ If you choose to run the `dotnet test` command, specify the test results logger 
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds aren't yet available on TFS.
 
@@ -402,7 +402,7 @@ or package the build output into a .zip file to be deployed to a web application
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Publish artifacts to Azure Pipelines
 
@@ -448,7 +448,7 @@ To create a .zip file archive that's ready for publishing to a web app, add the 
 To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).  
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds aren't yet available on TFS.
 
@@ -487,7 +487,7 @@ You can build a Docker container image after you build your project. For more in
 
 If you're able to build your project on your development machine, but you're having trouble building it on Azure Pipelines or TFS, explore the following potential causes and corrective actions:
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 * We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK is released, 
 it can take a few weeks for us to roll it out to all the datacenters that Azure Pipelines runs on. You don't have to wait for us to finish 
 this rollout. You can use the **.NET Core Tool Installer**, as explained in this guidance, to install the desired version of the .NET Core SDK 

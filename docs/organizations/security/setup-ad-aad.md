@@ -21,14 +21,14 @@ The method we recommend for managing a large set of user accounts is to use Azur
 
 If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps or TFS to support billing.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Use this topic to access articles that will show you how to:
 > [!div class="checklist"]
 > * Set up Azure Active Directory for use with Azure DevOps Services
 > * Manage organizational access with Azure AD
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 Use this topic to access articles that will show you how to:
 > [!div class="checklist"]
@@ -39,7 +39,7 @@ Use this topic to access articles that will show you how to:
 > [!NOTE]
 > Without Azure AD, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../../billing/set-up-billing-for-your-organization-vs.md).
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Set up Azure Active Directory for use with Azure DevOps Services
 
@@ -55,7 +55,7 @@ Use this topic to access articles that will show you how to:
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 ## Set up Active Directory for use with Azure DevOps Server
 
 Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.

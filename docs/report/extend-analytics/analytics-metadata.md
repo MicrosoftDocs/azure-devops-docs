@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/04/2018
 ---
 
@@ -35,7 +35,7 @@ Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0
 ### Query for metadata on a specific project
 You construct the service root URL for a project as shown:
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -44,7 +44,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

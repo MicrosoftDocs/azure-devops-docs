@@ -10,7 +10,7 @@ author: steved0x
 ms.date: 09/19/2018
 ms.topic: overview
 layout: LandingPage
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # What is Azure Repos?

@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azdevserver-2019'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 01/24/2019
 ---
 
@@ -259,7 +259,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 Using the [object model for tracking work items](/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 Using [REST APIs for tracking work items](/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
@@ -274,7 +274,7 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 <a id="change-attribute">  </a>
 ## Change an attribute of an existing field 
 
@@ -385,7 +385,7 @@ In addition to the attributes that you can change for a work item field, there a
 
 For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://blogs.msdn.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 <a id="integration-fields">  </a>
 ### Test, build, and version control fields
 

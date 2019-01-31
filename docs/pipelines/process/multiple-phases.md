@@ -68,7 +68,7 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 The syntax for defining multiple jobs and their dependencies is:
 
@@ -81,7 +81,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -95,7 +95,7 @@ To add a new job, select '...' on the pipeline channel in the **Tasks** tab of t
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Example jobs that build sequentially:
 
@@ -167,7 +167,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 

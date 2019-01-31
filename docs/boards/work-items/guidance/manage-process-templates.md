@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azdevserver-2019'
+monikerRange: '<= azure-devops-2019'
 ms.date: 11/19/2018
 --- 
 
@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 
 When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-::: moniker range="tfs-2018 || azdevserver-2019"
+::: moniker range="tfs-2018 || azure-devops-2019"
 > [!IMPORTANT]  
 > When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a SharePoint project portal or Report Manager site aren't supported. SharePoint integration has been deprecated as described in [Discontinue SharePoint integration](../../../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 >

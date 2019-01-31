@@ -41,7 +41,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -124,7 +124,7 @@ Bugs are a common item that teams want to track, and choose how they track it. S
 
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,  
 - For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
@@ -141,7 +141,7 @@ When bugs are managed along with requirements, you can add them through the [pro
 
 You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query, **Active Bugs** (Agile and CMMI) or **Work in Progress** (Scrum). For other bug related tasks, see the following articles:  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - [View, run, or email a work item query](../../boards/queries/view-run-query.md)
 - [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
 - [Triage work items](../../boards/queries/triage-work-items.md)

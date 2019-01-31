@@ -17,7 +17,7 @@ Enable live updates to automatically refresh your Kanban board when changes occu
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose the ![ ](/azure/devops/_img/icons/view-options-icon.png) view options icon and move the slider for **Live updates** to On.  
 
@@ -35,7 +35,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Choose the ![ ](/azure/devops/boards/_img/icons/live-updates-icon.png) **Live updates** icon.  
 
@@ -47,7 +47,7 @@ As one team member updates the status of a work item, other team members will se
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 **Previous navigation** isn't supported for Azure DevOps Server 2019. Choose **New navigation** for guidance.
 

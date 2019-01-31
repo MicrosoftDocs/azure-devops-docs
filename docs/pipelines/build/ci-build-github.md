@@ -11,7 +11,7 @@ ms.reviewer: dastahel
 ms.manager: jillfra
 ms.custom: "mvc, seodec18"
 ms.date: 06/29/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Build a repo using the visual designer

@@ -11,7 +11,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: chrispat
 ms.date: 10/15/2018
-monikerRange: '>= tfs-2017 < azdevops'
+monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
 # Run the agent with a self-signed certificate

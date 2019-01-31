@@ -68,7 +68,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
 ::: moniker-end
@@ -152,7 +152,7 @@ If you use multiple build pipelines for the same repository in your project, the
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### GitHub
 
@@ -377,7 +377,7 @@ When using an external Git repository, CI builds require that the repository is 
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

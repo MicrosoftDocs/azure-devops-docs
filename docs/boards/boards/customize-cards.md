@@ -34,14 +34,14 @@ In the card shown below, the following customizations have been set for the bug 
 ![Card customize to show additional fields, tags, and style rule ](_img/card-customize-example-bug-with-callouts.png)
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!NOTE]  
 > You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019"
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 > [!NOTE]  
 > You can customize a work item type which is different then customizing the card displayed on the Kanban board or taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 
@@ -108,12 +108,12 @@ What rules should you apply to highlight work items? Here are a few examples and
 By showing a field on a card, you can edit that field directly on the board without having to open the card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../../boards/backlogs/define-features-epics.md).  
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
  
 As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work//add-custom-field.md). 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019"  
+::: moniker range=">= tfs-2015 <= azure-devops-2019"  
 As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the WIT definition](../../reference/add-modify-field.md). 
 ::: moniker-end  
 
@@ -122,7 +122,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -157,7 +157,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
@@ -215,7 +215,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker-end  
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -231,7 +231,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.	[Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
@@ -263,7 +263,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 0.	[Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
@@ -315,7 +315,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 ::: moniker-end  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -329,7 +329,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1.	[Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
@@ -369,7 +369,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 Requires TFS 2015.1 or later version.  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 1.	[Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
@@ -399,7 +399,7 @@ Requires TFS 2015.1 or later version.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 ---
@@ -470,7 +470,7 @@ You can control the test plan under which inline tests you add through the Kanba
 0. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
 
 0. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.    
-	::: moniker range=">= azdevserver-2019"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Settings, Tag colors dialog (Kanban)](_img/customize-cards/settings-tests.png)  
 	::: moniker-end   

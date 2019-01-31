@@ -77,13 +77,13 @@ You can configure most of your team settings from the common configuration dialo
 > **Feature availability:** The common configuration dialog is available for TFS 2015.1 and later versions.  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015"      
+::: moniker range=">= tfs-2015"  
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 ::: moniker-end   
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 1. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
 
@@ -114,7 +114,7 @@ You can configure most of your team settings from the common configuration dialo
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
@@ -148,13 +148,13 @@ You can configure most of your team settings from the common configuration dialo
 ::: moniker-end   
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
 
-::: moniker range=">= tfs-2017"      
+::: moniker range=">= tfs-2017"  
 
 For details on each configuration option, see one of these topics:  
 
@@ -285,7 +285,7 @@ Additional elements you can configure include:
 ## Add and manage team dashboards   
 
 ::: moniker-end
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions). 
 ::: moniker-end
 

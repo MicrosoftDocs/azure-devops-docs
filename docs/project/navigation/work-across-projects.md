@@ -25,7 +25,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - **Projects**: Projects defined for an organization in Azure DevOps
 - **Work items**: Work items assigned to you
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
@@ -40,7 +40,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 - **Projects**: Team projects and teams within the projects that you work in  
 - **My Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited
 - **My work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated  
@@ -68,7 +68,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ To switch to another project, see [Switch project, repository, or team](go-to-pr
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 To view work items assigned to you across projects, choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Work Items**. 
 
@@ -103,7 +103,7 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
@@ -112,7 +112,7 @@ Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **P
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Choose **My work items** to access the set of work items assigned to you or followed by you. The lists available from each page span all projects that you work in.
 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, choose its title.
@@ -132,7 +132,7 @@ The **Assigned to me** page lists all work items assigned to you in the order th
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ The **Assigned to me** page lists all work items assigned to you in the order th
 Choose **Following** to open the page that lists all the work items [you've marked to follow](../../boards/work-items/follow-work-items.md). To stop following an item and remove it from your list, choose the ![followed icon](../../_img/icons/icon-followed.png) following icon.
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Account home, Work, Following page](_img/projects-page/account-home-work-following.png)  
 ::: moniker-end
@@ -153,7 +153,7 @@ Choose **Following** to open the page that lists all the work items [you've mark
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ### My activity
 
 Choose **My activity** to open the page that lists all work items that you have recently viewed or updated.  
@@ -175,7 +175,7 @@ Similar to the Favorites page, you can filter the work pages by typing a keyword
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 To view pull requests you created  or that are assigned to you across projects, choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Pull requests**. 
 
@@ -191,13 +191,13 @@ To view pull requests you created  or that are assigned to you across projects, 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Open the **Projects>Pull requests** page to access any pull request that's relevant to you across all projects you work in. Choose **Active** or **Completed** to pivot between the active or completed set of pull requests. To initiate a pull request, choose **New pull request**.
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Account home, My Pull requests, Active](_img/projects-page/account-home-pull-requests.png)  
 ::: moniker-end
@@ -206,7 +206,7 @@ Open the **Projects>Pull requests** page to access any pull request that's relev
 ![Account home, Pull requests, Active](_img/org-hub-tfs/account-home-pull-requests.png) 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 From each page, you're one choice away from navigating to the branch or repository for a pull request. This mirrors capabilities on the  project **Code>Pull Requests** page.
 
@@ -216,7 +216,7 @@ Similar to the Favorites page, you can filter the list by typing a keyword in th
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -229,7 +229,7 @@ You can view favorites you've set across projects. To learn more about working w
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 
 Choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
 
@@ -245,7 +245,7 @@ Choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Favo
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Open the **My favorites** page to quickly access any object or item that you've marked as a favorite.
 ::: moniker-end
 
@@ -253,7 +253,7 @@ Open the **My favorites** page to quickly access any object or item that you've 
 Open the **Favorites** page to quickly access any object or item that you've marked as a favorite.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Account home favorites page](_img/projects-page/account-home-favorites.png)
@@ -275,7 +275,7 @@ To filter the list, type a keyword in the *Filter favorites* box. The list will 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

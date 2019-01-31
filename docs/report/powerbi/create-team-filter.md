@@ -9,7 +9,7 @@ ms.reviewer: jozimm
 ms.manager: jillfra
 ms.author: kaelli
 ms.topic: sample
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 05/18/2018 
 ---
 

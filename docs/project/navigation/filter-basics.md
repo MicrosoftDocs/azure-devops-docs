@@ -15,7 +15,7 @@ ms.date: 01/16/2019
 ---
   
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 # Filter lists, boards, and directories 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ Several applications and pages support filtering, which is very useful when a la
 You can filter most items using keywords or a user name for an author of an item or where work is assigned to them. You can filter lists and boards in the following areas: 
 
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 - Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories  
 - Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards 
 - Directories: Dashboards, Boards, Backlogs, Sprints, Queries, Builds, Releases  
@@ -94,7 +94,7 @@ To learn more about filtering using tags, see [Add tags to work items to categor
  
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Filter directories
 
 Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter a directory list by keyword, team, or other supported field. Keywords apply to titles, descriptions, and team names. 

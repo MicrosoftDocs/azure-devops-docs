@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
 ms.custom: "mvc, seodec18"
 ms.date: 05/06/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Use the Azure portal

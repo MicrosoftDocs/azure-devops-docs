@@ -25,13 +25,13 @@ You can automatically provision new virtual machines in System Center Virtual Ma
 
 ## SCVMM connection
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 You need to first configure how Azure Pipelines connects to SCVMM. You cannot use Microsoft-hosted agents to run SCVMM tasks since the VMM Console is not installed on hosted agents. You must set up a self-hosted build and release agent on the same network as your SCVMM server.
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 You need to first configure how TFS connects to SCVMM. You must have a build and release agent that can communicate with the SCVMM server.
 

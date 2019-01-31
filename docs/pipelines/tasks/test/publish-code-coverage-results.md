@@ -69,7 +69,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 

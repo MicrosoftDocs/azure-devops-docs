@@ -8,7 +8,7 @@ description: Index to topics for managing the data warehouse, adding reports, an
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azdevserver-2019'
+monikerRange: '<= azure-devops-2019'
 ms.date: 11/19/2018
 ---
 
@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 Azure DevOps Server 2019 supports both the SQL Server Reporting solution and the [Analytics Service](../analytics/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../analytics/reporting-roadmap.md). 
 
 ::: moniker-end

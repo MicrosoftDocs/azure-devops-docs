@@ -87,7 +87,7 @@ There are several extensions available from the [Marketplace](https://marketplac
 
 Or, you can write an extension using the [REST API for work tracking](/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregator](https://tfsaggregator.github.io/).  
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 <a name="marketplace"></a>
 ## Analytics service
@@ -99,7 +99,7 @@ You can use the [Analytics Service](../../report/analytics/what-is-analytics.md)
 
 ::: moniker-end    
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"  
+::: moniker range=">= tfs-2013 <= azure-devops-2019"  
 ## SQL Server Reporting Services report  
  Several OOB reports provide rollup. Here's an example of rollup of completed and remaining work that the Stories Overview report provides. This report is part of the default TFS Agile process template.  
   

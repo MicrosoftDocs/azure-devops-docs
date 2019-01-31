@@ -138,7 +138,7 @@ Area path permissions let you grant or restrict access to edit or modify work it
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
@@ -167,7 +167,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
@@ -199,7 +199,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 	![Open the security dialog](../../reference/_img/ALM_CW_OpenSecurityDialog.png)  
 
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 0. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
 	For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
@@ -211,7 +211,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 <!--- <img src=".../boards/boards/_img/ALM_CW_PermisionsForArea.png" alt="Permissions for an area node" style="border: 1px solid #C3C3C3;" />--> 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -252,7 +252,7 @@ To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans
 
 <a id="move-delete-permissions"></a>
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Move or permanently delete work items 
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
@@ -285,7 +285,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
 ::: moniker-end      
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="process-permissions"></a>
 
@@ -310,7 +310,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 ## Additional options for restricting access to work items   
 
 > [!NOTE]   

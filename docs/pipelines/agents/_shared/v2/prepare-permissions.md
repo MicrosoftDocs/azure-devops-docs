@@ -5,7 +5,7 @@ ms.topic: include
 ### Decide which user you'll use
 
 As a one-time step, you must register the agent. Someone with permission to
-[administer the agent queue](../../../../organizations/security/about-security-roles.md?view=azdevops#agent-queue-security-roles)
+[administer the agent queue](../../../../organizations/security/about-security-roles.md?view=azure-devops#agent-queue-security-roles)
 must complete these steps. The agent will not use this person's
 credentials in everyday operation, but they're required to complete registration.
 Learn more about [how agents communicate](../../agents.md#communication).

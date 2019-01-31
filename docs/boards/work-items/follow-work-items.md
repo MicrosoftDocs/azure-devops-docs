@@ -31,7 +31,7 @@ this article shows you how to:
 > * Manage work items that you're following
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 [You must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
 
@@ -74,7 +74,7 @@ You can review and manage all the work items you've selected to follow.
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"   
+::: moniker range=">= azure-devops-2019"   
 
 Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
 
@@ -105,7 +105,7 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Open **Work>Queries** and choose **Followed work items**.  
 
@@ -121,18 +121,18 @@ From this view, you can view all items you're following across all projects. Als
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 You can also view and manage work that you're following from **Work>Work Items** and pivot to **Following**. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018 || azdevops"     
+::: moniker range=">= tfs-2017  <= tfs-2018 || azure-devops"     
 
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
