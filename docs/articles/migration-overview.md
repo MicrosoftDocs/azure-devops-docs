@@ -31,7 +31,7 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
 * TFS 2018 Update 2
-* TFS 2018 Update 3 & Update 3.1
+* TFS 2018 Update 3, Update 3.1, and Update 3.2
 
 > [!NOTE]
 > The Import Service doesn't support imports from TFS release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
