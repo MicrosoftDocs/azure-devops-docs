@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 09/10/2018  
 ---
 

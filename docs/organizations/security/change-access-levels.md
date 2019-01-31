@@ -28,7 +28,7 @@ This article applies to managing access levels for project collections defined o
 
 For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]  
 > Even if you set a user or group's access level, you must [add them to a project](add-users-team-project.md) for them to connect to a project and access features available through a supported client or the web portal. 
@@ -47,13 +47,13 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 ## Open Access levels
 
 You manage access levels for all collections defined on the application tier. The default access level you set applies to all projects defined for all collections. Users or groups that you add to teams, projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, you add them specifically to a non-default access levels.
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 1. From the web portal home page for a project collection (for example, ```http://MyServer:8080/tfs/DefaultCollection/```), open **Access levels**. If you are at a project level, choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo and then choose **Access levels**. 
 
@@ -114,7 +114,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 <a id="set-default" >  </a>
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 ## Change the default access level
 
 Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or an advanced level will be limited to the features provided through Stakeholder access.
@@ -122,7 +122,7 @@ Change the default access level to match the access you have licenses for. If yo
 You set an access level from its page. Choose **Set as default access level** as shown.
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Stakeholder access level, set as default](_img/change-access-levels/set-stakeholder-as-default-2019.png)   
 ::: moniker-end
@@ -131,7 +131,7 @@ You set an access level from its page. Choose **Set as default access level** as
 <img src="_img/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 > [!IMPORTANT]  
 > Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the Azure DevOps service accounts to the Basic or an advanced access level  group.   
 ::: moniker-end

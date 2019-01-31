@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: amullans
 author: alexmullans
 ms.date: 09/25/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Publish and then download a Universal Package

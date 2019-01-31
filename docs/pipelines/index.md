@@ -12,30 +12,30 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
 ms.date: 01/11/2019
-monikerRange: '<= azdevserver-2019 || azdevops'
+monikerRange: '<= azure-devops-2019 || azure-devops'
 ---
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 # Azure Pipelines
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 # Build and release
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Azure Pipelines helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azdevops"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <div id="main" class="v2">
     <div class="container">
@@ -753,7 +753,7 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azdevops"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 <div id="main" class="v2">
     <div class="container">

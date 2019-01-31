@@ -29,7 +29,7 @@ Widgets display information and charts on dashboards. Many of them are configura
 To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
@@ -41,7 +41,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
@@ -71,7 +71,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, work tracking Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -245,7 +245,7 @@ Provides quick access to open the following Agile tools and team resources:
 ----
 ::: moniker-end
  
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Analytics widgets
 
 To add Analytics widgets to your dashboard, you first need to install the [Analytics Marketplace extension](../analytics/analytics-extension.md). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be the organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
@@ -424,7 +424,7 @@ Requires TFS 2017.1 or later version.
 ----
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="release-definition-widget"></a> 
 ### Release pipeline overview 

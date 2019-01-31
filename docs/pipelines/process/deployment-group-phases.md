@@ -27,14 +27,14 @@ You can select specific sets of servers from a deployment group to receive the d
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!NOTE]
 > Deployment group jobs are not yet supported in YAML.
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 

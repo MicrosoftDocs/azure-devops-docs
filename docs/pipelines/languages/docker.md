@@ -44,7 +44,7 @@ This example shows how to build a Docker image and push it to a registry.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. To start, complete the steps from the example section in one of the following languages:
    * [.NET Core](dotnet-core.md)
@@ -67,7 +67,7 @@ This example shows how to build a Docker image and push it to a registry.
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -75,12 +75,12 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you're using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you're a new user, you might have a better learning experience by first trying this procedure by using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page to **Azure DevOps Services**.
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. To start, complete the steps from the example section in one of the following:
 
@@ -133,7 +133,7 @@ Now that you've run a Docker build pipeline, you're ready to learn some of the c
 
 ## Build environment
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 You can use Azure Pipelines to build and push your Docker images without needing to set up any infrastructure of your own. You can build either Windows or Linux container images. The Microsoft-hosted agents in Azure Pipelines have Docker pre-installed on them. We frequently update the version of Docker on these agent machines. To know which version of Docker is installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
@@ -174,7 +174,7 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Docker installed on the agent.
 
@@ -188,7 +188,7 @@ You can build a Docker image by running the `docker build` command in a script o
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 To run the command in a script, add the following snippet to your `azure-pipelines.yml` file.
 
@@ -209,7 +209,7 @@ You don't need to specify `docker-registry-url` in the `login` command, if you a
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -264,7 +264,7 @@ For an example of using this approach, follow these steps:
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Replace the contents in the `azure-pipelines.yml` file at the root of your repo with the following content:
 
@@ -278,7 +278,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -296,7 +296,7 @@ After you've built a Docker image, you can push it to a Docker registry or to Az
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 To push the image to Docker Hub, add the following snippet to the `azure-pipelines.yml` file at the root of your repo:
 
@@ -317,7 +317,7 @@ To build and push the image to Azure Container Registry, use the following snipp
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -338,7 +338,7 @@ For example, you can use a _docker-compose.yml_ file to define two containers th
 You can build new container images every time you push a change to your code.
 You can wait for the test driver to finish running tests before bringing down the two containers.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 If you use Microsoft-hosted agents, you don't have to run any additional steps to install and use docker-compose.
 
@@ -352,7 +352,7 @@ To extend the [earlier example](#example) to use docker-compose:
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
@@ -363,7 +363,7 @@ Add the following snippet to your `azure-pipelines.yml` file.
 ```
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -378,14 +378,14 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 ```
 ---
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]
 > When you're using agents in the Hosted Linux Preview pool, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through Docker Compose. As a result, you can't communicate from the agent to one of the containers in the composition, for example, to drive tests. The preferred workaround is to upgrade to the _Hosted Ubuntu 1604_ pool, where the agents don't run inside a container.
 
 If you can't upgrade, another way to solve this problem is to explicitly create another test driver as a container within the composition, as we did in the earlier example. Another solution is to use `docker-compose exec` and target a specific container in the composition from your script.
 :::moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ## Build ARM containers
 
 When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86, ARM, and so on), you can use a machine emulator such as [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image:
@@ -410,7 +410,7 @@ When you use Microsoft-hosted Linux agents, you create Linux container images fo
 <a name="troubleshooting"></a>
 ## Troubleshooting
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 If you can build your image on your development machine, but you're having trouble building it on Azure Pipelines or TFS, the following solutions might help:
 
@@ -422,7 +422,7 @@ If you can build your image on your development machine, but you're having troub
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 If you can build your image on your development machine, but you're having trouble building it on Azure Pipelines or TFS, check the version of Docker on the agent. Ensure that it matches what you have on your development machine. You can include a command-line script `docker --version` in your build pipeline to print the version of Docker.
 

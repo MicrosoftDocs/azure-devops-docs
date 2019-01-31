@@ -50,7 +50,7 @@ If your team uses an external service to collaborate&mdash;such as Campfire, Flo
 
 You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and Azure DevOps Services integration](../service-hooks/services/zapier.md).
 
-::: moniker range=">= tfs-2015 < azdevops"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ## On-premises SMTP server (TFS)
  

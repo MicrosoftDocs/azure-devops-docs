@@ -70,7 +70,7 @@ Management teams can drill down from their portfolio backlog to see how **Epics*
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -87,7 +87,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -106,7 +106,7 @@ Items that are owned by other teams appear with hollow-filled bars.
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Feature teams can turn **Show parents** on their backlogs to see context and tho
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
@@ -133,7 +133,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
    
 > [!div class="mx-imgBorder"]  
@@ -148,7 +148,7 @@ Items that are owned by other teams appear with hollow-filled bars.
 ::: moniker-end 
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -215,7 +215,7 @@ Another measure of project health and the health of the teams is to monitor bug 
 For tips on creating queries based on counts or numeric fields, see [Query by numeric field](../queries/query-numeric.md).
 
  
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Use Analytics to gain visibility across teams   
 
 You can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 

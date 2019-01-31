@@ -63,7 +63,7 @@ To use your feed and upstream source, follow the instructions to [consume NuGet 
 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
@@ -75,7 +75,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ![Viewing your cached packages](_img/view-cached-packages.png)
 

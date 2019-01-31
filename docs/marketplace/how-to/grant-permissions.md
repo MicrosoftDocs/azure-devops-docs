@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 **Azure DevOps Services** | **TFS** 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Grant management permissions 
 
@@ -36,7 +36,7 @@ Add users or update permission settings:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2013 < azdevops"
+::: moniker range=">=tfs-2013 < azure-devops"
 
 ## Grant publish and update permissions on TFS
 

@@ -27,11 +27,11 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 Here's an example:  
 <img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
 ::: moniker-end
 
@@ -46,7 +46,7 @@ To add the markdown widget to a dashboard, you connect to your project using a [
 [!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 Open a web browser, connect to your project, and  choose **Overview>Dashboards**. 
 
 > [!div class="mx-imgBorder"]  
@@ -63,7 +63,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 Open a web browser, connect to your project, and  choose **Dashboards**. 
 
@@ -73,7 +73,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboa
 > Requires TFS 2015.1 or later version.   
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  
 
 0. Add or drag the Markdown widget onto the dashboard where you want it located.  

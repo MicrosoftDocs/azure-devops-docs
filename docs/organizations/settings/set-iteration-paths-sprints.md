@@ -81,7 +81,7 @@ From the web portal, open **Project Settings**.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
@@ -98,13 +98,13 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 # [Previous navigation](#tab/previous-nav) 
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon. 
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 
 0. From the web portal, open **Project settings**. 
 
@@ -132,7 +132,7 @@ From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon t
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -207,7 +207,7 @@ From a web browser, open the web portal administrative context for your team.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
@@ -253,7 +253,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 0.	Open **Project settings>Boards>Team Configuration>Iterations** for a team.  
 
@@ -297,7 +297,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 
 1.	Open **Work>Iterations** for a team.  
 
@@ -366,7 +366,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

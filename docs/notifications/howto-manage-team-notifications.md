@@ -30,20 +30,20 @@ A subscription lets you control what your team should be notified about and how 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
 	# [New navigation](#tab/new-nav)  
-	::: moniker range=">= azdevserver-2019"  
+	::: moniker range=">= azure-devops-2019"  
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
 	::: moniker-end
 
-    ::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+    ::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
     [!INCLUDE [new-navigation-not-supported](../_shared/new-navigation-not-supported.md)]
     ::: moniker-end
 
 	# [Previous navigation](#tab/previous-nav)  
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
    ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)  
 	::: moniker-end  
 
-	::: moniker range="azdevserver-2019"  
+	::: moniker range="azure-devops-2019"  
 	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
 	::: moniker-end  
 
@@ -52,16 +52,16 @@ A subscription lets you control what your team should be notified about and how 
 2. Select **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
 	# [New navigation](#tab/new-nav)  
-	::: moniker range=">= azdevserver-2019"  
+	::: moniker range=">= azure-devops-2019"  
 	![New subscription](_img/new-subscription-newnav.png)  
 	::: moniker-end  
 
 	# [Previous navigation](#tab/previous-nav)  
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
    ![New subscription](_img/new-subscription.png)
 	::: moniker-end  
 
-	::: moniker range="azdevserver-2019"  
+	::: moniker range="azure-devops-2019"  
 	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
 	::: moniker-end  
 	---

@@ -54,13 +54,13 @@ Azure using Azure Pipelines.
 
 Create a Jenkins service connection from the **Service connections** section of the project settings page.
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 ::: moniker-end
 
 For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 If you are not familiar with the general concepts in this section, see
-[Accessing your project settings](https://docs.microsoft.com/en-us/azure/devops/project/navigation/go-to-service-page?view=azdevops#open-project-settings)
+[Accessing your project settings](https://docs.microsoft.com/en-us/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).
 
 
@@ -85,7 +85,7 @@ of your release pipeline. For example, add the **Azure App Service Deploy** task
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Add the **Azure App Service Deploy** task YAML code to a job in the  `.yml` file at the root of the repository.
 
@@ -111,7 +111,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 YAML builds aren't yet available on TFS.
 

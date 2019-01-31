@@ -10,7 +10,7 @@ ms.author: dastahel
 author: davidstaheli
 ms.custom: seodec18
 ms.date: 12/06/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Build GitHub repositories

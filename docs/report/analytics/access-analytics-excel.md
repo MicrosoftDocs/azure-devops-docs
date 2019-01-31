@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: ">= azdevserver-2019" 
+monikerRange: ">= azure-devops-2019" 
 ms.date: 11/19/2018
 ---
 
@@ -35,7 +35,7 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 
 
 4. Enter the URL in the format below and choose **OK**:  
-	::: moniker range="azdevops"
+	::: moniker range="azure-devops"
 
 	```
 	https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/
@@ -52,7 +52,7 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 	
 	::: moniker-end
 
-	::: moniker range="azdevserver-2019"
+	::: moniker range="azure-devops-2019"
 
 	```
 	https://{ServerName}:{Port}/tfs/{CollectionName}/_odata/{version}/

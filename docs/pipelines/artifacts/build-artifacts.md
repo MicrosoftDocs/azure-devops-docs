@@ -264,7 +264,7 @@ Use these tasks to publish artifacts:
 
 ## Explore, download, and deploy your artifacts
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
 
@@ -272,7 +272,7 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 < azdevops"
+::: moniker range=">=tfs-2015 < azure-devops"
 
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
@@ -284,7 +284,7 @@ From here, you can explore or download the artifacts.
 
 You can also use Azure Pipelines to deploy your app by using the artifacts that you've published. See [Artifacts in Azure Pipelines releases](../release/artifacts.md).
 
-::: moniker range=">=tfs-2015 < azdevops"
+::: moniker range=">=tfs-2015 < azure-devops"
 <a name="unc-file-share" />
 
 ## Publish from TFS to a UNC file share

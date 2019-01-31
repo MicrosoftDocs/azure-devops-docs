@@ -44,7 +44,7 @@ If you've re-used the same branch name for different commits, you may not see al
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ![View all pushes for your restored branch](_img/branches/restore_deleted_branch_pushes-new-nav.png)
 

@@ -8,7 +8,7 @@ ms.author: elbatk
 author: elbatk
 ms.reviewer: amullans
 ms.date: 11/19/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Use Azure Artifacts as a private PowerShell repository

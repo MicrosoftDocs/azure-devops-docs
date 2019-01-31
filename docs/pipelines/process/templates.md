@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
 ms.date: 01/18/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Job and step templates

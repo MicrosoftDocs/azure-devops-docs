@@ -52,7 +52,7 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 When you connect to Azure DevOps Services or TFS, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 You can scale your organization in the following ways:
 
 - To support different business units, you can add projects
@@ -86,7 +86,7 @@ You can view the projects defined for your organization by opening the **Project
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
@@ -137,7 +137,7 @@ Even if you have many teams working on hundreds of different applications and so
 
 ### Reasons to add another project
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project to select groups
@@ -158,7 +158,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Private and public projects
 
@@ -188,7 +188,7 @@ When you add a project, look at using the following elements to structure it to 
 
 You can configure and customize most services and applications to support your business needs or the way your teams work. Within each project you can perform the following tasks. For a comprehensive view of what resources can be configured, see [About team, project, and organizational-level settings](../settings/about-settings.md).
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).

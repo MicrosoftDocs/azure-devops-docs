@@ -10,7 +10,7 @@ ms.author: ahomer
 author: 
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Search the code base of a public project

@@ -84,7 +84,7 @@ Here's a list of the most common ways in which teams share information and plans
 </tbody>
 </table>
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 > [!NOTE]   
 > For the email feature to work, your administrator for Azure DevOps Server or Team Foundation Server must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
 ::: moniker-end 
@@ -129,7 +129,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 ![Email work item from on-prem TFS](../queries/_img/share-plans-email-work-item-tfs.png)  
 
 ::: moniker-end  
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 > [!NOTE]  
 > If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.   
 ::: moniker-end  

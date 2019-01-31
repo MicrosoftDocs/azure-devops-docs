@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Service Hook Subscriptions | REST API Reference for Team Foundation Server
 description: Work with service hook subscriptions programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 249F8AEB-0E5C-41D5-9B67-C8AC6A22A98D

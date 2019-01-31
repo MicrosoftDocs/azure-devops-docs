@@ -48,7 +48,7 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global build retention policy settings can be managed from the **Pipelines** settings of your organization or project collection:
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 * Azure Pipelines: `https://dev.azure.com/{your_organization}/_admin/_buildQueue`
 

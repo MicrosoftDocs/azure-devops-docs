@@ -78,7 +78,7 @@ Another way to filter items based on the area path is to use the Node Name. The 
 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 <a id="team-area-path" /> 
 ## Query for items based on the area path assigned to a team
 
@@ -123,7 +123,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 - [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 <a name="field-rules"></a>
 ### Supported field rules  
 

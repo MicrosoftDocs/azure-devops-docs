@@ -27,11 +27,11 @@ By default, members of the project Contributors group have permissions to contri
 
 ## Default repository permissions  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as Contributors and those granted **Basic** access. To learn more, see [About access levels](access-levels.md).
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access  have no access to source code. To learn more, see [About access levels](access-levels.md).
 ::: moniker-end
 
@@ -66,7 +66,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -91,7 +91,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -116,7 +116,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
@@ -150,7 +150,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 
@@ -166,7 +166,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

@@ -20,21 +20,21 @@ ms.date: 12/04/2018
 
 <a id="export-audit-log" >  </a>
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 You can get a list of users and groups that have access to your organization in Azure DevOps by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end     
 
-::: moniker range="<= azdevserver-2019" 
+::: moniker range="<= azure-devops-2019" 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.
 ::: moniker-end     
 
 
 
 ## Prerequisites
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 * You must be the organization owner or a member of the Project collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
 ::: moniker-end     
-::: moniker range="<= azdevserver-2019" 
+::: moniker range="<= azure-devops-2019" 
 * You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/tfs/server/admin/add-administrator-tfs).
 ::: moniker-end 
 
@@ -42,7 +42,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -63,7 +63,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Organization settings**.
 
@@ -123,7 +123,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

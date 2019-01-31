@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 04/04/2018
 ---
 
@@ -39,13 +39,13 @@ Here we show the default views created for a project based on the Agile process.
 
 When using the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history which are loaded into Power BI.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ![Power BI Azure DevOps Connector (Beta)](../powerbi/_img/pbi-getstarted-123.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 ![Power BI Azure DevOps Server Connector (Beta)](../powerbi/_img/pbi-getstarted-123-onprem.png)
 

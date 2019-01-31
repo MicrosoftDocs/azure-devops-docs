@@ -29,7 +29,7 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 
 None
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.md)]
 ::: moniker-end

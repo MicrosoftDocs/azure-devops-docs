@@ -8,13 +8,13 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]
 > Your web portal uses either the **New navigation** or **Previous navigation** user interface. Choose the **New navigation** tab if the **New Navigation** feature is enabled. You'll see a vertical sidebar along with other navigational features when **New Navigation** has been enabled for the signed-in user or the organization. Choose **Previous navigation** when you see a top-level, blue-bar&mdash;indicating that **New navigation** isn't enabled. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 > [!NOTE]
 > Choose the **New navigation** tab for guidance. Azure DevOps Server 2019 supports the **New Navigation** user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
 
@@ -29,7 +29,7 @@ You can start viewing and adding work items once you connect to a project.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
@@ -45,7 +45,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 Open a browser window, choose **Work**, and then **Work Items**. 
 
@@ -54,7 +54,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 Choose **New navigation** for guidance. **Previous navigation** isn't supported for Azure DevOps Server 2019. 
 

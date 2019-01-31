@@ -65,7 +65,7 @@ If you don't have SSH set up on your computer, you should use personal access to
 
 Learn more about [setting up SSH with Azure DevOps Services](use-ssh-keys-to-authenticate.md)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Alternate credentials
 

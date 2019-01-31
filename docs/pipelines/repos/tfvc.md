@@ -56,7 +56,7 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]
 > Cleaning is not relevant if you are using a [Microsoft-hosted agent](../agents/hosted.md) because you get a new agent every time in that case.
 ::: moniker-end

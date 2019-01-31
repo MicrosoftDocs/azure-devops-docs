@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 9/27/2017
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
  
