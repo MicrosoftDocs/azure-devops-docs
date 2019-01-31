@@ -47,7 +47,7 @@ running 4 agents apiece.
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Azure Pipelines
 
@@ -106,20 +106,20 @@ running 4 agents apiece.
 
 ### Server URL and authentication
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azdevops"
+::: moniker range=">= tfs-2017 < azure-devops"
 When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`.
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 When setup asks for your authentication type, choose **PAT**.
 Then paste the [PAT token you created](#permissions) into the command prompt window.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azdevops"
+::: moniker range=">= tfs-2017 < azure-devops"
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
@@ -209,7 +209,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 ::: moniker-end
 
@@ -221,7 +221,7 @@ The help provides information on authentication alternatives and unattended conf
 
 [Run the agent behind a web proxy](proxy.md)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ### How do I set different environment variables for each individual agent?
 
 Create a `.env` file under agent's root directory and put environment variables you want to set into the file as following format:
@@ -235,15 +235,15 @@ MyEnv4=MyEnvValue4
 ```
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [include](../_shared/qa-versions.md)]
 ::: moniker-end
 

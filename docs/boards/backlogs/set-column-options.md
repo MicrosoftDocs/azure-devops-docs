@@ -29,7 +29,7 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Open column options, new navigation](_img/columns/open-column-options-menu.png) 
@@ -41,14 +41,14 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 
 # [Previous navigation](#tab/previous-nav)
 
- ::: moniker range="<= tfs-2018 || azdevops"
+ ::: moniker range="<= tfs-2018 || azure-devops"
 
 ![Open column options](_img/set-column-open-dialog-s125.png) 
 
 ::: moniker-end 
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -71,12 +71,12 @@ In the Column options dialog, choose **Add a column** to add a field that isn't 
 ![Column options dialog](_img/set-column-options-s125.png)  
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
 ::: moniker-end 

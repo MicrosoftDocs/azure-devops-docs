@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 07/02/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 

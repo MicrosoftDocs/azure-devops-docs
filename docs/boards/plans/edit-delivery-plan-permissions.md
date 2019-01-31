@@ -33,7 +33,7 @@ By default all members of an organization or project collection can view Deliver
 - In order to edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. 
 - Even if you grant view permissions to a user who has Stakeholder access for a public project, they won't be able to view the plan. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Edit permissions for a delivery plan
 

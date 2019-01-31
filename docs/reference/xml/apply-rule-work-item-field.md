@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azdevserver-2019'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 05/10/2017
 ---
 

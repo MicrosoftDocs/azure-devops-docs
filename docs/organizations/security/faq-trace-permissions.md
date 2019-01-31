@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/23/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 # Troubleshoot tracing permissions
 
@@ -44,9 +44,9 @@ A 3: The user does not have the necessary access level
 Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following topics:
 
 * For Azure DevOps: [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
-* For on-premises TFS: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=azdevops)
+* For on-premises TFS: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
 
 ## Related articles
 
-* [Grant or restrict access to select features and functions](/azure/devops/organizations/security/restrict-access?view=azdevops)
-* [Change individual permissions](/azure/devops/organizations/security/change-individual-permissions?view=azdevops)
+* [Grant or restrict access to select features and functions](/azure/devops/organizations/security/restrict-access?view=azure-devops)
+* [Change individual permissions](/azure/devops/organizations/security/change-individual-permissions?view=azure-devops)

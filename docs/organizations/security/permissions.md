@@ -25,7 +25,7 @@ For a quick reference to default assignments, see [Default permissions and acces
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Work tracking, dashboard, & analytics permissions  |  
@@ -34,7 +34,7 @@ To learn how to add users to a group or set a specific permission that you can m
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Work tracking, dashboard, & analytics permissions  |  
@@ -452,7 +452,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server">  </a>
 <a id="server-permissions">  </a>
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 ## Server-level permissions 
 
@@ -902,7 +902,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 </table>
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a name="analytics-views-permissions"></a>
 
@@ -1125,7 +1125,7 @@ You manage the security of each [Git repository](set-git-tfvc-repository-permiss
 > If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
 ::: moniker-end
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 
 > [!div class="mx-imgBorder"]  
 > ![Git repository permissions dialog](_img/permissions/git-repo-permissions-vsts.png)
@@ -1751,7 +1751,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 <a id="inherited-process">  </a>
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 
 ## Process (object-level)   

@@ -178,7 +178,7 @@ To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

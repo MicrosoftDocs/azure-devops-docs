@@ -122,7 +122,7 @@ Depending on context, other functions may be available as well.
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `False`
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ### coalesce
 * Evaluates the parameters in order, and returns the value that does not equal null or empty-string.
@@ -148,7 +148,7 @@ Depending on context, other functions may be available as well.
 * Converts right parameter to match type of left parameter. Returns `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ### format
 * Evaluates the trailing parameters and inserts them into the leading parameter string.

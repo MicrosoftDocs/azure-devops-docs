@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 01/19/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Rename your organization in Azure DevOps

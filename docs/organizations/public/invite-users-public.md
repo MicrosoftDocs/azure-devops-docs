@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
 ms.date: 12/10/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 

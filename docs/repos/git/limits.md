@@ -10,7 +10,7 @@ ms.author: sdanie
 author: steved0x
 ms.topic: reference
 ms.date: 04/23/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 

@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/07/2018
+ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,18 +20,16 @@ monikerRange: '>= tfs-2015'
 
 This table describes the license requirements in more detail:
 
-| Task | License required |
+| Task or Use Case | License requirement |
 | --- | --- |
 | Execute tests | Basic license |
-| Use the standard charts provided | Basic license |
-| Create test plans, test suites, and author tests | Test Manager license |
-| Manage test plans, test suites, and tests | Test Manager license |
-| Prepare tests for execution | Test Manager license | 
-| Author tests using the grid | Test Manager license |
-| Assign test cases to suites, move test cases, and order tests | Test Manager license |
-| Assign configurations | Test Manager license |
-| Assign testers | Test Manager license |
-| Perform User Acceptance Testing | Test Manager license |
+| Use the out-of-the-box standard charts | Basic license |
+| Create and manage test plans | Test Manager license |
+| Create and manage test suites | Test Manager license |
+| Author test cases using a grid-like view | Test Manager license |
+| Assign test cases to suites, move test cases, and order tests cases | Test Manager license |
+| Prepare for execution such as assigning configurations or testers | Test Manager license | 
+| Prepare User Acceptance Testing | Test Manager license |
 
 To obtain a Test Manager license, you must have either an [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/),
 [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)

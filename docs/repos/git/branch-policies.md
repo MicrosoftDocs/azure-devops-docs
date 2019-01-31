@@ -132,7 +132,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 ::: moniker-end 
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 
 ## Require approval from external services
 

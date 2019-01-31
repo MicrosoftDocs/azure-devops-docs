@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 
@@ -22,7 +22,7 @@ Extension developers can benefit by following the guidelines provided in this to
 
 Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. Restrictive rules enforced by the Analytics Service contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 >[!NOTE]
 >The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.

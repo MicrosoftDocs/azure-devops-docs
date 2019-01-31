@@ -7,12 +7,12 @@ ms.topic: include
 
 If you need more than two portfolio backlogs, you can add up to two more for a total of five backlog levels. 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 You can add them by customizing your process, adding new work item types, and then configuring your backlogs and boards. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) and [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 You can add them by either customizing your inherited process or modifying your XML definition files. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project: 
 

@@ -13,7 +13,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Add a user who can make purchases for Azure DevOps

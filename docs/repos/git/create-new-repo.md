@@ -32,7 +32,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. Navigate to the **Repos** page in your project by browsing to `https://<your account name>.visualstudio.com`, hovering your mouse over the name of your project, and selecting the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 

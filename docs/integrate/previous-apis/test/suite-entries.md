@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Suite Entries| REST API Reference for Team Foundation Server
 description: Work with test suite entries programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 357368C6-6A97-4685-A154-ED665713B201

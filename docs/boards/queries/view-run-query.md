@@ -37,7 +37,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 > [!TIP]    
 > The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
 	
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
 
 	> [!div class="mx-imgBorder"]  
@@ -55,7 +55,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="tips-queries-hub"> </a>  
 ## Tips for working with the directory-focused **Queries** pages 
@@ -99,7 +99,7 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 
 ## View, rename, or delete a query
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 From either the **Favorites** or **All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon of a query to run, edit, rename, or delete the query. 
 
 ![New query experience, Favorites page, query context menu](_img/view-run-queries/query-context-menu-favorites-page.png)  
@@ -117,7 +117,7 @@ Choose the ![ ](../_img/icons/context_menu.png) context menu icon of a query to 
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Tasks you can perform from the Favorites or All pages
 
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
@@ -140,7 +140,7 @@ For details on adding new queries, see [Create managed queries with the query ed
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Filter the list of queries
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
@@ -152,7 +152,7 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 
 From the **Query Editor** or **Results** view, you can email a formatted list of query items or copy the query URL. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
  

@@ -182,7 +182,7 @@ The build runs the script same branch of the code you are building.
 
 You can use named parameters. Other kinds of parameters, such as switch parameters, are not yet supported and will cause errors.
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

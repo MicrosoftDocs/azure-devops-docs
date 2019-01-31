@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: elbatk
 ms.date: 10/31/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Publish Python packages in Azure Pipelines

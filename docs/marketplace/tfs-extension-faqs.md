@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 03/24/2018
-monikerRange: '>= tfs-2013 < azdevops'
+monikerRange: '>= tfs-2013 < azure-devops'
 ---
 
 # Team Foundation Server extension FAQs

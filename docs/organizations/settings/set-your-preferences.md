@@ -70,7 +70,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 1. To change your user preferences, open your profile menu.
 
 	> [!div class="mx-imgBorder"]  
@@ -101,7 +101,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 # [Previous navigation](#tab/previous-nav)
 
 0. To change your user preferences, open your profile menu.
-	::: moniker range="azdevops"  
+	::: moniker range="azure-devops"  
 	> [!div class="mx-imgBorder"]  
 	> ![Open profile menu](../../_shared/_img/settings/profile-menu-horz.png)
 	::: moniker-end  

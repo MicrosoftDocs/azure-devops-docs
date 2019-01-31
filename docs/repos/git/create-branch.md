@@ -30,7 +30,7 @@ monikerRange: '>= tfs-2013'
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 0. View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 

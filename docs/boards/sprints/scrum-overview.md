@@ -28,7 +28,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ![New Navigation, Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
@@ -38,14 +38,14 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 !["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Boards>backlogs, TFS 2015, 2013 web portal](_img/IC795962.png)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -65,7 +65,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 <a id="ts-sprints" /> 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
@@ -87,7 +87,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"  
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
@@ -105,7 +105,7 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ::: moniker-end  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 

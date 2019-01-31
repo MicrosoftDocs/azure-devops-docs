@@ -24,7 +24,7 @@ As an organization owner or a project admin, there are a few items you might wan
 
 ## Add users to a project
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
 
 Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see the following articles:
@@ -65,7 +65,7 @@ If you decide that you want to delegate specific tasks to others, then you'll wa
 
 ::: moniker-end
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md).
 
 ::: moniker-end   
@@ -75,7 +75,7 @@ Each project has a summary page where you can share information through **README
 
 ::: moniker-end
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 ## Remove unused services from the user interface
 
@@ -95,7 +95,7 @@ There are several policies you can set to support collaboration across your team
 
 ::: moniker-end   
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 - [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
@@ -122,7 +122,7 @@ If you support several products or feature areas, you can assign work items by f
 > |<img src="../organizations/settings/_img/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="../organizations/settings/_img/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
    
 ## Customize work-tracking processes
 
@@ -164,7 +164,7 @@ If users believe they're getting too many notifications, they can [opt out of a 
 > ![Personal notifications](_img/services/personal-notifications.png)   
 
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 
 ## Configure an SMTP server
 
@@ -208,7 +208,7 @@ You want to tell your users about extensions and that they can [request an exten
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Set up billing
 
@@ -223,7 +223,7 @@ All organizations can add up to five users with Basic access and unlimited users
 
 ## Related articles
 
-::: moniker range="azdevops"   
+::: moniker range="azure-devops"  
 
 - [Security & identity](../organizations/security/index.md)
 - [Organization management](../organizations/accounts/index.md)
@@ -231,7 +231,7 @@ All organizations can add up to five users with Basic access and unlimited users
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"   
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 
 - [Manage projects](../organizations/projects/index.md)
 - [Security & identity](../organizations/security/index.md)

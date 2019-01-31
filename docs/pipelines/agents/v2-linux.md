@@ -33,7 +33,7 @@ To build or deploy you'll need at least one agent. A Linux agent can build and d
 
 Where are your builds and releases running?
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 **Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
 
@@ -60,7 +60,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Azure Pipelines
 
@@ -125,7 +125,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
@@ -303,7 +303,7 @@ You can use the template described above as to facilitate generating other kinds
 
 Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/azure-pipelines-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 ::: moniker-end
 
@@ -315,15 +315,15 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 
 [Run the agent behind a web proxy](proxy.md)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [include](../_shared/qa-versions.md)]
 ::: moniker-end
 

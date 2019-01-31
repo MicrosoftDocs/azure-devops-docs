@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 11/14/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 # Cloud Solution Providers: Buy Azure DevOps resources for your customers
 

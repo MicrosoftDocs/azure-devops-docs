@@ -25,7 +25,7 @@ Tasks in a server job are orchestrated by and executed on the server (Azure Pipe
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 The full syntax to specify an agent job is:
 
@@ -51,7 +51,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -67,7 +67,7 @@ Use the job timeout setting to specify the limit in minutes for running the job.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
@@ -78,7 +78,7 @@ pool:
 ```
 
 ::: moniker-end
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -95,7 +95,7 @@ If you are using YAML, you can dispatch multiple server jobs from a single serve
   
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 The `matrix` setting enables a job to be dispatched multiple times, with different variable sets. The `parallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
 
@@ -119,7 +119,7 @@ jobs:
     
 ```
 ::: moniker-end
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -134,7 +134,7 @@ If you are using YAML, variables can be specified on the job. The variables can 
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Here is an example of defining variables in a job and using them within tasks.
 
@@ -153,7 +153,7 @@ steps:
 - powershell: Write-Host "Input macro = $(my var with spaces). Env var = $env:MY_VAR_WITH_SPACES"
 ```
 ::: moniker-end
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 

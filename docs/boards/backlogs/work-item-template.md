@@ -27,7 +27,7 @@ With work item templates you can quickly create work items which have pre-popula
 
 ## Prerequisites  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - To add, capture, or edit work item templates through the web portal, you must be a member of the team under which you add them. 
 - To apply a team template, you must be a Contributor of the project or be granted Stakeholder access.
@@ -54,7 +54,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 <a id="team-services-capture" /> 
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 0. From the web portal, open a work item which you'll use as the basis for a template.  
 
@@ -164,7 +164,7 @@ The main method for adding a work item using a template is to open the template 
 <a id="team-services-copy-link" /> 
 ### Copy the link to a template 
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 # [Browser](#tab/browser)
 
@@ -211,7 +211,7 @@ The main method for adding a work item using a template is to open the template 
 
 
 
-::: moniker range="azdevserver-2019"  
+::: moniker range="azure-devops-2019"  
 
 # [Browser](#tab/browser)
 
@@ -294,7 +294,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 1. Open the work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
-	::: moniker range=">= azdevserver-2019"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]
 	> ![Apply a template to an existing work item within the form](_img/templates/apply-template-vsts-s136.png) 
 	::: moniker-end
@@ -315,7 +315,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
 
 2. Choose the template to apply. 
-	::: moniker range=">= azdevserver-2019"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Bulk update several work items](_img/templates/bulk-apply-template-vsts-s136.png)
 	::: moniker-end
@@ -514,7 +514,7 @@ From the Work Item Templates tool, you can set a default for each work item type
 
 
 ### How do I create a template with links to other work items?
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 **A:** You can't create templates that contain default links to work items. However, you can use the Marketplace extension, [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions), to create rules that support adding linked work items with a single click. 
 

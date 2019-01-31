@@ -42,7 +42,7 @@ In this article you'll learn how to:
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 The buttons to move up or down within the query results list are outside the work item form. Choose **Bottom** to cycle through the choices for where the work item form appears: **Bottom**, **Right**, or **Off**. 
 
@@ -93,7 +93,7 @@ Multi-select the work items you want to update, choose the ![ ](../../_img/icons
 Work items shown in bold text indicate that local changes have not yet been saved to the data store.   
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Choose **Save items** to save all work items you've modified. 
 
 <img src="_img/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" style="border: 1px solid #C3C3C3;" /> 

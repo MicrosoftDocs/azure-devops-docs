@@ -31,7 +31,7 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose **Overview > Wiki** and enter your keyword or phrase into the search box.
 

@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Manage conditional access to Azure DevOps

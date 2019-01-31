@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 01/28/2019
 ---
 
@@ -22,7 +22,7 @@ You can restore a deleted project up to 28 days after it was deleted.
 
 ## Prerequisites
 
-To restore a project, you must have the “delete project" permission set to **Allow**. To learn how to check you permissions, see [View permissions](../security/view-permissions.md).
+To restore a project, you must have the "delete project" permission set to **Allow**. To learn how to check you permissions, see [View permissions](../security/view-permissions.md).
 
 > [!NOTE]
 > A recently deleted project is only viewable when there is a project that has been deleted from an organization.

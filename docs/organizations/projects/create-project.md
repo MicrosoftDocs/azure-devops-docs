@@ -39,7 +39,7 @@ If you have a project already, and want to start coding an application project, 
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 To create a project, you must first have [created an organization in Azure DevOps](../../user-guide/sign-up-invite-teammates.md).
 
@@ -70,7 +70,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
 
@@ -107,7 +107,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 

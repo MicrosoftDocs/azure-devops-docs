@@ -21,19 +21,12 @@ monikerRange: '>= tfs-2018'
 
 This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
 
-::: moniker range=">=tfs-2018"
-
 > Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer (Maven is only available in 2018 or newer), if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
-
-::: moniker-end
 
 ### Prerequisites
 
-* Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
-
-2. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
-
-<a name="create-a-feed"></a>
+1. Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
+1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
 
 ## Create a feed
 

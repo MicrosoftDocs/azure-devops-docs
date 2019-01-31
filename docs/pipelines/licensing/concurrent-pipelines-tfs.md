@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 10/20/2016
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
 # Parallel release jobs in Team Foundation Server

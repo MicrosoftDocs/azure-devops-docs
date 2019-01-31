@@ -10,7 +10,7 @@ ms.author: sdanie
 author: steved0x
 ms.date: 09/10/2018
 ms.topic: quickstart
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Code with Git

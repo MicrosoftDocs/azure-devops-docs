@@ -184,7 +184,7 @@ The final image will be published to Docker or Azure Container Registry
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. If you have a Docker Hub account, and want to push the image to your Docker registry,
    replace the contents of the `.vsts-ci.docker.yml` file with the following:
@@ -266,7 +266,7 @@ The final image will be published to Docker or Azure Container Registry
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 

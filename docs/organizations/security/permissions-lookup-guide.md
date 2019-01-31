@@ -21,7 +21,7 @@ Use this index to locate the topic on how to manage a specific permission. Most 
 
 Values in parenthesis indicate what level the permission is managed:
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 - **Object**: Permissions are managed at the object-level    
 - **Project**: Permissions are managed at the project level
@@ -163,7 +163,7 @@ Values in parenthesis indicate what level the permission is managed:
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 - **Object**: Permissions are managed at the object-level    
 - **Project**: Permissions are managed at the project level

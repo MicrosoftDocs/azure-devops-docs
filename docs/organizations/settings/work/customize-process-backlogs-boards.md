@@ -9,7 +9,7 @@ ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
 ms.date: 11/19/2018
 ---

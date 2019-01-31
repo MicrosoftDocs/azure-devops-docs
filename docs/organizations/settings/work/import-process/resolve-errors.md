@@ -8,7 +8,7 @@ ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 

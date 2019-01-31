@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 # Look up administrators and organization owner 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 # Look up administrators 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -59,11 +59,11 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 ::: moniker range="<= tfs-2018" 
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
+# [Previous navigation](#tab/previous-nav) 
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"  
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -78,7 +78,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"  
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"  
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -109,12 +109,12 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.
 
@@ -127,14 +127,14 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <a name="find-owner"></a>
 
