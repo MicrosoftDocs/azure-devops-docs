@@ -1,6 +1,6 @@
 ---
 title: Administer code, wiki and workitem search
-description: Setup notes and administration links for Microsoft Code, Wiki & Work Item Search in Azure DevOps Services and Azure DevOps Server (earlier known as Team Foundation Server (TFS))
+description: Setup notes and administration links for Microsoft Code, Wiki & Work Item Search in Azure DevOps Services and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: devops
 ms.technology: devops-collab
@@ -22,7 +22,7 @@ In this topic:
   - [Install Search extension in Azure DevOps Services](#config-ts-azuredevops)
   - [Uninstall Search extension in Azure DevOps Services](#uninstall-ts-azuredevops)<p />
 
-* **Configure Search (Code, Work Item and Wiki) in Azure DevOps Server**
+* **Configure Search (Code, Work Item and Wiki) in Team Foundation Server (TFS)**
   - [Install Search extension](#install-tfs)
   - [Configure Search](#config-tfs)
   - [Secure Search](#secure-search)
@@ -42,7 +42,7 @@ All users have access to Work Item and Wiki Search.
 <a name="config-ts-azuredevops"></a>
 ##  Install Search extension in Azure DevOps Services
 
-For Work Item and Wiki search, there is no installation involved as these come as Azure DevOps Server built-in extensions.
+For Work Item and Wiki search, there is no installation involved as these come as TFS built-in extensions.
 For Code Search, go to [Azure DevOps Marketplace](https://marketplace.visualstudio.com/)
 to install Code Search extension in Azure DevOps as an administrator.
 Non-administrative users can also go here to request the extension be added to Azure DevOps. 
@@ -52,7 +52,7 @@ For more details, see [Install an extension](../../marketplace/install-extension
 <a name="uninstall-ts-azuredevops"></a>
 ## Uninstall Search extension in Azure DevOps Services
 
-For Work Item and Wiki search, users cannot uninstall them as these come as Azure DevOps Server built-in extensions.
+For Work Item and Wiki search, users cannot uninstall them as these come as TFS built-in extensions.
 For Code Search, see [Uninstall or disable an extension](../../marketplace/uninstall-disable-extensions.md) 
 in the Marketplace documentation. 
 
@@ -62,39 +62,39 @@ in the Marketplace documentation.
 Code Search is available in TFS 2017 and later.
 Work Item Search is available in TFS 2017 Update 2 and later.
 Wiki Search is available in TFS 2018 Update 2 and later.
-Work Item and Wiki search are both Azure DevOps Server built-in extensions, and they are installed by default
+Work Item and Wiki search are both TFS built-in extensions, and they are installed by default
 during Search configuration. Code Search is an opt-in feature and if users wish, they can install
 Code Search later from Local Gallery.
 
 For installing Code Search, go to **Local Gallery** (http://{Server}/tfs/_gallery)
-in Azure DevOps Server as an administrator.
-Non-administrative users can also go here to request the extension be added to Azure DevOps Server. 
+in TFS as an administrator.
+Non-administrative users can also go here to request the extension be added to TFS. 
 
 For more details, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Marketplace documentation.
 
 <a name="config-tfs"></a>
 ## Configure Search
 
-Configure the Search service using the dedicated pages in the Azure DevOps Server Configuration Wizard
-as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the Azure DevOps Server Configuration Wizard again or launching the Search Configuration Wizard.
+Configure the Search service using the dedicated pages in the TFS Configuration Wizard
+as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
+afterwards by running the TFS Configuration Wizard again or launching the Search Configuration Wizard.
 
 <a name="hardware-recommendations"></a>
 ### Hardware recommendations
 
 Search can be used on any size physical server or virtual machine that runs 
-TFS 2017 or above. It can be configured on the same server as the Azure DevOps Server,
+TFS 2017 or above. It can be configured on the same server as the TFS,
 or on a separate server dedicated to Search.
-When configuring Search on the same server as Azure DevOps Server,
+When configuring Search on the same server as TFS,
 you must consider the existing CPU utilization
-factor due to Azure DevOps Server itself.
+factor due to TFS itself.
 
 **For production environments we recommend you configure Search on a separate server.**
 
 For acceptable performance in multi-user scenarios, consider the 
 following recommendations:
 
-* Less than 250 users with Search co-located on the Azure DevOps Server (typically used for demonstration and trial purposes):
+* Less than 250 users with Search co-located on the TFS (typically used for demonstration and trial purposes):
   - Quad core processor, 8 GB (minimum) RAM
   - CPU Utilization factor less than 50%
   - Fast hard drive backed by Solid State Drive (SSD) storage<p />
@@ -111,10 +111,10 @@ following recommendations:
   - Quad core processor, 16 GB (minimum) RAM
   - Fast hard drive backed by Solid State Drive (SSD) or Storage Area Network (SAN) storage<p />
 
-* Azure DevOps Server with Multiple ATs: 
+* TFS with Multiple ATs: 
   - Install Search on a [separate server](#separate-server)<p />
 
-* Azure DevOps Server CPU utilization greater than 50% before installing Search:
+* TFS CPU utilization greater than 50% before installing Search:
   - Install Search on a [separate server](#separate-server)<p />
 
 **Disk space requirement**:
@@ -131,20 +131,20 @@ as part of the configuration:
 
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Oracle Server JRE](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html) Java runtime environment (see Note 3)
+* [Azul Zulu OpenJDK](https://www.azul.com/downloads/zulu/zulu-windows/) (see Java installation notes below)
 * [Markdowndeep](http://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](http://www.antlr.org/) language recognition parser
 
 **NOTES**:
  
-1. A modified version of Elasticsearch ships with Azure DevOps Server. 
+1. A modified version of Elasticsearch ships with TFS. 
    Search will work only with this version of Elasticsearch.  
-1. A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation.
+2. A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation.
    Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
-1. The system or Azure DevOps Server administrator must ensure that Server JRE is
+3. The system or TFS administrator must ensure that Server JRE is
   maintained and updated in line with the software provider's recommendations. 
-  Also see the [installation notes](#java-notes) that follow.
+  Also see the [Java installation notes](#java-notes) that follow.
 
 <a name="java-notes"></a>
 #### Java installation notes
@@ -169,38 +169,45 @@ of the **JAVA\_HOME** variable may cause other installed software to fail.
 If there is a version of Server JRE **equal to or later** than the minimum required 
 by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
-the **[Java troubleshooting guide](http://docs.oracle.com/javase/7/docs/webnotes/tsg/)**,
+the **[Zulu Installation Guide](http://docs.azul.com/zulu/zuludocs/index.htm)**,
 and then rerun the configuration wizard. 
 
 If you cannot install the version of Java required by Search due to other dependencies, you can:
 
-* Install Azure DevOps Server and Search together on a different server that does
+* Install TFS and Search together on a different server that does
   not have Java installed (not recommended for more than 250 users or CPU utilization greater than 50% or multiple ATs).
 
-* Install Search and Java on a [separate server](#separate-server) from Azure DevOps Server.
+* Install Search and Java on a [separate server](#separate-server) from TFS.
 
->Search does not use or support any of the commercial features
-of Server JRE 8 as outlined [here](http://www.oracle.com/technetwork/java/javase/terms/products/index.html).
-Therefore, during Search configuration on TFS 2017,
-the commercial features of the Server JRE are not activated or unlocked.
-See the Oracle documentation for examples of unlocking the commercial features of
-[Java 7](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html)
-or [Java 8](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html). 
+> [!NOTE]
+> * Search does not use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration on TFS,
+the commercial features of the Server JRE are neither activated nor unlocked.
+> * TFS Search will support both Azul Zulu OpenJDK and Oracle JRE, allowing you to choose between them based on your needs.
+> * If you choose to continue with Oracle JRE, then please contact Oracle for a [Java SE Subscription](https://www.oracle.com/java/java-se-subscription.html), 
+so that you can continue to receive JRE updates. If you choose to use Azul Zulu OpenJDK, please visit Zulu OpenJDK [downloads](https://www.azul.com/downloads/zulu/zulu-windows/) for updates.
+> * Existing users of TFS Search can easily switch from Oracle JRE to Azul Zulu OpenJDK without incurring any TFS downtime 
+in a few simple steps, as explained in the diagram below. You can find detailed step-by-step guidance based on the TFS version 
+[here](https://github.com/msftazdev/Code-Search/tree/master/Java%20Migration).
+![Java Migration flow](_img/administration/java-migration-flow.png)
+> * Note that from the release of TFS (Azure DevOps Server 2019), 
+customers selecting installation of Java during install time will be defaulted to Azul Zulu OpenJDK 8.
+
+
 
 ### Installation considerations
 
 Consider the following when configuring Search:
 
 * Both Work Item and Wiki search are enabled by default when Search is Configured. These extensions can 
-  be later removed if required from **Manage Extensions** page of your source Azure DevOps Server instance.
+  be later removed if required from **Manage Extensions** page of your source TFS instance.
 
-* The Code Search extension must be installed for each Azure DevOps Server collection where you want to use it. 
+* The Code Search extension must be installed for each TFS collection where you want to use it. 
   When initially configuring Search, you can set a checkbox to **Automatically install Code Search extension 
   for existing and new Project Collections** to automate this process.
 
 * If you do not set the checkbox to install the Code Search extension for all your Project Collection, while 
   configuring Search, your Project Collection administrator can install it from Local Gallery. Make 
-  sure you navigate to the Local Gallery from your Azure DevOps Server portal page. 
+  sure you navigate to the Local Gallery from your TFS portal page. 
 
 * The search index folder should be located on a separate fast hard drive backed by fast storage such
   as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
@@ -215,41 +222,41 @@ Consider the following when configuring Search:
   from accidental or malicious modification or deletion, and configure appropriate 
   [security settings](#secure-search) for the service.
 
-* When configuring Search for a Azure DevOps Server with **multiple application tiers (ATs)**, make sure Search is installed on a [separate server](#separate-server). After Search is installed 
-  on the remote server, use the Configuration wizard on any one of the ATs to link the search instance with your Azure DevOps Server instance. When unconfiguring Search in future 
+* When configuring Search for a TFS with **multiple application tiers (ATs)**, make sure Search is installed on a [separate server](#separate-server). After Search is installed 
+  on the remote server, use the Configuration wizard on any one of the ATs to link the search instance with your TFS instance. When unconfiguring Search in future 
   you must use the Configuration wizard on the same AT where configuration was done.
 
-* If you are performing a **pre-production upgrade** on a Azure DevOps Server where Search is already configured, you must fully
+* If you are performing a **pre-production upgrade** on a TFS where Search is already configured, you must fully
   reconfigure Search again to avoid corrupting your production instance of Search. For this reason, there is no option to configure 
   Search as part of a pre-production upgrade. Instead, configure it after the pre-production upgrade is complete. 
   As this is a pre-production upgrade, you can choose to uncheck **Automatically install and configure Code Search for all existing and new collections**
   during configuration, and instead install the Code Search extension for just one or two of your collections after configuration is complete.
 
-* If you are performing a **production upgrade** on a Azure DevOps Server where Search is already configured, and want to retain the Search feature, 
+* If you are performing a **production upgrade** on a TFS where Search is already configured, and want to retain the Search feature, 
   you must set the checkbox to **Install and Configure Search**. At this point the wizard will detect your existing Search instance and 
   automatically select the **Use existing Search instance** option and pre-populate your current Search service URL.
-  Use the **Install a new Search instance** option only if you want to set up a new instance of Search on the same Azure DevOps Server.
+  Use the **Install a new Search instance** option only if you want to set up a new instance of Search on the same TFS.
   Setting up a new instance causes all your code, work item and wiki to be indexed again, which - depending on the size of the collections - can take some time.
   During indexing, users may see partial search results. 
 
-* If you are **upgrading your Azure DevOps Server to new hardware**,
+* If you are **upgrading your TFS to new hardware**,
   depending on how Search was previously configured, you have two options:
 
-  - If Search was configured on a separate server, you must select **Install and Configure Search** in the Azure DevOps Server wizard,
+  - If Search was configured on a separate server, you must select **Install and Configure Search** in the TFS wizard,
     and subsequently select **Use an existing Search instance** 
     and provide the URL of your existing Search instance to complete the Search configuration. 
     
-  - If Search was configured alongside your Azure DevOps Server instance on the old server, you must select **Install and Configure Search**
-    in the Azure DevOps Server wizard, and subsequently select **Install a new Search instance** 
-    again on the new Azure DevOps Server if you want to continue to co-host Search and Azure DevOps Server.
+  - If Search was configured alongside your TFS instance on the old server, you must select **Install and Configure Search**
+    in the TFS wizard, and subsequently select **Install a new Search instance** 
+    again on the new TFS if you want to continue to co-host Search and TFS.
     This will cause all Search indexes for all collections to be re-created which,
     depending on the size of each collection, might take some time.<p />
     
-* If you are **detaching a collection** from one Azure DevOps Server instance in order to attach it to another Azure DevOps Server instance, ensure that:
+* If you are **detaching a collection** from one TFS instance in order to attach it to another TFS instance, ensure that:
 
-  - Search has been configured on the target Azure DevOps Server instance.
-  - Before you detach the collection, you have uninstalled the Search extension (Code, Work Item or Wiki) for that collection from the **Manage Extensions** page of your source Azure DevOps Server instance.
-  - After you attach the collection to the target Azure DevOps Server instance, you install the Search extension (Code, Work Item or Wiki) for that collection from the Local Gallery by browsing to it from that Azure DevOps Server instance.<p />
+  - Search has been configured on the target TFS instance.
+  - Before you detach the collection, you have uninstalled the Search extension (Code, Work Item or Wiki) for that collection from the **Manage Extensions** page of your source TFS instance.
+  - After you attach the collection to the target TFS instance, you install the Search extension (Code, Work Item or Wiki) for that collection from the Local Gallery by browsing to it from that TFS instance.<p />
 
 <a name="separate-server"></a>
 ### Installing or Updating Search on a separate server
@@ -257,12 +264,12 @@ Consider the following when configuring Search:
 To install or update  Search on a separate (remote) server, typically when you have more than 250 users,
 follow these steps:
 
-1. As you install Azure DevOps Server on the primary server, set the **Install and configure Search** checkbox 
-   in the **Search** page of the Azure DevOps Server Configuration Wizard.
+1. As you install TFS on the primary server, set the **Install and configure Search** checkbox 
+   in the **Search** page of the TFS Configuration Wizard.
 
-1. Select the option to **Use an existing Search Service**. 
+1. Select the option to **Use an existing Search service**. 
 
-1. Use the **Search Service package** link provided in the wizard to access a set of Search installer files 
+1. Use the **Search service package** link provided in the wizard to access a set of Search installer files 
    on the local machine, and then copy these files to the remote server.
 
    ![Separate server installation](_img/administration/separate-server.png)
@@ -272,7 +279,7 @@ follow these steps:
 
 1. After the installation of the Search service on the remote server is complete,
    copy the resulting Search server URL into the **Search URL** field of the 
-   configuration wizard running on the Azure DevOps Server.
+   configuration wizard running on the TFS.
 
 1. When both installations are complete, configure appropriate 
    [security settings](#secure-search) for both servers.
@@ -284,22 +291,35 @@ The Search service uses a modified version of
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) 
 (the terms "Search" and "Elasticsearch" are used 
 interchangeably for the remainder of this section). 
-In TFS 2018 Update 1.1 and TFS 2018 Update 3, Basic authentication has been enabled to make the communication between 
-TFS and Search service more secure. TFS Admins will need to configure credentials 
-as part of configuring Search (through Server or Search configuration wizard) whether Elasticsearch 
-is on the same server as TFS,
-or on a separate server dedicated to Search. These new set of credentials will enable basic authentication in search service. 
+TFS Admins will need to provide credentials as part of configuring Search feature 
+(through Server or Search configuration wizard) whether Search service 
+is on the same machine as TFS,
+or on a separate machine. These are new set of credentials (not related to any pre-existing account / TFS credentials) 
+and are used to set up and connect to Search service.
+These new set of credentials will enable basic authentication in search service. 
 
    ![Search credentials](_img/_shared/tfsU3_search_cred1-1024x706.png)
 
-Please note that Search credentials will only authenticate the users and makes 
+In case of an upgrade from TFS 2018 Update 1.1 to TFS 2018 Update 3 or in case of search re-configuration, 
+only the user information gets auto-populated and TFS Admins will need to provide password credentials. 
+TFS Admins have an option to provide different username and 
+password if they desire to do so. If Search service is 
+on the same machine as TFS and Admins want to change the credentials,
+they just need to provide a new set of credentials in the configuration wizard and Search service will be setup. 
+But if Search service is on a remote machine and TFS Admins want to change the username and password, 
+they need to provide the new credentials first to the Search service setup script.
+
+
+**Note**: 
+1. Username and password values should both be between 8 and 64 characters in length. While password can be assigned any value,
+username can only contain alphanumeric/underscore characters. 
+2. Search credentials will only authenticate the users and makes 
 sure that unauthenticated users cannot access the Elasticsearch endpoint. 
 But since Elasticsearch does not support HTTPS, these auth credentials are sent 
 over the network as Base64 encoded strings. If you think there is a possibility of 
 someone sniffing the credentials, it is vital that you configure appropriate security 
 settings based on your corporate security and compliance requirements.
-
-Irrespective of the Azure DevOps Server version that you use, you should aim to limit access to both searching and indexing 
+3. Irrespective of the TFS version that you use, you should aim to limit access to both searching and indexing 
 to specific users or user groups for which we recommend using encryption through IPSec. 
 Consider the following techniques for using IPSec to secure Elasticsearch on a Windows server.
 
@@ -310,7 +330,7 @@ the Elasticsearch port. It requires only service-side
 rules (firewall rules on only on the server running 
 Elasticsearch).
 
-**Prerequisite**: Azure DevOps Server must be configured with a domain account.
+**Prerequisite**: TFS must be configured with a domain account.
 
 Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network Traffic](https://technet.microsoft.com/library/cc754873%28v%3Dws.10%29.aspx).
 
@@ -320,9 +340,9 @@ This ensures encryption and integrity protection
 are applied along with authentication. It requires 
 both client-side and service-side rules (firewall rules
 on the server running Elasticsearch and all
-Azure DevOps Server App Tier servers).
+TFS App Tier servers).
 
-**Prerequisite**: Azure DevOps Server must be configured with a domain account.
+**Prerequisite**: TFS must be configured with a domain account.
 
 Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](https://technet.microsoft.com/library/cc772460%28v%3Dws.10%29.aspx).
 
@@ -349,10 +369,10 @@ service was configured on the TFS that is being upgraded.
 If Search was configured on a remote server, follow
 [these instructions](#separate-server) to update it. In both cases, all existing content (code files and work items) will be automatically re-indexed to support the updated components after configuration. Depending on the volume of content, this might take some time to complete.
 
-TFS 2018 Update 1.1 and TFS 2018 Update 3 include Basic authentication for the communication 
-between the TFS and Search services to make it more secure. Any user installing or upgrading 
-to TFS 2018 Update 1.1 or TFS 2018 Update 3 must provide a user name and a password 
-while configuring Search (and also during Search Service setup in the case of a remote Search Service).
+TFS 2018 Update 1.1 and TFS 2018 Update 3 include basic authentication for the communication 
+between the TFS and Search service to make it more secure. Any user installing or upgrading 
+to TFS 2018 Update 1.1 or TFS 2018 Update 3 will need to provide credentials as part of configuring Search feature 
+(through Server or Search configuration wizard).
 
 <a name="manage-tfs"></a>
 ## Manage Search
@@ -360,7 +380,7 @@ while configuring Search (and also during Search Service setup in the case of a 
 Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
 **[this GitHub repository](https://github.com/Microsoft/Code-Search)**.
-You may wish to download all of the scripts into a local folder on your Azure DevOps Server
+You may wish to download all of the scripts into a local folder on your TFS
 server using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
 the **SqlScripts** folder and its contents is present, along with the PowerShell scripts.
 
@@ -388,9 +408,9 @@ To check the indexing status after Search is configured, or after the extension 
 1. Execute the **CheckIndexingStatus.ps1** script with administrative privileges. 
    You will be prompted to enter:
 
-   - The SQL server instance name where the Azure DevOps Server configuration database resides.
-   - The name of the Azure DevOps Server collection database.
-   - The name of the Azure DevOps Server configuration database.
+   - The SQL server instance name where the TFS configuration database resides.
+   - The name of the TFS collection database.
+   - The name of the TFS configuration database.
    - The name of the collection.
    - The number of previous days to check indexing status.<p />
 
@@ -512,18 +532,18 @@ Also see **[Troubleshoot Search](#trouble-tfs)**.
 ## Uninstall Search
 
 In cases such as a pre-production upgrade, production upgrade, new hardware migration, cloning,
-or other maintenance operation, the Azure DevOps Server wizard will unconfigure Search in a way that makes it easy to re-configure it after the Azure DevOps Server maintenance operation is complete.
+or other maintenance operation, the TFS wizard will unconfigure Search in a way that makes it easy to re-configure it after the TFS maintenance operation is complete.
 
 However, there might be cases where you no longer want to use Search or you want to perform a new and clean
 install. This requires multiple steps, depending on whether Search is configured
-[on the same server as Azure DevOps Server ](#unconfig-same-server) or on a [separate server](#unconfig-separate-server).
+[on the same server as TFS ](#unconfig-same-server) or on a [separate server](#unconfig-separate-server).
 
 <a name="unconfig-same-server"></a>
-### Unconfigure Search on the machine configured as your Azure DevOps Server
+### Unconfigure Search on the machine configured as your TFS
 
 1. Uninstall the Search extension for each collection where it is installed.
    Do this by navigating to the **Manage Extensions** page of each collection in
-   your Azure DevOps Server:
+   your TFS:
 
 # [New navigation](#tab/new-nav)
 
@@ -537,10 +557,10 @@ install. This requires multiple steps, depending on whether Search is configured
 
 1. Remove the Search feature:
 
-   1. Open the Azure DevOps Server Administration Console.
-   1. In the left pane, select the name of the Azure DevOps Server.
+   1. Open the TFS Administration Console.
+   1. In the left pane, select the name of the TFS.
    1. In the right pane, choose **Remove Feature**.
-   1. In the Remove Feature dialog, select **Azure DevOps Server Search Service** and choose **Remove**.<p />
+   1. In the Remove Feature dialog, select **TFS Search service** and choose **Remove**.<p />
   
 1. Remove the Elasticsearch service:
 
@@ -571,7 +591,7 @@ install. This requires multiple steps, depending on whether Search is configured
 ### Unconfigure Search when its configured on a separate server
 
 1. Uninstall the Search extension (Code, Work Item, or Wiki) for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in
-your Azure DevOps Server.
+your TFS.
 
 # [New navigation](#tab/new-nav)
 
@@ -585,10 +605,10 @@ your Azure DevOps Server.
 
 1. Remove the Search feature:
 
-   1. Open the Azure DevOps Server Administration Console.
-   1. In the left pane, select the name of the Azure DevOps Server.
+   1. Open the TFS Administration Console.
+   1. In the left pane, select the name of the TFS.
    1. In the right pane, choose **Remove Feature**.
-   1. In the Remove Feature dialog, select **Team Foundation Search Service** and choose **Remove**.<p />
+   1. In the Remove Feature dialog, select **Team Foundation Search service** and choose **Remove**.<p />
 
 1. Remove the Elasticsearch service and data
 
@@ -606,9 +626,9 @@ your Azure DevOps Server.
 <a name="limit-tfs"></a>
 ## Limitations of Search
 
-Search for Azure DevOps Server has the following limitations: 
+Search for TFS has the following limitations: 
 
-* If you perform a disaster recovery (DR) operation and move your Azure DevOps Server back 
+* If you perform a disaster recovery (DR) operation and move your TFS back 
   to an earlier snapshot of your SQL database, you will need to re-index all your collections [re-index the collections](#re-index).  
 
 <a name="trouble-tfs"></a>
@@ -619,7 +639,7 @@ Search for Azure DevOps Server has the following limitations:
 * [How do I know if indexing was triggered for all the collections?](#indexing-status-for-collections)
 * [Search stops working and no results are shown](#no-results-later)
 * [Search does not show the expected results](#unexpected-results)
-* [Azure DevOps Server overall performance is affected](#server-slow)
+* [TFS overall performance is affected](#server-slow)
 * ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
 
 **Search is configured but the Search box is not displayed**
@@ -692,7 +712,7 @@ name of the server where Search is installed:
    where the files are located.
 
 <a name="server-slow"></a>
-**Azure DevOps Server overall performance is affected**
+**TFS overall performance is affected**
 
 1. [Pause all indexing](#pause-index) and see if performance recovers.
 1. If performance does recover, consider locating Search 
