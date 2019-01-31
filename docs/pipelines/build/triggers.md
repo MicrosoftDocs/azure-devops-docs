@@ -28,7 +28,7 @@ On the Triggers tab, you specify the events that trigger the build. You can use 
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 YAML builds are configured by default with a CI trigger on all branches.
 
@@ -98,7 +98,7 @@ For more information, see [Trigger](../yaml-schema.md#trigger) in the [YAML sche
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -161,7 +161,7 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!NOTE]
 > New pipelines automatically override YAML PR triggers with a setting in the UI.
@@ -234,7 +234,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -255,14 +255,14 @@ If you choose to build fork pull requests, you may also choose whether or not to
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Scheduled builds are not yet supported in YAML syntax.
 After you create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -343,7 +343,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <a name="BuildCompletion"></a>
 ## Build completion triggers
@@ -401,7 +401,7 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 If your code is in a Git repo on Azure Repos or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is not available for GitHub repos.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### My build didn't run. What happened?
 
@@ -415,7 +415,7 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### The YAML file in my branch is different than the YAML file in my master branch, which one is used?
 
@@ -428,7 +428,7 @@ When you have configured a [CI trigger](#continuous-integration-ci) or a [PR tri
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

@@ -9,7 +9,7 @@ ms.manager: madhurig
 ms.author: brcrista
 ms.reviewer: dastahel
 ms.date: 11/16/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Conda Environment task

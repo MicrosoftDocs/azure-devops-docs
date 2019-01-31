@@ -186,7 +186,7 @@ When a deployment to a stage fails, **Azure Pipelines** can now automatically re
 
 ### PyPI public preview
 
-Azure Artifacts can now host Python packages. This includes packages that you produce and upstream packages saved from the public PyPI. For more details, see the [announcement blog post](https://azure.microsoft.com/en-us/blog/python-package-pypi-support-for-azure-artifacts-now-in-preview/) and the [documentation](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/python-packages?view=azdevops&tabs=new-nav).
+Azure Artifacts can now host Python packages. This includes packages that you produce and upstream packages saved from the public PyPI. For more details, see the [announcement blog post](https://azure.microsoft.com/en-us/blog/python-package-pypi-support-for-azure-artifacts-now-in-preview/) and the [documentation](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/python-packages?view=azure-devops&tabs=new-nav).
 
 Now, you can host all of your NuGet, npm, Maven, Python, and Universal packages in the same feed.
 
@@ -202,13 +202,13 @@ We added a new Azure DevOps Service Status Portal that will provide a better exp
 > [!div class="mx-imgBorder"]
 ![Badge](_img/144_07.png)
 
-For more details, see the [announcement blog post](https://blogs.msdn.microsoft.com/vsoservice/?p=17995) and the [documentation](https://docs.microsoft.com/azure/devops/articles/service-status-info?view=azdevops).
+For more details, see the [announcement blog post](https://blogs.msdn.microsoft.com/vsoservice/?p=17995) and the [documentation](https://docs.microsoft.com/azure/devops/articles/service-status-info?view=azure-devops).
 
 ## Wiki
 
 ### Markdown templates for formulas and videos
 
-There is no longer a need to remember markdown syntax for adding [formulas](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azdevops#mathematical-notation-and-characters), [videos](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azdevops#embed-videos-in-a-wiki-page) and [YAML tags](https://docs.microsoft.com/azure/devops/release-notes/2018/aug-03-vsts#wiki) when editing a Wiki. You can now click on the context menu in the toolbar and select the option of your choice.
+There is no longer a need to remember markdown syntax for adding [formulas](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azure-devops#mathematical-notation-and-characters), [videos](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azure-devops#embed-videos-in-a-wiki-page) and [YAML tags](https://docs.microsoft.com/azure/devops/release-notes/2018/aug-03-vsts#wiki) when editing a Wiki. You can now click on the context menu in the toolbar and select the option of your choice.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/144_04.png)

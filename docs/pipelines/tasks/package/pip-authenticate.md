@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.manager: jillfra
 ms.author: elbatk
 ms.date: 10/31/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Package: Python Pip Authenticate

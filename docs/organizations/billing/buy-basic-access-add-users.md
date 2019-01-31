@@ -77,26 +77,26 @@ The number of users to whom you can assign Basic appears on the right side of yo
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
    ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  Â 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
    > [!div class="mx-imgBorder"]
 ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
 ::: moniker-end
 

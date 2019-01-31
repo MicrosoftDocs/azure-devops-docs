@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 12/4/2018
 ---
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 # About user, team, project, and organization-level settings 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
@@ -27,7 +27,7 @@ If you're just getting started as a project administrator, see [Get started as a
 
 ::: moniker-end  
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 # About user, team, project, and collection-level settings
 
@@ -160,7 +160,7 @@ See also [Get started as an administrator](../../user-guide/project-admin-tutori
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
@@ -174,7 +174,7 @@ From the administrative **Project settings** pages, you can configure settings a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || azdevops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
@@ -187,7 +187,7 @@ From the administrative **Project settings** pages, you can configure settings a
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -322,7 +322,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"   
+::: moniker range=">= azure-devops-2019"   
 **Organization settings**  
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
@@ -336,7 +336,7 @@ From the administrative **Organization settings** pages, you can configure setti
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"   
+::: moniker range="azure-devops"   
 
 **Organization settings**  
 From the **Admin settings** page, you can configure the settings shown in the following image. 
@@ -355,13 +355,13 @@ From the administrative pages for a collection, you can configure the settings s
 ![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
 
 <table>
@@ -488,7 +488,7 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
 
 
@@ -645,7 +645,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker-end
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 <a id="admin" />
 

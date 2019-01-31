@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 12/04/2018
 ---
 

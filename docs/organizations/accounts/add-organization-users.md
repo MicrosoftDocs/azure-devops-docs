@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/13/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Add users to your organization or project

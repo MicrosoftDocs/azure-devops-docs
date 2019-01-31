@@ -117,7 +117,7 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

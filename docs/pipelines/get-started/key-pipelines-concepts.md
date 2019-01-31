@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.manager: jillfra
 ms.manager: elbatk
 ms.date: 01/16/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Key concepts for new Azure Pipelines users

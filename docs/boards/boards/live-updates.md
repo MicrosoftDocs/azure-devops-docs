@@ -30,7 +30,7 @@ Enable live updates to automatically refresh your Kanban board when changes occu
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose the ![ ](../_img/icons/view-options-icon.png) view options icon and move the slider for **Live updates** to On.  
 
@@ -47,7 +47,7 @@ Choose the ![ ](../_img/icons/view-options-icon.png) view options icon and move 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 
 Choose the ![ ](../_img/icons/live-updates-icon.png) **Live updates** icon.  
 
@@ -58,7 +58,7 @@ As one team member updates the status of a work item, other team members will se
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

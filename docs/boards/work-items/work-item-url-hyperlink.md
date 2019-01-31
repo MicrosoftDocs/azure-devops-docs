@@ -31,7 +31,7 @@ Examples in this article use the following conventions:
 -   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 ```
 https://dev.azure.com/OrganizationName/ProjectName/_workitems/edit/WorkItemNumber
@@ -58,7 +58,7 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019"  
+::: moniker range=">= tfs-2015 <= azure-devops-2019"  
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 

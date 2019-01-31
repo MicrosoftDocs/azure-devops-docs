@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 05/30/2018
 ---
 

@@ -40,7 +40,7 @@ Choose **+ Variable group**.
 1. Decide if you want the variable group to be accessible for any pipeline
    by setting the **Allow access to all pipelines** option. This option allows
    pipelines defined in YAML, which are not automatically authorized for variable groups,
-   to use this variable group. See [Use a variable group](variable-groups.md?tabs=yaml&view=azdevops#use-a-variable-group)
+   to use this variable group. See [Use a variable group](variable-groups.md?tabs=yaml&view=azure-devops#use-a-variable-group)
 
 1. If you want to link secrets from an Azure key vault as variables, see the following section of this topic. 
 

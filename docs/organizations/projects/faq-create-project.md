@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2013'
 
 ### To resolve permission related errors
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md).  
 ::: moniker-end
 

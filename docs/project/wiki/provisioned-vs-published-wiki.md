@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 12/17/2018  
 ---
 

@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 > [!NOTE]
 > 
 > Some features and predefined variables are not available in certain versions of TFS. We're working on updating this topic to call out these differences.
@@ -51,7 +51,7 @@ To learn more, see [source repositories](repository.md).
 
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/variables-vsts.md)]
 ::: moniker-end
 

@@ -156,10 +156,10 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 </table>
 
 #### Implementation notes
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 -   Each backlog is restricted to a total of 1000 work items. You can't modify this limit for Azure DevOps Services.  
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 -   By default, each backlog is restricted to a total of 1000 work items. For TFS you can change this limit by specifying a value for the `workItemCountLimit` attribute.  
 ::: moniker-end
 -   The values assigned to *CategoryName* must correspond to a category group defined for the project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  

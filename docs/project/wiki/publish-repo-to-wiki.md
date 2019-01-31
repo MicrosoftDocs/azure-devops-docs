@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/14/2018  
 ---
 
@@ -63,7 +63,7 @@ Begin by connecting to your project using a [supported web browser](/tfs/server/
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose **Overview>Wiki**.
 
@@ -76,7 +76,7 @@ If you need to switch your team project, choose the ![ ](/azure/devops/boards/_i
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 Choose **Wiki**.
 
@@ -90,7 +90,7 @@ Choose **Wiki**.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

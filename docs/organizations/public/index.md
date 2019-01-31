@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 01/15/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Public Projects

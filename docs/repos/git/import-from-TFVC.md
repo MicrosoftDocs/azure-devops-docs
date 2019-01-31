@@ -31,7 +31,7 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 0. Select **Repos**, **Files**.
 

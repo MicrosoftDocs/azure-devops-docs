@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Billing for Azure DevOps
 
@@ -28,7 +28,7 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azdevops"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ## Billing for Microsoft Team Foundation Server (TFS)  
 
@@ -39,7 +39,7 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## 5-Minute quickstarts  
 
@@ -65,9 +65,9 @@ Billing management
 Marketplace extension management
 
 * [Change the number of paid users for an extension](change-number-paid-extension-users.md)
-* [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
-* [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
-* [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
+* [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
+* [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
+* [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 
 Guidance for Cloud Solution Providers
 
@@ -78,9 +78,9 @@ Guidance for Cloud Solution Providers
 
 ## Reference
 
-* [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
-* [About access levels](../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
-* [Default permissions & access](../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azdevops)
+* [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
+* [About access levels](../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
+* [Default permissions & access](../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json)
 
 ::: moniker-end
@@ -89,6 +89,6 @@ Guidance for Cloud Solution Providers
 
 * [Start using Azure DevOps](../../user-guide/index.yml)
 * [Manage organizations](../accounts/index.md)
-* [TFS Server Administration documentation](/tfs/server/index?view=azdevops)
+* [TFS Server Administration documentation](/tfs/server/index?view=azure-devops)
 * [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)

@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 10/31/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Get started with Python packages in Azure Artifacts
@@ -92,7 +92,7 @@ If you want to consume or publish Python packages as part of your continuous int
 
 ### Build Python apps with Azure Pipelines
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/azure/devops/pipelines/languages/python?view=azdevops).
+To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](https://docs.microsoft.com/azure/devops/pipelines/languages/python?view=azure-devops).
 
 ## Resources
 

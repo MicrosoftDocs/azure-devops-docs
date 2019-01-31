@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.manager: elbatk
 ms.date: 07/06/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # What is Azure Pipelines?

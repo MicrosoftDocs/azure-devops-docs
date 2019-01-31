@@ -34,7 +34,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
 ## Add a query folder, move items into a folder 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 You add query folders from the **Boards>Queries>All** page.
  

@@ -94,7 +94,7 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker-end    
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 
 ### Permissions in Azure DevOps Services
 

@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 07/11/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Microsoft-hosted agents

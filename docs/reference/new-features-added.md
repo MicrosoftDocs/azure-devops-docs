@@ -8,7 +8,7 @@ ms.assetid: 1A7B7A18-457F-4AFF-9151-FCF13B850907
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azdevserver-2019'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 04/05/2017
 ---
 

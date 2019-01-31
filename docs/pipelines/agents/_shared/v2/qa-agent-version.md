@@ -20,7 +20,7 @@ ms.topic: include
 
 1. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right-click the pool, and then choose **Update all agents**.
 
-::: moniker range=">= azdevserver-2019 < azdevops"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### Can I update my v2 agents that are part of an Azure DevOps Server pool?
 

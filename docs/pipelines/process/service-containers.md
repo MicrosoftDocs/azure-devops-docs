@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: dakale
 ms.date: 01/14/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Service Containers
