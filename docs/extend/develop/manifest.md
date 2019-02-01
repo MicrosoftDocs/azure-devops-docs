@@ -573,6 +573,9 @@ Menus can be targeted by contributions of different types: action, hyperlink-act
 item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these
 types) that target that specific menu contribution.  
 
+### Adding a hub icon
+
+For information on adding an icon to your hub, check out the [hub icon guidance](web-navigation.md#hub-icon).
 
 <a name="approvedbadges"></a>
 
