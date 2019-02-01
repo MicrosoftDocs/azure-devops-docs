@@ -43,13 +43,13 @@ https://github.com/adventworks/net-sample
 
 # [GitHub repo](#tab/github)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 **TFS**: Does not apply.
 

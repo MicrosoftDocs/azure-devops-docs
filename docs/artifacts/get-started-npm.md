@@ -20,7 +20,7 @@ This quickstart guides you through using npm to store JavaScript packages in Azu
 
 ## Step 1: License the Azure Artifacts extension
 
-::: moniker range=">= tfs-2017 < azdevops" 
+::: moniker range=">= tfs-2017 < azure-devops" 
 
 ### Install Azure Artifacts in TFS
 
@@ -30,7 +30,7 @@ Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Art
 
 ::: moniker-end
 
-::: moniker range="azdevops" 
+::: moniker range="azure-devops" 
 
 ### Assign Azure Artifacts in Azure DevOps Services
 
@@ -58,7 +58,7 @@ If you have a Visual Studio Enterprise license, you already have access to Packa
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azdevops" 
+::: moniker range=">= tfs-2017 < azure-devops" 
 
 ### Assign licenses in TFS
 
@@ -90,7 +90,7 @@ In the dialog box:
 * **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm (registry.npmjs.org) and NuGet (packages.nuget.org) packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
 * When you're done, select **Create**.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -104,7 +104,7 @@ In the dialog box:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ![New feed dialog box](_shared/_img/new-feed-dialog.png)
 
@@ -122,7 +122,7 @@ We recommend that you use two .npmrc files:
 
 *	One .npmrc file should be at the root of your Git repo, adjacent to your project's package.json file. It should contain a "registry" line for your feed. It should not contain credentials, because it will be checked into Git. You can find the registry information for your feed from the **Connect to feed** button:
 
-    ::: moniker range="azdevops"
+    ::: moniker range="azure-devops"
 
     1. From **Azure Artifacts**, select **Connect to feed**.
 
@@ -150,7 +150,7 @@ We recommend that you use two .npmrc files:
         
     ::: moniker-end
 
-    ::: moniker range=">= tfs-2017 < azdevops"
+    ::: moniker range=">= tfs-2017 < azure-devops"
 
     1. From your **Packages** page, select **Connect to feed**.
 
@@ -198,7 +198,7 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
 1. Add a build pipeline in Azure DevOps Services under the **Pipelines** page.
 
-    ::: moniker range="azdevops"
+    ::: moniker range="azure-devops"
 
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
@@ -212,7 +212,7 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
     ::: moniker-end
 
-    ::: moniker range=">=tfs-2017 < azdevops"
+    ::: moniker range=">=tfs-2017 < azure-devops"
 
     ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
@@ -224,7 +224,7 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
 1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
 
-    ::: moniker range="azdevops"
+    ::: moniker range="azure-devops"
 
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
@@ -238,7 +238,7 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
     ::: moniker-end
 
-    ::: moniker range=">=tfs-2017 < azdevops"
+    ::: moniker range=">=tfs-2017 < azure-devops"
 
     ![Plus sign](_shared/_img/build-definition/add-task-build-definition.png)
 
@@ -250,7 +250,7 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
 1. Select the **npm install** task under **Agent job 1**:
 
-    ::: moniker range="azdevops"
+    ::: moniker range="azure-devops"
 
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
@@ -264,7 +264,7 @@ To set up npm authentication in a build task _without_ a task runner, use the fo
 
     ::: moniker-end
 
-    ::: moniker range=">=tfs-2017 < azdevops"
+    ::: moniker range=">=tfs-2017 < azure-devops"
 
     ![npm install task](_shared/_img/build-definition/build-definition-npm-install.png)
 
@@ -296,7 +296,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Add a build pipeline in Azure DevOps Services under the **Pipelines** page.
     
-    ::: moniker range="azdevops"
+    ::: moniker range="azure-devops"
 
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
@@ -310,7 +310,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
     ::: moniker-end
 
-    ::: moniker range=">=tfs-2017 < azdevops"
+    ::: moniker range=">=tfs-2017 < azure-devops"
 
     ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
@@ -322,7 +322,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
 
-    ::: moniker range="azdevops"
+    ::: moniker range="azure-devops"
 
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
@@ -336,7 +336,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
     ::: moniker-end
 
-    ::: moniker range=">=tfs-2017 < azdevops"
+    ::: moniker range=">=tfs-2017 < azure-devops"
 
     ![Plus sign](_shared/_img/build-definition/add-task-build-definition.png)
 
@@ -348,7 +348,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Select the **npm Authenticate** task under **Agent job 1**:
 
-    ::: moniker range="azdevops"
+    ::: moniker range="azure-devops"
 
     # [New navigation](#tab/new-nav)
     > [!div class="mx-imgBorder"] 
@@ -362,7 +362,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
     ::: moniker-end
 
-    ::: moniker range=">=tfs-2017 < azdevops"
+    ::: moniker range=">=tfs-2017 < azure-devops"
 
     ![npm Authenticate task](_shared/_img/build-definition/build-definition-npm-auth-task-phase.png)
 
@@ -383,7 +383,7 @@ In addition to packages that you publish, you can use packages from [www.npmjs.c
 
 You can choose to enable or disable upstream sources on the **Settings** > **Upstream sources** tab:
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -397,7 +397,7 @@ You can choose to enable or disable upstream sources on the **Settings** > **Ups
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azdevops"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ![Upstream sources](_shared/_img/upstream-sources-settings.png)
 

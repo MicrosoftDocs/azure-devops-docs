@@ -29,7 +29,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 
 ## Rich text field shortcuts
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 
@@ -46,7 +46,7 @@ You can use the following keyboard shortcuts when working in a web browser on on
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 

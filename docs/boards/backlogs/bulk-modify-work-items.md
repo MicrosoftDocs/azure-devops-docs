@@ -46,7 +46,7 @@ In this article you'll learn:
 ## Supported tasks
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 
 <table width="80%">
@@ -113,7 +113,7 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 > [!NOTE] 
 > To exercise the **Change work item type** or **Move work items to another project**, you must have [disabled the data warehouse](../../report/admin/disable-data-warehouse.md).   
@@ -332,7 +332,7 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Product backlog, Open context menu, Move several backlog items to a different iteration](_img/bulk-modify/move-iteration.png)
 ::: moniker-end  
@@ -373,7 +373,7 @@ To learn more about the *Assign To* and *Iteration Path* fields, see [Query by a
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 

@@ -10,7 +10,7 @@ ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Azure Policy Check Gate task

@@ -10,7 +10,7 @@ ms.author: sdanie
 author: steved0x 
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Browse code, download code  

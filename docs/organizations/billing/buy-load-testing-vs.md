@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Buy cloud-based load testing for Azure DevOps

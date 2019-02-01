@@ -31,7 +31,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 0. Select **Repos**, **Files**.
 

@@ -41,7 +41,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). 
 
@@ -67,7 +67,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -103,7 +103,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

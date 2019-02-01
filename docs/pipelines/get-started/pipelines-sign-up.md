@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 09/05/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Sign up for Azure Pipelines

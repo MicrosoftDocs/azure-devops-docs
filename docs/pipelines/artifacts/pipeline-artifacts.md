@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: amullans
 author: alexmullans
 ms.date: 10/29/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Pipeline artifacts in Azure Pipelines

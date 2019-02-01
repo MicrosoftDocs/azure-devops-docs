@@ -4,7 +4,7 @@ ms.topic: include
 
 To talk to Azure DevOps Services feeds, you'll need a token on your local machine that Maven can pick up and pass to Azure DevOps Services.  
 
-  ::: moniker range="azdevops"
+  ::: moniker range="azure-devops"
 
 1. From the **Azure Artifacts** page, select **Connect to Feed**.
 
@@ -20,7 +20,7 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
     
   ::: moniker-end
 
-  ::: moniker range=">= tfs-2018 < azdevops"
+  ::: moniker range=">= tfs-2018 < azure-devops"
 
 1. From the **Packages** page, select **Connect to Feed**.
     ![Connect to feed button on the upper right of the page](../_img/connect-to-feed.png)

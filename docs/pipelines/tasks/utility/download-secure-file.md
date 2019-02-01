@@ -11,7 +11,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
 ms.date: 12/07/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Download Secure File task

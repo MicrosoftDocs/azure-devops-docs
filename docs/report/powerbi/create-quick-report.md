@@ -8,7 +8,7 @@ ms.reviewer: romik
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
 ms.date: 12/04/2018
 ---
@@ -72,7 +72,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 	To learn more about defining views, see [Create an Analytics view](../analytics/analytics-views-create.md).  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 ## Connect to an Analytics view on Azure DevOps Server 
 
@@ -100,7 +100,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Connect to an Analytics view 
 

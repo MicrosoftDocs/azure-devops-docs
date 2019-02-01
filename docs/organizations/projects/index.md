@@ -48,7 +48,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 - [Create a project](create-project.md)
 - [Rename a project](rename-project.md)
 - [Delete a project](delete-project.md)
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 - [Restore a project](restore-project.md)
 ::: moniker-end
 - [Change service visibility](../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)

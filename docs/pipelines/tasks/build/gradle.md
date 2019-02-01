@@ -163,7 +163,7 @@ To fix errors such as `Read timed out` when downloading dependencies, users of G
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

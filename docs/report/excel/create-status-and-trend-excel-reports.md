@@ -9,7 +9,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azdevserver-2019'
+monikerRange: '<= azure-devops-2019'
 ms.date: 11/19/2018
 ---
 
@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 
 One of the quickest ways to generate a custom report in Excel is to start with a flat list query. You can generate both status and trend charts. Also, once you've build a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 >[!NOTE]  
 >This feature is available with Azure DevOps Server 2019 configured with SQL Server Analysis Services. 

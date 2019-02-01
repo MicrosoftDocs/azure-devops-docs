@@ -7,7 +7,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 11/20/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Package Management is now Azure Artifacts

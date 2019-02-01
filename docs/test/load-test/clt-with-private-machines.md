@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Run cloud-based load tests using your own machines

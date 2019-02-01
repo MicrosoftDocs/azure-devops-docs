@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: amullans
 ms.date: 12/07/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # NuGet Tool Installer task

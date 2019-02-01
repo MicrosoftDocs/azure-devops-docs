@@ -9,7 +9,7 @@ ms.topic: include
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 From any product, sprint, or portfolio backlog, you can drag a multi-selected list of work items and drop it onto a sprint in the **Planning** pane to change it's iteration path. (Not supported for users with **Stakeholder** access.)
 
 0. To open the **Planning** pane, choose the ![ ](/azure/devops/_img/icons/view-options-icon.png) view options icon and select **Planning**. You can choose to set **In Progress items** to On or Off. 
@@ -33,7 +33,7 @@ From any product, sprint, or portfolio backlog, you can drag a multi-selected li
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 From any backlog or board, you can drag a multi-selected list of work items and drop it onto a sprint to change it's iteration path. From a Kanban or taskboard, you can drag a single work item onto a sprint. (Not supported for users with **Stakeholder** access.)
 
 > [!div class="mx-imgBorder"]  
@@ -46,7 +46,7 @@ Child items of the work items whose iteration path you change are also updated w
 This feature requires TFS 2015.1 or later version.    
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

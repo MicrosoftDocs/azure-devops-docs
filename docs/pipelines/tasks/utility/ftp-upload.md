@@ -27,7 +27,7 @@ Use this task in a build or release pipeline to upload files to a remote machine
 
 None
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/FtpUploadV1.md)]
 ::: moniker-end

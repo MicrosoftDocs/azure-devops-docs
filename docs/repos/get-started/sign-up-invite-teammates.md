@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.date: 09/10/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Sign up for free and invite others to collaborate on your project

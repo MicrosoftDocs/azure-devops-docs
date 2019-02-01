@@ -60,13 +60,13 @@
         "test/**/**.md": "Azure Test Plans"
       },
       "monikerRange": {
-        "report/admin/**": "<= azdevserver-2019",
-        "report/analytics/**": ">= azdevserver-2019",
+        "report/admin/**": "<= azure-devops-2019",
+        "report/analytics/**": ">= azure-devops-2019",
         "report/excel/**": "<= tfs-2017",
-        "report/extend-analytics/**": ">= azdevserver-2019",
-        "report/powerbi/**": ">= azdevserver-2019",
+        "report/extend-analytics/**": ">= azure-devops-2019",
+        "report/powerbi/**": ">= azure-devops-2019",
         "report/sharepoint-dashboards/**": "<= tfs-2017",
-        "report/sql-reports/**": "<= azdevserver-2019",
+        "report/sql-reports/**": "<= azure-devops-2019",
         "work/tfs-ps-sync/**": "<= tfs-2015"
       },
       "ROBOTS":{
@@ -78,7 +78,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azdevops || >= tfs-2013 <= tfs-2018 || >= azdevserver-2019"
+        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
       }
     }
   }

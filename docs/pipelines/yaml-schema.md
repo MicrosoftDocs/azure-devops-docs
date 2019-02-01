@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 ms.reviewer: macoope
 ms.date: 01/23/2019
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # YAML schema reference

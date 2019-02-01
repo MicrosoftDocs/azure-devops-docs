@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 01/15/2019
 ms.topic: overview
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # What is Azure DevOps Services?

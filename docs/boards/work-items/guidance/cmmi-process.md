@@ -25,12 +25,12 @@ The CMMI process supports the following work item types (WITs) to plan and track
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional .  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]  
 > You can customize the work tracking system for your project based on the CMMI process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 > [!NOTE]  
 > The latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../../reference/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
@@ -86,11 +86,11 @@ To get started, you can open a shared query and create a chart based on your tra
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 <a id="reports"></a>
 ## SQL Server reports  
 

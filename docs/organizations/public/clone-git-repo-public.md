@@ -10,7 +10,7 @@ ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual
 ms.date: 09/19/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Clone a Git repository in a public project

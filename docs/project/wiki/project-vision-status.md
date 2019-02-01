@@ -30,7 +30,7 @@ If you want to use a project wiki, then you'll want to first [Create a Wiki for 
 From the project home page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file.
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]
 > The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../organizations/projects/create-project.md).  
@@ -51,8 +51,8 @@ From the project home page, share your project with your team, add project membe
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
-  Â   Â 
+::: moniker range=">= azure-devops-2019"
+      
 From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
@@ -79,7 +79,7 @@ To support your project mission, choose a README file that you maintain in a pro
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
 ![Open Project Summary, previous nav](_img/project-vision-status-project-home-page.png)  
@@ -95,7 +95,7 @@ To define a README file for your project, see [Initialize a README file for your
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
 ::: moniker-end
 
@@ -109,7 +109,7 @@ You can share your project and objective, as well as ways for team members to co
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. Open **Repos>Files**. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or initialize a repo.  
 
@@ -145,7 +145,7 @@ You can share your project and objective, as well as ways for team members to co
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="tfs-2018 || azdevops"
+::: moniker range="tfs-2018 || azure-devops"
 
 1. Open the Project home page.
 
@@ -183,7 +183,7 @@ You can share your project and objective, as well as ways for team members to co
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
 ::: moniker-end
 
@@ -197,7 +197,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. Open **Repos>Files**.
 
@@ -241,7 +241,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 1. Open the Project home page.
 
@@ -260,7 +260,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
 ::: moniker-end
 
@@ -272,7 +272,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 To add users to the project, choose the ![ ](_img/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
 > [!div class="mx-imgBorder"]
@@ -282,7 +282,7 @@ To add users to the project, choose the ![ ](_img/share-project/add-members-new-
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).   Â 
+To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).    
 
 ![Project Home Page, Activity](_img/project-home-page-activity.png)  
 
@@ -296,7 +296,7 @@ You can change the repository used to support your project vision, including poi
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. Open **Overview>Summary** .
 
@@ -323,7 +323,7 @@ You can change the repository used to support your project vision, including poi
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 1. From your project home page, choose **Change**.
 
@@ -341,7 +341,7 @@ You can change the repository used to support your project vision, including poi
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
 ::: moniker-end
 

@@ -8,7 +8,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/30/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Use npm audit
