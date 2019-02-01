@@ -75,7 +75,7 @@ from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]
   
    ![Complete the test run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create12.png)  
   
-   Now the results are stored in TFS.  
+   Now the results are stored in Azure DevOps or TFS.  
   
 ## Replay previous tests
   
