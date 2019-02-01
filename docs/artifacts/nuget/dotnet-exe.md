@@ -9,7 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 10/08/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Use dotnet with Azure Artifacts feeds

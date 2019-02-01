@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= azdevserver-2019'  
+monikerRange: '>= azure-devops-2019'  
 ms.date: 01/19/2019
 ---
 
@@ -23,14 +23,14 @@ You can control which services are available through the web portal by turning a
 
 ## Prerequisites
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 - You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 - To turn services on or off, you must [enable **New Navigation** preview feature](../../project/navigation/preview-features.md).
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 - You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 - 
@@ -65,13 +65,13 @@ If you disable **Boards**, you also disable [**Analytics views**](../../report/a
 
 ## Related articles
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [Change the project visibility, public or private](../public/make-project-public.md)
 - [About user, team, project, and organization-level settings](about-settings.md)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [About user, team, project, and collection-level settings](about-settings.md)
 ::: moniker-end

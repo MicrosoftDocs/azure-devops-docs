@@ -39,7 +39,7 @@ This example shows how to build a C++ project. To start, import (into Azure Repo
 https://github.com/adventworks/cpp-sample
 ```
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 ::: moniker-end

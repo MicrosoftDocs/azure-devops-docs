@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: moala
 author: raiyanalam
 ms.date: 12/18/2018
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Deploy pull request builds using Azure Pipelines

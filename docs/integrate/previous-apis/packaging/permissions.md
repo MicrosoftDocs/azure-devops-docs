@@ -6,7 +6,7 @@ ms.manager: jillfra
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 ms.topic: article
 ms.author: elbatk
 author: elbatk

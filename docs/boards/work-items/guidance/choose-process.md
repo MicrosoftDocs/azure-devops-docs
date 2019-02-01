@@ -24,7 +24,7 @@ Anytime you create a project, you must choose a process or process template base
 For details on creating a project using the process of your choice, see [Create a project](../../../organizations/projects/create-project.md). To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!TIP]  
 > To view and manage Inherited process models, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
@@ -39,7 +39,7 @@ The work tracking objects contained within the  default processes and process te
 
 <a id="template_intro"></a>
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ## Basic, Agile, Scrum, and CMMI
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
@@ -50,7 +50,7 @@ Scrum is the next most light-weight. Agile supports many Agile method terms, and
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 ## Agile, Scrum, and CMMI
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 

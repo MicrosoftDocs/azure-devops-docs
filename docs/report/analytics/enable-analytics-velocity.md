@@ -9,7 +9,7 @@ ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: ">= azdevserver-2019"
+monikerRange: ">= azure-devops-2019"
 ms.date: 12/05/2018 
 ---
 
@@ -27,7 +27,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Prerequisites
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 - You must have a project defined for an organization in Azure DevOps. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).  
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md).
@@ -37,7 +37,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 - You must have a project. If you don't have one, [add one now](../../organizations/projects/create-project.md). 
 - You must be a member of the project. If you haven't been added yet, [get added now](../../organizations/security/add-users-team-project.md).
@@ -74,7 +74,7 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 0. Connect to the web portal for your project and choose **Dashboards**.  
 
 	![Open Dashboards](../dashboards/_img/dashboards-go-to.png)
@@ -92,7 +92,7 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 1. 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
 ::: moniker-end

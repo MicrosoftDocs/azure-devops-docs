@@ -54,7 +54,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 
 # [New navigation](#tab/new-nav)  
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 0. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -152,7 +152,7 @@ If you're moving from one team to two teams, team members already have access to
 
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 > [!NOTE]   
 > You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
 ::: moniker-end 
@@ -171,7 +171,7 @@ Now that your two feature teams are configured, you'll want to move existing wor
 
 1.	The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
 
-	::: moniker range="azdevops"  
+	::: moniker range="azure-devops"  
 	> [!div class="mx-imgBorder"]  
 	>![Web portal, Queries page, Bulk modify select work items](_img/add-team/query-bulk-edit-area-path.png)
 	::: moniker-end  
@@ -180,7 +180,7 @@ Now that your two feature teams are configured, you'll want to move existing wor
 	::: moniker-end  
 2.	After you bulk modify, do a bulk save.  
 
-	::: moniker range="azdevops"  
+	::: moniker range="azure-devops"  
 	> [!div class="mx-imgBorder"]  
 	>![Bulk save edited work items](_img/add-team/query-bulk-save.png)
 	::: moniker-end  
@@ -195,7 +195,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 0. Open **Project Settings>Team Configuration** settings page for the default project team, and change the setting as shown.  
 	> [!div class="mx-imgBorder"]  
 	> ![New nav, default project team configuration, Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
@@ -243,7 +243,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 0. To delete a team, open **Project Settings>Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 	> [!div class="mx-imgBorder"]  
@@ -295,7 +295,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
 
-::: moniker range="tfs-2018 || azdevserver-2019" 
+::: moniker range="tfs-2018 || azure-devops-2019" 
 
 If your Azure DevOps Server or TFS deployment is integrated with SQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
 

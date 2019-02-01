@@ -97,7 +97,7 @@ In addition, all charts contain a Values selection designed to display a count o
  
 Create an  active bugs query and modify the column options to show Assigned To and State. Then, add a pivot chart that displays the assignments and state. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, pivot by assigned to and state](_img/numeric/config-pivot-items-developer.png)  
 ::: moniker-end
@@ -110,7 +110,7 @@ Create an  active bugs query and modify the column options to show Assigned To a
 
 Using the same flat-list query that filters for bugs shown in the previous section, you can show a count based on area. Modify the column options to show the Area Path. Then, add a pivot chart that displays the state and area path. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, pivot by state and area](_img/numeric/config-pivot-state-area.png)  
 ::: moniker-end
@@ -133,7 +133,7 @@ Create a query that filters for User Story as the work item type and modify the 
 
 Then, add a stacked bar chart that sums the Story Points. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, stacked bar, sum of story points](_img/numeric/config-psum-story-points-stacked-bar.png)  
 ::: moniker-end
@@ -157,7 +157,7 @@ Create a query that filters for User Story as the work item type and in the Acti
 
 Then, add a stacked area trend chart that sums the Story Points. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, trend, sum of story points](_img/numeric/config-trend-sum-story-points.png)  
 ::: moniker-end
@@ -187,7 +187,7 @@ If you follow Scrum practices and estimate Remaining Work for your tasks and bug
 
 Add Remaining Work as a column option to the query and save. To view a sum of the remaining work, add a pivot chart as shown. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, pivot, sum of remaining work per developer](_img/numeric/config-pivot-remaining-work-per-developer-area.png)  
 ::: moniker-end

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.manager: jillfra
 ms.author: kaelli
-monikerRange: '>=azdevserver-2019'
+monikerRange: '>=azure-devops-2019'
 author: KathrynEE
 ms.date: 11/01/2018
 ---

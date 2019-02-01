@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/17/2018  
 ---
 
@@ -49,7 +49,7 @@ If your published wiki corresponds to a product version, you can publish new ver
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 
 1. To create a new branch from the web portal, open the **Code > Branches** page, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the branch you have previously published, and select **New branch**.
 
@@ -70,7 +70,7 @@ If your published wiki corresponds to a product version, you can publish new ver
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
 ::: moniker-end
 

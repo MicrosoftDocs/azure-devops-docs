@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: ethomson
 author: ethomson
 ms.date: 12/20/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Migrate from Travis to Azure Pipelines

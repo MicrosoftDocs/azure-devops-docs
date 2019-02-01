@@ -179,7 +179,7 @@ Yes. If you are an existing customer with custom build processes you are not yet
 
 ![Configure XAML build controllers and agents](_img/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

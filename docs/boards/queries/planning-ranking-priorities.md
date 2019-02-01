@@ -182,7 +182,7 @@ The following table describes the fields that you can use to plan and prioritize
 
 The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](http://blogs.msdn.com/devops/2014/07/08/where-is-the-field-on-the-work-item-form-to-order-the-backlog.aspx).
 
-::: moniker range="azdevops"  
+::: moniker range="azure-devops"  
 To add the field to the form, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
 
 ::: moniker-end  

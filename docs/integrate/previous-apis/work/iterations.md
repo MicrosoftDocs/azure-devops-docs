@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < azdevops'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Iterations | REST API Reference for Team Foundation Server
 description: Work with team iterations programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 8a5b43ab-7d3c-4342-b738-65c310a556cc

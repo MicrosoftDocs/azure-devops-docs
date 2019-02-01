@@ -25,13 +25,13 @@ You can automatically provision virtual machines in a VMware environment and dep
 
 ## VMware connection
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 You need to first configure how Azure Pipelines connects to vCenter. You cannot use Microsoft-hosted agents to run VMware tasks since the vSphere SDK is not installed on these machines. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 
 ::: moniker-end
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 
 You need to first configure how TFS connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 

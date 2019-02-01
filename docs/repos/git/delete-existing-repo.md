@@ -37,7 +37,7 @@ Remove unused Git repos from your project when they are no longer needed.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 0. Select **Repos**, **Files**.
 

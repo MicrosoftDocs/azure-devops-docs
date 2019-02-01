@@ -1,6 +1,6 @@
 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <table>
 <tr valign="bottom">
@@ -94,7 +94,7 @@
 ::: moniker-end   
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 <table>
 <tr valign="bottom">

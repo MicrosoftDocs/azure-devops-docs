@@ -9,7 +9,7 @@ ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/2/2018
 ---
 
@@ -29,7 +29,7 @@ In this topic you'll learn:
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 >[!NOTE]
 >The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.

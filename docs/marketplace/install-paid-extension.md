@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Buy and install paid extensions

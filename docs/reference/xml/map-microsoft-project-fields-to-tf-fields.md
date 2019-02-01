@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '< azdevops'
+monikerRange: '< azure-devops'
 ms.date: 01/28/2019
 ---
 

@@ -39,7 +39,7 @@ From your web browser, open your product backlog.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
@@ -74,7 +74,7 @@ From your web browser, open your product backlog.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
@@ -95,7 +95,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ Users with **Stakeholder** access can only add work items to the end of the back
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Before you add work items, select the ![ ](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
 
@@ -154,7 +154,7 @@ Users with **Stakeholder** access can only add work items to the end of the back
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**.
 
@@ -164,7 +164,7 @@ Repeat this step until you capture all your main ideas.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -267,7 +267,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 	
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. From your team's backlog page, select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings. 
 
@@ -296,11 +296,11 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 1. On your team's backlog page, select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
 ::: moniker-end
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"   
+	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"   
 	![Backlog board, open team settings](_img/organize-backlog-open-ccdialog.png)  
 	::: moniker-end
 	::: moniker range="tfs-2015"  
@@ -321,10 +321,10 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 	On the Overview tab, select the team whose settings you want to configure, and then select **Settings**.  
 	::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 2. Select the **Working with bugs** tab, and select one of the three options available.  
 ::: moniker-end  
-	::: moniker range=">= tfs-2018 || azdevops"
+	::: moniker range=">= tfs-2018 || azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Open configuration settings](_img/create-backlog/settings-working-with-bugs.png)  
 	::: moniker-end
@@ -334,7 +334,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 	::: moniker range=">= tfs-2013 <= tfs-2015"  
 	<img src="../../organizations/settings/_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
-	::: moniker range=">= tfs-2013 <= tfs-2018 || azdevops"
+	::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 	* Select the first option when your team wants to manage bugs in a similar manner to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
 
 	* Select the second option when your team wants to manage bugs in a similar manner to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 
@@ -344,7 +344,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 0. To see the changes, refresh your backlog.
 	::: moniker-end  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

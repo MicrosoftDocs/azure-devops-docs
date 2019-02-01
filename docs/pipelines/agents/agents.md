@@ -25,7 +25,7 @@ To build your code or deploy your software you need at least one agent. As you a
 
 When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Microsoft-hosted agents
 
@@ -39,7 +39,7 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**. You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS). Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 > [!TIP]
 > Before you install a self-hosted agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
@@ -70,7 +70,7 @@ You can install the agent on Linux, macOS, or Windows machines. You can also ins
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Parallel jobs
 
@@ -80,7 +80,7 @@ You might need more parallel jobs to use multiple Microsoft-hosted or self-hoste
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azdevops"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ### Parallel jobs
 
@@ -108,13 +108,13 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 <h2 id="communication">Communication</h2>
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Communication with Azure Pipelines
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azdevops"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ### Communication with TFS
 
@@ -126,11 +126,11 @@ The agent communicates with Azure Pipelines or TFS to determine which job it nee
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azdevops"
+::: moniker range=">= tfs-2017 < azure-devops"
 ![Agent topologies](_img/agent-topologies-tfs.png)
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 ![Agent topologies](_img/agent-topologies-devops.png)
 ::: moniker-end
 
@@ -158,7 +158,7 @@ Here is a common communication pattern between the agent and TFS.
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ### Communication to deploy to target servers
 
@@ -189,7 +189,7 @@ To use a PAT with TFS, your server must be configured with HTTPS. See [Web site 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azdevops"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ### Integrated
 

@@ -24,7 +24,7 @@ Customize the view to track the branches you care most about so you can stay on 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 
@@ -116,7 +116,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
 

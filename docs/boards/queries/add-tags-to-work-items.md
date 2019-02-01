@@ -30,7 +30,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]   
 > Users with **Stakeholder** access for public projects are allowed to add new tags. 
 ::: moniker-end
@@ -58,7 +58,7 @@ To add several tags at one time, type a comma between tags. Tags are case sensit
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 > [!NOTE]   
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
@@ -220,7 +220,7 @@ Simply save the work item with the tags (100 or less) that you've added, and the
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 ### Add tags to the default column view on the product backlog 
 

@@ -10,7 +10,7 @@ ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
 ms.date: 12/10/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Improve pull request descriptions using templates

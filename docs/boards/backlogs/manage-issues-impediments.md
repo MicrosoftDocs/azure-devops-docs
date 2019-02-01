@@ -43,7 +43,7 @@ In this topic you'll learn:
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
@@ -60,7 +60,7 @@ Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
@@ -76,7 +76,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 ## Customize issues tracking
 
 [!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end
 

@@ -40,7 +40,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -71,7 +71,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 > Reordering cards is supported on TFS 2015.1 and later versions.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azdevops"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -93,7 +93,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 

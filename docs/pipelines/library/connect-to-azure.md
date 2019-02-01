@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 ## Create an Azure Resource Manager service connection using automated security
 

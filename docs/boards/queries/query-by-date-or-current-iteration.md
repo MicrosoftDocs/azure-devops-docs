@@ -24,7 +24,7 @@ For example, you can find work items that were modified in the last 3 days with 
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
 ::: moniker-end
 
@@ -105,7 +105,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
@@ -130,7 +130,7 @@ Prior to creating or updating a query to use the **@CurrentIteration** macro, ma
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="current-iteration-plus-minus-n">  </a>
 ## Query for items based on a sliding window of team iterations 

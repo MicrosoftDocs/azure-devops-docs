@@ -10,7 +10,7 @@ ms.author: ahomer
 author: alexhomer1
 ms.custom: seodec18
 ms.date: 08/28/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 
 # Package Docker-based apps in Helm charts in Azure Pipelines

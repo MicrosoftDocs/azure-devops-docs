@@ -484,7 +484,7 @@ These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipel
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< azdevops"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

@@ -15,7 +15,7 @@ ms.date: 01/08/2018
 ---
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 # Move, change, or delete work items 
 
 [!INCLUDE [temp](../_shared/azure-boards.md)]
@@ -37,7 +37,7 @@ You can't change the work item type for an existing work item, but you can [copy
 
 In this article you'll learn:  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="checklist"]    
 > * How to change the work item type of one or more work items   
@@ -75,7 +75,7 @@ You only have access to those actions that are supported on your platform and fo
 
 You can access the following actions for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 <table>
 <tbody valign="top">
@@ -105,7 +105,7 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 <table>
 <tbody valign="top">
@@ -136,7 +136,7 @@ You can access the following actions for which you have permissions. If you are 
 1. You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](/azure/devops/report/analytics/index) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../report/admin/disable-data-warehouse.md). 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
 
@@ -218,7 +218,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 
 ## Prerequisites  
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -234,7 +234,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -270,7 +270,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="change-type"> </a>  
 ## Change the work item type 
@@ -345,7 +345,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="move"> </a>  
 ## Move a work item to another project  
@@ -384,7 +384,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 
 <a id="delete"> </a> 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 
 ## Delete work items  
@@ -460,7 +460,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 <a id="restore" />
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Restore or permanently delete work items   
 
 You restore deleted work items from the web portal Recycle bin. 

@@ -37,7 +37,7 @@ The basic steps to update wiki content offline are as follows:
 
 ## Prerequisites
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Do the following to migrate Markdown pages from another wiki to your team project wiki or to content that you publish as code to a wiki.
 
@@ -80,7 +80,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azdevops&tabs=visual-studio)
+	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azure-devops&tabs=visual-studio)
 
 ## Add pages to your local Git repository
 
@@ -166,7 +166,7 @@ If there are any errors in the process, the pages appear in your wiki with a war
 	<img src="_img/wiki/wiki-offline-updated.png" alt="Wiki pages appear after updating the pages offline" style="border: 1px solid #C3C3C3;" />
 
 In the web portal, you can view the repo files based on the following URL: 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 	`https://*AccountName*.visualstudio.com/DefaultCollection/*ProjectName*/_git/*ProjectName*.wiki`
 ::: moniker-end
 ::: moniker range=">= tfs-2018"

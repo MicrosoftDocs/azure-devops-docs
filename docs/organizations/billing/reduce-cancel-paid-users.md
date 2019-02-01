@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/14/2018
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ---
 # Change the number of paid users in your organization
 

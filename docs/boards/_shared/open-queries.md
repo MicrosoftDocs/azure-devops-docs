@@ -5,7 +5,7 @@ ms.topic: include
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
  
@@ -25,7 +25,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="azdevops"
+::: moniker range="azure-devops"
 From your web browser, (1) select the project, choose (2) **Work**, (3) **Queries**, and then (4) **All**.
 
 > [!div class="mx-imgBorder"]  
@@ -44,7 +44,7 @@ From your web browser, open **Boards>Queries**.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 **Previous navigation** isn't supported for Azure DevOps Server 2019. Choose **New navigation** for guidance.
 
 ::: moniker-end

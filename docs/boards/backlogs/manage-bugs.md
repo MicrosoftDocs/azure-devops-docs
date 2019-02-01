@@ -47,7 +47,7 @@ Or, you can define a bug from the [web portal](add-work-items.md), Visual Studio
 
 You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query, **Active Bugs** (Agile and CMMI) or **Work in Progress** (Scrum). For other bug related tasks, see the following articles:  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - [View, run, or email a work item query](../../boards/queries/view-run-query.md)
 - [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
 - [Triage work items](../../boards/queries/triage-work-items.md)
@@ -332,7 +332,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
   
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ### Use the Analytics service to create bug reports
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
@@ -341,7 +341,7 @@ You can use Power BI to create more complex reports than what you can get from a
 
 
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 
 
 ### Pre-defined SQL Server bug reports

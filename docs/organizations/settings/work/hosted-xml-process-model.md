@@ -8,7 +8,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azdevops'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
