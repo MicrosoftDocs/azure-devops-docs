@@ -258,7 +258,7 @@ Or, to build using the **.NET Core** task:
     #verbosityRestore: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
 ```
 
-For more information about the .NET Core task, see [Build: .NET Core CLI](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=vsts).
+For more information about the .NET Core task, see [Build: .NET Core CLI](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli).
 
 You can run any `dotnet` command in your pipeline. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
 
