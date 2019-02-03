@@ -17,7 +17,7 @@ steps:
 - powershell: .\build.ps1
 - task: CopyFiles@2
   inputs:
-    contents: _buildOutput\**
+    contents: '_buildOutput\**'
     targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
