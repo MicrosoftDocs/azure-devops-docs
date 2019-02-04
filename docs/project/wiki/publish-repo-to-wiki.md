@@ -283,6 +283,10 @@ Page-4
 Misc content
 ```
 
+## Promote folder to page
+
+For a folder to be a page as well, there should be a markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
+
 ## Try this next
 
 > [!div class="nextstepaction"]
