@@ -17,7 +17,7 @@ ms.date: 08/29/2018
 
 **Azure DevOps**
 
-WIT and Test Client OM are part of the broader TFS SDK. They are a set of SOAP based APIs that cat be used to create tools to run operations against the Azure DevOps. These SOAP based APIs have been replaced by the set of modern REST based endpoints. Therefore we are in the process of deprecating the SOAP based APIs (Client OM) for WIT and Test.
+WIT and Test Client OM are part of the broader TFS SDK. They are a set of SOAP based APIs that can be used to create tools to run operations against the Azure DevOps. These SOAP based APIs have been replaced by the set of modern REST based endpoints. Therefore we are in the process of deprecating the SOAP based APIs (Client OM) for WIT and Test.
 
 > [!NOTE]  
 > In May of 2018 [we announced the deprecation](https://blogs.msdn.microsoft.com/devops/2018/05/21/announcing-the-deprecation-of-the-wit-and-test-client-om-at-jan-1-2020-2/) of the WIT and Test Client OM for Azure DevOps. For Azure DevOps Services, deprecation is schedule to take effect on 1/1/2020. For Azure DevOps Server, deprecation is schedule to take effect in the 2020 release.
