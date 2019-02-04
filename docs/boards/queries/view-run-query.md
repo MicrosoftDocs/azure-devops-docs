@@ -177,7 +177,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Perform an adhoc search](search-box-queries.md) 
+> [Perform an ad hoc search](search-box-queries.md) 
 
 #### Related topics
 

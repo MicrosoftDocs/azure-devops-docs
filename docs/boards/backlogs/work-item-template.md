@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 12/20/2018
+ms.date: 02/04/2019
 ---
 
 # Use templates to add and update work items 
@@ -30,7 +30,7 @@ With work item templates you can quickly create work items which have pre-popula
 ::: moniker range=">= azure-devops-2019"
 
 - To add, capture, or edit work item templates through the web portal, you must be a member of the team under which you add them. 
-- To apply a team template, you must be a Contributor of the project or be granted Stakeholder access.
+- To apply a team template, you must be a Contributor of the project.
 
 ::: moniker-end
 
@@ -76,7 +76,8 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"  
+
 0. From the web portal, open a work item which you'll use as the basis for a template.  
 	
 	Within the web portal, work item templates are associated with a team. Only those templates defined for a team are accessible when working in a team context, either through a work item form or bulk update context menu.
@@ -113,7 +114,8 @@ If you connect to an on-premises TFS and primarily create work items working in 
 
 3. The URL defines each predefined field, for example (line breaks added for clarity): 
 	
-	```
+	> [!div class="tabbedCodeSnippets"]
+	```URL
 	http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber/_workItems/create/Task?%5B
    System.AssignedTo%5D=Jamal+Hartnett&%5B
    System.Description%5D=%3Cp%3EAlways+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.%3C%2Fp%3E&%5B
@@ -491,6 +493,71 @@ If you don't specify tags to remove, then all tags present in a work item will r
  
 ::: moniker-end
 
+<a id="adhoc-template"> </a>
+## Define an ad hoc work item template using a hyperlink 
+
+You can specify a work item template that specifies several field values using the following syntax. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. 
+
+::: moniker range="azure-devops"
+
+> [!div class="tabbedCodeSnippets"]
+```URL
+http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/{WorkItemType}?
+[FieldReferenceName 1]={FieldValue 1}&
+[FieldReferenceName 2]={FieldValue 2}&
+[FieldReferenceName 3]={FieldValue 3}&
+. . .
+```
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+> [!div class="tabbedCodeSnippets"]
+```URL
+http://{ServerName}:8080/tfs/DefaultCollection/{ProjectName}/_workItems/create/{WorkItemType}?
+[FieldReferenceName 1]={FieldValue 1}&
+[FieldReferenceName 2]={FieldValue 2}&
+[FieldReferenceName 3]={FieldValue 3}&
+. . .
+```
+
+::: moniker-end
+
+
+For example, the following syntax specifies a work item task with title *TaskTitle*, and specifies values for the Assigned To, Description, Tags, Activity, and Iteration Path fields. 
+
+::: moniker range="azure-devops"
+> [!div class="tabbedCodeSnippets"]
+```URL
+http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/Task?
+[System.Title]=TaskTitle&
+[System.AssignedTo]=Jamal+Hartnett&
+[System.Description]=<p>Always+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.</p>&
+[System.Tags]=Web;+Phone;+Service&
+[Microsoft.VSTS.Common.Activity]=Development&
+[System.IterationPath]=Fabrikam+Fiber%5CIteration+1
+``` 
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+> [!div class="tabbedCodeSnippets"]
+```URL
+http://{ServerName}:8080/tfs/DefaultCollection/{ProjectName}/_workItems/create/Task?
+[System.AssignedTo]=Jamal+Hartnett&
+[System.Description]=<p>Always+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.</p>&
+[System.Tags]=Web;+Phone;+Service&
+[Microsoft.VSTS.Common.Activity]=Development&
+[System.IterationPath]=Fabrikam+Fiber%5CIteration+1
+``` 
+
+::: moniker-end
+
+> [!TIP] 
+> There is a 2000 character limit recognized by browsers. 
+
+You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
 
 
 ## Q & A
