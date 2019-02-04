@@ -34,7 +34,7 @@ You can use work items to track anything you need to track. Each work item repre
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
 - You can [assign a work item](#assign) to one and only one project member 
 - You [assign work items to a sprint](#assign-to-sprint) via the iteration path
-- You can use [adhoc search or queries to find or list work items](#queries)  
+- You can use [ad hoc search or queries to find or list work items](#queries)  
 - You can [use work item templates](#templates) to quickly fill in work item fields
 - Teams can [choose how they track bugs](#track), either as requirements or as tasks
 - You or a project administrator can [add and customize work item types](#customize)
@@ -49,7 +49,7 @@ You can use work items to track anything you need to track. Each work item repre
 - You can [assign a work item](#assign) to one and only one project member 
 - You [assign work items to a sprint](#assign-to-sprint) via the iteration path
 - Teams can [choose how they track bugs](#track), either as requirements or as tasks
-- You can use [adhoc search or queries to find or list work items](#queries)  
+- You can use [ad hoc search or queries to find or list work items](#queries)  
 - You can [use work item templates](#templates) to quickly fill in work item fields
 - You can [add and customize work item types and your backlog](#customize)
 - [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access. 
@@ -185,12 +185,12 @@ For an overview of all team settings, see [Manage teams and configure team tools
 <a id="queries" />
 ## Find or list work items 
 
-You can use the search box to perform an adhoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
+You can use the search box to perform an ad hoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
 - [Create managed queries to list, update, or chart work items ](../queries/example-queries.md)  
 - [View, run, or email a query](../queries/view-run-query.md)  
-- [Adhoc vs managed queries](../queries/adhoc-vs-managed-queries.md)  
+- [Ad hoc vs managed queries](../queries/ad hoc-vs-managed-queries.md)  
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />

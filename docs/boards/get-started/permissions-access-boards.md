@@ -26,7 +26,7 @@ In the tables provided in this article, a ![ ](/azure/devops/_img/icons/checkmar
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. 
 
-For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://visualstudio.microsoft.com/vsts/compare-features/). To assign or change an access level, see [Add users and assign licenses](../../organizations/accounts/add-organization-users.md). If you need to [grant specific users select permissions](../../organizations/security/change-individual-permissions.md), you can do so.
+For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../../organizations/accounts/add-organization-users.md). If you need to [grant specific users select permissions](../../organizations/security/change-individual-permissions.md), you can do so.
 
 ## General work item feature access
 
