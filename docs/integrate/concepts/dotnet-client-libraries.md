@@ -84,3 +84,46 @@ You can find detailed, up-to-date reference documentation in the [Azure DevOps S
 ## Samples
 
 You can check out samples on our [.NET Samples Page](../get-started/client-libraries/samples.md) or directly on our [.NET GitHub Repo](https://github.com/Microsoft/vsts-dotnet-samples).
+
+## Known issues
+
+### Interactive authentication dialog does not appear when using the Azure DevOps OM in a Single Threaded Apartment (STA)
+
+There is a known issue that prevents the interactive authentication dialog from appearing in cases where your code is running from a [Single Threaded Apartment](https://docs.microsoft.com/en-us/windows/desktop/com/single-threaded-apartments) (STA).  This can commonly occur from [WPF](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/wpf-architecture) applications.  To work aorund this issue, you can change your initialization method to be async and request authentication as in the following example:
+
+```
+async void InitAzureDevOps()
+{
+    Uri _uri = new Uri("https://dev.azure.com/MyAccount/");
+
+    var creds = new VssClientCredentials(new WindowsCredential(false),
+                                         new VssFederatedCredential(false),
+                                         CredentialPromptType.PromptIfNeeded);
+
+    VssConnection vssConnection = new VssConnection(_uri, creds);
+    await vssConnection.ConnectAsync();
+
+    ...
+
+}
+```
+
+### Using NetStandard 2.0 versions of the Azure DevOps OM
+
+Currently our NetStandard 2.0 versions of our binaries are in preview and thus will only be found in our preview NuGet packages.  When referening our NuGet packages you may get warnings that some of our dependencies may not be fully compatable with your project.  
+
+Unfortunately we have some dependencies that do not have specific binaries built for NetStandard for the version we need.  The good news is that portable binaries are fully compatible with NetStandard, and they do supply portable versions of their binaries in their NuGet packages.  You just need to add a fallback in your project file, so it knows which one to prefer.
+
+```
+<PropertyGroup>
+  <AssetTargetFallback>$(AssetTargetFallback);portable-net451+win8</AssetTargetFallback>
+</PropertyGroup>
+```
+
+You may still get warnings, but these warnings can be suppressed.
+
+We have updated our dependencies in our latest code branch, which updates the Microsoft.AspNet.WebApi.Client to a later version, which has full support for NetStandard.  This also removes our dependencies on the other two packages you are getting warnings for.  These packages will be should be available someitme in March 2019.   Once you reference these new packages, you can remove the AssetTargetFallback, and the warning suppression.
+
+### Microsoft.TeamFoundationServer.ExtendedClient package does not have NetStandard support
+
+The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) currently does not support a NetStandard compliant version. This package includes our older SOAP object model, which has been replaced by our newer REST object model.  At this point we are no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.
