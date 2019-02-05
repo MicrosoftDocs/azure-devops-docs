@@ -4,7 +4,7 @@
   items:
   - name: About managed queries
     href: example-queries.md
-  - name: Adhoc vs managed queries
+  - name: Ad hoc vs managed queries
     href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Start using Azure Boards
     href: ../get-started/index.md
@@ -12,7 +12,7 @@
   items:
   - name: View, run, or email a query 
     href: view-run-query.md
-  - name: Adhoc search
+  - name: Ad hoc search
     href: search-box-queries.md
 - name: Tutorials
   items:
@@ -59,6 +59,8 @@
     href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Add tags to work items
     href: add-tags-to-work-items.md
+  - name: Use work item templates
+    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: "Filter backlogs & queries"
     href: ../backlogs/filter-backlogs.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Copy list of work items 

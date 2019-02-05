@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 12/17/2018
+ms.date: 02/01/2018
 ---
 
 # Quickstart: Share your project mission, view project activity
@@ -52,7 +52,7 @@ From the project home page, share your project with your team, add project membe
 # [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"
-      
+
 From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
@@ -135,7 +135,7 @@ You can share your project and objective, as well as ways for team members to co
    > [!div class="mx-imgBorder"]  
    > ![Edit the README file, new nav](_img/share-project/edit-readme-file.png)  
 
-   You're directed to the **Repos>Files** page for the README file. You can edit and modify the READMEMarkdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../wiki/markdown-guidance.md).
+   You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../wiki/markdown-guidance.md).
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ For projects that selected TFVC for version control, the README.md file needs to
    > [!div class="mx-imgBorder"]  
    > ![Add new file dialog, new nav](_img/share-project/create-readme-file-web-portal.png)
 
-6. Add the contents of your README file inMarkdown format, and then choose **Check in...**.  
+6. Add the contents of your README file in Markdown format, and then choose **Check in...**.  
 
    > [!div class="mx-imgBorder"]  
    > ![Enter README file contents, new nav](_img/share-project/tfvc-readme-file.png)
@@ -282,7 +282,7 @@ To add users to the project, choose the ![ ](_img/share-project/add-members-new-
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).    
+To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
 ![Project Home Page, Activity](_img/project-home-page-activity.png)  
 

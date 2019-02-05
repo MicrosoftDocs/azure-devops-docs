@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an adhoc search using the [search box](search-box-queries.md). 
+A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
 
 With queries, you can perform these functions: 
 
@@ -35,10 +35,10 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 ## Getting started 
 
-If you are looking for a specific work item, use the adhoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
+If you are looking for a specific work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
 - [View and run a query](view-run-query.md)   
-- [Perform an adhoc search](search-box-queries.md)  
+- [Perform an ad hoc search](search-box-queries.md)  
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)  
 - [Organize and run managed queries](organize-queries.md)  

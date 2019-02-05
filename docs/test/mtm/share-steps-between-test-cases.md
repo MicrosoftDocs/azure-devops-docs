@@ -39,7 +39,7 @@ Now you can use the shared steps in another test case:
   
 ![Use shared steps in test cases.](_img/share-steps-between-test-cases/almt_ws32usesharedsteps.png)  
   
-A TFS query opens. Run it to find the steps you want to insert:  
+An Azure DevOps or TFS query opens. Run it to find the steps you want to insert:  
   
 ![Run the query to find shared steps](_img/share-steps-between-test-cases/almt_ws33sharedstepquery.png)  
   

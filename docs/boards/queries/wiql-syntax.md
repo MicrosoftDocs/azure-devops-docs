@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 02/04/2019
 ---
 
 
@@ -455,6 +455,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
 - [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md) 
+- [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ### Limits on WIQL length  

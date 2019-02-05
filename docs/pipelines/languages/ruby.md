@@ -69,7 +69,7 @@ To use Bundler to install dependencies, add the following snippet to your `azure
 
 ```yaml
 - script: |
-    gem install bundler
+    CALL gem install bundler
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 ```
