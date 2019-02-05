@@ -76,7 +76,7 @@ public class ExecuteQuery
     /// Execute a WIQL query to return a list of bugs using the .NET client library
     /// </summary>
     /// <returns>List of Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>
-    public List<WorkItem> RunGetBugsQueryUsingClientLib()
+    public async List<WorkItem> RunGetBugsQueryUsingClientLib()
     {
         Uri uri = new Uri(_uri);
         string personalAccessToken = _personalAccessToken;
@@ -99,7 +99,7 @@ public class ExecuteQuery
         using (WorkItemTrackingHttpClient workItemTrackingHttpClient = new WorkItemTrackingHttpClient(uri, credentials))
         {
             //execute the query to get the list of work items in the results
-            WorkItemQueryResult workItemQueryResult = workItemTrackingHttpClient.QueryByWiqlAsync(wiql).Result;
+            WorkItemQueryResult workItemQueryResult = await workItemTrackingHttpClient.QueryByWiqlAsync(wiql);
 
             //some error handling                
             if (workItemQueryResult.WorkItems.Count() != 0)
@@ -119,7 +119,7 @@ public class ExecuteQuery
                 fields[2] = "System.State";
 
                 //get work items for the ids found in query
-                var workItems = workItemTrackingHttpClient.GetWorkItemsAsync(arr, fields, workItemQueryResult.AsOf).Result;
+                var workItems = await workItemTrackingHttpClient.GetWorkItemsAsync(arr, fields, workItemQueryResult.AsOf);
 
                 Console.WriteLine("Query Results: {0} items found", workItems.Count);
 
