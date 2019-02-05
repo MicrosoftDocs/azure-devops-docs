@@ -91,7 +91,7 @@
 **Notes:**
 1. Public project Stakeholders have full access to all features. 
 
-::: moniker-end   
+::: moniker-end  
 
 
 ::: moniker range="<= azure-devops-2019"
@@ -171,4 +171,4 @@
 </tbody>
 </table>
 
-::: moniker-end   
+::: moniker-end  

@@ -62,11 +62,11 @@ Permissions are set at the collection, project, and object level as described in
 	> ![Security tab, User name, Members tab](_img/view-permissions/project-level-member-of-permissions-vsts.png)  
 
 
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"      
+::: moniker range="<= tfs-2018"    
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -154,11 +154,11 @@ Open admin settings for the organization or a project collection.
 
 0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"      
+::: moniker range="<= tfs-2018"    
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)

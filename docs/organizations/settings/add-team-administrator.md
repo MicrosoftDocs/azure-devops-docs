@@ -67,7 +67,7 @@ From the web portal, open the admin page for the team.
 	> [!div class="mx-imgBorder"]
 	> ![Add team administrator dialog](_img/add-team-admin/add-team-admin-dialog.png)
    
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  

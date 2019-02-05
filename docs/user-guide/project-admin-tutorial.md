@@ -32,7 +32,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 - [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users.md)
 - [Manage user access through Azure Active Directory](../organizations/accounts/access-with-azure-ad.md)
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
@@ -68,7 +68,7 @@ If you decide that you want to delegate specific tasks to others, then you'll wa
 ::: moniker range="azure-devops"  
 Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md).
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range=">= tfs-2015"  
 Each project has a summary page where you can share information through **README files**. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md).
@@ -86,14 +86,14 @@ This example shows that **Test Plans** has been disabled:
 > [!div class="mx-imgBorder"]
 > ![Disable a service](_img/services/set-service-visibility.png)
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range=">= tfs-2015"  
 ## Set code, test, and other policies 
 
 There are several policies you can set to support collaboration across your teams, secure your projects, and automatically remove files that are no longer needed. To set policies, review the following articles: 
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range="azure-devops"  
 - [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)
@@ -101,14 +101,14 @@ There are several policies you can set to support collaboration across your team
 - [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
 - [Set test retention policies](../test/how-long-to-keep-test-results.md) 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
 - [Set test retention policies](../test/how-long-to-keep-test-results.md) 
-::: moniker-end   
+::: moniker-end  
 
 
 ## Define area and iteration paths for work tracking
@@ -123,7 +123,7 @@ If you support several products or feature areas, you can assign work items by f
 
 
 ::: moniker range="azure-devops"
-   
+  
 ## Customize work-tracking processes
 
 You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. Although you can customize the process easily through the user interface, you'll want to establish a methodology for who will manage the updates and evaluate requests.
@@ -137,7 +137,7 @@ To learn more, see the following articles:
 - [Customize a project](../organizations/settings/work/customize-process.md)  
 - [Add and manage processes](../organizations/settings/work/manage-process.md)
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range="<= tfs-2018"
 
@@ -147,7 +147,7 @@ You and your teams can start using all work-tracking tools immediately after you
 
 To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md). 
 
-::: moniker-end   
+::: moniker-end  
 
 ## Review and update notifications
 
@@ -170,7 +170,7 @@ If users believe they're getting too many notifications, they can [opt out of a 
 
 In order for team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
 
-::: moniker-end   
+::: moniker-end  
 
 ## Add teams to scale your organization
 
@@ -185,7 +185,7 @@ To learn more, see the following articles:
 - [Add a team administrator](../organizations/settings/add-team-administrator.md)  
 
 ::: moniker range=">= tfs-2015"
-   
+  
 ## Install and manage extensions 
 
 An extension is an installable unit that adds new capabilities to your projects. You can find extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab to support the following functions:
@@ -201,7 +201,7 @@ An extension is an installable unit that adds new capabilities to your projects.
 
 For example, to support [code search](../project/search/code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range=">= tfs-2015"  
 You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization owner, a member of the Project Collection Administrators group, or added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
