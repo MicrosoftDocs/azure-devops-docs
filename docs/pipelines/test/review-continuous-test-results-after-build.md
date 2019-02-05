@@ -84,10 +84,8 @@ such as the error message, stack trace, attachments, work items, historical tren
 
 ![View details tab](_img/review-continuous-test-results-after-build/view-tests-tab.png)
 
-If you use the Visual Studio Test task to run tests, diagnostic output logged from tests (using any of Console.WriteLine,
-Trace.WriteLine or TestContext.WriteLine methods), will appear as an attachment for a failed test.
-
-![View failed test attachments](_img/review-continuous-test-results-after-build/attachments.png)
+> [!TIP]
+> If you use the Visual Studio Test task to run tests, diagnostic output logged from tests (using any of Console.WriteLine, Trace.WriteLine or TestContext.WriteLine methods), will appear as an attachment for a failed test.
 
 The following capabilities of the **Tests** tab help to improve productivity and troubleshooting experience.
 
