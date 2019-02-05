@@ -82,11 +82,11 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 4. When done, choose **Save changes**. 
 
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"      
+::: moniker range="<= tfs-2018"    
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -141,11 +141,11 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 3. Save your changes.  
 
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"      
+::: moniker range="<= tfs-2018"    
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)

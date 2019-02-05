@@ -98,11 +98,11 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 0. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"      
+::: moniker range="<= tfs-2018"    
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -195,11 +195,11 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	> [!NOTE]   
 	> You can't change the permission settings for the Project Collection Administrators group. This is by design. 
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"      
+::: moniker range="<= tfs-2018"    
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end    
 
 # [Previous navigation](#tab/previous-nav)
 
@@ -249,7 +249,7 @@ For on-premises deployments, see these additional topics:
 - [Add a user as a TFS server administrator](/tfs/server/admin/add-administrator-tfs) 
 - [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs)  
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range="tfs-2018 < azure-devops"
 
