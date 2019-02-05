@@ -32,7 +32,15 @@ Before you read this topic, you should understand the kind of build pipeline you
 # [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
+[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)] Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, and **feedName** is the feed that you want to publish to:
+
+```yaml
+- task: Npm@1
+  inputs:
+    command: publish
+    publishRegistry: useFeed
+    publishFeed: feedName
+```
 
 To publish to an external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry.
 

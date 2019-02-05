@@ -264,7 +264,7 @@ In this example, we grant members assigned to the team administrator role, who b
 > [!div class="mx-imgBorder"]  
 > ![Set project-level permissions for a custom group, Team Admin](_img/set-permissions-project-level-dialog.png)  
 
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range=">= tfs-2017"
 
@@ -283,7 +283,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 ![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range=">= azure-devops-2019"
 

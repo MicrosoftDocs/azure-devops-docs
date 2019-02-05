@@ -45,7 +45,7 @@ You can plan and track work from the web portal **Boards** hub, and using Eclips
 
 ::: moniker range="azure-devops"
 Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
 ## Work tracking
@@ -171,19 +171,19 @@ You can define and manage your builds and releases from the web portal, **Build 
 ::: moniker range=">= tfs-2015"  
 From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
 >  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![ ](/azure/devops/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
-::: moniker-end   
-   
+::: moniker-end  
+  
 ::: moniker range=">= azure-devops-2019"
 [!INCLUDE [temp](_shared/pipelines.md)]
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range=">= tfs-2015 <= tfs-2018"   
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 [!INCLUDE [temp](_shared/build-release.md)]
 ::: moniker-end
 
@@ -227,16 +227,16 @@ You can manage feeds from the web portal, **Build and release > Packages**.  Fee
 ## Dashboards and charts
 
 You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range="azure-devops"
 Users granted Stakeholder access to private projects can't view or create query charts. Stakehoder access to public projects can view and create query charts.
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range=">= tfs-2015"
 [!INCLUDE [temp](_shared/report.md)]
 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019" 
 

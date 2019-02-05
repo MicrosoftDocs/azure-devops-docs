@@ -22,6 +22,8 @@ You can find the [full list of available REST clients and their references here]
 
 ## Call an API
 
+> You'll have to add the scope `"scopes": ["vso.work"],` to your `vss-extension.json` to use the work item tracking client.
+
 [!INCLUDE [REST](../_shared/procedures/call-rest-api-js.md)]
 
 ## Try this next
