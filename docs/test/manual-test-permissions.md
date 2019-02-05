@@ -16,7 +16,26 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header](_shared/version-header.md)]
 
+Azure Test Plans uses an extension called [Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web),
+which is available from Visual Studio Marketplace.
+
 ## License requirements
+
+**Visual Studio Enterprise, Visual Studio Test Professional, and MSDN Platforms subscribers** have access to use this extension. These users do not require
+an additional license, and can acquire this extension on their organization or collection for free
+(see [Compare Visual Studio subscriptions](https://www.visualstudio.com/vs/pricing) for details).
+ 
+**Non-subscribers** must purchase licenses to use this extension. This can be for any specified number of users.
+
+**Notes:**
+
+* Manual testers do not need this extension and can 
+  [execute tests as a Basic user](https://docs.microsoft.com/en-us/azure/devops/test/manual-test-permissions?view=azure-devops#license-requirements)
+  in an Azure DevOps organization or collection.
+
+* This extension cannot be assigned to Stakeholders.
+
+* Licenses for this extension also gives users rights to use [Microsoft Test Manager](https://docs.microsoft.com/en-us/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) (a deprecated on-premises client).
 
 This table describes the license requirements in more detail:
 
@@ -30,11 +49,6 @@ This table describes the license requirements in more detail:
 | Assign test cases to suites, move test cases, and order tests cases | Test Manager license |
 | Prepare for execution such as assigning configurations or testers | Test Manager license | 
 | Prepare User Acceptance Testing | Test Manager license |
-
-To obtain a Test Manager license, you must have either an [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/),
-[Test Professional](https://visualstudio.microsoft.com/vs/test-professional/), or [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
-subscription; or have installed the [Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-available from Visual Studio Marketplace.
 
 ## Access by user role
 
