@@ -117,7 +117,7 @@ Check out the [script YAML task reference](../yaml-schema.md#script) for the sch
 * Script:
 
    ```
-   twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}
+   twine upload -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) dist/*
    ```
 
 ---

@@ -80,9 +80,12 @@ This page has the following sections
 ![View tests tab](_img/review-continuous-test-results-after-build/view-tests-tab-2.png)
 
 Select any test run or result to view the details pane that displays additional information required for troubleshooting
- such as the error message, stack trace, attachments, work items, historical trend, and more.
+such as the error message, stack trace, attachments, work items, historical trend, and more.
 
 ![View details tab](_img/review-continuous-test-results-after-build/view-tests-tab.png)
+
+> [!TIP]
+> If you use the Visual Studio Test task to run tests, diagnostic output logged from tests (using any of Console.WriteLine, Trace.WriteLine or TestContext.WriteLine methods), will appear as an attachment for a failed test.
 
 The following capabilities of the **Tests** tab help to improve productivity and troubleshooting experience.
 

@@ -33,7 +33,7 @@ To learn more about administrative tasks see [About user, team, project, and org
 In the tables provided in this article, a ![ ](/azure/devops/_img/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
 
 
-For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://visualstudio.microsoft.com/vsts/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
+For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
 
 
 <a id="agile-tools-and-work-tracking" />

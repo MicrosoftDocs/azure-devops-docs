@@ -1,7 +1,7 @@
 ---
 title: Markdown syntax for files, widgets, and wikis in Azure DevOps
 titleSuffix: Azure DevOps 
-description: Learn how to share information, add tables & mathematical notation usingMarkdown within pull requests, README files, dashboards, and wikis  
+description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 12/19/2018
+ms.date: 02/01/2019
 ---
 
 # Syntax guidance for Markdown usage
@@ -46,7 +46,7 @@ You can provide guidance in the following areas using Markdown:
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
-> Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. TheMarkdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity inMarkdown rendering in Wiki and MD files in code.
+> Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. The Markdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity in Markdown rendering in Wiki and MD files in code.
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ You can provide guidance in the following areas using Markdown:
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
-> With TFS 2017.1, welcome pages, theMarkdown widget on team dashboards, and the Definition of Done on Kanban boards no longer supports file links in theirMarkdown. As a workaround, you can include your file link as text in the Markdown.
+> With TFS 2017.1, welcome pages, the Markdown widget on team dashboards, and the Definition of Done on Kanban boards no longer supports file links in their Markdown. As a workaround, you can include your file link as text in the Markdown.
 
 ::: moniker-end  
 
@@ -190,17 +190,17 @@ Combine these elements to apply emphasis to text.
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE]  
-> There is noMarkdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
+> There is no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> There is noMarkdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
+> There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 > [!NOTE]  
-> There is noMarkdown syntax that supports underlining text.
+> There is no Markdown syntax that supports underlining text.
 ::: moniker-end
 
 **Example:**
@@ -534,7 +534,7 @@ You can Use `[ ]` or `[x]` to support checklists. You need to precede the checkl
 After you've added a task list, you can check the boxes to mark items as completed. These are expressed and stored within the comment as [ ] and [x] in Markdown.
 
 > [!div class="mx-imgBorder"]  
-> ![ApplyMarkdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png)
+> ![Apply Markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png)
 
 **Example - Format a list as a task list**
 
@@ -586,7 +586,7 @@ In pull request comments, you can use emojis to add characters and react to comm
 
 **Result:**  
 
-![Emojis inMarkdown](../../repos/git/_img/pull-requests/emoji-markdown.png)
+![Emojis in Markdown](../../repos/git/_img/pull-requests/emoji-markdown.png)
 
 To escape emojis, enclose them using the \` character.
 

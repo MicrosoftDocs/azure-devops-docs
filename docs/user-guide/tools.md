@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/01/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -124,7 +124,7 @@ To monitor your applications, you can use Azure Application Insights for web app
 
 #### Monitor web applications with Application Insights
 
-Application Insights is an extensible application performance management (APM) service for web developers. Use it to monitor your live web application. It automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms&mdash;including .NET, Node.js, and J2EE&mdash;hosted on-premises or in the cloud.  
+Application Insights is an extensible application performance management (APM) service for web developers. Use it to monitor your live web application. It automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms&mdash;including .NET, Node.js, and Java EE&mdash;hosted on-premises or in the cloud.  
 
 With Application Insights, you can do the following:
 

@@ -21,6 +21,9 @@ screenshots, video, logs, and attachments is often useful to help troubleshoot f
 
 ## Collect screenshots, logs, and attachments
 
+This example demonstrates how you can collect screenshots when using MSTest.
+It does not apply if you are using NUnit or XUnit test frameworks.
+
 1. Add the file you want to include in the test results as a **TestResult** file. 
 
    ```csharp
