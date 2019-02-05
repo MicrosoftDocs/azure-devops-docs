@@ -7,7 +7,7 @@ ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 09/10/2018
+ms.date: 02/05/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -57,7 +57,7 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
     ![Assign extension](_img/assign-extension.png)
 
-	You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
+	You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions. Ensure that any users you add in excess of what you've paid for, already have a license.
 
 # [Previous navigation](#tab/previous-nav)
 
