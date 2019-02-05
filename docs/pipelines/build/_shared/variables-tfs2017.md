@@ -20,6 +20,11 @@ ms.topic: include
 </tr>
 
 <tr>
+<td>Agent.ComputerName</td>
+<td>The name of the machine on which the agent is installed.</td>
+</tr>
+
+<tr>
 <td>Agent.HomeDirectory</td>
 <td>The directory the agent is installed into. This contains the agent software. For example: `c:\agent`.</td>
 </tr>
@@ -40,11 +45,6 @@ ms.topic: include
     </ul>
 <p>The environment variable should be referenced as <code>AGENT_JOBSTATUS</code>. The older <code>agent.jobstatus</code> is available for backwards compatibility.</p>
 </td>
-</tr>
-
-<tr>
-<td>Agent.MachineName</td>
-<td>The name of the machine on which the agent is installed.</td>
 </tr>
 
 <tr>
