@@ -114,8 +114,7 @@ If you connect to an on-premises TFS and primarily create work items working in 
 
 3. The URL defines each predefined field, for example (line breaks added for clarity): 
 	
-	> [!div class="tabbedCodeSnippets"]
-	```URL
+	```
 	http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber/_workItems/create/Task?%5B
    System.AssignedTo%5D=Jamal+Hartnett&%5B
    System.Description%5D=%3Cp%3EAlways+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.%3C%2Fp%3E&%5B

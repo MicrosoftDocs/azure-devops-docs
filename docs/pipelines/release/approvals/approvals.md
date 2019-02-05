@@ -39,7 +39,10 @@ how to define and use approvals, see [Add approvals within a release pipeline](.
    and enable post-deployment approvers.
 
 You can add multiple approvers for both pre-deployment and post-deployment settings.
-These approvers can be individual users or groups of users.
+These approvers can be individual users or groups of users. These users must have the
+[View releases](../../policies/permissions.md#release-permissions) permission.
+
+
 When a group is specified as an approver, only one of the users in that group needs to approve
 for the deployment to occur or the release to move forward.
 

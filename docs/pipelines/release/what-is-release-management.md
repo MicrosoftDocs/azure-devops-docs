@@ -167,6 +167,23 @@ After you finish editing the draft release, choose **Start** from the draft rele
 
 ![Start a draft release](_img/what-is-release-management/start-draft.png)
 
+<a name="draftrelease"></a>
+## When and why would I abandon a release?
+
+After you create a [release](releases.md), you can use it to redeploy the artifacts
+to any of the stages defined in that release.
+This is useful if you want to perform regular manual releases, or set up a 
+continuous integration [stage trigger](triggers.md#env-triggers)
+that redeploys the artifacts using this release.
+
+If you do not intend to reuse the release, or want to prevent it being used to redeploy the artifacts,
+you can abandon the release using the shortcut menu that opens from the elipses (**...**) icon in the
+**Pipeline** view of the pipeline.
+
+![Abandoning a release](_img/what-is-release-management/abandon-release.png)
+
+Note that you cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
+
 ## Related topics
 
 * [Download Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs)

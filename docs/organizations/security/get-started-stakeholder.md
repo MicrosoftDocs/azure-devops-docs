@@ -118,7 +118,7 @@ You can start viewing and adding work items once you connect to a project.
 	![Agile process, User story work item form](../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png)
 
 > [!NOTE]  
-> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.       
+> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.     
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -169,7 +169,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	![Agile process, User story work item form](../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png)
 
 	> [!NOTE]  
-	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.       
+	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.     
 ::: moniker-end
 
 ::: moniker range="tfs-2017 || tfs-2018"
@@ -185,7 +185,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	> [!NOTE]  
 	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. 
 	
-	Work items you add are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).      
+	Work items you add are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).    
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
@@ -420,7 +420,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
 0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
@@ -439,7 +439,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
 0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).  
-::: moniker-end      
+::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
 
