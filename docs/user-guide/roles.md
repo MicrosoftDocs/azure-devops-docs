@@ -107,7 +107,7 @@ Responsible for configuring project-level resources, including:
 - [Project permissions and repository security](../organizations/security/permissions.md)  
 - [Build agents, pools, and service connections](../pipelines/overview.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
-::: moniker-end   
+::: moniker-end  
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -116,7 +116,7 @@ Responsible for configuring project-level resources, including:
 - [Customizing work tracking objects](../reference/customize-work.md)  
 - [Build agents, pools, and service connections](../pipelines/overview.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
-::: moniker-end   
+::: moniker-end  
 
 ::: moniker range="azure-devops"
 
