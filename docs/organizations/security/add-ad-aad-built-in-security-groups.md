@@ -34,7 +34,7 @@ The method for adding a user or group to a built-in security group is the same, 
 ::: moniker range="azure-devops"
 > [!IMPORTANT]  
 > If you are adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
-::: moniker-end      
+::: moniker-end    
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
@@ -73,11 +73,11 @@ The method for adding a user or group to a built-in security group is the same, 
 	> you can't browse to it or check the friendly name.
 	> After the identity has been added, you can just type the friendly name.
 
-::: moniker-end      
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"      
+::: moniker range="<= tfs-2018"    
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end      
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)

@@ -22,18 +22,18 @@ ms.date: 12/04/2018
 
 ::: moniker range="azure-devops" 
 You can get a list of users and groups that have access to your organization in Azure DevOps by exporting the audit log. The audit log also indicates which access level has been granted.
-::: moniker-end     
+::: moniker-end    
 
 ::: moniker range="<= azure-devops-2019" 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.
-::: moniker-end     
+::: moniker-end    
 
 
 
 ## Prerequisites
 ::: moniker range="azure-devops" 
 * You must be the organization owner or a member of the Project collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
-::: moniker-end     
+::: moniker-end    
 ::: moniker range="<= azure-devops-2019" 
 * You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/tfs/server/admin/add-administrator-tfs).
 ::: moniker-end 
