@@ -79,7 +79,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range=">= tfs-2015"  
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
-::: moniker-end   
+::: moniker-end  
 
 # [New navigation](#tab/new-nav)  
 
@@ -145,7 +145,7 @@ You can configure most of your team settings from the common configuration dialo
 	![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
 	::: moniker-end  
 
-::: moniker-end   
+::: moniker-end  
 
 
 ::: moniker range="azure-devops-2019"
@@ -208,10 +208,10 @@ For details on each configuration option, see one of these topics:
 </tbody>
 </table>
 
-::: moniker-end   
+::: moniker-end  
 
 
-::: moniker range="tfs-2015"      
+::: moniker range="tfs-2015"    
 
 For details on each configuration option, see one of these topics:  
 
@@ -261,7 +261,7 @@ For details on each configuration option, see one of these topics:
 </table>
 
 
-::: moniker-end   
+::: moniker-end  
 
 
 

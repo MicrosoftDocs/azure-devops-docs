@@ -155,7 +155,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   &$expand=Children
 ```
 
-and will fail if you don€™t have access to all projects.
+and will fail if you don't have access to all projects.
 	
 To workaround the restriction, you need to add an extra expression in the `$filter`:
 
@@ -172,7 +172,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 ```
 
-Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item€™s ProjectName using $it alias, which isn€™t supported:
+Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item's ProjectName using $it alias, which isn't supported:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
