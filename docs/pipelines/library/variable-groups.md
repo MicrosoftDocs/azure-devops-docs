@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 01/14/2019
+ms.date: 02/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -99,16 +99,12 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 ::: moniker range="> tfs-2018"
 
-You can add a variable group by opening your build or release pipeline, selecting the **Variables**
-tab, selecting **Variable groups**, and then choosing **Link variable group**.
-Then, reference it in your variables mapping:
+You can add a variable group by referencing it in your YAML file:
 
 ```yaml
 variables:
 - group: my-variable-group
 ```
-
-Alternatively, you can simply add the code shown in the example above to your YAML file. 
 
 If you use both variables and variable groups, you'll have to use `name`/`value` syntax for the individual (non-grouped) variables:
 

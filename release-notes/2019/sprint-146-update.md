@@ -153,7 +153,7 @@ The previous version of the **Query Azure Monitors task** supported querying ale
 
 ### Inline input of spec file in Deploy to Kubernetes task
 
-Previously, the Kubernetes deployment task required you to provide a file path for the configuration. . Now you can add the configuration inline as well.
+Previously, the Kubernetes deployment task required you to provide a file path for the configuration. Now you can add the configuration inline as well.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/146_14.png)

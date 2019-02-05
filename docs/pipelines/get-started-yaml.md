@@ -73,7 +73,7 @@ Many developers like to show that they're keeping their code quality high by dis
 
 To copy the status badge to your clipboard:
 
-1. In Azure Pipelines, go to the Build page to view the list of pipelines.
+1. In Azure Pipelines, go to the Builds page to view the list of pipelines.
 
 1. Select the pipeline that was created for you.
 
