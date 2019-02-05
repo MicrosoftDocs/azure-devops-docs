@@ -106,7 +106,7 @@ The two contribution points are:
     Sometimes you may want to perform an action like updating an API's data or running custom tools using metadata from your test results. With this contribution point, you can create extensions which use the immediate context of the selected test result to add a custom action to the **Custom Action*- button.
 
     > [!div class="mx-imgBorder"]
-    ![Badge](_img/147_05.png)
+    > ![Badge](_img/147_05.png)
 
 2. **Custom Details Tab in the details pane**
 

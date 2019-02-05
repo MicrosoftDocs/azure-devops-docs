@@ -77,7 +77,6 @@ or immediately start a deployment. For example:
   defined for a stage, and the deployment will not occur until all
   necessary approvals have been granted.
 
-* Approvers may defer the release to a stage until a specified date and time using a
-  [scheduled trigger](triggers.md#env-triggers).
+* Approvers may defer the release to a stage until a specified date and time.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
