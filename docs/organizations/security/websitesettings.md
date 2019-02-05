@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 ---
 # TFS web site settings and security
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [version-tfs-2013-2017](../../_shared/version-tfs-2013-2017.md)]
 
 ## Background
 
