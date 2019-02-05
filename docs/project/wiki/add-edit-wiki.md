@@ -1,5 +1,5 @@
 ---
-title: Add, edit, or print wiki pages in Azure DevOps
+title: Add, edit, reorder and manage wiki pages in Azure DevOps
 titleSuffix: Azure DevOps  
 description: Learn how to add, edit, reorder, and manage pages for your built-in project wiki in Azure DevOps.  
 ms.prod: devops
