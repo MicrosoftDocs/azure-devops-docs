@@ -17,7 +17,7 @@ You can use the following keyboard shortcuts from the web portal.
 &nbsp;&nbsp;**?**&nbsp;&nbsp;&nbsp;Show shortcuts<br/>
 &nbsp;&nbsp;**p**&nbsp;&nbsp;&nbsp;Projects and teams<br/>
 <br/>
-**g,h**&nbsp;&nbsp;&nbsp;Go to [**Dashboards**](/azure/devops/report/dashboards/dashboards)<br/>
+**g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](/azure/devops/project/navigation/go-to-project-repo)<br/>
 **g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards** or **Work**](/azure/devops/boards/get-started/what-is-azure-boards)<br/>
 **g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos** or **Code**](/azure/devops/repos/git/overview)<br/>
 **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](/azure/devops/pipelines/overview)<br/>

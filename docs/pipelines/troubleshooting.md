@@ -4,7 +4,7 @@ description: Learn how to troubleshoot builds and releases in Azure Pipelines an
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chrispat
 ms.reviewer: chrispat
 ms.custom: seodec18
@@ -50,7 +50,7 @@ Start by looking at the logs in your completed build or release. If they don't p
 
 ### Diagnostic logs
 
-0. On the build summmary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
+0. On the build summary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
 
 0. Queue the build.
 
@@ -192,7 +192,7 @@ Running the agent as a service may help to eliminate programs from prompting for
 Analyzing a dump of the process can help to identify what a deadlocked process is waiting on.
 
 ### WiX project
-Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutofProc=true` will workaround the issue.
+Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
 
 ## Line endings for multiple platforms
 
@@ -234,7 +234,7 @@ This error may indicate the agent lost communication with the server for a span 
 
 * Verify automatic updates are turned off. A machine reboot from an update will cause a build or release to fail with the above error. Apply updates in a controlled fashion to avoid this type of interruption. Before rebooting the agent machine, the agent should first be marked disabled in the pool administration page and let any running build finish.
 * Verify the sleep settings are turned off.
-* If the agent is running on a virtual machine, avoid any live migration or other VM maintenance operation that may severly impact the health of the machine for multiple minutes.
+* If the agent is running on a virtual machine, avoid any live migration or other VM maintenance operation that may severely impact the health of the machine for multiple minutes.
 * If the agent is running on a virtual machine, the same operating-system-update recommendations and sleep-setting recommendations apply to the host machine. And also any other maintenance operations that several impact the host machine.
 * Performance monitor logging or other health metric logging can help to correlate this type of error to constrained resource availability on the agent machine (disk, memory, page file, processor, network).
 * Another way to correlate the error with network problems is to ping a server indefinitely and dump the output to a file, along with timestamps. Use a healthy interval, for example 20 or 30 seconds. If you are using Azure Pipelines, then you would want to ping an internet domain, for example bing.com. If you are using an on-premises TFS server, then you would want to ping a server on the same network.
@@ -246,7 +246,7 @@ This error may indicate the agent lost communication with the server for a span 
 #### TFS Job Agent not started
 This may be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
 
-#### Misconfigured notifcation URL (1.x agent version)
+#### Misconfigured notification URL (1.x agent version)
 This may be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
 
 A mismatching notification URL may cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.

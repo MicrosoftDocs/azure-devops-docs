@@ -4,7 +4,7 @@ ms.assetid: f7aca1ca-9898-26b4-c0c0-538a23089553
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk
@@ -22,7 +22,7 @@ Module path: `TFS/DistributedTask/Contracts`
 
 * `keySelector`: string. An Json based keyselector to filter response returned by fetching the endpoint Url.A Json based keyselector must be prefixed with &quot;jsonpath:&quot;. KeySelector can be used to specify the filter to get the keys for the values specified with Selector.  The following keyselector defines an Json for extracting nodes named &#x27;ServiceName&#x27;.  endpoint.KeySelector = &quot;jsonpath://ServiceName&quot;;
 
-* `scope`: string. The scope as understood by Connected Services. Essentialy, a project-id for now.
+* `scope`: string. The scope as understood by Connected Services. Essentially, a project-id for now.
 
 * `selector`: string. An XPath/Json based selector to filter response returned by fetching the endpoint Url. An XPath based selector must be prefixed with the string &quot;xpath:&quot;. A Json based selector must be prefixed with &quot;jsonpath:&quot;.  The following selector defines an XPath for extracting nodes named &#x27;ServiceName&#x27;.  endpoint.Selector = &quot;xpath://ServiceName&quot;;
 

@@ -6,7 +6,7 @@ ms.custom: "boards-queries, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
@@ -21,14 +21,14 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 <!---
 ## Overview  
-* [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
+* [Ad hoc vs managed queries](ad hoc-vs-managed-queries.md) 
 
 -->
  
 ## 5-Minute Quickstarts  
 
 - [View, run, or email a query](view-run-query.md)
-- [Perform an adhoc search (search box query)](search-box-queries.md)
+- [Perform an ad hoc search (search box query)](search-box-queries.md)
 
 ## Step-by-Step Tutorials
 

@@ -5,7 +5,7 @@ description: Manage large groups of users by adding AD/Azure AD groups to built-
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -31,16 +31,16 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ## Add an AD/Azure AD user or group to a built-in security group 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > [!IMPORTANT]  
 > If you are adding a user to Azure DevOps for the first time, see [Add users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
-::: moniker-end  
+::: moniker-end    
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -73,16 +73,16 @@ The method for adding a user or group to a built-in security group is the same, 
 	> you can't browse to it or check the friendly name.
 	> After the identity has been added, you can just type the friendly name.
 
-::: moniker-end  
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -117,7 +117,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

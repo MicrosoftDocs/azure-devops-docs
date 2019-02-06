@@ -5,7 +5,7 @@ description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, refe
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 ms.date: 05/08/2018
 monikerRange: '>= tfs-2015'
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Deploy to Azure
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]

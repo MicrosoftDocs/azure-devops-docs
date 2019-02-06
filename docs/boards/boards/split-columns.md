@@ -7,7 +7,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.author: kaelli
@@ -31,6 +31,8 @@ When split, each column contains two sub-columns, Doing and Done.
 Split columns lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item.  
 
 By contrast, with split columns, your team knows exactly how many items sit idle, waiting for work to begin. You now have greater visibility into the quantity of items that sit idle at each stage throughout your workflow process. 
+
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
 
 ## Push items into Done, pull items into Doing 
 
@@ -63,7 +65,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -94,7 +96,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
@@ -138,7 +140,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
    
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

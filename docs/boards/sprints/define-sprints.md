@@ -6,11 +6,11 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -22,7 +22,16 @@ ms.date: 11/19/2018
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
 You define sprints to correspond to the cadence your team uses. 
 
-Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.    
+Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.  
+
+
+## Prerequisites
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* To modify work tracking project configuration, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must be added to a project as a member of the **Project Administrators** security group. To get added, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md). 
+* Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**.  By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+
 
 <a id="quick-start-schedule">   </a>
 ## Quick start guide to scheduling sprints
@@ -33,7 +42,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 
 0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -70,7 +79,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -96,7 +105,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 	<img src="_img/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]
-	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../../organizations/settings/set-team-defaults.md). To switch team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md). 
+	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). To switch team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md). 
 
 2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
 
@@ -106,7 +115,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -130,9 +139,9 @@ Of course, if you have several teams, more complex release and sprint cadences t
 
 Your project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, you'll want to assign start and end dates for the sprints your team will use.   
 
-Defining additional sprints is a two-step process. You first define the sprints for your project&mdash;[Define project iterations](../../organizations/settings/set-area-paths.md)&mdash;and then you select the sprints that each team will use&mdash;[Select team sprints](../../organizations/settings/set-team-defaults.md). In this way, the system supports teams that work on different sprint cadences.  
+Defining additional sprints is a two-step process. You first define the sprints for your project and then you select the sprints that each team will use&mdash;[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). In this way, the system supports teams that work on different sprint cadences.  
 
-[![Define project sprints](_img/define-sprints-project-level.png)](../../organizations/settings/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../../organizations/settings/set-team-defaults.md)
+[![Define project sprints](_img/define-sprints-project-level.png)](../../organizations/settings/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../../organizations/settings/set-iteration-paths-sprints.md)
 
 Each sprint that you select for your team provides access to a [sprint backlog, taskboard, and other sprint planning tools](scrum-sprint-planning-tools.md) for planning and tracking work. 
 
@@ -140,7 +149,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 
 ![Selected sprints for a team](_img/define-sprints/selected-team-iterations-agile.png)
 
@@ -154,14 +163,14 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 ![Selected sprints for a team](_img/define-sprints/selected-team-iterations-vsts.png)
 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -172,10 +181,10 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Assign work to a sprint](assign-work-sprint.md) or [Define iterations for your project](../../organizations/settings/set-iteration-paths-sprints.md) 
+> [Assign work to a sprint](assign-work-sprint.md) or [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Related articles 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../../organizations/settings/set-team-defaults.md).  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's[default area path and iteration path.  
 
 
 

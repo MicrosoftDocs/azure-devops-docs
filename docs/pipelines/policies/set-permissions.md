@@ -6,7 +6,7 @@ ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/1/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Set build and release permissions
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 

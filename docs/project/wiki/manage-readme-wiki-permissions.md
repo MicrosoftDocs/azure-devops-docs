@@ -7,7 +7,7 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
@@ -15,17 +15,11 @@ ms.date: 11/19/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Manage README and Wiki permissions
+# Manage Wiki permissions
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
 
-By default, all members of the Contributors group can edit README files and Wiki pages.
-
-<a id="manage-readme-permissions"></a>
-
-## Manage README permissions
-
-You can manage the permissions for README files by [setting permissions on the repository](../../organizations/security/set-git-tfvc-repository-permissions.md).
+By default, all members of the Contributors group can edit Wiki pages.
 
 ::: moniker range=">= tfs-2018"
 
@@ -43,7 +37,7 @@ By default, all project contributors have read and edit access of the wiki repos
 
 ::: moniker range=">=tfs-2018"
 
-To open the Security dialog, choose **More>Security** on the wiki home page.
+To open the Security dialog, choose **More > Wiki Security**.
 
 > [!div class="mx-imgBorder"]  
 > ![Wiki, Choose More, select security](_img/wiki/wiki-open-security.png)

@@ -1,11 +1,11 @@
 ---
 title: Administer code, wiki and workitem search
-description: Setup notes and administration links for Microsoft Code, Wiki & Work Item Search in Azure DevOps and Team Foundation Server (TFS)
+description: Setup notes and administration links for Microsoft Code, Wiki & Work Item Search in Azure DevOps Services and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Set up and administer Code Search, Wiki Search and Work Item Search
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 In this topic:
 
@@ -22,15 +22,15 @@ In this topic:
   - [Install Search extension in Azure DevOps Services](#config-ts-azuredevops)
   - [Uninstall Search extension in Azure DevOps Services](#uninstall-ts-azuredevops)<p />
 
-* **Configure Search (Code, Work Item and Wiki) in Team Foundation Server(TFS)**
-  - [Install Search extension in TFS](#install-tfs)
-  - [Configure Search in TFS](#config-tfs)
-  - [Secure Search in TFS](#secure-search)
-  - [Upgrade Search in TFS](#upgrading-search)
-  - [Manage Search in TFS](#manage-tfs)
-  - [Uninstall Search in TFS](#uninstall-tfs)
-  - [Limitations of Search in TFS](#limit-tfs)
-  - [Troubleshoot Search in TFS](#trouble-tfs)
+* **Configure Search (Code, Work Item and Wiki) in Team Foundation Server (TFS)**
+  - [Install Search extension](#install-tfs)
+  - [Configure Search](#config-tfs)
+  - [Secure Search](#secure-search)
+  - [Upgrade Search](#upgrading-search)
+  - [Manage Search](#manage-tfs)
+  - [Uninstall Search](#uninstall-tfs)
+  - [Limitations of Search](#limit-tfs)
+  - [Troubleshoot Search](#trouble-tfs)
 
 Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
 and [TFS requirements and compatibility](/tfs/server/requirements).
@@ -57,7 +57,7 @@ For Code Search, see [Uninstall or disable an extension](../../marketplace/unins
 in the Marketplace documentation. 
 
 <a name="install-tfs"></a>
-## Install Search extension in TFS
+## Install Search extension
 
 Code Search is available in TFS 2017 and later.
 Work Item Search is available in TFS 2017 Update 2 and later.
@@ -73,7 +73,7 @@ Non-administrative users can also go here to request the extension be added to T
 For more details, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Marketplace documentation.
 
 <a name="config-tfs"></a>
-## Configure Search in TFS
+## Configure Search
 
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
@@ -83,7 +83,7 @@ afterwards by running the TFS Configuration Wizard again or launching the Search
 ### Hardware recommendations
 
 Search can be used on any size physical server or virtual machine that runs 
-TFS 2017 or above. It can be configured on the same server as TFS,
+TFS 2017 or above. It can be configured on the same server as the TFS,
 or on a separate server dedicated to Search.
 When configuring Search on the same server as TFS,
 you must consider the existing CPU utilization
@@ -131,7 +131,7 @@ as part of the configuration:
 
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Oracle Server JRE](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html) Java runtime environment (see Note 3)
+* [Azul Zulu OpenJDK](https://www.azul.com/downloads/zulu/zulu-windows/) (see Java installation notes below)
 * [Markdowndeep](http://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](http://www.antlr.org/) language recognition parser
@@ -140,11 +140,11 @@ as part of the configuration:
  
 1. A modified version of Elasticsearch ships with TFS. 
    Search will work only with this version of Elasticsearch.  
-1. A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation.
+2. A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation.
    Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
-1. The system or TFS administrator must ensure that Server JRE is
+3. The system or TFS administrator must ensure that Server JRE is
   maintained and updated in line with the software provider's recommendations. 
-  Also see the [installation notes](#java-notes) that follow.
+  Also see the [Java installation notes](#java-notes) that follow.
 
 <a name="java-notes"></a>
 #### Java installation notes
@@ -169,7 +169,7 @@ of the **JAVA\_HOME** variable may cause other installed software to fail.
 If there is a version of Server JRE **equal to or later** than the minimum required 
 by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
-the **[Java troubleshooting guide](http://docs.oracle.com/javase/7/docs/webnotes/tsg/)**,
+the **[Zulu Installation Guide](http://docs.azul.com/zulu/zuludocs/index.htm)**,
 and then rerun the configuration wizard. 
 
 If you cannot install the version of Java required by Search due to other dependencies, you can:
@@ -179,13 +179,20 @@ If you cannot install the version of Java required by Search due to other depend
 
 * Install Search and Java on a [separate server](#separate-server) from TFS.
 
->Search does not use or support any of the commercial features
-of Server JRE 8 as outlined [here](http://www.oracle.com/technetwork/java/javase/terms/products/index.html).
-Therefore, during Search configuration on TFS 2017,
-the commercial features of the Server JRE are not activated or unlocked.
-See the Oracle documentation for examples of unlocking the commercial features of
-[Java 7](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html)
-or [Java 8](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html). 
+> [!NOTE]
+> * Search does not use or support any of the commercial features of Server JRE 8. Therefore, during Search configuration on TFS,
+the commercial features of the Server JRE are neither activated nor unlocked.
+> * TFS Search will support both Azul Zulu OpenJDK and Oracle JRE, allowing you to choose between them based on your needs.
+> * If you choose to continue with Oracle JRE, then please contact Oracle for a [Java SE Subscription](https://www.oracle.com/java/java-se-subscription.html), 
+so that you can continue to receive JRE updates. If you choose to use Azul Zulu OpenJDK, please visit Zulu OpenJDK [downloads](https://www.azul.com/downloads/zulu/zulu-windows/) for updates.
+> * Existing users of TFS Search can easily switch from Oracle JRE to Azul Zulu OpenJDK without incurring any TFS downtime 
+in a few simple steps, as explained in the diagram below. You can find detailed step-by-step guidance based on the TFS version 
+[here](https://github.com/msftazdev/Code-Search/tree/master/Java%20Migration).
+![Java Migration flow](_img/administration/java-migration-flow.png)
+> * Note that from the release of TFS (Azure DevOps Server 2019), 
+customers selecting installation of Java during install time will be defaulted to Azul Zulu OpenJDK 8.
+
+
 
 ### Installation considerations
 
@@ -260,9 +267,9 @@ follow these steps:
 1. As you install TFS on the primary server, set the **Install and configure Search** checkbox 
    in the **Search** page of the TFS Configuration Wizard.
 
-1. Select the option to **Use an existing Search Service**. 
+1. Select the option to **Use an existing Search service**. 
 
-1. Use the **Search Service package** link provided in the wizard to access a set of Search installer files 
+1. Use the **Search service package** link provided in the wizard to access a set of Search installer files 
    on the local machine, and then copy these files to the remote server.
 
    ![Separate server installation](_img/administration/separate-server.png)
@@ -278,28 +285,41 @@ follow these steps:
    [security settings](#secure-search) for both servers.
 
 <a name="secure-search"></a>
-## Secure Search in TFS 
+## Secure Search
 
 The Search service uses a modified version of 
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) 
 (the terms "Search" and "Elasticsearch" are used 
 interchangeably for the remainder of this section). 
-In TFS 2018 Update 1.1 and TFS 2018 Update 3, Basic authentication has been enabled to make the communication between 
-TFS and Search service more secure. TFS Admins will need to configure credentials 
-as part of configuring Search (through Server or Search configuration wizard) whether Elasticsearch 
-is on the same server as TFS,
-or on a separate server dedicated to Search. These new set of credentials will enable basic authentication in search service. 
+TFS Admins will need to provide credentials as part of configuring Search feature 
+(through Server or Search configuration wizard) whether Search service 
+is on the same machine as TFS,
+or on a separate machine. These are new set of credentials (not related to any pre-existing account / TFS credentials) 
+and are used to set up and connect to Search service.
+These new set of credentials will enable basic authentication in search service. 
 
    ![Search credentials](_img/_shared/tfsU3_search_cred1-1024x706.png)
 
-Please note that Search credentials will only authenticate the users and makes 
+In case of an upgrade from TFS 2018 Update 1.1 to TFS 2018 Update 3 or in case of search re-configuration, 
+only the user information gets auto-populated and TFS Admins will need to provide password credentials. 
+TFS Admins have an option to provide different username and 
+password if they desire to do so. If Search service is 
+on the same machine as TFS and Admins want to change the credentials,
+they just need to provide a new set of credentials in the configuration wizard and Search service will be setup. 
+But if Search service is on a remote machine and TFS Admins want to change the username and password, 
+they need to provide the new credentials first to the Search service setup script.
+
+
+**Note**: 
+1. Username and password values should both be between 8 and 64 characters in length. While password can be assigned any value,
+username can only contain alphanumeric/underscore characters. 
+2. Search credentials will only authenticate the users and makes 
 sure that unauthenticated users cannot access the Elasticsearch endpoint. 
 But since Elasticsearch does not support HTTPS, these auth credentials are sent 
 over the network as Base64 encoded strings. If you think there is a possibility of 
 someone sniffing the credentials, it is vital that you configure appropriate security 
 settings based on your corporate security and compliance requirements.
-
-Irrespective of the TFS version that you use, you should aim to limit access to both searching and indexing 
+3. Irrespective of the TFS version that you use, you should aim to limit access to both searching and indexing 
 to specific users or user groups for which we recommend using encryption through IPSec. 
 Consider the following techniques for using IPSec to secure Elasticsearch on a Windows server.
 
@@ -327,7 +347,7 @@ TFS App Tier servers).
 Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](https://technet.microsoft.com/library/cc772460%28v%3Dws.10%29.aspx).
 
 <a name="upgrading-search"></a>
-## Upgrade Search in TFS
+## Upgrade Search
 
 TFS 2017 Update 1 includes updated Search components. If the Search
 service was configured in TFS 2017 RTM then, during an upgrade, the
@@ -349,13 +369,13 @@ service was configured on the TFS that is being upgraded.
 If Search was configured on a remote server, follow
 [these instructions](#separate-server) to update it. In both cases, all existing content (code files and work items) will be automatically re-indexed to support the updated components after configuration. Depending on the volume of content, this might take some time to complete.
 
-TFS 2018 Update 1.1 and TFS 2018 Update 3 include Basic authentication for the communication 
-between the TFS and Search services to make it more secure. Any user installing or upgrading 
-to TFS 2018 Update 1.1 or TFS 2018 Update 3 must provide a user name and a password 
-while configuring Search (and also during Search Service setup in the case of a remote Search Service).
+TFS 2018 Update 1.1 and TFS 2018 Update 3 include basic authentication for the communication 
+between the TFS and Search service to make it more secure. Any user installing or upgrading 
+to TFS 2018 Update 1.1 or TFS 2018 Update 3 will need to provide credentials as part of configuring Search feature 
+(through Server or Search configuration wizard).
 
 <a name="manage-tfs"></a>
-## Manage Search in TFS
+## Manage Search
 
 Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
@@ -509,11 +529,10 @@ to a few hours, depending on the size of the collection.
 Also see **[Troubleshoot Search](#trouble-tfs)**.
 
 <a name="uninstall-tfs"></a>
-## Uninstall Search in TFS
+## Uninstall Search
 
 In cases such as a pre-production upgrade, production upgrade, new hardware migration, cloning,
-or other maintenance operation, the TFS wizard will unconfigure Search in a way that makes it easy to re-configure it after the TFS 
-maintenance operation is complete.
+or other maintenance operation, the TFS wizard will unconfigure Search in a way that makes it easy to re-configure it after the TFS maintenance operation is complete.
 
 However, there might be cases where you no longer want to use Search or you want to perform a new and clean
 install. This requires multiple steps, depending on whether Search is configured
@@ -541,7 +560,7 @@ install. This requires multiple steps, depending on whether Search is configured
    1. Open the TFS Administration Console.
    1. In the left pane, select the name of the TFS.
    1. In the right pane, choose **Remove Feature**.
-   1. In the Remove Feature dialog, select **Team Foundation Search Service** and choose **Remove**.<p />
+   1. In the Remove Feature dialog, select **TFS Search service** and choose **Remove**.<p />
   
 1. Remove the Elasticsearch service:
 
@@ -589,20 +608,23 @@ your TFS.
    1. Open the TFS Administration Console.
    1. In the left pane, select the name of the TFS.
    1. In the right pane, choose **Remove Feature**.
-   1. In the Remove Feature dialog, select **Team Foundation Search Service** and choose **Remove**.<p />
+   1. In the Remove Feature dialog, select **Team Foundation Search service** and choose **Remove**.<p />
 
 1. Remove the Elasticsearch service and data
 
    1. Open **PowerShell** as an administrator
-   1. Go to the folder where **ConfigureTFSSearch.ps1** is installed along with the rest of the files required for a remote install of Search.
+   1. Go to the folder where **Configure
+   
+   Search.ps1** is installed along with the rest of the files required for a remote install of Search.
    1. Run the script again with the remove option: 
    
-      For TFS 2017 RTM, `"ConfigureTFSSearch.ps1 -RemoveTFSSearch"`<p />
+      For TFS 2017 RTM, `"Configure
+      Search.ps1 -RemoveTFSSearch"`<p />
 
       For TFS 2017 Update1 and above, `"ConfigureTFSSearch.ps1 -remove"`<p />
   
 <a name="limit-tfs"></a>
-## Limitations of Search in TFS
+## Limitations of Search
 
 Search for TFS has the following limitations: 
 
@@ -610,7 +632,7 @@ Search for TFS has the following limitations:
   to an earlier snapshot of your SQL database, you will need to re-index all your collections [re-index the collections](#re-index).  
 
 <a name="trouble-tfs"></a>
-## Troubleshoot Search in TFS
+## Troubleshoot Search
 
 * [Search is configured but the Search box is not displayed](#no-search-box)
 * [No search results are shown after installing or configuring Search](#no-results-install)

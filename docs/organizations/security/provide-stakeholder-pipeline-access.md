@@ -5,11 +5,11 @@ description: Add & update work items, approve releases, view work tracking progr
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 09/05/2018
 ---
 

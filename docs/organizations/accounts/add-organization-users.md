@@ -7,11 +7,11 @@ ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/13/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Add users to your organization or project

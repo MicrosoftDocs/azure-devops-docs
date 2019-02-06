@@ -5,7 +5,7 @@ ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Search for work items
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 

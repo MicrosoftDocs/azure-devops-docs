@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -14,22 +14,27 @@ monikerRange: '>= tfs-2013'
 ms.date: 12/04/2018
 --- 
 
-# Understand how work items are used to track user stories, issues, bugs, features, and epics 
+# Track work with user stories, issues, bugs, features, and epics 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the process used when your project was created.  
+You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the [process used when your project was created](guidance/choose-process.md) (Basic, Agile, Scrum, or CMMI).  
 
 
 ####In a nutshell:
 
 ::: moniker range=">= tfs-2018"
-- You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
+- You use different [work item types (WITs)](#wit) to track different types of information. Specific tools 
+	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
+	- [Define Features and Epics](../backlogs/define-features-epics.md)
+	- [Define Features and Epics](../backlogs/define-features-epics.md)
+	- [Define, triage, and manage Bugs](../backlogs/manage-bugs.md)
+	- [Add Tasks to backlog items](../sprints/add-tasks.md)
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
 - You can [assign a work item](#assign) to one and only one project member 
 - You [assign work items to a sprint](#assign-to-sprint) via the iteration path
-- You can use [adhoc search or queries to find or list work items](#queries)  
+- You can use [ad hoc search or queries to find or list work items](#queries)  
 - You can [use work item templates](#templates) to quickly fill in work item fields
 - Teams can [choose how they track bugs](#track), either as requirements or as tasks
 - You or a project administrator can [add and customize work item types](#customize)
@@ -44,7 +49,7 @@ You can use work items to track anything you need to track. Each work item repre
 - You can [assign a work item](#assign) to one and only one project member 
 - You [assign work items to a sprint](#assign-to-sprint) via the iteration path
 - Teams can [choose how they track bugs](#track), either as requirements or as tasks
-- You can use [adhoc search or queries to find or list work items](#queries)  
+- You can use [ad hoc search or queries to find or list work items](#queries)  
 - You can [use work item templates](#templates) to quickly fill in work item fields
 - You can [add and customize work item types and your backlog](#customize)
 - [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access. 
@@ -62,7 +67,7 @@ For example, the following WITs are available to you when you choose the Agile p
 <img src="guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]  
-> The WITs available to you depend on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). The items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+> The WITs available to you depend on the process chosen to create your project&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). The items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 
 To learn more about processes and process templates, see [Choose a process](./guidance/choose-process.md).
 
@@ -138,7 +143,7 @@ Anyone who has write access to a project can assign work items, including users 
 - The system shows the display name and adds the user name when required to disambiguate identical display names  
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 ###Integration with Azure Active Directory 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
@@ -146,7 +151,7 @@ When your system is configured with Azure Active Directory (Azure AD), then the 
 You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-azure-ad.md).
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019" 
+::: moniker range="<= azure-devops-2019" 
 ###Integration with Active Directory
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
@@ -155,7 +160,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
  
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]    
 >To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
@@ -180,12 +185,12 @@ For an overview of all team settings, see [Manage teams and configure team tools
 <a id="queries" />
 ## Find or list work items 
 
-You can use the search box to perform an adhoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
+You can use the search box to perform an ad hoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
 - [Create managed queries to list, update, or chart work items ](../queries/example-queries.md)  
 - [View, run, or email a query](../queries/view-run-query.md)  
-- [Adhoc vs managed queries](../queries/adhoc-vs-managed-queries.md)  
+- [Ad hoc vs managed queries](../queries/ad hoc-vs-managed-queries.md)  
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />
@@ -201,11 +206,11 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 <a id="customize" />
 ## Customize a WIT 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 

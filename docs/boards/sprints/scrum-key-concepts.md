@@ -6,7 +6,7 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -145,7 +145,7 @@ For example, in the chart shown below the green bar indicates the total estimate
 
 ![Velocity chart](_img/velocity-chart.png)
 
-::: moniker range="azdevserver-2019 || vsts"  
+::: moniker range=">= azure-devops-2019"  
 In addition to the built-in Velocity chart, you can add a Velocity widget to your team dashboard. You can configure this widget to sum a count of work items or the sum of effort. Learn more: [Configure the Velocity widget](../../report/dashboards/team-velocity.md). 
 ::: moniker-end  
 

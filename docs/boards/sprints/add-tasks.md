@@ -5,12 +5,12 @@ description: Add tasks to user stories assigned to a sprint or iteration working
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -22,7 +22,7 @@ ms.date: 11/19/2018
 
 You add tasks to backlog items when you want to track the work required to implement them and to estimate the work assigned to individual team members and the team. The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 
-In this topic you'll learn how to:  
+In this article you'll learn how to:  
 
 > [!div class="checklist"]
 > * Select a sprint backlog for a team
@@ -37,13 +37,13 @@ Add as many tasks as needed to capture the work required to complete each item. 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 ## Open a Sprint backlog for a team 
+
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 
 0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -73,7 +73,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -97,7 +97,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ::: moniker-end
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -117,7 +117,7 @@ For each sprint backlog item, add a task. Adding tasks from the sprint backlog o
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 
 You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
@@ -145,7 +145,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 You can add tasks from the sprint **Backlog** or **Board** (aka taskboard). 
 
@@ -166,7 +166,7 @@ Another option, is to open the **Board**, and add tasks as cards. Simply click t
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -177,7 +177,7 @@ Another option, is to open the **Board**, and add tasks as cards. Simply click t
 
 Name the task and enter an estimate for *Remaining Work*. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Add task](_img/add-tasks/add-task-form.png)
 ::: moniker-end	
@@ -233,7 +233,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Unparented tasks, agile taskboard](_img/add-tasks/unparented-tasks.png) 
 ::: moniker-end
@@ -245,13 +245,13 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 ![Unparented tasks](_img/ALM_TB_UnparentedTasks_CO.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -261,6 +261,6 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [3. Set team capacity](set-capacity.md) 
+> [3. Set sprint capacity](set-capacity.md) 
 
 

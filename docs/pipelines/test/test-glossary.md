@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: douge
+ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
 ms.date: 12/07/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Glossary
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 The section lists commonly used terms for [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md) in the pipeline.
 

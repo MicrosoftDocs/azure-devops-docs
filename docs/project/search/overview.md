@@ -5,7 +5,7 @@ ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Search across all your code, wiki and work items
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Azure DevOps and TFS store a tremendous amount of information; 
 work items for planning and tracking your work, wiki for sharing information, version control to track code file changes, 

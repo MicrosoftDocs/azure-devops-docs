@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 
 ms.assetid: 7a6c9101-c38d-4d6d-be8d-d64a3931487b
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/17
@@ -132,7 +132,7 @@ The following table describes the measures in the Run Coverage measure group. By
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests).|  
 |Build|Build Definition Name|The name that is assigned to the build definition for which a build was run.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
@@ -146,7 +146,7 @@ The following table describes the measures in the Run Coverage measure group. By
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
--   [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md)  
+-   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)  
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
   
 -   [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)  

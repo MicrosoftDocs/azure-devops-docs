@@ -4,7 +4,7 @@ ms.technology: devops-ecosystem
 title: Extension Points | Extensions for Azure DevOps Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
@@ -97,6 +97,8 @@ Name                      | Target ID                                   | Previe
 --------------------------|---------------------------------------------|-------------------
 Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build/web/_img/completedBuildActions.png)
 Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/_img/buildDefinitionActions.png)
+Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![testResultsToolbarAction](../../_img/extension_test_custom_action.png)
+Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![testResultDetailsTab](../../_img/extension_test_custom_tab.jpg)
 
 <a name="menu_release"></a>
 ### Release

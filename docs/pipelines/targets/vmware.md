@@ -5,7 +5,7 @@ ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy to VMware vCenter Server
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -25,13 +25,13 @@ You can automatically provision virtual machines in a VMware environment and dep
 
 ## VMware connection
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 You need to first configure how Azure Pipelines connects to vCenter. You cannot use Microsoft-hosted agents to run VMware tasks since the vSphere SDK is not installed on these machines. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 You need to first configure how TFS connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 
@@ -66,16 +66,8 @@ the agent machine:
      path will be:  
      `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
 
-1. Install the VMware extension 
+1. Install the [VMware extension ](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
    from Visual Studio Marketplace into TFS or Azure Pipelines.
-
-   * If you are using **Azure Pipelines**, 
-     install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
-     in Visual Studio Marketplace.
-   * If you are using **Team Foundation Server**, download 
-     the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
-     in Visual Studio Marketplace, upload it to your 
-     Team Foundation Server, and install it.<p />
 
 1. Follow these steps to create a vCenter Server service connection in your project:
 

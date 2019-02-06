@@ -5,12 +5,12 @@ description: Create a local copy of a repo using Visual Studio or command line c
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual
 ms.date: 09/19/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Clone a Git repository in a public project

@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -134,7 +134,7 @@ You can use the **In Group** or **Not In Group** operators to filter a query bas
 
 <a id="workflow-change"/> 
 
-## Query based on workflow changes
+## Query based on workflow states and changes
 
 You use the State, Reason, and Resolved Reason fields to query for items based on workflow changes. 
 
@@ -153,6 +153,17 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
     <p style="margin-bottom:0px">
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type _ = _ User Story```</p>
 <p style="margin-bottom:0px">```And _ State _ = _ Resolved```</p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>Stories, bugs, and tasks that are new or active
+    </p>
+</td>
+  <td>
+    <p style="margin-bottom:0px">
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;```Work Item Type _ In _ User Story,Bug,Task```</p>
+<p style="margin-bottom:0px">```And _ State _ In _ New,Active```</p>
   </td>
 </tr>
 <tr>
@@ -237,7 +248,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 
 ::: moniker range=">= tfs-2015"
 
-For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
+For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
 <img src="_img/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
 
@@ -287,7 +298,7 @@ Items in any swimlane that contains "Test"
 <a id="kanban-query-results">  </a>
 
 > [!IMPORTANT] 
-> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-team-defaults.md). Another option is to [add custom workflow states](../../reference/customize-work.md) which all teams can use.  
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to [add custom workflow states](../../reference/customize-work.md) which all teams can use.  
 
 ::: moniker-end
 
@@ -458,7 +469,7 @@ For information about data types and default field attributes, see [Work item da
 <a id="sync">  </a>
 1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
     
-	::: moniker range="<= azdevserver-2019" 
+	::: moniker range="<= azure-devops-2019" 
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).    
 	::: moniker-end
 

@@ -5,7 +5,7 @@ ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -58,6 +58,12 @@ your findings to an existing bug.
      as described in [this topic](connected-mode-exploratory-testing.md).<p />
    
 1. Continue exploring your app, filing bugs and tasks, and creating test cases. 
+
+## See your exploratory session results 
+
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+
+* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 

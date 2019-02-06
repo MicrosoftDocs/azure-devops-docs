@@ -6,18 +6,18 @@ ms.custom: "boards-get-started, seodec18"
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/11/2019
 ---
 
 
 # 11 Reasons for using Azure Boards to plan and track your work 
 
-[!INCLUDE [temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
 We know you have a choice of tracking systems. So why use Azure Boards to plan and track your work, bugs, and customer issues? 
 
@@ -77,7 +77,7 @@ In addition, you can link work items within a hierarchy or by simple related lin
 As your project grows, the number of work items used to track it grows. To support your ability to quickly find a specific work item, Azure Boards provides you with easy-to-use tools: 
 
 - A follow feature so you can [follow work items](../work-items/follow-work-items.md) to monitor updates and changes
-- [Pivot views](plan-track-work.md#pivot-views) that show you work items assigned to you, that you elected to follow, were recently modified, and more  
+- [Pivot views](../work-items/view-add-work-items.md ) that show you work items assigned to you, that you elected to follow, were recently modified, and more  
 - A powerful [query engine](../queries/example-queries.md) that filters work item lists based on any field and used to update or triage work items
 - Fast, flexible [ad-hoc search](../queries/search-box-queries.md) with quick inline filters 
 - Alert management settings so you can [personalize the alerts](../../notifications/howto-manage-personal-notifications.md) you receive when work items are assigned to you or are changed, or other filter criteria
@@ -128,6 +128,9 @@ Last but not least, you can start for free and add up to five free users and unl
 Get started today. To learn how, see [Sign up for free and invite others to collaborate on your project](sign-up-invite-teammates.md). 
 
 
+##Related articles
+
+- [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
 
 
 

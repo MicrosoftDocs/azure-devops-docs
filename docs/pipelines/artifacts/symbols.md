@@ -6,7 +6,7 @@ description: Publish symbols to a symbol server for debugging using Azure Pipeli
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 ms.date: 10/18/2017
 monikerRange: '> tfs-2015'
@@ -14,7 +14,7 @@ monikerRange: '> tfs-2015'
 
 # Publish symbols for debugging
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -25,10 +25,10 @@ monikerRange: '> tfs-2015'
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols). To consume symbols, see [this page for Visual Studio](/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio) or [this page for WinDbg](/azure/devops/artifacts/symbols/debug-with-symbols-windbg).
 
 ## Publish symbols
-To publish symbols to the Package Management symbol server in Azure Pipelines, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
+To publish symbols to the symbol server in Azure Artifacts, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
 
 * For **Version**, select **2.\***.
-* For **Symbol Server Type**, select **Azure Pipelines**.
+* For **Symbol Server Type**, select **Symbol Server in this organization/collection (requires Azure Artifacts)**.
 * Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
 * Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).
 For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirectories named *bin*.
@@ -51,7 +51,7 @@ For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirecto
 
 ## Portable PDBs
 
-If you're using [portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you don't need to use the **Index Sources and Publish Symbols** task. For portable PDBs, the build does the indexing. This is a design feature of portable PDBs and .NET.
+If you're using [portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you stil need to use the **Index Sources and Publish Symbols** task to publish symbols. For portable PDBs, the build does the indexing, however you should (use SourceLink)[https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/sourcelink] to index the symbols as part of the build. Note that Azure Artifacts doesn't presently support ingesting NuGet symbol packages and so the task is used to publish the generated PDB files into the symbols service directly.
 
 ## Use indexed symbols to debug your app
 

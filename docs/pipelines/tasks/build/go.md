@@ -9,7 +9,7 @@ ms.assetid: 34B37FDD-BBF7-4EF1-B37C-9652CA7BB355
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Go task

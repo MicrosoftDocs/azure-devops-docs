@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: alewis
 author: andyjlewis
-manager: douge
+ms.manager: jillfra
 ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
 ms.custom: "mvc, seodec18"
 ms.date: 06/24/2017
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Implement a CI/CD pipeline to build and deploy your ASP.NET Core app to Azure
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 ASP.NET Core apps.

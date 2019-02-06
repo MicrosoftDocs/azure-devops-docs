@@ -6,12 +6,12 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Define features and epics  
@@ -29,7 +29,7 @@ Use your backlogs to plan your project and to:
 *	Group items into a release train  
 *	Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
-Use this topic to learn how to: 
+Use this article to learn how to: 
 >[!div class="checklist"]      
 > * Determine what is a good feature or epic
 > * View a backlog or portfolio backlog  
@@ -41,7 +41,7 @@ Use this topic to learn how to:
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## What comprises a feature or epic?  
 
@@ -63,6 +63,7 @@ A feature typically represents a shippable component of software. An epic repres
 - Support integration with external services 
 - Support mobile apps
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 <a id="view-portfolio-backlog" />
 ## View a backlog or portfolio backlog 
@@ -76,7 +77,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -108,7 +109,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
@@ -126,7 +127,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -144,7 +145,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
 
@@ -171,7 +172,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 
@@ -186,7 +187,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -266,7 +267,7 @@ You can add features to epics, and backlog items to features.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png) and choose from the options provided.
 
@@ -289,7 +290,7 @@ Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 To add a work item, choose the ![plus icon](../_img/icons/green_plus_icon.png) and choose from the options provided.
 
@@ -302,7 +303,7 @@ The work item always corresponds to the hierarchy of work item types that are de
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -318,7 +319,9 @@ The work item types you'll see depends on the [process you selected to create yo
 
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../../organizations/settings/show-bugs-on-backlog.md). 
 
- 
+
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+
 ## Try this next  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 

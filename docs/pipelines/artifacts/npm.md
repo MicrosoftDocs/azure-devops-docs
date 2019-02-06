@@ -8,7 +8,7 @@ ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Publish npm packages
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -31,8 +31,16 @@ Before you read this topic, you should understand the kind of build pipeline you
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
+::: moniker range="azure-devops"
+[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)] Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, and **feedName** is the feed that you want to publish to:
+
+```yaml
+- task: Npm@1
+  inputs:
+    command: publish
+    publishRegistry: useFeed
+    publishFeed: feedName
+```
 
 To publish to an external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry.
 
@@ -49,7 +57,7 @@ For a list of other options, see the [npm task](../tasks/package/npm.md).
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not supported in TFS.
 ::: moniker-end
 

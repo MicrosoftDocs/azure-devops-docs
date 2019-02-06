@@ -5,7 +5,7 @@ description: Repository settings
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Repository settings
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 #### Azure Repos
 
@@ -36,7 +36,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 ## View and edit repository settings
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]
 
@@ -118,7 +118,7 @@ This setting will not fix a repository which already contains objects that only 
 We recommend fixing such issues before turning the policy on.
 You can rename files and folders or re-create [branches](create-branch.md) and [tags](git-tags.md) using new, non-conflicting names.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### Restrict File Names
 

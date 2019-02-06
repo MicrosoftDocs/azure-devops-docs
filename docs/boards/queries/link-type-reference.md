@@ -5,7 +5,7 @@ description: Reference guide to all link types defined for Azure DevOps and Team
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 <a id="link-type-guidance"></a>
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 Four link types are supported. A specific field maintains a count of links for each of these link types. 
 
 - [**Work link types**](#work-link-types) support creating relationships among work items including select test case management work items
@@ -30,7 +30,7 @@ Four link types are supported. A specific field maintains a count of links for e
 
 ::: moniker-end 
 
-::: moniker range="<= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 Three link types are supported. A specific field maintains a count of links for each of these link types. 
 
 - [**Work link types**](#work-link-types) support creating relationships among work items including select test case management work items
@@ -54,7 +54,7 @@ Each work link type defines the link labels, topology type, and restrictions tha
 
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"  
+::: moniker range=">= tfs-2017 <= azure-devops-2019"  
 The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 ::: moniker-end  
 
@@ -75,8 +75,8 @@ The following table describes the work item link types you can specify to scope 
 ![Affects link type image](_img/link-work-items-support-traceability/affects-cmmi.png) 
 ![Affected by link type image](_img/link-work-items-support-traceability/affected-by-cmmi.png) 
 </td>
-<td><p>Microsoft.VSTS.Common.Affects.Forward<br/>
-Microsoft.VSTS.Common.Affects.Reverse</p>
+<td><p>Microsoft.VSTS.Common.Affects-Forward<br/>
+Microsoft.VSTS.Common.Affects-Reverse</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p>
 </td>
@@ -197,7 +197,7 @@ Link category: Process-defined</p></td>
 
 
 
-::: moniker range="vsts"   
+::: moniker range="azure-devops"   
 
 <a id= "remote-work-link-types" />
 ## Remote work link types
@@ -286,17 +286,17 @@ External link types are system-defined link types. They support linking work ite
 > [!div class="mx-imgBorder"]  
 > ![External link types, conceptual image](_img/link-type-reference/linkscontrol-external-link-types.png) 
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
-::: moniker-endÂ 
+::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019""  
+::: moniker range=">= tfs-2017 <= azure-devops-2019"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
-::: moniker-endÂ 
+::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
-::: moniker-endÂ 
+::: moniker-end   
 
 
 <table width="100%"> 
@@ -415,7 +415,7 @@ The following table describes the external link types you can choose when adding
 </tbody>
 </table>
 
-::: moniker range="<= azdevserver-2019" 
+::: moniker range="<= azure-devops-2019" 
 ## Custom link types
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following topics:  

@@ -5,7 +5,7 @@ description: Use Excel to bulk add or modify work items--such as backlog items, 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -22,7 +22,7 @@ When you have a lot of work items to add or modify, using Excel can save you tim
 
 You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * Connect to a project from Excel 

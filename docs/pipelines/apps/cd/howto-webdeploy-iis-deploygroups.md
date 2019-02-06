@@ -5,21 +5,17 @@ ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2018'
 ---
 
 # How To: Extend your deployments to IIS Deployment Groups
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 You can quickly and easily deploy your ASP.NET or Node.js app to an IIS Deployment Group using
 Azure Pipelines or Team Foundation Server (TFS),
@@ -84,7 +80,7 @@ To deploy a database with your app:
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    
-   - **Machine tags**: `web`<p />
+   - **Required tags**: `web`<p />
    
    Then add an **IIS Web App Deploy** task to this job.
    
@@ -92,6 +88,6 @@ To deploy a database with your app:
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    
-   - **Machine tags**: `database`<p />
+   - **Required tags**: `database`<p />
    
    Then add a **SQL Server Database Deploy** task to this job.

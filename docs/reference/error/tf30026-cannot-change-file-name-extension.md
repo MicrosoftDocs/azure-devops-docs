@@ -4,7 +4,7 @@ description: Occurs when you try to change the file extension on a file stored o
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 71f64811-274b-4274-a430-b3ef4b33bb20
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

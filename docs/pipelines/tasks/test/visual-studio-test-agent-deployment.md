@@ -5,7 +5,7 @@ ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Visual Studio Test Agent Deployment task
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

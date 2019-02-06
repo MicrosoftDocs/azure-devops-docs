@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Security Tokens | REST API Reference for Team Foundation Server
 description: Secure Git repositories and branches programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: e9da48fa-fefb-4b17-bdb2-fff937b3cdab
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

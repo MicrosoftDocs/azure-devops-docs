@@ -6,7 +6,7 @@ description: Learn how you can automatically generate a CI/CD pipeline to deploy
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 01/02/2017
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-changes-existing-services/)
@@ -252,7 +252,7 @@ may encounter the following known issues:
 
 1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [qa-versions](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

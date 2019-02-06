@@ -5,7 +5,7 @@ description: Create a new Git repo in an Azure DevOps Services or Team Foundatio
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
@@ -32,7 +32,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 1. Navigate to the **Repos** page in your project by browsing to `https://<your account name>.visualstudio.com`, hovering your mouse over the name of your project, and selecting the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 

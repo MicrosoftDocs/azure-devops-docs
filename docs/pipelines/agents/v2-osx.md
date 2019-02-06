@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/29/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Deploy an agent on macOS
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -82,7 +82,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
@@ -323,7 +323,7 @@ You can use the template described above as to facilitate generating other kinds
 
 [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 ::: moniker-end
 
@@ -335,15 +335,15 @@ You can use the template described above as to facilitate generating other kinds
 
 [Run the agent behind a web proxy](proxy.md)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [include](../_shared/qa-versions.md)]
 ::: moniker-end
 

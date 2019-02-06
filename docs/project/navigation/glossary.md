@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -29,7 +29,7 @@ An interactive list of work items that corresponds to a team's project plan or r
 
 Each product backlog can be customized by a team. Learn more: [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Analytics views
 Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics service. The Analytics service is the reporting platform for Azure DevOps Services. 
 ::: moniker-end

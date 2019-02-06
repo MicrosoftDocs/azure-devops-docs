@@ -5,10 +5,10 @@ description: Xcode build and release task for Azure Pipelines and Team Foundatio
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: dastahel
 ms.date: 04/18/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Xcode task

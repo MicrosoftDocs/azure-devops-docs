@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 11/19/2018
@@ -29,7 +29,7 @@ Wikis and repository README files are great ways to share information with your 
 
 ## 5-minute quickstarts  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
@@ -65,7 +65,7 @@ Wikis and repository README files are great ways to share information with your 
 
 ## How-to guides
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [View wiki history and revert](wiki-view-history.md)
 - [Filter or print wiki content](filter-print-wiki.md)  
@@ -97,6 +97,7 @@ Wikis and repository README files are great ways to share information with your 
 - [Markdown guidance](markdown-guidance.md)
 - [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
 - [Navigate in the web portal](..//navigation/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
 
 ## Resources
 

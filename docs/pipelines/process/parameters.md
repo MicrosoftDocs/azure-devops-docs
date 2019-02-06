@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 9/21/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Process parameters
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 > [!NOTE]
 > 

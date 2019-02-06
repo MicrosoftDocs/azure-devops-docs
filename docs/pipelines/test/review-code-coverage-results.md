@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: douge
+ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
 ms.date: 12/07/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Review code coverage results
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 <a name="prerequisites"></a>  
 

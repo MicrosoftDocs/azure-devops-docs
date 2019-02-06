@@ -6,11 +6,11 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 07/11/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Microsoft-hosted agents
@@ -126,7 +126,7 @@ In some setups, you may need to know the range of IP addresses where agents are 
 
 We publish a [weekly XML file](https://www.microsoft.com/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://dev.azure.com/<your_organization>/_settings/overview`. Under **Organization information**, you will see a field indicating your region.
 
-*This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/support/devops/ip-addresses-used-hosted-build/).*
+*This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/support/devops/).*
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -160,6 +160,14 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
+  In case you are using a non-standard version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
+
+  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'${xcodeRoot};sudo xcode-select --switch ${xcodeRoot}/Contents/Developer"`
+  
+  where `${xcodeRoot}` = `/Applications/Xcode_10.1.app`
+
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+
 #### Xcode
 
   If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
@@ -167,6 +175,8 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+
+  Note that this command does not works in case of Xamarin app. To manually select a Xcode version for building Xamarin apps, see instructions above.
 
 #### Mono
 

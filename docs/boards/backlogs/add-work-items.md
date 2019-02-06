@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -28,9 +28,7 @@ You add work items to plan and manage your project. You use different types of w
 
 For additional clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
-
-
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="define-new-work">  </a>
 ## Add a work item 
@@ -40,7 +38,7 @@ You can start adding work items once you connect to a project.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
@@ -56,14 +54,14 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
 	<img src="_img/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
 
 	> [!NOTE]  
-	>Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
+	>Depending on the process chosen when the project was created&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 
 	or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 	>
 	> For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
@@ -76,9 +74,9 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 	You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
@@ -98,7 +96,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -129,7 +127,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 You can [add tags to any work item to filter backlogs and queries](../queries/add-tags-to-work-items.md).
 
-Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
+Work items you add are automatically scoped to your team's default area path and iteration path. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
 
 That's it! 
 
@@ -149,7 +147,7 @@ Note that the location of the State field may differ depending on the work item 
 > ![Update the State of an Issue](_img/add-work/update-state-old-form.png)   
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Move, change, or remove a work item](remove-delete-work-items.md).  
      
 ::: moniker-end
@@ -213,7 +211,8 @@ To find work items based on their history, see [History & auditing](../queries/h
 
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.   
 
-![Work item form, Follow icon control](_img/follow-work-item.png) 
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](../work-items/_img/follow-work/follow-work-item.png) 
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
@@ -223,7 +222,7 @@ To stop following changes, choose the ![ ](../_img/icons/following-icon.png) fol
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!IMPORTANT]
 > To support the follow feature, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
@@ -232,7 +231,7 @@ To stop following changes, choose the ![ ](../_img/icons/following-icon.png) fol
 
 ## Try this next  
 
-To quickly add backlog items, such as user stories, requirements or bugs, see these topics:  
+To quickly add backlog items, such as user stories, requirements or bugs, see these articles:  
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md)
 > [Kanban quickstart](../boards/kanban-quickstart.md) 

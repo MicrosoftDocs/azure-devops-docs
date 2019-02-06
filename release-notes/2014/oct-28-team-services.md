@@ -44,7 +44,7 @@ I am also happy to announce that the service hooks features is out of preview an
 
 Visual Studio Online supports 14 services out of the box, including Trello, UserVoice, HipChat, AppVeyor, MyGet, Flowdock, Zendesk, Kato, Zapier, Campfire, Azure, and more. You can also use service hooks with your own custom solutions, enabling your solutions to react efficiently when events happen in your Visual Studio Online projects.
 
-To learn more about service hooks and the services with which you can integrate out of the box, visit [Integrate with other services](/azure/devops/service-hooks/index?view=vsts).
+To learn more about service hooks and the services with which you can integrate out of the box, visit [Integrate with other services](/azure/devops/service-hooks/index?view=azure-devops).
 
 Keep all the great feedback coming on [Twitter](https://twitter.com/VisualStudio) and [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso).
 

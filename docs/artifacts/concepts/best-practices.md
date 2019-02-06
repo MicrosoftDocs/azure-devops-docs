@@ -4,7 +4,7 @@ description: Learn best practices for producing and consuming feeds and packages
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 05/18/2018

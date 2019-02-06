@@ -5,7 +5,7 @@ description: Understand how to manage projects when synchronizing data between T
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e5cf789c-2edb-4d84-aecd-f4d09fc854da
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017

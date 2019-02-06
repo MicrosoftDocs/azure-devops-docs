@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-analytics  
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019' 
+monikerRange: '>= azure-devops-2019' 
 ms.date: 12/05/2018 
 ---
 

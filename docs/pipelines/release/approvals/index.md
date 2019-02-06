@@ -6,7 +6,7 @@ ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Release approvals and gates overview
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -56,11 +56,15 @@ are useful include the following.
 
 You can, of course, combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
 
+In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
+though service management methodologies such as ITIL. For more details, see [Release deployment control using ServiceNow](servicenow.md).
+
 ## Related topics
 
 * [Approvals](approvals.md)
 * [Gates](gates.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
+* [ServiceNow release and deployment control](servicenow.md)
 * [Stages](../environments.md)
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](index.md)

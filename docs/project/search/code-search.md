@@ -5,7 +5,7 @@ ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Search your code
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search

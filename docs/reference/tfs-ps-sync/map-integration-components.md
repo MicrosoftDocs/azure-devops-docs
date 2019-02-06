@@ -5,7 +5,7 @@ description: Use TFSAdmin ProjectServer command-line tool to configure integrati
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ddac3deb-bb59-4536-9d4a-ecd389ceb265
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

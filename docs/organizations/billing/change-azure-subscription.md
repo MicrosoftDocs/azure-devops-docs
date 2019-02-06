@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
-monikerRange: 'vsts'
+ms.date: 12/21/2018
+monikerRange: 'azure-devops'
 ---
 
 # Change the Azure subscription that your organization uses for billing
@@ -48,7 +48,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 - [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]
-> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you’ve paid for this month continue uninterrupted until the 1st of next month, but your organization reverts immediately to the Free Tier for cloud-based load testing. Removing the subscription also cancels any non-Microsoft paid extensions without refund or credit.
+> When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you've paid for this month continue uninterrupted until the 1st of next month, but your organization reverts immediately to the Free Tier for cloud-based load testing. Removing the subscription also cancels any non-Microsoft paid extensions without refund or credit.
 
 [Remove billing subscription](#remove-billing-subscription)
 

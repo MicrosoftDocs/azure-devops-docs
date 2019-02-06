@@ -5,10 +5,10 @@ description: Guide to configuring and customizing work tracking features for TFS
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-monikerRange: '<= azdevserver-2019'
+monikerRange: '<= azure-devops-2019'
 ms.date: 11/19/2018
 ---
 
@@ -22,9 +22,9 @@ The On-premises XML process model provides support for customizing work tracking
 > [!IMPORTANT]  
 > To customize an Azure DevOps Services project, see [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md). This article applies to on-premises deployments only.  
 
-::: moniker range="azdevserver-2019"  
+::: moniker range="azure-devops-2019"  
 
-For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azdevserver-2019#choose-process-model).  
+For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model).  
 
 ::: moniker-end
 

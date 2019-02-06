@@ -6,11 +6,11 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). 
 
-Use this topic to learn:
+Use this article to learn:
 
 >[!div class="checklist"]      
 > * How to view current and past sprint burndowns 
@@ -55,13 +55,15 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 <a id="open-chart">  </a>
 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+
 
 ## Open the Sprint backlog for your team 
 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
+
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 
 0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 1. 
@@ -91,7 +93,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -114,7 +116,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -127,7 +129,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 Choose the chart to display it in a larger view. 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/open-burndown-chart-agile.png)
 
@@ -139,7 +141,7 @@ Choose the chart to display it in a larger view.
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/sprint-burndown-open-chart.png)
 ::: moniker-end
@@ -149,7 +151,7 @@ Choose the chart to display it in a larger view.
 > ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -202,7 +204,7 @@ If your sprint burndown chart appears empty, check the following:
 As you complete each sprint, the system maintains a history of your activity. 
 
 # [New navigation](#tab/new-nav)
-::: moniker range="azdevserver-2019 || vsts"
+::: moniker range=">= azure-devops-2019"
 To view a past sprint and its burndown chart, select the sprint from the Sprint selector.  
 > [!div class="mx-imgBorder"]  
 > ![Select a past sprint from the sprint selector](_img/burndown/select-past-sprint.png) 
@@ -220,7 +222,7 @@ To view a past sprint and its burndown chart, select the sprint from the Sprint 
 # [Previous navigation](#tab/previous-nav)
 
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Past sprints provide historical record](_img/burndown/past-sprints.png) 
 ::: moniker-end
@@ -229,7 +231,7 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 ![Past sprints provide historical record, tfs 2013, 2015](_img/ALM_DS_PastSprints.png)  
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -260,7 +262,7 @@ And, from these industry resources:
 TBD - Other types of burndown charts, Release burndown 
 -->
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azdevserver-2019"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops-2019"
 
 For on-premises deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
 

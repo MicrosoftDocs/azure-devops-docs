@@ -5,12 +5,12 @@ description: Review the code base and current work by browsing repos, files, bra
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x 
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Browse code, download code  

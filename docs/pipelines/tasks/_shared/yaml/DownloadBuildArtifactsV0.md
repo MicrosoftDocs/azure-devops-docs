@@ -8,6 +8,7 @@
     #pipeline: # Required when buildType == Specific
     #specificBuildWithTriggering: false # Optional
     #buildVersionToDownload: 'latest' # Required when buildType == Specific# Options: latest, latestFromBranch, specific
+    #allowPartiallySucceededBuilds: false # Optional
     #branchName: 'refs/heads/master' # Required when buildType == Specific && BuildVersionToDownload == LatestFromBranch
     #buildId: # Required when buildType == Specific && BuildVersionToDownload == Specific
     #tags: # Optional

@@ -5,7 +5,7 @@ ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -28,7 +28,7 @@ at team or individual level, and for a specific period.
  
      ![Opening the insights page from the extension](_img/insights-exploratory-testing/insights-exploratory-testing-01.png)
  
-   - From the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
+   - From [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
 
      ![Opening the insights page](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
 

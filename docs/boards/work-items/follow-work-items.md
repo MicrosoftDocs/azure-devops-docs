@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -23,7 +23,7 @@ ms.date: 11/19/2018
 
 To get notified of changes made to a work item or a pull request, you can elect to follow them. 
 
-This topic shows you how to:
+this article shows you how to:
 
 >[!div class="checklist"]  
 > * Follow a work item
@@ -31,7 +31,7 @@ This topic shows you how to:
 > * Manage work items that you're following
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 [You must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
 
@@ -39,7 +39,8 @@ This topic shows you how to:
 
 When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
-<img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](_img/follow-work/follow-work-item.png) 
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
@@ -73,7 +74,7 @@ You can review and manage all the work items you've selected to follow.
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"   
+::: moniker range=">= azure-devops-2019"   
 
 Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
 
@@ -104,7 +105,7 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Open **Work>Queries** and choose **Followed work items**.  
 
@@ -120,18 +121,18 @@ From this view, you can view all items you're following across all projects. Als
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 You can also view and manage work that you're following from **Work>Work Items** and pivot to **Following**. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018 || vsts"     
+::: moniker range=">= tfs-2017  <= tfs-2018 || azure-devops"     
 
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

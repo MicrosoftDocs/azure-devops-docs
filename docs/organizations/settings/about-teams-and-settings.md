@@ -5,7 +5,7 @@ description: Guide to adding and configuring teams in Azure DevOps Services & Te
 ms.technology: devops-settings
 ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -31,7 +31,7 @@ For example, each feature team can be associated with a single feature area path
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
-::: moniker range=">= tfs-2018 || azdevserver-2019"
+::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 
@@ -45,8 +45,7 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 
 These tools reference the team's default area path, iteration path, and selected sprints to automatically filter the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
 
-::: moniker range=">= tfs-2017 || azdevserver-2019"
-
+::: moniker range=">= tfs-2017"
 
 
 <table width="100%">
@@ -68,7 +67,8 @@ These tools reference the team's default area path, iteration path, and selected
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
 </ul>
@@ -86,7 +86,7 @@ These tools reference the team's default area path, iteration path, and selected
 </td>
 <td>
 <ul>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Set working days](set-working-days.md)</li>
 </ul>
 </td>
@@ -103,7 +103,8 @@ These tools reference the team's default area path, iteration path, and selected
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default iteration path](set-iteration-paths-sprints.md)</li>
 <li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
 </ul>
@@ -122,8 +123,8 @@ These tools reference the team's default area path, iteration path, and selected
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Add team members](../security/add-users-team-project.md)</li>
 </ul>
 </td>
@@ -172,7 +173,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
 </ul>
@@ -190,7 +192,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Set working days](set-working-days.md)</li>
 </ul>
 </td>
@@ -207,7 +210,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
 </ul>
@@ -226,8 +230,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Add team members](../security/add-users-team-project.md)</li>
 </ul>
 </td>
@@ -278,7 +282,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
 </ul>
 </td>
@@ -295,7 +300,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Set working days](set-working-days.md)</li>
 </ul>
 </td>
@@ -311,7 +317,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Select backlog levels](select-backlog-navigation-levels.md)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md)</li>
 </ul>
@@ -330,8 +337,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Add team members](../security/add-users-team-project.md)</li>
 </ul>
 </td>
@@ -391,7 +398,7 @@ In addition, several tools reference the team's default iteration and selected i
 <tr valign="top" > 
 <td>Portfolio or product backlogs</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-team-defaults.md#set-backlog-iteration)</td>
+<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)</td>
 <td>Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)</td>
 </tr>
 
@@ -399,7 +406,7 @@ In addition, several tools reference the team's default iteration and selected i
 <tr valign="top" > 
 <td>Kanban boards (see note 4)</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-team-defaults.md#set-backlog-iteration)</td>
+<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)</td>
 <td>Any state (see notes 3, 5)</td>
 </tr>
 
@@ -429,7 +436,7 @@ In addition, several tools reference the team's default iteration and selected i
 
 <p><b>Notes:</b><p>
 <ol>
-<li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-team-defaults.md#team-area-paths).</li>
+<li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#team-area-paths).</li>
 <li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
 <li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../../boards/work-items/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
 <li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
@@ -452,7 +459,7 @@ When you add a team, a security group is automatically created with the team nam
 
 <img src="../../boards/plans/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker range=">= tfs-2017 || azdevserver-2019"
+::: moniker range=">= tfs-2017"
 You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Simply start typing the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).     
 ::: moniker-end
 
@@ -474,20 +481,17 @@ You can choose to limit access to select features by making a user a [Stakeholde
 ## Summary 
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
 - Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status  
-- The [team's specified area and iteration paths](../../organizations/settings/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
+- The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)   
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md) 
 - To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
 
-## Related notes 
+## Related articles 
 
 - [Add another team](add-teams.md)  
-- [Set team defaults](set-team-defaults.md)  
 - [Configure team settings](manage-teams.md)      
 - [Work across projects ](../../project/navigation/work-across-projects.md)  
-
-
 
 
 

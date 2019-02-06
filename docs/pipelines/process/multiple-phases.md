@@ -6,7 +6,7 @@ ms.assetid: 497316D5-F657-4FFF-9F31-6DBEE9408D99
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Multiple jobs
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -33,6 +33,9 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 * Reduce build time by running multiple jobs in parallel
 * Reduce deployment time by selectively downloading different artifacts in different jobs of a deployment pipeline
 * [Conditionally execute](conditions.md) a set of tasks
+
+> [!NOTE]
+> Running multiple jobs in parallel is supported only in build pipelines at present. It is not yet supported in release pipelines.
 
 ::: moniker-end
 
@@ -65,7 +68,7 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The syntax for defining multiple jobs and their dependencies is:
 
@@ -78,7 +81,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -92,7 +95,7 @@ To add a new job, select '...' on the pipeline channel in the **Tasks** tab of t
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Example jobs that build sequentially:
 
@@ -164,7 +167,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -302,3 +305,4 @@ Use the **Run this job** option on an agent or server job to run the tasks
 * [Jobs](phases.md)
 * [Server jobs](server-phases.md)
 * [Deployment group jobs](deployment-group-phases.md)
+* [Specify conditions](conditions.md)

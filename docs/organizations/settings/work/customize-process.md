@@ -6,10 +6,10 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
 ms.date: 11/19/2018
 ---

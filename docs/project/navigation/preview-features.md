@@ -6,11 +6,11 @@ ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 12/04/2018 
 ---
 

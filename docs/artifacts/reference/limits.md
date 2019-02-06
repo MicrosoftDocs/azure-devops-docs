@@ -5,7 +5,7 @@ description: Limits on count of artifacts and size of artifacts in Azure DevOps 
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 10/31/2018

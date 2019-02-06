@@ -6,12 +6,12 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -31,7 +31,7 @@ With task checklists, you continue to enjoy lightweight tracking, while gaining 
 
 ::: moniker-end
 
-In this topic, you'll learn: 
+In this article, you'll learn: 
 > [!div class="checklist"]    
 > * How to add a task or set of tasks to a backlog item from your Kanban board  
 > * How to mark a task as done 
@@ -42,16 +42,15 @@ In this topic, you'll learn:
 <img src="_img/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />  
 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]  
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 [!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+	::: moniker range=">= tfs-2017"  
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
 	::: moniker-end
 	::: moniker range="tfs-2015"
@@ -96,6 +95,9 @@ Tasks that you create from the Kanban board are automatically assigned to the sp
 You can drag a task within a work item to reorder it. Or, you can drag the task to another work item on the Kanban board to reparent it. 
 
 ![Drag tasks to reorder them within the list](_img/task-checklist-reorder-tasks.png)  
+
+> [!NOTE]   
+> Users with **Stakeholder** access can't drag-and-drop tasks or reorder and reparent tasks.
 
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 

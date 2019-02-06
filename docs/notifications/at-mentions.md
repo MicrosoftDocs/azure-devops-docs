@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -18,7 +18,7 @@ ms.date: 12/14/2018
 
 [!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
-The **@mention** control allows you to quickly pull someone into a work item or pull request.
+The **@mention** control allows you to quickly pull someone into a work item or pull request.
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
@@ -27,7 +27,7 @@ The **@mention** control allows you to quickly pull someone into a work item o
 
 <a id="mention-person-id">  </a>
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019"
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
 For team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
 

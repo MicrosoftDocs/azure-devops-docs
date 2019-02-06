@@ -6,12 +6,12 @@ ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 01/08/2019
 ---
 
 # Track progress by creating status and trend query-based charts 
@@ -27,22 +27,41 @@ For example, the following image illustrates four different charts created from 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
 ## Prerequisites
-::: moniker range=">= tfs-2017"
-- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
-- All members who belong to the Contributors group can create charts
-- To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions](dashboard-permissions.md)
-- You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.  
+
+By default, users with **Basic** access or higher can create charts from a flat list query. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+
+::: moniker range="azure-devops"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
+* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
+
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+
 ::: moniker-end
 
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
+* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
+
+::: moniker-end 
+
+
 ::: moniker range="tfs-2015"
-- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
-- All members who belong to the Contributors group can create charts
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 - You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
-- All members who belong to the Contributors group can create charts
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 ::: moniker-end
 
 To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
@@ -51,7 +70,7 @@ To learn more about default groups, see [About permissions and groups](../../org
 ## Create a query-based chart  
 1.	From **Queries**, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
 
-	::: moniker range=">= azdevserver-2019"  
+	::: moniker range=">= azure-devops-2019"  
 	> [!div class="mx-imgBorder"]  
 	> ![Charts, New chart button](_img/charts/new-chart-new-qe.png)   
 	::: moniker-end  
@@ -60,7 +79,7 @@ To learn more about default groups, see [About permissions and groups](../../org
 	::: moniker-end  
 
 2.	Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
-	::: moniker range=">= azdevserver-2019"  
+	::: moniker range=">= azure-devops-2019"  
 	> [!div class="mx-imgBorder"]  
 	> ![Charts, New chart button](_img/charts/config-pie-chart-priority-qe.png)  
 	::: moniker-end  
@@ -76,7 +95,7 @@ To learn more about default groups, see [About permissions and groups](../../org
 	If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
 
 3.	To sort the results, choose **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
-	::: moniker range=">= azdevserver-2019"  
+	::: moniker range=">= azure-devops-2019"  
 	To change a color, simply choose a color from the Series set of color pickers.   
 	> [!div class="mx-imgBorder"]  
 	> ![Charts, color series picker](_img/charts/color-series-picker.png)  
@@ -90,7 +109,7 @@ Charts automatically update when you edit the query or refresh the query results
 
 ### Stacked bar chart  
 A stacked bar chart lets you track progress against two field values. Node Name will display the last leaf within the hierarchy of area paths. Use this when you want to show data across teams.  
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, Stacked bar chart n](_img/charts/config-stacked-bar-chart-team-qe.png)   
 ::: moniker-end  
@@ -101,7 +120,7 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 ### Trend chart  
 Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year (earlier versions of TFS may have limited selections).  
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, Stacked bar chart](_img/charts/config-2-week-trend-chart-bugs.png)   
 ::: moniker-end  
@@ -114,7 +133,7 @@ Trend data is extracted from the work tracking data store. Like most data stores
 
 ### Burndown chart  
 Choose the **Sum** operator for **Remaining Work** to view a burndown chart of tasks. 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, Remaining work for past 4 weeks](_img/charts/config-remaining-work-trend-chart.png)   
 ::: moniker-end  
@@ -127,7 +146,7 @@ Choose the **Sum** operator for **Remaining Work** to view a burndown chart of t
 To add a chart to your team's home page, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
 
 Choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the chart you want to add, and select **Add to dashboard**.  
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Chart context menu, Add to dashboard option](_img/charts/add-chart-to-dashboard-qe.png)   
 
@@ -155,7 +174,7 @@ To add other types of charts, such as test results and build summary charts, see
 If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a team dashboard using the *Chart for work items* widget.  
 ::: moniker-end  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
 2. To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
@@ -263,7 +282,7 @@ When a chart contains more than seven items within the data series, values in th
 ![Other category groups data beyond 7 set series](_img/tfs-vso-remaining-category-consolidation-chart.png)  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ### Widgets and the Analytics Service 
 The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets.md).  
  

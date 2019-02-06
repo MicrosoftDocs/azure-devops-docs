@@ -6,7 +6,7 @@ ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Define your multi-stage continuous deployment (CD) pipeline
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

@@ -5,7 +5,7 @@ title: Extension Manifest Reference| Extensions for Azure DevOps Services
 description: How to create a manifest for your extension to Azure DevOps Services.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -139,7 +139,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```json
 {
     "galleryproperties": {
-        "trialDays ": "30"
+        "trialDays": "30"
     } 
 }          
 ```
@@ -573,6 +573,9 @@ Menus can be targeted by contributions of different types: action, hyperlink-act
 item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these
 types) that target that specific menu contribution.  
 
+### Adding a hub icon
+
+For information on adding an icon to your hub, check out the [hub icon guidance](web-navigation.md#hub-icon).
 
 <a name="approvedbadges"></a>
 

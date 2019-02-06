@@ -5,7 +5,7 @@
   inputs:
     #kubernetesServiceConnection: # Optional
     #namespace: # Optional
-    #command: 'apply' # Options: apply, create, delete, exec, expose, get, logs, run, set, top
+    #command: # Optional. Options: apply, create, delete, exec, expose, get, logs, run, set, top
     #useConfigurationFile: false # Optional
     #configuration: # Required when useConfigurationFile == True
     #arguments: # Optional

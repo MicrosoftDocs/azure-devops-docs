@@ -8,7 +8,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 12/04/2018
@@ -42,7 +42,7 @@ If you want to make a single update to one work item, you can do that from withi
 - [Capturing the work item to use as a template](../backlogs/work-item-template.md#capture)
 - [Updating fields of the work item by applying an existing template](../backlogs/work-item-template.md#apply) 
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 ## Work Items  
 
 Use the [Work Items](view-add-work-items.md) page to quickly focus on work items of interest to you. 
@@ -82,7 +82,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 
 
 **Additional supported tasks**:  
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 - [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md#update-fields-from-the-card)  
 - [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
 - [Monitoring lead time and cycle time control charts](../..//report/dashboards/cycle-time-and-lead-time.md)  
@@ -111,7 +111,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Emailing a list of backlog items](email-work-items.md)
 
 **Additional supported tasks**:  
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
 	- [Change work item type](../backlogs/remove-delete-work-items.md#change-type)  
 	- [Move work item to a different project](../backlogs/remove-delete-work-items.md#move)  

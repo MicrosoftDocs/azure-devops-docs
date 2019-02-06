@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Reporting Work Item Links | REST API Reference for Team Foundation Server
 description: Report on work item links programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 56c1dc20-c204-4550-8294-8d88b6a54aec
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

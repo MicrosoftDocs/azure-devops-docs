@@ -8,8 +8,8 @@ ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171
 ms.topic: conceptual
 ms.author: kaelli  
 author: KathrynEE 
-ms.manager: douge
-monikerRange: '>= tfs-2013 || azdevserver-2019'
+ms.manager: jillfra
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017 
 ---
 
@@ -19,7 +19,7 @@ ms.date: 01/20/2017
 
 After you analyze your customer requirements sufficiently to understand what the product should do, you must work out a plan to implement the product. Or, for an existing product, you must work out what functionality is missing and work out a plan for making the changes. But the requirements do not automatically tell you the plan.  
   
- This topic outlines a method of obtaining a plan, starting from a set of requirements. This is just one method among a variety that will work on Visual Studio, and you should adapt it so that it suits your needs.  
+ this article outlines a method of obtaining a plan, starting from a set of requirements. This is just one method among a variety that will work on Visual Studio, and you should adapt it so that it suits your needs.  
   
  You can use the [backlog](../../../backlogs/create-your-backlog.md) and [portfolio backlogs](../../../backlogs/organize-backlog.md) to define and map requirements and features.  
   

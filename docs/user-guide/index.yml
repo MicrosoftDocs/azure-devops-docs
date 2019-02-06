@@ -6,7 +6,7 @@ metadata:
   titleSuffix: Azure DevOps
   ms.custom: seodec18
   description: Learn the basics of the Azure DevOps interface and how to perform some common tasks.
-  ms.date: 12/07/2018
+  ms.date: 01/15/2019
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -258,6 +258,13 @@ sections:
           alt: Protect logo
           src: https://docs.microsoft.com/media/common/i_protect.svg
         title: About access levels
+      - href: ../security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+        html: <p></p>
+        image:
+          title: Azure DevOps data protection overview
+          alt: Security protection logo
+          src: https://docs.microsoft.com//media/common/i_threat-protection.svg
+        title: Data protection overview
 - title: Resources
   items:
   - type: list

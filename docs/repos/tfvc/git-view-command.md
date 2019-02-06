@@ -5,11 +5,11 @@ description: Git view command
 ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
-ms.date: 04/11/2018
+ms.date: 01/07/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -50,9 +50,11 @@ Retrieves a file from a Git repository to a temporary location on your computer 
 
 The following example retrieves a file from the default branch (typically master) and saves it to the current folder, and prompts the user for their credentials.
 
+>[!NOTE]
+>The following examples are broken into multiple lines for readability. To copy and paste them into the command-line and run them, first copy them and paste them into notepad or another tool and edit them so the commands are contained on a single line.
+
 ```
-tf git view /collection:https://dev.azure.com/fabrikam-fiber 
-            /teamproject:FabrikamProject 
+tf git view /collection:https://dev.azure.com/fabrikam-fiber /teamproject:FabrikamProject 
             /repository:FabrikamRepo 
             /path:FabrikamApp/Global.asax.cs 
             /output:Global.asax.cs 

@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Query for categories of work items defined in Team Foundation Server   
 ms.assetid: ae8ea834-400f-4cda-98d4-a7e612c91cce
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---

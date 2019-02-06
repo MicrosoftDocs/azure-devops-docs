@@ -10,8 +10,6 @@
     #command: 'Build an image' # Options: build An Image, tag Image, push An Image, run An Image, login, logout
     #dockerFile: '**/Dockerfile' # Required when command == Build An Image || Command == Build
     #arguments: # Optional
-    #useDefaultContext: true # Optional
-    #buildContext: # Optional
     #pushMultipleImages: false # Optional
     #tagMultipleImages: false # Optional
     #imageName: '$(Build.Repository.Name):$(Build.BuildId)' # Required when command == Build An Image || Command == Build || Command == Run An Image || Command == Run || PushMultipleImages == False || TagMultipleImages == False
@@ -20,6 +18,8 @@
     #includeSourceTags: false # Optional
     #includeLatestTag: false # Optional
     #addDefaultLabels: true # Optional
+    #useDefaultContext: true # Optional
+    #buildContext: # Optional
     #imageDigestFile: # Optional
     #containerName: # Optional
     #ports: # Optional

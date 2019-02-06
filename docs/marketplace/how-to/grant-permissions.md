@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 9/27/2017
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 **Azure DevOps Services** | **TFS** 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ## Grant management permissions 
 
@@ -36,7 +36,7 @@ Add users or update permission settings:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2013 < vsts"
+::: moniker range=">=tfs-2013 < azure-devops"
 
 ## Grant publish and update permissions on TFS
 

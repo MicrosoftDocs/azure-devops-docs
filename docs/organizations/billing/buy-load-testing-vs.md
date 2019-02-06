@@ -7,14 +7,16 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Buy cloud-based load testing for Azure DevOps
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## Azure DevOps
 

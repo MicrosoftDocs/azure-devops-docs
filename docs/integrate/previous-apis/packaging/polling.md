@@ -5,8 +5,8 @@ ms.assetid: 12ea9aa2-0c5c-413b-b167-44cd16410cc6
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azure-devops'
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

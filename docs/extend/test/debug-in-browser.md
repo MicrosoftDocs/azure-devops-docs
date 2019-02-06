@@ -5,7 +5,7 @@ title: Extension Debugging in a Browser | Extensions for Azure DevOps Services
 description: How to debug your Azure DevOps Services extension using browser tools.
 ms.assetid: 8dc00666-844c-404a-9699-512261e53ddf
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk

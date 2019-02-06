@@ -5,7 +5,7 @@ title: Auth and Security | Extensions for Azure DevOps Services
 description: Auth and security for Azure DevOps Services Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/29/2016
 ---
 
 # Auth and security
+
+> [!NOTE]
+> This page pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
 
 ## Calling REST APIs from your extension
 

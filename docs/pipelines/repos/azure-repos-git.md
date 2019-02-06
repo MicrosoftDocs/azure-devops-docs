@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
@@ -30,7 +30,7 @@ For an introduction to creating a pipeline, follow the steps in [Create your fir
 [!INCLUDE [temp](_shared/pipeline-options-for-git.md)]
 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ## Make open source projects public
 
@@ -41,7 +41,7 @@ If your Azure Repos Git repository is open source, you can make your Azure DevOp
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### Access restrictions
 
@@ -72,7 +72,7 @@ To configure validation builds for an Azure Repos Git repository, you must be a 
 2. Next, hover over the branch you wish to protect, click `...` to display its context menu, and then select **Branch policies**.
 3. Finally, click **Add build policy** and choose the pipeline and methods of protecting the branch as detailed in the Azure Repos documentation [here](../../repos/git/branch-policies.md#build-validation).
 
-::: moniker range=">=tfs-2018 || vsts"
+::: moniker range=">=tfs-2018 || azure-devops"
 
 ## Validate contributions from forks
 
@@ -80,7 +80,7 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 ::: moniker-end
 
-::: moniker range=">tfs-2018 || vsts"
+::: moniker range=">tfs-2018 || azure-devops"
 
 ## Add a build badge
 

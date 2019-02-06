@@ -9,5 +9,5 @@
     #scriptPath: # Required when runOptions == Script
     #inline: # Required when runOptions == Inline
     #args: # Optional
-    #failOnStdErr: # Optional
+    #failOnStdErr: true # Optional
 ```

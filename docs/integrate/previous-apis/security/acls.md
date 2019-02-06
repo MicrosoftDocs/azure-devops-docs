@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Access control lists (ACLs) | REST API Reference for Team Foundation Server
 description: Access control lists reference for integrating with VSTS
 ms.assetid: 79447872-9742-42c5-9d4a-2e291df06c85
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

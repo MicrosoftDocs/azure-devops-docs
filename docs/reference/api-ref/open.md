@@ -5,7 +5,7 @@ description: Syntax and usage for the Open method to open a work item for modifi
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 38195423-A9B7-4C5B-8FA2-F9DA5C97DB1F
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 08/04/2016

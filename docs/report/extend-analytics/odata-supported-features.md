@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.reviewer: kokosins
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 

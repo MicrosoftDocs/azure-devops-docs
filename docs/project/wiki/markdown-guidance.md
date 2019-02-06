@@ -1,17 +1,17 @@
 ---
 title: Markdown syntax for files, widgets, and wikis in Azure DevOps
 titleSuffix: Azure DevOps 
-description: Learn how to share information, add tables & mathematical notation usingMarkdown within pull requests, README files, dashboards, and wikis  
+description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 12/19/2018
+ms.date: 02/01/2019
 ---
 
 # Syntax guidance for Markdown usage
@@ -24,12 +24,12 @@ Having the right guidance at the right time is critical to success. Use [Markdow
 
 You can provide guidance in the following areas using Markdown:
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [Project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project mission page or Welcome pages](project-vision-status.md)
+- [Project page or Welcome pages](project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)  
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
@@ -40,33 +40,33 @@ You can provide guidance in the following areas using Markdown:
 
 - [Project wiki](add-edit-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project mission page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
-> Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. TheMarkdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity inMarkdown rendering in Wiki and MD files in code.
+> Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. The Markdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity in Markdown rendering in Wiki and MD files in code.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-- [Project mission page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
-> With TFS 2017.1, welcome pages, theMarkdown widget on team dashboards, and the Definition of Done on Kanban boards no longer supports file links in theirMarkdown. As a workaround, you can include your file link as text in the Markdown.
+> With TFS 2017.1, welcome pages, the Markdown widget on team dashboards, and the Definition of Done on Kanban boards no longer supports file links in their Markdown. As a workaround, you can include your file link as text in the Markdown.
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"
 
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-- [Project mission page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
@@ -157,7 +157,7 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 ### Horizontal rules
 
-To add a horizonal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
+To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
 **Example:**
 
@@ -188,19 +188,19 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 
 Combine these elements to apply emphasis to text.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!NOTE]  
-> There is noMarkdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
+> There is no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> There is noMarkdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
+> There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 > [!NOTE]  
-> There is noMarkdown syntax that supports underlining text.
+> There is no Markdown syntax that supports underlining text.
 ::: moniker-end
 
 **Example:**
@@ -279,30 +279,6 @@ Console.WriteLine("Hello, World!");
 ``` csharp
 Console.WriteLine("Hello, World!");
 ```
-
-## YAML tags
-
-Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
-
-Basic example:
-
-```yaml
-tag: post
-title: Hello world
-```
- 
-![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
-
-Tags with list:
-```yaml
-tags: 
-- post
-- code
-- web
-title: Hello world
-```
-
-![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
 
 ## Tables
 
@@ -558,7 +534,7 @@ You can Use `[ ]` or `[x]` to support checklists. You need to precede the checkl
 After you've added a task list, you can check the boxes to mark items as completed. These are expressed and stored within the comment as [ ] and [x] in Markdown.
 
 > [!div class="mx-imgBorder"]  
-> ![ApplyMarkdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png)
+> ![Apply Markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png)
 
 **Example - Format a list as a task list**
 
@@ -610,7 +586,7 @@ In pull request comments, you can use emojis to add characters and react to comm
 
 **Result:**  
 
-![Emojis inMarkdown](../../repos/git/_img/pull-requests/emoji-markdown.png)
+![Emojis in Markdown](../../repos/git/_img/pull-requests/emoji-markdown.png)
 
 To escape emojis, enclose them using the \` character.
 
@@ -847,7 +823,7 @@ $$
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 <a id="toc-wiki" > </a>
 
 ## Table of contents (TOC) for Wiki pages
@@ -869,11 +845,11 @@ For example: Adding bold and italics to a heading text renders the TOC as follow
 Consistency is maintained in the formatting in TOC.
 
 > [!NOTE] 
-> The tag [[\_TOC\_]] is case-sensitive. For example, [>> [\_toc\_]] may not render the TOC.
+> The tag [[\_TOC\_]] is case-sensitive. For example, [[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Embed Videos in a Wiki page
 
@@ -894,9 +870,61 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+
+## YAML tags
+
+Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
+
+Basic example:
+
+```yaml
+---
+tag: post
+title: Hello world
+---
+```
+ 
+![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
+
+Tags with list:
+```yaml
+---
+tags: 
+- post
+- code
+- web
+title: Hello world
+---
+```
+
+![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+## Embed Azure Boards query results in Wiki
+
+To embed Azure Boards query results in a wiki page as a table, use the following syntax:
+
+```boards-query
+::: query-table <queryid>
+:::
+```
+
+Alternatively, you can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+
+> ![Query Results Icon](_img/query_selector_icon.png)
+
+> ![Query Selector Pane](_img/query_selector_pane.png)
+
+
+::: moniker-end
+
 ## Related articles  
 
-- [Project mission page or Welcome pages](project-vision-status.md)
+- [Project page or Welcome pages](project-vision-status.md)
 - [README files](../../repos/git/create-a-readme.md)
 - [Pull requests](../../repos/git/pull-requests.md)
 - [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md)  

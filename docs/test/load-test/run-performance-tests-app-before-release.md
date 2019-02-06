@@ -5,7 +5,7 @@ ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018

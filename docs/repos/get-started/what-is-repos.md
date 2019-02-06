@@ -4,13 +4,13 @@ titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
 ms.prod: devops
 ms.technology: devops-new-user
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.date: 09/19/2018
 ms.topic: overview
 layout: LandingPage
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # What is Azure Repos?

@@ -6,17 +6,17 @@ description: Learn how to assign group-based licensing for users in Azure Active
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
-monikerRange: 'vsts'
+ms.date: 12/31/2018
+monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions to users
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can assign an access level or extensions to a group. Resources in Azure DevOps are assigned to all members of the group.
+Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can assign an access level or extensions to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are used only for *licensing* and not for permissions.
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 

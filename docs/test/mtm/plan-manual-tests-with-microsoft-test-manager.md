@@ -5,7 +5,7 @@ ms.assetid: 809F112E-062F-466A-A8AB-84A87431533D
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -44,7 +44,7 @@ At the start of a sprint, find out what you need to test. Discussing test cases 
   
    To add multiple lines in a step, press ALT + Enter.  
   
-Now that you've defined a manual test case, you can run it from Microsoft Test Manager and keep the results in TFS.  
+Now that you've defined a manual test case, you can run it from Microsoft Test Manager and keep the results in Azure DevOps or TFS.  
   
 ## Organize your test cases with test suites  
 
@@ -64,7 +64,8 @@ Test suites are folders inside a test plan that help you organize tests. When yo
   
   CTRL + drag or copy and paste to make the same test case appear in more than one suite.  
   
-  These operations don't affect the test case itself. Suites contain links to test cases, and it's the links that you're moving or copying. For the same reason, removing a test case from a suite doesn't delete the test case from TFS.  
+  These operations don't affect the test case itself. Suites contain links to test cases, and it's the links that you're moving or copying.
+  For the same reason, removing a test case from a suite doesn't delete the test case from Azure DevOps or TFS.  
   
 ## Try this next  
   

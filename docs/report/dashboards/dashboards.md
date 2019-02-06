@@ -6,7 +6,7 @@ ms.custom: "dashboards, seodec18"
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -34,11 +34,11 @@ The Overview page provides access to a default team dashboard which you can cust
 ::: moniker-end
 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ The Overview page provides access to a default team dashboard which you can cust
 All dashboards are associated with a team.
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
 
@@ -82,7 +82,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 
 Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
 
@@ -106,11 +106,11 @@ Open a web browser, connect to your project, and choose **Dashboards**.
 ![Dashboards directory, previous navigation](_img/dashboards-go-to.png) 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"  
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"  
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 ::: moniker-end  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -119,7 +119,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 <a id="choose-dashboard" />
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Select a dashboard to view, modify, or favorite
 
 0. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
@@ -157,7 +157,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
@@ -204,7 +204,7 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](_img/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
 - To delete a dashboard, open the Dashboards directory, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and select the **Delete** menu option.  
@@ -256,7 +256,7 @@ You can also [manage dashboard permissions](dashboard-permissions.md).
 > Just as you have to be a team admin, a project admin, or have the necessary permissions to add items to a dashboard, you must have the [necessary permissions](#permissions) to remove items.  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Choose ![ ](_img/icons/edit-icon.png) **Edit** to modify your dashboard. 
 
 You can then add widgets or drag tiles to reorder their sequence on the dashboard. 

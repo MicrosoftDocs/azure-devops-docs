@@ -5,11 +5,11 @@ description: Steps to add a custom Analytics view to for easy generation of Powe
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 06/30/2018 
 ---
 
@@ -42,7 +42,7 @@ Use this article to learn how to:
 From the **All** page as shown in the following image, you can access all Analytics views defined for the project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the project. Anyone on your team can connect and use shared views in Power BI.
 
 > [!div class="mx-imgBorder"]
-> ![Analytics Views directory](_img\editable-views\directory-actions.png)
+> ![Analytics Views directory](_img/editable-views/directory-actions.png)
 
 [!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
 
@@ -66,7 +66,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
 
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](_img\editable-views\general.png)
+> ![Analytics views General](_img/editable-views/general.png)
 
 
 <a id="specify-wi-filters" />
@@ -74,7 +74,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](_img\editable-views\work-items-default.png)
+> ![Analytics views General](_img/editable-views/work-items-default.png)
 
 > [!TIP]
 > Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.
@@ -85,21 +85,21 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
  You can change the selected teams for the current project or add additional projects to the filter. You can also change from filtering on teams to area Paths. Here is a view filtered by two Fabrikam area paths.
 > [!div class="mx-imgBorder"]
-> ![Area Path picker example](_img\editable-views\area-path.png)
+> ![Area Path picker example](_img/editable-views/area-path.png)
 
 * **Add filters for backlogs and work items types**
 
    Scope the data to specific Work item types in your project. You can specify a backlog to filter by work item types associated with a specific backlog level or add individual specific work item types. Work items of the selected types are included in the view.
 
     > [!div class="mx-imgBorder"]
-    > ![Work item type picker](_img\editable-views\wi-type-picker.png)
+    > ![Work item type picker](_img/editable-views/wi-type-picker.png)
 
 * **Add filters by field criteria**
 
     In addition to all previous filter criteria, you can add filters based on different work item fields. You specify these fields in the same way you do for fields you add to a work item query. As shown in the following example, you can filter to show only high Priority bugs with the specific "Hotfix" tag.
 
     > [!div class="mx-imgBorder"] 
-    > ![Filter by Bugs, Priority, and Tags example](_img\editable-views\field-criteria.png)
+    > ![Filter by Bugs, Priority, and Tags example](_img/editable-views/field-criteria.png)
 
 	For details about working with tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 

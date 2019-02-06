@@ -5,7 +5,7 @@ ms.topic: include
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
  
@@ -25,7 +25,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 From your web browser, (1) select the project, choose (2) **Work**, (3) **Queries**, and then (4) **All**.
 
 > [!div class="mx-imgBorder"]  
@@ -37,14 +37,14 @@ If it is your first time opening the **Work**, the page opens to **Favorites** w
 > Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Project page. To learn more, see [Set personal or team favorites](/azure/devops/project/navigation/set-favorites). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 From your web browser, open **Boards>Queries**. 
 
 ![Web portal, choose Boards>Queries](/azure/devops/boards/queries/_img/view-run-queries/open-hub-page.png) 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 **Previous navigation** isn't supported for Azure DevOps Server 2019. Choose **New navigation** for guidance.
 
 ::: moniker-end

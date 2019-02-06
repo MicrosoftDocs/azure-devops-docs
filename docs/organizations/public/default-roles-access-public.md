@@ -5,12 +5,12 @@ description: Overview of public project user roles and access
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 07/02/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 
@@ -137,7 +137,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 1. Several widgets aren't available to non-members.
 2. Stakeholders have Full access to **Repos** or **Code** features in public projects, but they have no access in private projects.
 3. Stakeholders have full access to **Boards** or **Work** in public projects, but they have partial access in private projects. For more information, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
-4. Basic users can view and run tests from **Test Plans** or **Test**. Basic users need the Test Manager extension to get full access, which includes capability to create test plans and add test cases.
+4. Basic users can view and run tests from **Test Plans** or **Test**. Basic users need the Test Manager extension for Azure Test Plans to get full access, which includes capability to create test plans and add test cases.
 
 
 ## Pipelines/Build and Release

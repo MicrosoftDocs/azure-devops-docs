@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
-monikerRange: 'vsts'
+ms.date: 12/21/2018
+monikerRange: 'azure-devops'
 ---
 # Separate your organization from Azure Active Directory
 
@@ -52,7 +52,7 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 3. Select your organization.
 
-   ![Select your organization in Azure portal](_img/_shared/azure-portal-select-organization.png)
+   ![Select your organization](_img/_shared/azure-portal-select-organization.png)
 
 4. Select **Disconnect AAD**.
 

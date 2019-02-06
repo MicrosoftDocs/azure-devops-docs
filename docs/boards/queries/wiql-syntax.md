@@ -7,11 +7,11 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 02/04/2019
 ---
 
 
@@ -45,6 +45,15 @@ SELECT Select_List
    [ASOF DateTimeConditions]
 ```
 
+
+### Date-time pattern
+You specify the date-time pattern according to one of two patterns: 
+- The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
+- The pattern specified by UTC which follows this pattern (with Z appended to the date-time): 
+	`AND System.ChangedDate >= '1/1/2019 00:00:00Z' `
+
+
+### Example clauses
 
 The following example statements show specific qualifying clauses.
 
@@ -446,6 +455,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
 - [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md) 
+- [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ### Limits on WIQL length  

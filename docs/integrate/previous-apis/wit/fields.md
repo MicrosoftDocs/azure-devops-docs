@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Fields | REST API Reference for Team Foundation Server
 description: Work with work item fields programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A2365AB4-482A-46A5-A235-2D3C94C2ED96
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -7668,7 +7668,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/fields/{fieldName}?api-versio
 | Property  	| Type 		| Description 
 |:--------------|:----------|:----------------------------
 | instance      | string    | TFS server name ({server:port}).
-| fieldName     | string    | Refernce name of the field
+| fieldName     | string    | Reference name of the field
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

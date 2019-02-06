@@ -5,7 +5,7 @@ description: Reporting roadmap for Azure DevOps and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -31,7 +31,7 @@ While in Public Preview, the Analytics extension is free.
 
 We are currently working out what our pricing model will be. We plan to share details in Q4, 2018.
 
-::: moniker range="tfs-2018 || azdevserver-2019"  
+::: moniker range="tfs-2018 || azure-devops-2019"  
 
 ## Azure DevOps Server, TFS, and SQL Server Reporting
 

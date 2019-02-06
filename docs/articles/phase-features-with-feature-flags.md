@@ -4,9 +4,9 @@ description: Explore how to progressively expose your features in production for
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 04/26/2018
-ms.author: douge
+ms.author: sdanie
 author: wpschaub
 monikerRange: '>= tfs-2013'
 ---

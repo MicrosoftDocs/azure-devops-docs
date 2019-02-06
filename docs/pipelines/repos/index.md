@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
@@ -29,7 +29,7 @@ At the beginning of a pipeline, the agent downloads files from your repository i
 If your pipeline consists of multiple jobs, the agent downloads source files at the beginning of each job. You can specify only one source repository for your entire pipeline.
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 **Azure Pipelines:** To specify the source repository, while editing your pipeline, click the **YAML** or **Tasks** tab, then click **Get sources**, and then select the type of repo that contains your source files.
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Reference directories using build variables such as `$(Build.SourcesDirectory)` 
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

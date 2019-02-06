@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: douge
+ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
 ms.date: 12/07/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Analyze test results
 
-[!INCLUDE [version-header-ap](_shared/version-header-ap.md)]
+[!INCLUDE [version-header-ap](../_shared/version-team-services.md)]
 
 Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
 Test analytics provides near real-time visibility into your test data for builds and releases.

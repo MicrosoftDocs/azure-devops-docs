@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/29/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Deploy an agent on Linux
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -33,7 +33,7 @@ To build or deploy you'll need at least one agent. A Linux agent can build and d
 
 Where are your builds and releases running?
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 **Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
 
@@ -60,7 +60,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### Azure Pipelines
 
@@ -125,7 +125,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
@@ -303,7 +303,7 @@ You can use the template described above as to facilitate generating other kinds
 
 Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/azure-pipelines-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 ::: moniker-end
 
@@ -315,15 +315,15 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 
 [Run the agent behind a web proxy](proxy.md)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [include](../_shared/qa-versions.md)]
 ::: moniker-end
 

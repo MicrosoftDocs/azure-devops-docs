@@ -5,11 +5,11 @@ description: Git permission command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
-ms.date:  04/11/2018
+ms.date:  01/07/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -59,6 +59,9 @@ See [Git repository permission namespaces and actions](/tfs/server/ref/command-l
 
 
 ## Examples
+
+>[!NOTE]
+>The following examples are broken into multiple lines for readability. To copy and paste them into the command-line and run them, first copy them and paste them into notepad or another tool and edit them so the commands are contained on a single line.
 
 ### View collection level permissions
 

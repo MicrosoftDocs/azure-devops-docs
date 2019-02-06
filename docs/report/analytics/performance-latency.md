@@ -5,11 +5,11 @@ description: Understand how data is updated and time requirements associated wit
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/13/2017
 ---
 

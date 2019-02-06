@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 
@@ -28,7 +28,7 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 >[!NOTE]  
 >Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -37,7 +37,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

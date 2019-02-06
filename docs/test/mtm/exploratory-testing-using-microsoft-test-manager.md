@@ -5,7 +5,7 @@ ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -18,6 +18,8 @@ monikerRange: '>= tfs-2015'
 
 >[!NOTE]
 >[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
+**For Azure DevOps and TFS, see [Exploratory testing with the Test &amp; Feedback extension](../connected-mode-exploratory-testing.md).**
 
 While you work with your application, Microsoft Test Manager can record your actions, comments, screenshots and other data. The recording makes it easy to reproduce bugs. And you can quickly play back your tests whenever the application is updated.  
 

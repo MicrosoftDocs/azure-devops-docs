@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 04/17/2018
@@ -199,7 +199,7 @@ Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (f
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-test.png)
 
-See [Get started with continuous testing](../test/getting-started-with-continuous-testing.md) and [Visual Studio Test task](../tasks/test/vstest.md).
+See [continuous testing](../languages/dotnet-core.md#run-your-tests) and [Visual Studio Test task](../tasks/test/vstest.md).
 
 #### Publish Symbols
 
@@ -335,7 +335,7 @@ XAML builds are deprecated. We strongly recommend that you migrate to the new bu
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
 

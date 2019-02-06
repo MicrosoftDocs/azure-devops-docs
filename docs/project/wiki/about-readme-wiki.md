@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
@@ -15,7 +15,7 @@ ms.date: 12/17/2018
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 # About Wikis, READMEs, and Markdown
 
@@ -45,12 +45,12 @@ You can provide guidance to your team in the following places using Markdown:
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
   
 - [Team project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project mission page or Welcome pages](project-vision-status.md)
+- [Project page or Welcome pages](project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -60,7 +60,7 @@ You can provide guidance to your team in the following places using Markdown:
   
 - [Add and edit wiki pages](add-edit-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project mission page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -69,7 +69,7 @@ You can provide guidance to your team in the following places using Markdown:
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project mission page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 
@@ -111,7 +111,7 @@ Use your team project wiki to share information with other team members. When yo
 > The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 The following features are supported for the team project wiki.
 
@@ -168,7 +168,7 @@ The following features are supported for the team project wiki you create in the
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Publish existing Git repositories to a wiki  
 

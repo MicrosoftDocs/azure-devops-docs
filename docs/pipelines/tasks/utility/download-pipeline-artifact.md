@@ -9,14 +9,14 @@ ms.manager: hdixon
 ms.custom: seodec18
 ms.author: midenn
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Download Pipeline Artifact task
 
 Use this task in a build or release pipeline to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/DownloadPipelineArtifactV0.md)]
 ::: moniker-end

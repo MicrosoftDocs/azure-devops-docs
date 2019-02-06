@@ -5,12 +5,12 @@ description: Search across all repositories defined in a public project to find 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: 
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Search the code base of a public project

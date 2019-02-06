@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Cases | REST API Reference for Team Foundation Server
 description: Work with test cases programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 17A2D523-0FEA-47EE-9C61-98D016F4F91D
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

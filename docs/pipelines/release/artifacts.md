@@ -6,7 +6,7 @@ ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 11/29/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Release artifacts and artifact sources
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -512,9 +512,6 @@ build pipeline, job, project, or repository. You can edit
 the source alias from the artifacts tab of a release pipeline; for example, when you change
 the name of the build pipeline and you want to use a
 source alias that reflects the name of the build pipeline.
-
-> The source alias can contain only alphanumeric characters
-and underscores, and must start with a letter or an underscore
 
 <a name="art-primary"></a>
 

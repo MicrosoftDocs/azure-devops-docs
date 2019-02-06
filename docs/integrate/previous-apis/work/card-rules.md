@@ -4,8 +4,8 @@ description: Work with Kanban board Card Styling Rules programmatically using th
 ms.assetid: B1E4A7C6-E04C-42B9-8A55-0B18E00970EA
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azure-devops'
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

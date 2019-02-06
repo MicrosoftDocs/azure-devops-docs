@@ -7,7 +7,7 @@ ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= tfs-2013"
@@ -23,7 +23,7 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 
 ## 5-Minute Quickstarts  
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 - [Add, rename, and delete dashboards](dashboards.md) 
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json) 
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
@@ -37,7 +37,7 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 ::: moniker-end
 
 ## Step-by-Step Tutorials
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 - [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 - [Configure the Velocity widget](team-velocity.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
@@ -65,7 +65,7 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 - [Set dashboard permissions](dashboard-permissions.md)  
 
 ## Samples
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)  
 - [Add a chart widget](../../extend/develop/add-chart.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
@@ -89,7 +89,7 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 
 
 ## Resources 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 - [Azure Boards](/azure/devops/boards/index)
 - [Azure Test Plans](/azure/devops/test/index-tp)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  

@@ -6,14 +6,14 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 12/4/2018
 ---
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 # About user, team, project, and organization-level settings 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
@@ -27,7 +27,7 @@ If you're just getting started as a project administrator, see [Get started as a
 
 ::: moniker-end  
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 # About user, team, project, and collection-level settings
 
@@ -124,8 +124,8 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 <li>[Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
 <li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
 <li>[Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Configure default area and iteration paths](set-team-defaults.md)</li>
-<li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
+<li>[Configure area paths](set-area-paths.md)</li>
+<li>[Select active iteration paths (sprints)](set-iteration-paths-sprints.md)</li>
 <li>[Define work item templates](../../boards/backlogs/work-item-template.md)</li>
 </ul></td>
 <td>For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view: [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). </td>
@@ -160,7 +160,7 @@ See also [Get started as an administrator](../../user-guide/project-admin-tutori
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
@@ -174,7 +174,7 @@ From the administrative **Project settings** pages, you can configure settings a
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
@@ -187,7 +187,7 @@ From the administrative **Project settings** pages, you can configure settings a
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -322,7 +322,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"   
+::: moniker range=">= azure-devops-2019"   
 **Organization settings**  
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
@@ -336,7 +336,7 @@ From the administrative **Organization settings** pages, you can configure setti
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"   
+::: moniker range="azure-devops"   
 
 **Organization settings**  
 From the **Admin settings** page, you can configure the settings shown in the following image. 
@@ -355,13 +355,13 @@ From the administrative pages for a collection, you can configure the settings s
 ![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
 
 <table>
@@ -488,7 +488,7 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
 
 
@@ -645,7 +645,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker-end
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 <a id="admin" />
 

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
@@ -53,11 +53,12 @@ None
 <td><p>Specify match pattern filters (one on each line) that you want to apply to the list of files to be copied. For example:
 </p>
 <ul>
-<li>```*``` copies all files in the root folder.</li>
-<li>```**\*``` copies all files in the root folder and all files in all sub-folders.</li>
+<li>```*``` copies all files in the specified source folder.</li>
+<li>```**\*``` copies all files in the specified source folder and all files in all sub-folders.</li>
 <li>```**\bin\**``` copies all files recursively from any ```bin``` folder.</li>
 </ul>
 <p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
+<p>You must use the path separator that matches your build agent type, e.g. `/` must be used for Linux agents.
 <p>More examples are shown below.</p>
 </td>
 </tr>
@@ -110,7 +111,7 @@ On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 **Example with multiple match patterns:**
 
@@ -155,7 +156,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -222,7 +223,7 @@ These files are copied to the staging directory:
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 **Example with multiple match patterns:**
 
@@ -240,7 +241,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -291,7 +292,7 @@ See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

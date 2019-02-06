@@ -5,7 +5,7 @@ description: Query work items based on link type, link count, link restrictions,
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -20,7 +20,7 @@ ms.date: 11/19/2018
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following fields:
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 - Attachment File Count
 - (Discussion) Comment Count 
 - External Link count
@@ -31,7 +31,7 @@ You can [link work items to track related work and dependencies](link-work-items
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019" 
+::: moniker range=">= tfs-2017 <= azure-devops-2019" 
 - Attachment File Count
 - (Discussion) Comment Count 
 - External Link count
@@ -261,7 +261,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <tr>
 <td><a id="related-link-count"/>
 <p>Related Link Count</p></td>
-<td><p>The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Sucessor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)</p>
+<td><p>The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)</p>
 <p>Reference Name=System.RelatedLinkCount, Data type=Integer</p>
 </td>
 <td>All</td>
@@ -287,13 +287,13 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
  
-::: moniker range=">= tfs-2015 <= azdevserver-2019" 
+::: moniker range=">= tfs-2015 <= azure-devops-2019" 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019" 
+::: moniker range=">= tfs-2013 <= azure-devops-2019" 
 
 ### Add custom link types or customize the links controls 
 

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/28/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Tasks for builds and releases
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -203,7 +203,7 @@ The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads the Node.js ver
 
 Apply the following agent settings:
 
-1. Set **Parallelism** to **Mutli-configuration**
+1. Set **Parallelism** to **Multi-configuration**
 
 2. Specify **Multipliers**:
 

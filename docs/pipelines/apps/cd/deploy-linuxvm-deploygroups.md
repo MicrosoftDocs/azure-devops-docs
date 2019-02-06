@@ -5,21 +5,17 @@ ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ---
 
 # Deploy to a Linux Virtual Machine
 
-**Azure Pipelines | TFS 2018**
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines or Team Foundation Server (TFS) 2018. You can use the steps in this

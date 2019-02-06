@@ -22,6 +22,8 @@
     href: get-started-azure-devops-project.md
 - name: Languages
   items: 
+  - name: Anaconda
+    href: languages/anaconda.md
   - name: ASP.NET
     href: apps/aspnet/build-aspnet-4.md
   - name: .NET Core
@@ -60,12 +62,6 @@
     href: targets/webapp.md
   - name: Linux VM
     href: apps/cd/deploy-linuxvm-deploygroups.md
-  - name: npm
-    href: artifacts/npm.md
-  - name: NuGet
-    href: artifacts/nuget.md
-  - name: PyPI
-    href: targets/pypi.md
   - name: SCVMM
     href: targets/scvmm.md
   - name: VMware
@@ -128,9 +124,9 @@
       href: build/variables.md
   - name: Releases
     items:
-    - name: What are release pipelines?
+    - name: Why use release pipelines?
       href: release/what-is-release-management.md
-    - name: Pipelines and names
+    - name: Pipelines and options
       href: release/index.md
     - name: Stages
       href: release/environments.md
@@ -184,6 +180,8 @@
         href: process/deployment-group-phases.md
       - name: Multiple jobs
         href: process/multiple-phases.md
+      - name: Service containers
+        href: process/service-containers.md
     - name: Conditions
       href: process/conditions.md
     - name: Expressions
@@ -249,6 +247,8 @@
       href: release/define-multistage-release-process.md
     - name: Use approvals and gates
       href: release/deploy-using-approvals.md
+    - name: Integrate with ServiceNow
+      href: release/approvals/servicenow.md
     - name: Deploy pull request builds
       href: release/deploy-pull-request-builds.md
     - name: Jenkins CI for Azure Pipelines Azure CD
@@ -267,10 +267,6 @@
     items:
     - name: Test glossary
       href: test/test-glossary.md
-    - name: Set up environments
-      href: test/set-up-continuous-test-environments-builds.md
-    - name: Unit test with builds
-      href: test/getting-started-with-continuous-testing.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
     - name: Review test results
@@ -289,8 +285,6 @@
       href: test/parallel-testing-vstest.md
     - name: UI testing considerations
       href: test/ui-testing-considerations.md
-    - name: FAQs for testing
-      href: test/reference-qa.md
   - name: Package
     items:
     - name: NuGet
@@ -301,6 +295,8 @@
         href: packages/jenkins.md
   - name: Migrate
     items:
+    - name: Migrate from Travis
+      href: migrate/from-travis.md
     - name: Migrate from XAML builds
       href: build/migrate-from-xaml-builds.md
     - name: Migrate from Lab Management
@@ -580,3 +576,5 @@
       href: tasks/file-matching-patterns.md
     - name: File and variable transform
       href: tasks/transforms-variable-substitution.md
+  - name: REST API reference
+    href: /rest/api/vsts/

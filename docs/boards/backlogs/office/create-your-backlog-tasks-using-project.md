@@ -5,7 +5,7 @@ description: Add items, plan, order, and estimate your backlog of deliverables i
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
-ms.manager: douge  
+ms.manager: jillfra 
 ms.author: kaelli
 author: KathrynEE  
 ms.topic: conceptual
@@ -23,9 +23,9 @@ If Office Project is your preferred tool for tacking projects, you can use it to
 > [!IMPORTANT]  
 > Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project. You can continue to use Office Excel. 
 
-Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#differences).
+Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this article](#differences).
 
-Use this topic to learn how to:  
+Use this article to learn how to:  
 
 > [!div class="checklist"]      
 > * Connect a Project plan to a project  
@@ -129,7 +129,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 	> [!TIP]  
 	> Although Project supports allocation of more than one resource to a task, Azure Boards work tracking does not. If a task requires more than one resource to complete, divide the task into subtasks and assign one resource to each subtask. Only assign a project member as a resource to those tasks that you will publish.
     >  
-    >Specify resources by their display names from Azure Active Direct (for Azure DevOps Services) or Active Directory Domain Services (for TFS). If you assign a resource by its alias or other name, you risk incurring validation errors.
+    >Specify resources by their display names from Azure Active Directory (for Azure DevOps Services) or Active Directory Domain Services (for TFS). If you assign a resource by its alias or other name, you risk incurring validation errors.
 
 7.  Save your project plan to retain scheduling and other data that Azure Boards doesn't store.
 

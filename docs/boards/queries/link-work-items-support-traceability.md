@@ -5,7 +5,7 @@ description: Manage dependencies, link work items to other work items, code and 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -34,7 +34,7 @@ Below, you can learn how to link objects and which link types to use. You can li
 > [!NOTE]    
 > Work item forms and features available to you can differ depending on whether you open the form from the web portal or Visual Studio Team Explorer. 
 
-This topic describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
+this article describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
 
 <a id="link-work-items">  </a>
 ## Work items linked to work items
@@ -61,7 +61,7 @@ Also, you can use the context menu in the web portal or Team Explorer.
 > [!NOTE]
 > For each work item, you can add a maximum of 1000 links to other work items.  
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 <a id="link-remote-work-items">  </a>
 ## Cross-organization work item linking 
 
@@ -187,7 +187,7 @@ From **Test** you can add test plans, test suites, and test cases&mdash;which ar
 
 As you develop your software, you can capture which code changes and builds support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 <img src="_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
@@ -222,7 +222,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 ::: moniker-end
 
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 <a id="link-github">  </a>
 ## Work items linked to GitHub commits and pull requests  
 

@@ -5,7 +5,7 @@ ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/01/2018
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for manual testing
 
-[!INCLUDE [version-inc-vs](_shared/version-inc-vs.md)] 
+[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -204,13 +204,13 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
+Then you can filter on that tag from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
+![In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
@@ -364,11 +364,18 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Where can I download Azure Test Runner client?
 
-**A:** Azure Test runner client can be downloaded from [here](http://aka.ms/ATRDownload).
+**A:** Azure Test Runner client can be downloaded from [here](https://aka.ms/ATPTestRunnerDownload).
 
 ### Q: What are the supported operating systems for Azure Test Runner client?
 
-**A:** Azure Test runner client is currently supported on only Windows. 
+**A:** Azure Test Runner client is currently supported on only Windows. 
+
+### Q: Can I opt out of telemetry for Azure Test Runner client? 
+
+**A:** No. The Azure Test Runner client does not collect any user-identifiable data and so,
+in adherance to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+no opt-out mechanism is provided. 
+
 
 <a name="runoffline"></a>
 ### Q: Can I run tests offline and then import the results?

@@ -5,7 +5,7 @@ ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Azure SQL database deployment
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -29,13 +29,13 @@ The simplest way to deploy a database is to create [data-tier package or DACPAC]
 
 # [YAML](#tab/yaml)
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML is not supported in TFS.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 To deploy a DACPAC to an Azure SQL database, add the following snippet to your azure-pipelines.yml file.
 
@@ -126,7 +126,7 @@ If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $A
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
@@ -164,7 +164,7 @@ steps:
 ```
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML is not supported in TFS.
 
@@ -186,7 +186,7 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 
 The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The easiest way to get started with this task is to be signed in as a user that owns both the Azure DevOps organization and the Azure subscription.
 In this case, you won't have to manually create the service connection.
@@ -194,7 +194,7 @@ Otherwise, to learn how to create an Azure service connection, see [Create an Az
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -206,7 +206,7 @@ You may choose to deploy only certain builds to your Azure database.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -231,7 +231,7 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -254,7 +254,7 @@ To learn more, see [Release, branch, and stage triggers](../release/triggers.md)
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
 that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need.
-This section shows some of the common use cases for invoking the [SqlPackage.exe tool](https://docs.microsoft.com/en-us/sql/tools/sqlpackage-download).
+This section shows some of the common use cases for invoking the [SqlPackage.exe tool](https://docs.microsoft.com/sql/tools/sqlpackage-download).
 As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
 
 > [!NOTE]

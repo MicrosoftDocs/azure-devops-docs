@@ -5,7 +5,7 @@ description: Use the branches page to lock a branch in Azure DevOps Services or 
 ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

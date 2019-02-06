@@ -6,7 +6,7 @@ ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # File transforms and variable substitution reference
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -155,14 +155,14 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
 * XML transformation takes effect only when the configuration file and transform file
   are in the same folder within the specified package.
- 
-* Set the **Copy to Output Directory** property for the configuration transform files to **Copy If Newer**.
 
 * By default, MSBuild applies the transformation as it generates the web package if the `<DependentUpon>` element
   is already present in the transform file in the `*.csproj` file. In such cases, the **Azure App Service Deploy**
   task will fail because there is no further transformation applied on the `Web.config` file. Therefore, it is
   recommended that the `<DependentUpon>` element is removed from all the transform files to disable any build-time
   configuration when using XML transformation.
+  
+* Set the **Build Action** property for each of the transformation files (`Web.config`) to **Content** so that the files are copied to the root folder.
 
   ```xml
   ...

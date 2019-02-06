@@ -6,12 +6,12 @@ ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
 ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.reviewer: sancha
-monikerRange: 'tfs-2018 || vsts'
+monikerRange: 'tfs-2018 || azure-devops'
 ms.date: 12/17/2018  
 ---  
 

@@ -5,7 +5,7 @@ ms.assetid: 4F99CDBA-8264-4BFA-8AB1-491403B6402C
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -14,13 +14,15 @@ monikerRange: '> tfs-2018'
 
 # New test plans view
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 A new and fully redesigned user experience is available for test plans in Azure DevOps.
 To use this page, you simply need to switch it on using one of the on-screen prompts,
 or from the [user profile **Previews** panel](../../project/navigation/preview-features.md#enable-features-for-your-use).
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
-In the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], choose the **Test plans** link to access the new test plans view.
+In [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], choose the **Test plans** link to access the new test plans view.
 
 ![Opening the test plans view](_img/1.png)
 

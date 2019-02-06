@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
@@ -57,7 +57,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards. 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
 ::: moniker-end
 

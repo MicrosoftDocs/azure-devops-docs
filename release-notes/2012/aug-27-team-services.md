@@ -53,7 +53,7 @@ Click the “Enable alternate credentials and set password” link on the Creden
 
 ![Enable alternate credentials on the user profile page](_img/8_27_06.png)
 
-Then enter a password and save the changes. You now have a username and password you can use with the cross platform TEE command line and with the Git-tf command line. See the [learn content](/azure/devops/git/auth-overview?view=vsts#alternate-credentials) for more info on how to use this.
+Then enter a password and save the changes. You now have a username and password you can use with the cross platform TEE command line and with the Git-tf command line. See the [learn content](/azure/devops/git/auth-overview?view=azure-devops#alternate-credentials) for more info on how to use this.
 
 That’s it for sprint 35. We’re already busy on sprint 36 and looking forward to bringing more great stuff your way. Please feel free to use our [UserVoice site](https://visualstudio.uservoice.com/forums/330519-vso) if you want to help prioritize our investments.
 

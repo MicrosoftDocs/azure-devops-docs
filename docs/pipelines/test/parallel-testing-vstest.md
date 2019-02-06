@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: douge
+ms.manager: jillfra
 ms.author: pbora
 author: pboraMSFT
 ms.date: 12/07/2018
@@ -15,7 +15,12 @@ monikerRange: '>= tfs-2017'
 
 # Run tests in parallel using the Visual Studio Test task
 
-**Azure Pipelines | TFS 2017.1 and later**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+
+::: moniker range="< tfs-2018"
+> [!NOTE]
+> For TFS, this topic applies to only TFS 2017 Update 1 and later.
+::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite

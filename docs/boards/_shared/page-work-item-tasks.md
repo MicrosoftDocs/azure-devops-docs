@@ -5,7 +5,7 @@ ms.topic: include
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - [**Work items**](/azure/devops/boards/work-items/view-add-work-items): Use to quickly find work items assigned to you or pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
 - [**Boards**](../boards/kanban-quickstart.md): Use to implement Kanban practices and visualize the flow of work for a team. 
 - [**Backlogs**](/azure/devops/boards/backlogs/create-your-backlog): Use to plan, prioritize, and organize the work for a team to do within a product or [portfolio backlogs](/azure/devops/boards/backlogs/organize-backlog).  
@@ -22,7 +22,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="tfs-2018 || vsts"
+::: moniker range="tfs-2018 || azure-devops"
 - [**Work items**](/azure/devops/boards/work-items/view-add-work-items): Use to quickly find work items assigned to you or pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.  
 - **Backlogs**: Which provide access to: 
 	- [**Product**](/azure/devops/boards/backlogs/create-your-backlog) and [**Portfolio backlogs**](/azure/devops/boards/backlogs/organize-backlog): Use to plan, prioritize, and organize the work for a team to do within a product or portfolio backlogs.  
@@ -51,7 +51,7 @@ Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versio
 - [**Queries**](/azure/devops/boards/queries/view-run-query): Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates. 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 Choose **New navigation** for guidance. **Previous navigation** isn't supported for Azure DevOps Server 2019. 
 

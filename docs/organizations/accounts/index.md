@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
@@ -57,7 +57,7 @@ Sign up for an organization, add users, and manage permissions and access.
     * [Add users to your organization](add-organization-users.md)
     * [Manage users](manage-users-table-view.md)
     * [Manage conditional access](manage-conditional-access.md)
-    * [Link work accounts to Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json&view=vsts)
+    * [Link work accounts to Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json&view=azure-devops)
     * [Authenticate with personal access tokens](use-personal-access-tokens-to-authenticate.md)
     * [Change app access policies](change-application-access-policies.md)
     * [Delete users](delete-organization-users.md)
@@ -83,7 +83,7 @@ Sign up for an organization, add users, and manage permissions and access.
 * [Permission lookup guide (Security)](../security/permissions-lookup-guide.md)
 * [Permissions and groups reference (Security)](../security/permissions.md)
 * [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md)
-* [Migrate from TFS to Azure DevOps](../../articles/migrate-from-tfs.md)
+* [Migrate from TFS to Azure DevOps](../../articles/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
 ## Resources
 

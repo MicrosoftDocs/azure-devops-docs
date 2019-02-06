@@ -5,8 +5,9 @@ description: Index to XML syntax elements and main attributes for the work item 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
-ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.author: kaelli
+author: KathrynEE
+ms.manager: jillfra
 ms.topic: reference
 ms.date: 03/02/2017
 ---
@@ -79,7 +80,7 @@ You can specify how information and work item fields are grouped and appear in a
 </tr>
 <tr><td data-th="Element"><p><strong>Column</strong></p></td><td data-th="Description"><p>Divides a form's regions into columns.</p>
 <code>
-&lt;Column PercentWidth="WidthPerceOfContainingElement" FixedWidth="WidthInPixels"&gt;  
+&lt;Column PercentWidth="WidthPercentOfContainingElement" FixedWidth="WidthInPixels"&gt;  
 &#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;  
 &#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;  
 &#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;  

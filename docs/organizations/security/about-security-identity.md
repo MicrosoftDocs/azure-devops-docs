@@ -6,12 +6,12 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/25/2019
 ---
 
 # About security and identity
@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Azure DevOps Server 2019 (formerly known as Team Foundation Server), with additional cloud services. Both support software development projects, from planning through deployment. 
 Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
 
-This article introduces the main security concepts employed by Azure DevOps. To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../articles/team-services-security-whitepaper.md).    
+This article introduces the main security concepts employed by Azure DevOps. To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../articles/team-services-security-whitepaper.md).
 
 The main security concepts to understand are
 
@@ -84,6 +84,9 @@ no app can use that method to access your account.
 Any app that previously had access will get an 
 authentication error and can't access your account.
 
+To learn more about how we store your credentials, see [Credential storage for Azure DevOps](../../articles/credential-storage.md).
+
+To learn more about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
 
 ## Authorization
 Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method.
@@ -229,8 +232,9 @@ Certain features are only available to users who have the appropriate licensing 
 ## Related articles
 
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md). 
-- [Set up groups for use in on-premises deployments](/tfs/server/admin/setup-ad-groups).
+- [Default permissions and access for Azure DevOps](permissions-access.md)
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md)
+- [Set up groups for use in on-premises deployments](/tfs/server/admin/setup-ad-groups)
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/tfs/server/admin/setup-secure-sockets-layer)
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections.

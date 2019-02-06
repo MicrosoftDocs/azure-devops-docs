@@ -5,7 +5,7 @@ description: Guide to configuring and customizing work tracking features in Azur
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -164,7 +164,7 @@ The following table summarizes the differences between the three supported proce
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
 
 <a id="choose-process-model" />
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 ## Choose the process model for your project collection 
 For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between **XML** (On-premises XML process model) and **Inheritance** (Inheritance process model), as shown in the following dialog. 
 
@@ -234,7 +234,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 </tbody>
 </table>
   
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 <a id="test-experience"></a>
 ## Customize the test experience
 

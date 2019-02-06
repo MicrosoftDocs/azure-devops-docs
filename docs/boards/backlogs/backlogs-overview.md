@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -37,31 +37,36 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 ## Product and portfolio backlogs 
 
-Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.. 
+Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. 
 
 [!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
-![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
+
+::: moniker range=">= azure-devops-2019"
+
+![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+
 ::: moniker-end 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 !["Web portal, choose Boards>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end 
+::: moniker-end
 
 ---
 
@@ -76,7 +81,11 @@ Each backlog is associated with a team. Team configuration settings determine th
 - Determines which backlog levels are active for the team 
 - Defines how bugs will be treated, as requirements or as tasks. 
 
-For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md), [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md), and [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md).
+For details, see the following articles: 
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
 
 ## Define work items and create your backlog  
 
@@ -131,12 +140,12 @@ When you have several teams, your hierarchical views may show items that belong 
 
 ### View backlog items and parent items owned by other teams
 
-Your team's product backlog lists only those items whose area path matches those your team has subscribed to. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). However, if you show parents, 
+Your team's product backlog lists only those items whose area path matches those assigned to your team. For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). However, if you show parents, 
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -153,7 +162,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
@@ -176,7 +185,7 @@ Items that are owned by other teams appear with hollow-filled bars.
 ![Team backlog is filtered based on area path ownership](_img/ALM_OB_CustServTeamBacklog.png)  
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -192,7 +201,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/management-team-backlog-epics.png)   
@@ -204,7 +213,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 
 Here's another example that shows the **Epics** backlog for the **Management** team. 
 Drilling down, you can see all the backlog items and features, even though they 
@@ -221,7 +230,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -260,38 +269,8 @@ To learn more about permissions and access, see [Permissions and access for work
 
 To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-## Customize your backlogs 
 
-::: moniker range="vsts"
-If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-
-You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-
-::: moniker-end
-
-
-::: moniker range="azdevserver-2019"
-
-If you need more than three backlog levels, you can add more. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project: 
-
-**Inheritance process model:**
-- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-
-**On-premises XML process model:**
-- [Customize work tracking](../../reference/customize-work.md)
-- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
-
-::: moniker-end
-
- 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-
-If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
-
-You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-::: moniker-end
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
 ## Try this next  
 

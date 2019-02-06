@@ -9,12 +9,12 @@ f1_keywords:
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= azdevserver-2019'
-ms.date: 12/04/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 01/08/2018
 ---
 
 # View and add work items using the Work Items page  
@@ -27,10 +27,7 @@ View work items that you created or are assigned to you. The **Work Items** page
 > [!NOTE]     
 > The **Work Items** page is currently available from Azure DevOps Services, Azure DevOps Server 2019 RC1, and Visual Studio 2019 RC1. 
 
-## Prerequisites 
-
-- You must connect to a project. If you don't have a project yet, [create one](../get-started/index.md). You can then [connect to a project from your web portal or Visual Studio](../../organizations/projects/connect-to-projects.md).
-- To view or add work items, you must be a member of the Contributors group or have [Stakeholder access](../../organizations/security/get-started-stakeholder.md). If you don't have access to the project, ask the [organization owner or project administrator](../../organizations/security/lookup-organization-owner-admin.md) to add you.
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 
 ## Open Work Items
@@ -46,7 +43,7 @@ You can start viewing and adding work items once you connect to a project.
 > [!div class="mx-imgBorder"]  
 > ![Open Boards>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 > [!NOTE]   
 > The new Work Items experience is available when you connect to a GitHub repository. If you connect to a TFVC repository, you'll continue to see the legacy query-focused experience. 
@@ -54,7 +51,7 @@ You can start viewing and adding work items once you connect to a project.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Open a browser window, choose **Work**, and then **Work Items**. 
 
@@ -63,7 +60,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -120,7 +117,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 <table>
 <tbody valign="top">
@@ -145,7 +142,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 
@@ -207,14 +204,14 @@ For example, here we choose User Story.
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -231,13 +228,13 @@ A browser window will open with the work item form to fill out.
 
 <!---
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). -->
+> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). -->
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 ![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
 
-You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists.
+You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
  
 <a id="filter" />
@@ -253,14 +250,14 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]
 ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -285,7 +282,7 @@ Use the **Discussion** section in the work item form to add and review comments 
 
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 
@@ -332,6 +329,7 @@ Use the following three controls to manage your views in the web portal.
 > | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
 ## Related articles
+- [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Enable preview features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)

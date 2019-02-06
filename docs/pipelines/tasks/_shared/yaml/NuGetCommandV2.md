@@ -17,6 +17,7 @@
     #packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg' # Required when command == Push
     #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external
     #publishVstsFeed: # Required when command == Push && NuGetFeedType == Internal
+    #publishPackageMetadata: true # Optional
     #allowPackageConflicts: # Optional
     #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
     #verbosityPush: 'Detailed' # Options: quiet, normal, detailed

@@ -3,12 +3,12 @@ title: Use Azure Artifacts as a private PowerShell repository
 description: Use Azure Artifacts within Azure DevOps Services to create your own private PowerShell repository
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.reviewer: amullans
 ms.date: 11/19/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Use Azure Artifacts as a private PowerShell repository
@@ -30,7 +30,7 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 
 ## Prerequisites
 
-1. [The NuGet CLI](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference)
+1. [The NuGet CLI](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference)
 2. [An Azure DevOps Services Account](https://azure.microsoft.com/en-us/services/devops/)
 
 ## Create a PAT to get command-line access to Azure DevOps Services

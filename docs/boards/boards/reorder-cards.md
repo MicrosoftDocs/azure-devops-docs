@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -27,6 +27,8 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they are reorder based on the Card reordering setting selected.  
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+
 
 <a id="card-reorder-setting"></a>
 
@@ -38,7 +40,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -69,7 +71,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 > Reordering cards is supported on TFS 2015.1 and later versions.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -87,12 +89,14 @@ If you want to preserve the backlog priority when you move a card to a new colum
 0. When done with your changes, choose **Save**.
 
 	> [!TIP]
-	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
+	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
+
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+
 ::: moniker-end
 
 ---

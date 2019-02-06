@@ -5,7 +5,7 @@ ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -59,7 +59,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 Typically this occurs when the specified path cannot be located.
 This may be due to a firewall blocking the necessary ports for file and printer sharing,
 or an invalid path specification. For more details, see
-[Error 53](https://technet.microsoft.com/library/cc940100.aspx) on Technet.
+[Error 53](https://technet.microsoft.com/library/cc940100.aspx) on TechNet.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 

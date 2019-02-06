@@ -97,13 +97,13 @@ title: Hello world
 > [!IMPORTANT]
 > The team is staging the rollout of this feature more than normal. You should see the new pivot in the **Work Items** hub of your organization soon.
 
-You can now use the **My team(s)** pivot on the **Work Items** hub to find all of the work that is assigned to your team(s). With this pivot, you can quickly pick up work that is assigned to your team(s) or get a better idea of the work that you team(s) is responsible for. See the [View and add work items](/azure/devops/work/work-items/view-add-work-items?view=vsts&tabs=vertical) documentation for more information.
+You can now use the **My team(s)** pivot on the **Work Items** hub to find all of the work that is assigned to your team(s). With this pivot, you can quickly pick up work that is assigned to your team(s) or get a better idea of the work that you team(s) is responsible for. See the [View and add work items](/azure/devops/work/work-items/view-add-work-items?view=azure-devops&tabs=vertical) documentation for more information.
 
 ## Build and release
 
 ### Check installed software on Microsoft-hosted agent pools
 
-The Microsoft-hosted agent pools now report what software is installed on the image. Not sure if you're running on Python 3.6.5 or Python 3.7, or whether the image has the latest Git build? Check the **Details** tab to find out. See the [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=vsts) documentation for more information.
+The Microsoft-hosted agent pools now report what software is installed on the image. Not sure if you're running on Python 3.6.5 or Python 3.7, or whether the image has the latest Git build? Check the **Details** tab to find out. See the [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Hosted pool details](_img/138_06.png)
@@ -145,20 +145,20 @@ Previously, you used to be able to see the dependencies of a package, but you ha
 
 ### View VSTS dashboards within Microsoft Teams
 
-You can now bring any of your VSTS dashboards into [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) to strengthen conversations with your team. To set this up, install the [Microsoft Teams Integration extension](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and follow the instructions to select your dashboard. The selected dashboard will be added as a new tab in the Microsoft Teams channel. Dashboards are optimized for consumption and refresh every time you open the tab. You can drill into more details and take action in VSTS by clicking the links on selected widgets. See the [Microsoft Teams integration](/azure/devops/service-hooks/services/teams?view=vsts) documentation and the [post on Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/2018/08/09/make-your-visual-studio-team-services-dashboard-part-of-your-conversation-in-microsoft-teams/) for more information.
+You can now bring any of your VSTS dashboards into [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) to strengthen conversations with your team. To set this up, install the [Microsoft Teams Integration extension](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and follow the instructions to select your dashboard. The selected dashboard will be added as a new tab in the Microsoft Teams channel. Dashboards are optimized for consumption and refresh every time you open the tab. You can drill into more details and take action in VSTS by clicking the links on selected widgets. See the [Microsoft Teams integration](/azure/devops/service-hooks/services/teams?view=azure-devops) documentation and the [post on Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/2018/08/09/make-your-visual-studio-team-services-dashboard-part-of-your-conversation-in-microsoft-teams/) for more information.
 
 ### Investigate build history through a new build dashboard widget
 
 We have a new and improved build history widget that you can add to your dashboards. With this widget you can now view a history of builds from a specific branch on your dashboard and configure it on a public project for anonymous visitors.
 
 > [!IMPORTANT]
-> If you are looking for insights on your XAML builds, continue to use the older widget and read about [migrating from XAML builds to new builds](/azure/devops/pipelines/build/migrate-from-xaml-builds?view=vsts). Otherwise, we recommend that you move to the newer widget.
+> If you are looking for insights on your XAML builds, continue to use the older widget and read about [migrating from XAML builds to new builds](/azure/devops/pipelines/build/migrate-from-xaml-builds?view=azure-devops). Otherwise, we recommend that you move to the newer widget.
 
 ## Administration
 
 ### Manage billing for your organization directly through the Azure Portal
 
-As a Project Collection Administrator (PCA) you can now [set up billing](/azure/devops/billing/set-up-billing-for-your-organization-vs) or [remove billing](/azure/devops/billing/change-azure-subscription?view=vsts#remove-billing-subscription-and-purchase-again) for an organization directly through the Azure Portal. Look for the new **Setup billing** and **Remove billing** commands on your organization in the portal.
+As a Project Collection Administrator (PCA) you can now [set up billing](/azure/devops/billing/set-up-billing-for-your-organization-vs) or [remove billing](/azure/devops/billing/change-azure-subscription?view=azure-devops#remove-billing-subscription-and-purchase-again) for an organization directly through the Azure Portal. Look for the new **Setup billing** and **Remove billing** commands on your organization in the portal.
 
 ## Feedback
 

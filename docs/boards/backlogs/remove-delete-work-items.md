@@ -6,16 +6,16 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 01/08/2018
 ---
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 # Move, change, or delete work items 
 
 [!INCLUDE [temp](../_shared/azure-boards.md)]
@@ -35,14 +35,14 @@ You can remove work items added to your backlog or taskboard that aren't relevan
 You can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
 ::: moniker-end
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="checklist"]    
 > * How to change the work item type of one or more work items   
 > * How to move one or more work items to another project     
-> * How to remove work items from the backlog by changing the State to Removed     
+> * How to remove work items from the backlog by changing the State to Removed  
 > * How to delete work items   
 > * How to restore or permanently delete work items (web portal)
 > * What permissions are required to delete work items   
@@ -75,7 +75,7 @@ You only have access to those actions that are supported on your platform and fo
 
 You can access the following actions for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 <table>
 <tbody valign="top">
@@ -103,11 +103,9 @@ You can access the following actions for which you have permissions. If you are 
 </table>
 
 
-You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
-
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 <table>
 <tbody valign="top">
@@ -138,7 +136,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 1. You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](/azure/devops/report/analytics/index) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../report/admin/disable-data-warehouse.md). 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
 
@@ -220,47 +218,59 @@ You can't change type, move work items, or delete/restore work items whose work 
 
 ## Prerequisites  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-* To change the work item type, delete, or remove work items, you must be a member of the Contributors group or be granted [Stakeholder access for a public project](../../organizations/security/access-levels.md#stakeholder-access) 
-	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
-* To move work items to another project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to **Allow**. The Contributors group does not have this permission set at the project-level by default.
-* To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
-* 
-::: moniker-end
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
+* To change the work item type, delete, or remove work items, you must be granted **Stakeholder** access or higher  For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
+* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
 
-
-::: moniker range="azdevserver-2019"
-  
-* To change the work item type, delete, or remove work items, you must be a member of the Contributors group. Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
-* To move work items to another project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to **Allow**. The Contributors group does not have this permission set at the project-level by default.
-* To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 
 
 ::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
+* To change the work item type, delete, or remove work items, you must be granted **Stakeholder** access or higher.  For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
+* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to **Allow**. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
+
+::: moniker-end 
+
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-  
-* To remove or delete work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
-	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
-* To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
+* To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. The **Contributors** group has **Delete and restore work items** at the project-level set to **Allow** by default.
 
 ::: moniker-end
 
 
 ::: moniker range="<= tfs-2015" 
-  
-* To remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
-* Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
-* To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to **Not set** by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
+* To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* To delete work items, you must be a member of the **Project Administrators **group or have the **Delete work items in this project** permission set to **Allow**. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
 
 To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
 
 
-
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="change-type"> </a>  
 ## Change the work item type 
@@ -335,7 +345,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="move"> </a>  
 ## Move a work item to another project  
@@ -374,7 +384,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 
 <a id="delete"> </a> 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 
 ## Delete work items  
@@ -450,7 +460,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 <a id="restore" />
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Restore or permanently delete work items   
 
 You restore deleted work items from the web portal Recycle bin. 
@@ -645,6 +655,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ## Related articles   
 
 ::: moniker range=">= tfs-2018"  
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 - [Delete test artifacts](delete-test-artifacts.md) 
@@ -653,6 +664,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ::: moniker-end
 
 ::: moniker range="tfs-2017"  
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Add, update, and follow a work item](../backlogs/add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
@@ -660,6 +672,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 
 ::: moniker range="<= tfs-2015"  
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Add and update a work item](../backlogs/add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 ::: moniker-end

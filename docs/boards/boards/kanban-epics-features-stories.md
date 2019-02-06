@@ -7,10 +7,10 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -23,12 +23,12 @@ If you use Kanban to track progress on your backlog, you can also use Kanban boa
 
 And, just as with [child task checklists for backlog items](add-task-checklists.md), you can quickly define and track the progress of child items for your features or epics. Here we see several stories defined for features, both in progress and those completed.    
 
-In this topic, you'll learn: 
+In this article, you'll learn: 
 >[!div class="checklist"]    
 > * How to add epics and features using your portfolio backlogs    
 > * Keyboard shortcuts for working with the Kanban board  
 
-For information on managing features and epics as a list, see [Define features and epics](../backlogs/define-features-epics.md). 
+For information on managing features and epics as a list and examples for features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
@@ -43,7 +43,7 @@ For information on managing features and epics as a list, see [Define features a
 >Child checklists for feature and epic Kanban boards are supported from TFS 2017 and later versions.
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
 
 ## Open your Kanban board from the web portal
@@ -54,7 +54,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
 
@@ -83,7 +83,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. To view a portfolio backlog, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
 1. 
@@ -108,7 +108,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

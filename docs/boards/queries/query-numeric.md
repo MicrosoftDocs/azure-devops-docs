@@ -6,9 +6,8 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: jillfra
+ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -98,7 +97,7 @@ In addition, all charts contain a Values selection designed to display a count o
  
 Create an  active bugs query and modify the column options to show Assigned To and State. Then, add a pivot chart that displays the assignments and state. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, pivot by assigned to and state](_img/numeric/config-pivot-items-developer.png)  
 ::: moniker-end
@@ -111,7 +110,7 @@ Create an  active bugs query and modify the column options to show Assigned To a
 
 Using the same flat-list query that filters for bugs shown in the previous section, you can show a count based on area. Modify the column options to show the Area Path. Then, add a pivot chart that displays the state and area path. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, pivot by state and area](_img/numeric/config-pivot-state-area.png)  
 ::: moniker-end
@@ -124,7 +123,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 <a id="effort"/>
 ##Queries and charts based on effort or story points 
 
-You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
+You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
 
 ### Sum of story points and their status   
 
@@ -134,7 +133,7 @@ Create a query that filters for User Story as the work item type and modify the 
 
 Then, add a stacked bar chart that sums the Story Points. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, stacked bar, sum of story points](_img/numeric/config-psum-story-points-stacked-bar.png)  
 ::: moniker-end
@@ -158,7 +157,7 @@ Create a query that filters for User Story as the work item type and in the Acti
 
 Then, add a stacked area trend chart that sums the Story Points. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, trend, sum of story points](_img/numeric/config-trend-sum-story-points.png)  
 ::: moniker-end
@@ -188,7 +187,7 @@ If you follow Scrum practices and estimate Remaining Work for your tasks and bug
 
 Add Remaining Work as a column option to the query and save. To view a sum of the remaining work, add a pivot chart as shown. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, pivot, sum of remaining work per developer](_img/numeric/config-pivot-remaining-work-per-developer-area.png)  
 ::: moniker-end
@@ -220,12 +219,10 @@ The following table describes the activity-based and numeric fields that you can
 </thead>
 <tbody valign="top">
 <tr>
-	<td><p>Activity <sup>1, 2</sup></p></td>
+	<td><p>Activity <sup>1, 2, 3</sup></p></td>
 	<td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
 
-
-  <blockquote><b>Note:</b> This field <sup>3</sup> is also used to calculate capacity by activity. It is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file. 
-</blockquote>
+<p>The Activity field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.</p>
 <p>Reference name=Microsoft.VSTS.Common.Activity, Data type=String</p>
 </td>
 	<td>Task, Bug<sup>4</sup> (Agile and Scrum)</td>
@@ -245,9 +242,10 @@ The following table describes the activity-based and numeric fields that you can
 <td>Task, Bug<sup>4</sup></td>
 </tr>
 <tr>
-	<td><p>Discipline <sup>1, 2</sup></p></td>
-	<td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul><blockquote>Note: This field <sup>3</sup> is also used to calculate capacity by activity. It is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.
-</blockquote>
+	<td><p>Discipline <sup>1, 2, 3</sup></p></td>
+	<td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul>
+
+<p>The Discipline field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.</p>
 
 <p>Reference name=Microsoft.VSTS.Common.Discipline, Data type=String</p>
 </td>

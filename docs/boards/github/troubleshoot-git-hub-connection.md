@@ -6,22 +6,31 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 12/04/2018
 ---
 
 # Troubleshoot GitHub & Azure Boards integration 
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE[temp](../_shared/version-vsts-only.md)]
 
 When you create a GitHub connection, you are granted access to GitHub as an OAuth app or by using a Personal Access Token (PAT).
 
-The access by Azure Boards to the GitHub repo can be revoked in one or more ways. If the user who created the connection PAT is revoked or the permission scope changes, then the Azure Boards access is revoked. Or the OAuth app’s authorization can be revoked entirely for a given repo.
+The access by Azure Boards to the GitHub repo can be revoked in one or more ways. If the user who created the connection PAT is revoked or the permission scope changes, then the Azure Boards access is revoked. Or the OAuth app��s authorization can be revoked entirely for a given repo.
 
-[!INCLUDE [temp](../_shared/github-platform-support.md)]  
+[!INCLUDE[temp](../_shared/github-platform-support.md)]
+
+<a id="integrate-repo-to-several-organizations" />
+## Unexpected results when linking to projects defined in two or more Azure DevOps organizations
+
+If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you may get unexpected results when using **AB#** mentions to link to work items. This problem occurs because work item IDs are not unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. So, when a work item is mentioned in a commit message or pull request, both organizations will attempt to create a link to a work item with a matching ID (if one exists). 
+
+In general, a user intends an **AB#** mention to link to a single work item in one of the projects. However, if a work item of the same ID exists in both accounts, then links are created for both work items, likely causing confusion.
+
+Currently, there is no way to work around this issue, so we recommend that you connect a single GitHub repository only to a single Azure DevOps organization.  
 
 ## Resolve connection issues
 

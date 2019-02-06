@@ -7,20 +7,18 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
-monikerRange: 'vsts'
+ms.date: 01/18/2019
+monikerRange: 'azure-devops'
 ---
 
-# Find or change your organization location (region)
+# Find or change your organization location
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 When you [create an organization](create-organization.md), you can choose the region your organization is hosted in Azure DevOps. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available.
-
-For information on region availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
 
 ## Find your organization location
 

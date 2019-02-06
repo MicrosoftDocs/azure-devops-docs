@@ -3,7 +3,7 @@ title: TFS extensions for SharePoint Products
 description: Understand what is installed and configured with TFS extensions for SharePoint Products 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: greggboe
 ms.topic: conceptual
 ms.author: kaelli

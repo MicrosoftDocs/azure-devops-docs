@@ -5,7 +5,7 @@ ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -33,7 +33,7 @@ Authorization: Basic BASE64PATSTRING
 
 Here is an example getting a list of projects for your organization. 
 
-````cs
+```cs
 using System.Net.Http;
 using System.Net.Http.Headers;
 
@@ -65,7 +65,7 @@ using (var client = new HttpClient())
     }   
 }
 
-````
+```
 
 ## .Net Client Libraries
 
@@ -77,7 +77,7 @@ In this example we are using two of the .Net Client Libraries. Make sure these a
 
 Here is a simple example getting a list of projects for your organization. 
 
-````cs
+```cs
 using Microsoft.TeamFoundation.Core.WebApi;
 using Microsoft.VisualStudio.Services.Common;
 
@@ -92,7 +92,7 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
     IEnumerable<TeamProjectReference> projects = projectHttpClient.GetProjects().Result;                    
 }
 
-````
+```
 
 ## Q&A
 

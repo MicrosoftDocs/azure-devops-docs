@@ -9,7 +9,7 @@ author: elbatk
 ms.date: 02/10/2017
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 # Maven
 

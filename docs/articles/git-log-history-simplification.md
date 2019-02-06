@@ -5,7 +5,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.assetid: 663ea04b-ee1e-41f9-8c5b-dfc269b093c2
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 06/01/2016
 ms.author: mlearned
 author: mlearned
