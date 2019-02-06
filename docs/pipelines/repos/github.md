@@ -256,18 +256,63 @@ To create a pipeline for your repository with continuous integration and pull re
 
 You can run a validation build with each commit or pull request that targets a branch, and even prevent pull requests from merging until a validation build succeeds.
 
-To configure validation builds for a GitHub repository, you must be the owner or have admin access to the repository.
+To configure mandatory validation builds for a GitHub repository, you must be its owner, a collaborator  with the Admin role, or a GitHub organization member with the Write role.
 
 1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
 2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
 
+## Trigger builds using GitHub pull request comments
+
+Repository collaborators can comment on a pull request to manually run a pipeline. You might use this to run an optional test suite or validation build. The following commands can be issued to Azure Pipelines in comments:
+
+| Command | Result |
+| - | - |
+| `/AzurePipelines help` | Display help for all supported commands. |
+| `/AzurePipelines help <command-name>` | Display help for the specified command. |
+| `/AzurePipelines run` | Run all pipelines that are associated with this repository and whose triggers do not exclude this pull request. |
+| `/AzurePipelines run <pipeline-name>` | Run the specified pipeline unless its triggers exclude this pull request. |
+
+> [!Note]
+> For brevity, you can comment using `/azp` instead of `/AzurePipelines`.
+
+>[!IMPORTANT]
+>Responses to these commands will appear in the pull request discussion only if your pipeline uses the [Azure Pipelines GitHub App](#integrate-using-the-github-app).
+
+### Build GitHub pull requests only when authorized by your team
+
+You may not want to automatically build pull requests from unknown users until their changes can be reviewed. To address this, you can configure Azure Pipelines to build GitHub pull requests only when authorized by your team.
+
+To enable this, in Azure Pipelines, select the **Triggers** tab in your pipeline's settings. Then, under **Pull request validation**, enable **Only trigger builds for collaborators’ pull request comments** and save the pipeline. Now, the pull request validation build will not be triggered automatically. Only repository owners and collaborators can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>` as described above.
+
 ## Trigger builds for GitHub tags
 
-To trigger a build for a specific tag name or pattern, create a branch filter for your pipeline's continuous integration trigger. For the branch name, use the fully-qualified name of the tag ref, such as the following examples. See [Build pipeline triggers](../build/triggers.md).
+To trigger a build for specific tag names or patterns, add them to the `trigger` section of your YAML file. See [Build pipeline triggers](../build/triggers.md). Here are examples:
 
-- `refs/tags/myTagName`
-- `refs/tags/partialTagName*`
-- `refs/tags/*`
+```yaml
+# Trigger this pipeline only when tags are created with names beginning with 'v2.'
+trigger:
+  tags:
+    include:
+    - v2.*
+  branches:
+    exclude:
+    - master
+pr: none
+```
+
+```yaml
+# Trigger this pipeline only when tags are created with names beginning with 'v2.' but not 'v2.0'
+trigger:
+  tags:
+    include:
+    - v2.*
+    exclude:
+    - v2.0
+  branches:
+    exclude:
+    - master
+pr: none
+```
 
 ## Validate contributions from forks
 
