@@ -433,9 +433,9 @@ The following features are available when using TeamCity sources:
 
 ### Custom artifacts
 
-Apart from inbuilt artifact sources, Azure DevOps Releases support integrating any custom artifact sources with our artifact extensibility model. You can plugin any custom artifact source and Azure DevOps provides first class user experience and seamless integration. 
+In addition to built-in artifact sources, Azure DevOps Pipelines supports integrating any custom artifact source with the artifact extensibility model. You can plug in any custom artifact source, and Azure DevOps will provide a first-class user experience and seamless integration.
 
-You can find more details about Azure DevOps artifact extensibilty model [here.](https://aka.ms/artifactextensibility)
+For more details, see [Azure DevOps artifact extensibilty model](https://aka.ms/artifactextensibility).
 
 ----
 
