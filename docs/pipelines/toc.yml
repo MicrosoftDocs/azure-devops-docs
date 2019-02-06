@@ -22,6 +22,8 @@
     href: get-started-azure-devops-project.md
 - name: Languages
   items: 
+  - name: Anaconda
+    href: languages/anaconda.md
   - name: ASP.NET
     href: apps/aspnet/build-aspnet-4.md
   - name: .NET Core
