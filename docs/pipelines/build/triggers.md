@@ -251,6 +251,10 @@ If you choose to build fork pull requests, you may also choose whether or not to
 
 ---
 
+### Trigger builds using GitHub pull request comments
+
+If your team uses GitHub pull requests, you can manually trigger pipelines using pull request comments. See details [here](../repos/github.md#trigger-builds-using-github-pull-request-comments).
+
 ## Scheduled
 
 # [YAML](#tab/yaml)

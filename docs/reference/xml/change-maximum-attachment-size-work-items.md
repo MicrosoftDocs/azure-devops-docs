@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azure-devops-2019'
+monikerRange: '<= azure-devops'
 ms.date: 05/10/2017  
 ---
 
@@ -17,7 +17,7 @@ ms.date: 05/10/2017
 
 [!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
-By default, Team Foundation Server (TFS) limits the size of work item attachments to 4 MB. For on-premises deployments, you can use the TFS web service to increase the size of files you attach to up to 2GB.  
+By default, Azure DevOps and Team Foundation Server (TFS) limit the size of work item attachments to 4 MB. For on-premises deployments, you can use the web service to increase the size of files you attach to up to 2GB. 
   
 1.  If you're not a member of the TFS **Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).    
   
@@ -34,22 +34,17 @@ By default, Team Foundation Server (TFS) limits the size of work item attachment
      ![SetMaxAttachmentSize, ConfigurationSettingsService](_img/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
   
      The maximum size you can specify is 2 gigabytes (or `2000000000`).  
-  
-## Related articles
 
-- [Requirements and compatibility, Supported web browsers](/tfs/server/compatibility#supported-browsers)
-
-### Alternative solutions to increasing the attachment size   
+## Alternative solutions to increasing the attachment size   
 
 Increasing the attachment size increases the amount of data in storage and the time it takes to save a work item. To work around the size limit, add the attachment to source control and [add a link in the work item to the source control file](../../boards/queries/link-work-items-support-traceability.md) using the *Versioned Item* link type.  
 
-### Review FIPS
+## Federal Information Processing Standard (FIPS) exception
 
-Have been validated the FIPS service is causing exceptions, you need to disable the FIPS service in order to avoid the exception
+If you receive an error message similar to the one listed below, you may need to disable the FIPS service in order to avoid the exception. To learn more, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing" security setting effects in Windows XP and in later versions of Windows](https://support.microsoft.com/en-us/help/811833/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashi). 
 
-FIPS Documentation https://support.microsoft.com/help/811833/-system-cryptography-use-fips-compliant-algorithms-for-encryption--has
-
-`Application: csc.exe
+```
+Application: csc.exe
 Framework Version: v4.0.30319
 Description: The process was terminated due to an unhandled exception.
 Exception Info: System.InvalidOperationException
@@ -67,6 +62,9 @@ Exception Info: System.Reflection.TargetInvocationException
    at Microsoft.CodeAnalysis.CommandLine.DesktopBuildClient.Run(System.Collections.Generic.IEnumerable`1<System.String>, System.Collections.Generic.IEnumerable`1<System.String>, Microsoft.CodeAnalysis.CommandLine.RequestLanguage, Microsoft.CodeAnalysis.CommandLine.CompileFunc, Microsoft.CodeAnalysis.IAnalyzerAssemblyLoader)
    at Microsoft.CodeAnalysis.CSharp.CommandLine.Program.Main(System.String[], System.String[])
    at Microsoft.CodeAnalysis.CSharp.CommandLine.Program.Main(System.String[])
-`  
+```
+
   
- 
+## Related articles
+
+- [Requirements and compatibility, Supported web browsers](/tfs/server/compatibility#supported-browsers)

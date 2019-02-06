@@ -16,6 +16,8 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Buy cloud-based load testing for Azure DevOps
 
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
 ## Azure DevOps
 
 In this quickstart, you learn how to enable paid load testing in Azure DevOps.

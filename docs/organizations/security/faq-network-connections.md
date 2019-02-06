@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot network connections and whitelist addresses
 
-**Azure DevOps**
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If you are having network connection issues to Azure DevOps, using NuGet, or connecting from Visual Studio 2015 and 
 later versions, it may be because your security appliances are blocking connections now that Visual Studio uses TLS 1.2.
