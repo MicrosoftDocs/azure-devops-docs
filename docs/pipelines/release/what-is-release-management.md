@@ -149,6 +149,11 @@ Simply follow these steps:
 1. **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
 
 <a name="draftrelease"></a>
+## When should I edit a release instead of the pipeline that defines it?
+
+You can edit the approvals, tasks, and variables of a previously deployed release, insteads of editing these values in the pipeline from which the release was created. However, these edits apply to only the release generated when you redeploy the artifacts. If you want your edits apply to all future releases and deployments, choose the option to edit the release pipeline instead.
+
+<a name="draftrelease"></a>
 ## What is a draft release?
 
 Creating a draft release allows you to edit some of the settings for the release and the tasks,
