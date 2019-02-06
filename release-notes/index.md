@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -88,7 +88,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="12">[04 February 2019](2019/sprint-147-update.md)</td>
+            <td rowspan="13">[04 February 2019](2019/sprint-147-update.md)</td>
             <td>View just the left or right file in a pull request</td><td>Repos</td><td>Future</td>
         </tr>
         <tr><td>Restore deleted release pipelines</td><td>Pipelines</td><td>Future</td></tr>
@@ -102,6 +102,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Delegate who can manage feeds</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Permalinks for wiki pages</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Show work item status in wiki pages</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>All users now on New Navigation</td><td>Administration</td><td>N/A</td></tr>
         <tr>
             <td rowspan="27">[14 January 2019](2019/sprint-146-update.md)</td>
             <td>Simplify the organization of your work using the Basic process</td><td>Boards</td><td>Future</td>
@@ -134,7 +135,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Restore deleted projects</td><td>Administration</td><td>N/A</td></tr>
         <tr>
             <td rowspan="14">[04 December 2018](2018/sprint-144-update.md)</td>
-            <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Boards</td><td>Future</td>
+            <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Boards</td><td>2019</td>
         </tr>
         <tr><td>Acquire Azure Boards as a service</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Rerun expired build for auto-complete pull requests</td><td>Repos</td><td>Future</td></tr>
