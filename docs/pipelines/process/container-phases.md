@@ -29,20 +29,33 @@ Then, each step of the job will run inside the container.
 
 ## Requirements
 
+### Linux-based containers
+
 The Azure Pipelines system requires a few things in Linux-based containers:
 - Bash (for the `bash` step / task, which most container pipelines will use)
 - glibc-based
 - Can run Node.js (which the agent provides)
-- Does not define an `ENTRYPOINT`, or if it does, that `ENTRYPOINT` is a shell
+- Does not define an `ENTRYPOINT`
+
+And on your agent host:
+- Ensure Docker is installed
+- The agent must have permission to access the Docker daemon
 
 Be sure your container has each of these tools available. Some of the extremely stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these
-minimum requirements. Also, containers with a non-shell `ENTRYPOINT` don't work, since Azure Pipelines
-will `docker exec` a series of commands which expect to be run by a shell.
+minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure Pipelines
+will `docker create` an awaiting container and `docker exec` a series of commands which expect
+the container is always up and running.
+
+### Windows Containers
 
 Azure Pipelines can also run [Windows Containers](/virtualization/windowscontainers/about/).
 [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.
+Docker must be installed. Be sure your pipelines agent has permission to access the Docker daemon.
 
+### Hosted agents
+
+The `win1803` and `ubuntu-16.04` pools support running containers.
 The Hosted macOS pool does not support running containers.
 
 # [YAML](#tab/yaml)
