@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 description: In the Sprint 147 Update of Azure DevOps, we added proxy support across Azure Artifacts for build and package related tasks - Sprint 147 Update.
 ---
 
@@ -39,6 +39,10 @@ Wiki:
 
 - [Permalinks for wiki pages](#permalinks-for-wiki-pages)
 - [Show work item status in wiki pages](#show-work-item-status-in-wiki-pages)
+
+Administration:
+
+- [All users now on New Navigation](#all-users-now-on-new-navigation)
 
 ## Azure Repos
 
@@ -106,7 +110,7 @@ The two contribution points are:
     Sometimes you may want to perform an action like updating an API's data or running custom tools using metadata from your test results. With this contribution point, you can create extensions which use the immediate context of the selected test result to add a custom action to the **Custom Action*- button.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](_img/147_05.png)
+    ![Badge](_img/147_05.png)
 
 2. **Custom Details Tab in the details pane**
 
@@ -149,6 +153,12 @@ In this update, we've enhanced work item mentions in Wiki pages by adding the st
 Work item references in Pull Request comments and Boards discussions will also show the status.
 
 This feature was prioritized based on [this](https://visualstudio.uservoice.com/forums/330519-azure-devops-formerly-visual-studio-team-services/suggestions/33715744-improve-work-item-display-in-wiki-page) suggestion.
+
+## Administration
+
+### All users now on New Navigation
+
+With this sprint all users have been moved to the New Navigation. We’ve removed the preview feature toggle that allowed users to return to the previous navigation model. To learn more about navigating in the web portal, see [Web portal navigation in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/project/navigation/index?view=azure-devops&tabs=new-nav). 
 
 ## Next steps
 
