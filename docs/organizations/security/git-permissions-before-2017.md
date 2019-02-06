@@ -14,7 +14,7 @@ monikerRange: '<= tfs-2017'
 ---
 # Git permissions prior to TFS 2017 Update 1
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [version-tfs-2013-2017](../../_shared/version-tfs-2013-2017.md)]
 
 In TFS 2017 Update 1 (and Azure DevOps), Git repository permissions have changed.
 For those customers using previous versions of TFS, here are the old permissions.

@@ -85,96 +85,7 @@ jobs:
 
 ### Create and activate an Anaconda environment
 
-As an alternative to the **Use Python Version** task, create and activate an Anaconda environment with a specified version of Python. The following YAML uses the same `python.version` variable defined in the job matrix above.
-
-# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
-
-```yaml
-- bash: echo "##vso[task.prependpath]/usr/share/miniconda/bin"
-  displayName: Add conda to PATH
-
-- bash: conda create --yes --quiet --name myEnvironment python=$PYTHON_VERSION # [other packages ...]
-  displayName: Create Anaconda environment
-```
-
-# [Hosted macOS](#tab/macos)
-
-```yaml
-- bash: echo "##vso[task.prependpath]$CONDA/bin"
-  displayName: Add conda to PATH
-
-- bash: conda create --yes --quiet --name myEnvironment python=$PYTHON_VERSION # [other packages ...]
-  displayName: Create Anaconda environment
-```
-
-# [Hosted VS2017](#tab/vs2017)
-
-```yaml
-- powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
-  displayName: Add conda to PATH
-
-- script: conda create --yes --quiet --name myEnvironment python=%PYTHON_VERSION% # [other packages ...]
-  displayName: Create Anaconda environment
-```
-
----
-
-If you have an [`environment.yml`](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) defined for your Anaconda environment, you can also use that to create your environment:
-
-```yaml
-- script: conda env create --quiet --file environment.yml
-  displayName: Create Anaconda environment
-```
-
-> [!NOTE]
-> When you activate an Anaconda environment, it changes the current environment by doing things like editing `$PATH`.
-> However, because each build step runs in its own process, these changes won't be persisted in subsequent steps.
-
-When you run a script in a later step after creating an Anaconda environment, you need to activate the environment for each step:
-
-# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
-
-```yaml
-- bash: |
-    source activate myEnvironment
-    pytest -m unit --junitxml=junit/unit-test.xml
-  displayName: 'Unit tests'
-
-- bash: |
-    source activate myEnvironment
-    pytest -m integration --junitxml=junit/integration-test.xml
-  displayName: 'Integration tests'
-```
-
-# [Hosted macOS](#tab/macos)
-
-```yaml
-- bash: |
-    source activate myEnvironment
-    pytest -m unit --junitxml=junit/unit-test.xml
-  displayName: 'Unit tests'
-
-- bash: |
-    source activate myEnvironment
-    pytest -m integration --junitxml=junit/integration-test.xml
-  displayName: 'Integration tests'
-```
-
-# [Hosted VS2017](#tab/vs2017)
-
-```yaml
-- script: |
-    call activate myEnvironment
-    pytest -m unit --junitxml=junit/unit-test.xml
-  displayName: 'Unit tests'
-
-- script: |
-    call activate myEnvironment
-    pytest -m integration --junitxml=junit/integration-test.xml
-  displayName: 'Integration tests'
-```
-
----
+See [Run pipelines with Anaconda environments](./anaconda.md).
 
 ## Run a Python script
 
@@ -219,36 +130,7 @@ After updating `pip` and friends, a typical next step is to install from `requir
 
 ### Install Anaconda packages with conda
 
-Add the following YAML to install the `scipy` package in the conda environment named `myEnvironment`.
-
-# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
-
-```yaml
-- bash: |
-    source activate myEnvironment
-    conda install -n myEnvironment scipy
-  displayName: 'Install conda libraries'
-```
-
-# [Hosted macOS](#tab/macos)
-
-```yaml
-- bash: |
-    source activate myEnvironment
-    conda install -n myEnvironment scipy
-  displayName: 'Install conda libraries'
-```
-
-# [Hosted VS2017](#tab/vs2017)
-
-```yaml
-- script: |
-    call activate myEnvironment
-    conda install -n myEnvironment scipy
-  displayName: 'Install conda libraries'
-```
-
----
+See [Run pipelines with Anaconda environments](./anaconda.md).
 
 ## Test
 

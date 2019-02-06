@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 02/05/2019
 monikerRange: 'azure-devops'
 ---
 # Add more users to Azure DevOps with Basic features or Visual Studio subscriptions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Learn how to pay for additional users if you have more than five users who need Basic features and assign Visual Studio subscriptions. When your organization stays within the free limits, you don't have to pay for users to join your organization - you pay only if you have more than five users who need Basic features and the users don't have Visual Studio subscriptions.
+Learn how to pay for additional users if you have more than five users who need Basic features and assign Visual Studio subscriptions. When your organization stays within the free limits, you don't have to pay for users to join. You pay only if you have more than five users who need Basic features and don't have Visual Studio subscriptions.
 
 ## Add users
 

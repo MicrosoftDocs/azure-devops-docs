@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
 # Set SharePoint site permissions
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [version-tfs-2013-2017](../../_shared/version-tfs-2013-2017.md)]
 
 > [!IMPORTANT]
 > Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for Azure DevOps, see [Dashboards and reports overview](../../report/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). 

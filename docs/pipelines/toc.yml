@@ -22,6 +22,8 @@
     href: get-started-azure-devops-project.md
 - name: Languages
   items: 
+  - name: Anaconda
+    href: languages/anaconda.md
   - name: ASP.NET
     href: apps/aspnet/build-aspnet-4.md
   - name: .NET Core
@@ -122,9 +124,9 @@
       href: build/variables.md
   - name: Releases
     items:
-    - name: What are release pipelines?
+    - name: Why use release pipelines?
       href: release/what-is-release-management.md
-    - name: Pipelines and names
+    - name: Pipelines and options
       href: release/index.md
     - name: Stages
       href: release/environments.md
