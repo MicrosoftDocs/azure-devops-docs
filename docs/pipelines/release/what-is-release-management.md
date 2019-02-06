@@ -1,5 +1,5 @@
 ---
-title: Understand release pipelines
+title: Why use Azure Pipelines?
 ms.custom: seodec18
 description: DevOps CI CD - What are Azure Pipelines and Team Foundation Server (TFS) release pipelines?
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
@@ -13,7 +13,7 @@ ms.date: 12/05/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# What are release pipelines?
+# Why use Azure Pipelines for releases?
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -33,15 +33,15 @@ semi-automated processes with **approvals** and **on-demand deployments**.
 
 ![A release pipeline defines the stages for deployment](_img/what-is-release-management/understand-rm-01.1.png)
 
-1. **[Watch this video](https://www.youtube.com/embed/zSPuRXTeZW8)** - see Azure Pipelines releases in action.
+* **[Watch this video](https://channel9.msdn.com/events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101)** - see Azure Pipelines releases in action.
 
-   <iframe width="640" height="360" src="https://www.youtube.com/embed/zSPuRXTeZW8" frameborder="0" allowfullscreen="true"></iframe><p />
+  <p><iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe></p>
 
-1. **[Decide if it suits your scenarios](#isitforyou)** - use the simple checklist.
+* **[Decide if it suits your scenarios](#isitforyou)** - use the simple checklist.
 
-1. **[See how it works](#howrmworks)** - get a basic understanding of the process.
+* **[See how it works](#howrmworks)** - get a basic understanding of the process.
 
-1. **[Get started now](#getstartednow)** - follow the steps to deploy your apps.
+* **[Get started now](#getstartednow)** - follow the steps to deploy your apps.
 
 <a name="isitforyou"></a>
 ## Are release pipelines appropriate for you?
@@ -88,6 +88,8 @@ Consider using release pipelines if:
   activity performed during each deployment. Each release is accompanied
   by a listing of new features and developer commits that went into that
   release.
+
+See [more advantages of Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/).
 
 <a name="howrmworks"></a>
 ## How do release pipelines work?
@@ -142,6 +144,8 @@ pipeline can combine both release and build capabilities.
 
 Simply follow these steps:
 
+1. **[Understand release pipelines](index.md)**
+
 1. **[Create your first pipeline](../get-started-yaml.md)**
 
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
@@ -149,43 +153,11 @@ Simply follow these steps:
 1. **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
 
 <a name="draftrelease"></a>
-## What is a draft release?
-
-Creating a draft release allows you to edit some of the settings for the release and the tasks,
-depending on your role permissions, before starting the deployment.
-The changes apply only to that release, and do not affect the settings of the original pipeline.
-
-Create a draft release using the "..." ellipses link in the list of releases:
-
-![Create a draft release in the list of releases](_img/what-is-release-management/draft-release.png)
-
-... or the **Release** drop-down in the pipeline definition page: 
-
-![Create a draft release in the pipeline definition page](_img/what-is-release-management/new-draft-release.png)
-
-After you finish editing the draft release, choose **Start** from the draft release toolbar. 
-
-![Start a draft release](_img/what-is-release-management/start-draft.png)
-
-<a name="draftrelease"></a>
-## When and why would I abandon a release?
-
-After you create a [release](releases.md), you can use it to redeploy the artifacts
-to any of the stages defined in that release.
-This is useful if you want to perform regular manual releases, or set up a 
-continuous integration [stage trigger](triggers.md#env-triggers)
-that redeploys the artifacts using this release.
-
-If you do not intend to reuse the release, or want to prevent it being used to redeploy the artifacts,
-you can abandon the release using the shortcut menu that opens from the elipses (**...**) icon in the
-**Pipeline** view of the pipeline.
-
-![Abandoning a release](_img/what-is-release-management/abandon-release.png)
-
-Note that you cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
-
+<a name="abandonrelease"></a>
 ## Related topics
 
+* [What is a draft release?](index.md#draftrelease)
+* [When and why would I abandon a release?](index.md#abandonrelease)
 * [Download Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs)
 * [Install and configure Team Foundation Server](/tfs/server/install/get-started)
 * [Sign up for Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
