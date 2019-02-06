@@ -16,7 +16,7 @@ ms.date: 12/04/2018
 
 # Navigate in Visual Studio Team Explorer
 
-**Azure DevOps Services | Azure DevOps Server 2019 | Visual Studio 2019 | Visual Studio 2017 | Visual Studio 2015**
+**Visual Studio 2019 | Visual Studio 2017 | Visual Studio 2015**
 
 You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio and Team Explorer Everywhere is a plug-in that installs with Eclipse. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server (previously named Team Foundation Server (TFS)).
 
