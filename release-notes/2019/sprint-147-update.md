@@ -51,7 +51,7 @@ Administration:
 Today, when viewing file changes in a pull request, you can use either a **Side-by-side diff** or **Inline diff** mode. We have received feedback that many of you just want to see the original file or the changed file, without comparing them. So we added a new option that will allow you to view either the left file or the right file individually.
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/147_07.png)
+> ![Badge](_img/147_07.png)
 
 ## Azure Pipelines
 
@@ -60,7 +60,7 @@ Today, when viewing file changes in a pull request, you can use either a **Side-
 Deleting unused release pipelines helps to keep the release pipeline list clean but sometimes you delete something by mistake. With this update, it's now possible to restore a release pipeline that was deleted within the last 30 days. We added a new tab to the left panel of the Releases page that will display a list of deleted release pipelines. From this view you can restore a deleted release pipeline by selecting the pipeline from the list and clicking the **Restore** button.
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/147_01.png)
+> ![Badge](_img/147_01.png)
 
 ### YAML files for a new pipeline are committed by your identity, not our bot
 
@@ -82,7 +82,7 @@ With this update, you can run a pipeline or test suite to validate a GitHub pull
 You can also abbreviate the `/AzurePipelines` moniker as `/azp`. For more details on this feature type `/azp help` in the comment.
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/147_09.png)
+> ![Badge](_img/147_09.png)
 
 ### Limit pull request validation builds to authorized team members
 
@@ -93,7 +93,7 @@ With this update, you can require pull request validation builds to be authorize
 Now, pull request validation builds will not be triggered automatically. Any repository owner or contributor can trigger a validation build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline_name>`.
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/147_10.png)
+> ![Badge](_img/147_10.png)
 
 ### Publish build artifacts with long file paths
 
@@ -110,7 +110,7 @@ The two contribution points are:
     Sometimes you may want to perform an action like updating an API's data or running custom tools using metadata from your test results. With this contribution point, you can create extensions which use the immediate context of the selected test result to add a custom action to the **Custom Action*- button.
 
     > [!div class="mx-imgBorder"]
-    ![Badge](_img/147_05.png)
+    > ![Badge](_img/147_05.png)
 
 2. **Custom Details Tab in the details pane**
 
@@ -148,7 +148,7 @@ This feature was prioritized based on [this](https://developercommunity.visualst
 In this update, we've enhanced work item mentions in Wiki pages by adding the status of the work item to the page, along with its ID and title.
 
 > [!div class="mx-imgBorder"]
-![Badge](_img/147_03.png)
+> ![Badge](_img/147_03.png)
 
 Work item references in Pull Request comments and Boards discussions will also show the status.
 
@@ -175,7 +175,7 @@ Head over to Azure DevOps and take a look.
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
