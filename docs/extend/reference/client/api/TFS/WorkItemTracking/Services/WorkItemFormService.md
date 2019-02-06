@@ -4,7 +4,7 @@ description: Host service for interacting with the currently active work item fo
 ms.assetid: 49bc7312-2aee-433d-9336-394b6c426051
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk
@@ -152,7 +152,7 @@ Gets field values of active work item.
 
 #### Parameters
 
-* `fieldReferenceNames`: string[]. An arrary of field reference names.
+* `fieldReferenceNames`: string[]. An array of field reference names.
 * `returnOriginalValue`: boolean. Optional. If false, gets unsaved field values. Default is false.
 
 #### Returns

@@ -6,7 +6,7 @@ ms.custom: seodec18
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/29/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Agent pools
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -59,7 +59,7 @@ The following organization agent pools are provided by default:
 
 * **Default** pool: Use it to register [self-hosted agents](agents.md) that you've set up.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 * **Hosted Ubuntu 1604** pool (Azure Pipelines only): Enables you to build and release on
   Linux machines without having to configure a self-hosted Linux agent. Agents in this pool do not
@@ -152,7 +152,7 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 On the 'Create a project agent pool' dialog box, you can't use an existing organization agent pool if it is already referenced by another project agent pool. Each organization agent pool can be referenced by only one project agent pool within a given project collection.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### I can't select a Microsoft-hosted pool and I can't queue my build. How do I fix this?
 
@@ -160,7 +160,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### I need more hosted build resources. What can I do?
 

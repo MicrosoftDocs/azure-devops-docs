@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -73,7 +73,7 @@ The specific set of formatting features differs depending on the client you use.
 
 # [Browser](#tab/browser) 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The editor toolbar appears below each text box that accepts formatted text. It only becomes active when you move your cursor within the text box.
 
@@ -98,7 +98,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
@@ -179,7 +179,7 @@ Choose the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) 
 
 # [Browser](#tab/browser)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
 
@@ -194,7 +194,7 @@ You can continue viewing the attachments as a list or switch to a grid view to s
 
 ::: moniker-end 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 You can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.
 
 ::: moniker-end 
@@ -254,7 +254,7 @@ To open the menu options to download or delete several attachments, choose one o
 
 ---
 
- ::: moniker range="<= azdevserver-2019"
+ ::: moniker range="<= azure-devops-2019"
 ### Attachment size
 
 By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../../reference/xml/change-maximum-attachment-size-work-items.md).

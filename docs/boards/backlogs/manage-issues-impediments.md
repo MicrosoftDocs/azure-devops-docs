@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -23,6 +23,11 @@ If you have known issues you want to track, you can do so by defining an impedim
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to address feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
+> [!IMPORTANT]  
+> Issues and Impediments discussed in this article are defined for projects created with the Agile, Scrum, or CMMI process. By default, these work item types don't appear on the product backlog. If you want to add these work item types to a backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
+> 
+> If your project was created using the Basic process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. To learn more, see [Track issues and tasks](../get-started/track-issues-tasks.md).
+
 In this topic you'll learn: 
 
 >[!div class="checklist"]      
@@ -38,7 +43,7 @@ In this topic you'll learn:
 
 # [New navigation](#tab/new-nav)  
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
@@ -55,7 +60,7 @@ Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within t
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
@@ -71,7 +76,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -81,11 +86,11 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 ## Customize issues tracking
 
 [!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= tfs-2018"
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 

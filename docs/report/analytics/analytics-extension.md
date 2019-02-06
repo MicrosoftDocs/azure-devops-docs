@@ -5,11 +5,11 @@ description: The Analytics extension and how to install it
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/04/2018
 ---
 

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # App Center Test task
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to test app packages with Visual Studio App Center.
 
@@ -47,7 +47,7 @@ Use this task in a build or release pipeline to test app packages with Visual St
 <tr><td>Key alias</td><td>(Optional) undefined</td></tr>
 <tr><td>Key password</td><td>(Optional) undefined</td></tr>
 <tr><td>Test tools directory</td><td>(Optional) Path to directory with Xamarin UI test tools that contains test-cloud.exe.</td></tr>
-<tr><td>Signing information</td><td>(Optional) Use Signing Infor for signing the test server.</td></tr>
+<tr><td>Signing information</td><td>(Optional) Use Signing Information for signing the test server.</td></tr>
 <tr><td>Build directory</td><td>(Optional) Path to the build output directory (usually $(ProjectDir)/Build/Products/Debug-iphoneos).</td></tr>
 <tr><td>Test IPA path</td><td>(Optional) Path to the *.ipa file with the XCUITest tests.</td></tr>
 <tr><td>Additional options</td><td>(Optional) Additional arguments passed to the App Center test prepare step.</td></tr>

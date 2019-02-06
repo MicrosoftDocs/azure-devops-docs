@@ -14,7 +14,7 @@ Use the **Discussion** section to add and review comments made about the work be
 
 ::: moniker-end 
 
-::: moniker range="vsts"   
+::: moniker range="azure-devops"   
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 
@@ -30,7 +30,7 @@ Use the  ![ ](../../_img/icons/pr-id.png) pull-request id icon to link to a pull
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019" 
+::: moniker range=">= tfs-2017 <= azure-devops-2019" 
 Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 > [!IMPORTANT]  

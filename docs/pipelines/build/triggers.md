@@ -5,11 +5,11 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
+ms.manager: jillfra
+ms.author: sdanie
+author: steved0x
 ms.custom: seodec18
-ms.date: 12/13/2018
+ms.date: 01/23/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,14 +21,14 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-On the **Triggers** tab you specify the events that will trigger the build. You can use the same build pipeline for both CI and scheduled builds.
+On the Triggers tab, you specify the events that trigger the build. You can use the same build pipeline for both CI and scheduled builds.
 
 <a name="ci"></a>
 ## Continuous integration (CI)
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 YAML builds are configured by default with a CI trigger on all branches.
 
@@ -56,7 +56,7 @@ trigger:
     - releases/old*
 ```
 
-If you have a lot of team members uploading changes often, then you might want to reduce the number of builds you're running.
+If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
 If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
 
 ```yaml
@@ -91,9 +91,14 @@ You can opt out of CI builds entirely by specifying `trigger: none`.
 trigger: none
 ```
 
+>[!IMPORTANT]
+>When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
+
+For more information, see [Trigger](../yaml-schema.md#trigger) in the [YAML schema](../yaml-schema.md).
+
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -103,7 +108,7 @@ Select this trigger if you want the build to run whenever someone checks in code
 
 ### Batch changes
 
-Select this check box if you have a lot of team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
+Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
 
 > You can batch changes when your code is in Git in the project or on GitHub. This option is not available if your code is in a remote Git repo or in Subversion.
 
@@ -156,7 +161,7 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!NOTE]
 > New pipelines automatically override YAML PR triggers with a setting in the UI.
@@ -204,6 +209,17 @@ pr:
     - docs/README.md
 ```
 
+You can specify whether additional pushes to a PR should cancel in-progress runs for the same PR. The default is `true`.
+
+```yaml
+# auto cancel false
+pr:
+  autoCancel: false
+  branches:
+    include:
+    - master
+```
+
 You can opt out of pull request builds entirely by specifying `pr: none`.
 
 ```yaml
@@ -211,9 +227,14 @@ You can opt out of pull request builds entirely by specifying `pr: none`.
 pr: none
 ```
 
+>[!IMPORTANT]
+>When you create a pull request, or push a change to the source branch of a PR, the YAML file in the source branch is evaluated to determine if a PR build should be run.
+
+For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
+
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -230,18 +251,22 @@ If you choose to build fork pull requests, you may also choose whether or not to
 
 ---
 
+### Trigger builds using GitHub pull request comments
+
+If your team uses GitHub pull requests, you can manually trigger pipelines using pull request comments. See details [here](../repos/github.md#trigger-builds-using-github-pull-request-comments).
+
 ## Scheduled
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Scheduled builds are not yet supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
+After you create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -300,7 +325,7 @@ Otherwise, you can clear this check box and specify the paths in the trigger.
 
 ### How it affects your developers
 
-When a developers try to check-in, they are prompted to build their changes.
+When developers try to check-in, they are prompted to build their changes.
 
 ![Gated check-in prompt](_img/triggers/tfvc-gated-check-in-prompt.png)
 
@@ -322,7 +347,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 <a name="BuildCompletion"></a>
 ## Build completion triggers
@@ -330,7 +355,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 # [YAML](#tab/yaml)
 
 Build completion triggers are not yet supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a build completion trigger.
+After you create your YAML build pipeline, you can use the designer to specify a build completion trigger.
 
 # [Designer](#tab/designer)
 
@@ -347,7 +372,7 @@ After you add a **build completion** trigger, select the **triggering build**. I
 
 ### Download artifacts from the triggering build
 
-In many cases you'll want to download artifacts from the triggering build. To do this:
+In many cases, you'll want to download artifacts from the triggering build. To do this:
 
 1. Edit your build pipeline.
 
@@ -380,7 +405,7 @@ In many cases you'll want to download artifacts from the triggering build. To do
 
 If your code is in a Git repo on Azure Repos or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is not available for GitHub repos.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### My build didn't run. What happened?
 
@@ -394,9 +419,20 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+### The YAML file in my branch is different than the YAML file in my master branch, which one is used?
+
+When you have configured a [CI trigger](#continuous-integration-ci) or a [PR trigger](#pull-request-validation), the YAML file that is in the branch being pushed is used.
+
+* For CI triggers, the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
+* For PR triggers, the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.
+
+::: moniker-end
+
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

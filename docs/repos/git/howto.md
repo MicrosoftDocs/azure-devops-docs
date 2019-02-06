@@ -5,7 +5,7 @@ description: Tips, Tricks, and HOWTO to complete some less-common Git tasks.
 ms.assetid: b1262306-214c-4422-8eda-d03d05825241
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

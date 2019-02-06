@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Items | REST API Reference for Team Foundation Server
 description: Work with Git items (files and folders) programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

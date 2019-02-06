@@ -5,7 +5,7 @@ ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # How To: Use Work Item Search
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Work Item Search is available as a built-in extension in Azure DevOps and TFS.
 Users can use Work Item Search by default without any installation.

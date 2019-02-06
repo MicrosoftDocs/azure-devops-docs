@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -24,7 +24,7 @@ For example, you can find work items that were modified in the last 3 days with 
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
-Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the format accepted by your computer's operating system. 
+Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the **Date Pattern** you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)   
 
 <table valign="top">
 <tbody valign="top">
@@ -105,7 +105,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
@@ -130,7 +130,7 @@ Prior to creating or updating a query to use the **@CurrentIteration** macro, ma
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="current-iteration-plus-minus-n">  </a>
 ## Query for items based on a sliding window of team iterations 
@@ -145,7 +145,7 @@ Here we show how to list all User Stories and Bugs assigned to the sliding windo
 > [!div class="mx-imgBorder"]
 ![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
 
-To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-team-defaults.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
+To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
 
 ::: moniker-end
 
@@ -236,7 +236,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>Iteration Path</td>
-  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project](../../organizations/settings/set-iteration-paths-sprints.md), and you [select iteration paths](../../organizations/settings/set-team-defaults.md) for a team. 
+  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md). 
 <p>Reference name=System.IterationPath, Data type=TreePath</p>
   </td>
   <td>All</td>
@@ -327,7 +327,7 @@ To query for items based on text entered in the History field, see [History and 
 - [Query operators & macros](query-operators-variables.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query permissions](set-query-permissions.md)
-
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
 

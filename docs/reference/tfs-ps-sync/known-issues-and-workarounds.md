@@ -5,7 +5,7 @@ description: Workaround known issues with the integration of Team Foundation Ser
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 45423e0a-63f7-4fc4-8319-9344a43abed3
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/12/2017

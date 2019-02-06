@@ -5,12 +5,12 @@ ms.assetid: 154DFD11-88BC-4DF8-9D24-A546CCAAADD2
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.custom: seodec18
 ms.date: 08/28/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Package Docker-based apps in Helm charts in Azure Pipelines

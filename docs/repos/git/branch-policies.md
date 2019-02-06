@@ -5,7 +5,7 @@ description: Branch policies provide teams with the means to protect their impor
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -132,7 +132,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 ::: moniker-end 
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 
 ## Require approval from external services
 

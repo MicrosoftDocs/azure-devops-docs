@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid:
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/04/2016
@@ -137,7 +137,7 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 The gulpfile.js script zips up the app so it can be deployed to Azure. The web.config file enables running the app on Azure. The .gitignore file keeps build artifacts on your dev machine from getting into your Git repo.
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

@@ -5,7 +5,7 @@ ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Manage a virtual machine in Azure DevTest Labs
 
-[!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]

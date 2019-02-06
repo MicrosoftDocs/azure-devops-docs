@@ -5,10 +5,10 @@ description: Summary of what you can and can't customize in a process template t
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 

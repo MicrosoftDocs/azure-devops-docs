@@ -5,11 +5,11 @@ description: Resolve errors that occur with an Analytics view and Power BI for A
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 04/04/2018
 ---
 

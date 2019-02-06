@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -326,7 +326,7 @@ Choose your widget and click the 'Add' button to add it to your dashboard.
 <a name="part-2"/>
 
 ## Part 2: Hello World with Azure DevOps Services REST API
-Widgets can call any of the [REST APIs](/rest/api/vsts/?view=vsts) in Azure DevOps Services to interact with Azure DevOps Services resources.
+Widgets can call any of the [REST APIs](/rest/api/vsts/?view=azure-devops) in Azure DevOps Services to interact with Azure DevOps Services resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 

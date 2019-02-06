@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2015'
@@ -17,7 +17,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
   
-You can use the keyboard shortcuts provided in this topic from the web portal or from Visual Studio Team Explorer. 
+You can use the keyboard shortcuts provided in this article from the web portal or from Visual Studio Team Explorer. 
 
 
 ## Queries page 

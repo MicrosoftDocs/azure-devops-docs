@@ -5,7 +5,7 @@ description: Occurs an error when a required plug-in is missing from the process
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 900b529d-989b-455e-960a-2553829b953f
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

@@ -5,10 +5,10 @@ description: Quick start helping users to create a trend report using an Analyti
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
 ms.date: 12/04/2018
 ---
@@ -56,23 +56,23 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 0. From the **Analytics view>All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Analytics>All, Edit the Stories -Last 30 days view](_img\create-report\edit-default-view-last-30-days.png)  
+	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/edit-default-view-last-30-days.png)  
 
 0. Choose the **Verification** tab and then the **Verify view** button. 
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics>All, Edit the Stories -Last 30 days view](_img\create-report\verify-view.png)  
+	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/verify-view.png)  
 
 	Wait until the verification process completes. Verification time varies according to the amount of data defined in your view. For example, a view that includes all work item types and specifies "All history", will take more time to verify than a view that includes only stories and specifies a rolling period of 30 days.
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics>All, Edit the Stories -Last 30 days view](_img\create-report\verified-view.png)  
+	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/verified-view.png)  
 
 0. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
 	To learn more about defining views, see [Create an Analytics view](../analytics/analytics-views-create.md).  
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 ## Connect to an Analytics view on Azure DevOps Server 
 
@@ -100,7 +100,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ## Connect to an Analytics view 
 

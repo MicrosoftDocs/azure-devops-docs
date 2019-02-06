@@ -1,13 +1,12 @@
 ---
 title: Build your .NET desktop app for Windows
-shorttitle: Visual Studio solution
 ms.custom: seodec18
 description: Learn how you can define a continuous integration (CI) pipeline that builds your .NET app on Team Foundation Server and Azure Pipelines.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 2BFC43A2-4F6C-4A5C-86EE-6DDA8733829D
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 12/20/2017
@@ -44,13 +43,13 @@ https://github.com/adventworks/net-sample
 
 # [GitHub repo](#tab/github)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 **TFS**: Does not apply.
 

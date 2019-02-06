@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/17
@@ -40,7 +40,7 @@ Build reports track the quality of software under development. By defining tests
 <ol>
 <li>[Configure a build system](../../pipelines/agents/agents.md)</li>
 <li>[Get started with CI/CD](../../pipelines/get-started-designer.md)</li>
-<li>[Run tests in your build process](../../pipelines/test/getting-started-with-continuous-testing.md)</li>
+<li>[Run tests in your build process](../../pipelines/languages/dotnet-core.md#run-your-tests)</li>
 <li>(Optional) [Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx) to populate the Build Quality dimension.</li>
 </ol>
 </td>

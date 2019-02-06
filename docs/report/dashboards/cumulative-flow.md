@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
 
@@ -48,7 +48,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 A few options are available for you to [configure your chart](#configure) or [configure your CFD widget](#configure-widget).
 -->
  
-::: moniker range=">=azdevserver-2019" 
+::: moniker range=">=azure-devops-2019" 
 <a id="configure-widget"></a>
 ## Configure the CFD widget    
 
@@ -89,22 +89,22 @@ You will need to be a team administrator or a member of the Project Administrato
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Boards>Boards** page. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open CFD, new nav](_img/open-cfd-new-nav.png)
 
-::: moniker-end  Â Â 
+::: moniker-end    
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-endÂ Â 
+::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Work>Backlogs** page. 
 
@@ -112,7 +112,7 @@ You open the built-in (work tracking datastore) CFD for your product or portfoli
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -132,7 +132,7 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
 	> [!div class="mx-imgBorder"]  
@@ -143,16 +143,16 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 2. Choose **Cumulative flow** and specify the team's preferences.  
 
 	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
-::: moniker-end  Â Â 
+::: moniker-end    
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-endÂ Â 
+::: moniker-end  
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
@@ -165,7 +165,7 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 <table>
 <tr valign="bottom">
@@ -13,7 +13,17 @@
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View charts and dashboards
+<td align="left">View work item query charts (from the Queries page) 
+</td>
+<td> </td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+<td>![checkmark](_img/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">View dashboards (including work item query charts added to the dashboard) 
 </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>
@@ -22,8 +32,9 @@
 <td>![checkmark](_img/checkmark.png)</td>
 </tr>
 
+
 <tr>
-<td align="left">Create work item and test tracking charts <sup>1</sup>
+<td align="left">Create work item query and test tracking charts <sup>1</sup>
 </td>
 <td>  </td>
 <td>  </td>
@@ -80,10 +91,10 @@
 **Notes:**
 1. Public project Stakeholders have full access to all features. 
 
-::: moniker-end 
+::: moniker-end  
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 <table>
 <tr valign="bottom">
@@ -160,4 +171,4 @@
 </tbody>
 </table>
 
-::: moniker-end 
+::: moniker-end  

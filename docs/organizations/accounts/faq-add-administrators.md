@@ -7,11 +7,11 @@ ms.assetid: 7ad07299-c9c5-4748-bf31-6518356ee0d0
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge  
+ms.manager: jillfra  
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Troubleshoot adding administrators to projects and project collections

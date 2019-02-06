@@ -2,9 +2,9 @@
 ms.topic: include
 ---
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
+1. Go to your feed ([or create a feed if you haven't](https://docs.microsoft.com/en-us/azure/devops/artifacts/get-started-nuget?view=azure-devops&tabs=new-nav#create-a-feed)). 
 
 1. Select **Connect to feed**:
 
@@ -32,7 +32,7 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
 

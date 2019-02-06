@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 10/11/2018

@@ -5,10 +5,10 @@ description: Create PowerBI charts, reports, and dashboards based on the Analyti
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/04/2018
 ---
 

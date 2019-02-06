@@ -6,11 +6,11 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 12/10/2018
+ms.date: 01/08/2018
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -25,16 +25,15 @@ supports your needs to filter a backlog or query, or define a query.
 
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
 
-## Prerequisites 
-- To add existing tags, you must be a member of the project Contributors group and have been assigned Stakeholder, Basic, or an advanced level access level. To learn more about Stakeholder access, see [About access levels](../../organizations/security/access-levels.md). 
-- To add new tags, your **Create new tags** permission must be set to Allow. By default, all members of the project Contributors group have this permission. Even if the permission is explicitly set for a Stakeholder, they won't have permission to add new tags, as they are prohibited through their access level. 
-
-::: moniker range="vsts"
 > [!NOTE]   
-> Stakeholders for public projects are allowed to add tags. 
+> Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags.  
+
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+
+::: moniker range="azure-devops"
+> [!NOTE]   
+> Users with **Stakeholder** access for public projects are allowed to add new tags. 
 ::: moniker-end
-
-
 
 
 <a id="assign"></a>
@@ -59,7 +58,7 @@ To add several tags at one time, type a comma between tags. Tags are case sensit
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > [!NOTE]   
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
@@ -203,7 +202,7 @@ Requires TFS 2015.1 or later version.
 
 ## Related articles
 
-Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags. 
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
@@ -221,7 +220,7 @@ Simply save the work item with the tags (100 or less) that you've added, and the
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 ### Add tags to the default column view on the product backlog 
 

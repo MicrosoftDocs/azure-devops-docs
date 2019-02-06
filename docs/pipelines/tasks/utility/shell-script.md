@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
@@ -134,7 +134,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

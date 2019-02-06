@@ -4,7 +4,7 @@ ms.technology: devops-ecosystem
 title: TFS/Dashboards/WidgetContracts WidgetStatus API | Extensions for Azure DevOps Services
 description: Documentation for the WidgetStatus contract.
 ms.assetid: 80994108-EAB5-414E-A986-A0EF90D9DF0D
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk

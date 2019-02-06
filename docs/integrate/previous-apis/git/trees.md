@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Trees | REST API Reference for Team Foundation Server
 description: Work with Git trees programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 5F749008-5513-444E-8E46-AF575132796E
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

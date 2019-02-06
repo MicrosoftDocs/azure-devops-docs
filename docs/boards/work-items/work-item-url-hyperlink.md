@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.prod: devops
 ms.technology: devops-agile   
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 ms.topic: reference   
 monikerRange: '>= tfs-2013'   
@@ -21,7 +21,7 @@ ms.date: 11/19/2018
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
 
-Examples in this topic use the following conventions:
+Examples in this article use the following conventions:
 
 -   *OrganizationName* specifies the name of the Azure Boards organization  
 -   *ServerName* specifies the name of the TFS application tier server   
@@ -31,7 +31,7 @@ Examples in this topic use the following conventions:
 -   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 
 ```
 https://dev.azure.com/OrganizationName/ProjectName/_workitems/edit/WorkItemNumber
@@ -58,7 +58,7 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= azdevserver-2019"  
+::: moniker range=">= tfs-2015 <= azure-devops-2019"  
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 

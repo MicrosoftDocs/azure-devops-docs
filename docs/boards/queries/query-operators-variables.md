@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -100,7 +100,7 @@ The value you specify for a field must conform to the data type for that field. 
 
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
-	<td><p>A Coordinated Universal Time (UTC) moment in time. You can specify a variable, such as <strong>@Today</strong> or <strong>@Today-1</strong>, or a value, such as 1/1/2012. For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). </p></td></tr>
+	<td><p>A date field in which you can specify a variable, such as <strong>@Today</strong> or <strong>@Today-1</strong>, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). </p> <p>For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For details, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). </td></tr>
 <tr>
 	<td><p><strong>Double</strong> </p></td>
 	<td><p>A real number, such as 0.2 or 3.5. For query examples, see [Query by numeric fields](query-numeric.md). </p></td></tr>
@@ -109,10 +109,10 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>A character string that represents a unique ID.</p></td></tr>
 <tr>
 	<td><p><strong>History</strong> </p></td>
-	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this topic.  For query examples, see [History and auditing](history-and-auditing.md). </p></td></tr>
+	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article.  For query examples, see [History and auditing](history-and-auditing.md). </p></td></tr>
 <tr>
 	<td><p> <strong>HTML</strong> </p></td>
-	<td><p>Text strings that support formatted descriptions, such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. These fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this topic. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). </p>
+	<td><p>Text strings that support formatted descriptions, such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. These fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). </p>
 </td>
 </tr>
 <tr>
@@ -120,13 +120,13 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>A 32-bit integer that is signed, such as 0, 1, 2, 34.</p></td></tr>
 <tr>
 	<td><p> <strong>PlainText</strong> </p></td>
-	<td><p>Text strings that support long descriptions, such as the <strong>Application Start Information</strong> field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this topic. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).</p></td></tr>
+	<td><p>Text strings that support long descriptions, such as the <strong>Application Start Information</strong> field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this article. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).</p></td></tr>
 <tr>
 	<td><p> <strong>String</strong> </p></td>
 	<td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support pick lists or drop-down menus.  </p></td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md).</p> 
+	<td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team.</p> 
 	<p>For more information on constructing queries, see [Query by area or iteration path](query-by-area-iteration-path.md) or [Query by date or current iteration](query-by-area-iteration-path.md).</p></td>
 </tr>
 
@@ -150,27 +150,27 @@ You can use query operators in the following table to specify how each value in 
 <tr>
 	<td><p><strong>=</strong></p></td>
 	<td><p>Matches the value in the clause.</p></td>
-	<td><p>Number, which includes <strong>Double</strong>, <strong>GUID</strong>, <strong>Integer</strong>, and <strong>String</strong>, <strong>DateTime</strong>, and <strong>TreePath</strong></p><p></p></td></tr>
+	<td><p><strong>Number</strong>, which includes <strong>Double</strong>, <strong>GUID</strong>, <strong>Integer</strong>, and <strong>String</strong>, <strong>DateTime</strong>, and <strong>TreePath</strong></p><p></p></td></tr>
 <tr>
 	<td><p><strong>&lt;&gt;</strong></p></td>
 	<td><p>Does not match the value in the clause.</p></td>
-	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, and <strong>TreePath</strong></p></td></tr>
+	<td><p><strong>Number</strong>, <strong>String</strong>, <strong>DateTime</strong>, and <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>&gt;</strong></p></td>
 	<td><p>Is larger than the value in the clause.</p></td>
-	<td><p>Number, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
+	<td><p><strong>Number</strong>, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
 <tr>
 	<td><p><strong>&lt;</strong></p></td>
 	<td><p>Is less than the value in the clause.</p></td>
-	<td><p>Number, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
+	<td><p><strong>Number</strong>, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
 <tr>
 	<td><p><strong>&gt;=</strong></p></td>
 	<td><p>Is larger than or equal to the value in the clause.</p></td>
-	<td><p>Number, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
+	<td><p><strong>Number</strong>, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
 <tr>
 	<td><p><strong>&lt;=</strong></p></td>
 	<td><p>Is less than or equal to the value in the clause.</p></td>
-	<td><p>Number, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
+	<td><p><strong>Number</strong>, <strong>String</strong>, and <strong>DateTime</strong></p></td></tr>
 <tr>
 	<td><p><strong>=[Field]</strong></p></td>
 	<td><p>Matches the value that is contained in the specified field.</p></td>
@@ -206,7 +206,7 @@ You can use query operators in the following table to specify how each value in 
 <tr>
 	<td><p><strong>Contains Words</strong></p></td>
 	<td><p>Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, <strong></strong>*. For restrictions, see [Full-text searches](#full-text) for server and collation requirements.</p></td>
-	<td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields and <strong>Title</strong>.</p></td></tr>
+	<td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields, and the <strong>History</strong> and <strong>Title</strong> fields.</p></td></tr>
 <tr>
 	<td><p><strong>Does Not Contain Words</strong></p></td>
 	<td><p>Does not contain the exact text string or words within the field you selected for filtering.</p></td>
@@ -217,7 +217,18 @@ You can use query operators in the following table to specify how each value in 
 <blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
 </td>
-	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
+	<td><p><strong>Number</strong>, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
+
+<tr>
+	<td><p><strong>Is Empty</strong></p></td>
+	<td><p>Lists work items that contain an empty HTML field. You don't specify a value with this operator. This operator is supported for Azure Boards (cloud service), Azure DevOps Server 2019, and later versions.</p>
+</td>
+	<td><strong>HTML</strong> </td></tr>
+<tr>
+	<td><p><strong>Is Not Empty</strong></p></td>
+	<td><p>Lists work items that contain some content in the HTML field. You don't specify a value with this operator. This operator is supported for Azure Boards (cloud service), Azure DevOps Server 2019, and later versions.</p>
+</td>
+	<td>**HTML**</td></tr>
 <tr>
 	<td><p><strong>Not In</strong></p></td>
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
@@ -225,7 +236,7 @@ You can use query operators in the following table to specify how each value in 
 </blockquote>
 <blockquote>The <strong>Not In</strong> operator is available from Azure Boards and TFS 2018.2 and later versions.</blockquote>
 </td>
-	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
+	<td><p><strong>Number</strong>, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>In Group</strong></p></td>
 	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]&#92;<em>Team Name</em>.</p><p>For example queries, see [Query by assignment or workflow changes](query-by-workflow-changes.md).</p></td>
@@ -337,6 +348,8 @@ You can use the macros described in the following table to filter your queries b
 	<td>Use with a `DateTime` field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause `Created Date>=@Today-7`. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).</td>
 </tr>
 
+
+
 </tbody> 
 </table>
  
@@ -348,6 +361,7 @@ You can use the macros described in the following table to filter your queries b
 0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 0. The **@RecentProjectActivity** macro is supported for Azure Boards only at this time.
 0. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+
  
 
 <a id="full-text" /> 
@@ -364,7 +378,7 @@ For examples, see [Example work item queries](example-queries.md) and [Query for
 
 **Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. 
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 Azure DevOps Server and Team Foundation Server automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
 
 Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
@@ -379,6 +393,7 @@ For more information, see [Full-Text Search Queries and Collation Settings](/tfs
 
 - [About managed queries](example-queries.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)] 
 

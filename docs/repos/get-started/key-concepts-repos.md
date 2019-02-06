@@ -4,11 +4,11 @@ titleSuffix: Azure Repos
 description: Key definitions for objects and items used to code with Azure Repos
 ms.technology: devops-new-user 
 ms.prod: devops
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 09/10/2018  
 ---
 

@@ -9,7 +9,7 @@ ms.manager: dastahel
 ms.custom: seodec18
 ms.author: dastahel
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Azure PowerShell task
@@ -20,7 +20,7 @@ Use this task in a build or release pipeline to run a PowerShell script within a
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV3.md)]
+[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4.md)]
 ::: moniker-end
 
 ## Arguments

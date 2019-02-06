@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
@@ -123,7 +123,7 @@ Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 
  ```ps
 # Writes a warning to build summary and to log in yellow text
-Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
+Write-Host  "$("##vso[task.LogIssue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
 ```
 
 ![icon](_img/powershell.png) Write warning using PowerShell command
@@ -157,7 +157,7 @@ Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 
  ```ps
 # Writes an error to the build summary and to the log in red text
-Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
+Write-Host  "$("##vso[task.LogIssue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
 ```
 
 > [!TIP]
@@ -209,7 +209,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

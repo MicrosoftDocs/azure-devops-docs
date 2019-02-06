@@ -5,7 +5,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 monikerRange: '>= tfs-2013'
@@ -31,7 +31,7 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
 * TFS 2018 Update 2
-* TFS 2018 Update 3 & Update 3.1
+* TFS 2018 Update 3, Update 3.1, and Update 3.2
 
 > [!NOTE]
 > The Import Service doesn't support imports from TFS release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
@@ -81,11 +81,12 @@ A: No, when it comes to service updates, Hosted XML organizations are treated th
 
 #### Q: Will my organization be stuck in Hosted XML forever?
 
-A: You are using the Hosted XML because the Inheritance process model does not contain all features yet. We are planning to allow you to migrate from the Hosted XML into the Inheritance process model later this year.
+A: You are using the Hosted XML process because the Inheritance process model does not contain all features yet. However, you can now [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
 
 #### Q: Will migrating from Hosted XML into Inheritance process model be a manual process?
 
-A: No, the plan is to provide a simple and automated experience through the web interface.
+A: No, the migration is automated. Simply follow the steps to [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
+
 
 #### Q: What happens in Hosted XML when Microsoft makes a change to a system process?
 
@@ -93,11 +94,11 @@ A: This is the same experience with TFS on-premises. If we make a change to a sy
 
 #### Q: Is there a difference between a team project that was created manually versus one that was created from data import?
 
-A. The features available to each team project are the same. The differences occur in how you modify the processes in your organization. When you create an organization, you will use the [Inheritance process model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to customize the work tracking experience.
+A. The features available to each team project are the same. The differences occur in how you modify the processes in your organization. When you create an organization, you will use the [Inheritance process model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to customize the work tracking experience. As described above, these Hosted XML processes can be cloned to an Inheritance process model after import.
 
 #### Q: If my organization is using Hosted XML, can I create new projects to use the Inheritance process model?
 
-A: Yes. For data import organizations, Azure DevOps Services supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).  
+A: Yes. For data import organizations, Azure DevOps Services supports team projects that use Inheritance as well as Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).  
 
 #### Q: Where can I find more information on Hosted XML and the Inheritance process model?
 

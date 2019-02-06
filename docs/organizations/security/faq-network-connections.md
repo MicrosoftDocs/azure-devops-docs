@@ -5,15 +5,18 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 7c8ff784-ffc2-4378-bc29-a7e5632ab776
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 12/02/2017
-monikerRange: 'vsts'
+ms.date: 01/24/2019
+monikerRange: 'azure-devops'
 ---
+
+
+
 # Troubleshoot network connections and whitelist addresses
 
-**Azure DevOps**
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If you are having network connection issues to Azure DevOps, using NuGet, or connecting from Visual Studio 2015 and 
 later versions, it may be because your security appliances are blocking connections now that Visual Studio uses TLS 1.2.
@@ -34,6 +37,7 @@ A more general list of URLs for signing in to Azure DevOps and Azure:
 * *.visualstudio.com
 * *.microsoft.com
 * *.live.com
+* vstsagentpackage.azureedge.net
 * cdn.vsassets.io -- hosts our CDN content
 * *.gallerycdn.vsassets.io -- hosts Azure DevOps extensions
 * static2.sharepointonline.com -- hosts some resources that we use in "office fabric" UI kit (fonts, etc). 

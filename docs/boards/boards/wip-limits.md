@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
@@ -26,6 +26,7 @@ You define WIP limits for each work stage, corresponding to each intermediate co
 
 While [setting WIP limits](#Set) is simple, adhering to the limits takes a team commitment. Successful adoption of WIP limits involves a culture change. It moves teams from a focus on individual productivity to one of team productivity. 
 
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
 
 <a id="Initial WIP" />
 
@@ -112,7 +113,7 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -138,7 +139,7 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -188,7 +189,7 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

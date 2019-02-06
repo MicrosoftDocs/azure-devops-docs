@@ -5,10 +5,10 @@ ms.assetid: 3D57E047-4922-4B4B-8736-A68B2895E846
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azdevserver-2019" 
+monikerRange: "<= azure-devops-2019" 
 ms.date: 11/19/2018
 ---
 

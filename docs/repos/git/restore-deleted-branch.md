@@ -5,7 +5,7 @@ description: Use the branches page to restore a deleted Git branch in Azure DevO
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kangan
 author: kaylangan
 ms.topic: conceptual
@@ -44,7 +44,7 @@ If you've re-used the same branch name for different commits, you may not see al
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ![View all pushes for your restored branch](_img/branches/restore_deleted_branch_pushes-new-nav.png)
 

@@ -5,7 +5,7 @@ ms.assetid: 64620E9B-D2D1-4516-921A-40A159019513
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

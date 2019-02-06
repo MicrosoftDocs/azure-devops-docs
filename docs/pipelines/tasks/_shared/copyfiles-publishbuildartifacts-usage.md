@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 ## Usage
 
 A typical pattern for using this task is:
@@ -17,7 +17,7 @@ steps:
 - powershell: .\build.ps1
 - task: CopyFiles@2
   inputs:
-    contents: _buildOutput\**
+    contents: '_buildOutput\**'
     targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:

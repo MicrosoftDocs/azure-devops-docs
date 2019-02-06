@@ -5,7 +5,7 @@ description: Use the branches page to create a new Git branch in Azure DevOps Se
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -30,7 +30,7 @@ monikerRange: '>= tfs-2013'
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 0. View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 

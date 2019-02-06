@@ -8,7 +8,7 @@ ms.topic: hub-page
 ms.prod: devops 
 ms.technology: devops-new-user
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
-ms.manager: douge 
+ms.manager: jillfra 
 ms.author: kaelli 
 ms.date: 11/25/2018
 featureFlags:
@@ -636,8 +636,9 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Additional resources</h3>
                                                         <p><a href="/azure/devops/index-all">Index</a></p>
-                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
-                                                        <p><a href="/azure/devops/learn/">DevOps resource center</a></p>
+                                                        <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
+                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
+                                                        <p><a href="/azure/devops/learn/">DevOps Resource Center</a></p>
                                                         <p><a href="/tfs/index">TFS Administrator Guide</a></p>
                                                     </div>
                                                 </div>

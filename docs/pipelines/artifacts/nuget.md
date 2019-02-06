@@ -8,7 +8,7 @@ ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Publish to NuGet feeds
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -36,7 +36,7 @@ There are various ways to create NuGet packages during a build. If you're alread
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 To create a package, add the following snippet to your azure-pipelines.yml file.
 
 ```yaml
@@ -54,7 +54,7 @@ The NuGet task supports a number of options. The following list describes some o
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -96,7 +96,7 @@ When you create a package in continuous integration (CI), you can use Semantic V
 
 #  [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 This example shows how to use the date and time as the prerelease label.
 
 ```yaml
@@ -119,7 +119,7 @@ For a list of other possible values for `versioningScheme`, see the [NuGet task]
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -144,7 +144,7 @@ In the previous section, you learned how to create a package with every build. W
 
 #  [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 To publish to an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed. To learn more about permissions to Package Management feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions). Add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
@@ -153,7 +153,7 @@ steps:
   displayName: 'NuGet push'
   inputs:
     command: push
-    publishVstsFeed: 'af432f1b-f4b2-4a4f-bc9c-fef924f8f823'
+    publishVstsFeed: '<feedName>'
     allowPackageConflicts: true
 ```
 
@@ -168,11 +168,11 @@ To publish a package to a NuGet feed, add the following snippet to your `azure-p
     nuGetFeedType: external
     publishFeedCredentials: '<Name of the NuGet service connection>'
     versioningScheme: byEnvVar
-    versionEnvVar: Version
+    versionEnvVar: <VersionVariableName>
 ```
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -189,7 +189,17 @@ To publish NuGet packages created by your build, add the **NuGet** task and conf
 
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
 
+::: moniker range=">= tfs-2018"
+
 To publish to an external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. To connect to the feed, fill in the feed URL and the API key or token.
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+To publish to an external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service Endpoint**. Select the **NuGet** option for the service connection. To connect to the feed, fill in the feed URL and the API key or token.
+
+> If you are running TFS Update 2 or older, **Nuget** is not a service endpoint option, you must use the **Generic** connection.
 
 ---
 

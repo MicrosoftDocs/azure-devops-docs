@@ -7,7 +7,7 @@ ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -22,9 +22,7 @@ ms.date: 11/19/2018
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders.
  
-## Prerequisites
-If you're not a member of the Project Administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.  
-
+[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
 ## Open Queries 
 
@@ -36,7 +34,7 @@ If you're not a member of the Project Administrators group, [get added](../../or
 ## Add a query folder, move items into a folder 
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 You add query folders from the **Boards>Queries>All** page.
  

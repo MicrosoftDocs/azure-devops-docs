@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 7c2d014a-c6b4-40e7-9217-326b6d8cd74c
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/14/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Cloud Solution Providers: Set up billing for your customers for Azure DevOps Services and Visual Studio

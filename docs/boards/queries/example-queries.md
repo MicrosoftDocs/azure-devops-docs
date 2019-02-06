@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an adhoc search using the [search box](search-box-queries.md). 
+A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
 
 With queries, you can perform these functions: 
 
@@ -35,10 +35,10 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 ## Getting started 
 
-If you are looking for a specific work item, use the adhoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
+If you are looking for a specific work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
 - [View and run a query](view-run-query.md)   
-- [Perform an adhoc search](search-box-queries.md)  
+- [Perform an ad hoc search](search-box-queries.md)  
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)  
 - [Organize and run managed queries](organize-queries.md)  
@@ -51,7 +51,7 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 -   You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
 -   You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 For additional tips when working with the new queries experience or the directory-focused queries views, see [Tips for working with the directory-focused **Queries** pages](view-run-query.md#tips-queries-hub). 
 ::: moniker-end
 
@@ -130,7 +130,7 @@ For additional tips when working with the new queries experience or the director
 - [List query-based test suites](build-test-integration.md)  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ### Team focus 
 - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
@@ -142,10 +142,10 @@ For additional tips when working with the new queries experience or the director
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-> [!div class="mx-tdBreakAll"]  
-> |Team focus |  
-> |-------------| 
-> |- [Assigned to a member of a team](query-by-workflow-changes.md#group)<br/>- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
+### Team focus 
+
+- [Assigned to a member of a team](query-by-workflow-changes.md#group)
+- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
 
 ::: moniker-end
 

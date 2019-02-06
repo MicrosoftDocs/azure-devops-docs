@@ -8,7 +8,7 @@ ms.topic: hub-page
 ms.prod: devops 
 ms.technology: vs-devops-overview 
 ms.assetid:  
-ms.manager: douge 
+ms.manager: jillfra 
 ms.author: kaelli 
 ms.date: 09/05/2018
 featureFlags:
@@ -44,6 +44,8 @@ featureFlags:
 														<p><a href="/azure/devops/user-guide/index">Azure DevOps</a></p>
 														<p><a href="/azure/devops/project/navigation/preview-features">Web portal navigation</a></p>
 														<p><a href="/azure/devops/release-notes/index">What's new</a></p>
+                                                        <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
+                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -75,7 +77,7 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Continuous integration &amp; delivery</h3>
                                                         <p><a href="/azure/devops/pipelines/index">Build and release pipelines</a></p>
-														<p><a href="/azure/devops/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a></p>
+														<p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
 														<p><a href="/azure/devops/deploy-azure/index">Deploy to Azure</a></p>
 														<p><a href="/azure/devops/artifacts/index">Package management</a></p>
 														<p><a href="/azure/devops/pipelines/library/index">Library assets</a></p>
@@ -115,7 +117,7 @@ featureFlags:
                                                         <p><a href="/azure/devops/project/wiki/project-vision-status">Project summary</a></p>
 														<p><a href="/azure/devops/project/wiki/index">Wiki</a></p>
 														<p><a href="/azure/devops/project/search/index">Search</a></p>
-														<p><a href="/azure/devops/project/navigation/set-favorites">Set favorites</a></p>
+														<p><a href="/azure/devops/project/navigation/set-favorites">Favorites</a></p>
 														<p><a href="/azure/devops/organizations/public/index">Public Projects</a></p>
                                                     </div>
                                                 </div>
@@ -158,8 +160,8 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Discover, manage, and develop extensions</h3>
                                                         <p><a href="/azure/devops/extend/index">Develop extensions</a></p>
-														<a href="/azure/devops/service-hooks/index">Service hooks</a></p>
-														<a href="/azure/devops/integrate/index">Integrate applications</a></p>
+                                                        <p><a href="/azure/devops/service-hooks/index">Service hooks</a></p>
+                                                        <p><a href="/azure/devops/integrate/index">Integrate applications</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -170,11 +172,12 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <h3>Analytics</h3>
+                                                        <h3>Reports & Analytics</h3>
                                                         <p><a href="/azure/devops/report/dashboards/index">Dashboards</a></p>
-														<p><a href="/azure/devops/report/analytics/index">Analytics views</a></p>
+														<p><a href="/azure/devops/report/analytics/index">Analytics Service</a></p>
 														<p><a href="/azure/devops/report/powerbi/index">Power BI</a></p>
 														<p><a href="/azure/devops/report/extend-analytics/index">Extend Analytics with OData</a></p>
+														<p><a href="/azure/devops/report/sql-reports/index">SQL Server Reports</a></p>
 													</div>
                                                 </div>
                                             </div>
@@ -204,7 +207,7 @@ featureFlags:
                                                         <h3>Test</h3>
                                                         <p><a href="/azure/devops/test/index">Exploratory &amp; manual testing</a></p>
 														<p><a href="/azure/devops/project/feedback/index">Request stakeholder feedback</a></p>
-														<p><a href="/azure/devops/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a></p>
+														<p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
 														<p><a href="/azure/devops/test/load-test/index">Load testing</a></p>
 														<p><a href="/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
                                                     </div>

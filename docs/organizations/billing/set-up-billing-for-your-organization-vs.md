@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
-monikerRange: 'vsts'
+ms.date: 12/21/2018
+monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Set up billing for your organization
@@ -47,7 +47,7 @@ If you want to set up billing for your organization before buying something in t
 
 3. Select your organization.
 
-   ![In the Azure portal, select your organization](_img/set-up-billing/azure-portal-select-organization.png)
+  ![Select your organization](../accounts/_img/_shared/azure-portal-select-organization.png)
 
 4. Select **Set up billing**.
 

@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Access control entries (ACEs) | REST API Reference for Team Foundation Server
 description: Access control entries reference for integrating with VSTS
 ms.assetid: ca6693b0-1982-4f8b-9b25-41b903fad3ca
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

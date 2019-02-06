@@ -9,7 +9,7 @@ ms.manager: dastahel
 ms.custom: seodec18
 ms.author: dastahel
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Go Tool Installer task

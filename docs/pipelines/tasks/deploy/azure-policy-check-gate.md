@@ -5,12 +5,12 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8BA74703-E94F-4A35-814E-FC21F44578A2
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Azure Policy Check Gate task

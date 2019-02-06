@@ -1,12 +1,12 @@
 ---
-title: Add, edit, or print wiki pages in Azure DevOps
+title: Add, edit, reorder and manage wiki pages in Azure DevOps
 titleSuffix: Azure DevOps  
 description: Learn how to add, edit, reorder, and manage pages for your built-in project wiki in Azure DevOps.  
 ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
@@ -40,7 +40,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 <img src="_img/wiki/wiki-save-with-message.png" alt="Save page with a custom message" style="border: 1px solid #C3C3C3;" />
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
 > To add or edit pages to a wiki that you've published from a Git repository, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md). This article addresses how to add and edit pages of a wiki that you've provisioned for a team project.

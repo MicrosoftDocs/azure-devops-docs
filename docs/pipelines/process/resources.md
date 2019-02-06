@@ -6,11 +6,11 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
-ms.date: 12/18/2018
-monikerRange: 'vsts'
+ms.date: 1/8/2019
+monikerRange: 'azure-devops'
 ---
 
 # Resources
@@ -23,8 +23,8 @@ A resource is anything used by a pipeline that lives outside the pipeline itself
 - [variable groups](../library/variable-groups.md)
 - [service connections](../library/service-endpoints.md)
 - [agent pools](../agents/pools-queues.md)
-- [other repositories](../yaml-schema.md#repository)
-- [containers](../yaml-schema.md#container)
+- [other repositories](../yaml-schema.md#repository-resource)
+- [containers](../yaml-schema.md#container-resource)
 
 Some resources must be authorized before they can be used. This ensures that only users with sufficient permissions can access potentially sensitive resources such as service connections.
 

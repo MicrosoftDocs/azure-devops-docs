@@ -6,7 +6,7 @@ ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 11/20/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Jobs
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -68,7 +68,7 @@ When the target is an agent, the tasks are run on the computer that hosts the ag
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The full syntax to specify an agent job is:
 
@@ -115,7 +115,7 @@ jobs:
 It's possible to re-use some or all of a pipeline through [templates](templates.md).
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -132,7 +132,7 @@ Use demands to specify what capabilities an agent must have to run jobs from you
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ```yaml
 pool:
@@ -155,7 +155,7 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -174,7 +174,7 @@ If you are using YAML, you can specify a Docker container to use for your agent 
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 For example, to run a script in a container:
 
@@ -231,7 +231,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -251,7 +251,7 @@ To avoid taking up resources when your job is hung or waiting too long, it's a g
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
 
@@ -265,7 +265,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -277,7 +277,7 @@ On the **Options** tab you can specify default values for all jobs in the pipeli
 
 ---
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 ::: moniker-end
 
@@ -300,7 +300,7 @@ From a single job you can run multiple jobs and multiple agents in parallel. Som
   
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The `matrix` strategy enables a job to be dispatched multiple times, with different variable sets. The `maxParallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run at the same time.
 
@@ -322,7 +322,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -373,7 +373,7 @@ The Visual Studio Test task is one such task that supports test slicing. If you 
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The `parallel` strategy enables a job to be duplicated many times. The `maxParallel` tag restricts the amount of parallelism. 
 Variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are added to each job. The variables can then be used within your scripts to divide work among the jobs.
@@ -390,7 +390,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -408,7 +408,7 @@ If you are using YAML, variables can be specified on the job. The variables can 
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Here's an example of defining variables in a job and using them within tasks.
 
@@ -428,7 +428,7 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -437,6 +437,8 @@ YAML is not yet supported in TFS.
 Job variables are not yet supported in the web editor.
 
 ---
+
+For information about using a **condition**, see [Specify conditions](conditions.md).
 
 <a name="artifact-download"></a>
 
@@ -488,6 +490,8 @@ Alternatively, you can choose to download specific [artifacts](../release/artifa
 
 ---
 
+For information about using **dependsOn** and **condition**, see [Specify conditions](conditions.md).
+
 ## Access to OAuth token
 
  You can allow tasks running in this job to access current Azure Pipelines or TFS OAuth security token.
@@ -495,7 +499,7 @@ Alternatively, you can choose to download specific [artifacts](../release/artifa
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The OAuth token is always available to YAML pipelines.
 It must be explicitly mapped into the task or step using `env`.
@@ -515,7 +519,7 @@ steps:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -530,3 +534,4 @@ Select the **Allow scripts to access OAuth token** option in the control options
 * [Multiple jobs](multiple-phases.md)
 * [Server jobs](server-phases.md)
 * [Deployment group jobs](deployment-group-phases.md)
+* [Specify conditions](conditions.md)

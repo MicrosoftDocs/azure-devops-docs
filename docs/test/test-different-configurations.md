@@ -5,7 +5,7 @@ ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -54,7 +54,7 @@ might be "Windows 8 + 32-bit CPU" or "Windows 10 + 64-bit CPU."
 You must create the configuration variables first. Then combine 
 multiple variable values to create a configuration.
  
-1. Open the **Configurations** page in the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose 
+1. Open the **Configurations** page in [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose 
    the ![new](_img/plus-and-arrow-icon.png) icon, and select 
    **New configuration variable**.
 

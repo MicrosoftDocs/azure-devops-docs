@@ -5,7 +5,7 @@ description: Monitor the status of work items submitted to Project Server for pa
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 13d38542-a0e8-411b-80ac-e8bb2b5c5f61
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017

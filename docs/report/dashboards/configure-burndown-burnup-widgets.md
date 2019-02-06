@@ -6,10 +6,10 @@ ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/19/2018 
 ---
 
@@ -243,9 +243,8 @@ Configuring the Burnup widget is exactly like configuring the Burndown widget, e
 > [Burndown guidance](burndown-guidance.md) 
 
 ## Related articles 
-* [Define sprints for the project](../../organizations/settings/set-iteration-paths-sprints.md)
-* [Select sprints for a team](../../organizations/settings/set-team-defaults.md)
-* [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
 
 ####Industry resources 
 * [Managing Myopia with Release Burndowns](https://www.scrumalliance.org/community/articles/2010/may/managing-myopia-with-release-burndowns)

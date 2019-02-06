@@ -8,7 +8,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -29,7 +29,7 @@ Widgets display information and charts on dashboards. Many of them are configura
 To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
@@ -41,7 +41,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
 > [!div class="mx-tdCol2BreakAll"]
@@ -71,7 +71,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > [!NOTE]  
 > Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, work tracking Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -117,7 +117,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  <br/><br/>
 
-Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
+Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -137,7 +137,7 @@ Requires TFS 2015.1 or later version.
 Provides links to the following features: 
 - Opens a form to initiate a [request to provide feedback](/azure/devops/project/feedback/get-feedback?toc=/azure/devops/project/feedback/toc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
-- Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-team-defaults.md).
+- Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
@@ -219,12 +219,12 @@ To plan and monitor their sprint resources, team set capacity and update Remaini
  
 ::: moniker range=">= tfs-2017"
 
-Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
+Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
 
 ::: moniker range=" tfs-2015"
 
-Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
+Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
 ----
@@ -245,7 +245,7 @@ Provides quick access to open the following Agile tools and team resources:
 ----
 ::: moniker-end
  
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Analytics widgets
 
 To add Analytics widgets to your dashboard, you first need to install the [Analytics Marketplace extension](../analytics/analytics-extension.md). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be the organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
@@ -424,7 +424,7 @@ Requires TFS 2017.1 or later version.
 ----
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="release-definition-widget"></a> 
 ### Release pipeline overview 

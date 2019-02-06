@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -146,7 +146,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     Change this line of code:
     ```java
-        session.setAttribute("driverFeeTotal", totalFareforDriver);
+        session.setAttribute("driverFeeTotal", totalFareForDriver);
     ```
     to
     ```java

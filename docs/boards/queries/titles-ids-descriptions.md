@@ -6,19 +6,17 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 01/23/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this topic. 
-
-[!INCLUDE [temp](../_shared/search-box.md)]
+When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this article. 
 
 <a id="keyword"/>
 ## List items based on keywords or phrases
@@ -40,6 +38,19 @@ You can find work items that have an undefined field value by using the equals o
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
+
+
+
+<a id="undefined-value"/>
+## List items based on empty or not empty HTML fields
+
+You can find work items where no **Description** has been entered. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
+
+For example, the following query filters will list all work items where some entries have been made into the **Description** field.  
+
+![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
+
+
 <a id="category"/>
 ## List items based on categories
 
@@ -54,13 +65,12 @@ The default assignments of work item types to each category are listed below for
 
 | Process | Requirement category | Task category |
 |---------|---------|---------|
+| Basic | Issue | Task |
 | Agile | User Story | Task |
-| Scrum | Product Backlog Item | Task |
+| Scrum | Product Backlog Item, Bug | Task |
 | CMMI | Requirement | Task |
 
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
-
-Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../../reference/add-modify-wit.md). 
+However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../../reference/add-modify-wit.md). 
 
 ## Common fields for most work item types 
 

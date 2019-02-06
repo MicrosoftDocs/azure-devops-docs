@@ -5,7 +5,7 @@ description: Understand how updates to specific fields are managed betweenTeam F
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67f9887f-f023-4e3e-8873-fb3f1854438f
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017

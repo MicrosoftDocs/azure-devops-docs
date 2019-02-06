@@ -5,11 +5,11 @@ description: Options to configure or customize after you upgrade an on-premises 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F89F5890-31E6-47EF-810F-AB75E1AE7E00
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azdevserver-2019'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 04/05/2017
 ---
 

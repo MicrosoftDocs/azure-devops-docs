@@ -5,7 +5,7 @@ ms.assetid: e7b48fb1-6511-4a2b-9eb1-f9e4488593c4
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/01/2018
@@ -24,10 +24,10 @@ Microsoft Test Runner sits at the side of the screen while you test your applica
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 >**The web portal or Microsoft Test Runner?** Use the web-based test runner
-in the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
+in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
 Test Runner for desktop applications. You can 
 [launch Microsoft Test Runner](../run-manual-tests.md#run-desktop)
-from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
+from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
   
 ### Running test cases with Microsoft Test Runner  
   
@@ -75,7 +75,7 @@ from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.
   
    ![Complete the test run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create12.png)  
   
-   Now the results are stored in TFS.  
+   Now the results are stored in Azure DevOps or TFS.  
   
 ## Replay previous tests
   

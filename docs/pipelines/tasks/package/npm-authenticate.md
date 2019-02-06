@@ -9,7 +9,7 @@ ms.assetid: ad884ca2-732e-4b85-b2d3-ed71bcbd2788
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Package: npm Authenticate task (for task runners)
@@ -18,8 +18,8 @@ monikerRange: 'vsts'
 
 Use this task in a build or release pipeline to provide npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
 
->[!WARNING]
-> Don't use this task if you're also using the npm task.
+>[!NOTE]
+> If you are using the npm task, you do not need to use the npm authenticate task. Instead use the feed configuration parameters that are available in the npm task.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

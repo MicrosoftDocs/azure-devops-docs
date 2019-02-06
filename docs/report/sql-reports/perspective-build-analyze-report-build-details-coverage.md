@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Team Foundation Server
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2017'
@@ -110,7 +110,7 @@ By using PivotChart reports in Excel, you can display the build status over time
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests).|  
 |Build|Build Pipeline Name|Name that is assigned to the build pipeline for which a build was executed.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build pipeline is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build pipeline options](../../pipelines/build/options.md).|  

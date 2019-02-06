@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/22/2017
+ms.date: 01/07/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,12 +24,8 @@ monikerRange: '>= tfs-2017'
 Expressions let you describe decisions the system should make, such as whether to run a step or the value of a variable.
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
 Expressions are typically a nested set of functions evaluated from the innermost function out.
-Expressions always evaluate to strings, though the strings may be treated as booleans or other data types depending on where they're used.
 
 ## Types
-
-Although expressions evaluate to strings, they're coerced to other data types as needed.
-For instance, if an inner function evaluates to `"true"` and then is used as an input to `and()`, it will be coerced to Boolean `True`.
 
 ### Boolean
 `True` and `False`
@@ -126,6 +122,14 @@ Depending on context, other functions may be available as well.
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `False`
 
+::: moniker range=">= azure-devops-2019"
+
+### coalesce
+* Evaluates the parameters in order, and returns the value that does not equal null or empty-string.
+* Min parameters: 2. Max parameters: N
+
+::: moniker-end
+
 ### contains
 * Evaluates `True` if left parameter String contains right parameter
 * Min parameters: 2. Max parameters: 2
@@ -143,6 +147,16 @@ Depending on context, other functions may be available as well.
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Returns `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
+
+::: moniker range=">= azure-devops-2019"
+
+### format
+* Evaluates the trailing parameters and inserts them into the leading parameter string.
+* Min parameters: 1. Max parameters: N
+* Example: `format('Hello {0} {1}', 'John', 'Doe')`
+* Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
+
+::: moniker-end
 
 ### ge
 * Evaluates `True` if left parameter is greater than or equal to the right parameter

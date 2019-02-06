@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: TFVC Labels | REST API Reference for Team Foundation Server
 description: Work with TFVC labels programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 6E87D313-19A9-4271-AB5B-4B4CA1ADA9BA
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

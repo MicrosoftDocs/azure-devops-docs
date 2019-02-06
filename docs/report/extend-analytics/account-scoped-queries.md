@@ -5,11 +5,11 @@ description: How to guide to query the OData Analytics service for an organizati
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: kokosins
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 
@@ -32,7 +32,7 @@ Project-scope queries help answer questions about a single project whereas organ
 ## Project-scoped queries
 Base URL for project level queries:
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
@@ -40,7 +40,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ```OData
 https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
@@ -155,7 +155,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   &$expand=Children
 ```
 
-and will fail if you don€™t have access to all projects.
+and will fail if you don't have access to all projects.
 	
 To workaround the restriction, you need to add an extra expression in the `$filter`:
 
@@ -172,7 +172,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 ```
 
-Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item€™s ProjectName using $it alias, which isn€™t supported:
+Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item's ProjectName using $it alias, which isn't supported:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?

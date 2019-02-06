@@ -4,7 +4,7 @@ ms.topic: include
 
 With your feed selected, select **Edit feed** (the gear icon).
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -18,7 +18,7 @@ With your feed selected, select **Edit feed** (the gear icon).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ![Edit feed button](_img/editfeed.png)
 

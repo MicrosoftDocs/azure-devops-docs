@@ -5,7 +5,7 @@ ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -90,7 +90,7 @@ that you need for more advanced testing features.
 
 If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client:
 
-1. Launch the test runner client from the Azure Test Plans section in Azure DevOps by choosing **Run for desktop application** from the **Run** menu. 
+1. Launch the test runner client from Azure Test Plans in Azure DevOps by choosing **Run for desktop application** from the **Run** menu. 
 
    ![Launching the test runner client](_img/_shared/collect-diagnostic-data-16.png)
 

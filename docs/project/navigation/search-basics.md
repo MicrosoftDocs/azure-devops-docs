@@ -7,7 +7,7 @@ ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -38,7 +38,7 @@ Code search requires installation of the [Code Search extension](https://marketp
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
   
 To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
@@ -52,7 +52,7 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 0. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
@@ -63,7 +63,7 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
@@ -138,7 +138,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -165,7 +165,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -176,7 +176,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
@@ -215,7 +215,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
@@ -248,7 +248,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -270,7 +270,7 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 
 Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
 
@@ -290,7 +290,7 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 # [Previous navigation](#tab/previous-nav)  
 
-::: moniker range="tfs-2018 || vsts"  
+::: moniker range="tfs-2018 || azure-devops"  
 
 Open **Wiki** and type your keyword or phrase into the search box. 
 
@@ -304,7 +304,7 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

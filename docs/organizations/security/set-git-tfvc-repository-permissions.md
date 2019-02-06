@@ -6,11 +6,11 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/03/2019
 ---
 
 
@@ -18,12 +18,42 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. For a description of each security group and permission level, see [Permissions and group reference](permissions.md).  
+By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manager permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
 
 ## Prerequisites
 
 * You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
 * You must be a member of the [Project Administrators Group](set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories or the TFVC repository.  
+
+## Default repository permissions  
+
+::: moniker range="azure-devops"
+To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access for private projects have no access to source code. Users granted **Stakeholder** access for public projects have the same access as Contributors and those granted **Basic** access. To learn more, see [About access levels](access-levels.md).
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access  have no access to source code. To learn more, see [About access levels](access-levels.md).
+::: moniker-end
+
+For a description of each security group and permission level, see [Permissions and group reference](permissions.md).  
+
+::: moniker range=">= tfs-2015"
+### Git
+You can use Git repositories to host and collaborate on your source code. For an overview of code features and functions, see [Git](../../repos/git/overview.md).
+
+[!INCLUDE [temp](_shared/code-git.md)]
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+### TFVC 
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
+[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md) provides a centralized version control system to manage your source control. 
+::: moniker-end
+
+[!INCLUDE [temp](_shared/code-tfvc.md)]
 
 <a id="git-repository">  </a>
 
@@ -31,14 +61,14 @@ You can grant or restrict access to a repository by setting the permission state
 
 You can set the permissions for all Git repositories for a project, or for a single repository. 
 
+
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
-
 
 0. To set the set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
 
@@ -52,16 +82,16 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 4. When done, choose **Save changes**. 
 
-::: moniker-end  
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -80,13 +110,13 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	Here we grant permissions to the Contributors group to (3) create repositories. 
 
-	![Security dialog for all GIt repositories, Contributors group](_img/set-repo-git-permissions.png)  
+	![Security dialog for all Git repositories, Contributors group](_img/set-repo-git-permissions.png)  
 
 4. When done, choose **Save changes**. 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -99,7 +129,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
@@ -111,16 +141,16 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 3. Save your changes.  
 
-::: moniker-end  
+::: moniker-end    
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range="<= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 0. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 
@@ -136,7 +166,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -146,6 +176,5 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 - [Default Git permissions](default-git-permissions.md)  
 - [Default TFVC permissions](default-tfvc-permissions.md)  
-- [Git permissions prior to TFS 2017 Update 1](git-permissions-before-2017.md) 
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md)  

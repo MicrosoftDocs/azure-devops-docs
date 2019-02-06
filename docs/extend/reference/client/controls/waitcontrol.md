@@ -4,11 +4,11 @@ description: Use the wait control to display progress message for long running o
 ms.assetid: 418275E5-F2BA-42DF-B5E6-A88324B25123
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---

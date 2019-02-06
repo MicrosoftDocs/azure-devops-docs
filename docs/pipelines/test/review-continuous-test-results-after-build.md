@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: douge
+ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
 ms.date: 12/07/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Review test results
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 <a name="prerequisites"></a>  
 <a name="testreporting"></a>
@@ -80,9 +80,12 @@ This page has the following sections
 ![View tests tab](_img/review-continuous-test-results-after-build/view-tests-tab-2.png)
 
 Select any test run or result to view the details pane that displays additional information required for troubleshooting
- such as the error message, stack trace, attachments, work items, historical trend, and more.
+such as the error message, stack trace, attachments, work items, historical trend, and more.
 
 ![View details tab](_img/review-continuous-test-results-after-build/view-tests-tab.png)
+
+> [!TIP]
+> If you use the Visual Studio Test task to run tests, diagnostic output logged from tests (using any of Console.WriteLine, Trace.WriteLine or TestContext.WriteLine methods), will appear as an attachment for a failed test.
 
 The following capabilities of the **Tests** tab help to improve productivity and troubleshooting experience.
 

@@ -1,11 +1,11 @@
 ---
 title: VSS/References/SDK.Interfaces ContributionContext API | Extensions for Azure DevOps Services
-description: Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframed. This context provides information about how to popluate the content.
+description: Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframe. This context provides information about how to populate the content.
 ms.assetid: bb5238df-0af8-dc23-3da2-1ab1571b8164
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 Defined in vss.d.ts
 
 
-Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframed. This context provides information about how to popluate the content. 
+Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframe. This context provides information about how to populate the content. 
 
 ### Members
 

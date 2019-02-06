@@ -7,7 +7,7 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
@@ -31,7 +31,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 2. Revision pages show who made the change along with the revision message, date, and version or commit ID. To view details of a revision, select the message or version link.
 
-	::: moniker range=">= azdevserver-2019"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Page for a provisioned wiki page](_img/wiki/revision-history-vsts.png)
 	::: moniker-end
@@ -41,7 +41,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 3.	Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. Choose **Preview** to see the content of the page of the specific revision.
 
 	<img src="_img/wiki/wiki-revision-details-2.png" alt="Wiki revision details for a page" style="border: 1px solid #C3C3C3;" />
-	::: moniker range=">= azdevserver-2019"
+	::: moniker range=">= azure-devops-2019"
 
 	For a *publish as code wiki* page, you see similar information, but the **Revert** button isn't active.
 
@@ -70,7 +70,7 @@ Select the **Revert** button on the revision details page to revert a change on 
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 <a id="revert-publish"></a>
 
 ## Revert a commit to a *publish as code wiki* page

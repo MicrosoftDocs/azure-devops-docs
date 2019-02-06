@@ -8,7 +8,7 @@ Do you want to configure your build pipeline as code in YAML, or by using the vi
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Choose this option if you want the advantages of configuration as code. This means your pipeline is versioned with your code and follows the same branching structure as your code.
 
@@ -23,7 +23,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 

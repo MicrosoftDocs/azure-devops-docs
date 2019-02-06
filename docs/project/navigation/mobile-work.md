@@ -7,7 +7,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.prod: devops
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2018'
@@ -22,14 +22,14 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
  
 <img src="_img/mobile-work-intro-1.png" alt="Mobile work item form" style="border: 1px solid #C3C3C3;" />  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!NOTE]  
 > The mobile browser supports Azure DevOps work tracking. To sign up for free, go to [Azure DevOps Services](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
 
 ::: moniker-end
 
-::: moniker range="tfs-2018 || azdevserver-2019"
+::: moniker range="tfs-2018 || azure-devops-2019"
 
 > [!NOTE]  
 > The mobile browser is available for Azure DevOps Server 2019 and TFS 2018. For downloads, see [Downloads](https://visualstudio.microsoft.com/downloads/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 

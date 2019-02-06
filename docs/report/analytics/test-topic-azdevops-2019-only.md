@@ -1,20 +1,20 @@
 ---
-title: azdevserver-2019  test topic
+title: azure-devops-2019  test topic
 titleSuffix: Azure DevOps & TFS 
-description: azdevserver-2019   
+description: azure-devops-2019   
 robots: NOINDEX, NOFOLLOW
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'azdevserver-2019'
+monikerRange: 'azure-devops-2019'
 ms.date: 04/04/2018
 ---
 
-# Test topics for azdevserver-2019
+# Test topics for azure-devops-2019
 
 **Azure DevOps Server 2019**
 

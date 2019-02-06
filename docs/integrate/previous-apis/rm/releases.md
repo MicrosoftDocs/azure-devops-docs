@@ -4,8 +4,8 @@ description: Get Releases programmatically using the REST APIs for VSTS.
 ms.assetid: 3eb13243-f504-4cfd-a97e-638d8a0690d2
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azure-devops'
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

@@ -5,7 +5,7 @@ description: Check out and edit files
 ms.assetid: eb404d63-c448-4994-9416-3e6d50ec554a
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

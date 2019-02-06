@@ -5,7 +5,7 @@ description: Folder comparison filters
 ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

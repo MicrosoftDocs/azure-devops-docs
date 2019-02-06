@@ -4,12 +4,12 @@ titleSuffix: Azure DevOps Services
 description: Using OData backed Analytics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 

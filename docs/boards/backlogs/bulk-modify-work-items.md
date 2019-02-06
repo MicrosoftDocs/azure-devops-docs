@@ -5,20 +5,17 @@ description: Bulk edit/modify/update several/multiple backlog items, tasks, or b
 ms.custom: "boards-backlogs, seodec18"    
 ms.prod: devops
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Bulk modify work items  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
-
-
-<!--- UPDATES REQUIRED FOR MULTI-VERSION TAGGING -->  
 
 Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
 
@@ -27,7 +24,7 @@ Use bulk modify when you need to quickly make the same change to a number of wor
 
 With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 ::: moniker range=">= tfs-2015"
 >[!div class="checklist"]    
@@ -44,9 +41,12 @@ In this topic you'll learn:
 > * Assign work from a backlog to a sprint using drag-and-drop 
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+## Supported tasks
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 
 <table width="80%">
@@ -113,7 +113,7 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 > [!NOTE] 
 > To exercise the **Change work item type** or **Move work items to another project**, you must have [disabled the data warehouse](../../report/admin/disable-data-warehouse.md).   
@@ -187,7 +187,7 @@ All of the following actions can be performed by team members that belong to the
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 
 <table width="80%">
@@ -250,7 +250,6 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  
@@ -306,7 +305,7 @@ The menu options available to you change depending on the platform you work from
 </table>
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 <!---#### TFS 2015, TFS 2013-->
 
 <table valign="top">
@@ -333,7 +332,7 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Product backlog, Open context menu, Move several backlog items to a different iteration](_img/bulk-modify/move-iteration.png)
 ::: moniker-end  
@@ -356,8 +355,11 @@ Here, we use the context menu to move several non-sequential items to the curren
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing this, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 ::: moniker range=">= tfs-2017"
+
 > [!div class="mx-imgBorder"]  
-> ![Wiki view keyboard shortcuts popup](_img/bulk-modify/assign-from-query.png)  ::: moniker-end
+> ![Wiki view keyboard shortcuts popup](_img/bulk-modify/assign-from-query.png)  
+
+::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
@@ -371,7 +373,7 @@ To learn more about the *Assign To* and *Iteration Path* fields, see [Query by a
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
@@ -419,12 +421,22 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 ## Bulk modify tags 
 
 From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.  
+::: moniker-end
 
-Here we choose to add the Beta tag to the selected work items. 
+::: moniker range=">= tfs-2017"
+
+Here we choose to add the *Service* tag to the selected work items. 
+
+> [!div class="mx-imgBorder"]
+> ![Edit work items dialog, Add tags](_img/bulk-modify/edit-tags-dialog.png)
+> 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+Here we choose to add the *Beta* tag to the selected work items. 
 
 ![Edit work items - Add tags](../queries/_img/tags-bulk-add.png) 
-::: moniker-end 
-::: moniker range="tfs-2015" 
+
 Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 ::: moniker-end 
 

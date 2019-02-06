@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Use the velocity report to forecast release and product completion dates and plan future projects  
 ms.assetid: 4c2c4f98-ca0f-4003-8292-4c50b66a996c
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---

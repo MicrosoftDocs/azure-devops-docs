@@ -4,7 +4,7 @@ description: Display an error when Team Explorer cannot establish read/write acc
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 656c2e1d-3a52-4f1e-a41f-7a794a32ac94
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

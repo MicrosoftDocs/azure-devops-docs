@@ -6,10 +6,10 @@ services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 ms.date: 10/31/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Publish Python packages in Azure Pipelines
@@ -117,7 +117,7 @@ Check out the [script YAML task reference](../yaml-schema.md#script) for the sch
 * Script:
 
    ```
-   twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}
+   twine upload -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) dist/*
    ```
 
 ---

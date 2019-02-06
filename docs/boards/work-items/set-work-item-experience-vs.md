@@ -7,10 +7,10 @@ ms.custom: boards-work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 ms.topic: quickstart
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/04/2018
 ---
 

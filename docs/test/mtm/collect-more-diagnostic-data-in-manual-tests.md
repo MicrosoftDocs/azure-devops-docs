@@ -5,7 +5,7 @@ ms.assetid: bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -18,6 +18,8 @@ monikerRange: '>= tfs-2015'
 
 >[!NOTE]
 >[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
+**For Azure DevOps and TFS, see [Collect diagnostic data while testing](../collect-diagnostic-data.md).**
 
 While you are testing your application, Microsoft Test Manager can collect data that will help diagnose any fault that you might find. If you create a bug report while you're testing, the data is automatically attached to the bug work item.  
   

@@ -5,7 +5,7 @@ description: You can rename a Git repository in a few steps, but be aware that y
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -31,7 +31,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 0. Select **Repos**, **Files**.
 

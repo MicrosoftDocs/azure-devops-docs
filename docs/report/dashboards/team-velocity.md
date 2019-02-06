@@ -8,10 +8,10 @@ ms.prod: devops
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/29/2018
 ---
 
@@ -69,7 +69,7 @@ You configure your velocity widget for a single team. If you want to view the ve
 	
 	- <b><i>Days past start date of iteration when planned work is final:</i></b>  Specify a number of days past the start date to count planned work. For example, if the first 2 days of an iteration are for planning, then you can enter "3", and planned work will be counted on the 3rd day. 
 	
-		For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn’t complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
+		For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn't complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.  
 
 	> [!NOTE]
 	> Work is considered Planned if it is assigned to the iteration as-of the Iteration Start Date.  <br/>

@@ -5,7 +5,7 @@ description: Enable the data to flow from work items in Team Foundation Server t
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ec7be08-78e4-40be-81ae-4d2d81c49cd0
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 05/18/2017 

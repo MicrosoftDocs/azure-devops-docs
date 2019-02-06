@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Hello World for Visual Studio extensions
 description: Work through a basic Hello World exercise
 ms.assetid: 22CC3F51-2787-4D84-BCDD-A1A9A9D01DAC
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk

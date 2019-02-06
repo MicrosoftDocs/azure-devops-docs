@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -36,7 +36,7 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## The Analytics Service and Analytics widgets
 The Analytics Service is in preview and available to all Azure DevOps users. To learn more, see the following articles: 
 - [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
@@ -122,12 +122,12 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 ::: moniker-end
 
 ### Add custom fields
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end

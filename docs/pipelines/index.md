@@ -7,34 +7,35 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 layout: HubPage 
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 02/19/2018
-monikerRange: '>= tfs-2013'
+ms.date: 01/11/2019
+monikerRange: '<= azure-devops-2019 || azure-devops'
 ---
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 # Azure Pipelines
 ::: moniker-end
-::: moniker range="< vsts"
+
+::: moniker range="< azure-devops"
 # Build and release
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 Azure Pipelines helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 <div id="main" class="v2">
     <div class="container">
@@ -87,7 +88,26 @@ Tutorials, references, and other documentation show you how to configure and man
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="get-started-designer.md">
+                                        <a href="get-started-multiplatform.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="../_img/index/i_responsive.svg" alt="Multi platform image" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Create a multi-platform pipeline</h3>
+                                                            <p>Use Azure Pipelines to build an app written in any language, on multiple platforms.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="yaml-schema.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -97,27 +117,8 @@ Tutorials, references, and other documentation show you how to configure and man
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Use the visual designer</h3>
-                                                            <p>Learn the basics of using the visual designer to add and customize tasks.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="get-started-azure-devops-project.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/i_scrum.svg" alt="azure portal" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Use the Azure portal</h3>
-                                                            <p>If you just want us to set it all up so you can see how it works, you can do it from the Azure portal.</p>
+                                                            <h3>YAML schema</h3>
+                                                            <p>Detailed reference guide to YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -703,6 +704,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                 <h3>Step-by-step tutorials</h3>
                                 <p>
                                     <a href="repos/github.md">Build GitHub repositories</a><br />
+                                    <a href="repos/azure-repos-git.md">Build Azure Repos Git repositories</a><br />
                                     <a href="build/ci-build-git.md">Build multiple branches</a><br />
                                     <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br />
                                 </p>
@@ -721,6 +723,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                     <a href="agents/agents.md">Build and release agents</a><br />
                                     <a href="licensing/concurrent-jobs.md">Parallel jobs</a><br />
                                     <a href="release/index.md">Release pipelines</a><br />
+                                    <a href="repos/index.md">Repositories</a><br />
                                 </p>
                             </div>
                         </div>
@@ -737,6 +740,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                     <a href="yaml-schema.md">YAML schema</a><br />
                                     <a href="process/tasks.md">Build and release tasks</a><br />
                                     <a href="policies/permissions.md">Permissions &amp; security roles</a><br />
+                                    <a href="/rest/api/vsts">REST API Reference</a><br />
                                 </p>
                             </div>
                         </div>
@@ -749,7 +753,7 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 <div id="main" class="v2">
     <div class="container">
@@ -1382,6 +1386,6 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker range="tfs-2013"
 
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
 ::: moniker-end

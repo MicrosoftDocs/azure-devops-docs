@@ -5,11 +5,11 @@ ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Test private and intranet apps using cloud-based load testing

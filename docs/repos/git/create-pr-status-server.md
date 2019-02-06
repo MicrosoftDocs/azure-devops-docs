@@ -5,7 +5,7 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: jillfra
 ms.author: mmitrik
 author: mmitrik
 ms.topic: conceptual
@@ -41,7 +41,7 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
 
     ```
     npm init
-    ````
+    ```
 
     Press Enter to accept the defaults for all of the options except the entry point. Change it to `app.js` 
 

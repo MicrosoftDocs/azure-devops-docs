@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
 ms.reviewer: stansw
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 
@@ -22,7 +22,7 @@ Extension developers can benefit by following the guidelines provided in this to
 
 Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. Restrictive rules enforced by the Analytics Service contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 >[!NOTE]
 >The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
@@ -483,7 +483,7 @@ For example, the following query returns the number of work items for each day s
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateSK gt 20170101)/
     filter(RevisedDateSK eq null or RevisedDateSK gt 20170101)/

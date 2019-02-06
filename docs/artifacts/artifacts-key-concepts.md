@@ -4,7 +4,7 @@ description: Key concepts for Azure Artifacts within Azure DevOps Services and T
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 2/6/2018
@@ -24,6 +24,8 @@ Once a client has cached a particular `package@version`, it will return that cop
 If, on the server, you replace `package@version` (rev 1) with a new `package@version` (rev 2), the client is unable to tell the difference. This can lead to indeterminate build results from different machines. For example, a developer's machine and the build agent might have cached different revisions of the package, leading to unexpected build results.
 
 If a package is broken, buggy, or shares unintended content (like secrets), the best response is to prepare a fix and publish it as a new version. Then, depending on the severity of the issue and how widely depended-on the package is, you can delete the package to make it unavailable for consumption.
+
+The only way to work around the immutability constraint is to create a new feed and publish the desired package version to the new feed.
 
 ## Recycle Bin
 

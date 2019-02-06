@@ -4,7 +4,7 @@ description: Learn about how you can use Maven artifacts with Azure Artifacts or
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: fc81d7ee-fa9a-4c04-ac8c-6269d91987d3
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
  
 # Set up Azure Pipelines and Maven
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

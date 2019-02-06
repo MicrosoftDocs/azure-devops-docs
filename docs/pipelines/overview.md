@@ -5,17 +5,17 @@ description: Build and deploy your app using Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B1233296-C583-4F2E-981C-82D6A39CFEE4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/31/2018
 ms.topic: overview
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
 # Start using Build and Release
 
-**TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-only-2015](_shared/version-tfs-only-2015.md)]
 
 Team Foundation Server (TFS) is the on-premises Azure DevOps offering. TFS includes Build and Release and can be installed and managed on your own servers.
 
@@ -41,7 +41,7 @@ Once you have continuous integration in place, the next step is to create a rele
 
 ## Continuous testing
 
-Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and choose the technologies and frameworks, then [test your changes continuously](test/getting-started-with-continuous-testing.md) in a fast, scalable, and efficient manner. 
+Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and choose the technologies and frameworks, then [test your changes continuously](languages/dotnet-core.md#run-your-tests) in a fast, scalable, and efficient manner. 
 
 * Maintain quality and find problems as you develop. Continuous testing with TFS ensures your app still works after every check-in and build, enabling you to find problems earlier by running tests automatically with each build.
 * Any test type and any test framework. Choose the test technologies and frameworks you prefer to use.

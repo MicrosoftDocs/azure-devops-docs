@@ -6,7 +6,7 @@ ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -29,7 +29,7 @@ You can quickly add a query or work item when working from a **Boards** or **Wor
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
@@ -44,7 +44,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 From a **Work** page, you can add a work item from the menu of options as shown in the following image.
  
@@ -55,7 +55,7 @@ From a **Work** page, you can add a work item from the menu of options as shown 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ You can quickly add a pull request, Git repository, or work item using the **Add
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Expand the **Repos** service and choose **Files**, **Commits**, or **Pull Requests** (Git repos) or **Files**, **Changesets**, or **Shelvesets** (TFVC). Then, choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
@@ -92,7 +92,7 @@ For details on adding a Git repository, see [Git repository](../../repos/git/cre
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 From **Code**, open the context menu for the current repository and choose ![plus icon](../../_img/icons/blue-add-icon.png) **New repository**. For details on adding a Git repository, see [Git repository](../../repos/git/creatingrepo.md)
 
@@ -103,7 +103,7 @@ From one of the other **Code** pages, you can add files or folders, a new branch
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 ---
@@ -121,7 +121,7 @@ Note that you can only add one TFVC repository per project, but an unlimited num
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the ![ ](../../_img/icons/blue-add.png) plus icon and select from the menu of options. 
 
@@ -136,7 +136,7 @@ Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the ![ 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 From **Build and Release**, choose **Builds**, **Releases**, or other page to add an artifact associated with that page.
  
@@ -146,7 +146,7 @@ From **Build and Release**, choose **Builds**, **Releases**, or other page to ad
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -168,7 +168,7 @@ Agile tools and dashboards are typically associated with teams. You add teams to
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 To view the set of defined teams, open **Project settings**, and choose **Overview**.  
 
@@ -183,7 +183,7 @@ To view the set of defined teams, open **Project settings**, and choose **Overvi
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 To view the set of defined teams, open the admin context for the project, and choose **Overview**.  
 
@@ -191,7 +191,7 @@ To view the set of defined teams, open the admin context for the project, and ch
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -213,7 +213,7 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [Create a wiki](../wiki/wiki-create-repo.md)
 - [Add and edit wiki pages](../wiki/add-edit-wiki.md)

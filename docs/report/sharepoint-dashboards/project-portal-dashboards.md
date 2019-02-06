@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: d1576274-544b-4100-844a-2895e7acf2e4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/07/2017
@@ -96,7 +96,7 @@ Here's how you can customize a SharePoint dashboard:
 -   Add a custom query Web part that displays the list of work items that the query finds. For example, you can add a query that lists all active requirements, issues, or other types of work items that are assigned to you.    
 -   Add other SharePoint site supported Web parts that integrate with Office Outlook or search functions of SharePoint Products.    
 -   Change the filters of each report in Office Excel to focus on specific product areas or iterations.    
--   Add existing or adhoc Excel reports.  
+-   Add existing or ad hoc Excel reports.  
   
  For more information about how to work with and customize reports in Office Excel, see these articles:  
   

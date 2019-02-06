@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -29,7 +29,7 @@ ms.date: 11/19/2018
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Filter based on keywords or fields   
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
@@ -62,7 +62,7 @@ To clear and dismiss filtering, choose the ![ ](../../_img/icons/close-filter.pn
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 ## Filter based on keywords or fields   
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
@@ -117,7 +117,7 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 
 ## Characters ignored by keyword filter criteria
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
 ::: moniker-end
 

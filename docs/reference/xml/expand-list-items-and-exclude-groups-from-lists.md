@@ -5,17 +5,15 @@ description: Examples for expanding pick list items and restricting items using 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.date: 05/10/2017
 ---
 
 # Expand list items and exclude groups from lists
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
-
-> [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You can expand and filter lists by using the `expanditems` and `filteritems` attributes. You can apply these attributes to these list type elements: `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES`.  
   
@@ -78,12 +76,12 @@ To better understand how these attributes are used to populate a field's drop-do
 <td>
 <p>Example1\MyReports</p>
 <ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">Userone</li>
-<li style="margin-bottom:0px">Usertwo</li>
-<li style="margin-bottom:0px">Userthree</li>
+<li style="margin-bottom:0px">UserOne</li>
+<li style="margin-bottom:0px">UserTwo</li>
+<li style="margin-bottom:0px">UserThree</li>
 <li style="margin-bottom:0px">MyRemotes</li>
-<li style="margin-bottom:0px">Userfour</li>
-<li style="margin-bottom:0px">Userfive</li>
+<li style="margin-bottom:0px">UserFour</li>
+<li style="margin-bottom:0px">UserFive</li>
 </ul> 
 </td>
 <td>

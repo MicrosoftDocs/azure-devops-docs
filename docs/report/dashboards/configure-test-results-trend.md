@@ -11,7 +11,7 @@ ms.reviewer: divais
 ms.manager: 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts' 
+monikerRange: 'azure-devops' 
 ms.date: 11/19/2018 
 ---
 
@@ -24,7 +24,7 @@ With the test results trend widget, you can monitor test trends over a period of
 
 **Example Test Results Trend widget showing pass percentage and test failure for last 7 days**  
 
-![Test results trend (advanced) widget example](_img/test-results-trend-widget\Failed-test-pass.png) 
+![Test results trend (advanced) widget example](_img/test-results-trend-widget/Failed-test-pass.png) 
 
 In this article you'll learn:
 
@@ -49,7 +49,7 @@ Test Results Trend charts require that you set up continuous testing in your bui
 
 ## Prerequisites
 In order to configure the Test Results Trend widget, you must have the following in place:  
-- Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/test/getting-started-with-continuous-testing.md)
+- Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/languages/dotnet-core.md#run-your-tests)
 - Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). Default settings provide all team members wit permissions.
 
@@ -64,7 +64,7 @@ You can configure your Test Results Trend widget to show results for either buil
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Test Results Trend (Advanced) widget configuration panel](_img/test-results-trend-widget\configure-test-results-trend-widget-1.png)  
+	> ![Test Results Trend (Advanced) widget configuration panel](_img/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
 
 	Choose the ![ ](../../_img/icons/blue-add.png) plus icon to add one or more pipelines. 
 
@@ -74,7 +74,7 @@ You can configure your Test Results Trend widget to show results for either buil
 
 	The following image shows a chart with pass rate and test results for last 7 days. 
    
-	![Test widget configuration panel](_img/test-results-trend-widget\passed-bypriority-pass.png)
+	![Test widget configuration panel](_img/test-results-trend-widget/passed-bypriority-pass.png)
 
 
 

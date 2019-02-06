@@ -5,7 +5,7 @@ description: Add & use plans to review scheduled multi-team deliverables in Azur
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -40,14 +40,35 @@ In this article you'll learn:
 
 
 ## Prerequisites
+
+::: moniker range="azure-devops"
+
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Installed the Delivery Plans extension](#install-plans).  
-	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md). Users granted **Stakeholder** access for a public project can add and view plans.
-	- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project.  
-	- [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
+	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md).  Users granted **Stakeholder** access for private projects cannot add nor view plans. Users granted **Stakeholder** access for a public project can add and view plans.
+	- [Configured teams](../../organizations/settings/add-teams.md)
+	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+	- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
-- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't add or view plans.  
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
+- 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
+
+- In order to add and configure a Delivery Plan, you must have the following in place:  
+	- [Installed the Delivery Plans extension](#install-plans).  
+	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md). Users granted **Stakeholder** access cannot add nor view plans.
+	- [Configured teams](../../organizations/settings/add-teams.md)
+	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+	- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
+- 
+::: moniker-end
+
 
 
 <a id="install-plans">  </a>
@@ -83,7 +104,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 0. Open **Boards>Plans**. 
 
@@ -109,7 +130,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 0. Open **Boards>Plans**. 
 
@@ -118,7 +139,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 0. To add a plan, choose **New Plan** . 
 
-	::: moniker range="vsts"  
+	::: moniker range="azure-devops"  
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 	::: moniker-end  
@@ -134,7 +155,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

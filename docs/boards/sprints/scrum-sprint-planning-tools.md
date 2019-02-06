@@ -6,7 +6,7 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -23,7 +23,7 @@ ms.date: 11/19/2018
 
 <a id="sprint-tools">   </a>
 
-Once you've [defined and selected the sprints for your team](../../organizations/settings/set-team-defaults.md), you can start using the following tools to plan your sprint.  
+Once you've [defined iteration paths (aka sprints) and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md), you can start using the following tools to plan your sprint.  
 
 
 ## Track team capacity
@@ -138,7 +138,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 
 
 ## Related articles 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../../organizations/settings/set-team-defaults.md) .  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path.  
 
 - [About Sprints, Scrum and project management](scrum-overview.md)
 - [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)

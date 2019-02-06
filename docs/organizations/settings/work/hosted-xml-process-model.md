@@ -5,10 +5,10 @@ description: Guide to configuring and customizing work tracking features for the
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 

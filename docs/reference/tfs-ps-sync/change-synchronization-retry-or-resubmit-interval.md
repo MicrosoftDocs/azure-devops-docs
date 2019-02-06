@@ -5,7 +5,7 @@ description: Understand how a conflict or failed synchronization occurs when usi
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: ce1d4951-e460-43d3-8852-a0f170012142
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -18,7 +18,7 @@ ms.date: 01/12/2017
 
 When a conflict or failed submission occurs during the synchronization process, the most recent submit status for a work item is set to **Failed**. The synchronization engine automatically tries to resubmit the work item in case the issue has been resolved. By default, the retry or resubmit interval is one hour, and you can set it in the Team Foundation Server registry.  
   
- You can change the resubmit interval for a project collection by modifying the value in the collection hive using Powershell as described in the following page on the Microsoft website: [Updating the TF Registry using Powershell](http://go.microsoft.com/fwlink/?LinkId=207285). You use the following path to specify the configuration setting:  
+ You can change the resubmit interval for a project collection by modifying the value in the collection hive using Powershell. You use the following path to specify the configuration setting:  
   
 ```powershell
 $collectionHive.SetValue("/Configuration/ProjectServer/StatusingResubmitInterval", "IntervalValue")  

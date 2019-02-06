@@ -5,10 +5,10 @@ description: Fix errors reported upon importing a process to support customizati
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
@@ -194,7 +194,7 @@ Add the Epic.xml file to the WorkItem Tracking\TypeDefinitions folder.
 
 <a id="VS412454"></a>
 ### VS412454: Plug-in *[pluginName]* contains several ```taskList``` {1}, {2}. Only one ```taskList``` per plugin is allowed.
-Correct the ProcessTemplate.xml file for the named plug-in to reduce the number of ```tasklist`````` elements defined. 
+Correct the ProcessTemplate.xml file for the named plug-in to reduce the number of ```tasklist``` elements defined. 
 
 #### Error example
 The WorkItemTracking plug-in contains two ```tasklist``` statements.

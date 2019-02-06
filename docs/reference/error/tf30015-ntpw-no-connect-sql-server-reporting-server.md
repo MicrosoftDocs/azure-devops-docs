@@ -5,7 +5,7 @@ description: The New Team Project Wizard was unable to connect to {name}.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 97f7dbf0-20f4-4e8d-94d2-403ca581d0a2
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

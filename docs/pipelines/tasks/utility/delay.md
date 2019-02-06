@@ -5,7 +5,7 @@ ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to pause execution of the pipeline 
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/DelayV1.md)]
 ::: moniker-end

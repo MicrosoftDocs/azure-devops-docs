@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 07/20/2018
@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 # Predefined build variables
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 > [!NOTE]
 > 
 > Some features and predefined variables are not available in certain versions of TFS. We're working on updating this topic to call out these differences.
@@ -51,7 +51,7 @@ To learn more, see [source repositories](repository.md).
 
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/variables-vsts.md)]
 ::: moniker-end
 

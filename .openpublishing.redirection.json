@@ -1211,7 +1211,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/setup-admin/team-services/change-application-access-policies-vs.md",
+      "source_path": "docs/setup-admin/team-services/change-application-policies-vs.md",
       "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
@@ -8417,7 +8417,12 @@
     },
     {
       "source_path": "docs/work/scale/set-team-defaults.md",
-      "redirect_url": "/azure/devops/organizations/settings/set-team-defaults",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/set-team-defaults.md",
+      "redirect_url": "/azure/devops/organizations/settings/manage-teams",
       "redirect_document_id": false
     },
     {
@@ -11177,12 +11182,12 @@
     },
     {
       "source_path": "docs/organizations/accounts/about-vsts-tfs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/about-azure-devops-services-tfs",
+      "redirect_url": "/azure/devops/organizations/user-guide/about-azure-devops-services-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/what-is-vsts.md",
-      "redirect_url": "/azure/devops/organizations/accounts/what-is-azure-devops-services",
+      "redirect_url": "/azure/devops/organizations/user-guide/what-is-azure-devops-services",
       "redirect_document_id": false
     },
     {

@@ -5,7 +5,7 @@ description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -94,7 +94,7 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker-end    
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 
 ### Permissions in Azure DevOps Services
 

@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Results (Version 1.0) | REST API Reference for Team Foundation Server
 description: Work with test results programmatically using the REST APIs for Team Foundation Server. This is for Version 1.0 of this API.
 ms.assetid: FCBFFCFB-E57E-492F-9984-BD9C77EA4153
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

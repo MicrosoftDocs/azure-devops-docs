@@ -6,27 +6,32 @@ ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 01/16/2019
 ---
 
+::: moniker range=">= azure-devops-2019"
+# Use breadcrumbs, selectors, and directories to navigate and open artifacts 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 # Use breadcrumbs and selectors to navigate and open artifacts 
+::: moniker-end
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
-To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs or selectors. 
+To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs, selectors, and directories. 
 
 [!INCLUDE [temp](_shared/new-navigation-wp.md)] 
 
 ## Organization and project breadcrumbs 
 
-
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 To navigate to the project summary page, choose the project link within the breadcrumbs. To navigate to the organization page with all projects defined for the organization, choose the organization link. 
 
@@ -40,7 +45,7 @@ To navigate to the project summary page, choose the project link within the brea
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Horizontal navigation doesn't provide a breadcrumb structure for the organization and project levels. Instead, you can select a recent team or project from the project/team selector. 
 
@@ -50,7 +55,7 @@ Choosing **Browse all** [opens the **projects** page](work-across-projects.md).
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -59,7 +64,7 @@ Choosing **Browse all** [opens the **projects** page](work-across-projects.md).
 
 ## Selectors 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Selectors are used to select an artifact within the current page. Most Agile tools are defined for a team and therefore require selection of the team artifact or tool.  
 ::: moniker-end
 
@@ -74,7 +79,7 @@ Selectors are used to select an artifact within the current page. Most Agile too
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Within **Dashboards**, you open a specific dashboard from the selector. 
 
@@ -99,7 +104,7 @@ This particular selector features these navigational elements:
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Within **Dashboards**, you select the team whose dashboards you want to view. 
 
@@ -114,7 +119,7 @@ For example, here we open the *Work in Progress* dashboard.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -124,7 +129,7 @@ For example, here we open the *Work in Progress* dashboard.
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 From the **Boards>Backlogs** page, you use the selector to switch to another team's backlog. Again, favorited backlogs appear towards the top of the menu. You can also filter the list based on a team name or keyword.  
 
@@ -144,7 +149,7 @@ Or, choose **Browse all team backlogs** to open the **Backlogs>All** page.
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -158,7 +163,7 @@ To choose another team, open the project/team selector and select a different te
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -169,7 +174,7 @@ To choose another team, open the project/team selector and select a different te
 
 Within select pages, breadcrumbs are provided to support navigating within the page or opening an artifact.  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 ### Example: Queries folders and breadcrumbs
 For example, when working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
@@ -187,7 +192,7 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 Breadcrumb-and-selector navigation elements are used within most services that support defining and organizing artifacts within folders. This includes **Pipelines** or **Build and Release** applications pages. 
 
 # [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Queries, Query selector](_img/breadcrumbs/build-bc-selector.png) 
@@ -200,7 +205,7 @@ Breadcrumb-and-selector navigation elements are used within most services that s
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Choose the **Deployment** breadcrumb link to return to the *Deployment* folder. 
 
@@ -209,11 +214,40 @@ Choose the **Deployment** breadcrumb link to return to the *Deployment* folder.
 >  
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 ---
+
+::: moniker range=">= azure-devops-2019"
+
+## Directories 
+
+Directories provide a filterable list of all artifacts defined for a service area. Often times when you navigate to an application, it will open the application's directory. 
+
+For example, here is the **Boards>Boards** directory. 
+
+> [!div class="mx-imgBorder"]  
+> ![Boards directory](_img/breadcrumbs/boards-directory.png)
+
+It lists boards in the following order: 
+- Your last visited board
+- Your favorited boards
+- All boards of teams that you belong to
+- All boards defined for the project in alphabetical order. 
+
+Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list as described in [Filter basics](filter-basics.md).
+
+From a specific page, you can open the directory from the breadcrumbs or a selector. For example, choose **Browse all boards** from the Boards selector. 
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |      Open from breadcrumb | Open from selector |
+> |------|---------|
+> | ![Open Boards directory from breadcrumb](_img/breadcrumbs/open-directory-boards-from-breadcrumbs.png)|![Open Boards directory from selector](_img/breadcrumbs/open-directory-boards.png)|
+
+::: moniker-end
+
 
 ## Related articles
 

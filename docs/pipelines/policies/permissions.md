@@ -6,7 +6,7 @@ description: Understand how permissions and roles are used to securely manage bu
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 02/12/18
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Build and release permissions and security roles
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 

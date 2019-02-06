@@ -4,11 +4,11 @@ description: DevOps CI CD - Deploy pull request builds from Azure Repos and GitH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: moala
 author: raiyanalam
 ms.date: 12/18/2018
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Deploy pull request builds using Azure Pipelines

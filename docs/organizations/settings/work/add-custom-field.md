@@ -6,11 +6,11 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/19/2018 
 ---
 
@@ -116,7 +116,7 @@ We recommend that you create a test project and apply your customized  inherited
 	
 
 # [Previous navigation](#tab/previous-nav)
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
@@ -140,7 +140,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 

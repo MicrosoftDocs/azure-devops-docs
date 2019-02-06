@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Troubleshoot setting up Visual Studio with Azure DevOps

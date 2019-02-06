@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Sessions| REST API Reference for Team Foundation Server
 description: Work with test sessions programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 98502210-26d4-4b47-9d42-087c8e62782f
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

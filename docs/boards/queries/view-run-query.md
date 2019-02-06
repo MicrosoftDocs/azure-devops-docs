@@ -6,12 +6,12 @@ ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 01/08/2018
 ---
 
 
@@ -21,9 +21,8 @@ ms.date: 11/19/2018
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
-By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
+[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open Queries 
 
@@ -38,7 +37,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 > [!TIP]    
 > The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
 	
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
 
 	> [!div class="mx-imgBorder"]  
@@ -56,7 +55,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 <a id="tips-queries-hub"> </a>  
 ## Tips for working with the directory-focused **Queries** pages 
@@ -100,7 +99,7 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 
 ## View, rename, or delete a query
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 From either the **Favorites** or **All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon of a query to run, edit, rename, or delete the query. 
 
 ![New query experience, Favorites page, query context menu](_img/view-run-queries/query-context-menu-favorites-page.png)  
@@ -118,13 +117,13 @@ Choose the ![ ](../_img/icons/context_menu.png) context menu icon of a query to 
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Tasks you can perform from the Favorites or All pages
 
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol2BreakAll"]
 > |Task |Favorites |All | 
 > |-------------|----------|---------| 
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
@@ -141,7 +140,7 @@ For details on adding new queries, see [Create managed queries with the query ed
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Filter the list of queries
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
@@ -153,7 +152,7 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 
 From the **Query Editor** or **Results** view, you can email a formatted list of query items or copy the query URL. 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 Choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
  
@@ -178,11 +177,12 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Perform an adhoc search](search-box-queries.md) 
+> [Perform an ad hoc search](search-box-queries.md) 
 
 #### Related topics
 
+- [Create and save managed queries with the query editor](using-queries.md)
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
-- [Set personal or team favorites](../../project/navigation/set-favorites.md)  
+- [Set personal or team favorites](../../project/navigation/set-favorites.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
-
+- [About access levels](../../organizations/security/access-levels.md)

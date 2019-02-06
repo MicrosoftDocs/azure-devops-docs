@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 12/04/2018
 ---
 
@@ -22,7 +22,7 @@ Using the Analytics Service for Azure DevOps, you can construct basic and filter
 
 In this topic, the base root URL is scoped to a project as shown:  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -31,7 +31,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData

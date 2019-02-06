@@ -8,11 +8,11 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 # Start using your Kanban board
@@ -26,7 +26,7 @@ Your Kanban board turns your backlog into an interactive signboard, which provid
 
 User stories and bugs correspond to types of work items. You use [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
 ## Add a Kanban board
 
@@ -34,10 +34,10 @@ Each Kanban board is associated with a team and a work item type. For the Agile 
 
 When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, [add a team](../../organizations/settings/add-teams.md). 
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end 
-::: moniker range="<= azdevserver-2019"   
+::: moniker range="<= azure-devops-2019"   
 To add a board to support an additional portfolio backlog level, see [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end   
 
@@ -51,7 +51,7 @@ To add a board to support an additional portfolio backlog level, see [Add a port
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
@@ -68,7 +68,7 @@ The system automatically saves the work item with the title you entered. You can
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
@@ -80,7 +80,7 @@ The system automatically saves the work item with the title you entered. You can
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Invite others to work on your Kanban board 
 
 All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project. 

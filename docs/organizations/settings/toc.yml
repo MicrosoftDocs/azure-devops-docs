@@ -11,9 +11,9 @@
   items:
     - name: Get started as a project admin
       href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Set area paths
+    - name: Define area paths & assign to a team 
       href: set-area-paths.md
-    - name: Set iteration paths or sprints
+    - name: Define iteration paths (sprints) & configure team iterations
       href: set-iteration-paths-sprints.md
     - name: Add a team
       href: add-teams.md
@@ -57,7 +57,7 @@
       href: ../../notifications/about-notifications.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Process customization
       href: ./work/inheritance-process-model.md
-- name: How-to Guides
+- name: How-to guides
   items:
     - name: Manage profile preferences
       items:
@@ -84,8 +84,6 @@
     - name: Manage teams and configure team tools
       href: manage-teams.md
       items:
-        - name: Set team defaults
-          href: set-team-defaults.md
         - name: Use work item templates
           href: ../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
         - name: Customize cards on boards
@@ -218,6 +216,8 @@
           href: /rest/api/vsts/processdefinitions/work%20item%20types
         - name: Add a custom control to a form
           href: ../../extend/develop/custom-control.md
+        - name: Data protection overview
+          href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Resources
   items:
     - name: Manage projects

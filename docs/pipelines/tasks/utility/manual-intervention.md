@@ -1,3 +1,4 @@
+
 ---
 title: Manual Intervention task 
 description: Pause an active deployment within a stage in a release pipeline in Azure Pipelines and TFS
@@ -5,7 +6,7 @@ ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -24,10 +25,7 @@ typically to perform some manual steps or actions, and then continue the automat
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline. This task is not supported in a build pipeline.
 
-::: moniker range="vsts"
-## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/ManualInterventionV8.md)]
-::: moniker-end
+![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
 
 ## Arguments
 
@@ -52,7 +50,6 @@ send email notifications to users and user groups when it is awaiting interventi
 and specify the automatic response (reject or resume the deployment) after a configurable
 timeout occurs.
 
-![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
 
 > You can use built-in and custom variables to generate portions of your instructions.
 

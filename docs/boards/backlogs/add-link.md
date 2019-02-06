@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -22,9 +22,9 @@ ms.date: 11/19/2018
 You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
 
 
-Use this topic to learn how to:  
+Use this article to learn how to:  
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
@@ -35,7 +35,7 @@ Use this topic to learn how to:
 ::: moniker-end    
 
 
-::: moniker range=">= tfs-2013  <= azdevserver-2019"  
+::: moniker range="<= azure-devops-2019"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
@@ -46,7 +46,7 @@ Use this topic to learn how to:
 
 For a list of all link types and supported link relationships, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites.md)] 
 
 <a id="link"> </a>  
 ## Link several work items 
@@ -100,7 +100,7 @@ From the Add link dialog, select the link type, enter a work item ID, and then c
 
 For example, here we use the **Related** link type to link three items to the bug with ID of *400*. 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/add-link-dialog-s136.png)  
 
@@ -126,7 +126,7 @@ To view the work items selected for linking, you can choose the ![info icon](../
 
 If you are working from the Query Results page, you'll need to bulk save the work items you've modified. When you work from a backlog, work items are automatically saved.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Query results page, save bulk modified items](_img/bulk-modify/query-results-bulk-save-items.png) 
 ::: moniker-end	
@@ -170,7 +170,7 @@ Here, we have selected to add a link to the selected work items.
 
 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 <a id="remote-link"> </a>  
 ## Link to a remote work item 
 
@@ -269,7 +269,7 @@ Additional features you can use to quickly link or change links that use the par
 
 ## Related articles
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
@@ -279,7 +279,7 @@ Additional features you can use to quickly link or change links that use the par
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)

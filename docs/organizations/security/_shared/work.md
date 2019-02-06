@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -160,11 +160,11 @@ ms.topic: include
 3. Public project stakeholders can create new tags. 
 4. Public project stakeholders can configure delivery plans.
 
-::: moniker-end  
+::: moniker-end    
 
 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -318,7 +318,7 @@ ms.topic: include
 **Notes:**
 1. You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](/azure/devops/report/analytics/index) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/azure/devops/report/admin/disable-data-warehouse).
 
-::: moniker-end  
+::: moniker-end    
 
 
 
@@ -473,7 +473,7 @@ ms.topic: include
 </tbody>
 </table>
 
-::: moniker-end  
+::: moniker-end    
 
 
 

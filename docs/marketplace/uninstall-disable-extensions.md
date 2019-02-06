@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018

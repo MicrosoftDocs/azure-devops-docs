@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-analytics  
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,7 +17,7 @@ ms.date: 11/01/2018
 # Cumulative flow, lead time, and cycle time guidance 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-::: moniker range="azdevserver-2019 || vsts" 
+::: moniker range=">= azure-devops-2019" 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
 ::: moniker-end
 
@@ -196,7 +196,7 @@ A good rule of thumb for work in progress is that there should be no more than t
 Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
 
 
-::: moniker range=">= azdevserver-2019" 
+::: moniker range=">= azure-devops-2019" 
 ## Lead time versus cycle time   
 The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
 
@@ -226,7 +226,7 @@ Review your team's control chart for outliers. Outliers often represent an under
 As you can see in the following chart, which shows several outliers, several bugs took significantly longer to complete than the team's average. Investigating why these bugs took longer may help uncover process issues. Addressing the process issues can help reduce your team's standard deviation and improve your team's predictability. 
 
 #### Example Cycle Time widget showing several outliers 
-<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliners" style="border: 2px solid #C3C3C3;" />
+<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliers" style="border: 2px solid #C3C3C3;" />
 
 You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 

@@ -5,7 +5,7 @@ ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -65,7 +65,7 @@ public class CreateBug
     readonly string _project;
 
     /// <summary>
-    /// Constructor. Manually set values to match yourorganization. 
+    /// Constructor. Manually set values to match your organization. 
     /// </summary>
     public CreateBug()
     {

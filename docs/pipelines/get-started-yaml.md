@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/19/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Create your first pipeline
@@ -73,7 +73,7 @@ Many developers like to show that they're keeping their code quality high by dis
 
 To copy the status badge to your clipboard:
 
-1. In Azure Pipelines, go to the Build page to view the list of pipelines.
+1. In Azure Pipelines, go to the Builds page to view the list of pipelines.
 
 1. Select the pipeline that was created for you.
 

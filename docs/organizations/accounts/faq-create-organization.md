@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Troubleshoot creating an organization
@@ -60,7 +60,7 @@ A:	If you're a new user, you can change your profile details. You need to do thi
 
 A: Some features require you to install an extension, which might be available for free or paid.
 
-For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) requires you to install the Test Manager extension. You can [try paid extensions for free](../billing/try-additional-features-vs.md) if you haven't started the extension trials already. Otherwise, you can [pay for user access](../../marketplace/install-extension.md) to these features.
+For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) requires you to install the Test Manager extension for Azure Test Plans. You can [try paid extensions for free](../billing/try-additional-features-vs.md) if you haven't started the extension trials already. Otherwise, you can [pay for user access](../../marketplace/install-extension.md) to these features.
 
 #### Q:	How many organizations can I create?
 

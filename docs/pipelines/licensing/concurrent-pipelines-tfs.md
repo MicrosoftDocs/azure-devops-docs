@@ -6,11 +6,11 @@ ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 10/20/2016
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
 # Parallel release jobs in Team Foundation Server

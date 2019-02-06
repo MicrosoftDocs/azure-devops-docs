@@ -7,11 +7,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Access your organization with Azure Active Directory

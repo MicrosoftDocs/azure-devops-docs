@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Troubleshoot your service hooks integrations | Azure DevOps Services
 description: Troubleshoot problems with the services you have integrated with your Azure DevOps Services organization
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -120,7 +120,7 @@ A: Check these:
 
 A: Use tfssecurity.exe from the command line, for example:
 
-````
+```
     tfssecurity /a+ /collection: https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 

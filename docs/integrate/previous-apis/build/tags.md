@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Build Tags | REST API Reference for  Azure DevOps Services and Team Foundation Server
 description: Get build tags using the REST APIs for VSTS.
 ms.assetid: f5a3bb49-f843-4f51-a29a-6ca1c226fbe2
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk

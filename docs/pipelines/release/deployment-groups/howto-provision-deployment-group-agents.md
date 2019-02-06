@@ -6,7 +6,7 @@ ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # How To: Provision agents for deployment groups
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

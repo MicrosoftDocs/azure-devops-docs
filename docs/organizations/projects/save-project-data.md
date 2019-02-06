@@ -7,7 +7,7 @@ ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Save project data
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  � 
 
 When you delete a project, you cannot recover its data later. Therefore, you should save project data.
 

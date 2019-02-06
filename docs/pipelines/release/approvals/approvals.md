@@ -6,7 +6,7 @@ ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Release deployment control using approvals
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -39,7 +39,10 @@ how to define and use approvals, see [Add approvals within a release pipeline](.
    and enable post-deployment approvers.
 
 You can add multiple approvers for both pre-deployment and post-deployment settings.
-These approvers can be individual users or groups of users.
+These approvers can be individual users or groups of users. These users must have the
+[View releases](../../policies/permissions.md#release-permissions) permission.
+
+
 When a group is specified as an approver, only one of the users in that group needs to approve
 for the deployment to occur or the release to move forward.
 

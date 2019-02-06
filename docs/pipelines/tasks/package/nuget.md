@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 07/05/2017
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2018'
 
 **Version 2.\* | [Other versions](#versions)**
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 
@@ -28,7 +28,7 @@ Use this task in a build or release pipeline to install and update NuGet package
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
-> Looking for help to get started? See the how-to's for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
+> Looking for help to get started? See the how-tos for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
 
 > [!TIP]
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
@@ -46,9 +46,9 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
 
-For **byEnvVar**, the version will be set as whatever environment variable, e.g. $(MyVersion), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
 
-For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`.
+For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`. If you select **byBuildNumber**, the task will extract a dotted version, `1.2.3.4` and use only that, dropping any label. To use the build number as is, you should use **byEnvVar** as described above, and set the environment variable to `BUILD_BUILDNUMBER`.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ None
                 <li>The packager does not compile the .csproj files for packaging.</li>
                 <li>Each project is packaged only if it has a .nuspec file checked in.</li>
                 <li>The packager does not replace tokens in the .nuspec file (except the <code>&lt;version/&gt;</code> element,
-                    see <strong>Use build number to version package</strong>, below). You must supply values for elements
+                    see [versioning schemes](#versioning-schemes) for version options). You must supply values for elements
                     such as <code>&lt;id/&gt;</code> and <code>&lt;description/&gt;</code>. The most common way to do this
                     is to hardcode the values in the .nuspec file.
                 </li>
@@ -484,7 +484,7 @@ These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipel
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

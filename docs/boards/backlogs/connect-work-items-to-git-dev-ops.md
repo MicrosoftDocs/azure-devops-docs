@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -21,7 +21,7 @@ ms.date: 12/04/2018
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
 <!---
-Review this topic to learn:  
+Review this article to learn:  
 
 >[!div class="checklist"]    
 > * How to create a new branch or pull request from a work item   
@@ -32,7 +32,7 @@ Review this topic to learn:
 -->
 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!IMPORTANT]   
 > This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
@@ -52,7 +52,7 @@ The Development section records all Git development processes that support compl
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 
 <a id="git-development">  </a>
@@ -160,7 +160,7 @@ Or, you can select it from the ![Links tab icon](_img/icon-links-tab-wi.png) Lin
 
 Learn more about tracking work with work items and developing with Git from these resources: 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/overview.md) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
@@ -169,7 +169,7 @@ Learn more about tracking work with work items and developing with Git from thes
 
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/overview.md)  
 - [TFVC overview](../../repos/tfvc/overview.md)  
@@ -196,7 +196,7 @@ Links shown in this section appear as a result of these actions:
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 <img src="../queries/_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
@@ -209,7 +209,7 @@ The link types you can add within the development section are Branch, Build, Cha
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
  
 ::: moniker-end

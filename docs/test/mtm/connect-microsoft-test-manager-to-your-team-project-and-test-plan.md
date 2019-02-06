@@ -5,7 +5,7 @@ ms.assetid: 4a2c7eb1-c65d-4fd9-bb19-f733164752c1
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 12/07/2018
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 >[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
 
-Use Microsoft Test Manager to help you test the application you built. Microsoft Test Manager stores your test plans and results on Team Foundation Server (TFS).  
+Use Microsoft Test Manager to help you test the application you built. Microsoft Test Manager stores your test plans and results in Azure DevOps or Team Foundation Server (TFS).  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
@@ -30,7 +30,7 @@ Use Microsoft Test Manager to help you test the application you built. Microsoft
   
    Don't have a project? [Set up a project](../../organizations/projects/create-project.md)  
   
-1. Connect to TFS and choose your project.  
+1. Connect to your Azure DevOps or TFS instance and choose your project.  
   
    ![Enter the name of a Team Foundation server.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect1.png)  
   

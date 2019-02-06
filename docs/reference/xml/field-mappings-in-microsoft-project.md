@@ -1,19 +1,21 @@
 ---
-title: Project field mappings | TFS
-description: Understand how data is mapped between Project and Team Foundation Server (TFS)
+title: Project field mappings
+titleSuffix: Azure DevOps Server & TFS
+description: Understand how data is mapped between Project and Azure DevOps Server or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 0da29778-11c2-42e1-8876-e51abbc799f6
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 02/22/2017  
+monikerRange: '< azure-devops'
+ms.date: 01/28/2019
 ---
 
 # Field mappings in Microsoft Project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
-You can customize how data is mapped between Microsoft Project and Team Foundation Server (TFS) by modifying the Microsoft Project Field Mapping File. The mapping file associates the reference name of a work item tracking field  with a Project field. Before you change the Microsoft Project field mappings, you should review the information provided later in this topic to understand how TFS copies data from Project to the work item tracking database.  
+You can customize how data is mapped between Microsoft Project and Azure DevOps Server and Team Foundation Server (TFS) by modifying the Microsoft Project Field Mapping File. The mapping file associates the reference name of a work item tracking field  with a Project field. Before you change the Microsoft Project field mappings, you should review the information provided later in this topic to understand how TFS copies data from Project to the work item tracking database.  
   
 > [!NOTE]  
 >  The supported set of Project field names may be different for different versions of Project.  
@@ -33,7 +35,7 @@ You can also prevent team members from changing calculated field values in Team 
 ##  Mapping field types  
  When you publish tasks from Project to TFS, Team Foundation copies the data to the work item database. Also, when tasks are refreshed, the field data is copied from the work item database to your Project plan. For the field data to be copied correctly, the field types in TFS and Project must be compatible. The following table lists which Project field types are compatible with TFS field types:  
   
-|**TFS work item field type**|**Microsoft Project field type**|  
+|**Work item field type**|**Microsoft Project field type**|  
 |----------------------------------|--------------------------------------|  
 |DateTime|Datetime.|  
 |Double|Work, units, percentages, fractions, and any field type with a range of &plusmn;5.0 × 10<sup>-324</sup> to &plusmn;1.7 × 10<sup>308</sup>.|  
@@ -46,7 +48,7 @@ You can also prevent team members from changing calculated field values in Team 
   
 
 > [!IMPORTANT]  
->Office Project does not populate the Resource Names field list with names of team members. Therefore, you must manually add names to the list. When you assign a work item to a resource in Office Project, you should specify the resource by its display name from Active Directory or the Address Book. If you assign a work item to a resource by alias or other shortened form of the name, you introduce an inconsistency that can cause validation errors.
+> Office Project does not populate the Resource Names field list with names of team members. Therefore, you must manually add names to the list. When you assign a work item to a resource in Office Project, you should specify the resource by its display name from Active Directory or the Address Book. If you assign a work item to a resource by alias or other shortened form of the name, you introduce an inconsistency that can cause validation errors.
  
  For more information about work item field types, see [Add or modify work item fields](../add-modify-field.md). For more information about Project field types, see the help about the pjField constant in the [Project 2013 developer documentation](http://msdn.microsoft.com/library/backlogs/office/ms512767.aspx).  
   

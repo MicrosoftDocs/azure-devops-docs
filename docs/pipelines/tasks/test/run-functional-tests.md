@@ -5,7 +5,7 @@ ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Run Functional Tests task
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -136,7 +136,7 @@ These scenarios are supported for:
 ### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
-* [Set up environments to run continuous test tasks with your builds](../../test/set-up-continuous-test-environments-builds.md)
+* [Run continuous tests with your builds](../../languages/dotnet-core.md#run-your-tests)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### Related tasks

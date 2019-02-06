@@ -5,4 +5,5 @@ ms.topic: include
 
 ## Work items
 
-You plan and track work using work items. Specific types of work items show up on backlogs and boards. Each work item represents an instance of a work item type&mdash;such as a user story, feature, bug, or issue&mdash;that is assigned a unique identifier, an ID, which is unique across all projects defined in an organization. Learn more: [About work items](/azure/devops/boards/work-items/about-work-items).
+A work item represents an object stored in the work item data store. Each work item is based on a work item type&mdash;such as a user story, feature, bug, task, or issue&mdash; and is assigned an identifier which is unique across all projects in an organization or project collection. The work item types available to you are based on the process used when your project was created. Each work item supports capturing information, adding attachments, linking to other work items, and more. Learn more: [About work items](/azure/devops/boards/work-items/about-work-items).
+

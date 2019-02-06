@@ -5,11 +5,11 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 

@@ -5,14 +5,13 @@ description: Data available for reporting purposes using the Analytics Service f
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe   
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= azdevserver-2019'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/21/2018
 ---
->
 
 # Data available from the Analytics Service
 
@@ -20,7 +19,7 @@ ms.date: 11/21/2018
 
 The Analytics Service provides the reporting platform for Azure DevOps and Azure DevOps Server. **The Analytics Service is in public preview.** 
 
-Currently, you can access the following data from the Analytics Service. This information was last updated: April 4, 2018.
+Currently, you can access the following data from the Analytics Service. This information was last updated: February 1, 2019.
 
 <table>
 <tr valign="bottom">
@@ -34,13 +33,19 @@ Currently, you can access the following data from the Analytics Service. This in
 <td>[Boards](https://azure.microsoft.com/en-us/services/devops/boards/)</td>
 <td>[Widgets](./analytics-widgets.md), [OData](../extend-analytics/index.md), [Power BI](../powerbi/overview.md)</td>
 <td>Same as Azure DevOps</td>
-<td>Rollup - Q2, 2019</td>
+<td>Rollup - Q2, CY 2019</td>
 </tr>
 <tr>
 <td>[Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)</td>
-<td>[Test Analytics](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=vsts)</td>
+<td>[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)</td>
 <td>Same as Azure DevOps</td>
-<td>Build/Release - 2019</td>
+<td>Build/Release - CY 2019</td>
+</tr>
+<tr>
+<td>[Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/)</td>
+<td>None</td>
+<td>None</td>
+<td>Q2, CY 2019</td>
 </tr>
 <tr>
 <td>[Repos](https://azure.microsoft.com/en-us/services/devops/repos/)</td>
@@ -54,12 +59,6 @@ Currently, you can access the following data from the Analytics Service. This in
 <td>None</td>
 <td>Under investigation</td>
 </tr>
-<tr>
-<td>[Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/)</td>
-<td>None</td>
-<td>None</td>
-</tr>
-
 </tbody>
 </table>
 

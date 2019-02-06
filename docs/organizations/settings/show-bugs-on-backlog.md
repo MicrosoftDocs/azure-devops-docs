@@ -5,11 +5,11 @@ description: Choose how bugs appear on Agile tools in Azure Boards & Team Founda
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 01/23/2019
 ---
 
 # Show bugs on backlogs and boards  
@@ -17,8 +17,13 @@ ms.date: 09/24/2018
 [!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
- 
+
+> [!NOTE]   
+You can only define this team setting for the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), and [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/track-issues-tasks.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
+
 When you track bugs as requirements, they'll show up on the product backlog and Kanban board. When you track bugs similar to tasks, they'll show up on the sprint backlogs and task boards. If you want to track additional work item types (WITs) or custom WITs on your backlogs or boards, you can. See [Add other work item types to backlogs or boards](#add-other-wits) later in this topic.
+
+[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
 
 ## Set your team's preferences for tracking bugs  
 
@@ -36,7 +41,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 # [New navigation](#tab/new-nav)
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -54,15 +59,15 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 0. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md). 
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018"
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017"
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -80,9 +85,9 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 0. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 Requires TFS 2013.4 or later version. 
 
@@ -119,7 +124,7 @@ Bugs are a common item that teams want to track, and choose how they track it. S
 
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,  
 - For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
@@ -129,6 +134,27 @@ You can add other WITs&#8212;such as change requests, issues, or impediments&#82
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
+
+## Create, list, and manage bugs 
+
+When bugs are managed along with requirements, you can add them through the [product backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-quickstart.md). When bugs are managed along with tasks, you can add them to a [sprint backlog or taskboard](../../boards/sprints/add-tasks.md). Or, you can capture them using other tools as indicated in [Define, triage, and manage bugs](../../boards/backlogs/manage-bugs.md).
+
+You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query, **Active Bugs** (Agile and CMMI) or **Work in Progress** (Scrum). For other bug related tasks, see the following articles:  
+
+::: moniker range=">= azure-devops-2019"
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+
+::: moniker-end
 
 
 ## Related articles

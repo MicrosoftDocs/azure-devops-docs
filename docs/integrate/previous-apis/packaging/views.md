@@ -4,7 +4,7 @@ description: Work with release views programmatically using the REST APIs for VS
 ms.assetid: AED5CC40-4B11-447E-BAE6-D9806687736E
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 ms.date: 10/10/2016
 ---
 

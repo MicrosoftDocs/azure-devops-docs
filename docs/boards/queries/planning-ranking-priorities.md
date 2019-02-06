@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
@@ -66,7 +66,7 @@ Features and stories that address Architectural areas<br/>
 
 ## Fields used to plan and prioritize work  
 
-The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).
+The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).
 
 
 <table width="100%">
@@ -180,9 +180,9 @@ The following table describes the fields that you can use to plan and prioritize
  
 ###More on Backlog Priority or Stack Rank fields
 
-The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](http://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/where-is-the-field-on-the-work-item-form-to-order-the-backlog.aspx).
+The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](http://blogs.msdn.com/devops/2014/07/08/where-is-the-field-on-the-work-item-form-to-order-the-backlog.aspx).
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 To add the field to the form, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
 
 ::: moniker-end  

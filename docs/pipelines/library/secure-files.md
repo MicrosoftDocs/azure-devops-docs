@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Secure files
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -45,6 +45,10 @@ To handle secure files during build or release, you can refer to the common modu
 ### My task can't access the secure files. What do I do?
 
 Make sure your agent is running version of 2.116.0 or higher. See [Agent version and upgrades](../agents/agents.md#agent-version-and-upgrades).
+
+### Why do I see an `Invalid Resource` error when downloading a secure file with Azure DevOps Server/TFS on-premises?
+
+Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
 
 ### How do I authorize a secure file for use in all pipelines?
 

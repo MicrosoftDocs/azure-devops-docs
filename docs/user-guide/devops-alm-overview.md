@@ -6,9 +6,9 @@ description: Guide to getting started using DevOps and Agile tools provided by A
 ms.prod: devops
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
-ms.date: 12/06/2018
+ms.date: 02/01/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -111,7 +111,7 @@ Azure Pipelines, and Build &amp; Release in TFS, help you automate the deploymen
 
 As your team grows, your tools grow. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
 
-[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-team-defaults.md)[![Manage teams and configure team tools](_img/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
+[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-area-paths.md)[![Manage teams and configure team tools](_img/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
 
  
 ## Related articles
@@ -158,7 +158,7 @@ Industry-standard RESTful APIs extend the power of Azure DevOps Services and TFS
 
 Monitor your web and device apps to gain actionable insight to improve performance, determine usage patterns, and plan for the next version of your software.  
 
-[Use Application Insights](http://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or J2EE servers.  
+[Use Application Insights](http://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
 
 [Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
  
