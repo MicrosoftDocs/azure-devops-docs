@@ -55,6 +55,10 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 [!INCLUDE [include](_shared/variables-vsts.md)]
 ::: moniker-end
 
+::: moniker range="azure-devops-2019"
+[!INCLUDE [include](_shared/variables-server2019.md)]
+::: moniker-end
+
 ::: moniker range="tfs-2018"
 [!INCLUDE [include](_shared/variables-tfs2018.md)]
 ::: moniker-end
