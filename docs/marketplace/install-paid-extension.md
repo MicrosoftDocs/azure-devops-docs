@@ -78,7 +78,7 @@ To assign extensions, you need Azure DevOps Services [project collection adminis
 
    ![Check that users have required access to extension assignment](_img/user-access-level.png)
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
 5.	To assign the extension, right click or choose the ellipses (...) for the user you want to assign access to. Select **Manage extensions**.
 
@@ -104,7 +104,7 @@ Tell your team about this extension, so they can start using its capabilities.
 
 	<img alt="Check that users have required access" src="_img/assign-extensions/check-user-access.png" style="border: 1px solid #CCCCCC" />
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
 4.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to.
 

@@ -288,7 +288,7 @@ After you have your packaged extension in a .vsix file, you're ready to publish 
 All extensions, including those from Microsoft, are identified as being provided by a publisher.
 If you aren't already a member of an existing publisher, you'll create one.
 
-1. Sign in to the [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage)
+1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher)
 2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
  * Specify an identifier for your publisher, for example: `mycompany-myteam`
     * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
@@ -406,7 +406,7 @@ Add the below at the end of your extension manifest.
 
 <div class="alert alert-warning">
     <b>Warning</b>: Adding or changing scopes after an extension is published is currently not supported. If you have already uploaded your extension, you need remove it from the marketplace. 
-	Go to [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage), right-click on your extension and select "Remove".
+	Go to [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher), right-click on your extension and select "Remove".
 </div> 
 
 
