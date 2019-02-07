@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013' 
-ms.date: 11/19/2018 
+ms.date: 02/08/2018
 ---
 
 # Configure a cumulative flow chart
@@ -86,9 +86,6 @@ You will need to be a team administrator or a member of the Project Administrato
 
 ## View the built-in cumulative flow chart 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019"  
 
 You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Boards>Boards** page. 
@@ -96,15 +93,10 @@ You open the built-in (work tracking datastore) CFD for your product or portfoli
 > [!div class="mx-imgBorder"]  
 > ![Open CFD, new nav](_img/open-cfd-new-nav.png)
 
-::: moniker-end    
+::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Work>Backlogs** page. 
 
@@ -112,11 +104,6 @@ You open the built-in (work tracking datastore) CFD for your product or portfoli
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
---- 
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started. 
 
@@ -130,8 +117,6 @@ Each team can set their preferences for the built-in cumulative flow charts.
 
 For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../boards/boards/kanban-basics.md). 
 
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019" 
 1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
@@ -143,16 +128,9 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 2. Choose **Cumulative flow** and specify the team's preferences.  
 
 	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
-::: moniker-end    
+::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![ ](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
@@ -164,12 +142,6 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 
 	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Try this next
 > [!div class="nextstepaction"]

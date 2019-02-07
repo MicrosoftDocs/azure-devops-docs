@@ -43,9 +43,6 @@ Here's an example:
 ## Connect to the web portal for your project 
 To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
-[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
-
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019"  
 Open a web browser, connect to your project, and  choose **Overview>Dashboards**. 
 
@@ -56,28 +53,16 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"   
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 Open a web browser, connect to your project, and  choose **Dashboards**. 
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Add the markdown widget to a dashboard  
 If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboards.md).  
