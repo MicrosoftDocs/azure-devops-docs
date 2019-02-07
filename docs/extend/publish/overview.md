@@ -14,7 +14,7 @@ ms.date: 08/29/2016
 
 # Package, publish, unpublish, and install Azure DevOps Services extensions
 
-After writing an Azure DevOps Services extension, the next step is to package it. After packaging, extensions are published, or uploaded, to the [Visual Studio Marketplace](https://marketplace.visualstudio.com), where they can be installed by users that the extensions are shared with. The Marketplace is a centralized, global repository for private and public extensions, integrations, and other offers from Microsoft.
+After writing an Azure DevOps Services extension, the next step is to package it. After packaging, extensions are published, or uploaded, to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), where they can be installed by users that the extensions are shared with. The Marketplace is a centralized, global repository for private and public extensions, integrations, and other offers from Microsoft.
 
 >[!NOTE]
 >For information on the discovery properties available in your extension's manifest file that will help users discover and learn about your extension, 
