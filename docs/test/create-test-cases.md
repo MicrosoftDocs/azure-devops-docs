@@ -18,9 +18,11 @@ monikerRange: '>= tfs-2015'
 
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
-meet your users' needs. Organize your test cases by adding test 
-cases to test suites. Then choose which testers you want to run 
+meet your users' needs. Organize your test cases by adding them
+to test plans and test suites. Then choose which testers you want to run 
 the tests.
+
+[What are test plans, test suites, and test cases?](create-a-test-plan.md#testplans)
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 

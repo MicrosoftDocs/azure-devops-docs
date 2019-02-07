@@ -26,11 +26,11 @@ to install the extension as an administrator.
 Non-administrative users can also go here to request the extension be added. 
 For more details, see [Install an extension](../../marketplace/install-extension.md#install-extension) in the Marketplace documentation.
 
->Only users with Basic access can use Code Search.
+> Only users with Basic access can use Code Search.
 
 ## Start searching
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
 1. Open the **Azure Repos** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
@@ -41,7 +41,9 @@ For more details, see [Install an extension](../../marketplace/install-extension
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
 
 1. In the search textbox at the top right of the window, check that the text says
    _Search code_. The search text box may say _Search work items_. In this case, use the drop-down selector to change it.
@@ -57,7 +59,7 @@ For more details, see [Install an extension](../../marketplace/install-extension
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search.
 
----
+::: moniker-end
 
 ## View the results
 
