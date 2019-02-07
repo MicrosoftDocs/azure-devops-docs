@@ -2,6 +2,7 @@
 title: Index of default and system work item fields 
 titleSuffix: Azure Boards
 description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
@@ -260,56 +261,12 @@ The following articles describe fields that are used in common by several WITs, 
 - [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) 
 
 
-<a id="field-reference">  </a>  
-## What is a field? How are field names used?  
-
-A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  
-
-- Field names must be unique within the account/project collection  
-- Field names must be 128 or fewer Unicode characters  
-- Field names can't contain any leading or trailing spaces, nor two or more consecutive spaces  
-- Field names must contain at least one alphabetic character  
-- Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
-
-Because custom fields are defined for the account collection, you can't add a custom field to a process with the same field name that you add to another inherited process.  
-
-When adding custom fields, note the following limits:  
-*   A maximum of 256 fields can be defined for each WIT  
-*   A maximum of 512 fields can be defined per process   
-
-
-::: moniker range="azure-devops"  
-## Add and modify fields    
-To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../../organizations/settings/work/customize-process.md).  
-
-Also, you can [view the list of fields defined for an organization](../../../organizations/settings/work/customize-process.md) and the WITs which reference them. 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops-2019"  
-## Modify the field name and other field attributes  
-You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../../reference/witadmin/manage-work-item-fields.md).  
-::: moniker-end  
-
-<a id="wi-explorer">  </a>
-## Hidden field attributes and the Work Item Field Explorer 
-
-There are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
-
-![Work item field explorer](../../../reference/_img/IC633020.png)
-
-For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
-
-To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio):
- - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../../reference/process/new-work-item-experience.md). 
- - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
-
-
-
 ## Related articles
 
+- [About work item fields](../work-item-fields.md)
 - [Create managed queries](../../queries/example-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
 - [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
 
-You can list the attributes of fields using the [**witadmin listfields** command](../../../reference/witadmin/manage-work-item-fields.md). 
+

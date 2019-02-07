@@ -133,5 +133,5 @@ SELECT [System.ID], [System.Title], [System.State]
 ## Related articles: 
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
-- [REST API, Wiql](/rest/api/vsts/wit/wiql)
+- [REST API, Wiql](/rest/api/azure/devops/wit/wiql)
  

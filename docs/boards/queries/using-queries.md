@@ -11,16 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 02/01/2019
 ---
 
 # Create and save managed queries with the query editor
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
-
-For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
+Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
 In this article you'll learn:  
 
@@ -31,6 +29,7 @@ In this article you'll learn:
 > * Understand when to use a flat-list, tree, or direct-links query 
 > * How to query across projects    
 
+For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
 
 [!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
@@ -42,7 +41,7 @@ In this article you'll learn:
 
 
 <a id="flat-list-query"/>
-## Open and edit a query  
+## Open, edit, and save a query  
 
 The easiest way to define a query is to start with an existing shared query. 
 The following example shows how to find all closed bugs by modifying the 
@@ -98,6 +97,73 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 ::: moniker-end
 
 
+<a id="define-clause" />
+## Define a clause
+You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause. 
+
+
+> [!div class="mx-imgBorder"]  
+> ![Add new query, new experience](_img/using-queries/define-clause.png)  
+
+For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the **@Me** macro which represents your user identity.
+
+### Sample query clause 
+
+<table>
+<tr>
+	<th>And/Or</th>
+	<th>Field</th>
+	<th>Operator</th>
+	<th>Value</th></tr>
+<tr>
+	<td><p><strong>And</strong></p></td>
+	<td><p><strong>Assigned To</strong></p></td>
+	<td><p><strong>=</strong></p></td>
+	<td><p><strong>&#64;Me</strong></p></td>
+</tr>
+</table>
+
+For a quick reference of the operators available based on the field data type, see [Query index quick reference](query-index-quick-ref.md#fields-operators-macros). 
+
+All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required.  
+
+### Checklist for how to define a query clause
+
+1.  In the first empty row, under the **Field** column heading, choose the down arrow to display the list of available fields, and choose an item in the list.
+
+    For more information, see [Query Fields and Values](#fields-values).
+
+2.  In the same row, under the **Operator** column heading, choose the down arrow to display the list of available operators, and choose an item in the list.
+
+    For more information, see [Operators](#operators).
+
+3.  In the same row, under the **Value** column heading, either type a value, or choose the down arrow, and choose an item in the list.
+
+    For more information about how to use variables to specify the current project, user, or date, see [Variables](#variables).
+
+5.  To add a clause, choose **Click here to add a new clause** or **Add a new clause**.
+
+    You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](_img/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](_img/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](_img/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](_img/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
+
+<a id="and-or" /> 
+## And/Or logical expression
+
+You specify **And** or **Or** to create logical expressions of your query clauses. Specify **And** to find work items that meet the criteria in both the current clause and the previous clause. Specify **Or** to find work items that meet the criterion in either the current clause or the previous clause.
+
+You can add one new clause for each work item field in order to refine your search criteria, so that it returns only the set of work items that you want. If you do not receive the results that you expect from your query, you can add, remove, group, or ungroup query clauses to refine your query results.
+
+Query clauses can be grouped to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
+
+As the following example shows, the grouped clauses are translated to the corresponding logical expression. The first expression returns work items that are priority 1, as well as all active bugs of any priority. The second expression returns all active priority 1 work items, plus all priority 1 bugs whether they are active or not.
+
+|Grouped clauses|Logical expression|
+|---|---|
+|![ ](_img/query-fields-operators-values-variables/IC425364.png)|Priority=1 OR (Work Item Type=Bug AND State=Active)|
+|![ ](_img/query-fields-operators-values-variables/IC425365.png)|Priority=1 AND (Work Item Type=Bug OR State=Active)|
+
+
+<a id="group-clauses" /> 
+
 ## Group clauses
 
 Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The And or Or operator for the first clause in the group applies to the whole group.
@@ -127,6 +193,11 @@ If your query results do not return your expected set of work items, follow thes
 - Determine if you need to group or change the grouping of the query clauses and the And/Or assignments of each grouped clause.  
 - Add more query clauses to refine your query filter criteria.  
 - Review the options available to specify [fields, operators, and values](query-operators-variables.md).  
+
+<a id="ungroup-clause" />
+## Ungroup a clause
+
+To ungroup a clause, choose the [ ](../_img/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
 
 <a id="tree-query" />
 ## Use a tree query to view hierarchies  
@@ -233,6 +304,7 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 
 You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
+<a id="export-query" />  
 ## Export a query  
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../../reference/process-templates/define-work-item-query-process-template.md). 
 
@@ -250,7 +322,7 @@ See also:
 
 That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-- [Ad hoc versus managed queries](ad hoc-vs-managed-queries.md)  
+- [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)

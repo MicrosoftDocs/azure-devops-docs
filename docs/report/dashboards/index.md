@@ -84,7 +84,7 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 - [Widget catalog](widget-catalog.md)  
 - [Markdown guidance](../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json)
 - [Default permissions & access (Security)](charts-dashboard-permissions-access.md)
-- [REST API, Dashboards](/rest/api/vsts/dashboard/)
+- [REST API, Dashboards](/rest/api/azure/devops/dashboard/)
 ::: moniker-end
 
 

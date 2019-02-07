@@ -2,7 +2,7 @@
 title: Understand how work items are used to track user stories, issues, bugs, features, and epics 
 titleSuffix: Azure Boards and TFS
 description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
-ms.custom: seodec18
+ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -190,7 +190,7 @@ You can use the search box to perform an ad hoc search to find specific work ite
 To learn more, see these topics: 
 - [Create managed queries to list, update, or chart work items ](../queries/example-queries.md)  
 - [View, run, or email a query](../queries/view-run-query.md)  
-- [Ad hoc vs managed queries](../queries/ad hoc-vs-managed-queries.md)  
+- [Ad hoc vs managed queries](../queries/adhoc-vs-managed-queries.md)  
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />
@@ -210,11 +210,17 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="azure-devops-2019"
+You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
+- For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
+- For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
- 
+
 <a id="permissions-access" />
 ## Required permissions and access
 

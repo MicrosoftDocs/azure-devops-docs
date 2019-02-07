@@ -2,6 +2,7 @@
 title: Upload, download, or delete a process template 
 titleSuffix: TFS
 description: Upload, download, delete, or make default a process template for a project collection 
+ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
