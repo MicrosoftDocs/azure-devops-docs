@@ -27,7 +27,7 @@ The following fields track information about bugs, issues, and risks. These work
 > |**Symptom**|The unexpected behavior.<br/>Reference name=Microsoft.VSTS.CMMI.Symptom|HTML|  
 > |**Proposed Fix**|The proposed change to fix the reported problem.<br/>Reference name=Microsoft.VSTS.CMMI.ProposedFix|HTML|  
 > |**Found in Environment**|The software setup and configuration where the bug was found.<br/>Reference name=Microsoft.VSTS.CMMI.FoundInEnvironment|String|  
-> |**Root Cause**|The cause of the error. You can specify one of the following values:<br /><br /-   **Coding Error**<br/>-   **Design Error**<br/>-   **Specification Error**<br/>-   **Communication Error**<br/>-   **Unknown**<br/><br/>To change the menu selection, see [Customize a pick list](../../../../reference/add-modify-field.md).<br/>Reference name=Microsoft.VSTS.CMMI.RootCause|String|  
+> |**Root Cause**|The cause of the error. You can specify one of the following values:<br /><br /-   **Coding Error**<br/>-   **Design Error**<br/>-   **Specification Error**<br/>-   **Communication Error**<br/>-   **Unknown**<br/><br/>To change the menu selection, see [Customize a picklist](../../../../reference/add-modify-field.md).<br/>Reference name=Microsoft.VSTS.CMMI.RootCause|String|  
 > |**How Found**|How the bug was found. For example, a bug might have been found during a customer review or through ad hoc testing.<br/>Reference name=Microsoft.VSTS.CMMI.HowFound|String|  
   
 ##  <a name="issues"></a> Issue tracking fields  

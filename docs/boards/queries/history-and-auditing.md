@@ -19,6 +19,15 @@ ms.date: 11/19/2018
 
 The history of a work item tells you who opened the item, what changed, and why. This information helps you track how an item changes over time. When you enter information in the history field, provide as much information as possible to help the next work item owner understand what has happened and what they have to do.  
 
+
+## Supported operators and macros 
+Query clauses that specify the **History** field can use the **Contains Words** and **Does Not Contain Words** operators. Search against an exact phrase or to use the wildcard character, <b>*</b>. You can only use the wildcard character at the end of a partial word or phrase.
+
+The **History** field is automatically indexed for full-text search when full-text search is available. See Full-Text and partial word searches 
+
+
+## View the History of a work item 
+
 You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the **History** field. When you perform a search on the contents of the **History**  field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.  
 
 # [Browser](#tab/browser)
@@ -319,7 +328,7 @@ To learn more about creating and saving queries, see also:
 
 
 ### Get history programmatically
-See [Work item tracking](/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
+See [Work item tracking](/rest/api/azure/devops/wit/)  for ways to extract history information programmatically.  
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  

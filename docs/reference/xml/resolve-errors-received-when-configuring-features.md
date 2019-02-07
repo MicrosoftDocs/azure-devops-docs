@@ -72,7 +72,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
  To learn more, see the following topics:  
   
 -   [Overview of process template files](../process-templates/overview-process-template-files.md)    
--   [Define and modify work item fields](define-modify-work-item-fields.md)   
+-   [About work item fields and attributes](../../boards/work-items/work-item-fields.md)   
 -   [Change the workflow](change-workflow-wit.md)    
 -   [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md)  
   

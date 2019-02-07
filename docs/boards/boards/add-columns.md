@@ -400,4 +400,4 @@ That's about all you need to know about working with Kanban columns. Here are a 
 * [Definition of Done](definition-of-done.md)  
 
 ### REST API resources
-To interact programmatically with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
+To interact programmatically with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/azure/devops/work/boards).

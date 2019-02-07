@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following fields:
+You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following integer fields:
 
 ::: moniker range="azure-devops"  
 - Attachment File Count
@@ -51,7 +51,15 @@ You can [link work items to track related work and dependencies](link-work-items
 
 For descriptions of each of these fields, see the [table provided later in this article](#table-field). 
 
-## Query based on link or attachment counts
+
+## Supported operators and macros 
+Query clauses that specify an integer field can use the operators listed below.
+- = , <> , > , < , >= , <= , 
+- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], 
+- In, Not In, 
+- Was Ever
+
+## Link or attachment count queries
 
 <p>You can filter for work items by the link type, link count, or attachment count.  </p>
 
@@ -279,8 +287,9 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 
 ## Related articles
 
-- [Add link to multiple work items](../backlogs/add-link.md) 
+- [Add a link to multiple work items](../backlogs/add-link.md) 
 - [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md) 
+- [Query quick reference](query-index-quick-ref.md)
 - [Query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Add work items](../backlogs/add-work-items.md)  

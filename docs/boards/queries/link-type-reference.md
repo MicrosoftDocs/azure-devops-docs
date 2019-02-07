@@ -271,7 +271,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 <td>Hyperlink</td>
 <td>Work item tracking</td>
 <td>Hyperlink</td>
-<td>Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/vsts/wit/artifact%20link%20types/list). </td>
+<td>Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list). </td>
 </tr>
 
 
@@ -402,7 +402,7 @@ The following table describes the external link types you can choose when adding
 <td>Versioned item</td>
 <td>VersionControl </td>
 <td>LatestItemVersion</td>
-<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/vsts/wit/artifact%20link%20types/list).   </td>
+<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list).   </td>
 </tr>
 
 <tr>
@@ -431,5 +431,5 @@ You can create custom link types; export and import definitions of link types; a
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 - [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
-- [Artifact Link Types API](/rest/api/vsts/wit/artifact%20link%20types/list)
+- [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)
 

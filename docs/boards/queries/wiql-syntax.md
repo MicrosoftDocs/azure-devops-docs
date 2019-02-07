@@ -12,14 +12,14 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 02/04/2019
----
+--- 
 
 
 # Syntax for the Work Item Query Language (WIQL) 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
-You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](/rest/api/vsts/wit/wiql).  
+You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 
@@ -203,11 +203,14 @@ WHERE [System.AssignedTo] = 'joselugo'
 WHERE [Adatum.CustomMethodology.Severity] >= 2
 ```
 
-The table below summarizes all the supported operators for different field types. For additional information on each field type, see [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md).  
+The table below summarizes all the supported operators for different field types. For additional information on each field type, see [Work item fields and attributes](../work-items/work-item-fields.md).  
 
 The `=, <>, >, <, >=, and <=` operators work as expected. For instance, `System.ID > 100` queries for all work items with an **ID** greater than 100. `System.ChangedDate > '1/1/16 12:00:00'` queries for all work items changed after noon of January 1, 2016.
 
 Beyond these basic operators, there are some behaviors and operators specific to certain field types.
+
+> [!NOTE]   
+> The operators available to you depend on your platform and version. For more information, see [Query quick reference](query-index-quick-ref.md).
 
 
 <table width="80%">
@@ -216,11 +219,23 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <th width="70%">Supported operators</th>
 </tr>
 <tbody valign="top">
+
 <tr>
-<td>Integer, Double, GUID</td>
+<td>Boolean</td>
 <td>
 
-```=, <>, >, <, >=, <=
+```
+= , <> , =[Field] , <>[Field]
+```
+</td>
+</tr>
+
+<tr>
+<td>Double, GUID, Integer</td>
+<td>
+
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
 ```
 </td>
 </tr>
@@ -229,7 +244,9 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <tr>
 <td>Boolean</td>
 <td>
-```=```
+```
+= , <> , =[Field] , <>[Field]
+```
 </td>
 </tr>
 
@@ -237,28 +254,45 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <tr>
 <td>DateTime</td>
 <td>
-```=, <>, >, <, >=, <=```
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+```
 </td>
 </tr>
 
 <tr>
-<td>String</td>
+<td>Identity</td>
 <td>
-```=, <>, >, <, >=, <=, Contains```
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+```
 </td>
 </tr>
 
 <tr>
 <td>PlainText</td>
 <td>
-```Contains```
+```
+Contains Words, Does Not Contain Words, Is Empty, Is Not Empty
+```
 </td>
 </tr>
+<tr>
+<td>String</td>
+<td>
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+```
+</td>
+</tr>
+
 
 <tr>
 <td>TreePath</td>
 <td>
-```Under, =, <>```
+```
+=, <>, In, Not In, Under, Not Under
+```
 </td>
 </tr>
 
@@ -445,7 +479,6 @@ You can also use queries to find links between work items. A condition in the Wh
 
 The following table summarizes the differences between these types of queries and queries only for work items:
 
-TBD at a later time
 
 https://msdn.microsoft.com/library/bb130306.aspx
 
@@ -454,8 +487,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 ## Related articles 
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
-- [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md) 
-- [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
+- [Work item fields and attributes](../work-items/work-item-fields.md) 
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ### Limits on WIQL length  
