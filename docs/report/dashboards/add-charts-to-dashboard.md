@@ -76,19 +76,19 @@ Each time a release is deployed, it logs information about the release to each o
 
 > [!NOTE]  
 > You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+
 
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
-
-    # [New navigation](#tab/new-nav)
+::: moniker-end
+    ::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Add a Release pipeline chart to a dashboard, new nav](_img/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
+	::: moniker-end
 
-    # [Previous navigation](#tab/previous-nav)
+    ::: moniker range=">= tfs-2017 <= tfs-2018" 
     ![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
-    
-    ---
-
+    ::: moniker-end
+::: moniker range=">= tfs-2017"
 	If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
