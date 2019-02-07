@@ -154,6 +154,24 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
             <li>
+                <a href="languages/anaconda.md">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card ready x-hidden-focus">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("_img/index/logo_anaconda.png"); background-size: cover;'>
+                                        <img style="display: none;" alt="Anaconda" src="_img/index/logo_anaconda.png" data-linktype="external" data-hoverimage="_img/index/logo_anaconda.png">
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <h3><br/>Anaconda</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
                 <a href="languages/android.md">
                     <div class="cardSize">
                         <div class="cardPadding">

@@ -21,20 +21,50 @@ That way, you can see when the testing for a specific sprint or milestone is com
 For more information about manual testing, see [Planned manual testing](overview.md#planned-manual-testing)
 and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
 
-**Test plans** are used to group together test suites and individual test cases.
-This includes static test suites, requirement-based suites, and
-[query-based suites](reference-qa.md#query-based-suites). 
+<a name="testplans"></a>
+## What are test plans, test suites, and test cases?
 
-**Test suites** are used to group test cases into separate testing scenarios within a single test plan.
-This makes it easier to see which scenarios are complete.
+[!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides three main types of 
+test management artifact: test plans, test suites, and test cases.
+These are stored in your work repository as special types of
+work items, allowing you to export and share them with your team,
+and benefit from close integration for all of your DevOps tasks. 
 
-**Test cases** are used to validate individual parts of your code or app deployment to ensure it performs correctly, has no errors, and
-meets business and customer requirements. You can add individual test cases to a test plan without creating
-a test suite if you wish.
+* **Test plans** are used to group together test suites and individual test cases.
+  This includes static test suites, requirement-based suites, and
+  [query-based suites](reference-qa.md#query-based-suites). 
 
-You can export and share the test plans and test suites with your team.
-Test plans and test cases are stored in your Azure DevOps or TFS organization as special types of work items.
-Also see the [FAQs for manual testing](reference-qa.md#testplans).
+* **Test suites** are used to group test cases into separate testing scenarios within a single test plan.
+  This makes it easier to see which scenarios are complete.
+
+* **Test cases** are used to validate individual parts of your code or app deployment to ensure it performs correctly, has no errors, and
+  meets business and customer requirements. You can add individual test cases to a test plan without creating
+  a test suite if you wish. Test cases can be referenced in more than one test suite and test plan, meaning
+  you can effectively reuse them without needing to copy or clone them for each suite or plan.
+  See [Create manual test cases](create-test-cases.md).
+
+**For example**:
+
+You are building version 1.* of your product and you might create several **test cases** for that version.
+Each of these test cases can be updated, and more added, at any time. For each development cycle and release of
+your product you create a **test plan** (a unit of execution) and import the existing test cases into that plan.
+You can also, if you wish, divide the test cases into separate **test suites** within the plan to enable easier
+management and monitoring of these separate sets of test cases.
+
+After you create your test plan, you [assign test configurations](test-different-configurations.md)
+and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
+These testers [execute the tests](run-manual-tests.md) to gauge the quality of the product, and continue testing until the required exit criteria is met.
+For the next development cycle and release, you can create a new test plan and reuse the same test cases.
+You repeat this development-test-release cycle by importing the same test cases into each new test plan.
+
+The great thing is that, because the test cases are _referenced_ in the test plans, updates to a test case are automatically
+reflected in all the test plans and test suites that use it.
+
+Then, in the next version of the product, you can reuse the existing test cases. However, a better option may be
+to [copy or clone the test cases](reference-qa.md#creating-manual-test-cases) to create a new baseline,
+where changes to these new test cases do not affect those referenced in test plans for the previous version of the product.
+ 
+> For more details of the ways you can work with test plans, test suits, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
