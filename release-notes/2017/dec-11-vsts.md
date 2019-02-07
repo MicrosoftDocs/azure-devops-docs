@@ -179,7 +179,7 @@ Note that tests that use TestCase as a data source cannot be used with the **Run
 
 ### Improved Marketplace experience
 
-We have enabled tabs on extension description pages in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to make it easier to find the information you want. Now, getting to Pricing, Q&A, or Rating & Review information is easier. Even when you scroll down the page, the tabs and single call to action are always within view.
+We have enabled tabs on extension description pages in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to make it easier to find the information you want. Now, getting to Pricing, Q&A, or Rating & Review information is easier. Even when you scroll down the page, the tabs and single call to action are always within view.
 
 > [!div class="mx-imgBorder"]
 ![Marketplace tabs](_img/127_04.png)
