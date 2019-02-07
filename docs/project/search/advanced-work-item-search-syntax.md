@@ -122,15 +122,17 @@ Type or paste the work item ID in the search box in the Azure DevOps or TFS titl
 to quickly navigate to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
 ![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal-new.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
 
 ![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal.png)
 
----
+::: moniker-end
 
 <a name="boolean"></a>
 ## Narrow your search with Boolean operators
