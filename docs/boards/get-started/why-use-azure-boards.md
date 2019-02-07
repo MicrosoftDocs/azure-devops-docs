@@ -111,7 +111,7 @@ Here are a few extensions available from the Marketplace.
 > [!div class="mx-imgBorder"]  
 > ![Marketplace extensions for plan and track work](_img/why-boards/marketplace-extensions.png) 
 
-In addition, by using the [REST API](/rest/api/vsts/index), you can create your own extensions or tools to integrate with Azure DevOps Services.
+In addition, by using the [REST API](/rest/api/azure/devops/index), you can create your own extensions or tools to integrate with Azure DevOps Services.
 
 
 ## 10. Mobile app 

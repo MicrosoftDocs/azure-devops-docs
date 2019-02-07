@@ -42,36 +42,35 @@ In addition to these operators, you can use the following macros when you select
 > |Macro   | Use when you want to...|
 > |-------------|--------------|
 > | **@CurrentIteration**    | Specify the current iteration associated with the selected team context.  |
-> | **@CurrentIteration +/- n**   | Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
+> | **@CurrentIteration +/- n**&nbsp;&nbsp;&nbsp;| Filter items based on assignment to a sliding window of sprints associated with the selected team context.  |
 > | **@TeamAreas**   | Filter items based on area path(s) assigned to a specific team.  |
 
 > [!NOTE]   
 > The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
 
-## Query for items assigned under several areas 
+## Area path queries 
 
 You can specify to filter for work items assigned to several area paths by using the **In** operator as shown in the following example.  
  
 > [!div class="mx-imgBorder"]
 > ![Query on Area Path for several areas](_img/query-area-iteration/query-with-in-operator.png)
 
-Or, you can use the Node Name and **In** to get the same results. 
+
+## Node Name and keyword based queries  
+
+Using the **Node Name** field, you can filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the leaf node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
+
+The following query yields the same result as the previous example.  
 
 > [!div class="mx-imgBorder"]
 > ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
-
-## Query for items based on a keyword contained within several area paths   
-
-Using the Node Name field, you can filter on work items assigned to area paths based on a keyword using the **Contains** operator. The Node Name specifies the leaf node of an Area Path, which corresponds to the last node in the tree hierarchy. 
 
 In this example, the filter will return any work items assigned to an area path whose leaf node contains the word "Azure".
 
 > [!div class="mx-imgBorder"]
 > ![Query for several sprints](_img/query-area-iteration/query-filter-contains-node-name.png)
 
-## Query for items based on the leaf node of the area path 
-
-Another way to filter items based on the area path is to use the Node Name. The Node Name corresponds to the last node within the area path. 
+Here's another example which uses the **Node Name** and the **In** operator. 
 
 > [!div class="mx-imgBorder"]
 > ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
@@ -80,7 +79,7 @@ Another way to filter items based on the area path is to use the Node Name. The 
 
 ::: moniker range=">= azure-devops-2019"
 <a id="team-area-path" /> 
-## Query for items based on the area path assigned to a team
+## Team area path queries  
 
 Use the **@TeamAreas** macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
 
@@ -114,11 +113,11 @@ The following fields do not appear on work item forms but are tracked for each w
 > |Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
 > |Node Name|The name of the leaf node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
-The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item data type reference](../../reference/xml/define-modify-work-item-fields.md).
+The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 
 ## Related articles 
-
+- [Query quick reference](query-index-quick-ref.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 

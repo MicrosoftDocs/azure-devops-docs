@@ -1,7 +1,7 @@
 ---
 title: Pick list queries
 titleSuffix: Azure Boards
-description: Create queries based on planning, ranking, and priority, integer and pick list fields in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Create queries based on planning, ranking, and priority, integer and picklist fields in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,17 +13,25 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
-# Query by pick list value
+# Query by picklist value
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You use planning, ranking, and priority fields to specify which work the team should complete first. By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
+You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
 You rank and prioritize work items when you [Create your backlog](../backlogs/create-your-backlog.md).
 
-## Example pick list queries 
 
-Most of the planning fields described in the next section are either an integer or string field. For example queries of estimates or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).    
+## Supported operators and macros 
+Query clauses that specify a string or integer field can use the operators listed below.
+- = , <> , > , < , >= , <=  
+- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]  
+- In, Not In  
+- Was Ever  
+
+## Pick list queries 
+
+Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).    
 
 <table width="100%">
 <tbody valign="top">
@@ -72,8 +80,8 @@ The following table describes the fields that you can use to plan and prioritize
 <table width="100%">
 <thead>
 <tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
+  <th width="22%">Field name</th>
+  <th width="53%">Description</th>
   <th width="25%">Work item type</th>
 </tr>
 </thead>
@@ -168,7 +176,7 @@ The following table describes the fields that you can use to plan and prioritize
 </table>
 
 ####Notes:  
-0.  To change the menu selection, see [Add or modify a field, customize a pick list](../../reference/add-modify-field.md).  
+0.  To change the menu selection, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
 0.  The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
@@ -176,7 +184,7 @@ The following table describes the fields that you can use to plan and prioritize
 
 - [Query by a numeric field](query-numeric.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)  
-- [Data types and work item fields](../../reference/xml/define-modify-work-item-fields.md).  
+- [Work item fields and attributes](../work-items/work-item-fields.md).  
  
 ###More on Backlog Priority or Stack Rank fields
 

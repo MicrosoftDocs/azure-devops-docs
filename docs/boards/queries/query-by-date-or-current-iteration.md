@@ -29,10 +29,36 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 ::: moniker-end
 
 
-> [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions. These macros only work when run them from the web portal. 
+## Supported operators and macros 
+Query clauses that specify a DateTime field or the **Iteration Path** can use the operators and macros listed in the following table.
 
-## Query for items based on when changes occurred
+<table valign="top">
+<thead>
+<tr>
+<th width="10%"><p>Data type</p></th>
+<th width="78%"><p>Supported operators and macros</p></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+	<td><p><strong>DateTime</strong> </p></td>
+	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+	<p>**Macros**: **@Today**, **@Today +/- n** valid with any **DateTime** field</p></td>
+</tr>
+<tr>
+	<td><p> <strong>TreePath</strong> </p></td>
+	<td>= , <> , Under, Not Under
+	<p>**Macros**: **@CurrentIteration**<sup>1</sup> and**@CurrentIteration +/- n**<sup>2</sup> valid with the **Iteration Path** field</p></td>
+</tr>
+</tbody>
+</table>
+
+####Notes:
+1. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
+2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+
+
+## Date based queries  
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
@@ -98,12 +124,16 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 
 <a id="current-iteration">  </a>
 
-## Query for items based on belonging to a team's current iteration 
+## Team's current iteration queries  
  
 If your team follows Scrum processes, you [schedule work to be completed in sprints](../sprints/define-sprints.md). You can track the progress of requirements, bugs, and other work to be completed in the current sprint using the **@CurrentIteration** macro.  
 
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
+> [!NOTE]
+> For the **@CurrentIteration** macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the the web portal.
+> 
+> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -111,7 +141,6 @@ Azure Boards adds a team parameter when you select the **@CurrentIteration** or 
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
-
 
 To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the **@CurrentIteration** macro.  
 
@@ -133,12 +162,15 @@ Prior to creating or updating a query to use the **@CurrentIteration** macro, ma
 ::: moniker range=">= azure-devops-2019"
 
 <a id="current-iteration-plus-minus-n">  </a>
-## Query for items based on a sliding window of team iterations 
+## Sliding window of team iterations query 
 
 Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the work a team has planned for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
 
-> [!NOTE] 
-> The <b>@CurrentIteration +/- <i>n</i></b> macro is supported for Azure Boards only, and only when run from the web portal. 
+> [!NOTE]
+> For the <b>@CurrentIteration +/- <i>n</i></b> macro to work, the team must have selected **Iteration Paths** that meet the <b>+/- <i>n</i></b>
+> criteria and date ranges encompass the current date for the **@CurrentIteration**. For details about team selection of Iteration Paths, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> 
+> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
 Here we show how to list all User Stories and Bugs assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
 
@@ -150,7 +182,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ::: moniker-end
 
 <a id="date_fields">  </a>
-## Date and the iteration path fields
+## Date and Iteration Path fields
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
 <table>
@@ -323,11 +355,13 @@ An error occurs if you open a query that contains the **@CurrentIteration** macr
 ## Related articles
 To query for items based on text entered in the History field, see [History and auditing](history-and-auditing.md). 
 
+- [Query quick reference](query-index-quick-ref.md)
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Create managed queries with the query editor](using-queries.md)  
 - [Query operators & macros](query-operators-variables.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query permissions](set-query-permissions.md)
-- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
 

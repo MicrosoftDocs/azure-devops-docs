@@ -1,9 +1,8 @@
 ---
 title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
 titleSuffix: Azure Boards
-description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS
-ms.custom: seodec18
-ms.custom: boards-work-items
+description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
+ms.custom: boards-work-items, seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -11,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 02/01/2019
 ---
 
 # Best tool to add, update, and link work items 
@@ -315,7 +314,25 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 <tr>
 <th width="30%">Tool</th>
 <th width="70%">Best tool for:</th>
+
+
+
 </tr>
+
+<tr>
+<td>[Adhoc search](../queries/search-box-queries.md) </td>
+<td> 
+<ul>
+<li>Find a specific work item using its ID or a keyword</li>
+<li>Find one or more work items across all projects in a fast, flexible manner</li>
+<li>Perform full text search across all work item fields</li>
+<li>Review work items assigned to a specific team member</li>
+<li>Search against specific work item fields to quickly narrow down a list of work items</li>
+<li>Determine what key words will support a managed search.</li>
+</ul>
+</td>
+</tr>
+
 <tr>
 <td>[Work item templates](../backlogs/work-item-template.md) </td>
 <td> 
@@ -323,7 +340,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 <li>Capture templates</li>
 <li>Apply templates to update work items</li>
 <li>Use templates to create work items</li>
-<li>Manage work item templates</li>
+<li>Manage work item templates.</li>
 </ul>
 </td>
 </tr>

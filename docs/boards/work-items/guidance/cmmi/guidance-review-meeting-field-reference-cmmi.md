@@ -19,7 +19,7 @@ ms.date: 01/20/2017
 
 The following fields track information and changes for review meetings. Your team can specify this kind of information by using the Review type of work item that is provided with the [CMMI process](../cmmi-process.md).  
   
- None of these fields are reportable or indexed. For more information about data types, see [Define and modify work item fields](../../../../reference/xml/define-modify-work-item-fields.md).  
+ None of these fields are reportable or indexed. For more information about data types, see [Work item fields and attributes](../../work-item-fields.md).  
   
 > [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Data type**|  

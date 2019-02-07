@@ -11,7 +11,7 @@ If you have a project, start tracking work:
 -   [Create a backlog](/azure/devops/boards/create-your-backlog) - to develop your product backlog   
 -   [Plan a sprint](/azure/devops/boards/sprints/assign-work-sprint) - to start working in Scrum    
 -   [Kanban](/azure/devops/boards/boards/kanban-basics)  - to start working in Kanban  
--   [Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) - to create a work breakdown structure   
+-   [Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel) or [Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) - to create a work breakdown structure   
 
 For more information on Agile tools:
 

@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/26/2018
+ms.date: 02/07/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -37,7 +37,10 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 <h2 id="install">Self-hosted agents</h2>
 
-An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**. You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS). Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
+An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**.
+You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS).
+Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
+Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
 ::: moniker range="azure-devops"
 

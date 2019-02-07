@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/01/2019
 ---
 
 
@@ -41,8 +41,8 @@ If you are looking for a specific work item, use the ad hoc search box. If you w
 - [Perform an ad hoc search](search-box-queries.md)  
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)  
-- [Organize and run managed queries](organize-queries.md)  
 
+For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
 
 ###Additional tips for working with queries
 -   To find work items that are assigned to you, add **@Me** as the value for the Assigned To field in one of the query clauses.  
@@ -55,27 +55,39 @@ If you are looking for a specific work item, use the ad hoc search box. If you w
 For additional tips when working with the new queries experience or the directory-focused queries views, see [Tips for working with the directory-focused **Queries** pages](view-run-query.md#tips-queries-hub). 
 ::: moniker-end
 
+<a id="my-shared"/>
+## My Queries, Shared Queries, and Favorites
+
+Only you can view and run queries that you save under **My Queries** with the queries directory. Also, you can favorite one of these queries to have it appear within your query selector.
+
+Queries you and others save under **Shared Queries** can be viewed by everyone with access to the project. Shared queries can be organized within folders and favorited by you or for a team. Also, you can set permissions on the folders and queries to prevent others from moving or editing them. 
+
+For details, see:
+- [Organize queries, add a query folder](organize-queries.md)
+- [Set query permissions](set-query-permissions.md)
+- [Favorite a query](view-run-query.md#favorite) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
+
 <a id="examples"/>
 ## Example queries 
 
-*You can list work items based on the following criteria...*  
+You can list work items based on the following criteria...
 
-### Assignment and other account-specific fields
+### Identity based queries  
 - [Active items assigned to me](query-by-workflow-changes.md#me)
 - [Closed items that were assigned to me](query-by-workflow-changes.md#me)
 - [Active items assigned to my team](query-by-workflow-changes.md#me)
 - [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)
 - [Items I closed](query-by-workflow-changes.md#workflow-change-who)
 - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who)
+- [Team or group membership queries](query-by-workflow-changes.md#group)
 
 ### Keywords or phrases
-- [Items containing a keyword/phrase](titles-ids-descriptions.md#keyword)
-- [Items not containing a keyword/phrase](titles-ids-descriptions.md#keyword)
-- [Items with an undefined field](titles-ids-descriptions.md#undefined-value)
-- [Items that belong to a category](titles-ids-descriptions.md#category)
+- [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
+- [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
+- [Empty or not empty HTML field queries](titles-ids-descriptions.md#empty)
+- [Category based queries](titles-ids-descriptions.md#category)
 
-
-### Work item counts and numeric fields 
+### Work item count and numeric field queries 
 - [Count of active bugs per developer](query-numeric.md#counts)
 - [Count of bugs by area and states](query-numeric.md#counts)
 - [Sum of story points and their status](query-numeric.md#effort)
@@ -83,16 +95,14 @@ For additional tips when working with the new queries experience or the director
 - [Sum of remaining work per developer](query-numeric.md#work) 
 
 
-### History and revision changes
-
+### History and revision change queries
 - [History contains a specific word](history-and-auditing.md)
 - [History doesn't contain a specific word](history-and-auditing.md)
 - [Reactivated items](history-and-auditing.md)
 - [Items closed within a time period](history-and-auditing.md)
 - [Items you've been associated with](history-and-auditing.md)
 
-### Date field or current iteration
-
+### Date and iteration based queries
 - [Items created in the last 30 days](query-by-date-or-current-iteration.md)
 - [Items modified on a specific date](query-by-date-or-current-iteration.md)
 - [Items resolved today](query-by-date-or-current-iteration.md)
@@ -111,19 +121,19 @@ For additional tips when working with the new queries experience or the director
 - [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)
 - [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) 
   
-### Links and attachments 
+### Link and attachment count queries 
 - [All child items of a single epic ](linking-attachments.md)
 - [All related items](linking-attachments.md)
 - [Items with one or more attachments](linking-attachments.md)
 - [Items with 2 or more hyperlinks](linking-attachments.md)
 - [Items containing external links](linking-attachments.md)
 
-### Tags
+### Tag based queries
 - [Items containing a specific tag](add-tags-to-work-items.md)
 - [Items that don't contain a specific tag](add-tags-to-work-items.md)
 - [Items that contain two or more tags ](add-tags-to-work-items.md)
 
-### Build and Test fields
+### Build and test field queries
 - [List bugs and linked test cases](build-test-integration.md#linked-bugs)
 - [List automated test cases](build-test-integration.md)
 - [List requirement-based test suites](build-test-integration.md)
@@ -131,8 +141,7 @@ For additional tips when working with the new queries experience or the director
 
 
 ::: moniker range=">= azure-devops-2019"
-
-### Team focus 
+### Team focus queries
 - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
 - [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)  
 - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
@@ -142,7 +151,7 @@ For additional tips when working with the new queries experience or the director
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-### Team focus 
+### Team focus queries
 
 - [Assigned to a member of a team](query-by-workflow-changes.md#group)
 - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
@@ -153,6 +162,7 @@ For additional tips when working with the new queries experience or the director
 
 ## Related articles
 
+- [Query quick reference](query-index-quick-ref.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)  
 
