@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 07/11/2018
+ms.date: 02/07/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -117,16 +117,14 @@ layout of the hosted agents is subject to change without warning.
 
 ## Agent IP ranges
 
-In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address.
+In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly XML file](https://www.microsoft.com/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
 
-> [!Note]
-> Because Azure DevOps uses the Azure global network, IP ranges vary over time.
-> We recommend that you check back frequently to ensure you keep an up-to-date list.
-> If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
+Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions, and while your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
-We publish a [weekly XML file](https://www.microsoft.com/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://dev.azure.com/<your_organization>/_settings/overview`. Under **Organization information**, you will see a field indicating your region.
+To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/confirmation.aspx?id=41653) for all regions in that geography.
 
-*This information is maintained by the [Azure DevOps support team](https://azure.microsoft.com/support/devops/).*
+>[!NOTE]
+>If your organization is in the Brazil South region, your hosted agents may occasionally be located in the United States geography due to capacity issues, and you must also include the IP ranges for regions in the United States geography for your hosted agents.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
