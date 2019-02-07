@@ -10,18 +10,18 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/01/2018
+ms.date: 02/07/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
-# Which tools and clients connect to Azure DevOps Services and TFS?
+# Which tools and clients connect to Azure DevOps Services and Team Foundation Server (TFS)?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Learn about the tools and clients that can connect to Azure DevOps Services and TFS.
 
-Our platform of software development tools began more than 20 years ago. We released Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports many plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps Services and Team Foundation Server (TFS) to support source control, work tracking, build, and test operations.  
+Our platform of software development tools began more than 20 years ago. We released Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports many plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps Services and TFS to support source control, work tracking, build, and test operations.  
 
 The available tools that communicate with Azure DevOps Services and TFS are included as follows:
 
@@ -46,15 +46,15 @@ Be clear about what they pay for and what is free
 
 Developers have access to many tools through these versions of Visual Studio and plug-ins. To download any version of Visual Studio, go to the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio offerings](https://visualstudio.microsoft.com/vs/compare/).
 
-- **Visual Studio Community**: A fully featured and extensible IDE for creating modern applications for Android, iOS, and Windows, as well as web applications and cloud services. (Replaces Visual Studio Express.)
+- **Visual Studio Community**: A fully featured and extensible IDE for creating modern applications for Android, iOS, and Windows, including web applications and cloud services. (Replaces Visual Studio Express.)
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams.
-- **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale. It supports designing, building, and managing complex enterprise applications.
-- **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process.
+- **Visual Studio Enterprise**: Integrated, end-to-end development tools, and solutions for teams of any size and those with a need to scale. It supports designing, building, and managing complex enterprise applications.
+- **Visual Studio Test Professional**: Provides access to Microsoft Test and development tools to support quality and collaboration throughout the development process.
 - **Visual Studio Team Explorer**: Free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
-- **[Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to Azure DevOps Services or TFS.  
-- **[Android Studio with the Azure DevOps Services Plugin for Android Studio](/../java/download-android-studio-plug-in.md)**: Free plug-in to support Android developers and connect to Git repositories on Azure DevOps Services or TFS.
-- **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/../java/download-intellij-plug-in.md)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps Services or TFS.
-- **[Visual Studio Code](/../java/vscode-extension.md)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps Services or TFS.  
+- **[Eclipse/Team Explorer Everywhere]**(../java/download-eclipse-plug-in.md): Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to Azure DevOps Services or TFS.  
+- **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](../java/download-android-studio-plug-in.md)**: Free plug-in to support Android developers and connect to Git repositories on Azure DevOps Services or TFS.
+- **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps Services or TFS.
+- **[Visual Studio Code](../java/vscode-extension.md)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps Services or TFS.  
 
 **Team Explorer plug-in**
 
@@ -67,7 +67,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 
 ## Office integration tools
 
-When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in is installed to integrate work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
+When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in integrates work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
@@ -82,7 +82,7 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items:
 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager is installed with Visual Studio Test Professional and Visual Studio Enterprise. 
-- [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in Azure DevOps Services or TFS. This extension is free to stakeholders. 
+- [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps Services or TFS. This extension is free to stakeholders. 
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md): Your stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [stakeholders to have permissions](../project/feedback/give-permissions-feedback.md).  
  
 >[!IMPORTANT]
@@ -92,18 +92,18 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 ### Web portal
 
-The collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are usually deployed every three weeks for Azure DevOps Services, and quarterly for TFS. For release notes, see [Azure DevOps Services Features Timeline](/../release-notes/index).
+The collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for TFS. For release notes, see [Azure DevOps Services Features Timeline](../extend/support/release-notes.md).
  
 You can use these browsers to access the web portal (Azure DevOps Services and TFS):
 
-Version        | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
+Version        | Microsoft Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
 ---------------|-------------|-------------------|----------------|-------------|-------------
 Azure DevOps Services  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
 TFS 15         | most recent | 11 and later      | 9.1 and later  | most recent | most recent
 TFS 2015       | most recent | 9 and later       | 5 and later    | most recent | most recent
 TFS 2013       |             | 9 and later       | 5 and later    | most recent | most recent
 
-Edge, Firefox, and Chrome automatically update themselves, so Azure DevOps Services and TFS support the most recent version.
+Microsoft Edge, Firefox, and Chrome automatically update themselves, so Azure DevOps Services and TFS support the most recent version.
 
 To learn more, see [Web portal navigation](../project/navigation/index.md).
 
@@ -124,13 +124,13 @@ To monitor your applications, you can use Azure Application Insights for web app
 
 #### Monitor web applications with Application Insights
 
-Application Insights is an extensible application performance management (APM) service for web developers. Use it to monitor your live web application. It automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms&mdash;including .NET, Node.js, and Java EE&mdash;hosted on-premises or in the cloud.  
+Application Insights is an extensible application performance management (APM) service for web developers. Use it to monitor your live web application. Application Insights automatically detect performance anomalies. It includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. Application Insights is designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms&mdash;including .NET, Node.js, and Java EE&mdash;hosted on-premises or in the cloud.  
 
 With Application Insights, you can do the following:
 
 - Gain actionable insights through application performance management and instant analytics
 - Detect and diagnose exceptions and application performance issues
-- Monitor Azure websites, including those hosted in containers, plus websites on-premises and with other cloud providers
+- Monitor Azure websites, including websites hosted in containers, plus websites on-premises and with other cloud providers
 - Seamlessly integrate with your DevOps pipeline by using Azure DevOps Services, GitHub, and our webhooks
 - Get started from within Visual Studio, or monitor existing apps without redeploying
 
@@ -138,7 +138,7 @@ To learn more, see [Microsoft Azure - Application Insights](https://azure.micros
 
 #### Monitor mobile applications with HockeyApp
 
-With HockeyApp, you can develop, distribute, and beta test your mobile apps. HockeyApp supports the following:
+With HockeyApp, you can develop, distribute, and beta test your mobile apps. HockeyApp supports the following apps and functionality:
 
 - Android, Cordova, iOS, macOS, Unity, Windows, and Xamarin apps
 - Live, reliable crash reports
@@ -150,7 +150,7 @@ To learn more, see [Microsoft Azure - HockeyApp](/azure/application-insights/app
 
 ## Command-line tools
 
-You can perform many code development and administrative tasks by using command-line tools, such as the following:
+You can perform many code development and administrative tasks by using command-line tools, such as the following tools:
 
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
@@ -166,7 +166,7 @@ Visual Studio, Azure DevOps Services, and TFS provide a wealth of features and f
 
 Extensions are simple add-ons that you can use to customize and extend your DevOps and work tracking experiences. They're written with standard technologies&mdash;HTML, JavaScript, and CSS. You can develop your own extensions by using your preferred dev tools. 
 
-You build extensions by using our RESTful API library. You publish them to the Azure DevOps Marketplace, where you can privately maintain them or share them with millions of developers who use  Visual Studio, Azure DevOps Services, and TFS.
+You build extensions by using our RESTful API library. Publish your extensions to the Azure DevOps Marketplace, where you can privately maintain or share them with millions of developers who use Visual Studio, Azure DevOps Services, and TFS.
 
 To learn more, visit the [Azure DevOps Marketplace](https://marketplace.visualstudio.com) and see [Overview of extensions](../extend/index.md).
 
