@@ -115,7 +115,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
  
 ### WIT extensibility
 
-To work with WITs programmatically, see [Work Item Types REST API](/rest/api/vsts/processdefinitions/work%20item%20types). 
+To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azure/devops/processdefinitions/work%20item%20types). 
 
 
 ## Related articles  

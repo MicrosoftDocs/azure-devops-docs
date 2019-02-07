@@ -2,7 +2,7 @@
 title: Update status, assign work, and link work items using work item form controls 
 titleSuffix: Azure Boards 
 description: Use work item form controls to update status, link work items, and more in Azure Boards, Azure DevOps, & Team Foundation Server  
-ms.custom: seodec18  
+ms.custom: work-items, seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  

@@ -783,7 +783,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
 	</tr>
 	<tr>
 		<td id="bypass-rules-permission">Bypass rules on work item updates</td>
-		<td><p>Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).</p>
+		<td><p>Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).</p>
 		<p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
 	</tr>
 	<tr>
@@ -853,7 +853,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 	<tr>
 		<td id="manage-team-project-property-permission">Manage project properties</td>
 		<td>
-			Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/vsts/core/projects/set%20project%20properties). 
+			Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties). 
 		</td>
 	</tr>
 	<tr>
@@ -879,7 +879,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 	</tr>
 	<tr>
 		<td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p>
+		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update).</p>
 		<p>Users granted Stakeholder access for a public project are granted this permission by default.</p></td>
 	</tr>
 	<tr>

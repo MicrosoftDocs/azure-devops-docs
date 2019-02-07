@@ -1,6 +1,6 @@
 ---
 title: Upload or download the Microsoft Project Mapping file
-titleSuffix: Azure DevOps Server & TFS
+titleSuffix: TFS
 description: Upload or download the Microsoft Project mapping file using the TFSFieldMapping command
 ms.prod: devops
 ms.technology: devops-agile
@@ -8,18 +8,20 @@ ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '< azure-devops'
+monikerRange: '<= tfs-2018'
 ms.date: 01/28/2019
 ---
 
 
 # Upload or download the Microsoft Project Mapping file
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]  
   
 Use **TFSFieldMapping** to upload and download the Microsoft Project mapping file. This file controls how Microsoft Project publishes tasks to a project that connects to an on-premises Team Foundation Server (TFS). For example, you can modify the file to support fields you added to work item types or modify the way in which existing fields are published and refreshed.  
-  
- You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
+
+[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+
+You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   
 The **TFSFieldMapping** command-line tool works for only on-premises deployments. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
  
@@ -58,7 +60,7 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
   
 ## To change how work item fields are mapped to Project  
   
-1.  Open a Command Prompt window where you have installed Project and Azure DevOps Server or TFS and change the directory to point to the tools. For example:  
+1.  Open a Command Prompt window where you have installed TFS and change the directory to point to the tools. For example:  
   
     ```  
     cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0 

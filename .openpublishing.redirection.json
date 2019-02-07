@@ -4897,7 +4897,7 @@
     },
     {
       "source_path": "docs/work/reference/define-modify-work-item-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/define-modify-work-item-fields",
+      "redirect_url": "/azure/devops/boards/work-items/work-item-fields",
       "redirect_document_id": false
     },
     {
@@ -10047,7 +10047,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/define-modify-work-item-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/define-modify-work-item-fields",
+      "redirect_url": "/azure/devops/boards/work-items/work-item-fields",
       "redirect_document_id": false
     },
     {

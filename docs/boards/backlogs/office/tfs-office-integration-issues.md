@@ -25,7 +25,7 @@ If you don't see the Team ribbon in Excel, as shown in the image below, you may 
 ## Enable the Team Foundation Add-in 
 
 1.	From the Excel **File** menu, choose **Options**.  
-2.	Choose Add-ins and from the **Manage** pick list, choose **COM Add-ins**, and then choose **Go**.
+2.	Choose Add-ins and from the **Manage** picklist, choose **COM Add-ins**, and then choose **Go**.
 
 	<img src="_img/tfs-office-issues-excel-open-com-add-ins.png" alt="Excel Options, Add-ins, Choose Com Add-ins" style="border: 1px solid #C3C3C3;" /> 
 

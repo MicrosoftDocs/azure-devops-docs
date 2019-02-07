@@ -193,20 +193,20 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	::: moniker range="azure-devops"  
 
 	> [!NOTE]    
-	> Customizing the pick list of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  
+	> Customizing the picklist of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  
 
 	::: moniker-end
 
 	::: moniker range="azure-devops-2019"  
 	> [!NOTE]    
-	> If you the On-premises XML process model to customize work tracking, you can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  If you use the Inheritance process model, customization of the pick list isn't supported at this time. 
+	> If you the On-premises XML process model to customize work tracking, you can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its picklist](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  If you use the Inheritance process model, customization of the picklist isn't supported at this time. 
 
 	::: moniker-end
 
 	::: moniker range="<= tfs-2018"  
 
 	> [!NOTE]    
-	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
+	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its picklist](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
 
 	::: moniker-end
 
