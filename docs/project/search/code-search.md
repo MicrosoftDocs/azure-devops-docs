@@ -21,7 +21,7 @@ and easily drill down or widen your search
 
 ## Prepare
 
-Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
+Go to [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
 to install the extension as an administrator.
 Non-administrative users can also go here to request the extension be added. 
 For more details, see [Install an extension](../../marketplace/install-extension.md#install-extension) in the Marketplace documentation.

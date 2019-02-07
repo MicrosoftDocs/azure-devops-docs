@@ -12,7 +12,7 @@ ms.date: 10/10/2017
 
 # Extension Report
 
-Now that your extension is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), you can use the **Reports** feature to now track and analyze how the extension is performing and take required actions. 
+Now that your extension is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), you can use the **Reports** feature to now track and analyze how the extension is performing and take required actions. 
 To view the extension's report, visit your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension.
 
 ## Uninstall
