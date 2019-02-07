@@ -193,7 +193,7 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 </tbody>
 </table>  
  
-<sup>1</sup> To change the menu selection or pick list, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
+<sup>1</sup> To change the menu selection or picklist, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
 
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 

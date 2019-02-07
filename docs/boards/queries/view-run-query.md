@@ -72,6 +72,7 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 
 - You can also use the macros &mdash; **@Me**, **@Follows**, **MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#query-macros-or-variables). 
 
+<a id="favorite" /> 
 ### How do I quickly navigate to queries I view frequently?  
 - Favorite those queries and other artifacts that you view frequently. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a query. 
 - Favorited queries (![ ](../../_img/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
@@ -82,6 +83,7 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 
 	![queries selector](_img/example-queries/favorites-selector.png)  
 
+ 
 ### How do I quickly navigate to queries within the same query folder?  
 When viewing a query, you can use the queries breadcrumb selector (![ ](../../_img/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![ ](../../_img/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
 
@@ -97,6 +99,7 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 
 ::: moniker-end
 
+<a id="view-rename-delete" />
 ## View, rename, or delete a query
 
 ::: moniker range=">= azure-devops-2019"
@@ -141,6 +144,7 @@ For details on adding new queries, see [Create managed queries with the query ed
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Filter the list of queries
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
@@ -148,6 +152,7 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 <img src="_img/queries-all-filter.png" alt="List of all queries in the project filtered by WIT IQ keyword criteria" style="border: 1px solid #cccccc;"/>
 ::: moniker-end
 
+<a id="email-query" />
 ## Email query items or share a query URL 
 
 From the **Query Editor** or **Results** view, you can email a formatted list of query items or copy the query URL. 

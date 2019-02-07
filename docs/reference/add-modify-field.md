@@ -1,7 +1,7 @@
 ---
 title: Add or modify a work tracking field
 titleSuffix: Azure DevOps & TFS
-description: Modify or add a work item field to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server  
+description: Modify or add a work item field to support queries, reports, and workflow in Azure DevOps 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
@@ -45,9 +45,11 @@ Work item fields are maintained for a project collection. You add fields when yo
 
 -   **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](xml/global-workflow-xml-element-reference.md).
 
+::: moniker range="< tfs-2017"
 -   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](./tfs-ps-sync/project-server-fields-added-to-tfs.md).
+::: moniker-end 
 
-All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises TFS and reporting. 
+All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises server and reporting. 
 
 To add or customize a field for a collection, modify the XML content for the  WIT definition. Define each field through a **FIELD** element within the **FIELDS** section of the WIT definition. For information about the structure and location of these files, see [All FIELD XML elements reference](xml/all-field-xml-elements-reference.md).
 
@@ -261,7 +263,7 @@ Using the [object model for tracking work items](/previous-versions/visualstudio
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-Using [REST APIs for tracking work items](/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using [REST APIs for tracking work items](/rest/api/azure/devops/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
 
@@ -287,12 +289,13 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 
 The following table summarizes the attributes you can change using [witadmin changefield](witadmin/manage-work-item-fields.md).
 
-| Attribute | Description |
-|---|---|
-| Data type | Specifies the type of data that the field accepts. In general, you cannot change the field data type once it is defined. You can switch the field data type only for fields of type **HTML** or **PlainText**. |
-| Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a project collection. The friendly name may differ from the form label that appears on the work item form. |
-| Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](xml/reportable-fields-reference.md). For more information about reportable attributes, see [Field data type and reportable attributes](xml/define-modify-work-item-fields.md). |
-| Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
+>  [!div class="mx-tdCol2BreakAll"]  
+> | Attribute | Description |
+> |---|---|
+> | Data type | Specifies the type of data that the field accepts. In general, you cannot change the field data type once it is defined. You can switch the field data type only for fields of type **HTML** or **PlainText**. |
+> | Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a project collection. The friendly name may differ from the form label that appears on the work item form. |
+> | Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](xml/reportable-fields-reference.md). For more information about reportable attributes, see [Work item fields and attributes, ](../boards/work-items/work-item-fields.md#reportable-attributes). |
+> | Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
 
 <a id="index-field">  </a>
 ## Change the index attribute of a field
@@ -311,7 +314,7 @@ Other related topics or resources:
 
 - [Work tracking object limits](../organizations/settings/work/object-limits.md) 
 - [Customize the work tracking experience](customize-work.md)  
-- [Field data type and field attributes](xml/define-modify-work-item-fields.md)    
+- [About work item fields and attributes](../boards/work-items/work-item-fields.md)    
 - [WebLayout and Control elements](xml/weblayout-xml-elements.md)
 - [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
 - [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).

@@ -254,6 +254,6 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 |`value`|value="*valueToCopy*"|Optional. Specifies the value to be copied into the field when `value` is specified for the `from` attribute.|  
   
 ## Related articles 
--  [Define and modify work item fields](define-modify-work-item-fields.md)   
+-  [About work item fields and attributes](../../boards/work-items/work-item-fields.md)   
 -  [Change the workflow](change-workflow-wit.md)
 -  [Customize your work tracking experience](../customize-work.md)  

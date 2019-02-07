@@ -2,7 +2,7 @@
 title: Email or print user stories, issues, bugs, or other work items
 titleSuffix: Azure Boards
 description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
-ms.custom: seodec18
+ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560

@@ -2,7 +2,7 @@
 title: Keyboard shortcuts for work item form and Work Items hub 
 titleSuffix: Azure Boards
 description: Use keyboard shortcuts with work item forms and the Work Items hub
-ms.custom: seodec18
+ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

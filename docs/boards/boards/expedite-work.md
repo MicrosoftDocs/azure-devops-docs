@@ -200,6 +200,6 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 *	[Customize cards](../../boards/boards/customize-cards.md)   
 
 ###REST API resources
-To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
+To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/azure/devops/work/boards).
 
 
