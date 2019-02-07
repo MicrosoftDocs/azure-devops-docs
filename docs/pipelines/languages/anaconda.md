@@ -94,7 +94,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 - bash: |
     source activate myEnvironment
     conda install --yes --quiet --name myEnvironment scipy
-  displayName: 'Install conda libraries'
+  displayName: Install Anaconda packages
 ```
 
 # [Hosted macOS](#tab/macos)
@@ -103,7 +103,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 - bash: |
     source activate myEnvironment
     conda install --yes --quiet --name myEnvironment scipy
-  displayName: 'Install conda libraries'
+  displayName: Install Anaconda packages
 ```
 
 # [Hosted VS2017](#tab/vs2017)
@@ -112,7 +112,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 - script: |
     call activate myEnvironment
     conda install --yes --quiet --name myEnvironment scipy
-  displayName: 'Install conda libraries'
+  displayName: Install Anaconda packages
 ```
 
 ---
@@ -129,13 +129,13 @@ The following YAML installs the `scipy` package in the conda environment named `
 ```yaml
 - bash: |
     source activate myEnvironment
-    pytest -m unit --junitxml=junit/unit-test.xml
-  displayName: 'Unit tests'
+    pytest --junitxml=junit/unit-test.xml
+  displayName: pytest
 
-- bash: |
-    source activate myEnvironment
-    pytest -m integration --junitxml=junit/integration-test.xml
-  displayName: 'Integration tests'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: 'junit/*.xml'
+  condition: succeededOrFailed()
 ```
 
 # [Hosted macOS](#tab/macos)
@@ -143,13 +143,13 @@ The following YAML installs the `scipy` package in the conda environment named `
 ```yaml
 - bash: |
     source activate myEnvironment
-    pytest -m unit --junitxml=junit/unit-test.xml
-  displayName: 'Unit tests'
+    pytest --junitxml=junit/unit-test.xml
+  displayName: pytest
 
-- bash: |
-    source activate myEnvironment
-    pytest -m integration --junitxml=junit/integration-test.xml
-  displayName: 'Integration tests'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: 'junit/*.xml'
+  condition: succeededOrFailed()
 ```
 
 # [Hosted VS2017](#tab/vs2017)
@@ -157,13 +157,13 @@ The following YAML installs the `scipy` package in the conda environment named `
 ```yaml
 - script: |
     call activate myEnvironment
-    pytest -m unit --junitxml=junit/unit-test.xml
-  displayName: 'Unit tests'
+    pytest --junitxml=junit/unit-test.xml
+  displayName: pytest
 
-- script: |
-    call activate myEnvironment
-    pytest -m integration --junitxml=junit/integration-test.xml
-  displayName: 'Integration tests'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: 'junit/*.xml'
+  condition: succeededOrFailed()
 ```
 
 ---
