@@ -86,7 +86,7 @@ If you're purchasing user access to Visual Studio Professional for a specific or
 
 	This change takes effect on the first day of the next month. For the rest of the current calendar month, you aren't billed for any Visual Studio Online Professional users.
 
-1. On the first day of the next calendar month, [go to the Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), Azure DevOps tab, and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
+1. On the first day of the next calendar month, [go to Visual Studio Marketplace Subscriptions > Visual Studio Professional - monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
 
    > [!NOTE]
    > If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/billing-faq.md).

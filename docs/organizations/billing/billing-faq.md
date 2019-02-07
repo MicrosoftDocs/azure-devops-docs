@@ -30,7 +30,7 @@ You need to set up billing when you need more than the *free tier* of resources 
 * One self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
 
-You also need to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), on the Azure DevOps tab.
+You also need to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), on the Azure DevOps tab.
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
@@ -123,7 +123,7 @@ A: Starting September 28th, 2018 you can no longer create Team Projects or view 
 ### Q: Why is my organization already linked to an Azure subscription?
 
 A: This happens if someone already set up billing for your organization, either through the Azure portal or while purchasing something for this organization via the
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts), Azure DevOps tab. Each organization can use only one Azure subscription for billing. Charges cannot be split across multiple Azure subscriptions.
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Each organization can use only one Azure subscription for billing. Charges cannot be split across multiple Azure subscriptions.
 
 ### Q: Can I use the same Azure subscription for billing across multiple organizations?
 
@@ -166,7 +166,7 @@ A: You can find the current owner in your organization settings.
 
    ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
 
-::: moniker-end      
+::: moniker-end  ï¿½  ï¿½
 
 ::: moniker range="<= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  

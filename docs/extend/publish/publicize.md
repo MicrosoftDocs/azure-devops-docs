@@ -14,7 +14,7 @@ ms.date: 08/29/2016
 
 # Make your extension or integration public
 
-The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is a single place users can go to find and purchase extensions, tools, products, and services that extend Visual Studio, Azure DevOps Services, Visual Studio Code, or Team Foundation Server. 
+The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is a single place users can go to find and purchase extensions, tools, products, and services that extend Visual Studio, Azure DevOps Services, Visual Studio Code, or Team Foundation Server. 
 
 This page covers the required steps to make your integration or extension listing publicly available in the Marketplace. 
 
@@ -37,7 +37,7 @@ To have a public listing on the Marketplace, your integration or extension must 
 2. You (or your company) owns, develops, and is licensed to distribute and advertise the integration or extension.
 3. The extension or integration is actively maintained.
 
-Microsoft might also request a demo and to review the content planned for your Marketplace entry. For more details, refer to the [Visual Studio Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreement), which you agreed to when creating your publisher.
+Microsoft might also request a demo and to review the content planned for your Marketplace entry. For more details, refer to the [Visual Studio Marketplace Publisher Agreement](https://cdn.vsassets.io/v/M146_20190123.39/_content/Visual-Studio-Marketplace-Publisher-Agreement.pdf), which you agreed to when creating your publisher.
 
 ## Process
 
