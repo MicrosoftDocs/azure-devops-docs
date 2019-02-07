@@ -53,7 +53,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 <td>
 <h3>WITD</h3>
 - [DESCRIPTION](all-witd-xml-elements-reference.md)  
-- [FIELDS](define-modify-work-item-fields.md) (Definition)  
+- [FIELDS](field-definition-element-reference.md) (Definition)  
 - [FORM](all-form-xml-elements-reference.md)  
 - [GLOBALISTS](define-global-lists.md)  
 - [WITD](all-witd-xml-elements-reference.md)  

@@ -93,7 +93,7 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
    &lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;  
 &lt;/GLOBALLIST&gt;  
 </code>
-<p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WIT. Within the <strong>FIELDS</strong> element, you [define all the fields](define-modify-work-item-fields.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
+<p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WIT. Within the <strong>FIELDS</strong> element, you [define all the fields](field-definition-element-reference.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
 <pre><code>
 &lt;FIELDS&gt;  
    &lt;FIELD&gt; . . . &lt;/FIELD&gt;  

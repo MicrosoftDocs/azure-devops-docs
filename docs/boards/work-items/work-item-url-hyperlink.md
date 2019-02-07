@@ -2,7 +2,7 @@
 title: Define the hyperlink for a work item
 titleSuffix: Azure Boards
 description: Construct a URL for a work item for Azure Boards, Azure DevOps & TFS
-ms.custom: seodec18
+ms.custom: work-items, seodec18
 ms.prod: devops
 ms.technology: devops-agile   
 ms.assetid:  

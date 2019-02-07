@@ -16,10 +16,44 @@ ms.date: 01/23/2019
 # Query by titles, IDs, and rich-text fields
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this article. 
+When you want to find work items based on a keyword or phrase, you can do so by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. 
+
+## Supported operators and macros 
+Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
+
+<table valign="top">
+<thead>
+<tr>
+<th width="22%"><p>Data type</p></th>
+<th width="78%"><p>Supported operators and macros</p></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+	<td><p> <strong>Rich-text (HTML)</strong> </p></td>
+	<td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
+</tr>
+<tr>
+	<td><strong>Multi-line text strings (PlainText)</strong> </td>
+	<td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
+</tr>
+<tr>
+	<td><strong>Single text (String)</strong> </td>
+	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+	<p>**Macros**: **[Any]**, valid with the **Work Item Type** field<br/>
+	**@Project**<sup>2</sup>, valid with the **Team Project** field </p>
+	</td>
+</tr>
+</tbody>
+</table>
+
+####Notes:
+1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
+2. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+
 
 <a id="keyword"/>
-## List items based on keywords or phrases
+## Keyword or phrase query
 
 Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
@@ -27,10 +61,9 @@ Use **Contains** or **Contains Words** to list items that partially or exactly m
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, <b>*</b>. These operators use the full-text search index.
 
- 
 
 <a id="undefined-value"/>
-## List items based on undefined field values
+## Undefined field value queries
 
 You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type Task whose Activity field is blank.  
 
@@ -39,10 +72,8 @@ You can find work items that have an undefined field value by using the equals o
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
 
-
-
-<a id="undefined-value"/>
-## List items based on empty or not empty HTML fields
+<a id="empty"/>
+## Empty or not empty HTML field queries
 
 You can find work items where no **Description** has been entered. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
 
@@ -52,7 +83,7 @@ For example, the following query filters will list all work items where some ent
 
 
 <a id="category"/>
-## List items based on categories
+## Category based queries
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
