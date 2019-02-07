@@ -1,6 +1,7 @@
 ---
 title: Scrum process template artifacts
 titleSuffix: Azure Boards
+ms.custom: work-items
 description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops

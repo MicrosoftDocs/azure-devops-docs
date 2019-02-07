@@ -2,7 +2,7 @@
 title: Track updates by following a user story, bug, or other work item or pull request
 titleSuffix: Azure Boards & Azure Repos
 description: Track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos 
-ms.custom: seodec18
+ms.custom: work-items, seodec18
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
@@ -23,7 +23,7 @@ ms.date: 11/19/2018
 
 To get notified of changes made to a work item or a pull request, you can elect to follow them. 
 
-this article shows you how to:
+This article shows you how to:
 
 >[!div class="checklist"]  
 > * Follow a work item

@@ -72,7 +72,7 @@ A Kanban board is an interactive, electronic signboard that supports visualizati
 
 ## Pick list
 
-A pick list specifies an enumerated set of values that appear within a drop-down menu in a work item form. Values also appear in the **Value** column within the query editor. The method you use to customize a pick list varies. It depends on the field and the process model. To learn more, see [Customize work](../../reference/customize-work.md). 
+A picklist specifies an enumerated set of values that appear within a drop-down menu in a work item form. Values also appear in the **Value** column within the query editor. The method you use to customize a picklist varies. It depends on the field and the process model. To learn more, see [Customize work](../../reference/customize-work.md). 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/plans.md)] 
 

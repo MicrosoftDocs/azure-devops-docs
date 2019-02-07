@@ -27,11 +27,11 @@ The only required field for all WITs is **Title**. When the work item is saved, 
 	<td><p>Use the default first. Update it when you change state. Each State is associated with a default reason.</p></td></tr>
 <tr>
 	<td><p>[Area](/azure/devops/organizations/settings/set-area-paths)</p></td>
-	<td><p>Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.</p><p>To change the dropdown list of areas, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).</p></td>
+	<td><p>Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.</p><p>To change the dropdown list of areas, see [Add and modify area and iteration paths](/azure/devops/organizations/settings/set-area-paths).</p></td>
 </tr>
 <tr>
 	<td><p>[Iteration](/azure/devops/organizations/settings/set-area-paths)</p></td>
-	<td><p>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.</p><p>To change the drop-down list of iterations, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).</p></td>
+	<td><p>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.</p><p>To change the drop-down list of iterations, see [Add and modify area and iteration paths](/azure/devops/organizations/settings/set-area-paths).</p></td>
 </tr>
 <tr>
 	<td><p>![History tab icon](/azure/devops/boards/backlogs/_img/icon-history-tab-wi.png)[(History)](/azure/devops/boards/queries/history-and-auditing)</p></td>
@@ -40,7 +40,7 @@ The only required field for all WITs is **Title**. When the work item is saved, 
 	<td><p>![Links tab icon](/azure/devops/boards/backlogs/_img/icon-links-tab-wi.png) [(Links)](/azure/devops/boards/queries/link-work-items-support-traceability)</p></td>
 	<td><p>Add all types of links, such as hyperlinks, changesets, source files, and so on.</p><p>This tab also lists all links defined for the work item.</p></td></tr>
 <tr>
-	<td><p>![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png)[(Attachments)](/azure/devops/boards/queries/linking-attachments) </p></td>
+	<td><p>![Attachment tab icon](/azure/devops/boards/backlogs/_img/icon-attachments-tab-wi.png)[(Attachments)](/azure/devops/boards/queries/linking-attachments) </p></td>
 	<td><p>Share more detailed information by adding files to the work item, such as email threads, documents, images, log files, or other file types.</p></td></tr>
 </tbody>
 </table>

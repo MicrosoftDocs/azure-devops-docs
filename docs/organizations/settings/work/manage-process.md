@@ -177,7 +177,7 @@ Project Collection Administrators can [add projects](../../projects/create-proje
 <a id="process-rest-api">  </a>
 ### Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/azure/devops/processes/processes).
 
 
 

@@ -1,22 +1,24 @@
 ---
 title: Project field mappings
-titleSuffix: Azure DevOps Server & TFS
-description: Understand how data is mapped between Project and Azure DevOps Server or Team Foundation Server (TFS)
+titleSuffix: TFS
+description: Understand how data is mapped between Project and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 0da29778-11c2-42e1-8876-e51abbc799f6
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '< azure-devops'
+monikerRange: '<= tfs-2018'
 ms.date: 01/28/2019
 ---
 
 # Field mappings in Microsoft Project
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]  
 
-You can customize how data is mapped between Microsoft Project and Azure DevOps Server and Team Foundation Server (TFS) by modifying the Microsoft Project Field Mapping File. The mapping file associates the reference name of a work item tracking field  with a Project field. Before you change the Microsoft Project field mappings, you should review the information provided later in this topic to understand how TFS copies data from Project to the work item tracking database.  
-  
+You can customize how data is mapped between Microsoft Project and Team Foundation Server (TFS) by modifying the Microsoft Project Field Mapping File. The mapping file associates the reference name of a work item tracking field  with a Project field. Before you change the Microsoft Project field mappings, you should review the information provided later in this topic to understand how TFS copies data from Project to the work item tracking database.  
+
+[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+
 > [!NOTE]  
 >  The supported set of Project field names may be different for different versions of Project.  
 
@@ -29,7 +31,7 @@ Therefore you can configure calculated fields so that they are publish only, mea
 You can also prevent team members from changing calculated field values in Team Explorer by using the **READONLY** attribute in the work item form definition. For more information about the **READONLY** attribute, see [Apply a field rule](apply-rule-work-item-field.md).  
   
 > [!NOTE]
->  The  Agile and CMMI process templates already configure the start and finish dates as publish only mappings, and read-only in Team Explorer.  
+>The  Agile and CMMI process templates already configure the start and finish dates as publish only mappings, and read-only in Team Explorer.  
   
 <a name="MappingFieldTypes"></a> 
 ##  Mapping field types  

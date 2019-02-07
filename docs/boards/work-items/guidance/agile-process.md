@@ -2,6 +2,7 @@
 title: Agile process template artifacts
 titleSuffix: Azure Boards  
 description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8

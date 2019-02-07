@@ -8,19 +8,26 @@ ms.assetid: 0d7ae7ad-a329-4356-a0b2-57d31a96f16f
 ms.author: kaelliauthor: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
-monikerRange: '< azure-devops'
+monikerRange: '<= tfs-2018'
 ms.date: 01/28/2019
 ---
 
 # Add or change how Project fields map to TFS fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]  
 
-You can customize how data is published and refreshed by modifying the Microsoft Project mapping file. When publishing or refreshing tasks in Project, the mapping file determines how Project task fields map to  Azure DevOps Server or Team Foundation Server (TFS) work item fields. Also, the mapping file controls the publishing behavior.  
+You can customize how data is published and refreshed by modifying the Microsoft Project mapping file. When publishing or refreshing tasks in Project, the mapping file determines how Project task fields map to Team Foundation Server (TFS) work item fields. Also, the mapping file controls the publishing behavior.  
   
+[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+
+::: moniker range="<= tfs-2015"
+
 > [!IMPORTANT]  
->  If you are using Project Professional to synchronize tasks with work item data, then you must [Customize the field mapping between work items and Project Server](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md). You can't make these customizations for Azure DevOps Services (cloud service). 
-  
+>  If you are using Project Professional to synchronize tasks with work item data, then you must [Customize the field mapping between work items and Project Server](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md). 
+
+::: moniker-end 
+
+
  You can customize the behavior when tasks are published or refreshed. You can change which fields in Team Foundation are mapped to Microsoft Project fields. You can control if fields are only published, or both published and refreshed.  
   
 -   [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)  
