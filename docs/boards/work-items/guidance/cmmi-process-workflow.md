@@ -1,6 +1,7 @@
 ---
 title: CMMI process work item types & workflow
 titleSuffix: Azure Boards
+ms.custom: work-items
 description: How to guide for using the CMMI process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops

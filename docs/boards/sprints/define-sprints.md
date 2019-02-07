@@ -128,7 +128,7 @@ That's it! You can now start [planning your first sprint](assign-work-sprint.md)
 Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child iterations, then you'll need to read further. You define these through the settings context for the project.  
 
 > [!NOTE]
-> **Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the pick list of values available for the [Iteration Path](../../organizations/settings/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
+> **Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the picklist of values available for the [Iteration Path](../../organizations/settings/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
 
 
 <a id="schedule">   </a>

@@ -183,7 +183,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 9. Save your changes.  
   
-10. To import the new work item type to a single project, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md). To add the work item type to your process template, see [Add type definitions for work items](define-modify-work-item-fields.md).  
+10. To import the new work item type to a single project, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md). To add the work item type to your process template, see [Add type definitions for work items](../process-templates/add-wit-definitions-process-template.md).  
   
 <a name="Verify"></a> 
 ##  Verify the Web page or HTML content appears in the work item form  

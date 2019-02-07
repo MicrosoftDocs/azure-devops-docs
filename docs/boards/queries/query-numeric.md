@@ -22,7 +22,14 @@ How do I determine how much work each developer has completed on my team? Is the
 The most common numeric fields track effort for items in the Requirements category or estimated, remaining, and completed work for items in the Task category. With queries you can list the work items of interest, and then define a chart that shows either a count of work items or a sum of a numeric field. 
 
 
-### Tips for developing chart-based-queries: 
+## Supported operators and macros 
+Query clauses that specify a numeric field can use the operators listed below.
+- = , <> , > , < , >= , <=  
+- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field] 
+- In, Not In 
+- Was Ever
+
+## Tips for developing chart-based-queries: 
 
 - You can only add charts for flat-list queries  
 - Chart options reference either query filters or fields displayed through column options
@@ -85,7 +92,7 @@ Unestimated user stories
 
 
 <a id="counts"/>
-## Queries and charts based on counts 
+## Work item count queries and charts
 
 All queries show a count of items when you run the query. Here we define a flat-list query that filters for bugs in any state.  
 
@@ -121,7 +128,7 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 
 
 <a id="effort"/>
-##Queries and charts based on effort or story points 
+## Effort or story point queries and charts  
 
 You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
 
@@ -149,7 +156,7 @@ Then, add a stacked bar chart that sums the Story Points.
 
 For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
 
-###Show a burnup chart of user stories for an iteration 
+###Burnup chart of user stories for an iteration 
 
 Create a query that filters for User Story as the work item type and in the Active or Closed state. Modify the column options to show Story Points. 
 
@@ -168,7 +175,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 
 
 <a id="work"/>
-##Queries and charts based on remaining and completed work 
+##Remaining and completed work queries and charts  
 
 Based on the process your project references, you can assign the following fields to tasks or bugs. 
 
@@ -219,10 +226,10 @@ The following table describes the activity-based and numeric fields that you can
 </thead>
 <tbody valign="top">
 <tr>
-	<td><p>Activity <sup>1, 2, 3</sup></p></td>
+	<td><p>Activity <sup>1, 2</sup></p></td>
 	<td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
 
-<p>The Activity field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.</p>
+<p>The Activity field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.<sup>3</sup></p>
 <p>Reference name=Microsoft.VSTS.Common.Activity, Data type=String</p>
 </td>
 	<td>Task, Bug<sup>4</sup> (Agile and Scrum)</td>
@@ -242,10 +249,9 @@ The following table describes the activity-based and numeric fields that you can
 <td>Task, Bug<sup>4</sup></td>
 </tr>
 <tr>
-	<td><p>Discipline <sup>1, 2, 3</sup></p></td>
+	<td><p>Discipline <sup>1, 2</sup></p></td>
 	<td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul>
-
-<p>The Discipline field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.</p>
+<p>The Discipline field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.<sup>3</sup></p>
 
 <p>Reference name=Microsoft.VSTS.Common.Discipline, Data type=String</p>
 </td>
@@ -325,7 +331,7 @@ The following table describes the activity-based and numeric fields that you can
 
 **Notes:**
 
-1.  To change the menu selection (on-premises TFS only), see [Add or modify a field, customize a pick list](../../reference/add-modify-field.md).   
+1.  To change the menu selection (on-premises deployments only), see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).   
 2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.</p>
 
 3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
@@ -373,8 +379,6 @@ The default assignments of work item types to each category are listed below for
 However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
 Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../../reference/add-modify-wit.md). 
- 
-
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  

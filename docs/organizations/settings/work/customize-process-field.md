@@ -40,7 +40,7 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
 
 To review the list of fields defined for all processes and the WITs which reference them, choose **Process** and then **Fields**.  
 
-Fields listed correspond to all those defined for the organization. For descriptions and usage of each field, as well as the Reference name for each field, look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/vsts/wit/work%20item%20types%20field/list).
+Fields listed correspond to all those defined for the organization. For descriptions and usage of each field, as well as the Reference name for each field, look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work%20item%20types%20field/list).
 
 > [!div class="mx-imgBorder"]  
 > ![Make a copy of a selected inherited process](_img/process/list-fields.png) 

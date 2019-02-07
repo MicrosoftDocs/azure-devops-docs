@@ -129,5 +129,5 @@ In addition, you can:
 - [Kanban board controls](kanban-board-controls.md)
 
 ### REST API resources
-To programmatically create tasks, see the [REST API, Work Items reference](/rest/api/vsts/wit/work%20items).
+To programmatically create tasks, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work%20items).
 

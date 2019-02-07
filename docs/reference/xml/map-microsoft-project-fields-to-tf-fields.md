@@ -1,22 +1,25 @@
 ---
 title: Map Project fields to TFS fields
-titleSuffix: Azure DevOps Server & TFS
-description: Customize how work item fields map to Project fields for Azure DevOps Server or Team Foundation Server (TFS)
+titleSuffix: TFS
+description: Customize how work item fields map to Project fields for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
 ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '< azure-devops'
+monikerRange: '<= tfs-2018'
 ms.date: 01/28/2019
 ---
 
 # Map Project fields to TFS fields
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]  
 
-You can customize the way in which work item fields that are stored in Azure DevOps Server or Team Foundation are mapped to fields that are defined for Office Project. You can change the way specific fields are published and designate the default link type to use when you create hierarchical or tree links and dependency links.  
+You can customize the way in which work item fields that are stored in Team Foundation are mapped to fields that are defined for Office Project. You can change the way specific fields are published and designate the default link type to use when you create hierarchical or tree links and dependency links.  
   
+
+[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+
 Unlike Office Excel, Office Project uses a limited set of columns, which include predefined columns, such as Task Name, and custom fields. When a user publishes or refreshes work item data in a Project file, the field map determines which fields in the work item database match the columns in Project.  
 
 You can customize the mappings, for example, to support a field that you created or to map fields to predefined columns instead of to custom columns. For complete documentation on the field mapping file for Microsoft Project, see [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md).  

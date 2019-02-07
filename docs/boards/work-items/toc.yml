@@ -99,6 +99,8 @@
         href: guidance/cmmi/guidance-build-product.md
       - name: Track bugs
         href: guidance/cmmi/track-bugs.md
+  - name: Work item fields
+    href: work-item-fields.md
   - name: Agile glossary
     href: agile-glossary.md
   - name: Linking & traceability

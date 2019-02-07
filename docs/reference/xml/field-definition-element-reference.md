@@ -148,4 +148,4 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
 -  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md)   
 -  [Customize your work tracking experience](../customize-work.md)    
 -  [Manage work item fields](../witadmin/manage-work-item-fields.md)   
--  [Define and modify work item fields](define-modify-work-item-fields.md)   
+-  [About work item fields and attributes](../../boards/work-items/work-item-fields.md)   

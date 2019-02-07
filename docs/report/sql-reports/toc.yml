@@ -1,4 +1,4 @@
-- name: SQL Server Reporting (TFS)
+- name: SQL Server Reporting 
   href: index.md
 - name: Overview
   items:
@@ -20,6 +20,8 @@
   items:
   - name: Add reports to a team project
     href: ../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+  - name: Change reporting attributes
+    href: ../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
     items:
     - name: Add a report server
       href: ../admin/add-a-report-server.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
@@ -58,7 +60,9 @@
     href: ../admin/disable-data-warehouse.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: Reporting Services reports (TFS)
+  - name: Reportable fields reference 
+    href: ../../reference/xml/reportable-fields-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Reporting Services reports 
     items:
     - name: Backlog Overview (Scrum)
       href: backlog-overview-scrum.md
@@ -100,7 +104,7 @@
       href: sprint-burndown-scrum.md
     - name: Velocity (Scrum)
       href: velocity.md
-  - name: Data warehouse table reference (TFS)
+  - name: Data warehouse table reference 
     items:
     - name: Data warehouse tables
       href: table-reference-relational-warehouse-database.md
@@ -156,7 +160,5 @@
     href: ../analytics/reporting-roadmap.md
   - name: SharePoint Integration
     href: ../sharepoint-dashboards/index.md
-  - name: Server Administration (TFS)
+  - name: Server Administration 
     href: /tfs/server/index
-  - name: TFS - Reporting & Warehouse forum
-    href: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting
