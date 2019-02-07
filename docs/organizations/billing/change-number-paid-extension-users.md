@@ -26,7 +26,7 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 ## Change number of paid users
 
-1. Sign in to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), select the **Azure DevOps** tab, and then choose the extension you want to update.
+1. Sign in to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), select the **Azure DevOps** tab, and then choose the extension you want to update.
 
    ![Extensions Marketplace](_img/_shared/extensions-marketplace.png)
 

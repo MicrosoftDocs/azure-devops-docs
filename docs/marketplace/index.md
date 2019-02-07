@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Extension management
 
-Extensions for Azure DevOps Services and Team Foundation Server (TFS) can be installed through the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+Extensions for Azure DevOps Services and Team Foundation Server (TFS) can be installed through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 ## 5-minute quickstarts
 

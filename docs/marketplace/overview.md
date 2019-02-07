@@ -30,10 +30,10 @@ In the Visual Studio Marketplace you can do the following:
 
 ## What are extensions?
 
-An extension is an installable unit that contributes new capabilities into Visual Studio, Azure DevOps Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/). 
+An extension is an installable unit that contributes new capabilities into Visual Studio, Azure DevOps Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). 
 
 Extending Azure DevOps Services is the easiest way for users to get the most out of their 
-devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is home to hundreds of extensions
+devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is home to hundreds of extensions
 that can be installed to help with the following:
 
 - Planning and tracking of work items, sprints, scrums, etc.
@@ -43,7 +43,7 @@ that can be installed to help with the following:
 
 Adding extensions to your organization is incredibly easy:
 
-1. Search and find extensions for your organization in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), Azure DevOps tab.
+1. Search and find extensions for your organization in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 2. Install the extension from the Marketplace and start using it in Azure DevOps.
 
 You must have administrative permissions to upload or install extensions.

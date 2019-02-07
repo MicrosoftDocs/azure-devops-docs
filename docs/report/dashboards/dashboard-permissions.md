@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 12/05/2018 
+ms.date: 02/08/2018
 ---
 
 
@@ -48,43 +48,13 @@ To learn more about adding and viewing dashboards, see [Add, rename, and delete 
 - Anyone with access to a project, including [stakeholders](/azure/devops/organizations/security/get-started-stakeholder), can view dashboards.
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](/azure/devops/organizations/settings/add-team-administrator), a project admin, or have dashboard permissions. In general, you need to be a team member for the currently selected team to edit dashboards.
 
+::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
 ## Set default dashboard permissions for a project
 
 By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for members of the Project Administrators group. You can change the default permissions a project from the Project settings. 
 
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-[!INCLUDE [temp](../../_shared/new-navigation-7.md)] 
-
-# [New navigation](#tab/new-nav)
-
-0. Choose **Project Settings** and then **Dashboards**.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](_img/set-permissions/project-setting-permissions.png)
-
-0. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
-
-# [Previous navigation](#tab/previous-nav)
-
-0. From a user context, open **Project settings** by choosing the ![ ](../../_img/icons/gear_icon.png) gear icon. 
-
-0. Then choose **Dashboards**.  
- 
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](_img/set-permissions/project-setting-permissions-prev-nav.png)
-
-0. Check or uncheck those permissions you want to grant or restrict. The system automatically saves your changes.  
-
----
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
 0. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
@@ -93,7 +63,6 @@ By default, all team members have permissions to edit dashboards defined for the
 0. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 
 ::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2019"
 ## Set individual dashboard permissions for team members
@@ -115,10 +84,10 @@ By default, all team members have permissions to edit dashboards defined for the
 
 0. Choose **Save changes** and then **Close**. 
 
-::: moniker-end 
+::: moniker-end
 
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 ## Set individual dashboard permissions for team members
 

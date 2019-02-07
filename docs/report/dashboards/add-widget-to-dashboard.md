@@ -43,10 +43,6 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widgets t
 ## Select a dashboard to modify 
 All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
@@ -59,20 +55,6 @@ All dashboards are associated with a team. You need to be a team administrator, 
 0. Choose the dashboard you want to modify. 
 
 ::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"  
-
-Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
-
-> [!div class="mx-imgBorder"]  
-> ![Dashboards directory, previous navigation](_img/dashboards/directory-prev.png) 
-::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 Open a web browser, connect to your project, and choose **Dashboards**. 
@@ -88,17 +70,8 @@ For example, here we choose to view the Work in Progress dashboard.
 > [!div class="mx-imgBorder"]  
 > ![Dashboards, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"  
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 ::: moniker-end  
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 
 ## Add a widget to a dashboard  
@@ -167,7 +140,6 @@ Additional information is provided to configure the following widgets:
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 To configure a widget, add the widget to a dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) configure icon. 
-
 ![Work item chart unconfigured widget](_img/add-widget-configure-initial.png)  
  
 Once you've configured the widget, you can edit it by opening the actions menu. 
@@ -183,7 +155,6 @@ To move a widget, you need to enable the dashboard edit mode. To delete a widget
 ::: moniker range="tfs-2015"
 Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items. 
 ::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2019"
 Choose ![ ](_img/icons/edit-icon.png) **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
