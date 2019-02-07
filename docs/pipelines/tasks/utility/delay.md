@@ -36,7 +36,7 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 | **Delay Time (minutes)** | Required. The number of minutes to delay execution. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
-Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Delay).
+Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DelayV1).
 
 ## Open source
 
