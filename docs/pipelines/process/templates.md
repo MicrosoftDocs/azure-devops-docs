@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
-ms.date: 01/18/2019
+ms.date: 02/07/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -87,6 +87,8 @@ You can pass parameters to both step and job templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
 Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
 
+### Job templates with parameters
+
 ```yaml
 # File: templates/npm-with-params.yml
 
@@ -126,7 +128,36 @@ jobs:
     vmImage: 'vs2017-win2016'
 ```
 
-The above example shows only how to use parameters with a job template. But you can also use parameters with step templates.
+### Step templates with parameters
+
+You can also use parameters with step templates:
+
+```yaml
+# File: templates/steps-with-params.yml
+
+parameters:
+  runExtendedTests: 'false'  # defaults for any parameters that aren't specified
+
+steps:
+- script: npm test
+- ${{ if eq(parameters.runExtendedTests, 'true') }}:
+  - script: npm test --extended
+```
+
+When you consume the template in your pipeline, specify values for
+the template parameters.
+
+```yaml
+# File: azure-pipelines.yml
+
+steps:
+- script: npm install
+  
+- template: templates/steps-with-params.yml  # Template reference
+  parameters:
+    runExtendedTests: 'true'
+```
+
 
 ## Using other repositories
 
