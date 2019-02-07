@@ -32,7 +32,7 @@ Last summer we released a [feature](https://visualstudio.microsoft.com/articles/
 
 ##Exploratory testing directly from a work item
 
-You can now launch an exploratory testing session for a specific work item, directly from within the product. We’ve added entry points on all cards, grids, and in the Test hub. This lets you associate the selected work item to your testing session and view the acceptance criteria and description from within the extension. It also creates end-to-end traceability between any bugs or tasks you file and the selected work item. The [Exploratory Testing](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) extension can be found in the Visual Studio Marketplace.
+You can now launch an exploratory testing session for a specific work item, directly from within the product. We’ve added entry points on all cards, grids, and in the Test hub. This lets you associate the selected work item to your testing session and view the acceptance criteria and description from within the extension. It also creates end-to-end traceability between any bugs or tasks you file and the selected work item. The [Exploratory Testing](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension can be found in the Visual Studio Marketplace.
 
 ![Exploratory testing directly from a work item](_img/3_3_03.png)
 
