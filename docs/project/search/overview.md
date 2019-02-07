@@ -26,15 +26,17 @@ efficiently locate information across all your projects. The Search
 extensions available for Azure DevOps and TFS 
 enable you to search across all the projects, teams and repositories to which you have access. 
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
 ![Search boxes in Azure DevOps](_img/_shared/title-bar-search-box-select-type-tfs.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
 
 ![Search boxes in TFS 2018 and earlier](_img/_shared/title-bar-search-box-select-type.png)
 
----
+::: moniker-end
 
 The Search extensions make it easy to search for information across all
 your projects, from anywhere and any computer or mobile device, using just a web browser.

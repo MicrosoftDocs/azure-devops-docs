@@ -24,7 +24,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
 ## Start searching
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
 1. Open the **Azure Boards** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
@@ -35,7 +35,9 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
 
 1. In the search textbox at the top right of the window, check that the text says
    _Search work items_.
@@ -48,7 +50,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search. 
 
----
+::: moniker-end
 
 ## View the results
 
