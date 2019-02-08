@@ -94,7 +94,9 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
    ![Launching the test runner client](_img/_shared/collect-diagnostic-data-16.png)
 
-1. **Download** and install the [Test Runner (for Azure Test Plans) client](http://aka.ms/ATPTestRunnerDownload) if you haven't already set it up.
+1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up.
+
+   ![Download and launch Test runner](_img/run-manual-tests/tr-atp-launch.png)
 
 1. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
 

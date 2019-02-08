@@ -80,8 +80,11 @@ in your extension's manifest file.
 
 ## Your JavaScript
 The script below registers the handler object to handle the action, place it in the `head` section of the HTML page above.
-```html
-<script src="sdk/scripts/VSS.SDK.js"></script>
+
+> We aliased `lib` to be `node_modules/vss-web-extension-sdk/lib` in our `vss-extension.json` manifest file.
+
+```typescript
+<script src="lib/VSS.SDK.min.js"></script>
 <script>
     VSS.init();
 
