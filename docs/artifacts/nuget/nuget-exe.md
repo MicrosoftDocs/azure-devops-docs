@@ -96,8 +96,8 @@ nuget.exe sources add -name {your feed name} -source {your feed URL} -username {
 Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
 
 ## Download the credential provider directly
-You can download the credential provider directly from this link:
-`https://pkgs.dev.azure.com/{organizationName}/_apis/public/nuget/client/CredentialProviderBundle.zip` 
+You can download the credential provider directly from this link. Replace `{org_name}` with your organization name:
+`https://pkgs.dev.azure.com/{org_name}/_apis/public/nuget/client/CredentialProviderBundle.zip` 
 
 ## Advanced credential provider scenarios
 ### Install the credential provider

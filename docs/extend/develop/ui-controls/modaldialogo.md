@@ -25,7 +25,7 @@ When using this modal dialog, dialog overlay will cover only the area dedicated 
 <a name="basic"></a>
 ## Simple modal dialog
 Below sample use the simplistic modal dialog usage where no button is displayed and `contextText` is specified.
-``` javascript
+``` typescript
 	import Dialogs = require("VSS/Controls/Dialogs");
 	
 	$("#show").click(()=> {
@@ -74,7 +74,7 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 	}
 ```
 
-``` javascript
+``` typescript
 	import Dialogs = require("VSS/Controls/Dialogs");
 	
 	$("#show").click(() => {
@@ -115,7 +115,7 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 ## Confirmation dialog
 Below sample displays how to use modal dialog as a confirmation dialog.
 
-``` javascript
+``` typescript
 	import Dialogs = require("VSS/Controls/Dialogs");
 	
 	var filename = "File1.txt";
