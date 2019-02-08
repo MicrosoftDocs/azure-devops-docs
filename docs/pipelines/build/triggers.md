@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 01/23/2019
+ms.date: 02/07/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -150,7 +150,6 @@ For example, you want your build to be triggered by changes in master and most, 
 
 Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](repository.md).
 
-
 ### CI trigger for a remote Git repo or Subversion
 
 You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
@@ -240,14 +239,26 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-Select the check box to enable builds on pull requests.
+### GitHub, GitHub Enterprise, Subversion, and Bitbucket Cloud
 
-For Git-based repos, you can specify branches to include and exclude. 
-Select a branch name from the drop-down menu and select "Include" or "Exclude" as appropriate.
+Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
+
+![Pull request trigger](_img/triggers/github-pr-validation-trigger.png)
+
+You can specify branches to include and exclude.
+Select a branch name from the drop-down menu and select **Include** or **Exclude** as appropriate.
 For included branches, a build will be triggered on each push to a pull request targeting that branch.
 
 For GitHub repos, you can choose whether or not to build pull requests from forks. There are [security implications](../repos/github.md?#validate-contributions-from-forks) to enabling this feature that you should understand before selecting it.
 If you choose to build fork pull requests, you may also choose whether or not to expose secrets (like secret variables and secure files) to fork pull request builds.
+
+### Azure Repos Git
+
+If your Git repo is hosted in Azure Repos, there won't be a **Pull request validation** trigger on the **Triggers** page. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build valiation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+
+### External Git
+
+Pull request triggers are not available for External Git repos.
 
 ---
 
