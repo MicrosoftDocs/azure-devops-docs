@@ -35,7 +35,7 @@ We provide some [built-in tasks](../tasks/index.md)
 to enable fundamental build and deployment scenarios. We have also
 provided guidance for [creating your own custom task](../../extend/develop/add-build-task.md).
 
-In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts)
+In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 offers a number of extensions; each of which, when installed to your
 subscription or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../integrate/index.md)

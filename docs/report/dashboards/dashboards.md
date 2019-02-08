@@ -49,11 +49,8 @@ The Overview page provides access to a default team dashboard which you can cust
 
 ## Connect to the web portal for your project 
 
-[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
-
 All dashboards are associated with a team.
 
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019"  
 
 Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
@@ -76,48 +73,19 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"  
-
-Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
-
-> [!div class="mx-imgBorder"]  
-> ![Dashboards directory, previous navigation](_img/dashboards/directory-prev.png) 
-
-It lists dashboards in the following order: 
-- Your last visited dashboard
-- Your favorited dashboards
-- All dashboards of teams that you belong to
-- All dashboards defined for the project in alphabetical order. 
-
-Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list by keyword or team.  
-
-> [!div class="mx-imgBorder"]  
-> ![Filter the dashboard directory](_img/dashboards/filter-directory.png)  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 Open a web browser, connect to your project, and choose **Dashboards**. 
 
 ![Dashboards directory, previous navigation](_img/dashboards-go-to.png) 
-::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"  
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
-::: moniker-end  
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
----
+
 
 <a id="choose-dashboard" />
-
 
 ::: moniker range=">= azure-devops-2019"
 ## Select a dashboard to view, modify, or favorite

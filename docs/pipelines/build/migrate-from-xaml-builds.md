@@ -284,7 +284,7 @@ In XAML builds you created custom XAML tasks. In the new builds, you've got a ra
 
 ### Get tasks from the Marketplace
 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts)
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 offers hundreds of extensions that you can install to add tasks that extend your build and deployment capabilities.
 
 ### Write a script

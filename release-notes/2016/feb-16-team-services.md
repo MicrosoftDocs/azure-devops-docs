@@ -70,7 +70,7 @@ Using the [SCVMM Integration](https://marketplace.visualstudio.com/items?itemNam
 
 ##Exploratory Testing improvements
 
-The [Exploratory Testing](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) extension can be found in the Visual Studio Marketplace.
+The [Exploratory Testing](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension can be found in the Visual Studio Marketplace.
 
 ##Standalone Mode
 

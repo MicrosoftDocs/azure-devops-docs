@@ -51,8 +51,6 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a project, see [Create a project](../../organizations/projects/create-project.md)
 
-# [New navigation](#tab/new-nav)  
-
 0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
 	> [!div class="mx-imgBorder"]  
@@ -71,33 +69,6 @@ To add a widget to a dashboard, you connect to your project using a [supported w
 
 0. Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. Learn more on [adding widgets to dashboard](../dashboards/add-widget-to-dashboard.md)
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-0. Connect to the web portal for your project and choose **Dashboards**.  
-
-	![Open Dashboards](../dashboards/_img/dashboards-go-to.png)
-
-0. Select any dashboard or [add a dashboard](../dashboards/dashboards.md).  
-
-0. Choose ![edit icon](../dashboards/_img/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
-
-0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Velocity widget in widget catalog](_img/velocity-in-widget-catalog.png)
-
-0. Select the widget and then choose **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. Learn more on [adding widgets to dashboard](../dashboards/add-widget-to-dashboard.md)
-1. 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
---- 
 
 Congratulations! A new Velocity widget has been added to your dashboard. 
 

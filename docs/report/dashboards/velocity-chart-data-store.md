@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/01/2018
+ms.date: 02/08/2018
 ---
 
 # View and work with the built-in team velocity chart 
@@ -47,9 +47,6 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 From your web browser, open your product backlog.  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019"
 0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -86,15 +83,11 @@ From your web browser, open your product backlog.
 
 	> [!NOTE]  
 	> Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 1.	From the backlog page, open the velocity chart.  
 
@@ -116,11 +109,6 @@ From your web browser, open your product backlog.
 	
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
----
-	
 
 [!INCLUDE [temp](../_shared/velocity-activities.md)] 
 
