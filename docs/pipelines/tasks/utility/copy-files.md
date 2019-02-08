@@ -75,6 +75,10 @@ None
 <td>Overwrite</td>
 <td>Select this check box to replace existing files in the target folder.</td>
 </tr>
+<tr>
+<td>Flatten Folders</td>
+<td>Flatten the folder structure and copy all files into the specified target folder.</td>
+</tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 

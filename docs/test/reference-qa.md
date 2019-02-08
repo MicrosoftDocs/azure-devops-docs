@@ -330,7 +330,7 @@ The tool to edit the test steps is shown.
 **A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to take screenshots of the web 
 app while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
-or for desktop app testing, you can download and use the [Test Runner (for Azure Test Plans) client](http://aka.ms/ATPTestRunnerDownload).
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Capturing a screenshot from the app](_img/_shared/collect-diagnostic-data-01.png) 
 
@@ -341,7 +341,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 **A:** If you are using Google Chrome or Firefox, you can use 
 the web runner capture your actions on the web 
 app as image logs while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
-or for desktop app testing, you can download and use the [Test Runner (for Azure Test Plans) client](http://aka.ms/ATPTestRunnerDownload).
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
  
 ![Capturing an image action log from the app](_img/_shared/collect-diagnostic-data-06.png) 
 
@@ -352,7 +352,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 **A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to capture screen recordings of 
 your web and desktop apps while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
-or for desktop app testing, you can download and use the [Test Runner (for Azure Test Plans) client](http://aka.ms/ATPTestRunnerDownload).
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Capturing a screen recording from the app](_img/_shared/collect-diagnostic-data-11.png) 
 
@@ -362,20 +362,19 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 **A:** [Learn more here](how-long-to-keep-test-results.md).
 
-### Q: Where can I download Test Runner (for Azure Test Plans) client?
+### Q: Where can I download the Test Runner client?
 
-**A:** Test Runner (for Azure Test Plans) client can be downloaded from [here](https://aka.ms/ATPTestRunnerDownload).
+**A:** The Test Runner desktop client can be downloaded from [here](https://aka.ms/ATPTestRunnerDownload).
 
-### Q: What are the supported operating systems for Test Runner (for Azure Test Plans) client?
+### Q: What are the supported operating systems for the Test Runner client?
 
-**A:** Test Runner (for Azure Test Plans) client is currently supported on only Windows. 
+**A:** The Test Runner desktop client is currently supported only on Windows. 
 
-### Q: Can I opt out of telemetry for Test Runner (for Azure Test Plans) client? 
+### Q: Can I opt out of telemetry for the Test Runner client? 
 
-**A:** No. The Test Runner (for Azure Test Plans) client does not collect any user-identifiable data and so,
+**A:** No. The Test Runner desktop client does not collect any user-identifiable data and so,
 in adherance to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
 no opt-out mechanism is provided. 
-
 
 <a name="runoffline"></a>
 ### Q: Can I run tests offline and then import the results?

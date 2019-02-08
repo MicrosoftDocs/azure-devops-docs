@@ -198,12 +198,12 @@ We now have a private repository within Azure Artifacts that we can push our Pow
 5. Let's see what we can install from the feed by running the following:
 
     ```powershell
-    Find-Module * -Repository PowershellAzureDevopsServices -Credential $credsAzureDevopsServices
+    Find-Module -Repository PowershellAzureDevopsServices -Credential $credsAzureDevopsServices
     ```
 
     We can see our `Get-Hello` module and install it:
     ```powershell
-    Install-Module Get-Hello -Repository PowershellVSTS -Credential $credsAzureDevopsServices
+    Install-Module Get-Hello -Repository PowershellAzureDevopsServices -Credential $credsAzureDevopsServices
     ```
 
     You can check for your installed module:

@@ -55,7 +55,7 @@ Comparison of [test planning with [!INCLUDE [test-hub-include-nolink](../_shared
 | View test case references across test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | Assign multiple testers to test plans and test suites for user acceptance testing | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
-*These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) extension available from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/), Azure DevOps tab.
+*These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) extension available from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
 ### Test authoring
 
@@ -77,7 +77,7 @@ Test your web apps and your desktop apps.
 [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] provides a browser based Test Runner and a client based Test Runner which you can use to test your web and desktop apps.
 Using either runner, you can mark test steps and test outcomes as pass or fail, and collect diagnostic information such as system information, image action logs, screen recordings and screen captures during your tests. Alternatively, you can use the Microsoft Test Runner client that is part of Microsoft Test Manager. 
 
-Comparison of [test execution with web based Test Runner](../run-manual-tests.md) and [test execution with Microsoft Test Runner (client)](run-manual-tests-with-microsoft-test-manager.md):
+Comparison of [test execution with web based Test Runner](../run-manual-tests.md) and [test execution with Microsoft Test Runner desktop client](run-manual-tests-with-microsoft-test-manager.md):
 
 | Test execution capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |

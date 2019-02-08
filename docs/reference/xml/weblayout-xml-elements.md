@@ -607,7 +607,7 @@ Visit the [VSTS Marketplace](https://marketplace.visualstudio.com/search?target=
 ## Form extensions 
 
 
-The **ControlContribution**, **GroupContribution**, and **PageContribution** elements reference the ```Id``` of contributions from the extensions that have been installed for a project collection or account. You install an extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). To create an extension, see [Create your first extension](../../extend/get-started/node.md).
+The **ControlContribution**, **GroupContribution**, and **PageContribution** elements reference the ```Id``` of contributions from the extensions that have been installed for a project collection or account. You install an extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). To create an extension, see [Create your first extension](../../extend/get-started/node.md).
 
 Once the extensions have been installed, you add the <b>Contribution</b> element to the XML definition for a work item type. You export these files either by [exporting a process](../../organizations/settings/work/import-process/import-process.md#export-a-process) or [exporting a WIT definition file](../customize-wit-form.md#witadmin). 
 

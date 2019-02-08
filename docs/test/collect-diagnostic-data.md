@@ -28,8 +28,7 @@ and view it in Azure Test Plans or Team Foundation Server.
 ## Collect diagnostic data from web and desktop apps
 
 For web apps under test, you can use web-based Microsoft Test Runner. 
-For desktop apps, download and install the
-[Azure Test Runner client](http://aka.ms/ATRDownload) to collect the following data on demand:
+For desktop apps, download and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) to collect the following data on demand:
 
 * [Screen captures](#web-screenshot)
 * [Image action log](#web-log)

@@ -408,5 +408,5 @@ Additional articles of interest:
 ::: moniker range=">= tfs-2017"  
 ### Additional tools from the Marketplace 
 
-You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads), Azure DevOps tab.
+You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Downloads), Azure DevOps tab.
 ::: moniker-end
