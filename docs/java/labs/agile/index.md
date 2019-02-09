@@ -25,7 +25,7 @@ In this exercise, you are going to examine the various Agile planning features o
 
 This exercise assumes you have completed [setting up your Azure DevOps Services Java project](../settingvstsproject/index.md), and have created a Team Project using the Scrum template with a Git repo.
 
-## Managing your team project backlog
+## Manage your team project backlog
 
 This exercise uses a team project named **jdev** (if you have chosen a
 different name for your project, select the project you created in the
@@ -39,11 +39,11 @@ through the MyShuttle scenario.
 
 3. On the left, click the **Features** link.
 
-    ![](../_img/agile/image2.png)
+    ![Work>Backlogs page, Choose Features backlog](../_img/agile/image2.png)
 
     You're now on the **Features** backlog.
 
-    ![](../_img/agile/image3.png)
+    ![Features backlog](../_img/agile/image3.png)
 
 4. In the Title box, enter **Intranet Site Updates** and press Enter.
 
@@ -52,18 +52,18 @@ through the MyShuttle scenario.
 
     You now have defined two features.
 
-    ![](../_img/agile/image4.png)
+    ![Define features](../_img/agile/image4.png)
 
 6. Double-click the **Intranet Site Updates** feature to open the
     feature details and enter additional information such as who owns
     the feature, status, expected completion date, etc.
 
-    ![](../_img/agile/image5.png)
+    ![Features work item form](../_img/agile/image5.png)
 
 7. Change the value of the **State** field from **New** to **In
     Progress**.
 
-    ![](../_img/agile/image6.png)
+    ![Change the State](../_img/agile/image6.png)
 
 8. Press tab to move to the **Assigned To** field, which current is set
     to **Unassigned**. Assign it to yourself.
@@ -71,7 +71,7 @@ through the MyShuttle scenario.
 9. Select the **Iteration** field. Expand the combo-box to see the
     available values.
 
-    ![](../_img/agile/image7.png)
+    ![Select the Iteration Path](../_img/agile/image7.png)
 
 10. Select **Sprint 1**.
 
@@ -81,36 +81,36 @@ through the MyShuttle scenario.
     Note this is a rich text field, and you can use various types of
     formatting.
 
-    ![](../_img/agile/image8.png)
+    ![Enter a description](../_img/agile/image8.png)
 
 12. Click the links button on the right of the form.
 
-    ![](../_img/agile/image9.png)
+    ![Choose one or more tabs in the form](../_img/agile/image9.png)
 
 13. Click the **Add link** drop down menu and select **New item** link.
 
-    ![](../_img/agile/image10.png)
+    ![From the Links tab, Choose the Add link>New item](../_img/agile/image10.png)
 
 14. Change the **Work item type** field to **Product Backlog Item** and
     make sure the **Link type** is set to **Child**.
 
 15. In the **Title** field, enter **Site Fit & Finish**.
 
-    ![](../_img/agile/image11.png)
+    ![Add New Linked Work Item dialog, Enter a title of a feature](../_img/agile/image11.png)
 
 16. Click **OK**. Azure DevOps Services opens up the New Product
     Backlog Item screen. Feel free to add a description.
 
 17. When ready click **Save and close**.
 
-    ![](../_img/agile/image12.png)
+    ![Save and close to the work item](../_img/agile/image12.png)
 
 18. Back on the Feature dialog, click **Save and close** to update and
     close the feature.
 
 19. Click the **Backlog Items** link to return to that backlog.
 
-    ![](../_img/agile/image13.png)
+    ![Choose Backlog items link](../_img/agile/image13.png)
 
 20. Double-click on the **Site Fit & Finish** Product Backlog Item (PBI)
     in the list to open up the dialog
@@ -121,11 +121,11 @@ through the MyShuttle scenario.
 
 22. Click the links button on the right of the form.
 
-    ![](../_img/agile/image9a.png)
+    ![Choose the links button in the work item form](../_img/agile/image9a.png)
 
 23. Click the **Add link** drop down menu and select **New Item** link.
 
-    ![](../_img/agile/image10.png)
+    ![Choose Add link>New item](../_img/agile/image10.png)
 
 24. Change the **Work item type** field to **Task** and make sure the
     **Link type** is set to **Child**.
@@ -142,31 +142,31 @@ through the MyShuttle scenario.
 28. Click the small triangle to the left the Explore VS Team
     Services PBI.
 
-    ![](../_img/agile/image14.png)
+    ![Choose the expand icon of the product backlog item](../_img/agile/image14.png)
 
     You can now see any of the child tasks associated with the PBI.
 
-    ![](../_img/agile/image15.png)
+    ![Review child tasks associated with the backlog item](../_img/agile/image15.png)
 
     You can also see parent items (in the case Features).
 
 29. On the command bar above the backlog, click the Hide link to the
     right of the Parents label to "show" the parent Features.
 
-    ![](../_img/agile/image16.png)
+    ![Choose the Parents>Hide link to show parents](../_img/agile/image16.png)
 
     You now can see the Parent Features.
 
-    ![](../_img/agile/image17.png)
+    ![Backlog items, Show parents](../_img/agile/image17.png)
 
 30. Under the Backlog items title, click the Board link.
 
-     ![](../_img/agile/image18.png)
+     ![Choose the Board link](../_img/agile/image18.png)
 
 31. In the Committed column, on the only card, click the
-    ![](../_img/agile/image19.png) item.
+    ![task checklist number](../_img/agile/image19.png) item.
 
-    ![](../_img/agile/image20.png)
+    ![Choose the task checklist number to view the linked tasks](../_img/agile/image20.png)
 
     You can see the child task here.
 
@@ -175,25 +175,25 @@ through the MyShuttle scenario.
 33. In the open text area, type **Add master navigation to menu page**
     and press **Enter**.
 
-    ![](../_img/agile/image21.png)
+    ![Enter a title for the task](../_img/agile/image21.png)
 
     You can see all of your work for the active sprint by accessing the
 **Task Board**.
 
 1. On the left, click **Sprint 1** under **Current**.
 
-    ![](../_img/agile/image22.png)
+    ![Choose the Sprint 1 backlog](../_img/agile/image22.png)
 
-    Now you can see your work for the just the current sprint.
+    Now you can see your work for just the current sprint.
 
-    ![](../_img/agile/image23.png)
+    ![View the Sprint 1 Task board](../_img/agile/image23.png)
 
     You need to assign the **Add master navigation to menu page** Task to you.
 
 1. Move your mouse and hover over the card and you'll get a combo-box
     that opens up.
 
-    ![](../_img/agile/image24.png)
+    ![Hover over the Assigned to field and assign the task to yourself](../_img/agile/image24.png)
 
 1. Assign the task to yourself.
 
@@ -201,19 +201,19 @@ through the MyShuttle scenario.
 
 1. In the task board mouse over at the bottom right corner of the task card and enter the value **1**. This is nothing but **Remaining Work** field , you can also open the work item and then update **Remaining Work** field value and save the changes. Repeat this for another task in task board.
 
-    ![](../_img/agile/image25.png)
+    ![Add an estimate to the task](../_img/agile/image25.png)
 
     Now you want to show that you've started working.
 
 1. Drag and drop the **Add Master Branding** work item to the **In
     progress** column.
 
-    ![](../_img/agile/image26.png)
+    ![Move a task to from To do to In Progress column ](../_img/agile/image26.png)
 
 1. In the upper right corner of the Task board, click the **Settings**
     icon
 
-    ![](../_img/agile/image27.png)
+    ![Choose the gear icon to open Settings](../_img/agile/image27.png)
 
     This opens the Settings dialog where you can make adjustments to many
     features of the Work Hub including the Task board.
@@ -221,7 +221,7 @@ through the MyShuttle scenario.
 1. For **Task** check the **Show ID** checkbox to show the work item ID
     on the cards.
 
-    ![](../_img/agile/image28.png)
+    ![Settings dialog, Task tab, check the Show ID field](../_img/agile/image28.png)
 
 1. Click **Save and Close** when done.
 
