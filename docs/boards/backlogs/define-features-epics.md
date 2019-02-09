@@ -201,7 +201,7 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
 
 > [!div class="mx-imgBorder"]  
-> [Feature work item form, Agile process, Add details to a feature](_img/features-epics/feature-work-item-form.png)
+> ![Feature work item form, Agile process, Add details to a feature](_img/features-epics/feature-work-item-form.png)
  
 <table>
 <tbody valign="top">
