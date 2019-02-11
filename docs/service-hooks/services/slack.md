@@ -17,6 +17,9 @@ ms.date: 08/04/2016
 Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps Services organization,
 like completed builds, code changes, pull requests, releases, work items changes, and more.
 
+>[!NOTE]
+> If you are only interested in integrating Slack with Azure Pipelines, we recommend you use our [Azure Pipelines app](../../pipelines/integrations/slack.md) for Slack.
+
 ## Create the Slack integration
 
 1. From any page on your team's Slack (```https://[team].slack.com/...```), click your account name in the left window pane

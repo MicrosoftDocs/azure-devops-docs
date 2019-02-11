@@ -39,7 +39,7 @@ If you are new to managing projects and teams, the most straight forward sequenc
 0. Determine the number and names of teams you will want to support. For guidance, review [About teams and Agile tools](about-teams-and-settings.md).
 0. Open **Project settings>Project configuration** and define the Area Paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-area-paths.md#open-project-settings) and [Add area paths](set-area-paths.md#add-areas).
 0. Define the teams you need to support step 2. For guidance, see [Add a team, move from one default team to several teams](add-teams.md).  
-0. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings]((set-area-paths.md#open-team-settings) and [Set team default area path(s)](set-area-paths.md#team-area-paths).
+0. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-area-paths.md#open-team-settings) and [Set team default area path(s)](set-area-paths.md#team-area-paths).
 0. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 ::: moniker range=">= tfs-2017"
