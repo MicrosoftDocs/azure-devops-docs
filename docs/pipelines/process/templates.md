@@ -276,7 +276,7 @@ parameters:
 steps:
 - bash: |
     if [ -z "$SOLUTION" ]; then
-      echo ##vso[task.complete result=Failed;]Missing template parameter \"solution\"
+      echo "##vso[task.complete result=Failed;]Missing template parameter \"solution\""
     fi
   env:
     SOLUTION: ${{ parameters.solution }}
