@@ -72,7 +72,7 @@ The agent will talk to Azure DevOps/TFS service through the web proxy specified 
 Since the code for the `Get Source` task in builds and `Download Artifact` task in releases are also baked into the agent, those tasks will follow the agent proxy configuration from the `.proxy` file.  
 
 The agent exposes proxy configuration via environment variables for every task execution.
-Task authors need to use `[vsts-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib)` methods to retrieve proxy configuration and [handle the proxy](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/node/docs/proxy.md) within their task.
+Task authors need to use [vsts-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib) methods to retrieve proxy configuration and [handle the proxy](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/node/docs/proxy.md) within their task.
 
 ::: moniker-end
 
