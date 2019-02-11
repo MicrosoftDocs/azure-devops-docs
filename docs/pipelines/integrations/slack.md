@@ -76,7 +76,7 @@ Here are all the commands supported by the Azure Pipelines app:
 | /azpipelines subscribe      | Manage/add subscriptions for a channel      | 
 | /azpipelines feedback | Report problems or suggest features for the app      |
 | /azpipelines help     | Get help on the slash commands |
-| /azpipelines logout   | Disconnect your Azure Pipelines account from the app |
+| /azpipelines signout  | Disconnect your Azure Pipelines account from the app |
 
 ### Notifications in Private channels
 
