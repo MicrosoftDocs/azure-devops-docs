@@ -36,6 +36,8 @@
     href: services/uservoice.md
   - name: Integrate with WebHooks
     href: services/webhooks.md
+  - name: Integrate with workplace messaging apps
+    href: services/workplace-messaging-apps.md
   - name: Integrate with Zapier
     href: services/zapier.md
   - name: Integrate with Zendesk
