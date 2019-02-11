@@ -152,8 +152,47 @@ Simply follow these steps:
     
 1. **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
 
-<a name="draftrelease"></a>
 <a name="abandonrelease"></a>
+## When should I edit a release instead of the pipeline that defines it?
+
+You can edit the approvals, tasks, and variables of a previously deployed release, insteads of editing these values in the pipeline from which the release was created. However, these edits apply to only the release generated when you redeploy the artifacts. If you want your edits apply to all future releases and deployments, choose the option to edit the release pipeline instead.
+
+<a name="draftrelease"></a>
+## What is a draft release?
+
+Creating a draft release allows you to edit some of the settings for the release and the tasks,
+depending on your role permissions, before starting the deployment.
+The changes apply only to that release, and do not affect the settings of the original pipeline.
+
+Create a draft release using the "..." ellipses link in the list of releases:
+
+![Create a draft release in the list of releases](_img/what-is-release-management/draft-release.png)
+
+... or the **Release** drop-down in the pipeline definition page: 
+
+![Create a draft release in the pipeline definition page](_img/what-is-release-management/new-draft-release.png)
+
+After you finish editing the draft release, choose **Start** from the draft release toolbar. 
+
+![Start a draft release](_img/what-is-release-management/start-draft.png)
+
+<a name="draftrelease"></a>
+## When and why would I abandon a release?
+
+After you create a [release](releases.md), you can use it to redeploy the artifacts
+to any of the stages defined in that release.
+This is useful if you want to perform regular manual releases, or set up a 
+continuous integration [stage trigger](triggers.md#env-triggers)
+that redeploys the artifacts using this release.
+
+If you do not intend to reuse the release, or want to prevent it being used to redeploy the artifacts,
+you can abandon the release using the shortcut menu that opens from the elipses (**...**) icon in the
+**Pipeline** view of the pipeline.
+
+![Abandoning a release](_img/what-is-release-management/abandon-release.png)
+
+Note that you cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
+
 ## Related topics
 
 * [What is a draft release?](index.md#draftrelease)
