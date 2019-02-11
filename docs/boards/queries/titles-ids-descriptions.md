@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 01/23/2019
+ms.date: 02/07/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
@@ -72,6 +72,8 @@ You can find work items that have an undefined field value by using the equals o
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
 
+::: moniker range=">= azure-devops-2019"
+
 <a id="empty"/>
 ## Empty or not empty HTML field queries
 
@@ -81,6 +83,7 @@ For example, the following query filters will list all work items where some ent
 
 ![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
 
+::: moniker-end
 
 <a id="category"/>
 ## Category based queries

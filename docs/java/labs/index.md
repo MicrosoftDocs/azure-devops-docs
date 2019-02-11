@@ -12,10 +12,10 @@ ms.date: 01/25/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
-[Azure DevOps Services](https://dev.azure.com) and [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment to speed the development and delivery of your software applications across platforms, including iOS, Android, Java, Linux or Windows.
-
 # About the Java Hands-on Labs
+
+[Azure DevOps Services](https://dev.azure.com), [Azure DevOps Server](https://visualstudio.microsoft.com/tfs/), and [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment to speed the development and delivery of your software applications across platforms, including iOS, Android, Java, Linux or Windows.
+
 
 These hands-on labs are provided to give you a first-hand, technical experience on how you can leverage the Microsoft DevOps platform for Java development. The labs cover:
 

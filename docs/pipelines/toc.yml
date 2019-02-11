@@ -122,6 +122,10 @@
       href: build/triggers.md
     - name: Predefined variables
       href: build/variables.md
+  - name: Integrations
+    items:
+    - name: Slack
+      href: integrations/slack.md
   - name: Releases
     items:
     - name: Why use release pipelines?
