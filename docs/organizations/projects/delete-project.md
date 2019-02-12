@@ -16,12 +16,12 @@ ms.date: 12/19/2018
 
 # Delete a project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  Â  
 
 You can delete a project from Azure DevOps or from an on-premises deployment of Team Foundation Server (TFS). Deleting a project helps simplify the navigation to projects that are in use.
 
 > [!Caution]
-> Projects are permanently deleted, if not restored within 28 days.
+> Projects are permanently deleted, if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md).
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]
 
