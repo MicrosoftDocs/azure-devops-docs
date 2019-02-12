@@ -13,13 +13,13 @@ monikerRange: '>= tfs-2017'
 
 # Best practices for using Azure Artifacts 
 
-This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure DevOps Services or Team Foundation Server (TFS). 
+This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure DevOps Services or Team Foundation Server (TFS).
 
 ## Creating packages as part of a build
 
-### Each repository should have a unique feed
+### Each repository should only reference one feed
 
-A feed is a container for packages, the only package source should be that single unique feed for each repository.
+A feed is a container for packages. You can have multiple feeds for different projects but a particular project should only reference one feed. If you want to use packages from multiple feeds, use [upstream sources](upstream-sources.md) to bring packages from multiple feeds together into a single feed.
 
 ### On package creation, automatically publish packages back to the feed.
 
