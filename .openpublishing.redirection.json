@@ -1922,17 +1922,17 @@
     },
     {
       "source_path": "docs/collaborate/campfire.md",
-      "redirect_url": "/azure/devops/service-hooks/services/campfire",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/collaborate/flowdock.md",
-      "redirect_url": "/azure/devops/service-hooks/services/flowdock",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/collaborate/hipchat.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hipchat",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -3022,42 +3022,42 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/appveyor-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/appveyor",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/azure-service-bus-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/azure-service-bus",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/azurestorage-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/azure-storage",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/bamboo-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/bamboo",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/campfire-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/campfire",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/flowdock-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/flowdock",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/hipchat-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hipchat",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/hubot-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hubot",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -3067,7 +3067,7 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/myget-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/myget",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -3082,7 +3082,7 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/uservoice-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/uservoice",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -3092,12 +3092,72 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/zapier-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/zapier",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/zendesk-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/zendesk",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/appveyor.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/azure-service-bus.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/azure-storage.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/bamboo.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/campfire.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/flowdock.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/hipchat.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/hubot.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/myget.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/uservoice.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/zapier.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/zendesk.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
