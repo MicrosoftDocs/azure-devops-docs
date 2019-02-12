@@ -159,6 +159,7 @@ monikerRange: '>= tfs-2015'
 
 | Task | Versions |
 |------|----------|
+| ![icon](tool/_img/docker-installer.png) [Docker Installer](tool/docker-installer.md). Acquires a specific version of the Docker CLI and installs it on the agent. | Azure Pipelines |
 | ![icon](tool/_img/DotNetCoreInstaller.png) [.NET Core Tool Installer](tool/dotnet-core-tool-installer.md). Acquires a specific version of .NET Core and adds it to the PATH. Use the task to change the Core version for subsequent tasks. | Azure Pipelines, TFS 2018 |
 | ![icon](tool/_img/gotool.png) [Go Tool Installer](tool/go-tool.md). Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH | Azure Pipelines |
 | ![icon](tool/_img/helminstaller.png) [Helm Tool Installer](tool/helm-installer.md). Install Helm and Kubernetes on agent machine. | Azure Pipelines |
