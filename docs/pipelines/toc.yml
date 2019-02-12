@@ -560,6 +560,8 @@
         href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
     - name: Tool tasks
       items:
+      - name: Docker Installer
+        href: tasks/tool/docker-installer.md
       - name: .NET Core Tool Installer
         href: tasks/tool/dotnet-core-tool-installer.md
       - name: Go Tool Installer
