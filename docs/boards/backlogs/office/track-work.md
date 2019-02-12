@@ -1,7 +1,7 @@
 ---
-title: Work in Excel or Project
+title: Work in Microsoft Excel or Project
 titleSuffix: Azure Boards
-description: Use Office Excel or Project to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Use Microsoft Excel or Project to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
@@ -14,14 +14,14 @@ ms.date: 11/19/2018
 ---
 
 
-# Work in Office Excel or Project 
+# Work in Microsoft Excel or Project 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To support your work tracking efforts, you can use Office Excel and Office Project. You can decide to either work in an online mode where you are connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document.  
+To support your work tracking efforts, you can use Microsoft Excel and Microsoft Project. You can decide to either work in an online mode where you are connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document.  
   
 > [!IMPORTANT]  
-> You may receive the following error if you install Office 2010 on the same computer as a previous version of Office.  
+> You may receive the following error if you install Microsoft Office 2010 on the same computer as a previous version of Office.  
 >   
 >  **Team Foundation Error**  
 >   
@@ -33,11 +33,11 @@ You can start work from Excel, Project, or Team Explorer. Your worksheet or proj
   
 To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).   
   
-![Open Query Results in Office Excel](_img/excelseq_1.png "ExcelSeq_1")  
+![Open Query Results in Excel](_img/excelseq_1.png "ExcelSeq_1")  
   
 To work in Project, see [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
 
-![Exporting Work Items to Office Project](_img/officeprojseq_1.png "OfficeProjSeq_1")  
+![Exporting Work Items to Project](_img/officeprojseq_1.png "OfficeProjSeq_1")  
   
 
 
@@ -67,7 +67,7 @@ To disconnect a an Excel or Project document file from the network:
   
 4.  Disconnect your computer from the network, or save the work item list file and copy it to another computer.  
   
-     An error message might appear that tells you that the Office program could not establish a connection with Team Foundation Server.  
+     An error message might appear that tells you that the Office program could not establish a connection with TFS.  
   
 5.  Modify or update the work item list as needed.  
   
@@ -92,10 +92,9 @@ To reconnect an Excel or Project document file:
 4.  Resolve any data validation errors or conflicts that occur.  
 
 
-
 <a id="excel-project">  </a>
 
-## Connect from Microsoft Excel or Project
+## Connect from Excel or Project
 
 To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the Azure DevOps project to exchange information. 
  
@@ -103,7 +102,7 @@ To add or modify work items by using Excel or Project, you connect your workshee
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. 
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure DevOps Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/tfs/server/compatibility)
+1.  If you don't have Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For TFS 2017 or TFS 2018, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/tfs/server/compatibility)
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises TFS. 
 
@@ -192,7 +191,7 @@ To open Excel from the web portal, install the [VSTS Open in Excel](https://mark
 To resolve publishing errors that arise when working in Excel or Project, see the following topics:   
   
 - [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
-	A data conflict occurs when one team member changes a field value in either Microsoft Project or Microsoft Excel at the same time another team member changes the same field in Team Foundation Server.
+	A data conflict occurs when one team member changes a field value in either Project or Excel at the same time another team member changes the same field in Team Foundation Server.
 
 - [Resolve data validation errors](resolve-excel-data-validation-errors.md):
 	A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.

@@ -9,20 +9,18 @@ ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
-ms.date: 09/13/2018
+monikerRange: '>= tfs-2013'
+ms.date: 02/11/2019
 --- 
-
-
 
 
 # Fix "Ordering backlog items is disabled" 
 <a id="display-hierarchy">  </a>
 
 
-**TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-<!--- Supports FWLINK 529135 --> 
+<!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
 When a product, portfolio, or sprint backlog contains same-category, nested work items&mdash;as described in the next section, [How backlogs and boards display hierarchical (nested) items](#nested)&mdash;the system disables the drag-and-drop reorder feature. It does this as it determines that not all items display under these circumstances.  
 
