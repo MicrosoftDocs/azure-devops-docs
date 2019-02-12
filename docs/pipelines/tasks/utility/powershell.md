@@ -47,7 +47,7 @@ The Powershell task also has a shortcut syntax in YAML:
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file.</td></tr>
+<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code></td></tr>
 <tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code>.</td></tr>
 <tr><td>Arguments</td><td>Arguments passed to the Powershell script. Ignored when Type is <code>inline</code>.</td></tr>
 <tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code>.</td></tr>
