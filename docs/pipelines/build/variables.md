@@ -47,6 +47,38 @@ To learn more, see [source repositories](repository.md).
 
 ::: moniker-end
 
+<h2 id="systemaccesstoken">System.AccessToken</h2>
+
+`System.AccessToken` is a special variable that carries the security token used by the running build.
+
+# [YAML](#tab/yaml)
+
+In YAML, you must explicitly map System.AccessToken into the pipeline using a
+variable. You can do this at the step or task level:
+
+```yaml
+steps:
+  - bash: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+  - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+```
+
+# [Designer](#tab/designer)
+
+You can allow scripts and tasks to access System.AccessToken at the job level.
+
+1. Navigate to the job
+
+1. Under **Additional options**, check the **Allow scripts to access the OAuth token** box.
+
+Checking this box also leaves the credential set in Git so that you can run
+pushes and pulls in your scripts.
+
+---
+
 ## System.Debug
 
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
