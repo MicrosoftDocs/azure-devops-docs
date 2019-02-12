@@ -97,16 +97,17 @@ or a [VM with a managed service identity](#use-msi).
    * If you choose **Subscription**, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
    * If you choose **Management Group**, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
 
-1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
-   When prompted, enter your subscription name, password, role (optional), and the type of cloud such as Azure Cloud (the default), Azure Stack, or an Azure Government Cloud.
-
-1. Copy these fields from the output of the PowerShell script into the Azure subscription dialog textboxes:
+1. Enter the information about your service principal into the Azure subscription dialog textboxes:
 
    * Subscription ID
    * Subscription name
    * Service principal ID
    * Either the service principal client key or, if you have selected **Certificate**, enter the contents of both the certificate and private key sections of the *.pem file.
    * Tenant ID<p/>
+
+   You can obtain this information if you don't have it to hand by downloading and running
+   [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
+   When prompted, enter your subscription name, password, role (optional), and the type of cloud such as Azure Cloud (the default), Azure Stack, or an Azure Government Cloud.
 
 1. Choose **Verify connection** to validate the settings you entered.
 
