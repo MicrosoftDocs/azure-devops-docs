@@ -1,6 +1,81 @@
 {
   "redirections": [
     {
+      "source_path": "docs/integrate/ide/extensions/overview.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/samples.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/sdk.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/add_new_language.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/add_tool_window.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/customize_template.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/extend_editor.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/extend_ui.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/unlisted.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/help/gitter.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/help/help.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/help/msdn.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/publish_extensions/other_resources.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/publish_extensions/publish.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/hello_world.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/extend/test/discover-menu-group-ids.md",
       "redirect_url": "/azure/devops/extend/index",
       "redirect_document_id": true
