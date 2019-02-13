@@ -888,7 +888,7 @@ steps:
 ### Ignore last exit code
 
 By default, the last exit code returned from your script will be checked and,
-if non-zero, treated as a step failure. The system will prepend your script with:
+if non-zero, treated as a step failure. The system will append your script with:
 
 `if ((Test-Path -LiteralPath variable:\LASTEXITCODE)) { exit $LASTEXITCODE }`
 
