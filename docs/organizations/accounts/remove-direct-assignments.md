@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -24,10 +24,6 @@ To manage a user's resources only by the groups that they're in, you must remove
 * You must be a member of the **Project Collection Administrators** group for the organization that you would like to manage users' direct assignments.
 
 ## Remove assignments
-
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
-
-# [New navigation](#tab/new-nav)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -45,24 +41,6 @@ To manage a user's resources only by the groups that they're in, you must remove
    ![Select group rules for migration](_img/remove-direct-assignments/choose-remove-direct-assignments-vert.png)
 
 5. To confirm that you want to remove the direct assignments, select **Remove**.
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
-
-2. Go to your **Users** settings.
-
-   ![Go to users settings](../../_shared/_img/sign-in-go-to-users-settings-horz.png)
-
-3. Select all users with resources that should be managed only by groups.
-
-4. From the command bar, select **Remove direct assignments**, or right-click and choose the same option from the menu.
-
-   ![Choose remove direct assignments](_img/remove-direct-assignments/choose-remove-direct-assignments.png)
-
-5. To confirm that you want to remove the direct assignments, select **Remove**.
-
----
 
 Direct assignments are removed from the users.
 
