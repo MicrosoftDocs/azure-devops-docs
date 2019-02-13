@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 12/07/2018
+ms.date: 02/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -61,11 +61,11 @@ The Powershell task also has a shortcut syntax in YAML:
 <td>Set PowerShell's error action preference. One of: <code>stop</code>, <code>continue</code>, <code>silentlyContinue</code>. Defaults to <code>stop</code>.</td>
 </tr>
 <tr>
-<td>Ignore $LASTEXITCODE</td>
+<td>ignoreLASTEXITCODE</td>
 <td>By default, the last exit code returned from your script will be checked and, if non-zero, treated as a step failure. If you don't want this behavior, set this to <code>true</code>.</td>
 </tr>
 <tr>
-<td>Env[ironment variables]</td>
+<td>Environment variables</td>
 <td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 ```yaml
 - script: echo $env:MYSECRET
