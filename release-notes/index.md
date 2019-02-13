@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 02/06/2019
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -88,9 +88,10 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="13">[04 February 2019](2019/sprint-147-update.md)</td>
-            <td>View just the left or right file in a pull request</td><td>Repos</td><td>Future</td>
+            <td rowspan="14">[04 February 2019](2019/sprint-147-update.md)</td>
+            <td>Show work item status in #ID mentions</td><td>Boards</td><td>Future</td>
         </tr>
+        <tr><td>View just the left or right file in a pull request</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Restore deleted release pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>YAML files for a new pipeline are committed by your identity, not our bot</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Create pipelines from an existing YAML file in any branch or path</td><td>Pipelines</td><td>Future</td></tr>
