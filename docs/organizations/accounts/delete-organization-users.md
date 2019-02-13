@@ -10,7 +10,7 @@ ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -25,10 +25,6 @@ If users no longer require access to a project or your organization, you can rem
 - You need [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Remove users from your organization
-
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
@@ -59,33 +55,6 @@ If users no longer require access to a project or your organization, you can rem
    To reduce or cancel users for the next month, you must make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
 
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
-
-   [Why am I asked to choose between my work or school account and my personal account?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
-
-2. Go to the **Users** page.
-
-   ![Open Organization settings, users](../../_shared/_img/settings/open-admin-settings-users-prev.png)
-
-3. Open the context menu **...** for the user to remove. Select **Remove from organization**.
-
-   ![Remove user from your organization](_img/delete-user/remove-user-from-organization-prev.png)
-
-4. Choose **Remove** in the confirmation dialog.
-
-5. To confirm that you've removed the users completely, make sure they're not in any of your [security groups](../../organizations/security/add-users-team-project.md). 
-
-   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
-
-6. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), Azure DevOps tab. Then you're not charged in your next Azure billing cycle.
-
-   To reduce or cancel users for the next month, you must make updates before the last day of the current month.
-   Your bill won't show the changes until the next month because paid users are monthly purchases.
-
----
-
 > [!NOTE]
 > - Azure Active Directory (AD)-backed organizations. After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
 > - Managed service account (MSA)-backed organizations. After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
@@ -94,15 +63,7 @@ If users no longer require access to a project or your organization, you can rem
 
 To remove users from a project, remove them from the **Teams** groups they belong to or the **Contributors** group for the project. See [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). You can remove a user from the **Members** page of a team group or security group.
 
-# [New navigation](#tab/new-nav)
-
 ![Remove a user from a security group, new navigation](_img/delete-user/remove-user-vert.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-![Remove a user from a security group, previous navigation](_img/delete-user/remove-user-prev.png)
-
----
 
 ## Related articles
 

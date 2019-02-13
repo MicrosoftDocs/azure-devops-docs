@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 02/07/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -88,7 +88,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="14">[04 February 2019](2019/sprint-147-update.md)</td>
+            <td rowspan="15">[04 February 2019](2019/sprint-147-update.md)</td>
             <td>Show work item status in #ID mentions</td><td>Boards</td><td>Future</td>
         </tr>
         <tr><td>View just the left or right file in a pull request</td><td>Repos</td><td>Future</td></tr>
@@ -101,6 +101,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>New extension contribution points in the Pipelines Test tab</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Proxy support for Artifacts-related tasks</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Delegate who can manage feeds</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Test result trend widget</td><td>Reporting</td><td>Future</td></tr>
         <tr><td>Permalinks for wiki pages</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Show work item status in wiki pages</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>All users now on New Navigation</td><td>Administration</td><td>N/A</td></tr>
@@ -152,7 +153,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Markdown templates for formulas and videos</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Restore deleted projects</td><td>Administration</td><td>N/A</td></tr>
         <tr>
-            <td rowspan="14">[12 November 2018](2018/sprint-143-update.md)</td>
+            <td rowspan="13">[12 November 2018](2018/sprint-143-update.md)</td>
             <td>REST API version 5.0</td><td>General</td><td>Future</td>
         </tr>
         <tr><td>New work item text editor</td><td>Boards</td><td>Future</td></tr>
@@ -167,7 +168,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Exclude files in artifact uploads</td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td>Provenance information on packages</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Azure Artifacts REST API documentation updates</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td>Test result trend widget</td><td>Reporting</td><td>Future</td></tr>
         <tr>
             <td rowspan="20">[22 October 2018](2018/sprint-142-update.md)</td>
             <td>New navigation is on for all users</td><td>General</td><td>N/A</td>

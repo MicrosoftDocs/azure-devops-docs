@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 02/12/2019
+ms.date: 02/13/2019
 description: In the Sprint 147 Update of Azure DevOps, we added proxy support across Azure Artifacts for build and package related tasks - Sprint 147 Update.
 ---
 
@@ -38,6 +38,10 @@ Azure Artifacts:
 
 - [Proxy support for Artifacts-related tasks](#proxy-support-for-artifacts-related-tasks)
 - [Delegate who can manage feeds](#delegate-who-can-manage-feeds)
+
+Reporting:
+
+- [Test result trend (Advanced) widget](#test-result-trend-advanced-widget)
 
 Wiki:
 
@@ -149,6 +153,28 @@ Until now, many Artifacts-related build tasks didn't provide full support for Az
 ### Delegate who can manage feeds
 
 In Azure Artifacts, [Project Collection Administrators](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions?view=azdevops&tabs=new-nav) (PCAs) have always been able to administer all feeds in an Azure DevOps organization. With this update, PCAs can also give this ability to other users and groups, thus delegating the ability to manage any feed.
+
+## Reporting
+
+### Test result trend (Advanced) widget
+
+The **Test result trend (Advanced) widget** is now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their Azure DevOps organization. It provides near real-time visibility into your test data for multiple builds and releases. The **Test result trend (Advanced) widget** displays a trend of your test results for your pipelines or across pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
+
+> [!div class="mx-imgBorder"]
+![Badge](_img/147_04.png)
+
+The **Test result trend (Advanced) widget** helps you find outliers in your test results and answer questions like: are tests taking longer to run than usual? What test file or pipeline is affecting my overall pass rate? What are my long running tests?
+
+To help you answer these questions, the widget provides these features:
+* Displays a trend of pass rate, and count of test results or test duration
+* Presents test results based on multiple build pipelines or release pipelines
+* Uses combined charting options to display two metrics over the same trend
+* Filters the test count over time by test outcome
+* Filters all your test results by branch or test
+* Stacks your metrics by test attributes such as **Priority** or **Environment**
+* Group you data on Test files, owner or pipelines
+
+The widget is highly configurable allowing you to use it for a wide variety of scenarios.
 
 ## Wiki
 

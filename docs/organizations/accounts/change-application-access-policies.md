@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -44,10 +44,6 @@ To continue, you'll need at least Basic access and organization owner permission
 
 ## Change application access policies
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
@@ -58,24 +54,8 @@ To continue, you'll need at least Basic access and organization owner permission
 
    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/application-connection-policy-settings.png)
 
-   > [!Note] 
+   > [!Note]
    > Anonymous access is used to access both private and public repos. Learn more at [Make your project public](../public/make-project-public.md).
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in as the organization owner to your organization (```https://dev.azure.com/{yourorganization}```).
-
-   [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
-
-2. From your organization toolbar, go to **Settings** > **Policy**.
-
-    ![Choose the gear icon, go to Policy](../../_shared/_img/settings/open-admin-settings-policy-horz.png)
-
-3. Review your application connection settings. Change these settings, based on your security policies.
-
-    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/connections.png)
-
----
 
 ## Related articles
 
