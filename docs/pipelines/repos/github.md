@@ -330,7 +330,7 @@ By default with GitHub pipelines, secrets associated with your build pipeline ar
 * These items, if your build uses them:
   * [Service connection](../library/service-endpoints.md) credentials
   * Files from the [secure files library](../library/secure-files.md)
-  * Build [variables](../process/variables.md#user-defined-variables) marked **secret**
+  * Build [variables](../process/variables.md#secret-variables) marked **secret**
 
 To bypass this precaution on GitHub pipelines, enable the **Make secrets available to builds of forks** check box. Be aware of this setting's effect on security.
 

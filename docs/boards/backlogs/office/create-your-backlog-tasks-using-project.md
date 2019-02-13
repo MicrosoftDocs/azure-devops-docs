@@ -1,5 +1,5 @@
 ---
-title: Create your backlog and tasks using Project
+title: Create your backlog and tasks using Microsoft Project
 titleSuffix: Azure Boards
 description: Add items, plan, order, and estimate your backlog of deliverables in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
@@ -14,14 +14,14 @@ ms.date: 11/19/2018
 ---
 
 
-# Create your backlog and tasks using Project 
+# Create your backlog and tasks using Microsoft Project 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Boards or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
+If Microsoft Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Azure Boards or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
 > [!IMPORTANT]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project. S Office Project integration and the **TFSFieldMapping** command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. You can continue to use Office Excel.  
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the **TFSFieldMapping** command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. You can continue to use Microsoft Excel.  
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this article](#differences).
 
@@ -36,21 +36,21 @@ Use this article to learn how to:
 
 ::: moniker range="<= tfs-2017"  
 > [!NOTE] 
->You can also manage projects using Project Professional and [Project Server synchronized with TFS](../../../reference/tfs-ps-sync/synchronize-tfs-project-server.md) , but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
+>You can also manage projects using Project Professional and [Project Server synchronized with TFS](../../../reference/tfs-ps-sync/synchronize-tfs-project-server.md), but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
 ::: moniker-end  
 
 
 ## Prerequisites 
 ::: moniker range=">= tfs-2017" 
 - Office Project 2010 or later version, including Office Project 365
-- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409) 
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in  Azure Boards or TFS. 
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 - Office Project 2007, Office Project 2010, or Office Project 2013
-- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409) 
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 ::: moniker-end  
 
@@ -73,7 +73,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 	> If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Connect to a project from Microsoft Project](_img/project/team-ribbon-project-2018.png)
+	> ![Connect to a project from Project](_img/project/team-ribbon-project-2018.png)
 
     Another way to start is to open a backlog query in Team Explorer and from the context menu, choose **Open Query in Microsoft Project**.
 
@@ -148,12 +148,12 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 	> [!TIP]  
 	>If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
 
-    ![Connect to a project from Microsoft Project](_img/create-your-backlog-tasks-using-project/IC658311.png)
+    ![Connect to a TFS project from Project](_img/create-your-backlog-tasks-using-project/IC658311.png)
 
     Another way to start is to open a backlog query in Team Explorer and from the context menu, choose **Open Query in Microsoft Project**.
 
 	> [!TIP]  
-	> If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
+	> If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
 4.  Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md).
 
@@ -167,7 +167,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
     ![Project plan bound to a project in TFS](_img/create-your-backlog-tasks-using-project/IC658312.png)
 
-5.  Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](http://office.microsoft.com/client/helppreview14.aspx?AssetId=HP010351693&lcid=1033&NS=WINPROJ&Version=14&tl=2&pid=CH010359308&CTT=4).
+5.  Add task information and then publish the project. To add a work item, specify the **Title**, **Work Item Type**, **Publish and Refresh**, and any other required fields. Resize and move columns using standard [Project methods](https://support.office.microsoft.com/client/HP010351693?lcid=1033&query=&NS=WINPROJ&Version=14&ShowNav=false&syslcid=1033&uilcid=1033&app=&msg=&origin=&ocmsassetID=HP010351693).
 
 	> [!TIP]  
 	> Set the **Publish and Refresh** field for a task to **Yes** if you want to have a work item created for it in TFS. For example, set user stories, backlog items, and tasks to be published and refreshed. However, any summary tasks that you create to group tasks or to assign milestones, set **Publish and Refresh** to **No**.
@@ -268,7 +268,7 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 
 ---
 
-To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/library/ms404686.aspx). This feature is available for both Azure Boards and TFS. 
+To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md). 
 
 ## Tips for working in Project and other Team Foundation clients
 

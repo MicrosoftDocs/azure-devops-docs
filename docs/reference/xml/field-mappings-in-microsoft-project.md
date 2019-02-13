@@ -1,7 +1,7 @@
 ---
-title: Project field mappings
+title: Microsoft Project field mappings
 titleSuffix: TFS
-description: Understand how data is mapped between Project and Team Foundation Server (TFS)
+description: Understand how data is mapped between Microsoft Project and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 0da29778-11c2-42e1-8876-e51abbc799f6
@@ -37,7 +37,7 @@ You can also prevent team members from changing calculated field values in Team 
 ##  Mapping field types  
  When you publish tasks from Project to TFS, Team Foundation copies the data to the work item database. Also, when tasks are refreshed, the field data is copied from the work item database to your Project plan. For the field data to be copied correctly, the field types in TFS and Project must be compatible. The following table lists which Project field types are compatible with TFS field types:  
   
-|**Work item field type**|**Microsoft Project field type**|  
+|**Work item field type**|**Project field type**|  
 |----------------------------------|--------------------------------------|  
 |DateTime|Datetime.|  
 |Double|Work, units, percentages, fractions, and any field type with a range of &plusmn;5.0 × 10<sup>-324</sup> to &plusmn;1.7 × 10<sup>308</sup>.|  
@@ -50,13 +50,13 @@ You can also prevent team members from changing calculated field values in Team 
   
 
 > [!IMPORTANT]  
-> Office Project does not populate the Resource Names field list with names of team members. Therefore, you must manually add names to the list. When you assign a work item to a resource in Office Project, you should specify the resource by its display name from Active Directory or the Address Book. If you assign a work item to a resource by alias or other shortened form of the name, you introduce an inconsistency that can cause validation errors.
+> Project does not populate the Resource Names field list with names of team members. Therefore, you must manually add names to the list. When you assign a work item to a resource in Project, you should specify the resource by its display name from Active Directory or the Address Book. If you assign a work item to a resource by alias or other shortened form of the name, you introduce an inconsistency that can cause validation errors.
  
- For more information about work item field types, see [Add or modify work item fields](../add-modify-field.md). For more information about Project field types, see the help about the pjField constant in the [Project 2013 developer documentation](http://msdn.microsoft.com/library/backlogs/office/ms512767.aspx).  
+ For more information about work item field types, see [Add or modify work item fields](../add-modify-field.md). For more information about Project field types, see the help about the pjField constant in the [Project 2013 developer documentation](/office/client-developer/project/project-2013-developer-documentation).  
   
 <a name="OfficeProjectFieldNames"></a> 
 ##  Project field names  
- In Project you can map any field name that starts with **pjtask** to a field in TFS. For example, you can map **pjTaskText10** to a TFS String field. These field names are used in the `ProjectField` attribute when you specify which TFS work item field maps to a Project field. For a complete list of the Microsoft Project field names, see the help about the pjField constant in the Microsoft Office 2003 Software Development Kit.  
+ In Project you can map any field name that starts with **pjtask** to a field in TFS. For example, you can map **pjTaskText10** to a TFS String field. These field names are used in the `ProjectField` attribute when you specify which TFS work item field maps to a Project field. For a complete list of the Project field names, see the help about the pjField constant in the Microsoft Office 2003 Software Development Kit.  
   
 > [!NOTE]  
 >  If you are using Project Server, there are additional fields that have "Enterprise" in the name, such as **pjTaskEnterpriseCost1**. TFS does not publish or refresh data to Project Server, unless you integrate it as described in [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md). Therefore, these field names are not supported with the Team Foundation add-in to Project.  
