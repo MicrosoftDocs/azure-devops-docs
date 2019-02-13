@@ -165,6 +165,17 @@ you can abandon the release using the shortcut menu that opens from the elipses 
 
 Note that you cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
 
+<a name="sendemail"></a>
+## How do I send release summaries by email?
+
+After a release is triggered and completed, you may want to email the summary to stakeholders.
+Use the **Send Email** option on the menu that opens from the elipses (**...**) icon in the **Pipeline** view of the pipeline. 
+
+![Emailing a release summary](_img/what-is-release-management/email-release-summary.png)
+
+In the **Send release summary mail** window you can further customize the information to be sent in the email
+by selecting only certain sections of the release summary.
+
 <a name="numbering"></a>
 ## How do I manage the names for new releases?
 

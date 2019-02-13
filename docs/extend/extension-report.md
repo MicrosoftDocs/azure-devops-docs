@@ -33,14 +33,6 @@ You can use search for text and dates to analyze and draw more insights from the
 
 For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. [Contact](#contact) section provided later in this topic for more details.
 
-## Sales transaction
-This tab is only available for paid extensions and gives the details of sales w.r.t. quantity and accounts to help understand how the extension is performing. 
-Selection of the users button gives the aggregated details of sales and churn i.e. number of new, upgrade, downgrade and cancelled user licenses respectively with the trend. 
-Selection of the accounts button gives similar aggregated details of sales and churn with respect to organization and its trend. 
-
-All transactional details for trials, new purchase, upgrade, downgrade and cancellations is available in details section. You can use search for text and dates to analyze and draw more insights. 
-This data can also be pivoted by organization to understand the lifecycle of an organization or sorted to understand the top organization w.r.t. user licensees / resources purchased. **Contact** feature is also available. 
-
 ## Ratings and Review
 This tab will give you the information of the average rating for the selected period with respect to overall rating, the average rating by number of reviewers, and the daily trend of average rating. The details section provides all the reviews and your responses in transactional view. 
 

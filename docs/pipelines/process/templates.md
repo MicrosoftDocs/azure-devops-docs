@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
-ms.date: 02/07/2019
+ms.date: 02/13/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -276,7 +276,8 @@ parameters:
 steps:
 - bash: |
     if [ -z "$SOLUTION" ]; then
-      echo ##vso[task.complete result=Failed;]Missing template parameter \"solution\"
+      echo "##vso[task.logissue type=error;]Missing template parameter \"solution\""
+      echo "##vso[task.complete result=Failed;]"
     fi
   env:
     SOLUTION: ${{ parameters.solution }}
@@ -289,7 +290,7 @@ steps:
     solution: ${{ parameters.solution }}
 ```
 
-To prove that the template fails if it's missing the required parameter:
+To show that the template fails if it's missing the required parameter:
 
 ```yaml
 # File: azure-pipelines.yml
