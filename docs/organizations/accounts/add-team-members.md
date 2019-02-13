@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/29/2019
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 # Add members to projects
@@ -39,10 +39,6 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 
 ## Add members to your project
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]  
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, or *organization owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
@@ -58,36 +54,6 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 4. Add users or groups.
 
     ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, *or organization owner*.
-
-   [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
-
-2. On the organization landing page, which is your projects page,  select your project.
-
-   ![The Projects list pane](_img/add-team-members/select-team-project-updated-ui.png)
-
-3. Invite members to your project.
-
-   ![On your project page, select the plus sign +](_img/add-team-members/invite-team-existing.png)
-
-    Adding members from the project page adds them to the default team for the project.
-
-    > a. To add a member to a different team, select **Project settings** > **Security**.
-
-    > b. On the **Security** page, in the left pane, select the team.
-
-    > c. In the right pane, select the **Members** view (next to **Permissions**), and then select **Add**.
-
-    ![Security page, manage project members](_img/add-team-members/security-manage-project-members.png)
-
-4. Add users or groups to teams.
-
-   ![The Add button](_img/add-team-members/invite-members.png)
-
----
 
  Enter the email addresses of the new users, separated by semicolons, or enter the display names of existing users. Add them one at a time or all at once.
 

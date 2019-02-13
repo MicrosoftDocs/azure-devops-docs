@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/19/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -22,21 +22,20 @@ The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
 * Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features. In some cases, these users get additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
 Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
 > [!NOTE]
 > You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) if your organization has seats available, or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) if not. Learn [how to add members to projects](add-team-members.md).
 >
-> When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization. 
+> When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization.
 
 To learn more, read [about access levels](../security/access-levels.md).
 
 ## Prerequisites
 
-You must have [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).   
-
+You must have [project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Manage users
 
@@ -46,10 +45,6 @@ The Users view shows key information per user in a table. In this view, you can 
 * Multi-select users and bulk edit their extensions and access.
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
-
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -78,32 +73,6 @@ The Users view shows key information per user in a table. In this view, you can 
     ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
 
 5. **Save** your changes.
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
-
-2. Open **Organization settings**.
-
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
-
-3. Select **Users** > **Add new users** to open the form.
-
-   > [!div class="mx-imgBorder"]  
-   >![Open Add new users dialog box](../../user-guide/_img/sign-up/add-new-users.png)
-
-4. Complete the form.
-
-   ![Web portal, organization admin context, Add new users dialog box](../../_shared/_img/add-user-dialog-prev.png)
-
-   * **Users**: Enter the Microsoft account's email address for the user. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
-   * **Access level**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
-   * **Add to projects**: Select the project that you named in the previous procedure.
-   * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
-
-5. Select **Add** to complete your invitation.
-
----
 
 ### How is *access* different from *permissions*?
 

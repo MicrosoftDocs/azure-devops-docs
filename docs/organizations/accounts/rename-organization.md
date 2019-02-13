@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/19/2019
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -26,12 +26,8 @@ You can change your organization name (URL) at any time in Azure DevOps.
 > [!NOTE]
 > An organization can't be renamed within one hour of the most recent rename operation.
 
-To change your organization URL, you need at least Basic access and organization owner permissions. 
+To change your organization URL, you need at least Basic access and organization owner permissions.
 [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
-
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
-
-# [New navigation](#tab/new-nav)
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
@@ -48,26 +44,6 @@ To change your organization URL, you need at least Basic access and organization
 4. Confirm that you want to rename your organization. Enter a new name for your organization and save your changes.
 
    ![Enter new organization name and save changes](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
-
-   [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
-
-2. Go to **Organization settings**.
-
-   ![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
-
-3. Under **Settings**, change your organization URL.
-
-   ![Change your organization name](_img/rename-vso-organization/vsorenameorganization.png)
-
-4. Confirm that you want to rename your organization. Enter the new name and **Save**.
-
-   ![Confirm rename of your organization and provide a new organization name](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
-
----
 
 Your organization is renamed.
 

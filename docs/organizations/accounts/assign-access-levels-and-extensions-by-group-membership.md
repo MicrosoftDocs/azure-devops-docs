@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/31/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions to users
@@ -26,10 +26,6 @@ To manage licenses and group rules, you must be a project collection administrat
 To assign an extension to a user (and consequently, a group) a PCA must first [install the extension on the organization](../../marketplace/install-extension.md).
 
 ## Assign required licenses
-
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -56,34 +52,6 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
 
 ![Group rule completed successfully](_img/assign-access-levels/group-rule-completed-successfully.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://<yourorganization>.visualstudio.com`).
-
-2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
-
-   ![Open Organization Settings](../../_shared/_img/settings/open-account-settings.png)
-
-3. Select **Security** and check the membership of the **Project Collection Administrators** group.
-
-   ![Project collection administrators group members](_img/assign-access-levels/project-collection-administrators-group-members-prev.png)
-
-4. Select **Users** > **Group rules**. This view shows you all of your created group rules.
-
-   ![View group rules](_img/assign-access-levels/view-group-rules.png)
-
-5. Select **Add a group rule**. Complete the next dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group.
-
-   ![Create a new group rule](_img/assign-access-levels/add-a-group-rule.png)
-
-6. To complete the assignment, select **Add**.
-
-   ![Add the group rule](_img/assign-access-levels/add-group-rule-dialog-new.png)
-
-A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
-
----
 
 ## Resolve assignment errors
 
