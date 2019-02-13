@@ -26,7 +26,7 @@ run Docker images, or execute other operations offered by the Docker CLI:
 After you have used the Docker task to sign in, the session is maintained for the duration of the job, allowing you to use follow-up tasks to execute any scripts by leveraging the login by the Docker task. 
 For example, you can use the Docker task to sign into ACR and then use a subsequent script to pull an image and scan the container image for vulnerabilities.
 
-See also [Docker Installer task](../tool/docker-installer.md).
+See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust for build and push](../../build/content-trust.md).
 
 ::: moniker range="> tfs-2018"
 

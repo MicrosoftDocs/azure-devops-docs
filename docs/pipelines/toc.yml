@@ -239,6 +239,8 @@
       href: get-started-multiplatform.md
     - name: Build a repo using the visual designer
       href: build/ci-build-github.md
+    - name: Use Content Trust
+      href: build/content-trust.md
   - name: Release
     items:
     - name: Connect to Azure
