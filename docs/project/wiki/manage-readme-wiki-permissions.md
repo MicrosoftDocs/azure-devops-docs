@@ -71,4 +71,3 @@ Users with [Stakeholder access](../../organizations/security/get-started-stakeho
 
 - [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
 - [Get Started with Git](../../repos/git/gitquickstart.md)
-- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
