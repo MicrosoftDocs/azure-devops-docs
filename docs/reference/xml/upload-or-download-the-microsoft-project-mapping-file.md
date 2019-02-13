@@ -105,7 +105,7 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
      The default Scrum template only maps the Remaining Work field to Project.  
   
     > [!NOTE]  
-    >  For a full list of all the Office Project field values for the ProjectField attribute, see [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md).  
+    >  For a full list of all Project field values for the ProjectField attribute, see [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md).  
   
 5.  (Optional) Indicate if the field is to be published but not refreshed. Add the `PublishOnly` attribute to the mapping section for that field and set the attribute to `true`. This attribute can be used to allow for team members to see a field value but not be able to change it in Team Foundation.  
   

@@ -103,6 +103,9 @@ Control options are available as keys on the `task` section.
   timeoutInMinutes: number  # how long to wait before timing out the task
 ```
 
+The timeout period begins when the task starts running. It does not include the
+time the task is queued or is waiting for an agent.
+
 > [!NOTE]
 > For the full schema, see [YAML schema for `task`](../yaml-schema.md#task).
 
@@ -126,6 +129,8 @@ when you want to temporarily take task out of the process for testing or for spe
 
 The timeout for this task in minutes. The default is zero (infinite timeout).
 Setting a value other than zero overrides the setting for the parent task job.
+The timeout period begins when the task starts running. It does not include the
+time the task is queued or is waiting for an agent.
 
 ### Azure Pipelines options
 

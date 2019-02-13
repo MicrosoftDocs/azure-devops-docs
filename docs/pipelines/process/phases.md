@@ -249,6 +249,9 @@ To avoid taking up resources when your job is hung or waiting too long, it's a g
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
 * For 30 minutes on Microsoft-hosted agents with a private project or private repository
 
+The timeout period begins when the job starts running. It does not include the
+time the job is queued or is waiting for an agent.
+
 # [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
