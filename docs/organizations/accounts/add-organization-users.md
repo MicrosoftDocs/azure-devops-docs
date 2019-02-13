@@ -10,7 +10,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/13/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -53,10 +53,6 @@ link to the organization page.
 
 To give other users access to your organization, add their email addresses.
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
@@ -73,30 +69,6 @@ To give other users access to your organization, add their email addresses.
    >![Web portal, organization admin context, Add new users dialog box](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.png)
 
    * **Users**: Enter the Microsoft account's email address for the user organization. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
-   * **Access level**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
-   * **Add to projects**: Select the project that you named in the previous procedure.
-   * **Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
-
-5. Select **Add** to complete your invitation.
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://<yourorganization>.visualstudio.com`).
-
-2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
-
-   ![Open Organization Settings](../../_shared/_img/settings/open-account-settings.png)
-
-3. Select **Users** > **Add new users** to open the form.
-
-   > [!div class="mx-imgBorder"]  
-   >![Open Add new users dialog box](../../user-guide/_img/sign-up/add-new-users.png)
-
-4. Complete the form.
-
-   ![Web portal, organization admin context, Add new users dialog box](../../_shared/_img/add-user-dialog-prev.png)
-
-   * **Users**: Enter the Microsoft account's email address for the user. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
    * **Access level**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
    * **Add to projects**: Select the project that you named in the previous procedure.
    * **Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).

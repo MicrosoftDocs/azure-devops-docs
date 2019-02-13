@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/18/2019
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -22,10 +22,6 @@ When you [create an organization](create-organization.md), you can choose the re
 
 ## Find your organization location
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
@@ -34,22 +30,6 @@ When you [create an organization](create-organization.md), you can choose the re
 3. Select **Overview**. The region is listed under Organization information.
 
    ![Find the region under the organization settings](_img/change-organization-location/organization-settings-region.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in as the organization owner to your organization (```https://dev.azure.com/{yourorganization}```).
-
-   [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
-
-2. Select **Organization settings**.
-
-    ![Choose the gear icon, go to Organization settings](../../_shared/_img/settings/open-account-settings.png)
-
-3. The region is listed under Organization information, next to  **Region**.
-
-   ![Organization settings, region location](_img/change-organization-location/organization-settings-region-prev.png)
-
----
 
 ## Change organization location
 

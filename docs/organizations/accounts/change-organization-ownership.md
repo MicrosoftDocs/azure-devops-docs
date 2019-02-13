@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/18/2019
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -40,10 +40,6 @@ Make sure the new owner has completed the following tasks:
 
 ## Change organization owner
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings** .
@@ -57,36 +53,5 @@ Make sure the new owner has completed the following tasks:
 4. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
    ![Enter and save a new organization owner](_img/change-organization-ownership/save-new-organization-owner.png)
-
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://<yourorganization>.visualstudio.com`).
-
-   [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md)
-
-2. To find the current organization owner, go to **Organization settings**.
-
-   ![Organization settings pane](../../_shared/_img/settings/open-account-settings.png)
-
-3. Find the current organization owner.
-
-   ![Find the current organization owner](_img/change-organization-ownership/find-organization-owner.png)
-
-4. To change the organization owner, select **X**.
-
-   ![Change current organization owner](_img/change-organization-ownership/change-organization-owner.png)
-
-5. Find and select the new organization owner.
-
-   ![Find and select the organization owner](_img/change-organization-ownership/vsofindneworganizationowner.png)
-
-   [Can't find the person you want?](faq-change-organization-ownership.md#NoNewOwner)
-
-6. **Save** your changes.
-
-   ![Select new organization owner, and save changes](_img/change-organization-ownership/vsosaveneworganizationowner.png)
-
----
 
    Your organization has a new owner.
