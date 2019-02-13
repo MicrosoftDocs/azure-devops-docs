@@ -4,7 +4,7 @@ author: erindormier
 ms.author: egeaney
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 11/14/2018
+ms.date: 2/12/2018
 description: In the Sprint 143 Update of Azure DevOps, we introduce draft pull requests and a new work item text editor
 ---
 
@@ -163,7 +163,10 @@ Previously, in order to exclude files from published artifacts, you would have t
 
 ### Provenance information on packages
 
-With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [NuGet](https://docs.microsoft.com/azure/devops/pipelines/targets/nuget?toc=/azure/devops/artifacts/toc.json&view=azure-devops&tabs=yaml), [npm](https://docs.microsoft.com/azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json&view=azure-devops&tabs=yaml), and [Maven](https://docs.microsoft.com/azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json&view=azure-devops) tasks in **Azure Pipelines**.
+With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/npm?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+), [NuGet](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/nuget?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+) and .NET Core, [Twine Authenticate](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pypi?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+) (for Python), and [Universal Packages](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/universal-packages?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml) tasks.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/143_10.png)
