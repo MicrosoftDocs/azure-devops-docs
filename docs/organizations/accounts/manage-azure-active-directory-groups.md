@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 # Access with Azure Active Directory groups
@@ -35,10 +35,6 @@ and differences in how you [control organization access with Microsoft accounts 
 
 ## Add an Azure AD group to an Azure DevOps group
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
@@ -56,32 +52,4 @@ and differences in how you [control organization access with Microsoft accounts 
 
     You [invite guests into Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
-5.	Add more users or groups, or save your changes if you're done.
-
-# [Previous navigation](#tab/previous-nav)
-
-1.	Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-	[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
-
-2.	Go to your project collection or project, depending on the group that you want to work on.
-
-3.  Go to the control panel by selecting the gear icon on the top navigation bar and **Security** on the menu.
-
-    ![Settings, choose security](../../_shared/_img/settings/settings-choose-security.png)
-
-4.	Select the group where you want to add your Azure AD group.
-
-    ![Select a group, Members, and Add](_img/manage-azure-ad-groups/vsogroupaddmemberbutton.png)
-
-5.	Find the Azure AD user or group that you want to add. Just start typing the name, alias, or display name. Then select it. You can get more details about a group and its members by choosing the contact card icon to the right of the name.
-
-    ![Browse directory for groups](_img/manage-azure-ad-groups/addaadgrouppanelbrowse.png)
-
-    You [invite guests into Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) 
-    and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you 
-    to add those guests to your organization, grant access to projects, assign extensions, and more.
-
-6.	Add more users or groups, or save your changes if you're done.
-
----
+5. Add more users or groups, or save your changes if you're done.

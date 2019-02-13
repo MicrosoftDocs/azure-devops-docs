@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/18/2019
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -55,8 +55,6 @@ To remove billing from your organization, you must be a project collection admin
 To delete your organization, you need at least Basic access and organization owner
 permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
 
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
@@ -76,24 +74,4 @@ permissions. [How do I find the organization owner?](faq-delete-restore-organiza
 
    [Need help?](faq-delete-restore-organization.md#get-support)
 
-# [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Choose ![gear icon](../../_img/icons/gear-icon.png), and  **Organization settings**.
-
-   ![Screenshot of Open Organization settings](../../_shared/_img/settings/open-account-settings.png)
-
-3. Select **Overview** > **Delete**.
-
-   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
-
-4. In the resulting dialog box, from the drop-down menu, choose your reason for deleting the organization. Then enter the name of your organization, and select **Delete**.
-
-   ![Screenshot of Delete Account dialog box](_img/delete-organization/delete-organization-popup.png)
-
-5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
-
-  [Need help?](faq-delete-restore-organization.md#get-support)
-
----
