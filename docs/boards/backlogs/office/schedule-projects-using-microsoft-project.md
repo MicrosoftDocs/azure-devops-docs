@@ -9,21 +9,24 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 02/22/2017  
+monikerRange: '< azure-devops-2019'
+ms.date: 02/11/2019  
 ---  
 
 # Schedule projects using Microsoft Project  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
+You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
+
 
 > [!IMPORTANT]  
-> You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Azure Boards or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the **TFSFieldMapping** command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. You can continue to use Microsoft Excel.  
 
 You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in Azure Boards and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 > [!NOTE]  
->For version compatibility and Office clients, see [Requirements and compatibility, Office](/tfs/server/compatibility#office).  
+> For version compatibility and Office clients, see [Requirements and compatibility, Office](/tfs/server/compatibility#office).  
  
 **Project team tab ribbon** 
 
@@ -50,9 +53,6 @@ By using manually scheduled tasks, which are indicated by the ![Pinned task icon
 
 Start and finish dates for autoscheduled tasks (![Auto Update Task Mode icon](_img/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.
 
-To learn more, see [Changes in Project 2010](http://go.microsoft.com/fwlink/?LinkId=194857).  
-
-
 ### Perform what-if analysis by inactivating select tasks (![Project 2010 Professional Edition](_img/tfs_oiproj_ribbon_proicon.png "TFS_OIProj_Ribbon_ProIcon") **Project Professional only**). 
 
 By using Active Mode, you can determine the impact to the schedule when you specify some tasks as inactive. When you mark a task as inactive, you maintain all the data that is associated with the task, but you remove it from consideration in the schedule and resource allocation. 
@@ -61,8 +61,7 @@ By using Active Mode, you can determine the impact to the schedule when you spec
 >When you inactivate a task in Project, you do not inactivate the task in Azure Boards and TFS. Inactive tasks are published and refreshed according to their **Publish and Refresh** assignment in the Project plan.   
 
 **Scalable 64-bit support**. With 64-bit compatibility, Project provides performance improvements to support creation of very large and complex projects.
-
-To learn more, see [Compatibility Between the 32-bit and 64-bit Versions of Office 2010](http://go.microsoft.com/fwlink/?LinkId=194863).    
+   
 
 <a name="download"></a>   
 ##  Add Project fields to TFS (On-premises XML)  
