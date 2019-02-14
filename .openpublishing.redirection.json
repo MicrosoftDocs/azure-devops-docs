@@ -1,6 +1,81 @@
 {
   "redirections": [
     {
+      "source_path": "docs/integrate/ide/extensions/overview.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/samples.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/sdk.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/add_new_language.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/add_tool_window.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/customize_template.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/extend_editor.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/extend_ui.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/develop_extensions/unlisted.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/help/gitter.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/help/help.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/help/msdn.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/publish_extensions/other_resources.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/publish_extensions/publish.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/ide/extensions/hello_world.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/extend/test/discover-menu-group-ids.md",
       "redirect_url": "/azure/devops/extend/index",
       "redirect_document_id": true
@@ -1847,17 +1922,17 @@
     },
     {
       "source_path": "docs/collaborate/campfire.md",
-      "redirect_url": "/azure/devops/service-hooks/services/campfire",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/collaborate/flowdock.md",
-      "redirect_url": "/azure/devops/service-hooks/services/flowdock",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/collaborate/hipchat.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hipchat",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -2947,42 +3022,42 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/appveyor-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/appveyor",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/azure-service-bus-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/azure-service-bus",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/azurestorage-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/azure-storage",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/bamboo-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/bamboo",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/campfire-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/campfire",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/flowdock-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/flowdock",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/hipchat-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hipchat",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/hubot-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hubot",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -2992,7 +3067,7 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/myget-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/myget",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -3007,7 +3082,7 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/uservoice-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/uservoice",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -3017,12 +3092,72 @@
     },
     {
       "source_path": "docs/integrate/service-hooks/zapier-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/zapier",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/service-hooks/zendesk-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/zendesk",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/appveyor.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/azure-service-bus.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/azure-storage.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/bamboo.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/campfire.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/flowdock.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/hipchat.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/hubot.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/myget.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/uservoice.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/zapier.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/service-hooks/services/zendesk.md",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {

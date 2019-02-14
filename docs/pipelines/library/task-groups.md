@@ -85,6 +85,8 @@ to change each one individually.
 
 4. Save your updated pipeline.
 
+::: moniker range="> tfs-2017"
+
 ## Manage task groups
 
 All the task groups you create in the current project are listed in
@@ -111,6 +113,8 @@ Select a task group name to open the details page.
 * In the **References** tab you can expand lists of all the build and release pipelines,
   and other task groups, that use (reference) this task group.
   This is useful to ensure changes do not have unexpected effects on other processes.
+
+::: moniker-end
 
 ::: moniker range="> tfs-2018"
 

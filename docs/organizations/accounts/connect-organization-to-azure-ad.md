@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/21/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -62,16 +62,12 @@ Make sure all Azure DevOps users are in Azure AD by completing the following ste
 > [!NOTE]
 > Any user that isn't in your Azure AD is a "historic" user and can't sign in. However, the user's history is retained.
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
-
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-6. Select **Users**.
+3. Select **Users**.
   ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
-7. Compare your Azure DevOps email list with your Azure Active Directory email list.
+4. Compare your Azure DevOps email list with your Azure Active Directory email list.
 
    * If any users exist on the **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
 
@@ -86,30 +82,6 @@ Make sure all Azure DevOps users are in Azure AD by completing the following ste
     If you have recently modified these settings or assigned the *guest inviter* role to a user, there might be a 15 minute to 60 minute wait before the changes take effect.
 
    * If no paid license exists in your Azure AD, every invited user gets the rights that the Azure AD free account offers.
-
-# [Previous navigation](#tab/previous-nav)
-
-4. Sign in to your organization and go to **Organization settings**.
-  ![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
-5. Go to **Users**.
-  ![The Users tab](_img/connect-organization-to-aad/select-users-to-review-email-addresses-for-azure-ad.png)
-6. Compare the list of email addresses in Azure DevOps with the list of email addresses in your Azure Active Directory.
-
-   * If any users exist on the **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
-
-    ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
-
-    These guests can be external to your organization (*User@othercompany.com*) or existing MSA users (*user@outlook.com* or *user@gmail.com*).
-
-   * If you don't have permissions to invite users, update the **User Settings** page.
-
-      ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
-
-    If you have recently modified these settings or assigned the *guest inviter* role to a user, there might be a 15 minute to 60 minute wait before the changes take effect.
-
-   If no paid license exists in your Azure AD, every invited user gets the rights that the Azure AD free account offers.
-
----
 
 ## Connect your organization to your Azure AD
 
