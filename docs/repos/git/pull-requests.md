@@ -169,7 +169,7 @@ Initiate pull requests directly from Visual Studio.
 
 ### From the Azure DevOps Services CLI
 
-You can now manage pull requests and other resources in Azure DevOps Services and Team Foundation Server 2017 Update 2 or later from the command line with the **[Azure DevOps Services CLI](/cli/vsts/overview)**.
+You can now manage pull requests and other resources in Azure DevOps Services and Team Foundation Server 2017 Update 2 or later from the command line with the **[Azure DevOps Services CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest)**.
 
 For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
 
