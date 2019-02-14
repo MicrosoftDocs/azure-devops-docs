@@ -31,7 +31,7 @@ Before you read this topic, you should understand the kind of build pipeline you
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)] Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, and **feedName** is the feed that you want to publish to:
 
 ```yaml
@@ -57,7 +57,7 @@ For a list of other options, see the [npm task](../tasks/package/npm.md).
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 YAML is not supported in TFS.
 ::: moniker-end
 
