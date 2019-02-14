@@ -16,8 +16,6 @@ monikerRange: '>= tfs-2015'
 
 # Artifacts in Azure Pipelines
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
-
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
@@ -39,6 +37,7 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
 
 # [YAML](#tab/yaml)
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -47,6 +46,11 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop
 ```
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+YAML is not supported in TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -77,6 +81,7 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
 
 # [YAML](#tab/yaml)
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -89,6 +94,12 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop2
 ```
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+YAML is not supported in TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -138,6 +149,7 @@ The completed build delivers two sets of artifacts.
 
 # [YAML](#tab/yaml)
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -150,6 +162,12 @@ The completed build delivers two sets of artifacts.
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop
 ```
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+YAML is not supported in TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -207,6 +225,7 @@ You can download an artifact directly from a pipeline for use in debugging.
 
 # [YAML](#tab/yaml)
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
 
@@ -217,6 +236,12 @@ You can download an artifact directly from a pipeline for use in debugging.
     artifactName: 'drop'
     downloadPath: '$(System.ArtifactsDirectory)'
 ```
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+YAML is not supported in TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -264,7 +289,7 @@ Use these tasks to publish artifacts:
 
 ## Explore, download, and deploy your artifacts
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
 
@@ -272,7 +297,7 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 < azure-devops"
+::: moniker range=">=tfs-2015 < azure-devops-2019"
 
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
@@ -284,7 +309,7 @@ From here, you can explore or download the artifacts.
 
 You can also use Azure Pipelines to deploy your app by using the artifacts that you've published. See [Artifacts in Azure Pipelines releases](../release/artifacts.md).
 
-::: moniker range=">=tfs-2015 < azure-devops"
+::: moniker range=">=tfs-2015 < azure-devops-2019"
 <a name="unc-file-share" />
 
 ## Publish from TFS to a UNC file share
