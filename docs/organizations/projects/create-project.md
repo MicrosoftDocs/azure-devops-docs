@@ -278,7 +278,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ## Create a project from the command line or scripts
 
-You can create and retrieve projects and other objects from the command line or scripts using the CLI. Check out the [CLI documentation](/cli/vsts/overview?view=vsts-cli-latest) to learn more.
+You can create and retrieve projects and other objects from the command line or scripts using the CLI. Check out the [CLI documentation](/cli/azure/ext/azure-devops/?view=azure-cli-latest) to learn more.
 
 ::: moniker-end
 

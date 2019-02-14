@@ -25,6 +25,8 @@ Already familiar with the concepts and want to jump right in? Start with these h
 - [Use nuget.org as an upstream](../nuget/upstream-sources.md)
 - [Use npmjs.com as an upstream](../npm/upstream-sources.md)
 
+> **NOTE:** Custom upstream sources are currently only supported for npm.
+
 ## Benefits of upstream sources
 
 Upstream sources enable you to manage all of your product's dependencies in a single feed. We recommend publishing all of the packages for a given product to that product's feed, and managing that product's dependencies from remote feeds in the same feed, via upstream sources. This setup has a few benefits:

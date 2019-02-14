@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -56,5 +56,5 @@ A backup billing manager is added to your organization.
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps ricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
