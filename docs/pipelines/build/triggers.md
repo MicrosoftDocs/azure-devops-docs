@@ -239,7 +239,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-### GitHub, GitHub Enterprise, Subversion, and Bitbucket Cloud
+### GitHub, GitHub Enterprise Server, Subversion, and Bitbucket Cloud
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
 

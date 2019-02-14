@@ -60,7 +60,7 @@ You can choose from the following repository types:
 | Bitbucket Cloud           |No|Yes|No|No|
 | External Git (generic)    |No|Yes|Yes|Yes|
 | GitHub                    |Yes|Yes|No|No|
-| GitHub Enterprise         |Yes|Yes|TFS 2018.2 or 2018.3|No|
+| GitHub Enterprise Server  |Yes|Yes|TFS 2018.2 or 2018.3|No|
 | Subversion                |No|Yes|Yes|No|
 
 ## Specific repository details
