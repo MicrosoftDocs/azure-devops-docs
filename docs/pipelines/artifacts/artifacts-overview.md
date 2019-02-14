@@ -16,8 +16,6 @@ monikerRange: '>= tfs-2015'
 
 # Artifacts in Azure Pipelines
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
-
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
@@ -31,7 +29,7 @@ The following table describes supported artifact types in Azure Pipelines.
 | Supported artifact types                              | Description                                                                                                              |
 |------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | [Build artifacts](build-artifacts.md)                 | Build artifacts are the files that you want your build to produce. Build artifacts can be nearly anything that your team needs to test or deploy your app. For example, you've got .dll and .exe executable files and a .PDB symbols file of a C# or C++ .NET Windows app. |
-| [Pipeline artifacts (preview)](pipeline-artifacts.md) | You can use pipeline artifacts to help store build outputs and move intermediate files between jobs in your pipeline. Pipeline artifacts are tied to the pipeline that they're created in. You can use them within the pipeline and download them from the build, as long as the build is retained. Pipeline artifacts are the new generation of build artifacts. They take advantage of existing services to dramatically reduce the time it takes to store outputs in your pipelines. |
+| [Pipeline artifacts (preview)](pipeline-artifacts.md) | You can use pipeline artifacts to help store build outputs and move intermediate files between jobs in your pipeline. Pipeline artifacts are tied to the pipeline that they're created in. You can use them within the pipeline and download them from the build, as long as the build is retained. Pipeline artifacts are the new generation of build artifacts. They take advantage of existing services to dramatically reduce the time it takes to store outputs in your pipelines. **Only available in Azure DevOps Services**. |
 | [Maven](maven.md)                         | You can publish Maven artifacts to Azure Artifacts feeds or Maven repositories.                                          |
 | [npm](npm.md)                              | You can publish npm packages to Azure Artifacts or npm registries.                                                       |
 | [NuGet](nuget.md)                          | You can publish NuGet packages to Azure Artifacts, other NuGet services (like NuGet.org), or internal NuGet repositories. |

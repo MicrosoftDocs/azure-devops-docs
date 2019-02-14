@@ -36,7 +36,7 @@ There are various ways to create NuGet packages during a build. If you're alread
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 To create a package, add the following snippet to your azure-pipelines.yml file.
 
 ```yaml
@@ -54,7 +54,7 @@ The NuGet task supports a number of options. The following list describes some o
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -96,7 +96,7 @@ When you create a package in continuous integration (CI), you can use Semantic V
 
 #  [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 This example shows how to use the date and time as the prerelease label.
 
 ```yaml
@@ -119,7 +119,7 @@ For a list of other possible values for `versioningScheme`, see the [NuGet task]
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 YAML is not supported in TFS.
 ::: moniker-end
 
@@ -144,7 +144,7 @@ In the previous section, you learned how to create a package with every build. W
 
 #  [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 To publish to an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed. To learn more about permissions to Package Management feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions). Add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
@@ -172,7 +172,7 @@ To publish a package to a NuGet feed, add the following snippet to your `azure-p
 ```
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 YAML is not supported in TFS.
 ::: moniker-end
 
