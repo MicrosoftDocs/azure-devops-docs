@@ -120,7 +120,7 @@ Azure Pipelines and TFS support a variety of service connection types by default
 * [External Git service connection](#sep-extgit)
 * [Generic service connection](#sep-generic)
 * [GitHub service connection](#sep-github)
-* [GitHub Enterprise service connection](#sep-githubent)
+* [GitHub Enterprise Server service connection](#sep-githubent)
 * [Jenkins service connection](#sep-jenkins)
 * [Kubernetes service connection](#sep-kuber)
 * [npm service connection](#sep-npm)
@@ -294,7 +294,7 @@ Defines and secures a connection to a Docker registry.
 
 Defines and secures a connection to a Git repository server.
 Note that there is a specific service connection for [GitHub](#sep-github)
-and [GitHub Enterprise](#sep-githubent) connections.
+and [GitHub Enterprise Server](#sep-githubent) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -328,7 +328,7 @@ Defines and secures a connection to any other type of service or application.
 
 Defines a connection to a GitHub repository.
 Note that there is a specific service connection for [External Git servers](#sep-extgit)
-and [GitHub Enterprise](#sep-githubent) connections.
+and [GitHub Enterprise Server](#sep-githubent) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -358,7 +358,7 @@ Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
 *****
 
-<h3 id="sep-githubent">GitHub Enterprise service connection</h3>
+<h3 id="sep-githubent">GitHub Enterprise Server service connection</h3>
 
 Defines a connection to a GitHub repository.
 Note that there is a specific service connection for [External Git servers](#sep-extgit)
@@ -374,7 +374,7 @@ and [standard GitHub service connections](#sep-github).
 | User name | Required for Username and Password authentication. The username to connect to the service. |
 | Password | Required for Username and Password authentication. The password for the specified username. |
 | OAuth configuration | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
-| GitHub Enterprise configuration URL| The URL is fetched from OAuth configuration. |
+| GitHub Enterprise Server configuration URL| The URL is fetched from OAuth configuration. |
 <p />
 
 [How do I create a new service connection?](#create-new)
