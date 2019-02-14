@@ -10,7 +10,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 08/31/2018
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -69,7 +69,34 @@ steps:
 
 ### Signing and provisioning
 
-To sign and provision your app, see [Sign your mobile app during CI](../apps/mobile/app-signing.md).
+An Xcode app must be signed and provisioned to run on a device or be published to the App Store. The signing and provisioning process needs access to your P12 signing certificate and one or more provisioning profiles. The [Install Apple Certificate](../tasks/utility/install-apple-certificate.md) and [Install Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) tasks make these available to Xcode during a build.
+
+The following snippet installs an Apple P12 certificate and provisioning profile in the build agent's Keychain. Then, it builds, signs, and provisions the app with Xcode. Finally, the certificate and provisioning profile are automatically removed from the Keychain at the end of the build, regardless of whether the build succeeded or failed. For more details, see [Sign your mobile app during CI](../apps/mobile/app-signing.md).
+
+```yaml
+# The `certSecureFile` and `provProfileSecureFile` files are uploaded to the Azure Pipelines secure files library where they are encrypted.
+# The `P12Password` variable is set in the Azure Pipelines pipeline editor and marked 'secret' to be encrypted.
+steps:
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'chrisid_iOSDev_Nov2018.p12'
+    certPwd: $(P12Password)
+
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provProfileSecureFile: '6ffac825-ed27-47d0-8134-95fcf37a666c.mobileprovision'
+
+- task: Xcode@5
+  inputs:
+    actions: 'build'
+    scheme: ''
+    sdk: 'iphoneos'
+    configuration: 'Release'
+    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+    signingOption: 'default' # Options: nosign, default, manual, auto
+    useXcpretty: 'false' # Makes it easier to diagnose build failures
+```
 
 ### CocoaPods
 
