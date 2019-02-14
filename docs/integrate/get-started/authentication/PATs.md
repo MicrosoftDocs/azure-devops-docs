@@ -55,7 +55,7 @@ public static async void GetBuilds()
 						string.Format("{0}:{1}", "", personalaccesstoken))));
 
 			using (HttpResponseMessage response = client.GetAsync(
-						"https://dev.azure.com/{organization}/_apis/build-release/builds").Result)
+						"https://dev.azure.com/{organization}/{project}/_apis/build/builds?api-version=5.0").Result)
 			{
 				response.EnsureSuccessStatusCode();
 				string responseBody = await response.Content.ReadAsStringAsync();
