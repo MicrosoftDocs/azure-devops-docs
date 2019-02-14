@@ -111,7 +111,7 @@ git push origin users/frank/feature
 ```
 
 > [!NOTE]
-> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/vsts/overview?view=vsts-cli-latest).
+> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest).
 
 ---
 
