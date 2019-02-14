@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 
 monikerRange: 'azure-devops'
 ---
 
@@ -23,10 +23,6 @@ You can seamlessly replace existing solutions with group-based licensing to more
 The most important thing to avoid is a situation where migration to group-based licensing results in users temporarily losing their currently assigned licenses. To eliminate the risk of users losing access to services and their data, avoid any process that might result in the removal of licenses.
 
 ## Add a group rule
-
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -48,31 +44,6 @@ The most important thing to avoid is a situation where migration to group-based 
 5. Add members and select **Add**.
 
    ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
-
-2. Open Organization settings.
-
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
-
-3. Select **Users** > **Group rules**.
-
-   ![Select group rules for migration](_img/migrate-to-group-based-resource-management/select-group-rules-prev.png)
-
-4. Make sure all required users are members of the groups. Highlight a group rule and select **Manage members**.
-
-   ![Highlight a group rule and select manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
-
-   > [!NOTE]
-   > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
-
-5. Add members and select **Add**.
-
-   ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
-
----
 
 When the same access level or extension is assigned to the user both directly and through a group, the user consumes only one access level or extension. No additional licenses are required to perform the migration.
 

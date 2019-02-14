@@ -1,14 +1,13 @@
 ---
 title: Docker task
-titleSuffix: Azure Pipelines & TFS
 description: Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container Registry.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
-ms.manager: dastahel
-ms.author: dastahel
-ms.date: 01/18/2019
+ms.manager: shasb
+ms.author: shasb
+ms.date: 02/12/2019
 monikerRange: '> tfs-2018'
 ---
 
@@ -27,21 +26,22 @@ run Docker images, or execute other operations offered by the Docker CLI:
 After you have used the Docker task to sign in, the session is maintained for the duration of the job, allowing you to use follow-up tasks to execute any scripts by leveraging the login by the Docker task. 
 For example, you can use the Docker task to sign into ACR and then use a subsequent script to pull an image and scan the container image for vulnerabilities.
 
+See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust for build and push](../../build/content-trust.md).
+
 ::: moniker range="> tfs-2018"
 
-## Container registry types
+## Login command
 
 ### Azure Container Registry
 
-Build a Dockerfile into an image with a registry-qualified name and multiple tags such as the build ID, source branch name, and Git tags:
-
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
+<tr><td><code>command</code><br/>Command</td><td>(Required) Use the value <b>login</b> when running the task.<br/>Default value: build</td></tr>
 <tr><td><code>containerregistrytype</code><br/>Container registry type</td><td>(Optional) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
 <tr><td><code>azureSubscriptionEndpoint</code><br/>Azure subscription</td><td>(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.</td></tr>
 <tr><td><code>azureContainerRegistry</code><br/>Azure container registry</td><td>(Required) Name of the Azure Container Registry.</td></tr>
 </table>
 
-This YAML example specifies the inputs for Azure Container Registry:
+This YAML example demonstrates logging into Azure Container Registry:
 
 ```YAML
 variables:
@@ -51,9 +51,9 @@ steps:
 - task: Docker@1
   displayName: Container registry login
   inputs:
+    command: login
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
     azureContainerRegistry: $(azureContainerRegistry)
-    command: login
 ```
 
 ### Other container registries
@@ -61,19 +61,20 @@ steps:
 The **containerregistrytype** input is required when using any container registry other than ACR. Use **containerregistrytype: Container Registry** in this case.
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
+<tr><td><code>command</code><br/>Command</td><td>(Required) Use the value <b>login</b> when running the task.<br/>Default value: build</td></tr>
 <tr><td><code>containerregistrytype</code><br/>Container registry type</td><td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
 <tr><td><code>dockerRegistryEndpoint</code><br/>Docker registry service connection</td><td>(Required) [Docker registry service connection](../../library/service-endpoints.md).</td></tr>
 </table>
 
-This YAML example specifies a container registry other than ACR where **Contoso** is the name of a Docker registry service connection:
+This YAML example demonstrates logging into a container registry other than ACR. **Contoso** is the name of the Docker registry service connection:
 
 ```YAML
 - task: Docker@1
   displayName: Container registry login
   inputs:
+    command: login
     containerregistrytype: Container Registry
     dockerRegistryEndpoint: Contoso
-    command: login
 ```
 
 ## Build command
@@ -92,6 +93,8 @@ This YAML example specifies a container registry other than ACR where **Contoso*
 </table>
 
 This YAML example builds an image with the image name qualified using the container registry hostname as specified in the inputs associated with Azure Container Registry:
+builds an image with the image name qualified using the container registry hostname as specified in the inputs associated with Azure Container Registry:
+
 
 ```YAML
 - task: Docker@1
@@ -194,23 +197,6 @@ This YAML example executes the **run** command:
 
 ```
 
-## Login command
-
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>command</code><br/>Command</td><td>(Required) Use the value <b>login</b> when running the task.<br/>Default value: build</td></tr>
-</table>
-
-This YAML example logs into a container registry:
-
-```YAML
-- task: Docker@1
-  displayName: Container registry login
-  inputs:
-    command: login
-    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-    azureContainerRegistry: $(azureContainerRegistry)
-```
-
 ## Logout command
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
@@ -232,7 +218,7 @@ This YAML example logs out of a container registry:
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>dockerHostEndpoint</code><br/>Docker host service connection</td><td>(Optional) Select a Docker host connection. Defaults to the agent's host.</td></tr>
-<tr><td><code>enforceDocker</code></br>NamingConvention<br/>Force the image name to follow Docker naming conventions</td><td>(Optional) If enabled, the Docker image name will be modified to follow Docker naming conventions. Converts upper case characters to lower case and removes spaces in the image name.<br/>Default value: true</td></tr>
+<tr><td><code>enforceDocker<br/>NamingConvention</code><br/>Force the image name to follow Docker naming conventions.</td><td>(Optional) If enabled, the Docker image name will be modified to follow Docker naming conventions. Converts upper case characters to lower case and removes spaces in the image name.<br/>Default value: true</td></tr>
 <tr><td><code>memoryLimit</code><br/>Memory limit</td><td>(Optional) The maximum amount of memory available to the container as a integer with optional suffixes; for example, <b>2GB</b>.</td></tr>
 </table>
 
@@ -242,8 +228,3 @@ This YAML example logs out of a container registry:
 
 This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->

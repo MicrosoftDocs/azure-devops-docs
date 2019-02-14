@@ -239,6 +239,8 @@
       href: get-started-multiplatform.md
     - name: Build a repo using the visual designer
       href: build/ci-build-github.md
+    - name: Use Content Trust
+      href: build/content-trust.md
   - name: Release
     items:
     - name: Connect to Azure
@@ -560,6 +562,8 @@
         href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
     - name: Tool tasks
       items:
+      - name: Docker Installer
+        href: tasks/tool/docker-installer.md
       - name: .NET Core Tool Installer
         href: tasks/tool/dotnet-core-tool-installer.md
       - name: Go Tool Installer

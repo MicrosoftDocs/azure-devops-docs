@@ -4,7 +4,7 @@ author: erindormier
 ms.author: egeaney
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 11/14/2018
+ms.date: 2/13/2018
 description: In the Sprint 143 Update of Azure DevOps, we introduce draft pull requests and a new work item text editor
 ---
 
@@ -44,9 +44,6 @@ Azure Artifacts:
 - [Provenance information on packages](#provenance-information-on-packages)
 - [Azure Artifacts REST API documentation updates](#azure-artifacts-rest-api-documentation-updates)
 
-Reporting:
-
-- [Test result trend widget](#changes-to-default-permissions-for-new-projects)
 
 ## General
 
@@ -163,7 +160,10 @@ Previously, in order to exclude files from published artifacts, you would have t
 
 ### Provenance information on packages
 
-With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [NuGet](https://docs.microsoft.com/azure/devops/pipelines/targets/nuget?toc=/azure/devops/artifacts/toc.json&view=azure-devops&tabs=yaml), [npm](https://docs.microsoft.com/azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json&view=azure-devops&tabs=yaml), and [Maven](https://docs.microsoft.com/azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json&view=azure-devops) tasks in **Azure Pipelines**.
+With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/npm?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+), [NuGet](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/nuget?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+) and .NET Core, [Twine Authenticate](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pypi?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
+) (for Python), and [Universal Packages](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/universal-packages?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml) tasks.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/143_10.png)
@@ -172,25 +172,6 @@ With this update, we've made it a bit easier to understand the provenance of you
 
 With this sprint's update, we're rolling out substantial updates to the documentation of the Azure Artifacts REST APIs, which should make it easier to develop against them in your own applications.
 
-## Reporting
-
-### Test result trend widget
-
-The **Test result trend widget** is now available for those who have installed the [Analytics Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) on their Azure DevOps organization. It provides near real-time visibility into your test data for multiple builds and releases. The **Test results trend widget** displays a trend of your test results for your pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
-
-> [!div class="mx-imgBorder"]
-![Test result widget](_img/143_01.png)
-
-The **Test result trend widget** helps you to find outliers in your test results and answer questions like what tests are taking longer to run than usual or what micro services are affecting my pass rate?
-To help you answer these questions, the widget provides these features:
-* Displays a trend of pass rate, and count of test results or test duration
-* Presents test results based on multiple build pipelines or release pipelines
-* Uses combined charting options to display two metrics over the same trend
-* Filters the test count over time by test outcome
-* Filters all your test results by branch or test
-* Stacks your metrics by test attributes such as **Priority** or **Environment**
-
-The widget is highly configurable allowing you to use it for a wide variety of scenarios.
 
 ## Next steps
 
