@@ -10,7 +10,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/10/2018  
+ms.date: 02/14/2019  
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,54 +29,35 @@ A subscription lets you control what your team should be notified about and how 
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
-	# [New navigation](#tab/new-nav)  
-	::: moniker range=">= azure-devops-2019"  
+    ::: moniker range=">= azure-devops-2019"  
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
-	::: moniker-end
-
-    ::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
-    [!INCLUDE [new-navigation-not-supported](../_shared/new-navigation-not-supported.md)]
     ::: moniker-end
 
-	# [Previous navigation](#tab/previous-nav)  
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
+    ::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
    ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)  
-	::: moniker-end  
-
-	::: moniker range="azure-devops-2019"  
-	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
-	::: moniker-end  
-
-	---
+	::: moniker-end
 
 2. Select **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
-	# [New navigation](#tab/new-nav)  
-	::: moniker range=">= azure-devops-2019"  
-	![New subscription](_img/new-subscription-newnav.png)  
-	::: moniker-end  
+    ::: moniker range=">= azure-devops-2019"  
+    ![New subscription](_img/new-subscription-newnav.png)  
+	::: moniker-end
 
-	# [Previous navigation](#tab/previous-nav)  
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
+    ::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
    ![New subscription](_img/new-subscription.png)
-	::: moniker-end  
+	::: moniker-end
 
-	::: moniker range="azure-devops-2019"  
-	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
-	::: moniker-end  
-	---
-	
 3. Select the type of activity you want your team to be notified of.
-	
-	![Select event category and template](_img/new-sub-page1.png)
+
+    ![Select event category and template](_img/new-sub-page1.png)
 
 4. Provide a description to help you identify the subscription later.
 
-	![Select event category and template](_img/new-sub-description.png)
+    ![Select event category and template](_img/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
-	![Select role](_img/new-sub-team-delivery-by-role.png)
+    ![Select role](_img/new-sub-team-delivery-by-role.png)
 
    You can choose one of the following delivery options:
    * **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
@@ -88,13 +69,13 @@ A subscription lets you control what your team should be notified about and how 
 
 6. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
-	![Select scope](_img/new-sub-scope.png)
+    ![Select scope](_img/new-sub-scope.png)
 
 7. Optionally configure additional filter criteria.
 
-	![Select scope](_img/new-sub-filter-conditions.png)
+    ![Select scope](_img/new-sub-filter-conditions.png)
 
-7. Select **Finish** to save the new subscription.
+8. Select **Finish** to save the new subscription.
 
 <a name="manage" />
 
@@ -110,11 +91,10 @@ Choose the default method for your team to receive notifications by updating the
 
    ![Delivery settings](_img/delivery-settings-newnav.png)
 
-
 3. Choose which option best fits your team's needs:  
 
-	![Delivery settings options](_img/delivery-settings-options.png)
+    ![Delivery settings options](_img/delivery-settings-options.png)
 
 ## Related articles
 
-- [Manage personal notification settings](howto-manage-personal-notifications.md)  
+* [Manage personal notification settings](howto-manage-personal-notifications.md)  
