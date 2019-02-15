@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/12/2018
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,43 +24,33 @@ As changes occur to your code base, builds, work items, and other operations, yo
 
 In this tutorial, you learn how to do the following tasks:
 
-> [!div class="checklist"]   
-> * View your notifications    
-> * Add a custom subscription      
+> [!div class="checklist"]
+> * View your notifications
+> * Add a custom subscription
 > * Unsubscribe or opt out of a team or project subscription
 
 ## View your personal notifications
 
 From the web portal, select the icon with your initials or picture, and then select **Notification settings** from the drop-down menu.
-
-[!INCLUDE [new-navigation-7](../_shared/new-navigation-7.md)]
-
-# [New navigation](#tab/new-nav)
-
+::: moniker range=">= azure-devops-2019"
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
+::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
+::: moniker range="<= tfs-2018"
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
-   [!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]   
-
----
+::: moniker-end
 
 ## View all subscriptions
 
 This view shows all subscriptions that you have created or that have been created by an administrator. Subscriptions let you control what you are notified about. Those notifications you're subscribed to are indicated with the State as **On**.
 
-# [New navigation](#tab/new-nav)
- 
+::: moniker range=">= azure-devops-2019"
 <img src="_img/unsubscribe-personal-notifications-newnav.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
+::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
+::: moniker range="<= tfs-2018"
 <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
-
-[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]
-
----
+::: moniker-end
 
 A subscription can be just for you, or if you are a team admin, can be shared by everyone in the team.
 
@@ -70,19 +60,15 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 1. From your Notifications page, select **New subscription**.
 
-   # [New navigation](#tab/new-nav)
-
+::: moniker range=">= azure-devops-2019"
    <img src="_img/manage-personal-notifications-new-subscription-newnav.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
+::: moniker-end
 
-   # [Previous navigation](#tab/previous-nav)
-
+::: moniker range="<= tfs-2018"
    <img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
-   
-	[!INCLUDE [temp](../_shared/previous-navigation-not-supported-azd.md)]
-  
-   ---
+::: moniker-end
 
-2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
+1. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
 	Here we choose to get notified when a pull request is created within a specific project, Fabrikam Fiber.
 

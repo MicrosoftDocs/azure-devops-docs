@@ -9,9 +9,9 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
+ms.date: 02/14/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 12/07/2018
 ---
 
 # About projects and scaling your organization
@@ -52,7 +52,7 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 When you connect to Azure DevOps Services or TFS, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 You can scale your organization in the following ways:
 
 - To support different business units, you can add projects
@@ -81,36 +81,25 @@ Both Azure DevOps Services and TFS are enterprise-ready platforms that support t
 
 You can view the projects defined for your organization by opening the **Projects** page.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/about-projects/projects-hub-vert.png)  
 
-0. From there, you can choose a project from the set of projects listed. 
+2. From there, you can choose a project from the set of projects listed.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017"
-
-0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects, horizontal nav](../../_shared/_img/settings/open-project-hub-horz.png)
 
-0. From there, you can choose a project from the set of projects listed.
+2. From there, you can choose a project from the set of projects listed.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects, horizontal nav](_img/about-projects/projects-hub-horz.png)
@@ -118,16 +107,15 @@ You can view the projects defined for your organization by opening the **Project
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-0. Choose the name of the server. .
+
+1. Choose the name of the server.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects, horizontal nav](_img/about-projects/open-projects-tfs-15.png)
 
-0. From there, you can choose a project from the set of projects listed.
+2. From there, you can choose a project from the set of projects listed.
 
 ::: moniker-end
-
----
 
 ## When to add another project
 
@@ -137,7 +125,7 @@ Even if you have many teams working on hundreds of different applications and so
 
 ### Reasons to add another project
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project to select groups
@@ -158,7 +146,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 ## Private and public projects
 
@@ -188,7 +176,7 @@ When you add a project, look at using the following elements to structure it to 
 
 You can configure and customize most services and applications to support your business needs or the way your teams work. Within each project you can perform the following tasks. For a comprehensive view of what resources can be configured, see [About team, project, and organizational-level settings](../settings/about-settings.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
