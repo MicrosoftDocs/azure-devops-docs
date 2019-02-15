@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2018
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,14 +23,20 @@ You can change your preferred email address for notifications from your organiza
 
 1. To change your preferred email address, open your organization menu and select **My profile**.
 
-   # [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
    ![Azure DevOps Services , My Profile link on Organization menu](_img/open-profile-newnav.png)
+::: moniker-end
 
-   # [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
    ![Azure DevOps Services , My Profile link on Organization menu](_img/open-profile-team-services.png)
-
-   ---
+::: moniker-end
 
 2. From your profile and information page, select **Edit profile**.
 
 3. Update the address and select **Save changes**.
+
+## Related articles
+
+- [Manage personal notifications](howto-manage-personal-notifications.md)
+- [Manage team notifications](howto-manage-team-notifications.md)
+- [Manage organization notifications](howto-manage-organization-notifications.md)

@@ -65,6 +65,7 @@ Use the **Approval policies** to:
 
    * Specify that the user who requested (initiated or created) the release cannot approve it.
      If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
+     For information about the ID of the requester for CI/CD releases, see [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set)
    * Force a revalidation of the user identity to take into account recently changed permissions.
    * Reduce user workload by automatically approving subsequent prompts if the specified
      user has already approved the deployment to a previous stage in the pipeline

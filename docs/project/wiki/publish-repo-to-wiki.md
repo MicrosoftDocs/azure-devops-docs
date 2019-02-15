@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/01/2019  
+ms.date: 02/14/2019  
 ---
 
 # Publish a Git repository to a wiki
@@ -61,8 +61,6 @@ Begin by connecting to your project using a [supported web browser](/tfs/server/
 > [!NOTE]
 > Choose **Previous navigation** when you see a top-level blue bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the organization in Azure DevOps. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).  
 
-# [New navigation](#tab/new-nav)  
-
 ::: moniker range=">= azure-devops-2019"
 
 Choose **Overview>Wiki**.
@@ -73,8 +71,6 @@ Choose **Overview>Wiki**.
 If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
 
 ::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range="azure-devops"
 
@@ -89,12 +85,6 @@ Choose **Wiki**.
 ![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Publish a Git repository to a wiki
 
@@ -127,7 +117,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 	> [!div class="mx-imgBorder"]  
 	> ![Published wiki from existing repo Markdown files](_img/wiki/published-wiki.png)
  
-	The wiki Table of Contents (TOC) contains the following: 
+	The wiki Table of Contents (TOC) contains the following:
 	- Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
 	- A parent page for each sub-folder defined within the published folder, even if it doesn't contain any Markdown files.
 
@@ -136,18 +126,18 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 	> [!div class="mx-imgBorder"]  
 	> ![Repo with Markdown files published to wiki](_img/wiki/publish-wiki-sample-code-repo.png)
 
-The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved. 
+The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
 
 With the Wiki provisioned with the Markdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
 
 ## Edit, rename, or delete pages  
 
-0. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**.
+1. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**.
 
-0. Choose the page you want, open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose the operation you want.
+2. Choose the page you want, open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose the operation you want.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Edit, rename, or delete wiki content](_img/wiki/publish-code-edit-rename-file.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Edit, rename, or delete wiki content](_img/wiki/publish-code-edit-rename-file.png)
 
 > [!NOTE]  
 > You can manage your wiki repo in the same way you manage any other Git repo by defining branch policies on the branch that you selected to publish to a wiki. However, without any policies defined, you can make changes and push them directly to the branch from your web portal or from a client.  
@@ -156,17 +146,17 @@ With the Wiki provisioned with the Markdown files you've added, you can now add 
 
 You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](../../reference/markdown-guidance.md).  
 
-0. When finished with your updates, choose **Commit**, and then fill in the Commit dialog form.
+1. When finished with your updates, choose **Commit**, and then fill in the Commit dialog form.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Commit dialog](_img/wiki/publish-wiki-commit-changes.png)
 
-1. The system automatically presents you with a link to create a pull request. You can ignore this message when you're directly editing the wiki branch.
+2. The system automatically presents you with a link to create a pull request. You can ignore this message when you're directly editing the wiki branch.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create a pull request link](_img/wiki/publish-wiki-create-pr.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Create a pull request link](_img/wiki/publish-wiki-create-pr.png)
 
-> [!TIP]    
+> [!TIP]
 > When you change the name or case of a file, you'll want to update the **.order** file to reflect the change. To learn more, jump to [Change the page sequence, add or update a .order file](#page-sequence).
 
 ### Rename a page
@@ -196,48 +186,46 @@ You can add pages to your published wiki as follows:
 
 Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.  
 
-### Add a page from the web portal 
+### Add a page from the web portal
 
 1. From **Repos>Files** or **Code>Files** for the published repo, open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose **File**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Add a page to the wiki from the web portal](_img/wiki/publish-code-add-edit-files-folder.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Add a page to the wiki from the web portal](_img/wiki/publish-code-add-edit-files-folder.png)
 
-0. Enter a name for the page, make sure to specify the **.md** file type. The file name should correspond to the page title that you want to appear in the TOC, with dashes in place of spaces. You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Page title naming restrictions](wiki-file-structure.md#file-naming-conventions).
+2. Enter a name for the page, make sure to specify the **.md** file type. The file name should correspond to the page title that you want to appear in the TOC, with dashes in place of spaces. You must specify a unique title of 235 characters or less. Page titles are case sensitive. For other title restrictions, see [Page title naming restrictions](wiki-file-structure.md#file-naming-conventions).
 
-	For example, to add a page that appears in the TOC as *Page 4*, add a file named *Page-4.md*.
+    For example, to add a page that appears in the TOC as *Page 4*, add a file named *Page-4.md*.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Filter wiki TOC](_img/wiki/publish-wiki-new-file-dialog.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Filter wiki TOC](_img/wiki/publish-wiki-new-file-dialog.png)
 
-1. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
 
-2. When done, choose **Commit**, and then fill in the Commit dialog form.
+4. When done, choose **Commit**, and then fill in the Commit dialog form.
 
+### Upload files to a folder
 
-### Upload files to a folder 
+1. If you have existing content already defined, you can upload it into a folder. Open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose **Upload file(s)**.
 
-0. If you have existing content already defined, you can upload it into a folder. Open the ![ ](../../_img/icons/actions-icon.png) actions icon and choose **Upload file(s)**.
+    > [!div class="mx-imgBorder"]  
+    > ![Upload files to a folder option](_img/wiki/publish-wiki-upload-files.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Upload files to a folder option](_img/wiki/publish-wiki-upload-files.png)
+2. Fill in the Commit dialog form, selecting the folder and files you want to upload.
 
-0. Fill in the Commit dialog form, selecting the folder and files you want to upload. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Commit dialog for uploading files](_img/wiki/publish-wiki-upload-files-dialog.png)
-
+    > [!div class="mx-imgBorder"]  
+    > ![Commit dialog for uploading files](_img/wiki/publish-wiki-upload-files-dialog.png)
 
 ### Add a parent page and sub-pages
 
 To add a parent page, you'll first add a Markdown file at the root folder level and then add a folder with the same label.
 
-0. To add a folder, choose **Folder**, and then fill in the New folder dialog form. Specify at least one file to correspond to a sub-page in the folder.
+1. To add a folder, choose **Folder**, and then fill in the New folder dialog form. Specify at least one file to correspond to a sub-page in the folder.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create folder dialog](_img/wiki/publish-wiki-create-folder.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Create folder dialog](_img/wiki/publish-wiki-create-folder.png)
 
-0. Add all the files you want as sub-pages to the folder.  
+2. Add all the files you want as sub-pages to the folder.  
 
 ### Add or update a .order file
 
@@ -287,7 +275,7 @@ Misc content
 
 For a folder to be a page as well, there should be a markdown file with the same name as the folder as a sibling to the folder, meaning both the folder and the md file of the same name should lie next to each other.
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Version, select, or un-publish a published wiki](wiki-select-unpublish-versions.md)

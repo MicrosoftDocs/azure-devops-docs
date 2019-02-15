@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
 # Create a project in Azure DevOps and TFS
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Create a project to establish a repository for source code, where a group of developers and teams can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects and must be managed and structured to support your business needs. To learn more about projects and when or when not to create one, see [About projects and scaling your organization](about-projects.md).
 
@@ -39,7 +39,7 @@ If you have a project already, and want to start coding an application project, 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 To create a project, you must first have [created an organization in Azure DevOps](../../user-guide/sign-up-invite-teammates.md).
 
@@ -66,11 +66,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
 
@@ -99,15 +95,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 
