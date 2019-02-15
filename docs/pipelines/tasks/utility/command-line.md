@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 12/07/2018
+ms.date: 02/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -38,7 +38,7 @@ The CmdLine task also has a shortcut syntax in YAML:
   workingDirectory: #
   displayName: #
   failOnStderr: #
-  env:  # mapping of environment variables to add
+  env: { string: string } # mapping of environment variables to add
 ```
 ::: moniker-end
 
@@ -94,6 +94,8 @@ steps:
     set MYVAR=foo
     set
   displayName: Set a variable and then display all
+  env:
+    aVarFromYaml: someValue
 ```
 
 # [Designer](#tab/designer)

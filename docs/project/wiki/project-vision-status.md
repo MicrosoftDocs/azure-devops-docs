@@ -10,28 +10,24 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 02/01/2018
+ms.date: 02/14/2019
 ---
 
 # Quickstart: Share your project mission, view project activity
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-::: moniker range=">= tfs-2018"
-
+::: moniker range=">= azure-devops-2019"
 From the project summary page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
 If you want to use a project wiki, then you'll want to first [Create a Wiki for your project](wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
-
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-
 From the project home page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-
 > [!NOTE]
 > The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../organizations/projects/create-project.md).  
 ::: moniker-end
@@ -47,12 +43,7 @@ From the project home page, share your project with your team, add project membe
 
 ## Open Project summary
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
-
-# [New navigation](#tab/new-nav)  
-
 ::: moniker range=">= azure-devops-2019"
-
 From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
@@ -70,14 +61,7 @@ Select one of the following tasks to get started:
 - [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
 To support your project mission, choose a README file that you maintain in a project repository, or the [project Wiki](wiki-create-repo.md). To choose between a README file or a Wiki, see [Change the repository](#change-repo). To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
-
 ::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
@@ -95,19 +79,11 @@ To define a README file for your project, see [Initialize a README file for your
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
----
-
 <a id="initialize-git"> </a>
 
 ## Initialize a README file for a Git repo
 
 You can share your project and objective, as well as ways for team members to contribute to the project through a project README file. For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.  
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -138,12 +114,6 @@ You can share your project and objective, as well as ways for team members to co
    You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../wiki/markdown-guidance.md).
 
 ::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range="tfs-2018 || azure-devops"
 
@@ -183,19 +153,11 @@ You can share your project and objective, as well as ways for team members to co
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
----
-
 <a id="initialize-tfvc"> </a>
 
 ## Initialize a README file for a TFVC repo
 
 For projects that selected TFVC for version control, the README.md file needs to be at the root of your team project folder (i.e. $/TeamProject/README.md).
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -235,12 +197,6 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 1. Open the Project home page.
@@ -259,12 +215,6 @@ For projects that selected TFVC for version control, the README.md file needs to
 Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder also appear in the left pane for easy navigation between them so you can provide additional information.  
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
----
 
 <a id="cross-project-activity">  </a>
 
@@ -294,11 +244,9 @@ To add users to the project, choose the ![ ](_img/project-home-page-add-team-mem
 
 You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](wiki-create-repo.md).
 
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
-1. Open **Overview>Summary** .
+1. Open **Overview > Summary** .
 
 2. Choose the ![ ](../../_img/icons/edit.png) edit icon.
 
@@ -317,12 +265,6 @@ You can change the repository used to support your project vision, including poi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
 1. From your project home page, choose **Change**.
@@ -340,12 +282,6 @@ You can change the repository used to support your project vision, including poi
    > Only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
----
 
 ## Next steps
 

@@ -25,6 +25,8 @@ Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/
 version 3 and later and the [IIS Web App Deploy](deploy/iis-web-app-deployment-on-machine-group.md) task, allow users to configure the package based on the environment specified.
 These tasks use **msdeploy.exe**, which supports the overriding of values in the **web.config** file with values from the **parameters.xml** file.
 
+> **NOTE**: File transforms and variable substitution are not confined to web app files. You can use these techniques with any XML or JSON files. 
+
 Configuration substitution is specified in the **File Transform and Variable Substitution Options**
 section of the settings for the tasks. The transformation and substitution options are:
 

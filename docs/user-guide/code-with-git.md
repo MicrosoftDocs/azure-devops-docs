@@ -9,7 +9,7 @@ ms.technology: devops-new-user
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 02/14/2019
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ---
@@ -31,9 +31,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Clone the repo to your computer
 
-[!INCLUDE [temp](../_shared/new-navigation.md)]
-
-## [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. From your web browser, open the project for your organization, and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
@@ -42,7 +40,6 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
   
   ![Screenshot of project in Azure DevOps, with Copy icon highlighted](_img/code-with-git-clone-repo.png)
-
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
@@ -54,14 +51,15 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   Keep this command window open (you'll use it in the following steps).
 
-## [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open the project for your organization, and select **Code**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
 2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
 
   ![Screenshot of project in web browser, with Copy icon highlighted](_img/code-with-git-clone-repo-prev.png)
-
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. The following example shows this:
 
@@ -73,7 +71,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   Keep this command window open (you'll use it in the following steps).
 
----
+::: moniker-end
 
 ## Work with the code
 
@@ -81,7 +79,7 @@ In the following steps, we make a change to the files on your computer, commit t
 
 1. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, and make some changes. Then save and close the file.
 
-2. In the Git command window, go to the `contoso-demo` directory by entering the following command: 
+2. In the Git command window, go to the `contoso-demo` directory by entering the following command:
 
   ```
   cd contoso-demo
@@ -102,11 +100,11 @@ In the following steps, we make a change to the files on your computer, commit t
   git push
   ```
 
-## View history 
+## View history
 
-## [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
-1. Switch back to the web portal, and select **History** from the Code page to view your new commit. 
+1. Switch back to the web portal, and select **History** from the Code page to view your new commit.
 
   ![Screenshot of web portal, with History highlighted](_img/code-history-vert.png)
 
@@ -114,7 +112,9 @@ In the following steps, we make a change to the files on your computer, commit t
 
   ![Screenshot of README file](_img/first-edit-readme-file.png)
 
-## [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 1. Switch back to the web portal, and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit, where the README and .gitignore were added when the repo was created, and the commit you just made.
 
@@ -124,7 +124,7 @@ In the following steps, we make a change to the files on your computer, commit t
 
   ![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
 
----
+::: moniker-end
 
 ## Next steps  
 

@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/11/2018  
+ms.date: 02/14/2019 
 monikerRange: '>= tfs-2017'
 ---
 
@@ -61,47 +61,41 @@ Organization:
 https://dev.azure.com/{organization}/_admin/_notifications
 ```
 
-# [New navigation](#tab/new-nav)
-
+   ::: moniker range=">= azure-devops-2019"  
    ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png)
+   ::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
+   ::: moniker range="<= tfs-2018"  
    ![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)
 
    ![View organization level notifications page](_img/view-organization-notification-hub.png)
 
----
+   ::: moniker-end
 
 ## Navigating to the team level notifications page
 
 Select the Notifications page under project settings.
 
-# [New navigation](#tab/new-nav)
-
+   ::: moniker range=">= tfs-2018"  
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
 
-# [Previous navigation](#tab/previous-nav)
+   ::: moniker range="<= tfs-2018"  
 
    ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
 
    ![View team level notifications page](_img/view-team-notification-hub.png)
 
----
 
 ## Navigating to the personal notifications page
 
 Select the Notifications page under your profile.
 
-# [New navigation](#tab/new-nav)
-
+   ::: moniker range=">= azure-devops-2019"  
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)
-
+   ::: moniker-end
 
    ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)
 
-# [Previous navigation](#tab/previous-nav)
-
+   ::: moniker range="<= tfs-2018"
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
- 
----
+   ::: moniker-end

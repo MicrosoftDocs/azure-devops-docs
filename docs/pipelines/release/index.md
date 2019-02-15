@@ -148,6 +148,14 @@ Select this option if you want to display the latest outcome of a stage deployme
 1.	Use this badge URL as a source of an image in an external website.  
     For example: `<img src="{URL you copied from the link}"/>`
 
+<a name="editrelease"></a>
+## When should I edit a release instead of the pipeline that defines it?
+
+You can edit the approvals, tasks, and variables of a previously deployed release, instead of editing these
+values in the pipeline from which the release was created. However, these edits apply to only the release
+generated when you redeploy the artifacts. If you want your edits apply to all future releases and deployments,
+choose the option to edit the release pipeline instead.
+
 <a name="abandonrelease"></a>
 ## When and why would I abandon a release?
 
