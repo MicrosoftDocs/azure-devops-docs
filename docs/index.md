@@ -621,7 +621,7 @@ featureFlags:
                                                         <h3>Developer resources</h3>
                                                         <p><a href="/rest/api/vsts/">REST APIs</a></p>
                                                         <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
-                                                        <p><a href="/cli/vsts/overview">CLI</a></p>
+                                                        <p><a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">CLI</a></p>
                                                         <p><a href="/azure/devops/java/index">Java</a></p>
                                                         <p><a href="/azure/devops/demo-gen">Azure DevOps Demo Generator</a></p>
                                                     </div>
