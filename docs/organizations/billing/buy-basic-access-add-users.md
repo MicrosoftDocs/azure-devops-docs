@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -73,34 +73,18 @@ To make subsequent edits to paid quantities in your organization, you need only 
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
    ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
    > [!div class="mx-imgBorder"]
 ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
----
 
 ## Clean up resources
 
