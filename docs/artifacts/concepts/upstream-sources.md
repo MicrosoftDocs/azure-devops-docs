@@ -25,7 +25,8 @@ Already familiar with the concepts and want to jump right in? Start with these h
 - [Use nuget.org as an upstream](../nuget/upstream-sources.md)
 - [Use npmjs.com as an upstream](../npm/upstream-sources.md)
 
-> **NOTE:** Custom upstream sources are currently only supported for npm.
+> [!NOTE]
+> Custom upstream sources are currently only supported for npm.
 
 ## Benefits of upstream sources
 
