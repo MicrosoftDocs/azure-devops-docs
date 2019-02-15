@@ -400,6 +400,8 @@
         href: tasks/utility/download-build-artifacts.md
       - name: Download Fileshare Artifacts
         href: tasks/utility/download-fileshare-artifacts.md
+      - name: Download GitHub Release
+        href: tasks/utility/download-github-release.md
       - name: Download Package
         href: tasks/utility/download-package.md
       - name: Download Pipeline Artifact

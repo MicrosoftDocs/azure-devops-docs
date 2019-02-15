@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/19/2018
+ms.date: 02/14/2019
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ---
@@ -26,10 +26,6 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ## Open your Kanban board
 
-[!INCLUDE [temp](../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
@@ -44,13 +40,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"  
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open the project for your organization and select **Azure Boards**. If you don't have a project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
@@ -64,11 +54,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker-end
 
----
-
 ## Add tests
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -97,14 +83,6 @@ Prior to running the test, you must add details.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
 
 1. To add tests, open the menu for the work item.
 
@@ -136,8 +114,6 @@ Prior to running the test, you must add details.
 
 ## Run a test
 
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run test** from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.
@@ -145,32 +121,20 @@ Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run 
 ![Run manual test](_img/run-manual-test.png)
 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
-
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run test** from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.  
 
 <img src="../boards/boards/_img/i-test-run-test.png" alt="Run a test" style="border: 2px solid #C3C3C3;" />  
 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
-
 ::: moniker-end
-
----
 
 ## Update the status of a test
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azure-devops-2019"  
+::: moniker range=">= azure-devops-2019"
 
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
@@ -180,13 +144,7 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
@@ -196,15 +154,11 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker-end
 
----
-
 ## Expand or collapse inline tests
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
-When you first open the Kanban board, you'll see an unexpanded view of checklists and tests.
+When you first open the Kanban board, you'll see an un-expanded view of checklists and tests.
 
    ![Inline tests collapsed](_img/azure-devops-boards-board.png)
 
@@ -215,14 +169,8 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"  
-
-When you first open the Kanban board, you'll see an unexpanded view of checklists.
+When you first open the Kanban board, you'll see an un-expanded view of checklists.
 
    ![Inline tests collapsed](../boards/boards/_img/i-test-open-board-collapsed-tests.png)
 
@@ -231,8 +179,6 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
    ![Inline tests expanded](../boards/boards/_img/i-test-expanded-test-list.png)
 
 ::: moniker-end
-
----
 
 ## Next steps
 

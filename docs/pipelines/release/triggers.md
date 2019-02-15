@@ -59,6 +59,8 @@ default branch in the build pipeline.
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
+For information about the ID of the requester for CI triggers, see [How are the identity variables set?](../build/variables.md#how-are-the-identity-variables-set)
+
 <h2 id="scheduled-triggers">Scheduled release triggers</h2>
 
 If you want to create and start a release at specific times, define one or more
