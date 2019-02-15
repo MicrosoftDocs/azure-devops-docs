@@ -10,11 +10,11 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 01/15/2019
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# What features and services do I get with Azure DevOps Services or TFS?
+# What features and services do I get with Azure DevOps and TFS?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -22,17 +22,17 @@ With Azure DevOps Services and Team Foundation Server (TFS), you gain an integra
 
 Access web services through the following areas, as shown in the following image.
 
-[!INCLUDE [temp](../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 ![Azure DevOps Services, main](_img/services-hubs-vert.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 ![Azure DevOps Services, main](../_img/services-hubs.png)  
 
----
+::: moniker-end
 
 Many of our services are either free for small teams or available through a subscription model or per-use model. You can exercise a hybrid approach where you use on-premises TFS to manage your code and work, and you purchase cloud build or testing services on an as-needed basis.  
 
@@ -47,15 +47,17 @@ For information about client tools, see [Tools](tools.md).
 
 From **Dashboards**, you gain access to user-configurable dashboards.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 ![Azure DevOps Services, main](_img/dashboard-overview.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 <img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard, Overview" style="border: 2px solid #C3C3C3;" />
 
----
+::: moniker-end
 
 You can perform the following tasks in **Dashboards**:
 
@@ -67,19 +69,21 @@ To learn more, see [Dashboards](../report/dashboards/dashboards.md).
 
 ## Source control
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 From **Repos**, you gain access to your source control Git-based or Team Foundation Version Control (TFVC) repositories to support version control of your software projects. These repositories are private.
 
 ![Azure Repos, Git files page](_img/repos-git-hub.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
 <img src="_img/services/code-git-hub.png" alt="Code, Git, files page" style="border: 2px solid #C3C3C3;" />
 
----
+::: moniker-end
 
 From Azure Repos for Git, you can perform the following tasks:
 
@@ -92,19 +96,21 @@ To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](.
 
 ## Plan and track work
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 From **Boards**, you gain access to Agile tools to support planning and tracking work.
 
 ![Azure Boards backlogs](_img/boards-backlogs.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 From **Work**, you gain access to Agile tools to support planning and tracking work.
 
 <img src="_img/services/work-hub-backlogs.png" alt="Work, Backlogs page" style="border: 2px solid #C3C3C3;" />
 
----
+::: moniker-end
 
 Specifically, you can perform the following tasks:
 
@@ -120,19 +126,21 @@ See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) f
 
 ## Continuous integration and deployment  
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
 ![Builds, Azure Pipelines page](_img/builds-pipelines-page.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
 <img src="_img/services/build-release-hub.png" alt="Build-Release, Build pipelines page" style="border: 2px solid #C3C3C3;" />
 
----
+::: moniker-end
 
 Use pipelines to implement continuous integration and continuous delivery.
 
@@ -145,19 +153,21 @@ To learn more, see [Continuous integration on any platform](../pipelines/overvie
 
 Test features support manual and exploratory testing, load or performance testing, and continuous testing.  
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 **Test Plans** supports creating and managing manual tests.
 
 ![Test Plans](_img/test-plans-vert.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 **Test** supports creating and managing manual tests.
 
 <img src="_img/services/test-hub.png" alt="Test" style="border: 2px solid #C3C3C3;" />
 
----
+::: moniker-end
 
 With test features, you gain access to the following features:
 
@@ -176,7 +186,7 @@ To learn more, see [Testing overview](../test/index.md).
 
 The following services work across the previously mentioned services to support:
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 - Team dashboards
 - Project wiki
@@ -266,15 +276,17 @@ For continuous delivery to Azure from Azure DevOps Services, see [Automatically 
 
 There are features and tasks associated with administering a collaborative software development environment. You perform most of these tasks through the web portal. To learn more, see [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md).
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 ![Project settings](_img/project-settings.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 <img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
 
----
+::: moniker-end
 
 ## Related articles
 

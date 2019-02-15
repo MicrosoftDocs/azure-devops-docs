@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -150,10 +150,6 @@ A: You can find your [project collection administrator](../security/set-project-
 
 A: You can find the current owner in your organization settings.
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -166,16 +162,9 @@ A: You can find the current owner in your organization settings.
 
    ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
 
-::: moniker-end  �  �
+::: moniker-end
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 1. Go to your organization settings.
 
@@ -186,12 +175,6 @@ A: You can find the current owner in your organization settings.
    ![Organization owner displayed](../accounts/_img/change-organization-ownership/find-organization-owner.png)
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]
-::: moniker-end
-
----
 
 ### Q: Can I buy Azure DevOps from my software reseller?
 
