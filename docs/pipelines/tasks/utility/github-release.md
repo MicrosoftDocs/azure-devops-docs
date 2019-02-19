@@ -50,11 +50,11 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Example
+## Examples
 
-### Create GitHub Release
+### Create a GitHub release
 
-This yaml snippet will create a GitHub release everytime the task is run. The build number is used as the tag version for the release. All .exe files and README.txt file in $(Build.ArtifactStagingDirectory) folder are uploaded as assets. By default, the task will also generate a changelog(list of commits and issues that are part of this release) and publish it as release notes
+The following YAML creates a GitHub release every time the task runs. The build number is used as the tag version for the release. All .exe files and README.txt files in the $(Build.ArtifactStagingDirectory) folder are uploaded as assets. By default, the task also generates a change log (a list of commits and issues that are part of this release) and publishes it as release notes.
 
 ```YAML
 - task: GithubRelease@0 
@@ -69,8 +69,7 @@ This yaml snippet will create a GitHub release everytime the task is run. The bu
          $(Build.ArtifactStagingDirectory)/README.txt
 ```
 
-
-You can also control creation of release based on repository tags. The following yaml snippet will create a GitHub release only when the commit triggering the pipeline has a git tag associated with it. The GitHub release will be created with the same tag version as the associated git tag.
+You can also control the creation of the release based on repository tags. The following YAML creates a GitHub release only when the commit that triggers the pipeline has a Git tag associated with it. The GitHub release is created with the same tag version as the associated Git tag.
 
 ```YAML
 - task: GithubRelease@0 
@@ -81,7 +80,7 @@ You can also control creation of release based on repository tags. The following
     assets: $(Build.ArtifactStagingDirectory)/*.exe
 ```
 
-You may also want to use the task in conjunction with task conditions to have even finer control over when the task should be run and thereby restricting the creation of releases. For example, in the following yaml snippet the task runs only when the pipeline is triggered by a git tag matching the pattern 'refs/tags/release-v*'
+You may also want to use the task in conjunction with task conditions to get even finer control over when the task runs, thereby restricting the creation of releases. For example, in the following YAML the task runs only when the pipeline is triggered by a Git tag matching the pattern 'refs/tags/release-v*'.
 
 ```YAML
 - task: GithubRelease@0 
@@ -93,10 +92,9 @@ You may also want to use the task in conjunction with task conditions to have ev
     assets: $(Build.ArtifactStagingDirectory)/*.exe
 ```
 
+### Edit a GitHub release
 
-### Edit GitHub Release
-
-The following YAML snippet edits the status of a GitHub release from draft to published. The release to be edited is determined by the specified tag.
+The following YAML updates the status of a GitHub release from 'draft' to 'published'. The release to be edited is determined by the specified tag.
 
 ```YAML
 - task: GithubRelease@0
@@ -109,10 +107,9 @@ The following YAML snippet edits the status of a GitHub release from draft to pu
     isDraft: false
 ```
 
+### Delete a GitHub release
 
-### Delete GitHub Release
-
-The following YAML snippet deletes a GitHub release. The release to be deleted is determined by the specified tag.
+The following YAML deletes a GitHub release. The release to be deleted is determined by the specified tag.
 
 ```YAML
 - task: GithubRelease@0
@@ -124,13 +121,6 @@ The following YAML snippet deletes a GitHub release. The release to be deleted i
     tag: $(myDraftReleaseVersion)
 ```
 
-
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
