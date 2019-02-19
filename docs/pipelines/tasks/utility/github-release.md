@@ -50,6 +50,81 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
+## Example
+
+### Create GitHub Release
+
+This yaml snippet will create a GitHub release everytime the task is run. The build number is used as the tag version for the release. All .exe files and README.txt file in $(Build.ArtifactStagingDirectory) folder are uploaded as assets. By default, the task will also generate a changelog(list of commits and issues that are part of this release) and publish it as release notes
+
+```YAML
+- task: GithubRelease@0 
+  displayName: 'Create GitHub Release'      
+  inputs:
+    githubConnection: zenithworks
+    repositoryName: zenithworks/javaAppWithMaven
+    tagSource: manual
+    tag: $(Build.BuildNumber)      
+    assets: |
+         $(Build.ArtifactStagingDirectory)/*.exe
+         $(Build.ArtifactStagingDirectory)/README.txt
+```
+
+
+You can also control creation of release based on repository tags. The following yaml snippet will create a GitHub release only when the commit triggering the pipeline has a git tag associated with it. The GitHub release will be created with the same tag version as the associated git tag.
+
+```YAML
+- task: GithubRelease@0 
+  displayName: 'Create GitHub Release'      
+  inputs:
+    githubConnection: zenithworks
+    repositoryName: zenithworks/javaAppWithMaven           
+    assets: $(Build.ArtifactStagingDirectory)/*.exe
+```
+
+You may also want to use the task in conjunction with task conditions to have even finer control over when the task should be run and thereby restricting the creation of releases. For example, in the following yaml snippet the task runs only when the pipeline is triggered by a git tag matching the pattern 'refs/tags/release-v*'
+
+```YAML
+- task: GithubRelease@0 
+  displayName: 'Create GitHub Release'   
+  condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/release-v')   
+  inputs:
+    githubConnection: zenithworks
+    repositoryName: zenithworks/javaAppWithMaven           
+    assets: $(Build.ArtifactStagingDirectory)/*.exe
+```
+
+
+### Edit GitHub Release
+
+The following YAML snippet edits the status of a GitHub release from draft to published. The release to be edited is determined by the specified tag.
+
+```YAML
+- task: GithubRelease@0
+  displayName: 'Edit GitHub Release'
+  inputs:
+    githubConnection: zenithworks
+    repositoryName: zenithworks/javaAppWithMaven
+    action: edit
+    tag: $(myDraftReleaseVersion)
+    isDraft: false
+```
+
+
+### Delete GitHub Release
+
+The following YAML snippet deletes a GitHub release. The release to be deleted is determined by the specified tag.
+
+```YAML
+- task: GithubRelease@0
+  displayName: 'Delete GitHub Release'
+  inputs:
+    githubConnection: zenithworks
+    repositoryName: zenithworks/javaAppWithMaven
+    action: delete
+    tag: $(myDraftReleaseVersion)
+```
+
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
