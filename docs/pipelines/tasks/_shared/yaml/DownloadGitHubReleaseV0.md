@@ -1,7 +1,7 @@
 ```YAML
-# Download GitHub Releases
+# Download GitHub Release
 # Downloads a GitHub Release from a repository.
-- task: DownloadGitHubReleases@0
+- task: DownloadGitHubRelease@0
   inputs:
     connection: 
     userRepository: 

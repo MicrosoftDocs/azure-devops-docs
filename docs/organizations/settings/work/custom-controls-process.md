@@ -98,14 +98,14 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 	
 0. Choose the custom control you want from the menu of options. 
 
-	For example, here we choose the Toggle control that you can associate with a Boolean field.   
+	For example, here we choose the Toggle control that you can associate with a Boolean field.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a  custom control dialog, Definition tab](_img/process/custom-control-add-field-level-control-to-bug.png) 
 
-0. Choose the **Options** tab and fill out the dialog box. The options you need to specify will depend on the custom control you've selected.   
+1. Choose the **Options** tab and fill out the dialog box. The options you need to specify depend on the custom control you've selected.
 
-	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.   
+	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.
 
 	<img src="_img/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 

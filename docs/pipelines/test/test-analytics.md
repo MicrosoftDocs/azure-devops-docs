@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
 ms.author: vinojos
-author: vinojos
+author: vinodjo
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---

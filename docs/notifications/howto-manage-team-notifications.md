@@ -10,7 +10,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/14/2019  
+ms.date: 02/19/2019  
 monikerRange: '>= tfs-2017'
 ---
 
@@ -25,7 +25,7 @@ As changes occur to work items, code reviews, pull requests, source control file
 
 ## Create a custom email subscription
 
-A subscription lets you control what your team should be notified about and how the team will receive those notifications.
+A subscription lets you control what your team should be notified about and how the team receives those notifications.
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
@@ -65,7 +65,7 @@ A subscription lets you control what your team should be notified about and how 
    * **Custom email address**: send an email to a specified email address.
    * **All team members**: send an individual email to each member of the team.
 
-   For certain activities and when **Team members by role** is selected, you can choose to have the user that initiated the activity receive a notification. This is controlled by the **Skip initiator** checkbox. By default, this box is checked meaning the user that initiates the change will not be notified about it.
+   For certain activities and when **Team members by role** is selected, you can choose to have the user that initiated the activity receive a notification. This is controlled by the **Skip initiator** checkbox. By default, this box is checked meaning the user that initiates the change is not notified about it.
 
 6. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 

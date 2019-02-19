@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-<!--- TFS version only -->
+<!--- Azure DevOps Server and TFS version only -->
 
 <table>
 <tr valign="bottom">
