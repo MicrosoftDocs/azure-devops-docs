@@ -59,7 +59,7 @@ For information about working with pipelines, see these articles:
 	::: moniker-end
 	::: moniker range="<= azure-devops-2019"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	
-  	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
+  	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, enter ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
 
 2.  Enter your credentials. If you aren't able to sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
@@ -208,7 +208,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 For descriptions of each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
 
 > [!NOTE]    
-> Depending on the process chosen when the project was created, the types of work items you can create will differ. For example, backlog items may be called user stories ([Agile](../../boards/work-items/guidance/agile-process-workflow.md)), product backlog items ([Scrum](../../boards/work-items/guidance/scrum-process-workflow.md)), or requirements ([CMMI](../../boards/work-items/guidance/cmmi-process-workflow.md)). All three are similar&mdash;they describe the customer value to deliver and the work to be performed. For an overview of all three processes, see [Choose a process](../../boards/work-items/guidance/choose-process.md). 
+> Depending on the process chosen when the project was created, the types of work items you can create may differ. For example, backlog items may be called user stories ([Agile](../../boards/work-items/guidance/agile-process-workflow.md)), product backlog items ([Scrum](../../boards/work-items/guidance/scrum-process-workflow.md)), or requirements ([CMMI](../../boards/work-items/guidance/cmmi-process-workflow.md)). All three are similar&mdash;they describe the customer value to deliver and the work to be performed. For an overview of all three processes, see [Choose a process](../../boards/work-items/guidance/choose-process.md). 
 
 ## Add tags to a work item
 

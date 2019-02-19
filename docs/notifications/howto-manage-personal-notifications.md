@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -56,7 +56,7 @@ A subscription can be just for you, or if you are a team admin, can be shared by
 
 ## Add a custom subscription
 
-With custom personal subscriptions, you can define precise criteria for the events you want to receive notifications for. In contrast to a default subscription, which will only notify the users or groups directly associated with an event, a custom subscription can notify you about any event.
+With custom personal subscriptions, you can define precise criteria for the events you want to receive notifications for. In contrast to a default subscription, which only notifies the users or groups directly associated with an event, a custom subscription can notify you about any event.
 
 1. From your Notifications page, select **New subscription**.
 

@@ -26,7 +26,7 @@ Once you add a process, you can create one or more projects from it.
 You can update the process at any time by importing the process again. 
 The changes made to the process template are then applied to all projects using that process.  
 
-A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in Azure DevOps Services. Some building blocks will update existing projects, while others only apply to new projects. See the table below for the full list.
+A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in Azure DevOps Services. Some building blocks update existing projects, while others only apply to new projects. See the table below for the full list.
 
 <table>
 <tbody>
@@ -147,13 +147,13 @@ Your ProcessTemplate.xml file must conform to the syntax and rules described in 
  
 In addition, your process must pass the following validation checks:  
 * Process names must be unique and 155 Unicode characters or less.
-  * Templates with the same name and version GUID will overwrite existing processes. 
-  * Templates with the same name but a different version GUID will generate an error.  
+  * Templates with the same name and version GUID overwrite existing processes.
+  * Templates with the same name but a different version GUID generate an error.  
   * Process names cannot contain the following special characters:  
      ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >  ```  
     See [Naming restrictions](../../naming-restrictions.md) for additional constraints.
-* Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation will fail.
-* Process total size should be 2 GB or less, or project creation will fail.
+* Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation fails.
+* Process total size should be 2 GB or less, or project creation fails.
  
 <a id="process-configuration"></a>
 ### Process configuration
@@ -260,7 +260,7 @@ To limit the account names that are valid within an identity field, specify the 
         <HELPTEXT>The program manager responsible for signing off on the user story.</HELPTEXT>
     </FIELD>
 ```
-Prior to importing the process, make sure that you've created the group in the project(s) that the process will update. 
+Prior to importing the process, make sure that you've created the group in the project(s) that the process updates. 
 
 
 **Incorrect example**  

@@ -31,11 +31,11 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 In the **Working with bugs** dialog, you can select from the following three options.
 
-* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
+* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
 
-* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs will be associated with the Task category. 
+* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category.
 
-* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs will be associated with the Bugs category. 
+* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs are associated with the Bugs category.
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
@@ -43,9 +43,9 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 ::: moniker range="azure-devops"  
 
-0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
@@ -112,7 +112,7 @@ Requires TFS 2013.4 or later version.
 ## Nested items  
 
 > [!TIP]  
-> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.   
+> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the Kanban or task boards.   
 
 When you manage bugs with requirements or with tasks, they'll show up on one or more of your Agile tool backlogs and boards. However, if you nest items&mdash;create parent-child links of items that belong in either the Requirements or Task categories&mdash;then not all items may appear on your backlogs and boards. To learn more about how nested items are treated, see [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). 
 ::: moniker-end

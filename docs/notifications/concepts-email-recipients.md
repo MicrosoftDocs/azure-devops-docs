@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 10/12/2018 
+ms.date: 02/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -56,20 +56,20 @@ The following delivery settings are available for a group or team:
 * **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the section on "team expansion" below for more details on how this option works.
 * **Do not deliver:** notifications are not delivered by default.
 
-If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](howto-manage-organization-notifications-settings.md) and will be either _Deliver to individual members_ or _Do not deliver_. Note: the delivery settings dialog does not indicate whether the current selection was explicitly set or if it was inherited.
+If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](howto-manage-organization-notifications-settings.md) and is either _Deliver to individual members_ or _Do not deliver_. Note: the delivery settings dialog does not indicate whether the current selection was explicitly set or if it was inherited.
 
 ## Recipients for custom team and group subscriptions
 
-The recipients for a custom team or group subscription are controlled by the subscription, but with certain delivery options, the team's default delivery setting will be used to determine the set of recipients.
+The recipients for a custom team or group subscription are controlled by the subscription, but with certain delivery options, the team's default delivery setting is used to determine the set of recipients.
 
 ![email-team-delivery-options](_img/email-team-delivery-options.png)
 
 The following delivery options are available for a group or team subscription:
 
-* **Member of team by role:** recipients will be members of the team or group that have one of the selected roles (e.g. work item assignee)
-* **Team preference:** recipients will be determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_) 
-* **Custom email address:** recipient will be the specified email address
-* **Members of team:**: recipients will be all members of the team or group, except members that have opted out of the subscription. Note: the default delivery setting of each member is honored, including groups that are members of the team or group.
+* **Member of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
+* **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_) 
+* **Custom email address:** recipient is the specified email address
+* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. Note: the default delivery setting of each member is honored, including groups that are members of the team or group.
 
 ### Option: Member of team by role
 

@@ -64,10 +64,10 @@ Before you remove a group, first move all fields defined in that group to anothe
 > [!TIP]   
 >You must remove all fields from a group for the Remove option to appear. 
 
-Choose the ![Delete icon](../../../_img/icons/delete_icon.png) Remove option from the custom group &hellip; context menu.   
+Choose the ![Delete icon](../../../_img/icons/delete_icon.png) Remove option from the custom group &hellip; context menu.
 
 > [!NOTE]     
->When all fields in an inherited group are hidden, the inherited group itself will not appear on the form.   
+>When all fields in an inherited group are hidden, the inherited group itself does not appear on the form.
 
 <a id="move-field"></a>
 ## Move a field     

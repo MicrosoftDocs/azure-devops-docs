@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley 
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/10/2018  
+ms.date: 02/19/2019  
 monikerRange: '>= tfs-2017'
 ---
 
@@ -33,10 +33,10 @@ Either your email address is on this line, or you are a member of a group includ
 
 ## Step 2: Inspect the footer of the unexpected email
 
-All emails will have a footer which contains a link to view the subscription which triggered the email.  Select the link and view the subscription. You received the email because this subscription to which your are subscribed.  If it's a organization or team subscription, you have the option to opt out of the subscription.
+All emails have a footer which contains a link to view the subscription which triggered the email.  Select the link and view the subscription. You received the email because this subscription to which your are subscribed.  If it's a organization or team subscription, you have the option to opt out of the subscription.
 
 ![Email footer](_img/email-footer-view.png)
 
 ## Contact customer support
 
-If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md)
+If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md).

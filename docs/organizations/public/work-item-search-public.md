@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: ahomer
 author: 
 ms.topic: quickstart
-ms.date: 02/14/2019
+ms.date: 02/19/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -34,7 +34,7 @@ With work item search, you can quickly find work items defined within a public p
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   "updating" also finds instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
 3. Select a snippet of a work item to display it in the right window.
   
