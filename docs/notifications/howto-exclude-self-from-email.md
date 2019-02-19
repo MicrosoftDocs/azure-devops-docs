@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 08/06/2018  
+ms.date: 02/19/2019  
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 The option _Skip initiator_ is available when creating a team role-based notification subscription.  This option causes emails to be skipped for the initiator of the event which triggered the email.
 
-For example, if your team has a subscription set up for a _pull request created_ event and a user creates a pull request in the project, that user will not receive the _pull request created_ notification email, but the other members of the team will.
+For example, if your team has a subscription set up for a _pull request created_ event and a user creates a pull request in the project, that user doesn't receive the _pull request created_ notification email, but the other members of the team do.
 
 This option can be beneficial for users who don't want to be notified of events they just triggered, but has caused some users to feel they missed an email when their teammates received the email and they didn't. Leave it up to your team to decide which option is best.
 

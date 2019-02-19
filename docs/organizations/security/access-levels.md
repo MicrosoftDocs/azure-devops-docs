@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/05/2019
+ms.date: 02/19/2019
 ---
 
 
@@ -921,7 +921,7 @@ Can add features and epics from the Kanban board. Can change the backlog priorit
 ::: moniker range="azure-devops"
 
 ## Visual Studio Subscription access
-Visual Studio subscribers are entitled to **Visual Studio Subscription** features as a subscriber benefit. When you add those users be sure to assign them **Visual Studio Subscription** access level and the system will automatically recognize their subscription and enable any other features that are included based on their subscription level. 
+Visual Studio subscribers are entitled to **Visual Studio Subscription** features as a subscriber benefit. When you add those users be sure to assign them **Visual Studio Subscription** access level. The system automatically recognizes their subscription and enables any other features that are included, based on their subscription level.
 
 ::: moniker-end  
 
@@ -1065,7 +1065,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 	
 
 > [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension for Azure Test Plans](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or TFS Test](../../billing/buy-access-tfs-test-hub.md). 
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 re-enables it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open **Users** for the project collections in which they are a member and [assign them the Test Manager extension for Azure Test Plans](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or TFS Test](../../billing/buy-access-tfs-test-hub.md). 
 
 ::: moniker-end
 

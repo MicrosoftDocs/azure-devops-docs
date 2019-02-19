@@ -24,7 +24,7 @@ ms.date: 03/20/2018
 >To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
  
 
-During process import, the process is validated to ensure the system will work as expected for the custom process. 
+During process import, the process is validated to ensure the system works as expected for the custom process. 
 You'll receive a list of error messages if the process fails validation.  
 
 ![Process successfully imported](_img/ALM_IP_ValidationErrors_list_775.png)  
@@ -40,7 +40,7 @@ If you're just starting your customization, [review the validation rules provide
 ## Information messages - no action required
 
 <a id="TF402555"></a>
-### TF402555: Field *[refName]* will be deleted.
+### TF402555: Field *[refName]* is deleted.
 The process that you're importing doesn't include the named field in the process being updated, therefore it is removed as part of the update operation.  
 
 #### Scenario example
@@ -63,8 +63,8 @@ The process that you're importing contains a renamed field that uses the same ``
 Field names cannot be renamed.
 
 <a id="TF402598"></a>
-### TF402598: Work item type *[refName]* will be deleted.
-The process that you're updating doesn't include the named WIT that exists in the current process. As part of updating the existing process, the system will delete the named WIT from the current process. 
+### TF402598: Work item type *[refName]* is deleted.
+The process that you're updating doesn't include the named WIT that exists in the current process. As part of updating the existing process, the system deletes the named WIT from the current process. 
 
 #### Scenario example
 1. [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"  
@@ -79,10 +79,10 @@ The system displays an information message about the deletion.
   ``` TF402598: Work item type My.LSI will be deleted ``` 
 
 <a id="TF402601"></a>
-### TF402601: Work item type *[witName]* will be renamed to *[name1]* from *[name2]*.
-The process contains a renamed WIT. The WIT will be renamed in the existing process.  
+### TF402601: Work item type *[witName]* is renamed to *[name1]* from *[name2]*.
+The process contains a renamed WIT. The WIT is renamed in the existing process.  
 The process that you're updating contains a WIT that's been renamed from the name in the current process.  
-As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing projects that reference the process are also renamed.
+As part of updating the existing process, the system renames the WIT in the current process. All work items in existing projects that reference the process are also renamed.
 
 #### Scenario example
 1. [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"  
@@ -1341,7 +1341,7 @@ UserStory.xml
 <a id="TF402558"></a>
 ### TF402558: The definition of field *[refName]* is inconsistent with the existing definition of the field in the following templates: *[templateNames]*.
 Fields must be defined consistently across processes that have been or that you plan to import to Azure DevOps Services. 
-The system will not allow you to import a process that contains a ```FIELD``` element which is defined 
+The system doesn't allow you to import a process that contains a ```FIELD``` element which is defined 
 one way in Process A and another way in Process B.  All ```FIELD``` element attributes must match.
 
 #### Example

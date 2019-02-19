@@ -70,13 +70,13 @@ You always add a field to an existing work item type.
 	By making a field Required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item as well as every time a work item is opened and the field is empty.
 
 	<a id="layout">  </a>
-0.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field will appear on the form. 
+0.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
-0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
+0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.  
 
 	> [!TIP]    
 	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
@@ -89,7 +89,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 # [New navigation](#tab/new-nav)
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 

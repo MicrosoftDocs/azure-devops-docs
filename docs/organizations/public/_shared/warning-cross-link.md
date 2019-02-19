@@ -23,7 +23,7 @@ Five kinds of cross-project links expose content from the private project.
 If a work item is moved from a private project into a public project, it has details about the private project stored in its history.
 
 <!-- TODO: link to /accounts/invite-outside-users.md when it lands -->
-When you invite someone to become a member of a project, that person will gain access to additional resources and details about the account. Specifically they will have access to the following information. 
+When you invite someone to become a member of a project, that person gains access to additional resources and details about the account. Specifically, they have access to the following information.
 
 | Area             | Additional details a member receives                     |
 |------------------|----------------------------------------------------------|

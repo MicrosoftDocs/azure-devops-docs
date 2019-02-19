@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/19/2019
 ---
 
 
@@ -44,7 +44,7 @@ Permissions are set at the collection, project, and object level as described in
 
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)
 
-2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
+1. Begin typing the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Find a user or group name](_img/view-permissions/search-user-name-vert-nav.png)  
@@ -78,7 +78,7 @@ Permissions are set at the collection, project, and object level as described in
 	> [!div class="mx-imgBorder"]
 	> ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
 
-2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
+2. Begin typing the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Project level permissions for a user, Azure DevOps](_img/view-permissions/search-user-name-vert-nav.png)  
@@ -107,7 +107,7 @@ Permissions are set at the collection, project, and object level as described in
 	> [!div class="mx-imgBorder"]
 	> ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
 
-2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
+2. Begin typing the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
 	![Find a user account name](_img/view-permissions/search-user-name.png)
 

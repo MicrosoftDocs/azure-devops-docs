@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 02/19/2019
 ---
 
 # Tutorial: Grant or restrict access to select features and functions
@@ -32,7 +32,7 @@ Use this topic you learn how to do the following:
 
 
 > [!TIP]    
-> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project will determine the areas you can open up or close down.
+> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project determines the areas you can open up or close down.
 
 
 ## Recommended method for granting and restricting permissions 
