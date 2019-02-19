@@ -15,7 +15,7 @@
     #calabashProfile: # Optional
     #calabashSkipConfigCheck: # Optional
     #uiTestBuildDirectory: # Required when prepareTests == True && Framework == Uitest
-    #uitestStoreFile: # Optional
+    #uitestStorePath: # Optional
     #uiTestStorePassword: # Optional
     #uitestKeyAlias: # Optional
     #uiTestKeyPassword: # Optional

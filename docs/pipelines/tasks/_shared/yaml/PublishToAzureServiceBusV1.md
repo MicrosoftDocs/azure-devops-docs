@@ -5,6 +5,7 @@
   inputs:
     azureSubscription: 
     #messageBody: # Optional
+    #sessionId: # Optional
     #signPayload: false 
     #certificateString: # Required when signPayload == True
     #signatureKey: 'signature' # Optional
