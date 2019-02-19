@@ -140,30 +140,30 @@ To view the full list, see [View the current values of all variables](#view-vars
 
 | Variable name | Description |
 |---------------|-------------|
-| Release.DefinitionName | The name of the release pipeline to which the current release belongs.<br/><br />Example: `fabrikam-cd` |
-| Release.DefinitionId | The ID of the release pipeline to which the current release belongs. Not available in TFS 2015.<br/><br />Example: `1` |
-| Release.ReleaseName | The name of the current release.<br/><br />Example: `Release-47` |
-| Release.ReleaseId | The identifier of the current release record.<br/><br />Example: `118` |
-| Release.ReleaseUri | The URI of current release.<br/><br />Example: `vstfs://ReleaseManagement/Release/118` |
-| Release.ReleaseDescription | The text description provided at the time of the release.<br/><br />Example: `Critical security patch` |
-| Release.RequestedFor | The display name of identity that triggered the release.<br/><br />Example: `Mateo Escobedo` |
-| Release.RequestedForEmail | The email address of identity that triggered the release.<br/><br />Example: `mateo@fabrikam.com` |
-| Release.RequestedForId | The ID of identity that triggered the release.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
-| Release.EnvironmentName | The name of stage to which deployment is currently in progress.<br/><br />Example: `Dev` |
-| Release.EnvironmentId | The ID of the stage instance in a release to which the deployment is currently in progress.<br/><br />Example: `276` |
-| Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress.<br/><br />Example: `vstfs://ReleaseManagement/Environment/276` |
-| Release.DefinitionEnvironmentId | The ID of the stage in the corresponding release pipeline. Not available in TFS 2015.<br/><br />Example: `1` |
 | Release.AttemptNumber | The number of times this release is deployed in this stage. Not available in TFS 2015.<br/><br />Example: `1` |
+| Release.DefinitionEnvironmentId | The ID of the stage in the corresponding release pipeline. Not available in TFS 2015.<br/><br />Example: `1` |
+| Release.DefinitionId | The ID of the release pipeline to which the current release belongs. Not available in TFS 2015.<br/><br />Example: `1` |
+| Release.DefinitionName | The name of the release pipeline to which the current release belongs.<br/><br />Example: `fabrikam-cd` |
 | Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `Mateo Escobedo` |
 | Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
 | Release.DeploymentID | The ID of the deployment. Unique per job.<br/><br />Example: `254` |
 | Release.DeployPhaseID | The ID of the phase where deployment is running.<br/><br />Example: `127` |
+| Release.EnvironmentId | The ID of the stage instance in a release to which the deployment is currently in progress.<br/><br />Example: `276` |
+| Release.EnvironmentName | The name of stage to which deployment is currently in progress.<br/><br />Example: `Dev` |
+| Release.EnvironmentUri | The URI of the stage instance in a release to which deployment is currently in progress.<br/><br />Example: `vstfs://ReleaseManagement/Environment/276` |
 | Release.Environments.{stage-name}.status | The deployment status of the stage.<br/><br />Example: `InProgress` |
+| Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source<br/><br />Example: `fabrikam\_web` |
+| Release.Reason | The reason for the deployment. Supported values are:<br>`Automated` - the release started in Continuous Deployment after a build completed.<br>`Manual` - the release started manually.<br>`None` - the deployment reason has not been specified.<br>`Scheduled` - the release started from a schedule. | 
+| Release.ReleaseDescription | The text description provided at the time of the release.<br/><br />Example: `Critical security patch` |
+| Release.ReleaseId | The identifier of the current release record.<br/><br />Example: `118` |
+| Release.ReleaseName | The name of the current release.<br/><br />Example: `Release-47` |
+| Release.ReleaseUri | The URI of current release.<br/><br />Example: `vstfs://ReleaseManagement/Release/118` |
 | Release.ReleaseWebURL | The URL for this release.<br/><br />Example: `https://dev.azure.com/fabrikam/f3325c6c/_release?releaseId=392&_a=release-summary` |
+| Release.RequestedFor | The display name of identity that triggered the release.<br/><br />Example: `Mateo Escobedo` |
+| Release.RequestedForEmail | The email address of identity that triggered the release.<br/><br />Example: `mateo@fabrikam.com` |
+| Release.RequestedForId | The ID of identity that triggered the release.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
 | Release.SkipArtifactDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent.<br/><br />Example: `FALSE` |
 | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually.<br/><br />Example: `fabrikam\_app` |
-| Release.PrimaryArtifactSourceAlias | The alias of the primary artifact source<br/><br />Example: `fabrikam\_web` |
-| Release.Reason | The reason for the deployment. Supported values are:<br>`automated` - the release started in Continuous Deployment after a build completed.<br>`manual` - the release started manually.<br>`none` - the deployment reason has not been specified.<br>`scheduled` - the release started from a schedule. | 
 
 <!-- Other hidden variables
 [RELEASE_RELEASEWEBURL] -> [https://dev.azure.com/adventwrks/79f5c12e-3337-4151-be41-a268d2c73344/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?releaseId=118&_a=release-summary]
