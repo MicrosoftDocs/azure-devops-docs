@@ -16,7 +16,7 @@ ms.date: 12/07/2018
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to publish pipeline artifacts to Azure Pipeline (note that publishing is only supported in build pipelines).
+Use this task in a build pipeline to publish pipeline artifacts to Azure Pipeline (note that publishing is only supported in build pipelines).
 
 > [!TIP]
 > Looking to get started working with build artifacts? See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
