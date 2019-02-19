@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 01/18/2019
+ms.date: 02/19/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -35,7 +35,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations will want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
+The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 - [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
@@ -126,7 +126,7 @@ If you support several products or feature areas, you can assign work items by f
   
 ## Customize work-tracking processes
 
-You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. Although you can customize the process easily through the user interface, you'll want to establish a methodology for who will manage the updates and evaluate requests.
+You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. Although you can customize the process easily through the user interface, you can establish a methodology for who manages the updates and evaluates requests.
 
 > [!NOTE]
 > By default, users granted Basic and Stakeholder access are granted permission to create, edit, and manage processes used to customize the work-tracking experience. If you want to lock down who is able to perform these tasks, you can set permissions at the organization level to **Deny**.  
@@ -143,11 +143,11 @@ To learn more, see the following articles:
 
 ## Customize work-tracking processes
 
-You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. You'll want to establish a methodology for who will manage the updates and evaluate requests. 
+You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. You can establish a methodology for who manages the updates and evaluates requests.
 
-To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md). 
+To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
 
-::: moniker-end  
+::: moniker-end
 
 ## Review and update notifications
 
@@ -158,7 +158,7 @@ A number of notifications are predefined for each project you add. Notifications
 - Project notifications, managed by a member of the Project Administrators group.
 - [Organization and collection level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administrators group.
 
-If users believe they're getting too many notifications, they can [opt out of a subscription](../notifications/howto-manage-personal-notifications.md). 
+If users believe they're getting too many notifications, they can [opt out of a subscription](../notifications/howto-manage-personal-notifications.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Personal notifications](_img/services/personal-notifications.png)   

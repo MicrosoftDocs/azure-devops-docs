@@ -42,9 +42,9 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
 
-Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only will not only apply the rule on the work item form, but also through the API and Excel based Add-in. 
+Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel based Add-in.
  
-As an example, you can make a field required based on the value assigned to the state and another field. For example:   
+As an example, you can make a field required based on the value assigned to the state and another field. For example:
 &nbsp;&nbsp;&nbsp;`(Condition) When a work item State is *Active*` 
 &nbsp;&nbsp;&nbsp;`(Condition) And when the value of *Value Area* = *Business*`   
 &nbsp;&nbsp;&nbsp;`(Action) Then make required *Story Points*`   
@@ -69,7 +69,7 @@ As an example, you can make a field required based on the value assigned to the 
 
 You add fields to a selected work item type.  
 	
-0. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.   
+1. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, New custom control](_img/rules/custom-rule-create-rule.png)  

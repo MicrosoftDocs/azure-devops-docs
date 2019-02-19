@@ -131,7 +131,7 @@ You add members to a custom security group in the same way you add users to a bu
 	> [!div class="mx-imgBorder"]
 	> ![Security>Members page, Add member](_img/change-individual-permissions/team-admin-group-add-members.png)  
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
     ![Add users and group dialog](_img/project-level-permissions-add-a-user.png) 
 
@@ -142,7 +142,7 @@ You add members to a custom security group in the same way you add users to a bu
 
 ### To change the permission at a project-level
 
-1. From the project-level **Security** page, type the name of the user account in the **Filter users and groups** box and select the account whose permissions you want to change.
+1. From the project-level **Security** page, enter the name of the user account in the **Filter users and groups** box and select the account whose permissions you want to change.
 
 	> [!div class="mx-imgBorder"]
 	> ![Filter and select a user account](_img/change-individual-permissions/filter-user-account.png)  

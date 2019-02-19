@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2018  
+ms.date: 02/19/2019  
 ---
 
 # Wiki Git repository files and file structure
@@ -62,8 +62,8 @@ To change the order of the Wiki pages in the hierarchy, a ".order" file is requi
 
 > ![Order file in repo](_img/wiki/order-file-in-repo.png)
 
-The content of the order file will be the list of files in the required order (without the ".md" extension). 
-In this case, it will be :
+The content of the order file contains the list of files in the required order (without the ".md" extension).
+In this case, it is as follows:
 
 ```
 Home

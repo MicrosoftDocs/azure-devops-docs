@@ -9,7 +9,7 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 12/19/2018 
+ms.date: 02/19/2019 
 monikerRange: '>= tfs-2013'
 ---
 
@@ -55,7 +55,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
     The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
 	::: moniker-end
 
-0.  When you access the server for the first time, a Windows Identity dialog box will appear. Fill in your credentials and choose the **OK** button.
+3.  When you access the server for the first time, a Windows Identity dialog box appears. Fill in your credentials and choose the **OK** button.
 
     > [!TIP]
     > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
@@ -103,7 +103,7 @@ To learn more about each page and the tasks you can perform, see [Web portal nav
 
 2.  If you're not a member of a TFS security group, [get added as one](../security/add-users-team-project.md).
 
-3.  Check with a team member to determine the names of the server, project collection, and project that you will connect to.
+3.  Check with a team member to determine the names of the server, project collection, and project to connect to.
 
 ::: moniker range="tfs-2017"
 
@@ -115,7 +115,7 @@ Select the connect icon in Team Explorer to open up the **Connect** page. Choose
 
 ![connect to projects](_img/te-connect-page-connect-to-team-project.png)  
 
-The **Connect to a Project** dialog will appear and show the projects you can connect to, along with the repos in those projects.
+The **Connect to a Project** dialog appears and show the projects you can connect to, along with the repos in those projects.
 
 ![Connect to a Project dialog box](_img/connect-projects-tfs/vs2017_connect_dialog.png)
 
@@ -137,7 +137,7 @@ Select a project from the list and select **Connect**.
 From the **Connect** page, choose the **Connect to Team Project** link to select a different organization, TFS, or project to connect to.
 
 ![connect to projects](_img/te-connect-page-connect-to-team-project.png)  
-Select the projects that you will work on.   
+Select the projects to work on.
 
 ![Connect to Team Foundation Server dialog box](_img/connect-projects-tfs/IC671574.png)   
 
@@ -149,7 +149,7 @@ If you selected just one project, you'll see the Home page for that project. The
 	
    
 
-Team Explorer will display the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your project.
+Team Explorer displays the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your project.
 
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git  |Home page with TFVC  |
@@ -234,7 +234,7 @@ For on-premises TFS, each user account must have a TFS client access license (CA
 
 ::: moniker-end
 
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
+In addition, you can provide access to stakeholders in your organization who have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
 
 <a name="proxy"></a>
 

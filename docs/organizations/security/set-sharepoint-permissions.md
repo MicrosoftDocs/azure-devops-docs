@@ -28,9 +28,9 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
     ![Choose the SharePoint group and add users](../accounts/_img/add-users-team-project/invite-people.png)
 
-    -   To add users who will require minimal access to the project, choose **Readers**.
-    -   To add users who will contribute fully to this project, choose **Contributors**.
-    -   To add users who will act as project leads, choose **Full Control**.
+    -   To add users who require minimal access to the project, choose **Readers**.
+    -   To add users who contribute fully to this project, choose **Contributors**.
+    -   To add users who act as project leads, choose **Full Control**.
 
 For more information about users and groups in SharePoint Products,
 [go here](https://technet.microsoft.com/library/cc262690.aspx).
