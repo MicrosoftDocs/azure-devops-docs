@@ -66,7 +66,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> [!div class="mx-imgBorder"]
 	> ![Create a sub-team with its own area path](_img/add-team/create-new-team-new-nav.png)
 
-0. Select the team to configure it. To select the set of sprints and area paths the team will use, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
+1. Select the team to configure it. To select the set of sprints and area paths the team uses, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team profile, choose Iterations and areas link](_img/add-team/team-profile-choose-iterations-and-areas.png)
@@ -98,7 +98,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Open project admin page](_img/add-team/open-admin-context-tfs-2017.png) 
 
-0. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. If you do not select this option, you will have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
+1. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. If you do not select this option, you must set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
 
 	![Create a sub-team with its own area path](_img/add-team/create-team-dialog.png)
 
@@ -110,7 +110,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Team profile, choose Iterations and areas link](_img/add-team/team-profile-tfs.png)  
 
-0. To select the set of sprints and area paths the team will use, see [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md).
+1. To select the set of sprints and area paths the team uses, see [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md).
 
 	> [!IMPORTANT]  
 	> Team tools aren't available until the team's default area path is set. 
@@ -129,7 +129,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 
-	If you do not select this option, you will have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
+	If you do not select this option, you must set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
 
 	![Create a sub-team with its own area path](_img/add-team/scale-agile-co.png)
 
@@ -137,9 +137,9 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Web portal, admin context, project, Overview page, Select a sub-team to configure it](_img/add-team/scale-agile-select-team-to-configure-it-co.png)
 
-4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md#activate).  
+4. To select the set of sprints the team uses, open the **Iterations** page for the team. See [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md#activate).  
 
-5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-area-paths.md#team-area-paths).  
+5. To change the area paths that the team references, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-area-paths.md#team-area-paths).  
  
 ::: moniker-end   
 
@@ -154,7 +154,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 ::: moniker range="azure-devops"  
 > [!NOTE]   
-> You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
+> You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users are available to add to a team.
 ::: moniker-end 
 
 
@@ -167,7 +167,7 @@ For details, see [Add users to a project or specific team](../security/add-users
 
 
 ## Move work items under teams 
-Now that your two feature teams are configured, you'll want to move existing work items from their current assignments to the team's default area path. This way, the work items will show up on each team's backlog. 
+Now that your two feature teams are configured, you'll want to move existing work items from their current assignments to the team's default area path. This way, the work items show up on each team's backlog. 
 
 1.	The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
 
@@ -196,7 +196,7 @@ One last step in moving from one team to two teams requires configuring the defa
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="azure-devops"  
-0. Open **Project Settings>Team Configuration** settings page for the default project team, and change the setting as shown.  
+1. Open **Project Settings>Team Configuration** settings page for the default project team, and change the setting as shown.  
 	> [!div class="mx-imgBorder"]  
 	> ![New nav, default project team configuration, Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
 

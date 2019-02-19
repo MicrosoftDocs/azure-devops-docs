@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 12/20/2018
+ms.date: 02/19/2019
 ---
 
 # Set permissions at the project- or collection-level
@@ -43,10 +43,10 @@ For a description of each group and each permission, see [Permissions and groups
 
 
 > [!TIP] 
-> For users who will manage project-level features &mdash;such as, teams, area and 
+> For users who manage project-level features &mdash;such as, teams, area and 
 > iteration paths, repositories, service hooks, and service end points&mdash;add them to 
 > the Project Administrators group. 
-> For users who will manage organization or collection-level features 
+> For users who manage organization or collection-level features 
 > &mdash;such as, projects, policies, processes, retention policies, 
 > agent and deployment pools, and extensions&mdash;add them to the Project Collection 
 > Administrators group. To learn more, see [About user, team, project, and organization-level settings](../settings/about-settings.md). 
@@ -89,7 +89,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice. 
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -121,7 +121,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice. 
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -151,7 +151,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> ![Contributors group, permissions](_img/project-level-permissions-contributors-group.png)  
 
 	> [!TIP]   
-	> In general, if you add a user to the Contributors group, they will be able to add and modify work items. You can restrict permissions of users or user groups to add and modify work items based on the area path. For details, see [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).
+	> In general, if you add a user to the Contributors group, they are able to add and modify work items. You can restrict permissions of users or user groups to add and modify work items based on the area path. For details, see [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).
 
 	For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 

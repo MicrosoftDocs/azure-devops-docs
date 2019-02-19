@@ -43,19 +43,19 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 <a id="add-states"></a>
 ## Add a workflow state   
 
-States you add will appear in the picklist for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
+States you add appear in the picklist for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
 
 > [!NOTE]    
-> States that you add to the task WIT will add columns to the task board. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT will also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added.  
+> States that you add to the task WIT adds columns to the task board. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added.  
 >
-> If you add a state to a WIT which you is associated with a backlog level, each team will need to update their [Kanban board column settings](../../../boards/boards/add-columns.md) in order to view and use the affected Kanban board.  
+> If you add a state to a WIT which you is associated with a backlog level, each team needs to update their [Kanban board column settings](../../../boards/boards/add-columns.md) in order to view and use the affected Kanban board.  
 
-0. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
+1. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png) 
 
-0. Enter the name of the State, choose its category and color, and then click **Save**. The color you specify will appear throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
+2. Enter the name of the State, choose its category and color, and then click **Save**. The color you specify appears throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
 	<img src="_img/process/cpw-new-state-triaged.png" alt="State dialog box" style="border: 1px solid #C3C3C3;" />  
 
@@ -69,7 +69,7 @@ States you add will appear in the picklist for the States field shown in work it
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Triaged state added](_img/process/cpw-added-triage-state-in-form.png) 
 
-0. Remember, when you add a state to a WIT which is associated with a backlog level, each team that uses the Kanban board will need to [update their column settings](../../../boards/boards/add-columns.md).
+1. Remember, when you add a state to a WIT which is associated with a backlog level, each team that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
 
 <a id="edit-state"></a>
 ## Edit a state
@@ -83,7 +83,7 @@ You can edit the category or the color of a custom state. However, you can't cha
 
 0. Modify the category or color, and then click Save. 
 
-0. If you change the category, teams that use the Kanban board to update their status will need to update their [column settings](../../../boards/boards/add-columns.md).    
+1. If you change the category, teams that use the Kanban board to update their status need to update their [column settings](../../../boards/boards/add-columns.md).    
  
 <a id="remove-state"></a>
 ## Hide or remove a state
@@ -107,9 +107,9 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 	> ![Hide an inherited state](_img/process/cpworkflow-hide-state.png)  
 
 	> [!NOTE]    
-	> If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board will need to [update their column settings](../../../boards/boards/add-columns.md).
+	> If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
 
-0. To unhide, open the &hellip; context menu and choose the **Unhide** option.  
+1. To unhide, open the &hellip; context menu and choose the **Unhide** option.  
  
 
 <a id="remove-state"></a>
@@ -120,7 +120,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 	<img src="_img/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
 
-0.  If teams use the Kanban board to update their status, each team will need to update their [column settings](../../../boards/boards/add-columns.md).    
+1.  If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
  
 
 ## Related articles   

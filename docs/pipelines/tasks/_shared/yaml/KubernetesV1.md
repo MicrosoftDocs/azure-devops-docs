@@ -29,7 +29,7 @@
     #configMapFile: # Required when useConfigMapFile == True
     #configMapArguments: # Optional
     #versionOrLocation: 'version' # Optional. Options: version, location
-    #versionSpec: '1.7.0' # Optional
+    #versionSpec: '1.13.2' # Optional
     #checkLatest: false # Optional
     #specifyLocation: # Required when versionOrLocation == Location
     #workingDirectory: '$(System.DefaultWorkingDirectory)' # Optional

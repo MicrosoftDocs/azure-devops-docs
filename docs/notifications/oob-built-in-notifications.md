@@ -9,7 +9,7 @@ toc: show
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 10/11/2018
+ms.date: 02/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -19,9 +19,9 @@ monikerRange: '>= tfs-2017'
 
 Default subscriptions are configured to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item.
 
-The roles that receive a notification for a particular default subscription are reflected in the description of the subscription, for example, *"Notifies you when a build you queued or that was queued for you completes"*. Role-based subscriptions contain a Roles field which you can view by opening the subscription. Only users or groups that belong to the role listed within the subscription will receive a notification for an event matched by the subscription.
+The roles that receive a notification for a particular default subscription are reflected in the description of the subscription, for example, *"Notifies you when a build you queued or that was queued for you completes"*. Role-based subscriptions contain a Roles field which you can view by opening the subscription. Only users or groups that belong to the role listed within the subscription receive a notification for an event matched by the subscription.
   
-Default subscriptions only send targeted notifications. That is, recipient will always be somehow associated with the event that triggered the notification. For example, the default subscription for work item updates only sends an email notification to the person assigned to the work item.
+Default subscriptions only send targeted notifications. That is, the recipient is always somehow associated with the event that triggered the notification. For example, the default subscription for work item updates only sends an email notification to the person assigned to the work item.
 
 ## Out-of-the-box (OOB) or default subscriptions
 
