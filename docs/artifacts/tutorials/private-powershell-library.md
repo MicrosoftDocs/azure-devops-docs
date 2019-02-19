@@ -112,7 +112,49 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
 
 3. Within the new `Get-Hello.psd1` file, find the _Nested Modules_ field. Within that field place the path to your `Get-Hello.psm1` file. 
 
-> We can also put this within the _Root-Module_ section of our new manifest. If we were to want to package different script files, we could add these to the _FunctionsToExport_ section of our module.
+    It may also be necessary when creating your own Module Manifests to define your RootModule:
+    
+    ```
+    RootModule = 'Get-Hello.psm1'
+    ```
+
+4. The ```FunctionsToExport = @()``` section is meant to define the module's exported functions. This is simply a list of all exported functions. Take part of an example from ```PowerShellGet.psd1```:
+
+    ```
+    FunctionsToExport = @('Install-Module',
+                      'Find-Module',
+                      'Save-Module',
+                      'Update-Module',
+                      'Publish-Module', 
+                      'Get-InstalledModule',
+                      'Uninstall-Module',
+                      'Find-Command', 
+                      'Find-DscResource', 
+                      'Find-RoleCapability',
+                      'Install-Script',
+                      'Find-Script',
+                      'Save-Script',
+                      'Update-Script',
+                      'Publish-Script', 
+                      'Get-InstalledScript',
+                      'Uninstall-Script',
+                      'Test-ScriptFileInfo',
+                      'New-ScriptFileInfo',
+                      'Update-ScriptFileInfo',
+                      'Get-PSRepository',
+                      'Set-PSRepository',                      
+                      'Register-PSRepository',
+                      'Unregister-PSRepository',
+                      'Update-ModuleManifest')
+    ```
+    
+5. It is also possible to define a list of files as part of your module. Just add this list under ```FileList=@()```. The syntax is the same as above, and the clear example from the ```PowerShellGet.psd1``` definition is:
+
+    ```
+    FileList = @('PSModule.psm1',
+             'PSGet.Format.ps1xml',
+             'PSGet.Resource.psd1')
+   ```	     
 
 ### Package and send the module
 
@@ -126,6 +168,7 @@ We now have the module and the module manifest. We are ready to package it and s
 
     The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs when we package our module in the next few steps. There are two key things we need to do to this file:
 
+    * _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
     * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
     * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
 
@@ -134,13 +177,13 @@ We now have the module and the module manifest. We are ready to package it and s
     <package >
       <metadata>
         <id>Get-Hello</id>
-        <version>0.0.2</version>
+        <version>1.0.0</version>
         <authors>frantot</authors>
         <owners>frantot</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>The module says hello to the user</description>
         <releaseNotes>This is the newest I know of.</releaseNotes>
-        <copyright>Copyright 2018</copyright>
+        <copyright>Copyright 2019</copyright>
         <tags>Francis Totten</tags>
         <dependencies>
         </dependencies>
