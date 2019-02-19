@@ -47,7 +47,7 @@ To learn more about what you can customize, see [About process customization and
 
 	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
  
-0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
+1. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
 	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
 
@@ -72,18 +72,18 @@ To learn more about what you can customize, see [About process customization and
 	By making a field Required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item as well as every time a work item is opened and the field is empty.
 
 	<a id="layout">  </a>
-0.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field will appear on the form.  
+0.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.  
 
 	Here we choose to add a new field. Choose the ![ ](_img/process/new-field-icon.png) (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![New WIT, customize layout](_img/process/cpwit-new-ticket-define.png) 	
 
-0.  Here, we add the Customer Ticket field to a new group labeled Customer focus. 
+1.  Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
-0.	Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
+0.	Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.  
 
 	> [!TIP]    
 	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 

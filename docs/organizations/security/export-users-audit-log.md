@@ -107,7 +107,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
-0. From the web portal home page for a project, choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon. The URL will be similar to `http://myserver:8080/tfs`.
+0. From the web portal home page for a project, choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon. The URL is similar to `http://myserver:8080/tfs`.
 
 	![TFS 2015, Web portal, open the Server settings admin context](_img/ALM_CAL_OpenAdminPage.png)
 

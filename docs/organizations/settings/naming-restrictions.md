@@ -28,7 +28,7 @@ Common restrictions include not exceeding the character length for a name, not c
 <a id="CommonRestrictions">   </a>
 ### Common considerations 
 
-The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these will count as two characters against the length restriction. For details, see [About Unicode and Character Sets](http://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
+The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these count as two characters against the length restriction. For details, see [About Unicode and Character Sets](http://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](http://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 
@@ -379,7 +379,7 @@ Processes you define or customize must conform to the following restrictions.
 <td>
 <ul>
 <li>Must be unique across the Team Foundation server.</li>
-<li>If you upload a template with the same name as an existing template, the existing template will be overwritten.</li>
+<li>If you upload a template with the same name as an existing template, the existing template is overwritten.</li>
 </ul>
 </td>
 </tr>
@@ -1001,7 +1001,7 @@ Your on-premises build computer must conform to the following restrictions.
 <td>Disk space
 </td>
 <td>
-Must contain sufficient space for the build (insufficient space will lead to failed builds).
+Must contain sufficient space for the build (insufficient space leads to failed builds).
 </td>
 </tr>
 <tr>
@@ -1060,7 +1060,7 @@ If the build computer is firewall enabled, make sure that the program **tfsbuild
 
 ### Build types
 
-Build types configure the conditions under which a single solution or a set of solutions in a project will be built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/get-started-designer.md).
+Build types configure the conditions under which a single solution or a set of solutions in a project are built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/get-started-designer.md).
 
 Build type names  must conform to the following restrictions.  
 

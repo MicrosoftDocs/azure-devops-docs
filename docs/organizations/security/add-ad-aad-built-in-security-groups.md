@@ -10,14 +10,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/19/2019
 ---
 
 # Add AD/Azure AD users or groups to a built-in security group
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-As described in [About security and identity](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that will need to administrate select features and functions, you add them or associated groups to the Build Administrators or Project Administrators group.
+As described in [About security and identity](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that need to administrate select features and functions, you add them or associated groups to the Build Administrators or Project Administrators group.
 
 Review [Default permissions and access](permissions-access.md) to gain insight into the default permissions provided to the built-in, project-level security groups.  
 
@@ -49,11 +49,11 @@ The method for adding a user or group to a built-in security group is the same, 
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
 0. Open **Security** and under the **Groups** section, choose one of the following:
-    - To add users who will require read-only access to the project, choose **Readers**.
-    - To add users who will contribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
-    - For users who will need to administrate the project, choose **Project Administrators**.
+    - To add users who require read-only access to the project, choose **Readers**.
+    - To add users who ribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
+    - For users who to administrate the project, choose **Project Administrators**.
 
-0. Next, choose the **Members** tab.
+1. Next, choose the **Members** tab.
 
 	Here we choose the **Contributors** group.
 
@@ -64,14 +64,14 @@ The method for adding a user or group to a built-in security group is the same, 
 
 0. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Enter the name of the user into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
+1. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
 	> [!NOTE]
 	> The first time you add a user or group, 
 	> you can't browse to it or check the friendly name.
-	> After the identity has been added, you can just type the friendly name.
+	> After the identity has been added, you can just enter the friendly name.
 
 ::: moniker-end    
 
@@ -91,11 +91,11 @@ The method for adding a user or group to a built-in security group is the same, 
    ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)   
 
 0. Open **Security** and under the **Groups** section, choose one of the following:
-    - To add users who will require read-only access to the project, choose **Readers**.
-    - To add users who will contribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
-    - For users who will need to administrate the project, choose **Project Administrators**. 
+    - To add users who ire read-only access to the project, choose **Readers**.
+    - To add users who ribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
+    - For users who to administrate the project, choose **Project Administrators**. 
 
-0. Next, choose the **Members** tab.
+1. Next, choose the **Members** tab.
 
 	Here we choose the **Contributors** group.
 
@@ -106,14 +106,14 @@ The method for adding a user or group to a built-in security group is the same, 
 
 1. Choose ![ ](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-2. Enter the name of the user into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
+2. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
 	> [!NOTE]
 	> The first time you add a user or group, 
 	> you can't browse to it or check the friendly name.
-	> After the identity has been added, you can just type the friendly name.
+	> After the identity has been added, you can just enter the friendly name.
 
 ::: moniker-end
 

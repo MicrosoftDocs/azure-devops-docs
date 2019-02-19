@@ -31,7 +31,7 @@ The structure and overall syntax used in defining process templates remains the 
 
 ## Unsupported customizations and unreferenced plug-in files
 
-Any reference to the following objects in any of the XML definition files will result in a validation error upon import.  
+Any reference to the following objects in any of the XML definition files result in a validation error upon import.  
 *   Custom controls on work item forms  
 *   Custom link types  
 *   Global workflow 

@@ -18,7 +18,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 
 ::: moniker range="azure-devops"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/DownloadPipelineArtifactV0.md)]
+[!INCLUDE [temp](../_shared/yaml/DownloadPipelineArtifactV1.md)]
 ::: moniker-end
 
 ## Arguments
