@@ -24,7 +24,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/DownloadGitHubReleasesV0.md)]
+[!INCLUDE [temp](../_shared/yaml/DownloadGitHubReleaseV0.md)]
 ::: moniker-end
 
 ## Arguments

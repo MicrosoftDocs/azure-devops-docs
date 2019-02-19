@@ -23,7 +23,7 @@ Most of these tools are available to you if you're added as a team member or a m
 
 Stakeholders have limited access to view charts and dashboards. To learn more, see [About access levels](../../organizations/security/access-levels.md).
 
-[!INCLUDE [temp](../../organizations/security/_shared/collaborate.md)]
+[!INCLUDE [temp](../../organizations/security/_shared/wiki.md)]
 
 ## Manage permissions
 
