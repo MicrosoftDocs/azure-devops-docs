@@ -185,7 +185,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 ::: moniker range=">=tfs-2015"  
 ## Color-code tags on boards
 
-You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. they don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags]( 
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. they don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
 ::: moniker-end   
 
 ::: moniker range="tfs-2015"  
