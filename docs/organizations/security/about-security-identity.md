@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 01/25/2019
+ms.date: 02/19/2019
 ---
 
 # About security and identity
@@ -81,7 +81,7 @@ By default, your account or collection allows access for all authentication meth
 You can limit access, but you must specifically restrict access for each method. 
 When you deny access to an authentication method, 
 no app can use that method to access your account. 
-Any app that previously had access will get an 
+Any app that previously had access gets an 
 authentication error and can't access your account.
 
 To learn more about how we store your credentials, see [Credential storage for Azure DevOps](../../articles/credential-storage.md).

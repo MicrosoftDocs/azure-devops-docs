@@ -1337,7 +1337,12 @@
     },
     {
       "source_path": "docs/setup-admin/websitesettings.md",
-      "redirect_url": "/azure/devops/organizations/security/websitesettings",
+      "redirect_url": "/tfs/server/admin/websitesettings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/websitesettings.md",
+      "redirect_url": "/tfs/server/admin/websitesettings",
       "redirect_document_id": false
     },
     {
@@ -2867,7 +2872,7 @@
     },
     {
       "source_path": "docs/tfs-server/websitesettings.md",
-      "redirect_url": "/azure/devops/organizations/security/websitesettings",
+      "redirect_url": "/tfs/server/admin/websitesettings",
       "redirect_document_id": false
     },
     {
@@ -8137,7 +8142,7 @@
     },
     {
       "source_path": "docs/security/websitesettings.md",
-      "redirect_url": "/azure/devops/organizations/security/websitesettings",
+      "redirect_url": "/tfs/server/admin/websitesettings",
       "redirect_document_id": false
     },
     {

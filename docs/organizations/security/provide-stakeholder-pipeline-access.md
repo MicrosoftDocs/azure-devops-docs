@@ -32,18 +32,18 @@ To enable the **Free access to Pipelines for Stakeholders** feature, see [Enable
 > [!div class="mx-imgBorder"]  
 > ![Preview feature, account level](_img/stakeholder-security/preview-feature.png)
 
-When the feature is turned on, all Stakeholders in your account will have full access to **Pipelines** or **Build and Release** and it's associated features. This includes the ability to view, create, and delete automated test runs. For a complete list of associated features and tasks, see [Build and release permissions and roles](../../pipelines/policies/permissions.md). 
+When the feature is turned on, all Stakeholders in your account have full access to **Pipelines** or **Build and Release** and it's associated features. This includes the ability to view, create, and delete automated test runs. For a complete list of associated features and tasks, see [Build and release permissions and roles](../../pipelines/policies/permissions.md). 
 
-Stakeholders are still subject to the permissions set for their security group. For example, if they are in the Project Readers security group they will have Read-only access to **Build and Release**.  If you need more fine grained control over what features Stakeholders can access, you can create a custom security group and set more fine grained permissions to certain groups of users as described in the next section. 
+Stakeholders are still subject to the permissions set for their security group. For example, if they are in the Project Readers security group they have Read-only access to **Build and Release**.  If you need more fine grained control over what features Stakeholders can access, you can create a custom security group and set more fine grained permissions to certain groups of users as described in the next section. 
 
 
 ## Limit access to select Stakeholders to CI/CD features
 
 After turning on the **Free access to Pipelines for Stakeholders** preview feature, you can limit access to select features or tasks by setting permissions. The general steps are: 
 
-0. Create a custom, project-level, security group in Azure DevOps 
-0. Add users to this group 
-0. Set permissions to **Deny** or **Not set** for those CI/CD features you want to limit access to. You can set permissions for these CI/CD artifacts:
+1. Create a custom, project-level, security group in Azure DevOps 
+2. Add users to this group 
+3. Set permissions to **Deny** or **Not set** for those CI/CD features you want to limit access to. You can set permissions for these CI/CD artifacts:
 	- All build pipelines or select build pipelines
 	- All release pipelines or select release pipelines 
 	- Task groups
@@ -117,7 +117,7 @@ To create a project-level security group, open the web portal and choose the pro
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/stakeholder-security/choose-members-add.png) 
 
-2. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Azure Active Directory  or existing Azure DevOps groups. The system will automatically search for matches. Choose the match(es) that meets your choice.
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Azure Active Directory  or existing Azure DevOps groups. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
     <img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" />
 
@@ -160,7 +160,7 @@ Open the Security dialog for all or a select build pipeline.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add link to add a group](_img/stakeholder-security/choose-add-to-add-group.png)  
 
-0. In the dialog that opens, type the group name of the custom security group that you previously added.
+0. In the dialog that opens, enter the group name of the custom security group that you previously added.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add link to add a group](_img/stakeholder-security/add-stakeholder-access-group-to-build-permissions.png)  

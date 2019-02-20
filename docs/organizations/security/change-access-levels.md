@@ -69,7 +69,7 @@ You manage access levels for all collections defined on the application tier. Th
 	> [!div class="mx-imgBorder"]  
 	> ![Basic access level, add group](_img/change-access-levels/basic-access-2019.png)   
 
-0. Type the name of the user or group into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the matches that meet your choice.
+0. Type the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 0. Choose **Save changes**. 
@@ -90,7 +90,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
 
-0. Type the name of the user or group into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the matches that meet your choice. 
+1. Type the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -117,7 +117,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 ::: moniker range="<= azure-devops-2019"
 ## Change the default access level
 
-Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or an advanced level will be limited to the features provided through Stakeholder access.
+Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or an advanced level is limited to the features provided through Stakeholder access.
 
 You set an access level from its page. Choose **Set as default access level** as shown.
 ::: moniker-end

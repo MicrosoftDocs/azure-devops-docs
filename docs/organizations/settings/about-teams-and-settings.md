@@ -374,7 +374,7 @@ Many of these tools are built from system queries that reference the team area p
 
 What work items appear on team backlogs and boards? When you add work items to a backlog or board, how are team defaults used to assign field values? 
 
-Teams are associated with one or more area paths and a backlog iteration path which determine what items will appear on their backlogs and boards. 
+Teams are associated with one or more area paths and a backlog iteration path which determine what items appear on their backlogs and boards. 
 
 When you define a team, you define the team's: 
 - Selected area path(s) 

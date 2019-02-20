@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/19/2019
 ---
 
 # About permissions and groups
@@ -28,15 +28,15 @@ You manage security groups and permissions from the web portal administration co
 
 Here's what you need to know about permission settings:
 
--   **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.
+- **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.
 
--   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
+- **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
 
--   For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
+- For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
     For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong.
 
--   Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
+- Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
 
 <a name="inheritance"></a>
 
@@ -89,7 +89,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 ::: moniker-end
 
-### When assigning permissions 
+### When assigning permissions
  
 **Do:**  
 - Use Windows groups when managing lots of users.  
@@ -100,7 +100,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 **Don't:**  
 - Don't add users to the project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
-- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the project, collection, or deployment, depending on the group you set.  
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
 
@@ -148,7 +148,7 @@ This means that all users that you add to one project can view the objects in ot
 If you need to restrict view access, then you can [set restrictions through the area path node](../../organizations/security/set-permissions-access-work-tracking.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
-no users in the group will be able to access the project, collection, or deployment, depending on the group you set.
+no users in the group are able to access the project, collection, or deployment, depending on the group you set.
 
 ## Tools used to set permissions
 

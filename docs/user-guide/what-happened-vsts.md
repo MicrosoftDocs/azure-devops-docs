@@ -7,7 +7,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: jillfra
-ms.date: 12/19/2018
+ms.date: 02/19/2019
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
@@ -42,7 +42,7 @@ Follow the [Azure DevOps release notes](/azure/devops/release-notes/index) to ge
 
 Yes. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. (Specifically, it's `https://dev.azure.com/{your organization}/{your project}`.) If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can change this from the organization settings page.
 
-We will continue to post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](/azure/devops/release-notes/index).
+We continue to post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](/azure/devops/release-notes/index).
 
 ## Can I still use the old interface?
 

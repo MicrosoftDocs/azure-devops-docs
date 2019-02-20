@@ -155,7 +155,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 > [!div class="mx-imgBorder"]  
 > ![Project Settings Context, Work, Iterations page](_img/areas/modify-areas-its-iterations-ts.png) 
 
-0. To schedule the start and end dates for each sprint your teams will use,  Highlight the sprint and choose **Set dates**. Or, you can open the ![ ](../../_img/icons/actions-icon.png) context menu for the iteration path and choose **Edit**.  
+1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can open the ![ ](../../_img/icons/actions-icon.png) context menu for the iteration path and choose **Edit**.  
 
 	Choose the calendar icon to choose new dates. 
 
@@ -167,7 +167,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Iterations page, scheduled set of sprints](_img/areas/modify-areas-its-iterations-scheduled-ts.png)
 
-	Your next step is to [choose the sprints each team will use](#activate-team-services). 
+	Your next step is to [choose the sprints each team uses](#activate-team-services). 
 
 ::: moniker-end
 
@@ -194,7 +194,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 
 	![Iterations, defaults defined for Agile](../../boards/sprints/_img/create-new-child-under-sprint.png)  
 
-	Your next step is to [select the sprints each team will use](#activate-sprints-tfs). 
+	Your next step is to [select the sprints each team uses](#activate-sprints-tfs).
  
 ::: moniker-end
 
@@ -210,7 +210,7 @@ From a web browser, open the web portal administrative context for your team.
 ::: moniker range="azure-devops"  
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
 	Here we open the Board for the Web team and from there the team profile. 
 
@@ -378,9 +378,9 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 <a name="rename-delete"></a>
 ## Rename, move, or delete an iteration 
 
-When you rename an iteration, or move the node within the tree hierarchy, the system will automatically update the work items and queries that reference the existing path or paths. 
+When you rename an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path or paths. 
 
-0. To rename an iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
+1. To rename an iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work>Project Configuration](_img/iterations/edit-iteration-path.png)  
@@ -402,7 +402,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 ::: moniker range=">= tfs-2017"
 ## Archive iteration paths 
 
-After a while, you may want to archive iteration paths that were used for sprints that are a year or more out of date. You can do that by moving the iteration path under a node that you label "Archive". All work items will be updated with the moved iteration path. Also, teams can de-select those sprints that have past. All data is maintained in the data store with the new iteration path assignments. 
+After a while, you may want to archive iteration paths that were used for sprints that are a year or more out of date. You can do that by moving the iteration path under a node that you label "Archive". All work items are updated with the moved iteration path. Also, teams can de-select those sprints that have past. All data is maintained in the data store with the new iteration path assignments. 
 
 <!--- Implications for reporting --> 
 Prior to archiving the iterations, consider if you have captured all the reports that you may want. 

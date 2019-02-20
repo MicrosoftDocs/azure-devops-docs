@@ -271,7 +271,7 @@ Security Service Group
 			</p>
 			<p>
 				This group should be restricted to the smallest possible number of users
-				who need total administrative control over the collection. For Azure DevOps, assign to administrators who will customize work tracking. 
+				who need total administrative control over the collection. For Azure DevOps, assign to administrators who customize work tracking. 
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
@@ -388,7 +388,7 @@ For each project that you create, the system creates the followings project-leve
 	<tr>
 		<td>Project Administrators</td>
 		<td>Has permissions to administer all aspects of teams and project, although they can't create team projects.</td>
-		<td>Assign to users who will manage user permissions, create or edit teams, modify team settings, define area an iteration paths, or customize work item tracking.</td>
+		<td>Assign to users who manage user permissions, create or edit teams, modify team settings, define area an iteration paths, or customize work item tracking.</td>
 	</tr>
 	<tr>
 		<td>Project Valid Users</td>

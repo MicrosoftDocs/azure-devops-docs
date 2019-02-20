@@ -46,13 +46,13 @@ To learn more about what you can customize, see [About process customization and
 
 Each process defines two default portfolio backlogs, Epics and Features; each is associated with their corresponding work item types, epics and features. 
 
-You can add a custom work item type when adding or editing a portfolio backlog, or you can choose a work item type you've previously added. Only those work item types that don't belong to another backlog level will appear for selection. 
+You can add a custom work item type when adding or editing a portfolio backlog, or you can choose a work item type you've previously added. Only those work item types that don't belong to another backlog level appear for selection. 
  
 
 <a id="add-portfolio-backlog">  </a>
 ### Add a portfolio backlog 
 	
-0. From the  **Backlog levels** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**. 
+1. From the  **Backlog levels** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, select Process](_img/process/process-new-portfolio-backlog.png) 
@@ -106,7 +106,7 @@ The Iteration backlog, also referred to as the sprint backlogs, defines the WITs
 
 For the iteration backlog, you can add WITs and change the default WIT. Open the Edit backlog dialog from the context menu for the Iteration backlog. 
 
-Here, we've added the *Ticket* WIT which will be tracked along with tasks. 
+Here, we've added the *Ticket* WIT which is tracked along with tasks. 
 
 <img src="_img/process/process-edit-iteration-backlog-dialog-modified.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
 

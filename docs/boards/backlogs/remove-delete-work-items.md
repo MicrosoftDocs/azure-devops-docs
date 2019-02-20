@@ -162,7 +162,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 <ul>
 <li>[Permanently delete work items (web portal](#restore)</li>
 <li>[Permanently delete work items (command-line)](#perm-delete)</li>
-<li>[Permanently delete test artifacts](#delete-test)</li>
+<li>[Permanently delete test artifacts](delete-test-artifacts.md)</li>
 </ul>
 </td>
 </tr>
@@ -389,7 +389,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 ## Delete work items  
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
 # [New navigation](#tab/new-nav)
 
@@ -437,7 +437,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](#delete-test). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 

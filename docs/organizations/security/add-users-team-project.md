@@ -60,9 +60,9 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 0. Under **Groups**, choose one of the following:
-   * To add users who will require read-only access to the project, choose **Readers**.
-   * To add users who will contribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
-   * For users who will need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   * To add users who require read-only access to the project, choose **Readers**.
+   * To add users who ontribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
+   * For users who eed to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 0. Next, choose the **Members** tab.
 
@@ -78,14 +78,14 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 0. Choose ![gear icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. choose the match(es) that meet your requirements.
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meet your requirements.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps or TFS,
    > you can't browse to it or check the friendly name.
-   > After the identity has been added, you can just type the friendly name.
+   > After the identity has been added, you can just enter the friendly name.
 
 6. In **Identities**, specify the name of the user or group you want to add.
 
@@ -110,9 +110,9 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
 0. Choose **Security** and under **Groups**, choose one of the following:
-   * To add users who will require read-only access to the project, choose **Readers**.
-   * To add users who will contribute fully to this project, choose **Contributors**.
-   * For users who will need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   * To add users who require read-only access to the project, choose **Readers**.
+   * To add users who contribute fully to this project, choose **Contributors**.
+   * For users who need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 0. Next, choose the **Members** tab.
 
@@ -128,14 +128,14 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 0. Choose ![gear icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. choose the match(es) that meets your choice.
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meets your choice.
 
 	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps or TFS,
    > you can't browse to it or check the friendly name.
-   > After the identity has been added, you can just type the friendly name.
+   > After the identity has been added, you can just enter the friendly name.
 
 6. In **Identities**, specify the name of the user or group you want to add.
 
@@ -183,12 +183,12 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 	> [!div class="mx-imgBorder"]  
 	> ![Team Profile, choose Add](_img/add-users/team-profile-choose-add.png)   
 
-0. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can type several identities into the text box, separated by commas.
+0. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
 
    > [!TIP]
-   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can type another name in the Identities text box before choosing to save your changes.
+   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
 	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
 
@@ -219,12 +219,12 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 0. Choose the ![plus icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
 
-0. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can type several identities into the text box, separated by commas.
+0. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
 
    > [!TIP]
-   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can type another name in the Identities text box before choosing to save your changes.
+   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
 	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
 

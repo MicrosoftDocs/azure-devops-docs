@@ -34,7 +34,7 @@ For example, updates made to any of the custom processes listed below automatica
 ![Custom processes mapped to projects](_img/ALM_IP_ProcessUse.png)
 
 As you discover additional customizations that you need to make, you can export the existing process, update the process XML definition files, 
-zip the result and re-import the newly updated process. Your changes will be applied to all your existing projects that use that process.    
+zip the result and re-import the newly updated process. Your changes are applied to all your existing projects that use that process.    
 
 Import process supports the following scenarios:   
 *   [Import an existing process from an on-premises Team Foundation Server (TFS)](#import-from-TFS)  
@@ -121,7 +121,7 @@ Once you've added a process, you can update it by importing a zip file where you
 
     <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and projects updated" style="border: 2px solid #C3C3C3;" />
 
-5.  If you renamed or deleted fields or work item types, you will receive a confirmation message. 
+5.  If you renamed or deleted fields or work item types, you receive a confirmation message.
     Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
     [Information messages](resolve-errors.md#info-only) don't require any action on your part.  
 
