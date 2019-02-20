@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 02/19/2019
 ---
 
 
@@ -22,7 +22,7 @@ The method we recommend for managing a large set of user accounts is to use Azur
 If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps or TFS to support billing.
 
 ::: moniker range="azure-devops"
-Use this topic to access articles that will show you how to:
+Use this topic to access articles that show you how to:
 > [!div class="checklist"]
 > * Set up Azure Active Directory for use with Azure DevOps Services
 > * Manage organizational access with Azure AD
@@ -30,7 +30,7 @@ Use this topic to access articles that will show you how to:
 
 ::: moniker range="<= azure-devops-2019"
 
-Use this topic to access articles that will show you how to:
+Use this topic to access articles that show you how to:
 > [!div class="checklist"]
 > * Set up Active Directory for use with TFS
 

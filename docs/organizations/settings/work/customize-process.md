@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
-You can only customize inherited processes.  Any changes you make to the inherited process will automatically appear in the projects that use that process. 
+You can only customize inherited processes.  Any changes you make to the inherited process automatically appears in the projects that use that process. 
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
@@ -60,9 +60,9 @@ Learn how to perform these tasks:
 
 Locked ![ ](_img/process/locked-icon.png) fields and inherited ![ ](_img/process/inherited-icon.png) fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
 
-0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
+1. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
-0. To add a field, choose the ![ ](_img/process/new-field-icon.png) (**New Field** icon).  
+2. To add a field, choose the ![ ](_img/process/new-field-icon.png) (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png)
@@ -103,7 +103,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
 
-0. Name the WIT and optionally specify a description, icon and color. The icon and color you specify will appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
+1. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
 	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
 
@@ -243,7 +243,7 @@ You can get, create, update, and delete processes defined for an organization us
 
 ## Related articles
 
-Keep in mind that all projects that reference the inherited process that you're customizing will automatically update to contain the modifications you make. 
+Keep in mind that all projects that reference the inherited process that you're customizing automatically updates to contain the modifications you make.
 
 To customize a single project, always start by [creating an inherited process and changing the project to use that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.  
 

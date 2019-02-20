@@ -92,23 +92,23 @@ You can change the process a project uses from a system process or inherited pro
 
 0. Click the checkbox of those projects you want to change to use the Agile process. 	
 
-	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile will appear under the Available projects column. 
+	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile appear under the Available projects column.
  
 	<img src="_img/process/mprocess-change-process-dialog-to-agile.png" alt="Change process to a system process dialog" style="border: 1px solid #C3C3C3;" />  
 
-0. After  you've confirmed that the projects you want to change are correct, click Ok. 
+1. After  you've confirmed that the projects you want to change are correct, click Ok. 
 
 > [!IMPORTANT]  
 >When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
 > 
-> - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
+> - If you make a field required, work items with that field undefined show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
 > - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the project. 
 
 
 <a id="create-team-project">  </a>
 ## Create a project from a process 
 
-0. Open the &hellip; context menu for the process you want to use and choose **New project**.  
+1. Open the &hellip; context menu for the process you want to use and choose **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
@@ -121,9 +121,9 @@ You can change the process a project uses from a system process or inherited pro
 It's a good practice to test the customizations you make before rolling out the changes to your organization.  To do this, you create a copy of a process, make your updates, verify the updates appear as desired, and then move projects to the new process.  
  
 > [!TIP]    
-> If you make a change to a process that is used by one or more projects, each project that uses the process will update immediately to the incremental process change. To bundle your process changes before you roll them out to all projects, following the  steps outlined next. 
+> If you make a change to a process that is used by one or more projects, each project that uses the process updates immediately to the incremental process change. To bundle your process changes before you roll them out to all projects, following the  steps outlined next.
 
-0. Create a copy of the process that you want to change. From the **Process** page, open the &hellip; context menu for the process you want to copy and choose **Copy process**.  
+1. Create a copy of the process that you want to change. From the **Process** page, open the &hellip; context menu for the process you want to copy and choose **Copy process**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Make a copy of a selected inherited process](_img/process/copy-process.png) 

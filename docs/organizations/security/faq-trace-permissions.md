@@ -31,7 +31,7 @@ If one of your users is having permissions issues and you make use of default se
 
    ![Choose Why in permissions list view for project level information](_img/permissions-list-view-project-level-information.png)
 
-4. The resulting trace will let you know how they are inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups which they are in.
+4. The resulting trace lets you know how they are inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups which they are in.
 
    ![Trace showing inherited permissions](_img/trace-permission-group-member-inheritance.png)
 
