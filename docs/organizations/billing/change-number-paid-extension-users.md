@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 02/19/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -26,24 +26,27 @@ You must have [access to billing](add-backup-billing-managers.md) for your organ
 
 ## Change number of paid users
 
-1. Sign in to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), select the **Azure DevOps** tab, and then choose the extension you want to update.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-   ![Extensions Marketplace](_img/_shared/extensions-marketplace.png)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-2. Select **Get**. You might be prompted to enter your credentials for the Marketplace.
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-   ![Select Get in the Marketplace for the extension](_img/_shared/package-management-extension.png)
+3. Select **Users**.
 
-3. Select **Change quantity**.
+   ![Select Users to get to extensions for users](_img/change-number-paid-extension-users/select-users-in-organization-settings.png)
 
-   ![Change quantity extensions in Marketplace](_img/_shared/change-quantity-extensions.png)
+4. Select **Change quantity** under the paid extension you want to change.
 
-4. Update the total number of paid users, and then select **Continue**.
+   ![Select Change quantity](_img/change-number-paid-extension-users/change-quantity-paid-extensions.png)
 
-   ![Update quantity of users for extension](_img/_shared/update-quantity-users.png)
-5. Review, and then select **Confirm**.
+5. Update the total number of paid users, and then select **Continue**.
 
-   ![Confirm updated extension users](_img/_shared/confirm-update-extension-users.png)
+   ![Update the quantity of paid extension users](_img/_shared/update-quantity-users.png)
+
+6. Review, and then select Confirm.
+
+   ![Confirm your updates to paid extension users](_img/_shared/confirm-update-extension-users.png)
 
 The number of paid extension users is updated.
 
