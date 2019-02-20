@@ -64,8 +64,6 @@
       href: associate-automated-test-with-test-case.md
     - name: Run tests from test plans
       href: run-automated-tests-from-test-hub.md
-    - name: Associate results with requirements
-      href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: "Test & Feedback extension"
     items:
     - name: Explore work items
