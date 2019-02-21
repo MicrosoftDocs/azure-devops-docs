@@ -17,19 +17,19 @@
 - name: Version control
   items:
     - name: Git lost my changes?
-      href: git-log-history-simplification.md
+      href: ../repos/git/git-log-history-simplification.md
     - name: Manage branching strategies in TFVC for DevOps
-      href: effective-tfvc-branching-strategies-for-devops.md
+      href: ../repos/tfvc/effective-tfvc-branching-strategies-for-devops.md
     - name: Manage feature isolation in TFVC
-      href: effective-feature-isolation-on-tfvc.md
+      href: ../repos/tfvc/effective-feature-isolation-on-tfvc.md
     - name: Migrate from Subversion (SVN) to Git
-      href: perform-migration-from-svn-to-git.md
+      href: ../repos/git/perform-migration-from-svn-to-git.md
     - name: Move Git repositories between Team Projects
-      href: move-git-repos-between-team-projects.md
+      href: ../repos/git/move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
-      href: remove-binaries.md
+      href: ../repos/git/remove-binaries.md
     - name: Test Impact for partially mapped TFVC repositories
-      href: test-impact-for-partially-mapped-tfvc-repositories.md
+      href: ../repos/tfvc/test-impact-for-partially-mapped-tfvc-repositories.md
 - name: DevOps
   items:
     - name: Add Continuous Security Validation to your CICD Pipeline 
