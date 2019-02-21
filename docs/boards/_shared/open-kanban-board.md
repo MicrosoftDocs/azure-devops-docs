@@ -7,32 +7,10 @@ ms.topic: include
 > Both Kanban boards and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board).
 
 
-
 ## Open your Kanban board from the web portal
 
 Your Kanban board is one of two types of boards available to you. The other is the sprint Taskboard. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board). For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans).
 
-
-::: moniker range="azure-devops"
-> [!NOTE]
-> Your web portal uses either the **New navigation** or **Previous navigation** user interface. Choose the **New navigation** tab if the **New Navigation** feature is enabled. You'll see a vertical sidebar along with other navigational features when **New Navigation** has been enabled for the signed-in user or the organization. Choose **Previous navigation** when you see a top-level, blue-bar&mdash;indicating that **New navigation** isn't enabled. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-> [!NOTE]
-> Choose the **New navigation** tab for guidance. Azure DevOps Server 2019 supports the **New Navigation** user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-Choose the **Previous navigation** tab for guidance. TFS 2018 and earlier versions only support the previous navigation user interface. For more information, see [Web portal navigation](/azure/devops/project/navigation/index).  
-
-::: moniker-end
-
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -57,15 +35,8 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
 
-**New navigation** isn't supported on TFS at this time. Select **Previous navigation** for guidance.
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
 
@@ -105,10 +76,3 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 	> [!div class="mx-imgBorder"]  
 	> ![TFS 2015, Kanban board, Agile template](/azure/devops/boards/boards/_img/overview/kanban-basics-intro-tfs.png)  
 ::: moniker-end   
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-

@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ---
 
 
@@ -52,10 +52,6 @@ With semantic search you can search:
 
 Free text search easily searches across all work item fields, including custom fields, which enables more natural searches. Search results are displayed in a snippet view where the search matches found are highlighted. Semantic search also integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
@@ -81,13 +77,8 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -123,12 +114,9 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 [!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
----
 
 
 ### Fine tune semantic search results 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
@@ -163,13 +151,8 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
@@ -200,16 +183,11 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    and states, by using the drop-down selector lists at the top of the results page.
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#adhoc-search).
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 <a name="ad hoc-search"></a>
 ## Initiate an ad hoc search, use shortcut filters
@@ -249,7 +227,6 @@ Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) cont
 
 ::: moniker-end
 
-
 ### From Visual Studio Team Explorer
 
 Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
@@ -266,7 +243,6 @@ You can combine shortcuts and use search operators within the search box.
 
 Use the ![Search box clear icon (Team Explorer)](_img/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
 
- 
 
 <a id="keywords" /> 
 ## Find items based on keywords or phrases

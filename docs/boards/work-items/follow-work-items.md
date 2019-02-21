@@ -72,8 +72,6 @@ You can review and manage all the work items you've selected to follow.
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-# [New navigation](#tab/new-nav)  
-
 ::: moniker range=">= azure-devops-2019"   
 
 Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
@@ -95,17 +93,9 @@ You can also view and manage work that you're following from **Boards>Work Items
 > [!div class="mx-imgBorder"]  
 > ![Boards>Queries>All>Followed work items, new nav](_img/follow-work/open-work-items-vert.png)   
 
-
 ::: moniker-end   
 
-::: moniker range=">= tfs-2017 <= tfs-2018"   
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end   
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Open **Work>Queries** and choose **Followed work items**.  
 
@@ -126,17 +116,11 @@ You can also view and manage work that you're following from **Work>Work Items**
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018 || azure-devops"     
+::: moniker range=">= tfs-2017 <= tfs-2018"     
 
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
---- 
 
 
 ## Related articles  

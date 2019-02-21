@@ -12,7 +12,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 02/14/2019
 ---
 
 # Start using your Kanban board
@@ -37,6 +37,7 @@ When you add a team, you add a number of team assets. A team admin can configure
 ::: moniker range="azure-devops" 
 To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end 
+
 ::: moniker range="<= azure-devops-2019"   
 To add a board to support an additional portfolio backlog level, see [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end   
@@ -49,8 +50,6 @@ To add a board to support an additional portfolio backlog level, see [Add a port
 
 0. To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
@@ -62,13 +61,8 @@ The system automatically saves the work item with the title you entered. You can
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 To add a work item, select the ![ ](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
 
@@ -80,11 +74,6 @@ The system automatically saves the work item with the title you entered. You can
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 To add details to any work item, select the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by selecting **Assigned To**. For a description of each field, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
 

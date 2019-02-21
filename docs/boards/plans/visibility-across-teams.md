@@ -66,10 +66,6 @@ With the multi-team portfolio backlog view, you can:
 ### View child items owned by other teams 
 Management teams can drill down from their portfolio backlog to see how **Epics** are progressing. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
@@ -81,13 +77,8 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -106,17 +97,9 @@ Items that are owned by other teams appear with hollow-filled bars.
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ### View backlog items and parent items owned by other teams
 
 Feature teams can turn **Show parents** on their backlogs to see context and those items owned by other teams. 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -127,13 +110,8 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
    
 > [!div class="mx-imgBorder"]  
@@ -147,12 +125,6 @@ Items that are owned by other teams appear with hollow-filled bars.
 
 ::: moniker-end 
 
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 > [!TIP]
 > When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/velocity-chart-data-store.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.

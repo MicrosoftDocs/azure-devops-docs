@@ -24,7 +24,7 @@ Use this index to look up a description of each field used to track work items. 
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops-2019"  
+::: moniker range="<= azure-devops-2019"  
 To support additional tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
 ::: moniker-end  
 
