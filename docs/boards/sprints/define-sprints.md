@@ -62,7 +62,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 3. Choose **Save and close**. You'll see the date listed. 
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
+	> ![Boards>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
 
 ::: moniker-end
 

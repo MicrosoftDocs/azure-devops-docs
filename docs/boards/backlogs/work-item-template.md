@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2019
+ms.date: 02/20/2019
 ---
 
 # Use templates to add and update work items 
@@ -165,13 +165,12 @@ The main method for adding a work item using a template is to open the template 
 <a id="team-services-copy-link" /> 
 ### Copy the link to a template 
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 
 # [Browser](#tab/browser)
 
 0. Open settings for a team.  
 
-	#### New navigation  
 	Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
@@ -179,14 +178,38 @@ The main method for adding a work item using a template is to open the template 
 
 	Expand **Boards** and choose **Team configuration**.  Then, choose **Templates**.
 
-	#### Previous navigation  
+0. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
 
-	Choose the ![ ](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+0. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.	
+
+	You can save the URL as a text file or add the URL to a web page as a hyperlink. 
+
+# [Visual Studio](#tab/visual-studio) 
+
+<a id="team-explorer-copy-link" />
+
+1. You can copy the link to a template which will open in the web portal, by opening the context menu for the template.  
+
+	<img src="_img/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+
+2. Paste the copied link into a web browser to check that it works as expected.    
+
+---
+
+::: moniker-end
+
+
+
+::: moniker range=">=tfs-2017 <= tfs-2018"  
+
+# [Browser](#tab/browser)
+
+0. Choose the ![ ](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open team admin context](../../_img/open-admin-context-standard.png)
 
-	Choose the **Work>Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
+0. Choose the **Work>Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
    
 	<img src="_img/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
 
@@ -211,50 +234,11 @@ The main method for adding a work item using a template is to open the template 
 ::: moniker-end
 
 
-
-::: moniker range="azure-devops-2019"  
-
-# [Browser](#tab/browser)
-
-0. Open settings for a team.  
-
-	Choose **Project Settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
-
-0. Expand **Boards** and choose **Team configuration**.
-
-0. Choose **Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
-	<img src="_img/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
-
-0. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
-
-0. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.	
-
-	You can save the URL as a text file or add the URL to a web page as a hyperlink. 
-
-# [Visual Studio](#tab/visual-studio) 
-
-<a id="team-explorer-copy-link" />
-
-1. You can copy the link to a template which will open in the web portal, by opening the context menu for the template.  
-
-	<img src="_img/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
-
-2. Paste the copied link into a web browser to check that it works as expected.    
-
----
-
-::: moniker-end
-
-
-
 <a id="tfs-portal-copy-link" />
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-See [Capture a work item as a template for TFS web portal](#capture). 
+See [Capture a work item as a template, Browser](#capture). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -327,15 +311,15 @@ You can apply a template to a single work item or perform a bulk update of sever
   
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 >= tfs-2015"
-You can't apply a template to existing work items from the web browser. 
+::: moniker range="<= tfs-2015"
+The feature to apply a template to existing work items from the web browser isn't supported for TFS 2015 and earlier versions. 
 ::: moniker-end 
 
 # [Visual Studio](#tab/visual-studio)
 
 <a id="team-explorer-apply" />
 
-#### Apply a template to one or more work items  
+### Apply a template to one or more work items  
 
 > [!NOTE]  
 > If you are working from Visual Studio 2019, the ability to capture and apply templates requires setting the Work Items page to the legacy experience. See [Set the Work Items experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
@@ -361,7 +345,7 @@ You can't apply a template to existing work items from the web browser.
 
 # [Browser](#tab/browser)  
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= azure-devops-2019"
 
 You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
  
@@ -371,7 +355,6 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 0. From the web portal, open settings for a team. 
 
-	####New navigation  
 	Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
@@ -379,7 +362,21 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 	Expand **Boards** and choose **Team configuration**. If you need to switch to a different team, use the team selector.
 
-	####Previous navigation  
+0. Choose **Templates**.  
+
+	From here, you can click any work item type to view or add templates for that type.  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
+ 
+<a id="team-services-manage" /> 
+
+You manage templates from  team settings. All templates are defined for a team. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.   
+
+0. From the web portal, open settings for a team. 
 
 	Choose the ![ ](../../_img/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
 
@@ -429,7 +426,7 @@ From the work item type page, choose ![ ](../_img/icons/actions-icon.png) the ac
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-Managing work item templates from the web portal is only supported from TFS 2017 and later versions. For TFS 2013 and TFS 2015, you can manage work item templates in Visual Studio 2013 or Visual Studio 2015 by downloading [TFS Power Tools](https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1). With the Work Item Templates power tool add-in, you can:
+Managing work item templates from the web portal is only supported from TFS 2017 and later versions. For TFS 2013 and TFS 2015, you can manage work item templates in Visual Studio 2013 or Visual Studio 2015 by downloading [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). With the Work Item Templates power tool add-in, you can:
 - Create and edit work item templates  
 - Create and update work items using a template  
 - Create a template from an existing work item  
@@ -447,7 +444,6 @@ Managing work item templates from the web portal is only supported from TFS 2017
 If Visual Studio with power tools installed, you can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template.   
 
 You manage templates from the Team Explorer pane.  
-
 ![Templates, Team Explorer with power tools installed](_img/wi-templates-section-te.png)  
 
 The root Templates node represents the parent of all of your templates. You may create a directory structure underneath it by adding folders &mdash;right-click on the **Templates** node or a folder and select **New Folder** from the context menu.  

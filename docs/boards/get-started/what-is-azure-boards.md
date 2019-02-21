@@ -148,7 +148,7 @@ The Agile tools Boards, Backlogs, Sprints, and Plans rely on team configurations
 Open **Work Items** to access several personalized pivots and filter functions to focus on work items you care about. You can quickly find work items assigned to you. You also can find work items that you're following or viewed or modified recently. You can even find work items defined for different teams and projects. To learn more, see [View and add work items](../work-items/view-add-work-items.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](../work-items/_img/about-agile/view-work-items-page.png)
+> ![Open Work>Work Items](../work-items/_img/about-agile/view-work-items-page.png)
 
 ::: moniker-end
 
@@ -159,7 +159,7 @@ Boards present work items as cards and support quick status updates through a dr
 
 
 ::: moniker range=">= azure-devops-2019"
-![New Navigation, Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
+![Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 
@@ -181,7 +181,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 
 ::: moniker range=">= azure-devops-2019"
-![New Navigation, Work>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
+![Work>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
 ::: moniker-end
 
 
@@ -199,7 +199,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team assi
 
 
 ::: moniker range=">= azure-devops-2019"
-![New Navigation, Work>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+![Work>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
 
@@ -218,7 +218,7 @@ You also can filter the cards on your taskboard to show only those cards mapped 
 Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to find groups of work items with something in common. You can use queries to triage a set of items to prioritize or assign them. You also use queries to create status and trend charts that you then can add to dashboards. To get started, see [Create a managed query](../queries/using-queries.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Queries, Active Bugs, new navigation](_img/about-boards/queries-active-bugs-vert.png)   
+> ![Queries, Active Bugs](_img/about-boards/queries-active-bugs-vert.png)   
 
 ::: moniker range=">= tfs-2017"
 ## Delivery plans

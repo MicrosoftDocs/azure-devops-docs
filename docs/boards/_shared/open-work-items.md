@@ -12,7 +12,7 @@ You can start viewing and adding work items once you connect to a project.
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Boards>Work Items, new navigation](/azure/devops/boards/work-items/_img/view-add/open-work-items-agile.png)
+> ![Open Boards>Work Items](/azure/devops/boards/work-items/_img/view-add/open-work-items-agile.png)
 
 ::: moniker-end
 

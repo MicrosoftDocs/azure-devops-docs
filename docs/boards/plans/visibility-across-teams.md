@@ -70,7 +70,7 @@ Management teams can drill down from their portfolio backlog to see how **Epics*
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -82,7 +82,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -106,7 +106,7 @@ Feature teams can turn **Show parents** on their backlogs to see context and tho
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
 
 ::: moniker-end 
 
@@ -115,7 +115,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
    
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
 ::: moniker-end 
 
 ::: moniker range="<= tfs-2015" 

@@ -41,7 +41,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 ::: moniker range=">= azure-devops-2019"
 
-![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)  
+![Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)  
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ When you have a number of initiatives your teams are working on, you often times
 For example, here the Customer Service team has organized several backlog items under two features and one epic. 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/overview/customer-service-backlog-parents-on.png)  
+> ![Backlog that shows parents and multi-team ownership](_img/overview/customer-service-backlog-parents-on.png)  
 
 
 <a id="multi-team">  </a>
@@ -131,7 +131,7 @@ you'll see the parent epic of the features and backlog items, even if the epic o
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/customer-service-backlog-parents-on.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/customer-service-backlog-parents-on.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -143,7 +143,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, previous navigation](_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -171,7 +171,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/management-team-backlog-epics.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/management-team-backlog-epics.png)   
 ::: moniker-end 
 
 
@@ -182,7 +182,7 @@ Drilling down, you can see all the backlog items and features, even though they
 belong to one of three different teams: Customer Service, Phone, and Web.  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
 
 ::: moniker-end 
 

@@ -2,7 +2,7 @@
 title: Share your team's sprint plan 
 titleSuffix: Azure Boards
 description: Share sprint plan working with Scrum methods 
-ms.custom: Uses the New Navigation
+
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
