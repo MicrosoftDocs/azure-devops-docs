@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/11/2019
 ---
 
 # Add a team administrator 
@@ -45,11 +45,6 @@ If you need to add a team, see [Add teams](add-teams.md).
 
 From the web portal, open the admin page for the team. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Choose **Project Settings** and choose **Teams**. 
@@ -69,14 +64,8 @@ From the web portal, open the admin page for the team.
    
 ::: moniker-end    
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
 
@@ -115,11 +104,6 @@ From the web portal, open the admin page for the team.
 	
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----   
 
 ## Try this next  
 

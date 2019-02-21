@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/19/2018 
+ms.date: 02/20/2019
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
@@ -70,7 +70,7 @@ You always add a field to an existing work item type.
 	By making a field Required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item as well as every time a work item is opened and the field is empty.
 
 	<a id="layout">  </a>
-0.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.
+0.	(Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form. 
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
@@ -86,10 +86,7 @@ You always add a field to an existing work item type.
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-
-# [New navigation](#tab/new-nav)
-
-1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
@@ -102,7 +99,7 @@ We recommend that you create a test project and apply your customized  inherited
 0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work>Work Items, new navigation](../../../boards/work-items/_img/view-add/open-work-items-agile.png)
+	> ![Open Work>Work Items](/azure/devops/boards/boards/(../../../boards/work-items/_img/view-add/open-work-items-agile.png)
 
 0. Select the WIT you customized. Here we choose **Bug**. 
 
@@ -115,36 +112,6 @@ We recommend that you create a test project and apply your customized  inherited
 	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
 	
 
-# [Previous navigation](#tab/previous-nav)
-::: moniker range="azure-devops"
-
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
-
-0. The Create new project page opens. Fill out the form. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project form](_img/process/create-test-project.png) 
-
-0. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select the WIT you customized. Here we choose **Bug**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
-
-0.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----	
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
 
