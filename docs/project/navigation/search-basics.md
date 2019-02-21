@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 02/08/2019
 ---
 
 
@@ -34,25 +34,16 @@ With the search box, you can quickly find a code file or work item.
 
 Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md#install-extension).  
 
-[!INCLUDE [temp](_shared/new-navigation-wp.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
   
 To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Code Search box, new navigation](../../organizations/public/_img/search/code-search-vert.png) 
+> ![Code Search box](/azure/devops/boards/boards/(../../organizations/public/_img/search/code-search-vert.png) 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
@@ -63,11 +54,6 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ### Work with code search results  
 
@@ -105,14 +91,12 @@ To learn more, see [Search code](../search/code-search.md).
 <a name="start-search"></a>
 ## Initiate a work item search 
 
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    
+	> ![Work Item Search box](/azure/devops/boards/boards/(_img/search/work-item-search-vert.png)    
 
 0. Search results are displayed in a snippet view where the matches found are shown in bold.
 
@@ -130,15 +114,9 @@ To learn more, see [Search code](../search/code-search.md).
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
-::: moniker-end
+::: moniker-end 
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -165,16 +143,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
-
 ### Fine tune your work item search results 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -209,13 +178,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
@@ -248,11 +211,6 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 To learn more, see [Search work items](../search/work-item-search.md)
 
@@ -269,28 +227,22 @@ With wiki search, you can search within a project wiki or across all wikis creat
 ::: moniker-end
 
 
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019" 
 
 Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option, new navigation](../wiki/_img/search/search-wiki-vert.png)   
+> ![Wiki search option](/azure/devops/boards/boards/(../wiki/_img/search/search-wiki-vert.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results, new navigation](../wiki/_img/search/wiki-search-example-vert.png)   
-> 
+> ![Wiki search results](/azure/devops/boards/boards/(../wiki/_img/search/wiki-search-example-vert.png)   
+
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range="tfs-2018 || azure-devops"  
+::: moniker range="tfs-2018"  
 
 Open **Wiki** and type your keyword or phrase into the search box. 
 
@@ -303,13 +255,6 @@ The search feature quickly returns wiki pages by title or page content. English 
 > ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
-
----
 
 
 ## Related articles

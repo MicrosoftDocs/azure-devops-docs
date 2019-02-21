@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 01/25/2019
+ms.date: 02/20/2019
 ---
 
 # Manage and configure team tools
@@ -31,6 +31,41 @@ Optional tasks to consider include:
 
 > [!NOTE]   
 > In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams. To add a team, see [Add teams](add-teams.md). 
+
+
+::: moniker range=">= azure-devops-2019"
+## Open the team profile and access team tools
+
+- Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open team profile](../../project/navigation/_img/breadcrumbs/open-team-profile.png)
+
+	A panel opens that shows all items defined for the team. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team profile all items](../../project/navigation/_img/breadcrumbs/team-profile-all-items.png)
+
+- You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or  **Sprints** by choosing from the menu. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Filter team tools](../../project/navigation/_img/breadcrumbs/filter-team-profile.png)
+
+- To view the team admins and members of the team, choose **Members**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team members](../../project/navigation/_img/breadcrumbs/team-profile-members.png)
+
+- To view or change the team configuration, choose **Team Settings**.  
+	You can then perform the following tasks: 
+	- Add [team members](../security/add-users-team-project.md#add-team-members)
+	- Add [team admins](add-team-administrator.md)
+	- Navigate to [team notifications](../../notifications/howto-manage-team-notifications.md)
+	- Navigate to team [iterations](set-iteration-paths-sprints.md#open-team-settings) and [area paths](set-area-paths.md#open-team-settings). 
+	- Update the [team description or profile picture](#team-description).
+
+::: moniker-end
+
 
 ## Add users to a team
  
@@ -294,7 +329,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ::: moniker-end
 
-
+<a id="team-description" />
 ## Update team description and picture
 
 Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB. 
