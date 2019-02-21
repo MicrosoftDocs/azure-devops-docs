@@ -61,6 +61,8 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [qa-ssh-supported-keys](../_shared/qa-ssh-supported-keys.md)]
+
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
