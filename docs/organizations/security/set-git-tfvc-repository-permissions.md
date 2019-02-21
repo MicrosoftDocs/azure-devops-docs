@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 01/03/2019
+ms.date: 02/11/2019
 ---
 
 
@@ -62,10 +62,6 @@ You can use Git repositories to host and collaborate on your source code. For an
 You can set the permissions for all Git repositories for a project, or for a single repository. 
 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
@@ -84,14 +80,8 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end    
 
-::: moniker range="<= tfs-2018"    
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end    
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -116,18 +106,10 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 <a id="tfvc-repository">  </a>
 
 ## Set TFVC repository permissions
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -143,14 +125,8 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end    
 
-::: moniker range="<= tfs-2018"    
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end    
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 0. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 
@@ -166,11 +142,6 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Related articles
 

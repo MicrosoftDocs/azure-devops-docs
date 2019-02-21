@@ -112,18 +112,13 @@ You can configure most of your team settings from the common configuration dialo
 > **Feature availability:** The common configuration dialog is available for TFS 2015.1 and later versions.  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015"  
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-::: moniker-end  
-
-# [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"  
 
 1. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Kanban board, new navigation](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
+	> ![Open Kanban board](/azure/devops/boards/boards/(../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
 
 0. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
@@ -143,13 +138,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
@@ -158,7 +147,7 @@ You can configure most of your team settings from the common configuration dialo
 0. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
-	>![Open Kanban board, previous navigation](../../boards/boards/_img/kanban-basics-intro.png)  
+	>![Open Kanban board](../../boards/boards/_img/kanban-basics-intro.png)  
 
 1. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
 
@@ -183,16 +172,9 @@ You can configure most of your team settings from the common configuration dialo
 ::: moniker-end  
 
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ::: moniker range=">= tfs-2017"  
 
 For details on each configuration option, see one of these topics:  
-
 
 <table width="80%">
 <tbody valign="top">
@@ -297,8 +279,6 @@ For details on each configuration option, see one of these topics:
 
 
 ::: moniker-end  
-
-
 
 
 
