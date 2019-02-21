@@ -57,7 +57,7 @@ Free text search easily searches across all work item fields, including custom f
 0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box, new navigation](../../project/navigation/_img/search/work-item-search-vert.png)    
+	> ![Work Item Search box](../../project/navigation/_img/search/work-item-search-vert.png)    
 
 0. Search results are displayed in a snippet view where the matches found are shown in bold.
 

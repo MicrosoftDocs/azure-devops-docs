@@ -46,7 +46,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 In this example, we show the **Epics** portfolio backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.   
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ The Customer Service feature team's view of the backlog only includes those work
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on.png)   
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on.png)   
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, previous navigation](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
 
 ::: moniker-end
 

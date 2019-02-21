@@ -26,7 +26,7 @@ You perform semantic or ad hoc searches using the work item search box (shown be
 Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Work Item Search box, new navigation](../../project/navigation/_img/search/work-item-search-vert.png)    
+> ![Work Item Search box](../../project/navigation/_img/search/work-item-search-vert.png)    
 
 You add and run managed queries using the built-in query-editor available from the **Boards>Queries** page.
 

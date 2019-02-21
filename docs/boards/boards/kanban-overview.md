@@ -44,7 +44,7 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 ::: moniker range=">= azure-devops-2019"
 
-![New Navigation, Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
+![Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 

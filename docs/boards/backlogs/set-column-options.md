@@ -28,7 +28,7 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Open column options, new navigation](_img/columns/open-column-options-menu.png) 
+> ![Open column options](_img/columns/open-column-options-menu.png) 
 ::: moniker-end 
 
 

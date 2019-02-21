@@ -26,7 +26,7 @@ The Scrum method uses sprints to plan work to perform by a team within a specifi
 Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
 ::: moniker range=">= azure-devops-2019"
-![New Navigation, Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+![Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
 
@@ -55,14 +55,14 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 0. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Planning pane](_img/overview/sprints-new-nav.png)
+	> ![Boards>Backlogs>Planning pane](_img/overview/sprints-new-nav.png)
 
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
 0. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Sprints>Sprint selector](_img/overview/select-a-sprint-new-nav.png)
+	> ![Boards>Sprints>Sprint selector](_img/overview/select-a-sprint-new-nav.png)
 
 ::: moniker-end
 

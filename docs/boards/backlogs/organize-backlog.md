@@ -123,7 +123,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 0. To view Parents or a tree hierarchy, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
+	> ![Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
 
 	The hierarchical view displays. From this view, you can reparent items by drag and drop, moving a child item to a new parent. 
 
@@ -162,7 +162,7 @@ If you've already created your backlog, and now you want to organize it, you can
 0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
+	> ![Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
 
 	The Mapping pane displays immediately. 
 
