@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 01/16/2019
+ms.date: 02/14/2019
 ---
 
 # Create your product backlog 
@@ -34,10 +34,6 @@ and more. Because the most important work appears at the top of the list, your t
 ## Open your backlog from the web portal
 
 From your web browser, open your product backlog.  
-
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -65,16 +61,8 @@ From your web browser, open your product backlog.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 On your web browser, open your team's product backlog and select the team from the project and team selector. Then select **Work** > **Backlogs**. Select the product backlog, which is **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI. 
 
@@ -87,7 +75,7 @@ To select another team, open the project and team selector. Select a different t
 > ![Select another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 On your web browser, open your team's product backlog. Select **Boards** > **Backlogs**. 
 
@@ -95,11 +83,6 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Determine if bugs should appear on your backlog 
 
@@ -129,8 +112,6 @@ Your backlog shows work that you plan to do or have started to work on. As soon 
 
 Users with **Stakeholder** access can only add work items to the end of the backlog. For details, see [About access levels](../../organizations/security/access-levels.md).
 
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Before you add work items, select the ![ ](../../_img/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
@@ -147,14 +128,8 @@ Users with **Stakeholder** access can only add work items to the end of the back
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 To build your backlog, enter a title and select **Add**. If you don't see the **Add** link, select **New** to open the quick add panel. Optionally, set **In progress items** to **Show** or **Hide**.
 
@@ -164,12 +139,6 @@ Repeat this step until you capture all your main ideas.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 > [!NOTE]  
 > Depending on whether you create your project with [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md), the items in your backlog might be called user stories, PBIs, or requirements. All three are similar. They describe the customer value to be delivered and the work to be performed.   
 >
@@ -177,6 +146,7 @@ Repeat this step until you capture all your main ideas.
 
 <a id="move-items-priority-order">  </a>
 ## Move items into priority order
+
 After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
 To reorder a backlog, you must must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md).
@@ -262,92 +232,3 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
-
-<!---
-	
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azure-devops-2019"
-
-0. From your team's backlog page, select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open configuration settings](_img/create-backlog/open-configure-settings-backlog-agile.png) 
-
-0. Select the **Working with bugs** tab, and select one of the three options available.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open configuration settings](_img/create-backlog/settings-working-with-bugs.png) 
-
-	* Select the first option when your team wants to manage bugs in a similar manner to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
-
-	* Select the second option when your team wants to manage bugs in a similar manner to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 
-
-	* Select the third option if your team manages bugs separately from requirements or tasks. Bugs are associated with the Bugs category. 
-
-0. To see the changes, refresh your backlog.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
-
-1. On your team's backlog page, select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
-::: moniker-end
-	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"   
-	![Backlog board, open team settings](_img/organize-backlog-open-ccdialog.png)  
-	::: moniker-end
-	::: moniker range="tfs-2015"  
-	**TFS 2015.1**   
-	![Backlog board, open team settings](_img/organize-backlog-open-ccdialog.png)  
-	**TFS 2015**  
-	Select the ![gear icon](../_img/icons/team-settings-gear-icon.png), (gear icon) to open the administration page.  
-
-	![Gear icon provides access to admin pages](../_img/icons/ALM_OpenAdminContext.png)
-
-	On the Overview tab, select the team whose settings you want to configure, and then select **Settings**.  
-	::: moniker-end
-	::: moniker range="tfs-2013"
-	Select the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon to open the administration page. Requires TFS 2013.4 or later version.  
-
-	![Gear icon provides access to admin pages](../_img/icons/ALM_OpenAdminContext.png)  
-
-	On the Overview tab, select the team whose settings you want to configure, and then select **Settings**.  
-	::: moniker-end  
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
-2. Select the **Working with bugs** tab, and select one of the three options available.  
-::: moniker-end  
-	::: moniker range=">= tfs-2018 || azure-devops"
-	> [!div class="mx-imgBorder"]  
-	> ![Open configuration settings](_img/create-backlog/settings-working-with-bugs.png)  
-	::: moniker-end
-	::: moniker range="tfs-2017"  
-	<img src="../../organizations/settings/_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
-	::: moniker-end
-	::: moniker range=">= tfs-2013 <= tfs-2015"  
-	<img src="../../organizations/settings/_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
-	::: moniker-end 
-	::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
-	* Select the first option when your team wants to manage bugs in a similar manner to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
-
-	* Select the second option when your team wants to manage bugs in a similar manner to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 
-
-	* Select the third option if your team manages bugs separately from requirements or tasks. Bugs are associated with the Bugs category. 
-
-0. To see the changes, refresh your backlog.
-	::: moniker-end  
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
--->

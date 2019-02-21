@@ -239,6 +239,8 @@ You can use query operators in the following table to specify how each value in 
 
 You can use the macros described in the following table to filter your queries based on specific fields. 
 
+> [!NOTE]
+> The following macros are only supported from the web portal: **@CurrentIteration**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project. 
 
 <table>
 <thead valign="bottom">
@@ -326,7 +328,7 @@ You can use the macros described in the following table to filter your queries b
 0. The **@Follows** macro is supported for Azure Boards and TFS 2017 and later versions.
 0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
 0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-0. The **@RecentProjectActivity** macro is supported for Azure Boards only at this time.
+0. The **@RecentProjectActivity** macro is supported for Azure Boards (cloud service) only at this time.
 0. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
  

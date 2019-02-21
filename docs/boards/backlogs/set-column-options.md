@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 01/23/2019
+ms.date: 02/14/2019
 ---
 
 # Change column options 
@@ -25,36 +25,18 @@ From each backlog page or query, you can add or remove columns. Or, you can drag
 
 Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across the user's sessions.    
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Open column options, new navigation](_img/columns/open-column-options-menu.png) 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
-
- ::: moniker range="<= tfs-2018 || azure-devops"
+ ::: moniker range="<= tfs-2018"
 
 ![Open column options](_img/set-column-open-dialog-s125.png) 
 
 ::: moniker-end 
-
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
 
 ::: moniker range=">= tfs-2018"
 
@@ -95,8 +77,6 @@ Find the field you want to add from the **Available columns** set and choose **>
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project.
 
 ::: moniker-end
-
-
 
 
 ## Use keyboard shortcuts to change the column order, column width, or sort options

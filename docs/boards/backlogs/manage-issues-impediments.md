@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 # Manage issues or impediments 
@@ -39,10 +39,6 @@ In this topic you'll learn:
 
 ## Add an issue or impediment 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
-
-# [New navigation](#tab/new-nav)  
-
 ::: moniker range=">= azure-devops-2019"  
 
 Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
@@ -54,13 +50,8 @@ Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within t
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"   
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end   
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
@@ -76,11 +67,6 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 <a id="customize"> </a>
 ## Customize issues tracking

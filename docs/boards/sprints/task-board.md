@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 2/14/2019
 ---
 
 # 6. Update and monitor your Taskboard
@@ -51,10 +51,6 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Open the sprint Taskboard for your team
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
@@ -76,16 +72,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
 
@@ -108,11 +95,6 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Customize the taskboard
 Each team can customize their **Taskboard** in the following ways:
@@ -160,8 +142,6 @@ Use the Person filter when you want to focus on work assigned to individual team
 ## Show progress on items
 With this view, you can quickly see which items are nearing completion and which have yet to be started.
 
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. To show cards based on their backlog-to-task groupings, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
@@ -176,37 +156,22 @@ With this view, you can quickly see which items are nearing completion and which
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops" 
+::: moniker range=">= tfs-2015 <= tfs-2018" 
 You can expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ![Group by backlog items, show All team members](_img/taskboard/group-items-all.png)
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
-
-
 <a id="show-individual-progress">  </a>
 ## Show progress of individuals
 With this view, you can focus on the work completed and the work remaining for each individual team member. You can quickly see who may need help to complete their sprint tasks. This view shows items and tasks assigned to the selected team member.
 
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -217,39 +182,18 @@ To filter on the tasks for a specific team member, choose the ![ ](../../_img/ic
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
-::: moniker-end
-
-::: moniker range="azure-devops"
-> [!div class="mx-imgBorder"]
-> ![taskboard, filter on a person](_img/taskboard/group-by-people.png)
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
 ![Group by Backlog items, show Christie Church team member](_img/ALM_TB_GRP_Items_CC.png)
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 
 <a id="group-by-team">  </a>
 ## Group by team members
 With this view, you can quickly see all the tasks associated with each team member. Backlog items don't appear in this view, only the tasks associated with each individual.
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -268,27 +212,12 @@ With this view, you can quickly see all the tasks associated with each team memb
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
 ![Group by People, show All team member](_img/ALM_TB_GRP_People_All.png)
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
-
 
 <a id="update-tasks">  </a>
 ## Update tasks during the sprint cycle
@@ -317,7 +246,6 @@ Each team member can review the tasks they've worked on and estimate the work re
 ::: moniker-end
 
 <a id="close-sprint">  </a>
-<!--- NEEDS MORE WORK --> 
 
 ## Close out a sprint, update your Taskboard
 At the end of the sprint, you'll want to perform these final tasks:

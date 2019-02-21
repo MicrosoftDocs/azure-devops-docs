@@ -31,12 +31,12 @@ View work items that you created or are assigned to you. The **Work Items** page
 
 
 ## Open Work Items
+
 You can start viewing and adding work items once you connect to a project. 
+
 <a id="browser" /> 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azdevops.md)] 
-
-# [New navigation](#tab/new-nav)
+# [Web portal](#tab/browser)
 
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
@@ -49,22 +49,6 @@ You can start viewing and adding work items once you connect to a project.
 > The new Work Items experience is available when you connect to a GitHub repository. If you connect to a TFVC repository, you'll continue to see the legacy query-focused experience. 
 ::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-
-Open a browser window, choose **Work**, and then **Work Items**. 
-
-> [!div class="mx-imgBorder"]
-![Boards>Work Items ](_img/view-add/work-items-hub.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
 
 # [Visual Studio 2019](#tab/visual-studio)
 
@@ -92,7 +76,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
 
-# [New navigation](#tab/new-nav)
+# [Web portal](#tab/browser)
 
 <table>
 <tbody valign="top">
@@ -115,38 +99,6 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 </tbody>
 </table>
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-
-<table>
-<tbody valign="top">
-<tr>
-<td>
-![Boards>Work Items ](_img/view-add/view-menu.png)
-</td>
-<td>
-<ul>
-<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
-<li>**Following**: lists work items that you're[following](follow-work-items.md). </li>
-<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
-<li>**My activity**: lists work items that you've recently viewed or updated.</li>
-<li>**Recently updated**: lists work items recently updated in the project. </li>
-<li>**Recently completed**: lists work items completed or closed in the project.</li>
-<li>**Recently created**: lists work items created within the last 30 days in the project.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
 
 # [Visual Studio 2019](#tab/visual-studio)
 
@@ -197,23 +149,10 @@ Adding a work item is just one click away. Simply choose the work item type from
 
 For example, here we choose User Story. 
 
-# [New navigation](#tab/new-nav)
+# [Web portal](#tab/browser)
 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range="azure-devops"
-
-> [!div class="mx-imgBorder"]  
-> ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 # [Visual Studio 2019](#tab/visual-studio)
 
@@ -243,23 +182,10 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.  
 
 
-# [New navigation](#tab/new-nav)
+# [Web portal](#tab/browser)
 
 > [!div class="mx-imgBorder"]
 ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range="azure-devops"
-
-> [!div class="mx-imgBorder"]
-![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 # [Visual Studio 2019](#tab/visual-studio)
 

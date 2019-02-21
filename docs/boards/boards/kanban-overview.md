@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -22,8 +22,6 @@ ms.date: 11/19/2018
 Your Kanban board provides you with a visual interactive space for you and your team to plan and show progress. With it, your team can track the critical information they need by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
 
 Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard. 
-
-
 ####In a nutshell you use boards to: 
 - Implement [Kanban methods](kanban-basics.md) 
 - Define work your team is tasked with by [defining user stories, product backlog items, or requirements](kanban-quickstart.md)
@@ -43,31 +41,22 @@ Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a cor
 
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
-# [New navigation](#tab/new-nav)
+
 ::: moniker range=">= azure-devops-2019"
+
 ![New Navigation, Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 ![Kanban board, Agile template](_img/kanban-basics-intro.png)     
-::: moniker-end   
+::: moniker-end  
+ 
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
 > [!div class="mx-imgBorder"]  
 > ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 
 ## Configure and customize your Kanban board
@@ -169,7 +158,7 @@ You can also add or modify the fields defined for a work item type (WIT), add a 
 
 ::: moniker-end
  
-::: moniker range="<= tfs-2018 || azure-devops-2019" 
+::: moniker range="<= azure-devops-2019" 
 If you need more than three board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow.  To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 

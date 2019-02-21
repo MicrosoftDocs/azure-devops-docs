@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 2/14/2019
 ---
 
 
@@ -37,10 +37,6 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 ## Quick start guide to scheduling sprints
 
 To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the project, you're a member.) 
-
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -70,16 +66,8 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -115,14 +103,6 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
-
 That's it! You can now start [planning your first sprint](assign-work-sprint.md). 
 
 Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child iterations, then you'll need to read further. You define these through the settings context for the project.  
@@ -147,7 +127,6 @@ Each sprint that you select for your team provides access to a [sprint backlog, 
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint. 
 
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -155,28 +134,13 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 ![Selected sprints for a team](_img/define-sprints/selected-team-iterations-vsts.png)
 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
 
 
 ## Try this next
@@ -184,61 +148,6 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 > [Assign work to a sprint](assign-work-sprint.md) or [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Related articles 
+
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's[default area path and iteration path.  
 
-
-
-<!---
-
-## Add a sprint 
-
-You'll want to [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
-
-# [New navigation](#tab/new-nav)
-
-> [!div class="mx-imgBorder"]  
-> ![Choose New Sprint](_img/define-sprints/choose-new-sprint-agile-hubs-on.png)   
-
-
-# [Previous navigation](#tab/previous-nav)
-
-
-
-## Select a sprint for use by your team 
-
-*More Info*
-
-
-> [!div class="mx-imgBorder"]
-> ![Select a sprint for use by team](_img/assign-items-sprint/select-sprint.png)
-
- 
-
-<a id="drag-drop-to-sprint">   </a>
-## Assign work to a sprint
-
-You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
-
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
-
-1. Open **Boards>Backlogs** and then choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
-
-	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
-
-2. You can drag and drop items from the **Backlog** onto a sprint. 
-
-	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Open **Boards>Backlogs**. You can drag and drop from the **Backlog** or **Board** page as shown in the following image. 
-
-![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)
-
- 
-
--->
