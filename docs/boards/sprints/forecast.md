@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 2/14/2019
 ---
 
 # Forecast your product backlog
@@ -79,11 +79,7 @@ Here's what you need to have in place before you attempt to forecast your team's
 
 You can use the forecast tool to get an idea of how many items you can complete within a sprint. By plugging in a velocity, you can see which items are within scope for the set of sprints the team has activated. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 To forecast your product backlog, perform the following actions.
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -125,15 +121,7 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 To forecast your product backlog, perform the following actions.
 
@@ -164,13 +152,6 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
 
 ## Review the forecast results 
 *	Check the results manually to understand discrepancies in what you expect and what the forecast tool displays.  
@@ -214,7 +195,7 @@ In this example, a Velocity of 15 is used. The forecast tool shows between two a
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 <!--- ### TFS 2013 - TFS 2017.1 -->
 
 The forecast tool shows only those work items that can be completed within a sprint between the forecast lines. Unused velocity points from one sprint are considered in the forecast of the following sprint. The forecasted sprint is listed along with the last item that can be completed during that sprint. 

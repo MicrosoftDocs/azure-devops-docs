@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/06/2018
+ms.date: 02/11/2019
 ---
 
 # Set user preferences
@@ -66,11 +66,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 
 ## Change profile settings  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 1. To change your user preferences, open your profile menu.
 
 	> [!div class="mx-imgBorder"]  
@@ -94,11 +90,6 @@ Locale settings include language, date and time pattern, time zone, and user int
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
 
 0. To change your user preferences, open your profile menu.
 	::: moniker range="azure-devops"  
@@ -129,27 +120,9 @@ Locale settings include language, date and time pattern, time zone, and user int
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
 
-
----
+::: moniker-end  
 
 ## Related articles
 
 - [Set favorites](../../project/navigation/set-favorites.md)
 
-
-<!---
-
-
-![Profile page](_img/account-prefs/team-services-profile-dialog-co.png)
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-![TFS, My Profile link on Account menu](_img/account-prefs/open-profile.png)
-
-Choose **edit** to change a setting. Choose the Locale tab to change a locale preference.
-
-![TFS, Set preferences](_img/account-prefs/account-prefs-tfs-user-profile.png)
-
-::: moniker-end
-
--->

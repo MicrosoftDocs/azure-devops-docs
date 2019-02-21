@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 2/14/2019
 ---
 
 
@@ -31,35 +31,18 @@ During the planning meeting, your product owner works with your team to identify
 
 Here's an example of a sprint plan that consists of backlog items and the tasks required to complete each item. By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Sprint planning, vertical nav](_img/assign-items-sprint/assign-intro.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 ![Sprint planning, horizontal nav](_img/sp-intro.png) 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
 
 In this article you'll learn how to:  
 
@@ -81,8 +64,6 @@ some or all of the items based on these estimates.
 > When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
- 
-
 
 
 ## Open your team's product backlog
@@ -93,7 +74,6 @@ some or all of the items based on these estimates.
 >
 > For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
 
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -122,16 +102,8 @@ some or all of the items based on these estimates.
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -139,7 +111,7 @@ some or all of the items based on these estimates.
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-	::: moniker range=">= tfs-2017 || azure-devops-2019"
+	::: moniker range=">= tfs-2017 <= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 	::: moniker-end
@@ -153,13 +125,6 @@ some or all of the items based on these estimates.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
 
 <a id="drag-drop" />
 
@@ -171,20 +136,19 @@ Also, you'll want to have [set the start and end dates for your sprint](define-s
 
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
 
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">=azure-devops-2019"
 
 0. The next step is to open the Planning pane. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are Off. You can choose to set **In Progress items** to On or Off. 
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
+	> ![Boards>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
 
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).  <!--- Check with Marina about what permissions are needed to add a sprint or select a sprint --> 
 
 0. You can drag and drop items from the **Backlog** onto a sprint. 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
+	> ![Boards>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
 
 0. Select one or more items from the backlog and drag them to the sprint you are planning. This action will update the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
 
@@ -197,15 +161,8 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 Select one or more items and drag them to one of the listed sprints.  
 
@@ -214,16 +171,8 @@ Select one or more items and drag them to one of the listed sprints.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
 
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
-
-
-::: moniker range=">= tfs-2015 || azure-devops-2019"
+::: moniker range=">= tfs-2015"
 <a id="bulk-modify">  </a>
 
 ## Use multi-select to bulk modify items
@@ -243,7 +192,8 @@ With multi-select, you can perform several actions on several work items at once
 ::: moniker range="tfs-2015"
 Multi-select of backlog work items requires TFS 2015.1 or later version.
 ::: moniker-end
-::: moniker range=">= tfs-2015 || azure-devops-2019"
+
+::: moniker range=">= tfs-2015"
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../_img/icons/context_menu.png)) or action (![actions icon](../_img/icons/actions-icon.png)) menu of one of the items. 
 
 To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
@@ -286,11 +236,3 @@ You can use [hotkeys and keyboard shortcuts](../backlogs/backlogs-keyboard-short
 ## Related articles
 
 If you need to add or rename the sprints your team uses, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
-
-
-
-
-<!--- navigation
-[!INCLUDE [temp](../_shared/image-differences.md)]  
-
---> 

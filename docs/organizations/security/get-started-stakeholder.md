@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/11/2019
 ---
 
 # Get started as a Stakeholder
@@ -33,8 +33,6 @@ With Stakeholder access, you can add and modify work items. You can check projec
 
 ::: moniker-end  
 
-
-
 Use this topic to learn:
 
 > [!div class="checklist"]
@@ -51,8 +49,6 @@ For information about working with pipelines, see these articles:
 
 ## First time signing in
 
-::: moniker range=">= tfs-2013"
-
 1. Choose the link provided in the email invitation you should have received. Or, open a browser window and enter the URL for the web portal.
 	::: moniker range="azure-devops"  
 	`http://dev.azure.com/OrganizationName/ProjectName`
@@ -64,25 +60,19 @@ For information about working with pipelines, see these articles:
 
 2.  Enter your credentials. If you aren't able to sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
 
-::: moniker-end
 
 <a id="create-work-item">  </a>
-
-
 
 ## View and add work items
 You can start viewing and adding work items once you connect to a project. 
 
 <a id="browser" /> 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019"
 0. (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Boards>Work Items, new navigation](../../boards/work-items/_img/view-add/open-work-items-agile.png)
+	> ![Open Boards>Work Items](../../boards/work-items/_img/view-add/open-work-items-agile.png)
 
 0. Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next.  
 	<table>
@@ -121,57 +111,6 @@ You can start viewing and adding work items once you connect to a project.
 > A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.     
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-Open a browser window, choose **Work**, and then **Work Items**. 
-
-> [!div class="mx-imgBorder"]
-> ![Boards>Work Items ](../../boards/work-items/_img/view-add/work-items-hub.png)
-
-
-0. Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next. 
-
-<table>
-<tbody valign="top">
-<tr>
-<td>
-![Boards>Work Items ](../../boards/work-items/_img/view-add/view-menu.png)
-</td>
-<td>
-<ul>
-<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
-<li>**Following**: lists work items that you've elected to [follow](../../boards/work-items/follow-work-items.md). </li>
-<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
-<li>**My activity**: lists work items that you have recently viewed or updated.</li>
-<li>**Recently updated**: lists work items recently updated in the project. </li>
-<li>**Recently completed**: lists work items completed or closed in the project.</li>
-<li>**Recently created**: lists work items created within the last 30 days in the project.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-0. To add a work item, simply choose the work item type from the **New Work Item** drop down menu.  
-
-	For example, here we choose User Story. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Boards>Work Items, Add a work item ](../../boards/work-items/_img/view-add/work-items-hub-new.png)
-
-0.	Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
-
-	![Agile process, User story work item form](../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png)
-
-	> [!NOTE]  
-	> A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.     
-::: moniker-end
-
 ::: moniker range="tfs-2017 || tfs-2018"
 
 0. Choose **Work**, choose a work item, for example User Story, from the New Work Item list of options. Choose the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the **Work** drop down menu.   
@@ -199,12 +138,6 @@ Open a browser window, choose **Work**, and then **Work Items**.
 	Work items you add are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md#switch-team-context).
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 For descriptions of each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
 
 > [!NOTE]    
@@ -224,8 +157,6 @@ Azure DevOps Services users granted Stakeholder access for a public project can 
 ## Check the backlog, add work items to the backlog 
 
 Work appears in the backlog in priority order. Work item types may include bugs depending on the settings made for the team. 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -261,16 +192,8 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 	Repeat this step to capture all your ideas as work items.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -289,7 +212,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 	![Add work items to the backlog](../../boards/backlogs/_img/create-backlog/add-new-items-standard.png) 
 
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 0. From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
@@ -304,11 +227,6 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 	Repeat this step until you've captured all your main ideas. 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 <!---
 ::: moniker range=">= tfs-2017"
@@ -325,8 +243,6 @@ To add a new item, select the type and then name it. Your items are added to the
 ## Check work in progress
 
 To view the team's progress, open the Kanban board. To view or edit a work item, choose a title and press **Enter**, or double-click the title. 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -349,15 +265,8 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
@@ -398,17 +307,10 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	
 ::: moniker-end   
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 <a id="query">  </a>
 
 ## Find work assigned to you, or query for other work items 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -420,25 +322,6 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
 
 0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).
-::: moniker-end    
-
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-
-0. Choose **Work>Work Items**, and then select **Assigned to me**. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Work, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
-
-	You can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
-
-0. To query for work items, see [View, run, or email a work item query](../../boards/queries/view-run-query.md).  
 ::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
@@ -456,13 +339,6 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 	![Query Editor](_img/work-as-a-stakeholder-edit-query.png)  
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 ## Related articles
 

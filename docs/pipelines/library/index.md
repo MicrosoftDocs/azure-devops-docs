@@ -27,8 +27,8 @@ The **Library** tab can be accessed directly in Azure Pipelines and Team Foundat
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 
-> Variable groups are available to only release pipelines in Azure Pipelines and TFS 2017 and newer at present.
-Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and Azure Pipelines.
+> Variable groups are available to only release pipelines in TFS 2017 and earlier. They are available to build and release pipelines in TFS 2018 and in Azure Pipelines. 
+Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and in Azure Pipelines.
 
 <h2 id="security">Library Security</h2>
 
@@ -43,7 +43,7 @@ operations you can perform on those items.
 | Administrator | In addition to all the above operations, members of this role can manage membership of all other roles for the item. The user that created an item is automatically added to the Administrator role for that item.
 
 The security settings for the **Library** tab control access for _all_ items in the library. Role memberships for individual items are automatically inherited from those of the **Library** node.
-In addition to the three roles listed above, the **Creator** role on the library defines who can create new items in the library, but cannot be used to manage permissions for other users.
+In addition to the three roles listed above, the **Creator** role on the library defines who can create new items in the library, but it does not include **Reader** and **User** permissions and cannot be used to manage permissions for other users.
 By default, the following groups are added to the **Administrator** role of the library: **Build Administrators**, **Release Administrators**, and **Project Administrators**.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

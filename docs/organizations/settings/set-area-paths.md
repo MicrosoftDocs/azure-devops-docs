@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/07/2019
+ms.date: 02/11/2019
 ---
 
 # Define area paths and assign to a team
@@ -78,11 +78,6 @@ As needed, you can do the following actions at any time:
 ## Open Project Settings   
 From the web portal, open **Project Settings**.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**.
 
@@ -93,20 +88,14 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon.
 
 ::: moniker-end
 
 <a id="admin-intro-team-services" /> 
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.
 	::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
@@ -123,19 +112,13 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 ::: moniker-end   
 <a id="admin-intro-tfs-2015" />
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**.
 
 	![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"  
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)]  
-::: moniker-end
-
----
 
 <a id="add-areas" />  
 <a id="add-areas-team-services" />   
@@ -169,7 +152,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 1. Open **Areas**.  
 
@@ -182,7 +165,6 @@ If you haven't added any areas or teams, you'll see that only one area is define
 	<img src="_img/areas/ALM_CW_CreateArea.png" alt="Create a new area node" style="border: 2px solid #C3C3C3;" />
  
 ::: moniker-end
- 
 
 
 <a id="open-team-settings" />
@@ -192,9 +174,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 From a web browser, open the web portal administrative context for your team.  
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 0.  Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
@@ -202,7 +182,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 	Here we open the Board for the Web team and from there the team profile. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Work Backlog or Board, choose team profile icon](_img/team-defaults/open-team-profile-choose-team-settings.png)   
+	> ![Work Backlog or Board, choose team profile icon](_img/team-defaults/open-team-profile-choose-team-settings.png)  
 
 0. Choose **Iterations and areas**. 
 
@@ -214,23 +194,16 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 	> [!div class="mx-imgBorder"]  
 	> ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
 
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"  
 
 You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](_img/team-defaults/open-team-settings-horz.png) 
 
-
----
-
+::: moniker-end
 
 <a id="default-iteration">  </a>
 <a id="team-area-paths">  </a>
@@ -241,7 +214,7 @@ You open team settings from the top navigation bar. Select the team you want and
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths.  Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas.
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas. 
 ::: moniker-end  
 
@@ -275,7 +248,7 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 0. Open the Areas admin page for the team context.  
 
 	Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  

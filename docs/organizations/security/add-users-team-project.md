@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 02/11/2019
 ---
 
 
@@ -45,9 +45,6 @@ Once users have been added to a project, you can browse for that name by display
 If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -97,12 +94,6 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
 0.  Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
@@ -146,12 +137,6 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 <a id="add-team-members"> </a>
 
 ## Add users to a team
@@ -159,8 +144,6 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 Several Agile tools, like capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts added as members of a team to support planning activities or sending alerts. To learn more, see [About teams and Agile tools](../settings/about-teams-and-settings.md).
 
 <a id="add-team-members-team-services" />
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -205,13 +188,6 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
 
 0. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
 
@@ -239,12 +215,6 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ::: moniker range="<= azure-devops-2019"
 ## Add users or groups to an access level   
 
@@ -252,7 +222,7 @@ For on-premises deployments, you may need to set the access level for a user or 
 
 ::: moniker-end 
 
-::: moniker range="tfs-2018 < azure-devops"
+::: moniker range=">= tfs-2018 < azure-devops"
 ## Add users or groups to SQL Server Reports 
 
 If your on-premises deployment is integrated with SQL Server Reports, you'll need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).

@@ -14,7 +14,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 # Split columns
@@ -61,10 +61,6 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 Only split columns where clear hand-offs exist and you want teams to pull the item into the next stage. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-5.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
@@ -89,14 +85,8 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
 
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
@@ -115,7 +105,8 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 	> [!TIP]    
 	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
-::: moniker-end  
+::: moniker-end
+
 ::: moniker range="tfs-2015"  
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -140,16 +131,11 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
    
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Related articles   
 
-* [Add columns](add-columns.md)  
-* [Work in Progress limits](wip-limits.md)  
-* [Add swimlanes, expedite work](expedite-work.md)   
-* [Definition of Done](definition-of-done.md)  
-* [Customize cards](../../boards/boards/customize-cards.md)   
+- [Add columns](add-columns.md)  
+- [Work in Progress limits](wip-limits.md)  
+- [Add swimlanes, expedite work](expedite-work.md)   
+- [Definition of Done](definition-of-done.md)  
+- [Customize cards](../../boards/boards/customize-cards.md)   

@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -108,11 +108,6 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 With an understanding of how you'll use WIT limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
-
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
@@ -133,13 +128,7 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
-
-
-# [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -154,7 +143,9 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 
 0. When done with your changes, choose **Save**.  
+
 ::: moniker-end
+
 ::: moniker range="tfs-2015" 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -189,27 +180,21 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ## Related articles
 
 ::: moniker range=">= tfs-2015"
 
-* [Split columns](split-columns.md)  
-* [Expedite work](expedite-work.md)  
-* [Definition of Done](definition-of-done.md)  
-* [Customize cards](../../boards/boards/customize-cards.md)  
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+- [Split columns](split-columns.md)  
+- [Expedite work](expedite-work.md)  
+- [Definition of Done](definition-of-done.md)  
+- [Customize cards](../../boards/boards/customize-cards.md)  
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 
 ::: moniker-end
 
 
 ::: moniker range="tfs-2013"
-* [Definition of Done](definition-of-done.md)  
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+- [Definition of Done](definition-of-done.md)  
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 
 ::: moniker-end

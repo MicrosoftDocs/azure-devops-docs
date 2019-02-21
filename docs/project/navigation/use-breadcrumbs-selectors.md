@@ -10,8 +10,9 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 01/16/2019
+ms.date: 02/08/2019
 ---
+
 
 ::: moniker range=">= azure-devops-2019"
 # Use breadcrumbs, selectors, and directories to navigate and open artifacts 
@@ -25,11 +26,7 @@ ms.date: 01/16/2019
 
 To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs, selectors, and directories. 
 
-[!INCLUDE [temp](_shared/new-navigation-wp.md)] 
-
 ## Organization and project breadcrumbs 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -39,13 +36,8 @@ To navigate to the project summary page, choose the project link within the brea
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Horizontal navigation doesn't provide a breadcrumb structure for the organization and project levels. Instead, you can select a recent team or project from the project/team selector. 
 
@@ -54,13 +46,6 @@ Horizontal navigation doesn't provide a breadcrumb structure for the organizatio
 Choosing **Browse all** [opens the **projects** page](work-across-projects.md). 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 ## Selectors 
 
@@ -76,8 +61,6 @@ Selectors are used to select an artifact within the current page. Most Agile too
 > When you navigate to a specific page or artifact, the system remembers your selection. You use selectors to choose a different artifact within the current page. 
 
 ### Example: Dashboard selector 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -98,13 +81,8 @@ This particular selector features these navigational elements:
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Within **Dashboards**, you select the team whose dashboards you want to view. 
 
@@ -119,15 +97,9 @@ For example, here we open the *Work in Progress* dashboard.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ### Example: Backlogs 
 
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -140,16 +112,8 @@ Or, choose **Browse all team backlogs** to open the **Backlogs>All** page.
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -162,13 +126,6 @@ To choose another team, open the project/team selector and select a different te
 > ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 ## Artifact breadcrumbs and selectors  
 
@@ -191,7 +148,6 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 ### Example: Pipeline folders and breadcrumbs
 Breadcrumb-and-selector navigation elements are used within most services that support defining and organizing artifacts within folders. This includes **Pipelines** or **Build and Release** applications pages. 
 
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
@@ -199,13 +155,8 @@ Breadcrumb-and-selector navigation elements are used within most services that s
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 Choose the **Deployment** breadcrumb link to return to the *Deployment* folder. 
 
@@ -214,11 +165,6 @@ Choose the **Deployment** breadcrumb link to return to the *Deployment* folder.
 >  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -242,15 +188,45 @@ Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list
 From a specific page, you can open the directory from the breadcrumbs or a selector. For example, choose **Browse all boards** from the Boards selector. 
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |      Open from breadcrumb | Open from selector |
+> | Open from breadcrumb | Open from selector |
 > |------|---------|
 > | ![Open Boards directory from breadcrumb](_img/breadcrumbs/open-directory-boards-from-breadcrumbs.png)|![Open Boards directory from selector](_img/breadcrumbs/open-directory-boards.png)|
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+## Team profiles
+
+- Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open team profile](_img/breadcrumbs/open-team-profile.png)
+
+	A panel opens that shows all items defined for the team. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team profile all items](_img/breadcrumbs/team-profile-all-items.png)
+
+- You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or  **Sprints** by choosing from the menu. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Filter team tools](_img/breadcrumbs/filter-team-profile.png)
+
+- To view the team admins and members of the team, choose **Members**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team members](_img/breadcrumbs/team-profile-members.png)
+
+- To view or change the team configuration, choose **Team Settings**.  
+	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/howto-manage-team-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
+
+See also [Manage and configure team tools](../../organizations/settings/manage-teams.md).
+
+::: moniker-end
 
 ## Related articles
 
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md )
 - [Add an artifact or team](add-artifact-team.md) 
 - [Set favorites](set-favorites.md) 
 - [Open a service or page](go-to-service-page.md) 
