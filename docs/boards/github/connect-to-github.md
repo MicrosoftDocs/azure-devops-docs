@@ -33,7 +33,7 @@ By connecting your Azure Boards project with GitHub repositories, you support li
 
 ## Add a GitHub connection and repository  
 
-0. Sign into Azure Boards. Make sure that you have [enabled **New Navigation**](../../project/navigation/preview-features.md). You can only configure the GitHub repositories from the New Navigation user interface. 
+0. Sign into Azure Boards. 
 
 0. Choose (1) **Project Settings**, choose (2) **GitHub connections** and then (3) **Connect your GitHub Account**.   
 

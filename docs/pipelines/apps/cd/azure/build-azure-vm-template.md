@@ -32,13 +32,9 @@ VMs must be checked into a version control repository
 along with the rest of the application code, and it
 must be published as part of the build output.
 
-## Get set up
+## Create the template 
 
-Before you can build the solution, you must create an
-Azure RM template.
-
-### Create the template 
-
+Before you can build the solution, you must create an Azure RM template.
 Follow these steps to create and check-in a new Resource Manager template.
 
 1. In Visual Studio, choose **File | Add | New project** and add a
@@ -62,26 +58,22 @@ Follow these steps to create and check-in a new Resource Manager template.
    commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.md) or 
    [Azure Repos Git](../../../../repos/git/index.md) repository.
 
-### Create the build pipeline
+## Create the build pipeline
 
 Carry out the following steps to publish an artifact with the Resource Manager template files.
 
-1. Make sure that the template files from the **HelloWorldARM**
-   project are included in the artifacts published by Build.
+1. [Create a new build pipeline](../../../get-started-designer.md#create-a-build-pipeline) for the solution you just checked into a TFS or Git repo.
 
-1. Queue a new build and verify that the artifact contains 
-   the **Templates** folder containing the template files
+1. [Enable continuous integration (CI)](../../../get-started-designer.md#enable-continuous-integration-ci). This tells the system to queue a build whenever someone on your team commits or checks in new code.
+
+1. [Publish the artifacts from the build](../../../get-started-designer.md#publish-an-artifact-from-your-build).
+   Make sure that the template files from your ARM template
+   project are included in the artifacts published by your build pipeline.
+
+1. [Save the pipeline and queue a new build](../../../get-started-designer.md#save-and-queue-the-build).
+   Verify that the artifact contains the **Templates** folder containing the template files
    **WindowsVirtualMachine.json** and **WindowsVirtualMachine.parameters.json**.
-
-For more details about creating a pipeline, see [Use the visual designer](../../../get-started-designer.md).   
-
-### Enable continuous integration (CI)
-
-On the Triggers tab, enable **continuous integration** (CI). This tells the system to queue a build whenever someone on your team commits or checks in new code.
-
-## Queue and test the build
-
-Save the build pipeline and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the template files produced by the build. This is the template that your release pipeline will consume to provision an Azure virtual machine.
+   This is the template that your release pipeline will consume to provision an Azure virtual machine.
 
 ## Provision your virtual machine
 

@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/08/2019
 ---
 
 # Web portal navigation in Azure DevOps  
@@ -20,9 +20,9 @@ ms.date: 11/19/2018
 
 ::: moniker range="azure-devops"
 
-The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on the navigation selected: 
-- **New navigation**: **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**
-- **Previous navigation**: **Dashboards**, **Code**, **Work**, **Build and Release**, **Test**, **Wiki**, and **Analytics views**
+The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on-premises and it's version. 
+
+[!INCLUDE [temp](../../_shared/version-selector.md)] 
 
 Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
 
@@ -42,11 +42,8 @@ Each service provides you with one or more pages which support a number of featu
 The web portal for Team Foundation Server (TFS) is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/new-navigation-wp.md)] 
-
 Here's what you need to know to get up and running using the web portal.  
 
-# [New navigation](#tab/new-nav)
 ::: moniker range=">= azure-devops-2019"
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different [service or functional area](../../user-guide/services.md) 
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
@@ -58,13 +55,9 @@ Here's what you need to know to get up and running using the web portal.
 - [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources.  
 
 ::: moniker-end
+
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams 
@@ -77,41 +70,27 @@ Here's what you need to know to get up and running using the web portal.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
----
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019" 
 > [!NOTE]  
 > Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
 
-# [New navigation](#tab/new-nav)
+
 ::: moniker range=">= azure-devops-2019"  
-In **New navigation**, you select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash;from the sidebar and pages within those services. 
+You select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash;from the sidebar and pages within those services. 
 
-![New navigation experience with vertical sidebar](_img/gif-images/vertical-nav.gif)
+![Vertical sidebar](_img/gif-images/vertical-nav.gif)
 
 ::: moniker-end
+
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
+You select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
-With the previous navigation enabled, you select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
-
-![Previous navigation experience with horizontal navigation](_img/gif-images/horizontal-nav.gif)
+![Horizontal navigation](_img/gif-images/horizontal-nav.gif)
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 Now that you have an understanding of how the user interface is structured, it's time to get started using it. As you can see, there are a lot of features and functionality.  
 

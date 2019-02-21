@@ -27,12 +27,12 @@ Here you'll find more resources to support your development efforts with Azure D
 
 ## Version control
 
-*   [Git lost my changes?](git-log-history-simplification.md)
-*   [Manage branching strategies in TFVC for DevOps](effective-tfvc-branching-strategies-for-devops.md)
-*   [Manage feature isolation in TFVC](effective-feature-isolation-on-tfvc.md)
-*   [Migrate from Subversion (SVN) to Git](perform-migration-from-svn-to-git.md)
-*   [Move Git repositories between Team Projects](move-git-repos-between-team-projects.md)
-*   [Remove large binaries from Git](remove-binaries.md)
+*   [Git lost my changes?](../repos/git/git-log-history-simplification.md)
+*   [Manage branching strategies in TFVC for DevOps](../repos/tfvc/effective-tfvc-branching-strategies-for-devops.md)
+*   [Manage feature isolation in TFVC](../repos/tfvc/effective-feature-isolation-on-tfvc.md)
+*   [Migrate from Subversion (SVN) to Git](../repos/git/perform-migration-from-svn-to-git.md)
+*   [Move Git repositories between Team Projects](../repos/git/move-git-repos-between-team-projects.md)
+*   [Remove large binaries from Git](../repos/git/remove-binaries.md)
 
 ##	DevOps: Continuous integration and continuous delivery
 

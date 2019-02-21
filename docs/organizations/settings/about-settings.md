@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/4/2018
+ms.date: 02/11/2019
 ---
 
 ::: moniker range="azure-devops" 
@@ -156,10 +156,6 @@ Members of the [Project Administrators group](../security/set-project-collection
 
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)  
-
 ::: moniker range=">= azure-devops-2019"
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
@@ -168,13 +164,8 @@ From the administrative **Project settings** pages, you can configure settings a
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
@@ -187,11 +178,6 @@ From the administrative **Project settings** pages, you can configure settings a
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 <table>
 <tbody valign="top">
@@ -320,8 +306,6 @@ From the administrative **Project settings** pages, you can configure settings a
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all projects defined for an organization or collection. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
 
-# [New navigation](#tab/new-nav)  
-
 ::: moniker range=">= azure-devops-2019"   
 **Organization settings**  
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
@@ -330,20 +314,6 @@ From the administrative **Organization settings** pages, you can configure setti
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"   
-
-**Organization settings**  
-From the **Admin settings** page, you can configure the settings shown in the following image. 
-
-![Organization settings, conceptual](_img/about/organization-settings-prev-nav.png) 
-
-::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
 **Project collection-level settings**  
@@ -355,11 +325,6 @@ From the administrative pages for a collection, you can configure the settings s
 ![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ::: moniker range="azure-devops" 
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).

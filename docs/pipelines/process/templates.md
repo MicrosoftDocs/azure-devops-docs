@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
-ms.date: 02/13/2019
+ms.date: 02/21/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -454,11 +454,12 @@ steps:
 
 ## Iterative insertion
 
-The `each` directive allows iterative insertion based on a sequence or mapping.
+The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
 
-For example, to wrap all steps within each job
+For example, you can wrap the steps of each job with additional pre- and post-steps:
 
 ```yaml
+# job.yml
 parameters:
   jobs: []
 
@@ -474,25 +475,56 @@ jobs:
       condition: always()
 ```
 
-For example, to wrap all jobs with an additional dependency
+```yaml
+# azure-pipelines.yml
+jobs:
+- template: job.yml
+  parameters:
+    jobs:
+    - job: A
+      steps:
+      - script: echo This will get sandwiched between SetupMyBuildTools and PublishMyTelemetry.
+    - job: B
+      steps:
+      - script: echo So will this!
+```
+
+You can also manipulate the properties of whatever you're iterating over.
+For example, to add additional dependencies:
 
 ```yaml
+# job.yml
 parameters:
   jobs: []
 
 jobs:
-- job: CredScan                       # Cred scan first
-  pool: MyCredScanPool
+- job: SomeSpecialTool                # Run your special tool in its own job first
   steps:
-  - task: MyCredScanTask@1
-- ${{ each job in parameters.jobs }}: # Then each job
+  - task: RunSpecialTool@1
+- ${{ each job in parameters.jobs }}: # Then do each job
   - ${{ each pair in job }}:          # Insert all properties other than "dependsOn"
       ${{ if ne(pair.key, 'dependsOn') }}:
         ${{ pair.key }}: ${{ pair.value }}
     dependsOn:                        # Inject dependency
-    - CredScan
-    - ${{if job.dependsOn}}:
+    - SomeSpecialTool
+    - ${{ if job.dependsOn }}:
       - ${{ job.dependsOn }}
+```
+
+```yaml
+# azure-pipelines.yml
+jobs:
+- template: job.yml
+  parameters:
+    jobs:
+    - job: A
+      steps:
+      - script: echo This job depends on SomeSpecialTool, even though it's not explicitly shown here.
+    - job: B
+      dependsOn:
+      - A
+      steps:
+      - script: echo This job depends on both Job A and on SomeSpecialTool.
 ```
 
 ## Escaping

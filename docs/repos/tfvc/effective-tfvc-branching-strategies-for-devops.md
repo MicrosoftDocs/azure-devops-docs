@@ -14,15 +14,13 @@ monikerRange: '>= tfs-2015'
 
 # Explore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/azure/devops/repos/tfvc/index)) with Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](index.md)) with Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
 - How do I decide on the right branching strategy? 
 - Is there an effective strategy for DevOps?
 - How do I support applications with single or multiple versions?
 
-> [!VIDEO https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean]
-
-## TFVC
+> [!VIDEO https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean/player]
 
 TFVC is a centralized version control system to maintain code and make teams more effective. It provides collaboration and consistent code sharing, publishing, and review features. 
 
@@ -124,7 +122,7 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 #Reference information
 - [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
 - [Interview with Abel Wang and Steve St Jean](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean)
-- [Team Foundation Version Control (TFVC)](../repos/tfvc/overview.md)
+- [Team Foundation Version Control (TFVC)](overview.md)
 - [What is DevOps - Definition](http://donovanbrown.com/post/what-is-devops)
 - [What is DevOps - Sticker](https://www.stickermule.com/marketplace/9107-devops-donovan-brown)
 

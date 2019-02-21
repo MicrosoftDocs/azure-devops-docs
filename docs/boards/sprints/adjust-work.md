@@ -11,9 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 2/14/2019
 ---
-
 
 <a id="adjust-work">  </a>
 # 4. Adjust work to fit sprint capacity
@@ -34,13 +33,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
-
-
 ## Open a Sprint backlog for a team 
-
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -63,16 +56,8 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -95,20 +80,10 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
-
 
 ## Check your team capacity 
 
 To view capacity charts, you'll want to turn **Work details** on for a sprint.
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -117,35 +92,18 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Turn work details on](_img//adjust-work/work-details-on-standard.png)
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
----
-
 
 ## Team over capacity: move items out of the sprint
 
 If your team's over capacity, you can move items from the sprint backlog back to the product backlog. This will reset the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team will work in. All the tasks that you've defined for that item will move with the backlog items.   
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">=azure-devops-2019"
 
@@ -159,14 +117,8 @@ Here we select two items at the bottom of the sprint backlog, open the ![ ](../.
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 
 Here we select the last item in the sprint backlog and drag it to the product backlog. 
 
@@ -176,17 +128,6 @@ Here we select the last item in the sprint backlog and drag it to the product ba
 > Dragging a backlog item to the backlog or another sprint reassigns all child tasks to the same iteration path. Also, you can multi-select several items and drag them to the backlog or another sprint. Users with **Stakeholder** access can't drag-and-drop work items.
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
-
-
-
 
 
 ## Load balance work across the team
@@ -207,7 +148,7 @@ As you reassign tasks, capacity bars automatically update.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ![Reassign tasks](_img/IC797838.png) 
 ::: moniker-end
