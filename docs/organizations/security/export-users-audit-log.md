@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 02/11/2019
 ---
 
 # Export a list of users and their access levels
@@ -38,10 +38,6 @@ You can get a list of users and groups that have access to your TFS instance by 
 * You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/tfs/server/admin/add-administrator-tfs).
 ::: moniker-end 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
@@ -55,32 +51,6 @@ You can get a list of users and groups that have access to your TFS instance by 
 	> ![Export users](_img/export-users-audit/export-new-nav.png)
 
 ::: moniker-end  
-
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-
-0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) gear icon and select **Organization settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
-
-	> [!IMPORTANT]  
-	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. 
-	
-0. Choose **Users** and **Export users**. 
-
-	<img src="_img/export-users-audit/go-to-users-hub.png" alt="From Users, choose Export users" style="border: 1px solid #C3C3C3;" />  
-
-0. The user log file is saved as a .csv file to your Download folder.   
-	To determine the access level assigned to each user or group, open the file in Excel.
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -103,7 +73,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 You can get a list of users and groups that have access to your TFS instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
@@ -123,11 +93,6 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Related articles
 

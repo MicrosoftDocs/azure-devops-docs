@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 01/23/2019
+ms.date: 02/20/2019
 ---
 
 # Show bugs on backlogs and boards  
@@ -33,19 +33,16 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 * Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
 
-* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category.
+* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 
 
-* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs are associated with the Bugs category.
+* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs are associated with the Bugs category and won't appear on either backlogs or boards.  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
-::: moniker range="azure-devops"  
+0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
@@ -61,13 +58,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -87,7 +78,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 Requires TFS 2013.4 or later version. 
 
@@ -105,17 +96,13 @@ Requires TFS 2013.4 or later version.
 
 ::: moniker-end
 
----
-
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-
 ## Nested items  
 
 > [!TIP]  
 > If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items appear on the Kanban or task boards.   
 
 When you manage bugs with requirements or with tasks, they'll show up on one or more of your Agile tool backlogs and boards. However, if you nest items&mdash;create parent-child links of items that belong in either the Requirements or Task categories&mdash;then not all items may appear on your backlogs and boards. To learn more about how nested items are treated, see [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). 
-::: moniker-end
+
 
 <a id="add-other-wits" /> 
 ## Add other work item types to your backlogs or boards
@@ -124,13 +111,13 @@ Bugs are a common item that teams want to track, and choose how they track it. S
 
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,  
 - For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"    
+::: moniker range="<= tfs-2018"    
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
@@ -155,7 +142,6 @@ You can review bugs defined for your project by creating a query and specifying 
 - [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
 
 ::: moniker-end
-
 
 ## Related articles
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 

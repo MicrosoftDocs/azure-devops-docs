@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -36,10 +36,6 @@ The last column, typically the **Closed** or **Done** column, is always ordered 
 
 If you want to preserve the backlog priority when you move a card to a new column, you can change the Kanban board card reordering setting for your team. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-5.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
@@ -60,18 +56,13 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
-
-# [Previous navigation](#tab/previous-nav)  
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
 > Reordering cards is supported on TFS 2015.1 and later versions.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -92,14 +83,6 @@ If you want to preserve the backlog priority when you move a card to a new colum
 	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
 
 
 ## Related articles   

@@ -2,77 +2,77 @@
   "redirections": [
     {
       "source_path": "docs/integrate/ide/extensions/overview.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/samples.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/sdk.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/develop_extensions/add_new_language.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/develop_extensions/add_tool_window.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/develop_extensions/customize_template.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/develop_extensions/extend_editor.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/develop_extensions/extend_ui.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/develop_extensions/unlisted.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/help/gitter.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/help/help.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/help/msdn.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/publish_extensions/other_resources.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/publish_extensions/publish.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/ide/extensions/hello_world.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
@@ -3182,7 +3182,7 @@
     },
     {
       "source_path": "docs/git/concepts/history-simplification.md",
-      "redirect_url": "/azure/devops/articles/git-log-history-simplification",
+      "redirect_url": "/azure/devops/repos/git/git-log-history-simplification",
       "redirect_document_id": false
     },
     {
@@ -11458,6 +11458,41 @@
     {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
       "redirect_url": "/azure/devops/articles/migrate-from-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/git-log-history-simplification.md",
+      "redirect_url": "/azure/devops/repos/git/git-log-history-simplification",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/effective-feature-isolation-on-tfvc.md",
+      "redirect_url": "/azure/devops/repos/tfvc/effective-feature-isolation-on-tfvc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/effective-tfvc-branching-strategies-for-devops.md",
+      "redirect_url": "/azure/devops/repos/tfvc/effective-tfvc-branching-strategies-for-devops",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/test-impact-for-partially-mapped-tfvc-repositories.md",
+      "redirect_url": "/azure/devops/repos/tfvc/test-impact-for-partially-mapped-tfvc-repositories",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/move-git-repos-between-team-projects.md",
+      "redirect_url": "/azure/devops/repos/git/move-git-repos-between-team-projects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/perform-migration-from-svn-to-git.md",
+      "redirect_url": "/azure/devops/repos/git/perform-migration-from-svn-to-git",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/remove-binaries.md",
+      "redirect_url": "/azure/devops/repos/git/remove-binaries",
       "redirect_document_id": true
     }
   ]

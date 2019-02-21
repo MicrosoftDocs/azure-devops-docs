@@ -36,7 +36,7 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 >
 > The following steps will remove the video from your branch history,
 > but the file remains in your repo history when you clone your repo from Azure Repos. Removing the files from your branch history prevents the files from being updated, which will
-> create another version of the large file in your repo. Learn more about [managing large files in Git](../repos/git/manage-large-files.md) and 
+> create another version of the large file in your repo. Learn more about [managing large files in Git](manage-large-files.md) and 
 > see this [blog post](https://blogs.msdn.microsoft.com/congyiw/2015/12/14/why-does-cloning-from-vsts-return-old-unreferenced-objects/) for a detailed explanation and workaround for this behavior 
 > when using Azure Repos Git repos.
 
@@ -47,7 +47,7 @@ If no one else on the team has made any changes to the repository - usually thro
 
 __Note: You may need to clone or fix your local repo before beginning this work.  This could result in lost work or changes, so proceed with caution.__
 
-By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](../organizations/security/set-git-tfvc-repository-permissions.md).
+By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](../../organizations/security/set-git-tfvc-repository-permissions.md).
 
 > ![Command Prompt - git push --force](./_img/remove-binaries/RemoveBinaries-force-push-permissions.png)
 
@@ -116,7 +116,7 @@ __Use with caution, as you can easily lose data on the server!!__
 
 *Notice that you must authenticate to the server for this to work*
 
-If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](../repos/git/auth-overview.md?view=azure-devops#personal-access-tokens).
+If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](auth-overview.md?view=azure-devops#personal-access-tokens).
 
 Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files you were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
 

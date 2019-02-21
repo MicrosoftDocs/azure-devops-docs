@@ -11,8 +11,8 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
---- 
+ms.date: 02/14/2019
+---
 
 # Definition of Done
 
@@ -37,10 +37,6 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ## Specify the Definition of Done for a column 
 
-[!INCLUDE [temp](../../_shared/new-navigation-5.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). 
@@ -61,13 +57,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
-
-
-# [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
@@ -102,12 +92,6 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	![Definition Text](_img/ALM_DD_DefinitionText.png)  
 
 ::: moniker-end   
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 Team members can quickly check that they have met the criteria by choosing the Information tooltip ![](_img/ALM_DD_InfoIcon.png) info icon.  
 
