@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/11/2019
 ---
 
 ::: moniker range="azure-devops"
@@ -35,10 +35,6 @@ For an overview of built-in security groups and default permission assignments, 
 ## Show members of the Project Administrators group
 
 If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings>Security** page and seeing who are members. 
- 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -57,13 +53,8 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav) 
-
-::: moniker range="<= tfs-2018 || azure-devops"  
+::: moniker range="<= tfs-2018"  
 
 0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -78,11 +69,6 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 ## Show members of the Project Collection Administrators group
 
@@ -91,9 +77,7 @@ If you need elevated permissions, you'll have to request them from a member of t
 To find out who is a member, check the **Security** settings at the collection level. 
 
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azure-devops-2019"  
+::: moniker range=">= azure-devops-2019"
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -107,14 +91,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"
+::: moniker range="<= tfs-2018"
 
 0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.
 
@@ -127,20 +104,12 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 ::: moniker range="azure-devops"
 
 <a name="find-owner"></a>
 
 ## Show who is the organization owner 
-
-# [New navigation](#tab/new-nav)
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -153,22 +122,6 @@ To find out who is a member, check the **Security** settings at the collection l
 	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
 
 	To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
-
-# [Previous navigation](#tab/previous-nav)
-
-0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)   
-
-0.	Under **Settings**, find the current owner.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
-
-	To change the account owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
-
----
 
 ::: moniker-end
 

@@ -15,10 +15,6 @@ monikerRange: '>= tfs-2015'
 # Git lost my changes: Taking a look at Git's history simplification
 ## How Git Log History Simplification Works
 
-![Git Version Control](./_img/git-log-history-simplification/git.png)
-
-> Authors: Ross Brodbeck
-
 Git history simplification can be a confusing beast. 99% of the time you won't even know it exists, but every once in a while it will jump out of the dark corners of Git and bite you. In this article we'll explore what history simplification is and how it can cause confusion when looking at file history.
 
 Let's start with a common scenario:
@@ -36,7 +32,7 @@ Unless you have run into it before, the result is often a lot of hair pulling an
 
 ## History Simplification: On by Default
 
-By default, running the log command on a file: `git log file.txt` will automatically simplify history, possibly hiding some commits from its output. You can read more details over at the [git log man page](http://git-scm.com/docs/git-log#_history_simplification).
+By default, running the log command on a file: `git log file.txt` will automatically simplify history, possibly hiding some commits from its output. You can read more details over at the [git log man page](https://git-scm.com/docs/git-log#_history_simplification).
 
 What makes this a tad more confusing is that history simplification does *not* occur if you just run `git log` (because you are looking at all changes there is nothing to simplify).
 

@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -100,10 +100,6 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 Once you have [installed Delivery Plans](#install-plans), the **Plans** appears under **Work**.
 
-[!INCLUDE [temp](../../_shared/new-navigation-7.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0. Open **Boards>Plans**. 
@@ -124,13 +120,8 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. Open **Boards>Plans**. 
 
@@ -154,13 +145,6 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
-
----
 
 When defining a plan, note the following:  
 - Use the name and description field to clearly identify your plan within the project 

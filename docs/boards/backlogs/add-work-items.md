@@ -11,14 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.topic: quickstart
-ms.date: 12/4/2018
+ms.date: 02/14/2019
 ---
 
 ::: moniker range=">= tfs-2017"
 # Add, update, and follow a work item 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 # Add and update a work item
 ::: moniker-end 
 
@@ -34,9 +34,8 @@ For additional clients that you can use, see [Best tools for adding, updating, a
 ## Add a work item 
 You can start adding work items once you connect to a project. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-# [New navigation](#tab/new-nav)
+# [Browser](#tab/browser) 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -47,14 +46,8 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
@@ -78,7 +71,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. From a web browser, connect to the project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
 
@@ -96,9 +89,6 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
 # [Visual Studio 2019](#tab/visual-studio)
 

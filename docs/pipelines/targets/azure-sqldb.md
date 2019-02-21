@@ -61,6 +61,8 @@ When setting up a release pipeline, choose **Start with an empty pipeline**, lin
 
 ---
 
+See also [authentication information when using the Azure SQL Database Deployment task](../tasks/deploy/sql-azure-dacpac-deployment.md#arguments).
+
 ## SQL scripts
 
 Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here is a simple example of a SQL script that creates an empty database.

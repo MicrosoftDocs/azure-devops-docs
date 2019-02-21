@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 01/25/2019
+ms.date: 02/20/2019
 ---
 
 # Manage and configure team tools
@@ -31,6 +31,41 @@ Optional tasks to consider include:
 
 > [!NOTE]   
 > In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams. To add a team, see [Add teams](add-teams.md). 
+
+
+::: moniker range=">= azure-devops-2019"
+## Open the team profile and access team tools
+
+- Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open team profile](../../project/navigation/_img/breadcrumbs/open-team-profile.png)
+
+	A panel opens that shows all items defined for the team. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team profile all items](../../project/navigation/_img/breadcrumbs/team-profile-all-items.png)
+
+- You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or  **Sprints** by choosing from the menu. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Filter team tools](../../project/navigation/_img/breadcrumbs/filter-team-profile.png)
+
+- To view the team admins and members of the team, choose **Members**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team members](../../project/navigation/_img/breadcrumbs/team-profile-members.png)
+
+- To view or change the team configuration, choose **Team Settings**.  
+	You can then perform the following tasks: 
+	- Add [team members](../security/add-users-team-project.md#add-team-members)
+	- Add [team admins](add-team-administrator.md)
+	- Navigate to [team notifications](../../notifications/howto-manage-team-notifications.md)
+	- Navigate to team [iterations](set-iteration-paths-sprints.md#open-team-settings) and [area paths](set-area-paths.md#open-team-settings). 
+	- Update the [team description or profile picture](#team-description).
+
+::: moniker-end
+
 
 ## Add users to a team
  
@@ -77,18 +112,13 @@ You can configure most of your team settings from the common configuration dialo
 > **Feature availability:** The common configuration dialog is available for TFS 2015.1 and later versions.  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015"  
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-::: moniker-end  
-
-# [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"  
 
 1. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Kanban board, new navigation](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
+	> ![Open Kanban board](/azure/devops/boards/boards/(../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
 
 0. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
@@ -108,13 +138,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
@@ -123,7 +147,7 @@ You can configure most of your team settings from the common configuration dialo
 0. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
-	>![Open Kanban board, previous navigation](../../boards/boards/_img/kanban-basics-intro.png)  
+	>![Open Kanban board](../../boards/boards/_img/kanban-basics-intro.png)  
 
 1. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
 
@@ -148,16 +172,9 @@ You can configure most of your team settings from the common configuration dialo
 ::: moniker-end  
 
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ::: moniker range=">= tfs-2017"  
 
 For details on each configuration option, see one of these topics:  
-
 
 <table width="80%">
 <tbody valign="top">
@@ -265,8 +282,6 @@ For details on each configuration option, see one of these topics:
 
 
 
-
-
 ## Configure Kanban boards 
 Team administrators can fully customize the team's Kanban boards associate with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
 * [Columns](../../boards/boards/add-columns.md)  
@@ -294,7 +309,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ::: moniker-end
 
-
+<a id="team-description" />
 ## Update team description and picture
 
 Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB. 

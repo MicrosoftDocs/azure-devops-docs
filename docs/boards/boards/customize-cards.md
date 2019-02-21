@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -118,10 +118,6 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker-end  
 
 
-[!INCLUDE [temp](../../_shared/new-navigation-5.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
@@ -150,14 +146,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 0. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
@@ -215,21 +204,12 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker-end  
 
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
-
 <a id="task-board">  </a>
 ## Choose fields to appear on cards (Taskboards)
 
 Scrum teams use the taskboard to burn down work and report on progress during daily standups. Your taskboard shows cards that correspond to both requirements and tasks. If you want bugs to appear on the taskboard, change your team settings for [show bugs on the backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
 
 You change the way cards appear on the taskboard in the same way you change the appearance of cards on Kanban boards. Only here, you start from the taskboard.
-
-# [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -257,13 +237,8 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0.	[Open the taskboard](../sprints/task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
@@ -315,19 +290,11 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 <a id="style-rule">  </a>  
 ## Define style rules to highlight cards  
 
 You can apply style rules to change the color of cards on Kanban boards and taskboards.  
-
-# [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -359,17 +326,11 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
 ::: moniker range="tfs-2015"  
 Requires TFS 2015.1 or later version.  
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 1.	[Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
@@ -398,11 +359,6 @@ Requires TFS 2015.1 or later version.
 0. When done with your changes, choose **Save**.
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
----
 
 
 <a id="color-tags">  </a>

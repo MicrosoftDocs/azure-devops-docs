@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 01/07/2018
+ms.date: 02/11/2019
 ---
 
 # Set permissions and access for work tracking
@@ -18,10 +18,8 @@ ms.date: 01/07/2018
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md). 
-
-> [!NOTE]   
+> [!NOTE]
 > For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
-
 
 
 <table width="80%">
@@ -133,11 +131,6 @@ The **Edit project-level information** and **Edit instance-level information** (
 
 Area path permissions let you grant or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the project.  
 
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019" 
 
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
@@ -161,13 +154,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav) 
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 	::: moniker range=">= tfs-2017"
@@ -208,15 +195,8 @@ You define both areas and iterations for a project from the **Project Settings>W
 	
 	You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
 
-<!--- <img src=".../boards/boards/_img/ALM_CW_PermisionsForArea.png" alt="Permissions for an area node" style="border: 1px solid #C3C3C3;" />--> 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
----
 
 <a id="work-item-queries"></a>
 
