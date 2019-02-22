@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/19/2019
+ms.date: 02/22/2019
 ---
 
 
@@ -38,13 +38,13 @@ To add user accounts or groups to specific access levels, see [Change access lev
 You assign users or groups of users to one of the following access levels:
 
 ::: moniker range="azure-devops"
-- **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an organization. 
-- **Visual Studio Subscription**: Provides access to premium features and all published DevOps extensions. Assign to users with a Visual Studio Enterprise subscription.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an organization.
+- **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes their subscription and enables any other features that are included, based on their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-- **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign  to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos. 
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 - **Advanced** (legacy access level, to be deprecated): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
@@ -52,14 +52,14 @@ You assign users or groups of users to one of the following access levels:
 
 
 ::: moniker range="tfs-2018"
-- **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a TFS CAL or with a Visual Studio Professional subscription. 
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 - **Advanced** (legacy access level, to be deprecated): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
-- **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a TFS CAL or with a Visual Studio subscription. 
 - **VS Enterprise** (TFS 2017.1): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 - **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
@@ -67,7 +67,7 @@ You assign users or groups of users to one of the following access levels:
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-- **Stakeholders**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features.  Assign to users with a TFS CAL or with a Visual Studio subscription.
 - **Advanced**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
 
@@ -103,7 +103,7 @@ As the following images illustrate, **Basic** access includes all **Stakeholder*
 ::: moniker-end
 
 
-# [Visual Studio Subscription](#tab/vs-subscription) 
+# [Visual Studio subscription](#tab/vs-subscription) 
 
 ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]  
@@ -920,8 +920,8 @@ Can add features and epics from the Kanban board. Can change the backlog priorit
 
 ::: moniker range="azure-devops"
 
-## Visual Studio Subscription access
-Visual Studio subscribers are entitled to **Visual Studio Subscription** features as a subscriber benefit. When you add those users be sure to assign them **Visual Studio Subscription** access level. The system automatically recognizes their subscription and enables any other features that are included, based on their subscription level.
+## Visual Studio subscription access
+Visual Studio subscribers are entitled to **Visual Studio subscription** features as a subscriber benefit. When you add those users, be sure to assign them the **Visual Studio subscription** access level. The system automatically recognizes their subscription and enables any other features that are included, based on their subscription level.
 
 ::: moniker-end  
 
