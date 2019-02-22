@@ -1,20 +1,26 @@
 ---
-title: Speed up testing by running tests in parallel using Visual Studio Test task
+title: Run any tests in parallel
 description: Continuous testing. Speed up testing by running tests in parallel using Visual Studio Test task. 
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: jillfra
 ms.author: pbora
 author: pboraMSFT
-ms.ms.date: 09/01/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Run tests in parallel using the Visual Studio Test task
 
-**Azure Pipelines | TFS 2017.1 and later**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+
+::: moniker range="< tfs-2018"
+> [!NOTE]
+> For TFS, this topic applies to only TFS 2017 Update 1 and later.
+::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
@@ -39,7 +45,7 @@ This article discusses how you can configure the
 
 Familiarize yourself with the concepts of [agents](../agents/agents.md) and [jobs](../process/phases.md).
 To run multiple jobs in parallel, you must configure multiple agents.
-You also need sufficient [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Test slicing
 
@@ -190,7 +196,7 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
 
 2. **Parallelism offered by the Visual Studio Test Platform (vstest.console.exe)**. Visual Studio Test Platform can run
    test assemblies in parallel. Users of vstest.console.exe will recognize this as the
-   [/parallel switch](https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options?view=vs-2017).
+   [/parallel switch](https://docs.microsoft.com/visualstudio/test/vstest-console-options?view=vs-2017).
    It does so by launching a test host process on each available core, and handing it tests in an assembly to execute.
    This works for any framework that has a test adapter for the Visual Studio test platform because the unit of parallelization
    is a test assembly or test file. This, when combined with the parallelism offered by test frameworks (described above),

@@ -28,5 +28,5 @@ Because custom fields are defined for the account collection, you can't add a cu
 <!-- 
 16 person-name fields    
 1024 rules per field   
-128 pick list values per field     
+128 picklist values per field     
 -->

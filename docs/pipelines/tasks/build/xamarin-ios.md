@@ -1,22 +1,23 @@
 ---
 title: Xamarin.iOS build and release task
+ms.custom: seodec18
 description: Xamarin.iOS build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 00000000-0000-0000-0000-000000000000
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Xamarin.iOS
+# Xamarin.iOS task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/xamarin-ios.png) Build an iOS app with Xamarin on macOS
+Use this task in a build or release pipeline to build an iOS app with Xamarin on macOS.
 
 ## Demands
 
@@ -128,14 +129,14 @@ Working directory for the build. If you leave it blank, it is the root of the re
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

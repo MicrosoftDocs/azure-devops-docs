@@ -1,17 +1,18 @@
 ---
-title: Set team capacity to support sprint planning
-titleSuffix: Azure Boards and TFS
+title: Set sprint capacity 
+titleSuffix: Azure Boards 
 description: Set team capacity for a sprint or iteration working with Scrum methods 
-ms.custom: Uses the New Navigation
+
 ms.technology: devops-agile
 ms.prod: devops
+ms.custom: boards-sprints
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 2/14/2019
 ---
 
 <a id="set-capacity">  </a>
@@ -33,17 +34,16 @@ Because days off and time available for each team member can vary from sprint to
 
 If you haven't set up sprints yet for your team, go [here to do that now](define-sprints.md).
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+## Prerequisites
 
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
+* To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Users with **Stakeholder** access can't view or set capacity.
 
 
 ## Open a Sprint backlog for a team 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
 
@@ -65,14 +65,8 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -93,22 +87,21 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
----
+::: moniker-end
 
+<a id="set-team-capacity">  </a> 
 ## Set capacity for the team and team members 
 
 From the **Capacity** page, you can enter the team time off, and set capacity and days off for each member of your team. If your team tracks capacity by activity, then also select the Activity for each team member.  
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range="vsts"
-
-0. If you don't see your team members listed, add them. Choose the ![](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members.png) 
 
-0. If you need to add other contributors to your project, choose the ![](../../_img/icons/blue-add-icon.png) **Add user**.  
+0. If you need to add other contributors to your project, choose the ![ ](../../_img/icons/blue-add-icon.png) **Add user**.  
 
 0. Next, set any time off that the team will take. Choose the **0 days** link as shown.  
 
@@ -131,19 +124,15 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
-::: moniker range=">= tfs-2015"
-0. If you don't see your team members listed, add them. Choose the ![](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![ ](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members-standard.png)  
 
-0.  If you need to add other contributors to your project, choose the ![](../_img/icons/add-light-icon.png) **Add user** icon.  
+0.  If you need to add other contributors to your project, choose the ![ ](../_img/icons/add-light-icon.png) **Add user** icon.  
 ::: moniker-end  
 
 0. Set any time off that the team will take. Choose the **0 days** link as shown.
@@ -172,13 +161,28 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	![TFS 2015, Set Capacity](_img/capacity/set-sprint1-capacity.png)"   
 	::: moniker-end  
 
-	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	<a id="customize-activity-list">  </a>  
+
+	::: moniker range="azure-devops"  
+
 	> [!NOTE]    
-	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) field by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
+	> Customizing the picklist of the [Activity](../queries/query-numeric.md) (Basic, Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields isn't supported at this time.  
+
 	::: moniker-end
 
----
+	::: moniker range="azure-devops-2019"  
+	> [!NOTE]    
+	> If you the On-premises XML process model to customize work tracking, you can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its picklist](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  If you use the Inheritance process model, customization of the picklist isn't supported at this time. 
+
+	::: moniker-end
+
+	::: moniker range="<= tfs-2018"  
+
+	> [!NOTE]    
+	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its picklist](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
+
+	::: moniker-end
+
 
 ::: moniker range=">= tfs-2015"
 <a id="copy-capacity">  </a>
@@ -188,28 +192,6 @@ By copying the capacity from the previous sprint, you save time. With the basics
 
 ::: moniker-end
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
-
-> [!div class="mx-imgBorder"]  
-> ![Copy capacity, vertical nav](_img/capacity/copy-capacity-from-previous-sprint-vert.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
-
-![Copy capacity from the previous iteration](_img/capacity/copy-capacity-from-previous-sprint.png)
-
----
-
 ::: moniker range="tfs-2015"
 > [!NOTE]    
 > This feature is available from TFS 2015.1 and later versions.
@@ -218,12 +200,29 @@ Notice that only the capacity per day and activity are copied over. Individual a
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Copy capacity, vertical nav](_img/capacity/copy-capacity-from-previous-sprint-vert.png)
+
+::: moniker-end
+
+
+::: moniker range="<= tfs-2018"
+
+For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
+
+![Copy capacity from the previous iteration](_img/capacity/copy-capacity-from-previous-sprint.png)
+
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2015"
 <a id="add-remove-users">  </a>
+
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users ![](../../_img/icons/actions-icon.png) action menu. 
+To remove a user, choose the option from the users ![ ](../../_img/icons/actions-icon.png) action menu. 
 
 ::: moniker-end
 
@@ -232,11 +231,7 @@ To remove a user, choose the option from the users ![](../../_img/icons/actions-
 > This feature is available from TFS 2015.1 and later versions.
 ::: moniker-end
 
-
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
 > ![Remove user from capacity list](_img/capacity/remove-user-agile.png)
@@ -244,15 +239,8 @@ To remove a user, choose the option from the users ![](../../_img/icons/actions-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2015"
 ![Capacity planning, Remove a user](_img/capacity/capacity-planning-remove-user.png) 
 ::: moniker-end
-
----
 
 
 ## Review capacity charts 
@@ -261,11 +249,19 @@ As you define tasks and estimate the work, you'll see capacity charts start to f
 
 You'll also see a roll-up of the remaining work required to complete each requirement or bug.  
 
+::: moniker range=">= azure-devops-2019"
+> [!div class="mx-imgBorder"]  
+> ![Wiki view keyboard shortcuts popup](_img/capacity/work-details.png)   
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 ![Capacity charts](_img/capacity/review-capacity.png)  
+::: moniker-end
 
 From this view, you can easily see which individuals are at or near capacity. Teams can determine if work needs to be moved out of the sprint or to reassign tasks.  
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
+
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 >
@@ -273,11 +269,11 @@ From this view, you can easily see which individuals are at or near capacity. Te
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 > [!TIP]  
 > Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 >
-> Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+> Also, don't divide tasks into subtasks as the [taskboard will only show leaf node tasks](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
 
 ::: moniker-end
 
@@ -322,20 +318,7 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 Setting capacity and [estimating remaining work for each task](assign-work-sprint.md) provides you with the tools you need to track the amount of work and resources you have allocated sprint over sprint.  
 
 - [Sprint burndown](../sprints/sprint-burndown.md)
-- [Velocity](../../report/dashboards/velocity-chart-data-store.md)    
+- [Velocity](../../report/dashboards/velocity-chart-data-store.md)  
 - [Forecasting](../sprints/forecast.md)    
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
-
-
-<a id="team_settings">  </a>
-
-<!---
-If you haven't yet [added tasks for your sprint backlog items](add-tasks.md), do that now. 
--->
-<!---
-Choose ![Add user icon](_img/capacity/capacity-planning-add-user-icon.png) to add a specific account to your capacity planning, or ![Add missing team members](_img/capacity/capacity-planning-add-missing-users-icon.png) to add all missing team members. 
-
-![Capacity planning, Add missing team members](_img/capacity/capacity-planning-add-missing-team-members.png) 
--->
-  

@@ -1,20 +1,23 @@
 ---
-title: Run automated tests with Microsoft Test Manager
+title: Run automated tests with MTM
 description: Manual and exploratory testing - Run automated tests with Microsoft Test Manager
 ms.assetid: F9E8F299-6266-47E3-B896-17D8504E6165
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Run automated tests with Microsoft Test Manager
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
 ## Set up your test plan to use your build  
  
@@ -137,7 +140,6 @@ To view and update the test results:
 ## See Also  
 
 * [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
-* [Test with unified agents and jobs](../../pipelines/test/set-up-continuous-test-environments-builds.md)
 * [Continuous testing scenarios and capabilities](../../pipelines/index.md)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

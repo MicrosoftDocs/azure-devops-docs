@@ -4,7 +4,7 @@ description: Learn how to deploy to Azure using Azure Pipelines and TFS Build & 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 07/09/2018
@@ -26,7 +26,7 @@ Whether you are developing a .NET, Java, Node, PHP, or a Python app, or whether 
 
 Learn how to build your app and deploy it to your choice of Azure service.
 
-### Use Azure DevOps Project to deploy your App to Azure
+### Use Azure DevOps Projects to deploy your App to Azure
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-aspnet-core"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
@@ -38,7 +38,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-ruby"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_ruby.svg"><span>Ruby</span></a></div>
 </div>
 
-### Use VSTS to deploy your App to Azure
+### Use Azure DevOps Services to deploy your App to Azure
 <div class="ico48Case halfStack">
 <div class="ico48Link"><a href="../pipelines/targets/webapp.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
 <div class="ico48Link"><a href="../pipelines/apps/cd/deploy-webdeploy-iis-deploygroups.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
@@ -47,11 +47,11 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ## Step-by-Step Tutorials  
 
-* [Azure DevOps Project for GitHub](/azure/devops-project/azure-devops-project-github)
-* [Azure DevOps Project for VMs](/azure/devops-project/azure-devops-project-vms)
-* [Azure DevOps Project for SQL Database](/azure/devops-project/azure-devops-project-sql-database)
-* [Azure DevOps Project for AKS](/azure/devops-project/azure-devops-project-aks)
-* [Azure DevOps Project for Service Fabric](/azure/devops-project/azure-devops-project-service-fabric)
+* [Azure DevOps Projects for GitHub](/azure/devops-project/azure-devops-project-github)
+* [Azure DevOps Projects for VMs](/azure/devops-project/azure-devops-project-vms)
+* [Azure DevOps Projects for SQL Database](/azure/devops-project/azure-devops-project-sql-database)
+* [Azure DevOps Projects for AKS](/azure/devops-project/azure-devops-project-aks)
+* [Azure DevOps Projects for Service Fabric](/azure/devops-project/azure-devops-project-service-fabric)
 * [Set up multi-stage release](../pipelines/release/define-multistage-release-process.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json)
 * [CI builds for Git in VSTS](../pipelines/build/ci-build-git.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json)
 * [Deploy apps to Azure App Service with VSTS and CI/CD](/azure/app-service)
@@ -69,7 +69,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 - [What is Continuous Integration?](/azure/devops/what-is-continuous-integration)  
 - [What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)  
 - [What is DevOps?](/azure/devops/what-is-devops)
-- [What is the Azure DevOps Project?](/azure/devops-project/overview)
+- [What is Azure DevOps Projects?](/azure/devops-project/overview)
 - [Azure Pipelines](../pipelines/index.md)
 
 ::: moniker-end

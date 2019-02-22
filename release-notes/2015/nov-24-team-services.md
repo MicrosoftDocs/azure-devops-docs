@@ -20,7 +20,7 @@ Big news! In this sprint, we’ve added the ability to add Git repositories to a
 
 ##Package Management build tasks
 
-At [Connect()](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/) last week, we launched the new [Package Management](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/27/announcing-package-management-for-vso-tfs.aspx) preview for VSTS that enables you to share, host, secure, and release binary components across teams. You can get the preview from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.feed).
+At [Connect()](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/) last week, we launched the new [Package Management](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/27/announcing-package-management-for-vso-tfs.aspx) preview for VSTS that enables you to share, host, secure, and release binary components across teams. You can get the preview from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 Package management is an important part of your continuous delivery workflow, and we’ve made it even easier to work with your Team Builds and releases. The NuGet Installer and NuGet Publisher build tasks have been updated to work seamlessly with the new Team Services feeds. You can now publish to any authenticated NuGet feed or package source using a service connection, and you’ll see an option to use an internal feed.
 

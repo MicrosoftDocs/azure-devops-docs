@@ -1,32 +1,41 @@
 ---
-title: Queries index 
-titleSuffix: Azure Boards and TFS
-description: Find and list work items, create flat-based query charts in Azure Boards & Team Foundation Server    
+title: Learn how to find, list, and filter work items using queries
+titleSuffix: Azure Boards
+description: Find and list work items, create flat-based query charts in Azure Boards, Azure DevOps, & Team Foundation Server
+ms.custom: "boards-queries, seodec18"  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 02/01/2019
 ---
 
 # Queries
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
-List bugs, user stories, or other work items based on field criteria you specify. Then you can review with your team, triage, or perform bulk updates.  
+List bugs, user stories, or other work items based on field criteria you specify. Then, you can review with your team, triage, or perform bulk updates. 
+
+If you're just getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
+
 
 <!---
+
+If you're just starting out, [Query index quick reference](query-index-quick-ref.md)
+
+
 ## Overview  
-* [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
+* [Ad hoc vs managed queries](adhoc-vs-managed-queries.md) 
 
 -->
  
 ## 5-Minute Quickstarts  
 
 - [View, run, or email a query](view-run-query.md)
-- [Perform an adhoc search (search box query)](search-box-queries.md)
+- [Perform an ad hoc search (search box query)](search-box-queries.md)
 
 ## Step-by-Step Tutorials
 
@@ -43,7 +52,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)   
 - [Query history](history-and-auditing.md)  
 - [Query a numeric field](query-numeric.md)  
-- [Query by pick list value](planning-ranking-priorities.md)  
+- [Query by picklist value](planning-ranking-priorities.md)  
 - [Query by build & test integration fields](build-test-integration.md)  
 - [Query by links or attachments](linking-attachments.md) 
 
@@ -56,6 +65,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 
 ## Reference 
+- [Query quick reference](query-index-quick-ref.md)
 - [Query fields, operators & macros](query-operators-variables.md)      
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json) 

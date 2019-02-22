@@ -1,14 +1,16 @@
 ---
 title: Add tags to work items 
-titleSuffix: Azure Boards and TFS
-description: Add work item tags to categorize and filter lists & boards when working in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Add work item tags to categorize and filter lists & boards when working in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 01/08/2018
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -22,6 +24,16 @@ A tag corresponds to a one or two keyword phrase that you define and that
 supports your needs to filter a backlog or query, or define a query. 
 
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
+
+> [!NOTE]   
+> Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags.  
+
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+
+::: moniker range="azure-devops"
+> [!NOTE]   
+> Users with **Stakeholder** access for public projects are allowed to add new tags. 
+::: moniker-end
 
 
 <a id="assign"></a>
@@ -46,14 +58,14 @@ To add several tags at one time, type a comma between tags. Tags are case sensit
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   
 
-
+::: moniker range="azure-devops"
 > [!NOTE]   
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
 > more, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
-	
+::: moniker-end	
 
 
 <a id="bulk-modify"></a>
@@ -68,7 +80,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 [Use Excel to bulk modify tags](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
@@ -114,7 +126,7 @@ All tags that have been added to the listed work items appear.
 ::: moniker-end
   
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../_img/icons/actions-icon.png) actions icon to select it from the menu of options.    
 
@@ -142,7 +154,7 @@ Check the boxes of those tags that you want to filter on. Keep the OR selection 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. Turn on filtering and choose a tag.  
 
@@ -170,9 +182,27 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 
 ::: moniker-end
 
+::: moniker range=">=tfs-2015"  
+## Color-code tags on boards
+
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. they don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
+::: moniker-end   
+
+::: moniker range="tfs-2015"  
+Requires TFS 2015.1 or later version.  
+::: moniker-end   
+
+::: moniker range=">=tfs-2015"  
+
+> [!div class="mx-imgBorder"]
+> ![Boards>Settings>Tag colors dialog](_img/add-tags/color-code-tags.png)
+
+::: moniker-end   
+
+
 ## Related articles
 
-Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags. 
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
@@ -190,17 +220,10 @@ Simply save the work item with the tags (100 or less) that you've added, and the
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azure-devops-2019"
 
 ### Add tags to the default column view on the product backlog 
 
 To add the Tags field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
-
-<!---
-### Add or modify tags using an API 
-
-You can use ```WorkItem.Fields``` or Work Item Field Explorer, provided with the Process Editor, to determine if the Tags field is editable (IsEditable). To acquire the Process Editor: 
-* For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?* For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
--->

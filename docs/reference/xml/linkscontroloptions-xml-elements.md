@@ -1,12 +1,13 @@
 ---
 title: LinksControlOptions XML elements reference 
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2017'
 ms.date: 02/02/2018
 ---
@@ -17,12 +18,12 @@ ms.date: 02/02/2018
 
 
 > [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015) ](linkscontroloptions-elements.md). <br/><br/>
+>This article applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015) ](linkscontroloptions-elements.md). <br/><br/>
 >Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
  
 By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.    
 
-The  **LinksControlOptions** element is a child element of the **Control** element. With a scoped links control, you can specify filters that restrict the types of links that users can add and the types of work items to which users can create links. Specifically, you use the following child elements to scope the control:
+The **LinksControlOptions** element is a child element of the **Control** element. With a scoped links control, you can specify filters that restrict the types of links that users can add and the types of work items to which users can create links. Specifically, you use the following child elements to scope the control:
 
 - **LinkFilters**: Use to specify the types of links that appear in the control:
 	- Add a **WorkItemLinkFilter** to select links that may be created to other work items
@@ -227,7 +228,7 @@ For example, the syntax below would create a control specifically designed to di
 <a id="customize">  </a>  
 ## Create a scoped links control  
 
-To add or modify a scoped links control, use the information provided in this topic to modify the XML definition file for a specific work item type. Each links control must be added as a **Control** of **type="LinksControl"** within the **WebLayou**t section, specifying the appropriate **LinksControlOptions**.
+To add or modify a scoped links control, use the information provided in this topic to modify the XML definition file for a specific work item type. Each links control must be added as a **Control** of **type="LinksControl"** within the **WebLayout** section, specifying the appropriate **LinksControlOptions**.
 
 To import and export your changes, see [Customize the work item tracking web form](../customize-wit-form.md).   
 
@@ -284,7 +285,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>ExternalLinkFilter</strong> </p></td>
 <td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
 <pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
-<p>Examples of external link types you can specify include: ```Fixed in Changeset```, ```Fixed in Commit```, ```Source Code File```, ```Pull Request```, and ```Hyperlink```. See [External link types](link-type-element-reference.md#external-link-types) for a complete list. </p>
+<p>Examples of external link types you can specify include: ```Fixed in Changeset```, ```Fixed in Commit```, ```Source Code File```, ```Pull Request```, and ```Hyperlink```. See [Link type reference](../../boards/queries/link-type-reference.md#external-link-types)for a complete list. </p>
 <blockquote><b>Important: </b>For import purposes, use the name `Workitem Hyperlink` in place of `Hyperlink` and `Source Code File` in place of `Versioned item`. 
 </blockquote>
 
@@ -396,9 +397,9 @@ WorkItemFiltersScope="Project" &gt;
 <pre><code>&lt;WorkItemLinkFilter Type=&quot;WorkLinkTypeName&quot; /&gt;
 </code></pre>
 <p>Examples of work item link types you can specify include: ```System.LinkTypes.Dependency```, ```System.LinkTypes.Hierarchy-Forward```, ```System.LinkTypes.Hierarchy-Reverse```, and ```System.LinkTypes.Related```. </p>
-<p>For a complete list, see [work item link type](link-type-element-reference.md#work-link-types). In addition, you can specify the reference name for a custom link type. </p>
+<p>For a complete list, see [Link type reference](../../boards/queries/link-type-reference.md#work-link-types). In addition, you can specify the reference name for a custom link type. </p>
 <p>Specify ```System.IncludeAllWorkItemLinks``` to include all work link types.</p>
-<blockquote><b>Note: </b>When you specify  ```System.IncludeAllWorkItemLinks```, the system displays all links in alphabetical order by link type. 
+<blockquote>When you specify  ```System.IncludeAllWorkItemLinks```, the system displays all links in alphabetical order by link type. 
 </blockquote>
 </td>
 </tr>
@@ -430,52 +431,3 @@ You use scoped links controls to support your team and business needs. You [link
 - [Manage new form rollout](../manage-new-form-rollout.md)
 - [New work item experience](../process/new-work-item-experience.md)
 - [Customize the new form](../customize-wit-form.md)
-  
-
-<!---
- 
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Agile</p>
-<ul style="list-style-type:none;padding-left:10px">
-<li>Bug</li>
-<li>Epic</li>
-<li>Feature</li>
-<li>Issue</li>
-<li>Task</li>
-<li>Test Case</li>
-<li>User Story</li>
-</ul>
-</div>
-
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Scrum</p>
-<ul style="list-style-type:none;padding-left:20px">
-<li>Bug</li>
-<li>Epic</li>
-<li>Feature</li>
-<li>Impediment</li>
-<li>Product Backlog Item</li>
-<li>Task</li>
-<li>Test Case</li>
-</ul>
-</div>
-
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">CMMI</p>
-<ul style="list-style-type:none;padding-left:30px">
-<li>Bug</li>
-<li>Change Request</li>
-<li>Epic</li>
-<li>Feature</li>
-<li>Issue</li>
-<li>Review</li>
-<li>Requirement</li>
-<li>Risk</li>
-<li>Task</li>
-<li>Test Case</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
--->

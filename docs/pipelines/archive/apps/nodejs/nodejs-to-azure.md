@@ -1,11 +1,12 @@
 ---
 title: CI build Node.js app | Azure Pipelines or Team Foundation Server
+ms.custom: seodec18
 description: Learn how you can set up a continuous integration (CI) build for your Node.js app in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid:
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/04/2016
@@ -14,6 +15,8 @@ monikerRange: 'tfs-2017'
 
 
 # Define a continuous integration build for your Node.js app
+
+**TFS 2017**
 
 Here we'll show you how to define a continuous integration (CI) build pipeline for your Node.js app. If you want to also continuously deploy (CD) your app to Azure, you'll be set up to make that happen after you're done creating this CI build pipeline.
 
@@ -134,7 +137,7 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 The gulpfile.js script zips up the app so it can be deployed to Azure. The web.config file enables running the app on Azure. The .gitignore file keeps build artifacts on your dev machine from getting into your Git repo.
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

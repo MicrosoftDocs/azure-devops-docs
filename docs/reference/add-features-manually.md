@@ -5,27 +5,27 @@ description: Manually update an existing project to access new features after up
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2018'
-ms.date: 12/15/2017  
+monikerRange: '<= azure-devops-2019'
+ms.date: 11/27/2018  
 ---
 
 # Add updates to projects manually  
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+**TFS 2017 | TFS 2015 | TFS 2013**
 
 > [!IMPORTANT]  
->This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). 
+> This article applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). 
 >
 >For an overview of customization options, see [Customize your work tracking experience](customize-work.md)
 
-You can update projects that were created in earlier versions of Team Foundation Server (TFS) to use new features added with the upgrade to TFS. You should update projects by using the [Configure Features wizard](configure-features-after-upgrade.md). However, if the wizard is unable to add a feature, you can add it manually.  
+You can update projects that were created in earlier versions of Team Foundation Server (TFS) to use new features added with the upgrade to TFS. These new features are delivered through new work item type definitions or updates to the process configuration. You should update projects by using the [Configure Features wizard](configure-features-after-upgrade.md). However, if the wizard is unable to add a feature, you can add it manually.  
 
 > [!NOTE]     
->If you're upgrading a project that was based on a Microsoft Solutions Framework (MSF) version 4.2 process template, follow the procedures provided in [Update a project based on a MSF v4.2 process template](xml/update-a-team-project-v4-dot-2-process-template.md). If you have several projects you need to update, see [apply updates programmatically](configure-features-after-upgrade.md#program-updates).
+> If you're upgrading a project that was based on a Microsoft Solutions Framework (MSF) version 4.2 process template, follow the procedures provided in [Update a project based on a MSF v4.2 process template](xml/update-a-team-project-v4-dot-2-process-template.md). If you have several projects you need to update, see [apply updates programmatically](configure-features-after-upgrade.md#program-updates).
 
 
 ## Update a project 
@@ -268,13 +268,16 @@ Bug Behavior
 
 The quickest way to make many of these updates is to copy definition files from the latest process template and import them to your project.   
 
-1.	Open the same version of Visual Studio or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Team Explorer 2015.  
+> [!IMPORTANT]  
+> If you are connecting to Azure DevOps Services, you can't export a process template. Instead, you customize your work tracking experience using the inheritance process. For details, see [Process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md).
 
-	You can always download a free version of Team Explorer from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
+1.	Open the same version of Visual Studio or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017, Visual Studio Community 2017, or Visual Studio Team Explorer 2017.  
 
-	If you aren't a member of the Project Collection Administrators group, <a href="https://msdn.microsoft.com/library/dd547204(v=vs.140).aspx">get added as one</a>. 
+	You can always download a free version of Visual Studio and Team Explorer from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).
 
-2.	Open the Process Template Manager from the **Team, Team Project Collection Settings** menu. 
+	If you aren't a member of the Project Collection Administrators group, [get added as one](../organizations/security/set-project-collection-level-permissions.md). 
+
+2.	Open the Process Template Manager from the **Team>Team Project Collection Settings** menu. 
 
 	 ![Open Process Template Manager](../boards/work-items/guidance/_img/open-process-template-manager.png)
 

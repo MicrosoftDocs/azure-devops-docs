@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Use the Test Plan Progress report to track the team's progress in testing the product 
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---

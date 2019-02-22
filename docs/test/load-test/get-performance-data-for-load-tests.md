@@ -1,15 +1,15 @@
 ---
-title: Get Application Insights performance data with load tests
+title: Get App Insights data with load tests
 description: Get app performance data from Application Insights using the features of Azure DevOps and TFS
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Get app performance data with your load tests

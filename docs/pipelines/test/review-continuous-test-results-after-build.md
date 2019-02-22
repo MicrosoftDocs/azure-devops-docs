@@ -1,18 +1,21 @@
 ---
-title: Review continuous test results after a build or release in Azure Pipelines and TFS 
+title: Review test results
 description: Review continuous test results with a build or release pipeline in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: EA5D7524-3683-4660-B3B6-3F29AD3587AC
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: jillfra
 ms.author: vinojos
 author: vinojos
-ms.date: 07/16/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Review test results
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 <a name="prerequisites"></a>  
 <a name="testreporting"></a>
@@ -21,8 +24,15 @@ Automated tests can be configured to run as part of a build or release for vario
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
+Read the [glossary](./test-glossary.md) to understand test report terminology.
 
-> Read the [glossary](./test-glossary.md) to understand test report terminology.
+::: moniker range="< azure-devops-2019"
+
+> [!NOTE]
+> Test report is available in TFS 2015 and above, however the new experience
+> described in this topic is currently available only in Azure Pipelines.
+
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -32,9 +42,48 @@ In addition, it provides many advanced reporting capabilities explored in the fo
 
 Published test results can be viewed in the **Tests** tab in a build or release summary.
 
-> [!NOTE]
-> Test report is available in TFS 2015 and above, however the new experience
-> described in this document is available only with Azure Pipelines at present.
+## Surface test results in the Tests tab 
+
+Tests results can be surfaced in the **Tests** tab using one of the following options:
+
+* **Automatically  inferred  test  results**.  By default, your pipeline can automatically infer the test output for a few popular test runners.
+  This is done by parsing the error logs generated during the build operation and then checking for signatures of test failures.
+  <a name="inferred_runners_list"></a>Currently, Azure DevOps supports the following languages and test runners for automatically inferring the test results: 
+
+  - Javascript - Mocha,  Jest  and  Jasmine
+  - Python- Unittest
+ 
+  **Note**: This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
+  [(more details)](#automatically_inferred_tests). Also see:  
+
+  - [Publishing fully-formed test reports for JavaScript test runners](../languages/javascript.md#run-unit-tests)
+  - [Publishing fully-formed test reports for Python test runners](../languages/python.md#test)
+
+* **Test execution tasks**. Built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
+  that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
+  [Maven](../tasks/build/maven.md), [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and
+  [Xcode](../tasks/build/xcode.md) that provide this capability as an option within the task.  
+
+* **Publish Test Results task**. Task that publishes test results to Azure Pipelines or TFS when tests are executed using
+  your choice of runner, and results are available in any of the [supported test result formats](../tasks/test/publish-test-results.md). 
+
+* **API(s)**. Test results published directly by using the [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0).
+
+## Surface test information beyond the Tests tab
+
+The **Tests** tab provides a detailed summary of the test execution.
+This is helpful in tracking the quality of the pipeline, as well as for troubleshooting failures.
+Azure DevOps also provides other ways to surface the test information: 
+
+* The [Dashboard](../../report/dashboards/dashboards.md) provides visibility of your team's progress.
+  Add one or more widgets that surface test related information:
+
+  - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget)
+  - [Test results trend](../../report/dashboards/widget-catalog.md#test-results-widget)
+  - [Deployment status](../../report/dashboards/widget-catalog.md#deployment-status-widget)
+  
+* [Test analytics](test-analytics.md) provides rich insights into test results measured over a period of time.
+  It can help identify problematic areas in your test by providing data such as the top failing tests, and more.
 
 <a name="viewbuildresults"></a>  
 
@@ -77,9 +126,12 @@ This page has the following sections
 ![View tests tab](_img/review-continuous-test-results-after-build/view-tests-tab-2.png)
 
 Select any test run or result to view the details pane that displays additional information required for troubleshooting
- such as the error message, stack trace, attachments, work items, historical trend, and more.
+such as the error message, stack trace, attachments, work items, historical trend, and more.
 
 ![View details tab](_img/review-continuous-test-results-after-build/view-tests-tab.png)
+
+> [!TIP]
+> If you use the Visual Studio Test task to run tests, diagnostic output logged from tests (using any of Console.WriteLine, Trace.WriteLine or TestContext.WriteLine methods), will appear as an attachment for a failed test.
 
 The following capabilities of the **Tests** tab help to improve productivity and troubleshooting experience.
 
@@ -193,34 +245,31 @@ The aborted tests and test runs can be viewed alongside the completed runs in th
 > [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0). 
 > It will be available for Single Agent jobs in a future release.
 
-## Surface test results in the Tests tab 
+<a name="automatically_inferred_tests"></a>
 
-Tests results can be surfaced in the **Tests** tab using one of the following options:
+### Automatically inferred test results
 
-* **Test execution tasks**: built-in test execution tasks such as [Visual Studio Test](../tasks/test/vstest.md)
-  that automatically publish test results to the pipeline, or others such as [Ant](../tasks/build/ant.md),
-  [Maven](../tasks/build/maven.md), [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and
-  [Xcode](../tasks/build/xcode.md) that provide this capability as an option within the task.  
+Azure DevOps can automatically infer the output of tests that are running in your pipelines for a few supported test frameworks.
+These automatically inferred test reports require no specific configuration of your pipelines, and are a zero-effort way to get
+started using Test Reporting. 
 
-* **Publish Test Results task**: publishes test results to Azure Pipelines or TFS when tests are executed using
-  your choice of runner, and results are available in any of the [supported test result formats](../tasks/test/publish-test-results.md). 
+![Example of an Automatically Inferred Test Report](_img/frictionless-testing.png)
 
-* **API(s)**: test results published directly using the [Test Management API(s)](https://docs.microsoft.com/rest/api/vsts/test/results?view=vsts-rest-5.0).
+See the [list of runners for which test results are automatically inferred](#inferred_runners_list).
 
-## Surface test information beyond the Tests tab
+As only limited test metadata is present in such inferred reports, they are limited in features and capabilities.
+The following features are not available for inferred test reports:
 
-The **Tests** tab provides a detailed summary of the test execution.
-This is helpful in tracking the quality of the pipeline, as well as troubleshooting failures.
-Azure DevOps also provides other ways to surface the test information: 
+* Group the test results by test file, owner, priority, and other fields
+* Search and filter the test results
+* Check details of passed tests
+* Preview any attachments generated during the tests within the web UI itself
+* Associate a test failure with a new bug, or see list of associated work items for this failure
+* See build-on-build [analytics for testing in Pipelines](test-analytics.md)
 
-* The [Dashboard](../../report/dashboards/dashboards.md) provides visibility into your team's is progress.
-  Add one or more widgets that surface test related information:
-
-  - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget)
-  - [Test results trend](../../report/dashboards/widget-catalog.md#test-results-widget)
-  - [Deployment status](../../report/dashboards/widget-catalog.md#deployment-status-widget)
-  
-* [Test analytics](test-analytics.md) provides rich insights into test results measured over a period of time.
-  It can help identify problematic areas in your test by providing data such as the top failing tests, and more.
+> [!NOTE]
+> Some runners such as Mocha have multiple built-in console reporters such as [dot-matrix](https://mochajs.org/#dot-matrix) and [progress-bar](https://mochajs.org/#progress). 
+> If you have configured a non-default console output for your test runner, or you are using a custom reporter,
+> Azure DevOps will not be able to infer the test results. It can only infer the results from the [default](https://mochajs.org/#spec) reporter. 
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

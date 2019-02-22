@@ -1,16 +1,17 @@
 ---
-title: Backlog best practices 
-titleSuffix: Azure Boards and TFS
-description: Best practices to manage your product backlog in Azure Boards and Team Foundation 
+title: What are best practices for working with product and portfolio backlogs 
+titleSuffix: Azure Boards
+description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
+ms.custom: "boards-backlogs, seodec18"     
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/11/2017
+ms.date: 11/19/2018
 ---
 
 # Refine your backlog  
@@ -21,8 +22,7 @@ A great backlog conveys customer needs and value. Over the course of the project
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
 implement them and deliver the results to your customers. 
 
-To get started, see [Create your backlog](create-your-backlog.md).  
-
+To get started, see [Create your backlog](create-your-backlog.md). 
 
 <a name="product-owner-role"></a>
 ## Role of the product owner  
@@ -39,7 +39,6 @@ If they will also be responsible for configuring team settings, [add them as a t
 
 A product owner can reduce the need for detailed specifications by being more responsive to the team's questions about implementation details and clearly articulating acceptance criteria within each requirement.
 
-
  
 <a name="acceptance"></a>
 ## Acceptance criteria
@@ -49,7 +48,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 
 > **Tips from the trenches: Start to love and embrace acceptance criteria.**  
 > 
-> Ask 10 mature agile teams ["How do you know when you're "done done"?](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
+> Ask 10 mature agile teams "How do you know when you're "done done"?
 > and you'll get the same answer from each one. . . get serious about writing acceptance criteria.  
 > 
 > Acceptance criteria are the handshake between the product owner and the team on what "done done" really means.  
@@ -62,7 +61,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > Inevitably we all start with our own ideas about what "done" means for a given story.  
 >  
 > However, as we begin to discuss the acceptance criteria presented by the product owner what 
-> ensues is a series of "[ah-ha moments](https://www.bing.com/search?q=Ah-ha%20moments)." 
+> ensues is a series of "ah-ha moments." 
 > A shared understanding of the story begins to emerge. A comment one team member might elicit 
 > the following response from someone else. . .  "Ah-ha, great point. . . I never thought of that."  
 > 
@@ -79,8 +78,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > 
 > Start learning to love acceptance criteria and see if your team isn't more successful delivering software.  
 > 
-> &mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services, first published in the 
-> blog post: [Agile Tip #5 &mdash;Learn to Love Acceptance Criteria](https://blogs.msdn.microsoft.com/aaronbjork/2010/05/04/agile-tip-5-learn-to-love-acceptance-criteria/)
+> &mdash;Aaron Bjork, Principal Product Manager, Visual Studio Cloud Services
 
 
 

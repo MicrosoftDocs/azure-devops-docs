@@ -1,17 +1,18 @@
 ---
-title: Release (Scrum) | TFS
+title: Release (Scrum) SharePoint dashboard 
+titleSuffix: TFS
 description: Shows how much work remains in the release and how quickly your team is working through the product backlog.
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: f280fa1f-a147-4b85-b233-5982a1eac4ac
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016
 ---
 
-# Release (Scrum)
+# Release (Scrum) dashboard
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 The Release dashboard shows how much work remains in the release and how quickly your team is working through the product backlog. It displays the Release Burndown report, along with additional charts and quick access links.  

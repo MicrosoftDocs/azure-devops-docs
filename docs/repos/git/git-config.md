@@ -5,7 +5,7 @@ description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -152,7 +152,7 @@ git config [--local|--global|--system] pull.rebase [true|false|interactive|prese
 Cryptographic network provider is a Git configuration setting at global scope that configures which SSL backend to use at runtime, and corresponds to the `git config` [http.sslBackend](https://github.com/git-for-windows/repos/git/commit/d81216ee4dd46ae59a388044d1266d6fa9030c19) setting. The values are:
 
 - OpenSSL: Use [OpenSSL](https://www.openssl.org/) for TLS and SSL protocols.
-- Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
+- Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
 Windows solution, accessing the Windows Credential Store, thereby
 allowing for enterprise-wide management of certificates.
 - Unset (default): If this setting is unset, OpenSSL is the default.

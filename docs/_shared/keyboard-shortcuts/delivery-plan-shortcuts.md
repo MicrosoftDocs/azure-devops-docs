@@ -5,10 +5,12 @@ ms.topic: include
 
 <a id="plan-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [interacting with a delivery plan](/azure/devops/boards/plans/review-team-plans). To view the valid shortcuts, enter **Shift+?** when viewing a plan from the **Work>Plans** page.
+You can use the following keyboard shortcuts when [interacting with a delivery plan](/azure/devops/boards/plans/review-team-plans). To view the valid shortcuts, enter **Shift+?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
 
+::: moniker range="tfs-2017"
 > [!NOTE]
-> The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2017.2 and later versions. Type **?** to access  Global and service-specific shortcuts.
+> The following shortcuts are available from the web portal for TFS 2017.2 and later versions. Type **?** to access  Global and service-specific shortcuts.
+::: moniker-end
 
 <img src="/azure/devops/_shared/_img/keyboard-shortcuts/delivery-plans.png" alt="Delivery plan keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
 

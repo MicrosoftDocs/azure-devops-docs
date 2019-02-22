@@ -1,6 +1,6 @@
 ```YAML
 # Index Sources & Publish Symbols
-# Index your source code and publish symbols to a file share or Azure Pipelines symbol server.
+# Index your source code and publish symbols to a file share or Azure Artifacts symbol server.
 - task: PublishSymbols@2
   inputs:
     #symbolsFolder: '$(Build.SourcesDirectory)' # Optional

@@ -4,7 +4,7 @@ description: Use release views to communicate the quality of a package to your c
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
@@ -64,7 +64,7 @@ You can also promote packages from a build or release using the [Promote package
 
 ### What about SemVer and `-prerelease`?
 
-Today, the **NuGet Publisher** build task uses the `-prerelease` part of a SemVer version number to insert build metadata and provide a monotonically increasing package version number to ensure that package [immutability constraints](immutability.md) are met. In an upcoming sprint, we expect to make improvements to this task to give you better control over the `-prerelease` field and better integration with release views.
+Today, the **NuGet Publisher** build task uses the `-prerelease` part of a SemVer version number to insert build metadata and provide a monotonically increasing package version number to ensure that package [immutability constraints](../artifacts-key-concepts.md#immutability) are met. In an upcoming sprint, we expect to make improvements to this task to give you better control over the `-prerelease` field and better integration with release views.
 
 ## Managing views
 

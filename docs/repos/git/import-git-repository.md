@@ -5,11 +5,11 @@ description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure Dev
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 09/10/2018
+ms.date: 11/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 # Import a Git repo
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
 
-This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Azure DevOps project.
+This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -41,7 +41,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
 * To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
@@ -49,7 +49,27 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Import into a new repo
 
-From the repo drop-down, select **Import repository**. 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Select **Repos**, **Files**.
+
+  ![View your branches](_img/repos-navigation/repos-files.png)
+
+0. From the repo drop-down, select **Import repository**.
+
+  ![Manage repositories](_img/repo-mgmt/import-repository.png)
+
+0. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
+
+  If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
+
+  ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+
+# [Previous navigation](#tab/previous-nav)
+
+From the repo drop-down, select **Import repository**.
 
 ![Import Repository Option](_img/Import-Repo/ImportRepository.png)
 
@@ -58,6 +78,10 @@ If the source repo is publicly available, just [enter the clone URL](clone.md#cl
 If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials.
 
 ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+
+---
+
+
 
 ## Import into an existing empty repo
 
@@ -82,12 +106,12 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     cd old-contoso-repo.git
     ```
 
-0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+0. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
 
 0. Run the following command to copy the source repo to the target repo.
 
     ```
-    git push --mirror https://contoso-ltd.visualstudio.com/MyFirstProject/_git/new-contoso-repo
+    git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ``` 
 
 0. Delete the temporary folder by running the following commands.

@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -24,7 +24,7 @@ In this exercise, you are going to create a Docker Registry in Azure as well as 
 
 ## Prerequisites
 
-This exercise assumes you have completed the exercises to [create a Team Project](../settingAzure DevOps Servicesproject/index.md) and have [set up the Docker private Azure DevOps Services agent](../dockerbuildagent/index.md). You should also have set up Maven package management and have a MyShuttleCalc package in the feed. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed the exercises to [create a Team Project](../settingvstsproject/index.md) and have [set up the Docker private Azure DevOps Services agent](../dockerbuildagent/index.md). You should also have set up Maven package management and have a MyShuttleCalc package in the feed. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 > **Note**: You don't have to use the Azure container registry - you can use whatever registry you choose. You can also create an equivalent build using Jenkins.
 
@@ -50,17 +50,17 @@ This exercise assumes you have completed the exercises to [create a Team Project
 
 In this task you will update the pom.xml file for the MyShuttle2 application so that it can consume the MyShuttleCalc package from the Maven package feed.
 
-1. In Chrome navigate to your Azure DevOps organization and team project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
+1. In Chrome, navigate to your organization and project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
 
     ![Get the package repository settings from Azure DevOps Services](../_img/builddocker/maven-packagefeed-settings.png)
 
-1. Open the MyShuttle2 project.
+2. Open the MyShuttle2 project.
 
-1. Click on the pom.xml file.
+3. Click on the pom.xml file.
 
-1. In the `<repositories>` element there is a reference to a Maven repo. Paste in the repository settings you got from Azure DevOps Services.
+4. In the `<repositories>` element there is a reference to a Maven repo. Paste in the repository settings you got from Azure DevOps Services.
 
-1. Find the `<dependency>` with `<groupId>com.microsoft.exampledep</groupId>` and update the version number to match the version number of the MyShuttleCalc package in your package feed. This may look something like:
+5. Find the `<dependency>` with `<groupId>com.microsoft.exampledep</groupId>` and update the version number to match the version number of the MyShuttleCalc package in your package feed. This may look something like:
 
     ```xml
     ...
@@ -72,7 +72,7 @@ In this task you will update the pom.xml file for the MyShuttle2 application so 
     ...
     ```
 
-1. Copy the maven settings file from the MyShuttleCalc project (you updated this file in another lab to include the authentication settings for the Maven package feed). Run the following command in a terminal:
+6. Copy the maven settings file from the MyShuttleCalc project (you updated this file in another lab to include the authentication settings for the Maven package feed). Run the following command in a terminal:
 
     ```sh
     cp ~/MyShuttleCalc/maven/settings.xml ~/MyShuttle2/maven/
@@ -138,7 +138,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     | Server URL | `http://10.0.0.4:8080`  | Selects JaCoCo as the coverage tool |
     | Source Files Directory | `src/main` | Sets the source files directory for JaCoCo |
 
-    ![Maven task settings](../_img/builddocker/Azure DevOps Services-maven.png)
+    ![Maven task settings](../_img/builddocker/vsts-maven.png)
 
 1. Click on the "Copy Files" task. Set the Contents property to:
 
@@ -148,7 +148,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     *.release.*
     ```
 
-    ![Copy Files task settings](../_img/builddocker/Azure DevOps Services-copyfiles.png)
+    ![Copy Files task settings](../_img/builddocker/vsts-copyfiles.png)
 
     The Publish Build Artifacts task publishes everything in the artifact staging directory. The Copy Files task copies the following artifacts into this directory so that they are available for Release (which you will create in a later lab):
 

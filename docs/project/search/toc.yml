@@ -32,3 +32,7 @@
     href: https://social.msdn.microsoft.com/Search?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5
   - name: Search your Wiki
     href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
+  - name: REST API
+    href: https://docs.microsoft.com/rest/api/vsts/search/?view=vsts-rest-4.1
+    
+  

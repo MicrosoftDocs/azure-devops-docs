@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 04/12/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -22,7 +22,7 @@ Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can fin
 
 ## Prerequisites
 
- - You already have an Azure DevOps organization. If you do not already have an Azure DevOps organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
+ - You already have an organization in Azure DevOps. If you do not already have an organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
  - You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
  - You have already [cloned an Azure DevOps Services Git repository](/azure/devops/repos/git/clone?tabs=command-line) to your computer locally.
 
@@ -37,7 +37,7 @@ Restart Visual Studio Code.
 ## Acquire a personal access token
 
 If you are connecting to Azure DevOps Services or TFS, you may need a *personal access token* (PAT) to securely access your account. 
-If you do not have a personal access token yet, you will need to [create one on your Azure DevOps organization](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). 
+If you do not have a personal access token yet, you will need to [create one on your organization](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). 
 
 ## Connect to your Azure DevOps Services Git repo
 
@@ -89,8 +89,8 @@ In addition to the status bar integrations, the extension also provides several 
 - `team view blame`- If a file in the repository is opened in the editor, it will open your browser to the blame page for that file in the current branch in the server repository.
 - `team view build summary` - Same behavior as clicking on the Build Status status bar item.
 - `team view history` - If a file in the repository is opened in the editor, it will open your browser to the history page for that file in the current branch in the server repository. Otherwise, the history of the current branch in the server repository will be opened.
-- `team signin` - Use this command to log in to an Azure DevOps organization or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
-- `team signout` - Use this command to log out from an Azure DevOps organization or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
+- `team signin` - Use this command to log in to an organization or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
+- `team signout` - Use this command to log out from an organization or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
 - `team view pull requests` - Same behavior as clicking on the Pull Requests status bar item.
 - `team view website` - Same behavior as clicking on the team project status bar item.
 - `team view work items` - Prompts you to choose a work item that is assigned to you, sorted by ChangedDate descending. Choosing a work item will open it in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
@@ -102,7 +102,7 @@ When you run the `team signin` command, the credentials that you provide will be
  - On Linux, your credentials will be stored in a file on your local file system in a subdirectory of your home folder. That file is created only with RW rights for the user running Visual Studio Code. It is not encrypted on disk.
 
 ## Next steps
-Check out the [README.md in the GitHub repository](https://github.com/Microsoft/Azure DevOps Services-vscode/blob/master/README.md) for more details on the extension.
+Check out the [README.md in the GitHub repository](https://github.com/Microsoft/vsts-vscode/blob/master/README.md) for more details on the extension.
 
 ## Frequently asked questions (FAQ)
 
@@ -113,4 +113,4 @@ Check out the [README.md in the GitHub repository](https://github.com/Microsoft/
 **A:** Yes! With version 1.103.0 the extension supports Team Foundation Server 2015 Update 2 and later.
 
 **Q: Where can I find the source code for the extension?**
-**A:** The code is open source on GitHub at [Microsoft/Azure DevOps Services-vscode](https://github.com/Microsoft/Azure DevOps Services-vscode). We welcome feedback and contributions!
+**A:** The code is open source on GitHub at [Microsoft/vsts-vscode](https://github.com/Microsoft/vsts-vscode). We welcome feedback and contributions!

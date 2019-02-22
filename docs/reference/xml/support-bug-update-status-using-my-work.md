@@ -5,8 +5,9 @@ description: Update the ProcessConfiguration bug category states to support code
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/20/2017
 ---
 
@@ -17,7 +18,7 @@ ms.date: 01/20/2017
 
 With My Work in Team Explorer you can conduct and respond to code reviews. If you have customized the workflow states for work item types (WITs) that you use to track bugs, you may need to update the process configuration state-to-metastate mappings. **My Work** uses these mappings to update the bug state as developers update the bug status using My Work. **My Work** allows developers to manage their work in progress, suspend and resume work, and request code reviews. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
   
- You specify all the WITs that you use to track bugs in the definition for the Bug Category, and you define state-to-metatstates mappings in the ProcessConfiguration. Changes that you make to the definition files apply for all teams that work in the project that you customize.  
+ You specify all the WITs that you use to track bugs in the definition for the Bug Category, and you define state-to-metastates mappings in the ProcessConfiguration. Changes that you make to the definition files apply for all teams that work in the project that you customize.  
   
  **Requirements**  
   

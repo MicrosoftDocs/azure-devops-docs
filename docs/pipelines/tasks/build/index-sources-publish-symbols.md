@@ -1,11 +1,12 @@
 ---
 title: Index Sources & Publish Symbols build and release task
+ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 11/14/2017
@@ -13,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: Index Sources & Publish Symbols
+# Index Sources & Publish Symbols task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
@@ -21,11 +22,11 @@ monikerRange: '>= tfs-2015'
 > A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
 > **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
-![](_img/index-sources-publish-symbols.png) Index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+Use this task in a build or release pipeline to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
-Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/azure/devops/pipelines/symbols/index).
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/azure/devops/pipelines/artifacts/symbols).
 
 > [!NOTE]
 > This build task works only:
@@ -101,6 +102,12 @@ None
             </p>
         </td>
     </tr>
+        <tr>
+        <td>Compress symbols</td>
+        <td>
+            <p>Only available when **File share** is selected as the **Symbol server type**. Compresses your `pdbs` to save space. 
+        </td>
+    </tr>
     <tr>
         <th style="text-align: center" colspan="2">Advanced</th>
     </tr>
@@ -143,60 +150,10 @@ None
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Use indexed symbols to debug your app
-
-You can use your indexed symbols to debug an app on a different machine from where the sources were built.
-
-### Enable your dev machine
-
-In Visual Studio you may need to enable the following two options:
-
-* Debug -> Options -> Debugging -> General
-  * -> Enable source server support
-  * -> Allow source server for partial trust assemblies (Managed only)
-
-### Overriding at debug time
-
-The mapping information injected into the PDB files contains variables that can be overridden at debugging time. Overriding the variables may be required if the collection URL has changed. When overriding the mapping information, the goals are to construct:
-
-* A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
-
-* A location (SRCSRVTRG) where the debugger can find the retrieved source file.
-
- The mapping information may look something like the following:
-
-```
-SRCSRV: variables ------------------------------------------
-TFS_EXTRACT_TARGET=%targ%\%var5%\%fnvar%(%var6%)%fnbksl%(%var7%)
-TFS_EXTRACT_CMD=tf.exe git view /collection:%fnvar%(%var2%) /teamproject:"%fnvar%(%var3%)" /repository:"%fnvar%(%var4%)" /commitId:%fnvar%(%var5%) /path:"%var7%" /output:%SRCSRVTRG% %fnvar%(%var8%)
-TFS_COLLECTION=http://SERVER:8080/tfs/DefaultCollection
-TFS_TEAM_PROJECT=93fc2e4d-0f0f-4e40-9825-01326191395d
-TFS_REPO=647ed0e6-43d2-4e3d-b8bf-2885476e9c44
-TFS_COMMIT=3a9910862e22f442cd56ff280b43dd544d1ee8c9
-TFS_SHORT_COMMIT=3a991086
-TFS_APPLY_FILTERS=/applyfilters
-SRCSRVVERCTRL=git
-SRCSRVERRDESC=access
-SRCSRVERRVAR=var2
-SRCSRVTRG=%TFS_EXTRACT_TARGET%
-SRCSRVCMD=%TFS_EXTRACT_CMD%
-SRCSRV: source files ---------------------------------------
-C:\BuildAgent\_work\1\src\MyApp\Program.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/Program.cs*TFS_APPLY_FILTERS
-C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/SomeHelper.cs*TFS_APPLY_FILTERS
-```
-
- The above example contains two sections: 1) the variables section and 2) the source files section. The information in the variables section is what can be overridden. The variables can leverage other variables, and can leverage information from the source files section.
-
- To override one or more of the variables while debugging with Visual Studio, create an ini file ```%LOCALAPPDATA%\SourceServer\srcsrv.ini```. Set the content of the INI file to override the variables. For example:
-
-```
-[variables]
-TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
-```
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -232,6 +189,6 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 ### How long are Symbols retained?
 
-When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinately.
+When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinitely.
 
 <!-- ENDSECTION -->

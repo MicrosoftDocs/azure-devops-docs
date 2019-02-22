@@ -2,15 +2,16 @@
 title: View and update work items via a mobile browser 
 titleSuffix: Azure DevOps Services & TFS  
 description: View and update work items from your mobile client when using Azure DevOps Services or Team Foundation Server 
+ms.custom: Navigation
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.prod: devops
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2018'
-ms.date: 07/21/2018
+ms.date: 11/19/2018
 ---
 
 #  View and update work items via the mobile browser   
@@ -21,17 +22,17 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
  
 <img src="_img/mobile-work-intro-1.png" alt="Mobile work item form" style="border: 1px solid #C3C3C3;" />  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!NOTE]  
-> The mobile browser supports work tracking in Azure DevOps Services and TFS 2018 and later versions. To sign up for free, go to [Azure DevOps Services](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
+> The mobile browser supports Azure DevOps work tracking. To sign up for free, go to [Azure DevOps Services](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="tfs-2018 || azure-devops-2019"
 
 > [!NOTE]  
-> The mobile browser is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
+> The mobile browser is available for Azure DevOps Server 2019 and TFS 2018. For downloads, see [Downloads](https://visualstudio.microsoft.com/downloads/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
 
 ::: moniker-end
 

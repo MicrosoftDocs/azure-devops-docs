@@ -5,7 +5,7 @@ description: Use the TFVC Add command to add files to version control in TFS
 ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference

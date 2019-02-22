@@ -5,10 +5,11 @@ ms.assetid: 3D57E047-4922-4B4B-8736-A68B2895E846
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 08/11/2016
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 #Manage the data warehouse and analysis services cube 

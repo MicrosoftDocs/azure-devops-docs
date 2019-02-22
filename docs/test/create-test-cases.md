@@ -1,14 +1,14 @@
 ---
-title: Create manual tests - Azure DevOps and Team Foundation Server TestTools
+title: Create manual tests
 description: Test tools - Create manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,9 +18,11 @@ monikerRange: '>= tfs-2015'
 
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
-meet your users' needs. Organize your test cases by adding test 
-cases to test suites. Then choose which testers you want to run 
+meet your users' needs. Organize your test cases by adding them
+to test plans and test suites. Then choose which testers you want to run 
 the tests.
+
+[What are test plans, test suites, and test cases?](create-a-test-plan.md#testplans)
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
 
@@ -33,26 +35,28 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 1. If you haven't already, 
    [create a test plan and requirement-based test suites](create-a-test-plan.md).
 
-1. Select a requirement-based test suite, and then create a 
-   test case for that suite.
+1. Select a requirement-based test suite. In the right-hand pane, choose **+** (New)
+   and then choose **New test case**.
 
-   ![Select the test suite for a backlog item, then choose New | New Test Case](_img/create-test-cases/CreateTest_1.png)
+   ![Selecting the test suite for a backlog item and adding a new test case](_img/create-test-cases/CreateTest_1.png)
 
-   The test suite that you selected was created from a backlog item. 
+   The [test suite](create-a-test-plan.md) was created from a backlog item. 
    When you add a test case to this kind of suite, the test case is 
-   linked automatically to the backlog item.
+   automatically linked to the backlog item.
 
-1. Add test steps with actions and expected results so that 
-   any team member can run the test. You can add attachments to 
-   a step if you want.
+1. Choose the **Click or type here to add a step** link and add test steps
+   with a description of the action required to carry out the test and the
+   expected results so that any team member can run the test.
+   You can add attachments to a step if you want. Repeat until you have added
+   all the steps for the test. Now you've created a test case that you can run.
 
-   ![Create steps for a new manual test case](_img/create-test-cases/CreateTest_3.png)
+   ![Creating the steps for a new manual test case](_img/create-test-cases/CreateTest_3.png)
 
-   Now you've created a test case that you can run.
-
->Test iterations are design to support data-driven scenarios, not workflow-driven scenarios.
-From a best practice perspective, if you have two test scenarios where the workflows are
-different, consider creating separate test cases. 
+   [How can I find an existing test case within a test plan?](create-a-test-plan.md#findplan)
+   
+> Test iterations are designed to support data-driven scenarios, not workflow-driven scenarios.
+  From a best practice perspective, if you have two test scenarios where the workflows are
+  different, consider creating separate test cases. Also see the [FAQs for manual testing](reference-qa.md#testcases).
 
 <a name="assigncase"></a>
 ## Assign testers
@@ -62,19 +66,22 @@ different, consider creating separate test cases.
    open the shortcut menu (choose the "..." ellipses or right-click) 
    and select the tester you want to run the tests.
 
-   ![Reassign tests to a different tester](_img/create-test-cases/AssignTester.png)
+   ![Reassigning tests to a different tester](_img/create-test-cases/AssignTester.png)
 
    Or, you can assign all the test cases in a test suite to multiple testers. 
-   This is useful for acceptance testing.
+   This is useful for acceptance testing. Open the shortcut menu for the test plan
+   and choose **Assign testers to run all tests**. 
    
-   ![On the test suite shortcut menu, choose Assign testers to run all tests](_img/create-test-cases/AssignMultipleTesters.png)
+   ![Assigning testers to run all tests](_img/create-test-cases/AssignMultipleTesters.png)
 
-1. After you select the testers, email them so they
-   know the tests are ready for them to run. (You just need 
-   [Basic access](https://visualstudio.microsoft.com/products/visual-studio-online-Basic-vs)
-   to run tests from Azure DevOps.)
+1. Add or remove testers from the list. After you select the testers, tick the **Send email**
+   checkbox and edit the message as required so they know that tests are ready for them to run.
 
-   ![Assign testers to run all tests and send emails to them](_img/create-test-cases/AssignMultipleTestersEmail.png)
+   ![Send emails to testers](_img/create-test-cases/AssignMultipleTestersEmail.png)
+
+   The email contains a link that testers can open to see the list of assigned tests.
+   Testers need just [Basic access](https://visualstudio.microsoft.com/products/visual-studio-online-Basic-vs)
+   to run tests from Azure Test Plans.
 
 ## See also
 

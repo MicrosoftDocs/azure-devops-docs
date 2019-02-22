@@ -5,8 +5,9 @@ description: Configure the two server products before you synchronize data betwe
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: dd8f80c2-3faa-45a2-9941-1382a8b5c910
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -60,7 +61,7 @@ TfsAdmin ProjectServer /UnmapWorkItemTypes /collection:tpcUrl /teamProject:TeamP
 |-------------------|---------------------|  
 |**/collection**:`tpcUrl`|Specifies the uniform resource locator (URL) of a project collection. You specify the URL in the following format:<br /><br /> **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you specify the URL in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
 |**/teamProject:** *TeamProjectName*|Specifies the name of a project that is defined in the project collection.|  
-|**/workItemTypes**:`ListofWorkItemTypes`|Specifies, in a comma-delimited list, the reference names of one or more types of work items. You should specify only those types of work items whose data you want to track in Project Professional. For example, you can specify the following types of work items to support an Agile process as *"User Story,Task?* or *"User Story,Task*. Do not include a space after the comma.|  
+|**/workItemTypes**:`ListOfWorkItemTypes`|Specifies, in a comma-delimited list, the reference names of one or more types of work items. You should specify only those types of work items whose data you want to track in Project Professional. For example, you can specify the following types of work items to support an Agile process as *"User Story,Task?* or *"User Story,Task*. Do not include a space after the comma.|  
 |**/skipUIChanges**|Specifies that the **Project Server** tab in the work item form should not be changed for the types that you specify. You should include this flag if you have customized the **Project Server** tab for the affected types or the `MapWorkItemTypes` command cannot complete. You can manually update a type definition. For more information, see [Added elements to WIT definitions](xml-elements-added-to-wit-definition.md).|  
 |**/force**|Removes all links that bind work items of the types that you specify to tasks in Project. If you use this option, you can remove types of work items from participating in data synchronization, even if one or more work items of that type that are currently being synchronized.|  
 |**/?** or **help**|Displays information about the command.|  

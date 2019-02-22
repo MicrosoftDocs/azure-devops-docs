@@ -20,7 +20,7 @@ It’s a big day for Microsoft platforms with the launch of Windows 8.1, Windows
 
 In the next sprint deployment which is upcoming shortly, we will be updating the operating system on the build machine image to Windows Server 2012 R2. This will enable folks to build Windows 8.1 apps using the cloud build service.
 
-As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
+As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

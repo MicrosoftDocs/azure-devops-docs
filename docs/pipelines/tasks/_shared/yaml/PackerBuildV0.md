@@ -18,6 +18,6 @@
     deployScriptPath: 
     #deployScriptArguments: # Optional
     #additionalBuilderParameters: '{}' # Optional
-    #skipTempFileCleanupDuringVMDeprovision: # Optional
+    #skipTempFileCleanupDuringVMDeprovision: true # Optional
     #imageUri: # Optional
 ```

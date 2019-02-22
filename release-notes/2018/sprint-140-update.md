@@ -55,7 +55,7 @@ Read about the new features below and head over to Azure DevOps Services to try 
 
 ### Control specific build dependencies using container jobs
 
-By default, jobs run on the host machine where the agent is installed. Container jobs, using the lightweight abstraction over the host operating system that containers provide, let you isolate your tools and dependencies inside a container instead. The agent will launch an instance of your specified container, then run steps inside it. You can select the exact versions of operating systems, tools, and dependencies that your build requires. See the [Container jobs](/azure/devops/pipelines/process/container-phases?view=vsts&tabs=yaml) documentation for more information.
+By default, jobs run on the host machine where the agent is installed. Container jobs, using the lightweight abstraction over the host operating system that containers provide, let you isolate your tools and dependencies inside a container instead. The agent will launch an instance of your specified container, then run steps inside it. You can select the exact versions of operating systems, tools, and dependencies that your build requires. See the [Container jobs](/azure/devops/pipelines/process/container-phases?view=azure-devops&tabs=yaml) documentation for more information.
 
 ### Enable code coverage in .NET Core task
 

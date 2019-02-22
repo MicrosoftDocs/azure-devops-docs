@@ -1,13 +1,13 @@
 ---
 title: Bugs, issues, & risks field reference (CMMI)
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Tracks the information with regards to bugs, issues, and risks - Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
 ms.topic: reference
 ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
@@ -21,13 +21,14 @@ The following fields track information about bugs, issues, and risks. These work
 ##  <a name="bugs"></a> Bug tracking fields  
  These fields are neither reported nor indexed.  
   
-|**Field name**|**Description**|**Data type**|  
-|--------------------|---------------------|-------------------|  
-|**Symptom**|The unexpected behavior.<br/>Reference name=Microsoft.VSTS.CMMI.Symptom|HTML|  
-|**Proposed Fix**|The proposed change to fix the reported problem.<br/>Reference name=Microsoft.VSTS.CMMI.ProposedFix|HTML|  
-|**Found in Environment**|The software setup and configuration where the bug was found.<br/>Reference name=Microsoft.VSTS.CMMI.FoundInEnvironment|String|  
-|**Root Cause**|The cause of the error. You can specify one of the following values:<br /><br /> -   **Coding Error**<br />-   **Design Error**<br />-   **Specification Error**<br />-   **Communication Error**<br />-   **Unknown**<br /><br /> To change the menu selection, see [Customize a pick list](../../../../reference/add-modify-field.md).<br/>Reference name=Microsoft.VSTS.CMMI.RootCause|String|  
-|**How Found**|How the bug was found. For example, a bug might have been found during a customer review or through ad hoc testing.<br/>Reference name=Microsoft.VSTS.CMMI.HowFound|String|  
+> [!div class="mx-tdCol2BreakAll"]
+> |**Field name**|**Description**|**Data type**|  
+> |--------------------|--------------|-------------------|  
+> |**Symptom**|The unexpected behavior.<br/>Reference name=Microsoft.VSTS.CMMI.Symptom|HTML|  
+> |**Proposed Fix**|The proposed change to fix the reported problem.<br/>Reference name=Microsoft.VSTS.CMMI.ProposedFix|HTML|  
+> |**Found in Environment**|The software setup and configuration where the bug was found.<br/>Reference name=Microsoft.VSTS.CMMI.FoundInEnvironment|String|  
+> |**Root Cause**|The cause of the error. You can specify one of the following values:<br /><br /-   **Coding Error**<br/>-   **Design Error**<br/>-   **Specification Error**<br/>-   **Communication Error**<br/>-   **Unknown**<br/><br/>To change the menu selection, see [Customize a picklist](../../../../reference/add-modify-field.md).<br/>Reference name=Microsoft.VSTS.CMMI.RootCause|String|  
+> |**How Found**|How the bug was found. For example, a bug might have been found during a customer review or through ad hoc testing.<br/>Reference name=Microsoft.VSTS.CMMI.HowFound|String|  
   
 ##  <a name="issues"></a> Issue tracking fields  
  These fields are neither reported nor indexed.  

@@ -1,20 +1,21 @@
 ---
 title: Xcode build and release task
+ms.custom: seodec18
 description: Xcode build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: dastahel
 ms.date: 04/18/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
-# Build: Xcode
+# Xcode task
 
 **Azure Pipelines | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
 
-![icon](_img/xcode.png) Build, test, or archive an Xcode workspace on macOS. Optionally package an app.
+Use this task in a build or release pipeline to build, test, or archive an Xcode workspace on macOS, and optionally package an app.
 
 ## Demands
 
@@ -38,7 +39,7 @@ xcode
 <tr>
 <td>Actions</td>
 <td>
-Enter a space-delimited list of actions. Valid options are `build`, `clean`, `test`, `analyze`, and `archive`. For example, `clean build` will run a clean build. See the [xcodebuild man page](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html).
+Enter a space-delimited list of actions. Valid options are `build`, `clean`, `test`, `analyze`, and `archive`. For example, `clean build` will run a clean build. See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 </td>
 </tr>
 <tr>
@@ -68,13 +69,13 @@ Specify an SDK to use when building the Xcode project or workspace. From the mac
 <tr>
 <td>Xcode version</td>
 <td>
-Specify the target version of Xcode. Select `Default` to use the default version of Xcode on the agent machine. Selecting a version number (e.g. `Xcode 9`) relies on environment variables being set on the agent machine for the version's location (e.g. `XCODE_9_DEVELOPER_DIR=/Applications/Xcode_9.0.0.app/Contents/Developer`). Select `Specify path` to provide a specific path to the Xcode developer directory.
+Specify the target version of Xcode. Select `Default` to use the default version of Xcode on the agent machine. Selecting a version number (e.g. `Xcode 10`) relies on environment variables being set on the agent machine for the version's location (e.g. `XCODE_10_DEVELOPER_DIR=/Applications/Xcode_10.0.0.app/Contents/Developer`). Select `Specify path` to provide a specific path to the Xcode developer directory.
 </td>
 </tr>
 <tr>
 <td>Xcode developer path</td>
 <td>
-(Optional) Enter a path to a specific Xcode developer directory (e.g. `/Applications/Xcode_9.0.0.app/Contents/Developer`). This is useful when multiple versions of Xcode are installed on the agent machine.
+(Optional) Enter a path to a specific Xcode developer directory (e.g. `/Applications/Xcode_10.0.0.app/Contents/Developer`). This is useful when multiple versions of Xcode are installed on the agent machine.
 </td>
 </tr>
 
@@ -176,7 +177,7 @@ Choose the destination type to be used for UI testing. Devices must be connected
 <tr>
 <td>Simulators</td>
 <td>
-Enter an Xcode simulator name to be used for UI testing. For example, enter `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified in the format 'OS=<i>versionNumber</i>', such as `iPhone X,OS=11.1`. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be [found here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#installed-sdks).
+Enter an Xcode simulator name to be used for UI testing. For example, enter `iPhone X` (iOS and watchOS) or `Apple TV 4K` (tvOS). A target OS version is optional and can be specified in the format 'OS=<i>versionNumber</i>', such as `iPhone X,OS=11.1`. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be [found here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#installed-sdks).
 </td>
 </tr>
 <tr>
@@ -192,7 +193,7 @@ Enter the name of the device to be used for UI testing, such as `Raisa's iPad`. 
 <tr>
 <td>Arguments</td>
 <td>
-(Optional) Enter additional command line arguments with which to build. This is useful for specifying `-target` or `-project` arguments instead of specifying a workspace/project and scheme. See the [xcodebuild man page](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html).
+(Optional) Enter additional command line arguments with which to build. This is useful for specifying `-target` or `-project` arguments instead of specifying a workspace/project and scheme. See [Apple: Building from the command line with Xcode FAQ](https://developer.apple.com/library/archive/technotes/tn2339/_index.html).
 </td>
 </tr>
 <tr>
@@ -230,7 +231,7 @@ If xcpretty is enabled above, specify whether to publish JUnit test results to A
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

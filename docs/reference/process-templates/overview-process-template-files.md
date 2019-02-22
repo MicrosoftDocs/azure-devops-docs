@@ -1,12 +1,13 @@
 ---
 title: Process template and plug-in files 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Describes each process template and plug-in file and what is supported when you create a project via Visual Studio or the web portal  
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 10/19/2017
 ---
@@ -36,7 +37,7 @@ Depending on whether you work from the Azure DevOps Services or TFS, you can cre
 When you create a project from the web portal, the following plug-in files are ignored. 
 
 - **Build**: Default security permissions are defined for build functions.
-- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
+- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
 - **Reports**: See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md) to add SQL Reports after you create the project. 
 - **Version Control**: Default security permissions and TFVC check-in policies are defined for git and TFVC functions.
 - **Windows SharePoint Services**: TFS 2018 and later versions no longer support native integration with SharePoint products. See [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. 
@@ -186,7 +187,7 @@ TFS 2018 and later versions no longer support native integration with SharePoint
 <p>This plug-in also uploads the information contained in the following files and folders:</p> 
 <ul>
 <li>**Process Guidance**: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance. </li> 
-<li>**Samples and Templates**: Uploads one or more Excel workbooks (.xslx files) to support bug triage and track issues. </li> 
+<li>**Samples and Templates**: Uploads one or more Excel workbooks (.xlsx files) to support bug triage and track issues. </li> 
 <li>**Shared Documents**: Uploads one or more sample document and template files as a starting point for creating work products.</li>  
 </ul>
 

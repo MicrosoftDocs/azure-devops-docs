@@ -4,45 +4,23 @@
   href: overview.md
 - name: Quickstarts
   items:
-  - name: Integrate with Slack
+  - name: Create a service hook with Slack
     href: services/slack.md
-  - name: Integrate with Jenkins
+  - name: Create a service hook with Jenkins
     href: services/jenkins.md
-  - name: Integrate with Trello
+  - name: Create a service hook with Trello
     href: services/trello.md
+  - name: Create a service hook with Microsoft Teams
+    href: services/teams.md
 - name: How-to Guides
   items:
-  - name: Integrate with AppVeyor
-    href: services/appveyor.md
-  - name: Integrate with Azure Service Bus
-    href: services/azure-service-bus.md
-  - name: Integrate with Azure Storage
-    href: services/azure-storage.md
-  - name: Integrate with Bamboo
-    href: services/bamboo.md
-  - name: Integrate with Campfire
-    href: services/campfire.md
-  - name: Integrate with Flowdock
-    href: services/flowdock.md
-  - name: Integrate with HipChat
-    href: services/hipchat.md
-  - name: Integrate with Hubot
-    href: services/hubot.md
-  - name: Integrate with MyGet
-    href: services/myget.md
-  - name: Integrate with Microsoft Teams
-    href: services/teams.md
-  - name: Integrate with UserVoice
-    href: services/uservoice.md
-  - name: Integrate with WebHooks
+  - name: Create a service hook with WebHooks
     href: services/webhooks.md
-  - name: Integrate with Zapier
-    href: services/zapier.md
-  - name: Integrate with Zendesk
-    href: services/zendesk.md
+  - name: Integrate with workplace messaging apps
+    href: services/workplace-messaging-apps.md
   - name: Authorize other services
     href: authorize.md
-- name: Troubleshoot
+- name: Reference
   items:
   - name: Troubleshoot and FAQs
     href: troubleshoot.md

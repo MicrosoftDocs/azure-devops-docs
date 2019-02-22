@@ -26,13 +26,13 @@ Additionally, you can now create release definitions that release to an environm
 
 ##Epic and Feature board drill-down
 
-Last summer we released a [feature](../2015/sep-18-team-services.md) that lets you drill down to tasks directly from a Kanban board of stories. We’ve extended that feature to boards at any level, giving you the ability to drill down on your Epic and Feature boards. The checklist format lets you easily mark work as completed, and provides a handy bird’s eye view of the completed versus outstanding work.
+Last summer we released a [feature](https://visualstudio.microsoft.com/articles/news/2015/sep-18-team-services) that lets you drill down to tasks directly from a Kanban board of stories. We’ve extended that feature to boards at any level, giving you the ability to drill down on your Epic and Feature boards. The checklist format lets you easily mark work as completed, and provides a handy bird’s eye view of the completed versus outstanding work.
 
 ![Board drill-down](_img/3_3_02.png)
 
 ##Exploratory testing directly from a work item
 
-You can now launch an exploratory testing session for a specific work item, directly from within the product. We’ve added entry points on all cards, grids, and in the Test hub. This lets you associate the selected work item to your testing session and view the acceptance criteria and description from within the extension. It also creates end-to-end traceability between any bugs or tasks you file and the selected work item. The [Exploratory Testing](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) extension can be found in the Visual Studio Marketplace.
+You can now launch an exploratory testing session for a specific work item, directly from within the product. We’ve added entry points on all cards, grids, and in the Test hub. This lets you associate the selected work item to your testing session and view the acceptance criteria and description from within the extension. It also creates end-to-end traceability between any bugs or tasks you file and the selected work item. The [Exploratory Testing](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) extension can be found in the Visual Studio Marketplace.
 
 ![Exploratory testing directly from a work item](_img/3_3_03.png)
 

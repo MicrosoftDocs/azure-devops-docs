@@ -1,20 +1,21 @@
 ---
-title: Stage templates in Release Management
-description: DevOps CI CD - Understand stage templates in Release Management for Azure Pipelines and Team Foundation Server (TFS)
+title: Use stage templates in deployments
+ms.custom: seodec18
+description: DevOps CI CD - Understand stage templates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Stage templates in Release Management
+# Stage templates in Azure Pipelines
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -33,10 +34,7 @@ stage to a pipeline. You can also create your own custom
 stage templates from a stage you have populated and
 configured.
 
->Templates do not have any additional security capability.
-There is no way to restrict the use of a template to specific
-users. All templates, pre-defined and custom, are available for
-use by all users who have permission to create release pipelines.
+> Templates do not have any additional security capability. There is no way to restrict the use of a template to specific users. All templates, pre-defined and custom, are available for use by all users who have permission to create release pipelines.
 
 When a stage is created from a template, the tasks in the template are copied over to the stage.
 Any further updates to the template have no impact on existing stages.
@@ -52,10 +50,6 @@ Custom templates that you create are scoped to the project that you created them
 Templates cannot be exported or shared with another project, collection, server, or organization.
 You can, however, export a release pipeline and import it into another project, collection, server, or subscription.
 Then you can re-create the template for use in that location.
-
-### Can I publish or consume new templates through extensions in VS Marketplace?
-
-Yes. See [Adding release management stage templates to your VSS extension](https://blogs.msdn.microsoft.com/divman/2017/05/30/adding-release-management-environment-templates-to-your-vss-extension/) for more details.
 
 ### How do I delete a custom stage template?
 

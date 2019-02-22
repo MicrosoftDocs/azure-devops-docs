@@ -1,0 +1,10 @@
+- name: Azure DevOps
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
+  items: 
+  - name: Azure Boards
+    tocHref: /azure/devops/boards/
+    topicHref: /azure/devops/boards/index
+    items: 
+    - name: GitHub with Azure Boards
+      topicHref: /azure/devops/boards/github/index

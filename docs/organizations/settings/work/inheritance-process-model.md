@@ -2,28 +2,29 @@
 title: About process customization and inherited processes 
 titleSuffix: Azure DevOps Services
 description: Describes work tracking customizations supported by the inherited process model for Azure DevOps Services 
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
-monikerRange: 'vsts'
-ms.date: 05/31/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/25/2018
 ---
 
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 <a id=" inherited "> </a> 
 
 To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the organization. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
 
 > [!IMPORTANT]  
-> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
+> To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services and Azure DevOps Server 2019 only. 
 
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
@@ -37,13 +38,13 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 You'll see two types of processes:
 
 - ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process will automatically update your inherited process. 
+- ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically updates your inherited process. 
 
 In addition, all processes are shared. That is, one or more projects can use a single process. Instead of customizing a single project, you customize a process. Changes made to the process automatically update all projects that use that process. 
 
 Once you've created an inherited process, you can customize it, create projects based on it, make a copy of it, and change existing projects to use it. 
 
-For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyAgile* process (which inherits from the *Agile* system process). Any changes you make to the *MyAgile* process will also update the *Test Agile* project. You can't customize the *Scrum Project*, on the other hand, until you change it to a process which inherits from Scrum.
+For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyAgile* process (which inherits from the *Agile* system process). Any changes you make to the *MyAgile* process also update the *Test Agile* project. You can't customize the *Scrum Project*, on the other hand, until you change it to a process which inherits from Scrum.
 
 > [!div class="mx-imgBorder"]  
 > ![Admin context, Organization settings, Overview, Project list and the process they use](_img/process/mprocess-overview-project-list.png)
@@ -68,7 +69,7 @@ You can add fields and modify the workflow and work item form for all inherited 
 <a id="field-customizations" />
 ## Field customizations 
 
-Fields defined in the system process appear with an ![](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
+Fields defined in the system process appear with an ![ ](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
 
 Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process.   
 
@@ -157,7 +158,7 @@ For example, several rules exist to copy the current user identity under the fol
 - When the workflow state changes to Closed or Done, copy the user identity to the Closed By field. 
  
 > [!IMPORTANT]  
-> Predefined system rules will take precedent over any custom rule that you define which would overwrite it.  
+> Predefined system rules take precedent over any custom rule that you define which would overwrite it.  
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
 
@@ -286,7 +287,7 @@ The web form layout is organized into three columns as shown in the image below.
 
 If you only add groups and fields to the first two columns, then the layout reflects a two column layout. Likewise, if you only add groups and fields to the first column, then the layout reflects a one column layout. 
 
-The web form resizes depending on the width available and the number of columns in the layout.  At maximum width, in most web browsers, each column within a page will display within its own column. As the display width decreases, each column resizes proportionally as follows: 
+The web form resizes depending on the width available and the number of columns in the layout.  At maximum width, in most web browsers, each column within a page displays within its own column. As the display width decreases, each column resizes proportionally as follows: 
 
 - For three columns: 50%, 25%, and 25%  
 - For two columns: 66% and 33%  

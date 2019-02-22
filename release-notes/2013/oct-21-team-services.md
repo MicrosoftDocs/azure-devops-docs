@@ -28,7 +28,7 @@ Finally, we did a bit of work to ensure that the Rooms hub now remembers the las
 
 We also updated the build image operating system to Windows Server 2012 R2. This enables you to use the hosted build controller for Windows 8.1 apps.
 
-That’s it for sprint 55. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for sprint 55. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

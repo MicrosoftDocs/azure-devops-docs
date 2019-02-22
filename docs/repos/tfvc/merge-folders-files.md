@@ -5,7 +5,7 @@ description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -127,7 +127,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
     >**Tip:**
     >  If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
 
-    -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items **page appears. Select the version of the items that you want to use.
+    -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
 
         <table>
                 <tbody>

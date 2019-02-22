@@ -1,13 +1,13 @@
 ---
 title: Apply pattern matching to a string field 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the MATCH element to force values in a field of String type to follow specified pattern - Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 1134a153-0133-4404-8690-d25e934a45f7
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: reference
 ms.date: 02/10/2017
 ---

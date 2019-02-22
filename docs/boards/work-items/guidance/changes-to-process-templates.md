@@ -1,26 +1,28 @@
 ---
 title: Changes made to process templates
-titleSuffix: Azure Boards and TFS  
+titleSuffix: Azure Boards  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing projects after a TFS upgrade  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: reference 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
-ms.date: 09/29/2017
----
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
+--- 
 
 # Changes made to process templates  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE]    
->This topic describes changes made to the core system processes&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both Azure Boards and TFS. 
+>this article describes changes made to the core system processes&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both Azure Boards and TFS. 
 >
 > Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on an on-premises TFS may require running the Configure Feature Wizard after updating to a later version of TFS.       
 
-To support the addition of new features, changes are introduced periodically to the core system processes or process template. A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;secifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
+To support the addition of new features, changes are introduced periodically to the core system processes or process template. A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 If you've customized your project and haven't upgraded TFS for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you update TFS](../../../reference/new-features-added.md) for a description of each feature added with the updates. 
 
@@ -180,7 +182,7 @@ If you've customized your project and haven't upgraded TFS for a while, you may 
 <li>Categories added: Feature Category </li>
 <li>Process configuration changes: Replaced AgileConfiguration and CommonConfiguration with a single file, [ProcessConfiguration](../../../reference/xml/process-configuration-xml-element.md), supports these additional features: portfolio backlogs, color assignment to WITs, tags added to the default columns on all backlog pages. </li>
 <li>Build changes: Removed the build templates from the build plug-in. You now access build templates through the user interface <a href="https://msdn.microsoft.com/library/dd647547(v=vs.120).aspx">Use the Default Template for your build process</a>. </li>
-<li>Reporting Services updates: Backlog Overview (Scrum), <a href="https://msdn.microsoft.com/library/dd380648.aspx">Stories Overview</a> and <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile), and <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> and <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI). These updates reflect changes required with the introduction of the Feature portfolio backlog work item type as described in this blog post: <a href="http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/22/update-your-overview-and-progress-reports-to-support-the-portfolio-backlogs.aspx">Update your Overview and Progress reports to support the Portfolio backlogs</a>.   
+<li>Reporting Services updates: Backlog Overview (Scrum), <a href="https://msdn.microsoft.com/library/dd380648.aspx">Stories Overview</a> and <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile), and <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> and <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI). These updates reflect changes required with the introduction of the Feature portfolio backlog work item type as described in this blog post: <a href="http://blogs.msdn.com/devops/2013/10/22/update-your-overview-and-progress-reports-to-support-the-portfolio-backlogs.aspx">Update your Overview and Progress reports to support the Portfolio backlogs</a>.   
 <p>To update your project with the latest reports, see [Upload reports to a project](../../../Report/admin/upload-reports.md).</p>
 </li>
 </ul>
@@ -192,8 +194,8 @@ If you've customized your project and haven't upgraded TFS for a while, you may 
 </td>
 <td>
 <p>Added the Portfolio Backlog feature and introduced changes to support Planning Tools. </p>
-<h4>Changes to WIT definitions to support status updates via Kanban and task boards</h4>
-<p>Each of the default process templates that TFS provides was updated to support additional regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.</p> 
+<h4>Changes to WIT definitions to support status updates via Kanban and taskboards</h4>
+<p>Each of the default process templates that TFS provides was updated to support additional regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the taskboard to a resolved or closed state, you can drag it back to an earlier workflow state.</p> 
 <p>The following work item types now support any-to-any workflow transitions:</p>
 
 <ul>

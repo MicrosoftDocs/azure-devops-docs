@@ -22,7 +22,7 @@ Let’s start the news with our new name! Visual Studio Online has been renamed 
 
 Today we are introducing a new extensions model for VSTS and a marketplace to find and install them. Extensions enable first-class, integrated experiences that extend and enhance the Team Services web experience, either by adding new capabilities or integrating with existing services. Extensions can contribute—hubs, custom controls, context menus, dashboard widgets, build and release tasks, and more.
 
-Users can discover extensions via the new Visual Studio Marketplace. The Marketplace provides a single place for developers to find extensions for Visual Studio, Visual Studio Team Services, and Visual Studio Code. The marketplace will support both community and commercial extensions. Start browsing the Marketplace today: [https://marketplace.visualstudio.com](https://marketplace.visualstudio.com/).
+Users can discover extensions via the new Visual Studio Marketplace. The Marketplace provides a single place for developers to find extensions for Visual Studio, Visual Studio Team Services, and Visual Studio Code. The marketplace will support both community and commercial extensions. Start browsing the Marketplace today: [https://marketplace.visualstudio.com](https://marketplace.visualstudio.com/azuredevops).
 
 ![Visual Studio Marketplace](_img/11_18_01.png)
 

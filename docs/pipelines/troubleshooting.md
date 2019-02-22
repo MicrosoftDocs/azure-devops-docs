@@ -1,14 +1,14 @@
 ---
 title: Troubleshoot builds and releases
-titleSuffix: Azure Pipelines & TFS
 description: Learn how to troubleshoot builds and releases in Azure Pipelines and Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chrispat
 ms.reviewer: chrispat
-ms.date: 08/04/2016
+ms.custom: seodec18
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -142,7 +142,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 export VSTS_HTTP_PROXY=http://127.0.0.1:8888
  ```
 
-0. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/nixsvc.md)
+0. Run the agent interactively.  If it's running as a service, you can set in the .env file.  See [nix service](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/nixsvc.md)
 
 0. Restart the agent.
 
@@ -194,6 +194,21 @@ Analyzing a dump of the process can help to identify what a deadlocked process i
 ### WiX project
 Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
 
+## Line endings for multiple platforms
+
+When you run pipelines on multiple platforms, you can sometimes encounter problems with different line endings.
+Historically, Linux and macOS used linefeed (LF) characters while Windows used a carriage return plus a linefeed (CRLF).
+Git tries to compensate for the difference by automatically making lines end in LF in the repo but CRLF in the working directory on Windows.
+
+Most Windows tools are fine with LF-only endings, and this automatic behavior can cause more problems than it solves.
+If you encounter issues based on line endings, we recommend you configure Git to prefer LF everywhere.
+To do this, add a [`.gitattributes`](https://www.git-scm.com/docs/gitattributes) file to the root of your repository.
+In that file, add the following line:
+
+```
+* text eol=lf
+```
+
 ## Agent connection issues
 
 ### Config fails while testing agent connection (on-premises TFS only)
@@ -243,11 +258,14 @@ This may be characterized by a message in the log "All files up to date" from th
 
 ### Get sources through Team Foundation Proxy
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.
-```
+
 Windows:
+```cmd
     set TFSPROXY=http://tfvcproxy:8081
     setx TFSPROXY=http://tfvcproxy:8081 // If the agent service is running as NETWORKSERVICE or any service account you can't easily set user level environment variable
+```
 macOS/Linux:
+```bash
     export TFSPROXY=http://tfvcproxy:8081
 ```
 
@@ -259,4 +277,4 @@ Report any problems on [Developer Community](https://developercommunity.visualst
 
 We welcome your suggestions:
 
-* Propose and vote on ideas on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).
+* Send feedback and report problems through the [Developer Community](https://developercommunity.visualstudio.com/).

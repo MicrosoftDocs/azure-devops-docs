@@ -1,19 +1,21 @@
 ---
 title: Run the agent behind a web proxy
+ms.custom: seodec18
 description: Learn how you can run a v2 private build and release agent behind a web proxy for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/16/2017
+ms.date: 10/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Run a self-hosted agent behind a web proxy
 
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -70,7 +72,7 @@ The agent will talk to Azure DevOps/TFS service through the web proxy specified 
 Since the code for the `Get Source` task in builds and `Download Artifact` task in releases are also baked into the agent, those tasks will follow the agent proxy configuration from the `.proxy` file.  
 
 The agent exposes proxy configuration via environment variables for every task execution.
-Task authors need to use `[vsts-task-lib](https://github.com/Microsoft/vsts-task-lib)` methods to retrieve proxy configuration and [handle the proxy](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/proxy.md) within their task.
+Task authors need to use [vsts-task-lib](https://github.com/Microsoft/azure-pipelines-task-lib) methods to retrieve proxy configuration and [handle the proxy](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/node/docs/proxy.md) within their task.
 
 ::: moniker-end
 
@@ -84,7 +86,7 @@ In the agent root directory, create a .proxy file with your proxy server url.
 
 # [Windows](#tab/windows)
 
-```powershell
+```ps
 echo http://name-of-your-proxy-server:8888 | Out-File .proxy
 ```  
 
@@ -109,7 +111,7 @@ If your proxy requires authentication, the simplest way to handle it is to grant
 
 # [Windows](#tab/windows)
 
-```powershell
+```ps
 $env:VSTS_HTTP_PROXY_USERNAME = "proxyuser"
 $env:VSTS_HTTP_PROXY_PASSWORD = "proxypassword"
 ```  

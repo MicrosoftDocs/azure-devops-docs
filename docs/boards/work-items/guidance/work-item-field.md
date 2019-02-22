@@ -1,28 +1,30 @@
 ---
 title: Index of default and system work item fields 
-titleSuffix: Azure Boards and TFS
-description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: reference  
-monikerRange: '>= tfs-2013' 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
-ms.date: 05/26/2017
----
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
+--- 
 
 # Work item field index  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
+Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/track-issues-tasks.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="<= azure-devops-2019"  
 To support additional tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
 ::: moniker-end  
 
@@ -107,7 +109,7 @@ Values in parenthesis indicate the following:
 <li>[Due Date](../../queries/query-by-date-or-current-iteration.md)</li>
 <li>[Effort](../../queries/query-numeric.md) </li>
 <li>[Escalate](../../queries/planning-ranking-priorities.md) (CMMI)</li>
-<li>[External Link Count](../../queries/linking-attachments.md) </li>
+<li>[External Link Count](../../queries/linking-attachments.md#external-link-count) </li>
 <li>[Finish Date](../../queries/query-by-date-or-current-iteration.md)</li>
 <li>[Found In Build](../../queries/build-test-integration.md)  (TCM)</li>
 <li>[Found In Environment](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
@@ -116,14 +118,14 @@ Values in parenthesis indicate the following:
 <ul>
 <li>[History](../../queries/history-and-auditing.md) (System)</li>
 <li>[How Found](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)</li>
-<li>[Hyperlink Count](../../queries/linking-attachments.md)</li>
+<li>[Hyperlink Count](../../queries/linking-attachments.md#hyper-link-count)</li>
 </ul>
 <h3>I</h3>
 <ul>
 <li>[ID](../../queries/titles-ids-descriptions.md) (System)</li>
 <li>[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on Architecture](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
-</li>[Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
+<li>[Impact on Development](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on Technical Publications](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on Test](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
 <li>[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)</li>
@@ -162,6 +164,7 @@ Values in parenthesis indicate the following:
 <li>[Reason](../../queries/query-by-workflow-changes.md) (System)</li>
 <li>[Related Link Count](../../queries/linking-attachments.md) (System)</li>
 <li>[Remaining Work](../../queries/query-numeric.md) </li>
+<li>[Remote Link Count](../../queries/linking-attachments.md#remote-link-count) (System)</li>
 <li>[Repro Steps](../../queries/titles-ids-descriptions.md)</li>
 <li>[Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)</li>
 <li>[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
@@ -211,7 +214,9 @@ Values in parenthesis indicate the following:
 <ul>
 <li>[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)</li>
 <li>[Value Area](../../queries/planning-ranking-priorities.md)</li>
+<li>[Watermark](../../queries/history-and-auditing.md) (System)</li>
 <li>[Work Item Type](../../queries/titles-ids-descriptions.md) (System) </li> 
+
 </ul>
 </td>
 </tr>
@@ -256,56 +261,12 @@ The following articles describe fields that are used in common by several WITs, 
 - [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) 
 
 
-<a id="field-reference">  </a>  
-## What is a field? How are field names used?  
-
-A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  
-
-- Field names must be unique within the account/project collection  
-- Field names must be 128 or fewer Unicode characters  
-- Field names can't contain any leading or trailing spaces, nor two or more consecutive spaces  
-- Field names must contain at least one alphabetic character  
-- Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
-
-Because custom fields are defined for the account collection, you can't add a custom field to a process with the same field name that you add to another inherited process.  
-
-When adding custom fields, note the following limits:  
-*   A maximum of 256 fields can be defined for each WIT  
-*   A maximum of 512 fields can be defined per process   
-
-
-::: moniker range="vsts"  
-## Add and modify fields    
-To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../../organizations/settings/work/customize-process.md).  
-
-Also, you can [view the list of fields defined for an organization](../../../organizations/settings/work/customize-process.md) and the WITs which reference them. 
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-## Modify the field name and other field attributes  
-You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../../reference/witadmin/manage-work-item-fields.md).  
-::: moniker-end  
-
-<a id="wi-explorer">  </a>
-## Hidden field attributes and the Work Item Field Explorer 
-
-There are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
-
-![Work item field explorer](../../../reference/_img/IC633020.png)
-
-For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/b/visualstudioalm/archive/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
-
-To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio):
- - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../../reference/process/new-work-item-experience.md). 
- - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
-
-
-
 ## Related articles
 
+- [About work item fields](../work-item-fields.md)
 - [Create managed queries](../../queries/example-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
 - [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
 
-You can list the attributes of fields using the [**witadmin listfields** command](../../../reference/witadmin/manage-work-item-fields.md). 
+

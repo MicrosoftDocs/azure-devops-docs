@@ -70,12 +70,12 @@ A new preview task, __Install SSH Key (Preview)__, installs an SSH key prior to
 Over the next few weeks we'll be retiring the old build definition editor. We’ve designed the new editor to provide a more intuitive experience, fix some pain points, and add new capabilities. We hope that you’ll find it easier to use templates, add tasks, and change settings. And now you can use process parameters to make it easier to specify the most important bits of data without having to go deep into your tasks. Learn more in this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/10/announcing-general-availability-of-the-new-build-editor/).
 
 ## Heads up: The hosted XAML controller is going away
-On July 1st, 2017, we will stop supporting XAML Build controllers in our Team Services hosted build pool. You will still be able to do XAML-based builds, but you will need to set up your own (private) controller/agent. You can do this either in a cloud VM (such as Azure) or on your own on-premises hardware. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see the topic [I’m looking for the hosted XAML build controller. Where did it go?](/vsts/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go).
+On July 1st, 2017, we will stop supporting XAML Build controllers in our Team Services hosted build pool. You will still be able to do XAML-based builds, but you will need to set up your own (private) controller/agent. You can do this either in a cloud VM (such as Azure) or on your own on-premises hardware. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see the topic [I’m looking for the hosted XAML build controller. Where did it go?](https://visualstudio.microsoft.com/docs/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go).
 
 Over time, you should be planning to migrate to our newer pipeline/task-based build version, where you will have access to the full range of capabilities, including hosted builds.
 
 ## Tasks fail if Visual Studio 2017 is specified but not present on agent
-The [Visual Studio Build](/vsts/build/steps/build/visual-studio-build) and [MSBuild](/vsts/build/steps/build/msbuild) tasks enable you to select a specific version of Visual Studio. Until now, if the **Visual Studio 2017** version was not available, these tasks would automatically pick the next available version.
+The [Visual Studio Build](https://visualstudio.microsoft.com/docs/build/steps/build/visual-studio-build) and [MSBuild](https://visualstudio.microsoft.com/docs/build/steps/build/msbuild) tasks enable you to select a specific version of Visual Studio. Until now, if the **Visual Studio 2017** version was not available, these tasks would automatically pick the next available version.
 
 We’re changing this behavior. Now the build will fail if you select **Visual Studio 2017** but it is not present on the agent.
 
@@ -203,7 +203,7 @@ The tree also shows comments in a more compact way. Files with comments show a c
 ![new tree view](_img/05_10_16.png)
 
 ##Maven for Package Management (Public Preview)
-Java developers share components by packaging up their code in Maven artifacts (the Java equivalent of a NuGet package). Team Services customers needing a place to host Maven artifacts used to have to use third-party services, like Nexus or Artifactory, to meet their needs.  We’re proud to announce that [Team Services Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) now supports hosting Maven artifacts! Check out our [getting started guide](/vsts/package/preview/maven-docs).
+Java developers share components by packaging up their code in Maven artifacts (the Java equivalent of a NuGet package). Team Services customers needing a place to host Maven artifacts used to have to use third-party services, like Nexus or Artifactory, to meet their needs.  We’re proud to announce that [Team Services Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) now supports hosting Maven artifacts! Check out our [getting started guide](https://visualstudio.microsoft.com/docs/package/preview/maven-docs).
 
 ##NuGet Restore, Command, and Tool Installer build tasks
 We’ve made major updates to the __NuGet Installer__ (now called __NuGet Restore__) task, and added two new NuGet tasks: __NuGet Command__ and __NuGet Tool Installer__. Most notably, the __NuGet Command__ and __NuGet Restore__ tasks now use nuget.exe 4.0.0 by default.

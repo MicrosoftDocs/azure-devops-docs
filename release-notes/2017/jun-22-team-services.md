@@ -26,7 +26,7 @@ If you change the description or the picklist values of a shared field, it will 
 ##Work item type icons
 We have made a global commitment to make our products fully accessible to our customers. As part of that commitment, we have been working to find and address many accessibility issues&mdash;anywhere from keyboard patterns to visual design and layout. 
 
-Work item tracking has relied solely on color in many experiences to convey work item type. However, this is problematic for our color-blind or low-vision users who may not be able to distinguish between items due to similarities in color. To increase the scanability of work item types for all our customers, we have introduced icons to our visual language of work item types. You can [customize your work item types](/vsts/work/process/customize-process-wit#change-description-icon-or-color-of-a-custom-wit) by choosing from our icon library.
+Work item tracking has relied solely on color in many experiences to convey work item type. However, this is problematic for our color-blind or low-vision users who may not be able to distinguish between items due to similarities in color. To increase the scanability of work item types for all our customers, we have introduced icons to our visual language of work item types. You can [customize your work item types](https://visualstudio.microsoft.com/docs/work/process/customize-process-wit#change-description-icon-or-color-of-a-custom-wit) by choosing from our icon library.
 
 Color bars conveying type on the backlog and queries grids have been replaced with colored icons.
 
@@ -46,7 +46,7 @@ Change the setting through your Visual Studio profile.
 ![profile setting](_img/06_22_35.png)
 
 ##Extensions block work item save
-Work item form custom controls, groups, and pages can now [block work item save](/vsts/integrate/extensions/reference/client/api/tfs/workitemtracking/services/workitemformservice#seterror) to validate data and ensure the user fills out any required information before saving the work item form. 
+Work item form custom controls, groups, and pages can now [block work item save](https://visualstudio.microsoft.com/docs/integrate/extensions/reference/client/api/tfs/workitemtracking/services/workitemformservice#seterror) to validate data and ensure the user fills out any required information before saving the work item form. 
 
 ##Collapsible pull request comments
 Reviewing code is a critical part of the pull request experience, so we’ve added new features to make it easier for reviewers to focus on the code. Code reviewers can easily hide comments to get them out of the way when reviewing new code for the first time.  
@@ -142,7 +142,7 @@ In this release you’ll see the following changes:
 
 ![default build queue on tasks tab](_img/06_22_default-build-queue-on-tasks-tab-required.png)
 
-* The [Visual Studio Build](/vsts/build/steps/build/visual-studio-build) and [MSBuild](/vsts/build/steps/build/msbuild) tasks now default to the **Latest** setting for the version argument.
+* The [Visual Studio Build](https://visualstudio.microsoft.com/docs/build/steps/build/visual-studio-build) and [MSBuild](https://visualstudio.microsoft.com/docs/build/steps/build/msbuild) tasks now default to the **Latest** setting for the version argument.
 
 Coming soon you’ll see more changes. For example, the following hosted pools (and corresponding queues) will be:
 
@@ -159,9 +159,9 @@ Coming soon you’ll see more changes. For example, the following hosted pools (
 > [!IMPORTANT]
 > We’re going to shut down the deprecated hosted XAML build controller on July 1st, 2017. After this shutdown, you’ll no longer be able to use hosted agents to run your XAML builds.
 
-We recommend that you migrate to our new task-based build system, which includes access to hosted agents to run your builds. See our recently published guide to [migrate from XAML builds to new builds](/vsts/pipelines/build/migrate-from-xaml-builds).
+We recommend that you migrate to our new task-based build system, which includes access to hosted agents to run your builds. See our recently published guide to [migrate from XAML builds to new builds](https://visualstudio.microsoft.com/docs/pipelines/build/migrate-from-xaml-builds).
 
-However, if you still need to run XAML builds during the migration, then you should set up a private XAML build controller now. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see [I’m looking for the hosted XAML build controller. Where did it go?](/vsts/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go)
+However, if you still need to run XAML builds during the migration, then you should set up a private XAML build controller now. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see [I’m looking for the hosted XAML build controller. Where did it go?](https://visualstudio.microsoft.com/docs/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go)
 
 ## Build definition menu on build summary page
 
@@ -192,7 +192,7 @@ To enable this feature in the __Variable Groups__ page, use the toggle button __
 
 ![add secrets](_img/06_22_29.png)
 
-After you have created a variable group mapped to Azure Key Vault, you can link it to your release definitions, as documented in [Variable groups](/vsts/build/concepts/library/variable-groups).
+After you have created a variable group mapped to Azure Key Vault, you can link it to your release definitions, as documented in [Variable groups](https://visualstudio.microsoft.com/docs/build/concepts/library/variable-groups).
 
 Note that it’s just the secret names that are mapped to the variable group variables, not the values. The actual values (the latest version) of each secret will be fetched and consumed during the release.  
  
@@ -224,7 +224,7 @@ As part of this work, we’ve also released a new __NuGet Tool Installer__ task 
 ![NuGet](_img/06_22_07.png)
 
 ###npm build task updates
-Whether you’re building your npm project on Linux, macOS, or Windows, the new __NPM__ build task will accommodate. We have also reorganized the task to make both __npm install__ and __npm publish__ easier. For __install__ and __publish__, we have simplified credential acquisition so that credentials for registries listed in your project’s .npmrc file can be safely stored in a [service endpoint](/vsts/build/concepts/library/service-endpoints). Alternatively, if you’re using a VSTS feed, we have a picker that will let you select a feed, and then we will generate a .npmrc with requisite credentials that are used by the build agent.
+Whether you’re building your npm project on Linux, macOS, or Windows, the new __NPM__ build task will accommodate. We have also reorganized the task to make both __npm install__ and __npm publish__ easier. For __install__ and __publish__, we have simplified credential acquisition so that credentials for registries listed in your project’s .npmrc file can be safely stored in a [service endpoint](https://visualstudio.microsoft.com/docs/build/concepts/library/service-endpoints). Alternatively, if you’re using a VSTS feed, we have a picker that will let you select a feed, and then we will generate a .npmrc with requisite credentials that are used by the build agent.
 
 ###Working outside your account/collection
 It’s now easier to work with feeds outside your VSTS account, whether they’re __Package Management__ feeds in another VSTS account or TFS server or non-Package Management feeds like NuGet.org/npmjs.com, Artifactory, or MyGet. Dedicated __Service Endpoint__ types for NuGet, npm, and Maven make it easy to enter the correct credentials and enable the build tasks to work seamlessly across package download and package push operations.
@@ -248,7 +248,7 @@ Unlike __NuGet__ and __npm__, the __Maven__ and __dotnet__ build tasks did not p
 Now any Project Collect Administrator, not just the account owner, can make the first Marketplace purchase. This makes it easier for accounts with multiple Project Collection Administrators to pay for VSTS.
 
 ##Deep link to remove your spending limit easily during a Marketplace purchase
-If you want to use the Azure subscription that came with your Visual Studio or MSDN subscription to pay for Marketplace purchases, you need to remove your spending limit and add a credit card. With this release, we’ve added a deep link to make it easy to remove the spending limit for your subscription. We also check to make sure you remove the limit indefinitely, so your Marketplace purchases won’t be interrupted. For more information, see [How to set up billing Q&A](/vsts/setup-admin/team-services/set-up-billing-for-your-account-vs#q-which-azure-subscriptions-can-i-link-to-my-team-services-account-and-use-for-billing).
+If you want to use the Azure subscription that came with your Visual Studio or MSDN subscription to pay for Marketplace purchases, you need to remove your spending limit and add a credit card. With this release, we’ve added a deep link to make it easy to remove the spending limit for your subscription. We also check to make sure you remove the limit indefinitely, so your Marketplace purchases won’t be interrupted. For more information, see [How to set up billing Q&A](https://visualstudio.microsoft.com/docs/setup-admin/team-services/set-up-billing-for-your-account-vs#q-which-azure-subscriptions-can-i-link-to-my-team-services-account-and-use-for-billing).
 
 ![deep link to remove spending limit](_img/06_22_19.png)
 

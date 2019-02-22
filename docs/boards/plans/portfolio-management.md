@@ -1,14 +1,15 @@
 ---
 title: Portfolio management
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Work with a hierarchical team structure to manage product and portfolio backlogs and  to track progress across teams
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
-ms.date: 09/13/2018
+monikerRange: '>= tfs-2013'
+ms.date: 02/14/2019
 ---
 
 # Portfolio management 
@@ -17,14 +18,14 @@ ms.date: 09/13/2018
 
 Portfolio backlogs provide product owners insight into the work performed by several agile feature teams. Product owners can define the high-level goals as Epics or Features, and feature teams can break these down into the user stories they'll prioritize and develop.  
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * How to support a management view of multiple team progress
 > * How feature teams can focus on their team backlog progress  
 > * How to assign work from a common backlog
 > * How to set up a hierarchical set of teams and backlogs
-  
+
 
 By setting up a team structure like the one shown, you provide each feature team with their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can  create their vision, roadmap, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies.  
 
@@ -40,35 +41,27 @@ By setting up a team structure like the one shown, you provide each feature team
 
 ## Management view of team progress 
 
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
-
 In this example, we show the **Epics** portfolio backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.  
 
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
-::: moniker-end  
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 In this example, we show the **Epics** portfolio backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.   
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
 The Fabrikam Account Management portfolio owner has several campaigns to initiate and deliver in the coming year. He creates an epic for each campaign and then breaks each epic down into various features that contribute to each campaign. 
 
 With the hierarchical structure implemented, portfolio owners working in Account Management can view the epic, feature, and product backlogs for their area. 
@@ -77,58 +70,55 @@ With the hierarchical structure implemented, portfolio owners working in Account
 
 All work items under the Fabrikam/Account Management area path appear in their backlog view. You can expand a single item or use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
 
-::: moniker-end  
----
+::: moniker-end
 
-::: moniker range=">= tfs-2017" 
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
 > [!TIP]    
 > Program managers can also gain insight into progress across teams using [Delivery plans](review-team-plans.md). See also [Visibility across teams](visibility-across-teams.md).  
-> 
-::: moniker-end  
+
+::: moniker-end
+
 
 <a id="feature-team-backlog"> </a>
 ## Feature team backlog ownership and view of progress 
 
-Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and task boards. These pages only show work relevant to each team, based on assignments made to the work item area and iteration paths. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
+Each feature team has its own team home page or dashboards, product and portfolio backlogs, Kanban boards, and taskboards. These pages only show work relevant to each team, based on assignments made to the work item area and iteration paths. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
-
-> [!TIP]    
+> [!TIP]
 > Add **Node Name** to the column options to show the team assigned to the work item.   
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range="vsts"  
+The Customer Service feature team's view of the backlog only includes those work items assigned to their area path, **Fabrikam Fiber/Customer Service**. Here we show parents which provide a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team. 
 
-The Customer Service feature team's view of the backlog only includes those work items assigned to their area path, **Fabrikam Fiber/Customer Service**. Here we show parents which provide a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team.   
-
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png).  
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on.png)   
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on.png)   
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-::: moniker range=">= tfs-2017"  
-
-Items that are owned by other teams appear with an information icon, ![](../../_img/icons/info.png). 
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, previous navigation](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
 
-::: moniker-end 
-::: moniker range="tfs-2017"  
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
 Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
 
 <img src="../backlogs/_img/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #C3C3C3;" /> 
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2015" 
+::: moniker range="<= tfs-2015"
 
 The Customer Profile feature team's view of the backlog only includes those work items assigned to their area path, **Fabrikam/Account Management/Customer Profile**. Here we show parents which provides a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team.   
 
@@ -136,23 +126,20 @@ The Customer Profile feature team's view of the backlog only includes those work
 
 ::: moniker-end
 
----
  
 ## Assign work from a common backlog
 While the hierarchical team and backlog structure works well to support autonomous teams to take ownership of their backlog, it also supports assigning work to teams from a common backlog. During a sprint or product planning meeting, product owners and development leads can review the backlog and assign select items to various teams, by assigning them to the feature team Area Path. 
 
-
-# [New navigation](#tab/new-nav)
-
 In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
 
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019" 
+
 > [!div class="mx-imgBorder"]  
 > ![Management team common backlog](_img/portfolio/account-management-backlog.png) 
 
 During the planning meeting, you can open each item, make notes, and assign the item to the team to work on it. 
 
-> [!TIP]    
+> [!TIP]
 > You can multi-select work items and perform a bulk edit of the area path. See [Bulk modify work items](../backlogs/bulk-modify-work-items.md).    
 
 Here, all backlog items have been assigned to feature teams. While all features and epics remain owned by Account Management. 
@@ -160,15 +147,10 @@ Here, all backlog items have been assigned to feature teams. While all features 
 > [!div class="mx-imgBorder"]  
 > ![Management team common backlog](_img/portfolio/account-management-backlog-assigned.png) 
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
 
@@ -185,9 +167,9 @@ Here, all backlog items have been assigned to feature teams. While all features 
 > [!div class="mx-imgBorder"]  
 > ![Management team common backlog](_img/portfolio/account-management-backlog-assigned.png) 
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013 = tfs-2015"  
+::: moniker range="<= tfs-2015"
 
 In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
 
@@ -199,18 +181,21 @@ Here, all backlog items have been assigned to feature teams. While all features 
 
 <img src="_img/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" style="border: 2px solid #C3C3C3;" />
 
-::: moniker-end  
+::: moniker-end
 
----
 
 ## Add portfolio backlogs 
-::: moniker range="vsts"
+
+::: moniker range=">= azure-devops-2019"
+
 If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+
 ::: moniker-end
  
-::: moniker range=">= tfs-2013 <= tfs-2018" 
+::: moniker range="<= tfs-2018"
 
 If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
+
 ::: moniker-end
 
 ## Track dependencies across teams 

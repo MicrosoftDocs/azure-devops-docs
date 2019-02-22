@@ -1,19 +1,21 @@
 ---
 ms.prod: devops
 title: Build and Release Agents
-titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
+ms.custom: seodec18
 description: Learn about building your code or deploying your software using build and release agents in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/31/2018
+ms.date: 02/07/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Build and release agents
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -23,7 +25,7 @@ To build your code or deploy your software you need at least one agent. As you a
 
 When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ## Microsoft-hosted agents
 
@@ -35,9 +37,12 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 <h2 id="install">Self-hosted agents</h2>
 
-An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**. You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS). Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
+An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**.
+You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS).
+Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
+Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
-:::moniker range="vsts"
+::: moniker range="azure-devops"
 
 > [!TIP]
 > Before you install a self-hosted agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
@@ -68,17 +73,17 @@ You can install the agent on Linux, macOS, or Windows machines. You can also ins
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ## Parallel jobs
 
 You might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time:
 
-* [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs-vsts.md)
+* [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ### Parallel jobs
 
@@ -106,13 +111,13 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 <h2 id="communication">Communication</h2>
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### Communication with Azure Pipelines
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ### Communication with TFS
 
@@ -122,7 +127,17 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 The agent communicates with Azure Pipelines or TFS to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to Azure Pipelines or TFS happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
-![Agent topologies](_img/agent-topologies.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
+![Agent topologies](_img/agent-topologies-tfs.png)
+::: moniker-end
+
+::: moniker range="azure-devops"
+![Agent topologies](_img/agent-topologies-devops.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 Here is a common communication pattern between the agent and Azure Pipelines or TFS.
 
@@ -142,9 +157,11 @@ Here is a common communication pattern between the agent and TFS.
 
 * An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listen to the job queue.
 
-* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../organizations/security/websitesettings.md) between the agent and TFS.
+* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](/tfs/server/admin/websitesettings) between the agent and TFS.
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
 
 ### Communication to deploy to target servers
 
@@ -158,7 +175,8 @@ manually configure a self-hosted agent on on-premises computer(s). The agents mu
 on-premises environments, and access to the Internet to connect to Azure Pipelines or Team Foundation Server,
 as shown in the following schematic.
 
-![Agent connectivity for on-premises environments](_img/agent-connections.png)
+![Agent connectivity for on-premises environments](_img/agent-connections-devops.png)
+::: moniker-end
 
 <a name="configure-tfs-authentication"></a>
 ## Authentication
@@ -170,11 +188,11 @@ To register an agent, you need to be a member of the [administrator role](pools-
 ### Personal Access Token (PAT): 
 [Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. Also, as explained above, this PAT is used only at the time of registering the agent, and not for subsequent communication.
 
-To use a PAT with TFS, your server must be configured with HTTPS. See [Web site settings and security](../../organizations/security/websitesettings.md).
+To use a PAT with TFS, your server must be configured with HTTPS. See [Web site settings and security](/tfs/server/admin/websitesettings).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 ### Integrated
 
@@ -206,7 +224,7 @@ To use this method of authentication, you must first configure your TFS server.
 
 
 ### Alternate
-Connect to TFS using Basic authentication. To use this method you must first [configure HTTPS on TFS](../../organizations/security/websitesettings.md).
+Connect to TFS using Basic authentication. To use this method you must first [configure HTTPS on TFS](/tfs/server/admin/websitesettings).
 
 To use this method of authentication, you must configure your TFS server as follows:
 
@@ -290,5 +308,3 @@ Yes. This approach can work well for agents that run jobs that don't consume a l
 You might find that in other cases you don't gain much efficiency by running multiple agents on the same machine. For example, it might not be worthwhile for agents that run builds that consume a lot of disk and I/O resources.
 
 You might also run into problems if parallel build jobs are using the same singleton tool deployment, such as npm packages. For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
-
-[!INCLUDE [agent-latest-version](_shared/v2/qa-agent-version.md)]

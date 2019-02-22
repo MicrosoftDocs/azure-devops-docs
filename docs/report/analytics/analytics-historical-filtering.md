@@ -1,21 +1,22 @@
 ---
 title: Filtering on historical data from Analytics
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: TBD
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
+monikerRange: '>= azure-devops-2019'
 ms.date: 06/30/2018 
 ---
 
+ 
 # Applying filters to historical data
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]. 
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]. 
 
 It's important to understand how filters are applied to historical revisions of the work item. This is especially relevant when reporting on trends. For example, tracking over time the number of Active Bugs or the number of Features with the tag "Customer". 
 
@@ -36,7 +37,7 @@ Filters are applied to each revision of a work item. For example, let's say we h
 
 The latest revision (#6) is the Current revision of the work item. In Analytics Views, if you selected "Current only" in the History tab, you would get one row of data for this work item, the current row.
 
-When reporting on history, we could potentionally be pulling in revisions 1 through 6 for reporting. 
+When reporting on history, we could potentially be pulling in revisions 1 through 6 for reporting. 
 
 Let's say when creating an Analytics View or configuring the Burndown widget, you set these two filters:
 
@@ -76,7 +77,7 @@ Some have assumed that if the current version of a work item has the Tag, then i
 This is not how historical filtering works. If filters were only applied based on the current version of a work item, then trend charts would simply not work. You would not be able to remove an item from your burndown by removing a Tag, or by setting the Area Path to another team's area path. 
 
 > [!NOTE] 
-> We are considering adding a "was ever" operand to the filter criteria in Analytics Views and widgets such as Burndown/Burnup. This feature would allow you to create a filter like: "State **was ever** Active". This would mean a work item revision would match the filter criteria if any revision of the work item ever had State = Active. If you believe this feature is important, you can [vote for it on our User Voice site](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/34605808-support-was-ever-filter-in-analytics-views). 
+> We are considering adding a "was ever" operand to the filter criteria in Analytics Views and widgets such as Burndown/Burnup. This feature would allow you to create a filter like: "State **was ever** Active". This would mean a work item revision would match the filter criteria if any revision of the work item ever had State = Active. If you believe this feature is important, you can [vote for it on our Developer Community site](https://developercommunity.visualstudio.com/idea/366009/support-was-ever-filter-in-analytics-views-burndow.html). 
 
 ## Conclusion
 To restate, when reporting on historical data, all filters are applied to the work item's version as-of the historical point in time. Work items will appear in your trend when they meet the filter criteria. They will disappear from your trend when they no longer meet the filter criteria.  

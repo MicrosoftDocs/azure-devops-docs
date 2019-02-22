@@ -5,7 +5,7 @@ description: Create a local copy of an existing repo using Visual Studio or comm
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial
@@ -116,13 +116,13 @@ You'll need a clone URL to tell Git what repository you want to clone to your co
 Pass this clone URL to `git clone` to make a local copy of the repo:
 
 ```
-git clone https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam
+git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam
 ```
 
 `git clone` clones the repository from the URL in a folder under the current one. You can pass in a folder name after the URL to create the repo in a specific location, for example:
 
 ```
-git clone https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam C:\Repos\FabrikamFiber
+git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam C:\Repos\FabrikamFiber
 ```
 
 ---

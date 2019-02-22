@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server 
 ms.assetid: 09e8e02d-9ecb-4012-9ee0-cebb89372096
 ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 10/31/2017
 ---
 
@@ -47,15 +47,13 @@ If you see that hours are counted twice in reports that contain task hours, you 
 6.  In the Excel document, for the area and iteration paths that you are managing, clear the values in the following three columns:  
   
     -   **Original Estimate**  
-  
     -   **Remaining Work**  
-  
     -   **Completed Work**  
   
 7.  (Optional) Save the Excel file.  
   
-    > *[!NOTE]  
-    >  The work items in this list are based on the work item IDs and not a work item query. To address inaccuracies that may occur later, you must repeat steps 1 through 6.  
+    > [!NOTE]  
+    > The work items in this list are based on the work item IDs and not a work item query. To address inaccuracies that may occur later, you must repeat steps 1 through 6.  
   
 8.  On the **Team** tab, choose **Publish**.  
   

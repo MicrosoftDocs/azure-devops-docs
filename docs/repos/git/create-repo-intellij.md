@@ -5,7 +5,7 @@ description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -27,7 +27,7 @@ In this guide, we show you how to create a Git repo using the Azure DevOps Servi
 ## Prerequisites
 To complete the steps in this guide you need:
 
-* An Azure DevOps organization. If you don't have an Azure DevOps organization, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
 * The Azure Repos plugin for IntelliJ. See [IntelliJ Plugin download page](/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
@@ -35,7 +35,7 @@ To complete the steps in this guide you need:
   * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux).
 
 ## Create a repo
-0. Navigate to your Azure DevOps project by browsing to `https://dev.azure.com/{your organization}` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
+1. Navigate to your project in Azure DevOps by browsing to `https://dev.azure.com/{your organization}` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 
   ![Select project](_img/create-repo-intellij/select-vsts-project.png) 
 

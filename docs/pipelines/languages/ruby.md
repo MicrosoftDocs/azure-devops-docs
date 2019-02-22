@@ -1,6 +1,6 @@
 ---
-title: Ruby
-description: CI and CD for Ruby projects.
+title: Build and test Ruby apps
+description: Build and test Ruby apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,13 +8,16 @@ ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Ruby
+# Build and test Ruby apps in Azure Pipelines
 
-This guidance explains how to build Ruby projects.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build Ruby projects with CI/CD pipelines.
 
 ## Example
 
@@ -33,7 +36,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your Ruby projects without needing to set up any infrastructure of your own. Ruby is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to the beginning of your pipeline.
+For the exact versions of Ruby that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Ruby on Microsoft-hosted agents, add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to the beginning of your pipeline.
 
 ### Use a specific Ruby version
 
@@ -42,7 +45,7 @@ Add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to set the ve
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
 pool:
-  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
 - task: UseRubyVersion@0
@@ -66,7 +69,7 @@ To use Bundler to install dependencies, add the following snippet to your `azure
 
 ```yaml
 - script: |
-    gem install bundler
+    CALL gem install bundler
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 ```
@@ -88,6 +91,7 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
 
 ```yaml
 - task: PublishTestResults@2
+  condition: succeededOrFailed()
   inputs:
     testResultsFiles: '**/test-*.xml'
     testRunTitle: 'Ruby tests'

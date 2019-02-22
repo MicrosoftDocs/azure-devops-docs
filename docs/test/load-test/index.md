@@ -1,15 +1,15 @@
 ---
-title: Load Testing index and overview in Azure DevOps and TFS
+title: Load Testing index and overview
 description: Load Testing with Visual Studio and Azure DevOps
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Load Testing

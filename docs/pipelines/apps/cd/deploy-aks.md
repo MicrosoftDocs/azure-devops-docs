@@ -1,18 +1,21 @@
 ---
-title: Deploy a Docker container app to an Azure Kubernetes Service (AKS)
+title: Deploy a Docker container app to AKS
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
-# Deploy to an Azure Kubernetes Service
+# Deploy a Docker container app to Azure Kubernetes Service
+
+**Azure Pipelines**
 
 We'll show you how to set up continuous deployment of your containerized application to an Azure Kubernetes Service (AKS) using
 Azure Pipelines.
@@ -35,7 +38,7 @@ You'll need a continuous integration (CI) build process that publishes a contain
 
 To set up a CI build process, see:
 
-* [Build Docker image and publish Helm chart](../../languages/docker.md).
+* [Build a Docker image](../../languages/docker.md) and [create a Helm chart](../../languages/helm.md).
 
 ## Prerequisites
 
@@ -58,9 +61,9 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 When you use Azure Container Registry (ACR) with Azure Kubernetes Service (AKS),
 you must establish an authentication mechanism. This can be achieved in two ways:
 
-1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#grant-aks-access-to-acr).
+1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks#grant-aks-access-to-acr).
 
-1. Use a [Kubernetes image pull secret](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret).
+1. Use a [Kubernetes image pull secret](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret).
    An image pull secret can be created by using the [Kubernetes deployment task](../../tasks/deploy/kubernetes.md).
 
 ## Create a release pipeline

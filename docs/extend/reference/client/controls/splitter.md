@@ -1,14 +1,14 @@
 ---
 title: Splitter Control | Extensions for Azure DevOps Services
-description: Use the splitter control to have splitted and resizable containers for other controls in your app for Azure DevOps Services.
+description: Use the splitter control to have split and resizable containers for other controls in your app for Azure DevOps Services.
 ms.assetid: FD43DC4F-618E-4F7C-992A-F05734041A50
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---

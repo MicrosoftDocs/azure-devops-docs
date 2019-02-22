@@ -1,15 +1,15 @@
 ---
 title: Set up or configure hierarchical teams
-titleSuffix: Azure Boards and TFS
-description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 09/13/2018
+ms.date: 11/19/2018
 ---
 
 # Configure a hierarchy of teams
@@ -22,21 +22,21 @@ Specifically, we'll show you how to configure a team structure like the one show
 
 ![Each team has its own view of the work](_img/pm-team-structure.png) 
 
-In this topic you'll learn how to:  
+In this article you'll learn how to:  
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017" 
 >[!div class="checklist"]    
 > * Set up a hierarchical set of teams and backlogs
 > * Define a single sprint cadence for all teams 
 > * Review which area paths are assigned to teams  
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015" 
 >[!div class="checklist"]    
 > * Set up a hierarchical set of teams and backlogs
 > * Define a single sprint cadence for all teams 
 > * Review which area paths are assigned to teams  
-::: moniker-end  
+::: moniker-end 
 
 ## Prerequisites 
 
@@ -51,11 +51,8 @@ The first step is to add a team for each feature team and management area. You c
 
 > [!div class="mx-imgBorder"]  
 > ![Project settings, Teams](_img/config-teams/team-list.png)
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)  
-::: moniker range="vsts"
+ 
+::: moniker range=">= azure-devops-2019"
 
 0. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -71,17 +68,11 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 <a id="add-team-team-services" /> 
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
 
 	![Open project admin page](../../organizations/settings/_img/add-team/open-admin-context-tfs-2017.png) 
 
@@ -93,10 +84,10 @@ The first step is to add a team for each feature team and management area. You c
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013  <= tfs-2015"
+::: moniker range="<= tfs-2015"
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
 
 	<img src="../../_shared/_img/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -109,8 +100,6 @@ The first step is to add a team for each feature team and management area. You c
 	Repeat this step for all feature and management teams you want to create.  
 
 ::: moniker-end   
-
----
 
 ## Move area paths into a hierarchical structure
 
@@ -132,16 +121,14 @@ In this next step, you want to move the areas paths associated with feature team
 
 You do this by opening each area path associated with a feature team and changing its location to be under the management area path. 
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 
 0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](../../organizations/settings/_img/areas/open-project-work-areas-settings-vert.png)   
 
-0. Next, choose the ![](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+0. Next, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
 	For example, here we move the Customer Profile to under Account Management.
 
@@ -152,46 +139,39 @@ You do this by opening each area path associated with a feature team and changin
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav) 
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-::: moniker range=">= tfs-2017"  
+0. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
 
-0. From the web portal for the project, choose the ![](../../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Open Admin context, project level](../../organizations/settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
 
 	If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
 
-	> [!div class="mx-imgBorder"]
+	> [!div class="mx-imgBorder"] 
 	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)
-	::: moniker-end  
 
 0. Choose **Work**.  
 
-0. Next, choose the ![](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+0. Next, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
 	For example, here we move the Customer Profile to under Account Management.
 
 	> [!div class="mx-imgBorder"]
 	> ![Edit area path dialog](_img/config-teams/edit-area-path.png)
-	::: moniker-end  
 
 	Repeat this step for all feature team area paths. 
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
 	![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
-0. Next, choose the ![](../_img/icons/context_menu.png) context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
+0. Next, choose the ![ ](../_img/icons/context_menu.png) context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
 
 	For example, here we move the Customer Profile to under Account Management.
 
@@ -201,16 +181,11 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker-end
 
----
-
-
 ## Include sub-area paths for management teams
 
 By including sub-area paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude sub-area paths. 
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from **Teams**. 
 
 0.  From **Project Settings**, choose **Teams**, and then choose the team whose settings you want to modify. 
@@ -241,15 +216,10 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range=">= tfs-2017 <= tfs-2018"   
 
-::: moniker range=">= tfs-2017"  
-
-0.  You open team settings from the top navigation bar. Select the team you want and then choose the ![](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+0.  You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png) 
@@ -270,9 +240,9 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
-From **Areas**, open the ![](../_img/icons/context_menu.png) context menu and select **Include sub-areas**.  
+From **Areas**, open the ![ ](../_img/icons/context_menu.png) context menu and select **Include sub-areas**.  
 
 Here we choose to include sub-area paths for the Account Management area.  
 
@@ -282,20 +252,24 @@ Repeat this step for all your management areas. Also, if you want to enable roll
 
 ::: moniker-end
 
----
 
 ## Define a single sprint cadence for all teams 
 
-If your feature teams use Scrum  or use sprints to assign their work, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). 
+If your feature teams use Scrum or use sprints to assign their work, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates from **Project Settings** as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). You can rename and edit the default sprints as needed.
 
-Here we've defined the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
+> [!NOTE]  
+> While maintaining a single sprint cadence simplifies project administration, you can create different cadences as needed. For example, some teams may follow a monthly cadence while others follow a 3-week cadence. Simply define a node under the top project node for each cadence, and then define the sprints under those nodes. For example: 
+> - Fabrikam Fiber/CY2019
+> - Fabrikam Fiber/3Week Sprints
+> 
+Here we define the start and end dates of the first 6 sprints corresponding to a 3-week cadence. 
 
 ::: moniker range=">= tfs-2017"  
 > [!div class="mx-imgBorder"]  
 > ![Iteration path](../../organizations/settings/_img/areas/modify-areas-its-iterations-scheduled-ts.png)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 <img src="_img/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
@@ -306,8 +280,8 @@ Here we've defined the start and end dates of the first 6 sprints corresponding 
 For all teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. These include: 
 
 - [Add team members](../../organizations/settings/add-teams.md#add-team-members)
-- [Select sprints for the team](../../organizations/settings/set-team-defaults.md#activate)
-- [Activate backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md) 
 - [Configure Kanban boards](../../organizations/settings/manage-teams.md#configure-kanban-boards)  
 
@@ -316,31 +290,24 @@ For additional details, see [Manage and configure team tools](../../organization
 
 ## Review area paths assigned to teams 
 
-# [New navigation](#tab/new-nav)
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"  
+
 From **Project Settings>Project configuration>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
 
 > [!div class="mx-imgBorder"]  
 > ![Area Paths and Teams](_img/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 From **Project Settings>Work>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
  
 > [!div class="mx-imgBorder"]  
 > ![Area Paths and Teams](_img/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015" 
 This feature isn't supported for TFS 2015 and earlier versions.
-::: moniker-end  
-
----
+::: moniker-end 
 
 ## Related articles
 

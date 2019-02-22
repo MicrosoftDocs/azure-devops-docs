@@ -1,18 +1,21 @@
 ---
 title: Deploy a build and release agent on macOS
+ms.custom: seodec18
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Deploy an agent on macOS
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -57,7 +60,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 <li>Follow the instructions on the page.</li>
 
-<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.</li>
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
 </ol>
 
 ::: moniker-end
@@ -66,7 +69,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
+0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
 0. Follow the instructions on that page to download the agent.
 
@@ -79,7 +82,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
@@ -113,6 +116,9 @@ To run the agent interactively:
  ```bash
 ./run.sh
  ```
+
+To use your agent, run a [job](../process/phases.md) using the agent's pool.
+If you didn't choose a different pool, your agent will be in the **Default** pool.
 
 ## Run as a launchd service
 
@@ -229,9 +235,9 @@ Command:
 ./svc.sh uninstall
 ```
 
-#### Automatic log on and lock
+#### Automatic login and lock
 
-The service runs when the user logs in. If you want the agent service start when the machine restarts, you can configure the machine it to automatically log on and lock on startup. See [Auto Logon and Lock](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/).
+Normally, the agent service runs only after the user logs in. If you want the agent service to automatically start when the machine restarts, you can configure the machine to automatically log in and lock on startup. See [Set your Mac to automatically log in during startup - Apple Support](https://support.apple.com/HT201476).
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
@@ -263,7 +269,7 @@ You can also run your own instructions and commands to run when the service star
 
 0. Replace the following line with your instructions:
 
-```
+```bash
 
 # insert anything to setup env when running as a service
 
@@ -311,13 +317,13 @@ You can use the template described above as to facilitate generating other kinds
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 ### Where can I learn more about how the launchd service works?
 
-[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
+[Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
-[launchd.plist manpage](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html)
-
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 ::: moniker-end
 
@@ -329,15 +335,15 @@ You can use the template described above as to facilitate generating other kinds
 
 [Run the agent behind a web proxy](proxy.md)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [include](../_shared/qa-versions.md)]
 ::: moniker-end
 

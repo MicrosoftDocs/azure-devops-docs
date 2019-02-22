@@ -6,18 +6,18 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts'
-ms.date: 2/18/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/1/2018
 ---
 
 # Data model for the Analytics Service  
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The Analytics service data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
@@ -26,7 +26,25 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata```  
+>Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: 
+
+::: moniker range="azure-devops"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+```
+
+::: moniker-end
 
 The data model contains the following entity sets:  
 
@@ -42,7 +60,7 @@ The data model contains the following entity sets:
 |Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) |  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
 |WorkItems | The current state of work items|  
-|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
+|WorkItemLinks | The links between work items (e.g. child, parent, related) - includes only latest revision of links (no history) - hyperlinks not included  
 |WorkItemRevisions | All historic work item revisions, including the current revision - does not include deleted work items|  
 |WorkItemSnapshot | (Composite) The state of each work item on each calendar date - used for trend reporting|  
 |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting|  

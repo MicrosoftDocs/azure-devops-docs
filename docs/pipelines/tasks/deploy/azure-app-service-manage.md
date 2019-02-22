@@ -1,19 +1,22 @@
 ---
-title: Azure App Service Manage
-description: Start, Stop, Restart, Slot swap, Install site extensions or Enable Continuous Monitoring for an Azure App Service
+title: Azure App Service Manage task
+description: Start, Stop, Restart, Slot swap, Install site extensions, or Enable Continuous Monitoring for an Azure App Service
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: f045e430-8704-11e6-968f-e717e6411619
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Deploy: Azure App Service Manage
+# Azure App Service Manage task
 
-![](_img/azureappservicemanage.png) Start, Stop, Restart, Slot swap, Install site extensions or Enable Continuous Monitoring for an Azure App Service
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to start, stop, restart, slot swap, install site extensions, or enable continuous monitoring for an Azure App Service.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -42,10 +45,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

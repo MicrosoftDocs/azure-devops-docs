@@ -5,7 +5,7 @@ ms.assetid: 03575E92-8FA7-7DC6-5699-2E5811A332CA
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -242,7 +242,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 
 <a name="date-time"></a>
 ### Datetime picker
-This sample shows the usage of combo by type `date-time`. Please note that selecting different day from the picker will preseverse the hour value.
+This sample shows the usage of combo by type `date-time`. Please note that selecting different day from the picker will preserve the hour value.
 
 <ul class="nav nav-tabs" data-tabs="tabs">
 <li class="active"><a data-toggle="tab" href="#typescript_datetime">TypeScript</a></li>

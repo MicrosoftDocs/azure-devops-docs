@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Tracking Overview | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with work item tracking programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Work Item Tracking Overview | REST API Reference for Team Foundation Server
+description: Work with work item tracking programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 4b6ac3ad-7de0-4137-8b80-8a4b44f4107f
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/04/2016
 ---
 
 # Work item tracking
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 
@@ -114,7 +117,7 @@ Make sure you provide at least a title. Some types of work items will require va
 
 ### Get the fields used in a project
 1. Get the [types of work items](./work-item-types.md#getalistofworkitemtypes) used in a project.
-2. Get each [work item type](./work-item-types.md#getaworkitemtype) to see the fields that it uses. (Skip past the xmlform to fieldinstances.)
+2. Get each [work item type](./work-item-types.md#getaworkitemtype) to see the fields that it uses. (Skip past the xmlForm to fieldInstances.)
 
 ### Get categories of work items
 Use [categories of work items](./categories.md#getalistofworkitemtypecategories) to get the types of work items used in a project for different functions.

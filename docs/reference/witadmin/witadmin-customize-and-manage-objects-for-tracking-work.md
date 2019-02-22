@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
 

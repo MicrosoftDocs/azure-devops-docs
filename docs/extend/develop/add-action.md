@@ -5,7 +5,7 @@ title: Add an Action | Extensions for Azure DevOps Services
 description: Add an action for your extension that extends Azure DevOps Services.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -51,7 +51,7 @@ Below is the code snippet that adds your action to the contributions section of 
 | text               | Text that will appear on the menu item.                                                                         |                  
 | title              | Tooltip text that will appear on the menu item.                                                                 |                   
 | icon               | URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri.                     |                   
-| groupId            | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers] (../test/discover-menu-group-ids.md). |
+| groupId            | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers](../test/discover-menu-group-ids.md). |
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 
@@ -80,8 +80,11 @@ in your extension's manifest file.
 
 ## Your JavaScript
 The script below registers the handler object to handle the action, place it in the `head` section of the HTML page above.
-```html
-<script src="sdk/scripts/VSS.SDK.js"></script>
+
+> We aliased `lib` to be `node_modules/vss-web-extension-sdk/lib` in our `vss-extension.json` manifest file.
+
+```typescript
+<script src="lib/VSS.SDK.min.js"></script>
 <script>
     VSS.init();
 

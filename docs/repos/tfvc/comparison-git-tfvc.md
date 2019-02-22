@@ -5,7 +5,7 @@ description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -99,7 +99,7 @@ Need more help to make a choice? These charts might help.
 
 <p>You can compare branches to see which commits exist on which branches.</p>
 
-<p>See Use Git branches to switch contexts, suspend work, and isolate risk.</p>
+<p>See [Use Git branches to switch contexts, suspend work, and isolate risk](/azure/devops/repos/git/branches?view=azure-devops&tabs=visual-studio#use-branches-to-manage-development).</p>
 </td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@ Need more help to make a choice? These charts might help.
 </thead>
 <tr>
 <td>Client software</td>
-<td> Visual Studio, Eclipse (with [Team Explorer Everywhere](https://msdn.microsoft.com/en-us/library/gg413285%28v=vs.140%29.aspx))</td>
+<td> Visual Studio, Eclipse (with [Team Explorer Everywhere](https://msdn.microsoft.com/library/gg413285%28v=vs.140%29.aspx))</td>
 <td>Visual Studio, Eclipse, and other third-party tools</td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Visual Studio compatibility</td>
-<td>You can use all supported [previous versions of Visual Studio](http://msdn.microsoft.com/en-us/library/dd997788).</td>
+<td>You can use all supported [previous versions of Visual Studio](http://msdn.microsoft.com/library/dd997788).</td>
 <td><p>Git is built in with Visual Studio 2017, 2015, and 2013.</p>
 <p>You can also use Visual Studio 2012 Update 4 (you must also install [Visual Studio Tools for Git](http://go.microsoft.com/fwlink/?LinkID=275845)).</p></td>
 </tr>

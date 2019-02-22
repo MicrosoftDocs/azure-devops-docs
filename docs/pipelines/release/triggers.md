@@ -1,20 +1,21 @@
 ---
 title: Release triggers for stages, branches, and pipelines
-description: DevOps CI CD - Understand triggers in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand triggers in Azure Pipelines
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.custom: seodec18
+ms.date: 12/06/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Release, branch, and stage triggers
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -29,7 +30,7 @@ and the latter through [stage triggers](#env-triggers) - both in a release pipel
 
 If you specify [certain types](artifacts.md#sources) of
 artifacts in a release pipeline, you can enable continuous deployment.
-This instructs Release Management to create
+This instructs Azure Pipelines to create
 new releases automatically when it detects new artifacts
 are available. At present this option is available only for Team Foundation Build artifacts
 and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
@@ -45,7 +46,7 @@ You add build branch filters if you want to create the release only
 when the build is produced by compiling code from certain branches
 (only applicable when the code is in a TFVC, Git, or GitHub repository)
 or when the build has certain tags. These can be both include and exclude filters.
-For example, use **features/\*** to include all builds under the **features** branch.
+For example, use **features/*** to include all builds under the **features** branch.
 You can also include [custom variables](variables.md) in a filter value.
 
 Alternatively, you can specify a filter to use the default branch specified
@@ -58,31 +59,37 @@ default branch in the build pipeline.
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
+For information about the ID of the requester for CI triggers, see [How are the identity variables set?](../build/variables.md#how-are-the-identity-variables-set)
+
 <h2 id="scheduled-triggers">Scheduled release triggers</h2>
 
 If you want to create and start a release at specific times, define one or more
 scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your
 pipeline and enable scheduled release triggers. You can configure multiple schedules.
 
-![Defining a shceduled release trigger](_img/trigger-04.png)
+![Defining a scheduled release trigger](_img/trigger-04.png)
 
 See also [stage scheduled triggers](#stage-scheduled-triggers).
+
+::: moniker range="> tfs-2018"
 
 <h2 id="prsettrigger">Pull request triggers</h2>
 
 You can configure a pull request trigger that will create a new release when a pull request 
-uploads a new version of the artifact. Enable the trigger and add the branches targetted by pull requests
+uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests
 that you want to activate this trigger. 
 
 ![Selecting a trigger for a release](_img/trigger-01a.png)
 
 However, to use a pull request trigger, you must also enable it for specific stages of the pipeline.
 Do this in the stage [triggers panel](#prtrigger) for the required stage(s). 
-You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
+You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
+
+::: moniker-end
 
 <h2 id="env-triggers">Stage triggers</h2>
 
@@ -107,6 +114,7 @@ when a release is created by a continuous deployment trigger, based on:
 * **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
   and specify if you want to include or exclude particular branches of the code.
   Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
+  Unlike [build branch filters](#release-triggers), variables _cannot_ be used in artifact filter conditions.
 
   ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
 
@@ -114,9 +122,12 @@ when a release is created by a continuous deployment trigger, based on:
 
 * **A predefined schedule**. When you select this option,
   you can select the days of the week and the time of day that
-  Release Management will automatically start a new deployment. Unlike scheduled
+  Azure Pipelines will automatically start a new deployment. Unlike scheduled
   release triggers, you cannot configure multiple schedules for stage triggers.
-  Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
+  Note that, with scheduled triggers, a new deployment is created that deploys the 
+  artifacts from the _most recently available_ release, overwriting any previously deployed artifacts
+  for the stage. It does not necessarily require a newer version of the artifacts to be
+  available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
@@ -125,7 +136,7 @@ when a release is created by a continuous deployment trigger, based on:
 * **A pull request that updates the artifacts**. If you have enabled
   [pull request triggers](#prsettrigger) for your pipeline, you must also enable
   pull request deployment for the specific stages where you want the release to be deployed. 
-  You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
+  You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
   ![The pull request trigger conditions settings](_img/trigger-02c.png)
 

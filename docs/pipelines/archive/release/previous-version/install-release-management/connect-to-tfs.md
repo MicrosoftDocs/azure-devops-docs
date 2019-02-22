@@ -1,11 +1,12 @@
 ---
 title: Connect Microsoft Release Management server/client to TFS
+ms.custom: seodec18
 description: Learn how you can connect Release Management to Team Foundation Server (TFS) using server and client for VS 2015 and TFS 2015
 ms.assetid: CEB0875B-F42A-45F3-B743-D6C522F7E5A6
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 07/16/2018

@@ -1,19 +1,22 @@
 ---
-title: Jenkins Download Artifacts
+title: Jenkins Download Artifacts task
 description: Download artifacts produced by a Jenkins job
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Jenkins Download Artifacts
+# Jenkins Download Artifacts task
 
-![](_img/jenkinsdownloadartifacts.png) Download artifacts produced by a Jenkins job
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+
+Use this task in a build or release pipeline to download artifacts produced by a Jenkins job.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -40,7 +43,7 @@ monikerRange: '>= tfs-2017'
 <tr><td>Artifacts are propagated to Azure</td><td>(Optional) Check this if Jenkins artifacts were propagated to Azure. To upload Jenkins artifacts to azure, refer to this [Jenkins plugin](https://wiki.jenkins.io/display/JENKINS/Windows+Azure+Storage+Plugin)</td></tr>
 <tr><td>Artifact Provider</td><td>(Required) Choose the external storage provider used in Jenkins job to upload the artifacts.</td></tr>
 <tr><td>Azure Subscription</td><td>(Required) Choose the Azure Resource Manager subscription for the artifacts.</td></tr>
-<tr><td>Storage Account Name</td><td>(Required) Azure Classic and Resource Manager stoarge accounts are listed. Select the Storage account name in which the artifacts are propagated.</td></tr>
+<tr><td>Storage Account Name</td><td>(Required) Azure Classic and Resource Manager storage accounts are listed. Select the Storage account name in which the artifacts are propagated.</td></tr>
 <tr><td>Container Name</td><td>(Required) Name of the container in the storage account to which artifacts are uploaded.</td></tr>
 <tr><td>Common Virtual Path</td><td>(Optional) Path to the artifacts inside the Azure storage container.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
@@ -48,10 +51,4 @@ monikerRange: '>= tfs-2017'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

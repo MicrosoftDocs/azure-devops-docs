@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Authorization using OAuth 2.0 | Azure DevOps Services REST APIs
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -52,14 +52,14 @@ When your register your app, the application settings page is displayed.
 <img alt="Application settings for your app" src="./_img/app-settings.png" style="border: 1px solid #CCCCCC" />
 
 You'll call the authorization URL and pass your app ID and authorized scopes
-when you want to have a user authorize your app to access his/her Azure DevOps Services organization.
+when you want to have a user authorize your app to access their organization.
 You'll call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
 The settings for each app that you register are available from your profile (https://app.vssps.visualstudio.com/profile/view).
 
 ## Authorize your app
 
-If your user hasn't yet authorized your app to access his/her Azure DevOps Services organization,
+If your user hasn't yet authorized your app to access their organization,
 call the authorization URL. 
 
 ```no-highlight
@@ -77,7 +77,7 @@ client_id     | GUID   | The ID assigned to your app when it was registered
 response_type | string | `Assertion`
 state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
-redirect_uri  | URL    | Callback URL for your appp. **This must exactly match the URL registered with the app**
+redirect_uri  | URL    | Callback URL for your app. **This must exactly match the URL registered with the app**
 
 Azure DevOps Services will ask your user to authorize your app.
 It will handle authentication and then call you back with an authorization code, if the user approves the authorization.
@@ -226,7 +226,7 @@ Replace the placeholder values in the sample request body above:
 
 > IMPORTANT: Scopes only enable access to REST APIs and select Git endpoints. SOAP API access is not supported.  
 
-[!INCLUDE [scopestable](../../_shared/scopes.md)]
+[!INCLUDE [scopes table](../../_shared/scopes.md)]
 
 When you [register your app](#register-your-app),
 you'll use scopes to indicate which permissions in Azure DevOps Services your app will require.

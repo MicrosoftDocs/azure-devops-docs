@@ -7,9 +7,9 @@ ms.technology: devops-agile
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 02/10/2017
 ---
 
@@ -163,7 +163,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
 ##  Add fields to support reporting  
  You can add fields to the definition of a work item type or types. When you add the field, you should add the same field element definition to all types of work items for which the field will support reporting. If you want the field to support cross-project reporting, the field should be added to all work item types in all projects that will be reported on.  
   
- For more information, see [Define and modify work item fields](define-modify-work-item-fields.md).  
+ For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).  
 
 <a name="verify"></a> 
 ##  Verify changes made to reportable field attributes  

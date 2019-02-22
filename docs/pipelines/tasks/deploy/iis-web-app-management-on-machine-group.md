@@ -1,19 +1,22 @@
 ---
-title: IIS Web App Manage
-description: Create or update a Website, Web App, Virtual Directories, and Application Pool
+title: IIS Web App Manage task
+description: Create or update a Website, Web App, Virtual Directory, or Application Pool
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1b2aec60-dc49-11e6-9b76-63056e018cac
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Deploy: IIS Web App Manage
+# IIS Web App Manage task
 
-![](_img/iiswebappmanagementonmachinegroup.png) Create or update a Website, Web App, Virtual Directories, and Application Pool
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to create or update a Website, Web App, Virtual Directory, or Application Pool.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -98,10 +101,4 @@ Example: To create an application Site/Application enter /Application. The paren
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

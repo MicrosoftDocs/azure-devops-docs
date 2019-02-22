@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Security Tokens | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Secure Git repositories and branches programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Security Tokens | REST API Reference for Team Foundation Server
+description: Secure Git repositories and branches programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: e9da48fa-fefb-4b17-bdb2-fff937b3cdab
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 03/15/2017
 ---
 
 # Tokens 
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 Tokens are arbitrary strings representing resources in Team Services and Team Foundation Server. Resources are secured by 
 associating [access control lists](./acls.md) (ACLs) with tokens. This article contains the format and examples for tokens representing different resource types.
 

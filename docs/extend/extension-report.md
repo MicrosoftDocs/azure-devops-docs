@@ -5,7 +5,7 @@ ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -14,7 +14,7 @@ ms.date: 04/13/2018
 
 # Extension reporting hub
 
-Now that your extension is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com), you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
+Now that your extension is available in the [Visual Studio Marketplace](https://review.docs.microsoft.com/en-us/vsts/extend/extension-report) you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or click **Reports** link on the extension details page.
 
 ## Acquisition 
@@ -28,18 +28,10 @@ You can view acquisition related data in this tab for the selected period.
 For paid extension, all transactional details for buy and trials is available with date, organization name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. See the [Contact](#contact) section provided later in this topic for more details. 
 
 ## Uninstall
-You can view how many Azure DevOps Services accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
+You can view how many organizations have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
 For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. [Contact](#contact) section provided later in this topic for more details.
-
-## Sales transaction
-This tab is only available for paid extensions and gives the details of sales w.r.t. quantity and accounts to help understand how the extension is performing. 
-Selection of the users button gives the aggregated details of sales and churn i.e. number of new, upgrade, downgrade and cancelled user licenses respectively with the trend. 
-Selection of the accounts button gives similar aggregated details of sales and churn with respect to organization and its trend. 
-
-All transactional details for trials, new purchase, upgrade, downgrade and cancellations is available in details section. You can use search for text and dates to analyze and draw more insights. 
-This data can also be pivoted by organization to understand the lifecycle of an organization or sorted to understand the top organization w.r.t. user licensees / resources purchased. **Contact** feature is also available. 
 
 ## Ratings and Review
 This tab will give you the information of the average rating for the selected period with respect to overall rating, the average rating by number of reviewers, and the daily trend of average rating. The details section provides all the reviews and your responses in transactional view. 
@@ -69,6 +61,6 @@ Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreemen
 # Terminology
 
 * **Page views** is total number of extension detail page views. Repeated views are counted.
-* **Azure DevOps Services install** is the total number of Azure DevOps Services accounts the extension is installed. Repeated installs on the same organization are counted. 
+* **Azure DevOps Services install** is the total number of organizations the extension is installed. Repeated installs on the same organization are counted. 
 * **TFS install** is the total number of TFS connected accounts the extension is installed. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.  
 

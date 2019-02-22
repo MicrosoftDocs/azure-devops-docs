@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Tracking Samples | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Samples for work item tracking using the REST APIs and .Net Libraries for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Work Item Tracking Samples | REST API Reference for Team Foundation Server
+description: Samples for work item tracking using the REST APIs and .Net Libraries for Team Foundation Server. 
 ms.assetid: 94639057-d0b4-472e-952d-182efcc165fa
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/24/2016
 ---
 
 # Projects and teams samples
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 ## Getting Started

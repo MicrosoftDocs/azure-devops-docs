@@ -1,20 +1,25 @@
 ---
-title: Collect more diagnostic data in manual tests
+title: Collect more diagnostic data
 description: Manual and exploratory testing - Collect more diagnostic data in manual tests when you want to test web applications
 ms.assetid: bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Collect more diagnostic data in manual tests
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
+**For Azure DevOps and TFS, see [Collect diagnostic data while testing](../collect-diagnostic-data.md).**
 
 While you are testing your application, Microsoft Test Manager can collect data that will help diagnose any fault that you might find. If you create a bug report while you're testing, the data is automatically attached to the bug work item.  
   
@@ -70,7 +75,7 @@ You need test settings only if you want to collect more data than the default. T
   
    The Local role is the client machine on which you'll perform the tests.  
   
-<a name="MTMTestSettingsDataandDiagnostics"></a>
+<a name="MTMTestSettingsDataAndDiagnostics"></a>
 ## What are the diagnostic data options?
 
 On the Data and Diagnostics page you can add and configure diagnostic adapters to collect data for each machine role in your lab environment. In most cases the diagnostic data is included with the test results.  

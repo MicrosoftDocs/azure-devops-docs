@@ -20,7 +20,7 @@ The first thing that you will notice is purely cosmetic. We’ve renamed the “
 
 Clicking into the Code hub brings you into the updated Code Explorer view. We've been trying to make the explorer much more productive while also cleaning things up a bit. The navigation pane on the left hand side is now a full folder view allowing you to drill into your folder structure. Also you can easily switch between files by simply clicking on them. If you do not want to see the navigation pane then just click on the arrow to collapse it. It will remember your preference next time you come to this page.
 
-As you drill down into the folders you will notice that if you stay in a folder for a while then the details of the last changeset that affected each file are fetched for you along with the check-in comment and the person who made the change. Clicking on the file will show you the contents of it in the [rich code viewer that we've had since August](../2012/aug-27-team-services.md). But if you click on the changeset comment it will take you to a fantastic, newly improved changeset summary view showing you exactly what happened in the changeset all from a single page. This even includes inline diffs for files that have been edited and a summary of the total number of files edited, added or deleted.
+As you drill down into the folders you will notice that if you stay in a folder for a while then the details of the last changeset that affected each file are fetched for you along with the check-in comment and the person who made the change. Clicking on the file will show you the contents of it in the [rich code viewer that we've had since August](https://visualstudio.microsoft.com/articles/news/2012/aug-27-team-services). But if you click on the changeset comment it will take you to a fantastic, newly improved changeset summary view showing you exactly what happened in the changeset all from a single page. This even includes inline diffs for files that have been edited and a summary of the total number of files edited, added or deleted.
 
 ![Changeset summary view](_img/12_10_02.png)
 
@@ -38,11 +38,11 @@ As I mentioned, this is the first of a series of improvements to this area that 
 
 While the changes to the version control experience are the biggest UI change we’ve made this sprint, we’ve been busy elsewhere. In our ongoing attempt to keep the hosted build machine updated with the latest & greatest, we added the following to the hosted build machines this sprint:
 
-- [Azure SDK 1.8](https://www.windowsazure.com/en-us/develop/net/)
+- [Azure SDK 1.8](https://www.windowsazure.com/develop/net/)
 - [TypeScript 0.8.1](http://typescript.codeplex.com/)
 - VS 2012 Update 1 - VS is installed on the build image to ensure you can build everything on the build machine that you can on your dev box using VS. We updated the VS image to the recently released Update 1.
 
-Besides a bunch of bug fixes, that’s it for sprint 40. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+Besides a bunch of bug fixes, that’s it for sprint 40. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Happy holidays!! We’re not planning a deployment on New Year’s Eve (for obvious reasons) so we’ll see you again after the new year.
 

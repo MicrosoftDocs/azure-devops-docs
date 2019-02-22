@@ -1,13 +1,14 @@
 ---
 title: Permissions and access for charts and dashboards
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: How to set permissions and access levels to view and configure charts and dashboards
+ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 || azure-devops-2019'
 ms.date: 03/20/2018
 ---
 

@@ -30,7 +30,7 @@ It is now extremely easy to assign a work item to a different user from your pho
 ![mobile identity](_img/03_08_03.png)
 
 ##Customized backlog levels
-Users can now add new backlog levels to manage the hierarchy of their work items and name them in a way that makes sense for their work item types. Users can also rename and recolor existing backlog levels, such as Stories or Features. See [Customize your backlogs or boards for a process](/vsts/work/process/customize-process-backlogs-boards) for details on how to get started.
+Users can now add new backlog levels to manage the hierarchy of their work items and name them in a way that makes sense for their work item types. Users can also rename and recolor existing backlog levels, such as Stories or Features. See [Customize your backlogs or boards for a process](https://visualstudio.microsoft.com/docs/work/process/customize-process-backlogs-boards) for details on how to get started.
 
 ![backlog levels](_img/03_08_05.png)
 
@@ -65,7 +65,7 @@ You can now see how many free hosted agent minutes you've used.
 ![build minutes](_img/03_08_09.png)
 
 ##Out-of-the-box notifications enabled by default - coming soon
-For your awareness, we are planning to enable [out-of-the-box notifications](../2017/jan-05-team-services#out-of-the-box-notifications-preview) by default in our next update in about three weeks. If this feature is already enabled in your account, there will be no impact. If you haven’t enabled this feature, it will be enabled by default in our next update. Account admins will still have the option to opt out of this feature.
+For your awareness, we are planning to enable [out-of-the-box notifications](https://visualstudio.microsoft.com/articles/news/2017/jan-05-team-services#out-of-the-box-notifications-preview) by default in our next update in about three weeks. If this feature is already enabled in your account, there will be no impact. If you haven’t enabled this feature, it will be enabled by default in our next update. Account admins will still have the option to opt out of this feature.
 
 ##Getting notified when extensions are installed, require attention, and more
 Admins, or those with the ability to manage extensions for an account, are now automatically notified when an extension is installed, uninstalled, enabled, disabled, or requires attention in the account. This is especially useful in larger accounts where multiple people have the responsibility of managing extensions. Admins can turn off these notifications by navigating to __Notification__ settings under the profile menu and switching off the extensions toggle.

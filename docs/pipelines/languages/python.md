@@ -1,6 +1,6 @@
 ---
-title: Python
-description: CI and CD for Python projects.
+title: Build and test Python apps
+description: Build and test Python apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,13 +8,16 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Python
+# Build Python apps in Azure Pipelines
 
-This guidance explains how to build Python apps.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build, test, and deploy Python apps or scripts with CI/CD pipelines. 
 
 ## Example
 
@@ -33,7 +36,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your Python projects without needing to set up any infrastructure of your own. Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
+For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
 
 ### Use a specific Python version
 
@@ -42,7 +45,7 @@ Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set th
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 pool:
-  vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 steps:
 - task: UsePythonVersion@0
@@ -60,7 +63,7 @@ To run a pipeline with multiple Python versions, such as to test your project us
 jobs:
 - job: 'Test'
   pool:
-    vmImage: 'Ubuntu 16.04' # other options: 'macOS 10.13', 'VS2017-Win2016'
+    vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
   strategy:
     matrix:
       Python27:
@@ -80,16 +83,9 @@ jobs:
   # Add additional tasks to run using each Python version in the matrix above
 ```
 
-### Activate an Anaconda environment
+### Create and activate an Anaconda environment
 
-As an alternative to the **Use Python Version** task, create and activate a conda environment and Python version using the [Conda Environment](../tasks/package/conda-environment.md) task. Add the following YAML to activate an environment named `myEnvironment` with the Python 3 package.
-
-```yaml
-- task: CondaEnvironment@0
-  inputs:
-    environmentName: 'myEnvironment'
-    packageSpecs: 'python=3'
-```
+See [Run pipelines with Anaconda environments](./anaconda.md).
 
 ## Run a Python script
 
@@ -134,12 +130,7 @@ After updating `pip` and friends, a typical next step is to install from `requir
 
 ### Install Anaconda packages with conda
 
-Add the following YAML to install the `scipy` package in the conda environment named `myEnvironment`. See [Activate an Anaconda environment](#activate-an-anaconda-environment) above.
-
-```yaml
-- script: conda install -n myEnvironment scipy
-  displayName: 'Install conda libraries'
-```
+See [Run pipelines with Anaconda environments](./anaconda.md).
 
 ## Test
 
@@ -173,6 +164,7 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
 
 ```yaml
 - task: PublishTestResults@2
+  condition: succeededOrFailed()
   inputs:
     testResultsFiles: '**/test-*.xml'
     testRunTitle: 'Publish test results for Python $(python.version)'
@@ -192,35 +184,23 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
 
 ## Package and deliver your code
 
-### Retain artifacts with the build record
+### Authenticate with twine
 
-First, build an sdist of your package.
+The [Twine Authenticate task](../tasks/package/twine-authenticate.md) stores authentication credentials for twine in the `PYPIRC_PATH` environment variable.
 
 ```yaml
-- script: 'python setup.py sdist'
-  displayName: 'Build sdist'
+- task: TwineAuthenticate@0
+  inputs:
+    artifactFeeds: 'feed_name1, feed_name2'
+    externalFeeds: 'feed_name1, feed_name2'
 ```
 
-Then, add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+### Publish with twine
+
+Then, add a [custom script task](../yaml-schema.md#script) to use `twine` to publish your packages.
 
 ```yaml
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish artifact: dist'
-  inputs:
-    pathtoPublish: 'dist'
-    artifactName: 'dist'
-```
-
-### Deploy to a PyPI-compatible index
-
-Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and publish to a PyPI-compatible index.
-
-```yaml
-- task: PyPIPublisher@0
-  inputs:
-    pypiConnection: ''
-    packageDirectory: '$(build.sourcesDirectory)'
-    alsoPublishWheel: false
+- script: 'twine -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
 ```
 
 ## Build a container image

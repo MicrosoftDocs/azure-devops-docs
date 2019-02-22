@@ -97,7 +97,7 @@ For more information, refer to the [this post](https://aka.ms/testingwithphases)
 ##Multiple versions of Extension tasks
 Extension authors can now create extensions with multiple versions of a given task, which enables them to ship patches for each major version they have in production.
 
-See [Reference for creating custom build tasks within extensions](/vsts/integrate/extensions/develop/build-task-schema).
+See [Reference for creating custom build tasks within extensions](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/build-task-schema).
 
 ##Extension management permissions and new email notifications
 Any user or group can be given permission to manage extensions for the account. Previously, only account administrators could review extension requests or install, disable, or uninstall extensions. To grant this permission, an administrator can navigate to the __Extensions__ admin hub by opening the __Marketplace__ menu, selecting __Manage extensions__, and then click the __Security button__.
@@ -107,7 +107,7 @@ Any user or group can be given permission to manage extensions for the account. 
 Also new this sprint, a user who requests an extension is now notified via email when that request is approved or rejected.
 
 ##Updated Package Management experience
-We’ve updated the Package Management user experience to make it faster, address common user-reported issues, and make room for upcoming package lifecycle features. [Learn more about the update here](/vsts/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
+We’ve updated the Package Management user experience to make it faster, address common user-reported issues, and make room for upcoming package lifecycle features. [Learn more about the update here](https://visualstudio.microsoft.com/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
 
 ![package management](_img/02_15_19.png)
 

@@ -5,9 +5,9 @@ ms.assetid: D46740A0-BEF0-421E-9B64-08287777458D
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 04/26/2018
-ms.author: willys
+ms.author: sdanie
 author: mikedouglasdev
 monikerRange: '>= tfs-2015'
 ---
@@ -29,7 +29,7 @@ Continuous security validation should be added at each step from development thr
 
 ## IDE / Pull Request
 
-Validation in the CI/CD begins before the developer commits his or her code. Static code analysis tools in the IDE provide the first line of defense to help ensure that security vulnerabilities are not introduced into the CI/CD process. The process for committing code into a central repository should have controls to help prevent security vulnerabilities from being introduced. Using Git source control in Azure DevOps with branch policies provides a gated commit experience that can provide this validation. By enabling [branch policies](https://visualstudio.microsoft.com/en-us/docs/repos/git/branch-policies) on the shared branch, a pull request is required to initiate the merge process and ensure that all defined controls are being executed. The pull request should require a code review, which is the one manual but important check for identifying new issues being introduced into your code. Along with this manual check, commits should be linked to work items for auditing why the code change was made and require a continuous integration (CI) build process to succeed before the push can be completed.
+Validation in the CI/CD begins before the developer commits his or her code. Static code analysis tools in the IDE provide the first line of defense to help ensure that security vulnerabilities are not introduced into the CI/CD process. The process for committing code into a central repository should have controls to help prevent security vulnerabilities from being introduced. Using Git source control in Azure DevOps with branch policies provides a gated commit experience that can provide this validation. By enabling [branch policies](https://visualstudio.microsoft.com/docs/repos/git/branch-policies) on the shared branch, a pull request is required to initiate the merge process and ensure that all defined controls are being executed. The pull request should require a code review, which is the one manual but important check for identifying new issues being introduced into your code. Along with this manual check, commits should be linked to work items for auditing why the code change was made and require a continuous integration (CI) build process to succeed before the push can be completed.
 
 ## CI (Continuous Integration)
 
@@ -51,7 +51,7 @@ In addition to code quality being verified with the CI build, two other tedious 
 
 Once your code quality is verified, and the application is deployed to a lower environment like development or QA, the process should verify that there are not any security vulnerabilities in the running application. This can be accomplished by executing automated penetration test against the running application to scan it for vulnerabilities. There are different levels of tests that are categorized into passive tests and active tests. Passive tests scan the target site as is but don't try to manipulate the requests to expose additional vulnerabilities. These can run fast and are usually a good candidate for a CI process that you want to complete in a few minutes. Whereas the Active Scan can be used to simulate many techniques that hackers commonly use to attack websites. These tests can also be referred to dynamic or fuzz tests because the tests are often trying a large number of different combinations to see how the site reacts to verify that it doesn't reveal any information. These tests can run for much longer, and typically you don't want to cut these off at any particular time. These are better executed nightly as part of a separate Azure DevOps release.
 
-One tool to consider for penetration testing is OWASP ZAP. [OWASP](https://www.owasp.org) is a worldwide not-for-profit organization dedicated to helping improve the quality of software. ZAP is a free penetration testing tool for beginners to professionals. ZAP includes an API and a weekly docker container image that can be integrated into your deployment process. The detailed how-to steps are outside the scope of this article. Refer to the [OWASP Zap VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension) repo for details on how to set up the integration. Here we're going to explain the benefits of including this into your process.
+One tool to consider for penetration testing is OWASP ZAP. [OWASP](https://www.owasp.org) is a worldwide not-for-profit organization dedicated to helping improve the quality of software. ZAP is a free penetration testing tool for beginners to professionals. ZAP includes an API and a weekly docker container image that can be integrated into your deployment process. The detailed how-to steps are outside the scope of this article. Refer to the [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension) repo for details on how to set up the integration. Here we're going to explain the benefits of including this into your process.
 
 The application CI/CD pipeline should run within a few minutes, so you don't want to include any long-running processes. The baseline scan is designed to identify vulnerabilities within a couple of minutes making it a good option for the application CI/CD pipeline. The Nightly OWASP ZAP can spider the website and run the full Active Scan to evaluate the most combinations of possible vulnerabilities. OWASP ZAP can be installed on any machine in your network, but we like to use the OWASP Zap/Weekly docker container within Azure Container Services. This allows for the latest updates to the image and also allows being able to spin up multiple instances of the image so several applications within an enterprise can be scanned at the same time. The following figure outlines the steps for both the Application CI/CD pipeline and the longer running Nightly OWASP ZAP pipeline.
 
@@ -77,7 +77,7 @@ Minimize security vulnerabilities by taking a holistic and layered approach to s
 * [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
 * [Manage your open source usage and security as reported by your CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/06/08/manage-your-open-source-usage-and-security-as-reported-by-your-cicd-pipeline/)
 * [OWASP](https://www.owasp.org)
-* [OWASP Zap VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension)
+* [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension)
 * [WhiteSource Software](https://www.whitesourcesoftware.com/)
 * [Visual Studio Code Analysis and the Roslyn Security Analyzers](https://blogs.msdn.microsoft.com/secdevblog/2016/03/30/roslyn-diagnostics-security-analyzers-overview/)
 

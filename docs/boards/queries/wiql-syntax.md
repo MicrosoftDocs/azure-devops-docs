@@ -1,24 +1,25 @@
 ---
 title: WIQL reference syntax  
-titleSuffix: Azure Boards and TFS 
-description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards & Team Foundation Server 
-ms.technology: devops-collab
+titleSuffix: Azure Boards 
+description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
+ms.technology: devops-agile
 ms.prod: devops
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/29/2017  
 monikerRange: '>= tfs-2013'
----
+ms.date: 02/04/2019
+--- 
 
 
 # Syntax for the Work Item Query Language (WIQL) 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
-You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](/rest/api/vsts/wit/wiql).  
+You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 
@@ -29,14 +30,14 @@ The WIQL syntax is not case sensitive.
 
 The following typical WIQL query example uses reference names for the fields. The query selects work items (no work item type specified) with a **Priority=1**. The query returns the **ID** and **Title** of the return set as columns. The results are sorted by **ID** in ascending order.
 
-```sql
+```WIQL
 SELECT System.ID, System.Title from workitems 
 where Priority=1 order by System.ID asc
 ```
 
 The general format of a query consists of a `SELECT` statement and a qualifying `WHERE` clause. The following examples illustrate the basic syntax.
 
-```sql
+```WIQL
 SELECT Select_List
    FROM workitems
    [WHERE Conditions]
@@ -44,6 +45,15 @@ SELECT Select_List
    [ASOF DateTimeConditions]
 ```
 
+
+### Date-time pattern
+You specify the date-time pattern according to one of two patterns: 
+- The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
+- The pattern specified by UTC which follows this pattern (with Z appended to the date-time): 
+	`AND System.ChangedDate >= '1/1/2019 00:00:00Z' `
+
+
+### Example clauses
 
 The following example statements show specific qualifying clauses.
 
@@ -188,16 +198,19 @@ Queries use logical expressions to qualify result sets. These logical expression
 
 Some simple query operations are listed below.
  
-```sql
+```WIQL
 WHERE [System.AssignedTo] = 'joselugo'  
 WHERE [Adatum.CustomMethodology.Severity] >= 2
 ```
 
-The table below summarizes all the supported operators for different field types. For additional information on each field type, see [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md).  
+The table below summarizes all the supported operators for different field types. For additional information on each field type, see [Work item fields and attributes](../work-items/work-item-fields.md).  
 
 The `=, <>, >, <, >=, and <=` operators work as expected. For instance, `System.ID > 100` queries for all work items with an **ID** greater than 100. `System.ChangedDate > '1/1/16 12:00:00'` queries for all work items changed after noon of January 1, 2016.
 
 Beyond these basic operators, there are some behaviors and operators specific to certain field types.
+
+> [!NOTE]   
+> The operators available to you depend on your platform and version. For more information, see [Query quick reference](query-index-quick-ref.md).
 
 
 <table width="80%">
@@ -206,11 +219,23 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <th width="70%">Supported operators</th>
 </tr>
 <tbody valign="top">
+
 <tr>
-<td>Integer, Double, GUID</td>
+<td>Boolean</td>
 <td>
 
-```=, <>, >, <, >=, <=
+```
+= , <> , =[Field] , <>[Field]
+```
+</td>
+</tr>
+
+<tr>
+<td>Double, GUID, Integer</td>
+<td>
+
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
 ```
 </td>
 </tr>
@@ -219,7 +244,9 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <tr>
 <td>Boolean</td>
 <td>
-```=```
+```
+= , <> , =[Field] , <>[Field]
+```
 </td>
 </tr>
 
@@ -227,28 +254,45 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <tr>
 <td>DateTime</td>
 <td>
-```=, <>, >, <, >=, <=```
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+```
 </td>
 </tr>
 
 <tr>
-<td>String</td>
+<td>Identity</td>
 <td>
-```=, <>, >, <, >=, <=, Contains```
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+```
 </td>
 </tr>
 
 <tr>
 <td>PlainText</td>
 <td>
-```Contains```
+```
+Contains Words, Does Not Contain Words, Is Empty, Is Not Empty
+```
 </td>
 </tr>
+<tr>
+<td>String</td>
+<td>
+```
+= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+```
+</td>
+</tr>
+
 
 <tr>
 <td>TreePath</td>
 <td>
-```Under, =, <>```
+```
+=, <>, In, Not In, Under, Not Under
+```
 </td>
 </tr>
 
@@ -261,7 +305,7 @@ Beyond these basic operators, there are some behaviors and operators specific to
 
 You must quote (single or double quotes are supported) DateTime literals used in comparisons. They must be in the .NET DateTime format of the local client computer running the query. Unless a time zone is specified, DateTime literals are in the time zone of the local computer.
  
-```sql
+```WIQL
 WHERE [Adatum.Lite.ResolvedDate] >= '1/8/06 GMT' and [Resolved Date/Time] < '1/9/06 GMT'
 WHERE [Resolved Date] >= '1/8/06 14:30:01'
 ```
@@ -271,14 +315,14 @@ When the time is omitted in a DateTime literal and the dayPrecision parameter eq
 
 You must quote string literals (single or double quotes are supported) in a comparison with a string or plain text field. String literals support all Unicode characters.
 
-```sql
+```WIQL
 WHERE [Adatum.Lite.Blocking] = 'Not Blocking'
 WHERE [Adatum.Lite.Blocking] <> 'Blocked'
 ```
 
 You can use the contains operator to search for a substring anywhere in the field value. 
 
-```sql
+```WIQL
 WHERE [System.Description] contains 'WIQL' 
 ```
 
@@ -286,7 +330,7 @@ WHERE [System.Description] contains 'WIQL'
 
 You can use the under operator for the Area and Iteration Path fields. under evaluates whether a value is within the sub-tree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the sub-tree.
 
-```sql
+```WIQL
 WHERE [System.AreaPath] under 'MyProject\Server\Administration'
 ```
 
@@ -296,14 +340,14 @@ You can use some modifiers and special operators in a query expression.
 
 Use the `in` operator to evaluate whether a field value is equal to any of a set of values. This operator is supported for the String, Integer, Double, and DateTime field types. See the following example along with its semantic equivalent.
 
-```sql
+```WIQL
 WHERE [System.CreatedBy] in ('joselugo', 'jeffhay', 'linaabola')
 WHERE [System.CreatedBy] = 'joselugo' OR [System.CreatedBy] = 'jeffhay' OR [System.CreatedBy] = 'linaabola'
 ```
 
 The ever operator is used to evaluate whether a field value equals or has ever equaled a particular value throughout all past revisions of work items. The String, Integer, Double, and DateTime field types support this operator. There are alternate syntaxes for the ever operator. For example, the snippets below query whether all work items were ever assigned to 'joselugo'.
 
-```sql
+```WIQL
 WHERE ever ([Assigned To] =  'joselugo')
 WHERE [Assigned To] ever  'joselugo'
 ```
@@ -313,7 +357,7 @@ WHERE [Assigned To] ever  'joselugo'
 
 You can use the terms `and` and `or` in the typical Boolean sense to evaluate two clauses. You can group logical expressions and further conjoin them, as needed. Examples are shown below.
  
-```sql
+```WIQL
 WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([System.CreatedBy] = 'linaabola' 
 	OR [Adatum.CustomMethodology.ResolvedBy] = 'jeffhay') 
 	AND [System.State] = 'Closed'
@@ -321,11 +365,11 @@ WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([Syst
 	AND [System.State] EVER 'Closed'
 ```
 
-You can negate the `contains, under, in,` and `ever` operators by using `not`. The examples below query for all work items that are not classified within the sub-tree of 'MyProject\Feature1'.
+You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The examples below query for all work items that are not classified within the sub-tree of 'MyProject\Feature1'.
 
-```sql
+```WIQL
 WHERE [System.AreaPath] not under 'MyProject\Feature1'
-WHERE [System.AssignedTo] not ever 'joselugo'
+WHERE [System.AssignedTo] ever 'joselugo'
 ```
 
 
@@ -350,7 +394,7 @@ The following table lists the macros or variables you can use within a WIQL quer
 
 The `@me` macro substitutes the Windows Integrated account name of the user who runs the query. The example below shows how to use the macro and the equivalent static statement. Although the macro is intended for fields such as `Assigned To`, you can use it for any String field, although the result may not be meaningful.
 
-```sql
+```WIQL
 [System.AssignedTo] = @Me
 [System.AssignedTo] = 'joselugo'
 ```
@@ -360,25 +404,25 @@ You can use the `@today` macro with any DateTime field. This macro substitutes m
 
 The example below assumes that today is 1/3/16.
 
-```sql
+```WIQL
 [System.CreatedDate] = @today
 ```
 
 is the equivalent of:
 
-```sql
+```WIQL
 [System.CreatedDate] = '1/3/16'
 ```
 
 and
 
-```sql
+```WIQL
 [System.CreatedDate] > @today-2
 ```
 
 is the equivalent of:
 
-```sql
+```WIQL
 [System.CreatedDate] > '1/1/16'
 ```
 
@@ -404,7 +448,7 @@ For example, suppose a work item was classified under an iteration path of MyPro
 >[!NOTE]  
 >If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
  
-```sql
+```WIQL
 SELECT [System.Title] 
 	FROM workitems 
 	WHERE ([System.IterationPath] = 'MyProject\ProjArea' and [System.AssignedTo] = 'Mark Hanson') 
@@ -420,7 +464,7 @@ You can use the `ORDER BY` clause to sort the results of a query by one or more 
  
 The following example sorts work items first by **Priority** in ascending order, and then by **Created Date** in descending order.
 
-```sql
+```WIQL
 SELECT [System.Title] 
 	FROM workitems 
 	WHERE [System.State] =  'Active' and [System.AssignedTo] =  'joselugo' 
@@ -435,7 +479,6 @@ You can also use queries to find links between work items. A condition in the Wh
 
 The following table summarizes the differences between these types of queries and queries only for work items:
 
-TBD at a later time
 
 https://msdn.microsoft.com/library/bb130306.aspx
 
@@ -444,7 +487,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 ## Related articles 
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
-- [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md) 
+- [Work item fields and attributes](../work-items/work-item-fields.md) 
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ### Limits on WIQL length  

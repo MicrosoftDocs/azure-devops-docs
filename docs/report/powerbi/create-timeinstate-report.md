@@ -6,16 +6,16 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 ms.topic: sample
-monikerRange: 'vsts'
+monikerRange: '>= azure-devops-2019'
 ms.date: 05/18/2018
 ---
 
 # Calculate time-in-state for an existing Analytics view
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The time a work item spends in a specific state or series of states is an important aspect for understanding efficiency. The Analytics widgets, [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md), provide some measures of time-in-state. However, these widgets may not have the level of detail that you want. 
 
@@ -54,7 +54,7 @@ To simplify quickly generating reports, we designed Analytics views to work with
     > [!div class="mx-imgBorder"]  
     > ![Power BI, Modeling tab, New Measure](_img/new-measure.png)  
 
-3. Replace the default text with the following code and then click the ![](_img/checkmark.png) checkmark.
+3. Replace the default text with the following code and then click the ![ ](_img/checkmark.png) checkmark.
 
     ```DAX  
     Work Items Count = 
@@ -94,7 +94,7 @@ The following steps will help you resolve this issue.
 
 1. Verify that the *State Category* field is included in the Analytics view. This field is included in all default shared views. 
 
-2. Choose **New Column** and replace the default text with the following code and then click the ![](_img/checkmark.png) checkmark.
+2. Choose **New Column** and replace the default text with the following code and then click the ![ ](_img/checkmark.png) checkmark.
 
     ```DAX  
     State Sort Order =  
@@ -138,7 +138,7 @@ However, this approach has two main problems:
 
 To resolve these problems, the calculated column should find the previous day by scanning the *Date* field. 
 
-To add the *Date Previous* calculated column, from the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+To add the *Date Previous* calculated column, from the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 ```DAX  
 Date Previous =
@@ -167,7 +167,7 @@ This calculated column uses three DAX functions, [`MAX`](https://msdn.microsoft.
 
 It is important to consider the first day of the dataset where *Date Previous* is blank. In this example we give that row a standard value of 1 to keep the calculation consistent.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX 
@@ -189,7 +189,7 @@ This calculated column uses the [`ISBLANK`](https://msdn.microsoft.com/query-bi/
 
 In this next step, we calculate if a given row represents the last day a specific work item was in a state. This supports default aggregations in Power BI with the next column we'll add, the *State Time in Days*.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX 
@@ -209,7 +209,7 @@ The time that a work item spent in a specific state can now be calculated by sum
 > [!IMPORTANT]  
 > Requires that you have added the *Date Diff in Days* and *Is Last Day in State* calculated columns to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX 
@@ -252,7 +252,7 @@ To resolve this issue, use *State Time in Days* and apply the filter *Is Last Da
 
 In the examples above *State Time in Days* for a given work item is only counted during the period of time when the work item was in that specific state. If your goal is to have the time-in-state for a given work item count towards an average continuously, You must change the calculation. For example, if we want to track the "In Progress" state, we add the *State Time in Days - In Progress* calculated column. 
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX
@@ -281,7 +281,7 @@ The following image shows the impact of considering all time-in-state for every 
 
 Analyzing performance across multiple states is also possible using the "Continuous" pattern. However, this approach only works with a trend chart.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX
@@ -317,7 +317,7 @@ The *Date Previous* calculated column can also be used to lookup past values suc
 > [!IMPORTANT]  
 > Requires that you have added the [*Date Previous* calculated column](#date-previous) to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX 
@@ -348,7 +348,7 @@ Using the *State Previous* column, we can flag the rows for each work item where
 > [!IMPORTANT]  
 > Requires that you have added the [*State Previous*](#state-previous) calculated column to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX 
@@ -369,7 +369,7 @@ With *State Previous* and *State Changed* calculated columns, you can create a c
 > [!IMPORTANT]  
 > Requires that you have added the [State Previous](#state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX 
@@ -384,7 +384,7 @@ As we move into the more complicated measures, we need to have a representation 
 > [!IMPORTANT]
 > Requires that you have added the [*State Changed*](#state-changed) calculated column to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark. 
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark. 
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX
@@ -405,7 +405,7 @@ Calculating restarts, *State Restart Time in Days*, is a fairly complex calculat
 > [!NOTE]   
 > You may need to revise the following definitions based on the workflow states used by your project. For example, if your project uses 'New' in place of 'Proposed'. 
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX
@@ -420,7 +420,7 @@ CALCULATE (
 
 Then, look further back to the past and see if there were some active states before this proposed state. Lastly, sum up all the days when work item was in active state before the last proposed. 
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX
@@ -441,7 +441,7 @@ Since the *State Restart Time in Days* is updated for each row of data, you can 
 
 Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks for the first time a work item was in the Completed state category. After that time, each day a work item spends in a state other than Completed, counts as rework.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![](_img/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 ```DAX

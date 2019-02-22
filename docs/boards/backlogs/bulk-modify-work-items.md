@@ -1,33 +1,30 @@
 ---
-title: Bulk modify work items
-titleSuffix: Azure Boards and TFS
-description: Bulk edit/modify/update several/multiple work items, backlog items, tasks, or bugs or linked parent-child items for Azure Boards or Team Foundation Server    
-ms.technology: devops-agile
+title: Edit multiple user stories, bugs, issues, tasks, & other work items 
+titleSuffix: Azure Boards
+description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
+ms.custom: "boards-backlogs, seodec18"    
 ms.prod: devops
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 01/08/2018
 ---
 
 # Bulk modify work items  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-
-<!--- UPDATES REQUIRED FOR MULTI-VERSION  TAGGING -->  
-
 Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
 
 > [!TIP]    
 > To add work items in bulk or update multiple fields with different values, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can't perform a bulk add of work items through the web portal.   
 
-
 With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 ::: moniker range=">= tfs-2015"
 >[!div class="checklist"]    
@@ -44,9 +41,12 @@ In this topic you'll learn:
 > * Assign work from a backlog to a sprint using drag-and-drop 
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+## Supported tasks
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 
 <table width="80%">
@@ -113,6 +113,12 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2019"
+
+> [!NOTE] 
+> To exercise the **Change work item type** or **Move work items to another project**, you must have [disabled the data warehouse](../../report/admin/disable-data-warehouse.md).   
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
    
@@ -181,7 +187,7 @@ All of the following actions can be performed by team members that belong to the
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 
 <table width="80%">
@@ -244,7 +250,6 @@ All of the following actions can be performed by team members that belong to the
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  
@@ -259,9 +264,10 @@ Multi-select of work items on the backlog and sprint backlogs works in the same 
 ::: moniker range="tfs-2015"
 (Requires TFS 2015.1 or later versions)  
 ::: moniker-end
-You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position),  assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
+You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position), assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
+<br/>
 
 ::: moniker range=">= tfs-2018"
 <!---#### Azure Boards and TFS 2018-->
@@ -269,13 +275,13 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog menu </p>
-<img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu" style="border: 1px solid #C3C3C3;" />  
+<p>**Backlog menu**</p>  
+![Backlog multi-select menu](_img/bulk-m-backlog-menu-options-ts.png)  
 </td>
 
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-results-menu-options-ts.png" valign="top" alt="Query results multi-select menu" style="border: 1px solid #C3C3C3;" /> 
+<p>**Query results multi-select menu**</p>  
+![Query results multi-select menu](_img/bulk-m-query-results-menu-options-ts.png)  
 </td>
 </tr>
 </table>
@@ -287,31 +293,31 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu </p>
-<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 1px solid #C3C3C3;" />  
+<p>**Backlog multi-select menu** </p>  
+![Product backlog multi-select menu](_img/bulk-m-backlog-r-tfs-2016-menu-options.png)  
 </td>
 
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 1px solid #C3C3C3;" />  
+<p>**Query results multi-select menu** </p>  
+![Query results multi-select menu, TFS-2017](_img/bulk-m-query-r-tfs-2016-menu-options.png) 
 </td>
 </tr>
 </table>
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 <!---#### TFS 2015, TFS 2013-->
 
 <table valign="top">
 <tr valign="top">
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu</p>
-<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 1px solid #C3C3C3;" /> 
+<p>**Backlog multi-select menu**</p>  
+![Backlog multi-select menu, TFS 2015](_img/bulk-m-backlog-r-tfs-menu-options.png) 
 </td>
 
 <td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu</p>
-<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 1px solid #C3C3C3;" />  
+<p>**Query results multi-select menu**</p>  
+![Query results multi-select menu, TFS 2015](_img/bulk-m-query-r-tfs-menu-options.png)  
 </td>
 </tr>
 </table>
@@ -326,48 +332,66 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
-::: moniker range=">= tfs-2017"
-<!---#### Azure Boards and TFS 2017 -->
+::: moniker range=">= azure-devops-2019"  
+> [!div class="mx-imgBorder"]  
+> ![Product backlog, Open context menu, Move several backlog items to a different iteration](_img/bulk-modify/move-iteration.png)
+::: moniker-end  
 
-<img src="_img/bulk-modify-multi-select-ts.png" alt="Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
+::: moniker range=">= tfs-2017 <= tfs-2018"  
+![Backlog page, multi-select items, Open context menu, Move to iteration](_img/bulk-modify-multi-select-ts.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-<!---#### TFS 2015, TFS 2013-->
-
-<img src="_img/backlog-multi-select-non-sequential-items.png" alt="TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
-
+::: moniker range=">= tfs-2013 <= tfs-2015"  
+![TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration](_img/backlog-multi-select-non-sequential-items.png)  
 ::: moniker-end
+
 > [!TIP]  
->Use the backlog <b>Create Query</b> feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk updates.  
+> Use the backlog **Create Query** feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform additional bulk updates.  
 
-
-<!---
-Select the work items you want to modify. 
-
-![Select the work items you want to modify](_img/IC686840.png)
--->
 
 <a id="move-iteration"> </a> 
 <a id="assign-to"> </a>  
 ## Reassign work items 
 With work items selected, open the context menu for any selected item, and reassign all of them. By doing this, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
-![Assign to link from work item context menu](_img/IC700157.png)  
+::: moniker range=">= tfs-2017"
 
-To learn more about the Assign To and Iteration Path fields, see [Query by assignment, workflow or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
+> [!div class="mx-imgBorder"]  
+> ![Wiki view keyboard shortcuts popup](_img/bulk-modify/assign-from-query.png)  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
+
+![Assign to link from work item context menu](_img/IC700157.png)  
+ ::: moniker-end
+
+To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
 ## Edit one or more fields  
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
-::: moniker range=">= tfs-2017"
-<!---#### Azure Boards and TFS 2017 -->
+::: moniker range=">= azure-devops-2019"
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-	<img src="_img/bulk-modify-edit-fields-ts.png" alt="Azure Boards and TFS 2017, Query results page, bulk edit fields" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Edit work items dialog](_img/bulk-modify/edit-work-items-new-text-editor.png)  
+
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Query results page, save bulk modified items](_img/bulk-modify/query-results-bulk-save-items.png) 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
+
+	![TFS 2017, Query results page, bulk edit fields](_img/bulk-modify-edit-fields-ts.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
@@ -397,12 +421,22 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 ## Bulk modify tags 
 
 From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.  
+::: moniker-end
 
-Here we choose to add the Beta tag to the selected work items. 
+::: moniker range=">= tfs-2017"
+
+Here we choose to add the *Service* tag to the selected work items. 
+
+> [!div class="mx-imgBorder"]
+> ![Edit work items dialog, Add tags](_img/bulk-modify/edit-tags-dialog.png)
+> 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+Here we choose to add the *Beta* tag to the selected work items. 
 
 ![Edit work items - Add tags](../queries/_img/tags-bulk-add.png) 
-::: moniker-end 
-::: moniker range="tfs-2015" 
+
 Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 ::: moniker-end 
 

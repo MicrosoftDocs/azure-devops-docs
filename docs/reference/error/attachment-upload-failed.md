@@ -1,12 +1,12 @@
 ---
 title: Attachment upload failed with the error 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: This message might appear in a dialog box when you save a work item that has attachments 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: Troubleshooting
 ms.date: 10/22/2017
 ---

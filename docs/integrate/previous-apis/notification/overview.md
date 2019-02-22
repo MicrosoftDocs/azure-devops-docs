@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Notification overview | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Notification overview | REST API Reference for Team Foundation Server
+description: REST APIs for Team Foundation Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -14,6 +14,9 @@ ms.date: 03/13/2017
 
 <!-- title begin -->
 # Notification
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 <!-- title end -->
 <!-- version begin -->
 [!INCLUDE [API_version](../_data/version3-2-preview.md)]

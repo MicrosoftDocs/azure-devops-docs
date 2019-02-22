@@ -5,7 +5,7 @@ ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -33,7 +33,7 @@ so the pattern looks like this:
 VERB https://dev.azure.com/{organization}/_apis[/{area}]/{resource}?api-version={version}
 ```
 <br />
-For example, here's how to get a list of projects in an Azure DevOps Services organization.
+For example, here's how to get a list of projects in an organization.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
@@ -45,7 +45,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 <br />
-Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 
 ```cs
 public static async void GetProjects()
@@ -80,7 +80,7 @@ public static async void GetProjects()
 }
 ```
 <br />
-If you don't have an Azure DevOps Services organization,
+If you don't have an organization,
 you can [set one up for free](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.

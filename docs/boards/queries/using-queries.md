@@ -1,27 +1,26 @@
 ---
 title: Create managed queries with the Query Editor
-titleSuffix: Azure Boards and TFS
-description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018  
+ms.date: 02/01/2019
 ---
 
-# Create managed queries with the query editor
+# Create and save managed queries with the query editor
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
+Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere.  Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
-For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
-
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * How to open and edit a query   
@@ -30,25 +29,26 @@ In this topic you'll learn:
 > * Understand when to use a flat-list, tree, or direct-links query 
 > * How to query across projects    
 
+For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
 
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
 
 <a id="flat-list-query"/>
-## Open and edit a query  
+## Open, edit, and save a query  
 
 The easiest way to define a query is to start with an existing shared query. 
 The following example shows how to find all closed bugs by modifying the 
 *Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
 
 0.	Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
-	::: moniker range="vsts"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
 	::: moniker-end  
@@ -61,7 +61,7 @@ The following example shows how to find all closed bugs by modifying the
 
 0.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).   	
-	::: moniker range="vsts"	
+	::: moniker range=">= azure-devops-2019"	
 	> [!div class="mx-imgBorder"]
 	> ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	::: moniker-end
@@ -73,9 +73,9 @@ The following example shows how to find all closed bugs by modifying the
 	::: moniker-end
 
 0.	Save the query to your **My Queries** folder.  
-	::: moniker range="vsts"
+	::: moniker range=">= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
-	> ![Save Query As dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
+	> ![Save As query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
 	::: moniker-end
 	::: moniker range=">= tfs-2015 <= tfs-2018"	 
 	![Save Query As](_img/6.png)    
@@ -88,7 +88,7 @@ The following example shows how to find all closed bugs by modifying the
 
 You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019" 
 > [!div class="mx-imgBorder"]  
 > ![Add new query, new experience](_img/view-run-queries/new-query-new-exp.png)  
 ::: moniker-end
@@ -96,6 +96,73 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 ![Queries page, Choose New query from the drop down menu](_img/using-queries-new-query-ts.png) 
 ::: moniker-end
 
+
+<a id="define-clause" />
+## Define a clause
+You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause. 
+
+
+> [!div class="mx-imgBorder"]  
+> ![Add new query, new experience](_img/using-queries/define-clause.png)  
+
+For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the **@Me** macro which represents your user identity.
+
+### Sample query clause 
+
+<table>
+<tr>
+	<th>And/Or</th>
+	<th>Field</th>
+	<th>Operator</th>
+	<th>Value</th></tr>
+<tr>
+	<td><p><strong>And</strong></p></td>
+	<td><p><strong>Assigned To</strong></p></td>
+	<td><p><strong>=</strong></p></td>
+	<td><p><strong>&#64;Me</strong></p></td>
+</tr>
+</table>
+
+For a quick reference of the operators available based on the field data type, see [Query index quick reference](query-index-quick-ref.md#fields-operators-macros). 
+
+All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required.  
+
+### Checklist for how to define a query clause
+
+1.  In the first empty row, under the **Field** column heading, choose the down arrow to display the list of available fields, and choose an item in the list.
+
+    For more information, see [Query Fields and Values](#fields-values).
+
+2.  In the same row, under the **Operator** column heading, choose the down arrow to display the list of available operators, and choose an item in the list.
+
+    For more information, see [Operators](#operators).
+
+3.  In the same row, under the **Value** column heading, either type a value, or choose the down arrow, and choose an item in the list.
+
+    For more information about how to use variables to specify the current project, user, or date, see [Variables](#variables).
+
+5.  To add a clause, choose **Click here to add a new clause** or **Add a new clause**.
+
+    You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](_img/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](_img/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](_img/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](_img/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
+
+<a id="and-or" /> 
+## And/Or logical expression
+
+You specify **And** or **Or** to create logical expressions of your query clauses. Specify **And** to find work items that meet the criteria in both the current clause and the previous clause. Specify **Or** to find work items that meet the criterion in either the current clause or the previous clause.
+
+You can add one new clause for each work item field in order to refine your search criteria, so that it returns only the set of work items that you want. If you do not receive the results that you expect from your query, you can add, remove, group, or ungroup query clauses to refine your query results.
+
+Query clauses can be grouped to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
+
+As the following example shows, the grouped clauses are translated to the corresponding logical expression. The first expression returns work items that are priority 1, as well as all active bugs of any priority. The second expression returns all active priority 1 work items, plus all priority 1 bugs whether they are active or not.
+
+|Grouped clauses|Logical expression|
+|---|---|
+|![ ](_img/query-fields-operators-values-variables/IC425364.png)|Priority=1 OR (Work Item Type=Bug AND State=Active)|
+|![ ](_img/query-fields-operators-values-variables/IC425365.png)|Priority=1 AND (Work Item Type=Bug OR State=Active)|
+
+
+<a id="group-clauses" /> 
 
 ## Group clauses
 
@@ -108,10 +175,16 @@ In the next example, the first expression returns all work items that are priori
 | ![Filter Using an OR/AND Operator](_img/8.png) | Priority = 1 OR (Work Item Type=Bug AND State=Active) |
 | ![Filter Using an AND/OR OR Operator](_img/9.png) | Priority = 1 AND (Work Item Type=Bug OR State=Active) |
 
-To group one or more clauses, select them and then choose the ![Group Query Clause icon](../_img/icons/group-clauses-icon.png) group clauses icon.
+To group one or more clauses, select them and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Group Selected Query Clauses](_img/view-run-queries/group-clauses.png)
+
+You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
+
+> [!div class="mx-imgBorder"]  
+> ![Group multiple query clauses](_img/using-queries/multiple-clauses.png)
+
 
 If your query results do not return your expected set of work items, follow these steps: 
 
@@ -121,12 +194,17 @@ If your query results do not return your expected set of work items, follow thes
 - Add more query clauses to refine your query filter criteria.  
 - Review the options available to specify [fields, operators, and values](query-operators-variables.md).  
 
+<a id="ungroup-clause" />
+## Ungroup a clause
+
+To ungroup a clause, choose the [ ](../_img/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
+
 <a id="tree-query" />
 ## Use a tree query to view hierarchies  
 
 Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) leaf nodes to focus on different parts of the tree.  
 
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019" 
 > [!div class="mx-imgBorder"]  
 > ![Results List Showing a Tree Query, new experience](_img/view-run-queries/tree-query-new-exp.png)  
 ::: moniker-end  
@@ -178,7 +256,7 @@ Filter your first-tier list of work items by choosing one of these options:
 
 - **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
 
-To learn more about each link type, see [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md).
+To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
 
 <a id="across-projects" />  
@@ -222,10 +300,11 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 
 ::: moniker-end
 
-## Task board versus query list items
+## Taskboard versus query list items
 
-You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
+<a id="export-query" />  
 ## Export a query  
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../../reference/process-templates/define-work-item-query-process-template.md). 
 
@@ -234,7 +313,7 @@ See also:
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > [!NOTE]  
 > The WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
 ::: moniker-end
@@ -243,7 +322,7 @@ See also:
 
 That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-- [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
+- [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)

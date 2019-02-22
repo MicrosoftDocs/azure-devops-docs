@@ -6,7 +6,7 @@ ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.prod: devops
 ms.technology: devops-code-git 
 toc: show
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2015'
 
 Share your Visual Studio solution in a new Azure DevOps Services or Team Foundation Server Git repo.
 
-> This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have an Azure DevOps organization.
+> This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have an organization in Azure DevOps.
 > If you need to work with a Visual Studio solution hosted in an existing repo, use the [Git quick start](gitquickstart.md) instead.
 
 ##  Create a local Git repo for your project
@@ -48,7 +48,7 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 ## Publish your code to Azure Repos
 
-0. In the **Sync** view in Team Explorer, select the **Publish Git Repo** button under **Publish to Azure Repos**.
+1. In the **Sync** view in Team Explorer, select the **Publish Git Repo** button under **Publish to Azure Repos**.
 
  ![Publish your code from VS directly into Azure Repos](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
 

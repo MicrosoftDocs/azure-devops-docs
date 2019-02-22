@@ -1,19 +1,22 @@
 ---
-title: App Center Distribute
-description: Distribute app builds to testers and users via App Center
+title: App Center Distribute task
+description: Distribute app builds to testers and users through App Center
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B832BEC5-8C27-4FEF-9FB8-6BEC8524AD8A
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy: App Center Distribute
+# App Center Distribute task
 
-![](_img/appcenterdistribute.png) Distribute app builds to testers and users via App Center
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+
+Use this task in a build or release pipeline to distribute app builds to testers and users through App Center.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -45,10 +48,4 @@ monikerRange: '>= tfs-2017'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

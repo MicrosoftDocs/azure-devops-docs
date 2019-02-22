@@ -2,15 +2,16 @@
 title: Work across projects 
 titleSuffix: Azure DevOps Services & TFS 
 description: Quickly link to work items, pull requests, team projects, and more using your account home page in Azure DevOps Services & Team Foundation Server 
+ms.custom: Navigation
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 07/21/2018
+ms.date: 02/08/2019
 ---
 
 
@@ -22,30 +23,14 @@ When you work on several projects, you can use select pages to support your cros
 
 For example, you can quickly access and navigate to the following artifacts defined across projects.  
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
-- **Projects**: Projects defined for an Azure DevOps organization  
+::: moniker range=">= azure-devops-2019"
+- **Projects**: Projects defined for an organization in Azure DevOps
 - **Work items**: Work items assigned to you
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
 - **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more &mdash;that you've favorited
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="vsts"
-- **Projects**: Team projects and teams within the projects that you work in  
-- **My Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited
-- **My work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated  
-- **My pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
-
-::: moniker-end
 
 ::: moniker range="tfs-2018"
 - **Projects**: Team projects and teams within the projects that you work in  
@@ -67,21 +52,14 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 ::: moniker-end
 
----
-
-
 To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
 
 
 ## View and open work items
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
-
-To view work items assigned to you across projects, choose the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Work Items**. 
+To view work items assigned to you across projects, choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View work assigned to you across projects](_img/projects-page/view-work-across-projects.png) 
@@ -89,27 +67,14 @@ To view work items assigned to you across projects, choose the ![](../../_img/ic
 To view work items assigned to you for a specific project, [open **Work>Work Items>Assigned to Me**](../../boards/work-items/view-add-work-items.md). 
 
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-
-# [Previous navigation](#tab/previous-nav)
-
-Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open Projects page](../../_shared/_img/settings/open-project-hub-horz.png)   
-
-::: moniker range="vsts"
-Choose **My work items** to access the set of work items assigned to you or followed by you. The lists available from each page span all projects that you work in.
-
-The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, choose its title.
-
-> [!div class="mx-imgBorder"]  
-> ![Account home, Work, Assigned to me page](_img/projects-page/account-home-work-assigned-to-me.png)  
 
 ::: moniker-end
 
@@ -118,17 +83,15 @@ Choose **Work items** to access the set of work items assigned to you or followe
 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, choose its title.
 
-
 ![Account home, Work, Assigned to me page](_img/org-hub-tfs/account-home-work-assigned-to-me.png) 
 
 ::: moniker-end
-
 
 ### Work you're following
 
 Choose **Following** to open the page that lists all the work items [you've marked to follow](../../boards/work-items/follow-work-items.md). To stop following an item and remove it from your list, choose the ![followed icon](../../_img/icons/icon-followed.png) following icon.
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Account home, Work, Following page](_img/projects-page/account-home-work-following.png)  
 ::: moniker-end
@@ -138,7 +101,7 @@ Choose **Following** to open the page that lists all the work items [you've mark
 ::: moniker-end
 
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 ### My activity
 
 Choose **My activity** to open the page that lists all work items that you have recently viewed or updated.  
@@ -152,41 +115,22 @@ Choose **My activity** to open the page that lists all work items that you have 
 
 Similar to the Favorites page, you can filter the work pages by typing a keyword in the *Filter your work items...* box. The list will filter based on keyword matches to the work item ID, title, state, or team project name.
 
----
-
-
 ## View and open pull requests
 
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
-
-To view pull requests you created  or that are assigned to you across projects, choose the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Pull requests**. 
+To view pull requests you created  or that are assigned to you across projects, choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Pull requests**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View pull requests assigned to you across projects](_img/projects-page/view-pull-requests-vert.png) 
 
-
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Open the **Projects>Pull requests** page to access any pull request that's relevant to you across all projects you work in. Choose **Active** or **Completed** to pivot between the active or completed set of pull requests. To initiate a pull request, choose **New pull request**.
 
-::: moniker range="vsts"
-> [!div class="mx-imgBorder"]  
-> ![Account home, My Pull requests, Active](_img/projects-page/account-home-pull-requests.png)  
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
 ![Account home, Pull requests, Active](_img/org-hub-tfs/account-home-pull-requests.png) 
-::: moniker-end
 
 From each page, you're one choice away from navigating to the branch or repository for a pull request. This mirrors capabilities on the  project **Code>Pull Requests** page.
 
@@ -194,38 +138,25 @@ From each page, you're one choice away from navigating to the branch or reposito
 
 Similar to the Favorites page, you can filter the list by typing a keyword in the *Filter pull requests* box.
 
----
+::: moniker-end
 
 
 ## View and open favorites 
 
 You can view favorites you've set across projects. To learn more about working with favorites, see [Set personal or team favorites](set-favorites.md).
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019" 
 
-::: moniker range="vsts"  
-
-Choose the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
+Choose the ![ ](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View your favorited items](_img/favorites/open-favorites-page-vnav.png) 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="vsts"
-Open the **My favorites** page to quickly access any object or item that you've marked as a favorite.
-::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 Open the **Favorites** page to quickly access any object or item that you've marked as a favorite.
-::: moniker-end
 
 > [!div class="mx-imgBorder"]  
 > ![Account home favorites page](_img/projects-page/account-home-favorites.png)
@@ -234,7 +165,7 @@ To learn more about working with favorites, see [Set personal and team favorites
 
 ### Favorite and unfavorite an item
 
-To mark any item as a favorite, choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the object. 
+To mark any item as a favorite, choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the object. 
 
 To remove an item from your favorites list, choose the favorited icon.
 
@@ -244,7 +175,8 @@ To remove an item from your favorites list, choose the favorited icon.
 
 To filter the list, type a keyword in the *Filter favorites* box. The list will filter based on keyword matches to the title or team project name associated with the favorited item.
 
----
+::: moniker-end
+
 
 
 ::: moniker range="tfs-2017"

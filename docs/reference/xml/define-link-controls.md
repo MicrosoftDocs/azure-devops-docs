@@ -5,7 +5,7 @@ description: Controls and restrict the link relationships that the team members 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/14/2017
@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 # Define link controls to restrict link relationships
 
-<b>TFS 2017 (Hosted XML) | TFS 2015 | TFS 2013</b>
+<b>TFS 2017 | TFS 2015 | TFS 2013</b>
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
@@ -103,7 +103,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 <a name="NonWILinks"></a> 
 ## Restrict link relationships to external objects (not work items)   
- You use the `ExternalLinkFilters` and the `Filter` child elements to define which link types to items that are external to the project the links control should include or exclude. These objects correpond to changesets, hyperlinks, commits, and other objects. The syntax for these elements is as follows.  
+ You use the `ExternalLinkFilters` and the `Filter` child elements to define which link types to items that are external to the project the links control should include or exclude. These objects correspond to changesets, hyperlinks, commits, and other objects. The syntax for these elements is as follows.  
   
 ```xml
 <ExternalLinkFilters FilterType="include | exclude | includeAll | excludeAll">  

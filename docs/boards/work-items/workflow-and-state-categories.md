@@ -1,17 +1,19 @@
 ---
-title: Workflow states and state categories
-titleSuffix: Azure Boards and TFS   
-description: Understand how workflow states map to state categories in Azure Boards and Team Foundation Server   
+title: Understand how backlogs and boards use workflow states and state categories
+titleSuffix: Azure Boards   
+description: Understand how workflow states map to state categories and are used in boards and backlogs in Azure Boards & TFS
+ms.custom: seodec18   
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: conceptual
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
-# Workflow states and state categories
+# How workflow states and state categories are used in Backlogs and Boards
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -51,7 +53,7 @@ Here's how the default, inherited states map to the state categories for all thr
 <th width="16%">Test WITs </th>
 </tr>
 <tr valign="top" >
-<td>**Proposed:** Assign to states associated with newly added work items that should appear on the backlog. The first column on the Kanban or task board maps to a Proposed state. </td> 
+<td>**Proposed:** Assign to states associated with newly added work items that should appear on the backlog. The first column on the Kanban or taskboard maps to a Proposed state. </td> 
 <td>New</td> 
 <td>New<br/>Approved<br/>To Do (Task) </td> 
 <td>Proposed<br/></td> 
@@ -121,10 +123,18 @@ To learn more about process models, see [Customize your work tracking experience
 
 ## Related articles
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end
+
+::: moniker range="azure-devops-2019"
+- [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
+- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
+- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 - [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)

@@ -22,7 +22,7 @@ Now, let’s talk about some of the improvements in today's update…
 
 ##Customizable Kanban Swim Lanes
 
-When we first introduced our kanban board [back in August of last year](../2012/aug-13-team-services.md), we knew a few key features were missing from the experience; most noticeably, the ability to customize the swim lanes on the board. Today we’re happy to announce that customizable swim lanes are here!
+When we first introduced our kanban board [back in August of last year](https://visualstudio.microsoft.com/articles/news/2012/aug-13-team-services), we knew a few key features were missing from the experience; most noticeably, the ability to customize the swim lanes on the board. Today we’re happy to announce that customizable swim lanes are here!
 
 How does it work? Navigate to your board from the backlog hub. Click the new **Customize Columns** option from the toolbar. Now you can configure the swim lanes (columns) for your board.
 
@@ -72,6 +72,6 @@ Finally, this sprint we enabled support for scheduled builds with Git repositori
 
 **Note:** To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](/visualstudio/releasenotes/vs2012-update2-vs).
 
-That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,

@@ -1,20 +1,25 @@
 ---
-title: Azure Pipelines and TFS Build and Test - Publish Test Results task
+title: Publish Test Results task
 description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 01/08/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Publish Test Results
+# Publish Test Results task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+
+Use this task in a build pipeline to publish code coverage results produced when running tests to Azure Pipelines
+or TFS in order to obtain coverage reporting. The task supports popular coverage result formats such as
+[Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
 
 ::: moniker range="<= tfs-2018"
 
@@ -22,24 +27,17 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-![icon](_img/publish-test-results-icon.png)
-This task publishes test results to Azure Pipelines or TFS when tests are
-executed using your choice of runner, and when results are available in any of the
-supported result formats.
-
 The test result formats supported by the task include [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
 [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
-Other built-in tasks such as [Visual Studio Test](vstest.md) automatically publish test results to the pipeline,
-while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md),
-[Grunt](../build/grunt.md), and [Xcode](../build/xcode.md) provide this as an option within the task.
 
-The following example shows a Maven task configured to publish test results.
-
-![Open the test history page](_img/publish-test-result-maven.png)
+The [Visual Studio Test task](vstest.md) automatically publishes test results to the pipeline, while tasks such as
+[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+provide publishing results as an option within the task.
+If you are using these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
 The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
-in a build or release summary.
+in a pipeline summary.
 
 <a name="demands"></a>
 
@@ -59,6 +57,11 @@ The default option uses JUnit format to publish test results.
 When using VSTest as the **testRunner**, the **testResultsFiles** option should
 be changed to `**/TEST-*.trx`. 
 
+**testResultsFormat** is an alias for the **testRunner** input name.
+The results files can be produced by multiple runners, not just a specific
+runner. For example, jUnit results format is supported by many runners and
+not just jUnit.
+
 To publish test results for Python using YAML, see [Python](../../languages/python.md)
 in the **Languages** section of these topics, which also includes examples for other languages. 
 
@@ -77,6 +80,7 @@ in the **Languages** section of these topics, which also includes examples for o
 | **Test results files** | Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. |
 | **Search folder** | Folder to search for the test result files. Default is `$(System.DefaultWorkingDirectory)` |
 | **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. |
+| **Fail if there are test failures** | When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. |
 | **Test run title** | Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
 | **Advanced - Platform** | Build platform against which the test run should be reported. For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. |
 | **Advanced - Configuration** | Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. |
@@ -98,9 +102,9 @@ in a build or release summary, and the corresponding mapping with the attributes
 | | Duration | Date completed - Date started | Date completed - Date started | Date completed - Date started | Date completed - Date started | Date completed - Date started |
 | | Attachments | Refer to **Attachments support** section below | Results file, used to publish test results | Results file used to publish test results | Refer to **Attachments support** section below | Results file used to publish test results |
 | [**Test result**](../../test/test-glossary.md) | Title | /TestRun/Results/UnitTestResult.Attributes["**testName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**testName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**testName**"].Value | /testsuites/testsuite/testcase/Attributes["**name**"].Value | /test-results/results/test-case.Attributes["**name**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**name**"].Value | /assemblies/assembly/collection/test.Attributes["**method**"].Value |
-| | Duration | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite/testcase/.Attributes["**time**"].Value | /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**duration**"].Value | /assemblies/assembly/collection/test.Attributes["**time**"].Value |
 | | Date started | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**start-time**"].Value | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** |
 | | Date completed | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value + /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value + /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value + /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value +  /testsuites/testsuite/testcase.Attributes["**time**"].Value | Date started + /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**end-time**"].Value | Date started + /assemblies/assembly/collection/test.Attributes["**time**"].Value |
+| | Duration (See note 1) | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite/testcase/.Attributes["**time**"].Value | /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**duration**"].Value | /assemblies/assembly/collection/test.Attributes["**time**"].Value |
 | | Owner | /TestRun/TestDefinitions/UnitTest/Owners/Owner.Attributes["**name**"].Value | /testsuites/testsuite/testcase/Attributes["**owner**"].Value | build or release requested for user | build or release requested for user | /assemblies/assembly/collection/test/traits/trait[@name='owner'].Attributes["**value**"].Value |
 | | Outcome | /TestRun/Results/UnitTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/WebTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**outcome**"].Value | **Failed**: if exists /Testsuites/testsuite/testcase/**failure** Or /Testsuites/testsuite/testcase/**error** <br/>**Not Executed**: if exists Testsuites/testsuite/testcase/**skipped** <br/>**Passed**: for all other cases | **Failed**: if exists /test-results/results/test-case/**failure** <br/>**Not Executed**: if exists /test-results/results/test-case.Attributes["**result**"].Value=="Ignored" <br/>**Passed**: for all other cases | /test-results/test-suite/results/test-case.Attributes["**result**"].Value | /assemblies/assembly/collection/test/failure.Attributes["**result**"].Value |
 | | Error message | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**Message.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**Message.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**Message.InnerText** | /Testsuites/testsuite/testcase/failure.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/error.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/skipped.Attributes["**message**"].Value | /test-results/results/test-casefailure/**message.InnerText** | /test-suite[@type='Assembly']/test-case/failure/**message** | /assemblies/assembly/collection/test/failure/**message** |
@@ -112,6 +116,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 | | Test file | /TestRun/TestDefinitions/UnitTest.Attributes["**storage**"].Value | /testsuites/testsuite/testcase/Attributes["**classname**"].Value | /test-results/test-suite.Attributes["**name**"].Value | /test-suite[@type='Assembly'].Attributes["**name**"].Value | /assemblies/assembly.Attributes["**name**"].Value |
 | | Priority | /TestRun/TestDefinitions/UnitTest.Attributes["**priority**"].Value | - | - | - | /testcaseNode/traits/trait[@name='priority'].Attributes["**value**"].Value |
 
+Note (1): **Duration** is used only when **Date started** and **Date completed** are not available. 
 
 <a name="docker"></a>
 
@@ -143,7 +148,7 @@ The final image will be published to Docker or Azure Container Registry
 
 1. Create a `Dockerfile.build` file at the root of the directory with the following:
 
-   ```Dockerfile.build
+   ```Dockerfile
    # Build and run tests inside the docker container
    FROM microsoft/dotnet:2.1-sdk
    WORKDIR /app
@@ -164,13 +169,13 @@ The final image will be published to Docker or Azure Container Registry
    replace the contents of the existing `Dockerfile` with the following:
 
    ```Dockerfile
-   # This Dockerfile creates the final image to be published to Docker or 
+   # This Dockerfile creates the final image to be published to Docker or
    # Azure Container Registry
    # Create a container with the compiled asp.net core app
    FROM microsoft/aspnetcore:2.0
    # Create app directory
    WORKDIR /app
-   # Copy only the deployment artifacts 
+   # Copy only the deployment artifacts
    COPY /out .
    ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
    ```
@@ -179,14 +184,15 @@ The final image will be published to Docker or Azure Container Registry
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 1. If you have a Docker Hub account, and want to push the image to your Docker registry,
    replace the contents of the `.vsts-ci.docker.yml` file with the following:
 
    ```YAML
    # Build Docker image for this app, to be published to Docker Registry
-   queue: Hosted Linux Preview
+   pool:
+     vmImage: 'ubuntu-16.04'
    variables:
      buildConfiguration: 'Release'
    steps:
@@ -201,6 +207,7 @@ The final image will be published to Docker or Azure Container Registry
      inputs:
        testRunner: VSTest
        testResultsFiles: '**/*.trx'
+       failTaskOnFailedTests: true
 
    - script: |
        docker build -f Dockerfile -t $(dockerId)/dotnetcore-sample:$BUILD_BUILDID .
@@ -215,10 +222,11 @@ The final image will be published to Docker or Azure Container Registry
 
    ```YAML
    # Build Docker image for this app to be published to Azure Container Registry
-   queue: Hosted Linux Preview
+   pool:
+     vmImage: 'ubuntu-16.04'
    variables:
      buildConfiguration: 'Release'
-   
+
    steps:
    - script: |
        docker build -f Dockerfile.build -t $(dockerId)/dotnetcore-build:$BUILD_BUILDID .
@@ -231,6 +239,7 @@ The final image will be published to Docker or Azure Container Registry
      inputs:
        testRunner: VSTest
        testResultsFiles: '**/*.trx'
+       failTaskOnFailedTests: true
 
    - script: |
        docker build -f Dockerfile -t $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID .
@@ -248,7 +257,7 @@ The final image will be published to Docker or Azure Container Registry
 
 1. Update your build pipeline with the following
 
-   * **Agent pool**: `Hosted Linux Preview`
+   * **Agent pool**: `Hosted Ubuntu 1604`
      - **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
      - **dockerPassword**: Set the value to your password for DockerHub or the admin password Azure Container Registry. 
    * **YAML file path**: `/.vsts-ci.docker.yml`
@@ -257,7 +266,7 @@ The final image will be published to Docker or Azure Container Registry
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -267,9 +276,9 @@ YAML builds are not yet available on TFS.
 
 1. Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
 
-   * **Agent queue**: `Hosted Linux Preview`
+   * **Agent queue**: `Hosted Ubuntu 1604`
 
-1. Add a [Bash task](../utility/bash.md) after the Docker task and configure it as follows to build and copy artifacts to the host:
+1. Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
 
    * **Type**: Inline
    * **Script**: To build, test and copy artifacts to host, use the following script:
@@ -310,7 +319,7 @@ YAML builds are not yet available on TFS.
 1. If you use Azure Container Registry, ensure you have
    [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
-       
+
 1. In the **Variables** tab of the build pipeline, define two variables:
 
    * **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
@@ -336,7 +345,6 @@ The Publish Test Results task provides support for attachments for both test run
 | **Test result** | Data Collectors | /TestRun/Results/UnitTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/WebTestResult/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value Or /TestRun/Results/TestResultAggregation/CollectorDataEntries/Collector/UriAttachments/UriAttachment/A.Attributes["**href**"].Value |
 | | Test Result | /TestRun/Results/UnitTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/WebTestResult/ResultFiles/ResultFile.Attributes["**path**"].Value Or /TestRun/Results/TestResultAggregation/ResultFiles/ResultFile.Attributes["**path**"].Value |
 
-
 ### NUnit 3
 
 | Scope | Path |
@@ -354,6 +362,6 @@ The Publish Test Results task provides support for attachments for both test run
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]

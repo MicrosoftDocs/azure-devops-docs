@@ -6,16 +6,16 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/2/2018
 ---
 
 # Query for linked work items 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
@@ -28,6 +28,17 @@ In this topic you'll learn:
 > * How to construct a query to return non-hierarchically (related, direct) linked work items 
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
+
+::: moniker range=">= azure-devops-2019"
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+::: moniker-end
 
 
 ## Parent/Child hierarchy

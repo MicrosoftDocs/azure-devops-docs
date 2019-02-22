@@ -1,15 +1,16 @@
 ---
-title: Change individual or group permissions, grant select access to specific functions 
+title: Change individual or group permissions
+titleSuffix: Azure DevOps & TFS
 description: Add custom security groups, change permissions for groups or individuals tutorial
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 02/11/2019
 ---
 
 
@@ -21,11 +22,11 @@ The standard way for permissions to accrue to individuals are by adding user acc
 
 The three ways to change permissions for an individual are:
 
-- Create a custom group, define permissions for that group, add the user account to the group
+- Create a custom Azure DevOps security group, define permissions for that group, add the user account to the group
 - For object-level permissions: Add the user account and set permissions
 - For project or collection-level permissions: Search for the user account and selectively change their permission assignments
 
-In this topic you learn how to do the following:
+In this article you learn how to do the following:
 > [!div class="checklist"]
 > * Create a custom security group 
 > * Set permissions for a custom security group 
@@ -44,14 +45,12 @@ Create a custom security group at the project-level or the collection-level. The
 
 To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 
 1. Choose **Project Settings** > **Security**.
+
+	*To see the full image, click to expand*.
 
 	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
@@ -67,14 +66,10 @@ To create a project-level security group, open the web portal and choose the pro
     ![Security group dialog, Add a security group at the project level](_img/change-individual-permissions/create-project-level-group-dialog.png)
 
 4. Choose **Create group**.
-::: moniker-end  
-
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker-end
 
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
 
@@ -94,7 +89,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 4. Choose **Create group**.
 
----
+::: moniker-end
 
 <a id="set-permissions-custom-group" />
 
@@ -120,7 +115,7 @@ You add members to a custom security group in the same way you add users to a bu
 	> [!div class="mx-imgBorder"]
 	> ![Security>Members page, Add member](_img/change-individual-permissions/team-admin-group-add-members.png)  
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice.
+1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
     ![Add users and group dialog](_img/project-level-permissions-add-a-user.png) 
 
@@ -131,7 +126,7 @@ You add members to a custom security group in the same way you add users to a bu
 
 ### To change the permission at a project-level
 
-1. From the project-level **Security** page, type the name of the user account in the **Filter users and groups** box and select the account whose permissions you want to change.
+1. From the project-level **Security** page, enter the name of the user account in the **Filter users and groups** box and select the account whose permissions you want to change.
 
 	> [!div class="mx-imgBorder"]
 	> ![Filter and select a user account](_img/change-individual-permissions/filter-user-account.png)  
@@ -217,6 +212,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 ## Related articles
 
+- [Permissions lookup guide](permissions-lookup-guide.md)
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)

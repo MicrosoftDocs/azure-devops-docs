@@ -3,9 +3,9 @@ title: Project API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 05/15/2017
 ---
 
 # Project API Contracts
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 
 
 <a id="JsonPatchDocument"></a>

@@ -1,17 +1,19 @@
 ---
-title: Use Agile tools to organize your backlog
-titleSuffix: Azure Boards and TFS  
-description:  Map backlog items to features, and features to epics in Azure Boards or Team Foundation Server
+title: Organize your product backlog into a hierarchy of items 
+titleSuffix: Azure Boards  
+description:  Map or parent backlog items to features, and features to epics in Azure Boards or TFS
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 02/14/2019
 ---
+
 
 # Organize your backlog, map child work items to parents 
 
@@ -20,7 +22,7 @@ ms.date: 06/21/2018
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
 
 
-In this topic you'll learn how to:  
+In this article you'll learn how to:  
 
 ::: moniker range=">= tfs-2018"
 
@@ -44,22 +46,26 @@ In this topic you'll learn how to:
  
 ::: moniker range="tfs-2013"
 > [!NOTE]   
-> The epic portfolio backlog is supported in TFS 2015 and later versions.  
+> The Epic portfolio backlog is supported in TFS 2015 and later versions.  
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
+::: moniker range="azure-devops"
+Users with **Stakeholder** access for a private project can't use drag and drop to map or reparent work items or change their sprint. 
+::: moniker-end
+
+
+::: moniker range="<= azure-devops-2019"
+Users with **Stakeholder** access can't use drag and drop to map or reparent work items or change their sprint. 
+::: moniker-end
 
 ## Open your backlog from the web portal
 
-From your web browser, open your product backlog from **Work**, **Backlogs** page.  
+From your web browser, open your product backlog.  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -71,30 +77,22 @@ From your web browser, open your product backlog from **Work**, **Backlogs** pag
 	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
 0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
 
-0. (Optional) To choose which columns should display and in what order, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -107,7 +105,8 @@ To choose another team, open the project/team selector and select a different te
 > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2015"
+
+::: moniker range="<= tfs-2015"
 
 From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
@@ -115,20 +114,16 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ::: moniker-end
 
----
-
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]
 
 ## Show parents and expand the tree hierarchy  
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range="vsts"
-
-0. To view Parents or a tree hierarchy, choose the ![](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
+0. To view Parents or a tree hierarchy, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
+	> ![Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
 
 	The hierarchical view displays. From this view, you can reparent items by drag and drop, moving a child item to a new parent. 
 
@@ -143,13 +138,8 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag and drop items to reparent items from this view.   
 
@@ -159,8 +149,7 @@ Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![coll
   
 ![Collapsed hierarchical view](_img/org-backlog-collapse-backlog-ts-new-nav.png) 
 
----
-
+::: moniker-end
 
 
 <a id="mapping">  </a>
@@ -168,14 +157,12 @@ Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![coll
 ## Map items to group them under a feature or epic 
 If you've already created your backlog, and now you want to organize it, you can do that most easily by mapping child items to parents.   
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range="vsts"
-
-0. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
+0. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
+	> ![Boards>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
 
 	The Mapping pane displays immediately. 
 
@@ -189,13 +176,8 @@ If you've already created your backlog, and now you want to organize it, you can
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 To map a backlog item under a feature, you first turn mapping on from your backlog (Backlog items, Stories, or Requirements). Next, find the Unparented backlog items group by turning the Parents control to Show. Unparented backlog items will appear at the end of the parented set of backlog items. 
  
@@ -203,10 +185,13 @@ Drag items that are currently unparented to the feature under which they belong.
 
 ![Map a backlog item to a portfolio backlog work item](_img/org-backlog-map-pbi-to-feature-ts-new-nav.png) 
 
+::: moniker-end
+
 ::: moniker range=">= tfs-2017"
 
-You can multi-selectwork items on the backlog and sprint backlogs in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+You can multi-select work items on the backlog and sprint backlogs in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 ::: moniker-end
+
 ::: moniker range="tfs-2015"
 Multi-select of work items on the backlog and sprint backlogs requires TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 ::: moniker-end
@@ -216,7 +201,6 @@ It's the same process to map features to epics. From the Features backlog, drag 
 
 ::: moniker-end
 
----
 
 ::: moniker range=">= tfs-2015"
 <a id="reparent">  </a>
@@ -226,7 +210,8 @@ When you need to change the order or grouping, simply drag the item to its new l
 
 You can re-parent an item using the mapping pane, or simply drag it within the hierarchy to change its parent.  
 
-![Reparent or reorder work items on a backlog](_img/ALM_OB_ReparentAnItem.png) 
+> [!div class="mx-imgBorder"]  
+> ![Reparent or reorder work items on a backlog](_img/organize-backlog/reparent.png) 
 
  You can only re-parent backlog items under other features, and features under other epics. 
 
@@ -242,10 +227,12 @@ This works the same as when you [moved items into priority order on your product
 
 From the product backlog you can multi-select several work items and choose **Change parent&hellip;** to link the items to a parent work item item. 
 
-![Change parent of several backlog items](_img/organize-backlog/change-parent-option.png)
+> [!div class="mx-imgBorder"]  
+> ![Change parent of several backlog items](_img/organize-backlog/multi-reparent.png)
 
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
 ## Related articles  
 
@@ -253,6 +240,6 @@ From the product backlog you can multi-select several work items and choose **Ch
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs ](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 

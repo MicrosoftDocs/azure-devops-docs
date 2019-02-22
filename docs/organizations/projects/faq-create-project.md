@@ -1,26 +1,27 @@
 ---
-title: Troubleshoot creating a project
-description: Troubleshoot creating a project, including how to resolve various errors, and view frequently asked questions (FAQ)
+title: Troubleshoot creating a project - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: View frequently asked questions (FAQs), like creating a project and how to resolve various errors.
 ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2017
+ms.date: 12/19/2017
 monikerRange: '>= tfs-2013'
 ---
 # Troubleshoot creating a project
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-tfs-all-versions.md)]Â  
-
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
 
 ## Resolve errors
 
 ### To resolve permission related errors
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md).  
 ::: moniker-end
 
@@ -35,7 +36,7 @@ If you receive an error message that states you don't have permission, go get th
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### To resolve Error TF30169
 
-**Error TF30169: The New Team Project Wizard was unable to download the process template {0}**  indicates that SharePoint site process templates are not available on the server that hosts SharePoint products.
+**Error TF30169: The New Team Project Wizard was unable to download the process template {0}**  indicates that SharePoint site process templates aren't available on the server that hosts SharePoint products.
 
 Contact the system administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Requirements and compatibility](/tfs/server/requirements).
 
@@ -43,9 +44,9 @@ Contact the system administrator for the server that hosts SharePoint Products a
 
 ### To resolve Error TF30321 
 
-**Error TF30321: The name you typed is already used for another project on the Team Foundation Server** indicates that you should use a different name for your project. The name you entered is either in active use or has undergone partial deletion, but not full deletion.  
+**Error TF30321: The name you entered is already used for another project on the Team Foundation Server** indicates that you should use a different name for your project. The name you entered is either in active use or has undergone partial deletion, but not full deletion.  
 
-Even when you've deleted a project, you may get the same name error. If a project create or delete operation doesn't successfully finish, some components could be created or deleted even though others are not. In this event, you can't reuse the name associated with the project.
+Even when you've deleted a project, you may get the same name error. If a project create or delete operation doesn't successfully finish, some components could be created or deleted even though others aren't. In this event, you can't reuse the name associated with the project.
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 To verify project deletion or remove remaining components associated with a partially deleted project, use the [Delete project command line tool(TFSDeleteProject)](/tfs/server/command-line/tfsdeleteproject-cmd). Then try again to create the project with the same name.
@@ -112,7 +113,7 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 ### Q: Where can I go if I have more questions?
 
-**A:** You can post a question or search for answers in our [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services), or through ourÂ [Support](https://www.visualstudio.com/team-services/support/)Â portal.
+**A:** You can post a question or search for answers in our [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services), or through our   [Support](https://www.visualstudio.com/team-services/support/)   portal.
 
 
 

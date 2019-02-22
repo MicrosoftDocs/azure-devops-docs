@@ -1,14 +1,14 @@
 ---
-title: Explore work items when using exploratory testing - TestTools
+title: Explore work items when exploratory testing
 description: Test tools - Manual and exploratory testing - explore work items from the Kanban board or by using the Microsoft Test & Feedback extension
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -83,7 +83,7 @@ You can also explore [multiple work items in the same session](#multipleitems).
    ![Viewing the current work item](_img/explore-workitems-exploratory-testing/explore-workitems-04.png)
  
 <a name="multipleitems"></a>
-## Explore multiple work items  in the same session
+## Explore multiple work items in the same session
 
 To explore another work item, you must first dissociate the current work item from the in-progress session.
 
@@ -92,6 +92,12 @@ To explore another work item, you must first dissociate the current work item fr
    ![Changing the work item you are exploring](_img/explore-workitems-exploratory-testing/explore-workitems-09.png)
 
 2. Associate the new work item with the in-progress session as [described above](#extension).
+
+## See your exploratory session results 
+
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+
+* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 

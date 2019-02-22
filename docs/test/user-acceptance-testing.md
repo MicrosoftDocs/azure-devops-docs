@@ -1,14 +1,14 @@
 ---
-title: User acceptance testing - manual testing in Azure DevOps
+title: Perform user acceptance testing
 description: Create and run user acceptance tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -76,8 +76,14 @@ of them a notification email.
 
 ## Easily track results
 
-A key principle of good user acceptance testing practice is to minimize the effort required to determine whether a requirement has been achieved. 
-There are two ways this can be achieved, you can focus on individual test runs and tests to see which failed or use the charts views make it much easy and accessible to all members of Azure DevOps makes this much easier.   
+A key principle of good user acceptance testing practice
+is to minimize the effort required to determine whether a
+requirement has been achieved. 
+There are two ways you can do this: you can focus on
+individual test runs and tests to see which failed, or
+you can use the chart views that make it much easier to
+track your test results. These views are accessible by all
+members of your team.   
 
 ![Exploring test results](_img/user-acceptance-testing/uat8.png)
 

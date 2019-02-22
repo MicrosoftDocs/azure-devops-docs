@@ -1,11 +1,11 @@
 ---
 title: Define the initial configuration of Lab Management 
-titleSuffix: Azure DevOps Services & TFS
-description: Customizes the project's initial security configuration for activities that are performed by using Visual Studio Lab Management for Team Foundation Server
+titleSuffix: TFS
+description: Customize the project's initial security configuration for Lab Management and Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 09/08/2017

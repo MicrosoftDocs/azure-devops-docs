@@ -5,7 +5,7 @@ description: Adds a Web content or HTML content to a work item form by exporting
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 212ce627-db5c-4d19-a6c5-68f10cb6ca1c
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/14/2017
@@ -14,11 +14,6 @@ ms.date: 02/14/2017
 # Edit a WIT definition to add web content to a work item form
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
-
-> [!IMPORTANT]  
-> This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
->
-> For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 You can add web content or HTML content to a work item form by exporting the type definition XML file and adding a `WebpageControl` in the `FORM` section. After you modify and import the XML file, you can verify the display of the Web content in the updated work item type.  
   
@@ -92,21 +87,21 @@ For information about the syntax structure of the elements used to add Web conte
     -   **To specify a dynamic URL to be determined at run time**:  
   
         ```xml
-        <Tab Label="Tab Label">
-            <Group>
-                <Column PercentWidth="100">
-                    <Control Type="WebpageControl" Name="Webpage" Label="Name of Web Page" LabelPosition="Top">
-                        <WebpageControlOptions AllowScript="false">
-                            <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters">
-                                <Param Index="0" Value="Param Value 0" />
-                                <Param Index="1" Value="Param Value 1" />
-                                <Param Index="2" Value="Param Value 2" />
-                            </Link>
-                        </WebpageControlOptions>
-                    </Control>
-                </Column>
-            </Group>
-        </Tab>
+        <Tab Label="Tab Label">  
+              <Group>  
+              <Column PercentWidth="100">  
+                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
+                       <WebpageControlOptions AllowScript="false">  
+                       <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters >  
+              <Param Index="0" Value="Param Value 0"/>  
+              <Param Index="1" Value="Param Value 1"/>  
+              <Param Index="2" Value="Param Value 2"/>  
+                       </Link>  
+                       </WebpageControlOptions>  
+                 </Control>  
+              </Column>  
+              </Group>  
+        </Tab>  
         ```  
   
          Replace *Tab Label*, *URL of Web Page, URL path with parameters*, and *Param Value 1, 2, and 3* with the information that you want to appear on the work item form.  

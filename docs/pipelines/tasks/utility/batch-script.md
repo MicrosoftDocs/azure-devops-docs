@@ -1,23 +1,23 @@
 ---
-title: Batch script
-titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS).
+title: Batch Script task
+description: Execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Batch script
+# Batch Script task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the stage.
+Use this task in a build or release pipeline to run a Windows .bat or .cmd script and optionally allow it to change the stage.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -101,19 +101,15 @@ On the Build tab of a build pipeline, add this task:
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Where can I learn about batch files?
-
-[Using batch files](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands)
-
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD command line](http://ss64.com/nt/)
 
 [!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 
@@ -121,7 +117,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

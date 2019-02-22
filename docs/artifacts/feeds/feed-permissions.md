@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | TFS 2017**
 
-Packages you host in Azure Artifacts are stored in a [feed](../concepts/feeds.md). Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
+Packages you host in Azure Artifacts are stored in a **feed**. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
 ## Feed permissions overview
 Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level.
@@ -41,7 +41,7 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 Select **Permissions**.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -55,7 +55,7 @@ Select **Permissions**.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
 
@@ -78,4 +78,4 @@ To use packages from a feed in Azure Pipelines, the appropriate build identity m
 
 ## Sharing packages with everyone in your organization
 
-If you want to make the packages in a feed available to all users in your Azure DevOps Services organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
+If you want to make the packages in a feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.

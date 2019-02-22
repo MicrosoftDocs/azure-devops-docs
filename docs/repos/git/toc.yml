@@ -67,6 +67,8 @@
   items:
   - name: History in Git
     href: history.md
+  - name: Git log history simplification
+    href: git-log-history-simplification.md
   - name: Branch organization
     href: git-branching-guidance.md
   - name: Pull requests
@@ -131,7 +133,11 @@
       href: team-projects.md
     - name: "Set Git permissions (Security)"
       href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
-  - name: Manage branches
+    - name: Move Git repositories between Team Projects
+      href: move-git-repos-between-team-projects.md
+    - name: Remove large binaries from Git
+      href: git/remove-binaries.md
+    - name: Manage branches
     items:
     - name: Manage your branches
       href: manage-your-branches.md
@@ -157,6 +163,8 @@
     href: git-tags.md
 - name: Reference
   items:
+  - name: RPC failures & http.postBuffer
+    href: rpc-failures-http-postbuffer.md
   - name: Command reference
     href: command-prompt.md
   - name: Format comments with markdown
@@ -179,10 +187,14 @@
     href: /azure/devops/learn/git/what-is-git
   - name: What is version control?
     href: /azure/devops/learn/git/what-is-version-control
+  - name: GitHub & Azure Boards 
+    href: ../../boards/github/index.md
   - name: Plan your migration to Git
     href: /azure/devops/learn/git/centralized-to-git
   - name: Migrate from TFVC to Git
     href: /azure/devops/learn/git/migrate-from-tfvc-to-git
+  - name: Migrate from Subversion (SVN) to Git
+    href: perform-migration-from-svn-to-git.md
   - name: Git REST APIs
     href: https://visualstudio.com/docs/integrate/api/repos/git/overview
   - name: Pro Git

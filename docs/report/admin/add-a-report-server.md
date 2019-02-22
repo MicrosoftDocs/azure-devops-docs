@@ -5,10 +5,11 @@ ms.assetid: 1BB64B5F-708B-4E6E-9E88-4DCAEE58A231
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/15/2017
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 # Add a report server

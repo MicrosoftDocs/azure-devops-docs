@@ -1,11 +1,12 @@
 ---
 title: Archived release notes for Microsoft Release Management
+ms.custom: seodec18
 description: Archived release for Azure Pipelines and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Archived release notes for Microsoft Release Management
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 **NOTE**: Release Management has now been combined with the Build features
 of Azure Pipelines and Team Foundation Server (TFS) in the new 
@@ -73,7 +74,7 @@ The maximum number of concurrent builds you can run and releases
 you can deploy at the same time is limited only by the number
 of pipelines you have.
 
-Your Azure DevOps organization includes these free amounts:
+Your organization includes these free amounts:
 
 * One free Hosted Pipeline: With this free hosted pipeline, you get
   four hours (240 minutes) per month and a maximum duration of 30
@@ -91,7 +92,7 @@ Your Azure DevOps organization includes these free amounts:
   that you can use. You can also buy more private pipelines.
 
 For more information, see
-[Concurrent build and release pipelines in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md)
+[Concurrent build and release pipelines in Azure Pipelines](../../licensing/concurrent-jobs.md)
 and [Concurrent release pipelines in TFS](../../licensing/concurrent-pipelines-tfs.md).
 
 If you previously bought private agents in the Azure portal, they'll
@@ -174,7 +175,7 @@ current project. Now, you can now link build artifacts from another project
 as well. While linking an artifact, the project drop down will list all
 the projects in the account.
 
-![Build artifacts dialog](_img\rm-archived\release-notes-29.png)
+![Build artifacts dialog](_img/rm-archived/release-notes-29.png)
 
 <a name="update-nov16"></a>
 ### November 16, 2016 Update (Azure Pipelines, TFS 2017)
@@ -191,7 +192,7 @@ We're also announcing general availability of Release Management in Azure Pipeli
 
 [Concurrent pipelines for your releases in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md)
 
-[Concurrent pipelines for your builds and releases in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md)
+[Concurrent pipelines for your builds and releases in Azure Pipelines](../../licensing/concurrent-jobs.md)
 
 <a name="update-oct12-16"></a>
 ### October 12, 2016 Update (Azure Pipelines)
@@ -234,7 +235,7 @@ resources that are not in your template. By default,
 
 ![Azure Resource Group improvements](_img/rm-archived/release-notes-27.png)
 
-See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
+See [Azure Resource Group Deployment Task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
 
 <a name="oct12-clitask"></a>
 **Azure CLI task**
@@ -598,7 +599,7 @@ IIS web apps and databases from Azure Pipelines and TFS.
 **Web app deployment using ARM**
 
 A new version of the **Azure Web App Deployment** task is available, called
-**[AzureRM Web App Deployment](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
+**[AzureRM Web App Deployment](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
 It uses MSDeploy and an Azure Resource Manager service connection connection.
 Use this task to deploy Azure Web Jobs and Azure API apps, in addition to
 ASP.NET 4, Node, and Python based web apps. The task also supports common

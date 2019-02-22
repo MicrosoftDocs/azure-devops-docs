@@ -1,19 +1,21 @@
 ---
 title: Use the visual designer to create a CI/CD pipeline
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: CI/CD novice? Create an automated build and release definition in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/23/2018
+ms.date: 11/6/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Use the visual designer
+
+[!INCLUDE [version-tfs-2017-rtm](_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
@@ -25,19 +27,19 @@ monikerRange: '>= tfs-2017'
 > This guidance applies to TFS version 2017.3 and newer.
 ::: moniker-end
 
-::: moniker range="> tfs-2018"
+::: moniker range="azure-devops"
 > [!TIP]
 > For build pipelines, we recommend that you use YAML instead of the visual designer that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](get-started-yaml.md).
 ::: moniker-end
 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 We'll show you how to use the visual designer in Azure Pipelines to create a build and release that prints "Hello world". If you plan to use a YAML file instead of the visual designer, then see [Create your first pipeline](get-started-yaml.md) instead.
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 We'll show you how to use TFS to create a build and a release that prints "Hello world".
 
@@ -45,15 +47,42 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 
 ## Prerequisites
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 * A [self-hosted Windows agent](agents/v2-windows.md).
+
+::: moniker-end
+
+<a name="initialize-repo"></a>
+## Initialize your repository
+
+> If you already have a repository in your project, you can skip to the next step: [Add a script to your repository](#add-a-script-to-your-repository)
+
+::: moniker range="azure-devops"
+
+1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
+
+  ![Repos files](../repos/get-started/_img/clone-repo/repos-files.png)
+
+2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
+
+  ![Initialize repository](_img/initialize-repo.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
+
+1. Navigate to your repository by clicking **Code** in the top navigation. 
+
+2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
+
+  ![Initialize repository](_img/initialize-repo.png)
 
 ::: moniker-end
 
@@ -62,7 +91,7 @@ We'll show you how to use TFS to create a build and a release that prints "Hello
 
 Create a PowerShell script that prints `Hello world`.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 1. Go to **Azure Repos**.
 
 1. Add a file.
@@ -91,7 +120,7 @@ Write-Host "Hello world"
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 1. Go to the **Code** hub.
 
@@ -111,7 +140,7 @@ Write-Host "Hello world"
 
    ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range=">=tfs-2017 < azure-devops"
 
 1. In the dialog box, name your new file and create it.
  ```
@@ -119,7 +148,7 @@ HelloWorld.ps1
 ```
 
 1. Copy and paste this script.
- ```powershell
+ ```ps
 Write-Host "Hello world"
  ```
 
@@ -135,7 +164,7 @@ Write-Host "Hello world"
 
 Create a build pipeline that prints "Hello world."
 
- ::: moniker range="vsts"
+ ::: moniker range="azure-devops"
 
 1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
@@ -161,6 +190,12 @@ Create a build pipeline that prints "Hello world."
 
    ---
 
+  For new Azure DevOps accounts, this will automatically take you to the _YAML pipeline creation experience_. To get to the visual designer and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
+
+  ![Click settings in top right of screen and click preview features](_img/preview-features.png)
+
+  ![Click toggle to turn yaml preview feature off](_img/yaml-preview-feature-off.png)
+
 1. Make sure that the **source**, **project**, **repository**, and default **branch** match the location in which you created the script.
 
 1. Start with an **Empty job**.
@@ -169,30 +204,18 @@ Create a build pipeline that prints "Hello world."
 
 1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
-   # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
    > ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
    >
-
-   # [Previous navigation](#tab/previous-nav)
-   ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
-
-   ---
    
 1. On the left side, select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
    > ![PowerShell task](_img/get-started-designer/powershell-task-1-azure-devops-newnavon.png)
    >
-
-   # [Previous navigation](#tab/previous-nav)
-   ![PowerShell task](_img/get-started-designer/powershell-task-1-tfs-2018-2.png)
-
-   ---
-   
+ 
 1. Select **Save & queue**, and then select **Save**.
 
  ::: moniker-end
@@ -261,7 +284,7 @@ Create a build pipeline that prints "Hello world."
 
 A typical build produces an artifact that can then be deployed to various stages in a release. Here to demonstrate the capability in a simple way, we'll simply publish the script as the artifact.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 1. On the **Tasks** tab, select the plus sign **( + )** to add a task to **Job 1**.
 
@@ -278,7 +301,7 @@ A typical build produces an artifact that can then be deployed to various stages
    ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 1. On the **Tasks** tab, select **Add Task**.
 
@@ -296,7 +319,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Azure Pipelines](build/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Azure Pipelines](artifacts/artifacts-overview.md).
 
 ## Enable continuous integration (CI)
 
@@ -310,7 +333,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 Save and queue a build manually and test your build pipeline.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 1. Select **Save & queue**, and then select **Save & queue**.
 
@@ -417,7 +440,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
 1. Add these arguments.
 
- ::: moniker range="vsts"
+ ::: moniker range="azure-devops"
   # [New navigation](#tab/new-nav)
   > [!div class="mx-imgBorder"] 
   > ![build console](_img/get-started-designer/powershell-task-2-azure-devops-newnavon.png)
@@ -427,25 +450,25 @@ We'll pass some build variables to the script to make our pipeline a bit more in
   ![PowerShell task](_img/get-started-designer/powershell-task-2-tfs-2018-2.png)
   ---
  ::: moniker-end
- ::: moniker range=">= tfs-2017 < vsts"
+ ::: moniker range=">= tfs-2017 < azure-devops"
  ![PowerShell task](_img/get-started-designer/powershell-task-2.png)
  ::: moniker-end
 
  **Arguments**
 
- ```powershell
+ ```
 -greeter "$(Build.RequestedFor)" -trigger "$(Build.Reason)"
 ```
 
 1. Save the build pipeline.
 
-1. Go to the **Code** hub, **Files** tab.
+1. Go to your **Files** in **Azure Repos** (the **Code** hub in the previous navigation and TFS).
 
 1. Select the **HelloWorld.ps1** file, and then **Edit** the file.
 
 1. Change the script as follows:
 
- ```powershell
+ ```ps
 Param(
    [string]$greeter,
    [string]$trigger
@@ -456,11 +479,11 @@ Write-Host Trigger: $trigger
 
 1. **Commit** (save) the script.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 1. Go to **Azure Pipelines** and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 1. Go to the **Build and Release** page and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 ::: moniker-end
 
@@ -469,7 +492,7 @@ Write-Host Trigger: $trigger
 1. Notice that the person who changed the code has their name printed in the greeting message. You also see printed that this was a CI build.
 
 
-  ::: moniker range="vsts"
+  ::: moniker range="azure-devops"
 
   # [New navigation](#tab/new-nav)
   > [!div class="mx-imgBorder"] 
@@ -484,7 +507,7 @@ Write-Host Trigger: $trigger
 
   ::: moniker-end
 
-   ::: moniker range="< vsts"
+   ::: moniker range="< azure-devops"
    > [!div class="mx-imgBorder"]
    > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
    >
@@ -501,7 +524,7 @@ You've just created a build pipeline that automatically builds and validates wha
 
 Define the process for running the script in two stages.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 1. Go to the **Pipelines** tab, and then select **Releases**.
 
@@ -538,7 +561,7 @@ Define the process for running the script in two stages.
 
 1. Add these **Arguments**:
 
-   ```powershell
+   ```
    -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
    ```
 
@@ -643,7 +666,7 @@ Define the process for running the script in two stages.
 
 1. Add these **Arguments**:
 
- ```powershell
+ ```
 -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
 ```
 
@@ -675,7 +698,7 @@ Define the process for running the script in two stages.
 
 Run the script in each stage.
 
- ::: moniker range="vsts"
+ ::: moniker range="azure-devops"
 
 1. Create a new release.
 
@@ -760,7 +783,7 @@ We'll make one more change to the script. This time it will automatically build 
 
 1. Go to the **Code** hub, **Files** tab, edit the **HelloWorld.ps1** file, and change it as follows:
 
- ```powershell
+ ```ps
 Param(
    [string]$greeter,
    [string]$trigger
@@ -778,7 +801,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
  Your new code automatically is deployed in the **QA** stage, and then in the **Production** stage.
 
-   ::: moniker range="vsts"
+   ::: moniker range="azure-devops"
 
    # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
@@ -876,7 +899,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 If your pipeline has a pattern that you want to replicate in other pipelines, clone it, export it, or save it as a template.
 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -890,7 +913,7 @@ If your pipeline has a pattern that you want to replicate in other pipelines, cl
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
 
@@ -911,7 +934,7 @@ After you create a template, your team members can use it to follow the pattern 
 
 If you're editing a build pipeline and you want to test some changes that are not yet ready for production, you can save it as a draft.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -925,7 +948,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ![save-as-draft](_img/get-started-designer/save-as-draft.png)
 
@@ -933,7 +956,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 You can edit and test your draft as needed.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -955,7 +978,7 @@ You can edit and test your draft as needed.
 
 When you're ready you can publish the draft to merge the changes into your build pipeline.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 # [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
@@ -969,7 +992,7 @@ When you're ready you can publish the draft to merge the changes into your build
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ![publish draft](_img/get-started-designer/publish-draft.png)
 
@@ -1025,7 +1048,7 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest).
 
 <!-- ENDSECTION -->
 

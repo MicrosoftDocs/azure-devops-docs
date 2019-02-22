@@ -2,15 +2,17 @@
 title: Upload, download, or delete a process template 
 titleSuffix: TFS
 description: Upload, download, delete, or make default a process template for a project collection 
+ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
-monikerRange: '>= tfs-2013 <= tfs-2018'
-ms.date: 02/26/2018
----
+author: KathrynEE
+monikerRange: '<= azure-devops-2019'
+ms.date: 11/19/2018
+--- 
 
 # Upload or download a process template
 
@@ -18,11 +20,13 @@ ms.date: 02/26/2018
 
 When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-
+::: moniker range="tfs-2018 || azure-devops-2019"
 > [!IMPORTANT]  
 > When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a SharePoint project portal or Report Manager site aren't supported. SharePoint integration has been deprecated as described in [Discontinue SharePoint integration](../../../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 >
-> For TFS 2018 and later version, if you want to use SQL Server Reporting with your on-premises TFS, then you'll have to add support after you create your project. For details, see [Process template and plug-in files, Client support for project creation](../../../reference/process-templates/overview-process-template-files.md#client-support).  
+> If you want to use SQL Server Reporting with an on-premises TFS 2018 or Azure DevOps Server 2019, you'll have to add support after you create your project. For details, see [Process template and plug-in files, Client support for project creation](../../../reference/process-templates/overview-process-template-files.md#client-support).  
+
+::: moniker-end
 
 You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects. 
 

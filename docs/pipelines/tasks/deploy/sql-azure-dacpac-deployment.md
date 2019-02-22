@@ -1,19 +1,22 @@
 ---
-title: Azure SQL Database Deployment
+title: Azure SQL Database Deployment task
 description: Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: CE85A08B-A538-4D2B-8589-1D37A9AB970F
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Deploy: Azure SQL Database Deployment
+# Azure SQL Database Deployment task
 
-![](_img/sqlazuredacpacdeployment.png) Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to deploy to Azure SQL DB using a DACPAC or run scripts using SQLCMD.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -26,14 +29,16 @@ monikerRange: 'vsts'
 <tr><td>Azure Connection Type</td><td>(Optional) </td></tr>
 <tr><td>Azure Classic Subscription</td><td>(Required) Target Azure Classic subscription for deploying SQL files</td></tr>
 <tr><td>Azure Subscription</td><td>(Required) Target Azure Resource Manager subscription for deploying SQL files</td></tr>
-<tr><td>Azure SQL Server Name</td><td>(Required) Azure SQL Server name, like Fabrikam.database.windows.net,1433 or Fabrikam.database.windows.net.</td></tr>
-<tr><td>Database Name</td><td>(Required) Name of the Azure SQL Database, where the files will be deployed.</td></tr>
-<tr><td>Server Admin Login</td><td>(Optional) Specify the Azure SQL Server administrator login.</td></tr>
-<tr><td>Password</td><td>(Optional) Password for the Azure SQL Server administrator.<br>It can accept variables defined in build/release pipelines as '$(passwordVariable)'.<br>You may mark the variable type as 'secret' to secure it.</td></tr>
-<tr><td>Type</td><td>(Optional) </td></tr>
-<tr><td>DACPAC File</td><td>(Required) Location of the DACPAC file on the automation agent or on a UNC path accessible to the automation agent like, \\\\BudgetIT\Web\Deploy\FabrikamDB.dacpac. Predefined system variables like, $(agent.releaseDirectory) can also be used here.</td></tr>
-<tr><td>SQL Script</td><td>(Required) Location of the SQL script file on the automation agent or on a UNC path accessible to the automation agent like, \\\\BudgetIT\Web\Deploy\FabrikamDB.sql. Predefined system variables like, $(agent.releaseDirectory) can also be used here.</td></tr>
-<tr><td>Inline SQL Script</td><td>(Required) Enter the SQL script to execute on the Database selected above.</td></tr>
+<tr><td>Authentication Type</td><td>(Required) Type of database authentication, can be <b>SQL Server Authentication</b>, <b>Active Directory - Integrated</b>, <b>Active Directory - Password</b>, or <b>Connection String</b>. Integrated authentication means that the agent will access the database using its current Active Directory account context.</td></tr>
+<tr><td>Azure SQL Server</td><td>(Required except when Authentication Type is <b>Connection String</b>) Azure SQL Server name, like Fabrikam.database.windows.net,1433 or Fabrikam.database.windows.net.</td></tr>
+<tr><td>Database</td><td>(Required) Name of the Azure SQL Database, where the files will be deployed.</td></tr>
+<tr><td>Login</td><td>(Required when Authentication Type is <b>SQL Server Authentication</b> or <b>Active Directory - Password</b>) Specify the Azure SQL Server administrator login or Active Directory user name.</td></tr>
+<tr><td>Password</td><td>(Required when Authentication Type is <b>SQL Server Authentication</b> or <b>Active Directory - Password</b>) Password for the Azure SQL Server administrator or Active Directory user.<br>It can accept variables defined in build/release pipelines as '$(passwordVariable)'.<br>You may mark the variable type as 'secret' to secure it.</td></tr>
+<tr><td>Connection String</td><td>(Required when Authentication Type is <b>Connection String</b>) The connection string, including authentication information, for the Azure SQL Server.</td></tr>
+<tr><td>Deploy Type</td><td>(Optional) Specify the type of artifact, <b>SQL DACPAC file</b>, <b>SQL Script file</b>, or <b>Inline SQL Script</b>.</td></tr>
+<tr><td>DACPAC File</td><td>(Required when Deploy Type is <b>SQL DACPAC file</b>) Location of the DACPAC file on the automation agent or on a UNC path accessible to the automation agent like, \\\\BudgetIT\Web\Deploy\FabrikamDB.dacpac. Predefined system variables like, $(agent.releaseDirectory) can also be used here.</td></tr>
+<tr><td>SQL Script</td><td>(Required when Deploy Type is <b>SQL Script file</b>) Location of the SQL script file on the automation agent or on a UNC path accessible to the automation agent like, \\\\BudgetIT\Web\Deploy\FabrikamDB.sql. Predefined system variables like, $(agent.releaseDirectory) can also be used here.</td></tr>
+<tr><td>Inline SQL Script</td><td>(Required when Deploy Type is <b>Inline SQL Script</b>) Enter the SQL script to execute on the Database selected above.</td></tr>
 <tr><td>Publish Profile</td><td>(Optional) Publish profile provides fine-grained control over Azure SQL Database creation or upgrades. Specify the path to the Publish profile XML file on the automation agent or on a UNC share. Predefined system variables like, $(agent.buildDirectory) or $(agent.releaseDirectory) can also be used here.</td></tr>
 <tr><td>Additional SqlPackage.exe Arguments</td><td>(Optional) Additional SqlPackage.exe arguments that will be applied when deploying the Azure SQL Database, in case DACPAC option is selected like, /p:IgnoreAnsiNulls=True /p:IgnoreComments=True. These arguments will override the settings in the Publish profile XML file (if provided).</td></tr>
 <tr><td>Additional Invoke-Sqlcmd Arguments</td><td>(Optional) Additional Invoke-Sqlcmd arguments that will be applied when executing the given SQL query on the Azure SQL Database like, -ConnectionTimeout 100 -OutputSqlErrors.</td></tr>
@@ -47,10 +52,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

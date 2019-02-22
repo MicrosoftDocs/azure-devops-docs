@@ -42,15 +42,15 @@ Today’s update brings the ability to delete team projects directly from the ad
 
 ##Portfolio Backlog Sorting
 
-If you’ve been using the [new portfolio backlogs](../2013/jun-19-team-services.md), you may have noticed some annoying behavior around sorting when using the Scrum process template. If you pivoted up to view features mapped to backlog items or bugs on your backlog, all the unmapped bugs were sorted to the top of the backlog. That gave a view that didn’t reflect the actual order of the backlog. Argh! I’m happy to report that this has been fixed. As you pivot up or down your backlog, order now always reflects the order of the backlog.
+If you’ve been using the [new portfolio backlogs](https://visualstudio.microsoft.com/articles/news/2013/jun-19-team-services), you may have noticed some annoying behavior around sorting when using the Scrum process template. If you pivoted up to view features mapped to backlog items or bugs on your backlog, all the unmapped bugs were sorted to the top of the backlog. That gave a view that didn’t reflect the actual order of the backlog. Argh! I’m happy to report that this has been fixed. As you pivot up or down your backlog, order now always reflects the order of the backlog.
 
 ##Work Items from Code Discussion
 
-You can now create work items directly from [code comments](../2013/jun-03-team-services.md). Just click the new work item button on the right side of the comment and you’re off and running. As you would expect, work items created through this experience are automatically linked to the changeset you’re working from.
+You can now create work items directly from [code comments](https://visualstudio.microsoft.com/articles/news/2013/jun-03-team-services). Just click the new work item button on the right side of the comment and you’re off and running. As you would expect, work items created through this experience are automatically linked to the changeset you’re working from.
 
 ![Create a bug directly from code comments](_img/9_09_05.png)
 
-That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

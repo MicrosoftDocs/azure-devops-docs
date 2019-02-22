@@ -187,7 +187,7 @@ In order to enhance end-to-end traceability, you can see all the commits that we
 
 ### Use upstream sources in legacy feeds
 
-Until now, [legacy feeds](/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=vsts) could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed’s packages for more information, including behavior changes you should be aware of before upgrading.
+Until now, [legacy feeds](/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops) could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed’s packages for more information, including behavior changes you should be aware of before upgrading.
 
 ### Use arbitrary public npm feeds as upstream sources
 
@@ -199,7 +199,7 @@ Previously, you had been able to use npmjs.com, and other VSTS feeds, as npm ups
 
 > [!IMPORTANT]
 > Enable the **New build hub** and **New release progress views**
-[preview features](/azure/devops/project/navigation/preview-features?view=vsts) to use these new capabilities.
+[preview features](/azure/devops/project/navigation/preview-features?view=azure-devops) to use these new capabilities.
 
 Along with the new **Builds** hub and new [Release](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress) progress views, a modern experience for the **Test** tab is now available. This gives you rich in-context test information for **Builds** and **Release**. The new experience provides an in-progress test view, full page debugging experience, in context test history, reporting aborted test execution, and run level summary.
 
@@ -245,7 +245,7 @@ Test execution can abort due to multiple reasons such as bad test code, source u
 
 ### Exclude items completed before a certain date in analytics views
 
-The [Analytics service](/azure/devops/report/analytics/what-is-analytics?view=vsts) stores all work item history, including work items that are closed. Customers often don’t want to report on older, closed work items. We have updated [Analytics views](/azure/devops/report/analytics/what-are-analytics-views?view=vsts) to let you exclude work items that were completed before a specific date. This greatly decreases the amount of data loaded into Power BI. It also makes advanced calculations, like [time in state](/azure/devops/report/powerbi/create-timeinstate-report?view=vsts), much more performant. You set this option on the **History** tab.
+The [Analytics service](/azure/devops/report/analytics/what-is-analytics?view=azure-devops) stores all work item history, including work items that are closed. Customers often don’t want to report on older, closed work items. We have updated [Analytics views](/azure/devops/report/analytics/what-are-analytics-views?view=azure-devops) to let you exclude work items that were completed before a specific date. This greatly decreases the amount of data loaded into Power BI. It also makes advanced calculations, like [time in state](/azure/devops/report/powerbi/create-timeinstate-report?view=azure-devops), much more performant. You set this option on the **History** tab.
 
 > [!div class="mx-imgBorder"]
 ![Exclude completed items](_img/136_18.png)

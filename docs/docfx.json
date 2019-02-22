@@ -43,8 +43,8 @@
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "searchScope": ["Azure DevOps Services", "Azure DevOps", "VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
-      "author": "erickson-doug",
-      "ms.author": "douge",
+      "author": "steved0x",
+      "ms.author": "jillfra",
       "ms.date": "09/05/2018",
       "ms.prod": "devops",
       "ms.version": "ALM",
@@ -55,15 +55,19 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"  
     },
     "fileMetadata": {
+      "titleSuffix": {
+        "pipelines/**/**.md": "Azure Pipelines",
+        "test/**/**.md": "Azure Test Plans"
+      },
       "monikerRange": {
-        "report/admin/**": ">= tfs-2013 <= tfs-2018",
-        "report/analytics/**": "vsts",
-        "report/excel/**": ">= tfs-2013 <= tfs-2018",
-        "report/extend-analytics/**": "vsts",
-        "report/powerbi/**": "vsts",
-        "report/sharepoint-dashboards/**": ">= tfs-2013 <= tfs-2017",
-        "report/sql-reports/**": ">= tfs-2013 <= tfs-2018",
-        "work/tfs-ps-sync/**": ">= tfs-2013 <= tfs-2015"
+        "report/admin/**": "<= azure-devops-2019",
+        "report/analytics/**": ">= azure-devops-2019",
+        "report/excel/**": "<= tfs-2017",
+        "report/extend-analytics/**": ">= azure-devops-2019",
+        "report/powerbi/**": ">= azure-devops-2019",
+        "report/sharepoint-dashboards/**": "<= tfs-2017",
+        "report/sql-reports/**": "<= azure-devops-2019",
+        "work/tfs-ps-sync/**": "<= tfs-2015"
       },
       "ROBOTS":{
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
@@ -74,7 +78,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "vsts || >= tfs-2013 <= tfs-2018"
+        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
       }
     }
   }

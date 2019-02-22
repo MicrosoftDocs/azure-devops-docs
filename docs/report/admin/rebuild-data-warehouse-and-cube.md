@@ -6,10 +6,11 @@ ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 08/11/2016
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 # Rebuild the data warehouse and cube

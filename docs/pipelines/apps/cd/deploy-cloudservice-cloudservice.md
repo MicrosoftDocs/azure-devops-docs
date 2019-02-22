@@ -1,26 +1,27 @@
 ---
-title: Deploy ASP.NET app to an Azure Cloud Service
-description: Example of deploying an Azure cloud services package from Release Management in Azure Pipelines or Team Foundation Server
+title: Deploy an ASP.NET Cloud Service app 
+description: Example of deploying an Azure cloud services package in Azure Pipelines or Team Foundation Server
 ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Deploy your ASP.NET app to an Azure Cloud Service
 
-[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Release Management.
+Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Azure Pipelines.
 Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
 
 You can also use these steps to deploy your app to an [Azure Government Cloud](../../library/government-cloud.md)
@@ -109,7 +110,7 @@ You're now ready to create a release, which means to run the release pipeline wi
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

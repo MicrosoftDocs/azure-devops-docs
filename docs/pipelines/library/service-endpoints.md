@@ -1,11 +1,12 @@
 ---
 title: Service connections in Azure Pipelines and Team Foundation Server
+ms.custom: seodec18
 description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Service connections for builds and releases
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -31,7 +32,8 @@ You can define service connections in Azure Pipelines or Team Foundation Server 
 your tasks. For example, you can create a service connection for your Azure subscription
 and use this service connection name in an Azure Web Site Deployment task in a release pipeline.
 
-You define and manage service connections from the Admin settings of your project.
+You define and manage service connections from the Admin settings of your project:
+
 * Azure DevOps: `https://dev.azure.com/{organization}/{project}/_admin/_services`
 * TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
@@ -53,6 +55,7 @@ Service connections are created at project scope. A service connection created i
 
 4. Choose **OK** to create the connection.
 
+> For more information about Azure Resource Manager service connections, see [Create an Azure service connection](connect-to-azure.md).
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 <a name="security"></a>
@@ -67,9 +70,12 @@ You can control who can define new service connections in a library, and who can
 | User | Members of this role can use the service connection when authoring build or release pipelines. |
 | Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection. The user that created the service connection is automatically added to the Administrator role for that service connection.
 
-Two special groups called **Service connection administrators** and **Service connection creators** are added to every project.
-Members of the Service connection administrators group can manage all service connections. By default, project administrators are added as members of this group. This group is also added as an administrator to every service connection created.
-Members of the Service connection creators group can create new service connections. By default, project contributors are added as members of this group.
+Two special groups for service connections, endpoint administrators and creators, are added to every project.
+Members of the administrators group can manage all service connections.
+By default, project administrators are added as members of this group.
+This group is also added as an administrator to every service connection created.
+Members of the creators group can create new service connections.
+By default, project contributors are added as members of this group.
 
 To modify the security for a connection:
 
@@ -82,6 +88,7 @@ To modify the security for a connection:
 
 1. Add users or groups, turn on and off inheritance, or change the role for existing users and groups as required.
 
+> For more information about securing an Azure Resource Manager service connection, see [Create an Azure service connection](connect-to-azure.md).
 
 ## Use a service connection
 
@@ -106,18 +113,20 @@ Azure Pipelines and TFS support a variety of service connection types by default
 * [Azure Classic service connection](#sep-azure-classic)
 * [Azure Resource Manager service connection](#sep-azure-rm)
 * [Azure Service Bus service connection](#sep-servbus)
-* [Bitbucket service connection](#sep-bbucket)
+* [Bitbucket Cloud service connection](#sep-bbucket)
 * [Chef service connection](#sep-chef)
 * [Docker Host service connection](#sep-dochost)
 * [Docker Registry service connection](#sep-docreg)
 * [External Git service connection](#sep-extgit)
 * [Generic service connection](#sep-generic)
 * [GitHub service connection](#sep-github)
-* [GitHub Enterprise service connection](#sep-githubent)
+* [GitHub Enterprise Server service connection](#sep-githubent)
 * [Jenkins service connection](#sep-jenkins)
 * [Kubernetes service connection](#sep-kuber)
 * [npm service connection](#sep-npm)
 * [NuGet service connection](#sep-nuget)
+* [Python package download service connection](#sep-python-download)
+* [Python package upload service connection](#sep-python-upload)
 * [Service Fabric service connection](#sep-fabric)
 * [SSH service connection](#sep-ssh)
 * [Subversion service connection](#sep-subversion)
@@ -157,7 +166,8 @@ using Azure credentials or an Azure management certificate.
 <h3 id="sep-azure-rm">Azure Resource Manager service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
-using Service Principal Authentication (SPA). The dialog offers two modes:
+using Service Principal Authentication (SPA) or an Azure Managed Service Identity.
+The dialog offers two main modes:
 
 * **Automated subscription detection**. In this mode, Azure Pipelines and TFS will attempt to query Azure for all of the subscriptions and instances to which you have access using the credentials you are currently logged on with in Azure Pipelines or TFS (including Microsoft accounts and School or Work accounts).
   If no subscriptions are shown, or subscriptions other than the one you want to use, you must sign out of Azure Pipelines or TFS and sign in again
@@ -270,9 +280,9 @@ Defines and secures a connection to a Docker registry.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription**, **endpoint**, or the equivalent name value in the script. |
 | Docker Registry | Required. The URL of the Docker registry. A default value is provided. |
-| Docker ID | Required. The identifier of the Docker account user. |
+| Docker ID | Required. The identifier of the Docker account user. For Azure Container Registry, this is likely to be a service principal. |
 | Password | Required. The password for the account user identified above. |
 | Email | Optional. An email address to receive notifications. |
 
@@ -284,7 +294,7 @@ Defines and secures a connection to a Docker registry.
 
 Defines and secures a connection to a Git repository server.
 Note that there is a specific service connection for [GitHub](#sep-github)
-and [GitHub Enterprise](#sep-githubent) connections.
+and [GitHub Enterprise Server](#sep-githubent) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -318,7 +328,7 @@ Defines and secures a connection to any other type of service or application.
 
 Defines a connection to a GitHub repository.
 Note that there is a specific service connection for [External Git servers](#sep-extgit)
-and [GitHub Enterprise](#sep-githubent) connections.
+and [GitHub Enterprise Server](#sep-githubent) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -348,7 +358,7 @@ Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
 *****
 
-<h3 id="sep-githubent">GitHub Enterprise service connection</h3>
+<h3 id="sep-githubent">GitHub Enterprise Server service connection</h3>
 
 Defines a connection to a GitHub repository.
 Note that there is a specific service connection for [External Git servers](#sep-extgit)
@@ -356,15 +366,15 @@ and [standard GitHub service connections](#sep-github).
 
 | Parameter | Description |
 | --------- | ----------- |
-| Choose authorization | Required. Either **Personal access token** or **Username and Password** or **OAuth2**. See notes below. |
+| Choose authorization | Required. Either **Personal access token**, **Username and Password**, or **OAuth2**. See notes below. |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | Token | Required for Personal access token authorization. See notes below. |
 | User name | Required for Username and Password authentication. The username to connect to the service. |
 | Password | Required for Username and Password authentication. The password for the specified username. |
-| OAuth configuraton | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
-| GitHub Enterprise configuration URL| The URL is fetched from OAuth configuration. |
+| OAuth configuration | Required for OAuth2 authorization. The OAuth configuration specified in your account. |
+| GitHub Enterprise Server configuration URL| The URL is fetched from OAuth configuration. |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -381,19 +391,6 @@ GitHub account in your profile:
 * At the top of the left column, under **DETAILS**, choose **Security**.
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
-
-
-> [!NOTE]
-> If you select **OAuth2** you must setup OAuth configurations first
-and use it configure the connection. See
-[this page](https://help.github.com/enterprise/2.14/admin/guides/user-management/using-github-oauth/)
-on GitHub for information about registering a new OAuth application. Then create **OAuth configuration** for the OAuth application in your Azure DevOps account:
-
-* From your Azure DevOps account home page, click on **Organization settings** on the bottom left navigation panel.
-* From **Pipelines** submenu, click on **OAuth configurations**
-* Choose the **Add** link, specify a name for the OAuth configuration, select source type as **GitHub Enterprise**
-* Enter the information required to setup the OAuth configuration.
-* Now from the Azure DevOps project, you can create a new service connection for GitHub Enterprise and choose authorization as **OAuth2** 
 
 *****
 
@@ -440,8 +437,8 @@ Defines and secures a connection to an npm server.
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Registry URL | Required. The URL of the npm server. |
-| Username | Required when connection type is **Basic authentication**. The username for authentication. |
-| Password | Required when connection type is **Basic authentication**. The password for the username. |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
 | Personal Access Token | Required when connection type is **External Azure Pipelines**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
@@ -461,6 +458,41 @@ Defines and secures a connection to a NuGet server.
 | Personal Access Token | Required when connection type is **External Azure Pipelines**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
+<p />
+
+[How do I create a new service connection?](#create-new)
+
+*****
+
+<h3 id="sep-python-download">Python package download service connection</h3>
+
+Defines and secures a connection to a Python repository for downloading Python packages.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Python repository url for download | Required. The URL of the Python repository. |
+| Personal Access Token | Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
+<p />
+
+[How do I create a new service connection?](#create-new)
+
+*****
+
+<h3 id="sep-python-upload">Python package upload service connection</h3>
+
+Defines and secures a connection to a Python repository for uploading Python packages.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Python repository url for upload | Required. The URL of the Python repository. |
+| EndpointName | Required. Unique repository name used for twine upload. Spaces and special characters are not allowed. |
+| Personal Access Token | Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Username and Password**. The username for authentication. |
+| Password | Required when connection type is **Username and Password**. The password for the username. |
 <p />
 
 [How do I create a new service connection?](#create-new)
@@ -569,19 +601,19 @@ Other service connection types and tasks can be installed in Azure Pipelines
 and Team Foundation Server as extensions. Some examples of service connections currently
 available through extensions are:
 
-* [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
+* [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
   Deploy on-premises TFS builds with Azure Pipelines
-  Release Management through a TFS service connection
+  through a TFS service connection
   connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
   from Azure Pipelines. For more information, see
   [External TFS](../release/artifacts.md#onpremtfssource) and
   [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
-* [TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
+* [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
   This extension provides integration with TeamCity through a TeamCity service connection,
   enabling artifacts produced in TeamCity to be deployed
-  by using Release Management. See
+  by using Azure Pipelines. See
   [TeamCity](../release/artifacts.md#teamcitysource)
   for more details.
 

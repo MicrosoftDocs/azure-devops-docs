@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Results (Version 1.0) | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test results programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server. This is for Version 1.0 of this API.
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Test Results (Version 1.0) | REST API Reference for Team Foundation Server
+description: Work with test results programmatically using the REST APIs for Team Foundation Server. This is for Version 1.0 of this API.
 ms.assetid: FCBFFCFB-E57E-492F-9984-BD9C77EA4153
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 08/25/2016
 ---
 
 # Test results  (Version 1.0)
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -28,14 +31,135 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the results.
 | Query
 | version                 | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | includeIterationDetails | bool     | false   | For iterative tests, get the details for each iteration in the result.
 
-[!code-REST [GET_testmanagement_testresults_json](./_data/results/GET_testmanagement_testresults.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "id": 100000,
+      "configuration": {
+        "id": "2",
+        "name": "Windows 8"
+      },
+      "project": {
+        "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+        "name": "Fabrikam-Fiber-TFVC",
+        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+      },
+      "startedDate": "2014-05-04T13:00:38.3Z",
+      "completedDate": "2014-05-04T13:00:38.3Z",
+      "outcome": "Passed",
+      "owner": {
+        "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "displayName": "Fabrikam Fiber",
+        "uniqueName": "fabrikamfiber1@outlook.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+      },
+      "revision": 5,
+      "runBy": {
+        "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "displayName": "Fabrikam Fiber",
+        "uniqueName": "fabrikamfiber1@outlook.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+      },
+      "state": "Completed",
+      "testCase": {
+        "id": "39",
+        "name": "Shopping cart"
+      },
+      "testRun": {
+        "id": "4",
+        "name": "sprint1 (Manual)",
+        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4"
+      },
+      "lastUpdatedDate": "2014-05-04T13:01:02.943Z",
+      "lastUpdatedBy": {
+        "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "displayName": "Fabrikam Fiber",
+        "uniqueName": "fabrikamfiber1@outlook.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+      },
+      "priority": 2,
+      "computerName": "",
+      "createdDate": "2014-05-04T13:00:37.22Z",
+      "associatedBugs": [],
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000"
+    },
+    {
+      "id": 100001,
+      "configuration": {
+        "id": "2",
+        "name": "Windows 8"
+      },
+      "project": {
+        "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+        "name": "Fabrikam-Fiber-TFVC",
+        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+      },
+      "startedDate": "2014-05-04T13:00:38.3Z",
+      "completedDate": "2014-05-04T13:00:38.3Z",
+      "outcome": "Failed",
+      "owner": {
+        "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "displayName": "Fabrikam Fiber",
+        "uniqueName": "fabrikamfiber1@outlook.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+      },
+      "revision": 3,
+      "runBy": {
+        "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "displayName": "Fabrikam Fiber",
+        "uniqueName": "fabrikamfiber1@outlook.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+      },
+      "state": "Completed",
+      "testCase": {
+        "id": "40",
+        "name": "Price check"
+      },
+      "testRun": {
+        "id": "4",
+        "name": "sprint1 (Manual)",
+        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4"
+      },
+      "lastUpdatedDate": "2014-05-04T13:01:02.943Z",
+      "lastUpdatedBy": {
+        "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "displayName": "Fabrikam Fiber",
+        "uniqueName": "fabrikamfiber1@outlook.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+      },
+      "priority": 2,
+      "computerName": "",
+      "createdDate": "2014-05-04T13:00:37.22Z",
+      "associatedBugs": [],
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100001"
+    }
+  ],
+  "count": 2
+}
+```
+
 
 ## Get a test result 
 
@@ -46,7 +170,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result to get.
@@ -54,11 +178,243 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | version                 | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | includeIterationDetails | bool     | false   | For iterative tests, get the details for each iteration in the result.
 
-[!code-REST [GET_testmanagement_testresults_id_json](./_data/results/GET_testmanagement_testresults_id.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 100000,
+  "configuration": {
+    "id": "2",
+    "name": "Windows 8"
+  },
+  "project": {
+    "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+    "name": "Fabrikam-Fiber-TFVC",
+    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+  },
+  "startedDate": "2014-05-04T13:00:38.3Z",
+  "completedDate": "2014-05-04T13:00:38.3Z",
+  "outcome": "Passed",
+  "owner": {
+    "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "displayName": "Fabrikam Fiber",
+    "uniqueName": "fabrikamfiber1@outlook.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+  },
+  "revision": 5,
+  "runBy": {
+    "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "displayName": "Fabrikam Fiber",
+    "uniqueName": "fabrikamfiber1@outlook.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+  },
+  "state": "Completed",
+  "testCase": {
+    "id": "39",
+    "name": "Shopping cart"
+  },
+  "testRun": {
+    "id": "4",
+    "name": "sprint1 (Manual)",
+    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4"
+  },
+  "lastUpdatedDate": "2014-05-04T13:01:02.943Z",
+  "lastUpdatedBy": {
+    "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "displayName": "Fabrikam Fiber",
+    "uniqueName": "fabrikamfiber1@outlook.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+  },
+  "priority": 2,
+  "computerName": "",
+  "createdDate": "2014-05-04T13:00:37.22Z",
+  "associatedBugs": [],
+  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000"
+}
+```
+
 
 ### With iteration details
 
-[!code-REST [GET__test__projectName__runs__runId__results_100000_includeIterationDetails-true_json](./_data/results/GET__test__projectName__runs__runId__results_100000_includeIterationDetails-true.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000?includeIterationDetails=true&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 100000,
+  "configuration": {
+    "id": "2",
+    "name": "Windows 8"
+  },
+  "project": {
+    "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+    "name": "Fabrikam-Fiber-TFVC",
+    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+  },
+  "startedDate": "2014-05-04T13:00:38.3Z",
+  "completedDate": "2014-05-04T13:00:38.3Z",
+  "outcome": "Passed",
+  "owner": {
+    "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "displayName": "Fabrikam Fiber",
+    "uniqueName": "fabrikamfiber1@outlook.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+  },
+  "revision": 5,
+  "runBy": {
+    "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "displayName": "Fabrikam Fiber",
+    "uniqueName": "fabrikamfiber1@outlook.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+  },
+  "state": "Completed",
+  "testCase": {
+    "id": "39",
+    "name": "Shopping cart"
+  },
+  "testRun": {
+    "id": "4",
+    "name": "sprint1 (Manual)",
+    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4"
+  },
+  "lastUpdatedDate": "2014-05-04T13:01:02.943Z",
+  "lastUpdatedBy": {
+    "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "displayName": "Fabrikam Fiber",
+    "uniqueName": "fabrikamfiber1@outlook.com",
+    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+  },
+  "priority": 2,
+  "computerName": "",
+  "createdDate": "2014-05-04T13:00:37.22Z",
+  "iterationDetails": [
+    {
+      "id": 1,
+      "outcome": "Passed",
+      "errorMessage": "",
+      "startedDate": "2014-05-04T13:00:38.697Z",
+      "completedDate": "2014-05-04T13:00:44.567Z",
+      "durationInMs": 5871,
+      "actionResults": [
+        {
+          "actionPath": "00000002",
+          "iterationId": 1,
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000002",
+          "outcome": "Passed",
+          "startedDate": "2014-05-04T13:00:38Z",
+          "completedDate": "2014-05-04T13:00:38Z"
+        },
+        {
+          "actionPath": "00000003",
+          "iterationId": 1,
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000003",
+          "outcome": "Passed",
+          "startedDate": "2014-05-04T13:00:38Z",
+          "completedDate": "2014-05-04T13:00:38Z"
+        },
+        {
+          "actionPath": "00000004",
+          "iterationId": 1,
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000004",
+          "outcome": "Passed",
+          "startedDate": "2014-05-04T13:00:38Z",
+          "completedDate": "2014-05-04T13:00:38Z"
+        }
+      ],
+      "parameters": [
+        {
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=username",
+          "iterationId": 1,
+          "actionPath": "00000002",
+          "parameterName": "username",
+          "value": "abc"
+        },
+        {
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=password",
+          "iterationId": 1,
+          "actionPath": "00000003",
+          "parameterName": "password",
+          "value": "new"
+        }
+      ],
+      "attachments": [],
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
+    },
+    {
+      "id": 2,
+      "outcome": "Passed",
+      "errorMessage": "",
+      "startedDate": "2014-05-04T13:00:38.7Z",
+      "completedDate": "2014-05-04T13:00:56.637Z",
+      "durationInMs": 17938,
+      "actionResults": [
+        {
+          "actionPath": "00000002",
+          "iterationId": 2,
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/2/ActionResults?actionPath=00000002",
+          "outcome": "Passed",
+          "startedDate": "2014-05-04T13:00:38Z",
+          "completedDate": "2014-05-04T13:00:38Z"
+        },
+        {
+          "actionPath": "00000003",
+          "iterationId": 2,
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/2/ActionResults?actionPath=00000003",
+          "outcome": "Passed",
+          "startedDate": "2014-05-04T13:00:38Z",
+          "completedDate": "2014-05-04T13:00:38Z"
+        },
+        {
+          "actionPath": "00000004",
+          "iterationId": 2,
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/2/ActionResults?actionPath=00000004",
+          "outcome": "Passed",
+          "startedDate": "2014-05-04T13:00:38Z",
+          "completedDate": "2014-05-04T13:00:38Z"
+        }
+      ],
+      "parameters": [
+        {
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/2/ParameterResults?paramName=username",
+          "iterationId": 2,
+          "actionPath": "00000002",
+          "parameterName": "username",
+          "value": "aaa"
+        },
+        {
+          "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/2/ParameterResults?paramName=password",
+          "iterationId": 2,
+          "actionPath": "00000003",
+          "parameterName": "password",
+          "value": "old"
+        }
+      ],
+      "attachments": [],
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=2"
+    }
+  ],
+  "associatedBugs": [],
+  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000"
+}
+```
+
 
 ## Get iterations for a result
 
@@ -69,7 +425,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -78,15 +434,129 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | id                      | int      |         | ID of a specific iteration, used to get just that iteration. If not specified, all iterations in the result are returned.
 | includeActionResults    | bool     | false   | Include result details for each action performed in the test iteration. ActionResults refer to outcome (pass/fail) of test steps that are executed as part of a running a manual test. Including the ActionResults flag gets the outcome of test steps in the actionResults section and test parameters in the parameters section for each test iteration.
 
-[!code-REST [GET_testmanagement_iterationresults_json](./_data/results/GET_testmanagement_iterationresults.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "id": 1,
+      "outcome": "Passed",
+      "errorMessage": "",
+      "startedDate": "2014-05-04T13:00:38.697Z",
+      "completedDate": "2014-05-04T13:00:44.567Z",
+      "durationInMs": 5871,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
+    },
+    {
+      "id": 2,
+      "outcome": "Passed",
+      "errorMessage": "",
+      "startedDate": "2014-05-04T13:00:38.7Z",
+      "completedDate": "2014-05-04T13:00:56.637Z",
+      "durationInMs": 17938,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=2"
+    }
+  ]
+}
+```
+
 
 ### For a specific iteration
 
-[!code-REST [GET__test__projectName__runs__runId__results_100000_iterations_1_json](./_data/results/GET__test__projectName__runs__runId__results_100000_iterations_1.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 1,
+  "outcome": "Passed",
+  "errorMessage": "",
+  "startedDate": "2014-05-04T13:00:38.697Z",
+  "completedDate": "2014-05-04T13:00:44.567Z",
+  "durationInMs": 5871,
+  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
+}
+```
+
 
 ### With action results
 
-[!code-REST [GET__test__projectName__runs__runId__results_100000_iterations_1_includeActionResults-true](./_data/results/GET__test__projectName__runs__runId__results_100000_iterations_1_includeActionResults-true.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1?includeActionResults=true&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "id": 1,
+  "outcome": "Passed",
+  "errorMessage": "",
+  "startedDate": "2014-05-04T13:00:38.697Z",
+  "completedDate": "2014-05-04T13:00:44.567Z",
+  "durationInMs": 5871,
+  "actionResults": [
+    {
+      "actionPath": "00000002",
+      "iterationId": 1,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000002",
+      "outcome": "Passed",
+      "startedDate": "2014-05-04T13:00:38Z",
+      "completedDate": "2014-05-04T13:00:38Z"
+    },
+    {
+      "actionPath": "00000003",
+      "iterationId": 1,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000003",
+      "outcome": "Passed",
+      "startedDate": "2014-05-04T13:00:38Z",
+      "completedDate": "2014-05-04T13:00:38Z"
+    },
+    {
+      "actionPath": "00000004",
+      "iterationId": 1,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000004",
+      "outcome": "Passed",
+      "startedDate": "2014-05-04T13:00:38Z",
+      "completedDate": "2014-05-04T13:00:38Z"
+    }
+  ],
+  "parameters": [
+    {
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=username",
+      "iterationId": 1,
+      "actionPath": "00000002",
+      "parameterName": "username",
+      "value": "abc"
+    },
+    {
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=password",
+      "iterationId": 1,
+      "actionPath": "00000003",
+      "parameterName": "password",
+      "value": "new"
+    }
+  ],
+  "attachments": [],
+  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000?iterationId=1"
+}
+```
+
 
 ##Get a list of action results
 
@@ -99,7 +569,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -108,11 +578,73 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | version                 | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | actionPath              | string   |         | Path of a specific action, used to get just that action.
 
-[!code-REST [GET_testmanagement_testresults_actionresults_json](./_data/results/GET_testmanagement_testresults_actionresults.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/actionresults?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "actionPath": "00000002",
+      "iterationId": 1,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000002",
+      "outcome": "Passed",
+      "startedDate": "2014-05-04T13:00:38Z",
+      "completedDate": "2014-05-04T13:00:38Z"
+    },
+    {
+      "actionPath": "00000003",
+      "iterationId": 1,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000003",
+      "outcome": "Passed",
+      "startedDate": "2014-05-04T13:00:38Z",
+      "completedDate": "2014-05-04T13:00:38Z"
+    },
+    {
+      "actionPath": "00000004",
+      "iterationId": 1,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000004",
+      "outcome": "Passed",
+      "startedDate": "2014-05-04T13:00:38Z",
+      "completedDate": "2014-05-04T13:00:38Z"
+    }
+  ]
+}
+```
+
 
 ### For a specific action result
 
-[!code-REST [GET__test__results_100000_iterations_1_actionresults_actionPath-_actionPath__json](./_data/results/GET__test__results_100000_iterations_1_actionresults_actionPath-_actionPath_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/actionresults?actionPath=00000002&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "actionPath": "00000002",
+      "iterationId": 1,
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ActionResults?actionPath=00000002",
+      "outcome": "Passed",
+      "startedDate": "2014-05-04T13:00:38Z",
+      "completedDate": "2014-05-04T13:00:38Z"
+    }
+  ]
+}
+```
+
 
 ##Get a list of parameterized results
 
@@ -124,7 +656,7 @@ In a parameterized test, gets results for each parameter value.
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string   |         | TFS server name ({server:port}).
 | project                 | string   |         | Name or ID of the project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -133,11 +665,62 @@ In a parameterized test, gets results for each parameter value.
 | version                 | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | paramName               | string   |         | Name of the parameter.
 
-[!code-REST [GET_testmanagement_testresults_parameterResults_json](./_data/results/GET_testmanagement_testresults_parameterResults.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/parameterresults?api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=username",
+      "iterationId": 1,
+      "actionPath": "00000002",
+      "parameterName": "username",
+      "value": "abc"
+    },
+    {
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=password",
+      "iterationId": 1,
+      "actionPath": "00000003",
+      "parameterName": "password",
+      "value": "new"
+    }
+  ]
+}
+```
+
 
 ### For a specific parameter
 
-[!code-REST [GET__test__projectName__runs__runId__results_100000_iterations_1_parameterresults_paramName-_parameterName__json](./_data/results/GET__test__projectName__runs__runId__results_100000_iterations_1_parameterresults_paramName-_parameterName_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/runs/4/results/100000/iterations/1/parameterresults?paramName=username&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100000/Iterations/1/ParameterResults?paramName=username",
+      "iterationId": 1,
+      "actionPath": "00000002",
+      "parameterName": "username",
+      "value": "abc"
+    }
+  ]
+}
+```
+
 
 ## Get test results by query (deprecated)
 > This API is deprecated as of [!INCLUDE [API_version](../_data/version3-preview.md)].
@@ -159,7 +742,7 @@ Content-Type: application/json
 | Parameter               | Type   | Default | Notes
 |:------------------------|:-------|:--------|:------------------------
 | URL
-| instance                | string |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance                | string |         | TFS server name ({server:port}).
 | project                 | string |         | Name or ID of the project.
 | Query
 | version                 | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -171,7 +754,105 @@ Content-Type: application/json
 | query                   | string |         | Query string
 
 
-[!code-REST [POST__test_results_query_includeResultDetails-true__top-2_json](./_data/results/POST__test_results_query_includeResultDetails-true__top-2.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/results/query?includeResultDetails=true&$top=2&api-version=2.0-preview
+```
+```json
+{
+  "query": "Select * From TestResult Where TestRunId = 45"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "value": [
+    {
+      "id": 100000,
+      "comment": "All test results got completed successfully",
+      "project": {
+        "id": "8e5a3cfb-fed3-46f3-8657-e3b175cd0305",
+        "name": "Fabrikam",
+        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam"
+      },
+      "outcome": "Passed",
+      "revision": 4,
+      "state": "Completed",
+      "testCase": {
+        "name": "VerifyWebsiteTheme"
+      },
+      "testRun": {
+        "id": "45",
+        "name": "Fabrikam Fiber test run ",
+        "url": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/Runs/45"
+      },
+      "lastUpdatedDate": "2015-06-09T02:33:35.77Z",
+      "lastUpdatedBy": {
+        "id": "9a4515d2-a474-4175-8f7c-f72df24197eb",
+        "displayName": "fabrikam fiber",
+        "uniqueName": "fabrikamfiber.vsin@hotmail.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/9a4515d2-a474-4175-8f7c-f72df24197eb",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=9a4515d2-a474-4175-8f7c-f72df24197eb"
+      },
+      "priority": 1,
+      "createdDate": "2015-06-09T02:33:34.94Z",
+      "url": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/Runs/45/Results/100000",
+      "failureType": "None",
+      "area": {
+        "id": "15127",
+        "name": "Fabrikam",
+        "url": "vstfs:///Classification/Node/e9f689c9-f70a-42bb-8db5-97b0c05f7e70"
+      },
+      "testCaseTitle": "VerifyWebsiteTheme",
+      "automatedTestName": "FabrikamFiber.WebSite.TestClass.VerifyWebsiteTheme"
+    },
+    {
+      "id": 100001,
+      "comment": "All test results got completed successfully",
+      "project": {
+        "id": "8e5a3cfb-fed3-46f3-8657-e3b175cd0305",
+        "name": "Fabrikam",
+        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam"
+      },
+      "outcome": "Failed",
+      "revision": 4,
+      "state": "Completed",
+      "testCase": {
+        "name": "VerifyWebsiteLinks"
+      },
+      "testRun": {
+        "id": "45",
+        "name": "Fabrikam Fiber test run ",
+        "url": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/Runs/45"
+      },
+      "lastUpdatedDate": "2015-06-09T02:33:35.77Z",
+      "lastUpdatedBy": {
+        "id": "9a4515d2-a474-4175-8f7c-f72df24197eb",
+        "displayName": "fabrikam fiber",
+        "uniqueName": "fabrikamfiber.vsin@hotmail.com",
+        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/9a4515d2-a474-4175-8f7c-f72df24197eb",
+        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=9a4515d2-a474-4175-8f7c-f72df24197eb"
+      },
+      "priority": 2,
+      "createdDate": "2015-06-09T02:33:34.94Z",
+      "url": "https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/Runs/45/Results/100001",
+      "failureType": "None",
+      "area": {
+        "id": "15127",
+        "name": "Fabrikam",
+        "url": "vstfs:///Classification/Node/e9f689c9-f70a-42bb-8db5-97b0c05f7e70"
+      },
+      "testCaseTitle": "VerifyWebsiteLinks",
+      "automatedTestName": "FabrikamFiber.WebSite.TestClass.VerifyWebsiteLinks"
+    }
+  ],
+  "count": 2
+}
+```
+
 
 ## Add test results to a test run 
 
@@ -233,7 +914,7 @@ Content-Type: application/json
 | Parameter            | Type     | Default | Notes
 |:---------------------|:---------|:--------|:------------------------
 | URL
-| instance             | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string   |         | TFS server name ({server:port}).
 | project              | string   |         | Name or ID of the project.
 | Query
 | version              | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -265,7 +946,56 @@ Content-Type: application/json
 | durationInMs         | long     |         | Execution time of the test case in milliseconds                               
 | associatedWorkItems  | int[]    |         | IDs of the bugs associated with test result.
 
-[!code-REST [POST__test_runs__newRunId__results__json](./_data/results/POST__test_runs__newRunId__results.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/runs/46/results?api-version=2.0-preview
+```
+```json
+[
+  {
+    "testCaseTitle": "VerifyWebsiteTheme",
+    "automatedTestName": "FabrikamFiber.WebSite.TestClass.VerifyWebsiteTheme",
+    "testCasePriority": 1,
+    "outcome": "Passed"
+  },
+  {
+    "testCaseTitle": "VerifyWebsiteLinks",
+    "automatedTestName": "FabrikamFiber.WebSite.TestClass.VerifyWebsiteLinks",
+    "testCasePriority": 2,
+    "outcome": "Failed"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "id": 100000,
+      "project": {},
+      "testRun": {},
+      "lastUpdatedBy": {
+        "id": null
+      },
+      "url": ""
+    },
+    {
+      "id": 100001,
+      "project": {},
+      "testRun": {},
+      "lastUpdatedBy": {
+        "id": null
+      },
+      "url": ""
+    }
+  ]
+}
+```
+
 
 
 ## Update test results for a test run 
@@ -314,7 +1044,7 @@ Content-Type: application/json
 | Parameter           | Type     | Default | Notes
 |:--------------------|:---------|:--------|:------------------------
 | URL
-| instance            | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance            | string   |         | TFS server name ({server:port}).
 | project             | string   |         | Name or ID of the project.
 | Query
 | version             | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -336,7 +1066,59 @@ Content-Type: application/json
 | durationInMs        | long     |         | Execution time of the test case in milliseconds                               
 | associatedWorkItems | int[]    |         | IDs of the bugs associated with test result.
 
-[!code-REST [PATCH__test_runs__newRunId__results__json](./_data/results/PATCH__test_runs__newRunId__results.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/runs/45/results?api-version=2.0-preview
+```
+```json
+[
+  {
+    "testResult": {
+      "id": 100000
+    },
+    "state": "Completed",
+    "comment": "Website theme is looking good"
+  },
+  {
+    "testResult": {
+      "id": 100001
+    },
+    "state": "Completed",
+    "comment": "Website links are failing because of incorrect container id",
+    "failureType": "Known Issue"
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "id": 100000,
+      "project": {},
+      "testRun": {},
+      "lastUpdatedBy": {
+        "id": null
+      },
+      "url": ""
+    },
+    {
+      "id": 100001,
+      "project": {},
+      "testRun": {},
+      "lastUpdatedBy": {
+        "id": null
+      },
+      "url": ""
+    }
+  ]
+}
+```
+
 
 
 ## Update same set of properties for multiple test results in a test run (deprecated)
@@ -385,7 +1167,7 @@ Content-Type: application/json
 | Parameter            | Type     | Default | Notes
 |:---------------------|:---------|:--------|:------------------------
 | URL
-| instance             | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance             | string   |         | TFS server name ({server:port}).
 | project              | string   |         | Name or ID of the project.
 | Query
 | version              | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -408,6 +1190,45 @@ Content-Type: application/json
 | durationInMs         | long     |         | Execution time of the test case in milliseconds                               
 | associatedWorkItems  | int[]    |         | IDs of the bugs associated with test result.
 
-[!code-REST [PATCH__test_runs__newRunId__results_resultIds-_result1_,_result2__json](./_data/results/PATCH__test_runs__newRunId__results_resultIds-_result1_,_result2_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/runs/45/results?resultIds=100000,100001&api-version=2.0-preview
+```
+```json
+{
+  "state": "Completed",
+  "comment": "All test results got completed successfully"
+}
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "id": 100000,
+      "project": {},
+      "testRun": {},
+      "lastUpdatedBy": {
+        "id": null
+      },
+      "url": ""
+    },
+    {
+      "id": 100001,
+      "project": {},
+      "testRun": {},
+      "lastUpdatedBy": {
+        "id": null
+      },
+      "url": ""
+    }
+  ]
+}
+```
+
 
 

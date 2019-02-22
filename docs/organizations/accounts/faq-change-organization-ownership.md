@@ -1,18 +1,20 @@
 ---
-title: Troubleshoot changing organization owner for Azure DevOps Services
-description: Troubleshoot changing Azure DevOps organization owner and organization name (URL), learn about the difference between an organization owner and an organization user, and read frequently asked questions.
+title: Troubleshoot changing the owner of an organization
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn the answers to frequently asked questions (FAQs), like changing the organization owner and organization name (URL), learning the difference between an organization owner and user, and more.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 10/09/2017
-monikerRange: 'vsts'
+ms.date: 12/06/2017
+monikerRange: 'azure-devops'
 ---
 
-# Troubleshoot changing organization owner for Azure DevOps 
+# Troubleshoot changing the organization owner
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -28,10 +30,10 @@ monikerRange: 'vsts'
 
 A: This might happen for one of the following reasons:
 
-*	The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users-from-user-hub.md).  
-*	The user hasn't created a Visual Studio profile and agreed to the Terms of Service.  
-*	If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization owners list.  
-*	If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization owners list until they meet the requirements described in this article.
+* The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users.md).  
+* The user hasn't created a Visual Studio profile and agreed to the Terms of Service.  
+* If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization owners list.  
+* If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization owners list until they meet the requirements described in this article.
 
 [!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
 
@@ -45,7 +47,7 @@ A: Only the organization owner can change the URL. If you're the organization ow
 
 #### Q: How many organization owners can I have?
 
-A:	Your organization can have only one owner. Only organization owners can [perform certain actions](#owner-differences), so make sure you keep your organization owner updated.
+A: Your organization can have only one owner. Only organization owners can [perform certain actions](#owner-differences), so make sure you keep your organization owner updated.
 
 #### Q: Why did you ask for extra information when I signed in?
 
@@ -59,10 +61,10 @@ A: The organization owner manages payments and access for organization users. Th
 
 Organization owners also have permissions to perform the following tasks:
 
-*	Pay for users to access the organization.
-*	Pay for additional organization services.
-*	Rename the organization URL.
-*	Change the organization owner.
+* Pay for users to access the organization
+* Pay for additional organization services
+* Rename the organization URL
+* Change the organization owner
 
 Project collection administrators can manage user access and change the organization owner, but they can't rename the organization URL.
 
@@ -79,4 +81,3 @@ Project collection administrators can manage user access and change the organiza
 <a name="get-support"></a>
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
-

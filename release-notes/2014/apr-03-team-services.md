@@ -22,7 +22,7 @@ You’re probably wondering how this impacts your account and team projects livi
 
 First, it’s important to note that the “early adopter” period of Visual Studio Online is nearing its end. If you’ve signed up for the service prior to December 13 th of 2013, some of your users are likely assigned “early adopter licenses” giving them access to the full set of features on Visual Studio Online, even features reserved for paid plans and MSDN subscribers. This is what we call an “early adopter”.
 
-On May 7 th, 2014, the early adopter period will end. Don’t worry, this still means that you have 5 free Basic users licenses associated with your account, but for additional users you’ll need to purchase and assign a different user license. You can learn about the user licenses available to you [here](https://visualstudio.microsoft.com/products/visual-studio-online-overview-vs). If you’ve still got questions, don’t hesitate to jump over to the [FAQ](https://visualstudio.microsoft.com/en-us/support/early-adopter-faq-vs) for the early adopter program.
+On May 7 th, 2014, the early adopter period will end. Don’t worry, this still means that you have 5 free Basic users licenses associated with your account, but for additional users you’ll need to purchase and assign a different user license. You can learn about the user licenses available to you [here](https://visualstudio.microsoft.com/products/visual-studio-online-overview-vs). If you’ve still got questions, don’t hesitate to jump over to the [FAQ](https://visualstudio.microsoft.com/support/early-adopter-faq-vs) for the early adopter program.
 
 ###SLA
 
@@ -32,7 +32,7 @@ Part of our GA announcement is the addition of a financially-backed SLA for our 
 -We guarantee at least 99.9% availability to execute build operations using the paid **Visual Studio Online Build Service**.
 -We guarantee at least 99.9% availability to execute load testing operations using the paid **Visual Studio Load Testing Service**.
 
-All availability is calculated over a monthly billing cycle. For more details, please visit: [http://www.windowsazure.com/en-us/support/legal/sla/](http://www.windowsazure.com/en-us/support/legal/sla/).
+All availability is calculated over a monthly billing cycle. For more details, please visit: [http://www.windowsazure.com/support/legal/sla/](http://www.windowsazure.com/support/legal/sla/).
 
 ###Data Export Window
 
@@ -40,7 +40,7 @@ Many of our users started out with VS Online before we’d painted much of a pic
 
 ##Application Insights Limited Preview
 
-Application Insights, first [announced](../2013/nov-13-team-services.md) back in November of 2013, is moving to “Limited Preview” and an invitation code is no longer required to try it out. With this change you can login to Visual Studio Online and start using Application Insights by selecting “Try Application Insights” tile.
+Application Insights, first [announced](https://visualstudio.microsoft.com/articles/news/2013/nov-13-team-services) back in November of 2013, is moving to “Limited Preview” and an invitation code is no longer required to try it out. With this change you can login to Visual Studio Online and start using Application Insights by selecting “Try Application Insights” tile.
 
 ![Visual Studio Online: Try Application Insights](_img/4_3_01.png)
 

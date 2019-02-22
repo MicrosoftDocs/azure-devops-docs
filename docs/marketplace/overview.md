@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018
@@ -30,10 +30,10 @@ In the Visual Studio Marketplace you can do the following:
 
 ## What are extensions?
 
-An extension is an installable unit that contributes new capabilities into Visual Studio, Azure DevOps Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/). 
+An extension is an installable unit that contributes new capabilities into Visual Studio, Azure DevOps Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). 
 
 Extending Azure DevOps Services is the easiest way for users to get the most out of their 
-devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is home to hundreds of extensions
+devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is home to hundreds of extensions
 that can be installed to help with the following:
 
 - Planning and tracking of work items, sprints, scrums, etc.
@@ -41,9 +41,9 @@ that can be installed to help with the following:
 - Code testing and tracking
 - Collaboration amongst team members
 
-Adding extensions to your Azure DevOps organization is incredibly easy:
+Adding extensions to your organization is incredibly easy:
 
-1. Search and find extensions for your organization in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+1. Search and find extensions for your organization in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 2. Install the extension from the Marketplace and start using it in Azure DevOps.
 
 You must have administrative permissions to upload or install extensions.
@@ -52,7 +52,7 @@ You must have administrative permissions to upload or install extensions.
 
 | Product | Topics |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Azure DevOps Services | [Get extensions for Azure DevOps Services](install-vsts-extension.md) <br/> [Develop extensions for Azure DevOps Services](https://aka.ms/vsoextensions) |
+| Azure DevOps Services | [Get extensions for Azure DevOps Services](install-extension.md) <br/> [Develop extensions for Azure DevOps Services](https://aka.ms/vsoextensions) |
 | Team Foundation Server | [Get extensions for TFS](get-tfs-extensions.md) <br/> [Develop extensions for Team Foundation Server](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](http://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |

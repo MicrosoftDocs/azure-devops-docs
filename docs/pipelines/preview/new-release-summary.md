@@ -1,18 +1,21 @@
 ---
 title: New release progress views
+ms.custom: seodec18
 description: A preview of a new user experience for release progress on Azure Pipelines
 ms.assetid: 35CC58CC-0FB2-4C02-87C8-9C78459A84F4
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
-monikerRange: 'vsts'
+monikerRange: '> tfs-2018'
 ---
 
 # New release progress views
+
+**Azure Pipelines**
 
 A new and fully redesigned user experience is available for release progress in Azure Pipelines.
 To use this page, you simply need to switch it on using one of the on-screen prompts,
@@ -42,9 +45,11 @@ To go back to the old view, open the drop-down list from the ellipses (**...**) 
 
 ## Pre- and post-deployment gates and approvals
 
-The deployment conditions links open the information panels for pre- and post-deployment conditions.
+The deployment conditions links open the information panels for pre- and post-deployment conditions. See the status of approvals and gates for your stage. You can also Approve/Reject the pending approvals and Ignore a gate that the stage is waiting for.
 
-![Pre- and post-deployment conditions panels](_img/new-release-summary/pre-post-panel.png)
+![Pre- and post-deployment approvals](_img/new-release-summary/pre-post-panel.png)
+
+![Pre- and post-deployment gates](_img/new-release-summary/pre-post-gates.png)
 
 ## Commits and workitems
 
@@ -131,7 +136,7 @@ contribution point (the release stage editor tab):
 1. Change the target and properties of the extension code in **vss-extension.json**. For example,   
    previous code for contributing to the old contribution point could be:
  
-   ```
+   ```json
    { 
       "id": "rm-details-view-sample", 
       "type": "ms.vss-releaseManagement-web.release-summary-section", 
@@ -145,7 +150,7 @@ contribution point (the release stage editor tab):
 
    The updated code for the new contribution point would be: 
 
-   ```
+   ```json
    { 
       "id": "rm-environments-tab", 
       "type": "ms.vss-web.tab", 
@@ -175,20 +180,20 @@ contribution point (the release stage editor tab):
  
 1. Make the following changes to the extension code in **main.js**:
 
-   ```
-   // This code helps in the initial load of the extension 
-   VSS.ready(()=>{ 
-        // Initial config from host i.e. selected release stage object.
-       console.log(JSON.stringify(VSS.getConfiguration()));     
-   }); 
- 
-   // This code is required for listening to updates on the release stage object 
-   VSS.register("registeredEnvironmentObject", { 
-       updateContext: function(tabContext) {  
-          /* tabContext will follow the contract for the extension, this function will be called on any update in context.*/ 
-           console.log(JSON.stringify(tabContext)); 
-       } 
-  }); 
+```js
+// This code helps in the initial load of the extension 
+VSS.ready(()=>{ 
+      // Initial config from host i.e. selected release stage object.
+      console.log(JSON.stringify(VSS.getConfiguration()));     
+}); 
+
+// This code is required for listening to updates on the release stage object 
+VSS.register("registeredEnvironmentObject", { 
+      updateContext: function(tabContext) {  
+         /* tabContext will follow the contract for the extension, this function will be called on any update in context.*/ 
+         console.log(JSON.stringify(tabContext)); 
+      } 
+}); 
 ```
 
 [Download the sample extension code](https://github.com/ankitk94/vsts-environment-tab-extension).

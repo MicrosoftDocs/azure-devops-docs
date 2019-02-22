@@ -6,12 +6,12 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: jillfra
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
-ms.date: 07/02/2018
-monikerRange: 'vsts'
+ms.date: 02/19/2019
+monikerRange: 'azure-devops'
 ---
 
 # Private-to-public migration checklist
@@ -22,11 +22,11 @@ Before changing the visibility of your private project to public, you'll want to
 
 The checklist provided in this article indicates those items you may want to review before making a project public. It also provides tips for migrating work items or files to a new project so that you can expose only current and future content.
 
-
 ## Account identities and settings
-When you invite someone to become a member of a project, that person will gain access to additional resources and details about the account. Specifically they will have access to the following information. 
 
-> [!div class="mx-tdCol2BreakAll"]  
+When you invite someone to become a member of a project, that person gains access to additional resources and details about the account. Specifically, they have access to the following information.
+
+> [!div class="mx-tdCol2BreakAll"]  
 > | Area             | Additional details a member receives                |
 > |------------------|-----------------------------------------------------|
 > | Identities       | List of all members added to the organization       |
@@ -35,8 +35,8 @@ When you invite someone to become a member of a project, that person will gain a
 > | Process metadata | All picklist values in all projects in the account  |
 
 ## Cross-project linked objects
-In Azure DevOps, you can link objects that exist in different projects defined in the same organization. For example, you can link a bug in Project A to a pull request in Project B. If links exist between a public and a private project, details about the linked artifact in the private project are visible within the public project.
 
+In Azure DevOps, you can link objects that exist in different projects defined in the same organization. For example, you can link a bug in Project A to a pull request in Project B. If links exist between a public and a private project, details about the linked artifact in the private project are visible within the public project.
 
 The link types used to construct these links, as illustrated in the following image, are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
 
@@ -44,7 +44,7 @@ The link types used to construct these links, as illustrated in the following im
 
 Five kinds of cross-project links expose content from the private project.
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > | Link type            | Exposed content         |
 > |----------------------|-------------------------|
 > | Versioned Item       | Project name, file name |
@@ -60,7 +60,7 @@ Because work-items maintain their history when migrated from a private to public
 
 * Confirm that your work items, even closed ones, don't contain sensitive details: undisclosed security flaws, credentials, and customer data.
 * Be aware that all discussions and descriptions are available. Check that none contain embarrassing or problematic speech.
-* Confirm that none of your area paths have special, locked-down security settings. Denied permissions are not enforced in a public project, so restricted area paths will become public.
+* Confirm that none of your area paths have special, locked-down security settings. Denied permissions are not enforced in a public project, so restricted area paths become public.
 
 > [!TIP]
 > If you aren't comfortable exposing the whole work item database, you have migration options.
@@ -85,7 +85,7 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 ## Test
 
-* Understand that manual and cloud load testing features won't be available to non-members in a public project. 
+* Understand that manual and cloud load testing features won't be available to non-members in a public project.
 
 ## Analytics and dashboards
 
@@ -98,18 +98,19 @@ For instance, do you have a control on your work item form which renders data in
 Are there custom extensions which expose important details?
 
 * Confirm that each extension's author has made it available for non-members by testing it.
-* If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md). 
- 
+* If not, ask the extension author to add support for non-members. For details, see [Extensions and public project support](../../extend/develop/public-project.md).
+
 ## Partial migration tips
 
 Accounts containing sensitive material should not enable the public projects policy.
 In that case, we recommend creating an entirely separate account to host your public projects.
 
 <a id="move-work-items" />
-### Move work items to a private project 
+
+### Move work items to a private project
 
 If one or a handful of work items are sensitive, you can [move them](../../boards/backlogs/remove-delete-work-items.md#move) into a separate, private project.
-Cross-project links will continue to work for members.
+Cross-project links continue to work for members.
 Non-members won't have access to the content since it resides in a private project.
 
 If you have a large number of sensitive work items, consider keeping your current project private.
@@ -117,6 +118,7 @@ Instead, create a new public project in another account.
 Migrating work items can be accomplished using the open source [WiMigrator](https://github.com/Microsoft/vsts-work-item-migrator) maintained by Microsoft.
 
 ### Git tip-only migration
+
 If a repository cannot be shared due to problematic history, consider doing a tip-only migration to a new repository in a different project.
 The project containing the problematic repository should remain private.
 The new repository should be created in a project you don't mind making public.
@@ -135,11 +137,9 @@ The new repository should be created in a project you don't mind making public.
 - Add the new repository as your origin remote: `git remote add origin <new_clone_URL>`
 - Push up your new repository: `git push --set-upstream origin master`
 
-
-
 ## Related articles
-- [Make a project public](make-project-public.md) 
 
+- [Make a project public](make-project-public.md) 
 
 <!---
 [!INCLUDE [warning](_shared/warning-cross-link.md)]

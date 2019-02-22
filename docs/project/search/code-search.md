@@ -1,36 +1,36 @@
 ---
-title: Search your code in Azure DevOps and Team Foundation Server
+title: Search your code across your projects
 description: Get started with Code Search in Azure DevOps and TFS across all your projects to debug and manage your codebases
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Search your code
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search
 
 ## Prepare
 
-Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
+Go to [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
 to install the extension as an administrator.
 Non-administrative users can also go here to request the extension be added. 
-For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
+For more details, see [Install an extension](../../marketplace/install-extension.md#install-extension) in the Marketplace documentation.
 
->Only users with Basic access can use Code Search.
+> Only users with Basic access can use Code Search.
 
 ## Start searching
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
 1. Open the **Azure Repos** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
@@ -41,7 +41,9 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
 
 1. In the search textbox at the top right of the window, check that the text says
    _Search code_. The search text box may say _Search work items_. In this case, use the drop-down selector to change it.
@@ -57,7 +59,7 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search.
 
----
+::: moniker-end
 
 ## View the results
 

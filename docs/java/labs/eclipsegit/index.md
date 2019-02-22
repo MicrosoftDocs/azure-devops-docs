@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 07/10/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Clone an Azure DevOps Services Git repo using Eclipse
 
-In this exercise, you are going to import the MyShuttle2 repo in your Azure DevOps organization into to your VM for editing in Eclipse.
+In this exercise, you are going to import the MyShuttle2 repo within your organization into to your VM for editing in Eclipse.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -24,7 +24,7 @@ In this exercise, you are going to import the MyShuttle2 repo in your Azure DevO
 
 ## Prerequisites
 
-This exercise assumes you have completed [the Azure DevOps Services Java project setup tutorial](../settingAzure DevOps Servicesproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.
+This exercise assumes you have completed [the Azure DevOps Services Java project setup tutorial](../settingvstsproject/index.md), have created a Team Project that uses Git for version control, and imported the MyShuttle2 GitHub repo into your team project. This exercise uses a team project named **jdev**, though your team project name may differ.
 
 ## Connect to Azure DevOps Services from Eclipse
 
@@ -32,55 +32,55 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Click Eclipse in the Toolbar](../_img/eclipsegit/click-eclipse.png)
 
-1. The first time you run Eclipse, it will prompt for default workspace. Click on the box "Use this as the default and do not ask again" to use the default workspace on startup.
+2. The first time you run Eclipse, it will prompt for default workspace. Click on the box "Use this as the default and do not ask again" to use the default workspace on startup.
 
     ![Accept the default Eclipse workspace](../_img/eclipsegit/eclipse-defaults.png)
 
-1. When the Welcome dialog appears, on the Help Menu select Install New Software.
+3. When the Welcome dialog appears, on the Help Menu select Install New Software.
 
     ![Click on Help > Install New Software](../_img/eclipsegit/eclipse-install-new-software.png)
 
-1. Choose the Add button to add a new repository.  Use Team Explorer Everywhere as the name. The location of the update site is `https://dl.microsoft.com/eclipse`. 
+4. Choose the Add button to add a new repository.  Use Team Explorer Everywhere as the name. The location of the update site is `https://dl.microsoft.com/eclipse`. 
 
     ![Add Repository](../_img/eclipsegit/AddRepository.cropped.png)
 
-1. Choose the OK button.
+5. Choose the OK button.
 
-1. In the list of features in the Install dialog box, select the check box that corresponds to the Team Explorer Everywhere plugin. If you don't see this option, use the pull-down menu for "Work with:" and find the update site URL you just entered in the list and select it, then select the check box beside the plug-in mentioned above.
+6. In the list of features in the Install dialog box, select the check box that corresponds to the Team Explorer Everywhere plugin. If you don't see this option, use the pull-down menu for "Work with:" and find the update site URL you just entered in the list and select it, then select the check box beside the plug-in mentioned above.
 
     ![Select Team Explorer Everywhere](../_img/eclipsegit/SelectTee.cropped.png)
 
-1. Choose Next two times. Accept the license agreement and choose Finish
+7. Choose Next two times. Accept the license agreement and choose Finish
 
-1. Eclipse will need to restart.
+8. Eclipse will need to restart.
 
-1. When Eclipse restarts, the Welcome dialog will appear again. Choose Windows > Show View and select Other...
+9. When Eclipse restarts, the Welcome dialog will appear again. Choose Windows > Show View and select Other...
 
     ![Checkout from Azure DevOps Services Git](../_img/eclipsegit/showtee.png)
 
-1. Search for Team Explorer, select the Team Explorer View, and select OK.
+10. Search for Team Explorer, select the Team Explorer View, and select OK.
 
     ![Checkout from Azure DevOps Services Git](../_img/eclipsegit/showtee2.png)
 
-1. Click on "Connect to Azure DevOps Services ..." to sign in to your Azure DevOps organization.
+11. Click on "Connect to Azure DevOps Services ..." to sign in to your organization.
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/eclipse-vsts-signin.png)
 
-1. Choose the radio button next to "Connect to a Team Foundation Server or Azure DevOps Services account" then press the "Servers..." button. In the "Add/Remove Team Foundation Server" panel, click "Add..." and type in the name of the Azure DevOps organization (`https://{your-account-name}.visualstudio.com`) in the "Add Team Foundation Server" panel. Then press the OK button.
+12. Choose the radio button next to "Connect to a Team Foundation Server or Azure DevOps Services" then press the "Servers..." button. In the "Add/Remove Team Foundation Server" panel, click "Add..." and type in the name of the organization (`https://{your-account-name}.visualstudio.com`) in the "Add Team Foundation Server" panel. Then press the OK button.
 
-    ![Sign in to Azure DevOps Services](../_img/eclipsegit/browseAzure DevOps Services.png)
+    ![Sign in to Azure DevOps Services](../_img/eclipsegit/browsevsts.png)
 
-1. The "Follow the instructions to complete sign-in" window will pop up. Click on the hyperlink to be redirected to the Device Login page in a browser on the VM (may have a black background for security purposes).
+13. The "Follow the instructions to complete sign-in" window will pop up. Click on the hyperlink to be redirected to the Device Login page in a browser on the VM (may have a black background for security purposes).
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/eclipse-signin.png)
 
-1. Copy the code in the text field in Eclipse and paste it into the browser page, then press the "Continue" button. Then sign in with your credentials used to access Azure DevOps Services. If you get the credentials wrong you can try again by closing Eclipse, deleting ~/.microsoft/Team Explorer/4.0/*, and restarting Eclipse.
+14. Copy the code in the text field in Eclipse and paste it into the browser page, then press the "Continue" button. Then sign in with your credentials used to access Azure DevOps Services. If you get the credentials wrong you can try again by closing Eclipse, deleting ~/.microsoft/Team Explorer/4.0/*, and restarting Eclipse.
 
     ![Device login](../_img/eclipsegit/browser-devicelogin.png)
 
     ![Device login](../_img/eclipsegit/browser-deviceloggedin.png)
 
-1. Back in Eclipse, press the OK button in the device login window. The Azure DevOps organization should now show up in the list of servers to connect to. Press the "Close" button to close the current window.
+15. Back in Eclipse, press the OK button in the device login window. The organization should now show up in the list of servers to connect to. Press the "Close" button to close the current window.
 
     ![Sign in to Azure DevOps Services](../_img/eclipsegit/eclipse-tfslist.png "Sign in to Azure DevOps Services")
 

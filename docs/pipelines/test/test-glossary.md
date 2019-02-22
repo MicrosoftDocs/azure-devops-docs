@@ -1,20 +1,21 @@
 ---
-title: Test glossary
+title: Glossary of testing terms
 description: Frequently used terms in test report and test analytics
 ms.assetid: 7C6E8651-FD90-40EB-8E0F-1AE48360B5DB
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: jillfra
 ms.author: vinojos
-author: vinojos
-ms.date: 08/29/2018
+author: vinodjo
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Glossary
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 The section lists commonly used terms for [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md) in the pipeline.
 

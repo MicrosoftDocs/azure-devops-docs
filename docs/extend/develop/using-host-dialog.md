@@ -5,7 +5,7 @@ title: Modal Dialog | Extensions for Azure DevOps Services
 description: Use the modal dialog provided by the host
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -39,7 +39,7 @@ To start, declare a contribution of type `ms.vss-web.control` in your extension 
 
 The `uri` property references a page that will be rendered within the content area of the dialog:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>

@@ -3,24 +3,19 @@ title: Use the Azure portal to create a pipeline
 description: Use the Azure portal to create a pipeline
 ms.prod: devops
 ms.technology: devops-cicd
-services: vsts
-documentationcenter: vs-devops-build
-author: mlearned
-manager: douge
-editor: ''
-ms.assetid:
-ms.workload: web
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: quickstart
-ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
-ms.date: 05/06/2018
 ms.author: mlearned
-ms.custom: mvc
-monikerRange: 'vsts'
+author: mlearned
+ms.manager: jillfra
+ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
+ms.custom: "mvc, seodec18"
+ms.date: 05/06/2018
+monikerRange: 'azure-devops'
 ---
 
 # Use the Azure portal
+
+**Azure Pipelines**
 
 The Azure portal presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Azure Pipelines, which is the CI/CD solution for Azure, to configure the pipeline.
 
@@ -44,7 +39,7 @@ If you don't have an Azure subscription, you can get one free through [Visual St
  
 ## Configure an Azure DevOps organization and an Azure subscription
 
-1. Create a **new** Azure DevOps organization or choose an **existing** organization.  Choose a **name** for your Azure Pipelines project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
+1. Create a **new** Azure DevOps organization or choose an **existing** organization.  Choose a **name** for your Azure DevOps project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
 
    	![Enter Azure Pipelines info](_img/azure-devops-project/vstsazureinfo.png)
 
@@ -116,7 +111,7 @@ When no longer needed, you can delete the Azure App service and related resource
 
 ## Next steps
 
-When you configured your CI/CD pipeline in this quickstart, a build and release pipeline were automatically created in your Azure Pipelines project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
+When you configured your CI/CD pipeline in this quickstart, a build and release pipeline was automatically created in your Azure DevOps project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
 
 > [!div class="nextstepaction"]
 > [Customize CD pipeline](release/define-multistage-release-process.md)

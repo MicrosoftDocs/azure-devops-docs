@@ -2,14 +2,15 @@
 title: Create and manage an inherited process 
 titleSuffix: Azure DevOps Services
 description: Add custom fields, work item types, and more by creating and applying an inherited process to a project  
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'vsts'
+monikerRange: '>= azure-devops-2019'
 ms.date: 05/31/2018
 ---
 
@@ -18,7 +19,7 @@ ms.date: 05/31/2018
 
 # Create and manage inherited processes 
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 You customize your project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a project, you select the process you want your project to use. 
 
@@ -39,6 +40,10 @@ In this article, learn how to perform these tasks:
 > * Enable or disable a process
 > * Set a process as the default to use when adding projects  
 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
@@ -55,7 +60,7 @@ You can create an inherited process from any one of the three system processes: 
 	> [!div class="mx-imgBorder"]  
 	> ![Context menu, Choose Create inherited process](_img/process/create-inherited-process.png) 
 
-	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
+	If you don't have access to these options, ask your project collection admin to [grant you permissions](../../security/set-project-collection-level-permissions.md#collection-level).
 
 0.	Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
 
@@ -87,23 +92,23 @@ You can change the process a project uses from a system process or inherited pro
 
 0. Click the checkbox of those projects you want to change to use the Agile process. 	
 
-	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile will appear under the Available projects column. 
+	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile appear under the Available projects column.
  
 	<img src="_img/process/mprocess-change-process-dialog-to-agile.png" alt="Change process to a system process dialog" style="border: 1px solid #C3C3C3;" />  
 
-0. After  you've confirmed that the projects you want to change are correct, click Ok. 
+1. After  you've confirmed that the projects you want to change are correct, click Ok. 
 
 > [!IMPORTANT]  
 >When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example: 
 > 
-> - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
+> - If you make a field required, work items with that field undefined show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
 > - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the project. 
 
 
 <a id="create-team-project">  </a>
 ## Create a project from a process 
 
-0. Open the &hellip; context menu for the process you want to use and choose **New project**.  
+1. Open the &hellip; context menu for the process you want to use and choose **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
@@ -116,9 +121,9 @@ You can change the process a project uses from a system process or inherited pro
 It's a good practice to test the customizations you make before rolling out the changes to your organization.  To do this, you create a copy of a process, make your updates, verify the updates appear as desired, and then move projects to the new process.  
  
 > [!TIP]    
-> If you make a change to a process that is used by one or more projects, each project that uses the process will update immediately to the incremental process change. To bundle your process changes before you roll them out to all projects, following the  steps outlined next. 
+> If you make a change to a process that is used by one or more projects, each project that uses the process updates immediately to the incremental process change. To bundle your process changes before you roll them out to all projects, following the  steps outlined next.
 
-0. Create a copy of the process that you want to change. From the **Process** page, open the &hellip; context menu for the process you want to copy and choose **Copy process**.  
+1. Create a copy of the process that you want to change. From the **Process** page, open the &hellip; context menu for the process you want to copy and choose **Copy process**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Make a copy of a selected inherited process](_img/process/copy-process.png) 
@@ -172,7 +177,7 @@ Project Collection Administrators can [add projects](../../projects/create-proje
 <a id="process-rest-api">  </a>
 ### Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/azure/devops/processes/processes).
 
 
 

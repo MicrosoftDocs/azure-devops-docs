@@ -1,21 +1,23 @@
 ---
-title: CI/CD with Azure App Service and Azure Cosmos DB
-titleSuffix: Azure Pipelines & TFS
-description: Use Azure Pipelines to enable Continuous Integration (CI) and Continous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
+title: Deploy to App Services and Cosmos DB
+description: Use Azure Pipelines to enable Continuous Integration (CI) and Continuous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
+ms.custom: seodec18
 ms.author: mlearned
-ms.manager: douge
+ms.manager: jillfra
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.date: 08/05/2018
+ms.date: 12/07/2018
 author: mlearned
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 
 # How-To:  CI/CD with App Service and Azure Cosmos DB
 
-Create a continuous integration (CI) and continuous delivery (CD) pipeline for Azure Comsos DB backed Azure App Service Web App.  Azure Cosmos DB is Microsoft's globally distributed, multi-model database. Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions.
+**Azure Pipelines**
+
+Create a continuous integration (CI) and continuous delivery (CD) pipeline for Azure Cosmos DB backed Azure App Service Web App.  Azure Cosmos DB is Microsoft's globally distributed, multi-model database. Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions.
 
 You will:
 
@@ -40,7 +42,7 @@ To import the sample app into a Git repo in Azure Repos:
 
  1. Sign into your Azure DevOps organization.
 
- 1. On the **Code** hub for your project in Azure Repos, select the drop-down and choose the option to **Import repository**.
+ 1. on the **Code** page for your project in Azure Repos, select the drop-down and choose the option to **Import repository**.
 
  1. On the **Import a Git repository** dialog box, paste https://github.com/Azure-Samples/documentdb-dotnet-todo-app.git into the **Clone URL** text box.
 
@@ -54,13 +56,13 @@ Set up CI for your ASP.NET application and Cosmos DB to build and create deploya
 
 1. On the right-side of the screen, select **+ NEW** to create a new build.
 
-1. Choose the **repository** for the sample application you imported earlier in this tutorial, and then cnoose **continue**.
+1. Choose the **repository** for the sample application you imported earlier in this tutorial, and then choose **continue**.
 
 1. Search for the **ASP.NET Application** build template, and then select **Apply**.
 
   ![ASP.NET Template](_img/cosmos-db/aspnettemplate.png)
 
-1. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository excecutes a build.
+1. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository executes a build.
 
 1. Select **Save & Queue**, and then choose **Save and Queue** to execute a new build.
 
@@ -100,19 +102,19 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. Under the **Artifacts** ideas, choose the **Continuous deployment trigger** icon.  On the right side of the screen, ensure **Enabled** is on.
 
-1. Select **Save** to save changes for the release defintion.
+1. Select **Save** to save changes for the release definition.
 
 ## Review the CI/CD pipeline
 
 Follow the steps below to test and review the CI/CD pipeline.
 
-1. On the **Code** hub select the **ellipsis** (...) icon next to the **web.config** file in the **src** directory, and then select **Edit**.
+1. on the **Code** page select the **ellipsis** (...) icon next to the **web.config** file in the **src** directory, and then select **Edit**.
 
 1. Replace the existing **value** (ToDoList) for the **database** key in the **appSettings** section of the web.config with a new value such as **NewToDoList**.  You will commit this change to demonstrate creating a new Cosmos DB database as part of the CI/CD pipeline.  This is a simple change to demonstrate CI/CD capabilities of Cosmos DB with Azure Pipelines.  However, more [complicated code changes](/azure/cosmos-db/sql-api-dotnet-samples) can also be deployed with the same CI/CD pipeline.
 
-1. Select **Commit**, and then choose **Commit** to save the changes directly to the repostiory.
+1. Select **Commit**, and then choose **Commit** to save the changes directly to the repository.
 
-1. On the **Build** hub select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, you can also monitor the release.
+1. On the **Build** page select **Builds** and you will see your CI build executing.  You can follow the build execution with the interactive logging.  Once the build completes, you can also monitor the release.
 
 1. Once the release finishes, navigate to your Cosmos DB service to see your new database.
 

@@ -1,24 +1,21 @@
 ---
-title: Deploy a nginx web server on a Linux Virtual Machine
-description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups in Release Management
+title: Deploy nginx to a Linux VM
+description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups in Azure Pipelines
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: '>= tfs-2017'
+ms.date: 12/07/2018
+monikerRange: '>= tfs-2018'
 ---
 
 # Deploy to a Linux Virtual Machine
 
-**Azure Pipelines | TFS 2018**
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines or Team Foundation Server (TFS) 2018. You can use the steps in this
@@ -80,11 +77,11 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1. Open the **Tasks** tab, select the **Agent job**, and choose **Remove** to remove this job.
 
-   ![Removing the Agent job](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
+   ![Removing the Agent job from the pipeline](_img/deploy-linuxvm-deploygroups/remove-agent-phase-image.png)
 
 1. Choose **...** next to the **Stage 1** deployment pipeline and select **Add deployment group job**.
 
-   ![Adding a Deployment group job](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
+   ![Adding a Deployment group stage to the pipeline](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
 
 1. For the **Deployment Group**, select the deployment group you created earlier such as **myNginx**.
 
@@ -93,11 +90,11 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
     The tasks you add to this job will run on each of the machines in the deployment group you specified.
 
 1. Choose **+** next to the **Deployment group job** and, in the task catalog, search for and add a
-   **Shell Script** task.
+   **Bash** task.
 
-   ![Adding a Shell Script task](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
+   ![Adding a Shell Script task to the pipeline](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
 
-1. In the properties of the **Shell Script** task, use the **Browse** button for the **Script Path** to select
+1. In the properties of the **Bash** task, use the **Browse** button for the **Script Path** to select
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
    repository to build your app, the location of the script is  
    `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`
@@ -106,7 +103,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1. Save the release pipeline.
 
-   ![Saving the release pipeline](_img/deploy-linuxvm-deploygroups/save-definition.png)
+   ![Saving the newly created release pipeline](_img/deploy-linuxvm-deploygroups/save-definition-image.png)
 
 ## Create a release to deploy your app
 

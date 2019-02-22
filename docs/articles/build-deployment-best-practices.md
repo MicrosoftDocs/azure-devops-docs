@@ -5,7 +5,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 06/01/2016
 ms.author: mlearned
 author: mlearned
@@ -183,7 +183,7 @@ your TFS to pick up the latest builds or even select builds.
 
 We also discussed the benefits that we found by taking up these practices:
 
-*   Minimal wastage of time due to automation of build and deploy phases
+*   Minimal wastage of time due to automations of build, deploy phases
 
 *   Higher code quality due to Gated check-ins (with integrated Test Automation), Code Analysis, 
 and Fortify Integration
@@ -197,15 +197,15 @@ and Fortify Integration
 ## References
 
 [1] Visual Studio team, 
-[Automate deployments with Release Management](https://msdn.microsoft.com/en-us/Library/vs/alm/Release/overview), 
+[Automate deployments with Release Management](https://msdn.microsoft.com/Library/vs/alm/Release/overview), 
 MSDN Article
 
 [2] Visual Studio team, 
-[Build and Deploy Continuously](https://msdn.microsoft.com/en-us/library/ee308011%28v=vs.100%29.aspx), 
+[Build and Deploy Continuously](https://msdn.microsoft.com/library/ee308011%28v=vs.100%29.aspx), 
 MSDN Article
 
 [3] Visual Studio team, 
-[Building a Release Pipeline with Team Foundation Server 2012](https://msdn.microsoft.com/en-us/library/dn449957.aspx), 
+[Building a Release Pipeline with Team Foundation Server 2012](https://msdn.microsoft.com/library/dn449957.aspx), 
 MSDN Article
 
 *(c) 2015 Microsoft Corporation. All rights reserved. This document is

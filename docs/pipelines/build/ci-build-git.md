@@ -2,23 +2,21 @@
 title: Building multiple branches
 description: Build multiple branches using Azure Pipelines or TFS
 ms.prod: devops
-services: vsts
-documentationcenter: vs-devops-build
+ms.technology: devops-cicd
+ms.author: mlearned
+ms.topic: conceptual
 ms.author: mlearned
 author: mlearned
-ms.manager: douge
-editor: ''
-ms.technology: devops-cicd
+ms.manager: jillfra
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
-ms.topic: conceptual
-ms.tgt_pltfrm: ''
-ms.workload: ''
-ms.date: 06/29/2018
-ms.custom: mvc
+ms.date: 10/19/2018
+ms.custom: "mvc, seodec18"
 monikerRange: '>=tfs-2017'
 ---
 
 # Build multiple branches
+
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -45,9 +43,9 @@ A common workflow with Git is to create temporary branches from your master bran
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-Unless you specify a `trigger` in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features\*` branches to be automatically built.
+Unless you specify a [trigger](../yaml-schema.md#trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features/*` branches to be automatically built.
 
 ```yaml
 trigger:
@@ -56,7 +54,7 @@ trigger:
 ```
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -93,16 +91,16 @@ The master branch typically produces deployable artifacts such as binaries.  You
 
 # [YAML](#tab/yaml)
 
-Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to `publish artifacts` task.
+Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ```yaml
 - task: PublishBuildArtifacts@1
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 ```
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -111,7 +109,7 @@ YAML builds are not yet available on TFS.
 # [Designer](#tab/designer)
 
 1. Locate the build pipeline that services your master branch. Select **Edit**.
-1. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the **Publish Artifact** task.
+1. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](../tasks/utility/publish-build-artifacts.md) task.
 1. Select **Control Options** for the task on the bottom right hand part of your screen.
 51. Select the dropdown for **Run this task** and choose **Custom conditions**.
 
@@ -136,15 +134,26 @@ Use policies to protect your branches by requiring successful builds before merg
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-Unless you explicitly override `trigger` in your YAML file, all changes in any of the branches will trigger a build. And, this includes pull request changes.
+Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
+You can specify the target branches for your pull request builds. 
+For example, to run the build only for pull requests that target: `master` and `features/*`:
+
+```yaml
+pr:
+- master
+- features/*
+```
+
+For more details, see [Triggers](../build/triggers.md).
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
+
 
 # [Designer](#tab/designer)
 

@@ -1,12 +1,12 @@
 ---
 title: Sign Your Mobile App During CI
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: How to sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1b9de1a8-0749-40af-87e8-857fb86cf0ae
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
@@ -200,7 +200,7 @@ Save your build pipeline, and you are all set! The build agent will now be able 
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

@@ -24,7 +24,7 @@ We’ve also improved the Azure Continuous Deployment feature we released in Jun
 
 ![Build report with deployment summary](_img/8_6_02.png)
 
-We’ve also made a variety of updates to the welcome site content – a new [article on Code Review](/azure/devops/tfvc/get-code-reviewed-vs?view=vsts) and updates to all the screen shots to reflect some of the styling changes we’ve made in the past couple of months.
+We’ve also made a variety of updates to the welcome site content – a new [article on Code Review](/azure/devops/tfvc/get-code-reviewed-vs?view=azure-devops) and updates to all the screen shots to reflect some of the styling changes we’ve made in the past couple of months.
 
 Lastly, we’ve updated our service status page to contain more information about expected maintenance windows, service interruptions, etc. You can still go to the service blog if you like but this brings it all to the main site and saves you the click to the blog.
 

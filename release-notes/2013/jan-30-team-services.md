@@ -62,13 +62,13 @@ And, we are working on an integrated Git experience in Visual Studio. Note, it�
 
 Our approach to Git will be to fully integrate it into our devops experience – you can link commits to work items, do automated builds of Git repos, get a fully integrated VS experience and access it from any platform. We think adding a Git option will help TFS be applicable to even more work styles.
 
-You can read more about how to get started with the new Git support in our learn content [here](/azure/devops/git/share-your-code-in-git-vs-2017?view=vsts).
+You can read more about how to get started with the new Git support in our learn content [here](/azure/devops/git/share-your-code-in-git-vs-2017?view=azure-devops).
 
 What we released today is just the beginning. The Git support today is just scratching the surface of what we plan to provide. There’s enough there to get going and use it in real projects. Expect that in every sprint over the next several months it will continue to advance.
 
 ##Test Case Management
 
-Many people do some amount of manual testing as part of their app development cycle. We have a product called [Microsoft Test Professional](https://www.microsoft.com/en-us/download/details.aspx?id=30662) that enables you to plan, execute and track manual testing activity. We’ve gotten feedback from our Test Professional users that there are scenarios where installing a rich client app in the test environment is prohibitive and a zero impact web experience is really needed. In this release of the service, we are previewing (note the little * on the Test hub indicating this is a preview feature) a web based manual test experience.
+Many people do some amount of manual testing as part of their app development cycle. We have a product called [Microsoft Test Professional](https://www.microsoft.com/download/details.aspx?id=30662) that enables you to plan, execute and track manual testing activity. We’ve gotten feedback from our Test Professional users that there are scenarios where installing a rich client app in the test environment is prohibitive and a zero impact web experience is really needed. In this release of the service, we are previewing (note the little * on the Test hub indicating this is a preview feature) a web based manual test experience.
 
 The new top level Test hub has a list of test plans, suites and test cases. You can see who the test cases are assigned to and their status. From here you can add, remove and edit test cases.
 
@@ -78,7 +78,7 @@ You can also “run” them, launching a simple web based manual test runner exp
 
 ![Run manual tests](./_img/1_30_11.png)
 
-Please check all these improvements out. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+Please check all these improvements out. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

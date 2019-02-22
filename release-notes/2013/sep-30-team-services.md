@@ -27,7 +27,7 @@ In our source based web views, we have rich syntax highlighting for code. Today 
 
 ##Color Picking in Charts
 
-In the [last deployment](../2013/sep-09-team-services.md), we added a new work item chart feature. By popular demand, we now allow you to edit the colors for each series on a chart. Simply click on a series in the chart and pick a color from the color picker.
+In the [last deployment](https://visualstudio.microsoft.com/articles/news/2013/sep-09-team-services), we added a new work item chart feature. By popular demand, we now allow you to edit the colors for each series on a chart. Simply click on a series in the chart and pick a color from the color picker.
 
 ![Color picker for charts](_img/9_30_01.png)
 
@@ -41,7 +41,7 @@ Note: The grid view will only show test case work item fields - it will not show
 
 Tester, Configurations etc., which are associated with running tests.
 
-That’s it for this sprint 54. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for this sprint 54. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

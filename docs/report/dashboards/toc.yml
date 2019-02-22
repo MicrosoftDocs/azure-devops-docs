@@ -6,7 +6,7 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: "Add & manage dashboards"
+  - name: "Add, rename, & delete dashboards"
     href: dashboards.md
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
@@ -28,6 +28,8 @@
     href: velocity-chart-data-store.md
   - name: Work with sprint burndown
     href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+  - name: Configure test trend results
+    href: configure-test-results-trend.md
 - name: Concepts
   items:
   - name: Burndown guidance

@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: reference
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'
@@ -105,7 +105,7 @@ This [Conduct a Git pull request](/azure/devops/repos/git/pullrequest) tutorial 
 
 ### What if I can't see any repositories after signing in?
 
-In some rare cases, the list of repositories is empty after signing in with your Azure DevOps organization.  If that happens, you can click the **Team Foundation Server** tab and enter the URL to your Azure DevOps organization in the **Server URL** textbox and then click **Connect**.  If you don't know the URL to your Azure DevOps organization, the Azure DevOps organizations you have access to will be listed at [https://app.vssps.visualstudio.com](https://app.vssps.visualstudio.com).
+In some rare cases, the list of repositories is empty after signing in to your organization.  If that happens, you can click the **Team Foundation Server** tab and enter the URL to your organization in the **Server URL** textbox and then click **Connect**.  If you don't know the URL to your organization, the organizations you have access to in Azure DevOps will be listed at [https://app.vssps.visualstudio.com](https://app.vssps.visualstudio.com).
 
 ### When I test the tf executable, I get a warning that the version detected is 0.0.0. How can I make it detect the actual version?
 

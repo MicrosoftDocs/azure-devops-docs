@@ -1,5 +1,6 @@
 ---
-title: .NET Core CLI
+title: .NET Core CLI task
+ms.custom: seodec18
 description: Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 ms.topic: reference
 ms.prod: devops
@@ -8,12 +9,14 @@ ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
-# Build: .NET Core CLI
+# .NET Core CLI task
 
-![](_img/dotnetcorecli.png) Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -67,7 +70,7 @@ If you choose 'Use the build number', this will use the build number to version 
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

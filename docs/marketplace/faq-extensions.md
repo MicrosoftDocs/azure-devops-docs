@@ -4,7 +4,7 @@ description: Troubleshooting getting and paying for extensions for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 04/04/2018
@@ -34,7 +34,7 @@ Paid extensions are supported and generally are charged per user per month.
 
 #### Q: Who can install extensions for Azure DevOps Services?
 
-A: The Azure DevOps Services organization owner and project collection administrator can install extensions. If you don't have permissions, but you're an organization member, 
+A: The organization owner and project collection administrator can install extensions. If you don't have permissions, but you're an organization member, 
 you can request extensions instead. 
 
 <a name="find-owner"></a>
@@ -90,7 +90,7 @@ A:	This might happen for several reasons.
 
 *	Your users don't have the correct access levels. 
 Most extensions require that users have Basic access, not Stakeholder.
-For example, the Test Manager extension requires at least Basic access.
+For example, the Test Manager extension for Azure Test Plans requires at least Basic access.
 
 *	You assigned all the paid extensions that you bought.
 

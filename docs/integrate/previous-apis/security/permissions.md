@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Permissions and security with VSTS | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Permissions and security with VSTS | REST API Reference for Team Foundation Server
 description: Permissions reference fpr integrating with VSTS
 ms.assetid: ede350bd-bdf7-4360-90ac-e5be3fe24266
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 03/15/2017
 ---
 
 # Permissions
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 ## Evaluate permissions
@@ -30,7 +33,7 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to demand.
 | Query 
@@ -40,11 +43,27 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 
 #### AlwaysAllowAdministrators set to false
 
-[!code-REST [GET_permission](./_data/GET__permissions__securityNamespaceId__8__token-_token1__alwaysAllowAdministrators-False.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/permissions/5a27515b-ccd7-42c9-84f1-54c998f03866/8/?token=token1&alwaysAllowAdministrators=False&api-version=1.0
+```
+
 
 #### AlwaysAllowAdministrators set to true
 
-[!code-REST [GET_permission_alwaysAllowAdmins](./_data/GET__permissions__securityNamespaceId__8__token-_token1__alwaysAllowAdministrators-True.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/permissions/5a27515b-ccd7-42c9-84f1-54c998f03866/8/?token=token1&alwaysAllowAdministrators=True&api-version=1.0
+```
+
+#### Sample response
+
+```json
+true
+```
+
 
 ### Evaluate permissions on a list of tokens
 
@@ -63,7 +82,7 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to demand.
 | Query 
@@ -72,7 +91,25 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | alwaysAllowAdministrators | bool     |         | True if members of the Administrators group should always pass the security check.
 | delimiter         | char     | ,       | The delimiter to use when encoding the list of tokens on the wire as a single string.
 
-[!code-REST [GET_permissions_plural](./_data/GET__permissions__securityNamespaceId__8__api-version-2.2_tokens-_token1_,_token2_,_token3__alwaysAllowAdministrators-False.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/permissions/5a27515b-ccd7-42c9-84f1-54c998f03866/8/?api-version=2.2&tokens=token1,token2,token3&alwaysAllowAdministrators=False
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    false,
+    false,
+    true
+  ]
+}
+```
+
 
 #### Batch version
 
@@ -85,7 +122,7 @@ POST https://{instance}/_apis/security/permissionevaluationbatch/?api-version={v
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | Query
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use. Works with Version 3.0 and above.
 | Body 
@@ -101,7 +138,61 @@ Parameter           | Type     | Notes
 | permissions       | int      | The permission bits to demand.
 | value             | bool     | [Out] The result of the security evaluation.
 
-[!code-REST [POST_security_permissionevaluationbatch](./_data/POST__security_permissionevaluationbatch__api-version-3.0-preview.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/security/permissionevaluationbatch/?api-version=3.0-preview
+```
+```json
+{
+  "alwaysallowadministrators": false,
+  "evaluations": [
+    {
+      "securitynamespaceid": "5a27515b-ccd7-42c9-84f1-54c998f03866",
+      "token": "token1",
+      "permissions": 8
+    },
+    {
+      "securitynamespaceid": "5a27515b-ccd7-42c9-84f1-54c998f03866",
+      "token": "token2",
+      "permissions": 8
+    },
+    {
+      "securitynamespaceid": "5a27515b-ccd7-42c9-84f1-54c998f03866",
+      "token": "token3",
+      "permissions": 8
+    }
+  ]
+}
+```
+
+#### Sample response
+
+```json
+{
+  "evaluations": [
+    {
+      "securityNamespaceId": "5a27515b-ccd7-42c9-84f1-54c998f03866",
+      "token": "token1",
+      "permissions": 8,
+      "value": false
+    },
+    {
+      "securityNamespaceId": "5a27515b-ccd7-42c9-84f1-54c998f03866",
+      "token": "token2",
+      "permissions": 8,
+      "value": false
+    },
+    {
+      "securityNamespaceId": "5a27515b-ccd7-42c9-84f1-54c998f03866",
+      "token": "token3",
+      "permissions": 8,
+      "value": true
+    }
+  ]
+}
+```
+
 
 ## Remove permissions
 <a name="remove" />
@@ -116,11 +207,25 @@ DELETE https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?t
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to remove from the ACE's allow and deny bitmasks.
 | Query 
 | token             | string   |         | The token whose ACL contains the ACE to be modified.
 | descriptor        | IdentityDescriptor |         | The descriptor of the ACE to be modified.
 
-[!code-REST [DELETE_permissions](./_data/DELETE__permissions__securityNamespaceId__4__token-_token1__descriptor-_descriptor_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/permissions/5a27515b-ccd7-42c9-84f1-54c998f03866/4/?token=token1&descriptor=Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1&api-version=1.0
+```
+
+#### Sample response
+
+```json
+{
+  "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+  "allow": 1,
+  "deny": 0
+}
+```

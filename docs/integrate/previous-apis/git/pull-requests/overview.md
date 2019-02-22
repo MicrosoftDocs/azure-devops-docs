@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Git Pull Request | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with Git programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Git Pull Request | REST API Reference for Team Foundation Server
+description: Work with Git programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 47DDF67E-C4BE-4D96-BA20-360A652F3280
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 11/03/2016
 ---
 
 # Git Pull Request API
+
+[!INCLUDE [azure-devops](../../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../../_data/version3-preview.md)]
 
 

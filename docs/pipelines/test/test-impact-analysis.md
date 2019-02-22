@@ -1,20 +1,26 @@
 ---
-title: Speed up testing with Test Impact Analysis (TIA) - test automation tools
-description: Continuous testing. Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
+title: Use Test Impact Analysis
+description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-**Visual Studio 2015.3 and later | TFS 2017.1 and later | Azure Pipelines**
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+
+::: moniker range="<= tfs-2018"
+> [!NOTE] 
+> Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
+::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
@@ -85,7 +91,7 @@ The Test Impact data collector is automatically configured. No additional steps 
 If your application interacts with a service in the context of IIS, you must also configure the Test Impact data collector to run in the context of IIS by using a **.runsettings** file.
 Here is a sample that creates this configuration:
 
-``` sample.runsettings
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
   <DataCollectionRunSettings>

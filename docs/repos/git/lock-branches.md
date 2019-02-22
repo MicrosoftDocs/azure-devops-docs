@@ -5,11 +5,11 @@ description: Use the branches page to lock a branch in Azure DevOps Services or 
 ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 10/11/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -33,9 +33,7 @@ Share with your team the reason for the locking of the branch and make sure your
 
 ## Lock a branch using the Branches view
 
-0. Open the **Branches** view while viewing your repo on the web.
-
-   ![Access the branches view on the web](_img/branches/branches_nav.png)
+0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
 
 0. Locate your branch on the **Branches** view. You can search for your branch using the **Search all branches** box in the upper right.
 

@@ -8,7 +8,7 @@ ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 02/26/2018
 ---
 
@@ -72,16 +72,7 @@ To create a new global list, start with the following code and modify it as need
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
-<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
-  <GLOBALLIST name="Disciplines">
-    <LISTITEM value="Architecture" />
-    <LISTITEM value="Requirements" />
-    <LISTITEM value="Development" />
-    <LISTITEM value="Release Management" />
-    <LISTITEM value="Project Management" />
-    <LISTITEM value="Test" />
-  </GLOBALLIST>
-</gl:GLOBALLISTS>  
+<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists"> <GLOBALLIST name="Disciplines"> <LISTITEM value="Architecture" /> <LISTITEM value="Requirements" /> <LISTITEM value="Development" /> <LISTITEM value="Release Management" /> <LISTITEM value="Project Management" /> <LISTITEM value="Test" /> </GLOBALLIST></gl:GLOBALLISTS>  
 ```  
   
  Don't include project-scoped security groups within a global list, because global lists are scoped to a collection and not a project.  

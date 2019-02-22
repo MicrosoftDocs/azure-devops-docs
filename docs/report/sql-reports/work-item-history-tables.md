@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Query for historical data about bugs, tasks, and other types of work items defined in an on-premises Team Foundation Server 
 ms.assetid: 54f07bd4-dc55-4f68-a28e-e61ccce77060
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/17

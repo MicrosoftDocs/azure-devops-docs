@@ -5,7 +5,7 @@ description: Best practices when integrating with the REST APIs for Azure DevOps
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 9E1F3FD7-E1C1-44D9-B265-5368B3BD621E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: dahellem
 ms.date: 01/25/2017
 ---
@@ -23,7 +23,7 @@ For many teams, Azure DevOps Services is one of several tools that are used to e
 ##Push only actionable work items
 Only push items into Azure DevOps Services when it is an actionable work item that your team actually going to engage on or address in the future. Keep work items out of Azure DevOps Services until absolutely necessary. 
 
-For example, don't attempt to store telemetry data in Team Services.
+For example, don't attempt to store telemetry data in Azure DevOps.
 
 ##Maintain your own data store
 Don't add work items into Azure DevOps Services for the sake of having them all in one place. Azure DevOps Services is not designed as a data storage service. You should maintain your own data store.

@@ -1,20 +1,22 @@
 ---
-title: Customize backlogs and boards for an inherited process
+title: Customize backlogs and boards 
 titleSuffix: Azure DevOps Services 
-description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for a project
+description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model 
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts'
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 11/19/2018
 ---
 
-# Customize your backlogs or boards  
+# Customize your backlogs or boards (Inheritance process)  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]     
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]    
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
@@ -22,6 +24,11 @@ You can customize your backlogs to add more levels or add custom work item types
 > ![Changes made to the backlog levels](_img/process/process-backlog-boards-intro.png) 
 
 Your project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
+
+
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../../boards/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
 
@@ -39,13 +46,13 @@ To learn more about what you can customize, see [About process customization and
 
 Each process defines two default portfolio backlogs, Epics and Features; each is associated with their corresponding work item types, epics and features. 
 
-You can add a custom work item type when adding or editing a portfolio backlog, or you can choose a work item type you've previously added. Only those work item types that don't belong to another backlog level will appear for selection. 
+You can add a custom work item type when adding or editing a portfolio backlog, or you can choose a work item type you've previously added. Only those work item types that don't belong to another backlog level appear for selection. 
  
 
 <a id="add-portfolio-backlog">  </a>
 ### Add a portfolio backlog 
 	
-0. From the  **Backlog levels** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**. 
+1. From the  **Backlog levels** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New top level portfolio backlog**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, select Process](_img/process/process-new-portfolio-backlog.png) 
@@ -99,7 +106,7 @@ The Iteration backlog, also referred to as the sprint backlogs, defines the WITs
 
 For the iteration backlog, you can add WITs and change the default WIT. Open the Edit backlog dialog from the context menu for the Iteration backlog. 
 
-Here, we've added the *Ticket* WIT which will be tracked along with tasks. 
+Here, we've added the *Ticket* WIT which is tracked along with tasks. 
 
 <img src="_img/process/process-edit-iteration-backlog-dialog-modified.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
 

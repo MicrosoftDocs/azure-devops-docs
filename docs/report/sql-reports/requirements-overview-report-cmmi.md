@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all requirements, filtered by area and iteration and in order of importance.
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 10/17/17
 ---

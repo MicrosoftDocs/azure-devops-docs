@@ -1,20 +1,20 @@
 ---
 title: Burndown guidance
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: Review Scrum progress during and at the end of a sprint when working in Azure DevOps and Team Foundation Server 
+ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.date: 11/16/2017
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 11/01/2018
 ---
 
-
-
 # Burndown guidance
- 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
@@ -77,12 +77,10 @@ In addition to the sprint burndown chart, teams can review the velocity at which
 You can use your team [velocity](team-velocity.md) as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 
 
-
 ### Industry resources:  
 *	[Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  
 *	[Task sizing in Agile software development](http://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
 <!---
 For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
-
 --> 

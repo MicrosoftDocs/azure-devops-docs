@@ -1,17 +1,18 @@
 ---
 title: Scrum process template artifacts
-titleSuffix: Azure Boards and TFS
-description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+ms.custom: work-items
+description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
----
+ms.date: 11/19/2018
+--- 
 
 
 # Scrum process   
@@ -20,17 +21,16 @@ ms.date: 03/20/2018
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
-<img src="_img/scrum-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
+![Scrum process work item types, conceptual image](_img/scrum-process-work-tracking-wits.png)  
 
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards).  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > [!NOTE]  
 > You can customize the work tracking system for your project based on the Scrum process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azure-devops-2019"
 > [!NOTE]  
 > The latest version of the Scrum process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../../reference/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
@@ -44,11 +44,14 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 In addition to WITs, reports, and dashboards, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. 
 
+<a id="start-using-scrum" />
 ## Plan and track work with Scrum  
 
 You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. You track bugs, tasks, and blocking issues using the bug, task, and impediment WITs. To support portfolio management, teams create features and epics to view a roll up of their product backlog items within or across teams. For details about using Scrum WITs, see [Scrum process work item types and workflow](scrum-process-workflow.md).  
 
 The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
+
+*Click on one of the following images to go to the linked article.*
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
@@ -65,7 +68,7 @@ To list work items for a current sprint or the product backlog, use the shared q
 
 ![Shared queries (Scrum process)](_img/IC665405.png)  
 
-[Descriptions of predefined queries](#predefined-queries) are listed later in this topic.   
+[Descriptions of predefined queries](#predefined-queries) are listed later in this article.   
 
 You can open a query from the work items page and then use the [query editor to apply different filter criteria](../../queries/using-queries.md). Also, you can [add queries to team dashboards](../../../report/dashboards.md). From Team Explorer, you can open any [work item query in Excel](../../backlogs/office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
 
@@ -84,12 +87,12 @@ To get started, you can open a shared query and create a chart based on your tra
 
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
 ::: moniker-end
 
 <a id="reports"></a>
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= azure-devops-2019"
 ## Scrum process and SQL Server reports
 
 If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Scrum reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  

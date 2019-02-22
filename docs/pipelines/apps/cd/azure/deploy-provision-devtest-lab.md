@@ -1,20 +1,21 @@
 ---
-title: Manage a virtual machine in Azure DevTest Labs
-description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs using Microsoft Release Management in Azure Pipelines and TFS
+title: Manage a VM in DevTest Labs
+description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs in Azure Pipelines and TFS
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Manage a virtual machine in Azure DevTest Labs
 
-[!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -39,7 +40,7 @@ would use the tasks individually in your own custom build-test-deploy pipeline.
 
 Start by installing the
 [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks)
-extension from Visual Studio Marketplace:
+extension from Visual Studio Marketplace, Azure DevOps tab:
 
 * For Azure Pipelines, choose **Install**
 * For TFS, choose **Download** and install the extension on your server.
@@ -105,12 +106,12 @@ use to create an Azure Virtual Machine on demand.
    **PowerShell on Target Machines**. These are the tasks you 
    typically use to deploy apps to an Azure VM, and they require values
    such as the VM Resource Group name, IP address, and 
-   fully-qualified domain name (FDQN).
+   fully-qualified domain name (FQDN).
 
 ## Deploy
 
 Carry out the following steps to create the 
-release pipeline in Release Management.
+release pipeline in Azure Pipelines.
 
 1. Open the **Releases** tab of **Azure Pipelines** and choose the
    "**+**" icon to create a new release pipeline.
@@ -153,7 +154,7 @@ release pipeline in Release Management.
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
-   - **Template Name**: Enter the full path and name of the template file you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory)/Contoso/ARMTemplates/CreateVMTemplate.json`.
+   - **Template Name**: Enter the full path and name of the template file you saved into your source code repository. You can use the built-in properties of Azure Pipelines to simplify the path, for example: `$(System.DefaultWorkingDirectory)/Contoso/ARMTemplates/CreateVMTemplate.json`.
    
    - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the stage, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
    
@@ -165,7 +166,7 @@ release pipeline in Release Management.
    and add an **Azure PowerShell** task from the **Deploy** tab.
    Configure the task as follows:
 
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    
@@ -174,7 +175,7 @@ release pipeline in Release Management.
    
    - **Script Type**: `Script File`.
    
-   - **Script Path**:  Enter the full path and name of the script you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory/Contoso/Scripts/GetLabVMParams.ps1`.
+   - **Script Path**:  Enter the full path and name of the script you saved into your source code repository. You can use the built-in properties of Azure Pipelines to simplify the path, for example: `$(System.DefaultWorkingDirectory/Contoso/Scripts/GetLabVMParams.ps1`.
    
    - **Script Arguments**: Enter as the script argument the name of the stage variable that was automatically populated with the ID of the lab VM by the previous task, for example: `-labVmId '$(labVMId)'`. |
    
@@ -247,7 +248,7 @@ release pipeline in Release Management.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

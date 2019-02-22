@@ -1,15 +1,17 @@
 ---
-title: Create managed queries to generate a list of work items
-titleSuffix: Azure Boards and TFS 
-description: Track work by creating queries to list work items in Azure Boards & Team Foundation Server 
+title: List work items with managed queries 
+titleSuffix: Azure Boards 
+description: Track work by creating queries to list work items in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/27/2018  
+ms.date: 02/01/2019
 ---
 
 
@@ -17,7 +19,7 @@ ms.date: 04/27/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an adhoc search using the [search box](search-box-queries.md). 
+A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
 
 With queries, you can perform these functions: 
 
@@ -33,14 +35,14 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 ## Getting started 
 
-If you are looking for a specific work item, use the adhoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
+If you are looking for a specific work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
 - [View and run a query](view-run-query.md)   
-- [Perform an adhoc search](search-box-queries.md)  
+- [Perform an ad hoc search](search-box-queries.md)  
 - [Query editor](using-queries.md)    
-- [Query operators & macros](query-operators-variables.md)       
-- [Organize and run managed queries](organize-queries.md)   
+- [Query operators & macros](query-operators-variables.md)  
 
+For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
 
 ###Additional tips for working with queries
 -   To find work items that are assigned to you, add **@Me** as the value for the Assigned To field in one of the query clauses.  
@@ -49,31 +51,43 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 -   You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
 -   You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 For additional tips when working with the new queries experience or the directory-focused queries views, see [Tips for working with the directory-focused **Queries** pages](view-run-query.md#tips-queries-hub). 
 ::: moniker-end
+
+<a id="my-shared"/>
+## My Queries, Shared Queries, and Favorites
+
+Only you can view and run queries that you save under **My Queries** with the queries directory. Also, you can favorite one of these queries to have it appear within your query selector.
+
+Queries you and others save under **Shared Queries** can be viewed by everyone with access to the project. Shared queries can be organized within folders and favorited by you or for a team. Also, you can set permissions on the folders and queries to prevent others from moving or editing them. 
+
+For details, see:
+- [Organize queries, add a query folder](organize-queries.md)
+- [Set query permissions](set-query-permissions.md)
+- [Favorite a query](view-run-query.md#favorite) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
 
 <a id="examples"/>
 ## Example queries 
 
-*You can list work items based on the following criteria...*  
+You can list work items based on the following criteria...
 
-### Assignment and other account-specific fields
+### Identity based queries  
 - [Active items assigned to me](query-by-workflow-changes.md#me)
 - [Closed items that were assigned to me](query-by-workflow-changes.md#me)
 - [Active items assigned to my team](query-by-workflow-changes.md#me)
 - [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)
 - [Items I closed](query-by-workflow-changes.md#workflow-change-who)
 - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who)
+- [Team or group membership queries](query-by-workflow-changes.md#group)
 
 ### Keywords or phrases
-- [Items containing a keyword/phrase](titles-ids-descriptions.md#keyword)
-- [Items not containing a keyword/phrase](titles-ids-descriptions.md#keyword)
-- [Items with an undefined field](titles-ids-descriptions.md#undefined-value)
-- [Items that belong to a category](titles-ids-descriptions.md#category)
+- [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
+- [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
+- [Empty or not empty HTML field queries](titles-ids-descriptions.md#empty)
+- [Category based queries](titles-ids-descriptions.md#category)
 
-
-### Work item counts and numeric fields 
+### Work item count and numeric field queries 
 - [Count of active bugs per developer](query-numeric.md#counts)
 - [Count of bugs by area and states](query-numeric.md#counts)
 - [Sum of story points and their status](query-numeric.md#effort)
@@ -81,16 +95,14 @@ For additional tips when working with the new queries experience or the director
 - [Sum of remaining work per developer](query-numeric.md#work) 
 
 
-### History and revision changes
-
+### History and revision change queries
 - [History contains a specific word](history-and-auditing.md)
 - [History doesn't contain a specific word](history-and-auditing.md)
 - [Reactivated items](history-and-auditing.md)
 - [Items closed within a time period](history-and-auditing.md)
 - [Items you've been associated with](history-and-auditing.md)
 
-### Date field or current iteration
-
+### Date and iteration based queries
 - [Items created in the last 30 days](query-by-date-or-current-iteration.md)
 - [Items modified on a specific date](query-by-date-or-current-iteration.md)
 - [Items resolved today](query-by-date-or-current-iteration.md)
@@ -109,28 +121,27 @@ For additional tips when working with the new queries experience or the director
 - [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)
 - [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) 
   
-### Links and attachments 
+### Link and attachment count queries 
 - [All child items of a single epic ](linking-attachments.md)
 - [All related items](linking-attachments.md)
 - [Items with one or more attachments](linking-attachments.md)
 - [Items with 2 or more hyperlinks](linking-attachments.md)
 - [Items containing external links](linking-attachments.md)
 
-### Tags
+### Tag based queries
 - [Items containing a specific tag](add-tags-to-work-items.md)
 - [Items that don't contain a specific tag](add-tags-to-work-items.md)
 - [Items that contain two or more tags ](add-tags-to-work-items.md)
 
-### Build and Test fields
+### Build and test field queries
 - [List bugs and linked test cases](build-test-integration.md#linked-bugs)
 - [List automated test cases](build-test-integration.md)
 - [List requirement-based test suites](build-test-integration.md)
 - [List query-based test suites](build-test-integration.md)  
 
 
-::: moniker range="vsts"
-
-### Team focus 
+::: moniker range=">= azure-devops-2019"
+### Team focus queries
 - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
 - [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)  
 - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
@@ -140,10 +151,10 @@ For additional tips when working with the new queries experience or the director
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-> [!div class="mx-tdBreakAll"]  
-> |Team focus |  
-> |-------------| 
-> |- [Assigned to a member of a team](query-by-workflow-changes.md#group)<br/>- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
+### Team focus queries
+
+- [Assigned to a member of a team](query-by-workflow-changes.md#group)
+- [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
 
 ::: moniker-end
 
@@ -151,6 +162,7 @@ For additional tips when working with the new queries experience or the director
 
 ## Related articles
 
+- [Query quick reference](query-index-quick-ref.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)  
 
@@ -168,4 +180,4 @@ By default, you query within a single project. However, using the query editor, 
 
 ### Visualize related work and other objects 
 
-You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace. 
+You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 

@@ -1,21 +1,24 @@
 ---
-title: Xcode
-description: Building Xcode projects using Azure Pipelines and TFS
+title: Build, test, and deploy Xcode apps
+description: Build Xcode projects in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 08/31/2018
-ms.topic: quickstart
+ms.custom: seodec18
+ms.date: 02/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Xcode
+# Build, test, and deploy Xcode apps in Azure Pipelines
 
-This guidance explains how to build apps with Xcode.
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build Xcode projects with CI/CD pipelines.
 
 ## Example
 
@@ -33,14 +36,14 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your apps with Xcode without needing to set up any infrastructure of your own. Xcode is preinstalled on [Microsoft-hosted macOS agents](../agents/hosted.md) in Azure Pipelines. You can use the macOS agents to run your builds.
 
-For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
 pool:
-  vmImage: 'macOS 10.13'
+  vmImage: 'macOS-10.13'
 ```
 
 ## Build an app with Xcode
@@ -59,14 +62,41 @@ steps:
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
-    xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
+    xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
 ```
 
 ### Signing and provisioning
 
-To sign and provision your app, see [Sign your mobile app during CI](../apps/mobile/app-signing.md).
+An Xcode app must be signed and provisioned to run on a device or be published to the App Store. The signing and provisioning process needs access to your P12 signing certificate and one or more provisioning profiles. The [Install Apple Certificate](../tasks/utility/install-apple-certificate.md) and [Install Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) tasks make these available to Xcode during a build.
+
+The following snippet installs an Apple P12 certificate and provisioning profile in the build agent's Keychain. Then, it builds, signs, and provisions the app with Xcode. Finally, the certificate and provisioning profile are automatically removed from the Keychain at the end of the build, regardless of whether the build succeeded or failed. For more details, see [Sign your mobile app during CI](../apps/mobile/app-signing.md).
+
+```yaml
+# The `certSecureFile` and `provProfileSecureFile` files are uploaded to the Azure Pipelines secure files library where they are encrypted.
+# The `P12Password` variable is set in the Azure Pipelines pipeline editor and marked 'secret' to be encrypted.
+steps:
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'chrisid_iOSDev_Nov2018.p12'
+    certPwd: $(P12Password)
+
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provProfileSecureFile: '6ffac825-ed27-47d0-8134-95fcf37a666c.mobileprovision'
+
+- task: Xcode@5
+  inputs:
+    actions: 'build'
+    scheme: ''
+    sdk: 'iphoneos'
+    configuration: 'Release'
+    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+    signingOption: 'default' # Options: nosign, default, manual, auto
+    useXcpretty: 'false' # Makes it easier to diagnose build failures
+```
 
 ### CocoaPods
 
@@ -95,7 +125,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 ### Retain artifacts with the build record
 
 Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
-to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ```yaml
 - task: CopyFiles@2

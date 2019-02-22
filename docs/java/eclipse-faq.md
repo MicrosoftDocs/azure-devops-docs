@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference 
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2013'
@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2013'
 
 ### Is there a Beginner's Guide for TEE?
 
-Absolutely.  You can find it on MSDN at [Team Foundation Server Plug-in for Eclipse - Beginner's Guide](https://msdn.microsoft.com/en-us/library/hh913026(v=vs.120).aspx).
+Absolutely.  You can find it on MSDN at [Team Foundation Server Plug-in for Eclipse - Beginner's Guide](https://msdn.microsoft.com/library/hh913026(v=vs.120).aspx).
 
 ### Is there a way to view local repos in TEE 2015 in Eclipse (Mars) or is it assumed one would use the other Git tooling for Eclipse?
 
@@ -34,7 +34,7 @@ It is expected that one would use the standard eGit tooling in Eclipse to view l
 
 ### Also, is there an easy way (using TEE) to "import" a local Git repo and push it up to Azure DevOps Services? Or is the Git command-line the way to do it?
 
-There's documentation on how to do it in TEE at [Sharing Eclipse Projects in Team Foundation Server](https://msdn.microsoft.com/en-us/library/hh568708(v=vs.120).aspx).
+There's documentation on how to do it in TEE at [Sharing Eclipse Projects in Team Foundation Server](https://msdn.microsoft.com/library/hh568708(v=vs.120).aspx).
 That article specifically shows TFVC but when you go to Share the project, you'll be prompted to choose a repository type (Git or TFVC).
 
 ### Where can I learn more about the Azure Toolkit for Eclipse?
@@ -43,7 +43,7 @@ That article specifically shows TFVC but when you go to Share the project, you'l
 
 ### The TEE Command Line Client has removed the "tf profile" command. How can I connect to TFS without having to repeatedly type my credentials?
 
-You can use Kerberos for authentication to a TFS server. More information can be found [here](https://msdn.microsoft.com/en-us/library/gg475929%28v=vs.120%29.aspx). This article mentions the "tf profile" command because it still existed at that time this article was written but that step can be skipped now all together.
+You can use Kerberos for authentication to a TFS server. More information can be found [here](https://msdn.microsoft.com/library/gg475929%28v=vs.120%29.aspx). This article mentions the "tf profile" command because it still existed at that time this article was written but that step can be skipped now all together.
 
 ### How can I fix the "Authentication not supported" error when using Eclipse to perform Git operations with TFS?
 

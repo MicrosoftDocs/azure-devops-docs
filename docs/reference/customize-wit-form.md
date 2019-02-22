@@ -1,12 +1,13 @@
 ---
 title: Customize the layout of the work item web form
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 12/15/2017  
@@ -39,7 +40,7 @@ Use this sequence when you use the On-premises XML process model, i.e., you mana
 
 
 ## Import/export process zip files 
-Use this sequence when you use the Hosted XML process model, i.e., you manage your work tracking customization by importing a process or process template. 
+Use this sequence when you use the Hosted XML process model, i.e., when you manage your work tracking customization by importing a process or process template. 
 
 [![Export process](_img/cust-wit-form-export-process.png)](../organizations/settings/work/import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../organizations/settings/work/import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
@@ -68,23 +69,32 @@ See the following topics to make the indicated customizations:
 <a id="witadmin">  </a>  
 ## Import and export WIT definition files 
 
+> [!NOTE]   
+> The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../organizations/settings/work/manage-process.md) to modify the work item type. 
+
 0.  If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
   
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
+0.  Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
+
+	For example:
+  
+    ```  
+    %programfiles(x86)%\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer 
+    ```  
 
 0.  Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
         witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
-    An example of a *CollectionURL* for an Azure DevOps Services organization is https://dev.azure.com/*OrganizationName*.
+    An example of a *CollectionURL* for an organization is https://dev.azure.com/*OrganizationName*.
 
-0.  Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
+1.  Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
 
-0.  Import the WIT definition file.  
+2.  Import the WIT definition file.  
 
         witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
 
-0.  Open either the web portal to view the changes. If the client is already open, refresh the page. 
+3.  Open either the web portal to view the changes. If the client is already open, refresh the page. 
 
     The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the refresh completes.
 

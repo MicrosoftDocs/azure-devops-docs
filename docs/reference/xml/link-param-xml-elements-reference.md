@@ -1,13 +1,12 @@
 ---
 title: Link and Param XML elements reference
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Adds a hyperlink to a field or a standalone label on a work item form by using the Link element, Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6651e599-52d4-4edc-87cf-264d64befbac
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: jillfra
+ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 04/05/2017
 ---
@@ -31,9 +30,9 @@ The `Link` element is either a child element of the `Control` element, or a chil
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<Link URLRoot="URLRoot" URLPath="URLPathWithParameters">
-    <Param Index="IndexValue" Value="ParamValue" Type="Original | Current" />
-</Link>
+<Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">  
+      <Param Index="IndexValue " Value="ParamValue " Type ="Original | Current"/>  
+</Link>  
 ```  
   
 ## Attributes and elements  

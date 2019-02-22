@@ -1,11 +1,11 @@
 ---
 title: Resolve data validation errors
-titleSuffix: Azure Boards and TFS
-description: Address rule errors that occur when publishing a list from Excel or Project to Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Address rule errors that occur when publishing a list from Excel or Project to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -33,7 +33,7 @@ A data validation error occurs when a change in the work item list or project pl
 1.  In the **Work Item Publishing Errors** dialog box, for each work item that appears with a data validation error, follow these steps.  
   
     > [!NOTE]  
-    >  If the data validation error is an invalid work item type, the **Edit Work Item** button is not visible, and a work item form does not appear. You must correct the error in the Office Excel worksheet or the Office Project plan. For information about how to resolve an error in Office Excel, see the next procedure in this topic.  
+    >  If the data validation error is an invalid work item type, the **Edit Work Item** button is not visible, and a work item form does not appear. You must correct the error in the Office Excel worksheet or the Office Project plan. For information about how to resolve an error in Office Excel, see the next procedure in this article.  
   
     1.  In the **Unpublished work items** box, click the work item, and then click **Edit Work Item**.  
   
@@ -75,7 +75,7 @@ A data validation error occurs when a change in the work item list or project pl
 ## Related articles
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
--  [Work in Excel and Project](track-work-vsts-tfs.md) 
+-  [Work in Excel and Project](track-work.md) 
 
 
 ###Required permissions  

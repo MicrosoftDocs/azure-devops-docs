@@ -1,19 +1,21 @@
 ---
 ms.prod: devops
 title: Agents pools
-titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
+ms.custom: seodec18
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/13/2018
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Agent pools
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -57,7 +59,7 @@ The following organization agent pools are provided by default:
 
 * **Default** pool: Use it to register [self-hosted agents](agents.md) that you've set up.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 * **Hosted Ubuntu 1604** pool (Azure Pipelines only): Enables you to build and release on
   Linux machines without having to configure a self-hosted Linux agent. Agents in this pool do not
@@ -68,10 +70,11 @@ The following organization agent pools are provided by default:
   Linux machines without having to configure a self-hosted Linux agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
-  *Note: this pool has been superceded by the **Hosted Ubuntu 1604** pool.*
+  *Note: this pool has been superceded by the Hosted Ubuntu 1604 pool. It will be removed from the service on December 1, 2018.*
+  *Learn more about [migrating](hosted.md#hosted-linux-preview-pool-deprecation).*
 
 * **Hosted macOS** pool (Azure Pipelines only): Enables you to build and release on
-  macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+  macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
 * **Hosted VS2017** pool (Azure Pipelines only): The **Hosted VS2017** pool is another built-in pool in Azure Pipelines. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
 
@@ -84,6 +87,8 @@ The following organization agent pools are provided by default:
 Each of these Microsoft-hosted organization agent pools is exposed to each project through a corresponding project agent pool. By default, all contributors in a project are members of the **User** role on each hosted pool. This allows every contributor in a project to author and run build and release pipelines using Microsoft-hosted pools.
 
 ::: moniker-end
+
+Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 
 If you've got a lot of agents intended for different teams or purposes, you might want to create additional pools as explained below.
 
@@ -147,7 +152,7 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 On the 'Create a project agent pool' dialog box, you can't use an existing organization agent pool if it is already referenced by another project agent pool. Each organization agent pool can be referenced by only one project agent pool within a given project collection.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### I can't select a Microsoft-hosted pool and I can't queue my build. How do I fix this?
 
@@ -155,7 +160,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### I need more hosted build resources. What can I do?
 

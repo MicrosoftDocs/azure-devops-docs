@@ -1,11 +1,11 @@
 ---
-title: TF30167-The New Team Project Wizard could not finish creating the project {0}. 
-titleSuffix: Azure DevOps Services & TFS
+title: TF30167-The New Team Project Wizard ... 
+titleSuffix: Azure DevOps & TFS
 description: Occurs when the wizard uses a third-party plug-in while creating the project.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: be5da2f1-eaa7-4a13-8c60-09a13cb65d1c
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

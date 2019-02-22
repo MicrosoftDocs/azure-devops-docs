@@ -1,14 +1,17 @@
 ---
-title: Index to topics for work item tracking
-titleSuffix: Azure Boards and TFS 
-description: Index to topics for planning and tracking work in Azure Boards & Team Foundation Server
+title: Learn about how issues, bugs, tasks, features, and more are tracked using work items 
+titleSuffix: Azure Boards 
+description: Index to topics for planning and tracking work in Azure Boards, Azure DevOps, & Team Foundation Server
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
-ms.date: 03/20/2018
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 01/08/2018
 ---
 
 # Work items
@@ -18,14 +21,10 @@ ms.date: 03/20/2018
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 
 
-<!---
-## Overview  
-[About work items](about-work-items.md) 
--->
 
-::: moniker range="vsts"
 ## 5-Minute Quickstarts  
- 
+
+::: moniker range=">= azure-devops-2019"
 - [View and add work items](view-add-work-items.md)  
 - [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json) 
@@ -33,7 +32,6 @@ Track the features and requirements you're developing, code defects or bugs, and
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-## 5-Minute Quickstarts  
   
 - [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json) 
@@ -41,15 +39,11 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-## 5-Minute Quickstarts  
-
 - [Add work items](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 ::: moniker-end
 
-
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Step-by-Step Tutorials
-
+::: moniker range=">= tfs-2017"
 - [Follow work](follow-work-items.md)
 - [Manage bugs](../backlogs/manage-bugs.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Manage issues](../backlogs/manage-issues-impediments.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
@@ -59,8 +53,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-## Step-by-Step Tutorials
+::: moniker range="<= tfs-2015"
 
 - [Manage bugs](../backlogs/manage-bugs.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Manage issues](../backlogs/manage-issues-impediments.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
@@ -78,8 +71,9 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Scrum process guidance](guidance/scrum-process.md)         
 - [Agile glossary](agile-glossary.md) 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
 ## How-to Guides
+::: moniker range=">= tfs-2015"
 - [Use @mentions to further discussion](../../notifications/at-mentions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Use #ID to link to work items](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Add tags to work items](../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
@@ -89,13 +83,13 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ::: moniker range="tfs-2013"
 
-## How-to Guides
 - [Add tags to work items](../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json)
 - [Use work item templates](../backlogs/work-item-template.md?toc=/azure/devops/boards/work-items/toc.json)
+::: moniker-end
 
-
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Reference
+::: moniker range=">= tfs-2017"
+
 - [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Work item form controls](work-item-form-controls.md) 
 - [Keyboard shortcuts for work item forms & the Work Items page](work-item-form-keyboard-shortcuts.md)       
@@ -103,12 +97,13 @@ Track the features and requirements you're developing, code defects or bugs, and
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-## Reference
+::: moniker range="<= tfs-2015"
+
 - [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)  
 - [Work item field index](guidance/work-item-field.md)
 
 ::: moniker-end
+
 ## Resources 
 
 - [Backlogs](../backlogs/index.md)

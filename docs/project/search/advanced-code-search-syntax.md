@@ -1,20 +1,20 @@
 ---
-title: Advanced search options in Microsoft Code Search in Azure DevOps and TFS
+title: Use advanced code search options
 description: How To Use Code Search - Advanced options for using Code Search across all your projects in Azure DevOps and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # How To: Use Code Search
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 By using Code Search you can:
 
@@ -67,7 +67,7 @@ Specify the branches for each repository that you want Code
 Search to index in the **Options** tab of the **Repositories** section in the
 [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
-::: moniker range="= vsts"
+::: moniker range="azure-devops-2019"
 
 ![Configure Git branches to include in search](_img/advanced-work-item-search-syntax/configure-branches.png)
 
@@ -148,6 +148,8 @@ Within a phrase:
 * You need to escape only the special characters `\` and `"`.
 
 ### Search for special characters
+
+> **Note**: This feature is currently available only for Azure DevOps Services customers and not TFS.
 
 You can include special characters in a search string, or search specifically for special characters,
 according to the following rules:

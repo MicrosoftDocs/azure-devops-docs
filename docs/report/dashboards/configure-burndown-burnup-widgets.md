@@ -1,28 +1,24 @@
 ---
 title: Configure Burndown & Burnup widgets
-titleSuffix: Azure DevOps Services   
-description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Azure DevOps
+titleSuffix: Azure DevOps   
+description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Azure DevOps  
+ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
-ms.date: 06/30/2018 
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/19/2018 
 ---
 
-
 # Configure a Burndown or Burnup widget 
- 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The Burndown and Burnup widgets provide the flexibility to create burndown or burnup charts for any type of scope, worked on by any number of teams, within any defined period of time. Burndown charts focus on remaining work within a specific time period, while Burnup charts focus on completed work. 
 
-<!---You can use the Burndown widget to create a Release Burndown, a Bug Burndown, or a burndown of a specific type of work.--> 
-
-> [!NOTE]   
-> **Feature availability:** The Burndown and Burnup widgets are available only for Azure DevOps at this time. For on-premises TFS, you can add the [Sprint Burndown widget](../dashboards/widget-catalog.md#sprint-burndown-widget) to your dashboard. 
 
 Both burndown and burnup charts help answer the question: **Are we on track to complete this set of work by the end date?**
 
@@ -34,19 +30,19 @@ Use this topic to learn how to:
 > * How to work with the burndown chart    
 > * How to configure a sprint burndown     
 
+> [!NOTE]
+> The Burnup and Burndown widgets are available by installing the [Analytics extension](../analytics/analytics-extension.md)
+
 A burndown chart is a useful tool to track completion of a predefined scope of work over a predefined period of time. For example, a sprint burndown tracks the sprint backlog completion by end of the sprint. A release burndown tracks the release backlog completion by the end of the release. A bug burndown chart can also be used to track completion of a set of bugs by a certain date. 
 
 **Burndown widget configured to display a Release Burndown**
-
 ![Burndown Widget - Release Burndown Example](./_img/burndown-widget/burndownup-release-burndown.png)
 
 **Burndown widget configured to display a Bug Burndown**
-
 ![Burndown Widget - Release Burndown Example](./_img/burndown-widget/burndownup-bug-burndown.png)
 
  
 ## Burndown and burnup metrics 
-
 Burndown and burnup charts provide an easy way to monitor progress across teams and sprints by showing work remaining over time. Work remaining is the vertical axis and time is the horizontal axis. You can define remaining work to be calculated as a sum of a particular field, such as Story Points, or count of a particular work item type. 
 
 In addition, each chart calculates and displays the average burndown or burnup rate and added scope over the course of the project. The Burndown chart calculates a projected completion date for when the work is expected to be done based on historical burndown and scope increase. Using burndown, teams can stay on top of their progress and see the immediate impact of their work on their delivery date. 
@@ -61,36 +57,28 @@ To help you answer the question: *Are we on track to complete this set of work b
 * Projected completion date, based on historical burndown and scope increase rates
 
 <!---
-
 ## Configure the widget
 ### Pre-requisites
 
 In order to configure the Burndown and Burndown widgets, you must have the following in place:
 
-* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
+* Installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 * [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboard-permissions.md).
 -->
 
-
-
 ## Add the widget to your dashboard   
-
 The Configuration dialog for the Burndown and Burnup widgets is the same. You configure these widgets for one or more teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).
 
-1. If you haven't yet added the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now.    
+1. If you haven't yet added the [Analytics Marketplace extension](../analytics/analytics-extension.md), do that now.    
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. Click the ![dotdotdot actions](./_img/burndown-widget/image-config-dotdotdot-actions-icon.png) actions icon and choose the Configure option to open the configuration dialog.  
-
-> [!NOTE]   
-> While the Burndown and Burnup widgets use the Analytics service, access to the service for other report purposes is not supported at this time.
+1. Choose the ![  ](./_img/burndown-widget/image-config-dotdotdot-actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog.  
 
 ## Choose the teams and work items to chart  
-
 1. Modify the **Title** of the widget and select your preferred **Size**. The Burndown widget can scale up to 10x10.    
 1. Select the **Teams** you want to track.   
 	Select at least one **Project** and one **Team**.   
 	![Burndown Widget - Configuration - Select team](./_img/burndown-widget/burndownup-config-select-team.png)    
-	If you wish to track progress across teams, just add more teams using the team selector. You may also select teams from other team projects.  
+	If you wish to track progress across teams, just add more teams using the team selector. You may also select teams from other projects.  
 	![Burndown Widget - Configuration - Select multiple teams](./_img/burndown-widget/burndownup-config-select-multiple-teams.png)  
 	The Burndown chart will display the burndown of remaining work for all selected teams.   
 
@@ -128,7 +116,6 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 
 ## Choose how you want to calculate burndown or burnup 
-
 1. Select how you want to calculate burndown or burnup, by a count of work items or a sum based on a selected field.  
 	Here, we choose to base the burndown on a count of work items.   
 	![Burndown Widget - Configuration - Select burndown on count](./_img/burndown-widget/burndownup-config-select-burndown-on-count.png)  
@@ -141,7 +128,6 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	<!---You can select from one of several fields such as Remaining Work, Total Remaining, Average Burn Rate, and Projected Completion Date.  You may select to burndown by on a count of work items -->
 
 ## Choose the time period and plotting interval  
-
 1. Select the time period. You can select from one of the following options to define your time period:
 
    | Option | Purpose for burndown | 
@@ -167,7 +153,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	The burndown chart uses the end date of each iteration to plot the remaining work for that iteration.
 
 	> [!NOTE]   
-	> The Average Burndown assumes that every iteration is the same length. It does not consider iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best restuls, enter a **Start Date** that is the same as the first iteration's start date. 
+	> The Average Burndown assumes that every iteration is the same length. It does not consider iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best results, enter a **Start Date** that is the same as the first iteration's start date. 
 
 	If you select to plot based on an iteration schedule, you will not be able to select **End Date**. The burndown assumes the **End Date** is the last iteration's end date.
 
@@ -182,18 +168,16 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	If you select **Months**, then burndown will be calculated based the last day of each month.  
 
 	> [!NOTE]    
-	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first months's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first months's start date. **This is also true when plotting by weekly itervals.**
+	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first month's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first month's start date. **This is also true when plotting by weekly intervals.**
 
 ## Choose additional options 
-
 Check the boxes of the following options that you want to add to your chart.    
 * **Show burndown**: Displays both the historical and projected future burndown
 * **Show total scope**: Displays both the historical and projected scope increase
-* **Show completed work**: In addition to remaining work, it also displays completed work as a stack bar
+* **Show completed work**: In addition to remaining work, it also displays completed work as stack bar
 * **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
 
 ## Interpret a Burndown or Burnup widget chart
-
 Looking at the burndown chart, a team can not only get immediate insight as to their progress, but also learn about their rhythm and behavior. Most burndown lines are not straight lines. The team never moves at exactly one fixed velocity and scope might be added on the way. For example, if your projected completion date as moved, you may want to ask
 * Are we adding too much scope?
 * Is the average burnrate changing, and if so, why?
@@ -209,9 +193,9 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 |---------|------------| 
 |**Date&nbsp;range**|The  start and end date of the burndown. When burndown is plotted by iterations the end date is the end of the last iteration |
 |**Main&nbsp;metric**|Current remaining work based on the selected burndown method.| 
-|**%&nbsp;Completed**|The percentage of work completed based on original scope. You may click or press **% Completed** to see the full list of completed work items.| 
+|**%&nbsp;Completed**|The percentage of work completed based on original scope. You may choose or press **% Completed** to see the full list of completed work items.| 
 |**Average&nbsp;burndown**|Average work completed per interval or iteration.| 
-|**Items&nbsp;not&nbsp;estimated**|Shows only when burning down on a Sum of a field. It represents the current number of items that do not have a value in the selected **Burndown&nbsp;on** field. You may click or press the number to see a full list of work items without estimates.|
+|**Items&nbsp;not&nbsp;estimated**|Shows only when burning down on a Sum of a field. It represents the current number of items that do not have a value in the selected **Burndown&nbsp;on** field. You may choose or press the number to see a full list of work items without estimates.|
 |**Total&nbsp;Scope&nbsp;Increase** |show how much work was added to the original scope since the burndown started.|
 |**Projected&nbsp;completion** |Calculates the projected completion date based on the remaining work and historical burndown and scope increase rates. If the projected completion date is before the specified **End Date**, it will draw a vertical line on the interval/iteration when the work should be complete. If the projected completion date is after the specified **End Date**, then it will display the projected completion date and how many additional intervals/iterations are needed to complete the work.|
 |**Original&nbsp;Scope** |Original scope is all remaining work as of the specified **Start Date**. The chart burns down from the original scope. **% Complete** and **Total Scope Increase** are calculated based on your original scope.|
@@ -249,27 +233,20 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 
 ## Configure the Burnup widget
-
-Configuring the Burnup widget is exactly like configuring the Burnup widget, except that it plots work completed, rather than work remaining.
+Configuring the Burnup widget is exactly like configuring the Burndown widget, except that it plots work completed, rather than work remaining.
 
 **Burnup Widget displaying a Stories Burnup**
-
 ![Burnup Widget - Stories Burnup Example](./_img/burndown-widget/burndownup-stories-burnup.png)
 
-
 ## Try this next
- 
 > [!div class="nextstepaction"]
 > [Burndown guidance](burndown-guidance.md) 
 
-## Related notes 
-
-* [Define sprints for the project](../../organizations/settings/set-iteration-paths-sprints.md)
-* [Select sprints for a team](../../organizations/settings/set-team-defaults.md)
-* [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
+## Related articles 
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
 
 ####Industry resources 
-
 * [Managing Myopia with Release Burndowns](https://www.scrumalliance.org/community/articles/2010/may/managing-myopia-with-release-burndowns)
 
 

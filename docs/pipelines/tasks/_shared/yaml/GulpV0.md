@@ -1,6 +1,6 @@
 ```YAML
 # gulp
-# Node.js streaming task based build system
+# Run the Node.js streaming task-based build system.
 - task: gulp@0
   inputs:
     #gulpFile: 'gulpfile.js' 

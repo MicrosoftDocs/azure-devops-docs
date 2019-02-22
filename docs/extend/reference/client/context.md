@@ -2,9 +2,9 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Web Context | Extensions for Azure DevOps Services
-description: Context data avaialble in your web extensions 
+description: Context data available in your web extensions 
 ms.assetid: b926a050-1e70-4907-8963-e4f2ee9939e5
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
@@ -23,7 +23,7 @@ The `core SDK` provides an API for getting context information, for example the 
 
 #### Example
 
-```
+```json
 {
     "id": "my-extension",
     ...

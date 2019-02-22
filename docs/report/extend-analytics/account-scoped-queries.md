@@ -4,19 +4,18 @@ titleSuffix: Azure DevOps Services
 description: How to guide to query the OData Analytics service for an organization or at the project-level in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
-ms.date: 11/13/2017
 ms.reviewer: kokosins
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/1/2018
 ---
 
 # Project and organization-scoped queries
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Using the Analytics Service for Azure DevOps, you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
 
@@ -25,19 +24,30 @@ Project-scope queries help answer questions about a single project whereas organ
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-## Prerequistes 
+## Prerequisites 
 
-- You need to have an Azure DevOps project. If you don't have one, [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
 
 
 ## Project-scoped queries
 Base URL for project level queries:
 
+::: moniker range="azure-devops"
+
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
 ```
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+::: moniker-end
 
 The following project-scoped query will return the count of work items for a specific project:  
 
@@ -145,7 +155,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   &$expand=Children
 ```
 
-and will fail if you don€™t have access to all projects.
+and will fail if you don't have access to all projects.
 	
 To workaround the restriction, you need to add an extra expression in the `$filter`:
 
@@ -162,7 +172,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 ```
 
-Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item€™s ProjectName using $it alias, which isn€™t supported:
+Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item's ProjectName using $it alias, which isn't supported:
 
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?

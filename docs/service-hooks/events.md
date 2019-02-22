@@ -5,7 +5,7 @@ ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -1693,12 +1693,12 @@ Filter events to include only newly deleted work items.
   "message": {
     "text": "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.",
     "html": "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.",
-    "markdown": "[Bug #5] (Some great new idea!) deleted by Jamal Hartnett."
+    "markdown": "[Bug #5](Some great new idea!) deleted by Jamal Hartnett."
   },
   "detailedMessage": {
     "text": "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n",
     "html": "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li></ul>",
-    "markdown": "[Bug #5] (Some great new idea!) deleted by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n"
+    "markdown": "[Bug #5](Some great new idea!) deleted by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n"
   },
   "resource": {
     "id": 5,

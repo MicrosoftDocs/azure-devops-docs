@@ -5,11 +5,11 @@ description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 09/26/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,7 @@ Connect to your Git repos through SSH when you can't use the recommended [Git Cr
 [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 >[!IMPORTANT]
-> SSH URLs have changed. Old SSH URLs will continue to work through December 1, 2017. If you have already set up SSH, you will need to update your remote URLs:
+> SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
 > - Verify which remotes are using SSH by running ```git remote -v ``` in your Git client. 
 > - Visit your repository on the web and select the **Clone** button in the upper right.
 > - Select **SSH** and copy the new SSH URL.
@@ -122,7 +122,7 @@ user interface. Select **Security** in the menu that appears.
 >[!NOTE]
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an organization named **fabrikamifiber**, as indicated by the first part of the URL after `dev.azure.com`.
+0. Copy the SSH clone URL from the web portal. In this example the SSL clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
    ![Azure Repos SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
 
@@ -134,8 +134,16 @@ user interface. Select **Security** in the menu that appears.
    git clone git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
    ```
 
-SSH will ask you to verify that the SSH fingerprint for the server you are connecting to. You should verify that the shown fingerprint matches the fingerprint on the **SSH public keys**  page.
-SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/en-us/library/cc959354.aspx).
+SSH may display the server's SSH fingerprint and ask you to verify it.
+
+For cloud-hosted Azure DevOps Services, where clone URLs contain either `ssh.dev.azure.com` or `vs-ssh.visualstudio.com`, the fingerprint should match one of the following:
+* MD5: `97:70:33:82:fd:29:3a:73:39:af:6a:07:ad:f8:80:49` (RSA)
+* SHA256: `SHA256:ohD8VZEXGWo6Ez8GSEJQ9WpafgLFsOfLOtGGQCQo6Og` (RSA)
+These fingerprints are also listed in the **SSH public keys** page.
+
+For self-hosted instances of Azure DevOps Server, you should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
+
+SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/library/cc959354.aspx).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
 
 ```
@@ -258,7 +266,7 @@ takes care of starting `ssh-agent` for you.
 
 ### What notifications may I receive regarding my SSH keys?
 
-Whenever you register a new SSH Key with Azure DevOps Services, you will recevie an email notification informing you that a new SSH key has been added to your account.
+Whenever you register a new SSH Key with Azure DevOps Services, you will receive an email notification informing you that a new SSH key has been added to your account.
 
 ![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
 

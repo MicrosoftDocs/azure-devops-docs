@@ -5,7 +5,7 @@ description: Follow these steps to when you upgrade from TFS 2008 or TFS 2010 to
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F52E3DB7-4A62-4BD2-8C6F-CC44CC09464D
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -31,7 +31,7 @@ This option is simpler, but will result in more downtime, especially if your TFS
 
 * [Upgrade your TFS instance to TFS 2012 by downloading the TFS 2012 ISO](http://go.microsoft.com/fwlink?linkid=255990).
 * [Run the Configure Features Wizard for TFS 2012 on each project](configure-features-after-upgrade.md).
-	You need to do this before you upgrade to TFS 2015 so that you'll be able to use the Confugure Features Wizard for TFS 2015.
+	You need to do this before you upgrade to TFS 2015 so that you'll be able to use the Configure Features Wizard for TFS 2015.
 * [Update a project based on a MSF v4.2 process template](xml/update-a-team-project-v4-dot-2-process-template.md).
 * [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started).
 * [Run the Configure Features Wizard for TFS 2015 on each project](configure-features-after-upgrade.md).
@@ -42,7 +42,7 @@ This option is simpler, but will result in more downtime, especially if your TFS
 
 **Option 2:**
 
-This option is more work, but it will work with customized projects and it reduces dowbtime because you don't have to upgrade twice.
+This option is more work, but it will work with customized projects and it reduces downtime because you don't have to upgrade twice.
 
 * [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started).
 * Manually update each project:

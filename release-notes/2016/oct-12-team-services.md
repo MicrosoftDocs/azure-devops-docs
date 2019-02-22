@@ -103,7 +103,7 @@ For more details see [Maven and Gradle build tasks support powerful code analysi
 The Visual Studio Build and MSBuild tasks can now locate Visual Studio “15” installations.  You no longer need to explicitly specify the path to MSBuild.exe 15.0 in your build configuration.
 
 ###git-lfs and shallow clone
-The 2.107.x build agent now supports Git shallow clone and git-lfs.  More details are at https://docs.microsoft.com/vsts/build/define/repository.
+The 2.107.x build agent now supports Git shallow clone and git-lfs.  More details are at https://visualstudio.microsoft.com/docs/build/define/repository.
 
 ###Updated hosted build pool
 The hosted build pool has been updated:

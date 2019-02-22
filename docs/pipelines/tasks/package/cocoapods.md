@@ -1,24 +1,23 @@
 ---
-title: CocoaPods
-titleSuffix: Azure Pipelines & TFS
+title: CocoaPods task
+ms.custom: seodec18
 description: Learn all about how you can use CocoaPods packages when you are building code in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D690542B-9A13-4836-8C1E-D715AE6CB7D6
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Package: CocoaPods 
+# CocoaPods task
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/cocoapods.png) Runs CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html)
+Use this task in a build or release pipeline to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
 
 [CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects. This task optionally runs `pod repo update` and then runs `pod install`.
 
@@ -42,7 +41,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -52,7 +51,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

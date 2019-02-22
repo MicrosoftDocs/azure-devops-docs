@@ -1,13 +1,13 @@
 ---
 title: All WORKFLOW XML elements reference
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Quick reference to all WORKFLOW XML elements and main attributes for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 59689226-f7f1-4046-866e-3030aad806ae
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.date: 02/10/2017
 ---
 

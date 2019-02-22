@@ -1,31 +1,35 @@
 ---
-title: Buy CI/CD in Azure DevOps Services
+title: Buy continuous integration, continuous deployment, Azure Pipelines
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
 description: Learn how to pay for more parallel jobs in Azure Pipelines
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Buy CI/CD
+# Quickstart: Buy CI/CD for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 In this quickstart, you learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
-With Azure Pipelines you can run builds and deploy releases using the Microsoft-hosted agents, your own machines, or both.
-We offer a **free tier** for each.
+With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
+We offer a *free tier* for each.
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 ## Microsoft-hosted CI/CD
 
-Each Azure DevOps organization starts out with the free tier of Microsoft-hosted CI/CD, which provides the ability to run one parallel build or release job, for up to 1800 minutes per month. If you need to run more than that, or you need to run more than one job at a time, you can switch to paid Microsoft-hosted CI/CD. When you pay per concurrent job, there are no monthly time limits for your builds and releases, and the maximum runtime for a single job is increased from 30 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes all infrastructure that Microsoft runs (virtual machines, databases, storage, egress, etc.) to deliver this service.
+Each organization starts out with the free tier of Microsoft-hosted CI/CD. This tier provides the ability to run one parallel build or release job, for up to 30 hours per month. If you need to run more than 30 hours per month, or you need to run more than one job at a time, you can switch to paid Microsoft-hosted CI/CD.
+
+When you pay per parallel job, there are no monthly time limits for your builds and releases, and the maximum runtime for a single job is increased from 30 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes all infrastructure that Microsoft runs (virtual machines, databases, storage, and egress) to deliver this service.
 
 ### Public projects
 
@@ -37,18 +41,18 @@ If your pipelines are in a [public project](../public/index.md), then you run up
 
 ## Self-hosted CI/CD
 
-Azure Pipelines also offers you a way to run the agent on machines that you manage, whether your machines are on premises or in the cloud. Typically you'll choose this option when:
+Azure Pipelines also offers you a way to run the agent on machines that you manage, whether your machines are on-premises or in the cloud. Typically, you'll choose this option in either of the following situations:
 
-* there is custom software that runs in your build process which is not included in the Microsoft-hosted option above, or
-* you already have a TFS build server running, and aren't ready to move your build pipelines to Azure Pipelines.
+* Custom software that runs in your build process is not included in the Microsoft-hosted option.
+* You already have a Team Foundation Server build server running, and you aren't ready to move your build definitions to Azure Pipelines.
 
-### Public projects
+### Self-hosted public projects
 
 If your pipelines are in a [public project](../public/index.md), then you run up to 10 free parallel jobs with self-hosted agents. If you need more, simply [contact us](https://azure.microsoft.com/support/devops/).
 
-### Private projects
+### Self-hosted private projects
 
-The free tier is one parallel job. In addition, you get one free parallel job for each Visual Studio Enterprise subscriber that is a member of your Azure DevOps organization. You can get more using paid self-hosted parallel jobs.
+The free tier is one parallel job. In addition, you get one free parallel job for each Visual Studio Enterprise subscriber that is a member of your organization. You can get more using paid self-hosted parallel jobs.
 
 [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
@@ -56,62 +60,64 @@ The free tier is one parallel job. In addition, you get one free parallel job fo
 
 ## Prerequisites
 
-The first time that you set up billing for your Azure DevOps organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+The first that time that you set up billing for your organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you'll need the following:
 
-* [Azure DevOps project collection administrator or organization owner permissions](billing-faq.md#find-owner)
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
+* [Project collection administrator or organization owner permissions](billing-faq.md#find-owner)
+* [The owner or contributor role on your Azure subscription](add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your Azure DevOps organization, you only need the owner or contributor role on your Azure subscription.
+To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
 
 ## Buy CI/CD
 
-1. As Azure DevOps project collection administrator or organization owner, sign in to either:
+1. As a project collection administrator or organization owner, sign in to either of the following:
 
- * [Visual Studio Marketplace > Pipelines > **Microsoft-hosted parallel jobs**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
- * [Visual Studio Marketplace > Pipelines > **Self-hosted parallel jobs**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
+ * [Visual Studio Marketplace > Pipelines > Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+ * [Visual Studio Marketplace > Pipelines > Self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
-2. Choose **Get**.
+2. Select **Get**. (The following images represent Microsoft-hosted CI/CD, rather than Self-hosted, although the process is the same.)
 
-    ![Select your Azure DevOps organization](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
+    ![Select Get](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
-3. Select your Azure DevOps organization and then choose **Buy**.
+3. Select your organization, if you have multiple organizations. Then select **Buy**.
 
-    ![Select your Azure DevOps organization](_img/get-more-build-load-testing/select-team-services-organization.png)
+    ![Select your organization](_img/get-more-build-load-testing/select-team-services-organization.png)
 
-4. Confirm the Azure subscription that you'll use for billing (you'll only see this the first time you set up billing), then choose **Continue**.
+4. Confirm the Azure subscription that you'll use for billing. Then select **Continue**.
 
     If you have multiple Azure subscriptions,
   select the Azure subscription that you want to use.
-  Or if you don't have an Azure subscription,
+  If you don't have an Azure subscription,
   create a new subscription now to use for billing.
   [Azure DevOps billing FAQ](billing-faq.md)
 
+    For more information, see the Azure DevOps [billing FAQ](billing-faq.md).
+
     ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 
-5. Select the number of parallel jobs that you want to buy, then choose **Continue**.
+5. Select the number of parallel jobs that you want to buy, and then select **Continue**.
 
-    ![Select number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
+    ![Select the number of parallel jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
-6. Review your order and choose **Confirm**.
+6. Review your order and select **Confirm**.
 
-    ![Review hosted pipeline order](_img/get-more-build-load-testing/review-confirm-order.png)
+    ![Review the hosted pipeline order](_img/get-more-build-load-testing/review-confirm-order.png)
 
-7. To view your current parallel jobs capacity, go to your Azure DevOps organization and choose **Manage jobs**.
+7. To view your current CI/CD capacity, go to your organization and select **Manage Pipelines**.
 
-    ![View capacity in your Azure DevOps organization](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
+    ![View CI/CD capacity in your organization](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
 
-     ![Go to Azure DevOps organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
+     ![Go to the organization toolbar > Manage Pipelines](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
-  To return to the list of pipelines in
-  your Azure DevOps organization at any time,
-  go to your Azure DevOps organization toolbar,
+  To return to **Pipelines** in
+  your organization at any time,
+  go to your organization toolbar, and
   then go to **Pipelines**
   (```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
 
-## XAML Build
+## XAML build
 
 The hosted XAML build controller is no longer supported.
-  Organizations created on or after April 2016 do not have access to it.
+  Organizations created on or after April 2016 don't have access to it.
   The hosted YAML model is our newest build model, and as a best practice, consider adopting it. Read more about it [here](../../pipelines/get-started-yaml.md).
 
   > **Important:** If you have an organization where you still need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
@@ -122,15 +128,15 @@ The hosted XAML build controller is no longer supported.
 
 ## Clean up resources
 
-When your team's needs for build or release capacity change, you can change the number of paid concurrent jobs.
+When your team's needs for build or release capacity change, you can change the number of paid parallel jobs.
 
-1. Go to your Azure DevOps organization toolbar, then go to **Pipelines** (```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
+1. Go to your organization toolbar, and then go to **Pipelines** (```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
 
-2. Choose **Change** for either Microsoft-hosted or self-hosted parallel jobs, which takes you to the Visual Studio Marketplace.
+2. Select **Change** for either Microsoft-hosted or self-hosted parallel jobs, which takes you to the Visual Studio Marketplace.
 
-   ![Go to Azure DevOps organization toolbar > Pipelines > Change](_img/get-more-build-load-testing/manage-pipelines.png)
+   ![Go to your organization toolbar > Pipelines > Change](_img/get-more-build-load-testing/manage-pipelines.png)
 
-3. In the Visual Studio Marketplace, choose **Get**, select your Azure DevOps organization, then update your number of paid concurrent jobs and confirm.
+3. In the Visual Studio Marketplace, Azure DevOps tab, select **Get**. Select your organization, and then update your number of paid parallel jobs and confirm.
 
 ## Next steps
 
@@ -139,6 +145,6 @@ When your team's needs for build or release capacity change, you can change the 
 
 ## Related articles
 
-* [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs-vsts.md)
-* [TFS: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
+* [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs.md)
+* [Team Foundation Server: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
 * [Pricing for Azure Pipelines](https://visualstudio.microsoft.com/team-services/pricing)

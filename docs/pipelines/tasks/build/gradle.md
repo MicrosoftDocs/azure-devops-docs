@@ -1,22 +1,23 @@
 ---
 title: Gradle build and release task
+ms.custom: seodec18
 description: Gradle build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Gradle 
+# Gradle task
  
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/gradle.png) Build using a Gradle wrapper script
+Use this task in a build or release pipeline to build using a Gradle wrapper script.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -119,7 +120,7 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -127,7 +128,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 ### How do I generate a wrapper from my Gradle project?
 
 The Gradle wrapper allows the build agent to download and configure the exact Gradle environment that is 
-   checked into the repoistory without having any software configuration on the build agent itself other than the 
+   checked into the repository without having any software configuration on the build agent itself other than the 
    JVM.
 
 1. Create the Gradle wrapper by issuing the following command from the root project directory where your 
@@ -162,7 +163,7 @@ To fix errors such as `Read timed out` when downloading dependencies, users of G
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

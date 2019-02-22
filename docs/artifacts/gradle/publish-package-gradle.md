@@ -3,7 +3,7 @@ title: Publish a Maven artifact using Gradle and Azure DevOps Services
 description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.reviewer: dastahel
@@ -44,7 +44,23 @@ You're ready to start! This tutorial will guide you through the process of publi
 
 First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_details/organizations/security/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+# [New navigation](#tab/new-nav)
+
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+
+Click **+ New Token**.
+
+Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+
+> You may have to choose "Show all scopes" at the bottom to see the Packaging area.
+
+![Create packaging personal access token](../_shared/_img/create-packaging-pat.png)
+
+Click **Create**.
+
+# [Previous navigation](#tab/previous-nav)
+
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
 Click **Add**.
 
@@ -56,12 +72,13 @@ Select the **Packaging (read and write)** scope.
 
 ![Select a token scope](_img/select-scope.png)
 
+---
 The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
 
 Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
 
 Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
-```
+```ini
 vstsMavenAccessToken=YOUR_TOKEN_HERE
 ```
 
@@ -71,7 +88,7 @@ Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the fil
 
 Create a file called **build.gradle** in the root of your cloned (local) repo. Open it with a UTF-8-capable text editor and add the following code:
 
-```text
+```groovy
 apply plugin: 'java' 
 apply plugin: 'maven-publish' 
  
@@ -91,7 +108,7 @@ publishing {
             url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
             credentials { 
                 username "Azure DevOps Services" 
-                //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
+                //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
                 password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
             } 
         } 
@@ -104,14 +121,14 @@ repositories {
         url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
         credentials { 
             username "Azure DevOps Services" 
-            //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
+            //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
             password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
         } 
     } 
 } 
 ```
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same Azure DevOps Services organization. You can configure
-publishing and downloading to use separate Azure DevOps Services organizations, if you prefer.
+In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
+publishing and downloading to use separate organizations, if you prefer.
 
 Replace the following fields with your own values:
 

@@ -5,7 +5,7 @@ description: Branch strategically
 ms.assetid: f586f036-a63f-40f9-8143-732e1d01323f
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -68,7 +68,7 @@ You should create branches in the following situations:
 
 -   When functionality is released to a customer and your team plans to make changes that do not affect the planned release cycle.
 
-You should not create a branching for each user story because it creates a high integration cost. Although makes branching easy, the overhead of managing branches can become significant if you have many branches.
+You should not create a branching for each user story because it creates a high integration cost. Although TFVC makes branching easy, the overhead of managing branches can become significant if you have many branches.
 
 ## How does the team manage releases from the version control perspective?
 

@@ -1,20 +1,21 @@
 ---
 title: Delivery plan keyboard shortcuts 
-titleSuffix: Azure Boards and TFS
-description: Use keyboard shortcuts to interact with delivery plans in Azure Boards & Team Foundation Server     
+titleSuffix: Azure Boards
+description: Use keyboard shortcuts to interact with delivery plans in Azure Boards, Azure DevOps, & Team Foundation Server     
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2017'
-ms.date: 03/20/2018
+ms.date: 11/19/2018
 ---
 
 # Keyboard shortcuts to interact with delivery plans 
 
-**Azure Boards | TFS 2018 | TFS 2017.2**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+
  
 ::: moniker range="tfs-2017" 
 Installation of Delivery Plans requires TFS 2017.2 or later version.

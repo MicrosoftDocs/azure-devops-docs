@@ -5,7 +5,7 @@ ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -33,7 +33,7 @@ Authorization: Basic BASE64PATSTRING
 
 Here is an example getting a list of projects for your organization. 
 
-````cs
+```cs
 using System.Net.Http;
 using System.Net.Http.Headers;
 
@@ -42,7 +42,7 @@ using System.Net.Http.Headers;
 //encode your personal access token                   
 string credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", personalAccessToken)));
 
-ListofProjectsResponse.Projects viewModel = null;
+ListOfProjectsResponse.Projects viewModel = null;
 
 //use the httpclient
 using (var client = new HttpClient())
@@ -55,17 +55,17 @@ using (var client = new HttpClient())
     //connect to the REST endpoint            
     HttpResponseMessage response = client.GetAsync("_apis/projects?stateFilter=All&api-version=1.0").Result;
           
-    //check to see if we have a succesfull respond
+    //check to see if we have a successful response
     if (response.IsSuccessStatusCode)
     {
         //set the viewmodel from the content in the response
-        viewModel = response.Content.ReadAsAsync<ListofProjectsResponse.Projects>().Result;
+        viewModel = response.Content.ReadAsAsync<ListOfProjectsResponse.Projects>().Result;
                 
         //var value = response.Content.ReadAsStringAsync().Result;
     }   
 }
 
-````
+```
 
 ## .Net Client Libraries
 
@@ -77,7 +77,7 @@ In this example we are using two of the .Net Client Libraries. Make sure these a
 
 Here is a simple example getting a list of projects for your organization. 
 
-````cs
+```cs
 using Microsoft.TeamFoundation.Core.WebApi;
 using Microsoft.VisualStudio.Services.Common;
 
@@ -92,7 +92,7 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
     IEnumerable<TeamProjectReference> projects = projectHttpClient.GetProjects().Result;                    
 }
 
-````
+```
 
 ## Q&A
 

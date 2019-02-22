@@ -1,12 +1,12 @@
 ---
 title: CMMI process guidance, Develop requirements
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Describes the requirements what the stakeholders expect from the product and allowing them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/28/2017
@@ -28,9 +28,9 @@ Requirements describe what the stakeholders expect from the product. You should 
   
 -   Model the requirements in Visual Studio Ultimate, linking model elements to requirements in Team Foundation Server.  
   
- This topic does not attempt to replicate the very large body of literature that is available on the subject of determining requirements. Instead, it focuses on the aspects that are important for using the Visual Studio tools in a manner that conforms to CMMI. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
+ this article does not attempt to replicate the very large body of literature that is available on the subject of determining requirements. Instead, it focuses on the aspects that are important for using the Visual Studio tools in a manner that conforms to CMMI. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
   
- The activities that are described in this topic, like any development activities, should not be performed in strict order. Develop a domain model while you are writing scenarios because one activity will help you improve the other activity. Develop the scenarios as the time for coding them approaches. Feed the experience with code that has been written and demonstrated back to the scenarios that have yet to be implemented.  
+ The activities that are described in this article, like any development activities, should not be performed in strict order. Develop a domain model while you are writing scenarios because one activity will help you improve the other activity. Develop the scenarios as the time for coding them approaches. Feed the experience with code that has been written and demonstrated back to the scenarios that have yet to be implemented.  
   
 ##  <a name="When"></a> When to develop requirements  
  TFS supports iterative working, and this practice is most effective when the early iterations are used to gain feedback from prospective users and other stakeholders. This feedback can be used to improve the requirements that have been stated for future iterations. This results in a product that is much more effective in its ultimate installation than a product that is developed over the same period without any user trial. If your project is one component among many in a larger program, early integration with other components allows the program architects to improve the overall product.  

@@ -1,24 +1,24 @@
 ---
-title: Extract Files
-titleSuffix: Azure Pipelines & TFS
-description: Learn how you can extract files from archives to a target folder using minimatch patterns on Azure Pipelines and Team Foundation Server TFS
+title: Extract Files task
+description: Extract files from archives to a target folder using minimatch patterns on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/15/2016
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
-# Utility: Extract Files
+# Extract Files task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/extract-files.png) Extract files from archives to a target folder using match patterns.  A variety of standard archive formats are supported including: .zip, .jar, .war, .ear, .tar, .7z., and others.
+Use this task in a build or release pipeline to extract files from archives to a target folder using match patterns.
+A range of standard archive formats is supported, including .zip, .jar, .war, .ear, .tar, .7z, and more.
 
 ## Demands
 
@@ -68,7 +68,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -80,7 +80,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

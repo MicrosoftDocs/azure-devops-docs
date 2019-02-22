@@ -5,10 +5,10 @@ ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 author: alexmullans
-ms.date: 5/11/2018
+ms.date: 1/25/2019
 monikerRange: '>= tfs-2018'
 ---
 
@@ -18,11 +18,21 @@ As part of adding the ability to use [upstream sources](../concepts/upstream-sou
 
 ## Determine if your feed is a legacy feed
 
-You can check if your feed is using the legacy upstream sources feature by attempting to [add the nuget.org upstream source](../nuget/upstream-sources.md#existing-feed). If you're unable to do so, your feed is a legacy feed. You can also determine if your feed is a legacy feed using the criteria below:
+You can check if your feed is using the legacy upstream sources feature by attempting to [add the nuget.org upstream source](../nuget/upstream-sources.md#existing-feed). You may also see a banner in your feed.
+
+![Feed upgrade banner at top of feed list](_img/feed-upgrade-banner.jpg)
+
+If you're unable to do so, your feed is a legacy feed. You can also determine if your feed is a legacy feed using the criteria below:
 
 - **TFS users:** all feeds created using TFS 2018 RTM and earlier are legacy feeds. 
 - **Azure DevOps Services users** who enabled the **nuget.org upstream source** preview feature: all feeds created before the preview feature was enabled are legacy feeds
 - **Azure DevOps Services users** who didn't enable the preview feature: all feeds created before the February update are legacy feeds
+
+## Upgrade a legacy feed
+
+If you have a legacy feed, you can upgrade it by going to feed settings (the gear icon in the upper right of the feed page) and clicking the button to upgrade.
+
+![Feed upgrade button at the top of the feed details page in settings](_img/feed-upgrade-button.jpg)
 
 ## Behavior differences in legacy feeds
 

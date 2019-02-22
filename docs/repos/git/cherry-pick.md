@@ -5,7 +5,7 @@ description: Copy and port changes from one branch to another in Git with cherry
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: tutorial

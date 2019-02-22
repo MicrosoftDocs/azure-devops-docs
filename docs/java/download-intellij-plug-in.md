@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'
@@ -26,7 +26,7 @@ The plugin can be installed from IntelliJ by browsing the Plugin Repository.
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `IntelliJ IDEA` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Browse repositories...` button and search for "Azure DevOps Services". 
+1. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
 1. Click the `Install plugin` button and restart IntelliJ IDEA. 
 
 

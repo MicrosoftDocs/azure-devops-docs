@@ -1,31 +1,46 @@
 ---
-title: Query work tracking data using the OData Analytics service
+title: Query work tracking data using OData 
 titleSuffix: Azure DevOps Services
 description: How to generate work item tracking reports for Azure DevOps using the OData Analytics service  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: '>= azure-devops-2019'
+ms.date: 12/04/2018
 ---
 
 # Query your work tracking data using the OData Analytics service
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 
 Using the Analytics Service for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
 In this topic, the base root URL is scoped to a project as shown:  
 
+::: moniker range="azure-devops"
+
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}
 ``` 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}
+```
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+
+::: moniker-end
 
 All additional URL parts are specified as an additional part of the query string.
 
@@ -33,9 +48,9 @@ All additional URL parts are specified as an additional part of the query string
 
 ## Prerequisites
 
-- You will need to have an Azure DevOps project. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
+- You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
+- Install the [Analytics Marketplace extension](../analytics/analytics-extension.md). To learn more about extensions, see [Install extensions](../../marketplace/install-extension.md). 
 
 ## Construct a basic query 
 

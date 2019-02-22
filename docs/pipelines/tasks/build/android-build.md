@@ -1,23 +1,23 @@
 ---
-title: Android build build and release task
-description: Android Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
+title: Android build and release task
+ms.custom: seodec18
+description: Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 21C3DC47-7D67-4427-8386-ACE3A6279995
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Build: Android build (deprecated; use Gradle)
+# Android build task (deprecated; use Gradle)
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/android-build.png) Build an Android app using Gradle and optionally start the emulator for unit tests
+Use this task in a build or release pipeline to build an Android app using Gradle and optionally start the emulator for unit tests.
 
 ## Deprecated
 **The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**

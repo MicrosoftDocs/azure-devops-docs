@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fa4924f0-6013-4911-b0d5-04717ecfde0f
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018
@@ -27,11 +27,11 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 ## Disable or uninstall extensions
 
-[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Manage extensions**.
 
@@ -43,7 +43,7 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps organization, ```https://dev.azure.com/{yourorganization}```.
+1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Select the shopping bag icon and **Manage extensions**.
 

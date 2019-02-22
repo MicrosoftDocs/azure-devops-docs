@@ -2,16 +2,23 @@
 ms.topic: include
 ---
 
-### REST API and SDK resources  
+::: moniker range=">= tfs-2018"
+### REST API 
 
 To programmatically interact with queries, see one of these REST API resources:  
 
-- [Fetch work items with queries programatically](../../integrate/quickstarts/work-item-quickstart.md) 
+- [Azure DevOps Services REST API Reference](/rest/api/azure/devops)
 - [Queries](/rest/api/vsts/wit/queries)
-- [Work item query language](/rest/api/vsts/wit/wiql)
+- [Work item query language](/rest/api/azure/devops/wit/wiql)
+- [Work item query language (WIQL) syntax](/azure/devops/queries/wiql-syntax)
+- [Fetch work items with queries programmatically](/azure/devops/integrate/quickstarts/work-item-quickstart) 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
-Or, for TFS 2015 and earlier versions, [Query for Bugs, Tasks, and Other Work Items](https://msdn.microsoft.com/library/bb130306.aspx).
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+### SDK resources  
+To programmatically interact with queries, see [Query for Bugs, Tasks, and Other Work Items](/previous-versions/visualstudio/visual-studio-2013/bb130306(v=vs.120)).
 
 ::: moniker-end

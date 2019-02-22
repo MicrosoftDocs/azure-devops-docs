@@ -5,7 +5,7 @@
   inputs:
     appFile: 
     #artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest' 
-    #prepareTests: # Optional
+    #prepareTests: true # Optional
     #frameworkOption: 'appium' # Required when prepareTests == True# Options: appium, espresso, calabash, uitest, xcuitest
     #appiumBuildDirectory: # Required when prepareTests == True && Framework == Appium
     #espressoBuildDirectory: # Optional
@@ -15,7 +15,7 @@
     #calabashProfile: # Optional
     #calabashSkipConfigCheck: # Optional
     #uiTestBuildDirectory: # Required when prepareTests == True && Framework == Uitest
-    #uitestStoreFile: # Optional
+    #uitestStorePath: # Optional
     #uiTestStorePassword: # Optional
     #uitestKeyAlias: # Optional
     #uiTestKeyPassword: # Optional
@@ -24,7 +24,7 @@
     #xcUITestBuildDirectory: # Optional
     #xcUITestIpaFile: # Optional
     #prepareOptions: # Optional
-    #runTests: # Optional
+    #runTests: true # Optional
     #credentialsOption: 'serviceEndpoint' # Required when runTests == True# Options: serviceEndpoint, inputs
     #serverEndpoint: # Required when runTests == True && CredsType == ServiceEndpoint
     #username: # Required when runTests == True && CredsType == Inputs

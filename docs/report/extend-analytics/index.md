@@ -4,20 +4,20 @@ titleSuffix: Azure DevOps Services
 description: Using OData backed Analytics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: pantal
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: 'vsts'
-ms.date: 3/29/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/1/2018
 ---
 
 #  Extend Analytics with OData (Preview) 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-Using OData, you can directly query the Analytics Service for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire Azure DevOps organization.   
+Using OData, you can directly query the Analytics Service for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
 ## 5-Minute Quickstarts
 

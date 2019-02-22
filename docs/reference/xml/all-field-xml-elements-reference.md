@@ -1,12 +1,12 @@
 ---
 title: All FIELD XML elements reference 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements for the FIELD element for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 552c2ada-2186-4b89-848c-34f54dfe0823
 ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: reference
 ms.date: 06/16/2017
 ---
@@ -254,6 +254,6 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 |`value`|value="*valueToCopy*"|Optional. Specifies the value to be copied into the field when `value` is specified for the `from` attribute.|  
   
 ## Related articles 
--  [Define and modify work item fields](define-modify-work-item-fields.md)   
+-  [About work item fields and attributes](../../boards/work-items/work-item-fields.md)   
 -  [Change the workflow](change-workflow-wit.md)
 -  [Customize your work tracking experience](../customize-work.md)  

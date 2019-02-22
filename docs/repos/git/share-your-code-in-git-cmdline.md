@@ -5,7 +5,7 @@ description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
@@ -22,11 +22,11 @@ This guide shows you how to share your code in a Git repo in Azure Repos using t
 The instructions below use the default bash shell used on Linux and macOS, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 
 > [!NOTE]
-> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/vsts/overview?view=vsts-cli-latest).
+> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest).
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Git
 
@@ -61,19 +61,19 @@ Refer to the [list of install commands](https://git-scm.com/download/linux) for 
 
 Create a local Git repo for your code. If your code is already in a local Git repo, you can skip this step.
 
-0. Navigate to the folder where your code is on the command line:
+1. Navigate to the folder where your code is on the command line:
 
     ```
     cd /home/fabrikam/fiber
     ```
 
-0. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next section.
+2. Create a Git repo on your machine to store your code. You will connect this repo to Azure Repos in the next section.
 
     ```
     git init .
     ```
 
-0. Commit your code into the local Git repo.
+3. Commit your code into the local Git repo.
 
     ```
     git add --all
@@ -89,7 +89,7 @@ Create a local Git repo for your code. If your code is already in a local Git re
 0. Connect your local repo to the Git repo in Azure Repos using the copied clone URL in the `git remote` command:
 
     ```
-    git remote add origin https://fabrikops2.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamApp
+    git remote add origin https://dev.azure.com/fabrikops2/Fabrikam/_git/FabrikamApp
     ```
 
 

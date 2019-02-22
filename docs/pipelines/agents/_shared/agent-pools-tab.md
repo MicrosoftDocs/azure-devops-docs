@@ -13,6 +13,6 @@ ms.topic: include
 <li>TFS 2015: <code>http:&#x2F;&#x2F;{your_server}:8080/tfs/_admin/_AgentPool</code></li>
 </ul>
 
-<p>[The TFS URL doesn't work for me. How can I get the correct URL?](../../../organizations/security/websitesettings.md)</p>
+<p>[The TFS URL doesn't work for me. How can I get the correct URL?](/tfs/server/admin/websitesettings)</p>
 
 

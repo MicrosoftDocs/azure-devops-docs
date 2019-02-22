@@ -1,12 +1,13 @@
 ---
 title: ProcessConfiguration syntax 
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 12/15/2017  
 ---
@@ -155,10 +156,10 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 </table>
 
 #### Implementation notes
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 -   Each backlog is restricted to a total of 1000 work items. You can't modify this limit for Azure DevOps Services.  
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 -   By default, each backlog is restricted to a total of 1000 work items. For TFS you can change this limit by specifying a value for the `workItemCountLimit` attribute.  
 ::: moniker-end
 -   The values assigned to *CategoryName* must correspond to a category group defined for the project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  
@@ -763,7 +764,7 @@ stateName2=color2,..." />
 The color you associate with your work item states will appear across the product. This includes the following areas:  
 
 - Work item form (web portal, see [New work item experience](../process/new-work-item-experience.md))  
-- Work item form links control (web portal, see [LinksControlOptions XML elements referen](linkscontroloptions-xml-elements.md))     
+- Work item form links control (web portal, see [LinksControlOptions XML elements reference](linkscontroloptions-xml-elements.md))     
 - Cards displayed on the [Kanban board](../../boards/boards/kanban-basics.md) and [task boards](../../boards/sprints//task-board.md) (For settings, see [Customize cards](../../boards/boards/customize-cards.md))       
 - All backlogs (add State via column options)  
 - Query results (add State via column options)
@@ -776,7 +777,7 @@ Here we show how it appears in the work item form:
 >No colors are displayed in the client work item forms or within the old links control within the client form. 
 
 **Details:**
-- You must specify the color as an eight-digit hexidecimal value, similar to that used for the color defined for a WIT    
+- You must specify the color as an eight-digit hexadecimal value, similar to that used for the color defined for a WIT    
 - To add or edit colors, simply reimport your process configuration with the updated property  
 - State colors are defined by name across all work item types, i.e., there is no way to have "Active" be one color for User Story and a different color for Bug    
 - Unmapped colors are defaulted at runtime based on their meta-state mapping  

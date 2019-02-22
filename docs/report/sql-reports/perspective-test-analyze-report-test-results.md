@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/17
@@ -165,7 +165,7 @@ You can link test cases to other work items such as user stories, requirements, 
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
--   [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md)    
+-   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)    
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
   
 ## Related notes

@@ -8,6 +8,10 @@
   items:
   - name: Develop a web extension
     href: get-started/node.md
+- name: Tutorials
+  items:
+  - name: Create a custom pipelines task
+    href: develop/add-build-task.md
 - name: Samples
   items:
   - name: Sample extensions
@@ -26,8 +30,6 @@
       href: develop/add-hub.md
     - name: Add a menu action
       href: develop/add-action.md
-    - name: Add a build or release task
-      href: develop/add-build-task.md
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
     - name: Add a new service endpoint
@@ -100,8 +102,6 @@
     items:
     - name: Debug a web extension
       href: test/debug-in-browser.md
-    - name: Menu group IDs
-      href: test/discover-menu-group-ids.md
   - name: Reporting
     items:
     - name: Extension reporting
@@ -112,8 +112,8 @@
   items:
   - name: Manifest reference
     href: develop/manifest.md
-  - name: Build/Release task reference
-    href: develop/build-task-schema.md
+  - name: Integrate a Pipelines task into an extension
+    href: develop/integrate-build-task.md
   - name: Endpoint authentication schemes
     href: develop/auth-schemes.md
   - name: Content hosting

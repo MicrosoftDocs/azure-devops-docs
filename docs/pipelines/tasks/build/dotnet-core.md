@@ -1,20 +1,21 @@
 ---
 title: .NET Core build and release task
+ms.custom: seodec18
 description: How to use npm packages build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 ms.date: 05/16/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build: .NET Core
+# .NET Core task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/dotnet-core.png) Build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool.
+Use this task in a build or release pipeline to build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool.
 
 If your .NET Core or .NET Standard build depends on NuGet packages, make sure to add two copies of this step: one with the `restore` command and one with the `build` command.
 
@@ -159,7 +160,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -177,7 +178,7 @@ To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

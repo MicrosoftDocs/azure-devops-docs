@@ -5,7 +5,7 @@ description: Lock and unlock folders or files using Team Foundation Version Cont
 ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -19,8 +19,8 @@ monikerRange: '>= tfs-2015'
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!NOTE]
-> This content applies to files managed by Team Foundation Version Control (TFVC) that you need to lock or unlock. For help unlocking files in use by programs on your PC, use the [Handle](https://technet.microsoft.com/en-us/sysinternals/bb896655.aspx) and
-[Process Explorer](https://technet.microsoft.com/en-us/sysinternals/processexplorer) tools to help you find which program that is locking your file(s).
+> This content applies to files managed by Team Foundation Version Control (TFVC) that you need to lock or unlock. For help unlocking files in use by programs on your PC, use the [Handle](https://technet.microsoft.com/sysinternals/bb896655.aspx) and
+[Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer) tools to help you find which program that is locking your file(s).
 
 A folder or file tracked by TFVC can be locked or unlocked to deny or restore the user's privileges. 
 Privileges include checking out an item for edit into a different workspace or checking in Pending Changes to an item from a different workspace. 
@@ -39,7 +39,7 @@ See [Permissions and groups reference](../../organizations/security/permissions.
 
 > [!IMPORTANT]
 > These options will appear only when you are making changes in a [server workspace](create-work-workspaces.md). 
-> The use of [local workspaces](decide-between-using-local-server-workspace.md) in your Team Project makes check-out locks un-enforceable. [Learn more](understand-lock-types.md).
+> The use of [local workspaces](decide-between-using-local-server-workspace.md) in your Project makes check-out locks un-enforceable. [Learn more](understand-lock-types.md).
 
 1.  On the **View** menu, choose **Other Windows**,and then choose **Source Control Explorer**.
 

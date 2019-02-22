@@ -1,23 +1,21 @@
 ---
 title: Apply a field rule
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts || >= tfs-2013'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 05/10/2017
 ---
 
 # Add a rule to a work item type  
  
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
-
-> [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../../organizations/settings/work/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
@@ -50,7 +48,7 @@ The following example shows the assignment of Help text to a custom Business Jus
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Business Justification" refname="Fabrikam.BusinessJustification" type="String">
-   <HELPTEXT>Only required when you set the Urgencyfield to Need Immediately. </HELPTEXT>
+   <HELPTEXT>Only required when you set the Urgency field to Need Immediately. </HELPTEXT>
 </FIELD>
 ```
 

@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'
@@ -24,11 +24,11 @@ The first account you will need is a Microsoft account, otherwise known as a Liv
 
 [Create a free Microsoft account](https://signup.live.com/signup/)
 
-## Create an Azure DevOps organization
+## Create an organization in Azure DevOps
 
-Once you have a Microsoft account, you can create an Azure DevOps organization. If you already have one, you can use it. Otherwise, create a new one:
+Once you have a Microsoft account, you can create an organization. If you already have one, you can use it. Otherwise, create a new one:
 
-[Create a free Azure DevOps organization](https://go.microsoft.com/fwlink/?LinkId=307137&wt.mc_id=o~msft~java~almsite~gettingstartedintro)
+[Create a free organization](https://go.microsoft.com/fwlink/?LinkId=307137&wt.mc_id=o~msft~java~almsite~gettingstartedintro)
 
 ## Create an Azure account
 
@@ -48,8 +48,8 @@ You are now ready to use the quickstarts, tutorials, and hands-on labs for imple
 
 ## Frequently asked questions (FAQ)
 
-**Q: How many free Azure DevOps organizations can I create and own?**
-**A:** You can create multiple free Azure DevOps Services accounts for every Microsoft Account you own.
+**Q: How many free organizations can I create and own?**
+**A:** You can create multiple free organizations for every Microsoft Account you own.
 
-**Q: How long does my free Azure DevOps organization remain valid?**
-**A:** Your free Azure DevOps organization does not expire.
+**Q: How long does my free organization remain valid?**
+**A:** Your free organization does not expire.

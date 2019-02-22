@@ -5,11 +5,11 @@ description: Quickstart guide to signing up and inviting others to join a team p
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.date: 09/10/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Sign up for free and invite others to collaborate on your project

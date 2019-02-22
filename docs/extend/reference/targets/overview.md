@@ -4,7 +4,7 @@ ms.technology: devops-ecosystem
 title: Extension Points | Extensions for Azure DevOps Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
@@ -72,7 +72,7 @@ This example shows how to contribute a hub to the Code hub group:
 }
 ```
 * `ms.vss-web.hub` is the type of this contribution. This type is defined in the `vss-web` extension published under the `ms` publisher. This type declares optional/required properties required by contributions of this type (name, order, etc).
-* `ms.vss-code-web.code-hub-group` is the full ID of the hub group contribution this hub is targetting. This contribution is declared in the `vss-code-web` extension published under the `ms` publisher
+* `ms.vss-code-web.code-hub-group` is the full ID of the hub group contribution this hub is targeting. This contribution is declared in the `vss-code-web` extension published under the `ms` publisher
 * `my-custom-hub` is the short ID of this contribution; `{publisherId}.{extensionId}.my-custom-hub` is the full ID
 
 <a name="menus"></a>
@@ -97,14 +97,16 @@ Name                      | Target ID                                   | Previe
 --------------------------|---------------------------------------------|-------------------
 Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build/web/_img/completedBuildActions.png)
 Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/_img/buildDefinitionActions.png)
+Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![testResultsToolbarAction](../../_img/extension_test_custom_action.png)
+Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![testResultDetailsTab](../../_img/extension_test_custom_tab.jpg)
 
 <a name="menu_release"></a>
 ### Release
 
 Name                                     | Target ID                                                              | Preview 
 -----------------------------------------|-------------------------------------------------------------------------|-------------------
-Release definition explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![definitionExplorerContextMenu](./vss/release/web/_img/definitionExplorerContextMenu.png)
-Release definition explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![definitionExplorerToolbarMenu](./vss/release/web/_img/definitionExplorerToolbarMenu.png)
+Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![definitionExplorerContextMenu](./vss/release/web/_img/definitionExplorerContextMenu.png)
+Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![definitionExplorerToolbarMenu](./vss/release/web/_img/definitionExplorerToolbarMenu.png)
 Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![releaseSummaryToolbarMenu](./vss/release/web/_img/releaseSummaryToolbarMenu.png)
 Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                     | ![releaseSummaryTab](./vss/release/web/_img/releaseSummaryTab.png)
 Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`              | ![releaseSummarySection](./vss/release/web/_img/releaseSummarySection.png)
@@ -145,7 +147,7 @@ Work item query menu            | `ms.vss-work-web.work-item-query-menu`        
 Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![queryResultsToolbarMenu](./vss/work/web/_img/queryResultsToolbarMenu.png)
 Work item query results menu item | `ms.vss-work-web.query-result-work-item-menu`   | ![queryResultItemMenu](./vss/work/web/_img/queryResultsItemMenu.png)
 Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![queryResultsPivotTab](./vss/work/web/_img/queryResultsPivotTab.png)
-Work item form context menu               | `ms.vss-work-web.work-item-toolbar-menu`          | ![workItemActions](./vss/work/web/_img/workItemToolbarActions.png)
+Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu`          | ![workItemActions](./vss/work/web/_img/workItemToolbarActions.png)
 Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![backlogItemActions](./vss/work/web/_img/backlogItemActions.png)
 Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![sprintBoardPivotFilterActions](./vss/work/web/_img/sprintBoardPivotFilterActions.png)
 Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![backlogBoardPivotFilterActions](./vss/work/web/_img/backlogBoardPivotFilterActions.png)

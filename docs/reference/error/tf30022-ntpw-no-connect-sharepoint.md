@@ -1,11 +1,11 @@
 ---
 title: TF30022-The New Team Project Wizard could not connect to the Windows SharePoint Services 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: The New Team Project Wizard is unable to connect to the server {name} that hosts SharePoint Products while creating a project.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: dd798fbb-8e24-4a33-91f6-7167138d7414
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017

@@ -1,20 +1,20 @@
 ---
-title: FAQs and problem solutions for manual testing   
+title: FAQs and problem solutions   
 description: FAQs for manual testing topics for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/01/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for manual testing
 
-[!INCLUDE [version-inc-vs](_shared/version-inc-vs.md)] 
+[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -33,7 +33,7 @@ monikerRange: '>= tfs-2015'
 
 ![Delete a test plan](_img/create-a-test-plan/delete-test-plan.png)
 
-See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
 ### Q: Can I group and reorder my requirement-based test suites together?
 
@@ -50,14 +50,6 @@ Drag and drop tests to reorder them.
 **A:** Use a query to group together test cases that have a particular characteristic, 
 for example, all tests that have Priority=1. The suite will automatically include 
 every test case that is returned by the query that you define.
-
-### Q: Can I edit other properties of a test plan?
-
-**A:** You can only do this from Microsoft Test Manager (MTM). If you're using Visual Studio 2017, Visual Studio 2015,
-Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
-(The most recently installed version of MTM is launched.)
-
-![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
 
 ### Q: Can I copy, clone, and move test plans and test suites?
 
@@ -113,7 +105,7 @@ Or permanently delete it.
 
 ![Delete a test case](_img/create-test-cases/delete-test-case.png)
 
-See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
 ### Q: Can I add an extra line to a test step?
 
@@ -157,7 +149,7 @@ When you review, you can update and add new test cases.
 Or, you can filter and sort the test cases in list view. Then select 
 just the ones that you want to bulk edit using the grid.
 
-![Select test cases in list view to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
+![Select test cases in listview to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
 
 To return to the test suite view, switch the view 
 from Grid back to List.
@@ -212,13 +204,13 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
+Then you can filter on that tag from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
+![In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
@@ -335,9 +327,10 @@ The tool to edit the test steps is shown.
 
 ### Q: Can I add a screenshot to the test results when I am running a test?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to take screenshots of the web 
-app while testing. 
+app while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Capturing a screenshot from the app](_img/_shared/collect-diagnostic-data-01.png) 
 
@@ -345,9 +338,10 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Can I capture my actions on the app as a log?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner capture your actions on the web 
-app as image logs while testing.
+app as image logs while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
  
 ![Capturing an image action log from the app](_img/_shared/collect-diagnostic-data-06.png) 
 
@@ -355,9 +349,10 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Can I capture screen recordings of my app?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to capture screen recordings of 
-your web and desktop apps while testing. 
+your web and desktop apps while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Capturing a screen recording from the app](_img/_shared/collect-diagnostic-data-11.png) 
 
@@ -366,6 +361,20 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ### Q: How do I control how long I keep my test data?
 
 **A:** [Learn more here](how-long-to-keep-test-results.md).
+
+### Q: Where can I download the Test Runner client?
+
+**A:** The Test Runner desktop client can be downloaded from [here](https://aka.ms/ATPTestRunnerDownload).
+
+### Q: What are the supported operating systems for the Test Runner client?
+
+**A:** The Test Runner desktop client is currently supported only on Windows. 
+
+### Q: Can I opt out of telemetry for the Test Runner client? 
+
+**A:** No. The Test Runner desktop client does not collect any user-identifiable data and so,
+in adherance to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+no opt-out mechanism is provided. 
 
 <a name="runoffline"></a>
 ### Q: Can I run tests offline and then import the results?
@@ -476,15 +485,6 @@ Test results are often deleted before you can analyze them.
 
 [Go to related topic &gt;](mtm/share-steps-between-test-cases.md)
 
-### Q: How do I use shared steps in Microsoft Test Manager?**  
-
-**A:** It's almost exactly the same in Microsoft Test Manager as in the web portal. The buttons look slightly different.  
-  
-### Q: Can I find all my shared steps, and all the test cases where they are used?**  
-
-**A:** Yes. [Open Microsoft Test Manager](mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) and look under **Organize**, **Shared Steps Manager**.  
-Shared steps and test cases are stored as work items in Team Foundation Server.  
-  
 ### Q: Can I share steps between test plans and projects?**  
 
 **A:** Yes. But don't forget that if you edit shared steps, the changes appear in every place you use them.  
@@ -532,7 +532,7 @@ Some browser versions do not currently support all the features of the Test &amp
 
 <p />
 For more details, see 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web).
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web), Azure DevOps tab.
 
 <a name="recording-playback"><a/>
 ### Q: How do I play the video recordings I created with the extension?
@@ -561,41 +561,6 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf** 
 2. Search for 'Use Blink's zoom for device scale factor'
 3. Change it to **Disabled**
-
-*****
-
-<a name="mtmqna"></a>
-## Microsoft Test Manager
-
-[Go to related topic &gt;](mtm/run-manual-tests-with-microsoft-test-manager.md)
-
-### Q: Can I record a test in one test plan and play it back in another?
-  
-**A:** Yes, this is a great way to do regression tests quickly and accurately. 
-If you want to repeat some tests you did in a previous sprint, 
-just add those test cases to the test plan for the current sprint.
-The recording is linked to the test case, not to its appearance 
-in any particular test plan or suite.
-
-### Q: Can I record a test in one test configuration and play it back in a different configuration? The tests for different configurations show up as separate tests in the Run page.
-  
-**A:** Yes, the recording is linked to the test case, 
-so you can play it back from any instance of that test case, even in different 
-[test configurations](mtm/test-configurations-specifying-test-platforms.md), 
-test suites, or test plans.
-
-### Q: Some or all of my actions aren't recorded, or the playback doesn't work properly. Why?
-  
-**A:** Action recording works best for apps in which each user 
-interface field has a unique ID, and for basic actions such as keystrokes, 
-clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
-To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-ui-testing-of-your-controls).
-
-### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
-
-**A:** Yes, see [Automate system tests](../pipelines/index.md).
 
 *****
 

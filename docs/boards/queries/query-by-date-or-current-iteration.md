@@ -1,16 +1,17 @@
 ---
 title: Query by date or current iteration 
-titleSuffix: Azure Boards and TFS
-description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 03/06/2018  
+ms.date: 11/19/2018  
 ---
 
 # Query by date or current iteration
@@ -23,27 +24,53 @@ For example, you can find work items that were modified in the last 3 days with 
 
 ![Editor query filter based on recent changes](_img/query-by-date-example.png)  
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
 ::: moniker-end
 
 
-> [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** macro is supported for Azure Boards. These two macros only work when run them from the web portal. 
+## Supported operators and macros 
+Query clauses that specify a DateTime field or the **Iteration Path** can use the operators and macros listed in the following table.
 
-## Query for items based on when changes occurred
+<table valign="top">
+<thead>
+<tr>
+<th width="10%"><p>Data type</p></th>
+<th width="78%"><p>Supported operators and macros</p></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+	<td><p><strong>DateTime</strong> </p></td>
+	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+	<p>**Macros**: **@Today**, **@Today +/- n** valid with any **DateTime** field</p></td>
+</tr>
+<tr>
+	<td><p> <strong>TreePath</strong> </p></td>
+	<td>= , <> , Under, Not Under
+	<p>**Macros**: **@CurrentIteration**<sup>1</sup> and**@CurrentIteration +/- n**<sup>2</sup> valid with the **Iteration Path** field</p></td>
+</tr>
+</tbody>
+</table>
+
+####Notes:
+1. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
+2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+
+
+## Date based queries  
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
-Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the format accepted by your computer's operating system. 
+Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the **Date Pattern** you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)   
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-  <th width="25%">
+  <th width="40%">
     <p>Filter for</p>
   </th>
-  <th>
+  <th width="60%">
     <p>Include these query clauses</p>
   </th>
 </tr>
@@ -97,20 +124,23 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 
 <a id="current-iteration">  </a>
 
-## Query for items based on belonging to a team's current iteration 
+## Team's current iteration queries  
  
 If your team follows Scrum processes, you [schedule work to be completed in sprints](../sprints/define-sprints.md). You can track the progress of requirements, bugs, and other work to be completed in the current sprint using the **@CurrentIteration** macro.  
 
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
+> [!NOTE]
+> For the **@CurrentIteration** macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the the web portal.
+> 
+> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 Azure Boards adds a team parameter when you select the **@CurrentIteration** or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
-
 
 To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the **@CurrentIteration** macro.  
 
@@ -119,7 +149,7 @@ To change the team parameter the system automatically sets, you choose it by typ
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 Prior to creating or updating a query to use the **@CurrentIteration** macro, make sure you [select your team](#team_view). The **@CurrentIteration** macro references the current team selected in the web portal.  
 
@@ -129,35 +159,38 @@ Prior to creating or updating a query to use the **@CurrentIteration** macro, ma
 ::: moniker-end
 
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 <a id="current-iteration-plus-minus-n">  </a>
-## Query for items based on a sliding window of team iterations 
+## Sliding window of team iterations query 
 
 Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the work a team has planned for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
 
-> [!NOTE] 
-> The <b>@CurrentIteration +/- <i>n</i></b> macro is supported for Azure Boards only, and only when run from the web portal. 
+> [!NOTE]
+> For the <b>@CurrentIteration +/- <i>n</i></b> macro to work, the team must have selected **Iteration Paths** that meet the <b>+/- <i>n</i></b>
+> criteria and date ranges encompass the current date for the **@CurrentIteration**. For details about team selection of Iteration Paths, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> 
+> See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
-Here we show how to list all User Stories and Bugs assigned to the  sliding window that spans the last two, the current, and the next two prints selected for the selected team, Cloud Admin and Tools. 
+Here we show how to list all User Stories and Bugs assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
 
 > [!div class="mx-imgBorder"]
 ![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
 
-To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-team-defaults.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
+To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
 
 ::: moniker-end
 
 <a id="date_fields">  </a>
-## Date and the iteration path fields
+## Date and Iteration Path fields
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
 <table>
 <tbody valign="top">
 <tr>
-  <th width="14%">Field name</th>
-  <th>Description</th>
-  <th>Work item type</th>
+  <th width="20%">Field name</th>
+  <th width="55%">Description</th>
+  <th width="25%">Work item type</th>
 </tr>
 <tr>
   <td>
@@ -235,7 +268,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>Iteration Path</td>
-  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project](../../organizations/settings/set-iteration-paths-sprints.md), and you [select iteration paths](../../organizations/settings/set-team-defaults.md) for a team. 
+  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md). 
 <p>Reference name=System.IterationPath, Data type=TreePath</p>
   </td>
   <td>All</td>
@@ -300,7 +333,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 	</FIELD >  
 	```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
@@ -313,7 +346,7 @@ You can use the **@CurrentIteration** in a query from the following clients:
 - Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions. 
 - Using the REST API
 
-You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
+You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019 and later versions, and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
 An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
@@ -322,6 +355,8 @@ An error occurs if you open a query that contains the **@CurrentIteration** macr
 ## Related articles
 To query for items based on text entered in the History field, see [History and auditing](history-and-auditing.md). 
 
+- [Query quick reference](query-index-quick-ref.md)
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Create managed queries with the query editor](using-queries.md)  
 - [Query operators & macros](query-operators-variables.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 

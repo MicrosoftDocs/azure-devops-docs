@@ -1,35 +1,33 @@
 ---
 title: Cumulative flow guidance
-titleSuffix: Azure DevOps Services & TFS   
+titleSuffix: Azure DevOps & TFS   
 description: Process guidance to work with cumulative flow diagrams to improve your     
+ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.date: 03/20/2018 
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
+ms.date: 11/01/2018
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 
-
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+
+::: moniker range=">= azure-devops-2019" 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
+::: moniker-end
 
 ::: moniker range=">= tfs-2013" 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
-
-::: moniker-end
-  
-::: moniker range="vsts" 
-
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
-
 ::: moniker-end
 
 To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md).
 
 ## Sample charts and primary metrics
-
 <table>
 <tbody valign="top">
 <tr >
@@ -67,8 +65,6 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 CFD charts display the count of work items grouped by state/Kanban column over time. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
 
 
-
-
 <table>
 <tbody valign="top">
 <tr>
@@ -88,11 +84,8 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 <td>*For a continuous flow process:* measures the amount of time it takes from when a request is made (such as adding a proposed user story) until that request is completed (closed).  
 <br/>
 *For a sprint or fixed period process:* measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).  
-
-
 </td>
 </tr>
-
 
 <tr>
 <td>Work in Progress</td>
@@ -108,7 +101,6 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 </table>
 
 **Note**:
-
 1. The CFD widget (Analytics Service) and built-in CFD chart (work tracking data store) do not provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
 
 There is a very tight, well defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time which leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time is because the development team can focus on fewer items. This is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../boards/boards/wip-limits.md).  
@@ -118,11 +110,9 @@ The count of work items indicates the total amount of work on a given day. In a 
 Decomposing this work into specific Kanban board columns provides a view into where work is in the process. This provides insights on where work is moving smoothly, where there are blockages and where no work is being done at all. It's difficult to decipher a tabular view of the data, however, the visual CFD chart provides clear evidence that something is happening in a given way. 
 
 ## Identify issues, take appropriate actions  
-
 The CFD answers several specific questions and based on the answer, actions can be taken to adjust the process to move work through the system. Let's look at each of those questions here.
 
 ### Will the team complete work on time?  
-
 This question applies to fixed period CFDs only. You gain an understanding of this by looking at the curve (or progression) of work in the last column of the Kanban board.  
 
 ![Sample CFD with a half completed chart, dotted lines show the work won't be completed](_img/cfd-incomplete.png)  
@@ -132,7 +122,6 @@ In this scenario it may be appropriate to reduce the scope of work in the iterat
 There may however be other reasons which can be determined by looking at other data on the chart.  
 
 ### How is the flow of work progressing?
-
 Is the team completing work at a steady pace? One way to tell this is to look at the spacing between the different columns on the chart. Are they of a similar or uniform distance from each other from beginning to end? Does a column appear to flat-line over a period of multiple days? Or, does it seem to "bulge"?  
 
 Two problems show up visually as flat lines and as bulges. 
@@ -178,7 +167,6 @@ Monitoring the CFD for flat lines and bulges supports a key part of the Theory o
 -->
 
 **How do you fix flow problems?**
-
 You can solve the problem of lack of timely updates through daily stand-ups, other regular meetings, or scheduling a daily team reminder email.  
 
 Systemic flat-line problems indicate a more challenging problem (although you should rarely if ever see this). This problem means that work across the system has stopped. This may be the result of process-wide blockages, processes taking a very long time, or work shifting to other opportunities that aren't captured on the board. 
@@ -193,14 +181,12 @@ Two potentially easy ways to solve this problem are: 1) Shift developers from th
 >Because many different scenarios can occur which cause work to proceed unevenly, it's critical that you perform an actual analysis of the problem. The CFD will tell you that there is a problem and approximately where it is but you must investigate to get to the root cause(s). The guidance provided here indicate recommended actions which solve specific problems but which may not apply to your situation. 
 
 ### Did the scope change?  
-
 Scope changes apply to fixed period CFDs only. The top line of the chart indicates the scope of work because a sprint is pre-loaded with the work to do on the first day, this becomes a set level of work. Changes to this top line indicate worked was added or removed.  
 
 The one scenario where you can't track scope changes with a CFD occurs when the same number of works are added as removed on the same day. The line would continue to be flat. This is the primary reason why several charts should be used in conjunction with one another to monitor for specific issues. For example, the [sprint burndown chart](../../boards/sprints/sprint-burndown.md) can also show scope changes.   
 
 
 ### Too much work in progress?  
-
 You can easily monitor [whether WIP limits have been exceed from the Kanban board](../../boards/boards/wip-limits.md). However, you can also see monitor it from the CFD.  
 
 Not so oddly, a large amount of work in progress usually shows up as a vertical bulge. The longer there is a large amount of work in progress, the bulge will expand to become an oval which will indicate that the work in progress is negatively affecting the cycle and lead time.  
@@ -210,11 +196,8 @@ A good rule of thumb for work in progress is that there should be no more than t
 Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
 
 
-  
-::: moniker range="vsts" 
-
+::: moniker range=">= azure-devops-2019" 
 ## Lead time versus cycle time   
-
 The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
 
 #### Illustration of lead time versus cycle time 
@@ -234,7 +217,6 @@ When you create a work item, you can use your team's average lead time to estima
 In the following chart, the average cycle time is 8 days. The standard deviation is +/- 6 days. Using this data, we can estimate that the team will complete future user stories about 2-14 days after they begin work. The narrower the standard deviation, the more predictable your estimates.
 
 #### Example Cycle Time widget
-
 <img src="_img/cycle-time-planning.png" alt="Cycle Time widget" style="border: 2px solid #C3C3C3;" />
 
 
@@ -244,24 +226,19 @@ Review your team's control chart for outliers. Outliers often represent an under
 As you can see in the following chart, which shows several outliers, several bugs took significantly longer to complete than the team's average. Investigating why these bugs took longer may help uncover process issues. Addressing the process issues can help reduce your team's standard deviation and improve your team's predictability. 
 
 #### Example Cycle Time widget showing several outliers 
-<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliners" style="border: 2px solid #C3C3C3;" />
+<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliers" style="border: 2px solid #C3C3C3;" />
 
 You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 
 
 ## Try this next
-
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow charts](cumulative-flow.md) or 
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
-
 ## Try this next
-
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow chart](cumulative-flow.md) 
-
 ::: moniker-end

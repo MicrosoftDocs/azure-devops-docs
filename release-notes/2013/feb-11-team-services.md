@@ -70,7 +70,7 @@ Also of note, during this sprint [Brian Keller announced](http://blogs.msdn.com/
 
 ![Odata](_img/2_11_07.png)
 
-That's it for this sprint. See you again in 3 weeks. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That's it for this sprint. See you again in 3 weeks. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

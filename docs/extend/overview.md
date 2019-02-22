@@ -5,7 +5,7 @@ title: Developing extensions for Azure DevOps Services and Team Foundation Serve
 description: Overview of creating extensions for Azure DevOps Services
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -49,7 +49,7 @@ There are dozens of places where you can add to the Azure DevOps Services user i
 ## Extension building checklist
 
 1. Familiarize yourself with an overview of our platform and what's possible with it
-    1. [Team Services extensions overview](https://visualstudio.microsoft.com/team-services/extend/)
+    1. [Azure Devops extensions overview](https://azure.microsoft.com/services/devops/extend/)
 2. Learn to build your first extension or check out our full set samples
     1. [Build your first extension](./get-started/node.md)
     2. [Samples](./develop/samples-overview.md)
@@ -63,7 +63,7 @@ There are dozens of places where you can add to the Azure DevOps Services user i
 
 ## Helpful links
 
-* [Visual Studio Marketplace](https://marketplace.visualstudio.com/Azure DevOps Services)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 * [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
 * [Visual Studio Partner Program](https://vspartner.com/)
 

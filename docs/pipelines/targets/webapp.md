@@ -1,19 +1,22 @@
 ---
-title: Azure Web App deployment | Microsoft Docs
+title: Deploy an Azure Web App
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-manager: douge
+ms.manager: jillfra
 ms.assetid:
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure Web App deployment
+# Deploy an Azure Web App
+
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -43,14 +46,15 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-The preceding sample code includes an `azure-pipelines.yml` file at the root of the repository. This file includes some additional instructions in comments to deploy
-the build to an Azure Web App. Read through the instructions to learn how to edit the YAML file in order to deploy the sample app.
+The preceding sample code includes an `azure-pipelines.yml` file at the root of the repository.
+This file contains code to build, test, and publish the source as an artifact.
+To learn more about building .NET Core apps, see [Build .NET Core projects with Azure Pipelines or Team Foundation Server](../languages/dotnet-core.md).
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -68,7 +72,7 @@ Then read through the rest of this topic to learn some of the more common change
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
 
@@ -127,7 +131,7 @@ For information on Azure service connections, see the [following section](#endpo
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -154,13 +158,13 @@ input. The Azure service connection stores the credentials to connect from Azure
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -168,7 +172,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The easiest way to get started with this task is to be signed in as a user who owns both the Azure DevOps Services organization and the Azure subscription.
 In this case, you won't have to manually create the service connection.
@@ -176,7 +180,7 @@ Otherwise, to learn how to create an Azure service connection, see [Create an Az
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -188,7 +192,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application by using the following:
 
@@ -200,7 +204,7 @@ By default, your deployment happens to the root application in the Azure Web App
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -217,7 +221,7 @@ enter its name in the **Virtual Application** property of the **Azure App Servic
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
@@ -241,7 +245,7 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 ```
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -258,7 +262,7 @@ Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to sp
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 You can use [jobs](../process/phases.md) in your YAML file to set up a pipeline of deployments.
 By using jobs, you can control the order of deployment to multiple web apps.
@@ -268,7 +272,7 @@ jobs:
 
 - job: buildandtest
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'ubuntu-16.04'
   steps:
 
   # add steps here to build the app
@@ -283,7 +287,7 @@ jobs:
 
 - job: prod
   pool:
-    vmImage: 'Ubuntu 16.04'
+    vmImage: 'ubuntu-16.04'
   dependsOn: buildandtest
   condition: succeeded()
   steps:
@@ -301,7 +305,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -324,7 +328,7 @@ a Web.config transformation or by substituting variables in your Web.config file
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The following snippet shows an example of variable substitution:
 
@@ -354,7 +358,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 
@@ -377,7 +381,7 @@ You can choose to deploy only certain builds to your Azure Web App.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -398,7 +402,7 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 YAML builds are not yet available on TFS.
 

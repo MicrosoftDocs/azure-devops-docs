@@ -1,17 +1,17 @@
 ---
 title: Add a team, move from one team to several teams
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 02/20/2019
 ---
 
 # Add a team, move from one default team to several teams
@@ -49,12 +49,8 @@ As your team grows, you can easily move from one team to two. In this example, w
 ## Add two feature teams 
 
 Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-
-# [New navigation](#tab/new-nav)  
-::: moniker range="vsts"
+ 
+::: moniker range="azure-devops"
 
 0. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -66,7 +62,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	> [!div class="mx-imgBorder"]
 	> ![Create a sub-team with its own area path](_img/add-team/create-new-team-new-nav.png)
 
-0. Select the team to configure it. To select the set of sprints and area paths the team will use, choose **Iterations and areas** See [Set team defaults](set-team-defaults.md).
+0. Select the team to configure it. To select the set of sprints and area paths the team plans to use, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team profile, choose Iterations and areas link](_img/add-team/team-profile-choose-iterations-and-areas.png)
@@ -84,21 +80,16 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 <a id="add-team-team-services" /> 
 
-0. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+0. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
 
 	![Open project admin page](_img/add-team/open-admin-context-tfs-2017.png) 
 
-0. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. If you do not select this option, you will have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
+0. Choose **New team**. Give the team a name, and make sure to select **Create an area path with the name of the team**. Or, leave it unchecked and assign the default area path for the team after it is created. You can choose an existing area path or add a new one at that time. Team tools aren't available until the team's default area path is set. 
 
 	![Create a sub-team with its own area path](_img/add-team/create-team-dialog.png)
 
@@ -110,7 +101,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Team profile, choose Iterations and areas link](_img/add-team/team-profile-tfs.png)  
 
-0. To select the set of sprints and area paths the team will use, see [Set team defaults](set-team-defaults.md).
+0. To select the set of sprints and area paths the team plans to use, see [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md).
 
 	> [!IMPORTANT]  
 	> Team tools aren't available until the team's default area path is set. 
@@ -120,16 +111,16 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013  <= tfs-2015"
+::: moniker range=">= tfs-2013 <= tfs-2015"
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+1. From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
 
 	<img src="../../_shared/_img/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 
-	If you do not select this option, you will have to set the default area path for the team once you create it. You can choose an existing area path or create a new one at that time. Team tools aren't available until the team's default area path is set. 
+	Or, leave it unchecked and assign the default area path for the team after it is created. You can choose an existing area path or add a new one at that time. Team tools aren't available until the team's default area path is set. 
 
 	![Create a sub-team with its own area path](_img/add-team/scale-agile-co.png)
 
@@ -137,13 +128,12 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	![Web portal, admin context, project, Overview page, Select a sub-team to configure it](_img/add-team/scale-agile-select-team-to-configure-it-co.png)
 
-4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](set-team-defaults.md#activate).  
+4. To select the set of sprints the team plans to use, open the **Iterations** page for the team. See [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md#activate).  
 
-5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-team-defaults.md#team-area-paths).  
+5. To change the area paths assigned to the team, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-area-paths.md#team-area-paths).  
  
 ::: moniker-end   
 
----
 
 <a id="add-team-members"> </a>  
 
@@ -152,13 +142,13 @@ If you're moving from one team to two teams, team members already have access to
 
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 > [!NOTE]   
-> You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way users will be available to add to a team.
+> You must first [add user to a project or to your organization](../accounts/add-organization-users.md) or [setup your account to work with Azure AD](../accounts/access-with-azure-ad.md). This way you can add user identities to a team.
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="< azure-devops"  
 > [!NOTE]   
 > The first time you add a user account, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 ::: moniker-end 
@@ -167,24 +157,24 @@ For details, see [Add users to a project or specific team](../security/add-users
 
 
 ## Move work items under teams 
-Now that your two feature teams are configured, you'll want to move existing work items from their current assignments to the team's default area path. This way, the work items will show up on each team's backlog. 
+Now that your two feature teams are configured, you need to move existing work items from their current assignments to the team's default area path. This way, the work items show up on each team's backlog. 
 
 1.	The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
 
-	::: moniker range="vsts"  
+	::: moniker range=">= azure-devops-2019"  
 	> [!div class="mx-imgBorder"]  
 	>![Web portal, Queries page, Bulk modify select work items](_img/add-team/query-bulk-edit-area-path.png)
 	::: moniker-end  
-	::: moniker range=">= tfs-2013  <= tfs-2018"  
+	::: moniker range="<= tfs-2018"  
 	![Web portal, Queries page, Bulk modify select work items](_img/add-team/scale-agile-bulk-modify-area-path-co.png)
 	::: moniker-end  
 2.	After you bulk modify, do a bulk save.  
 
-	::: moniker range="vsts"  
+	::: moniker range=">= azure-devops-2019"    
 	> [!div class="mx-imgBorder"]  
 	>![Bulk save edited work items](_img/add-team/query-bulk-save.png)
 	::: moniker-end  
-	::: moniker range=">= tfs-2013  <= tfs-2018"  
+	::: moniker range="<= tfs-2018"  
 	![Web portal, Queries page, Bulk save selected work items](_img/add-team/scale-agile-bulk-save-area-path-co.png)  
 	::: moniker-end  
 
@@ -193,27 +183,20 @@ Now that your two feature teams are configured, you'll want to move existing wor
 ## Configure the default project team 
 One last step in moving from one team to two teams requires configuring the default project team to exclude sub-areas.  
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 0. Open **Project Settings>Team Configuration** settings page for the default project team, and change the setting as shown.  
 	> [!div class="mx-imgBorder"]  
-	> ![New nav, default project team configuration , Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
+	> ![New nav, default project team configuration, Exclude work items defined in sub-area paths, new nav](_img/add-team/exclude-areas-default-team-vert.png)  
 
 0.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Product backlog, default project team](_img/add-team/product-backlog-default-team.png)
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 <= tfs-2018"
 0. Open the **Work>Areas** settings page for the default project team, and change the setting as shown.  
 
 	> [!div class="mx-imgBorder"]  
@@ -224,9 +207,9 @@ One last step in moving from one team to two teams requires configuring the defa
 	> [!div class="mx-imgBorder"]  
 	> ![Backlog view of default team](_img/add-team/product-backlog-default-team-horz.png)  
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 0. Open the **Areas** settings page for the default project team, and change the setting as shown.  
 
 	![Web portal, Admin context, default project, Exclude work items defined in sub-area paths](_img/add-team/multiple-teams-exclude-sub-area-paths.png)  
@@ -235,15 +218,11 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	![Web portal, Backlog view of default team](_img/add-team/multiple-teams-product-backlog-default-team.png)  
 
-::: moniker-end  
-
---- 
+::: moniker-end
 
 ## Delete a team 
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 
 0. To delete a team, open **Project Settings>Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 	> [!div class="mx-imgBorder"]  
@@ -256,16 +235,9 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	![Delete team confirmation dialog](_img/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013"  
+::: moniker range="<= tfs-2018"
 
 1. To delete a team, open **Project Settings>Work>Overview**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 
@@ -278,9 +250,8 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	![Delete team confirmation dialog](_img/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
-::: moniker-end  
+::: moniker-end
 
----
 
 <a id="grant-add-permissions"></a>  
 
@@ -295,13 +266,13 @@ For teams to work autonomously, you may want to provide them with permissions th
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
 
-::: moniker range="tfs-2018" 
+::: moniker range="tfs-2018 || azure-devops-2019" 
 
-If your TFS deployment is integrated withSQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
+If your Azure DevOps Server or TFS deployment is integrated with SQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2017" 
+::: moniker range="<= tfs-2017" 
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
 

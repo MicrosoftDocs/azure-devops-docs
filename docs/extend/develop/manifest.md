@@ -5,7 +5,7 @@ title: Extension Manifest Reference| Extensions for Azure DevOps Services
 description: How to create a manifest for your extension to Azure DevOps Services.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -45,7 +45,8 @@ Here is an example of what a typical manifest will look like:
 
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
-#### Public flag
+<a id="public-flag" />
+#### Mark an extension public
 
 By default, all extensions on the Visual Studio Marketplace are private (only visible to the publisher and accounts the publisher has shared the extension with). If your publisher has been verified, you can make your extension public by setting the `Public` flag in your extension manifest:
 
@@ -67,7 +68,7 @@ Or simply:
 
 See [Package/Publish/Install](../publish/overview.md) for additional details.
 
-#### Preview flag
+#### Mark an extension to be in preview
 
 If your extension is ready for users on the Marketplace to try, but you are still working out a few bugs or adding function, you can mark it as `preview`:
 
@@ -78,22 +79,9 @@ If your extension is ready for users on the Marketplace to try, but you are stil
     ]
 }            
 ```
-#### Paid flag
+#### Mark an extension as paid preview
 
-If you want to sell your extension on the Marketplace, you can mark it as `paid`:
-
-```json
-{
-    "galleryFlags": [
-        "Paid"
-    ]
-}            
-```
-Currently, this is in limited Beta. All paid extensions are mandated to define privacy and end user licence agreement. Additional configuration steps are required to sell extension in Marketplace. 
-
-#### Paid Preview flag
-
-If you intend to sell your extension on the Marketplace in the future, you have to mark it as `paid preview`:
+If you intend to sell your extension on the Marketplace in the future, you should mark it as paid preview. An extension once marked free cannot be marked paid later.
 
 ```json
 {
@@ -103,9 +91,60 @@ If you intend to sell your extension on the Marketplace in the future, you have 
     ]
 }            
 ```
-Only extensions marked as `paid preview` can be converted to `paid`.
 
-Note: If you do want to target TFS but do not wish to surface a Download option for your extension then add __DoNotDownload tag (starts with two underscores) to the extension manifest.
+#### Mark an extension as paid
+
+If you want to sell your extension on the Marketplace, you can mark it with the `Paid` flag and `__BYOL` tag (starts with two underscores) :
+
+```json
+{
+    "galleryFlags": [
+        "Paid"        
+    ],
+     "tags": [        
+        "__BYOL"
+    ]
+}            
+```
+
+Both the `Paid` flag and `__BYOL` tag need to be present to mark an extension as paid in Marketplace. BYOL stands for Bring-Your-Own-License which means the publisher of the extension will provide the billing and licensing mechanism for the extension, as this is not provided by Microsoft for Azure DevOps extensions. All paid extensions are required to define privacy policy, support policy, and an end user license agreement. Additionally, publishers must provide content for the pricing tab in Marketplace as follows:
+
+```json
+{
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }, 
+        "pricing": {
+            "path": "pricing.md"
+        }
+    }
+}          
+```
+
+You will also need to add a new section in your extension manifest to override paid licensing. In the future, we will remove the paid licensing check and this override will no longer be required, but for now you will need it to ensure your extension is displayed as expected. Each override consists of an “id” and a “behavior.” The “id” must match the ID of the contributions defined in the manifest.
+```json
+"licensing": {
+
+      "overrides": [
+
+        { "id": "my-hub", "behavior": " AlwaysInclude" }
+      ]
+    }
+
+```
+
+If your paid BYOL extension offers a trial period (we recommend so), then you can specify the length of the trial in days: 
+
+```json
+{
+    "galleryproperties": {
+        "trialDays": "30"
+    } 
+}          
+```
+
+> **Note:** If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
 
 ### Example of additional properties
 
@@ -138,10 +177,10 @@ For a different experience than one of the default options use the **CustomerQnA
 
 ```json
 {
-    "customerQnaSupport": {
+    "CustomerQnASupport": {
         "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
-    }
+    } 
 }
 ```
 
@@ -159,28 +198,28 @@ Properties for the CustomerQnASupport section:
 
 ```json
 {
-    "customerQnaSupport": {
-        "enableqna": true,
+     "CustomerQnASupport": {
+        "enableqna":"true",
         "url": "http://uservoice.visualstudio.com"
-    }
+    } 
 }
 ```
 #### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
 
 ```json
 {
-    "customerQnaSupport": {
-        "enableqna": true
-    }
+     "CustomerQnASupport": {
+        "enableqna":"true"
+    } 
 }
 ```
 #### Example 12: Extension disabling Q&A section
 
 ```json
 {
-    "customerQnaSupport": {
-        "enableqna": false
-    }
+     "CustomerQnASupport": {
+        "enableqna":"false"
+    } 
 }
 ```
 
@@ -534,6 +573,9 @@ Menus can be targeted by contributions of different types: action, hyperlink-act
 item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these
 types) that target that specific menu contribution.  
 
+### Adding a hub icon
+
+For information on adding an icon to your hub, check out the [hub icon guidance](web-navigation.md#hub-icon).
 
 <a name="approvedbadges"></a>
 

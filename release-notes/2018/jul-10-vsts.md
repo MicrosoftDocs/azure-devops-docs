@@ -67,7 +67,7 @@ When we first launched the pull request (PR) experience, we thought it would mak
 ​
 As part of the [new navigation](/azure/devops/release-notes/2018/jun-19-vsts#preview-our-new-navigation) changes, we took the opportunity to change this default association with teams. You'll notice two changes:​
 ​
-1. When creating a PR, no reviewers are added by default. The reviewers list does have a feature to make it easier to add individuals and groups that were added to PRs recently. The [required reviewers policy](/azure/devops/git/branch-policies?view=vsts#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
+1. When creating a PR, no reviewers are added by default. The reviewers list does have a feature to make it easier to add individuals and groups that were added to PRs recently. The [required reviewers policy](/azure/devops/git/branch-policies?view=azure-devops#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
 1. The **Pull Requests** hub has a new customizable section. By default, this section shows PRs "Assigned to my teams", providing equivalent functionality as the old section. However, if you belong to multiple teams, this section will show PRs assigned to any of your teams. The section is also customizable - just click on the "Customize this view" action near the section header.
 
 ### Allow bypassing branch policies without giving up push protection
@@ -84,7 +84,7 @@ By granting the first permission and denying the second, a user will be able to 
 > [!NOTE]
 > This change does not introduce any behavior changes. Users that were formerly granted **Allow** for "Exempt from policy enforcement" will be granted **Allow** for both new permissions, so they will be able to both override completion on PRs and push directly to branches with policies.
 
-See the [Set branch permissions](/azure/devops/git/branch-permissions?view=vsts) documentation for more information.
+See the [Set branch permissions](/azure/devops/git/branch-permissions?view=azure-devops) documentation for more information.
 
 ## Wiki
 
@@ -120,7 +120,7 @@ Now you can right click on a wiki page and open it in new tab or simply press CT
 
 ### Build and release with Microsoft-hosted Linux and macOS agents
 
-The Microsoft-hosted Linux and macOS agents are now out of preview and generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=vsts) documentation for more information.
+The Microsoft-hosted Linux and macOS agents are now out of preview and generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops) documentation for more information.
 
 > [!IMPORTANT]
 > Due to the way the hosted pools were implemented in preview, the agent pools in existing organizations will continue to have the "Preview" moniker (in name only). Pools marked "Preview" have reached general availability and will be equivalent to corresponding, newly-named pools that will soon roll out.
@@ -134,7 +134,7 @@ Previously, when new targets were added to a deployment group, a manual deployme
 
 ### Hold deployments until gates succeed consistently
 
-Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release progresses after one successful sample for all gates has been received. Even if a gate is erratic and the successful sample received is noise, the release progresses. To avoid these types of issues, you can now configure the release to verify consistency of the health for a minimum duration before progressing. At run time, the release would ensure consecutive evaluations of the gates are successful before allowing the promotion. The total time for evaluation depends on "time between reevaluation" and would typically be more than the configured minimum duration. See the [Release deployment control using gates](/azure/devops/pipelines/release/approvals/gates?view=vsts) documentation for more information.
+Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release progresses after one successful sample for all gates has been received. Even if a gate is erratic and the successful sample received is noise, the release progresses. To avoid these types of issues, you can now configure the release to verify consistency of the health for a minimum duration before progressing. At run time, the release would ensure consecutive evaluations of the gates are successful before allowing the promotion. The total time for evaluation depends on "time between reevaluation" and would typically be more than the configured minimum duration. See the [Release deployment control using gates](/azure/devops/pipelines/release/approvals/gates?view=azure-devops) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Gates hold setting](_img/137_07.png)
@@ -156,14 +156,14 @@ The Package Management extension is pre-installed into all organizations. If you
 
 ### Connect or disconnect Azure Active Directory as a Project Collection Admin
 
-A Project Collection Administrator (PCA) can now [connect or disconnect their organization from Azure Active Directory](/azure/devops/organizations/accounts/connect-organization-to-aad?view=vsts). Previously this had to be done by an organization owner.
+A Project Collection Administrator (PCA) can now [connect or disconnect their organization from Azure Active Directory](/azure/devops/organizations/accounts/connect-organization-to-aad?view=azure-devops). Previously this had to be done by an organization owner.
 
 ### Public projects available in preview for all organizations
 
 > [!IMPORTANT]
-> To use this capability, an organization administrator must [enable public projects](/azure/devops/organizations/public/create-public-project?view=vsts&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
+> To use this capability, an organization administrator must [enable public projects](/azure/devops/organizations/public/create-public-project?view=azure-devops&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
 
-As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/azure/devops/organizations/public/index?view=vsts) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
+As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/azure/devops/organizations/public/index?view=azure-devops) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
 
 > [!IMPORTANT]
 > If you're using a public project to build a repository hosted on GitHub, note that while pull requests (PRs) from branches within your repository will build fine, PRs opened from forks of your repository will not build right now.

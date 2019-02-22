@@ -1,15 +1,17 @@
 ---
-title: Plans (Agile at scale)
-titleSuffix: Azure Boards and TFS
-description: Index to topics for how to scale Agile tools in Azure Boards & Team Foundation Server 
+title: Learn how manage portfolios and gain visibility across teams  
+titleSuffix: Azure Boards
+description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/04/2017
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Plans (Agile at scale) 
@@ -37,16 +39,16 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 ::: moniker-end
 
 ## Concepts 
-       
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)    
 - [Visibility across teams](visibility-across-teams.md)   
 - [Agile culture and scale](agile-culture.md)   
 - [Practices that scale](practices-that-scale.md)  
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
 ## How-to Guides
+- [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md)
 - [Define a work item template](../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) 
-- [Set team defaults](../../organizations/settings/set-team-defaults.md) 
 - [Scaled Agile Framework](scaled-agile-framework.md)   
 
 

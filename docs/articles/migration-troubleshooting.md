@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting the migration import from TFS to Azure DevOps Services | Azure DevOps Services & TFS
-description: Guidance for fixing common TfsMigrator valdiation errors. 
+description: Guidance for fixing common TfsMigrator validation errors. 
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 monikerRange: '>= tfs-2013'
@@ -36,7 +36,7 @@ The largest table size is currently {Table size}GBs. This is above the recommend
 Similar to the previous warning, this warning means you will have to use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import. This warning does **NOT** mean that your collection is too big to be imported. 
 
 ```cmdline
-The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data] (/tfs/server/upgrade/clean-up-data).
+The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data](/tfs/server/upgrade/clean-up-data).
 ```
 
 This warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. The warning does **NOT** mean that your collection is too big for import, rather its metadata size is larger than the vast majority of other databases. It's strongly recommended that you [reduce the size](/tfs/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.
@@ -118,13 +118,13 @@ ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S
 The final command will look like:
 
 ```cmdline
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collectionhttps://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
 
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Write sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collectionhttps://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Write sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
 
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collectionhttps://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
 
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collectionhttps://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
 ```
 If you have multiple errors that need to be corrected, it's recommended that you put all of the commands into a batch file to execute them against TFSSecurity in an automated fashion. Once the commands have been executed you will need to run TfsMigrator validate again to ensure that the error(s) has\have been corrected. If the error(s) still persists, please contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
@@ -251,7 +251,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 
 
 ## Dealing with Import Errors
-Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will recieve a failure email if this happens. 
+Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will receive a failure email if this happens. 
 
 ### Verification Failures
 Verification failures happen when the import fails to start. Issues falling into this category mean that something with your import request isn't valid. Look up you error message below and follow the recommended guidance on how to resolve the error. After that your team can try to queue the import again.   
@@ -262,7 +262,7 @@ Verification failures happen when the import fails to start. Issues falling into
 VS403254: Region {0} may not be used for the Import, it is not a supported region.
 ```
 
-The region that you entered for your VSTS import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](.\migration-import.md#supported-azure-regions-for-import) you want to import into. 
+The region that you entered for your Azure DevOps Services import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](.\migration-import.md#supported-azure-regions-for-import) you want to import into. 
 
 **VS403249**
 
@@ -270,7 +270,7 @@ The region that you entered for your VSTS import isn't supported. Open your impo
 VS403249: The organization {0} already exists. Please select a different name and try the import again.
 ```
 
-All VSTS imports go into a new organization that is created at import time. This error indicates that the organization name your team has selected is already being used by an existing organization. Select a different name and update the import specification file before retrying the import. 
+All Azure DevOps Services imports go into a new organization that is created at import time. This error indicates that the organization name your team has selected is already being used by an existing organization. Select a different name and update the import specification file before retrying the import. 
 
 **VS403250 & VS403286**
 
@@ -385,7 +385,13 @@ VS403366: A problem occurred while attempting to connect to your database. Pleas
 List of Azure DevOps Services IPs:
 ```
 
-The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for VSTS. VSTS's IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 
+The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 
+
+**VS403373**
+
+Importing multiple copies of the **SAME** collection is not supported by the TFS Database Import Service. However, we **DO** support importing **split** copies a collection. What you need to do is change the GUID for the _DataImportCollectionID_.
+
+From SQL Server Management Studio (SSMS) open the extended properties for the split copies that haven't been imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then re-run the prepare command and use the new import.json to queue the import.
 
 ### Import Failures
 When an import fails, the individual that queued the import will receive an email notification. Most of the time this email will include a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and try your import again. 

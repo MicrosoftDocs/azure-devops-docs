@@ -1,16 +1,17 @@
 ---
-title: Naming restrictions and conventions 
-titleSuffix: Azure DevOps Services & TFS
-description: Length, uniqueness, and special character requirements to meet when labeling objects such as an organization, project, tags, templates, and more
+title: Restrictions and conventions for naming
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Requirements to meet when labeling objects such as an organization, project, tags, templates, and more, like length, uniqueness, and special characters 
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: jillfra
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 06/26/2018
+ms.date: 01/11/2019
 ---
 
 # Naming restrictions and conventions  
@@ -27,7 +28,7 @@ Common restrictions include not exceeding the character length for a name, not c
 <a id="CommonRestrictions">   </a>
 ### Common considerations 
 
-The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these will count as two characters against the length restriction. For details, see [About Unicode and Character Sets](http://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
+The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these count as two characters against the length restriction. For details, see [About Unicode and Character Sets](http://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](http://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 
@@ -378,7 +379,7 @@ Processes you define or customize must conform to the following restrictions.
 <td>
 <ul>
 <li>Must be unique across the Team Foundation server.</li>
-<li>If you upload a template with the same name as an existing template, the existing template will be overwritten.</li>
+<li>If you upload a template with the same name as an existing template, the existing template is overwritten.</li>
 </ul>
 </td>
 </tr>
@@ -1000,7 +1001,7 @@ Your on-premises build computer must conform to the following restrictions.
 <td>Disk space
 </td>
 <td>
-Must contain sufficient space for the build (insufficient space will lead to failed builds).
+Must contain sufficient space for the build (insufficient space leads to failed builds).
 </td>
 </tr>
 <tr>
@@ -1059,7 +1060,7 @@ If the build computer is firewall enabled, make sure that the program **tfsbuild
 
 ### Build types
 
-Build types configure the conditions under which a single solution or a set of solutions in a project will be built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/get-started-designer.md).
+Build types configure the conditions under which a single solution or a set of solutions in a project are built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/get-started-designer.md).
 
 Build type names  must conform to the following restrictions.  
 
@@ -1135,6 +1136,7 @@ Team Foundation version control (TFVC) provides a central repository for files a
 
 Version control paths must conform to the following restrictions. See also [Optimize your workspace](https://msdn.microsoft.com/library/ms181378.aspx).
 
+In the web portal and REST API certain operations (Edit, Rename, and Delete) have a more restrictive path length than Visual Studio and TF.exe clients.  This is due to web portal/REST utilizing a randomly generated workspace for concurrency when pending the changes.
 <table>
 <tr>
 <th width="20%">Restriction type</th>
@@ -1173,9 +1175,66 @@ Version control paths must conform to the following restrictions. See also [Opti
 </ul>
 </td>
 </tr>
+<tr>
+<td>
+<p>Web portal and REST specific length restrictions</p>
+</td>
+<td>
+<ul>
+<li>
+<p>Must not contain more than 215 Unicode characters for a combined project name, directory and file name.</p>
+</li>
+</ul>
+</td>
+</tr>
 </table>
 
+## Azure Repos
 
+A Git repo in Azure Repos establishes a repository for source code. Each project can contain multiple Git repos. The names you assign to Git repos that you create must conform to the following restrictions.  
+ 
+<table>
+<tr>
+<th width="20%">Restriction type</th>
+<th>Restriction</th>
+</tr>
+<tr>
+<td>Length</td>
+<td>
+<ul>
+<li>Must not contain more than 64 Unicode characters</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+Uniqueness
+</td>
+<td>
+<ul>
+<li>Must not be identical to any other Git repo name in the project.
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Special characters</td>
+<td>
+<ul>
+<li>Must not contain any Unicode control characters or surrogate characters</li>
+<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ ' " ? &lt; &gt; | # $ * } { , + = [ ]
+</li>
+<li>Must not start with an underscore (&#95;)</li>
+<li>Must not start or end with a period (.)</li>
+</ul>
+</td>
+</tr>
+</table>
+
+>[!IMPORTANT]
+>Although spaces are permitted in repo names, it is not recommended.
+
+For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format).
 
 ## TFVC files
 
@@ -1334,17 +1393,7 @@ Workspace names must conform to the following restrictions.
 <a id="page-title-names"></a>
 ## Wiki page title naming conventions
 
-Each wiki page corresponds to a file within the wiki Git repo.  
-Names you assign to a wiki page title must conform to the following restrictions.
-
-|Restriction type| Restriction|
-|---------------|-----------|
-| File name     | The fully qualified page path should not exceed 235 characters.  |
-| Uniqueness    | Page titles are case sensitive and must be unique within the wiki hierarchy.|
-|Special characters| <ul><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \ &#124; - #</li><li>Must not start or end with a period (.)</li><li>Titles of pages added offline titles must not contain a blank space.</li></ul>|
-| File size     | Must not exceed the maximum of 15 MB |
-| Attachment file size |  Must not exceed the maximum of 10 MB  |
-
+[!INCLUDE [temp](../../../docs/project/wiki/_shared/wiki-naming-conventions.md)]
 
 
 ## Related articles 

@@ -8,8 +8,8 @@ ms.topic: reference
 ms.assetid: 60e637b9-4599-4fe5-bff1-e6adade81d9c
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-monikerRange: '>= tfs-2013 <= tfs-2017'
+ms.manager: jillfra
+monikerRange: '<= tfs-2017'
 ms.date: 12/30/2016
 ---
 # Build Quality Excel Report

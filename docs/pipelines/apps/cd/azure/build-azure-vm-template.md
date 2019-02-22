@@ -1,20 +1,21 @@
 ---
-title: Build an Azure Virtual Machine using Azure RM templates
-description: How to build an Azure Virtual Machine using ARM templates in Release Management in Azure Pipelines and Team Foundation Server (TFS).
+title: Build a VM using RM templates
+description: How to build an Azure Virtual Machine using ARM templates in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Build an Azure virtual machine using an Azure RM template
 
-[!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -31,13 +32,9 @@ VMs must be checked into a version control repository
 along with the rest of the application code, and it
 must be published as part of the build output.
 
-## Get set up
+## Create the template 
 
-Before you can build the solution, you must create an
-Azure RM template.
-
-### Create the template 
-
+Before you can build the solution, you must create an Azure RM template.
 Follow these steps to create and check-in a new Resource Manager template.
 
 1. In Visual Studio, choose **File | Add | New project** and add a
@@ -45,7 +42,7 @@ Follow these steps to create and check-in a new Resource Manager template.
 
 1. When prompted for an Azure template, select **Windows Virtual Machine**.
 
-   >The **Windows Virtual Machine** template is a simple example of
+   > The **Windows Virtual Machine** template is a simple example of
    provisioning a single virtual machine in Azure.
    For provisioning other types of resources, you can either edit the
    **WindowsVirtualMachine.json** file, select other
@@ -61,24 +58,22 @@ Follow these steps to create and check-in a new Resource Manager template.
    commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.md) or 
    [Azure Repos Git](../../../../repos/git/index.md) repository.
 
-### Create the build pipeline
+## Create the build pipeline
 
 Carry out the following steps to publish an artifact with the Resource Manager template files.
 
-1. Make sure that the template files from the **HelloWorldARM**
-   project are included in the artifacts published by Build.
+1. [Create a new build pipeline](../../../get-started-designer.md#create-a-build-pipeline) for the solution you just checked into a TFS or Git repo.
 
-1. Queue a new build and verify that the artifact contains 
-   the **Templates** folder containing the template files
+1. [Enable continuous integration (CI)](../../../get-started-designer.md#enable-continuous-integration-ci). This tells the system to queue a build whenever someone on your team commits or checks in new code.
+
+1. [Publish the artifacts from the build](../../../get-started-designer.md#publish-an-artifact-from-your-build).
+   Make sure that the template files from your ARM template
+   project are included in the artifacts published by your build pipeline.
+
+1. [Save the pipeline and queue a new build](../../../get-started-designer.md#save-and-queue-the-build).
+   Verify that the artifact contains the **Templates** folder containing the template files
    **WindowsVirtualMachine.json** and **WindowsVirtualMachine.parameters.json**.
-
-### Enable continuous integration (CI)
-
-On the Triggers tab, enable **continuous integration** (CI). This tells the system to queue a build whenever someone on your team commits or checks in new code.
-
-## Queue and test the build
-
-Save the build pipeline and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the template files produced by the build. This is the template that your release pipeline will consume to provision an Azure virtual machine.
+   This is the template that your release pipeline will consume to provision an Azure virtual machine.
 
 ## Provision your virtual machine
 
@@ -90,7 +85,7 @@ After you've run the build, you're ready to create a release pipeline to provisi
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

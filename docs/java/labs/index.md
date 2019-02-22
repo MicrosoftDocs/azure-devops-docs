@@ -5,26 +5,25 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge 
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel 
+author: davidstaheli
 ms.date: 01/25/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
-[Azure DevOps Services](https://dev.azure.com) and [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment to speed the development and delivery of your software applications across platforms, including iOS, Android, Java, Linux or Windows.
-
 # About the Java Hands-on Labs
+
+[Azure DevOps Services](https://dev.azure.com), [Azure DevOps Server](https://visualstudio.microsoft.com/tfs/), and [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment to speed the development and delivery of your software applications across platforms, including iOS, Android, Java, Linux or Windows.
+
 
 These hands-on labs are provided to give you a first-hand, technical experience on how you can leverage the Microsoft DevOps platform for Java development. The labs cover:
 
-- Creating a new Azure DevOps organization
+- Creating a new organization in Azure DevOps
 - Using the Agile Boards to plan and track work items
 - Using Azure DevOps Services with your Eclipse and IntelliJ
 - Running Junit tests and analyzing code coverage with Jacoco and Cobertura
 - Continuous Integration with Azure Pipelines or Jenkins
-- Managing Technical Debt with SonarQube
 - Deploying Docker containers to Azure with an Automated delivery pipeline
 
 ## Virtual Machine
@@ -35,9 +34,9 @@ Our partner [NorthWest Cadence](https://www.nwcadence.com/) has built a virtual 
 
 The image and the accompanying hand-on-labs is for a technical audience. As such, familiarity with Azure DevOps Services, Java and Linux operating system would be preferred although it is not a strict prerequisite.
 
-## Provisioning an Azure DevOps project using Azure DevOps Demo Generator
+## Provisioning a project using Azure DevOps Demo Generator
 
-You can use [Azure DevOps Demo Generator](https://vstsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your Azure DevOps organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
+You can use [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net) to provision a project with pre-defined data on to your organization to follow the hands-on-labs. Choose **MyShuttle2** template from the dropdown.
 
 ## Hands on Labs
 
@@ -72,9 +71,6 @@ The labs should be followed in the following order, though there are some equiva
    </tr>
    <tr>
       <td><a href="builddocker/index.md">Build Docker containers with Azure DevOps Services</a></td>
-   </tr>
-   <tr>
-      <td><a href="sonarqube/index.md">Managing Technical Debt with SonarQube and Azure Pipelines</a></td>
    </tr>
    <tr>
       <td><a href="releasemanagement/index.md">Release Management with Azure DevOps Services</a></td>

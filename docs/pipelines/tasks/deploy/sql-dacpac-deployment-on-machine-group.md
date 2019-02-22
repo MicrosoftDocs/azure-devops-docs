@@ -1,19 +1,22 @@
 ---
-title: SQL Server Database Deploy
+title: WinRM SQL Server DB Deployment task
 description: Deploy to SQL Server Database using DACPAC or SQL scripts
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4B506F7F-720F-47BB-BF21-029BAC6A690D
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Deploy: SQL Server Database Deploy
+# WinRM SQL Server DB Deployment task
 
-![](_img/sqldacpacdeploymentonmachinegroup.png) Deploy to SQL Server Database using DACPAC or SQL scripts
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to deploy to SQL Server Database using a DACPAC or SQL script.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -31,7 +34,7 @@ monikerRange: 'vsts'
 <tr><td>App lock name</td><td>(Required) App lock name</td></tr>
 <tr><td>Inline Sql</td><td>(Required) Sql Queries inline</td></tr>
 <tr><td>Specify SQL Using</td><td>(Required) Specify the option to connect to the target SQL Server Database. The options are either to provide the SQL Server Database details, or the SQL Server connection string, or the Publish profile XML file.</td></tr>
-<tr><td>Server Name</td><td>(Required) Provide the SQL Server name like, machinename\FabriakmSQL,1433 or localhost or .\SQL2012R2. Specifying localhost will connect to the Default SQL Server instance on the machine.</td></tr>
+<tr><td>Server Name</td><td>(Required) Provide the SQL Server name like, machinename\FabrikamSQL,1433 or localhost or .\SQL2012R2. Specifying localhost will connect to the Default SQL Server instance on the machine.</td></tr>
 <tr><td>Database Name</td><td>(Required) Provide the name of the SQL Server database.</td></tr>
 <tr><td>Authentication</td><td>(Required) Select the authentication mode for connecting to the SQL Server. In Windows authentication mode, the administrator's account, as specified in the Machines section, is used to connect to the SQL Server. In SQL Server Authentication mode, the SQL login and Password have to be provided in the parameters below.</td></tr>
 <tr><td>SQL User name</td><td>(Required) Provide the SQL login to connect to the SQL Server. The option is only available if SQL Server Authentication mode has been selected.</td></tr>
@@ -45,10 +48,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

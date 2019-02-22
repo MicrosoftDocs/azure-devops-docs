@@ -5,7 +5,7 @@ title: Create your first Extension with Visual Studio | Extensions for Azure Dev
 description: Use Visual Studio with ASP.NET to create your first extension for Azure DevOps Services.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -65,7 +65,7 @@ The extension manifest tells Azure DevOps Services about your extension.
 
 [!INCLUDE [Extension_manifest](../_shared/procedures/create-base-manifest.md)]
 
-[!INCLUDE [Contribuion_manifest](../_shared/procedures/create-hub-manifest.md)]
+[!INCLUDE [Contribution_manifest](../_shared/procedures/create-hub-manifest.md)]
 
 <a id="package"></a>
 ### Package and publish your extension

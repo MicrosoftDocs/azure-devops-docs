@@ -1,12 +1,12 @@
 ---
 title: Build and deploy your app - examples
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Build and deploy your app examples with Azure Pipelines and Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 955133FD-76B4-4D63-AB46-9043D96F8A9D
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/22/2016
@@ -93,7 +93,7 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 <p style="font-weight:bold;padding-top:10px">More examples</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../test/example-continuous-testing.md)</li>
- <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Azure Pipelines](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
+ <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Azure Pipelines](https://azure.microsoft.com/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
 </ul>
 </div>
 
@@ -117,7 +117,7 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

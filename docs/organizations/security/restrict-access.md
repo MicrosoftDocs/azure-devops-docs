@@ -1,17 +1,18 @@
 ---
 title: Grant or restrict access to select features
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: devops
 ms.topic: Conceptual
 ms.technology: devops-security
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
+ms.date: 02/19/2019
 ---
+
 # Tutorial: Grant or restrict access to select features and functions
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
@@ -31,7 +32,7 @@ Use this topic you learn how to do the following:
 
 
 > [!TIP]    
-> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project will determine the areas you can open up or close down.
+> Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project determines the areas you can open up or close down.
 
 
 ## Recommended method for granting and restricting permissions 
@@ -181,31 +182,16 @@ See [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md
 
 ## Restrict modification of work items based on a user or group  
 
-For the [Hosted XML process model](../settings/work/hosted-xml-process-model.md) and [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
+For [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
 You achieve this by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group). 
 
 > [!NOTE]   
-> These restriction types aren't available for Azure DevOps organizations and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
+> These restriction types aren't available for organizations in Azure DevOps and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
 
-<!---STEPS TO CONSIDER
-What do you want to restrict access to? Look up the permission associated with that feature - you can use the Reverse Lookup to determine if it is at the object-level, project-level, or collection-level. 
-Who do you want to restrict access?  Is it one or two folks, or a large number of users. 
-Create a custom security group 
-Add users to that group 
-Set the permissions to restrict access to a feature. 
 
-Should we have a Concepts topic about restricting -- address things that we support/don't support. 
-
-User Voice requests: 
-* Hide Work Item Types (WITs) based on permission/security group
-
-If you have requirements where you want to restrict user views or select users ability to contribute within an area, you may want to create a separate project where you restrict access. 
-
-What you can do on TFS differs from what is available  from Azure DevOps 
--->
  
 ## Try this next
 > [!div class="nextstepaction"]
@@ -227,4 +213,21 @@ Maybe consider this in a 2 or 3 step process:
 - what areas to open up/close down
 - Role and delegation 
 - Impact on project structure (what tends to get out of hand over time - sprawling set of teams, queries, iteration paths, area paths, etc.  
+
+
+STEPS TO CONSIDER
+What do you want to restrict access to? Look up the permission associated with that feature - you can use the Reverse Lookup to determine if it is at the object-level, project-level, or collection-level. 
+Who do you want to restrict access?  Is it one or two folks, or a large number of users. 
+Create a custom security group 
+Add users to that group 
+Set the permissions to restrict access to a feature. 
+
+Should we have a Concepts topic about restricting -- address things that we support/don't support. 
+
+User Voice requests: 
+* Hide Work Item Types (WITs) based on permission/security group
+
+If you have requirements where you want to restrict user views or select users ability to contribute within an area, you may want to create a separate project where you restrict access. 
+
+What you can do on TFS differs from what is available  from Azure DevOps 
 -->

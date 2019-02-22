@@ -1,23 +1,23 @@
 ---
-title: Exploratory and Manual Testing -  TestTools
+title: Exploratory and manual testing index
 description: Test tools - Manual and exploratory testing index
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory &amp; Manual Testing
- 
+
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 Azure DevOps and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
-
-See also: [Load testing](load-test/index.md)
 
 ## 5-Minute Quickstarts
 
@@ -65,6 +65,5 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 * [Test & Feedback posts](https://social.msdn.microsoft.com/Search/?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4)
 * [Using Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx)
 * [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management)
-* [Load and performance testing](load-test/index.md)
 * [Continuous testing](../pipelines/index.md)
-* [Unit testing](/visualstudio/test/unit-test-your-code)
+* [Unit testing](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)

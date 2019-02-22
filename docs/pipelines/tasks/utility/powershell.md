@@ -1,23 +1,23 @@
 ---
-title: PowerShell
-titleSuffix: Azure Pipelines & TFS
-description: Learn about how you can execute powershell scripts when you are building your code in Azure Pipelines and Team Foundation Server TFS
+title: PowerShell task
+description: Execute PowerShell scripts in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/10/2016
+ms.date: 02/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: PowerShell
+# PowerShell task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/powershell.png) Run a PowerShell script
+Use this task in a build or release pipeline to run a PowerShell script.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -47,9 +47,9 @@ The Powershell task also has a shortcut syntax in YAML:
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file.</td></tr>
+<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code></td></tr>
 <tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code>.</td></tr>
-<tr><td>Arguments</td><td>Arguments passed to the Powershell script.</td></tr>
+<tr><td>Arguments</td><td>Arguments passed to the Powershell script. Ignored when Type is <code>inline</code>.</td></tr>
 <tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code>.</td></tr>
 <tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code>[$(Build.SourcesDirectory)](../../build/variables.md)</code>.</td></tr>
 <tr>
@@ -61,11 +61,11 @@ The Powershell task also has a shortcut syntax in YAML:
 <td>Set PowerShell's error action preference. One of: <code>stop</code>, <code>continue</code>, <code>silentlyContinue</code>. Defaults to <code>stop</code>.</td>
 </tr>
 <tr>
-<td>Ignore $LASTEXITCODE</td>
+<td>ignoreLASTEXITCODE</td>
 <td>By default, the last exit code returned from your script will be checked and, if non-zero, treated as a step failure. If you don't want this behavior, set this to <code>true</code>.</td>
 </tr>
 <tr>
-<td>Env[ironment variables]</td>
+<td>Environment variables</td>
 <td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 ```yaml
 - script: echo $env:MYSECRET
@@ -83,7 +83,7 @@ The Powershell task also has a shortcut syntax in YAML:
 
 Create ```test.ps1``` at the root of your repo:
 
-```powershell
+```ps
 Write-Host "Hello World from $Env:AGENT_NAME."
 Write-Host "My ID is $Env:AGENT_ID."
 Write-Host "AGENT_WORKFOLDER contents:"
@@ -113,24 +113,24 @@ On the Build tab of a build pipeline, add this task:
 
 * Script
 
- ```powershell
+ ```ps
 Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 ```
 
-![icon](_img/powershell.png) Write warning using `task.LogIssue`
+![icon](_img/powershell.png) Write warning using task.LogIssue
 
 * Script
 
- ```powershell
+ ```ps
 # Writes a warning to build summary and to log in yellow text
-Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
+Write-Host  "$("##vso[task.LogIssue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
 ```
 
 ![icon](_img/powershell.png) Write warning using PowerShell command
 
 * Script
 
- ```powershell
+ ```ps
 # Writes a warning to log preceded by "WARNING: "
 Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")"
 ```
@@ -147,37 +147,37 @@ Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")
 
 * Script
 
- ```powershell
+ ```ps
 Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 ```
 
-![icon](_img/powershell.png) Write error using `task.LogIssue`
+![icon](_img/powershell.png) Write error using task.LogIssue
 
 * Script
 
- ```powershell
+ ```ps
 # Writes an error to the build summary and to the log in red text
-Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
+Write-Host  "$("##vso[task.LogIssue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
 ```
 
 > [!TIP]
->
+> 
 > If you want this error to fail the build, then add this line:
- ```powershell
+ ```ps
 exit 1
-```
+``` 
 
 ![icon](_img/powershell.png) Write error using PowerShell command
 
 * Script
 
- ```powershell
+ ```ps
 # Writes an error to the build summary and the log with details about the error
 Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorMessage)"
 ```
 
 > [!TIP]
->
+> 
 > If you don't want this error to fail the build, then clear the **Advanced: Fail on Standard Error** check box.
 
 
@@ -187,7 +187,7 @@ Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorM
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -209,7 +209,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

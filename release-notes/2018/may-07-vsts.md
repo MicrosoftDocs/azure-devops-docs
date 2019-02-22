@@ -118,7 +118,7 @@ You can also target [Azure Service Fabric](https://azure.microsoft.com/services/
 
 ### Release hybrid applications to Azure Stack
 
-Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/azure/devops/pipelines/library/service-endpoints?view=vsts#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/azure/devops/pipelines/targets/azure-stack?view=vsts) documentation for more information.
+Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/azure/devops/pipelines/library/service-endpoints?view=azure-devops#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/azure/devops/pipelines/targets/azure-stack?view=azure-devops) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Connect to Azure](_img/134_08.png)
@@ -176,7 +176,7 @@ You’ll then be shown a list of the **Page links** and **Work items** affected 
 
 ## VSTS Demo Generator
 
-The [Demo Generator](https://vstsdemogenerator.azurewebsites.net/) helps you create projects on your VSTS account with pre-populated sample content, including source code, work items, iterations, service endpoints, plus build and release definitions based on a template you choose. These projects can be used to follow hands-on-labs, demos, and other educational materials.
+The [Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/) helps you create projects on your VSTS account with pre-populated sample content, including source code, work items, iterations, service endpoints, plus build and release definitions based on a template you choose. These projects can be used to follow hands-on-labs, demos, and other educational materials.
 
 The latest version offers a simple sign-in, automated installation of extensions, new templates, and support for TFS.
 

@@ -1,11 +1,12 @@
 ---
 title: Manage your release with RM for VS and TFS
+ms.custom: seodec18
 description: Manage your release with Microsoft Release Management server and client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 07/16/2018
@@ -58,7 +59,7 @@ Manage the steps in the process with approvals for each step.
 You have the following options for managing your releases:
 
 * **Using Release Management as a service on Azure Pipelines**: 
-  You need an Azure DevOps organization.
+  You need an organization in Azure DevOps.
   You cannot use Chef and you can deploy only to vNext environments based on Azure IaaS services
 * **Using an on-premises server**: You need to install Release Management Server; 
   do that **[here](install-release-management/install-server-and-client.md#installserver)**.

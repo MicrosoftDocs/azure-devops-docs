@@ -6,7 +6,7 @@ toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -37,7 +37,7 @@ If you don't already have a project [create a new project](#create_team_project)
 To use Git, you'll need to have the client tools installed on your computer.
 
 [//]: # (Fix the 2015 link)
-* Install [Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=309297) or [Visual Studio 2015](https://visualstudio.microsoft.com/en-us/downloads/visual-studio-2015-downloads-vs)
+* Install [Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=309297) or [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/visual-studio-2015-downloads-vs)
 * Or, if you're not using Visual Studio, [install the latest command line tools](http://git-scm.com/downloads) 
 
 [//]: # (The walkthrough below shows the steps for getting started with Git using Visual Studio.  If you're not using Visual Studio, check out one of these topics:)
@@ -49,7 +49,7 @@ To use Git, you'll need to have the client tools installed on your computer.
 ## Clone
 To get started, you'll first need to clone your repo to your local machine.  Once you have a local clone, you can start adding code to your repo.
 
-0. Go to your team's project page (`https://{youraccount}.visualstudio.com/DefaultCollection/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
+0. Go to your team's project page (`https://dev.azure/{yourorganization}/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
@@ -169,7 +169,7 @@ Now you can add reviewers to get their feedback on your changes before you merge
 
 <a name="create_team_project"></a>
 #### Q: How do I create a project on Azure DevOps Services?
-* [Sign up and create your project](../../organizations/accounts/create-organization-msa-or-work-student.md).  Be sure to select **Git** from the version control options:
+* [Sign up and create your project](../../organizations/accounts/create-organization.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitFirstRun.png)
 	
@@ -192,7 +192,7 @@ First you'll need to:
 
 For the Fabrikam project on Azure DevOps Services, the command to clone would look like this:
 
-`git clone https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam`
+`git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam`
 
 Once you have the repo cloned, create a new topic branch:
 

@@ -27,6 +27,8 @@
     href: ../../project/navigation/set-favorites.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
 - name: Concepts
   items:
+  - name: About teams and Agile tools
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
   - name: Visibility across teams
     href: visibility-across-teams.md
   - name: Agile culture
@@ -35,6 +37,8 @@
     href: practices-that-scale.md
 - name: How-to Guides
   items:
+  - name: Edit plan permissions 
+    href: edit-delivery-plan-permissions.md
   - name: Use work item templates
     href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
   - name: Manage team notifications
@@ -42,8 +46,6 @@
   - name: Manage teams and configure team tools
     href: ../../organizations/settings/configure-team-settings.md 
     items:
-    - name: Set team defaults
-      href: ../../organizations/settings/set-team-defaults.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
     - name: Select backlog levels
       href: ../../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
     - name: "Show bugs on backlogs & boards"

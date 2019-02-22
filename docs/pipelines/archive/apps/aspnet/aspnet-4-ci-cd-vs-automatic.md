@@ -1,21 +1,22 @@
 ---
 title: Deploy a CI/CD pipeline ASP.NET web app to Azure
+ms.custom: seodec18
 description: Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 498BF7D8-2932-46FB-BD38-E8EBD1C5CABA
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 02/10/2017
-monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) pipeline to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/).
 
@@ -68,7 +69,7 @@ To create both the build (CI) and release (CD) pipelines for a project, in Visua
 
 All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../../repos/git/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

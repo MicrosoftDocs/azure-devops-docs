@@ -35,11 +35,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "brand": "vsts",
-      "searchScope": ["VSTS", "Team Services"],
+      "brand": "azure-devops",
+      "searchScope": ["Azure DevOps" "VSTS", "Team Services"],
       "author": "erickson-doug",
-      "ms.author": "douge",
-      "ms.topic": "douge",
+      "ms.author": "jillfra",
+      "ms.topic": "conceptual",
       "ms.prod": "devops",
       "ms.technology": "conceptual"
     },
