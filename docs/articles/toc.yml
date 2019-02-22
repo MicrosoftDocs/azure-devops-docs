@@ -42,9 +42,11 @@
       href: phase-rollout-with-rings.md
 - name: Security
   items:
-  - name: Azure DevOps Services data protection
+  - name: Azure DevOps data protection
     href: team-services-security-whitepaper.md
-  - name: Azure DevOps Services credential storage
+  - name: Azure DevOps data location
+    href: data-location.md
+  - name: Azure DevOps credential storage
     href: credential-storage.md
 - name: Journey articles
   items:
