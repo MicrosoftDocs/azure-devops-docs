@@ -143,7 +143,7 @@ Workflow states are defined for each work item type to support tracking the stat
 You can customize your workflow states, adding states or renaming states. Learn more: [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md). 
 ::: moniker-end  
 
-::: moniker range="<= tfs-2018 || azure-devops-2019"  
+::: moniker range="<= azure-devops-2019"  
 You can customize your workflow states, adding states, renaming states, and changing state transitions and reasons. Learn more: [Customize the workflow](../../reference/xml/change-workflow-wit.md). 
 ::: moniker-end  
 

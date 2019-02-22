@@ -27,7 +27,6 @@ You can control which services are available through the web portal by turning a
 
 - You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
-- To turn services on or off, you must [enable **New Navigation** preview feature](../../project/navigation/preview-features.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"

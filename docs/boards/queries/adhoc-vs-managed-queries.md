@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ---
 
 # Ad hoc vs managed work item queries
@@ -19,10 +19,6 @@ ms.date: 02/04/2019
 
 You have two ways to perform work item searches: semantic or ad hoc searches and managed queries. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
-
-# [New navigation](#tab/new-nav)
-
 ::: moniker range=">= azure-devops-2019"
 
 You perform semantic or ad hoc searches using the work item search box (shown below)   
@@ -30,7 +26,7 @@ You perform semantic or ad hoc searches using the work item search box (shown be
 Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Work Item Search box, new navigation](../../project/navigation/_img/search/work-item-search-vert.png)    
+> ![Work Item Search box](../../project/navigation/_img/search/work-item-search-vert.png)    
 
 You add and run managed queries using the built-in query-editor available from the **Boards>Queries** page.
 
@@ -39,14 +35,8 @@ You add and run managed queries using the built-in query-editor available from t
 	
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"   
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end   
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="<= tfs-2018 || azure-devops"     
+::: moniker range="<= tfs-2018"     
 
 You perform semantic or ad hoc searches using the work item search box (shown below). 
 
@@ -66,12 +56,6 @@ You add and run managed queries using the built-in query-editor available from t
 ::: moniker range="tfs-2013"	 
 ![Editor View of a Flat List Query - On-premises TFS](_img/5.png)  
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc work item search](search-box-queries.md). For details about managed queries, see [Create managed queries with the query editor](using-queries.md). 
 
@@ -94,9 +78,7 @@ For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc
 > [!NOTE]    
 > With semantic search, you search against a more fully indexed set of fields. With ad hoc search, the number of fields that are indexed are limited. 
 
-
-## Resources 
-
+## Related articles  
 - [Use the query editor to create managed queries](using-queries.md)
 - [Perform a semantic or ad hoc work item search](search-box-queries.md) - [Perform work item search](../../project/search/work-item-search.md) 
 - [Create managed queries with the query editor](using-queries.md)   
