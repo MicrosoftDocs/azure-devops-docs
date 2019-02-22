@@ -410,6 +410,8 @@
         href: tasks/utility/download-secure-file.md
       - name: Extract Files
         href: tasks/utility/extract-files.md
+      - name: File Transform
+        href: tasks/utility/file-transform.md
       - name: FTP Upload
         href: tasks/utility/ftp-upload.md
       - name: GitHub Release
