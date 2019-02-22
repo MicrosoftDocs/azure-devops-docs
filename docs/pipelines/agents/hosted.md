@@ -19,7 +19,6 @@ monikerRange: 'azure-devops'
 
 > [!NOTE]
 > The preview image for Visual Studio 2019 is available! This image is based on Windows Server 2019 and includes the VS Preview. The preview installation will be replaced with the final release when it becomes available.
-> [Learn more below](#hosted-linux-preview-pool-deprecation).
 
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
