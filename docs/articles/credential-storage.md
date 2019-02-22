@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # How we store your credentials for Azure DevOps Services
 
-**Azure DevOps Services**
+**Azure DevOps**
 
 ## Credential security
 
