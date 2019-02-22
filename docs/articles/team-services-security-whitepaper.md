@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: jillfra
-ms.date: 01/15/2019
+ms.date: 02/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -184,7 +184,7 @@ To learn more about the GDPR regulation, please visit the following page in [Mic
 
 We know our customers care deeply about data security and privacy. Azure DevOps is available in the following 7 geographies across the world: United States, Canada, Europe, India, Australia, Asia Pacific, and Brazil. While we default your organization to your closest region, you have the option to choose a different region. If you change your mind later, our CSS team can help you migrate your organization to a different region. Azure DevOps will not move or replicate customer data outside of the chosen geography. Our backup procedures geo-replicate customer data between a second region within the same geography except for organizations located in Brazil, these are replicated to South Central US for disaster recovery purposes.
 
-To learn more about data location, please visit the Azure DevOps page in [Microsoft’s Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/vsts/data-location).
+To learn more about data location, see [Azure DevOps data location](data-location.md).
 
 ### Law enforcement access
 
@@ -289,6 +289,7 @@ your review and education. These include:
 - [Azure DevOps home page](https://azure.microsoft.com/en-us/services/devops/)
 - [Azure DevOps status](https://blogs.msdn.com/b/vsoservice/)
 - [Azure DevOps credential storage](credential-storage.md)
+- [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps support](https://azure.microsoft.com/en-us/support/devops/)
 - [Developer Services Agreement](/azure/devops/user-guide/services)
