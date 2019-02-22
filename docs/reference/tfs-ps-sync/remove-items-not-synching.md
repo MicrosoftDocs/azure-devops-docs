@@ -5,7 +5,7 @@ description: Remove work items that aren't synchronizing between Team Foundation
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 18f3e8d1-12ae-4cc6-a95b-357450a9ba81
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2015'

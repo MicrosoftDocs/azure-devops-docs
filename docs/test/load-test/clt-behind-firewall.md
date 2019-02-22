@@ -5,11 +5,11 @@ ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
 # Test private and intranet apps using cloud-based load testing
@@ -41,7 +41,7 @@ This topic discusses only scenarios **3** and **4**.
    the CLT service boundaries, so you don't have full control. If you want to access and control the
    load generation agents, you can deploy them in your own Azure subscription using an ARM template.
    These machines will be registered with the CLT service and can generate load. For more details, see
-   [Structure and syntax of ARM templates](/azure/azure-resource-manager/resource-group-authoring-templates).
+   [Structure and syntax of ARM templates](https://azure.microsoft.com/documentation/articles/resource-group-authoring-templates/).
 1. **[Use an ARM template to deploy load agents in a VNet](#arm-vnet)**. If the app under test
    is within an Azure VNet, or if there is ExpressRoute connectivity between the app's private network
    and Azure, you can use a pre-defined ARM template deploy IaaS VMs in Azure in a specific VNet to act
@@ -125,7 +125,7 @@ should locate these agents in separate resource groups. This allows isolated run
 
 In the ARM templates, the machine size to **Standard_D4_V2**. This size provides 8 CPU cores and 28 GB of memory. You can change
 this by editing the template. See
-[Sizes for Windows virtual machines in Azure](/azure/virtual-machines/windows/sizes).
+[Sizes for Windows virtual machines in Azure](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-sizes/).
 
 ## Queue a run using load agents
 
@@ -231,7 +231,7 @@ VMs as required. You can also do this using a PowerShell script. See
 [Stop All VMs in Specified Azure Resource Group](https://gallery.technet.microsoft.com/scriptcenter/Stop-All-VMs-in-Specified-40c8531e).
 You should delete the Azure resource group after you are done with load testing, and re-create
 it later if required. See
-[Manage Azure resources through portal](/azure/azure-resource-manager/resource-group-portal)
+[Manage Azure resources through portal](https://azure.microsoft.com/documentation/articles/resource-group-portal/)
 
 ### Q: I have proxy settings on my machines, will this work?
 

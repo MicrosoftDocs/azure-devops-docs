@@ -1,12 +1,12 @@
 ---
 title: Build pipeline options
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/04/2016
@@ -44,7 +44,7 @@ If you specify a description here, it is shown near the name of the build pipeli
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 In YAML, this property is called `name`.
 If not specified, your completed build is given a unique integer as its name.
@@ -59,7 +59,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -140,7 +140,7 @@ Select if you want to show the latest outcome of this build on external web site
 
 0. Save the pipeline.
 
-0. When the **Show url** link appears, click it and copy the URL to your clipboard.
+0. When the **Show URL** link appears, click it and copy the URL to your clipboard.
 
 0. Use the URL as the source of an image in the HTML of the page of the external web site. For example: ```<img src="{URL you copied from the link}"/>```
 
@@ -287,13 +287,13 @@ To learn about multi-configuration, see the example [Build your C++ app for Wind
 
 ### In what time zone are the build number time values expressed?
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 If you are using Azure Pipelines, then the time zone is UTC.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 If you are using an on-premises Team Foundation Server, then the time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 
@@ -301,7 +301,7 @@ If you are using an on-premises Team Foundation Server, then the time zone is th
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

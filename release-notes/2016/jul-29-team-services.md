@@ -54,7 +54,7 @@ Now, setting up an Azure Service endpoint is easy: you just need to select the s
 -Note: A new Azure Service Principal will be created and assigned the Contributor role, having access to all the resources in the selected subscription. You can modify the Service Principal access from [Azure portal](http://portal.azure.com/) > Subscriptions > Users > Roles.
 
 -Prerequisites:
--The VSTS account should be backed by an Azure Active Directory. For more info, see the Visual Studio article [Team Services: Access with Azure Active Directory (Azure AD)](/vsts/setup-admin/team-services/manage-organization-access-for-your-account-vs).
+-The VSTS account should be backed by an Azure Active Directory. For more info, see the Visual Studio article [Team Services: Access with Azure Active Directory (Azure AD)](https://visualstudio.microsoft.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs).
 -Note: Only Azure subscriptions that are linked with the Active Directory are listed.
 
 You can now deploy to **Azure National Cloud environments**. While setting up an Azure Classic service connection:

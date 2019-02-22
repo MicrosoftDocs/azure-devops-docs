@@ -5,7 +5,7 @@ description: Quick Start with Azure Repos and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -45,12 +45,12 @@ If you don't have a Git repository yet, you can create one [using your own code]
 0. On the **Connect to a Project** dialog, select the repo you want to clone from the list and select **Clone**. If you don't see your repo listed, you can filter the list 
 to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add TFS Server** link.
    
-   ![Cloning a Git Repository from a connected Azure DevOps organization](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
+   ![Cloning a Git Repository from a connected organization in Azure DevOps](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)   
 
   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
 
 
-0. Verify the location of the cloned repo on your PC and select **Clone**.
+1. Verify the location of the cloned repo on your PC and select **Clone**.
 
 
 # [Command Line](#tab/command-line)
@@ -66,7 +66,7 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
 0. From the command line, run `git clone` followed by the clone URL, as shown in the following example.
 
     ```cmd
-    git clone https://fabrikam-fiber.visualstudio.com/DefaultCollection/_git/FabrikamFiber
+    git clone https://dev.azure.com/fabrikam-fiber/_git/FabrikamFiber
     ```
 
 Git downloads and creates your own copy of the code in a new folder for you to work with. 
@@ -190,7 +190,7 @@ branch of the code.
     git push -u origin ReadMeFix
     ```
 
-0. Open up the Azure DevOps project in the web portal and browse to your repository under the **Code** tab. Select the **Create a pull request** link to create a pull request for the branch that you pushed.   
+1. Open up the project in the web portal and browse to your repository under the **Code** tab. Select the **Create a pull request** link to create a pull request for the branch that you pushed.   
 
   ![Creating a new Pull Request in Azure DevOps Services](_img/gitquickstart-vs2017/create-pull-request-web-portal.png)   
 

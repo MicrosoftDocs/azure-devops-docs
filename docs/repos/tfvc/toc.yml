@@ -26,8 +26,14 @@
     href: ../../repos/git/team-projects.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
   - name: Map TFVC actions to Git
     href: ../../repos/git/mapping-my-tfvc-actions-to-git.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
+  - name: Manage feature isolation in TFVC
+    href: effective-feature-isolation-on-tfvc.md
+  - name: Test Impact for partially mapped TFVC repositories
+    href: test-impact-for-partially-mapped-tfvc-repositories.md
   - name: Develop in branches
     items:
+    - name: Manage branching strategies in TFVC for DevOps
+      href: effective-tfvc-branching-strategies-for-devops.md
     - name: Use branches to isolate risk
       href: use-branches-isolate-risk-team-foundation-version-control.md
     - name: Branch folders and files

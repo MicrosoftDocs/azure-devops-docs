@@ -1,22 +1,24 @@
 ---
-title: Free trials for paid Azure DevOps  features and extensions | Azure DevOps
-description: How to get free trials for Test Manager, Azure Artifacts, and for Azure DevOps extensions offered by other publishers (Azure DevOps)
+title: Start free trials for paid features and extensions
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Get free trials for Test Manager, Azure Artifacts, and for Azure DevOps extensions offered by other publishers
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
-monikerRange: 'vsts'
+ms.date: 12/14/2018
+monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Start free trials for paid features and extensions
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to start a trial for your Azure DevOps organization and how to keep using your extension after the trial ends.
+In this quickstart, you learn how to start a free trial for your organization, as well as how to keep using your extension after the trial ends.
 
 There are two paid features in Azure DevOps that are offered by Microsoft that you can use free for a 30-day trial:
 
@@ -24,9 +26,9 @@ There are two paid features in Azure DevOps that are offered by Microsoft that y
 
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is included on an ongoing basis for Visual Studio Enterprise subscribers, plus another five users in your organization).
 
-During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
+During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you can choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
 
-This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including:
+This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including the following:
 
 - [Timetracker](https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker)
 - [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards)
@@ -34,16 +36,16 @@ This same process applies to paid extensions that are offered by other publisher
 - [Code Quality NDepend](https://marketplace.visualstudio.com/items?itemName=ndepend.ndependextension)
 - [Backlog Essentials](https://marketplace.visualstudio.com/items?itemName=agile-extensions.backlog-essentials)
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 ## Prerequisites
 
 As the [organization owner or project collection administrator](billing-faq.md#find-owner), you can start trials for your organization.
-All other users can [request extensions](../../marketplace/install-vsts-extension.md).
+All other users can [request extensions](../../marketplace/install-extension.md).
 
 ## Start a trial for your organization
 
-1. Sign in to [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+1. Sign in to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), go to the **Azure DevOps** tab.
 
     ![Find extension trial](../billing/_img/_shared/extensions-marketplace.png)
 
@@ -65,33 +67,19 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
 ## Keep your extension after the trial ends
 
-Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users will lose access when the trial expires.
+Make sure to buy and assign the extension *before* the trial ends so that your users can continue using it without disruption. Otherwise, your users lose access when the trial expires.
 There's no penalty for buying early. Charges don't start until the trial ends.
 
-If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial:
+If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
-
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-3. Select **Extensions** and then select your extension or **Browse Marketplace**.
+3. Select **Extensions**, and then select your extension or **Browse Marketplace**.
 
    ![Settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
-
-# [Previous navigation](#tab/previous-nav)
-
-1. [Buy the extension](../../marketplace/install-vsts-extension.md#install-extension) for your users.
-
-    ![Users, extension pane](_img/try-additional-features/extension-trial-in-organization-updated-ui.png)
-
-2. [Assign the extension](../../marketplace/assign-paid-extensions.md) to the users who need it.
-
----
 
 ## Clean up resources
 
@@ -105,4 +93,4 @@ To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md),
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)

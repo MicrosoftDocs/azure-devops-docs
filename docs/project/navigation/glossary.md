@@ -1,16 +1,17 @@
 ---
-title: Project and navigational elements, key concepts, objects, and terms
+title: Key concepts, objects, and terms
 titleSuffix: Azure DevOps Services & TFS
-description: Understand the key concepts that support navigation and managing projects available with Azure DevOps Services and Team Foundation Server  
+description: Understand the key concepts that support navigation and managing projects available with Azure DevOps & Team Foundation Server  
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 07/21/2018
+ms.date: 02/08/2019
 ---
 
 
@@ -28,7 +29,7 @@ An interactive list of work items that corresponds to a team's project plan or r
 
 Each product backlog can be customized by a team. Learn more: [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
-::: moniker range="vsts" 
+::: moniker range=">= azure-devops-2019"
 ## Analytics views
 Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics service. The Analytics service is the reporting platform for Azure DevOps Services. 
 ::: moniker-end
@@ -38,6 +39,7 @@ Analytics views provide a simplified way to specify the filter criteria for a Po
 ## Boards (Kanban) 
 An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../../boards/boards/kanban-basics.md).
 
+[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
 
@@ -59,7 +61,7 @@ A Git repository supports a distributed version control system for tracking chan
 
 ## Pipelines 
 
-Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs-vsts.md). 
+Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs.md). 
 
 ![Pipeline concept end-to-end](/azure/devops/pipelines/_img/pipeline-concept-end-to-end.png)
 
@@ -88,9 +90,7 @@ An interactive list of work items that have been assigned to the same sprint or 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
-
 [!INCLUDE [temp](../../_shared/glossary-terms/tfvc-repo.md)] 
-
 
 [!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 
 

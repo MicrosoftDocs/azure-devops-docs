@@ -1,11 +1,11 @@
 ---
-title: Create an Active bugs Power BI report with a custom Analytics view
+title: Create an Active bugs Power BI report 
 titleSuffix: Azure DevOps Services
 description: Sample report that shows how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -14,7 +14,7 @@ ms.date: 04/04/2018
 
 # Create an active bugs report in Power BI based on a custom Analytics view
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 In this article, we'll show you how to create a custom Analytics view for active bugs and then generate a Power BI report based on that view. You'll learn how to filter the Analytics view, create a trend chart, as well as a card showing the current count of active bugs. 
 
@@ -33,8 +33,6 @@ Follow these steps to create a report in Power BI desktop that shows a **daily a
 	d. Create a card and apply the Is Current=True filter to show current count.  
 
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]  
-
 <a id="prerequisites">  </a>
 ## Prerequisites  
 
@@ -42,7 +40,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 * You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-* Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+* Have installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time on which to generate a trend report. 

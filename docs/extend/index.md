@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -47,7 +47,7 @@ Develop Azure DevOps Services extension with continuous delivery pipeline:
 
 ## Reference
 * [Manifest reference](develop/manifest.md)
-* [Build task reference](develop/build-task-schema.md)
+* [Build task reference](develop/integrate-build-task.md)
 * [Endpoint authentication schemes](develop/auth-schemes.md)
 * [Content hosting](develop/static-content.md)
 * [Modal dialog](develop/using-host-dialog.md)

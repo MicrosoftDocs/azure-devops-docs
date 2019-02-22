@@ -1,20 +1,20 @@
 ---
-title: Search for work items in Azure DevOps
+title: Search for work items across your projects
 description: How To Use Work Item Search to search across all work item fields over all projects of your Azure DevOps and TFS projects
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Search for work items
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
@@ -24,7 +24,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
 ## Start searching
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
 1. Open the **Azure Boards** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
@@ -35,7 +35,9 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
 
 1. In the search textbox at the top right of the window, check that the text says
    _Search work items_.
@@ -48,7 +50,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search. 
 
----
+::: moniker-end
 
 ## View the results
 

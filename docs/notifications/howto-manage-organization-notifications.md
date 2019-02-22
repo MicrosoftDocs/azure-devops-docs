@@ -1,30 +1,33 @@
 ---
 title: Manage notifications for an organization
 titleSuffix: Azure DevOps Services & TFS 
-description: Manage notifications for an organization in Azure DevOps Servicesor Team Foundation Server (TFS)
+description: Manage notifications for an organization in Azure DevOps Services or Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: douge
+ms.manager: jillfra
 ms.reviewer: wismythe
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/10/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Manage notifications for an organization
 
-<b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+[!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
 
 > [!NOTE] 
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+
+Learn about managing notifications for your organization.
 
 ## Organization level notifications page
-See [Navigating the UX](navigating-the-ux.md) to learn how to locate this page.
+
+See [Navigating the UI](navigating-the-ui.md) to learn how to locate this page.
 
 The organization notifications page consists of the following sections:
+
 * Default subscriptions - view all [default notification subscriptions](./oob-built-in-notifications.md)
 * Subscribers - view notification subscriptions for a specific group, team, or individual
 * Statistics - view the most active subscriptions and top event initiators
@@ -34,7 +37,7 @@ The organization notifications page consists of the following sections:
 
 The `Default subscriptions` section lists all default subscriptions available to the organization. The globe icon on a notification subscription indicates the subscription is a default subscription.
 
-Members of the **project collection administrators** group have permission to enable/disable any default subscription in this view. Any member project collection valid users have permission to view the details of the default subscription. The view and enablement options are available in the context menu (`...`) associated with each individual subscription.
+Members of the **project collection administrators** group have permission to enable/disable any default subscription in this view. Any member project collection valid users have permission to view the details of the default subscription. The view and enable options are available in the context menu (`...`) associated with each individual subscription.
 
 ![Organization level notifications page: Default subscriptions](_img/view-organization-notification-default-subscriptions.png)
 

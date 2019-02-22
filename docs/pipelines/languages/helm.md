@@ -1,20 +1,23 @@
 ---
-title: Create a Helm chart for a Docker enabled app 
-description: Package and deploy a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
-ms.assetid:
+title: Package a Docker-enabled app in a Helm chart
+description: Package and deploy a Docker-enabled app to an Azure Kubernetes Service (AKS) in Azure Pipelines, Azure DevOps, & Team Foundation Server
+ms.assetid: 154DFD11-88BC-4DF8-9D24-A546CCAAADD2
 ms.prod: devops
-ms.technology: 
+ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
+ms.custom: seodec18
 ms.date: 08/28/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
-# Helm
+# Package Docker-based apps in Helm charts in Azure Pipelines
 
-This guidance explains how to use [Helm](https://www.helm.sh/) to package a Docker based application in to a Helm chart.
+**Azure Pipelines**
+
+This guidance explains how to use [Helm](https://www.helm.sh/) to package a Docker-based application in a Helm chart.
 
 Helm is a tool that streamlines deploying and managing Kubernetes applications using a packaging format called [charts](https://github.com/helm/helm/blob/master/docs/charts.md).
 You can define, version, share, install, and upgrade even the most complex Kubernetes application using Helm. 
@@ -28,15 +31,15 @@ Helm can package these files into a chart archive (*.tgz file), which gets deplo
 The steps required to build a container image and pushing it to a container registry remains the same. Once that has been the done, we start creating a Helm Chart archive package. 
 
 Azure Pipelines has built-in support for Helm charts:
-1.	[Helm Tool installer task](../tasks/deploy/helm-deploy.md) can be used to get the right version of Helm on the agents.
-2.	[Helm package and deploy task](../tasks/tool/helm-installer.md) can be used to package the application and deploy it to a Kubernetes cluster.
+1.	[Helm Tool installer task](../tasks/tool/helm-installer.md) can be used to get the right version of Helm on the agents.
+2.	[Helm package and deploy task](../tasks/deploy/helm-deploy.md) can be used to package the application and deploy it to a Kubernetes cluster.
 3.	You can use the task to install/update Tiller to a Kubernetes namespace, securely connect to the Tiller over TLS for deploying charts, use the task to run any Helm command like lint
 4.	The Helm task also supports connecting to an Azure Kubernetes Service by using Azure Service Connection. You can connect to any Kubernetes cluster by using kubeconfig or Service Account as well.
 5.	The Helm deployments can be supplemented by using Kubectl task. For example create/update imagepullsecret
 
 ## Define your CI build process using Helm
 
-We'll show you how to set up a continuous intergration workflow for your containerized application using Azure Pipelines and Helm.
+We'll show you how to set up a continuous integration workflow for your containerized application using Azure Pipelines and Helm.
 
 
 ## Prerequisites
@@ -59,7 +62,7 @@ Configure the properties as follows:
    - **Connection Type**: Select ‘Azure Resource Manager’ to connect to an AKS cluster by using Azure Service Connection.  Select ‘Container registry’ to connect to any Kubernetes cluster by using kubeconfig or Service Account.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
-     If you are using Azure DevOps and if you see an **Authorize** button next to the input, click on it to authorize Azure DevOps to connect to your Azure subscription. If you are using Azure DevOps Server or if you do not see
+     If you are using Azure DevOps and if you see an **Authorize** button next to the input, click on it to authorize Azure DevOps to connect to your Azure subscription. If you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../library/connect-to-azure.md) to manually set up the connection.
 
    - **Resource Group**: Enter or select the resource group of your **AKS cluster**.  

@@ -1,12 +1,12 @@
 ---
 title: CMMI process guidance, Track bugs  
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Use the bug work item to describe and track progress for each bug that you find.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 87247b22-4919-4507-af64-372f4cc9bd2f
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
@@ -20,7 +20,7 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
   
  ![Bug for CMMI project &#40;work item form&#41;](_img/procguid_cmmiwitform.png "ProcGuid_CMMIwitForm")  
   
- For more information about how to create bug work items, see [Run manual tests](../../../../test/run-manual-tests.md). As bugs are found, follow the process in this topic to prioritize them, to make sure that they get fixed, and to make sure that you have a record of the work and the decisions that were involved.  
+ For more information about how to create bug work items, see [Run manual tests](../../../../test/run-manual-tests.md). As bugs are found, follow the process in this article to prioritize them, to make sure that they get fixed, and to make sure that you have a record of the work and the decisions that were involved.  
   
 ##  <a name="Triage"></a> Triage bugs  
  Triage meetings should be held at set intervals after the development work and testing have started on the project. How often you hold the meetings and how long they should be depends on your situation.  

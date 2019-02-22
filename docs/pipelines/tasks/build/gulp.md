@@ -1,12 +1,12 @@
 ---
-title: gulp build and release task
-titleSuffix: Azure Pipelines & TFS
-description: gulp build and release task for Azure Pipelines and Team Foundation Server (TFS)
+title: Gulp build and release task
+ms.custom: seodec18
+description: Gulp build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: EC168F1F-4B27-4688-87CE-E4D12E885CC5
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: gulp
+# Gulp task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/gulp.png) Node.js streaming task based build system
+Use this task in a build or release pipeline to run gulp tasks using the Node.js streaming task based build system.
 
 ## Demands
 
@@ -26,7 +26,7 @@ gulp
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/GulpV0.md)]
+[!INCLUDE [temp](../_shared/yaml/GulpV1.md)]
 ::: moniker-end
 
 ## Arguments
@@ -102,14 +102,14 @@ On the [Build](../../index.md) tab:
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

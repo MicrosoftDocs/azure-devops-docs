@@ -1,24 +1,25 @@
 ---
-title: NuGet restore, pack, and publish
+title: NuGet restore, pack, and publish task
+ms.custom: seodec18
 description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 07/05/2017
 monikerRange: '>= tfs-2018'
 ---
 
-# Package: NuGet
+# NuGet task
 
 **Version 2.\* | [Other versions](#versions)**
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
-![NuGet icon](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages.
+Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -27,7 +28,7 @@ monikerRange: '>= tfs-2018'
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
-> Looking for help to get started? See the how-to's for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
+> Looking for help to get started? See the how-tos for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
 
 > [!TIP]
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
@@ -45,9 +46,9 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
 
-For **byEnvVar**, the version will be set as whatever environment variable, e.g. $(MyVersion), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
 
-For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`.
+For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`. If you select **byBuildNumber**, the task will extract a dotted version, `1.2.3.4` and use only that, dropping any label. To use the build number as is, you should use **byEnvVar** as described above, and set the environment variable to `BUILD_BUILDNUMBER`.
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ None
         <td>
             **Feed(s) I select here:**
             <ul>
-                <li>Select this option to use NuGet.org and/or one Package Management feed in the same organization/collection as the build.</li>
+                <li>Select this option to use NuGet.org and/or one Azure Artifacts/Package Management feed in the same organization/collection as the build.</li>
             </ul>
             **Feeds in my NuGet.config:**
             <ul>
@@ -185,7 +186,7 @@ None
                 <li>The packager does not compile the .csproj files for packaging.</li>
                 <li>Each project is packaged only if it has a .nuspec file checked in.</li>
                 <li>The packager does not replace tokens in the .nuspec file (except the <code>&lt;version/&gt;</code> element,
-                    see <strong>Use build number to version package</strong>, below). You must supply values for elements
+                    see [versioning schemes](#versioning-schemes) for version options). You must supply values for elements
                     such as <code>&lt;id/&gt;</code> and <code>&lt;description/&gt;</code>. The most common way to do this
                     is to hardcode the values in the .nuspec file.
                 </li>
@@ -267,11 +268,11 @@ None
         <td>Target feed location</td>
         <td>
             <ul>
-                <li>**This organization/collection** publishes to a Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
+                <li>**This organization/collection** publishes to an Azure Artifacts/Package Management feed in the same organization/collection as the build. After you select this option, select the target feed from the dropdown.
                     <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.
                     </li></ul>
                 </li>
-                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
+                <li>**External NuGet server (including other organizations/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or an Azure Artifacts/Package Management feed in another Azure DevOps organization or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
                 </li>
             </ul>
         </td>
@@ -289,7 +290,7 @@ None
 </table>
 
 ### Publishing symbols
-When you push packages to a Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md).
+When you push packages to an Azure Artifacts/Package Management feed, you can also publish symbols using the [Index Sources & Publish Symbols task](../build/index-sources-publish-symbols.md).
 
 ### Publishing packages to TFS with IIS Basic authentication enabled
 This task is unable to publish NuGet packages to a TFS Package Management feed that is running on a TFS server with IIS Basic authentication enabled. [See here](/azure/devops/integrate/get-started/auth/tfs-basic-auth) for more details.
@@ -471,7 +472,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 
 ## Open source
 
-These tasks are open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -483,7 +484,7 @@ These tasks are open source [on GitHub](https://github.com/Microsoft/vsts-tasks)
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

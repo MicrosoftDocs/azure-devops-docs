@@ -1,22 +1,22 @@
 ---
 title: Build your GitHub repository using the visual designer in Azure Pipelines
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
-ms.topic: conceptual
 ms.prod: devops
-ms.service: vsts
-ms.custom: mvc
 ms.technology: devops-cicd
-ms.prod: devops
+ms.topic: conceptual
 ms.assetid: B61506B0-766C-49D1-B991-85BBFCBCD3E6
-ms.manager: douge
 ms.author: mlearned
 author: mlearned
 ms.reviewer: dastahel
+ms.manager: jillfra
+ms.custom: "mvc, seodec18"
 ms.date: 06/29/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Build a repo using the visual designer
+
+**Azure Pipelines**
 
 ::: moniker range="> tfs-2018"
 > [!TIP]
@@ -41,27 +41,27 @@ You should now have a sample app in your GitHub account.
 
 Follow the steps below to configure GitHub as a source for your Azure Pipelines build.
 
-1. Login to your Azure DevOps organization and navigate to your project.
+1. Login to your organization in Azure DevOps and navigate to your project.
 
-1. In your project, navigate to the **Pipelines** page, and then choose **New pipeline**.
+2. In your project, navigate to the **Pipelines** page, and then choose **New pipeline**.
 
-1. Select **GitHub** for the type of repository.
+3. Select **GitHub** for the type of repository.
 
-1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
+4. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
 
-1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your Azure DevOps organization. If you already are signed into GitHub in another browser tab, you may not see this step.
+5. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your organization. If you already are signed into GitHub in another browser tab, you may not see this step.
 
-1. Choose the repository that contains the sample you forked earlier and select **Continue**.
+6. Choose the repository that contains the sample you forked earlier and select **Continue**.
 
-1. Select the **ASP.NET Core** build template or a template that is appropriate for your application.
+7. Select the **ASP.NET Core** build template or a template that is appropriate for your application.
 
-1. Choose **Hosted Ubuntu 1604** for Agent pool.
+8. Choose **Hosted Ubuntu 1604** for Agent pool.
 
-1. Select **Triggers**. Enable **Continuous integration** for your builds. Ensure you include the `master` branch under **Branch filters**. This setting ensures each commit to `master` in GitHub will trigger a build via a GitHub webhook.
+9. Select **Triggers**. Enable **Continuous integration** for your builds. Ensure you include the `master` branch under **Branch filters**. This setting ensures each commit to `master` in GitHub will trigger a build via a GitHub webhook.
 
-1. Select **Save & queue** to save your build pipeline and create the first build.
+10. Select **Save & queue** to save your build pipeline and create the first build.
 
-1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
+11. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
 
 ## Get the status badge
 

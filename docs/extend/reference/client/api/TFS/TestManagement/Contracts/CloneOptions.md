@@ -4,7 +4,7 @@ ms.assetid: a5e290f2-37f2-791c-b735-3fd9934e845b
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
+ms.manager: jillfra
 author: elbatk
 ms.topic: article
 ms.author: elbatk
@@ -22,7 +22,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `copyAllSuites`: boolean. copy all suites from a source plan
 
-* `copyAncestorHierarchy`: boolean. copy ancestor hieracrchy
+* `copyAncestorHierarchy`: boolean. copy ancestor hierarchy
 
 * `destinationWorkItemType`: string. Name of the workitem type of the clone
 

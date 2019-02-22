@@ -1,18 +1,21 @@
 ---
-title: Code coverage Azure Pipelines and TFS 
+title: Review code coverage
 description: Review code coverage results in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 86D94FB7-D730-4ECE-8300-5E76934090A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: jillfra
 ms.author: vinojos
-author: vinojos
-ms.date: 08/31/2018
+author: vinodjo
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Review code coverage results
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 <a name="prerequisites"></a>  
 
@@ -71,7 +74,7 @@ The code coverage artifacts published during the build can be viewed under the
 ## Tasks
 
 * [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) publishes code coverage results to Azure Pipelines or TFS,
-  which were produced by a build in [Cobertura] (http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. 
+  which were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. 
 * Built-in tasks such as [Visual Studio Test](../tasks/test/vstest.md),
   [.NET Core](../tasks/build/dotnet-core.md), [Ant](../tasks/build/ant.md), [Maven](../tasks/build/maven.md),
   [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and [Gradle](../tasks/build/gradle.md)

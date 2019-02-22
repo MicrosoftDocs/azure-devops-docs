@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -25,7 +25,7 @@ In order to create extensions for Azure DevOps Services, there are some prerequi
 **Knowledge:**
 Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
-- A **Azure DevOps Services organization** for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-vs.aspx)
+- An **organization** in Azure DevOps Services for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
@@ -79,21 +79,21 @@ npm install vss-web-extension-sdk
 This is the glue that holds your layout together and includes references to CSS and JavaScript. 
 You can name this file anything, just be sure to update all references to `hello-world` with the name you use.
 
-Your widget is HTML based and will be hosted in an [iframe](https://msdn.microsoft.com/en-us/library/windows/apps/hh465955.aspx). 
+Your widget is HTML based and will be hosted in an [iframe](https://msdn.microsoft.com/library/windows/apps/hh465955.aspx). 
 Add the below HTML in `hello-world.html`. We add the mandatory reference to `VSS.SDK.min.js` file and include an `h2` element in the `body` which will be updated with the string Hello World in the upcoming step.
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>			
-	<script src="sdk/scripts/VSS.SDK.min.js"></script>        		
-</head>
-<body>
-	<div class="widget">
-		<h2 class="title"></h2>
-	</div>
-</body>
-</html>
+	<!DOCTYPE html>
+	<html>
+		<head>			
+			<script src="sdk/scripts/VSS.SDK.min.js"></script>        		
+		</head>
+		<body>
+			<div class="widget">
+				<h2 class="title"></h2>
+			</div>
+		</body>
+	</html>
 ```
 
 > Even though we are using an HTML file, most of the HTML head elements other than script and link will be ignored by the framework.
@@ -105,27 +105,27 @@ Apart from the logic to render the content, this JavaScript code will initialize
 In our case, below is the code that would print "Hello World" in the widget. Add this `script` element in the `head` of the HTML.
 
 ```html    
-<script type="text/javascript">
-	VSS.init({
+    <script type="text/javascript">
+        VSS.init({                        
 			explicitNotifyLoaded: true,
 			usePlatformStyles: true
-	});
-
-	VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
-	WidgetHelpers.IncludeWidgetStyles();
-	VSS.register("HelloWorldWidget", function () {
-	return {
-		load: function (widgetSettings) {
-		var $title = $('h2.title');
-		$title.text('Hello World');
-
-		return WidgetHelpers.WidgetStatusHelper.Success();
-		}
-	}
-	});
-		VSS.notifyLoadSucceeded();
-	});
-</script>
+        });
+               
+        VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
+			WidgetHelpers.IncludeWidgetStyles();
+            VSS.register("HelloWorldWidget", function () {                
+                return {
+                    load: function (widgetSettings) {
+                        var $title = $('h2.title');
+                        $title.text('Hello World');
+                        						
+                        return WidgetHelpers.WidgetStatusHelper.Success();
+                    }
+                }
+            });
+            VSS.notifyLoadSucceeded();
+        });
+    </script>
 ```
 
 <a name="vss-methods"></a>
@@ -174,56 +174,56 @@ You can name these images however you want as long as the extension manifest in 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
 ```json
-{
-	"manifestVersion": 1,
-	"id": "vsts-extensions-myExtensions",
-	"version": "1.0.0",
-	"name": "My First Set of Widgets",
-	"description": "Samples containing different widgets extending dashboards",
-	"publisher": "fabrikam",
-	"targets": [
-		{
-			"id": "Microsoft.VisualStudio.Services"
-		}
-	],
-	"icons": {
-		"default": "img/logo.png"
-	},
-	"contributions": [
-		{
-			"id": "HelloWorldWidget",
-			"type": "ms.vss-dashboards-web.widget",
-			"targets": [
-				"ms.vss-dashboards-web.widget-catalog"
-			],
-			"properties": {
-				"name": "Hello World Widget",
-				"description": "My first widget",
-				"catalogIconUrl": "img/CatalogIcon.png",
-				"previewImageUrl": "img/preview.png",
-				"uri": "hello-world.html",
-				"supportedSizes": [
-					 {
-						"rowSpan": 1,
-						"columnSpan": 2
-					}
-				],
-				"supportedScopes": ["project_team"]
+	{
+		"manifestVersion": 1,
+		"id": "vsts-extensions-myExtensions",
+		"version": "1.0.0",
+		"name": "My First Set of Widgets",
+		"description": "Samples containing different widgets extending dashboards",
+		"publisher": "fabrikam",
+		"targets": [
+			{
+				"id": "Microsoft.VisualStudio.Services"
 			}
-		}
-	],
-	"files": [
-		{
-			"path": "hello-world.html", "addressable": true
-		},
-		{
-			"path": "sdk/scripts", "addressable": true
-		},
-		{
-			"path": "img", "addressable": true
-		}
-	]
-}
+		],
+		"icons": {
+            "default": "img/logo.png"
+        },
+		"contributions": [
+            {
+                "id": "HelloWorldWidget",
+                "type": "ms.vss-dashboards-web.widget",
+                "targets": [
+                    "ms.vss-dashboards-web.widget-catalog"
+                ],
+                "properties": {
+                    "name": "Hello World Widget",
+                    "description": "My first widget",
+                    "catalogIconUrl": "img/CatalogIcon.png",
+                    "previewImageUrl": "img/preview.png",                            
+                    "uri": "hello-world.html",
+                    "supportedSizes": [
+                         {
+                                "rowSpan": 1,
+                                "columnSpan": 2
+                            }
+                        ],
+                    "supportedScopes": ["project_team"]
+                }
+            }
+        ],
+		"files": [
+            {
+                "path": "hello-world.html", "addressable": true
+            },
+            {
+                "path": "sdk/scripts", "addressable": true
+            },
+            {
+                "path": "img", "addressable": true
+            }
+        ]
+	}
 ```
 
 >[!NOTE]
@@ -288,7 +288,7 @@ After you have your packaged extension in a .vsix file, you're ready to publish 
 All extensions, including those from Microsoft, are identified as being provided by a publisher.
 If you aren't already a member of an existing publisher, you'll create one.
 
-1. Sign in to the [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage)
+1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher)
 2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
  * Specify an identifier for your publisher, for example: `mycompany-myteam`
     * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
@@ -326,7 +326,7 @@ Choose your widget and click the 'Add' button to add it to your dashboard.
 <a name="part-2"/>
 
 ## Part 2: Hello World with Azure DevOps Services REST API
-Widgets can call any of the [REST APIs](/rest/api/vsts/?view=vsts) in Azure DevOps Services to interact with Azure DevOps Services resources.
+Widgets can call any of the [REST APIs](/rest/api/vsts/?view=azure-devops) in Azure DevOps Services to interact with Azure DevOps Services resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
@@ -357,28 +357,28 @@ This will allow the framework to uniquely identify the widget within the extensi
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="sdk/scripts/VSS.SDK.min.js"></script>
+	<head>        					
+		<script src="sdk/scripts/VSS.SDK.min.js"></script>        		
 		<script type="text/javascript">
 			VSS.init({
 				explicitNotifyLoaded: true,
 				usePlatformStyles: true
 			});
-
+               
 			VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
 				WidgetHelpers.IncludeWidgetStyles();
-				VSS.register("HelloWorldWidget2", function () {
+				VSS.register("HelloWorldWidget2", function () {                
 					return {
 						load: function (widgetSettings) {
 							var $title = $('h2.title');
 							$title.text('Hello World');
-
-							return WidgetHelpers.WidgetStatusHelper.Success();
+																
+                            return WidgetHelpers.WidgetStatusHelper.Success();
 						}
 					}
 				});
 				VSS.notifyLoadSucceeded();
-			});
+			});       
 		</script>
 	</head>
 	<body>
@@ -406,7 +406,7 @@ Add the below at the end of your extension manifest.
 
 <div class="alert alert-warning">
     <b>Warning</b>: Adding or changing scopes after an extension is published is currently not supported. If you have already uploaded your extension, you need remove it from the marketplace. 
-	Go to [Visual Studio Marketplace Publishing Portal](http://aka.ms/vsmarketplace-manage), right-click on your extension and select "Remove".
+	Go to [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher), right-click on your extension and select "Remove".
 </div> 
 
 
@@ -427,36 +427,36 @@ The method `getQuery` returns the query wrapped in a promise.
 The updated `VSS.require` will look as follows:
 
 ```JavaScript
-VSS.require(["TFS/Dashboards/WidgetHelpers", "TFS/WorkItemTracking/RestClient"],
+VSS.require(["TFS/Dashboards/WidgetHelpers", "TFS/WorkItemTracking/RestClient"], 
 	function (WidgetHelpers, TFS_Wit_WebApi) {
 		WidgetHelpers.IncludeWidgetStyles();
-		VSS.register("HelloWorldWidget2", function () {
-			var projectId = VSS.getWebContext().project.id;
-
+        VSS.register("HelloWorldWidget2", function () { 
+		    var projectId = VSS.getWebContext().project.id;
+			
 			var getQueryInfo = function (widgetSettings) {
-			// Get a WIT client to make REST calls to Azure DevOps Services
-				return TFS_Wit_WebApi.getClient().getQuery(projectId, "Shared Queries/Feedback")
-					.then(function (query) {
-						// Do something with the query
-
-						return WidgetHelpers.WidgetStatusHelper.Success();
-					}, function (error) {
-						return WidgetHelpers.WidgetStatusHelper.Failure(error.message);
-				});
+				// Get a WIT client to make REST calls to Azure DevOps Services
+                return TFS_Wit_WebApi.getClient().getQuery(projectId, "Shared Queries/Feedback")
+                    .then(function (query) {
+                        // Do something with the query
+														
+                        return WidgetHelpers.WidgetStatusHelper.Success();
+                    }, function (error) {                            
+                        return WidgetHelpers.WidgetStatusHelper.Failure(error.message);
+                    });
 			}
-
-			return {
-				load: function (widgetSettings) {
-					// Set your title
-					var $title = $('h2.title');
-					$title.text('Hello World');
+			                
+            return {
+                load: function (widgetSettings) {
+                    // Set your title
+                    var $title = $('h2.title');
+                    $title.text('Hello World');
 
 					return getQueryInfo(widgetSettings);
-				}
-			}
-		});
-		VSS.notifyLoadSucceeded();
-	});
+                }
+            }
+        });
+        VSS.notifyLoadSucceeded();
+    });
 ```
 Notice the use of the Failure method from `WidgetStatusHelper`. 
 It allows you to indicate to the widget framework that an error has occurred and take advantage to the standard error experience provided to all widgets.
@@ -471,16 +471,16 @@ In this example, we will display the query ID, the query name, and the name of t
 Replace the `// Do something with the query` comment with the below:
 
 ```JavaScript
-// Create a list with query details
-var $list = $('<ul>');
-$list.append($('<li>').text("Query Id: " + query.id));
-$list.append($('<li>').text("Query Name: " + query.name));
-$list.append($('<li>').text("Created By: " + ( query.createdBy? query.createdBy.displayName: "<unknown>" ) ) );
+	// Create a list with query details                                
+    var $list = $('<ul>');                                
+    $list.append($('<li>').text("Query Id: " + query.id));
+    $list.append($('<li>').text("Query Name: " + query.name));
+    $list.append($('<li>').text("Created By: " + ( query.createdBy? query.createdBy.displayName: "<unknown>" ) ) );                                                            
 
-// Append the list to the query-info-container
-var $container = $('#query-info-container');
-$container.empty();
-$container.append($list);
+    // Append the list to the query-info-container
+    var $container = $('#query-info-container');
+	$container.empty();
+    $container.append($list);
 ```
 
 Your final `hello-world2.html` will be as follows:
@@ -488,30 +488,29 @@ Your final `hello-world2.html` will be as follows:
 ```html
 <!DOCTYPE html>
 <html>
-
-<head>
-	<script src="sdk/scripts/VSS.SDK.min.js"></script>
-	<script type="text/javascript">
-		VSS.init({
-			explicitNotifyLoaded: true,
+<head>    
+    <script src="sdk/scripts/VSS.SDK.min.js"></script>
+    <script type="text/javascript">
+        VSS.init({
+            explicitNotifyLoaded: true,
 			usePlatformStyles: true
-		});
-
-		VSS.require(["TFS/Dashboards/WidgetHelpers", "TFS/WorkItemTracking/RestClient"],
+        });
+               
+        VSS.require(["TFS/Dashboards/WidgetHelpers", "TFS/WorkItemTracking/RestClient"], 
 			function (WidgetHelpers, TFS_Wit_WebApi) {
 				WidgetHelpers.IncludeWidgetStyles();
-				VSS.register("HelloWorldWidget2", function () {
+				VSS.register("HelloWorldWidget2", function () {                
 					var projectId = VSS.getWebContext().project.id;
 
 					var getQueryInfo = function (widgetSettings) {
 						// Get a WIT client to make REST calls to Azure DevOps Services
 						return TFS_Wit_WebApi.getClient().getQuery(projectId, "Shared Queries/Feedback")
 							.then(function (query) {
-								// Create a list with query details
+								// Create a list with query details                                
 								var $list = $('<ul>');
 								$list.append($('<li>').text("Query ID: " + query.id));
 								$list.append($('<li>').text("Query Name: " + query.name));
-								$list.append($('<li>').text("Created By: " + (query.createdBy ? query.createdBy.displayName : "<unknown>")));
+								$list.append($('<li>').text("Created By: " + (query.createdBy ? query.createdBy.displayName: "<unknown>") ));
 
 								// Append the list to the query-info-container
 								var $container = $('#query-info-container');
@@ -536,19 +535,17 @@ Your final `hello-world2.html` will be as follows:
 						}
 					}
 				});
-				VSS.notifyLoadSucceeded();
-			});
-	</script>
+            VSS.notifyLoadSucceeded();
+        });       
+    </script>
 
 </head>
-
 <body>
 	<div class="widget">
 		<h2 class="title"></h2>
 		<div id="query-info-container"></div>
 	</div>
 </body>
-
 </html>
 ```
 
@@ -561,49 +558,50 @@ Add a new contribution to the array in the `contributions` property and add the 
 You will need another preview image for the second widget. Name this `preview2.png` and place it in the `img` folder.
 
 ```json
-{
-	...,
-	"contributions":[
-		...,
+ {
+     ...,
+     "contributions":[
+         ...,
 		{
-			"id": "HelloWorldWidget2",
-			"type": "ms.vss-dashboards-web.widget",
-			"targets": [
-				"ms.vss-dashboards-web.widget-catalog"
-			],
-			"properties": {
-				"name": "Hello World Widget 2 (with API)",
-				"description": "My second widget",
-				"previewImageUrl": "img/preview2.png",
-				"uri": "hello-world2.html",
-				"supportedSizes": [
-					 {
-						"rowSpan": 1,
-						"columnSpan": 2
-					}
-				],
-				"supportedScopes": ["project_team"]
-			}
-		}
-	],
-	"files": [
-		{
-			"path": "hello-world.html", "addressable": true
-		},
-		{
-			"path": "hello-world2.html", "addressable": true
-		},
-		{
-			"path": "sdk/scripts", "addressable": true
-		},
-		{
-			"path": "img", "addressable": true
-		}
-	],
-	"scopes":[
-		"vso.work"
-	]
-}
+             "id": "HelloWorldWidget2",
+             "type": "ms.vss-dashboards-web.widget",
+             "targets": [
+                 "ms.vss-dashboards-web.widget-catalog"
+             ],
+             "properties": {
+                 "name": "Hello World Widget 2 (with API)",
+                 "description": "My second widget",
+                 "previewImageUrl": "img/preview2.png",                            
+                 "uri": "hello-world2.html",
+                 "supportedSizes": [
+                      {
+                             "rowSpan": 1,
+                             "columnSpan": 2
+                         }
+                     ],
+                 "supportedScopes": ["project_team"]
+             }
+         }
+
+     ],
+     "files": [
+         {
+             "path": "hello-world.html", "addressable": true
+         },
+		 {
+             "path": "hello-world2.html", "addressable": true
+         },		 
+         {
+             "path": "sdk/scripts", "addressable": true
+         },
+         {
+             "path": "img", "addressable": true
+         }
+     ],
+	 "scopes":[
+         "vso.work"
+     ]
+ }
  ```
  
 ### Step 6: Package, Publish and Share
@@ -654,25 +652,25 @@ Your folder will now look like the below:
 Add the below HTML in `configuration.html`. We basically add the mandatory reference to the `VSS.SDK.min.js` file and a `select` element for the dropdown to select a query from a preset list.
 
 ```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<script src="sdk/scripts/VSS.SDK.min.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<fieldset>
-				<label class="label">Query: </label>
-				<select id="query-path-dropdown" style="margin-top:10px">
-					<option value="" selected disabled hidden>Please select a query</option>
-					<option value="Shared Queries/Feedback">Shared Queries/Feedback</option>
-					<option value="Shared Queries/My Bugs">Shared Queries/My Bugs</option>
-					<option value="Shared Queries/My Tasks">Shared Queries/My Tasks</option>
-				</select>
-			</fieldset>
-		</div>
-	</body>
-</html>
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>        					
+			<script src="sdk/scripts/VSS.SDK.min.js"></script>        		
+		</head>
+		<body>
+			<div class="container">
+				<fieldset>
+					<label class="label">Query: </label>
+					<select id="query-path-dropdown" style="margin-top:10px">
+						<option value="" selected disabled hidden>Please select a query</option>
+						<option value="Shared Queries/Feedback">Shared Queries/Feedback</option>
+						<option value="Shared Queries/My Bugs">Shared Queries/My Bugs</option>
+						<option value="Shared Queries/My Tasks">Shared Queries/My Tasks</option>						
+					</select>
+				</fieldset>				
+			</div>
+		</body>
+	</html>
 ```
 <a name="configurationJs"/>
 
@@ -684,38 +682,38 @@ and pass the configuration settings to the framework. In our case, below is the 
 Open the file `configuration.html` and the below `<script>` element to the `<head>`.
 
 ```html
-<script type="text/javascript">
-	VSS.init({
-		explicitNotifyLoaded: true,
-		usePlatformStyles: true
-	});
+    <script type="text/javascript">
+        VSS.init({                        
+			explicitNotifyLoaded: true,
+			usePlatformStyles: true
+        });
+               
+        VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
+            VSS.register("HelloWorldWidget.Configuration", function () {   
+				var $queryDropdown = $("#query-path-dropdown");	
 
-	VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
-		VSS.register("HelloWorldWidget.Configuration", function () {
-			var $queryDropdown = $("#query-path-dropdown");
-
-			return {
-				load: function (widgetSettings, widgetConfigurationContext) {
-					var settings = JSON.parse(widgetSettings.customSettings.data);
-					if (settings && settings.queryPath) {
-						$queryDropdown.val(settings.queryPath);
+                return {
+                    load: function (widgetSettings, widgetConfigurationContext) {
+                        var settings = JSON.parse(widgetSettings.customSettings.data);
+						if (settings && settings.queryPath) {
+							 $queryDropdown.val(settings.queryPath);
+						 }
+                        						
+                        return WidgetHelpers.WidgetStatusHelper.Success();
+                    },
+					onSave: function() {
+						var customSettings = {
+							data: JSON.stringify({
+									queryPath: $queryDropdown.val()
+								})
+						};
+						return WidgetHelpers.WidgetConfigurationSave.Valid(customSettings);	
 					}
-
-					return WidgetHelpers.WidgetStatusHelper.Success();
-				},
-				onSave: function () {
-					var customSettings = {
-						data: JSON.stringify({
-							queryPath: $queryDropdown.val()
-						})
-					};
-					return WidgetHelpers.WidgetConfigurationSave.Valid(customSettings);
-				}
-			}
-		});
-		VSS.notifyLoadSucceeded();
-	});
-</script>
+                }
+            });
+            VSS.notifyLoadSucceeded();
+        });
+    </script>
 ```
 
 `VSS.init`, `VSS.require` and `VSS.register` play the same role as they played for the widget as described in [Part 1](#vss-methods).
@@ -746,16 +744,16 @@ event, which in this case is `WidgetHelpers.WidgetEvent.ConfigurationChange`, an
 Add the below in the function assigned to the `load` property.
 
 ```JavaScript 
-$queryDropdown.on("change", function () {
-	var customSettings = {
+ $queryDropdown.on("change", function () {
+	 var customSettings = {
 		data: JSON.stringify({
-			queryPath: $queryDropdown.val()
-		})
-	};
-	var eventName = WidgetHelpers.WidgetEvent.ConfigurationChange;
-	var eventArgs = WidgetHelpers.WidgetEvent.Args(customSettings);
-	widgetConfigurationContext.notify(eventName, eventArgs);
-});
+				queryPath: $queryDropdown.val()
+			})
+	 };
+	 var eventName = WidgetHelpers.WidgetEvent.ConfigurationChange;
+	 var eventArgs = WidgetHelpers.WidgetEvent.Args(customSettings);
+     widgetConfigurationContext.notify(eventName, eventArgs);
+ });
 ```
 
 > You need to notify the framework of configuration change at least once so that the "Save" button can be enabled.
@@ -764,68 +762,60 @@ At the end, your `configuration.html` looks like this:
 
 
 ```html
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<script src="sdk/scripts/VSS.SDK.min.js"></script>
-	<script type="text/javascript">
-		VSS.init({
-			explicitNotifyLoaded: true,
-			usePlatformStyles: true
-		});
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>        					
+			<script src="sdk/scripts/VSS.SDK.min.js"></script>      
+			<script type="text/javascript">
+				VSS.init({                        
+					explicitNotifyLoaded: true,
+					usePlatformStyles: true
+				});
+               
+				VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
+					VSS.register("HelloWorldWidget.Configuration", function () {   
+						var $queryDropdown = $("#query-path-dropdown");
+						
+						return {
+							load: function (widgetSettings, widgetConfigurationContext) {
+								var settings = JSON.parse(widgetSettings.customSettings.data);
+								if (settings && settings.queryPath) {
+									 $queryDropdown.val(settings.queryPath);
+								 }
 
-		VSS.require("TFS/Dashboards/WidgetHelpers", function (WidgetHelpers) {
-			VSS.register("HelloWorldWidget.Configuration", function () {
-				var $queryDropdown = $("#query-path-dropdown");
-
-				return {
-					load: function (widgetSettings, widgetConfigurationContext) {
-						var settings = JSON.parse(widgetSettings.customSettings.data);
-						if (settings && settings.queryPath) {
-							$queryDropdown.val(settings.queryPath);
+								 $queryDropdown.on("change", function () {
+									 var customSettings = {data: JSON.stringify({queryPath: $queryDropdown.val()})};
+									 var eventName = WidgetHelpers.WidgetEvent.ConfigurationChange;
+									 var eventArgs = WidgetHelpers.WidgetEvent.Args(customSettings);
+									 widgetConfigurationContext.notify(eventName, eventArgs);
+								 });
+ 		
+								return WidgetHelpers.WidgetStatusHelper.Success();
+							},
+							onSave: function() {
+							    var customSettings = {data: JSON.stringify({queryPath: $queryDropdown.val()})};
+								return WidgetHelpers.WidgetConfigurationSave.Valid(customSettings);	
+							}
 						}
-
-						$queryDropdown.on("change", function () {
-							var customSettings = {
-								data: JSON.stringify({
-									queryPath: $queryDropdown.val()
-								})
-							};
-							var eventName = WidgetHelpers.WidgetEvent.ConfigurationChange;
-							var eventArgs = WidgetHelpers.WidgetEvent.Args(customSettings);
-							widgetConfigurationContext.notify(eventName, eventArgs);
-						});
-
-						return WidgetHelpers.WidgetStatusHelper.Success();
-					},
-					onSave: function () {
-						var customSettings = {
-							data: JSON.stringify({
-								queryPath: $queryDropdown.val()
-							})
-						};
-						return WidgetHelpers.WidgetConfigurationSave.Valid(customSettings);
-					}
-				}
-			});
-			VSS.notifyLoadSucceeded();
-		});
-	</script>
-</head>
-<body>
-	<div class="container">
-		<fieldset>
-			<label class="label">Query: </label>
-			<select id="query-path-dropdown" style="margin-top:10px">
-				<option value="" selected disabled hidden>Please select a query</option>
-				<option value="Shared Queries/Feedback">Shared Queries/Feedback</option>
-				<option value="Shared Queries/My Bugs">Shared Queries/My Bugs</option>
-				<option value="Shared Queries/My Tasks">Shared Queries/My Tasks</option>
-			</select>
-		</fieldset>
-	</div>
-</body>
-</html>
+					});
+					VSS.notifyLoadSucceeded();
+				});
+			</script>  		
+		</head>
+		<body>
+			<div class="container">
+				<fieldset>
+					<label class="label">Query: </label>
+					<select id="query-path-dropdown" style="margin-top:10px">
+						<option value="" selected disabled hidden>Please select a query</option>
+						<option value="Shared Queries/Feedback">Shared Queries/Feedback</option>
+						<option value="Shared Queries/My Bugs">Shared Queries/My Bugs</option>
+						<option value="Shared Queries/My Tasks">Shared Queries/My Tasks</option>						
+					</select>
+				</fieldset>		
+			</div>
+		</body>
+	</html>
 ```
 <a name="reload-widget"/>
 
@@ -844,13 +834,13 @@ This reload method gets called by the framework every time the user input change
 
 ```JavaScript
 return {
-	load: function (widgetSettings) {
-		// Set your title
-		var $title = $('h2.title');
-		$title.text('Hello World');
+    load: function (widgetSettings) {
+        // Set your title
+        var $title = $('h2.title');
+        $title.text('Hello World');
 
-		return getQueryInfo(widgetSettings);
-	},
+        return getQueryInfo(widgetSettings);
+    },
 	reload: function (widgetSettings) {
 		return getQueryInfo(widgetSettings);
 	}
@@ -859,16 +849,16 @@ return {
 
 <br>
 The hard-coded query path in `getQueryInfo` should be replaced with the configured query path which can be extracted from the parameter `widgetSettings` that is passed to the method.
-Add the below in the very beginning of the `getQueryInfo` method and replace the hard-coded query path with `settings.queryPath`.
+Add the below in the very beginning of the `getQueryInfo` method and replace the hard-coded querypath with `settings.queryPath`.
 
 ```JavaScript
 var settings = JSON.parse(widgetSettings.customSettings.data);
 if (!settings || !settings.queryPath) {
-	var $container = $('#query-info-container');
-	$container.empty();
-	$container.text("Sorry nothing to show, please configure a query path.");
+    var $container = $('#query-info-container');
+    $container.empty();
+    $container.text("Sorry nothing to show, please configure a query path.");
 
-	return WidgetHelpers.WidgetStatusHelper.Success();
+    return WidgetHelpers.WidgetStatusHelper.Success();
 }
 ```
 At this point, your widget is ready to render with the configured settings.
@@ -887,60 +877,60 @@ Update the array in the `files` property to include the two new HTML files we ha
 {
 	...
 	"contributions": [
-		... ,
+		... , 
 		{
-			"id": "HelloWorldWidget3",
-			"type": "ms.vss-dashboards-web.widget",
-			"targets": [
-				"ms.vss-dashboards-web.widget-catalog",
-				"fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration"
-			],
-			"properties": {
-				"name": "Hello World Widget 3 (with config)",
-				"description": "My third widget",
-				"previewImageUrl": "img/preview3.png",
-				"uri": "hello-world3.html",
-				"supportedSizes": [
-					{
-							"rowSpan": 1,
-							"columnSpan": 2
-						}
-					],
-				"supportedScopes": ["project_team"]
-			 }
-		 },
+             "id": "HelloWorldWidget3",
+             "type": "ms.vss-dashboards-web.widget",
+             "targets": [
+                 "ms.vss-dashboards-web.widget-catalog",
+				 "fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration"
+             ],
+             "properties": {
+                 "name": "Hello World Widget 3 (with config)",
+                 "description": "My third widget",
+                 "previewImageUrl": "img/preview3.png",                       
+                 "uri": "hello-world3.html",
+                 "supportedSizes": [
+                      {
+                             "rowSpan": 1,
+                             "columnSpan": 2
+                         }
+                     ],
+                 "supportedScopes": ["project_team"]
+             }
+         },
 		 {
-			"id": "HelloWorldWidget.Configuration",
-			"type": "ms.vss-dashboards-web.widget-configuration",
-			"targets": [ "ms.vss-dashboards-web.widget-configuration" ],
-			"properties": {
-				"name": "HelloWorldWidget Configuration",
-				"description": "Configures HelloWorldWidget",
-				"uri": "configuration.html"
-			}
-		 }
+             "id": "HelloWorldWidget.Configuration",
+             "type": "ms.vss-dashboards-web.widget-configuration",
+             "targets": [ "ms.vss-dashboards-web.widget-configuration" ],
+             "properties": {
+                 "name": "HelloWorldWidget Configuration",
+                 "description": "Configures HelloWorldWidget",
+                 "uri": "configuration.html"
+             }
+         }
 	],
 	"files": [
-		{
-			"path": "hello-world.html", "addressable": true
-		},
-		{
-			"path": "hello-world2.html", "addressable": true
-		},
-		{
-			"path": "hello-world3.html", "addressable": true
-		},
-		{
-			"path": "configuration.html", "addressable": true
-		},
-		{
-			"path": "sdk/scripts", "addressable": true
-		},
-		{
-			"path": "img", "addressable": true
-		}
-	],
-	...
+            {
+                "path": "hello-world.html", "addressable": true
+            },
+			 {
+                "path": "hello-world2.html", "addressable": true
+            },
+			{
+                "path": "hello-world3.html", "addressable": true
+            },
+			{
+                "path": "configuration.html", "addressable": true
+            },
+            {
+                "path": "sdk/scripts", "addressable": true
+            },
+            {
+                "path": "img", "addressable": true
+            }
+        ],
+		...		
 }
 ```
 
@@ -999,33 +989,33 @@ The extension manifest for the third sample in this guide would look like the be
 {
 	...
 	"contributions": [
-		... ,
+		... , 
 		{
-			"id": "HelloWorldWidget3",
-			"type": "ms.vss-dashboards-web.widget",
-			"targets": [
-				"ms.vss-dashboards-web.widget-catalog",  "fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration"
-			],
-			"properties": {
-				"name": "Hello World Widget 3 (with config)",
-				"description": "My third widget",
-				"previewImageUrl": "img/preview3.png",
-				"uri": "hello-world3.html",
-				"isNameConfigurable": true,
-				"supportedSizes": [
+             "id": "HelloWorldWidget3",
+             "type": "ms.vss-dashboards-web.widget",
+             "targets": [
+                 "ms.vss-dashboards-web.widget-catalog",  "fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration"
+             ],
+             "properties": {
+                 "name": "Hello World Widget 3 (with config)",
+                 "description": "My third widget",
+                 "previewImageUrl": "img/preview3.png",                       
+                 "uri": "hello-world3.html",
+				 "isNameConfigurable": true,
+                 "supportedSizes": [
 					{
-						"rowSpan": 1,
-						"columnSpan": 2
+                        "rowSpan": 1,
+                        "columnSpan": 2
 					},
 					{
-						"rowSpan": 2,
-						"columnSpan": 2
+                        "rowSpan": 2,
+                        "columnSpan": 2
 					}
-				],
-				"supportedScopes": ["project_team"]
-			}
-		},
-		...
+                 ],
+                 "supportedScopes": ["project_team"]
+             }
+         },
+		 ...
 }
 ```
 
@@ -1050,17 +1040,17 @@ The final return statement in `hello-world3.html` will be as follows:
 
 ```JavaScript
 return {
-	load: function (widgetSettings) {
-		// Set your title
-		var $title = $('h2.title');
-		$title.text(widgetSettings.name);
+    load: function (widgetSettings) {
+        // Set your title
+        var $title = $('h2.title');
+        $title.text(widgetSettings.name);
 
-		return getQueryInfo(widgetSettings);
-	},
+        return getQueryInfo(widgetSettings);
+    },
 	reload: function (widgetSettings) {
 		// Set your title
-		var $title = $('h2.title');
-		$title.text(widgetSettings.name);
+        var $title = $('h2.title');
+        $title.text(widgetSettings.name);
 
 		return getQueryInfo(widgetSettings);
 	}

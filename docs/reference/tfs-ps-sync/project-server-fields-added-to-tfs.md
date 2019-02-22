@@ -5,7 +5,7 @@ description: Add fields to a work item form through export, modify, and import o
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 05912b54-10f4-4ba2-947d-0c856daafdf0
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -83,16 +83,16 @@ ms.date: 01/12/2017
   
 ```xml
 <Assignments>  
-   <Assignment IsPrimary="true" Succeeded="true">  
-      <Field RefName="System.AssignedTo">Eduard Dell</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">0.000000</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">32.000000</Field>  
-   </Assignment>  
-   <Assignment IsPrimary="false" Succeeded="true">  
-      <Field RefName="System.AssignedTo">Sanjay Patel</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">8.000000</Field>  
-      <Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">16.000000</Field>  
-   </Assignment>  
+&nbsp;&nbsp;&nbsp;<Assignment IsPrimary="true" Succeeded="true">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="System.AssignedTo">Eduard Dell</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">0.000000</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">32.000000</Field>  
+&nbsp;&nbsp;&nbsp;</Assignment>  
+&nbsp;&nbsp;&nbsp;<Assignment IsPrimary="false" Succeeded="true">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="System.AssignedTo">Sanjay Patel</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.CompletedWork">8.000000</Field>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="Microsoft.VSTS.Scheduling.RemainingWork">16.000000</Field>  
+&nbsp;&nbsp;&nbsp;</Assignment>  
 </Assignments>  
 ```  
   

@@ -1,16 +1,16 @@
 ---
 title: WorkItem.PartialOpen method
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Syntax and usage for the PartialOpen method to open a work item for modification when working with Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 82920422-FCC2-4FF6-BDFB-E8E992736A5A
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
 ms.date: 08/04/2016
 ---
-38195423-A9B7-4C5B-8FA2-F9DA5C97DB1F
+
 
 # WorkItem.PartialOpen Method
 

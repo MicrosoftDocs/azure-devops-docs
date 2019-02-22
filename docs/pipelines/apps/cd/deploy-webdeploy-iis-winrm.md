@@ -1,30 +1,30 @@
 ---
-title: Deploy a Web Deploy package to IIS using WinRM
-description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Mamangement (WinRM)
+title: Deploy to IIS using WinRM
+description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Management (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Deploy your Web Deploy package to IIS servers using WinRM
 
-[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-> A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md)
-instead of WinRM. Deployment groups are currently in preview for some users in Azure Pipelines. They are not yet available in TFS.
+> A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md) instead of WinRM. However, deployment groups are not available in version of TFS earlier than TFS 2018.
 
 Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
-Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Release Management.
+Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Azure Pipelines.
 A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run Powershell scripts remotely in order to deploy the Web Deploy package.
 
 ## Get set up
@@ -182,7 +182,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    - **Password**: Enter the administrator password for target servers.
    
-   - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FDQN.
+   - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
    
    - **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task.
    
@@ -198,7 +198,7 @@ You're now ready to create a release, which means to run the release pipeline wi
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

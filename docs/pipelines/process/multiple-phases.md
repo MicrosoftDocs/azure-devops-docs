@@ -1,11 +1,12 @@
 ---
-title: Workflow using multiple jobs in Build and Release Management
+title: Workflow using multiple jobs in Azure Pipelines Build and Release
+ms.custom: seodec18
 description: Understand how to configure a workflow using jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 497316D5-F657-4FFF-9F31-6DBEE9408D99
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -14,13 +15,15 @@ monikerRange: '>= tfs-2017'
 
 # Multiple jobs
 
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in a pipeline, you can:
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 
 * Partition your pipeline into sections targeting different agent pools
 * Partition your pipeline into sections targeting different sets of self-hosted agents using different demands
@@ -30,6 +33,9 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 * Reduce build time by running multiple jobs in parallel
 * Reduce deployment time by selectively downloading different artifacts in different jobs of a deployment pipeline
 * [Conditionally execute](conditions.md) a set of tasks
+
+> [!NOTE]
+> Running multiple jobs in parallel is supported only in build pipelines at present. It is not yet supported in release pipelines.
 
 ::: moniker-end
 
@@ -58,11 +64,11 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 ::: moniker-end
 
 > [!NOTE]
-> Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+> Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The syntax for defining multiple jobs and their dependencies is:
 
@@ -75,7 +81,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -89,7 +95,7 @@ To add a new job, select '...' on the pipeline channel in the **Tasks** tab of t
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Example jobs that build sequentially:
 
@@ -110,22 +116,23 @@ Example jobs that build in parallel (no dependencies):
 jobs:
 - job: Windows
   pool:
-    vmImage: vs2017-win2016
+    vmImage: 'vs2017-win2016'
   steps:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: xcode9-macos10.13
+    vmImage: 'macOS-10.13'
   steps:
   - script: echo hello from macOS
 - job: Linux
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: 'ubuntu-16.04'
   steps:
   - script: echo hello from Linux
 ```
 
 Example of fan out:
+
 ```yaml
 jobs:
 - job: InitialJob
@@ -142,6 +149,7 @@ jobs:
 ```
 
 Example of fan in:
+
 ```yaml
 jobs:
 - job: InitialA
@@ -159,13 +167,13 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
 # [Designer](#tab/designer)
 
-::: moniker range="vsts"
+::: moniker range="> tfs-2018"
 When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not yet supported in release pipelines. Multiple jobs in a release pipeline run in sequence.
 ::: moniker-end
 
@@ -217,7 +225,9 @@ phased execution:
 ---
 
 ::: moniker range=">=tfs-2018"
+
 ## Conditions
+
 You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
 
 # [YAML](#tab/yaml)
@@ -295,3 +305,4 @@ Use the **Run this job** option on an agent or server job to run the tasks
 * [Jobs](phases.md)
 * [Server jobs](server-phases.md)
 * [Deployment group jobs](deployment-group-phases.md)
+* [Specify conditions](conditions.md)

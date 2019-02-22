@@ -1,18 +1,17 @@
 ---
 title: Understand and configure your Kanban board 
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards or Team Foundation Server
-ms.global_help.title: Kanban basics
-ms.global_help.keywords: ms.vss-work-web.boards-hub, 2  
-ms.topic: get-started-article
+ms.custom: boards-kanban  
+ms.topic: quickstart
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 01/08/2018
 ---
 
 # Kanban basics
@@ -26,7 +25,7 @@ To maximize a team's ability to consistently deliver high quality software, Kanb
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work.
 
-Review this topic to gain an understanding of how to configure and start working with your Kanban boards:   
+Review this article to gain an understanding of how to configure and start working with your Kanban boards:   
 
 >[!div class="checklist"]    
 > * View your Kanban board    
@@ -36,19 +35,18 @@ Review this topic to gain an understanding of how to configure and start working
 > * View the Cumulative flow chart     
 > * How to turn live updates on or off  
 
+> [!NOTE]  
+> Both Kanban boards and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).
 
-[!INCLUDE [temp](../_shared/image-differences.md)] 
+User stories and bugs correspond to types of work items. You use [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
 
-User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
-
-
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
 
 [!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
-
+<a id="map-flow" />
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />
 Kanban literally means signboard or billboard. As a first step, you customize your board to map to how your team works.
@@ -64,7 +62,7 @@ For user stories, the New, Active, Resolved, and Closed states track progress fr
 
 </td>
 <td>
-![Default Kanban board, Agile template](_img/ALM_KB_Empty.png)
+![Default kanban board, Agile template](_img/ALM_KB_Empty.png)
 
 </td>
 </tr>
@@ -122,14 +120,14 @@ As with most Agile practices, Kanban encourages monitoring key metrics to fine t
 
 <img src="_img/kanban-basics-open-cfd.png" alt="Open the cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
-The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started.  
+The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
 <img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
-By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/dashboards/cumulative-flow.md) 
+By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md). 
 
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 In addition to the above chart, you can add Analytics widgets to your dashboard. The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
 - [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets.md)
@@ -137,7 +135,6 @@ In addition to the above chart, you can add Analytics widgets to your dashboard.
 - [What is the Analytics Service?](../../report/analytics/what-is-analytics.md)
 
 ::: moniker-end
-
 
 
 ## Try this next
@@ -148,8 +145,6 @@ Here are some useful tips when working with the Kanban board:
 - Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)   
 - Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../../boards/boards/customize-cards.md)) 
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
-
-
 
 
 Each team can manage their backlog and customize their Kanban board. [Add teams](../../organizations/settings/add-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 

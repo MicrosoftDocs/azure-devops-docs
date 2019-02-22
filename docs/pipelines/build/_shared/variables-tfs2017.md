@@ -5,7 +5,7 @@ ms.topic: include
 ## Agent variables
 
 > [!NOTE]
-> You can use agent variables as environment variabes in your scripts and as parameters in your build tasks.
+> You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
 > You cannot use them to customize the build number or to apply a version control label or tag.
 
 <table>
@@ -17,6 +17,11 @@ ms.topic: include
 <p>The local path on the agent where all folders for a given build pipeline are created.</p>
 <p>For example: <code>c:\agent\_work\1</code></p>
 </td>
+</tr>
+
+<tr>
+<td>Agent.ComputerName</td>
+<td>The name of the machine on which the agent is installed.</td>
 </tr>
 
 <tr>
@@ -40,11 +45,6 @@ ms.topic: include
     </ul>
 <p>The environment variable should be referenced as <code>AGENT_JOBSTATUS</code>. The older <code>agent.jobstatus</code> is available for backwards compatibility.</p>
 </td>
-</tr>
-
-<tr>
-<td>Agent.MachineName</td>
-<td>The name of the machine on which the agent is installed.</td>
 </tr>
 
 <tr>
@@ -166,6 +166,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.LocalPath</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+<p>This variable is synonymous with Build.SourcesDirectory.</p>
 </td>
 </tr>
 
@@ -259,6 +260,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourcesDirectory</td>
 <td>
 [!INCLUDE [include](../_shared/variables-build-sources-directory.md)]
+<p>This variable is synonymous with Build.Repository.LocalPath.</p>
 </td>
 </tr>
 

@@ -1,11 +1,12 @@
 ---
 title: Release without deployment agents in Release Management
+ms.custom: seodec18
 description: Release your app to Microsoft Azure or on-premises without using deployment agents
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 07/16/2018

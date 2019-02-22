@@ -2,10 +2,10 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Auth and Security | Extensions for Azure DevOps Services
-description: Auth and secuirty for Azure DevOps Services Extensions
+description: Auth and security for Azure DevOps Services Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -14,13 +14,16 @@ ms.date: 08/29/2016
 
 # Auth and security
 
+> [!NOTE]
+> This page pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
+
 ## Calling REST APIs from your extension
 
 Most extensions have a need to call Azure DevOps Services REST APIs on behalf of the current user. 
 * If you are using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
 * If you are not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
 
-    ```
+    ```javascript
     VSS.require(["VSS/Authentication/Services"],
         function (VSS_Auth_Service) {
             VSS.getAccessToken().then(function(token){
@@ -51,7 +54,7 @@ To get this key, right-click a [published extension](../publish/overview.md) and
 
 1. The Core SDK `getAppToken` method return a promise that, when resolved, contains a token signed with your extension's certificate.
 
-    ```
+    ```javascript
     VSS.getAppToken().then(function(token){
         // Add token to your request
     });
@@ -69,7 +72,7 @@ You will need to add 1 reference to get this sample to compile.
 
 1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 5.2.2 of this package.
 
-```
+```csharp
 using System.Collections.Generic;
 using System.ServiceModel.Security.Tokens;
 using Microsoft.IdentityModel.Tokens;
@@ -110,7 +113,7 @@ You will need to add 1 reference to get this sample to compile.
 
 **Startup.cs**
 
-```
+```csharp
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -163,7 +166,7 @@ namespace TokenSample.Core.API
 
 **Your API Controllers:**
 
-```
+```csharp
 [Route("api/[controller]"), 
  Authorize()]
 public class SampleLogicController : Controller

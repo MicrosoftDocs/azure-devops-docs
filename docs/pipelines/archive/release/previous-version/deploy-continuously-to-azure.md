@@ -1,11 +1,12 @@
 ---
 title: Deploy continuously to Azure with Release Management
+ms.custom: seodec18
 description: Release your app continuously to Microsoft Azure environments with Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 07/16/2018
@@ -62,7 +63,7 @@ along with the environments. You can add stages and environments, too.
 
    ![Add Azure subscription](_img/deploy-continuously-03.png) 
 
-   * Provide Azure subcription details. If you have an Azure subscription file 
+   * Provide Azure subscription details. If you have an Azure subscription file 
    (.publishsettings file) on your computer, you can browse to that file.
    If you do not have a local copy of this file, you can
    **[download a subscription file](https://manage.windowsazure.com/publishsettings)**.

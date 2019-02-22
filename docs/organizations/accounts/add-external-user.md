@@ -1,21 +1,23 @@
 ---
-title: Add external users to your organization
-description: Learn how to invite an external or outside user in your Azure DevOps organization
+title: Add, invite external users, guest users to your organization
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn how to invite an outside or external user to your organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/11/2018
-monikerRange: 'vsts'
+ms.date: 
+monikerRange: 'azure-devops'
 ---
-# Add external users to your Azure DevOps organization
+# Add external users to your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you’re an Azure Active Directory (Azure AD)-backed organization user who wants to collaborate with external users, you can invite external users to your organization. To do so, you must add the identities of your external users to your Azure AD and organizations. Doing this also grants the users some additional privileges. Learn more about the [additional organization-level resources](resources-granted-to-project-members.md).
+Learn how to invite external users to your organization, if you access Azure DevOps via Azure Active Directory (Azure AD). To do so, you must add the identities of those users to your Azure AD and organizations. Doing this also grants the users some additional privileges. Learn more about the [additional organization-level resources](resources-granted-to-project-members.md).
 
 ## Prerequisites
 
@@ -32,47 +34,21 @@ If you’re an Azure Active Directory (Azure AD)-backed organization user who wa
 
 ## Invite an external user to your organization
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
-
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Users** and then select **Add new users**.
+3. Select **Users**, and then select **Add new users**.
 
    ![Select Add new users](_img/_shared/add-new-users.png)
 
 4. Enter the external user's email address followed by a semicolon, and then select **Add**. A warning message appears, indicating that an external user is being added from outside your directory.
 
-   [!div class="mx-imgBorder"]
-   ![Add external user to Azure DevOps](_img/add-external-user/add-external-user-vert.png)
+   ![Add external user](_img/add-external-user/add-external-user-vert.png)
 
-5. Advise the external user to locate the email that they received from Azure DevOps and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your organization.
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Go to the **Users** tab in **Settings**.
-
-   ![Go to the Users tab in Settings](../../_shared/_img/users-hub-updated-ui.png)
-
-3. Select **Add new users**.
-
-   ![Choose Add new users](_img/add-external-user/choose-add-new-users.png)
-
-4. Enter the external user's email address followed by a semicolon, and then select **Add**. A warning message appears, indicating that an external user is being added from outside your directory.
-
-
-   >![Add external user to Azure DevOps](_img/add-external-user/add-external-user.png)
-
-5. Advise the external user to locate the email that they received from Azure DevOps and go to the Azure B2B redemption URL, which will add the user to your organization.
-
----
+5. Advise the external user to locate the email that they received from Azure DevOps and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which adds the user to your organization.
 
 >[!Note]
 >If you need to resend the invitation email, go to **Users**, select the user, and select **Resend invite**.

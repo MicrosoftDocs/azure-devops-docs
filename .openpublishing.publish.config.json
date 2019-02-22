@@ -23,7 +23,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "vsts || >= tfs-2013 <= tfs-2018"
+        "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -36,7 +36,6 @@
     }
   ],
   "notification_subscribers": [
-    "douge@microsoft.com",
     "kaelli@microsoft.com"
   ],
   "branches_to_filter": [],

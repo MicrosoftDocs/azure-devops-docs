@@ -1,16 +1,18 @@
 ---
 title: CMMI process work item types & workflow
-titleSuffix: Azure Boards and TFS
-description: How to guide for using the CMMI process  work item types and workflow to track work in Azure Boards & Team Foundation Server   
+titleSuffix: Azure Boards
+ms.custom: work-items
+description: How to guide for using the CMMI process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/19/2018
----
+ms.date: 12/20/2018
+--- 
 
 # CMMI process work item types and workflow
 
@@ -19,13 +21,13 @@ ms.date: 09/19/2018
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
-<img src="_img/cmmi-process-plan-wits.png" alt="CMMI process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
+![CMMI process work item types, conceptual image](_img/cmmi-process-plan-wits.png)
 
 To gain insight into a portfolio of requirements, product owners can map requirements to features. When teams work in iterations, they define tasks that automatically link to requirements.
 
 Using Microsoft Test Manager and the web portal, testers create and run test cases and define bugs to track code defects.
 
-To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings.
+To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings. If you are new to the CMMI process, review the section [Plan and track work with CMMI](cmmi-process.md#start-using) to get started. 
 
   
 [!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)] 
@@ -320,9 +322,9 @@ The typical workflow progression for a requirement is:
 -   The team updates the status to **Resolved** when code development is finished and system tests have passed.  
 -   Lastly, the team or product owner moves the requirement to **Closed** when the product owner agrees that it has been implemented according to the Acceptance Criteria and passed all validation tests.  
 
-### Update status with Kanban or task boards
+### Update status with Kanban or taskboards
 
-Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint task board](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
+Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
 <img src="../../boards/_img/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" style="border: 2px solid #C3C3C3;" />
 
@@ -432,7 +434,7 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
@@ -545,5 +547,3 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </table>
 
 
-
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]

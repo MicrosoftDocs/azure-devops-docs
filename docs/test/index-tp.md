@@ -1,14 +1,14 @@
 ---
 title: Azure Test Plans Documentation 
-titleSuffix: Azure DevOps Services
-description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
+description: Test your software using manual, exploratory, cloud, and load testing tools to improve your overall code quality. 
+ms.custom: seodec18
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
-ms.technology: vs-devops-overview 
+ms.technology: devops-test
 ms.assetid:  
-ms.manager: douge 
+ms.manager: jillfra 
 ms.author: kaelli 
 ms.date: 09/05/2018
 featureFlags:
@@ -71,7 +71,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/test/getting-started-with-continuous-testing">
+                                        <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -103,25 +103,6 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Unit &amp; functional testing</h3>
                                                             <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/test/load-test/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/i_load-testing.svg" alt="Load testing icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Load testing</h3>
-                                                            <p>Performance test your code with hundreds of thousands of users.</p>
                                                         </div>
                                                     </div>
                                                 </div>

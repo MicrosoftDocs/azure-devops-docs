@@ -1,17 +1,18 @@
 ---
 title: Define query as a hyperlink
-titleSuffix: Azure Boards and TFS
-description: Construct a URL for a query in Azure Boards & Team Foundation Server
+titleSuffix: Azure Boards
+description: Construct a URL for a query in Azure Boards, Azure DevOps, & Team Foundation Server
+ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
- 
-ms.date: 09/29/2017  
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018  
 ---
 
 # Define a query as a hyperlink  
@@ -26,43 +27,64 @@ The easiest way to define a hyperlink is to create a query that matches what you
 > [!NOTE]    
 > Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
-::: moniker range=">= tfs-2017"  
 ## Query hyperlink syntax 
+
+::: moniker range="azure-devops"  
 
 You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
 ```  
-https://{youraccount}.visualstudio.com/DefaultCollection/{TeamProjectName}/{TeamName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
+https://dev.azure.com/OrganizationName/ProjectName/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
 ```
 For example, the following hyperlink lists the ID and title of all active bugs defined under the FabrikamFiber/Web area path for the fabrikam.visualstudio.com account.
 
 ```  
-https://fabrikam.visualstudio.com/DefaultCollection/_workitems?_a=query&wiql=SELECT%20%5BSystem.ID%5D%2C%20%5BSystem.Title%5D%20FROM%20WorkItems%20WHERE%20%5BSystem.TeamProject%5D%3D'FabrikamFiber'%20AND%20%5BSystem.WorkItemType%5D%3D'Bug'%20AND%20%5BSystem.State%5D%3D'Active'%20AND%20%5BSystem.AreaPath%5D%3D'FabrikamFiber%5CWeb'
+https://dev.azure.com/fabrikam/FabrikamFiber/_workitems?_a=query&wiql=SELECT%20%5BSystem.ID%5D%2C%20%5BSystem.Title%5D%20FROM%20WorkItems%20WHERE%20%5BSystem.TeamProject%5D%3D'FabrikamFiber'%20AND%20%5BSystem.WorkItemType%5D%3D'Bug'%20AND%20%5BSystem.State%5D%3D'Active'%20AND%20%5BSystem.AreaPath%5D%3D'FabrikamFiber%5CWeb'
 ```
 
 The decoded WIQL conforms to: 
 
-```sql
+```wiql
 SELECT [System.ID], [System.Title]
    FROM WorkItems 
    WHERE [System.TeamProject]='FabrikamFiber' 
    AND [System.WorkItemType]='Bug'
    AND [System.State]='Active'
    AND [System.AreaPath]='FabrikamFiber\Web'
-```
-
-::: moniker-end  
-
-
-::: moniker range="vsts"  
+``` 
 
 > [!NOTE]  
 > For queries made against Azure Boards, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
 
 ::: moniker-end  
 
+
+::: moniker range=">= tfs-2017"  
+
+```  
+https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
+```
+
+For example, the following hyperlink lists the ID, title, and state of all bugs under the FabrikamFiber/Web area path hosted on the fabrikam server.
+
+```
+http://fabrikam:8080/tfs/DefaultCollection/FabrikamFiber/_workitems?_a=query&wiql=SELECT%20%5BSystem.ID%5D%2C%20%5BSystem.Title%5D%2C%20%5BSystem.State%5D%20FROM%20WorkItems%20WHERE%20%5BSystem.TeamProject%5D%3D'FabrikamFiber'%20AND%20%5BSystem.WorkItemType%5D%3D'Bug'%20AND%20%5BSystem.AreaPath%5D%3D'FabrikamFiber%5CWeb'%20%20
+```
+
+Which is comparable to the non-encoded entry:  
+
+```
+http://fabrikam:8080/tfs/DefaultCollection/FabrikamFiber/_workitems?_a=query&wiql=
+SELECT [System.ID], [System.Title], [System.State] 
+   FROM WorkItems 
+   WHERE [System.TeamProject]='FabrikamFiber' 
+   AND [System.WorkItemType]='Bug' 
+   AND [System.AreaPath]='FabrikamFiber\Web'   
+```
+
+::: moniker-end   
+
 ::: moniker range="tfs-2015"  
-## Query hyperlink syntax for TFS 2015   
 
 ```  
 https://{ServerName}/{CollectionName}/{TeamProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
@@ -87,10 +109,9 @@ SELECT [System.ID], [System.Title], [System.State]
    AND [System.AreaPath]='FabrikamFiber\Web'   
 ```
 
-::: moniker-end 
+::: moniker-end   
 
-::: moniker range="tfs-2013"   
-## Query hyperlink syntax for TFS 2013 and previous versions 
+::: moniker range="tfs-2013"    
 
 ```  
 https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage]
@@ -106,11 +127,11 @@ SELECT [System.ID], [System.Title], [System.State]
 	AND [System.FoundIn]='9.0.30304' 
 ```
 
-::: moniker-end 
+::: moniker-end   
 
 
 ## Related articles: 
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
-- [REST API, Wiql](/rest/api/vsts/wit/wiql)
+- [REST API, Wiql](/rest/api/azure/devops/wit/wiql)
  

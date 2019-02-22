@@ -6,9 +6,10 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
 
@@ -70,7 +71,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |**/syncnamechanges**|Specifies to use the work item field to store names and to update as changes are made in Active Directory or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field, specify `false` to disable synchronization for the data field.|  
 |**/reportingname**:`ReportingName`|Specifies the name of the field in the data warehouse to be used for reporting.|  
 |**/reportingrefname**:`ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
-|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [Define and modify work item fields](../xml/define-modify-work-item-fields.md).|  
+|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).|  
 |**/reportingformula:** `Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
 |**/type:** `HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](../xml/field-definition-element-reference.md).|  
 |**/unused**|Lists all fields that are not used by any project defined in the project collection.|  
@@ -101,7 +102,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 ### Attributes that you can change for each work item type  
  You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
--   **Name** that displays on the work item form. See [Control](../xml/control-xml-element-reference.md)   
+-   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).   
 -   **Help text**. See [Apply a field rule](../xml/apply-rule-work-item-field.md).    
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).  
   
@@ -212,7 +213,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 6.  On the **Query** toolbar, choose ![Run Query](_img/icon_runquery.png "Icon_runQuery")**Run**.  
   
-7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Availablecolumns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
+7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Available columns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
   
 8.  Select **Important Rank** in the **Available columns** box, and then choose the **>** button (add selected columns). Choose **OK**.  
   

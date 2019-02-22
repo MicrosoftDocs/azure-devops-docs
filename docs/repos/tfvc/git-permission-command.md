@@ -5,11 +5,11 @@ description: Git permission command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
-ms.date:  04/11/2018
+ms.date:  01/07/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -60,12 +60,15 @@ See [Git repository permission namespaces and actions](/tfs/server/ref/command-l
 
 ## Examples
 
+>[!NOTE]
+>The following examples are broken into multiple lines for readability. To copy and paste them into the command-line and run them, first copy them and paste them into notepad or another tool and edit them so the commands are contained on a single line.
+
 ### View collection level permissions
 
 The following examples lists the permissions for the fabrikam-fiber collection.
 
 ```
-tf git permission /collection:https://fabrikam-fiber.visualstudio.com 
+tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
                   /login:FabrikamUser@hotmail.com,FabrikamPassword
 ```
 
@@ -74,7 +77,7 @@ tf git permission /collection:https://fabrikam-fiber.visualstudio.com
 The following examples lists the project level permissions for the FabrikamFiber project which is in the fabrikam-fiber collection.
 
 ```
-tf git permission /collection:https://fabrikam-fiber.visualstudio.com 
+tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
                   /teamproject:FabrikamFiber
                   /login:FabrikamUser@hotmail.com,FabrikamPassword
 ```
@@ -84,7 +87,7 @@ tf git permission /collection:https://fabrikam-fiber.visualstudio.com
 The following examples lists the project level permissions for the FabrikamFiber repository which is in the FabrikamFiber project.
 
 ```
-tf git permission /collection:https://fabrikam-fiber.visualstudio.com 
+tf git permission /collection:https://dev.azure.com/fabrikam-fiber 
                   /teamproject:FabrikamFiber 
                   /repository:FabrikamFiber 
                   /login:FabrikamUser@hotmail.com,FabrikamPassword
@@ -108,7 +111,7 @@ First, block the Create Branch permission at the repository root for the project
 ```
 tf git permission /deny:CreateBranch 
                   /group:[FabrikamProject]\Contributors 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo
 ```
@@ -118,14 +121,14 @@ Then, allow contributors to create branches under `features` and `users`.
 ```
 tf git permission /allow:CreateBranch 
                   /group:[FabrikamProject]\Contributors 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:features
 
 tf git permission /allow:CreateBranch 
                   /group:[FabrikamProject]\Contributors 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:users
@@ -136,7 +139,7 @@ Allow administrators to create branches under `releases`.
 ```
 tf git permission /allow:CreateBranch 
                   /group:"[FabrikamProject]\Project Administrators" 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:releases
@@ -147,7 +150,7 @@ Finally, allow administrators to create a branch called `master` (in case it eve
 ```
 tf git permission /allow:CreateBranch 
                   /group:"[FabrikamProject]\Project Administrators" 
-                  /collection:https://fabrikam-fiber.visualstudio.com/ 
+                  /collection:https://dev.azure.com/fabrikam-fiber/ 
                   /teamproject:FabrikamProject 
                   /repository:FabrikamRepo 
                   /branch:master

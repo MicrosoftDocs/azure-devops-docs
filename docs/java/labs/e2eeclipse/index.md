@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -34,15 +34,15 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 1. Open chrome and navigate to `https://chrome.google.com/webstore`. Enter "exploratory testing" into the search box. Find the "Test & Feedback" extension from Microsoft Corporation and click "Add to Chrome". Click Install in the dialog.
 
-    ![Adding the Exploratory Test Extenions to Chrome](../_img/e2eeclipse/add-ext.png)
+    ![Adding the Exploratory Test Extension to Chrome](../_img/e2eeclipse/add-ext.png)
 
 1. Once installed, a beaker icon appears in the top right of the Chrome toolbar. Click it to open the UI.
 
-1. Click on the gear icon to open the settings. Select "Connected" and enter your Azure DevOps organization URL and click Next.
+2. Click on the gear icon to open the settings. Select "Connected" and enter your organization URL and click Next.
 
     ![Connect to Azure DevOps Services](../_img/e2eeclipse/connect-to-vsts.png)
 
-1. Select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
+3. Select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
 
     ![Select the Team to Connect to](../_img/e2eeclipse/select-team.png)
 
@@ -69,7 +69,7 @@ In this task you will enforce quality on the master branch by creating branch po
 
     ![Policy configuration](../_img/e2eeclipse/policy.png)
 
-    > **Note**: You can enforce other policy options like comment resolution and minumum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
+    > **Note**: You can enforce other policy options like comment resolution and minimum number of reviewers, as well as specify the merge options (like squashing). You can also add default reviewers.
 
 ## Log a Bug using the Exploratory Test Extension
 
@@ -129,44 +129,44 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
 1. Open Eclipse if it is not already open. Open the MyShuttle2 project.
 
-1. In Team Explorer change the drop down to "Work Items".  If the dropdown does not show work items connect to your Azure DevOps organization via the Team Explorer Home page.
+2. In Team Explorer change the drop down to "Work Items".  If the dropdown does not show work items connect to your organization via the Team Explorer Home page.
 
-1. If there are no queries saved in Azure DevOps Services, a query can be created in Eclipse (but not saved at this time). Right-click on the My Queries folder and select "New Query."
+3. If there are no queries saved in Azure DevOps Services, a query can be created in Eclipse (but not saved at this time). Right-click on the My Queries folder and select "New Query."
 
     ![New query](../_img/e2eeclipse/newquery.png)
 
-1. Run an existing query by double clicking it to find the bug. Or, right click in the New Query panel and select "Run Query." The output of the query will show the bug. Note the ID value of the bug.
+4. Run an existing query by double clicking it to find the bug. Or, right click in the New Query panel and select "Run Query." The output of the query will show the bug. Note the ID value of the bug.
 
     ![Confirm the bug is correctly assigned and in Azure DevOps Services](../_img/e2eeclipse/findbug.png)
 
     > **Note**: If you do not see the bug, ensure that it is assigned to you, since by default only work items assigned to you will appear in the work item list.
 
-1. Create a new branch
+5. Create a new branch
 
     ![New branch](../_img/e2eeclipse/createbranch.png)
 
-1. In the dialog, change the branch name to "totalsBug" and click Create.
+6. In the dialog, change the branch name to "totalsBug" and click Create.
 
     ![New branch](../_img/e2eeclipse/createbranch2.png)
 
-1. In the project view of Eclipse, browse to `src/main/java/com.microsoft.example.servlet` and open the LoginServlet class.
+7. In the project view of Eclipse, browse to `src/main/java/com.microsoft.example.servlet` and open the LoginServlet class.
 
-1. Around line 35, you will see what is causing the bug: the `totalDriverFee` is being calculated but the `driverFeeTotal` session attribute is being set to `totalFareForDriver` (this looks like a classic copy/paste error).
+8. Around line 35, you will see what is causing the bug: the `totalDriverFee` is being calculated but the `driverFeeTotal` session attribute is being set to `totalFareForDriver` (this looks like a classic copy/paste error).
 
     Change this line of code:
     ```java
-        session.setAttribute("driverFeeTotal", totalFareforDriver);
+        session.setAttribute("driverFeeTotal", totalFareForDriver);
     ```
     to
     ```java
         session.setAttribute("driverFeeTotal", totalDriverFee);
     ```
 
-1. Commit your changes by right clicking the file and selecting Team->Commit. Enter "Fixing totals bug #{ID of bug}" as the commit message. By putting the # symbol followed by an ID of a work item in a commit message, Azure DevOps Services will automatically associate the work item with the commit when it's pushed to Azure DevOps Services. In the example of the screenshot, the ID is #698. Click "Commit and Push" to push the changes to Azure DevOps Services.
+9. Commit your changes by right clicking the file and selecting Team->Commit. Enter "Fixing totals bug #{ID of bug}" as the commit message. By putting the # symbol followed by an ID of a work item in a commit message, Azure DevOps Services will automatically associate the work item with the commit when it's pushed to Azure DevOps Services. In the example of the screenshot, the ID is #698. Click "Commit and Push" to push the changes to Azure DevOps Services.
 
     ![Commit and Push](../_img/e2eeclipse/eclipse-newcommit.png)
 
-1. If a window pops up that prompts for credentials, use the following values:
+10. If a window pops up that prompts for credentials, use the following values:
 
     | Name | Value |
     |---|---|
@@ -177,15 +177,15 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     In the Push commits dialog click the Push button.
 
-1. Now that the fix has been pushed to Azure DevOps Services on a branch, you can create a Pull Request. This will be done in Azure DevOps Services following the standard process for pull requests. Under the Code hub, click on Files in the MyShuttle2 repo and there should be a notification that you updated the `totalsBug` branch. Click the link next to it, "Create a pull request."
+11. Now that the fix has been pushed to Azure DevOps Services on a branch, you can create a Pull Request. This will be done in Azure DevOps Services following the standard process for pull requests. Under the Code hub, click on Files in the MyShuttle2 repo and there should be a notification that you updated the `totalsBug` branch. Click the link next to it, "Create a pull request."
 
     ![Create Pull Request](../_img/e2eeclipse/pullrequest.png)
 
-1. Then, in the pull request panel, click "Create" to create the pull request. Note that the bug is associated with the commit.
+12. Then, in the pull request panel, click "Create" to create the pull request. Note that the bug is associated with the commit.
 
     ![Create Pull Request](../_img/e2eeclipse/pullrequest2.png)
 
-1. Once the PR has been created, right-click it in the PR list and click Open in Browser. You should see that the build is running (this is the build mandated by the Branch Policy you set up earlier).
+13. Once the PR has been created, right-click it in the PR list and click Open in Browser. You should see that the build is running (this is the build mandated by the Branch Policy you set up earlier).
 
     ![Build is running to validate the PR](../_img/e2eeclipse/pr-overview.png)
 
@@ -193,36 +193,36 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     > **Note**: You configured the release to only trigger when successful builds off the master branch are available. Since this build is not building from the master branch, these changes will not yet be deployed.
 
-1. Click on the Files tab to open the file compare. Note the changes.
+14. Click on the Files tab to open the file compare. Note the changes.
 
     ![PR File Compare](../_img/e2eeclipse/PR-file-compare.png)
 
     > **Note**: You can comment on code or files in the PR and have conversations with the team throughout the review process.
 
-1. Click Approve to approve the PR.
+15. Click Approve to approve the PR.
 
-1. Now that the policies have been fulfilled, you can complete the PR which will merge the changes into master (the target branch). Click Complete to do the merge.
+16. Now that the policies have been fulfilled, you can complete the PR which will merge the changes into master (the target branch). Click Complete to do the merge.
 
-1. In the dialog, accept the defaults and click Complete merge.
+17. In the dialog, accept the defaults and click Complete merge.
 
     ![Complete the merge](../_img/e2eeclipse/complete-merge.png)
 
-1. The PR completion triggers a new build off the master branch, which in turn will trigger a release. _It also transitions the Bug work item to Resolved_.
+18. The PR completion triggers a new build off the master branch, which in turn will trigger a release. _It also transitions the Bug work item to Resolved_.
 
-1. Click on Builds to watch your build. When the build completes, you will see the unit test and code coverage results as well as SonarQube analysis and quality gates (if you have configured SonarQube integration).
+19. Click on Builds to watch your build. When the build completes, you will see the unit test and code coverage results as well as SonarQube analysis and quality gates (if you have configured SonarQube integration).
 
-1. Click on Releases and open the latest release which should have triggered off the PR merge build completion event.
+20. Click on Releases and open the latest release which should have triggered off the PR merge build completion event.
 
-1. On the Release Summary page, you will see the linked Bug work item.
+21. On the Release Summary page, you will see the linked Bug work item.
 
     ![Linked work item in Release](../_img/e2eeclipse/linked-bug-release.png)
 
-1. Click on commits to see the incoming commits for this release. There is the commit to fix the bug as well as the commit to merge into master.
+22. Click on commits to see the incoming commits for this release. There is the commit to fix the bug as well as the commit to merge into master.
 
     ![Linked commits](../_img/e2eeclipse/linked-commits.png)
 
-1. Click on the Tests tab to see the test results. The UI tests should be passing.
+23. Click on the Tests tab to see the test results. The UI tests should be passing.
 
-1. Open the MyShuttle2 app by navigating to `http://localhost:8081/myshuttledev`. Log in again and verify that the totals column is correct and the Bug has been fixed.
+24. Open the MyShuttle2 app by navigating to `http://localhost:8081/myshuttledev`. Log in again and verify that the totals column is correct and the Bug has been fixed.
 
     ![The bug has been fixed](../_img/e2eeclipse/bug-fixed.png)

@@ -5,9 +5,10 @@ description: Locate reports in SQL Server Reporting Services after upgrading ear
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 

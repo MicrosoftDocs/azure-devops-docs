@@ -1,27 +1,27 @@
 ---
-title: Azure Stack deployment in Azure Pipelines and Team Foundation Server
+title: Deploy to Azure Stack
 description: Understand Azure Stack deployment in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 76C2080A-C1D9-44AF-AA76-1953BA4C2837
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Deploy apps to Azure Stack
+
+**Azure Pipelines**
 
 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)
 is an extension of Azure that enables the agility and fast-paced innovation of cloud computing
 through a hybrid cloud and on-premises environment.
 
->At present, Team Foundation Server can be used to deploy to Azure Stack with Azure AD and cannot be used to deploy to
-an [Azure Stack with Azure Directory Federated Services (AD FS)](/azure/azure-stack/azure-stack-identity-overview). Azure Stack with AD FS requires
-a [service principal with certificate](/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs),
-which is not currently supported in Azure Pipelines/TFS.
+> In addition to supporting Azure AD, Azure DevOps Server 2019 can be used to deploy to Azure stack with [Active Directory Federation Services](/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs) (AD FS) using a [service principal with certificate](https://docs.microsoft.com/en-us/tfs/release-notes/azuredevops2019#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate).
 
 To enable connection to an Azure Stack, you specify it as the **Environment** parameter when you create an
 [Azure Resource Manager service connection](../library/connect-to-azure.md).

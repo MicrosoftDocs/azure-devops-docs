@@ -2,6 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name:  Extend Analytics with OData
-    tocHref: /azure/devops/report/extend-analytics/
-    topicHref: /azure/devops/report/extend-analytics/index
+  - name: Analytics
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/report/index
+    items:
+    - name:  Extend Analytics with OData
+      tocHref: /azure/devops/
+      topicHref: /azure/devops/report/extend-analytics/index

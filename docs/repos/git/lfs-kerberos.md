@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Using Git LFS versions older than 2.4.0 with TFS
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
@@ -25,7 +25,7 @@ If you can't upgrade to 2.4.0, you can remove the Kerberos credential and let Gi
 
 > [!NOTE]
 > Credentials sent via HTTP will be passed in clear text.
-> [Ensure your instance of TFS is configured for HTTPS](../../organizations/security/websitesettings.md), and do not use HTTP with Git-LFS.
+> [Ensure your instance of TFS is configured for HTTPS](/tfs/server/admin/websitesettings), and do not use HTTP with Git-LFS.
 
 0. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
 

@@ -1,16 +1,17 @@
 ---
 title: Set alerts, get notified when changes occur 
 titleSuffix: TFS
-description: Set alerts to get email notifications when changes occur to source code, git, work items, and builds when using Team Foundation Server 
+description: Set alerts to get email notifications when changes occur to source code, git, work items, and builds when using Team Foundation Server
+ms.custom: boards-queries 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 50bac275-61fd-4ded-9c41-ec4c2412160e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2017'
-ms.date: 03/20/2018  
+monikerRange: '<= tfs-2017'
+ms.date: 11/19/2018
 ---
 
 # Set alerts, get notified when changes occur 
@@ -18,7 +19,7 @@ ms.date: 03/20/2018
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!IMPORTANT]  
->This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in Azure Boards and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/howto-manage-personal-notifications.md) and  [Manage notifications for a team](../../notifications/howto-manage-team-notifications.md). 
+>this article describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in Azure Boards and TFS 2017.1 or later version, see [Manage your notifications](../../notifications/howto-manage-personal-notifications.md) and  [Manage notifications for a team](../../notifications/howto-manage-team-notifications.md). 
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts or [team alerts](#team-alerts).
 
@@ -122,7 +123,6 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 ## Related articles
 
-- [Follow a work item or pull request](../work-items/follow-work-items.md)  
 - [Manage your notifications](../../notifications/howto-manage-personal-notifications.md) 
 - [Manage notifications for a team](../../notifications/howto-manage-team-notifications.md) 
 - [Set your profile and preferences](../../organizations/settings/set-your-preferences.md)  

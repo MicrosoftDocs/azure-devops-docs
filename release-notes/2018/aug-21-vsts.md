@@ -64,7 +64,7 @@ After you validate the process, you can then change projects to use the newly cr
 > [!div class="mx-imgBorder"]
 ![Change process for project](_img/139_05.png)
 
-See the [Clone a Hosted XML process to Inheritance](/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited?view=vsts&tabs=new-nav) documentation for more information.
+See the [Clone a Hosted XML process to Inheritance](/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited?view=azure-devops&tabs=new-nav) documentation for more information.
 
 ### Chat about the latest status using the improved Microsoft Teams integration
 

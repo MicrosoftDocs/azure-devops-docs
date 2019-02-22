@@ -2,16 +2,19 @@
 title: npm | REST API Reference for VSTS
 description: Work with npm packages programmatically using the REST APIs for VSTS.
 ms.assetid: 12059603-5562-4AB1-B028-CAC39BB81A51
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 # npm
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
@@ -38,7 +41,24 @@ monikerRange: '>= tfs-2013'
 GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedName}/npm/{packageName}/versions/{packageVersion}?api-version={api-version}&showUnpublished={showUnpublished}
 ```
 
-[!code-REST [GET__packaging_feeds__feedName__npm__packageName__versions__packageVersion__](./_data/npm/GET__packaging_feeds__feedName__npm__packageName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "id": "bootstrap",
+  "name": "bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": null,
+  "deprecateMessage": null
+}
+```
+
 
 ### Scoped packages
 
@@ -46,7 +66,24 @@ GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/fe
 GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedName}/npm/@{packageScope}/{packageName}/versions/{packageVersion}?api-version={api-version}&showUnpublished={showUnpublished}
 ```
 
-[!code-REST [GET__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__](./_data/npm/GET__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/@myscope/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "id": "@myscope/bootstrap",
+  "name": "@myscope/bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": null,
+  "deprecateMessage": null
+}
+```
+
 
 ## Deprecate a package
 
@@ -67,7 +104,29 @@ GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/fe
 PATCH https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedname}/npm/{packageName}/versions/{packageVersion}/content?api-version={api-version}
 ```
 
-[!code-REST [PATCH__packaging_feeds__feedName__npm__packageName__versions__packageVersion__2](./_data/npm/PATCH__packaging_feeds__feedName__npm__packageName__versions__packageVersion__2.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+```json
+{
+  "deprecateMessage": "This package has been deprecated. Please use version 3.3.7 instead."
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "bootstrap",
+  "name": "bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": null,
+  "deprecateMessage": "This package has been deprecated. Please use version 3.3.7 instead."
+}
+```
+
 
 ### Scoped packages
 
@@ -75,7 +134,29 @@ PATCH https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/
 PATCH https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedname}/npm/@{packageScope}/{packageName}/versions/{packageVersion}/content?api-version={api-version}
 ```
 
-[!code-REST [PATCH__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__2](./_data/npm/PATCH__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__2.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/@myscope/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+```json
+{
+  "deprecateMessage": "This package has been deprecated. Please use version 3.3.7 instead."
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "@myscope/bootstrap",
+  "name": "@myscope/bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": null,
+  "deprecateMessage": "This package has been deprecated. Please use version 3.3.7 instead."
+}
+```
+
 
 ## Undeprecate a package
 
@@ -99,7 +180,24 @@ To undeprecate a package, call the deprecate package API with an empty deprecati
 DELETE https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedName}/npm/{packageName}/versions/{packageVersion}?api-version={api-version}
 ```
 
-[!code-REST [DELETE__packaging_feeds__feedName__npm__packageName__versions__packageVersion__](./_data/npm/DELETE__packaging_feeds__feedName__npm__packageName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "id": "bootstrap",
+  "name": "bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": "2016-11-29T20:59:18.9752022Z",
+  "deprecateMessage": null
+}
+```
+
 
 ### Scoped packages
 
@@ -107,7 +205,24 @@ DELETE https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging
 DELETE https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedName}/npm/@{packageScope}/{packageName}/versions/{packageVersion}?api-version={api-version}
 ```
 
-[!code-REST [DELETE__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__](./_data/npm/DELETE__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/@myscope/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+
+#### Sample response
+
+```json
+{
+  "id": "@myscope/bootstrap",
+  "name": "@myscope/bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": "2016-11-29T20:59:19.6158258Z",
+  "deprecateMessage": null
+}
+```
+
 
 ## Download Package
 
@@ -128,14 +243,36 @@ This endpoint is not intended for programmatic usage or bulk downloads.  The ser
 GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedname}/npm/packages/{packagename}/versions/{packageversion}/content?api-version={api-version}
 ```
 
-[!code-REST [GET__packaging_feeds__feedName__npm_packages__packageName__versions__packageVersion__content](./_data/npm/GET__packaging_feeds__feedName__npm_packages__packageName__versions__packageVersion__content.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/packages/bootstrap/versions/3.3.6/content?api-version=2.0-preview
+```
+
+#### Sample response
+
+```json
+"ResponseIsBinary"
+```
+
 
 ### Scoped packages
 ```no-highlight
 GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/feeds/{feedname}/npm/@{packageScope}/packages/{packagename}/versions/{packageversion}/content?api-version={api-version}
 ```
 
-[!code-REST [GET__packaging_feeds__feedName__npm_packages__scope___packageName__versions__packageVersion__content](./_data/npm/GET__packaging_feeds__feedName__npm_packages__scope___packageName__versions__packageVersion__content.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/packages/@myscope/bootstrap/versions/3.3.6/content?api-version=2.0-preview
+```
+
+#### Sample response
+
+```json
+"ResponseIsBinary"
+```
+
 
 ## Release a package
 
@@ -158,7 +295,33 @@ GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/fe
 PATCH https://{account}.pkgs.VisualStudio.com/DefaultCollection/_apis/packaging/feeds/{feedName}/npm/{packageName}/versions/{packageVersion}?api-version={api-version}
 ```
 
-[!code-REST [PATCH__packaging_feeds__feedName__npm__packageName__versions__packageVersion__](./_data/npm/PATCH__packaging_feeds__feedName__npm__packageName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+```json
+{
+  "views": {
+    "op": "add",
+    "path": "/views/-",
+    "value": "release"
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "bootstrap",
+  "name": "bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": null,
+  "deprecateMessage": null
+}
+```
+
 
 
 ### Scoped packages
@@ -167,4 +330,30 @@ PATCH https://{account}.pkgs.VisualStudio.com/DefaultCollection/_apis/packaging/
 PATCH https://{account}.pkgs.VisualStudio.com/DefaultCollection/_apis/packaging/feeds/{feedName}/npm/@{packageScope}/{packageName}/versions/{packageVersion}?api-version={api-version}
 ```
 
-[!code-REST [PATCH__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__](./_data/npm/PATCH__packaging_feeds__feedName__npm__scope___packageName__versions__packageVersion__.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/contoso/npm/@myscope/bootstrap/versions/3.3.6/?api-version=3.0-preview
+```
+```json
+{
+  "views": {
+    "op": "add",
+    "path": "/views/-",
+    "value": "release"
+  }
+}
+```
+
+#### Sample response
+
+```json
+{
+  "id": "@myscope/bootstrap",
+  "name": "@myscope/bootstrap",
+  "version": "3.3.6",
+  "unpublishedDate": null,
+  "deprecateMessage": null
+}
+```
+

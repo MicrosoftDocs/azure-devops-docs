@@ -1,20 +1,26 @@
 ---
-title: Speed up testing by running tests in parallel
-description: Continuous testing. Speed up testing by running tests in parallel for any test runner. 
+title: Run VSTest tests in parallel
+description: Speed up testing by running tests in parallel for any test runner
 ms.assetid: 21D3C181-5067-45C7-8A98-1F0ECB2CCB01
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: jillfra
 ms.author: pbora
 author: pboraMSFT
-ms.ms.date: 09/01/2018
-monikerRange: '>= tfs-2017'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2017'
 ---
 
 # Run tests in parallel for any test runner
 
-**Azure Pipelines | TFS 2018.2 and later**
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+
+::: moniker range="<= tfs-2018"
+> [!NOTE]
+> For TFS, this topic applies to only TFS 2018 Update 2 and later.
+::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
@@ -36,7 +42,7 @@ This article discusses how you can parallelize tests by using multiple agents to
 
 Familiarize yourself with the concepts of [agents](../agents/agents.md) and [jobs](../process/phases.md).
 Each agent can run only one job at a time. To run multiple jobs in parallel, you must configure multiple agents.
-You also need sufficient [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 
 ## Setting up parallel jobs
@@ -81,6 +87,14 @@ test files numbered 2 and 5.
 ![6 tests in 3 slices](_img/run-tests-in-parallel/3slices.png)
 
 ## Sample code
+
+This .NET Core sample uses `--list-tests` and `--filter` parameters of `dotnet test` to slice the tests.
+The tests are run using the NUnit. Test results created by `DotNetCoreCLI@2` test task are then published to the server.
+Import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+
+```
+https://github.com/idubnori/ParallelTestingSample-dotnet-core
+```
 
 This Python sample uses a PowerShell script to slice the tests.
 The tests are run using pytest. JUnit-style test results created by pytest are then published to the server.

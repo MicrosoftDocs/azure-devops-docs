@@ -1,15 +1,15 @@
 ---
-title: Apache JMeter cloud-based load testing with Azure DevOps
+title: Run Apache JMeter load tests
 description: Using JMeter to performance test your application in the cloud using the features of Azure DevOps and TFS
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Run Apache JMeter load tests with Azure DevOps
@@ -25,7 +25,7 @@ Before you start your load testing:
 
 1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
+1. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **Apache JMeter test**.
 
    ![Start a new load test from the New menu](_img/get-started-jmeter-test/JMeterLoadTestVSO-new-menu-item.png)

@@ -1,22 +1,23 @@
 ---
-title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure File Copy
+title: Azure File Copy task
 description: Azure Pipelines and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Deploy: Azure File Copy
+# Azure File Copy task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![icon](_img/azure-file-copy-icon.png) Copy files to 
+Use this task in a build or release pipeline to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
 
 ::: moniker range="<= tfs-2018"
@@ -44,13 +45,18 @@ operations to set up the WinRM HTTPS
 protocol on the virtual machines, open the 5986 port 
 in the firewall, and install the test certificate.
 
+> [!NOTE]
+> If you are deploying to Azure Static Websites as a container in blob storage,
+  you must use **Version 2** or higher of the task in order to preserve the **$web**
+  container name.
+
 ## Demands
 
 None
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/AzureFileCopyV2.md)]
+[!INCLUDE [temp](../_shared/yaml/AzureFileCopyV3.md)]
 ::: moniker-end
 
 ## Arguments
@@ -69,7 +75,7 @@ None
 | **Cloud Service** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter and **Azure VMs** for the **Destination Type** parameter. The name of the Azure Cloud Service in which the virtual machines run. |
 | **Resource Group** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter and **Azure VMs** for the **Destination Type** parameter. The name of the Azure Resource Group in which the virtual machines run. |
 | **Select Machines By** | Depending on how you want to specify the machines in the group when using the **Filter Criteria** parameter, choose **Machine Names** or **Tags**. |
-| **Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FDQNs or IP addresses.<br />Specify tag names for a filter as {TagName}**:**{Value} Example: `Role:DB;OS:Win8.1` |
+| **Filter Criteria** | Optional. A list of machine names or tag names that identifies the machines that the task will target. The filter criteria can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- An output variable from a previous task.<br />- A comma-delimited list of tag names or machine names.<br />Format when using machine names is a comma-separated list of the machine FQDNs or IP addresses.<br />Specify tag names for a filter as {TagName}**:**{Value} Example: `Role:DB;OS:Win8.1` |
 | **Admin Login** | Required if you select **Azure VMs** for the **Destination Type** parameter. The user name of an account that has administrative permissions for all the target VMs.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as **username@domain.com** and built-in system accounts such as **NT Authority\System** are not supported. |
 | **Password** | Required if you select **Azure VMs** for the **Destination Type** parameter. The password for the account specified as the **Admin Login** parameter. Use the padlock icon for a variable defined in the **Variables** tab to protect the value, and insert the variable name here. |
 | **Destination Folder** | Required if you select **Azure VMs** for the **Destination Type** parameter. The folder in the Azure VMs to which the files will be copied. Environment variables such as `$env:windir` and `$env:systemroot` are supported. Examples: ` $env:windir\FabrikamFiber\Web` and `c:\FabrikamFiber` |
@@ -90,7 +96,7 @@ None
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -183,10 +189,8 @@ A suitable account can be easily created for use in a service connection:
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

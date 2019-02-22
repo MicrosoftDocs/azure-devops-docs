@@ -1,23 +1,23 @@
 ---
-title: Visual Studio Test Platform Installer
-description: Acquires the test platform from nuget.org or the tools cache. Satisfies the ‘vstest’ demand and can be used for running tests and collecting diagnostic data using the Visual Studio Test task.
+title: Visual Studio Test Platform Installer task
+description: Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2C65196A-54FD-4A02-9BE8-D9D1837B7111
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Tool: Visual Studio Test Platform Installer
+# Visual Studio Test Platform Installer task
 
-**Azure DevOps Services | TFS 2018 Update 1**
+**Azure DevOps Services | TFS 2018 Update 2**
 
-![](_img/visualstudiotestplatforminstaller.png)
-Acquires the [Microsoft test platform](https://www.nuget.org/packages/Microsoft.TestPlatform/)
-from nuget.org or specified feed and adds it to the tools cache. The installer task satisfies the 'vstest'
+Use this task in a build or release pipeline to acquire the [Microsoft test platform](https://www.nuget.org/packages/Microsoft.TestPlatform/)
+from nuget.org or a specified feed, and add it to the tools cache. The installer task satisfies the 'vstest'
 demand and a subsequent [Visual Studio Test task](../test/vstest.md)
 in a build or release pipeline can run without needing a full Visual Studio install on the agent machine. 
 
@@ -56,10 +56,4 @@ See [Run automated tests from test plans](../../../test/run-automated-tests-from
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

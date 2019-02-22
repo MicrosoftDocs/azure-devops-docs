@@ -1,28 +1,32 @@
 ---
-title: Use Ruby Version
-description: Use Ruby version for Azure Pipelines and TFS
+title: Use Ruby Version task
+description: Select a version of Ruby to run on an agent and optionally add it to PATH
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0b9f5626-08ec-45a3-8a39-aff5b3394398
 ms.manager: madhurig
+ms.custom: seodec18
 ms.author: dastahel
 ms.reviewer: lukillgo
-ms.date: 05/03/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Tool: Use Ruby Version
+# Use Ruby Version task
 
-![icon](_img/ruby.png) Selects a version of Ruby to run on an agent.  Optionally adds it to PATH.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to select a version of Ruby to run on an agent, and optionally add it to PATH.
 
 ## Demands
 
 None
 
 ## Prerequisites
-* A Microsoft-hosted agent, or a self-hosted agent with its tool cache configured (see [Q&A](#how-can-i-configure-a-private-agent-to-use-this-task)).
 
-This task will fail if no Ruby versions are found in the tool cache. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
+* A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Ruby installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [Q&A](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
+
+This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Available Ruby versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -40,7 +44,7 @@ If the task completes successfully, the task's output variable will contain the 
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -54,7 +58,7 @@ For an explanation of tool installers and examples, see [Tool installers](../../
 ### How can I configure a self-hosted agent to use this task?
 
 You can run this task on a self-hosted agent with your own Ruby versions.
-To run this task on a self-hosted agent, set up your agent's tool cache by following the instructions [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
+To run this task on a self-hosted agent, set up Agent.ToolsDirectory by following the instructions [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
 The tool name to use is "Ruby."
 
 <!-- ENDSECTION -->

@@ -1,11 +1,12 @@
 ---
 title: Maven build and release task
+ms.custom: seodec18
 description: Maven build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
@@ -13,11 +14,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: Maven
+# Maven task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![Build: Maven](_img/maven.png) to build your Java code.
+Use this task in a build or release pipeline to build your Java code.
 
 ## Demands
 
@@ -101,14 +102,14 @@ See [The Maven build task now supports PMD analysis out of the box](https://blog
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

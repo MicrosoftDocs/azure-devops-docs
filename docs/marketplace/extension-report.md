@@ -4,7 +4,7 @@ description: An overview of reports available for an extension.
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: devops
 ms.technology: devops-marketplace
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 monikerRange: '>= tfs-2013'
@@ -16,7 +16,7 @@ ms.topic: conceptual
 
 # Extension reporting hub
 
-Extension developers have access to statistics and feedback about how their extension is performing in the [Visual Studio Marketplace](https://marketplace.visualstudio.com). Once you've created and published your extension to the Marketplace, you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
+Extension developers have access to statistics and feedback about how their extension is performing in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). Once you've created and published your extension to the Marketplace, you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or click **Reports** link on the extension details page.
 
 ## Acquisition 
@@ -34,7 +34,7 @@ For paid extension, all transactional details for buy and trials is available wi
 ![acquisition](_img/acq.png)
 
 ## Uninstall (Azure DevOps Services only)
-You can view how many Azure DevOps Services organizations have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
+You can view how many organizations have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
 For Azure DevOps Services paid extension, all transactional details for buy and trials is available with date, organization name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. Refer [here](/azure/devops/extend/extension-report#contact) for more details. 
@@ -81,10 +81,10 @@ Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreemen
 
 * **Acquisition** is the total count of all applicable acquisition events for the extension; install, buy, trial, get started clicks and downloads
 * **Page views** is the total number of extension detail page views. Repeated views by users are counted.
-* **Azure DevOps Services Install** is the total number of Azure DevOps Services organizations the extension is installed. Repeated installs on the same organization are counted. 
+* **Azure DevOps Services Install** is the total number of organizations the extension is installed. Repeated installs on the same organization are counted. 
 * **TFS Install** is the total number of TFS connected organizations the extension is installed. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.  
-* **Azure DevOps Services Trial** is the total number of Azure DevOps Services organizations that started trial. In the same period if the Azure DevOps Services organization makes a purchase, that would be counted too. 
-* **Azure DevOps Services Buy** is the total number of buy events for Azure DevOps Services organizations. Repeated buy on the same organization are counted. 
+* **Azure DevOps Services Trial** is the total number of organizations that started trial. In the same period if the organization makes a purchase, that would be counted too. 
+* **Azure DevOps Services Buy** is the total number of buy events for organizations. Repeated buy on the same organization are counted. 
 * **TFS Buy** is the total number of buy events for TFS connected organizations. Repeated buy on the same organization are counted. TFS disconnected server data isn't available.  
 * **Download from IDE** is the total number of VS extension downloads from Visual Studio IDE to help understand extension uptake directly in VS IDE
 * **Download from Marketplace** is the total number of VS extension downloads from the Marketplace
@@ -100,15 +100,12 @@ Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreemen
 * **Downgrade organizations** represents the count of existing organizations that reduced the quantity of users purchased. 
 * **Cancel organizations** represents the count of organizations which cancelled their purchase. 
 
-
 # Track Usage and Errors
-The recommended way to track usage, load times and errors is with application insights
+The recommended way to track usage, load times and errors is with application insights.
 
-[How to setup with your extension](
-https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/05/30/how-to-integrate-application-insights-monitoring-in-your-team-services-extension/)  
-[How to setup application insights and get the instrumentation key.](
-https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource)  
-[Setting alerts in application insights - spike in exceptions, increase response times etc.](
-https://docs.microsoft.com/en-us/azure/application-insights/app-insights-alerts)  
-[More about application insights](
-https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview)  
+- [How to setup with your extension](
+https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/05/30/how-to-integrate-application-insights-monitoring-in-your-team-services-extension/)
+- [How to setup application insights and get the instrumentation key.](/azure/application-insights/app-insights-create-new-resource)
+- [Setting alerts in application insights - spike in exceptions, increase response times etc.](/azure/application-insights/app-insights-alerts)
+- [More about application insights](/azure/application-insights/app-insights-overview)  
+

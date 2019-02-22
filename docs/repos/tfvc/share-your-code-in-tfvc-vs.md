@@ -6,7 +6,7 @@ ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
@@ -156,7 +156,7 @@ Your whole team can work on the code now. All your changes are tracked in versio
 Yes:
 
  * [Upgrade From Visual SourceSafe](http://msdn.microsoft.com/library/ms253060).
- * [Migrate from Team Foundation Server into Azure DevOps Services](../../articles/migrate-to-vsts-from-tfs.md).
+ * [Migrate from Team Foundation Server into Azure DevOps Services](../../articles/migrate-from-tfs.md).
 
 <a name="workspace_exists"></a>
 ### I don't see the Configure Workspace link shown in the steps above. What do I do next?

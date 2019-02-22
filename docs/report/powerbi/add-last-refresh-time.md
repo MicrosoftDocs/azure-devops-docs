@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
 ms.reviewer: jozimm
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 ms.topic: quickstart
 ms.date: 05/18/2018
@@ -14,7 +14,7 @@ ms.date: 05/18/2018
 
 # Create a column in Power BI for last refresh date
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 After [creating a report](create-quick-report.md) and [publishing it to Power BI.com](publish-power-bi-desktop-to-power-bi.md) one of the most common requests is a way to determine the last time the data was refreshed.  
 

@@ -5,11 +5,11 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 12/18/2017
 monikerRange: '>= tfs-2013'
+ms.date: 12/04/2018
 ---
 
 # Security glossary
@@ -37,7 +37,7 @@ An unauthenticated user of a project. The user is visiting a project and has not
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into an Azure DevOps organization or TFS. These services/servers typically integrate with and rely upon the security features provided by additional services such as Active Directory or Azure Active Directory. To learn more, see [About security and identity](about-security-identity.md).
+Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps or TFS. These services/servers typically integrate with and rely upon the security features provided by additional services such as Active Directory or Azure Active Directory. To learn more, see [About security and identity](about-security-identity.md).
 
 ## Authorization
 
@@ -45,7 +45,9 @@ Authorization refers to the operations performed to verify that the identity whi
 
 ## Basic member
 
-A user account that has been granted membership to an Azure DevOps organization or TFS instance with Basic access. To learn more, see [About access levels](access-levels.md).
+A user account that has been granted membership to an organization in Azure DevOps or TFS instance with Basic access. To learn more, see [About access levels](access-levels.md).
+
+[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)]
 
 ## Conditional access
 
@@ -93,7 +95,7 @@ For on-premises TFS deployments, SSL is optional. To learn more, see [Setting up
 
 ## Stakeholder
 
-A user account that has been granted membership to an Azure DevOps organization or TFS instance with Stakeholder access. With Stakeholder access, you can add and modify work items, check project status, manage pipelines, and view and manage dashboards. To learn more, see [Get started as a Stakeholder](get-started-stakeholder.md).
+A user account that has been granted membership to an organization in Azure DevOps or TFS instance with Stakeholder access. With Stakeholder access, you can add and modify work items, check project status, manage pipelines, and view and manage dashboards. To learn more, see [Get started as a Stakeholder](get-started-stakeholder.md).
 
 ## Team group
 

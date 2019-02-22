@@ -5,7 +5,7 @@ description: Recommendations on how to manage large binary files in Git, Visual 
 ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual

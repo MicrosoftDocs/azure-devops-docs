@@ -5,21 +5,21 @@ ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 06/27/2017
 ---
 
-# Fetch work items with queries programatically in Azure DevOps Services
+# Fetch work items with queries programmatically in Azure DevOps Services
 
-A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programatically using our REST APIs or .NET client libraries. 
+A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programmatically using our REST APIs or .NET client libraries. 
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
 
-* An Azure DevOps Services organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
+* An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
@@ -76,7 +76,7 @@ public class ExecuteQuery
     /// Execute a WIQL query to return a list of bugs using the .NET client library
     /// </summary>
     /// <returns>List of Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>
-    public List<WorkItem> RunGetBugsQueryUsingClientLib()
+    public async List<WorkItem> RunGetBugsQueryUsingClientLib()
     {
         Uri uri = new Uri(_uri);
         string personalAccessToken = _personalAccessToken;
@@ -99,7 +99,7 @@ public class ExecuteQuery
         using (WorkItemTrackingHttpClient workItemTrackingHttpClient = new WorkItemTrackingHttpClient(uri, credentials))
         {
             //execute the query to get the list of work items in the results
-            WorkItemQueryResult workItemQueryResult = workItemTrackingHttpClient.QueryByWiqlAsync(wiql).Result;
+            WorkItemQueryResult workItemQueryResult = await workItemTrackingHttpClient.QueryByWiqlAsync(wiql);
 
             //some error handling                
             if (workItemQueryResult.WorkItems.Count() != 0)
@@ -119,7 +119,7 @@ public class ExecuteQuery
                 fields[2] = "System.State";
 
                 //get work items for the ids found in query
-                var workItems = workItemTrackingHttpClient.GetWorkItemsAsync(arr, fields, workItemQueryResult.AsOf).Result;
+                var workItems = await workItemTrackingHttpClient.GetWorkItemsAsync(arr, fields, workItemQueryResult.AsOf);
 
                 Console.WriteLine("Query Results: {0} items found", workItems.Count);
 

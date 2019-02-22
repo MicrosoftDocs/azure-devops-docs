@@ -6,21 +6,32 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
 ms.reviewer: stansw
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
-ms.date: 11/13/2017
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/1/2018
 ---
 
 # Query guidelines for Analytics with OData
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 Extension developers can benefit by following the guidelines provided in this topic for designing efficient OData queries against the Analytics Service for Azure DevOps. Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
 Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. Restrictive rules enforced by the Analytics Service contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
+
+::: moniker range=">= azure-devops-2019"
+
+>[!NOTE]
+>The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
+```
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -63,7 +74,7 @@ Queries that violate an OData error rule will result in a failed response with a
 - [✔️ DO wait or stop the operation if your query exceeds usage limits](#restrict-wait-stop)
 - [✔️ DO wait or stop the operation if your query fails with a timeout](#question-41065)
 - [✔️ DO include `DateSK` or `DateValue` column in `groupby` clause when you aggregate over snapshot tables](#restrict-aggregate-snapshot)
-- [✔️ DO explicitly address entities with filter clauses](#restrict-explicity-address-entities)
+- [✔️ DO explicitly address entities with filter clauses](#restrict-explicit-address-entities)
 - [✔️ DO use `WorkItemRevisions` entity set to load all the revisions for a given work item](#restrict-workitem-revisions)
 - [✔️ DO use batch endpoint for long queries](#restrict-do-use-batch-endpoint)
 - [✔️ DO specify time zone when filtering on date columns](#restrict-time-zone)
@@ -93,7 +104,7 @@ Here is the message you'll see if you don't have access to a project:
 
 >*The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.*
 
-<!---One of the core principles of Analytics Service is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audince will be able to execute them. 
+<!---One of the core principles of Analytics Service is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audience will be able to execute them. 
 
 If a query tries to access the data in a project for which you do not have access, you will get the following error message.-->
 
@@ -122,7 +133,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemLink
   &$expand=TargetWorkItem($select=WorkItemId, Title)
 ```
 
-Alternatively, you can move the filter to `$filter` expand option in the `$expand` clause. However, it changes the semantic of the query. For example, the following query gets all the links from a given project and conditionally expands the target only if it exists in the same project. Although valid, this approach might cause onfusion as it may be difficult to determine whether a property is not expanded because it is `null` or because it was filtered out. Use this solution only if you really need this particular behavior.
+Alternatively, you can move the filter to `$filter` expand option in the `$expand` clause. However, it changes the semantic of the query. For example, the following query gets all the links from a given project and conditionally expands the target only if it exists in the same project. Although valid, this approach might cause confusion as it may be difficult to determine whether a property is not expanded because it is `null` or because it was filtered out. Use this solution only if you really need this particular behavior.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -149,9 +160,9 @@ You'll need to specify the filter if you expand one of the following properties:
 <a name="project-scoped-endpoint"></a>
 ### ✔️ CONSIDER querying using the project-scoped endpoint
 
-If you're interested in data from a single project, we recommend you use the project-scoped OData endpoint (`/{ProjectName}/_odata/v1.0`). This avoids the problems described in the preceeding two sections, and implicitly filters data to the one project, the referenced entity set, as well as all the expanded navigation properties.
+If you're interested in data from a single project, we recommend you use the project-scoped OData endpoint (`/{ProjectName}/_odata/v1.0`). This avoids the problems described in the preceding two sections, and implicitly filters data to the one project, the referenced entity set, as well as all the expanded navigation properties.
 
-With this simplification, the queries from the previous section could be rewritten to the following form. Note that not only did the filter in the expand clause dissapear, but also there's no need for the filter on the main entity set.
+With this simplification, the queries from the previous section could be rewritten to the following form. Note that not only did the filter in the expand clause disappear, but also there's no need for the filter on the main entity set.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
@@ -204,14 +215,14 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItemSnap
     groupby((DateSK), aggregate($count as Count))
 ```
 
-To learn more about aggregaations, see [Aggregate data](aggregated-data-analytics.md).
+To learn more about aggregations, see [Aggregate data](aggregated-data-analytics.md).
 
 <a id="restrict-aggregate-snapshot"> </a>
 ### ✔️ DO include `DateSK` or `DateValue` column in `groupby` clause when you aggregate over snapshot tables
  
 Since all snapshot entities are modeled as **daily snapshot tables**, you should always include one of the day properties (`DateSK` or `DateValue`) in the grouping clause. Otherwise, the result may appear incorrectly inflated. 
 
-For example, if you grouped `WorkItemSnaphost` only by `AssignedTo` property and aggregate it with count, all the numbers of work items assigned to people would be multiplied by the number of days when each assignment was active. While you may have a  situation where this is your desired outcome, such cases are very rare.
+For example, if you grouped `WorkItemSnapshot` only by `AssignedTo` property and aggregate it with count, all the numbers of work items assigned to people would be multiplied by the number of days when each assignment was active. While you may have a  situation where this is your desired outcome, such cases are very rare.
 
 <a id="restrict-blocked-entity-keys"> </a>
 ### ❌ [BLOCKED] DO NOT use entity keys in resource paths for entity addressing
@@ -222,7 +233,7 @@ OData syntax provides a way to access a particular entity by including its keys 
 
 As the error messages hints, certain client tools can abuse direct entity addressing. Instead of loading all the data in a single request, such clients might choose to query for each entity independently. This is discouraged as it can result in a very high number of requests. Instead, we recommend you use explicit entity addressing as explained in the following section.
 
-<a id="restrict-explicity-address-entities"> </a>
+<a id="restrict-explicit-address-entities"> </a>
 ### ✔️ DO explicitly address entities with filter clauses
 
 If you want to fetch data for a single entity, you should use the same approach as for a collection of entities and explicitly define filters in the `$filter` clause.
@@ -472,7 +483,7 @@ For example, the following query returns the number of work items for each day s
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
+https://analytics.dev.azure.com/{OrganizationName}/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateSK gt 20170101)/
     filter(RevisedDateSK eq null or RevisedDateSK gt 20170101)/
@@ -491,7 +502,7 @@ https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
 
 By default, all the snapshot tables are modeled as *daily snapshot fact* tables. Consequently, if you query for a time range it will get a value for each day. Long time ranges result in a very large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots. 
 
-You can achieve this with additional filter expressions to remove days which don't finish a given week or monnth. Use the `IsLastDayOfPeriod` property, which was added to the Analytics Service with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (e.g. weeks, months, etc).
+You can achieve this with additional filter expressions to remove days which don't finish a given week or month. Use the `IsLastDayOfPeriod` property, which was added to the Analytics Service with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (e.g. weeks, months, etc).
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -694,7 +705,7 @@ OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: {OrganizationName}.analytics.visualstudio.com
 ```
-If the dataset exceeds the limit of 1000 records the query will immediatelly fail with the following error.
+If the dataset exceeds the limit of 1000 records the query will immediately fail with the following error.
 
 > *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Please reduce the number of records by applying additional filters*
 

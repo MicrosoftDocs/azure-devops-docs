@@ -5,26 +5,40 @@ description: How the Analytics service for Azure DevOps manages changes to the O
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 09/10/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/1/2018
 ---
 
 # OData API versioning
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
 
+::: moniker range="azure-devops"
+
 > [!div class="tabbedCodeSnippets"]
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+``` 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="tabbedCodeSnippets"]
+```OData
+https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
 ```
+
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

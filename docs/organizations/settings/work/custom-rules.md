@@ -1,24 +1,28 @@
 ---
-title: Add a custom rule to a work item type to an inherited process
+title: Add a custom rule to a work item type
 titleSuffix: Azure DevOps Services
 description: Add a custom rule to a work item type defined for an inherited process and project
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 11/19/2018
 ---
 
 
-# Add a rule to a work item type  
+# Add a rule to a work item type (Inheritance process)   
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
+
+> [!NOTE]     
+> You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
 
 With a custom rule, you can define a number of actions based on specific conditions. For example, you can apply a rule to support these types of scenarios: 
 
@@ -28,15 +32,19 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
-[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
+ 
 
 ## Rule composition  
 
 Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
 
-Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only will not only apply the rule on the work item form, but also through the API and Excel based Add-in. 
+Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel based Add-in.
  
-As an example, you can make a field required based on the value assigned to the state and another field. For example:   
+As an example, you can make a field required based on the value assigned to the state and another field. For example:
 &nbsp;&nbsp;&nbsp;`(Condition) When a work item State is *Active*` 
 &nbsp;&nbsp;&nbsp;`(Condition) And when the value of *Value Area* = *Business*`   
 &nbsp;&nbsp;&nbsp;`(Action) Then make required *Story Points*`   
@@ -47,9 +55,9 @@ As an example, you can make a field required based on the value assigned to the 
 > |![list of conditions](_img/rules/when-condition.png) | ![list of actions](_img/rules/rule-actions.png)
 
 
+[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
-> [!NOTE]     
-> You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).  
+ 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -61,7 +69,7 @@ As an example, you can make a field required based on the value assigned to the 
 
 You add fields to a selected work item type.  
 	
-0. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.   
+1. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, New custom control](_img/rules/custom-rule-create-rule.png)  

@@ -6,11 +6,11 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/07/2017
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 <!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
@@ -65,7 +65,7 @@ be 10 or fewer TSTUs per five minutes, but will less frequently go as high as 10
 
 ## Pipelines
 
-We take a similar approach to rate limiting in Azure Pipelines. Since pipelines are not associated to a single user like other activities, each pipeline is treated as an individual entity with its own resource consumption tracked. Just like the global consumption limit for users, we apply a 200 TSTU limit for an individual pipeline in a sliding 5-minute window. Even if build agents are self-hosted, there could be load on VSTS resources for operations such as git clone. If a pipeline is delayed or blocked due to rate limiting, a message will appear in the attached logs.
+We take a similar approach to rate limiting in Azure Pipelines. Since pipelines are not associated to a single user like other activities, each pipeline is treated as an individual entity with its own resource consumption tracked. Just like the global consumption limit for users, we apply a 200 TSTU limit for an individual pipeline in a sliding 5-minute window. Even if build agents are self-hosted, there could be load on Azure DevOps Services resources for operations such as git clone. If a pipeline is delayed or blocked due to rate limiting, a message will appear in the attached logs.
 
 <!---
 ###Work item tracking request limits
@@ -101,7 +101,13 @@ with the number of commands in the window given by the Count column, and the tot
 
 For members of the project collection administrators group, this same page can be used to investigate the usage of other users.
 
-<img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
+   # [New navigation](#tab/new-nav)
+   <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
+
+   # [Previous navigation](#tab/previous-nav)
+   <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
+
+   ---
 
 By default, visiting the Usage page will display requests for the last hour. Clicking the link from the email will open the Usage page scoped to the request history from 
 30 minutes before and after the first delayed request. By default, the Usage page will default to showing the past hour. After arriving on the page, review the 
@@ -109,7 +115,7 @@ request history leading up to delayed requests.
 
 <img alt="Usage page TSTU investigation" src="./_img/rate-limits/usage-tstu.png" style="border: 1px solid #CCCCCC" />
 
-Commands consuming a high number of TSTUs will be the ones responsible for the user exceeding the threshold. The User Agent and IP address columns can be helpful to see where these commands 
+Commands consuming a high number of TSTUs (in the hundreds, for example) will be the ones responsible for the user exceeding the threshold. The User Agent and IP address columns can be helpful to see where these commands 
 are coming from. Common problems to look for are custom tools or build service accounts that might be making a large amount of calls in a short time window. To avoid these types of issues,
 tools may need to be rewritten or build processes updated to reduce the type and number of calls made. For example, a tool might be pulling a large version control repository from scratch
 on a regular basis, when it could pull incrementally instead. 

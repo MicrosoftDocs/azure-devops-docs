@@ -6,9 +6,9 @@ layout: HubPage
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
-ms.technology: vs-devops-overview 
+ms.technology: devops-code-git
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
-ms.manager: douge 
+ms.manager: jillfra 
 ms.author: kaelli 
 ms.date: 09/10/2018
 featureFlags:
@@ -100,6 +100,25 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Forks</h3>
 															<p>Work in your own repo without affecting the original project.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/boards/github/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="GitHub logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Azure Boards & GitHub</h3>
+                                                            <p>Use Azure Boards to plan and track work, linking to your GitHub commits and pull requests.</p>
                                                         </div>
                                                     </div>
                                                 </div>

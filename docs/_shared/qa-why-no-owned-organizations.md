@@ -1,14 +1,14 @@
 #### Q:	Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
 
-A: Your list of organizations are associated with the identity that you use to sign in to Azure DevOps. 
+A: Your list of organizations are associated with the identity that you use to sign in to Azure DevOps.
 
-If you're asked to choose between your personal Microsoft account or your work or school account when you sign in, you might have selected the wrong identity. 
+If you're asked to choose between your personal Microsoft account or your work or school account when you sign in, you might have selected the wrong identity.
 
 <img src="_img/sign-in-picker.png" alt="Choose work or school account, or personal Microsoft account" style="border: 1px solid #CCCCCC">
 
 Try to sign out completely from Azure DevOps, then sign in again and select your other identity.
 
-Closing your browser doesn't always sign you out completely from Azure DevOps. Here's how you can sign out completely:
+Closing your browser doesn't always sign you out completely. Here's how you can sign out completely:
 
 1. Close all browsers, including browsers that aren't running Azure DevOps.
 

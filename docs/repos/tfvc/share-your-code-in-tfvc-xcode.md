@@ -5,7 +5,7 @@ description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repotory to TFVC.
+Share your Xcode projects using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repository to TFVC.
 
 ## Download and configure Git-tf
 

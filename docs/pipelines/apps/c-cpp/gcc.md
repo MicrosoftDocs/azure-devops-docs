@@ -1,11 +1,11 @@
 ---
 title: Build your GCC C/C++ app
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn how you can use continuous integration in Azure Pipelines or Team Foundation Server (TFS) to automatically build your GCC C/C++ app.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
-ms.manager: douge
+ms.manager: jillfra
 ms.author: dastahel
 ms.date: 04/18/2018
 ms.topic: quickstart
@@ -72,7 +72,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 1. For the **Agent pool**:
 
- * **Azure Pipelines:** Select _Hosted Linux_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
+ * **Azure Pipelines:** Select _Hosted Ubuntu 1604_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
 
  * **TFS:** Select a pool that includes a [Linux or macOS build agent](../../agents/agents.md).
 

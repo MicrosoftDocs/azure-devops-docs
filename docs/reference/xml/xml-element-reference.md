@@ -1,11 +1,11 @@
 ---
 title: XML element index
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f65e3ae0-817a-413e-b5c3-0ebadc3ba944
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/04/2017
@@ -53,7 +53,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 <td>
 <h3>WITD</h3>
 - [DESCRIPTION](all-witd-xml-elements-reference.md)  
-- [FIELDS](define-modify-work-item-fields.md) (Definition)  
+- [FIELDS](field-definition-element-reference.md) (Definition)  
 - [FORM](all-form-xml-elements-reference.md)  
 - [GLOBALISTS](define-global-lists.md)  
 - [WITD](all-witd-xml-elements-reference.md)  

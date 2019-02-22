@@ -1,18 +1,21 @@
 ---
-title: System Center Virtual Machine Manager (SCVMM)
+title: Deploy with SCVMM
 description: Provision and manage your virtual machines in System Center Virtual Machine Manager (SCVMM)
 ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2018'
 ---
 
-# SCVMM deployment
+# Deploy with System Center Virtual Machine Manager
+
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
 
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
 
@@ -22,13 +25,13 @@ You can automatically provision new virtual machines in System Center Virtual Ma
 
 ## SCVMM connection
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 You need to first configure how Azure Pipelines connects to SCVMM. You cannot use Microsoft-hosted agents to run SCVMM tasks since the VMM Console is not installed on hosted agents. You must set up a self-hosted build and release agent on the same network as your SCVMM server.
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 
 You need to first configure how TFS connects to SCVMM. You must have a build and release agent that can communicate with the SCVMM server.
 

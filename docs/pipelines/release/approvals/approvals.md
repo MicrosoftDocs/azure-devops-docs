@@ -1,11 +1,12 @@
 ---
-title: Control deployments with approvals in Release Management
-description: Understand release approvals in Release Management for Azure Pipelines and Team Foundation Server (TFS)
+title: Control deployments by using approvals
+ms.custom: seodec18
+description: Understand release approvals in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Release deployment control using approvals
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -38,7 +39,10 @@ how to define and use approvals, see [Add approvals within a release pipeline](.
    and enable post-deployment approvers.
 
 You can add multiple approvers for both pre-deployment and post-deployment settings.
-These approvers can be individual users or groups of users.
+These approvers can be individual users or groups of users. These users must have the
+[View releases](../../policies/permissions.md#release-permissions) permission.
+
+
 When a group is specified as an approver, only one of the users in that group needs to approve
 for the deployment to occur or the release to move forward.
 
@@ -61,6 +65,7 @@ Use the **Approval policies** to:
 
    * Specify that the user who requested (initiated or created) the release cannot approve it.
      If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
+     For information about the ID of the requester for CI/CD releases, see [How are the identity variables set?](../../build/variables.md#how-are-the-identity-variables-set)
    * Force a revalidation of the user identity to take into account recently changed permissions.
    * Reduce user workload by automatically approving subsequent prompts if the specified
      user has already approved the deployment to a previous stage in the pipeline

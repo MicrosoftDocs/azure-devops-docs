@@ -1,21 +1,19 @@
 ---
-title: Create & manage bugs using Agile tools
-titleSuffix: Azure Boards and TFS 
-ms.global_help.title: Manage bugs
-ms.global_help.keywords: ms.vss-work-web.work-items-hub, 5
-description: Manage technical debt and triage bugs using Agile tools in Azure Boards & Team Foundation Server
+title: Define & manage bugs or code defects
+titleSuffix: Azure Boards 
+description: Manage technical debt and triage bugs using Agile tools in Azure Boards & TFS 
+ms.custom: "boards-backlogs, seodec18"   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: get-started-article
-ms.date: 09/19/2018
+ms.topic: quickstart
+ms.date: 01/23/2019
 ---
 
-# Manage bugs
-
+# Define, triage, and manage bugs
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -32,20 +30,40 @@ In a nutshell, you manage bugs through the following tasks:
 > * Monitor bug assignments and trends    
 
 
-> [!NOTE]  
-> Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
-the items in your backlog may be called user stories, product backlog items (PBIs), or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+> [!IMPORTANT]  
+> Depending on the process chosen to create your project&mdash;[Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
+the items in your backlog may be called issues, user stories, product backlog items (PBIs), or requirements. All these work item types are similar: they describe the customer value to be delivered and the work to be performed.   
 >
->By default, user stories on Agile backlogs, product backlog items (PBIs) and bugs appear on Scrum backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+>By default, user stories on Agile backlogs, product backlog items (PBIs) and bugs appear on Scrum backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). The Bug work item type isn't defined for the Basic process. Instead, you should track bugs and code defects using the Issue work item type. 
+
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]    
 
-## Capture bugs  
-You can track bugs in much the same way that you track product backlog items (PBIs) or user stories. Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
+## Define and list bugs  
 
-You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or through one of the [testing tools](../../test/overview.md).  
+When bugs are managed along with requirements, you can add them through the [product backlog](create-your-backlog.md) or [Kanban board](../boards/kanban-quickstart.md). When bugs are managed along with tasks, you can add them to a [sprint backlog or taskboard](../sprints/add-tasks.md). 
 
-### Bug work item form 
+Or, you can define a bug from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or using [test tools](#test-tools). Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
+
+You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query, **Active Bugs** (Agile and CMMI) or **Work in Progress** (Scrum). For other bug related tasks, see the following articles:  
+
+::: moniker range=">= azure-devops-2019"
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+
+::: moniker-end
+
+
+## Bug work item form 
 
 The bug work item form tracks similar information to the one shown for the Scrum process. 
 
@@ -80,7 +98,7 @@ To learn more about working in the old web form, see [Add work items to plan and
 
 ---
 
-### Fields specific to bugs
+## Fields specific to bugs
 
 When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
 
@@ -175,13 +193,14 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 </tbody>
 </table>  
  
-<sup>1</sup> To change the menu selection or pick list, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
+<sup>1</sup> To change the menu selection or picklist, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
 
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
 [!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
+<a id="test-tools"> </a>
 ## Capture bugs using test tools
 
 You can create bugs during test sessions using one of the following tools: 
@@ -192,7 +211,7 @@ You can create bugs during test sessions using one of the following tools:
 <a id="triage"> </a>
 ## Triage bugs  
  
-Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.  
+Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.
 
 The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged. 
 
@@ -212,7 +231,7 @@ From the query results page, you can quickly move up and down within the list of
 To learn more, see [Triage work items](../queries/triage-work-items.md). 
 
 
-### Assign bugs to a sprint  
+## Assign bugs to a sprint  
 Once bugs have been triaged, it's time to assign them to a sprint to get fixed. By addressing a set of bugs to get fixed every sprint, your team can keep the total number of bugs to a reasonable size.  
 
 When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do PBIs and user stories](../sprints/assign-work-sprint.md) during your sprint planning sessions. 
@@ -249,11 +268,11 @@ When verifying a bug resolution, you may find that the bug was not completely fi
 <a id="verify-bug">  </a>
 ###Verify a bug, re-run tests defined for web apps 
 ::: moniker-end  
-::: moniker range="vsts"  
-Choose the **Verify** option to re-run tests which identified the bug. You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
+::: moniker range=">= tfs-2018"  
+Choose the **Verify** option to re-run tests which identified the bug. You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
 ::: moniker-end  
-::: moniker range=">= tfs-2017 <= tfs-2018"
-Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.  
+::: moniker range="tfs-2017"
+Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.  
 ::: moniker-end  
 ::: moniker range=">= tfs-2017"  
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
@@ -313,7 +332,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
   
 
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 
 ### Use the Analytics service to create bug reports
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
@@ -322,12 +341,12 @@ You can use Power BI to create more complex reports than what you can get from a
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="<= azure-devops-2019"  
 
 
 ### Pre-defined SQL Server bug reports
 
-If you work from an on-premises TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
+If you work from an on-premises Azure DevOps Server or TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
 
 - [Bug Status](../../report/sql-reports/bug-status-report.md)  
 - [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
@@ -344,9 +363,9 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 SonarQube provides a way of automatically measuring some technical debt. SonarQube finds important violations of best coding practices. You implement Sonar to ensure that developers follow important code metrics like appropriate class and method size or low cyclomatic complexity (a quantitative measure of the number of linearly independent paths through a program's source code).  
 
 By integrating your on-premises TFS with a SonarQube server, you can get the following data:  
-- Results of .Net and JavaScript code analysis  
+- Results of .NET and JavaScript code analysis  
 - Code clone analysis  
 - Code coverage data from tests  
-- Metrics for .Net and JavaScript  
+- Metrics for .NET and JavaScript  
 
-See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.
+See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/devops/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.

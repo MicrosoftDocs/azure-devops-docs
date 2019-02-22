@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -19,7 +19,7 @@ Configure an Azure DevOps Services or TFS Maven or Gradle build task to use Sona
 
 ## Prerequisites
 
- - You have a Team Foundation team project available. If you don't, check out our [Azure DevOps Project for Java topic](/azure/devops-project/azure-devops-project-java).
+ - You have a Team Foundation team project available. If you don't, check out our [Azure DevOps Projects for Java topic](/azure/devops-project/azure-devops-project-java).
  - You have an existing Maven or Gradle build task.
  - You have a [SonarQube server](https://docs.sonarqube.org/display/SONAR/Installing+the+Server) set up to use.
 
@@ -29,7 +29,7 @@ Configure an Azure DevOps Services or TFS Maven or Gradle build task to use Sona
 
 ## Creating a SonarQube endpoint
 
-To use your SonarQube server, you need to setup an endpoint connection under the **Services** tab in the **Control Panel** menu. For explicit instructions on how to configure your SonarQube endpoint, follow the instructions outlined in [the SonarQube Azure DevOps Services documentation](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+Azure DevOps Services-TFS) for configuring the new build task.
+To use your SonarQube server, you need to setup an endpoint connection under the **Services** tab in the **Control Panel** menu. For explicit instructions on how to configure your SonarQube endpoint, follow the instructions outlined in [the SonarQube Azure DevOps Services documentation](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Extension+for+vsts-TFS) for configuring the new build task.
 
 ## Enabling SonarQube analysis
 

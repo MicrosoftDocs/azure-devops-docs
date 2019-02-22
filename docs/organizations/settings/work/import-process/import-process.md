@@ -5,10 +5,10 @@ description: Add or update a process by importing a process to support customiza
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
@@ -34,7 +34,7 @@ For example, updates made to any of the custom processes listed below automatica
 ![Custom processes mapped to projects](_img/ALM_IP_ProcessUse.png)
 
 As you discover additional customizations that you need to make, you can export the existing process, update the process XML definition files, 
-zip the result and re-import the newly updated process. Your changes will be applied to all your existing projects that use that process.    
+zip the result and re-import the newly updated process. Your changes are applied to all your existing projects that use that process.    
 
 Import process supports the following scenarios:   
 *   [Import an existing process from an on-premises Team Foundation Server (TFS)](#import-from-TFS)  
@@ -64,7 +64,7 @@ Migration to Azure DevOps Services is a great time to think about process alignm
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../../_shared/open-process-admin-context-ts-only.md)]
 
 <a id="import-process">  </a>
 ## Import a process
@@ -88,7 +88,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 	> [!IMPORTANT]  
 	>You can't update one of the locked processes: Agile, CMMI, and Scrum.  
 
-3.  Upon successful import, you'll see the following messsage.  
+3.  Upon successful import, you'll see the following message.  
 
     <img src="_img/ALM_IP_AddNewProcessSuccess.png" alt="Import process dialog, Process file successfully imported" style="border: 2px solid #C3C3C3;" />
 
@@ -117,11 +117,11 @@ Once you've added a process, you can update it by importing a zip file where you
 
     <img src="_img/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" />
 
-4.  Upon successful import, you'll see the following messsage. All projects that were created with the process are updated with the modifications. 
+4.  Upon successful import, you'll see the following message. All projects that were created with the process are updated with the modifications. 
 
     <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and projects updated" style="border: 2px solid #C3C3C3;" />
 
-5.  If you renamed or deleted fields or work item types, you will receive a confirmation message. 
+5.  If you renamed or deleted fields or work item types, you receive a confirmation message.
     Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
     [Information messages](resolve-errors.md#info-only) don't require any action on your part.  
 

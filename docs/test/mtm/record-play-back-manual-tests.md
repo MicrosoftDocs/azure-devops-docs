@@ -5,10 +5,10 @@ ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,11 +16,14 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
 Record keystrokes and mouse actions with Microsoft Test Manager 
 while you are testing an app. You can then play back your actions 
 quickly and accurately the next time you run the test. 
 
-Playback is very useful for reproducing bugs. You can retrace the 
+Playback is useful for reproducing bugs. You can retrace the 
 exact actions that the tester performed to the point where the 
 problem was found. Playback also helps you run a test with 
 [different data](../repeat-test-with-different-data.md), 
@@ -125,9 +128,5 @@ you'll have to manually perform that step.
 1. You have to check the result of each step. The recording doesn't check the outputs.
 
    ![Play each step and then check the result.](_img/record-play-manual-tests/play-check-result.png)
-
-## See Also
-
-* [FAQs for recording and playing back manual tests](../reference-qa.md#mtmqna)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

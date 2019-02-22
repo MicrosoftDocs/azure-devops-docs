@@ -5,7 +5,7 @@ title: Static Content Hosting for Extension Content | Extensions for Azure DevOp
 description: Options for hosting static content required by your extension.
 ms.assetid: 0bf474c9-1511-4889-9d91-fc954abdcd6a
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -65,7 +65,7 @@ In this model, static content is served from your own service and not included i
 
 1. Set the `baseUri` property in your extension manifest  For example, assuming a value of `https://myservice.net/extension` and this hub contribution:
 
-``` 
+```json
 	"baseUri": "https://myservice.net/extension",
 	"contributions": [
 		{

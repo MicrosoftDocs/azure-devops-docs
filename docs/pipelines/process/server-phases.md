@@ -1,28 +1,31 @@
 ---
-title: Server jobs in Build and Release Management
+title: Server jobs in Azure pipelines Build and Release
+ms.custom: seodec18
 description: Understand server jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 093FD7B8-65F4-40E0-A429-A7944FD2ED9B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: alewis
 ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
 
+# Server jobs
+
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-# Server jobs
-
-Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server job at present. At present you can add only one task to each server job in your pipeline.
+Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server job at present.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The full syntax to specify an agent job is:
 
@@ -48,7 +51,7 @@ jobs:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -64,7 +67,7 @@ Use the job timeout setting to specify the limit in minutes for running the job.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
@@ -75,7 +78,7 @@ pool:
 ```
 
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -92,7 +95,7 @@ If you are using YAML, you can dispatch multiple server jobs from a single serve
   
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 The `matrix` setting enables a job to be dispatched multiple times, with different variable sets. The `parallel` tag restricts the amount of parallelism. The following job will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
 
@@ -116,7 +119,7 @@ jobs:
     
 ```
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -131,7 +134,7 @@ If you are using YAML, variables can be specified on the job. The variables can 
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Here is an example of defining variables in a job and using them within tasks.
 
@@ -150,7 +153,7 @@ steps:
 - powershell: Write-Host "Input macro = $(my var with spaces). Env var = $env:MY_VAR_WITH_SPACES"
 ```
 ::: moniker-end
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML is not yet supported in TFS.
 ::: moniker-end
 
@@ -165,3 +168,4 @@ Job variables are not yet supported in the web editor.
 * [Jobs](phases.md)
 * [Multiple jobs](multiple-phases.md)
 * [Deployment group jobs](deployment-group-phases.md)
+* [Specify conditions](conditions.md)

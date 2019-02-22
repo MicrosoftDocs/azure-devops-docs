@@ -2,26 +2,31 @@
 title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps Services
 description: Add and manage fields to the web form of a work item type for an Inheritance process model for a project
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 11/19/2018
 ---
 
 # Add and manage fields for an inherited process   
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field or change the label that appears in the work item form for an inherited field.  
 
 For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
+
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -35,7 +40,7 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
 
 To review the list of fields defined for all processes and the WITs which reference them, choose **Process** and then **Fields**.  
 
-Fields listed correspond to all those defined for the organization. For descriptions and usage of each field, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
+Fields listed correspond to all those defined for the organization. For descriptions and usage of each field, as well as the Reference name for each field, look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work%20item%20types%20field/list).
 
 > [!div class="mx-imgBorder"]  
 > ![Make a copy of a selected inherited process](_img/process/list-fields.png) 
@@ -73,7 +78,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
 
 	<a id="layout">  </a>
-0.	(Optional) On the Layout tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field will appear on the form. 
+0.	(Optional) On the Layout tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
@@ -82,7 +87,7 @@ You can add fields and specify the group and page where they should appear. Also
 	> [!NOTE]    
 	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
-0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
+0.	Click **Add field** to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
 
 0.	When you've completed making all your changes, open a work item of the type you've just customized. 
 
@@ -151,17 +156,17 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 3. (Optional) Open the Options tab and specify if the field should be required. 
 
-	![Set options for boolean fiel](_img/process/cpfield-edit-boolean-field-options-up1.png)
+	![Set options for boolean field](_img/process/cpfield-edit-boolean-field-options-up1.png)
 
 4. By default, the field is added to the last group defined in the second column. Open the Layout tab to drag and drop the field to another group on the form.  
 
 	> [!NOTE]    
-	>The field will appear as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Task board, then the field values of True and False display (not a checkbox). 
+	>The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Task board, then the field values of True and False display (not a checkbox).
 
 <a id="add-existing-field">  </a>
 ## Add an existing field to another WIT
 
-Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Simply open the work item and choose the existing field. 
+Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Or, you can add a field defined for one process to a work item type in another process. Simply open the work item and choose the existing field. 
 
 For a list of all work item fields defined for all WITs and processes, see the [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 
@@ -196,7 +201,7 @@ If you add the field back to the form, then the history for it is restored.To de
 <a id="show-hide-field">  </a>
 ### Hide an inherited field or custom control 
 
-0. Open the context menu for the inherited field and choose Hide from layout.
+1. Open the context menu for the inherited field and choose Hide from layout.
 
 	![Bug layout, inherited field, open context menu, choose Hide from layout](_img/process/cpfield-hide-inherited-field.png) 
 
@@ -226,7 +231,7 @@ If you've made changes to an inherited field, and now want to discard those chan
 
 <a id="delete-field">  </a>
 ## Delete a field     
-Deleting a field will delete all data associated with that field, including historical values. Once deleted, you can't recover the data. 
+Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can't recover the data. 
 
 1. You delete the field from the **All processes>Fields** page.  
 
@@ -257,7 +262,7 @@ If you are working with test plans or test cases, see these topics:
 Commenting this out as it is in the process of changing 
 ### Custom field names 
 
-The reference name for any new field you add is prefixed with the name of the inherited process for which it was created. For example, if you add Custom 1 field to MyAgile process, the reference name  will be `MyAgile.Custom1`. If you add Custom 2 field to MyAgile-Copy process, the reference name assigned to it is `MyAgile-Copy.Custom2`. 
+The reference name for any new field you add is prefixed with the name of the inherited process for which it was created. For example, if you add Custom 1 field to MyAgile process, the reference name  is `MyAgile.Custom1`. If you add Custom 2 field to MyAgile-Copy process, the reference name assigned to it is `MyAgile-Copy.Custom2`. 
 
 By adding all customizations to the same base inherited process, you simplify the naming conventions that get applied to a custom fields. This can be useful particularly when REST APIs are employed.  
 

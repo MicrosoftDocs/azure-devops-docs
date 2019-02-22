@@ -5,49 +5,65 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: c34bdc56-c731-4211-b8f4-802973d864da
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
-ms.date: 09/10/2018
+ms.manager: jillfra
+ms.author: chcomley
+author: chcomley
+ms.date: 09/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
- 
+# Approve extension requests
 
-# Approve extensions for a project collection
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
-**Azure DevOps Services** | **TFS**
+As a project collection administrator, you receive an email when another project member requests an extension. When you approve the request, the extension is automatically installed to Azure DevOps Services or Team Foundation Server (TFS).
 
-As a project collection administrator, you receive an email when another project member requests an extension. When you approve the request, Azure DevOps Services or Team Foundation Server (TFS) automatically installs the extension.
+## Prerequisites
 
-To approve extensions, you must have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
+To approve extensions, you must have [**edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
-1.	Go to your Azure DevOps Services or TFS home page, then go to your project:
-    * Azure DevOps Services:```https://dev.azure.com/{organization}/{project}```
-    * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
+## Approve requests
 
 [!INCLUDE [temp](../_shared/new-navigation.md)]
 
 # [New navigation](#tab/new-nav)
 
+1. Go to your Azure DevOps Services or TFS home page, then go to your project:
+    * Azure DevOps Services:```https://dev.azure.com/{organization}/{project}```
+    * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
+
 2. Select the shopping bag icon and **Manage extensions**.
 
    ![Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
 
+3. Review and approve your requested extensions.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Extensions tab, requested extensions](_img/get-tfs-extensions/connected/approve-request-tfs.png)
+
+    After you approve extension requests, the extensions are automatically installed.
+
+4. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md) to users who need access.
+
 # [Previous navigation](#tab/previous-nav)
+
+1. Go to your Azure DevOps Services or TFS home page, then go to your project:
+    * Azure DevOps Services:```https://dev.azure.com/{organization}/{project}```
+    * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
 2. Select the shopping bag icon and **Manage extensions**.
 
    ![Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
 
----
-
 3. Review and approve your requested extensions.
 
-    <img alt="Extensions tab, requested extensions" src="_img/get-tfs-extensions/connected/approve-request-tfs.png" style="border: 1px solid #CCCCCC" />
+   > [!div class="mx-imgBorder"] 
+   > ![Extensions tab, requested extensions](_img/get-tfs-extensions/connected/approve-request-tfs.png)
 
-    After you approve extension requests, they are automatically installed.
+    After you approve extension requests, the extensions are automatically installed.
 
 4. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md) to users who need access.
 
-5. Remember to tell your team about installed extensions, so they can start using their capabilities.
+---
+
+Remember to tell your team about installed extensions, so they can start using their capabilities.

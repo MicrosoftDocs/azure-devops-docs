@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 12/04/2017
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 Don't have permissions to install extensions? You can request extensions instead.
 
-0. Try to install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+0. Try to install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
 1. Select the project collection (TFS) or project (Azure DevOps Services) where you want to install the extension. If you don't have permission to install the extension, you can request it now.
 

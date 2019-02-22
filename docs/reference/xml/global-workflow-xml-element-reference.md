@@ -5,10 +5,10 @@ description: Syntax and usage of the global workflow elements to define data fie
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9e96bf19-6ba8-4686-91e3-b4aa2a57f6ac
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 09/10/2017
 ---
 

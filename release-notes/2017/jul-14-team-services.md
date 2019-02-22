@@ -78,7 +78,7 @@ When preparing a PR or commenting you sometimes have a short list of things that
 
 ![Task list toolbar](_img/07_14_13.png)
 
-Once you’ve added a task list, you can simply check the boxes to mark items as completed. These are expressed and stored within the comment as `[ ]` and `[x]` in Markdown. See [Markdown guidance](/vsts/reference/markdown-guidance#checklist-or-task-list) for more information.
+Once you’ve added a task list, you can simply check the boxes to mark items as completed. These are expressed and stored within the comment as `[ ]` and `[x]` in Markdown. See [Markdown guidance](https://visualstudio.microsoft.com/docs/reference/markdown-guidance#checklist-or-task-list) for more information.
 
 ![Task list complete](_img/07_14_14.png)
 
@@ -89,7 +89,7 @@ Show your support for a PR comment with a single click on the __like__ button. Y
 
 ##Build
 ### Pull request build variables
-You can now get the pull request ID, source branch, and target branch from  [build variables](/vsts/build/define/variables).
+You can now get the pull request ID, source branch, and target branch from  [build variables](https://visualstudio.microsoft.com/docs/build/define/variables).
 
 ### Faster publishing of artifacts from Windows agents to file shares
 We’ve added an option to make it faster to publish artifacts from Windows agents to file shares. In the __Publish Build Artifacts__ task arguments, select **Enable Copy Concurrency** to enable multi-threaded mode and copy multiple files at the same time. This is equivalent to `robocopy /mt`. Optionally you can specify the number of threads in the **Copy Concurrency Value** (the default is 8).
@@ -169,7 +169,7 @@ A team admin can configure their team’s default delivery preference via the te
 ###Constraints on SVG images, screenshots and badges
 Due to security concerns, we have added SVG constraints to make extensions safer.
 * The icons and screenshot can no longer be SVG.
-* The badges provided in the manifest can not be SVGs unless they are from [approved badge providers](/vsts/integrate/extensions/develop/manifest#approvedbadges).
+* The badges provided in the manifest can not be SVGs unless they are from [approved badge providers](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/manifest#approvedbadges).
 * Images in README.md and CHANGELOG.md can not be SVGs unless they are from approved badge providers.
 
 ##Feedback

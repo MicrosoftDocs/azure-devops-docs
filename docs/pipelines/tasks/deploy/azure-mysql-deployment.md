@@ -1,19 +1,22 @@
 ---
-title: Azure Database for Mysql Deployment
-description: This is an early preview. Run your scripts and make changes to your Azure DB for Mysql?.
+title: Azure Database for Mysql Deployment task
+description: Run your scripts and make changes to your Azure DB for Mysql. 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BD1BED02-F04E-11E7-8C3F-9A214CF093AE
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Deploy: Azure Database for Mysql Deployment
+# Azure Database for Mysql Deployment task
 
-![](_img/azuremysqldeployment.png) This is an early preview. Run your scripts and make changes to your Azure DB for Mysql?.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to run your scripts and make changes to your Azure DB for Mysql. Note that this is an early preview version.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -41,10 +44,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

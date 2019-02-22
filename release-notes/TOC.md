@@ -1,5 +1,12 @@
 # [Features timeline](index.md)
+# 2019
+## [February 4](2019/sprint-147-update.md)
+## [January 14](2019/sprint-146-update.md)
 # 2018
+## [December 4](2018/sprint-144-update.md)
+## [November 12](2018/sprint-143-update.md)
+## [October 22](2018/sprint-142-update.md)
+## [October 1](2018/sprint-141-update.md)
 ## [September 20](2018/sprint-140-update.md)
 ## [September 10](2018/sep-10-azure-devops-launch.md)
 ## [August 21](2018/aug-21-vsts.md)

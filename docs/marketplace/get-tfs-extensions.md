@@ -5,11 +5,11 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 9/27/2017
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
  
@@ -174,7 +174,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 	<img alt="Find and upload your downloaded extension" src="./_img/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
 
-	[Why can't I upload extensions?](#no-upload)
+	[Why can't I upload extensions?](tfs-extension-faqs.md#q-why-cant-i-upload-extensions-to-tfs)
 
 ### Install in your project collection
 

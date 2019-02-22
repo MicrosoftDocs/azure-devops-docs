@@ -1,19 +1,22 @@
 ---
 title: Run the agent with a self-signed certificate
+ms.custom: seodec18
 description: Learn how to run the build and release agent with a self-signed certificate for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 09E36E4D-D94B-4F5B-BE4D-9E7B4E7B68E2
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: chrispat
-ms.date: 01/25/2018
-monikerRange: '>= tfs-2017 < vsts'
+ms.date: 10/15/2018
+monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
 # Run the agent with a self-signed certificate
+
+[!INCLUDE [version-tfs-only-2017](../_shared/version-tfs-only-2017.md)]
 
 This topic explains how to run a v2 self-hosted agent with self-signed certificate.
 
@@ -36,7 +39,7 @@ This error may indicate the server certificate you used on your TFS server is no
 Windows: Windows certificate store
 Linux: OpenSSL certificate store
 macOS: OpenSSL certificate store for agent version 2.124.0 or below
-       Keychian for agent version 2.125.0 or above
+       Keychain for agent version 2.125.0 or above
 ```
 
 You can easily verify whether the certificate has been installed correctly by running few commands.
@@ -66,9 +69,10 @@ Pass `--sslskipcertvalidation` during agent configuration
 > The libcurl library on your Linux or macOS machine needs to built with OpenSSL, [More Detail](https://github.com/dotnet/corefx/issues/9728)
 
 ### Git get sources fails with SSL certificate problem (Windows agent only)
-We ship git.exe as part of windows agent, we use this git.exe for all Git related operation.
-When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the git.exe we shipped to allow that self-signed SSL certificate.
-There are 2 approach to solve the problem.
+We ship command-line Git as part of the Windows agent.
+We use this copy of Git for all Git related operation.
+When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the Git we shipped to allow that self-signed SSL certificate.
+There are 2 approaches to solve the problem.
 
 1. Set the following git config in global level by the agent's run as user.
 ```bash
@@ -76,7 +80,7 @@ git config --global http."https://tfs.com/".sslCAInfo certificate.pem
 ```
 > [!NOTE]
 >
-> Setting system level git config is not reliable on Windows, since the system level .gitconfig file is stored at the copy of git.exe we packaged which will get replaced whenever the agent is upgraded to a new version.
+> Setting system level Git config is not reliable on Windows. The system .gitconfig file is stored with the copy of Git we packaged, which will get replaced whenever the agent is upgraded to a new version.
 
 2. Enable git to use SChannel during configure with 2.129.0 or higher version agent
 Pass `--gituseschannel` during agent configuration
@@ -103,7 +107,7 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
 
 - Install CA certificate(s) into machine certificate store
   - Linux: OpenSSL certificate store
-  - macOS: System or User Keychian
+  - macOS: System or User Keychain
   - Windows: Windows certificate store
 
 - Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive` and `--sslclientcertpassword` during agent configuration.   
@@ -118,4 +122,4 @@ When that IIS SSL setting enabled, you need to use `2.125.0` or above version ag
  Windows: Windows Credential Store
  ```
 
-Click [here](https://github.com/Microsoft/vsts-agent/blob/master/docs/design/clientcert.md) for more information about agent client certificate support.
+Learn more about [agent client certificate support](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/design/clientcert.md).

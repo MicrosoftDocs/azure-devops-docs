@@ -4,12 +4,12 @@ description: Authenticating to feeds with NuGet in Azure DevOps Services
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2017
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Use NuGet with Azure DevOps Services feeds
@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 **Azure DevOps Services**
 
 > [!NOTE]
-> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/azure/devops/pipelines/packages/nuget-restore) and [publish](/azure/devops/pipelines/targets/nuget) packages. 
+> This page covers interactive scenarios. In Azure Pipelines, use the NuGet step to [restore](/azure/devops/pipelines/packages/nuget-restore) and [publish](/azure/devops/pipelines/artifacts/nuget) packages. 
 
 [!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
 
@@ -96,8 +96,8 @@ nuget.exe sources add -name {your feed name} -source {your feed URL} -username {
 Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
 
 ## Download the credential provider directly
-You can download the credential provider directly from this link:
-`https://pkgs.dev.azure.com/{organizationName}/_apis/public/nuget/client/CredentialProviderBundle.zip` 
+You can download the credential provider directly from this link. Replace `{org_name}` with your organization name:
+`https://pkgs.dev.azure.com/{org_name}/_apis/public/nuget/client/CredentialProviderBundle.zip` 
 
 ## Advanced credential provider scenarios
 ### Install the credential provider

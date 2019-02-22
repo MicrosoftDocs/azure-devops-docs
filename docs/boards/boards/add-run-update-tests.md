@@ -1,27 +1,26 @@
 ---
 title: Add, run, and update inline tests
-titleSuffix: Azure Boards and TFS  
-description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Azure Boards & Team Foundation Server   
+titleSuffix: Azure Boards  
+description: Add, run, and update manual test cases on your Kanban board for lightweight tracking in Azure Boards, Azure DevOps, & Team Foundation Server   
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 03/20/2018
+ms.date: 02/14/2019
 ---
 
 #Add, run, and update inline tests
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
-
+[!INCLUDE [temp](../../_shared/dev15-and-ts-version-header.md)]  
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
 
-
-In this topic, you'll learn: 
+In this article, you'll learn: 
 > [!div class="checklist"]    
 > * How to add inline tests to a backlog item from your Kanban board  
 > * How to run tests and update the status of tests  
@@ -32,17 +31,12 @@ In this topic, you'll learn:
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
-
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
 
 ## Open your Kanban board from the web portal
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 0. To view your Kanban board, open your project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
 
@@ -54,21 +48,16 @@ Tests you create from the Kanban board are automatically linked to the user stor
 	> ![Choose another team's board](_img/quickstart/select-kanban-team-board.png)  
 
 	> [!TIP]    
-	> Choose the ![](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the ![ ](/azure/devops/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
 
 0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](_img/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
@@ -79,25 +68,24 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 0. Your Kanban board displays. 
 
-	![Kanban board, Agile template](_img/kanban-basics-intro.png)   
+	![Kanban board, Agile template](_img/kanban-basics-intro.png)  
 
----
-
+::: moniker-end
 
 ## Add tests   
 
 1. To start adding tests, open the menu for the work item.  
 
-> [!div class="mx-imgBorder"]  
-> ![Open the context menu of a backlog item to add inline test case](_img/i-test-add-test.png)   
+	> [!div class="mx-imgBorder"]  
+	> ![Open the context menu of a backlog item to add inline test case](_img/i-test-add-test.png)   
 
-  Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
+	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.
 
-  For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
+	For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
 
-	<img src="_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 1px solid #C3C3C3;" /> 
+	![Inline test cases get added to test suites and test plans](_img/i-test-plan-suite.png) 
 
-  To learn more about test plans and test suites, see [Plan your tests](../../test/create-a-test-plan.md).  
+	To learn more about test plans and test suites, see [Plan your tests](../../test/create-a-test-plan.md).  
 
 2. If you have a number of tests to add, simply keep typing each title and click Enter. 
 
@@ -161,7 +149,7 @@ Additional ways you can quickly add linked items and objects to user stories fro
 - [Add inline tasks](add-task-checklists.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
-To initiate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../../test/perform-exploratory-tests.md).
+To initiate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
 
 <a name="test-status-kanban"></a>
 ### Test status in the Kanban board

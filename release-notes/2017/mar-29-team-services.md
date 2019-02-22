@@ -77,7 +77,7 @@ Individual folders or branches can be imported to the Git repository, or the ent
 ## Multiple recipients included on the same email (preview)
 With this feature enabled, the recipients of an email notification are combined on the TO line of a single email. Previously, individual emails were sent to each recipient. This made it difficult to know who else received the notification and to have a conversation about the activity over email. Also, if you are a member of multiple groups that receive a notification, you will now only get one email, instead of one per group.
 
-This feature applies to default (out of the box) and team subscriptions that are capable of targeting multiple recipients. For example, with this and the __Out of the box notifications__ feature enabled, all reviewers (except for those that have opted out) of an updated pull request will be included on a single email.
+This feature applies to default (out of the box) and team subscriptions that are capable of targeting multiple recipients. For example, with this and the __Out of the box notifications__ feature enabled, all reviewers (except for those that have opt’d out) of an updated pull request will be included on a single email.
 
 This feature can be enabled by an account admin by switching on the account-level __Combine email recipients__ via the __Preview features__ panel under the user menu.
 
@@ -92,7 +92,7 @@ If you are looking for more flexibility, such as a task to run only for certain 
 and(failed(), eq(variables['Build.Reason'], 'PullRequest'))
 ```
 
-See [Specify conditions for running a task](/vsts/build/concepts/process/conditions).
+See [Specify conditions for running a task](https://visualstudio.microsoft.com/docs/build/concepts/process/conditions).
 
 ##Package Management adds npm READMEs and download button
 You can now see the README of any npm package that includes a README.md in the package. READMEs can help your team document and share knowledge about your packages.
@@ -102,7 +102,7 @@ You can also download any npm package using the __Download__ button in the comma
 ![npm readme](_img/03_29_13.png)
 
 ##Updated Package Management experience available to all accounts
-After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](../2017/feb-15-team-services#updated-package-management-experience) available to all accounts. Learn more about the update [here](/vsts/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
+After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](https://visualstudio.microsoft.com/articles/news/2017/feb-15-team-services#updated-package-management-experience) available to all accounts. Learn more about the update [here](https://visualstudio.microsoft.com/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
 
 ![package experience](_img/03_29_14.png)
 
@@ -132,14 +132,14 @@ Users can now post questions for any extension on the [__Marketplace__](https://
 ![marketplace qa](_img/03_29_09.png)
 
 ##Enhancements to display publisher’s terms, license, and privacy policy in Marketplace
-It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at https://docs.microsoft.com/vsts/integrate/extensions/develop/manifest.
+It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at https://visualstudio.microsoft.com/docs/integrate/extensions/develop/manifest.
 
 The License and Privacy Policy is also available in the __extension details__ page and presented when the user downloads the extension.
 
 ##Improved sign-out
 In the past, users have been unable to completely Sign out of their account when clicking __Sign out__. With these changes, users will be able to globally sign out from all Visual Studio resources. The vast majority of users should see no impact from this change, but we have found that some customers may experience issues signing into the product due to group policy&ndash;based security settings around trusted sites. This only affects sign in/out using Edge and Internet Explorer. Other browsers will be unaffected.
 
-During sign-in, if you are redirected back to the sign-in page again, you are likely encountering this problem and you can either switch browsers or add an entry into your __Internet Options trusted sites zone__. In addition, organizations experiencing this can correct the group policy for their entire organization in a similar manner. More information can be found in the [KB article](https://support.microsoft.com/en-us/help/4013279/can-t-sign-in-to-visual-studio-team-services-through-internet-explorer).
+During sign-in, if you are redirected back to the sign-in page again, you are likely encountering this problem and you can either switch browsers or add an entry into your __Internet Options trusted sites zone__. In addition, organizations experiencing this can correct the group policy for their entire organization in a similar manner. More information can be found in the [KB article](https://support.microsoft.com/help/4013279/can-t-sign-in-to-visual-studio-team-services-through-internet-explorer).
 
 We think these features will help improve your workflows while addressing feedback, but we would love to hear what you think. Please don’t hesitate to send a smile or frown through the web portal, or send other comments through the [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 

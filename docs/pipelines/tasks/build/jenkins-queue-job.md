@@ -1,22 +1,23 @@
 ---
 title: Jenkins Queue Job build and release task
+ms.custom: seodec18
 description: Queue a job on a Jenkins server build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/30/2016
 monikerRange: '>= tfs-2017'
 ---
 
-# Build: Jenkins Queue Job
+# Jenkins Queue Job task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/jenkins-queue-job.png) Queue a job on a Jenkins server
+Use this task in a build or release pipeline to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -72,14 +73,14 @@ None
 <tr>
 <td>Parameterized job</td>
 <td>
-<p>Select this option if the Jekins job requires parameters.</p>
+<p>Select this option if the Jenkins job requires parameters.</p>
 </td>
 </tr>
 
 <tr>
 <td>Job parameters</td>
 <td>
-<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the paramter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> paramter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
+<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
 </td>
 </tr>
 
@@ -111,7 +112,7 @@ Results will be downloaded to the <b>$(Build.StagingDirectory)/jenkinsResults/&l
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -120,7 +121,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

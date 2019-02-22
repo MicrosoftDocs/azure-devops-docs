@@ -1,22 +1,25 @@
 ---
-title: Build and Deploy - Azure Key Vault task
-description: Learn about Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+title: Azure Key Vault task
+description: Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
-# Deploy: Azure Key Vault
+# Azure Key Vault task
+
+**Azure Pipelines**
 
 ### Overview
 
-![icon](_img/azure-key-vault-icon.png) This task is used to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
+Use this task in a build or release pipeline to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
 from an [Azure Key Vault](/rest/api/keyvault/about-keys--secrets-and-certificates) instance.
 The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a pipeline.
 The task is Node-based, and works with agents on Linux, macOS, and Windows.
@@ -107,7 +110,7 @@ or to suggest new features that you would like to see.
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -115,6 +118,4 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
 

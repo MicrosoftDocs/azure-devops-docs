@@ -1,26 +1,26 @@
 ---
-title: Access Analytics service data from the Power BI desktop
+title: Access Analytics data from Power BI desktop
 titleSuffix: Azure DevOps Services  
 description: How to access Analytics Service OData from a Power BI Desktop OData feed for Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= azure-devops-2019'
 ms.date: 09/10/2018
 ---
 
 # Connect using the Power BI OData feed
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)] 
 
-You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any Azure DevOps organization that has alternate credentials enabled. OAuth is currently not supported. 
+You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any organization that has alternate credentials enabled in Azure DevOps. OAuth is currently not supported. 
 
 ## Access the Analytics service OData feed
-1. Make sure you have installed the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).  
+1. Make sure you have installed the [Analytics extension](../analytics/analytics-extension.md).  
 
 2. Make sure you have configured the [permissions required to access the Analytics service](../analytics/analytics-security.md).  
 

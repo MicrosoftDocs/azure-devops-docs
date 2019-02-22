@@ -1,18 +1,21 @@
 ---
 title: Deploy a build and release agent on Linux
+ms.custom: seodec18
 description: Learn how you can easily deploy a private build and release agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 11/29/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Deploy an agent on Linux
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -30,9 +33,9 @@ To build or deploy you'll need at least one agent. A Linux agent can build and d
 
 Where are your builds and releases running?
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
+**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
 
 ::: moniker-end
 
@@ -57,13 +60,38 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <a name="download-configure"></a>
 ## Download and configure the agent
 
-::: moniker range=">= tfs-2017"
+::: moniker range="azure-devops"
 
-### Azure Pipelines and TFS 2017 and newer
+### Azure Pipelines
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
+[!INCLUDE [include](_shared/agent-pools-tab.md)]
+</li>
+
+<li>Click **Download agent**.</li>
+
+<li>On the **Get agent** dialog box, click **Linux**.</li>
+
+<li>On the left pane, select the processor architecture (x64 or ARM).</li>
+
+<li>On the right pane, click the **Download** button.
+
+<li>Follow the instructions on the page.</li>
+
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.</li>
+</ol>
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+### TFS 2017 and TFS 2018
+
+<ol>
+<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
+<li>In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 
@@ -75,7 +103,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 <li>Follow the instructions on the page.</li>
 
-<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.</li>
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
 </ol>
 
 ::: moniker-end
@@ -84,7 +112,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/vsts-agent/releases/latest).
+0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
 0. Follow the instructions on that page to download the agent.
 
@@ -97,7 +125,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
@@ -131,6 +159,9 @@ To run the agent interactively:
  ```bash
 ./run.sh
  ```
+
+To use your agent, run a [job](../process/phases.md) using the agent's pool.
+If you didn't choose a different pool, your agent will be in the **Default** pool.
 
 ## Run as a systemd service
 
@@ -264,13 +295,15 @@ You can use the template described above as to facilitate generating other kinds
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 ### Why is sudo needed to run the service commands?
 
 `./svc.sh` uses `systemctl`, which requires `sudo`.
 
-Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vsts-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
+Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/azure-pipelines-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 ::: moniker-end
 
@@ -282,15 +315,15 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vs
 
 [Run the agent behind a web proxy](proxy.md)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [include](../_shared/qa-versions.md)]
 ::: moniker-end
 

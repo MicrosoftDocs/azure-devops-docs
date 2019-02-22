@@ -1,17 +1,17 @@
 ---
-title: Glossary for public projects
+title: Glossary for public projects in Azure DevOps
 titleSuffix: Azure DevOps Services Public Project
 description: Description of key concepts and terms 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.reviewer:
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: jillfra
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
-ms.date: 07/02/2018
-monikerRange: 'vsts'
+ms.date: 12/04/2018
+monikerRange: 'azure-devops'
 ---
 
 
@@ -81,9 +81,9 @@ Org Project	Projects that are visible to everyone in the Organization (Azure AD 
 
 ## Pipeline 
 
-Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs-vsts.md). 
+Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs.md). 
 
-![Pipeline concept end-to-end](/azure/devops/pipelines/_img/pipeline-concept-end-to-end.png)
+![Pipeline concept end-to-end](/../../pipelines/_img/pipeline-concept-end-to-end.png)
 
 
 ## Private project	

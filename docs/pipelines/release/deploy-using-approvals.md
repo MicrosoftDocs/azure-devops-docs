@@ -1,11 +1,12 @@
 ---
-title: Use approvals and gates to control your deployment
+title: Control deployments with approvals and gates 
+ms.custom: seodec18
 description: DevOps CI CD - Use a combination of manual deployment approvals, gates, and manual intervention to control your deployment in Azure Pipelines and TFS
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -13,6 +14,8 @@ monikerRange: '>= tfs-2018'
 ---
 
 # Use approvals and gates to control your deployment
+
+[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -198,4 +201,4 @@ auditing capabilities you may require.
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy to IIS web servers on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+> [Integrate with ServiceNow change management](approvals/servicenow.md)

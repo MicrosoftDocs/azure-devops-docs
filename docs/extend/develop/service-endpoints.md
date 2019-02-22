@@ -5,7 +5,7 @@ title: Service Endpoints | Extensions for Azure DevOps Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -157,7 +157,7 @@ Add the following `contributions` array underneath the `targets` array of the ba
 > Below is what your endpoint will look like after you've packaged and published your extension. See the [Next Steps](#next-steps) section below for info on how to package and publish.
 
 
-If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new service endpoint to your Azure DevOps Services organization.
+If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new service endpoint to your organization.
 <img alt= "Service endpoint picker" src="./_img/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Go ahead and create a service endpoint using the Fabrikam endpoint.
@@ -192,7 +192,7 @@ For instance, assuming that we had a property in the endpoint named subscription
 The `task.json` file describes your build task.
 
 > [!NOTE]
-> Take a look at the [build task reference](./build-task-schema.md) to find the schema for the build task json file. 
+> Take a look at the [build task reference](./integrate-build-task.md) to find the schema for the build task json file. 
 
 Create a `task.json` file in your `BuildTaskFolder` directory, if you have not created this folder yet, do so now. 
 

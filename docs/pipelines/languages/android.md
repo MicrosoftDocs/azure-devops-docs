@@ -1,6 +1,6 @@
 ---
-title: Android
-description: CI and CD for Android projects.
+title: Build, test, and deploy Android apps
+description: Set up CI/CD to build, test, and deploy Android projects.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,11 +8,16 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Android
+# Build, test, and deploy Android apps in Azure Pipelines
+
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build, test, and deploy Android apps with CI/CD pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -46,7 +51,7 @@ Change values to match your project configuration. See the [Gradle](../tasks/bui
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
 pool:
-  vmImage: 'macOS 10.13'
+  vmImage: 'macOS-10.13'
 
 steps:
 - task: Gradle@2
@@ -104,6 +109,32 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 
 > Note: The Android Emulator is currently available only on the **Hosted macOS** agent.
 
+Create the [Bash](../tasks/utility/bash.md) Task and copy paste the code below in order to install and run the emulator. 
+Don't forget to arrange the emulator parameters to fit your testing environment.
+ The emulator will be started as a background process and available in subsequent tasks.
+
+```bash
+#!/usr/bin/env bash
+
+# Install AVD files
+# echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+
+# Create emulator
+echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
+
+echo $ANDROID_HOME/emulator/emulator -list-avds
+
+echo "Starting emulator"
+
+# Start emulator in background
+nohup $ANDROID_HOME/emulator/emulator -avd xamarin_android_emulator -no-snapshot > /dev/null 2>&1 &
+$ANDROID_HOME/platform-tools/adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed | tr -d '\r') ]]; do sleep 1; done; input keyevent 82'
+
+$ANDROID_HOME/platform-tools/adb devices
+
+echo "Emulator started"
+```
+
 ## Test on Azure-hosted devices
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
@@ -117,7 +148,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 ## Retain artifacts with the build record
 
 Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
-to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../artifacts/pipeline-artifacts.md).
 
 ::: moniker range="> tfs-2018"
 

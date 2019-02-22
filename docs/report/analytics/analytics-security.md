@@ -1,23 +1,24 @@
 ---
 title: Analytics Service permissions and security
-titleSuffix: Azure DevOps Services     
+titleSuffix: Azure DevOps     
 description: Required permissions necessary to access the Analytics Service and how to handle project access denied errors
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
+monikerRange: '>= azure-devops-2019'
 ms.date: 11/13/2017
 ---
 
+
 # Set permissions to access the Analytics Service and Analytics views
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-To use [Power BI for Azure DevOps Services](index.md) or to exercise an OData query for the Analytics Service, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
+To use [Power BI for Azure DevOps](index.md) or to exercise an OData query for the Analytics Service, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
 
 To edit an Analytics view or connect to an Analytics view in Power BI, you must have permissions for that view. 
 

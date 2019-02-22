@@ -5,7 +5,7 @@ description: Provides a quick reference to the Control element, its child elemen
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2015'
@@ -94,7 +94,7 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
 
 ```xml
-<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triag" /> 
+<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triage" /> 
 ```
  
 The field will appear as a checkbox on the form. 
@@ -129,9 +129,7 @@ Label="Preferred Start Time:" LabelPosition="Left" Format="Time" />
 
 Specify the `HTMLControl` to add an `HTML` field to capture rich-text formatting, as shown in the following illustration.
 
-```xml
-<Control Type="HtmlFieldControl" FieldName="Microsoft.VSTS.Notes" Label="Notes" Dock="Fill" />
-```
+`<Control Type="HtmlFieldControl" FieldName="Microsoft.VSTS.Notes" Label="Notes" Dock="Fill" />`  
 
 ![HTML field shown on work item form](_img/alm_wit_custom_htmlfield.png "ALM_WIT_Custom_HTMLField")
 
@@ -194,7 +192,7 @@ To add the `StoryboardsControl` to the `FORM` section, add the following code sn
 You use the `WorkItemClassificationControl` type to add fields whose data type is `TreePath`. This control provides support to display area path fields and iteration path fields in a hierarchical, nested tree format. The tree shows hierarchical nodes that you can expand and collapse.  
   
 ```xml
-<Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
+<Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area"LabelPosition="Left" />  
 ```  
   
 > [!NOTE]  
@@ -225,7 +223,7 @@ For more information, see [Add the Attachments control](add-the-attachments-cont
 ## Related articles
 
 <a name="custom"></a> 
-In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](../../extend/develop/add-workitem-extension.md). 
+In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&visibilityQuery=all&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](../../extend/develop/add-workitem-extension.md). 
 
 -  [Control XML element reference](control-xml-element-reference.md)    
 -  [WebLayout and Control elements](weblayout-xml-elements.md)     

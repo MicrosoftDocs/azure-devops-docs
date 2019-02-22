@@ -5,7 +5,7 @@ title: Add a chart | Extensions for Azure DevOps Services
 description: Add a chart to your extension in Azure DevOps Services.
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -65,7 +65,7 @@ Add the following images to an `img` folder in your project directory so that th
 0. [Catalog icon](https://github.com/Microsoft/vsts-extension-samples/blob/master/charts/img/CatalogIcon.png)
 
 ### Extension manifest file
-In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md. Create a `vss-extension.json` file with the following contents: 
+In the `home` folder of your project, create your [extension manifest file](../develop/manifest.md). Create a `vss-extension.json` file with the following contents: 
 
 ```json
 {

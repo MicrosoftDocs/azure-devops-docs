@@ -1,77 +1,109 @@
 ---
-title: Bulk modify using Excel
-titleSuffix: Azure Boards and TFS  
-description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Azure Boards or Team Foundation Server   
+title: Bulk modify work items using Microsoft Excel
+titleSuffix: Azure Boards  
+description: Use Excel to bulk add or modify work items-such as backlog items, tasks, bugs, or issues-in Azure Boards or Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/10/2017
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
+
 
 # Bulk add or modify work items with Excel 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
+When you have a lot of work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
 You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * Connect to a project from Excel 
 > * Add or edit work items and publish your changes to Azure Boards or TFS
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
 > * Select user accounts  
-> * Add hierachically linked backlog items and tasks   
+> * Add hierarchically linked backlog items and tasks   
 > * Work with different list types    
   
 
-> [!NOTE]  
->You can't use Office Project 365 to connect to Azure Boards and TFS.
+## Prerequisites 
+::: moniker range=">= tfs-2017" 
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+- Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
+::: moniker-end  
+
+To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/tfs/server/compatibility). 
 
 <a id="add-work-items"> </a>  
 ## Add work items
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Boards and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
+1.  If you don't have Microsoft Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Boards and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads), you'll need to install one of these versions to connect to an Azure DevOps or TFS project. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to connect to an Azure DevOps or TFS project. 
 	
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
-    ![Create a list connection between Excel and the data store](_img/bulk-modify-excel-blank-list.png)
+	(1) Choose Team tab, (2) place your cursor in Cell A1, and then (3) choose **New List**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Choose New List](_img/bulk-modify-excel-blank-list.png)
 
     > [!TIP]  
-    >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](tfs-office-integration-issues.md). 
 
 4.  Connect to your project where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 
-    ![ALM\_EXL\_Connect](_img/IC680074.png)
+    ![New List](_img/excel/team-ribbon.png)
 
     If it is your first time connecting from Excel, you might have to add the URL to the list of recognized servers.
 
-    ![ALM\_EXL\_AddServer](_img/IC658167.png)
+	**Azure Boards**  
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
+
+	![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
+
+	**TFS**  
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
+
+    ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
+
+	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
+
+0. From the New List dialog, choose **Input list**.  
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-5.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
+0.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
     ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
-6.  Specify the titles of the work items you want to add and their work item type.
+0.  Specify the titles of the work items you want to add and their work item type.
 
     ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
-7.  Publish your worksheet.
+0.  Publish your worksheet.
 
     ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
 
@@ -81,7 +113,7 @@ In this topic you'll learn:
 
     ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
 
-8.  Also, note how you can open a work item in the web portal to add more information.
+0.  Also, note how you can open a work item in the web portal to add more information.
 
     ![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
 
@@ -101,7 +133,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 ## Select user accounts 
 
 > [!NOTE]  
-> To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
+> To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
 
@@ -121,7 +153,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	You'll notice that as you select user names, Excel remembers your recent selections and you can select those user accounts directly from the field.   
 
-	![Assigned to field, Drop-dowm menu shows most recently used values](_img/bulk-add-excel-assign-to-field.png)  
+	![Assigned to field, Drop-down menu shows most recently used values](_img/bulk-add-excel-assign-to-field.png)  
 
 > [!TIP]  
 >Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  

@@ -6,12 +6,12 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: jillfra
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
-ms.date: 07/02/2018
-monikerRange: 'vsts'
+ms.date: 02/14/2019
+monikerRange: 'azure-devops'
 ---
 
 # Change the project visibility, public or private
@@ -26,151 +26,76 @@ You can easily switch a private project to a public project, and vice-versa.  Be
 
 ## Prerequisites
 
-- You must have an Azure DevOps organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
-- As an Azure DevOps organization owner, you can change policies and change project information. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level).
-
+- You must have an organization created in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
+- As an organization owner, you can change policies and change project information. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level).
 
 ## Enable anonymous access to projects for your organization
 
-Before you can change a private project, to a public project, you must enable anonymous access for your organization. 
+Before you can change a private project, to a public project, you must enable anonymous access for your organization.
 
-[!INCLUDE [temp](_shared/navigation.md)] 
+1. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project.
 
-
-# [New navigation](#tab/new-nav)
-
-0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
-
-0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+2. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
-0. Choose the **Policy** page, and select **On** for **Allow public projects**.     
+3. Choose the **Policy** page, and select **On** for **Allow public projects**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png) 
+	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png)
 
+## Make a private project public
 
-
-# [Previous navigation](#tab/previous-nav)
-
-0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
-
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-account-settings-horz-brn.png) 
-
-0. Choose the **Policy** page, and select **On** for **Allow public projects**.     
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](_img/create-public-project/turn-on-anonymous-access.png)  
-
----
-
-## Make a private project public 
-
-# [New navigation](#tab/new-nav)
-
-0. Choose **Project Settings** in the sidebar.
+1. Choose **Project Settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](_img/make-public-private/open-project-settings-vert-brn.png)  
 
-0. Choose **Overview**, and then **Edit** for **Privacy**.     
+2. Choose **Overview**, and then **Edit** for **Privacy**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/make-public-private/open-overview-vert.png) 
 
-0. To switch from private to public, choose the **Public** icon.   
+3. To switch from private to public, choose the **Public** icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
 
-0. Review the information provided, and choose **Change** to confirm your action.    
+4. Review the information provided, and choose **Change** to confirm your action.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Change project visibility confirmation dialog](_img/make-public-private/confirm-change-project-visibility-public.png)  
 
+## Make a public project private
 
-# [Previous navigation](#tab/previous-nav)
-
-0. To open the project admin context, choose the ![](../../_img/icons/gear-icon.png) gear icon. 
-
-0. Choose the **Specific People** link. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Change project visibility](_img/make-public-private/open-private-public-form.png) 
-
-0. To switch from private to public, choose the **Public** icon.   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
-
-0. Review the information provided, and choose **Change** to confirm your action.    
-
-	> [!div class="mx-imgBorder"]  
-	> ![Change project visibility confirmation dialog](_img/make-public-private/confirm-change-project-visibility-public.png)  
-
-
----
-
-## Make a public project private 
-
-# [New navigation](#tab/new-nav)
-
-0. Choose **Project Settings**.
+1. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](_img/make-public-private/open-project-settings-public-vert-brn.png)  
 
-0. Choose **Overview** page, and then **Edit** for **Privacy**.     
+2. Choose **Overview** page, and then **Edit** for **Privacy**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](_img/make-public-private/open-overview-vert.png) 
+	> ![Organization settings, Policy page, Security policies](_img/make-public-private/open-overview-vert.png)
 
-0. To switch from public to private, choose the **Private** icon.   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-public.png)  
-
-0. Choose **Change** to confirm your action.    
-
-	> [!div class="mx-imgBorder"]  
-	> ![Change project visibility confirmation dialog](_img/make-public-private/change-project-visilibity-public-to-private.png)  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open the project admin context. 
-
-0. Choose the **Public** link. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Change project visibility](_img/make-public-private/make-public-project-private-link.png) 
-
-0. To switch from public to private, choose the **Private** icon.   
+3. To switch from public to private, choose the **Private** icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Change project visibility dialog](_img/make-public-private/change-project-visibility-public.png)  
 
-0. Choose **Change** to confirm your action.    
+4. Choose **Change** to confirm your action.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Change project visibility confirmation dialog](_img/make-public-private/change-project-visilibity-public-to-private.png)  
 
-
-
----
-
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
-> [Download code](browse-code-public.md) 
+> [Download code](browse-code-public.md)
 
-## Related articles 
+## Related articles
 
 - [Private-to-public migration checklist](migration-checklist.md)
 - [Feature differences for non-members](feature-differences.md)
-- [Default roles and permissions](default-roles-access-public.md) 
+- [Default roles and permissions](default-roles-access-public.md)

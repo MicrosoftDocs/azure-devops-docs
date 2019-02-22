@@ -1,14 +1,14 @@
 ---
-title: Copying and cloning test suites and test cases
+title: Copy and clone test suites and cases
 description: Manual and exploratory testing - Copying and cloning test suites and test cases when you want to test web applications
 ms.assetid: 3bdbaf71-2530-4681-9bb3-cc98c75664f4
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,11 +16,14 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
 
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+
 There are several ways to duplicate test suites and test cases.
 It's important to understand that a test suite or plan contains a set of *references* to test cases.
 If you delete the suite, or if you delete a test case from every suite, the test case still exists as a work item in Azure DevOps or TFS, and you can find it there with a query.  
 
-For details about copying tests in Azure DevOps or TFS, see [this FAQ](../reference-qa.md#copyclonetce).
+**For details about copying tests in Azure DevOps or TFS, see [this FAQ](../reference-qa.md#copyclonetce).**
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 

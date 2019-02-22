@@ -7,8 +7,8 @@
     jobName: 
     #isMultibranchJob: # Optional
     #multibranchPipelineBranch: # Required when isMultibranchJob == True
-    captureConsole: 
-    #capturePipeline: # Required when captureConsole == True
+    #captureConsole: true 
+    #capturePipeline: true # Required when captureConsole == True
     isParameterizedJob: 
     #jobParameters: # Optional
 ```

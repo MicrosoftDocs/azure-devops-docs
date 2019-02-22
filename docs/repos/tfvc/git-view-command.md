@@ -5,11 +5,11 @@ description: Git view command
 ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
-ms.date: 04/11/2018
+ms.date: 01/07/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -34,7 +34,7 @@ Retrieves a file from a Git repository to a temporary location on your computer 
 
 | Parameter                            | Description |
 |--------------------------------------|-------------|
-| **/collection:***TeamProjectCollectionUrl* | Specifies the URL of the project collection that contains the file to view. For example: http://myserver:8080/tfs/DefaultCollection or https://fabrikam-fiber.visualstudio.com. This parameter is required. |
+| **/collection:***TeamProjectCollectionUrl* | Specifies the URL of the project collection that contains the file to view. For example: http://myserver:8080/tfs/DefaultCollection or https://dev.azure.com/fabrikam-fiber. This parameter is required. |
 | **/teamproject:***TeamProjectIdentifier*   | Specifies the name of the project that contains the repo. This parameter is required. |
 | **/repository:***RepositoryIdentifier*     | Specifies the name of the repo that contains the file to view. This parameter is required. |
 | **/blobId:***blobId*                       | Specifies the ID of a blob to retrieve. This option cannot be used with the **path** parameter. One of either **path** or **blob** is required. |
@@ -50,9 +50,11 @@ Retrieves a file from a Git repository to a temporary location on your computer 
 
 The following example retrieves a file from the default branch (typically master) and saves it to the current folder, and prompts the user for their credentials.
 
+>[!NOTE]
+>The following examples are broken into multiple lines for readability. To copy and paste them into the command-line and run them, first copy them and paste them into notepad or another tool and edit them so the commands are contained on a single line.
+
 ```
-tf git view /collection:https://fabrikam-fiber.visualstudio.com 
-            /teamproject:FabrikamProject 
+tf git view /collection:https://dev.azure.com/fabrikam-fiber /teamproject:FabrikamProject 
             /repository:FabrikamRepo 
             /path:FabrikamApp/Global.asax.cs 
             /output:Global.asax.cs 
@@ -61,7 +63,7 @@ tf git view /collection:https://fabrikam-fiber.visualstudio.com
 The following example retrieves a file from the default branch (typically master), and does not prompt for credentials since they are supplied.
 
 ```
-tf git view /collection:https://fabrikam-fiber.visualstudio.com 
+tf git view /collection:https://dev.azure.com/fabrikam-fiber 
             /teamproject:FabrikamProject 
             /repository:FabrikamRepo 
             /path:FabrikamApp/Global.asax.cs 
@@ -72,7 +74,7 @@ tf git view /collection:https://fabrikam-fiber.visualstudio.com
 The following example retrieves a file from the specified commit.
 
 ```
-tf git view /collection:https://fabrikam-fiber.visualstudio.com 
+tf git view /collection:https://dev.azure.com/fabrikam-fiber 
             /teamproject:FabrikamProject 
             /repository:FabrikamRepo 
             /path:FabrikamApp/Global.asax.cs 

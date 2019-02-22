@@ -9,7 +9,7 @@ exports.getContext = function () {
 var fixResult = function(context, result) {
     var str = JSON.stringify(result);
 
-    str = str.replace(/test123.me.tfsallin.net:444/gi, "fabrikam-fiber-inc.visualstudio.com");
+    str = str.replace(/test123.me.tfsallin.net:444/gi, "fabrikam-fiber-inc:8080");
 
     var newResult = JSON.parse(str);
 
@@ -44,7 +44,7 @@ exports.submitRequests = function() {
                     {
                         "op": "add",
                         "path": "/Alias",
-                        "value": "Frabrikam"
+                        "value": "Fabrikam"
                     }
                 ]
         },

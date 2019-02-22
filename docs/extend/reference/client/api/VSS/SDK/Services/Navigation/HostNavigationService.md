@@ -5,7 +5,7 @@ ms.assetid: 2eb91c1e-0665-771c-e764-8a1982fdf35e
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: article
@@ -32,6 +32,8 @@ Service which allows interaction with the browser location and navigation of the
 * [setHash()](#method_setHash)
 * [replaceHash()](#method_replaceHash)
 * [setWindowTitle()](#method_setWindowTitle)
+* [openNewWindow()](#method_openNewWindow)
+* [navigate()](#method_navigate)
 
 <a name="method_updateHistoryEntry"></a>
 ### updateHistoryEntry()
@@ -193,4 +195,34 @@ Update the host document&#x27;s title (appears as the browser tab title).
 
 * `title`: string. The new title of the window
 
+
+<a  name="method_openNewWindow"></a>
+### openNewWindow()
+  
+opens a new browser window. The target will always be _blank.
+  
+#### Syntax
+<pre  class='syntax'>
+void <b>openNewWindow</b>(url, specs)
+</pre>
+  
+#### Parameters
+  
+* `url`: string. Specifies the URL of the page to open. If no URL is specified, a new window with about:blank is opened.
+* `specs`: string. A comma-separated list of items, no whitespaces. For details see window.open of JavaScript documentation.
+
+
+<a  name="method_navigate"></a>
+### navigate()
+  
+navigates to the url.
+  
+#### Syntax
+<pre  class='syntax'>
+void <b>navigate</b>(url)
+</pre>
+  
+#### Parameters
+  
+* `url`: string. Specifies the URL to navigate to.
 

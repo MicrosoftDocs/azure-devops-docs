@@ -1,19 +1,22 @@
 ---
-title: Python Script
-description: Run a Python script.
+title: Python Script task
+description: Run a Python script in a build or release pipeline
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 6392F95F-7E76-4A18-B3C7-7F078D2F7700
 ms.manager: brcrista
+ms.custom: seodec18
 ms.author: brcrista
-ms.date: 05/17/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Utility: Python Script
+# Python Script task
 
-![](_img/pythonscript.png) Run a Python script.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to run a Python script.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -35,10 +38,4 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

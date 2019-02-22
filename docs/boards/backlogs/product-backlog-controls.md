@@ -1,16 +1,17 @@
 ---
-title: Product backlog controls
-titleSuffix: Azure Boards and TFS 
-description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards and Team Foundation Server 
+title: Use backlog controls to switch views or enable options  
+titleSuffix: Azure Boards 
+description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards or TFS 
+ms.custom: "boards-backlogs, seodec18"    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 09/17/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -21,11 +22,7 @@ ms.date: 09/17/2018
 
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"  
+::: moniker range=">= azure-devops-2019"
 
 | Icon  | Control                  | Function              |
 |---------|------------------------|--------------------|
@@ -52,11 +49,8 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="<= tfs-2018"
 
-# [Previous navigation](#tab/previous-nav)
 | Control                  | Function                      |
 |--------------------------|-------------------------------|
 | Backlog  | [Switch to backlog view](create-your-backlog.md)    |
@@ -75,7 +69,7 @@ Once you've defined your product backlog, you can use the following controls to 
 > [!IMPORTANT]  
 > If you set the **In progress** control to **Hide**, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category state won't appear in the backlog. 
 
----
+::: moniker-end
 
 
 Even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 
@@ -83,5 +77,5 @@ Even if you have show parents turned on, the **Create query** and mail ![mail ic
 
 ## Related articles
 
-- [Backlogs, portfolios, and Agile project management ](backlogs-overview.md)  
+- [Backlogs, portfolios, and Agile project management](backlogs-overview.md)  
 - [Workflow states and state categories](../work-items/workflow-and-state-categories.md)

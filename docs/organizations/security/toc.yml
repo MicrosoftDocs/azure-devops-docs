@@ -54,7 +54,7 @@
   - name: Add users to Azure DevOps Services
     href: ../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
   - name: Change access levels
-    href: change-access-levels.md 
+    href: change-access-levels.md?view=azure-devops-2019
   - name: Export user list  
     href: export-users-audit-log.md   
   - name: Set permissions for an object or role
@@ -120,7 +120,7 @@
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
   - name: Web site settings and security
-    href: websitesettings.md
+    href: /tfs/server/admin/websitesettings
   - name: Azure DevOps Services data protection overview
     href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
   - name: TFSSecurity command

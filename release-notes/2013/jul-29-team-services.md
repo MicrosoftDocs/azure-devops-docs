@@ -46,7 +46,7 @@ We’ve had support for emoticons in the team room since it launched on the serv
 
 And finally, we received a lot of customer feedback indicating users want to delete rooms, especially the ones “automagically” created for you when you create new team projects. Room admins will now see "Delete" as an option on the context menu next to each room. Deleting a room deletes all messages in the room history so be sure you've copied any content you need.
 
-That’s a wrap on sprint 51. See you again in 3 weeks. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s a wrap on sprint 51. See you again in 3 weeks. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

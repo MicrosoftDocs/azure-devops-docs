@@ -2,11 +2,12 @@
 title: Web portal& Team Explorer keyboard shortcuts 
 titleSuffix: Azure DevOps Services & TFS   
 description: Keyboard shortcuts for the web portal for Azure DevOps Services, TFS, and Team Explorer
+ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: reference
 ms.assetid:  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/18/2017
@@ -85,7 +86,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker-end
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ## Work Items 
 

@@ -2,19 +2,21 @@
 title: Add a custom control to a WIT 
 titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a custom control for work item type when working in Azure DevOps Services
+ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
-ms.date: 05/31/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/19/2018
 ---
 
-# Add extensions and custom controls to a work item type 
+# Add extensions and custom controls to a work item type  (Inheritance process)  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 With extensions, you can add rich functionality to your work item forms. An extension comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution (custom controls) 
@@ -23,9 +25,13 @@ With extensions, you can add rich functionality to your work item forms. An exte
 
 The fourth type, action-level contributions, on the other hand, appear in the context menu of the web form.  
 
-You add all contributions by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Or, you can [create your own custom control](../../../extend/get-started/node.md). 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown. 
+[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
+You add all contributions by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Or, you can [create your own custom control](../../../extend/get-started/node.md).
+
+For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown.
 
 <img src="_img/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
 
@@ -45,7 +51,7 @@ From the **Settings** context, **Extensions**, you can view the extensions that 
 
 ![Organization settings, Extensions page](_img/process/custom-controls-extensions-admin-page-ts.png)   
 
-To learn more about extensions, see [Install free extensions](../../../marketplace/install-vsts-extension.md).
+To learn more about extensions, see [Install free extensions](../../../marketplace/install-extension.md).
 
 <a id="add-extension">  </a>
 ## Add a Marketplace extension   
@@ -62,7 +68,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 0. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
+	> ![Visual Studio Marketplace, install extension](_img/process/cprocess-install-extension.png) 
 
 	> [!IMPORTANT]  
 	> Extensions you install are added to all WITs across all processes.
@@ -82,7 +88,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 0. (Optional) [Add a field](customize-process-field.md#add-custom-field) to associate with the custom control. Alternatively, you can specify an existing field, inherited or custom. 
 
-0. With the WIT selected, click **Add custom control**. 
+0. With the WIT selected, choose **Add custom control**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
@@ -92,14 +98,14 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 	
 0. Choose the custom control you want from the menu of options. 
 
-	For example, here we choose the Toggle control that you can associate with a Boolean field.   
+	For example, here we choose the Toggle control that you can associate with a Boolean field.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a  custom control dialog, Definition tab](_img/process/custom-control-add-field-level-control-to-bug.png) 
 
-0. Click the **Options** tab and fill out the dialog box. The options you need to specify will depend on the custom control you've selected.   
+1. Choose the **Options** tab and fill out the dialog box. The options you need to specify depend on the custom control you've selected.
 
-	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.   
+	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.
 
 	<img src="_img/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 

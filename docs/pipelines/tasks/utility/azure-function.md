@@ -1,20 +1,23 @@
 ---
-title: Azure function task for Azure Pipelines and TFS 
-description: Build and release task to invoke a HTTP triggered function in an Azure function app and parse the response in Azure Pipelines and TFS
+title: Invoke Azure Function task 
+description: Invoke a HTTP triggered function in an Azure function app and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Utility: Invoke Azure function
+# Invoke Azure Function task
 
-![icon](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+
+Use this task in a build or release pipeline to invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -24,7 +27,7 @@ monikerRange: '>= tfs-2017'
 
 Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range="> tfs-2018"
+::: moniker range="azure-devops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.md)]
 ::: moniker-end
@@ -47,4 +50,23 @@ Succeeds if the function returns success and the response body parsing is succes
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureFunction).
+## Open source
+
+This task is open source on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunction). Feedback and contributions are welcome.
+
+
+## Q&A
+
+### Where should a task signal completion when **Callback** is chosen as the completion event?
+
+To signal completion, the Azure function should POST completion data to the following pipelines REST endpoint.
+
+```
+{planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1
+
+**Request Body**
+{ "name": "TaskCompleted", "taskId": "taskInstanceId", "jobId": "jobId", "result": "succeeded" }
+
+```
+See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
+In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 

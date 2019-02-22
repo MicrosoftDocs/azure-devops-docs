@@ -1,11 +1,11 @@
 ---
 title: Add portfolio backlogs
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -144,7 +144,7 @@ You can add this category anywhere within the definition file. Since you are add
 ##4. Update ProcessConfiguration to add the Initiative portfolio backlog  
 In this last step, you add the Initiative portfolio backlog to the process and modify the Feature portfolio backlog to reflect the hierarchy between Initiatives and Features. The process configuration determines the parent-child relationships among the portfolio backlogs.  
 
-1.	Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Processfolder of the ProcessTemplate folder.)
+1.	Edit the ProcessConfiguration file to add a new portfolio backlog within the ```PortfolioBacklogs``` section. (The ProcessConfiguration.xml file is located in the WorkItem Tracking/Process folder of the ProcessTemplate folder.)
 
 	Add the Initiative Category by adding the following syntax. Replace the names, workflow state values, and default column fields to match those that you use. 
 
@@ -206,7 +206,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 		c. ProcessConfiguration.xml   
 
 2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../boards/backlogs/organize-backlog.md).  
-3.	Grant [Advanced access](../organizations/security/change-access-levels.md) to users who'll need to exercies all the features available with portfolio backlogs.  
+3.	Grant [Advanced access](../organizations/security/change-access-levels.md) to users who'll need to exercises all the features available with portfolio backlogs.  
 	For **Hosted XML:**  See [Assign licenses to users](../organizations/accounts/add-organization-users.md).
 
 

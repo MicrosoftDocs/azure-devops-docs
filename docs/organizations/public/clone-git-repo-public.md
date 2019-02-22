@@ -5,12 +5,12 @@ description: Create a local copy of a repo using Visual Studio or command line c
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual
-ms.date: 09/19/2018
-monikerRange: 'vsts'
+ms.date: 02/14/2019
+monikerRange: 'azure-devops'
 ---
 
 # Clone a Git repository in a public project
@@ -23,47 +23,26 @@ Cloning a repo downloads all commits and branches in the repo and sets up a name
 > [!NOTE]
 > By default you have read-only access to the code in the repository. To perform operations such as forking, creating branches, and making pull requests, you must be [invited to contribute](invite-users-public.md). If you just want a copy of the code to review, instead of cloning you can [download the code](browse-code-public.md#download-code).
 
-
 <a name="clone_url"></a>
+
 ## Get the clone URL of the Git repo
 
 Before you can clone the repo from a public project, you'll need the clone URL.
 
-
-# [New navigation](#tab/new-nav)  
-
-0. To open a repository, choose **Repos>Files**.
+1. To open a repository, choose **Repos>Files**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Repos>Files, anonymous user](_img/browse-code/open-code-vert-brn.png) 
 
-0. Choose the repository you want to clone from the repository selector. 
+2. Choose the repository you want to clone from the repository selector. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Select repository](_img/browse-code/select-repository-vert.png) 
 
-0.  Choose **Clone**. In the Clone repository dialog, choose the ![Clone URL](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
+3.  Choose **Clone**. In the Clone repository dialog, choose the ![Clone URL](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
 
 	> [!div class="mx-imgBorder"]
 	> ![Clone URL, new navigation](_img/clone-git-repo-public/clone-url-vert.png)
-
-# [Previous navigation](#tab/previous-nav)  
-
-0. To open a repository, choose **Code**.   
-
-	> [!div class="mx-imgBorder"]
-	> ![Open Code, anonymous user](_img/browse-code/select-code-hub.png) 
-
-0. Choose the repository you want to clone from the repository selector. 
-
-	![Choose repository, previous nav](_img/browse-code/select-repository.png)
-
-0.  Choose **Clone**. In the Clone repository dialog, choose the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
-
-    ![Copy clone URL](_img/clone-git-repo-public/clone-url-horz.png)
-
-
----
 
 ## Clone the repo to your local computer
 
@@ -72,12 +51,11 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 ### Clone using Visual Studio and Team Explorer
 
-0. In Team Explorer, (1) open up the **Connect** page by selecting the **Connect** icon. (2) Choose **Clone** under **Local Git Repositories**, (3) enter the clone URL, verify your local folder in which to clone, and (4) select the **Clone** button.
+1. In Team Explorer, (1) open up the **Connect** page by selecting the **Connect** icon. (2) Choose **Clone** under **Local Git Repositories**, (3) enter the clone URL, verify your local folder in which to clone, and (4) select the **Clone** button.
 
   ![Connecting to Azure DevOps](_img/clone-git-repo-public/clone-vs.png)
 
-0. After cloning, you have a local Git repository containing the code of the repository you cloned. You can view and make local changes, but in order to push changes and make pull requests to the remote repository, you must be [invited to contribute](invite-users-public.md). 
-
+2. After cloning, you have a local Git repository containing the code of the repository you cloned. You can view and make local changes, but in order to push changes and make pull requests to the remote repository, you must be [invited to contribute](invite-users-public.md). 
 
 ### Clone using the command line
 
@@ -99,7 +77,6 @@ git clone https://dev.azure.com/public1/MyFirstProject/_git/MyGreatLibrary
 ```
 git clone https://dev.azure.com/public1/MyFirstProject/_git/MyGreatLibrary C:\Repos\MyGreatLibrary
 ```
-
 
 ## Related articles
 

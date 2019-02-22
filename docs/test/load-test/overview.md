@@ -1,15 +1,15 @@
 ---
-title: Load Testing with Visual Studio and Azure DevOps
+title: Load test with Visual Studio
 description: About Load Testing, overview of capabilities and features
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Load testing scenarios and capabilities
@@ -72,7 +72,7 @@ Load test your app with hundreds of thousands of users using Azure DevOps Test P
   of how long your test is and how many users the test simulates.
 
 * You get a generous allocation of virtual user minutes free each month.
-  See the [Azure DevOps Pricing](https://visualstudio.microsoft.com/team-services/pricing/) page.
+  See the [Azure DevOps Pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) page.
   
 ## More information
 

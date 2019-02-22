@@ -5,7 +5,7 @@ ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -66,7 +66,7 @@ There are many ways to authenticate your application or service with Azure DevOp
 |---------------------|-------------|---------|-------------------------|--------|
 | Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
 | Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
-| Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
+| Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [Azure DevOps Services Extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
@@ -84,7 +84,7 @@ For Azure DevOps Services, *instance* is `dev.azure.com/{organization}` and *col
 VERB https://dev.azure.com/{organization}/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of projects in an Azure DevOps Services organization.
+For example, here's how to get a list of projects in an organization.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
@@ -92,11 +92,11 @@ curl -u {username}[:{personalaccesstoken}] https://dev.azure.com/{organization}/
 
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 
-```
+```http
 Authorization: Basic BASE64PATSTRING
 ``` 
 
-Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 
 ```cs
 public static async void GetProjects()

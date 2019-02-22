@@ -5,16 +5,17 @@ description: Guide to configuring and customizing work tracking features for the
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts'
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
 
 # Hosted XML process model  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 

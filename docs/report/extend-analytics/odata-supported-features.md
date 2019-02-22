@@ -6,17 +6,18 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.reviewer: kokosins
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-ms.date: 3/16/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/1/2018
 ---
 
 
 # Supported OData features and clauses 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for Azure DevOps.
 
@@ -41,7 +42,7 @@ WorkItems?$filter=Count ge 100$apply=groupby((WorkItemType), aggregate($count as
 $apply triggers aggregation behavior. It takes a sequence of set transformations, separated by forward slashes to express that they are consecutively applied, i.e. the result of each transformation is the input to the next transformation. For example in the following query, first work item are filtered. Next, grouped by work item type and state. Then groups are filtered and grouped again.
 
 > [!NOTE]  
-> OData aggregation extensions are relatively new and not yet fully supported by various client tools. 
+> OData aggregation extensions are relatively new and not yet fully supported by some client tools. 
 
 ``` 
 Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggregate($count as Count))/filter(Count gt 100)/groupby((State),aggregate(Count with max as MaxCount))  
@@ -61,7 +62,7 @@ For more details, see [Aggregate data](aggregated-data-analytics.md)
 ## Supported functions
 | Canonical function | Description |
 | ------------------ | ----------- |  
-| [```cast```] (http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341801) |  Returns expression casted to specified type  |  
+| [```cast```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341801) |  Returns expression casted to specified type  |  
 | [```contains```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868695) |  Returns true if the second parameter string value is a substring of the first parameter string value, otherwise it returns false  |  
 | [```endswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341774) | Returns true if the first parameter string value ends with the second parameter string value, otherwise it returns false |  
 | [```startswith```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868699) |  Returns true if the first parameter string value starts with the second parameter string value, otherwise it returns false |  

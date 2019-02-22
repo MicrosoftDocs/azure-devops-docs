@@ -1,11 +1,11 @@
 ---
-title: TF24023-Team Foundation Server configuration failure
-titleSuffix: Azure DevOps Services & TFS
+title: TF24023-Team Foundation Server configuration... 
+titleSuffix: Azure DevOps & TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server while creating a project 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 83546f98-1ca6-4b07-afe5-134df7f291bf
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

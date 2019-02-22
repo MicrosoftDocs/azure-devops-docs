@@ -5,4 +5,4 @@ ms.topic: include
 
 ## Queries 
 
-A query supports finding and listing work items. Queries are used to support managed searches which you can use to triage work versus adhoc searches used to find a specific work item. Learn more: [About managed queries](/azure/devops/boards/queries/example-queries).  
+Queries are used to find and list work items. Queries support managed searches, which are used to triage work, versus ad-hoc searches, which are used to find a specific work item. To learn more, see [About managed queries](/azure/devops/boards/queries/example-queries).

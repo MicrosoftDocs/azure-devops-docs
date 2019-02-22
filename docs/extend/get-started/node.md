@@ -5,7 +5,7 @@ title: Develop a web extension for Azure DevOps Services
 description: Tutorial for creating your first web extension for Azure DevOps Services
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: wismythe
 author: willsmythe
@@ -14,7 +14,7 @@ ms.date: 05/11/2018
 
 # Develop a web extension for Azure DevOps Services
 
-Extensions enhance Azure DevOps Services and Team Foundation Server (TFS) by contributing enhancements like new web experiences, dashboard widgets, build tasks, and more. Extensions are developed using standard technologies like HTML, JavaScript, and CSS, are packaged and published to the Visual Studio Marketplace, and can then be installed into an Azure DevOps Services organization.
+Extensions enhance Azure DevOps Services and Team Foundation Server (TFS) by contributing enhancements like new web experiences, dashboard widgets, build tasks, and more. Extensions are developed using standard technologies like HTML, JavaScript, and CSS, are packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 
 This tutorial will guide you through creating your first web extension.
 
@@ -25,7 +25,7 @@ You will:
 > * Ready a local directory for your extension
 > * Create an extension manifest file and hub contribution
 > * Package and publish your extension to the Marketplace
-> * Test your extension in an Azure DevOps Services organization
+> * Test your extension in an organization
 
 [!INCLUDE [preview](../_data/get-help.md)]
 
@@ -33,9 +33,9 @@ You will:
 
 To develop and test your extension you will need:
 
-1. An Azure DevOps Services organization where you have permission to install extensions to (i.e. you are the owner). 
+1. An organization where you have permission to install extensions to (i.e. you are the owner). 
 
-   > If you don't have a personal Azure DevOps Services organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
+   > If you don't have a personal organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
 
 2. Install [Node.js](https://nodejs.org)
 
@@ -75,7 +75,7 @@ An extension is composed of a set of files, including a required manifest file, 
 		"name": "My First Extension",
 		"description": "A sample Visual Studio Services extension",
 		"public": false,
-		"categories": ["Repos"],
+		"categories": ["Azure Repos"],
 		"targets": [
 			{
 				"id": "Microsoft.VisualStudio.Services"
@@ -203,7 +203,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 1. From the [management portal](https://aka.ms/vsmarketplace-manage) select your publisher from the drop-down at the top of the page.
 
-2. Tap **New Extension** and select **Azure DevOps Services**:
+2. Tap **New Extension** and select **Azure DevOps**:
    	
 	![Upload new extension for Azure DevOps Services or TFS](_img/upload-new-extension.png)
 
@@ -219,7 +219,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 ## Install your extension
 
-To test an extension, it must be installed to an Azure DevOps Services organization. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
+To test an extension, it must be installed to an organization in Azure DevOps Services. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** .
 

@@ -1,26 +1,32 @@
 ---
-title: Publish Code Coverage Results from an Azure Pipelines or TFS build
+title: Publish Code Coverage Results task
 description: Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: vinojos
-ms.date: 08/31/2018
+author: vinodjo
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Publish Code Coverage Results
+# Publish Code Coverage Results task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![icon](_img/publish-code-coverage-results-icon.png)
-This task publishes code coverage results to Azure pipelines or TFS, which were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. In addition there are built-in tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md), [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md) and [Gradle](../build/gradle.md) that provide the option to publish code coverage data to the pipeline.
+Use this task in a build pipeline to publish code coverage results produced when
+running tests to Azure Pipelines or TFS in order to obtain coverage reporting.
+The task supports popular coverage result formats such as
+[Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
 
-Example below shows **Ant** task with the option to publish code coverage data in Cobertura or JaCoCo format.
-
-![Publish code coverage results ant](_img/publish-code-coverage-result-ant.png)
+Tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md),
+[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+also provide the option to publish code coverage data to the pipeline.
+If you are using these tasks, you do not need a separate [Publish Test Results task](publish-test-results.md)
+in the pipeline.
 
 ## Demands
 
@@ -48,10 +54,10 @@ To publish code coverage results for Javascript with istanbul using YAML, see [J
 </table>
 
 ## Docker
-For apps using docker, build and tests may run inside the container, generating code coverage results within the container. In order to publish the results to  the pipleine, the resulting artifacts should be to be made available to the **Publish Code Coverage Results** task. For reference you can see a similar example for publishing test results under [Build, test, and publish results with a Docker file](publish-test-results.md) section for **Docker**.
+For apps using docker, build and tests may run inside the container, generating code coverage results within the container. In order to publish the results to  the pipeline, the resulting artifacts should be to be made available to the **Publish Code Coverage Results** task. For reference you can see a similar example for publishing test results under [Build, test, and publish results with a Docker file](publish-test-results.md) section for **Docker**.
 
 ## View results
-In order to view the code coverage results in the pipleine, see [Review code coverage results](../../test/review-code-coverage-results.md)
+In order to view the code coverage results in the pipeline, see [Review code coverage results](../../test/review-code-coverage-results.md)
 
 ## Related tasks
 
@@ -59,12 +65,12 @@ In order to view the code coverage results in the pipleine, see [Review code cov
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
 ::: moniker-end
 

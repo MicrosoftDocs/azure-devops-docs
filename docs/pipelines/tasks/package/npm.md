@@ -1,22 +1,23 @@
 ---
-title: npm
+title: npm task
+ms.custom: seodec18
 description: How to use npm packages when building code in Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 07/05/2017
 monikerRange: '>= tfs-2015'
 ---
 
-# Package: npm
+# npm task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/npm.png) Install and publish npm packages
+Use this task in a build or release pipeline to install and publish npm packages.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -200,7 +201,7 @@ monikerRange: '>= tfs-2015'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -212,7 +213,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

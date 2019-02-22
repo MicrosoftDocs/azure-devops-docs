@@ -124,7 +124,7 @@ To learn more, see the [VSTS CLI docs](https://aka.ms/vsts-cli). To view the sou
 
 ### Query last run by information
 
-As your project’s **Shared Queries** tree grows, it can be difficult to determine that a query is no longer being used and can be deleted. To help you manage your **Shared Queries**, we have added two new pieces of metadata to our [query REST APIs](/vsts/integrate/api/wit/queries#get-a-query-or-folder), last executed by and last executed date, so that you can write clean-up scripts to delete stale queries.
+As your project’s **Shared Queries** tree grows, it can be difficult to determine that a query is no longer being used and can be deleted. To help you manage your **Shared Queries**, we have added two new pieces of metadata to our [query REST APIs](https://visualstudio.microsoft.com/docs/integrate/api/wit/queries#get-a-query-or-folder), last executed by and last executed date, so that you can write clean-up scripts to delete stale queries.
 
 ### Create work items from the Queries hub
 
@@ -149,7 +149,7 @@ You can now expand or collapse all the items on the sprint **Task board** with j
 
 Often, when migrating work items from another source, organizations want to retain all the original properties of the work item. For example, you may want to create a bug that retains the original created date and created by values from the system where it originated.
 
-The API to [update a work item](/vsts/integrate/api/wit/work-items#make-an-update-bypassing-rules) has a bypassrule flag to enable that scenario. Previously the identity who made that API request had to be member of the Project Collection Administrators group. With this deployment we have added a permission at the project level to execute the API with the bypassrule flag.
+The API to [update a work item](https://visualstudio.microsoft.com/docs/integrate/api/wit/work-items#make-an-update-bypassing-rules) has a bypassrule flag to enable that scenario. Previously the identity who made that API request had to be member of the Project Collection Administrators group. With this deployment we have added a permission at the project level to execute the API with the bypassrule flag.
 
 > [!div class="mx-imgBorder"]
 ![Grant bypassrule](_img/126_03.png)

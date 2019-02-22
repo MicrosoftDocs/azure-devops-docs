@@ -5,7 +5,7 @@ title: Add a Hub Group | Extensions for Azure DevOps Services
 description: Add a hub group in Azure DevOps Services for your extension.
 ms.assetid: 8186f578-27a0-4130-ace0-0279c863b1a5
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -22,7 +22,7 @@ then follow these steps to create the hub group.
 
 Here's the complete extension manifest with Hello in the samples hub group.
 
-```
+```json
 {
 	"namespace": "Fabrikam.myextension",
 	"name": "My Extension",

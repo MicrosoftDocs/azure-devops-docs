@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -19,7 +19,7 @@ Use Subversion for source control with Azure DevOps Services or TFS for your Jav
 
 ## Prerequisites
 
- - You have an Azure DevOps Services Team Foundation  team project available. If you don't, check out our [Azure DevOps Project for Java topic](/azure/devops-project/azure-devops-project-java). (Note: This will also create an Azure DevOps Services Git repo, which you do not need to use. We will use the Azure DevOps Services or TFS Team)
+ - You have an Azure DevOps Services Team Foundation  team project available. If you don't, check out our [Azure DevOps Projects for Java topic](/azure/devops-project/azure-devops-project-java). (Note: This will also create an Azure DevOps Services Git repo, which you do not need to use. We will use the Azure DevOps Services or TFS Team)
  - If you would rather use your own Subversion repository, you'll need the connection details for it and should be prepared to commit a change.
 
 In this guide, you will build a Java project (create a WAR file) using Maven. We will lead you through the steps to: 

@@ -1,21 +1,22 @@
 ---
-title: DevOps overview for Azure DevOps Services and TFS    
+title: DevOps tools overview for Azure DevOps 
+titleSuffix: Azure DevOps
+ms.custom: seodec18  
 description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
-ms.date: 09/12/2018
+ms.date: 02/01/2019
 monikerRange: '>= tfs-2013'
 ---
 
-
-# DevOps overview for Azure DevOps Services and TFS
+# DevOps tools overview for Azure DevOps
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
+Learn how to use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
  
 ![Continuous planning and delivery](_img/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
@@ -25,7 +26,7 @@ Both options are enterprise-ready, supporting teams of any size, from tens to th
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 
-For the key differences between TFS and Azure DevOps Services, see [About Azure DevOps Services and Team Foundation Server](about-azure-devops-services-tfs.md).
+For the key differences between Azure DevOps Services and Azure DevOps Server, see [Understand the differences between Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
 
 ## Get started in the cloud or on-premises
 
@@ -103,14 +104,14 @@ No matter what platform you target or language you use, you can simplify the con
 
 In addition to continuous integration testing, you can create [test plans](../test/create-a-test-plan.md), [perform manual testing](../test/index.md), and [run unit tests](/visualstudio/test/developer-testing-scenarios). 
 
-Release Management helps you automate the deployment and testing of your software in multiple environments. With it, you can either fully automate the delivery of your software all the way to production, or set up semi-automated processes with approvals and on-demand deployments.  
+Azure Pipelines, and Build &amp; Release in TFS, help you automate the deployment and testing of your software in multiple environments. With it, you can either fully automate the delivery of your software all the way to production, or set up semi-automated processes with approvals and on-demand deployments.  
 
  
 ## Scale up
 
-As your team grows, your tools will grow with you. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
+As your team grows, your tools grow. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
 
-[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-team-defaults.md)[![Manage teams and configure team tools](_img/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
+[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-area-paths.md)[![Manage teams and configure team tools](_img/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
 
  
 ## Related articles
@@ -127,7 +128,7 @@ Once you've signed up for Azure DevOps Services or installed TFS, you'll want to
 ### TFS updates
 
 - [What's new](/tfs/server/whats-new)
-- [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md)
+- [Migrate data from TFS to Azure DevOps Services](../articles/migrate-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
 
@@ -143,7 +144,7 @@ Our extensibility framework enables you to build integrations directly within Az
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
 - [Find marketplace extensions](../marketplace/index.md)
-- [Get extensions](../marketplace/install-vsts-extension.md)</li>
+- [Get extensions](../marketplace/install-extension.md)</li>
 - [Using service hooks](../service-hooks/index.md)
 - [Get started with REST APIs](../integrate/get-started/rest/basics.md)
 
@@ -157,7 +158,7 @@ Industry-standard RESTful APIs extend the power of Azure DevOps Services and TFS
 
 Monitor your web and device apps to gain actionable insight to improve performance, determine usage patterns, and plan for the next version of your software.  
 
-[Use Application Insights](http://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or J2EE servers.  
+[Use Application Insights](http://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
 
 [Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
  

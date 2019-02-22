@@ -5,18 +5,18 @@ description: Describes the different integration options you can use to connect 
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: douge
+ms.manager: jillfra
 ms.author: stansw
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>=azure-devops-2019'
 ms.date: 03/28/2018
 ---
 
 # Power BI integration overview
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
 The integration of the Analytics service with Power BI makes getting the data into Power BI easy, so you can focus on creating amazing Power BI reports!
 
@@ -49,9 +49,9 @@ You can pull data from the Analytics services into Power BI in one of three ways
 
 Before you get started using Power BI to work with the Analytics service, make sure you have completed the following steps:
 
-1. Install the *Power BI Desktop* *February 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 
-2. Install the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
+2. Install the [Analytics extension](../analytics/analytics-extension.md).
 
 3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).
 
@@ -61,5 +61,5 @@ Before you get started using Power BI to work with the Analytics service, make s
 
 ## Deprecated PowerBI.com Content Pack
 
-In November, 2017 we deprecated the PowerBI.com Azure DevOps Content Pack. We deprecated it due to the negative impact it had on the performance of Azure DevOps organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
+In November, 2017 we deprecated the PowerBI.com Azure DevOps Content Pack. We deprecated it due to the negative impact it had on the performance of organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
 

@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 4e5ffafb-82fc-4aaa-b7bb-e5e47b239e7c
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---

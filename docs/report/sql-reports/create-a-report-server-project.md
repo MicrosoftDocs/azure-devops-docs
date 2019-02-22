@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 description: Use SQL Server Report Designer to create a report to track the team's progress by-Team Foundation Server 
 ms.assetid: 5fc5d272-2569-4dd8-b493-704f03f2aca1
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/17
@@ -44,7 +44,7 @@ You can track your team's progress by using SQL Server Report Designer to create
   
 3.  Under **Templates**, choose **Report Server Project.**  
   
-4.  In the **Name** box, typea name for the project, and then choose **OK**.  
+4.  In the **Name** box, type a name for the project, and then choose **OK**.  
   
 ### To create the Tfs2010ReportDS and Tfs2010OlapReportDS data sources  
   

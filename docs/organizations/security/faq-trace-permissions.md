@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/23/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 # Troubleshoot tracing permissions
 
@@ -31,7 +31,7 @@ If one of your users is having permissions issues and you make use of default se
 
    ![Choose Why in permissions list view for project level information](_img/permissions-list-view-project-level-information.png)
 
-4. The resulting trace will let you know how they are inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups which they are in.
+4. The resulting trace lets you know how they are inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups which they are in.
 
    ![Trace showing inherited permissions](_img/trace-permission-group-member-inheritance.png)
 
@@ -44,9 +44,9 @@ A 3: The user does not have the necessary access level
 Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following topics:
 
 * For Azure DevOps: [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
-* For on-premises TFS: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=vsts)
+* For on-premises TFS: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
 
 ## Related articles
 
-* [Grant or restrict access to select features and functions](/azure/devops/organizations/security/restrict-access?view=vsts)
-* [Change individual permissions](/azure/devops/organizations/security/change-individual-permissions?view=vsts)
+* [Grant or restrict access to select features and functions](/azure/devops/organizations/security/restrict-access?view=azure-devops)
+* [Change individual permissions](/azure/devops/organizations/security/change-individual-permissions?view=azure-devops)

@@ -1,11 +1,11 @@
 ---
 title: Rollup estimated and actual work using Project
-titleSuffix: Azure Boards and TFS 
+titleSuffix: Azure Boards 
 description: Provides summed values of select fields for all child work items of a parent.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/22/2017  
@@ -21,7 +21,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
  With Project, you can rollup estimated, completed work or remaining work, and effort, size, or story points. By publishing the rollup values back to TFS, you can view them in work item forms, queries or on the backlog pages.  
   
- ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
+ ![taskboard displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
  To learn about other methods that support rollup, see [Support rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).  
   
@@ -83,7 +83,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 1.  Link all work items that should support rollup using parent-child links.  For example, create tasks that link to user stories.  
   
-     You can do this easily by [creating tasks from the task board](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
+     You can do this easily by [creating tasks from the taskboard](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
   
 2.  Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.  
   

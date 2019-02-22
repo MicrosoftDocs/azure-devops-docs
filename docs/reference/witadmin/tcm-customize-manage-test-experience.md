@@ -7,9 +7,9 @@ ms.technology: devops-agile
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
 
@@ -36,7 +36,7 @@ Also, you can use `tcm` command options to [copy and clone test suites and test 
 To run the **tcm** command-line tool, open a Command Prompt window where Visual Studio is installed. To do this, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 ####TFS 2018 and TFS 2017, Visual Studio 2017 client:
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE`
@@ -121,7 +121,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
   
  [When you analyze failed tests](https://msdn.microsoft.com/library/dd286731), you assign the failure type and resolution state.  
   
- ![Analyse test run page in MTM](_img/almt_wsa11analysetest.png "ALMT_wsa11analyseTest")  
+ ![Analyse test run page in Microsoft Test Manager](_img/almt_wsa11analysetest.png "ALMT_wsa11analyseTest")  
   
 ##  <a name="failure"></a> Mapping file for failure types  
  The following XML syntax lists the default failure types defined for a project.  

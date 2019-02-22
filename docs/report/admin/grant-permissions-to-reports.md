@@ -6,10 +6,11 @@ ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/15/2017
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 # Grant permissions to view or create SQL Server reports in TFS

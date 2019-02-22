@@ -1,17 +1,19 @@
 ---
-title: Remove direct assignments
-description: Learn how to remove direct assignments in your Azure DevOps Services (Visual Studio Online, VSO, Azure DevOps Services) organization
+title: Remove direct assignments from users
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: To manage a user's resources only by the groups that they're in, you must remove the direct assignments in your organization.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
-monikerRange: 'vsts'
+ms.date: 
+monikerRange: 'azure-devops'
 ---
 
-# Remove direct assignments from users
+# Remove direct assignments from users in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -23,11 +25,7 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 ## Remove assignments
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
-# [New navigation](#tab/new-nav)
-
-1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
@@ -43,24 +41,6 @@ To manage a user's resources only by the groups that they're in, you must remove
    ![Select group rules for migration](_img/remove-direct-assignments/choose-remove-direct-assignments-vert.png)
 
 5. To confirm that you want to remove the direct assignments, select **Remove**.
-
-# [Previous navigation](#tab/previous-nav)
-
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
-
-2. Go to your Azure DevOps Services **Users** settings.
-
-   ![Go to users settings](../../_shared/_img/sign-in-go-to-users-settings-horz.png)
-
-3. Select all users with resources that should be managed only by groups.
-
-4. From the command bar, select **Remove direct assignments**, or right-click and choose the same option from the menu.
-
-   ![Choose remove direct assignments](_img/remove-direct-assignments/choose-remove-direct-assignments.png)
-
-5. To confirm that you want to remove the direct assignments, select **Remove**.
-
----
 
 Direct assignments are removed from the users.
 

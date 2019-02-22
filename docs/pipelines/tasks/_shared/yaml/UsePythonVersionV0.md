@@ -5,5 +5,5 @@
   inputs:
     #versionSpec: '3.x' 
     #addToPath: true 
-    #architecture: 'x64' # Options: x86, x64
+    #architecture: 'x64' # Options: x86, x64 (this argument applies only on Windows agents)
 ```

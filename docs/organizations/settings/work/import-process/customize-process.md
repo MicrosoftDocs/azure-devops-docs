@@ -5,10 +5,10 @@ description: Customize a Hosted XML process to support custom fields, work item 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
@@ -26,7 +26,7 @@ Once you add a process, you can create one or more projects from it.
 You can update the process at any time by importing the process again. 
 The changes made to the process template are then applied to all projects using that process.  
 
-A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in Azure DevOps Services. Some building blocks will update existing projects, while others only apply to new projects. See the table below for the full list.
+A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in Azure DevOps Services. Some building blocks update existing projects, while others only apply to new projects. See the table below for the full list.
 
 <table>
 <tbody>
@@ -76,7 +76,7 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../../_shared/open-process-admin-context-ts-only.md)]
 
 
 ### Export and import a process  
@@ -147,17 +147,17 @@ Your ProcessTemplate.xml file must conform to the syntax and rules described in 
  
 In addition, your process must pass the following validation checks:  
 * Process names must be unique and 155 Unicode characters or less.
-  * Templates with the same name and version GUID will overwrite existing processes. 
-  * Templates with the same name but a different version GUID will generate an error.  
+  * Templates with the same name and version GUID overwrite existing processes.
+  * Templates with the same name but a different version GUID generate an error.  
   * Process names cannot contain the following special characters:  
      ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >  ```  
     See [Naming restrictions](../../naming-restrictions.md) for additional constraints.
-* Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation will fail.
-* Process total size should be 2 GB or less, or project creation will fail.
+* Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation fails.
+* Process total size should be 2 GB or less, or project creation fails.
  
 <a id="process-configuration"></a>
 ### Process configuration
-The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md). In additon, it must meet the following conditions:  
+The ProcessConfiguration.xml definition file must conform to the syntax and rules described in [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md). In addition, it must meet the following conditions:  
 *   Specify all ```TypeFields```
 *   Limit definition to five portfolio backlogs  
 *   Contain only one unparented portfolio backlog   
@@ -192,7 +192,7 @@ The ```FIELDS``` section and its child elements must conform to the syntax and r
 <a id="limits"></a>
 #### Limit restrictions  
 *   Limit definition to 512 fields 
-*   Limit definition of person-name fields, ones with an attribute of ```syncnamechange=true```, to 64 per work item type
+*   Limit definition of person-name fields, ones with an attribute of ```syncnamechanges=true```, to 64 per work item type
 *   Limit definition of ```LISTITEM```elements within an ```ALLOWEDVALUES``` or ```SUGGESTEDVALUES``` element for a field to 512 
 *   Limit definition of allowed rules to 1024 for a field. 
 
@@ -260,7 +260,7 @@ To limit the account names that are valid within an identity field, specify the 
         <HELPTEXT>The program manager responsible for signing off on the user story.</HELPTEXT>
     </FIELD>
 ```
-Prior to importing the process, make sure that you've created the group in the project(s) that the process will update. 
+Prior to importing the process, make sure that you've created the group in the project(s) that the process updates. 
 
 
 **Incorrect example**  

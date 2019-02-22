@@ -2,10 +2,11 @@
 ms.prod: devops
 title: Build and release retention policies
 ms.topic: conceptual
+ms.custom: seodec18
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/26/2016
@@ -47,7 +48,7 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global build retention policy settings can be managed from the **Pipelines** settings of your organization or project collection:
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 * Azure Pipelines: `https://dev.azure.com/{your_organization}/_admin/_buildQueue`
 
@@ -78,9 +79,9 @@ The **build destruction policy** helps you keep the builds for a certain period 
 
 ### Git repositories
 
-If your [repository type](../build/repository.md) is one of the following, you can define multiple retention policies with branch filters:
+If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Git in Azure Repos or Team Foundation Server (TFS)
+* Azure Repos Git or TFS Git
 * GitHub
 * External Git
 
@@ -109,7 +110,7 @@ refs/pull/*
 
 ### TFVC and Subversion repositories
 
-For TFVC and Subversion [repository types](../build/repository.md) you can modify a single policy with the same options shown above.
+For TFVC and Subversion [repository types](../repos/index.md) you can modify a single policy with the same options shown above.
 
 ### Policy order
 
@@ -250,9 +251,9 @@ Test results published within a stage of a release are
 associated with both the release and the build. These test results
 are retained as specified by the retention policy configured for
 the build and for the test results. If you are not deploying Team
-Foundation or Azure Pipelines Build through Release Management, and are still
+Foundation or Azure Pipelines Build, and are still
 publishing test results, the retention of these results is
-governed by the retention of the release they belong to.
+governed by the retention settings of the release they belong to.
 
 <!-- [!INCLUDE [temp](../_shared/qa-agents.md)] -->
 

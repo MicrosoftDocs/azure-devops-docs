@@ -1,20 +1,21 @@
 ---
-title: Selenium testing with continuous integration in Azure Pipelines
+title: Perform UI tests with Selenium
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # UI test with Selenium
 
-[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -34,8 +35,8 @@ app is deployed (usually to a QA environment).
 
 For more information about Selenium browser automation, see:
 
-* [Selenium HQ](http://docs.seleniumhq.org/)
-* [Selenium documentation](http://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
+* [Selenium HQ](https://www.seleniumhq.org/)
+* [Selenium documentation](https://www.seleniumhq.org/docs/)
 
 <a name="create-project"></a>
 ## Create your test project
@@ -67,7 +68,7 @@ from Visual Studio Test Explorer.
 
 3. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
    that performs a simple test on the Bing.com website. Replace the contents of the **TheBingSearchTest** function
-   with the [Selenium code](http://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
+   with the [Selenium code](https://www.seleniumhq.org/docs/)
    required to test your web app or website. Change the **browser** assignment in the **SetupTest**
    function to the browser you want to use for the test.
 
@@ -158,14 +159,14 @@ from Visual Studio Test Explorer.
    
 4. Run the Selenium test locally using Test Explorer and check that it works.
 
-## Define your CI build pipeline
+## Define your build pipeline
 
 You'll need a continuous integration (CI) build pipeline that builds your Selenium tests.
 For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
 
 ## Create your web app
 
-You'll need a web app to test. You can use an existing app, or deploy one in your CD release pipeline.
+You'll need a web app to test. You can use an existing app, or deploy one in your continuous deployment (CD) release pipeline.
 The example code above runs tests against Bing.com. For details of how to set up your own release pipeline
 to deploy a web app, see [Deploy to Azure Web Apps](../targets/webapp.md).
 
@@ -174,20 +175,24 @@ to deploy a web app, see [Deploy to Azure Web Apps](../targets/webapp.md).
 You can deploy and test your app using either the Microsoft-hosted agent in Azure, or a self-hosted agent that you install on the target servers.
 
 * When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
-  pre-installed on the Microsoft-hosted agents because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
-  The file paths to these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
-  `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox). For example,  
+  pre-installed on the Windows agents (agents named **Hosted VS 20xx**) because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
+  The paths to the folders containing these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
+  `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox).
+  The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
+
+<!--
+For example,  
 
   ```csharp
   driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver")); 
   ```
-  <p />
+-->
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
   See [Build and release agents](../agents/agents.md#account).
 
 <a name="include-test"></a>
-## Include the test in a CD release
+## Include the test in a release
 
 ::: moniker range="<= tfs-2017"
 
@@ -246,7 +251,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
    ![Setting the test platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
 
-   [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
+   [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
 
 1. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release pipeline.

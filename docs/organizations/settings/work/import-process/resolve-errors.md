@@ -5,10 +5,10 @@ description: Fix errors reported upon importing a process to support customizati
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ms.date: 03/20/2018
 ---
 
@@ -24,7 +24,7 @@ ms.date: 03/20/2018
 >To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md). 
  
 
-During process import, the process is validated to ensure the system will work as expected for the custom process. 
+During process import, the process is validated to ensure the system works as expected for the custom process. 
 You'll receive a list of error messages if the process fails validation.  
 
 ![Process successfully imported](_img/ALM_IP_ValidationErrors_list_775.png)  
@@ -40,7 +40,7 @@ If you're just starting your customization, [review the validation rules provide
 ## Information messages - no action required
 
 <a id="TF402555"></a>
-### TF402555: Field *[refName]* will be deleted.
+### TF402555: Field *[refName]* is deleted.
 The process that you're importing doesn't include the named field in the process being updated, therefore it is removed as part of the update operation.  
 
 #### Scenario example
@@ -63,12 +63,12 @@ The process that you're importing contains a renamed field that uses the same ``
 Field names cannot be renamed.
 
 <a id="TF402598"></a>
-### TF402598: Work item type *[refName]* will be deleted.
-The process that you're updating doesn't include the named WIT that exists in the current process. A[name1s part of updating the existing process, the system will delete the named WIT from the current process. .
+### TF402598: Work item type *[refName]* is deleted.
+The process that you're updating doesn't include the named WIT that exists in the current process. As part of updating the existing process, the system deletes the named WIT from the current process. 
 
-#### Scenerio example
+#### Scenario example
 1. [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"  
-``` 
+```xml
    <WORKITEMTYPE name="LSI" refname="My.LSI">  
 ```
 2. [Import process](import-process.md)  
@@ -79,14 +79,14 @@ The system displays an information message about the deletion.
   ``` TF402598: Work item type My.LSI will be deleted ``` 
 
 <a id="TF402601"></a>
-### TF402601: Work item type *[witName]* will be renamed to *[name1]* from *[name2]*.
-The process contains a renamed WIT. The WIT will be renamed in the existing process.  
+### TF402601: Work item type *[witName]* is renamed to *[name1]* from *[name2]*.
+The process contains a renamed WIT. The WIT is renamed in the existing process.  
 The process that you're updating contains a WIT that's been renamed from the name in the current process.  
-As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing projects that reference the process are also renamed.
+As part of updating the existing process, the system renames the WIT in the current process. All work items in existing projects that reference the process are also renamed.
 
 #### Scenario example
 1. [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"  
-``` 
+```xml
   <WORKITEMTYPE name="LSI" refname="My.LSI">  
 ```
 2. [Import process](import-process.md)  
@@ -178,7 +178,9 @@ All files listed within the ProcessTemplate.xml file and its supported plug-in f
 Use a search tool to find all instances of filename=value within the set of process files and folders. 
 Then, either update the plug-in to remove the missing named file, or add the named file to the process folder where it belongs.
 
+```xml
  <taskList filename="WorkItem Tracking\WorkItems.xml" />
+```
 
 #### Error example
 The WorkItemTracking plug-in specifies ```fileName="WorkItem Tracking\TypeDefinitions\Epic.xml```, 
@@ -192,7 +194,7 @@ Add the Epic.xml file to the WorkItem Tracking\TypeDefinitions folder.
 
 <a id="VS412454"></a>
 ### VS412454: Plug-in *[pluginName]* contains several ```taskList``` {1}, {2}. Only one ```taskList``` per plugin is allowed.
-Correct the ProcessTemplate.xml file for the named plug-in to reduce the number of ```tasklist`````` elements defined. 
+Correct the ProcessTemplate.xml file for the named plug-in to reduce the number of ```tasklist``` elements defined. 
 
 #### Error example
 The WorkItemTracking plug-in contains two ```tasklist``` statements.
@@ -498,7 +500,7 @@ The file specified in the Classification.xml file isn't present in the specified
 The Classification folder path is misspelled. 
 ```xml
        <properties>
-        <property name="MSPROJ" value="Calssification\Fabrikam_FileMapping.xml" isFile="true" />
+        <property name="MSPROJ" value="Classification\Fabrikam_FileMapping.xml" isFile="true" />
         <property name="Process Template" value="Agile"/>
       </properties>
 ```
@@ -594,6 +596,7 @@ Misspelled attribute has been corrected.
 <a id="TF402516"></a>
 ### TF402516: The Classification plug-in contains more than two root level Nodes, which is not supported.
 Review the ```Node``` elements you've specified and remove extra root level nodes.
+
 #### Error example
 Classification.xml file contains a second ```Node StructureType="ProjectLifecycle" ``` statement under the ```Nodes``` container element.
 ```xml
@@ -609,6 +612,7 @@ Classification.xml file contains a second ```Node StructureType="ProjectLifecycl
         <Node StructureType="ProjectModelHierarchy" Name="Area" xmlns="" />
       </Nodes>
 ```
+
 #### Resolution example
 Remove the second statement.
 ```xml
@@ -623,11 +627,13 @@ Remove the second statement.
         <Node StructureType="ProjectModelHierarchy" Name="Area" xmlns="" />
       </Nodes>
 ```
+
 <a id="TF402523"></a>
+
 ### TF402523: Area or Iteration path '*[pathName]*' in the GroupsandPermissions plug-is missing from the Classification plug-in.  
 Add the missing *[pathName]* to the Classification.xml file or remove it from the GroupsandPermissions.xml file.
 #### Error example 
-Classification.xml file specfies sprints, not iterations. 
+Classification.xml file specifies sprints, not iterations. 
 
 **GroupsandPermissions.xml** ```teamSettings``` specifies Iterations. 
 ```xml
@@ -978,7 +984,7 @@ The ProcessConfiguration.xml definition contains a ```parent``` value that refer
 ```
 
 #### Resolution example
-Add the Epic ```PortfioloBacklog``` to the ProcessConfiguration.xml file.
+Add the Epic ```PortfolioBacklog``` to the ProcessConfiguration.xml file.
 ```xml
   <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic">
     <States>
@@ -1335,7 +1341,7 @@ UserStory.xml
 <a id="TF402558"></a>
 ### TF402558: The definition of field *[refName]* is inconsistent with the existing definition of the field in the following templates: *[templateNames]*.
 Fields must be defined consistently across processes that have been or that you plan to import to Azure DevOps Services. 
-The system will not allow you to import a process that contains a ```FIELD``` element which is defined 
+The system doesn't allow you to import a process that contains a ```FIELD``` element which is defined 
 one way in Process A and another way in Process B.  All ```FIELD``` element attributes must match.
 
 #### Example
@@ -1424,6 +1430,7 @@ notice the bug and user story ```refname``` values are different
 ### TF402584: Field rule attributes "for" or "not" aren't supported.
 The ```"for"``` and ```"not"``` attributes are not supported at all for any field rule for import to Azure DevOps Services.  
 Review the ```FIELDS``` and ```WORKFLOW``` sections for the presence of ```"for"``` and ```"not"``` attributes and remove them. 
+
 #### Error example
 ```xml
 <FIELD name="Title">
@@ -1497,13 +1504,13 @@ Custom project scoped groups are not supported. You can only reference account l
 
 #### Error example
 Bug.xml is referencing a project scoped group.
-```xml
+```
 ... "[project]\Organization Leaders"
 ```
 
 #### Resolution example
 Create a new account (collection) level group "Organization Leaders" and reference it accordingly in the XML.
-```xml
+```
 ... "[global]\Organization Leaders"
 ```
 
@@ -1563,7 +1570,7 @@ To resolve this, create two separate groups that contain one control each.
 ### TF402594: File violates the schema with the following error: The element 'Control' cannot contain child element 'Link' because the parent element's content model is empty.
 
 #### Error example
-```
+```xml
   <Control Type="FieldControl" FieldName="customfield.foo" Label="Foo" LabelPosition="Left">
     <Link UrlRoot="http://www.visualstudio.microsoft.com/team-services/" />
   </Control>
@@ -1571,7 +1578,7 @@ To resolve this, create two separate groups that contain one control each.
 
 #### Resolution example
 ```xml
-  <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1">
+  <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
     <LabelText>  
         <Text>  
           <Link UrlRoot="http://www.visualstudio.microsoft.com/team-services/" />  

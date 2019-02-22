@@ -8,13 +8,13 @@ A:	When you buy from the Visual Studio Marketplace, you select an Azure subscrip
 
 ### Q:	Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
 
-A:	Yes. Buy directly from the Visual Studio Marketplace. You can bill purchases to the Azure subscription that was created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller.
+A:	Yes. Buy directly from the Visual Studio Marketplace, Azure DevOps tab. You can bill purchases to the Azure subscription that was created under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). Don't order Visual Studio Marketplace services through your reseller.
 
 ### Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
 
-A:	Yes. You can use these prepaid funds to pay for: 
+A:	Yes. You can use these prepaid funds to pay for the following:
 
-*	[Azure DevOps Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
+*	[Azure DevOps users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser).
 *	[Microsoft-published extensions for Azure DevOps Services and Microsoft Team Foundation Server](https://marketplace.visualstudio.com/azuredevops).
 *	[Virtual user minutes for cloud-based load testing](/../organizations/billing/buy-more-build-vs).
 *   [Xamarin University](https://www.xamarin.com/university).
@@ -34,7 +34,7 @@ A:	No. You can't use the monthly Azure credits from [Visual Studio subscriptions
 <a name="spending-limit"></a>
 
 > [!Important]
-> To prevent your Azure subscription from being disabled when your monthly charges are billed the following month, remove your spending limit indefinitely. Otherwise, all resources billed to the subscription will be suspended, including virtual machines and all other workloads. 
+> To prevent your Azure subscription from being disabled when your monthly charges are billed the following month, remove your spending limit indefinitely. Otherwise, all resources billed to the subscription are suspended, including virtual machines and all other workloads.
 
 <img alt="Remove spending limit indefinitely" src="_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 

@@ -1,15 +1,15 @@
 ---
-title: FAQs and general solutions for load testing  
+title: FAQs for load testing  
 description: FAQs for load testing topics using the features of Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # FAQs for load testing
@@ -562,7 +562,7 @@ for your app there. If you see data collected there, report your issue to
 **A**: This can happen because:
 
 * No apps are configured to push analytics data to Application Insights. See 
-  [Get started with Visual Studio Application Insights](/azure/application-insights/app-insights-overview).
+  [Get started with Visual Studio Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-get-started/).
   Also check that you can see the apps in **Application Insights** in the 
   Azure portal, as shown here:
   

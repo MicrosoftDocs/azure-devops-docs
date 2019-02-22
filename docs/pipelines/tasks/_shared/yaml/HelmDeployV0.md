@@ -3,7 +3,7 @@
 # Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 - task: HelmDeploy@0
   inputs:
-    #connectionType: 'Azure Resource Manager' # Options: azure Resource Manager, kubernetes Service Connection
+    #connectionType: 'Azure Resource Manager' # Options: azure Resource Manager, kubernetes Service Connection, none
     #azureSubscription: # Required when connectionType == Azure Resource Manager
     #azureResourceGroup: # Required when connectionType == Azure Resource Manager
     #kubernetesCluster: # Required when connectionType == Azure Resource Manager

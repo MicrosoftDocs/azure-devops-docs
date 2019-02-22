@@ -1,11 +1,12 @@
 ---
-title: Stages in Release Management
-description: DevOps CI CD - Understand stages in Release Management for Azure Pipelines and Team Foundation Server (TFS)
+title: Release stages, queuing policies, and options
+ms.custom: seodec18
+description: DevOps CI CD - Understand stages in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -14,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Release stages, queuing policies, and options
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -34,7 +35,7 @@ a cloud, or multiple clouds. In fact, you can even use a stage to represent
 shipping the software to an app store, or the manufacturing process of a boxed product.
 
 Second, you must be able to deploy to a stage **independently** of other stages in the pipeline.
-For example, your pipeline might consist of two stages A and B, and Release Management could deploy Release 2
+For example, your pipeline might consist of two stages A and B, and Azure Pipelines could deploy Release 2
 to A and Release 1 to B. If you make any assumptions in B about the existence of a certain release in A, the
 two stages are not independent.
 
@@ -157,7 +158,7 @@ for a stage in a release pipeline. You can:
   group to be the stage owner. Stage owners are
   notified whenever a deployment of a release is completed to that
   stage. Stage owners are not automatically assigned
-  any addition permissions.
+  any additional permissions.
 * Delete the stage from the pipeline.
 * Change the order of stages.
 * Save a copy of the stage as a template.

@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: jillfra
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -36,11 +36,11 @@ In this task you will install the [Exploratory Testing extension](https://market
 
 1. Once installed, a beaker icon appears in the top right of the Chrome toolbar. Click it to open the UI.
 
-1. Click on the gear icon to open the settings. Select "Connected" and enter your Azure DevOps organization URL and click Next.
+2. Click on the gear icon to open the settings. Select "Connected" and enter your organization URL and click Next.
 
     ![Connect to Azure DevOps Services](../_img/e2eintellij/connect-to-vsts.png)
 
-1. Select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
+3. Select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
 
     ![Select the Team to Connect to](../_img/e2eintellij/select-team.png)
 
@@ -146,7 +146,7 @@ In this task you will create a branch of the code to fix the Bug. You will then 
 
     Change this line of code:
     ```java
-        session.setAttribute("driverFeeTotal", totalFareforDriver);
+        session.setAttribute("driverFeeTotal", totalFareForDriver);
     ```
     to
     ```java

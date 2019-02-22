@@ -1,18 +1,20 @@
 ---
-title: Troubleshoot adding administrators to project collections and projects
-description: Troubleshoot adding administrators to Azure DevOps Services project collections and projects 
+title: Troubleshoot adding administrators to projects and project collections
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn the answers to frequently asked questions (FAQs), about adding administrator to projects and collections
 ms.assetid: 7ad07299-c9c5-4748-bf31-6518356ee0d0
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: douge  
+ms.manager: jillfra  
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
-monikerRange: 'vsts'
+ms.date: 12/06/2018
+monikerRange: 'azure-devops'
 ---
 
-# Troubleshoot adding administrators to Azure DevOps Services project collections and projects
+# Troubleshoot adding administrators to projects and project collections
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -43,7 +45,7 @@ A: The following permissions are required:
 > [!Important]
 > To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
 
-#### Q: Where can I find information about each individual permission? 
+#### Q: Where can I find information about each individual permission?
 
 A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md). To give a user project administration permissions, complete the following steps:
 
@@ -54,4 +56,3 @@ A: You can find detailed information about individual permissions and their rela
 3. If you use SharePoint with TFS, go to the project portal and choose **Share** to give the user **Full Control**.
 
    ![Choose the SharePoint group and add users](_img/add-administrator-tfs/invite-administrators.png)
-

@@ -2,17 +2,17 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Trello with Azure DevOps Services
+title: Create a service hook for Azure DevOps Services and TFS with Trello
 description: Use Trello with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
-ms.date: 08/04/2016
+ms.date: 2/08/2019
 ---
 
-# Trello with Azure DevOps Services
+# Create a service hook for Azure DevOps Services and TFS with Trello
 
 Create cards and lists in Trello in response to events from Azure DevOps Services.
 For example, when code is pushed, or a build occurs.
@@ -33,23 +33,27 @@ For example, when code is pushed, or a build occurs.
 
 Create a Trello card or list from an Azure DevOps Services event.
 
-0. Go to your Azure DevOps Services project service hooks page: `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+::: moniker range=">= azure-devops-2019"
 
-	![Project administration page](./_img/add-service-hook.png)
+1. Go to your project Service Hooks page: 
 
-	Click **Create Subscription**.
+	`https://{orgName}/{project_name}/_settings/serviceHooks`
 
-3. Pick the Trello service.
+	![Project administration page](./_img/add-devops-service-hook.png)
+
+	Select **Create Subscription**.
+
+1. Pick the Trello service.
 
    <img alt="Service page, Trello selected" src="./_img/trello/service.png" style="border: 1px solid #CCCCCC" />
 
-4. Configure the triggering Visual Studio event. In this case,
+1. Configure the triggering Visual Studio event. In this case,
 we're going to have the subscription respond when a work item is created.
 
    <img alt="Trigger configuration page" src="./_img/trello/trigger.png" style="border: 1px solid #CCCCCC" />
 
 
-5. Set up the action that Trello will take in response to the trigger -
+1. Set up the action that Trello will take in response to the trigger -
 either create a card or a list.
 
    <img alt="Action configuration page" src="./_img/trello/action.png" style="border: 1px solid #CCCCCC" />
@@ -60,11 +64,50 @@ either create a card or a list.
    "Bug #5: Some great new idea!" because the test work item is a bug (ID=5)
    with the title "Some great new idea!".
 
-6. Test the service hook subscription and finish the wizard.
+1. Test the service hook subscription and finish the wizard.
 
    <img alt="Test notification" src="./_img/trello/test.png" style="border: 1px solid #CCCCCC" />
 
-Now its setup. Go to Trello and see the cards appear.
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+1. Go to your project Service Hooks page: 
+
+    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+
+	![Project administration page](./_img/add-service-hook.png)
+
+	Select **Create Subscription**.
+
+1. Pick the Trello service.
+
+   <img alt="Service page, Trello selected" src="./_img/trello/service.png" style="border: 1px solid #CCCCCC" />
+
+1. Configure the triggering Visual Studio event. In this case,
+we're going to have the subscription respond when a work item is created.
+
+   <img alt="Trigger configuration page" src="./_img/trello/trigger.png" style="border: 1px solid #CCCCCC" />
+
+
+1. Set up the action that Trello will take in response to the trigger -
+either create a card or a list.
+
+   <img alt="Action configuration page" src="./_img/trello/action.png" style="border: 1px solid #CCCCCC" />
+
+   You can use  placeholders to insert content from the event into the
+   name and description of the cards or lists that the subscription creates.
+   For example, when we run the test notification, the card that gets created is named
+   "Bug #5: Some great new idea!" because the test work item is a bug (ID=5)
+   with the title "Some great new idea!".
+
+1. Test the service hook subscription and finish the wizard.
+
+   <img alt="Test notification" src="./_img/trello/test.png" style="border: 1px solid #CCCCCC" />
+
+::: moniker-end
+
+Now it's set up. Go to Trello and see the cards appear.
 
 <img alt="Welcome board with a card for Bug #5" src="./_img/trello/welcome-board.png" style="border: 1px solid #CCCCCC" />
 
@@ -82,9 +125,9 @@ So when a bug is created with the ID 5 and title "Some great new idea!",
 the card name is "Bug #5: Some great new idea!".
 
 The basic form of the placeholder is ```{{resource.field}}```
-where resource is the name of the resource raising the event (workitem, build, etc)
-and field is a field within the resource section of the event, like id.
-So, if the subscription were for a completed build, it might be something like
+where resource is the name of the resource raising the event (workitem, build, and so on)
+and field is a field within the resource section of the event, like ID.
+So, if the subscription is for a completed build, it might be something like
 
 ```
     Build {{build.id}} completed at {{build.finishTime}}
@@ -94,9 +137,9 @@ To understand what fields are available to use, look at the [events reference](.
 
 ### Work item fields
 
-Work item fields appear in the event in the fields array, like this:
+Work item fields appear in the event in the fields array, like this example:
 
-```json
+```
     " fields": {
                 " System.AreaPath": "Fabrikam-Fiber-Git", 
                 " System.TeamProject": "Fabrikam-Fiber-Git", 
@@ -114,7 +157,7 @@ Work item fields appear in the event in the fields array, like this:
            },
 ```
 
-Working directly from the event definition, we would have created our card name like this:
+Working directly from the event definition, we would have created our card name like this example:
 
 ```
     {{workitem.fields["System.workItemType"]}} #{{workitem.fields["System.id"]}: {{workitem.fields["System.title"]}}
@@ -135,9 +178,9 @@ Type of expression         | examples
 basic expressions          | ```{{workitem.name}}```
 array expressions          | ```{{pullRequest.reviewers.[0].displayName}}```
 Mustache sections          | ```{{#workitem.assignedTo}}``` This WI is assigned ```{{/workitem.assignedTo}}```
-Mustache Inverted Sections | ```{{^workitem.assignedTo}}``` This WI is not assigned ```{{/workitem.assignedTo}}```
+Mustache Inverted Sections | ```{{^workitem.assignedTo}}``` This WI isn't assigned ```{{/workitem.assignedTo}}```
 Handlebars block helpers   | with<br/>if/else<br/>unless<br/>each
-Handlerbars paths          | ...<br/>this<br/>For example, ```{{../comment/id}}``` or ```{{this/title}}```
+Handlebars paths          | ...<br/>this<br/>For example, ```{{../comment/id}}``` or ```{{this/title}}```
 Template comments          | ```{{!-- this is a handlebar comment --}}``` 
 
 ## Pricing
@@ -148,11 +191,11 @@ for pricing related to their services.
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-####Q: Can I programmatically create subscriptions?
+#### Q: Can I programmatically create subscriptions?
 
 A: Yes, see details [here](../create-subscription.md).
 
-####Q: Can I get more information about Trello?
+#### Q: Can I get more information about Trello?
 
 A: Yes, [trello.com](http://www.trello.com/).
 

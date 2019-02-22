@@ -1,16 +1,16 @@
 ---
 title: Sprint and scrum best practices
-titleSuffix: Azure Boards and TFS 
-description: Best practice guidance to implement scrum and use sprint tools in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards 
+description: Best practice guidance to implement scrum and use sprint tools in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/07/2018
+ms.date: 11/19/2018
 ---
 
 
@@ -164,7 +164,7 @@ Many teams delay discussions by using the "virtual parking lot" method. As topic
 
 <a id="sprint-review-meeting">  </a>
 ## Sprint review meetings
-Conduct your sprint review meetings on the last day of the sprint. Your team demonstrates each product backlog item that it completed in the sprint. The product owner, customers, and stakeholders accept the user stories that meet their expectations and identify any new requirements. Customers often understand their additional needs more fully after seeing the demonstrations and may identify  changes that they want to see.
+Conduct your sprint review meetings on the last day of the sprint. Your team demonstrates each product backlog item that it completed in the sprint. The product owner, customers, and stakeholders accept the user stories that meet their expectations and identify any new requirements. Customers often understand their additional needs more fully after seeing the demonstrations and may identify changes that they want to see.
 
 Based on this meeting, some user stories will be accepted as complete. Incomplete user stories will remain in the product backlog, and new user stories will be added to the  backlog. Both sets of stories will be ranked and either estimated or re-estimated in the next sprint planning meeting.  
 

@@ -4,7 +4,7 @@ description: Debug with symbols in Visual Studio using the Symbol Server in Azur
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
+ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [](../_shared/availability-symbols.md)]
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/symbols/index?toc=/azure/devops/artifacts/toc.json). To use symbols in WinDbg, see [this page](debug-with-symbols-windbg.md).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/artifacts/symbols?toc=/azure/devops/artifacts/toc.json). To use symbols in WinDbg, see [this page](debug-with-symbols-windbg.md).
 
 ## Add the symbol server to Visual Studio
 
@@ -24,7 +24,7 @@ To debug with symbols, select and add the Azure DevOps Services symbol server to
 
 ![Add Azure DevOps Services Symbol Server in VS Debugger](_img/vsdebugger1.jpg)
 
-In the **Connect to Azure DevOps Services Symbol Server** dialog, select the Azure DevOps Services organization to which the symbols have been published and the corresponding user identity that has access to this Azure DevOps Services organization. 
+In the **Connect to Azure DevOps Services Symbol Server** dialog, select the organization to which the symbols have been published and the corresponding user identity that has access to this organization. 
 
 ![Connect to Azure DevOps Services Symbol Server](_img/connectsymbolserver.png)
 

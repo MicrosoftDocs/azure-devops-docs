@@ -1,18 +1,21 @@
 ---
-title: CD of an Azure VM using a Resource Manager template
+title: Deploy an Azure VM using an RM template
 description: Provision Azure virtual machines (VMs) using ARM templates by using Azure Pipelines or Team Foundation Server (TFS) 
 ms.assetid: E6CF9C79-4A2A-45EF-8278-EA6AFA81CBAD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
+ms.custom: seodec18
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # CD of an Azure virtual machine using a Resource Manager template
+
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -48,7 +51,7 @@ Carry out the following steps to deploy the Azure Resource Group.
 
 5. Configure the **Azure Resource Group Deployment** task as follows:
 
-   ![Azure Resource Group Deployment](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2) - Deploy files to an Azure Resource Group.
+   ![Azure Resource Group Deployment](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2) - Deploy files to an Azure Resource Group.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
      connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).

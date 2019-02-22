@@ -6,10 +6,11 @@ ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/02/2017
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 #Upload reports to a team project

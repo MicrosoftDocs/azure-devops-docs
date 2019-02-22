@@ -1,22 +1,23 @@
 ---
 title: Xamarin.Android build and release task
+ms.custom: seodec18
 description: Xamarin.Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Xamarin.Android
+# Xamarin.Android task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/xamarin-android.png) Build an Android app with Xamarin
+Use this task in a build or release pipeline to build an Android app with .
 
 ## Demands
 
@@ -105,14 +106,14 @@ Select x86 or x64.
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

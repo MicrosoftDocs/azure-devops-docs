@@ -1,15 +1,16 @@
 ---
 title: Customize your work tracking experience
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps 
 description: Guide to configuring and customizing work tracking features in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2018
 ---
 
 # Customize your work tracking experience 
@@ -50,13 +51,13 @@ Each project provides a number of shared resources that support all teams added 
 
 ## Projects and process customizations  
 
-Your project determines the objects available to tracking work and the configuration of Agile tools. Specifically, the project determines the work item types (WITs)&mdash;user stories, tasks, bugs&mdash; and the data fields used to capture information. Customized objects are shared across teams added to the project.  
+Your project determines the objects available to track work and the configuration of Agile tools. Specifically, the project determines the work item types (WITs)&mdash;user stories, tasks, bugs&mdash; and the data fields used to capture information. Customized objects are shared across teams added to the project.  
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WSIWIG customization, available for Azure DevOps Services only  
->- **Hosted XML**: Supports customization through import/export of process templates, available for Azure DevOps Services only    
->- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects      
+>- **Inheritance**: Supports WSIWIG customization, available for Azure DevOps Services and Azure DevOps Server 2019  
+>- **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model    
+>- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments       
  
 The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../boards/work-items/agile-glossary.md).  
 
@@ -162,6 +163,20 @@ The following table summarizes the differences between the three supported proce
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
 
+<a id="choose-process-model" />
+::: moniker range="azure-devops-2019"
+## Choose the process model for your project collection 
+For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between **XML** (On-premises XML process model) and **Inheritance** (Inheritance process model), as shown in the following dialog. 
+
+> [!div class="mx-imgBorder"]  
+> ![Create Team Project Collection wizard, Collection Name dialog](_img/azd-2019/configure-new-collection-inheritance.png)   
+
+> [!IMPORTANT]  
+> The choice you make is not reversible. Once the collection is created, you'll only be able to customize work tracking objects using the model selected. Also, there is no way to migrate existing project collections that use the On-premises XML process model to the Inheritance process model. 
+
+To learn more about project collections, see [Manage project collections](/tfs/server/admin/manage-team-project-collections).
+
+::: moniker-end
 
 <a id="access-permissions"></a>
 ## Grant or restrict access to work tracking tools  
@@ -182,11 +197,11 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <tr>
 <td>Manage access </td>
 <td>
-<ul>accounts/add-team-members.md
-<li>[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members-vs.md)</li>
-<li>[Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)</li>
-<li>[Stakeholder access](../organizations/security/change-access-levels.md)</li>
-<li>[VS Enterprise access](../organizations/security/change-access-levels.md)</li>
+<ul>
+<li>[About access levels](../organizations/security/access-levels.md)</li>
+<li>[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members.md)</li>
+<li>[Change access levels (on-premises deployments)](../organizations/security/change-access-levels.md)</li>
+<li>[Add team members (on-premises deployments)](../organizations/settings/add-teams.md#add-team-members)</li>
 </ul>
 </td>
 </tr>
@@ -219,7 +234,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 </tbody>
 </table>
   
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 <a id="test-experience"></a>
 ## Customize the test experience
 
@@ -284,7 +299,7 @@ Here are a few options available to you:
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes  
 - Determine if a [Service hook](../service-hooks/index.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../integrate/index.md)  
-- Add your feature request to our [user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
+- Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).   
 
  
 

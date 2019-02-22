@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Work Item Tracking Samples | REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Samples for work item tracking using the REST APIs and .Net Libraries for Azure DevOps Services and Team Foundation Server. 
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Work Item Tracking Samples | REST API Reference for Team Foundation Server
+description: Samples for work item tracking using the REST APIs and .Net Libraries for Team Foundation Server. 
 ms.assetid: 6830FA0E-9EA6-4AD3-913D-9E3450315C13
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,12 +13,15 @@ ms.date: 08/24/2016
 ---
 
 # Work item tracking samples
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 ## Getting Started Sample
 <a name="gettingstartedsample" />
 
-If this is your first time using the REST API's or .Net Libraries, check out the [geting started sample](../../get-started/rest/samples.md) first. 
+If this is your first time using the REST API's or .Net Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first. 
 
 All sample source code is located at [our GitHub repo](https://github.com/Microsoft/vsts-restapi-samplecode).
 
@@ -271,7 +274,7 @@ If you already have the query id, you can skip step 1. The code sample below sho
 ## Query Work Items with WIQL
 <a name="queryworkitemswithwiql" />
 
-If you don't know the query you want to execute, you can use the [work item query language (WIQL)] (https://msdn.microsoft.com/library/bb130306.aspx) to dynamically create a query in your code.
+If you don't know the query you want to execute, you can use the [work item query language (WIQL)](https://msdn.microsoft.com/library/bb130306.aspx) to dynamically create a query in your code.
 
 >[!div class="tabbedCodeSnippets" cs='C#' cl='.NET Client Library']
 >```cs
@@ -514,7 +517,7 @@ There are a few things happening in the code sample below:
 >    Object[] patchDocument = new Object[4];
 >
 >    patchDocument[0] = new { op = "add", path = "/fields/System.Title", value = "Authorization Errors" };
->    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx" };
+>    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx" };
 >    patchDocument[2] = new { op = "add", path = "/fields/Microsoft.VSTS.Common.Priority", value = "1" };
 >    patchDocument[3] = new { op = "add", path = "/fields/Microsoft.VSTS.Common.Severity", value = "2 - High" };
 >
@@ -533,7 +536,7 @@ There are a few things happening in the code sample below:
 >        var request = new HttpRequestMessage(method, "https://accountname.visualstudio.com/fabrikam/_apis/wit/workitems/$Bug?api-version=2.2") { Content = patchValue };
 >        var response = client.SendAsync(request).Result;
 >
->        //if the response is successfull, set the result to the workitem object
+>        //if the response is successful, set the result to the workitem object
 >        if (response.IsSuccessStatusCode)
 >        {
 >            var result = response.Content.ReadAsStringAsync().Result;
@@ -574,7 +577,7 @@ There are a few things happening in the code sample below:
 >        new JsonPatchOperation() {
 >            Operation = Operation.Add,
 >            Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
->            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx"
+>            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
 >        }
 >    );
 >
@@ -610,7 +613,7 @@ There are a few things happening in the code sample below:
 
 Often, when migrating work items from another source, organizations want to retain all the original properties of the work item.  For example, you may want to create a bug that retains the original created date and created by values from the system where it originated.  By using the basic REST example above, this is not possible since the Created and Changed date fields are automatically calculated by the system.  Luckily, there is a solution - you may optionally choose to bypass the rules engine on a work item update. This allows you to modify the work item fields without any restrictions. There are some limitations on what's supported:
 
-* To modify the System.CreatedBy or System.ChangedBy fields, you must be a member of the "Project Collection Service Acccounts" group.
+* To modify the System.CreatedBy or System.ChangedBy fields, you must be a member of the "Project Collection Service Accounts" group.
 * Created Date and Created By can ONLY be set on the initial revision
 * Changed Date must always be increasing, meaning you can't have a revision
 
@@ -634,7 +637,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >    Object[] patchDocument = new Object[6];
 >
 >    patchDocument[0] = new { op = "add", path = "/fields/System.Title", value = "Imported bug from my other system (rest api)" };
->    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx" };
+>    patchDocument[1] = new { op = "add", path = "/fields/Microsoft.VSTS.TCM.ReproSteps", value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx" };
 >    patchDocument[2] = new { op = "add", path = "/fields/System.CreatedBy", value = "Some User" };
 >    patchDocument[3] = new { op = "add", path = "/fields/System.ChangedBy", value = "Some User" };
 >    patchDocument[4] = new { op = "add", path = "/fields/System.CreatedDate", value = "4/15/2016" };
@@ -655,7 +658,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >        var request = new HttpRequestMessage(method, "https://account.visualstudio.com/fabrikam/_apis/wit/workitems/$Bug?bypassRules=true&api-version=2.2") { Content = patchValue };
 >        var response = client.SendAsync(request).Result;
 >
->        //if the response is successfull, set the result to the workitem object
+>        //if the response is successful, set the result to the workitem object
 >        if (response.IsSuccessStatusCode)
 >        {
 >            var result = response.Content.ReadAsStringAsync().Result;
@@ -696,7 +699,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >      new JsonPatchOperation() {
 >            Operation = Operation.Add,
 >            Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
->            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx"
+>            Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
 >        }
 >    );
 >

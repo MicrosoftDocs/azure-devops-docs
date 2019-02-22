@@ -1,23 +1,23 @@
 ---
-title: Resources granted to project members
-titleSuffix: Azure DevOps Services & TFS
-description: Security and data access considerations and resources granted when you add members to a project or organization 
+title: Resources granted to project members - Azure DevOps
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Learn about security and data access considerations and resources granted when you add members to a project or organization 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 05/01/2018
+ms.date: 01/03/2019
 ---
-
 
 # Resources granted to project members
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  � 
 
 The project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.
@@ -44,6 +44,7 @@ Those resources include those defined at the organization-level (Azure DevOps Se
   ![Edit field release in feature](_img/edit-field-release-in-feature.png)
 
 * When the WIT Client OM is used, which includes the usage of Excel and Visual Studio integration, it stores sensitive information in a cache on the local disk. This cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
+* When a user is added to the project-level Build Administrators group, they have the ability to create pipelines which run with project collection (account-wide) scope. A pipeline with project collection scope may access resources in another project, such as Git repositories, that the user cannot. (You can change this by [removing the Read permission from Project Collection Build Service](../security/set-git-tfvc-repository-permissions.md#pcbs-has-read-by-default)).
 
 ## The trust decision
 

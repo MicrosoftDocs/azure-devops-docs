@@ -5,7 +5,7 @@ description: Rollback Command (Team Foundation Version Control)
 ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: reference
@@ -60,10 +60,10 @@ You can specify more than one <em>Itemspec</em> argument.
 	<td><p>This option has an effect only if one or more of the changesets that you are rolling back include a <strong>branch</strong> or <strong>merge</strong> change. Specify this option if you want future merges between the same source and the same target to exclude the changes that you are rolling back.</p></td></tr>
 <tr>
 	<td><p><strong>/lock</strong></p></td>
-	<td><p>Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see <a href="https://msdn.microsoft.com/en-us/library/ms181419">Understanding Lock Types</a>.</p><p>Lock Options</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.</p></li><li><p><strong>Checkin</strong></p><p>Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. </p></li></ul></td></tr>
+	<td><p>Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see <a href="https://msdn.microsoft.com/library/ms181419">Understanding Lock Types</a>.</p><p>Lock Options</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.</p></li><li><p><strong>Checkin</strong></p><p>Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. </p></li></ul></td></tr>
 <tr>
 	<td><p><strong>/login</strong></p></td>
-	<td><p>For information about this option, see <a href="https://msdn.microsoft.com/en-us/library/4y2ash30">Command-Line Options</a>.</p></td></tr>
+	<td><p>For information about this option, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p></td></tr>
 <tr>
 	<td><p><strong>/noprompt</strong></p></td>
 	<td><p>Suppresses any dialog boxes that would otherwise appear during this operation.</p></td></tr>

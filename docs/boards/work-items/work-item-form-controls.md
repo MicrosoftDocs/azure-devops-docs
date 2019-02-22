@@ -1,20 +1,21 @@
 ---
-title: Use work item form controls to track your work
-titleSuffix: Azure Boards and TFS 
-description: Use work item form controls to update status, link work items, and more in Azure Boards & Team Foundation Server  
+title: Update status, assign work, and link work items using work item form controls 
+titleSuffix: Azure Boards 
+description: Use work item form controls to update status, link work items, and more in Azure Boards, Azure DevOps, & Team Foundation Server  
+ms.custom: work-items, seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: reference
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2018 
+ms.date: 11/19/2018
 ---
 
-# Use work item form controls
+# Work item form controls
 
-<b>Azure DevOps Services | TFS 2018 | TFS 2017</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;as well as fields specific to the type. You can link work items to one another, as well as to changesets and source code files. 
 
@@ -128,7 +129,7 @@ Team Foundation version control (TFVC) lets you link work items to version contr
 Git lets you link work items to commits by using the Commit link type. To learn how, see [Manage and commit your changes](../../repos/git/commits.md).  
 
 ### Related scoped links control 
-The Related Work links control displays links to other work items in a set order on the front page of the form. It supports these link types: Duplicate/Duplicate of, Parent/Child, Predecessor/Successor, Related, and Tests/Tested by. To learn more about different link types, see [Link work items to support traceability and manage dependencies](../queries/link-work-items-support-traceability.md).
+The Related Work links control displays links to other work items in a set order on the front page of the form. It supports these link types: Duplicate/Duplicate of, Parent/Child, Predecessor/Successor, Related, and Tests/Tested by. To learn more about different link types, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).
 
 ### Links control tab 
 
@@ -147,17 +148,17 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops" 
 > [!NOTE]   
 > You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
-::: moniker-end  
+::: moniker-end 
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]  
-> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
-::: moniker-end  
+> For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
+::: moniker-end 
 
 <a id="copy-url">  </a>
 ## Copy the URL

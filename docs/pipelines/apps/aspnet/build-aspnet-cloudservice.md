@@ -2,14 +2,15 @@
 ms.assetid: EEA8E5DA-50B6-427B-B67E-32E926DC4A02
 title: Build your Azure Cloud Service
 ms.topic: conceptual
+ms.custom: seodec18
 description: Define a continuous integration (CI) build for your Azure Cloud Service in Azure Pipelines or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.date: 01/02/2017
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Build your Azure Cloud Service

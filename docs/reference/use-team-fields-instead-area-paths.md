@@ -5,11 +5,11 @@ description: Steps to modify the XML syntax to support using a team field with T
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 04/14/2017
 ---
 
@@ -252,4 +252,5 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 ### Credits
 
-Guidance for [customizing teams decoupled from area paths](http://blog.hinshelwood.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshel](http://blog.hinshelwood.com), a senior devops consultant and Microsoft Visual Studio ALM MVP.
+Guidance for [customizing teams decoupled from area paths](https://nkdagility.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshelwood](https://nkdagility.com/about-martin-hinshelwood/
+), a devops consultant and Developer Technologies MVP.

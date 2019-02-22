@@ -1,20 +1,20 @@
 ---
-title: NuGet Publisher Version 0.*
-titleSuffix: Azure Pipelines & TFS
+title: NuGet Publisher task Version 0.*
+ms.custom: seodec18
 description: Learn all about how you can publish NuGet packages when building code in Azure Pipelines and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E592A505-C253-4190-86D2-E4F679F5FCBE
-ms.manager: douge
+ms.manager: jillfra
 ms.author: amullans
 ms.date: 08/10/2016
 ---
 
-# Package: NuGet Publisher version 0.*
+# Package: NuGet Publisher task version 0.*
 
 **Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
-![](../_img/nuget-publisher.png) Publish your NuGet package to a server and update your feed.
+Use this task in a build or release pipeline to publish your NuGet package to a server and update your feed.
 
 ## Demands
 

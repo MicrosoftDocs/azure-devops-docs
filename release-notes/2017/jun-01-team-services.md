@@ -58,7 +58,7 @@ Sometime in the next few weeks, we’ll add the Visual Studio Enterprise subscri
 
 ## Work with secure files such as Apple certificates
 
-We’ve added a general-purpose [secure files library](/vsts/build/concepts/library/secure-files).
+We’ve added a general-purpose [secure files library](https://visualstudio.microsoft.com/docs/build/concepts/library/secure-files).
 
 ![secure-files-library](_img/06_01_18.png)
 
@@ -68,9 +68,9 @@ The contents of secure files are encrypted and can only be used during build or 
 
 We’ve also added some Apple tasks that leverage this new feature:
 
-* [Utility: Install Apple Certificate](/vsts/build/steps/utility/install-apple-certificate)
+* [Utility: Install Apple Certificate](https://visualstudio.microsoft.com/docs/build/steps/utility/install-apple-certificate)
 
-* [Utility: Install Apple Provisioning Profile](/vsts/build/steps/utility/install-apple-provisioning-profile)
+* [Utility: Install Apple Provisioning Profile](https://visualstudio.microsoft.com/docs/build/steps/utility/install-apple-provisioning-profile)
 
 ## Extensions with build templates
 
@@ -138,7 +138,7 @@ Release Management now supports configuring a continuous deployment trigger fo
 ![release triggers](_img/06_01_16.png)
 
 ##On-demand triggering of automated tests 
-The __Test__ hub now supports triggering automated test cases from test plans and test suites. Running automated tests from the __Test__ hub can be set up similarly to the way you run tests in a scheduled fashion in __Release Environments__. You will need to setup an environment in the release definition using the __Run automated tests from test plans__ template and associate it with the test plan to run the automated tests. See the [documentation](/vsts/test/continuous-testing/run-automated-tests-from-test-hub) for step by step guidance on how to set up environments and run automated tests from the __Test__ hub.
+The __Test__ hub now supports triggering automated test cases from test plans and test suites. Running automated tests from the __Test__ hub can be set up similarly to the way you run tests in a scheduled fashion in __Release Environments__. You will need to setup an environment in the release definition using the __Run automated tests from test plans__ template and associate it with the test plan to run the automated tests. See the [documentation](https://visualstudio.microsoft.com/docs/test/continuous-testing/run-automated-tests-from-test-hub) for step by step guidance on how to set up environments and run automated tests from the __Test__ hub.
 
 ![test trigger](_img/06_01_11.jpg)
 

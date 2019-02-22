@@ -5,7 +5,7 @@ ms.assetid: 13A6E34D-BE7D-463E-570C-C27B4ACC2129
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -29,7 +29,7 @@ This sample shows the basic usage of the toolbar. Notice how `text` is added to 
 
 <div class="tab-content">
   <div id="typescript_basic_menubar" class="tab-pane fade in active">
-<pre><code class="lang-javascript">
+<pre><code class="lang-typescript">
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
   
@@ -122,7 +122,7 @@ This sample uses `executeAction` delegate to react menubar commands.
 
 <div class="tab-content">
   <div id="typescript_action_menubar" class="tab-pane fade in active">
-<pre><code class="lang-javascript">
+<pre><code class="lang-typescript">
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
 
@@ -222,7 +222,7 @@ This sample shows how the menu items can be enabled/disabled.
 
 <div class="tab-content">
   <div id="typescript_toggle_menubar" class="tab-pane fade in active">
-<pre><code class="lang-javascript">
+<pre><code class="lang-typescript">
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
 
@@ -300,7 +300,7 @@ This sample shows how the menu items can be made visible/hidden.
 
 <div class="tab-content">
   <div id="typescript_hide_menubar" class="tab-pane fade in active">
-<pre><code class="lang-javascript">
+<pre><code class="lang-typescript">
 import Controls = require("VSS/Controls");
 import Menus = require("VSS/Controls/Menus");
 

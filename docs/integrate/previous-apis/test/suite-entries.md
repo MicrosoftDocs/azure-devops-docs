@@ -1,18 +1,21 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Test Suite Entries| REST API Reference for Azure DevOps Services and Team Foundation Server
-description: Work with test suite entries programmatically using the REST APIs for Azure DevOps Services and Team Foundation Server.
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Test Suite Entries| REST API Reference for Team Foundation Server
+description: Work with test suite entries programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 357368C6-6A97-4685-A154-ED665713B201
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016
 ---
 
-#Test suite entries
+# Test suite entries
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -26,13 +29,40 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/suiteEntry/{suiteI
 | Parameter   | Type   | Notes
 |:------------|:-------|:-----------
 | URL
-| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). 
+| instance    | string | TFS server name ({server:port}). 
 | project     | string | Name or ID of the project.
 | suiteId     | int    | ID of the parent suite of the suite entries to get.
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 
-[!code-REST [GET_testmanagement_suiteEntries_json](./_data/suiteEntries/GET__test_suiteentry__suiteId_.json)]
+#### Sample request
+
+```
+GET https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/suiteentry/339?api-version=3.0-preview.1
+```
+
+#### Sample response
+
+```json
+{
+  "count": 2,
+  "value": [
+    {
+      "suiteId": 339,
+      "sequenceNumber": 0,
+      "testCaseId": 341,
+      "childSuiteId": 0
+    },
+    {
+      "suiteId": 339,
+      "sequenceNumber": 1,
+      "testCaseId": 401,
+      "childSuiteId": 0
+    }
+  ]
+}
+```
+
 
 
 ## Reorder suite entries in a test suite
@@ -55,7 +85,7 @@ Content-Type: application/json
 | Parameter       | Type   |Default Value | Notes
 |:----------------|:-------|:------------ |:------------------------------
 | URL
-| instance        | string |               |[VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}). 
+| instance        | string |               |TFS server name ({server:port}). 
 | project         | string |               |Name or ID of the project.
 | suiteId         | int    |               |ID of the parent suite of the suite entries to reorder.
 | api-version     | string |               |[Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -65,4 +95,55 @@ Content-Type: application/json
 | sequenceNumber  | int    |               |New sequence number of the suite entry in suite.
 | suiteId         | int    |               |ID of the parent suite of the suite entry.
 
-[!code-REST [PATCH_testmanagement_testsession_update_json](./_data/suiteEntries/PATCH__test_suiteentry__suiteId_.json)]
+#### Sample request
+
+```
+PATCH https://mytfsserver/DefaultCollection/Fabrikam/_apis/test/suiteentry/339?api-version=3.0-preview.1
+```
+```json
+[
+  {
+    "sequenceNumber": 2,
+    "testCaseId": 401,
+    "childSuiteId": 0
+  },
+  {
+    "sequenceNumber": 0,
+    "testCaseId": 402,
+    "childSuiteId": 0
+  },
+  {
+    "sequenceNumber": 1,
+    "testCaseId": 341,
+    "childSuiteId": 0
+  }
+]
+```
+
+#### Sample response
+
+```json
+{
+  "count": 3,
+  "value": [
+    {
+      "suiteId": 339,
+      "sequenceNumber": 0,
+      "testCaseId": 402,
+      "childSuiteId": 0
+    },
+    {
+      "suiteId": 339,
+      "sequenceNumber": 1,
+      "testCaseId": 341,
+      "childSuiteId": 0
+    },
+    {
+      "suiteId": 339,
+      "sequenceNumber": 2,
+      "testCaseId": 401,
+      "childSuiteId": 0
+    }
+  ]
+}
+```

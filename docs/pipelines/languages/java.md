@@ -1,19 +1,22 @@
 ---
-title: Java
-description: Building Java projects using Azure Pipelines and TFS
+title: Build Java apps
+description: Building Java apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
-ms.manager: douge
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 08/31/2018
 ms.topic: quickstart
+ms.custom: seodec18
+ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Java
+# Build Java apps in Azure Pipelines
+
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
@@ -21,7 +24,7 @@ monikerRange: '>= tfs-2017'
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-This guidance explains how to build Java projects. See [Android](android.md) for Android-specific projects.
+This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build Java projects with CI/CD pipelines. See [Android](android.md) for Android-specific projects.
 
 ## Example
 
@@ -46,7 +49,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 pool:
-  vmImage: 'Ubuntu 16.04' # Other options: 'macOS 10.13', 'VS2017-Win2016'
+  vmImage: 'ubuntu-16.04' # Other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
 ## Build your code with Maven
@@ -60,7 +63,7 @@ steps:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.10'
+    jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
@@ -91,7 +94,7 @@ steps:
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.10'
+    jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
@@ -128,7 +131,7 @@ steps:
     workingDirectory: ''
     buildFile: 'build.xml'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.10'
+    jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'

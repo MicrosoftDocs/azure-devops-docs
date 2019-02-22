@@ -1,15 +1,15 @@
 ---
 title: Build pipeline triggers
-titleSuffix: Azure Pipelines & TFS
-description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines and Team Foundation Server (TFS)
+description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
-ms.date: 04/17/2018
+ms.manager: jillfra
+ms.author: sdanie
+author: steved0x
+ms.custom: seodec18
+ms.date: 02/21/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,30 +21,34 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-On the **Triggers** tab you specify the events that will trigger the build. You can use the same build pipeline for both CI and scheduled builds.
+On the Triggers tab, you specify the events that trigger the build. You can use the same build pipeline for both CI and scheduled builds.
 
 <a name="ci"></a>
 ## Continuous integration (CI)
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-YAML builds are configured by default with a CI trigger on all branches.
+YAML builds are configured by default with a CI trigger on all branches and all tags.
+
+### Branches
 
 You can control which branches get CI triggers with a simple syntax:
 
 ```yaml
-name: My Cool Build
 trigger:
 - master
 - releases/*
 ```
 
-You can also be more specific about branches to include and exclude.
+You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+
+You can specify branches to include and exclude. For example:
 
 ```yaml
-name: My Specific Branch Build
+# specific branch build
 trigger:
   branches:
     include:
@@ -54,10 +58,54 @@ trigger:
     - releases/old*
 ```
 
-If your source repository is Azure Repos Git, you can also specify file paths to include or exclude.
+If you don't specify any branch triggers, the default is as if you wrote:
+```yaml
+trigger:
+  branches:
+    include:
+    - *
+```
+
+If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
+If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
 
 ```yaml
-name: My Specific Path Build
+# specific branch build with batching
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+```
+
+### Tags
+
+Similarly, you can specify tags to include or exclude.
+
+```yaml
+# specific branch build
+trigger:
+  tags:
+    include:
+    - v2.*
+    exclude:
+    - v2.0
+```
+
+If you don't specify any tag triggers, the default is as if you wrote:
+```yaml
+trigger:
+  tags:
+    include:
+    - *
+```
+
+### Paths
+
+You can specify file paths to include or exclude.
+
+```yaml
+# specific path build
 trigger:
   branches:
     include:
@@ -70,16 +118,23 @@ trigger:
     - docs/README.md
 ```
 
+### Opting out of CI builds
+
 You can opt out of CI builds entirely by specifying `trigger: none`.
 
 ```yaml
-name: My CI-less Build
+# a build with no CI
 trigger: none
 ```
 
+>[!IMPORTANT]
+>When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
+
+For more information, see [Trigger](../yaml-schema.md#trigger) in the [YAML schema](../yaml-schema.md).
+
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -89,7 +144,7 @@ Select this trigger if you want the build to run whenever someone checks in code
 
 ### Batch changes
 
-Select this check box if you have a lot of team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
+Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
 
 > You can batch changes when your code is in Git in the project or on GitHub. This option is not available if your code is in a remote Git repo or in Subversion.
 
@@ -131,7 +186,6 @@ For example, you want your build to be triggered by changes in master and most, 
 
 Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](repository.md).
 
-
 ### CI trigger for a remote Git repo or Subversion
 
 You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
@@ -142,47 +196,124 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-Pull request builds are not supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a pull request trigger for GitHub.
-Pull request validation triggers for Azure Repos are configured on the [branch policies](../../git/branch-policies.md#build-validation) page.
+> [!NOTE]
+> New pipelines automatically override YAML PR triggers with a setting in the UI.
+> To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
+
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
+You can specify the target branches for your pull request builds.
+For example, to run pull request builds only for branches that target: `master` and `releases/*`:
+
+```yaml
+pr:
+- master
+- releases/*
+```
+
+You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
+
+You can specify branches to include and exclude. For example:
+
+```yaml
+# specific branch build
+pr:
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/old*
+```
+
+You can specify file paths to include or exclude. For example:
+
+```yaml
+# specific path build
+pr:
+  branches:
+    include:
+    - master
+    - releases/*
+  paths:
+    include:
+    - docs/*
+    exclude:
+    - docs/README.md
+```
+
+You can specify whether additional pushes to a PR should cancel in-progress runs for the same PR. The default is `true`.
+
+```yaml
+# auto cancel false
+pr:
+  autoCancel: false
+  branches:
+    include:
+    - master
+```
+
+You can opt out of pull request builds entirely by specifying `pr: none`.
+
+```yaml
+# no PR builds
+pr: none
+```
+
+>[!IMPORTANT]
+>When you create a pull request, or push a change to the source branch of a PR, the YAML file in the source branch is evaluated to determine if a PR build should be run.
+
+For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
 # [Designer](#tab/designer)
 
-Use the checkbox to enable or disable builds on pull requests (PRs).
+### GitHub, GitHub Enterprise Server, Subversion, and Bitbucket Cloud
 
-For Git-based repos, you can specify branches to include and exclude. Select
-a branch name from the dropdown and choose "Include" or "Exclude" as appropriate.
-For included branches, a build will be triggered on each push to a PR targeting
-that branch.
+Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
 
-For GitHub repos, you can choose whether or not to build PRs from forks. There
-are [security implications](ci-public.md?tabs=github#validate-contributions-from-forks)
-to enabling this feature which you should understand before selecting it.
-If you choose to build fork PRs, you may also choose whether or not to expose
-secrets (like secret variables and secure files) to fork PR builds.
+![Pull request trigger](_img/triggers/github-pr-validation-trigger.png)
+
+You can specify branches to include and exclude.
+Select a branch name from the drop-down menu and select **Include** or **Exclude** as appropriate.
+For included branches, a build will be triggered on each push to a pull request targeting that branch.
+
+For GitHub repos, you can choose whether or not to build pull requests from forks. There are [security implications](../repos/github.md?#validate-contributions-from-forks) to enabling this feature that you should understand before selecting it.
+If you choose to build fork pull requests, you may also choose whether or not to expose secrets (like secret variables and secure files) to fork pull request builds.
+
+### Azure Repos Git
+
+If your Git repo is hosted in Azure Repos, there won't be a **Pull request validation** trigger on the **Triggers** page. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build valiation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+
+### External Git
+
+Pull request triggers are not available for External Git repos.
 
 ---
+
+### Trigger builds using GitHub pull request comments
+
+If your team uses GitHub pull requests, you can manually trigger pipelines using pull request comments. See details [here](../repos/github.md#trigger-builds-using-github-pull-request-comments).
 
 ## Scheduled
 
 # [YAML](#tab/yaml)
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 Scheduled builds are not yet supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
+After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -241,7 +372,7 @@ Otherwise, you can clear this check box and specify the paths in the trigger.
 
 ### How it affects your developers
 
-When a developers try to check-in, they are prompted to build their changes.
+When developers try to check-in, they are prompted to build their changes.
 
 ![Gated check-in prompt](_img/triggers/tfvc-gated-check-in-prompt.png)
 
@@ -263,7 +394,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 <a name="BuildCompletion"></a>
 ## Build completion triggers
@@ -271,7 +402,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 # [YAML](#tab/yaml)
 
 Build completion triggers are not yet supported in YAML syntax.
-After your create your YAML build pipeline, you can use the designer to specify a build completion trigger.
+After you create your YAML build pipeline, you can use the designer to specify a build completion trigger.
 
 # [Designer](#tab/designer)
 
@@ -288,7 +419,7 @@ After you add a **build completion** trigger, select the **triggering build**. I
 
 ### Download artifacts from the triggering build
 
-In many cases you'll want to download artifacts from the triggering build. To do this:
+In many cases, you'll want to download artifacts from the triggering build. To do this:
 
 1. Edit your build pipeline.
 
@@ -298,7 +429,7 @@ In many cases you'll want to download artifacts from the triggering build. To do
 
 1. Select the team **Project** that contains the triggering build pipeline.
 
-1. Select the triggerging **Build pipeline**.
+1. Select the triggering **Build pipeline**.
 
 1. Select **When appropriate, download artifacts from the triggering build**.
 
@@ -321,23 +452,34 @@ In many cases you'll want to download artifacts from the triggering build. To do
 
 If your code is in a Git repo on Azure Repos or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is not available for GitHub repos.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 ### My build didn't run. What happened?
 
-Someone must view a page in your Azure DevOps organization regularly for CI and scheduled builds to run. It can be any page, including, for example, **Azure Pipelines**.
+Someone must view a page in your organization regularly for CI and scheduled builds to run. It can be any page, including, for example, **Azure Pipelines**.
 
-Your Azure DevOps organization goes dormant five minutes after the last user signed out. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
+Your organization goes dormant five minutes after the last user signed out of Azure DevOps. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
 
- * A nightly build of code in your Azure DevOps organization will run only one night until someone signs in again.
+ * A nightly build of code in your organization will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+### The YAML file in my branch is different than the YAML file in my master branch, which one is used?
+
+When you have configured a [CI trigger](#continuous-integration-ci) or a [PR trigger](#pull-request-validation), the YAML file that is in the branch being pushed is used.
+
+* For CI triggers, the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
+* For PR triggers, the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.
+
+::: moniker-end
+
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

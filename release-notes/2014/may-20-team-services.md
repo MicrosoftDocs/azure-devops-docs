@@ -18,11 +18,11 @@ For a while now, one of the [top customer requests](http://visualstudio.uservoic
 
 **Important:** Unfortunately, we do not yet support linking an existing VS Online account to AAD, and therefore there’s no way to use your AD credentials to log into an account you’ve already created. However, that scenario is next on our list and we are hard at work and will enable it as soon as we can.
 
-[Find out more about Azure Active Directory](/azure/active-directory/)
+[Find out more about Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
 
 ###Create a new account and connect it to Azure Active Directory
 
-You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs) on how to do it.
+You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://visualstudio.microsoft.com/get-started/connect-to-vs) on how to do it.
 
 ![Logging into VS Online](_img/5_20_01.png)
 
@@ -34,7 +34,7 @@ It’s also possible to create an Azure Active Directory–connected Visual Stud
 
 If you want to find out more, head over to:
 
-[Connecting to an Azure Active Directory based account](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs)
+[Connecting to an Azure Active Directory based account](https://visualstudio.microsoft.com/get-started/connect-to-vs)
 
 ###Leverage your MSDN Visual Studio Online benefit with organizational credentials
 

@@ -1,15 +1,15 @@
 ---
-title: Install certificates and custom software on agent machines
+title: Install certificates and software on agents
 description: Install certificates and custom software on agent machines with Azure DevOps
 ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Install certificates and custom software on agent machines

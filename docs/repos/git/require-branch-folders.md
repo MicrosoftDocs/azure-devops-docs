@@ -5,11 +5,11 @@ description: Keep your repository's branch layout clean and understandable by re
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 10/11/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -50,30 +50,30 @@ Each command is preceded with an explanation of what it's doing. If you don't ha
 
 First, block the Create Branch permission at the repository root for the project's contributors.
 
-    tf git permission /deny:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo
+    tf git permission /deny:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo
 
 Then, allow contributors to create branches under `features` and `users`.
 
-    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:features
+    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:features
 
-    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:users
+    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:users
 
 Allow administrators to create branches under `releases`.
 
-    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
+    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
 
 Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.
 
-    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
+    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
 
 >[!NOTE]
 >For more information, see [tf git permission](../../repos/tfvc/git-permission-command.md). You can also access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
 
 ## Rename old branches
 
-# [Web Portal](#tab/vsts-tfs-web-portal)
+# [Browser](#tab/browser)
 
-0. Navigate to the **Branches** page.
+0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
 0. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
 0. Choose its context menu (the `...` button) and choose **New branch**.
 

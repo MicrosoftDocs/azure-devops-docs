@@ -5,7 +5,7 @@ ms.assetid: 173198c4-9b65-4c4a-a8f1-931b6b6c295a
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -35,11 +35,11 @@ requests, you can use Git with IIS Basic Authentication:
    The extra header must include a base 64 encoding of "user:PAT"
    
    **Form**:
-   ````
+   ```
    git -c http.extraheader='Authorization: Basic [base 64 encoding of "user:PAT"]' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
-   ````
+   ```
    
    **Example**:
-   ````
+   ```
    git -c http.extraheader='Authorization: Basic a2FzYW50aGE6bzN3cDVndmw2YXRkajJkam83Znd4N2k3NDdhbGxjNXp4bnc3b3o0dGQycmd3d2M1eTdjYQ==' ls-remote http://tfsserver:8080/tfs/DefaultCollection/_git/projectName
-   ````
+   ```

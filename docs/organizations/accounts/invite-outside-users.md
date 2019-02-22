@@ -1,22 +1,25 @@
 ---
-title: Invite external users
+title: About inviting external users
 titleSuffix: Azure DevOps Services
-description: Security and data access considerations when you add an external or outside user
+ms.custom: seodec18
+description: Security and data access considerations when you add an external or outside user to Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
-monikerRange: 'vsts'
+ms.date: 12/06/2018
+monikerRange: 'azure-devops'
 ---
 
-# Invite external users
+# About inviting external users to Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+Learn about security and data access considerations when you're adding guest users to Azure DevOps.
 
 A project is a container and security boundary for your software development assets: work items, code, builds, and so on. When you add someone as a member of a project, you're also trusting that person with additional privileges. A project member has access to organization-level resources and additional groups (or scopes) beyond the project. If someone isn't already a member of your organization, when you add them to a project, you implicitly grant them additional access.
 
@@ -35,7 +38,7 @@ Project members have access to resources beyond the specific project. Those reso
 
    ![Edit the private release dates field](../projects/_img/edit-field-release-in-feature.png)
 
-* When the WIT Client object model is used, which includes the use of Microsoft Excel and Visual Studio integration with Azure DevOps Services, it stores sensitive information in a cache on the local disk. The cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
+* When the WIT Client object model is used, which includes the use of Microsoft Excel and Visual Studio integration with Azure DevOps, it stores sensitive information in a cache on the local disk. The cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
 
 ## The trust decision
 
@@ -43,5 +46,5 @@ These resources and groups are required for the proper functioning of a member o
 
 ### Related articles
 
-* [Add external users](add-external-user.md)
-* [Add team members](add-team-members-vs.md)
+* [Add external users to Azure DevOps](add-external-user.md)
+* [Add members to projects in Azure DevOps](add-team-members.md)

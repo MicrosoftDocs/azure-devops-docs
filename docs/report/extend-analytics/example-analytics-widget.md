@@ -5,17 +5,17 @@ description: Describes the data entities and relationships provided by the Analy
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
-monikerRange: 'vsts'
-ms.date: 09/10/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/1/2018
 ---
 
 # Create an Analytics widget for Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)] 
 
 
 You can build your own Analytics widget to display in a [Dashboard](../dashboards/index.md) in Azure DevOps. The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 

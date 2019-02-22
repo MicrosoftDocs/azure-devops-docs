@@ -1,22 +1,22 @@
 ---
-title: Create Power BI reports from the Analytics service for Azure DevOps projects
+title: Create Power BI reports from Analytics service 
 titleSuffix: Azure DevOps Services
 description: Create PowerBI charts, reports, and dashboards based on the Analytics  Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
-ms.date: 3/29/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 12/04/2018
 ---
 
 # Power BI for Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]  
 
-With Power BI, you can quickly generate reports for your Azure DevOps projects based on the Analytics Service. To learn more about Analytics, see [What is Analytics?](../analytics/what-is-analytics.md) and [Reporting Roadmap](../analytics/reporting-roadmap.md).
+With Power BI, you can quickly generate reports for your projects in Azure DevOps based on the Analytics Service. To learn more about Analytics, see [What is Analytics?](../analytics/what-is-analytics.md) and [Reporting Roadmap](../analytics/reporting-roadmap.md).
 
 ## 5-Minute Quickstarts
  - [Create a Power BI report with an Analytics view](create-quick-report.md)
@@ -38,7 +38,7 @@ Learn how to build stunning reports using Power BI Desktop.
 - [Connect using the Data Connector](data-connector-connect.md)
 - [Connect using OData feed](access-analytics-power-bi.md)    
 - [Connect using Azure DevOps functions (Advanced)](data-connector-functions.md)  
-- [Client authentication](../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
+- [Client OData authentication](../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
 - [Publish to PowerBI.com](publish-power-bi-desktop-to-power-bi.md) 
 - [Set permissions (Security)](../analytics/analytics-security.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
 

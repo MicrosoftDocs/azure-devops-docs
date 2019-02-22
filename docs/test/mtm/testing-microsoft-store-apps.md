@@ -1,20 +1,23 @@
 ---
-title: Testing Microsoft Store apps
+title: Test Microsoft Store apps
 description: Manual and exploratory testing - Testing Microsoft Store apps
 ms.assetid: e10d1cad-ebea-43ed-92ac-3391e5119fe7
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 08/24/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Testing Microsoft Store apps
 
 [!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
+>[!NOTE]
+>[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
 You have two options if you want to test Microsoft Store apps on a phone, tablet, or other device:  
   
@@ -61,7 +64,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   
 1. Choose **Install Microsoft Store App**, and then enter the path and name of the .appx file for the Microsoft Store app that you want to install.  
   
-   ![Install Microsoft Store app from MTM](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
+   ![Install Microsoft Store app from Microsoft Test Manager](_img/testing-windows-store-apps/mtr_win8_installwindowsstyleapp.png)  
   
 1. Follow the steps in the installation wizard.  
   

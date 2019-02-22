@@ -6,11 +6,11 @@ layout: HubPage
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
-ms.technology: vs-devops-overview 
+ms.technology: devops-new-user
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
-ms.manager: douge 
+ms.manager: jillfra 
 ms.author: kaelli 
-ms.date: 09/05/2018
+ms.date: 11/25/2018
 featureFlags:
 - clicktale 
 ---
@@ -18,7 +18,7 @@ featureFlags:
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Documentation</h1>
-        <p>Azure DevOps Services provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform (TFS), see [Visual Studio Team Foundation Server Documentation](/tfs/index).</p> 
+        <p>Azure DevOps Services provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, Azure DevOps Server (previously named Visual Studio Team Foundation Server), see [Azure DevOps Server Documentation](/tfs/index).</p> 
         <p><i>[Visual Studio Team Services is now Azure DevOps Services](/azure/devops/user-guide/what-happened-vsts)</i></p><br/>
         <ul class="pivots">
             <li>
@@ -252,8 +252,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_android.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="Android logo" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_android.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_android.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="Android logo" src="https://docs.microsoft.com/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_android.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -373,7 +373,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/targets/npm">
+                                        <a href="/azure/devops/pipelines/artifacts/npm">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -391,7 +391,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/targets/nuget">
+                                        <a href="/azure/devops/pipelines/artifacts/nuget">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -540,7 +540,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/report/analytics/what-are-analytics-views">
+                                        <a href="/azure/devops/report/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -550,8 +550,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Analytics views (Power BI)</h3>
-                                                            <p>Define filter criteria to support Power BI reports based on the Analytics service.</p>
+                                                            <h3>Analytics </h3>
+                                                            <p>Answer quantitative questions about the your projects using the Analytics Service.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -621,7 +621,7 @@ featureFlags:
                                                         <h3>Developer resources</h3>
                                                         <p><a href="/rest/api/vsts/">REST APIs</a></p>
                                                         <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
-                                                        <p><a href="/cli/vsts/overview">CLI</a></p>
+                                                        <p><a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">CLI</a></p>
                                                         <p><a href="/azure/devops/java/index">Java</a></p>
                                                         <p><a href="/azure/devops/demo-gen">Azure DevOps Demo Generator</a></p>
                                                     </div>
@@ -636,8 +636,9 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Additional resources</h3>
                                                         <p><a href="/azure/devops/index-all">Index</a></p>
-                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
-                                                        <p><a href="/azure/devops/learn/">DevOps resource center</a></p>
+                                                        <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
+                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
+                                                        <p><a href="/azure/devops/learn/">DevOps Resource Center</a></p>
                                                         <p><a href="/tfs/index">TFS Administrator Guide</a></p>
                                                     </div>
                                                 </div>

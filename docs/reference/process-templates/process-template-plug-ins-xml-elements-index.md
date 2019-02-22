@@ -1,12 +1,13 @@
 ---
 title: Process template plug-ins index
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps & TFS
 description: Uses to look up the syntax structure and find examples of how to use each element.
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: ea3c836a-438b-4d28-9fa4-e29281a96db6
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 02/24/2017
 ---
@@ -119,7 +120,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 ##  Elements that define the root plug-in for process templates  
  The ProcessTemplate file contains two main parent elements within the **ProcessTemplate** root element: **metadata** and **groups**. The syntax for each of the following elements and their child elements is described in [Process template XML elements reference](process-template-xml-elements-reference.md).  
   
--   **metadata**: **description, nnname, plugin, plugins**   
+-   **metadata**: **description, name, plugin, plugins**   
 -   **groups: dependencies, dependency, group, tasklist**  
   
 <a name="tasks"></a> 

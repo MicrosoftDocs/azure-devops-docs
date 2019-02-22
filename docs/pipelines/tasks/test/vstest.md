@@ -1,23 +1,26 @@
 ---
-title: Visual Studio Test
-description: Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. Tests can be distributed on multiple agents using this task (version 2).
+title: Visual Studio Test task
+description: Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run.
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: EF087383-EE5E-42C7-9A53-AB56C98420F9
 ms.manager: dastahel
+ms.custom: seodec18
 ms.author: dastahel
-ms.date: 07/23/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Test: Visual Studio Test
+# Visual Studio Test task
 
-![](_img/vstest.png) Run unit and functional tests (Selenium, Appium, Coded UI test, and more)
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to run unit and functional tests (Selenium, Appium, Coded UI test, and more)
 using the Visual Studio Test Runner. Other than MSTest-based tests, test frameworks that have a
-Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be run.  
+Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be executed.  
 
-Tests that target the .NET core framework can be run by specifying the appropriate target framework value.  
+Tests that target the .NET core framework can be executed by specifying the appropriate target framework value.  
 
 Tests can be distributed on multiple agents using version 2 of this task. 
 
@@ -31,7 +34,7 @@ The vstest demand can be satisfied in two ways:
 
 1. Visual Studio is installed on the agent machine. 
 
-2. By using the [Visual Studio Test Platform Installer task](visual-studio-test-agent-deployment.md) in the pipeline definition. 
+2. By using the [Visual Studio Test Platform Installer task](../tool/vstest-platform-tool-installer.md) in the pipeline definition. 
 
 
 ::: moniker range="> tfs-2018"
@@ -57,7 +60,7 @@ The vstest demand can be satisfied in two ways:
 <tr><td><b>runAllTestsAfterXBuilds</b><br>Number of builds after which all tests should be run</td><td>(Optional) Number of builds after which to automatically run all tests. Test Impact Analysis stores the mapping between test cases and source code. It is recommended to regenerate the mapping by running all tests, on a regular basis.</td></tr>
 <tr><td><b>uiTests</b><br>Test mix contains UI tests</td><td>(Optional) To run UI tests, ensure that the agent is set to [run in interactive mode with autologon enabled](../../agents/agents.md). Setting up an agent to run interactively must be done before queueing the build / release. Checking this box does <b>not</b> configure the agent in interactive mode automatically. This option in the task is to only serve as a reminder to configure agent appropriately to avoid failures. Hosted Windows agents from the VS 2015 and 2017 pools can be used to run UI tests.</td></tr>
 <tr><td><b>vstestLocationMethod</b><br>Select test platform using</td><td>(Optional) Specify which test platform should be used.</td></tr>
-<tr><td><b>vsTestVersion</b><br>Test platform version</td><td>(Optional) The version of Visual Studio test to use. If latest is specified it chooses Visual Studio 2017 or Visual Studio 2015 depending on what is installed. Visual Studio 2013 is not supported. To run tests without needing Visual Studio on the agent, use the ‘Installed by tools installer’ option. Be sure to include the ‘Visual Studio Test Platform Installer’ task to acquire the test platform from NuGet.</td></tr>
+<tr><td><b>vsTestVersion</b><br>Test platform version</td><td>(Optional) The version of Visual Studio test to use. If latest is specified it chooses Visual Studio 2017 or Visual Studio 2015 depending on what is installed. Visual Studio 2013 is not supported. To run tests without needing Visual Studio on the agent, use the ‘Installed by tools installer’ option in the UI or `toolsInstaller` in YAML. Be sure to include the ‘Visual Studio Test Platform Installer’ task to acquire the test platform from NuGet.</td></tr>
 <tr><td><b>vstestLocation</b><br>Path to vstest.console.exe</td><td>(Optional) Specify the path to VSTest.</td></tr>
 <tr><td><b>runSettingsFile</b><br>Settings file</td><td>(Optional) Path to runsettings or testsettings file to use with the tests.Starting with Visual Studio 15.7, it is recommended to use [runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) for all types of tests. To learn more about converting a .testsettings file to a .runsettings file, see [this topic](https://github.com/Microsoft/vstest-docs/blob/master/RFCs/0023-TestSettings-Deprecation.md).</td></tr>
 <tr><td><b>overrideTestrunParameters</b><br>Override test run parameters</td><td>(Optional) Override parameters defined in the `TestRunParameters` section of runsettings file or `Properties` section of testsettings file. For example: `-key1 value1 -key2 value2`. Note: Properties specified in testsettings file can be accessed via the TestContext using Visual Studio 2017 Update 4 or higher </td></tr>
@@ -86,7 +89,7 @@ The vstest demand can be satisfied in two ways:
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

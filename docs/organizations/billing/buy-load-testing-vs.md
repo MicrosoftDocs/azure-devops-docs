@@ -1,19 +1,22 @@
 ---
-title: Buy cloud-based load testing
-description: Steps to purchase and enable cloud-based load testing in Azure DevOps via the Azure portal
+title: Buy cloud-based load testing - Azure DevOps
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18 Services
+description: Purchase and enable cloud-based load testing in Azure DevOps via the Azure portal.
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
+# Quickstart: Buy cloud-based load testing for Azure DevOps
 
-# Quickstart: Buy cloud-based load testing in Azure DevOps
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## Azure DevOps
 
@@ -23,13 +26,13 @@ Azure DevOps offers a cloud-based solution for [load testing your apps](../../te
 
 Load tests are measured and billed in virtual user minutes (VUMs) as described in this Q&A: [What are VUMs? How many minutes will my load test use?](../../test/load-test/reference-qa.md#VUM)
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) before you begin.
+If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
 <a name="buy-load-testing"></a>
 
 ## Prerequisites
 
-1. [Set up billing for your organization](set-up-billing-for-your-organization-vs.md).
+[Set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
 ## Enable paid load testing
 
@@ -53,6 +56,8 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
     You can set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** drop-down menu. When you're done, choose **Save**.
 
     ![Choose PAID and select an optional monthly limit](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
+
+Cloud-based load testing is enabled for your organization.
 
 ## Billing and free monthly usage
 
@@ -82,5 +87,5 @@ To turn off paid cloud-based load testing, go to your organization in the Azure 
 
 ## Related articles
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

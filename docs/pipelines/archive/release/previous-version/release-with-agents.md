@@ -1,11 +1,12 @@
 ---
 title: Release your app with deployment agents in Release Management
+ms.custom: seodec18
 description: Release your app to environments with deployment agents in Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 34E3CA4A-A37E-4B8F-9BC2-4613851469A1
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 07/16/2018

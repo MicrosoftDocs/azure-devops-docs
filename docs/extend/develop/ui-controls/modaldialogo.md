@@ -5,7 +5,7 @@ ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
@@ -25,7 +25,7 @@ When using this modal dialog, dialog overlay will cover only the area dedicated 
 <a name="basic"></a>
 ## Simple modal dialog
 Below sample use the simplistic modal dialog usage where no button is displayed and `contextText` is specified.
-``` javascript
+``` typescript
 	import Dialogs = require("VSS/Controls/Dialogs");
 	
 	$("#show").click(()=> {
@@ -74,7 +74,7 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 	}
 ```
 
-``` javascript
+``` typescript
 	import Dialogs = require("VSS/Controls/Dialogs");
 	
 	$("#show").click(() => {
@@ -113,9 +113,9 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 
 <a name="confirmation"></a>
 ## Confirmation dialog
-Below sample displays how to use modal dialgo as a confirmation dialog.
+Below sample displays how to use modal dialog as a confirmation dialog.
 
-``` javascript
+``` typescript
 	import Dialogs = require("VSS/Controls/Dialogs");
 	
 	var filename = "File1.txt";

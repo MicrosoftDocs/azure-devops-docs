@@ -1,30 +1,41 @@
-- name: Start using Azure Boards
+- name: Start using Azure Boards (Basic process) 
   href: index.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json
   items:
   - name: "What is Azure Boards?"
-    href: what-is-azure-boards.md
-  - name: "Why use Azure Boards?"
-    href: why-use-azure-boards.md
+    href: what-is-azure-boards-basic-process.md
   - name: Sign up and invite some teammates 
     href: sign-up-invite-teammates.md
   - name: Plan and track work
-    href: plan-track-work.md 
-  - name: Create your backlog
-    href: ../backlogs/create-your-backlog.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json 
-  - name: Kanban board quickstart
-    href: ../boards/kanban-quickstart.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
-  - name: Default permissions (Security)
-    href: permissions-access-boards.md
-  - name: Key concepts
-    href: key-concepts.md
+    href: track-issues-tasks.md 
+  - name: Customize your boards
+    href: customize-boards.md 
+  - name: Manage your project
+    href: manage-boards.md
+  - name: Reference
+    items:
+    - name: Basic fields reference
+      href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
+    - name: Key concepts
+      href: key-concepts.md
+    - name: Best tool for the job
+      href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
+    - name: Default permissions & access (Security)
+      href: permissions-access-boards.md
+    - name: "Why use Azure Boards?"
+      href: why-use-azure-boards.md
+    - name: Connect a project to GitHub  
+      href: ../github/connect-to-github.md
   - name: Resources
     items:
     - name: Web portal navigation
       href: ../../project/navigation/index.md
+    - name: GitHub & Azure Boards
+      href: ../github/index.md
     - name: Work items
       href: ../work-items/index.md
+    - name: Sprints (Scrum)
+      href: ../sprints/index.md
     - name: Process customization
       href: ../../organizations/settings/work/inheritance-process-model.md
-    - name: Security & identity
-      href: ../../organizations/security/index.md
+
 

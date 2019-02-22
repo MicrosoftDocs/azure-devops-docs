@@ -1,11 +1,12 @@
 ---
 title: Task Groups in Azure Pipelines and Team Foundation Server
-description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS) Release Management
+ms.custom: seodec18
+description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
 ms.date: 08/24/2018
@@ -14,11 +15,14 @@ monikerRange: '>= tfs-2017'
 
 # Task groups for builds and releases
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
+
+> [!NOTE]
+> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](../yaml-schema.md#step-template).
 
 A *task group* allows you to encapsulate a sequence of tasks, already defined
 in a build or a release pipeline, into a single reusable task that can be
@@ -81,6 +85,8 @@ to change each one individually.
 
 4. Save your updated pipeline.
 
+::: moniker range="> tfs-2017"
+
 ## Manage task groups
 
 All the task groups you create in the current project are listed in
@@ -108,7 +114,9 @@ Select a task group name to open the details page.
   and other task groups, that use (reference) this task group.
   This is useful to ensure changes do not have unexpected effects on other processes.
 
-::: moniker range="vsts"
+::: moniker-end
+
+::: moniker range="> tfs-2018"
 
 ## Create previews and updated versions of task groups
 

@@ -1,43 +1,70 @@
 ---
 title: Data available from the Analytics Service
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Data available for reporting purposes using the Analytics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe   
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts'
-ms.date: 04/04/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 11/21/2018
 ---
 
 # Data available from the Analytics Service
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 
-The Analytics Service provides the reporting platform for Azure DevOps. **The Analytics Service is in public preview.** 
+The Analytics Service provides the reporting platform for Azure DevOps and Azure DevOps Server. **The Analytics Service is in public preview.** 
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
+Currently, you can access the following data from the Analytics Service. This information was last updated: February 1, 2019.
 
-Currently, you can access the following data from the Analytics Service. This information was last updated: April 4, 2018.
-
-> [!div class="mx-tdBreakAll"]
-> Data | Availability | [Widgets](./analytics-widgets.md) > | [OData](../extend-analytics/index.md) | [Power BI](../powerbi/overview.md) |
-> |-|-|-|-|-|
-> | Work Item Tracking | Available Now | Yes | Yes | Yes |
-> | Automated Testing Data | Target - Q2, 2018 |  |  |  |
-> | Manual Testing Data | Target - 2018 |  |  |  |
-> | Build | Under investigation |  |  |  |
-> | Release | Under investigation |  |  |  |
-> | Code (Pull Requests, Commits, Branches) | Under investigation |  |  |  |
-> | Packaging | Under investigation |  |  |  |
-
+<table>
+<tr valign="bottom">
+<th width="15%">Data</th>
+<th width="25%">Available on Azure DevOps Services</th>
+<th width="25%">Available on Azure DevOps Server 2019 RC1</th>
+<th width="35%">Future availability</th>
+</tr>
+<tbody valign="top">
+<tr>
+<td>[Boards](https://azure.microsoft.com/en-us/services/devops/boards/)</td>
+<td>[Widgets](./analytics-widgets.md), [OData](../extend-analytics/index.md), [Power BI](../powerbi/overview.md)</td>
+<td>Same as Azure DevOps</td>
+<td>Rollup - Q2, CY 2019</td>
+</tr>
+<tr>
+<td>[Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)</td>
+<td>[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)</td>
+<td>Same as Azure DevOps</td>
+<td>Build/Release - CY 2019</td>
+</tr>
+<tr>
+<td>[Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/)</td>
+<td>None</td>
+<td>None</td>
+<td>Q2, CY 2019</td>
+</tr>
+<tr>
+<td>[Repos](https://azure.microsoft.com/en-us/services/devops/repos/)</td>
+<td>None</td>
+<td>None</td>
+<td>Under investigation</td>
+</tr>
+<tr>
+<td>[Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/)</td>
+<td>None</td>
+<td>None</td>
+<td>Under investigation</td>
+</tr>
+</tbody>
+</table>
 
 As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
 
 <a id="q-a">  </a>
 ## Try this next
 > [!div class="nextstepaction"]
-> [Dataset design for the Power BI Azure DevOps Services Connector](../powerbi/data-connector-dataset.md)
+> [Dataset design for the Power BI Azure DevOps Connector](../powerbi/data-connector-dataset.md)

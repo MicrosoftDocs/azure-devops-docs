@@ -1,11 +1,11 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2013'
-title: Access control entries (ACEs) | REST API Reference for Azure DevOps Services and Team Foundation Server
+monikerRange: '>= tfs-2015 < azure-devops'
+title: Access control entries (ACEs) | REST API Reference for Team Foundation Server
 description: Access control entries reference for integrating with VSTS
 ms.assetid: ca6693b0-1982-4f8b-9b25-41b903fad3ca
-ms.manager: douge
+ms.manager: jillfra
 ms.topic: article
 ms.author: elbatk
 author: elbatk
@@ -13,6 +13,9 @@ ms.date: 03/15/2017
 ---
 
 # Access Control Entries (ACEs)
+
+[!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
 [!INCLUDE [API_version](../_data/version.md)]
 
 ## Add a list of access control entries
@@ -29,7 +32,7 @@ POST https://{instance}/_apis/accesscontrolentries/{securitynamespace}/?api-vers
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | Query
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -43,13 +46,83 @@ POST https://{instance}/_apis/accesscontrolentries/{securitynamespace}/?api-vers
 
 The allow bit is set to 5 before the update. 
 
-[!code-REST [POST_aces_replace](./_data/POST__accesscontrolentries__securityNamespaceId__.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/accesscontrolentries/5a27515b-ccd7-42c9-84f1-54c998f03866/?api-version=1.0
+```
+```json
+{
+  "token": "newToken",
+  "merge": false,
+  "accessControlEntries": [
+    {
+      "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+      "allow": 8,
+      "deny": 0,
+      "extendedinfo": {}
+    }
+  ]
+}
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1",
+      "allow": 8,
+      "deny": 0,
+      "extendedInfo": {}
+    }
+  ]
+}
+```
+
 
 ### With merge
 
 The allow bit is set to 5 before the update. 
 
-[!code-REST [POST_aces_merge](./_data/POST__accesscontrolentries__securityNamespaceId__merge.json)]
+#### Sample request
+
+```
+POST https://mytfsserver/DefaultCollection/_apis/accesscontrolentries/5a27515b-ccd7-42c9-84f1-54c998f03866/?api-version=1.0
+```
+```json
+{
+  "token": "newToken",
+  "merge": true,
+  "accessControlEntries": [
+    {
+      "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+      "allow": 8,
+      "deny": 0,
+      "extendedinfo": {}
+    }
+  ]
+}
+```
+
+#### Sample response
+
+```json
+{
+  "count": 1,
+  "value": [
+    {
+      "descriptor": "Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2",
+      "allow": 13,
+      "deny": 0,
+      "extendedInfo": {}
+    }
+  ]
+}
+```
+
 
 ## Remove a list of access control entries
 <a name="remove" />
@@ -63,7 +136,7 @@ DELETE https://{instance}/_apis/accesscontrolentries/{securitynamespace}/?api-ve
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance          | string   |         | TFS server name ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | Query 
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -74,4 +147,15 @@ DELETE https://{instance}/_apis/accesscontrolentries/{securitynamespace}/?api-ve
 
 Any ACEs whose descriptor is in the provided descriptors list will be removed from the ACL.
 
-[!code-REST [DELETE_aces_descriptors](./_data/DELETE__accesscontrolentries__securityNamespaceId___token-_token__descriptors-_descriptor1_,_descriptor2_.json)]
+#### Sample request
+
+```
+DELETE https://mytfsserver/DefaultCollection/_apis/accesscontrolentries/5a27515b-ccd7-42c9-84f1-54c998f03866/?token=newToken&descriptors=Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-1,Microsoft.TeamFoundation.Identity;S-1-9-1551374245-1204400969-2402986413-2179408616-0-0-0-0-2&api-version=1.0
+```
+
+#### Sample response
+
+```json
+true
+```
+

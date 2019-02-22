@@ -1,21 +1,23 @@
 ---
-title: Download Fileshare Artifacts
-description: Download Fileshare Artifacts
-ms.topic: reference
+title: Download Fileshare Artifacts task
+description: Download Fileshare Artifacts task for Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 515F989D-28E5-4EB3-99E4-7F81E9977F6C
 ms.manager: sriramb
+ms.custom: seodec18
 ms.author: omeshp
-ms.date: 05/09/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Utility: Download Fileshare Artifacts
+# Download Fileshare Artifacts task
 
-![](_img/downloadbuildartifacts.png) Download Fileshare Artifacts
+**Azure Pipelines**
 
-::: moniker range="vsts"
+Use this task in a build or release pipeline to download fileshare artifacts.
+
+::: moniker range="azure-devops"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/DownloadFileshareArtifactsV0.md)]
 ::: moniker-end
@@ -33,5 +35,5 @@ monikerRange: 'vsts'
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 

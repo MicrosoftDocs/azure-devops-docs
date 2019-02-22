@@ -42,7 +42,7 @@ We made an adjustment to both the Kanban board and Taskboard to implement respon
 
 ##Bugs on the Taskboard
 
-Late last year we started work on a set of features designed to provide you with flexibility around how [bug work items show up on your backlogs](../2014/nov-04-team-services.md) and boards. Today’s deployment brings a new option that lets you choose to have bugs show up on your Taskboard just like tasks. In this mode, bugs that are children of requirements (stories, PBIs, etc.) are added to the Taskboard swim lane for the appropriate requirement.
+Late last year we started work on a set of features designed to provide you with flexibility around how [bug work items show up on your backlogs](https://visualstudio.microsoft.com/articles/news/2014/nov-04-team-services) and boards. Today’s deployment brings a new option that lets you choose to have bugs show up on your Taskboard just like tasks. In this mode, bugs that are children of requirements (stories, PBIs, etc.) are added to the Taskboard swim lane for the appropriate requirement.
 
 ![Bugs in the appropriate swim lanes on the Taskboard](_img/3_10_05.png)
 
@@ -54,7 +54,7 @@ The code editor in the web portal has been updated to support syntax highlightin
 
 ##CodeLens for accounts in West Europe
 
-And our last bit of news is that [CodeLens](https://msdn.microsoft.com/en-us/library/dn269218.aspx) is now in Public Preview for Visual Studio Online accounts in the West Europe region. You will need Visual Studio Ultimate 2013 Update 4 or Visual Studio 2015 Preview or later and your code should be checked into Team Foundation Version Control in Visual Studio Online.
+And our last bit of news is that [CodeLens](https://msdn.microsoft.com/library/dn269218.aspx) is now in Public Preview for Visual Studio Online accounts in the West Europe region. You will need Visual Studio Ultimate 2013 Update 4 or Visual Studio 2015 Preview or later and your code should be checked into Team Foundation Version Control in Visual Studio Online.
 
 That’s it for Sprint 79. If you have questions about what we’ve shipped today, please reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). And don’t forget to share what you’d like to see us prioritize on [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso). See you again in three weeks.
 

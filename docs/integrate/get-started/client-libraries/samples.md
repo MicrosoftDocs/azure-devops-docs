@@ -5,7 +5,7 @@ ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
@@ -32,6 +32,8 @@ SOAP examples on this page require the following NuGet packages:
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 * [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
+>[!NOTE]
+> The Work Item Tracking (WIT) and Test Client OM are scheduled to be deprecated in 2020. For more information, see [Deprecation of WIT and Test Client OM](../../concepts/wit-client-om-deprecation.md).
 
 #### Example 1: Using a REST-based HTTP client
 
@@ -264,7 +266,7 @@ public static void OAuthSample()
 ```cs
 public static void AADSoapSample()
 {
-	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed Azure DevOps Services organization)
+	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed organization)
 	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new AadCredential()))
 	{
 		tpc.Authenticate();

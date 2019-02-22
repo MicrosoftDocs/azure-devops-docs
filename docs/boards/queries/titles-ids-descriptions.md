@@ -1,36 +1,69 @@
 ---
 title: Query by title, ID, or rich-text fields 
-titleSuffix: Azure Boards and TFS
-description: Example work queries based on titles, IDs, rich-text fields in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Example work queries based on titles, IDs, rich-text fields in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.manager: douge
+ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
-ms.date: 03/20/2018  
+monikerRange: '>= tfs-2013'
+ms.date: 02/07/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this topic. 
+When you want to find work items based on a keyword or phrase, you can do so by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. 
 
-[!INCLUDE [temp](../_shared/search-box.md)]
+## Supported operators and macros 
+Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
+
+<table valign="top">
+<thead>
+<tr>
+<th width="22%"><p>Data type</p></th>
+<th width="78%"><p>Supported operators and macros</p></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+	<td><p> <strong>Rich-text (HTML)</strong> </p></td>
+	<td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
+</tr>
+<tr>
+	<td><strong>Multi-line text strings (PlainText)</strong> </td>
+	<td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
+</tr>
+<tr>
+	<td><strong>Single text (String)</strong> </td>
+	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+	<p>**Macros**: **[Any]**, valid with the **Work Item Type** field<br/>
+	**@Project**<sup>2</sup>, valid with the **Team Project** field </p>
+	</td>
+</tr>
+</tbody>
+</table>
+
+####Notes:
+1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
+2. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+
 
 <a id="keyword"/>
-## List items based on keywords or phrases
+## Keyword or phrase query
 
-Use **Contains** and **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
+Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
 ![Editor for flat list query for filtering key words](_img/example-work-item-queries/IC675039.png)   
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, <b>*</b>. These operators use the full-text search index.
 
- 
 
 <a id="undefined-value"/>
-## List items based on undefined field values
+## Undefined field value queries
 
 You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type Task whose Activity field is blank.  
 
@@ -38,8 +71,22 @@ You can find work items that have an undefined field value by using the equals o
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
+
+::: moniker range=">= azure-devops-2019"
+
+<a id="empty"/>
+## Empty or not empty HTML field queries
+
+You can find work items where no **Description** has been entered. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
+
+For example, the following query filters will list all work items where some entries have been made into the **Description** field.  
+
+![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
+
+::: moniker-end
+
 <a id="category"/>
-## List items based on categories
+## Category based queries
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
@@ -52,13 +99,12 @@ The default assignments of work item types to each category are listed below for
 
 | Process | Requirement category | Task category |
 |---------|---------|---------|
+| Basic | Issue | Task |
 | Agile | User Story | Task |
-| Scrum | Product Backlog Item | Task |
+| Scrum | Product Backlog Item, Bug | Task |
 | CMMI | Requirement | Task |
 
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
-
-Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../../reference/add-modify-wit.md). 
+However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../../reference/add-modify-wit.md). 
 
 ## Common fields for most work item types 
 
@@ -70,9 +116,9 @@ The following table describes common fields used to filter queries. The **ID** f
 <table width="100%">
 <tbody valign="top">
 <tr>
-  <th width="17%">Field name</th>
-  <th width="66%">Description</th>
-  <th width="17%">Work item type</th>
+  <th width="22%">Field name</th>
+  <th width="56%">Description</th>
+  <th width="22%">Work item type</th>
 </tr>
 <tr>
 	<td><p>Acceptance Criteria  <sup>1</sup></p></td>
@@ -177,7 +223,7 @@ Work Item Type
 
 ####Notes:   
 
-0. To learn more about working with rich-text fields, see [Share plans](share-plans.md#rich-text).   
+0. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
 0. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 ## Related articles

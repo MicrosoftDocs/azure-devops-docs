@@ -1,6 +1,6 @@
 ---
-title: PHP
-description: CI and CD for PHP projects.
+title: Build and test PHP apps
+description: Build and test PHP apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,13 +8,16 @@ ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
+ms.custom: seodec18
 ms.date: 08/31/2018
 monikerRange: '> tfs-2018'
 ---
 
-# PHP
+# Build and test PHP apps in Azure Pipelines
 
-This guidance explains how to build PHP projects.
+**Azure Pipelines**
+
+This guidance explains how to use Azure Pipelines to automatically build and test PHP projects with CI/CD pipelines.
 
 ## Example
 
@@ -33,7 +36,7 @@ Follow all the instructions in [Create your first pipeline](../get-started-yaml.
 
 You can use Azure Pipelines to build your PHP projects without needing to set up any infrastructure of your own. PHP is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines, along with many common libraries per PHP version. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of PHP that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
+For the exact versions of PHP that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 ### Use a specific PHP version
 
@@ -42,7 +45,7 @@ On the Microsoft-hosted Ubuntu agent, multiple versions of PHP are installed. A 
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'ubuntu-16.04'
 
 variables:
   phpVersion: 7.2
@@ -86,7 +89,7 @@ Optionally, customize the value of **rootFolderOrFile** to alter what is include
   inputs:
     rootFolderOrFile: '$(system.defaultWorkingDirectory)'
     includeRootFolder: false
-- task: PublishBuildArtifacts@1'
+- task: PublishBuildArtifacts@1
 ```
 
 ## Build a container image
