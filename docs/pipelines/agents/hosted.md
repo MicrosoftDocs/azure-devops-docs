@@ -18,8 +18,7 @@ monikerRange: 'azure-devops'
 **Azure Pipelines**
 
 > [!NOTE]
-> The Hosted Linux Preview Pool is deprecated and will be removed in December 2018.
-> [Learn more below](#hosted-linux-preview-pool-deprecation).
+> The preview image for Visual Studio 2019 is available! This image is based on Windows Server 2019 and includes the VS Preview. The preview installation will be replaced with the final release when it becomes available.
 
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
@@ -27,6 +26,7 @@ monikerRange: 'azure-devops'
 
 The Microsoft-hosted agent pool provides 5 virtual machine images to choose from:
 
+* Visual Studio 2019 Preview on Windows Server 2019 (`windows-2019`)
 * Ubuntu 16.04 (`ubuntu-16.04`)
 * Visual Studio 2017 on Windows Server 2016 (`vs2017-win2016`)
 * macOS 10.13 (`macOS-10.13`)
@@ -38,7 +38,8 @@ The Microsoft-hosted agent pool provides 5 virtual machine images to choose from
 | Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
 | Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
 | Development tools on macOS | macOS-10.13 (see notes below) | Hosted macOS |
-| .NET Core | ubuntu-16.04 or vs2017-win2016 | Hosted Ubuntu 1604 or Hosted VS2017 |
+| .NET Core | ubuntu-16.04 or windows-2019 | Hosted Ubuntu 1604 or Hosted Windows 2019 with VS 2019 |
+| Visual Studio 2019 Preview | windows-2019 | Hosted Windows 2019 with VS 2019 |
 | Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
 | Visual Studio 2015 | vs2015-win2012r2 | Hosted |
 
@@ -60,7 +61,7 @@ jobs:
   - script: echo hello from macOS
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-2019'
   steps:
   - script: echo hello from Windows
 ```
@@ -83,6 +84,7 @@ You can manually select from tool versions on macOS images. [See below](#mac-pic
 
 Software on Microsoft-hosted agents is updated once each month.
 
+* [Windows Server 2019 with Visual Studio 2019 Preview](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2019-Server2019-Readme.md).
 * [Visual Studio 2017 on Windows Server 2016 (Hosted VS2017)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
 * [Ubuntu 16.04 (Hosted Ubuntu 1604)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/linux/Ubuntu1604-README.md).
 * [Xcode 8, 9, and 10 on macOS 10.13 (Hosted macOS)](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md).
