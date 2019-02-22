@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 02/10/2019
+ms.date: 02/22/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -231,6 +231,7 @@ jobs:
     vmImage: 'ubuntu-16.04'
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
+                                                                          # remember, expressions require single quotes
   steps:
   - script: echo $(myVarFromJobA)
     name: echovar
@@ -326,7 +327,7 @@ You can set a variable using an expression. We already encountered one case of t
 - job: B
   dependsOn: A
   variables:
-    myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
+    myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ] # remember to use single quotes
 ``` 
 
 You can use any of the supported expressions for setting a variable. Here is an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
