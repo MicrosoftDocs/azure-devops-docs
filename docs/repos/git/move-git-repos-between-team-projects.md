@@ -34,7 +34,7 @@ As shown, you need to move the MigrationDemo repo, from the FabrikamOld to the n
 You have two options as outlined below. Import functionality is easier, but is only available in Azure DevOps Services and TFS 2017 Update 1 and above.  
 
 ### Use Import Git repository functionality
-Using the Import Repository feature, you can import a Git repository to your team project from Team Foundation Server (TFS), Azure Repos or any other Git source code provider like GitHub. Review the [import repository documentation](../repos/git/import-git-repository.md) for more details.
+Using the Import Repository feature, you can import a Git repository to your team project from Team Foundation Server (TFS), Azure Repos or any other Git source code provider like GitHub. Review the [import repository documentation](import-git-repository.md) for more details.
 
 ### Manually migrate the Git repo in five easy steps:
 

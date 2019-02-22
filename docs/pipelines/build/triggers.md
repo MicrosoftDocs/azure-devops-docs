@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 02/07/2019
+ms.date: 02/21/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -30,7 +30,9 @@ On the Triggers tab, you specify the events that trigger the build. You can use 
 
 ::: moniker range="azure-devops"
 
-YAML builds are configured by default with a CI trigger on all branches.
+YAML builds are configured by default with a CI trigger on all branches and all tags.
+
+### Branches
 
 You can control which branches get CI triggers with a simple syntax:
 
@@ -56,6 +58,14 @@ trigger:
     - releases/old*
 ```
 
+If you don't specify any branch triggers, the default is as if you wrote:
+```yaml
+trigger:
+  branches:
+    include:
+    - *
+```
+
 If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
 If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
 
@@ -67,6 +77,30 @@ trigger:
     include:
     - master
 ```
+
+### Tags
+
+Similarly, you can specify tags to include or exclude.
+
+```yaml
+# specific branch build
+trigger:
+  tags:
+    include:
+    - v2.*
+    exclude:
+    - v2.0
+```
+
+If you don't specify any tag triggers, the default is as if you wrote:
+```yaml
+trigger:
+  tags:
+    include:
+    - *
+```
+
+### Paths
 
 You can specify file paths to include or exclude.
 
@@ -83,6 +117,8 @@ trigger:
     exclude:
     - docs/README.md
 ```
+
+### Opting out of CI builds
 
 You can opt out of CI builds entirely by specifying `trigger: none`.
 
@@ -273,7 +309,7 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 ::: moniker range="azure-devops"
 
 Scheduled builds are not yet supported in YAML syntax.
-After you create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
+After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 

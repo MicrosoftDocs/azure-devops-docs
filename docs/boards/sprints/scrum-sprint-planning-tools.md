@@ -38,7 +38,7 @@ At the start of each sprint, you'll want to plan the work that your team can com
 </p>
 <p>By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. And, conveniently, you can set holidays or shared days off taken by the entire team. </p>
 <p>Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. </p>
-<p>You [set recurring days off](../sprints/set-capacity.md#team_settings), such as weekends, through team settings.</p>
+<p>You [set recurring days off](../../organizations/settings/set-working-days.md), such as weekends, through team settings.</p>
 </td>
 <td>
 ![Team capacity planning tool](_img/team-capacity-planning-tool.png) 

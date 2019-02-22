@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 02/08/2019
 ---
 
 # Set personal or team favorites    
@@ -23,10 +23,6 @@ By favoriting an artifact or view, you can quickly access it. An artifact is a s
 You can set favorites for yourself or your team. Team favorites are a quick way for members of your team to quickly access shared resources of interest. You favorite an item for yourself by clicking the ![ ](../../_img/icons/icon-favorite-star.png) star icon. The favorited item will then show up easily from one or more directory lists. You set favorites for a team through the context menu for the artifact. 
 
 You can set favorites for the following artifacts from the indicated page. 
-
-[!INCLUDE [temp](_shared/new-navigation-wp.md)]  
-
-# [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -44,29 +40,6 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-
-> [!div class="mx-tdCol2BreakAll"]  
-> |Service/area |     Artifacts   | Page |
-> |---------------|---------|---------| 
-> | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |  
-> | Dashboard | Team dashboards  | **Dashboards**  | 
-> | Code | Repositories | **Code>Branches**  (personal favorites only) | 
-> | Work, Agile tools for a team | Backlogs, boards, sprint backlogs, sprint taskboards | **Work>Queries** | 
-> | Work  | Queries | **Work>Queries** |
-> | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../boards/plans/review-team-plans.md)) | 
-> | Build and Release | Pipeline definitions | **Build & Release>Build** or **Release**  | 
-> | Test | Test plans | **Test>Test Plans** (personal favorites only) |
-
-::: moniker-end
-
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 
@@ -82,11 +55,8 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker-end
 
----
 
 ## Favorite a project or team  
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -108,13 +78,6 @@ You can set favorites for the following artifacts from the indicated page.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
 
 0. To favorite a project, open the project **Summary** page and choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon.
 
@@ -126,22 +89,12 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
-
-
 <a id="view-favorites">  </a>
 ## View personal favorites   
 
 > [!NOTE]  
 > Favorite groups specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, then the favorite groups&mdash;Plans, Boards, Backlogs, Analytics views, Sprints, and Queries item and all Analytics widgets&mdash;are disabled. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -152,15 +105,7 @@ Access your favorites by choosing the ![ ](../../_img/icons/inbox.png) inbox ico
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2017  <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
@@ -174,17 +119,8 @@ Access your favorites by choosing the ![ ](../../_img/icons/inbox.png) inbox ico
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
-
 
 ## Favorite a team's backlog, Kanban board, or other artifact
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -206,27 +142,14 @@ You can favorite several Agile tools for a team from a **Boards** page.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Favoriting a product backlog, sprint backlog, or Kanban board isn't supported in  previous navigation.  
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
----
-
-
 ## Favorite a dashboard 
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -241,8 +164,8 @@ Favoriting a product backlog, sprint backlog, or Kanban board isn't supported in
 	> ![Dashboards, Browse all dashboards option](../../report/dashboards/_img/dashboards/all-dashboards-list.png)  
 
 	> [!TIP]
-	> You can change the sort order of the list by choosing the column label.   
-	 
+	> You can change the sort order of the list by choosing the column label.  
+
 3. To favorite a dashboard, hover over the dashboard and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon.  
 
 	> [!div class="mx-imgBorder"]  
@@ -252,25 +175,11 @@ Favoriting a product backlog, sprint backlog, or Kanban board isn't supported in
    
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 Favoriting a dashboard isn't supported in previous navigation.  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ## Favorite a repository
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -281,13 +190,7 @@ From any **Repos** page, open the repository selector and choose the ![ ](../../
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 From any **Code** page, open the repository selector and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the repository you want to favorite. 
 
@@ -296,33 +199,20 @@ From any **Code** page, open the repository selector and choose the ![ ](../../_
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 ## Favorite a build pipeline  
-
-# [New navigation](#tab/new-nav)
 
 ::: moniker range=">= azure-devops-2019"
 
 Open **Pipelines>Builds** and choose either **Mine** or **Definitions** page. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Pipelines>Builds, Add to my favorites or team favorites, new navigation](_img/favorites/set-build-favorites-vert.png)
+> ![Pipelines>Builds, Add to my favorites or team favorites](/azure/devops/boards/boards/(_img/favorites/set-build-favorites-vert.png)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Open **Build and Release>Builds** and choose either **Mine** or **Definitions** page. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
 
@@ -331,15 +221,7 @@ Open **Build and Release>Builds** and choose either **Mine** or **Definitions** 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ## Favorite a shared query 
-
-# [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -348,29 +230,7 @@ Open **Boards>Queries** and choose the **All** page. Expand a folder as needed. 
 Or, open the context menu of the query, and then select **Add to Team Favorites**, and then select from the list of teams. 
 
 > [!div class="mx-imgBorder"]  
-> ![Work>Queries, Add to favorites, new navigation](_img/favorites/favorite-query.png)
-
-You can also set a query as a personal favorite by opening the query and choosing the ![ ](../../_img/icons/icon-favorite-star.png) star icon.
-
-> [!div class="mx-imgBorder"]  
-> ![Work>Queries, set shared query as a personal favorite](_img/favorites/set-query-favorite-personal.png) 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="azure-devops"
-
-Open **Work>Queries** and choose the **All** page. Expand a folder as needed. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the query you want to favorite. 
-
-Or, open the context menu of the query, and then select **Add to Team Favorites**, and then select from the list of teams. 
-
-> [!div class="mx-imgBorder"]  
-> ![Work>Queries, Add to favorites, new navigation](_img/favorites/favorite-query.png)
+> ![Work>Queries, Add to favorites](/azure/devops/boards/boards/(_img/favorites/favorite-query.png)
 
 You can also set a query as a personal favorite by opening the query and choosing the ![ ](../../_img/icons/icon-favorite-star.png) star icon.
 
@@ -387,49 +247,24 @@ Open **Work>Queries**. Next, open the ![ ](../../_img/icons/actions-icon.png) ac
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 ## Favorite a delivery plan 
 
 To learn more about delivery plans, see [Review team Delivery Plans](../../boards/plans/review-team-plans.md).
-
-#[New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"  
 
 To mark a delivery plan as a favorite, open the **Boards>Plans** page and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan. 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"   
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"  
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 To mark a delivery plan as a favorite, open the **Work>Plans** page and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
-
 ## Favorite a test plan 
 
 To learn more about test plans, see [Create a test plan and test suite](../../test/create-a-test-plan.md).
-
-#[New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -437,30 +272,15 @@ To mark a test plan as a favorite, open **Test Plans>Test Plans** and choose the
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 To mark a test plan as a favorite, open the **Test>Test Plans** page and choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 <a id="unfavorite"> </a>
 ## Unfavorite an artifact
-
-
-# [New navigation](#tab/new-nav)  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -473,25 +293,14 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
 
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || azure-devops"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 You can unfavorite an artifact from the **Projects>Favorites** page and choose the ![ ](../../_img/icons/icon-favorited.png) favorited icon of a currently favorited artifact. 
 
 Similarly, you can unfavorite an artifact from the same page where you favorited it. 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 
 ## Related articles
