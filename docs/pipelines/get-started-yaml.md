@@ -9,7 +9,7 @@ ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/19/2018
+ms.date: 02/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -44,22 +44,24 @@ You should now have a sample app in your GitHub account.
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose **New pipeline**.
+1. In your project, navigate to the **Pipelines** page. Then choose **New, New build pipeline**.
+
+   > [!div class="mx-imgBorder"]
+   ![New pipelines](_img/get-started-yaml/new-pipeline-button.png)
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
    > [!div class="mx-imgBorder"]
    ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
 
-1. For the second step, choose to **Authorize with OAuth** by selecting **Authorize**. You might be redirected to GitHub to sign in. Enter your GitHub credentials.
+1. Choose to **Authorize with OAuth** by selecting **Authorize**. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials. If you have previously authorized, you can choose a connection from **Use an existing connection**.
 
-1. When you're redirected back to Azure Pipelines, select the **sample app** repository.
+1. When you're redirected back to Azure Pipelines, select the your desired sample app repository.
 
-1. For the third step, Azure Pipelines analyzes the code in your repository. If your repository already contains an `azure-pipelines.yml` file, which is the case for all sample repositories, then this step is skipped. Or else, Azure Pipelines recommends a starter template based on the code in your repository.
+1. Azure Pipelines will analyze your repository. 
 
-1. In the final step, you're shown the YAML file that will be used.
-
-1. If you see the **Run**, button, then choose it and skip to the next step. If you see the **Save and run** button, then first select **Commit directly to the master branch**, and then choose **Save and run**.
+  - If your repository already contains an `azure-pipelines.yml` file (which is the case for the sample repositories in this article), then that file will be used, and you'll see a **Run** button. Click it to start a build.
+  - If your repository doesn't have a YAML file, Azure Pipelines recommends a starter template based on the code in your repository. You'll see a **Save and run** button instead of **Run**. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
 1. Wait for the build to finish.
 
@@ -68,14 +70,11 @@ You should now have a sample app in your GitHub account.
 
 Many developers like to show that they're keeping their code quality high by displaying a CI build status badge in their repo.
 
-> [!div class="mx-imgBorder"]
 ![Status badge shows Azure pipeline succeeded](_img/get-started-yaml/azure-pipelines-succeeded.png)
 
 To copy the status badge to your clipboard:
 
-1. In Azure Pipelines, go to the Builds page to view the list of pipelines.
-
-1. Select the pipeline that was created for you.
+1. In Azure Pipelines, go to the **Builds** page to view the list of pipelines. Select the pipeline you created in the previous section.
 
 1. In the context menu for the pipeline, select **Status badge**.
 
@@ -84,19 +83,17 @@ To copy the status badge to your clipboard:
 
 1. Copy the sample Markdown from the status badge panel.
 
-Now with the status badge in your clipboard, take the following steps in GitHub:
+Now with the badge Markdown in your clipboard, take the following steps in GitHub:
 
-1. Inspect the `azure-pipelines.yml` file at the root of your repository. The YAML file contains the instructions for the pipeline. The next time you change any file in this repository, Azure Pipelines will automatically build your code.
+1. Go to the list of files and select `Readme.md`. Select the pencil icon to edit.
 
-1. Go back to the list of files and select the `Readme.md` file. Then choose **Edit**.
+1. Paste the status badge Markdown at the beginning of the file.
 
-1. Paste the status badge Markdown that you copied in the previous section at the beginning of the `Readme.md` file.
-
-1. Commit the change to the master branch.
+1. Commit the change to the `master` branch.
 
 1. Notice that the status badge appears in the description of your repository.
 
-Back in Azure Pipelines, observe that a new build is queued. Its status might be either not started or running.
+Because you just changed the `Readme.md` file in this repository, Azure Pipelines automatically builds your code, according to the configuration in the `azure-pipelines.yml` file at the root of your repository. Back in Azure Pipelines, observe that a new build appears. Each time you make an edit, Azure Pipelines queues a new build.
 
 ## Next steps
 
