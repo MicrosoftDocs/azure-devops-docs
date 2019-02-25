@@ -223,7 +223,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     
     > **NOTE:** You will notice above that the Publish and Source location both reference Version 2 of NuGet. PowerShell does not support Version 3 of NuGet.
     
-    Another example for Azure Artifacts, which defaults to Version 3 of NuGet (but you will use Version 2):
+    If you're still using the older ```visualstudio.com``` URLs, use this command instead:
 
     ```powershell
     Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted
