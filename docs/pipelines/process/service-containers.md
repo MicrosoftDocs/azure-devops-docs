@@ -85,6 +85,8 @@ resources:
     image: nginx
     ports:
     - 8080:80
+    env:
+      NGINX_PORT: 80
   - container: redis
     image: redis
     ports:
