@@ -293,6 +293,8 @@ You can view the version of an agent by navigating to **Agent pools** and select
 
 ## Q & A
 
+[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+
 <h3 id="private-agent-performance-advantages">Do self-hosted agents have any performance advantages over Microsoft-hosted agents?</h3>
 
 In many cases, yes. Specifically:
