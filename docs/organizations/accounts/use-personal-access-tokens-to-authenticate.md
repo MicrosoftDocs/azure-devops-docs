@@ -30,6 +30,8 @@ To learn more about how security and identity are managed, see [About security a
 
 To learn more about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
 
+For administrators to revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
+
 ## Frequently asked questions  
 
 ### What is my Azure DevOps Services URL?
