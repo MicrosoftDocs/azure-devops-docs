@@ -87,6 +87,8 @@
     href: ../projects/connect-to-projects.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
   - name: Authenticate access with personal access tokens
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+  - name: Revoke user PATs - for admins
+    href: ../accounts/admin-revoke-user-pats.md
 - name: Troubleshooting
   items:
   - name: Add and delete users
