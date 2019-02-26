@@ -66,7 +66,7 @@ To support your project mission, choose a README file that you maintain in a pro
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
-![Open Project Summary, previous nav](_img/project-vision-status-project-home-page.png)  
+![Open Project Summary](_img/project-vision-status-project-home-page.png)  
 
 To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or  [Initialize a README file for your TFVC repo](#initialize-tfvc).
 
@@ -204,7 +204,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 2. Select **Create README**.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Welcome page, TFVC new project, create README, previous nav](_img/share-project/welcome-page-tfvc-prev-nav.png)
+   > ![Welcome page, TFVC new project, create README](_img/share-project/welcome-page-tfvc-prev-nav.png)
 
    A default README file is added to the project repository, in this case, the **Fabrikam Fiber TFVC** repo.
 

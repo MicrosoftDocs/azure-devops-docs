@@ -7,7 +7,7 @@ ms.prod: devops
 ms.topic: article
 ms.technology: devops-whitepapers
 ms.manager: jillfra
-ms.date: 02/19/2019
+ms.date: 02/25/2019
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
@@ -43,22 +43,6 @@ Follow the [Azure DevOps release notes](/azure/devops/release-notes/index) to ge
 Yes. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. (Specifically, it's `https://dev.azure.com/{your organization}/{your project}`.) If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can change this from the organization settings page.
 
 We continue to post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](/azure/devops/release-notes/index).
-
-## Can I still use the old interface?
-
-Yes. Although Azure DevOps Services features [redesigned navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/), you can still use the previous user interface by choosing your profile icon and selecting **Preview features** from the drop-down menu.
-
-> [!div class="mx-imgBorder"]  
-> ![Open Preview features](../project/navigation/_img/manage-features/choose-preview-features-vert.png)
-
-Then, switch the **New Navigation** option to **Off**.
-
-> [!div class="mx-imgBorder"] 
-> ![Turning off the new navigation UI](_img/turn-off-new-nav.png)
-
-Turning off **New Navigation** also changes the Azure DevOps Services names to the corresponding old VSTS feature names, such as **Work** instead of **Boards**.
-
-To return to the Azure DevOps service-oriented UI, choose your profile icon, select **Preview features**, and re-enable **New Navigation**.
 
 ## Team Foundation Server (TFS) is now called Azure DevOps Server
 
