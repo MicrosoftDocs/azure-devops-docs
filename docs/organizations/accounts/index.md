@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 02/22/2019
 monikerRange: '>= tfs-2013'
 ---
 # Organization management in Azure DevOps
@@ -59,6 +59,7 @@ Sign up for an organization, add users, and manage permissions and access.
     * [Manage conditional access](manage-conditional-access.md)
     * [Link work accounts to Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json&view=azure-devops)
     * [Authenticate with personal access tokens](use-personal-access-tokens-to-authenticate.md)
+    * [Revoke user PATs - for admins](admin-revoke-user-pats.md)
     * [Change app access policies](change-application-access-policies.md)
     * [Delete users](delete-organization-users.md)
     * [Add external users](add-external-user.md)

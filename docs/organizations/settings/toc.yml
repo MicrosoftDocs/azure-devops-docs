@@ -77,6 +77,8 @@
               href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
             - name: Use SSH key authentication
               href: ../../git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+            - name: Revoke users' PATs - for admins
+              href: ../accounts/admin-revoke-user-pats.md
     - name: Make a project public or private
       href: ../public/make-project-public.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Change service visibility
