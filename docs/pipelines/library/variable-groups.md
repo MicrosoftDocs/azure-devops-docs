@@ -1,7 +1,7 @@
 ---
 title: Variable groups for Azure Pipelines and TFS
 ms.custom: seodec18
-description: Understand variable groups in Azure Pipelines and Team Foundation Server (TFS)
+description: Share common variables across pipelines using variable groups
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,16 +13,12 @@ ms.date: 02/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Variable groups for builds and releases
+# Variable groups
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
-
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
-Use a variable group to store values that you want to make available across
-multiple build and release pipelines. Variable groups are defined and managed in the **Library** tab of the
+Use a variable group to store values that you want to control and make available across
+multiple pipelines. Variable groups are defined and managed in the **Library** tab of the
 **Pipelines** hub.
 
 ::: moniker range="< tfs-2018"
@@ -42,7 +38,7 @@ Choose **+ Variable group**.
    pipelines defined in YAML, which are not automatically authorized for variable groups,
    to use this variable group. See [Use a variable group](variable-groups.md?tabs=yaml&view=azure-devops#use-a-variable-group)
 
-1. If you want to link secrets from an Azure key vault as variables, see the following section of this topic. 
+1. If you want to link secrets from an Azure key vault as variables, see [Link secrets from an Azure key vault](variable-groups.md#link-secrets-from-an-azure-key-vault).
 
 1. Enter the name and value for each [variable](../release/variables.md#custom-variables)
    you want to include in the group, choosing **+ Add** for each one.
@@ -54,44 +50,6 @@ Choose **+ Variable group**.
    ![Saving a variable group](_img/save-variable-group.png) 
 
 > Variable groups follow the [library security model](index.md#security).
-
-## Link secrets from an Azure key vault as variables
-
-Link an existing Azure key vault to a variable group and map selective vault secrets to the variable group.
-
-1. In the **Variable groups** page, enable **Link secrets from an Azure key vault as variables**.
-   You'll need an existing key vault containing your secrets. You can create a 
-   key vault using the [Azure portal](https://portal.azure.com).
-
-   ![Variable group with Azure key vault integration](_img/link-azure-key-vault-variable-group.png)
-
-1. Specify your Azure subscription end point and the name of the vault containing your secrets.
-
-   Ensure the Azure service connection has at least **Get** and **List** management permissions on the vault for secrets.
-   You can enable Azure Pipelines to set these permissions by choosing **Authorize** next to the vault name.
-   Alternatively, you can set the permissions manually in the [Azure portal](https://portal.azure.com):
-
-   - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
-   - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
-   - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
-   - Choose **OK** to save the changes.<p />
-
-1. In the **Variable groups** page, choose **+ Add** to select specific secrets from your vault that will be mapped to this variable group.
-
-### Secrets management notes
-
-* Only the secret *names* are mapped to the variable group, not the secret values. The latest version of the value of each secret
-  is fetched from the vault and used in the pipeline linked to the variable group during the build or release.
-
-* Any changes made to *existing* secrets in the key vault, such as a change in the value of a secret, will be made available
-  automatically to all the definitions in which the variable group is used.
-
-* When new secrets are added to the vault, or a secret is deleted from the vault, the associated variable groups are not updated
-  automatically. The secrets included in the variable group must be explicitly updated in order for the definitions using the
-  variable group to execute correctly.
-
-* Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
-  Currently, Azure Pipelines variable group integration supports mapping only secrets from the Azure key vault. Cryptographic keys and certificates are not yet supported.
 
 ## Use a variable group
 
@@ -121,13 +79,13 @@ To do this, or if you encounter a resource authorization error in your build,
 use one of the following techniques:
 
 * If you want to authorize any pipeline to use the variable group,
-  which may be a suitable option if the do not have any secrets in the group,
+  which may be a suitable option if you do not have any secrets in the group,
   go the **Pipelines** hub, open the **Library** page, choose **Variable groups**, select the variable group in question,
   and enable the setting **Allow access to all pipelines**.
 
 * If you want to authorize a variable group for a specific pipeline, open the pipeline
   by selecting **Edit** and queue a build manually. You will see a resource authorization error
-  and a "Fix it" action on the error. Choose this action to explicitly add the pipeline as an
+  and a "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an
   authorized user of the variable group.
 
 > [!Note]
@@ -143,7 +101,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-To use a variable group, open your build or release pipeline, select the **Variables**
+To use a variable group, open your pipeline, select the **Variables**
 tab, select **Variable groups**, and then choose **Link variable group**.
 In a build pipeline, you see a list of available groups. In a release pipeline (as shown below), you
 also see a drop-down list of stages in the pipeline - you can link the variable group to one or more of these stages.
@@ -161,33 +119,74 @@ also see a drop-down list of stages in the pipeline - you can link the variable 
 ---
 
 You access the value of the variables in a linked variable group in exactly
-the same way as [variables you define within the pipeline itself](../release/variables.md#custom-variables).
+the same way as [variables you define within the pipeline itself](../process/variables.md).
 For example, to access the value of a variable named **customer** in a variable group linked to the pipeline,
 use `$(customer)` in a task parameter or a script. However, secret variables (encrypted variables and key vault variables) 
-cannot be accessed directly in scripts - instead they must be passed as arguments to a task.
-
-[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
+cannot be accessed directly in scripts - instead they must be passed as arguments to a task. For more information, see [secrets](../process/variables.md#secret-variables)
 
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or stages to which the variable group is linked.
 
-### Variable groups in a build or release
+## Link secrets from an Azure key vault
 
-The recommended use of linking a variable group to a pipeline is when you
-want to centrally control values for variables that are used
-across multiple instances or releases of the pipeline.
+Link an existing Azure key vault to a variable group and map selective vault secrets to the variable group.
 
-* When a new instance of a build or release is created from a pipeline definition, the values of the variables from the linked variable group are copied to the build or release.
-* To override the values of variables in the variable group you must create a variable with the same name within the build or release pipeline. A variable in the pipeline overrides a variable with the same name in the variable group.
-* To override the values of variables in the variable group for only a specific release, you can edit the release and add new variables for just that release by using the same variable name as defined in the variable group.
+1. In the **Variable groups** page, enable **Link secrets from an Azure key vault as variables**.
+   You'll need an existing key vault containing your secrets. You can create a 
+   key vault using the [Azure portal](https://portal.azure.com).
 
-::: moniker range="> tfs-2018"
+   ![Variable group with Azure key vault integration](_img/link-azure-key-vault-variable-group.png)
 
-* To override the values between releases from the pipeline, use variables with same name at queue time:
-  - When you create the release, you can choose the variables you would like to set.
-  - The value you set for a variable when the release is created is used only for that release.
-  - This helps to avoid the multiple steps of create in draft, update the variables in draft, and trigger the release with the variable.
+1. Specify your Azure subscription end point and the name of the vault containing your secrets.
+
+   Ensure the Azure service connection has at least **Get** and **List** management permissions on the vault for secrets.
+   You can enable Azure Pipelines to set these permissions by choosing **Authorize** next to the vault name.
+   Alternatively, you can set the permissions manually in the [Azure portal](https://portal.azure.com):
+
+   - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
+   - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
+   - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
+   - Choose **OK** to save the changes.<p />
+
+1. In the **Variable groups** page, choose **+ Add** to select specific secrets from your vault that will be mapped to this variable group.
+
+### Secrets management notes
+
+* Only the secret *names* are mapped to the variable group, not the secret values. The latest version of the value of each secret
+  is fetched from the vault and used in the pipeline linked to the variable group during the run.
+
+* Any changes made to *existing* secrets in the key vault, such as a change in the value of a secret, will be made available
+  automatically to all the pipelines in which the variable group is used.
+
+* When new secrets are added to the vault, or a secret is deleted from the vault, the associated variable groups are not updated
+  automatically. The secrets included in the variable group must be explicitly updated in order for the pipelines using the
+  variable group to execute correctly.
+
+* Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
+  Currently, Azure Pipelines variable group integration supports mapping only secrets from the Azure key vault. Cryptographic keys and certificates are not supported.
+
+## Expansion of variables in a group
+
+# [YAML](#tab/yaml)
+
+::: moniker range=">= azure-devops-2019"
+
+When you set a variable in a group and use it in a YAML file, it has the same precedence as any other variable defined within the YAML file. 
+For more information about precedence of variables, see the topic on [variables](../process/variables.md#expansion-of-variables).
 
 ::: moniker-end
+::: moniker range="< azure-devops-2019"
+YAML is not supported in TFS.
+::: moniker-end
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+# [Designer](#tab/designer)
+
+When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
+
+1. Variable set at queue time
+1. Variable set in the pipeline
+1. Variable set in the variable group
+
+[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
+
+---

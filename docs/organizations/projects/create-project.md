@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 02/25/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -105,7 +105,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 2. Fill out the form provided. Provide a name for your new project, and choose the visibility, initial source control type, work item process. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
 
    > [!div class="mx-imgBorder"]  
-   > ![Create new project form, previous nav](_img/create-project/create-project-form-prev-nav.png)  
+   > ![Create new project form](_img/create-project/create-project-form-prev-nav.png)  
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
