@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/14/2018
+ms.date: 02/26/2019
 ---
 
 # Use &#64;mentions in work items and pull requests
@@ -53,7 +53,7 @@ Upon completion of your selection and text entry, your **@mention** user receive
 
 ![Email sent to at-mention user organization](_img/mail-to-at-mention-user.png)
 
-Use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in any text field on the work item form.
+Use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
 ## Related articles
 
