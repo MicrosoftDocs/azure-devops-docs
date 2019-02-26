@@ -189,13 +189,11 @@ Currently, the following languages and test runners are supported:
 
 
 > [!NOTE] 
-The test report is a preview of the full test report and Insights experience.
-
-The following features are not available at this time:
-* Associate a test failure with a new bug or see a list of associated work items for the failure.
-* Group the test results by test file, owner, priority etc.
-* Search and filter the test results.
-* Preview attachments generated during the test runs in the web UI.
+> The test report is a preview of the full test report and Insights experience. The following features are not available at this time:
+> * Associate a test failure with a new bug or see a list of associated work items for the failure.
+> * Group the test results by test file, owner, priority etc.
+> * Search and filter the test results.
+> * Preview attachments generated during the test runs in the web UI.
 
 For more details on analyzing test results see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops).
 
