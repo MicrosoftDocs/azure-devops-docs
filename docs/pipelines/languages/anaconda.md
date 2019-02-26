@@ -46,6 +46,38 @@ On hosted agents, `conda` is left out of `PATH` by default to keep its Python ve
 
 ---
 
+### (Optional) take ownership of `conda`'s installation directory
+
+If you are installing packages globally or trying to update `conda` itself, you need to be able to write to `conda`'s installation directory.
+
+On Hosted Ubuntu and Hosted macOS, `conda` is installed to a subdirectory of `/usr`.
+This prevents the agent user from writing to this directory.
+
+Running `sudo conda` is [generally discouraged](https://docs.conda.io/projects/conda/en/latest/user-guide/troubleshooting.html#permission-denied-errors-after-using-sudo-conda-command).
+The best way to solve this problem is to take ownership of the installation directory.
+
+# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
+
+```yaml
+- bash: sudo chown -R $USER /usr/share/miniconda
+  displayName: Take ownership of conda installation
+```
+
+# [Hosted macOS](#tab/macos)
+
+```yaml
+- bash: sudo chown -R $USER $CONDA
+  displayName: Take ownership of conda installation
+```
+
+# [Hosted VS2017](#tab/vs2017)
+
+```yaml
+# N/A
+```
+
+---
+
 ## Create an environment
 
 ### From command-line arguments
@@ -169,6 +201,9 @@ The following YAML installs the `scipy` package in the conda environment named `
 ---
 
 ## FAQs
+
+### Why am I getting a "Permission denied" error?
+See [(Optional) take ownership of `conda`'s installation directory](#optional-take-ownership-of-condas-installation-directory).
 
 ### Why is my build hanging on a `conda create` or `conda install` step?
 If you forget to pass `--yes`, `conda` will stop and wait for user interaction.

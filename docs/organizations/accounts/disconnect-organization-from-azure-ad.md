@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/05/2019
+ms.date: 02/26/2019
 monikerRange: 'azure-devops'
 ---
 # Disconnect your organization from Azure Active Directory
@@ -19,9 +19,9 @@ monikerRange: 'azure-devops'
 
 <a name="DisconnectDirectory"></a>
 
-To stop using your organization's Azure Active Directory and return to signing in with Microsoft accounts, disconnect your organization from your directory.
+To stop using your organization's Azure Active Directory (Azure AD) and return to signing in with Microsoft accounts, disconnect your organization from your directory.
 
-For more information, see the [Conceptual overview](access-with-azure-ad.md) for using Azure Active Directory (Azure AD) with Azure DevOps.
+For more information, see the [Conceptual overview](access-with-azure-ad.md) for using Azure AD with Azure DevOps.
 
 ## Prerequisites
 
@@ -52,13 +52,11 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
    ![Confirm connection of organization to Azure AD](_img/disconnect-azure-ad/enter-organization-select-disconnect.png)
 
-Your organization is disconnected from your organization's directory.
-
 5. Select **Close and Sign out**.
 
    ![Disconnection confirmation](_img/disconnect-azure-ad/disconnection-confirmation.png)
 
-Only users with Microsoft accounts can sign in.
+Your organization is disconnected from your organization's directory. Only users with Microsoft accounts can sign in.
 
 For answers to frequently asked questions about disconnecting, see the [FAQ](faq-azure-access.md#faq-disconnect).
 

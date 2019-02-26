@@ -35,8 +35,6 @@ For quick access to all query tasks, supported operators&mdash;such as, `Contain
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
 
@@ -139,7 +137,7 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 
 3.  In the same row, under the **Value** column heading, either type a value, or choose the down arrow, and choose an item in the list.
 
-    For more information about how to use variables to specify the current project, user, or date, see [Variables](#variables).
+    For more information about how to use a macro or variable to specify the current project, user, date, or other selection, see [Variables](query-operators-variables.md#variables).
 
 5.  To add a clause, choose **Click here to add a new clause** or **Add a new clause**.
 
