@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 02/13/2019
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -28,7 +28,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-            <td rowspan="22">**2019 Q1**</td>
+            <td rowspan="28">**2019 Q1**</td>
             <td>[New "Basic" process](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1399067)</td><td>Boards</td><td>TBD</td>
         </tr>
         <tr><td>[Export to CSV](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1399083)</td><td>Boards</td><td>2019.2</td></tr>
@@ -39,6 +39,12 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td>[Pull requests can be completed using rebase](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1382396)</td><td>Repos</td><td>TBD</td></tr>
         <tr><td>[Multi-stage pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1364226)</td><td>Pipelines</td><td>TBD</td></tr>
         <tr><td>[YAML editor in the web](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1364231)</td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td>[GitHub Enterprise Server support for YAML-based pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1437711)</td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td>[Hosted pools and visibility into parallel usage](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1437713)</td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td>[Bitbucket Cloud support for YAML-based pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1443531)</td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td>[YAML templates to get started with CI/CD](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454010)</td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td>[VS 2019 hosted pool](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454019)</td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td>[Log viewer enhancements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454022)</td><td>Pipelines</td><td>TBD</td></tr>
         <tr><td>[All Azure Artifacts package types (Maven, npm, NuGet, Python, and Universal Packages) can be used as artifacts in Release Management](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1415322)</td><td>Artifacts</td><td>2019.2</td></tr>
         <tr><td>[Search across package feeds](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1415324)</td><td>Artifacts</td><td>TBD</td></tr>
         <tr><td>[Pipeline Artifacts provide faster and more scalable storage for Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1320802)</td><td>Artifacts</td><td>TBD</td></tr>
@@ -53,9 +59,19 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td>[Set up or change billing subscription from settings](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1423281)</td><td>Administration</td><td>N/A</td></tr>
         <tr><td>[Publisher Certification](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221163)</td><td>Marketplace</td><td>N/A</td></tr>
         <tr>
-            <td rowspan="6">**2019 Q2**</td>
+            <td rowspan="16">**2019 Q2**</td>
             <td>[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)</td><td>Boards</td><td>TBD</td>
+        <tr><td>[Branch policies administration improvements](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1437728)</td><td>Repos</td><td>TBD</td>
         <tr><td>[Release traceability – Work Item integration](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221169)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Pipeline Caching](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1458319)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Faster, more flexible artifacts](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1458324)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Multi-repository support for YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454026)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Retry failed run or redeploy an older run](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454027)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Support for various trigger types in YAML](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454030)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Release traceability – Work Item integration](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221169)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Support for various trigger types in YAML](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454030)</td><td>Pipelines</td><td>TBD</td>
+        <tr><td>[Public (unauthenticated) feeds](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1458316)</td><td>Artifacts</td><td>TBD</td>
+        <tr><td>[Expanded NuGet metadata, and other suggestions](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1458327)</td><td>Artifacts</td><td>TBD</td>
         <tr><td>[Test Progress Report](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1424595)</td><td>Test Plans</td><td>TBD</td>
         <tr><td>[Updated Test Plans page](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1424603)</td><td>Test Plans</td><td>TBD</td>
         <tr><td>[Dashboards – Create dashboard separate from a team](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221159)</td><td>Reporting</td><td>TBD</td>
@@ -87,6 +103,30 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="21">[25 February 2019](2019/sprint-148-update.md)</td>
+            <td>Azure DevOps CLI extension</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>Navigate to Azure Boards work items directly from GitHub pull request mentions</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Deploy your local Git web apps for Windows, Linux and Containers to Azure</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>New Azure subscription option in Kubernetes service connection</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Notifications on failure of a release creation request</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Azure Pipelines app for Slack</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Skip continuous integration (CI) for a commit</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Contribution point for variables in the create release dialog</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Support for Python Function Apps in DevOps projects</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Schedule releases on source or pipeline change</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Build and release log viewer enhancements</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Publish to Azure Service Bus session queues</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Search by folder name in release definitions</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Simplified publishing of test results</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Azure Active Directory device code authentication flow for pipelines agent</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Support for Red Hat Enterprise Linux 6</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>All Artifacts package types supported in releases</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Artifacts views supported in releases</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Retention policies can skip packages downloaded recently</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>@mention users and groups</td><td>Wiki</td><td>Future</td></tr>
         <tr>
             <td rowspan="15">[04 February 2019](2019/sprint-147-update.md)</td>
             <td>Show work item status in #ID mentions</td><td>Boards</td><td>Future</td>
