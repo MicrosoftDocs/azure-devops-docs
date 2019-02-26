@@ -389,9 +389,9 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 
 When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
 
-1. Variable set at queue time
 1. Job level variable set in the YAML file
 1. Pipeline level variable set in the YAML file
+1. Variable set at queue time
 1. Pipeline variable set in the web editor
 
 In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It is also set in a variable group `G` and as a variable in the pipeline using the web editor.
@@ -410,8 +410,8 @@ jobs:
     - bash: echo $(a)        # This will be 'job yaml'
 ```
 
-**Important:** We have a known issue in the system that does not use the variable set at queue time with the highest precedence. We will be addressing this issue shortly.
-To workaround this issue, make sure that you only set the variable in the web editor and not in the YAML file.
+> [!NOTE]
+> When you set a variable in the YAML file, do not define it in the web editor as 'settable at queue time'. You cannot currently change variables that are set in the YAML file at queue time. If you need a variable to be settable at queue time, then do not set it in the YAML file.
 
 Variables are expanded once when the run is started, and again, at the beginning of each step. Here is an example to demonstrate this:
 
@@ -428,7 +428,37 @@ jobs:
     - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
 ```
 
-There are two steps in the above example, and the expansion of `$(a)` happens once at the beginning of the run, and once at the beginning of each of the two steps.
+There are two steps in the above example, and the expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps. 
+
+Since variables are expanded at the beginning of a job, you cannot use them in a strategy. In the following example, you cannot use the variable `a` to expand the job matrix since the variable is only available at the beginning of each expanded job.
+
+```yaml
+jobs:
+- job: A
+  variables:
+  - a: 10
+  strategy:
+    matrix:
+      x:
+        some_variable: $(a)    # This does not work
+```
+
+If the variable `a` is an output variable from a previous job, then you can use that to expand the job matrix.
+
+```yaml
+- job: A
+  steps:
+  - powershell: echo "##vso[task.setvariable variable=a;isOutput=true]10"
+    name: a_step
+
+# Map the variable into job B
+- job: B
+  dependsOn: A
+  strategy:
+    matrix:
+      x:
+        some_variable: $[ dependencies.A.outputs['a_step.a'] ]    # This works
+```
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
