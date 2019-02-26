@@ -66,6 +66,8 @@
       href: ../../billing/link-msdn-subscription-to-organizational-account-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Authenticate with PATs
       href: use-personal-access-tokens-to-authenticate.md
+    - name: Revoke user PATs - for admins
+      href: admin-revoke-user-pats.md
     - name: Change app access policies
       href: change-application-access-policies.md
     - name: Delete users from organization
