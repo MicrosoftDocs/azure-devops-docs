@@ -279,7 +279,7 @@ security requirements.
 
 Azure Active Directory (Azure AD) provides the capability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
 Visit the [Azure documentation site](/azure/active-directory/active-directory-conditional-access)
-to learn more about conditional access policy (CAP).  Azure DevOps now enforces conditional access policies for custom Azure DevOps authentication mechanisms including personal access tokens, alternate authentication, OAuth and SSH keys. If accessing Azure DevOps through a third party client, like git.exe, only IP based policies will be honored; any other policy will automatically fail as the client doesn't pass the necessary information to validate the policy. For example, if a policy requires MFA and the client can't support MFA, the policy will fail and the user will automatically be blocked.
+to learn more about conditional access policy (CAP).  Azure DevOps now enforces conditional access policies for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth and SSH keys. If accessing Azure DevOps through a third party client, like git.exe, only IP based policies will be honored; any other policy will automatically fail as the client doesn't pass the necessary information to validate the policy. For example, if a policy requires MFA and the client can't support MFA, the policy will fail and the user will automatically be blocked.
 
 ## Additional resources
 
@@ -295,6 +295,9 @@ your review and education. These include:
 - [Developer Services Agreement](/azure/devops/user-guide/services)
 - [Azure trust center](http://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
+- [Create and revoke your PATs](../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- [Revoke user PATs - for admins](../organizations/accounts/admin-revoke-user-pats.md)
+- [Token expiration](../organizations/accounts/admin-revoke-user-pats.md#token-expiration)
 
 *(c) 2018 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

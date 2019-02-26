@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/15/2019
+ms.date: 02/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -33,7 +33,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 1. Inform users of the upcoming change.
    There's no downtime during this change, but users are affected by it. Let them know before you begin that there's a short series of steps they must complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
 2. The user who makes the connection must confirm the following statements are true.
-    * User exists in Azure AD as a member. If the user is an Azure AD guest, rather than member, follow this article: [Convert Azure AD UserType from Member to Guest using Azure AD PowerShell](https://blogs.msdn.microsoft.com/dstfs/2015/12/23/issues-with-azure-active-directory-guest-users-in-aad-backed-visual-studio-team-services-accounts/).
+    * User exists in Azure AD as a member. If the user is an Azure AD guest, rather than member, follow this article: [Convert Azure AD UserType from Guest to Member using Azure AD PowerShell](https://blogs.msdn.microsoft.com/dstfs/2015/12/23/issues-with-azure-active-directory-guest-users-in-aad-backed-visual-studio-team-services-accounts/).
     * User is a *project collection administrator* or [*owner* of the organization](../security/lookup-organization-owner-admin.md)
     * User isn't using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. Use a single identity that spans both applications, rather than two separate identities using the same email. For example, an MSA that's in Azure AD. If the email addresses are the same, [create a new MSA](#create-new-msa). If the addresses aren't the same, continue on to connect your organization to your Azure AD.
 
@@ -41,13 +41,17 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 
 Make sure all Azure DevOps users are in Azure AD by completing the following steps.  
 
-Note that any user that isn't in your Azure AD is a "historic" user and can't sign in. However, the user's history is retained. [Create a support](https://azure.microsoft.com/en-us/support/devops/) ticket to gain access to user history.
+Note that any user who isn't in your Azure AD is a "historic" user and can't sign in. However, the user's history is retained. [Create a support ticket](https://azure.microsoft.com/en-us/support/devops/) to gain access to user history.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+  
   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
 3. Select **Users**.
+  
   ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
+
 4. Compare your Azure DevOps email list with your Azure Active Directory email list.
 
    * If any users exist on the **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
@@ -150,16 +154,6 @@ Close the temporary MSA if you created one and added it to both the Azure AD ten
 
    [More questions about connecting?](faq-azure-access.md#faq-connect)
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Enforce conditional access policies](/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
-
-## Related articles
-
-* [Manage users and access](add-organization-users.md)
-* [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
-
 ## Frequently asked questions (FAQ)
 
 |**Question**  |**Solution**  |
@@ -169,3 +163,15 @@ Close the temporary MSA if you created one and added it to both the Azure AD ten
 |**What if my work items are indicating that the users aren't valid?**    | Clear your browser cache, and delete any cookies for the session. Close your browser, and then reopen.       |
 |**What if my email account isn't found in Azure AD?**   | Talk to the administrator of your company's Azure Active Directory to get your email account (fabrikamfiber12@hotmail.com) added to that directory. Or, they can give you a new Azure AD account - if this occurs, you must [contact support](https://azure.microsoft.com/en-us/support/devops/) for mapping.       |
 |**What if I get a warning about members who will lose access to the organization?** |  You can still connect to Azure AD, but [contact support](https://azure.microsoft.com/en-us/support/devops/) afterward to resolve this issue. You can also select the bolded text to see which users are affected. ![Show disconnected users](_img/connect-organization-to-aad/show-disconnected-users.png)     |
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Enforce conditional access policies](/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
+
+## Related articles
+
+* [Manage users and access](add-organization-users.md)
+* [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
+* [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
+

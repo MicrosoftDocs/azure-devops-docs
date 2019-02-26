@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/24/2017
+ms.date: 02/22/2019
 ---
 
 # Security & identity
@@ -24,7 +24,7 @@ For anyone to access a project, you must add them to a security group. For a qui
 [About security and identity](about-permissions.md)
 -->
 
-## 5-Minute Quickstarts
+## 5-minute quickstarts
   
 - [View permissions](view-permissions.md)
 - [Look up the organization owner or a project administrator](lookup-organization-owner-admin.md)
@@ -50,14 +50,17 @@ For anyone to access a project, you must add them to a security group. For a qui
 - [Active Directory groups (TFS)](/tfs/server/admin/setup-ad-groups?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 - [Security glossary](security-glossary.md) 
 
-## How-to Guides
+## How-to guides
 
 - [Set Git branch permissions](../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/organizations/security/toc.json&bc=/azure/devops/organizations/organizations/security/breadcrumb/toc.json  ) 
 - [Set build and release permissions](../../pipelines/policies/set-permissions.md) 
-- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json)
 - [Change access levels (TFS)](change-access-levels.md)
+- [Authenticate with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
+- [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)
 
 ## Reference
+
 - [Default permission and access assignments](permissions-access.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)  
