@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/15/2019
+ms.date: 02/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -33,7 +33,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 1. Inform users of the upcoming change.
    There's no downtime during this change, but users are affected by it. Let them know before you begin that there's a short series of steps they must complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
 2. The user who makes the connection must confirm the following statements are true.
-    * User exists in Azure AD as a member. If the user is an Azure AD guest, rather than member, follow this article: [Convert Azure AD UserType from Member to Guest using Azure AD PowerShell](https://blogs.msdn.microsoft.com/dstfs/2015/12/23/issues-with-azure-active-directory-guest-users-in-aad-backed-visual-studio-team-services-accounts/).
+    * User exists in Azure AD as a member. If the user is an Azure AD guest, rather than member, follow this article: [Convert Azure AD UserType from Guest to Member using Azure AD PowerShell](https://blogs.msdn.microsoft.com/dstfs/2015/12/23/issues-with-azure-active-directory-guest-users-in-aad-backed-visual-studio-team-services-accounts/).
     * User is a *project collection administrator* or [*owner* of the organization](../security/lookup-organization-owner-admin.md)
     * User isn't using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. Use a single identity that spans both applications, rather than two separate identities using the same email. For example, an MSA that's in Azure AD. If the email addresses are the same, [create a new MSA](#create-new-msa). If the addresses aren't the same, continue on to connect your organization to your Azure AD.
 
