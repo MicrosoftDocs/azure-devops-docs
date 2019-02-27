@@ -16,6 +16,8 @@ monikerRange: '> tfs-2018'
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+
 Check your web app's performance before you launch it or deploy updates to production by running load tests. 
 That way, you can better assess whether your app is ready for release. Feel more
 confident that your app can handle the traffic during peak use or at your next marketing push.

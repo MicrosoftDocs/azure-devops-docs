@@ -17,6 +17,8 @@ monikerRange: '> tfs-2018'
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+
 Check your app or web site's performance before you launch it or deploy updates to production by using load testing.
 Find problems before your customers do. Start running 
 [cloud-based load tests](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs) 
