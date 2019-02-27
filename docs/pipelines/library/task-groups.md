@@ -171,7 +171,7 @@ Any taskgroup update can be a minor or major version update.
 ### Major version
 **Action:** You save the task group as draft and then create a preview, validate the task group and then publish the preview as a major version.
 
-**Effect:** The task group bumps up to a new version. Let’s say you have a task group of version 1.*. A new version gets published as 2.*, 3.*, 4.* etc. And a notification about availability of new version shows up in all the pipeline definitions this task group is used. User has to explicitly update to new version of the taskgroup in pipelines. 
+**Effect:** The task group bumps up to a new version. Let’s say you have a task group of version `1.*`. A new version gets published as `2.*`, `3.*`, `4.*` etc. And a notification about availability of new version shows up in all the pipeline definitions where this task group is used. User has to explicitly update to new version of the taskgroup in pipelines. 
 
 **Reason:** When you have a substantial change which might break the existing pipelines, you would like to test it out and roll out as a new version. Users can choose to upgrade to new version or choose to stay on the same version. This functionality is same as a normal task version update. 
 
