@@ -138,18 +138,10 @@
     href: ../project/feedback/index.md 
   - name: Using Microsoft Test Manager
     href: https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx
-  - name: Load test with Visual Studio
-    href: /visualstudio/test/quickstart-create-a-load-test-project
   - name: Create custom code & plug-ins
     href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
-  - name: Edit load tests
-    href: /visualstudio/test/edit-load-tests
-  - name: Analyze load test results
-    href: /visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer
   - name: REST API for test management
     href: ../integrate/index.md
-  - name: Web Performance Test API
-    href: /visualstudio/test/how-to-use-the-web-performance-test-api
   - name: ALM Blog posts
     items:
     - name: Manual test posts
