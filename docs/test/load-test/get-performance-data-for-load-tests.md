@@ -18,6 +18,8 @@ monikerRange: '> tfs-2018'
 
 <a name="ApplicationInsights"></a>
 
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+
 When you load test your app in the cloud using Azure DevOps, 
 you can compare app performance with virtual user load using 
 [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/).
