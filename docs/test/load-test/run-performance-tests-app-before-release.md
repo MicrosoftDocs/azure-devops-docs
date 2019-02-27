@@ -16,6 +16,8 @@ monikerRange: '> tfs-2018'
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+
 Find performance issues before you release your app by running load tests with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.

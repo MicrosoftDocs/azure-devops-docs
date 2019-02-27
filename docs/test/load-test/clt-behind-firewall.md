@@ -16,6 +16,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+
 The Cloud-based Load Testing (CLT) service can be used for performance and scale load testing
 of an app by generating load from Azure. This type of load generation can only access and
 generate load on an Internet-located or publicly accessible app. However, you may want
@@ -145,7 +147,7 @@ Add the following context parameters to your Visual Studio Load Test file:
 * Context parameter name: **UseStaticLoadAgents**
 * Context parameter value: **true**
 * Context parameter name: **StaticAgentsGroupName**
-* Context parameter value: **<name of the agent group>**
+* Context parameter value: **[name of your agent group]**
 
 ![Adding context parameters to your Visual Studio Load Test file](_img/clt-behind-firewall/contextparam.png)
 
