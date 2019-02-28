@@ -44,7 +44,7 @@ Deprecated event types:
 * [Team room message posted](#message.posted)
 
 > [!NOTE]
-> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.Azure DevOps Services) provides support for receiving WebHooks from Azure DevOps Services.
+> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
 
 ## Build and release
 
