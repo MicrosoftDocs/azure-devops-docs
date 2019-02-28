@@ -37,7 +37,7 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 Build and release                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
 [AppVeyor](https://www.appveyor.com/docs/) | [Flowdock](https://www.flowdock.com/api/integration-getting-started) | [UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)  | [Trello](./services/trello.md) | [Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)
-[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	[HipChat](https://www.hipchat.com/docs/apiv2/webhooks)	|	[Zendesk](https://support.zendesk.com/hc/en-us/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|			|	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
+[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/en-us/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|			|	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
 [Jenkins](./services/jenkins.md)   |	[Hubot](https://hubot.github.com/docs/)	|											|			|	[Web Hooks](./services/webhooks.md) |
 [MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Zapier](https://zapier.com/apps/webhook/integrations) |
 [Slack](./services/slack.md)	   |		|			|			|
@@ -177,5 +177,9 @@ A: Yes. You can revoke authorizations from your profile.
 
 	<img alt="Click Revoke to revoke authorizations" src="./_img/authorizations.png" style="border: 1px solid #CCCCCC" />
 	
+#### Q: Why can't we setup Service Hooks for HipChat anymore?
+
+A: Atlassian officially dropped support for HipChat. See more on that announcment [here](https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b).
+
 
 <!-- ENDSECTION -->
