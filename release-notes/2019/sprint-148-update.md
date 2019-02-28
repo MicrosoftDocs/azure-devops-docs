@@ -78,7 +78,7 @@ Now, those mentions will become hyperlinks that you or others in your project ca
 
 ### Deploy your local Git web apps for Windows, Linux and Containers to Azure
 
-With this update we addedd a few enhancements to the **Deployment Center** workflow for Azure. Now you can deploy your web apps for Windows, Linux and Containers from you local Git repository to these Azure Resources using Azure Pipelines. When you create the Azure Pipeline in the Deployment Center, an Azure Pipeline will get triggered for your local repo with every code commit.
+With this update we added a few enhancements to the **Deployment Center** workflow for Azure. Now you can deploy your web apps for Windows, Linux and Containers from your local Git repository to these Azure Resources using Azure Pipelines. When you create the Azure Pipeline in the Deployment Center, an Azure Pipeline will get triggered for your local repo with every code commit.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/148_13.png)
@@ -144,7 +144,7 @@ Previously, the variables values needed during release creation had to be entere
 
 ### Support for Python Function Apps in DevOps projects
 
-[Azure DevOps Projects](https://docs.microsoft.com/en-us/azure/devops-project/) provide an easy way to start running your applications in Azure. Until now, you only had the option to create a Windows Web App or Web App for Containers when adding a service for a Python application. With this update, we added support for Function App. This will give you the flexibility to develop, deploy and monitor your Python Function App in Azure.
+[Azure DevOps Projects](https://docs.microsoft.com/en-us/azure/devops-project/) provide an easy way to start running your applications in Azure. Until now, you only had the option to create a Windows Web App or Web App for Containers when adding a service for a Python application. With this update, we added support for a Function App. This will give you the flexibility to develop, deploy and monitor your Python Function App in Azure.
 
 ### Schedule releases on source or pipeline change
 
@@ -210,7 +210,7 @@ When you run the agent configuration script, enter "AAD" for authentication type
 
 ### Support for Red Hat Enterprise Linux 6
 
-With this update, we added agent support for Red Hat Enterprise Linux 6. You can now configure agents targeting Red Hat Enterprise Linux 6 platform for build and release jobs execution.
+With this update, we added agent support for Red Hat Enterprise Linux 6. You can now configure agents targeting the Red Hat Enterprise Linux 6 platform for build and release jobs execution.
 
 ## Azure Artifacts
 
