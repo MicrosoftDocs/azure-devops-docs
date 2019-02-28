@@ -24,7 +24,7 @@ monikerRange: 'azure-devops'
 
 ## Use a Microsoft-hosted agent
 
-The Microsoft-hosted agent pool provides 5 virtual machine images to choose from:
+The Microsoft-hosted agent pool provides 6 virtual machine images to choose from:
 
 * Visual Studio 2019 Preview on Windows Server 2019 (`windows-2019`)
 * Ubuntu 16.04 (`ubuntu-16.04`)
