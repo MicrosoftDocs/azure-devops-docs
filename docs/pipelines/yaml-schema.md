@@ -338,7 +338,7 @@ pr:
 Disable syntax:
 
 ```yaml
-pr: none # will disable CI builds entirely
+pr: none # will disable PR builds entirely
 ```
 
 Full syntax:
