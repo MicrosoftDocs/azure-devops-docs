@@ -460,9 +460,9 @@ Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.
 
 ## JavaScript frameworks
 
-### AngularJS
+### Angular
 
-For AngularJS apps, you can include Angular-specific commands such as **ng test**, **ng build**, and **ng e2e**. To use AngularJS CLI commands in your build pipeline, you need to install the [angular/cli npm package](https://www.npmjs.com/package/@angular/cli) on the build agent.
+For Angular apps, you can include Angular-specific commands such as **ng test**, **ng build**, and **ng e2e**. To use Angular CLI commands in your build pipeline, you need to install the [angular/cli npm package](https://www.npmjs.com/package/@angular/cli) on the build agent.
 
 # [YAML](#tab/yaml)
 
@@ -501,7 +501,7 @@ Add the following tasks to your build pipeline:
 
 ---
 
-For tests in your build pipeline that require a browser to run (such as the **ng test** command in the starter app, which runs Karma), you need to use a headless browser instead of a standard browser. In the AngularJS starter app, an easy way to do this is to:
+For tests in your build pipeline that require a browser to run (such as the **ng test** command in the starter app, which runs Karma), you need to use a headless browser instead of a standard browser. In the Angular starter app, an easy way to do this is to:
 
 1. Change the  `browsers` entry in your *karma.conf.js* project file from `browsers: ['Chrome']` to `browsers: ['ChromeHeadless']`.
 
