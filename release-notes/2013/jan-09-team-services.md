@@ -22,7 +22,7 @@ Click the small gear in the top right hand corner of the navigation and then cli
 
 Simply follow the instructions on the page and your account URL will be renamed.
 
-As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and (Twitter)[http://twitter.com/search?q=%23tfservice].
+As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 
