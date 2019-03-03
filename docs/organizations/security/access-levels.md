@@ -600,7 +600,7 @@ In addition to the features listed for **Stakeholder** access, the following fea
 <tr>
 <td>Build</td>
 <td><ul>
-<li>[Full access to to all features to manage continuous integration and continuous delivery of software](../../pipelines/overview.md)</li>
+<li>[Full access to all features to manage continuous integration and continuous delivery of software](../../pipelines/overview.md)</li>
 </ul>
 </td>
 </tr>
@@ -733,7 +733,7 @@ In addition to the features listed for **Stakeholder** access, the following fea
 <tr>
 <td>Build</td>
 <td><ul>
-<li>[Full access to to all features to manage continuous integration and continuous delivery of software](../../pipelines/overview.md)</li>
+<li>[Full access to all features to manage continuous integration and continuous delivery of software](../../pipelines/overview.md)</li>
 </ul>
 </td>
 </tr>
@@ -859,7 +859,7 @@ In addition to the features listed for **Stakeholder** access, the following fea
 <tr>
 <td>Build</td>
 <td><ul>
-<li>[Full access to to all features to manage continuous integration and continuous delivery of software](../../pipelines/overview.md) </li>
+<li>[Full access to all features to manage continuous integration and continuous delivery of software](../../pipelines/overview.md) </li>
 </ul>
 </td>
 </tr>
@@ -1074,7 +1074,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 ::: moniker range=">= azure-devops-2019"
 ## Test Plans, load testing, and Marketplace extensions
 
-Full access to **Test Plans** and load testing features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Planss from the Marketplace.  
+Full access to **Test Plans** and load testing features requires **VS Enterprise** access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Plans from the Marketplace.  
 
 To learn more, see [Start free trials for paid Azure DevOps Services features and extensions](../billing/try-additional-features-vs.md). 
 
