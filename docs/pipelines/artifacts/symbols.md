@@ -51,7 +51,7 @@ For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirecto
 
 ## Portable PDBs
 
-If you're using [portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you stil need to use the **Index Sources and Publish Symbols** task to publish symbols. For portable PDBs, the build does the indexing, however you should (use SourceLink)[https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/sourcelink] to index the symbols as part of the build. Note that Azure Artifacts doesn't presently support ingesting NuGet symbol packages and so the task is used to publish the generated PDB files into the symbols service directly.
+If you're using [portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you still need to use the **Index Sources and Publish Symbols** task to publish symbols. For portable PDBs, the build does the indexing, however you should [use SourceLink](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink) to index the symbols as part of the build. Note that Azure Artifacts doesn't presently support ingesting NuGet symbol packages and so the task is used to publish the generated PDB files into the symbols service directly.
 
 ## Use indexed symbols to debug your app
 
