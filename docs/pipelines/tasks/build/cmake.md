@@ -48,7 +48,7 @@ cmake
 </td>
 </tr>
 <tr>
-<td>Arguments</td>
+<td>cmakeArgs</td>
 <td>
 Arguments that you want to pass to CMake.
 </td>
