@@ -29,6 +29,9 @@ Integration steps include:
 - [Connect Azure Boards to GitHub](connect-to-github.md)  
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
 
+### Videos
+
+> [!VIDEO https://channel9.msdn.com/Shows/DevOps-Lab/Using-Azure-Boards-with-GitHub/player]
 
 ### Additional resources
 
