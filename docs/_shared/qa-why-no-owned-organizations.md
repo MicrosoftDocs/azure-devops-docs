@@ -14,7 +14,7 @@ Closing your browser doesn't always sign you out completely. Here's how you can 
 
 2. Open a private or incognito browsing session. 
 
-3. Go to this URL: `http://aka.ms/vssignout`.
+3. Go to this URL: `https://aka.ms/vssignout`.
 
    You see the message "Sign out in progress." After you sign out, you're redirected to the Visual Studio page @visualstudio.microsoft.com. 
 

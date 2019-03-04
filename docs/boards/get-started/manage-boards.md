@@ -78,7 +78,7 @@ If users believe they're getting too many notifications, they can [opt out of a 
 
 To add new features and capabilities to Azure Boards, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](../../marketplace/faq-extensions.md#difference) 
 
-To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](http://aka.ms/vsoextensions) and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
+To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
 
 ## Related articles

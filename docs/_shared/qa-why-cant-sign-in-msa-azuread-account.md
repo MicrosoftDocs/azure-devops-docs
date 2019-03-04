@@ -8,7 +8,7 @@ Sign out completely from Azure DevOps by completing the following steps. Closing
 
 2. Open a private or incognito browsing session. 
 
-3. Go to this URL: `http://aka.ms/vssignout`.
+3. Go to this URL: `https://aka.ms/vssignout`.
 
    You see a message that says, "Sign out in progress." After you sign out, you're redirected to the Azure DevOps @dev.azure.microsoft.com webpage.
 

@@ -44,9 +44,9 @@ the agent machine:
 
    * Download and install the latest 
      version of the Java Runtime Environment from 
-     [this location](http://aka.ms/downloadjre).
+     [this location](https://aka.ms/downloadjre).
 
-   * Go to [this location](http://aka.ms/vspheresdk)
+   * Go to [this location](https://aka.ms/vspheresdk)
      and sign in with your existing credentials or register
      with the website. Then download the **vSphere 6.0 
      Management SDK**.
@@ -120,7 +120,7 @@ Use the **VMware Resource Deployment** task from the VMware extension and config
    error page. The vSphere Web Client URL will be 
    of the form `https://machine.domain/vsphere-client/`.
    Good practice guidance for vCenter Server certificates 
-   can be found in the [VMware Knowledge Base](http://aka.ms/vcentercertificate)
+   can be found in the [VMware Knowledge Base](https://aka.ms/vcentercertificate)
    (article 2057223).
 
 ## Provisioning virtual machines

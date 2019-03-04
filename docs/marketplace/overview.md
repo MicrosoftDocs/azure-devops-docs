@@ -54,7 +54,7 @@ You must have administrative permissions to upload or install extensions.
 |-----------------------------|--------------------------------------------------------------------------------------------------|
 | Azure DevOps Services | [Get extensions for Azure DevOps Services](install-extension.md) <br/> [Develop extensions for Azure DevOps Services](https://aka.ms/vsoextensions) |
 | Team Foundation Server | [Get extensions for TFS](get-tfs-extensions.md) <br/> [Develop extensions for Team Foundation Server](https://aka.ms/vsoextensions) |
-| Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](http://aka.ms/extendvs) |
+| Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](https://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |
 
 
