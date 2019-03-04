@@ -32,7 +32,7 @@ Mentions are supported in changesets, shelvesets, git commit discussion comments
 
 ##Automated testing in Build vNext
 
-In our [last deployment](may-15-team-services.md) we announced the preview of the next version of our Build system. With this deployment, we’ve turned on a bunch of related testing features. The new capabilities allow you to configure two test types: tests that run locally on the build machine (typically used for unit tests), and tests that run on remote machines in a distributed fashion. You can read more about all of this in a recent blog post: [http://aka.ms/testingblog](http://aka.ms/testingblog).
+In our [last deployment](may-15-team-services.md) we announced the preview of the next version of our Build system. With this deployment, we’ve turned on a bunch of related testing features. The new capabilities allow you to configure two test types: tests that run locally on the build machine (typically used for unit tests), and tests that run on remote machines in a distributed fashion. You can read more about all of this in a recent blog post: [https://aka.ms/testingblog](https://aka.ms/testingblog).
 
 ![Selecting from available tests](_img/6_3_04.png)
 

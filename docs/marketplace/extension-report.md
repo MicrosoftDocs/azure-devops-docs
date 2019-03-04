@@ -75,7 +75,7 @@ Last contacted date for an organization is as also updated after sending a commu
 **Transactional Communication**: Transactional emails convey critical information necessary for the continued use of the extension or service. Examples include critical security notices, transaction confirmations, product recall notices, specific feedback request and service discontinuation notices.
 **Promotional Emails**: Promotional emails are used to market your extension, product, service, website, or event. Examples include invitations to events or web casts, information about new marketing or partner programs and offers to prospect to obtain value-added content. Almost all newsletters fall into the promotional bucket as they generally contain at least some promotional content.
 
-Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreement) for more guidance on communication with customers. 
+Refer the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) for more guidance on communication with customers. 
 
 # Terminology
 

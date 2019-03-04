@@ -13,6 +13,6 @@ A publisher is owned by a user, typically the user that created it, and can also
     * Specify an identifer for your publisher, for example: `mycompany-myteam`
         * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
     * Specify a display name for your publisher, for example: `My Team`
-3. Review the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreement) and click **Create**
+3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) and click **Create**
 
 Once the publisher has been created, you'll be directed to the manage items, which will have no items.

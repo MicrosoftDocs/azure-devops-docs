@@ -31,8 +31,8 @@ so you can install [free, preview, and paid extensions](#difference).
 
 > [!TIP]
 > To learn about building your own TFS extensions, 
-> see [developing](http://aka.ms/vsoextensions) 
-> and [publishing](http://aka.ms/vsmarketplace-publish) extensions.
+> see [developing](https://aka.ms/vsoextensions) 
+> and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
 <a name="connected-tfs"></a>
 
