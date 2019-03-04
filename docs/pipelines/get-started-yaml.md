@@ -9,7 +9,7 @@ ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 02/22/2019
+ms.date: 03/04/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -54,11 +54,11 @@ You should now have a sample app in your GitHub account.
    > [!div class="mx-imgBorder"]
    ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
 
-1. Choose to **Authorize with OAuth** by selecting **Authorize**. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials. If you have previously authorized, you can choose a connection from **Use an existing connection**.
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When you're redirected back to Azure Pipelines, select the your desired sample app repository.
+1. When the list of repositories appears, select the your desired sample app repository.
 
-1. Azure Pipelines will analyze your repository. 
+1. Azure Pipelines will analyze your repository.
 
   - If your repository already contains an `azure-pipelines.yml` file (which is the case for the sample repositories in this article), then that file will be used, and you'll see a **Run** button. Click it to start a build.
   - If your repository doesn't have a YAML file, Azure Pipelines recommends a starter template based on the code in your repository. You'll see a **Save and run** button instead of **Run**. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
