@@ -149,7 +149,7 @@ Repeat this step until you capture all your main ideas.
 
 After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
-To reorder a backlog, you must must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md).
+To reorder a backlog, you must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 To reorder your backlog, drag the work items. Or, if you prefer to use the keyboard, hold down the Alt key and use the up and down arrows.
 
