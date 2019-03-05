@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 03/05/2019
 monikerRange: '>= tfs-2015'
 ---
 # Billing management for Azure DevOps
@@ -30,18 +30,18 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 ::: moniker range=">= tfs-2015 < azure-devops"
 
-## Billing for Microsoft Team Foundation Server (TFS)  
+## Billing for Azure DevOps Server  
 
-You can also make some purchases for TFS on your monthly Azure bill.  
+You can also make some purchases for Azure DevOps Server on your monthly Azure bill.  
 
-* [TFS pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
-* [How to buy TFS CALs or access to the TFS Test Services page](buy-access-tfs-test-hub.md)
+* [Azure DevOps Server pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
+* [How to buy CALs or access to the Test Services page](buy-access-tfs-test-hub.md)
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-## 5-Minute quickstarts  
+## 5-minute quickstarts  
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Pay for users](buy-basic-access-add-users.md)
