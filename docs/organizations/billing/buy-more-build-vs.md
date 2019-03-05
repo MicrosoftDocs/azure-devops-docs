@@ -44,7 +44,7 @@ If your pipelines are in a [public project](../public/index.md), then you run up
 Azure Pipelines also offers you a way to run the agent on machines that you manage, whether your machines are on-premises or in the cloud. Typically, you'll choose this option in either of the following situations:
 
 * Custom software that runs in your build process is not included in the Microsoft-hosted option.
-* You already have a Team Foundation Server build server running, and you aren't ready to move your build definitions to Azure Pipelines.
+* You already have an Azure DevOps Server build server running, and you aren't ready to move your build definitions to Azure Pipelines.
 
 ### Self-hosted public projects
 
@@ -146,5 +146,5 @@ When your team's needs for build or release capacity change, you can change the 
 ## Related articles
 
 * [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs.md)
-* [Team Foundation Server: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
+* [Azure DevOps Server: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
 * [Pricing for Azure Pipelines](https://visualstudio.microsoft.com/team-services/pricing)

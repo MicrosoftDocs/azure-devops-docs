@@ -1,7 +1,7 @@
 ---
 title: What are access levels? What access levels are supported?
 titleSuffix: Azure DevOps
-description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, advanced, or VS Enterprise access levels 
+description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic + Test Plans, or VS Enterprise access levels 
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ---
 
 
@@ -33,21 +33,21 @@ To add user accounts or groups to specific access levels, see [Manage users and 
 To add user accounts or groups to specific access levels, see [Change access levels](change-access-levels.md). Make sure to set each user's access level based on what you've purchased for that user. 
 ::: moniker-end
 
-## Supported access levels 
+## Supported access levels
 
 You assign users or groups of users to one of the following access levels:
 
 ::: moniker range="azure-devops"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an organization.
+- **Basic**: Provides access to most features. Assign to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos in an organization.
 - **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes their subscription and enables any other features that are included, based on their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign  to users with a TFS CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos. 
+- **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos.
+- **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription.
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
-- **Advanced** (legacy access level, to be deprecated): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
 ::: moniker-end
 
 
