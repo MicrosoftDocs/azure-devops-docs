@@ -215,7 +215,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Service hooks</h3>
-                                                            <p>Create subscriptions and configure the integration of Azure DevOps Services or TFS with third-party apps.</p>
+                                                            <p>Create subscriptions and configure the integration of Azure DevOps with third-party apps.</p>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -11,7 +11,7 @@ ms.topic: include
 <li>On-premises TFS: ```http://{your_server}:8080/tfs/DefaultCollection/{your_project}``` </li>
 <li>Azure Pipelines: ```https://dev.azure.com/{your_organization}/{your_project}```</li>
 </ul>
-<p>[The TFS URL doesn't work for me. How can I get the correct URL?](/tfs/server/admin/websitesettings)</p>
+<p>[The TFS URL doesn't work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)</p>
 </div>
 </li>
 

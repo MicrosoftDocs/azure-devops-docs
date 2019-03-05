@@ -2,7 +2,7 @@
 title: Questions and answers to support getting started
 titleSuffix:  Azure DevOps
 ms.custom: seodec18
-description: FAQs to support getting started using the hosted cloud offering of Azure DevOps Services or on-premises Team Foundation Server (TFS)  
+description: FAQs to support getting started using the hosted cloud offering of Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2013'
 
 ### To get started in the cloud or on-premises 
 - To get started with Azure DevOps Services, begin by [creating a user](https://visualstudio.microsoft.com/team-services/). See step-by-step instructions in [Sign up for Azure DevOps Services](../organizations/accounts/create-organization.md).  
-- To get started with an on-premises Team Foundation Server (TFS), download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). See [Install and configure TFS](/tfs/server/install/get-started) for details.  
+- To get started with an on-premises instance, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). See [Install and configure TFS](/azure/devops/server/install/get-started) for details.  
 - If you need to create a project, create one in [Azure DevOps Services](../organizations/accounts/set-up-vs.md), or set one up in an [on-premises TFS](../organizations/projects/create-project.md).   
 - If you don't have access to the project, [get invited to the team](../organizations/security/add-users-team-project.md).  
 - If it's your first time connecting to a project, see [Connect to a project](../organizations/projects/connect-to-projects.md).  
@@ -39,7 +39,7 @@ See [Software development roles](roles.md).
 
 ## What compatibility issues exist between client and server versions?
 
-See [Requirements and compatibility](/tfs/server/requirements).  
+See [Requirements and compatibility](/azure/devops/server/requirements).  
 
 
 ## Can stakeholders who don't use Visual Studio participate on our team?
@@ -53,7 +53,7 @@ Yes. You can provide access to stakeholders who have no client access license fo
 -   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).  
   
 
-## Are there other clients that connect to Azure DevOps Services or TFS? Are there other tools I can use?
+## Are there other clients that connect to Azure DevOps? Are there other tools I can use?
 
 Yes. You can connect to a project from one of these clients:  
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) (requires Team Foundation add-in)  

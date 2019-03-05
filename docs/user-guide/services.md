@@ -14,11 +14,11 @@ ms.date: 02/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# What features and services do I get with Azure DevOps and TFS?
+# What features and services do I get with Azure DevOps?
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-With Azure DevOps Services and Team Foundation Server (TFS), you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client/server model. Many of them are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
+With Azure DevOps, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client/server model. Many of them are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
 
 Access web services through the following areas, as shown in the following image.
 
@@ -34,7 +34,7 @@ Access web services through the following areas, as shown in the following image
 
 ::: moniker-end
 
-Many of our services are either free for small teams or available through a subscription model or per-use model. You can exercise a hybrid approach where you use on-premises TFS to manage your code and work, and you purchase cloud build or testing services on an as-needed basis.  
+Many of our services are either free for small teams or available through a subscription model or per-use model. You can exercise a hybrid approach where you use an on-premises deployment to manage your code and work, and you purchase cloud build or testing services on an as-needed basis.  
 
 For information about client tools, see [Tools](tools.md).
 
@@ -248,9 +248,9 @@ The following services work across the previously mentioned services to support:
 
 ## Service hooks
 
-Service hooks enable you to perform tasks on other services when events happen within your project hosted on Azure DevOps Services or TFS. For example, you can send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
+Service hooks enable you to perform tasks on other services when events happen within your project hosted on Azure DevOps. For example, you can send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
-The following services are available as the target of service hooks. To learn about other apps and services that integrate with Azure DevOps Services or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+The following services are available as the target of service hooks. To learn about other apps and services that integrate with Azure DevOps, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
 For the latest set of supported services, see [Integrate with service hooks](../service-hooks/index.md).
 
@@ -266,7 +266,7 @@ To learn more, see [Pricing](https://visualstudio.microsoft.com/team-services/pr
 
 ## Azure cloud-hosted services
 
-Azure provides cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with Azure DevOps Services or TFS.
+Azure provides cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with Azure DevOps.
 
 To browse the directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
 

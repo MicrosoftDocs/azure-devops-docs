@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra  
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 03/05/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,13 +18,13 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-#### Q: When do I need to add someone to the project collection administrator role in TFS?
+#### Q: When do I need to add someone to the project collection administrator role in Azure DevOps?
 
-A: It varies. For most organizations that use TFS, project collection administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
+A: It varies. For most organizations that use Azure DevOps, project collection administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also perform many operations that are required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
 
 #### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
 
-A: Project collection administrators for TFS must be members of the following groups or have the following permissions:
+A: Project collection administrators must be members of the following groups or have the following permissions:
 
 - Team Foundation Server: A member of the **Project Collection Administrators** group, or have the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
 
@@ -36,14 +36,14 @@ A: Project collection administrators for TFS must be members of the following gr
 
 A: The following permissions are required:
 
-- In TFS, you must belong to the **Project Collection Administrators** group, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
+- You must belong to the **Project Collection Administrators** group, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
 
 - To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** or **Farm Administrators** groups for SharePoint Products.
 
 - To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
 
 > [!Important]
-> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
+> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).
 
 #### Q: Where can I find information about each individual permission?
 
@@ -53,6 +53,3 @@ A: You can find detailed information about individual permissions and their rela
 
 2. Add the user to the **Project Administrators** group.
 
-3. If you use SharePoint with TFS, go to the project portal and choose **Share** to give the user **Full Control**.
-
-   ![Choose the SharePoint group and add users](_img/add-administrator-tfs/invite-administrators.png)

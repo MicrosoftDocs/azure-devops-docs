@@ -1,6 +1,6 @@
 ---
 title: Export access level audit log 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
 ms.technology: devops-security
 ms.prod: devops
@@ -35,12 +35,12 @@ You can get a list of users and groups that have access to your TFS instance by 
 * You must be the organization owner or a member of the Project collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
 ::: moniker-end    
 ::: moniker range="<= azure-devops-2019" 
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/tfs/server/admin/add-administrator-tfs).
+* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs).
 ::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  

@@ -1,6 +1,6 @@
 ---
 title: Use ID to link work items in discussions & pull requests 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: Link to work items in discussions and pull requests 
 ms.prod: devops
 ms.technology: devops-collab

@@ -41,7 +41,7 @@ Here's an example:
 
 
 ## Connect to the web portal for your project 
-To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
+To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers). 
 
 ::: moniker range=">= azure-devops-2019"  
 Open a web browser, connect to your project, and  choose **Overview>Dashboards**. 

@@ -6,7 +6,7 @@
   - name: Link GitHub commits and pull requests
     href: link-to-from-github.md
   - name: Troubleshoot GitHub repository connection
-    href: troubleshoot-git-hub-connection.md
+    href: troubleshoot-github-connection.md
   - name: Resources
     items:
     - name: Get started with Azure Boards
