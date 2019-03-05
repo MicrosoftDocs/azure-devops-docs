@@ -24,7 +24,7 @@ You can configure the initial security settings for the following functional are
  
 The default process templates assign several permissions to default security groups. You can modify these assignments by customizing the plug-in file for the corresponding functional area.  
 
-For information about how to configure initial security groups, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md). For information about how to administer users and groups, see [Set up groups for use in TFS](/tfs/server/admin/setup-ad-groups).  
+For information about how to configure initial security groups, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md). For information about how to administer users and groups, see [Set up groups for use in TFS](/azure/devops/server/admin/setup-ad-groups).  
   
 <a name="ElementsFunctionalArea"></a> 
 ##Assign permissions to functional areas  
@@ -107,6 +107,6 @@ You can control access to activities in Lab Management by changing the Lab plug-
 ## Related articles
 - [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 - [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
-- [Configure Lab Management with TFSLabConfig, Permissions](/tfs/server/ref/command-line/tfslabconfig-cmd#permissions)
+- [Configure Lab Management with TFSLabConfig, Permissions](/azure/devops/server/ref/command-line/tfslabconfig-cmd#permissions)
 
  

@@ -24,7 +24,7 @@ ms.date: 11/19/2018
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts or [team alerts](#team-alerts).
 
 ## Set alerts just for yourself
-1. Open alerts management (My alerts from your profile menu). If you don't see this option, then you must [configure an SMTP server to support TFS](/tfs/server/admin/setup-customize-alerts). 
+1. Open alerts management (My alerts from your profile menu). If you don't see this option, then you must [configure an SMTP server to support TFS](/azure/devops/server/admin/setup-customize-alerts). 
 	
 	![Manage individual alerts from the web portal](_img/set-alerts-from-profile-menu.png)
 

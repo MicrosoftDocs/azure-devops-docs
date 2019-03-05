@@ -157,7 +157,7 @@ Here is a common communication pattern between the agent and TFS.
 
 * An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listen to the job queue.
 
-* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](/tfs/server/admin/websitesettings) between the agent and TFS.
+* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](/azure/devops/server/admin/websitesettings) between the agent and TFS.
 
 ::: moniker-end
 
@@ -188,7 +188,7 @@ To register an agent, you need to be a member of the [administrator role](pools-
 ### Personal Access Token (PAT): 
 [Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. Also, as explained above, this PAT is used only at the time of registering the agent, and not for subsequent communication.
 
-To use a PAT with TFS, your server must be configured with HTTPS. See [Web site settings and security](/tfs/server/admin/websitesettings).
+To use a PAT with TFS, your server must be configured with HTTPS. See [Web site settings and security](/azure/devops/server/admin/websitesettings).
 
 ::: moniker-end
 
@@ -224,7 +224,7 @@ To use this method of authentication, you must first configure your TFS server.
 
 
 ### Alternate
-Connect to TFS using Basic authentication. To use this method you must first [configure HTTPS on TFS](/tfs/server/admin/websitesettings).
+Connect to TFS using Basic authentication. To use this method you must first [configure HTTPS on TFS](/azure/devops/server/admin/websitesettings).
 
 To use this method of authentication, you must configure your TFS server as follows:
 

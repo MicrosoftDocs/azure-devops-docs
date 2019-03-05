@@ -14,7 +14,7 @@ ms.date: 12/19/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# How do I get support and provide feedback for Azure DevOps and TFS products?
+# How do I get support and provide feedback for Azure DevOps products?
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -33,7 +33,7 @@ Do you need to do any of the following?:
 
 * **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
 
-## Azure DevOps and TFS Product Support
+## Azure DevOps product support
 
 The primary support venues for Azure DevOps and TFS are as follows:
 

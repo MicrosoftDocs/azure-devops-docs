@@ -1,6 +1,6 @@
 ---
 title: Technical Articles 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: A public collection of specific topics shared for partners.
 ms.prod: devops
 ms.topic: article

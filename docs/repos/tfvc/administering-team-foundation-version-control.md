@@ -23,7 +23,7 @@ Topics in this section describe how to complete common administrative version co
 [Configure Check-Out Settings](configure-check-out-settings.md)  
 Explains how to configure source control check-out settings.
 
-[Managing File Types](/tfs/server/admin/manage-file-types)  
+[Managing File Types](/azure/devops/server/admin/manage-file-types)  
 Describes how to add, edit, and remove file type extensions associated with Team Foundation version control check-ins.
 
 [Set and Enforce Quality Gates](set-enforce-quality-gates.md)  

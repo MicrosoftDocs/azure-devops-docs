@@ -97,7 +97,7 @@ You can specify more than one *Itemspec* argument.
 </tr>
 <tr>
 <td><p><strong>/overridetype</strong></p></td>
-<td><p>Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see <a href="/tfs/server/admin/manage-file-types">Managing File Types</a>.</p>
+<td><p>Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see <a href="/azure/devops/server/admin/manage-file-types">Managing File Types</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -111,7 +111,7 @@ You cannot specify both an **/overridetype** and a **/converttotype**.
 </tr>
 <tr>
 <td><p><strong>/converttotype</strong></p></td>
-<td><p>Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see <a href="/tfs/server/admin/manage-file-types">Managing File Types</a>.</p>
+<td><p>Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see <a href="/azure/devops/server/admin/manage-file-types">Managing File Types</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -172,7 +172,7 @@ The following example attempts to resolve all conflicts by automatically merging
 
 #### Concepts
 
-[Managing File Types](/tfs/server/admin/manage-file-types)
+[Managing File Types](/azure/devops/server/admin/manage-file-types)
 
 #### Other Resources
 

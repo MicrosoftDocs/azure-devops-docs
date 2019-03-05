@@ -215,7 +215,7 @@ To stop following changes, choose the ![ ](../_img/icons/following-icon.png) fol
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!IMPORTANT]
-> To support the follow feature, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
+> To support the follow feature, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
 
 ::: moniker-end
 

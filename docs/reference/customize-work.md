@@ -174,7 +174,7 @@ For Azure DevOps Server 2019, you have a choice of process models. When you crea
 > [!IMPORTANT]  
 > The choice you make is not reversible. Once the collection is created, you'll only be able to customize work tracking objects using the model selected. Also, there is no way to migrate existing project collections that use the On-premises XML process model to the Inheritance process model. 
 
-To learn more about project collections, see [Manage project collections](/tfs/server/admin/manage-team-project-collections).
+To learn more about project collections, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: Add a team, move from one team to several teams
-titleSuffix: Azure DevOps & TFS 
+titleSuffix: Azure DevOps 
 description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-settings
 ms.prod: devops
@@ -21,7 +21,7 @@ ms.date: 02/20/2019
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
 > [!NOTE]    
-> This article describes how to add a team or team members to a project defined in Azure DevOps Services or Team Foundation Server (TFS). To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
+> This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
 > For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams) article.
 
@@ -52,7 +52,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
  
 ::: moniker range="azure-devops"
 
-0. From the web portal, choose **Project settings** and open **Teams**. 
+1. From the web portal, choose **Project settings** and open **Teams**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](_img/add-team/open-project-settings-teams-new-nav.png) 
@@ -150,7 +150,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 ::: moniker range="< azure-devops"  
 > [!NOTE]   
-> The first time you add a user account, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
+> The first time you add a user account, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups).
 ::: moniker-end 
 
 For details, see [Add users to a project or specific team](../security/add-users-team-project.md). 

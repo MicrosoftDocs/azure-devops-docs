@@ -1,7 +1,7 @@
 ---
 title: Select backlog navigation levels
-titleSuffix: Azure DevOps & TFS 
-description: Choose which backlog and portfolio backlogs are active for your team in Azure DevOps Services & Team Foundation Server 
+titleSuffix: Azure DevOps
+description: Choose which backlog and portfolio backlogs are active for your team in Azure DevOps 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
@@ -49,9 +49,9 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 ::: moniker range=">= azure-devops-2019" 
 
-0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  

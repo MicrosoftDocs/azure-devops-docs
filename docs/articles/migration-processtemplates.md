@@ -1,5 +1,5 @@
 ---
-title: Validation of process templates for migration import from TFS to Azure DevOps Services | Azure DevOps Services & TFS
+title: Validation of process templates for migration import from TFS to Azure DevOps Services | Azure DevOps
 description: Guidance for fixing common TfsMigrator process template issues.
 ms.prod: devops
 ms.topic: article

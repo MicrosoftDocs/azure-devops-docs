@@ -33,7 +33,7 @@ npm i -g tfx-cli
 ## Configure TFS to use Basic Authentication
 
 > [!WARNING]
-> Basic authentication sends usernames and passwords in plaintext. You should consider [configuring TFS to use SSL](/tfs/server/admin/setup-secure-sockets-layer) in order to enable secure communication when using basic auth.
+> Basic authentication sends usernames and passwords in plaintext. You should consider [configuring TFS to use SSL](/azure/devops/server/admin/setup-secure-sockets-layer) in order to enable secure communication when using basic auth.
 
 
 

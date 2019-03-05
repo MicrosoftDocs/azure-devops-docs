@@ -17,7 +17,7 @@ ms.date: 01/03/2019
 
 # Resources granted to project members
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  ï¿½ 
 
 The project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.
@@ -34,7 +34,7 @@ User accounts backed by [Azure Active Directory](/azure/active-directory/) can h
 ## Organization-level resources
 
 Project members have access to resources beyond the specific project.
-Those resources include those defined at the organization-level (Azure DevOps Services) or project collection level (TFS):
+Those resources include those defined at the organization-level (cloud) or project collection level (on-premises):
 
 * Information about other members, including their email address and other contact details, that is hidden from non-members.
 * The Settings area, including security groups and permissions.

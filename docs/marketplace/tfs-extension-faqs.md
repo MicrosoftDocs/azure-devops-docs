@@ -117,7 +117,7 @@ is available only for Azure DevOps Services (targets = Microsoft.Visualstudio.Se
 ### Q: Why can't I upload extensions to TFS?
 
 A: You must be a member of the 
-[Team Foundation Administrators group](/tfs/server/admin/add-administrator-tfs#server) 
+[Team Foundation Administrators group](/azure/devops/server/admin/add-administrator-tfs#server) 
 with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 for the Team Foundation Server where you want to upload extensions.
 

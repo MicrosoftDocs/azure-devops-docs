@@ -1,6 +1,6 @@
 ---
 title: Migration import from TFS to Azure DevOps Services 
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
 ms.topic: article
@@ -247,9 +247,9 @@ By this point you will have everything ready to execute on your import. You will
 > We **strongly** recommend that your organization complete a dry run import before performing a production import. Dry runs allow you to validate that the import process works for your collection and that there are no unique data shapes present which might cause a production import failure. 
 
 ### Detaching your Collection
-[Detaching the collection](/tfs/server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the TFS server's configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
+[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the TFS server's configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
-If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/tfs/server/ref/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
+If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/azure/devops/server/ref/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
 
 <a id="generating-a-dacpac" />
@@ -323,7 +323,7 @@ The output of the command will be a DACPAC that is generated from the collection
 
 DACPACs offer a fast and relatively simplistic method for moving collections into Azure DevOps Services. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that TfsMigrator warns are too big, a different data packaging approach is required to migrate to Azure DevOps Services. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
 
-Before going any further, it's always recommended to see if [old data can be cleaned up](/tfs/server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
+Before going any further, it's always recommended to see if [old data can be cleaned up](/azure/devops/server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
 If you are under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generating-a-dacpac) for import. If you're still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to Azure DevOps Services. We'll walk through how to accomplish this end-to-end. At a high-level the steps covered include:
 
@@ -360,7 +360,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
 2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
 3. [Configure](/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](.\migration-import.md#generating-a-dacpac).
-4. If your source database is still over 1TB after [reducing the size](/tfs/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+4. If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
 #### Azure DevOps Services IPs 

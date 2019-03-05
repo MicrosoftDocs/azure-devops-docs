@@ -29,7 +29,7 @@ When you create a project from Visual Studio Team Explorer, the project portal p
 
 By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [project's portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../boards/work-items/guidance/choose-process.md).  
 
-The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a project](../../organizations/projects/create-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint). 
+The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a project](../../organizations/projects/create-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](/azure/devops/server/requirements#sharepoint). 
 
 
 > [!IMPORTANT]  

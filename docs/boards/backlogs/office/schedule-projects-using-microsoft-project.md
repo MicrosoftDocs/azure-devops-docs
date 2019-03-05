@@ -26,7 +26,7 @@ You can use [Project to plan and schedule work items](create-your-backlog-tasks-
 You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in Azure Boards and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 > [!NOTE]  
-> For version compatibility and Office clients, see [Requirements and compatibility, Office](/tfs/server/compatibility#office).  
+> For version compatibility and Office clients, see [Requirements and compatibility, Office](/azure/devops/server/compatibility#office).  
  
 **Project team tab ribbon** 
 

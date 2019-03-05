@@ -1,7 +1,7 @@
 ---
 title: Add a team administrator 
-titleSuffix: Azure DevOps & TFS
-description: Add a user to the team administrator role in Azure DevOps Services & Team Foundation Server   
+titleSuffix: Azure DevOps
+description: Add a user to the team administrator role in Azure DevOps  
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -47,7 +47,7 @@ From the web portal, open the admin page for the team.
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **Project Settings** and choose **Teams**. 
+1. Choose **Project Settings** and choose **Teams**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](_img/add-team/open-project-settings-teams-new-nav.png) 
