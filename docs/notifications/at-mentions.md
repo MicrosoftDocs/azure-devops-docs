@@ -1,6 +1,6 @@
 ---
 title: Use @mentions in work items and pull requests 
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps 
 description: Alert team members using the @mention control in work items and pull requests 
 ms.prod: devops
 ms.technology: devops-collab
@@ -29,7 +29,7 @@ The **@mention** control allows you to quickly pull someone into a work item or 
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
-For team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+For team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
 ::: moniker-end
 

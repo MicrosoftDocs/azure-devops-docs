@@ -1,7 +1,7 @@
 ---
 title: Show bugs on backlogs and boards
-titleSuffix: Azure DevOps & TFS 
-description: Choose how bugs appear on Agile tools in Azure Boards & Team Foundation Server 
+titleSuffix: Azure DevOps 
+description: Choose how bugs appear on Agile tools in Azure Boards and Azure DevOps
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
@@ -40,9 +40,9 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 ::: moniker range=">= azure-devops-2019"  
 
-0.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  

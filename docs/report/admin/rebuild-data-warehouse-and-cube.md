@@ -45,7 +45,7 @@ You must be a member of these security groups or have the corresponding permissi
 
 * Your **View project-level information** permission on the team project must be set to **Allow** to run and view a report. Also, you must be a member of the **Browser** role in SQL Server Reporting Services 
 
-For more information, see [Add accounts to administer TFS](/tfs/server/admin/add-administrator-tfs).
+For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator-tfs).
 
 In addition to these permissions, you might need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
 
@@ -89,9 +89,9 @@ By default, TCP/IP is disabled when you install SQL Server.
 	</tr>
 	</table>
 
-	For more information, see [Stop and start services, application pools, and websites](/tfs/server/admin/stop-start-stuff).
+	For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).
 
-2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/tfs/server/requirements#accounts). 
+2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements#accounts). 
 
 3. Make sure that TCP/IP has been enabled for SQL Server on the data-tier server. For more information, see [Enable the TCP/IP Protocol for a Database Instance](https://msdn.microsoft.com/library/bb909712.aspx).  
 
@@ -100,7 +100,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 ##2. Rebuild the data warehouse and restart services
 
-1. [Open the Team Foundation administration console](/tfs/server/admin/config-tfs-resources).
+1. [Open the Team Foundation administration console](/azure/devops/server/admin/config-tfs-resources).
 
 2. Under **Application Tier>Reporting**, choose **Start Rebuild**.  
 	
@@ -162,11 +162,11 @@ By default, TCP/IP is disabled when you install SQL Server.
 ####Q: How can I resolve failure errors that occur when rebuilding or processing the data warehouse?
 **A:** The following actions can cause failure errors to occur.  
 
-* You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](/tfs/server/admin/backup/manually-backup-tfs)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
+* You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](/azure/devops/server/admin/backup/manually-backup-tfs)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
 
 * A detach/attach operation resulted in a misconfiguration of a team project collection. For example, a collection has become attached to two different data-tier servers, which is an unsupported scenario. Correcting the configuration and then rebuilding the data warehouse should resolve the errors.  
 
-* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/tfs/server/admin/backup/back-up-restore-tfs).   
+* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore-tfs).   
 
 ####Q: How do I modify the reporting configuration?
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.

@@ -134,7 +134,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker range="tfs-2015"
 
-If you're using TFS 2015.2 or later version, then you can create a project from the web as well. It's important to note that for projects created from the web, Reporting and SharePoint integration steps are skipped when creating the project. You can still set up [Reporting](../../report/admin/add-reports-to-a-team-project.md) and [SharePoint](/tfs/server/admin/add-sharepoint-to-tfs) manually after project creation.
+If you're using TFS 2015.2 or later version, then you can create a project from the web as well. It's important to note that for projects created from the web, Reporting and SharePoint integration steps are skipped when creating the project. You can still set up [Reporting](../../report/admin/add-reports-to-a-team-project.md) and [SharePoint](/azure/devops/server/admin/add-sharepoint-to-tfs) manually after project creation.
 
 ::: moniker-end
 
@@ -191,7 +191,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 2. Ask your TFS administrator about the following resources and get additional permissions as needed:
 
-    - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you are supporting hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/tfs/server/admin/manage-team-project-collections).
+    - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you are supporting hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).
 
     - Has SQL Server Analysis Services and SQL Server Reporting Services been configured for the deployment? If so, ask your administrator to [add you as a member of the Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md) on the server that hosts SQL Server Reporting Services. Without these permissions, you are unable to create a project.
 

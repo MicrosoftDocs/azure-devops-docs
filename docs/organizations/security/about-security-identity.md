@@ -1,7 +1,7 @@
 ---
 title: How are security and identity managed?
-titleSuffix: Azure DevOps & TFS
-description: Understand how Azure DevOps and TFS manage authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
+titleSuffix: Azure DevOps
+description: Understand how Azure DevOps manages authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -41,7 +41,7 @@ Authentication verifies a user's identify based on the credentials provided when
 
 Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your organization in Azure DevOps, you can simply use Microsoft accounts. For additional information, see [Access Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
-For on-premises deployments, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
+For on-premises deployments, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups).
 
 ### Authentication methods, integrating with other services and apps
 
@@ -51,7 +51,7 @@ Other applications and services can integrate with Azure DevOps services and res
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
-[REST APIs for Azure DevOps and TFS](../../integrate/get-started/rest/basics.md), 
+[REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md), 
 but you must turn on alternate credentials.
 
 *	[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
@@ -164,7 +164,7 @@ Each functional area uses groups to simplify management across the deployment. Y
 
 <img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
 
-You can create local groups or Active Directory (AD) [groups to manage your users](/tfs/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
+You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
 
 ### Default permissions set for the Contributors group 
 
@@ -234,8 +234,8 @@ Certain features are only available to users who have the appropriate licensing 
 - [Permissions and groups reference](permissions.md)
 - [Default permissions and access for Azure DevOps](permissions-access.md)
 - [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md)
-- [Set up groups for use in on-premises deployments](/tfs/server/admin/setup-ad-groups)
-- [Setting up HTTPS with Secure Sockets Layer (SSL)](/tfs/server/admin/setup-secure-sockets-layer)
+- [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
+- [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections.
 

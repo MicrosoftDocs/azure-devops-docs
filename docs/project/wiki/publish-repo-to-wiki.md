@@ -56,7 +56,7 @@ To understand how to manage the different wiki types, see [Differences between p
 
 ## Open Wiki  
 
-Begin by connecting to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers) and choose **Wiki**.  
+Begin by connecting to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers) and choose **Wiki**.  
 
 ::: moniker range=">= azure-devops-2019"
 

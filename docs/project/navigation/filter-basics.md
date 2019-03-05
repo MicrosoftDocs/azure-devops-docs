@@ -1,6 +1,6 @@
 ---
 title: Filter lists, boards, and directories
-titleSuffix: Azure DevOps Services & TFS  
+titleSuffix: Azure DevOps 
 description: Filter your view to focus on items of interest 
 ms.custom: Navigation
 ms.prod: devops

@@ -89,6 +89,6 @@ Guidance for Cloud Solution Providers
 
 * [Start using Azure DevOps](../../user-guide/index.yml)
 * [Manage organizations](../accounts/index.md)
-* [TFS Server Administration documentation](/tfs/server/index?view=azure-devops)
+* [Azure DevOps Server Administration documentation](/azure/devops/server/index?view=azure-devops)
 * [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)

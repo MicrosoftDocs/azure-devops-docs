@@ -1,6 +1,6 @@
 ---
 title: What are access levels? What access levels are supported?
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, advanced, or VS Enterprise access levels 
 ms.technology: devops-security
 ms.prod: devops
@@ -389,7 +389,7 @@ Test summary access to stakeholder license users
 <td>Administer organization</td>
 <td>
 <ul>
-<li>[Add users to team projects](add-users-team-project.md)<br/>Can add users and set access levels when added to the [Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs) group. </li>
+<li>[Add users to team projects](add-users-team-project.md)<br/>Can add users and set access levels when added to the [Team Foundation Server Administrators](/azure/devops/server/admin/add-administrator-tfs) group. </li>
 <li>[Create, delete, and edit child Area Paths](../settings/set-area-paths.md)</li> 
 <li>[Create, delete, and edit child Iteration Paths](../settings/set-iteration-paths-sprints.md)</li> 
 <li>[Administer process permissions](permissions.md#administer-process-permissions-permission)</li>  

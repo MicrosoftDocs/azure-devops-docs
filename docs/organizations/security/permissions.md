@@ -1,6 +1,6 @@
 ---
 title: What are all the default permissions and groups? 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Comprehensive reference of built-in (default) security groups, and permissions defined in Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-security
@@ -72,7 +72,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <a id="image-diff"></a>  
 
 >[!NOTE]  
-> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps Services or your on-premises Azure DevOps Server or TFS. However, the basic functionality available to you remains the same unless explicitly mentioned. 
+> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps. However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 
@@ -138,7 +138,7 @@ You can't remove or delete the default server level groups.
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
-				consider [adding the members of this group](/tfs/server/admin/add-administrator-tfs)
+				consider [adding the members of this group](/azure/devops/server/admin/add-administrator-tfs)
 				to the Farm Administrators and Site Collection Administrators groups in SharePoint
 				and the Team Foundation Content Managers groups in Reporting Services.
 			</blockquote>
@@ -265,7 +265,7 @@ Security Service Group
 		<td>
 			<p>
 				Contains the <strong>Local Administrators</strong> group (BUILTIN\Administrators)
-				for the server where the application-tier services for TFS have been installed.
+				for the server where the application-tier services have been installed.
 				Also, contains the members of the
 				<em>CollectionName</em><strong>\Service Accounts</strong> group.
 			</p>
@@ -304,7 +304,7 @@ Security Service Group
 		<td><p>Limit this group to service accounts and groups that contain only service accounts.</p></td></tr>
 	<tr>
 		<td>Project Collection Service Accounts</td>
-		<td><p>Has service level permissions for the collection and for TFS.</p></td>
+		<td><p>Has service level permissions for the collection and for Azure DevOps Server.</p></td>
 		<td>
 			<p>
 				Contains the service account that was supplied during installation.
@@ -456,7 +456,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 
 ## Server-level permissions 
 
-You manage server-level permissions through the [Team Foundation Administration Console](/tfs/server/admin/add-administrator-tfs) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
+You manage server-level permissions through the [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator-tfs) or [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
 
 
 <table valign="top" width="100%">
@@ -534,7 +534,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 	<tr>
 		<td id="use-full-web-access-features-permission">Use full Web Access features</td>
 		<td>
-			Can use all TFS Web portal features.
+			Can use all on-premises Web portal features.
 			<blockquote>
 				If the **Use full Web Access** features permission is set to Deny, the user will only see
 				those features permitted for the **Stakeholder** group
@@ -564,7 +564,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 ## Collection-level permissions
 
-You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
+You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
 > [!div class="mx-imgBorder"]  
 > ![Collection level permissions and groups](_img/permissions/collection-level-permissions.png)   
@@ -601,7 +601,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="administer-Project-Server-integration-permission">Administer Project Server integration</td>
 		<td>
-			Can [configure the integration of TFS and Project Server](../../reference/tfs-ps-sync/synchronize-tfs-project-server.md) to enable data synchronization between the two server products. Applies to TFS 2017 and earlier versions only.
+			Can [configure the integration of Azure DevOps Server and Project Server](../../reference/tfs-ps-sync/synchronize-tfs-project-server.md) to enable data synchronization between the two server products. Applies to TFS 2017 and earlier versions only.
 		</td>
 	</tr>
 	<tr>
@@ -617,7 +617,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="alter-trace-settings-permission">Alter trace settings</td>
 		<td>
-			Can [change the trace settings](https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps/TFS Web services.
+			Can [change the trace settings](https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
 		</td>
 	</tr>
 	<tr>
@@ -710,7 +710,7 @@ You manage collection-level permissions through the [web portal admin context](.
 		<td id="make-requests-on-behalf-of-others-permission">Make requests on behalf of others</td>
 		<td>
 			Can perform operations on behalf of other users or services.
-			You should assign this permission only to on-premises [service accounts](/tfs/server/admin/service-accounts-dependencies-tfs).
+			You should assign this permission only to on-premises [service accounts](/azure/devops/server/admin/service-accounts-dependencies-tfs).
 		</td>
 	</tr>
 	<tr>
@@ -769,7 +769,7 @@ You manage collection-level permissions through the [web portal admin context](.
 
 ## Project-level permissions
 
-You manage project-level permissions from the [web portal admin context](set-project-collection-level-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
+You manage project-level permissions from the [web portal admin context](set-project-collection-level-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
 > [!div class="mx-imgBorder"]
 > ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
@@ -949,7 +949,7 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 ## Build (object-level)
 
-You manage build permissions [for each build defined in the web portal](../../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
+You manage build permissions [for each build defined in the web portal](../../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
 
 > [!div class="mx-imgBorder"]  
 > ![Build object-level permissions dialog](_img/permissions/build-permissions-vsts.png)
@@ -1116,7 +1116,7 @@ Rename Repository
 -->
 
 
-You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
+You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
 
 ::: moniker range="<= tfs-2017" 
@@ -1285,7 +1285,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
 
 ## TFVC (object-level)
 
-You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
+You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
 These permissions appear only for a project set up to use Team Foundation Version Control as the source control system.
 
@@ -1475,7 +1475,7 @@ In version control permissions, explicit deny takes precedence over administrato
 
 Area path permissions grant or restrict access to branches of the area hierarchy
 and to the work items in those areas.
-You manage the security of each area path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#area). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
+You manage the security of each area path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#area). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
@@ -1599,7 +1599,7 @@ There are other [team settings](../settings/manage-teams.md)
 that configure the team's agile planning tools.
 To learn more, see [Set permissions to restrict access to work items](../../organizations/security/set-permissions-access-work-tracking.md).
 
-You manage the security of each iteration path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#iteration-permissions). 
+You manage the security of each iteration path from the [web portal](../../organizations/security/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#iteration-permissions). 
 
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.  
 
@@ -1784,7 +1784,7 @@ You can manage the permissions for each inherited process that you create  throu
 
 ## Work item tags
 
-You manage tagging permissions mostly from the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#tagging-permissions). Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
+You manage tagging permissions mostly from the [TFSSecurity command-line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#tagging-permissions). Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
 
 
 <table valign="top" width="100%">
@@ -1823,7 +1823,7 @@ You manage tagging permissions mostly from the [TFSSecurity command-line tool](/
 			<blockquote>
 				<p>
 					This permissions does not appear in the UI.
-					It can only be set by using the [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd) command.
+					It can only be set by using the [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd) command.
 				</p>
 				<p>
 					There is also no UI to explicitly delete a tag.
@@ -1842,7 +1842,7 @@ You manage tagging permissions mostly from the [TFSSecurity command-line tool](/
 			<blockquote>
 				<p>
 					This permissions does not appear in the UI.
-					It can only be set by using the [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd) command.
+					It can only be set by using the [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd) command.
 				</p>
 				<p>
 					The **View project-level information** 
@@ -1857,7 +1857,7 @@ You manage tagging permissions mostly from the [TFSSecurity command-line tool](/
 			Can rename a tag by using the REST API.
 			<blockquote>
 				This permissions does not appear in the UI.
-				It can only be set by using the [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd) command.
+				It can only be set by using the [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd) command.
 			</blockquote>
 		</td>
 	</tr>
@@ -1950,7 +1950,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 ## Lab Management 
 
 Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
-You can set these permissions by using the [TFSLabConfig permissions command-line tool](/tfs/server/ref/command-line/tfslabconfig-cmd#permissions).
+You can set these permissions by using the [TFSLabConfig permissions command-line tool](/azure/devops/server/ref/command-line/tfslabconfig-cmd#permissions).
 
 By default, the project Readers groups have only View lab resources (Read) permissions.
 
@@ -2056,7 +2056,7 @@ By default, the project Readers groups have only View lab resources (Read) permi
 
 ## Notifications or alerts
 
-There are no UI permissions associated with [managing email notifications or alerts](../../boards/queries/alerts-and-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
+There are no UI permissions associated with [managing email notifications or alerts](../../boards/queries/alerts-and-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
 
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
@@ -2067,7 +2067,7 @@ There are no UI permissions associated with [managing email notifications or ale
   or users who have the **Edit project-level information**
   can set alerts in that project for others or for a team.
 
-You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd).
+You can manage alert permissions using [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd).
 
 
 |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
@@ -2084,7 +2084,7 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 - [About permissions](about-permissions.md)  
 - [Add users to a project](../accounts/add-team-members.md) (Azure DevOps)   
 - [Add users to a project](../../organizations/security/add-users-team-project.md) (TFS)   
-- [Add users to an administrator role](/tfs/server/admin/add-administrator-tfs)   
+- [Add users to an administrator role](/azure/devops/server/admin/add-administrator-tfs)   
 - [Make a user a team admin](../settings/manage-teams.md)  
-- [Change groups and permissions with TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
+- [Change groups and permissions with TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd)
 
