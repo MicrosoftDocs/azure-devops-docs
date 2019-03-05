@@ -18,7 +18,7 @@ ms.date: 12/19/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
 
-You can delete a project from Azure DevOps or from an on-premises deployment of Team Foundation Server (TFS). Deleting a project helps simplify the navigation to projects that are in use.
+You can delete a project from Azure DevOps. Deleting a project helps simplify the navigation to projects that are in use.
 
 > [!Caution]
 > Projects are permanently deleted, if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md).
@@ -69,9 +69,9 @@ Your project is deleted and can be restored up to 28 days afterward.
 
 ## Delete a project from TFS
 
-Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/tfs/server/ref/command-line/tfsdeleteproject-cmd) to delete all artifacts.
+Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/ref/command-line/tfsdeleteproject-cmd) to delete all artifacts.
 
-1. If you're not a member of one or more of the following administrator groups, [get permissions now](/tfs/server/admin/add-administrator-tfs):
+1. If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator-tfs):
 
     - Team Foundation Administrators group (required).
 
@@ -128,6 +128,6 @@ Review the status and log files for the delete action. Open the **Status** tab a
 
     Review the information about the failure, and then try to delete the project again.
 
-    If partial data remains, you can also use the [TFSDeleteProject](/tfs/server/command-line/tfsdeleteproject-cmd) command line tool.
+    If partial data remains, you can also use the [TFSDeleteProject](/azure/devops/server/command-line/tfsdeleteproject-cmd) command line tool.
 
 ::: moniker-end

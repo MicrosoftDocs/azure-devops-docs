@@ -1,6 +1,6 @@
 ---
 title: Set permissions and access for work tracking
-titleSuffix: Azure DevOps & TFS 
+titleSuffix: Azure DevOps
 description: How to grant or restrict access to work tracking tasks for Azure DevOps Services & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
@@ -135,7 +135,7 @@ Area path permissions let you grant or restrict access to edit or modify work it
 
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
-0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
+1. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](../settings/_img/areas/open-project-work-areas-settings-vert.png)   

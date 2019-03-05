@@ -53,6 +53,6 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](/tfs/server/admin/_img/add-administrator-tfs/people-and-groups.png)
+	![Follow instructions for your version of SharePoint](/azure/devops/server/admin/_img/add-administrator-tfs/people-and-groups.png)
 
 

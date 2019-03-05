@@ -98,7 +98,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
  
 ::: moniker range="<= azure-devops-2019"
 > [!NOTE]  
->The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). 
+>The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"

@@ -10,4 +10,4 @@ ms.topic: include
 
 * TFS 2015.3: `http://{your_server}:8080/tfs/{collection-name}/_admin/_AgentQueue`
 
-[The TFS URL doesn't work for me. How can I get the correct URL?](/tfs/server/admin/websitesettings)
+[The TFS URL doesn't work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)

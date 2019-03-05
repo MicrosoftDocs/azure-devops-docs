@@ -506,7 +506,7 @@ Look at the logs from the Azure Pipelines or TFS build to see the exact commands
 Repeat the same commands in the same order on your development machine to locate the problem.
 
 * If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects, 
-you should also use the **NuGet** task to restore packages specified in `package.json` files. 
+  you should also use the **NuGet** task to restore packages specified in `packages.config` files.
 Similarly, you should add **MSBuild** or **Visual Studio Build** tasks to build the .NET Framework projects.
 
 * If your builds fail intermittently while restoring packages, either NuGet.org is having issues, or there are 

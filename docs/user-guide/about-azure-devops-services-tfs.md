@@ -79,7 +79,7 @@ Project collections serve as containers for security and administration, as well
 
 Finally, projects are used to encapsulate the assets of individual software projects, including source code, work items, and so on.
 
-Learn more: [Manage project collections](/tfs/server/admin/manage-team-project-collections).
+Learn more: [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).
 
 ### Azure DevOps Services scales by using organizations and projects
 

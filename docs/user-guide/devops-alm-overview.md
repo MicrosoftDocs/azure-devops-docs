@@ -40,9 +40,9 @@ Choose Azure DevOps Services when you want quick setup, maintenance-free operati
 
 ### Work on-premises
 
-Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
+Choose on-premises when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a project](_img/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)
+[![Install TFS](_img/overview/tfs-setup-1.png)](/azure/devops/server/install/single-server)[![Create a project](_img/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/azure/devops/server/admin/backup/back-up-restore-tfs)
  
 <a id="add-code">  </a>
 
@@ -116,30 +116,30 @@ As your team grows, your tools grow. You can easily add teams which can focus on
  
 ## Related articles
 
-Once you've signed up for Azure DevOps Services or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
+Once you've signed up for Azure DevOps Services or installed Azure DevOps Server, get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
 
-- [About Azure DevOps Services and Team Foundation Server](about-azure-devops-services-tfs.md)
+- [About Azure DevOps](about-azure-devops-services-tfs.md)
 - [Key concepts](concepts.md) 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
 
 
-### TFS updates
+### Azure DevOps Server updates
 
-- [What's new](/tfs/server/whats-new)
+- [What's new](/azure/devops/server/whats-new)
 - [Migrate data from TFS to Azure DevOps Services](../articles/migrate-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
 
 [Azure DevOps Services Pricing](https://visualstudio.microsoft.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
 
-On-premises TFS provides three access levels: [Stakeholder, Basic, and Advanced](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing) to plan your licensing requirements.
+On-premises Azure DevOps Server provides three access levels: [Stakeholder, Basic, and Advanced](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing) to plan your licensing requirements.
 
 
 ### Extensibility: Create first-class integration experiences
 
-Our extensibility framework enables you to build integrations directly within Azure DevOps Services or TFS to create first-class, seamless connections between different tools and services.  
+Our extensibility framework enables you to build integrations directly within Azure DevOps to create first-class, seamless connections between different tools and services.  
 
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
@@ -149,9 +149,9 @@ With Marketplace extensions (currently in private preview), you can create first
 - [Get started with REST APIs](../integrate/get-started/rest/basics.md)
 
  
-Service hooks enable integration scenarios between other applications and Azure DevOps Services or your on-premises TFS by subscribing to events instead of constantly polling for them. Service hooks provide a more efficient way to drive activities when events happen in your projects. For example, you can send a push notification to your team's mobile devices when a build fails, or create a card in Trello when a work item is created. Some of the services you can easily integrate with are UserVoice, Zendesk, Trello, Slack, and HipChat.
+Service hooks enable integration scenarios between other applications and Azure DevOps by subscribing to events instead of constantly polling for them. Service hooks provide a more efficient way to drive activities when events happen in your projects. For example, you can send a push notification to your team's mobile devices when a build fails, or create a card in Trello when a work item is created. Some of the services you can easily integrate with are UserVoice, Zendesk, Trello, Slack, and HipChat.
 
-Industry-standard RESTful APIs extend the power of Azure DevOps Services and TFS from your apps and services. With them, you can integrate from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and more.  
+Industry-standard RESTful APIs extend the power of Azure DevOps from your apps and services. With them, you can integrate from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and more.  
 
 
 ### Analytics: Monitor your apps to gain insight  

@@ -167,7 +167,7 @@
   topicHref: /tfs/index
   items:
   - name: TFS administation
-    tocHref: /tfs/server/
+    tocHref: /azure/devops/server/
     topicHref: /tfs/index
   - name: Project Server integration
     tocHref: /azure/devops/reference/tfs-ps-sync/

@@ -1,7 +1,7 @@
 ---
 title: Set personal or team favorites
-titleSuffix: Azure DevOps Services & TFS  
-description: Quickly access artifacts by favoriting them in Azure DevOps Services & Team Foundation Server
+titleSuffix: Azure DevOps
+description: Quickly access artifacts by favoriting them in Azure DevOps
 ms.custom: Navigation
 ms.technology: devops-collab
 ms.prod: devops
@@ -60,7 +60,7 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker range=">= azure-devops-2019"
 
-0. To favorite a project, open the project **Summary** page and choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon.
+1. To favorite a project, open the project **Summary** page and choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](_img/favorites/favorite-project-vert.png)  

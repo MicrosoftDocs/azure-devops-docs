@@ -157,7 +157,7 @@ Simply follow these steps:
 * [What is a draft release?](index.md#draftrelease)
 * [When and why would I abandon a release?](index.md#abandonrelease)
 * [Download Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs)
-* [Install and configure Team Foundation Server](/tfs/server/install/get-started)
+* [Install and configure Team Foundation Server](/azure/devops/server/install/get-started)
 * [Sign up for Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

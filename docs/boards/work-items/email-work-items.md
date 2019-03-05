@@ -86,7 +86,7 @@ Here's a list of the most common ways in which teams share information and plans
 
 ::: moniker range="<= azure-devops-2019"  
 > [!NOTE]   
-> For the email feature to work, your administrator for Azure DevOps Server or Team Foundation Server must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
+> For the email feature to work, your administrator for Azure DevOps Server or Team Foundation Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 ::: moniker-end 
 
 In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
@@ -131,7 +131,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 ::: moniker-end  
 ::: moniker range="<= azure-devops-2019"  
 > [!NOTE]  
-> If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](/tfs/server/admin/setup-customize-alerts) for the email feature to work.   
+> If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for the email feature to work.   
 ::: moniker-end  
 
 # [Visual Studio 2015](#tab/visual-studio) 
@@ -316,6 +316,6 @@ Optionally, enter a note about the release or un-check any section you don't wan
 - [Use templates to add and update work items](../backlogs/work-item-template.md)  
 - [Share information in work items and social tools](../queries/share-plans.md) 
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
-- [Configure an SMTP server](/tfs/server/admin/setup-customize-alerts)
+- [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 
  

@@ -32,7 +32,7 @@ This article shows you how to:
 
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
-[You must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
+[You must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
 
 ## Follow a work item

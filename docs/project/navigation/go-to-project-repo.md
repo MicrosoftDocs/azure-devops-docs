@@ -1,7 +1,7 @@
 ---
 title: Switch project, repository, or team
-titleSuffix: Azure DevOps Services & TFS
-description: Open another project or repository for Azure DevOps Services and Team Foundation Server
+titleSuffix: Azure DevOps
+description: Open another project or repository for Azure DevOps
 ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
@@ -29,7 +29,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
+1. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](../../_shared/_img/settings/open-projects-page-vert-brn.png)

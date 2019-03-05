@@ -33,7 +33,7 @@ In this topic:
   - [Troubleshoot Search in Azure DevOps Server and TFS](#trouble-tfs)
 
 Also see [Install and configure Azure DevOps Server or TFS](../../tfs-server/install/get-started.md)
-and [Requirements and compatibility](/tfs/server/requirements).
+and [Requirements and compatibility](/azure/devops/server/requirements).
 
 > Users with at least a **Basic** access can use Code Search. 
 **Stakeholders** do not have access to code, and therefore no access to Code Search. 

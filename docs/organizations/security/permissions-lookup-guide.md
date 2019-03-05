@@ -1,7 +1,7 @@
 ---
 title: Permissions and role lookup guide 
-titleSuffix: Azure DevOps & TFS  
-description: Index to permissions defined for Azure DevOps Services and Team Foundation Server   
+titleSuffix: Azure DevOps
+description: Index to permissions defined for Azure DevOps
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid:  
@@ -36,7 +36,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li>[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)</li>
 <li>[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
-<li>[Alerts (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
+<li>[Alerts (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 <li>[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)</li>
 <li>[Analytics Service (Project)](../../report/analytics/analytics-security.md)</li>
 <li>[Analytics views (Object)](../../report/analytics/analytics-security.md)</li>
@@ -102,7 +102,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)</li>
 <li>[Move work items (Project)](set-project-collection-level-permissions.md)</li>
 <li>[Notes, Git (Object)](../../repos/git/branch-permissions.md)</li>
-<li>[Notifications (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
+<li>[Notifications (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 </ul>
 <h3>P</h3>
 <ul>
@@ -169,7 +169,7 @@ Values in parenthesis indicate what level the permission is managed:
 - **Project**: Permissions are managed at the project level
 - **Collection**: Permissions are managed at the account or project collection level  
 - **Role**: Permissions are managed through a security role.  
-- **Server**: Permissions are managed at the instance level for a TFS server   
+- **Server**: Permissions are managed at the instance level for a server   
 - **Team**: Permissions are managed via the team administrator role.
  
 
@@ -181,7 +181,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Administer warehouse (Server)](permissions.md#server-permissions)</li>
 <li>[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)</li>
 <li>[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
-<li>[Alerts (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
+<li>[Alerts (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 <li>[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)</li>
 <li>[Analytics Service (Project)](../../report/analytics/analytics-security.md)</li>
 <li>[Analytics views (Object)](../../report/analytics/analytics-security.md)</li>
@@ -251,7 +251,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)</li>
 <li>[Move work items (Project)](set-project-collection-level-permissions.md)</li>
 <li>[Notes, Git (Object)](../../repos/git/branch-permissions.md)</li>
-<li>[Notifications (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
+<li>[Notifications (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 </ul>
 <h3>P</h3>
 <ul>
@@ -320,7 +320,7 @@ Values in parenthesis indicate what level the permission is managed:
 - **Project**: Permissions are managed at the project level
 - **Collection**: Permissions are managed at the account or project collection level  
 - **Role**: Permissions are managed through a security role.  
-- **Server**: Permissions are managed at the instance level for a TFS server   
+- **Server**: Permissions are managed at the instance level for a server   
 - **Team**: Permissions are managed via the team administrator role.
  
 
@@ -332,7 +332,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Administer warehouse (Server)](permissions.md#server-permissions)</li>
 <li>[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)</li>
 <li>[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
-<li>[Alerts (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
+<li>[Alerts (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 <li>[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)</li>
 <li>[Area path (Object)](set-permissions-access-work-tracking.md)</li>
 <li>[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)</li>
@@ -395,7 +395,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)</li>
 <li>[Notes, Git (Object)](../../repos/git/branch-permissions.md)</li>
-<li>[Notifications (Collection)](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
+<li>[Notifications (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 </ul>
 <h3>P</h3>
 <ul>
