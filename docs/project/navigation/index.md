@@ -1,7 +1,7 @@
 ---
 title: Navigating within the web portal  
-titleSuffix: Azure DevOps Services & TFS 
-description: Navigate within the user interface/web portal of Azure DevOps Services & Team Foundation Server  
+titleSuffix: Azure DevOps
+description: Navigate within the user interface/web portal of Azure DevOps
 ms.custom: "Navigation, seodec18"
 ms.prod: devops
 ms.technology: devops-collab
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/08/2019
+ms.date: 03/05/2019
 ---
 
 # Web portal navigation in Azure DevOps  

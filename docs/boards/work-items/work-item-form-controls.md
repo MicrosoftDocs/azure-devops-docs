@@ -157,7 +157,7 @@ To reference a work item, use the [**#ID** control](../../notifications/add-link
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]  
-> For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
+> For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
 ::: moniker-end 
 
 <a id="copy-url">  </a>

@@ -1,6 +1,6 @@
 ---
 title: Events, subscriptions, and notifications
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps 
 description: Learn about events and subscriptions in Azure DevOps Services and TFS, and how they are used to create notifications to users
 ms.technology: devops-collab
 ms.prod: devops
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-vsts-tfs-2017-on](../boards/_shared/version-vsts-tfs-2017-on.md)]
 
 > [!NOTE]
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
 
 ## Events
 

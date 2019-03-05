@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 03/05/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Azure DevOps Services or Team Foundation Server (TFS).
+A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Azure DevOps.
 
 When you create your project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or projects. These can be created within the single account or collection.
 
@@ -50,7 +50,7 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 *How do you scale your DevOps and Agile tools to support your growing enterprise?*  
 
-When you connect to Azure DevOps Services or TFS, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system.
+When you connect to Azure DevOps, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system.
 
 ::: moniker range=">= azure-devops-2019"
 You can scale your organization in the following ways:
@@ -75,7 +75,7 @@ You can scale your on-premises TFS deployment in the following ways:
 
 ::: moniker-end
 
-Both Azure DevOps Services and TFS are enterprise-ready platforms that support teams of any size, from tens to thousands. Azure DevOps Services, our cloud service, provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
+Both Azure DevOps Services and Azure DevOps Server are enterprise-ready platforms that support teams of any size, from tens to thousands. Azure DevOps Services, our cloud service, provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
 ## How to view projects defined for your organization or collection
 
@@ -227,14 +227,14 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
-See also, [Compatibility with TFS versions](/tfs/server/compatibility).
+See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).
 
 ## Related articles
 
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Web portal navigation](../../project/navigation/index.md)
 - [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Understand differences between Azure DevOps Services and TFS](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Understand differences between Azure DevOps](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 <!--- Various blog resources 
 

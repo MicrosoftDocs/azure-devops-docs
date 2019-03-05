@@ -81,7 +81,7 @@ The following example displays the myproj project settings in the project collec
 
 #### Concepts
 
-[Managing File Types](/tfs/server/admin/manage-file-types)
+[Managing File Types](/azure/devops/server/admin/manage-file-types)
 
 #### Other Resources
 

@@ -47,7 +47,7 @@ In this article you'll learn:
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 ::: moniker-end  
 
-To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/tfs/server/compatibility). 
+To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
 
 <a id="add-work-items"> </a>  
 ## Add work items

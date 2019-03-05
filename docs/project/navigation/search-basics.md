@@ -1,7 +1,7 @@
 ---
 title: Search code, work items, or wiki
-titleSuffix: Azure DevOps Services & TFS   
-description: Find code or work items quickly in Azure DevOps Services and Team Foundation Server (TFS)  
+titleSuffix: Azure DevOps
+description: Find code or work items quickly in Azure DevOps
 ms.assetid: 
 ms.custom: Navigation
 ms.prod: devops
@@ -45,11 +45,11 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
+1. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
    ![Switching between searching for code and work items](../search/_img/code-search-get-started/title-bar-search-box-empty-outlined.png)
 
-0. Enter a search string in the text box, and press _Enter_ (or choose the 
+2. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../search/_img/_shared/start-search-icon.png) icon) to start your search.
 
 ::: moniker-end

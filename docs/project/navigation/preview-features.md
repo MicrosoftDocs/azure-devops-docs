@@ -24,7 +24,7 @@ As new features are introduced, you can turn them on or off. That way, you can t
 Some features provide a new user interface and functionality, which can be managed per user or team member. Others support a default experience for the account and are managed by an account administrator. 
  
 > [!NOTE]   
-> You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to TFS. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
+> You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level)| [Preview features per organization](#account-level)|  

@@ -1,6 +1,6 @@
 ---
 title: Set Git or TFVC repository permissions
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Steps for how to grant or restrict access to a Git or Team Foundation Version Control repository feature or function
 ms.assetid:  
 ms.prod: devops
@@ -64,9 +64,9 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-0. To set the set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+2. To set the set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
 

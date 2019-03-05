@@ -47,9 +47,9 @@ Whether you do the setup via the Azure portal or as part of making a purchase in
 
    > [!div class="mx-imgBorder"]
 ![Change number of paid Basic users](_img/reduce-cancel-paid-users/change-quantity-of-users.png)
-    > If you [pay for TFS client access licenses (CALs) through Azure DevOps](buy-access-tfs-test-hub.md), make sure that you still have enough CALs for the users who need them.
+    > If you [pay for client access licenses (CALs) through Azure DevOps](buy-access-tfs-test-hub.md), make sure that you still have enough CALs for the users who need them.
 
-4. Review your changes, and then select **Confirm**.
+1. Review your changes, and then select **Confirm**.
 
    > [!div class="mx-imgBorder"]
 ![Review your changes and confirm total paid users](_img/reduce-cancel-paid-users/review-and-confirm.png)

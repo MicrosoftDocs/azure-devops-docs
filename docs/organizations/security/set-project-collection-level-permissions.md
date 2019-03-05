@@ -1,7 +1,7 @@
 ---
 title: Set project or collection-level permissions 
-titleSuffix: Azure DevOps & TFS
-description: How-to guide to set project-level permissions in Azure DevOps Services or Team Foundation Server (TFS)
+titleSuffix: Azure DevOps
+description: How-to guide to set project-level permissions in Azure DevOps
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -35,7 +35,7 @@ A project collection is the container for several projects that share resources.
 
 ::: moniker range="<= azure-devops-2019"
 > [!Note]  
-> The above list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
+> The above list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="<= tfs-2018"
 
-0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (TFS).  
+0. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
 	
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
@@ -214,8 +214,8 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 For on-premises deployments, see these additional topics: 
 
-- [Add a user as a TFS server administrator](/tfs/server/admin/add-administrator-tfs) 
-- [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs)  
+- [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator-tfs) 
+- [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies-tfs)  
 
 ::: moniker-end  
 

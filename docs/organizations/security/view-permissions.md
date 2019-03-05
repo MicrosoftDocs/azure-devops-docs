@@ -1,6 +1,6 @@
 ---
 title: View permissions for yourself or others
-titleSuffix: Azure DevOps & TFS 
+titleSuffix: Azure DevOps
 description: How to find what permissions you or a team member have, including project-level, collection-level, and object-level permissions 
 ms.assetid:  
 ms.prod: devops
@@ -18,7 +18,7 @@ ms.date: 02/20/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to view your permissions or those defined for another which have been set in Azure DevOps or Team Foundation Server (TFS). That way, if you don't have a permission to access a feature or function, you can request it from the right resource.
+In this quickstart, you learn how to view your permissions or those defined for another which have been set in Azure DevOps. That way, if you don't have a permission to access a feature or function, you can request it from the right resource.
 
 Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
@@ -34,7 +34,7 @@ Permissions are set at the collection, project, and object level as described in
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **Project Settings** and then **Security**.
+1. Choose **Project Settings** and then **Security**.
 
 	*To see the full image, click to expand*.
 

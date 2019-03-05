@@ -27,7 +27,7 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 
 ## Prerequisites
 
-- Verify that the operating system and hardware or the existing SharePoint Products installation meet the requirements for Team Foundation Server Extensions for SharePoint Products. For details, see [Requirements and compatibility, SharePoint](/tfs/server/requirements?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json)
+- Verify that the operating system and hardware or the existing SharePoint Products installation meet the requirements for Team Foundation Server Extensions for SharePoint Products. For details, see [Requirements and compatibility, SharePoint](/azure/devops/server/requirements?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json)
 - Make sure you are a member of the following administrative security groups: 
 	- **Windows Administrators** group on the computer where you install SharePoint Products and where you host its databases.
 	- **Farm Administrators** group for the farm to which you are configuring a Web application and changing settings for SharePoint Products
@@ -38,7 +38,7 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 
 0. Install all Windows updates before installing SharePoint.
 
-0. **For SharePoint 2013**, install or verify your SharePoint environment. See [Manually Install SharePoint products](/tfs/server/install/sharepoint/install-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).	 
+0. **For SharePoint 2013**, install or verify your SharePoint environment. See [Manually Install SharePoint products](/azure/devops/server/install/sharepoint/install-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).	 
 	- Run the SharePoint preparation tool
 	- Install and configure SharePoint
 	- Run the SharePoint Configuration wizard
@@ -47,27 +47,27 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 
 0. **For SharePoint 2010**, see [Install and Configure SharePoint Integration on a Stand-alone Server](https://technet.microsoft.com/library/bb677368(v=sql.105).aspx).  
 
-0.	**For integration with an existing SharePoint server**, verify that your SharePoint Products installation meets the following guidelines. For details, see [Verify SharePoint products for Team Foundation Server](/tfs/server/install/sharepoint/verify-sharepoint).  
+0.	**For integration with an existing SharePoint server**, verify that your SharePoint Products installation meets the following guidelines. For details, see [Verify SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/verify-sharepoint).  
 	- The administration site and default website are running, and other computers on the network can access them
 	- SharePoint uses NTLM, the recommended authentication (Basic authentication is not supported by Team Foundation Server extensions for SharePoint Products)
 	- If you are using a supported Enterprise edition of SharePoint Server, you must configure settings for dashboard compatibility.
 
-0. **For multiple SharePoint servers**, add the service account for TFS to the Farm Administrators group on the SharePoint administration site. See [Set up remote SharePoint Products for Team Foundation Server](/tfs/server/install/sharepoint/setup-remote-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
+0. **For multiple SharePoint servers**, add the service account for TFS to the Farm Administrators group on the SharePoint administration site. See [Set up remote SharePoint Products for Team Foundation Server](/azure/devops/server/install/sharepoint/setup-remote-sharepoint?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
 
 0. Configure your SharePoint server to integrate with TFS. 
 
-	From the TFS Administration Console on your SharePoint Server, configure your TFS server to grant access to the SharePoint server by installing Team Foundation Server Extensions for SharePoint Products. For details, see [Install Team Foundation Server](/tfs/server/install/install-2013/install-tfs?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
+	From the TFS Administration Console on your SharePoint Server, configure your TFS server to grant access to the SharePoint server by installing Team Foundation Server Extensions for SharePoint Products. For details, see [Install Team Foundation Server](/azure/devops/server/install/install-2013/install-tfs?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
 
 	If you have multiple servers in a web farm, you must install and configure the extensions on every application-tier and web-tier server in the farm. This includes all servers hosting web applications and the Central Administration web site. After you install the extensions, you must perform the configuration procedure on each server. 
 
 	Also, the Team Foundation Server Extensions for SharePoint must be at the same version level as your TFS version. 
 
-0. If you're using a supported **Enterprise edition of SharePoint Server**, [configure the enterprise application definition for TFS](/tfs/server/install/sharepoint/config-enterprise-app-def?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
+0. If you're using a supported **Enterprise edition of SharePoint Server**, [configure the enterprise application definition for TFS](/azure/devops/server/install/sharepoint/config-enterprise-app-def?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
 
-	**For the Enterprise Editions of SharePoint Server 2010**: From the TFS Management Console on SharePoint, [configure your SharePoint server to grant access to your TFS Server](/tfs/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
+	**For the Enterprise Editions of SharePoint Server 2010**: From the TFS Management Console on SharePoint, [configure your SharePoint server to grant access to your TFS Server](/azure/devops/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json).
 
 0. If you plan to take advantage of Excel Charts on your SharePoint sites:
-  * On **SharePoint 2013**, you need to [Manually Install SharePoint products for Team Foundation Server, Configure Excel Services](/tfs/server/install/sharepoint/install-sharepoint#configure-excel-services-sharepoint-server-only).
+  * On **SharePoint 2013**, you need to [Manually Install SharePoint products for Team Foundation Server, Configure Excel Services](/azure/devops/server/install/sharepoint/install-sharepoint#configure-excel-services-sharepoint-server-only).
   * On **SharePoint 2010**, [Configure Settings for Dashboard Compatibility, Configure Office SharePoint Server](https://msdn.microsoft.com/library/ee462863%28v=vs.100%29.aspx).
 
 
@@ -115,5 +115,5 @@ The following topics should be sufficient to help you through the general proces
 
 ## Related notes
 
-- [Add SharePoint products to your Team Foundation Service deployment](/tfs/server/admin/modify-remove-access-shareport-tfs)  
-- [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](/tfs/server/admin/modify-remove-access-shareport-tfs) 
+- [Add SharePoint products to your Team Foundation Service deployment](/azure/devops/server/admin/modify-remove-access-shareport-tfs)  
+- [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](/azure/devops/server/admin/modify-remove-access-shareport-tfs) 

@@ -1,7 +1,7 @@
 ---
 title: How are permissions and groups defined?
-titleSuffix: Azure DevOps & TFS
-description: Understand how permissions are managed in Azure DevOps Services or Team Foundation Server (TFS)
+titleSuffix: Azure DevOps
+description: Understand how permissions are managed in Azure DevOps
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -18,7 +18,7 @@ ms.date: 02/19/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To access the resources you manage in Azure DevOps Services or Team Foundation Server (TFS)&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS. 
+To access the resources you manage in Azure DevOps&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS. 
 
 Permissions may apply to a specific project or objects within the project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire Azure DevOps organization or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
 

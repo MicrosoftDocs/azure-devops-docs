@@ -21,7 +21,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you may ne
 
 > Before you begin:
  * If you use [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
- * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](/tfs/server/install/single-server).
+ * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](/azure/devops/server/install/single-server).
  *  Otherwise, you've come to the right place to set up an agent on Windows for TFS 2015. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
