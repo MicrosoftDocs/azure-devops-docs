@@ -2,5 +2,17 @@
 ms.topic: include
 ---
 
+::: moniker range="azure-devops"
+
 > [!NOTE]   
-> Azure Boards and GitHub integration is in Public Preview and supported only for Azure DevOps Services at this time. 
+> Azure Boards and Azure DevOps Services support integration with GitHub.com repositories. 
+> 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Azure DevOps Server 2019 supports integration with GitHub Enterprise Server repositories.  
+> 
+::: moniker-end
+

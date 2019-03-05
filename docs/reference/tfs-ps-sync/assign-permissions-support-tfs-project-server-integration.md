@@ -71,7 +71,7 @@ ms.date: 03/16/2017
   
 -   **Service account for TFS**  
 
-     [Open the Team Foundation Administration console](/tfs/server/ref/command-line/open-admin-console). If a Network Service account is used, [change it to a domain account](/tfs/server/admin/change-service-account-password).  
+     [Open the Team Foundation Administration console](/azure/devops/server/ref/command-line/open-admin-console). If a Network Service account is used, [change it to a domain account](/azure/devops/server/admin/change-service-account-password).  
   
 -   **Service account for the Project Server Event Handler**  
   
@@ -338,7 +338,7 @@ ms.date: 03/16/2017
 ##  <a name="add_tfadmingroup"></a> 5. Add user accounts to Team Foundation Administrators group  
  **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
-1.  On the application-tier server, [Open the Team Foundation Administration Console](/tfs/server/command-line/open-admin-console), and open **Group Membership**.  
+1.  On the application-tier server, [Open the Team Foundation Administration Console](/azure/devops/server/command-line/open-admin-console), and open **Group Membership**.  
   
      ![Application tier, choose Group Membership](_img/alm_tac_groupmembership.png "ALM_TAC_GroupMembership")  
   

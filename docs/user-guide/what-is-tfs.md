@@ -43,12 +43,12 @@ When you deploy TFS, you can also configure the following servers or integration
 Choose on-premises TFS when you need your data to stay within your network, or you want access to SQL Server reporting services that integrate with TFS data and tools. You can start for free by downloading TFS Express.
 
 
-[![Install TFS](_img/what-is-tfs-install-tfs-step-1.png)](/tfs/server/install/single-server)[![Create a project](_img/what-is-tfs-create-team-project-step-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/what-is-tfs-add-code-step-3.png)](/../repos/git/create-new-repo?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json )
+[![Install TFS](_img/what-is-tfs-install-tfs-step-1.png)](/azure/devops/server/install/single-server)[![Create a project](_img/what-is-tfs-create-team-project-step-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/what-is-tfs-add-code-step-3.png)](/../repos/git/create-new-repo?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json )
 
 ## Try next  
 
 > [!div class="nextstepaction"]
-> [Install TFS](/tfs/server/install/single-server)
+> [Install TFS](/azure/devops/server/install/single-server)
 
 ## Related articles
 

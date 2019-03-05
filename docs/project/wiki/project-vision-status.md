@@ -1,7 +1,7 @@
 ---
 title: Share your project vision and view project activity in Azure DevOps
 titleSuffix: Azure DevOps 
-description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps or Team Foundation Server   
+description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps
 ms.topic: quickstart
 ms.technology: devops-collab
 ms.prod: devops

@@ -29,7 +29,7 @@ sections:
   - html: Note <a href=what-happened-vsts.md>Visual Studio Team Services (VSTS) is now Azure DevOps</a>. 
 - title:
   items:
-  - html: To access our full content set, choose the <a href=index.md>Azure DevOps and TFS</a> breadcrumb link at the top left of this page.
+  - html: To access our full content set, choose the <a href=index.md>Azure DevOps</a> breadcrumb link at the top left of this page.
 - title: 
   items:
   - type: list

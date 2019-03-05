@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 
 ## Troubleshoot connectivity
 
-As a first step in resolving connectivity issues with Azure DevOps Services or TFS, complete the following steps:
+As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
 
 1. Sign out of your browser. To do this, select the [Visual Studio sign out](http://aka.ms/VsSignout) link.
 
@@ -127,7 +127,7 @@ Another solution is to delete your browser cookies. For more information, see th
 
 ## Connect to TFS with Secure Sockets Layer
 
-If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, you must install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/tfs/server/admin/setup-secure-sockets-layer#config-client-computers). 
+If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, you must install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
 
 ## Clear the cache on client computers
 

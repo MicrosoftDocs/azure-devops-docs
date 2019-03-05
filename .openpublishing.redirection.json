@@ -11494,6 +11494,11 @@
       "source_path": "docs/articles/remove-binaries.md",
       "redirect_url": "/azure/devops/repos/git/remove-binaries",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/github/troubleshoot-git-hub-connection.md",
+      "redirect_url": "/azure/devops/boards/github/troubleshoot-github-connection",
+      "redirect_document_id": true
     }
   ]
 }

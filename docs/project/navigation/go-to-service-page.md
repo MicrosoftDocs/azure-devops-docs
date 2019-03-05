@@ -1,6 +1,6 @@
 ---
 title: Navigate to an application or functional area
-titleSuffix: Azure DevOps Services & TFS   
+titleSuffix: Azure DevOps 
 description: Access the application area or change your view
 ms.custom: Navigation
 ms.prod: devops
@@ -19,7 +19,7 @@ ms.date: 02/08/2019
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
-The web portal for Azure DevOps Services or Team Foundation Server (TFS) provides support for software development teams to collaborate through the planning, development, and release cycles. You can manage source code, plan and track work, define builds, run tests, and manage releases. 
+The web portal for Azure DevOps provides support for software development teams to collaborate through the planning, development, and release cycles. You can manage source code, plan and track work, define builds, run tests, and manage releases. 
 
 ::: moniker range="azure-devops"
 
@@ -77,7 +77,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **Project Settings**.
+1. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
@@ -230,7 +230,7 @@ Members of the Team Foundation Server Administrators group configure resources f
 
 0. Choose **Access levels**, to set access levels for a member or group. For details, see [Change access levels](../../organizations/security/change-access-levels.md).  
 
-	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
+	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs). 
 
 ::: moniker-end
 

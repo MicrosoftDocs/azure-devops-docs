@@ -74,9 +74,9 @@ administration console. Scroll down to **Data Tier Summary** and look for
    database and then choose **Test** to verify connectivity. Accept the default 
    values for the service account and web port (Network Service and port 1000) 
    or specify alternates. For more information, see 
-   [Ports required for installation of Team Foundation Server](/tfs/server/architecture/required-ports)
+   [Ports required for installation of Team Foundation Server](/azure/devops/server/architecture/required-ports)
    and
-   [Accounts required for installation of Team Foundation Server](/tfs/server/requirements#accounts).
+   [Accounts required for installation of Team Foundation Server](/azure/devops/server/requirements#accounts).
    Release Management server uses the identity set here for its Application 
    Pools in IIS and the Release Management Monitor Windows service.
 

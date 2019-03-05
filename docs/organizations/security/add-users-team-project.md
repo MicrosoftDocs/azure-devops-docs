@@ -80,13 +80,13 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
    > [!NOTE]
-   > The first time you add a user or group to Azure DevOps or TFS,
+   > The first time you add a user or group to Azure DevOps,
    > you can't browse to it or check the friendly name.
    > After the identity has been added, you can just enter the friendly name.
 
-6. In **Identities**, specify the name of the user or group you want to add.
+2. In **Identities**, specify the name of the user or group you want to add.
 
-7. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
+3. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
 
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
@@ -124,13 +124,13 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
    > [!NOTE]
-   > The first time you add a user or group to Azure DevOps or TFS,
+   > The first time you add a user or group to Azure DevOps,
    > you can't browse to it or check the friendly name.
    > After the identity has been added, you can just enter the friendly name.
 
-6. In **Identities**, specify the name of the user or group you want to add.
+2. In **Identities**, specify the name of the user or group you want to add.
 
-7. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
+3. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
 
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).

@@ -1,6 +1,6 @@
 ---
 title: Grant or restrict access to select features
-titleSuffix: Azure DevOps & TFS 
+titleSuffix: Azure DevOps
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: devops
@@ -17,7 +17,7 @@ ms.date: 02/19/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can grant or restrict access to resources that you manage in Azure DevOps Services or Team Foundation Server (TFS). Depending on your project needs, you may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
+You can grant or restrict access to resources that you manage in Azure DevOps. Depending on your project needs, you may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
 If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
 
@@ -143,7 +143,7 @@ For an account or collection, Edit instance-level (or collection-level) informat
 
 ## Restrict access to view or modify objects  
 
-Azure DevOps and TFS are designed to enable all valid users to be able to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
+Azure DevOps is designed to enable all valid users to be able to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
 
 
 <table>

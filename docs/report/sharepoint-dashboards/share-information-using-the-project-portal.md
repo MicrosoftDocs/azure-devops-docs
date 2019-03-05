@@ -77,7 +77,7 @@ Teams use project portals to share information and support how their team works.
   
  **A:** If you have a SharePoint site already configured with Team Foundation Server Extensions for SharePoint, see [Configure a project portal](configure-or-add-a-project-portal.md).  
 
- If you need to install a SharePoint product first, see [Manually install SharePoint products for Team Foundation Server](/tfs/server/install/sharepoint/install-sharepoint).  
+ If you need to install a SharePoint product first, see [Manually install SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/install-sharepoint).  
   
 ### Q: Can I customize the process guidance?  
  **A:** Yes. See [Configure or redirect process guidance](configure-or-redirect-process-guidance.md).  

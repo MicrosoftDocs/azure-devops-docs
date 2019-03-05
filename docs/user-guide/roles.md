@@ -2,7 +2,7 @@
 title: Supported roles for software development
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Understand how Azure DevOps Services and Team Foundation Server tools support various software development roles
+description: Understand how Azure DevOps tools support various software development roles
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
@@ -14,7 +14,7 @@ ms.date: 12/06/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Software development roles supported by Azure DevOps Services and TFS
+# Software development roles supported by Azure DevOps
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -55,11 +55,11 @@ A project manager typically plans the feature set to deliver, sets priorities, a
   
 To get started, see [About Azure Boards and Agile tools](../boards/get-started/what-is-azure-boards.md).  
 
-If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Azure DevOps Services and TFS. See [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
+If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Azure DevOps. See [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 ### DevOps: builders, testers, and release managers
 
-One of the main advantages to working with Azure DevOps Services or TFS is the suite of tools and integrated functionality that support build, testing, and deploying software applications. Here are the main DevOps-associated tasks that Azure DevOps Services and TFS support:
+One of the main advantages to working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. Here are the main DevOps-associated tasks that Azure DevOps support:
 
 - Define builds
 - Unit test your code 
@@ -155,7 +155,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage project collections
   
-To get started, see [Server Administration (TFS)](/tfs/server/index). 
+To get started, see [Server Administration (TFS)](/azure/devops/server/index). 
 
 ::: moniker-end
 

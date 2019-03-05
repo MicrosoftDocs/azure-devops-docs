@@ -1,6 +1,6 @@
 ---
-title: Security terms used in Azure DevOps & TFS 
-description: Key definitions for objects and items used to authenticate and manage users and groups in Azure DevOps Services and Team Foundation Server
+title: Security terms used in Azure DevOps 
+description: Key definitions for objects and items used to authenticate and manage users and groups in Azure DevOps
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 
@@ -37,7 +37,7 @@ An unauthenticated user of a project. The user is visiting a project and has not
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps or TFS. These services/servers typically integrate with and rely upon the security features provided by additional services such as Active Directory or Azure Active Directory. To learn more, see [About security and identity](about-security-identity.md).
+Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by additional services such as Active Directory or Azure Active Directory. To learn more, see [About security and identity](about-security-identity.md).
 
 ## Authorization
 
@@ -45,7 +45,7 @@ Authorization refers to the operations performed to verify that the identity whi
 
 ## Basic member
 
-A user account that has been granted membership to an organization in Azure DevOps or TFS instance with Basic access. To learn more, see [About access levels](access-levels.md).
+A user account that has been granted membership to an organization in Azure DevOps instance with Basic access. To learn more, see [About access levels](access-levels.md).
 
 [!INCLUDE [temp](../../_shared/glossary-terms/collections.md)]
 
@@ -75,7 +75,7 @@ The assignment made to a user or group to use a feature or function. Permissions
 
 ## Security group
 
-A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps and TFS support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and groups](about-permissions.md).
+A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and groups](about-permissions.md).
 
 ## Security role
 
@@ -91,11 +91,11 @@ SSL is a protocol used to strengthen the security of cloud-hosted and on-premise
 
 SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](/azure/devops/articles/team-services-security-whitepaper).
 
-For on-premises TFS deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/tfs/server/admin/setup-secure-sockets-layer).
+For on-premises deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/azure/devops/server/admin/setup-secure-sockets-layer).
 
 ## Stakeholder
 
-A user account that has been granted membership to an organization in Azure DevOps or TFS instance with Stakeholder access. With Stakeholder access, you can add and modify work items, check project status, manage pipelines, and view and manage dashboards. To learn more, see [Get started as a Stakeholder](get-started-stakeholder.md).
+A user account that has been granted membership to an organization in an Azure DevOps instance with Stakeholder access. With Stakeholder access, you can add and modify work items, check project status, manage pipelines, and view and manage dashboards. To learn more, see [Get started as a Stakeholder](get-started-stakeholder.md).
 
 ## Team group
 
@@ -115,7 +115,7 @@ An Azure Active Directory used to manage access or billing. To learn more, see [
 
 ## Valid users
 
-Valid users are users that are recognized by Azure DevOps or TFS as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and groups](about-permissions.md).
+Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and groups](about-permissions.md).
 
 
 

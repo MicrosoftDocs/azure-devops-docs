@@ -1,6 +1,6 @@
 ---
 title: Find an admin or organization owner 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin or project owner 
 ms.prod: devops
 ms.technology: devops-security
@@ -38,9 +38,9 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-0. Choose **Project Settings** and then **Security**.
+2. Choose **Project Settings** and then **Security**.
 
 	*To see the full image, click to expand*.
 

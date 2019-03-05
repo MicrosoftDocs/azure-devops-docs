@@ -1,6 +1,6 @@
 ---
 title: Differences between provisioned and published wikis
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: sancha
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 12/17/2018  
+ms.date: 03/05/2019  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -29,7 +29,7 @@ With publish code as wiki, you have the following options for maintaining wiki c
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs.
 
 > [!NOTE]  
-> The publish code as wiki feature is currently available on Azure DevOps Services . For TFS 2018 and later versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
+> The publish code as wiki feature is currently available on Azure DevOps. For 2018 and later versions, you can only [provision a wiki for your team project](wiki-create-repo.md).  
 
 ## Wiki page menu options
 

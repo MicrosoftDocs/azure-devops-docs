@@ -1,7 +1,7 @@
 ---
 title: Connect to a project from a web browser or supported client in Azure DevOps
 titleSuffix: Azure DevOps
-description: Learn how to connect a client to the cloud service Azure DevOps Services or on-premises Team Foundation Server (TFS) 
+description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
 ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
@@ -13,7 +13,7 @@ ms.date: 02/19/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Connect to a project in Azure DevOps or TFS
+# Connect to a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -240,7 +240,7 @@ In addition, you can provide access to stakeholders in your organization who hav
 
 ## Configure Visual Studio to connect to TFS Proxy
 
-If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
+If your remote team uses a [TFS Proxy server](/azure/devops/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
 1.  First, make sure that you have connected to TFS as described [in the previous section](#visual-studio).
 
@@ -257,7 +257,7 @@ If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-
 To **Configure User Tools** to associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../repos/tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../repos/tfvc/associate-file-type-merge-tool.md).
 
 
-### What other clients support connection to Azure DevOps Services and TFS?
+### What other clients support connection to Azure DevOps?
 
 In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a  project from these clients: 
 
@@ -269,11 +269,11 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 
 ### Requirements and client compatibility
 
-Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Client compatibility](/tfs/server/compatibility).
+Some tasks or features aren't available when you connect to a later version of Azure DevOps Server than which your client supports. For more information, see [Client compatibility](/azure/devops/server/compatibility).
 
-### Determine your platform or TFS version
+### Determine your platform version
 
-See [Feedback and support](../../user-guide/provide-feedback.md#platform-version). 
+See [Feedback and support](../../user-guide/provide-feedback.md#platform-version).
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: What settings are supported? 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Configure team, project, collection, and organizational-level settings in Azure DevOps
 ms.technology: devops-settings
 ms.prod: devops
@@ -454,7 +454,7 @@ For an overview of managing your organization, see [About organization managemen
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
+For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/config-tfs-resources).
 
 
 <table>
@@ -486,8 +486,8 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li>[Change individual permissions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
 <li>[Add collection-level administrators](../security/set-project-collection-level-permissions.md)</li>
-<li>[Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)</li>
-<li>[Add administrators to TFS](/tfs/server/admin/add-administrator-tfs)</li>
+<li>[Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups)</li>
+<li>[Add administrators to Azure DevOps Server](/azure/devops/server/admin/add-administrator-tfs)</li>
 </ul></td>
 <td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
 </tr>
@@ -536,7 +536,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
+For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/config-tfs-resources).
 
 
 <table>
@@ -568,8 +568,8 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li>[Change individual permissions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
 <li>[Add collection-level administrators](../security/set-project-collection-level-permissions.md)</li>
-<li>[Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)</li>
-<li>[Add administrators to TFS](/tfs/server/admin/add-administrator-tfs)</li>
+<li>[Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)</li>
+<li>[Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs)</li>
 </ul></td>
 <td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
 </tr>
@@ -616,7 +616,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 
 ## Server administrator role 
 
-Members of the [Team Foundation Server Administrators group](/tfs/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
+Members of the [Team Foundation Server Administrators group](/azure/devops/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
 
 The main task they perform from the web portal is to set access levels for a user or security group. See [Change access levels](../security/change-access-levels.md). 
 

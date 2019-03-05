@@ -34,7 +34,7 @@
     href: ../settings/work/customize-process.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Customize a project (TFS)
+  - name: Customize a project
     href: ../../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: About areas and iterations
     href: ../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
@@ -44,7 +44,7 @@
     href: resources-granted-to-project-members.md
   - name: Clients & tools
     href: ../../user-guide/tools.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Azure DevOps Services vs TFS"
+  - name: "Azure DevOps Services vs Azure DevOps Server"
     href: ../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: How-to guides
   items:
@@ -100,5 +100,5 @@
     href: ../public/index.md
   - name: All settings
     href: ../settings/index.md
-  - name: Migrate from TFS
+  - name: Migrate from Azure DevOps Server
     href: ../../articles/migrate-from-tfs.md

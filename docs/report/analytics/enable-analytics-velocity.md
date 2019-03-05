@@ -49,7 +49,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Add the Velocity widget to your dashboard 
 
-To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a project, see [Create a project](../../organizations/projects/create-project.md)
+To add a widget to a dashboard, you connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers). If you need to add a project, see [Create a project](../../organizations/projects/create-project.md)
 
 0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
