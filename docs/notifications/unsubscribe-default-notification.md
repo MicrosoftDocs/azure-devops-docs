@@ -1,6 +1,6 @@
 ---
 title: View subscribed notifications, unsubscribe or opt-out  
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: View your notifications and unsubscribe from a default or built-in notification in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-collab

@@ -35,7 +35,7 @@ ms.date: 01/12/2017
     -   **Review the synchronization process**. You can manage the integration of the two server products more effectively if you understand how the synchronization engine manages the flow of data between them. The engine synchronizes data in three ways. It captures and updates task-related and resource-related data in both server products while respecting the ownership of data by the project manager in the project plan. For more information, see [Synchronization process overview](synchronization-process-overview.md).  
   
     -   **Check known issues and workarounds**. If an error appears, you can  determine whether you have encountered a known issue and whether a workaround has been identified. For more information, see [Known issues and workarounds](known-issues-and-workarounds.md).  
-    -   Verify that the Team Foundation Background Job Agent is running. For more information, see [Stop and start services, application pools, and websites](/tfs/server/admin/stop-start-stuff).  
+    -   Verify that the Team Foundation Background Job Agent is running. For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).  
   
  If you have reviewed these suggestions and you still suspect a problem, visit the following forum on the Microsoft website: [Team Foundation Server and Project Server Integration](http://go.microsoft.com/fwlink/?LinkId=207282).  
   

@@ -1,7 +1,7 @@
 ---
 title: Web portal& Team Explorer keyboard shortcuts 
-titleSuffix: Azure DevOps Services & TFS   
-description: Keyboard shortcuts for the web portal for Azure DevOps Services, TFS, and Team Explorer
+titleSuffix: Azure DevOps
+description: Keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
 ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
@@ -15,17 +15,17 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Keyboard shortcuts for Azure DevOps Services, TFS, and Team Explorer
+# Keyboard shortcuts for Azure DevOps and Team Explorer
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
 
-You can use the keyboard shortcuts listed in this topic when you work within Azure DevOps Services, the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
+You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
 For specific guidance on navigating within the web portal, see [Web portal navigation](index.md).
 
 ## Web portal
 
-You can use these keyboard shortcuts when working in the web portal for Azure DevOps or TFS.  
+You can use these keyboard shortcuts when working in the web portal for Azure DevOps.  
 
 <table width="70%">
 <tbody valign="top">

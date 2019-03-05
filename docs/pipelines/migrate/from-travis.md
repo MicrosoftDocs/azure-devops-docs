@@ -231,7 +231,7 @@ jobs:
   dependsOn: build
   steps:
   - script: ./test.sh integration_tests
-- stage: package
+- job: package
   dependsOn:
   - test1
   - test2
@@ -269,7 +269,7 @@ jobs:
   dependsOn: build
   steps:
   - script: ./test.sh integration_tests
-- stage: package
+- job: package
   dependsOn: test1
   script: ./package.sh
 - job: deploy

@@ -18,7 +18,7 @@ ms.date: 01/11/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
-Most components in Azure DevOps Services and Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
+Most components in Azure DevOps must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
@@ -219,7 +219,7 @@ Must not include commas (,)
 A project collection identifies a group of projects and the resources that are associated with those projects. It provides an organizing structure that you can use to define and control a group of projects within TFS.  
 
 Also, the collection name is part of the connection string used to connect team members to projects. The default assigned corresponds to *DefaultCollection*. 
-[Manage project collections](/tfs/server/admin/manage-team-project-collections) provides more information. 
+[Manage project collections](/azure/devops/server/admin/manage-team-project-collections) provides more information. 
 
 Names you assign to project collections must conform to the following restrictions.  
 
@@ -244,7 +244,7 @@ Uniqueness
 <td>
 <ul>
 <li>
-Must not be identical to any other collection name in your on-premises TFS deployment.
+Must not be identical to any other collection name in your on-premises deployment.
 </li>
 <li>
 If your deployment includes SharePoint Products or SQL Server Reporting Services, must not be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services Web site.

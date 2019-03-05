@@ -50,7 +50,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 * To request feedback, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To provide or review feedback, you must be granted **Stakeholder** access or higher. 
 * To view or modify feedback responses, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-* To send feedback requests, the server administrator must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+* To send feedback requests, the server administrator must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
 ::: moniker-end 
 
@@ -61,7 +61,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 * To request feedback, you must be granted **Basic** access or higher for TFS 2015.1 and later versions. For TFS 2015, you must be granted **Advanced** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To provide or review feedback, you must be granted **Stakeholder** access or higher. 
 * To view or modify feedback responses, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-* To send feedback requests, the server administrator must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+* To send feedback requests, the server administrator must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
 ::: moniker-end 
 
@@ -73,7 +73,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 * To request feedback, you must be granted **Advanced** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-* To send feedback requests, the server administrator must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+* To send feedback requests, the server administrator must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
 ::: moniker-end 
 
@@ -121,7 +121,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 	![Request feedback link in Homepage](_img/get-feedback/other-links-widget.png)  
 
-	If the following message appears, you need to [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+	If the following message appears, you need to [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
 	![Error message about email notifications not configured](_img/ALM_GF_SMTPServer.png)  
 
@@ -153,7 +153,7 @@ To request feedback, you fill out a form that generates an email request to your
 	> [!NOTE]  
 	> If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../../reference/configure-features-after-upgrade.md). 
 
-	If the following message appears, you need to [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
+	If the following message appears, you need to [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
 	![Error message about email notifications not configured](_img/ALM_GF_SMTPServer.png)  
 

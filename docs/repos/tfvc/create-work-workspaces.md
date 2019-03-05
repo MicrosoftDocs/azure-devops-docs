@@ -126,4 +126,4 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: I work at a remote site. Is there any way I can save bandwidth?
 
-**A:** [Install Team Foundation Proxy and set up a remote site](/tfs/server/install/install-proxy-setup-remote).
+**A:** [Install Team Foundation Proxy and set up a remote site](/azure/devops/server/install/install-proxy-setup-remote).

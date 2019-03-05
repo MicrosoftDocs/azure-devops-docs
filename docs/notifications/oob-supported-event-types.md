@@ -1,6 +1,6 @@
 ---
 title: Supported event types for notifications subscriptions
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: List of supported event types to set up automatic notifications in Azure DevOps Services and TFS
 ms.prod: devops
 ms.technology: devops-collab

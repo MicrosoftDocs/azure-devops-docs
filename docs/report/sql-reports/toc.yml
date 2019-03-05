@@ -161,4 +161,4 @@
   - name: SharePoint Integration
     href: ../sharepoint-dashboards/index.md
   - name: Server Administration 
-    href: /tfs/server/index
+    href: /azure/devops/server/index

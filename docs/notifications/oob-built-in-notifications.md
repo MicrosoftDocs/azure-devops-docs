@@ -1,6 +1,6 @@
 ---
 title: Default and supported notifications
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: Reference of out of the box or default notifications set in Azure DevOps Services or Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-collab

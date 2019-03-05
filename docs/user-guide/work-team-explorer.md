@@ -29,7 +29,7 @@ You use Team Explorer to coordinate your code efforts with other team members to
 > - [Azure DevOps Plugin for IntelliJ](../java/download-intellij-plug-in.md)
 > - [Visual Studio Code](../java/vscode-extension.md)  
 
-> For information about compatibility among client and server versions, see [Requirements and compatibility](/tfs/server/requirements).
+> For information about compatibility among client and server versions, see [Requirements and compatibility](/azure/devops/server/requirements).
 
 If you don't need Visual Studio, but want to connect to a project in Azure DevOps, you can install the free [Visual Studio Community](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
@@ -280,7 +280,7 @@ To learn more about each page, see the following articles.
 
 The **Reports** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
 
-If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/tfs/server/admin/config-tfs-resources).
+If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/config-tfs-resources).
 
 ::: moniker-end
 
@@ -295,7 +295,7 @@ The **Reports** page opens the [Reporting Services report site](../report/sql-re
 
 From the **Documents** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your project has been configured with a SharePoint Products portal.
   
-If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/tfs/server/admin/config-tfs-resources).
+If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/config-tfs-resources).
 
 ::: moniker-end
 

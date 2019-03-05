@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access quick reference
-titleSuffix: Azure DevOps & TFS 
-description: At-a-glance view of permissions and access levels for common user tasks for Azure DevOps Services and Team Foundation Server 
+titleSuffix: Azure DevOps 
+description: At-a-glance view of permissions and access levels for common user tasks for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
@@ -146,7 +146,7 @@ In addition to the permissions set at the [project level via the built-in groups
 <!---
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 > [!NOTE]  
-> There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).   
+> There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).   
 ::: moniker-end  
 -->
 
@@ -266,7 +266,7 @@ You can manage feeds from the web portal, **Build and release > Packages**.  Fee
 To manage notifications, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) and [Manage team notifications](../../notifications/howto-manage-team-notifications.md).
 
 > [!NOTE]  
-> There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
+> There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
 
 [!INCLUDE [temp](_shared/collaborate.md)]
 

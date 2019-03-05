@@ -38,7 +38,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 ## Concepts
 
-- [Customize a project (TFS)](../../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Customize a project](../../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [About areas and iterations](../settings/about-areas-iterations.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [About teams and Agile tools](../settings/about-teams-and-settings.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)  
 - [Resources granted to project members](resources-granted-to-project-members.md)  
@@ -65,4 +65,4 @@ Structure your projects by adding area paths, iteration paths, and teams.
 - [Azure DevOps Services user guide](../../user-guide/index.yml)
 - [Public Projects](../public/index.md)
 - [Security & identity](../../organizations/security/index.md)
-- [Migrate from TFS to Azure DevOps Services](../../articles/migrate-from-tfs.md)
+- [Migrate from Azure DevOps Server to Azure DevOps Services](../../articles/migrate-from-tfs.md)

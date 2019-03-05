@@ -1,6 +1,6 @@
 ---
 title: Migration options for migrating from TFS to Azure DevOps Services
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: Learn about migrating from Team Foundation Server (TFS) to Azure DevOps Services
 ms.prod: devops
 ms.topic: article

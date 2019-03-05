@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
-With most Azure DevOps Services or Microsoft Team Foundation Server (TFS) applications, you can start using any service and configure resources as you go. No up-front work is required. Most settings define defaults.  
+With most Azure DevOps applications, you can start using any service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
 As an organization owner or a project admin, there are a few items you might want to attend to at the start, to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.
 
@@ -168,7 +168,7 @@ If users believe they're getting too many notifications, they can [opt out of a 
 
 ## Configure an SMTP server
 
-In order for team members to receive notifications, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts).  
+In order for team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end  
 
@@ -237,6 +237,6 @@ All organizations can add up to five users with Basic access and unlimited users
 - [Security & identity](../organizations/security/index.md)
 - [Organization management](../organizations/accounts/index.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
-- [TFS administration](/tfs/server/index)
+- [TFS administration](/azure/devops/server/index)
 
 ::: moniker-end

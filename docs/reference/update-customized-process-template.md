@@ -53,7 +53,7 @@ When the Configure Features wizard can't update your project, it's because your 
 
 	You can check the **ProcessTemplate.xml** file for version information. 
 
-1. If you haven't upgraded your application-tier server to the TFS version that contains the features you want, do that now. [Get the download](https://visualstudio.microsoft.com/downloads) and [Upgrade Team Foundation Server](/tfs/server/upgrade/get-started). 
+1. If you haven't upgraded your application-tier server to the TFS version that contains the features you want, do that now. [Get the download](https://visualstudio.microsoft.com/downloads) and [Upgrade Team Foundation Server](/azure/devops/server/upgrade/get-started). 
 
 1. If you aren't a member of the Project Collection Administrators group, [get added](../organizations/security/set-project-collection-level-permissions.md). You need the **Manage process template permission** set to Allow to download and manage process templates.
 

@@ -1,6 +1,6 @@
 ---
 title: Notifications FAQs
-titleSuffix: Azure DevOps Services & TFS
+titleSuffix: Azure DevOps
 description: General q and a about notifications set in Azure DevOps Services or Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-collab

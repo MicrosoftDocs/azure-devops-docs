@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
-Personal access tokens (PATs) are alternate passwords that you can use to authenticate in to Azure DevOps and Team Foundation Server (TFS). In this article, we walk you through how to create or revoke PATS.
+Personal access tokens (PATs) are alternate passwords that you can use to authenticate in to Azure DevOps. In this article, we walk you through how to create or revoke PATS.
 
-Azure DevOps Services and TFS use enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication.
+Azure DevOps use enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication.
 
 For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 

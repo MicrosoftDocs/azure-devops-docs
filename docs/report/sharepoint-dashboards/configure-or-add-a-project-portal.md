@@ -64,7 +64,7 @@ The project portal is a site associated with a team project for the purposes of 
      ![Specify URL  for project portal Web site](_img/alm_pg_portalwebsite.png "ALM_PG_PortalWebSite")  
   
 ##  <a name="validtfs"></a> Configure a prepared SharePoint site for your portal  
- Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint).  
+ Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/azure/devops/server/requirements#sharepoint).  
   
 1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
   
@@ -79,7 +79,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="addsp"></a> Add SharePoint site integration and upload portal contents from a process template  
  Choose this option to gain access to Excel reports, dashboards, and process guidance support.  To add the portal to the team project, use the **tfpt** command line tool that TFS Power Tools provides.  
 
-1.  [Add SharePoint products to your deployment](/tfs/server/admin/add-sharepoint-to-tfs).  
+1.  [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).  
   
 2.  Verify that you have the following tools, configurations, and permissions.  
   

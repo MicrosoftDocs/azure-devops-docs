@@ -32,7 +32,7 @@ The following types of users can join your organization for free:
 
 ## How *access* differs from *permissions*
 
-Features that are available to users are controlled by access levels  - the full set of organization resources that a user is entitled to access. Permissions control which of these organization resources the user can act on. To learn more, see [Default permissions and access for Azure DevOps Services and TFS](../../security/permissions-access.md).
+Features that are available to users are controlled by access levels  - the full set of organization resources that a user is entitled to access. Permissions control which of these organization resources the user can act on. To learn more, see [Default permissions and access for Azure DevOps](../../security/permissions-access.md).
 
 ## Prerequisites
 

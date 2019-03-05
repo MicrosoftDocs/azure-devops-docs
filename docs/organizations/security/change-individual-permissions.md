@@ -1,6 +1,6 @@
 ---
 title: Change individual or group permissions
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Add custom security groups, change permissions for groups or individuals tutorial
 ms.prod: devops
 ms.technology: devops-security

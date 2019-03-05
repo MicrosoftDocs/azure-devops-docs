@@ -32,7 +32,7 @@ ms.date: 01/12/2017
 > [!NOTE]
 >  You do not need to unmap or unregister any mapped or registered components prior to upgrading the software.  
 
--   Upgrade TFS according to the instructions provided in the Installation Guide: [Upgrade Team Foundation Server](/tfs/server/upgrade/get-started).  
+-   Upgrade TFS according to the instructions provided in the Installation Guide: [Upgrade Team Foundation Server](/azure/devops/server/upgrade/get-started).  
   
     > [!IMPORTANT]
     >  Upgrading to Visual Studio Team Foundation Server 2013 requires 64-bit machines. Also, to install Team Foundation Server Extensions for Project Server requires that Project Server is installed on 64-bit machines.  
