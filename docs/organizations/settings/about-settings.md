@@ -262,7 +262,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td><a id="repos" />**Code (Version control)** </td>
+<td><a id="repos" />**Repos, Code, version control** </td>
 <td><ul>
 <li>[Create additional Git repos](../../repos/git/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
