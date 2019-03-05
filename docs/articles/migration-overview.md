@@ -27,12 +27,11 @@ The TFS Database Import Service, also known shorthand as the Import Service, pro
 > It can take up to 2-3 weeks after a new RTW version of TFS is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW TFS release.
 >
 > TfsMigrator for TFS 2018 Update 3 supports TFS 2018 Update 3.1 & Update 3.2 as well. If you run into an issue running TfsMigrator and are on that version, please download the latest TfsMigrator version and try again. 
->
-> Support for TFS 2018 Update 2 will be dropped on March 5th, 2019. All imports from this version will need to be completed before that date or you will need to upgrade your TFS to one of the still supported versions.
+
 
 The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
 
-* TFS 2018 Update 2
+
 * TFS 2018 Update 3, Update 3.1, and Update 3.2
 
 > [!NOTE]
