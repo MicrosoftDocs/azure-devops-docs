@@ -179,7 +179,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
 -   The event log for the application-tier server that participates in the data synchronization maintains a record of all synchronization events and errors.  
 
- Administrators can retrieve the most recent event messages by using the `TfsAdmin ProjectServer /GetSyncMessages` command. For more information, see [View error messages](view-synch-error-messages.md). To gather even more detailed information, you can enable detailed tracing for the Team Foundation Background Job Agent that runs the services. For more information, see [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).  
+ Administrators can retrieve the most recent event messages by using the `TfsAdmin ProjectServer /GetSyncMessages` command. For more information, see [View error messages](view-synch-error-messages.md). To gather even more detailed information, you can enable detailed tracing for the Team Foundation Background Job Agent that runs the services. For more information, see [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).  
   
   
 ## Related articles  

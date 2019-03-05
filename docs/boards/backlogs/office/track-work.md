@@ -102,7 +102,7 @@ To add or modify work items by using Excel or Project, you connect your workshee
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. 
 
-1.  If you don't have Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For TFS 2017 or TFS 2018, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/tfs/server/compatibility)
+1.  If you don't have Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For TFS 2017 or TFS 2018, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/azure/devops/server/compatibility)
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises TFS. 
 
@@ -179,7 +179,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
-- [Requirements and compatibility](/tfs/server/requirements) 
+- [Requirements and compatibility](/azure/devops/server/requirements) 
 
 
 ### Can I open a query in Excel or Project from the web portal?  

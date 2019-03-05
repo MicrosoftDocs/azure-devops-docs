@@ -58,7 +58,7 @@ Add report viewers to the **Browser** role. Add TFS report authors to the **Team
 ##Add report authors to database roles
 If members need to create or customize reports, add their accounts to the **TfsWarehouseDataReader** role. Report authors need read access to both the relational data warehouse and Analysis Services cube. Team members who create Excel reports from work item queries or by connecting to the cube need only read access to the cube. 
 
-1. If you aren't an administrator for the TFS database, [get added as one](/tfs/server/admin/add-administrator-tfs). 
+1. If you aren't an administrator for the TFS database, [get added as one](/azure/devops/server/admin/add-administrator-tfs). 
 
 2. Connect to the **Database Engine** for TFS using **SQL Server Management Studio**.
 

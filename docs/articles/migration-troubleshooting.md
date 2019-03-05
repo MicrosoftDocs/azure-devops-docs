@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the migration import from TFS to Azure DevOps Services | Azure DevOps Services & TFS
+title: Troubleshooting the migration import from TFS to Azure DevOps Services | Azure DevOps
 description: Guidance for fixing common TfsMigrator validation errors. 
 ms.prod: devops
 ms.topic: article
@@ -21,7 +21,7 @@ TfsMigrator could flag errors which need to be corrected prior to performing a m
 for a migration. After correcting each error you will need to run TfsMigrator's validate command again to ensure the error(s) is/are actually gone.
 
 ## Dealing with Size Warnings
-If your collection is particularly large then you might receive one of the below messages after running TfsMigrator. If you receive any of the below warnings or errors, it's always recommended that you try to [reduce your database's size](/tfs/server/upgrade/clean-up-data). 
+If your collection is particularly large then you might receive one of the below messages after running TfsMigrator. If you receive any of the below warnings or errors, it's always recommended that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
 
 ```cmdline
 The database is currently {Database Size}GBs. This is above the recommended size of {DACPAC Size Limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection
@@ -36,16 +36,16 @@ The largest table size is currently {Table size}GBs. This is above the recommend
 Similar to the previous warning, this warning means you will have to use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import. This warning does **NOT** mean that your collection is too big to be imported. 
 
 ```cmdline
-The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data](/tfs/server/upgrade/clean-up-data).
+The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data](/azure/devops/server/upgrade/clean-up-data).
 ```
 
-This warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. The warning does **NOT** mean that your collection is too big for import, rather its metadata size is larger than the vast majority of other databases. It's strongly recommended that you [reduce the size](/tfs/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.
+This warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. The warning does **NOT** mean that your collection is too big for import, rather its metadata size is larger than the vast majority of other databases. It's strongly recommended that you [reduce the size](/azure/devops/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.
 
 ```cmdline
 The database metadata size is currently {Metadata Size}GBs. This is above the maximum supported size of {Metadata Limit}GBs.
 ```
 
-Unlike the previous warnings, this is an error that **WILL** block you from moving forward with your migration to Azure DevOps Services. The volume of metadata in your collection is too large and needs to be [reduced](/tfs/server/upgrade/clean-up-data) below the mentioned limit to proceed with the import.   
+Unlike the previous warnings, this is an error that **WILL** block you from moving forward with your migration to Azure DevOps Services. The volume of metadata in your collection is too large and needs to be [reduced](/azure/devops/server/upgrade/clean-up-data) below the mentioned limit to proceed with the import.   
 
 ## Dealing with Collation Warnings
 Collation in this case refers to the collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the two below **warning** messages.  
@@ -76,7 +76,7 @@ In order to continue your collection's collation will need to be [changed](/sql/
 Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current TFS version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
 
 ### ISVError:100014
-This error indicates that a permission is missing from a system group. System groups are well known groups in TFS and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd) command(s) will need to be run.
+This error indicates that a permission is missing from a system group. System groups are well known groups in TFS and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd) command(s) will need to be run.
 
 #### Project Collection Valid Users Error Message
 

@@ -11,12 +11,12 @@ To set secrets in the web interface, follow these steps:
 - Save the pipeline.
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
-They're available on the agent for tasks and scripts to use.
+Secrets are available on the agent for tasks and scripts to use **(so be careful about who has access to alter your pipeline)**.
 
-> [!NOTE]
-> You should never pass secrets on the command line or echo them as output.
-> We make an effort to mask secrets from appearing in output, but things like different encoding or splitting across lines can fool the detection logic.
-> Also, since the secrets are available on the agent, be careful about who has access to alter your pipeline.
+> [!IMPORTANT]
+> We make an effort to mask secrets from appearing in Azure Pipelines output, but it's not foolproof. **Never echo secrets as output.**
+> Some operating systems log command line arguments. **Never pass secrets on the command line.**
+> Instead, we suggest that you map your secrets into environment variables.
 
 Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
 You can explicitly map them in, though.

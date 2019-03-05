@@ -1,6 +1,6 @@
 ---
 title: Remove users from AD/Azure AD security groups 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Manage changes to an organization when users leave a project or company by removing their user account from AD/Azure AD security groups  
 ms.prod: devops
 ms.technology: devops-security
@@ -17,7 +17,7 @@ ms.date: 02/19/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When a user with access to Azure DevOps or Team Foundation Server (TFS) leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This automatically voids their user account and remove their ability to access or connect to Azure DevOps.
+When a user with access to Azure DevOps leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This automatically voids their user account and remove their ability to access or connect to Azure DevOps.
 
 ::: moniker range="azure-devops"  
 If you manage your Azure DevOps users with Microsoft Service Accounts (MSA), then you'll need to [remove their account](../accounts/delete-organization-users.md). 

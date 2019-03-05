@@ -1,5 +1,5 @@
 ---
-title: Notifications index to content for Azure DevOps Services & TFS
+title: Notifications index to content for Azure DevOps
 description: Index to topics for getting notifications or alerts from Azure DevOps Services or TFS  
 ms.technology: devops-collab
 ms.prod: devops

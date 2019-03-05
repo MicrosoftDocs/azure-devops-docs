@@ -9,5 +9,5 @@ ms.topic: include
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/tfs/server/admin/add-administrator-tfs).
+* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs).
 ::: moniker-end  	

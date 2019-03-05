@@ -54,7 +54,7 @@ Use this article to learn how to:
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 ::: moniker-end  
 
-To learn more about compatibility requirements, see [Compatibility with Azure DevOps Services and TFS versions](/tfs/server/compatibility). 
+To learn more about compatibility requirements, see [Compatibility with Azure DevOps Services and TFS versions](/azure/devops/server/compatibility). 
 
 ## Add tasks and publish work items
 
@@ -307,7 +307,7 @@ You can manage your project plan using Project and all the features that Project
 
 - [Bulk modify work items using Excel](bulk-add-modify-work-items-excel.md)
 - [Create your backlog](../create-your-backlog.md)
-- [Azure DevOps Service and TFS compatibility](/tfs/server/requirements) 
+- [Azure DevOps Service and TFS compatibility](/azure/devops/server/requirements) 
 
 If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
 

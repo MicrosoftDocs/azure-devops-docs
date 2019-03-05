@@ -31,7 +31,7 @@ for details of compatible versions. If you haven't set up TFS yet,
 You can use the same SQL Server instance for TFS and the 
 Release Management server (as we will in this guide) or you can use a 
 different SQL Server instance (or even 
-**[install a new instance](/tfs/server/install/sql-server/install-sql-server)**).
+**[install a new instance](/azure/devops/server/install/sql-server/install-sql-server)**).
 Next, install Release Management Client. After the client and the server are set up, 
 you'll set up the machines to deploy your app for your releases. You can 
 install deployment agents on each machine. Or, you can use Windows PowerShell, 

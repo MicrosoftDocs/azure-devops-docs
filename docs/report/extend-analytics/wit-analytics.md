@@ -54,7 +54,7 @@ All additional URL parts are specified as an additional part of the query string
 
 ## Construct a basic query 
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
 
 ### Query a single entity set
 To query a single entity set, such as Work Items or Areas or Projects, simply add the name of the entity: `/Areas`, `/Projects`,  or `/WorkItems`. For full list of entity sets, see [Data model for the Analytics service](data-model-analytics-service.md).

@@ -9,20 +9,32 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 12/04/2018
+monikerRange: '>= azure-devops-2019'
+ms.date: 03/05/2019
 ---
 
 # Troubleshoot GitHub & Azure Boards integration 
 
-[!INCLUDE[temp](../_shared/version-vsts-only.md)]
+[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
 
+::: moniker range="azure-devops"
 When you create a GitHub connection, you are granted access to GitHub as an OAuth app or by using a Personal Access Token (PAT).
 
-The access by Azure Boards to the GitHub repo can be revoked in one or more ways. If the user who created the connection PAT is revoked or the permission scope changes, then the Azure Boards access is revoked. Or the OAuth app€™s authorization can be revoked entirely for a given repo.
+The access by Azure Boards to the GitHub repo can be revoked in one or more ways. If the user who created the connection PAT is revoked or the permission scope changes, then the Azure Boards access is revoked. Or the OAuth app's authorization can be revoked entirely for a given repo.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+When you create a GitHub connection, you are granted access to your GitHub Enterprise server as an OAuth app,  by Personal Access Token (PAT), or account credentials.
+
+The access by Azure Boards to the GitHub repositories can be revoked in several ways. If the user who created the connection PAT is revoked or the permission scope changes, then the Azure Boards access is revoked. Or, the OAuth app's authorization can be revoked entirely for the GitHub Enterprise server.
+
+::: moniker-end
+
 
 [!INCLUDE[temp](../_shared/github-platform-support.md)]
 
+::: moniker range="azure-devops"
 <a id="integrate-repo-to-several-organizations" />
 ## Unexpected results when linking to projects defined in two or more Azure DevOps organizations
 
@@ -31,6 +43,8 @@ If you connect your GitHub repository to two or more projects that are defined i
 In general, a user intends an **AB#** mention to link to a single work item in one of the projects. However, if a work item of the same ID exists in both accounts, then links are created for both work items, likely causing confusion.
 
 Currently, there is no way to work around this issue, so we recommend that you connect a single GitHub repository only to a single Azure DevOps organization.  
+
+::: moniker-end
 
 ## Resolve connection issues
 
@@ -55,7 +69,7 @@ To resolve the problem, consider the following:
 <a id="update-wits" />
 ## Update XML definitions for select work item types 
 
-If your organization uses the Hosted XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you'll need to update the XML definitions for the work item types. 
+If your organization uses the Hosted XML or On-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you'll need to update the XML definitions for the work item types. 
 
 For example, if you want to link user stories and bugs to GitHub commits and pull requests from the Development section, then you need to update the XML definitions for user stories and bugs. 
 

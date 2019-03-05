@@ -1,7 +1,7 @@
 ---
 title: Work across projects 
-titleSuffix: Azure DevOps Services & TFS 
-description: Quickly link to work items, pull requests, team projects, and more using your account home page in Azure DevOps Services & Team Foundation Server 
+titleSuffix: Azure DevOps
+description: Quickly link to work items, pull requests, team projects, and more using your account home page in Azure DevOps
 ms.custom: Navigation
 ms.technology: devops-new-user
 ms.prod: devops

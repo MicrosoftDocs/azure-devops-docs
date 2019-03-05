@@ -1,6 +1,6 @@
 ## Open the Wiki  
 
-Connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers) and choose **Wiki**.
+Connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers) and choose **Wiki**.
 
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](/azure/devops/project/wiki/_img/wiki/open-wiki-vert-brn.png)

@@ -32,7 +32,7 @@ test early, and ship faster.
 > To set up Visual Studio without Azure DevOps, 
 > learn how to [get started](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
 > To host your own server, 
-> learn how to [install and set up Team Foundation Server](/tfs/server/install/get-started).
+> learn how to [install and set up Azure DevOps Server](/azure/devops/server/install/get-started).
 
 Azure DevOps is free for [up to five users with access to Basic features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) and for unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) and [Stakeholders who can access limited features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs).
 Learn [what else you get with Azure DevOps](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 

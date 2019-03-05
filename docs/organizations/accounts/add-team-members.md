@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 034/05/2019
 monikerRange: 'azure-devops'
 ---
 # Add members to projects
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Add members to your project in Azure DevOps, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Team Foundation Server (TFS), see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
+Add members to your project in Azure DevOps, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Azure DevOps Server, see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
 
 When you add members to projects, one of the following permissions is automatically assigned:
 

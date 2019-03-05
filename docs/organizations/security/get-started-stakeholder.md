@@ -1,6 +1,6 @@
 ---
 title: Get started with Stakeholder access 
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps 
 description: Add & update work items, approve releases, view work tracking progress with Stakeholder access
 ms.technology: devops-new-user
 ms.prod: devops
