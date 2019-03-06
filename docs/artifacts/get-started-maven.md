@@ -26,6 +26,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 ### Prerequisites
 
 1. Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
+
 1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
 
 ## Create a feed

@@ -10,7 +10,7 @@ ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
 ms.date: 10/12/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '>= tfs-2017'
 ---
 
 # Repository settings
@@ -36,11 +36,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 ## View and edit repository settings
 
-::: moniker range="azure-devops"
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
@@ -50,7 +46,9 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
   ![The options UI](_img/repository-settings/repository-settings.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
@@ -59,8 +57,6 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 1. Select **options** to view and configure your repository settings.
 
   ![The options UI](_img/repository-settings/repository-settings.png)
-
----
 
 ::: moniker-end
 
@@ -75,7 +71,6 @@ You may also want to learn about client-side [Git preferences](git-config.md).
   ![The options UI](_img/repository-settings/repository-settings-tfs2018.2.png)
 
 ::: moniker-end
-
 
 ## Forking
 

@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/07/2017
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2018'
 ---
 
 <!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
@@ -101,13 +101,17 @@ with the number of commands in the window given by the Count column, and the tot
 
 For members of the project collection administrators group, this same page can be used to investigate the usage of other users.
 
-   # [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
    <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
 
-   # [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
    <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
 
-   ---
+::: moniker-end
 
 By default, visiting the Usage page will display requests for the last hour. Clicking the link from the email will open the Usage page scoped to the request history from 
 30 minutes before and after the first delayed request. By default, the Usage page will default to showing the past hour. After arriving on the page, review the 

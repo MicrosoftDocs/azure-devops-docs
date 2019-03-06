@@ -9,9 +9,8 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 02/16/2018
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2018'
 ---
-
 
 # Share your NuGet, npm, and Maven packages from Azure DevOps Services with badges
 
@@ -30,21 +29,33 @@ To start sharing your Azure DevOps Services-hosted packages with badges you'll f
 
 1. Go to your Feed settings page by clicking on the gear icon from your feed page: 
 
-    # [New navigation](#tab/new-nav)
-    ![Edit an Azure DevOps Services feed in Azure Artifacts](_shared/_img/edit-feed-full-newnav.png)
+   ::: moniker range=">= azure-devops-2019"
 
-    # [Previous navigation](#tab/previous-nav)
-    ![Edit an Azure DevOps Services feed in Package](_shared/_img/edit-feed-full.png)
+   ![Edit an Azure DevOps Services feed in Azure Artifacts](_shared/_img/edit-feed-full-newnav.png)
+
+   ::: moniker-end
+
+   ::: moniker range="<= tfs-2018"
+
+   ![Edit an Azure DevOps Services feed in Package](_shared/_img/edit-feed-full.png)
+
+   ::: moniker-end
 
 2. Find the **Package sharing** section and select *Enable package badges*.
 
 This will enable the **Create badge** button for every package in that feed.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
 ![Create badge for NuGet, npm, or Maven packages in Azure DevOps Services](_img/pm-create-badge-newnav.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 ![Create badge for NuGet, npm, or Maven packages in Azure DevOps Services](_img/pm-create-badge.png)
+
+::: moniker-end
 
 ## Create badge
 
