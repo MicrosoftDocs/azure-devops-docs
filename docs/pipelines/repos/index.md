@@ -9,13 +9,13 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 12/06/2018
+ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Build source repositories
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -53,14 +53,14 @@ If your pipeline consists of multiple jobs, the agent downloads source files at 
 
 You can choose from the following repository types:
 
-| Repository type | Azure Pipelines (YAML) | Azure Pipelines (visual designer) | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
+| Repository type | Azure Pipelines (YAML) | Azure Pipelines (visual designer) | Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |-|-|-|-|-|
 | Azure Repos Git           |Yes|Yes|Yes|Yes|
 | Azure Repos TFVC          |No|Yes|Yes|Yes|
 | Bitbucket Cloud           |No|Yes|No|No|
 | External Git (generic)    |No|Yes|Yes|Yes|
 | GitHub                    |Yes|Yes|No|No|
-| GitHub Enterprise Server  |Yes|Yes|TFS 2018.2 or 2018.3|No|
+| GitHub Enterprise Server  |Yes|Yes|TFS 2018.2 and higher|No|
 | Subversion                |No|Yes|Yes|No|
 
 ## Specific repository details
