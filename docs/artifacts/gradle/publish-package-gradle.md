@@ -44,7 +44,7 @@ You're ready to start! This tutorial will guide you through the process of publi
 
 First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
@@ -58,7 +58,9 @@ Give your token a name, duration, and select the **Packaging (read and write)** 
 
 Click **Create**.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
@@ -72,7 +74,8 @@ Select the **Packaging (read and write)** scope.
 
 ![Select a token scope](_img/select-scope.png)
 
----
+::: moniker-end
+
 The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
 
 Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 

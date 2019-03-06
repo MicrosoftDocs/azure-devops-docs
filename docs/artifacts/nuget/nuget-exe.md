@@ -9,7 +9,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2017
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2018'
 ---
 
 # Use NuGet with Azure DevOps Services feeds
@@ -28,27 +28,35 @@ NuGet 3 and later supports the Credential Provider, which automatically acquires
 
 1. Select **Connect to feed**:
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
-    > 
+   ::: moniker range=">= azure-devops-2019"
+    
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+   > 
 
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+   ::: moniker-end
 
-   ---
+   ::: moniker range="<= tfs-2018"
+
+   ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+
+   ::: moniker-end
 
 1. Follow steps 1, 2, and 3 to get the tools, add the feed to your local NuGet configuration, and push the package.
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![NuGet publish instructions in the Connect to feed dialog](../_shared/_img/nugeturl-azure-devops-newnav.png)
-    > 
+   ::: moniker range=">= azure-devops-2019"
 
-    # [Previous navigation](#tab/previous-nav)
-    ![NuGet publish instructions in the Connect to feed dialog](../_shared/_img/nugeturl.png)
+   > [!div class="mx-imgBorder"] 
+   >![NuGet publish instructions in the Connect to feed dialog](../_shared/_img/nugeturl-azure-devops-newnav.png)
+   > 
 
-   ---
+   ::: moniker-end
+
+   ::: moniker range="<= tfs-2018"
+
+   ![NuGet publish instructions in the Connect to feed dialog](../_shared/_img/nugeturl.png)
+
+   ::: moniker-end
 
 Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
 
@@ -61,27 +69,35 @@ To use a 2.x client, first get the v3 feed URL:
 
 1. Select **Connect to feed**:
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
-    > 
+   ::: moniker range=">= azure-devops-2019"
 
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+   > 
 
-   ---
+   ::: moniker-end
+
+   ::: moniker range="<= tfs-2018"
+
+   ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+
+   ::: moniker-end
    
 1. Copy the NuGet package source URL:
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url-azure-devops-newnav.png)
-    > 
+   ::: moniker range=">= azure-devops-2019"
 
-    # [Previous navigation](#tab/previous-nav)
-    ![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url.png)
+   > [!div class="mx-imgBorder"] 
+   >![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url-azure-devops-newnav.png)
+   > 
 
-   ---
+   ::: moniker-end
+
+   ::: moniker range="<= tfs-2018"
+
+   ![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url.png)
+
+   ::: moniker-end
 
 Then, at the end of the URL, replace `/v3/index.json` with `/v2`. 
 
@@ -106,11 +122,11 @@ By default, the credential provider works alongside NuGet.exe.
 For advanced scenarios, you can choose where to install the provider:
 
   - **Projects with a developer command prompt or enlistment:** Use the provider from an 
-  [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable) by copying `CredentialProvider.Vss.exe` to any folder, then run this command in PowerShell: `$env:NUGET_CREDENTIALPROVIDERS_PATH = {your folder}`
+    [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable) by copying `CredentialProvider.Vss.exe` to any folder, then run this command in PowerShell: `$env:NUGET_CREDENTIALPROVIDERS_PATH = {your folder}`
   - **Projects using a non-Azure DevOps Services CI server:** Use the provider from an 
-  [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable)
+    [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable)
   - **Work on an individual machine:** Install the provider 
-  [globally](http://docs.nuget.org/Consume/Credential-Providers#installing-a-credential-provider-globally) by copying `CredentialProvider.Vss.exe` to `$env:LOCALAPPDATA\NuGet\CredentialProviders`
+    [globally](http://docs.nuget.org/Consume/Credential-Providers#installing-a-credential-provider-globally) by copying `CredentialProvider.Vss.exe` to `$env:LOCALAPPDATA\NuGet\CredentialProviders`
 
 ### Bootstrap into your workflow
 

@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2017'
 
 Azure Artifacts keeps all of your artifacts safe for as long as you need them, whether you published them directly or saved them from upstream sources. But, as older artifacts fall out of use, you may want to clean them up or let Azure Artifacts clean them up automatically. In this article, you’ll learn how to:
 
-0. Delete packages from feeds in Azure Artifacts
-0. Set up retention policies to automatically delete older, unwanted packages from feeds
-0. Recover recently deleted packages from the recycle bin
+1. Delete packages from feeds in Azure Artifacts
+1. Set up retention policies to automatically delete older, unwanted packages from feeds
+1. Recover recently deleted packages from the recycle bin
 
 ## Delete packages from Azure Artifacts feeds
 
@@ -48,17 +48,19 @@ Deprecate and unpublish both respect [feed immutability](../feeds/immutability.m
 
 You must be a **contributor** to deprecate and an **owner** to unpublish.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
 Choose the package from **Azure Artifacts** select the appropriate option from the menu:
 
 ![Unpublish npm package Azure DevOps Services](../_img/delete/deprecate-unpublish-npm-package-newnav.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 ![Unpublish npm package Azure DevOps Services](../_img/delete/deprecate-unpublish-npm-package.png)
-
----
 
 ::: moniker-end
 
@@ -99,17 +101,19 @@ You cannot upload a newer revision package with that same version number, or del
 
 You must be a **contributor** to unlist and an **owner** to delete.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
 Choose the package from **Azure Artifacts** and select the appropriate option from the menu:
 
 ![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package-newnav.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 ![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package.png)
-
----
 
 ::: moniker-end
 
@@ -128,15 +132,19 @@ Choose the package from the **Packages** page in the **Build and Release** page 
 ### Unlisting a NuGet package using NuGet.exe
 1. Get your feed URL by navigating to your feed and selecting **Connect to feed**:
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
-    > 
+   ::: moniker range=">= azure-devops-2019"
 
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+   > 
 
-   ---
+   ::: moniker-end
+
+   ::: moniker range="<= tfs-2018"
+
+   ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+
+   ::: moniker-end
 
 2. Copy the _Package Source URL_ from the **Connect to feed** window.
 
@@ -176,7 +184,8 @@ If you'd like to retain a package version indefinitely, you can promote it to a 
 
 To configure retention policies:
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
 1. Navigate to Azure Artifacts:
 
     ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
@@ -191,7 +200,10 @@ To configure retention policies:
 
 3. Click **Save**.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 1. Navigate to your feed from the **Packages** page in the **Build and Release** page group and select the gear icon: 
 
     ![Edit an Azure DevOps Services feed in Package](../_shared/_img/edit-feed-full.png)
@@ -202,14 +214,13 @@ To configure retention policies:
 
 3. Click **Save**.
 
----
-
+::: moniker-end
 
 ## Recover a deleted package from the recycle bin
 
 If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure Artifacts, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](../artifacts-key-concepts.md#immutability).  In order to recover the package and have builds start working again, you can recover it from the Recycle Bin.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. Navigate to Azure Artifacts:
 
@@ -223,7 +234,10 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
 
 4. Select a version to *Restore to feed*.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 1. Find the Recycle Bin in the **Packages** page underneath the **Build and Release** page group in Azure DevOps Services: 
 
     ![Azure DevOps Services Recycle Bin](../_img/recycle-bin/find-recycle-bin.png)
@@ -238,4 +252,4 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
 
     ![Restore an Azure DevOps Services package with Recycle Bin](../_img/recycle-bin/recycle-bin-restore.png)
 
----
+::: moniker-end

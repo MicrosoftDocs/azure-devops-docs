@@ -9,13 +9,13 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 02/21/2019
+ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Build pipeline triggers
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -31,6 +31,16 @@ On the Triggers tab, you specify the events that trigger the build. You can use 
 ::: moniker range="azure-devops"
 
 YAML builds are configured by default with a CI trigger on all branches and all tags.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+YAML builds are configured by default with a CI trigger on all branches.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 ### Branches
 
@@ -58,7 +68,19 @@ trigger:
     - releases/old*
 ```
 
+In addition to specifying branch names in the `branches` lists, you can also configure triggers based on tags by using the following format:
+
+```yaml
+trigger:
+  branches:
+    include:
+      refs/tags/{tagname}
+    exclude:
+      refs/tags/{othertagname}
+```
+
 If you don't specify any branch triggers, the default is as if you wrote:
+
 ```yaml
 trigger:
   branches:
@@ -66,21 +88,13 @@ trigger:
     - *
 ```
 
-If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
-If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
+::: moniker-end
 
-```yaml
-# specific branch build with batching
-trigger:
-  batch: true
-  branches:
-    include:
-    - master
-```
+::: moniker range="azure-devops"
 
 ### Tags
 
-Similarly, you can specify tags to include or exclude.
+In addition to specifying tags in the `branches` lists as covered in the previous section, you can directly specify tags to include or exclude:
 
 ```yaml
 # specific branch build
@@ -98,6 +112,24 @@ trigger:
   tags:
     include:
     - *
+```
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+### Batching CI builds
+
+If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
+If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
+
+```yaml
+# specific branch build with batching
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
 ```
 
 ### Paths
@@ -134,7 +166,7 @@ For more information, see [Trigger](../yaml-schema.md#trigger) in the [YAML sche
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -196,7 +228,7 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]
 > New pipelines automatically override YAML PR triggers with a setting in the UI.
@@ -244,6 +276,10 @@ pr:
     - docs/README.md
 ```
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 You can specify whether additional pushes to a PR should cancel in-progress runs for the same PR. The default is `true`.
 
 ```yaml
@@ -262,6 +298,10 @@ You can opt out of pull request builds entirely by specifying `pr: none`.
 pr: none
 ```
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
 >[!IMPORTANT]
 >When you create a pull request, or push a change to the source branch of a PR, the YAML file in the source branch is evaluated to determine if a PR build should be run.
 
@@ -269,7 +309,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -298,22 +338,26 @@ Pull request triggers are not available for External Git repos.
 
 ---
 
+::: moniker range="azure-devops"
+
 ### Trigger builds using GitHub pull request comments
 
 If your team uses GitHub pull requests, you can manually trigger pipelines using pull request comments. See details [here](../repos/github.md#trigger-builds-using-github-pull-request-comments).
+
+::: moniker-end
 
 ## Scheduled
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 Scheduled builds are not yet supported in YAML syntax.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
@@ -394,7 +438,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 <a name="BuildCompletion"></a>
 ## Build completion triggers
@@ -466,7 +510,7 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 ### The YAML file in my branch is different than the YAML file in my master branch, which one is used?
 

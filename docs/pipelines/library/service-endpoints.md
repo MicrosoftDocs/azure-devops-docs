@@ -46,14 +46,19 @@ Service connections are created at project scope. A service connection created i
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
-2. Choose **+ New service connection** and select the type of service connection you need.
+1. Choose **+ New service connection** and select the type of service connection you need.
 
-3. Fill in the parameters for the service connection. The list of parameters differs for each  type of service connection - see the [following list](#ep-types).
+1. Fill in the parameters for the service connection. The list of parameters differs for each  type of service connection - see the [following list](#ep-types).
    For example, this is the default **Azure Resource Manager** connection dialog:
 
    ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
 
-4. Choose **OK** to create the connection.
+1. Decide if you want the service connection to be accessible for any pipeline by
+   setting the **Allow all pipelines to use this connection** option. This option allows pipelines
+   defined in YAML, which are not automatically authorized for service connections,
+   to use this service connection. See [Use a service connection](#use-connection).
+
+1. Choose **OK** to create the connection.
 
 > For more information about Azure Resource Manager service connections, see [Create an Azure service connection](connect-to-azure.md).
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
@@ -90,6 +95,8 @@ To modify the security for a connection:
 
 > For more information about securing an Azure Resource Manager service connection, see [Create an Azure service connection](connect-to-azure.md).
 
+<a name="use-connection"></a>
+
 ## Use a service connection
 
 After the new service connection is created:
@@ -101,6 +108,19 @@ After the new service connection is created:
 * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
 
   ![If you are using it in YAML](_img/yaml-connection-setting.png)
+
+  Next you must authorize the service connection.
+  To do this, or if you encounter a resource authorization error in your build,
+  use one of the following techniques:
+
+  - If you want to authorize any pipeline to use the service connection,
+    go to Azure Pipelines, open the Settings page, select Service connections,
+    and enable the setting **Allow all pipelines to use this connection** option for the connection.
+
+  - If you want to authorize a service connection for a specific pipeline, open the pipeline
+    by selecting **Edit** and queue a build manually. You will see a resource authorization error
+    and a "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an
+    authorized user of the service connection.
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 

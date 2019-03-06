@@ -9,13 +9,13 @@ ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
 ms.custom: seodec18
-ms.date: 03/04/2019
-monikerRange: 'azure-devops'
+ms.date: 03/06/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Build GitHub repositories
 
-#### Azure Pipelines
+[!INCLUDE [version-team-services](../_shared/version-server-2019-rtm.md)]
 
 Azure Pipelines can automatically build and validate every pull request and commit to your GitHub repository.
 
@@ -249,6 +249,8 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
 2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
 
+::: moniker range="azure-devops"
+
 ## Trigger builds using GitHub pull request comments
 
 Repository collaborators can comment on a pull request to manually run a pipeline. You might use this to run an optional test suite or validation build. The following commands can be issued to Azure Pipelines in comments:
@@ -305,6 +307,8 @@ trigger:
     - master
 pr: none
 ```
+
+::: moniker-end
 
 ## Validate contributions from forks
 
