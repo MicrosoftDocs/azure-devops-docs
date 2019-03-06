@@ -182,6 +182,41 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 ```
 
+### Run tests with Tox
+
+When running tests with Tox, you can run parallel jobs to split up the work.
+This is somewhat different from how you would run Tox on your development machine, where you would run all of your test environments in series.
+In the sample below, note the use of `tox -e py` to run whichever version of Python is active for the current job.
+
+```yaml
+- job:
+
+  pool:
+    vmImage: 'ubuntu-16.04'
+  strategy:
+    matrix:
+      Python27:
+        python.version: '2.7'
+      Python35:
+        python.version: '3.5'
+      Python36:
+        python.version: '3.6'
+      Python37:
+        python.version: '3.7'
+
+  steps:
+  - task: UsePythonVersion@0
+    displayName: 'Use Python $(python.version)'
+    inputs:
+      versionSpec: '$(python.version)'
+
+  - script: pip install tox
+    displayName: 'Install Tox'
+
+  - script: tox -e py
+    displayName: 'Run Tox'
+```
+
 ## Package and deliver your code
 
 ### Authenticate with twine
