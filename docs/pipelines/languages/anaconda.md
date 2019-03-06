@@ -1,6 +1,6 @@
 ---
 title: Run pipelines with Anaconda environments
-description: Run pipelines with Anaconda environments in Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Set up and use Anaconda environments with Azure Pipelines, Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -10,7 +10,7 @@ ms.author: brcrista
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 02/06/2019
-monikerRange: '> tfs-2018'
+monikerRange: 'azure-devops'
 ---
 
 # Run pipelines with Anaconda environments

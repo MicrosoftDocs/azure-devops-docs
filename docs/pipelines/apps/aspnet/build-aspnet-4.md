@@ -1,6 +1,6 @@
 ---
 title: Build ASP.NET apps
-description: Build ASP.NET apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically build ASP.NET apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -13,7 +13,7 @@ ms.date: 01/24/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Build ASP.NET apps in Azure Pipelines
+# Build ASP.NET apps
 
 [!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
