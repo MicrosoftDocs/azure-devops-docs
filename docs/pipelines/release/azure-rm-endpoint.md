@@ -22,8 +22,8 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 This topic will help you resolve issues you may encounter when creating
-a connection to Microsoft Azure using an **Azure Resource Manager** service connection
-for your DevOps CI/CD processes.
+a connection to Microsoft Azure using an **Azure Resource Manager** 
+[service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 ## What happens when you create a Resource Manager service connection?

@@ -54,6 +54,8 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
    [How can I find an existing test case within a test plan?](create-a-test-plan.md#findplan)
    
+   [How do I add multiple test cases at the same time?](reference-qa.md#add-multiple-test-cases)
+
 > Test iterations are designed to support data-driven scenarios, not workflow-driven scenarios.
   From a best practice perspective, if you have two test scenarios where the workflows are
   different, consider creating separate test cases. Also see the [FAQs for manual testing](reference-qa.md#testcases).

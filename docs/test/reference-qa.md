@@ -117,6 +117,8 @@ results field to add an extra line.
 **A:** Select a test step. Press Alt+P to insert a new test step 
 above the selected step.
 
+<a name="add-multiple-test-cases"></a>
+
 ### Q: Is there a way to quickly add multiple test cases at the same time?
 
 **A:** Yes, use the grid view when you add test cases to 
