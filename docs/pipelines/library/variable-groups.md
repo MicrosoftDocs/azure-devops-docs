@@ -80,7 +80,7 @@ use one of the following techniques:
 
 * If you want to authorize any pipeline to use the variable group,
   which may be a suitable option if you do not have any secrets in the group,
-  go the **Pipelines** hub, open the **Library** page, choose **Variable groups**, select the variable group in question,
+  go to Azure Pipelines, open the **Library** page, choose **Variable groups**, select the variable group in question,
   and enable the setting **Allow access to all pipelines**.
 
 * If you want to authorize a variable group for a specific pipeline, open the pipeline
