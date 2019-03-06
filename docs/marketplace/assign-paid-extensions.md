@@ -29,9 +29,7 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
 ## Azure DevOps Services
 
-[!INCLUDE [temp](../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
@@ -47,50 +45,49 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
    ![Check that users have required access to extension assignment](_img/user-access-level.png)
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+   To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
-5.	To assign the extension, right click or choose the ellipses (...) for the user you want to assign access to. Select **Manage extensions**.
+5. To assign the extension, right click or choose the ellipses (...) for the user you want to assign access to. Select **Manage extensions**.
 
-    ![Manage extensions](_img/manage-extensions.png)
+   ![Manage extensions](_img/manage-extensions.png)
 
 6. Assign the extension and **Save changes**.
 
-    ![Assign extension](_img/assign-extension.png)
+   ![Assign extension](_img/assign-extension.png)
 
-	You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions. Ensure that any users you add in excess of what you've paid for, already have a license.
+   You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions. Ensure that any users you add in excess of what you've paid for, already have a license.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
 
-1.	Sign in to your Azure DevOps Services organization: ```https://dev.azure.com/{organization}```.
+::: moniker range="<= tfs-2018"
 
-2.	Go to **Users**.
+1. Sign in to your Azure DevOps Services organization: ```https://dev.azure.com/{organization}```.
 
-	<img alt="Go to Users" src="../_shared/_img/users-hub-updated-ui.png" style="border: 1px solid #CCCCCC" />
+2. Go to **Users**.
 
-3.	Most extensions require that users have at least Basic access, not Stakeholder. Check your users' access levels here:
+   <img alt="Go to Users" src="../_shared/_img/users-hub-updated-ui.png" style="border: 1px solid #CCCCCC" />
 
-	![Check that users have required access to extension assignment](_img/user-access-level.png)
+3. Most extensions require that users have at least Basic access, not Stakeholder. Check your users' access levels here:
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+   ![Check that users have required access to extension assignment](_img/user-access-level.png)
 
-4.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to.
+   To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
-	![Manage extensions](_img/assign-extensions/manage-extensions.png)
+4. To assign the extension, right click or click the ellipses (...) for the user you want to assign access to.
 
-5.	Assign the extension and **Save changes**.
+   ![Manage extensions](_img/assign-extensions/manage-extensions.png)
 
-    ![Assign extensions](_img/assign-extensions/assign-extension.png)
+5. Assign the extension and **Save changes**.
 
-	You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
+   ![Assign extensions](_img/assign-extensions/assign-extension.png)
+
+   You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
 
 Tell your team about this extension, so they can start using its capabilities.
-
----
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 < azure-devops"
-
 
 ## TFS
 

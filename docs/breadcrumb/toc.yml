@@ -1,4 +1,4 @@
-- name: Azure DevOps & TFS
+- name: Azure DevOps
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
@@ -162,13 +162,13 @@
       topicHref: /azure/devops/boards/get-started/index-agile
     - name: GitHub with Azure Boards
       topicHref: /azure/devops/boards/github/index
-- name: Team Foundation Server
+- name: Azure DevOps Server
   tocHref: /azure/devops/
-  topicHref: /tfs/index
+  topicHref: /azure/devops/server/index
   items:
-  - name: TFS administation
+  - name: Administation
     tocHref: /azure/devops/server/
-    topicHref: /tfs/index
+    topicHref: /azure/devops/server/index
   - name: Project Server integration
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index

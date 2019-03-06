@@ -4,7 +4,7 @@
   items: 
   - name: Admin
     tocHref: /azure/devops/
-    topicHref: /tfs/index
+    topicHref: /azure/devops/server/index
     items:
     - name: SharePoint Integration
       tocHref: /azure/devops/report/sharepoint-dashboards/

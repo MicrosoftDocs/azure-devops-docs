@@ -1,6 +1,6 @@
 - name: Team Foundation Server
   tocHref: /tfs/
-  topicHref: /tfs/index
+  topicHref: /azure/devops/server/index
   items: 
   - name: Project Server Integration
     tocHref: /azure/devops/tfs-ps-sync/

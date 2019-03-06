@@ -1,6 +1,6 @@
 ---
 title: Build, test, and deploy Xcode apps
-description: Build Xcode projects in Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically build Xcode projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -14,11 +14,11 @@ ms.date: 02/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Build, test, and deploy Xcode apps in Azure Pipelines
+# Build, test, and deploy Xcode apps
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build Xcode projects with CI/CD pipelines.
+This guidance explains how to automatically build Xcode projects.
 
 ## Example
 

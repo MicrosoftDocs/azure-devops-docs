@@ -27,43 +27,48 @@ In this tutorial, you will:
 
 ## Create a feed with upstream sources enabled
 
-::: moniker range="azure-devops"
-
 1. Navigate to **Azure Artifacts**:
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
-    > 
+::: moniker range=">= azure-devops-2019"
+    
+   > [!div class="mx-imgBorder"] 
+   >![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
 
-    # [Previous navigation](#tab/previous-nav)
-    ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
+::: moniker-end
 
-    ---  
+::: moniker range="<= tfs-2018"
+    
+   ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
+
+::: moniker-end
 
 1. Select **+ New feed**:
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![New feed button](../_shared/_img/new-feed-button-azure-devops-newnav.png)
-    > 
+::: moniker range=">= azure-devops-2019"
+    
+   > [!div class="mx-imgBorder"] 
+   >![New feed button](../_shared/_img/new-feed-button-azure-devops-newnav.png)
 
-    # [Previous navigation](#tab/previous-nav)
-    ![New feed button](../_shared/_img/new-feed-button.png)
+::: moniker-end
 
-    ---   
+::: moniker range="<= tfs-2018"
+    
+   ![New feed button](../_shared/_img/new-feed-button.png)
+
+::: moniker-end
 
 1. In the dialog, provide a feed name and click _Create_. 
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![New feed dialog](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
-    > 
+::: moniker range=">= azure-devops-2019"
+    
+   > [!div class="mx-imgBorder"] 
+   >![New feed dialog](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
 
-    # [Previous navigation](#tab/previous-nav)
-    ![New feed dialog](../_shared/_img/new-feed-dialog.png)
+::: moniker-end
 
-    ---
+::: moniker range="<= tfs-2018"
+    
+   ![New feed dialog](../_shared/_img/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -71,19 +76,20 @@ In this tutorial, you will:
 
 1. Navigate to the **Packages** page:
 
-    ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
+   ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
 
 1. Select **+ New feed**:
 
-    ![New feed button](../_shared/_img/new-feed-button.png)
+   ![New feed button](../_shared/_img/new-feed-button.png)
 
 1. In the dialog:
+
    - Give the feed a name.
    - Choose who can read and contribute (or update) packages in your feed.
    - Select _Use packages from public sources through this feed_
    - When you're done, choose **Create**.
 
-    ![New feed dialog](../_shared/_img/new-feed-dialog.png)
+   ![New feed dialog](../_shared/_img/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -98,35 +104,21 @@ The next step is to update your configuration file to point to the new Azure Art
 
 # [npm](#tab/npm)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. From your **Packages** page, click _Connect to Feed_
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
-    > 
-
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed.png)
-
-    ---
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
 
 2. Copy the "registry" text:
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
-    > 
-
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry.png)
-
-    ---
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range="< azure-devops-2019"
 
 1. From your **Packages** page, click _Connect to Feed_
 
@@ -147,30 +139,32 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 Now that we have the feed URL, we can add our feed as a package source by following these steps:
 
 1. Create a new file named `nuget.config` in the root of your project.
+
 2. Copy and paste the template below into your new `nuget.config` file:
 
-    ```xml
-        <?xml version="1.0" encoding="utf-8"?>
-        <configuration>
-        </configuration>
-    ```
+   ```xml
+       <?xml version="1.0" encoding="utf-8"?>
+       <configuration>
+       </configuration>
+   ```
 
 3. Run the following command with your feed name and feed URL:
-    ```
-    nuget sources add -Name "<feed_name>" -Source <feed_url> -configfile nuget.config
-    ```
+
+   ```
+   nuget sources add -Name "<feed_name>" -Source <feed_url> -configfile nuget.config
+   ```
 
 Now, we recommend a few steps to ensure that we use our feed instead of the public registry. To do so:
 
 1. Add a `<clear />` tag to the `<packageSources>` section your `nuget.config` file, which was created in the previous step. For example:
 
-    ```xml
-    ...
-    <packageSources>
-    <clear />
-    ...
-    </packageSources>
-    ```
+   ```xml
+   ...
+   <packageSources>
+   <clear />
+   ...
+   </packageSources>
+   ```
 
 ---
 
