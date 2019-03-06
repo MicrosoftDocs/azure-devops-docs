@@ -64,7 +64,7 @@ Control branch permission settings from the branch permission view. Users and gr
 > Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
 > in the upper left corner of the window.
 >
-> ![Documentation version selector](../../_img/documentation-version-selector.png)
+> ![Content version selector](../../_shared/_img/version-selector.png)
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
