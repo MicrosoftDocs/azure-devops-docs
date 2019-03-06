@@ -10,7 +10,7 @@ ms.author: sdanie
 author: steved0x
 ms.date: 09/10/2018
 ms.topic: quickstart
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2018'
 ---
 
 # Code with Git
@@ -71,9 +71,7 @@ After the repository is cloned, we'll show you how to add your existing code to 
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. From your web browser, open the team project for your organization and select **Repos** > **Files**. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
@@ -99,7 +97,9 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   Keep this command window open, because you'll use it in the following steps.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open the team project for your organization and select the **Code** page. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
@@ -123,7 +123,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   Keep this command window open, because you'll use it in the following steps.
 
----
+::: moniker-end
 
 ## Work in a branch
 
@@ -197,7 +197,7 @@ Pull requests combine the review and merge of your code into a single collaborat
 
 This example shows the basic steps of creating and completing a pull request.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. From your web browser, open the team project for your organization and select **Repos** > **Files**. If you kept your browser open after getting the clone URL, you can just switch back to it.
 
@@ -230,8 +230,9 @@ This example shows the basic steps of creating and completing a pull request.
 >[!NOTE]
 >This example shows the basic steps of creating and completing a pull request. To learn more about pull requests, including voting and reviewing, commenting, autocomplete, and more, see [Pull requests overview](../git/pull-requests-overview.md).
 
+::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open the team project for your organization and select the **Code** page. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
@@ -255,7 +256,7 @@ This example shows the basic steps of creating and completing a pull request.
 
   Keep this command window open, because you'll use it in the following steps.
 
----
+::: moniker-end
 
 Your changes are now merged into the `master` branch, and your `users/jamal/feature1` branch is deleted on the remote repository. To delete your local copy of the branch, switch back to your Git Bash command prompt and run the following commands.
 

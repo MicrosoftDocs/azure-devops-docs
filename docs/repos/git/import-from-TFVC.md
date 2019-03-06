@@ -27,46 +27,36 @@ We strongly recommend reading our whitepapers - [Centralized version control to 
 The import experience is great for small simple TFVC repositories. It's also good for repositories that have already been "cleaned up" as outlined in the previous whitepapers. Those whitepapers also recommend other tools for more advanced TFVC repository configurations.
 
 ## Importing the repository
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range="azure-devops"
-
-0. Select **Repos**, **Files**.
+1. Select **Repos**, **Files**.
 
   ![View your branches](_img/repos-navigation/repos-files.png)
 
-0. From the repo drop-down, select **Import repository**.
+1. From the repo drop-down, select **Import repository**.
 
   ![Import Repository Option](_img/Import-Repo/ImportRepository-new-nav.png)
 
-0. Select TFVC from the **Source type** dropdown
+1. Select TFVC from the **Source type** dropdown
 
-0. Type the path to the repository / branch / folder that you want to import to the Git repository. For example, `$/Fabrikam/FabrikamWebsite`
+1. Type the path to the repository / branch / folder that you want to import to the Git repository. For example, `$/Fabrikam/FabrikamWebsite`
 
-0. If you want to migrate history from the TFVC repository, click **Migrate history** and select the number of days. You can migrate up to 180 days of history starting from the most recent changeset. 
+1. If you want to migrate history from the TFVC repository, click **Migrate history** and select the number of days. You can migrate up to 180 days of history starting from the most recent changeset. 
 A link to the TFVC repository is added in the commit message of the 1st changeset that is migrated to Git. This makes it easy to find older history when needed.
 
-0. Give a name to the new Git repository and click **Import**. Depending on the size of the import, your Git repository would be ready in a few minutes. 
+1. Give a name to the new Git repository and click **Import**. Depending on the size of the import, your Git repository would be ready in a few minutes. 
 
   ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog-TFVC.png)
 
 > [!IMPORTANT] 
 > Due to the differences in how TFVC and Git store version control history, we [recommend](/azure/devops/learn/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-0. From the repo drop-down, select **Import repository**.
+1. From the repo drop-down, select **Import repository**.
 
 ![Import Repository Option](_img/Import-Repo/ImportRepository.png)
 
@@ -84,8 +74,7 @@ A link to the TFVC repository is added in the commit message of the 1st changese
 > [!IMPORTANT] 
 > Due to the differences in how TFVC and Git store version control history, we [recommend](/azure/devops/learn/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
----
-
+::: moniker-end
 
 ### Troubleshooting
 

@@ -1,6 +1,6 @@
 ---
 title: Build, test, and deploy JavaScript and Node.js apps
-description: Build JavaScript and Node.js apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically build JavaScript and Node.js apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
@@ -14,7 +14,7 @@ ms.date: 10/12/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build, test, and deploy JavaScript and Node.js apps in Azure Pipelines
+# Build, test, and deploy JavaScript and Node.js apps
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build JavaScript and Node.js apps with CI/CD pipelines.
+This guidance explains how to automatically build JavaScript and Node.js apps.
 
 ::: moniker range="tfs-2017"
 

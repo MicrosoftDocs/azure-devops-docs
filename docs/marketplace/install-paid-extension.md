@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2018'
 ---
 
 # Quickstart: Buy and install paid extensions
@@ -61,15 +61,14 @@ To make subsequent edits to paid quantities in your organization, you only need 
 After you install a paid extension, you need to assign it to your users so they can start using it.
 To assign extensions, you need Azure DevOps Services [project collection administrator or organization owner permissions](./faq-extensions.md#find-owner).
 
-[!INCLUDE [temp](../_shared/new-navigation-cloud.md)]  
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
+
 3. Select **Users**.
 
    ![Users page](../_shared/_img/settings/open-organization-settings-users-vert.png)
@@ -92,7 +91,9 @@ To assign extensions, you need Azure DevOps Services [project collection adminis
 
 Tell your team about this extension, so they can start using its capabilities.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 1.	Sign in to your organization: ```https://dev.azure.com/{organization}```.
 
@@ -118,7 +119,7 @@ Tell your team about this extension, so they can start using its capabilities.
 
 Tell your team about this extension, so they can start using its capabilities.
 
----
+::: moniker-end
 
 ## Related articles
 

@@ -19,7 +19,8 @@ monikerRange: '>= tfs-2017'
 Packages you host in Azure Artifacts are stored in a **feed**. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
 ## Feed permissions overview
-Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level.
+
+Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Owners can add any type of identity-individuals, teams, and groups-to any access level.
 
 | Permission | Reader | Collaborator | Contributor | Owner |
 | ---------- | ------ | ------------ | ----------- | ----- |
@@ -41,17 +42,16 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 Select **Permissions**.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
 > [!div class="mx-imgBorder"] 
 >![Editing a feed's permissions](_img/editfeeddialog-azure-devops-newnav.png)
-> 
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
-
----
 
 ::: moniker-end
 
@@ -60,8 +60,6 @@ Select **Permissions**.
 ![Editing a feed's permissions](_img/editfeeddialog1.png)
 
 ::: moniker-end
-
-
 
 In the edit feed dialog:
 
