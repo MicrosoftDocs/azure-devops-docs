@@ -49,9 +49,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Import into a new repo
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. Select **Repos**, **Files**.
 
@@ -67,7 +65,9 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
   ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 From the repo drop-down, select **Import repository**.
 
@@ -79,8 +79,7 @@ If the source repository is private but can be accessed using basic authenticati
 
 ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
 
----
-
+::: moniker-end
 
 
 ## Import into an existing empty repo
@@ -92,7 +91,6 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 >[!NOTE]
 >The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [How do I associate my commits with work items?](share-your-code-in-git-vs-2017.md#how-do-i-associate-my-commits-with-work-items)
 
-::: moniker-end
 ::: moniker range=">= tfs-2013"
 
 ## Manually import a repo
