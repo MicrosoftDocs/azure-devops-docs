@@ -20,32 +20,21 @@ monikerRange: '>= tfs-2017'
 Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 
 ![View your branches](_img/repos-navigation/repos-branches.png)
 
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 View your repo's branches by selecting **Branches** while viewing your repo on the web.
 
 ![Access the branches view from your Git repo in Team Explorer](_img/branches/branches_nav.png)
 
----
+::: moniker-end
 
 ## Organize your branches
 
@@ -109,14 +98,7 @@ browse the files based on the most recent commit on the branch. **View history**
 Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
 This is useful when you want to use a branch other than `master` for new changes or need to change your main line of development in your repo.
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
 
@@ -130,7 +112,7 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 ::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 1. Select the settings icon while you have your project open to bring up the project administration page.
 
@@ -144,4 +126,4 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
    ![Set a default branch for a Git repo in Azure DevOps Services or TFS](_img/pull-requests/set_default_branch.png)
 
----
+::: moniker-end

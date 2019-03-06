@@ -1,6 +1,6 @@
 ---
 title: Build and test Ruby apps
-description: Build and test Ruby apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically build and test Ruby apps with Azure Pipelines, Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -10,18 +10,18 @@ ms.author: dastahel
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 08/31/2018
-monikerRange: '> tfs-2018'
+monikerRange: 'azure-devops'
 ---
 
-# Build and test Ruby apps in Azure Pipelines
+# Build and test Ruby apps
 
 **Azure Pipelines**
 
-This guidance explains how to use Azure Pipelines to automatically build Ruby projects with CI/CD pipelines.
+This guidance explains how to automatically build Ruby projects.
 
 ## Example
 
-For a working example of how to build a Ruby project, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+For a working example of how to build a Ruby project, import into Azure Repos or fork (into GitHub) this repo:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-ruby

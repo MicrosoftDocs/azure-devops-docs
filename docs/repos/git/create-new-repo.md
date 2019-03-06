@@ -28,25 +28,21 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ## Create a repo using the web portal 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. Navigate to the **Repos** page in your project by browsing to `https://<your account name>.visualstudio.com`, hovering your mouse over the name of your project, and selecting the **Repos** icon. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 
   ![Select project](_img/repo-mgmt/select-project-repos.png)
 
-0. From the repo drop-down, select **New repository**.
+1. From the repo drop-down, select **New repository**.
 
   ![Manage repositories](_img/repo-mgmt/new-repository.png)
 
-0. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo, and a [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
+1. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo, and a [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
 
   ![Set options for your new repo in the Create a Git repo dialog](_img/repo-mgmt/create-a-new-repository.png)
 
-0. When you're happy with the repo name and choices, select **Create**.
+1. When you're happy with the repo name and choices, select **Create**.
 
   A new empty Git repo is now created in your project. 
 
@@ -55,43 +51,34 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-0. Navigate to your project by browsing to `https://dev.azure.com/<your organization name>` and selecting the name of your project. You can select it from the **All projects** list, or from the **Recent** projects list at the top if you have accessed it recently.
+1. Navigate to your project by browsing to `https://dev.azure.com/<your organization name>` and selecting the name of your project. You can select it from the **All projects** list, or from the **Recent** projects list at the top if you have accessed it recently.
 
   ![Select project](_img/repo-mgmt/select-vsts-project.png) 
 
-0. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
+1. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 
   ![Choose new repository from the web portal](_img/repo-mgmt/create-vsts-repo.png)
 
-0. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo, and a [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
+1. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo, and a [.gitignore](ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
 
   ![Set options for your new repo in the Create a Git repo dialog](_img/repo-mgmt/create-a-new-repository.png)
 
-0. When you're happy with the repo name and choices, select **Create**.
+1. When you're happy with the repo name and choices, select **Create**.
 
   A new empty Git repo is now created in your project. 
 
     - If you created an empty repo (no README or .gitignore), you'll see instructions on how to [clone](clone.md) the repo to your computer or [push](pushing.md) code in an existing repo into the newly created one.
     - In this example you created a README and a .gitignore, so you'll see an overview of the files in your repo, and you can [clone](clone.md) the repo using the **Clone** link on the upper right of the page to get working with a local copy of the repo immediately. 
 
----
-
+::: moniker-end
 
 ## Clone the repo to your computer
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. From your web browser, open the team project for your organization in Azure DevOps and select **Repos** > **Files**. If you don't have a team project, [create one now](../get-started/sign-up-invite-teammates.md). 
 
@@ -117,13 +104,15 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   Keep this command window open, because you'll use it in the following steps.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
 
-0. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
+::: moniker range="<= tfs-2018"
+
+1. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 
   ![Retrieve the clone URL](_img/repo-mgmt/clone-git-repo.png)
 
-0. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
+1. Open the Git command window (Git Bash on Git for Windows), navigate to the folder where you want the code from the repo stored on your computer, and run `git clone` followed by the path copied from the **Clone URL** in the previous step, as shown in the following example.
 
   ```
   git clone https://fabrikam-fiber.visualstudio.com/DefaultCollection/MyFirstProject/_git/
@@ -133,28 +122,23 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   Keep this command window open, as you'll use it in the following steps.
 
----
-
-
-
-
-
+::: moniker-end
 
 ## Work with the code
 
 In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo that is stored on the server, and view the changes there.
 
-0. Browse to the folder on your computer where you cloned the repo and open the `README.md` file in your editor of choice.
+1. Browse to the folder on your computer where you cloned the repo and open the `README.md` file in your editor of choice.
 
-0. Make some changes, for example add `This is my first edit.` to the file, and save and close the file.
+1. Make some changes, for example add `This is my first edit.` to the file, and save and close the file.
 
-0. In the Git command window, navigate to the `fabrikam-fiber` directory by entering the following command: 
+1. In the Git command window, navigate to the `fabrikam-fiber` directory by entering the following command: 
 
   ```
   cd fabrikam-fiber
   ```
 
-0. Commit your changes by entering the following command in the Git command window:
+1. Commit your changes by entering the following command in the Git command window:
 
   ```
   git commit -a -m "My first commit"
@@ -162,17 +146,17 @@ In this step, we'll make a change to the files on your computer, commit the chan
 
   When using `git commit`, `-a` means to commit all changed files, and `-m` specifies a commit message.
 
-0. Push your changes up to the Git repo on the server by entering the following command into the Git command window:
+1. Push your changes up to the Git repo on the server by entering the following command into the Git command window:
 
   ```
   git push
   ```
 
-0. Switch back to the web portal and select **History** from the **Code** view to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
+1. Switch back to the web portal and select **History** from the **Code** view to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
 
   ![View commit history](_img/repo-mgmt/commit-push.png)
 
-0. Switch to the **Files** tab and click on the README file to view your changes.
+1. Switch to the **Files** tab and click on the README file to view your changes.
 
   ![View changed file](_img/repo-mgmt/readme-changed-file.png)  
 

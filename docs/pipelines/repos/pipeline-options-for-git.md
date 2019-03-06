@@ -9,13 +9,13 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 12/06/2018
+ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Pipeline options for Git repositories
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -23,17 +23,17 @@ monikerRange: '>= tfs-2015'
 
 While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or external Git repo), you have the following options.
 
-| Feature | Azure Pipelines | TFS 2018 | TFS 2017.2 | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
+| Feature | Azure Pipelines | TFS 2017.2 and higher | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
-|Branch|Yes|Yes|Yes|Yes|Yes|Yes|
-|Clean|Yes|Yes|Yes|Yes|Yes|Yes|
-|Tag or label sources|Project; Designer only|Team project|Team project|Team project|Team project|No|
-|Report build status|Yes|Yes|Yes|Yes|No|No|
-|Checkout submodules|Yes|Yes|Yes|Yes|Yes|Yes|
-|Checkout files from LFS|Yes|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
-|Clone a second repo|Yes|Yes|Yes|Yes|Yes|Yes|
-|Don't sync sources|Yes|Yes|Yes|No|No|No|
-|Shallow fetch|Yes|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
+|Branch|Yes|Yes|Yes|Yes|Yes|
+|Clean|Yes|Yes|Yes|Yes|Yes|
+|Tag or label sources|Project; Designer only|Team project|Team project|Team project|No|
+|Report build status|Yes|Yes|Yes|No|No|
+|Checkout submodules|Yes|Yes|Yes|Yes|Yes|
+|Checkout files from LFS|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
+|Clone a second repo|Yes|Yes|Yes|Yes|Yes|
+|Don't sync sources|Yes|Yes|No|No|No|
+|Shallow fetch|Yes|Yes|Linux and macOS agents|Linux and macOS agents|Linux and macOS agents|
 
 ::: moniker range=">= tfs-2017"
 

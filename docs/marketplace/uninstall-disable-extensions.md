@@ -27,9 +27,7 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 ## Disable or uninstall extensions
 
-[!INCLUDE [temp](../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
@@ -41,7 +39,9 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
    ![Disable or uninstall extension](_img/disable-or-uninstall-extension.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 1. Sign in to your organization, ```https://dev.azure.com/{yourorganization}```.
 
@@ -52,3 +52,5 @@ You must be a [Project collection administrator](../organizations/security/set-p
 3. Right click or choose the ellipses (...) on the extension and then choose **uninstall** or **disable**.
 
     ![Uninstall or disable extensions](_img/disable-uninstall-extension.png)
+
+::: moniker-end

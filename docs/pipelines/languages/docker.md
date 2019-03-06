@@ -1,6 +1,6 @@
 ---
 title: Build, test, and push Docker container apps
-description: Build and deploy Docker images by using Azure Pipelines and TFS
+description: Automatically build and deploy Docker images with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -14,11 +14,11 @@ ms.date: 11/20/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build, test, and push Docker container apps in Azure Pipelines
+# Build, test, and push Docker container apps
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to build Docker images and push them to registries such as Docker Hub or Azure Container Registry with continuous integration and delivery (CI/CD) pipelines.
+This guidance explains how to automatically build Docker images and push them to registries such as Docker Hub or Azure Container Registry.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
