@@ -1,6 +1,6 @@
 ---
 title: Build Java apps
-description: Building Java apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically building Java apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
@@ -14,7 +14,7 @@ ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build Java apps in Azure Pipelines
+# Build Java apps
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2017'
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build Java projects with CI/CD pipelines. See [Android](android.md) for Android-specific projects.
+This guidance explains how to automatically build Java projects. (If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).)
 
 ## Example
 

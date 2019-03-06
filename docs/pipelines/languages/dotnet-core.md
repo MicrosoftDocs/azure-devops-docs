@@ -1,6 +1,6 @@
 ---
 title: Build, test, and deploy .NET Core apps
-description: Build .NET Core apps by using Azure Pipelines and TFS
+description: Automatically build .NET Core apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -14,11 +14,11 @@ ms.date: 08/15/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build, test, and deploy .NET Core apps in Azure Pipelines
+# Build, test, and deploy .NET Core apps
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build .NET Core projects and deploy or publish to targets with CI/CD pipelines.
+This guidance explains how to automatically build and test .NET Core projects, and then deploy or publish to targets.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

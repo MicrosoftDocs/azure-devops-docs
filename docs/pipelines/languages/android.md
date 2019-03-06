@@ -1,6 +1,6 @@
 ---
 title: Build, test, and deploy Android apps
-description: Set up CI/CD to build, test, and deploy Android projects.
+description: Automatically build, test, and deploy Android projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -13,11 +13,11 @@ ms.date: 08/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Build, test, and deploy Android apps in Azure Pipelines
+# Build, test, and deploy Android apps
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS) to automatically build, test, and deploy Android apps with CI/CD pipelines.
+This guidance explains how to automatically build, test, and deploy Android apps.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -29,7 +29,7 @@ This guidance explains how to use Azure Pipelines or Team Foundation Server (TFS
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-This guide explains creating pipelines for Android projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
 
 ## Get started
 
