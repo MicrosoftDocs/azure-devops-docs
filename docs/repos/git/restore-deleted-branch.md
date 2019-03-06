@@ -40,11 +40,7 @@ Note that branch policies and permissions will **not** be restored.
 
 If you've re-used the same branch name for different commits, you may not see all the commits you're expecting when you restore the deleted branch. In that case, navigate to the **Pushes** page of the restored branch to see the entire history of the branch.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 ![View all pushes for your restored branch](_img/branches/restore_deleted_branch_pushes-new-nav.png)
 
@@ -53,16 +49,9 @@ From there, you can use a pull request, cherry-pick, or merge to get the commits
 
 ![New branch from commit](_img/branches/deleted_branch_new_branch_from_commit.png)
 
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 ![View all pushes for your restored branch](_img/branches/restore_deleted_branch_pushes.png)
 
@@ -71,7 +60,7 @@ From there, you can use a pull request, cherry-pick, or merge to get the commits
 
 ![New branch from commit](_img/branches/deleted_branch_new_branch_from_commit.png)
 
----
+::: moniker-end
 
 
 

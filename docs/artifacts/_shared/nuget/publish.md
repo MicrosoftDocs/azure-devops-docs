@@ -24,7 +24,7 @@ If you don't have a package but want to try this out, Microsoft provides a sampl
 
 * Run these two commands:
 
-   ```Command
-   nuget.exe install HelloWorld -ExcludeVersion
-   nuget.exe push -Source {NuGet package source URL} -ApiKey key HelloWorld\HelloWorld.nupkg
-   ```
+  ```Command
+  nuget.exe install HelloWorld -ExcludeVersion
+  nuget.exe push -Source {NuGet package source URL} -ApiKey key HelloWorld\HelloWorld.nupkg
+  ```
