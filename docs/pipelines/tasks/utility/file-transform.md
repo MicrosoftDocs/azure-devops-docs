@@ -16,6 +16,7 @@ monikerRange: '> tfs-2018'
 # File Transform task
 
 Use this task to apply file transformations and variable substitutions on configuration and parameters files. 
+For details of how translations are processed, see [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 
 **File transformations**
 
@@ -40,7 +41,9 @@ Use this task to apply file transformations and variable substitutions on config
 
 * Tokens defined in the target configuration files are updated and then replaced with variable values. 
 
-* Variable substitutions are run after config file transformations. 
+* Variable substitutions are run after config file transformations.
+
+* Variable substitution is applied for only the JSON keys predefined in the object hierarchy. It does not create new keys. 
 
 **Examples**
 

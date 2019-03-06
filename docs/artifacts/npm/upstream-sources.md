@@ -46,13 +46,15 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range="azure-devops"
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
 
-# [Previous navigation](#tab/previous-nav)
-![Viewing your cached packages](_img/view-cached-packages.png)
+::: moniker-end
 
----
+::: moniker range="<= tfs-2018"
+
+![Viewing your cached packages](_img/view-cached-packages.png)
 
 ::: moniker-end
 
@@ -63,4 +65,5 @@ You can see the packages you have saved in your feed by selecting the appropriat
 ::: moniker-end
 
 ## Scopes
+
 If you prefer to use scopes, which limit your private packages to those with the `@<scope>` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [Scopes](scopes.md).

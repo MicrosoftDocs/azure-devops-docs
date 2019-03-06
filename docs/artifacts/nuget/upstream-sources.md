@@ -65,13 +65,15 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range="azure-devops"
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
 
-# [Previous navigation](#tab/previous-nav)
-![Viewing your cached packages](_img/view-cached-packages.png)
+::: moniker-end
 
----
+::: moniker range="<= tfs-2018"
+
+![Viewing your cached packages](_img/view-cached-packages.png)
 
 ::: moniker-end
 

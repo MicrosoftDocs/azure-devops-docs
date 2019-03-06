@@ -38,7 +38,9 @@ Each organization gets five (5) free licenses. If you need more than 5 licenses,
 
 You will need to assign your licenses by following the instructions below:
 
-# [New navigation](#tab/new-nav)
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 1. Go to your organization, select **Admin settings** in the bottom left of the UX.
 2. Select **Users**.
@@ -47,14 +49,14 @@ You will need to assign your licenses by following the instructions below:
 
 If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 1. Go to your account, navigate to the **Users** page, and select Package Management.
 2. Select **Assign**, type the users you want to assign licenses to, then select **Ok**.
 
 If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
----
 
 ::: moniker-end
 

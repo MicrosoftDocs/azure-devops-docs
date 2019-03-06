@@ -33,43 +33,33 @@ Remove unused Git repos from your project when they are no longer needed.
 
 ## Delete a Git repo from the web 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range="azure-devops"
-
-0. Select **Repos**, **Files**.
+1. Select **Repos**, **Files**.
 
   ![View your branches](_img/repos-navigation/repos-files.png)
 
-0. From the repo drop-down, select **Manage repositories**.
+1. From the repo drop-down, select **Manage repositories**.
 
   ![Manage repositories](_img/repo-mgmt/manage-repositories.png)
 
-0. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Delete repository**.
+1. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Delete repository**.
 
   ![Delete repository](_img/repo-mgmt/delete-repository.png)
 
-0. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
+1. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
 
   ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-0. Select the settings icon in the web to bring up the project administration page and choose **Version Control**.
+1. Select the settings icon in the web to bring up the project administration page and choose **Version Control**.
 
    ![Version control settings](_img/repo-mgmt/version-control-settings.png)
 
-0. Select the Git repository to remove from the list shown and select the **...** next to the name. Choose **Delete Repository**.
+1. Select the Git repository to remove from the list shown and select the **...** next to the name. Choose **Delete Repository**.
 
    ![remove the Azure DevOps Services repo using the ellipses link next to the repo name](_img/repo-mgmt/remove-repo.png)
 
@@ -78,8 +68,8 @@ Select **Previous navigation** to view the steps for this procedure in your sele
    >
    >![Repositories pane](_img/repo-mgmt/expand-repositories-pane.png)
 
-0. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
+1. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
 
   ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
 
----
+::: moniker-end

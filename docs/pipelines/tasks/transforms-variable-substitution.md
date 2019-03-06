@@ -413,6 +413,8 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 
 * Variable name matching is case-sensitive.
 
+* Variable substitution is applied for only the JSON keys predefined in the object hierarchy. It does not create new keys. 
+
 * If a variable name includes periods ("."), the transformation will attempt to locate the item within the hierarchy.
   For example, if the variable name is `first.second.third`, the transformation process will search for:
 

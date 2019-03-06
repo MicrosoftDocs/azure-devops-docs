@@ -1,6 +1,6 @@
 ---
 title: Build Xamarin apps
-description: Build Xamarin projects in Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Build Xamarin projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -11,14 +11,14 @@ author: andyjlewis
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 11/16/2018
-monikerRange: '> tfs-2018'
+monikerRange: 'azure-devops'
 ---
 
-# Build Xamarin apps in Azure Pipelines
+# Build Xamarin apps
 
 **Azure Pipelines**
 
-This guidance explains how to use Azure Pipelines to automatically build Xamarin apps for Android and iOS.
+This guidance explains how to automatically build Xamarin apps for Android and iOS.
 
 ## Example
 

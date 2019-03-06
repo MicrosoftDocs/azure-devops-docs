@@ -28,6 +28,8 @@ release pipeline is a great way of detecting
 unexpected changes, and need not be difficult. This
 topic describes using Selenium to test your website
 during a continuous deployment release and test automation.
+Special considerations that apply when running UI tests are discussed in
+[UI testing considerations](ui-testing-considerations.md). 
 
 > Typically you will run unit tests in your build workflow,
 and functional (UI) tests in your release workflow after your
@@ -179,7 +181,7 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
   The paths to the folders containing these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
   `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox).
   The drivers are **not** pre-installed on other agents such as Linux, Ubuntu, and macOS agents.
-
+  Also see [UI testing considerations](ui-testing-considerations.md).
 <!--
 For example,  
 
@@ -189,7 +191,7 @@ For example,
 -->
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
-  See [Build and release agents](../agents/agents.md#account).
+  See [Build and release agents](../agents/agents.md#account) and [UI testing considerations](ui-testing-considerations.md).
 
 <a name="include-test"></a>
 ## Include the test in a release
