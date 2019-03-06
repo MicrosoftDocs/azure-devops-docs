@@ -1,6 +1,6 @@
 - name: Team Foundation Server
   tocHref: /azure/devops/
-  topicHref: /tfs/index
+  topicHref: /azure/devops/server/index
   items: 
   - name: SharePoint Integration
     tocHref: /azure/devops/report/sharepoint-dashboards/
