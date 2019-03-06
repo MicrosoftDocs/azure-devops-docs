@@ -53,14 +53,14 @@ You assign users or groups of users to one of the following access levels:
 
 ::: moniker range="tfs-2018"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a TFS CAL or with a Visual Studio Professional subscription. 
+- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription. 
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 - **Advanced** (legacy access level, to be deprecated): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a TFS CAL or with a Visual Studio subscription. 
+- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
 - **VS Enterprise** (TFS 2017.1): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 - **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
 
@@ -68,7 +68,7 @@ You assign users or groups of users to one of the following access levels:
 
 ::: moniker range="<= tfs-2015"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features.  Assign to users with a TFS CAL or with a Visual Studio subscription.
+- **Basic**: Provides access to most features.  Assign to users with a CAL or with a Visual Studio subscription.
 - **Advanced**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
 
 ::: moniker-end
@@ -93,13 +93,13 @@ As the following images illustrate, **Basic** access includes all **Stakeholder*
 # [Basic](#tab/basic) 
 
 ::: moniker range=">= azure-devops-2019"
-> [!div class="mx-imgBorder"]  
-> ![Basic access level](_img/access-levels/basic-2019.png) 
+> [!div class="mx-imgBorder"]
+> ![Basic access level](_img/access-levels/basic-2019.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ![Stakeholder access level](_img/access-levels/basic-2017.png) 
+> ![Stakeholder access level](_img/access-levels/basic-2017.png)
 ::: moniker-end
 
 
@@ -107,7 +107,7 @@ As the following images illustrate, **Basic** access includes all **Stakeholder*
 
 ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]  
-> ![VS Enterprise access level](_img/access-levels/vs-enterprise-2019.png) 
+> ![VS Enterprise access level](_img/access-levels/vs-enterprise-2019.png)
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -115,7 +115,7 @@ Not supported for on-premises versions.
 ::: moniker-end
 
 
-# [Advanced](#tab/advanced) 
+# [Advanced](#tab/advanced)
 
 ::: moniker range="azure-devops"
 Not supported for Azure DevOps Services.
@@ -123,15 +123,15 @@ Not supported for Azure DevOps Services.
 
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Basic access level](_img/access-levels/advanced-2019.png) 
+> ![Basic access level](_img/access-levels/advanced-2019.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ![Stakeholder access level](_img/access-levels/advanced-2017.png) 
+> ![Stakeholder access level](_img/access-levels/advanced-2017.png)
 ::: moniker-end
 
-# [VS Enterprise](#tab/vs-enterprise) 
+# [VS Enterprise](#tab/vs-enterprise)
 
 ::: moniker range="azure-devops"
 Not supported for Azure DevOps Services.
@@ -139,12 +139,12 @@ Not supported for Azure DevOps Services.
 
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![VS Enterprise access level](_img/access-levels/vs-enterprise-2019.png) 
+> ![VS Enterprise access level](_img/access-levels/vs-enterprise-2019.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ![Stakeholder access level](_img/access-levels/vs-enterprise-2017.png) 
+> ![Stakeholder access level](_img/access-levels/vs-enterprise-2017.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
@@ -191,10 +191,10 @@ With Stakeholder access, users can create and modify all work items, and can cre
 
 <a id="feature-access">  </a>
 
-
 ### Stakeholder feature access
+
 ::: moniker range="azure-devops"
-The following features are available to Stakeholders from the web portal for both public and private projects. For private projects, there are some limitations as noted. To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-stakeholder.md).   
+The following features are available to Stakeholders from the web portal for both public and private projects. For private projects, there are some limitations as noted. To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-stakeholder.md).
 
 <table width="80%">
 <tbody valign="top">
@@ -389,14 +389,14 @@ Test summary access to stakeholder license users
 <td>Administer organization</td>
 <td>
 <ul>
-<li>[Add users to team projects](add-users-team-project.md)<br/>Can add users and set access levels when added to the [Team Foundation Server Administrators](/azure/devops/server/admin/add-administrator-tfs) group. </li>
+<li>[Add users to team projects](add-users-team-project.md)<br/>Can add users and set access levels when added to the [Administrators](/azure/devops/server/admin/add-administrator-tfs) group. </li>
 <li>[Create, delete, and edit child Area Paths](../settings/set-area-paths.md)</li> 
-<li>[Create, delete, and edit child Iteration Paths](../settings/set-iteration-paths-sprints.md)</li> 
+<li>[Create, delete, and edit child Iteration Paths](../settings/set-iteration-paths-sprints.md)</li>
 <li>[Administer process permissions](permissions.md#administer-process-permissions-permission)</li>  
 <li>[Create, delete, edit processes](../settings/work/manage-process.md)</li>
 <li>[Delete field from account](../settings/work/customize-process-field.md)</li>
 <li>[Bypass rules on work item updates](permissions.md#bypass-rules-permission) </li>
-<li>[Suppress notifications for work item updates](permissions.md#suppress-notifications-for-work-item-updates-permission) </li> 
+<li>[Suppress notifications for work item updates](permissions.md#suppress-notifications-for-work-item-updates-permission) </li>
 </ul>
 <p>You can restrict access to one or more of the above features by changing the permissions granted to Stakeholders. See [Grant or restrict access to select features and functions](restrict-access.md).</p>
 </td>
@@ -523,7 +523,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 **For Public projects:**
 - View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under **Repos (Code)** or **Test Plans (Test)**. 
+- Access the full set of features under **Repos (Code)** or **Test Plans (Test)**.
 ::: moniker-end
 
 
@@ -532,39 +532,39 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
+- View Delivery Plans (a Marketplace extension)
 - Access the full set of features under **Pipelines**, **Repos** or **Test Plans**.  
 
 ::: moniker-end
 
 
 ::: moniker range="tfs-2018"
-- Change the priority of an item within a backlog  
+- Change the priority of an item within a backlog
 - Delete work items 
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
-- Access the full set of features provided under **Code**, **Build and Release**, and **Test**   
+- Access the full set of features provided under **Code**, **Build and Release**, and **Test**
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
-- Change the priority of an item within a backlog  
+- Change the priority of an item within a backlog
 - Delete work items 
 - Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features provided under **Code**, **Build and Release**, and **Test**   
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features provided under **Code**, **Build and Release**, and **Test**
 - Participate in team rooms, which capture interactive, detailed conversations about the project.  
 ::: moniker-end
 
-> [!NOTE]   
+> [!NOTE]
 > Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.
-
 
 <a id="basic" />
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Basic access, Azure Boards and Azure Repos
 
-In addition to the features listed for **Stakeholder** access, the following features are available to users with **Basic** access. Basic access allows users to access features provided in the **Repos**, **Pipelines**, and **Test Plans** hubs in addition to **Dashboards** and **Boards**. 
+In addition to the features listed for **Stakeholder** access, the following features are available to users with **Basic** access. Basic access allows users to access features provided in the **Repos**, **Pipelines**, and **Test Plans** hubs in addition to **Dashboards** and **Boards**.
 
 <table width="80%">
 <tbody valign="top">
@@ -686,9 +686,10 @@ In addition to the features listed for **Stakeholder** access, the following fea
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 ## Basic access
 
-In addition to the features listed for **Stakeholder** access, the following features are available to users with **Basic** access. Basic access allows users to access features provided in the **Code**, **Build and Release**, and **Test** hubs in addition to **Dashboards/Home** and **Work**. 
+In addition to the features listed for **Stakeholder** access, the following features are available to users with **Basic** access. Basic access allows users to access features provided in the **Code**, **Build and Release**, and **Test** hubs in addition to **Dashboards/Home** and **Work**.
 
 <table width="80%">
 <tbody valign="top">
@@ -812,9 +813,10 @@ In addition to the features listed for **Stakeholder** access, the following fea
 
 
 ::: moniker range="<= tfs-2015"
+
 ## Basic access
 
-In addition to the features listed for **Stakeholder** access, the following features are available to users with **Basic** access. Basic access allows users to access features provided in the **Code**, **Build and Release**, and **Test** hubs in addition to **Dashboards/Home** and **Work**. 
+In addition to the features listed for **Stakeholder** access, the following features are available to users with **Basic** access. Basic access allows users to access features provided in the **Code**, **Build and Release**, and **Test** hubs in addition to **Dashboards/Home** and **Work**.
 
 <table width="80%">
 <tbody valign="top">
@@ -921,17 +923,18 @@ Can add features and epics from the Kanban board. Can change the backlog priorit
 ::: moniker range="azure-devops"
 
 ## Visual Studio subscription access
+
 Visual Studio subscribers are entitled to **Visual Studio subscription** features as a subscriber benefit. When you add those users, be sure to assign them the **Visual Studio subscription** access level. The system automatically recognizes their subscription and enables any other features that are included, based on their subscription level.
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
 ## VS Enterprise access
 
-In addition to the features listed for **Basic** access, the following features are available to users with **VS Enterprise** access from the web portal. 
+In addition to the features listed for **Basic** access, the following features are available to users with **VS Enterprise** access from the web portal.
 
 ::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -971,7 +974,6 @@ In addition to the features listed for **Basic** access, the following features 
 </table>
 
 ::: moniker-end  
-
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
@@ -1092,18 +1094,21 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 ::: moniker range="<= azure-devops-2019"
 
 ## What features can users access who are added to two different groups?
+
 If a user belongs to a group that has **Basic** access and another group that has **VS Enterprise** access, the user has access to all features available through **VS Enterprise**, which is a superset of **Basic**.
 
-## Service account access  
-Azure DevOps Server and TFS [service accounts](/tfs/tfs-server/admin/service-accounts-dependencies-tfs) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
+## Service account access
 
-Service accounts don't require a TFS CAL or other purchase.  
+Azure DevOps Server [service accounts](/tfs/tfs-server/admin/service-accounts-dependencies-tfs) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
+
+Service accounts don't require a CAL or other purchase.  
 
 ::: moniker-end
 
 ## Related articles  
 
 ::: moniker range="azure-devops"
+
 - [Manage users and access](../accounts/add-organization-users.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
@@ -1111,8 +1116,9 @@ Service accounts don't require a TFS CAL or other purchase.
 
 
 ::: moniker range="<= azure-devops-2019"
+
 - [Change access levels](change-access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
-- [Default permissions and access](permissions-access.md) 
+- [Default permissions and access](permissions-access.md)
 ::: moniker-end
 
