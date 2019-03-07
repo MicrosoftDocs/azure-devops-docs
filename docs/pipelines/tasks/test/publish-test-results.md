@@ -17,9 +17,12 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build pipeline to publish code coverage results produced when running tests to Azure Pipelines
-or TFS in order to obtain coverage reporting. The task supports popular coverage result formats such as
-[Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
+Use this task in a build pipeline to publish test and code coverage results produced when running tests to Azure Pipelines
+or TFS in order to obtain test and coverage reporting. The test result formats supported by the task include [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
+[NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
+Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
+
+The task supports popular coverage result formats such as [Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
 
 ::: moniker range="<= tfs-2018"
 
@@ -27,17 +30,12 @@ or TFS in order to obtain coverage reporting. The task supports popular coverage
 
 ::: moniker-end
 
-The test result formats supported by the task include [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
-[NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
-Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
-
 The [Visual Studio Test task](vstest.md) automatically publishes test results to the pipeline, while tasks such as
 [Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
 provide publishing results as an option within the task.
 If you are using these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
-The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
-in a pipeline summary.
+The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md) in the pipeline summary and help measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership. 
 
 <a name="demands"></a>
 
@@ -79,7 +77,7 @@ in the **Languages** section of these topics, which also includes examples for o
 | **Test result formats** | Specify the format of the results files you want to publish. The following formats are supported.<br />- [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) |
 | **Test results files** | Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. |
 | **Search folder** | Folder to search for the test result files. Default is `$(System.DefaultWorkingDirectory)` |
-| **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. |
+| **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework |
 | **Fail if there are test failures** | When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. |
 | **Test run title** | Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
 | **Advanced - Platform** | Build platform against which the test run should be reported. For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. |

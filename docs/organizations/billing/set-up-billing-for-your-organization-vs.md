@@ -2,7 +2,7 @@
 title: Set up billing for your organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Use an Azure subscription to pay for users, CI/CD concurrency, extensions, and cloud-based load testing
+description: Use an Azure subscription to pay for users, CI/CD concurrency, and extensions
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25

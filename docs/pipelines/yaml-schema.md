@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: jillfra
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 01/23/2019
+ms.date: 03/06/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -245,6 +245,26 @@ trigger: none # will disable CI builds entirely
 
 Full syntax:
 
+::: moniker range="> azure-devops-2019"
+
+```yaml
+trigger:
+  batch: boolean # batch changes if true, start a new build for every push if false
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  tags:
+    include: [ string ] # tag names which will trigger a build
+    exclude: [ string ] # tag names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+```
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 ```yaml
 trigger:
   batch: boolean # batch changes if true, start a new build for every push if false
@@ -255,6 +275,8 @@ trigger:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
 ```
+
+::: moniker-end
 
 # [Example](#tab/example)
 

@@ -24,7 +24,7 @@ Just like Azure DevOps Services, TFS provides an integrated set of features that
 - Git repositories for source control of your code
 - Build and release services to support continuous integration and delivery of your apps
 - Agile tools to support planning and tracking your work, code defects, and issues using Kanban and Scrum methods
-- Many tools to test your apps, including manual/exploratory testing, load testing, and continuous testing
+- Many tools to test your apps, including manual/exploratory testing and continuous testing
 - Highly customizable dashboards for sharing progress and trends
 
 The TFS ecosystem also provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack,Trello, UserVoice, and more, and developing your own custom extensions.  
