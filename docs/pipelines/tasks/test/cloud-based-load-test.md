@@ -17,6 +17,8 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
+[!INCLUDE [loadtest-deprecated-include](../../../test/_shared/loadtest-deprecated-include.md)]
+
 Use this task in a build or release pipeline to run a load test in the cloud, to understand, test, and validate your app's performance. 
 The task uses the Cloud-based Load Test Service based in
 Microsoft Azure and can be used to test your app's 
@@ -50,7 +52,6 @@ The agent must have the following capability:
 
 ## Examples
 
-* [Load test your app in the cloud](../../../test/load-test/index.md)
 * [Scheduling Load Test Execution](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
 
 ## More Information
@@ -60,10 +61,6 @@ The agent must have the following capability:
 * [Build your Visual Studio solution](../../apps/windows/dot-net.md)
 * [Cloud-based Load Testing Knowledge Base](https://blogs.msdn.microsoft.com/devops/?s=clt)  
 
-## Related tasks
-
-* [Cloud-based Web Performance Test](cloud-based-web-performance-test.md)  
- 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

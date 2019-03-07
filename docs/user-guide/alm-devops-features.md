@@ -1264,13 +1264,12 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p>[Perform exploratory, manual, system, and user acceptance tests for any app, in any language](../test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create [unit tests](/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
 ![view tests in test explorer](_img/features/alm-feature-test-unittests.png)  
 <br />
-
 
 <p><b>Manual test plans and test cases</b></p>
 <p>Get started by [creating test plans and test cases](../test/create-test-cases.md) to track manual testing for sprints or milestones.</p>
@@ -1278,18 +1277,8 @@ pipelines\tasks\build\_img
 <p><b>Shared steps and shared parameters</b></p>
 <p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../test/repeat-test-with-different-data.md). </p>
 
-
-<p><b>Performance and load testing  </b></p>
-<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../test/load-test/getting-started-with-performance-testing.md).</p>
-
-
-<p><b>Cloud-based load tests</b></p>
-<p>Find performance problems in your app before customers do with [cloud-based load tests](../test/load-test/get-started-simple-cloud-load-test.md).</p>
-
-
 </td>
 <td width="33%">
-
 
 <p><b>Coded UI testing</b></p>
 <p>Use Visual Studio to create [coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx) to test your application's user interface.</p>
@@ -2131,7 +2120,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Test</b></p>
-<p>[Create and run manual tests](../test/create-a-test-plan.md) and [load tests for your app](../test/load-test/getting-started-with-performance-testing.md).</p>
+<p>[Create and run manual tests](../test/create-a-test-plan.md) for your app.</p>
 
 <p><b>Package (Azure DevOps Services, Preview)</b></p>
 <p>Share code as binary assets and control dependencies by [subscribing to and working with Azure Artifacts feeds](../artifacts/overview.md).</p>

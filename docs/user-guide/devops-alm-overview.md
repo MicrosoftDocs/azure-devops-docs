@@ -34,7 +34,7 @@ Whether you work in the cloud, on-premises, or a hybrid of each, you have a comp
 
 ### Work in the cloud
 
-Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
+Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to continuous testing, cloud build servers, and application insights. [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
 
 [![Sign up for Azure DevOps Services](_img/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](code-with-git.md)   
 
@@ -91,7 +91,7 @@ You also gain access to a [rich set of customization capabilities](../reference/
  
 ## DevOps: Build - Test - Release
 
-Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
+Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily provision test environments. Track when the quality is sufficient to release to the customer.  
 
 [![Build your software](_img/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../pipelines/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
 

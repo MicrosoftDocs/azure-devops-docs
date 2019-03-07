@@ -18,7 +18,7 @@ featureFlags:
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Documentation</h1>
-        <p>Azure DevOps Services provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, Azure DevOps Server (previously named Visual Studio Team Foundation Server), see [Azure DevOps Server Documentation](/tfs/index).</p> 
+        <p>Azure DevOps Services provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and continuous testing capabilities. For the on-premises platform, Azure DevOps Server (previously named Visual Studio Team Foundation Server), see [Azure DevOps Server Documentation](/tfs/index).</p> 
         <p><i>[Visual Studio Team Services is now Azure DevOps Services](/azure/devops/user-guide/what-happened-vsts)</i></p><br/>
         <ul class="pivots">
             <li>
@@ -198,7 +198,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Azure Test Plans</h3>
-                                                            <p>Improve the overall code quality of your apps by using manual, exploratory, or load-based testing services.</p>
+                                                            <p>Improve the overall code quality of your apps by using manual and exploratory testing services.</p>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -52,6 +52,8 @@ Each organization gets its own free tier of Azure DevOps services (up to five us
 * Load testing (20,000 VUMs per month)
 * Unlimited stakeholders
 
+[!INCLUDE [loadtest-deprecated-include](../test/_shared/loadtest-deprecated-include.md)]
+
 ### How many organizations do you need?
 
 When you're starting out with Azure DevOps, begin with one organization. Then, you can add additional organizations&mdash;which may require different security models&mdash;later. If you only have a single code repo or project, you don't need more than one organization. If you have separate teams that need to work on code or other projects in isolation from one another, consider creating separate organizations for those teams. They'll have different URLs. Add projects, teams, and repos, as necessary, before you add another organization.
