@@ -41,6 +41,8 @@ The Free tier includes:
 > [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests that you run. By default, paid usage is turned off for your organization.
 > You can only enable paid usage via the Azure portal.
 
+[!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
+
 ## Prerequisites
 
 The first time that you set up billing for your organization, whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, Azure DevOps tab, you need:

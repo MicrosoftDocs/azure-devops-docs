@@ -18,6 +18,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
+[!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
+
 ## Azure DevOps
 
 In this quickstart, you learn how to enable paid load testing in Azure DevOps.

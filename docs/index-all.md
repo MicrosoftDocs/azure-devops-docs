@@ -208,7 +208,6 @@ featureFlags:
                                                         <p><a href="/azure/devops/test/index">Exploratory &amp; manual testing</a></p>
 														<p><a href="/azure/devops/project/feedback/index">Request stakeholder feedback</a></p>
 														<p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
-														<p><a href="/azure/devops/test/load-test/index">Load testing</a></p>
 														<p><a href="/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
                                                     </div>
                                                 </div>

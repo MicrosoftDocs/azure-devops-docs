@@ -64,7 +64,6 @@ One of the main advantages to working with Azure DevOps is the suite of tools an
 - Define builds
 - Unit test your code 
 - Run tests with your builds 
-- Performance test your apps
 - Perform exploratory tests
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  

@@ -83,9 +83,6 @@
     - name: Exploratory & manual testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/test/index
-    - name: Load testing
-      tocHref: /azure/devops/test/load-test/
-      topicHref: /azure/devops/test/load-test/index
     - name: Continuous testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/pipelines/languages/dotnet-core.md#run-your-tests

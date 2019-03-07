@@ -23,7 +23,7 @@ Azure DevOps Services is a cloud service for collaborating on code development. 
 - Git repositories for source control of your code
 - Build and release services to support continuous integration and delivery of your apps
 - Agile tools to support planning and tracking your work, code defects, and issues using Kanban and Scrum methods
-- Many tools to test your apps, including manual/exploratory testing, load testing, and continuous testing
+- Many tools to test your apps, including manual/exploratory testing and continuous testing
 - Highly customizable dashboards for sharing progress and trends
 - Built-in wiki for sharing information with your team
 
@@ -37,8 +37,7 @@ Choose Azure DevOps Services when you want the following results:
 - Elastic scale
 - Rock-solid security ([learn more about data protection](../articles/team-services-security-whitepaper.md))
 
-
-You'll also have access to cloud load testing, cloud build servers, and application insights.
+You'll also have access to cloud build and deployment servers, and application insights.
 
 ## Where do I start?
 
