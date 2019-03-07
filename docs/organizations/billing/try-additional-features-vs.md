@@ -88,7 +88,7 @@ To [cancel a paid extension](../../marketplace/uninstall-disable-extensions.md),
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Buy cloud-based load testing](buy-load-testing-vs.md)
+> [Buy CI/CD for Azure DevOps](buy-more-build-vs.md)
 
 ## Related articles
 
