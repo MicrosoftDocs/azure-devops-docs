@@ -17,6 +17,8 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
+[!INCLUDE [loadtest-deprecated-include](../../../test/_shared/loadtest-deprecated-include.md)]
+
 Use this task in a build or release pipeline to run the Quick Web Performance Test to easily verify your web application exists and is responsive.
 The task generates load against an application URL
 using the Azure Pipelines Cloud-based Load Test Service based in Microsoft Azure.
@@ -53,12 +55,6 @@ The agent must have the following capability:
 ## More Information
 
 * [Cloud-based Load Testing](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs)
-* [Performance testing video and Q&A](../../../test/load-test/reference-qa.md)
-
-## Related tasks
-
-* [Cloud-based Load Test](cloud-based-load-test.md)  
-* [Cloud-based Apache JMeter Load Test](run-jmeter-load-test.md)  
 
 ## Open source
 

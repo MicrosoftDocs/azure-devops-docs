@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/07/2019
+ms.date: 03/06/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -176,6 +176,16 @@ Depending on context, other functions may be available as well.
 * Converts right parameters to match type of left parameter. Equality comparison evaluates `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after first match
+
+::: moniker range="> azure-devops-2019"
+
+### join
+* Concatenates all elements in the right parameter array, separated by the left parameter string.
+* Min parameters: 2. Max parameters: 2
+* Each element in the array is converted to a string. Complex objects are converted to empty string.
+* If the right parameter is not an array, the result is the right parameter converted to a string.
+
+::: moniker-end
 
 ### le
 * Evaluates `True` if left parameter is less than or equal to the right parameter

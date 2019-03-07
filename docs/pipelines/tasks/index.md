@@ -98,9 +98,9 @@ monikerRange: '>= tfs-2015'
 | Task | Versions |
 | ---- | -------- |
 | ![icon](test/_img/appcentertest.png) [App Center Test](test/app-center-test.md). Test mobile app packages with Visual Studio App Center | Azure Pipelines, TFS 2015.3 and newer |
-| ![icon](test/_img/apache-jmeter-load-test.png) [Cloud-based Apache JMeter Load Test](test/run-jmeter-load-test.md). Runs the Apache JMeter load test in cloud | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test](test/cloud-based-load-test.md). Runs the load test in cloud, with Azure Pipelines | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with Azure Pipelines | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](test/_img/apache-jmeter-load-test.png) [Cloud-based Apache JMeter Load Test](test/run-jmeter-load-test.md). Runs the Apache JMeter load test in cloud. [Deprecated](../../test/load-test/overview.md) | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](test/_img/cloud-based-load-test-icon.png) [Cloud-based Load Test](test/cloud-based-load-test.md). Runs the load test in cloud, with Azure Pipelines. [Deprecated](../../test/load-test/overview.md) | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](test/_img/web-based-perf-icon.png) [Cloud-based Web Performance Test](test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with Azure Pipelines. [Deprecated](../../test/load-test/overview.md) | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](test/_img/publish-code-coverage-results-icon.png) [Publish Code Coverage Results](test/publish-code-coverage-results.md). Publish code coverage results to Azure Pipelines/TFS | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](test/_img/publish-test-results-icon.png) [Publish Test Results](test/publish-test-results.md). Publish Test Results to Azure Pipelines/TFS | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](test/_img/run-functional-tests-icon.png) [Run Functional Tests](test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | Azure Pipelines, TFS 2015.3 and newer |
