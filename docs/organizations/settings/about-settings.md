@@ -359,7 +359,6 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Start free trials for paid features and extensions](../billing/try-additional-features-vs.md)</li>
 <li>[Pay for users (Basic)](../billing/buy-basic-access-add-users.md)</li>
 <li>[Buy CI/CD](../billing/buy-more-build-vs.md)</li>
-<li>[Buy cloud-based load testing](../billing/buy-load-testing-vs.md)</li>
 <li>[Add a user to make purchases](../billing/add-backup-billing-managers.md)</li>
 </ul></td>
 <td>All billing is managed through Azure. To learn more, see [Billing overview](../billing/overview.md). </td>

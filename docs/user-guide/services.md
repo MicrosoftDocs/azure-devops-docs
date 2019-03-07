@@ -149,9 +149,9 @@ Use pipelines to implement continuous integration and continuous delivery.
 
 To learn more, see [Continuous integration on any platform](../pipelines/overview.md).
 
-## Manual, exploratory, and load testing  
+## Manual and exploratory testing  
 
-Test features support manual and exploratory testing, load or performance testing, and continuous testing.  
+Test features support manual and exploratory testing, and continuous testing.  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -260,7 +260,6 @@ The following services support your DevOps operations:
 
 - Cloud-based, Microsoft-hosted build and deployment agents  
 - On-premises self-hosted agents to support build and deployment  
-- Cloud-based performance/load testing so you can load test your code by simulating high traffic  
 
 To learn more, see [Pricing](https://visualstudio.microsoft.com/team-services/pricing/).
 
