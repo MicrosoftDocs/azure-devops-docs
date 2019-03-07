@@ -195,7 +195,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Integrations](_img/github-ent/open-project-settings-github-connections.png)   
 
-	Or, choose a **personal access token** or **usernmae and password**, if you are choosing to make your connection with those credentials.
+	Or, choose a **personal access token** or **username and password**, if you are choosing to make your connection with those credentials.
 
 	To create a PAT, see [Creating a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).
 

@@ -40,8 +40,7 @@ Your organization includes five free users
 with Basic access, plus unlimited Visual Studio
 subscribers and stakeholders at no extra charge.
 Your organization also includes free monthly amounts
-of additional services, like build and deployment,
-and cloud-based load testing.
+of additional services such as build and deployment.
 
 ## Connect to your organization
 

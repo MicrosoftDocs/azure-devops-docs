@@ -30,6 +30,8 @@ You need to set up billing when you need more than the *free tier* of resources 
 * One self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
 
+[!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
+
 You also need to set up billing to buy other features (for your users) that are offered by Microsoft or by other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), on the Azure DevOps tab.
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
