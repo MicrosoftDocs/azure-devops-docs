@@ -1,6 +1,6 @@
 ---
 title: Publish Test Results task
-description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
+description: Publish Test Results to integrate test reporting into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.prod: devops
 ms.technology: devops-cicd
@@ -17,25 +17,36 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build pipeline to publish test and code coverage results produced when running tests to Azure Pipelines
-or TFS in order to obtain test and coverage reporting. The test result formats supported by the task include [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
+This task publishes test results to Azure Pipelines or TFS when tests are executed
+to provide a comprehensive test reporting and analytics experience.
+You can use the test runner of your choice that supports the results format
+you require. Supported results formats include [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
 [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
 
-The task supports popular coverage result formats such as [Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
-
-::: moniker range="<= tfs-2018"
-
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
-
-::: moniker-end
-
-The [Visual Studio Test task](vstest.md) automatically publishes test results to the pipeline, while tasks such as
-[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+Other built-in tasks such as [Visual Studio Test task](vstest.md) automatically publish
+test results to the pipeline, while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md),
+[Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
 provide publishing results as an option within the task.
-If you are using these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
+If you are using any of these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
-The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md) in the pipeline summary and help measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership. 
+The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
+in the pipeline summary and help you to measure pipeline quality, review traceability,
+troubleshoot failures, and drive failure ownership. 
+
+The following example shows a Maven task configured to publish test results.
+
+![Open the test history page](_img/publish-test-results.png)
+
+You can also use this task in a build pipeline to **publish code coverage results**
+produced when running tests to Azure Pipelines or TFS in order to obtain coverage reporting. 
+The task supports popular coverage result formats such as [Cobertura](http://cobertura.github.io/cobertura/)
+and [JaCoCo](http://www.eclemma.org/jacoco/).
 
 <a name="demands"></a>
 

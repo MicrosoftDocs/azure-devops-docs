@@ -3,7 +3,7 @@
 title: Understand differences between Azure DevOps Services and Azure DevOps Server   
 titleSuffix: Azure DevOps
 ms.custom: seodec18   
-description: Understand the fundamental differences between Azure DevOps Services and Azure DevOps Server, formerly named Visual Studio Team Services (VSTS) and Visual Studio Team Foundation Server (TFS)
+description: Understand the fundamental differences between Azure DevOps Services and Azure DevOps Server, formerly named Visual Studio Team Services (VSTS), and Team Foundation Server (TFS)
 ms.prod: devops  
 ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
@@ -12,31 +12,31 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 12/14/2018 
+ms.date: 03/07/2019 
 ---
 
 # Azure DevOps Services vs. Azure DevOps Server
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps Services and Azure DevOps Server were formerly named Visual Studio Team Services (VSTS) and Visual Studio Team Foundation Server (TFS). Both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
+Azure DevOps Services and Azure DevOps Server were formerly named Visual Studio Team Services (VSTS) and Visual Studio Team Foundation Server (TFS). Both offerings provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
-Azure DevOps Services is the cloud offering that provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
+Azure DevOps Services is the **cloud offering** that provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 
-Azure DevOps Server is the on-premises offering that's built on a SQL Server back end. Companies usually choose this when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
+Azure DevOps Server is the **on-premises offering** that's built on a SQL Server back end. Companies usually choose on-premises when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
 
 Although both offerings provide the same [essential services](services.md), compared with Azure DevOps Server, Azure DevOps Services offers the following added benefits:
 
-- Simplified server management
+- Simplified server management.
 - Immediate access to the latest and greatest features
-- Improved connectivity with remote sites
+- Improved connectivity with remote sites.
 - A transition from capital expenditures (servers and the like) to operational expenditures (subscriptions).
 
 To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, consider the following key differences.
 
 ## Fundamental differences between Azure DevOps Services and Azure DevOps Server
 
-Consider the differences in these areas when contemplating a move from  Azure DevOps Server to Azure DevOps Services:
+Consider the differences in the following areas when contemplating a move from  Azure DevOps Server to Azure DevOps Services:
 
 - [Scope and scale data](#scope-scale-data)
 - [Authentication](#authentication)
@@ -45,16 +45,16 @@ Consider the differences in these areas when contemplating a move from  Azure De
 - [Security and data protection](#security-data)
 
 **Differences in specific feature areas**  
-Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between the features that are available in the two products. Some  Azure DevOps Server features aren't supported in Azure DevOps Services at all. For example, Azure DevOps Services doesn't support integration with SQL Server Analysis Services to support reporting.
+Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between the features that are available in the two products. Some Azure DevOps Server features aren't supported in Azure DevOps Services. For example, Azure DevOps Services doesn't support integration with SQL Server Analysis Services to support reporting.
 
-Two additional areas differ in their support:
+Two of the following additional areas differ in their support:
 
 - [Process customization](#process-customization)
 - [Reporting](#reporting)
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
 
-Are you on TFS or Azure DevOps Server and considering moving? Read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-from-tfs.md) to understand your options.
+Are you on Azure DevOps Server and considering moving? Read [Migration options](../articles/migrate-from-tfs.md) to understand your options.
 
 <!---
 ## Fundamental differences between TFS and Azure DevOps Services
@@ -146,11 +146,11 @@ Users with an Azure DevOps Server/TFS Client Access License (CAL) can have Basic
 In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users.md)
 to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions.
 
-To give Basic access to more users, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md).
+To give Basic access to more users, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md).
 Otherwise, all other users get Stakeholder access.
 
 If you use Azure AD groups to give access to groups of users, Azure DevOps Services assigns the appropriate
-access levels automatically at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you have to assign access levels to each user explicitly.
+access levels automatically at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you must assign access levels to each user explicitly.
 
 <a name="security-data"></a>
 
@@ -223,8 +223,8 @@ To learn more about the Analytics service and future releases, see our [Reportin
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - Azure DevOps Services](https://visualstudio.microsoft.com/team-services/pricing/)
-- [Pricing - TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
+- [Azure DevOps Services - pricing](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps Server - pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
