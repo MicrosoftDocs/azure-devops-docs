@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 12/14/2018
+ms.date: 03/08/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,14 +18,15 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
+Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
-If you're new to Azure DevOps Services or TFS, see the [Key concepts](concepts.md) and other overview topics designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
+If you're new to Azure DevOps, see the [Key concepts](concepts.md) and other overview articles that are designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
 
 > [!NOTE]  
-> Some features are platform dependent and are noted as follows:  
->- **Azure DevOps Services** - Available from Azure DevOps Services (cloud service)  
->- **TFS** - Available from Team Foundation Server (on-premises)
+> Some features are platform-dependent, based on the following two platforms:
+> 
+>- **Azure DevOps Services** - cloud service
+>- **Azure DevOps Server** - on-premises
 
 ## Access and supported clients
 
@@ -38,7 +39,7 @@ If you're new to Azure DevOps Services or TFS, see the [Key concepts](concepts.m
 <p><b>Browsers</b></p>
 [Connect to the web portal](../organizations/projects/connect-to-projects.md) from the latest versions of these supported browsers:  
 - Chrome  
-- Edge    
+- Microsoft Edge    
 - Firefox   
 - Internet Explorer   
 - Safari (Mac)        
@@ -84,7 +85,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Access levels</b></p>
 <p>All users that you add to your Azure DevOps organization or to your TFS project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md)   
+- [Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md)
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
@@ -144,7 +145,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose the ![Change project icon](../boards/_img/icons/change-team-project-icon.png) Change project menu option ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move). </p>
+<p>Choose the ![Change project icon](../boards/_img/icons/change-team-project-icon.png) Change project menu option, ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move). </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose ![full screen icon](../boards/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/_img/icons/exitfullscreen_icon.png)  to enter or exit full screen mode.  </p>
@@ -169,7 +170,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you've added a task instead of a bug and want to change the work item type to bug, you can. Choose the ![Change type icon](../boards/_img/icons/change-type-icon.png) Change type option from the ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [change the work item type](../boards/backlogs/remove-delete-work-items.md#change-type). </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the ![Change type icon](../boards/_img/icons/change-type-icon.png) Change type option from the ![Actions icon](../boards/_img/icons/actions-icon.png) Actions menu in a work item form to [change the work item type](../boards/backlogs/remove-delete-work-items.md#change-type). </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use **Show/Hide in progress** to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
@@ -221,7 +222,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Rich text comments</b></p>
-<p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md). Choose ![full screen icon](../boards/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/_img/icons/exitfullscreen_icon.png)  to expand or contract the viewing area. </p>
+<p>Describe and comment on work using [formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md). Choose ![full screen icon](../boards/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../boards/_img/icons/exitfullscreen_icon.png)  to expand or contract the viewing area. </p>
 
 
 <p><b>Clear HTML formatting </b></p>
@@ -247,7 +248,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage bugs</b></p>
-<p>[Capture and triage bugs](../boards/backlogs/manage-bugs.md) using a variety of tools. </p>
+<p>[Capture and triage bugs](../boards/backlogs/manage-bugs.md) using different kinds of tools. </p>
 
 
 <p><b>Choose how you want to track bugs</b></p>
@@ -264,7 +265,7 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Tags</b></p>
-<p>[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries. Also, you can [bulk update work items](../boards/backlogs/bulk-modify-work-items.md#tags) or [use work item templates](../boards/backlogs/work-item-template.md) to add or remove tags. </p>
+<p>[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries. [Bulk update work items](../boards/backlogs/bulk-modify-work-items.md#tags) or [use work item templates](../boards/backlogs/work-item-template.md) to add or remove tags. </p>
 ![Add tags to filter backlogs, boards, and queries](_img/features/alm-feature-tags.png)  
 <br/>
 
@@ -284,12 +285,12 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Integrate Git development with work tracking </b></p>
-<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
+<p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development done to support the specific work item.  </p>
 ![Work item form Development section](_img/features/alm-feature-git-dev-section.png)  
 <br/>
 
 
-<p><b>Verify a bug, re-run test case</b></p>
+<p><b>Verify a bug, rerun test case</b></p>
 <p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../test/run-manual-tests.md). </p>
 
 
@@ -840,7 +841,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with Git in Visual Studio </b></p>
-<p>To get started working with Git, [clone a repository, add code, and create topic branches in Azure DevOps Services](../repos/git/create-new-repo.md) or [Visual Studio](../repos/git/gitquickstart.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
+<p>To get started working with Git, [clone a repository, add code, and create branches in Azure DevOps Services](../repos/git/create-new-repo.md) or [Visual Studio](../repos/git/gitquickstart.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
 ![Visual Studio Git UI pages](_img/features/features-git-vs-ui.png)  
 <br/>
 
@@ -918,7 +919,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Grant an [Exempt from policy enforcement permission](../repos/git/branch-policies.md) to a user or group.</p>
 
 <p><b>Rebase a branch</b></p>
-<p>Before merging a topic branch into master, you may choose to first [rebase your topic branch onto the latest commit in master](../repos/git/rebase.md).</p>
+<p>Before merging a branch into master, you may choose to first [rebase your branch onto the latest commit in master](../repos/git/rebase.md).</p>
 
 
 
@@ -1173,7 +1174,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Automate deployments</b></p>
-<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](../pipelines/overview.md). Deploy applications across platforms to all environments of the pipeline with just one click.</p>
+<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](../pipelines/overview.md). Deploy applications across platforms to all environments of the pipeline with just one selection.</p>
 ![Release Manager](_img/features/alm-feature-release-1.png)  
 <br />
 
