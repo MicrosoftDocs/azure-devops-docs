@@ -9,7 +9,7 @@ ms.assetid: 4
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/15/2019
+ms.date: 03/08/2019
 ms.topic: overview
 monikerRange: 'azure-devops'
 ---
@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-Azure DevOps Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client. The features are included, as follows:
+Azure DevOps Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client. The following features are included:
 
 - Git repositories for source control of your code
 - Build and release services to support continuous integration and delivery of your apps
@@ -31,13 +31,13 @@ The Azure DevOps ecosystem also provides support for adding extensions and integ
 
 Choose Azure DevOps Services when you want the following results:
 
-- Quick set up
+- Quick set-up
 - Maintenance-free operations
 - Easy collaboration across domains
 - Elastic scale
 - Rock-solid security ([learn more about data protection](../articles/team-services-security-whitepaper.md))
 
-You'll also have access to cloud build and deployment servers, and application insights.
+You also have access to cloud build and deployment servers, and application insights.
 
 ## Where do I start?
 
