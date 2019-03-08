@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/14/2018
+ms.date: 03/08/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -28,12 +28,10 @@ There are two paid features in Azure DevOps that are offered by Microsoft that y
 
 During the trial, any user in your organization whose access level is Basic (including Visual Studio subscribers) can use these features. When the trial ends, you can choose to pay for a certain number of users on an ongoing basis and you assign the feature to users on the User page.
 
-This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including the following:
+This same process applies to paid extensions that are offered by other publishers within the Visual Studio Marketplace, including the following extensions:
 
 - [Timetracker](https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker)
-- [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards)
 - [Enhanced Export PRO](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-PRO-EnhancedExport)
-- [Code Quality NDepend](https://marketplace.visualstudio.com/items?itemName=ndepend.ndependextension)
 - [Backlog Essentials](https://marketplace.visualstudio.com/items?itemName=agile-extensions.backlog-essentials)
 
 If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.

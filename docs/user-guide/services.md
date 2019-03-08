@@ -289,13 +289,13 @@ There are features and tasks associated with administering a collaborative softw
 
 ## Related articles
 
-- [Understand differences between Azure DevOps Services and TFS](about-azure-devops-services-tfs.md)
+- [Understand differences between Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md)
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)  
-- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 - [Azure DevOps data protection overview](../articles/team-services-security-whitepaper.md)
 
 <!---
-**System Center integration**: Enables a release pipeline to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Azure DevOps Services or TFS to provision, start, stop, or snapshot VMware virtual machines. 
+**System Center integration**: Enables a release pipeline to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Azure DevOps Services or Azure DevOps Server to provision, start, stop, or snapshot VMware virtual machines. 
 -->
