@@ -9,8 +9,8 @@ ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
 ms.custom: seodec18
-ms.date: 03/06/2019
-monikerRange: '>= azure-devops-2019'
+ms.date: 03/09/2019
+monikerRange: 'azure-devops'
 ---
 
 # Build GitHub repositories

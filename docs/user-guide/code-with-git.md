@@ -9,7 +9,7 @@ ms.technology: devops-new-user
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 03/08/2019
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ---
@@ -35,11 +35,11 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. From your web browser, open the project for your organization, and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
-  ![Screenshot of project in Azure DevOps, with Repos highlighted](_img/project-select-repos-vert.png)
+  ![Screenshot of project with Repos highlighted](_img/project-select-repos-vert.png)
 
 2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
   
-  ![Screenshot of project in Azure DevOps, with Copy icon highlighted](_img/code-with-git-clone-repo.png)
+  ![Screenshot of project with Copy icon highlighted](_img/code-with-git-clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
@@ -61,21 +61,21 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
   ![Screenshot of project in web browser, with Copy icon highlighted](_img/code-with-git-clone-repo-prev.png)
 
-3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. The following example shows this:
+3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso->demo
   ```
   
-  A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo, into a new folder for you to work with.
+  A copy of the code downloads into a new folder in Git. The code includes all of your [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo.
 
-  Keep this command window open (you'll use it in the following steps).
+  Keep the command window open (use it in the following steps).
 
 ::: moniker-end
 
 ## Work with the code
 
-In the following steps, we make a change to the files on your computer, commit the changes locally, and push the commit to the repo that is stored on the server. We can then view the changes.
+In the following steps, we make a change to the files on your computer, commit the changes locally, and push the commit to the repo stored on the server. We can then view the changes.
 
 1. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, and make some changes. Then save and close the file.
 
@@ -116,7 +116,7 @@ In the following steps, we make a change to the files on your computer, commit t
 
 ::: moniker range="<= tfs-2018"
 
-1. Switch back to the web portal, and select **History** from the **Code** tab to view your new commit. The new repo has two commits: the first commit, where the README and .gitignore were added when the repo was created, and the commit you just made.
+1. Switch back to the web portal, and select **History** from the **Code** tab to view your new commit. Two commits appear: the first commit, where the README and .gitignore were added upon repo creation, and the commit you just made.
 
   ![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
 
@@ -130,7 +130,8 @@ In the following steps, we make a change to the files on your computer, commit t
 
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
-> or
-> [Plan & track work](plan-track-work.md).
 
-Or, [learn more about working with a Git repo](../repos/git/index.md).
+## Related articles
+
+- [Plan & track work](plan-track-work.md)
+- [Learn more about working with a Git repo](../repos/git/index.md).

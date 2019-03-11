@@ -72,7 +72,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
    ![Work item add more test cases](_img/work-item-add-more-test-cases.png)
 
-	To add details to the test case, open it. You can select the title, double-click the inline item, or open the context menu and choose **Open**.
+	To add details to the test case, open it. You can select the title, double-select the inline item, or open the context menu and choose **Open**.
 
    ![Open test case from Kanban board](_img/open-test-case-form-from-kanban-board.png)
 
@@ -100,7 +100,7 @@ Prior to running the test, you must add details.
 
 	<img src="../boards/boards/_img/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 2px solid #C3C3C3;" />   
 
-	To add details to the test case, open it. You can select the title, double-click the inline item, or open the context menu and choose **Open**.
+	To add details to the test case, open it. You can select the title, double-select the inline item, or open the context menu and choose **Open**.
 
 	<img src="../boards/boards/_img/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 2px solid #C3C3C3;" />
 
