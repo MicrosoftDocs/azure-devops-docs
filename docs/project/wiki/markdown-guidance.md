@@ -11,20 +11,16 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 03/06/2019
+ms.date: 02/01/2019
 ---
 
-# Syntax guidance for basic Markdown usage
+# Syntax guidance for Markdown usage
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
-
-[!INCLUDE [version-selector](../../_shared/version-selector.md)]
 
 Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
-
-For additional syntax that's supported for Wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
 
 You can provide guidance in the following areas using Markdown:
 
@@ -76,7 +72,9 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker-end
 
-## Headers
+## Basic format elements
+
+### Headers
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
@@ -95,7 +93,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 <img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
 
-## Paragraphs and line breaks
+### Paragraphs and line breaks
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
@@ -137,7 +135,7 @@ Add two spaces prior to the end of the line.
 
 Space is added in between paragraphs.
 
-## Block quotes
+### Block quotes
 
 Quote previous comments or text to set the context for your comment or text.
 
@@ -157,7 +155,7 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 ![Quoting in Markdown](_img/markdown-guidance/markdown_quote2.jpg)
 
-## Horizontal rules
+### Horizontal rules
 
 To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
@@ -180,7 +178,7 @@ above
 
 below    
 
-## Emphasis (bold, italics, strikethrough)  
+### Emphasis (bold, italics, strikethrough)  
 
 You can emphasize text by applying bold, italics, or strikethrough to characters:
 
@@ -219,7 +217,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 **_Bold, italicized text_**
 **~~Bold, strike-through text~~**  
 
-## Code highlighting
+### Code highlighting
 
 Highlight suggested code segments using code highlight blocks.
 To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;&#96;</code>) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>).
@@ -394,13 +392,10 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 <li>Absolute path in TFVC: ```[text to display]($/project/folder/target.md)```</li>
 <li>URL: ```[text to display](http://address.com)```  </li>
 </ul>
-
-**Supported links for Markdown widget:**
-
+<p>**Supported links for [Markdown widget](../../report/dashboards/widget-catalog.md#markdown-widget):**</p>
 <ul>
 <li>URL: ```[text to display](http://address.com)```  </li>
 </ul>
-
 **Supported links for Wiki:**  
 <ul>
 <li>Absolute path of Wiki pages: ```[text to display](/parent-page/child-page)``` </li>
@@ -408,7 +403,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 </ul>
 
 > [!NOTE]  
-> Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
+> Links to documents on file shares using `file://` aren't supported on TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links).
 
@@ -423,7 +418,18 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 ::: moniker range=">= tfs-2018"
 
+<a id="link-work-items">  </a>
 
+### Link to work items from a Wiki page
+
+Enter the pound sign (`#`), and then enter a work item ID.
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> This feature is available with TFS 2018.2 and later versions.  
+::: moniker-end
 
 <a id="relative-links">  </a>
 
@@ -481,7 +487,7 @@ In wiki, you can also reference heading in another page:
 
 <a name="images"> </a>
 
-## Images
+## Images 
 
 To highlight issues or make things more interesting, you can add images and animated GIFs to the following in your pull requests:
 
@@ -681,7 +687,64 @@ Attachments support the following file formats.
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2018"
+<a name="html"></a>
 
+## HTML tag support in wiki pages
+
+In wiki pages, you can also create rich content using HTML tags.
+::: moniker-end
+::: moniker range="tfs-2018"
+> [!NOTE]  
+> Pasting rich content as HTML is supported in TFS 2018.2 and later versions.
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+**Example - Embedded video**
+
+```HTML
+<video src="path of the video file" width=400 controls>
+</video>
+```
+
+**For example:**  
+```HTML
+<video src="https://sec.ch9.ms/ch9/7247/7c8ddc1a-348b-4ba9-ab61-51fded6e7247/vstswiki_high.mp4" width=400 controls>
+</video>
+```
+
+</br>
+**Result:**
+</br>
+<video src="_img/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
+</video>
+
+**Example - Rich text format**
+
+```HTML
+<p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>
+<p><tt>This text is teletype text.</tt></p>
+<font color="blue">Colored text</font>
+<center>This text is center-aligned.</center>
+<p>This text contains <sup>superscript</sup> text.</p> 
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>The project status is <span style="color:green;font-weight:bold">GREEN</span> even though the bug count / developer may be in <span style="color:red;font-weight:bold">red.</span> - Capability of span
+<p><small>Disclaimer: Wiki also supports showing small text</small></p>
+<p><big>Bigger text</big></p>
+```
+
+**Result:**
+<p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>
+<p><tt>This text is teletype text.</tt></p>
+<font color="blue">Colored text</font>
+<center>This text is center-aligned.</center>
+<p>This text contains <sup>superscript</sup> text.</p> 
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>The project status is <span style="color:green;font-weight:bold">GREEN</span> even though the bug count / developer may be in <span style="color:red;font-weight:bold">red.</span> - Capability of span
+<p><small>Disclaimer: Wiki also supports showing small text</small></p>
+<p><big>Bigger text</big></p>
+
+::: moniker-end
 
 ::: moniker range=">=tfs-2018"
 
@@ -760,12 +823,112 @@ $$
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+<a id="toc-wiki" > </a>
+
+## Table of contents (TOC) for Wiki pages
+
+You can now just add a tag [[\_TOC\_]] to enable a table of contents in your page. The TOC is generated when the tag is added and there is at least one heading in the page.
+
+> [!div class="mx-imgBorder"]  
+> ![Table of contents](_img/toc_sample.png)
+
+The [[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
+Only Markdown headings are considered for TOC (HTML heading tags aren't).
+
+All HTML and Markdown tags are stripped from the headings while adding it inside the TOC block.
+For example: Adding bold and italics to a heading text renders the TOC as follows.
+
+> [!div class="mx-imgBorder"]
+> ![Tags for TOC](_img/toc_tags.png)
+
+Consistency is maintained in the formatting in TOC.
+
+> [!NOTE] 
+> The tag [[\_TOC\_]] is case-sensitive. For example, [[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+## Embed Videos in a Wiki page
+
+To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
+
+```markdown
+::: video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+:::
+```
+The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
+
+**Result:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OtqFyBA6Dbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+(The ending ":::" is required to prevent a break in the page)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+## YAML tags
+
+Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
+
+Basic example:
+
+```yaml
+---
+tag: post
+title: Hello world
+---
+```
+ 
+![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
+
+Tags with list:
+```yaml
+---
+tags: 
+- post
+- code
+- web
+title: Hello world
+---
+```
+
+![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+## Embed Azure Boards query results in Wiki
+
+To embed Azure Boards query results in a wiki page as a table, use the following syntax:
+
+```boards-query
+::: query-table <queryid>
+:::
+```
+
+Alternatively, you can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+
+> ![Query Results Icon](_img/query_selector_icon.png)
+
+> ![Query Selector Pane](_img/query_selector_pane.png)
+
+
+::: moniker-end
+
 ## Related articles  
 
 - [Project page or Welcome pages](project-vision-status.md)
 - [README files](../../repos/git/create-a-readme.md)
+- [Pull requests](../../repos/git/pull-requests.md)
 - [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
-- [Add and edit Wiki pages](add-edit-wiki.md)
+- [Wiki](add-edit-wiki.md)
   
