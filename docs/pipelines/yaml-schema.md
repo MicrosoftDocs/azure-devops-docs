@@ -945,6 +945,7 @@ steps:
   fetchDepth: number  # the depth of commits to ask Git to fetch
   lfs: boolean  # whether to download Git-LFS files
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
+  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1)
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
@@ -961,6 +962,7 @@ Or to avoid syncing sources at all:
   clean: false
   fetchDepth: 5
   lfs: true
+  path: PutMyCodeHere
 ```
 
 ---
