@@ -136,12 +136,13 @@ The following features are supported for the team project wiki.
 ### Format wiki content
 
 - [Markdown format](markdown-guidance.md)  
-- [HTML tags](wiki-markdown-guidance.md#html-tag-support-in-wiki-pages)  
+- [HTML tags](markdown-guidance.md#html)  
 - [Insert and resize images](markdown-guidance.md#images)
-- [Link to work items using #](wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+- [Link to work items using #](markdown-guidance.md#link-work-items)
 - [Attach files](markdown-guidance.md#attach)  
 - [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)  
-- [Table of contents (TOC) for Wiki pages](wiki-markdown-guidance.md#table-of-contents-toc-for-wiki-pages)
+- [Table of contents (TOC) for Wiki pages](markdown-guidance.md#toc-wiki)  
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -152,10 +153,10 @@ The following features are supported for the team project wiki you create in the
 > |Feature | TFS version |  
 > |--------|--------------|  
 > |[Markdown format](markdown-guidance.md) | TFS 2018 |
-> |[HTML tags](wiki-markdown-guidance.md#html-tag-support-in-wiki-pages) | TFS 2018 |
+> |[HTML tags](markdown-guidance.md#html) | TFS 2018 |
 > |[Insert and resize images](markdown-guidance.md#images) | TFS 2018 |
-> |[Link to work items using #](wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page) | TFS 2018 |  
-> |[Attach files](markdown-guidance.md#attachments) | TFS 2018 |  
+> |[Link to work items using #](markdown-guidance.md#link-work-items) | TFS 2018 |  
+> |[Attach files](markdown-guidance.md#attach) | TFS 2018 |  
 > |[Filter Wiki TOC](filter-print-wiki.md) | TFS 2018 |  
 > |[Mathematical notation and characters](markdown-guidance.md#mathematical-notation) |TFS 2018.2 |
 > |[Preview a Wiki page while editing](add-edit-wiki.md) | TFS 2018.2 |
