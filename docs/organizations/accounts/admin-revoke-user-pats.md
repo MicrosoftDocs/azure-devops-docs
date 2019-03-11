@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/22/2019
+ms.date: 03/06/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -54,11 +54,11 @@ Users can choose an expiry date for their personal access token, not to exceed o
 
 A: Once a user is removed from Azure AD, the PATs and FedAuth tokens are invalidated within an hour, since the refresh token is valid only for one hour.
 
-### What about JWTs?
+### What about JSON web tokens (JWTs)?
 
-A: Revoke JWTs, issued as part of the OAuth flow, via the PowerShell script that we mentioned earlier in this article. However, you must use the date range option in the script.
+A: Revoke JWTs, issued as part of the OAuth flow, via the [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin). However, you must use the date range option in the script.
 
 ## Related articles
 
-- Learn [how Microsoft protects your projects and data in Azure DevOps](../../articles/team-services-security-whitepaper.md)
+- [How Microsoft protects your projects and data in Azure DevOps](../../articles/team-services-security-whitepaper.md)
 - [Create or revoke your personal access tokens](use-personal-access-tokens-to-authenticate.md)
