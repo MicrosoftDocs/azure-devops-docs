@@ -68,12 +68,10 @@ some or all of the items based on these estimates.
 
 ## Open your team's product backlog
 
-
 > [!NOTE]  
 > Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
 >
 > For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -100,25 +98,27 @@ some or all of the items based on these estimates.
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 
-::: moniker-end
+::: moniker-end  
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).  
 
-	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
-
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-	::: moniker range=">= tfs-2017 <= azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png) 
-	::: moniker-end
-	::: moniker range=">= tfs-2013 <= tfs-2015"
-	![Choose another team from the project menu](_img/capacity/vso-team-selector.png)
-	::: moniker-end
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png)  
 
+	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
+::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+	::: moniker range=">= tfs-2017 <= tfs-2018"  
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png)  
+	::: moniker-end  
+	::: moniker range=">= tfs-2013 <= tfs-2015"  
+	![Choose another team from the project menu](_img/capacity/vso-team-selector.png)  
+	::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
 0. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
@@ -173,6 +173,7 @@ Select one or more items and drag them to one of the listed sprints.
 
 
 ::: moniker range=">= tfs-2015"
+
 <a id="bulk-modify">  </a>
 
 ## Use multi-select to bulk modify items
@@ -187,51 +188,28 @@ With multi-select, you can perform several actions on several work items at once
 - Change one or more field values
 - Add links
 - [Map items or change the parent an item is linked to](../backlogs/organize-backlog.md#mapping)
-::: moniker-end
 
-::: moniker range="tfs-2015"
-Multi-select of backlog work items requires TFS 2015.1 or later version.
-::: moniker-end
+::: moniker-end  
 
-::: moniker range=">= tfs-2015"
+::: moniker range="tfs-2015"  
+
+Multi-select of backlog work items requires TFS 2015.1 or later version.  
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015"  
+
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../_img/icons/context_menu.png)) or action (![actions icon](../_img/icons/actions-icon.png)) menu of one of the items. 
 
 To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
+
 ::: moniker-end
 
-<!---
-<a id="order"> </a>
-## Order, re-parent, and reassign items to different sprints
-When you need to change the order of an item, simply drag the item to its new location. Also, you can [re-parent an item using the mapping pane](../backlogs/organize-backlog.md), or simply drag it within the hierarchy to change its parent. 
-
-![Hierarchical view of backlogs](_img/assign-items-sprint/reparent-item-standard.png)
-
-Ordering and re-parenting backlog items requires that you don't nest items of the same type within each other. That is, you don't create product backlog items that are children of other product backlog items, or tasks that are children of tasks. You can only re-parent tasks under backlog items, backlog items under features, and features under epics. 
-
-If you receive the following message, [you can fix it by removing nested child items](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json).
-
-![Can't reorder with nested backlog items message](_img/nested_info.png)  
--->
- 
 ## Try this next
 Now that you've defined your sprint plan, your team's ready to begin work on the sprint tasks.
 
 > [!div class="nextstepaction"]
 > [2. Add tasks](add-tasks.md)
-
-<!---
- Use your [taskboard during your daily scrum meetings](task-board.md) to perform these tasks: 
-
-- Update task status and remaining work (daily updates of remaining work leads to smoother burndown charts)    
-- Review progress with the team during the daily Scrum meetings
-- Update items and address uncompleted work at the close of the sprint  
-
-Also, you can [monitor your burndown chart](sprint-burndown.md) to make sure your team remains on track throughout the sprint. 
-
-You can use [hotkeys and keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json) to navigate within the backlog list. 
--->
-
-
 
 ## Related articles
 

@@ -48,15 +48,11 @@ Deprecate and unpublish both respect [feed immutability](../feeds/immutability.m
 
 You must be a **contributor** to deprecate and an **owner** to unpublish.
 
-::: moniker range=">= azure-devops-2019"
 
 Choose the package from **Azure Artifacts** select the appropriate option from the menu:
 
 ![Unpublish npm package Azure DevOps Services](../_img/delete/deprecate-unpublish-npm-package-newnav.png)
 
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
 
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
@@ -95,13 +91,11 @@ There are two options available to remove a version of a NuGet package from a fe
 Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 ### Unlisting or deleting a NuGet package in Azure DevOps Services
 
 You must be a **contributor** to unlist and an **owner** to delete.
-
-::: moniker range=">= azure-devops-2019"
 
 Choose the package from **Azure Artifacts** and select the appropriate option from the menu:
 

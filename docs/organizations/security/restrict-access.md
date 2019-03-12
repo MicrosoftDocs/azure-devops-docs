@@ -186,7 +186,7 @@ For [On-premises XML process model](../../reference/on-premises-xml-process-mode
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-You achieve this by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group). 
+You achieve this by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
 
 > [!NOTE]   
 > These restriction types aren't available for organizations in Azure DevOps and the [Inheritance process model](../settings/work/inheritance-process-model.md). 

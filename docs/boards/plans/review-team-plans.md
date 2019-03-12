@@ -41,7 +41,7 @@ In this article you'll learn:
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops"  
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Installed the Delivery Plans extension](#install-plans).  
@@ -52,10 +52,10 @@ In this article you'll learn:
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
-- 
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Installed the Delivery Plans extension](#install-plans).  
@@ -66,7 +66,7 @@ In this article you'll learn:
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
-- 
+
 ::: moniker-end
 
 
@@ -100,7 +100,7 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 Once you have [installed Delivery Plans](#install-plans), the **Plans** appears under **Work**.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019"  
 
 0. Open **Boards>Plans**. 
 
@@ -117,11 +117,11 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
-::: moniker-end 
+	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png)  
+::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 0. Open **Boards>Plans**. 
 
@@ -130,20 +130,14 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 0. To add a plan, choose **New Plan** . 
 
-	::: moniker range="azure-devops"  
-	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](_img/plans/add-plan.png) 
-	::: moniker-end  
-	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Add a plan](_img/review-team-plans-no-plans-defined.png)  
-	::: moniker-end  
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
-
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
+
 ::: moniker-end
 
 When defining a plan, note the following:  
@@ -185,7 +179,6 @@ Once you've defined a few plans, you'll see them listed from the Plans page unde
 Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project.
 
 To open a plan, simply choose the plan name.  
-
 
 ## Interactive elements of plans, change the plan view  
  

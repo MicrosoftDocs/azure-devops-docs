@@ -154,18 +154,17 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.   
-	::: moniker range=">= tfs-2017"
+1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.  
+
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Open Admin context, project level](../settings/_img/areas/modify-areas-its-open-admin-context-ts.png)
 
 	If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)
-	::: moniker-end  
+	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
 2. Choose **Work** and then **Areas**.  
 
@@ -185,8 +184,6 @@ You define both areas and iterations for a project from the **Project Settings>W
 	
 	![Open the security dialog](../../reference/_img/ALM_CW_OpenSecurityDialog.png)  
 
-::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018 || azure-devops"
 0. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
 	For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
@@ -213,7 +210,7 @@ To manage permissions for a query or query folder, you must be the creator of th
 For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/example-queries.md).
 
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
 ## Edit or manage permissions for Delivery Plans 
@@ -232,7 +229,7 @@ To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans
 
 <a id="move-delete-permissions"></a>
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019"  
 ## Move or permanently delete work items 
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
@@ -262,10 +259,10 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 ![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
 
-To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
-::: moniker-end    
+To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
+::: moniker-end  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019"  
 
 <a id="process-permissions"></a>
 
@@ -285,12 +282,12 @@ To customize a process, you need to grant **Edit process**  permissions to a use
  
 	![Permissions for a process dialogue](_img/process/mprocess-security-dialog-inherited.png)    
 
->[!NOTE]  	  
+> [!NOTE]  	  
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"  
 ## Additional options for restricting access to work items   
 
 > [!NOTE]   

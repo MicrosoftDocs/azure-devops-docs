@@ -8,7 +8,7 @@ Give a team member access to your organization by adding their email address to 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![Organization settings](../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![Organization settings](/azure/devops/_shared/_img/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)
 

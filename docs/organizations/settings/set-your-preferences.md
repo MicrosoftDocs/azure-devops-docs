@@ -64,9 +64,10 @@ From your profile page, you can change your picture or other account preferences
 
 Locale settings include language, date and time pattern, time zone, and user interface theme.
 
-## Change profile settings  
 
 ::: moniker range=">= azure-devops-2019"  
+## Change profile settings  
+
 1. To change your user preferences, open your profile menu.
 
 	> [!div class="mx-imgBorder"]  
@@ -87,23 +88,29 @@ Locale settings include language, date and time pattern, time zone, and user int
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
 
+0. Choose **Edit profile**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Edit ](../../_shared/_img/settings/profile-jamal-h.png)
+
+0. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-about-dialog.png)
+
+0. From the **Preferences** page, you can change your preferred language, date and time pattern, time zone, UI theme, and whether or not borders appear on work item forms for fields.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
+
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
+## Change profile settings  
 
-0. To change your user preferences, open your profile menu.
-	::: moniker range="azure-devops"  
-	> [!div class="mx-imgBorder"]  
-	> ![Open profile menu](../../_shared/_img/settings/profile-menu-horz.png)
-	::: moniker-end  
+1. To change your user preferences, open your profile menu.
 
-	::: moniker range=">= tfs-2017 <= tfs-2018"  
-	![Open Profile menu, TFS 2015](../../_shared/_img/settings/open-profile-tfs-2017.png)
-	::: moniker-end  
-
-	::: moniker range="tfs-2015"  
-	![Open Profile menu, TFS 2015](../../_shared/_img/settings/open-profile-tfs-2015.png)
-	::: moniker-end  
+	![Open Profile menu](../../_shared/_img/settings/open-profile-tfs-2017.png)
 
 0. Choose **Edit profile**. 
 

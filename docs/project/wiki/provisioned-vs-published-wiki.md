@@ -53,7 +53,7 @@ For example, the **Edit** option for the publish code as wiki takes you to the *
 - [Markdown format](markdown-guidance.md)
 - [HTML tags](markdown-guidance.md#html)
 - [Insert and resize images](markdown-guidance.md#images)
-- [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)
+- [Mathematical notation and characters](markdown-guidance.md#math-notation)
 - [Link to work items using #](markdown-guidance.md#link-work-items)
 - [Attach files](markdown-guidance.md#attach)
 - [Filter Wiki contents](filter-print-wiki.md)

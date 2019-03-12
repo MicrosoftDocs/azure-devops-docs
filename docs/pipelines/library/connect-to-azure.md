@@ -13,13 +13,15 @@ ms.date: 12/18/18
 monikerRange: '>= tfs-2017'
 ---
 
-# Create an Azure service connection
+# Connect to Microsoft Azure
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
+
+> For other types of connection, and general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
 
 ::: moniker range="azure-devops"
 

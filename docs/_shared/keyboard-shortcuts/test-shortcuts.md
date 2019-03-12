@@ -7,7 +7,7 @@ ms.topic: include
 
 You can use the following keyboard shortcuts when working in **Test Plans** or **Test**.  
 
->[!NOTE]  
+> [!NOTE]  
 > The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2015.2 or later versions. 
 
 <table width="70%">
