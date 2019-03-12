@@ -60,16 +60,16 @@ For a list of items not included with an import please see the [migration guide]
 In general you should use the [migration guide](https://aka.ms/TFSDataImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
 
 ### Importing Process 
-* [Validating a collection for import](.\migration-import.md#validating-a-collection)
-* [Preparing a collection for import](.\migration-import.md#generating-import-files)
-* [Before import steps](.\migration-import.md#getting-ready-to-import)
-* [Running an Import](.\migration-import.md#running-an-import)
-* [Post import steps](.\migration-post-import.md)
+* [Validating a collection for import](migration-import.md#validating-a-collection)
+* [Preparing a collection for import](migration-import.md#generating-import-files)
+* [Before import steps](migration-import.md#getting-ready-to-import)
+* [Running an Import](migration-import.md#running-an-import)
+* [Post import steps](migration-post-import.md)
 
 ### Troubleshooting 
-* [Troubleshooting validation errors](.\migration-troubleshooting.md)
-* [Troubleshooting process errors](.\migration-processtemplates.md#dealing-with-process-errors)
-* [Troubleshooting import errors](.\migration-troubleshooting.md#dealing-with-import-errors)
+* [Troubleshooting validation errors](migration-troubleshooting.md)
+* [Troubleshooting process errors](migration-processtemplates.md#dealing-with-process-errors)
+* [Troubleshooting import errors](migration-troubleshooting.md#dealing-with-import-errors)
 
 
 ## FAQ

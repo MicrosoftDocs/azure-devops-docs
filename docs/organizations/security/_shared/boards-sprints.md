@@ -3,6 +3,7 @@ ms.topic: include
 ---
 
 ::: moniker range=">= azure-devops-2019"
+
 <table>
 <tr valign="bottom">
 <th width="41%">Task</th>

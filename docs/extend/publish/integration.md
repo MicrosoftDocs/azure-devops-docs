@@ -21,11 +21,11 @@ The Visual Studio Marketplace is a one-stop-shop for individuals and teams to fi
 [Browse the marketplace](https://marketplace.visualstudio.com) to see examples of other integrations and extensions.
 
 > [!NOTE]
-> If you're looking for packaging and publishing information for extensions, check out [Package & Publish Extensions](./overview.md).
+> If you're looking for packaging and publishing information for extensions, check out [Package & Publish Extensions](overview.md).
 
 ## Publishing Requirements
 
-[!INCLUDE [](./_shared/before-publishing.md)]
+[!INCLUDE [](_shared/before-publishing.md)]
 
 ## What you will need
 
@@ -68,7 +68,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 
 1. Fill your `vss-integration.json` file with the following JSON:
 
-  [!code-javascript[JSON]](../_data/integration.json)]
+  [!code-javascript[JSON](../_data/integration.json)]
 
 2. Update the JSON using the following reference:
 

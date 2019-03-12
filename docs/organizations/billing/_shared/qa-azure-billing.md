@@ -29,14 +29,14 @@ A:	No. You can't use the [Azure free account](https://azure.microsoft.com/pricin
 
 A:	No. You can't use the monthly Azure credits from [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs) or [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/products/visual-studio-dev-essentials-vs.aspx) to pay for Visual Studio Marketplace purchases. You can use the included Azure subscriptions to bill your purchases. Before you make purchases, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/) from these subscriptions:
 
-<img alt="Spending limit" src="_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Spending limit" src="/azure/devops/organizations/billing/_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 <a name="spending-limit"></a>
 
 > [!Important]
 > To prevent your Azure subscription from being disabled when your monthly charges are billed the following month, remove your spending limit indefinitely. Otherwise, all resources billed to the subscription are suspended, including virtual machines and all other workloads.
 
-<img alt="Remove spending limit indefinitely" src="_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Remove spending limit indefinitely" src="/azure/devops/organizations/billing/_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 ### Q: Where can I check my bill or correct any billing information on my Azure subscription?
 

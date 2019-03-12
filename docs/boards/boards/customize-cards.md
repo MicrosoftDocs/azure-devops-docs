@@ -425,15 +425,17 @@ You can control the test plan under which inline tests you add through the Kanba
 
 0. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
 
-0. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.    
-	::: moniker range=">= azure-devops-2019"
+0. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
+::: moniker-end
+	::: moniker range=">= azure-devops-2019"  
 	> [!div class="mx-imgBorder"]  
 	> ![Settings, Tag colors dialog (Kanban)](_img/customize-cards/settings-tests.png)  
 	::: moniker-end   
 	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Settings dialog, Tests tab (Kanban), TFS 2015](_img/c-cards-test-settings.png)  
 	::: moniker-end   
-3. Save your changes. 
+::: moniker range=">= tfs-2017" 
+0. Save your changes. 
 ::: moniker-end
 
 
@@ -446,10 +448,8 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 
 ::: moniker-end
 
-
-
 ## Related articles
 
-*	[Card reordering](reorder-cards.md)  
-*	[Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+- [Card reordering](reorder-cards.md)  
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 

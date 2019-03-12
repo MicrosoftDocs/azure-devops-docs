@@ -33,8 +33,4 @@ You can use the following keyboard shortcuts from the web portal.
 </tr>
 </tbody>
 </table>
-
-
-<!---
-g,k&nbsp;&nbsp;&nbsp;Go to [wiki](/azure/devops/project/wiki/add-edit-wiki)<br/>
--->
+ 
