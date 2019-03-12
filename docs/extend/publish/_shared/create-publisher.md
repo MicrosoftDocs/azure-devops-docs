@@ -3,7 +3,7 @@ Every item on the Visual Studio Marketplace, including extensions and integratio
 A publisher has a unique identifier and a name. The name is displayed on the cards of items from that publisher on the Marketplace:
 
 <div align="center" style="padding-top:15px">
-<img src="../_img/card.png" style="padding-bottom:20px" alt="Marketplace card showing extension with publisher name">
+<img src="/azure/devops/extend/publish/_img/card.png" style="padding-bottom:20px" alt="Marketplace card showing extension with publisher name">
 </div>
 
 A publisher is owned by a user, typically the user that created it, and can also be shared with other users.

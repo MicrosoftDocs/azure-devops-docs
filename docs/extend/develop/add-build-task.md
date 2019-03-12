@@ -387,7 +387,9 @@ $env:TASK_TEST_TRACE=1
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest which contains the build or release task.
 
 Copy the .json code below and save it as your `vss-extension.json` file:
-[!code-javascript[JSON]](../_data/extension-build-tasks.json)]
+
+[!code-javascript[JSON](../_data/extension-build-tasks.json)]
+
 
 >[!NOTE]
 >The **publisher** here will need to be changed to your publisher name. If you would like to create a publisher now, you can jump down to

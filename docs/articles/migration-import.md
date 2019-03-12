@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2013'
 >
 > Be sure you're on a [supported version](migration-overview.md#supported-tfs-versions-for-import) of TFS before continuing with the other import tasks.
 
-This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](.\migration-troubleshooting.md).
+This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](migration-troubleshooting.md).
 
 ## Validating a Collection
 Now that you've confirmed you're on the latest version of TFS the next step is to validate each collection you wish to migrate to Azure DevOps Services. 
@@ -69,7 +69,7 @@ Once the validation is complete you'll be left with a set of log files and a set
 
 ![TfsMigrator validate output](_img/migration-import/tfsmigratorConsole.png)
 
-If all of the validations pass, you are ready to move onto the next step of the import process. If TfsMigrator flagged any errors, they will need to be corrected before moving on. See [troubleshooting](.\migration-troubleshooting.md) for guidance on correcting validation errors. 
+If all of the validations pass, you are ready to move onto the next step of the import process. If TfsMigrator flagged any errors, they will need to be corrected before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
 
 When you open up the log directory you will notice that there are several logging files. 
 
@@ -78,7 +78,7 @@ When you open up the log directory you will notice that there are several loggin
 The log titled ```TfsMigrator.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
 a log is generated for each major validation operation. For example, if TfsMigrator had reported an error in the "Validating Project Processes" step, then one can 
 simply open the ```ProjectProcessMap.log``` file to see everything that was run for that step instead of having to scroll through the overall log. 
-The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](.\migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps Services and can be ignored. 
+The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps Services and can be ignored. 
 
 ## Generating Import Files
 By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
@@ -256,7 +256,7 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 ### Generating a DACPAC
 
 > [!IMPORTANT]  
-> Before proceeding, ensure that your collection was [detached](.\migration-import.md#detaching-your-collection) prior to generating a DACPAC.
+> Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC.
 
 > [!NOTE]   
 > If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/AzureDevOpsImportLargeCollection.
@@ -359,7 +359,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
 2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
-3. [Configure](/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](.\migration-import.md#generating-a-dacpac).
+3. [Configure](/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
 4. If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
@@ -623,7 +623,7 @@ Dry run imports help teams to test the migration of their collections. It's not 
 
 Most dry run organizations will have 15 days before they're deleted. Dry run organizations can also have a 21 day expiration if more than 100 users are licenses basic or higher at **import time**. Once that time period passes the dry run organization will be deleted. Dry run imports can be repeated as many times as you need to feel comfortable before doing a production migration. A previous dry run attempt still needs to be deleted before attempting a new dry run migration. If your team is ready to perform a production migration before then you will need to manually delete the dry run organization. 
 
-Be sure to check out the [post import](.\migration-post-import.md) documentation for additional details on post import activities. Should your import encounter any problems, be sure to review the [import troubleshooting](.\migration-troubleshooting.md#dealing-with-import-errors) steps. 
+Be sure to check out the [post import](migration-post-import.md) documentation for additional details on post import activities. Should your import encounter any problems, be sure to review the [import troubleshooting](migration-troubleshooting.md#dealing-with-import-errors) steps. 
 
 ## Running an Import
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
@@ -641,7 +641,7 @@ Rollback for the final production run is fairly simple. Before you queue the imp
 > [!IMPORTANT] 
 > Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. 
 >
-> In the event your import fails, see the following [guidance](.\migration-troubleshooting.md). 
+> In the event your import fails, see the following [guidance](migration-troubleshooting.md). 
 
 Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps Services. The import command requires an internet connection, but does **NOT** require a connection to your TFS server. 
 

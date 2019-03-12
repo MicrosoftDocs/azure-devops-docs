@@ -70,7 +70,7 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 ### Where can I find recent work item activity? 
 - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
 
-- You can also use the macros &mdash; **@Me**, **@Follows**, **MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#query-macros-or-variables). 
+- You can also use the macros &mdash; **@Me**, **@Follows**, **MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
 
 <a id="favorite" /> 
 ### How do I quickly navigate to queries I view frequently?  

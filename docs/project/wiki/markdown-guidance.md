@@ -746,9 +746,12 @@ In wiki pages, you can also create rich content using HTML tags.
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2018"
 
+
+<a id="math-notation">  </a>
 <a id="mathematical-notation">  </a>
+
+::: moniker range=">=tfs-2018"
 
 ## Mathematical notation and characters
 

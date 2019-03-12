@@ -177,7 +177,7 @@ The following table indicates the operators and macros available for the differe
 
 ## Query samples for select fields 
 
-The following table lists common query fields and their data type for which sample queries are provided. To determine the data type of a field, see [Work item fields and attributes, List field attributes](../work-items/work-item-fields.md#list-attributes).  
+The following table lists common query fields and their data type for which sample queries are provided. To determine the data type of a field, see [Work item fields and attributes, List field attributes](../work-items/work-item-fields.md).  
 
 <table>
 <tbody valign="top">

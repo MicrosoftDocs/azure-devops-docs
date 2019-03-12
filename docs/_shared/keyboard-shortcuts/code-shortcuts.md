@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 
-<a id="code-shortcuts"></a>
+<a id="code-shortcuts" /a>
 
 You can use the following keyboard shortcuts when working from a page under **Repos** or **Code**. To view the valid shortcuts, enter **Shift+?** to access  Global and service-specific shortcuts.. 
 

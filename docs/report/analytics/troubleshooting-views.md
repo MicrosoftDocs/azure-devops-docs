@@ -3,7 +3,6 @@ title: Troubleshoot an Analytics view
 titleSuffix: Azure DevOps
 description: Resolve errors that occur with an Analytics view and Power BI for Azure DevOps 
 ms.prod: devops
-ms.technology: devops-analytics
 ms.reviewer: romik
 ms.manager: jillfra
 ms.author: kaelli
@@ -41,7 +40,7 @@ To resolve this error, rename your custom field.
 
 ### **Error: Field doesn't exists anymore**
 
-This error means that one of your [work items filters](analytics-views-create.md#2-specify-work-items-filters) or [view fields](analytics-views-create.md#3-select-the-fields-to-appear-in-the-report) references a field that was removed from your [project process](../../organizations/settings/work/customize-process-field.md). 
+This error means that one of your [work items filters](analytics-views-create.md#specify-wi-filters) or [view fields](analytics-views-create.md#select-fields) references a field that was removed from your [project process](../../organizations/settings/work/customize-process-field.md). 
 
 To resolve this error, [edit your view](analytics-views-manage.md#edit-an-existing-view) and remove the filter or field from the view's definition. 
 
@@ -65,7 +64,7 @@ If the view no longer exists, you can still use the rest of your report in Power
 
 This error indicates that you have a custom field with the same display name as one of the Azure DevOps reserved fields.
 
-To resolve this collision, remove the duplicate column from the view's fields. You will need to customize your fields selection and remove the duplicate field from the [field list](analytics-views-create.md#3-select-the-fields-to-appear-in-the-report). 
+To resolve this collision, remove the duplicate column from the view's fields. You will need to customize your fields selection and remove the duplicate field from the [field list](analytics-views-create.md#select-fields). 
 
 ## Related articles
 - [Create an Analytics view](analytics-views-create.md) 
