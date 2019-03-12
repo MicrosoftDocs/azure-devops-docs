@@ -40,9 +40,9 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
    ![Selecting the test suite for a backlog item and adding a new test case](_img/create-test-cases/CreateTest_1.png)
 
-   The [test suite](create-a-test-plan.md) was created from a backlog item. 
-   When you add a test case to this kind of suite, the test case is 
-   automatically linked to the backlog item.
+   > The [test suite](create-a-test-plan.md) shown here was created from a User Story work item in the team's backlog board. 
+   > When you add a test case to this kind of suite, the test case is automatically linked to the backlog item.
+   > To create test cases this way, open the shortcut menu for the work item and choose **Add test**.    
 
 1. Choose the **Click or type here to add a step** link and add test steps
    with a description of the action required to carry out the test and the
