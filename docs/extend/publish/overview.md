@@ -86,7 +86,7 @@ To install an extension that has been shared:
 
 2. Find the extension under the **Shared with this organization** category:
 
-  ![Shared with me](./_img/extensions-tab-shared.png)
+  ![Shared with me](_img/extensions-tab-shared.png)
 
 3. Click the card to open the item in the Marketplace
 4. From the item's details page, click the **Install** button
@@ -98,7 +98,7 @@ To install an extension that has been shared:
 
 ## Make your extension public (visible to everyone)
 
-For information on making your extension public, visit [Make your listing public](./publicize.md).
+For information on making your extension public, visit [Make your listing public](publicize.md).
    
 ## Unpublish
 You can unpublish/delist free extensions, if you no longer want to offer them in the Marketplace or published by mistake. 

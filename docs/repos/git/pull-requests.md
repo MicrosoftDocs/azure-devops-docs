@@ -92,9 +92,9 @@ When you publish or update a feature branch in Azure Repos, you get a prompt ask
 
 Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
-::: moniker range="<= tfs-2018"
-
 ::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 When you publish or update a feature branch in Azure Repos, you get a prompt asking if you would like to create a pull request in the **Code** view on the web. This prompt is displayed on the **Pull Requests** tab and the **Files** tab.
 
@@ -103,6 +103,8 @@ When you publish or update a feature branch in Azure Repos, you get a prompt ask
 ![Creating Pull Request through pushed branch in Azure Repos](_img/pull-requests/create-pr-from-push-files-tab.png)
 
 Select the **Create a pull request** link to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
+
+::: moniker-end
 
 ### From a linked work item
 
@@ -513,8 +515,8 @@ undo the pull request for an existing target branch in your repo.
 In the dialog that appears, pick the branch where you want to undo the pull request changes in the **Target branch** selector and the name of a new branch where the reverted changes will be created in the **Topic branch name** field, then select **Revert**. 
 Select **Create pull request** to merge the newly created branch in a second pull request to complete the revert.
 
->[!NOTE]
->The branch created during this revert has a single commit that reverts the file changes in the pull request. The branch does not contain a reverted commit for each of the commits merged in the original pull request.
+> [!NOTE]
+> The branch created during this revert has a single commit that reverts the file changes in the pull request. The branch does not contain a reverted commit for each of the commits merged in the original pull request.
 
 ## Cherry-pick a pull request
 

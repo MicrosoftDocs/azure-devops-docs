@@ -42,8 +42,6 @@
   items:
   - name: Markdown guidance
     href: Markdown-guidance.md
-  - name: Wiki markdown guidance
-    href: wiki-markdown-guidance.md
   - name: Keyboard shortcuts to manage Wiki pages 
     href: wiki-keyboard-shortcuts.md
   - name: "Default permissions (Security)"

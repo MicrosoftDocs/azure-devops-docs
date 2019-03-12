@@ -24,9 +24,6 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 > You only have to assign extensions to users who need access. If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
 > they automatically get access to specific extensions that are included with their subscriptions as benefits, like Test Manager. If you installed these extensions, you don't have to assign them to Visual Studio subscribers in your organization. 
 
-::: moniker range="azure-devops"
-
-
 ## Azure DevOps Services
 
 ::: moniker range=">= azure-devops-2019"

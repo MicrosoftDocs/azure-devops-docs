@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azure-devops-2019'
+monikerRange: ">= tfs-2013 < azure-devops"  
 ms.date: 01/24/2019
 ---
 
@@ -294,7 +294,7 @@ The following table summarizes the attributes you can change using [witadmin cha
 > |---|---|
 > | Data type | Specifies the type of data that the field accepts. In general, you cannot change the field data type once it is defined. You can switch the field data type only for fields of type **HTML** or **PlainText**. |
 > | Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a project collection. The friendly name may differ from the form label that appears on the work item form. |
-> | Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](xml/reportable-fields-reference.md). For more information about reportable attributes, see [Work item fields and attributes, ](../boards/work-items/work-item-fields.md#reportable-attributes). |
+> | Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](xml/reportable-fields-reference.md). For more information about reportable attributes, see [Work item fields and attributes, Reportable attributes](../boards/work-items/work-item-fields.md). |
 > | Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
 
 <a id="index-field">  </a>

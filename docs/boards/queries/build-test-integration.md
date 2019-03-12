@@ -312,13 +312,13 @@ You can use the following code snippet to add these fields to a WIT definition.
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Found In" refname="Microsoft.VSTS.Build.FoundIn" type="String" reportable="dimension">
-    <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
+    <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
         <SUGGESTEDVALUES>
           <LISTITEM value="&lt;None&gt;" />
         </SUGGESTEDVALUES>
 </FIELD>
 <FIELD name="Integration Build" refname="Microsoft.VSTS.Build.IntegrationBuild" type="String" reportable="dimension">
-    <HELPTEXT>Product build number this bug was fixed in</HELPTEXT>
+    <HELPTEXT>Product build number this bug was fixed in</HELPTEXT>
         <SUGGESTEDVALUES>
           <LISTITEM value="&lt;None&gt;" />
         </SUGGESTEDVALUES>
@@ -343,7 +343,7 @@ By adding a **GLOBALLIST** element to the **FIELD** definition, you can provide 
 > [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Found In" refname="Microsoft.VSTS.Build.FoundIn" type="String" reportable="dimension">
-    <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
+    <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
         <SUGGESTEDVALUES>
           <LISTITEM value="&lt;None&gt;" />
         </SUGGESTEDVALUES>

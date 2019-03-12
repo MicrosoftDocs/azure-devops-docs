@@ -395,8 +395,10 @@ The following table describes each attribute.
 3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. 
 
 
-::: moniker range="< azure-devops"  
+
 <a id="reportable-attributes" />
+::: moniker range="< azure-devops"  
+
 ## Reportable attributes
 
 All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. For details, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
@@ -416,7 +418,9 @@ If you add a custom field that you use in many of your work item queries, you ma
 ::: moniker-end
 
 
-<a id="list-attributes" /> 
+<a id="list-attributes" />
+
+
 ## List field attributes 
 
 ::: moniker range="azure-devops"  
