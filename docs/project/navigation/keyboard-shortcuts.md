@@ -131,15 +131,16 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2018"  
 ## Wiki  
-::: moniker-end
+::: moniker-end  
+
 ::: moniker range="tfs-2018"
 > [!NOTE]  
 > Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2018"  
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/wiki-shortcuts.md)]
 
 ::: moniker-end
@@ -204,50 +205,6 @@ You can use query results shortcuts whenever you have a list of work items, such
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)] 
 
 
-<!---
-<table>
-<tbody valign="top" width="100%" style="font-size:90%">
-<tr>
-<td>
-<p>**Query editor**</p> 
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
-![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
-**Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus down  
-**Tab**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus right, one field at a time   
-**Shift+**![Left/right arrow](../../boards/_img/icons/Arrow_Next.png)![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;Move focus left/right one field at a time  
-**End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to end of current clause    
-<br/>
-**Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy selected clause   
-**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes (editor or results)   
-**Ctrl+v**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste copied clause    
-**Shift+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png)![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;Highlight consecutive clauses  
-Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete contents of current field or clause 
-</td>
-
-
-<td>
-<p>**Query results**</p> 
-
-**F5**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refresh   
-**Shift+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png)![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Highlight consecutive rows   
-**Shift+Alt,n**&nbsp;&nbsp;&nbsp;Move focus to next item  
-**Shift+Alt,p**&nbsp;&nbsp;&nbsp;Move focus to previous item  
-**Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of list  
-**End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to bottom of list  
-<br/>
-**+/-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand/collapse current row  
-**PgUp/PgDn**&nbsp;&nbsp;&nbsp;&nbsp;Scroll up/down  
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](../../boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scroll left/right  
-**Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item  
-**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes   
-
-</td>
-</tr>
-</tbody>
-</table>
--->
-
-
 
 ## Related articles 
 
@@ -257,7 +214,7 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
 - [Web portal navigation](..//navigation/index.md) 
 
-###Install Team Explorer  
+### Install Team Explorer  
 
 Team Explorer is a plug-in to Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx), other Visual Studio version, or Visual Studio Team Explorer 2017 you gain access to Team Explorer.  
 

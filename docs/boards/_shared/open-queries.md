@@ -18,9 +18,9 @@ If it is your first time opening **Work**, the page opens to **Favorites** which
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="<= tfs-2018"  
 From your web browser, open **Boards>Queries**. 
 
-![Web portal, choose Boards>Queries](/azure/devops/boards/queries/_img/view-run-queries/open-hub-page.png) 
+![Web portal, choose Boards>Queries](/azure/devops/boards/queries/_img/view-run-queries/open-hub-page.png)  
 
 ::: moniker-end

@@ -140,7 +140,7 @@ The following features are supported for the team project wiki.
 - [Insert and resize images](markdown-guidance.md#images)
 - [Link to work items using #](markdown-guidance.md#link-work-items)
 - [Attach files](markdown-guidance.md#attach)  
-- [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)  
+- [Mathematical notation and characters](markdown-guidance.md#math-notation)  
 - [Table of contents (TOC) for Wiki pages](markdown-guidance.md#toc-wiki)  
 
 ::: moniker-end
@@ -158,7 +158,7 @@ The following features are supported for the team project wiki you create in the
 > |[Link to work items using #](markdown-guidance.md#link-work-items) | TFS 2018 |  
 > |[Attach files](markdown-guidance.md#attach) | TFS 2018 |  
 > |[Filter Wiki TOC](filter-print-wiki.md) | TFS 2018 |  
-> |[Mathematical notation and characters](markdown-guidance.md#mathematical-notation) |TFS 2018.2 |
+> |[Mathematical notation and characters](markdown-guidance.md#math-notation) |TFS 2018.2 |
 > |[Preview a Wiki page while editing](add-edit-wiki.md) | TFS 2018.2 |
 > |[Print a Wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 |
 > |[Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md) | TFS 2018.2 |

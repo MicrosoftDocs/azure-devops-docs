@@ -7,11 +7,11 @@ ms.topic: include
 
 You can use the following keyboard shortcuts when [working with queries](/azure/devops/boards/queries/using-queries) in the web portal. To view the valid shortcuts, enter **Shift+?** from **Boards>Queries** or **Work>Queries**. 
 
-::: moniker range="tfs-2015"
+::: moniker range="tfs-2015"  
 >[!NOTE]  
 >The following shortcuts are available from Azure DevOps Services or TFS 2015.2 or later versions.  
->
-::: moniker-end
+
+::: moniker-end  
 
 <table width="70%">
 <tbody valign="top">
