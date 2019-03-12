@@ -110,8 +110,7 @@ If you don't specify any tag triggers, the default is as if you wrote:
 ```yaml
 trigger:
   tags:
-    include:
-    - *
+    include: ['*']
 ```
 
 ::: moniker-end
