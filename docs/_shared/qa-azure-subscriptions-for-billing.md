@@ -29,9 +29,9 @@ but the monthly credits won't apply, so your credit card will be billed for char
     will be suspended, including Azure DevOps purchases,
     Visual Studio Marketplace purchases, and Azure resources.
 
-    <img alt="Spending limit" src="_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Spending limit" src="/azure/devops/_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
-    <img alt="Remove spending limit indefinitely" src="_img/azure-remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Remove spending limit indefinitely" src="/azure/devops/_shared/_img/azure-remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 	If you have Administrator permissions for your subscription, 
 	remove the spending limit by visiting the 

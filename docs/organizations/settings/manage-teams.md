@@ -150,8 +150,9 @@ You can configure most of your team settings from the common configuration dialo
 	>![Open Kanban board](../../boards/boards/_img/kanban-basics-intro.png)  
 
 1. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
-
+ 
 	For example, from the Kanban board ...  
+::: moniker-end 
 	::: moniker range="tfs-2017"  
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, open common configuration settings](_img/configure-team/open-settings-vsts-horz.png)
@@ -159,8 +160,9 @@ You can configure most of your team settings from the common configuration dialo
 	::: moniker range="tfs-2015"  
 	![Kanban board, open common configuration settings](_img/configure-team/open-settings-tfs-2015-horz.png)
 	::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2018"
 2. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
-
+::: moniker-end  
 	::: moniker range=">= tfs-2017"  
 	> [!div class="mx-imgBorder"]  
 	> ![Common configuration dialog team settings]../.../boards/boards/_img/customize-cards/common-config-141.png)
@@ -168,9 +170,6 @@ You can configure most of your team settings from the common configuration dialo
 	::: moniker range="tfs-2015"  
 	![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
 	::: moniker-end  
-
-::: moniker-end  
-
 
 ::: moniker range=">= tfs-2017"  
 
@@ -301,11 +300,11 @@ Additional elements you can configure include:
 
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
-By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions). 
-::: moniker-end
+By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
+::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
-Team administrators can add, configure, and manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions). 
+::: moniker range=">= tfs-2017 <= tfs-2018"  
+Team administrators can add, configure, and manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
 
 ::: moniker-end
 
@@ -321,7 +320,7 @@ Team administrators can add and modify alerts so that the team can receive email
 
 <a id="team-rooms" />
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
+::: moniker range=">= tfs-2015 <= tfs-2017"  
 ## Manage team rooms 
 
 Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).  

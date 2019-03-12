@@ -71,7 +71,8 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 [!INCLUDE [temp](_shared/boards-queries.md)]
 
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
+
 ## Delivery plans feature access
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
@@ -275,7 +276,9 @@ By default, team members inherit the permissions afforded to members of the proj
 
 If your on-premises deployment includes reporting, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 
-::: moniker range="<= tfs-2017"
+::: moniker-end  
+
+::: moniker range="<= tfs-2017"  
 
 If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md) and [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
 
@@ -283,8 +286,8 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 ## Related notes 
 
-*	[Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
-*	[Get started as a Stakeholder](get-started-stakeholder.md)  
-*	[Add another team](../../organizations/settings/add-teams.md)  
-*	[Manage teams and configure team tools](../settings/manage-teams.md)   
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
+- [Get started as a Stakeholder](get-started-stakeholder.md)  
+- [Add another team](../../organizations/settings/add-teams.md)  
+- [Manage teams and configure team tools](../settings/manage-teams.md)   
 

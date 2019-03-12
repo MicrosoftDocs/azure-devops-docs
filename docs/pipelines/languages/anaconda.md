@@ -19,14 +19,14 @@ monikerRange: 'azure-devops'
 
 This guidance explains how to set up and use Anaconda environments in your pipelines.
 
-## Add conda to your system path
+## Add `conda` to your system path
 
-On hosted agents, conda is left out of `PATH` by default to keep its Python version from conflicting with other installed versions. The `task.prependpath` agent command will make it available to all subsequent steps.
+On hosted agents, `conda` is left out of `PATH` by default to keep its Python version from conflicting with other installed versions. The `task.prependpath` agent command will make it available to all subsequent steps.
 
 # [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
 
 ```yaml
-- bash: echo "##vso[task.prependpath]$CONDA/bin"
+- bash: echo "##vso[task.prependpath]/usr/share/miniconda/bin"
   displayName: Add conda to PATH
 ```
 
@@ -46,11 +46,11 @@ On hosted agents, conda is left out of `PATH` by default to keep its Python vers
 
 ---
 
-### (Optional) take ownership of conda's installation directory
+### (Optional) take ownership of `conda`'s installation directory
 
-If you are installing packages globally or trying to update conda itself, you need to be able to write to conda's installation directory.
+If you are installing packages globally or trying to update `conda` itself, you need to be able to write to `conda`'s installation directory.
 
-On Hosted Ubuntu and Hosted macOS, conda is installed to a subdirectory of `/usr`.
+On Hosted Ubuntu and Hosted macOS, `conda` is installed to a subdirectory of `/usr`.
 This prevents the agent user from writing to this directory.
 
 Running `sudo conda` is [generally discouraged](https://docs.conda.io/projects/conda/en/latest/user-guide/troubleshooting.html#permission-denied-errors-after-using-sudo-conda-command).
@@ -203,10 +203,10 @@ The following YAML installs the `scipy` package in the conda environment named `
 ## FAQs
 
 ### Why am I getting a "Permission denied" error?
-See [(Optional) take ownership of conda's installation directory](#optional-take-ownership-of-condas-installation-directory).
+See [(Optional) take ownership of `conda`'s installation directory](#optional-take-ownership-of-condas-installation-directory).
 
 ### Why is my build hanging on a `conda create` or `conda install` step?
-If you forget to pass `--yes`, conda will stop and wait for user interaction.
+If you forget to pass `--yes`, `conda` will stop and wait for user interaction.
 
 ### Why is my script on Windows stopping after it activates the environment?
 On Windows, `activate` is a Batch script. You must use the [`call`](https://docs.microsoft.com/windows-server/administration/windows-commands/call) command to resume running your script after activating.

@@ -8,6 +8,7 @@ ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 02/16/2018
 ---
 
@@ -87,7 +88,7 @@ There are several extensions available from the [Marketplace](https://marketplac
 
 Or, you can write an extension using the [REST API for work tracking](/rest/api/azure/devops/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregator](https://tfsaggregator.github.io/).  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"
 
 <a name="marketplace"></a>
 ## Analytics service
@@ -97,9 +98,9 @@ You can use the [Analytics Service](../../report/analytics/what-is-analytics.md)
 > [!NOTE]
 > **The Analytics Service is in public preview**. While in preview, it is available to everyone free of charge. We encourage you to use it and provide us feedback. As we add features, we will post them on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/?s=VSTS+Analytics+Extension).
 
-::: moniker-end    
+::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= azure-devops-2019"  
+::: moniker range="<= azure-devops-2019"  
 ## SQL Server Reporting Services report  
  Several OOB reports provide rollup. Here's an example of rollup of completed and remaining work that the Stories Overview report provides. This report is part of the default TFS Agile process template.  
   
@@ -115,7 +116,7 @@ If you need to add reports to your on-premises TFS deployment, see [Add reports 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 ## TFS-Project Server integration 
 
 Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  

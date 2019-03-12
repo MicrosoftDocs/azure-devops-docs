@@ -41,21 +41,21 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 ## Track work in swimlanes  
 Once you've set up your swimlanes, you can drag items into a swimlane as well as reorder them within the lane.  
 
-::: moniker range=">= tfs-2018" 
+::: moniker range=">= tfs-2018"  
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Drag items into a swimlane](_img/expedite/swimlanes-move-item.png)
+> ![Kanban board, Drag items into a swimlane](_img/expedite/swimlanes-move-item.png)  
 ::: moniker-end   
-::: moniker range=">= tfs-2015 <= tfs-2017" 
-<img src="_img/ALM_EW_MoveToNewLane.png" alt="Kanban board, Drag items into a swimlane" style="border: 2px solid #C3C3C3;" />
+::: moniker range=">= tfs-2015 <= tfs-2017"  
+<img src="_img/ALM_EW_MoveToNewLane.png" alt="Kanban board, Drag items into a swimlane" style="border: 2px solid #C3C3C3;" />  
 ::: moniker-end   
 You can also focus on a single swimlane by collapsing all other lanes.
 
-::: moniker range=">= tfs-2018" 
-> [!div class="mx-imgBorder"]
+::: moniker range=">= tfs-2018"  
+> [!div class="mx-imgBorder"]  
 > ![Kanban board, Collapsed swimlanes](_img/expedite/collapse-lanes.png)  
-::: moniker-end
-::: moniker range=">= tfs-2015 <= tfs-2017" 
-<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 1px solid #C3C3C3;" /> 
+::: moniker-end  
+::: moniker range=">= tfs-2015 <= tfs-2017"  
+<img src="_img/ALM_EW_CollapseLanes.png" alt="Kanban board, Collapsed swimlanes" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end   
 
 	
@@ -95,7 +95,7 @@ Once you've identified one or two, add them to your Kanban board.
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
@@ -151,13 +151,13 @@ Once you've identified one or two, add them to your Kanban board.
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017"		
+::: moniker range=">= tfs-2017"  
 ## Track lane moves  
 
-You can track Kanban board swimlane moves by creating a query and using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields). 
-::: moniker-end
+You can track Kanban board swimlane moves by creating a query and using the [Board Lane field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
+::: moniker-end  
 
-::: moniker range="tfs-2015"
+::: moniker range="tfs-2015"  
 ## Track lane moves  
 
 **For TFS 2015.1 and later versions**  
@@ -171,7 +171,7 @@ Similar to the way [column moves are tracked](add-columns.md), swimlane moves ar
 <img src="_img/ALM_EW_HistorySwimLanes.png" alt="Work item form, History tab, History of a swimlane move" style="border: 1px solid #C3C3C3;" />   
 
 For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md) for all items in a particular swimlane. To perform such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../queries/add-tags-to-work-items.md) each item in a similar way.  
-::: moniker-end
+::: moniker-end  
 
 
 ## Related articles

@@ -262,7 +262,7 @@ Verification failures happen when the import fails to start. Issues falling into
 VS403254: Region {0} may not be used for the Import, it is not a supported region.
 ```
 
-The region that you entered for your Azure DevOps Services import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](.\migration-import.md#supported-azure-regions-for-import) you want to import into. 
+The region that you entered for your Azure DevOps Services import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](migration-import.md#supported-azure-regions-for-import) you want to import into. 
 
 **VS403249**
 

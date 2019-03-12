@@ -201,6 +201,7 @@ To publish to an external NuGet feed, you must first create a service connection
 
 > If you are running TFS Update 2 or older, **Nuget** is not a service endpoint option, you must use the **Generic** connection.
 
+::: moniker-end
 ---
 
 ## Publish symbols for your packages
