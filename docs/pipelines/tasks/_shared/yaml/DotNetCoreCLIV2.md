@@ -25,7 +25,7 @@
     #publishPackageMetadata: true # Optional
     #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
     #packagesToPack: '**/*.csproj' # Required when command == Pack
-    #configuration: '$(BuildConfiguration)' # Optional
+    #configurationToPack: '$(BuildConfiguration)' # Optional
     #packDirectory: '$(Build.ArtifactStagingDirectory)' # Optional
     #nobuild: false # Optional
     #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
