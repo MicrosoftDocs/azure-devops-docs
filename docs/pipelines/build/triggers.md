@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 03/06/2019
+ms.date: 03/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -30,7 +30,7 @@ On the Triggers tab, you specify the events that trigger the build. You can use 
 
 ::: moniker range="azure-devops"
 
-YAML builds are configured by default with a CI trigger on all branches and all tags.
+YAML builds are configured by default with a CI trigger on all branches.
 
 ::: moniker-end
 
@@ -106,13 +106,7 @@ trigger:
     - v2.0
 ```
 
-If you don't specify any tag triggers, the default is as if you wrote:
-```yaml
-trigger:
-  tags:
-    include:
-    - *
-```
+If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
 
 ::: moniker-end
 
