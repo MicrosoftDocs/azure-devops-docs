@@ -10,17 +10,17 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 02/14/2019
+ms.date: 03/11/2019
 ---
 
-# Quickstart: Share your project mission, view project activity
+# Quickstart: Share your project vision, view project activity
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
 From the project summary page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
-If you want to use a project wiki, then you'll want to first [Create a Wiki for your project](wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
+If you want to use a project wiki, then you'll want to first [Create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -29,7 +29,7 @@ From the project home page, share your project with your team, add project membe
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE]
-> The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../organizations/projects/create-project.md).  
+> The features and functions available from your project page depend on the source control, Git, or Team Foundation Version Control (TFVC) that you selected when you [created your team project](../../organizations/projects/create-project.md).  
 ::: moniker-end
 
 ## Prerequisites
@@ -60,13 +60,13 @@ Select one of the following tasks to get started:
 - **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
 - [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
-To support your project mission, choose a README file that you maintain in a project repository, or the [project Wiki](wiki-create-repo.md). To choose between a README file or a Wiki, see [Change the repository](#change-repo). To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
+To support your project mission, choose a README file that you maintain in a project repository, or the [project Wiki](../../project/wiki/wiki-create-repo.md). To choose between a README file or a Wiki, see [Change the repository](#change-repo). To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
-![Open Project Summary](_img/project-vision-status-project-home-page.png)  
+![Open Project Summary ](_img/share-project/project-vision-status-project-home-page.png)
 
 To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or  [Initialize a README file for your TFVC repo](#initialize-tfvc).
 
@@ -111,7 +111,7 @@ You can share your project and objective, as well as ways for team members to co
    > [!div class="mx-imgBorder"]  
    > ![Edit the README file, new nav](_img/share-project/edit-readme-file.png)  
 
-   You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../wiki/markdown-guidance.md).
+   You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ You can share your project and objective, as well as ways for team members to co
    > [!div class="mx-imgBorder"]  
    > ![Git new project summary page](_img/share-project/git-start-page-readme.png)
 
-   Use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../wiki/markdown-guidance.md).
+   Use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
 
 ::: moniker-end
 
@@ -232,9 +232,9 @@ To add users to the project, choose the ![ ](_img/share-project/add-members-new-
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-To add users to the project, choose the ![ ](_img/project-home-page-add-team-members.png) **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
+To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
-![Project Home Page, Activity](_img/project-home-page-activity.png)  
+![Project Home Page, Activity](../../project/wiki/_img/project-home-page-activity.png)  
 
 ::: moniker-end
 
@@ -242,7 +242,7 @@ To add users to the project, choose the ![ ](_img/project-home-page-add-team-mem
 
 ## Change the repository
 
-You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](wiki-create-repo.md).
+You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](../../project/wiki/wiki-create-repo.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -286,12 +286,12 @@ You can change the repository used to support your project vision, including poi
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a wiki for your team project](wiki-create-repo.md)
+> [Create a wiki for your team project](../../project/wiki/wiki-create-repo.md)
 
 ## Related articles  
 
-- [Markdown guidance](../wiki/markdown-guidance.md)
-- [Work across projects](../navigation/work-across-projects.md)
+- [Markdown guidance](../../project/wiki/markdown-guidance.md)
+- [Work across projects](../../project/navigation/_img/projects-page/view-work-across-projects.png)]
 
 <!---
 ### Git repository

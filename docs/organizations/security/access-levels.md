@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/05/2019
+ms.date: 03/12/2019
 ---
 
 
@@ -247,7 +247,7 @@ The following features are available to Stakeholders from the web portal for bot
 <td>
 <ul>
 <li>[Work across projects](../../project/navigation/work-across-projects.md)</li>
-<li>[View project welcome pages](../../project/wiki/project-vision-status.md).</li>
+<li>[View project welcome pages](../projects/project-vision-status.md)</li>
 <li>[View team dashboards](../../report/dashboards.md) </li>
 <li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
 <li>[View wiki pages](../../project/wiki/filter-print-wiki.md).</li>
@@ -352,7 +352,7 @@ Test summary access to stakeholder license users
 <td>
 <ul>
 <li>[Work across projects](../../project/navigation/work-across-projects.md)</li>
-<li>[View project welcome pages](../../project/wiki/project-vision-status.md)<br/>Can't view markdown README files defined for repositories. </li>
+<li>[View project welcome pages](../projects/project-vision-status.md)<br/>Can't view markdown README files defined for repositories. </li>
 <li>[View team dashboards](../../report/dashboards.md) </li>
 <li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
 <li>[View wiki pages](../../project/wiki/filter-print-wiki.md)<br/>Have read-only permissions to wiki pages. These permissions can't be changed.</li>
@@ -442,7 +442,7 @@ Test summary access to stakeholder license users
 <td>
 <ul>
 <li>[Work across projects](../../project/navigation/work-across-projects.md)</li>
-<li>[View project welcome pages](../../project/wiki/project-vision-status.md)<br/>Can't view markdown README files defined for repositories. </li>
+<li>[View project welcome pages](../projects/project-vision-status.md)<br/>Can't view markdown README files defined for repositories. </li>
 <li>[View team dashboards](../../report/dashboards.md) </li>
 <li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
 <li>[View wiki pages](../../project/wiki/filter-print-wiki.md)<br/>Have read-only permissions to wiki pages. These permissions can't be changed.</li>
@@ -497,7 +497,7 @@ Test summary access to stakeholder license users
 <td>Standard Features: Dashboards and Notifications</td>
 <td>
 <ul>
-<li>[View project welcome pages](../../project/wiki/project-vision-status.md)<br/>Can't view markdown README files defined for repositories. </li>
+<li>[View project welcome pages](../projects/project-vision-status.md)<br/>Can't view markdown README files defined for repositories. </li>
 <li>[View team dashboards (TFS 2015)](../../report/dashboards/dashboards.md) or [team home page (TFS 2013)](../../report/dashboards/team-dashboard.md) </li>
 <li>[Set personal alerts for changes to work items](../../boards/queries/alerts-and-notifications.md)</li>
 </ul>

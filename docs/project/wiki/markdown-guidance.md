@@ -29,7 +29,7 @@ You can provide guidance in the following areas using Markdown:
 - [Project wiki](add-edit-wiki.md)
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](project-vision-status.md)
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)  
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
@@ -40,7 +40,7 @@ You can provide guidance in the following areas using Markdown:
 
 - [Project wiki](add-edit-wiki.md)
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
@@ -53,7 +53,7 @@ You can provide guidance in the following areas using Markdown:
 ::: moniker range="tfs-2017"
 
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-- [Project page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Pull request comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
@@ -66,7 +66,7 @@ You can provide guidance in the following areas using Markdown:
 ::: moniker range="tfs-2015"
 
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-- [Project page or Welcome pages](project-vision-status.md)  
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
@@ -927,7 +927,7 @@ Alternatively, you can also use the toolbar icon and the query selector to embed
 
 ## Related articles  
 
-- [Project page or Welcome pages](project-vision-status.md)
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [README files](../../repos/git/create-a-readme.md)
 - [Pull requests](../../repos/git/pull-requests.md)
 - [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md)  
