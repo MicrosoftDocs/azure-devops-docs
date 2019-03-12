@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/12/2018
+ms.date: 03/11/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -23,7 +23,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 ## 5-minute quickstarts
 
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Share your project vision](../../project/wiki/project-vision-status.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Share your project vision](project-vision-status.md)
 - [Define area paths](../settings/set-area-paths.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Define iteration paths or sprints](../settings/set-iteration-paths-sprints.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Add a team](../settings/add-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)

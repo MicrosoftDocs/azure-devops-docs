@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 ms.topic: overview
-ms.date: 12/17/2018
+ms.date: 03/11/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -25,84 +25,11 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-# About READMEs and Markdown
-
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
-
-To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
-## Markdown
-
-Markdown makes it easy to format text, include images, and link to documents within your project pages, README files, dashboards, and pull request comments.
-
-You can provide guidance to your team in the following places using Markdown:
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-  
-- [Team project wiki](add-edit-wiki.md)
-- [Publish code as wiki](publish-repo-to-wiki.md)
-- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](project-vision-status.md)
-- [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-  
-- [Add and edit wiki pages](add-edit-wiki.md)
-- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](project-vision-status.md)  
-- [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
-- [Project page or Welcome pages](project-vision-status.md)  
-- [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
-
-::: moniker-end
-
-For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](markdown-guidance.md).
-
-## READMEs
-
-You can define a README file or multiple files for each repo or team project. Write your README in Markdown instead of plain text.
-
-Use README pages to orient contributors to working within your project. Consider adding the following guidance:
-
-- Project focus
-- Prerequisites
-- Setting up the environment
-- Tips for getting things done within the project
-- Purpose or use of specific files
-- Project-specific terms and acronyms
-- Workflow guidance about committing or uploading changes and adding branches
-- Project sponsors or contacts  
-
-Here are some great READMEs that use this format and speak to all audiences, for reference and inspiration:
-
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
-
 ::: moniker range=">= tfs-2018"
 
 ## Wiki
 
-Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a Git repository is created to store your Markdown files, images, attachments, and the sequence of pages. This wiki supports collaborative editing of its content and structure.
+Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
 
 ::: moniker-end
 
@@ -176,11 +103,86 @@ Many teams document their code using Markdown and check in these files along wit
 
 - Readers must often sift through many files and folders to find the content of interest.
 - Content lacks organization and structure. There's no inherent page hierarchy to support readers.
-- Content versioning is not supported.
+- Content versioning isn't supported.
 - Searching through content relies on searching the code, rather than a search experience optimized for searching content.
 
-With the publish code as wiki feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature addresses the challenges by providing a way to maintain your content alongside your code base, but selectively publish and update your content to a wiki.  
+With the publish code as wiki feature, you can publish one or more Git repositories defined in your team project to a wiki. This feature provides a way to maintain your content alongside your code base, but selectively publish and update your content to a wiki.  
 
-There are several significant differences between how you manage the content for a wiki that you provision for a team project versus wiki pages that you publish from a Git repository. For details, see [Publish a Git repo to a wiki](publish-repo-to-wiki.md).
+There are significant differences between how you manage the content for a wiki that you provision for a team project versus wiki pages that you publish from a Git repository. For details, see [Publish a Git repo to a wiki](publish-repo-to-wiki.md).
 
 ::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"
+
+# About READMEs and Markdown
+
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+
+To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+
+## Markdown
+
+Markdown makes it easy to format text and include images. You can also link to documents within your project pages, README files, dashboards, and pull request comments.
+
+You can provide guidance to your team in the following places using Markdown:
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+  
+- [Team project wiki](add-edit-wiki.md)
+- [Publish code as wiki](publish-repo-to-wiki.md)
+- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
+- [Repository README files](../../repos/git/create-a-readme.md)
+- [Pull request comments](../../repos/git/pull-requests.md)
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+  
+- [Add and edit wiki pages](add-edit-wiki.md)
+- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
+- [Repository README files](../../repos/git/create-a-readme.md)
+- [Pull request comments](../../repos/git/pull-requests.md)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"
+
+- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
+- [Repository README files](../../repos/git/create-a-readme.md)
+- [Pull request comments](../../repos/git/pull-requests.md)
+
+::: moniker-end
+
+For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](markdown-guidance.md).
+
+## READMEs
+
+You can define a README file or multiple files for each repo or team project. Write your README in Markdown instead of plain text.
+
+Use README pages to orient contributors to working within your project. Consider adding the following guidance:
+
+- Project focus
+- Prerequisites
+- Setting up the environment
+- Tips for getting things done within the project
+- Purpose or use of specific files
+- Project-specific terms and acronyms
+- Workflow guidance about committing or uploading changes and adding branches
+- Project sponsors or contacts  
+
+Here are some great READMEs that use this format and speak to all audiences, for reference and inspiration:
+
+- [ASP.NET Core](https://github.com/aspnet/Home)
+- [Visual Studio Code](https://github.com/Microsoft/vscode)
+- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+
+

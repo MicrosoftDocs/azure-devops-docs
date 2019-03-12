@@ -11499,6 +11499,11 @@
       "source_path": "docs/boards/github/troubleshoot-git-hub-connection.md",
       "redirect_url": "/azure/devops/boards/github/troubleshoot-github-connection",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/project/wiki/project-vision-status.md",
+      "redirect_url": "/azure/devops/organization/projects/project-vision-status",
+      "redirect_document_id": false
     }
   ]
 }

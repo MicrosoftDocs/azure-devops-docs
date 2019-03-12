@@ -47,7 +47,7 @@ To contribute to a project by adding or modifying code, work items, pipelines, o
 **To get started:**
 * [Create a public project](create-public-project.md)
 * [Invite users to contribute to your public project](invite-users-public.md)
-* [Define a README for your project](../../project/wiki/project-vision-status.md)
+* [Define a README for your project](../projects/project-vision-status.md)
 
 **To share code:**
 * [Share your code](../../repos/git/gitquickstart.md)
