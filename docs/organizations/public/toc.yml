@@ -15,7 +15,7 @@
   - name: Make a project public
     href: make-project-public.md
   - name: Share your project vision
-    href: ../../project/wiki/project-vision-status.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
+    href: ../projects/project-vision-status.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Browse code, download code 
     href: browse-code-public.md  
   - name: View and filter work items

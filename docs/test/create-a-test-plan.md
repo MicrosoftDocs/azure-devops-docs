@@ -93,6 +93,9 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
    ![Adding test plan details](_img/create-a-test-plan/CreateATestPlan2.png) 
 
+> You can also create a test plan and a test suite automatically when you create a test from a User Story work item in Azure Boards or TFS.
+> Open the shortcut menu for the work item and choose **Add test**.    
+
 <a name="backlog"></a>
 ## Add a requirement-based test suite and select backlog items to test
 

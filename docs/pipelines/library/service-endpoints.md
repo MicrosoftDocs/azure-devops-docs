@@ -60,8 +60,21 @@ Service connections are created at project scope. A service connection created i
 
 1. Choose **OK** to create the connection.
 
-> For more information about Azure Resource Manager service connections, see [Create an Azure service connection](connect-to-azure.md).
+> For more information about Azure Resource Manager service connections, see [Connect to Microsoft Azure](connect-to-azure.md).
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
+
+## Manage a service connection
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   Or, in TFS, open the **Services** page from the "settings" icon in the top menu bar.
+
+1. Select the service connection you want to manage.
+
+1. Choose from the list of **Actions** in the **Details** tab in the right pane.
+
+The actions available depend on the chosen type of connection. You can update only
+some properties of connections; for example, to change the selected subscription
+you must re-create the connection. Choose **Disconnect** to delete or remove a connection.
 
 <a name="security"></a>
 
@@ -93,7 +106,7 @@ To modify the security for a connection:
 
 1. Add users or groups, turn on and off inheritance, or change the role for existing users and groups as required.
 
-> For more information about securing an Azure Resource Manager service connection, see [Create an Azure service connection](connect-to-azure.md).
+> For more information about securing an Azure Resource Manager service connection, see [Connect to Microsoft Azure](connect-to-azure.md).
 
 <a name="use-connection"></a>
 
@@ -197,7 +210,7 @@ The dialog offers two main modes:
   Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in Azure Pipelines or TFS.
   This is also a useful way to maximize security and limit access.
 
-For more information, see [Create an Azure service connection](connect-to-azure.md)
+For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 
 **NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
