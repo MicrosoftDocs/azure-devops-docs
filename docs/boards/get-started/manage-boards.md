@@ -37,7 +37,7 @@ The first task is to ensure that all members of your organization or group are a
 <a id="share-vision" />
 ## Share your project vision and support collaboration 
 
-Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../../project/wiki/project-vision-status.md) or [provision a Wiki](../../project/wiki/wiki-create-repo.md). 
+Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../../organizations/projects/project-vision-status.md) or [provision a Wiki](../../project/wiki/wiki-create-repo.md). 
 
 <a id="areas-iterations" />
 ## Define area and iteration paths for work tracking

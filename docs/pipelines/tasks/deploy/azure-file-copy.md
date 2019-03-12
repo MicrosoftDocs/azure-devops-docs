@@ -126,8 +126,6 @@ WinRM HTTPS ports, follow these steps:
 1. Install a certificate on the machine that runs the automation agent.
 1. Set the **Test Certificate** parameter of the task if you are using a self-signed certificate.
 
-For more details, see [this blog post](http://blogs.msdn.com/b/muthus_blog/archive/2015/11/04/pre-requisites-for-using-azure-vms-in-winrm-based-tasks-in-build-and-rm-workflows.aspx).
-
 #### What type of service connection should I choose?
 
 The following table lists the storage accounts and 
@@ -152,7 +150,7 @@ and browse for **Storage accounts (Classic)** or
   Microsoft accounts such as **joe@live.com** and 
   **joe@hotmail.com** are not supported.
   
-* For Azure Resource Manager VMs, use an **Azure Resource Manager** service connection type. See more details at [Automating Azure Resource Group deployment using a Service Principal](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
+* For Azure Resource Manager VMs, use an **Azure Resource Manager** service connection type. See more details at [Automating Azure Resource Group deployment using a Service Principal](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
   
 * If you are using an **Azure Resource Manager** 
   service connection type, or an **Azure** service connection 

@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 03/11/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -66,12 +66,12 @@ If you decide that you want to delegate specific tasks to others, then you'll wa
 ::: moniker-end
 
 ::: moniker range="azure-devops"  
-Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md).
+Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md).
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015"  
-Each project has a summary page where you can share information through **README files**. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../project/wiki/project-vision-status.md).
+Each project has a summary page where you can share information through **README files**. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md).
 
 ::: moniker-end
 
