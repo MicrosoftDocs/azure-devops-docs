@@ -3,6 +3,7 @@ ms.topic: include
 ---
 
 ::: moniker range=">= tfs-2017"
+
 <table>
 <tr valign="bottom">
 <th width="41%">Task</th>

@@ -45,9 +45,10 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 * To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
 * To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
 
-## Import into a new repo
+## Import into a new repo  
+::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -119,9 +120,10 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     rm -rf old-contoso-repo.git
     ```
 
+::: moniker-end
+
 ## Frequently asked questions
 
-::: moniker-end
 ::: moniker range=">= tfs-2017"
 
 Although most of the time the import is successful, the following conditions can cause problems.
@@ -144,6 +146,7 @@ If the source repository does not provide this capability, the import service ca
 This failure can happen when creating import request or while import is in progress.
 
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013"
 
 ### Can I import from previous versions of Team Foundation Server?
@@ -151,6 +154,7 @@ If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then
 This happens because of a contract mismatch between the latest Azure DevOps Services/TFS and pre-2017 RTM versions of TFS.
 
 ::: moniker-end
+
 ::: moniker range=">= tfs-2017"
 
 ### Can I use MSA based credentials?
@@ -165,6 +169,8 @@ git clone https://<<username>>:<<password>>@<<remaining clone Url>>
 
 You can migrate code from an existing TFVC repository to a new Git repository within the same account. While migrating to Git has many benefits, it is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. For more information, see [Import from TFVC to Git](import-from-tfvc.md).
 
+::: moniker-end
+
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -173,4 +179,4 @@ You can migrate code from an existing TFVC repository to a new Git repository wi
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](gitworkflow.md)
 
-::: moniker-end
+

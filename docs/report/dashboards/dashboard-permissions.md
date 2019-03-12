@@ -24,13 +24,15 @@ As a member of the Project Administrators group, you can set the default dashboa
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017  <= tfs-2018"  
-As a team or project administrator, you can set individual dashboard permissions for team members. The permissions only affect the team members to which the dashboards belongs. 
+As a team or project administrator, you can set individual dashboard permissions for team members. The permissions only affect the team members to which the dashboards belongs.  
+
 ::: moniker-end
 
 
-::: moniker range="tfs-2017"
+::: moniker range="tfs-2017"  
 > [!NOTE]  
-> The set dashboard permissions feature is available for TFS 2017.1 and later versions. For TFS 2017 and earlier versions, only team and project administrators can add and edit dashboards.
+> The set dashboard permissions feature is available for TFS 2017.1 and later versions. For TFS 2017 and earlier versions, only team and project administrators can add and edit dashboards.  
+
 ::: moniker-end
 
 To learn more about adding and viewing dashboards, see [Add, rename, and delete dashboards](dashboards.md).   
@@ -103,7 +105,7 @@ By default, all team members have permissions to edit dashboards defined for the
 
 	> [!NOTE]   
 	> The dashboard security dialog doesn't support granting permissions to other users or groups.  
-
+::: moniker-end  
 	::: moniker range="tfs-2018"  
 	> [!div class="mx-imgBorder"]
 	> ![Manage dashboards - permissions dialog, Azure DevOps and TFS 2018](_img/dashboards-permissions.png)   
@@ -114,7 +116,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	> [!div class="mx-imgBorder"]
 	> ![Manage dashboards - permissions dialog, 2017.1](_img/dashboards-permissions-tfs.png) 
 	::: moniker-end
-
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 3. Choose **Save** to save your changes and dismiss the Settings dialog. 
 
 ::: moniker-end
