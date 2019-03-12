@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/25/2019
+ms.date: 03/11/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -109,7 +109,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
-3. Upon successful completion, the project summary displays. To learn more, see [Share your project vision](../../project/wiki/project-vision-status.md).
+3. Upon successful completion, the project summary displays. To learn more, see [Share your project vision](project-vision-status.md).
 
 ::: moniker-end
 
