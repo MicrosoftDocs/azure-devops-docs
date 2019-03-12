@@ -33,7 +33,7 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 2. Select the shopping bag icon and **Manage extensions**.
 
-   ![Shopping bag icon, Browse Marketplace](../organizations/billing/_img/_shared/shopping-bag-browse-marketplace.png)
+   ![Shopping bag icon, Manage extensions](../organizations/billing/_img/_shared/marketplace-shopping-bag-manage-extensions.png)
 
 3. Right click or choose the ellipses (...) on the extension and then choose **uninstall** or **disable**.
 
@@ -51,6 +51,6 @@ You must be a [Project collection administrator](../organizations/security/set-p
 
 3. Right click or choose the ellipses (...) on the extension and then choose **uninstall** or **disable**.
 
-    ![Uninstall or disable extensions](_img/disable-uninstall-extension.png)
+   ![Uninstall or disable extensions](_img/disable-uninstall-extension.png)
 
 ::: moniker-end

@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 11/19/2018
+ms.date: 03/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -34,8 +34,6 @@ Wikis and repository README files are great ways to share information with your 
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
 - [Publish code to a wiki](publish-repo-to-wiki.md)  
-- [Share your project vision](project-vision-status.md)  
-- [Add Markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
 
 ::: moniker-end
 
@@ -43,8 +41,7 @@ Wikis and repository README files are great ways to share information with your 
 
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
-- [Share your project vision](project-vision-status.md)  
-- [Add Markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
+
 
 ::: moniker-end
 
@@ -70,7 +67,7 @@ Wikis and repository README files are great ways to share information with your 
 - [View wiki history and revert](wiki-view-history.md)
 - [Filter or print wiki content](filter-print-wiki.md)  
 - [Search wiki content](search-wiki.md)
-- [Version, select, or un-publish a wiki](wiki-select-unpublish-versions.md)  
+- [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)  
 - [Update wiki pages offline](wiki-update-offline.md)  
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
 

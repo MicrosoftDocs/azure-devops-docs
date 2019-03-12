@@ -14,8 +14,6 @@
     href: add-edit-wiki.md
   - name: Publish code to a Wiki 
     href: publish-repo-to-wiki.md
-  - name: Share your project vision
-    href: project-vision-status.md
 - name: Concepts
   items:
   - name: Wiki file structure
