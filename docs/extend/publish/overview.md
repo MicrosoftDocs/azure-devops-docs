@@ -123,8 +123,8 @@ Certain criteria must be met for an extension to be unpublished or removed:
 | Unpublish | Only **free extensions** may be unpublished.                  |
 | Remove    | Your extension must have **zero (0)** installs to be removed. |
 
-**Important**: If you must remove your extension due to legal or security problems, contact the [Marketplace team](http://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension. 
+**Important**: If you must remove your extension due to legal or security problems, contact the [Marketplace team](https://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension. 
 
 ## Contact
 
-Send questions about publishing items to the Visual Studio Marketplace to [vsmarketplace@microsoft.com](http://aka.ms/vsmarketplace-contact).
+Send questions about publishing items to the Visual Studio Marketplace to [vsmarketplace@microsoft.com](https://aka.ms/vsmarketplace-contact).
