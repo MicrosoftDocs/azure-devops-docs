@@ -89,6 +89,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/pythonscript.png) [Python Script](utility/python-script.md). Run a Python script. | Azure Pipelines |
 | ![icon](utility/_img/azure-monitor.png) [Query Azure Monitor Alerts](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | Azure Pipelines |
 | ![icon](utility/_img/query-work-items.png) [Query Work Items](utility/work-item-query.md). Ensure the number of matching items returned by a work item query in within the configured thresholds. | Azure Pipelines |
+| ![icon](utility/_img/security-compliance.png) [Security and Compliance Assessment](utility/azure-policy.md). Assess and enforce Azure Policy resource compliance against defined IT policies. | Azure Pipelines |
 | ![icon](utility/_img/azure-service-fabric.png) [Service Fabric PowerShell](utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | Azure Pipelines |
 | ![icon](utility/_img/shell-script.png) [Shell Script](utility/shell-script.md). Run a shell script using bash | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](utility/_img/azure-service-fabric.png) [Update Service Fabric App Versions](utility/service-fabric-versioning.md). Automatically updates the versions of a packaged Service Fabric application | Azure Pipelines, TFS 2017 and newer |
