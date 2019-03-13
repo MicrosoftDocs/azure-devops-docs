@@ -89,6 +89,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/pythonscript.png) [Python Script](utility/python-script.md). Run a Python script. | Azure Pipelines |
 | ![icon](utility/_img/azure-monitor.png) [Query Azure Monitor Alerts](utility/azure-monitor.md). Observe the configured Azure monitor rules for active alerts. | Azure Pipelines |
 | ![icon](utility/_img/query-work-items.png) [Query Work Items](utility/work-item-query.md). Ensure the number of matching items returned by a work item query in within the configured thresholds. | Azure Pipelines |
+| ![icon](utility/_img/security-compliance.png) [Security and Compliance Assessment](utility/azure-policy.md). Assess and enforce Azure Policy resource compliance against defined IT policies. | Azure Pipelines |
 | ![icon](utility/_img/azure-service-fabric.png) [Service Fabric PowerShell](utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | Azure Pipelines |
 | ![icon](utility/_img/shell-script.png) [Shell Script](utility/shell-script.md). Run a shell script using bash | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](utility/_img/azure-service-fabric.png) [Update Service Fabric App Versions](utility/service-fabric-versioning.md). Automatically updates the versions of a packaged Service Fabric application | Azure Pipelines, TFS 2017 and newer |
@@ -131,6 +132,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](deploy/_img/azure-cli-icon.png) [Azure CLI](deploy/azure-cli.md). Run a shell or batch script containing Azure CLI commands against an Azure subscription | Azure Pipelines, TFS 2017 and newer |
 | ![icon](deploy/_img/azurecloudpowershelldeployment.png) [Azure Cloud PowerShell Deployment](deploy/azure-cloud-powershell-deployment.md). Deploy an Azure Cloud Service | Azure Pipelines, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-file-copy-icon.png) [Azure File Copy](deploy/azure-file-copy.md). Copy files to Azure blob or VM(s) | Azure Pipelines, TFS 2015.3 and newer |
+| ![icon](deploy/_img/azure-function-app-for-container.png) [Azure Function App for Container](deploy/azure-rm-functionapp-containers.md). Deploy an Azure Function on Linux using a custom container image. | Azure Pipelines |
 | ![icon](deploy/_img/azure-key-vault-icon.png) [Azure Key Vault](deploy/azure-key-vault.md). Incorporate secrets from an Azure Key Vault into a release pipeline | Azure Pipelines |
 | ![icon](deploy/_img/azuremonitoralerts.png) [Azure Monitor Alerts](deploy/azure-monitor-alerts.md). Configure alerts on available metrics for an Azure resource | Azure Pipelines |
 | ![icon](deploy/_img/azuremysqldeployment.png) [Azure MySQL Deployment](deploy/azure-mysql-deployment.md). Run your scripts and make changes to your Azure DB for MySQL. | Azure Pipelines |
@@ -139,6 +141,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](deploy/_img/azureresourcegroupdeployment.png) [Azure Resource Group Deployment](deploy/azure-resource-group-deployment.md). Deploy, start, stop, delete Azure Resource Groups | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](deploy/_img/SqlAzureDacpacDeployment.png) [Azure SQL Database Deployment](deploy/sql-azure-dacpac-deployment.md). Deploy an Azure SQL database using DACPAC or run scripts using SQLCMD | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](deploy/_img/azurevmssdeployment.png) [Azure VM Scale Set Deployment](deploy/azure-vmss-deployment.md). Deploy a virtual machine scale set image. | Azure Pipelines |
+| ![icon](deploy/_img/azure-web-app-for-container.png) [Azure Web App for Container](deploy/azure-rm-web-app-containers.md). Deploy Web Apps, Functions, and WebJobs to Azure App Services using a custom Docker image. | Azure Pipelines |
 | ![icon](deploy/_img/PackerBuild.png) [Build Machine Image (Packer)](deploy/packer-build.md). Build a machine image using Packer. | Azure Pipelines |
 | ![icon](deploy/_img/chef.png) [Chef](deploy/chef.md). Deploy to Chef environments by editing environment attributes | Azure Pipelines |
 | ![icon](deploy/_img/chefknife.png) [Chef Knife](deploy/chef-knife.md). Run Scripts with knife commands on your chef workstation | Azure Pipelines |

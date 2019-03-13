@@ -90,10 +90,11 @@ meets a wide range or criteria, without requiring user intervention.
 
    ![Configuring the Query Work Items approval gate](_img/deploy-using-approvals/gates-04.png)
 
-   >You'll need to open the **Advanced** section to see the **Maximum Threshold** setting.
-   For more details about the gate arguments, see [Work Item Query task](../tasks/utility/work-item-query.md).
+   > You'll need to open the **Advanced** section to see the **Lower Threshold** setting.
+   > You can also set an **Output Variable** to be returned from the gate task. 
+   > For more details about the gate arguments, see [Work Item Query task](../tasks/utility/work-item-query.md).
 
-1. Open the **Options for all gates** section and specify the timeout and the sampling interval.
+1. Open the **Evaluation options** section and specify the timeout and the sampling interval.
    For this example, choose short periods so that you can see the results reasonably quickly.
    The minimum values you can specify are 6 minutes timeout and 5 minutes sampling interval.
 

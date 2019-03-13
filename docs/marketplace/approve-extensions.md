@@ -24,8 +24,6 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 ## Approve requests
 
-[!INCLUDE [temp](../_shared/new-navigation.md)]
-
 ::: moniker range=">= azure-devops-2019"
 
 1. Go to your Azure DevOps Services or TFS home page, then go to your project:
@@ -69,4 +67,5 @@ To approve extensions, you must have [**edit collection-level information** perm
 4. If you installed paid extensions, go to the next section to [assign those extensions](./assign-paid-extensions.md) to users who need access.
 
 ::: moniker-end
+
 Remember to tell your team about installed extensions, so they can start using their capabilities.

@@ -444,6 +444,8 @@
         href: tasks/utility/azure-monitor.md
       - name: Query Work Items
         href: tasks/utility/work-item-query.md
+      - name: Security and Compliance Assessment
+        href: tasks/utility/azure-policy.md
       - name: Service Fabric PowerShell
         href: tasks/utility/service-fabric-powershell.md
       - name: Shell script
@@ -516,6 +518,8 @@
         href: tasks/deploy/azure-cloud-powershell-deployment.md
       - name: Azure File Copy
         href: tasks/deploy/azure-file-copy.md
+      - name: Azure Function App for Container
+        href: tasks/deploy/azure-rm-functionapp-containers.md
       - name: Azure Key Vault
         href: tasks/deploy/azure-key-vault.md
       - name: Azure Monitor Alerts
@@ -532,6 +536,8 @@
         href: tasks/deploy/sql-azure-dacpac-deployment.md
       - name: Azure VM Scale Set Deployment
         href: tasks/deploy/azure-vmss-deployment.md
+      - name: Azure Web App for Container
+        href: tasks/deploy/azure-rm-web-app-containers.md
       - name: Build Machine Image (Packer)
         href: tasks/deploy/packer-build.md
       - name: Chef
