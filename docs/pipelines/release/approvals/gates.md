@@ -65,6 +65,9 @@ The following gates are available by default:
   For more details, see [HTTP REST API task](../../tasks/utility/http-rest-api.md).
 * **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold.
   For more details, see [Work item query task](../../tasks/utility/work-item-query.md).
+* **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a
+  given subscription and resource group, and optionally at a specific resource level. For more details, see
+  [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md).
 
 You can [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
    
@@ -106,6 +109,7 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
+* [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md)
 * [Stages](../environments.md)
 * [Triggers](../triggers.md)
 
