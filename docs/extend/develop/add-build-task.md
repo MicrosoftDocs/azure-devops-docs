@@ -442,7 +442,7 @@ If you aren't already a member of an existing publisher, you'll create one.
  * Specify an identifier for your publisher, for example: `mycompany-myteam`
     * This will be used as the value for the `publisher` attribute in your extensions' manifest file.
  * Specify a display name for your publisher, for example: `My Team`
-3. Review the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreement) and click **Create**
+3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) and click **Create**
 
 Now your publisher is defined. In a future release, you'll be able to grant permissions to view and manage your publisher's extensions.
 This will make it easy (and more secure) for teams and organizations to publish extensions under a common publisher,

@@ -57,4 +57,4 @@ Once your publisher is verified, you need to set the [public flag](../develop/ma
 
 ## Contact
 
-Send questions about publishing items to the Visual Studio Marketplace to [vsmarketplace@microsoft.com](http://aka.ms/vsmarketplace-contact).
+Send questions about publishing items to the Visual Studio Marketplace to [vsmarketplace@microsoft.com](https://aka.ms/vsmarketplace-contact).

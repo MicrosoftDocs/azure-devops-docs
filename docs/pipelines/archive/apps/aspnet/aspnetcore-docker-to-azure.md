@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
-[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-intro/). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](http://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
+[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-intro/). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](https://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
 
 [!INCLUDE [temp](../../../apps/aspnet/_shared/ci-cd-description.md)]
 
@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2015'
 
 1. Make sure you have a Docker-enabled ASP.NET Core solution. See the [Q&A below](#new_solution) if you don't have one yet.
 1. If you haven't already done so, add the project to a source control repository in Azure Repos by clicking first on **Add to Source Control** in the Visual Studio status bar (creating a local repository), then following the instructions in the Team Explorer pane to publish to a remote repository in Azure Repos.
-1. Select the **Tools > Extensions and Updates...** command, then search for and install the "Continuous Delivery Tools for Visual Studio" extension that matches your version of Visual Studio. (Or install from the [Visual Studio Gallery](http://aka.ms/CD4VS).)
+1. Select the **Tools > Extensions and Updates...** command, then search for and install the "Continuous Delivery Tools for Visual Studio" extension that matches your version of Visual Studio. (Or install from the [Visual Studio Gallery](https://aka.ms/CD4VS).)
 1. In Visual Studio Solution Explorer, right-click the project and select **Configure Continuous Delivery...**.
 1. In the Configure Continuous Delivery dialog, select an Azure subscription that has Azure Container Service running. See the [Q&A below](#create_acs) for information on creating the service.
 1. Click Create and watch the output window for completion of the process, which will include direct links to the project, build pipeline, and release pipeline. A build will also have been started automatically, so you can monitor the progress of the build and deployment in the Azure Pipelines portal.

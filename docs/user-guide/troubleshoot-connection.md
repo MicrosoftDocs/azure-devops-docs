@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2013'
 
 As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
 
-1. Sign out of your browser. To do this, select the [Visual Studio sign out](http://aka.ms/VsSignout) link.
+1. Sign out of your browser. To do this, select the [Visual Studio sign out](https://aka.ms/VsSignout) link.
 
 2. Delete the cookies in your browser. To delete cookies in most browsers, press Ctrl+Shift+Del.
 
