@@ -37,10 +37,7 @@ In this article you'll learn how to:
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 [!INCLUDE [temp](../_shared/open-queries.md)] 
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -63,6 +60,7 @@ The buttons to move up or down within the query results list are inside the work
 
 
 <a id="save-bulk-changes" />
+
 ## Bulk update and save changes to work items 
 
 You can update several work items through the triage process, and then do a bulk save when you're finished. 

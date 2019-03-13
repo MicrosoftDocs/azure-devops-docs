@@ -21,7 +21,7 @@ ms.date: 12/04/2018
 You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection. The work item types available to you are based on the [process used when your project was created](guidance/choose-process.md) (Basic, Agile, Scrum, or CMMI).  
 
 
-####In a nutshell:
+#### In a nutshell:
 
 ::: moniker range=">= tfs-2018"
 - You use different [work item types (WITs)](#wit) to track different types of information. Specific tools 
@@ -43,6 +43,7 @@ You can use work items to track anything you need to track. Each work item repre
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
+
 - You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items and attach files  
 - You can add and modify work items using the [web portal and other supported clients](#portal-clients)
@@ -58,6 +59,7 @@ You can use work items to track anything you need to track. Each work item repre
 
 
 <a id="wit" />
+
 ## Work item types (WITs)
 
 To track different types of work, different WITs are defined. The WITs available to you differ depending on the process or process template used to create your project.
@@ -72,21 +74,31 @@ For example, the following WITs are available to you when you choose the Agile p
 To learn more about processes and process templates, see [Choose a process](./guidance/choose-process.md).
 
 <a id="form" />
+
 ## Work item form 
 
 ::: moniker range=">= tfs-2018" 
+
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. To learn more about each field, see [Work item field index](./guidance/work-item-field.md). To learn about the different tabs and sections of the form, see [Work item form controls](work-item-form-controls.md).
+
 ::: moniker-end
+
 ::: moniker range="<= tfs-2017" 
+
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field. To learn more about each field, see [Work item field index](./guidance/work-item-field.md).
+
 ::: moniker-end
+
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
 ::: moniker range=">= tfs-2018"
+
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
+
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
+
 The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../../reference/manage-new-form-rollout.md). To learn about the different tabs and sections of the new form, see [Work item form controls](work-item-form-controls.md).
 
 **New web form**
@@ -116,11 +128,9 @@ You can add and update work items from the web portal. To track work using other
 ## Web portal and clients that support tracking work items  
 You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
 
-###Web portal 
+### Web portal 
 
 Use the web portal to accomplish the following tasks. 
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
 
