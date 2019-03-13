@@ -29,8 +29,6 @@ While browsing your Git repository, start typing in the path control box to sear
 
 ### Hotkey navigation
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
 ::: moniker range=">= azure-devops-2019"
 
 Launch the Find a File experience from the keyboard with the `t` shortcut from the **Files** or **Commits** pages in the **Repos** view. Use the up and down arrows to cycle through the results, and click or press Enter to open a result. Press `Esc` to close the Find a File experience.
