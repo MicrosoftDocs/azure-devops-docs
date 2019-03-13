@@ -1,5 +1,5 @@
 ---
-title: Azure Web App for Containers task
+title: Azure Web App for Container task
 description: Deploy Web Apps, Functions, and WebJobs to Azure App Services
 ms.topic: reference
 ms.prod: devops
@@ -12,11 +12,11 @@ ms.date: 03/13/2019
 monikerRange: 'azure-devops'
 ---
 
-# Azure Web App for Containers task
+# Azure Web App for Container task
 
 **Azure Pipelines**
 
-This task is used to deploy Web Apps, Functions, and WebJobs to Azure App Services
+Use this task to deploy Web Apps, Azure Functions, and WebJobs to Azure App Services
 using a [custom Docker image](https://docs.microsoft.com/azure/app-service/containers/tutorial-custom-docker-image).
 
 ## Task Inputs

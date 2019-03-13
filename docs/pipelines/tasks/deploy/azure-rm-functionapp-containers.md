@@ -1,6 +1,6 @@
 ---
-title: Azure Function App for Containers task
-description: Deploy Functions on Linux using custom images
+title: Azure Function App for Container task
+description: Deploy Azure Functions on Linux using custom images
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,12 +12,11 @@ ms.date: 03/13/2019
 monikerRange: 'azure-devops'
 ---
 
-# Azure Function App for Containers task
+# Azure Function App for Container task
 
 **Azure Pipelines**
 
-The Azure Function App for Containers deployment task can be used to deploy a
-[function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image).
+Use this task to deploy an Azure Function on Linux using a [custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image).
 
 ## Task Inputs
 
