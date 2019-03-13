@@ -23,8 +23,6 @@ A project rename updates all of your version control paths, work items, queries,
 Projects can be renamed multiple times and older names can be reused as well. 
 Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
-
 [!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
 
 ## Choose to rename a project
@@ -46,6 +44,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"
+
 0. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
 
 	![Enter a new project name](_img/rename-project/collection-rename.png)
@@ -61,13 +60,16 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 
 <a id="more-work"></a>
+
 ## Let your team know what they have to do
 
 Now that you've renamed your project,
 your team must restart their clients and perform additional actions based on the features they use. 
 
 <a id="restarting-clients"></a>
+
 ### Restart your clients
+
 Opened clients keep a cache of all project names in memory and this cache isn't automatically cleared after a project is renamed.
 To clear the cache, all that is necessary is to restart the client so it populates the new project name.
 If you don't restart the client, then operations that use the cached project name fails with a project not found exception.
@@ -83,10 +85,13 @@ For the following clients, save your work in each and restart:
 - Any additional clients which use the .NET Team Foundation Server Client Object Model
 
 <a id="git"></a>
+
 ### Update your Git remotes
+
 If your project uses Git, then your remote references for each repository from the renamed project need to be updated. This is due to the fact that the remote repository URL contains the project and the repository name. Git uses remote references to fetch and push changes between your local copy of a repository and the remote version stored on the server. Each member of your team must update their local Git repos to continue connecting from their dev machines to the repo in the project.
 
 <a name="copy_remote_repo_url"></a>
+
 #### Get the new URL for the repo
 
 Copy the repository URL to your clipboard.

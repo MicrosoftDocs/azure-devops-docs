@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: jillfra
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 03/06/2019
+ms.date: 03/13/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -231,6 +231,8 @@ and how to specify them.
 
 # [Schema](#tab/schema)
 
+There are three distinct options for `trigger`: a list of branches to include, a way to disable CI triggering, and the full syntax for ultimate control.
+
 List syntax:
 
 ```yaml
@@ -291,7 +293,7 @@ trigger:
 Disable syntax:
 
 ```yaml
-trigger: none # will disable CI builds entirely
+trigger: none # will disable CI builds (but not PR builds)
 ```
 
 Full syntax:
@@ -322,6 +324,8 @@ Note that `pr` is valid for GitHub, not any other Git provider.
 
 # [Schema](#tab/schema)
 
+There are three distinct options for `pr`: a list of branches to include, a way to disable PR triggering, and the full syntax for ultimate control.
+
 List syntax:
 
 ```yaml
@@ -331,7 +335,7 @@ pr: [ string ] # list of branch names
 Disable syntax:
 
 ```yaml
-pr: none # will disable PR builds entirely
+pr: none # will disable PR builds entirely; will not disable CI triggers
 ```
 
 Full syntax:
@@ -360,7 +364,7 @@ pr:
 Disable syntax:
 
 ```yaml
-pr: none # will disable PR builds entirely
+pr: none # will disable PR builds (but not CI builds)
 ```
 
 Full syntax:
