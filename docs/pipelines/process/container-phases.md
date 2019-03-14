@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: macoope
-ms.date: 01/15/2019
+ms.date: 02/15/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -46,6 +46,9 @@ containers available on Docker Hub, especially those based on Alpine Linux, don'
 minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure Pipelines
 will `docker create` an awaiting container and `docker exec` a series of commands which expect
 the container is always up and running.
+
+Also note: the Red Hat Enterprise Linux 6 build of the agent won't run container job.
+Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
 
 ### Windows Containers
 
