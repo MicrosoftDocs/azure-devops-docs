@@ -69,7 +69,7 @@ This command will list all the current subscriptions for the channel and allow y
 ## Approve release deployments from your channel
 You can approve release deployments from within Slack without navigating to the Azure Pipelines portal. Subscribe to ‘Release deployment approval pending’ notification in Slack (which happens by default upon subscribing to any release pipeline).
 
-![Approval image |10x10](../_img/integrations-slack/Approve.gif =850x400)
+<img src="../_img/integrations-slack/Approve.gif" width="850" height="400" />
 
 Whenever a deployment is pending for approval, a notification card with options to approve or reject the deployment would be posted in the channel. Users can then look at the details of the deployment in the notification and take action. 
 
