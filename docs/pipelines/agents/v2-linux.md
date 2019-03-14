@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/29/2018
+ms.date: 02/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -74,7 +74,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 <li>On the **Get agent** dialog box, click **Linux**.</li>
 
-<li>On the left pane, select the processor architecture (x64 or ARM).</li>
+<li>On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.</li>
 
 <li>On the right pane, click the **Download** button.
 
