@@ -136,7 +136,7 @@ To quickly reassign tasks, drag the task onto the new assignee's capacity bar.
 
 ::: moniker range=">= azure-devops-2019"
 
-For example, here we reassign work from Raisa Pokrovskaya to christie Church. 
+For example, here we reassign work from Raisa Pokrovskaya to Christie Church. 
 
 > [!div class="mx-imgBorder"]  
 > ![Reassign work, drag and drop task onto an assignee](_img/adjust-work/load-balance-work.png)   
