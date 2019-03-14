@@ -331,25 +331,19 @@ This returns a result similar to the following, which you can then use directly 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemBoardSnapshot(DateValue,ColumnName,Count)",
   "value": [
     {
       "@odata.id": null,
       "DateValue": "2015-07-16T00:00:00-07:00",
       "Count": 324,
-      "BoardLocation": {
-        "@odata.id": null,
-        "ColumnName": "Completed"
-      }
+       "ColumnName": "Completed"
     },
     {
       "@odata.id": null,
       "DateValue": "2015-07-16T00:00:00-07:00",
       "Count": 5,
-      "BoardLocation": {
-        "@odata.id": null,
-        "ColumnName": "In Progress"
-      }
+      "ColumnName": "In Progress"
     }
   ]
 }

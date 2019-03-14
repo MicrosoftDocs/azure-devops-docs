@@ -1755,7 +1755,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 
 
 ## Process (object-level)   
-You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administrators are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administrators are granted all permissions to create, edit, and manage processes. Valid users are granted View (read-only) permissions. 
 
 
 <table valign="top" width="100%">
