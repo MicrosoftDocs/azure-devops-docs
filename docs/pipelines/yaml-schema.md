@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: jillfra
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 03/13/2019
+ms.date: 03/15/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -72,7 +72,7 @@ name: string  # build numbering format
 resources:
   containers: [ containerResource ]
   repositories: [ repositoryResource ]
-variables: { string: string } | [ variable ]
+variables: { string: string } | [ variable | templateReference ]
 trigger: trigger
 pr: pr
 jobs: [ job | templateReference ]
@@ -132,10 +132,77 @@ variables:
 - group: my-variable-group-2  # another variable group
 ```
 
-> [!Note]
-> You must also link your [variable groups](library/variable-groups.md) in the pipeline editor before they'll be available.
+---
+
+::: moniker range="azure-devops"
+
+### Variables from templates
+
+Variables can also be specified in a template. [Templates](process/templates.md) are separate
+files which you can reference in the main pipeline definition.
+
+# [Schema](#tab/schema)
+
+In the main pipeline:
+
+```yaml
+- template: string # name of template to include
+  parameters: { string: any } # provided parameters
+```
+
+And in the included template:
+
+```yaml
+parameters: { string: any } # expected parameters
+variables: [ variable ]
+```
+
+# [Example](#tab/example)
+
+In this example, a set of variables is repeated across multiple pipelines.
+The variables are only specified once.
+
+```yaml
+# File: variables/build.yml
+
+variables:
+- name: vmImage
+  value: vs2017-win2016
+- name: arch
+  value: x64
+- name: config
+  value: debug
+```
+
+```yaml
+# File: component-x-pipeline.yml
+
+variables:
+- template: variables/build.yml  # Template reference
+
+pool:
+  vmImage: ${{ variables.vmImage }}
+
+steps:
+- script: build x ${{ variables.arch }} ${{ variables.config }}
+```
+
+```yaml
+# File: component-y-pipeline.yml
+
+variables:
+- template: variables/build.yml  # Template reference
+
+pool:
+  vmImage: ${{ variables.vmImage }}
+
+steps:
+- script: build y ${{ variables.arch }} ${{ variables.config }}
+```
 
 ---
+
+::: moniker-end
 
 ### Container resource
 
