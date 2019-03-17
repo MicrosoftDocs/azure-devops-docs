@@ -206,11 +206,9 @@ On the [build tab](../tasks/index.md) add this as the last task:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-
-### Can I run Git commands if my remote repo is in GitHub or an external Git service such as Bitbucket?
+### Can I run Git commands if my remote repo is in GitHub or another Git service such as Bitbucket Cloud?
 
 Yes
-
 
 ### Which tasks can I use to run Git commands?
 

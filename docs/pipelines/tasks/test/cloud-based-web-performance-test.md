@@ -43,7 +43,7 @@ The agent must have the following capability:
 | Argument | Description |
 | -------- | ----------- |
 | **Azure Pipelines connection** | The name of a Generic service connection that references the Azure DevOps organization you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the Azure DevOps organization where the load test will run.<br />- Optional for builds and releases on Azure Pipelines. In this case, if not provided, the current Azure Pipelines connection is used.<br />- See [Generic service connection](../../library/service-endpoints.md). |
-| **Website Url** | Required. The URL of the app to test. |
+| **Website URL** | Required. The URL of the app to test. |
 | **Test Name** | Required. A name for this load test, used to identify it for reporting and for comparison with other test runs. |
 | **User Load** | Required. The number of concurrent users to simulate in this test. Select a value from the drop-down list. |
 | **Run Duration (sec)** | Required. The duration of this test in seconds. Select a value from the drop-down list. |
