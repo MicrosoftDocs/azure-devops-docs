@@ -12,14 +12,14 @@ monikerRange: 'azure-devops'
 ---
 # Use Azure Pipelines
 
-You can use either [YAML](../get-started-yaml.md) or the [visual designer](../get-started-designer.md) to define your pipelines. 
+You can use either [YAML](../get-started-yaml.md) or the [classic editor](../get-started-designer.md) to define your pipelines. 
 
 **Azure Pipelines**
 
-You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [visual designer](../get-started-designer.md) to do the same. 
+You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [classic editor](../get-started-designer.md) to do the same. 
 
 When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. 
-When you use the visual designer, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
+When you use the classic editor, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
 
 ## Use Azure Pipelines with YAML
 
@@ -40,12 +40,12 @@ You can configure your pipelines in a YAML file that exists alongside your code.
 
 If you think the YAML workflow is best for you, [create your first pipeline by using YAML](../get-started-yaml.md).
 
-## Use Azure Pipelines in the visual designer
+## Use Azure Pipelines in the classic editor
 
-You can create and configure your build and release pipelines in the Azure DevOps Services web portal with the visual designer. 
+You can create and configure your build and release pipelines in the Azure DevOps Services web portal with the classic editor.
 
 1. Configure Azure Pipelines to use your Git repo.
-2. Use the Azure Pipelines visual designer to create and configure your build and release pipelines.
+2. Use the Azure Pipelines classic editor to create and configure your build and release pipelines.
 3. Push your code to your version control repository. This action triggers your pipeline and runs tasks such as building or testing code.
 5. The build creates an artifact that's used by the rest of your pipeline to run tasks such as deploying to staging or production.
 6. Your code is now updated, built, tested, and packaged. It can be deployed to any target.
@@ -53,12 +53,11 @@ You can create and configure your build and release pipelines in the Azure DevOp
 ![Pipelines designer intro image](../_img/pipelines-image-designer.png)
 
      
-### Benefits of using the visual designer
+### Benefits of using the classic editor
 
-The visual designer is great for users who are new to the world of continuous integration (CI) and continuous delivery (CD).
+The classic editor is great for users who are new to the world of continuous integration (CI) and continuous delivery (CD).
 
 * The visual representation of the pipelines makes it easier to get started. 
-* The visual designer is located in the same hub as the build results. This location makes it easier to switch back and forth and make changes.
+* The classic editor is located in the same hub as the build results. This location makes it easier to switch back and forth and make changes.
 
-If you think the designer workflow is best for you, [create your first pipeline by using the visual designer](../get-started-designer.md).
-
+If you think the designer workflow is best for you, [create your first pipeline by using the classic editor](../get-started-designer.md).
