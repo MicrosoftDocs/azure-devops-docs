@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
 ms.topic: overview
-ms.date: 03/11/2018
+ms.date: 03/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -63,12 +63,12 @@ The following features are supported for the team project wiki.
 ### Format wiki content
 
 - [Markdown format](markdown-guidance.md)  
-- [HTML tags](markdown-guidance.md#html)  
+- [HTML tags](wiki-markdown-guidance.md#html)  
 - [Insert and resize images](markdown-guidance.md#images)
-- [Link to work items using #](markdown-guidance.md#link-work-items)
+- [Link to work items using #](wiki-markdown-guidance.md#link-work-items)
 - [Attach files](markdown-guidance.md#attach)  
 - [Mathematical notation and characters](markdown-guidance.md#math-notation)  
-- [Table of contents (TOC) for Wiki pages](markdown-guidance.md#toc-wiki)  
+- [Table of contents (TOC) for Wiki pages](wiki-markdown-guidance.md#toc-wiki)  
 
 ::: moniker-end
 
@@ -80,9 +80,9 @@ The following features are supported for the team project wiki you create in the
 > |Feature | TFS version |  
 > |--------|--------------|  
 > |[Markdown format](markdown-guidance.md) | TFS 2018 |
-> |[HTML tags](markdown-guidance.md#html) | TFS 2018 |
+> |[HTML tags](wiki-markdown-guidance.md#html) | TFS 2018 |
 > |[Insert and resize images](markdown-guidance.md#images) | TFS 2018 |
-> |[Link to work items using #](markdown-guidance.md#link-work-items) | TFS 2018 |  
+> |[Link to work items using #](wiki-markdown-guidance.md#link-work-items) | TFS 2018 |  
 > |[Attach files](markdown-guidance.md#attach) | TFS 2018 |  
 > |[Filter Wiki TOC](filter-print-wiki.md) | TFS 2018 |  
 > |[Mathematical notation and characters](markdown-guidance.md#math-notation) |TFS 2018.2 |
