@@ -1,7 +1,7 @@
 ---
 title: Set permissions and access for work tracking
 titleSuffix: Azure DevOps
-description: How to grant or restrict access to work tracking tasks for Azure DevOps Services & Team Foundation Server
+description: How to grant or restrict access to work tracking tasks for Azure DevOps & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
@@ -10,14 +10,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 03/15/2019
 ---
 
 # Set permissions and access for work tracking
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md). 
+You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 > [!NOTE]
 > For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
 
@@ -247,6 +247,7 @@ In this example, we grant members assigned to the team administrator role, who b
 
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
+
 ## Manage test artifacts
   
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
@@ -259,7 +260,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 ![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
 
-To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
+To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019"  
