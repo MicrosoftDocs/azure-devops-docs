@@ -170,9 +170,9 @@ Choose the package from **Azure Artifacts** and select _Delete latest_ from the 
 
 ## Automatically delete old package versions with retention policies
 
-Over time, the number of versions for each package being hosted in Azure Artifacts or Team Foundation Server (TFS) can grow quickly. You can configure retention policies to automatically delete old packages in Azure DevOps Services or TFS to improve client performance and release storage space. 
+Over time, the number of versions for each package being hosted in Azure Artifacts or Team Foundation Server (TFS) can grow quickly. You can configure retention policies to automatically delete old packages in Azure DevOps Services or TFS to improve client performance and release storage space.
 
-Retention policies allow the user to set a number of versions to retain per package, once that number is hit the oldest version of the package will be deleted. 
+With retention policies, you can set the **maximum number of versions** to retain per package, once that number is hit the oldest version of the package will be deleted. You can also set the number of **days to keep recently downloaded packages**. Packages will only be deleted by retention policies if they have existed longer than the number of days set.
 
 If you'd like to retain a package version indefinitely, you can promote it to a view. Versions that are promoted to views are exempt from retention policies and do not count towards the maximum number of versions retention policy. Retention policies will not delete any version that has been promoted to a view.
 
@@ -188,7 +188,7 @@ To configure retention policies:
 
     ![Top right of screen, gear icon and then feed settings](../_shared/_img/feed-settings-azure-devops-newnav.png)
 
-2. From the **Feed details** tab, in the **Retention policies** setting, enter the maximum number of versions per package to retain:
+2. From the **Feed details** tab, in the **Retention policies** setting, enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages:
 
     ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../_img/retention-policy-settings.png)
 
@@ -204,7 +204,7 @@ To configure retention policies:
 
 2. From the **Retention** tab, enter the maximum number of versions per package to retain:
 
-    ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../_img/retention-policy-settings.png)
+    ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../_img/retention-policy-settings-tfs.png)
 
 3. Click **Save**.
 

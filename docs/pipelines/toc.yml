@@ -16,7 +16,7 @@
   items:
   - name: Create your first pipeline
     href: get-started-yaml.md
-  - name: Use the visual designer
+  - name: Use the classic editor
     href: get-started-designer.md
   - name: Use the Azure portal
     href: get-started-azure-devops-project.md
@@ -237,7 +237,7 @@
       href: build/ci-build-git.md
     - name: Build on multiple platforms
       href: get-started-multiplatform.md
-    - name: Build a repo using the visual designer
+    - name: Build a repo using the classic editor
       href: build/ci-build-github.md
     - name: Use Content Trust
       href: build/content-trust.md

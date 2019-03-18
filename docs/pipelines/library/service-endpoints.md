@@ -260,9 +260,9 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 
 *****
 
-<h3 id="sep-bbucket">Bitbucket service connection</h3>
+<h3 id="sep-bbucket">Bitbucket Cloud service connection</h3>
 
-Defines a connection to a Bitbucket server.
+Defines a connection to Bitbucket Cloud.
 
 | Parameter | Description |
 | --------- | ----------- |

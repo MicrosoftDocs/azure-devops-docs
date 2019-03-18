@@ -60,7 +60,7 @@ The following pre-requisites must be set up in the target machine(s) in order fo
 
 <table><thead><tr><th>Argument</th><th>Parameter</th><th>Description</th></tr></thead>
 <tr><td>Connection type</td><td>connectionType</td><td>(Required) Select **Azure Resource Manager**.</td></tr>
-<tr><td>Azure subscription</td><td>azureSubscription</td><td>(Required) Select your Azure Resource Manager subscription. If none exists, choose **Manage** to navigate to the Services page in the administration section. Choose **New Service Endpoint** and select **Azure Resource Manager** from the list, then enter the required details.</td></tr>
+<tr><td>Azure subscription</td><td>azureSubscription</td><td>(Required) Select your Azure Resource Manager subscription. If none exists, choose **Manage** to navigate to the "Service connections" page in the administration section. Choose **New service connection** and select **Azure Resource Manager** from the list, then enter the required details.</td></tr>
 <tr><td>Publish profile path</td><td>publishProfilePath</td><td>(Required) The path to the file containing the publishing information.</td></tr>
 <tr><td>Publish profile password</td><td>publishProfilePassword</td><td>(Required) The password for the profile file. Consider storing the password in a secret variable and using that variable here. Example: `$(Password)`.</td></tr>
 <tr><td>App Service type</td><td>appType</td><td>(Required) Select the Azure App Service type. The app types supported are Function App, Web App on Windows, Web App on Linux, Web App for Containers, and Azure App Service Environments.</td></tr>

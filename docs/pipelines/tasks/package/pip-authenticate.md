@@ -30,7 +30,7 @@ Provides authentication for the `pip` client that can be used to install Python 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
 | artifactFeeds                  | List of Azure Artifacts feeds to authenticate with pip.           |
-| externalFeeds                  | List of service endpoints from external organizations to authenticate with pip. |
+| externalFeeds                  | List of service connections from external organizations to authenticate with pip. |
 | [!INCLUDE [temp](../_shared/control-options-arguments.md)] | |
 
 

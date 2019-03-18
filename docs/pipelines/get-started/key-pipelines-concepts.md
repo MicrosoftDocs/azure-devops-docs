@@ -53,7 +53,7 @@ A pipeline defines the continuous integration and deployment process for your ap
 
 ## Release
 
-When you use the visual designer, you create a release pipeline in addition to a build pipeline. A release is the term used to describe one execution of a release pipeline. It's made up of deployments to multiple stages.
+When you use the classic editor, you create a release pipeline in addition to a build pipeline. A release is the term used to describe one execution of a release pipeline. It's made up of deployments to multiple stages.
 
 ## Task
 
