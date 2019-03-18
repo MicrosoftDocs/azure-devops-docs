@@ -70,6 +70,8 @@ Wikis and repository README files are great ways to share information with your 
 - [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)  
 - [Update wiki pages offline](wiki-update-offline.md)  
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+- [Markdown guidance](markdown-guidance.md)
+- [Wiki Markdown guidance](wiki-markdown-guidance.md)
 
 ::: moniker-end
 
@@ -89,14 +91,10 @@ Wikis and repository README files are great ways to share information with your 
 
 ::: moniker-end
 
-## Reference
+## Related articles
 
-- [Markdown guidance](markdown-guidance.md)
 - [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
 - [Navigate in the web portal](..//navigation/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
-- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
-
-## Resources
-
 - [Dashboards](../../report/dashboards/index.md)
 - [Manage projects](../../organizations/projects/index.md)
+- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
