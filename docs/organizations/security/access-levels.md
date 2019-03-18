@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/12/2019
+ms.date: 03/18/2019
 ---
 
 
@@ -46,7 +46,7 @@ You assign users or groups of users to one of the following access levels:
 ::: moniker range="azure-devops-2019"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you are paying for Azure Boards & Repos.
-- **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription.
+- **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription. [Azure Artifacts](../../pipelines/artifacts/artifacts-overview.md) is also included.
 - **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 ::: moniker-end
 
@@ -115,7 +115,7 @@ Not supported for on-premises versions.
 ::: moniker-end
 
 
-# [Advanced](#tab/advanced)
+# [Basic + Test Plans](#tab/basic-test-plans)
 
 ::: moniker range="azure-devops"
 Not supported for Azure DevOps Services.
@@ -123,7 +123,7 @@ Not supported for Azure DevOps Services.
 
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Basic access level](_img/access-levels/advanced-2019.png)
+> ![Basic access level](_img/access-levels/basic-test-plans-2019.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
