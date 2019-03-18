@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting the migration import from TFS to Azure DevOps Services | Azure DevOps
-description: Guidance for fixing common TfsMigrator validation errors. 
+title: Troubleshooting the migration import from Azure DevOps Server to Azure DevOps Services | Azure DevOps
+description: Guidance for fixing common DataMigratorTool validation errors. 
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
@@ -15,13 +15,15 @@ ms.date: 04/13/2018
 # Troubleshooting
 
 > [!NOTE]
-> It's recommended that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation as needed.
+> It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImportt) to progress through your import. The guide links to the technical documentation as needed.
+>
+> With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
-TfsMigrator could flag errors which need to be corrected prior to performing a migration. Below are the most common errors that are encountered when prepping 
-for a migration. After correcting each error you will need to run TfsMigrator's validate command again to ensure the error(s) is/are actually gone.
+The data migration tool could flag errors which need to be corrected prior to performing a migration. Below are the most common errors that are encountered when prepping 
+for a migration. After correcting each error you will need to run the data migration tool validate command again to ensure the error(s) is/are actually gone.
 
 ## Dealing with Size Warnings
-If your collection is particularly large then you might receive one of the below messages after running TfsMigrator. If you receive any of the below warnings or errors, it's always recommended that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
+If your collection is particularly large then you might receive one of the below messages after running the data migration tool. If you receive any of the below warnings or errors, it's always recommended that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
 
 ```cmdline
 The database is currently {Database Size}GBs. This is above the recommended size of {DACPAC Size Limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection
@@ -56,13 +58,13 @@ The collection database's collation '{collation}' is not natively supported in A
 
 Receiving this warning **does NOT** mean that you can't import your collection to Azure DevOps Services. Rather, it means that you will need to think through some additional considerations before performing an import. When a non-supported collation is imported into Azure DevOps Services it is effectively transformed to the supported Azure DevOps Services collation. While this generally works without issue, unexpected results could be observed post import or the import could fail if a unique collation translation issue is encountered. For instance, customers will notice different ordering for strings containing non-English characters. Non-English characters like 'é' may become equivalent to the English 'e' after the import has completed. It's important that you complete and verify a dry run import when importing a collection with a non-supported collation.
 
-This warning requires an acknowledgement from the user running the TfsMigrator command. Accepting the warning will allow TfsMigrator to continue assisting you with preparing for your import. 
+This warning requires an acknowledgement from the user running the the data migration tool command. Accepting the warning will allow the data migration tool to continue assisting you with preparing for your import. 
 
 ```cmdline
 The collections database's collation '{collation}' is not natively supported in Azure DevOps Services. It could not be validated that the collation can be converted during import to a supported Azure DevOps Services collation, as there was no internet connection. Please run the command again from a machine with an internet connection. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
 
-If TfsMigrator is unable to make a connection to the internet then it will be unable to validate that your collation can be converted to one of the supported version at import time. It's only a warning, so you will be able to make forward progress on your migration process. However, when you run the prepare command, an internet connection is required and your collation will be validated at that time.
+If the data migration tool is unable to make a connection to the internet then it will be unable to validate that your collation can be converted to one of the supported version at import time. It's only a warning, so you will be able to make forward progress on your migration process. However, when you run the prepare command, an internet connection is required and your collation will be validated at that time.
 
 Generally a non-supported collation can be converted to one of the supported collations at import time. However, in extreme cases there are some collations which can't be converted. If your collection uses one of those collations then you will receive the below **error** message. 
 
@@ -73,14 +75,14 @@ The collection database's collation '{collation}' is not supported for import to
 In order to continue your collection's collation will need to be [changed](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on Azure DevOps Services.
     
 ## Dealing with Identity Errors
-Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current TFS version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
+Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
 
 ### ISVError:100014
-This error indicates that a permission is missing from a system group. System groups are well known groups in TFS and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd) command(s) will need to be run.
+This error indicates that a permission is missing from a system group. System groups are well known groups in Azure DevOps Server and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd) command(s) will need to be run.
 
 #### Project Collection Valid Users Error Message
 
-Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with "**0-0-0-0-3**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Valid Users" group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
+Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-3**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Valid Users" group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -94,11 +96,11 @@ ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S
 The final command will look like:
 
 ```cmdline
-TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 ALLOW /collection:https://localhost:8080/defaultcollection
 ```
 #### Project Collection Administrators Error Message
 
-Carefully examine the error message(s) TfsMigrator highlighted. If the group that was flagged ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Administrators" group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
+Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Administrators" group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -118,24 +120,24 @@ ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S
 The final command will look like:
 
 ```cmdline
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/defaultcollection
 
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Write sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Write sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/defaultcollection
 
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/defaultcollection
 
-TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/tfs/defaultcollection
+TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/defaultcollection
 ```
-If you have multiple errors that need to be corrected, it's recommended that you put all of the commands into a batch file to execute them against TFSSecurity in an automated fashion. Once the commands have been executed you will need to run TfsMigrator validate again to ensure that the error(s) has\have been corrected. If the error(s) still persists, please contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
+If you have multiple errors that need to be corrected, it's recommended that you put all of the commands into a batch file to execute them against TFSSecurity in an automated fashion. Once the commands have been executed you will need to run the data migration tool validate again to ensure that the error(s) has\have been corrected. If the error(s) still persists, please contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
 ### ISVError:300005
 
 > [!IMPORTANT]
 > Ensure that you have a backup of your collection and configuration databases before running the below commands to fix this error. 
 
-ISVError:300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They're uneditable groups that only contain other TFS groups as members. In the case of ISVError:300005, a non TFS group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
+ISVError:300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They're uneditable groups that only contain other Azure DevOps Server groups as members. In the case of ISVError:300005, a non Azure DevOps Server group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
 
-Since Valid Users groups can't be edited directly or through TFSSecurity.exe, correcting the invalid membership will need to be done by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error message(s) TfsMigrator highlighted. You will need copy down the GroupSid, MemberId, and ScopeId as these values will need to be placed into the templated command below.
+Since Valid Users groups can't be edited directly or through TFSSecurity.exe, correcting the invalid membership will need to be done by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error message(s) the data migration tool highlighted. You will need copy down the GroupSid, MemberId, and ScopeId as these values will need to be placed into the templated command below.
 
 ```SQL
 DECLARE @p6 dbo.typ_GroupMembershipTable
@@ -146,7 +148,7 @@ EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='{ScopeId}',@idempotent=1
 ```
 
 
-Below is an example ISVError:300005 message from TfsMigrator. 
+Below is an example ISVError:300005 message from the data migration tool. 
 
 ```cmdline
 ISVError:300005 Unexpected non group identity was found to have direct membership to everyone group. GroupSid:S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3, MemberId:76050ddf-4fd8-48c4-a1ff-859e44364519, ScopeId:7df650df-0f8b-4596-928d-13dd89e5f34f
@@ -163,15 +165,15 @@ INSERT into @p6 values('S-1-9-1551374245-3746625149-2333054533-2458719197-231354
 EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='7df650df-0f8b-4596-928d-13dd89e5f34f',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5',@updateGroupAudit=0
 ```
 
-Run the completed command against the TFS configuration database. This will need to be repeated for each ISVError:300005 instance that TfsMigrator found. Errors with the same scope ID can be batched into one command. Once the commands have been executed you will need to run TfsMigartor validate again to ensure that the errors have been corrected. If the errors still persist, please contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport). 
+Run the completed command against the Azure DevOps Server configuration database. This will need to be repeated for each ISVError:300005 instance that the data migration tool found. Errors with the same scope ID can be batched into one command. Once the commands have been executed you will need to run the data migration tool validate again to ensure that the errors have been corrected. If the errors still persist, please contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport). 
 
 > [!IMPORTANT]
 > The collection that you're trying to fix the error for must be attached. 
 >
-> If you receive a -1 result from running the command, ensure that your collection database that produced the error is attached to your TFS instance and that you're running the command on the configuration database. 
+> If you receive a -1 result from running the command, ensure that your collection database that produced the error is attached to your Azure DevOps Server instance and that you're running the command on the configuration database. 
 
 ### AAD Timeout Exception
-On rare occasions some might receive an AAD timeout error when running the TfsMigrator prepare command. 
+On rare occasions some might receive an AAD timeout error when running the data migration tool prepare command. 
 
 ```cmdline
 Exception Message: Request failed (type AadGraphTimeoutException)
@@ -219,7 +221,7 @@ In order to migrate successfully, you must rename field *{TFSfieldReferenceName}
 Sometimes your local collection may have a field whose name may conflict with Azure DevOps Services system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
 ```cmdline
-witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
+witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
 ```
 
 #### <a name= "VS403443" ></a> **VS403443**
@@ -228,7 +230,7 @@ In order to migrate successfully, you must rename field *{TFSfieldReferenceName}
 Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
 ```cmdline
-witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
+witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
 ```
 
 #### <a name= "VS403444"> </a> **VS403444**
@@ -237,7 +239,7 @@ In order to migrate successfully, you must set type of field *{TFSfieldReference
 Sometimes your local collection may have different type for a particular field. Presently [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
 
 ```cmdline
-witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
+witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
 ```
 >[!Note]
 > If your field type is something different than HTML|PlainText and field data is not important or field is not being used in any project, then we recommend using witadmin to delete that field.
@@ -246,12 +248,12 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 > Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
 
 ```cmdline
-witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName
+witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName
 ```
 
 
 ## Dealing with Import Errors
-Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when TfsMigrator attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in TfsMigrator, but failed after that point. The individual that queued the import will receive a failure email if this happens. 
+Hit a failure when running your import? Failures in the import space fall into one of two categories. Verification failures happen when the import fails to start. The indication that this has occurred is when the data migration tool attempts to queue an import, but returns an error instead. Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import will receive a failure email if this happens. 
 
 ### Verification Failures
 Verification failures happen when the import fails to start. Issues falling into this category mean that something with your import request isn't valid. Look up you error message below and follow the recommended guidance on how to resolve the error. After that your team can try to queue the import again.   
@@ -275,8 +277,8 @@ All Azure DevOps Services imports go into a new organization that is created at 
 **VS403250 & VS403286**
 
 ```cmdline
-VS403250: The dacpac is not a detached TFS Collection database.
-VS403286: The dacpac is from a TFS Configuration database. You must use a detached TFS Collection database.
+VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
+VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
 ```
 
 The DACPAC is not built off a detached collection. The collection database will need to be [detached](migration-import.md#detaching-your-collection) and the DACPAC generated again.
@@ -293,7 +295,7 @@ Unable to make a connection to the database using the provided SQL Connection St
 
 ```cmdline
 VS403260: The database is not detached.
-VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from TFS.
+VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
 ```
 
 The database is not detached. It will need to be [detached](migration-import.md#detaching-your-collection) and the import queued again. 
@@ -327,10 +329,10 @@ There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an ex
 **VS403264**
 
 ```cmdline    
-VS403264: The database is not a TFS Collection database, it cannot be used for import.
+VS403264: The database is not a Azure DevOps Server Collection database, it cannot be used for import.
 ```
     
-The connection string does not point to a TFS Collection database. 
+The connection string does not point to a Azure DevOps Server Collection database. 
 
 **VS40325**
 
@@ -338,7 +340,7 @@ The connection string does not point to a TFS Collection database.
 VS403255: The collection cannot be imported due to an ongoing post upgrade job. Please wait and try again later
 ```
 
-The TFS Update has queued the file migration job. Imports cannot be performed until this job has completed. The completion time for this job is dependent on the size of the collection. Job progress can be tracked by running the below query on the collection database:
+The Azure DevOps Server Update has queued the file migration job. Imports cannot be performed until this job has completed. The completion time for this job is dependent on the size of the collection. Job progress can be tracked by running the below query on the collection database:
 
 ```SQL 
 SELECT  COUNT (*) as remaining_files_to_migrate
@@ -347,7 +349,7 @@ WHERE   PartitionId > 0
         AND MigrateFileId IS NOT NULL
 ```
 
-Once the number of files remaining to migrate is zero you can run TfsMigrator. 
+Once the number of files remaining to migrate is zero you can run the data migration tool. 
 
 **VS403282**   
 
@@ -385,18 +387,18 @@ VS403366: A problem occurred while attempting to connect to your database. Pleas
 List of Azure DevOps Services IPs:
 ```
 
-The Import Service was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 
+The data migration tool was unable make a connection to the SQL Azure VM. Verify that you've entered the information correctly in your connection string and that you can connect to the VM. The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Please add them to your firewall exceptions and try queuing the import again. 
 
 **VS403373**
 
-Importing multiple copies of the **SAME** collection is not supported by the TFS Database Import Service. However, we **DO** support importing **split** copies a collection. What you need to do is change the GUID for the _DataImportCollectionID_.
+Importing multiple copies of the **SAME** collection is not supported by the data migration tool for Azure DevOps. However, we **DO** support importing **split** copies of a collection. What you need to do is change the GUID for the _DataImportCollectionID_.
 
 From SQL Server Management Studio (SSMS) open the extended properties for the split copies that haven't been imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then re-run the prepare command and use the new import.json to queue the import.
 
 ### Import Failures
 When an import fails, the individual that queued the import will receive an email notification. Most of the time this email will include a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and try your import again. 
 
-If the error is more complex then the email will provide instructions on how to file a customer [support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Team Foundation Server instance back online and reattach your collection. This will allow your team members to continue working. It's recommended not to attempt the import again until the issue causing the failure has been resolved. 
+If the error is more complex then the email will provide instructions on how to file a customer [support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Azure DevOps Server instance back online and reattach your collection. This will allow your team members to continue working. It's recommended not to attempt the import again until the issue causing the failure has been resolved. 
  
 
 

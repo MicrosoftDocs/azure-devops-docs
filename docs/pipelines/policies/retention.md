@@ -83,7 +83,7 @@ If your [repository type](../repos/index.md) is one of the following, you can de
 
 * Azure Repos Git or TFS Git
 * GitHub
-* External Git
+* Other/external Git
 
 For example, your team may want to keep:
 

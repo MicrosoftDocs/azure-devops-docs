@@ -1,5 +1,5 @@
 ---
-title: Use the visual designer to create a CI/CD pipeline
+title: Use the classic editor to create a CI/CD pipeline
 ms.custom: seodec18
 description: CI/CD novice? Create an automated build and release definition in Azure Pipelines and TFS
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 11/6/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Use the visual designer
+# Use the classic editor
 
 [!INCLUDE [version-tfs-2017-rtm](_shared/version-tfs-2017-rtm.md)]
 
@@ -29,13 +29,13 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="azure-devops"
 > [!TIP]
-> For build pipelines, we recommend that you use YAML instead of the visual designer that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](get-started-yaml.md).
+> For build pipelines, we recommend that you use YAML instead of the classic editor that is explained below. YAML allows you to use the same branching and code review practices for your pipeline as you would for your application code. See [Create your first pipeline](get-started-yaml.md).
 ::: moniker-end
 
 
 ::: moniker range="azure-devops"
 
-We'll show you how to use the visual designer in Azure Pipelines to create a build and release that prints "Hello world". If you plan to use a YAML file instead of the visual designer, then see [Create your first pipeline](get-started-yaml.md) instead.
+We'll show you how to use the classic editor in Azure Pipelines to create a build and release that prints "Hello world". If you plan to use a YAML file instead of the classic editor, then see [Create your first pipeline](get-started-yaml.md) instead.
 
 ::: moniker-end
 
@@ -190,7 +190,7 @@ Create a build pipeline that prints "Hello world."
 
    ---
 
-  For new Azure DevOps accounts, this will automatically take you to the _YAML pipeline creation experience_. To get to the visual designer and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
+  For new Azure DevOps accounts, this will automatically take you to the _YAML pipeline creation experience_. To get to the classic editor and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
 
   ![Click settings in top right of screen and click preview features](_img/preview-features.png)
 
@@ -838,7 +838,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 <a name="next-steps"></a>
 ## Next steps
 
-You've just learned the basics of using the visual designer to create and run a pipeline.
+You've just learned the basics of using the classic editor to create and run a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 
@@ -890,7 +890,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
 
- * Git service providers such as GitHub and Bitbucket
+ * Git service providers such as GitHub and Bitbucket Cloud
 
  * Subversion
 
