@@ -815,8 +815,8 @@ Tutorials, references, and other documentation show you how to configure and man
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Use the visual designer</h3>
-                                                            <p>Learn the basics of using the visual designer to add and customize tasks.</p>
+                                                            <h3>Use the classic editor</h3>
+                                                            <p>Learn the basics of using the classic editor to add and customize tasks.</p>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -326,9 +326,9 @@ If you choose to build fork pull requests, you may also choose whether or not to
 
 If your Git repo is hosted in Azure Repos, there won't be a **Pull request validation** trigger on the **Triggers** page. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build valiation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
-### External Git
+### Other Git
 
-Pull request triggers are not available for External Git repos.
+Pull request triggers are not available for Other/external Git repos.
 
 ---
 
@@ -359,7 +359,7 @@ YAML builds are not yet available on TFS.
 
 Select the days and times when you want to run the build.
 
-If your repository is Git, GitHub, or External Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
+If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 
 ### Example: Nightly build of Git repo in multiple time zones
@@ -500,7 +500,7 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
  * A nightly build of code in your organization will run only one night until someone signs in again.
 
- * CI builds of an external Git repo will stop running until someone signs in again.
+ * CI builds of an Other Git repo will stop running until someone signs in again.
 
 ::: moniker-end
 

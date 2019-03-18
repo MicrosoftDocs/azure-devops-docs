@@ -27,7 +27,7 @@ You can use many languages with Azure Pipelines, such as Python, Java, PHP, Ruby
 
 ### Version control systems
 
-Before you use continuous integration and continuous delivery practices for your applications, you must have your source code in a version control system. Azure Pipelines integrates with GitHub, Azure Repos, Bitbucket, and Subversion.
+Before you use continuous integration and continuous delivery practices for your applications, you must have your source code in a version control system. Azure Pipelines integrates with GitHub, GitHub Enterprise, Azure Repos, Bitbucket Cloud, and Subversion.
 
 ### Application types
 
