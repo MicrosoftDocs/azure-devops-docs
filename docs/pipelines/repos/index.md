@@ -53,12 +53,12 @@ If your pipeline consists of multiple jobs, the agent downloads source files at 
 
 You can choose from the following repository types:
 
-| Repository type | Azure Pipelines (YAML) | Azure Pipelines (visual designer) | Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
+| Repository type | Azure Pipelines (YAML) | Azure Pipelines (classic editor) | Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |-|-|-|-|-|
 | Azure Repos Git           |Yes|Yes|Yes|Yes|
 | Azure Repos TFVC          |No|Yes|Yes|Yes|
 | Bitbucket Cloud           |No|Yes|No|No|
-| External Git (generic)    |No|Yes|Yes|Yes|
+| Other Git (generic)       |No|Yes|Yes|Yes|
 | GitHub                    |Yes|Yes|No|No|
 | GitHub Enterprise Server  |Yes|Yes|TFS 2018.2 and higher|No|
 | Subversion                |No|Yes|Yes|No|
@@ -82,7 +82,7 @@ See details about building specific repository types:
 
 ### Why are some repository types not supported by on-premises installations?
 
-When a pipeline uses a remote, 3rd-party repository host such as Bitbucket Cloud, the repository is configured with webhooks that notify Azure Pipelines Server or TFS when code has changed and a build should be triggered. Since on-premises installations are normally protected behind a firewall, 3rd-party webhooks are unable to reach the on-premises server. As a workaround, you can use the **External Git** repository type which uses polling instead of webhooks to trigger a build when code has changed.
+When a pipeline uses a remote, 3rd-party repository host such as Bitbucket Cloud, the repository is configured with webhooks that notify Azure Pipelines Server or TFS when code has changed and a build should be triggered. Since on-premises installations are normally protected behind a firewall, 3rd-party webhooks are unable to reach the on-premises server. As a workaround, you can use the **Other Git** or **External Git** repository type which uses polling instead of webhooks to trigger a build when code has changed.
 
 ### How do I reference the directories on the build agent?
 
