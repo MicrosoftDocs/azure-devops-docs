@@ -104,7 +104,7 @@ Finally, the Xamarin build definition templates were enhanced to use these new t
 
 ##Widget SDK: Reusable CSS and DOM templates
 
-When building widgets for the Dashboard, developers can now use the same CSS that we apply to our widgets. This helps developers get started using great widget styles that have a consistent look and feel with VSTS. You can learn how to incorporate these styles in your widget by visiting our [integration docs](http://aka.ms/widgetSDKStyles).
+When building widgets for the Dashboard, developers can now use the same CSS that we apply to our widgets. This helps developers get started using great widget styles that have a consistent look and feel with VSTS. You can learn how to incorporate these styles in your widget by visiting our [integration docs](https://aka.ms/widgetSDKStyles).
 
 ##Adding users from the team members widget
 
