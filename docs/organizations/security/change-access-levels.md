@@ -11,14 +11,14 @@ ms.reviewer:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/06/2019
+ms.date: 03/15/2019
 ---
 
 # Change access levels
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
-To connect and use the functions and features that Azure DevOps Server provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature. For an overview of each access level, see [About access levels](access-levels.md).
+Users must be added to a group with the appropriate permissions, to connect and use the functions and features that Azure DevOps Server provides. To use select web portal features, they must also belong to the access level that enables access to that feature. For an overview of each access level, see [About access levels](access-levels.md).
 
 This article applies to managing access levels for project collections defined on an on-premises Azure DevOps. To manage access levels for the Azure DevOps cloud service, see [Add users to your organization or project](../accounts/add-organization-users.md). For Azure DevOps feature availability, see the [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs).
 
@@ -26,7 +26,7 @@ This article applies to managing access levels for project collections defined o
 > Make sure that you select the correct version of this article for Azure DevOps Services or Azure DevOps Server, renamed from Team Foundation Server (TFS). The version selector is located above the table of contents. <br/>
 > ![Content version selector](/azure/devops/_shared/_img/version-selector.png)
 
-For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  
+For a simplified overview of the permissions that are assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -40,7 +40,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 ## Prerequisites
 
 * You must be a member of the Administrators group. If you aren't a member, [get added now](https://docs.microsoft.com/en-us/azure/devops/server/admin/add-administrator?view=azure-devops).
-* <a id="add-user" />If you're managing access for a large group of users, a best practice is to first create either a [Windows group, a group in Active Directory, or Azure DevOps group](/azure/devops/server/admin/setup-ad-groups) and add individuals to those groups.
+* <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
 
 > [!NOTE]  
 > The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your on-premises Azure DevOps. Make sure you have selected the version of this article using the content version selector. However, the basic functionality available to you remains the same unless explicitly mentioned.  
@@ -51,7 +51,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ## Open Access levels
 
-You manage access levels for all collections defined on the application tier. The default access level you set applies to all projects defined for all collections. Users or groups that you add to teams, projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, you add them specifically to a non-default access levels.
+You manage access levels for the collections defined on the application tier. The default access level you set applies to all projects defined for all collections. Users or groups that you add to teams, projects, or collections are granted the access level that you set as the default. To change the access level for a specific group or user, add them specifically to a non-default access level.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -118,7 +118,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 ::: moniker range="<= azure-devops-2019"
 ## Change the default access level
 
-Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or an advanced level is limited to the features provided through Stakeholder access.
+Change the default access level to match the access you have licenses for. If you change the default access level to Stakeholder, all users not explicitly added to the Basic or an advanced level are limited to the features provided through Stakeholder access.
 
 You set an access level from its page. Choose **Set as default access level** as shown.
 ::: moniker-end
