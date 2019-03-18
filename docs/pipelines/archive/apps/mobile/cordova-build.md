@@ -281,7 +281,7 @@ The following will also need to be in your path:
 * [Read tutorials and learn about tips, tricks, and known issues for Cordova](http://go.microsoft.com/fwlink/?LinkID=618471)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
-* [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
+* [Visit our site https://aka.ms/cordova](https://aka.ms/cordova)
 * [Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)
 
 ## Q & A

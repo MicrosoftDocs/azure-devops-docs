@@ -53,7 +53,7 @@ Read about the new features below and head over to Azure DevOps Services to try 
 
 ### Navigation update
 
-Back in June of this year, we rolled out the first iteration of our [new navigation model](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/). We’ve spent the summer improving that experience based on the feedback many of you have provided. Thank you! Our next step is to move from the new model being a preview, to becoming _the_ navigation for the product. Please read [our blog post](http://aka.ms/azuredevopsnav) describing the recent changes along with our schedule for bringing the new model to all organizations.
+Back in June of this year, we rolled out the first iteration of our [new navigation model](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/). We’ve spent the summer improving that experience based on the feedback many of you have provided. Thank you! Our next step is to move from the new model being a preview, to becoming _the_ navigation for the product. Please read [our blog post](https://aka.ms/azuredevopsnav) describing the recent changes along with our schedule for bringing the new model to all organizations.
 
 ### Expanded search box
 
