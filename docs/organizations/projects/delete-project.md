@@ -23,8 +23,6 @@ You can delete a project from Azure DevOps. Deleting a project helps simplify th
 > [!Caution]
 > Projects are permanently deleted, if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md).
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
 [!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)]
 
 ## Delete project

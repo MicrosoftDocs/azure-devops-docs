@@ -1,6 +1,6 @@
 ---
-title: Migration overview from TFS to Azure DevOps Services | Azure DevOps 
-description: Overview of the high fidelity migration process from Team Foundation Server to Azure DevOps Services
+title: Migration overview from Azure DevOps Server to Azure DevOps Services | Azure DevOps 
+description: Overview of the high fidelity migration process from Azure DevOps Server to Azure DevOps Services
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-learn
@@ -12,52 +12,55 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---
 
-# Migrate data from TFS to Azure DevOps Services 
+# Migrate data from Azure DevOps Server to Azure DevOps Services 
 
 >[!Note]
 >[ Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
+>
+> With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
-## TFS Database Import Service
-The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
+## Data Migration Tool for Azure DevOps
+The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
 
 
-## Supported TFS Versions for Import
+## Supported Azure DevOps Server Versions for Import
 
 > [!IMPORTANT] 
-> It can take up to 2-3 weeks after a new RTW version of TFS is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW TFS release.
+> It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
 >
 > TfsMigrator for TFS 2018 Update 3 supports TFS 2018 Update 3.1 & Update 3.2 as well. If you run into an issue running TfsMigrator and are on that version, please download the latest TfsMigrator version and try again. 
 
 
-The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
+The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
 
 * TFS 2018 Update 3, Update 3.1, and Update 3.2
+* Azure DevOps Server 2019
 
 > [!NOTE]
-> The Import Service doesn't support imports from TFS release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
+> The data migration tool doesn't support imports from Azure DevOps Server release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous Azure DevOps Server version to import. 
 
-Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to Azure DevOps Services should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
+Normal release cadence for new Azure DevOps Server versions is once every three-to-four months. Meaning that support for a given version of Azure DevOps Server for migration to Azure DevOps Services should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
 
 ## Preview Features
 
 > [!Note]
-> If you’re not including preview features when running TfsMigrator, then you will need to re-run TfsMigrator prepare to generate a new import.json to queue an import. You DO NOT need to include preview features when you re-generate your import.json.  
+> If you’re not including preview features when running the migration tool, then you will need to re-run the migration tool prepare to generate a new import.json to queue an import. You DO NOT need to include preview features when you re-generate your import.json.  
 >
 > If you had previously been including preview features then you DO NOT need to take any additional actions after Monday, April 23rd. 
 
 
 The following features can be included with your import, but are currently in a preview state. 
 
-* [Azure Artifacts](https://visualstudio.microsoft.com/team-services/package-management/)
+* No preview features at this time
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
-For a list of items not included with an import please see the [migration guide](https://aka.ms/TFSDataImport).
+For a list of items not included with an import please see the [migration guide](https://aka.ms/AzureDevOpsImport).
 
-## TFS Database Import Service Resources
+## Data Migration Tool for Azure DevOps Resources
 
-In general you should use the [migration guide](https://aka.ms/TFSDataImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
+In general you should use the [migration guide](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
 
 ### Importing Process 
 * [Validating a collection for import](migration-import.md#validating-a-collection)
@@ -91,7 +94,7 @@ A: No, the migration is automated. Simply follow the steps to [clone a hosted XM
 
 #### Q: What happens in Hosted XML when Microsoft makes a change to a system process?
 
-A: This is the same experience with TFS on-premises. If we make a change to a system process, it will not be applied to any of your Hosted XML processes. You won't have to update your processes if you don't want to. But if you do, you will need to make the changes in the XML definition files manually for each process. 
+A: This is the same experience with Azure DevOps Server. If we make a change to a system process, it will not be applied to any of your Hosted XML processes. You won't have to update your processes if you don't want to. But if you do, you will need to make the changes in the XML definition files manually for each process. 
 
 #### Q: Is there a difference between a team project that was created manually versus one that was created from data import?
 
@@ -108,7 +111,7 @@ A: Yes. For data import organizations, Azure DevOps Services supports team proje
 
 #### Q: If I have feedback or additional questions is there somewhere I can reach out?
 
-A: Yes, you can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact VSTS\TFS [customer support](https://aka.ms/AzureDevOpsImportSupport). 
+A: Yes, you can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). 
 
 ## Videos 
 > [!VIDEO https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3199/player]

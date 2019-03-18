@@ -26,8 +26,6 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
 ## Run a query 
@@ -57,23 +55,28 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 ::: moniker range=">= azure-devops-2019"
 
-<a id="tips-queries-hub"> </a>  
+<a id="tips-queries-hub"> </a> 
+
 ## Tips for working with the directory-focused **Queries** pages 
 
 The **Queries** page now contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
 
 With this change, some functionality has been added and some has changed. Here are some tips to find the work items of interest:
 
-### Where can I find work assigned to me or work that I'm following? 
+### Where can I find work assigned to me or work that I'm following?
+
 Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**.    
 
 ### Where can I find recent work item activity? 
+
 - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
 
 - You can also use the macros &mdash; **@Me**, **@Follows**, **MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
 
 <a id="favorite" /> 
+
 ### How do I quickly navigate to queries I view frequently?  
+
 - Favorite those queries and other artifacts that you view frequently. Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a query. 
 - Favorited queries (![ ](../../_img/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
 
@@ -82,27 +85,30 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 	Or, you can select from any of your favorited items by choosing the ![ ](../../_img/icons/inbox.png) inbox icon and choose **Favorites**.  
 
 	![queries selector](_img/example-queries/favorites-selector.png)  
-
- 
 ### How do I quickly navigate to queries within the same query folder?  
+
 When viewing a query, you can use the queries breadcrumb selector (![ ](../../_img/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![ ](../../_img/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
 
 > [!div class="mx-imgBorder"]  
 > ![queries breadcrumb example](_img/view-run-queries/folder-selector.png)  
 
-### Can I run several queries at the same time?  
+### Can I run several queries at the same time? 
+ 
 Yes. Simply open a query in a new browser tab to run several queries at the same time.  
 
 ### How can I best use queries to monitor progress on a project or team?  
+
 - [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query will automatically run and refresh. 
 - Periodically, [triage query results](triage-work-items.md) to review and update status.  
 
 ::: moniker-end
 
 <a id="view-rename-delete" />
+
 ## View, rename, or delete a query
 
 ::: moniker range=">= azure-devops-2019"
+
 From either the **Favorites** or **All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon of a query to run, edit, rename, or delete the query. 
 
 ![New query experience, Favorites page, query context menu](_img/view-run-queries/query-context-menu-favorites-page.png)  
@@ -111,8 +117,11 @@ For shared queries, you can also choose to perform one of these tasks:
 - **Add to team queries**: Select the team to add the query as a team favorite
 - **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
 - **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/add-widget-to-dashboard.md). 
+
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 Choose the ![ ](../_img/icons/context_menu.png) context menu icon of a query to edit, rename, or delete the query.
 
 ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)
@@ -121,6 +130,7 @@ Choose the ![ ](../_img/icons/context_menu.png) context menu icon of a query to 
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Tasks you can perform from the Favorites or All pages
 
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
@@ -153,6 +163,7 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 ::: moniker-end
 
 <a id="email-query" />
+
 ## Email query items or share a query URL 
 
 From the **Query Editor** or **Results** view, you can email a formatted list of query items or copy the query URL. 
@@ -178,13 +189,15 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 > [!NOTE]
 > With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> 
 ::: moniker-end
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Perform an ad hoc search](search-box-queries.md) 
 
-#### Related topics
+## Related articles
 
 - [Create and save managed queries with the query editor](using-queries.md)
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)

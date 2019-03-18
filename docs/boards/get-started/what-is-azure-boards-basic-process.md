@@ -86,6 +86,8 @@ Add epics to track significant features or requirements. Use issues to track use
 > [!div class="mx-imgBorder"]   
 > ![Backlogs, show parents](_img/about-boards/hierarchy.png) 
 
+::: moniker range=">= azure-devops-2019"
+
 ## Connect with GitHub 
 
 If you use Azure Boards connected with GitHub, you can also do the following:   
@@ -93,6 +95,8 @@ If you use Azure Boards connected with GitHub, you can also do the following:
 - From Azure Boards issues and tasks, link to GitHub commits and pull requests.
 
 Learn more: [GitHub & Azure Boards](../github/index.md).  
+
+::: moniker-end
 
 ## Best tool for the job
 Azure Boards provides the following main interactive lists and signboards. Each tool provides a filtered set of work items. All tools support viewing and defining work items. To learn more about effective use of these tools, see  [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   

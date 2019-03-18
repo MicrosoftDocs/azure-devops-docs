@@ -29,7 +29,7 @@ Continuous Testing (CT) on-premises or in the cloud is the use of automated buil
 
 ## Version control systems
 
-The starting point for configuring CI and CD for your applications is to have your source code in a version control system. TFS supports two forms of version control - Git and Team Foundation Version Control. The Build service integrates with both of these version control systems. Once you have configured CI, any changes you push to your version control repository will be automatically built and validated. You can also manage your source code in Subversion, Bitbucket, GitHub, or any other Git repository. The Build service integrates with all of these version control systems.
+The starting point for configuring CI and CD for your applications is to have your source code in a version control system. TFS supports two forms of version control - Git and Team Foundation Version Control. The Build service integrates with both of these version control systems. Once you have configured CI, any changes you push to your version control repository will be automatically built and validated. You can also manage your source code in Subversion, Bitbucket Cloud, GitHub, or any other Git repository. The Build service integrates with all of these version control systems.
 
 ## Application types
 

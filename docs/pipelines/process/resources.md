@@ -36,13 +36,13 @@ If you add a new resource to an existing YAML pipeline, Azure Pipelines will pic
 
 ## Troubleshooting authorization for a YAML pipeline
 
-When you add a new service endpoint or other resource to a pipeline, it must be authorized before it will work. Authorization happens when you save the pipeline (not the YAML file, but the pipeline configuration in Azure Pipelines).
+When you add a new service connection or other resource to a pipeline, it must be authorized before it will work. Authorization happens when you save the pipeline (not the YAML file, but the pipeline configuration in Azure Pipelines).
 
 If builds fail with an error message about resource authorization, you need to re-save your pipeline.
 When you add a new resource in a branch other than the one you set up in Azure Pipelines, follow these steps:
 
 1. Navigate to the pipeline in Azure Pipelines.
-1. Switch the pipeline's default branch to the branch that includes the new service endpoint reference.
+1. Switch the pipeline's default branch to the branch that includes the new service connection reference.
 For example, if you've made a change in a branch called `features/add-resource`, then switch the pipeline's default branch to `features/add-resource`.
 1. Save the pipeline.
 1. Revert back to the prior default branch and save the pipeline again.
