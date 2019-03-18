@@ -33,7 +33,7 @@ ms.topic: include
 
 	To sign in to your organization at any time, go to `https://dev.azure.com/{yourorganization}`.
 
-6. Enter a name for your project and select the visibility. The name can't contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ &#42; } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. Select **Create project**.
+6. Enter a name for your project and select the visibility. The name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ &#42; } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project. Select **Create project**.
 
     ![Create a project to get started](/azure/devops/_shared/_img/create-project-to-get-started.png)
 

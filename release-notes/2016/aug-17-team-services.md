@@ -230,7 +230,7 @@ You can unpublish free extensions, if you no longer want to offer them in the Ma
 
 To unpublish, select the extension on your [Marketplace publisher page](https://aka.ms/vsmarketplace-manage) and choose Unpublish on the menu. Your extension will be unpublished immediately from Marketplace and new users won’t be able to install it. Ratings and reviews for your extension will stay intact. To offer your extension again in Marketplace, choose Publish on the menu.
 
-Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](http://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension.
+Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](https://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension.
 
 ##Administration
 

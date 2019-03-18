@@ -56,7 +56,7 @@ You should now have a sample app in your GitHub account.
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select the your desired sample app repository.
+1. When the list of repositories appears, select your desired sample app repository.
 
 1. Azure Pipelines will analyze your repository.
 

@@ -18,7 +18,7 @@ Following up on last sprint’s support for [using corporate identities with exi
 
 This sprint, we’re releasing Project Welcome pages. Welcome pages enable you to easily provide documentation for project visitors and participants about what the project is, how to participate, who to contact, other resources, and so on. Welcome pages are simple. They are just markdown files checked into the root of your Team Foundation Version Control project tree (for example, $/Dark Horse/README.md) or into the root of any Git repo in your project. The default welcome page will be “README.md”, but you can have as many as you like covering different aspects of your project and they will appear in a panel to the left of the welcome page. Here’s an example from one of our projects.
 
-We are using GitHub Flavored Markdown (GFM) as implemented in the [Marked](https://github.com/chjj/marked) library by Chris Jeffrey. It’s really easy to write and quite flexible. If you want to learn more about how to use project welcome pages, check out [Martin’s blog post](http://aka.ms/ProjectHomepage) for more details.
+We are using GitHub Flavored Markdown (GFM) as implemented in the [Marked](https://github.com/chjj/marked) library by Chris Jeffrey. It’s really easy to write and quite flexible. If you want to learn more about how to use project welcome pages, check out [Martin’s blog post](https://aka.ms/ProjectHomepage) for more details.
 
 ![Project welcome page](_img/8_18_01.png)
   
