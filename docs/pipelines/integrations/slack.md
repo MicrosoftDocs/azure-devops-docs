@@ -10,7 +10,7 @@ author: atinb
 ms.date: 02/07/2019
 monikerRange: 'azure-devops'
 ---
-
+ 
 # Azure Pipelines with Slack
 
 If you use [Slack](https://slack.com), you can use the Azure Pipelines app for Slack to easily monitor the events for your pipelines. Set up and manage subscriptions for completed builds, releases, 
@@ -66,6 +66,15 @@ This command will list all the current subscriptions for the channel and allow y
 
 ![Subscriptions list image](../_img/integrations-slack/subscriptions-list.png)
 
+## Approve release deployments from your channel
+You can approve release deployments from within Slack without navigating to the Azure Pipelines portal. Subscribe to ‘Release deployment approval pending’ notification in Slack (which happens by default upon subscribing to any release pipeline).
+
+![Approval image |10x10](../_img/integrations-slack/Approve.gif =850x400)
+
+Whenever a deployment is pending for approval, a notification card with options to approve or reject the deployment would be posted in the channel. Users can then look at the details of the deployment in the notification and take action. 
+
+App supports all the approval scenarios present in Azure Pipelines portal like single approver, multiple approvers (any one user, any order, in sequence) and teams as approvers. You can approve deployments as an individual or on behalf of a team.
+
 ## Commands reference
 
 Here are all the commands supported by the Azure Pipelines app:
@@ -85,3 +94,4 @@ Post that, you can set up and manage your notifications the same way as you woul
 
 >[!NOTE]
 >Notifications are currently not supported inside direct messages.
+>Deployment approvals which need revalidation of identity of approvers are not supported.

@@ -57,7 +57,7 @@ VSS.require(["VSS/Service", "TFS/Core/RestClient"],
 ```
 For an example of an extension that provides a team picker control, see [Team Calendar](https://github.com/Microsoft/vsts-team-calendar).
 
-### Pivots/Panels/Actions extensions that are in team aware hubs like Backlogs and Dashboard
+### Pivots/Panels extensions that are in team aware hubs like Backlogs and Dashboard
 
 Your extension can check the *configuration* object passed to your contribution. This object has different properties depending on the contribution type and where the contribution is hosted. Example shows reading team from the *configuration* and falling back to reading team from *webContext* to support both new vertical navigation and older horizontal navigation in on-premise releases.
 
@@ -74,6 +74,25 @@ function getCurrentTeam() {
     return null; // should only happen if not in a project context
   }
 }
+```
+
+### Actions extensions that are in team aware hubs like Backlogs and Dashboard
+
+Your extension can check the *actionContext* object passed to the callback invoked when a user clicks the contributed menu item. Example shows reading team from the *actionContext*.
+
+```javascript
+var menuContributionHandler = (function () {
+        "use strict";
+        return {
+            // This is a callback that gets invoked when a user clicks the newly contributed menu item
+            // The actionContext parameter contains team information.
+            execute: function (actionContext) {
+                if("team" in actionContext) {
+                    alert(`Team. Id is ${actionContext.team.id}, Name is ${actionContext.team.name}`);
+                }
+            }
+        };
+    }());
 ```
 
 ## Hub icon

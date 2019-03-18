@@ -26,13 +26,10 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 ## Open Queries 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)] 
-
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
 
 ## Add a query folder, move items into a folder 
-
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -56,6 +53,8 @@ You add query folders from the **Boards>Queries>All** page.
 	<img src="_img/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
   
 ::: moniker-end
+
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 You add query folders from the **Boards>Queries** page.
@@ -76,8 +75,11 @@ You add query folders from the **Boards>Queries** page.
 
 
 <a id="favorite-query">  </a>
+
 ::: moniker range=">= tfs-2015"
-### Add a query to the dashboard or share it with your team 
+
+## Add a query to the dashboard or share it with your team 
+
 To add a query to the home page or a dashboard, open the ![ ](../_img/icons/actions-icon.png) actions icon (or ![ ](_img/22.png) context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
 Share queries with your team by adding them to a folder under the **Shared Queries** container.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 

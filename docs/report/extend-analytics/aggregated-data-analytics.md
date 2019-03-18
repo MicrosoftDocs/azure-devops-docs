@@ -323,7 +323,7 @@ Let's say you want to create a [cumulative flow diagram](../guidance/cumulative-
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
+https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardName eq 'Stories' and Team/TeamName eq '{teamName}')/groupby((DateValue, ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
 ```
 
 This returns a result similar to the following, which you can then use directly within your data visualization of choice.
@@ -331,25 +331,19 @@ This returns a result similar to the following, which you can then use directly 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
+  "@odata.context": "https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//$metadata#WorkItemBoardSnapshot(DateValue,ColumnName,Count)",
   "value": [
     {
       "@odata.id": null,
       "DateValue": "2015-07-16T00:00:00-07:00",
       "Count": 324,
-      "BoardLocation": {
-        "@odata.id": null,
-        "ColumnName": "Completed"
-      }
+       "ColumnName": "Completed"
     },
     {
       "@odata.id": null,
       "DateValue": "2015-07-16T00:00:00-07:00",
       "Count": 5,
-      "BoardLocation": {
-        "@odata.id": null,
-        "ColumnName": "In Progress"
-      }
+      "ColumnName": "In Progress"
     }
   ]
 }

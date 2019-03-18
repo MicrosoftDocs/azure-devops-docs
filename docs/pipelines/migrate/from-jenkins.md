@@ -99,7 +99,7 @@ jobs:
 If you are not using a Jenkins declarative pipeline with a Jenkinsfile,
 and are instead using the graphical interface to define your build configuration,
 then you may be more comfortable with the
-[visual designer](../get-started-designer.md)
+[classic editor](../get-started-designer.md)
 in Azure Pipelines.
 
 ## Container-Based Builds

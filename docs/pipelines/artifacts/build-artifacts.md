@@ -31,7 +31,7 @@ You can publish your artifacts to other tasks in your pipeline. You can then add
 
 ## How do I publish artifacts?
 
-Artifacts can be published at any stage of pipeline. You can use two methods for configuring what to publish as an artifact and when to publish it: alongside your code with **YAML**, or in the Azure Pipelines UI with the **visual designer**.
+Artifacts can be published at any stage of pipeline. You can use two methods for configuring what to publish as an artifact and when to publish it: alongside your code with **YAML**, or in the Azure Pipelines UI with the **classic editor**.
 
 ## Example: Publish a text file as an artifact
 
