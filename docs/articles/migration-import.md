@@ -1,5 +1,5 @@
 ---
-title: Migration import from TFS to Azure DevOps Services 
+title: Migration import from Azure DevOps Server to Azure DevOps Services 
 titleSuffix: Azure DevOps
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
@@ -15,101 +15,107 @@ monikerRange: '>= tfs-2013'
 
 # Import
 
-**Azure DevOps Services | TFS**
+**Azure DevOps Services | Azure DevOps Server**
 
 > [!Note]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
 > 
-> We recommend that you use the [Migration Guide](https://aka.ms/tfsimport) to progress through your import. The guide links to the technical documentation, as needed.
+> We recommend that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation, as needed.
 >
-> Be sure you're on a [supported version](migration-overview.md#supported-tfs-versions-for-import) of TFS before continuing with the other import tasks.
+> Be sure you're on a [supported version](migration-overview.md#supported-azure-devops-server-versions-for-import) of Azure DevOps Server before continuing with the other import tasks.
+>
+> With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
 This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](migration-troubleshooting.md).
 
 ## Validating a Collection
-Now that you've confirmed you're on the latest version of TFS the next step is to validate each collection you wish to migrate to Azure DevOps Services. 
+Now that you've confirmed you're on the latest version of Azure DevOps Server the next step is to validate each collection you wish to migrate to Azure DevOps Services. 
 Validate will examine a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
-Running a validation is done through TfsMigrator. To start, take a copy of [TfsMigrator](https://aka.ms/TFSDataImport) and copy it onto one of your 
-TFS server's Application Tiers (AT). Once there you can unzip it. The tool can also be run from the a different machine without TFS installed as long as the PC can connect to the TFS instance's configuration database - example below.
+Running a validation is done through the data migration tool. To start, take a copy of the [data migration tool](https://aka.ms/AzureDevOpsImport) and copy it onto one of your 
+Azure DevOps Server Application Tiers (AT). Once there you can unzip it. The tool can also be run from the a different machine without Azure DevOps Server installed as long as the PC can connect to the Azure DevOps Server instance's configuration database - example below.
 
 
-To get started, open a command prompt on the server and CD to the path where you have TfsMigrator placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the top level help and guidance:
+To get started, open a command prompt on the server and CD to the path where you have the data migration tool placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the top level help and guidance:
 
 ```cmdline
-TfsMigrator /help
+Migrator /help
 ```
 
 For this step, we'll be focusing on the validate command. To see the help text for that command simply run:
 
 ```cmdline
-TfsMigrator validate /help 
+Migrator validate /help 
 ```
 
 Since this is our first time validating a collection we'll keep it simple. Your command should have the following structure:
 
 ```cmdline
-TfsMigrator validate /collection:{collection URL}
+Migrator validate /collection:{collection URL}
 ```
 
 For example, to run against the default collection the command would look like:
 
 ```cmdline
-TfsMigrator validate /collection:http://localhost:8080/tfs/DefaultCollection
+Migrator validate /collection:http://localhost:8080/DefaultCollection
 ```
 
-Running it from a machine other than the TFS server requires the /connectionString parameter. The connection string parameter is a pointer to your TFS server's configuration database. As an example, if the validate command was being run by the Fabrikam corporation the command would look like:
+Running it from a machine other than the Azure DevOps Server requires the /connectionString parameter. The connection string parameter is a pointer to your Azure DevOps Server configuration database. As an example, if the validate command was being run by the Fabrikam corporation the command would look like:
 
 ```cmdline
-TfsMigrator validate /collection:http://fabrikam:8080/tfs/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikamtfs;Initial Catalog=Tfs_Configuration;Integrated Security=True"
+Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 ```
 
-It's important to note that TfsMigrator **DOES NOT** edit any data or structures in the collection. It only reads the collection to identify issues. 
+It's important to note that the data migration tool **DOES NOT** edit any data or structures in the collection. It only reads the collection to identify issues. 
 
 Once the validation is complete you'll be left with a set of log files and a set of results printed to the command prompt screen. 
 
-![TfsMigrator validate output](_img/migration-import/tfsmigratorConsole.png)
+![The data migration tool validate output](_img/migration-import/tfsmigratorConsole.png)
 
+<<<<<<< HEAD
+If all of the validations pass, you are ready to move onto the next step of the import process. If the data migration tool flagged any errors, they will need to be corrected before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
+=======
 If all of the validations pass, you are ready to move onto the next step of the import process. If TfsMigrator flagged any errors, they will need to be corrected before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
+>>>>>>> master
 
 When you open up the log directory you will notice that there are several logging files. 
 
-![Logging files generated by TfsMigrator](_img/migration-import/loggingFiles.png)
+![Logging files generated by the data migration tool](_img/migration-import/loggingFiles.png)
 
-The log titled ```TfsMigrator.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
+The log titled ```DataMigrationTool.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
 a log is generated for each major validation operation. For example, if TfsMigrator had reported an error in the "Validating Project Processes" step, then one can 
 simply open the ```ProjectProcessMap.log``` file to see everything that was run for that step instead of having to scroll through the overall log. 
 The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps Services and can be ignored. 
 
 ## Generating Import Files
-By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
+By this point you will have run the data migration tool *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
 
 ### Prepare Command
-The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, TfsMigrator should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
+The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, the data migration tool should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
 
-Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your TFS server doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your TFS server and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
-
-```cmdline
-TfsMigrator prepare /help
-```
-
-Included in the help documentation are instructions and examples for running TfsMigrator from the TFS server itself and a remote PC. If you're running the command from one of the TFS server's Application Tiers (ATs) then your command should have the following structure:
-
+Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your Azure DevOps Server instance and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
 
 ```cmdline
-TfsMigrator prepare /collection:{collection URL} /tenantDomainName:{name} /region:{region}
+Migrator prepare /help
+```
+
+Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote PC. If you're running the command from one of the Azure DevOps Server instance's Application Tiers (ATs) then your command should have the following structure:
+
+
+```cmdline
+Migrator prepare /collection:{collection URL} /tenantDomainName:{name} /region:{region}
 ```
 
 ```cmdline
-TfsMigrator prepare  /collection:{collection URL} /tenantDomainName:{name} /region:{region} /connectionString:"Data Source={sqlserver};Initial Catalog=Tfs_Configuration;Integrated Security=True"
+Migrator prepare  /collection:{collection URL} /tenantDomainName:{name} /region:{region} /connectionString:"Data Source={sqlserver};Initial Catalog=Configuration;Integrated Security=True"
 ```
 
-The connection string parameter is a pointer to your TFS server's configuration database. As an example, if the prepare command was being run by the Fabrikam corporation the command would look like:
+The connection string parameter is a pointer to your Azure DevOps Server instance configuration database. As an example, if the prepare command was being run by the Fabrikam corporation the command would look like:
 
 ```cmdline
-TfsMigrator prepare /collection:http://fabrikam:8080/tfs/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikamtfs;Initial Catalog=Tfs_Configuration;Integrated Security=True"
+Migrator prepare /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 ```
 
-Upon executing this command, TfsMigrator will run a complete validate to ensure that nothing has changed with your collection since the last full validate. 
+Upon executing this command, the data migration tool will run a complete validate to ensure that nothing has changed with your collection since the last full validate. 
 If any new issues are detected, then the import files will not be generated. Shortly after the command has started running, an Azure AD login window will appear. 
 You will need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the Azure AD tenant specified 
 is the one you want your future organization to be backed with. For our Fabrikam example the user would enter something similar to what's shown in the below image.
@@ -119,9 +125,9 @@ is the one you want your future organization to be backed with. For our Fabrikam
 
 ![Azure AD login prompt](_img/migration-import/aadLogin.png)
 
-A successful run of TfsMigrator prepare will result in a set of logs and two import files. 
+A successful run of the data migration tool prepare will result in a set of logs and two import files. 
 
-After opening the log directory noted in TfsMigrator's output you will notice that there are two files and a Logs folder. ```IdentityMapLog.csv``` 
+After opening the log directory noted in the data migration tool's output you will notice that there are two files and a Logs folder. ```IdentityMapLog.csv``` 
 contains the generated mapping of AD to Azure AD identities. ```import.json``` is the import specification file which needs to be filled out. 
 It's recommended that you take time to fill out the import specification file, ```import.json```, and review the identity map log file, ```IdentityMapLog.csv```, for completeness before kicking off an import. 
 
@@ -136,7 +142,7 @@ Here is the breakdown of the fields and what action needs to be taken:
 |    Field              |    Explanation                                                                                             |    Action                                                                                                                                                                                                                                 |
 |--------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 |    Source             |    Information detailing location and names of source data files used for import.                          |    None - Review information for subfield actions below.  |
-|    ValidationData     |    Contains information needed to help drive your import experience                                        |    The 'ValidationData' section is generated by TfsMigrator. It contains information needed to help drive your import experience, so it's important that you don't edit the values inside of this section or your import could fail to start.   |
+|    ValidationData     |    Contains information needed to help drive your import experience                                        |    The 'ValidationData' section is generated by the data migration tool. It contains information needed to help drive your import experience, so it's important that you don't edit the values inside of this section or your import could fail to start.   |
 |    Files              |    Name of the files containing import data.                                                               |    None - Review information for subfield actions below. |
 |    Target             |    Properties describing the new organization to import into.                                     |    None - Review information for subfield actions below. | 
 |    Name        |    Desired name for the organization that will be created during the import.                                  |    Select a name. This name can be quickly changed later after the import has completed. Note – do **NOT** create an organization with this name before running the import. The organization will be created as part of the import process.                 |
@@ -184,7 +190,7 @@ Historical Identities do **NOT** have access to an organization after migration,
 ### Understanding an Identity Map Log
 After opening the identity map log file, you will be presented with something similar to the below example. 
 
-![Identity map log file generated by TfsMigrator](_img/migration-import/identityMapNewlyGenerated.png)
+![Identity map log file generated by the data migration tool](_img/migration-import/identityMapNewlyGenerated.png)
 
 The table below explains what each column is used for. 
 
@@ -195,8 +201,8 @@ The table below explains what each column is used for.
 
 |    Column                           |    Explanation                                                                                                                                                                                                                                               |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    AD - User (TFS)                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
-|    AD - Security Identifier    |    The unique identifier for the on-prem AD identity   in TFS. This column is used to identify users in the collection.                                                                                                                                      |
+|    AD - User (Azure DevOps Server)                             |    Friendly display name used by the identity in   Azure DevOps Server. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
+|    AD - Security Identifier    |    The unique identifier for the on-prem AD identity   in Azure DevOps Server. This column is used to identify users in the collection.                                                                                                                                      |
 |    Azure AD - Expected Import User (Azure DevOps Services)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure AD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
 |    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and Azure AD or "Historical" if we could not match the AD identity in your Azure AD.                                                                                                                                                                                                        |
 |    Validation Date                  |    Last time the identity map log was validated.                                                                                                                                                                                                                 |
@@ -226,10 +232,10 @@ In cases where the Azure AD Connect hasn't been configured, you will notice that
 
 To import with all historical identities, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the organization as the organization owner. All other users will be imported historically. The organization owner will then be able to [add users](../organizations/accounts/add-organization-users.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json) back in using their Azure AD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the Azure AD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
 
-TfsMigrator will warn if it detects the complete historical identities scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
+The data migration tool will warn if it detects the complete historical identities scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
 ### Visual Studio Subscriptions
-TfsMigrator is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
+The data migration tool is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
 You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in Azure DevOps Services. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the organization.  
 
@@ -247,7 +253,7 @@ By this point you will have everything ready to execute on your import. You will
 > We **strongly** recommend that your organization complete a dry run import before performing a production import. Dry runs allow you to validate that the import process works for your collection and that there are no unique data shapes present which might cause a production import failure. 
 
 ### Detaching your Collection
-[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the TFS server's configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
+[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the Azure DevOps Server server's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
 If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/azure/devops/server/ref/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
@@ -259,13 +265,12 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 > Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC.
 
 > [!NOTE]   
-> If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/AzureDevOpsImportLargeCollection.
+> If the data migration tool didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/AzureDevOpsImportLargeCollection.
 
 Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to Azure DevOps Services and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
 There are multiple versions of SqlPackage.exe installed with SQL Server Data Tools, located under folders with names such as 120, 130, and 140. When using SqlPackage.exe it is important to use the right version to prepare the DACPAC.
 
-* TFS 2017 imports need to use SqlPackage.exe from the 130 folder or higher.
 * TFS 2018 imports need to use SqlPackage.exe from the 140 folder or higher.
 
 If you installed SQL Server Data Tools (SSDT) for Visual Studio, you can find SqlPackage.exe in one of the following locations.
@@ -276,9 +281,9 @@ If you installed SQL Server Data Tools (SSDT) for Visual Studio, you can find Sq
 
 Both of the versions of SSDT that you can download from [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) include both the 130 and 140 folders with their respective versions of SqlPackage.exe.
 
-When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you'll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. You will also need to take into account the size of the collection database as reported in TfsMigrator.log file from a validation run, if you choose to save the generated DACPAC on the C: drive.
+When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you'll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. You will also need to take into account the size of the collection database as reported in DataMigrationTool.log file from a validation run, if you choose to save the generated DACPAC on the C: drive.
 
-TfsMigrator.log provides a list of the largest tables in the collection each time the validate command is run. See the example below for a sample output showing table sizes for a collection. Compare the size of the largest table with the free space on the drive hosting your temporary directory. 
+DataMigrationTool.log provides a list of the largest tables in the collection each time the validate command is run. See the example below for a sample output showing table sizes for a collection. Compare the size of the largest table with the free space on the drive hosting your temporary directory. 
 
 ```cmdline 
 [Info   @08:23:59.539] Table name                               Size in MB
@@ -304,24 +309,24 @@ Now that you've identified the target location for the DACPAC and ensured that y
 SqlPackage.exe /sourceconnectionstring:"Data Source={database server name};Initial Catalog={Database Name};Integrated Security=True" /targetFile:{Location & File name} /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
 ```
 
-* **Data Source** - SQL Server instance hosting your TFS collection database. 
+* **Data Source** - SQL Server instance hosting your Azure DevOps Server collection database. 
 * **Initial Catalog** - Name of the collection database. 
 * **targetFile** - Location on disk + name of DACPAC file. 
 
-Below is an example of the DACPAC generation command that is running on the TFS data tier itself:
+Below is an example of the DACPAC generation command that is running on the Azure DevOps Server data tier itself:
 
 ```cmdline
-SqlPackage.exe /sourceconnectionstring:"Data Source=localhost;Initial Catalog=Tfs_Foo;Integrated Security=True" /targetFile:C:\DACPAC\Tfs_Foo.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
+SqlPackage.exe /sourceconnectionstring:"Data Source=localhost;Initial Catalog=Foo;Integrated Security=True" /targetFile:C:\DACPAC\Foo.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
 ```
 
-The output of the command will be a DACPAC that is generated from the collection database Tfs_Foo called Tfs_Foo.dacpac. 
+The output of the command will be a DACPAC that is generated from the collection database Foo called Foo.dacpac. 
 
 ### Importing Large Collections
 
 > [!NOTE]   
-> If TfsMigrator warns that you can't use the DACPAC method then you will have to import using the SQL Azure VM method outlined below. If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined above.
+> If the data migration tool warns that you can't use the DACPAC method then you will have to import using the SQL Azure VM method outlined below. If the data migration tool didn't warn that your collection was too big, use the DACPAC method outlined above.
 
-DACPACs offer a fast and relatively simplistic method for moving collections into Azure DevOps Services. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that TfsMigrator warns are too big, a different data packaging approach is required to migrate to Azure DevOps Services. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
+DACPACs offer a fast and relatively simplistic method for moving collections into Azure DevOps Services. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that the data migration tool warns are too big, a different data packaging approach is required to migrate to Azure DevOps Services. If you're unsure if your collection is over the size threshold then you should run a data migration tool validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
 
 Before going any further, it's always recommended to see if [old data can be cleaned up](/azure/devops/server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
@@ -371,43 +376,43 @@ First, no matter what Azure DevOps Services region you import into the following
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
-|    Azure DevOps Services Identity Service       |    168.62.105.45    |
+|    Azure DevOps Services Identity Service       |    168.62.105.45, 40.81.42.115    |
 
-Next you will need to grant access to the Regional Identity Service. You only need to grant an exception for the Import Service instance in the region that you're importing into. 
+Next you will need to grant access to the Regional Identity Service. You only need to grant an exception for the data migration tool instance in the region that you're importing into. 
 
 |    Service                                                 |    IP                                                                                                                         |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|    Regional Identity Service - Central United States       |    23.99.230.232, 104.43.253.175, 40.122.66.150, 40.122.117.178, 23.99.212.58, 23.99.214.58                                   |
+|    Regional Identity Service - Central United States       |    23.99.230.232, 104.43.253.175, 40.122.66.150, 40.122.117.178, 23.99.212.58, 23.99.214.58, 20.37.139.247, 20.37.138.167, 20.37.138.122                                   |
 |    Regional Identity Service - West Europe                 |    52.232.119.33, 104.46.44.17, 40.114.142.95, 51.144.180.30, 51.145.130.146, 40.113.97.58, 52.232.113.92, 40.74.51.167       |
 |    Regional Identity Service - Australia East              |    13.70.121.123, 52.187.228.246                                                                                              |
 |    Regional Identity Service - Brazil South                |    N\A                                                                                                                        |
-|    Regional Identity Service - India South                 |    104.211.226.91, 104.211.207.31                                                                                             |
-|    Regional Identity Service - Canada Central              |    13.88.230.114, 40.85.244.98                                                                                                |
-|    Regional Identity Service - East Asia (Hong Kong)       |    23.98.36.60, 40.83.79.159                                                                                                  |
+|    Regional Identity Service - India South                 |    104.211.226.91, 104.211.207.31, 40.81.75.134                                                                                             |
+|    Regional Identity Service - Canada Central              |    13.88.230.114, 40.85.244.98, 40.82.185.245                                                                                                |
+|    Regional Identity Service - East Asia (Hong Kong)       |    23.98.36.60, 40.83.79.159, 40.81.28.194                                                                                                  |
 
-Next you will need to grant access to the TFS Database Import Service itself. You only need to grant an exception for the Import Service instance in the region that you're importing into.  
+Next you will need to grant access to the data migration tool for Azure DevOps itself. You only need to grant an exception for the data migration tool instance in the region that you're importing into.  
 
 |    Service                                      |    IP                                                      |
 |-------------------------------------------------|------------------------------------------------------------|
-|    Import Service - Central United States       |    52.173.74.9, 52.165.184.188, 20.45.1.234, 13.86.39.123  |
-|    Import Service - West Europe                 |    40.115.43.138, 13.95.15.128, 52.236.146.105             |
-|    Import Service - Australia East              |    13.75.134.204, 40.82.219.41                             |
-|    Import Service - Brazil South                |    104.41.24.164, 20.40.115.123                            |
-|    Import Service - India South                 |    13.71.120.31, 40.81.76.137                              |
-|    Import Service - Canada Central              |    52.237.18.100, 52.237.24.61, 40.82.191.163              |
-|    Import Service - East Asia (Hong Kong)       |    13.75.106.194, 40.81.27.181                             |
+|    Data migration tool - Central United States       |    52.173.74.9, 52.165.184.188, 20.45.1.234, 13.86.39.123  |
+|    Data migration tool - West Europe                 |    40.115.43.138, 13.95.15.128, 52.236.146.105, 40.67.219.89, 40.119.145.63, 52.142.236.228, 52.142.238.75              |
+|    Data migration tool - Australia East              |    13.75.134.204, 40.82.219.41, 20.40.124.19                             |
+|    Data migration tool - Brazil South                |    104.41.24.164, 20.40.115.123                            |
+|    Data migration tool - India South                 |    13.71.120.31, 40.81.76.137                              |
+|    Data migration tool - Canada Central              |    52.237.18.100, 52.237.24.61, 40.82.191.163              |
+|    Data migration tool - East Asia (Hong Kong)       |    13.75.106.194, 40.81.27.181                             |
   
 Next you will need to grant Azure DevOps Services access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
 |    Service                                                       |    IP                                                                                  |
 |------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 |    Azure DevOps Services - Central United States                 |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181   |
-|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103         |
-|    Azure DevOps Services - Australia East                        |    13.75.145.145, 40.82.217.103                                                        |
-|    Azure DevOps Services - Brazil South                          |    20.40.114.3                                                                         |
-|    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130                                                        |
+|    Azure DevOps Services - West Europe                           |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153         |
+|    Azure DevOps Services - Australia East                        |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114                                                        |
+|    Azure DevOps Services - Brazil South                          |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175                                                                         |
+|    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252                                                        |
 |    Azure DevOps Services - Canada Central                        |    52.237.19.6, 40.82.190.38                                                           |
-|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218                                                          |
+|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218, 13.94.26.58                                                          |
 
 Next you will need to grant Azure Pipelines Releases service access. You only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.
 
@@ -423,46 +428,46 @@ Next you will need to grant Azure Pipelines Releases service access. You only ne
 |    Releases service - Canada Central          |    52.237.28.171, 40.82.189.127                                              |
 |    Releases service - East Asia (Hong Kong)   |    13.107.6.175, 40.81.29.43                                                 |
 
-If you're planning on using the [preview](https://aka.ms/AzureDevOpsImportPreviewFeatures) feature to include Package Management data with your import, then you will need to grant access for that feature as well. 
+Next you will need to grant Azure Artifacts access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
-**Package Management IPs**
+**Azure Artifacts IPs**
 
-You will need to add exceptions for all three services that make up Package Management.
+You will need to add exceptions for all three services that make up Azure Artifacts.
 
 |    Service                                         |    IP                                                                                                                                  |
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|    Package Management - United States              |    52.173.148.93, 104.43.253.181, 23.99.179.148, 40.80.222.154, 40.119.0.130, 40.119.0.139,  13.86.125.169, 20.41.44.47, 40.90.219.165 |
-|    Package Management - West Europe                |    104.46.45.12, 52.236.148.212                                                                                                        |
-|    Package Management - Australia East             |    13.73.100.166, 20.40.176.15, 40.81.59.69                                                                                            |
-|    Package Management - Brazil South               |    191.234.179.224, 20.40.115.214                                                                                                      |
-|    Package Management - India South                |    52.172.11.191, 40.81.74.79                                                                                                          |
-|    Package Management - Canada Central             |    52.237.24.224, 40.85.224.121, 13.71.189.199, 40.82.188.122                                                                          |
-|    Package Management - East Asia (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71, 40.81.27.130                                                                              |
+|    Azure Artifacts - United States              |    52.173.148.93, 104.43.253.181, 23.99.179.148, 40.80.222.154, 40.119.0.130, 40.119.0.139,  13.86.125.169, 20.41.44.47, 40.90.219.165 |
+|    Azure Artifacts - West Europe                |    104.46.45.12, 52.236.148.212                                                                                                        |
+|    Azure Artifacts - Australia East             |    13.73.100.166, 20.40.176.15, 40.81.59.69                                                                                            |
+|    Azure Artifacts - Brazil South               |    191.234.179.224, 20.40.115.214                                                                                                      |
+|    Azure Artifacts - India South                |    52.172.11.191, 40.81.74.79                                                                                                          |
+|    Azure Artifacts - Canada Central             |    52.237.24.224, 40.85.224.121, 13.71.189.199, 40.82.188.122                                                                          |
+|    Azure Artifacts - East Asia (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71, 40.81.27.130                                                                              |
 
 |    Service                                         |    IP                                                                              |
 |----------------------------------------------------|------------------------------------------------------------------------------------|
-|    Package Management Feed - United States         |    52.173.251.89, 20.45.1.3, 40.67.190.224, 20.41.58.125, 40.119.1.14, 20.45.1.249 |
-|    Package Management Feed - West Europe           |    40.118.19.43, 52.236.146.118                                                    |
-|    Package Management Feed - Australia East        |    13.70.143.138, 20.40.176.80                                                     |
-|    Package Management Feed - Brazil South          |    191.235.93.87, 20.40.116.17                                                     |
-|    Package Management Feed - India South           |    52.172.8.41,40.81.79.49                                                         |
-|    Package Management Feed - Canada Central        |    52.237.19.70, 40.82.188.254                                                     |
-|    Package Management Feed - East Asia (Hong Kong) |    52.229.163.155, 40.81.28.59, 40.81.59.77                                        |
+|    Azure Artifacts Feed - United States         |    52.173.251.89, 20.45.1.3, 40.67.190.224, 20.41.58.125, 40.119.1.14, 20.45.1.249 |
+|    Azure Artifacts Feed - West Europe           |    40.118.19.43, 52.236.146.118                                                    |
+|    Azure Artifacts Feed - Australia East        |    13.70.143.138, 20.40.176.80                                                     |
+|    Azure Artifacts Feed - Brazil South          |    191.235.93.87, 20.40.116.17                                                     |
+|    Azure Artifacts Feed - India South           |    52.172.8.41,40.81.79.49                                                         |
+|    Azure Artifacts Feed - Canada Central        |    52.237.19.70, 40.82.188.254                                                     |
+|    Azure Artifacts Feed - East Asia (Hong Kong) |    52.229.163.155, 40.81.28.59, 40.81.59.77                                        |
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|
-|    Package Management Blob - United States          |    70.37.94.103, 40.78.129.25     |
-|    Package Management Blob - West Europe            |    23.97.221.25     |
-|    Package Management Blob - Australia East         |    40.127.86.30, 20.188.213.113   |
-|    Package Management Blob - Brazil South           |    191.235.90.183   |
-|    Package Management Blob - India South            |    52.172.54.122    |
-|    Package Management Blob - Canada Central         |    52.237.16.145    |
-|    Package Management Blob - East Asia (Hong Kong)  |    13.94.26.58      |
+|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25     |
+|    Azure Artifacts Blob - West Europe            |    23.97.221.25     |
+|    Azure Artifacts Blob - Australia East         |    40.127.86.30, 20.188.213.113   |
+|    Azure Artifacts Blob - Brazil South           |    191.235.90.183   |
+|    Azure Artifacts Blob - India South            |    52.172.54.122    |
+|    Azure Artifacts Blob - Canada Central         |    52.237.16.145, 52.237.16.145, 52.233.38.115, 40.82.187.186     |
+|    Azure Artifacts Blob - East Asia (Hong Kong)  |    13.94.26.58      |
  
 
 #### Configuring IP Firewall Exceptions
 
-Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started you will need to navigate to your SQL Azure VM on the [Azure portal](https://ms.portal.azure.com). Then select 'Networking' from the settings. This will take you to the network interface page for your SQL Azure VM. The Import Service requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. Exceptions for the IPs can be made by selecting "Add inbound port rule" from the networking settings. 
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started you will need to navigate to your SQL Azure VM on the [Azure portal](https://ms.portal.azure.com). Then select 'Networking' from the settings. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. Exceptions for the IPs can be made by selecting "Add inbound port rule" from the networking settings. 
 
 ![Add inbound port rule](_img/migration-import/inbound.png)
 
@@ -470,7 +475,7 @@ Select advanced to configure an inbound port rule for a specific IP.
 
 ![Advanced inbound port rule configuration](_img/migration-import/advanced.png)
 
-Set the source to "IP Addresses", enter one of the IPs that need to be granted an exception, set the destination port range to 1433, and provide a name that best describes the exception you're configuring. Depending on other inbound port rules that have been configured, the default priority for the Azure DevOps Services exceptions might need to be changed so they don't get ignored. For example, if you have a deny on all inbound connections to 1433 rule with a higher priority than your Azure DevOps Services exceptions, the Import Service might not be able to make a successful connection to your database. 
+Set the source to "IP Addresses", enter one of the IPs that need to be granted an exception, set the destination port range to 1433, and provide a name that best describes the exception you're configuring. Depending on other inbound port rules that have been configured, the default priority for the Azure DevOps Services exceptions might need to be changed so they don't get ignored. For example, if you have a deny on all inbound connections to 1433 rule with a higher priority than your Azure DevOps Services exceptions, the data migration tool might not be able to make a successful connection to your database. 
 
 ![Completed inbound port rule configuration](_img/migration-import/example.png)
 
@@ -478,7 +483,7 @@ You will need to repeat adding inbound port rules until all necessary Azure DevO
 
 #### Restoring your Database on the VM
 
-After setting up and configuring an Azure VM, you will need to take your detached backup from your TFS server to your Azure VM. Azure has several methods [documented](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-migrate-sql/) for how to accomplish this task. The collection database needs to be restored on SQL and doesn't require TFS to be installed on the VM. 
+After setting up and configuring an Azure VM, you will need to take your detached backup from your Azure DevOps Server instance to your Azure VM. Azure has several methods [documented](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-migrate-sql/) for how to accomplish this task. The collection database needs to be restored on SQL and doesn't require Azure DevOps Server to be installed on the VM. 
 
 #### Configuring your Collection for Import
 
@@ -502,9 +507,9 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
 Following our Fabrikam example the two SQL commands would look like the following:
 
 ```sql
-ALTER DATABASE [Tfs_Foo] SET RECOVERY SIMPLE;
+ALTER DATABASE [TFoo] SET RECOVERY SIMPLE;
 
-USE [Tfs_Foo]
+USE [Foo]
 CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!'
 CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
@@ -572,9 +577,9 @@ This can be accomplished using tools like [AzCopy](https://azure.microsoft.com/d
 ### Generating SAS Key
 A Shared Access Signature ([SAS](https://azure.microsoft.com/documentation/articles/storage-dotnet-shared-access-signature-part-1/)) Key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. 
 
-The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the Import Service does NOT support account level SAS Keys. 
+The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the data migration tool does NOT support account level SAS Keys. 
 
->**NOTE**: Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the Import Service. 
+>**NOTE**: Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped and will not work with the data migration tool. 
 
 After installing Storage Explorer you can complete the following steps to generate a SAS Key:
 
@@ -632,7 +637,7 @@ The great news is that your team is now ready to begin the process of running an
 > Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
 
 ### Considerations for Roll Back Planning
-A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.
+A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the data migration tool for Azure DevOps.
 
 Rollback for the final production run is fairly simple. Before you queue the import, you will be detaching the team project collection from Team Foundation Server which will make it unavailable to your team members. If for any reason, you need to roll back the production run and have Team Foundation Server come back online for your team members, you can simply attach the team project collection on-premises again and inform your team that they will continue to work as normal while your team regroups to understand any potential failures.
 
@@ -643,24 +648,24 @@ Rollback for the final production run is fairly simple. Before you queue the imp
 >
 > In the event your import fails, see the following [guidance](migration-troubleshooting.md). 
 
-Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps Services. The import command requires an internet connection, but does **NOT** require a connection to your TFS server. 
+Starting an import is done by using the data migration tool's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps Services. The import command requires an internet connection, but does **NOT** require a connection to your Azure DevOps Server instance. 
 
-To get started, open a command prompt and CD to path where you have TfsMigrator placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the guidance and help for the import command:
+To get started, open a command prompt and CD to path where you have the data migration tool placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the guidance and help for the import command:
 
 ```cmdline
-TfsMigrator import /help
+Migrator import /help
 ```
 
 The command to queue an import will have the following structure:
 
 ```cmdline
-TfsMigrator import /importFile:{location of import specification file}
+Migrator import /importFile:{location of import specification file}
 ```
 
 Here is an example of a completed import command:
 
 ```cmdline
-TfsMigrator import /importFile:C:\TFSDataImportFiles\import.json
+Migrator import /importFile:C:\DataMigrationToolFiles\import.json
 ```
 
 Once the validation passes you will be asked to sign into to Azure AD. It's important that you sign in with an identity that is a member of the same Azure AD as the identity map log file was built against. The user that signs in will become the owner of the imported organization. 
