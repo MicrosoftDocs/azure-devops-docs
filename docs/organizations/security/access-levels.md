@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/12/2019
+ms.date: 03/15/2019
 ---
 
 
@@ -115,7 +115,7 @@ Not supported for on-premises versions.
 ::: moniker-end
 
 
-# [Advanced](#tab/advanced)
+# [Basic + Test Plans](#tab/advanced)
 
 ::: moniker range="azure-devops"
 Not supported for Azure DevOps Services.
@@ -123,7 +123,7 @@ Not supported for Azure DevOps Services.
 
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Basic access level](_img/access-levels/advanced-2019.png)
+> ![Basic access level](_img/access-levels/basic-test-plans-2019.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
