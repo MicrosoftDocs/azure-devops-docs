@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 02/07/2019
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -234,20 +234,9 @@ To use this method of authentication, you must configure your TFS server as foll
 
 ::: moniker-end
 
-<h2 id="account">Interactive vs. service</h2>
+<h2 id="interactive-or-service">Interactive vs. service</h2>
 
 You can run your agent as either a service or an interactive process.
-Whether you run an agent as a service or interactively, you can choose
-which account you use to run the agent. Note that this is different
-from the credentials that you use when you register the agent with
-Azure Pipelines or TFS. The choice of agent account depends solely on the needs
-of the tasks running in your build and deployment jobs.
-
-For example, to run tasks that use Windows authentication to access an external
-service, you must run the agent using an account that has access
-to that service. However, if you are running UI tests such as Selenium or Coded UI tests that
-require a browser, the browser is launched in the context of the agent account.
-
 After you've configured the agent, we recommend you first try it
 in interactive mode to make sure it works. Then, for production use,
 we recommend you run the agent in one of the following modes so
@@ -280,6 +269,23 @@ ensure that the agent starts automatically if the machine is restarted.
    command to disconnect from Remote Desktop. For example:
 
    `%windir%\System32\tscon.exe 1 /dest:console`
+
+<h2 id="account">Agent account</h2>
+
+Whether you run an agent as a service or interactively, you can choose
+which computer account you use to run the agent. (Note that this is different
+from the credentials that you use when you register the agent with
+Azure Pipelines or TFS.) The choice of agent account depends solely on the needs
+of the tasks running in your build and deployment jobs.
+
+For example, to run tasks that use Windows authentication to access an external
+service, you must run the agent using an account that has access
+to that service. However, if you are running UI tests such as Selenium or Coded UI tests that
+require a browser, the browser is launched in the context of the agent account.
+
+On Windows, you should consider using a service account such as Network Service or Local Service.
+These accounts have restricted permissions and their passwords don't expire, meaning
+the agent requires less management over time.
 
 ## Agent version and upgrades
 

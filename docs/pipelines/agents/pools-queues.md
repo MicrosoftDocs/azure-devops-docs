@@ -9,7 +9,7 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/29/2018
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -65,13 +65,6 @@ The following organization agent pools are provided by default:
   Linux machines without having to configure a self-hosted Linux agent. Agents in this pool do not
   run in a container, but the Docker tools are available for you to use if you want to
   run [container jobs](../process/container-phases.md).
-
-* **Hosted Linux** pool (Azure Pipelines only): Enables you to build and release on
-  Linux machines without having to configure a self-hosted Linux agent. The agents
-  in this pool run on an Ubuntu Linux host inside the
-  [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
-  *Note: this pool has been superceded by the Hosted Ubuntu 1604 pool. It will be removed from the service on December 1, 2018.*
-  *Learn more about [migrating](hosted.md#hosted-linux-preview-pool-deprecation).*
 
 * **Hosted macOS** pool (Azure Pipelines only): Enables you to build and release on
   macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
@@ -147,6 +140,10 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 ::: moniker-end
 
 ## Q & A
+
+### If I don't schedule a maintenance window, when will the agents run maintenance?
+
+If no window is scheduled, then the agents in that pool will not run the maintenance job.
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 
