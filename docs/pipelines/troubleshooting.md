@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: chrispat
 ms.reviewer: chrispat
 ms.custom: seodec18
-ms.date: 10/15/2018
+ms.date: 03/14/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -208,6 +208,42 @@ In that file, add the following line:
 ```
 * text eol=lf
 ```
+
+## Variables having ' (single quote) appended
+
+If your pipeline includes a Bash script that sets variables using the `##vso` command, you may see an additional `'` appended to the value of the variable you set.
+This occurs because of an interaction with `set -x`.
+The solution is to disable `set -x` temporarily before setting a variable.
+The Bash syntax for doing that is `set +x`.
+```bash
+set +x
+echo ##vso[task.setvariable variable=MY_VAR]my_value
+set -x
+```
+
+### Why does this happen?
+Many Bash scripts include the `set -x` command to assist with debugging.
+Bash will trace exactly what command was executed and echo it to stdout.
+This will cause the agent to see the `##vso` command twice, and the second time, Bash will have added the `'` character to the end.
+
+For instance, consider this pipeline:
+```yaml
+steps:
+- bash: |
+    set -x
+    echo ##vso[task.setvariable variable=MY_VAR]my_value
+```
+
+On stdout, the agent will see two lines:
+```bash
+##vso[task.setvariable variable=MY_VAR]my_value
++ echo '##vso[task.setvariable variable=MY_VAR]my_value'
+```
+
+When the agent sees the first line, `MY_VAR` will be set to the correct value, "my_value".
+However, when it sees the second line, the agent will process everything to the end of the line.
+`MY_VAR` will be set to "my_value'".
+
 
 ## Agent connection issues
 
