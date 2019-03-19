@@ -179,9 +179,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p>Text fields that are indexed for full text search.</p></td></tr>
 <tr>
 	<td><p><strong>In</strong></p></td>
-	<td><p>Matches any value in a delimited set. For example, you can find work items whose IDs are 100, 101, and 102 if you specify those values for the ID field.</p>
-<blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
-</blockquote>
+	<td><p>Matches any value in a delimited set. For example, you can find work items whose IDs are 100, 101, and 102 if you specify those values for the ID field. Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).</p>
 </td>
 	<td><p><strong>Number</strong>, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 
@@ -197,24 +195,24 @@ You can use query operators in the following table to specify how each value in 
 	<td><strong>HTML</strong> </td></tr>
 <tr>
 	<td><p><strong>Not In</strong></p></td>
-	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
-<blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
-</blockquote>
+	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field. Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).</p>
 <blockquote>The <strong>Not In</strong> operator is available from Azure Boards and TFS 2018.2 and later versions.</blockquote>
+
 </td>
 	<td><p><strong>Number</strong>, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
 	<td><p><strong>In Group</strong></p></td>
 	<td><p>Matches a value that is a member of the group in the clause. Groups correspond to the name of a team, security group, or work tracking category. For example, you can create a query to find all work items that are assigned to members of the Contributors group or to a team. Team groups are created when you create a team. The name of team groups follows the pattern [<em>Team Project Name</em>]&#92;<em>Team Name</em>.</p><p>For example queries, see [Query by assignment or workflow changes](query-by-workflow-changes.md).</p></td>
 	<td><p> <strong>String</strong> that matches the name of a team, security group, or category defined in the system.</p>
-<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields whose data type corresponds to **String** or **Identity**, or the <strong>Work Item Type</strong> field. 
+
+<blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in Azure Active Directory (AAD) when your Azure Boards account is backed by AAD, or Active Directory (AD) when your on-premises server instance is backed by Active Directory.  
 </blockquote>
 <p>For information about category groups, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a project.</p>
-<blockquote><strong>Note:</strong> You can use the <strong>Not In Group</strong> operator only with fields whose data type corresponds to **String** or **Identity**, or the <strong>Work Item Type</strong> field.
+<blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD. 
 </blockquote>
 </td>
 </tr>
