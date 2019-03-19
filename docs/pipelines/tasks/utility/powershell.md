@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: alewis
 author: andyjlewis
-ms.date: 02/11/2019
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -67,11 +67,13 @@ The Powershell task also has a shortcut syntax in YAML:
 <tr>
 <td>Environment variables</td>
 <td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+
 ```yaml
 - script: echo $env:MYSECRET
   env:
     MySecret: $(Foo)
 ```
+
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

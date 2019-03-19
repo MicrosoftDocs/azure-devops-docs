@@ -9,7 +9,7 @@ ms.assetid: 9FD46361-985B-4886-A042-9C322CE3CD92
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 03/15/2019
 monikerRange: 'tfs-2015'
 ---
 
@@ -55,7 +55,7 @@ ConfigureAgent.cmd
 
 ### Choose interactive or service mode
 
-For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#account).
+For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
 #### Run as a service
 

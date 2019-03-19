@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 02/15/2019
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -149,7 +149,7 @@ TFS 2015: `http://{your_server}:8080/tfs`
 
 ## Run interactively
 
-For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#account).
+For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
 To run the agent interactively:
 
