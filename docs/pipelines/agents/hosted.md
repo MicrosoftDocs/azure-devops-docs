@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 02/07/2019
+ms.date: 03/15/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -189,10 +189,6 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
-
-## Hosted Linux Preview pool deprecation
-
-[!INCLUDE [include](_move-from-hosted-linux-preview.md)]
 
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]

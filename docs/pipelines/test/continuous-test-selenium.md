@@ -9,7 +9,7 @@ ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/07/2018
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -191,7 +191,7 @@ For example,
 -->
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
-  See [Build and release agents](../agents/agents.md#account) and [UI testing considerations](ui-testing-considerations.md).
+  See [Build and release agents](../agents/agents.md#interactive-or-service) and [UI testing considerations](ui-testing-considerations.md).
 
 <a name="include-test"></a>
 ## Include the test in a release
