@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/15/2019
+ms.date: 03/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,7 +23,12 @@ monikerRange: '>= tfs-2015'
 
 To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more.
 
-When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time.
+When your build or deployment runs, the system begins one or more jobs.
+An agent is installable software that runs one build or deployment job at a time.
+
+::: moniker range=">= azure-devops-2019"
+Jobs can be run [directly on the host](../process/phases.md) or [in a container](../process/container-phases.md).
+::: moniker-end
 
 ::: moniker range="azure-devops"
 

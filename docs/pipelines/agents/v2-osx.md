@@ -9,7 +9,7 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/15/2019
+ms.date: 03/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -36,6 +36,9 @@ Make sure your machine is prepared with our [macOS system prerequisites](https:/
 <h2 id="permissions">Prepare permissions</h2>
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
+
+You should run agent setup manually the first time.
+After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
 
 [!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
 
