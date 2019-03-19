@@ -121,6 +121,22 @@ Alternatively, you can also use the toolbar icon and the query selector to embed
 
 ::: moniker-end
 
+
+::: moniker range=">= azure-devops-2019"
+
+## @mention users and groups
+
+To @mention users or groups in wiki, key in "@" in the wiki editor. This will open up an autosuggest from which you can mention users or groups who will get notified by email.
+
+> ![Mention Autosuggest](_img/mention-autosuggest.png)
+
+You can also select "@mention" from the edit toolbar.
+
+> ![Mention from edit toolbar](_img/mention-toolbar.png)
+
+
+::: moniker-end
+
 <a id="link-work-items">  </a>
 
 ## Link to work items from a Wiki page
