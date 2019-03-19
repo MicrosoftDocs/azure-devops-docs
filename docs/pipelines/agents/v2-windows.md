@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/15/2019
+ms.date: 03/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -31,6 +31,9 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 Make sure your machine is prepared with our [Windows system prerequisites](https://aka.ms/vstsagentwinsystem).
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
+
+You should run agent setup manually the first time.
+After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
 
 ### Hardware specs 
 
@@ -180,7 +183,10 @@ After you've removed the agent, you can [configure it again](#download-configure
 
 The agent can be set up from a script with no human intervention.
 You must pass `--unattended` and the answers to all questions.
-Consult `.\config --help` for details about the required responses.
+
+[!INCLUDE [unattend](./_shared/v2/unattended-config.md)]
+
+`.\config --help` always lists the latest required and optional responses.
 
 ## Help on other options
 
