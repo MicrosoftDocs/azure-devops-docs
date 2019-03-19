@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -64,7 +64,13 @@ In a build pipeline, the most common target is an agent. The other kind of targe
 
 In a deployment pipeline, the target can be either an agent, a [deployment group](deployment-group-phases.md), or the server.
 
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [container-vs-host](./_shared/container-vs-host.md)]
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 When the target is an agent, the tasks are run on the computer that hosts the agent.
+::: moniker-end
 
 # [YAML](#tab/yaml)
 
