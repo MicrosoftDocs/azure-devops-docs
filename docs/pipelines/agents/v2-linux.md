@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/15/2019
+ms.date: 03/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -31,8 +31,6 @@ To build or deploy you'll need at least one agent. A Linux agent can build and d
 
 ## Check prerequisites
 
-Where are your builds and releases running?
-
 ::: moniker range="azure-devops"
 
 **Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
@@ -52,6 +50,9 @@ Where are your builds and releases running?
 ### Subversion
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
+
+You should run agent setup manually the first time.
+After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
 
 <h2 id="permissions">Prepare permissions</h2>
 

@@ -8,8 +8,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: macoope
-ms.date: 02/15/2019
-monikerRange: 'azure-devops'
+ms.date: 03/19/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Container jobs
@@ -20,6 +20,11 @@ By default, jobs run on the host machine where the [agent](../agents/agents.md)
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt continuous integration (CI).
 Over time, you may find that you want more control over the stage where your tasks run.
+
+<!-- this appears to be identical to the topic monikerRange, but there are build warnings without it -->
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [container-vs-host](./_shared/container-vs-host.md)]
+::: moniker-end
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.
