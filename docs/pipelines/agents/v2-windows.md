@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/14/2019
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -61,19 +61,17 @@ running 4 agents apiece.
 
 <li>On the **Get agent** dialog box, click **Windows**.</li>
 
-<li>On the left pane, select the processor architecture of your machine (x86 or x64). </li>
+<li>On the left pane, select the processor architecture of the installed Windows OS version on your machine.
+The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
+If you aren't sure which version of Windows is installed, [follow these instructions to find out](https://docs.microsoft.com/windows/client-management/windows-version-search).</li>
 
 <li>On the right pane, click the **Download** button.
 
 <li>Follow the instructions on the page to download the agent.</li>
 
-<li>Unpack the agent into the directory of your choice. Then run `config.cmd`.</li>
+<li>Unpack the agent into the directory of your choice. Then run `config.cmd`. This will ask you a series of questions to configure the agent.</li>
 
 </ol>
-
-> [!Tip]
-> Choose the processor according to the installed Windows OS version on your machine. The x64 agent version is intended for 64-bit Windows, whereas the x86 version is intended for 32-bit Windows.
-> You can find which version of Windows your machine is running [by following these instructions](https://docs.microsoft.com/windows/client-management/windows-version-search).
 
 ::: moniker-end
 
@@ -102,7 +100,8 @@ running 4 agents apiece.
 ::: moniker-end
 
 > [!Note]
-> We recommend you configure the agent from an elevated PowerShell window.
+> We strongly recommend you configure the agent from an elevated PowerShell window.
+> If you want to configure as a service, this is **required**.
 
 ### Server URL and authentication
 
@@ -141,9 +140,9 @@ When you configure your agent to connect to TFS, you've got the following option
 
 ### Choose interactive or service mode
 
-For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#account).
+For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
-Note that if you configure as a service, the username you choose to run as should be 20 characters or less.
+If you choose to run as a service (which we recommend), the username you run as should be 20 characters or less.
 
 ## Run the agent
 
@@ -153,7 +152,10 @@ Note that if you configure as a service, the username you choose to run as shoul
  .\run.cmd
  ```
 
-If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for "Azure Pipelines Agent (*name of your agent*)".
+If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
+- "Azure Pipelines Agent (*name of your agent*)".
+- "VSTS Agent (*name of your agent*)".
+- "vstsagent.(*organization name*).(*name of your agent*)".
 
 > [!Note]
 > If you need to change the agent's logon account, don't do it from the Services
