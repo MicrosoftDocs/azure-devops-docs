@@ -340,6 +340,8 @@
         href: tasks/build/android-signing.md
       - name: Ant
         href: tasks/build/ant.md
+      - name: Azure IoT Edge
+        href: tasks/build/azure-iot-edge.md
       - name: CMake
         href: tasks/build/cmake.md
       - name: Docker
