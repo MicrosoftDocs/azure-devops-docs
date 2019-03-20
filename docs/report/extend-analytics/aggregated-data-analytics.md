@@ -353,9 +353,6 @@ Let's take a look at what this query actually does:
 
 * Filters the data to a specific team
 * Filters the data to a specific backlog
-* Groups the result by Date (in the related Date entity) 
-* Groups the result by the ColumnName (in the related BoardLocation entity) 
-* Groups the result by the ColumnOrder (in the related BoardLocation entity) 
 * Returns a count of work items.
 
 When refreshing Power BI or Excel, the fewer rows required, the faster the refresh occurs.

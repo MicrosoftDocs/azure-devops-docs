@@ -10,7 +10,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
 ms.custom: seodec18
-ms.date: 11/20/2018
+ms.date: 03/15/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -379,13 +379,6 @@ docker-compose -f docs/docker-compose.yml --project-directory . down
 ---
 
 ::: moniker range="azure-devops"
-> [!NOTE]
-> When you're using agents in the Hosted Linux Preview pool, the agent runs inside a container. The network of this container is not bridged to the network of the containers that you spin up through Docker Compose. As a result, you can't communicate from the agent to one of the containers in the composition, for example, to drive tests. The preferred workaround is to upgrade to the _Hosted Ubuntu 1604_ pool, where the agents don't run inside a container.
-
-If you can't upgrade, another way to solve this problem is to explicitly create another test driver as a container within the composition, as we did in the earlier example. Another solution is to use `docker-compose exec` and target a specific container in the composition from your script.
-:::moniker-end
-
-::: moniker range="azure-devops"
 ## Build ARM containers
 
 When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86, ARM, and so on), you can use a machine emulator such as [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image:
@@ -417,8 +410,6 @@ If you can build your image on your development machine, but you're having troub
 * Check that you are using the correct type of agents - Microsoft-hosted Linux or Microsoft-hosted Windows - to mimic the type of container images you build on your development machine.
 
 * If you use Microsoft-hosted agents to run your builds, the Docker images are not cached from build to build because you get a new machine for every build. This will make your builds on Microsoft-hosted agents run longer than those on your development machine.
-
-* If you use agents from the Hosted Linux Preview pool, the agent itself runs in a container. This has some implications when you use docker-compose to spin up additional containers. As an example, there is no network connectivity from the agent container to the composition containers. Use `docker-compose exec` as a way of executing commands from the agent container in one of the composition containers. Also, you should upgrade those builds to use the _Hosted Ubuntu 1604_ pool, where the agents do not run in containers.
 
 ::: moniker-end
 

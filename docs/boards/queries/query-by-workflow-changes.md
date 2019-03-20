@@ -161,7 +161,7 @@ To filter on items assigned to someone who belongs to a team or security group, 
 
 ![Filter based on assignment to a TFS security group](_img/example-work-item-queries/IC675038.png)  
 
-You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Active Directory groups, and work item categories.
+You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups are teams, built-in security groups, custom security groups, Azure Active Directory and Active Directory groups, and work item categories.
 
 <a id="workflow-change"/> 
 
