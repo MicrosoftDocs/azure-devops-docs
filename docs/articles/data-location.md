@@ -27,6 +27,7 @@ Your data is stored within the following locations:
 - East Asia
 - Europe
 - India
+- United Kingsom
 - United States
 
 Azure DevOps stores information that is global in nature, such as user identities and profile information, in a data center located in the United States. All customer data, such as source code, work items, and test results, as well as the geo-redundant mirrors and offsite backups, are maintained within the selected region.
