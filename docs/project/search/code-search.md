@@ -119,6 +119,14 @@ For more details, see [Install an extension](../../marketplace/install-extension
 1. Quickly [search for work items](work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
 
    ![Search for work items or wiki containing the same search string](_img/code-search-get-started/open-workitem.png)
+
+## How to search filters on a Multi Repo Multi branch enviroment
+
+1. Enter search text `NOT kjhasdhkjashdkjkhjdashkjdsaahsdkj` and hit enter.
+1. Choose project filter as Team Project Name. Choose repository filter as your GIT repo. Choose branch filter as the desired branch.
+1. Enter search text ext:json and hit enter. You should be able to see the desired results.
+
+This search is a generic text which will have matches in all repositories like NOT kjhasdhkjashdkjkhjdashkjdsaahsdkj. The long string could be any garbage text which will not be present in any file. Adding a NOT before it inverts the logic and hence matches all files. 
  
 ## Next step
 
