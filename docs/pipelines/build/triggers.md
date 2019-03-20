@@ -85,7 +85,7 @@ If you don't specify any branch triggers, the default is as if you wrote:
 trigger:
   branches:
     include:
-    - *
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
 
 ::: moniker-end
