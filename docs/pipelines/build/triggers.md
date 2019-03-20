@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 03/11/2019
+ms.date: 03/20/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -85,7 +85,7 @@ If you don't specify any branch triggers, the default is as if you wrote:
 trigger:
   branches:
     include:
-    - *
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
 
 ::: moniker-end
@@ -228,7 +228,6 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 > New pipelines automatically override YAML PR triggers with a setting in the UI.
 > To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
 
@@ -237,6 +236,12 @@ pr:
 - master
 - releases/*
 ```
+
+PR triggers will fire for these branches once the pipeline YAML file has reached that branch.
+For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
+When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
+
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
 
 You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
 You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
