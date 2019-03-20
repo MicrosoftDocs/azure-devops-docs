@@ -78,7 +78,7 @@ Task authors need to use [azure-pipelines-task-lib](https://github.com/Microsoft
 
 > [!IMPORTANT]
 > You also can use this method for Azure Pipelines and newer versions of TFS.
-> We strongly recommend the more modern methos, which you can access by switching to the TFS 2018 or Azure Pipelines docs.
+> We strongly recommend the more modern method, which you can access by switching to the TFS 2018 or Azure Pipelines docs.
 
 In the agent root directory, create a .proxy file with your proxy server url.
 

@@ -30,6 +30,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](build/_img/android-build.png) Android Build - deprecated. Use [Gradle](build/gradle.md) | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/android-signing.png) [Android Signing](build/android-signing.md). Sign and align Android APK files | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/ant.png) [Ant](build/ant.md). Build with Apache Ant | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](build/_img/azure-iot-edge.png) [Azure IoT Edge](build/azure-iot-edge.md). Build, test, and deploy applications to Azure IoT Edge | Azure Pipelines |
 | ![icon](build/_img/cmake.png) [CMake](build/cmake.md). Build with the CMake cross-platform build system | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](build/_img/docker.png) [Docker](build/docker.md). Build, tag, push, or run Docker images, or run a Docker command. | Azure Pipelines |
 | ![icon](build/_img/dockercompose.png) [Docker Compose](build/docker-compose.md). Build, push or run multi-container Docker applications. | Azure Pipelines |
