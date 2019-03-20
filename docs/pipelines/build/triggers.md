@@ -228,6 +228,9 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 > New pipelines automatically override YAML PR triggers with a setting in the UI.
 > To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
 
+> [!NOTE]
+> YAML PR triggers are only for GitHub, not any other Git provider.
+
 If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
