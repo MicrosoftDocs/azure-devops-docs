@@ -186,7 +186,7 @@ To learn more about the GDPR regulation, please visit the following page in [Mic
 
 ### Data residency and sovereignty
 
-We know our customers care deeply about data security and privacy. Azure DevOps is available in the following 7 geographies across the world: United States, Canada, Europe, India, Australia, Asia Pacific, and Brazil. While we default your organization to your closest region, you have the option to choose a different region. If you change your mind later, our CSS team can help you migrate your organization to a different region. Azure DevOps will not move or replicate customer data outside of the chosen geography. Our backup procedures geo-replicate customer data between a second region within the same geography except for organizations located in Brazil, these are replicated to South Central US for disaster recovery purposes.
+We know our customers care deeply about data security and privacy. Azure DevOps is available in the following 8 geographies across the world: United States, Canada, Europe, UK, India, Australia, Asia Pacific, and Brazil. While we default your organization to your closest region, you have the option to choose a different region. If you change your mind later, our CSS team can help you migrate your organization to a different region. Azure DevOps will not move or replicate customer data outside of the chosen geography. Our backup procedures geo-replicate customer data between a second region within the same geography except for organizations located in Brazil, these are replicated to South Central US for disaster recovery purposes.
 
 To learn more about data location, see [Azure DevOps data location](data-location.md).
 
@@ -194,7 +194,7 @@ To learn more about data location, see [Azure DevOps data location](data-locatio
 
 In some cases, third parties such as law enforcement entities may approach us to obtain access to customer data stored within Azure DevOps. By policy, we will attempt to redirect the requests to the organization owner for resolution. When we are compelled by court order to disclose customer data to a third party, we will make a reasonable effort to notify the organization owner in advance unless we are legally prohibited from doing so.
 
-Some customers require that their data be stored in a particular geographic location to ensure a specific legal jurisdiction for any law enforcement activities. At this time, Azure DevOps can host organizations in 7 geographies across the world: United States, Canada, Europe, India, Australia, Asia Pacific, and Brazil. All customer data such as source code, work items, test results as well as the geo-redundant mirrors and offsite backups are maintained within the selected geography.
+Some customers require that their data be stored in a particular geographic location to ensure a specific legal jurisdiction for any law enforcement activities. At this time, Azure DevOps can host organizations in 8 geographies across the world: United States, Canada, Europe, UK, India, Australia, Asia Pacific, and Brazil. All customer data such as source code, work items, test results as well as the geo-redundant mirrors and offsite backups are maintained within the selected geography.
 
 ### Microsoft access
 
