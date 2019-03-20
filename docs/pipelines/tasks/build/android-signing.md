@@ -62,7 +62,7 @@ Select this option to sign the APK with a provided keystore file. Unsigned APKs 
 <tr>
 <td>Keystore File</td>
 <td>
-Enter the file path to the keystore file that should be used to sign the APK. It can either be checked into source control or placed on the build machine directly by an administrator. It is recommended to encrypt the keystore file in source control and use the **Decrypt File** task to decrypt the file during the build.
+Enter the secure file ID of the keystore file that should be used to sign the APK. To save the keystore file, go to Piplines > Library > Secure files and upload the secure file there. To find the secure file ID, click on the keystore file you have uploaded in the list of secure file and, in the page URI, copy the secureFileId property.
 </td>
 </tr>
 <tr>
@@ -76,7 +76,7 @@ Enter the file path to the keystore file that should be used to sign the APK. It
 <tr>
 <td>Alias</td>
 <td>
-Enter the alias that identifies the public/private key pair to be used in the keystore file.
+Enter the alias that identifies the public/private key pair to be used in the keystore file. This is mandatory if you sign your file.
 </td>
 </tr>
 <tr>
