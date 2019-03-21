@@ -94,3 +94,29 @@ steps:
    ```
 
 ---
+
+## Using .artifactignore files
+
+`.artifactignore` files use the identical file-globbing syntax of `.gitignore` to provide a version-controlled way to specify which files should _not_ be added to a Pipeline Artifact from a particular folder.
+
+Using an `.artifactignore` file, it is possible to omit the `targetPath` parameter entirely, if you want to create a Pipeline Artifact containing everything in and under the working directory, minus all of the ignored files and folders.
+
+In other words, with an `.artifactignore` file like this:
+
+```
+**/*
+!*.exe
+```
+
+This build task will archive up all of the `.exe` files and nothing else:
+
+# [YAML](#tab/yaml)
+
+```yaml
+steps:
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'artifactName'
+```
+
+More details about how to use these files are available at [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) or [.gitignore Documentation](https://git-scm.com/docs/gitignore).
