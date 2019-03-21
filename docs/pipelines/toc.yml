@@ -221,8 +221,6 @@
       href: licensing/concurrent-pipelines-tfs.md
   - name: Retention policies
     href: policies/retention.md
-  - name: Azure Policy Compliance
-    href: policies/azure-policy.md
   - name: Permissions
     items:
     - name: "Set build and release permissions"
@@ -269,6 +267,8 @@
       href: library/government-cloud.md
     - name: Azure Cosmos DB CI/CD
       href: targets/cosmos-db.md
+    - name: Azure Policy Compliance
+      href: policies/azure-policy.md
   - name: Test
     items:
     - name: Test glossary
