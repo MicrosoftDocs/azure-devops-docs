@@ -109,16 +109,17 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range="tfs-2015"  
 > [!NOTE]
-> **Feature availability:** The common configuration dialog is available for TFS 2015.1 and later versions.  
+> The common configuration Settings dialog is available for TFS 2015.1 and later versions.  
 ::: moniker-end  
 
+[!INCLUDE [temp](../../boards/_shared/setup-backlogs-boards.md)]
 
 ::: moniker range=">= azure-devops-2019"  
 
 1. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Kanban board](/azure/devops/boards/boards/(../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
+	> ![Open Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
 
 0. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
@@ -138,38 +139,55 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
 
-0. Open **Work>Backlogs>Board**. 
+2. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
 	>![Open Kanban board](../../boards/boards/_img/kanban-basics-intro.png)  
 
-1. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
  
 	For example, from the Kanban board ...  
-::: moniker-end 
-	::: moniker range="tfs-2017"  
+
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, open common configuration settings](_img/configure-team/open-settings-vsts-horz.png)
-	::: moniker-end  
-	::: moniker range="tfs-2015"  
-	![Kanban board, open common configuration settings](_img/configure-team/open-settings-tfs-2015-horz.png)
-	::: moniker-end  
-::: moniker range=">= tfs-2015 <= tfs-2018"
+
 2. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
-::: moniker-end  
-	::: moniker range=">= tfs-2017"  
+
 	> [!div class="mx-imgBorder"]  
 	> ![Common configuration dialog team settings]../.../boards/boards/_img/customize-cards/common-config-141.png)
-	::: moniker-end  
-	::: moniker range="tfs-2015"  
+
+::: moniker-end  
+
+::: moniker range="tfs-2015"
+
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+
+	![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
+
+2. Open **Work>Backlogs>Board**. 
+
+	> [!div class="mx-imgBorder"]
+	>![Open Kanban board](../../boards/boards/_img/kanban-basics-intro.png)  
+
+3. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+
+	For example, from the Kanban board ...  
+
+	![Kanban board, open common configuration settings](_img/configure-team/open-settings-tfs-2015-horz.png)
+
+
+4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
+
 	![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
-	::: moniker-end  
+
+::: moniker-end  
+
 
 ::: moniker range=">= tfs-2017"  
 
@@ -282,6 +300,7 @@ For details on each configuration option, see one of these topics:
 
 
 ## Configure Kanban boards 
+
 Team administrators can fully customize the team's Kanban boards associate with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
 * [Columns](../../boards/boards/add-columns.md)  
 * [WIP limits](../../boards/boards/wip-limits.md)    

@@ -110,8 +110,6 @@ In other words, with an `.artifactignore` file like this:
 
 This build task will archive up all of the `.exe` files and nothing else:
 
-# [YAML](#tab/yaml)
-
 ```yaml
 steps:
 - task: PublishPipelineArtifact@0

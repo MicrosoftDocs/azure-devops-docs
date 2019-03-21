@@ -45,24 +45,36 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 ## How-to guides
 
+::: moniker range="azure-devops"
+
 - [Create a project](create-project.md)
 - [Rename a project](rename-project.md)
 - [Delete a project](delete-project.md)
-::: moniker range="azure-devops"
 - [Restore a project](restore-project.md)
-::: moniker-end
 - [Change service visibility](../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 - [Connect to projects](connect-to-projects.md)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+- [Create a project](create-project.md)
+- [Rename a project](rename-project.md)
+- [Delete a project](delete-project.md)
+- [Change service visibility](../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Connect to projects](connect-to-projects.md)
+
+::: moniker-end
 
 ## Reference
 
 - [Default permissions and access](../../organizations/security/permissions-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 - [Permission lookup guide (Security)](../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 ## Resources
 
 - [Azure DevOps Services user guide](../../user-guide/index.yml)
 - [Public Projects](../public/index.md)
 - [Security & identity](../../organizations/security/index.md)
-- [Migrate from Azure DevOps Server to Azure DevOps Services](../../articles/migrate-from-tfs.md)
+- [Migrate from Azure DevOps Server to Azure DevOps Services](../../migrate/migrate-from-tfs.md)

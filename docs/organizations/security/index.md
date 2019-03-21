@@ -64,7 +64,7 @@ For anyone to access a project, you must add them to a security group. For a qui
 - [Default permission and access assignments](permissions-access.md)
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)  
-
+- [Azure DevOps Services data protection](data-protection.md)
 
 ## Resources
  
@@ -72,5 +72,5 @@ For anyone to access a project, you must add them to a security group. For a qui
 - [Server Administration (on-premises)](/azure/devops/server/index)
 - [Billing](../../billing/index.md)
 - [Authentication guidance for REST APIs](../../integrate/get-started/authentication/authentication-guidance.md)
-- [Azure DevOps Data Protection Overview](../../articles/team-services-security-whitepaper.md)
-- [Technical Articles](../../articles/index.md) 
+
+

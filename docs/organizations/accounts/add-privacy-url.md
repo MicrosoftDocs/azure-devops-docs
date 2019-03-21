@@ -37,4 +37,4 @@ You need project collection administrator permissions. For more information, see
 
 A link is added to your organization's privacy document.
 
-To learn more about how we manage and protect your data, read our [Data Protection Overview](../../articles/team-services-security-whitepaper.md).
+To learn more about how we manage and protect your data, read our [Data Protection Overview](../../organizations/security/data-protection.md).
