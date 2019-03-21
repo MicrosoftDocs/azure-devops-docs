@@ -11451,6 +11451,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/release/azure-policy.md",
+      "redirect_url": "/azure/devops/pipelines/policies/azure-policy",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/artifacts/vsts-package-badges.md",
       "redirect_url": "/azure/devops/artifacts/package-badges",
       "redirect_document_id": true

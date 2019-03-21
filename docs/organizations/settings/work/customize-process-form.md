@@ -30,7 +30,7 @@ Once you've added a custom page or group, you can add [custom fields to those pa
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
