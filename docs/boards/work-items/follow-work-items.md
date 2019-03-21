@@ -1,5 +1,5 @@
 ---
-title: Track updates by following a user story, bug, or other work item or pull request
+title: Track updates by getting notified of changes made to a user story, bug, or other work item or pull request
 titleSuffix: Azure Boards & Azure Repos
 description: Track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos 
 ms.custom: work-items, seodec18
@@ -11,10 +11,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 03/21/2019
 --- 
 
-# Follow a user story, bug, issue, or other work item or pull request  
+# Tutorial: Follow a user story, bug, issue, or other work item or pull request  
 
 **Azure Boards | Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
@@ -30,11 +30,32 @@ This article shows you how to:
 > * Follow a pull request 
 > * Manage work items that you're following
 
-
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 [You must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end  
+
+
+## Prerequisites
+
+::: moniker range="azure-devops"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To view or follow work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Also, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+* To view or follow pull requests, you must have **Basic** access or higher.   
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* To view or follow work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Also, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+* To view or follow pull requests, you must have **Basic** access or higher.  
+
+::: moniker-end 
+
 
 ## Follow a work item
 
@@ -113,7 +134,7 @@ From this view, you can view all items you're following across all projects. Als
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 You can also view and manage work that you're following from **Work>Work Items** and pivot to **Following**. 
 
@@ -124,6 +145,11 @@ You can also view and manage work that you're following from **Work>Work Items**
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Add, update, and follow a work item](../backlogs/add-work-items.md) 
 
 
 ## Related articles  

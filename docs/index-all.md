@@ -102,7 +102,7 @@ featureFlags:
 														<p><a href="/azure/devops/billing/index">Billing</a></p>
 														<p><a href="/azure/devops/notifications/index">Manage notifications</a></p>
 														<p><a href="/tfs/index">Team Foundation Server</a></p>
-														<p><a href="/azure/devops/articles">Technical articles</a></p>
+														<p><a href="/azure/devops/migrate">Migration & Import</a></p>
                                                     </div>
                                                 </div>
                                             </div>

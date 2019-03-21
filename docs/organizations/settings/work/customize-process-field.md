@@ -26,7 +26,7 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

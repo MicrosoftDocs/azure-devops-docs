@@ -42,7 +42,7 @@ In this article, learn how to perform these tasks:
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

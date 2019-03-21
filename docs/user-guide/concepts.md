@@ -113,4 +113,4 @@ In addition to the pre-built functionality that's available to you, you can add 
 ## Resources
 
 - [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
-- [Azure DevOps data protection overview](../articles/team-services-security-whitepaper.md)
+- [Azure DevOps data protection overview](../organizations/security/data-protection.md)
