@@ -53,7 +53,7 @@ For articles specific to teams, projects, organizations, and billing, see [Scale
 
 - [Default permissions and access](../security/permissions-access.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
+- [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
 
 ## Resources
 

@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Data locations for Azure DevOps
 
-**Azure DevOps**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Azure DevOps operates in the geographical locations (“geos”) listed below. To determine where customer data is stored, you can choose the location of the organization during initial sign up and creation of the organization.
 
@@ -48,5 +48,7 @@ Microsoft does not transfer customer data outside the selected region, except wh
 
 ## Related articles
 
-- [Get started with Azure DevOps](https://visualstudio.microsoft.com/team-services/)
-- [Azure DevOps data protection overview](team-services-security-whitepaper.md)
+- [Get started with Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137)
+- [Data protection overview](data-protection.md)
+
+

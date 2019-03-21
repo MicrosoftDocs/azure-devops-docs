@@ -54,7 +54,7 @@ Two of the following additional areas differ in their support:
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
 
-Are you on Azure DevOps Server and considering moving? Read [Migration options](../articles/migrate-from-tfs.md) to understand your options.
+Are you on Azure DevOps Server and considering moving? Read [Migration options](../migrate/migrate-from-tfs.md) to understand your options.
 
 <!---
 ## Fundamental differences between TFS and Azure DevOps Services
@@ -156,7 +156,7 @@ access levels automatically at first sign-in. For organizations that are configu
 
 ## Security and data protection
 
-Many entities want to know more about data protection when they consider moving to the cloud. We are committed to ensuring that Azure DevOps Services projects stay safe and secure. We have technical features and business processes in place to deliver on this commitment. You can also take steps to secure your data. Learn more in our [Data Protection Overview white paper](../articles/team-services-security-whitepaper.md).
+Many entities want to know more about data protection when they consider moving to the cloud. We are committed to ensuring that Azure DevOps Services projects stay safe and secure. We have technical features and business processes in place to deliver on this commitment. You can also take steps to secure your data. Learn more in our [Data Protection Overview white paper](../organizations/security/data-protection.md).
 
 <a name="process-customization"></a>
 

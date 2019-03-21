@@ -12,7 +12,9 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---
 
-# Post Import
+# Post import
+
+[!INCLUDE [ ](_shared/version-azure-devops.md)]
 
 > [!NOTE]
 > It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.

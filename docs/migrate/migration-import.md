@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Import
 
-**Azure DevOps Services | Azure DevOps Server**
+[!INCLUDE [ ](_shared/version-azure-devops.md)]
 
 > [!Note]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
@@ -71,11 +71,9 @@ Once the validation is complete you'll be left with a set of log files and a set
 
 ![The data migration tool validate output](_img/migration-import/tfsmigratorConsole.png)
 
-<<<<<<< HEAD
+
 If all of the validations pass, you are ready to move onto the next step of the import process. If the data migration tool flagged any errors, they will need to be corrected before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
-=======
-If all of the validations pass, you are ready to move onto the next step of the import process. If TfsMigrator flagged any errors, they will need to be corrected before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
->>>>>>> master
+
 
 When you open up the log directory you will notice that there are several logging files. 
 
@@ -170,6 +168,7 @@ Azure DevOps Services is available in several Azure [regions](https://azure.micr
 |---------------------------------|--------------------------------|-----------------------------|
 |    United States                |    Central United States       |      CUS                    |
 |    Europe                       |    Western Europe              |      WEU                    |
+|.   United Kingdom.              |    United Kingdom South        |      UKS                    |
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
@@ -388,7 +387,8 @@ Next you will need to grant access to the Regional Identity Service. You only ne
 |    Regional Identity Service - Brazil South                |    N\A                                                                                                                        |
 |    Regional Identity Service - India South                 |    104.211.226.91, 104.211.207.31, 40.81.75.134                                                                                             |
 |    Regional Identity Service - Canada Central              |    13.88.230.114, 40.85.244.98, 40.82.185.245                                                                                                |
-|    Regional Identity Service - East Asia (Hong Kong)       |    23.98.36.60, 40.83.79.159, 40.81.28.194                                                                                                  |
+|    Regional Identity Service - East Asia (Hong Kong)       |    23.98.36.60, 40.83.79.159, 40.81.28.194   
+|    Regional Identity Service - UK South                    |    51.105.8.98                                                                                               |
 
 Next you will need to grant access to the data migration tool for Azure DevOps itself. You only need to grant an exception for the data migration tool instance in the region that you're importing into.  
 
@@ -401,6 +401,7 @@ Next you will need to grant access to the data migration tool for Azure DevOps i
 |    Data migration tool - India South                 |    13.71.120.31, 40.81.76.137                              |
 |    Data migration tool - Canada Central              |    52.237.18.100, 52.237.24.61, 40.82.191.163              |
 |    Data migration tool - East Asia (Hong Kong)       |    13.75.106.194, 40.81.27.181                             |
+|    Data migration tool - UK South                    |    40.81.153.223                                                        |
   
 Next you will need to grant Azure DevOps Services access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
@@ -413,6 +414,7 @@ Next you will need to grant Azure DevOps Services access. Again, you only need t
 |    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252                                                        |
 |    Azure DevOps Services - Canada Central                        |    52.237.19.6, 40.82.190.38                                                           |
 |    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218, 13.94.26.58                                                          |
+|    Azure DevOps Services - UK South                              |    40.81.159.67                                 |
 
 Next you will need to grant Azure Pipelines Releases service access. You only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.
 
@@ -427,6 +429,7 @@ Next you will need to grant Azure Pipelines Releases service access. You only ne
 |    Releases service - India South             |    52.172.15.233, 40.81.79.60                                                |
 |    Releases service - Canada Central          |    52.237.28.171, 40.82.189.127                                              |
 |    Releases service - East Asia (Hong Kong)   |    13.107.6.175, 40.81.29.43                                                 |
+|    Releases service - UK South                |    40.81.156.207                                                                          |
 
 Next you will need to grant Azure Artifacts access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
@@ -443,6 +446,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts - India South                |    52.172.11.191, 40.81.74.79                                                                                                          |
 |    Azure Artifacts - Canada Central             |    52.237.24.224, 40.85.224.121, 13.71.189.199, 40.82.188.122                                                                          |
 |    Azure Artifacts - East Asia (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71, 40.81.27.130                                                                              |
+|    Azure Artifacts - UK South                   |    51.145.120.132                                                                               |
 
 |    Service                                         |    IP                                                                              |
 |----------------------------------------------------|------------------------------------------------------------------------------------|
@@ -453,6 +457,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Feed - India South           |    52.172.8.41,40.81.79.49                                                         |
 |    Azure Artifacts Feed - Canada Central        |    52.237.19.70, 40.82.188.254                                                     |
 |    Azure Artifacts Feed - East Asia (Hong Kong) |    52.229.163.155, 40.81.28.59, 40.81.59.77                                        |
+|    Azure Artifacts Feed - UK South              |    51.145.120.49                                                                               |
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|
@@ -463,6 +468,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Blob - India South            |    52.172.54.122    |
 |    Azure Artifacts Blob - Canada Central         |    52.237.16.145, 52.237.16.145, 52.233.38.115, 40.82.187.186     |
 |    Azure Artifacts Blob - East Asia (Hong Kong)  |    13.94.26.58      |
+|    Azure Artifacts Blob - UK South               |    51.143.174.59, 40.81.152.41              |
  
 
 #### Configuring IP Firewall Exceptions

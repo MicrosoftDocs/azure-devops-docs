@@ -48,7 +48,7 @@ Create a public project, make an existing project public, or work in a public pr
 * [Default roles and permissions](default-roles-access-public.md)
 * [Terms of service](service-limits-public.md)
 * [Feature differences for non-members](feature-differences.md)
-* [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
+* [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
 
 ## Resources
 
