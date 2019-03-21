@@ -28,7 +28,7 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

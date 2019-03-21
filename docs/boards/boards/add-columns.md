@@ -376,6 +376,7 @@ Kanban columns may correspond to an actual workflow state or a pseudo state. For
 That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
 
 * [Workflow states & state categories](../work-items/workflow-and-state-categories.md)  
+* [Set up your backlogs and boards](../backlogs/set-up-your-backlog.md)
 * [Show bug on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 * [Work in Progress limits](wip-limits.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   

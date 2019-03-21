@@ -14,15 +14,16 @@ ms.date: 03/11/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Get started as an administrator in Azure DevOps
+# Quickstart: Manage your project 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
-With most Azure DevOps applications, you can start using any service and configure resources as you go. No up-front work is required. Most settings define defaults.  
+With most Azure DevOps services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
-As an organization owner or a project admin, there are a few items you might want to attend to at the start, to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.
+That said, as an organization owner or a project administrator, there are a few tasks you might want to do once your created your project to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
 
-## Add users to a project
+
+## Add users to your project
 
 ::: moniker range="azure-devops"  
 The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
@@ -34,7 +35,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range="<= azure-devops-2019"  
 The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
@@ -46,18 +47,19 @@ You can delegate the task to add users to an organization by adding a user with 
 
 ## Grant or restrict permissions
 
-Access to features and functions is controlled by access-level assignments and permissions. We recommend that you review the following articles to understand the core concepts involved:
-
-- [About security and identity](../organizations/security/about-security-identity.md)  
-- [About permissions and groups](../organizations/security/about-permissions.md)  
-- [About security roles](../organizations/security/about-security-roles.md)  
-- [About access levels](../organizations/security/access-levels.md)  
-- [Default permissions and access](../organizations/security/permissions-access.md)
+Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
 
 If you decide that you want to delegate specific tasks to others, then you'll want to add them to a built-in or custom security group or add them to a specific role. To learn more, see these articles:
 
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)  
 - [Set permissions at the project level or project collection level](../organizations/security/set-project-collection-level-permissions.md)
+
+To learn more about permissions and security, review the following articles:
+
+- [About security and identity](../organizations/security/about-security-identity.md)  
+- [About permissions and groups](../organizations/security/about-permissions.md)  
+- [About security roles](../organizations/security/about-security-roles.md)  
+- [About access levels](../organizations/security/access-levels.md)  
 
 ::: moniker range=">= tfs-2015"
 
@@ -70,16 +72,16 @@ Each project has a summary page where you can share information through **README
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015"  
+::: moniker range=">= tfs-2015 <= azure-devops-2019"  
 Each project has a summary page where you can share information through **README files**. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md).
 
 ::: moniker-end
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 
 ## Remove unused services from the user interface
 
-To simplify the web portal user interface, you can disable select services. If you use a project only to log bugs, then you can remove all services except for **Boards**.
+To simplify the web portal user interface, you can disable select services. For example, if you use a project only to log bugs, then you can remove all services except for **Boards**.
 
 This example shows that **Test Plans** has been disabled:
 

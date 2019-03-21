@@ -36,10 +36,7 @@ Use this article to learn how to:
 > * Add features and epics  
 > * Add child items   
 
-> [!NOTE]
-> To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).    
-
-With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
+With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).     
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
@@ -282,10 +279,11 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 
 ## Related articles  
 
-- [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs ](filter-backlogs.md)
-- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
+- [Set up your backlogs and boards](set-up-your-backlog.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)  
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
+- [Product backlog controls](product-backlog-controls.md)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
 
