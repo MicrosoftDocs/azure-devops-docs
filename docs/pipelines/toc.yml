@@ -153,8 +153,6 @@
         href: release/approvals/gates.md
     - name: Templates
       href: release/env-templates.md
-    - name: Azure Policy Compliance
-      href: release/azure-policy.md
     - name: Releases and deployments
       href: release/releases.md
   - name: Repositories
@@ -223,6 +221,8 @@
       href: licensing/concurrent-pipelines-tfs.md
   - name: Retention policies
     href: policies/retention.md
+  - name: Azure Policy Compliance
+    href: policies/azure-policy.md
   - name: Permissions
     items:
     - name: "Set build and release permissions"
