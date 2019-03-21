@@ -228,7 +228,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 11. Notice, in the **Status** box, that the label for the renamed field, **Rank**, has not changed. This is because the field labels on the work item forms are scoped to the parent project and are independent of the server-wide field name just specified.  
   
     > [!NOTE]  
-    >  For more information about how to change field labels on work item forms, see [ Control XML element reference](../xml/control-xml-element-reference.md).  
+    > For more information about how to change field labels on work item forms, see [Control XML element reference](../xml/control-xml-element-reference.md).  
   
 12. Close the new Task and choose **No** when you are prompted to save the work item.  
   

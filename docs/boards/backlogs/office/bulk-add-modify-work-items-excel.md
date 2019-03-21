@@ -297,7 +297,7 @@ To resolve publishing errors, see one of these topics:
 - [Invalid links](resolve-excel-invalid-links-tree-list.md)  
 
 ### Delete work items
-You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../../backlogs/remove-delete-work-items.md).
+You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
 
 ### Direct link query converts to flat list
 
