@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 03/19/2019
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -104,12 +104,13 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="15">[19 March 2019](2019/sprint-149-update.md)</td>
+            <td rowspan="17">[19 March 2019](2019/sprint-149-update.md)</td>
             <td>Navigate to Azure Boards work items directly from mentions in any GitHub comment</td><td>Boards</td><td>Future</td>
         </tr>
         <tr><td>Updates to work item transition rules</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Azure Boards GitHub Enterprise support</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Edit and delete comments in work item</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>State value order on work item form</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Support for Azure PowerShell Az module</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Choose the directory of checked out code in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Private projects now get 60 minutes of run time per pipeline job</td><td>Pipelines</td><td>Future</td></tr>
@@ -118,6 +119,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Approve Azure Pipelines deployments from Slack</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>All source providers included in the new build pipeline wizard</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>GitHub comments trigger optimizations</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Publish CTest and PHPUnit test results</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Upstream sources for Maven</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>Analytics services OData version change for test entity sets</td><td>Reporting</td><td>Future</td></tr>
         <tr><td>Resolve Azure Active Directory (Azure AD) disconnected users</td><td>Administration</td><td>Future</td></tr>
