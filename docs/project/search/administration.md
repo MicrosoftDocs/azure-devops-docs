@@ -412,7 +412,7 @@ the **SqlScripts** folder and its contents is present, along with the PowerShell
 <a name="check-index"></a>
 ### Check indexing status for TFS 2017 RTM
 
-(For TFS 2017 Update 1 and later, and Azure DeveOps Server, see the [next section](#index-update1))
+(For TFS 2017 Update 1 and later, and Azure DevOps Server, see the [next section](#index-update1))
 
 To check the indexing status after Search is configured, or after the extension is installed for a collection:
 
@@ -454,7 +454,7 @@ To check the indexing status after Search is configured, or after the extension 
 1. If the problem persists, contact customer support at the address shown at the end of this topic. 
 
 <a name="index-update1"></a>
-### Check indexing status for TFS 2017 Update 1 and later, and Azure DeveOps Server
+### Check indexing status for TFS 2017 Update 1 and later, and Azure DevOps Server
 
 To check the indexing status after Search is configured, or after the extension is installed for a collection:
 
