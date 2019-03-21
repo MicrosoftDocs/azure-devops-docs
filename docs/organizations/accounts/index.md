@@ -83,8 +83,8 @@ Sign up for an organization, add users, and manage permissions and access.
 * [Permissions and access (Security)](../security/permissions-access.md)
 * [Permission lookup guide (Security)](../security/permissions-lookup-guide.md)
 * [Permissions and groups reference (Security)](../security/permissions.md)
-* [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md)
-* [Migrate from Azure DevOps Server to Azure DevOps Services](../../articles/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+* [Azure DevOps data protection overview](../../organizations/security/data-protection.md)
+* [Migrate from Azure DevOps Server to Azure DevOps Services](../../migrate/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
 ## Resources
 

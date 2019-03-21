@@ -31,9 +31,8 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 - Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
 - [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint.
 
-> [!NOTE]
-> To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
 
+[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
 
 ## Product and portfolio backlogs 
 
@@ -205,8 +204,7 @@ For example, you can create a team structure similar to this one with two manage
 
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
+<a id="leaf-node" />
 ## Display of leaf node work items  
 
 When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board, sprint backlog, or taskboard. 
@@ -215,7 +213,6 @@ When a product or portfolio backlog contains same-category, nested work items, o
 
 To learn more, see [Fix "Ordering backlog items is disabled"](../backlogs/resolve-backlog-reorder-issues.md).
 
-::: moniker-end
 
 ## Permissions and access
 

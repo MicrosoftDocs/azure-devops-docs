@@ -29,12 +29,12 @@
     href: sign-up-invite-teammates.md
   - name: Create organizations
     href: ../organizations/accounts/create-organization.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+  - name: Manage your project
+    href: project-admin-tutorial.md
   - name: Add users to a project or team 
     href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/breadcrumb/toc.json&bc=/azure/devops/breadcrumb/toc.json 
   - name: Manage teams and configure team tools
     href: ../organizations/settings/manage-teams.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-  - name: Get started as an admin
-    href: project-admin-tutorial.md
   - name: Install a Marketplace extension
     href: ../marketplace/install-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Tutorials for users
@@ -94,7 +94,7 @@
   - name: FAQs
     href: faqs.md
   - name: Data protection overview
-    href: ../articles/team-services-security-whitepaper.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+    href: ../organizations/security/data-protection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Web portal navigation

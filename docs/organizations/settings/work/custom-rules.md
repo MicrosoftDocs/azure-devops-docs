@@ -34,7 +34,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
 
  
 

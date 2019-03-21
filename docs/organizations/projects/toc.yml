@@ -85,7 +85,7 @@
   - name: "Permission lookup guide"
     href: ../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
   - name: Data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/project/toc.json&bc=/azure/devops/organizations/project/breadcrumb/toc.json
+    href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/project/toc.json&bc=/azure/devops/organizations/project/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Start using Azure DevOps
@@ -94,11 +94,9 @@
     href: ../security/index.md
   - name: Notifications
     href: ../../notifications/index.md
-  - name: Technical articles
-    href: ../../articles/index.md
   - name: Public projects
     href: ../public/index.md
   - name: All settings
     href: ../settings/index.md
-  - name: Migrate from Azure DevOps Server
-    href: ../../articles/migrate-from-tfs.md
+  - name: Migration & Import
+    href: ../../migrate/index.md
