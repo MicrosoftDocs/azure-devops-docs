@@ -814,8 +814,8 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 
 ## Pwsh
 
-`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md).
-It will run a script in PowerShell on Windows, macOS, or Linux.
+`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md) with `pwsh` set to `true`.
+It will run a script in PowerShell Core on Windows, macOS, or Linux.
 
 # [Schema](#tab/schema)
 
