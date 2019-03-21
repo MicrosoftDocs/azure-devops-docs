@@ -20,19 +20,19 @@ ms.date: 02/11/2019
 
 You use different work item types (WITs) to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
 For example, you may want to capture customer issues in a custom WIT labeled Ticket.   
 
 > [!div class="mx-imgBorder"]  
 > ![Custom Ticket work item form](_img/process/custom-wit-new-ticket-form.png)
 
+To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
+
+
 > [!TIP]    
 > To customize a single project, always start by [creating an inherited process and migrating project(s) to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
-To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
-
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -105,7 +105,7 @@ We recommend that you create a test project and apply your customized  inherited
 0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work>Work Items](/azure/devops/boards/boards/(../../../boards/work-items/_img/view-add/open-work-items-agile.png)  
+	> ![Open Work>Work Items](../../../boards/work-items/_img/view-add/open-work-items-agile.png)  
 
 0. Select the WIT you customized. Here we choose **Ticket**. 
 

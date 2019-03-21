@@ -16,18 +16,16 @@ ms.date: 02/20/2019
 
 # Add a custom field to a work item type (Inheritance process)    
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
-> [!TIP]    
-> To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
+> [!TIP]    
+> To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -99,7 +97,7 @@ We recommend that you create a test project and apply your customized  inherited
 0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work>Work Items](/azure/devops/boards/boards/(../../../boards/work-items/_img/view-add/open-work-items-agile.png)
+	> ![Open Work>Work Items](../../../boards/work-items/_img/view-add/open-work-items-agile.png)
 
 0. Select the WIT you customized. Here we choose **Bug**. 
 
