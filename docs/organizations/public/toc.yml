@@ -53,7 +53,7 @@
   - name: Extensions and public project support 
     href: ../../extend/develop/public-project.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
+    href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Git Repositories
