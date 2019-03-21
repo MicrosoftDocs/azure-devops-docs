@@ -80,7 +80,7 @@ Guidance for Cloud Solution Providers
 * [Permissions](../security/index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [About access levels](../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [Default permissions & access](../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
-* [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json)
+* [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json)
 
 ::: moniker-end
 

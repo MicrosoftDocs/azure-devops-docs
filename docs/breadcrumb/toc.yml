@@ -35,9 +35,9 @@
   - name: Azure DevOps demo generator
     tocHref: /azure/devops/demo-gen/
     topicHref: /azure/devops/demo-gen/index  
-  - name: Technical articles
-    tocHref: /azure/devops/articles/
-    topicHref: /azure/devops/articles/index
+  - name: Migration & Import
+    tocHref: /azure/devops/migrate/
+    topicHref: /azure/devops/migrate/index
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index

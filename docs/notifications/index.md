@@ -54,7 +54,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 * [Supported event types](oob-supported-event-types.md)
 * [FAQs](faq-notifications.md)
 * [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
-* [Azure DevOps data protection overview](../articles/team-services-security-whitepaper.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [Azure DevOps data protection overview](../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 
 ## Resources
 
