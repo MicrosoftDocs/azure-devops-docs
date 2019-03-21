@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 03/06/2019
+ms.date: 03/21/2019
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -425,8 +425,6 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 ::: moniker range=">= tfs-2018"
 
-
-
 <a id="relative-links">  </a>
 
 ### Source control relative links
@@ -514,8 +512,9 @@ The path to the image file can be a relative path or the absolute path in Git or
 > [!NOTE]
 > The syntax to support image resizing is only supported in pull requests and in the Wiki.
 
-::: moniker range=">= tfs-2017"
+::: moniker-end
 
+::: moniker range=">= tfs-2017"
 ## Checklist or task list
 
 Lightweight task lists are great ways to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.

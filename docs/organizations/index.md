@@ -242,7 +242,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/articles/index">
+                                        <a href="/azure/devops/migrate/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

@@ -65,24 +65,28 @@
     href: ../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
   - name: Use work item templates
     href: work-item-template.md
-  - name: Bulk add or modify (Excel)
-    href: office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: "Create backlog items & tasks (Project)"
-    href: office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
+  - name: Excel, Project, PowerPoint
+    items:
+    - name: Bulk add or modify (Excel)
+      href: office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
+    - name: "Create backlog items & tasks (Project)"
+      href: office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
+    - name: Storyboard your ideas
+      href: office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
+    - name: Add and share storyboard shapes
+      href: office/add-share-storyboard-shapes.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
   - name: Switch project or team focus
     href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
-  - name: Storyboard your ideas
-    href: office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
-  - name: Add and share storyboard shapes
-    href: office/add-share-storyboard-shapes.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
   - name: "Manage permissions & access (Security)"
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: TFS-Office integration issues
-    href: office/tfs-office-integration-issues.md
+  - name: Set up your backlogs and boards
+    href: set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: resolve-backlog-reorder-issues.md
+  - name: TFS-Office integration issues
+    href: office/tfs-office-integration-issues.md
   - name: "Rollup estimated & actual work using Project"
     href: office/rollup-estimated-and-actual-work-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Resolve Excel data conflicts

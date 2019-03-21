@@ -92,6 +92,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
 ::: moniker-end  
 
+[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
 
 ## Backlogs
 

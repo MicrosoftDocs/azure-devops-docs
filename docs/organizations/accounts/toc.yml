@@ -133,9 +133,9 @@
   - name: "Permissions and groups reference (Security)"
     href: ../../organizations/security/permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Azure DevOps data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json 
+    href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json 
   - name: Migrate from Azure DevOps Server to Azure DevOps Services
-    href: ../../articles/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+    href: ../../migrate/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Start using Azure DevOps

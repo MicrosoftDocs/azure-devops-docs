@@ -21,7 +21,7 @@ ms.date: 02/19/2019
 Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Azure DevOps Server 2019 (formerly known as Team Foundation Server), with additional cloud services. Both support software development projects, from planning through deployment. 
 Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
 
-This article introduces the main security concepts employed by Azure DevOps. To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../articles/team-services-security-whitepaper.md).
+This article introduces the main security concepts employed by Azure DevOps. To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
 
 The main security concepts to understand are
 
@@ -84,7 +84,7 @@ no app can use that method to access your account.
 Any app that previously had access gets an 
 authentication error and can't access your account.
 
-To learn more about how we store your credentials, see [Credential storage for Azure DevOps](../../articles/credential-storage.md).
+To learn more about how we store your credentials, see [Credential storage for Azure DevOps](credential-storage.md).
 
 To learn more about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
 

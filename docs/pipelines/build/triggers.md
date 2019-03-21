@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 03/11/2019
+ms.date: 03/20/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -85,7 +85,7 @@ If you don't specify any branch triggers, the default is as if you wrote:
 trigger:
   branches:
     include:
-    - *
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
 
 ::: moniker-end
@@ -231,7 +231,6 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 > [!NOTE]
 > YAML PR triggers are only for GitHub, not any other Git provider.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
 
@@ -240,6 +239,12 @@ pr:
 - master
 - releases/*
 ```
+
+PR triggers will fire for these branches once the pipeline YAML file has reached that branch.
+For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
+When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
+
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches.
 
 You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
 You cannot put a wildcard in the middle of a value. For example, `releases/*2018` is invalid.
@@ -464,21 +469,21 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 1. Edit your build pipeline.
 
-1. Add the **Download Build Artifacts** task to one of your jobs under **Tasks**.
+2. Add the **Download Build Artifacts** task to one of your jobs under **Tasks**.
 
-1. For **Download artifacts produced by**, select **Specific build**.
+3. For **Download artifacts produced by**, select **Specific build**.
 
-1. Select the team **Project** that contains the triggering build pipeline.
+4. Select the team **Project** that contains the triggering build pipeline.
 
-1. Select the triggering **Build pipeline**.
+5. Select the triggering **Build pipeline**.
 
-1. Select **When appropriate, download artifacts from the triggering build**.
+6. Select **When appropriate, download artifacts from the triggering build**.
 
-1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
+7. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
 
-1. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
+8. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
 
-1. Specify the **Destination directory** to which you want to download the artifacts. For example: `$(Build.BinariesDirectory)`
+9. Specify the **Destination directory** to which you want to download the artifacts. For example: `$(Build.BinariesDirectory)`
 
 ---
 

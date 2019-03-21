@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 06284b8a-d780-471e-b6d8-f100400eebfa
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/01/2019 
 ---
 
@@ -74,7 +75,7 @@ Detail fields are written to the relational warehouse database, but not to the c
 > |Rev|A number that is assigned to the historical revision of a work item.<br/><br/>Reference name: System.Rev|Integer|  
 > |Risk|A subjective rating of the relative uncertainty about the successful completion of the user story. You can specify the following values:<br/><br/>**1 - High**<br/>**2 - Medium**<br/>**3 - Low**<br/><br/>Reference name: Microsoft.VSTS.Common.Risk|String|  
 > |Severity|A subjective rating of the effect of a bug, issue, or risk on the project. You can specify the following values:<br/><br/>**1 - Critical**<br/>**2 - High**<br/>**3 - Medium**<br />**4 - Low**<br/><br/>Reference name: Microsoft.VSTS.Common.Severity|String|  
-> |Stack Rank|A subjective rating of the user story, task, issue, or bug compared to other work items of the same type. An item that is assigned a lower number should be fixed before an item that is assigned a higher number.<br/><br/>Reference name: Microsoft.VSTS.Common.Rank|Double|  
+> |Stack Rank|A subjective rating of the user story, task, issue, or bug compared to other work items of the same type. An item that is assigned a lower number should be fixed before an item that is assigned a higher number.<br/><br/>Reference name: Microsoft.VSTS.Common.StackRank|Double|  
 > |Start Date|The date and time when the schedule indicates that the task will start.<br/><br/>Reference name: Microsoft.VSTS.Scheduling.StartDate|DateTime|  
 > |State|The current state of the work item. The valid values for state are specific to each type of work item.|System.State|String|  
 > |Team Project|The name of the project to which this work item belongs.<br/><br/>Reference name: System.TeamProject|String|  

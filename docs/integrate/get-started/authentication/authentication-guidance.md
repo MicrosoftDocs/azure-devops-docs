@@ -30,7 +30,7 @@ When writing an application which interfaces with Azure DevOps Services, you wil
 
 To learn more about how security and identity are managed, see [About security and identity](../../../organizations/security/about-security-identity.md).
 
-To learn more about how we store your credentials, see [Credential storage for Azure DevOps](../../../articles/credential-storage.md).
+To learn more about how we store your credentials, see [Credential storage for Azure DevOps](../../../organizations/security/credential-storage.md).
 
 ## Enabling IIS Basic Authentication invalidates using PATs for TFS
 

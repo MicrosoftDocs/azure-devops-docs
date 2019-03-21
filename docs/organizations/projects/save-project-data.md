@@ -40,7 +40,7 @@ You can use the following procedures to save data that users most care about, su
 
     This process doesn't save any attachments, change history, or links to other artifacts.
 
-To learn more about how we manage and protect your data, read our [Data Protection Overview](../../articles/team-services-security-whitepaper.md).
+To learn more about how we manage and protect your data, read our [Data Protection Overview](../../organizations/security/data-protection.md).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 You can easily save data stored for a project collection

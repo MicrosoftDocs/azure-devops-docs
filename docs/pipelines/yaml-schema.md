@@ -8,7 +8,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: jillfra
 ms.author: macoope
 ms.reviewer: macoope
-ms.date: 03/13/2019
+ms.date: 03/20/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -548,7 +548,13 @@ strategy:
 
 Regardless of which strategy is chosen and how many jobs are generated, this
 value specifies the maximum number of agents which will run at a time for
-this family of jobs. It defaults to unlimited if not specified.
+this family of jobs.
+::: moniker range="> azure-devops-2019"
+If not specified or set to 0, no limit will be applied.
+::: moniker-end
+::: moniker range="azure-devops-2019"
+If not specified, no limit will be applied.
+::: moniker-end
 
 # [Schema](#tab/schema)
 
@@ -808,8 +814,8 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 
 ## Pwsh
 
-`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md).
-It will run a script in PowerShell on Windows, macOS, or Linux.
+`pwsh` is a shortcut for the [PowerShell task](tasks/utility/powershell.md) with `pwsh` set to `true`.
+It will run a script in PowerShell Core on Windows, macOS, or Linux.
 
 # [Schema](#tab/schema)
 
