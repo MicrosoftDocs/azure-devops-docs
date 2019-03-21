@@ -1,4 +1,3 @@
-
 ---
 title: Manual Intervention task 
 description: Pause an active deployment within a stage in a release pipeline in Azure Pipelines and TFS

@@ -12,8 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
---- 
-
+---
 
 # Email or print user stories, bugs, and other work items 
 
@@ -289,7 +288,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 ![Copy full path hyperlink for a work item from Eclipse](../queries/_img/share-plans-copy-URL-wi-eclipse.png)   
 
---- 
+---
 
 <!---
 ::: moniker range=">= tfs-2018"

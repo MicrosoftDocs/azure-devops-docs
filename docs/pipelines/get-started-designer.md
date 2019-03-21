@@ -448,6 +448,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
   # [Previous navigation](#tab/previous-nav)
   ![PowerShell task](_img/get-started-designer/powershell-task-2-tfs-2018-2.png)
+
   ---
  ::: moniker-end
  ::: moniker range=">= tfs-2017 < azure-devops"

@@ -7,11 +7,12 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 11/19/2018
---- 
+---
 
 # Filter your Kanban board
 
