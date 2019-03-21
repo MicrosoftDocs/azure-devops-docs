@@ -19,8 +19,7 @@ ms.date: 02/14/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
-
+After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
 
 In this article you'll learn how to:  
 
@@ -30,7 +29,7 @@ In this article you'll learn how to:
 > * Open your product backlog or portfolio backlog  
 > * View the tree hierarchy  
 > * Group backlog items using the Mapping pane  
-> * Reparent items using drag-and-drop or the **Change parent** option      
+> * Reparent items using drag-and-drop or the **Change parent** option  
 
 ::: moniker-end
 
@@ -47,7 +46,10 @@ In this article you'll learn how to:
 ::: moniker range="tfs-2013"
 > [!NOTE]   
 > The Epic portfolio backlog is supported in TFS 2015 and later versions.  
+
 ::: moniker-end
+
+[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
 
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]

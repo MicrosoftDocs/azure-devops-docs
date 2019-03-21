@@ -39,7 +39,7 @@ Code search requires installation of the [Code Search extension](https://marketp
 To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Code Search box](/azure/devops/boards/boards/(../../organizations/public/_img/search/code-search-vert.png) 
+> ![Code Search box](../../organizations/public/_img/search/code-search-vert.png) 
 ::: moniker-end  
 
 
@@ -96,7 +96,7 @@ To learn more, see [Search code](../search/code-search.md).
 0. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box](/azure/devops/boards/boards/(_img/search/work-item-search-vert.png)    
+	> ![Work Item Search box](_img/search/work-item-search-vert.png)    
 
 0. Search results are displayed in a snippet view where the matches found are shown in bold.
 
@@ -232,12 +232,12 @@ With wiki search, you can search within a project wiki or across all wikis creat
 Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option](/azure/devops/boards/boards/(../wiki/_img/search/search-wiki-vert.png)   
+> ![Wiki search option](../wiki/_img/search/search-wiki-vert.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results](/azure/devops/boards/boards/(../wiki/_img/search/wiki-search-example-vert.png)   
+> ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
 
 ::: moniker-end  
 

@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 02/14/2019
+ms.date: 03/21/2019
 ---
 
 
@@ -22,6 +22,8 @@ ms.date: 02/14/2019
 While many work tracking views show up as lists&mdash;such as your backlogs and queries&mdash;board views display cards. Information rich cards not only provide at-a-glance info of interest to you and your team, they also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
 Each card corresponds to a work item which you use to share information, track status, and assign work. 
+
+[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
 
 In this example, the bug work item type (WIT) shows all the core fields, three additional fields, and tags. Also, To make severity 1 bugs stand out, a styling rule has been added to cause the card to display as yellow.  
 
@@ -403,6 +405,13 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > |<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #C3C3C3;" /> | <img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #C3C3C3;" />  | <img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #C3C3C3;" /> | 
 
 To learn more about using these features, see [Add task checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]  
+> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Set up your backlogs and boards, Customize your Kanban Board checklist items](../backlogs/set-up-your-backlog.md#customize-checklist-2019). 
+
+::: moniker-end
 
 ### Enable or disable an annotation
 

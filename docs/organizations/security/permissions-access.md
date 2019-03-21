@@ -157,7 +157,7 @@ You can manage your source code from the web portal **Repos** hub, or using Xcod
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-Stakeholders for private projects have no access to **Repos**. Stakeholders for pub;ic projects have the same access to **Repos** as **Contributors**.  
+Stakeholders for private projects have no access to **Repos**. Stakeholders for public projects have the same access to **Repos** as **Contributors**.  
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"

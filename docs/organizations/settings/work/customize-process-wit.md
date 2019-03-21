@@ -27,7 +27,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/choose-process-model.md)]
+
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
