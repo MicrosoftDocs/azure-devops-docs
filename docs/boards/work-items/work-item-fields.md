@@ -214,7 +214,7 @@ The following table describes each attribute.
 	<td>isPicklistSuggested<sup>2</sup></td>
 	<td> </td>
 	<td> </td>
-	<td>Indicates whether the field alliows users to enter their own values for a picklist. The value is set to True when a custom field is defined for Azure DevOps Services, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for **Allow users to set their own values** is checked.</td>
+	<td>Indicates whether the field allows users to enter their own values for a picklist. The value is set to True when a custom field is defined for Azure DevOps Services, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for **Allow users to set their own values** is checked.</td>
 	<td>Yes</td>
 </tr>
 <tr>
