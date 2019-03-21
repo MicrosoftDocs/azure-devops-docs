@@ -70,11 +70,11 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 - [Default permissions and access](../../organizations/security/permissions-access.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 - [Permission lookup guide (Security)](../security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-- [Azure DevOps data protection overview](../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 ## Resources
 
 - [Azure DevOps Services user guide](../../user-guide/index.yml)
 - [Public Projects](../public/index.md)
 - [Security & identity](../../organizations/security/index.md)
-- [Migrate from Azure DevOps Server to Azure DevOps Services](../../articles/migrate-from-tfs.md)
+- [Migrate from Azure DevOps Server to Azure DevOps Services](../../migrate/migrate-from-tfs.md)

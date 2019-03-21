@@ -11509,6 +11509,51 @@
       "source_path": "docs/project/wiki/project-vision-status.md",
       "redirect_url": "/azure/devops/organization/projects/project-vision-status",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/team-services-security-whitepaper.md",
+      "redirect_url": "/azure/devops/organization/security/data-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/data-location.md",
+      "redirect_url": "/azure/devops/organization/security/data-location",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/credential-storage.md",
+      "redirect_url": "/azure/devops/organization/security/credential-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/migrate-from-tfs.md",
+      "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/articles/migration-import.md",
+      "redirect_url": "/azure/devops/migrate/migration-import",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/migration-overview.md",
+      "redirect_url": "/azure/devops/migrate/migration-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/migration-post-import.md",
+      "redirect_url": "/azure/devops/migrate/migration-post-import",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/migration-processtemplates.md",
+      "redirect_url": "/azure/devops/migrate/migration-processtemplates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/migration-troubleshooting.md",
+      "redirect_url": "/azure/devops/migrate/migration-troubleshooting",
+      "redirect_document_id": false
     }
   ]
 }

@@ -123,10 +123,17 @@
     href: git-permissions-before-2017.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
   - name: Web site settings and security
     href: /azure/devops/server/admin/websitesettings
-  - name: Azure DevOps Services data protection overview
-    href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+  - name: Azure DevOps Services 
+    items:
+    - name: Data protection overview
+      href: data-protection.md 
+    - name: Data location
+      href: data-location.md 
+    - name: Credential storage
+      href: credential-storage.md 
+      displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
   - name: TFSSecurity command
-    href: /azure/devops/server/ref/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json  
+    href: /azure/devops/server/ref/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
   - name: REST API, Permissions
     href: /rest/api/vsts/security/permissions 
 - name: Resources
@@ -137,5 +144,4 @@
     href: ../accounts/index.md
   - name: REST API authentication guidance
     href: ../../integrate/get-started/authentication/authentication-guidance.md
-  - name: Technical articles
-    href: ../../articles/index.md
+

@@ -219,7 +219,7 @@
         - name: Add a custom control to a form
           href: ../../extend/develop/custom-control.md
         - name: Data protection overview
-          href: ../../articles/team-services-security-whitepaper.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+          href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Resources
   items:
     - name: Manage projects

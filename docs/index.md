@@ -639,7 +639,7 @@ featureFlags:
                                                         <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
                                                         <p><a href="/azure/devops/learn/">DevOps Resource Center</a></p>
-                                                        <p><a href="/tfs/index">TFS Administrator Guide</a></p>
+                                                        <p><a href="/tfs/index">On-premises Administration Guide</a></p>
                                                     </div>
                                                 </div>
                                             </div>
