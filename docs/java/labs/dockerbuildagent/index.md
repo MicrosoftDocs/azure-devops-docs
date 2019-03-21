@@ -21,13 +21,15 @@ In this exercise, you are going to configure a private build agent that runs in 
 
 This exercise assumes you have completed the exercises to create a Team Project. This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: It is not necessary to run the Azure DevOps Services agent in a container - but it is convenient to do so and means that you don't have to install any other prerequisites on the machine running the container, since all the prerequisites are inside the container.
+> [!NOTE]
+> It is not necessary to run the Azure DevOps Services agent in a container - but it is convenient to do so and means that you don't have to install any other prerequisites on the machine running the container, since all the prerequisites are inside the container.
 
 ## Generating an Azure DevOps Services Personal Access Token (PAT)
 
 In this task you will generate a PAT for yourself. You will use this PAT to connect the agent to your organization in Azure DevOps.
 
-> **Note**: If you already have a PAT, you can skip this step and use your existing PAT (assuming it has the correct scopes).
+> [!NOTE]
+> If you already have a PAT, you can skip this step and use your existing PAT (assuming it has the correct scopes).
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 
@@ -69,10 +71,11 @@ In this task you will start an Azure DevOps Services build agent container using
 
     ![The agent container running](../_img/dockerbuildagent/agent-container-running.png)
 
-    > **Note**: This starts a docker container (called Azure DevOps Servicesagent) that has an Azure DevOps Services agent running inside it. The agent is connected to your organization and has also mounted the VM Docker socket so that the container can perform Docker operations (like building containers). It is created from a Dockerfile (listed below) that installs PhantomJS for running headless Selenium tests and configures Docker certs and environment variables. You can move this terminal to the side since the container is running interactively, so the prompt you are seeing is actually inside the container. Open a new terminal by clicking on the Terminal Emulator icon in the toolbar.
+    > [!NOTE]
+    > This starts a docker container (called Azure DevOps Servicesagent) that has an Azure DevOps Services agent running inside it. The agent is connected to your organization and has also mounted the VM Docker socket so that the container can perform Docker operations (like building containers). It is created from a Dockerfile (listed below) that installs PhantomJS for running headless Selenium tests and configures Docker certs and environment variables. You can move this terminal to the side since the container is running interactively, so the prompt you are seeing is actually inside the container. Open a new terminal by clicking on the Terminal Emulator icon in the toolbar.
 
     ```dockerfile
-    # Dockerfile for custom Azure DevOps Services agent image with phantomjd and docker config
+    # Dockerfile for custom Azure DevOps Services agent image with phantomjs and docker config
     FROM microsoft/vsts-agent
 
     # install phantomjs
@@ -88,7 +91,8 @@ In this task you will start an Azure DevOps Services build agent container using
     ENV DOCKER_HOST=tcp://$HOSTNAME:2376 DOCKER_TLS_VERIFY=1
     ```
 
-    > **Note**: `$HOSTNAME` is a variable that resolves in the setup script that executed when you set up your Azure VM.
+    > [!NOTE]
+    > `$HOSTNAME` is a variable that resolves in the setup script that executed when you set up your Azure VM.
 
 2. If your container stops running for some reason, you can run the following commands to restart and attach to it:
 
