@@ -153,8 +153,6 @@
         href: release/approvals/gates.md
     - name: Templates
       href: release/env-templates.md
-    - name: Azure Policy Compliance
-      href: release/azure-policy.md
     - name: Releases and deployments
       href: release/releases.md
   - name: Repositories
@@ -269,6 +267,8 @@
       href: library/government-cloud.md
     - name: Azure Cosmos DB CI/CD
       href: targets/cosmos-db.md
+    - name: Azure Policy Compliance
+      href: policies/azure-policy.md
   - name: Test
     items:
     - name: Test glossary

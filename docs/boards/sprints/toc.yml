@@ -59,10 +59,14 @@
     href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: "Manage permissions & access (Security)"
-    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
   - name: Switch project or team focus
     href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
+  - name: "Manage permissions & access (Security)"
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
+- name: Troubleshooting
+  items:
+  - name: Set up your backlogs and boards
+    href: ../backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: "Default permissions & access (Security)"

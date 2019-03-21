@@ -24,9 +24,9 @@ Use this article to learn:
 
 > [!div class="checklist"]    
 > * How to forecast upcoming sprints     
-> * Required and recommended team activities to support forecasting       
+> * Required and recommended team activities to support forecasting  
 
-
+[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
 
 ## Prerequisites
 

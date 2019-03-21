@@ -35,7 +35,7 @@ Choose Azure DevOps Services when you want the following results:
 - Maintenance-free operations
 - Easy collaboration across domains
 - Elastic scale
-- Rock-solid security ([learn more about data protection](../articles/team-services-security-whitepaper.md))
+- Rock-solid security ([learn more about data protection](../organizations/security/data-protection.md))
 
 You also have access to cloud build and deployment servers, and application insights.
 

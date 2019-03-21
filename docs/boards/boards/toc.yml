@@ -63,6 +63,10 @@
   items:
   - name: Boards (Kanban) query examples 
     href: ../queries/query-by-workflow-changes.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
+- name: Troubleshooting
+  items:
+  - name: Set up your backlogs and boards
+    href: ../backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Boards (Kanban) board controls

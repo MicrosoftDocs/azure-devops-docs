@@ -128,7 +128,7 @@ Once you've signed up for Azure DevOps Services or installed Azure DevOps Server
 ### Azure DevOps Server updates
 
 - [What's new](/azure/devops/server/whats-new)
-- [Migrate data from TFS to Azure DevOps Services](../articles/migrate-from-tfs.md)
+- [Migrate data from TFS to Azure DevOps Services](../migrate/migrate-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
 
