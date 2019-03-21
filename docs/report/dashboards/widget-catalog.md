@@ -106,7 +106,9 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -125,7 +127,9 @@ Requires TFS 2015.1 or later version.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -227,7 +231,9 @@ Inserts a configurable overview of sprint progress. You can choose between a cou
 Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -351,7 +357,9 @@ Adds a configurable tile to display the summary of a code folder or Git reposito
 Requires TFS 2015.1 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -376,7 +384,9 @@ To learn more about pull requests, see [Review code with pull requests](../../re
 Requires TFS 2015.2 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 
@@ -401,7 +411,9 @@ Hover over a bar to learn how long the build took to complete. Choose the bar to
 Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#build-history) to add a build summary chart to a dashboard. 
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 
@@ -421,7 +433,9 @@ In order view the test summary across multiple environments in a release, the wi
 Requires TFS 2017.1 or later version. 
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -472,7 +486,9 @@ To learn more, see [Track your test results](../../test/track-test-status.md).
 Requires TFS 2017.2 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
+
 ----
+
 ::: moniker-end
 
 
@@ -528,7 +544,9 @@ Adds a configurable tile to display any type of information, guidance, or links 
 Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ---- 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -548,7 +566,9 @@ For team admins, supports access to the quick dialog to [add or remove team memb
 Requires TFS 2015.1 or later version.    
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
@@ -584,7 +604,9 @@ Provides links to open or download Visual Studio. The Visual Studio IDE client c
 Requires TFS 2015.1 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -601,7 +623,9 @@ Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **P
 Requires TFS 2015.1 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2015"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
