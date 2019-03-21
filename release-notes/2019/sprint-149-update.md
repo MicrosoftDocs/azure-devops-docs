@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 03/19/2019
+ms.date: 03/21/2019
 description: In the **Sprint 149 Update** of Azure DevOps, we added the ability to navigate to Azure Boards directly from mentions in a GitHub comment as well as adding support for Azure Boards within GitHub Enterprise. 
 ---
 
@@ -24,6 +24,7 @@ Azure Boards:
 - [Updates to work item transition rules](#updates-to-work-item-transition-rules)
 - [Azure Boards GitHub Enterprise support](#azure-boards-github-enterprise-support)
 - [Edit and delete comments in work item](#edit-and-delete-comments-in-work-item)
+- [State value order on work item form](#state-value-order-on-work-item-form)
 
 Azure Pipelines:
 
@@ -35,6 +36,7 @@ Azure Pipelines:
 - [Approve Azure Pipelines deployments from Slack](#approve-azure-pipelines-deployments-from-slack)
 - [All source providers included in the new build pipeline wizard](#all-source-providers-included-in-the-new-build-pipeline-wizard)
 - [GitHub comments trigger optimizations](#github-comments-trigger-optimizations)
+- [Publish CTest and PHPUnit test results](#publish-ctest-and-phpunit-test-results)
 
 Azure Artifacts:
 
@@ -48,7 +50,7 @@ Administration:
 
 - [Resolve Azure Active Directory (Azure AD) disconnected users](#resolve-azure-active-directory-azure-ad-disconnected-users)
 
-## Boards
+## Azure Boards
 
 ### Navigate to Azure Boards work items directly from mentions in any GitHub comment
 
@@ -81,7 +83,17 @@ When you click the overflow menu, you will see the option to delete your comment
 
 You will have a full audit trail of all the edited and deleted comments in the history tab on the work item form. You will also see that we’ve updated the UI of our discussion experience to make it feel more modern and interactive. In addition, we added bubbles around comments to make it clearer where individuals comments start and end.
 
-## Pipelines
+### State value order on work item form
+
+Previously, the state value on the work item form was ordered alphabetically. With this update we changed how the state values are ordered to match the workflow order in the process settings.
+
+> [!div class="mx-imgBorder"]
+![Badge](_img/149_10.png)
+
+> [!NOTE]
+> The order change will only affect the form in the web and the REST APIs. The state value order will not be changed in clients using WIT Client OM such as Visual Studio 2017 or Excel.
+
+## Azure Pipelines
 
 ### Support for Azure PowerShell Az module
 
@@ -154,7 +166,15 @@ We improved the experience for teams who use GitHub pull request comments to tri
 > [!div class="mx-imgBorder"]
 ![Badge](_img/149_07.png)
 
-## Artifacts
+### Publish CTest and PHPUnit test results
+
+Previously, you could publish JUnit results from the publish test results task in Azure Pipelines. We’ve extended the **Test result format** to include publishing for [CTest]( https://cmake.org/cmake/help/latest/manual/ctest.1.html) and [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging). You can now use the test runner of your choice and get the results format you require. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
+
+> [!div class="mx-imgBorder"]
+![Badge](_img/149_11.png)
+
+
+## Azure Artifacts
 
 ### Upstream sources for Maven
 
