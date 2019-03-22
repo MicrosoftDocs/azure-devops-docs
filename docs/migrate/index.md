@@ -13,7 +13,7 @@ author: kaelli
 
 # Migration & Import
 
-[!INCLUDE [ ](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
 To migrate from an Azure DevOps on-premises deployment to Azure DevOps Services, review the articles provided in this migration guide.   
 

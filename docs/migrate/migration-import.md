@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Import
 
-[!INCLUDE [ ](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
 > [!Note]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
