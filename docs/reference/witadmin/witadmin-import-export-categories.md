@@ -27,7 +27,7 @@ To learn about the default categories and how they are used, see [Use categories
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]
   
- **Requirements**  
+## Prerequisites   
   
 For the project for which the categories are defined, you must have the following permissions set:   
 -   To export categories of work item types, you must have your **View project-level information** permission set to **Allow**.   
@@ -54,7 +54,8 @@ witadmin importcategories /collection:CollectionURL /p:Project /f:FileName [/e:E
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
   
 ## Remarks  
- Importing a categories file creates the categories if they do not already exist. If categories already exist, the **witadmin importcategories** command will warn you that the current list will be overwritten. You can write your own program to update an existing set of categories, or you can update the categories yourself with new data.  
+
+Importing a categories file creates the categories if they do not already exist. If categories already exist, the **witadmin importcategories** command will warn you that the current list will be overwritten. You can write your own program to update an existing set of categories, or you can update the categories yourself with new data.  
   
 > [!IMPORTANT]  
 >  Changes you make to categories can impact process configuration. See [ProcessConfiguration XML elements](../xml/process-configuration-xml-element.md).  
@@ -62,22 +63,25 @@ witadmin importcategories /collection:CollectionURL /p:Project /f:FileName [/e:E
  For information about the categories XML file structure, see [Categories XML element reference](../xml/categories-xml-element-reference.md).  
   
 ## Examples  
- Unless otherwise specified, the following values apply in each example:  
+
+Unless otherwise specified, the following values apply in each example:  
   
--   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
--   Project name: AdventureWorks    
--   Input or output file name: myCategories.xml   
--   Default encoding: UTF-8  
+- URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
+- Project name: AdventureWorks    
+- Input or output file name: myCategories.xml   
+- Default encoding: UTF-8  
   
 ### List categories  
- The following command lists the work item type categories defined for the AdventureWorks project.  
+
+The following command lists the work item type categories defined for the AdventureWorks project.  
   
 ```  
 witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks   
 ```  
   
 ### Add a category to the Hidden Types categories  
- You add a category to the Hidden Types categories to remove support for users to create work item types in that category.  
+
+You add a category to the Hidden Types categories to remove support for users to create work item types in that category.  
   
 1.  Export the definition file for categories for your project.  
   

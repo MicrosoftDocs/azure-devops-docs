@@ -28,7 +28,7 @@ You manage the link types defined for a project collection by using the followin
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
 
- **Requirements**  
+## Prerequisites  
   
  For the project collection where the link types are defined, you must have the following permissions set:  
   
