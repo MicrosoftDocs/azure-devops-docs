@@ -20,11 +20,14 @@ ms.topic: include
 
 1. Each agent automatically updates itself when it runs a task that requires a newer version of the agent. But if you want to manually update some agents, right-click the pool, and then choose **Update all agents**.
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 ### Can I update my v2 agents that are part of an Azure DevOps Server pool?
 
-Yes. You can configure your Azure DevOps Server to look for the agent package files on a local disk, overriding the default version that came with the server (at the time of its release). This scenario also applies when the server does not have access to the Internet.
+Yes.
+Beginning with Azure DevOps Server 2019, you can configure your the server to look for the agent package files on a local disk.
+This will override the default version that came with the server at the time of its release.
+This scenario also applies when the server does not have access to the Internet.
 
 0. From a computer with Internet access, download the latest version of the agent package files (in .zip or .tar.gz form) from the [Azure Pipelines Agent GitHub Releases page](https://github.com/Microsoft/azure-pipelines-agent/releases).
 
