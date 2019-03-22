@@ -168,11 +168,12 @@ We improved the experience for teams who use GitHub pull request comments to tri
 
 ### Publish CTest and PHPUnit test results
 
-Previously, you could publish JUnit results from the publish test results task in Azure Pipelines. We’ve extended the **Test result format** to include publishing for [CTest]( https://cmake.org/cmake/help/latest/manual/ctest.1.html) and [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging). You can now use the test runner of your choice and get the results format you require. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
+With this update, we’ve added support to publish test results from a [CTest]( https://cmake.org/cmake/help/latest/manual/ctest.1.html) run in pipelines. To publish CTest results, select the CTest option in the **Test result format** input of the publish test results tab.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/149_11.png)
 
+In addition, we included publishing for [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
 
 ## Azure Artifacts
 
