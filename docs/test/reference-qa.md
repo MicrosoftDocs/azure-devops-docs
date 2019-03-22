@@ -375,7 +375,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ### Q: Can I opt out of telemetry for the Test Runner client? 
 
 **A:** No. The Test Runner desktop client does not collect any user-identifiable data and so,
-in adherance to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+in adherence to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
 no opt-out mechanism is provided. 
 
 <a name="runoffline"></a>
