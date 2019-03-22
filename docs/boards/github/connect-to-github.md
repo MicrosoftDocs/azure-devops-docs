@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 03/05/2019
+ms.date: 03/23/2019
 ---
 
 # Connect Azure Boards to GitHub  
@@ -45,12 +45,20 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
 * You must be an administrator of the GitHub Enterprise Server you'll be connecting to. 
-* You must decide the credentials you want to use to connect to your GitHub Enterprise Server. 
-	- **OAuth**. This is the recommended authentication method. 
-	- **Personal access token**. 
-	- **User account and password**. 
 
 ::: moniker-end
+
+
+## Authentication options
+
+Depending on the platform you work from to connect to GitHub, you have a choice of the credentials you use. The recommended authentication method in all instances is <strong>OAuth</strong>.
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |Platform  | GitHub | GitHub Enterprise Server |
+> |-------------|----------|---------|   
+> | Azure DevOps Services | OAuth (preferred, no registration steps)<br/>Personal access token (PAT) | OAuth (preferred, requires registration steps)<br/>PAT<br/>Username plus password | 
+> | AzDevOps Server 2019 | Not supported | OAuth (preferred, requires registration steps)<br/>PAT<br/>Username plus password |
+ 
 
 ::: moniker range="azure-devops"
 ## Add a GitHub connection and repository  
