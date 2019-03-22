@@ -31,10 +31,11 @@ To manage the process configuration for a project, use the **witadmin** command 
 
 [!INCLUDE [temp](../../_shared/process-editor.md)]
  
-**Requirements**  
-  
--   To export process configuration definitions, you must be a valid user of the project or collection.    
--   To import process configuration definitions, you must be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.  
+
+## Prerequisites  
+
+- To export process configuration definitions, you must be a valid user of the project or collection.    
+- To import process configuration definitions, you must be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.  
   
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
@@ -62,6 +63,7 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
  If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](../xml/update-a-team-project-manually-to-support-test-management.md).  
   
 ## Examples  
+
 The following values apply in each example:  
   
 -   URL for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
@@ -69,7 +71,8 @@ The following values apply in each example:
 -   Port number for the server website: 8080  
 
 <a name="quick_add"></a>   
-###  To add a field to the quick add panel  
+
+### To add a field to the quick add panel  
 
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.  
   
@@ -119,7 +122,9 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 6.  Refresh your backlog page to view the updated panel.  
   
 <a name="test_manager"></a> 
+
 ### Update metastate mappings to support Test Manager  
+
  If you customize the `WORKFLOW` section of the test plan or test suite, you must map the states to metastates.  
   
  In the following example, the test plan workflow has been updated to use the Design, Testing, and Signed Off states. To support backward compatibility, the `TestPlanWorkItems` is added to the `ProjectProcessConfiguration` section of the process configuration definition.  
@@ -193,33 +198,37 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 If you modify the test suite workflow, then you have to make a similar update if you want to map new states. You would add it within a `TestSuiteWorkItems` section.  See [ProcessConfiguration](../xml/process-configuration-xml-element.md).  
   
 ## Related articles
--  [Control XML element reference](../xml/control-xml-element-reference.md)   
--  [Change the work item form layout](../xml/change-work-item-form-layout.md)   
--  [Edit a WIT definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
+- [Configure features after an upgrade](../configure-features-after-upgrade.md) 
+- [Control XML element reference](../xml/control-xml-element-reference.md)  
+- [Change the work item form layout](../xml/change-work-item-form-layout.md)   
+- [Edit a WIT definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
 
 
 ## Q & A  
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
- **A:** You can customize the quick add panel. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+
+**A:** You can customize the quick add panel. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
   
- Other changes might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../customize-work.md).  
+Other changes might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../customize-work.md).  
   
 ### Q: When do I need to map workflow states to metastates?  
- **A:** When you add or remove workflow states to the following WITs, you should consider updating the process configuration to add or remove corresponding metastate mappings.  
+
+**A:** When you add or remove workflow states to the following WITs, you should consider updating the process configuration to add or remove corresponding metastate mappings.  
   
--   **WITs that belong to the Requirement Category or Task Category**: Metastate mappings support the display of the Agile planning tools.  
+- **WITs that belong to the Requirement Category or Task Category**: Metastate mappings support the display of the Agile planning tools.  
   
--   **WITs that belong to the Bug Category**: Metastate mappings to support **My Work** tool (Agile and CMMI-based projects).  
+- **WITs that belong to the Bug Category**: Metastate mappings to support **My Work** tool (Agile and CMMI-based projects).  
   
--   **Test Plan and Test Suite**: Updates to the workflow of these WITs must be mapped only when you support team members connecting to TFS from a version of Test Manager that is based on Visual Studio 2013.2 or earlier version.  
+- **Test Plan and Test Suite**: Updates to the workflow of these WITs must be mapped only when you support team members connecting to TFS from a version of Test Manager that is based on Visual Studio 2013.2 or earlier version.  
   
-     Update the metastate mappings if you receive an **Application detected an unexpected fault** error when you connect to your project.  
+	Update the metastate mappings if you receive an **Application detected an unexpected fault** error when you connect to your project.  
   
-     ![Application fault error message after TFS upgrade](_img/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
+	![Application fault error message after TFS upgrade](_img/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
   
 ### How do I resolve process configuration errors?  
- **A:**  When you make one of the following changes to a project, you'll need to update the definitions for the WIT, categories, or process configuration. To avoid errors, always make your changes in this order: (1) WITs, (2) categories, and (3) process configuration.
+
+**A:**  When you make one of the following changes to a project, you'll need to update the definitions for the WIT, categories, or process configuration. To avoid errors, always make your changes in this order: (1) WITs, (2) categories, and (3) process configuration.
 
 <table><tr><th><p>Customization</p></th><th><p>Update or verify the WIT definition</p></th><th scope="col"><p>Update or verify the process configuration definition</p></th>
 </tr>
@@ -240,8 +249,10 @@ name="Task" /&gt;</code></td></tr><tr><td data-th="Customization"><p>Change the 
 
  
 ### Q: Do you want to work with two or more portfolio backlogs?  
- **A:** The default experience supports one level of portfolio backlog. You can add up to five levels as described in [Add portfolio backlogs to Agile tools](../add-portfolio-backlogs.md).  
+
+**A:** The default experience supports one level of portfolio backlog. You can add up to five levels as described in [Add portfolio backlogs to Agile tools](../add-portfolio-backlogs.md).  
   
 ### Q: Do you want to add or change the WITs that appear on your task board or product backlog?  
- **A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).  
+
+**A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).  
 
