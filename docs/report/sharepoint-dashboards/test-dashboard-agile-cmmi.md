@@ -27,7 +27,7 @@ By using the test dashboard, you can monitor test activities, report on progress
   
 -   Plus requirements listed in [Project portal dashboards](project-portal-dashboards.md).  
   
-##  <a name="Data"></a> Data displayed in the dashboard  
+## <a name="Data"></a> Data displayed in the dashboard  
  You can use the test dashboard to understand how well the team is progressing in testing the user stories (Agile) or requirements (CMMI). The test dashboard, displays the following web parts.  
   
  **Agile process template version**  
@@ -50,7 +50,7 @@ By using the test dashboard, you can monitor test activities, report on progress
 |![9](_img/procguid_9.png "ProcGuid_9")|List of recent builds and their build status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
 |![10](_img/procguid_10.png "ProcGuid_10")|List of the most recent check-ins. You can view more details by choosing a specific check-in. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md)|  
   
-##  <a name="Activities"></a> Required activities to monitor test efforts  
+## <a name="Activities"></a> Required activities to monitor test efforts  
  For the reports in the test dashboard to be useful and accurate, the team must perform the following activities:  
   
 -   Define test cases and user stories or requirements, and create **Tested By** links from test cases to user stories or requirements.  
@@ -66,7 +66,7 @@ By using the test dashboard, you can monitor test activities, report on progress
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.  
   
-##  <a name="Progress"></a> Monitor test progress  
+## <a name="Progress"></a> Monitor test progress  
  You can use the first three reports in the Test Dashboard to monitor test progress and answer the questions in the following table.  
   
 |Report|Questions answered|Notes|  
@@ -75,7 +75,7 @@ By using the test dashboard, you can monitor test activities, report on progress
 |**Test Plan Progress**|-   How many test cases are passing?<br />-   How many test cases are failing?<br />-   How many test cases are blocked?<br />-   How many test cases have never run?<br />-   What percentage of test cases are passing across all Test Plans?<br />-   How much testing has the team completed?<br />-   Is the team likely to finish the testing on time?|-   As the development cycle progresses, the more test cases should pass, and fewer test cases should stay in other states.<br />-   Unhealthy progress occurs when too many test cases fail. Depending on where you are in the product cycle, you might investigate why so many test cases are failing.<br />-   If the number of test cases that are failing or never run is flat, you might want to investigate the specific causes that affect each area.|  
 |**User Story Test Status**<br /><br /> **Requirement Test Status**|-   Are test cases being run for each user story or requirement?<br />-   If test cases are blocked or not being run, does the team understand the blocking issues and are they being addressed?|-   Healthy progress shows most test cases for each user story or requirement are passing.<br />-   Unhealthy progress is indicated too many test cases for a specific user story or requirement, which are in a **Never Run**, **Blocked**, or **Failed** state. You might want to investigate the causes that keep the test cases that are defined for a user story or requirement  from passing.|  
   
-##  <a name="Gaps"></a> Determine gaps in testing  
+## <a name="Gaps"></a> Determine gaps in testing  
  You can use the **User Story Test Status** or **Requirement Test Status** report to determine whether tests are covering all the code and to answer the following questions:  
   
 -   Which user stories or requirements have a low overall count of test cases?  
@@ -88,7 +88,7 @@ By using the test dashboard, you can monitor test activities, report on progress
   
 -   What is the average number of test cases that are defined for each user story or requirement?  
   
-##  <a name="Trends"></a> Monitor test failures and regressions  
+## <a name="Trends"></a> Monitor test failures and regressions  
  By monitoring test failures, you can identify and address problems in the code early. You can use the last two reports in the Test Dashboard to gain better insight into the number of tests that are failing.  
   
 |Report|Questions answered|Notes|  

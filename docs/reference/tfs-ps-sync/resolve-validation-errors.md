@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 72c1dd06-a3a1-499c-b2a3-4d7f884033fd
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
@@ -38,8 +39,8 @@ When you publish an enterprise project plan that is mapped to a project, the Tea
 -   When a field that is required to support data synchronization is not defined in Project Server, you must contact your administrator to correct the field mapping file. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md).  
   
 -   When the resource pool does not contain any valid contributors for the project that is mapped, you must add these users to the resource pool. For more information, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
-  
-##  <a name="ResolveDataValidationError"></a> Resolving a Data Validation Error  
+ # <
+## <a name="ResolveDataValidationError"></a> Resolving a Data Validation Error  
  You can use the **Validation Resolution** dialog box to resolve the data validation errors that appear in the **Unpublished work items** list.  
   
 #### To correct an invalid work item type  

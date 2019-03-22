@@ -7,7 +7,8 @@ ms.topic: reference
 description: Use the Test Plan Progress report to track the team's progress in testing the product 
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -29,7 +30,7 @@ After the team creates test plans and starts to run tests by using the test mana
   
 -   The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
   
-##  <a name="Data"></a> Data in the Report  
+## <a name="Data"></a> Data in the Report  
  The data that appears in the Test Plan Progress report is derived from the data warehouse and the test results that are generated when tests are run by using Microsoft Test Manager. The report presents an area graph that shows the most recent result of running any test in the specified test plans over time. For more information, see [Run your tests](../../test/run-manual-tests.md).  
   
  The following illustration shows an example of a Test Plan Progress report:  
@@ -71,7 +72,7 @@ After the team creates test plans and starts to run tests by using the test mana
   
 -   To support filtering, assign **Iteration** and **Area** paths to test cases.  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+## <a name="Interpreting"></a> Interpreting the Report  
  You can track how many test plans have been run and how many are failing. The Test Plan Progress report displays the cumulative value of all test plans, grouped by result status.  
   
 ### Questions Answered by the Report  
@@ -107,7 +108,7 @@ After the team creates test plans and starts to run tests by using the test mana
   
      ![Unhealthy version of the Test Plan Progress](_img/procguid_testplanprogress_unhealthy.png "ProcGuid_TestPlanProgress_Unhealthy")  
   
-##  <a name="Changing"></a> Filtering the Report  
+## <a name="Changing"></a> Filtering the Report  
  You can filter the Test Plan Progress report to show only those test cases that are defined for the iteration, product areas, test plans, or test plan states that you specify. The following illustration shows the available filters:  
   
  ![Filters for Test Plan Progress report](_img/procguid_planprogressfilters.png "ProcGuid_PlanProgressFilters")  

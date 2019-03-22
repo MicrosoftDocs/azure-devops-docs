@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
-#  Sprints and Scrum key concepts
+# Sprints and Scrum key concepts
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 235eaf03-7012-4c7d-8b16-138f3467a168
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 02/24/2017
 ---
@@ -20,7 +21,7 @@ ms.date: 02/24/2017
 When you add a task group or a task to a plug-in file, you must add them in the correct sequence and declare any dependencies that the group or task has on the successful completion of other task groups or tasks. A task can depend on other tasks, requiring other tasks to complete before primary task can run. For example, the task to create work item queries cannot run until all the tasks to create work item types have successfully completed. Therefore, the task to upload work item queries depends on the task to upload the types of work items.  
   
 <a name="required"></a> 
-##  Required plug-ins and plug-in dependencies  
+## Required plug-ins and plug-in dependencies  
 
 The following illustration shows the dependent relationships that are defined for the Team Foundation Server (TFS) [process templates](../../boards/work-items/guidance/choose-process.md). As the illustration shows, the plug-in for Work Item Tracking depends on the successful completion of the plug-in for Groups and Permissions, which depends on the successful completion of the plug-in for Classifications. The plug-ins for both Test Management and Version Control depend on the completion of the first three plug-ins. The plug-ins for Build, Lab, Reports, and Portal depend on the completion of the plug-in for Version Control.  
   
@@ -70,8 +71,8 @@ The following table describes the elements that you use to define task group dep
 |**dependencies**|Required child element of **group**. Specifies the other groups on which a group depends.<br />`<dependencies>`<br />      `<dependency>. . . </dependency>`<br />`</dependencies>`|  
 |**dependency**|Optional child element of **dependencies**. Specifies the ID of another task group on which this group depends. The other group must complete its tasks before this task group can start.<br /> `<dependency groupId="groupId" />`| 
   
-<a name="task"></a> 
-##  Defining task dependencies  
+<# Dme="task"></a> 
+## Defining task dependencies  
  The following example shows how to use the **dependency** element to specify that the WorkItems task depends on the task with an ID of "WITs."  
   
 > [!div class="tabbedCodeSnippets"]

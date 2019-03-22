@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 
-#  Extend Analytics with OData (Preview) 
+# Extend Analytics with OData (Preview) 
 
 [!INCLUDE [temp](../../_shared/version-azure-devops.md)]
 

@@ -5,7 +5,8 @@ description: Define the initial set of shared queries and query folder structure
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 74f21c5c-76a0-4b0f-9cdf-d599f7a08eeb
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 02/24/2017
@@ -30,7 +31,7 @@ By adding work item queries to your process template, you can define the initial
  For information about how to assign query permissions to groups, see [Control access to functional areas](control-access-to-functional-areas.md). For information about how to create query folders, see [Define objects for tracking work items](define-objects-track-work-items-plug-in.md).  
   
 <a name="create"></a> 
-##  Create a work item query (.wiq) file 
+## Create a work item query (.wiq) file 
  Each query definition must be specified in its own file with an extension of .wiq, using the **WorkItemQuery** parent element, and conform to the schema that is defined in the wiq.xsd file.   
   
  The following example shows the high-level syntax structure that defines a work item query:  
@@ -49,7 +50,7 @@ By adding work item queries to your process template, you can define the initial
  For more information about how to create a work item query to add to a process template, see [Define a work item query](define-work-item-query-process-template.md).  
   
 <a name="upload"></a>   
-##  Specify queries to upload  
+## Specify queries to upload  
  To include the work item queries in the process template, create one or more tasks in the workitems.xml file, which you can find in the \WorkItem Tracking folder, which is in the folder to which you downloaded your process template. Use the **Query** element to specify the file for the work item query. For example, the following XML specifies the query that is defined in the ActiveBugs.wiq file to be uploaded and named Active Bugs.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -80,8 +81,8 @@ By adding work item queries to your process template, you can define the initial
   
  For more information, see [Define objects for tracking work items](define-objects-track-work-items-plug-in.md).  
   
-<a name="elements"></a>   
-##  QUERY elements  
+<# Qme="elements"></a>   
+## QUERY elements  
  The following syntax shows the structure of the **QUERIES** element and its child elements.  
   
 > [!div class="tabbedCodeSnippets"]

@@ -94,7 +94,7 @@ When you create a package in continuous integration (CI), you can use Semantic V
 
 * Use a script in your build pipeline to generate the version.
 
-#  [YAML](#tab/yaml)
+# [YAML](#tab/yaml)
 
 ::: moniker range=">= azure-devops-2019"
 This example shows how to use the date and time as the prerelease label.
@@ -142,7 +142,7 @@ When you’re producing a package in a build, you can’t know whether it will b
 
 In the previous section, you learned how to create a package with every build. When you're ready to share the changes to your package with your users, you can publish it.
 
-#  [YAML](#tab/yaml)
+# [YAML](#tab/yaml)
 
 ::: moniker range=">= azure-devops-2019"
 To publish to an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed. To learn more about permissions to Package Management feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions). Add the following snippet to your `azure-pipelines.yml` file.

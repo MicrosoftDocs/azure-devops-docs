@@ -25,7 +25,7 @@ ms.date: 02/24/2017
 -   To save a query as a team query, you must have the appropriate permissions described in [Set permissions on queries](../../boards/queries/set-query-permissions.md).  
   
 <a name="create"></a> 
-##  Save a work item query as a .wiq file  
+## Save a work item query as a .wiq file  
   
 1.  In Team Explorer, open the query that you want to save.   
 2.  On the **File** menu, choose **Save \<name of query> [Query] As**.    
@@ -47,7 +47,7 @@ ms.date: 02/24/2017
   
 
 <a name="path"></a> 
-##  Create a work item query that references an iteration path  
+## Create a work item query that references an iteration path  
  You can define a query that references a specific iteration path by including the macro for the project, $$PROJECTNAME$$, and the name of an iteration path that is defined in the Classification plug-in file. For example, the following syntax specifies a query that includes only those work items whose iteration path is under Iteration 1.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -62,7 +62,7 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
  When you upload iteration-specific queries, the task to process the Classification.xml file must complete before the task to process the query files. For more information, see [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md) and [Define the root tasks](define-root-tasks-process-template-plug-in.md).  
   
 <a name="iterationspecific"></a> 
-###  Example of an iteration-specific work item query  
+### Example of an iteration-specific work item query  
  The following example shows the Iteration1Backlog work item query, which supports the Iteration Backlog workbook. For details on WIQL, see [Work Item Query Language](../../boards/queries/wiql-syntax.md).
   
 > [!div class="tabbedCodeSnippets"]

@@ -66,7 +66,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 For an example of a task that specifies a simple project portal, see the WssTasks.xml file in one of the default process templates. You can [download the latest process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
 <a name="SiteTemplate"></a> 
-##  Create the site and specify the site template  
+## Create the site and specify the site template  
  You must specify a site template on which the project portal is based. The site template also must be available on the Team Foundation Server SharePoint portal. Site templates are not included in the process template.  
   
  Specify the site template using the site element.  
@@ -111,7 +111,7 @@ The following example shows how to reference the English version of the Agile pr
  If you have a large collection of files that are shared amongst multiple projects, you can use an alternate Web site to host the files and link to the files from the project portal or Web pages. This strategy also increases performance when creating projects since the files do not need to be copied to the project portal. For more information, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
   
 <a name="DocLibraries"></a> 
-##  Create document libraries  
+## Create document libraries  
  After the project portal is created, you can specify that additional document libraries be created. Use the **documentLibrary** element to specify a document library.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -144,7 +144,7 @@ The following example shows how to reference the English version of the Agile pr
 ```  
   
 <a name="Folders"></a> 
-##  Create the folder structure of a document library  
+## Create the folder structure of a document library  
  After the project portal is created, you can specify additional folders to create. You can also specify files to copy such as template files.  
   
  Use the **folder** element to create a new folder.  
@@ -174,7 +174,7 @@ The following example shows how to reference the English version of the Agile pr
 ```  
   
 <a name="Files"></a> 
-##  Specify files to upload to document libraries  
+## Specify files to upload to document libraries  
  You must also copy files into document libraries and folders. The source files are located under the Windows SharePoint Services folder. You must specify a target on the project portal.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -241,7 +241,7 @@ To support access to process guidance from the work item forms in Team Explorer,
 You can customize these files to point to other resources for process guidance. You can also add files to support access to other process guidance that you have created for your team. For more information, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
   
 <a name="Activate"></a> 
-##  Activating dashboard features  
+## Activating dashboard features  
 Dashboards show project data, support investigation, and help teams quickly perform common tasks. Dashboards display several Excel reports and Team Web Access Web parts.  
   
 You use the **activateFeatures** element to cause the creation of the dashboards and Excel reports. You must include the following code in the portal plug-in file, within the **Portal** element, to activate the creation of the dashboards and Excel reports for a project.  

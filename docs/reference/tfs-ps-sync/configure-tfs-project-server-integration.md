@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 809f7eb3-f336-4f7d-b7a8-2b67366f3915
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/12/2017
 ---
 
@@ -37,8 +38,8 @@ Configuring the Integration of Team Foundation Server and Project Server
 -   To grant SSP permissions: the **Farm Administrators** group, the administrators group for the Web application that supports Project Server, or the **SharePoint Administration** group. Group membership will depend on the security architecture of your deployment.  
   
 -   To use `stsadm.exe`: you must be an administrator on the local computer.  
-  
-##  <a name="CollectInformation"></a> Collect information  
+ # <
+## <a name="CollectInformation"></a> Collect information  
  The following table summarizes the information that you need to configure synchronization of data in enterprise project plans with projects.  
   
 |Parameter or information|Example|Notes|  
@@ -54,15 +55,15 @@ Configuring the Integration of Team Foundation Server and Project Server
 |(Optional) Additional fields to synchronize.|For example, you can add fields such a cost center, team name, or health status.|By default, the following seven fields in Team Foundation are synchronized:<br /><br /> 1.  Title<br />2.  Assigned To<br />3.  Completed Work<br />4.  Remaining Work<br />5.  Original Estimate<br />6.  Start Date<br />7.  Finish Date<br /><br /> Only mapped fields are synchronized. To synchronize additional fields, you must customize the field mappings.  For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).|  
 |Accounts to grant administrative permissions|Names of administrators who will synchronize data from their plans with data in projects|You must grant **Administer Project Server integration** permissions to administrators who will use the `TFSAdmin` command-line tool to manage the mappings of enterprise project plans to projects.|  
 |Team Foundation users|User names or security distribution groups|You must add members of projects who are assigned to tasks in Team Foundation to the enterprise resource pool and to the resource pool of each enterprise project plan. You must also grant these users permission to sign in to Project Server.|  
-  
-###  <a name="DeterminePWAURL"></a>  
-  
-##  <a name="GrantPermissions"></a> Grant permissions  
+  # <
+### <a name="DeterminePWAURL"></a>  
+ # <
+## <a name="GrantPermissions"></a> Grant permissions  
  After you have installed the Team Foundation Server Extensions for Project Server, you must grant permissions to service accounts and user accounts.  
   
 -   See [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
-  
-##  <a name="RegisteringPWA"></a> Register an instance of PWA  
+ # <
+## <a name="RegisteringPWA"></a> Register an instance of PWA  
   
 > [!IMPORTANT]
 >  If you are integrating Team Foundation Server with Project Server 2010, make sure that you have first installed all cumulative updates and then run the SharePoint Configuration Wizard. If you skip these steps, the integration between Team Foundation Server and Project Server 2010 will fail. For more information, see [Prerequisite software](configuration-quick-reference.md#prerequisites).  
@@ -96,8 +97,8 @@ Configuring the Integration of Team Foundation Server and Project Server
      **You have successfully registered PWA** *pwaUrl*.  
   
 3.  Repeat step 2 for each instance of PWA that supports enterprise project plans that you want to synchronize with Team Foundation.  
-  
-##  <a name="MapCollection"></a> Map a project collection to an instance of PWA  
+ # <
+## <a name="MapCollection"></a> Map a project collection to an instance of PWA  
  As the second step in configuring integration, you must map each instance of PWA that supports an enterprise project plan. You should map all instances of PWA that are used by enterprise projects that must synchronize data with projects.  
   
 #### To map an instance of PWA to a project collection  
@@ -115,8 +116,8 @@ Configuring the Integration of Team Foundation Server and Project Server
      **Mapping project collection** *tpcUrl* **to PWA** *pwaUrl*.  
   
      **You have successfully mapped project collection** *tpcUrl* **to PWA** *pwaUrl*.  
-  
-##  <a name="FieldMapping"></a> Map TFS fields to Project Server fields  
+ # <
+## <a name="FieldMapping"></a> Map TFS fields to Project Server fields  
  You must map fields for each project collection that you have mapped to an instance of PWA. You can use the default mappings, or you can customize and upload a mapping file. For more information about the default mappings, see [Field mapping reference](field-mapping-xml-element-reference.md).  
   
  You can define additional fields whose data you want to synchronize. You can add Project fields to data that Team Foundation stores, and you can add Team Foundation fields to data that Project Server stores and displays in an enterprise project plan.  
@@ -152,8 +153,8 @@ Configuring the Integration of Team Foundation Server and Project Server
      For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md).  
   
 4.  (Optional) Add a column to display the fields in the enterprise project plan.  
-  
-##  <a name="EnterpriseProject"></a> Associate an enterprise project with a project  
+ # <
+## <a name="EnterpriseProject"></a> Associate an enterprise project with a project  
  As the third step in configuring integration, you must map each enterprise project to the project that contains data that you want to synchronize. As the following illustration shows, you can associate multiple enterprise projects with the same project.  
   
  ![Associate enterprise projects with a project](_img/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
@@ -182,8 +183,8 @@ Configuring the Integration of Team Foundation Server and Project Server
   
 > [!NOTE]
 >  After you map your enterprise project plan with a project, you can change the types of work items that are mapped. For more information, see [Specify work item types](specify-wits-to-synchronize.md).  
-  
-##  <a name="ResourcePool"></a> Add Team Foundation users to the enterprise resource pool  
+ # <
+## <a name="ResourcePool"></a> Add Team Foundation users to the enterprise resource pool  
  To assign and manage Team Foundation users as resources in Project, you must add them to the enterprise resource pool. To make this process easier, you can configure PWA to automatically synchronize the security groups with groups of the same name in Active Directory. Also, you can synchronize users and resources in Project Server with the users in Active Directory across multiple domains and forests.  
   
 #### For information about how to add users to the enterprise resource pool, see the following pages on the Microsoft website:  

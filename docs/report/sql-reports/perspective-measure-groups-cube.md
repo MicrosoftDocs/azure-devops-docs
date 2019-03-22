@@ -7,7 +7,8 @@ ms.topic: reference
 description: Generate reports of aggregated information about the data stored in team project collections
 ms.assetid: 9ab451df-ce11-4fc9-9aac-bedd154ba0d4
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -23,7 +24,7 @@ By using the SQL Server Analysis Services cube for Visual Studio Team Foundation
   
   
 <a name="perspectives"></a> 
-##  Perspectives and measure groups  
+## Perspectives and measure groups  
  The following table describes the measure groups, which are grouped according to their cube perspective. The Team System cube contains all measure groups in addition to the ones that are listed as belonging just to the Team System perspective. Most measure groups contain one or more cumulative counts. You can use cumulative counts to generate trend reports. In some cases, the name for a cumulative count has a trend label (for example, Build Result Count Trend and Point Count Trend).  
   
 > [!NOTE]  
@@ -37,15 +38,15 @@ By using the SQL Server Analysis Services cube for Visual Studio Team Foundation
 |![Test Measure Group](_img/rpt_testmg.png "RPT_TestMG")|[Test results](perspective-test-analyze-report-test-results.md)<br /><br /> Provides metrics about test runs and test results. Test results are tracked over time and can be analyzed by their outcome, the build they were testing, the type of test, and other dimensions. By using the Test perspective, you can create reports that answer the following questions:<br /><br /> -   What is the status of testing of specific user stories or product areas?<br />-   What is the quality of builds based on the number of failed and passed tests?<br />-   How many test cases have never been run?<br />-   Which test cases have never been run?|  
 |![Work Item Measure Group](_img/rpt_wit_mg.png "RPT_WIT_MG")|[Test cases and work items](perspective-test-analyze-report-work.md)<br /><br /> Provides metrics and detailed information about work items, including historical information that enables total work item counts to be analyzed over time or as of a current date. You can use this measure group to answer the following types of questions:<br /><br /> -   What was the total count of active bugs each day in the last iteration?<br />-   How many scenarios were active each month during the last year?<br />-   How many bugs of each priority have been active each day in the last month?|  
 |![Analysis Services Data Cube Measure Groups](_img/rpt_measuregroups.png "RPT_MeasureGroups")|Provides all metrics for all measure groups that appear previously in this table.|  
-  
-##  <a name="combo"></a> Combining dimensions and measures  
+ # <
+## <a name="combo"></a> Combining dimensions and measures  
  Not all combinations of dimensions and measures will produce useful results. For you to get meaningful results, the measures must relate to the dimensions in your reports. To determine which dimensions relate to a specific measure, you can check the fact tables in the data warehouse by using SQL Server Management Studio.  
   
  If you are using Excel, you can use the **Show fields related to** box to specify a group of measures and dimensions that cover a specific section of the cube. By working within a single set of related fields, you can find data more easily because not all fields in the cube appear, and you are much more likely to get useful numbers.  
   
  You can combine measures from different groups of fields as long as the measures have a common set of dimensions that are used in the report. The Date dimension, for example, appears in multiple groups of fields. Therefore, you could combine the Remaining Work or Completed Work data with test result counts for a day or days that you specify because both these sets of measures have Date as a related dimension.  
-  
-##  <a name="cubeterms"></a> Cube terms and definitions  
+ # <
+## <a name="cubeterms"></a> Cube terms and definitions  
  A cube represents a set of measures that are grouped into measure groups and hierarchically organized by dimensions. The cube is constructed from data retrieved from relational database. The following illustration shows the relationship that exists between different aspects of the cube.  
   
  ![Cube relationships](_img/rpt_cube_definitions.png "RPT_Cube_Definitions")  

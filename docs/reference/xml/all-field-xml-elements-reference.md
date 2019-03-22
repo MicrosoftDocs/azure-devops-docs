@@ -5,7 +5,8 @@ description: Index to XML syntax elements for the FIELD element for Team Foundat
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 552c2ada-2186-4b89-848c-34f54dfe0823
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 06/16/2017
@@ -20,8 +21,8 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
  You specify these elements in the **FIELD** (Definition) element container. You add a field for a work item type (WIT) by specifying a **FIELD** (Definition) element within the **FIELDS** (Definition) element. You can specify these elements within the definition of a WIT or as part of a global workflow.  
   
  You can add child elements to specify the behavior of a field, define default values, or define a pick list of values. You can use field rule elements in combination with each other. You can scope most rules to apply to one or more users or groups or to be ignored for one or more users or groups.  
-  
-##  <a name="FIELD"></a> FIELD (Definition) container element  
+ # <
+## <a name="FIELD"></a> FIELD (Definition) container element  
  You use the following syntax to define the data fields for a type of work item. This example shows the format of the **FIELD** (Definition) element and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
 
 > [!NOTE]    
@@ -56,7 +57,7 @@ reportable="Dimension | Detail | Measure" formula="avg" >
 ```
   
 <a name="CHILDElements"></a>   
-##  FIELD child elements  
+## FIELD child elements  
 Use child elements to set various restrictions on what data can be entered into a field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. The following table provides the syntax structure for each child element.  
   
 To learn how to use these elements, see [Apply a field rule](apply-rule-work-item-field.md).  Restrictions exist on applying most rules to system fields. All child elements are optional.  

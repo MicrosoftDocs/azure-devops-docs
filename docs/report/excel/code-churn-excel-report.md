@@ -29,7 +29,7 @@ With the Code Churn report, you can analyze how source files are changing over t
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Report  
+## <a name="Data"></a> Data in the Report  
  The team can review the Code Churn report to determine how volatile the code base is and how many lines of code were modified in the previous week. As the following illustration shows, the report provides a stacked area graph of the lines of code that the team added, deleted, or modified in the most recent four weeks.  
   
  ![Code Churn Report](_img/procguid_codechurn.png)  
@@ -62,7 +62,7 @@ With the Code Churn report, you can analyze how source files are changing over t
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+## <a name="Interpreting"></a> Interpreting the Report  
  Code churn is a good measure to quantify the amount of change that is occurring in your project. In general, high levels of code churn indicate a less stable project. You should expect high rates of code churn at the start of a product cycle or when the team has implemented many changes. Toward the end of an iteration or before a release, you should expect the level of code churn to decrease, which indicates that your project is more stable.  
   
  You can review the Code Churn report to answer these questions:  
@@ -75,7 +75,7 @@ With the Code Churn report, you can analyze how source files are changing over t
   
  For more information about how code churn affects quality, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).  
   
-##  <a name="Updating"></a> Customizing the Report  
+## <a name="Updating"></a> Customizing the Report  
  You can customize the Code Churn report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can modify the report to support other views as the following table describes.  
   
 |View|Action|  

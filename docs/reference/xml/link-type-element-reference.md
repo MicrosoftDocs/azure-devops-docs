@@ -37,7 +37,7 @@ You may want to modify or create a link type for one of the following reasons:
 The link type is specified in a type definition XML file that you import to a project collection. To customize or create a link type, use **witadmin importlinktype** to import the link type definition file to the project collection that hosts your project. With the **witadmin** command-line tool, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](../witadmin/manage-link-types.md).   
 
 <a name="SyntaxStructure"></a>   
-##  Syntax structure  
+## Syntax structure  
 You can define additional link types by adding them to the link types that are defined for a project collection. 
 
 You can define valid link types for use in your process based on the structure that the link type definition schema provides. A link type is defined by the following XML syntax in the link types XML file.  

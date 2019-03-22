@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: af1b9f73-b930-49b6-b6f2-68d691b152aa
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 09/08/2017
 ---
@@ -20,7 +21,7 @@ ms.date: 09/08/2017
 You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in. A task specifies work that must occur to configure something specific to the process in a new project. A number of the tasks that you define upload the work item types, work item queries, documents, and reports for a project. Other tasks that you can define configure other areas of Visual Studio Application Lifecycle Management, such as Team Foundation Build, Visual Studio Lab Management, Test Manager, and Team Foundation version control.    
  
 <a name="syntax"></a>  
-##  Tasks Syntax Structure  
+## Tasks Syntax Structure  
  You can specify several tasks within a plug-in, and these tasks may have dependencies on one another. The tasks that you define for each plug-in must conform to the schema definition for **tasks**, defined in the Tasks.xsd file, and be specified in its own file using the **tasks** container element.  
   
  The following syntax shows the high-level structure of the **tasks** element and its child elements.  
@@ -42,7 +43,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
 
 <a name="elements"></a> 
   
-##  Tasks element reference  
+## Tasks element reference  
  The following table describes each element that can define the tasks for a plug-in.  
   
   
@@ -123,7 +124,7 @@ completionDescription="InProcessMessage"&gt;
   
 
 <a name="index"></a> 
-##  Index to taskXML Elements by Function  
+## Index to taskXML Elements by Function  
  For more information about the specifics of the XML markup elements that you can specify for each plug-in, see one of the following topics:  
   
 -   Build: [Define the initial configuration of Team Foundation Build](define-initial-configuration-build.md)   
@@ -137,8 +138,8 @@ completionDescription="InProcessMessage"&gt;
 -   Work Item Tracking: [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)  
  
   
-<a name="example"></a> 
-##  Example: Define work item types  
+<# Eme="example"></a> 
+## Example: Define work item types  
  The following example shows a task that creates six types of work items by referencing the definition files for each type.  
   
 > [!div class="tabbedCodeSnippets"]

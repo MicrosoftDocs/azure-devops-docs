@@ -5,7 +5,8 @@ description: Work with resource rollup in enterprise projects when synchronizing
 ms.technology: devops-agile
 ms.assetid: 72efdffb-ea99-4b89-b681-53bc1dcb2ac9
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -20,8 +21,8 @@ ms.date: 01/12/2017
   
  Because the two server products track work differently, you should become familiar with how data is stored and what happens when it is modified.  
  
-  
-##  <a name="Scenarios"></a> Supported and Unsupported Scenarios  
+ # <
+## <a name="Scenarios"></a> Supported and Unsupported Scenarios  
  By using resource rollup, project managers can perform the following operations:  
   
 -   View resource allocation and work that development teams estimate.  
@@ -37,8 +38,8 @@ ms.date: 01/12/2017
 -   Billing work based on the number of hours that a team member worked per day. Team Foundation reports the total number of hours worked per team member per task but not how many hours each team member worked per day. To provide accurate week-by-week reporting of hours worked, team members should track this by using the timesheets in Project Server.  
   
 -   Tracking work per resource based on work items that are successively assigned to multiple team members.  When team members reassign a work item with actual work, Team Foundation credits the person to whom the item is assigned currently with all work that has been completed so far. To track accurately the work that each team member performed, you must create separate tasks for each team member.  
-  
-##  <a name="ViewingAvailability"></a> Viewing Resource Availability  
+ # <
+## <a name="ViewingAvailability"></a> Viewing Resource Availability  
  Because Team Foundation supports resource rollup, you can view the Assignment Work by Resource report as the following illustration shows. You can access this report from the instance of PWA. For more information, see the following page on the Microsoft website: [View resource workloads and availability](http://go.microsoft.com/fwlink/?LinkId=207284).  
   
  ![Assignment of work by resource in PWA](_img/ps-tfs_pwa_asswrkavailability.png "PS-TFS_PWA_AssWrkAvailability")  
@@ -62,8 +63,8 @@ ms.date: 01/12/2017
  Project Server can store resource rollup information from Team Foundation only for valid resources. For a resource to be valid, the user name must be added to the enterprise resource pool and the project resource pool, and the required permissions to submit status updates in Project Server must have been granted to the user.  
   
  When a rollup task is submitted that contains a child task whose assigned user is an invalid resource, the work for the invalid resource is allocated to the primary owner or active resource for the summary task. Status errors about assignments for unmapped child work items are logged to the parent work item. To resolve these reallocations, you must find the tasks that contain a failed submit status and resolve the issue. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
-  
-##  <a name="RollupCalculations"></a> Rollup Information from Team Foundation  
+ # <
+## <a name="RollupCalculations"></a> Rollup Information from Team Foundation  
  Rollup is calculated for mapped work items that contain child tasks. Mapped work items have the **Submit to Project Server** field set to **Yes**. The **Remaining Work** and **Completed Work** fields of parent tasks contain the sum of the values of these work-item fields defined for their child tasks. In addition, the synchronization engine provides a rollup of all resources that are assigned to all child tasks and their related work. The engine also stores this information in the Project Server Assignment Data field.  
   
 > [!NOTE]

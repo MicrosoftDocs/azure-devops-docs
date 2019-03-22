@@ -144,7 +144,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 ![Sample test plan progress report](../admin/_img/IC665012.png)  
 
   
-##  <a name="Accessing"></a> Open a report  
+## <a name="Accessing"></a> Open a report  
  You can open a report from Team Explorer, your team project portal, or any team home page in the web access portal.  
   
  Open the report site from the **Reports** page in Team Explorer.  
@@ -166,7 +166,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 >To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
 
 <a name="Refreshing"></a>   
-##  Refreshing a report  
+## Refreshing a report  
  All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The WIT data store is updated in real-time as team members create and modify work items. Incremental updates are then written to the relational warehouse database every two minutes and the OLAP cube every two hours. To change these settings, see [Change the Data Warehouse Refresh Frequency](../admin/change-a-process-control-setting.md).  
   
  The following table describes how you can refresh the report.  
@@ -177,7 +177,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 |![Refresh report](_img/procguid_refresh_icon.png "ProcGuid_Refresh_Icon")|Causes the server that is running Reporting Services to rerun the query and update report data if the report runs on-demand. If the report is cached or a snapshot, the report that is stored in the report server database appears.|  
 |CTRL+F5 keyboard combination|Produces the same result as choosing **Refresh** on the report toolbar.|  
   
-##  <a name="Managing"></a> Manage and work with published reports  
+## <a name="Managing"></a> Manage and work with published reports  
  You can also perform the following tasks when you view a report in Reporting Services:  
   
 -   Zoom in or out of the report.  

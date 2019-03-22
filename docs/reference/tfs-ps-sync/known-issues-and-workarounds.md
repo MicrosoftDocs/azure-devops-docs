@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 45423e0a-63f7-4fc4-8319-9344a43abed3
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
@@ -21,18 +22,18 @@ ms.date: 01/12/2017
   
 > [!NOTE]
 >  For more information, see the following forum post on the Microsoft website: [Team Foundation Server and Project Server Integration](http://go.microsoft.com/fwlink/?LinkId=207282).  
-  
-##  <a name="summary"></a> Summary tasks with mapped child tasks are not updated in the project plan  
+ # <
+## <a name="summary"></a> Summary tasks with mapped child tasks are not updated in the project plan  
  By design, Team Foundation Server (TFS) does not update the Project fields for summary tasks, that is, tasks that have subtasks that are mapped to work items in TFS. The synchronization process skips updates of summary tasks because the project plan calculates the work on summary tasks. Changes to non-work fields, such as Title, are also not updated for summary tasks. This behavior is a known limitation of the integration of the two server products.  
-  
-##  <a name="empty"></a> Remaining Work Field Must Be Empty  
+ # <
+## <a name="empty"></a> Remaining Work Field Must Be Empty  
  When you update a task in Project whose state has been set to Done or Removed in TFS, you might receive the following validation error message:  
   
  **The value for field 'Remaining Work' must be empty.**  
   
  This message indicates that the `<EMPTY />` workflow statements have not been removed from the task type definition for the project. Project sets the field to 0, while TFS expects the field to contain a null value. To resolve this issue, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md#scrummodifications).  
-  
-##  <a name="resolveerrors"></a> Resolving Specific Error Conditions  
+ # <
+## <a name="resolveerrors"></a> Resolving Specific Error Conditions  
  The following table provides corrective actions to specific errors that can occur when you integrate the two server products:  
   
 |Error Condition|Resolution|  
@@ -50,21 +51,21 @@ ms.date: 01/12/2017
 |TF294003: Cannot access the following PWA instance: *pwaUrl*. Project Server returned this error: "The request failed with HTTP status 401: Unauthorized." Verify that the PWA instance exists, and that the necessary permissions have been granted to the service account for the project collection to access the PWA.|You must grant the service account for Team Foundation Server permissions to access the instance of PWA. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).|  
 |TF294026: The following work item field does not exist: Microsoft.VSTS.Scheduling.CompletedWork. Contact your administrator for Team Foundation Server to add this work item field.|This error might appear under the following conditions:<br /><br /> - You try to upload the default field mappings to a project collection that only contains projects that were created from the Visual Studio Scrum process template. This template does not contain the **Completed Work** or **Original Estimate** fields in Team Foundation fields. You must map these fields.<br /><br /> - You can resolve this error by downloading the contents of the default field mappings, deleting the unsupported mappings, and then uploading the modified field mappings. For more information, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md#scrummodifications).|  
 |TF400651: Team Foundation Server cannot be integrated with the following project because it is a SharePoint Tasks List Project: {0}. Convert the project to an Enterprise Project or select a different project.|This message appears when the project plan has been configured as a SharePoint Tasks Lists Project. To resolve this issue, see [Change a SharePoint task list into an enterprise project](http://officepreview.microsoft.com/project-server-help/change-a-sharepoint-task-list-into-an-enterprise-project-HA102848144.aspx?CTT=5&origin=HA102848179).|  
-  
-##  <a name="resourcenames"></a> Resource names cannot contain special characters  
+ # <
+## <a name="resourcenames"></a> Resource names cannot contain special characters  
  Several characters, such as square brackets or corner brackets, can cause problems when you synchronize user names between Active Directory and Project Server. For more information, see [Active Directory Resource Pool Synchronization (Project Server 2013)](http://technet.microsoft.com/library/jj819320.aspx).  
-  
-##  <a name="witall"></a> Work item type field lists all work item types  
+ # <
+## <a name="witall"></a> Work item type field lists all work item types  
  Text30 is the default Project field that is associated with the **Work Item Type** column that is used in synchronizing tasks with work items. If you ever connect the project plan to Team Foundation Server by using the **Choose Team Project** option on the Team ribbon menu, an additional Project field, which is labeled **Work Item Type**, becomes available. This field, with a default Project field of Text24, supports mapping of project plans that are bound to Team Foundation but does not support synchronizing plans. The Text24-based field contains the full list of work item types for the project. You can verify that you have the correct field by pointing to it and verifying that **Text30** appears.  
-  
-##  <a name="errormessages"></a> Error messages for administration commands do not identify the missing permission  
+ # <
+## <a name="errormessages"></a> Error messages for administration commands do not identify the missing permission  
  When you run the `TfsAdmin` command-line tool, the following error message might appear:  
   
  **The request failed with HTTP status 401: Unauthorized.**  
   
  The message does not indicate which permission is required on which server. You must review the required permissions for the specific command that you tried to run. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
-  
-##  <a name="definingqueries"></a> Defining queries that specify null or empty field values  
+ # <
+## <a name="definingqueries"></a> Defining queries that specify null or empty field values  
  You can find undefined work item fields in Team Foundation by creating a work item query where the **Value** is left undefined. Corresponding Project Server fields that are mapped may contain a value of 0. For example, you can specifying the following clauses in a query to exclude work items that contain undefined or zero work:  
   
 -   And Completed Work <> (leave Value undefined)  
@@ -76,11 +77,11 @@ ms.date: 01/12/2017
 -   Or Project Server Remaining Work <> 0  
   
  For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
-  
-##  <a name="changingname"></a> Changing the Name of a Mapped Enterprise Project Plan Requires You to Refresh the Mapped Team Project  
+ # <
+## <a name="changingname"></a> Changing the Name of a Mapped Enterprise Project Plan Requires You to Refresh the Mapped Team Project  
  If you save a mapped enterprise project under a different name and then publish the project to Project Server, you must refresh the mapped project. Otherwise, the new name will not appear in the **Enterprise Project** field on the **Project Server** tab. For more information, see [Refresh your Team Foundation client](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json#refresh-the-web-portal).  
-  
-##  <a name="StressError"></a> Multiple errors and deadlock conditions may be reported under stress conditions  
+ # <
+## <a name="StressError"></a> Multiple errors and deadlock conditions may be reported under stress conditions  
  Under certain load conditions, multiple errors and deadlock conditions may be reported in the Windows event log and in the synchronization messages. For example, these messages might appear if multiple project collections are mapped to a single instance of PWA. No user action is required.  
   
  The following types of errors may appear:  
@@ -88,8 +89,8 @@ ms.date: 01/12/2017
  **Error_GeneralServerErrorSql&#124;Transaction (Process ID 156) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.**  
   
  **Error_GeneralServerErrorSql&#124;Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.**  
-  
-##  <a name="accessdenied"></a> Access Denied issues occur with a network load balancing configuration  
+ # <
+## <a name="accessdenied"></a> Access Denied issues occur with a network load balancing configuration  
  If you have administrative permissions on Project Server, a 401 Access denied message might appear after you configure the integration of the two server products. This message can appear when the deployment of Project Server contains the following components:  
   
 -   Two or more web front ends.  
@@ -99,8 +100,8 @@ ms.date: 01/12/2017
 -   A single static IP as the NLB front end with a name that is registered with the Domain Name Service (DNS).  
   
  To work around this problem, you must set one of two registry keys. For more information, see the following page on the Microsoft website: [You receive error 401.1 when you browse a Web site that uses Integrated Authentication and is hosted on IIS 5.1 or a later version](http://go.microsoft.com/fwlink/?LinkId=207283).  
-  
-##  <a name="unsupportedconfig"></a> Multiple errors might occur when updating subprojects with the master project open  
+ # <
+## <a name="unsupportedconfig"></a> Multiple errors might occur when updating subprojects with the master project open  
  You can synchronize data between a project and an enterprise project plan that is a subproject. You cannot manage or update any data from a master project that contains mapped subprojects. You can have a master plan that includes subprojects that are mapped to Team Foundation Server, but the Team Foundation client add-in for Project Professional blocks editing of mapped subprojects from a master plan. Specifically, the add-in prevents you from modifying or deleting a task that is scheduled to synchronize with Team Foundation from the master plan  
   
  Several errors can appear if you open a subproject and its master project at the same time. For example, one or more of the following error messages may appear:  

@@ -5,7 +5,8 @@ description: Change how specific fields are published from Project to Team Found
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 09/08/2017
 ---
@@ -76,7 +77,7 @@ You can customize how work item fields that are defined in Team Foundation map t
  If this element is not specified in the mapping, then Project uses the default `pjNumber20` field.  
 
 <a name="Synchronization"></a>   
-##  SyncField element  
+## SyncField element  
  The synchronization field enables you to control the publish and refresh behavior of each task. The field displays as a column with the title **Publish and Refresh** when you use the **Team System Task Sheet** view.  
   
  You must specify a synchronization field in the Microsoft Project field mapping file. Use the following XML syntax to specify which field is the synchronization field. To specify a synchronization field, use the `SyncField` element. The `ProjectField` attribute must be set to a valid Project field.  
@@ -94,8 +95,8 @@ You can customize how work item fields that are defined in Team Foundation map t
 ```  
   
 For more information about how to use the synchronization field in Project, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
-  
-##  <a name="ResourceNameSeparator"></a> ResourceNameSeparator Element  
+ # <
+## <a name="ResourceNameSeparator"></a> ResourceNameSeparator Element  
  You can use the `ResourceNameSeparator` to define the character that will distinguish resource names that are in a string. Team Foundation users and resources are synchronized with the users of the Active Directory directory service. The names for users and resources may include a delimiter, such as a comma, to separate the last name, first name, and middle initial of a resource.  
   
  This is an optional element. If this element is not specified in the mapping, then Project separates resource names by using the default mappings that are defined in the following table:  
@@ -120,11 +121,11 @@ For more information about how to use the synchronization field in Project, see 
 <ResourceNameSeparator WorkItemTrackingCharacter="-" ProjectCharacter="*"/>  
 ```  
 <a name="Hierarchy"></a>   
-##  Hierarchy link type  
+## Hierarchy link type  
  When you create summary tasks in  Project, a tree link is created between the summary task, the parent, and the subordinate or child tasks. Project uses the default System.LinkTypes.Hierarchy to create these links.  
   
 <a name="Dependency"></a> 
-##  Dependency link type  
+## Dependency link type  
  When you create links between tasks in Project, you create a dependent link between the tasks. The predecessor task is assigned a Predecessor link and the successor task is assigned a Successor link. These are the default designations that are defined for the System.LinkTypes.Dependency link type.  
   
 <a name="PublishRefresh"></a> 

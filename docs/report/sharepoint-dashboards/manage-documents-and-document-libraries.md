@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 405eea1b-d607-4cae-a98b-cca50c6ce41e
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ms.topic: conceptual
 ---
@@ -34,8 +35,8 @@ You can share documents and files that you want to make available to all team me
 -   You must also have **Contribute** permissions set for the project portal in SharePoint Products.  
   
      For more information, see [Add users to team projects](../../organizations/security/set-sharepoint-permissions.md).  
-  
-##  <a name="TE_Uploading"></a> Upload a document  
+ # <
+## <a name="TE_Uploading"></a> Upload a document  
   
 #### To upload a document in Team Explorer  
   
@@ -54,16 +55,16 @@ You can share documents and files that you want to make available to all team me
 1.  In Team Explorer, expand the **Documents** node or child node where you want to upload the document.  
   
 2.  In Windows Explorer, click the document that you want to upload, and then drag it to the folder or document library under the **Documents** node. Note that in Windows 8, Windows Explorer is File Explorer.  
-  
-##  <a name="TE_CreatingLibrary"></a> Create a document library  
+ # <
+## <a name="TE_CreatingLibrary"></a> Create a document library  
   
 #### To create a document library in Team Explorer  
   
 1.  In Team Explorer, right-click the Documents node for the team project where you want to create the document library, and then click **New Document Library**.  
   
 2.  Type a name for the library, and then press ENTER.  
-  
-##  <a name="TE_Adding"></a> Add a folder or subfolder  
+ # <
+## <a name="TE_Adding"></a> Add a folder or subfolder  
   
 #### To add a folder or subfolder in Team Explorer  
   
@@ -73,8 +74,8 @@ You can share documents and files that you want to make available to all team me
 >  You can create folders only at the document library or folder levels. You cannot create a folder at the **Documents** node level.  
   
 1.  Type a name for the new folder, and then press ENTER.  
-  
-##  <a name="TE_Moving"></a> Move, copy, or delete a document or folder  
+ # <
+## <a name="TE_Moving"></a> Move, copy, or delete a document or folder  
   
 #### To move or copy a document or folder to a new folder  
   
@@ -90,8 +91,8 @@ You can share documents and files that you want to make available to all team me
 1.  In Team Explorer, right-click the document or folder, and then click **Delete**.  
   
 2.  Click **OK**.  
-  
-##  <a name="TE_Renaming"></a> Rename a document or folder  
+ # <
+## <a name="TE_Renaming"></a> Rename a document or folder  
   
 #### To rename a document or folder  
   

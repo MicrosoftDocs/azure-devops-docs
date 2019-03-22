@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/12/2017
 ms.topic: overview
 ---
@@ -16,8 +17,8 @@ ms.topic: overview
 [!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> How is data synchronized between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server? What are the differences in how TFS integrates with Project Server 2010 and Project Server 2013? This topic addresses these questions.  
-  
-##  <a name="SyncSummary"></a> Synchronization feature summary  
+ # <
+## <a name="SyncSummary"></a> Synchronization feature summary  
  The following table describes the main features that support data synchronization between Team Foundation and Project Server.  
   
 |Feature|Description|  
@@ -32,8 +33,8 @@ ms.topic: overview
 |Conflict resolution|[Field mapping reference](field-mapping-xml-element-reference.md)<br /><br /> A conflict can occur when team members change the value of a mapped field in both Team Foundation and Project Server at the same time. You can choose whether you want to always accept the value in Project Server or to maintain two distinct values, which is referred to as maintaining "two sets of books." If you choose the latter option, data synchronization is suspended for those fields until they are assigned the same values manually.|  
 |Assigning resources|[Work with resource rollup](work-with-resource-rollup.md)<br /><br /> In Team Foundation, you can assign only one resource to a work item. You can assign multiple resources to a task in Project Professional and synchronize data for that task if you assign a primary owner or active resource to the task.<br /><br /> In addition, parent tasks that contain the rollup calculations of child tasks also contain the rollup of work that are assigned to the owners of each task. This rollup of owners appears as multiple resources in Project Professional for the summary task.|  
 |Mirrored fields|[Field mapping reference](field-mapping-xml-element-reference.md)<br /><br /> [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md)<br /><br /> In Team Foundation, you can store the values of Project fields and display them on the work item form. You can also find work items that contain one or more fields whose values differ from the values in the project plan.|  
-  
-##  <a name="OpDiff"></a> Operational differences among Project Server editions  
+ # <
+## <a name="OpDiff"></a> Operational differences among Project Server editions  
  The following table indicates some of the operational differences to be aware of when you integrate TFS with the various editions of Project Server.  
   
 |Operational area|Project Server 2010|Project Server 2013|  

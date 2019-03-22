@@ -100,7 +100,7 @@ Custom Form with Three Tabs in a Two Column Layout
 </FORM>  
 ```  
   
-##  <a name="WorkingTabs"></a> Work with tabs  
+## <a name="WorkingTabs"></a> Work with tabs  
  You use tabs to cluster a group of fields or to support one or more special controls, such as the controls that link work items, link work item history, or attach files. Several definitions of work item types for the Microsoft Solutions Framework (MSF) process templates use several tabs to control the types of links that can be created, based on the link type. For more information, see [Work Items and Workflow (Agile)](http://msdn.microsoft.com/d16d04fd-c073-45c0-b1b9-3724f0a7519b) or [Work Items and Workflow (CMMI)](http://msdn.microsoft.com/b5b7b488-3248-485c-b896-a2c6f824a219).  
   
  For more information about how to use special controls, see the following topics:  
@@ -191,7 +191,7 @@ Six Tabs Arranged in a Side by Side by Layout
   
 ```  
   
-##  <a name="GroupingFields"></a> Group fields  
+## <a name="GroupingFields"></a> Group fields  
  You use the `Group` element to visually group elements, similar to the Windows GroupBox. By using the attributes that are described in the following table, you can label each group and specify padding and margins that control the number of pixels inside and outside the border of the group area. The `Group` element should always be followed by a `Column` element, even if the group has only one column.  
   
  You should use the `Group` element as a container for fields in a column and as a container for columns in a segmented area on the form. You can specify the `Column` element only as a child element in a `Group` element.  
@@ -228,7 +228,7 @@ Six Tabs Arranged in a Side by Side by Layout
   
 ```  
   
-##  <a name="WorkingColumns"></a> Size columns  
+## <a name="WorkingColumns"></a> Size columns  
  You can design an area in a form that has two or more columns. You can specify the column width as fixed or as a percentage of the width of the containing element by using the `FixedWidth` or `PercentWidth` attributes, respectively. These two `Column` attributes are mutually exclusive. To allow a user to resize the column, you can specify a `Splitter` control, as [Use a splitter to support variable column sizing](#UsingSplitter) describes.  
   
  ![3&#45;Column Display](_img/alm_wit_custom_3columns.png "ALM_WIT_Custom_3Columns")  
@@ -268,7 +268,7 @@ Three-Column Layout
 </FORM>  
 ```  
   
-##  <a name="UsingSplitter"></a> Use a splitter to support variable column sizing  
+## <a name="UsingSplitter"></a> Use a splitter to support variable column sizing  
  You use the **Splitter** element when you want to allow the viewer of the form to dynamically resize the columns. The splitter appears as a dotted line on the form, as shown in the following illustration. You cannot specify any child elements in the **Splitter** element.  
   
  ![2 Column Layout with Splitter](_img/alm_wit_custom_splitter.png "ALM_WIT_Custom_Splitter")  
@@ -308,7 +308,7 @@ Three-Column Layout
 </Group>  
 ```  
   
-##  <a name="ControllingFormSize"></a> Control the size of the form and form elements  
+## <a name="ControllingFormSize"></a> Control the size of the form and form elements  
  You can specify the minimum horizontal and vertical size of each form layout by using the `MinimumSize` attribute for the layout. However, the form is resized according to the combined dimensions when the combined horizontal and vertical sizes of the field controls and layouts that are defined for each form are larger than the specified minimum dimensions. In addition, the vertical size of all tabs conforms to the dimension that is required to size the tab with the maximum vertical layout. The last field control on each tab may be resized accordingly to fill in the vertical dimension.  
   
  Scrollbars appear when the container that is displaying the form layout is smaller than the minimum horizontal or vertical size of the form. If this occurs, double-scroll problem might occur. With double-scroll, users may have to scroll both the form itself and the field control to find the information that they want. To avoid the double-scroll problem, you may want to place field controls that are subject to scrolling, such as HTML and History fields, on their own tab.  
@@ -332,7 +332,7 @@ Three-Column Layout
 -   [Define link controls to restrict link relationships](define-link-controls.md)  
   
 <a name="SpecifyingLayouts">
-##  </a> Specify different layouts for different targets  
+## </a> Specify different layouts for different targets  
  You can specify different layouts for different targets by using the `Layout` element `Target` attribute. To target Visual Studio or Team Explorer Everywhere, you specify `WinForms`, and to target the web portal, you specify `Web`.  
   
 ```xml

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-#  Apply changes with rebase
+# Apply changes with rebase
 
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 

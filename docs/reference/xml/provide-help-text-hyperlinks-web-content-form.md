@@ -24,7 +24,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]
 
-##  <a name="HelpTextA"></a> Provide help text or tooltip text  
+## <a name="HelpTextA"></a> Provide help text or tooltip text  
  You can provide Help text in one of two ways. In the first method, you add the `HELPTEXT` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using `HELPTEXT`, you create the tooltip for the field. You are limited to 255 characters with this method.  
   
 ```xml
@@ -46,7 +46,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
   
 ```  
   
-##  <a name="LabelControl"></a> Add stand-alone text and hyperlink field labels  
+## <a name="LabelControl"></a> Add stand-alone text and hyperlink field labels  
  You can add text to a work item form that is not associated with any work item field by using the `Type` attribute `LabelControl` option of the `Control` element. The text can be plain or provide a hyperlink. Also, you can attach a hyperlink to an added field label by using the `FieldControl` option.  
   
 #### Example: plain text label  
@@ -143,7 +143,7 @@ Combining Text and Hyperlinks in a Single Label
 </Control>  
 ```  
   
-##  <a name="WebBrowserControl"></a> Displaying web content  
+## <a name="WebBrowserControl"></a> Displaying web content  
  You can use the `Type` attribute `WebpageControl` option to display Web content in the work item form as a control instead of linking to a separate Web page. This display can be useful for providing metrics that support team members in viewing the contents of a report, dashboard, or other HTML-based content. You can provide a link to the content or embed the raw HTML content in a CDATA tag.  
   
 ### Example: display content provided by a URI  
@@ -176,7 +176,7 @@ Combining Text and Hyperlinks in a Single Label
 </Control>  
 ```  
   
-##  <a name="ProcGuidance"></a> Embed process guidance  
+## <a name="ProcGuidance"></a> Embed process guidance  
  To make process guidance available on the work item form, you may want to add a tab that contains information about the workflow and usage of the work item type. You can do this by using the `Type` attribute `WebpageControl` option. This option provides support for embedding rich formatted text and images into the form by using the `WebpageControlOptions` and `Content` child elements.  
   
 ```xml

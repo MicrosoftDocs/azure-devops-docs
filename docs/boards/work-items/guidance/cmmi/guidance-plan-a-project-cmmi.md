@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
@@ -19,8 +20,8 @@ ms.date: 01/20/2017
 The desired outcome of planning a project is a plan that includes a scope, a schedule, a budget, a risk management plan, and a commitment and approval from all stakeholders. With an agreed-upon project plan, you want to progress with analysis, design, development, testing, and eventually delivery.  
   
  You can reduce risk by using an iterative development method. Iterations let you demonstrate a partly working product at the end of each iteration and act on feedback from that demonstration. Therefore, the plan provides an overall shape and is subject to review and refinement before the start of each iteration.  
-  
-##  <a name="Gathering"></a> Gathering and modeling the requirements  
+ # <
+## <a name="Gathering"></a> Gathering and modeling the requirements  
  This activity is about discussing what the system should do, with business stakeholders, prospective users, and subject matter experts. It is important to understand the business context. If you have been asked to write an application for police officers, it helps to understand their jargon, procedures, and rules.  
   
  UML models are a useful tool for expressing and thinking about complex relationships. You can draw them in Visual Studio and link them to other documents and to Team Foundation work items. For more information see [Model user requirements](/visualstudio/modeling/model-user-requirements).  
@@ -28,8 +29,8 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
  Update and refine the requirements model throughout the project. As each iteration approaches, add more detail to the aspects of the model that are relevant to that iteration. From the model, you can derive verification tests.  
   
  For more information, see [Develop requirements](guidance-develop-requirements.md) and [Develop tests from a model](/visualstudio/modeling/develop-tests-from-a-model).  
-  
-##  <a name="Features"></a> Creating incremental product requirements  
+ # <
+## <a name="Features"></a> Creating incremental product requirements  
  The requirements as you have gathered them from your customers are not directly appropriate for the purpose of scheduling incremental development. For example, to clarify the procedure when a user buys something from a Web site, you might have written a detailed series of steps: customer browses catalog, adds item to cart, checks out cart, supplies address, and pays; warehouse schedules delivery; and so on. These steps, or an equivalent activity diagram, are not incremental requirements.  
   
  Instead, the first increment of your system might offer only one item for sale, deliver to only one address, and perform only a test transaction with the payment service. The second increment might provide a catalog that consists of a simple list. Later increments might add the option of gift wrapping the purchase or of requesting catalogs that are provided by different vendors. Some increments might be about quality of service, such as the ability to handle 1,000 customers instead of only one.  
@@ -39,18 +40,18 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
  If you work with an existing product, the principle is the same, but you start from the existing functionality. If you are unfamiliar with its internal design, the cost of updates can be difficult to estimate. It is worth being liberal with your estimates for the earlier changes.  
   
  For more information, see [Develop requirements](guidance-develop-requirements.md).  
-  
-##  <a name="EnterProductReqs"></a> Entering and editing product requirements  
+ # <
+## <a name="EnterProductReqs"></a> Entering and editing product requirements  
  Record the incremental product requirements as requirement work items in Team Foundation, and set the requirements type to Feature. You can create a [backlog of requirements](../../../backlogs/create-your-backlog.md) using the web portal or Team Explorer. If you have several work items that you want to create at the same time, you can use the [Excel](../../../backlogs/office/bulk-add-modify-work-items-excel.md).  
-  
-##  <a name="Estimate"></a> Estimating the product requirements  
+ # <
+## <a name="Estimate"></a> Estimating the product requirements  
  The development team should estimate the work that is required to develop each product requirement. The estimate should be entered in hours, in the Original Estimate field of the work item.  
   
  Early in the project, a rough estimate is all that is needed.  
   
  Break large product requirements into smaller ones. Ideally, each product requirement will take only a few days of development time.  
-  
-##  <a name="Map"></a> Assigning product requirements to iterations  
+ # <
+## <a name="Map"></a> Assigning product requirements to iterations  
  Representatives of the business stakeholders and the development team should work together to assign product requirements to iterations. Typically, you do this in a meeting, where you share or project the Office Excel view of the Product Requirements query.  
   
  The assignment is completed by using the following pieces of information:  
@@ -95,15 +96,15 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
      Personas represent market segments or user groups. Marketing people or business owners should be able to articulate the priority of such segments or groups based on utility to be delivered or the value of the segment. If segments or user groups can be ranked in priority, show this by listing the personas for each segment by rank. Identify the scenarios for the highest ranked personas, and prioritize these into earlier iterations in the schedule.  
   
  In general, we want to prioritize the reduction of risk because of the possibility of failure. We want to prioritize common functionality because it is likely to be required and unlikely to change. We want to prioritize more valuable requirements. We want to enable the option for early release of the product to a subset of personas by prioritizing all scenarios that are required to satisfy the needs of any one persona.  
-  
-##  <a name="PlanTests"></a> Planning tests  
+ # <
+## <a name="PlanTests"></a> Planning tests  
  The work estimate for each requirement must include the effort that is required to test the requirement, either manually or by creating an automated test.  
   
  Before it is considered completed, each product requirement must be linked to a set of test case work items that together demonstrate whether the requirement has been met, and the tests must pass.  
   
  When you create or revise product requirements, the corresponding test plan must be updated.  
-  
-##  <a name="ReviseProductReqs"></a> Revising the product requirements  
+ # <
+## <a name="ReviseProductReqs"></a> Revising the product requirements  
  Revisit this activity before each iteration to consider revised and new requirements, revised priorities, and revised estimates. There will be more revisions in the first few iterations.  
   
  After the first few iterations, members of the development team will be more confident about the estimates. They should go through the estimates for the next one or two iterations and revise the Original Estimates fields of the requirements that are assigned to those iterations.  

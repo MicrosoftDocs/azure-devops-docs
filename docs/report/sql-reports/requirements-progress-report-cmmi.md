@@ -7,7 +7,8 @@ ms.topic: reference
 description: Lists all requirements, filtered by product area and iteration in order of importance.
 ms.assetid: c5ecc16d-9645-4b5f-97b9-e92f76a88852
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -28,8 +29,8 @@ The Requirements Progress report lists all requirements, filtered by product are
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Requirements Progress report shows the status of completion as determined by the tasks that have been defined to implement the requirement, as the following illustration shows. The data in the report is derived from the data warehouse.  
   
  ![Requirements Progress report](_img/procg_reqprogress.png "ProcG_ReqProgress")  
@@ -72,8 +73,8 @@ The Requirements Progress report lists all requirements, filtered by product are
   
     > [!NOTE]
     >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  Depending on your area of focus, you can filter the report in the following ways:  
   
 -   Specify the **Iteration** and **Area** paths of interest.  
@@ -128,8 +129,8 @@ The Requirements Progress report lists all requirements, filtered by product are
 -   **Many requirements have no recently completed work**.  
   
      When several requirements indicate no or very small amounts of recently completed work, team progress is slow. You might investigate the cause of the slow progress and determine whether you should resolve or track blocking issues.  
-  
-##  <a name="Changing"></a> Filtering the Report and Changing the Display  
+ # <
+## <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Requirements Progress report or change its display in the following ways:  
   
 -   Filter the list of requirements that appear by changing the iteration or area paths.  

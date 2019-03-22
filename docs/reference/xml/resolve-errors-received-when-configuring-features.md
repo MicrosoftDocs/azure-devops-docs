@@ -35,10 +35,10 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 >  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
  
   
-##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
+## <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
  You can resolve an error by modifying the process template used to configure the new features, or by modifying your project. After you've corrected the error, rerun the wizard.  
   
-###  <a name="process_template"></a> Resolve errors by modifying a process template  
+### <a name="process_template"></a> Resolve errors by modifying a process template  
  You modify a process template by performing these steps:  
   
 1.  Download the process template from Team Foundation Server. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
@@ -49,12 +49,12 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
  See also [Update a customized process template to access new features](../update-customized-process-template.md).  
   
-###  <a name="team_project"></a> Resolve errors by modifying your project or project collection  
+### <a name="team_project"></a> Resolve errors by modifying your project or project collection  
  To resolve an error or warning, you may choose to modify the project or project collection using the **witadmin** command. See [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
   
  You can export a type definition, make changes to field definitions, and then import the type definition as needed. See [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md).  
   
-###  <a name="issues"></a> Issues and resolutions  
+### <a name="issues"></a> Issues and resolutions  
  To resolve the errors listed in the following table, take the corresponding corrective actions, either to the process template or the project, and then re-run the wizard.  
   
 |Error|Issue|Process template resolution|Project resolution|  
@@ -76,7 +76,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 -   [Change the workflow](change-workflow-wit.md)    
 -   [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md)  
   
-##  <a name="warnings"></a> Resolve warnings reported by the Configure Features wizard  
+## <a name="warnings"></a> Resolve warnings reported by the Configure Features wizard  
  To resolve the warnings listed in the following table, follow the resolution steps, and then re-run the wizard.  
   
 |Warning|Issue|Resolution|  
@@ -98,7 +98,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 -   [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md)   
 -   [Support bug update status using My Work](support-bug-update-status-using-my-work.md)  
   
-###  <a name="storyboard"></a> Add the Storyboard links control tab  
+### <a name="storyboard"></a> Add the Storyboard links control tab  
  With the addition of [Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md), you can now link work items to storyboards. To do this, you add the **Storyboard** links control tab to the definition of the WIT. If the Configure Features wizard didn't or wasn't able to add the tab, then you can add it manually. In the latest versions of the process templates installed on the upgraded TFS, the **Storyboard** links control tab appears on all backlog WITs, such as Product Backlog, User Story, and Requirement.  
   
 > [!NOTE]  

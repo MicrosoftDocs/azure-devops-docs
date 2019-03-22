@@ -32,7 +32,7 @@ You can create reports and query for data by using the warehouse database. The d
   
 -   Many fact tables reference DimPerson, sometimes more than once. For example, the work item facts reference DimPerson to indicate to whom a work item is assigned to and who changed it most recently.  
   
-##  <a name="Builds"></a> Builds  
+## <a name="Builds"></a> Builds  
  You can query for data about builds by using four fact tables, as the following illustration shows. Each fact table uses the build dimension table DimBuild to store many details about the builds.  
   
  ![Build Fact Tables](_img/teamproj_buildfacts.png "TeamProj_BuildFacts")  
@@ -46,7 +46,7 @@ You can create reports and query for data by using the warehouse database. The d
   
  For more information about builds, see [Build](../../pipelines/overview.md).  
   
-##  <a name="SourceCode"></a> Source Code  
+## <a name="SourceCode"></a> Source Code  
  You can query for data about code and other files that are under version control by using the fact tables in the following illustration. DimFile and DimChangeset are the two primary dimensions that are associated with these fact tables. DimFile provides information about files and folders, without regard to specific versions of those files. DimChangeset provides information about the changesets.  
   
  ![Fact Tables about Source Code](_img/teamproj_codefacts.png "TeamProj_CodeFacts")  
@@ -60,7 +60,7 @@ You can create reports and query for data by using the warehouse database. The d
   
  For more information about version control, see [Code](../../repos/tfvc/overview.md).  
   
-##  <a name="TestResults"></a> Tests  
+## <a name="TestResults"></a> Tests  
  You can query for information about test results and analyze how well the tests cover the code by using the tables in the following illustration.  
   
  ![Fact Tables for Tests](_img/teamproj_testfacts.png "TeamProj_TestFacts")  
@@ -75,7 +75,7 @@ You can create reports and query for data by using the warehouse database. The d
  For more information, see [Testing overview](../../test/index.md) and [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx).  
   
 <a name="WorkItems"></a>
-##  Tasks, Bugs and Other Types of Work Items  
+## Tasks, Bugs and Other Types of Work Items  
  You can query for information about tasks, bugs, and other types of work items by using the work item tables in the following illustration. Each work item fact table uses the work item dimension table to store many details about the work items.  
   
  ![Fact Tables for Tasks, Bugs, and Other Work Items](_img/teamproj_workitemfacts.png "TeamProj_WorkItemFacts")  

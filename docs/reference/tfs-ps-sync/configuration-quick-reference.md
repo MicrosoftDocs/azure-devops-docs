@@ -38,7 +38,7 @@ ms.date: 01/12/2017
   
  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
-##  <a name="prerequisites"></a> Prerequisite software  
+## <a name="prerequisites"></a> Prerequisite software  
  The following table summarizes the prerequisite software that you must install and configure before you install Team Foundation Server Extensions for Project Server.  
   
 > [!IMPORTANT]
@@ -52,7 +52,7 @@ ms.date: 01/12/2017
 > [!NOTE]
 >  You do not need to deploy Active Directory, but it is highly recommended so that you can more easily synchronize the accounts of users, groups, and services that are valid within Team Foundation Server and Project Server.  
   
-##  <a name="install"></a> Install software  
+## <a name="install"></a> Install software  
  The following table summarizes the installation steps that you must perform. To install software, you must have administrative permissions on the machine where the software is installed.  
   
 |Step|Task|Machine|Notes|  
@@ -62,12 +62,12 @@ ms.date: 01/12/2017
 |![Step 3](_img/procguid_3.png "ProcGuid_3")|Install Visual Studio 2013 or Team Explorer 2013.<br /><br /> For downloads, see: [Visual Studio 2013 downloads](http://go.microsoft.com/fwlink/?LinkId=262122)|Each client machine on which Project Professional will be used to synchronize data between enterprise project plans and projects.<br /><br /> Each client machine or server that you will use to configure and administer the integration of the two products.<br /><br /> **Important:** You must install Visual Studio 2012 to obtain the add-in for Project Professional, but you do not require a client access license (CAL) to interface with the integration of Team Foundation Server and Project Server.|Each project manager who will manage enterprise project plans that will participate in data synchronization with Team Foundation must install the add-in to Project Professional. Also, each administrator who will configure the integration of the two server products requires the software that is installed with Visual Studio 2012. This software configures the add-in to Project for the integration.|  
   
   
-##  <a name="assign"></a> Assign permissions  
+## <a name="assign"></a> Assign permissions  
  To assign permissions, you must have administrative permissions for the software elements that you are configuring. You must assign administrative permissions for Team Foundation Server and an instance of Project Web Access or Project Web App (PWA) to the user who will configure the integration of these products. The following table summarizes the permissions that you must assign. You should make these assignments after you have installed Team Foundation Server Extensions for Project Server. You assign most permissions through the Team Foundation administration console for a project collection, the **Project Security** dialog box for a project, or through the Manage Users or Manage Groups web pages for an instance of PWA.  
   
  To assign permissions, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
-##  <a name="configure"></a> Configure integration  
+## <a name="configure"></a> Configure integration  
  The following table summarizes the minimum set of steps that you must take to configure integration of the two products. Each step uses the `TfsAdmin` command-line tool, which you can access by opening a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   
 ```  
@@ -89,7 +89,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
 |![Step 4](_img/procguid_4.png "ProcGuid_4")|**Associate an enterprise project plan with a project**. Before you can map a project plan, you must first publish it to Project Server, and the project must be defined in the collection. You must map each enterprise project plan to the project that contains data that you want to synchronize. You also must indicate which types of work items you want to participate in synchronization.<br /><br /> `TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseproject:PlanName /teamproject:ProjectName /workitemtypes:ListOfTypes`<br /><br /> Replace *PlanName* with the name of the enterprise project plan, *ProjectName* with the name of the project, and *ListOfTypes* with the names of the types of work items. For example, you can specify the following types of work items to support an agile process as "*User Story,Task*" or *"User Story", Task*. If your project is based on a formal (CMMI) process template, you can specify "*Requirement,Task*". Do not include a space after the comma.<br /><br /> The following example maps MyEnterpriseProjA to MyTeamProjB in DefaultCollection on AdventureWorksServer and specifies that user stories and tasks will participate in synchronization:<br /><br /> **TfsAdmin ProjectServer /MapPlanToTeamProject /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection/ enterpriseproject:MyEnterpriseProjA /teamproject:MyTeamProjB /workitemtypes:"User Story,Task"**<br /><br /> **Note:** The `/nofixedwork` flag is optional. Specify this flag only if you want Project Server tasks that are mapped to work items in Team Foundation not to be assigned to the **Fixed Work** task type.<br /><br /> If you mapped your project plan while it was open, you should close and re-open it for the changes to register. When you open the plan, you should verify whether the **Publish to Team Project** and **Work Item Type** (Text30) columns appear. The presence of these columns indicates that the project plan has been mapped to a project.|  
 |![Step 5](_img/procguid_6.png "ProcGuid_6")|**Add team members to the enterprise resource pool**. For each task that is published to the project, you must assign a valid contributor of the project as a resource. You must also identify as a valid contributor any team member who submits work items that are synchronized with Project Server. To identify valid contributors, you must add team members from the enterprise resource pool to the resources for the enterprise project plan. For more information, see [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356).|  
   
-##  <a name="verify"></a> Verify data synchronization  
+## <a name="verify"></a> Verify data synchronization  
  You can verify that data is being synchronized by performing the steps that the following table summarizes. Perform these steps by using the enterprise project plan and the project that you mapped when you configured the integration.  
   
 |Step|Task|Procedure|  

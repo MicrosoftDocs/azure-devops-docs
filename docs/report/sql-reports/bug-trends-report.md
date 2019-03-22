@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Track the rate at which your team is discovering and resolving bugs - Team Foundation Server  
 ms.assetid: 631ec793-644f-4eff-8403-e48e746e369e
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 10/17/17
 ---
@@ -28,8 +29,8 @@ You can use the Bug Trends report to help track the rate at which your team is d
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Bug Trends report calculates a rolling average of the number of bugs that the team has opened, resolved, and closed based on the filters that you specify. The rolling average is based on the seven days before the date for which it is calculated. That is, the report averages the number of bugs in each state for each of the seven days before the date, and then the result is divided by seven. The data is derived from the data warehouse.  
   
  The following illustration displays an example of the Bug Trends report.  
@@ -56,8 +57,8 @@ You can use the Bug Trends report to help track the rate at which your team is d
 -   Specify the **Priority** and **Severity** of each bug during triage.  
   
  You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md).  
-  
-##  <a name="Duration"></a> Setting the Duration of the Sprint or Iteration  
+ # <
+## <a name="Duration"></a> Setting the Duration of the Sprint or Iteration  
  To understand the bug trends for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
   
 #### To change the duration of the iteration  
@@ -65,8 +66,8 @@ You can use the Bug Trends report to help track the rate at which your team is d
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, click the calendar icon, and then click a date.  
   
 2.  Click **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  You should expect bug rates to vary based on where you are in your product development cycle. The team should find fewer bugs in early iterations than in later iterations. The team should close the most bugs in iterations that are near the end of a product cycle.  
   
  You interpret bug rates best by reviewing them relative to all of the current team project activities and the other metrics that the Bug Status and Reactivations reports provide. For example, the team might find bugs especially quickly in poorly written code, in newly integrated code, with improved testing, or during an exceptional event such as a bug bash. On the other hand, bugs are more difficult to find in a high quality product and with ineffective testing. You can use the metrics for code coverage, code churn, and test rates to help further assess the meaning of the bug trends.  
@@ -92,8 +93,8 @@ You can use the Bug Trends report to help track the rate at which your team is d
  An unhealthy Bug Trends report might show that the team is finding bugs more quickly as the ship date approaches and resolving bugs more slowly. In this situation, the team's bug backlog is growing because bugs are not getting fixed, and you might want to investigate the causes. The following illustration shows a report for a team that is finding many bugs, resolving fewer bugs than it finds, and closing fewer bugs than it resolves.  
   
  ![Unhealthy version of Bug Trends Report](_img/procguid_bugtrends_dataunhealthy.png "ProcGuid_BugTrends_DataUnhealthy")  
-  
-##  <a name="Changing"></a> Filtering the Report and Changing the Display  
+ # <
+## <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Bug Trends report or change its display in the following ways:  
   
 -   Change the start and end dates for the report.  

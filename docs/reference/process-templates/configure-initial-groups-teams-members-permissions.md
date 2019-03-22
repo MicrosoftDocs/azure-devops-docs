@@ -27,7 +27,7 @@ By using the plug-in file for Groups and Permissions, you can configure the init
  For more information about how to administer users and groups and control access for Visual Studio Application Lifecycle Management (ALM), see [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups).  
   
 <a name="ElementsGroups"></a> 
-##  Define and assign permissions to groups  
+## Define and assign permissions to groups  
  You can use the **group** and **member** elements to specify a new security group in Team Foundation Server and add members to that group. You can use the group **permission** element to assign permissions to a group and to members of that group. You must encapsulate each of these elements within their corresponding container elements: **groups**, **permissions**, and **members**. You use the following the syntax structure for each of these elements:  
   
 > [!div class="tabbedCodeSnippets"]
@@ -135,7 +135,7 @@ The following table describes the attributes for the **group**, **member**, and 
 ```  
   
 <a name="CollectionLevel"></a> 
-##  Assign collection-level permissions  
+## Assign collection-level permissions  
 You can assign collection-level permissions by using the group **permission** element and the NAMESPACE class. These permissions control access to resources that are available across projects. You can set collection-level permissions for only the following categories of users:  
   
 -   Collection-level users and groups, such as Project Collection Administrators    

@@ -69,7 +69,7 @@ Teams use project portals to share information and support how their team works.
   
  You can [redirect process guidance](configure-or-redirect-process-guidance.md) to your custom content.  
   
-###  <a name="addportal"></a> Q: How do I add a project portal to my team project? How do I enable process guidance?  
+### <a name="addportal"></a> Q: How do I add a project portal to my team project? How do I enable process guidance?  
  **A:** If you want to specify an existing website as your team project's portal or support process guidance, see [Configure a project portal](configure-or-add-a-project-portal.md).  
   
 > [!IMPORTANT]  

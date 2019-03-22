@@ -36,7 +36,7 @@ When you delete a task from Project Server that has been synchronized with a wor
 > [!NOTE]
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to run the `TfsAdmin` command-line tool on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
   
-##  <a name="removeintegration"></a> Remove integration and shut down synchronization  
+## <a name="removeintegration"></a> Remove integration and shut down synchronization  
  The following illustration shows the systematic sequence of steps that you take to shut down the synchronization engine and remove the integration of Team Foundation Server and Project Server. You can perform the sequence of steps as shown, or you can use the **/force** switch when you perform step 3 using the `TfsAdmin ProjectServer /UnMapPWAFromCollection` command option.  
   
  ![Workflow for removing mapping between PS and TFS](_img/pstfs_unmap_workflow.png "PSTFS_UnMap_Workflow")  
@@ -60,7 +60,7 @@ When you delete a task from Project Server that has been synchronized with a wor
   
 -   Remove the association between the instance of PWA and Team Foundation Server.  
   
-##  <a name="removeplan"></a> Remove an enterprise project plan from participating in synchronization  
+## <a name="removeplan"></a> Remove an enterprise project plan from participating in synchronization  
  You remove a plan from participating in synchronization by unmapping it from the project. Before you can unmap the plan, you must first delete all tasks that are linked to work items in the mapped project. As an alternative, you can use the `/force` flag to remove these links.  
   
 #### To unmap an enterprise project plan from a project  
@@ -87,7 +87,7 @@ When you delete a task from Project Server that has been synchronized with a wor
   
      **Enterprise project** *EnterpriseProjectName* **was successfully unmapped from project** *TeamProjectName*.  
   
-##  <a name="remove_tpc"></a> Remove a project collection from participating in synchronization  
+## <a name="remove_tpc"></a> Remove a project collection from participating in synchronization  
  You remove a collection from participating in synchronization by unmapping it from the instance of PWA. Before you can unmap the collection, you must first unmap all project plans that are mapped to projects in the collection. As an alternative, you can use the `/force` flag to unmap all projects.  
   
 #### To unmap a collection and all projects from an instance of PWA  
@@ -106,7 +106,7 @@ When you delete a task from Project Server that has been synchronized with a wor
   
      **You have successfully unmapped project collection** *tpcUrl* **from PWA** *pwaUrl*.  
   
-##  <a name="removepwa"></a> Remove an Instance of PWA from participating in synchronization  
+## <a name="removepwa"></a> Remove an Instance of PWA from participating in synchronization  
  As the final step in removing the integration, you must unregister each instance of PWA that was registered with Team Foundation Server. You should unregister all instances of PWA that no longer contain any enterprise projects that must synchronize their data with Team Foundation.  
   
 #### To unregister an instance of PWA  
@@ -127,12 +127,12 @@ When you delete a task from Project Server that has been synchronized with a wor
   
 2.  Repeat step 2 for each instance of PWA that supports enterprise project plans that you want to remove from participating in synchronization with Team Foundation.  
   
-##  <a name="removewit"></a> Remove a type of work item from participating in synchronization  
+## <a name="removewit"></a> Remove a type of work item from participating in synchronization  
  You can remove one or more types of work items from participating in data synchronization for a project by using the **TfsAdmin ProjectServer /UnmapWorkItemTypes** command. If any work items of the type that you want to remove are being synchronized, you can specify the **/force** switch to remove the links that bind them to their corresponding tasks in Project.  
   
  For more information, see [Specify work item types](specify-wits-to-synchronize.md).  
   
-##  <a name="removefield"></a> Remove a field from participating in synchronization  
+## <a name="removefield"></a> Remove a field from participating in synchronization  
  You can remove one or more fields from participating in data synchronization for a project collection. You remove a field from synchronization by removing its mappings. You must not remove fields that are required for synchronization. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md) and [Upload or download field mappings](manage-field-mappings.md).  
   
 ## Related articles  

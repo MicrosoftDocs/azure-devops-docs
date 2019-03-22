@@ -84,7 +84,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 ## Remarks  
  Each time that you run the **tcm fieldmapping import** command, the contents of the existing field mapping file are replaced with the contents that you import.  
   
-##  <a name="bug"></a> Mapping file for bug work item type  
+## <a name="bug"></a> Mapping file for bug work item type  
  When Test Manager creates a bug, the mapping file defines the type of work item to create and fills in three data fields: reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which these three fields are automatically filled in.  
   
  If your project was created with one of the default process templates provided with Team Foundation Server, the bug work item type is already enabled. However, if you're adding another type of work item to the bug category or you're working with a customized process template, you might have to use the **tcm** command.  
@@ -104,7 +104,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
   
  For more information about fields that are used to track information that Test Manager finds, see [Build and test integration fields](../../boards/queries/build-test-integration.md).  
   
-##  <a name="resolution"></a> Mapping file for resolution states  
+## <a name="resolution"></a> Mapping file for resolution states  
  The following XML syntax lists the default contents of the resolution states defined for the default process templates.  
   
 ```xml
@@ -123,7 +123,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
   
  ![Analyse test run page in Microsoft Test Manager](_img/almt_wsa11analysetest.png "ALMT_wsa11analyseTest")  
   
-##  <a name="failure"></a> Mapping file for failure types  
+## <a name="failure"></a> Mapping file for failure types  
  The following XML syntax lists the default failure types defined for a project.  
   
 ```xml

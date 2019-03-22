@@ -123,7 +123,7 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 ```  
 
 <a name="Toolbar"></a>   
-##  LinksControl toolbar buttons  
+## LinksControl toolbar buttons  
 Each `Control` element of Type=LinksControl provides a toolbar, which contains the buttons shown in the next illustration:  
   
 ![Work item form link toolbar controls](_img/procguid_linktoolbar.png "ProcGuid_LinkToolbar")  

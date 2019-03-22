@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: ac299174-7f32-4867-8efb-c7bb50cdbd51
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 12/30/2016
 ---
@@ -26,15 +27,15 @@ You can use the Burndown report to help determine how much progress the team has
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Burndown report shows a stacked area chart of the **Completed Work** and **Remaining Work** hours that have been tracked for all Tasks during the time interval set for the report. The default interval is the current week through the next three weeks.  
   
  ![Burndown chart](_img/procguid_agileburn.png "ProcGuid_AgileBurn")  
   
  The **Ideal Trend** line calculates a slope or trajectory for when the team will complete work based on the amount of work that remains and the end date of the report. A healthy Burndown chart shows that the team is making steady progress toward finishing the work. The line is drawn from the remaining work on the start date and intersects the x-axis on the end date.  
-  
-##  <a name="RequiredActivities"></a> Required Activities for Tracking Burndown  
+ # <
+## <a name="RequiredActivities"></a> Required Activities for Tracking Burndown  
  For the Burndown chart to be useful and accurate, the team must perform the following activities:  
   
 -   Define Tasks, and specify the **Iteration** and **Area** paths for each.  
@@ -43,8 +44,8 @@ You can use the Burndown report to help determine how much progress the team has
   
     > [!IMPORTANT]
     >  If you subdivide a Task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent Task and User Story.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  You can review the Burndown report to determine the progress that the team made during an iteration. For example, you can find answers to the following questions:  
   
 -   How fast is the team completing remaining work?  
@@ -56,8 +57,8 @@ You can use the Burndown report to help determine how much progress the team has
 -   When can the team finish the work?  
   
 -   When can the team finish the current iteration?  
-  
-##  <a name="Updating"></a> Updating and Customizing the Report  
+ # <
+## <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Burndown report by opening the report in Office Excel and changing the filter options for the PivotTable report or change the start date for the report. You can customize this report to support other views as the following table describes.  
   
 |View|Action|  

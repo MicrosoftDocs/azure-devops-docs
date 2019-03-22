@@ -7,7 +7,8 @@ ms.topic: reference
 description: Tracks the team's progress and identify any problems in the flow of work
 ms.assetid: 61990591-ac5a-4cec-80f6-6627a723a910
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -28,8 +29,8 @@ After the team has estimated its tasks and begun work, you can use the Remaining
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Remaining Work report summarizes the data that was captured during the specified time interval for each task, user story, or bug based on the filter criteria that were specified for the report. The data is derived from the data warehouse.  
   
  You can view this report in either the **Hours of Work** view or the **Number of Work Items** view. The first view displays the total number of hours of work for the specified time period and the team's progress toward completing that work. The second view displays the number of work items for the specified time period and the number of work items in each state. Each view provides an area graph that charts the progress of completed work against the total estimated work for the specified time duration.  
@@ -72,8 +73,8 @@ After the team has estimated its tasks and begun work, you can use the Remaining
     >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task, story, and bug as it progresses from active to closed.  
-  
-##  <a name="Duration"></a> Setting the Duration of the Iteration  
+ # <
+## <a name="Duration"></a> Setting the Duration of the Iteration  
  To understand the progress made for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
   
 #### To change the duration of the iteration  
@@ -81,8 +82,8 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, click the calendar icon, and then click a date.  
   
 2.  Click **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  The Remaining Work report displays information that you can use to understand how well the team is progressing and whether the team will finish the tasks within the allocated time.  
   
 ### Questions That the Report Answers  
@@ -121,8 +122,8 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 -   **Number of remaining hours or active work items increases**.  
   
      This situation indicates that either the team did not accurately estimate the work at the start of the iteration or that the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. This area is worth inquiring about to determine root causes. For example, you might want to determine how granular the tasks are.  
-  
-##  <a name="Changing"></a> Filtering the Report and Changing the Display  
+ # <
+## <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Remaining Work report or change its display in the following ways:  
   
 -   Change the start and end dates for the report.  

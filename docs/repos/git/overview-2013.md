@@ -14,7 +14,7 @@ monikerRange: 'tfs-2013'
 ---
 
 
-#  Use Visual Studio and Team Foundation Server with Git
+# Use Visual Studio and Team Foundation Server with Git
 #### Azure Repos | TFS 2015 | Visual Studio 2013
 
 <table>

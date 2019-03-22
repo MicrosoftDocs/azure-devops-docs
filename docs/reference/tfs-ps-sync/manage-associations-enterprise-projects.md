@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b759773e-1c79-4e2e-abdf-522e1a34fdfb
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -22,8 +23,8 @@ ms.date: 01/12/2017
  Before you can map an enterprise project plan to a project, you must have [configured the integration](configure-tfs-project-server-integration.md) of Visual Studio Team Foundation Server and Microsoft Project Server. After you have performed the initial configuration, you can map and unmap plans to projects as needed.  
   
  To perform these procedures, you must have the **Administer Project Server integration** permission for a project collection, or you must belong to the **Team Foundation Administrators**  group. Also, the service account for Visual Studio Team Foundation Server must have administrative permissions to the instances of PWA that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
-  
-##  <a name="GetRegisteredPWAs"></a> Retrieve the instances of PWA that are registered  
+ # <
+## <a name="GetRegisteredPWAs"></a> Retrieve the instances of PWA that are registered  
  By using the following command, you can list the instances of PWA that have been registered with an application-tier server and are available to be mapped to a project collection.  
   
 #### To list registered instances of PWA  
@@ -49,8 +50,8 @@ ms.date: 01/12/2017
      **The following PWA instances are registered:** *pwaUrl*.  
   
  For more information, see [Register an instance of PWA](register-pwa.md).  
-  
-##  <a name="GetMappedPWAs"></a> Retrieve the project collections that are mapped to an instance of PWA  
+ # <
+## <a name="GetMappedPWAs"></a> Retrieve the project collections that are mapped to an instance of PWA  
  By using the following command, you can determine which collections are mapped to an instance of PWA and available to participate in data synchronization. You can associate an enterprise project plan only with a project that is hosted on a collection that has been mapped to the instance of PWA that supports your plan.  
   
 #### To list the mapped collections  
@@ -66,8 +67,8 @@ ms.date: 01/12/2017
      The following message appears:  
   
      **The following collections are mapped:** *tpcUrl* **to Project Web Access** *pwaUrl*.  
-  
-##  <a name="MapPlanToProject"></a> Associate an enterprise project plan with a project  
+ # <
+## <a name="MapPlanToProject"></a> Associate an enterprise project plan with a project  
  You can map an enterprise project plan to a project that contains data that you want to synchronize. As the following illustration shows, you can associate multiple enterprise projects with the same project.  
   
  ![Associate enterprise projects with a project](_img/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
@@ -89,8 +90,8 @@ ms.date: 01/12/2017
      **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
   
 2.  Repeat step 1 for each enterprise project plan that you want to associate with a project.  
-  
-##  <a name="UnmapPlanFromProject"></a> Remove the association between an enterprise project plan and a project  
+ # <
+## <a name="UnmapPlanFromProject"></a> Remove the association between an enterprise project plan and a project  
  Before you can remove the association between an enterprise project plan and a project, you must first delete all tasks that are linked to work items in the mapped project.  
   
 #### To unmap an enterprise project plan from a project  
@@ -108,8 +109,8 @@ ms.date: 01/12/2017
      **Unmapping enterprise project** *EnterpriseProjectName* **from project** *TeamProjectName*.  
   
      **Enterprise project** *EnterpriseProjectName* **was successfully unmapped from project** *TeamProjectName*.  
-  
-##  <a name="ResourcePool"></a> Add TFS resources to the resource pool for Project Server  
+ # <
+## <a name="ResourcePool"></a> Add TFS resources to the resource pool for Project Server  
  To assign users in Team Foundation as resources in Project, you must add them to the enterprise resource pool and to the resource pool for the enterprise project plan. To make this process easier, you can configure PWA to automatically synchronize the security groups with groups of the same name in Active Directory. Also, you can synchronize users and resources in Project Server with users in Active Directory across multiple domains and forests.  
   
 #### For information about how to add users to the enterprise resource pool, see the following pages on the Microsoft website:  

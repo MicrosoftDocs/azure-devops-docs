@@ -39,7 +39,7 @@ Project 2010 and later versions support several new project fields and functions
 >Customizing the Project Field mapping file is only support for on-premises TFS and the On-premises XML process model.  
   
 <a name="NewFeatures"></a> 
-##  New task-related features in Project 2010 and Project 2013  
+## New task-related features in Project 2010 and Project 2013  
  
 ### Schedule tasks manually or automatically
 By using Task Mode, which is accessed through the following Ribbon menu, you have more flexibility in the way you and team members schedule tasks.
@@ -64,7 +64,7 @@ By using Active Mode, you can determine the impact to the schedule when you spec
    
 
 <a name="download"></a>   
-##  Add Project fields to TFS (On-premises XML)  
+## Add Project fields to TFS (On-premises XML)  
 
 For team members to be able to view or modify new Project fields from the web portal or Team Foundation client, you must customize both the task WIT definition and update the Microsoft Project Mapping file. By making these changes, you maintain the data fields in both the Project plan and in the work tracking database. You can make these fields read-only or modifiable. You can use them to find work items by using queries and construct reports. Specifically, you can add fields that enable team members to specify their start and end dates for pinned tasks. By adding these fields to the task work item form, you can view and modify the start and end dates using a Team Foundation client.  
   

@@ -37,7 +37,7 @@ Detail fields are written to the relational warehouse database, but not to the c
 > |Revised Date|The date and time stamp when a test case or shared step is revised.<br/> **Note:**  This field is not included in the work item form and is not populated with any data.<br/><br/>Reference name: System.RevisedDate|DateTime|  
 
 <a name="dimension"></a> 
-##  Dimension fields  
+## Dimension fields  
  Dimension fields are written both to the relational warehouse database and to the cube.  
   
 > [!div class="mx-tdCol2BreakAll"]
@@ -82,7 +82,7 @@ Detail fields are written to the relational warehouse database, but not to the c
 > |Title|A short description that summarizes what the work item is and helps users to distinguish it from other work items in a list.<br/><br/>Reference name: System.Title|String|  
 > |Work Item Type|The name of the work item type.<br/><br/>Reference name: System.WorkItemType|String|  
   
-##  <a name="measure"></a> Measure fields  
+## <a name="measure"></a> Measure fields  
  Measure fields are written to the data warehouse and contain pre-calculated sum values.  
   
 > [!div class="mx-tdCol2BreakAll"]

@@ -5,7 +5,8 @@ description: Add or modify categories to your process template for Team Foundati
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 93f146df-8424-4183-89f7-298943eb8c0f
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 09/08/2017
@@ -22,8 +23,8 @@ The default process templates define over ten categories that are used to suppor
 After a project is created from the process template, you can [export and import categories](../witadmin/witadmin-import-export-categories.md) for a project collection by using the **witadmin** command-line tool.  
   
 
-<a name="create"></a> 
-##  Define categories  
+<# Dme="create"></a> 
+## Define categories  
 
 The file that defines the categories must conform to the schema definition for categories, defined in the categories-01.xsd file, and must be specified in its own file in the **WITD** container element.  
   
@@ -40,7 +41,7 @@ The following example shows the syntax structure that defines a category that is
 ```  
   
 <a name="upload"></a> 
-##  Specify a category definition file to upload  
+## Specify a category definition file to upload  
  To upload a set of category definitions, you specify the **CATEGORIES** element within the **taskxml** element. The filename attribute is a relative path of the category definition file. For example, the following syntax specifies that the categories.xml file will be uploaded.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -63,7 +64,7 @@ The following example shows the syntax structure that defines a category that is
 ```  
   
 <a name="elements"></a> 
-##  CATEGORIES element reference  
+## CATEGORIES element reference  
  The following table describes the **CATEGORIES** element that you use to upload the category definition file. You specify this element within a **taskXml** container element in the WorkItemTracking plug-in file.  
   
 > [!NOTE]

@@ -38,7 +38,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the reports  
+## <a name="Data"></a> Data in the reports  
  The Testing Gaps reports show the cumulative count of test results for the test plans, test configurations, and test cases that are defined for a team project. All reports are based on PivotTables that access data that is stored in the data warehouse.  
   
 ### Test coverage of user stories  
@@ -75,7 +75,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
 |-------------|------------|  
 |-   **Team Project - Team Project Hierarchy**: Includes builds that are defined for the selected team project.<br />-   **Build - Build Pipeline Name**: Includes builds that are associated with the selected build pipelines.|-   **Build Coverage - Lines Covered**: The number of lines that are covered in the selected build.<br />-   **Build Coverage - Lines Not Covered**: The number of lines that are not covered in the selected build.<br />-   **Build Coverage - Lines Partially Covered**: The number of lines that are partially covered in the selected build. **Note:**      If multiple runs are performed against a build, the build coverage reflects the combined coverage of the runs, taking into consideration that there might be overlap in the lines covered across the runs.<br />-   **Build - Build Name**: The name of the build. Each time that a build is run, it is assigned a name that contains the build pipeline name as its prefix.<br />-   **Assembly - Assembly**: The assembly name against which the coverage statistics were generated.|  
   
-##  <a name="RequiredActivities"></a> Required activities for monitoring testing gaps  
+## <a name="RequiredActivities"></a> Required activities for monitoring testing gaps  
  For the Testing Gaps reports to be useful and accurate, the team must perform the activities that are described in the following table:  
   
 |Worksheet report|Required activities|  
@@ -86,7 +86,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
 |-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed|-   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case. The **Test Result - Iteration Hierarchy** and **Test Result - Area Hierarchy** fields get their values from the **Iteration** and **Area** paths that are assigned to their corresponding test cases.|  
 |-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed<br />-   Code Coverage|-   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.|  
   
-##  <a name="Updating"></a> Updating and Customizing the Report  
+## <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Testing Gaps report by opening it in Office Excel and changing the filter options for the PivotTable report for one of the worksheets. You can customize each report to support other views, as the following table describes.  
   
 |Worksheet|View|Action|  

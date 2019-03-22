@@ -85,7 +85,7 @@ This API is often used in combination with other work item tracking APIs for man
 
 For all of the work items samples, check out the [samples page](./samples.md).
 
-##	Get a list of work items
+## Get a list of work items
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={version}&ids={string}[&fields={string}&asOf={DateTime}&$expand={enum{relations}&ErrorPolicy={string}]
@@ -305,7 +305,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fi
 * [C# (GetWorkItemsAsOfDate method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L67)
 
 
-###  With links and attachments
+### With links and attachments
 <a name="withlinksandattachments" />
 
 #### Sample request
@@ -576,7 +576,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&$e
 * [C# (GetWorkItemsWithLinksAndAttachments method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L98)
 
 
-##	Get a work item
+## Get a work item
 <a name="getaworkitem" />
 
 ```no-highlight
@@ -653,7 +653,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?api-version=1.
 * [C# (GetWorkItemsByID method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L122)
 
 <a name="getaworkitemwithlinksandattachments" />
-###  With links and attachments
+### With links and attachments
 
 #### Sample request
 
@@ -728,7 +728,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?$expand=relati
 ```
 
 
-###  Fully expanded
+### Fully expanded
 <a name="fullyexpanded" />
 
 #### Sample request
@@ -822,7 +822,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?$expand=all&ap
 * [C# (GetWorkItemFullyExpanded method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemsSample.cs#L140)
 
 
-##  Get default values
+## Get default values
 <a name="getdefaultvalues" />
 
 Get the default values that will be filled in automatically when you create a new work item of a specific type.

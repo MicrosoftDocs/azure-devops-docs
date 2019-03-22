@@ -43,7 +43,7 @@ By using the Test perspective, you can create reports that answer the following 
   
  
 <a name="example_report"></a>  
-##  Example: Progress report for testing user stories  
+## Example: Progress report for testing user stories  
  By using PivotTable and PivotChart reports in Excel, you can create a status report that shows the test progress on user stories, similar to the report in the following illustration.  
   
  ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
@@ -78,7 +78,7 @@ By using the Test perspective, you can create reports that answer the following 
   
 5.  Drag the **Outcome** field from under the **Test Result** dimension to the **Column Labels** area.  
   
-##  <a name="measures"></a> Test measures  
+## <a name="measures"></a> Test measures  
  The following table describes the measures that the Test measure group includes. You can analyze test results by the aggregate of tests results and their outcome for a particular build or by the changed outcome for a test result.  
   
 |**Measure**|**Description**|  
@@ -89,10 +89,10 @@ By using the Test perspective, you can create reports that answer the following 
 |Result Transition Count|Counts all the results whose outcome changed in a particular build. Use this measure when you want to determine which tests were affected by a particular build.|  
 |Test Case Count|Number of test cases. Use this measure when you want to determine how many test cases were run for a particular test run or build.|  
   
-##  <a name="dimensions"></a> Dimensions and attributes in the Test Perspective that support filtering and categorization  
+## <a name="dimensions"></a> Dimensions and attributes in the Test Perspective that support filtering and categorization  
  By using the attributes that this section describes, you can aggregate a measure, filter a report, or specify a report axis. These attributes are in addition to the **Team Project** and **Date** shared dimensions that [Working with shared dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes.  
   
-###  <a name="build"></a> Build, build flavor, and build platform dimensions  
+### <a name="build"></a> Build, build flavor, and build platform dimensions  
  You can filter test reports based on build pipeline, build flavor, or build platform by using the attributes that the following table describes.  
   
 |Dimension|Attribute|Description|  
@@ -107,7 +107,7 @@ By using the Test perspective, you can create reports that answer the following 
 |Build Platform|Build Platform|The name of the machine platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). |  
   
 <a name="test_case"></a> T
-###  Test case, test configuration, test plan, and test suite dimensions  
+### Test case, test configuration, test plan, and test suite dimensions  
 
 The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspond to how you can organize, configure, automate, and run tests by using Microsoft Test Manager.  
   
@@ -128,7 +128,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
 ||Suite Path|Corresponds to the hierarchy of test suites that are configured for all team projects in all team project collections.|  
   
 <a name="test_result"></a> 
-###  Test result dimension  
+### Test result dimension  
  The following table lists all dimensions and attributes that are specific to the test measures in the cube. Before you can report on **Failure Type** or **Resolution**, the test team must populate this information as part of their test activities.  
   
 |Attribute|Description|  
@@ -142,7 +142,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
 |Test Result Priority|The priority of a particular test within a test run.|  
   
 <a name="test_run"></a> 
-###  Test run dimension  
+### Test run dimension  
 
 The following table describes the attributes that are defined for the Test Run dimension. Many of these attributes correspond to parameters that the test team specifies when it runs tests.  
   
@@ -157,12 +157,12 @@ The following table describes the attributes that are defined for the Test Run d
 |Test Run Title|Corresponds to the title that is assigned to the test run that the test team created or published. Corresponds to the `tcm /title` switch.|  
   
 <a name="work_item"></a> 
-###  Work item and work item linked dimensions  
+### Work item and work item linked dimensions  
 You can link test cases to other work items such as user stories, requirements, and bugs. By using the Work Item Linked dimension, you can create a report that provides test results that relate to the linked work items. The progress report for testing user stories, described earlier in this topic, provides an example of using the linked work item.  
   
  For a description of each attribute, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
   
-##  <a name="tracking"></a> Required activities  
+## <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
 -   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)    

@@ -24,7 +24,7 @@ You can use the Build dashboard to obtain an overview of the development activit
   
  Same requirements defined in [Project portal dashboards](project-portal-dashboards.md).  
   
-##  <a name="Data"></a> Data displayed in the dashboard  
+## <a name="Data"></a> Data displayed in the dashboard  
  The team can use the Build dashboard to monitor the quality of builds and determine whether a member of the team must take specific steps to correct build failures. To learn about the Web Parts that are displayed on the Build dashboard, refer to the illustration and the table that follow.  
   
  ![Build Quality Dashboard](_img/procguid_dashboard_buildquality.png "ProcGuid_Dashboard_BuildQuality")  
@@ -41,7 +41,7 @@ You can use the Build dashboard to obtain an overview of the development activit
 |![Step 5](_img/procguid_6.png "ProcGuid_6")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number. This list is derived from a Team Web Access Web Part.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|Not applicable|  
 |![Step 6](_img/procguid_6a.png "ProcGuid_6a")|List of the most recent check-ins. You can view more details by choosing a specific check-in. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md)|  
   
-##  <a name="Activities"></a> Required activities for tracking builds  
+## <a name="Activities"></a> Required activities for tracking builds  
  For the reports shown in the Build dashboard to be useful and accurate, the team must perform the following activities:  
   
 -   **Configure a build system**. To use Team Foundation Build, you must set up a build system.  
@@ -67,7 +67,7 @@ You can use the Build dashboard to obtain an overview of the development activit
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  
   
-##  <a name="Using"></a> Monitor builds  
+## <a name="Using"></a> Monitor builds  
  The team can use the Build dashboard to monitor the quality of builds and the level of code coverage that they are testing. Ideally, code coverage is high, and code churn is low or falling. Depending on your team goals, code coverage should be 80% to 100%.  
   
  You can use the Code Coverage and Code Churn reports to answer the questions that are listed in the following table.  

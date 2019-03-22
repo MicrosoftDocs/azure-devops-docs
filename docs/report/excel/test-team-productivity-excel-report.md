@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: cd899058-1200-4b1f-8fb2-4cecec8b0c05
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -33,8 +34,8 @@ Teams who are responsible for testing software can use the Test Team Productivit
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Reports  
+ # <
+## <a name="Data"></a> Data in the Reports  
  The test activity reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   
  The bug activity reports are available only when the team creates bugs and starts to resolve bugs.  
@@ -70,8 +71,8 @@ Teams who are responsible for testing software can use the Test Team Productivit
 |Filters|Fields|  
 |-------------|------------|  
 |-   **Team Project - Team Project Hierarchy**: Includes work items that are defined for the selected team project.<br />-   **Work Item - Work Item.Iteration Hierarchy**: Includes work items that are assigned to the selected iteration paths.<br />-   **Work Item - Work Item.Area Hierarchy**: Includes work items that are assigned to the selected product areas.<br />-   **Work Item - Work Item.Work Item Type**: Includes only the selected work items. For these reports, bug is selected.<br /><br /> **Filter specific to the Bugs Created by User report**:<br /><br /> -   **Work Item - Rev=1**: Selects data that is contained in the first revision of the work item to include in the report.<br /><br /> **Filters specific to the Bug Effectiveness report**:<br /><br /> -   **Work Item - State**: Includes work items that are in the selected state. For this report, includes bugs that are in the **Resolved** state.<br />-   **Work Item - Work Item.Previous State**: Includes work items whose previous state was in one of the selected states. For this report, includes bugs whose previous state was **Active**.<br />-   **Date - Year Month Date=All**: Includes work items that contain data that corresponds to the previous filters in the list during the selected time periods. For this report, **All** time periods are included.|**Fields specific to Bugs Created by User report**:<br /><br /> -   **Work Item - Created By**: Groups the report of bugs based on the test team member who created the bugs.<br />-   **(Measure) Work Item - Revision Count**: Counts the number of times that a work item has been modified. Because the report is filtered to only consider data contained in Revision 1 of each bug, the **Revision Count** provides the total number of new bugs that the test team member created.<br />-   **Date - Sets - Last 8 weeks**: The time span of activity to include in the report.<br /><br /> **Fields specific to Bug Effectiveness report**:<br /><br /> -   **Work Item - Reason**: The reason that the state of the work item changed. For the Bug Effectiveness report, this provides the groupings of **As Designed**, **Cannot Reproduce**, **Duplicate**, and **Fixed**.<br />-   **(Measure) Work Item - State Change Count**: Indicates the number of times that a team member changed the state of the work item. For the Bug Effectiveness report, this field indicates how often the bug has been reactivated.<br />-   **Work Item - Created By**: Groups the report of bugs based on the test team member who created the bugs.|  
-  
-##  <a name="RequiredActivities"></a> Required Activities for Tracking Test and Bug Activity  
+ # <
+## <a name="RequiredActivities"></a> Required Activities for Tracking Test and Bug Activity  
  For the test activity reports to be useful and accurate, the team must perform the following activities:  
   
 -   [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
@@ -90,8 +91,8 @@ Teams who are responsible for testing software can use the Test Team Productivit
 -   Update the **State** of each bug as the team fixes, verifies, closes, or reactivates it and accurately set the **Reason** field every time that the bug changes state.  
   
 -   (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each bug.  
-  
-##  <a name="Updating"></a> Updating and customizing the reports  
+ # <
+## <a name="Updating"></a> Updating and customizing the reports  
  You can update the Test Team Productivity report by opening it in Office Excel and changing the filter options for the PivotTable report for one of the worksheets. You can customize each report to support other views, as the following table describes.  
   
 |View|Action|  

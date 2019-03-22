@@ -236,7 +236,7 @@ In addition to the built-in controls provided, you may find additional controls 
  
 
 <a name="Labeling">  </a> 
-###  Label fields and add fields in two places on the form  
+### Label fields and add fields in two places on the form  
  For each form control, you can specify an optional label and the position of the label by using the `Label` and `LabelPosition` attributes. The label can specify a different name than the friendly name that is assigned by the `FIELD` element. If you do not specify a label, the friendly name is used. However, note that the friendly name is always used when a team member runs a query to search for work items. The maximum label size is 80 characters.  
   
 > [!NOTE]  

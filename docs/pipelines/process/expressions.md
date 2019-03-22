@@ -158,13 +158,13 @@ Depending on context, other functions may be available as well.
 
 ::: moniker-end
 
-### ge
+### Ge
 * Evaluates `True` if left parameter is greater than or equal to the right parameter
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
 
-### gt
+### Gt
 * Evaluates `True` if left parameter is greater than the right parameter
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.

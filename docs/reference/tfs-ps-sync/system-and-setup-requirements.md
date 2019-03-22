@@ -18,7 +18,7 @@ ms.date: 01/12/2017
 <a name="Top"></a>
 You can synchronize data between Visual Studio Team Foundation Server (TFS) and Office Project Server by installing Team Foundation Server Extensions for Project Server. You can install the extensions on Project Server 2010 with SP1 or Project Server 2013. 
   
-##  <a name="prereq"></a> Prerequisite software  
+## <a name="prereq"></a> Prerequisite software  
  You must have the following software installed before you configure the integration between Team Foundation Server and Project Server:  
   
 -   **For administrators of Team Foundation Server**:  
@@ -84,7 +84,7 @@ You can also run Project Server on its own SharePoint farm, separate from any fa
 
 <a name="installreq"></a> 
 
-##  Installation requirements  
+## Installation requirements  
  The following table summarizes the software that you must install to support the data synchronization between the two server products. To install software, you must have administrative permissions on the machine where the software is installed.  
   
 |Software|Install on|  
@@ -93,7 +93,7 @@ You can also run Project Server on its own SharePoint farm, separate from any fa
 |Visual Studio Team Foundation Server 2013|Each application-tier server that hosts Team Foundation Server and that will participate in synchronizing data with Project Server. For more information, see [Install](/azure/devops/server/install/get-started).|  
 |Team Foundation Server Extensions for Project Server|Each web-tier and application-tier server that hosts Project Server  and that will participate in synchronizing data with Team Foundation Server.<br /><br /> For more information, see [How to: Add Project Server to Team Foundation Server](https://msdn.microsoft.com/library/hh548139.aspx).|  
   
-##  <a name="configreq"></a> Configuration requirements  
+## <a name="configreq"></a> Configuration requirements  
  Before you can synchronize data between the two server products, you must first configure several points of integration between them. The following sequence describes the main configuration elements that are required:  
   
 1.  **Project Server must be configured**. Before you configure the integration of TFS and Project Server, you must have configured Project Server to support your enterprise project plans. You must have defined at least once instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization.  
@@ -116,7 +116,7 @@ You can also run Project Server on its own SharePoint farm, separate from any fa
   
      For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md).  
   
-##  <a name="mapping"></a> Mapping components and the synchronization process  
+## <a name="mapping"></a> Mapping components and the synchronization process  
  To understand how components map to one another and the synchronization process, see the following topics:  
   
 -   [Map components](map-project-server-components.md)  

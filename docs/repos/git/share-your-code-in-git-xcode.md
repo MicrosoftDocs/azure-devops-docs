@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-#  Share your code in Git using Xcode
+# Share your code in Git using Xcode
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
 
 This guide shows you how to share your Xcode projects using Azure Repos. 

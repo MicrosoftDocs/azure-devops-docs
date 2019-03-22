@@ -26,7 +26,7 @@ ms.date: 01/12/2017
   
  To perform the procedures in this topic, your **Administer Project Server integration** permission for the project collection must be set to **Allow**. Also, the service account for TFS must be granted the necessary permissions to interact with the instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
-##  <a name="options"></a> Recommended update sequence  
+## <a name="options"></a> Recommended update sequence  
  To update an existing deployment to the latest version of Visual Studio Team Foundation Server, perform the following actions.  
   
 > [!NOTE]
@@ -47,7 +47,7 @@ ms.date: 01/12/2017
   
 -   Upgrade any clients that you will use to run `TfsAdmin ProjectServer` commands to Visual Studio 2013.  
   
-##  <a name="changes"></a> Changes introduced in the latest version of Visual Studio and TFS Extensions for Project Server  
+## <a name="changes"></a> Changes introduced in the latest version of Visual Studio and TFS Extensions for Project Server  
  Visual Studio Team Foundation Server 2013 and Team Foundation Server Extensions for Project Server introduce the following changes:  
   
 -   As part of upgrading an instance of TFS or deploying a new installation based on Visual Studio Team Foundation Server 2013, a new transform is introduced in the mapping of fields between TFS and Project Server. The new transform is applied to the **Remaining Work** and **Completed Work** fields. When the synchronization engine detects a hierarchy under a work item that is synchronized with Project Server, it performs a roll-up for the work and assignments to send to Project Server. However, with the `transformType` set to `ClearValueIfParent`, the synchronization engine clears the work fields on the parent work item to avoid incorrect data in reports. For more information, see [Field Mapping XML Element Reference](field-mapping-xml-element-reference.md).  

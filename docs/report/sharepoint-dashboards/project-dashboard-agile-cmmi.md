@@ -24,7 +24,7 @@ You can use the Project dashboard to track team progress toward completing an it
   
  Same requirements defined in [Project portal dashboards](project-portal-dashboards.md).  
   
-##  <a name="Data"></a> Data displayed in the dashboard  
+## <a name="Data"></a> Data displayed in the dashboard  
  You can use the Project dashboard to understand how much progress the team is making toward completing tasks. To learn about the Web Parts that are displayed on the Project dashboard, refer to the illustration and the table that follow.  
   
  ![Project dashboard &#40;Agile&#41;](_img/procg_dashboard_proj.png "ProcG_Dashboard_Proj")  
@@ -44,7 +44,7 @@ You can use the Project dashboard to track team progress toward completing an it
 |![Step 6](_img/procguid_6a.png "ProcGuid_6a")|List of recent builds and their status. You can view more details about a specific build by choosing it. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
 |![Step 7](_img/procguid_7.png "ProcGuid_7")|List of the most recent check-ins. You can view more details about a specific check-in by choosing it. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md)|  
   
-##  <a name="RequiredActivities"></a> Required activities for tracking task burndown and burn rate  
+## <a name="RequiredActivities"></a> Required activities for tracking task burndown and burn rate  
  For the reports that appear in the Project dashboard to be useful and accurate, the team must perform the following activities:  
   
 -   Define tasks.  
@@ -58,10 +58,10 @@ You can use the Project dashboard to track team progress toward completing an it
   
 -   (optional) Specify the **Iteration** and **Area** paths for each work item if you want to filter by those fields.  
   
-##  <a name="Using"></a> Track an iteration  
+## <a name="Using"></a> Track an iteration  
  By using the Project dashboard, product owners and the team can view the team's progress and determine whether the team is making sufficient progress.  
   
-###  <a name="Modify"></a> Modify the Task Burndown Report for an iteration  
+### <a name="Modify"></a> Modify the Task Burndown Report for an iteration  
  To track an iteration by using the Project Dashboard, you must modify the parameters for the Task Burndown and Burn Rate reports in Report Manager to reflect the start and end dates for your iteration. By default, the start date is five days before the current date.  
   
 ##### To modify the Task Burndown and Burn Rate reports to correspond to a specific iteration  
@@ -124,7 +124,7 @@ You can use the Project dashboard to track team progress toward completing an it
   
 6.  Return to the Project Dashboard, and refresh the browser.  
   
-###  <a name="Progress"></a> Monitor progress  
+### <a name="Progress"></a> Monitor progress  
  To monitor team progress, you can review the **Task Burndown (hours)** report for the following types of indicators:  
   
 -   **Has Completed Work stopped increasing in the Task Burndown (hours) report?**  

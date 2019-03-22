@@ -82,7 +82,7 @@ The primary use of process templates is to create a project. For the Hosted XML 
 -   If you're considering making extensive customizations, [review how the changes you make will impact maintenance and upgrade of your projects](../on-premises-xml-process-model.md#before-you-customize).  
   
 <a name="plan"></a> 
-##  Process template files and functional areas you can customize  
+## Process template files and functional areas you can customize  
 Process templates consist of nine plug-ins. Each plug-in defines a set of tasks that will be run and the screens that appear when you launch the New Team Project wizard. Tasks set permissions, create folders, upload files, activate sites, or set other configurable variables. Plug-ins also specify the dependencies that a task has on the successful completion of other tasks.  
   
 ![Process Template Plugins](_img/tfs_pt_plugins.png "TFS_PT_Plugins")  
@@ -165,7 +165,7 @@ When you add objects to a process template, you will want to make sure that you 
 
 
 <a name="pt_workflow"></a> 
-##  Steps to customize a process template  
+## Steps to customize a process template  
  Customizing a process template is an iterative process. You will need a project collection that is defined on a server that is running Team Foundation Server where you can test your process template to make sure that it was customized correctly.  
   
  To customize a process template, you first download an existing process template, modify or add files, upload the process template files, and then verify your changes.  

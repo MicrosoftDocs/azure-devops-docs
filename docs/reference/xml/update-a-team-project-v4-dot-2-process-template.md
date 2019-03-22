@@ -230,7 +230,7 @@ Open a web portal and [determine if all features are available to you](../new-fe
 
 <a id="grant_permissions" /> 
   
-###  2. Grant permissions to test team members  
+### 2. Grant permissions to test team members  
  You must grant permissions to team members who will manage test environments and test configurations, create and view test runs, and perform other tasks.  
   
  The following table describes the permissions that control access to test functions and support interfacing with the project for testing. It also indicates the default assignments that are made in version 5.0 of the Agile and CMMI process templates, in addition to the recommended permissions to grant manual testers and test leads.  
@@ -265,7 +265,7 @@ After you have completed the upgrade tasks that are described earlier in this to
 
 
 <a id="additional_info" /> 
-##  Additional information about changes made when upgrading TFS  
+## Additional information about changes made when upgrading TFS  
 
  When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2010. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  
   

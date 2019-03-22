@@ -21,17 +21,17 @@ To better understand how these attributes are used to populate a field's drop-do
 
 <a name="ExpandListsAndGroups"></a> 
   
-##  Expand lists and groups  
+## Expand lists and groups  
  You can assign the values `true` and `false` to `expanditems`; its value is `true` by default. When `expanditems` has the value of `true`, list items that represent groups or global lists are expanded recursively. A group's subgroups are expanded; the subgroups of those subgroups are also expanded, and continues in this pattern. After expansion, list items that represented groups include both groups and users as list item values. If `expanditems` is set to `false`, no group or global list expansion is performed.  
 
 <a name="FilterListsAndGroups"></a> 
   
-##  Exclude groups  
+## Exclude groups  
  You can assign only the value `excludegroups` to the `filteritems` attribute. When this attribute appears, all the list items are evaluated and any groups are removed. Use the `filteritems` attribute to show only users, not groups.  
 
 <a name="ContentsOfListsAndGroups"></a> 
   
-##  Contents of lists and groups used in the examples  
+## Contents of lists and groups used in the examples  
  The examples provided in this topic use the following values:  
   
 <table Responsive="true" summary="table">

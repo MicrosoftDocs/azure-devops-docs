@@ -22,7 +22,7 @@ ms.date: 01/12/2017
   
  
   
-##  <a name="deleting"></a> Delete components  
+## <a name="deleting"></a> Delete components  
  Whenever you delete a mapped component, you should unmap it and review the following guidelines:  
   
 -   **Delete an enterprise project plan or a project**. Before you delete a mapped project plan or a mapped project, you must first unmap all project plans that are mapped to the project. For more information, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
@@ -34,7 +34,7 @@ ms.date: 01/12/2017
     > [!NOTE]
     >  If you delete not only a mapped project collection but also all instances of PWA that were mapped to it, you will remove all mappings of work items that have been synchronized. However, the instance of PWA that is registered to Team Foundation Server remains registered.  
   
-##  <a name="tpc"></a> Move or split a project collection  
+## <a name="tpc"></a> Move or split a project collection  
  To move a mapped collection to another instance of TFS and continue to synchronize data on the new application-tier server, you must perform several steps, based on the following choices:  
   
 -   All collections move to a different instance of TFS but remain mapped to the same instance of PWA. A recommended practice is to move or split all collections that are mapped to the same instance of PWA at the same time.  
@@ -94,7 +94,7 @@ ms.date: 01/12/2017
   
 -   [Manage mappings](manage-mappings-enterprise-project-team-project.md)  
   
-##  <a name="tfs"></a> Move a Team Foundation Server to a new machine or environment  
+## <a name="tfs"></a> Move a Team Foundation Server to a new machine or environment  
  You must re-register each instance of PWA that is registered with the current machine.  
   
 #### To move an instance of Team Foundation Server to which an instance of PWA is mapped  
@@ -116,7 +116,7 @@ ms.date: 01/12/2017
 > [!NOTE]
 >  You must specify the **/force** switch when you move the project collection to a different instance of Team Foundation Server. If the instance identifier has not changed, you do not have to specify the **/force** switch.  
   
-##  <a name="upgrading"></a> Upgrade from Project Server 2007 to Project Server 2010  
+## <a name="upgrading"></a> Upgrade from Project Server 2007 to Project Server 2010  
  If you have an instance of Project Web Access that is registered to TFS and the synchronization process is running for a collection, you must perform the following procedures before you upgrade the instance from Project Server 2007 to Project Server 2010:  
   
 1.  Perform the steps on the following page of the Microsoft website: [Database-attach full upgrade to Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=211859)  

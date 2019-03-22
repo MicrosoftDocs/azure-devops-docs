@@ -19,7 +19,7 @@ ms.topic: overview
 You can manage the integration of Visual Studio Team Foundation Server 2013 and Microsoft Project Server more effectively if you understand how the synchronization engine manages the flow of data between the two server products. The synchronization engine supports the independent workflows of project managers who work in Project Professional and team leads and team members who work in Team Foundation. Deliverables and tasks can evolve independently in each area.  
 
  
-##  <a name="Three-WaySync"></a> Three types of synchronization  
+## <a name="Three-WaySync"></a> Three types of synchronization  
  The synchronization engine performs three types of synchronization. This process captures and updates task-related and resource-related data in both TFS and Project Server while respecting the ownership of data by the project manager in the project plan. Project managers make changes by using Microsoft Project Professional and approve updates through Project Web Access or Project Web App (PWA). Development team members submit updates to Project Server by using a client of Team Foundation.  
   
  As the following illustration shows, data synchronization consists of seven main steps.  
@@ -64,7 +64,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
  
   
-##  <a name="DataSynced"></a> Data that is subject to synchronization  
+## <a name="DataSynced"></a> Data that is subject to synchronization  
  Two levels of configuration determine which objects can participate in synchronization and what data becomes synchronized. Administrators for Team Foundation perform several levels of mapping to configure the objects that can participate in synchronization. At the second level, project managers and users of Team Foundation control which specific tasks and work items are synchronized.  
   
   
@@ -91,7 +91,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
 <a name="DataValidation"></a> 
 
-##  Data validation performed during updates and upon submission  
+## Data validation performed during updates and upon submission  
  The synchronization process validates tasks and work items that have been tagged for synchronization before they are published to Project Server. Data validation is enforced in both the enterprise project plan and the project.  
   
 ### When project managers publish an enterprise project plan  
@@ -136,7 +136,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
 <a name="ConflictResolution"></a> 
 
-##  Mirror fields and "Two Sets of Books"    
+## Mirror fields and "Two Sets of Books"    
  Because the synchronization engine performs three types of synchronization and communicates with two databases in a scheduled negotiation, no data merging occurs. Instead, data synchronization occurs in a two-step sequence, and the engine allows for divergence between the two products. For each synchronized field in Team Foundation, you define a mirror field that stores the value in Project Server for the corresponding mapped field. During regular synchronization operations, the values for the two fields will differ from the time when a value is updated in Team Foundation Server until the project manager approves the update and publishes the project plan.  
   
  For each field that you map, you specify one of the following choices for how you want the synchronization engine to update the reference field in Team Foundation:  
@@ -162,7 +162,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 <a name="ErrorNotification"></a>   
-##  Error notification, event logging, and traceability  
+## Error notification, event logging, and traceability  
  The synchronization engine processes project updates that are published to Project Server, then status updates, and then approval updates. When you publish, you update Project Server, adding tasks and task details to the enterprise project plan. Publishing synchronization pulls the data from Project Server into Team Foundation Server. Status synchronization pulls data from Team Foundation to update the project manager's approval queue, and approval synchronization publishes updates on fields such as remaining work and completed work to Project Server, which initiates a new cycle of synchronization.  
   
  Each type of synchronization enables the display of relevant status and error messages to the project manager in either Project Professional or the instance of PWA. Also, status and error messages that are associated with the synchronization engine and its configuration can also be written to the appropriate administration interfaces for Team Foundation Server and Project Server.  

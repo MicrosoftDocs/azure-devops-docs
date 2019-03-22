@@ -104,7 +104,7 @@ Gets the latest versions of all items in the workspace. For example, the above c
 
 Gets the latest version of all C\# (.cs) files in `c:\\code\\SiteApp\\Main\\SolutionA\\Project1`.
 
-###  Get the latest version of a file
+### Get the latest version of a file
 
     c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs
 

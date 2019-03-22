@@ -36,7 +36,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data That Appears in the Report  
+## <a name="Data"></a> Data That Appears in the Report  
  The data that appears in the Build Success Over Time report is derived from the data warehouse. The report summarizes build and test results for a set of build definitions in one or more projects over time.  
   
  The chart shows a separate row for each combination of build definition, platform, and configuration. The report shows only those combinations that fall within the filters that you have specified for the report. At a glance, you can determine the success or failure of builds for the time period under review, as the following illustration shows.  
@@ -78,7 +78,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  
   
-##  <a name="Duration"></a> Setting the Duration of the Report  
+## <a name="Duration"></a> Setting the Duration of the Report  
  To understand the progress that your team is making in your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
   
 #### To change the duration of the iteration  
@@ -87,7 +87,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 2.  Click **View Report**.  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+## <a name="Interpreting"></a> Interpreting the Report  
  You should expect the Build Success Over Time report to vary based on where you are in your product development cycle. Early iterations often exhibit some builds and tests failing. By reviewing the report together with the team early and often, you might be better able to focus efforts toward creating stable builds with high rates of tests passing.  
   
 ### Questions That the Report Answers  
@@ -110,7 +110,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
  ![Healthy and Unhealthy version of Build Success](_img/procguid_buildsuccess_unhealthy.png "ProcGuid_BuildSuccess_Unhealthy")  
   
-##  <a name="Changing"></a> Filtering the Report  
+## <a name="Changing"></a> Filtering the Report  
  You can filter the Build Success Over Time report in the following ways:  
   
 -   Change the start and end dates for the report.  

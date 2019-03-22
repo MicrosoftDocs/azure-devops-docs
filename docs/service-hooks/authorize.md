@@ -12,7 +12,7 @@ author: elbatk
 ms.date: 2/08/2019
 ---
 
-#  Authorize other services to access your Azure DevOps Services account
+# Authorize other services to access your Azure DevOps Services account
 
 When you use a service that's integrated with Azure DevOps Services,
 we use the industry-standard OAuth 2.0 authorization framework to provide safe,

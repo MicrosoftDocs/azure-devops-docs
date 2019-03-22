@@ -30,7 +30,7 @@ Teams can quickly find important information about their team projects by using 
 -   To view the dashboard, you must be assigned or belong to a group that has been assigned **Read** permissions in SharePoint Products for the team project. See [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).  
 -   To create or modify work items from the dashboard, you must be a member of the **Contributors** group or your **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../organizations/security/set-sharepoint-permissions.md).  
   
-##  <a name="Available"></a> Dashboards available to you  
+## <a name="Available"></a> Dashboards available to you  
  The dashboards that are available to you depend on the version of SharePoint Products that is installed on your portal and the process template used to create your team project. The following dashboards are installed with the Agile and CMMI process templates. When you create a team project with the Scrum process template, you only have access to the [Release dashboard](release-scrum.md).  
   
 |Task|SharePoint Server Standard Edition|SharePoint Server Enterprise Edition|  
@@ -43,7 +43,7 @@ Teams can quickly find important information about their team projects by using 
 |**Monitor bug activity**. Use the [Bugs dashboard](bugs-dashboard-agile-cmmi.md) to track the team's progress toward finding and resolving code defects and to answer the following questions:<br /><br /> -   Is the team fixing bugs quickly enough to finish on time?<br />-   Is the team fixing high priority bugs first?<br />-   What is the distribution of bugs by priority?<br />-   How many bugs are being reactivated?<br />-   Is the team resolving and closing reactivated bugs quickly enough?||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |**Monitor code coverage, code churn, and build activity**. Use the [Build dashboard](build-dashboard-agile-cmmi.md) to track the quality of the builds and to answer the following questions:<br /><br /> -   How much code is being tested?<br />-   How much is the code changing every day?<br />-   Is the quality of the builds improving? **Note:**  If you use Git for version control, code churn and code coverage report data are not available.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
   
-##  <a name="Sample"></a> Dashboards and web parts  
+## <a name="Sample"></a> Dashboards and web parts  
  Dashboards use SharePoint Products to display web parts. You can add many types of web parts to a dashboard.  TFS web parts show lists of work items, work item counts, and other project data that is derived from TFS databases. These are the web parts that TFS provides:  
   
 -   Completed Builds Web Part  
@@ -71,12 +71,12 @@ Teams can quickly find important information about their team projects by using 
 |![Step 8](_img/procguid_8.png "ProcGuid_8")|**Recent Builds**|Completed Builds Web Part|A list of recent builds and their build status. You can view more details by clicking a specific build.|  
 |![9](_img/procguid_9.png "ProcGuid_9")|**Recent Checkins**|Recent Check-ins Web Part|A list of the most recent check-ins. You can view more details by clicking a specific check-in.|  
   
-##  <a name="DashboardToolbar"></a> Use the dashboard toolbar  
+## <a name="DashboardToolbar"></a> Use the dashboard toolbar  
  From the dashboard toolbar, you can create a work item, an Excel report, or a copy of the current dashboard. Or, you can open a work item based on its ID. The following illustration shows these functions.  
   
  ![Dashboard toolbar](_img/procguid_toolbar_dashboard.png "ProcGuid_Toolbar_Dashboard")  
   
-##  <a name="WorkItemToolbar"></a> Use the work item toolbar  
+## <a name="WorkItemToolbar"></a> Use the work item toolbar  
  By using the following toolbar which is displayed within a work item query web part, you can perform the functions that the following illustration summarizes.  
   
  ![Toolbar for Query Results Web Part](_img/procguid_dashboardworkbook_toolbar.png "ProcGuid_DashboardWorkbook_Toolbar")  
@@ -89,7 +89,7 @@ Teams can quickly find important information about their team projects by using 
 -   Send work items to Office Outlook.    
 -   Create a linked work item.  
   
-##  <a name="Customizing"></a> Customize a dashboard  
+## <a name="Customizing"></a> Customize a dashboard  
 Here's how you can customize a SharePoint dashboard:    
 -   Add columns, or sort columns in an existing work item list.    
 -   Change the query that is referenced by one of the existing work item lists.    

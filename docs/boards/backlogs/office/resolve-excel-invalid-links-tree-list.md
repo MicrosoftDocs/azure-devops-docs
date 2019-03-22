@@ -38,7 +38,7 @@ If you add a value to multiple Title columns of a work item, when you try to pub
  
 <a name="TF208001"></a> 
  
-##  TF208001: Child work item disconnected from parent  
+## TF208001: Child work item disconnected from parent  
 
 If you remove the title of a child work item, when you try to publish the work item list the error message **TF208001** appears in the **Work Item Publishing Errors** dialog box. The error message specifies the row number of the invalid link. This error message also appears if you create an invalid link structure by putting the title of a child work item into the wrong column.  
   
@@ -61,7 +61,7 @@ If you remove the title of a child work item, when you try to publish the work i
 5.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
   
 <a name="tf208017"></a> 
-##  TF208017: Missing Title 1 in the first row  
+## TF208017: Missing Title 1 in the first row  
 
 If the first work item in the list has no value in the **Title 1** column, the error message **TF208017** appears in the **Work Item Publishing Errors** dialog box when you try to publish the work item list.  
  
@@ -81,7 +81,7 @@ If the first work item in the list has no value in the **Title 1** column, the e
 3.  On the **Team** tab, in the **Work Items** group, choose **Publish**.  
   
 <a name="tf208022"></a> 
-##  TF208022: Sorted tree list  
+## TF208022: Sorted tree list  
 
 If you have not installed Service Pack 1 for Visual Studio 2010 or later version, the following error message appears when you choose **Publish** after you have sorted the work items in a tree list:  
   
@@ -99,7 +99,7 @@ You cannot publish your changes until you re-establish the tree hierarchy. You c
 -   Manually restore the tree hierarchy by moving the row entries of child items under their parent items. Then, on the **Team** tab, in the **Work Items** group, choose **Publish**.  
   
 <a name="tf208102"></a> 
-##  TF208102: Excel sort on a tree list  
+## TF208102: Excel sort on a tree list  
 
 The following error message appears if you sort the work items in a tree list in Excel:  
   
@@ -119,7 +119,7 @@ This message indicates that you can publish the changes that you made to the fie
 2.  Choose **Refresh**.  
 
 <a name="tf208104"></a>   
-##  TF208104: Hierarchical link Relationship is locked  
+## TF208104: Hierarchical link Relationship is locked  
  If you publish a worksheet that contains work items that are synchronized with Project Server and whose hierarchical link relationships are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")), the following error message may appear:  
   
 >TF208104: You have modified one or more hierarchical link relationships that may have been locked by other processes, such as Project Server.

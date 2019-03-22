@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-#  Rename a Git repository in your project
+# Rename a Git repository in your project
 #### Azure Repos | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team will have to take a few steps to re-enable their dev machines to connect to the repo on the server.

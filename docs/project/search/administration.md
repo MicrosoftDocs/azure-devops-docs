@@ -42,7 +42,7 @@ All users have access to Work Item and Wiki Search.
 *****
 
 <a name="config-ts-azuredevops"></a>
-##  Install the Search extension in Azure DevOps Services
+## Install the Search extension in Azure DevOps Services
 
 * For Work Item and Wiki search, there is no installation required because these are built-in features of Azure DevOps Services.
 

@@ -67,7 +67,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebi
 
 * [C# (GetDeleteWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L15)
 
-##	Get a deleted item in the recycle bin
+## Get a deleted item in the recycle bin
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin/{id}?api-version={version}
@@ -151,7 +151,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.
 
 * [C# (GetDeleteWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L28)
 
-##	Get multiple deleted items in the recycle bin
+## Get multiple deleted items in the recycle bin
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin?ids={ids}&api-version={version}

@@ -69,7 +69,7 @@ The following values apply in each example:
 -   Port number for the server website: 8080  
 
 <a name="quick_add"></a>   
-###  To add a field to the quick add panel  
+### To add a field to the quick add panel  
 
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.  
   

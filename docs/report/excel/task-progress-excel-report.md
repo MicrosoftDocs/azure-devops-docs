@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 7deef86f-987f-4b77-8acc-e31d436b48cf
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -25,8 +26,8 @@ You can use the Task Progress report to track how much work the team has complet
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  You can use the Task Progress report to track how much work remains to be completed. This report is based on a PivotChart report that shows the last four weeks of data that is captured for Tasks and that is stored in the data warehouse.  
   
  ![Task Progress Excel Report](_img/procguid_exceltask.png "ProcGuid_ExcelTask")  
@@ -39,8 +40,8 @@ You can use the Task Progress report to track how much work the team has complet
 -   Change the **State** of each Task to **Closed** as the team completes it.  
   
 -   (optional) Specify the **Iteration** and **Area** paths of each Task if you want to filter by those fields.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  You should expect the Task Progress report to vary based on where you are in your product development cycle. Early iterations should show a gradual increase in the number of active Tasks. Iterations that are near the end of a product cycle should show a wide band of closed Tasks.  
   
  You can review the report to determine the progress over time or during an iteration. Specifically, you can find answers to the following questions:  
@@ -50,8 +51,8 @@ You can use the Task Progress report to track how much work the team has complet
 -   Is the team adding work?  
   
  For information about healthy and unhealthy versions of the report, see [Remaining Work](../sql-reports/remaining-work-report.md).  
-  
-##  <a name="Updating"></a> Updating and Customizing the Report  
+ # <
+## <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Task Progress report by opening the report in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
   
 |View|Action|  

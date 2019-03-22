@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/28/2017
 ---
@@ -31,8 +32,8 @@ Requirements describe what the stakeholders expect from the product. You should 
  this article does not attempt to replicate the very large body of literature that is available on the subject of determining requirements. Instead, it focuses on the aspects that are important for using the Visual Studio tools in a manner that conforms to CMMI. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
   
  The activities that are described in this article, like any development activities, should not be performed in strict order. Develop a domain model while you are writing scenarios because one activity will help you improve the other activity. Develop the scenarios as the time for coding them approaches. Feed the experience with code that has been written and demonstrated back to the scenarios that have yet to be implemented.  
-  
-##  <a name="When"></a> When to develop requirements  
+ # <
+## <a name="When"></a> When to develop requirements  
  TFS supports iterative working, and this practice is most effective when the early iterations are used to gain feedback from prospective users and other stakeholders. This feedback can be used to improve the requirements that have been stated for future iterations. This results in a product that is much more effective in its ultimate installation than a product that is developed over the same period without any user trial. If your project is one component among many in a larger program, early integration with other components allows the program architects to improve the overall product.  
   
  This flexibility must be balanced against the need to give firm commitments to your customer or to partners in parallel projects.  
@@ -61,15 +62,15 @@ Requirements describe what the stakeholders expect from the product. You should 
 -   Designate a cut-off date (for example, after iteration 2 or 3) after which requirements changes must be much more strongly justified. If your project is for a paying customer, this is the date to have the customer approve a baseline set of requirements and switch from hourly payment to fixed price.  
   
 -   Use bug work items to record implemented behavior that does not perform according to the explicit or implicit requirements. Where practical, create a new test that would have caught the bug.  
-  
-##  <a name="Vision"></a> Write a vision statement  
+ # <
+## <a name="Vision"></a> Write a vision statement  
  Discuss a vision statement with the team, and display it on the project's Web portal for Team Foundation Server.  
   
  A vision statement is a short summary of what benefit the product will bring. What will the users be able to do that they could not do before? The vision statement helps clarify the scope of the product.  
   
  If the product already exists, write a vision statement for this version. What will the product's users be able to do that they could not do before?  
-  
-##  <a name="Scenarios"></a> Write scenarios  
+ # <
+## <a name="Scenarios"></a> Write scenarios  
  Work with your customer and other stakeholders to create scenarios, and enter them as requirement work items, with the Requirement Type field set to Scenario.  
   
  A scenario or use case is a narrative that describes a sequence of events, shows how a particular goal is achieved, and usually involves interaction between people or organizations and computers.  
@@ -129,8 +130,8 @@ Requirements describe what the stakeholders expect from the product. You should 
     -   Draw generalization relationships between general scenarios such as "Customer pays" and specific variants such as "Customer pays by card."  
   
 -   Create parent-child links between scenario work items. You can view the hierarchy in Team Explorer. For more information, see [Arrange requirements into a product plan](arrange-requirements-into-a-product-plan.md).  
-  
-##  <a name="Model"></a> Model the business domain  
+ # <
+## <a name="Model"></a> Model the business domain  
  Create a UML model that describes the principal activities and concepts that are involved in the use of your product. Use the terms that are defined in this model as a "ubiquitous language," in the scenarios, in discussions with the stakeholders, in the user interface and any user manuals, and in the code itself.  
   
  Many requirements are not explicitly stated by your customer, and comprehending the implied requirements depends on an understanding of the business domain, that is, the context in which the product will work. Some of the work of requirements gathering in an unfamiliar domain is, therefore, about gaining knowledge of that context. After this kind of knowledge has been established, it can be used on more than one project.  
@@ -178,8 +179,8 @@ Requirements describe what the stakeholders expect from the product. You should 
 -   Every scenario describes a series of steps that are allowed by the activity diagrams.  
   
 -   Scenarios or activities describe how each class and relationship in the class diagram is created and destroyed. For example, what scenario creates a menu item? When is an order destroyed?  
-  
-##  <a name="QofS"></a> Develop Quality of Service Requirements  
+ # <
+## <a name="QofS"></a> Develop Quality of Service Requirements  
  Create work items that specify quality of service requirements. Set the Requirement Type field to Quality of Service.  
   
  Quality of service or non-functional requirements include performance, usability, reliability, availability, data integrity, security, afford-ability, service-ability and upgrade-ability, deliver-ability, maintainability, design, and fit and finish.  
@@ -191,8 +192,8 @@ Requirements describe what the stakeholders expect from the product. You should 
  In addition, it is useful to capture more detail that explains why the requirement is necessary. Describe why the persona would value the requirement and why this level of service is required. Provide context and justification. This explanation may include useful risk management information such as data from a market survey, a customer focus group, or a usability study; help desk reports/tickets; or other anecdotal evidence.  
   
  Link the quality of service requirement to any scenario (requirement work item) that is affected by the quality of service. Linking related work items allows users of Team Foundation Server to keep track of dependent requirements. Queries and reports can show how quality of service requirements affect the functional requirements that are captured as scenarios.  
-  
-##  <a name="Review"></a> Review requirements  
+ # <
+## <a name="Review"></a> Review requirements  
  When the requirements have been written or updated, they should be reviewed by the appropriate stakeholders to ensure that they adequately describe all user interactions with the product. Common stakeholders might include a subject matter expert, a business analyst, and a user experience architect. The scenarios are also reviewed to ensure that they can be implemented in the project without any confusion or problems. If any problems are spotted, the scenarios must be fixed so that they are valid at the conclusion of this activity.  
   
  Create a review work item to track the review. This item provides important evidence for a Standard CMMI Appraisal Method for Process Improvement (SCAMPI) appraisal and may provide a good source of information for root cause analysis in the future.  
@@ -214,15 +215,15 @@ Requirements describe what the stakeholders expect from the product. You should 
 -   The scenario does not conflict with another scenario.  
   
 -   The scenario is testable.  
-  
-##  <a name="Validate"></a> Validation  
+ # <
+## <a name="Validate"></a> Validation  
  Plan to deploy beta versions of the product into its working environment before its final release. Plan to update the requirements, based on stakeholder feedback from that deployment.  
   
  Validation means ensuring that the product fulfills its intended use in its operating environment. In MSF for CMMI, validation is achieved by demonstrating working software to the stakeholders at the end of every iteration throughout the project. The schedule is arranged in such a way that concerns that are fed back to the developers from early demonstrations can be dealt with in the plan for the remaining iterations.  
   
  To achieve true validation, the product must not only be run in a demonstration or simulated context. As far is as practicable, it should be tested in real conditions.  
-  
-##  <a name="Inspect"></a> Inspecting and editing the requirements  
+ # <
+## <a name="Inspect"></a> Inspecting and editing the requirements  
  The scenario and quality of service requirements, which lead to most development tasks, can be inspected by using the customer requirements query. If you prefer to display all requirements, you can [write a query](../../../queries/using-queries.md) that returns all work items of the requirement work item type. Set the columns of the result to show the iteration path.  
   
  Your team should create most requirements in the early iterations of the project. New requirements will be added and others adjusted as feedback is gained from early versions.  

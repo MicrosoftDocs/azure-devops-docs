@@ -128,7 +128,7 @@ Like Project, Project Server natively supports rollup of summary tasks. If you h
 ::: moniker-end 
 
 <a name="requirements"></a>   
-##  Rollup requirements  
+## Rollup requirements  
  To support rollup, structure your work items according to the following recommendations:  
   
 -   Use parent-child links to link work items that contain values that you want to rollup.  

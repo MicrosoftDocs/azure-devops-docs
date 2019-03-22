@@ -45,7 +45,7 @@ As an administrator, you should check the event logs for the application-tier se
  If the previous resolutions do not solve the problem, check the forum for administering Team Foundation Server. For more information, see the following page on the Microsoft website: [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](http://go.microsoft.com/fwlink/?LinkId=54490).  
   
 <a name="clearcache"></a> 
-##  To clear the cache on your client computer  
+## To clear the cache on your client computer  
   
 1.  Log on to your client computer for Team Foundation by using the credentials of the user whose cache you want to clear.  
   

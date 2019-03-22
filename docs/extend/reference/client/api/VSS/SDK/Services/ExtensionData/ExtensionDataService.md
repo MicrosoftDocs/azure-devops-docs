@@ -36,7 +36,7 @@ Provides a wrapper around the REST client for getting and saving extension setti
 * [queryCollections()](#method_queryCollections)
 
 <a name="method_getServiceInstance"></a>
-### getServiceInstance()
+### GetServiceInstance()
 
 Factory method for creating/getting an instance of the extension settings service.
 
@@ -57,7 +57,7 @@ Factory method for creating/getting an instance of the extension settings servic
 * [ExtensionDataService](../../../../VSS/SDK/Services/ExtensionData/ExtensionDataService.md)
 
 <a name="method_getValue"></a>
-### getValue<T>()
+### GetValue<T>()
 
 Returns a promise for retrieving a setting at the provided key and scope
 
@@ -96,7 +96,7 @@ Returns a promise for saving a setting at the provided key and scope
 * [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;T&gt;
 
 <a name="method_getDocument"></a>
-### getDocument()
+### GetDocument()
 
 Returns a promise for getting a document with the provided ID in the provided collection
 
@@ -116,7 +116,7 @@ Returns a promise for getting a document with the provided ID in the provided co
 * [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
 
 <a name="method_getDocuments"></a>
-### getDocuments()
+### GetDocuments()
 
 Returns a promise for getting all of the documents in the provided collection
 

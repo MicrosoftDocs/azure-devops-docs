@@ -5,7 +5,8 @@ description: Quick reference to all WORKFLOW XML elements and main attributes fo
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 59689226-f7f1-4046-866e-3030aad806ae
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.manager: jillfra
 ms.date: 02/10/2017
@@ -69,8 +70,8 @@ For each transition, you specify a set of reasons for changing the state of the 
 </TRANSITIONS>  
 </WORKFLOW>  
 ```  
-  
-##  <a name="WORKFLOW"></a> Syntax structure  
+ # <
+## <a name="WORKFLOW"></a> Syntax structure  
  By using the elements that the following table describes, you can specify to which states a team member can set a work item of a particular type. In the `WORKFLOW` section of the definition, you define states first, and then you define transitions. For more information, see [Change the workflow](change-workflow-wit.md).  
   
 

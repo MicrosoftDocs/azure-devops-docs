@@ -37,7 +37,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 
 
 <a name="index_witd"></a> 
-##   Index of WITD XML elements  
+## Index of WITD XML elements  
 
  The following table provides an index to the reference topics for all child elements of the parent container element. Also, you can access the topic that provides detailed information and examples for each child element.  
 
@@ -229,7 +229,7 @@ The following table provides an index to the reference topics for the elements u
 </table> 
 
 <!---
-##  Objects used to track work  
+## Objects used to track work  
 
 For descriptions of the 
 

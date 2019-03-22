@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: c7851b4c-33a2-4536-85d3-ec73c8e2a8b6
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 12/30/2016
 ---
@@ -20,8 +21,8 @@ The Bugs by Assignment report shows the distribution of active Bugs, grouped by 
   
 > [!NOTE]
 >  You can view the Bugs by Assignment report from the Bugs Dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  You can use the Bugs by Assignment report to understand the distribution of Bugs to team members and determine whether to reassign some Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for Bugs. This data is stored in the data warehouse.  
   
  ![Bugs by Assignment chart](_img/procguid_byassignment.png "ProcGuid_ByAssignment")  
@@ -49,8 +50,8 @@ The Bugs by Assignment report shows the distribution of active Bugs, grouped by 
 -   Specify the **Priority** of each Bug.  
   
 -   Update the **State** of each Bug as the team fixes, verifies, and closes it.  
-  
-##  <a name="Updating"></a> Customizing the Report  
+ # <
+## <a name="Updating"></a> Customizing the Report  
  You can customize the Bugs by Assignment report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
   
 |View|Action|  

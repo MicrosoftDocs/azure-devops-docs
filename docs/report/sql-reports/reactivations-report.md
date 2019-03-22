@@ -7,7 +7,8 @@ ms.topic: reference
 description: Determines how effectively the team is fixing bugs.
 ms.assetid: de38d7e8-4bd4-4b43-be4f-a116ea424bee
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -30,8 +31,8 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Reactivations report shows an area graph of the number of bugs or stories that are in a resolved state or that have been reactivated from the closed state. The data is derived from the data warehouse. The graph depicts the number of items based on the time duration and filters that you specify, as the following illustration shows.  
   
  ![Example Reactivations Report](_img/procguid_reportsbugsreactivations.png "ProcGuid_ReportsBugsReactivations")  
@@ -50,8 +51,8 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
 -   Define user stories and bugs, and specify their **Iteration** and **Area** paths.  
   
 -   Update the **State** of stories and bugs as they progress from active to closed.  
-  
-##  <a name="Duration"></a> Setting the Duration of the Iteration  
+ # <
+## <a name="Duration"></a> Setting the Duration of the Iteration  
  To understand the reactivation rate of your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
   
 #### To change the duration of the iteration  
@@ -59,8 +60,8 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, click the calendar icon, and then click a date.  
   
 2.  Click **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  You should expect the Reactivations report to vary based on where you are in your product development cycle. Early iterations should exhibit very few reactivations. As bugs and stories are closed, you will want to review the rate of reactivations.  
   
  The Reactivations report displays information that you can use to detect whether the team is reactivating a high number of bugs or stories. The reactivation rate counts the number of supposedly fixed bugs whose fixes do not work. These reactivations can create a harmful cycle of rework that interferes with making progress on planned tasks.  
@@ -91,8 +92,8 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
 |**The team is reactivating a high number of bugs**. You should consider the reactivation rate as a percentage of the overall number of bugs that the team is finding.<br /><br /> A high rate of bug reactivation might indicate that the team is closing bugs prematurely. It is a warning sign of project dysfunction. Reactivations introduce extra work into the product cycle, which often doubles the total effort that is required to complete the corresponding work.|-   Is the team performing sufficient unit testing when it resolves bugs?<br />-   Do the bug descriptions support efficient bug resolution?<br />-   Are bugs being resolved even though the underlying problems have not been fixed?<br />-   Should some bugs be set to lower priority, effectively reducing the number of high priority bugs that the team is working on?<br />-   Is the test lab being managed effectively?|  
 |**The team is reactivating a high number of user stories**. You should consider the reactivation rate of user stories as a percentage of the overall number of user stories that the team is closing. A high rate of story reactivation might indicate that other issues warrant investigation.|-   Is the test coverage adequate for user scenarios?|  
 |**The number of reactivations is growing**. When the number of reactivations grows, reactivated bugs or stories are not being fixed. You might want to reassess team priorities for fixing reactivated bugs or stories.|-   Are priorities for the team set correctly?<br />-   Are other issues at the root of the reactivations?|  
-  
-##  <a name="Changing"></a> Filtering the Report  
+ # <
+## <a name="Changing"></a> Filtering the Report  
  You can filter the Reactivations report in the following ways:  
   
 -   Change the start and end dates for the report.  

@@ -22,7 +22,7 @@ Part of creating a good architecture is investigating alternative architectural 
   
  
   
-##  <a name="CreateAlternative"></a> Create Alternative Architecture Partitioning Designs  
+## <a name="CreateAlternative"></a> Create Alternative Architecture Partitioning Designs  
  The problem is analyzed, and different approaches are considered. A group of requirements are selected that represent key business and technological challenges. Examine the characteristics of these challenges, such as integration of legacy systems, and predict future needs based on current needs, reusability of code, and maintenance costs.  
   
 ### Create an Application Diagram  
@@ -46,7 +46,7 @@ Part of creating a good architecture is investigating alternative architectural 
  Using the requirements as motivation, analyze established architectural patterns (such as fa&ccedil;ade or model-view-controller), and identify potential candidates for implementation. Identify candidate patterns through their motivation, and consider their design tradeoffs with regard to coupling, cohesion, extensibility, adaptability, and flexibility. Select a set of candidates for implementation as alternatives for assessment.  
   
 <a name="Design"></a> 
-##  Design System Architecture and Deployment  
+## Design System Architecture and Deployment  
  The system architecture defines the groupings and configurations of elements that are identified in the application diagram. System diagrams are created that capture the system architecture for each possible architecture approach. Deployment diagrams show the deployment steps that are based on dependencies and core functionality. An infrastructure architect creates a logical datacenter diagram that describes the logical structure of the datacenter where the application will be deployed. The deployment diagrams are validated against the logical datacenter diagram to ensure that the systems can be deployed.  
   
 ### Create a System Model  
@@ -62,7 +62,7 @@ Part of creating a good architecture is investigating alternative architectural 
   
  For each subsystem, you can create a package that describes its types and behavior in more detail. For more information, see [Define packages and namespaces](https://msdn.microsoft.com/library/dd465144).  
   
-##  <a name="CreateProofs"></a> Create Proofs of Concept  
+## <a name="CreateProofs"></a> Create Proofs of Concept  
  Significant risks to the project can be mitigated by creating an architectural proof of concept. It is important to address risk as early as possible in the project so that key strategic and architectural decisions can be made while it is still easy to modify fundamental pieces of the architecture. Creating early proofs of concept reduces overall project risk and unknowns. Lower project risk and fewer unknowns make planning and estimating in later iterations more accurate. Proofs of concept can be temporary and discarded after the issues have been addressed, or they can be built as the foundation of the core architecture.  
   
 ### Examine Risk  
@@ -74,7 +74,7 @@ Part of creating a good architecture is investigating alternative architectural 
 ### Build and Run the Proof of Concepts  
  Build the proof of concept. You can implement the proof of concept from the application diagram. Maintain focus on the problem to be solved. Deploy the proof of concept to a physical environment that is congruent to the logical datacenter diagram. The physical environment should match the settings of the logical datacenter diagram as closely as possible. Test the proof of concept against the high-risk issues.  
   
-##  <a name="Assess"></a> Assess Alternatives  
+## <a name="Assess"></a> Assess Alternatives  
  The Lightweight Architecture Alternative Analysis Method (LAAAM) is used to help decide between different architectural strategies for building an application. The LAAAM typically takes one day to complete. Start by building a utility tree that describes key quality and functional drivers of the application that are based on requirements. Each driver is written as a scenario that takes the form of a statement that is written as context, stimulus, and response. Use an assessment matrix to evaluate how well each strategy addresses each scenario.  
   
 ### Create a Utility Tree  
@@ -99,7 +99,7 @@ Part of creating a good architecture is investigating alternative architectural 
   
  Upload the completed assessment matrix to the project portal.  
   
-##  <a name="Select"></a> Select the Architecture  
+## <a name="Select"></a> Select the Architecture  
  After the assessment matrix is created, a review meeting is held to determine which architecture to use in the next iteration. The assessment matrix and information that is discovered from creating the proofs of concept is used to help make a decision. After the architecture is selected, diagrams for the architecture are checked in as the reference solution, and a justification document is created that captures the reasons behind the selection.  
   
 ### Prepare for Review  
@@ -113,7 +113,7 @@ Part of creating a good architecture is investigating alternative architectural 
 ### Create a Reference Solution  
  Create a justification document that captures the decisions of the meeting. Upload it to the project portal. For the selected architecture, check in any application, system, or logical datacenter diagrams as the reference solution to use for implementing features in the next iteration. Communicate to the entire team and any dependent teams the decision on what architecture is selected for the next iteration.  
   
-##  <a name="Develop"></a> Develop a Performance Model  
+## <a name="Develop"></a> Develop a Performance Model  
  Performance modeling is used to identify and address potential performance issues in the application. A performance model is developed from a quality of service requirement, which is then broken into development tasks. Each development task is assigned a performance budget for implementation.  
   
  Identify the scenarios that are linked to the performance quality of service requirement. Map the development tasks to the scenarios. From the quality of service requirements list, determine the workload for the application. Using the workload estimates and the quality of service requirements list, identify the performance objectives for each key scenario. These include objectives such as response time, throughput, and resource use. Identify the performance-related resources that have been budgeted to meet the performance objectives. Some examples of performance-related resources are execution time and network bandwidth. Determine the maximum allowable allocation of each resource.  

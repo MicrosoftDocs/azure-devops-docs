@@ -42,7 +42,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
      Choose this option when you have a SharePoint site configured as your project portal and you want to modify the support files to redirect process guidance links to your custom process guidance.  
   
-##  <a name="guid_enabled"></a> Determine if process guidance is enabled for your team project portal  
+## <a name="guid_enabled"></a> Determine if process guidance is enabled for your team project portal  
   
 1.  From Visual Studio or Team Explorer, [connect to your team project](/azure/devops/organizations/projects/connect-to-projects).  
   
@@ -56,7 +56,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
      When process guidance is not enabled, F1 help links within work item forms will not open help content.  
   
-##  <a name="simple"></a> Specify a website for your process guidance  
+## <a name="simple"></a> Specify a website for your process guidance  
  Choose this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
 1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
@@ -69,7 +69,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 4.  To redirect F1 help links to point to content on your website, [upload](#upload) and then [modify the support files](#redirect).  
   
-##  <a name="sp"></a> Specify a SharePoint document library that contains your process guidance  
+## <a name="sp"></a> Specify a SharePoint document library that contains your process guidance  
  Some process guidance links will work only if process guidance has been enabled for your team project.  
   
 1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
@@ -82,7 +82,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
      ![Specify URL to SharePoint document library](_img/alm_pg_processguid_sp.png "ALM_PG_ProcessGuid_SP")  
   
-##  <a name="upload"></a> Upload files that support linking to process guidance  
+## <a name="upload"></a> Upload files that support linking to process guidance  
   
 1.  To obtain the process guidance support files for your team project, download them using the Process Template Manager. See [Download the latest version of the process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
@@ -95,7 +95,7 @@ Your team can use process guidance to capture how they coordinate work on a team
     |Process Guidance|ProcessGuidance.html|ProcessGuidance.html|ProcessGuidance.html|  
     |Process Guidance/Supporting Files|Bug.htm<br />CodeReviewRequest.htm<br />CodeReviewResponse.htm<br /> Feature.htm<br />FeedbackRequest.htm<br /> FeedbackResponse.htm<br /> Impediment.htm<br /> Impediment.htm<br /> ProductBacklogItem.htm<br /> SharedSteps.htm<br /> Task.htm<br /> TestCase.htm|AboutWorkItems.htm<br /> Bug.htm<br /> CodeReviewRequest.htm<br /> CodeReviewResponse.htm<br /> Feature.htm<br /> FeedbackRequest.htm<br /> FeedbackResponse.htm<br /> Issue.htm<br /> SharedSteps.htm<br /> Task.htm<br /> TestCase.htm<br /> UserStory.htm|AboutWorkItems.htm<br /> Bug.htm<br /> ChangeRequest<br /> CodeReviewRequest.htm<br /> CodeReviewResponse.htm<br /> Feature.htm<br /> FeedbackRequest.htm<br /> FeedbackResponse.htm<br /> Issue.htm<br /> Requirement.htm<br /> Review.htm<br /> Risk.htm<br /> SharedSteps.htm<br /> Task.htm<br /> TestCase.htm|  
   
-##  <a name="redirect"></a> Modify support files that redirect process guidance to your custom guidance  
+## <a name="redirect"></a> Modify support files that redirect process guidance to your custom guidance  
  You can redirect users to customized content by modifying the redirect links contained within the process guidance support and report files.  
   
  The ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon is designed to look for an `.aspx`, `.htm`, or `.html` file. These files can either contain the content or provide a URL that redirects to it.  
@@ -151,7 +151,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ## Related notes 
   
 <a name="access_pg"></a> 
-###  How do I access process guidance from work items or reports?  
+### How do I access process guidance from work items or reports?  
  **A: For work items**: From Team Explorer, press F1 or choose the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon from an open work item.  
   
  The ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon appears only on the work item forms opened from Team Explorer and only when your team project has process guidance enabled and configured.  
@@ -163,7 +163,7 @@ Your team can use process guidance to capture how they coordinate work on a team
  Depending on your settings, a web browser page opens to the standard process guidance content or your customized process guidance opens.  
   
 <a name="addportal"></a> 
-###  Q: Can I embed process guidance within a work item form?  
+### Q: Can I embed process guidance within a work item form?  
  **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../../reference/xml/labeltext-and-text-xml-elements-reference.md).  
   
  To embed a webpage or html content within a work item form, see [WebpageControlOptions](../../reference/xml/webpagecontroloptions-xml-elements-reference.md).

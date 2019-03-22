@@ -37,7 +37,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Report  
+## <a name="Data"></a> Data in the Report  
  The data that appears in the Build Quality Indicators report is derived from the data warehouse. The X-axis lists the specific builds that the report includes, based on the filters that you have set for the platform, configuration, and build definition.  
   
  Each vertical bar represents a set of data that was derived from one or more builds. In the code size variant of the report, each vertical bar's length represents the size of the checked in code base. The bars are scaled so that the largest figure fits into the height of the chart. Manual tests can be run any time after the build, and they are associated with that build. Tests that have not been run yet are counted as "inconclusive."  
@@ -94,7 +94,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  
   
-##  <a name="Duration"></a> Changing the Number of Builds in the Report  
+## <a name="Duration"></a> Changing the Number of Builds in the Report  
  The display of the Build Quality Indicators report will vary significantly based on the number of builds that the report includes and other filters that you apply to the report. You can focus the report on a specific range of builds by changing the number of builds that appear in the report.  
   
 #### To set the number of builds that are represented in the report  
@@ -105,7 +105,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
 3.  Click **View Report**.  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+## <a name="Interpreting"></a> Interpreting the Report  
  You can review the report to find answers to these questions for any specific build definition:  
   
 -   What is the quality of the software?  
@@ -169,7 +169,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
 -   **Large areas of gray**. Gray segments signify code that was not built or tested within the given build. This data appears only in a periodic report where one or more of the specified builds did not occur within the period.  
   
-##  <a name="Changing"></a> Filtering the Report  
+## <a name="Changing"></a> Filtering the Report  
  You can filter the Build Quality Indicators report in the following ways:  
   
 -   Change the time interval by specifying the number of builds and specifying the end date for the report.  

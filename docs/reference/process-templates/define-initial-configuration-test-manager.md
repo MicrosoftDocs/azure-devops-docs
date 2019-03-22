@@ -35,7 +35,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 >  You can change the name of the XML file and the folder name but not the name of the plug-in. The system doesn't include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy plug-ins, policies, or other modifications to Team Explorer, you must use your own distribution and installation program.    
   
 <a name="Tasks"></a> 
-##  Test Management tasks and dependencies  
+## Test Management tasks and dependencies  
  In the testmanagement.xml file, you specify one or more tasks and their dependencies. The plug-in file specifies four tasks, and each task uploads a test management file. The testconfiguration.xml file depends on the information that is specified in the testvariable.xml file. For more information about the **task**, **taskXml**, and **dependency** elements, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) and [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
  The following syntax represents the default testmanagement.xml file that is defined for the default process templates:  
@@ -71,7 +71,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 ```  
   
 <a name="TestEnvironments"></a> 
-##  Define test configuration variables  
+## Define test configuration variables  
  You use the **TestVariable** and **AllowedValue** elements to define test configuration variables. You can define any number of test configuration variables and their valid values. The following values are defined in the testvariable.xml file in the default process templates:  
   
 -   Operating systems:   
@@ -121,7 +121,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 ```  
   
 <a name="TestConfigurations"></a> 
-##  Define test configurations  
+## Define test configurations  
  You use the **TestConfiguration** and **TestVariable** elements to define test configurations that combine one or more test configuration variables. One default configuration is defined in the testconfiguration.xml file: Windows Vista and Internet Explorer 7.0. After the project is created, you can delete these configurations and create other configurations. For more information, see [Test configurations: specifying test platforms](../../test/test-different-configurations.md).  
   
  You must encapsulate the **TestConfiguration** element within its corresponding container element: **TestConfigurations**. You use the following syntax structure for these elements:  
@@ -158,7 +158,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 ```  
   
 <a name="ResolutionStates"></a> 
-##  Define test resolution states 
+## Define test resolution states 
 
 You use the **TestResolutionState** element to specify the reasons why a test failed. The following states are defined in the testresolutionstate.xml: Needs investigation, Test issue, Product issue, and Configuration issue.  
   

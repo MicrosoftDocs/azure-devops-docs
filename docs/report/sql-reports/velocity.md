@@ -7,7 +7,8 @@ ms.topic: reference
 description: Use the velocity report to forecast release and product completion dates and plan future projects  
 ms.assetid: 4c2c4f98-ca0f-4003-8292-4c50b66a996c
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -30,8 +31,8 @@ If your team has completed multiple sprints, you can forecast release and produc
  **Required permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  As the following illustration shows, a velocity graph shows the amount of effort that your team has reported as complete for each sprint. The source of the raw data is your product backlog. Each sprint that has been assigned to the team project or to the team appears along the horizontal axis. The vertical axis indicates the sum of all effort for all backlog items assigned to the indicated sprint that have been closed (State=Done).  The vertical axis shows effort in whatever unit your team uses (for example, story points, size, or hours).  
   
  The graph also displays a horizontal line that represents the average velocity across all the sprints.  
@@ -53,7 +54,7 @@ If your team has completed multiple sprints, you can forecast release and produc
  
 <a name="Interpreting"></a> 
  
-##  Interpreting the report  
+## Interpreting the report  
  You can review the report to determine how much progress your team has made and to answer the following questions:  
   
 -   How much effort has your team completed in each sprint?  

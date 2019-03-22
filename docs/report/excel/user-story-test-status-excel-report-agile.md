@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: bb10f6a4-25f0-4fcf-b0f2-789264d3ef27
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -27,8 +28,8 @@ You can use the User Story Test Status report to help determine gaps in test cov
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  The User Story Test Status report provides a horizontal bar chart that shows the count of results for each test case and test configuration combination that the team has defined for each user story. The chart groups the results according to their most recent test runs, where the options are **Passed** (green), **Failed** (red), **Blocked** (purple), or **Not Run** (gray).  
   
  ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
@@ -50,8 +51,8 @@ You can use the User Story Test Status report to help determine gaps in test cov
      For automated tests, each test case is automatically marked as passed or failed.  
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.  
-  
-##  <a name="Interpreting"></a> Interpreting the report  
+ # <
+## <a name="Interpreting"></a> Interpreting the report  
  You should expect the User Story Test Status report to vary depending on where you are in your product development cycle. Early iterations will show few test cases that are passing. However, you should expect most test cases to pass toward the end of an iteration or product development cycle.  
   
  You can review the report to find answers to the following questions:  
@@ -71,8 +72,8 @@ You can use the User Story Test Status report to help determine gaps in test cov
 -   Is the team running test cases for each user story?  
   
 -   If test cases are blocked or not being run, does the team understand the blocking issues, and is the team addressing them?  
-  
-##  <a name="Updating"></a> Updating and customizing the report  
+ # <
+## <a name="Updating"></a> Updating and customizing the report  
  You can update the User Story Test Status report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, as the following table describes.  
   
 |View|Action|  

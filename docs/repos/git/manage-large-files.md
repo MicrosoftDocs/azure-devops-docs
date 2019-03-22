@@ -72,7 +72,7 @@ Git LFS is an extension to Git which commits data describing the large files in 
 When you clone and switch branches in your repo, Git LFS downloads the correct version from that remote storage. 
 Your local development tools will transparently work with the files as if they were committed directly to your repo.
 
-###  Benefits
+### Benefits
 
 The benefit of Git LFS is that your team can use the familiar end to end Git workflow no matter what files your team creates. 
 LFS files can be as big as you need them to be.

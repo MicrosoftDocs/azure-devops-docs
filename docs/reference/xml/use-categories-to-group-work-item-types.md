@@ -101,7 +101,7 @@ WITs that you add to the Requirement Category or the Task Category must belong t
 For WITs that you add to the Bug Category, you can add it to the Bug Category as well as others.  
 
 <a name="query"></a>   
-###  Filter a query based on a category 
+### Filter a query based on a category 
  **A:** Yes. Use the **In Group** operator along with the **Work Item Type** field. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category:  
   
 |**And/Or**|**Field**|**Operator**|**Value**|  

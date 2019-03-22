@@ -88,7 +88,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $filter=ProjectName eq 'ProjectA'
   &$expand=Parent($filter=ProjectName eq 'ProjectA')
 ```
-##  Organization-scoped queries  
+## Organization-scoped queries  
 
 The Base URL for organization level queries is as shown:
 

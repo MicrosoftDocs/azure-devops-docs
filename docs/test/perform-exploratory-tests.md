@@ -64,7 +64,7 @@ quality of your product.
 update it automatically.
 
 <a name="selectmode"></a>
-##  Select an exploratory testing mode
+## Select an exploratory testing mode
 
 1. Open the extension you installed in your browser by choosing the
    ![Test and Feedback](_img/_shared/exp-test-icon.png) icon.

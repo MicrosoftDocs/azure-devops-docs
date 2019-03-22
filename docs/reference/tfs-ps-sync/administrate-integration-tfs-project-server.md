@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 529c5a49-31d7-4080-b3b5-1bcc95c8a102
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -20,8 +21,8 @@ As an administrator for the integration of Visual Studio Team Foundation Server 
   
 > [!NOTE]
 >  You can download a virtual machine that demonstrates how you can integrate TFS and Project Server 2010 so that teams can share data between the two server products. This virtual machine includes enterprise project plans in Project Server that are mapped to projects in Team Foundation Server, along with sample data to highlight key integration scenarios. The walkthrough documents illustrate four scenarios that simulate the interactions between the project manager, who is working in Project Server, and members of the software development team, who are working in TFS. For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](http://go.microsoft.com/fwlink/?LinkID=196413).  
-  
-##  <a name="Setup"></a> Setup and configuration  
+ # <
+## <a name="Setup"></a> Setup and configuration  
   
 |Task|Related topics|  
 |----------|--------------------|  
@@ -32,8 +33,8 @@ As an administrator for the integration of Visual Studio Team Foundation Server 
 |**Map and unmap enterprise project plans to projects**. You define which project plans synchronize data with Team Foundation by defining the association or mappings between project plans and projects. You can map multiple plans to a project, but you can map each plan to only one project.|[Associate enterprise projects and projects](manage-associations-enterprise-projects.md)|  
 |**Manage which work item types participate in data synchronization**. To support synchronization of data between an enterprise project plan and a project, you must specify the types of work items that you want to participate in synchronization. You can define the types when you associate a project plan to a project, and then you can add or remove types later.|[Specify work item types](specify-wits-to-synchronize.md)|  
 |**Manage which fields participate in data synchronization**. To synchronize data between an enterprise project plan and a project, you must associate the TFS work-item fields with Project Server fields. You can add fields and specify how they synchronize by customizing the field mapping file.<br /><br /> You can map fields that are associated with pick lists in Team Foundation. However, you must create lookup tables in Project Server to match the pick lists. You cannot automatically synchronize pick lists and lookup tables.|[Customize the field mapping](customize-field-mapping-tfs-project-server.md)|  
-  
-##  <a name="Admin"></a> Administer and troubleshoot  
+ # <
+## <a name="Admin"></a> Administer and troubleshoot  
   
 |Task|Related topics|  
 |----------|--------------------|  

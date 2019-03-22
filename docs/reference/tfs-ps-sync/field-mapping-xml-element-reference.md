@@ -26,7 +26,7 @@ ms.date: 01/12/2017
   
  
   
-##  <a name="requiredfields"></a> Required Fields  
+## <a name="requiredfields"></a> Required Fields  
  The following fields must be mapped to support data synchronization. If you have customized the fields that are used to schedule work, you must customize the field mappings to reference the fields that you use.  
   
 -   System.Title must be mapped to pjTaskName.  
@@ -37,7 +37,7 @@ ms.date: 01/12/2017
   
 -   The field that you use to track completed work in Team Foundation must be mapped to pjTaskFinish. By default, this field is Microsoft.VSTS.Scheduling.FinishDate.  
   
-##  <a name="defaultfields"></a> Default Fields That Are Mapped  
+## <a name="defaultfields"></a> Default Fields That Are Mapped  
  For each TFS field, you can specify two mappings. In the first mapping, you specify the field in Project that the field in TFS updates in the status queue. In the second mapping, you specify the field in Project that updates the field in TFS. In addition, you can specify whether the TFS field appears on the work item form and how updates are made to reference and mirrored fields.  
   
  By default, all Project fields that are mapped are also mirrored, which means that their values are stored in TFS.  
@@ -63,7 +63,7 @@ ms.date: 01/12/2017
   
  You can display more Project fields on the **Project Server** tab of a work item form in Team Foundation if you add them to the field mappings. For more information about this tab, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
   
-##  <a name="elements"></a> Mapping Elements and Attributes  
+## <a name="elements"></a> Mapping Elements and Attributes  
  You use a `field` element to specify a reference field in Team Foundation to synchronize. All `field` elements are contained in the `mappingFile`, `persistables`, and `Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping` container elements.  
   
 > [!IMPORTANT]
@@ -113,7 +113,7 @@ ms.date: 01/12/2017
   
  To determine the field name, prefix the concatenated friendly name with "pj". For example, the field name for Status Manager is pjStatusManager, and the field name for Custom 01 is pjCustom01.  
   
-###  <a name="feandattributes"></a> Field Elements and Attributes  
+### <a name="feandattributes"></a> Field Elements and Attributes  
  The following table describes the subelements and attributes of the `field` element. You map a Team Foundation field to a Project resource field whose value you want to update during status synchronization. You map a Team Foundation field to a Project task field whose value will update Team Foundation Server during publish synchronization. Also, the units of fields that you map must conform to established criteria. For more information, see [Restrictions on mapping fields](restrictions-mapping-ps-fields.md).  
   
 |Element|Attribute|Description|  
@@ -136,7 +136,7 @@ ms.date: 01/12/2017
 |`transforms`||Optional. Container element for the `transform` element.|  
 |`transform`|`transformType`|Specifies the type of transform to apply to the field. You can only specify the `transformType` for a `targetToTfs` and only for numeric field types. The only valid value is `ClearValueIfParent`.<br /><br /> When the synchronization engine detects a hierarchy under a work item that is synchronized with Project Server, it performs a roll-up for the work and assignments to send to Project Server. However, with the `transformType` set to `ClearValueIfParent`, the synchronization engine clears the work fields on the parent work item in Team Foundation Server to avoid incorrect data in standard Team Foundation Server reports.|  
   
-##  <a name="default_file"></a> Default Mappings  
+## <a name="default_file"></a> Default Mappings  
  The following code lists the default field mappings that are defined when you run the `TfsAdmin ProjectServer /UploadFieldMappings` command and specify the `/useDefaultFieldMappings` option. You can download these mappings to a file and then add elements to it or modify the attributes of the listed fields.  
   
  For a list of all fields that are added to a type of work item when you add that type to participate in data synchronization, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  

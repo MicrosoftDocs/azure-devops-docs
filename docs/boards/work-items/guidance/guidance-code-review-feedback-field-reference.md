@@ -23,7 +23,7 @@ You can use the code review and feedback fields to create queries and reports th
 > [!NOTE]  
 >  If your TFS application server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](../../../reference/configure-features-after-upgrade.md)  
   
-##  <a name="codereviews"></a> Fields used to track code reviews  
+## <a name="codereviews"></a> Fields used to track code reviews  
  The following fields are used to track code review requests and responses. You can only make a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../../repos/tfvc/overview.md). A code review response is created for each person who's been requested to provide review comments. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
   
 
@@ -43,7 +43,7 @@ You can use the code review and feedback fields to create queries and reports th
 > |**Reviewed Date**|The date-time stamp when the reviewer closed the request. (Code Review Response)<br/>Reference name=Microsoft.VSTS.Common.ReviewedDate|Date-Time|  
 > |**State Code**|Mirror field used to track the current state in code.<br/>Reference name=Microsoft.VSTS.Common.StateCode|Integer|  
   
-##  <a name="feedback"></a> Fields used to track feedback  
+## <a name="feedback"></a> Fields used to track feedback  
  The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is requested. See [Get feedback](../../../project/feedback/get-feedback.md).  
   
 |**Field name**|**Description**|**Data type**|  

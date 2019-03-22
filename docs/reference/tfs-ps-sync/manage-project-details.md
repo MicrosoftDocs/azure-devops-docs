@@ -5,7 +5,8 @@ description: Understand how project managers and development teams can manage th
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ff9499ea-cd5b-4ede-aa1a-de8ef3d9e704
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2015'
@@ -39,8 +40,8 @@ ms.date: 01/12/2017
 -   To update work items in Team Foundation and submit them to Project Server, Team Foundation users must be members of the **Contributors** group for the project. Those users must also be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project. They must also be added to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.  
   
  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
-  
-##  <a name="Workflow"></a> Process overview  
+ # <
+## <a name="Workflow"></a> Process overview  
  As the following illustration shows, the project manager initiates the process by planning the requirements and tasks in Project Professional. The synchronization engine creates corresponding work items in Team Foundation for each submitted task. The team lead reviews the plan together with the development team and updates work estimates. Each team member can update their work effort as they complete tasks.  
   
  ![PS&#45;TFS Project Manager Driven workflow](_img/pstfs_pmdetailed_workflow.png "PSTFS_PMDetailed_Workflow")  
@@ -54,8 +55,8 @@ ms.date: 01/12/2017
 |**Project Manager**|As a project manager, you perform the following tasks in Project Professional or your instance of PWA:<br /><br /> ![Step 1](_img/procguid_1.png "ProcGuid_1") Define the project plan that contains both deliverables and tasks. Deliverables may correspond to requirements or user stories, depending on the process template that your product team used to create the project.<br /><br /> ![Step 2](_img/procguid_2.png "ProcGuid_2") Save and publish your plan to Project Server.<br /><br /> ![Step 7](_img/procguid_7.png "ProcGuid_7") Approve or reject status updates as work progresses.<br /><br /> ![9](_img/procguid_9.png "ProcGuid_9") Continuously publish updates to the plan on Project Server.|  
 |**Synchronization Engine**|For each deliverable or task that is set to publish in the plan, the synchronization engine performs the following actions:<br /><br /> ![Step 3](_img/procguid_3.png "ProcGuid_3") Updates the project by creating a work item for each task that is published in the mapped project plan. The engine also creates a link that binds the task in Project Server to the work item in Team Foundation.<br /><br /> ![Step 6](_img/procguid_6a.png "ProcGuid_6a") Creates a status update for each mapped field in each published task as changes occur in Team Foundation. These updates appear in the approval queue for the project manager to review.<br /><br /> ![Step 8](_img/procguid_8.png "ProcGuid_8") Updates work items in the project based on whether the project manager approved or rejected the status update.|  
 |**Team Lead**|In Team Foundation, the team lead and team members perform the following tasks:<br /><br /> ![Step 4](_img/procguid_4.png "ProcGuid_4") Review the work items that are added to the project.<br /><br /> ![Step 5](_img/procguid_6.png "ProcGuid_6") Update the work items as work progresses by changing the **Remaining Work** and **Completed Work** fields for each task.<br /><br /> ![10](_img/procguid_10.png "ProcGuid_10") Respond to work items with a rejected status by modifying work items and resubmitting to Project Server.|  
-  
-##  <a name="Requirements"></a> Recommended configurations  
+ # <
+## <a name="Requirements"></a> Recommended configurations  
  To support the process that was outlined in the previous section, you must map the enterprise project plan to the project. The following table describes the recommended configurations for both the project and mapping. For more information, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
   
 |Area to configure|Recommended configuration|Notes|  
@@ -65,8 +66,8 @@ ms.date: 01/12/2017
 |Field mappings|`/useDefaultFieldMappings`|You can use default field mappings. No additional field mappings are required.|  
 |Resource Names|You must add team members to the Team Members group for each instance of PWA, or you must grant them the Open Project and View Project Site permissions in Project. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).<br /><br /> Also, you must add all valid users in Team Foundation who are assigned requirements, deliverables or tasks in Project to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.|You must grant permissions to all user accounts that are assigned as resources in the project plan or that are named in the Assigned To field for a work item. These users submit status updates that flow into the status queue for the instance of PWA.<br /><br /> All names that are assigned to the **Resource Names** field must be recognized as valid contributors of the project.|  
 |Project managers|Accounts of users of Project Professional must be granted the **View Project-level information** permission or assigned as members of the **Reader** group in Team Foundation for projects to which they will publish.|You must grant project managers permissions to modify work items for those projects that are mapped to their enterprise project plans.|  
-  
-##  <a name="pm_tasks"></a> Project manager tasks  
+ # <
+## <a name="pm_tasks"></a> Project manager tasks  
  As a project manager, you can define, schedule, and monitor progress on your project by engaging in the following activities:  
   
 -   [Define requirements and tasks, and set a baseline](#DefineRequirementsTasks)  
@@ -76,8 +77,8 @@ ms.date: 01/12/2017
 -   [Review detail updates and progress](#ReviewProgress)  
   
  You can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
-  
-###  <a name="DefineRequirementsTasks"></a> Define requirements and tasks, and set a baseline  
+  # <
+### <a name="DefineRequirementsTasks"></a> Define requirements and tasks, and set a baseline  
  When you define your project plan, you will want to define parent requirements and child tasks. As the following illustration shows, two requirements are defined, and each has several tasks. For each requirement and task, you must assign one value for **Resource Names**, set **Work Item Type**  to **Requirement** or to **Task**, and set **Publish to Team Project** to **Yes**.  
   
 > [!NOTE]
@@ -100,8 +101,8 @@ ms.date: 01/12/2017
   
 > [!NOTE]
 >  When you publish your plan, the Team Foundation add-in to Project Professional checks whether all data that is required to the work item in Team Foundation satisfies the validation rules for the type of work item. If a required field is not defined or if a value is not allowed, you must resolve those errors. For more information, see [Resolve validation errors](resolve-validation-errors.md).  
-  
-###  <a name="ApproveStatus"></a> Approve or reject status updates  
+  # <
+### <a name="ApproveStatus"></a> Approve or reject status updates  
  As the team makes progress, status updates appear in your approval queue. At a glance, you can see which requirements and tasks have been updated and the details of each update. As the following illustration shows, you can click a status update to review its details.  
   
  ![Status updates](_img/tfs-ps_pwa_detailedplan_updates.png "TFS-PS_PWA_DetailedPlan_Updates")  
@@ -114,15 +115,15 @@ ms.date: 01/12/2017
 >  To update your enterprise project plan with the changes that are submitted from Team Foundation, you must accept the updates.  
   
  You can accept or reject an update and, if you are using Project Server 2010, add a comment. For example, you may reject an update because you disagree with an estimate, a team member specified an inaccurate value, or you want to request that tasks be reassigned so that the work will be accomplished more quickly.  
-  
-###  <a name="ReviewProgress"></a> Review detail updates and progress  
+  # <
+### <a name="ReviewProgress"></a> Review detail updates and progress  
  As team members make progress, they update the **Remaining Work** and **Completed Work** fields for each task. These values appear as **Remaining Work** and **Actual Work** in your project plan for each requirement and task that you published to Team Foundation. After you approve the status updates, you can view the updates to your project schedule. As the following illustration shows, two tasks have been completed, and several tasks have not yet been started.  
   
  ![Detailed plan schedule](_img/tfs-ps_pp_detailedplan_schedule.png "TFS-PS_PP_DetailedPlan_Schedule")  
   
  When a task takes longer than was first estimated, you can determine whether changes to estimates affect the critical path. You can alert the team lead if an adverse effect to the schedule has occurred and the project tasks must be adjusted.  
-  
-##  <a name="DevTeamTasks"></a> Development team tasks  
+ # <
+## <a name="DevTeamTasks"></a> Development team tasks  
  You can use the task board page in the TFS web portal or the Work Breakdown shared query to review and update work that is assigned to your team. Because the project manager owns the project plan and schedule, you and your team are required to perform the following tasks:  
   
 -   [Review work breakdown](#ReviewWorkBreakdown)  
@@ -133,8 +134,8 @@ ms.date: 01/12/2017
  If you open a work item in Team Explorer, the **History** field shows when the synchronization engine created the work item, as the following illustration shows.  
   
  ![History and Project Server synch message](_img/tfs-ps_pp_history.png "TFS-PS_PP_History")  
-  
-###  <a name="ReviewWorkBreakdown"></a> Review the work breakdown  
+  # <
+### <a name="ReviewWorkBreakdown"></a> Review the work breakdown  
  In the web portal or Team Explorer, you can open the Work Breakdown query, and review the work items that have been added to your project from Project Server. This query lists all requirements that are not closed and their child requirements or tasks. As the following illustration shows, tasks are listed under their requirements, and the parent-child hierarchical link relationships are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")). That is, you cannot modify how tasks are grouped under requirements. Only the project manager from the project plan can modify the task hierarchy.  
   
  ![Work breakdown schedule in Team Explorer](_img/tfs-ps_te_detailedplan_workbreakdown.png "TFS-PS_TE_DetailedPlan_WorkBreakdown")  
@@ -142,8 +143,8 @@ ms.date: 01/12/2017
  Because the project manager set a baseline, values appear for both **Remaining Work** and **Original Estimate**, as the following illustration shows.  
   
  ![Work estimates](_img/tfs-ps_te_detailedplan_originalestimate.png "TFS-PS_TE_DetailedPlan_OriginalEstimate")  
-  
-###  <a name="AddWork"></a> Add and estimate additional tasks  
+  # <
+### <a name="AddWork"></a> Add and estimate additional tasks  
  If you require additional tasks to implement a requirement, you can quickly define and estimate them by using the Work Breakdown query, by working in the work item form for the requirement, or exporting the list to Excel. As the following illustration shows, you can open the shortcut menu for a requirement and then choose **Link selected items to a new work item**.  
   
  ![Link selected item&#40;s&#41; in work item context menu](_img/tfs-ps_twa_contextmenu.png "TFS-PS_TWA_ContextMenu")  
@@ -163,15 +164,15 @@ Shortcut menu for a work item (TFS web portal)
   
 > [!IMPORTANT]
 >  When you submit multiple levels of work items to Project Server, the first level must be approved and published to Project Server before the next level can be submitted. For example, you can submit a batch of new work items that includes three levels of child items. In that case, the project manager would need to publish the project plan four times for all work items to be synchronized with Project Server.   
-  
-###  <a name="UpdateWork"></a> Update remaining and completed work  
+  # <
+### <a name="UpdateWork"></a> Update remaining and completed work  
  As work progresses, each team member should update **Remaining Work** and **Completed Work** for each of their tasks. They can do this using the task board in the TFS web portal or by using Team Explorer. If more time is required to complete a task, the team member can add more time to the remaining work. Updates to these fields automatically appear in the approval queue for the project manager and are reflected in the rollup of the parent requirement.  
   
  ![Task board to update work &#40;the web portal&#41;](_img/tfs-ps_twa-taskboard_managedetails.png "TFS-PS_TWA-TaskBoard_ManageDetails")  
   
  As an alternative, as team lead, you can open the Work Breakdown query in Excel and update several tasks at the same time.  
-  
-###  <a name="AddressUpdates"></a> Address rejected updates  
+  # <
+### <a name="AddressUpdates"></a> Address rejected updates  
  When a project manager rejects a status update to either a requirement or a task, the information appears in the **History** field, and the **Last Approval Status** field on the **Project Server** tab indicates **rejected**. After an update to a work item has been rejected, the work item can no longer be synchronized. You must address the rejection status to resume synchronization of the work item. You can create a query to find work items whose update status was rejected. For more information, see [Monitor work item submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 ## Related articles  

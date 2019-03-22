@@ -7,7 +7,8 @@ ms.topic: reference
 description: Shows how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.
 ms.assetid: 9044206f-c993-451d-bcc8-6f3980c90b3e
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -23,8 +24,8 @@ By reviewing the release burndown report, you can understand how quickly your te
  **Required permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  As the following illustration shows, a release burndown graph shows how much work remained at the start of each sprint in a release. The source of the raw data is your product backlog. Each sprint that has been assigned to the team project or team appears along the horizontal axis. The vertical axis indicates the sum of all effort of all active backlog items at the start of each sprint. As the team updates the state of backlog items to Done, the effort remaining decreases.  The amount of estimated effort on the vertical axis is in whatever unit that your scrum team has decided to use (for example, story points, size, or hours).  
   
  ![Release burndown chart](_img/scrum_releaseburndonw.png "Scrum_ReleaseBurndonw")  
@@ -41,8 +42,8 @@ By reviewing the release burndown report, you can understand how quickly your te
 -   At the start of a release, estimate the **Effort** for each product backlog item and each bug that your team will work on.  
   
 -   During the sprint or at the close of each sprint, for each product backlog item and each bug that the team completed, change the **State** to **Done**.  
-  
-##  <a name="Interpreting"></a> Interpreting the report  
+ # <
+## <a name="Interpreting"></a> Interpreting the report  
  You can review the report to determine the progress that your team has made in a release and to answer the following questions:  
   
 -   How much work remains in the release?  

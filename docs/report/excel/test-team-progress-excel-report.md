@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: a7c04739-72c4-4bb9-b857-adb312d50d87
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -39,8 +40,8 @@ Teams who are responsible for testing software can use the Test Team Progress re
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the reports  
+ # <
+## <a name="Data"></a> Data in the reports  
  The Test Team Project report presents data that is based on PivotTable reports that access data stored in the data warehouse. The data is derived from the results that are generated when members of the team define test cases and run tests by using Microsoft Test Manager. For more information, see [Run your tests](../../test/run-manual-tests.md) and [Track your test results](../../test/track-test-status.md).  
   
 ### Test case authoring and automation design status  
@@ -115,8 +116,8 @@ Teams who are responsible for testing software can use the Test Team Progress re
 |Filters|Fields|  
 |-------------|------------|  
 |-   **Team Project - Team Project Hierarchy**: Includes test results that were collected for the selected team project.<br />-   **Test Result - Iteration Hierarchy**: Includes test results that were run from test cases that are assigned to the selected iterations.<br />-   **Test Plan - Test Plan Name**: Includes test results that were run from test cases that belong to the selected test plans.<br /><br /> **Filters specific to the Test Plan Progress report**:<br /><br /> -   **Test Result - Area Hierarchy**: Includes test results that were run from test cases that are assigned to the selected product areas.<br />-   **Test Suite - Test Suite Hierarchy**: Includes test results that were run from test cases that belong to the selected test suites.<br /><br /> **Filter specific to the Test Status by Suite report**:<br /><br /> -   **Test Result - Area Hierarchy**: Includes test results that were run from test cases that are assigned to the selected product areas.<br /><br /> **Filters specific to the Failure Analysis report**:<br /><br /> -   **Test Result - Area Hierarchy**: Includes test results that were run from test cases that are assigned to the selected product areas.<br />-   **Test Suite - Test Suite Hierarchy**: Includes test results that were run from test cases that belong to the selected test suites.<br />-   **Test Result- Outcome**: Includes test results that have the selected outcome. The report uses this field to filter the count of test results to include only those that have an outcome of **Failed**.|-   **Test Result- Outcome**: The outcome of the test. The report uses this field to define the column labels and to filter the test results to include Passed, Failed, Blocked, or Never Run.<br />-   **(Measure) Test - Point Count Trend**: Counts the latest version of each test result in a particular build. If a test is run multiple times against a build, the Point Count Trend counts the latest result for that test that uses that build. If a test case is not included in the build, then it is counted as "Never Run."<br /><br /> **Field specific to the Test Plan Progress report**:<br /><br /> -   **Date - Sets - Last 6 weeks**: The time span of activity to report.<br /><br /> **Field specific to the Test Status by Suite report**:<br /><br /> -   **Test Suite - Test Suite Hierarchy**: The test suites to list in the report.<br /><br /> **Field specific to the Test Status by Area report**:<br /><br /> -   **Test Result - Area Hierarchy**: The set of test results to include in the report that is based on the area paths that are assigned to the test cases that were run.<br /><br /> **Fields specific to the Failure Analysis report**:<br /><br /> -   **Test Result- Failure Type**: The report uses this field to build the columns in the report.<br />-   **Date - Sets - Last 6 weeks**: The time span of activity to report.|  
-  
-##  <a name="RequiredActivities"></a> Required activities for monitoring test team progress  
+ # <
+## <a name="RequiredActivities"></a> Required activities for monitoring test team progress  
  For the Test Team Progress reports to be useful and accurate, the team must perform the following activities:  
   
 -   [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
@@ -140,8 +141,8 @@ Teams who are responsible for testing software can use the Test Team Progress re
 |-   Automation Design Status|-   [Automate test cases](https://msdn.microsoft.com/library/dd380741.aspx).|  
 |-   Test Plan Progress<br />-   Test Status by Suite<br />-   Test Status by Area<br />-   Failure Analysis|-   Define test plans and test suites, and assign test cases to test plans and test suites.<br />-   [Run tests](../../test/run-manual-tests.md), and, for manual tests, mark the results of each validation step in the test case as passed or failed.|  
 |-   Test Case Authoring Status<br />-   Automation Design Status<br />-   Test Plan Progress<br />-   Test Status by Suite<br />-   Test Status by Area<br />-   Failure Analysis|-   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case. The **Test Result - Iteration Hierarchy** and **Test Result - Area Hierarchy** fields get their values from the **Iteration** and **Area** paths that are assigned to their corresponding test cases.|  
-  
-##  <a name="Updating"></a> Updating and Customizing the Reports  
+ # <
+## <a name="Updating"></a> Updating and Customizing the Reports  
  You can update the Test Team Progress report by opening it in Office Excel and changing the filter options for the Pivot-Table report for one of the worksheets. You can customize each report to support other views, as the following table describes.  
   
 |View|Action|  

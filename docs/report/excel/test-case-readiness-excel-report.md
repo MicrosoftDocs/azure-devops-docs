@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: faaad500-45da-45c7-8ab2-59d1c6f30c2a
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -26,8 +27,8 @@ You can use the Test Case Readiness report to help monitor the progress that the
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  This report provides a stacked area graph that shows how many Test Cases have been in the **Design** or **Ready** state for the most recent four weeks.  
   
  ![Test Case Readiness Excel Report](_img/procguid_exceltestcase.png "ProcGuid_ExcelTestCase")  
@@ -40,8 +41,8 @@ You can use the Test Case Readiness report to help monitor the progress that the
 -   Define [test cases](../../test/create-test-cases.md), and update their **State** from **Design** to **Ready**.  
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to Test Cases.  
-  
-##  <a name="Interpreting"></a> Interpreting the report  
+ # <
+## <a name="Interpreting"></a> Interpreting the report  
  You should expect the Test Case Readiness report to vary depending on where you are in your product development cycle. Early iterations should show a gradual increase in how many Test Cases are in the **Design** state. Toward the end of the product cycle, most Test Cases should be in a **Ready** state.  
   
  You can review the report to find answers to the following questions:  
@@ -57,8 +58,8 @@ You can use the Test Case Readiness report to help monitor the progress that the
 -   What is the percentage of Test Cases that the test team can run today?  
   
 -   Will the team be able to have all the Tests Cases ready by the end of the iteration?  
-  
-##  <a name="Updating"></a> Updating and customizing the report  
+ # <
+## <a name="Updating"></a> Updating and customizing the report  
  You can update the Test Case Readiness report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, as the following table describes.  
   
 |View|Action|  

@@ -207,7 +207,7 @@ You can control the spacing and size of many elements on a work item form by spe
 |`Text`|Optional `LabelText` element.|Container element for the information or label to appear on the work item form.<br /><br /> `<Text>    <Link >       <Param />    </Link>LabelText </Text>`<br /><br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
 |`WebpageControlOptions`|Optional `Control` element when `type="WebpageControl"`|Container element that specifies the options for the Web page control.<br /><br /> For more information, see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md).|  
   
-##  <a name="LinkElements"></a> Elements that filter and display link relationships  
+## <a name="LinkElements"></a> Elements that filter and display link relationships  
  You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add link control to a work item form, you can specify filters that restrict the types of links that users can create and the types of work items between which users can create links. The `LinksControlOptions` element and its child elements have the following structure:  
   
 > [!div class="tabbedCodeSnippets"]

@@ -35,7 +35,7 @@ The Build Status report helps the team track the progress of their builds by sho
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Report  
+## <a name="Data"></a> Data in the Report  
  The team can review the Build Status report to help determine the trend of build health over time and whether any builds need attention today. As the following illustration shows, the report provides a stacked column of the number of builds that were run with an outcome of failed, passed, or unknown during the most recent two weeks.  
   
  ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")  
@@ -60,14 +60,14 @@ The Build Status report helps the team track the progress of their builds by sho
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+## <a name="Interpreting"></a> Interpreting the Report  
  You can use the Builds Status report to gain insight into the following questions:  
   
 -   How is my team's build health changing over time?  
   
 -   Do any builds need attention today?  
   
-##  <a name="Updating"></a> Customizing the Report  
+## <a name="Updating"></a> Customizing the Report  
  You can customize the Builds Status report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can modify the report to support other views, as the following table describes.  
   
 |View|Action|  

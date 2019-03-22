@@ -5,7 +5,8 @@ description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 35c3fcdb-8399-406d-bb8b-179bb543c9ba
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 04/05/2017
 ---
@@ -20,8 +21,8 @@ You can specify a default value for a field, or you can copy the value from anot
  You add these elements to the definition for a work item type (WIT). To learn more,  see [Modify or add a custom work item type](../add-modify-wit.md).  
   
  The `COPY` and `DEFAULT` elements fill in values at the start of editing, but the `SERVERDEFAULT` rule fills in a value when the work item is committed to the database. This action occurs when a user saves changes to a work item, and the user cannot override the value. Such fields usually appear as read-only on the work item form. The `SERVERDEFAULT` rule is used for fields such as "Last Changed By" and "Last Changed On" to support secure audit trails.  
-  
-##  <a name="Syntax"></a> Syntax  
+ # <
+## <a name="Syntax"></a> Syntax  
  You can use the `COPY`, `DEFAULT`, and `SERVERDEFAULT` elements to copy a value from one field to another, copy a server value into a field, or specify a default value to be defined for a field.  
   
 > [!NOTE]
@@ -59,8 +60,8 @@ You can specify a default value for a field, or you can copy the value from anot
 |`field`|Optional. Specifies the name of the field whose value is to be copied into the field when `field` is specified for the `from` attribute. You must define this attribute if the `from` attribute has "field" as its value.<br /><br /> The reference name of the field to copy. The reference name must match the reference name as defined in the `FIELD` (Definition) element. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md).<br /><br /> Pattern value: ^[a-zA-Z_][a-zA-Z0-9_]*(\\.[a-zA-Z0-9_]+)+$<br /><br /> Pattern value example: Company.Division.IssueType|  
   
  
-  
-##  <a name="DefineDefault"></a> Define a default value  
+ # <
+## <a name="DefineDefault"></a> Define a default value  
  The following example sets P3 as the default for the Priority field.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -75,8 +76,8 @@ You can specify a default value for a field, or you can copy the value from anot
 <DEFAULT from="value" value="P3"/>  
 </FIELD>  
 ```  
-  
-##  <a name="ClearField"></a> Clear a field automatically  
+ # <
+## <a name="ClearField"></a> Clear a field automatically  
  In the following example, the status field is cleared.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -85,8 +86,8 @@ You can specify a default value for a field, or you can copy the value from anot
        <COPY from="value" value="" />  
 </FIELD>  
 ```  
-  
-##  <a name="SaveValue"></a> Save a field value  
+ # <
+## <a name="SaveValue"></a> Save a field value  
  In the following example, the name of the user who changed a work item most recently is saved.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -97,8 +98,8 @@ You can specify a default value for a field, or you can copy the value from anot
        <SERVERDEFAULT from="currentuser" />  
 </FIELD>  
 ```  
-  
-##  <a name="Clock"></a> Specify the clock as a default  
+ # <
+## <a name="Clock"></a> Specify the clock as a default  
  In the following example, the value of a field uses the current date but users can change that value.  
   
 > [!div class="tabbedCodeSnippets"]

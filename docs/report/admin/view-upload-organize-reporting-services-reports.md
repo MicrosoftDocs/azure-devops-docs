@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 6368a79e-32d4-4451-89de-0975530e3d17
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
 ms.date: 11/19/2018
 ---
@@ -42,8 +43,8 @@ You can analyze the progress and quality of your project by viewing the reports 
   
     > [!NOTE]
     >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
-  
-##  <a name="Viewing"></a>  
+ # <
+## <a name="Viewing"></a>  
   
 #### To view a report from Team Explorer  
   

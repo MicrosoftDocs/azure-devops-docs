@@ -5,7 +5,8 @@ description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7975a8a3-6fa1-43c1-b32b-0bbb9bb336af
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 01/20/2017
@@ -35,7 +36,7 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 >  The value attribute is case-insensitive. Therefore, if the field reference name holds "YYY", matches include the values "yyy" and "YYY".  
   
 <a name="Syntax"></a>   
-##  Syntax structure for conditional elements  
+## Syntax structure for conditional elements  
  The following table describes conditional rules that you can specify as child elements of the `FIELD` (Definition) element or `FIELD` (Workflow) element. These elements accept one or more of the following attributes:  
   
 -   `field`: A string that describes the field. Must contain 1 to 255 characters.   
@@ -151,8 +152,8 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 |[VALIDUSER](apply-rule-work-item-field.md)|Only the users whom you specify can modify the parent field.|  
   
  
-<a name="DependentRequired"></a>   
-##  Define a dependent required field  
+<# Dme="DependentRequired"></a>   
+## Define a dependent required field  
  You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports a bug, a customer severity must be specified. If the bug was not reported by a customer, a customer severity is not required.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -169,8 +170,8 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 </FIELD>  
 ```  
 <a name="DependentPickList"></a> 
-
-##  Define a conditional pick list  
+# D
+## Define a conditional pick list  
  The following example demonstrates a conditional pick list in which the allowed values for the Problem Type field are limited, based on whether the value of the ProblemCharacteristic field is set to Documentation.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -186,8 +187,8 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 </FIELD>  
 ```  
 
-<a name="WhenChanged"></a>  
-##  Define a field when the user changes another field (WHENCHANGED)  
+<# Dme="WhenChanged"></a>  
+## Define a field when the user changes another field (WHENCHANGED)  
  In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
 
 > [!div class="tabbedCodeSnippets"]
@@ -211,7 +212,7 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 </FIELD>  
 ```  
  <a name="WhenNotChanged"></a> 
-##   Define a field value based on a user not modifying a field (WHENNOTCHANGED)  
+## Define a field value based on a user not modifying a field (WHENNOTCHANGED)  
  In the following example, when a user does not change the value of the MyCorp.State field, the MyCorp.StateDate field becomes read-only.  
   
 > [!div class="tabbedCodeSnippets"]

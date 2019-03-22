@@ -1,5 +1,5 @@
 ```YAML
-# gulp
+# Gulp
 # Run the Node.js streaming task-based build system.
 - task: gulp@1
   inputs:

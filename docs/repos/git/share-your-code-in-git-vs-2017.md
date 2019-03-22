@@ -34,7 +34,7 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 
 * An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
-##  Create a local Git repo for your project
+## Create a local Git repo for your project
 
 Create a new local Git repo for your project by selecting ![Add to Source Control](_img/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) on the status bar in the lower right hand corner of Visual Studio.
 This will create a new repo in the folder the solution is in and commit your code into that repo. You can also right-click your solution in **Solution Explorer** and choose **Add Solution to Source Control**.

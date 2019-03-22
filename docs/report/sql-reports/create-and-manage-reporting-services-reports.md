@@ -69,7 +69,7 @@ If you added SQL Server Reporting Services at installation, then your on-premise
 -   [Comparing Report Authoring Environments](http://go.microsoft.com/fwlink/?LinkId=181952)   
 -   [Designing and Implementing Reports Using Report Builder 2.0](http://go.microsoft.com/fwlink/?LinkId=181953)  
   
-##  <a name="AdditionalResources"></a> Q & A  
+## <a name="AdditionalResources"></a> Q & A  
   
 ### Q: How do I view and organize default Reporting Services reports?  
  **A:** Open reports from Team Explorer, Team Web Access, or Report Manager. See [Reporting Services Reports](reporting-services-reports.md).  

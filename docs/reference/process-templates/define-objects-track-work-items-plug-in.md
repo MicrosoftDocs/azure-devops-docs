@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 09/08/2017
@@ -101,8 +102,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   </task>  
 </tasks>  
 ```  
-  
-##  <a name="elements"></a> Element reference  
+ # <
+## <a name="elements"></a> Element reference  
  The following table describes the elements that you use to upload work item tracking objects. You specify these elements within a **taskXml** container element in the WorkItemTracking plug-in file. For information about the task, dependency, and taskXml elements, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).  
   
 |Element|Syntax|Description|  

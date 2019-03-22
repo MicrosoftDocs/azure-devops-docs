@@ -33,7 +33,7 @@ You use work item fields to track data for a work item type, to define the filte
  
 <a name="best_practices"></a> 
  
-###  Best practices  
+### Best practices  
  Before you add or modify a field, review the following best practices:  
   
 -   Determine whether you can use a field that is already defined in the project collection that contains your project. Use of an existing field supports cross-project reporting.    
@@ -63,7 +63,7 @@ You use work item fields to track data for a work item type, to define the filte
 
 
 <a name="use_field"></a> 
-##  Use an existing field  
+## Use an existing field  
  You should use a field that is already defined if that field matches the information that you want to track and report on. To use an existing field, perform the following steps:  
   
 -   Identify the field that you want to use. Use the **witadmin listfields** command to identify the fields and their attributes that are defined for all project collections. For more information, see [List fields that are defined for a project collection](#list_fields) later in this topic.  
@@ -75,7 +75,7 @@ You use work item fields to track data for a work item type, to define the filte
 -   For the project collection where the field is not defined, add it to the XML definition files for the work item types that you want to use to track data. For more information, see [Add fields to support reporting](#add_a_field) later in this topic.  
 
 <a name="list_fields"></a>   
-##  List fields that are defined for a project collection  
+## List fields that are defined for a project collection  
  You can use the **witadmin listfields** command to list fields and their attributes. You can list a specified field or all fields that are defined in a project collection. The **witadmin listfields** command has the following syntax:  
   
 ```  
@@ -85,7 +85,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
  For more information, see [Manage work item fields](../witadmin/manage-work-item-fields.md).  
   
 <a name="reportable"></a> 
-##  Reportable field attributes  
+## Reportable field attributes  
  Reportable fields have a `reportable` attribute value of `Detail`, `Dimension`, or `Measure`. The following attributes determine how work item fields are exported and processed to the data warehouse databases:  
   
 -   `reportingtype`. To include a field in reports, you must assign one of the following values to the `reportable` attribute:  
@@ -123,7 +123,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
   
 
 <a name="change_attribute"></a> 
-##  Change a reportable attribute for a work item field  
+## Change a reportable attribute for a work item field  
 
  You can make an existing field reportable by changing the attribute assignments of the field that are defined for a project collection. An existing field is defined in one or more work item type definitions. Also, you can change all attributes that determine how a field is processed in the data warehouses.  
   
@@ -160,13 +160,13 @@ witadmin listfields /collection:CollectionURL /n:RefName
      For more information, see [Manage work item fields](../witadmin/manage-work-item-fields.md).  
 
 <a name="add_a_field"></a>   
-##  Add fields to support reporting  
+## Add fields to support reporting  
  You can add fields to the definition of a work item type or types. When you add the field, you should add the same field element definition to all types of work items for which the field will support reporting. If you want the field to support cross-project reporting, the field should be added to all work item types in all projects that will be reported on.  
   
  For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).  
 
 <a name="verify"></a> 
-##  Verify changes made to reportable field attributes  
+## Verify changes made to reportable field attributes  
  You can verify the changes that you made to reportable field attributes by processing the data warehouses on demand and then checking the reports to verify that they are updated. Or you can wait until the warehouse adapter jobs run. By default, the relational database is processed every few minutes. However, the cube is processed every two hours by default.  
   
 > [!NOTE]  
@@ -179,7 +179,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
 3.  Verify that the reports are being updated. View a report through the dashboard or Report Manager.  
 
 <a name="bp_labels"></a>   
-##  Best practices when assigning reporting reference names  
+## Best practices when assigning reporting reference names  
  For reporting reference names, you want to assign labels so that you can easily find the fields in the PivotTable report and the cube. You can achieve this by applying systematic naming conventions so that fields are grouped in a logical sequence. In addition, if the fields are not grouped in a useful manner, you can change the reporting reference name of a field.  
   
  Applying a systematic naming convention becomes increasingly important because all reportable data from all projects that are defined in all project collections is written to a single relational data warehouse. Data from that warehouse is then processed and written to the cube. Because work item fields are managed distinctly for each project collection, different labels may be applied and may lead to a set of fields that is not well organized to support authoring reports.  

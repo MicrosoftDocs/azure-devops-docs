@@ -123,7 +123,7 @@ We recommend that you use OAuth to connect to your GitHub repository. However, i
 
 If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterprise Server, do that now. For details, see [Creating an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
 
-###  Register application in GitHub 
+### Register application in GitHub 
 
 0. Sign into the web portal for your GitHub Enterprise server.  
 

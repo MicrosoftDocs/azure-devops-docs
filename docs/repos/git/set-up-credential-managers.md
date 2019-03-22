@@ -13,7 +13,7 @@ ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
 ---
 
-#  Use Git Credential Managers to Authenticate to Azure Repos
+# Use Git Credential Managers to Authenticate to Azure Repos
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Git Credential Managers simplify authentication with your Azure DevOps Services/TFS Git repos. Credential Managers let you use the same credentials that you use for the Azure DevOps Services/TFS web portal and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (Azure AD). In addition to supporting multi-factor authentication with Azure DevOps Services, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).

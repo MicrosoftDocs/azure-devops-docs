@@ -290,7 +290,7 @@ This can take a significant amount of time. To mitigate this, you can use Azure 
 
 ::: moniker-end
 
-###  Yarn
+### Yarn
 
 # [YAML](#tab/yaml)
 

@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server 
 ms.assetid: ede30011-e04a-4914-ab68-b4c725a54f96
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 10/17/17
 ---
@@ -28,8 +29,8 @@ After the team has started to find and fix bugs, you can track the team's progre
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The data that appears in the Bug Status report is derived from the data warehouse. This report displays several sets of information as the following illustrations and table show and describe.  
   
  ![Bug status chart](_img/procguid_bugstatusdata.png "ProcGuid_BugStatusData")  
@@ -67,8 +68,8 @@ After the team has started to find and fix bugs, you can track the team's progre
 -   Assign each bug to the team member who is working to resolve or close it.  
   
 -   Update the state of each bug as it is fixed, verified, and closed.  
-  
-##  <a name="Duration"></a> Setting the Duration of the Iteration  
+ # <
+## <a name="Duration"></a> Setting the Duration of the Iteration  
  To understand the progress that the team is making for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
   
 #### To change the duration of the iteration  
@@ -76,8 +77,8 @@ After the team has started to find and fix bugs, you can track the team's progre
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, click the calendar icon, and then click a date.  
   
 2.  Click **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  You should expect the Bug Status report to vary based on where you are in your product development cycle. Early iterations should exhibit a gradual increase in the number of active bugs. Iterations that are near the end of a development cycle should exhibit a wide band of resolved bugs.  
   
 ### Questions That the Report Answers  
@@ -114,8 +115,8 @@ After the team has started to find and fix bugs, you can track the team's progre
 |**The number of resolved or closed bugs is not changing**. When the number of bugs that are being resolved or closed remains flat for long periods of time, team members might not able to resolve or close bugs.|-   Are team priorities correctly set?<br />-   Are team members overallocated on other tasks?<br />-   Are team members correctly tracking their bug status?|  
 |**Bug assignments are not evenly distributed**. The team might need to reassign work when a large number of bugs are assigned to one or two team members and only a few to other team members.|-   Does the team need to balance the workload by reassigning bugs?|  
 |**The number of active higher priority bugs is larger than the number of active lower priority bugs**. When the number of high priority bugs is much larger than the number of lower priority bugs, work might be progressing on lower priority items first.|-   Is the team fixing bugs in the order of priority set by the team?<br />-   Are issues blocking the team's ability to fix the higher priority bugs?|  
-  
-##  <a name="Changing"></a> Filtering the Report and Changing the Display  
+ # <
+## <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Bug Status report or change its display in the following ways:  
   
 -   Change the start and end dates for the report.  

@@ -40,7 +40,7 @@ Which architectures or build types have the most test coverage?
   
  
 <a name="example_trend"></a> 
-##  Example: Code Churn Report  
+## Example: Code Churn Report  
 By using a PivotChart report in Excel, you can create a trend report that displays the code churn over time, similar to the report that the following illustration shows.  
   
  ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")  
@@ -73,7 +73,7 @@ By using a PivotChart report in Excel, you can create a trend report that displa
 5.  Drag the **Lines Added**, **Lines Modified**, and **Lines Deleted** fields from the **Code Churn** measure group to the **Values** area. You must drag each field separately.  
   
 <a name="churn_measures"></a> 
-##  Code churn measures  
+## Code churn measures  
  Code churn measures quantify how much change is occurring in your project. In general, high levels of churn indicate project instability. You should expect high rates of churn at the start of a product cycle or after the team has implemented many changes. Toward the end of an iteration or before a release, you should expect the level of churn to decrease, which indicates that your project is more stable.  
   
  The following table describes the measures in the Code Churn measure group. By using these measures, you can create reports that show how many file versions are stored in Team Foundation version control and how much the code has changed. You can analyze metrics by file directory, build, or team member who checked in changes, and you can determine how those metrics change over time.  
@@ -90,7 +90,7 @@ By using a PivotChart report in Excel, you can create a trend report that displa
 |Total Lines|The number of lines in the part of the file path hierarchy that you specify. You must also specify one or more builds to indicate the point or points at which to perform this calculation. If you do not specify one or more builds, NULL is returned. The number of lines is calculated by aggregating the lines added and lines deleted that have contributed to a specific combination of build type and operating system. **Tip:**  The Total Lines measure can cause the OLAP query to timeout. If your report takes too long to render, consider shortening the changeset, build, test run, or date range.|  
   
 <a name="run_measures"></a> 
-##  Run coverage measures  
+## Run coverage measures  
 
 The following table describes the measures in the Run Coverage measure group. By using these measures, you can create reports that show the extent to which the code was covered by tests in a test run. For information about similar metrics that you can collect for builds, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
@@ -104,7 +104,7 @@ The following table describes the measures in the Run Coverage measure group. By
 |Run Coverage Lines Partially Covered|The number of lines that tests in a run partially cover. However, coverage across the tests might overlap.|  
   
 <a name="churn_dimensions"></a> 
-##  Dimension and attributes in the Code Churn Perspective that support filtering and categorization  
+## Dimension and attributes in the Code Churn Perspective that support filtering and categorization  
  The following table describes the dimensions and attributes in the Code Churn perspective. These attributes supplement the **Team Project** and **Date** shared dimensions, which [Working with Shared Dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes. You can aggregate the measures along each of these attributes.  
   
 |Dimension|Attribute|Description|  
@@ -124,7 +124,7 @@ The following table describes the measures in the Run Coverage measure group. By
 |Work Item|Work Item Type and more|For more information, see [Test cases and work items](perspective-test-analyze-report-work.md).|  
   
 <a name="run_dimensions"></a> 
-##  Dimensions and attributes in the Run Coverage Perspective that support filtering and categorization  
+## Dimensions and attributes in the Run Coverage Perspective that support filtering and categorization  
  The following table describes the dimensions and attributes in the Run Coverage perspective. These attributes supplement the **Team Project** and **Date** shared dimensions that [Working with Shared Dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes later in this topic. You can aggregate the measures along each of these attributes.  
   
 > [!NOTE]  
@@ -143,7 +143,7 @@ The following table describes the measures in the Run Coverage measure group. By
 |Build Platform|Build Platform|(Published test results only) The name of the machine platform for which an end-to-end (not desktop) build was made and that was published as part of a test run (for example, **x86** or **Any CPU**). For an example of a report that uses this attribute, see [Build Summary](build-summary-report.md).|  
 |Test Run|Complete Date Hierarchy by Month or by Week<br /><br /> Creation Date Hierarchy by Month or by Week|Date dimensions that are based on the date when the test run was created and finished. For more information, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).|  
   
-##  <a name="tracking"></a> Required activities  
+## <a name="tracking"></a> Required activities  
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
 -   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)  

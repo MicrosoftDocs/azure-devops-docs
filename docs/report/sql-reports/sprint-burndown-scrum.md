@@ -7,7 +7,8 @@ ms.topic: reference
 description: Tracks how much work remains in a sprint backlog.
 ms.assetid: f7422ba3-c309-4092-87cf-17a83c77ac01
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -26,8 +27,8 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
      If you need to add reporting services to your deployment or reports for a team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
   
 -   To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  A sprint burndown report shows how much work remained at the end of specified intervals during a sprint. The source of the raw data is the sprint backlog. The horizontal axis shows days in a sprint, and the vertical axis measures the amount of work that remains to complete the tasks in the sprint. The work that remains is shown in hours.  
   
  A sprint burndown graph displays the following pieces of data:  
@@ -59,8 +60,8 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
     >  If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task as it progresses from **To Do** to **Done**.  
-  
-##  <a name="Interpreting"></a> Interpreting the report  
+ # <
+## <a name="Interpreting"></a> Interpreting the report  
  You can review the report to determine the progress that your team has made in a release and answer the following questions:  
   
 -   How much work remains in the sprint?  

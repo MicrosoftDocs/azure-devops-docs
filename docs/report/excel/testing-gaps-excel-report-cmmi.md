@@ -38,7 +38,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Reports  
+## <a name="Data"></a> Data in the Reports  
  The Testing Gaps reports show the cumulative count of test results for the test plans, test configurations, and test cases that are defined for a team project. All reports are based on PivotTables that access data that is stored in the data warehouse.  
   
 ### Test Coverage of Requirements  
@@ -75,7 +75,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
 |-------------|------------|  
 |-   **Team Project - Team Project Hierarchy**: Includes builds that were defined for the selected team project.<br />-   **Build - Build Pipeline Name**: Includes builds that were associated with the selected build pipelines.|-   **Build Coverage - Lines Covered**: The number of lines that were covered in the selected build.<br />-   **Build Coverage - Lines Not Covered**: The number of lines that were not covered in the selected build.<br />-   **Build Coverage - Lines Partially Covered**: The number of lines that were partially covered in the selected build. <br /><br />**Note:**      If multiple runs are performed against a build, the build coverage reflects the combined coverage of the runs, taking into consideration that there might be overlap in the lines covered across the runs.<br /><br />-   **Build - Build Name**: The name of the build. Each time that a build is run, it is assigned a name that contains the build pipeline name as its prefix.<br />-   **Assembly - Assembly**: The assembly name against which the coverage statistics were generated.|  
   
-##  <a name="RequiredActivities"></a> Required Activities for Monitoring Testing Gaps  
+## <a name="RequiredActivities"></a> Required Activities for Monitoring Testing Gaps  
  For the Testing Gaps reports to be useful and accurate, the team must perform the activities that are described in the following table:  
   
 |Worksheet report|Required activities|  
@@ -86,7 +86,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
 |-   Requirement Status<br />-   Requirement Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed|-   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case. The **Test Result - Iteration Hierarchy** and **Test Result - Area Hierarchy** fields get their values from the **Iteration** and **Area** paths that are assigned to their corresponding test cases.|  
 |-   Requirement Status<br />-   Requirement Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed<br />-   Code Coverage|-   **Configure a build system**. To use Team Foundation Build, you must set up a build system.<br />     For more information, see [Configure Your Build System](../../pipelines/overview.md).<br />-   **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.<br />     For more information, see [Configure and manage your build system](../../pipelines/overview.md).<br />-   **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.<br />     For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).<br />-   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.<br />-   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.<br />     For more information, see [Build triggers](../../pipelines/build/triggers.md).<br /><br />**Note:**      Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).|  
   
-##  <a name="Updating"></a> Updating and Customizing the Report  
+## <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Testing Gaps report by opening it in Office Excel and changing the filter options for the PivotTable report for one of the worksheets. You can customize each report to support other views, as the following table describes.  
   
 |Worksheet|View|Action|  

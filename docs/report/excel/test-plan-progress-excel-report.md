@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 5fa325e8-ca16-47f5-a8af-bdfdcbcfc243
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -34,8 +35,8 @@ You can use the Test Plan Progress report to monitor test activities and report 
 -   To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project. See [Add users to team projects](../../organizations/security/add-users-team-project.md).  
   
 -   To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The team can review the Test Plan Progress report to help determine how much testing the team has completed and whether it is likely to finish test activities on time. As the following illustration shows, the report provides a stacked area graph of the results of all tests, grouped into their most recently recorded outcome within the most recent four weeks. Outcomes include **Never Run**, **Blocked**, **Failed**, or **Passed**.  
   
  ![Test Plan Progress Excel Report](_img/procguid_agiletest.png "ProcGuid_AgileTest")  
@@ -55,8 +56,8 @@ You can use the Test Plan Progress report to monitor test activities and report 
      For automated tests, each test is automatically marked as passed or failed.  
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  You should expect the Test Plan Progress report to vary depending on where you are in your product development cycle. Early iterations should show a gradual increase in the number of test cases that pass. The team can review the report to find answers to the following questions:  
   
 -   How many tests are passing?  
@@ -74,8 +75,8 @@ You can use the Test Plan Progress report to monitor test activities and report 
 -   Is the team likely to finish the testing on time?  
   
  An ideal trend would show a steady increase in the number of **Passed** tests and a steady decrease in the number of **Failed**, **Never Run**, or **Blocked** tests. For information about healthy and unhealthy versions of the report, see [Test Plan Progress](../sql-reports/test-plan-progress-report.md).  
-  
-##  <a name="Updating"></a> Updating and Customizing the Report  
+ # <
+## <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Test Plan Progress report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can customize this report to support other views, as the following table describes.  
   
 |View|Action|  

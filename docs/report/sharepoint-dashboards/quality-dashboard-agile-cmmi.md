@@ -25,7 +25,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
   
  Same requirements defined in [Project portal dashboards](project-portal-dashboards.md).  
   
-##  <a name="Data"></a> Data displayed in the dashboard  
+## <a name="Data"></a> Data displayed in the dashboard  
  Team members can use the Quality dashboard to determine the overall quality of the product that they are developing. In an ideal case, test pass rates, bugs, and code churn all show the same picture, but often they do not. When you find a discrepancy, you must examine more closely the appropriate build and data series. The Quality dashboard combines the test results, code coverage from testing, code churn, and bugs, to help you understand many perspectives at the same time.  
   
  To learn about the Web Parts that are displayed on the Quality dashboard, refer to the illustration and the table that follow.  
@@ -52,7 +52,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
 |![9](_img/procguid_9.png "ProcGuid_9")|List of recent builds and their status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially Succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
 |![10](_img/procguid_10.png "ProcGuid_10")|List of the most recent check-ins. You can view more details by choosing a specific check-in. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md)|  
   
-##  <a name="Activities"></a> Required activities for monitoring quality  
+## <a name="Activities"></a> Required activities for monitoring quality  
  For the Quality Dashboard to be useful and accurate, the team must perform the activities that this section describes.  
   
 ### Required activities for tracking test plan progress  
@@ -109,7 +109,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  
   
-##  <a name="Troubleshooting"></a> Troubleshoot quality issues  
+## <a name="Troubleshooting"></a> Troubleshoot quality issues  
  The following table describes specific quality issues that the Quality dashboard can help you monitor and identify actions the team can take.  
   
 |Issue|Reports to review|Troubleshooting notes|  

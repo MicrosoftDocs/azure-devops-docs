@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
@@ -131,8 +132,8 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
   
  Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   
-<a name="color"></a> 
-###  Q: How do I change the color associated with a WIT?  
+<a# Qe="color"></a> 
+### Q: How do I change the color associated with a WIT?  
  **A:** In the web portal, work items appear in query results and on the backlog and board pages of the Agile planning tools. To change the color associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](../xml/process-configuration-xml-element.md).  
   
  ![Color assignments to different work item types](_img/alm_pc_colorconfig.png "ALM_PC_ColorConfig")  
@@ -169,7 +170,7 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 
 
 <a name="delete"></a>  
-###   Q: How do I delete a WIT?  
+### Q: How do I delete a WIT?  
  **A:** To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use `witadmin destroywitd`, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use Impediment you can delete the WIT labeled Impediment from the Fabrikam Web Site project.  
   
 ```  

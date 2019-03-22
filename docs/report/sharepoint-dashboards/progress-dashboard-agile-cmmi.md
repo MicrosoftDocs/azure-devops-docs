@@ -30,7 +30,7 @@ You can use the Progress dashboard to track team progress toward completing an i
   
  Same requirements defined in [Project portal dashboards](project-portal-dashboards.md).  
   
-##  <a name="Data"></a> Data displayed in the dashboard  
+## <a name="Data"></a> Data displayed in the dashboard  
  You can use the Progress dashboard to understand how much progress the team is making toward completing user stories, tasks, and issues. To learn about the Web Parts that are displayed on the Progress dashboard, refer to the illustration and the table that follow.  
   
  **Agile process template version**  
@@ -58,7 +58,7 @@ You can use the Progress dashboard to track team progress toward completing an i
 |![Step 8](_img/procguid_8.png "ProcGuid_8")|List of recent builds and their status. You can view more details about a specific build by choosing it.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> See also [Run, monitor, and manage](../../pipelines/overview.md).|  
 |![9](_img/procguid_9.png "ProcGuid_9")|List of the most recent check-ins. You can view more details about a specific check-in by choosing it.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")<br /><br /> See also [Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md).|  
   
-##  <a name="RequiredActivities"></a> Required activities for tracking progress  
+## <a name="RequiredActivities"></a> Required activities for tracking progress  
  For the reports that appear in the Progress dashboard to be useful and accurate, the team must perform the following activities:  
   
 -   Define user stories, tasks, and issues.  
@@ -72,10 +72,10 @@ You can use the Progress dashboard to track team progress toward completing an i
   
 -   (optional) Specify the **Iteration** and **Area** paths for each work item if you want to filter by those fields.  
   
-##  <a name="Using"></a> Track an iteration  
+## <a name="Using"></a> Track an iteration  
  By using the Progress dashboard, product owners and the team can view the team's progress and determine whether the team is making enough progress, delivering value by closing user stories, and implementing the iteration based on the iteration plan.  
   
-###  <a name="Modify"></a> Modify the Task Burndown report for an iteration  
+### <a name="Modify"></a> Modify the Task Burndown report for an iteration  
  To track an iteration by using the Progress dashboard, you must modify the Task Burndown report in Office Excel to reflect the start date for your iteration. By default, the start date is five days before the current date.  
   
 > [!NOTE]
@@ -109,7 +109,7 @@ You can use the Progress dashboard to track team progress toward completing an i
   
 12. Return to the Progress dashboard, and refresh your browser window to display the most recent reports.  
   
-###  <a name="Progress"></a> Monitor progress  
+### <a name="Progress"></a> Monitor progress  
  To monitor team progress, you can review the **Task Burndown (hours)**, **Task Progress (count)**, and **User Story Progress (count)** or **Requirement Progress (count)** reports for the following types of indicators:  
   
 -   **Has Completed Work stopped increasing in the Task Burndown (hours) report?**  
@@ -130,7 +130,7 @@ You can use the Progress dashboard to track team progress toward completing an i
   
  If the slope of the **Remaining Work** is progressing near or under the **Ideal Trend** line, the team is executing well against the iteration plan. However, if the **Remaining Work** slope is higher than the **Ideal Trend** line, the team will probably not complete all planned tasks before the end of the iteration.  
   
-###  <a name="Issues"></a> Monitor issues  
+### <a name="Issues"></a> Monitor issues  
  Because issues can block or impede team progress, you should track them as the team identifies them, and you should monitor how quickly the team addresses them. You can use the **7-Day Issue Trend Rate** and the Open Issues report to review any issues that have an impact on the team. Specifically, you can find answers to the following questions:  
   
 -   How often is the team identifying issues?  

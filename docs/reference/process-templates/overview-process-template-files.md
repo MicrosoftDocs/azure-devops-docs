@@ -47,7 +47,7 @@ For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).
 
   
 <a name="Root"></a> 
-##  The root process template file  
+## The root process template file  
  You customize the root XML file, ProcessTemplate.xml, to define the sequence of plug-in files to be processed and the dependencies of each plug-in. The ProcessTemplate.xml file contains all task groups that must run to successfully create a project. Each task group references a subordinate XML plug-in file (often in a subfolder) where the specific tasks are defined. For more information, see [Define the root tasks](define-root-tasks-process-template-plug-in.md).  
    
  

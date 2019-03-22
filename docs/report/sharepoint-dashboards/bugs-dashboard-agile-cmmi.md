@@ -35,7 +35,7 @@ You can monitor Bug activity for a team project by using the Bugs dashboard, whi
   
  Same requirements defined in [Project portal dashboards](project-portal-dashboards.md).  
   
-##  <a name="Data"></a> Data that appears in the dashboard  
+## <a name="Data"></a> Data that appears in the dashboard  
  The team can use the Bugs dashboard to understand how well the team is finding, resolving, and closing bugs. To learn about the Web Parts that are displayed on the Bugs dashboard, refer to the illustration and the table that follow.  
   
  ![Bugs Dashboard](_img/procguid_dashbugs.png "ProcGuid_DashBugs")  
@@ -57,7 +57,7 @@ You can monitor Bug activity for a team project by using the Bugs dashboard, whi
 |![Step 8](_img/procguid_8.png "ProcGuid_8")|List of recent builds and their status. You can view more details about a build by choosing it. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
 |![9](_img/procguid_9.png "ProcGuid_9")|List of the most recent check-ins. You can view more details about a specific check-in by choosing it. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md)|  
   
-##  <a name="Activities"></a> Required activities for tracking bugs  
+## <a name="Activities"></a> Required activities for tracking bugs  
  For the reports that appear in the Bugs dashboard to be useful and accurate, the team must perform the following activities:  
   
 -   Define Bugs, and specify their **Iteration** and **Area** paths.  
@@ -68,7 +68,7 @@ You can monitor Bug activity for a team project by using the Bugs dashboard, whi
   
 -   Update the **State** of each Bug as the team fixes, verifies, and closes it.  
   
-##  <a name="Using"></a> Monitor active bugs and bug trends  
+## <a name="Using"></a> Monitor active bugs and bug trends  
  Team members can use the Bugs dashboard to determine whether they are managing the list of active Bugs according to established team goals and agile practices. By unit testing each increment of code before check-in, the team can reduce the overall number of bugs that the team must find. A team that focuses on being able to ship each increment of code removes defects incrementally and minimizes ongoing bugs.  
   
  By using the Bugs dashboard, the team can answer the following questions:  
@@ -81,7 +81,7 @@ You can monitor Bug activity for a team project by using the Bugs dashboard, whi
   
 -   Does any team member need help in resolving bugs?  
   
-###  <a name="Progress"></a> Bug progress indicators  
+### <a name="Progress"></a> Bug progress indicators  
   
 |Indicator|Questions to ask|  
 |---------------|----------------------|  
@@ -89,7 +89,7 @@ You can monitor Bug activity for a team project by using the Bugs dashboard, whi
 |**The number of active Bugs is not changing**. A flat trend in the number of active Bugs indicates that the team is not finding Bugs.|-   Is the test coverage sufficient?<br />-   Are other issues blocking the team's ability to find Bugs?|  
 |**The number of resolved or closed Bugs is not changing**. When the number of Bugs that the team is resolving or closing remains flat for long periods of time, team members might not be able to resolve or close Bugs.|-   Are team priorities correctly set?<br />-   Are team members overallocated on other tasks?<br />-   Are team members correctly tracking their Bug status?|  
   
-###  <a name="Trend"></a> Bug trend indicators  
+### <a name="Trend"></a> Bug trend indicators  
   
 |Indicator|Questions to ask|  
 |---------------|----------------------|  
@@ -99,7 +99,7 @@ You can monitor Bug activity for a team project by using the Bugs dashboard, whi
 |**The team is finding about the same number of bugs in successive time periods**. If the team finds the same number of bugs week after week or iteration after iteration, you might investigate the underlying cause. Early in the testing cycle, the tests might not be rigorous or advanced enough to find many bugs. In early iterations, this situation is expected. However, as the product matures, tests should exercise broader scenarios and integrations.|-   Are the test cases adequate to test the user stories that the team is developing?<br />-   Have the tests become stale or are they testing the wrong functionality?<br />-   Is the test team rigorously testing each user story?<br />     For more information about these metrics, see [Test](test-dashboard-agile-cmmi.md).|  
 |**The team is finding many bugs in each time period**. The team might find bugs easily in sloppy code, in newly integrated code, with effective testing, or during a specific event, such as a bug bash.|-   Do the metrics for code coverage, code churn, or test progress indicate a problem with the code or testing?<br />     For more information about these metrics, see [Quality](quality-dashboard-agile-cmmi.md).|  
   
-###  <a name="PriorityDistribution"></a> Bug priority and distribution  
+### <a name="PriorityDistribution"></a> Bug priority and distribution  
   
 |Indicator|Questions to ask|  
 |---------------|----------------------|  

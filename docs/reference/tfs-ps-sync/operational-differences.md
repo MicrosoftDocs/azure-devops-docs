@@ -46,7 +46,7 @@ ms.date: 01/12/2017
 |View resource allocation   across multiple enterprise project plans.||![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
 |Leverage portfolio optimization, demand management, and reporting (features available only with Project Server)||![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
   
-##  <a name="OperationalDifferences"></a> 
+## <a name="OperationalDifferences"></a> 
 
 Operational differences between using the Team Foundation plug-in to Project and integrating TFS with Project Server  
  The following table summarizes the operational differences between using Project to publish and refresh TFS work items and synchronizing data between TFS and Project Server.   
@@ -58,7 +58,7 @@ Operational differences between using the Team Foundation plug-in to Project and
 |**Rollup of work and resources**|-   In work items that contain child tasks, the values in the Remaining Work and Completed Work fields are calculated and rolled up automatically.<br />-   Hours are rolled up in Project but not in Team Foundation.<br />-   Resources are not rolled up.|-   In work items that contain child tasks and that are synchronized, the values in the Remaining Work and Completed Work fields are calculated and rolled up automatically.<br />-   Hours are rolled up in Project and Team Foundation mirror fields.<br />-   Resources and resource allocation are rolled up within Project Professional and Project Server.|  
 |**Setup and configuration**|-   Requires Team Foundation Plug-in for Microsoft Project, which is installed with Visual Studio 2012.<br />-   Publish and refresh tasks based on a list of work items.<br />-   Publish and refresh all types of work items without any mapping or setup.<br />-   Control which fields get published and refreshed by customizing the mapping file for each collection.<br />-   Exert granular control over how fields are published and refreshed based on the assignment of the `PublishOnly` and `IfSummaryRefreshOnly` attributes.|-   Requires Team Foundation Server Extensions for Project Server, Project Server, and Project Professional with Team Foundation Plug-in. For more information, see [System and setup requirements](system-and-setup-requirements.md).<br />-   Configure the projects and types of work items that participate in synchronization.<br />-   Control which fields get published and refreshed by customizing the mappings for a project collection.<br />-   Exert granular control over how fields are published and updated based on the fields that are assigned to the **tfsToTarget** and **targetToTfs** elements.|  
   
-##  <a name="Publishing"></a> Publishing from Project Professional versus Project  
+## <a name="Publishing"></a> Publishing from Project Professional versus Project  
  When you publish tasks from Project Professional, you open the **File** menu, and then you choose **Publish** to publish the project plan to Project Server. After Project Server is updated, the synchronization engine pulls data from Project Server and determines what data to update in Team Foundation based on the data that is configured for synchronization. Only those projects, work items, and fields that are configured for synchronization are updated.  
   
  When you publish tasks from Project, you choose **Publish** on the **Team** ribbon or the **Team** menu.  

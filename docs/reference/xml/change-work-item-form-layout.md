@@ -186,7 +186,7 @@ Perform one of the following steps based on the scope of the customization you a
 10. To import the new work item type to a single project, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md). To add the work item type to your process template, see [Add type definitions for work items](../process-templates/add-wit-definitions-process-template.md).  
   
 <a name="Verify"></a> 
-##  Verify the Web page or HTML content appears in the work item form  
+## Verify the Web page or HTML content appears in the work item form  
   
 1.  In Team Explorer, choose **Refresh** to download the latest updates from the server.  
   

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: e2785458-f618-42b4-ab77-fbe4cb41c493
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -38,8 +39,8 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
  **Requirements**  
   
  To complete the procedures in this topic, you must have the **Administer Project Server integration** permission set to **Allow**. In addition, the TFS service account must be granted the **Administer Project Server integration**. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
-  
-##  <a name="dmappings"></a> Default mappings  
+ # <
+## <a name="dmappings"></a> Default mappings  
  The mappings determine which fields get synchronized when a user updates information in TFS or Project Server. Each of the following synchronization types has its own set of mappings:  
   
 -   For **publish synchronization**, the data in Project Server updates the data in TFS. You use the **targetToTfs** element to specify the field in Project Server that updates the field in TFS.  
@@ -61,8 +62,8 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
 |Original Estimate|Baseline Work||Task|Bug, Change Request, Issue, Requirement, Risk, and Task|None|  
 |Start Date|Task Start|Resource Start|Task and User Story|Task and Requirement|None|  
 |Finish Date|Task Finish|Resource Finish|Task and User Story|Task and Requirement|None|  
-  
-###  <a name="scrummodifications"></a> Required changes to make when mapping to a project that was created from the Scrum process template  
+  # <
+### <a name="scrummodifications"></a> Required changes to make when mapping to a project that was created from the Scrum process template  
  There are two changes you must make to enable data flow from a project created from a [Scrum process](../../boards/work-items/guidance/scrum-process.md) process template. You must add the Completed Work and Original Estimate fields to the Task work item type, and you must remove the elements that require the Remaining Work field to be empty when a team member changes the state to **Done** or **Removed**.  
   
 ##### To update the Scrum task type definition  
@@ -123,8 +124,8 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
 9. Refresh your project or work items page to verify the changes.  
   
  For more information, see [Export and import work item types](https://msdn.microsoft.com/library/ms404856.aspx), [Modify a field or add a custom field](../../reference/add-modify-field.md), and [Design and customize a work item form](../../reference/xml/design-work-item-form.md).  
-  
-##  <a name="dadditional"></a> Determine additional fields to map  
+ # <
+## <a name="dadditional"></a> Determine additional fields to map  
  Determine the following information for each field that you want to synchronize in addition to the default fields:  
   
 -   The reference name of the TFS field. If you want to synchronize a field in Project Server with a field that you must create in TFS, first create the field in each type of work item that you are synchronizing. For more information, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) and [Modify a field or add a custom field](../../reference/add-modify-field.md).  
@@ -218,8 +219,8 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
 6.  Add the two new columns for the new fields, Area (TFS) and Iteration (TFS), to your project plan  
   
  Changes made to the **Area** and **Iteration** fields in Team Foundation will be synchronized with these fields in your project plan. Also, you can update these fields in Project and publish your changes to Team Foundation if you specify values that have been defined in Team Foundation.  
-  
-##  <a name="downloadmappings"></a> Download the mappings to a file  
+ # <
+## <a name="downloadmappings"></a> Download the mappings to a file  
   
 > [!NOTE]
 >  You can download mappings only from a project collection to which they have been uploaded. If you want to download the default mappings to a file, you must first upload the default mappings, as described in [To upload the default mappings](#upload) later in this topic. As an alternative, you can copy the contents of the default mappings. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).  
@@ -247,11 +248,11 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
      **Downloading** *MappingFile* **to Team Project Collection** *tpcUrl*.  
   
      **You have successfully downloaded field mapping file** *MappingFile* **to Team Project Collection** *tpcUrl*.  
-  
-##  <a name="updatemappings"></a> Update the mappings  
+ # <
+## <a name="updatemappings"></a> Update the mappings  
  For each field that you want to add to the mapping file, you specify the `field` element and its subelements and attributes. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).  
-  
-##  <a name="upload"></a> Upload the mappings  
+ # <
+## <a name="upload"></a> Upload the mappings  
  You upload mappings by using the **UploadFieldMappings** command. You can upload the default mappings by using the `/usedefaultfieldmapping` option. Otherwise, you must specify a file that contains the mapping elements.  
   
 #### To upload the default mappings  
@@ -285,8 +286,8 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
      **Uploading** *MappingFile* **to Team Project Collection** *tpcUrl*.  
   
      **You have successfully uploaded field mapping file** *MappingFile* **to Team Project Collection** *tpcUrl*.  
-  
-##  <a name="customizetab"></a> Customize the Project Server tab  
+ # <
+## <a name="customizetab"></a> Customize the Project Server tab  
  When you associate an enterprise project plan with a project, the Project Server tab is added to the work item form, as the following illustration shows. The tab is added to only those types of work items that you specify to participate in data synchronization. You customize this tab by setting the `displayTfsField` or `displayTfsMirror` attributes to `true` for those fields that you want to have appear on the form.  
   
  ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  

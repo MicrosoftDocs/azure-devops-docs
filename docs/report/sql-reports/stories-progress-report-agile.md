@@ -7,7 +7,8 @@ ms.topic: reference
 description: Lists all user stories, filtered by product area and iteration in order of importance.
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -28,8 +29,8 @@ The Stories Progress report lists all user stories, filtered by product area and
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Stories Progress report shows the status of completion as determined by the tasks that have been defined to implement the user story, as the following illustration shows. The data in the report is derived from the data warehouse.  
   
  ![Example Stories Progress Report](_img/procguid_repstoriesprogress.png "ProcGuid_RepStoriesProgress")  
@@ -72,8 +73,8 @@ The Stories Progress report lists all user stories, filtered by product area and
   
     > [!NOTE]
     >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  Depending on your area of focus, you can filter the report in the following ways:  
   
 -   Specify the **Iteration** and **Area** paths of interest.  
@@ -128,8 +129,8 @@ The Stories Progress report lists all user stories, filtered by product area and
 -   **Many user stories have no recently completed work**.  
   
      When several stories indicate no or very small amounts of recently completed work, team progress is slow. You might investigate the cause of the slow progress and determine whether you should resolve or track blocking issues.  
-  
-##  <a name="Changing"></a> Filtering the Report and Changing the Display  
+ # <
+## <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Stories Progress report or change its display in the following ways:  
   
 -   Filter the list of stories that appear by changing the iteration or area paths.  

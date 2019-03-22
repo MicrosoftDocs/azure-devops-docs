@@ -350,7 +350,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions/2?ap
 
 * [C# (GetWorkItemRevision method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L78)
 
-###  With links and attachments
+### With links and attachments
 
 #### Sample request
 

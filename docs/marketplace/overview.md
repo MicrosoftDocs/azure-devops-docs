@@ -12,7 +12,7 @@ ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
-#  Discover extensions in the Marketplace
+# Discover extensions in the Marketplace
 
 In the Visual Studio Marketplace you can do the following:
 

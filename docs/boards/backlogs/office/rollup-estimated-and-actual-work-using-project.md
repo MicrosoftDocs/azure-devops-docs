@@ -55,7 +55,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
      By making them read-only you prevent users from introducing data inaccuracies into TFS. You make fields read-only using the `Control` field `Readonly` attribute.  
   
-##  <a name="project"></a> Update the Microsoft Project Mapping file  
+## <a name="project"></a> Update the Microsoft Project Mapping file  
   
 1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).  
   
@@ -79,7 +79,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 3.  Assign `PublishOnly="false"` and `IfSummaryRefreshOnly="false"` in the mapping file so that the rollup summary values are published to the TFS database.  
   
-##  <a name="requirements"></a> Structure your work items to support rollup  
+## <a name="requirements"></a> Structure your work items to support rollup  
   
 1.  Link all work items that should support rollup using parent-child links.  For example, create tasks that link to user stories.  
   

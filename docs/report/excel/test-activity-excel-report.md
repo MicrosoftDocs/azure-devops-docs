@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: cb950153-2f44-4b0b-afeb-cfb697281930
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -28,8 +29,8 @@ You can use the Test Activity report to help monitor the number of manual tests 
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  You can use the Test Activity report to understand how well the team is completing tests. This report is based on a PivotChart that shows the most recent four weeks of data that was captured for test results and that is stored in the data warehouse.  
   
  ![Test Activity Excel Report](_img/procguid_testactivity.png "ProcGuid_TestActivity")  
@@ -47,8 +48,8 @@ You can use the Test Activity report to help monitor the number of manual tests 
      For automated tests, each test case is automatically marked as passed or failed.  
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.  
-  
-##  <a name="Interpreting"></a> Interpreting the report  
+ # <
+## <a name="Interpreting"></a> Interpreting the report  
  You should expect the Test Activity report to vary depending on where you are in your product development cycle. Early iterations should show a gradual increase in the number of manual test cases that have been run.  
   
  You can review the report to answer to the following questions:  
@@ -60,8 +61,8 @@ You can use the Test Activity report to help monitor the number of manual tests 
  The Test Activity report indicates the results for each test case run for each test configuration and for all test plans. Spikes that might occur may be early indicators of problems in either the test activity or the quality of code that is being checked in.  
   
  You might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in test activity.  
-  
-##  <a name="Updating"></a> Updating and customizing the report  
+ # <
+## <a name="Updating"></a> Updating and customizing the report  
  You can update the Test Activity report by opening it in Microsoft Excel and changing the filter options for the PivotTable report. You can customize this report to support other views, as the following table describes.  
   
 |View|Action|  

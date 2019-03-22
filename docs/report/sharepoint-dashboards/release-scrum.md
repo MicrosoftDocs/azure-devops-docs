@@ -25,7 +25,7 @@ The Release dashboard shows how much work remains in the release and how quickly
   
  See [Project portal dashboards](project-portal-dashboards.md).  
   
-##  <a name="Data"></a> Data displayed in the dashboard  
+## <a name="Data"></a> Data displayed in the dashboard  
  You can use the Release dashboard to understand how much progress the team is making to complete PBIs.  To learn about the web parts that are displayed on the dashboard, refer to the following illustration and table.  
   
  ![Release dashboard](_img/alm_pg_scrum_releasedashbrd.png "ALM_PG_Scrum_ReleaseDashbrd")  

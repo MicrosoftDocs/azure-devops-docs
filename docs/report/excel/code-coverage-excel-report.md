@@ -27,7 +27,7 @@ With the Code Coverage report, you can monitor how much code the team is testing
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Report  
+## <a name="Data"></a> Data in the Report  
  The team can review the Code Coverage report to determine whether tests cover the code sufficiently and how the coverage changed over time. As the following illustration shows, the report provides a line graph of the build verification test (BVT) code coverage and other coverage over the most recent four weeks.  
   
  ![Code Coverage Report](_img/procguid_codecoverage.png "ProcGuid_CodeCoverage")  
@@ -58,7 +58,7 @@ With the Code Coverage report, you can monitor how much code the team is testing
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+## <a name="Interpreting"></a> Interpreting the Report  
  If the team practices test-driven development or similar techniques, the code coverage should almost always approach 100%. If unit tests are reused as BVTs, the code coverage should be visible in the Code Coverage report.  
   
  You can review the Code Coverage report to answer these questions:  
@@ -71,7 +71,7 @@ With the Code Coverage report, you can monitor how much code the team is testing
   
  For more information about how code coverage impacts quality, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md) and [Build Quality Indicators](../sql-reports/build-quality-indicators-report.md).  
   
-##  <a name="Updating"></a> Customizing the Report  
+## <a name="Updating"></a> Customizing the Report  
  You can customize the Code Coverage report by opening it in Office Excel and changing the filter options or a column field list for the PivotTable report. You can modify the report to support other views, as the following table describes.  
   
 |View|Action|  

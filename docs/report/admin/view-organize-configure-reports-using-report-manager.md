@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: f382806c-9509-45bf-b175-51a2c853621a
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
 ms.date: 11/19/2018
 ---
@@ -22,11 +23,11 @@ After you create and publish reports in SQL Server Report Designer, you can use 
  When you open Report Manager, you start in the Contents page, which shows the items that you have permission to view. You might also have permission to add, delete, and move those items. For more information, see the following page on the Microsoft Web site: [Contents Page (Report Manager)](http://go.microsoft.com/fwlink/?LinkID=182175).  
   
  After you click a report, you can perform one or more of the tasks that are described in this topic.  
-  
-##  <a name="ViewAReport"></a> View a report  
+ # <
+## <a name="ViewAReport"></a> View a report  
  By using the **View** tab, you can display results for reports. You can adjust parameters, subscribe to the report, and navigate through the report. You can also refresh, export, and print the report. For more information, see the following page on the Microsoft Web site: [Viewing Reports](http://go.microsoft.com/fwlink/?LinkId=182176).  
-  
-##  <a name="ConfigureReportProperties"></a> Configure report properties  
+ # <
+## <a name="ConfigureReportProperties"></a> Configure report properties  
  By using the **Properties** tab, you can configure different aspects of a report. The **Properties** tab contains the following pages:  
   
 |Page|Task|Related topic on the Microsoft Web site|  
@@ -37,11 +38,11 @@ After you create and publish reports in SQL Server Report Designer, you can use 
 |**Processing Options**|**Configure Execution and Caching**.<br /><br /> On the **Processing Options** page, you can control when and how often reports are processed. You can set reports to run during off-peak hours or you can cache reports to eliminate wait time if you have many users who access the same report.|[Processing Options Properties Page (Report Manager)](http://go.microsoft.com/fwlink/?LinkId=181965)|  
 |**Snapshot Options**|**Configure Report History**.<br /><br /> On the **Snapshot Options** page, you can configure whether and how many report snapshots are stored in report history.|[Snapshot Options Properties Page (Report Manager)](http://go.microsoft.com/fwlink/?LinkId=181966)|  
 |**Security**|**Configure Report Security**.<br /><br /> On the **Security** page, you can configure the security settings that determine access to folders, reports, models, resources, and shared data sources. This page is available only for items that you create or have permission to modify. You define access to items by assigning a group or a user to a specific role, which specifies the tasks that members of that role can perform.|[Security Properties Page, Items (Report Manager)](http://go.microsoft.com/fwlink/?LinkId=181967)|  
-  
-##  <a name="ViewReportHistory"></a> View report history  
+ # <
+## <a name="ViewReportHistory"></a> View report history  
  By using the **History** tab, you can create, view, and delete report snapshots. Each snapshot contains the layout and data that are captured at a specific day and time. If you change the layout or if the data has changed, those changes will appear only in snapshots that were captured after the changes were made. Saved report snapshots are not affected. You can view history for a report only if you have access to that report, and you can view the history for only one report at a time. For more information, see the following page on the Microsoft Web site: [Managing Report History](http://go.microsoft.com/fwlink/?LinkId=181968).  
-  
-##  <a name="ViewAndModifySubscriptions"></a> View and modify subscriptions  
+ # <
+## <a name="ViewAndModifySubscriptions"></a> View and modify subscriptions  
  By using the **Subscriptions** tab, you can create, view, and delete subscriptions for a specific report. A subscription is a standing request to deliver a report at a specific time or in response to an event. You can use subscriptions to schedule and automate delivery of the reports that you use often. For example, you could decide to have the results of your nightly build and test runs appear in e-mail to your team each morning.  
   
  You can create two types of subscriptions:  

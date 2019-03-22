@@ -5,7 +5,8 @@ description: You can specify the folder structure and set of reports that will a
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= azure-devops-2019' 
@@ -32,7 +33,7 @@ You specify two main tasks by using the Reporting plug-in. First, you create the
 After a project is created from the process template, you can add, remove, rename, and change the folder structure for reports. For more information, see [View, upload, and organize reports](../../report/admin/view-upload-organize-reporting-services-reports.md).  
   
 <a name="name"></a> 
-##  Reporting plug-in name and location  
+## Reporting plug-in name and location  
 The following table summarizes the names of the file, the folder, and the plug-in for the Agile and CMMI process templates.  
   
  
@@ -46,7 +47,7 @@ The following table summarizes the names of the file, the folder, and the plug-i
 In the XML file, you specify one or more tasks and their dependencies. For an example of a task that specifies a set of reports, see the ReportsTasks.xml file in the Agile process template.  
   
 <a name="syntax"></a> 
-##  Reporting plug-in syntax structure  
+## Reporting plug-in syntax structure  
  The Reporting plug-in file must conform to the schema definition for ReportingServices, which is defined in the Rosetta.xsd file, and be specified in its own file.  
   
  The following syntax shows the structure of the Reporting plug-in. For a description of each element, see [ReportingServices child elements](#child_elements) later in this topic.  
@@ -78,7 +79,7 @@ In the XML file, you specify one or more tasks and their dependencies. For an ex
 ```  
   
 <a name="site"></a> 
-##  Create the Reports site  
+## Create the Reports site  
 The first task is to create the reporting site. The reporting site will have a link to it on the project portal home page, and the link will be labeled ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports**. Use the **site** element to create the site, as the following example shows:  
   
 > [!div class="tabbedCodeSnippets"]
@@ -90,8 +91,8 @@ The first task is to create the reporting site. The reporting site will have a l
 </taskXml>   
 ```  
   
-<a name="Folders"></a> 
-##  Define the reporting folders  
+<# Dme="Folders"></a> 
+## Define the reporting folders  
 You use the **folder** element to create folders on the reporting site. Use the path attribute to specify the relative path name of the new folder. The folder appears on the project site and under the **Reports** folder in Team Explorer.  
   
 The following example creates four top-level folders and two sub-folders on the reporting site. The top-level folders are labeled Bugs, Builds, Project Management, and Tests. The two sub-folders are located under Project Management and are labeled Visual Studio and Visual Studio ALM.  
@@ -113,7 +114,7 @@ The following example creates four top-level folders and two sub-folders on the 
 ```  
   
 <a name="reports"></a> 
-##  Specify the reports to upload  
+## Specify the reports to upload  
 To add the .rdl reports to the reporting site, copy each .rdl files into a folder under the Reports folder in the process template. Then use the report element to describe the necessary properties and data sources for the report.  
   
 The following example specifies that the Remaining Work.rdl file will be uploaded to the Project Management folder. You must specify the **ExplicitProject** parameter and the data sources for each report. The data sources in the following example correspond to the names that are automatically assigned to the Analysis Services cube and data warehouse relational database.  

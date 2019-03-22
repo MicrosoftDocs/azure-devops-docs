@@ -26,7 +26,7 @@ ms.date: 01/12/2017
   
  To perform these procedures, your **Administer Project Server integration** permission must be set to **Allow** for a project collection. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instances of PWA that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
-##  <a name="GetList"></a> List the types of work items that are configured to participate in data synchronization  
+## <a name="GetList"></a> List the types of work items that are configured to participate in data synchronization  
  By using the following command, you can determine which types for a project are already mapped and available to use with an enterprise project plan.  
   
 #### To list types of work items that are mapped for a project  
@@ -53,7 +53,7 @@ ms.date: 01/12/2017
   
      *List of Work Item Types*  
   
-##  <a name="MapTypes"></a> Specify the types of work items that can participate in data synchronization  
+## <a name="MapTypes"></a> Specify the types of work items that can participate in data synchronization  
  You can configure one or more types of work items for a project to participate in data synchronization with tasks in project plans. The project plans may be currently mapped to the project, or you can configure them later to synchronize data with the project.  
   
 #### To map types of work items for a project  
@@ -79,7 +79,7 @@ ms.date: 01/12/2017
   
  If you have added a type and did not specify the `/skipUIChanges` flag, you can verify that the type has been modified by refreshing the project in Team Explorer and then opening a work item of the type that you added. The **Project Server** tab should appear in the work item form.  
   
-##  <a name="UnmapTypes"></a> Remove a work item type from participating in data synchronization  
+## <a name="UnmapTypes"></a> Remove a work item type from participating in data synchronization  
  Before you can remove a type of work item from participating in data synchronization, you should remove the links that bind the work items of that type to tasks that are defined in an enterprise project plan. As an alternative, you can use the `/force` flag to force the removal of these links and then remove the type.  
   
 #### To unmap a work item type from a project  

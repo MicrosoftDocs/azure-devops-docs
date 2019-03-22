@@ -7,7 +7,8 @@ ms.topic: reference
 description: Lists all requirements, filtered by area and iteration and in order of importance.
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -26,8 +27,8 @@ The Requirements Overview report lists all requirements, filtered by area and it
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Requirements Overview report presents a snapshot of the work that has been performed for the filtered set of requirements to the current date, as the following illustration shows:  
   
  ![Requirements Overview report](_img/procg_reqoverview.png "ProcG_ReqOverview")  
@@ -82,8 +83,8 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
     > [!NOTE]
     >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  The Requirements Overview report shows overall work progress in the three areas that are important to completing and closing a Requirement:  
   
 -   Tasks implemented to complete each requirement.  
@@ -144,8 +145,8 @@ The Requirements Overview report lists all requirements, filtered by area and it
 -   More tests are failing than are passing.  
   
 -   Tests are failing for a requirement, but no bug work items are being created.  
-  
-##  <a name="Changing"></a> Filtering the Report  
+ # <
+## <a name="Changing"></a> Filtering the Report  
  You can filter the Requirements Overview report to show only those requirements that are defined for the iterations or product areas that you specify.  
   
 #### To specify which Requirements appear in the report  

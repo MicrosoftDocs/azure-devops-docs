@@ -5,7 +5,8 @@ description: Define additional types of links that team members can create betwe
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 09/08/2017
@@ -26,8 +27,8 @@ You specify the definition file for each link type in a separate file, or you ca
   
  After a project is created, you can add, remove, rename, and change the types of links for a project collection by using the **witadmin** command-line tool. For more information, see [Manage link types](../witadmin/manage-link-types.md).  
   
-<a name="create"></a> 
-##  Define link types  
+<# Dme="create"></a> 
+## Define link types  
  You specify a link type using the **LinkType** element.   
   
 The following example shows the syntax structure that defines the **TestedBy** link type.  
@@ -44,7 +45,7 @@ You can customize or add a link type definition in the LinkTypes folder. For mor
   
 
 <a name="upload"></a>   
-##  Specify link type definitions to upload  
+## Specify link type definitions to upload  
  To upload a link type definition in the process template, you specify the **LINKTYPE** element within the **taskxml** element. The filename attribute is a relative path of the definition file for the link type. For example, the following syntax specifies that the TestedBy.xml file will be uploaded.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -68,7 +69,7 @@ The following example shows how to specify a task that creates the two types of 
   
 <a name="elements"></a> 
   
-##  LINKTYPES element reference  
+## LINKTYPES element reference  
  The following table describes the elements that you use to upload link type definitions. You specify these elements within a **taskXml** container element in the WorkItemTracking plug-in file.  
   
 > [!NOTE]

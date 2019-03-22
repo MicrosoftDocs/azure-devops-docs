@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 68ae0569-a8b6-48c8-ba91-0c18372a2c64
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 02/24/2017
 ---
@@ -25,7 +26,7 @@ You can customize the root file for a process template to add or remove plug-in 
 >  For On-premises XML process model: If you upload a process template with the same name as an existing template, the existing template will be overwritten.    
   
 <a name="template"></a>   
-##  ProcessTemplate syntax structure  
+## ProcessTemplate syntax structure  
  The root plug-in for process templates must be specified in its own file in the **ProcessTemplate** container element and conform to the schema for process templates.  
   
  The following example shows the structure of the root **ProcessTemplate** element. For a more extensive example, see [Define the root tasks](define-root-tasks-process-template-plug-in.md).  
@@ -38,8 +39,8 @@ You can customize the root file for a process template to add or remove plug-in 
       <groups> . . .</groups>  
 </ProcessTemplate>  
 ```  
-  
-##  <a name="metadata"></a> Metadata element reference  
+ # <
+## <a name="metadata"></a> Metadata element reference  
  The following syntax shows the structure of the **metadata** element and its child elements.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -63,8 +64,8 @@ You can customize the root file for a process template to add or remove plug-in 
 |**plugin**|Required child element of **plugins**. Specifies the name of a plug-in file to include in the process template creation and specifies whether the plug-in should have a visible page in the New Team Project Wizard.<br />`<plugin name="Microsoft.ProjectCreationWizard.PluginName  wizardPage="true &#124; false" />`|  
 |**plugins**|Required child element of **metadata**. Container element that defines the plug-ins for the process template.<br />`<plugins>`<br />      `<plugin> . . . </plugin>`<br />`</plugins>`| 
 |**version**|Required child element of **metadata**.<  Specifies a unique ID and major and minor revision numbers to identify the version of the process template.<br />`<version type="ID" major="Number1" minor="Number2 " />`|
-  
-##  <a name="groups"></a> Groups element reference  
+ # <
+## <a name="groups"></a> Groups element reference  
  The following syntax shows the structure of the **groups** element and its child elements.  
   
 > [!div class="tabbedCodeSnippets"]

@@ -69,7 +69,7 @@ When you add a link control to a work item form, you can specify filters that re
 |`Filter`|Specifies the link types or work item types that you want to include or exclude.|  
     
   
-##  <a name="WILinks"></a> Restricting Link Relationships to Work Items  
+## <a name="WILinks"></a> Restricting Link Relationships to Work Items  
  You use the `WorkItemLinkFilters` and the `Filter` child elements to define which link types the links control should include or exclude. You use this element to restrict the types of links that can be selected by the links control to form relationships to work items that are defined in the same project. The syntax for these elements is as follows.  
   
 ```xml
@@ -144,7 +144,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```   
   
-##  <a name="WorkItemTypes"></a> Restricting Link Relationships to Types of Work Items  
+## <a name="WorkItemTypes"></a> Restricting Link Relationships to Types of Work Items  
  You use the `WorkItemTypeFilters` and `Filter` child elements to restrict the types of work items to which a links control can link. You can restrict link relationships to the project or by work item type. The syntax for these elements is as follows.  
   
 ```xml
@@ -179,7 +179,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 ```    
   
-##  <a name="DefaultColumns"></a> Specifying the Default Columns to Display  
+## <a name="DefaultColumns"></a> Specifying the Default Columns to Display  
  You use the `LinkColumns` and `LinkColumn` child elements to specify the default columns to display in the links control. You can specify either the reference name for a work item field or a link attribute. The syntax for these elements is as follows.  
   
 ```xml

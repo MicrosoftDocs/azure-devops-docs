@@ -21,7 +21,7 @@ ms.date: 01/12/2017
  ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
   
 <a name="manually_update"></a>   
-##  To manually update a type definition to display project server fields  
+## To manually update a type definition to display project server fields  
  To manually add the **Project Server** tab to a work item type, perform the following sequence of steps:  
   
 1.  Export the type definition.  
@@ -35,7 +35,7 @@ ms.date: 01/12/2017
  For more information, see [Export and import work item types](../witadmin/witadmin-import-export-manage-wits.md).   
   
    
-##  <a name="fields"></a> Elements to add to the FIELDS section  
+## <a name="fields"></a> Elements to add to the FIELDS section  
  Add the following syntax to the `FIELDS` section of the type definition. For more information, see [Modify a field or add a custom field](../add-modify-field.md).  
   
 > [!div class="tabbedCodeSnippets"]
@@ -68,7 +68,7 @@ ms.date: 01/12/2017
 ```  
   
 <a name="form"></a>   
-##  Elements to add to the FORM section  
+## Elements to add to the FORM section  
  To manually add the **Project Server** tab to a work item type, open the type definition file, find the `FORM` section, and then add the following syntax to the `TabGroup` section. For more information, see [Design the work item form](../../reference/xml/design-work-item-form.md).  
   
 > [!NOTE]

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
 ms.date: 11/19/2018
 ---
@@ -119,8 +120,8 @@ To view pre-upgrade reports
   
     > [!NOTE]
     >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
-  
-##  <a name="Viewing"></a>  
+ # <
+## <a name="Viewing"></a>  
   
 #### To view a report from Team Explorer  
   

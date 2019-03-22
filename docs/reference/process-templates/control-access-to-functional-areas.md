@@ -50,7 +50,7 @@ The following example shows how to grant permissions to allow the **Contributors
 >  During runtime, if a permission can't be found for an identity, the permission is searched for in any other groups to which the identity belongs. If the permission cannot be found, the permission is denied by default.  
   
 <a name="Queries"></a> 
-##  Assign permissions for work item queries  
+## Assign permissions for work item queries  
 In the workitems plug-in file, you can assign permissions that control access to team query folders. Query folder permissions are specific to queries and query folders. You can grant access to users and groups in Windows or to default TFS groups.  
   
  You assign these permissions by using the functional **permission** element, as the following example shows:  
@@ -65,7 +65,7 @@ In the workitems plug-in file, you can assign permissions that control access to
   
   
 <a name="VersionControl"></a> 
-##  Assign TFVC permissions 
+## Assign TFVC permissions 
 You can assign permissions that control access to source code files and folders by changing the plug-in file for version control. Version control permissions are specific to source code files and folders. You can grant access to users and groups in Windows or TFS default groups.  
   
 You assign these permissions by using the functional **permission** element, as the following example shows:  
@@ -77,7 +77,7 @@ You assign these permissions by using the functional **permission** element, as 
  
   
 <a name="Build"></a> 
-##  Assign Build permissions    
+## Assign Build permissions    
 You can assign permissions that control access to build activities by changing the Build plug-in file. You can grant access to users and groups in Windows and groups in Team Foundation Server. For information about the format to use when you specify groups, see [Group macros and default groups](configure-initial-groups-teams-members-permissions.md#group-macros).  
   
  You assign these permissions by using the functional **permission** element, as the following example shows:  

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9e96bf19-6ba8-4686-91e3-b4aa2a57f6ac
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 09/10/2017
@@ -26,7 +27,7 @@ By using global workflow, you can minimize the work that is required to define a
 
 <a name="GLOBAL"></a>
   
-##   Global workflow syntax structure  
+## Global workflow syntax structure  
  You define the global workflow by using the `GLOBALWORKFLOW` element, which supports **FIELDS** (Definition) or **GLOBALLISTS** elements as children, but not both.  
   
  **Specify FIELDS**:  
@@ -54,7 +55,7 @@ By using global workflow, you can minimize the work that is required to define a
 ```  
   
 <a name="FIELD"></a> 
-##  FIELD (Definition) element  
+## FIELD (Definition) element  
  You use the following syntax to define the data fields within a global workflow. This syntax shows the **FIELD** (Definition) element format and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md) and [All FIELD elements](all-field-xml-elements-reference.md).  
   
 > [!NOTE]
@@ -87,8 +88,8 @@ reportable="Dimension | Detail | Measure" formula="avg" >
 ```  
   
  
- <a name="LISTElements"></a>  
-##  GLOBALLIST and LISTITEM Child Elements  
+ # Game="LISTElements"></a>  
+## GLOBALLIST and LISTITEM Child Elements  
  The following table describes the **GLOBALLIST** and **LISTITEM** elements. You specify these elements as child elements of the `GLOBALWORKFLOW` element. You can use these elements to enumerate a list of values that appears to the user as a pick list or a drop-down menu of items. For more information, see [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md).  
   
 |Element|Description and Syntax|  

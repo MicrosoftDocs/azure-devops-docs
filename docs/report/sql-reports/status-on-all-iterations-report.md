@@ -7,7 +7,8 @@ ms.topic: reference
 description: Helps you track the team's performance over successive iterations.
 ms.assetid: ab92d41e-aab1-4d82-ad57-a4f868adc102
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -28,8 +29,8 @@ After work has progressed on several iterations, also known as sprints, you can 
  **Requirements**  
   
  To view this report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  The Status on All Iterations report presents a snapshot of work that the team accomplished across several iterations, as the following illustration shows. The data is derived from the data warehouse.  
   
  ![Example Status on All Iterations Report](_img/procguid_statusonall2.png "ProcGuid_StatusOnAll2")  
@@ -58,8 +59,8 @@ After work has progressed on several iterations, also known as sprints, you can 
     >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and the user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each story, task, and bug as it progresses from active to closed.  
-  
-##  <a name="Interpreting"></a> Interpret the report  
+ # <
+## <a name="Interpreting"></a> Interpret the report  
  The Status on All Iterations report shows work progress across iterations that are defined for the product areas that you specify. For information about how to filter the report, see [Filtering the Report](#Changing) later in this topic.  
   
 ### Questions answered by the report  
@@ -97,8 +98,8 @@ After work has progressed on several iterations, also known as sprints, you can 
   
  ![Unhealthy version of Status on All Iterations](_img/procguid_unhealthy.png "ProcGuid_Unhealthy")  
 Unhealthy Version of a Status on All Iterations Report  
-  
-##  <a name="Changing"></a> Filter the report  
+ # <
+## <a name="Changing"></a> Filter the report  
  You can filter the Status on All Iterations report to show progress only for product areas that you specify.  
   
 -   In the **Area** list, select the check box of each product area to include, and then choose **View Report**.  

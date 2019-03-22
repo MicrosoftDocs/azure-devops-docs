@@ -29,7 +29,7 @@ Share your Visual Studio solution in a new Azure DevOps Services or Team Foundat
 > This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have an organization in Azure DevOps.
 > If you need to work with a Visual Studio solution hosted in an existing repo, use the [Git quick start](gitquickstart.md) instead.
 
-##  Create a local Git repo for your project
+## Create a local Git repo for your project
 
 Create a new local Git repo for your project by selecting ![Publish to Git from the Visual Studio Status bar](_img/share-your-code-in-git-vs/publish_status_bar.png) on the status bar in the lower right hand corner of Visual Studio.
 This will create a new repo in the folder the solution is in and commit your code into that repo.
@@ -104,7 +104,7 @@ Double-click a commit to view its file changes.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-###  I don't see the **Publish** button in the status bar.
+### I don't see the **Publish** button in the status bar.
 
 A: The **Publish** link in the status bar ( ![Publish to Git from the Visual Studio Status bar](_img/share-your-code-in-git-vs/publish_status_bar.png) )  was added in Visual Studio 2015 Update 2 and will only appear when you have Git as your source control provider. If your code is
 already in a Git repo, you won't see the **Publish** button in the status bar, but the information from your local repo instead.

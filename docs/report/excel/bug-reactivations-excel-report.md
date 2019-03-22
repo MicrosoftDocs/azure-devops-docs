@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: c26a24cc-5710-425d-8fc4-77e35442e743
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 12/30/2016
 ---
@@ -27,8 +28,8 @@ You can use the Bug Reactivations report to determine how effectively the team i
  To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project.  
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+ # <
+## <a name="Data"></a> Data in the Report  
  The Bug Reactivations report shows an area graph of the number of Bugs that the team has reactivated (**Reactivated and Still Active**) from a resolved or closed state and Bugs that the team has **Resolved**.  
   
  ![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR")  
@@ -46,8 +47,8 @@ You can use the Bug Reactivations report to determine how effectively the team i
 -   Update the **State** of each Bug as the team fixes, verifies, closes, or reactivates it.  
   
 -   (Optional) Specify the **Iteration** and **Area** paths of each Bug if you want to filter by those fields.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+ # <
+## <a name="Interpreting"></a> Interpreting the Report  
  You should expect the Bug Reactivations report to vary based on where you are in your product development cycle. Early iterations should show very few reactivations. As the team closes Bugs, you will want to review the rate of reactivations.  
   
  The Reactivations report displays information that you can use to detect whether the team is reactivating a high number of Bugs or User Stories. The reactivation rate counts the number of supposedly fixed Bugs whose fixes do not work. These reactivations can create a harmful cycle of rework that interferes with making progress on planned tasks.  
@@ -59,8 +60,8 @@ You can use the Bug Reactivations report to determine how effectively the team i
 -   Is the team resolving and closing reactivated Bugs quickly enough?  
   
  For information about healthy and unhealthy versions of the report, see [Reactivations](../sql-reports/reactivations-report.md).  
-  
-##  <a name="Updating"></a> Updating and Customizing the Report  
+ # <
+## <a name="Updating"></a> Updating and Customizing the Report  
  You can update the Bug Reactivations report by opening it in Office Excel and changing the filter options for the PivotTable report. You can customize this report to support other views as the following table describes.  
   
 |View|Action|  

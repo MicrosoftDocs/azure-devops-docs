@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 87247b22-4919-4507-af64-372f4cc9bd2f
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
@@ -21,8 +22,8 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
  ![Bug for CMMI project &#40;work item form&#41;](_img/procguid_cmmiwitform.png "ProcGuid_CMMIwitForm")  
   
  For more information about how to create bug work items, see [Run manual tests](../../../../test/run-manual-tests.md). As bugs are found, follow the process in this article to prioritize them, to make sure that they get fixed, and to make sure that you have a record of the work and the decisions that were involved.  
-  
-##  <a name="Triage"></a> Triage bugs  
+ # <
+## <a name="Triage"></a> Triage bugs  
  Triage meetings should be held at set intervals after the development work and testing have started on the project. How often you hold the meetings and how long they should be depends on your situation.  
   
  Typically, bug triage meetings are run by a project manager and attended by team leads and perhaps business analysts and stakeholders who can speak about specific project risks. The project manager can use the Active Bugs query for new and reopened bugs to generate a list of bugs to be triaged.  
@@ -36,8 +37,8 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
  Raising the triage criteria bar and allowing reported bugs to remain unfixed is a trade-off. It is a trade-off that says that fixing the bug is less important than meeting the project scope, budget, and schedule.  
   
  Use your criteria to determine which bugs to fix and how to set their State, Priority, Severity, and other fields. By default, the template provides four priorities: 1 for "must fix" through 4 for "unimportant." If you change the definitions in the process template, you should update the guidance, the help text, and any criteria documents accordingly.  
-  
-##  <a name="Fix"></a> Fix bugs  
+ # <
+## <a name="Fix"></a> Fix bugs  
  After a bug has passed triage and has been prioritized, it should be assigned to a developer for additional investigation.  
   
  The bug work item has a tab for repro steps, which should provide what you need to reproduce the bug. However, you may also be able to use IntelliTrace help you reproduce difficult bugs. For more information about IntelliTrace, see [Tracking test results](../../../../test/track-test-status.md).  
@@ -56,8 +57,8 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
   
 ### Review and refactor the code for fixing the bug  
  A code review is used to ensure that new or changed code meets an established quality bar before the code is integrated into the daily build. Quality considerations are coding standards, conformance to architecture and design, performance, readability, and security. Code reviews also provide additional insight from other developers about how code should be written. For more information about how to review and refactor code, see [Implement development tasks](guidance-implement-development-tasks.md).  
-  
-##  <a name="Close"></a> Close bugs  
+ # <
+## <a name="Close"></a> Close bugs  
  After a bug is fixed, it should be assigned to a tester to verify that the problem is solved before the bug work item is closed.  
   
 ### Verifying a fix  

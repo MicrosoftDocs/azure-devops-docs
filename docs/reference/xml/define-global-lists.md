@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 author: kaelli
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 05/23/2017
 ---
@@ -42,8 +43,8 @@ For the project collection where the global lists are defined, you must have the
    
 To add or modify a global list, use the **witadmin** command-line tool to import and export the definition for global lists. See [Manage global lists](../witadmin/manage-global-lists-for-work-item-types.md). To use a global list, add it to the `FIELD` definition within a work item type. See [All FIELD elements](field-definition-element-reference.md).  
 
-<a name="add-manage"></a>   
-##  Add and manage global lists  
+<# Ame="add-manage"></a>   
+## Add and manage global lists  
 
 A global list is a set of `LISTITEM` elements that is stored and used globally by all projects in a collection. Global lists are useful for fields that are defined within several types of work items, such as Operating System, Found in Build, and Fixed in Build.  
 

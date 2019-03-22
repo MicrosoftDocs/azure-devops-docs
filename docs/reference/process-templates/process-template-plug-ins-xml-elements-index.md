@@ -22,7 +22,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 > [!NOTE]  
 >  The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax.  
   
-##  Alphabetical index  
+## Alphabetical index  
 
 
 <table>
@@ -117,14 +117,14 @@ By using the index of elements in this topic, you can look up the syntax structu
 
  
 <a name="pt"></a>   
-##  Elements that define the root plug-in for process templates  
+## Elements that define the root plug-in for process templates  
  The ProcessTemplate file contains two main parent elements within the **ProcessTemplate** root element: **metadata** and **groups**. The syntax for each of the following elements and their child elements is described in [Process template XML elements reference](process-template-xml-elements-reference.md).  
   
 -   **metadata**: **description, name, plugin, plugins**   
 -   **groups: dependencies, dependency, group, tasklist**  
   
 <a name="tasks"></a> 
-##  Elements that define plug-in tasks  
+## Elements that define plug-in tasks  
  You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for each plug-in. You can access the topic that provides detailed information and examples for each plug-in and element in the following table.  
   
 |Plug-in|Related topic|Elements|  
@@ -140,7 +140,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 |Version Control|[Define the initial configuration of Team Foundation version control](define-initial-configuration-version-control.md)|**checkin_note, exclusive_checkout, get_latest_on_checkout, permission**|  
 |Work Item Tracking|[Define objects for tracking work items](define-objects-track-work-items-plug-in.md)|**CATEGORIES, FIELD, GLOBALLISTS, HYPERLINK, LINKTYPE, LINKTYPES, Permission, Query, QueryFolder, QUERIES, WI, WORKITEMS, WORKITEMTYPE, WORKITEMTYPES**|  
   
-##  <a name="typedefinitions"></a> Type definition elements that define objects for tracking work  
+## <a name="typedefinitions"></a> Type definition elements that define objects for tracking work  
  In the Work Item Tracking plug-in, you can specify several type definition files and query definition files to upload. You can access the topic that provides detailed information and examples for each object and element in the following table:  
   
 |Object|Related topic|Elements|  

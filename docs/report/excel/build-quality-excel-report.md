@@ -37,7 +37,7 @@ Teams who are responsible for testing software can use the Build Quality report 
   
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the reports  
+## <a name="Data"></a> Data in the reports  
  The Build Quality reports illustrate the cumulative count of test results for all build pipelines for a team project. Both reports are based on PivotTable reports that access data that is stored in the data warehouse. The count that is shown in each report is a count of the most recent version of each test result in a particular build.  
   
  **Build verification testing**  
@@ -54,7 +54,7 @@ Teams who are responsible for testing software can use the Build Quality report 
 |-------------|------------|  
 |-   **Team Project - Team Project Hierarchy**: Includes build results for build pipelines that are defined for the selected team project.<br />-   **Test Result - Iteration Hierarchy**: Includes test results that were run from test cases that were assigned to the selected iterations.<br />-   **Test Result - Area Hierarchy**: Includes test results that were run from test cases that were assigned to the selected product areas.<br />-   **Build - Build Pipeline Name**: Includes test results that were run against builds that belong to the selected build pipelines.<br /><br /> **Filter specific to the Build Verification Testing report**:<br /><br /> -   **Test Run - Is Build Verification Run**: Includes test results from all automated tests that were run during the build process and configured as BVT.|-   **Test Result - Outcome**: The outcome of the test (for example, Blocked, Never Run, Failed, None, and Passed).<br />-   **(Measure) Test Result - Build Result Count Trend**: Counts the most recent version of each test result in a particular build.<br />-   **Build - Build Name**: The name of the build. Each time that a build is run, it is assigned a name that contains the build pipeline name as its prefix.|  
   
-###  <a name="RequiredActivities"></a> Required activities for monitoring build quality  
+### <a name="RequiredActivities"></a> Required activities for monitoring build quality  
  For the Build Quality report to be useful and accurate, the team must perform the following activities:  
   
 -   Define test cases and test plans, and assign test cases to the test plans.  
@@ -74,7 +74,7 @@ Teams who are responsible for testing software can use the Build Quality report 
     > [!NOTE]
     >  The project administrator for each team project defines area and iteration paths for that project so that the team can track progress by those designations. For more information, see[Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
-##  <a name="Updating"></a> Updating and customizing the report  
+## <a name="Updating"></a> Updating and customizing the report  
  You can update the Build Quality report by opening it in Office Excel and changing the filter options for the PivotTable report for one of the worksheets. You can customize each report to support other views, as the following table describes.  
   
 |View|Action|  

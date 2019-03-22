@@ -56,7 +56,7 @@ Update the current history entry
 
 
 <a name="method_getCurrentState"></a>
-### getCurrentState()
+### GetCurrentState()
 
 Get the current navigation state dictionary. Uses query parameters and hash parameters.
 
@@ -121,7 +121,7 @@ Add a callback to be invoked each time the hash navigation has changed
 
 
 <a name="method_getHash"></a>
-### getHash()
+### GetHash()
 
 Gets the current hash.
 

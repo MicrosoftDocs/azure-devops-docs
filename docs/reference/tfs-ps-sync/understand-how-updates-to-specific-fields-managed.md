@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67f9887f-f023-4e3e-8873-fb3f1854438f
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -17,8 +18,8 @@ ms.date: 01/12/2017
 <a name="top"></a> You should review this topic if one or more fields are not synchronizing as you expect between Visual Studio Team Foundation Server and Microsoft Project Server. The data type of the affected field or fields, the `OnConflict` field mapping attribute, and task hierarchy affect how the synchronization engine updates specific fields. Tasks will not update correctly if the project manager rejects one or more submission updates or if the project plan was not published. If the plan was not published, nested child work items cannot flow into the approval queue.  
   
  
-  
-##  <a name="overview"></a> Overview of the Update Field Process  
+ # <
+## <a name="overview"></a> Overview of the Update Field Process  
  As the following illustration shows, data moves from Project Server, to Team Foundation Server, to the status queue in an instance of PWA, to the enterprise project plan, and finally back to Project Server. The following table provides additional notes about the synchronization process and how fields are updated during each step of the process.  
   
 > [!IMPORTANT]
@@ -42,21 +43,21 @@ ms.date: 01/12/2017
 -   [Field mapping reference](field-mapping-xml-element-reference.md)  
   
 -   [Restrictions on mapping fields](restrictions-mapping-ps-fields.md)  
-  
-##  <a name="rejections"></a> Rejected Submission Updates  
+ # <
+## <a name="rejections"></a> Rejected Submission Updates  
  When a project manager rejects a status update to either a requirement or a task, the corresponding work item is no longer synchronized until the rejection is resolved. The reason for the rejection appears in the **History** field, and the **Last Approval Status** field on the **Project Server** tab indicates **Rejected**. A team member must address the rejection status to resume synchronization of the work item.  
   
  You can create a team query to find work items whose update status was rejected. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
-  
-##  <a name="updates_title"></a> Updates to Title or Task Names  
+ # <
+## <a name="updates_title"></a> Updates to Title or Task Names  
  The Title field in Team Foundation Server and the task Name in Project Server participate in a two-way synchronization process. In other words, a change in one server is always updated in the other server. However, you can change this behavior if you change the mapping for the Title (System.Title) field.  
-  
-##  <a name="updates_dates"></a> Updates to Start and Finish Dates  
+ # <
+## <a name="updates_dates"></a> Updates to Start and Finish Dates  
  Scheduling fields participate in a one-way synchronization process. In other words, Start Date and Finish Date fields in Team Foundation Server always reflect the values that were assigned in Project Server, and changes that are made to these fields in Team Foundation Server are never submitted to Project Server. This rule is enforced because Project uses a scheduling engine to determine the start and finish dates of tasks.  
   
  By default, Start Date and Finish Date fields are mapped with `OnConflict="PSWin"`, which cause the date fields in Team Foundation to always reflect the values that are assigned in Project Server. Even if you change the mapping attribute to allow for two sets of books, changes to the date fields in Team Foundation are not submitted to Project Server, except when the work item is submitted for the first time. After the first synchronization event, these fields reflect updates that were made to the project plan.  
-  
-##  <a name="updates_hours"></a> Updates to Fields that Contain Hours  
+ # <
+## <a name="updates_hours"></a> Updates to Fields that Contain Hours  
  By default, the Completed Hours and Remaining Hours fields participate in a synchronization process that maintains two sets of books. Changes to hours can occur in either the project plan or Team Foundation. However, changes do not necessarily overwrite information in either location. An undefined `OnConflict` attribute for mapping fields enforces this feature.  
   
  As indicated in the following scenarios below, the fields are updated based on who is making the updates and whether the updates are accepted into the project plan.  
@@ -75,8 +76,8 @@ ms.date: 01/12/2017
   
 > [!NOTE]
 >  Because the Visual Studio Scrum process template does not use the Completed Work and Original Estimate fields, you must add these fields to the types of work items that you want to participate in data synchronization. Also, you must modify the task type definition to remove the `<EMPTY />` workflow statements.  For more information, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md#scrummodifications).  
-  
-##  <a name="updates_names"></a> Updates to the Assignment or Resource Name Fields  
+ # <
+## <a name="updates_names"></a> Updates to the Assignment or Resource Name Fields  
  The Assigned To field in Team Foundation maps to the Resource Name field in Project Server. By default, this field is mapped to the `OnConflict="PSWin"` attribute. When you assign resources to tasks in the enterprise project plan, consider the following rules:  
   
 -   The synchronization engine does not synchronize resource information between both server products. By default, Team Foundation Server synchronizes its resources from Active Directory, but Project Server does not. You can add resources manually in Project Server or, as a best practice, synchronize resources with Active Directory. To assign a resource to a task in an enterprise project plan that participates in synchronization with Team Foundation Server, you must add the resource to Project Server. You add a resource by adding it to the Team Members group in the instance of PWA, or you grant the resource the Open Project and View Project Site permissions in Project. You must also add the resource to the resource list for the enterprise project plan and then publish the project plan for the synchronization engine to have access to the updated resource list. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
@@ -88,8 +89,8 @@ ms.date: 01/12/2017
      When you publish your project plan, the client add-in for Team Foundation verifies that only one resource has been assigned to each task. If multiple resources have been assigned to a task, a **Validation Resolution** dialog box appears, and you must specify only one resource as the active assignment. For more information, see [Resolve validation errors](resolve-validation-errors.md).  
   
 -   After a task is linked or mapped to a work item, you can assign or reassign resources only to tasks that are not rolled up. A rolled-up task is associated with a work item that contains child work items that are not linked. Usually, rolled-up tasks contain multiple names in the Resource Name field. The synchronization engine transmits the rollup of resources and the number of hours that each resource worked. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
-  
-##  <a name="updates_nested_tasks"></a> Summary Tasks, Task Hierarchy, and Submissions of Work Items that Are Nested at Multiple Levels  
+ # <
+## <a name="updates_nested_tasks"></a> Summary Tasks, Task Hierarchy, and Submissions of Work Items that Are Nested at Multiple Levels  
  By design, the synchronization engine does not update Project fields for linked tasks that have subtasks in the enterprise project plan. The synchronization process skips updates of these tasks because the project plan calculates the work for them. Changes to the title and other non-work fields are also not updated for these tasks. This behavior is a known limitation of the integration of the two server products.  
   
  When a project manager publishes a detailed set of tasks that include requirements and linked tasks to Team Foundation Server, the synchronization engine locks the task hierarchy. Team members cannot modify the task hierarchy in Team Foundation, but they can reassign tasks to team members in the project. As the following illustration shows, tasks are listed under their requirements, and the hierarchical links between parent and children tasks are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")). The locked links indicate that the requirements and child tasks have been added to a project from Project Server. Only the project manager from the project plan can modify the task hierarchy.  
@@ -97,8 +98,8 @@ ms.date: 01/12/2017
  ![Work breakdown schedule in Team Explorer](_img/tfs-ps_te_detailedplan_workbreakdown.png "TFS-PS_TE_DetailedPlan_WorkBreakdown")  
   
  When a team submits multiple levels of work items from Team Foundation to Project Server, the first level must be approved and published to Project Server before the next level can be submitted. If a team submits a batch of new work items that includes three levels of child items, for example, the project manager must publish the project plan four times for all work items to be synchronized with Project Server. As the project manager approves each level of work items and publishes them to Project Server, the hierarchical link relationships are locked in Team Foundation until the entire link hierarchy is locked. Team members cannot modify the hierarchy for these mapped work items.  
-  
-##  <a name="updates_fields_tables"></a> Updates to Fields that Are Associated with Pick Lists or Lookup Tables  
+ # <
+## <a name="updates_fields_tables"></a> Updates to Fields that Are Associated with Pick Lists or Lookup Tables  
  When you map Team Foundation Server fields that are associated with a pick list or Project Server fields that are associated with a lookup table, you must consider additional steps to ensure a good user experience. The synchronization engine does not automatically create the counterpart associated lists or synchronize their allowed values in the other server. As a best practice, you should create lookup tables in Project Server to match the pick lists that are defined in Team Foundation and create pick lists in Team Foundation to match lookup tables that are defined in Project Server. If a pick list or lookup table changes, you must always manually update the corresponding list in the other server product.  
   
 ## Related articles  

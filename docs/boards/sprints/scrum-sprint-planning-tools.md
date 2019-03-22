@@ -71,7 +71,7 @@ At the start of each sprint, you'll want to plan the work that your team can com
 </table>
 
 
-##  Update tasks, monitor burndown 
+## Update tasks, monitor burndown 
 During a sprint, your team can use the taskboard and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
  
 <table valign="top">
@@ -103,7 +103,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 
 
 <a id="velocity-forecast">  </a>
-##  Velocity and forecast 
+## Velocity and forecast 
 <p>While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints. </p>
 <p>Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity. </p>
 <p>After your team has worked several sprints, they can use the [velocity chart](../../report/dashboards/velocity-chart-data-store.md) and [forecast](forecast.md) tool to estimate work that can be accomplished in future sprints.  </p>

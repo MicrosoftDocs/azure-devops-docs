@@ -31,7 +31,7 @@ By installing Team Foundation Server Extensions for Project Server, project mana
   
 <a name="admintasks"></a> 
 
-##  Administrator tasks  
+## Administrator tasks  
   
 
 ### Review setup, configuration, and administration tasks 
@@ -60,10 +60,10 @@ To support a test or evaluation environment, see [Configuration quick reference]
 
 To support a production environment, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md) to collect the information that you require for configuration, permissions that you must grant, and configuration tasks that you must perform to support a customized integration of the two server products.
   
-###  Grant permissions 
+### Grant permissions 
 You must grant permissions to administrators, service accounts, and team members. See [Assign permissions](assign-permissions-support-tfs-project-server-integration.md)
  
-###  Manage the integration of synchronized components
+### Manage the integration of synchronized components
 
 You can change how components are mapped or list the current mappings by using the `TfsAdmin` command-line tool. You can review the options and parameters that this tool provides and learn about the operations that specific options perform. See [Map integration components](map-integration-components.md)
 
@@ -73,7 +73,7 @@ The synchronization engine performs three types of synchronization: publishing, 
 For more information, see [Synchronization process overview](synchronization-process-overview.md).  
   
 <a name="pmtasks"></a>  
-##  Project manager tasks  
+## Project manager tasks  
   
 ### Choose how you want to manage projects
 You can configure the integration to support the specific manner in which you want to manage projects. You can define high-level deliverables or both deliverables and tasks, you can just review progress that the development team reports, or you can combine these methods.
@@ -91,7 +91,7 @@ When the development team breaks down requirements and tasks into child tasks, y
 See [Work with resource rollup](work-with-resource-rollup.md).  
   
 <a name="devteam"></a>   
-##  Development team tasks  
+## Development team tasks  
   
 ### Review deliverables, define tasks, and estimate work
 For each deliverable that is submitted to Project Server, you define and estimate the tasks that are required to implement that deliverable. As you perform work, you update your task hours, which are automatically submitted to Project Server and the project manager for review.
@@ -116,7 +116,7 @@ When the project manager rejects an update to a work item, you must address the 
 -  [Agile tools and work tracking](../../boards/get-started/what-is-azure-boards.md)    
 
 <a name="demos"></a>  
-###  Demonstration videos  
+### Demonstration videos  
 The following videos, which are available from the Microsoft website, illustrate the flexibility that you have to manage the product lifecycle after you integrate the two server products.  
   
 -   [Application Lifecycle Management: Microsoft Project Server 2010 and TFS 2010, Better Together](http://go.microsoft.com/fwlink/?LinkId=222614)    

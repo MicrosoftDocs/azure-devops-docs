@@ -136,7 +136,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 * [FAQs for manual testing](reference-qa.md#testplans)
 * [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
 
-##  Next step
+## Next step
 
 > [!div class="nextstepaction"]
 > [Create manual test cases](create-test-cases.md#test-cases) 

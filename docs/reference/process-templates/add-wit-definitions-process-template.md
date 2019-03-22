@@ -34,7 +34,7 @@ Also, the task to upload the definition files for link types must precede the ta
 After a project is created using the process template, you can add, remove, rename, and change the definitions of WITs by using the **witadmin** command-line tool. For more information, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md).  
   
 <a name="create"></a> 
-##  Define a WIT   
+## Define a WIT   
 Each WIT definition must be specified in its own file in the **WITD** container element. Each definition must also conform to the schema definition for work item types. 
 
 The following example shows the high-level syntax structure that defines a work item type.  
@@ -55,7 +55,7 @@ The following example shows the high-level syntax structure that defines a work 
  You can customize or create type definition files in the TypeDefinitions folder. For more information about how to define a type of work item, see [All WITD elements](../xml/all-witd-xml-elements-reference.md).  
   
 <a name="upload"></a> 
-##  Specify WIT definition files to upload  
+## Specify WIT definition files to upload  
  To upload a WIT definition, you specify the **WORKITEMTYPE** element. The filename attribute is a relative path of the type definition file. For example, the following syntax specifies that the Bug.xml file will be uploaded.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -90,7 +90,7 @@ The following example shows how to specify a task that creates the following WIT
 ```  
   
 <a name="elements"></a> 
-##  WORKITEMTYPES element reference  
+## WORKITEMTYPES element reference  
  The following table describes the elements that you use to upload the type definitions for work items. You specify these elements within a **taskXml** container element in the WorkItemTracking plug-in file.  
   
 > [!NOTE]

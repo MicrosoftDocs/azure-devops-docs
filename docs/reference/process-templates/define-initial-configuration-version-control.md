@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2017' 
 ms.date: 10/11/2017
@@ -39,8 +40,8 @@ You can change the name of the XML file and the folder name but not the name of 
  
   
   
- 
-##  <a name="Exclusive"></a> Exclusive Check Out  
+ # <
+## <a name="Exclusive"></a> Exclusive Check Out  
  You can control whether multiple people can check out a file at the same time by specifying the **exclusive_checkout** element.  
 
 
@@ -57,8 +58,8 @@ You can change the name of the XML file and the folder name but not the name of 
 ```XML
 <exclusive_checkout required="true"/>  
 ```  
-  
-##  <a name="Latest"></a> Get Latest on Check Out  
+ # <
+## <a name="Latest"></a> Get Latest on Check Out  
  You use the **get_latest_on_checkout** element to configure the default behavior when a user checks out a file for a project.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -76,8 +77,8 @@ You can change the name of the XML file and the folder name but not the name of 
 ```XML  
 <get_latest_on_checkout required="true"/>  
 ```  
-  
-##  <a name="Notes"></a> Check-in Notes  
+ # <
+## <a name="Notes"></a> Check-in Notes  
  The developer provides check-in notes when he or she checks in code. These notes describe whether the code changes are related to team processes and, if they are, how. For example, a check-in note can indicate whether the change was made because of a security review, and the note can include details about the changes relative to the security review.  
   
  You use the following syntax for a checkin_note element  
@@ -108,7 +109,7 @@ The following example shows how to create an additional check-in note labeled "D
 ```  
   
 <a name="Permissions"></a> 
-##  Permissions    
+## Permissions    
 Version control has a specific set of permissions that you can configure for a process template. By specifying permissions, you define what actions security groups and individuals can perform on items that are under version control. For more information, see [Control access to functional areas](control-access-to-functional-areas.md).  
   
 The default assignments for TFVC and GIt permissions made to all default process templates are as shown. You can set these permissions after you create the project from the web UI, see [Set repository permissions for Git or TFVC](../../organizations/security/set-git-tfvc-repository-permissions.md).

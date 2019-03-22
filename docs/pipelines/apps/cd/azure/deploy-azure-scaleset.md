@@ -100,7 +100,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    Use the following script for the **Inline Script** parameter of the **Azure PowerShell** task: 
    
    ```powershell
-   # get the VMSS model
+   # Get the VMSS model
 
    $vmss = Get-AzureRmVmss -ResourceGroupName resource_group_name -VMScaleSetName VM_scale_set_name
 

@@ -36,7 +36,7 @@ The Build Summary lists builds and provides information about test results, test
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
-##  <a name="Data"></a> Data in the Report  
+## <a name="Data"></a> Data in the Report  
  The data that appears in the Build Summary report is derived from the data warehouse. The report presents a visual display of the percentage of tests that are passing, code that is being tested, and changes in code across several builds.  
   
  You can review the results for both manual and automatic builds, in addition to the most recent builds and continuous or frequent builds. The report lists the most recent builds first and contains build results that were captured during the specified time interval for all builds that were run, subject to the filters that you specified for the report.  
@@ -88,7 +88,7 @@ The Build Summary lists builds and provides information about test results, test
   
      For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx).  
   
-##  <a name="Duration"></a> Setting the Duration of the Iteration  
+## <a name="Duration"></a> Setting the Duration of the Iteration  
  To understand the progress that the team is making in your current iteration, you must set the start and end dates for the report to match those of your current iteration cycle.  
   
 #### To change the duration of the iteration  
@@ -97,7 +97,7 @@ The Build Summary lists builds and provides information about test results, test
   
 2.  Click **View Report**.  
   
-##  <a name="Interpreting"></a> Interpreting the Report  
+## <a name="Interpreting"></a> Interpreting the Report  
  You can review the Build Summary report to answer questions about the most recent builds. It contains more information than the Build Success Over Time report.  
   
 ### Questions That the Report Answers  
@@ -137,7 +137,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Code churn shows spikes**. You might want to verify that unusual peaks are accounted for.  
   
-##  <a name="Changing"></a> Filtering the Report  
+## <a name="Changing"></a> Filtering the Report  
  You can filter the Build Summary report in the following ways:  
   
 -   Change the start and end dates for the report.  

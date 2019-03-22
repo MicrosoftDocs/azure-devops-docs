@@ -23,7 +23,7 @@ ms.date: 01/12/2017
  You must also match the data types of mapped fields, both built-in and custom, according to the criteria that this topic describes. For more information about built-in fields, see [Available fields reference](http://go.microsoft.com/fwlink/?LinkId=203358).  
   
    
-##  <a name="renaming"></a> Restrictions on units of measurement and renaming  
+## <a name="renaming"></a> Restrictions on units of measurement and renaming  
  The following restrictions apply to the mapping of fields that participate in data synchronization:  
   
 -   You cannot customize the units of mapped fields. For example, when you add the `pjResourceAssignmentUnits` to the field mappings, it is added using the unit of percentage, and you cannot change that measure.  
@@ -32,7 +32,7 @@ ms.date: 01/12/2017
   
 -   If you rename the `ActiveTfsAssignment(TFS)` field in Project and try to publish your enterprise project plan, the **Validation Resolution** dialog box will appear. To resolve this condition, you must rename the field to its original name.  
   
-##  <a name="taskname"></a> Task name and work item title field  
+## <a name="taskname"></a> Task name and work item title field  
  Project **Name** (pjTaskName) is the only field that is mapped from Project Server to Team Foundation and the status queue. This field maps to the Title (System.Title) field in Team Foundation. No other fields can be mapped to both Team Foundation Server and the status queue. The two-way mapping allows changes in both the enterprise project plan and project to flow in both directions.  
   
  This mapping is represented in the following code of the field mappings:  
@@ -48,7 +48,7 @@ ms.date: 01/12/2017
 </field>  
 ```  
   
-##  <a name="statusqueue"></a> Fields available for mapping to the status queue  
+## <a name="statusqueue"></a> Fields available for mapping to the status queue  
  You can map the following resource-related fields from Project Server to the Status queue. You can add these fields to the field mapping within the **tfsToTarget** element to send status updates to Project Server.  
   
 |||||  
@@ -80,7 +80,7 @@ ms.date: 01/12/2017
   
 ```  
   
-##  <a name="pstotf"></a> Fields available for mapping from Project Server to Team Foundation only  
+## <a name="pstotf"></a> Fields available for mapping from Project Server to Team Foundation only  
  You can map the following task-specific fields from Project Server to Team Foundation Server. You can also combine the mapping of a task-specific field with a resource-specific field to form a full mapping.  
   
 |||||  
@@ -98,14 +98,14 @@ ms.date: 01/12/2017
   
 ```  
   
-##  <a name="restricted"></a> Fields restricted from mapping  
+## <a name="restricted"></a> Fields restricted from mapping  
  The following Project Server fields are restricted from mapping. Do not add these fields to the field mapping between Team Foundation and Project Server.  
   
 |||||  
 |-|-|-|-|  
 |-   pjResourceID<br />-   pjResourceNotes<br />-   pjTaskCalendar<br />-   pjTaskCalendarGUID<br />-   pjTaskCommitmentFinish<br />-   pjTaskCommitmentGuid<br />-   pjTaskCommitmentStart<br />-   pjTaskCommitmentType|-   pjTaskConfirmed<br />-   pjTaskConstraintDate<br />-   pjTaskConstraintType<br />-   pjTaskContact<br />-   pjTaskCritical<br />-   pjTaskDelay<br />-   pjTaskHyperlinkScreenTip<br />-   pjTaskID|-   pjTaskLevelCanSplit<br />-   pjTaskLevelDelay<br />-   pjTaskNotes<br />-   pjTaskParentTask<br />-   pjTaskPreleveledFinish<br />-   pjTaskPreleveledStart<br />-   pjTaskProject<br />-   pjTaskResume|-   pjTaskRollup<br />-   pjTaskStartSlack<br />-   pjTaskStop<br />-   pjTaskSubproject<br />-   pjTaskSubprojectReadOnly<br />-   pjTaskSuccessors<br />-   pjTaskUniqueID<br />-   pjTaskWBS|  
   
-##  <a name="datatypes"></a> Data types and field mapping criteria  
+## <a name="datatypes"></a> Data types and field mapping criteria  
  When you map a field from Team Foundation Server to Project Server, make sure that you match the data type of the Project Server field with that defined for the Team Foundation field according to the criteria that the following table outlines. In addition to the built-in fields that are listed earlier in this topic, you can create custom enterprise task-type fields and map them to support synchronization in either or both directions. For custom fields, make sure that you match the data types of fields as the third column of the table indicates. For more information, see [Creating Lookup Tables and Enterprise Custom Fields](http://go.microsoft.com/fwlink/?LinkId=209696).  
   
 > [!NOTE]

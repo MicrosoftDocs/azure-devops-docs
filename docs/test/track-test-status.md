@@ -203,7 +203,7 @@ Or learn more about
 
 *  [FAQs for manual testing](reference-qa.md#trackstatus)
 
-##  Next step
+## Next step
 
 > [!div class="nextstepaction"]
 > [Control how long to keep test results](how-long-to-keep-test-results.md)

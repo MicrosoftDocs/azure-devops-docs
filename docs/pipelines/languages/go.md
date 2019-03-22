@@ -89,7 +89,7 @@ This snippet does the following:
 
 ## Install dependencies
 
-### go get
+### Go get
 
 Use `go get` to download the source code for a Go project or to install a tool into the Go workspace. Add the following snippet to your `azure-pipelines.yml` file:
 

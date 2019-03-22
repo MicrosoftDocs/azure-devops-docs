@@ -59,7 +59,7 @@ To add a group to the main page, add a contribution to your extension manifest. 
 | ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts
 | ```height```       | (Optional) Defines the height of the group. When omitted, it is 100%
 
-###  JavaScript sample
+### JavaScript sample
 
 This sample shows how to register an object that is called when various events happen on the work item form that may impact your contributed group.
 
@@ -152,7 +152,7 @@ To add a page to the work item form, add a contribution to your extension manife
 | name         | Text that will appear on the tab page.   |
 | uri          | URI to a page that hosts the html that shows on the work item form and its scripts. |
 
-###  JavaScript sample
+### JavaScript sample
 
 See the JavaScript sample in the form group section. The name of the registered object should match the `id` of the contribution.
 

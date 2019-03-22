@@ -5,7 +5,8 @@ description: Define areas to organize work items into logical, physical, or func
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7c1284c6-9c03-41e9-94c1-923db90957be
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 09/08/2017
@@ -130,8 +131,8 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
    </task>  
 </tasks>  
 ```  
-  
-##  <a name="msproj"></a> Specifying process template properties  
+ # <
+## <a name="msproj"></a> Specifying process template properties  
  This section specifies two properties: the Project-to-TFS field mapping file and the process template. The mapping file specifies how fields in TFS map to fields defined in Project. The second property associates the process template with a unique value.  The following example shows the syntax structure for this entry:  
   
 > [!div class="tabbedCodeSnippets"]
@@ -145,8 +146,8 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
 ```  
   
  To customize the FileMapping.xml file, see [Map Microsoft Project fields](../xml/map-microsoft-project-fields-to-tf-fields.md).  
-  
-##  <a name="elements"></a> Classification plug-in element reference  
+ # <
+## <a name="elements"></a> Classification plug-in element reference  
  You specify the following  elements within a `taskXml` container element in the Classification plug-in file. , See [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) for information about `taskXml`.  
   
  Define areas and iterations by specifying a tree path of nested nodes and children nodes. For more information, see [Customize your area and iteration paths](../../organizations/settings/set-area-paths.md).  

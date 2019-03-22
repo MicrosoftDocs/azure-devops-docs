@@ -34,7 +34,7 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 [!INCLUDE [import-code-aspnet-core](../../../apps/_shared/import-code-aspnet-core-docker.md)]
 
-##  Clone the solution
+## Clone the solution
 Use the following steps to clone the sample solution and open it in Visual Studio 2017.  This allows you to work with the solution in a local development environment.  In upcoming steps, you use Visual Studio 2017 to configure continuous integration and continuous delivery for the web app.
 
 1.  Ensure the import of the code completes successfully.  In the top right-hand corner of your browser Select **clone**.  Select **Clone in Visual Studio**.  
@@ -55,7 +55,7 @@ Continuous Delivery (CD) Tools for Visual Studio 2017 helps automate the creatio
 
     ![Configure CD icon](_img/aspnet-core-to-acr/vsconfigcdicon.png)    
 
-##  Configure and execute Continuous Delivery (CD) for your app    
+## Configure and execute Continuous Delivery (CD) for your app    
 Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD tooling quickly creates various services in Azure and Azure Pipelines.  This automation allows you to enable CI/CD to Azure for your apps by creating full build and release pipelines in Azure Pipelines.
 
 1.  In Visual Studio, **right Select** your solution and Select **Configure Continuous Delivery**.

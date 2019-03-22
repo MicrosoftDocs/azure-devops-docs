@@ -23,14 +23,14 @@ ms.date: 01/12/2017
 > [!IMPORTANT]
 >  Fields are mapped for a project collection. All fields that are mapped for one type of work item are the same for all other types of work items that participate in data synchronization. For more information, see [Specify work item types](specify-wits-to-synchronize.md).  
   
-##  <a name="defaulttab"></a> Default Project Server Tab  
+## <a name="defaulttab"></a> Default Project Server Tab  
  When you associate an enterprise project with a project, the **Project Server** tab, similar to the one in the following illustration, is added to the work item form. The tab is added only to those types of work items that you specify to participate in data synchronization. Fields are added only if their `displayTfsField` or `displayTfsMirror` attribute in the field mapping file is set to `true`.  
   
  ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
   
  You can add or remove fields by customizing the field mappings for the project collection. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md) and [Field mapping reference](field-mapping-xml-element-reference.md).  
   
-##  <a name="defaultfields"></a> Default Project Server Fields  
+## <a name="defaultfields"></a> Default Project Server Fields  
  The following table describes each field that is added to the work item types to support data synchronization. Most of these fields are read-only and are used exclusively by the synchronization engine to track submissions, updates, and re-submissions. Mirrored fields are added to the **Project Server** tab when an enterprise project is mapped to a project or a type of work item is mapped.  
   
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.date: 01/12/2017
 |Project Server Submit (Required)|Microsoft.Sync.ProjSrv.Submit (String)|Specifies whether the work item participates in data synchronization.|  
 |Project Server Title|Mirror.System.Title (String)|Read-only. Stores the title that is assigned to the corresponding task in the project plan.|  
   
-###  <a name="synconly"></a> Fields Used Exclusively to Support the Synchronization Process  
+### <a name="synconly"></a> Fields Used Exclusively to Support the Synchronization Process  
  The following table lists read-only fields that are used to support the synchronization process.  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ ms.date: 01/12/2017
 |Project Server Sync Task GUID|Microsoft.Sync.ProjSrv.TaskGuid (GUID)|  
 |Project Server Sync Task Modified Revision Counter|Microsoft.Sync.ProjSrv.TaskModifiedRevCounter (Integer)|  
   
-###  <a name="psassigndata"></a> Project Server Assignment Data  
+### <a name="psassigndata"></a> Project Server Assignment Data  
  The following code sample illustrates the markup language that is used to store the rollup of work for summary tasks in the **Project Server Sync Assignment Data** field. The `IsPrimary` attribute can be true for only one `Assignment`, the primary or active owner for the summary work item.  
   
 > [!NOTE]

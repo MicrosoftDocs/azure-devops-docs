@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-#  Get Started with Git and Azure DevOps Services
+# Get Started with Git and Azure DevOps Services
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)

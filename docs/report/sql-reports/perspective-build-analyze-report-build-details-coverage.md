@@ -44,7 +44,7 @@ By using the Build perspective, you can create reports that answer the following
   
    
 <a name="example_trend"></a> 
-##  Example: Build status report  
+## Example: Build status report  
 By using PivotChart reports in Excel, you can display the build status over time, similar to the data in the following illustration.  
   
  ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")  
@@ -81,7 +81,7 @@ By using PivotChart reports in Excel, you can display the build status over time
   
 
 <a name="measures"></a> 
-##  Build measures  
+## Build measures  
  The following table describes the measures that are associated with builds. The **Build Coverage** measure group requires that the test team instrument tests to gather code coverage data. For more information, see [Required activities](#tracking) later in this topic. For an example of a report that uses several of these measures, see [Build Quality Indicators](build-quality-indicators-report.md).  
   
 |Measure Group|Measure|Description|  
@@ -102,7 +102,7 @@ By using PivotChart reports in Excel, you can display the build status over time
 ||Static Analysis Warnings|Number of static analysis warnings that occurred for the selected builds.|  
   
 <a name="dimensions"></a> 
-##  Dimensions and attributes in the Build perspective that support filtering and categorization  
+## Dimensions and attributes in the Build perspective that support filtering and categorization  
  You can use the attributes in the following table to aggregate a measure, filter a report, or specify a report axis. These attributes supplement the **Team Project** and **Date** shared dimensions that [Working with Shared Dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes.  
   
 > [!NOTE]  
@@ -128,7 +128,7 @@ By using PivotChart reports in Excel, you can display the build status over time
 ||Description|The check-in comment that is associated with the changeset.|  
 ||Policy Override Comment|The comment that is provided when a policy is overridden. If a policy was not overridden with a changeset, the field is null.|  
   
-##  <a name="tracking"></a> Required activities  
+## <a name="tracking"></a> Required activities  
  To create reports that contain useful data about builds, team members should review the information in the following topics:  
   
 -   [Run tests in your build process](../../pipelines/test/test-build.md)   

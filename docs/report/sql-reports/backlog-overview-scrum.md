@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server  
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.date: 10/17/17
 ---
@@ -34,15 +35,15 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
 -   This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 -   To view the report, you must be assigned or belong to a group that has been assigned a **Browser** or **Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  This report displays the following information for each PBI that it lists:  
   
 |Work Progress|Test Status|  
 |-------------------|-----------------|  
 |-   **Hours Breakdown**: A visual representation that shows the percentage of completed work based on the rollup of remaining hours for all tasks that are linked to the PBI or its child PBIs.<br />-   **To Do**: A rollup of the remaining hours for tasks in the To Do state that are linked to the PBI or its child PBIs.<br />-   **In Progress**: A rollup of the remaining hours for tasks in the In Progress state that are linked to the PBI or its child PBIs.|-   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md).<br />-   **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).|  
-  
-###  <a name="Interpreting"></a> Healthy and unhealthy versions of the report  
+  # <
+### <a name="Interpreting"></a> Healthy and unhealthy versions of the report  
  A healthy report shows more progress on PBIs that appear near the top of the report.  
   
  An unhealthy report indicates progress on PBIs that have a lower rank than on PBIs that have a higher rank, or that more tests are failing than passing.  

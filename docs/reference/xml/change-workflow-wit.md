@@ -75,7 +75,7 @@ As you design or modify a workflow, consider the following guidelines:
      The drop-down menus for the State and Reason fields within the work item form or query editor display the values assigned in the `WORKFLOW` section of the work item type.  
   
 <a name="ExampleWorkflow"></a> 
-##  Workflow diagram and code example  
+## Workflow diagram and code example  
 
 The following code example shows the `WORKFLOW` for the Bug WIT definition for the Agile process template. This example defines three states and five transitions. The `STATE` elements specify the Active, Resolved, and Closed states. All possible combinations for progression and regression transitions are defined for the three states, except one. The transition from Closed to Resolved is not defined. Therefore, team members cannot resolve a work item of this type if the work item is closed.  
   
@@ -131,7 +131,7 @@ This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTIO
 ```
 
   
-##  <a name="NumberStates"></a> Determine the number and types of states  
+## <a name="NumberStates"></a> Determine the number and types of states  
  You determine the number and types of valid states based on the number of distinct logical states in which you want the work items of that type to exist. Also, if different team members perform different actions, then you can consider defining a state based on a member role. Each state corresponds to an action that a team member must perform on the work item to move it to the next state. For each state, you should define the specific actions and the team members who are allowed to perform those actions.  
   
  The following table provides an example of four states that are defined to track the progress of a feature and the valid users who must perform the indicated actions:  
@@ -201,7 +201,7 @@ You control the states to and from which team members can change a work item if 
 ```  
 
 <a name="Actions"></a>   
-###  Specify actions  
+### Specify actions  
  In general, team members change the state of a work item by specifying a different value for the **State** field and then saving the work item. However, you can also define an `ACTION` element that automatically changes the state of a work item when that transition occurs. As the following example shows, you can specify that bug work items should be resolved automatically if they are associated with files that a developer checks into version control:  
   
 ```xml
@@ -216,7 +216,7 @@ You control the states to and from which team members can change a work item if 
  You can use the `ACTION` element to automatically change the state of work items of a particular type when events occur elsewhere in Microsoft Visual Studio Application Lifecycle Management or outside Visual Studio Application Lifecycle Management (for example, from a tool that tracks calls). For more information, see [ACTION](automate-field-assignments-state-transition-reason.md).  
   
 <a name="fields"></a> 
-##  Update a field during a workflow change  
+## Update a field during a workflow change  
  You can define rules that update fields whenever the following events occur:  
   
 -   Assign a field rule under `STATE` when you want the rule to apply for all transitions to and reasons for entering that state.  
@@ -232,7 +232,7 @@ You control the states to and from which team members can change a work item if 
  The following examples show some of the rules that are applied to system fields in the process template for MSF Agile Software Development.  
  
 <a name="DefineField"></a>  
-###  Change the value of a field when the state changes  
+### Change the value of a field when the state changes  
  When the value of the **State** field for a work item is set to Active and the work item is saved, the values of the **Activated By** and **Assigned To** fields are automatically set to the name of the current user. That user must be a member of the Team Foundation Server Valid Users group. The value of the **Activated Date** field is also set automatically. The following example shows the elements that enforce this rule:  
   
 ```xml
@@ -254,7 +254,7 @@ You control the states to and from which team members can change a work item if 
 ```  
 
 <a name="ClearField"></a>   
-###  Clear the value of a field when the value of another field changes  
+### Clear the value of a field when the value of another field changes  
  When the value of the **State** field for a work item is set to Active and the work item is saved, the Closed Date and Closed By fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.  
   
 ```xml
@@ -268,7 +268,7 @@ You control the states to and from which team members can change a work item if 
 ```  
  
 <a name="CopyField"></a>  
-###  Define a field based on the contents of another field  
+### Define a field based on the contents of another field  
  When the value of the **State** field for a work item changes to Resolved and the work item is saved, the value of the **Resolved Reason** field is set to the value that the user specified in the **Reason** field. The following example shows the elements that enforce this rule:  
   
 ```xml

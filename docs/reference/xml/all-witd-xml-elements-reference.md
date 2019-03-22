@@ -23,7 +23,7 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
  To customize or create a WIT definition, you modify the type definition XML file. WITs are scoped to a project within a project collection.  
   
 <a name="SyntaxStructure"></a> 
-##  WITD syntax structure  
+## WITD syntax structure  
  The following example shows the high-level structure of a WIT definition.  
   
 > [!div class="tabbedCodeSnippets"]

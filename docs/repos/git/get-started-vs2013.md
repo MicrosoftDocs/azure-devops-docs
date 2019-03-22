@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-#  Get started using Git in Visual Studio
+# Get started using Git in Visual Studio
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: df29e319-c1f7-4c90-bc27-42975158a0a1
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -38,8 +39,8 @@ ms.date: 01/12/2017
 -   To approve and publish updates, you must be a member of the **Project Manager** group on Project Server.  
   
  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
-  
-##  <a name="capture_ids"></a> Record IDs of Work Items That You Want to Synchronize  
+ # <
+## <a name="capture_ids"></a> Record IDs of Work Items That You Want to Synchronize  
  You must record the IDs of all work items that you will want to synchronize after you map your project plan to the project. You will use these IDs to perform a later step in the process.  
   
 #### To record the IDs of work items that you want to synchronize  
@@ -61,8 +62,8 @@ ms.date: 01/12/2017
 7.  Delete the IDs of any work items that you do not want to synchronize with Team Foundation Server, and then create a comma-delimited list of the remaining IDs.  
   
 8.  Save the list to a file, and record the types of work items that you want to map.  
-  
-##  <a name="save_publish"></a> Save and Publish the Project Plan to Project Server  
+ # <
+## <a name="save_publish"></a> Save and Publish the Project Plan to Project Server  
  You must perform this step only if you have been working with a local project plan. If you have already published the project plan to Project Server, you can skip this procedure.  
   
 #### To save and publish your project plan to Project Server  
@@ -70,8 +71,8 @@ ms.date: 01/12/2017
 1.  Open your project plan in Project Professional.  
   
 2.  Save the plan, publish it to Project Server, and then close the plan.  
-  
-##  <a name="map"></a> Map the Project Plan to the Team Project  
+ # <
+## <a name="map"></a> Map the Project Plan to the Team Project  
  You map your project plan to a project by using the **TfsAdmin ProjectServer** command-line tool.  
   
 #### To map an enterprise project plan to a project  
@@ -114,8 +115,8 @@ ms.date: 01/12/2017
      **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*  
   
 3.  If your project plan is open, close it, and then close Project Professional.  
-  
-##  <a name="set_synch"></a> Bulk Edit Work Items to Be Synchronized  
+ # <
+## <a name="set_synch"></a> Bulk Edit Work Items to Be Synchronized  
  In this procedure, you bulk edit the work items that correspond to the IDs that you recorded in the first procedure in this topic, [Record Work-Item IDs That You Want to Synchronize](#capture_ids). You can bulk edit work items mostly easily by using Microsoft Excel.  
   
 #### To bulk edit the synchronization fields  
@@ -162,8 +163,8 @@ ms.date: 01/12/2017
 15. On the **Team** ribbon, choose **Publish**  to update Team Foundation Server.  
   
      After a few minutes, notification of tasks to approve will appear in the approval queue for the project manager who owns the project plan.  
-  
-##  <a name="approve_updates"></a> Approve Updates, and Publish the Project Plan  
+ # <
+## <a name="approve_updates"></a> Approve Updates, and Publish the Project Plan  
  You must approve the updates that appear in your project queue before they will appear in your project plan. Also, when you migrate a nested tree of tasks, you must approve updates and then publish your project plan for each level of nesting. You must approve and publish the first level to Project Server before the next level can be submitted from Team Foundation Server to Project Server. For example, if your plan includes three levels of child items, you must publish the project plan four times for all work items to be synchronized with Project Server.  
   
  Perform the following two procedures as many times as necessary until all work items that you selected for synchronization appear in your project plan:  
@@ -171,8 +172,8 @@ ms.date: 01/12/2017
 -   Approve updates to the project plan  
   
 -   Publish the plan and update Project Server  
-  
-###  <a name="approve_updates_a"></a> To approve updates to the project plan  
+  # <
+### <a name="approve_updates_a"></a> To approve updates to the project plan  
   
 1.  Open the instance of PWA that supports the project plan, and then choose the **Approval Center** link.  
   
@@ -183,8 +184,8 @@ ms.date: 01/12/2017
 2.  For each work item that you want to accept into your plan, select the check box in the column next to the **Approval Type** column.  
   
      To select all work items, choose the header field next to the **Approval Type** column header, open the shortcut menu, and then choose **Select All**.  
-  
-###  <a name="publish_plan"></a> To publish the plan and update Project Server  
+  # <
+### <a name="publish_plan"></a> To publish the plan and update Project Server  
   
 1.  Open your project plan, and review the tasks that have been added to it.  
   
@@ -200,8 +201,8 @@ ms.date: 01/12/2017
      If some work items still must be synchronized, return to the first step in the first procedure,  "To approve updates to the project plan.  
   
      As you approve and publish the updates, the synchronization process locks the hierarchy of synchronized work items in Team Foundation.  
-  
-##  <a name="verify"></a> Verify Migration, and Delete Non-Synchronized Tasks  
+ # <
+## <a name="verify"></a> Verify Migration, and Delete Non-Synchronized Tasks  
  Open and review your project plan. If you have synchronized all tasks that you were previously publishing and refreshing, a duplicate set of tasks will appear with the replicated hierarchy. The set of synchronized tasks will appear after the set of non-synchronized tasks. You can add any information that the non-synchronized tasks contain to those tasks that are now synchronized before you delete the non-synchronized tasks from your project plan.  
   
  Perform the following procedures to complete the migration process. You add the previous Work Item ID column to make sure that you are deleting the non-synchronized tasks.  

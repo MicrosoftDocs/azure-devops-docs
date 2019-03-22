@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= tfs-2018'
 ms.date: 01/28/2019
 ---
@@ -31,8 +32,8 @@ You customize the mapping by modifying the FileMapping.xml file. The following t
 
 For more information, see [Define initial areas, iterations, and Project mapping file](../process-templates/define-classification-plug-in.md).  
 
-<a name="MappingE"></a> 
-##  Specify how fields are mapped  
+<# Sme="MappingE"></a> 
+## Specify how fields are mapped  
  You specify mapped fields by using the **Mapping** element and the following syntax structure:  
   
 > [!div class="tabbedCodeSnippets"]

@@ -7,7 +7,8 @@ ms.topic: reference
 description: Determine how many test cases have been defined and are ready to run 
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -30,8 +31,8 @@ After the team starts to define test cases, you can use the Test Case Readiness 
  **Required permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ # <
+## <a name="Data"></a> Data in the report  
  The Test Case Readiness report provides an area graph that shows how many test cases are in the **Design** or **Ready** state over the time period that you specify. By reviewing this data, you can easily determine how quickly the team is designing test cases and making them ready for testing. When you create a test case, it is automatically set to the design state. After the team has reviewed and approved the test case, then a team member should change its state to **Ready**, which indicates that the test case is ready to be run.  
   
  The following illustration shows an example of a Test Case Readiness report.  
@@ -54,8 +55,8 @@ After the team starts to define test cases, you can use the Test Case Readiness 
 -   Define test cases, and specify the **Iteration** and **Area** paths for each test case.  
   
 -   Update the state of each test case as it progresses from **Design** to **Ready** to **Closed**.  
-  
-##  <a name="Interpreting"></a> Interpreting the report  
+ # <
+## <a name="Interpreting"></a> Interpreting the report  
  The Test Case Readiness report displays the number of all test cases, grouped by state.  
   
 ### Questions answered by the report  
@@ -88,8 +89,8 @@ After the team starts to define test cases, you can use the Test Case Readiness 
 -   **The number of test cases does not appear sufficient**.  
   
      The number of test cases that are defined for a project should be equal to or larger than the number of user stories that the team is implementing.  
-  
-##  <a name="Changing"></a> Filtering the report  
+ # <
+## <a name="Changing"></a> Filtering the report  
  You can filter the Test Case Readiness report to show only those test cases that are defined for the product areas, states, and priorities that you specify. The following illustration shows the available filters:  
   
  ![Filters for Test Case Readiness report](_img/procguid_readiness.png "ProcGuid_Readiness")  

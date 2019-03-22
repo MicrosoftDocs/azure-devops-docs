@@ -51,7 +51,7 @@ One advantage of working in Excel or Project is that you can work offline and ad
   
 
 <a name="WorkingOffline"></a> 
-##  Disconnect  a document file from the network  
+## Disconnect  a document file from the network  
   
 To disconnect a an Excel or Project document file from the network:  
   
@@ -75,7 +75,7 @@ To disconnect a an Excel or Project document file from the network:
     >  You can't create most types of links between work items when the work item document is disconnected from the system. The exceptions are parent-child links in an Excel tree list, and both parent-child and predecessor-successor links in a Project plan.  
   
 <a name="ReconnectingToTFS"></a> 
-###  Reconnect a file to Azure Boards and TFS 
+### Reconnect a file to Azure Boards and TFS 
   
 To reconnect an Excel or Project document file:  
   

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9760e3f2-2c1a-4c05-8d3d-c25abc79289a
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 01/12/2017
@@ -36,8 +37,8 @@ ms.date: 01/12/2017
 -   To update work items in Team Foundation and submit them to Project Server, users must be members of the **Contributors** group for the project. Also, users must be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project.  
   
  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
-  
-##  <a name="Overview"></a> Process Overview of Top-Down Planning by Using Project Server  
+ # <
+## <a name="Overview"></a> Process Overview of Top-Down Planning by Using Project Server  
  As the following illustration shows, 10 main steps occur in the synchronization of requirements between the project plan and the project.  
   
  ![PS&#45;TFS resource rollup workflow process](_img/pstfs_rollup_workflow.png "PSTFS_Rollup_Workflow")  
@@ -50,8 +51,8 @@ ms.date: 01/12/2017
 |**Synchronization Engine**|For each requirement that is set to publish, the synchronization engine performs the following tasks:<br /><br /> ![Step 3](_img/procguid_3.png "ProcGuid_3") Creates a requirement work item in the project that is mapped to the enterprise plan. The engine also creates a link that binds the requirement in Project to the work item in Team Foundation.<br /><br /> ![Step 7](_img/procguid_7.png "ProcGuid_7") Creates a status update as updates occur in Team Foundation for each mapped field for each published requirement. These updates appear in the approval queue for the project manager to review.|  
 |**Team Lead**|In Team Foundation, the team lead and team members perform the following tasks:<br /><br /> ![Step 4](_img/procguid_4.png "ProcGuid_4") Review the deliverables that are added to the project.<br /><br /> ![Step 5](_img/procguid_5.png "ProcGuid_5") Define the tasks that are required to implement each deliverable, and verify that each task is linked to its deliverable.<br /><br /> ![Step 6](_img/procguid_6.png "ProcGuid_6") Estimate the work that is required for each task, and define it as **Remaining Work**.<br /><br /> ![10](_img/procguid_10.png "ProcGuid_10") Update the **Remaining Work** and **Completed Work** fields for each task.|  
   
-  
-##  <a name="Requirements"></a> Recommended Configurations to Support Top-Down Planning  
+ # <
+## <a name="Requirements"></a> Recommended Configurations to Support Top-Down Planning  
  To support the process that was outlined in the previous section, you must map the enterprise project plan to the project. The following table describes the recommended configurations for both the project and mappings. For more information, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
   
 |Area to configure|Recommended configuration|Notes|  
@@ -61,8 +62,8 @@ ms.date: 01/12/2017
 |Field mapping|`/useDefaultFieldMappings`|You can use the default field mappings. No additional field mappings are required.|  
 |Resource Names|You must add team members to the Team Members group for each instance of PWA, or you must grant them the Open Project and View Project Site permissions in Project. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).<br /><br /> Also, you must add all team members to the enterprise resource pool and the resource pool for the project plan.|You must grant permissions to all user accounts that are assigned as resources in the project plan or that are named in the Assigned To field for a work item. These users submit status updates that flow into the status queue for the instance of PWA.<br /><br /> All names that are assigned to the **Resource Names** field must be recognized as valid contributors of the project.|  
 |Project managers|Accounts of users of Project Professional  must be granted **View Project-level information** or assigned as members of the **Reader** group in Team Foundation for projects to which they will publish.|You must grant project managers permissions to modify work items for those projects that are mapped to their enterprise project plans.|  
-  
-##  <a name="PMTasks"></a> Project Manager Tasks and Best Practices  
+ # <
+## <a name="PMTasks"></a> Project Manager Tasks and Best Practices  
  Best or required practices are provided for the following tasks that the project manager performs:  
   
 -   [Define Requirements](#definerequirements)  
@@ -74,8 +75,8 @@ ms.date: 01/12/2017
 -   [Preview Updates and Impacts on Critical Path](#determineimpacts)  
   
  In addition to these activities, you can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
-  
-###  <a name="definerequirements"></a> Define Requirements  
+  # <
+### <a name="definerequirements"></a> Define Requirements  
  When you define requirements, you should assign them to the development team lead. As the following illustration shows, you must also set the **Publish to Team Project** field to **Yes**, and the **Work Item Type** field to **Requirement**. If only one type of work item is mapped for the project, it is set automatically.  
   
 > [!NOTE]
@@ -92,8 +93,8 @@ ms.date: 01/12/2017
 >  When you publish your plan, the Team Foundation add-in to Project validates the data that you specified. If a required field is not defined or if a value is not allowed, you must resolve those errors. For more information, see [Resolve validation errors](resolve-validation-errors.md).  
   
  ![Publishing progress appears in status bar](_img/tfs-ps_pp_published.png "TFS-PS_PP_Published")  
-  
-###  <a name="ApproveUpdates"></a> Approve Status Updates  
+  # <
+### <a name="ApproveUpdates"></a> Approve Status Updates  
  As the team makes progress on the requirements, status updates appear in your approval queue. As the following illustration shows, you can view the updates to your published requirements and the resources that are assigned to tasks. At a glance, you can see which tasks have been updated and the details of each update.  
   
  ![Approval Center with Status Update](_img/tfs-ps_pwa_approvalcenter.png "TFS-PS_PWA_ApprovalCenter")  
@@ -106,22 +107,22 @@ ms.date: 01/12/2017
 >  To update your enterprise project plan with the changes that are submitted from Team Foundation, you must accept the updates.  
   
  You can accept or reject an update and add a comment. For example, you may reject an update because you disagree with an estimate, a team member entered an inaccurate value, or you want to request that tasks are reassigned so that the work is accomplished more quickly.  
-  
-###  <a name="ReviewSchedule"></a> Review the Schedule, and Set a Baseline  
+  # <
+### <a name="ReviewSchedule"></a> Review the Schedule, and Set a Baseline  
  After you have approved the status updates, you can update the schedule and balance workload in Project, and you can set a baseline that is based on the estimates. As the following illustration shows, the estimates that are defined for the Shopping Cart requirement appear in Project.  
   
  ![Rollup of estimated work](_img/tfs-ps_pp_rollup.png "TFS-PS_PP_RollUp")  
   
  To maintain control of your schedule, you set a baseline to track the team progress against the target schedule. For more information, see the following page on the Microsoft website: [Create or update a baseline or an interim plan](http://go.microsoft.com/fwlink/?LinkId=203362).  
-  
-###  <a name="determineimpacts"></a> Preview Updates and Impacts on the Critical Path  
+  # <
+### <a name="determineimpacts"></a> Preview Updates and Impacts on the Critical Path  
  As team members make progress, they update the **Remaining Work** and **Completed Work** fields for each task. These values roll up for each requirement that is published to Team Foundation. Before you approve the updates, you can preview the impact that the updates will have on the critical path by clicking **Preview Updates** in the **Approval Center**.  
   
  After you approve the status updates, you can view the updates to your project schedule. When a requirement takes longer than estimated, you can determine whether changes to estimates affect the critical path.  
   
  You can alert the team lead when an adverse effect to the schedule will occur and the project tasks must be adjusted.  
-  
-##  <a name="DevTeamTasks"></a> Development Team Tasks and Best Practices  
+ # <
+## <a name="DevTeamTasks"></a> Development Team Tasks and Best Practices  
  As a contributor to a project, you can use the backlog, task board, and work item pages in the TFS web portal to perform the following tasks:  
   
 -   [Review the New Requirements](#review)  
@@ -131,8 +132,8 @@ ms.date: 01/12/2017
 -   [Update Remaining and Completed Work](#updateremaining)  
   
 -   [Address Rejected Updates to Requirements](#addressrejectedupdates)  
-  
-###  <a name="review"></a> Review the New Requirements  
+  # <
+### <a name="review"></a> Review the New Requirements  
  New requirements published to Project Server automatically appear in the project. Open the backlog page in the web portal and identify the requirements that have been added. For example, the following illustration shows that three requirements have been added to the project.  
   
  ![Product backlog page showing new requirements](_img/tfs-ps_te_wrkbrk_newreq.png "TFS-PS_TE_WrkBrk_NewReq")  
@@ -142,8 +143,8 @@ Product Backlog Page
   
  ![History and Project Server synch message](_img/tfs-ps_pp_history.png "TFS-PS_PP_History")  
 History of work item added by Project Server Sync  
-  
-###  <a name="DefineTasks"></a> Define and Estimate Tasks That Are Linked to Each Requirement  
+  # <
+### <a name="DefineTasks"></a> Define and Estimate Tasks That Are Linked to Each Requirement  
  Once the requirement has been added to Team Foundation Server, and then added to an iteration, you can quickly define and estimate tasks by using the sprint backlog page in the web portal. As shown in the following illustration, ![Step 1](_img/procguid_1.png "ProcGuid_1") choose the ![Add task icon on task board page &#40;TFS web portal&#41;](_img/alm_twa_addtask_icon.png "ALM_TWA_AddTask_Icon"), ![Step 2](_img/procguid_2.png "ProcGuid_2") type a **Title** for the task and assign it to a team member, ![Step 3](_img/procguid_3.png "ProcGuid_3") type a value for the work required in **Remaining Work**, and then ![Step 4](_img/procguid_4.png "ProcGuid_4") choose the **Save and Close** button. The task automatically links to the requirement with the Parent-Child link.  
   
  ![Add New Linked Work Item](_img/tfs-ps_te_addlinkedtasks_wb.png "TFS-PS_TE_AddLinkedTasks_WB")  
@@ -158,11 +159,11 @@ History of work item added by Project Server Sync
  ![Work breakdown of tasks shown in Excel](_img/tfs-ps_excel_wrkbrk_taskplan.png "TFS-PS_Excel_WrkBrk_TaskPlan")  
   
  As an alternative, you can open the Work Breakdown query in Excel and quickly define linked tasks and estimate work. See [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).  
-  
-###  <a name="updateremaining"></a> Update Remaining and Completed Work  
+  # <
+### <a name="updateremaining"></a> Update Remaining and Completed Work  
  As work progresses, each team member should update the **Remaining Work** and **Completed Work** fields for each of their tasks. If more time is required to complete a task, additional time is added to the Remaining Work field.  Updates are reflected in the rollup of the requirement.  
-  
-###  <a name="addressrejectedupdates"></a> Address Rejected Updates to Requirements  
+  # <
+### <a name="addressrejectedupdates"></a> Address Rejected Updates to Requirements  
  When a project manager rejects a status update to a requirement, the information appears in the **History** field, and the **Last Approval Status** field on the **Project Server** tab indicates **rejected**. After an update to a work item has been rejected, the work item can no longer be synchronized. You must address the rejection status before the work item can be synchronized again. You can create a team query to find work items whose update statuses were rejected. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 ## Related articles  

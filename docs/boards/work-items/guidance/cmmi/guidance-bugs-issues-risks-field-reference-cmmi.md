@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
 ms.topic: reference
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
@@ -17,8 +18,8 @@ ms.date: 01/20/2017
 [!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The following fields track information about bugs, issues, and risks. These work item types are defined within the process template for the [CMMI process](../cmmi-process.md).  
-  
-##  <a name="bugs"></a> Bug tracking fields  
+ # <
+## <a name="bugs"></a> Bug tracking fields  
  These fields are neither reported nor indexed.  
   
 > [!div class="mx-tdCol2BreakAll"]
@@ -29,8 +30,8 @@ The following fields track information about bugs, issues, and risks. These work
 > |**Found in Environment**|The software setup and configuration where the bug was found.<br/>Reference name=Microsoft.VSTS.CMMI.FoundInEnvironment|String|  
 > |**Root Cause**|The cause of the error. You can specify one of the following values:<br /><br /-   **Coding Error**<br/>-   **Design Error**<br/>-   **Specification Error**<br/>-   **Communication Error**<br/>-   **Unknown**<br/><br/>To change the menu selection, see [Customize a picklist](../../../../reference/add-modify-field.md).<br/>Reference name=Microsoft.VSTS.CMMI.RootCause|String|  
 > |**How Found**|How the bug was found. For example, a bug might have been found during a customer review or through ad hoc testing.<br/>Reference name=Microsoft.VSTS.CMMI.HowFound|String|  
-  
-##  <a name="issues"></a> Issue tracking fields  
+ # <
+## <a name="issues"></a> Issue tracking fields  
  These fields are neither reported nor indexed.  
   
 |**Field name**|**Description**|**Data type**| 
@@ -39,8 +40,8 @@ The following fields track information about bugs, issues, and risks. These work
 |**Corrective Action Actual Resolution**|What the team actually did to correct the issue.<br/>Reference name=Microsoft.VSTS.CMMI.CorrectiveActionActualResolution|HTML|  
 |**Corrective Action Plan**|The proposed corrective action on which the team has agreed.<br/>Reference name=Microsoft.VSTS.CMMI.CorrectiveActionPlan|HTML|
 |**Target Resolve Date**|The date when the issue becomes critical and starts to affect the critical path of the project plan.<br/>Reference name=Microsoft.VSTS.CMMI.TargetResolveDate|DateTime|  
-  
-##  <a name="risks"></a> Risk tracking fields  
+ # <
+## <a name="risks"></a> Risk tracking fields  
  These fields are neither reported nor indexed.  
   
 |**Field name**|**Description**|**Data type**|  

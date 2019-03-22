@@ -23,7 +23,7 @@ After you analyze your customer requirements sufficiently to understand what the
   
  You can use the [backlog](../../../backlogs/create-your-backlog.md) and [portfolio backlogs](../../../backlogs/organize-backlog.md) to define and map requirements and features.  
   
-##  <a name="ReqFeature"></a> Requirements and features  
+## <a name="ReqFeature"></a> Requirements and features  
  There are two kinds of requirement in this method: customer requirements and features. Customer requirements are what you get by analyzing what the customer wants from the product. Features are items in the product plan, which correspond to small subsets of the customer requirements. Each feature may include pieces of the customer requirements that come from different parts of the user experience and different functional areas.  
   
  **Customer requirements**  
@@ -81,12 +81,12 @@ After you analyze your customer requirements sufficiently to understand what the
   
  For this reason, planning and the initial design of the product must work in parallel, particularly in Iteration 0 where the bulk of the plan is being sketched.  
   
-##  <a name="Decomp"></a> Scenario decomposition  
+## <a name="Decomp"></a> Scenario decomposition  
  To help you arrange the requirements into features, it helps to decompose the scenarios into smaller steps.  
   
  Storyboards often help with this activity. A storyboard is a sequence of pictures that illustrate the scenario. UML activity diagrams are useful for showing alternative paths, and UML sequence diagrams can help you discuss interactions between several actors. After you use these tools to analyze a scenario, you can enter the decomposed scenarios into Team Explorer. This lets you link test cases to the scenarios and thereby ensure that the requirements have been satisfied. For more information, see [UML Activity Diagrams: Guidelines](/visualstudio/modeling/create-uml-modeling-projects-and-diagrams) and [UML Sequence Diagrams: Guidelines](/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
   
-##  <a name="Features"></a> Features - requirements fulfilled in each iteration  
+## <a name="Features"></a> Features - requirements fulfilled in each iteration  
  A feature is a requirement that summarizes what the users can do at the completion of each iteration. You can create more than one feature for each iteration. Enter them as requirement work items, setting the Requirement Type to Feature.  
   
  Use your assignments of scenarios to work items to help you define the features. The following example feature plan is derived from the assignments of scenarios to iterations in the previous section:  
@@ -140,14 +140,14 @@ After you analyze your customer requirements sufficiently to understand what the
   
 -   Link test case work items to the scenarios and quality of service requirements that they test. Link features to the subset of test cases that should pass when the feature has been developed. In this manner, the test cases act as the link between features and customer requirements.  
   
-##  <a name="QofS"></a> Quality of service features  
+## <a name="QofS"></a> Quality of service features  
  Quality of service requirements are usually pervasive with regard to the software design. For example, security requirements are generally not related to a particular development task.  
   
  Nevertheless, for each quality of service requirement, you should create a feature work item whose children are mainly testing tasks that ensure that a quality of service criterion is met. These work items are called quality of service features.  
   
  Some quality of service features can have development tasks. For example, in an early iteration, you might implement a version of the system that can handle only a few users, as a proof of concept. For a later iteration, you might add a feature that specifies the target capacity as stated in the customer requirements.  
   
-##  <a name="ProdPlan"></a> Product planning  
+## <a name="ProdPlan"></a> Product planning  
  Before the start of every iteration, hold a meeting to review the product plan. The first product planning meeting creates the plan, and subsequent meetings review it based on earlier iterations. For more information, see [Plan a project](guidance-plan-a-project-cmmi.md).  
   
  In a product plan review, discuss the features with business stakeholders, and be prepared to reprioritize them and arrange them into different iterations. The meeting should include business stakeholders and representatives of the development team.  
@@ -158,7 +158,7 @@ After you analyze your customer requirements sufficiently to understand what the
   
  Product planning considers the priorities of the features and the development costs. Priorities come from the business stakeholders, with some guidance about risk from the developers. Cost estimates come from the developers. To get an accurate idea of the costs, the development team must have already done some work on the architecture of the product and might need some experience from the early iterations. For this reason, the cost estimates should be refined at every product plan review.  
   
-##  <a name="IterPlan"></a> Iteration planning  
+## <a name="IterPlan"></a> Iteration planning  
  After the product plan review, plan the iteration. The product plan determines the features that will be delivered by the end of the iteration. The iteration plan determines what work the team will do to implement and test the features.  
   
  The following activities are part of iteration planning:  

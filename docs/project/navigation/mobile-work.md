@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2018'
 ms.date: 11/19/2018
 ---
 
-#  View and update work items via the mobile browser   
+# View and update work items via the mobile browser   
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)] 
 

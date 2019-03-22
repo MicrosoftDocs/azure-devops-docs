@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-#  Get Started with Azure Repos and Visual Studio
+# Get Started with Azure Repos and Visual Studio
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)

@@ -26,7 +26,7 @@ A data validation error occurs when a change in the work item list or project pl
 
  
   
-##  <a name="ResolveDataValidationError"></a> 
+## <a name="ResolveDataValidationError"></a> 
 ##Resolve a data validation error  
  You can use the **Work Item Publishing Errors** dialog box to resolve a data validation error.  
 
