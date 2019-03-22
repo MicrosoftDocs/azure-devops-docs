@@ -24,7 +24,6 @@ You can change how you track your team's progress by creating and customizing ob
 > [!NOTE]   
 > The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../../organizations/settings/work/manage-process.md). 
 
-
 As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
   
 ![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
@@ -35,8 +34,6 @@ For most commands, you must be a member of the Project Administrators or Project
 
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
 
- 
-
 <a name="global"></a> 
 ## Global parameters  
  You can use the following parameters to display help text for **witadmin**.  
@@ -46,14 +43,15 @@ For most commands, you must be a member of the Project Administrators or Project
 |**/help**<br />or<br />**/?**|Displays the syntax and parameters for the **witadmin** command-line tool.|  
 |**command /help**<br />or<br /> **command /?**|Displays the syntax and parameters for the **witadmin** command that you specify.|  
 
-<a name="index"></a> 
-##witadmin commands  
+<a name="index"></a>
+ 
+## witadmin commands  
 
 All work tracking objects&mdash;such as, work item types (WITs), process configuration, global lists&mdash; are customized by their XML definitions.  
 
 All **witadmin** commands can be run against an on-premises TFS. If you are new to work tracking customization and for definitions of the work tracking objects your can customize, see [Customize your work tracking experience](../customize-work.md). 
 
-##[Work item types](witadmin-import-export-manage-wits.md)
+## [Work item types](witadmin-import-export-manage-wits.md)
   
 - **destroywitd**: Delete a WIT   
 - **exportwitd**: Export a WIT file  
@@ -62,19 +60,19 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 - **renamewitd**: Change a WIT display name    
 
 
-##[Fields](manage-work-item-fields.md)
+## [Fields](manage-work-item-fields.md)
 
 - **deletefield**: Delete a field  
 - **listfields**: List field attributes  
 - **indexfield**: Turn field indexing on/off  
 - **changefield**: Change a field attribute   
 
-##[Process configuration](witadmin-import-export-process-configuration.md)
+## [Process configuration](witadmin-import-export-process-configuration.md)
   
 - **exportprocessconfig**: Export the ProcessConfiguration file   
 - **importprocessconfig**: Import the ProcessConfiguration file  
 
-##[Link types](manage-link-types.md)
+## [Link types](manage-link-types.md)
   
 - **deletelinktype**:  Delete a link type  
 - **exportlinktype**:  Export a link type file   
@@ -83,7 +81,7 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 - **reactivatelinktype**: Reactivate or rename a link type   
 
 
-##[Global lists](manage-global-lists-for-work-item-types.md)
+## [Global lists](manage-global-lists-for-work-item-types.md)
   
 - **destroygloballist**: Delete a global list  
 - **exportgloballist**: Export the global list  
@@ -91,23 +89,23 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 - **listgloballist**: List all global list names   
 
   
-##[Global workflow](witadmin-import-export-global-workflow.md)
+## [Global workflow](witadmin-import-export-global-workflow.md)
 
 - **exportglobalworkflow**: Export the global workflow file  
 - **importglobalworkflow**: Import the global workflow file   
 
 
-##[Work items](remove-work-items-permanently.md) 
+## [Work items](remove-work-items-permanently.md) 
 
 - **destroywi**: Permanently delete work items    
 
 
-##[Client cache](rebuild-client-cache.md)
+## [Client cache](rebuild-client-cache.md)
   
 - **rebuildcache**: Rebuild the client cache   
 
 
-##[Categories](witadmin-import-export-categories.md)
+## [Categories](witadmin-import-export-categories.md)
   
 - **exportcategories**:  Export the Categories file   
 - **importcategories**:  Import the Categories file      
