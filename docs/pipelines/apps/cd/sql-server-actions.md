@@ -23,7 +23,7 @@ However, you may want to perform other SQL server actions
 as part of your release workflow.
 
 At present, the SQL task does not support other actions.
-Instead, you can use the [PowerShell task]()
+Instead, you can use the [PowerShell task](../../tasks/utility/powershell.md)
 in your workflow to execute a SQL script.
 The SQL script can be specified either as an artifact or as an inline script.
 
