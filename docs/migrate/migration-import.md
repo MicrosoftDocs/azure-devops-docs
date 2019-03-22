@@ -461,9 +461,9 @@ You will need to add exceptions for all three services that make up Azure Artifa
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|
-|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25     |
+|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25, 40.67.155.236, 52.230.216.163     |
 |    Azure Artifacts Blob - West Europe            |    23.97.221.25     |
-|    Azure Artifacts Blob - Australia East         |    40.127.86.30, 20.188.213.113   |
+|    Azure Artifacts Blob - Australia East         |    40.127.86.30, 20.188.213.113, 40.82.221.14   |
 |    Azure Artifacts Blob - Brazil South           |    191.235.90.183   |
 |    Azure Artifacts Blob - India South            |    52.172.54.122    |
 |    Azure Artifacts Blob - Canada Central         |    52.237.16.145, 52.237.16.145, 52.233.38.115, 40.82.187.186     |

@@ -146,10 +146,12 @@ trigger:
 
 ### Opting out of CI builds
 
+#### Disabling the CI trigger
+
 You can opt out of CI builds entirely by specifying `trigger: none`.
 
 ```yaml
-# a build with no CI
+# A pipeline with no CI trigger
 trigger: none
 ```
 
@@ -157,6 +159,27 @@ trigger: none
 >When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
 
 For more information, see [Trigger](../yaml-schema.md#trigger) in the [YAML schema](../yaml-schema.md).
+
+::: moniker-end
+
+#### Skipping CI for individual commits
+
+::: moniker range="<= azure-devops-2019"
+
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI. This is supported for commits to Azure Repos Git and GitHub.
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
+
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
 
 ::: moniker-end
 
