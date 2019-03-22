@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
-ms.date: 02/21/2019
+ms.date: 03/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -371,14 +371,14 @@ To insert into a mapping, use the special property `${{ insert }}`.
 ```yaml
 # Default values
 parameters:
-  variables: {}
+  additionalVariables: {}
 
 jobs:
 - job: build
   variables:
     configuration: debug
     arch: x86
-    ${{ insert }}: ${{ parameters.variables }}
+    ${{ insert }}: ${{ parameters.additionalVariables }}
   steps:
   - task: msbuild@1
   - task: vstest@2
@@ -388,7 +388,7 @@ jobs:
 jobs:
 - template: jobs/build.yml
   parameters:
-    variables:
+    additionalVariables:
       TEST_SUITE: L0,L1
 ```
 
