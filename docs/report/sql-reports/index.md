@@ -59,5 +59,5 @@ To learn more about the future of reporting for TFS, read [Reporting roadmap](..
 
 ## Resources
 - [Server Administration](/azure/devops/server/index)
-- [Azure DevOps Developer Community ](https://developercommunity.visualstudio.com/spaces/22/index.html)
+- [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/22/index.html)
 - [(Archived) TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/en-ushome?forum=tfsreporting)

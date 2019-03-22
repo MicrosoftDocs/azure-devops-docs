@@ -14,7 +14,8 @@ ms.date: 04/13/2018
 
 # Migrate data from Azure DevOps Server to Azure DevOps Services 
 
-[!INCLUDE [ ](_shared/version-azure-devops.md)]
+> [!NOTE]
+> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)
 
 > [!NOTE]
 > [ Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-happened-vsts.md)

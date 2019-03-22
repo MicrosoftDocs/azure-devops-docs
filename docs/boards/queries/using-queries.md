@@ -218,7 +218,7 @@ If your query results do not return your expected set of work items, follow thes
 
 ## Ungroup a clause
 
-To ungroup a clause, choose the [ ](../_img/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
+To ungroup a clause, choose the ![ ](../_img/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
 
 <a id="tree-query" />
 

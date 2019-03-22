@@ -284,7 +284,7 @@ YAML is not supported in TFS.
 Use these tasks to publish artifacts:
 
 * ![icon](../tasks/utility/_img/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* ![icon](../tasks/utility/_img/delete-files.png) [Utility: Delete Files ](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
+* ![icon](../tasks/utility/_img/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
 * ![icon](../tasks/utility/_img/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts

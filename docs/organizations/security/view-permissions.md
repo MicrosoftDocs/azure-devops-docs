@@ -38,7 +38,7 @@ Permissions are set at the collection, project, and object level as described in
 
 	*To see the full image, click to expand*.
 
-	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)
+	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)
 
 2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
