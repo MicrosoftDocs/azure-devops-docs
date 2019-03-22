@@ -9,7 +9,7 @@ ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/03/2019
+ms.date: 03/22/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -223,7 +223,30 @@ Yes
 
 ### How do I avoid triggering a CI build when the script pushes?
 
-Add ```***NO_CI***``` to your commit message. For example, ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
+::: moniker range="<= azure-devops-2019"
+
+Add ```***NO_CI***``` to your commit message. Here are examples:
+* ```git commit -m "This is a commit message ***NO_CI***"```
+* ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+Add `[skip ci]` to your commit message or description. Here are examples:
+* ```git commit -m "This is a commit message [skip ci]"```
+* ```git merge origin/features/hello-world -m "Merge to master [skip ci]"```
+
+You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
+
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
+
+::: moniker-end
 
 ::: moniker range="< tfs-2018"
 
