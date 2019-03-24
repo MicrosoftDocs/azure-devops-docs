@@ -426,7 +426,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.HostType</td>
-<td>Set to `build` if the pipeline is a build. For a release, the values are `deployment` for a Deployment group job and `release` for an Agent job.
+<td>Set to `build` if the pipeline is a build. For a release, the values are `deployment` for a Deployment group job, `gates` during evaluation of gates and `release` for other (Agent and Agentless) jobs.
 <tr>
 
 <tr>
