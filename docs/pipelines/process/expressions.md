@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/06/2019
+ms.date: 03/25/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -136,6 +136,16 @@ Depending on context, other functions may be available as well.
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
 
+<<<<<<< HEAD
+=======
+### containsValue
+* Evaluates `True` if the left parameter is an array, and any item equals the right parameter. Also evaluates `True` if the left parameter is an object, and the value of any property equals the right parameter.
+* Min parameters: 2. Max parameters: 2
+* If the left parameter is an array, converts each item to match the type of the right parameter. If the left parameter is an object, converts the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
+* Ordinal ignore-case comparison for Strings
+* Short-circuits after the first match
+
+>>>>>>> Document * and containsValue in yaml expressions.
 ### endsWith
 * Evaluates `True` if left parameter String ends with right parameter
 * Min parameters: 2. Max parameters: 2
@@ -177,6 +187,7 @@ Depending on context, other functions may be available as well.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after first match
 
+<<<<<<< HEAD
 ::: moniker range="> azure-devops-2019"
 
 ### join
@@ -187,6 +198,8 @@ Depending on context, other functions may be available as well.
 
 ::: moniker-end
 
+=======
+>>>>>>> Document * and containsValue in yaml expressions.
 ### le
 * Evaluates `True` if left parameter is less than or equal to the right parameter
 * Min parameters: 2. Max parameters: 2
@@ -233,3 +246,32 @@ Depending on context, other functions may be available as well.
 * Evaluates `True` if exactly one parameter is `True`
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to Boolean for evaluation
+<<<<<<< HEAD
+=======
+
+## Filtered arrays
+
+When operating on a collection of items you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
+
+As an example, consider an array of objects named `foo`. We want to get an array of the values of the `id` property in each object in our array.
+
+```json
+[
+	{ "id": 1, "a": "avalue1"},
+	{ "id": 2, "a": "avalue2"},
+	{ "id": 3, "a": "avalue3"}
+]
+```
+
+We could do the following:
+
+`foo.*.id`
+
+This tells the system to operate on `foo` as a filtered array and then select the `id` property.
+
+This would return:
+
+```json
+[ 1, 2, 3 ]
+```
+>>>>>>> Document * and containsValue in yaml expressions.
