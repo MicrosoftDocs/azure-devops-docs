@@ -77,7 +77,7 @@ Subversion just uses the username for each commit, while Git stores both a real 
 To extract a list of all SVN users from the root of your local Subversion checkout, run this PowerShell command:
 
 ```
-svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique >> authors-transform.txt
 ```
 This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `jamal = jamal <jamal>` to `jamal =  Jamal Hartnett <jamal@fabrikam-fiber.com>`.
 
@@ -92,6 +92,8 @@ git svn clone ["SVN repo URL"] --prefix=svn/ --no-metadata --authors-file "autho
 > [!NOTE]
 >
 > The `--prefix=svn/` is necessary because otherwise the tools can't tell SVN revisions from imported ones. We recommend setting a prefix (with a trailing slash), as your SVN-tracking refs will then be located at `refs/remotes/$prefix/`, which is compatible with Git's own remote-tracking branch layout (`refs/remotes/$remote/`).
+>
+> If the command fails because author is not found in the "authors-transform.txt" file, please check the encoding of the file. Change to UTF8 without BOM should work for Windows.
 >
 > Setting a prefix is also useful if you wish to track multiple projects that share a common repository. By default, the prefix is set to `origin/`.
 
