@@ -152,7 +152,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
 	<li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
 	<li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
 	</ul>
-	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](#edit-processconfig). </p>
+	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](add-features-manually.md#edit-processconfig). </p>
 	</td>
 	</tr>
 	<tr>
@@ -334,7 +334,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	<li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
 	<li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
 	</ul>
-	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TaskBacklog` section](#edit-processconfig). </p>
+	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TaskBacklog` section](add-features-manually.md#edit-processconfig). </p>
 	</td>
 	</tr>
 	<tr>
