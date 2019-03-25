@@ -36,6 +36,7 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
 
 
 <a id="review-fields"></a>
+
 ## Review fields 
 
 To review the list of fields defined for all processes and the WITs which reference them, choose **Process** and then **Fields**.  
@@ -49,6 +50,7 @@ Fields listed correspond to all those defined for the organization. For descript
 <a id="open-process-wit">  </a>
 <a id="add-field">  </a>
 <a id="add-custom-field">  </a>
+
 ## Add a custom field 
 
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
@@ -66,7 +68,7 @@ You can add fields and specify the group and page where they should appear. Also
 0. Name the field and select the field type from one of the supported data types. Optionally, add a description.  
 
 	> [!NOTE]    
-	> You must specify a field name that is unique within the organization. A custom field defined for one process cannot be the same as the name defined for another process. For more information on field names, see [What is a field? How are field names used?](#field-reference)
+	> You must specify a field name that is unique within the organization. A custom field defined for one process cannot be the same as the name defined for another process. For more information on field names, see [What is a field? How are field names used?](inheritance-process-model.md#field-reference)
 	
 	Here we add an Integer field labeled Customer Ticket. 
 
@@ -120,7 +122,9 @@ You can add fields and specify the group and page where they should appear. Also
 
 
 <a id="identity">  </a>
+
 ### Add an Identity field  
+
 Azure Active Directory (Azure AD)
 Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your organization manages users with Azure Active Directory (Azure AD), then the system synchronizes Identity fields with the names defined in Azure AD and are valid users of the project. 
 
@@ -132,6 +136,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
  
 
 <a id="html">  </a>
+
 ### Add a rich-text, HTML field 
 
 1. Just as before, choose the WIT you want to add the field to and then click the ![add new field icon](_img/process/new-field-icon.png) (New Field icon).  
@@ -146,6 +151,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 	> ![Bug form, Customer request field added to first column in form](_img/process/customize-process-field-show-custom-html-field-up1.png)
 
 <a id="boolean-field">  </a>
+
 ### Add a checkbox field  
 
 1. Just as before, choose the WIT you want to add the field to and then click ![add icon](../../../_img/icons/green_plus_icon.png) New Field.  
@@ -164,6 +170,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 	>The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Task board, then the field values of True and False display (not a checkbox).
 
 <a id="add-existing-field">  </a>
+
 ## Add an existing field to another WIT
 
 Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Or, you can add a field defined for one process to a work item type in another process. Simply open the work item and choose the existing field. 
@@ -178,6 +185,7 @@ Optionally, specify the [Required/Default values](#options) and [placement withi
 
 
 <a id="rename-field">  </a>
+
 ## Relabel a field   
 Renaming a field or changing the field type aren't supported actions. However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
 
@@ -186,6 +194,7 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 ![Layout tab, Relabel a field](_img/process/cpfield-relabel-customer-ticket.png) 
 
 <a id="show-hide-remove-field">  </a>
+
 ## Show, hide, or remove a field   
 
 You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it later, you can add it back to the form. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
