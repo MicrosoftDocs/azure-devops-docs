@@ -60,7 +60,7 @@ To provide users guidance that exceeds the 255 characters limit, see [Provide he
 <a id="pick-list" /> 
 ## Pick list rules
 
-Pick list rules define the values that a user can or can't choose for a String field. Values defined in a pick list appear on a work item form and the query editor. You can combine lists, and expand or contract lists. You can also use the **for** and **not** attributes to [apply or ignore these rules](#scope), based on who is modifying the work item.
+Pick list rules define the values that a user can or can't choose for a String field. Values defined in a pick list appear on a work item form and the query editor. You can combine lists, and expand or contract lists. 
 
 <table>
 <thead>
@@ -101,7 +101,7 @@ For examples of using pick lists, see [Define pick lists](define-pick-lists.md).
 <a id="value-rules" /> 
 ## Assign value rules
 
-Assign value rules define runtime behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. You can [apply or ignore these rules](#scope) based on who is modifying the work item using the **for** and **not** attributes.
+Assign value rules define runtime behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
 <a id="clear" /> 
 ### Clear, set defaults, copy, or match a pattern
@@ -190,6 +190,7 @@ For the syntax structure, see [All FIELD XML elements reference](field-definitio
 <!--- This section used to be valid, but is no longer valid for TFS 2017 and later versions. 
 
 <a id="scope" /> 
+
 ### Restrict who can create or modify a work item
 
 You can control who can create or modify a work item by applying the **VALIDUSER** element to person-name fields. When you specify this element, you indicate which user or group of users can be assigned as a value for the field. You can set this element to support the optional **group** attribute, which requires that the person who is assigned to the field must be a direct or indirect member of the group that you specify. By default, all members of the **Team Foundation Valid Users** group can be specified in the field.
