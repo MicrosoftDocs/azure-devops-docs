@@ -189,7 +189,8 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 ::: moniker-end
 
 
-<a name="ad hoc-search"></a>
+<a name="adhoc-search"></a>
+
 ## Initiate an ad hoc search, use shortcut filters
 
 For TFS 2017.1 and earlier versions, you can perform ad hoc searches from the web portal or from Visual Studio Team Explorer. Ad hoc searches automatically scope to the items defined to the project you're currently connected to.  
