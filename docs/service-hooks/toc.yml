@@ -4,6 +4,8 @@
   href: overview.md
 - name: Quickstarts
   items:
+  - name: Create a service hook with Grafana
+    href: services/grafana.md
   - name: Create a service hook with Slack
     href: services/slack.md
   - name: Create a service hook with Jenkins
