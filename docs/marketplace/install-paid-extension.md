@@ -1,5 +1,5 @@
 ---
-title: Buy and install paid extensions and assign to users in Azure DevOps Services
+title: Buy and install paid extensions and assign to users
 description: Find paid extensions in the Visual Studio Marketplace and learn how to buy, install, and assign them.
 ms.topic: conceptual
 ms.prod: devops
@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '> tfs-2015'
 ---
 
 # Quickstart: Buy and install paid extensions

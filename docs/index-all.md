@@ -28,8 +28,7 @@ featureFlags:
                         <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
-                                <a href="#start"> </a>
-                                <h2 style="float: left; display: flex;">User and Administrator Guides</h2>                                
+                                <h2 style="float: left; display: flex;">User and Administrator Guides</h2>   
                         	    <a href="#index2"></a>
                                 <ul id="index2" class="cardsW cols cols4 panelContent singlePanelContent" style="float: left; display: flex!important;">
                                     <li>
