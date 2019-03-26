@@ -148,11 +148,11 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 
 1. In the first empty row, under the **Field** column heading, choose the down arrow to display the list of available fields, and choose an item in the list.
 
-	For more information, see [Query Fields and Values](#fields-values).
+	For more information, see [Query Fields and Values](query-operators-variables.md#field-values).
 
 2. In the same row, under the **Operator** column heading, choose the down arrow to display the list of available operators, and choose an item in the list.
 
-	For more information, see [Operators](#operators).
+	For more information, see [Operators](query-operators-variables.md#operators).
 
 3. In the same row, under the **Value** column heading, either type a value, or choose the down arrow, and choose an item in the list.
 
