@@ -68,6 +68,7 @@ steps:
 steps:
 - task: DownloadPipelineArtifact@0
   inputs:
+    artifactName: 'artifactName'
     targetPath: $(System.DefaultWorkingDirectory)
 ```
 

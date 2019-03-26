@@ -2217,7 +2217,7 @@
     },
     {
       "source_path": "docs/reference/overview.md",
-      "redirect_url": "/azure/devops/index#pivot=services&panel=admin",
+      "redirect_url": "/azure/devops/organizations/index",
       "redirect_document_id": false
     },
     {
@@ -5857,7 +5857,7 @@
     },
     {
       "source_path": "docs/work/index.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=agile",
+      "redirect_url": "/azure/devops/boards/index",
       "redirect_document_id": false
     },
     {
@@ -5967,17 +5967,17 @@
     },
     {
       "source_path": "docs/analytics.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
+      "redirect_url": "/azure/devops/report/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/report.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
+      "redirect_url": "/azure/devops/report/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reporting.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
+      "redirect_url": "/azure/devops/report/index",
       "redirect_document_id": false
     },
     {
@@ -11507,22 +11507,22 @@
     },
     {
       "source_path": "docs/project/wiki/project-vision-status.md",
-      "redirect_url": "/azure/devops/organization/projects/project-vision-status",
+      "redirect_url": "/azure/devops/organizations/projects/project-vision-status",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/team-services-security-whitepaper.md",
-      "redirect_url": "/azure/devops/organization/security/data-protection",
+      "redirect_url": "/azure/devops/organizations/security/data-protection",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/data-location.md",
-      "redirect_url": "/azure/devops/organization/security/data-location",
+      "redirect_url": "/azure/devops/organizations/security/data-location",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/credential-storage.md",
-      "redirect_url": "/azure/devops/organization/security/credential-storage",
+      "redirect_url": "/azure/devops/organizations/security/credential-storage",
       "redirect_document_id": false
     },
     {
