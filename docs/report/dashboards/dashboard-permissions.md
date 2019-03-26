@@ -67,6 +67,7 @@ By default, all team members have permissions to edit dashboards defined for the
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Set individual dashboard permissions for team members
 
 0. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
@@ -88,12 +89,15 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="tfs-2017 || tfs-2018"
 
 ## Set individual dashboard permissions for team members
 
 By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the view, edit, and manage permissions for all team dashboards for members of your team. 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
 
 1. To change the permissions for a specific dashboard, open the dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
 
@@ -105,22 +109,36 @@ By default, all team members have permissions to edit dashboards defined for the
 
 	> [!NOTE]   
 	> The dashboard security dialog doesn't support granting permissions to other users or groups.  
-::: moniker-end  
-	::: moniker range="tfs-2018"  
-	> [!div class="mx-imgBorder"]
-	> ![Manage dashboards - permissions dialog, Azure DevOps and TFS 2018](_img/dashboards-permissions.png)   
-	::: moniker-end  
-	::: moniker range="tfs-2017"  
-	Requires TFS 2017.1 or later version.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Manage dashboards - permissions dialog, 2017.1](_img/dashboards-permissions-tfs.png) 
-	::: moniker-end
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+	> ![Manage dashboards - permissions dialog, Azure DevOps and TFS 2018](_img/dashboards-permissions.png)   
+
 3. Choose **Save** to save your changes and dismiss the Settings dialog. 
 
 ::: moniker-end
 
+
+
+::: moniker range="tfs-2017"
+1. To change the permissions for a specific dashboard, open the dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
+
+	For example, here we open the Manage Dashboards dialog for the Fabrikam Fiber Web team's Test dashboard. 
+
+	![Open Manage dashboards dialog](_img/dashboards-configure-ts.png) 
+
+2. Choose the **Permissions** tab and check those checkboxes to grant or restrict permissions to your team members to edit and manage team dashboards. The default settings, as shown in the illustration, provide all team members permissions to edit and manage dashboards.  
+
+	> [!NOTE]   
+	> The dashboard security dialog doesn't support granting permissions to other users or groups.  
+
+	Requires TFS 2017.1 or later version.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Manage dashboards - permissions dialog, 2017.1](_img/dashboards-permissions-tfs.png) 
+ 
+3. Choose **Save** to save your changes and dismiss the Settings dialog. 
+
+::: moniker-end
 
 ## Related articles
 
