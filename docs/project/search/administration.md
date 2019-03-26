@@ -597,6 +597,7 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    - Delete the environment variable `"SEARCH_ES_INDEX_PATH"`
    - Delete the environment variable `"ES_HEAP_SIZE"` (this environment variable is obsolete for TFS 2018 Update 2 and later, and Azure DevOps Server).<p />
     
+<a name="unconfig-separate-server"></a>
 ### Unconfigure Search when its configured on a separate server
 
 1. Uninstall the Search extension (Code, Work Item, or Wiki) for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in your Azure DevOps Server or TFS instance.
@@ -647,14 +648,16 @@ Search for Azure DevOps Server and TFS has the following limitation:
 * [Azure DevOps Server or TFS overall performance is affected](#server-slow)
 * ["Unexpected error in Search service" message](https://blogs.msdn.microsoft.com/tapas_sahoos_blog/2017/09/11/resetting-search-index-in-team-foundation-server/)
 
+<a name="no-search-box"></a>
 **Search is configured but the Search box is not displayed**
 
 1. The search box is shown only in the context of a project page. 
    Navigate to a project and check if the search box is displayed at the top right. 
 
 1. If the search box is not shown, verify that the extension is installed for the collection. 
-   If not, [install](#config-ts) or [configure](#config-tfs) the extension.
+   If not, [install](#install-tfs) or [configure](#config-ts-azuredevops) the extension.
 
+<a name="no-results-install"></a>
 **No search results are shown after installing or configuring Search**
 
 1. Wait until you are sure sufficient time has elapsed

@@ -136,8 +136,6 @@ Depending on context, other functions may be available as well.
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
 
-<<<<<<< HEAD
-=======
 ### containsValue
 * Evaluates `True` if the left parameter is an array, and any item equals the right parameter. Also evaluates `True` if the left parameter is an object, and the value of any property equals the right parameter.
 * Min parameters: 2. Max parameters: 2
@@ -145,7 +143,6 @@ Depending on context, other functions may be available as well.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after the first match
 
->>>>>>> Document * and containsValue in yaml expressions.
 ### endsWith
 * Evaluates `True` if left parameter String ends with right parameter
 * Min parameters: 2. Max parameters: 2
@@ -187,7 +184,6 @@ Depending on context, other functions may be available as well.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after first match
 
-<<<<<<< HEAD
 ::: moniker range="> azure-devops-2019"
 
 ### join
@@ -198,8 +194,6 @@ Depending on context, other functions may be available as well.
 
 ::: moniker-end
 
-=======
->>>>>>> Document * and containsValue in yaml expressions.
 ### le
 * Evaluates `True` if left parameter is less than or equal to the right parameter
 * Min parameters: 2. Max parameters: 2
@@ -246,8 +240,6 @@ Depending on context, other functions may be available as well.
 * Evaluates `True` if exactly one parameter is `True`
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to Boolean for evaluation
-<<<<<<< HEAD
-=======
 
 ## Filtered arrays
 
@@ -274,4 +266,3 @@ This would return:
 ```json
 [ 1, 2, 3 ]
 ```
->>>>>>> Document * and containsValue in yaml expressions.
