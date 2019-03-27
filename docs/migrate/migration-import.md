@@ -357,7 +357,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 > While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
 
 > [!NOTE]   
-> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac-and-import-files). The above guidelines are for SQL Azure VMs only. 
+> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac). The above guidelines are for SQL Azure VMs only. 
 
 Below are some additional recommended configurations for your SQL Azure VM.
 

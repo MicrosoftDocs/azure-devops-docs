@@ -4,10 +4,11 @@
 - task: AzureWebAppContainer@1
   inputs:
     azureSubscription: 
+    #osType: 'Linux' # Options: linux, windows
     appName: 
     #deployToSlotOrASE: false # Optional
-    #resourceGroupName: # Required when deployToSlotOrASEFlag == True
-    #slotName: 'production' # Required when deployToSlotOrASEFlag == True
+    #resourceGroupName: # Required when deployToSlotOrASE == True
+    #slotName: 'production' # Required when deployToSlotOrASE == True
     imageName: 
     #containerCommand: # Optional
     #appSettings: # Optional
