@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
@@ -59,7 +59,7 @@ You always add a field to an existing work item type.
 
     <img src="_img/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
-	Additional data types you can add include: [Picklist](customize-process-field.md#pick-list), [Identity](customize-process-field.md#identity), [Rich-text, HTML](customize-process-field.md#html),[Checkbox](customize-process-field.md#boolean-field).  
+	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist)(customize-process-field.md#add-a-pick-list), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), [Checkbox](customize-process-field.md#add-a-checkbox-field).  
 	<a id="options">  </a>  
 0.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
 
@@ -84,7 +84,7 @@ You always add a field to an existing work item type.
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 

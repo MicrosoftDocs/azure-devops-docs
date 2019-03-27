@@ -217,7 +217,7 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/items?scopePath=$/Fabrikam-
 
 
 ### Multiple items
-To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body. You can specify the [version](#getaspecificversion) and [recursion level](#mutlipleitems) for each item, too.
+To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body. You can specify the [version](#getaspecificversion) and [recursion level](#afolderanditschildren) for each item, too.
 
 #### Sample request
 

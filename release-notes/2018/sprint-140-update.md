@@ -10,7 +10,7 @@ description: In the Sprint 140 Update of Azure DevOps Services, you'll find a ne
 
 # Pipeline container jobs - Sprint 140 Update
 
-In the **Sprint 140 Update** of Azure DevOps Services, you'll find a new way to customize build dependencies to your specific requirements with the introduction of [container jobs](#control-specific-build-dependencies-using-container-jobs) in Azure Pipelines. In Wiki you can now [add videos](#embed-a-video-in-wiki), [rename](#rename-a-wiki), and [add a table of contents with a single click](#insert-a-wiki-table-of-contents-with-the-click-of-a-button).
+In the **Sprint 140 Update** of Azure DevOps Services, you'll find a new way to customize build dependencies to your specific requirements with the introduction of [container jobs](#control-specific-build-dependencies-using-container-jobs) in Azure Pipelines. In Wiki you can now [add videos](#embed-a-video-in-wiki), [rename](#rename-a-wiki), and [insert a wiki table of contents from the format pane](#insert-a-wiki-table-of-contents-from-the-format-pane).
 
 Check out the [Features](#features) list below for more.
 

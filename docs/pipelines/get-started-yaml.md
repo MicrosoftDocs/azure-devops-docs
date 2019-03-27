@@ -9,7 +9,7 @@ ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/04/2019
+ms.date: 03/25/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -33,6 +33,7 @@ Select a sample repository of your choice from the following languages and fork 
 | Programming language | Repository with a sample app |
 |----------------------|----------------------------|
 | .NET Core | https://github.com/MicrosoftDocs/pipelines-dotnet-core |
+| .NET Core with Docker | https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker |
 | Go | https://github.com/MicrosoftDocs/pipelines-go |
 | Java | https://github.com/MicrosoftDocs/pipelines-java |
 | Node.js | https://github.com/MicrosoftDocs/pipelines-javascript |
