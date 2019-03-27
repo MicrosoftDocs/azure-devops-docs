@@ -42,7 +42,7 @@ A new [notification type](#subscribe-to-package-update-notifications) and better
 
 - [Subscribe to package update notifications](#subscribe-to-package-update-notifications)
 - [Use upstream NuGet packages from elsewhere in VSTS](#use-upstream-nuget-packages-from-elsewhere-in-vsts)
-- [Enable nuget.org upstream sources in more feeds](#enable-nuget.org-upstream-sources-in-more-feeds)
+- [Enable nuget.org upstream sources in more feeds](#enable-nugetorg-upstream-sources-in-more-feeds)
 
 ### Wiki
 
