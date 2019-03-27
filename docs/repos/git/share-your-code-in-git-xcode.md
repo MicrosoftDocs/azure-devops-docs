@@ -30,7 +30,7 @@ Create a local Git repo for your code to manage your project in version control.
 * [New projects](#new-projects)
 * [Existing projects](#existing-projects)
 
-If your project is already in a local Git repo, you can skip ahead to [Create a new VSTS repo](#create-a-new-vsts-repo).
+If your project is already in a local Git repo, you can skip ahead to [Create a new Git repo in Azure Repos](#create-a-new-git-repo-in-azure-repos).
 
 ### New projects
 
