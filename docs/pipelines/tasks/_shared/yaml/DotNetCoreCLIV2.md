@@ -9,6 +9,7 @@
     #custom: # Required when command == Custom
     #arguments: # Optional
     #publishTestResults: true # Optional
+    #testRunTitle: # Optional
     #zipAfterPublish: true # Optional
     #modifyOutputPath: true # Optional
     #feedsToUse: 'select' # Options: select, config
@@ -25,7 +26,7 @@
     #publishPackageMetadata: true # Optional
     #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
     #packagesToPack: '**/*.csproj' # Required when command == Pack
-    #configurationToPack: '$(BuildConfiguration)' # Optional
+    #configuration: '$(BuildConfiguration)' # Optional
     #packDirectory: '$(Build.ArtifactStagingDirectory)' # Optional
     #nobuild: false # Optional
     #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
