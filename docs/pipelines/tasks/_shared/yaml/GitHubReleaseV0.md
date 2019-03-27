@@ -4,7 +4,7 @@
 - task: GitHubRelease@0
   inputs:
     gitHubConnection: 
-    repositoryName: 
+    #repositoryName: '$(Build.Repository.Name)' 
     #action: 'create' # Options: create, edit, delete
     #target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
     #tagSource: 'auto' # Required when action == Create# Options: auto, manual

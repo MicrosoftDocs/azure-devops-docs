@@ -37,7 +37,7 @@ GET https://{instance}/DefaultCollection/_apis/projects?api-version={version}[&s
 | instance           | string                                                   |            | TFS server name ({server:port}).
 | Query                                                                                                                                                         
 | api-version        | string                                                   |            | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| stateFilter        | enum {<br/>&nbsp;&nbsp;WellFormed,<br/>&nbsp;&nbsp;CreatePending,<br/>&nbsp;&nbsp;Deleting,<br/>&nbsp;&nbsp;New,<br/>&nbsp;&nbsp;All<br/>}   | WellFormed | Return projects in a specific [project state](#Bystate). 
+| stateFilter        | enum {<br/>&nbsp;&nbsp;WellFormed,<br/>&nbsp;&nbsp;CreatePending,<br/>&nbsp;&nbsp;Deleting,<br/>&nbsp;&nbsp;New,<br/>&nbsp;&nbsp;All<br/>}   | WellFormed | Return projects in a specific [project state](#by-state). 
 | $top               | integer                                                  | 100        | Number of projects to return.
 | $skip              | integer                                                  | 0          | Number of projects to skip. 
 

@@ -44,7 +44,7 @@ Azure using Azure Pipelines.
 ## Before you begin
 
 * You'll need the source code for your app hosted in a repository such as GitHub, Azure Repos, GitHub Enterprise Server,
-  Bitbucket Cloud, GitLab, or any another source control provider that Jenkins can interact with.
+  Bitbucket Cloud, or any another source control provider that Jenkins can interact with.
 * You'll need a Jenkins server where you run your CI builds. You can quickly
   [set up a Jenkins server on Azure](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template). 
 * You'll need a Jenkins project that builds you app. For example, 

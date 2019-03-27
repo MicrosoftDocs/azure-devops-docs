@@ -29,7 +29,7 @@ install extensions from the
 
 [Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
-can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
+can install extensions. If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 For paid extensions, you'll need an 
 [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
@@ -47,7 +47,7 @@ you can create a new subscription when you make your first purchase.
 
 Your project collection will reuse your Azure subscription 
 for future Visual Studio Marketplace purchases. 
-[Where can I find more info about Azure billing?](#billing)
+[Where can I find more info about Azure billing?](faq-extensions.md#troubleshooting-purchases--billing)
 
 ::: moniker range="<= tfs-2018"
 
@@ -59,7 +59,7 @@ for future Visual Studio Marketplace purchases.
 
 ::: moniker range="tfs-2017"
 
-* [Connect to TFS](#connected-tfs), so you can install [free, preview, and paid extensions](#difference).
+* [Connect to TFS](#connected-tfs), so you can install [free, preview, and paid extensions](faq-extensions.md#difference).
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ for future Visual Studio Marketplace purchases.
 
 * Working with TFS 2015 Update 3, or disconnected from TFS 2017? 
 [Download extensions, then upload them to TFS](#disconnected-tfs) to 
-[install free and preview extensions](#difference). 
+[install free and preview extensions](faq-extensions.md#difference). 
 
 ::: moniker-end
 
@@ -91,7 +91,7 @@ go to the Visual Studio Marketplace.
 
 	*	For free or preview extensions, click **Install**.
 	*	For extensions that you haven't paid for access yet, click **Buy**.
-	*	For extensions that you've already [paid for access](#paid-access), 
+	*	For extensions that you've already [paid for access](faq-extensions.md#paid-access), 
 	expand **Buy**, and select **Install for paid users**.
 
    <img alt="Install or buy the extension" src="./_img/get-tfs-extensions/connected/buy-test-manager-extension.png" style="border: 1px solid #CCCCCC" />
@@ -113,14 +113,14 @@ that you'll use to pay for extension access.
 0.	Finish installing your extension. 
 
 0.	If you installed a paid extension, 
-make sure to [assign the extension to users who need access](#assign-extension). 
+make sure to [assign the extension to users who need access](faq-extensions.md#install-request-assign-and-access-extensions). 
 Otherwise, you can go to your project collection to use your extension. 
 Also, remember tell your team about this extension, 
 so they can start using its capabilities too. 
 
 	<img alt="Extension installed" src="./_img/get-tfs-extensions/connected/assign-extension-to-users.png" style="border: 1px solid #CCCCCC" />
 
-   [Need help?](#get-support)
+   [Need help?](faq-extensions.md) 
 
 <a name="disconnected-tfs"></a>
 ## Install Team Foundation Server extensions when disconnected
@@ -139,7 +139,7 @@ can upload extensions.
 
 [Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) 
 with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
-can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
+can install extensions. If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 <a name="difference"></a>
 
@@ -223,7 +223,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 >[!NOTE] 
 > This section is only for adding pre-installed extensions (first-party), if you're installing extensions that
-> aren't pre-installed with TFS, head to the [Disconnected TFS section](#install-extensions-for-disconnected-tfs).
+> aren't pre-installed with TFS, head to the [Disconnected TFS section](#disconnected-tfs).
 
 With first-party extensions that come pre-installed with TFS, there is an alternate method of installation that prevents compatibility issues.
 
