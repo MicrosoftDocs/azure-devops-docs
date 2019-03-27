@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/22/2019
+ms.date: 03/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -95,7 +95,7 @@ Note that a user who isn't in your Azure AD is a "historic" user and can't sign 
 Your organization is now connected to your Azure AD.
 
 * Confirm that the process is complete. Sign out, and then open your browser in a private session and sign in to your organization with your Azure AD or work credentials.
-* If you created a temporary user to complete the migration, change the owner of the organization back to the initial user. Then, [delete the temporary Microsoft account](#close-the-temporary-msa-if-you-created-one), which is no longer needed.
+* If you created a temporary user to complete the migration, change the owner of the organization back to the initial user. Then, [delete the temporary Microsoft account](#close-the-temporary-msa), which is no longer needed.
 
 ## Inform users of the completed change
 
@@ -115,7 +115,7 @@ When you inform your users of the completed change, include the tasks that each 
     c. When the token is created, make a note of it or copy it to the clipboard. It can't be viewed again.
 
 3. If you use SSH tokens, [add new keys for the Azure AD user](../../repos/git/use-ssh-keys-to-authenticate.md).
-4. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Or, if you no longer need it, [close your Microsoft account](connect-organization-to-azure-ad.md#optional-close-the-temporary-msa-if-you-created-one).
+4. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Or, if you no longer need it, [close your Microsoft account](#close-the-temporary-msa).
 
 5. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/), you can add to the subscription a work or school account that's managed by Azure AD. The subscription must have Azure DevOps as a benefit. To learn how to link work or school accounts to Visual Studio with MSDN subscriptions, see [Managing subscriptions](/visualstudio/subscriptions/manage-vs-subscriptions).
 
@@ -142,8 +142,6 @@ Set up billing by using one of the following options:
 If your email address isn't changing and is part of your Azure AD tenant, you don't need a new MSA.
 
 Users' email addresses must be the same before and after the connection. For example, if users currently sign in to their Microsoft account (MSA) with the email address *jamalhartnett@fabrikam.com*, they sign in with the same email address as their Azure AD identity. We'll update this article when we have a solution for scenarios where email addresses must be changed.
-
-<a name="optional-close-the-temporary-msa-if-you-created-one"></a>
 
 ### Close the temporary MSA
 
