@@ -221,8 +221,6 @@
       href: build/ci-build-git.md
     - name: Build on multiple platforms
       href: get-started-multiplatform.md
-    - name: Build a repo using the classic editor
-      href: build/ci-build-github.md
     - name: Use Content Trust
       href: build/content-trust.md
   - name: Release
