@@ -40,7 +40,7 @@ There are a number of other features across Work, Code, Build, Release, and even
 - [Use Anaconda tools for data science in your pipeline](#use-anaconda-tools-for-data-science-in-your-pipeline)
 - [Simplify definitions with multiple agentless tasks](#simplify-definitions-with-multiple-agentless-tasks)
 - [Manage limits on self-hosted, concurrent CI/CD jobs](#manage-limits-on-self-hosted-concurrent-cicd-jobs)
-- [Streamline authentication from agent VMs to Azure Resource Manager](#streamline-authentication-from-agent-vms-to-azure-resource-manager)
+- [Streamline authentication from agent VMs in Azure to Azure Resource Manager](#streamline-authentication-from-agent-vms-in-azure-to-azure-resource-manager)
 
 ### Authentication
 
