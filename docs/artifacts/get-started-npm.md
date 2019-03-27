@@ -174,7 +174,7 @@ If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recom
 
 There are two options for setting up authentication in a build task:
 * [Without a task runner](#without-a-task-runner)
-* [With a task runner (for example, Gulp)](#with-a-task-runner-eg-make-gulp-work)
+* [With a task runner (for example, make Gulp work)](#with-a-task-runner-for-example-make-gulp-work)
 
 #### Without a task runner
 To set up npm authentication in a build task _without_ a task runner, use the following directions:
@@ -347,7 +347,7 @@ You can now publish the npm package:
 
 1. Run `npm publish`.
 
-> The `npm publish` command will work because of the credentials that you acquired in [Step 3](#step-3-set-up-your-npmrc).
+> The `npm publish` command will work because of the credentials that you acquired in [Step 3: Set up your .npmrc files](#step-3-set-up-your-npmrc-files).
 
 If you have followed all of the steps up to this point, package publishing should simply work.
 

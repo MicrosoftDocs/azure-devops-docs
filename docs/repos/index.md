@@ -28,7 +28,7 @@ featureFlags:
                         <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
-                                <a href="#start"> </a>
+                                <a href="#index1"> </a>
                                 <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/repos/get-started/index">
@@ -183,7 +183,7 @@ featureFlags:
                                         </a>
                                     </li>
                                 </ul>                                
-                                <a href="#index2"></a>
+                                <a href="#index4"></a>
                                 <h2 style="float: left; display: flex;">Additional resources</h2>
                                 <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>

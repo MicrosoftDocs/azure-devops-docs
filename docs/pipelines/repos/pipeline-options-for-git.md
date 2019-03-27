@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or Other Git repo), you have the following options.
+While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo), you have the following options.
 
 | Feature | Azure Pipelines | TFS 2017.2 and higher | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|

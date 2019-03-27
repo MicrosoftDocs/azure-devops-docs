@@ -1047,7 +1047,7 @@
     },
     {
       "source_path": "docs/articles/adopting-vsts.md",
-      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
+      "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
     },
     {
@@ -3772,7 +3772,7 @@
     },
     {
       "source_path": "docs/migrate-to-vsts-from-tfs.md",
-      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
+      "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
     },
     {
@@ -5902,7 +5902,7 @@
     },
     {
       "source_path": "docs/articles/migration-advanced-topics.md",
-      "redirect_url": "/azure/devops/articles/migration-overview",
+      "redirect_url": "/azure/devops/migrate/migration-overview",
       "redirect_document_id": false
     },
     {
@@ -7922,7 +7922,7 @@
     },
     {
       "source_path": "docs/collaborate/project-vision-status.md",
-      "redirect_url": "/azure/devops/project/wiki/project-vision-status",
+      "redirect_url": "/azure/devops/organizations/projects/project-vision-status",
       "redirect_document_id": false
     },
     {
@@ -11462,8 +11462,8 @@
     },
     {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
-      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/git-log-history-simplification.md",
@@ -11553,6 +11553,11 @@
     {
       "source_path": "docs/articles/migration-troubleshooting.md",
       "redirect_url": "/azure/devops/migrate/migration-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/build/ci-build-github.md",
+      "redirect_url": "/azure/devops/pipelines/get-started-designer",
       "redirect_document_id": false
     }
   ]
