@@ -54,13 +54,12 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 Depending on the platform you work from to connect to GitHub, you have a choice of the credentials you use. The recommended authentication method in all instances is <strong>OAuth</strong>.
 
 
-<table valign="top">
-<tbody valign="bottom">
-<th>
-<td width="30%">Platform</td> 
-<td width="35%">GitHub </td> 
-<td width="35%">GitHub Enterprise Server </td> 
-</th>
+<table>
+<tr valign="bottom">
+<th width="30%">Platform</th> 
+<th width="35%">GitHub </th> 
+<th width="35%">GitHub Enterprise Server </th> 
+</tr>
 <tbody valign="top">
 <tr>
 <td>Azure DevOps Services </td>
@@ -78,7 +77,6 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 </ul>
 </td>
 </tr>
-
 <tr>
 <td>Azure DevOps Server 2019 </td>
 <td>
@@ -99,6 +97,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 </table>
  
 <a id="github-oauth" />
+
 ::: moniker range="azure-devops"
 
 ## Add a GitHub connection using OAuth 
@@ -167,7 +166,7 @@ We recommend that you use OAuth to connect to your GitHub repository. However, i
 
 ::: moniker-end
 
-<a id="server-github-ent-oauth-register />
+<a id="server-github-ent-oauth-register" />
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -177,7 +176,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ::: moniker-end
 
-
+<a id="register-services-oauth" />
 ::: moniker range="azure-devops"
 
 ###  Register Azure DevOps Services   
@@ -215,6 +214,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ::: moniker-end
 
+<a id="register-server-oauth" />
 
 ::: moniker range="azure-devops-2019"
 
@@ -239,7 +239,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 	For the <strong>Authorization callback URL</strong>, use the following pattern to construct the URL. 
 
-	`{Azure DevOps Server Public Url}/{Collection Name}/ _admin/oauth2/callback`
+	`{Azure DevOps Server Public Url}/{Collection Name}/_admin/oauth2/callback`
 
 	For example: 
 
@@ -326,7 +326,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 	#### Connect using OAuth  
 
-	Choose the configuration that you set up in step 1, and then choose <strong>Connect</strong>. 
+	Choose the configuration that you set up in [Register Azure DevOps in GitHub as an OAuth App](#register-services-oauth), and then choose <strong>Connect</strong>. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![New GitHub Enterprise connection, OAuth dialog](_img/github-ent/new-github-ent-connect-oauth.png)  
@@ -379,7 +379,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 	#### Connect using OAuth  
 
-	Choose the configuration that you set up in step 1, and then choose <strong>Connect</strong>. 
+	Choose the configuration that you set up in [Register Azure DevOps in GitHub as an OAuth App](#register-server-oauth), and then choose <strong>Connect</strong>. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![New GitHub Enterprise connection, OAuth dialog](_img/github-ent/new-github-ent-connect-oauth.png)  
