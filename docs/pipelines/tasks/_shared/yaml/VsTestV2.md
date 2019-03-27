@@ -15,7 +15,7 @@
     #runAllTestsAfterXBuilds: '50' # Optional
     #uiTests: false # Optional
     #vstestLocationMethod: 'version' # Optional. Options: version, location
-    #vsTestVersion: 'latest' # Optional. Options: latest, 15.0, 14.0, toolsInstaller
+    #vsTestVersion: 'latest' # Optional. Options: latest, 16.0, 15.0, 14.0, toolsInstaller
     #vstestLocation: # Optional
     #runSettingsFile: # Optional
     #overrideTestrunParameters: # Optional

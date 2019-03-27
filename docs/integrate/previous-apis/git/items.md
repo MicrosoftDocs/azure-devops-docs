@@ -299,7 +299,7 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
 
 ### Multiple items
 To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body.
-You can specify the [version](#getaspecificversion) and [recursion level](#mutlipleitems) for each item, too.
+You can specify the [version](#getaspecificversion) and [recursion level](#afolderanditschildren) for each item, too.
 
 #### Sample request
 

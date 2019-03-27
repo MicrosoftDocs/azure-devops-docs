@@ -57,7 +57,7 @@ You can choose from the following repository types:
 |-|-|-|-|-|
 | Azure Repos Git           |Yes|Yes|Yes|Yes|
 | Azure Repos TFVC          |No|Yes|Yes|Yes|
-| Bitbucket Cloud           |No|Yes|No|No|
+| Bitbucket Cloud           |Yes|Yes|No|No|
 | Other Git (generic)       |No|Yes|Yes|Yes|
 | GitHub                    |Yes|Yes|No|No|
 | GitHub Enterprise Server  |Yes|Yes|TFS 2018.2 and higher|No|
