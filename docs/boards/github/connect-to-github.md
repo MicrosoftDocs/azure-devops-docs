@@ -57,7 +57,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 <table>
 <tr valign="bottom">
 <th width="27%">Platform</th> 
-<th width="35%">GitHub </th> 
+<th width="35%">GitHub.com </th> 
 <th width="38%">GitHub Enterprise Server </th> 
 </tr>
 <tbody valign="top">
@@ -78,7 +78,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 </td>
 </tr>
 <tr>
-<td>Azure DevOps Server 2019 </td>
+<td>Azure DevOps Server</td>
 <td>
 <ul>
 <li>Not supported</li>
@@ -110,7 +110,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 	> ![Project Settings>Integrations](_img/github/open-project-settings-github-connections.png)   
 
 	If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat).
-	If connecting to a GitHub Enterprise Server, see []().
+	If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
 0. Enter your GitHub account credentials. Choose an account for which you are an administrator for the repositories you want to connect to. 
 
