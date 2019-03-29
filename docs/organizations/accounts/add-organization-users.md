@@ -10,7 +10,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 03/28/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -27,16 +27,13 @@ The following types of users can join your organization for free:
 
 [Need more users with Basic features or Visual Studio subscriptions?](add-basic-or-vs-subscription-users.md)
 
-> [!NOTE]
->If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, learn how to [add external users to Azure DevOps](add-external-user.md).
-
 ## How *access* differs from *permissions*
 
 Features that are available to users are controlled by access levels  - the full set of organization resources that a user is entitled to access. Permissions control which of these organization resources the user can act on. To learn more, see [Default permissions and access for Azure DevOps](../../security/permissions-access.md).
 
 ## Prerequisites
 
-You need project collection administrator or organization owner permissions. For more information, see [Quickstart: Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+You must have project collection administrator or owner permissions in Azure DevOps. For more information, see [Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Add users to your organization
 
@@ -46,9 +43,7 @@ using this Users view. When you add users, each receives a notification email wi
 link to the organization page.
 
  > [!NOTE]
- > If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md) to
- > Azure AD. On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an
- > existing Microsoft account**. After you complete those steps, use the following steps to add the external Azure AD
+ > If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md). On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an existing Microsoft account**. After you complete those steps, use the following steps to add the Azure AD
  > user to Azure DevOps.
 
 To give other users access to your organization, add their email addresses.
@@ -63,7 +58,7 @@ To give other users access to your organization, add their email addresses.
 
    ![Select Add new users](_img/_shared/add-new-users.png)
 
-4. Complete the form.
+4. Enter information into the form.
 
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.png)

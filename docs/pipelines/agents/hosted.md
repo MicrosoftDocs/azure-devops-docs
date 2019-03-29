@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/15/2019
+ms.date: 03/27/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -100,6 +100,7 @@ Microsoft-hosted agents:
 * Can run jobs for up to 360 minutes (6 hours).
 * Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
+* (Linux only) Run steps in a cgroup that offers 6 GB of physical memory and 13 GB of total memory
 
 Microsoft-hosted agents do not offer:
 
@@ -114,7 +115,7 @@ If Microsoft-hosted agents don't meet your needs, then you can [deploy your own 
 
 When you use a Microsoft-hosted agent, always use [variables](../build/variables.md)
 to refer to the build environment and agent resources. For example, don't
-hardcode the drive letter or folder that contains the repository. The precise
+hard-code the drive letter or folder that contains the repository. The precise
 layout of the hosted agents is subject to change without warning.
 
 ## Agent IP ranges
