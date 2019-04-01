@@ -54,19 +54,6 @@ When you're done, you'll have a working YAML file (`azure-pipeines.yml`) in your
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> You can make this work in Azure DevOps Server 2019, but you'll need to create the YAML file yourself. If you're a new user, you might have a better learning experience by first trying this procedure for free on Azure Pipelines ([sign-up](../get-started/pipelines-sign-up.md)). Then change the selector in the upper-left corner of this page to **Azure DevOps Services**.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML builds aren't available on TFS.
-
-::: moniker-end
-
 ::: moniker range="< azure-devops"
 
 1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Your first build and release](../get-started-designer.md) and select the **Empty** template. (Do **not** select the **Docker** template.)
