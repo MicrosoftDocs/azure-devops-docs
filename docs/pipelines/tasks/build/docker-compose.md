@@ -29,14 +29,14 @@ See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>containerregistrytype</code><br/>(Container registry type)</td><td>(Optional) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
 <tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.</td></tr>
-<tr><td><code>azureContainerRegistry</code><br/>(Azure container registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
+<tr><td><code>azureContainerRegistry</code><br/>(Azure container registry)</td><td>(Required) Name of the Azure Container Registry. Taken from the ACR "Login name" in Azure.</td></tr>
 </table>
 
 This YAML example specifies the inputs for Azure Container Registry:
 
 ```YAML
 variables:
-    azureContainerRegistry: Contoso
+    azureContainerRegistry: contoso.azurecr.io
     azureSubscriptionEndpoint: Contoso
 steps:
 - task: DockerCompose@0
