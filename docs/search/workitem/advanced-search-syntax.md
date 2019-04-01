@@ -39,6 +39,8 @@ By using Work Item Search you can:
   The Work Item Search interface integrates with familiar controls in the **Work** hub,
   letting you view, edit, comment, share, and much more.
 
+>> NOTE: You cannot search code in forked repositories. 
+
 <a name="acrossfield"></a>
 ## Full text search across all fields
 
