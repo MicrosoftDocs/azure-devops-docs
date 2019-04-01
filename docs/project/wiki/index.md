@@ -67,6 +67,7 @@ Wikis and repository README files are great ways to share information with your 
 - [View wiki history and revert](wiki-view-history.md)
 - [Filter or print wiki content](filter-print-wiki.md)  
 - [Search wiki content](search-wiki.md)
+- [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
 - [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)  
 - [Update wiki pages offline](wiki-update-offline.md)  
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
