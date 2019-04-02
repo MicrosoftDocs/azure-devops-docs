@@ -230,10 +230,10 @@ variables:
 steps:
 - script: |
     docker build -t $(dockerId)/$(imageName) .
-    docker login -u $(dockerId) -p $(pswd)
+    docker login -u $(dockerId) -p $PSWD
     docker push $(dockerId)/$(imageName)
   env:
-    pswd: $(dockerPassword)        # Define dockerPassword in the Variables tab of this pipeline in Pipelines page of web interface
+    PSWD: $(dockerPassword)        # Define dockerPassword in the Variables tab of this pipeline in Pipelines page of web interface
 ```
 
 To build and push the image to Azure Container Registry, use the following snippet:
@@ -246,10 +246,10 @@ variables:
 steps:
 - script: |
     docker build -t $(dockerId).azurecr.io/$(imageName) .
-    docker login -u $(dockerId) -p $(pswd) $(dockerId).azurecr.io
+    docker login -u $(dockerId) -p $PSWD $(dockerId).azurecr.io
     docker push $(dockerId).azurecr.io/$(imageName)
   env:
-    pswd: $(dockerPassword)        # Define dockerPassword in the Variables tab of this pipeline in Pipelines page of web interface
+    PSWD: $(dockerPassword)        # Define dockerPassword in the Variables tab of this pipeline in Pipelines page of web interface
 ```
 
 ::: moniker-end
