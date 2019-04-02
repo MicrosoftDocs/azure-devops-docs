@@ -297,6 +297,8 @@ steps:
     testResultsFiles: '**/*.trx'
 ```
 
+::: moniker-end
+
 ::: moniker range="< azure-devops"
 
 Use the **.NET Core** task with **Command** set to **test**. 
