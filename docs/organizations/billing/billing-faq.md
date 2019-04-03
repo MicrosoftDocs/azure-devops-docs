@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 04/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -68,6 +68,10 @@ A: Not at all. If you only want to buy Azure DevOps via Azure, you can do that.
 ### Q: Can tags be applied to organizations from the Azure portal?
 
 A: No, but this feature is in our backlog to add in the future.
+
+### Q: How are paid extensions changing in the Azure DevOps Marketplace in July 2019?
+
+A: Microsoft is ending support for purchasing 3rd party paid Azure DevOps extensions through your Azure bill on July 1st, 2019. Going forward, we're encouraging our publishers to offer paid access to their services directly. We're working closely with publishers to help existing customers transition to the new model and will communicate to specific customers as publishers are ready.
 
 ## Enterprise Agreement customers
 
