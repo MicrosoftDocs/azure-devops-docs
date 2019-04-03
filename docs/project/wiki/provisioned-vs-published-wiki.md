@@ -21,7 +21,7 @@ ms.date: 03/05/2019
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=866310 -->
 
-With publish code as wiki, you have the following options for maintaining wiki content.
+In Azure DevOps, you have the following options for maintaining wiki content.
 
 - [Provision a wiki for your team project](wiki-create-repo.md). This option supports only one wiki for the team project.
 - [Publish Markdown files defined in a Git repository to a wiki](publish-repo-to-wiki.md). With this option, you can maintain several versioned wikis to support your content needs, although it's available only if Azure Repos is enabled.
