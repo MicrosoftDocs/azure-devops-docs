@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/19/2019
+ms.date: 04/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -300,11 +300,13 @@ We update the agent software every few weeks in Azure Pipelines.
 We indicate the agent version in the format `{major}.{minor}`.
 For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
 
-When a newer version of the agent is only different in _minor_ version, it is automatically upgraded by Azure Pipelines.
-This upgrade happens when one of the tasks requires a newer version of the agent.
+Microsoft-hosted agents are always kept up to date.
+If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically by Azure Pipelines.
+An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
-If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you have to manually upgrade the agents.
+If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your organization.
+Your pipelines won't run until they can target a compatible agent.
 
 ::: moniker-end
 
@@ -314,13 +316,14 @@ We update the agent software with every update in Azure DevOps Server and TFS.
 We indicate the agent version in the format `{major}.{minor}`.
 For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
 
-When your Azure DevOps Server or TFS server has a newer version of the agent, and that newer agent is only different in _minor_ version, it can be automatically upgraded.
-This upgrade happens when one of the tasks requires a newer version of the agent.
+When your Azure DevOps Server or TFS server has a newer version of the agent, and that newer agent is only different in _minor_ version, it can usually be automatically upgraded.
+An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 Starting with Azure DevOps Server 2019, you don't have to wait for a new server release.
 You can [upload a new version of the agent to your application tier](#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool), and that version will be offered as an upgrade.
 
-If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you have to manually upgrade the agents.
+If you run the agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your project collection.
+Your pipelines won't run until they can target a compatible agent.
 
 ::: moniker-end
 
