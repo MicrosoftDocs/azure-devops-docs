@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 03/20/2019
+ms.date: 04/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -158,7 +158,7 @@ trigger: none
 >[!IMPORTANT]
 >When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
 
-For more information, see [Trigger](../yaml-schema.md#trigger) in the [YAML schema](../yaml-schema.md).
+For more information, see [Triggers](../yaml-schema.md#triggers) in the [YAML schema](../yaml-schema.md).
 
 ::: moniker-end
 
