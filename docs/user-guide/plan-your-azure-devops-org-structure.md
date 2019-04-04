@@ -12,7 +12,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: Conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/26/2019
+ms.date: 04/04/2019
 ---
 
 # Plan your organizational structure
@@ -84,7 +84,7 @@ Within an organization, you can do either of the following approaches:
 * Create a single project that contains many repos and teams
 * Create many projects, each with its own set of teams, repos, builds, work items, and other elements
 
-Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization has its own Azure AD tenancy.
+Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization is connected to a single Azure AD tenant. A single Azure AD tenant can be connected to many Azure DevOps organizations.
 
 #### Single project
 
