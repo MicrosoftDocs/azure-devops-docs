@@ -8,11 +8,11 @@ ms.assetid: 248a9282-487c-4ec9-b0d1-0eb1da981157
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 09/10/2018
+ms.date: 04/08/2019
 monikerRange: '> tfs-2015'
 ---
 
-# Quickstart: Buy and install paid extensions
+# Buy and install paid extensions
 
 In this quickstart, you learn how to do the following:
 
@@ -22,13 +22,12 @@ In this quickstart, you learn how to do the following:
 
 ## Prerequisites
 
-The first time that you set up billing for your organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need the following:
+Ensure the following is true for the user who's buying and installing paid extensions:
 
-1. [Azure DevOps Services project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
-2. [The **owner** or **contributor** role on your Azure subscription](../organizations/billing/add-backup-billing-managers.md)
+* User has [project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-organization-owner)
+* User has [an Azure subscription that you can use to purchase](../organizations/billing/add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your organization, you only need the owner or contributor role on your Azure subscription.
-
 
 ## Find and buy the extension
 
