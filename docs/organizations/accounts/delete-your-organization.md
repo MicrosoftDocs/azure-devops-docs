@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 04/04/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -34,21 +34,6 @@ When you delete your organization, note the following:
   You're still charged for any paid users and services used during this billing cycle. Billing stops after the current cycle ends.
 
 To delete your organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
-
-## Prerequisites
-
-If your organization uses an Azure subscription to bill purchases, you must first remove billing from your organization in the Azure portal before you can delete your organization in Azure DevOps.
-
-To remove billing from your organization, you must be a project collection administrator.
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. In the search box, enter *Azure DevOps*. In the list, select **Azure DevOps organizations**.
-3. Select the organization you are deleting.
-4. Choose **Remove billing**. Your Azure subscription is removed from your organization.
-
-   ![Screenshot of the Azure portal, with Remove billing highlighted](_img/_shared/azure-portal-remove-billing.png)
-
-  [Need help?](faq-delete-restore-organization.md#get-support)
 
 ## Delete organization
 

@@ -25,10 +25,10 @@ As your team grows and contracts, you can increase or decrease the number of pai
 
 ## Prerequisites
 
-Whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need the following:
+Ensure the following is true for the user who's making a change:
 
-* [Project collection administrator or organization owner permissions](billing-faq.md#find-owner).
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md). To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
+* User has [project collection administrator or organization owner permissions](billing-faq.md#find-owner).
+* User has [the **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md). To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
 
 ## Update the number of paid users for your organization
 
