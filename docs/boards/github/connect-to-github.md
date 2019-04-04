@@ -194,10 +194,10 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 0. Fill out the form to register your Azure DevOps Server application.  
 
-	For the <strong>Homepage URL</strong>, specify the <strong>Public URL</strong> of your organization.  
+	For the <strong>Homepage URL</strong>, specify the <strong>Organization URL</strong> of your organization.  
 	For the <strong>Authorization callback URL</strong>, use the following pattern to construct the URL.  
 
-	`{Azure DevOps Services Public Url}/_admin/oauth2/callback`
+	`{Azure DevOps Services Organization URL}/_admin/oauth2/callback`
 
 	For example: 
 
@@ -311,6 +311,9 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 ::: moniker range="azure-devops"
 
 ## Connect Azure DevOps Services to GitHub Enterprise Server
+
+> [!IMPORTANT]  
+> To connect Azure DevOps Services to your GitHub Enterprise Server, your GitHub Enterprise Server must be sufficiently accessible from the Internet.
 
 0. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
 
