@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/11/2019
+ms.date: 03/26/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -236,7 +236,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
     Not sure which system to use? Learn more about 
     [Git](../../repos/git/overview.md) or [TFVC](../../repos/tfvc/overview.md).
 
-    After you've created your project, you can [add repositories](#git-and-tfvs-repos).
+    After you've created your project, you can [add repositories](#add-a-repository).
 
 10. Unless your project collection is configured to support a SharePoint project portal, you're done.
 

@@ -15,6 +15,7 @@ ms.date: 02/11/2019
 
 
 # Fix "Ordering backlog items is disabled" 
+
 <a id="display-hierarchy">  </a>
 
 
@@ -27,10 +28,16 @@ When a product, portfolio, or sprint backlog contains same-category, nested work
 To fix this, take the following actions: 
 
 1. Choose the **Create query** link on the backlog page. 
-    
-	![Create query of backlog](_img/overview/backlogs-boards-create-query.png)
 
-2. Open the query (click the link that appears). 
+	::: moniker range=">= azure-devops-2019"
+	> [!div class="mx-imgBorder"]  
+	> ![Create query of backlog](_img/resolve/choose-create-query.png)   
+	::: moniker-end
+	::: moniker range="<= tfs-2018"
+	![Create query of backlog](_img/overview/backlogs-boards-create-query.png)
+	::: moniker-end
+
+2. Open the query (choose the link that appears). 
 
 3. Review the list of items to determine which items are nested. For example, the following query shows that a bug is a child of a user story. Because the team has configured their backlog to display user stories and bugs at the same level (Requirements category), this corresponds to a nested item that disables the ordering feature. 
 
@@ -41,7 +48,8 @@ To fix this, take the following actions:
 5. Return to the backlog page and refresh the page. 
 
 
-<a id="nested">  </a>
+<a id="nested" > </a>
+
 ## How backlogs and boards display hierarchical (nested) items 
  
 [!INCLUDE [temp](../_shared/display-leaf-nodes.md)]  
@@ -50,7 +58,8 @@ Use the Feature work item type when you want to group user stories (Agile), prod
 
 ![Create work items using different hierarchy](../../reference/_img/create-hierarchy-with-different-wits.png)  
 
-<a id="leaf-nodes">  </a>
+<a id="leaf-nodes" > </a>  
+
 ## When you track bugs as requirements
 
 As mentioned previously, [each team can choose how they want to track bugs](../../organizations/settings/show-bugs-on-backlog.md) to behave like requirements, or tasks, or as neither. 
@@ -67,7 +76,8 @@ The child bug, *Save takes too long*, appears on the Kanban board, but not the p
 
 ![Kanban board, leaf node bug appears](../../reference/_img/bugs-appear-on-board.png)  
 
-<a id="bugs-as-tasks">  </a>
+<a id="bugs-as-tasks" > </a>
+
 ## When you track bugs as tasks
 
 When you choose to have bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them accordingly on the sprint backlog and taskboard.  

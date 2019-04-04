@@ -10,7 +10,7 @@ description: In the Sprint 141 Update of Azure DevOps Services, you can now incl
 
 # Pipeline compliance and security validations - Sprint 141 Update
 
-In the **Sprint 141 Update** of Azure DevOps Services, you can now include [compliance and security validations in your Azure Pipelines](#release-pipelines-include-compliance-and-security-validations). In Azure Repos, you can [change the target branch of pull requests](#change-the-target-branch-of-a-pull-request).
+In the **Sprint 141 Update** of Azure DevOps Services, you can now include [compliance and security validations in your Azure Pipelines](#azure-policy-compliance-and-security-validations-in-pipelines). In Azure Repos, you can [change the target branch of pull requests](#change-the-target-branch-of-a-pull-request).
 
 Check out the [Features](#features) list below for more.
 

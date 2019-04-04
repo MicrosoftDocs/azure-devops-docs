@@ -72,10 +72,32 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
-0. To view a portfolio backlog, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
-1. 
+1. To view a portfolio backlog, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
+
+	![Open Features Kanban board](_img/features-epics/open-features-board-standard.png)
+
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+
+	![Open Work when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
+
+2.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](/azure/devops/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png)  
+
+3. Your Kanban board for the selected portfolio backlog displays.  
+
+	![Kanban board, Agile template](_img/features-epics/features-board-standard.png)   
+
+::: moniker-end
+
+
+::: moniker range="<= tfs-2015"
+
+1. To view a portfolio backlog, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Features** or **Epics**, and then (5) **Board**.  
+
 	![Open Features Kanban board](_img/features-epics/open-features-board-standard.png)
 
 	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
@@ -83,15 +105,9 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/_img/kanban-quickstart-reduced-screensize.png)   
 
 0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
-::: moniker-end  
-	::: moniker range=">= tfs-2017"  
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](/azure/devops/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png)  
-	::: moniker-end  
-	::: moniker range=">= tfs-2013 <= tfs-2015"  
+
 	![Choose another team from the project menu](/azure/devops/boards/sprints/_img/capacity/vso-team-selector.png)  
-	::: moniker-end  
-::: moniker range="<= tfs-2018"  
+
 0. Your Kanban board for the selected portfolio backlog displays.  
 
 	![Kanban board, Agile template](_img/features-epics/features-board-standard.png)   

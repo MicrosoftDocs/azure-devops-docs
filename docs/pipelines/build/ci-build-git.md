@@ -9,7 +9,7 @@ ms.author: mlearned
 author: mlearned
 ms.manager: jillfra
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
-ms.date: 10/19/2018
+ms.date: 04/02/2019
 ms.custom: "mvc, seodec18"
 monikerRange: '>=tfs-2017'
 ---
@@ -45,7 +45,7 @@ A common workflow with Git is to create temporary branches from your master bran
 
 ::: moniker range="azure-devops"
 
-Unless you specify a [trigger](../yaml-schema.md#trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features/*` branches to be automatically built.
+Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features/*` branches to be automatically built.
 
 ```yaml
 trigger:

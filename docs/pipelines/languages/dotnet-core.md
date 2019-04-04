@@ -10,7 +10,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
 ms.custom: seodec18
-ms.date: 08/15/2018
+ms.date: 03/27/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -20,11 +20,7 @@ monikerRange: '>= tfs-2017'
 
 This guidance explains how to automatically build and test .NET Core projects, and then deploy or publish to targets.
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
-This guidance explains how to build .NET Core projects.
 
 ::: moniker range="tfs-2017"
 
@@ -36,45 +32,31 @@ This guidance explains how to build .NET Core projects.
 
 ## Example
 
-This example shows how to build a .NET Core project. To start, import this repo into Azure Repos or TFS, or fork it into GitHub:
+The following code is a simple ASP.NET Core MVC project. To get started, fork this repo in GitHub, or import it into Azure Repos.
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository.
-You can use this file to build the app.
-
 Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a pipeline for the sample app.
+When you're done with that topic, you'll have a working YAML file (`azure-pipeines.yml`) in your repository that you can continue to modify by following the instructions in this topic. To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
 
-To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
+> [!Tip]
+> To make changes to the YAML file as described in this topic, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-
-YAML builds aren't yet available on TFS.
-
-::: moniker-end
-
-# [Designer](#tab/designer)
-
-::: moniker range="< azure-devops"
-> [!NOTE]
-> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you're using. Also, you'll need to set up a self-hosted agent and possibly also install software. If you're a new user, you might have a better learning experience if you try this procedure out first by using a free Azure DevOps Services organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps Services**.  
-::: moniker-end
 
 * After you have the sample code in your own repository, create a pipeline by using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
 * Save the pipeline and queue a build to see it in action.
 
----
-
 Read through the rest of this topic to learn some of the common ways to customize your .NET Core pipeline.
+
+::: moniker-end
 
 ## Build environment
 
@@ -83,46 +65,28 @@ Read through the rest of this topic to learn some of the common ways to customiz
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
 The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
-# [YAML](#tab/yaml)
-
-Add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
+Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
-# [Designer](#tab/designer)
-
-Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Ubuntu 1604** agent pool, or the **Hosted macOS Preview** pool.
-To change the OS on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent pool** that you want to use.
-
----
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
 
-# [YAML](#tab/yaml)
-
-If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add the following snippet to your `azure-pipelines.yml` file:
+If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file:
 
 ```yaml
+# do this before all your .NET Core tasks
+steps:
 - task: DotNetCoreInstaller@0
   inputs:
     version: '2.1.300' # replace this value with the version that you need for your project
+# ...
 ```
-
-# [Designer](#tab/designer)
-
-If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, take the following steps:
-
-1. In the pipeline, select **Tasks**. Choose the job that runs your build tasks. Then select **+** to add a new task to that job.
-
-1. In the task catalog, find and add the **.NET Core Tool Installer** task.
-
-1. Select the task and specify the version of the .NET Core SDK or runtime that you want to install.
-
----
 
 > [!TIP]
 >
@@ -195,19 +159,20 @@ you get the benefit of using the package cache.
 
 ::: moniker-end
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"  
 
 To restore packages, use the `dotnet restore` command:
 
 ```yaml
+steps:
 - script: dotnet restore
 ```
 
 Or to restore packages from a custom feed, use the **.NET Core** task:
 
 ```yaml
+# do this before your build tasks
+steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: restore
@@ -215,16 +180,14 @@ Or to restore packages from a custom feed, use the **.NET Core** task:
     feedsToUse: config
     nugetConfigPath: NuGet.config    # Relative to root of the repository
     externalFeedCredentials: <Name of the NuGet service connection>
+# ...
 ```
 
 For more information about NuGet service connections, see [publish to NuGet feeds](../artifacts/nuget.md).
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds aren't yet available on TFS.  
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 1. Select **Tasks** in the pipeline. Select the job that runs your build tasks. Then select **+** to add a new task to that job.
 
@@ -238,38 +201,42 @@ YAML builds aren't yet available on TFS.
 >
 > Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service connection.
 
----
+::: moniker-end
 
 ## Build your project
 
-You build your .NET Core project by running the `dotnet build` command in your pipeline.
-
-# [YAML](#tab/yaml)
+You build your .NET Core project either by running the `dotnet build` command in your pipeline or by using the .NET Core task.
 
 ::: moniker range="azure-devops"
 
 To build your project by using the .NET Core task, add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-- script: dotnet build # Include additional options such as --configuration to meet your need
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration Release' # Update this to match your need
 ```
 
-You can run any `dotnet` command in your pipeline. The following example shows how to install and use a .NET global tool, [dotnetsay](https://www.nuget.org/packages/dotnetsay/):
+You can run any custom dotnet command in your pipeline. The following example shows how to install and use a .NET global tool, [dotnetsay](https://www.nuget.org/packages/dotnetsay/):
 
 ```yaml
-- script: dotnet tool install -g dotnetsay
-- script: dotnetsay
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'Install dotnetsay'
+  inputs:
+    command: custom
+    projects: '**/*.csproj'
+    custom: tool
+    arguments: 'install -g dotnetsay'
 ```
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-
-YAML builds aren't yet available on TFS.
-
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 ### Build
 
@@ -294,21 +261,21 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
 2. Add a **Command Line** task and set the following properties:
    * **Script:** `dotnetsay`.
 
----
+::: moniker-end
 
 ## Run your tests
 
-Use the **.NET Core** task to run unit tests in your .NET Core solution by using testing frameworks like MSTest, xUnit, and NUnit. 
-One benefit of using this built-in task instead of a script to run your tests is that the results of the tests are automatically published to the server. 
-These results are then made available to you in the build summary and can be used for troubleshooting failed tests and test-timing analysis.
-
-# [YAML](#tab/yaml)
+If you have test projects in your repository, then use the **.NET Core** task to run unit tests by using testing frameworks like MSTest, xUnit, and NUnit. For this functionality, the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher.
+Test results are automatically published to the service. These results are then made available to you in the build summary and can be used for troubleshooting failed tests and test-timing analysis.
 
 ::: moniker range="azure-devops"
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
+steps:
+# ...
+# do this after other tasks such as building
 - task: DotNetCoreCLI@2
   inputs:
     command: test
@@ -319,6 +286,9 @@ Add the following snippet to your `azure-pipelines.yml` file:
 An alternative is to run the `dotnet test` command with a specific logger and then use the **Publish Test Results** task:
 
 ```yaml
+steps:
+# ...
+# do this after your tests have run
 - script: dotnet test <test-project> --logger trx
 - task: PublishTestResults@2
   condition: succeededOrFailed()
@@ -331,29 +301,25 @@ An alternative is to run the `dotnet test` command with a specific logger and th
 
 ::: moniker range="< azure-devops"
 
-YAML builds aren't yet available on TFS.
-
-::: moniker-end
-
-# [Designer](#tab/designer)
-
 Use the **.NET Core** task with **Command** set to **test**. 
 **Path to projects** should refer to the test projects in your solution.
 
----
+::: moniker-end
+
 
 ## Collect code coverage 
 
 If you're building on the Windows platform, code coverage metrics can be collected by using the built-in coverage data collector. For this functionality, the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
 If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The **.coverage** file can be downloaded from the build summary for viewing in Visual Studio.
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
+steps:
+# ...
+# do this after other tasks such as building
 - task: DotNetCoreCLI@2
   inputs:
     command: test
@@ -364,6 +330,9 @@ Add the following snippet to your `azure-pipelines.yml` file:
 If you choose to run the `dotnet test` command, specify the test results logger and coverage options. Then use the [Publish Test Results](../tasks/test/publish-test-results.md) task:
 
 ```yaml
+steps:
+# ...
+# do this after your tests have run
 - script: dotnet test <test-project> --logger trx --collect "Code coverage"
 - task: PublishTestResults@2
   inputs:
@@ -375,12 +344,6 @@ If you choose to run the `dotnet test` command, specify the test results logger 
 
 ::: moniker range="< azure-devops"
 
-YAML builds aren't yet available on TFS.
-
-::: moniker-end
-
-# [Designer](#tab/designer)
-
 1. Add the .NET Core task to your build job and set the following properties:
 
    * **Command**: test.
@@ -389,7 +352,7 @@ YAML builds aren't yet available on TFS.
 
 2. Ensure that the **Publish test results** option remains selected.
 
----
+::: moniker-end
 
 > [!TIP]
 > If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
@@ -400,8 +363,6 @@ YAML builds aren't yet available on TFS.
 After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package, 
 or package the build output into a .zip file to be deployed to a web application.
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
 
 ### Publish artifacts to Azure Pipelines
@@ -409,6 +370,9 @@ or package the build output into a .zip file to be deployed to a web application
 To simply publish the output of your build to Azure Pipelines, add the following code to your `azure-pipelines.yml` file:
 
 ```yaml
+steps:
+# ...
+# do this near the end of your pipeline in most cases
 - task: PublishBuildArtifacts@1
 ```
 
@@ -419,8 +383,10 @@ This code takes all the files in `$(Build.ArtifactStagingDirectory)` and upload 
 To create and publish a NuGet package, add the following snippet:
 
 ```yaml
+steps:
+# ...
+# do this near the end of your pipeline in most cases
 - script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
-
 - task: NuGetCommand@2
   inputs:
     command: push
@@ -437,6 +403,10 @@ For more information about versioning and publishing NuGet packages, see [publis
 To create a .zip file archive that's ready for publishing to a web app, add the following snippet:
 
 ```yaml
+steps:
+# ...
+# do this after you've built your app, near the end of your pipeline in most cases
+# for example, you do this before you deploy to an Azure web app on Windows
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
@@ -446,15 +416,10 @@ To create a .zip file archive that's ready for publishing to a web app, add the 
 ```
 
 To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).  
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-
-YAML builds aren't yet available on TFS.
-
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 ### Publish artifacts to Azure Pipelines
 
@@ -476,7 +441,7 @@ If you want to publish your code to a NuGet feed, take the following steps:
 
 1. To publish this archive to a web app, see [Azure Web Apps deployment](../targets/webapp.md).
 
----
+::: moniker-end
 
 ## Build a container
 

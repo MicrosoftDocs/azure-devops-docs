@@ -31,7 +31,7 @@ ms.topic: include
 
 <tr>
 <td>Agent.JobName</td>
-<td>The display name of the running job.</td>
+<td>The name of the running job. This will usually be "Job" or "__default", but in multi-config scenarios, will be the configuration.</td>
 </tr>
 
 <tr>

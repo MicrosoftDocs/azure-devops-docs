@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelli
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/18/2018
+ms.date: 03/26/2019
 ---
 
 # Calculate time-in-state for an existing Analytics view
@@ -346,7 +346,7 @@ Using the *State Previous* column, we can flag the rows for each work item where
 * Creation of a work item is considered a state transition
 
 > [!IMPORTANT]  
-> Requires that you have added the [*State Previous*](#state-previous) calculated column to the table.
+> Requires that you have added the [*State Previous*](#add-state-previous) calculated column to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
@@ -367,7 +367,7 @@ IF (
 With *State Previous* and *State Changed* calculated columns, you can create a column that will help illustrate the State Flow for a given work item. Creating this column is optional for the purposes of this article.
 
 > [!IMPORTANT]  
-> Requires that you have added the [State Previous](#state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
+> Requires that you have added the [State Previous](#add-state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
