@@ -330,7 +330,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	To create a PAT, see [Creating a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).
 
 	> [!TIP]  
-	> When creating your GitHub PAT, make sure that you include these scopes: `repo, admin:repo_hook, read:user, user:email`. 
+	> When creating your GitHub Enterprise Server PAT, make sure that you include these scopes: `repo, admin:repo_hook, read:user, user:email`. 
 
 	### Connect using OAuth  
 
