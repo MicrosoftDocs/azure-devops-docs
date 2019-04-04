@@ -56,7 +56,7 @@ And all users must sign in with Microsoft accounts.
 
 You need the following:
 
-* [Ownership of the organization](faq-add-delete-users.md#find-owner) that you want to connect to Azure AD.
+* [Ownership of the organization](faq-add-delete-users.md#find-organization-owner) that you want to connect to Azure AD.
 
 * A ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/),such as a [Pay-As-You-Go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/),associated with Azure Active Directory and at least co-administrator permissions for your subscription.
 

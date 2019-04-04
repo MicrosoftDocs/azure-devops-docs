@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/21/2018
+ms.date: 04/04/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,54 +18,56 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-If you want to use a different Azure subscription to bill purchases for your organization, you can do either of the following:
+If you want to change the Azure subscription that your organization uses for billing, complete the following steps.
 
-- Move it to a different Azure subscription that you have access to
-- Remove the current Azure subscription, and then buy again using a new subscription
+## Prerequisites
 
-## Move to a different subscription
+Ensure the following is true for the user who's changing the subscription:
 
-If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, complete the following steps or learn more about [moving resources to new resource groups or subscriptions](/azure/azure-resource-manager/resource-group-move-resources).
+* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-organization-owner)
+* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Resource groups**.
+## Change the subscription
 
-   ![Select Azure Resource groups](_img/change-azure-subscription/azure-resource-groups.png)
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-3. Select the resource group containing your organization.
-4. Select **Move** > **Move to another subscription**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-   ![Select Move > Move to another resource group](_img/change-azure-subscription/select-move-to-another-subscription.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-5. Select your target subscription and resource group.
-6. Select **OK**.
+3. Select **Billing**.
+
+   ![Select Billing in Organization settings](_img/_shared/select-billing-organization-settings.png)
+
+4. Select **Change Billing**.
+
+   ![Select Change billing](_img/_shared/select-change-billing.png)
+
+5. Select your Azure subscription, and then select **Save**.
+
+   ![Select your Azure subscription](_img/_shared/select-azure-subscription.png)
 
 ## Remove the billing subscription and purchase again
 
 ### Prerequisites
 
-- [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+- [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-organization-owner)
 - [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]
 > When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD you've paid for this month continue uninterrupted until the 1st of next month, but your organization reverts immediately to the Free Tier for [cloud-based load testing](../../test/load-test/overview.md). Removing the subscription also cancels any non-Microsoft paid extensions without refund or credit.
 
-[Remove billing subscription](#remove-billing-subscription)
-
 ### Remove billing subscription
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) as organization owner and as Azure subscription co-administrator or greater.
-
-    If you experience browser problems with Azure,
-    make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
-
+1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home) as organization owner and as Azure subscription co-administrator or greater.
+   If you experience browser problems with Azure, make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 2. Go to **All services** > **Azure DevOps organizations**.
 
-   ![Choose All services and Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Azure portal Azure DevOps organizations](../accounts/_img/_shared/azure-portal-team-services-administration.png)!
 
-3. Select your organization and **Remove billing**.
+3. Select your organization, and then [Remove billing](https://ms.portal.azure.com/#home).
 
-   ![Remove billing from your organization](../accounts/_img/_shared/azure-portal-remove-billing.png)
+   ![Azure portal remove billing](../accounts/_img/_shared/azure-portal-remove-billing.png)
 
 ### Purchase again by using the new subscription
 
