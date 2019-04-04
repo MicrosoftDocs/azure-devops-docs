@@ -52,34 +52,22 @@ Here's a list of the most common ways in which teams share information and plans
 <td>  </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>  </td>
-
 </tr>
+
 <tr>
 <td align="left">[Email link to a work item query](#copy-url) </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>  </td>
-
 </tr>
-
-
 
 <tr>
 <td align="left">[Email query results list](#email-summary-lists) </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>  </td>
-
 </tr>
 
-
-<tr>
-<td align="left">[Release summary](#release-summary) </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>  </td>
-<td>  </td>
-
-</tr>
 
 </tbody>
 </table>
@@ -291,25 +279,6 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 --- 
 
-<!---
-::: moniker range=">= tfs-2018"
-
-<a id="release-summary"></a>
-## Email release summary
-
-From **Build and release>Releases**, choose a specific release and click the ![ ](../_img/icons/email-icon.png) **Send Email** icon to share the results of that release.  
-
-![Release summary, send email](../queries/_img/share-plans-email-release-definition.png)
-
-In the To box, start typing the name of the team member you want to send the summary mail to. 
-
-![Email of a release summary](../queries/_img/share-plans-email-release-definition-send.png)
-
-Optionally, enter a note about the release or un-check any section you don't want included. The default is to include all details, environmental summary, issues, and work items associated with the release.   
-
-::: moniker-end  
-
--->
 
 ## Related articles  
 

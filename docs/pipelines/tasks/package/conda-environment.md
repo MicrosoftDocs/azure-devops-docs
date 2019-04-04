@@ -22,7 +22,8 @@ This task will create a Conda environment and activate it for subsequent build t
 
 If the task finds an existing environment with the same name, the task will simply reactivate it. This is possible on self-hosted agents. To recreate the environment and reinstall any of its packages, set the "Clean the environment" option.
 
-Running with the "Update to the latest Conda" option will attempt to update Conda before creating or activating the environment. If you are running a self-hosted agent and have [configured a Conda installation to work with the task](#how-can-i-configure-a-private-agent-to-use-this-task), this may result in your Conda installation being updated.
+Running with the "Update to the latest Conda" option will attempt to update Conda before creating or activating the environment.
+If you are running a self-hosted agent and have [configured a Conda installation to work with the task](#agent-config), this may result in your Conda installation being updated.
 
 > [!NOTE]
 > Microsoft-hosted agents won't have Conda in their `PATH` by default. You will need to run this task in order to use Conda.
@@ -71,6 +72,8 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
+
+<a name="agent-config"></a>
 
 ### How can I configure a self-hosted agent to use this task?
 

@@ -12,7 +12,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: Conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/05/2019
+ms.date: 03/26/2019
 ---
 
 # Plan your organizational structure
@@ -204,7 +204,7 @@ Learn more about how to [manage users in Azure DevOps](../organizations/accounts
 
 ### Mapping organizations to business units
 
-When you map organizations to business units, each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Projects](#project-structure) are set up within those individual organizations, as required, based on teams or ongoing work.
+When you map organizations to business units, each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Projects](#what-is-a-project) are set up within those individual organizations, as required, based on teams or ongoing work.
 
 For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization has a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You don't need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
 

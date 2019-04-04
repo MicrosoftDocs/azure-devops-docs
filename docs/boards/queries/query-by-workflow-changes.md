@@ -372,7 +372,7 @@ For more information about field attributes, see [Work item fields and attribute
 
 <tr>
   <td>Assigned To<sup>1,&nbsp;2,&nbsp;3</sup> </td>
-  <td>The name of the team member who currently owns the work item. For additional information, see [Note 1 on synchronization and person-name fields](#sync) and [Assign work items to a team member](#assigned_to-field). 
+  <td>The name of the team member who currently owns the work item. For additional information, see [Note 1 on synchronization and person-name fields](#sync). 
 <p>Reference name=System.AssignedTo</p></td>
   <td>String (Identity)</td>
   <td>All</td>
@@ -547,7 +547,7 @@ You can use the following fields to filter your queries or build reports. Some o
 
 <tr>
   <td>Assigned To <sup>1,&nbsp;2,&nbsp;3</sup> </td>
-  <td>The name of the team member who currently owns the work item. For additional information, see [Note 1 on synchronization and person-name fields](#sync) and [Assign work items to a team member](#assigned_to-field). 
+  <td>The name of the team member who currently owns the work item. For additional information, see [Note 1 on synchronization and person-name fields](#sync). 
 <p>Reference name=System.AssignedTo</p></td>
   <td>String (Identity)</td>
   <td>All</td>

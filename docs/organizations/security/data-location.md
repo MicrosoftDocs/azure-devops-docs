@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: chcomley
 author: chcomley
 ms.manager: jillfra
-ms.date: 02/22/2019
+ms.date: 03/25/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -27,10 +27,10 @@ Your data is stored within the following locations:
 - East Asia
 - Europe
 - India
-- United Kingsom
+- United Kingdom
 - United States
 
-Azure DevOps stores information that is global in nature, such as user identities and profile information, in a data center located in the United States. All customer data, such as source code, work items, and test results, as well as the geo-redundant mirrors and offsite backups, are maintained within the selected region.
+Azure DevOps stores information that is global in nature, such as user identities and profile information, in a data center located in the United States. All customer data, such as source code, work items, and test results, as well as the geo-redundant mirrors and offsite backups, are maintained within the selected geography.
 
 > [!NOTE]
 > Because there is only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see the [Azure data center map](http://azuredatacentermap.azurewebsites.net/).

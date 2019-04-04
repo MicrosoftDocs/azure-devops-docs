@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/19/2019
+ms.date: 03/27/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -283,6 +283,10 @@ For example, you have configured an agent (see above) with the name `our-linux-a
 We provide the `./svc.sh` script as a convenient way for you to run and manage your agent as a systemd service. But you can use whatever kind of service mechanism you prefer (for example: initd or upstart).
 
 You can use the template described above as to facilitate generating other kinds of service files.
+
+## Use a cgroup to avoid agent failure
+
+It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using cgroups and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure cgroups and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
 
 [!INCLUDE [include](_shared/v2/replace-agent.md)]
 

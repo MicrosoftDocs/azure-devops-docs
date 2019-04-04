@@ -35,6 +35,7 @@ Check out the quick starts to get you started:
 - [Cross-origin resource sharing](./concepts/cross-origin-resource-sharing.md)
 - [Rate limits](./concepts/rate-limits.md)
 - [Deprecation of Work Item Tracking (WIT) & Test Client OM](./concepts/wit-client-om-deprecation.md)
+- [Migration Guide](./concepts/migration-guide.md)
 
 ## Samples
 
