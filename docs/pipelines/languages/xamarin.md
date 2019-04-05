@@ -10,7 +10,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 11/16/2018
+ms.date: 03/27/2018
 monikerRange: 'azure-devops'
 ---
 
@@ -69,6 +69,10 @@ steps:
     configuration: '$(buildConfiguration)'
 ```
 
+### Sign a Xamarin.Android app
+
+See [Sign your mobile app during CI](../apps/mobile/app-signing.md) for information about signing your app.
+
 ### Next steps
 
 See [Android](android.md) guidance for information about:
@@ -91,11 +95,27 @@ variables:
 steps:
 - task: XamariniOS@2
   inputs:
-    solutionFile: '**/*.sln'
+    solutionFile: '**/*iOS.csproj'
     configuration: '$(buildConfiguration)'
     packageApp: false
     buildForSimulator: true
 ```
+
+### Sign and provision a Xamarin.iOS app
+
+To sign and provision a Xamarin.iOS app, set `packageApp` to `true` and specify a signing identity and provisioning profile ID:
+
+```yaml
+- task: XamariniOS@2
+    inputs:
+      solutionFile: '**/*iOS.csproj'
+      configuration: 'AppStore'
+      packageApp: true
+      signingIdentity: 'iPhone Developer: Chris Sidi (7RZ3N927YF)'
+      signingProvisioningProfileID: 'iOS Team Provisioning Profile: com.hashtagchris.*'
+```
+
+See [Sign your mobile app during CI](../apps/mobile/app-signing.md) for more information about signing and provisioning your app.
 
 ### Set the Xamarin SDK version on macOS
 
@@ -142,7 +162,7 @@ jobs:
       restoreSolution: '**/*.sln'
   - task: XamariniOS@2
     inputs:
-      solutionFile: '**/*.sln'
+      solutionFile: '**/*iOS.csproj'
       configuration: '$(buildConfiguration)'
       buildForSimulator: true
       packageApp: false
@@ -156,5 +176,3 @@ See [Xcode](xcode.md) guidance for information about:
 * Retaining build artifacts with the build record
 * Distributing through App Center
 * Distributing through the Apple App Store
-
-See [Sign your mobile app during CI](../apps/mobile/app-signing.md) for information about signing and provisioning your app.

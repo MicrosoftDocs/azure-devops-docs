@@ -190,7 +190,7 @@ For tips on creating queries based on counts or numeric fields, see [Query by nu
 ::: moniker range=">= azure-devops-2019"
 ## Use Analytics to gain visibility across teams   
 
-You can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
+You can add [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
 ::: moniker-end
 

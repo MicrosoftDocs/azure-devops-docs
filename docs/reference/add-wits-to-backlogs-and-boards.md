@@ -60,7 +60,7 @@ You'll first export your work tracking definition files, update them, and then i
 -  Update your project to [enable the latest features](configure-features-after-upgrade.md)
 -  [Export the following objects from your project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](https://msdn.microsoft.com/library/ms404855.aspx))
-	- Categories definition  
+	- [Categories definition](xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group)  
 	- ProcessConfiguration  
 -  If you're new to customizing work tracking objects, familiarize yourself with the following resources:  
 	- [Add or modify a field](add-modify-field.md)  
@@ -152,7 +152,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
 	<li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
 	<li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
 	</ul>
-	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](#edit-processconfig). </p>
+	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](add-features-manually.md#update-processconfiguration). </p>
 	</td>
 	</tr>
 	<tr>
@@ -334,7 +334,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	<li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
 	<li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
 	</ul>
-	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TaskBacklog` section](#edit-processconfig). </p>
+	<p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TestBacklog` section](add-features-manually.md#update-processconfiguration). </p>
 	</td>
 	</tr>
 	<tr>
@@ -402,7 +402,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 		b. Categories   
 		c. ProcessConfiguration  
 
-5. Confirm that you can add the WIT to the task board. Open the task board page, or refresh the page if it's already open.  
+1. Confirm that you can add the WIT to the task board. Open the task board page, or refresh the page if it's already open.  
 	You should be able to select either Task or Service Task as a linked work item to a user story.  
 	![Task board with Service Task work item type added](_img/ALM_AWB_AddTaskConfirm.png)  
 

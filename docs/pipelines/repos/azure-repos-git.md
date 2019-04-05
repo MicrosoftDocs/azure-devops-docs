@@ -92,7 +92,7 @@ To add a build badge to the `readme.md` file at the root of your repository, fol
 
 If your pipeline and Azure Repos Git repository are both in an Azure DevOps Services public project, then Azure Pipelines jobs are free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
 
-If either your pipeline or Azure Repos Git repository is in a private project, then you can run up to 1,800 minutes (30 hours) of jobs for free every month. These free jobs have a maximum timeout of 30 minutes each. Purchasing jobs for private projects or private repositories removes any monthly time limit and allows jobs to have a maximum timeout of 360 minutes (6 hours) each.
+If either your pipeline or Azure Repos Git repository is in a private project, then you can run up to 1,800 minutes (30 hours) of jobs for free every month. These free jobs have a maximum timeout of 60 minutes each. Purchasing jobs for private projects or private repositories removes any monthly time limit and allows jobs to have a maximum timeout of 360 minutes (6 hours) each.
 
 To adjust the timeout of jobs, see [Timeouts](../process/phases.md#timeouts).
 

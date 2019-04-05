@@ -40,7 +40,7 @@ After the team has estimated its tasks and begun work, you can use the Remaining
   
 -   Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, types of work items, and states.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this topic.  
+ For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
 ### Hours of Work  
  The following illustration shows an example of the Remaining Work report in the **Hours of Work** view. This example is healthy in that a steady rate of work is being completed. However, the team significantly underestimated the amount of work that was required to complete the iteration, as shown by the hours remaining at the start and the hours completed at the end.  

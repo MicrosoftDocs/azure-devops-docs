@@ -60,7 +60,7 @@ You can control which services are available through the web portal by turning a
 
 If you disable a service, dashboard widgets specific to that service are disabled. For example, if **Boards** is disabled, all work item tracking widgets and all Analytics widgets are disabled and won't appear in the [widget catalog](../../report/dashboards/widget-catalog.md).
 
-If you disable **Boards**, you also disable [**Analytics views**](../../report/analytics/what-are-analytics-views.md).
+If you disable **Boards**, you also disable [**Analytics views**](../../report/powerbi/what-are-analytics-views.md).
 
 ## Related articles
 

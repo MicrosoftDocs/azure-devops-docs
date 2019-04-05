@@ -1042,12 +1042,12 @@
     },
     {
       "source_path": "docs/articles/devopsmsft/overview.md",
-      "redirect_url": "/azure/devops/",
+      "redirect_url": "/azure/devops/learn",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/adopting-vsts.md",
-      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
+      "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
     },
     {
@@ -2217,7 +2217,7 @@
     },
     {
       "source_path": "docs/reference/overview.md",
-      "redirect_url": "/azure/devops/index#pivot=services&panel=admin",
+      "redirect_url": "/azure/devops/organizations/index",
       "redirect_document_id": false
     },
     {
@@ -3772,7 +3772,7 @@
     },
     {
       "source_path": "docs/migrate-to-vsts-from-tfs.md",
-      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
+      "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
     },
     {
@@ -5857,7 +5857,7 @@
     },
     {
       "source_path": "docs/work/index.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=agile",
+      "redirect_url": "/azure/devops/boards/index",
       "redirect_document_id": false
     },
     {
@@ -5902,7 +5902,7 @@
     },
     {
       "source_path": "docs/articles/migration-advanced-topics.md",
-      "redirect_url": "/azure/devops/articles/migration-overview",
+      "redirect_url": "/azure/devops/migrate/migration-overview",
       "redirect_document_id": false
     },
     {
@@ -5967,17 +5967,17 @@
     },
     {
       "source_path": "docs/analytics.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
+      "redirect_url": "/azure/devops/report/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/report.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
+      "redirect_url": "/azure/devops/report/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reporting.md",
-      "redirect_url": "/azure/devops/#pivot=services&panel=reporting",
+      "redirect_url": "/azure/devops/report/index",
       "redirect_document_id": false
     },
     {
@@ -6032,7 +6032,7 @@
     },
     {
       "source_path": "docs/report/guidance/enable-analytics-velocity.md",
-      "redirect_url": "/azure/devops/report/analytics/enable-analytics-velocity",
+      "redirect_url": "/azure/devops/report/dashboards/add-widget-to-dashboard",
       "redirect_document_id": false
     },
     {
@@ -7922,7 +7922,7 @@
     },
     {
       "source_path": "docs/collaborate/project-vision-status.md",
-      "redirect_url": "/azure/devops/project/wiki/project-vision-status",
+      "redirect_url": "/azure/devops//organizations/projects/project-vision-status",
       "redirect_document_id": false
     },
     {
@@ -11462,8 +11462,8 @@
     },
     {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
-      "redirect_url": "/azure/devops/articles/migrate-from-tfs",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/git-log-history-simplification.md",
@@ -11506,29 +11506,24 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/project/wiki/project-vision-status.md",
-      "redirect_url": "/azure/devops/organization/projects/project-vision-status",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/articles/team-services-security-whitepaper.md",
-      "redirect_url": "/azure/devops/organization/security/data-protection",
+      "redirect_url": "/azure/devops/organizations/security/data-protection",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/data-location.md",
-      "redirect_url": "/azure/devops/organization/security/data-location",
+      "redirect_url": "/azure/devops/organizations/security/data-location",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/credential-storage.md",
-      "redirect_url": "/azure/devops/organization/security/credential-storage",
+      "redirect_url": "/azure/devops/organizations/security/credential-storage",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/migrate-from-tfs.md",
       "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/migration-import.md",
@@ -11554,6 +11549,101 @@
       "source_path": "docs/articles/migration-troubleshooting.md",
       "redirect_url": "/azure/devops/migrate/migration-troubleshooting",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/build/ci-build-github.md",
+      "redirect_url": "/azure/devops/pipelines/get-started-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/wiki/project-vision-status.md",
+      "redirect_url": "/azure/devops/organizations/projects/project-vision-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/analytics/what-is-analytics.md",
+      "redirect_url": "/azure/devops/report/powerbi/what-is-analytics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/what-are-analytics-views.md",
+      "redirect_url": "/azure/devops/report/powerbi/what-are-analytics-views",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/troubleshooting-views.md",
+      "redirect_url": "/azure/devops/report/powerbi/troubleshooting-views",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/reporting-roadmap.md",
+      "redirect_url": "/azure/devops/report/powerbi/reporting-roadmap",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/performance-latency.md",
+      "redirect_url": "/azure/devops/report/powerbi/performance-latency",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/index.md",
+      "redirect_url": "/azure/devops/report/powerbi/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/enable-analytics-velocity.md",
+      "redirect_url": "/azure/devops/report/dashboards/add-widget-to-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/data-available-in-analytics.md",
+      "redirect_url": "/azure/devops/report/powerbi/data-available-in-analytics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/client-authentication-options.md",
+      "redirect_url": "/azure/devops/report/powerbi/client-authentication-options",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-widgets.md",
+      "redirect_url": "/azure/devops/report/dashboards/analytics-widgets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-extension.md",
+      "redirect_url": "/azure/devops/report/dashboards/analytics-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-views-manage.md",
+      "redirect_url": "/azure/devops/report/powerbi/analytics-views-manage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-views-create.md",
+      "redirect_url": "/azure/devops/report/powerbi/analytics-views-create",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-default-views.md",
+      "redirect_url": "/azure/devops/report/powerbi/analytics-default-views",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-historical-filtering.md",
+      "redirect_url": "/azure/devops/report/powerbi/analytics-historical-filtering",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-security.md",
+      "redirect_url": "/azure/devops/report/powerbi/analytics-security",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/analytics/access-analytics-excel.md",
+      "redirect_url": "/azure/devops/report/powerbi/access-analytics-excel",
+      "redirect_document_id": true
     }
   ]
 }

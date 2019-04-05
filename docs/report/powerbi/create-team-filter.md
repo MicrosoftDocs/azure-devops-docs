@@ -1,11 +1,11 @@
 ---
 title: Apply a team filter to a Power BI report
-titleSuffix: Azure DevOps Services 
+titleSuffix: Azure DevOps 
 description: Sample report that show how to create a trend report with a team filter using an Analytics view
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
-ms.reviewer: jozimm
+ms.reviewer: angurusw
 ms.manager: jillfra
 ms.author: kaelli
 ms.topic: sample
@@ -15,7 +15,7 @@ ms.date: 05/18/2018
 
 # Create a Power BI report filtered by team using a custom Analytics view
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 Analytics views support field criteria to filter work items based on teams. However, there is no team-specific field available to support filtering a Power BI report. While each work item is associated with a specific area path, area paths can be associated with more than one team. Due to this one-to-many associations, the Analytics service doesn't provide a team-specific field. 
 
@@ -28,7 +28,7 @@ However, you can still filter on a team using the steps provided in this article
 
 The default fields included within the default Analytics views don't include the fields necessary to create the relationship mapping in Power BI. Use the following steps to introduce the mapping table to your model and build the necessary relationships to support filtering on teams.
 
-1. [Edit](../analytics/analytics-views-manage.md) your Analytics view.
+1. [Edit](analytics-views-manage.md) your Analytics view.
 2. In the **Field** tab add the *AreaSK* field.  
 3. Save the updated view.
 4. Load the Power BI pbix file associated with your Analytics view in Power BI Desktop.
@@ -154,6 +154,6 @@ Now you can filter all visualization on a report using a slicer or any other sup
 ## Related articles
 
 - [Power BI integration overview](overview.md) 
-- [Create Analytics views](../analytics/analytics-views-create.md)
+- [Create Analytics views](analytics-views-create.md)
 - [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering)

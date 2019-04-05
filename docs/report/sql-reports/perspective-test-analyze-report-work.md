@@ -234,7 +234,7 @@ For information about each field, see [Work item field index](../../boards/work-
   
  The Work Item Link Type and Work Item Linked dimensions are many-to-many dimensions that are linked to the Current Work Item fact table. Team members can link any work item to more than one other work item.  
   
- If a dimension corresponds to the attributes of links between work items, the name of the dimension is prefixed with the phrase "Work Item Linked." For example, the "Assigned To" attribute corresponds to the "Work Item Linked.Assigned To" attribute and so on for all other work item fields in the OLAP cube. For more information, see [Filter by Work Item Fields Under the Work Item Dimension](#work_Item_field) earlier in this topic.  
+ If a dimension corresponds to the attributes of links between work items, the name of the dimension is prefixed with the phrase "Work Item Linked." For example, the "Assigned To" attribute corresponds to the "Work Item Linked.Assigned To" attribute and so on for all other work item fields in the OLAP cube. For more information, see [Filter by Work Item Fields Under the Work Item Dimension](#work_Item_field) earlier in this article.  
   
 <a name="changeset"></a> 
 ###  Filter By Changesets  

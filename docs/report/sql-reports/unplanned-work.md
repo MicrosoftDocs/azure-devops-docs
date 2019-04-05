@@ -49,7 +49,7 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
   
 -   Filter the tasks, stories, test cases, and bugs that are counted in the report by specifying one or more iterations, area paths, and types of work items.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this topic.  
+ For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
 ### Required Activities for Tracking Unplanned Work  
  For the Unplanned Work report to be useful and accurate, the team must perform the following activities to track work items:  

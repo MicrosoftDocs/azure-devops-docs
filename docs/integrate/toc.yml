@@ -28,6 +28,8 @@
       href: ./concepts/rate-limits.md
     - name: Deprecation of WIT & Test Client OM
       href: ./concepts/wit-client-om-deprecation.md
+    - name: Migration Guide
+      href: ./concepts/migration-guide.md
 - name: How-to Guides
   items:
     - name: Authenticate with PATs

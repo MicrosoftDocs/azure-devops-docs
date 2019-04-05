@@ -1,5 +1,5 @@
 ```YAML
-# Download Fileshare Artifacts
+# Download Artifacts - Fileshare
 # Download artifacts from a file share e.g \\share\drop
 - task: DownloadFileshareArtifacts@1
   inputs:

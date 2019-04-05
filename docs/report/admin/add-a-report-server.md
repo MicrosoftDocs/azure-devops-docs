@@ -24,14 +24,14 @@ This is the first task in the four-task sequence to add reports to a team projec
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 
->[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../analytics/index.md).
+> [!IMPORTANT]
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json).
 
 
 
 On-premises installations of TFS can include reports to help you manage your software development projects. However, you need a report server as part of your deployment in order to use them. If you don't have one, you can add SQL Server Reporting Services to your deployment. 
 
->[!NOTE]  
+> [!NOTE]  
 >If you installed TFS on a client operating system, such as Windows 7, you can't add reporting as described here, because it isn't supported on client operating systems. 
 
 ##What do I need to know before adding a report server?  
@@ -53,7 +53,7 @@ On-premises installations of TFS can include reports to help you manage your sof
 
 ![If this node isn't present, you don't have reports](_img/tfs-admin-console-reporting.png)  
 
-Jump to the bottom of this topic to confirm that reports are available for the team project collection, and then move on to [Upload reports to a team project](upload-reports.md).
+Jump to the bottom of this article to confirm that reports are available for the team project collection, and then move on to [Upload reports to a team project](upload-reports.md).
 
 ####Q: Do I need to back up my data first?
 **A:** You should have a recent backup available. If you don't, you can [make a backup using Scheduled Backups](/azure/devops/server/admin/backup/config-backup-sched-plan).

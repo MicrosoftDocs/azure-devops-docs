@@ -1,7 +1,7 @@
 ---
 title: Example reports for Power BI Data Connector
-titleSuffix: Azure DevOps Services   
-description: Guidance on developing reports based on examples when using the Power BI Data Connector and the Analytics Service for Azure DevOps 
+titleSuffix: Azure DevOps   
+description: Guidance on developing reports based on examples when using the Power BI Data Connector and the Analytics service for Azure DevOps 
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
 ms.prod: devops
 ms.technology: devops-analytics
@@ -16,14 +16,14 @@ ms.date: 01/17/2017
 
 # Example reports for Power BI Data Connector
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 This document provides guidance on how to generate the following example reports in Power BI: 
 
 - [Number of Work Items](#number-of-work-items)  
 - [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
 
-Prior to generating these reports, you must first [connect to the Analytics Services using the Power BI data connector](data-connector-connect.md). 
+Prior to generating these reports, you must first [connect to the Analytics services using the Power BI data connector](data-connector-connect.md). 
 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.

@@ -24,7 +24,7 @@ Even if you're just a single developer, version control helps you stay organized
 Azure Repos provides two types of version control:
 
 - [Git](#git): distributed version control
-- [Team Foundation Version Control (TFVC)](#TFVC): centralized version control
+- [Team Foundation Version Control (TFVC)](#tfvc): centralized version control
 
 ## Git
 

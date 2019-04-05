@@ -7,10 +7,11 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 03/26/2019
 ---
 
 
@@ -31,7 +32,7 @@ You can find work items using shortcut filters or by specifying keywords or phra
 
 You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/administration.md).
 
-For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can perform [ad hoc searches](#adhoc-search). 
+For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can perform [ad hoc searches](#initiate-an-ad-hoc-search-use-shortcut-filters). 
 
 With semantic search, you search against a more fully indexed set of fields. With ad hoc search, the number of fields that are indexed are limited. 
 
@@ -107,7 +108,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker range=">= tfs-2013  <= tfs-2015" 
 
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#adhoc-search).
+Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#initiate-an-ad-hoc-search-use-shortcut-filters).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -185,11 +186,10 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 ::: moniker range="<= tfs-2015" 
 
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#adhoc-search).
+Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#initiate-an-ad-hoc-search-use-shortcut-filters).
 ::: moniker-end
 
 
-<a name="ad hoc-search"></a>
 ## Initiate an ad hoc search, use shortcut filters
 
 For TFS 2017.1 and earlier versions, you can perform ad hoc searches from the web portal or from Visual Studio Team Explorer. Ad hoc searches automatically scope to the items defined to the project you're currently connected to.  

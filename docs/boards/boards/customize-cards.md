@@ -57,7 +57,9 @@ Your best bet is to show fields on cards based on what your team frequently refe
 
 
 <a id="fields"></a>
+
 ## Update fields from the cards
+
 Using the board views provides you with quick and easy ways to update work items as work progresses. Making daily or frequent updates helps everyone on your team stay in sync with what's been done and what needs doing next. 
 
 To update status of a work item, you simply drag-and-drop cards to a different column. To change the order or stack ranking of a work item, you drag a card up or down within a column. 
@@ -76,7 +78,8 @@ To change the title, click the pencil icon in the upper-right corner. To add tag
 
 To customize cards on the Kanban board, see [Change how cards display on the Kanban board](#kanban-board). To customize taskboard cards, see [Change how cards display on the taskboard](#task-board).  
 
-<a id="styles"></a>
+<a id="styles" > </a>
+
 ## Highlight cards  
 
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight severity 1 bugs by having the cards display as yellow. 
@@ -87,6 +90,7 @@ This feature requires TFS 2015.1 or later versions.
 ![Styling rule applied to bugs with Severity=1](_img/kanban-board-card-style-rule-example.png)
 
 ### Example styling rules 
+
 What rules should you apply to highlight work items? Here are a few examples and their associated criteria . 
 
 > [!div class="mx-tdCol2BreakAll"]
@@ -103,7 +107,8 @@ What rules should you apply to highlight work items? Here are a few examples and
 > |Blocked tasks (Scrum process only) | ```Blocked = Yes``` |
 
 
-<a id="kanban-board">  </a>
+<a id="kanban-board" > </a>
+
 
 ## Choose fields to appear on cards (Kanban boards)
 
@@ -116,7 +121,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"  
-As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the WIT definition](../../reference/add-modify-field.md). 
+As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the WIT definition](../../reference/add-modify-field.md).  
 ::: moniker-end  
 
 
@@ -206,7 +211,8 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker-end  
 
 
-<a id="task-board">  </a>
+<a id="task-board" > </a>
+
 ## Choose fields to appear on cards (Taskboards)
 
 Scrum teams use the taskboard to burn down work and report on progress during daily standups. Your taskboard shows cards that correspond to both requirements and tasks. If you want bugs to appear on the taskboard, change your team settings for [show bugs on the backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
@@ -293,7 +299,8 @@ You change the way cards appear on the taskboard in the same way you change the 
 ::: moniker-end  
 
 
-<a id="style-rule">  </a>  
+<a id="style-rule" > </a>  
+
 ## Define style rules to highlight cards  
 
 You can apply style rules to change the color of cards on Kanban boards and taskboards.  
@@ -363,7 +370,7 @@ Requires TFS 2015.1 or later version.
 ::: moniker-end
 
 
-<a id="color-tags">  </a>
+<a id="color-tags" > </a>
 
 ## Color-code tags (Kanban boards)  
 
@@ -390,9 +397,10 @@ Requires TFS 2015.1 or later version.
 
 0. When done with your changes, choose **Save**.
 
- 
+<a id="annotations" > </a>
+
 ::: moniker range=">= tfs-2017"  
-<a id="annotations">  </a>
+
 ## Enable annotations (Kanban boards) 
 
 With the Kanban board, you gain a rich set of tools and a rich set of customization options. Annotations provide visual cues about work items, indicating the number of tasks or tests that have been defined for that work item. Choose an annotation to expand the set or gain more information. 
@@ -406,6 +414,8 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 
 To learn more about using these features, see [Add task checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
 
+::: moniker-end
+
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]  
@@ -413,42 +423,63 @@ To learn more about using these features, see [Add task checklists](../../boards
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"  
+
 ### Enable or disable an annotation
 
-0. Open the Settings dialog for the Kanban board you want to customize. 
+1. Open the Settings dialog for the Kanban board you want to customize. 
 
-0. Choose **Annotations** and then check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
+2. Choose **Annotations** and then check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
 
 	![Kanban board, Settings dialog, Annotations tab](_img/customize-cards/annotate-settings.png)
 
-0. When done with your changes, choose **Save**.
+3. When done with your changes, choose **Save**.
+
 ::: moniker-end
  
+
+<a id="tests" > </a>
+
 ::: moniker range=">= tfs-2017"  
-<a id="tests">  </a>
+
 ## Configure inline tests (Kanban board)
 
 You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add, or add all new tests to a selected test plan going forward. 
 
-0. Open the Settings dialog for the Kanban board (product backlog only) you want to customize. 
-
-0. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
-
-0. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
 ::: moniker-end
-	::: moniker range=">= azure-devops-2019"  
+
+::: moniker range=">= azure-devops-2019"
+
+1. Open the Settings dialog for the Kanban board (product backlog only) you want to customize. 
+
+2. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
+
+3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
+
 	> [!div class="mx-imgBorder"]  
 	> ![Settings, Tag colors dialog (Kanban)](_img/customize-cards/settings-tests.png)  
-	::: moniker-end   
-	::: moniker range=">= tfs-2017 <= tfs-2018"  
-	![Settings dialog, Tests tab (Kanban), TFS 2015](_img/c-cards-test-settings.png)  
-	::: moniker-end   
-::: moniker range=">= tfs-2017" 
-0. Save your changes. 
+
+4. Save your changes. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+1. Open the Settings dialog for the Kanban board (product backlog only) you want to customize. 
+
+2. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
+
+3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
+
+	![Settings dialog, Tests tab (Kanban), TFS 2015](_img/c-cards-test-settings.png)   
+
+4. Save your changes. 
+
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017"
+
 ### Open the test plan, test suite from a card
 
 From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the ![ ](../../_img/icons/open-icon.png) open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
