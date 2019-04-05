@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps Report and Analytics Documentation 
-titleSuffix: Azure DevOps Services
+title: Azure DevOps Reporting Documentation 
+titleSuffix: Azure DevOps
 description: Add, view, manage, and monitor status and trends with dashboards, widgets, the Analytics Service and Power BI
 ms.custom: seodec18
 layout: HubPage 
@@ -12,16 +12,17 @@ ms.technology: devops-analytics
 ms.assetid:  
 ms.manager: jillfra 
 ms.author: kaelli 
-ms.date: 10/23/2018
+ms.date: 04/05/2019
 featureFlags:
 - clicktale 
 ---
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Analytics</p>
+
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Reporting</p>
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure DevOps Analytics Documentation</h1>
-        <p>Monitor progress and trends to support improvement of team processes.</p>
+        <h1>Azure DevOps Reporting Documentation</h1>
+        <p>Reporting in Azure DevOps enables software development teams to make data driven decisions and deliver value to their customers faster. Get started with reporting in Azure DevOps by learning about the various features. </p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -43,46 +44,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Dashboards</h3>
-                                                            <p>Share information, progress, and trends through one or more team dashboards.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/report/analytics/what-is-analytics">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/i_analytics.svg" alt="Analytics services icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Analytics Service</h3>
-                                                            <p>Access the Analytics Service through dashboard widgets, Power BI, and OData to support your reporting requirements.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/report/analytics/what-are-analytics-views">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="Analytics views icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Analytics views</h3>
-                                                            <p>Define filter criteria to support Power BI reports based on the Analytics service.</p>
+                                                            <h3>Dashboards, Charts, Reports, & Widgets</h3>
+                                                            <p>Build customizable dashboards with widgets and charts to easily monitor progress and trends of your software development lifecycle.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -100,8 +63,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Power BI</h3>
-                                                            <p>Quickly generate reports for your Azure DevOps projects based on the Analytics Service.</p>
+                                                            <h3>Power BI Integration</h3>
+                                                            <p>Create datasets for authoring custom, rich, and insightful reports in Power BI.  </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,7 +83,26 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Extend Analytics with OData</h3>
-                                                            <p>Directly query the Analytics Service using OData and  use the returned JSON data as desired.</p>
+                                                            <p>Query the Analytics OData endpoint and extract team or project data to build custom reports.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/extend/develop/add-dashboard-widget">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_api.svg" alt="API icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Extensibility</h3>
+															<p>Develop custom widgets using the widget SDK, add them to a dashboard, and share them on the Azure DevOps Marketplace.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -138,8 +120,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>SQL Server Reporting </h3>
-															<p>Use out-of-the-box reports or define custom reports. Valid only for TFS.</p>
+                                                            <h3>SQL Server Reporting (Legacy)</h3>
+															<p>Use built in reports and define custom reports using the on-premises data warehouse. Valid only for on-premises deployments.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -147,48 +129,19 @@ featureFlags:
                                         </a>
                                     </li>
                                 </ul>
-                                <a href="#index2"></a>
-                                <h2 style="float: left; display: flex;">Additional resources</h2>
-                                <ul id="index2" class="cardsL cols cols4" style="float: left; display: flex; width: 100%;">
+                            <li class="fullSpan">
+                                <a href="#index5"></a>
+                                <ul id="index5" class="cardsW cols cols3 panelContent" style="float: left; display: flex;">
                                     <li>
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="Video icon" />DevOps at Microsoft</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/migrate/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="Article icon" />Technical articles</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="Azure DevOps icon" />Azure DevOps resource center</a>
+                                                        <h3>Additional resources</h3>
+                                                        <p><a href="/azure/devops/index-all">Index</a></p>
+                                                        <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
+                                                        <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
+                                                        <p><a href="/azure/devops/learn/">DevOps Resource Center</a></p>
                                                     </div>
                                                 </div>
                                             </div>

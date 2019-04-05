@@ -1,6 +1,6 @@
 ---
 title: Add markdown content to a team dashboard 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.custom: dashboards
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Add Markdown to a dashboard
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
 
 <a id="markdown-widget">  </a> 
@@ -27,21 +27,11 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 Here's an example:  
 <img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker range="azure-devops"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
-::: moniker-end
-
-::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
-::: moniker-end
+[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
 
 
-## Connect to the web portal for your project 
-To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers). 
+## Connect to your project 
+To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
 ::: moniker range=">= azure-devops-2019"  
 Open a web browser, connect to your project, and  choose **Overview>Dashboards**. 
@@ -64,7 +54,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ::: moniker-end
 
 
-## Add the markdown widget to a dashboard  
+## Add the markdown widget
 If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboards.md).  
 
 ::: moniker range="tfs-2015"

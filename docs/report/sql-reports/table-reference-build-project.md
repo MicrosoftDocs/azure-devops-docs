@@ -9,7 +9,7 @@ ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/17
 ---
 

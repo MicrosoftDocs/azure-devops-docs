@@ -1,6 +1,6 @@
 ---
 title: Burndown guidance
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps  
 description: Review Scrum progress during and at the end of a sprint when working in Azure DevOps and Team Foundation Server 
 ms.custom: dashboards
 ms.technology: devops-analytics
@@ -15,7 +15,7 @@ ms.date: 11/01/2018
 ---
 
 # Burndown guidance
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 

@@ -1,7 +1,7 @@
 ---
 title: Publish a Power BI Desktop file to PowerBI.com  
-titleSuffix: Azure DevOps Services 
-description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics Service for Azure DevOps 
+titleSuffix: Azure DevOps 
+description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -15,11 +15,11 @@ ms.date: 11/01/2018
 
 # Publish a Power BI Desktop file to PowerBI.com 
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on PowerBI.com. This article shows you how.   
 
-1. If using an [Analytics View](../analytics/what-are-analytics-views.md) , verify that the view is Shared and not Private.
+1. If using an [Analytics View](what-are-analytics-views.md) , verify that the view is Shared and not Private.
 
 0. Open the **Power BI Desktop** file with your data.  
 
@@ -58,7 +58,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
     ![Configure Fabrikam Data dialog, Enter credentials](_img/publish-5.png)
 
 	> [!IMPORTANT]  
-	> If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](../analytics/client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
+	> If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
 
 0. Choose **Sign in**.  
 
@@ -72,7 +72,7 @@ At this point, the data will update on your scheduled basis using the credential
 
 - [Analytics service](index.md)  
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
-- [Access data through Excel](../analytics/access-analytics-excel.md)  
+- [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
 
 
