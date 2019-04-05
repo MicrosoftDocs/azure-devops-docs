@@ -209,11 +209,11 @@ Azure DevOps Services and Azure DevOps Server offer a many tools that give you i
 
 Azure DevOps Services and Azure DevOps Server 2019 also provide access to the following services:
 
-- [The Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
+- [The Analytics service](../report/powerbi/what-is-analytics.md) and [Analytics widgets](../report/dashboards/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 - [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
 - [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization.
 
-To learn more about the Analytics service and future releases, see our [Reporting roadmap](../report/analytics/reporting-roadmap.md).
+To learn more about the Analytics service and future releases, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
 
 [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md) are available from Azure DevOps Server or TFS when configured with SQL Server Analysis Services.  
 

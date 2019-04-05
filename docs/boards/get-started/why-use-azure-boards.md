@@ -92,7 +92,7 @@ By using [configurable dashboards](../../report/dashboards/dashboards.md), you c
 > [!div class="mx-imgBorder"]  
 > ![Example bug burndown widget](/azure/devops/report/dashboards/_img/burndown-widget/burndownup-bug-burndown.png)  
 
-In addition to dashboards, you have access to the [Analytics service](../../report/analytics/what-is-analytics.md), which is optimized for fast read-access and server-based aggregations. By using [Analytics views](../../report/analytics/what-are-analytics-views.md) and [Power BI](../../report/analytics/what-are-analytics-views.md), you can create highly sophisticated reports on the project data of interest. 
+In addition to dashboards, you have access to the [Analytics service](../../report/powerbi/what-is-analytics.md), which is optimized for fast read-access and server-based aggregations. By using [Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Power BI](../../report/powerbi/what-are-analytics-views.md), you can create highly sophisticated reports on the project data of interest. 
 
 
 ## 8. Office integration 

@@ -1,6 +1,6 @@
 ---
 title: Query trend data
-titleSuffix: Azure DevOps Services 
+titleSuffix: Azure DevOps 
 description: How to query the Analytics service trend data and consume it in a client tool when working from Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
@@ -10,40 +10,42 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/2/2018
+ms.date: 04/05/2019
 ---
 
 # Query trend data
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. The Analytics service supports these capabilities.
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an organization with only one work item that was created a year ago, there are 365 rows in this entity. For very large projects, these entities would be impractical to use with client tools.
 
 What is the solution? Use the [Aggregation Extensions](aggregated-data-analytics.md). 
 
-In this topic you'll learn: 
+In this article you'll learn: 
 
 > [!div class="checklist"]
 > * How to construct a basic query for trend data       
-
-
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 
 Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
 ::: moniker range=">= azure-devops-2019"
 
->[!NOTE]
->The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
+> [!NOTE]
+> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
 https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 ```
 ::: moniker-end
+
+[!INCLUDE [temp](../_shared/api-versioning.md)]
+
+<a id="trend-data" />
 
 ## Construct a basic query for trend data   
  
@@ -135,4 +137,5 @@ In this query, there are two key differences. We added a filter clause to filter
  If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
 
 ## Related articles
+
 - [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyse groups of related data.

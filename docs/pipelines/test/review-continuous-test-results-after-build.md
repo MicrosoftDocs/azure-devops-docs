@@ -24,6 +24,15 @@ Automated tests can be configured to run as part of a build or release for vario
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
 In addition, it provides many advanced reporting capabilities explored in the following sections.
+
+::: moniker range=">= azure-devops-2019"
+
+You can also perform deeper analysis of test results by using the
+[Analytics Service](../../report/powerbi/what-is-analytics.md).
+For an example of using this with your build and deploy pipelines, see [Analyze test results](test-analytics.md).
+
+::: moniker-end
+
 Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="< azure-devops-2019"
@@ -271,5 +280,11 @@ The following features are not available for inferred test reports:
 > Some runners such as Mocha have multiple built-in console reporters such as [dot-matrix](https://mochajs.org/#dot-matrix) and [progress-bar](https://mochajs.org/#progress). 
 > If you have configured a non-default console output for your test runner, or you are using a custom reporter,
 > Azure DevOps will not be able to infer the test results. It can only infer the results from the [default](https://mochajs.org/#spec) reporter. 
+
+## See also
+
+* [Analyze test results](test-analytics.md)
+* [Trace test requirements](requirements-traceability.md)
+* [Review code coverage results](review-code-coverage-results.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

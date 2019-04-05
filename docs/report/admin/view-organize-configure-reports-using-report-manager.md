@@ -21,7 +21,7 @@ After you create and publish reports in SQL Server Report Designer, you can use 
   
  When you open Report Manager, you start in the Contents page, which shows the items that you have permission to view. You might also have permission to add, delete, and move those items. For more information, see the following page on the Microsoft Web site: [Contents Page (Report Manager)](http://go.microsoft.com/fwlink/?LinkID=182175).  
   
- After you click a report, you can perform one or more of the tasks that are described in this topic.  
+ After you click a report, you can perform one or more of the tasks that are described in this article.  
   
 ##  <a name="ViewAReport"></a> View a report  
  By using the **View** tab, you can display results for reports. You can adjust parameters, subscribe to the report, and navigate through the report. You can also refresh, export, and print the report. For more information, see the following page on the Microsoft Web site: [Viewing Reports](http://go.microsoft.com/fwlink/?LinkId=182176).  

@@ -157,7 +157,7 @@
 - name: Resources
   items:
   - name: Reporting roadmap
-    href: ../analytics/reporting-roadmap.md
+    href: ../powerbi/reporting-roadmap.md
   - name: SharePoint Integration
     href: ../sharepoint-dashboards/index.md
   - name: Server Administration 

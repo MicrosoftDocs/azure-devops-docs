@@ -1,11 +1,12 @@
-- name: Azure DevOps Services
+- name: Azure DevOps
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Analytics
+  - name: Reporting
     tocHref: /azure/devops/
     topicHref: /azure/devops/report/index
     items:
     - name:  Extend Analytics with OData
       tocHref: /azure/devops/
       topicHref: /azure/devops/report/extend-analytics/index
+

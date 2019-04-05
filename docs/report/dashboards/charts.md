@@ -1,6 +1,6 @@
 ---
 title: Status and trend work item, query-based charts
-titleSuffix: Azure DevOps & TFS  
+titleSuffix: Azure DevOps  
 description: Create status, progress, and trend charts from flat-based queries in Azure DevOps and Team Foundation Server  
 ms.custom: dashboards
 ms.prod: devops
@@ -11,20 +11,32 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2019
+ms.date: 04/05/2019
 ---
 
 # Track progress by creating status and trend query-based charts 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
->[!NOTE]  
->For examples of queries based on numeric fields, see [Query by numeric fields](../../boards/queries/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md).  
+> [!NOTE]  
+> For examples of queries based on numeric fields, see [Query by numeric fields](../../boards/queries/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md).  
+
+
+::: moniker range=">= azure-devops-2019"
+
+For example, the following image illustrates two different charts created from the same flat-list query. The pie chart groups the 19 bugs by state, and the bar chart groups the bugs by assignment and their current status.
+
+> [!div class="mx-imgBorder"]  
+> ![[Active bug charts added to dashboards](_img/overview/active-bug-charts-on-dashboards-2019.png)   
+
+::: moniker range="<= tfs-2018"
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
+
+::: moniker-end
 
 ## Prerequisites
 
@@ -163,7 +175,7 @@ In the dialog that opens, select the team dashboard to add the chart to.
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
  
 ::: moniker range=">= tfs-2013 <= tfs-2015"
->[!NOTE]  
+> [!NOTE]  
 ><b>Feature availability: </b> For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
 ::: moniker-end
 
@@ -284,7 +296,7 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker range=">= azure-devops-2019"
 ### Widgets and the Analytics Service 
-The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets.md).  
+The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../dashboards/analytics-widgets.md).  
  
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: Aggregate work tracking data 
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: How to guide to aggregate and filter data with the Analytics Service and the OData aggregation extension in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
@@ -14,11 +14,11 @@ ms.date: 11/1/2018
 
 # Aggregate work tracking data using the Analytics service   
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 You can get a sum of your work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
-In this topic you'll learn: 
+In this article you'll learn: 
 
 >[!div class="checklist"]
 > * About the OData Aggregation Extension  
@@ -35,7 +35,7 @@ In this topic you'll learn:
 Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
 ## Basic root URL
-Use the following basic root URL as a prefix for all the examples provided in this topic.
+Use the following basic root URL as a prefix for all the examples provided in this article.
 
 ::: moniker range="azure-devops"
 
@@ -53,10 +53,12 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 ```
 
->[!NOTE]
->The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+> [!NOTE]
+> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
 
 ::: moniker-end
+
+<a id="simple-count" />
 
 ## Simple count aggregations
 
@@ -72,6 +74,7 @@ Where the full OData query is:
 ```OData
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count
 ``` 
+[!INCLUDE [temp](../_shared/api-versioning.md)]
 
 For comparison, using the OData aggregation extension, you add the following to your query:
 
@@ -116,6 +119,8 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
    aggregate($count as Count)
 ``` 
 
+<a id="aggregation-extension" />
+
 ## Aggregate data using the OData aggregation extension
 
 Now that you've seen how to do simple counts, let's review how to trigger aggregations using the `$apply` token where the basic format at the end of the URL is as follows:
@@ -127,6 +132,8 @@ Where:
 - {columnToAggregate} is the aggregation column
 - {aggregationType} will specify the type of aggregation used
 - {newColumnName} specifies the name of the column having values after aggregation.
+
+<a id="apply-extension" />
 
 ## Aggregated data using the apply extension 
 
@@ -168,6 +175,8 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
   $apply=aggregate(WorkItemId with max as MaxWorkItemId)
 ```
+
+<a id="groupby" />
 
 ## Group results using the groupby clause
 
@@ -262,6 +271,8 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
 
 --> 
 
+<a id="filter-aggregate" />
+
 ## Filter aggregated results
 
 You can also filter aggregated results, however they are applied slightly differently than when you are not using aggregation. The analytics service evaluates filters along a pipe so it's always best to do the most discrete filtering first. 
@@ -280,6 +291,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems?
 > [!NOTE]    
 > You don't have to provide the `groupby` clause. You can simply use the `aggregate` clause to return a single value.  
 
+<a id="multiple-aggregate" />
 
 ## Generate multiple aggregations within a single call
 
@@ -300,6 +312,9 @@ This will return a result that looks like the following:
 }
 ```
 
+
+<a id="calculated-properties" />
+
 ## Generate calculated properties for use within a single call
 
 When you need to use a mathematical expression to calculate properties for use in a result set, such as the sum of completed work which is divided by the sum of completed work plus the sum of remaining work to calculate the percentage of work completed, you can accomplish this as follows:
@@ -316,6 +331,8 @@ When you need to use a mathematical expression to calculate properties for use i
   ]
 }
 ```
+
+<a id="cfd" />
 
 ## Generate a Cumulative Flow Diagram from aggregate data
 
