@@ -1,6 +1,6 @@
 ---
 title: Add a widget to a team dashboard 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Choose and configure widgets that you add to a team dashboard in Azure DevOps & Team Foundation Server  
 ms.custom: dashboards
 ms.prod: devops
@@ -11,36 +11,30 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 12/05/2018 
+ms.date: 04/05/2019
 ---
 
+
 # Add widgets to a dashboard
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
+
+[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
+
 ::: moniker range=">= azure-devops-2019"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
-::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
-::: moniker-end
-
-::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"  
 > [!NOTE]  
-> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).  
+
 ::: moniker-end
 
 
-## Select a dashboard to modify 
+## Select a dashboard 
 All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
 ::: moniker range=">= azure-devops-2019"
@@ -74,7 +68,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ::: moniker-end  
 
 
-## Add a widget to a dashboard  
+## Add a widget   
 ::: moniker range=">= azure-devops-2019"
 
 To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. 
@@ -105,6 +99,40 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 ::: moniker-end
 
+<a id="add-analytics-widget" />
+::: moniker range="azure-devops-2019"
+## Add an Analytics widget
+
+This example shows how to add the Velocity widget available from the Analytics service to a dashboard. 
+
+0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
+
+	If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+0. Make sure that the [Analytics Marketplace extension](../dashboards/analytics-extension.md) has been installed. The Analytics widgets won't be available until it is installed.  
+
+0. [Choose the dashboard](dashboards.md#choose-dashboard) that you want to modify. 
+
+0. Choose ![edit icon](_img/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
+
+0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Velocity widget in widget catalog](_img/add-widgets/velocity-in-widget-catalog.png)
+
+0. Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
+
+0. Next, configure the widget. For details, see the following articles: 
+	- [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
+	- [Configure cumulative flow](cumulative-flow.md)  
+	- [Configure lead/cycle time](cycle-time-and-lead-time.md)  
+	- [Configure velocity](team-velocity.md)  
+	- [Configure test trend results](configure-test-results-trend.md)  
+
+::: moniker-end
+
 
 <a id="configure" />
 
@@ -121,20 +149,24 @@ To configure a widget, add the widget to a dashboard, choose open the ![actions 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 Additional information is provided to configure the following widgets: 
 - [Burndown/burnup](configure-burndown-burnup-widgets.md)
 - [Cumulative flow](cumulative-flow.md)
 - [Lead time or cycle time](cycle-time-and-lead-time.md)
 - [Velocity widget](team-velocity.md)
 - [Test trend results](configure-test-results-trend.md)
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 Additional information is provided to configure the following widgets: 
 - [Burndown/burnup](configure-burndown-burnup-widgets.md)
 - [Cumulative flow](cumulative-flow.md)
 - [Lead time or cycle time](cycle-time-and-lead-time.md)
 - [Velocity widget](team-velocity.md)
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
@@ -148,8 +180,8 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 
 ::: moniker-end
 
-
-## Move or delete a widget from a dashboard 
+<a id="move-delete" />
+## Move or delete a widget 
 To move a widget, you need to enable the dashboard edit mode. To delete a widget, simply select the delete option provided from the widget's options menu. 
 
 ::: moniker range="tfs-2015"
@@ -197,8 +229,10 @@ When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](
 
 ::: moniker range=">= tfs-2018"
 
-## Copy a widget to another dashboard
-You can copy a widget to another dashboard defined for your team. If you want to move widgets you have configured to another dashboard, this is how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
+
+<a id="copy" />
+## Copy a widget
+You can copy a widget to the same dashboard or to another team dashboard. If you want to move widgets you have configured to another dashboard, this is how you do it. Before you begin, add the dashboard you want to copy or move the widget to. Once you've copied the widget, you can delete it from the current dashboard.  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -216,13 +250,24 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 <img src="_img/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 2px solid #C3C3C3;" />  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-## Analytics Service widgets 
-The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
-- [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
-- [What is the Analytics Service?](../analytics/what-is-analytics.md)
-::: moniker-end
+
+## Widget size
+Some widgets are pre-sized and can't be changed. Others are configurable through their configuration dialog. 
+
+For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
+
+<img src="_img/add-widget-size.png" alt="Change widget size" style="border: 2px solid #C3C3C3;" />  
+
+## Extensibility and Marketplace widgets
+
+In addition to the widgets described in the Widget catalog, you can add widgets from the [Marketplace](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance), or create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md). 
+
+### Disabled Marketplace widget 
+If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
+
+<img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
+
+To regain access to it, request your admin to reinstate or reinstall the widget. 
 
 
 ## Try this next 
@@ -230,23 +275,21 @@ The Analytics Service is in preview and provides access to several widgets. To l
 > [Review the widget catalog](widget-catalog.md)
 > or
 > [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
+ 
+## Related articles
 
+::: moniker range=">= azure-devops-2019"
+- [Widgets based on the Analytics Service](../dashboards/analytics-widgets.md)
+- [What is the Analytics Service?](../powerbi/what-is-analytics.md)
+- [Burndown guidance](burndown-guidance.md)
+- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity guidance](velocity-guidance.md)
+::: moniker-end
 
-### Extensibility  
-In addition to the widgets described in the Widget catalog, you can create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md). 
+::: moniker range=">= tfs-2015 <= tfs-2018"
+- [Burndown guidance](burndown-guidance.md)
+- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity guidance](velocity-guidance.md)
+::: moniker-end
 
-### Widget size
-Some widgets are pre-sized and can't be changed. Others are configurable through their configuration dialog. 
-
-For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
-
-<img src="_img/add-widget-size.png" alt="Change widget size" style="border: 2px solid #C3C3C3;" />  
-
-
-### Disabled Marketplace widget 
-If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
-
-<img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
-
-To regain access to it, request your admin to reinstate or reinstall the widget.  
 

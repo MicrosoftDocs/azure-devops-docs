@@ -40,7 +40,7 @@ https://dev.azure.com/{yourorganization}
 
 ### Where can I learn more about how to use PATs?
 
-For examples of how to use PATs, see [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../artifacts/nuget/consume.md#mac-os), and [Reporting clients](../../report/analytics/client-authentication-options.md#enter-credentials-within-a-client).
+For examples of how to use PATs, see [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../artifacts/nuget/consume.md#mac-os), and [Reporting clients](../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client).
 
 ### What notifications will I get about my PAT?
 

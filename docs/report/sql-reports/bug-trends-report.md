@@ -44,7 +44,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 -   Filter the bugs that are counted in the report by specifying iteration and area paths or bug state, priority, or severity.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+ For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Activities for Tracking Bugs  
  For the Bug Trends report to be useful and accurate, the team must perform the following activities:  

@@ -40,7 +40,7 @@ You can track your team's progress by using SQL Server Report Designer to create
   
 2.  Under **Project types**, choose **Business Intelligence Projects**.  
   
-     If **Business Intelligence Projects** does not appear in the list of project types, you must install SQL Server Business Intelligence Development Studio. For more information, see the Prerequisites section near the start of this topic.  
+     If **Business Intelligence Projects** does not appear in the list of project types, you must install SQL Server Business Intelligence Development Studio. For more information, see the Prerequisites section near the start of this article.  
   
 3.  Under **Templates**, choose **Report Server Project.**  
   

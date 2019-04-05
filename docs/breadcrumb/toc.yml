@@ -89,17 +89,14 @@
     - name: Unit testing
       tocHref: /visualstudio/test/improve-code-quality/
       topicHref: /visualstudio/test/unit-test-your-code
-  - name: Analytics
+  - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
     items:
-    - name: Dashboards
+    - name: Dashboards, Charts, Reports, & Widgets
       tocHref: /azure/devops/report/dashboards
       topicHref: /azure/devops/report/dashboards/index
-    - name: Analytics Service
-      tocHref: /azure/devops/report/analytics/
-      topicHref: /azure/devops/report/analytics/index
-    - name: Power BI
+    - name: Power BI Integration
       tocHref: /azure/devops/report/powerbi/
       topicHref: /azure/devops/report/powerbi/index
     - name: Extend Analytics with OData
@@ -108,6 +105,9 @@
     - name: SQL Server Reporting
       tocHref: /azure/devops/report/sql-reports/
       topicHref: /azure/devops/report/sql-reports/index
+    - name: SharePoint Dashboards
+      tocHref: /azure/devops/report/sharepoint-dashboards/
+      topicHref: /azure/devops/report/sharepoint-dashboards/index
   - name: Settings
     tocHref: /azure/devops/organizations/settings/
     topicHref: /azure/devops/organizations/index
@@ -163,12 +163,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/server/index
   items:
-  - name: Administation
+  - name: Administration
     tocHref: /azure/devops/server/
     topicHref: /azure/devops/server/index
   - name: Project Server integration
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index
-  - name: SharePoint Integration
-    tocHref: /azure/devops/report/sharepoint-dashboards/
-    topicHref: /azure/devops/report/sharepoint-dashboards/index
+

@@ -90,6 +90,8 @@
       href: agents/v1-windows.md
     - name: Running behind a proxy
       href: agents/proxy.md
+    - name: Running in Docker
+      href: agents/docker.md
     - name: Using a self-signed certificate
       href: agents/certificate.md
   - name: Artifacts
