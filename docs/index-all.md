@@ -74,6 +74,22 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
+                                                        <h3>Source control</h3>
+                                                        <p><a href="/azure/devops/repos/git/index">Git repositories</a></p>
+														<p><a href="/azure/devops/repos/git/pull-requests-overview">Pull requests</a></p>
+														<p><a href="/azure/devops/repos/git/forks-overview">Forks</a></p>
+														<p><a href="/azure/devops/repos/git/branch-policies-overview">Branch policies</a></p>
+														<p><a href="/azure/devops/repos/tfvc/index">Team Foundation version control</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
                                                         <h3>Continuous integration &amp; delivery</h3>
                                                         <p><a href="/azure/devops/pipelines/index">Build and release pipelines</a></p>
 														<p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
@@ -82,6 +98,68 @@ featureFlags:
 														<p><a href="/azure/devops/pipelines/library/index">Library assets</a></p>
 														<p><a href="/azure/devops/pipelines/agents/agents">Hosted &amp; private agents</a></p>
 														<p><a href="/azure/devops/pipelines/tasks">Task reference</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Reporting</h3>
+                                                        <p><a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, & Widgets</a></p>
+														<p><a href="/azure/devops/report/powerbi/index">Power BI Integration</a></p>
+														<p><a href="/azure/devops/report/extend-analytics/index">Extend Analytics with OData</a></p>
+														<p><a href="/azure/devops/report/sql-reports/index">SQL Server Reports (Legacy)</a></p>
+													</div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Share code</h3>
+                                                        <p><a href="/azure/devops/artifacts/overview">Package Management</a></p>
+														<p><a href="/azure/devops/artifacts/get-started-nuget">NuGet</a></p>
+														<p><a href="/azure/devops/artifacts/get-started-npm">npm</a></p>
+														<p><a href="/azure/devops/artifacts/get-started-maven">Maven</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Test</h3>
+                                                        <p><a href="/azure/devops/test/index">Exploratory &amp; manual testing</a></p>
+														<p><a href="/azure/devops/project/feedback/index">Request stakeholder feedback</a></p>
+														<p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
+														<p><a href="/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Social tools</h3>
+                                                        <p><a href="/azure/devops/project/wiki/project-vision-status">Project summary</a></p>
+														<p><a href="/azure/devops/project/wiki/index">Wiki</a></p>
+														<p><a href="/azure/devops/project/search/index">Search</a></p>
+														<p><a href="/azure/devops/project/navigation/set-favorites">Favorites</a></p>
+														<p><a href="/azure/devops/notifications">Notifications (Alerts)</a></p>
+														<p><a href="/azure/devops/organizations/public/index">Public Projects</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,12 +190,11 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <h3>Social tools</h3>
-                                                        <p><a href="/azure/devops/project/wiki/project-vision-status">Project summary</a></p>
-														<p><a href="/azure/devops/project/wiki/index">Wiki</a></p>
-														<p><a href="/azure/devops/project/search/index">Search</a></p>
-														<p><a href="/azure/devops/project/navigation/set-favorites">Favorites</a></p>
-														<p><a href="/azure/devops/organizations/public/index">Public Projects</a></p>
+                                                        <h3>Discover, manage, and develop extensions</h3>
+                                                        <p><a href="https://marketplace.visualstudio.com/azuredevops">Azure DevOps Marketplace</a></p>
+                                                        <p><a href="/azure/devops/extend/index">Develop extensions</a></p>
+                                                        <p><a href="/azure/devops/service-hooks/index">Service hooks</a></p>
+                                                        <p><a href="/azure/devops/integrate/index">Integrate applications</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -136,82 +213,6 @@ featureFlags:
                                                 </div>
                                             </div>
                                         </div> 
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>Share code</h3>
-                                                        <p><a href="/azure/devops/artifacts/overview">Package Management</a></p>
-														<p><a href="/azure/devops/artifacts/get-started-nuget">NuGet</a></p>
-														<p><a href="/azure/devops/artifacts/get-started-npm">npm</a></p>
-														<p><a href="/azure/devops/artifacts/get-started-maven">Maven</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-									<li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>Discover, manage, and develop extensions</h3>
-                                                        <p><a href="/azure/devops/extend/index">Develop extensions</a></p>
-                                                        <p><a href="/azure/devops/service-hooks/index">Service hooks</a></p>
-                                                        <p><a href="/azure/devops/integrate/index">Integrate applications</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-									<li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>Reports & Analytics</h3>
-                                                        <p><a href="/azure/devops/report/dashboards/index">Dashboards</a></p>
-														<p><a href="/azure/devops/report/analytics/index">Analytics Service</a></p>
-														<p><a href="/azure/devops/report/powerbi/index">Power BI</a></p>
-														<p><a href="/azure/devops/report/extend-analytics/index">Extend Analytics with OData</a></p>
-														<p><a href="/azure/devops/report/sql-reports/index">SQL Server Reports</a></p>
-													</div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>Source control</h3>
-                                                        <p><a href="/azure/devops/repos/git/index">Git repositories</a></p>
-														<p><a href="/azure/devops/repos/git/pull-requests-overview">Pull requests</a></p>
-														<p><a href="/azure/devops/repos/git/forks-overview">Forks</a></p>
-														<p><a href="/azure/devops/repos/git/branch-policies-overview">Branch policies</a></p>
-														<p><a href="/azure/devops/repos/tfvc/index">Team Foundation version control</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-									<li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>Test</h3>
-                                                        <p><a href="/azure/devops/test/index">Exploratory &amp; manual testing</a></p>
-														<p><a href="/azure/devops/project/feedback/index">Request stakeholder feedback</a></p>
-														<p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
-														<p><a href="/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </li>
                                 </ul>
                                 <p style="height: 20px;">&nbsp;</p>

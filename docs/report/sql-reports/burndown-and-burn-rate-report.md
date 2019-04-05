@@ -39,7 +39,7 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
 -   Filter the tasks that are counted in the report by specifying iteration and area paths and work item states. You can also filter the report to show user stories and bugs.  
   
- For more information, see [Filtering the Report and Changing the Display](#Changing) later in this topic.  
+ For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
  You can use the Burndown and Burn Rate report to understand how well the team is progressing and whether the team or a team member is over-allocated. The upper section of the report displays a version of the Remaining Work report, as the following illustration shows.  
   
@@ -102,7 +102,7 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
 -   Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, work item types, and work item states.  
   
- For more information, see [Filtering of the Report and Changing the Display](#Changing) later in this topic.  
+ For more information, see [Filtering of the Report and Changing the Display](#Changing) later in this article.  
   
 ### Questions That the Report Answers  
  You can review the report to determine the progress that the team made within an iteration or over time. For example, you can find answers to the following questions:  

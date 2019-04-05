@@ -1,6 +1,6 @@
 ---
 title: Create a Power BI report with an Analytics view
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Quick start helping users to create a trend report using an Analytics view
 ms.prod: devops
 ms.technology: devops-analytics
@@ -15,13 +15,13 @@ ms.date: 12/04/2018
 
 # Create a Power BI report with a default Analytics view
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
+With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics service data store. 
 
 If you don't have Power BI Desktop, you can [download](https://powerbi.microsoft.com/desktop) and install it for free.
 
-You can create status and trend reports of your work tracking data using one of the default Analytics views available to you. As needed, you can also [create a custom Analytics view](../analytics/analytics-views-create.md). 
+You can create status and trend reports of your work tracking data using one of the default Analytics views available to you. As needed, you can also [create a custom Analytics view](analytics-views-create.md). 
  
 Follow these steps to create two reports in Power BI desktop that shows a **daily trend of backlog items** and a **count of active user stories** based on a default **Analytics view**:
 
@@ -39,12 +39,32 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 
 In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
-* You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to the project, except stakeholders, can view Analytics views.
-* Have installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
+
+
+::: moniker range="azure-devops"
+
+- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates). 
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics service](/azure/devops/report/powerbi/analytics-security).
+- **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). 
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+-  You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
+* Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+* **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
+- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have tracked work items for some period of time on which to generate a trend report. 
+
+::: moniker-end
+
 
 [!INCLUDE [temp](../_shared/analytics-open.md)]
 
@@ -70,7 +90,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
-	To learn more about defining views, see [Create an Analytics view](../analytics/analytics-views-create.md).  
+	To learn more about defining views, see [Create an Analytics view](analytics-views-create.md).  
 
 ::: moniker range="azure-devops-2019"
 
@@ -78,10 +98,10 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. Open Power BI Desktop.  
  
-0. Choose **Get Data**, choose **Online Services**, then **Azure DevOps Server (Beta)**, and then click **Connect**. 
+0. Choose **Get Data**, **Online Services**, **Azure DevOps Server (Beta)**, and then choose **Connect**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Connect to data](_img/data-connector-get-data-onprem.png)  
+    > ![Connect to data](_img/data-connector/get-data-azure-devops-server.png)  
 
 0. Enter your collection URL and Team project for the data you want to report on.  
 
@@ -106,10 +126,10 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. Open Power BI Desktop.  
  
-0. Choose **Get Data**, choose **Online Services**, then **Azure DevOps (Beta)**, and then click **Connect**. 
+0. Choose **Get Data**, **Online Services**, **Azure DevOps (Beta)**, and then choose **Connect**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Connect to data](_img/create-report/get-data-2.png)  
+    > ![Connect to data](_img/data-connector/get-data-azure-devops.png)   
 
 0. Enter your organization name and project name for the data you want to report on.  
 
@@ -201,6 +221,6 @@ The reports shown in this quickstart illustrate how easy it is to generate repor
 ## Related articles 
 - [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
-- [Create Analytics views](../analytics/analytics-views-create.md)
+- [Create Analytics views](analytics-views-create.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)

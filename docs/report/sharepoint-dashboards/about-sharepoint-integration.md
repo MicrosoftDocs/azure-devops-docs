@@ -107,7 +107,7 @@ This will occur without laborious configurations. It will just work. It will als
 
 If you need more than the built-in dashboards can offer, Power BI reports and Excel charts can be embedded on a SharePoint site. This functionality is available today.
 
-We will update this topic as we provide additional SharePoint integrations.  -->
+We will update this article as we provide additional SharePoint integrations.  -->
 
 ## Referenced topics
 
