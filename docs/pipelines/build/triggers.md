@@ -469,21 +469,21 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 1. Edit your build pipeline.
 
-2. Add the **Download Build Artifacts** task to one of your jobs under **Tasks**.
+1. Add the **Download Build Artifacts** task to one of your jobs under **Tasks**.
 
-3. For **Download artifacts produced by**, select **Specific build**.
+1. For **Download artifacts produced by**, select **Specific build**.
 
-4. Select the team **Project** that contains the triggering build pipeline.
+1. Select the team **Project** that contains the triggering build pipeline.
 
-5. Select the triggering **Build pipeline**.
+1. Select the triggering **Build pipeline**.
 
-6. Select **When appropriate, download artifacts from the triggering build**.
+1. Select **When appropriate, download artifacts from the triggering build**.
 
-7. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
+1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
 
-8. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
+1. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
 
-9. Specify the **Destination directory** to which you want to download the artifacts. For example: `$(Build.BinariesDirectory)`
+1. Specify the **Destination directory** to which you want to download the artifacts. For example: `$(Build.BinariesDirectory)`
 
 ---
 
