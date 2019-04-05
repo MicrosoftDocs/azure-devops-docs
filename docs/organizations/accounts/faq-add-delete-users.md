@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/04/2019
+ms.date: 03/28/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -20,11 +20,11 @@ monikerRange: 'azure-devops'
 
 ## Permissions
 
-### Q: Why can't I manage users?
+#### Q: Why can't I manage users?
 
-A: To access and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-organization-owner).
+A: To access and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-owner).
 
-<a name="find-organization-owner"></a>
+<a name="find-owner"></a>
 
 [!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
 
@@ -34,9 +34,11 @@ A: To access and manage users, you must have Azure DevOps [project collection ad
 
 [!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
 
+## Visual Studio subscriptions
+
 <a name="MSDNSubscriber"></a>
 
-### Q: When do I select "Visual Studio/MSDN Subscriber"?
+#### Q: When do I select "Visual Studio/MSDN Subscriber"?
 
 A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the subscription.
 
@@ -44,56 +46,56 @@ For example, if a user selects **Visual Studio/MSDN Subscriber** but the user do
 
 <a name="EligibleMSDNSubscriptions"></a>
 
-### Q: Which Visual Studio subscriptions can I use with Azure DevOps?
+#### Q: Which Visual Studio subscriptions can I use with Azure DevOps?
 
-A: See [Azure DevOps benefits for Visual Studio subscribers](/visualstudio/subscriptions/vs-vsts).
+A:  See [Azure DevOps benefits for Visual Studio subscribers](/visualstudio/subscriptions/vs-vsts).
 
 <a name="enterprise-professional"></a>
 
 <a name="ValidateMSDNSubscription"></a>
 
-### Q: Why won't my Visual Studio subscription validate?
+#### Q: Why won't my Visual Studio subscription validate?
 
 A: See [Why won't Azure DevOps recognize my Visual Studio subscription?](/visualstudio/subscriptions/vs-alternate-identity#faq)
 
 <a name="why-access-changed"></a>
 
-### Q: Why do Visual Studio subscriber access levels change after a subscriber signs in?
+#### Q: Why do Visual Studio subscriber access levels change after a subscriber signs in?
 
 A: Azure DevOps recognizes Visual Studio subscribers. Azure DevOps automatically assigns a user access that's based on the user's subscription and not on the current access level that's assigned to the user.
 
 <a name="subscription-expired"></a>
 
-### Q: What happens if a user's subscription expires?
+#### Q: What happens if a user's subscription expires?
 
 A: If no other access levels are available, users can [work as stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
 
 <a name="extension-transition"></a>
 
-### Q: What happened to Visual Studio Online Professional?
+#### Q: What happened to Visual Studio Online Professional?
 
-A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly).
+A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Users are transitioned automatically to the subscription.
 
-Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, you need to transition manually to get the new offering. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
+Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users are transitioned systematically. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
 
 The rest stays the same. You get monthly access to the Visual Studio Professional IDE. Pricing remains the same at $45 per user, per month. Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
 If you're purchasing user access to Visual Studio Professional for a specific organization (possible only if you purchased before November 2015) and want to upgrade, do the following:
 
-1. Before the last day of the calendar month, sign in to your organization. Select **Organization settings**, and then **Billing**. Reduce the number of paid Visual Studio Online Professional users to 0.
+1. Before the last day of the calendar month, sign in to the [Azure portal](https://portal.azure.com). Reduce the number of paid Visual Studio Online Professional users to 0. 
 
 	This change takes effect on the first day of the next month. For the rest of the current calendar month, you aren't billed for any Visual Studio Online Professional users.
 
-2. On the first day of the next calendar month, [go to Visual Studio Marketplace Subscriptions > Visual Studio Professional - monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
+1. On the first day of the next calendar month, [go to Visual Studio Marketplace Subscriptions > Visual Studio Professional - monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
 
    > [!NOTE]
    > If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/billing-faq.md).
 
 ## User access
 
-### Q: What does "Last Access" mean in the All Users view?
+#### Q: What does "Last Access" mean in the All Users view?
 
-A: The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you might access the service by pushing code to Azure DevOps from a Git command line or IDE.
+The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you might access the service by pushing code to Azure DevOps from a Git command line or IDE.
 
 <a name="paid-basic-access-join-other-organizations"></a>
 
@@ -105,13 +107,13 @@ A: The value in **Last Access** is the last date a user accessed any resources o
 
 <a name="stopped-features"></a>
 
-### Q: Why does a user lose access to some features?
+#### Q: Why does a user lose access to some features?
 
 A: This might happen for different reasons (although the user can continue to [work as a stakeholder](../../organizations/security/get-started-stakeholder.md)):
 
 *	The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
 
-*	The Azure subscription used for billing is no longer active. This affects all purchases made with this subscription, including Visual Studio subscriptions. To fix this issue, visit the **Billing** tab within **Organization settings**.
+*	The Azure subscription used for billing is no longer active. This affects all purchases made with this subscription, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 
 *	The Azure subscription used for billing was unlinked from your organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
 
@@ -125,13 +127,13 @@ A: This might happen for different reasons (although the user can continue to [w
 
 	*	The extension was uninstalled. Users can reinstall the extension by visiting the extension page in the [Marketplace](https://marketplace.visualstudio.com).
 
-	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your organization or might no longer be active. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md) to check payment details.
+	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your organization or might no longer be active. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
 
-## Azure Active Directory and your organization
+### Azure Active Directory and your organization
 
 <a name="AddUserDirectory"></a>
 
-### Q: Why do I have to add users to a directory?
+#### Q: Why do I have to add users to a directory?
 
 A: Your organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
@@ -143,17 +145,17 @@ If you're a directory administrator, you can [add users to the directory](https:
 
 <a name="DeleteFromDirectory"></a>
 
-### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
+#### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
 A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
 
-### Q: Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
+## Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
 
-A: You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. By default, Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. Learn how to [convert an Azure AD guest into a member](#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
+You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. By default, Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. Learn how to [convert an Azure AD guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
 
-### Q: How can I convert an Azure AD guest into a member?
+## How can I convert an Azure AD guest into a member?
 
-A: Select from the following two options:
+Select from the following two options:
 
 * Have the Azure AD administrator(s) remove you from the Azure AD and re-add you, making you an Azure AD *member* rather than a *guest* when they do. For more information, see [Can Azure AD B2B users be added as members instead of guests](https://docs.microsoft.com/en-us/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
 * [Change the UserType of the Azure AD guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). This is an advanced process and [is not advised](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fb2b%2Fuser-properties%23convert-usertype&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cf59a62633fb447b1aaaa08d6b3b86e00%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636894002034849797&sdata=flX3JmpUn8m5sqr%2Fxmc%2B9BPEGJEEUcUPcaXRwLub40s%3D&reserved=0), but it allows the user to query Azure AD from the Azure DevOps organization thereafter.
