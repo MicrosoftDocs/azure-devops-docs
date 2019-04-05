@@ -10,15 +10,15 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/04/2019
+ms.date: 12/21/2018
 monikerRange: 'azure-devops'
 ---
 
-# Set up billing for your organization
+# Quickstart: Set up billing for your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn to set up billing for your organization in advance of making purchases, so that you'll have this in place once you're ready to buy. You can also make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to set up billing for your organization. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
+In this quickstart, you learn to set up billing for your organization in advance of making purchases, so that you'll have this in place once you're ready to buy. But the preferred method is to simply make an initial purchase. Make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) to set up billing for your organization. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
 
 *All services are billed via Azure*, and you're not required to use any other Azure services.
 
@@ -26,32 +26,38 @@ If you don't have an Azure subscription, [create one](https://azure.microsoft.co
 
 ## Prerequisites
 
-Ensure the following is true for the user who's setting up billing for the first time:
+The first time you set up billing for your organization, whether via the Azure portal or as part of making a purchase in the Visual Studio Marketplace - you'll need the following:
 
-* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-organization-owner)
-* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
+* [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* [An Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
-## Set up billing
+To make subsequent edits to paid quantities in your organization, you only need access to [purchase on the Azure subscription](add-backup-billing-managers.md).
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+## Set up billing via the Azure portal
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+If you want to set up billing for your organization before buying something in the Visual Studio Marketplace, you can do so from within the Azure portal.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+1. [Sign in to the Azure portal](https://portal.azure.com/) as organization owner and as a user who can [make purchases on an Azure subscription](add-backup-billing-managers.md).
 
-3. Select **Billing**.
+    [Browser problems in Azure?](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 
-    ![Select Billing from Organization settings](_img/_shared/select-billing-organization-settings.png)
+2. Select **All services**, and then select **Azure DevOps organizations**.
+
+   ![Select Azure DevOps organizations under All services](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+
+3. Select your organization.
+
+  ![Select your organization](../accounts/_img/_shared/azure-portal-select-organization.png)
 
 4. Select **Set up billing**.
 
-   ![Select Set up billing](_img/_shared/set-up-billing.png)
+    ![Select the link button over the middle panel](_img/set-up-billing/azure-portal-choose-set-up-billing.png)
 
-5. Select your Azure subscription, and then select **Save**.
+5. Select your Azure subscription, and then select **Link**.
 
-   ![Select your Azure subscription](_img/_shared/select-azure-subscription.png)
+   ![Select an Azure subscription](_img/set-up-billing/azure-portal-link-your-organization.png)
 
-Billing is set up.
+ After the link is set up in Azure, your organization appears linked to your Azure subscription.
 
 ## Next steps
 
