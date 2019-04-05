@@ -268,7 +268,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/chat/rooms/12797?api-version=1
 ```
 
 
-## Delete room ##
+## Delete room
 
 ```no-highlight
 DELETE https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}?api-version={version}

@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 02/07/2019
@@ -104,7 +105,7 @@ The default assignments of work item types to each category are listed below for
 | Scrum | Product Backlog Item, Bug | Task |
 | CMMI | Requirement | Task |
 
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../../reference/add-modify-wit.md). 
+However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
 ## Common fields for most work item types 
 

@@ -11,8 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 03/21/2019
---- 
+ms.date: 11/19/2018
+---
 
 # Tutorial: Follow a user story, bug, issue, or other work item or pull request  
 

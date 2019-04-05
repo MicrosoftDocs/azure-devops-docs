@@ -45,11 +45,11 @@ The following changes, categorized by release date, were added to Release Manage
  - [March 15, 2016 Update](#update-mar15-16)
  - [February 24, 2016 Update](#update-feb24-16)
  - [February 11, 2016 Update](#update-feb11-16)
- - [December 1, 2015 Update ](#update-dec1-15)
+ - [December 1, 2015 Update](#update-dec1-15)
  - [November 18, 2015 Update](#update-nov18-15)
  - [November 03, 2015 Update](#update-nov3-15)
- - [October 19, 2015 Update ](#update-oct19-15)
- - [September 21, 2015 Update ](#update-sep21-15)
+ - [October 19, 2015 Update](#update-oct19-15)
+ - [September 21, 2015 Update](#update-sep21-15)
  - [September 4, 2015 Update](#update-sep4-15)
 
 <a name="update-nov23-16"></a>

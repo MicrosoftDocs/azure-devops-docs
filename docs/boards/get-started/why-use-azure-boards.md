@@ -130,7 +130,4 @@ Get started today. To learn how, see [Sign up for free and invite others to coll
 
 ##Related articles
 
-- [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
-
-
-
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)

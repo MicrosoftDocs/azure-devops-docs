@@ -96,8 +96,6 @@ You can use the **unshelve** command to restore individual file revisions from a
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 
-### 
-
 #### Recycle Shelved Changes
 
 If you want to integrate shelved revisions into your current workspace in order to make ongoing revisions, unshelve the desired shelveset. As a best practice, get the latest version of your version-controlled files after unshelving as well.

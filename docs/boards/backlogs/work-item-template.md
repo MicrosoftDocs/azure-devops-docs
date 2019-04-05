@@ -473,7 +473,7 @@ To make frequently-used templates more accessible, you can set a default templat
 ### Set your template directory  
 To change the directory where templates are stored, click the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
 
---- 
+---
 
 ::: moniker range=">= tfs-2017"
 
