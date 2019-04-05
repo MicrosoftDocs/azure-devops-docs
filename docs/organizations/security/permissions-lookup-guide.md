@@ -38,8 +38,8 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
 <li>[Alerts (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 <li>[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)</li>
-<li>[Analytics Service (Project)](../../report/analytics/analytics-security.md)</li>
-<li>[Analytics views (Object)](../../report/analytics/analytics-security.md)</li>
+<li>[Analytics Service (Project)](../../report/powerbi/analytics-security.md)</li>
+<li>[Analytics views (Object)](../../report/powerbi/analytics-security.md)</li>
 <li>[Area path (Object)](set-permissions-access-work-tracking.md)</li>
 <li>[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)</li>
 </ul>
@@ -108,7 +108,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li>[Policies, Git branch (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Policies, Git repository (Object)](set-git-tfvc-repository-permissions.md)</li>
-<li>[Power BI (Analytics Service)](../../report/analytics/analytics-security.md)</li>
+<li>[Power BI (Analytics Service)](../../report/powerbi/analytics-security.md)</li>
 <li>[Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)</li>
 <li>[Project properties (Project)](set-project-collection-level-permissions.md)</li>
 <li>[Project-level information](set-project-collection-level-permissions.md)</li>
@@ -183,8 +183,8 @@ Values in parenthesis indicate what level the permission is managed:
 <li>[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)</li>
 <li>[Alerts (Collection)](/azure/devops/server/ref/command-line/tfssecurity-cmd#collection-level-permissions)</li>
 <li>[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)</li>
-<li>[Analytics Service (Project)](../../report/analytics/analytics-security.md)</li>
-<li>[Analytics views (Object)](../../report/analytics/analytics-security.md)</li>
+<li>[Analytics Service (Project)](../../report/powerbi/analytics-security.md)</li>
+<li>[Analytics views (Object)](../../report/powerbi/analytics-security.md)</li>
 <li>[Area path (Object)](set-permissions-access-work-tracking.md)</li>
 <li>[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)</li>
 </ul>
@@ -257,7 +257,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li>[Policies, Git branch (Object)](../../repos/git/branch-permissions.md)</li>
 <li>[Policies, Git repository (Object)](set-git-tfvc-repository-permissions.md)</li>
-<li>[Power BI (Analytics Service)](../../report/analytics/analytics-security.md)</li>
+<li>[Power BI (Analytics Service)](../../report/powerbi/analytics-security.md)</li>
 <li>[Process (Collection)](set-permissions-access-work-tracking.md#process-permissions)</li>
 <li>[Project collection (Server)](permissions.md#server-permissions)</li>
 <li>[Project properties (Project)](set-project-collection-level-permissions.md)</li>

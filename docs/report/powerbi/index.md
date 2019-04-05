@@ -1,6 +1,6 @@
 ---
 title: Create Power BI reports from Analytics service 
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Create PowerBI charts, reports, and dashboards based on the Analytics  Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,14 +9,17 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/04/2018
+ms.date: 04/05/2019
 ---
 
-# Power BI for Azure DevOps
+# Power BI Integration
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]  
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]  
 
-With Power BI, you can quickly generate reports for your projects in Azure DevOps based on the Analytics Service. To learn more about Analytics, see [What is Analytics?](../analytics/what-is-analytics.md) and [Reporting Roadmap](../analytics/reporting-roadmap.md).
+With Power BI, you can quickly generate reports for your projects in Azure DevOps based on the Analytics service. To learn more about Analytics, see [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](reporting-roadmap.md).
+
+[!INCLUDE [temp](../_shared/powerbi-preview.md)]
+
 
 ## 5-Minute Quickstarts
  - [Create a Power BI report with an Analytics view](create-quick-report.md)
@@ -30,17 +33,17 @@ Learn how to build stunning reports using Power BI Desktop.
 
 ## Tutorials 
 
-- [Create an Analytics view](../analytics/analytics-views-create.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json) 
-- [Manage Analytics views](../analytics/analytics-views-manage.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json) 
+- [Create an Analytics view](analytics-views-create.md) 
+- [Manage Analytics views](analytics-views-manage.md) 
 
 
 ## How-to Guides
 - [Connect using the Data Connector](data-connector-connect.md)
 - [Connect using OData feed](access-analytics-power-bi.md)    
 - [Connect using Azure DevOps functions (Advanced)](data-connector-functions.md)  
-- [Client OData authentication](../analytics/client-authentication-options.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
+- [Client OData authentication](client-authentication-options.md)
 - [Publish to PowerBI.com](publish-power-bi-desktop-to-power-bi.md) 
-- [Set permissions (Security)](../analytics/analytics-security.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
+- [Set permissions (Security)](analytics-security.md)
 
 ## Samples
 - [Example Power BI Reports using the Data Connector](data-connector-examples.md)  
@@ -52,15 +55,14 @@ Learn how to build stunning reports using Power BI Desktop.
 
 
 ## References
-- [Default Analytics views](../analytics/analytics-default-views.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json)
-- [Create Analytics views](../analytics/analytics-views-create.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)
+- [Default Analytics views](analytics-default-views.md)
+- [Create Analytics views](analytics-views-create.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 
 
 ## Resources 
-- [Analytics](../analytics/index.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)    
-- [Extend Analytics with OData](../extend-analytics/index.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)    
-- [Dashboards & widgets](../dashboards/index.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json)  
+- [Extend Analytics with OData](../extend-analytics/index.md)    
+- [Dashboards, Charts, Reports & Widgets](../dashboards/index.md)  
 - [PowerBI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/)  
 - [PowerBI Documentation](https://powerbi.microsoft.com/documentation/powerbi-landing-page/)  
 

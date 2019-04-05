@@ -1,6 +1,6 @@
 ---
 title: Set dashboard permissions for team members
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: How to set permissions to create, edi, or delete dashboards 
 ms.custom: dashboards
 ms.technology: devops-analytics
@@ -17,7 +17,7 @@ ms.date: 02/08/2018
 <a id="set-permissions">  </a>
 # Set dashboard permissions    
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)] 
 
 ::: moniker range=">= azure-devops-2019"
 As a member of the Project Administrators group, you can set the default dashboard permissions for all teams. As a team or project administrator, you can set individual dashboard permissions for team members. The permissions only affect the team members to which the dashboards belongs. 

@@ -9,7 +9,7 @@ ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/17
 ---
 
@@ -60,7 +60,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 -   Filter the build definitions by specifying the platforms, configurations, and build definitions to include in the report.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+ For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Build Management Activities  
  For the Build Success Over Time report to be useful, team members must perform the following activities to manage builds:  
