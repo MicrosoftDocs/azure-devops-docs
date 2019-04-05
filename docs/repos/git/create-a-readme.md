@@ -37,7 +37,7 @@ Here are some great readmes that use this format and speak to all three audience
 ## Create an intro
 
 Start your readme off with a short explanation describing your project. Add a screenshot or animated GIF in your intro if your project has a user interface. 
-If your code relies on or another application or library, make sure to state those dependencies in the intro or right below it. 
+If your code relies on another application or library, make sure to state those dependencies in the intro or right below it. 
 Apps and tools that run only on specific platforms should have the supported operating system versions noted in this section of the readme.
 
 ## Help your users get started
