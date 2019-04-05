@@ -34,7 +34,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 
 1. Inform users of the upcoming change.
    There's no downtime during this change, but users are affected by it. Let them know before you begin that there's a short series of steps they must complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
-2. The user who makes the connection must exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](faq-add-delete-users.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member)].
+2. The user who makes the connection must exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](faq-add-delete-users.md#how-can-i-convert-an-azure-ad-guest-into-a-member).
 3. The user who makes the connection must be a project collection administrator or [owner of the organization](../security/lookup-organization-owner-admin.md).
 4. Delete unwanted users from the organization by selecting **Organization settings** > **Users**,   highlights the user that you want to remove, and then choose **Remove from organization**. For example, remove a user who left the company last month and is no longer an employee.
 
