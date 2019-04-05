@@ -27,7 +27,7 @@ A new version of the [VSTS Demo Generator](#vsts-demo-generator) is also availab
 ### Build
 
 - [Build Ruby apps based on a variety of Ruby versions](#build-ruby-apps-based-on-a-variety-of-ruby-versions)
-- [Build, test, and publish Python apps based on a variety of Python versions](#build,-test,-and-publish-python-apps-based-on-a-variety-of-python-versions)
+- [Build, test, and publish Python apps based on a variety of Python versions](#build-test-and-publish-python-apps-based-on-a-variety-of-python-versions)
 - [Build Java apps on hosted agents with Java 10](#build-java-apps-on-hosted-agents-with-java-10)
 - [Leverage improved Xcode build and test output from xcpretty](#leverage-improved-xcode-build-and-test-output-from-xcpretty)
 

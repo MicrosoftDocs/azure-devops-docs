@@ -357,7 +357,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 > While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
 
 > [!NOTE]   
-> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac-and-import-files). The above guidelines are for SQL Azure VMs only. 
+> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac). The above guidelines are for SQL Azure VMs only. 
 
 Below are some additional recommended configurations for your SQL Azure VM.
 
@@ -461,9 +461,9 @@ You will need to add exceptions for all three services that make up Azure Artifa
 
 |    Service                                          |    IP               |
 |-----------------------------------------------------|---------------------|
-|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25     |
+|    Azure Artifacts Blob - United States          |    70.37.94.103, 40.78.129.25, 40.67.155.236, 52.230.216.163     |
 |    Azure Artifacts Blob - West Europe            |    23.97.221.25     |
-|    Azure Artifacts Blob - Australia East         |    40.127.86.30, 20.188.213.113   |
+|    Azure Artifacts Blob - Australia East         |    40.127.86.30, 20.188.213.113, 40.82.221.14   |
 |    Azure Artifacts Blob - Brazil South           |    191.235.90.183   |
 |    Azure Artifacts Blob - India South            |    52.172.54.122    |
 |    Azure Artifacts Blob - Canada Central         |    52.237.16.145, 52.237.16.145, 52.233.38.115, 40.82.187.186     |

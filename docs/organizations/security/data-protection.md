@@ -141,7 +141,7 @@ If during your penetration testing you believe you have discovered a potential s
 
 ### Azure DevOps Bug Bounty Program
 
-Azure DevOps participates in the [Microsoft Cloud Bounty Program](https://www.microsoft.com/en-us/msrc/bounty-microsoft-cloud) to reward security researchers who report issues to us, and to encourage more people to help us keep Azure DevOps secure. Please visit the [Azure DevOps Bounty Progam](https://www.microsoft.com/en-us/msrc/bounty-azure-devops) page for more details. 
+Azure DevOps participates in the [Microsoft Cloud Bounty Program](https://www.microsoft.com/en-us/msrc/bounty-microsoft-cloud) to reward security researchers who report issues to us, and to encourage more people to help us keep Azure DevOps secure. Please visit the [Azure DevOps Bounty Program](https://www.microsoft.com/en-us/msrc/bounty-azure-devops) page for more details. 
 
 ### Restricting access
 

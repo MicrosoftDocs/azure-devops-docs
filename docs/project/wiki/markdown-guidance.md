@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: sancha
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 03/06/2019
+ms.date: 03/21/2019
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -425,8 +425,6 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 ::: moniker range=">= tfs-2018"
 
-
-
 <a id="relative-links">  </a>
 
 ### Source control relative links
@@ -496,12 +494,12 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Example:**
 
 <pre>
-![Illustration to use for new users](https://docs.microsoft.com/media/illustrations/bcs-user-management-add-customer-1.svg)
+![Illustration to use for new users](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
 </pre>
 
 <br/>
 **Result:**
-![Illustration of linked image](https://docs.microsoft.com/media/illustrations/bcs-user-management-add-customer-1.svg)
+![Illustration of linked image](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
 
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 <ul>
@@ -514,8 +512,9 @@ The path to the image file can be a relative path or the absolute path in Git or
 > [!NOTE]
 > The syntax to support image resizing is only supported in pull requests and in the Wiki.
 
-::: moniker range=">= tfs-2017"
+::: moniker-end
 
+::: moniker range=">= tfs-2017"
 ## Checklist or task list
 
 Lightweight task lists are great ways to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.

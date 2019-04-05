@@ -1,21 +1,21 @@
 ---
 title: Add a time-in-state measure to a PowerBI report 
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on the Analytics service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
-ms.reviewer: jozimm
+ms.reviewer: angurusw
 ms.manager: jillfra
 ms.author: kaelli
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/18/2018
+ms.date: 04/05/2019
 ---
 
 # Calculate time-in-state for an existing Analytics view
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 The time a work item spends in a specific state or series of states is an important aspect for understanding efficiency. The Analytics widgets, [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md), provide some measures of time-in-state. However, these widgets may not have the level of detail that you want. 
 
@@ -338,7 +338,7 @@ The next parameter, `'View Name'[Work Item Id], 'View Name'[Work Item Id]`, spec
 And, the last parameter, `'View Name'[Date], 'View Name'[Date Previous]`, specifies that the date of the row being returned must have a [Date] that matches the [Previous Date] of the current row. In a snapshot only one row can meet this criteria.
 
 <a id="state-changed" />
-
+<a id="state-previous" />
 ## Add *State Changed* 
 
 Using the *State Previous* column, we can flag the rows for each work item where a state transition has occurred. The *Stage Changed* calculated column you'll add has two special considerations:
@@ -346,7 +346,7 @@ Using the *State Previous* column, we can flag the rows for each work item where
 * Creation of a work item is considered a state transition
 
 > [!IMPORTANT]  
-> Requires that you have added the [*State Previous*](#state-previous) calculated column to the table.
+> Requires that you have added the [*State Previous*](#add-state-previous) calculated column to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
@@ -367,7 +367,7 @@ IF (
 With *State Previous* and *State Changed* calculated columns, you can create a column that will help illustrate the State Flow for a given work item. Creating this column is optional for the purposes of this article.
 
 > [!IMPORTANT]  
-> Requires that you have added the [State Previous](#state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
+> Requires that you have added the [State Previous](#add-state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
@@ -491,8 +491,8 @@ Additional information is provided in this section for the DAX functions used to
 ## Related articles
 
 - [Power BI integration overview](overview.md) 
-- [Create Analytics views](../analytics/analytics-views-create.md)
+- [Create Analytics views](analytics-views-create.md)
 - [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
-- [Data model for the Analytics Service](../extend-analytics/data-model-analytics-service.md)
+- [Data model for the Analytics service](../extend-analytics/data-model-analytics-service.md)

@@ -45,7 +45,7 @@ In order to disable the data warehouse and cube, you must have an Azure DevOps S
 
 ## Try this next
 
-For future reporting needs, please take a look at our [Analytics Service](../analytics/what-is-analytics.md).
+For future reporting needs, please take a look at our [Analytics Service](../powerbi/what-is-analytics.md).
 
 
  

@@ -70,26 +70,6 @@
     href: apps/cd/deploy-docker-webapp.md
   - name: Windows VM
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
-- name: Artifacts
-  items:
-  - name: Overview
-    href: artifacts/artifacts-overview.md
-  - name: Pipeline artifacts (Preview)
-    href: artifacts/pipeline-artifacts.md
-  - name: Build artifacts
-    href: artifacts/build-artifacts.md
-  - name: Maven
-    href: artifacts/maven.md
-  - name: npm
-    href: artifacts/npm.md
-  - name: NuGet
-    href: artifacts/nuget.md
-  - name: Python 
-    href: artifacts/pypi.md
-  - name: Symbols
-    href: artifacts/symbols.md
-  - name: Universal 
-    href: artifacts/universal-packages.md
 - name: Concepts
   items:
   - name: Agents
@@ -110,22 +90,64 @@
       href: agents/v1-windows.md
     - name: Running behind a proxy
       href: agents/proxy.md
+    - name: Running in Docker
+      href: agents/docker.md
     - name: Using a self-signed certificate
       href: agents/certificate.md
-  - name: Builds
+  - name: Artifacts
     items:
-    - name: History
-      href: build/history.md
-    - name: Options
-      href: build/options.md
-    - name: Triggers
-      href: build/triggers.md
-    - name: Predefined variables
-      href: build/variables.md
-  - name: Integrations
+    - name: Overview
+      href: artifacts/artifacts-overview.md
+    - name: Pipeline artifacts (Preview)
+      href: artifacts/pipeline-artifacts.md
+    - name: Build artifacts
+      href: artifacts/build-artifacts.md
+    - name: Maven
+      href: artifacts/maven.md
+    - name: npm
+      href: artifacts/npm.md
+    - name: NuGet
+      href: artifacts/nuget.md
+    - name: Python 
+      href: artifacts/pypi.md
+    - name: Symbols
+      href: artifacts/symbols.md
+    - name: Universal 
+      href: artifacts/universal-packages.md
+  - name: Build number
+    href: build/options.md
+  - name: Conditions
+    href: process/conditions.md
+  - name: Expressions
+    href: process/expressions.md
+  - name: Jobs
+    items: 
+    - name: Jobs
+      href: process/phases.md
+    - name: Container jobs
+      href: process/container-phases.md
+    - name: Server jobs
+      href: process/server-phases.md
+    - name: Deployment group jobs
+      href: process/deployment-group-phases.md
+    - name: Multiple jobs
+      href: process/multiple-phases.md
+    - name: Service containers
+      href: process/service-containers.md
+  - name: Licensing
     items:
-    - name: Slack
-      href: integrations/slack.md
+    - name: Parallel jobs
+      href: licensing/concurrent-jobs.md
+    - name: Pipelines
+      href: licensing/concurrent-pipelines-tfs.md
+  - name: Permissions
+    items:
+    - name: "Set build and release permissions"
+      href: policies/set-permissions.md 
+    - name: Permissions & security roles
+      href: policies/permissions.md
+  - name: Predefined variables
+    href: build/variables.md
   - name: Releases
     items:
     - name: Why use release pipelines?
@@ -166,35 +188,30 @@
       href: repos/tfvc.md
     - name: Pipeline options for Git
       href: repos/pipeline-options-for-git.md
-  - name: Pipelines
+  - name: Resources
+    href: process/resources.md
     items:
-    - name: Tasks
-      href: process/tasks.md
-    - name: Jobs
-      items: 
-      - name: Jobs
-        href: process/phases.md
-      - name: Container jobs
-        href: process/container-phases.md
-      - name: Server jobs
-        href: process/server-phases.md
-      - name: Deployment group jobs
-        href: process/deployment-group-phases.md
-      - name: Multiple jobs
-        href: process/multiple-phases.md
-      - name: Service containers
-        href: process/service-containers.md
-    - name: Conditions
-      href: process/conditions.md
-    - name: Expressions
-      href: process/expressions.md
-    - name: Variables
-      href: process/variables.md
-    - name: Resources
-      href: process/resources.md
-    - name: Templates
-      href: process/templates.md
-  - name: Scripts
+    - name: Secure files
+      href: library/secure-files.md
+    - name: Service connections
+      href: library/service-endpoints.md
+    - name: Variable groups
+      href: library/variable-groups.md
+  - name: Retention policy
+    href: policies/retention.md
+  - name: Task groups
+    href: library/task-groups.md
+  - name: Tasks
+    href: process/tasks.md
+  - name: Templates
+    href: process/templates.md
+  - name: Triggers
+    href: build/triggers.md
+  - name: Variables
+    href: process/variables.md
+- name: How-to Guides
+  items:
+  - name: Build
     items:
     - name: Cross-platform scripts
       href: scripts/cross-platform-scripting.md
@@ -202,41 +219,10 @@
       href: scripts/powershell.md
     - name: Run Git commands
       href: scripts/git-commands.md
-  - name: Library
-    href: library/index.md
-    items:
-    - name: Variable groups
-      href: library/variable-groups.md
-    - name: Task groups
-      href: library/task-groups.md
-    - name: Service connections
-      href: library/service-endpoints.md
-    - name: Secure files
-      href: library/secure-files.md
-  - name: Licensing
-    items:
-    - name: Parallel jobs
-      href: licensing/concurrent-jobs.md
-    - name: Pipelines
-      href: licensing/concurrent-pipelines-tfs.md
-  - name: Retention policies
-    href: policies/retention.md
-  - name: Permissions
-    items:
-    - name: "Set build and release permissions"
-      href: policies/set-permissions.md 
-    - name: Permissions & security roles
-      href: policies/permissions.md
-- name: How-to Guides
-  items:
-  - name: Build
-    items:
     - name: Build multiple branches
       href: build/ci-build-git.md
     - name: Build on multiple platforms
       href: get-started-multiplatform.md
-    - name: Build a repo using the classic editor
-      href: build/ci-build-github.md
     - name: Use Content Trust
       href: build/content-trust.md
   - name: Release
@@ -299,6 +285,10 @@
         href: packages/nuget-restore.md
       - name: Set up Jenkins + NuGet
         href: packages/jenkins.md
+  - name: Integrate
+    items:
+    - name: Slack
+      href: integrations/slack.md
   - name: Migrate
     items:
     - name: Migrate from Jenkins

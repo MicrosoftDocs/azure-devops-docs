@@ -6,15 +6,15 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install free Azure DevOps extensions
+  - name: Install free Azure DevOps Services extensions
     href: install-extension.md
-  - name: Preview paid Azure DevOps extensions
+  - name: Preview paid Azure DevOps Services extensions
     href: start-trial-extension.md
-  - name: Buy and install paid Azure DevOps extensions
+  - name: Install paid Azure DevOps Services extensions
     href: install-paid-extension.md
   - name: Assign paid extensions
     href: assign-paid-extensions.md
-  - name: Install TFS extensions
+  - name: Install extensions on-premises
     href: get-tfs-extensions.md
 - name: Concepts
   items:

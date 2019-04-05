@@ -10,10 +10,10 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 03/11/2019
+ms.date: 03/26/2019
 ---
 
-# Quickstart: Share your project vision, view project activity
+# Share your project vision, view project activity
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
@@ -55,7 +55,7 @@ Select one of the following tasks to get started:
 
 - **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md).
 - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
-- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-readme) for your project summary page.
+- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
 - **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
 - **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
 - [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
@@ -75,7 +75,7 @@ To define a README file for your project, see [Initialize a README file for your
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> The project page described in this section is available for TFS 2017.1 and later versions. It replaces the [Welcome page](#welcome-pages) used in TFS 2015 and TFS 2017.
+> The project page described in this section is available for TFS 2017.1 and later versions. It replaces the Welcome page used in TFS 2015 and TFS 2017.
 
 ::: moniker-end
 

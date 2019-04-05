@@ -25,7 +25,7 @@ If you want to run your builds and releases on machines that Microsoft manages, 
 We provide a *free tier* of service by default in your organization:
 
 - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
-- Private project: One free parallel job that can run for up to 30 minutes each time, until you've used 1,800 minutes (30 hours) per month.
+- Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
 
 When the free tier is no longer sufficient:
 

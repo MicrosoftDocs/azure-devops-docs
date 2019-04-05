@@ -9,7 +9,7 @@ ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/17
 ---
 
@@ -61,7 +61,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   Filter the build definitions by specifying the platforms, configurations, build definitions, build qualities, or build progress to include in the report.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+ For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Build Management Activities  
  For the Build Summary report to be useful, team members must perform the following activities to manage builds:  

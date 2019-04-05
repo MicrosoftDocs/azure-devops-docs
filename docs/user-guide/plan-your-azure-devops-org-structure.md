@@ -12,7 +12,7 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: Conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/05/2019
+ms.date: 04/04/2019
 ---
 
 # Plan your organizational structure
@@ -84,7 +84,7 @@ Within an organization, you can do either of the following approaches:
 * Create a single project that contains many repos and teams
 * Create many projects, each with its own set of teams, repos, builds, work items, and other elements
 
-Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization has its own Azure AD tenancy.
+Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization is connected to a single Azure AD tenant. A single Azure AD tenant can be connected to many Azure DevOps organizations.
 
 #### Single project
 
@@ -204,7 +204,7 @@ Learn more about how to [manage users in Azure DevOps](../organizations/accounts
 
 ### Mapping organizations to business units
 
-When you map organizations to business units, each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Projects](#project-structure) are set up within those individual organizations, as required, based on teams or ongoing work.
+When you map organizations to business units, each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Projects](#what-is-a-project) are set up within those individual organizations, as required, based on teams or ongoing work.
 
 For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization has a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You don't need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
 
