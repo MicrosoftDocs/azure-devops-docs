@@ -98,7 +98,7 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
 -   Specify the **Iteration** and **Area** paths of interest.  
   
-     For more information, see [Filtering the Report](#Changing) later in this topic.  
+     For more information, see [Filtering the Report](#Changing) later in this article.  
   
 -   Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a user story and display child stories. Parent stories display a rollup of all task hours that are assigned to it and its child stories.  
   

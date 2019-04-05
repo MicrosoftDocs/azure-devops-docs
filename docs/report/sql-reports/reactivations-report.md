@@ -42,7 +42,7 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
   
 -   Filter the bugs and stories that are counted in the report by specifying iteration and area paths, work item types, and previous state of the work items.  
   
- For more information, see [Filtering the Report](#Changing) later in this topic.  
+ For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Activities for Tracking User Stories and Bugs  
  For the Reactivations report to be useful and accurate, the team must perform the following activities:  

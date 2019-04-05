@@ -19,7 +19,7 @@ ms.date: 09/28/2017
 
 With TFS 2018, we  no longer offer the TFS Extension for SharePoint. For more information, read the [Discontinuing the pre-TFS 2018 SharePoint integration model](./discontinue-pre-tfs-2017-sharepoint-integration.md)
 
-Beginning with TFS 2018, the features that the TFS Extension for SharePoint provided will no longer be available. This topic describes each feature being deprecated and proposed replacements.
+Beginning with TFS 2018, the features that the TFS Extension for SharePoint provided will no longer be available. this article describes each feature being deprecated and proposed replacements.
  
 ## Creation of a SharePoint site when creating a team project 
 
