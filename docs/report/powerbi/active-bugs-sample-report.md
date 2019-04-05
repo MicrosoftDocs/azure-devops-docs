@@ -1,6 +1,6 @@
 ---
 title: Create an Active bugs Power BI report 
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Sample report that shows how to create an Analytics view to filter a dataset for active bugs and then create a trend report in Power BI
 ms.prod: devops
 ms.technology: devops-analytics
@@ -14,11 +14,11 @@ ms.date: 04/04/2018
 
 # Create an active bugs report in Power BI based on a custom Analytics view
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 In this article, we'll show you how to create a custom Analytics view for active bugs and then generate a Power BI report based on that view. You'll learn how to filter the Analytics view, create a trend chart, as well as a card showing the current count of active bugs. 
 
- Using Power BI connected to [Analytics views](../analytics/what-are-analytics-views.md), you can create reports on your work items. Reports can show your current work data and also historical revisions of the work items.  
+ Using Power BI connected to [Analytics views](what-are-analytics-views.md), you can create reports on your work items. Reports can show your current work data and also historical revisions of the work items.  
 
 Follow these steps to create a report in Power BI desktop that shows a **daily active trend of  bugs** based on a custom **Analytics view**:
 
@@ -34,14 +34,15 @@ Follow these steps to create a report in Power BI desktop that shows a **daily a
 
 
 <a id="prerequisites">  </a>
+
 ## Prerequisites  
 
 In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
 * You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-* Have installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/analytics/analytics-security).
+* Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+* Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics service](/azure/devops/report/powerbi/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time on which to generate a trend report. 
 
@@ -96,7 +97,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
     > [!div class="mx-imgBorder"]
     > ![60 days of history with Daily granularity](_img/active-bugs-report/active-bugs-history.png)
 
-	To learn more about these defining trend data options, see [Create an Analytics view, Select trend data options](../analytics/analytics-views-create.md#select-trend-data).
+	To learn more about these defining trend data options, see [Create an Analytics view, Select trend data options](analytics-views-create.md#select-trend-data).
 
 	Choose **Continue** to move to the next tab. 
 
@@ -117,18 +118,32 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 ## Open Power BI desktop and load your view 
 
-0. Open Power BI Desktop.  
- 
-0. Choose (1) **Get Data**, choose (2) **Online Services**, then (3) **Azure DevOps (Beta)**, and then click (4) **Connect**. 
+
+1. Open Power BI Desktop.  
+
+::: moniker range="azure-devops"  
+2. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps (Beta)**, and then (4) **Connect**. 
 
     > [!div class="mx-imgBorder"]
     > ![Connect to work tracking data](_img/create-report/get-data-2.png)
 
-0. Enter your organization name, the same Azure DevOps name you used to create the Active Bugs view, and the same project for which you defined the Active Bugs view. 
+3. Enter your organization name, the same Azure DevOps name you used to create the Active Bugs view, and the same project for which you defined the Active Bugs view. 
 
-	![Organization and project name](_img/create-report/specify-account.png) 
+	![Azure DevOps dialog, Organization and project name](_img/create-report/specify-account.png)  
+::: moniker-end
 
-0. Expand the **Private Views** folder, choose the **Active Bugs** view you saved in the previous section, and then click **Load**. 
+::: moniker range="azure-devops-2019"  
+1. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps Server (Beta)**, and then (4) **Connect**.  
+
+    > [!div class="mx-imgBorder"]
+    > ![Connect to work tracking data](_img/create-report/get-data-2-onprem.png)
+
+2. Enter the URL for your server and collection, the same same project for which you defined the Active Bugs view. 
+
+	![Azure DevOps Server dialog, Collection and project name](_img/create-report/specify-collection-project.png)  
+::: moniker-end
+
+3. Expand the **Private Views** folder, choose the **Active Bugs** view you saved in the previous section, and then click **Load**. 
 
     > [!div class="mx-imgBorder"]
     > ![Active bugs load in Power BI ](_img/active-bugs-report/choose-view.png)
@@ -219,7 +234,7 @@ Analytics views provide you with a great deal of power and flexibility to filter
 <a id="q-a">  </a>
 ## Try this next
 > [!div class="nextstepaction"]
-> [Create a custom Analytics view](../analytics/analytics-views-create.md)
+> [Create a custom Analytics view](analytics-views-create.md)
 
 
 
@@ -227,7 +242,7 @@ Analytics views provide you with a great deal of power and flexibility to filter
 
 - [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
-- [Create Analytics views](../analytics/analytics-views-create.md)
+- [Create Analytics views](analytics-views-create.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
 - [Functions available in Power BI Data Connector](data-connector-functions.md)

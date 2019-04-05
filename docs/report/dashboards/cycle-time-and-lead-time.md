@@ -11,16 +11,16 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
-ms.date: 12/05/2018 
+ms.date: 04/05/2019
 ---
 
 
-# Lead time and cycle time control charts
+# Lead time and cycle time widgets
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 
-Both lead time and cycle time measures are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
+Both lead time and cycle time widgets are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 
 The following diagram illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
 
@@ -28,7 +28,7 @@ The following diagram illustrates how lead time differs from cycle time. Lead ti
 
 These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has.
  
-In this topic you'll learn:
+In this article you'll learn:
 
 > [!div class="checklist"] 
 > * How to install and configure the Lead Time and Cycle Time widgets (Analytics service)  
@@ -37,34 +37,46 @@ In this topic you'll learn:
 
 To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
+[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+
+
+::: moniker range=">= azure-devops-2019" 
+
+
+## Add the widget to your dashboard   
+::: moniker-end
+
+::: moniker range="azure-devops"
+1. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
+2. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+1. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.    
+2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
+3. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+
+::: moniker-end
+
+
 <a id="configure-widget"></a>
 ## Configure the Cycle Time and Lead Time widgets    
 
 The Configuration dialog for the Cycle Time and Lead Time widgets is the same. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-### Pre-requisites
-In order to configure the Cycle Time and Lead Time widgets, you must have the following in place:  
-- Installed the [Analytics Marketplace extension](../analytics/analytics-extension.md). You must be an organization owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
-- [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../organizations/settings/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboards/dashboard-permissions.md#set-permissions). 
-
-### Configuration dialog 
-1. If you haven't yet added the [Analytics Marketplace extension](../analytics/analytics-extension.md), do that now. 
-
-2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
-
-3. If you haven't yet [added the widgets to your dashboard](../add-widget-to-dashboard.md), do that now.  
-
-4. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+0. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 2px solid #C3C3C3;" />    
 
-5. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
+0. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
 
 	Or, for a fixed scope view, choose and specify the Start date. Choose this view if your team employs a Scrumban process or follows a standard sprint process.  
 
 	The main difference between these two types of charts is that the fixed scope chart will provide information (in most cases) of scope change.    
 
-7. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
+0. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
 	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 

@@ -1,25 +1,27 @@
 ---
 title: Explore the OData metadata for the Analytics service 
-titleSuffix: Azure DevOps Services  
+titleSuffix: Azure DevOps  
 description: Understand the entity model OData metadata defined for the Analytics service in Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
-ms.reviewer: jozimm
+ms.reviewer: angurusw
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/04/2018
+ms.date: 04/05/2019
 ---
 
 # Explore the Analytics OData metadata
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 Understanding the metadata associated with the entity model for the Analytics service is a pre-requisite for programmatically querying the [Data model for the Analytics Service](data-model-analytics-service.md). OData metadata  is a machine readable description of the entity model designed to enable client consumption. 
 
-In this topic you'll learn how to:
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
+
+In this article you'll learn how to:
 >[!div class="checklist"]
 
 >* Query the metadata on a specific project
@@ -27,12 +29,14 @@ In this topic you'll learn how to:
 >* Identify the keys, properties, and navigational properties associated with an Entity
 >* Identify the capabilities of the Analytics OData endpoint
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+<a id="query-metadata" />
 
 ## How to query the service for metadata
+
 Analytics exposes the [entity model](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) at the metadata URL, formed by appending $metadata to the service root URL. Analytics provides service roots for a [project or an entire  organization in Azure DevOps](account-scoped-queries.md).
 
 ### Query for metadata on a specific project
+
 You construct the service root URL for a project as shown:
 
 ::: moniker range="azure-devops"
@@ -44,19 +48,24 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+[!INCLUDE [temp](../_shared/api-versioning.md)]
+
+::: moniker range="azure-devops-2019"
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
 https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
 ```
 
->[!NOTE]
->The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+> [!NOTE]
+> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
 
 ::: moniker-end
 
+<a id="metadata-response" />
+
 ## Interpret the metadata response
+
 The core components of the metadata response are EntityType and EntityContainer.
 
 > [!div class="tabbedCodeSnippets"]
@@ -75,6 +84,7 @@ The core components of the metadata response are EntityType and EntityContainer.
 ```
 
 ## EntityTypes
+
 EntityTypes define each of the Entities in the model including properties and relationships. 
 
 > [!div class="tabbedCodeSnippets"]
@@ -97,6 +107,7 @@ EntityTypes define each of the Entities in the model including properties and re
 ```
 
 ### Keys
+
 Keys define the Entity properties available for use as a Navigational Property.
 
 > [!div class="tabbedCodeSnippets"]
@@ -107,6 +118,7 @@ Keys define the Entity properties available for use as a Navigational Property.
 ```
 
 ### Properties
+
 The set of Entity properties available for query. Annotations represent additional details about a given property. 
 
 Any property of Analytics that should be visible to end users is annotated with a DisplayName.
@@ -133,6 +145,7 @@ ReferenceName is another common annotation used to define the system identifier 
 ```
 
 ### Navigational properties
+
 Querying an individual Entity is useful, but eventually you will want to be able to filter or expand details of another Entity. To do this, you need to understand how to use the [Navigational Properties](data-model-analytics-service.md) of the Entity model. 
 
 A Navigational Property with a Collection type represents a many to many relationship in the model.
@@ -154,6 +167,7 @@ ReferentialConstraints tie Navigational Properties to a specific key of an Entit
 ## Containers (OData capabilities)
 
 ### EntitySets
+
 EntitySets represents a collection of entities and associated Navigational Property Bindings and Annotations.
 
 > [!div class="tabbedCodeSnippets"]
@@ -165,6 +179,7 @@ EntitySets represents a collection of entities and associated Navigational Prope
 ```
 
 ### Capabilities
+
 Capabilities and Aggregation annotations define the set of [functions](./odata-supported-features.md) understood by the Analytics OData endpoint.
 
 > [!div class="tabbedCodeSnippets"]
@@ -227,12 +242,16 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
    </Record>
 </Annotation>
 ```
+
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Data model for the Analytics Service](data-model-analytics-service.md)
 
 
 ## Related articles
+
 - [Data model for the Analytics Service](data-model-analytics-service.md)
 - [Organization and project-scoped queries](account-scoped-queries.md).
 - [OData Version 4.0. Part 3: Common Schema Definition Language (CSDL) Plus Errata 03, Entity Model Wrapper](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) 

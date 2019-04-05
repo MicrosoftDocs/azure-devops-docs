@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 3/29/2019
 ---
 
 
@@ -20,9 +20,23 @@ ms.date: 2/14/2019
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). 
 
+::: moniker range=">= azure-devops-2019"
+
+> [!NOTE]  
+> To add the current sprint's chart to a dashboard, add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown). For additional burndown and burnup widgets available through the Analytics service, see [Configure a Burndown or Burnup widget](../..//report/dashboards/configure-burndown-burnup-widgets.md). 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+> [!NOTE]  
+> To add the current sprint's chart to a dashboard, add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown).  
+
+::: moniker-end
+
 Use this article to learn:
 
->[!div class="checklist"]      
+> [!div class="checklist"]      
 > * How to view current and past sprint burndowns 
 > * Required and recommended activities to support sprint burndown    
 
@@ -30,7 +44,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 
 > [!NOTE]    
->The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
+> The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [taskboard](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
 <tr valign="top">
@@ -61,8 +75,8 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 ::: moniker range=">= azure-devops-2019"
 
-0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
-1. 
+1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
 	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
@@ -70,7 +84,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
