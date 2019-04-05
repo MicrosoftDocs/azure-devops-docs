@@ -44,7 +44,7 @@ If you aren't a project administrator, and you need to be, find someone who is, 
 
 	*To see the full image, click to expand*.
 
-	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 0. Choose the **Members** tab.  
 

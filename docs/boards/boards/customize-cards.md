@@ -290,7 +290,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
 
-0. To add a field, choose the [ ](../_img/icons/add_icon.png) plus icon and enter the name of a field  you want to add.  
+0. To add a field, choose the ![ ](../_img/icons/add_icon.png) plus icon and enter the name of a field  you want to add.  
 
 0. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.  
 

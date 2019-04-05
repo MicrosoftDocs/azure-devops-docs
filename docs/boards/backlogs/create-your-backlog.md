@@ -229,7 +229,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs ](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
