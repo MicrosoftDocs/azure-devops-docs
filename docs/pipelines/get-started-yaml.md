@@ -61,7 +61,7 @@ You should now have a sample app in your GitHub account.
 
 1. Azure Pipelines will analyze your repository.
 
-  - If your repository already contains an `azure-pipelines.yml` file (which is the case for the sample repositories in this article), then that file will be used, and you'll see a **Run** button. Click it to start a build.
+  - If your repository already contains an `azure-pipelines.yml` file, then that file will be used, and you'll see a **Run** button. Click it to start a build.
   - If your repository doesn't have a YAML file, Azure Pipelines recommends a starter template based on the code in your repository. You'll see a **Save and run** button instead of **Run**. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
 1. Wait for the build to finish.
