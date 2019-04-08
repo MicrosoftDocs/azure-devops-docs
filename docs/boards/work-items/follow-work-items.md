@@ -132,16 +132,6 @@ From this view, you can view all items you're following across all projects. Als
 - Set work item pane
 - Enter full screen mode. 
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-You can also view and manage work that you're following from **Work>Work Items** and pivot to **Following**. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"     
-
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 

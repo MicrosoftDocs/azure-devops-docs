@@ -22,7 +22,8 @@ You plan and track your project using the suite of Agile tools you access from t
 
 If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-agile) for an overview.
 
-####In a nutshell you use Backlogs to: 
+#### In a nutshell you use Backlogs to: 
+
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
 - [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
@@ -79,6 +80,7 @@ You build your project plan by creating a backlog of work items that represent t
 
 
 <a id="stack-rank" />
+
 ## Backlog priority or stack rank order
 
 <a id="change-position"> </a> 
@@ -94,11 +96,14 @@ The preferred method for bulk edit is to use multi-select to move items to the t
 ## In Progress items and work listed on the backlog 
 
 ::: moniker range=">= tfs-2018" 
+
 Backlogs are designed to display work that corresponds to a Proposed, In Progress, or Resolved category state. Once you've completed work and its state enters a *Done*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work, or view the [**Recently completed** pivot from the **Work Items** page](../work-items/view-add-work-items.md). 
 ::: moniker-end 
 
 ::: moniker range="<= tfs-2017" 
+
 Backlogs are designed to display work that is in progress. Once you've completed work and it's state enters a *Done*, *Completed*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work. 
+
 ::: moniker-end 
 
 In general, you'll want to display all items that are in the **In Progress** category state, which corresponds to the *Active* and *Committed* states. To focus on work that is proposed but not in progress, you can toggle the backlog view to turn off [**In Progress**](create-your-backlog.md#convert-ideas). This is useful when [forecasting your product backlog](../sprints/forecast.md). 
@@ -117,6 +122,7 @@ For example, here the Customer Service team has organized several backlog items 
 
 
 <a id="multi-team">  </a>
+
 ## Work with multi-team ownership of backlog items  
 
 When you have several teams, your hierarchical views may show items that belong to other teams. 
@@ -127,6 +133,7 @@ Your team's product backlog lists only those items whose area path matches those
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 
 ::: moniker range=">= azure-devops-2019"
+
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
@@ -148,13 +155,16 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
 
 ::: moniker-end   
+
 ::: moniker range="tfs-2017" 
+
 Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
 
 <img src="_img/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015" 
+
 Items that are owned by other teams appear with hollow-filled bars.  
 
 ![Team backlog is filtered based on area path ownership](_img/ALM_OB_CustServTeamBacklog.png)  
@@ -205,6 +215,7 @@ For example, you can create a team structure similar to this one with two manage
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
 <a id="leaf-node" />
+
 ## Display of leaf node work items  
 
 When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board, sprint backlog, or taskboard. 
@@ -230,6 +241,7 @@ To add users to a project, see [Add users to a project or team](../../organizati
 If you're just getting started, see [Start using Azure Boards](../get-started/index.md). 
 
 ## Related articles 
+
 - [Web portal navigation](../../project/navigation/index.md) 
 - [About Kanban and Agile project management](../boards/kanban-overview.md)  
 - [About work items](../work-items/about-work-items.md)  
