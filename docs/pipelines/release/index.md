@@ -60,7 +60,7 @@ After all those deployments are successful, a second job is used to switch traff
 
 **Next:**
 
-* **[Create your first pipeline](../get-started-yaml.md)**
+* **[Create your first pipeline](../create-first-pipeline.md)**
 
 * **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     

@@ -11644,6 +11644,16 @@
       "source_path": "docs/report/analytics/access-analytics-excel.md",
       "redirect_url": "/azure/devops/report/powerbi/access-analytics-excel",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/get-started-designer.md",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/get-started-yaml.md",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
     }
   ]
 }
