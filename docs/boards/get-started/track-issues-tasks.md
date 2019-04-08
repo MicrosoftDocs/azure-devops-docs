@@ -198,7 +198,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 
 	### Field descriptions
 
-	In adition to the fields you can define for an issue, you can specify the following fields for a task to support capacity and time tracking. 
+	In addition to the fields you can define for an issue, you can specify the following fields for a task to support capacity and time tracking. 
 	<table valign="top" width="100%">
 	<tbody valign="top" >
 	<tr>
