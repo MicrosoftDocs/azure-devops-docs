@@ -33,7 +33,7 @@ The Microsoft-hosted agent pool provides 6 virtual machine images to choose from
 * Windows Server 1803 (`win1803`) - for running Windows containers
 * Visual Studio 2015 on Windows Server 2012R2 (`vs2015-win2012r2`)
 
-| If your development team uses... | ...then choose this image... | ...or pool in web designer |
+| If your development team uses... | ...then choose this VM image... | ...or this pool in the classic editor |
 |----------------------------------|------------------------------|----------------------------|
 | Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
 | Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
@@ -66,7 +66,7 @@ jobs:
   - script: echo hello from Windows
 ```
 
-# [Designer](#tab/designer)
+# [Classic editor](#tab/designer)
 
 Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent pool**, select the pool you decided on.
 
@@ -75,8 +75,8 @@ Then, while [editing your build pipeline](../get-started-designer.md), on the **
 ### Notes on choosing "Hosted macOS"
 
 This option affects where your data is stored. [Learn more](https://www.microsoft.com/TrustCenter/CloudServices/vsts/data-location).
-To disable the Hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under **Admin settings** > **Agent pools** > **Hosted macOS**.
-To disable the Hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS**.
+To disable the Microsoft-hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under **Admin settings** > **Agent pools** > **Hosted macOS**.
+To disable the Microsoft-hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS**.
 
 You can manually select from tool versions on macOS images. [See below](#mac-pick-tools).
 
