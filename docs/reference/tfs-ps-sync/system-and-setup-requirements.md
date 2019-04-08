@@ -44,7 +44,7 @@ You can synchronize data between Visual Studio Team Foundation Server (TFS) and 
 >  Active Directory is not required, but it is highly recommended that you deploy Active Directory in your network to synchronize the accounts of users, groups, and services that are valid within TFS and Project Server.  
 
 <a id="compat" />
-## TFS-Project Server version compability
+## TFS-Project Server version compatiblity
 **TFS 2017 discontinues support for Project Server**
 
 > [!IMPORTANT]  
