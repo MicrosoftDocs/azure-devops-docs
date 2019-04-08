@@ -219,7 +219,6 @@ To learn more about the Analytics service and future releases, see our [Reportin
 
 ## Related articles
 
-- [Key concepts](concepts.md)  
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)

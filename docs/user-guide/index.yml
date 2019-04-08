@@ -172,13 +172,6 @@ sections:
     className: cardsM
     columns: 3
     items:
-      - href: concepts.md
-        html: <p></p>
-        image:
-          title: Concepts in the Azure DevOps user guide
-          alt: Learn about logo
-          src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        title: Key concepts
       - href: plan-your-azure-devops-org-structure.md
         html: <p></p>
         image:

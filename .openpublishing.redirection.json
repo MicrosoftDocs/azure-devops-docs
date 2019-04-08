@@ -3737,7 +3737,7 @@
     },
     {
       "source_path": "docs/concepts.md",
-      "redirect_url": "/azure/devops/user-guide/concepts",
+      "redirect_url": "/azure/devops/user-guide/services",
       "redirect_document_id": false
     },
     {
