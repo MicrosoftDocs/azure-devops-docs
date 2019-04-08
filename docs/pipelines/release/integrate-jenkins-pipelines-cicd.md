@@ -75,7 +75,7 @@ and select the default version and source alias.
 
 For more information, see [Jenkins artifacts](artifacts.md#jenkins).
 If you are not familiar with the general concepts in this section, see
-[Creating a release pipeline](../get-started-yaml.md)
+[Creating a release pipeline](../create-first-pipeline.md)
 and [Release artifacts and artifact sources](artifacts.md).
 
 ## Define the deployment steps

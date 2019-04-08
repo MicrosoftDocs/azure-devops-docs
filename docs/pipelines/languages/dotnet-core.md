@@ -40,7 +40,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ::: moniker range="azure-devops"
 
-Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a pipeline for the sample app.
+Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a pipeline for the sample app.
 When you're done with that topic, you'll have a working YAML file (`azure-pipeines.yml`) in your repository that you can continue to modify by following the instructions in this topic. To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
 
 > [!Tip]
@@ -50,7 +50,7 @@ When you're done with that topic, you'll have a working YAML file (`azure-pipein
 
 ::: moniker range="< azure-devops"
 
-* After you have the sample code in your own repository, create a pipeline by using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
+* After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
 * Save the pipeline and queue a build to see it in action.
 

@@ -27,8 +27,6 @@ You can publish npm packages produced by your build to:
 * Azure Artifacts or the TFS Package Management service.
 * Other registries such as `https://registry.npmjs.org/`.
 
-Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
-
 # [YAML](#tab/yaml)
 
 ::: moniker range=">= azure-devops-2019"

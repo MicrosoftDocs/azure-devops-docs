@@ -28,7 +28,14 @@ Azure Pipelines helps you implement a build, test, and deployment pipeline for a
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+Azure Pipelines helps you implement a build, test, and deployment pipeline for any app that you maintain in Azure DevOps Server.
+Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops-2019"
 
 Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
@@ -69,7 +76,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="get-started-yaml.md">
+                                        <a href="create-first-pipeline.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -805,7 +812,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="get-started-designer.md">
+                                        <a href="create-first-pipeline.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -815,7 +822,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Use the classic editor</h3>
+                                                            <h3>Create your first pipeline</h3>
                                                             <p>Learn the basics of using the classic editor to add and customize tasks.</p>
                                                         </div>
                                                     </div>
