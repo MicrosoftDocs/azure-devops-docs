@@ -43,9 +43,7 @@ The Microsoft-hosted agent pool provides 6 virtual machine images to choose from
 | Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
 | Visual Studio 2015 | vs2015-win2012r2 | Hosted |
 
-# [YAML](#tab/yaml)
-
-YAML-based pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
+Pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
 
 ```yaml
 jobs:
@@ -65,12 +63,6 @@ jobs:
   steps:
   - script: echo hello from Windows
 ```
-
-# [Classic editor](#tab/designer)
-
-Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent pool**, select the pool you decided on.
-
----
 
 ### Notes on choosing "Hosted macOS"
 

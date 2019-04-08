@@ -17,11 +17,9 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
 
-You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
+You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build.
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
 ## SCVMM connection
 
