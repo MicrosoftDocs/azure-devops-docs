@@ -116,7 +116,7 @@ The following table indicates those features available for each supported access
 </tr>
 
 <tr>
-<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining [release pipelines](../../pipelines/release/index.md) and [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md) 
+<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining [release pipelines](../../pipelines/release/index.md) and [multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md), and [using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md); when the [**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md), Stakeholders gain access to all <strong>Azure Pipelines</strong> features. 
 </td>
 <td> </td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -1002,9 +1002,12 @@ Service accounts don't require a CAL or other purchase.
 
 ::: moniker range="azure-devops"
 
+- [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
 - [Manage users and access](../accounts/add-organization-users.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
+
+
 ::: moniker-end
 
 
@@ -1014,6 +1017,6 @@ Service accounts don't require a CAL or other purchase.
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
 - [Compare features between plans](https://azure.microsoft.com/services/devops/compare-features/)
-- [Visual Studio pricing](https://visualstudio.microsoft.com/vs/pricing/)
+
 ::: moniker-end
 

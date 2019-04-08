@@ -18,9 +18,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
 This guidance explains how to automatically build JavaScript and Node.js apps.
 
@@ -42,29 +40,18 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 
 The sample code in this repo is a Node server implemented with the Express.js framework that echoes "Hello world." Tests for the app are written through the Mocha framework.
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
 
 The sample code includes an `azure-pipelines.yml` file at the root of the repository.
 You can use this file to build the app.
 
-Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
+Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample app.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
 
-# [Designer](#tab/designer)
-
-::: moniker range="< azure-devops"
-> [!NOTE]
-> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you're using. Also, you'll need to set up a self-hosted agent and possibly install software. If you are a new user, you might have a better learning experience by first trying this procedure by using a free Azure Pipelines account. Then change the selector in the upper-left corner of this page from **Team Foundation Server** to **Azure DevOps**.
-::: moniker-end
-
-1. After you have the sample code in your own repository, create a build pipeline by using the instructions in [Your first build and release](../get-started-designer.md) and select the **Empty process** template.
+1. After you have the sample code in your own repository, create a build pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **Empty process** template.
 
 1. Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
    * **Agent queue:** `Hosted Ubuntu 1604`
@@ -90,7 +77,7 @@ YAML builds are not yet available on TFS.
 
 1. Save the pipeline and queue a build to see it in action.
 
----
+::: moniker-end
 
 Read through the rest of this topic to learn some of the common ways to customize your JavaScript build process.
 
@@ -107,9 +94,8 @@ For the exact version of Node.js and npm that is preinstalled, refer to [Microso
 
 ### Use a specific version of Node.js
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
+
 If you need a version of Node.js and npm that is not already installed on the Microsoft-hosted agent, add the following snippet to your `azure-pipelines.yml` file.
 
 > [!NOTE]
@@ -120,13 +106,10 @@ If you need a version of Node.js and npm that is not already installed on the Mi
   inputs:
     versionSpec: '8.x' # replace this value with the version that you need for your project
 ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 If you need a version of Node.js/npm that is not already installed on the Microsoft-hosted agent:
 
@@ -136,7 +119,7 @@ If you need a version of Node.js/npm that is not already installed on the Micros
 
 1. Select the task and specify the version of the Node.js runtime that you want to install.
 
----
+::: moniker-end
 
 To update just the npm tool, run the `npm i -g npm@version-number` command in your build process.
 
@@ -144,9 +127,8 @@ To update just the npm tool, run the `npm i -g npm@version-number` command in yo
 
 You can build and test your app on multiple versions of Node.
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
+
 ```yaml
 pool:
   vmImage: 'ubuntu-16.04'
@@ -164,21 +146,16 @@ steps:
 
 - script: npm install
 ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 See [multi-configuration execution](../process/phases.md#parallelexec).
 
----
+::: moniker-end
 
 ## Install tools on your build agent
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -210,15 +187,10 @@ These tasks will run every time your pipeline runs, so be mindful of the impact 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-
-# [Designer](#tab/designer)
 
 Use the [npm](../tasks/package/npm.md) or [command line](../tasks/utility/command-line.md) tasks in your build pipeline to install tools on your build agent.
 
----
+::: moniker-end
 
 ## Dependency management
 
@@ -234,8 +206,6 @@ You can use NPM in a few ways to download packages for your build:
 
 If you want to specify an npm registry, put the URLs in an `.npmrc` file in your repository.
 If your feed is authenticated, manage its credentials by creating an npm service connection on the **Services** tab under **Project Settings**.
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -264,14 +234,10 @@ To pass registry credentials to npm commands via task runners such as Gulp, add 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 Use the [npm](../tasks/package/npm.md) or [npm Authenticate](../tasks/package/npm-authenticate.md) task in your build pipeline to download and install packages.
 
----
+::: moniker-end
 
 ::: moniker range=">= tfs-2018"
 
@@ -292,8 +258,6 @@ This can take a significant amount of time. To mitigate this, you can use Azure 
 
 ###  Yarn
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
 
 Use a simple script stage to invoke [Yarn](https://yarnpkg.com) to restore dependencies.  Yarn is available preinstalled on some [Microsoft-hosted agents](../agents/hosted.md). You can install and configure it on self-hosted agents like any other tool.
@@ -305,18 +269,12 @@ Use a simple script stage to invoke [Yarn](https://yarnpkg.com) to restore depen
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke [Yarn](https://yarnpkg.com).
 
----
+::: moniker-end
 
 ## Run JavaScript compilers
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -337,18 +295,12 @@ You can call compilers directly from the pipeline by using the script task. Thes
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compile script defined in your project's package.json to build the code. Use the [Bash](../tasks/utility/bash.md) task to compile your code if you don't have a separate script defined in your project configuration.
 
----
+::: moniker-end
 
 ## Run unit tests
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -405,15 +357,11 @@ If your test scripts run a code coverage tool such as [Istanbul](https://istanbu
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your build pipeline to publish test results along with code coverage results by using Istanbul.
 Set the Control Options for the Publish Test Results task to run the task even if a previous task has failed, unless the deployment was canceled.
 
----
+::: moniker-end
 
 ## End-to-end browser testing 
 
@@ -427,8 +375,6 @@ Run tests in headless browsers as part of your pipeline with tools like [Protrac
 1. Publish the results by using the same [Publish Test Results](../tasks/test/publish-test-results.md) task alongside your unit tests.
 
 ## Package web apps
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -449,22 +395,16 @@ The next example uses the [npm](../tasks/package/npm.md) task to call `npm run b
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.md) task in your pipeline to invoke your packaging tool, such as `webpack` or  Angular's `ng build`.
 
----
+::: moniker-end
 
 ## JavaScript frameworks
 
 ### Angular
 
 For Angular apps, you can include Angular-specific commands such as **ng test**, **ng build**, and **ng e2e**. To use Angular CLI commands in your build pipeline, you need to install the [angular/cli npm package](https://www.npmjs.com/package/@angular/cli) on the build agent.
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -481,10 +421,6 @@ For Angular apps, you can include Angular-specific commands such as **ng test**,
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 Add the following tasks to your build pipeline:
 
@@ -499,7 +435,7 @@ Add the following tasks to your build pipeline:
   * **Type:** `inline`
   * **Script:** `ng build --prod`
 
----
+::: moniker-end
 
 For tests in your build pipeline that require a browser to run (such as the **ng test** command in the starter app, which runs Karma), you need to use a headless browser instead of a standard browser. In the Angular starter app, an easy way to do this is to:
 
@@ -511,21 +447,17 @@ For tests in your build pipeline that require a browser to run (such as the **ng
 
 You can use a webpack configuration file to specify a compiler (such as Babel or TypeScript) to transpile JSX or TypeScript to plain JavaScript, and to bundle your app.
 
-# [YAML](#tab/yaml)
-
 ::: moniker range="azure-devops"
+
 ```yaml
 - script: |
     npm install webpack webpack-cli --save-dev
     npx webpack --config webpack.config.js
 ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 Add the following tasks to your build pipeline:
 
@@ -537,7 +469,8 @@ Add the following tasks to your build pipeline:
   * **Type:** `inline`
   * **Script:** `npx webpack --config webpack.config.js`
 
----
+::: moniker-end
+
 
 ### React
 
@@ -553,8 +486,6 @@ All the dependencies for your Vue app are captured in your *package.json* file. 
 It's common to use [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/) as a task runner to build and test a JavaScript app.
 
 ### Gulp
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -592,23 +523,19 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 The simplest way to create a build pipeline if your app uses Gulp is to use the **Node.js with gulp** build template when creating the pipeline.
 This will automatically add various tasks to invoke Gulp commands and to publish artifacts.
 In the task, select **Enable Code Coverage** to enable code coverage by using Istanbul.
 
----
+::: moniker-end
 
 ### Grunt
 
-# [YAML](#tab/yaml)
 ::: moniker range="azure-devops"
 
 Grunt is preinstalled on Microsoft-hosted agents. To run the grunt command in the YAML file:
@@ -626,24 +553,19 @@ If the steps in your `Gruntfile.js` file require authentication with a npm regis
 
 - script: grunt                      # include any additional options that are needed
 ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
+
+The simplest way to create a build pipeline if your app uses Grunt is to use the **Node.js with Grunt** build template when creating the pipeline. This will automatically add various tasks to invoke Gulp commands and to publish artifacts. In the task, select the **Publish to TFS/Team Services** option to publish test results, and select **Enable Code Coverage** to enable code coverage by using Istanbul.
+
 ::: moniker-end
-
-# [Designer](#tab/designer)
-
-The simplest way to create a build pipeline if your app uses Gulp is to use the **Node.js with Grunt** build template when creating the pipeline. This will automatically add various tasks to invoke Gulp commands and to publish artifacts. In the task, select the **Publish to TFS/Team Services** option to publish test results, and select **Enable Code Coverage** to enable code coverage by using Istanbul.
-
----
 
 ## Package and deliver your code
 
 After you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish an npm or Maven package,
 or package the build output into a .zip file to be deployed to a web application.
-
-# [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
 
@@ -715,13 +637,10 @@ To create a .zip file archive that is ready for publishing to a web app, add the
 ```
 
 To publish this archive to a web app, see [Azure web app deployment](../targets/webapp.md).
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
-# [Designer](#tab/designer)
 
 ### Publish artifacts to Azure Pipelines
 
@@ -735,14 +654,15 @@ To create and publish an npm package, use the [npm task](../tasks/package/npm.md
 
 To create a .zip file archive that is ready for publishing to a web app, use the [Archive Files task](../tasks/utility/archive-files.md). To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
 
----
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ## Build a container
 
 You can build a Docker image and push it to a container registry after you build your project. 
 
-
-If your application doesn't require orchestration with other containers, use the [Docker](/vsts/pipelines/tasks/build/docker?view=azure-devops) task to build a container with your packaged application code and push it to your Docker registry.
+If your application doesn't require orchestration with other containers, use the [Docker](../tasks/build/docker.md) task to build a container with your packaged application code and push it to your Docker registry.
 
 This example builds a Docker image. The `Dockerfile` for the image is located in the root of the source code repo, but you can configure it by using the `dockerFile` input.
 The image is not pushed to a Docker registry after it's built.
@@ -751,7 +671,7 @@ The image is not pushed to a Docker registry after it's built.
 - script: docker build -f Dockerfile -t contoso/myjavascriptapp:$(Build.BuildId)
 ```
 
-After the Docker image is built, push it to a container registry by using the [Docker](/vsts/pipelines/tasks/build/docker?view=azure-devops) task but with `command` set to `push An Image`. This example pushes to any container registry, including Docker Hub. 
+After the Docker image is built, push it to a container registry by using the [Docker](../tasks/build/docker.md) task but with `command` set to `push An Image`. This example pushes to any container registry, including Docker Hub. 
 
 ```yaml
 - task: Docker@1
@@ -763,6 +683,8 @@ After the Docker image is built, push it to a container registry by using the [D
 ```
 
 For more information, see the [Docker pipeline guide](docker.md).
+
+::: moniker-end
 
 <a name="troubleshooting"></a>
 ## Troubleshooting

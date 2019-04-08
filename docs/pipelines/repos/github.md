@@ -21,7 +21,7 @@ Azure Pipelines can automatically build and validate every pull request and comm
 
 ## Introduction to creating pipelines
 
-For an introduction to creating a pipeline for a GitHub repo, follow the steps in [Create your first pipeline](../get-started-yaml.md).
+For an introduction to creating a pipeline for a GitHub repo, follow the steps in [Create your first pipeline](../create-first-pipeline.md).
 
 [!INCLUDE [temp](_shared/pipeline-options-for-git.md)]
 
@@ -342,7 +342,7 @@ A GitHub user can fork your repository, change it, and create a pull request to 
 
 ## Add a build badge
 
-To add a build badge to the `README.md` file at the root of your repository, follow the steps in [Get the status badge](../get-started-yaml.md#get-the-status-badge).
+To add a build badge to the `README.md` file at the root of your repository, follow the steps in [Get the status badge](../create-first-pipeline.md#get-the-status-badge).
 
 ## Parallel jobs and time limits
 

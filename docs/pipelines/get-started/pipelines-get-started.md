@@ -6,24 +6,45 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.manager: jillfra
-ms.manager: elbatk
-ms.date: 07/06/2018
-monikerRange: 'azure-devops'
+ms.author: alewis
+author: andyjlewis
+ms.date: 4/8/2019
+monikerRange: '>= tfs-2015'
 ---
+
+::: moniker range="azure-devops"
+
 # Use Azure Pipelines
 
-You can use either [YAML](../get-started-yaml.md) or the [classic editor](../get-started-designer.md) to define your pipelines. 
+::: moniker-end
 
-**Azure Pipelines**
+::: moniker range="azure-devops-2019"
 
-You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [classic editor](../get-started-designer.md) to do the same. 
+# Use Azure DevOps Server Pipelines
 
-When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. 
-When you use the classic editor, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
+::: moniker-end
 
-## Use Azure Pipelines with YAML
+::: moniker range="< azure-devops-2019"
 
-You can configure your pipelines in a YAML file that exists alongside your code.
+# Use build and release
+
+::: moniker-end
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
+# [YAML](#tab/yaml)
+
+::: moniker range=">= azure-devops-2019"
+
+You define your pipeline mostly in code in a YAML file alongside the rest of the code for your app. 
+
+* The pipeline is versioned with your code and follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
+* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
+* A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
+
+The basic steps are these:
 
 1. Configure Azure Pipelines to use your Git repo.
 2. Edit your `azure-pipelines.yml` file to define your build.
@@ -32,17 +53,22 @@ You can configure your pipelines in a YAML file that exists alongside your code.
 
 ![Pipelines YAML intro image ](../_img/pipelines-image-yaml.png)
 
-### Benefits of using YAML
+[Create your first pipeline](../create-first-pipeline.md).
 
-* The pipeline is versioned with your code and follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
-* A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
+::: moniker-end
 
-If you think the YAML workflow is best for you, [create your first pipeline by using YAML](../get-started-yaml.md).
+::: moniker range="<= azure-devops-2019"
 
-## Use Azure Pipelines in the classic editor
+YAML pipelines aren't available in TFS.
 
-You can create and configure your build and release pipelines in the Azure DevOps Services web portal with the classic editor.
+::: moniker-end
+
+# [Classic](#tab/classic)
+
+You create and configure your build and release pipelines in the web portal with the classic editor.
+When you use the classic editor, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
+
+The basic steps are these:
 
 1. Configure Azure Pipelines to use your Git repo.
 2. Use the Azure Pipelines classic editor to create and configure your build and release pipelines.
@@ -51,13 +77,7 @@ You can create and configure your build and release pipelines in the Azure DevOp
 6. Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
 ![Pipelines designer intro image](../_img/pipelines-image-designer.png)
+    
+[Create your first pipeline](../create-first-pipeline.md).
 
-     
-### Benefits of using the classic editor
-
-The classic editor is great for users who are new to the world of continuous integration (CI) and continuous delivery (CD).
-
-* The visual representation of the pipelines makes it easier to get started. 
-* The classic editor is located in the same hub as the build results. This location makes it easier to switch back and forth and make changes.
-
-If you think the designer workflow is best for you, [create your first pipeline by using the classic editor](../get-started-designer.md).
+---
