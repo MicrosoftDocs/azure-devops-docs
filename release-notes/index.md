@@ -104,14 +104,42 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="17">[19 March 2019](2019/sprint-149-update.md)</td>
+            <td rowspan="26">[8 April 2019](2019/sprint-150-update.md)</td>
+            <td>Dark theme general availability</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Query work based on Azure Active Directory groups</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Share you team’s board using a badge</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Query for work relative to the start of the day, week, month, or year</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Export query results to a CSV file</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>New merge types for completing pull requests</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Kubernetes manifest task</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Upgrades to Docker task</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Kubectl tool installer</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Azure Container Registry in Docker registry service connection</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>cgroup support on hosted Ubuntu pool</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Run once agent</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Support for Visual Studio 2019 (VS2019) in Visual Studio test task</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Agent pool user interface update</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Task assistant for editing YAML files</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Hosted pipelines image updates</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Improvements to ServiceNow integration</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Support for Azure PowerShell Az module</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Resource authorization improvements</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Simplified retention policies for build pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Pipeline artifacts fetched automatically in release</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Cobertura code coverage report updates</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Build failure and duration reports</td><td>Reporting</td><td>Future</td></tr>
+        <tr><td>General availability of Analytics</td><td>Reporting</td><td>Future</td></tr>
+        <tr><td>Notifications on wiki pages</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Manage billing for your organization from Azure DevOps</td><td>Administration</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="16">[19 March 2019](2019/sprint-149-update.md)</td>
             <td>Navigate to Azure Boards work items directly from mentions in any GitHub comment</td><td>Boards</td><td>Future</td>
         </tr>
         <tr><td>Updates to work item transition rules</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Azure Boards GitHub Enterprise support</td><td>Boards</td><td>Future</td></tr>
         <tr><td>Edit and delete comments in work item</td><td>Boards</td><td>Future</td></tr>
         <tr><td>State value order on work item form</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Support for Azure PowerShell Az module</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Choose the directory of checked out code in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Private projects now get 60 minutes of run time per pipeline job</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updates to hosted pipeline images</td><td>Pipelines</td><td>N/A</td></tr>
