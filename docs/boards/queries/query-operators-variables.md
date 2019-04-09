@@ -243,8 +243,8 @@ You can use the macros described in the following table to filter your queries b
 <table>
 <thead valign="bottom">
 <tr>
-<th width="25%"><p>Macro</p></th>
-<th width="75%"><p>Description</p></th>
+<th width="28%"><p>Macro</p></th>
+<th width="72%"><p>Description</p></th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -300,13 +300,33 @@ You can use the macros described in the following table to filter your queries b
 </tr>
 
 <tr>
-	<td><b>@RecentProjectActivity</b> <sup>6</sup></td>
+	<td><strong>@RecentProjectActivity</strong> <sup>6</sup></td>
 	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
 <tr>
-	<td>**@TeamAreas** <sup>7</sup> </td>
+	<td>**@StartOfDay** <sup>7</sup> </td>
+	<td>Use with a `DateTime` field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause `Closed Date>=@StartOfDay-7`. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).</td>
+</tr>
+
+<tr>
+	<td>**@StartOfMonth** <sup>7</sup> </td>
+	<td>Use with a `DateTime` field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last 3 months with the clause `Created Date>=@StartOfMonth-3`. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).</td>
+</tr>
+
+<tr>
+	<td>**@StartOfWeek** <sup>7</sup> </td>
+	<td>Use with a `DateTime` field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause `Changed Date>=@StartOfWeek-2`. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).</td>
+</tr>
+
+<tr>
+	<td>**@StartOfYear** <sup>7</sup> </td>
+	<td>Use with a `DateTime` field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause `Target Date>=@StartOfYear`. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).</td>
+</tr>
+
+<tr>
+	<td>**@TeamAreas** <sup>8</sup> </td>
 	<td>Only use with the Area Path field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause `Area Path=@TeamAreas [Fabrikam Fiber]\Web`. For additional examples, see [Query by area or iteration path](query-by-area-iteration-path.md).</td>
 </tr>
 
@@ -321,13 +341,14 @@ You can use the macros described in the following table to filter your queries b
 </table>
  
 ####Notes:
-0. The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. 
-0. The **@CurrentIteration +/- n** macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions,  and only when run from the web portal. 
-0. The **@Follows** macro is supported for Azure Boards and TFS 2017 and later versions.
-0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
-0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-0. The **@RecentProjectActivity** macro is supported for Azure Boards (cloud service) only at this time.
-0. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+1. The <strong>@CurrentIteration</strong> macro is supported for Azure Boards and TFS 2015 and later versions. 
+1. The <strong>@CurrentIteration +/- n</strong> macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions,  and only when run from the web portal. 
+1. The <strong>@Follows</strong> macro is supported for Azure Boards and TFS 2017 and later versions.
+1. The <strong>@MyRecentActivity</strong>, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
+1. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+1. The <strong>@RecentProjectActivity** macro is supported for Azure Boards (cloud service) only at this time.
+1. The <strong>@StartOfDay</strong>, <strong>@StartOfWeek</strong>, <strong>@StartOfMonth</strong>, and <strong>@StartOfYear</strong> macros are supported for Azure Boards (cloud service) only at this time.  
+1. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
  
 

@@ -11,8 +11,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
----
+ms.date: 04/08/2019
+--- 
 
 # Query by date or current iteration
 
@@ -30,7 +30,10 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 
 ## Supported operators and macros 
-Query clauses that specify a DateTime field or the **Iteration Path** can use the operators and macros listed in the following table.
+Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iteration Path</strong> can use the operators and macros listed in the following table.
+
+
+::: moniker range="azure-devops"
 
 <table valign="top">
 <thead>
@@ -43,15 +46,45 @@ Query clauses that specify a DateTime field or the **Iteration Path** can use th
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
 	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
-	<p>**Macros**: **@Today**, **@Today +/- n** valid with any **DateTime** field</p></td>
+	<p><strong>Macros</strong>:  <strong>@StartOfDay</strong>, <strong>@StartOfWeek</strong>, <strong>@StartOfMonth</strong>, <strong>@StartOfYear</strong>, and <strong>@Today</strong>; each of these macros can be specified with a <strong> +/- n</strong> interger.</p></td>
 </tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
 	<td>= , <> , Under, Not Under
-	<p>**Macros**: **@CurrentIteration**<sup>1</sup> and**@CurrentIteration +/- n**<sup>2</sup> valid with the **Iteration Path** field</p></td>
+	<p><strong>Macros</strong>: <strong>@CurrentIteration</strong><sup>1</sup> and <strong>@CurrentIteration +/- n</strong><sup>2</sup> valid with the <strong>Iteration Path</strong> field</p></td>
 </tr>
 </tbody>
 </table>
+
+::: moniker-end
+
+
+
+::: moniker range="<= azure-devops-2019"
+
+<table valign="top">
+<thead>
+<tr>
+<th width="10%"><p>Data type</p></th>
+<th width="78%"><p>Supported operators and macros</p></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+	<td><p><strong>DateTime</strong> </p></td>
+	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+	<p><strong>Macros</strong>:  <strong>@Today</strong>, <strong>@Today +/- n</strong> are valid with any <strong>DateTime</strong> field</p></td>
+</tr>
+<tr>
+	<td><p> <strong>TreePath</strong> </p></td>
+	<td>= , <> , Under, Not Under
+	<p><strong>Macros</strong>: <strong>@CurrentIteration</strong><sup>1</sup> and <strong>@CurrentIteration +/- n</strong><sup>2</sup> valid with the <strong>Iteration Path</strong> field</p></td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end
+
 
 ####Notes:
 1. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
@@ -121,6 +154,53 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 </tbody>
 </table>
 
+::: moniker range="azure-devops"
+
+## Start of Day, Week, Month, or Year date-based queries
+
+The following examples show how to use the <strong>StartOf...</strong> macros to filter for work items with various offsets. For additional examples for using these macros, see [WIQL syntax](wiql-syntax.md#start-of). 
+
+
+<table valign="top">
+<tbody valign="top">
+<tr>
+  <th width="40%">
+    <p>Filter for</p>
+  </th>
+  <th width="60%">
+    <p>Include these query clauses</p>
+  </th>
+</tr>
+<tr>
+  <td>
+    <p>Bugs closed in the last 2 weeks</p>
+  </td>
+  <td>
+    ![Clauses for finding bugs closed in the last two weeks](_img/example-queries/close-date-last-2-weeks.png) 
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>Items modified in the last 10 days</p>
+  </td>
+  <td>
+     ![Clause for finding items changed in the last 10 days](_img/example-queries/changed-date-last-10-days.png)
+  </td>
+</tr>
+<tr>
+  <td>
+    <p>Features scheduled to be completed in the next 3 months</p>
+  </td>
+  <td>![Clauses for features scheduled to be completed in the next 3 months](_img/example-queries/start-month-target-date-3.png)
+  </td>
+</tr>
+</tbody>
+</table>
+
+
+Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the **Date Pattern** you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)   
+
+::: moniker-end
 
 <a id="current-iteration">  </a>
 

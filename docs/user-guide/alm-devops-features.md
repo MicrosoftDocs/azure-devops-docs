@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 03/08/2019
+ms.date: 04/05/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
-If you're new to Azure DevOps, see the [Key concepts](concepts.md) and other overview articles that are designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
+If you're new to Azure DevOps, see our overview articles that are designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
 
 > [!NOTE]  
 > Some features are platform-dependent, based on the following two platforms:

@@ -17,9 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
 A **task** is the building block for defining automation in a
 build pipeline, or in a stage of a release pipeline.
@@ -31,6 +29,7 @@ When you add a task to your build or release pipeline, it may also add a set of 
 When you queue a build or a deployment, all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
 
 ## Custom tasks
+
 We provide some [built-in tasks](../tasks/index.md) 
 to enable fundamental build and deployment scenarios. We have also
 provided guidance for [creating your own custom task](../../extend/develop/add-build-task.md).
@@ -41,13 +40,18 @@ subscription or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../integrate/index.md)
 to add tasks to Azure Pipelines or TFS.
 
+::: moniker range=">= azure-devops-2019"
+
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
 and a custom task, the in-box task will take precedence. You can use a fully-qualified
 name for the custom task to avoid this risk:
+
 ```yaml
 steps:
 - task: myPublisherId.myExtensionId.myTaskName@1
 ```
+
+::: moniker-end
 
 <a name="taskversions"></a>
 ## Task versions
@@ -65,12 +69,23 @@ The build or release log will include an alert that a new major version is avail
 
 # [YAML](#tab/yaml)
 
+::: moniker range=">= azure-devops-2019"
+
 In YAML, you specify the major version using `@` in the task name.
 For example, to pin to version 2 of the `PublishTestResults` task:
+
 ```yaml
 steps:
 - task: PublishTestResults@2
 ```
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+YAML pipelines aren't available in TFS.
+
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -93,6 +108,8 @@ Each task offers you some **Control Options**.
 
 # [YAML](#tab/yaml)
 
+::: moniker range=">= azure-devops-2019"
+
 Control options are available as keys on the `task` section.
 
 ```yaml
@@ -114,6 +131,15 @@ time the task is queued or is waiting for an agent.
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+YAML pipelines aren't available in TFS.
+
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -181,6 +207,8 @@ For example, you can set up your build pipeline to run and validate your app for
 
 # [YAML](#tab/yaml)
 
+::: moniker range=">= azure-devops-2019"
+
 Create an azure-pipelines.yml file in your project's base directory with the following contents.
 
 ```yaml
@@ -197,14 +225,22 @@ steps:
   - script: which node
 ```
 
-[Create a new build pipeline](../get-started-designer.md) and run it. Observe how the build is run.
+[Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
 The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads the Node.js version if it is not already on the agent. The [Command Line](../tasks/utility/command-line.md) script logs the location of the Node.js version on disk.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+YAML pipelines aren't available in TFS.
+
+::: moniker-end
 
 # [Designer](#tab/designer)
 
 #### Tasks tab
 
-[Create a new build pipeline](../get-started-designer.md) (start with an empty process) to try this out.
+[Create a new build pipeline](../create-first-pipeline.md) (start with an empty process) to try this out.
 
 Apply the following agent settings:
 

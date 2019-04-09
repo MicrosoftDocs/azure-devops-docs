@@ -37,7 +37,7 @@ Here are the steps to migrate from XAML builds to newer builds:
 
 1. If you're using a private TFS server, [set up agents](../agents/v2-windows.md) to run your builds.
 
-1. To get familiar with the new build system, create a ["Hello world" build pipeline](../get-started-designer.md).
+1. To get familiar with the new build system, create a ["Hello world" build pipeline](../create-first-pipeline.md).
 
 1. Create a new build pipeline intended to replace one of your XAML build pipelines.
 
@@ -260,7 +260,7 @@ Here are a few examples of the kinds of apps you can build:
 
 The new build system is tightly integrated with Azure Pipelines. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
 
-* [CI/CD Hello world](../get-started-designer.md)
+* [Create your first pipeline](../create-first-pipeline.md)
 
 * [Release pipelines](../release/index.md)
 
@@ -315,7 +315,7 @@ In XAML builds you created custom XAML templates. In the new builds, it's easier
 
 ### Create a template
 
-If you don't see a template for the kind of app you can start from an empty pipeline and [add the tasks you need](../tasks/index.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](../get-started-designer.md).
+If you don't see a template for the kind of app you can start from an empty pipeline and [add the tasks you need](../tasks/index.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [Create your first pipeline](../create-first-pipeline.md).
 
 ### Task groups (TFS 2017 or newer)
 

@@ -46,7 +46,7 @@ and virtual machine environments, but at a higher level:
 
 If you are new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
 
-* [Quickstart: Create your first pipeline](../get-started-yaml.md)
+* [Create your first pipeline](../create-first-pipeline.md)
 * [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
 * [Building GitHub repositories](../repos/github.md)
 

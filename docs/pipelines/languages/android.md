@@ -29,7 +29,7 @@ This guidance explains how to automatically build, test, and deploy Android apps
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+Before this guidance, see [Create your first pipeline](../create-first-pipeline.md).
 
 ## Get started
 
