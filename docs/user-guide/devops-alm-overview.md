@@ -119,7 +119,6 @@ As your team grows, your tools grow. You can easily add teams which can focus on
 Once you've signed up for Azure DevOps Services or installed Azure DevOps Server, get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
 
 - [About Azure DevOps](about-azure-devops-services-tfs.md)
-- [Key concepts](concepts.md) 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)

@@ -332,7 +332,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceTfvcShelveset</td>
 <td>Defined if your [repository](../repository.md) is Team Foundation Version Control.
 <br/><br/>
-If you are running a [gated build](../triggers.md#gated) or a [shelveset build](../../get-started-designer.md#queueabuild), this is set to the name of the [shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.
+If you are running a [gated build](../triggers.md#gated) or a [shelveset build](../../create-first-pipeline.md#queueabuild), this is set to the name of the [shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.
 <br/><br/>
 Note: This variable yields a value that is invalid for build use in a build number format.
 </td>

@@ -2,7 +2,6 @@
   href: index.md
 - name: Overview
   href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
-  expanded: true
   items:
   - name: What is Azure Pipelines?
     href: get-started/what-is-azure-pipelines.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
@@ -13,13 +12,10 @@
   - name: Key concepts
     href: get-started/key-pipelines-concepts.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
 - name: Quickstarts
+  expanded: true
   items:
   - name: Create your first pipeline
-    href: get-started-yaml.md
-  - name: Use the classic editor
-    href: get-started-designer.md
-  - name: Use the Azure portal
-    href: get-started-azure-devops-project.md
+    href: create-first-pipeline.md
 - name: Languages
   items: 
   - name: Anaconda

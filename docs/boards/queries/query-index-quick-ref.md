@@ -94,7 +94,7 @@ The following table indicates the operators and macros available for the differe
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
 	<td>A date field in which you can specify a variable, such as <strong>@Today</strong> or <strong>@Today-1</strong>, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)<p> For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). </td>
-	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever	<p>**Macros**: **@Today**, valid with any **DateTime** field</p></td> 
+	<td>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever	<p>**Macros**: **@Today**, valid with any **DateTime** field</p><p>**Additional macros supported on Azure DevOps Services**: <strong>@StartOfDay</strong>, <strong>@StartOfWeek</strong>, <strong>@StartOfMonth</strong>, and <strong>@StartOfYear</strong>, valid with any **DateTime** field</p></td> 
 </tr>
 <tr>
 	<td>**Double** </td>

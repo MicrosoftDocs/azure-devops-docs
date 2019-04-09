@@ -133,11 +133,13 @@ Azure Pipelines runs the following steps as part of every deployment:
    a required approval, it proceeds to trigger deployment to
    the next stage.
 
-At present, release pipelines and build pipelines have separate designer interfaces
+::: moniker range="< azure-devops-2019"
+
+Release pipelines and build pipelines have separate designer interfaces
 (separate UIs). The main differences in the pipelines are the support in release
 pipelines for different types of triggers, and the support for approvals and gates.
-However, you can [represent a pipeline using YAML](../get-started-yaml.md), in which case the
-pipeline can combine both release and build capabilities. 
+
+::: moniker-end
 
 <a name="getstartednow"></a>
 ## Get started now!
@@ -146,7 +148,7 @@ Simply follow these steps:
 
 1. **[Understand release pipelines](index.md)**
 
-1. **[Create your first pipeline](../get-started-yaml.md)**
+1. **[Create your first pipeline](../create-first-pipeline.md)**
 
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     

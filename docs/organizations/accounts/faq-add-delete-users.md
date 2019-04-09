@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/28/2019
+ms.date: 04/05/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: 'azure-devops'
 
 ## Permissions
 
-#### Q: Why can't I manage users?
+### Q: Why can't I manage users?
 
 A: To access and manage users, you must have Azure DevOps [project collection administrator or organization owner permissions](#find-owner).
 
@@ -38,7 +38,7 @@ A: To access and manage users, you must have Azure DevOps [project collection ad
 
 <a name="MSDNSubscriber"></a>
 
-#### Q: When do I select "Visual Studio/MSDN Subscriber"?
+### Q: When do I select "Visual Studio/MSDN Subscriber"?
 
 A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the subscription.
 
@@ -46,7 +46,7 @@ For example, if a user selects **Visual Studio/MSDN Subscriber** but the user do
 
 <a name="EligibleMSDNSubscriptions"></a>
 
-#### Q: Which Visual Studio subscriptions can I use with Azure DevOps?
+### Q: Which Visual Studio subscriptions can I use with Azure DevOps?
 
 A:  See [Azure DevOps benefits for Visual Studio subscribers](/visualstudio/subscriptions/vs-vsts).
 
@@ -60,19 +60,19 @@ A: See [Why won't Azure DevOps recognize my Visual Studio subscription?](/visual
 
 <a name="why-access-changed"></a>
 
-#### Q: Why do Visual Studio subscriber access levels change after a subscriber signs in?
+### Q: Why do Visual Studio subscriber access levels change after a subscriber signs in?
 
 A: Azure DevOps recognizes Visual Studio subscribers. Azure DevOps automatically assigns a user access that's based on the user's subscription and not on the current access level that's assigned to the user.
 
 <a name="subscription-expired"></a>
 
-#### Q: What happens if a user's subscription expires?
+### Q: What happens if a user's subscription expires?
 
 A: If no other access levels are available, users can [work as stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
 
 <a name="extension-transition"></a>
 
-#### Q: What happened to Visual Studio Online Professional?
+### Q: What happened to Visual Studio Online Professional?
 
 A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Users are transitioned automatically to the subscription.
 
@@ -93,7 +93,7 @@ If you're purchasing user access to Visual Studio Professional for a specific or
 
 ## User access
 
-#### Q: What does "Last Access" mean in the All Users view?
+### Q: What does "Last Access" mean in the All Users view?
 
 The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you might access the service by pushing code to Azure DevOps from a Git command line or IDE.
 
@@ -107,7 +107,7 @@ The value in **Last Access** is the last date a user accessed any resources or s
 
 <a name="stopped-features"></a>
 
-#### Q: Why does a user lose access to some features?
+### Q: Why does a user lose access to some features?
 
 A: This might happen for different reasons (although the user can continue to [work as a stakeholder](../../organizations/security/get-started-stakeholder.md)):
 
@@ -129,11 +129,11 @@ A: This might happen for different reasons (although the user can continue to [w
 
 	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your organization or might no longer be active. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
 
-### Azure Active Directory and your organization
+## Azure Active Directory and your organization
 
 <a name="AddUserDirectory"></a>
 
-#### Q: Why do I have to add users to a directory?
+### Q: Why do I have to add users to a directory?
 
 A: Your organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
@@ -145,27 +145,27 @@ If you're a directory administrator, you can [add users to the directory](https:
 
 <a name="DeleteFromDirectory"></a>
 
-#### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
+### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
 A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
 
-## Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
+### Q: Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
 
-You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. By default, Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. Learn how to [convert an Azure AD guest into a member](#how-can-i-convert-an-azure-ad-guest-into-a-member).
+A: You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. By default, Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. Learn how to [convert an Azure AD guest into a member](#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
 
-## How can I convert an Azure AD guest into a member?
+### Q: How can I convert an Azure AD guest into a member?
 
-Select from the following two options:
+A: Select from the following two options:
 
 * Have the Azure AD administrator(s) remove you from the Azure AD and re-add you, making you an Azure AD *member* rather than a *guest* when they do. For more information, see [Can Azure AD B2B users be added as members instead of guests](https://docs.microsoft.com/en-us/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
 * [Change the UserType of the Azure AD guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). This is an advanced process and [is not advised](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fb2b%2Fuser-properties%23convert-usertype&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cf59a62633fb447b1aaaa08d6b3b86e00%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636894002034849797&sdata=flX3JmpUn8m5sqr%2Fxmc%2B9BPEGJEEUcUPcaXRwLub40s%3D&reserved=0), but it allows the user to query Azure AD from the Azure DevOps organization thereafter.
 
-### Convert Azure AD UserType from guest to member using Azure AD PowerShell
+#### Convert Azure AD UserType from guest to member using Azure AD PowerShell
 
 > [!WARNING]
 > This is an advanced process and [is not advised](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fb2b%2Fuser-properties%23convert-usertype&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cf59a62633fb447b1aaaa08d6b3b86e00%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636894002034849797&sdata=flX3JmpUn8m5sqr%2Fxmc%2B9BPEGJEEUcUPcaXRwLub40s%3D&reserved=0), but it allows the user to query Azure AD from the Azure DevOps organization thereafter.
 
-#### Prerequisites
+**Prerequisites**
 
 The user making the UserType change must have the following:
 
@@ -174,6 +174,8 @@ The user making the UserType change must have the following:
 
 > [!IMPORTANT]
 > We recommend that you create a brand new (native) Azure AD user who is a global admin in the Azure AD, and then complete the following steps with that user. This new user should eliminate the possibility of connecting to the wrong Azure AD. You can delete the new user when you're done.
+
+**Process**
 
 1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory.
 2. Go to the tenant that backs your Azure DevOps organization.

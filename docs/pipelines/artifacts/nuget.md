@@ -28,8 +28,6 @@ You can publish NuGet packages from your build to NuGet feeds. You can publish t
 * Other NuGet services such as NuGet.org.
 * Your internal NuGet repository.
 
-Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
-
 ## Create a NuGet package
 
 There are various ways to create NuGet packages during a build. If you're already using MSBuild or some other task to create your packages, skip this section and [publish your packages](#publish-packages). Otherwise, add a **NuGet** task:
