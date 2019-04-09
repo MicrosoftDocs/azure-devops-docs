@@ -91,7 +91,7 @@ For more details, see [Aggregate data](aggregated-data-analytics.md)
 | [```time```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868715) |  Returns the time part of the DateTimeOffset parameter value |  
 | [```totaloffsetminutes```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868716) | Returns  the signed number of minutes in the time zone offset part of the DateTimeOffset parameter value |  
 | [```now```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868713) |  Returns the current point in time (date and time with time zone) as a DateTimeOffset value |  
-| [``` maxdatetime```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868709) | Returns the latest possible point in time as a DateTimeOffset value |  
+| [```maxdatetime```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868709) | Returns the latest possible point in time as a DateTimeOffset value |  
 | [```mindatetime```](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc371341795) |  Returns the earliest possible point in time as a DateTimeOffset value |  
 
 
