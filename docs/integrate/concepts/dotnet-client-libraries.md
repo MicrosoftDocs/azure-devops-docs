@@ -15,19 +15,23 @@ ms.date: 08/04/2016
 # .NET client libraries for Azure DevOps Services (and TFS)
 
 ## Overview
+
 For .NET developers building Windows apps and services that integrate with Azure DevOps Services, client libraries are available for integrating with work item tracking, version control, build, and other services are now available. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
 
 ### Features
+
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
 * Libraries are licensed for redistribution in your apps and services ([view the license](http://go.microsoft.com/fwlink/?LinkId=329770))
 * Access both traditional client object model APIs and [new REST APIs](/rest/api/vsts/index)
 
 
->Note: REST-based clients only work with Azure DevOps Services and TFS 2015 (not previous versions of TFS) 
->To learn more about extending and integrating with  Azure DevOps Services and Team Foundation Server using the client libraries, 
->see [Extending Team Foundation](https://msdn.microsoft.com/library/bb130146.aspx)
+> [!NOTE]
+> REST-based clients only work with Azure DevOps Services and TFS 2015 (not previous versions of TFS)
+> To learn more about extending and integrating with  Azure DevOps Services and Team Foundation Server using the client libraries,
+> see [Extending Team Foundation](https://msdn.microsoft.com/library/bb130146.aspx)
 
 ### Packages
+
 | Package | Description | Primary usage |
 |---------|-------------|---------------|
 | [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/) | Integrate with TFS (2012, 2013, 2015) and Azure DevOps Services from desktop-based Windows applications. Work with and manage version control, work items, and build, and other resources from your client application. | Existing Windows apps leveraging an older version of the TFS Client OM. New work item and testing features will not be supported in this package. Please use the [.NET Client Library](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/) based on REST.
@@ -38,13 +42,13 @@ For .NET developers building Windows apps and services that integrate with Azure
 | [Microsoft.VisualStudio.Services.Release.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/) | Integrate with Team Foundation Server 2015 and Azure DevOps Services from desktop-based, ASP.NET, and other Windows applications. Provides access to the Release Service via public REST APIs. | Windows desktop apps and services that need to integrate with TFS 2015 and later and Azure DevOps Services.
 
 
-<div class="alert alert-info">
-**Tip**: If you have an existing Windows app or service that uses the TFS Client Object Model, use Microsoft.TeamFoundationServer.ExtendedClient
-</div>
+> [!TIP]
+> If you have an existing Windows app or service that uses the TFS Client Object Model, use Microsoft.TeamFoundationServer.ExtendedClient
 
 ### Installing
 
 From a NuGet package manager command prompt:
+
 ```cmd
 PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 ```
@@ -53,6 +57,7 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 
 In general, you will first create an authenticated connection to Azure DevOps Services or TFS, then get an HttpClient for the service you want to work with, and finally call methods against that service.
 Example:
+
 ```csharp
 using Microsoft.VisualStudio.Services.Common;
 using Microsoft.VisualStudio.Services.Client;
@@ -89,9 +94,9 @@ You can check out samples on our [.NET Samples Page](../get-started/client-libra
 
 ### Interactive authentication dialog does not appear when using the Azure DevOps OM in a Single Threaded Apartment (STA)
 
-There is a known issue that prevents the interactive authentication dialog from appearing in cases where your code is running from a [Single Threaded Apartment](https://docs.microsoft.com/en-us/windows/desktop/com/single-threaded-apartments) (STA).  This can commonly occur from [WPF](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/wpf-architecture) applications.  To work aorund this issue, you can change your initialization method to be async and request authentication as in the following example:
+There is a known issue that prevents the interactive authentication dialog from appearing in cases where your code is running from a [Single Threaded Apartment](https://docs.microsoft.com/en-us/windows/desktop/com/single-threaded-apartments) (STA).  This can commonly occur from [WPF](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/wpf-architecture) applications.  To work around this issue, you can change your initialization method to be async and request authentication as in the following example:
 
-```
+```csharp
 async void InitAzureDevOps()
 {
     Uri _uri = new Uri("https://dev.azure.com/MyAccount/");
@@ -110,11 +115,11 @@ async void InitAzureDevOps()
 
 ### Using NetStandard 2.0 versions of the Azure DevOps OM
 
-Currently our NetStandard 2.0 versions of our binaries are in preview and thus will only be found in our preview NuGet packages.  When referening our NuGet packages you may get warnings that some of our dependencies may not be fully compatable with your project.  
+Currently our NetStandard 2.0 versions of our binaries are in preview and thus will only be found in our preview NuGet packages.  When referencing our NuGet packages you may get warnings that some of our dependencies may not be fully compatible with your project.
 
 Unfortunately we have some dependencies that do not have specific binaries built for NetStandard for the version we need.  The good news is that portable binaries are fully compatible with NetStandard, and they do supply portable versions of their binaries in their NuGet packages.  You just need to add a fallback in your project file, so it knows which one to prefer.
 
-```
+```xml
 <PropertyGroup>
   <AssetTargetFallback>$(AssetTargetFallback);portable-net451+win8</AssetTargetFallback>
 </PropertyGroup>
@@ -122,7 +127,7 @@ Unfortunately we have some dependencies that do not have specific binaries built
 
 You may still get warnings, but these warnings can be suppressed.
 
-We have updated our dependencies in our latest code branch, which updates the Microsoft.AspNet.WebApi.Client to a later version, which has full support for NetStandard.  This also removes our dependencies on the other two packages you are getting warnings for.  These packages will be should be available someitme in March 2019.   Once you reference these new packages, you can remove the AssetTargetFallback, and the warning suppression.
+We have updated our dependencies in our latest code branch, which updates the Microsoft.AspNet.WebApi.Client to a later version, which has full support for NetStandard.  This also removes our dependencies on the other two packages you are getting warnings for.  These packages will be should be available sometime in March 2019.   Once you reference these new packages, you can remove the AssetTargetFallback, and the warning suppression.
 
 ### Microsoft.TeamFoundationServer.ExtendedClient package does not have NetStandard support
 
