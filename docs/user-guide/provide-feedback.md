@@ -113,7 +113,7 @@ A page similar to the following opens showing the version number.
 >  [!div class="mx-tdCol2BreakAll"]  
 > |On-premises release | Update | Version number |
 > |-------------|--------|----------------|
-> |** Azure DevOps Server 2019** | RTW  | 17.143.28511.3 (Dev17.M143) |
+> |**Azure DevOps Server 2019** | RTW  | 17.143.28511.3 (Dev17.M143) |
 > |**TFS 2018** |2018.3 |16.131.28106.2 |
 > |  |2018.2 |16.131.27701.1 |
 > |  |2018.1 |16.122.27409.2 |

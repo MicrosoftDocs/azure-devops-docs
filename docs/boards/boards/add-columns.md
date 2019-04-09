@@ -325,7 +325,7 @@ In this example two new states have been added, Triaged for bug, and Investigate
 
 ::: moniker range="tfs-2015"
 
-**TFS 2015.1 **
+**TFS 2015.1**
 In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
 
 <img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
