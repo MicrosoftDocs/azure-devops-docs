@@ -34,9 +34,9 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
       "ms.topic": "article",
-      "ms.technology": "vsts-release-notes",
-      "author": "alexcnichols",
-      "ms.author": "alexn",
+      "ms.technology": "devops-release-notes",
+      "author": "gloridelmorales",
+      "ms.author": "glmorale",
       "ms.manager": "douge",
       "ms.prod": "devops",
       "ms.version": "ALM",
