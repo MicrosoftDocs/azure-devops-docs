@@ -14,7 +14,7 @@ ms.date: 04/13/2018
 
 # Troubleshooting
 
-[!INCLUDE [ ](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
 > [!NOTE]
 > It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImportt) to progress through your import. The guide links to the technical documentation as needed.
