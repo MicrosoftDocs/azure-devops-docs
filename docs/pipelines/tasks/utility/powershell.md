@@ -68,11 +68,13 @@ The Powershell task also has a shortcut syntax in YAML:
 <td>Environment variables</td>
 <td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 
-```yaml
-- script: echo $env:MYSECRET
+<pre>
+<code class="lang-yaml">
+- powershell: echo $env:MYSECRET
   env:
     MySecret: $(Foo)
-```
+</code>
+</pre>
 
 </td>
 </tr>
