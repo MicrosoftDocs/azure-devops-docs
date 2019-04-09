@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 03/21/2019
+ms.date: 04/08/2019
 description: In the **Sprint 149 Update** of Azure DevOps, we added the ability to navigate to Azure Boards directly from mentions in a GitHub comment as well as adding support for Azure Boards within GitHub Enterprise. 
 ---
 
@@ -28,7 +28,6 @@ Azure Boards:
 
 Azure Pipelines:
 
-- [Support for Azure PowerShell Az module](#support-for-azure-powershell-az-module)
 - [Choose the directory of checked out code in YAML pipelines](#choose-the-directory-of-checked-out-code-in-yaml-pipelines)
 - [Private projects now get 60 minutes of run time per pipeline job](#private-projects-now-get-60-minutes-of-run-time-per-pipeline-job)
 - [Updates to hosted pipeline images](#updates-to-hosted-pipeline-images)
@@ -94,19 +93,6 @@ Previously, the state value on the work item form was ordered alphabetically. Wi
 > The order change will only affect the form in the web and the REST APIs. The state value order will not be changed in clients using WIT Client OM such as Visual Studio 2017 or Excel.
 
 ## Azure Pipelines
-
-### Support for Azure PowerShell Az module
-
-Azure PowerShell provides a set of cmdlets that you can use to manage Azure resources from the command line. In December 2018, the Azure PowerShell Az module became available and is now the intended module for managing your Azure resources.  
-
-Previously, we didn’t provide support for the Azure PowerShell Az module in our hosted agents. With the new Azure PowerShell task version 4.* in build and release pipelines, we have added support for the new Az module for all platforms. Azure PowerShell task version 3.* will continue to support the AzureRM module. However, to keep up with the latest Azure services and features, we recommend that you switch to the Azure PowerShell task version 4.* as soon as possible.
-
-The Az module has a compatibility mode to help you use existing scripts while you update them to use the new syntax. To enable compatibility for the Az module, use the `Enable-AzureRmAlias` command. Aliases let you use the old cmdlet names with Az module. You can get more details on migrating from the Azure RM module to the Azure PowerShell Az module [here](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-1.5.0#migrate-existing-scripts-to-az).
-
-> [!NOTE]
-> You need to install the Az module on your agent machine if you are using private agents.
-
-For more information on the Azure PowerShell Az module, see the documentation [here](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-1.4.0&viewFallbackFrom=azps-1.3.0#the-future-of-support-for-azurerm).
 
 ### Choose the directory of checked out code in YAML pipelines
 
