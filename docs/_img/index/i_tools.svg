@@ -1,0 +1,29 @@
+<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2bc7f4;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #e5e5e5;
+      }
+    </style>
+  </defs>
+  <title>i_tools</title>
+  <path class="cls-1" d="M54,36H49V15l3-4L49,1H45L42,11l3,4V36H40v6h3c0,2-2,4-3,4.08V58.5c0,3.3,2,5.5,4,5.5h6c2,0,4-2.7,4-6V46c-1,0-3-2-3-4h3Z"/>
+  <rect class="cls-2" x="44" y="45" width="2" height="17"/>
+  <rect class="cls-2" x="48" y="45" width="2" height="17"/>
+  <path class="cls-3" d="M34,13A12,12,0,0,0,27,2.09V10l-5,4-5-4V2.09A12,12,0,0,0,17,23.9V59a4,4,0,0,0,4,4h1a4,4,0,0,0,4-4V24.3A12,12,0,0,0,34,13Z"/>
+  <rect class="cls-4" x="18" y="53" width="7" height="5"/>
+</svg>

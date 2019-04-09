@@ -37,7 +37,7 @@ If your teammates want to edit pipelines, then have an administrator add them to
  > [!div class="mx-imgBorder"]
  ![Add users to project dialog box](_img/project-invite-dialog-box.png)
 
-1. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../get-started-yaml.md).
+1. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
 
 ## Confirm that contributors have pipeline permissions 
 

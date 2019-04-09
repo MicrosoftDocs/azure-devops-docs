@@ -17,11 +17,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
-You can automatically provision virtual machines in a VMware environment and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
+You can automatically provision virtual machines in a VMware environment and deploy to those virtual machines after every successful build.
 
 ## VMware connection
 
@@ -31,7 +29,13 @@ You need to first configure how Azure Pipelines connects to vCenter. You cannot 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2019"
+
+You need to first configure how Azure DevOps Server connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 
 You need to first configure how TFS connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 

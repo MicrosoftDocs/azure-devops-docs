@@ -30,7 +30,7 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
 
-Follow instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample project.
+Follow instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample project.
 
 The rest of this topic describes ways to customize your Go build pipeline.
 

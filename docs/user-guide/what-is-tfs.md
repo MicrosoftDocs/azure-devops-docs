@@ -52,8 +52,7 @@ Choose on-premises TFS when you need your data to stay within your network, or y
 
 ## Related articles
 
-- [A tour of services](services.md)
-- [Key concepts](concepts.md)  
+- [A tour of services](services.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
 - [Pricing - TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
