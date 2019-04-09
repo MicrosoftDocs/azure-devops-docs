@@ -100,6 +100,8 @@ Learn about [managing this directory on a self-hosted agent](https://go.microsof
 <td>
 The working directory for this agent.
 For example: `c:\agent\_work`.
+<br><br>
+This directory is not guaranteed to be writable by pipeline tasks (eg. when mapped into a container)</td>
 </td>
 </tr>
 
