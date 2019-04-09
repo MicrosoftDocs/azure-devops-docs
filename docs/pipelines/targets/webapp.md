@@ -8,9 +8,9 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.assetid:
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
-ms.date: 12/07/2018
+ms.author: alewis
+author: andyjlewis
+ms.date: 4/4/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,12 +18,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
 You can automatically deploy your web app to an Azure App Service web app after every successful build.
-Before you read this topic, you should understand the type of pipeline that you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="tfs-2017"
 
@@ -33,46 +30,64 @@ Before you read this topic, you should understand the type of pipeline that you'
 
 ::: moniker-end
 
-## Example
-
-If you want some sample code that works with this guidance, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core
-
-```
-
-Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sample code.
+## Build your app
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="azure-devops"
-
-The preceding sample code includes an `azure-pipelines.yml` file at the root of the repository.
-This file contains code to build, test, and publish the source as an artifact.
-To learn more about building .NET Core apps, see [Build .NET Core projects with Azure Pipelines or Team Foundation Server](../languages/dotnet-core.md).
+ 
+Follow the guidance in [Create your first pipeline](../create-first-pipeline.md) and use the .NET Core sample offered there before you use this topic. When you're done, you'll have a YAML pipeline to build, test, and publish the source as an artifact.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+We aren't yet advising new users to use YAML pipelines to deploy from Azure DevOps Server 2019.
+If you're an experienced pipeline user and already have a YAML pipeline to build your .NET Core app, then you might find the examples below useful.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
 # [Designer](#tab/designer)
 
-After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your stage.
-This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
-Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
+::: moniker range="< azure-devops"
+
+> [!TIP] 
+> If you're new to Azure DevOps Server or TFS, then see [Create your first pipeline](../create-first-pipeline.md) before you start.
+
+::: moniker-end
+
+To get started: 
+
+1. Fork this repo in GitHub, or import it into Azure Repos:
+
+ ```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
+```
+
+1. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
+
+1. Save the pipeline and queue a build to see it in action.
+
+1. Create a release pipeline and select the **Azure App Service Deployment** template for your stage.
+ This automatically adds the necessary tasks. 
+
+1. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
 ---
+
+Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
 ## Azure App Service Deploy task
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
 
@@ -131,9 +146,9 @@ For information on Azure service connections, see the [following section](#endpo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
@@ -158,15 +173,15 @@ input. The Azure service connection stores the credentials to connect from Azure
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
@@ -192,7 +207,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application by using the following:
 
@@ -204,9 +219,9 @@ By default, your deployment happens to the root application in the Azure Web App
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
@@ -221,7 +236,7 @@ enter its name in the **Virtual Application** property of the **Azure App Servic
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops"
 
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
@@ -245,9 +260,9 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 ```
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
@@ -262,7 +277,7 @@ Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to sp
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 You can use [jobs](../process/phases.md) in your YAML file to set up a pipeline of deployments.
 By using jobs, you can control the order of deployment to multiple web apps.
@@ -305,9 +320,9 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
@@ -328,7 +343,7 @@ a Web.config transformation or by substituting variables in your Web.config file
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 The following snippet shows an example of variable substitution:
 
@@ -358,9 +373,9 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
@@ -381,7 +396,7 @@ You can choose to deploy only certain builds to your Azure Web App.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -402,9 +417,9 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 

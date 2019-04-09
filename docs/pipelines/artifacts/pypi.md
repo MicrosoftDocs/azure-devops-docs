@@ -24,8 +24,6 @@ You can publish Python packages produced by your build to:
 * Azure Artifacts
 * Other repositories such as `https://pypi.org/`
 
-Before you read this topic, you should understand the kind of build pipeline you're creating: [classic editor](../get-started-designer.md) or [YAML](../get-started-yaml.md).
-
 To publish Python packages produced by your build, you'll use [twine](https://pypi.org/project/twine/), a widely used tool for publishing Python packages. This guide covers how to do the following in your pipeline:
 
 0. Install `twine` on your build agent

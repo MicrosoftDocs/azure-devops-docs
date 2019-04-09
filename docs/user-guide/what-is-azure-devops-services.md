@@ -55,7 +55,6 @@ Sign up for free by creating an organization. Then, either upload your code to s
 ## Related articles
 
 - [A tour of services](services.md)
-- [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
