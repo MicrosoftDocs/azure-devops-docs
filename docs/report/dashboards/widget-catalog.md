@@ -359,7 +359,7 @@ Displays the lead time of work items closed in a specified timeframe for a singl
 
 Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer.
 
-To learn more, see [ Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
+To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
   
 ----
 
