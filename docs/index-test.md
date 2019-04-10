@@ -248,13 +248,13 @@ Azure DevOps provides development collaboration tools including high-performance
                     <div class="cardText">
                         <h3>Build and deploy apps</h3>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a>
+                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a> / <a href="/azure/devops/pipelines/languages/android">Android</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/docker">Docker</a>
+                            <a href="/azure/devops/pipelines/languages/docker">Docker</a> / <a href="/azure/devops/pipelines/languages/go">Go</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/apps/cd/deploy-aks">Kubernetes</a>
+                            <a href="/azure/devops/pipelines/apps/cd/deploy-aks">Kubernetes</a> / <a href="/azure/devops/pipelines/languages/java">Java</a>
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/languages/android">Android</a>
@@ -510,7 +510,7 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/service-hooks/index">Service hooks</a>
                         </p> 
                         <p>
-                            <a href="https://marketplace.visualstudio.com/">Azure DevOps MArketplace</a>
+                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
                         </p>                     
                     </div>
                 </div>
@@ -545,4 +545,38 @@ Azure DevOps provides development collaboration tools including high-performance
             </div>
         </div>
     </li>
+
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_support.svg" alt=" " />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Community and support</h3>
+                        <p>
+                            <a href="https://twitter.com/AzureDevOps">@AzureDevOps on Twitter</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/learn/">Azure DevOps Resource Center</a>
+                        </p>
+                        <p>
+                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
+                        </p>
+                        <p>
+                            <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li> 
+
+
 </ul>
