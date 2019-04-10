@@ -248,7 +248,7 @@ Azure DevOps provides development collaboration tools including high-performance
                     <div class="cardText">
                         <h3>Build and deploy apps</h3>
                         <p>
-                            <img style="display: none;" alt=".NET Core " src="pipelines/_img/index/logo_aspnetcore.svg" data-linktype="external" data-hoverimage="pipelines/_img/index/logo_aspnetcore.svg"> <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a>
+                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a>
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/languages/docker">Docker</a>
@@ -283,6 +283,41 @@ Azure DevOps provides development collaboration tools including high-performance
         </div>
     </li>
 
+
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="_img/index/DevOpsIconTestPlans96.svg" alt="Azure Test Plans logo" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Azure Test Plans</h3>
+                        <p>
+                            <a href="/azure/devops/test/overview">What is Azure Test Plans?</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/test/index">Exploratory/manual testing</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a>
+                        </p>
+                        <p>
+                            <a href="/visualstudio/test/unit-test-your-code">Unit and functional testing</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/feedback/index">Stakeholder feedback</a>
+                        </p>
+                        <p>
+                            <a href="https://www.azuredevopslabs.com/labs/azuredevops/testmanagement/">Online lab</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
 
     <li>
         <div class="cardSize">
@@ -348,40 +383,6 @@ Azure DevOps provides development collaboration tools including high-performance
         </div>
     </li>
 
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="_img/index/DevOpsIconTestPlans96.svg" alt="Azure Test Plans logo" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Azure Test Plans</h3>
-                        <p>
-                            <a href="/azure/devops/test/overview">What is Azure Test Plans?</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/test/index">Exploratory/manual testing</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a>
-                        </p>
-                        <p>
-                            <a href="/visualstudio/test/unit-test-your-code">Unit and functional testing</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/feedback/index">Stakeholder feedback</a>
-                        </p>
-                        <p>
-                            <a href="https://www.azuredevopslabs.com/labs/azuredevops/testmanagement/">Online lab</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
 
 
     <li>
