@@ -1,57 +1,59 @@
 - name: What's new
   items:
   - name: Azure DevOps Services
-    href: ../release-notes/toc.md
+    href: /azure/devops/release-notes/index
   - name: Azure DevOps Server
     href: /azure/devops/server/release-notes/index
 - name: Get started
-  href: user-guide/toc.yml
+  href: user-guide/index.md
 - name: Azure Boards
   items:
   - name: Get started
-    href: boards/get-started/toc.yml
+    href: boards/get-started/index.md
   - name: GitHub & Azure Boards
-    href: boards/github/toc.yml
+    href: boards/github/index.md
   - name: Work Items
-    href: boards/work-items/toc.yml
+    href: boards/work-items/index.md
   - name: Boards
-    href: boards/boards/toc.yml
+    href: boards/boards/index.md
   - name: Backlogs
-    href: boards/backlogs/toc.yml
+    href: boards/backlogs/index.md
   - name: Sprints
-    href: boards/sprints/toc.yml
+    href: boards/sprints/index.md
   - name: Queries
-    href: boards/queries/toc.yml
+    href: boards/queries/index.md
   - name: Plans
-    href: boards/plans/toc.yml
+    href: boards/plans/index.md
   - name: Settings
-    href: organizations/settings/scale/toc.yml
+    href: organizations/settings/scale/index.md
   - name: Customize
-    href: reference/toc.yml
+    href: reference/index.md
 - name: Azure Repos
   items:
   - name: Get started
-    href: repos/get-started/toc.yml
+    href: repos/get-started/index.md
   - name: Git
-    href: repos/git//toc.yml
-  - name: Git
-    href: repos/tfvc/toc.yml
+    href: repos/git/index.md
+  - name: TFVC
+    href: repos/tfvc/index.md
 - name: Azure Pipelines
-  href: pipelines/toc.yml
+  href: pipelines/get-started/what-is-azure-pipelines.md
 - name: Azure Test Plans
-  href: test/toc.yml
+  href: test/overview.md
 - name: Azure Artifacts
-  href: artifacts/toc.yml
+  href: artifacts/index.md
 - name: Azure DevOps Server
-  href: /azure/devops/server/index
-- name: Azure DevOps REST API
-  href: /rest/api/azure/devops/index
-- name: Azure DevOps Projects
-  href: deploy-azure/toc.yml
-- name: Azure DevOps Lab
-  href: https://azuredevopslabs.com/
-- name: Azure DevOps Learn 
-  href: /azure/devops/learn/
-- name: Azure DevOps Blog
-  href: https://devblogs.microsoft.com/devops/
+  href: /azure/devops/server/server/index
+- name: Related resources
+  items:
+  - name: Azure DevOps REST API
+    href: /rest/api/azure/devops/index
+  - name: Azure DevOps Projects
+    href: deploy-azure/index.md
+  - name: Azure DevOps Lab
+    href: https://azuredevopslabs.com/
+  - name: Azure DevOps Learn 
+    href: /azure/devops/learn/
+  - name: Azure DevOps Blog
+    href: https://devblogs.microsoft.com/devops/
  
