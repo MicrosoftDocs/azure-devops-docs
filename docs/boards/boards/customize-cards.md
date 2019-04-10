@@ -490,6 +490,7 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 
 ## Related articles
 
+- [Configure status badges](../github/configure-status-badges.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json) 
 - [Card reordering](reorder-cards.md)  
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 
