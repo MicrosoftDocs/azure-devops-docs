@@ -2,9 +2,9 @@
 title: Azure DevOps Documentation 
 titleSuffix: Azure DevOps Services
 description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps 
-layout: HubPage 
+layout: LandingPage
 hide_bc: true
-ms.topic: hub-page
+ms.topic: landing-page
 ms.prod: devops 
 robots: NOINDEX, NOFOLLOW
 ms.technology: devops-new-user
@@ -31,7 +31,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Get started icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +63,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_server.svg" alt="Server icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_server.svg" alt="Server icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -242,7 +242,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                           <img src="/media/common/i_build.svg" alt="Build icon" />
+                           <img src="https://docs.microsoft.com/media/common/i_build.svg" alt="Build icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -328,7 +328,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="What's new icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="What's new icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -354,7 +354,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="What's new icon" />
+                            <img src="_img/index/DevOpsIconTestPlans96.svg" alt="Azure Test Plans logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -426,7 +426,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_share.svg" alt="Share icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_share.svg" alt="Share icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -456,7 +456,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_management.svg" alt="Management icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="Management icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -494,7 +494,7 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_extend.svg" alt="Extend icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_extend.svg" alt="Extend icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -522,19 +522,19 @@ Azure DevOps provides development collaboration tools including high-performance
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-edit.svg" alt="Develop icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Develop icon" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Developer resources</h3>
                         <p>
+                            <a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">Command Line Interface</a>
+                        </p>
+                        <p>
                             <a href="/rest/api/vsts/">REST APIs</a>
                         </p>
                         <p>
                             <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a>
-                        </p>
-                        <p>
-                            <a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">CLI</a>
                         </p>
                         <p>
                             <a href="/azure/devops/demo-gen">Azure DevOps Demo Generator</a>
