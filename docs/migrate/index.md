@@ -30,7 +30,7 @@ For the full documentation set, go to the [Azure DevOps Documentation](../index.
 
 ##	Azure DevOps Services status & security
 
-- [Service status](service-status-info.md)
+- [Service status](../user-guide/service-status-info.md)
 - [Data protection](../organizations/security/data-protection.md)
 - [Data location](../organizations/security/data-location.md)
 - [Credential storage](../organizations/security/credential-storage.md)
