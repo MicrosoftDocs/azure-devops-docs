@@ -409,10 +409,7 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/report/sql-reports/index">SQL Reports (Legacy)</a>
                         </p>
                         <p>
-                            <a href=/azure/devops/extend/develop/add-dashboard-widget">Extensibility</a>
-                        </p>
-                        <p>
-                            <a href="https://devblogs.microsoft.com/devops">Online lab</a>
+                            <a href="/azure/devops/extend/develop/add-dashboard-widget">Extensibility</a>
                         </p>
                     </div>
                 </div>
@@ -481,7 +478,7 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Process customization</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/index">All</a>
+                            <a href="/azure/devops/organizations/settings/index">All settings</a>
                         </p>
                     </div>
                 </div>
@@ -511,7 +508,10 @@ Azure DevOps provides development collaboration tools including high-performance
                         </p>
                         <p>
                             <a href="/azure/devops/service-hooks/index">Service hooks</a>
-                        </p>                      
+                        </p> 
+                        <p>
+                            <a href="https://marketplace.visualstudio.com/">Azure DevOps MArketplace</a>
+                        </p>                     
                     </div>
                 </div>
             </div>
