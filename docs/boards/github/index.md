@@ -28,8 +28,9 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 [!INCLUDE[temp](../_shared/github-platform-support.md)]
 
 Integration steps include: 
-- [Connect Azure Boards to GitHub](connect-to-github.md)  
+- [Connect Azure Boards to GitHub](connect-to-github.md)
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
+- [Configure status badges](configure-status-badges.md)
 
 ### Videos
 
