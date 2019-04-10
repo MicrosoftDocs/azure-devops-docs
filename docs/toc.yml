@@ -1,0 +1,57 @@
+- name: What's new
+  items:
+  - name: Azure DevOps Services
+    href: ../release-notes/toc.md
+  - name: Azure DevOps Server
+    href: /azure/devops/server/release-notes/index
+- name: Get started
+  href: user-guide/toc.yml
+- name: Azure Boards
+  items:
+  - name: Get started
+    href: boards/get-started/toc.yml
+  - name: GitHub & Azure Boards
+    href: boards/github/toc.yml
+  - name: Work Items
+    href: boards/work-items/toc.yml
+  - name: Boards
+    href: boards/boards/toc.yml
+  - name: Backlogs
+    href: boards/backlogs/toc.yml
+  - name: Sprints
+    href: boards/sprints/toc.yml
+  - name: Queries
+    href: boards/queries/toc.yml
+  - name: Plans
+    href: boards/plans/toc.yml
+  - name: Settings
+    href: organizations/settings/scale/toc.yml
+  - name: Customize
+    href: reference/toc.yml
+- name: Azure Repos
+  items:
+  - name: Get started
+    href: repos/get-started/toc.yml
+  - name: Git
+    href: repos/git//toc.yml
+  - name: Git
+    href: repos/tfvc/toc.yml
+- name: Azure Pipelines
+  href: pipelines/toc.yml
+- name: Azure Test Plans
+  href: test/toc.yml
+- name: Azure Artifacts
+  href: artifacts/toc.yml
+- name: Azure DevOps Server
+  href: /azure/devops/server/index
+- name: Azure DevOps REST API
+  href: /rest/api/azure/devops/index
+- name: Azure DevOps Projects
+  href: deploy-azure/toc.yml
+- name: Azure DevOps Lab
+  href: https://azuredevopslabs.com/
+- name: Azure DevOps Learn 
+  href: /azure/devops/learn/
+- name: Azure DevOps Blog
+  href: https://devblogs.microsoft.com/devops/
+ 
