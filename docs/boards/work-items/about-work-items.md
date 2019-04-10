@@ -146,6 +146,7 @@ You can only assign a work item to one person at a time. The **Assigned To** fie
 Anyone who has write access to a project can assign work items, including users with [Basic and Stakeholder access](#permissions-access).   
 
 **Note the following:**
+
 - You can assign a work item only to users that have been [added a project or team](../../organizations/security/add-users-team-project.md)  
 - You can assign a work item to one and only one user at a time. If work is split across two or more users, then you should consider creating additional work items that you'll assign to each user responsible for the work to be completed  
 - Over time, the drop-down menu of person-name fields will display the names you have most recently selected  
@@ -154,7 +155,8 @@ Anyone who has write access to a project can assign work items, including users 
 - You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details. 
 
 ::: moniker range="azure-devops" 
-###Integration with Azure Active Directory 
+
+### Integration with Azure Active Directory 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
@@ -162,7 +164,8 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019" 
-###Integration with Active Directory
+
+### Integration with Active Directory
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
@@ -184,6 +187,7 @@ To schedule work items to be worked on during a specific time period, you assign
 
 
 <a id="track"> </a>
+
 ## Track bugs as requirements or tasks 
 
 Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task. Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items or as tasks linked to those backlog items? How does your team estimate work?  
