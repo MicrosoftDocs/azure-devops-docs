@@ -10,11 +10,11 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 04/10/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Buy CI/CD for Azure DevOps
+# Buy CI/CD for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
@@ -60,10 +60,10 @@ The free tier is one parallel job. In addition, you get one free parallel job fo
 
 ## Prerequisites
 
-The first that time that you set up billing for your organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you'll need the following:
+Ensure the following is true for the user who's setting up billing for the first time:
 
-* [Project collection administrator or organization owner permissions](billing-faq.md#find-owner)
-* [The owner or contributor role on your Azure subscription](add-backup-billing-managers.md)
+* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
 
