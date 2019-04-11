@@ -6,12 +6,18 @@
     href: /azure/devops/server/release-notes/index
 - name: Get started
   href: /azure/devops/user-guide/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+- name: GitHub Integration
+  items:
+  - name: GitHub & Azure Pipelines
+    href: /azure/devops/pipelines/get-started-yaml?toc=/azure/devops/boards/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+  - name: GitHub & Azure Boards
+    href: /azure/devops/boards/github/index?toc=/azure/devops/boards/github/toc.json&bc=/azure/devops/boards/github/breadcrumb/toc.json 
+  - name: GitHub & Azure DevOps Projects
+    href: /azure/devops-project/azure-devops-project-github?toc=/azure/devops-project/toc.json&bc=/azure/devops-project/breadcrumb/toc.json 
 - name: Azure Boards
   items:
   - name: Get started
     href: /azure/devops/boards/get-started/index-agile?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json 
-  - name: GitHub & Azure Boards
-    href: /azure/devops/boards/github/index?toc=/azure/devops/boards/github/toc.json&bc=/azure/devops/boards/github/breadcrumb/toc.json 
   - name: Work Items
     href: /azure/devops/boards/work-items/index?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Boards
@@ -39,11 +45,23 @@
 - name: Azure Pipelines
   href: pipelines/get-started/what-is-azure-pipelines.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
 - name: Azure Test Plans
-  href: test/overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json 
+  items:
+  - name: Exploratory/manual testing
+    href: test/indextest/overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+  - name: Continuous testing
+    href: pipelines/languages/dotnet-core#run-your-teststest/overview.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+  - name: Unit and functional testing
+    href: /visualstudio/test/unit-test-your-code
 - name: Azure Artifacts
-  href: artifacts/index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+  href: artifacts/index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Azure DevOps Server
-  href: /azure/devops/server/server/index
+  items:
+  - name: Administration
+    href: /azure/devops/server/server/index
+  - name: SharePoint integration (Deprecated)
+    href: report/sharepoint-dashboards/index.md 
+  - name: Project Server integration (Deprecated)
+    href: reference/tfs-ps-sync/index.md
 - name: Reporting
   items:
   - name: Dashboards, Charts, Reports, & Widgets
@@ -93,23 +111,23 @@
 - name: Developer resources
   items:
   - name: Command Line Interface
-    href: /cli/azure/ext/azure-devops?toc=/cli/azure/ext/toc.json&bc=/cli/azure/ext/breadcrumb/toc.json 
+    href: /cli/azure/ext/azure-devops 
   - name: REST APIs
-    href: /rest/api/vsts/?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json 
+    href: /rest/api/vsts 
   - name: TypeScript APIs
-    href: organizations/accounts/index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json 
+    href: /azure/devops/extend/reference/client/core-sdk
   - name: Azure DevOps Demo Generator
     href: /azure/devops/demo-gen/index.md?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
 - name: Related resources
   items:
   - name: Azure DevOps REST API
-    href: /rest/api/azure/devops/index?toc=/rest/api/azure/devops/toc.json&bc=/rest/api/azure/devops/breadcrumb/toc.json 
+    href: /rest/api/azure/devops/index
   - name: Azure DevOps Projects
     href: deploy-azure/index.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json 
   - name: Azure DevOps Lab
     href: https://azuredevopslabs.com/
   - name: Azure DevOps Learn 
-    href: /azure/devops/learn?toc=/azure/devops/learn/toc.json&bc=/azure/devops/learn/breadcrumb/toc.json 
+    href: /azure/devops/learn
   - name: Azure DevOps Blog
     href: https://devblogs.microsoft.com/devops/
   - name: Azure DevOps Support

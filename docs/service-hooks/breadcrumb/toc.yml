@@ -2,9 +2,9 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Settings
-    tocHref: /azure/devops/organizations/
-    topicHref: /azure/devops/organizations/index
+  - name: Extend
+    tocHref: /azure/devops/extend/
+    topicHref: /azure/devops/extend/index
     items:
     - name: Service hooks
       tocHref: /azure/devops/service-hooks/

@@ -1,9 +1,9 @@
 - name: "Manage organizations"
-  href: index.md
+  href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About managing organizations
-    href: organization-management.md
+    href: organization-management.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Access with Azure AD
     href: access-with-azure-ad.md
 - name: Quickstarts
