@@ -1,9 +1,9 @@
 - name: Azure Test Plans
-  href: index.md
+  href: index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About exploratory and manual testing
-    href: overview.md
+    href: overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: About load testing
     href: load-test/overview.md
 - name: Quickstarts
