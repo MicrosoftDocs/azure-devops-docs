@@ -1,6 +1,6 @@
 - name: Azure DevOps
   tocHref: /azure/devops/
-  topicHref: /azure/devops/index
+  topicHref: /azure/devops/index-test
   items:
   - name: Web portal navigation
     tocHref: /azure/devops/project/navigation/
@@ -45,6 +45,15 @@
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
     items:
+    - name: Get started (Basic)
+      tocHref: /azure/devops/boards/get-started/
+      topicHref: /azure/devops/boards/get-started/index
+    - name: Get started (Agile)
+      tocHref: /azure/devops/boards/get-started-agile/
+      topicHref: /azure/devops/boards/get-started-agile/index
+    - name: GitHub and Azure Boards
+      tocHref: /azure/devops/boards/github/
+      topicHref: /azure/devops/boards/github/index
     - name: Boards (Kanban) 
       tocHref: /azure/devops/boards/boards/
       topicHref: /azure/devops/boards/boards/index
@@ -60,13 +69,16 @@
     - name: Queries
       tocHref: /azure/devops/boards/queries/
       topicHref: /azure/devops/boards/queries/index
-    - name: Plans (Agile at scale)
+    - name: Plans (Agile at Scale)
       tocHref: /azure/devops/boards/plans/
       topicHref: /azure/devops/boards/plans/index
   - name: Azure Repos
     tocHref: /azure/devops/repos/
     topicHref: /azure/devops/repos/index
     items:
+    - name: Get Started
+      tocHref: /azure/devops/repos/get-started/
+      topicHref: /azure/devops/repos/get-started/index
     - name: Git
       tocHref: /azure/devops/repos/git/
       topicHref: /azure/devops/repos/git/index
@@ -102,10 +114,10 @@
     - name: Extend Analytics with OData
       tocHref: /azure/devops/report/extend-analytics/
       topicHref: /azure/devops/report/extend-analytics/index
-    - name: SQL Server Reporting
+    - name: SQL Reports (Legacy)
       tocHref: /azure/devops/report/sql-reports/
       topicHref: /azure/devops/report/sql-reports/index
-    - name: SharePoint Dashboards
+    - name: SharePoint Dashboards (Deprecated)
       tocHref: /azure/devops/report/sharepoint-dashboards/
       topicHref: /azure/devops/report/sharepoint-dashboards/index
   - name: Settings
