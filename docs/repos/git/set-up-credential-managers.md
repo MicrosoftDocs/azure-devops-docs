@@ -28,6 +28,7 @@ Download and run the latest [Git for Windows installer](https://git-scm.com/down
    ![Select Enable Git Credential Manager during Git for Windows install](_img/install-with-gcm.png)   
 
 ### macOS and Linux
+We recomend [using SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure DevOps, not a credential manager.
 
 > Review the [system and software requirements](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md#system-requirements) before installing the credential manager.
  
