@@ -47,15 +47,18 @@
 - name: Azure Test Plans
   items:
   - name: Exploratory/manual testing
-    href: test/indextest/overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    href: test/index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Continuous testing
-    href: pipelines/languages/dotnet-core#run-your-teststest/overview.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+    href: /azure/devops/pipelines/languages/dotnet-core#run-your-tests
   - name: Unit and functional testing
     href: /visualstudio/test/unit-test-your-code
 - name: Azure Artifacts
-  href: artifacts/index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Azure DevOps Server
   items:
+  - name: Install
+    href: /azure/devops/server/install/get-started
+  - name: Upgrade
+    href: /azure/devops/server/upgrade/get-started
   - name: Administration
     href: /azure/devops/server/server/index
   - name: SharePoint integration (Deprecated)
@@ -67,11 +70,11 @@
   - name: Dashboards, Charts, Reports, & Widgets
     href: report/dashboards/index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json 
   - name: Power BI Integration
-    href: report/dashboards/index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json 
+    href: report/powerbi/index.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json 
   - name: Extend with Analytics OData
-    href: report/dashboards/index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json 
+    href: report/extend-analytics/index.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json 
   - name: SQL Reports (Legacy)
-    href: report/dashboards/index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json 
+    href: report/sql-reports/index.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json 
 - name: Collaborate
   items:
   - name: Wikis
