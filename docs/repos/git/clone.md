@@ -109,7 +109,7 @@ If you are not using Azure Repos, you can still clone your repo in Team Explorer
 ### Prerequisites
 
 * Ensure you have installed the [Git command line package](http://git-scm.com/download) for your platform as well as the 
-right [Git Credential Manager](set-up-credential-managers.md) before continuing.
+right [Git Credential Manager](set-up-credential-managers.md) or have [configured SSH authentication](use-ssh-keys-to-authenticate.md) before continuing.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.
 
