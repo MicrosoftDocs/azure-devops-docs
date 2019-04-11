@@ -2,18 +2,22 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index-test
   items:
-  - name: Web portal navigation
-    tocHref: /azure/devops/project/navigation/
-    topicHref: /azure/devops/project/navigation/index
-  - name: Wikis
-    tocHref: /azure/devops/project/wiki/
-    topicHref: /azure/devops/project/wiki/index
-  - name: Search
-    tocHref: /azure/devops/project/search/
-    topicHref: /azure/devops/project/search/index
-  - name: Feedback
-    tocHref: /azure/devops/project/feedback/
-    topicHref: /azure/devops/project/feedback/index
+  - name: Manage projects
+    tocHref: /azure/devops/organizations/projects/
+    topicHref: /azure/devops/organizations/projects/index
+    items:
+    - name: Web portal navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
+    - name: Wikis
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/wiki/index
+    - name: Search
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/search/index
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index
   - name: Start using Azure DevOps
     tocHref: /azure/devops/user-guide/
     topicHref: /azure/devops/user-guide/index
@@ -120,7 +124,7 @@
     - name: SharePoint Dashboards (Deprecated)
       tocHref: /azure/devops/report/sharepoint-dashboards/
       topicHref: /azure/devops/report/sharepoint-dashboards/index
-  - name: Settings
+  - name: Manage
     tocHref: /azure/devops/organizations/settings/
     topicHref: /azure/devops/organizations/index
     items:
@@ -142,7 +146,7 @@
     - name: Notifications
       tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/index
-    - name: "Scale & configure teams"
+    - name: Teams
       tocHref: /azure/devops/organizations/settings/scale/
       topicHref: /azure/devops/organizations/settings/scale/index
     - name: Customization
@@ -169,7 +173,7 @@
       topicHref: /azure/devops/boards/get-started/index
     - name: Start using Azure Boards (Agile process)
       topicHref: /azure/devops/boards/get-started/index-agile
-    - name: GitHub with Azure Boards
+    - name: GitHub and Azure Boards
       topicHref: /azure/devops/boards/github/index
 - name: Azure DevOps Server
   tocHref: /azure/devops/
@@ -177,8 +181,10 @@
   items:
   - name: Administration
     tocHref: /azure/devops/server/
-    topicHref: /azure/devops/server/index
-  - name: Project Server integration
+    topicHref: /azure/devops/server/server/index
+  - name: Project Server integration (Deprecated)
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index
-
+  - name: SharePoint integration (Deprecated)
+    tocHref: /azure/devops/report/sharepoint-dashboards/
+    topicHref: /azure/devops/report/sharepoint-dashboards/index
