@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 04/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -39,16 +39,16 @@ The Free tier includes:
 > * [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) (formerly Package Management)
 >
 > [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests that you run. By default, paid usage is turned off for your organization.
-> You can only enable paid usage via the Azure portal.
+> You can enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
 ## Prerequisites
 
-The first time that you set up billing for your organization, whether you do the setup via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, Azure DevOps tab, you need:
+Ensure the following is true for the user who's setting up billing for the first time:
 
-* [Project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
+* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
 
