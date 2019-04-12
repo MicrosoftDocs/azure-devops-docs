@@ -25,7 +25,7 @@ Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a
 > After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="< azure-devops"
 > To learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
 ::: moniker-end
 
