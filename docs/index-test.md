@@ -229,7 +229,7 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/pipelines/languages/java">Java</a> / <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a>   
                         </p>
                         <p>
-                           / <a href="/azure/devops/pipelines/languages/php">PHP</a> / <a href="/azure/devops/pipelines/languages/python">Python</a> / <a href="/azure/devops/pipelines/languages/ruby">Ruby</a> 
+                           <a href="/azure/devops/pipelines/languages/php">PHP</a> / <a href="/azure/devops/pipelines/languages/python">Python</a> / <a href="/azure/devops/pipelines/languages/ruby">Ruby</a> 
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/apps/windows/universal">UWP</a> / <a href="/azure/devops/pipelines/languages/xamarin">Xamarin</a> / <a href="/azure/devops/pipelines/languages/xcode">XCode</a>
