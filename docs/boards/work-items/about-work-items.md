@@ -27,7 +27,6 @@ You can use work items to track anything you need to track. Each work item repre
 - You use different [work item types (WITs)](#wit) to track different types of information. Specific tools 
 	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
 	- [Define Features and Epics](../backlogs/define-features-epics.md)
-	- [Define Features and Epics](../backlogs/define-features-epics.md)
 	- [Define, triage, and manage Bugs](../backlogs/manage-bugs.md)
 	- [Add Tasks to backlog items](../sprints/add-tasks.md)
 - You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
