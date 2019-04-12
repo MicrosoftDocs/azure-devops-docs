@@ -220,22 +220,19 @@ Azure DevOps provides development collaboration tools including high-performance
                           <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a> / <a href="/azure/devops/pipelines/languages/anaconda">Anaconda</a> / <a href="/azure/devops/pipelines/languages/android">Android</a>
                         </p>
                         <p>
-                          <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">ASP.NET</a> / <a href="/azure/devops/pipelines/apps/c-cpp/gcc">C/C++ with GCC</a> / <a href="/azure/devops/pipelines/apps/windows/cpp">C/C++ with VC++</a>
+                          <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">ASP.NET</a> / <a href="/azure/devops/pipelines/apps/c-cpp/gcc">C/C++ with GCC</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/docker">Docker</a> / <a href="/azure/devops/pipelines/languages/go">Go</a> / <a href="/azure/devops/pipelines/languages/java">Java</a>
+                            <a href="/azure/devops/pipelines/apps/windows/cpp">C/C++ with VC++</a> / <a href="/azure/devops/pipelines/languages/docker">Docker</a> / <a href="/azure/devops/pipelines/languages/go">Go</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/apps/cd/deploy-aks">Kubernetes</a> / <a href="/azure/devops/pipelines/languages/java">Java</a>
+                            <a href="/azure/devops/pipelines/languages/java">Java</a> / <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a>   
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a> / <a href="/azure/devops/pipelines/languages/php">PHP</a>
+                           / <a href="/azure/devops/pipelines/languages/php">PHP</a> / <a href="/azure/devops/pipelines/languages/python">Python</a> / <a href="/azure/devops/pipelines/languages/ruby">Ruby</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/python">Python</a> / <a href="/azure/devops/pipelines/languages/ruby">Ruby</a> / <a href="/azure/devops/pipelines/apps/windows/universal">UWP</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/languages/xamarin">Xamarin</a> / <a href="/azure/devops/pipelines/languages/xcode">XCode</a>
+                            <a href="/azure/devops/pipelines/apps/windows/universal">UWP</a> / <a href="/azure/devops/pipelines/languages/xamarin">Xamarin</a> / <a href="/azure/devops/pipelines/languages/xcode">XCode</a>
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/apps/cd/deploy-aks">Azure Kubernetes Service</a> / <a href="/azure/devops/pipelines/targets/azure-stack">Azure Stack</a>
@@ -350,9 +347,6 @@ Azure DevOps provides development collaboration tools including high-performance
                         </p>
                         <p>
                             <a href="/azure/devops/migrate/index">Migrate</a>
-                        </p>
-                        <p>
-                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Labs</a>
                         </p>
                     </div>
                 </div>
