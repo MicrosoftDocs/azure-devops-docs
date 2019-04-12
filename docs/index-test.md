@@ -57,37 +57,6 @@ Azure DevOps provides development collaboration tools including high-performance
         </div>
     </li>
 
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_server.svg" alt="Server icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Azure DevOps Server</h3>
-                        <p>
-                            <a href="/azure/devops/server/install/get-started">Install</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/server/upgrade/get-started">Upgrade</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/server/admin/admin-quick-ref">Manage</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/migrate/index">Migrate</a>
-                        </p>
-                        <p>
-                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Labs</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
 
     <li>
         <div class="cardSize">
@@ -248,41 +217,43 @@ Azure DevOps provides development collaboration tools including high-performance
                     <div class="cardText">
                         <h3>Build and deploy apps</h3>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a> / <a href="/azure/devops/pipelines/languages/android">Android</a>
+                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a> / <a href="/azure/devops/pipelines/languages/anaconda">Anaconda</a> / <a href="/azure/devops/pipelines/languages/android">Android</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/docker">Docker</a> / <a href="/azure/devops/pipelines/languages/go">Go</a>
+                          <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">ASP.NET</a> / <a href="/azure/devops/pipelines/apps/c-cpp/gcc">C/C++ with GCC</a> / <a href="/azure/devops/pipelines/apps/windows/cpp">C/C++ with VC++</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/languages/docker">Docker</a> / <a href="/azure/devops/pipelines/languages/go">Go</a> / <a href="/azure/devops/pipelines/languages/java">Java</a>
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/apps/cd/deploy-aks">Kubernetes</a> / <a href="/azure/devops/pipelines/languages/java">Java</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/android">Android</a>
+                            <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a> / <a href="/azure/devops/pipelines/languages/php">PHP</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/python">Python</a>
+                            <a href="/azure/devops/pipelines/languages/python">Python</a> / <a href="/azure/devops/pipelines/languages/ruby">Ruby</a> / <a href="/azure/devops/pipelines/apps/windows/universal">UWP</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/java">Java</a>
+                            <a href="/azure/devops/pipelines/languages/xamarin">Xamarin</a> / <a href="/azure/devops/pipelines/languages/xcode">XCode</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/xcode">XCode</a>
+                            <a href="/azure/devops/pipelines/apps/cd/deploy-aks">Azure Kubernetes Service</a> / <a href="/azure/devops/pipelines/targets/azure-stack">Azure Stack</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/apps/windows/universal">UWP</a>
+                            <a href="/azure/devops/pipelines/targets/azure-sqldb">Azure SQL database</a> / <a href="/azure/devops/pipelines/targets/webapp">Azure Web Apps</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/go">Go</a>
+                            <a href="/azure/devops//pipelines/targets/scvmm">Virtual Machine Manager</a> / <a href="/azure/devops//pipelines/targets/vmware">VMware</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups">Linux VM</a>
+                            <a href="/azure/devops//pipelines/apps/cd/deploy-docker-webapp">Web App for Containers</a> / <a href="/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups">Windows VM</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </li>
-
 
     <li>
         <div class="cardSize">
@@ -357,6 +328,37 @@ Azure DevOps provides development collaboration tools including high-performance
         </div>
     </li>
 
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_server.svg" alt="Server icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Azure DevOps Server</h3>
+                        <p>
+                            <a href="/azure/devops/server/install/get-started">Install</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/server/upgrade/get-started">Upgrade</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/server/admin/admin-quick-ref">Manage</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/migrate/index">Migrate</a>
+                        </p>
+                        <p>
+                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Labs</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -441,6 +443,12 @@ Azure DevOps provides development collaboration tools including high-performance
                         <p>
                             <a href="/azure/devops/organizations/public/index">Public projects</a>
                         </p>
+                        <p>
+                            <a href="/azure/devops/project/search/index">Search</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/feedback/index">Feedback</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -496,7 +504,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Extensions</h3>
+                        <h3>Extensibility</h3>
                         <p>
                             <a href="/azure/devops/marketplace">Discover extensions</a>
                         </p>
@@ -509,9 +517,6 @@ Azure DevOps provides development collaboration tools including high-performance
                         <p>
                             <a href="/azure/devops/service-hooks/index">Service hooks</a>
                         </p> 
-                        <p>
-                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
-                        </p>                     
                     </div>
                 </div>
             </div>
@@ -545,7 +550,37 @@ Azure DevOps provides development collaboration tools including high-performance
             </div>
         </div>
     </li>
-
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com//media/common/i_multi-connect.svg" alt=" " />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Related resources</h3>
+                        <p>
+                            <a href="/azure/devops/learn/">DevOps Resource Center</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops-projects/">Azure DevOps Projects</a>
+                        </p>
+                        <p>
+                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
+                        </p>
+                        <p>
+                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li> 
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -561,16 +596,16 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="https://twitter.com/AzureDevOps">@AzureDevOps on Twitter</a>
                         </p>
                         <p>
-                            <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/learn/">Azure DevOps Resource Center</a>
-                        </p>
-                        <p>
-                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
+                            <a href="https://devblogs.microsoft.com/devops/">Azure DevOps Blog</a>
                         </p>
                         <p>
                             <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
+                        </p>
+                        <p>
+                            <a href="https://stackoverflow.com/questions/tagged/azure-devops">Azure DevOps stackoverflow</a>
+                        </p>
+                        <p>
+                            <a href="https://status.dev.azure.com/">Azure DevOps Service Status</a>
                         </p>
                     </div>
                 </div>

@@ -4,6 +4,8 @@
     href: /azure/devops/release-notes/index
   - name: Azure DevOps Server
     href: /azure/devops/server/release-notes/index
+  - name: Azure DevOps Blog
+    href: https://devblogs.microsoft.com/devops/
 - name: Get started
   href: /azure/devops/user-guide/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: GitHub Integration
@@ -85,6 +87,10 @@
     href: notifications/index.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json 
   - name: Public projects
     href: organizations/public/index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json 
+  - name: Search
+    href: project/search/index.md 
+  - name: Feedback
+    href: project/feedback/index.md 
 - name: Manage
   items:
   - name: Teams
@@ -109,8 +115,6 @@
     href: integrate/index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json 
   - name: Service hooks
     href: service-hooks/index.md?toc=/azure/devops/service-hooks/toc.json&bc=/azure/devops/service-hooks/breadcrumb/toc.json 
-  - name: Azure DevOps Marketplace
-    href: https://marketplace.visualstudio.com/
 - name: Developer resources
   items:
   - name: Command Line Interface
@@ -123,16 +127,14 @@
     href: /azure/devops/demo-gen/index.md?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
 - name: Related resources
   items:
-  - name: Azure DevOps REST API
-    href: /rest/api/azure/devops/index
+  - name: DevOps Resource Center
+    href: /azure/devops/learn
   - name: Azure DevOps Projects
     href: deploy-azure/index.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json 
   - name: Azure DevOps Lab
     href: https://azuredevopslabs.com/
-  - name: Azure DevOps Learn 
-    href: /azure/devops/learn
-  - name: Azure DevOps Blog
-    href: https://devblogs.microsoft.com/devops/
-  - name: Azure DevOps Support
-    href: https://azure.microsoft.com/en-us/support/devops/
+  - name: Azure DevOps Marketplace
+    href: https://marketplace.visualstudio.com/
+  - name: Azure DevOps Videos on YouTube
+    href: https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA
  
