@@ -18,7 +18,7 @@ ms.date: 04/10/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
+Use this index to quickly access information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs&mdash; and concepts related to work items.
 
 ## Work item tasks 
 
