@@ -102,13 +102,30 @@ Use this method when you do not have enduring access to the build agent, such as
 
 #### Install the P12 certificate during your build
 
+##### Visual Editor
+
 1. Add the [Install Apple Certificate](../../tasks/utility/install-apple-certificate.md) task to your build before the Xcode or Xamarin.iOS task.
 1. Next to the **Certificate (P12)** field, click the settings icon and upload your P12 file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Once your certificate has been uploaded to the Secure Files library, select it in the **Certificate (P12)** dropdown.
 1. Go to the **Variables** tab and add a variable named `P12password`. Set its value to the password of your certificate. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
 1. Go back to the **Tasks** tab. In the **Install Apple Certificate** task's settings, reference your newly-created variable in the **Certificate (P12) password** field as: `$(P12password)`
 
+##### Sample YAML
+
+1. Upload your P12 file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
+1. Go to the **Variables** tab and add a variable named `P12password`. Set its value to the password of your certificate. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
+1. Add the [Install Apple Certificate](../../tasks/utility/install-apple-certificate.md) task to your yaml before the Xcode or Xamarin.iOS task.
+
+```yaml
+- task: InstallAppleCertificate@2
+    inputs:
+      certSecureFile: 'my-secure-file.p12' # replace my-secure-file.p12 with the name of your P12 file.
+      certPwd: '$(P12password)'
+```
+
 #### Install the provisioning profile during your build
+
+##### Visual Editor
 
 1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your build before the Xcode or Xamarin.iOS task.
 1. For the **Provisioning profile location** option, choose **Secure Files** (in YAML, `secureFiles`).
@@ -116,19 +133,55 @@ Use this method when you do not have enduring access to the build agent, such as
 1. Once your certificate has been uploaded to the Secure Files library, select it in the **Provisioning profile** dropdown.
 1. Enable the checkbox labeled **Remove profile after build**. This will ensure that the provisioning profile is not left on the agent machine.
 
+##### Sample YAML
+
+1. Upload your provisoning profile to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
+1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your yaml before the Xcode or Xamarin.iOS task.
+
+```yaml
+- task: InstallAppleProvisioningProfile@1
+    inputs:
+      provProfileSecureFile: 'my-provisioning-profile.mobileprovision' # replace my-provisioning-profile.mobileprovision with the name of your provisioning profile file.
+```
+_Note: **Remove profile after build** is defaulted to *true*._
+
 #### Reference the files in your Xcode task
+
+##### Visual Editor
 
 1. Select the **Xcode** task.
 1. For the **Signing style** option, choose **Manual signing**.
 1. In the **Signing identity** field, enter `$(APPLE_CERTIFICATE_SIGNING_IDENTITY)`. This variable is automatically set by the **Install Apple Certificate** task for the certificate you selected.
 1. In the **Provisioning profile UUID** field, enter `$(APPLE_PROV_PROFILE_UUID)`. This variable is automatically set by the **Install Apple Provisioning Profile** task for the provisioning profile you selected.
 
+##### Sample YAML
+
+```yaml
+- task: Xcode@5
+  inputs:
+    signingOption: 'manual'
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
+```
+
 #### Reference the files in your Xamarin.iOS task
+
+##### Visual Editor
 
 1. Select the **Xamarin.iOS** task.
 1. For the **Override using** option, choose **Identifiers**.
 1. In the **Signing identity** field, enter `$(APPLE_CERTIFICATE_SIGNING_IDENTITY)`. This variable is automatically set by the **Install Apple Certificate** task for the certificate you selected.
 1. In the **Provisioning profile UUID** field, enter `$(APPLE_PROV_PROFILE_UUID)`. This variable is automatically set by the **Install Apple Provisioning Profile** task for the provisioning profile you selected.
+
+##### Sample YAML
+
+```yaml
+- task: XamariniOS@2
+    inputs:
+      solutionFile: '**/*.iOS.csproj'
+      signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+      signingProvisioningProfileID: '$(APPLE_PROV_PROFILE_UUID)'
+```
 
 Save your build pipeline, and you are all set! The build agent will now be able to securely sign and provision your app.
 
