@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7f58b123-18df-4382-895e-01f7c9e366f8
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -31,7 +32,7 @@ ms.date: 01/12/2017
   
 4.  Import the type definition.  
   
- For more information, see [Export and import work item types ](../witadmin/witadmin-import-export-manage-wits.md).   
+ For more information, see [Export and import work item types](../witadmin/witadmin-import-export-manage-wits.md).   
   
    
 ##  <a name="fields"></a> Elements to add to the FIELDS section  
