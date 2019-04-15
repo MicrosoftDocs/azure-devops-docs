@@ -419,7 +419,7 @@ Tutorials, references, and other documentation show you how to configure and man
                             <div class="card ready x-hidden-focus">
                                 <div class="cardImageOuter">
                                     <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="XCode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                        <img style="display: none;" alt="Xcode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -1099,7 +1099,7 @@ Tutorials, references, and other documentation show you how to configure and man
                             <div class="card ready x-hidden-focus">
                                 <div class="cardImageOuter">
                                     <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="XCode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                        <img style="display: none;" alt="Xcode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">

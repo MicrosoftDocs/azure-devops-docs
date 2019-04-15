@@ -16,7 +16,7 @@
 - name: Azure DevOps Services status & security
   items: 
   - name: Service status  
-    href: service-status-info.md
+    href: ../user-guide/service-status-info.md
   - name: Azure DevOps data protection
     href: ../organizations/security/data-protection.md
   - name: Azure DevOps data location

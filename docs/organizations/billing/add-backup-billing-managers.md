@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 04/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -47,7 +47,7 @@ add [**owner**](/azure/role-based-access-control/built-in-roles#owner), [**contr
 
 7. If your update is complete, choose **Save**.
 
-A backup billing manager is added to your organization.
+A backup billing manager or user who can make purchases is added to your organization.
 
 >[!Note]
 >To give access to a user who's not in your directory, the user must accept the invitation that's received via email before they can access the Azure subscription.

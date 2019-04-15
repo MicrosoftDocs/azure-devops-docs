@@ -84,6 +84,10 @@ The Development section within the work item form lists the links created to Git
 Choose the link provided to open the commit or pull request in GitHub. 
 
 
+## Try this next
+> [!div class="nextstepaction"]
+> [Configure status badges](configure-status-badges.md)
+
 ## Related articles
 
 - [Connect Azure Boards to GitHub](connect-to-github.md)  

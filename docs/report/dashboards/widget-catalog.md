@@ -62,13 +62,13 @@ The following widgets are organized under the service they support. Widgets that
 <li>[Chart for build history](#build-history-widget)</li>
 <li>[Deployment status](#deployment-status-widget)</li>
 <li>[Release pipeline overview](#release-definition-widget)</li>
+<li>[Test results trend (Advanced)](#test-trend-results-advanced) (Analytics)</li>
 <li>[Requirements quality](#requirements-quality-widget)</li>
 </ul>
 <br/>
 **Test Plans**
 <li>[Chart for test plans](#chart-test-plan-widget)</li>
-<li>[Test results trend](#test-results-widget)</li>
-<li>[Test results trend (Advanced)](#test-trend-results-advanced) (Analytics)</li>
+
 </ul>
 </td>
 <td width="28%">

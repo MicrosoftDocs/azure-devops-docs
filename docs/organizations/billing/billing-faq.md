@@ -2,7 +2,7 @@
 title: Frequently asked questions about billing management
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Find answers to frequently asked questions (FAQs) about billing for your organization, which is managed in the Azure portal
+description: Find answers to frequently asked questions (FAQs) about billing for your organization
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/03/2019
+ms.date: 04/10/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this topic, you'll find answers to frequently asked questions about billing for your organization. You can manage billing in the Azure portal.
+In this topic, find answers to frequently asked questions about billing for your organization.
 
 Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and the [billing overview](overview.md).
 
@@ -116,7 +116,7 @@ A: When the Azure subscription used for billing on your organization is not in a
 
 ### Q: Where can I check my bill or update billing details on my Azure subscription?
 
-A: If you're the owner or contributor for the Azure subscription used for billing your organization, you can view your billing details in the [Azure portal](https://account.azure.com/).
+A: If you're the owner or contributor for the Azure subscription used for billing your organization, you can view your billing details in the Billing tab of your Organization settings in Azure DevOps.
 
 ## Other questions
 
@@ -128,8 +128,8 @@ A: Starting September 28th, 2018 you can no longer create Team Projects or view 
 
 ### Q: Why is my organization already linked to an Azure subscription?
 
-A: This happens if someone already set up billing for your organization, either through the Azure portal or while purchasing something for this organization via the
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Each organization can use only one Azure subscription for billing. Charges cannot be split across multiple Azure subscriptions.
+A: This happens if someone already set up billing for your organization via the
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Each organization can use only one Azure subscription for billing. Charges can't be split across multiple Azure subscriptions.
 
 ### Q: Can I use the same Azure subscription for billing across multiple organizations?
 

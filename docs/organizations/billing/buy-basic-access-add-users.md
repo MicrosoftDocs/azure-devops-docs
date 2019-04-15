@@ -10,15 +10,15 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 04/10/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Pay for more Basic users
+# Pay for more Basic users
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five free additional users in your organization.
+In this quickstart, you'll learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five free additional users in your organization.
 
 [Pay for additional users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) in whatever quantity you need. When you pay for users, the total number of users that you can add as members in your organization increases. This amount is added to the free limits previously mentioned.
 
@@ -28,14 +28,10 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 ## Prerequisites
 
-The first time that you set up billing for your organization, whether you do the setup up via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
+Ensure the following is true for the user who's making a change:
 
-* [Project collection administrator (PCA) or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner). If you aren't a PCA or organization owner, you're prompted to send a purchase request to the admins for your organization.
-
-   > [!div class="mx-imgBorder"]
-![Non-project admin submit request](_img/buy-more-basic-access/non-organization-admin-purchase-request.png)
-
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
+* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
 
