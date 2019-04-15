@@ -31,7 +31,7 @@ Before you use continuous integration and continuous delivery practices for your
 
 ### Application types
 
-You can use Azure Pipelines with most application types, such as Java, JavaScript, Python, .NET, PHP, Go, XCode, and C++.
+You can use Azure Pipelines with most application types, such as Java, JavaScript, Python, .NET, PHP, Go, Xcode, and C++.
 
 ### Deployment targets
 

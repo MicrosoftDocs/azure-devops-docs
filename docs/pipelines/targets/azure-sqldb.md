@@ -17,11 +17,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
-You can automatically deploy your database updates to Azure SQL database after every successful build. Before you read this topic, you should understand the type of pipeline that you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+You can automatically deploy your database updates to Azure SQL database after every successful build.
 
 ## DACPAC
 
@@ -29,13 +27,7 @@ The simplest way to deploy a database is to create [data-tier package or DACPAC]
 
 # [YAML](#tab/yaml)
 
-::: moniker range="< azure-devops"
-
-YAML is not supported in TFS.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 To deploy a DACPAC to an Azure SQL database, add the following snippet to your azure-pipelines.yml file.
 
@@ -50,6 +42,12 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your a
     SqlPassword: '<SQL user password>'
     DacpacFile: '<Location of Dacpac file in $(Build.SourcesDirectory) after compilation>'
 ```
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
@@ -128,7 +126,7 @@ If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $A
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 Add the following to your azure-pipelines.yml file to run a SQL script.
 
@@ -164,11 +162,12 @@ steps:
     ScriptArguments: '$(ServerName)'
     azurePowerShellVersion: LatestVersion
 ```
+
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML is not supported in TFS.
+YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
@@ -208,7 +207,7 @@ You may choose to deploy only certain builds to your Azure database.
 
 # [YAML](#tab/yaml)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 To do this in YAML, you can use one of these techniques:
 
@@ -233,9 +232,9 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 

@@ -48,4 +48,4 @@ Whether your app is on-premises or in the cloud, you can automate build-deploy-t
 * Rich analytics and reporting. When your build is done, review your test results to start resolving the problems you find. Rich and actionable build-on-build reports 
 let you instantly see if your builds are getting healthier. But it's not just about speed - detailed and customizable test results measure the quality of your app.
 
-Now that you understand the basics, follow the quickstart to [create your first pipeline](get-started-designer.md).
+Now that you understand the basics, follow the quickstart to [create your first pipeline](create-first-pipeline.md).

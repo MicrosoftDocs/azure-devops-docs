@@ -34,7 +34,6 @@ and [Create and manage policies to enforce compliance](https://docs.microsoft.co
    that can be applied to a management group, subscription, and resource group.
 
 1. In Azure DevOps create a release pipeline that contains at least one stage, or open an existing release pipeline.
-   [More details](../get-started-designer.md).
 
 1. Add a pre- or post-deployment condition that includes the **Security and compliance assessment** task as a gate.
    [More details](../release/deploy-using-approvals.md#configure-a-gate).

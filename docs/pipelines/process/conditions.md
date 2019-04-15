@@ -9,7 +9,7 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/18/2019
+ms.date: 04/10/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -191,7 +191,7 @@ For instance, in a YAML pipeline, you could check output variables:
 jobs:
 - job: A
   steps:
-  - script: "echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
     name: printvar
 
 - job: B

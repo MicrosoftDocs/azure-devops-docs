@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 # Use SSH key authentication
 #### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
-Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
+Connect to your Git repos through SSH on macOS or Linux, or on Windows when you can't (or don't want to) use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 >[!IMPORTANT]
