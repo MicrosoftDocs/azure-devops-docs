@@ -29,7 +29,7 @@ If you are experiencing a problem with any of our Azure DevOps services, you can
 service health to determine if we are already working on the issue before you contact our 
 support team or spend time troubleshooting. Many of the events we post here are based on our 
 Customer Impact Assessment (CIA). CIA is modeled on the same telemetry we use in our 
-[availability model](https://blogs.msdn.microsoft.com/bharry/2013/10/14/how-do-you-measure-quality-of-a-service/) 
+[availability model](https://devblogs.microsoft.com/bharry/how-do-you-measure-quality-of-a-service/) 
 which measures real customer representing both reliability and performance.
 
 ## Concepts 
@@ -91,6 +91,6 @@ Please stay tuned for more information.
 If you're experiencing an issue with Azure DevOps and see a corresponding event communicated on service health portal, 
 you can be assured that we are working to restore normal operations of the service and you don't need to take any further 
 action to notify us. However, if you do not see your issue reported on the Azure DevOps service health page, please refer 
-to the resources available on  [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
+to the resources available on [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
 resources to report bugs, interact with a friendly support bot, and contact our support team for additional assistance.
    

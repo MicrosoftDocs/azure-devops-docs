@@ -11551,6 +11551,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/articles/phase-features-with-feature-flags.md",
+      "redirect_url": "/azure/devops/migrate/phase-features-with-feature-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/security-validation-cicd-pipeline.md",
+      "redirect_url": "/azure/devops/migrate/security-validation-cicd-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/phase-rollout-with-rings.md",
+      "redirect_url": "/azure/devops/migrate/phase-rollout-with-rings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/service-status-info.md",
+      "redirect_url": "/azure/devops/user-guide/service-status-info",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/build/ci-build-github.md",
       "redirect_url": "/azure/devops/pipelines/get-started-designer",
       "redirect_document_id": false
@@ -11653,6 +11673,11 @@
     {
       "source_path": "docs/pipelines/get-started-yaml.md",
       "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/service-status-info.md",
+      "redirect_url": "/azure/devops/user-guide/service-status-info",
       "redirect_document_id": false
     }
   ]
