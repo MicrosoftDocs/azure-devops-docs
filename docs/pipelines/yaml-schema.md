@@ -7,8 +7,9 @@ ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: jillfra
 ms.author: macoope
+author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 04/02/2019
+ms.date: 04/09/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -18,9 +19,15 @@ monikerRange: '>= azure-devops-2019'
 
 Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
 
+::: moniker range="azure-devops"
 > The best way to get started with YAML pipelines is through the
-[quickstart guide](get-started-yaml.md).
+[quickstart guide](create-first-pipeline.md).
 > After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
+::: moniker-end
+
+::: moniker range="< azure-devops"
+> To learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
+::: moniker-end
 
 ## Pipeline structure
 
@@ -180,6 +187,7 @@ By default, stages run sequentially, starting only after the stage ahead of them
 # [Schema](#tab/schema)
 
 ```yaml
+stages:
 - stage: string  # name of the stage, A-Z, a-z, 0-9, and underscore
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
@@ -243,6 +251,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
 # [Schema](#tab/schema)
 
 ```yaml
+jobs:
 - job: string  # name of the job, A-Z, a-z, 0-9, and underscore
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
@@ -266,6 +275,7 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
 # [Example](#tab/example)
 
 ```yaml
+jobs:
 - job: MyJob
   displayName: My First Job
   continueOnError: true
@@ -304,13 +314,17 @@ container:
 # [Example](#tab/example)
 
 ```yaml
-container: ubuntu:16.04 # Docker Hub image reference
+jobs:
+- job: RunsInContainer
+  container: ubuntu:16.04 # Docker Hub image reference
 ```
 
 ```yaml
-container: # inline container specification
-  image: ubuntu:16.04
-  options: --hostname container-test --ip 192.168.0.1
+jobs:
+- job: RunsInContainer
+  container: # inline container specification
+    image: ubuntu:16.04
+    options: --hostname container-test --ip 192.168.0.1
 ```
 
 ```yaml
@@ -353,13 +367,14 @@ to the job.
 # [Example](#tab/example)
 
 ```yaml
-job: Build
-strategy:
-  matrix:
-    Python35:
-      PYTHON_VERSION: '3.5'
-    Python36:
-      PYTHON_VERSION: '3.6'
+jobs:
+- job: Build
+  strategy:
+    matrix:
+      Python35:
+        PYTHON_VERSION: '3.5'
+      Python36:
+        PYTHON_VERSION: '3.6'
 ```
 
 This matrix will create two jobs, "Build Python35" and "Build Python36". Within
@@ -384,8 +399,10 @@ strategy:
 # [Example](#tab/example)
 
 ```yaml
-strategy:
-  parallel: 4
+jobs:
+- job: SliceItFourWays
+  strategy:
+    parallel: 4
 ```
 
 ---
@@ -412,15 +429,17 @@ strategy:
 # [Example](#tab/example)
 
 ```yaml
-strategy:
-  maxParallel: 2
-  matrix:
-    Python35:
-      PYTHON_VERSION: '3.5'
-    Python36:
-      PYTHON_VERSION: '3.6'
-    Python37:
-      PYTHON_VERSION: '3.7'
+jobs:
+- job: BuildPython
+  strategy:
+    maxParallel: 2
+    matrix:
+      Python35:
+        PYTHON_VERSION: '3.5'
+      Python36:
+        PYTHON_VERSION: '3.6'
+      Python37:
+        PYTHON_VERSION: '3.7'
 ```
 
 This example will generate 3 jobs but only run 2 at a time.
@@ -486,6 +505,8 @@ Variables may also be included from [templates](#variable-templates).
 
 # [Example](#tab/example)
 
+::: moniker range="> azure-devops-2019"
+
 ```yaml
 variables:      # pipeline-level
   MY_VAR: 'my value'
@@ -503,6 +524,25 @@ stages:
     steps:
     - script: echo $(MY_VAR) $(STAGE_VAR) $(JOB_VAR)
 ```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+```yaml
+variables:      # pipeline-level
+  MY_VAR: 'my value'
+  ANOTHER_VAR: 'another value'
+
+jobs:
+- job: FirstJob
+  variables:  # job-level
+    JOB_VAR: 'a job var'
+  steps:
+  - script: echo $(MY_VAR) $(STAGE_VAR) $(JOB_VAR)
+```
+
+::: moniker-end
 
 ```yaml
 variables:
@@ -1136,7 +1176,9 @@ pool: server
 # [Example](#tab/example)
 
 ```yaml
-pool: server
+jobs:
+- job: RunOnServer
+  pool: server
 ```
 
 ---
@@ -1149,6 +1191,7 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - script: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -1164,6 +1207,7 @@ It will run a script using cmd.exe on Windows and Bash on other platforms.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - script: echo Hello world!
   displayName: Say hello
 ```
@@ -1181,6 +1225,7 @@ It will run a script in Bash on Windows, macOS, or Linux.
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - bash: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -1196,6 +1241,7 @@ It will run a script in Bash on Windows, macOS, or Linux.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - bash: |
     which bash
     echo Hello $name
@@ -1217,6 +1263,7 @@ It will run a script in PowerShell Core on Windows, macOS, or Linux.
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - pwsh: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -1234,6 +1281,7 @@ It will run a script in PowerShell Core on Windows, macOS, or Linux.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - pwsh: echo Hello $(name)
   displayName: Say hello
   name: firstStep
@@ -1256,6 +1304,7 @@ It will run a script in PowerShell on Windows.
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - powershell: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -1273,6 +1322,7 @@ It will run a script in PowerShell on Windows.
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - powershell: echo Hello $(name)
   displayName: Say hello
   name: firstStep
@@ -1342,11 +1392,12 @@ steps:
 
 ## Checkout
 
-`checkout` informs the system how to handle checking out source code.
+`checkout` defines options for checking out source code.
 
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
   clean: boolean  # whether to fetch clean each time
   fetchDepth: number  # the depth of commits to ask Git to fetch
@@ -1358,12 +1409,14 @@ steps:
 Or to avoid syncing sources at all:
 
 ```yaml
+steps:
 - checkout: none
 ```
 
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
   clean: false
   fetchDepth: 5
@@ -1380,6 +1433,7 @@ Or to avoid syncing sources at all:
 # [Schema](#tab/schema)
 
 ```yaml
+steps:
 - task: string  # reference to a task and version, e.g. "VSBuild@1"
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
@@ -1394,6 +1448,7 @@ Or to avoid syncing sources at all:
 # [Example](#tab/example)
 
 ```yaml
+steps:
 - task: VSBuild@1
   displayName: Build
   timeoutInMinutes: 120

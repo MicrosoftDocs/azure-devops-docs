@@ -24,18 +24,36 @@ If you have known issues you want to track, you can do so by defining an impedim
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to address feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the Agile, Scrum, or CMMI process. By default, these work item types don't appear on the product backlog. If you want to add these work item types to a backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Basic](/azure/devops/boards/get-started/track-issues-tasks), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) process. By default, these work item types don't appear on the product backlog or taskboard. 
 > 
 > If your project was created using the Basic process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. To learn more, see [Track issues and tasks](../get-started/track-issues-tasks.md).
 
-In this topic you'll learn: 
+In this article you'll learn: 
 
 >[!div class="checklist"]      
+> * When to use issues versus tasks
 > * How to capture issues or impediments as a work item   
  
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]   
 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
+
+## When to use issues versus tasks
+
+You use issues or impediments to track items that may block work from getting done. In general, you link these items to user stories or other work items using a Related link type.
+
+You define tasks when you want to create a [checklist of tasks](../boards/add-task-checklists.md) or if you use Scrum methods and track work using the [Remaining Work](../sprints/task-board.md) field. By linking user stories, or other requirement work item types, to tasks using the Parent-Child link type, the tasks appear on the taskboard for each linked user story.
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]  
+> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Set up your backlogs and boards, Customize your Kanban Board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"  
+If you want to add these work item types to a backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 
 ## Add an issue or impediment 
 

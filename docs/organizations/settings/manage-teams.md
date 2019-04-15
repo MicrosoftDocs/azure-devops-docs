@@ -189,9 +189,65 @@ You can configure most of your team settings from the common configuration dialo
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017"  
-
 For details on each configuration option, see one of these topics:  
+
+::: moniker range="azure-devops"  
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Configuration task</th>
+</tr>
+<tr>
+<td>Cards  </td>
+<td>
+<ul>
+<li>[Add fields](../../boards/boards/customize-cards.md)</li>
+<li>[Define styles](../../boards/boards/customize-cards.md#style-rule)</li>
+<li>[Add tag colors](../../boards/boards/customize-cards.md#color-tags)</li>
+<li>[Enable annotations](../../boards/boards/customize-cards.md#annotations)</li>
+<li>[Configure inline tests](../../boards/boards/customize-cards.md#tests) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Boards </td>
+<td>
+<ul>
+<li>[Add columns](../../boards/boards/add-columns.md)</li>
+<li>[Add swimlanes](../../boards/boards/expedite-work.md)</li>
+<li>[Card reordering](../../boards/boards/reorder-cards.md) </li>
+<li>[Configure status badges](../../boards/github/configure-status-badges.md) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Chart</td>
+<td>
+<ul>
+<li>[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>General  </td>
+<td>
+<ul>
+<li>[Backlogs](select-backlog-navigation-levels.md)</li>
+<li>[Working days](set-working-days.md)</li>
+<li>[Working with bugs](show-bugs-on-backlog.md) </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+
 
 <table width="80%">
 <tbody valign="top">
