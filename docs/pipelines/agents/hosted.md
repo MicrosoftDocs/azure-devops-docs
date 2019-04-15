@@ -41,7 +41,7 @@ The Microsoft-hosted agent pool provides 7 virtual machine images to choose from
 | Visual Studio 2017 | vs2017-win2016 | Hosted VS2017 |
 | Visual Studio 2015 | vs2015-win2012r2 | Hosted |
 | Docker containers | ubuntu-16.04 or win1803 | Hosted Ubuntu 1604 or Hosted Windows Container |
-| Development tools on macOS (including xCode 10.2) | macOS-10.14  | Hosted macOS |
+| Development tools on macOS (including Xcode 10.2) | macOS-10.14  | Hosted macOS |
 | Development tools on macOS (Xcode versions prior to 9.4.1) | macOS-10.13  | Hosted macOS High Sierra |
 | Development tools on Ubuntu | ubuntu-16.04 | Hosted Ubuntu 1604 |
 
@@ -152,7 +152,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xamarin).
+  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xamarin).
 
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -162,7 +162,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   
   where `${xcodeRoot}` = `/Applications/Xcode_10.1.app`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
 #### Xcode
 
@@ -170,7 +170,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
   Note that this command does not works in case of Xamarin app. To manually select a Xcode version for building Xamarin apps, see instructions above.
 
