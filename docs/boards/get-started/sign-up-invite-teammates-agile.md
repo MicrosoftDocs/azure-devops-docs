@@ -48,4 +48,4 @@ For more information on managing users and organization access, see [Add organiz
 ## Try this next  
  
 > [!div class="nextstepaction"]
-> [Plan and track work ](plan-track-work.md)
+> [Plan and track work](plan-track-work.md)

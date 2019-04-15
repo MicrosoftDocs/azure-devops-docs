@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 82920422-FCC2-4FF6-BDFB-E8E992736A5A
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 08/04/2016
 ---
@@ -19,7 +20,7 @@ ms.date: 08/04/2016
 
 Opens this work item for modification by loading only the latest revision of this WorkItem. Whenever possible, use this method instead of [Open](open.md) because PartialOpen provides better performance.  
 
-**Namespace: **  [Microsoft.TeamFoundation.WorkItemTracking.Client](/previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120))  
+**Namespace:**  [Microsoft.TeamFoundation.WorkItemTracking.Client](/previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120))  
 **Assembly:**  Microsoft.TeamFoundation.WorkItemTracking.Client (in Microsoft.TeamFoundation.WorkItemTracking.Client.dll)
 
 

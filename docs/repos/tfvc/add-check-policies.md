@@ -29,9 +29,7 @@ Administrators of Team Foundation version control can add check-in policy requir
 > Visual Studio 2017 : Check-in policies in Visual Studio 2017 must be set through Team Explorer, tf.exe, or [through registry keys declared in the pkgdef of a Visual Studio extension](/visualstudio/extensibility/internals/createpkgdef-utility). Policies only apply to a single installation of Visual Studio 2017 on your computer. If you have multiple installations of Visual Studio 2017, you'll need to set the check-in policy on each installation. [Learn more](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 
 
-Procedure
------------------------------------------------------------------------------
-
+## Procedure
 
 ### To create a check-in policy
 
