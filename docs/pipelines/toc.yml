@@ -195,6 +195,8 @@
       href: library/variable-groups.md
   - name: Retention policy
     href: policies/retention.md
+  - name: Runs
+    href: process/runs.md
   - name: Task groups
     href: library/task-groups.md
   - name: Tasks
@@ -584,5 +586,7 @@
       href: tasks/file-matching-patterns.md
     - name: File and variable transform
       href: tasks/transforms-variable-substitution.md
+  - name: Logging commands
+    href: scripts/logging-commands.md
   - name: REST API reference
     href: /rest/api/vsts/
