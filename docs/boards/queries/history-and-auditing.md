@@ -233,7 +233,7 @@ The name of the team member who modified the work item most recently.
 <td>History</td>
 <td>
 The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed. 
-<p>You can add formatted text to the history field. Once you've saved the work item, you can't alter the history. </p>
+<p>You can't add formatted text to the history field. Once you've saved the work item, you can't alter the history. </p>
 <p>The ```History``` field, along with the ```Description```, ```Steps to Repro``` and ```Title``` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md). </p>
 
 	<p>Reference name=System.History, Data type=History</p>
