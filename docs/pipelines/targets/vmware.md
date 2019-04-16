@@ -70,7 +70,7 @@ the agent machine:
      path will be:  
      `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
 
-1. Install the [VMware extension ](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
+1. Install the [VMware extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
    from Visual Studio Marketplace into TFS or Azure Pipelines.
 
 1. Follow these steps to create a vCenter Server service connection in your project:

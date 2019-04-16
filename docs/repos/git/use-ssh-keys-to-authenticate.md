@@ -37,7 +37,7 @@ messages. The _private_ key is kept safe and secure on your system and is used t
 
 The following steps cover configuration of SSH key authentication on the following platforms:
 
---- 
+---
 - Linux
 - macOS running at least Leopard (10.5)
 - Windows systems running  [Git for Windows](http://www.git-scm.com/download/win)   

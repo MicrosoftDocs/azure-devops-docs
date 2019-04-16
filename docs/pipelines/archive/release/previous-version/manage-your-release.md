@@ -146,7 +146,7 @@ actions needed to deploy your app.
 You have the following options for creating release templates:
 
 * [Create a release template for environments without deployment agents](release-without-agents.md#CreateReleaseTemplate)
-* [Create a release template for environments with deployment agents ](release-with-agents.md#CreateReleaseTemplate)
+* [Create a release template for environments with deployment agents](release-with-agents.md#CreateReleaseTemplate)
 
 <a name="StartRelease"></a>
 ### Start a release 
