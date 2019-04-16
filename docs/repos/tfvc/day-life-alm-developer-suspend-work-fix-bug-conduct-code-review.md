@@ -81,7 +81,6 @@ Peter opens and reads the bug work item. According to the description that has b
 
 From the IntelliTrace log, Peter sees that sometimes the method returns false because the parameters differ by an extremely small amount. Peter knows that rounding errors of this kind are unavoidable in floating point arithmetic, and that it is bad practice to test floating point numbers for equality.
 
-### 
 ## Augment the tests to show the error
 When a bug is found, it shows that there was a gap in the unit tests, or that the test did not match the users' actual needs. Therefore, before fixing the bug, Peter adds a test that will demonstrate the presence of this error.
 
@@ -113,7 +112,6 @@ He runs the test and it fails as expected.
 
 ![Unit Test Explorer showing failed test for equal](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC675827.png)
 
-### 
 ## Make the tests pass
 Peter fixes the code:
 
@@ -171,7 +169,6 @@ In her comments, Julia points out that the test is wrong. The allowable error sh
 >**Tip:**
 >  Notice that the team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
 
-### 
 ## To perform a code review![My Work page - code review item. Code Review page - Decline link, Comment, Decline button.](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591278.png)![Diff window. Code Review page - Accept link, Overall comment, code block comment](_img/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592880.png)
 1.  In **Team Explorer**, on the **My Work** page, go to the **My Code Reviews & Requests** section and open the request.
 

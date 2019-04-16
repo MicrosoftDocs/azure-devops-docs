@@ -202,7 +202,7 @@ While editing a page, you can quickly save, save and close, or just close.
 > [!div class="mx-imgBorder"]
 ![Wiki edit keyboard shortcuts popup](_img/129_06.png)
 
-These are in addition to standard editing shortcuts such as Ctrl+B for **bold**, Ctrl+I for *italics*, Ctrl+K for [linking](#) etc. See the [full list of keyboard shortcuts](/azure/devops/project/navigation/keyboard-shortcuts) for more information.
+These are in addition to standard editing shortcuts such as Ctrl+B for **bold**, Ctrl+I for *italics*, Ctrl+K for `[linking](#)` etc. See the [full list of keyboard shortcuts](/azure/devops/project/navigation/keyboard-shortcuts) for more information.
 
 ## Marketplace
 
