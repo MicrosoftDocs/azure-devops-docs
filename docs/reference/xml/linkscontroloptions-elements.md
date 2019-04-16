@@ -141,7 +141,7 @@ The links control that is displayed is the same for both the web portal and Team
 
   
 ## Related articles  
--  [LinkTypes elements reference, Define a custom link type ](link-type-element-reference.md)   
+-  [LinkTypes elements reference, Define a custom link type](link-type-element-reference.md)   
 -  [Define link controls to restrict link relationships](define-link-controls.md)
 -  [Specify work item form controls](specify-work-item-form-controls.md)  
  

@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 02/14/2019
@@ -99,11 +100,8 @@ Team members can quickly check that they have met the criteria by choosing the I
 
 ## Related articles
 
-- [Add, rename, move, and delete columns ](add-columns.md)
+- [Add, rename, move, and delete columns](add-columns.md)
 - [Work in Progress limits](wip-limits.md)  
 - [Add swimlanes, expedite work](expedite-work.md)
 - [Split columns](split-columns.md) 
-- [Customize cards ](../../boards/boards/customize-cards.md)
-
-
-
+- [Customize cards](../../boards/boards/customize-cards.md)

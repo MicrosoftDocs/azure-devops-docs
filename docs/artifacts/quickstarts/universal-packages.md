@@ -84,7 +84,7 @@ az artifacts universal publish --organization https://dev.azure.com/fabrikam --f
 #  [Legacy URLs](#tab/vsts)
 
 ```azurecli
-az artifacts package universal publish --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
+az artifacts universal publish --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
 ```
 
 ---

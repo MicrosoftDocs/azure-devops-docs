@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 02/04/2019
---- 
+---
 
 # Query quick reference 
 

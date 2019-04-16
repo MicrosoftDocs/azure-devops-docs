@@ -28,7 +28,7 @@ Once you've defined your product backlog, you can use the following controls to 
 |---------|------------------------|--------------------|
 | ![backlogs](../../_img/icons/backlogs.png) | Backlog options  | [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](_img/backlogs-menu.png)    |  
 | ![view options](../../_img/icons/view-options-icon.png) | View options |- [Turn Parents on/off](organize-backlog.md)<br/>- [Turn Forecasting on/off](../sprints/forecast.md)<br/>- [Turn In Progress items on/off](../sprints/forecast.md)<br/>- [Show Mapping](organize-backlog.md)<br/>- [Show Planning](../sprints/assign-work-sprint.md)<br/>![view options](_img/view-options.png) |  
-| ![Filter](../_img/icons/filter-icon.png) |  Filter | [Turn filtering On/Off ](filter-backlogs.md)  |   
+| ![Filter](../_img/icons/filter-icon.png) |  Filter | [Turn filtering On/Off](filter-backlogs.md)  |   
 | ![Settings icon](../../_img/icons/blue-gear.png) | Settings   | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |  
 | ![full screen](../../_img/icons/full-screen-icon.png) / ![exit full screen](../../_img/icons/exit-full-screen-icon.png)  | Full screen | Enter or exit full screen mode  |  
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png) | Expand/Collapse | Expand or collapse one level of the tree hierarchy |   
@@ -63,7 +63,7 @@ Once you've defined your product backlog, you can use the following controls to 
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)  | Enter or exit full screen mode      |
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
-| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off ](filter-backlogs.md)  |  
+| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off](filter-backlogs.md)  |  
 
 
 > [!IMPORTANT]  

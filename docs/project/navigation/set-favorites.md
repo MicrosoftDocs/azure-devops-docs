@@ -315,7 +315,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Follow a user story, bug, issue, or other work item or pull request ](../../boards/work-items/follow-work-items.md)
+> [Follow a user story, bug, issue, or other work item or pull request](../../boards/work-items/follow-work-items.md)
 
 ## Related articles
 
