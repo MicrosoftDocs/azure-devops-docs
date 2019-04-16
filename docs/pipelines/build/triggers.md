@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 04/02/2019
+ms.date: 04/16/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -79,7 +79,7 @@ trigger:
       refs/tags/{othertagname}
 ```
 
-If you don't specify any branch triggers, the default is as if you wrote:
+If you don't specify any triggers, the default is as if you wrote:
 
 ```yaml
 trigger:
@@ -87,6 +87,8 @@ trigger:
     include:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
+
+When you specify a trigger, this default no longer applies.
 
 ::: moniker-end
 
@@ -143,6 +145,8 @@ trigger:
     exclude:
     - docs/README.md
 ```
+
+When you specify paths, you also need to explicitly specify branches or tags to trigger on.
 
 ### Opting out of CI builds
 
