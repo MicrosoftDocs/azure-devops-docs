@@ -122,8 +122,6 @@ Source item (grid and tree) menu    | `ms.vss-code-web.source-item-menu`        
 Change list item menu               | `ms.vss-code-web.change-list-item-menu`          |
 Change list summary item menu       | `ms.vss-code-web.change-list-summary-item-menu`  |
 Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![gitBranchesTree](./vss/code/web/_img/gitBranchesTreeActions.png)
-Git branches summary menu           | `ms.vss-code-web.git-branches-summary-grid-menu` |     
-Git branches diff summary menu      | `ms.vss-code-web.git-branches-summary-grid-diff-menu` |
 Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu` | ![gitPullRequestActions](./vss/code/web/_img/pullRequestActions.png)
 Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs` | ![gitPullRequestTab](./vss/code/web/_img/pullRequestTab.png)
 
