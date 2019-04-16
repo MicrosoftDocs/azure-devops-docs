@@ -42,6 +42,8 @@ By using Work Item Search you can:
   The Work Item Search interface integrates with familiar controls for managing your work items;
   letting you view, edit, comment, share, and much more.
 
+
+
 <a name="acrossfield"></a>
 ## Full text search across all fields
 
