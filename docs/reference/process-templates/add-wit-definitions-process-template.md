@@ -5,7 +5,8 @@ description: Specify  type definitions for a process template within the WorkIte
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c0cec71f-89ad-43f5-960e-6008e3f9d975
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
 ms.date: 02/24/2017
@@ -103,7 +104,7 @@ The following example shows how to specify a task that creates the following WIT
 ## Related articles
 -  [All WITD elements](../xml/all-witd-xml-elements-reference.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)   
--  [Add or modify a work item type ](../add-modify-wit.md)   
+-  [Add or modify a work item type](../add-modify-wit.md)   
 -  [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
 

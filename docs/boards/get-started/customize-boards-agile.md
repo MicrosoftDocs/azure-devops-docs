@@ -70,7 +70,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 	<ul>
 	<li>**Fields**: Set what fields appear on cards.</li>
 	<li>**Columns**: Add, rename, and configure columns for the board.</li>
-	<li>**Swimlanes**: Add swimlanes to a board to easily track high priority levels, distinguis different service classes, or track blocked items.</li>
+	<li>**Swimlanes**: Add swimlanes to a board to easily track high priority levels, distinguish different service classes, or track blocked items.</li>
 	<li>**Backlogs**: Enable or disable issues or epics from being tracked on backlogs and boards.</li>
 	</ul>
 	**Less common customizations:**  
@@ -166,5 +166,5 @@ Here we show the customizations made in this article. The following image also s
 * [Work in Progress limits](../boards/wip-limits.md)  
 * [Split columns](../boards/split-columns.md)   
 * [Definition of Done](../boards/definition-of-done.md)  
-* [Set working days ](../../organizations/settings/set-working-days.md)  
+* [Set working days](../../organizations/settings/set-working-days.md)  
 * [Cumulative flow](../../report/dashboards/cumulative-flow.md)  

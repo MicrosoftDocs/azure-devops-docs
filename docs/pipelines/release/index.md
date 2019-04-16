@@ -166,7 +166,7 @@ continuous integration [stage trigger](triggers.md#env-triggers)
 that redeploys the artifacts using this release.
 
 If you do not intend to reuse the release, or want to prevent it being used to redeploy the artifacts,
-you can abandon the release using the shortcut menu that opens from the elipses (**...**) icon in the
+you can abandon the release using the shortcut menu that opens from the ellipses (**...**) icon in the
 **Pipeline** view of the pipeline.
 
 ![Abandoning a release](_img/what-is-release-management/abandon-release.png)
@@ -177,7 +177,7 @@ Note that you cannot abandon a release when a deployment is in progress, you mus
 ## How do I send release summaries by email?
 
 After a release is triggered and completed, you may want to email the summary to stakeholders.
-Use the **Send Email** option on the menu that opens from the elipses (**...**) icon in the **Pipeline** view of the pipeline. 
+Use the **Send Email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
 
 ![Emailing a release summary](_img/what-is-release-management/email-release-summary.png)
 

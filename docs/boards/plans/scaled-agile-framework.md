@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 07/22/2017
@@ -23,7 +24,7 @@ If you're interested in using SAFe, you can configure projects created with the 
 
 In this article you'll learn how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure your Agile tools to support SAFe.  
 
-If you're familiar with Scrum but not familiar with SAFe, [these videos at Scaled Agile Framework Foundations ](http://scaledagileframework.com/foundations) from Inbar Oren, the Lean Samurai, are a good way to orient yourself.  
+If you're familiar with Scrum but not familiar with SAFe, [these videos at Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations) from Inbar Oren, the Lean Samurai, are a good way to orient yourself.  
 
 SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 

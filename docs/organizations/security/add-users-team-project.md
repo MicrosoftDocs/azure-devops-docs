@@ -54,11 +54,11 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 	*To see the full image, click to expand*.
 
-	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 0. Under **Groups**, choose one of the following:
    * To add users who require read-only access to the project, choose **Readers**.
-   * To add users who ontribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
+   * To add users who contribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
    * For users who eed to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 0. Next, choose the **Members** tab.

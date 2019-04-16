@@ -122,7 +122,7 @@ You can list work items based on the following criteria...
 - [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) 
   
 ### Link and attachment count queries 
-- [All child items of a single epic ](linking-attachments.md)
+- [All child items of a single epic](linking-attachments.md)
 - [All related items](linking-attachments.md)
 - [Items with one or more attachments](linking-attachments.md)
 - [Items with 2 or more hyperlinks](linking-attachments.md)
@@ -131,7 +131,7 @@ You can list work items based on the following criteria...
 ### Tag based queries
 - [Items containing a specific tag](add-tags-to-work-items.md)
 - [Items that don't contain a specific tag](add-tags-to-work-items.md)
-- [Items that contain two or more tags ](add-tags-to-work-items.md)
+- [Items that contain two or more tags](add-tags-to-work-items.md)
 
 ### Build and test field queries
 - [List bugs and linked test cases](build-test-integration.md#linked-bugs)

@@ -9,7 +9,8 @@ ms.technology: devops-agile
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
 ms.topic: tutorial
 ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/08/2018
 ---
@@ -55,7 +56,7 @@ The buttons to move up or down within the query results list are inside the work
 ![Triage query results ](_img/triage-queries/scrum-active-bug-triage-mode-co.png)
 
 > [!TIP]    
-> The same buttoms to move up or down within a work item list are available from a **Work Items** page when you choose a work item. See 
+> The same buttons to move up or down within a work item list are available from a **Work Items** page when you choose a work item. See 
 ::: moniker-end
 
 
