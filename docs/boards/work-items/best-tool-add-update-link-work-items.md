@@ -2,7 +2,7 @@
 title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
 titleSuffix: Azure Boards
 description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
-ms.custom: boards-work-items, seodec18
+ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
