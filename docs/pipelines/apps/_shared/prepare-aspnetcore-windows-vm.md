@@ -19,8 +19,5 @@ Invoke-WebRequest https://go.microsoft.com/fwlink/?LinkId=817246 -outfile $env:t
 Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wait
 
 # Restart the web server so that system PATH updates take effect
-net stop was /y
-net start w3svc
-```
-
-When `net start w3svc` appears, press **Enter** to run it.
+Stop-Service was -Force
+Start-Service w3svc
