@@ -344,7 +344,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 ![Copy full path hyperlink for a work item from Eclipse](../queries/_img/share-plans-copy-URL-wi-eclipse.png)   
 
---- 
+---
 
 <a id="export" /> 
 

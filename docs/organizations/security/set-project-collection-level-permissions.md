@@ -78,7 +78,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	*To see the full image, click to expand*.
 
-	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 0. Choose **Project Administrators** group, **Members**, and then **Add**.  
 

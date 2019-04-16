@@ -49,7 +49,7 @@ See [/azure/service-fabric/service-fabric-docker-compose](/azure/service-fabric/
 | **Get Status Timeout (s)** | Timeout in seconds for getting the status of an existing application. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
-Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powershell.md)
+Also see: [Service Fabric PowerShell Utility](../utility/service-fabric-powershell.md)
 
 ## Open source
 

@@ -40,7 +40,7 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 - [Specify the workflow state color](#change-wit-color)
 - [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)
 - [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)
-- [Add a portfolio backlog ](add-portfolio-backlogs.md)
+- [Add a portfolio backlog](add-portfolio-backlogs.md)
 
 #### Command line change
 - [List WITs](witadmin/witadmin-import-export-manage-wits.md)

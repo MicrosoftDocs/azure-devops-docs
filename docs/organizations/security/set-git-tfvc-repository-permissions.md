@@ -72,7 +72,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	*To see the full image, click to expand*.
 
-	[ ![Project Settings>Code>Repositories>Git repositories>Security](_img/git-tfvc-perm/open-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-repository-security-vert.png#lightbox) 
+	[![Project Settings>Code>Repositories>Git repositories>Security](_img/git-tfvc-perm/open-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-repository-security-vert.png#lightbox) 
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
 
@@ -119,7 +119,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	*To see the full image, click to expand*.
 
-	[ ![Project Settings>Code>Repositories>TFVC repositories>Security](_img/git-tfvc-perm/open-tfvc-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-tfvc-repository-security-vert.png#lightbox) 
+	[![Project Settings>Code>Repositories>TFVC repositories>Security](_img/git-tfvc-perm/open-tfvc-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-tfvc-repository-security-vert.png#lightbox) 
 
 3. Save your changes.  
 
