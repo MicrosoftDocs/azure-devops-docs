@@ -78,7 +78,7 @@ You assign these permissions by using the functional **permission** element, as 
   
 <a name="Build"></a> 
 ##  Assign Build permissions    
-You can assign permissions that control access to build activities by changing the Build plug-in file. You can grant access to users and groups in Windows and groups in Team Foundation Server. For information about the format to use when you specify groups, see [Group macros and default groups ](configure-initial-groups-teams-members-permissions.md#group-macros).  
+You can assign permissions that control access to build activities by changing the Build plug-in file. You can grant access to users and groups in Windows and groups in Team Foundation Server. For information about the format to use when you specify groups, see [Group macros and default groups](configure-initial-groups-teams-members-permissions.md#group-macros).  
   
  You assign these permissions by using the functional **permission** element, as the following example shows:  
   

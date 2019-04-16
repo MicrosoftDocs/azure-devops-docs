@@ -491,7 +491,7 @@ You can choose to limit access to select features by making a user a [Stakeholde
 
 - [Add another team](add-teams.md)  
 - [Configure team settings](manage-teams.md)      
-- [Work across projects ](../../project/navigation/work-across-projects.md)  
+- [Work across projects](../../project/navigation/work-across-projects.md)  
 
 
 
