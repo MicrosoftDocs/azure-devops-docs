@@ -4,7 +4,7 @@
   expanded: true
   items:
     - name: About settings
-      href: about-settings.md
+      href: about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: When to add a team or project
       href: ../projects/about-projects.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Quickstarts

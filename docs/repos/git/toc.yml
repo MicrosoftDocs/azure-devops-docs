@@ -1,5 +1,5 @@
 - name: Git Repositories
-  href: index.md
+  href: index.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: Learn about Git

@@ -1,9 +1,9 @@
 - name: Azure Artifacts
-  href: index.md
+  href: index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Overview
   items:
   - name: What is Azure Artifacts?
-    href: overview.md
+    href: overview.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
   # - name: Sign up for Azure Artifacts
   #   href: tbd
   - name: License Azure Artifacts

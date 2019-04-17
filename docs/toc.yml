@@ -1,0 +1,140 @@
+- name: What's new
+  items:
+  - name: Azure DevOps Services
+    href: /azure/devops/release-notes/index
+  - name: Azure DevOps Server
+    href: /azure/devops/server/release-notes/index
+  - name: Azure DevOps Blog
+    href: https://devblogs.microsoft.com/devops/
+- name: Get started
+  href: /azure/devops/user-guide/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+- name: GitHub Integration
+  items:
+  - name: GitHub & Azure Pipelines
+    href: /azure/devops/pipelines/get-started-yaml?toc=/azure/devops/boards/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+  - name: GitHub & Azure Boards
+    href: /azure/devops/boards/github/index?toc=/azure/devops/boards/github/toc.json&bc=/azure/devops/boards/github/breadcrumb/toc.json 
+  - name: GitHub & Azure DevOps Projects
+    href: /azure/devops-project/azure-devops-project-github?toc=/azure/devops-project/toc.json&bc=/azure/devops-project/breadcrumb/toc.json 
+- name: Azure Boards
+  items:
+  - name: Get started
+    href: /azure/devops/boards/get-started/index-agile?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json 
+  - name: Work Items
+    href: /azure/devops/boards/work-items/index?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+  - name: Boards
+    href: /azure/devops/boards/boards/index?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
+  - name: Backlogs
+    href: /azure/devops/boards/backlogs/index?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
+  - name: Sprints
+    href: /azure/devops/boards/sprints/index?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json 
+  - name: Queries
+    href: /azure/devops/boards/queries/index?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
+  - name: Plans
+    href: /azure/devops/boards/plans/index?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
+  - name: Settings
+    href: /azure/devops/organizations/settings/scale/index?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json 
+  - name: Customize
+    href: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+- name: Azure Repos
+  items:
+  - name: Get started
+    href: repos/get-started/index.md?toc=/azure/devops/repos/get-started/toc.json&bc=/azure/devops/repos/get-started/breadcrumb/toc.json 
+  - name: Git
+    href: repos/git/index.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json 
+  - name: TFVC
+    href: repos/tfvc/index.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json 
+- name: Azure Pipelines
+  href: pipelines/get-started/what-is-azure-pipelines.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+- name: Azure Test Plans
+  items:
+  - name: Exploratory/manual testing
+    href: test/index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+  - name: Continuous testing
+    href: /azure/devops/pipelines/languages/dotnet-core#run-your-tests
+  - name: Unit and functional testing
+    href: /visualstudio/test/unit-test-your-code
+- name: Azure Artifacts
+- name: Azure DevOps Server
+  items:
+  - name: Install
+    href: /azure/devops/server/install/get-started
+  - name: Upgrade
+    href: /azure/devops/server/upgrade/get-started
+  - name: Administration
+    href: /azure/devops/server/server/index
+  - name: SharePoint integration (Deprecated)
+    href: report/sharepoint-dashboards/index.md 
+  - name: Project Server integration (Deprecated)
+    href: reference/tfs-ps-sync/index.md
+- name: Reporting
+  items:
+  - name: Dashboards, Charts, Reports, & Widgets
+    href: report/dashboards/index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json 
+  - name: Power BI Integration
+    href: report/powerbi/index.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json 
+  - name: Extend with Analytics OData
+    href: report/extend-analytics/index.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json 
+  - name: SQL Reports (Legacy)
+    href: report/sql-reports/index.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json 
+- name: Collaborate
+  items:
+  - name: Wikis
+    href: project/wiki/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
+  - name: Navigation
+    href: project/navigation/index.md?toc=/azure/devops/project/navigation//toc.json&bc=/azure/devops/project/navigation//breadcrumb/toc.json 
+  - name: Notifications
+    href: notifications/index.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json 
+  - name: Public projects
+    href: organizations/public/index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json 
+  - name: Search
+    href: project/search/index.md 
+  - name: Feedback
+    href: project/feedback/index.md 
+- name: Manage
+  items:
+  - name: Teams
+    href: organizations/settings/scale/index.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json 
+  - name: Projects
+    href: organizations/projects/index.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json 
+  - name: Organizations
+    href: organizations/accounts/index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json 
+  - name: Security
+    href: organizations/security/index.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+  - name: Billing
+    href: organizations/billing/index.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json 
+  - name: All settings
+    href: organizations/settings/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
+- name: Extensibility
+  items:
+  - name: Discover extensions
+    href: marketplace/index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
+  - name: Develop extensions
+    href: extend/index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json 
+  - name: Integrate applications
+    href: integrate/index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json 
+  - name: Service hooks
+    href: service-hooks/index.md?toc=/azure/devops/service-hooks/toc.json&bc=/azure/devops/service-hooks/breadcrumb/toc.json 
+- name: Developer resources
+  items:
+  - name: Command Line Interface
+    href: /cli/azure/ext/azure-devops 
+  - name: REST APIs
+    href: /rest/api/vsts 
+  - name: TypeScript APIs
+    href: /azure/devops/extend/reference/client/core-sdk
+  - name: Azure DevOps Demo Generator
+    href: /azure/devops/demo-gen/index.md?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
+- name: Related resources
+  items:
+  - name: DevOps Resource Center
+    href: /azure/devops/learn
+  - name: Azure DevOps Projects
+    href: deploy-azure/index.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json 
+  - name: Azure DevOps Lab
+    href: https://azuredevopslabs.com/
+  - name: Azure DevOps Marketplace
+    href: https://marketplace.visualstudio.com/
+  - name: Azure DevOps Videos on YouTube
+    href: https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA
+ 

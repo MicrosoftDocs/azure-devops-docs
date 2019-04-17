@@ -1,5 +1,5 @@
 - name: Backlogs
-  href: index.md
+  href: index.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
