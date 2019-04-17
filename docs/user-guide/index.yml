@@ -207,6 +207,20 @@ sections:
           alt: Configure teams logo
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Software development roles
+      - href: what-is-azure-devops-services.md
+        html: <p></p>
+        image:
+          title: What is Azure DevOps Services?
+          alt: Article logo
+          src: https://docs.microsoft.com/media/common/i_article.svg
+        title: "What is Azure DevOps Services?"
+      - href: what-is-azure-devops-server.md
+        html: <p></p>
+        image:
+          title: What is Azure DevOps Server?
+          alt: Article logo
+          src: https://docs.microsoft.com/media/common/i_article.svg
+        title: "What is Azure DevOps Server?"
       - href: about-azure-devops-services-tfs.md
         html: <p></p>
         image:

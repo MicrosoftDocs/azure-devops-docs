@@ -8232,7 +8232,7 @@
     },
     {
       "source_path": "docs/accounts/add-basic-or-vs-subscription-users.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-basic-or-vs-subscription-users",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
       "redirect_document_id": false
     },
     {
@@ -11678,6 +11678,16 @@
     {
       "source_path": "docs/migrate/service-status-info.md",
       "redirect_url": "/azure/devops/user-guide/service-status-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/add-basic-or-vs-subscription-users.md",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/reduce-cancel-paid-users.md",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users#decrease-amount-of-paid-users",
       "redirect_document_id": false
     }
   ]

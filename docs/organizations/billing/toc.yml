@@ -29,7 +29,7 @@
     - name: Change Azure subscription
       href: change-azure-subscription.md
     - name: Change number of paid users
-      href: reduce-cancel-paid-users.md
+      href: buy-basic-access-add-users.md
     - name: Buy Azure DevOps Server CALs or Test
       href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
