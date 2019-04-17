@@ -2,6 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
-  - name: Java
-    tocHref: /azure/devops/java/
-    topicHref: /azure/devops/java/index
+  - name: Demo Generator
+    tocHref: /azure/devops/demo-gen/
+    topicHref: /azure/devops/demo-gen/index

@@ -1,9 +1,9 @@
 - name: Extension management
-  href: index.md
+  href: index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: Discover extensions in the Marketplace
-    href: overview.md
+    href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Install free Azure DevOps Services extensions
