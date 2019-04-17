@@ -1,9 +1,9 @@
-- name: SQL Server Reporting 
-  href: index.md
+- name: SQL Reports (Legacy)
+  href: index.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Overview
   items:
   - name: Reporting Services Reports
-    href: reporting-services-reports.md
+    href: reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query

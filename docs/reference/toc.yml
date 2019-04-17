@@ -1,9 +1,9 @@
 - name: Customization
-  href: index.md
+  href: index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Overview
   items:
     - name: About work tracking customization
-      href: customize-work.md
+      href: customize-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Quickstarts
   items:
     - name: Define area paths
