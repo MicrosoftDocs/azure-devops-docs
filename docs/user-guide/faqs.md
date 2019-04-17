@@ -8,7 +8,7 @@ ms.prod: devops
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.manager: jillfra
 ms.author: kaelli
-ms.date: 04/05/2019
+ms.date: 04/16/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -32,7 +32,7 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range=" azure-devops-2019"
 
 ## How do I get started on-premises?
 
