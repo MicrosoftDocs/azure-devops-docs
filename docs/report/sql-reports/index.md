@@ -9,10 +9,10 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
-ms.date: 11/19/2018
+ms.date: 04/11/2019
 ---
 
-# SQL Server Reporting  
+# SQL Reports (Legacy)
 
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 

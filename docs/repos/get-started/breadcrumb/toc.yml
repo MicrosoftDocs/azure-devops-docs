@@ -5,4 +5,8 @@
   - name: Azure Repos
     tocHref: /azure/devops/repos/
     topicHref: /azure/devops/repos/index
+    items:
+    - name: Get started
+      tocHref: /azure/devops/repos/get-started/
+      topicHref: /azure/devops/repos/get-started/index
 

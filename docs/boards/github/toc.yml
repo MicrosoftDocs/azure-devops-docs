@@ -1,4 +1,4 @@
-- name: GitHub & Azure Boards
+- name: GitHub and Azure Boards
   href: index.md?toc=/azure/devops/boards/github/toc.json&bc=/azure/devops/boards/github/breadcrumb/toc.json
   items:
   - name: Connect Azure Boards to GitHub  
