@@ -1,9 +1,9 @@
 - name: Billing
-  href: index.md
+  href: index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Overview
   items:
   - name: Billing overview 
-    href: overview.md
+    href: overview.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Set up billing

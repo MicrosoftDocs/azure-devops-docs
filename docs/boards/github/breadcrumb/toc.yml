@@ -6,5 +6,6 @@
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
     items: 
-    - name: GitHub with Azure Boards
+    - name: GitHub and Azure Boards
+      tocHref: /azure/devops/boards/github/
       topicHref: /azure/devops/boards/github/index
