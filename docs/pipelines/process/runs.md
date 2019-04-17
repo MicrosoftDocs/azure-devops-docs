@@ -8,7 +8,7 @@ ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.manager: jillfra
 ms.author: alewis
 author: vtbassmatt
-ms.date: 04/10/2019
+ms.date: 04/17/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -47,9 +47,9 @@ As runtime jobs complete, Azure Pipelines will see if there are new jobs eligibl
 If so, steps 4 - 6 repeat with the new jobs.
 Similarly, as stages complete, steps 2 - 6 will be repeated for any new stages.
 
-This ordering helps answer a common question: why can't I use variables in my template parameters?
+This ordering helps answer a common question: why can't I use certain variables in my template parameters?
 Step 1, template expansion, operates solely on the text of the YAML document.
-Variables don't exist during that step.
+Runtime variables don't exist during that step.
 After step 1, template parameters have been completely resolved and no longer exist.
 
 ## Request an agent
