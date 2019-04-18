@@ -12,7 +12,7 @@ author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
 ms.date: 02/04/2019
---- 
+---
 
 
 # Query fields, operators, and macros

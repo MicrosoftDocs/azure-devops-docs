@@ -32,6 +32,7 @@ We recommend this simple approach if:
 * You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
 * You don't need to further limit the permissions for Azure resources accessed through the service connection.
 * You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
+* You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.

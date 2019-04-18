@@ -38,7 +38,7 @@ Sign up for an organization, add users, and manage permissions and access.
 ## Concepts
 
 * [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
-* [Add subscription user to organization](add-basic-or-vs-subscription-users.md)
+* [Add more Basic users to organization](../billing/buy-basic-access-add-users.md)
 * [Resources granted to project members](../projects/resources-granted-to-project-members.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Glossary](../../project/navigation/glossary.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 
@@ -52,7 +52,7 @@ Sign up for an organization, add users, and manage permissions and access.
     * [Recover your organization](recover-your-organization.md)
     * [Sign in with different credentials](../projects/connect-to-projects.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Change organization location (region)](change-organization-location.md)
-    * [Add privacy URL](add-privacy-url.md)
+    * [Add privacy policy URL](add-privacy-policy-url.md)
 * Manage access to your organization
     * [Add users to your organization](add-organization-users.md)
     * [Manage users](manage-users-table-view.md)

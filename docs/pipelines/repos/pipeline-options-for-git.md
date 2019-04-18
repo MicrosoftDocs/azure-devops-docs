@@ -83,7 +83,7 @@ Select one of the following options:
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
  ```
- git clean -fdx
+ git clean -ffdx
  git reset --hard HEAD
  ```
 

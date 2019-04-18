@@ -1,7 +1,7 @@
 ---
-title: Predefined build variables
+title: Predefined variables
 ms.custom: seodec18
-description: A comprehensive list of all available predefined build variables
+description: A comprehensive list of all available predefined variables
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,20 +13,14 @@ ms.date: 07/20/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Predefined build variables
+# Predefined variables
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-::: moniker range="< azure-devops"
-> [!NOTE]
-> 
-> Some features and predefined variables are not available in certain versions of TFS. We're working on updating this topic to call out these differences.
-::: moniker-end
-
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
-Variables give you a convenient way to get key bits of data into various parts of your build pipeline.
-This is the comprehensive list of predefined build variables.
+Variables give you a convenient way to get key bits of data into various parts of your pipeline.
+This is the comprehensive list of predefined variables.
 
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.)
 Learn more about [working with variables](../process/variables.md).

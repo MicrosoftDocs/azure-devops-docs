@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Migration options
 
-[!INCLUDE [ ](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
 When you decide to make the move from Azure DevOps Server to Azure DevOps Services, you might start fresh with an empty organization. Often, however,
 you will have existing code, work items, and other assets that you want to move. There are many approaches to doing this

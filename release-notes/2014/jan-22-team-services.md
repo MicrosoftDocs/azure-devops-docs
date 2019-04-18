@@ -16,7 +16,7 @@ We’re back from the New Year and excited to talk about a few improvements to t
 
 ##Querying tags
 
-The first change I want to highlight is that we’ve enabled the ability to query work item tags. Tags are an easy and effective way to “mark up” work items with additional meta-data. However, without the ability to write and save queries that leverage those tags, they’re just not as useful as they could be. Today’s update changes all that. The tags field appears in the work item query editor just like other fields and works with the **Contains ** and **Does Not Contain** operators. These operators use whole word matching (not case sensitive), and will return exact matches only. For example, if you create a query that looks for work items with the tag “Website”, your search will return "Website" tags, but not tags like "Website Related". 
+The first change I want to highlight is that we’ve enabled the ability to query work item tags. Tags are an easy and effective way to “mark up” work items with additional meta-data. However, without the ability to write and save queries that leverage those tags, they’re just not as useful as they could be. Today’s update changes all that. The tags field appears in the work item query editor just like other fields and works with the **Contains** and **Does Not Contain** operators. These operators use whole word matching (not case sensitive), and will return exact matches only. For example, if you create a query that looks for work items with the tag “Website”, your search will return "Website" tags, but not tags like "Website Related". 
 
 ![Screenshot of querying tags interface](_img/1_22_01.png)
 
