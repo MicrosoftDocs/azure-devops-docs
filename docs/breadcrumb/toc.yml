@@ -1,6 +1,6 @@
 - name: Azure DevOps
   tocHref: /azure/devops/
-  topicHref: /azure/devops/index-test
+  topicHref: /azure/devops/index
   items:
   - name: Manage projects
     tocHref: /azure/devops/organizations/projects/
