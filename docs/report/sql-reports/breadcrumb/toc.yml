@@ -2,10 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Analytics
-    tocHref: /azure/devops/
+  - name: Reporting
+    tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
     items:
-    - name: SQL Server Reporting 
+    - name: SQL Reports (Legacy)
       tocHref: /azure/devops/report/sql-reports/
       topicHref: /azure/devops/report/sql-reports/index

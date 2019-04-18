@@ -1,10 +1,10 @@
 - name: Dashboards, Charts, Reports, & Widgets
-  href: index.md
+  href: index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
   - name: About dashboards and reports
-    href: overview.md
+    href: overview.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: Quick reference
     href: quick-ref.md
   - name: Widget catalog
