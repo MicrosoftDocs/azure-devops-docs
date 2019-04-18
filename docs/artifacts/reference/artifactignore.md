@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Use the .artifactignore file
 
-The ```.artifactignore``` is a text file that controls what files are uploaded when you publish either a [Universal Package](../quickstarts/universal-packages.md) or a Pipeline Artifact. The format of the ```.artifactignore``` file matches that of the ```.gitignore``` file. Like the ```.gitignore``` file, the ```.artifactignore``` file would typically be checked into your version control repository in the directory from which you upload your artifacts. By using the ```.artifactignore``` file you can avoid needing to copy files into a staging directory before publishing an artifact which can help reduce overall build and pipeline execution times. Here is an example ```.artifactignore``` file:
+The ```.artifactignore``` is a text file that controls what files are uploaded when you publish either a [Universal Package](../quickstarts/universal-packages.md) or a Pipeline Artifact. The format of the ```.artifactignore``` file matches that of the ```.gitignore``` file. Like the ```.gitignore``` file, the ```.artifactignore``` file would typically be checked into your version control repository in the directory from which you upload your artifacts (e.g. the ```.artifactignore``` file needs to be in the directory identified by targetPath for Pipeline Artifacts). By using the ```.artifactignore``` file you can avoid needing to copy files into a staging directory before publishing an artifact which can help reduce overall build and pipeline execution times. Here is an example ```.artifactignore``` file:
 
 ```
 **/*
