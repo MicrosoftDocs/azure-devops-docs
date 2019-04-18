@@ -1,14 +1,16 @@
 - name: Start using Azure DevOps
-  href: index.yml
+  href: index.yml?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
-  - name: What is Azure DevOps?
-    href: what-is-azure-devops-services.md
+  - name: What is Azure DevOps Services?
+    href: what-is-azure-devops-services.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Overview of Services
     href: services.md
   - name: Where's VSTS?
     href: what-happened-vsts.md
+  - name: What is Azure DevOps Server?
+    href: what-is-azure-devops-server.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Azure DevOps Services vs. Azure DevOps Server
     href: about-azure-devops-services-tfs.md  
 - name: Quickstarts for users

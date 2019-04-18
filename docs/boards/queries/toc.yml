@@ -1,5 +1,5 @@
 - name: Queries
-  href: index.md
+  href: index.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:

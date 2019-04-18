@@ -1,17 +1,17 @@
 - name: Extend Analytics with OData (Preview)
-  href: index.md
+  href: index.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
   - name: Quick reference
-    href: quick-ref.md
+    href: quick-ref.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
 - name: Quickstarts
   expanded: true
   items:
   - name: Query work item data 
-    href: wit-analytics.md
+    href: wit-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
   - name: "Project & organization-scoped queries" 
-    href: account-scoped-queries.md
+    href: account-scoped-queries.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Query aggregate data

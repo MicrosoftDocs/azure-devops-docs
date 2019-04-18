@@ -1,9 +1,9 @@
 - name: "Security & identity"
-  href: index.md
+  href: index.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About security and identity  
-    href: about-security-identity.md
+    href: about-security-identity.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
 - name: Quickstart
   expanded: true
   items:
