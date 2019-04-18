@@ -62,13 +62,13 @@ The following widgets are organized under the service they support. Widgets that
 <li>[Chart for build history](#build-history-widget)</li>
 <li>[Deployment status](#deployment-status-widget)</li>
 <li>[Release pipeline overview](#release-definition-widget)</li>
+<li>[Test results trend (Advanced)](#test-trend-results-advanced) (Analytics)</li>
 <li>[Requirements quality](#requirements-quality-widget)</li>
 </ul>
 <br/>
 **Test Plans**
 <li>[Chart for test plans](#chart-test-plan-widget)</li>
-<li>[Test results trend](#test-results-widget)</li>
-<li>[Test results trend (Advanced)](#test-trend-results-advanced) (Analytics)</li>
+
 </ul>
 </td>
 <td width="28%">
@@ -584,7 +584,9 @@ In order view the test summary across multiple environments in a release, the wi
 Requires TFS 2017.1 or later version. 
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -638,7 +640,9 @@ To learn more, see [Track your test results](../../test/track-test-status.md).
 Requires TFS 2017.2 or later version.
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
+
 ----
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -705,11 +709,11 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 ![Markdown widget](_img/widget-markdown-tile.png)
 
 ::: moniker range=">= tfs-2017"
-Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team. To learn more, see [ Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
+Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team. To learn more, see [ Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
+Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
 
 Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
 ::: moniker-end

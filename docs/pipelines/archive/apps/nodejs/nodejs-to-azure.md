@@ -112,7 +112,7 @@ Save and queue the build. Once the build is done, click the link to the complete
 
 After you've run the CI build, you're ready to create a continuous deployment (CD) release pipeline so that you can deploy your app to:
 
-* [![Azure Web App Deploy](../../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../../../apps/cd/deploy-webdeploy-webapps.md)
+* [![Azure Web App Deploy](../../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site](../../../apps/cd/deploy-webdeploy-webapps.md)
 
 * [![IIS Web App Deploy](../../../tasks/deploy/_img/iis-web-application-deployment-icon.png) An IIS server](../../../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 

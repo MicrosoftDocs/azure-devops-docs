@@ -12,7 +12,7 @@ author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 12/04/2018
---- 
+---
 
 # Track work with user stories, issues, bugs, features, and epics 
 
@@ -26,7 +26,6 @@ You can use work items to track anything you need to track. Each work item repre
 ::: moniker range=">= tfs-2018"
 - You use different [work item types (WITs)](#wit) to track different types of information. Specific tools 
 	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
-	- [Define Features and Epics](../backlogs/define-features-epics.md)
 	- [Define Features and Epics](../backlogs/define-features-epics.md)
 	- [Define, triage, and manage Bugs](../backlogs/manage-bugs.md)
 	- [Add Tasks to backlog items](../sprints/add-tasks.md)
@@ -79,7 +78,7 @@ To learn more about processes and process templates, see [Choose a process](./gu
 
 ::: moniker range=">= tfs-2018" 
 
-Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. To learn more about each field, see [Work item field index](./guidance/work-item-field.md). To learn about the different tabs and sections of the form, see [Work item form controls](work-item-form-controls.md).
+Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. To learn more about each field, see [Work item field index](./guidance/work-item-field.md). 
 
 ::: moniker-end
 
@@ -99,7 +98,7 @@ Each form contains a number of controls as shown below and described in [Work it
 
 ::: moniker range="tfs-2017"
 
-The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../../reference/manage-new-form-rollout.md). To learn about the different tabs and sections of the new form, see [Work item form controls](work-item-form-controls.md).
+The new form and its corresponding features are available from the web portal. The new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../../reference/manage-new-form-rollout.md).  
 
 **New web form**
 
@@ -122,7 +121,7 @@ The new web form provides a number of experiences not provided with the old web 
 
 <a id="portal-clients"></a>  
 ## Track work in the web portal 
-You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items ](best-tool-add-update-link-work-items.md). 
+You can add and update work items from the web portal. To track work using other clients, see [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md). 
 
 
 ## Web portal and clients that support tracking work items  
@@ -202,7 +201,7 @@ For an overview of all team settings, see [Manage teams and configure team tools
 You can use the search box to perform an ad hoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
-- [Create managed queries to list, update, or chart work items ](../queries/example-queries.md)  
+- [Create managed queries to list, update, or chart work items](../queries/example-queries.md)  
 - [View, run, or email a query](../queries/view-run-query.md)  
 - [Ad hoc vs managed queries](../queries/adhoc-vs-managed-queries.md)  
 - [Work item query charts](../../report/dashboards/charts.md)  
