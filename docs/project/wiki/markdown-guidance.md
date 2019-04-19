@@ -509,9 +509,6 @@ The path to the image file can be a relative path or the absolute path in Git or
 <li>Resize image:<br/> ```![Image alt text]($/project/folder/_img/markdown-guidance/image.png =WIDTHxHEIGHT)```  </li>
 </ul>
 
-> [!NOTE]
-> The syntax to support image resizing is only supported in pull requests and in the Wiki.
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
