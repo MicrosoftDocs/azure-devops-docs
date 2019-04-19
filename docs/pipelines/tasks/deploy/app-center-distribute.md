@@ -37,7 +37,6 @@ Use this task in a build or release pipeline to distribute app builds to testers
 <tr><td>Symbols path</td><td>(Optional) Relative path from the repo root to the symbols folder.</td></tr>
 <tr><td>Symbols path (*.pdb)</td><td>(Optional) Relative path from the repo root to PDB symbols files. Path may contain wildcards.</td></tr>
 <tr><td>dSYM path</td><td>(Optional) Relative path from the repo root to dSYM folder. Path may contain wildcards.</td></tr>
-<tr><td>Mapping file</td><td>(Optional) Relative path from the repo root to Android's mapping.txt file.</td></tr>
 <tr><td>Include all items in parent folder</td><td>(Optional) Upload the selected symbols file or folder and all other items inside the same parent folder. This is required for React Native apps.</td></tr>
 <tr><td>Create release notes</td><td>(Required)</td></tr>
 <tr><td>Release notes</td><td>(Required) Release notes for this version.</td></tr>
