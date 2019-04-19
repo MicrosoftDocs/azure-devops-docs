@@ -10,7 +10,6 @@
     #symbolsPath: # Optional
     #symbolsPdbFiles: '**/*.pdb' # Optional
     #symbolsDsymFiles: # Optional
-    #symbolsMappingTxtFile: # Optional
     #symbolsIncludeParentDirectory: # Optional
     #releaseNotesOption: 'input' # Options: input, file
     #releaseNotesInput: # Required when releaseNotesOption == Input
