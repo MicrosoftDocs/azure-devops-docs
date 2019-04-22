@@ -19,20 +19,20 @@ ms.date: 04/22/2019
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
-Your business structure should act as a guide to the number of organizations, projects, and teams that you create in Azure DevOps.  
+Your business structure should act as a guide to the number of organizations, projects, and teams that you create in Azure DevOps. This article helps you plan for different structures and scenarios for Azure DevOps.  
 
 Consider the following structures for your business or collaborative work in Azure DevOps:
 
-* Quantity of organizations
-* Quantity of projects under an organization
+* [Quantity of organizations](#how-many-organizations-do-you-need)
+* [Quantity of projects under an organization](#how-many-projects-do-you-need)
 
 You also may want to plan for the following scenarios:
 
-* Mapping your organizations and projects in Azure DevOps to your enterprise, business unit, and team structure
-* Structuring your repositories (repos)
-* Structuring your teams - it can either help or hinder teams to be Agile and autonomous
-* Managing access to data - who needs to have access and who doesn't?
-* Reporting needs
+* [Mapping your organizations and projects](#mapping-guidance-table) in Azure DevOps to your enterprise, business unit, and team structure
+* [Structuring your repositories (repos)](#structure-repos-and-version-control-within-a-project)
+* [Structuring your teams](#creating-a-team-for-each-distinct-product-or-feature-team)- it can either help or hinder teams to be Agile and autonomous
+* [Managing access to data](#more-about-organizational-structure) - who needs to have access and who doesn't?
+* [Reporting needs](#mapping-guidance-table)
 * Promoting common practices - learn more about [foundational elements you need to create an agile mindset and culture](../boards/plans/agile-culture.md).
 
 You need to have at least one organization, which may represent your company, your larger collection of code projects, or even multiple related business units.
@@ -41,12 +41,12 @@ You need to have at least one organization, which may represent your company, yo
 
 An organization in Azure DevOps is a mechanism for organizing and connecting groups of related projects. Examples are business divisions, regional divisions, or other enterprise structure. You can choose one organization for your entire company, or separate organizations for specific business units, or an organization just for you.
 
-Each organization gets its own free tier of services (up to five users for each service type) as follows.
+Each organization gets its own free tier of services (up to five users for each service type) as follows. You can use all the services, or choose just what you need to complement your existing workflows.
 
-* Azure Pipelines: One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
-* Azure Boards: Work item tracking and Kanban boards
-* Azure Repos: Unlimited private Git repos
-* Azure Artifacts: Package management
+* [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
+* [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/): Work item tracking and Kanban boards
+* [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/): Unlimited private Git repos
+* [Azure Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/): Package management
 * Load testing (20,000 VUMs per month)
 * Unlimited stakeholders
 
@@ -57,6 +57,14 @@ Each organization gets its own free tier of services (up to five users for each 
 When you're starting out with Azure DevOps, begin with one organization. Then, you can add additional organizations&mdash;which may require different security models&mdash;later. If you only have a single code repo or project, you don't need more than one organization. If you have separate teams that need to work on code or other projects in isolation, consider creating separate organizations for those teams. They'll have different URLs. Add projects, teams, and repos, as necessary, before you add another organization.
 
 Take some time to review your work structure and the different business groups and participants to be managed. Read further for more guidance for [mapping your projects to business units](#mapping-guidance-table) and [structure considerations](#more-about-organizational-structure).
+
+## What is a team?
+
+A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md), which help you plan and manage work, and make collaboration easier.
+
+### Creating a team for each distinct product or feature team
+
+Every team owns their own backlog, to create a new backlog you create a new team. By [configuring teams and backlogs into a hierarchical structure](../boards/plans/configure-hierarchical-teams.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. A team group is created when you create a team. You can use this group in queries or to set permissions for your team.
 
 ## What is a project?
 
@@ -113,7 +121,7 @@ When you map projects to business units, your company gets a single organization
 
 <a id="mapping-guidance-table" >  </a>
 
-|  |**One project, many [team](#what-is-a-team)s**  |**One organization, many projects and teams**  |**Many organizations**  |
+|  |**One project, many teams**  |**One organization, many projects and teams**  |**Many organizations**  |
 |---------|---------|---------|---------|
 |**General guidance**     | Best for smaller organizations or larger organizations with highly aligned teams.        | Good when different efforts require different processes.        | Useful as part of TFS legacy migrations and for hard security boundaries between organizations. Used with multiple projects and teams within each organization.        |
 |**Scale**     |Supports tens of thousands of users and hundreds of teams, but best at this scale if all teams are working on related efforts.         | Same as with one project, but many projects may be easier.         |         |Highest possible scale but not needed by most companies.
@@ -125,7 +133,7 @@ When you map projects to business units, your company gets a single organization
 |**Information overload**     | By default, all assets are visible to users will make use of “favorites” and similar mechanisms to avoid “information overload.”        | Reduced risk of information overload; most project assets hidden across project boundaries.        | Assets across organizations are isolated, reducing risk of information overload.|        
 |**Administrative overhead**    | Much administration is delegated down to individual teams. Easiest for user licensing and org-level administration.  Additional work may be needed if alignment is required between efforts.        | Additional administration at the project level.  Additional overhead, but can be useful when projects have different administrative needs.        |As with additional projects, there's additional administrative overhead, which enables additional flexibility between orgs.         |
 
-## Structure teams, repos, and version control within a project
+## Structure repos and version control within a project
 
 Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https://dev.azure.com/{organization-name}/{project-name}.
 
@@ -134,15 +142,6 @@ Configure your project by visiting its URL and select the **Project settings** b
 ![open-project-settings-vert-brn.png](../_shared/_img/settings/open-project-settings-vert-brn.png)
 
 To learn more about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/index.md). You can move a project to a different organization by migrating the data. To learn more about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
-
-## What is a team?
-
-A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md), which help you plan and manage work, and make collaboration easier.
-
-### Creating a team for each distinct product or feature team
-
-Every team owns their own backlog, to create a new backlog you create a new team. By [configuring teams and backlogs into a hierarchical structure](../boards/plans/configure-hierarchical-teams.md), program owners can more easily track progress across teams, manage portfolios, and generate rollup data. A team group is created when you create a team. You can use this group in queries or to set permissions for your team.
-
 ## Managing version control
 
 In projects where the Azure Repos service is enabled, version control repos can store and revise code. Consider the following options when you're configuring repos.
