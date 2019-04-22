@@ -27,10 +27,10 @@ The **TFSFieldMapping** command-line tool works for only on-premises deployments
  
 |Version | Change directory |
 |--------|-----------|
-|TFS 2018|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0 ` |
-|TFS 2017|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0 ` |
-|TFS 2015|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\14.0 ` |
-|TFS 2013|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0 ` |
+|TFS 2018|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0` |
+|TFS 2017|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0` |
+|TFS 2015|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\14.0` |
+|TFS 2013|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0` |
   
 
 On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
