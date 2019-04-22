@@ -281,10 +281,14 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Azure Repos
 
-For another repository hosted in Azure Repos, you usually don't have to authenticate again if you already have access to the repo.
-If you need to clone someone else's repo, you will need their credentials to authenticate.
-It's recommended that you have them create a [secret variable](../process/variables.md#secret-variables) for their credentials.
-This will allow the pipeline to use the value without you being able to see it.
+[Your pipeline will already have access to other repos in its project](./azure-repos-git.md#authorize-access-to-your-repositories).
+If you need to clone a repo from another project that is not public, you will need to authenticate as a user who has access to that project.
+
+> [!NOTE]
+> Use a **secret variable** to store credentials securely.
+>
+> Secret variables are not automatically made available to scripts as environment variables.
+> See [Secret variables](../process/variables.md#secret-variables) on how to map them in.
 
 For Azure Repos, you can use a personal access token with the **Code (Read)** permission.
 Send this as the password field in a "Basic" authorization header without a username.
@@ -294,10 +298,6 @@ Send this as the password field in a "Basic" authorization header without a user
 AUTH=$(echo -n ":$REPO_PAT" | openssl base64 | tr -d '\n')
 git -c http.<repo URL>.extraheader="AUTHORIZATION: basic $AUTH" clone <repo URL> --no-checkout --branch master
 ```
-
-> [!NOTE]
-> Secret variables are not automatically made available to scripts as environment variables.
-> See [Secret variables](../process/variables.md#secret-variables) on how to map them in.
 
 ::: moniker-end
 
