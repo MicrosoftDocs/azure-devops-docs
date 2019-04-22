@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/08/2019
---- 
+---
 
 
 # Syntax for the Work Item Query Language (WIQL) 
@@ -50,7 +50,7 @@ SELECT Select_List
 You specify the date-time pattern according to one of two patterns: 
 - The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
 - The pattern specified by UTC which follows this pattern (with Z appended to the date-time): 
-	`AND System.ChangedDate >= '1/1/2019 00:00:00Z' `
+	`AND System.ChangedDate >= '1/1/2019 00:00:00Z'`
 
 
 ### Example clauses
