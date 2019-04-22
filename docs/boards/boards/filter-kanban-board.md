@@ -12,7 +12,7 @@ author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 11/19/2018
----
+--- 
 
 # Filter your Kanban board
 
@@ -65,7 +65,7 @@ The filter criteria ignores the following characters: `,` (comma), `.` (period),
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 The filter criteria ignores the following characters when the field value starts with the characters:<br/>
-```{ ( [ ! @ # $ % ^ & *  ~  ` '  " ```
+```{ ( [ ! @ # $ % ^ & * ~ ` ' "```
 ::: moniker-end
 
 

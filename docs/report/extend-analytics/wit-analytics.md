@@ -189,7 +189,7 @@ Here is a partial view of the metadata for the Work Items entity:
     <NavigationProperty Name="Iteration" Type="Microsoft.VisualStudio.Services.Analytics.Model.Iteration"/>
 ```
 
-The navigation properties appear towards the bottom of the metadata, which include `Revisions`, `BoardLocations` (Kanban metadata), `Project```, `Area`, and `Iteration`. 
+The navigation properties appear towards the bottom of the metadata, which include `Revisions`, `BoardLocations` (Kanban metadata), `Project`, `Area`, and `Iteration`. 
 
 <a id="filter-navigation" />
 
