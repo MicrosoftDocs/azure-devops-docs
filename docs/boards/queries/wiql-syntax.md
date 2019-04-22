@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/08/2019
---- 
+---
 
 
 # Syntax for the Work Item Query Language (WIQL) 
