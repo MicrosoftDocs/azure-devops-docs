@@ -170,7 +170,9 @@ Talk to the administrator of your company's Azure Active Directory to get your e
 
 ## What if I get a warning about members who will lose access to the organization?
 
-You can still connect to Azure AD, but [contact support](https://azure.microsoft.com/en-us/support/devops/) afterward to resolve this issue. You can also select the bolded text to see which users are affected. ![Show disconnected users](_img/connect-organization-to-aad/show-disconnected-users.png)
+You can still connect to Azure AD, but [contact support](https://azure.microsoft.com/en-us/support/devops/) afterward to resolve this issue. You can also select the bolded text to see which users are affected. 
+
+![Show disconnected users](_img/connect-organization-to-aad/show-disconnected-users.png)
 
 ## Next steps
 
