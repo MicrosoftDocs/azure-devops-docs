@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/28/2019
+ms.date: 04/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -139,7 +139,7 @@ See the following questions that are most frequently asked about connecting your
 
 ## Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 
-* If you want to retain the work history of the user, then [contact Support](https://azure.microsoft.com/en-us/support/devops/) to map the current identity to the new identity in Azure AD. If you have the latest version of the feature, select **Resolve** to map identities or invite the MSA users into your tenant as guests, instead of calling Support.
+* If you want to retain the work history of the user, then [contact Support](https://azure.microsoft.com/en-us/support/devops/) to map the current identity to the new identity in Azure AD.
 * If you don’t need to save work history, have the user start using the new Azure AD identity to sign in to the organization.
 
 ## I got an error message when mapping. What should I do?

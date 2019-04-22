@@ -9,21 +9,21 @@ ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
-ms.date: 08/04/2016
+ms.date: 04/22/2019
 ---
 
 # Enabling IIS Basic Authentication invalidates using Personal Access Tokens
 
-**TFS**
+[!INCLUDE [version-header-tfs-only](../../../_shared/version-header-tfs-only.md)]
 
 We recommend you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned 
-off at all times when using TFS.  Only if absolutely necessary should you enable IIS Basic Authentication. When IIS 
-Basic Authentication is enabled on your windows machine, it prevents your using personal access tokens (PATs) as an 
+off at all times when using TFS.  Only if necessary should you enable IIS Basic Authentication. When IIS 
+Basic Authentication is enabled on your windows machine, it prevents you from using personal access tokens (PATs) as an 
 authentication mechanism. 
 
-For example, if you use a PAT to allow a third party app to retrieve bug information and email that info to the 
+For example, if you use a PAT to allow a third-party app to retrieve bug information and email that info to the 
 assignee of the bug, and IIS Basic Authentication is enabled, then that app will fail authentication.  The app 
-won't be able to retrieve bug info.
+can't retrieve bug info.
 
 **Git with IIS Basic Authentication enabled:**
 
