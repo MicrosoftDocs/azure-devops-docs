@@ -21,7 +21,7 @@ Connect to your Git repos through SSH on macOS or Linux, or on Windows when you 
 
 >[!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
-> - Verify which remotes are using SSH by running ```git remote -v ``` in your Git client. 
+> - Verify which remotes are using SSH by running ```git remote -v``` in your Git client. 
 > - Visit your repository on the web and select the **Clone** button in the upper right.
 > - Select **SSH** and copy the new SSH URL.
 > - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to [Repository Settings](git-config.md#remotes), and edit your remotes.
