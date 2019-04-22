@@ -136,14 +136,14 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 1. Log on to the server that hosts Reporting Services, open Internet Explorer, type the following string in the Address bar, and then press ENTER:
 
-	```http://localhost/Reports  ```
+	```http://localhost/Reports```
 
 	> [!TIP]  
 	> You may need to start Internet Explorer as an administrator by choosing **Start**, **All Programs**, open the context menu of Internet Explorer, and then choosing **Run as administrator**.   
 
 	If you have deployed a named instance on the data-tier server, type this string instead:
 
-	```http://localhost/Reports_***TFSInstance*   ```
+	```http://localhost/Reports_***TFSInstance*```
 
 2. In Contents, choose TFSReports, choose the folder of the team project collection that stores your team project, choose the folder that corresponds to your team project, and then choose the folder that contains a report that you want to view.
 

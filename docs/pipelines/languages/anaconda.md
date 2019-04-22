@@ -176,7 +176,8 @@ The following YAML installs the `scipy` package in the conda environment named `
 ## FAQs
 
 ### Why am I getting a "Permission denied" error?
-See [(Optional) take ownership of conda's installation directory](#optional-take-ownership-of-condas-installation-directory).
+On Hosted macOS, the agent user doesn't have ownership of the directory where Miniconda is installed.
+For a fix, see the "Hosted macOS" tab under [Add conda to your system path](#add-conda-to-your-system-path).
 
 ### Why is my build hanging on a `conda create` or `conda install` step?
 If you forget to pass `--yes`, conda will stop and wait for user interaction.

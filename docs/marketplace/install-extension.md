@@ -1,6 +1,6 @@
 ---
-title: Install free extensions for Azure DevOps Services
-description: Find and install free extensions for Azure DevOps Services from the Visual Studio Marketplace
+title: Install free extensions
+description: Find and install free extensions for Azure DevOps
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -8,17 +8,17 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 09/10/2018
-monikerRange: 'azure-devops'
+ms.date: 04/22/2019
+monikerRange: '>= tfs-2013'
 ---
 
 
 
-# Install free extensions for Azure DevOps
+# Install free extensions
 
-**Azure DevOps Services**
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
-To add new features and capabilities to your organization in Azure DevOps, install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](./faq-extensions.md#difference) In this quickstart, you learn how to install a free extension.
+Add new features and capabilities to your organization in Azure DevOps by installing extensions. You can install [free, preview, or paid](./faq-extensions.md#difference) In this quickstart, you learn how to install a free extension.
 
 To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
