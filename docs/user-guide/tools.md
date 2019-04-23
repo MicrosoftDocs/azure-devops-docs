@@ -10,16 +10,16 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/07/2018
+ms.date: 04/22/2019
 monikerRange: '>= tfs-2013'
 ---
 
 
-# Which tools and clients connect to Azure DevOps?
+# Tools and clients that connect to Azure DevOps
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Learn about the tools and clients that can connect to Azure DevOps.
+In this article, you learn about the tools and clients that connect to Azure DevOps.
 
 Our platform of software development tools began more than 20 years ago. We released Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports many plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps to support source control, work tracking, build, and test operations.  
 
@@ -48,7 +48,7 @@ Developers have access to many tools through these versions of Visual Studio and
 
 - **Visual Studio Community**: A fully featured and extensible IDE for creating modern applications for Android, iOS, and Windows, including web applications and cloud services. (Replaces Visual Studio Express.)
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams.
-- **Visual Studio Enterprise**: Integrated, end-to-end development tools, and solutions for teams of any size and those with a need to scale. It supports designing, building, and managing complex enterprise applications.
+- **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size, and with a need to scale. It supports designing, building, and managing complex enterprise applications.
 - **Visual Studio Test Professional**: Provides access to Microsoft Test and development tools to support quality and collaboration throughout the development process.
 - **Visual Studio Team Explorer**: Free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
 - **[Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to Azure DevOps.  
@@ -115,9 +115,9 @@ To learn more, see [Web portal navigation](../project/navigation/index.md).
 
 The following extensions are available from the Azure DevOps Marketplace and are built and maintained by the Azure DevOps Services product team:
 
-- [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish all of this  with automatic end-to-end traceability.  
+- [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
-- [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing by enabling developers to quickly locate relevant information within the code base of all projects hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
+- [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing by enabling developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Perform full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
 Find additional extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com).
@@ -130,7 +130,7 @@ To monitor your applications, you can use Azure Application Insights for web app
 
 Application Insights is an extensible application performance management (APM) service for web developers. Use it to monitor your live web application. Application Insights automatically detect performance anomalies. It includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. Application Insights is designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms&mdash;including .NET, Node.js, and Java EE&mdash;hosted on-premises or in the cloud.  
 
-With Application Insights, you can do the following:
+With Application Insights, you can do the following tasks:
 
 - Gain actionable insights through application performance management and instant analytics
 - Detect and diagnose exceptions and application performance issues

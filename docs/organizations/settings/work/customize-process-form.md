@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 11/19/2018
+ms.date: 04/22/2019
 ---
 
 # Customize the web layout for a work item type (Inheritance process) 
@@ -47,6 +47,8 @@ You can add your own custom groups to both inherited pages and custom pages.
 1. From the Layout page, choose **New group**.    
 
 	<img src="_img/process/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 1px solid #C3C3C3;" /> 
+
+	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 2. Name the group and choose the column it should appear in. For information about columns, see [About process customization and inherited processes, Layout and resizing](inheritance-process-model.md#resizing).   
 

@@ -11,14 +11,13 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 04/22/2019
 ---
 
 # Add and manage work item types      
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
-You use different work item types (WITs) to plan and track different types of work. Your project contains several WITs that you can customize, based on the process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
 
 For example, you may want to capture customer issues in a custom Ticket WIT.   
 
@@ -36,18 +35,19 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 [!INCLUDE [temp](../_shared/automatic-update-project.md)] 
 
 <a id="add-wit">  </a>
+
 ## Add a work item type
 
-0. From the **Work Item Types** page, choose ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
+1. From the <strong>Work Item Types</strong> page, choose ![ ](../../../_img/icons/blue-add-icon.png) <strong>New work item type</strong>.
 
-	<img src="_img/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
- 
-1. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Click Create to save. 
+	![Process, Inherited process, Work Item Types, Add new work item type](_img/process/cpwit-add-new-wit.png)
+
+1. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Choose <strong>Create</strong> to save. 
 
 	<img src="_img/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
 
 
-0.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. For details, see [Add and manage fields](customize-process-field.md) or [Customize the web layout for a process](customize-process-form.md).    
+1.   From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. For details, see [Add and manage fields](customize-process-field.md) or [Customize the web layout for a process](customize-process-form.md).    
 
 	> [!div class="mx-imgBorder"]  
 	> ![New WIT, customize layout](_img/process/cpwit-new-ticket-define.png)	
