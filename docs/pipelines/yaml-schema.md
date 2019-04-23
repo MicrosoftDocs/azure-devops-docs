@@ -1031,7 +1031,7 @@ and how to specify them.
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
-> YAML PR triggers are only supported in GitHub and BitBucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: Views on Azure DevOps Services feeds
-description: Release views enable continuous integration and delivery of NuGet and npm packages in Azure Artifacts for Azure DevOps Services and Team Foundation Server
+description: Release views enable continuous integration and delivery of NuGet, npm, and Maven packages in Azure Artifacts for Azure DevOps Services and Team Foundation Server
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
 
-Views enable you to share subsets of the NuGet and npm package-versions in your feed with consumers. A common use for views is to share package-versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
+Views enable you to share subsets of the NuGet, npm, and Maven package-versions in your feed with consumers. A common use for views is to share package-versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
 
 ## Views and upstream sources
 

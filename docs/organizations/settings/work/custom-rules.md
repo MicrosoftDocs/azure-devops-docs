@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 11/19/2018
+ms.date: 04/22/2019
 ---
 
 
@@ -57,8 +57,6 @@ As an example, you can make a field required based on the value assigned to the 
 
 [!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
- 
-
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
@@ -72,7 +70,9 @@ You add fields to a selected work item type.
 1. Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Process, WIT, Bug, Layout, New custom control](_img/rules/custom-rule-create-rule.png)  
+	> ![Process, WIT, Bug, Layout, New rule](_img/rules/custom-rule-create-rule.png)  
+
+	If you can't fill out the New work item rule dialog, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 0. Name the rule and select the condition(s) and action(s) from the dropdown menus.     
 

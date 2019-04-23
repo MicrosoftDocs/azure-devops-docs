@@ -9,16 +9,16 @@ ms.assetid: 4
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/08/2019
+ms.date: 04/22/2019
 ms.topic: overview
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2013'
 ---
 
 # What is Azure DevOps Services?
 
-[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../boards/_shared/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client. The following features are included:
+Azure DevOps Services is a cloud service for collaborating on code development. It provides an integrated set of features that you can access through your web browser or IDE client. The following features are included:
 
 - Git repositories for source control of your code
 - Build and release services to support continuous integration and delivery of your apps
@@ -46,6 +46,13 @@ We've made it easy for you to start for free and try out our services.
 Sign up for free by creating an organization. Then, either upload your code to share or source control. Begin tracking your work using Scrum, Kanban, or a combination of methods.
 
 [![Sign up for Azure DevOps Services](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md)
+
+You can use all the services included with Azure DevOps, or choose just what you need to complement your existing workflows. 
+
+- [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/) - plan, track, and discuss work across your teams
+- [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) - continuously build, test, and deploy to any platform and cloud
+- [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/) - get unlimited, cloud-hosted private Git repos for your project
+
 
 ## Try next  
 
