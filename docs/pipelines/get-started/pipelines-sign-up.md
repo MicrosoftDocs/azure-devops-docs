@@ -8,13 +8,15 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2018
+ms.date: 04/22/2019
 monikerRange: 'azure-devops'
 ---
 
 # Sign up for Azure Pipelines
 
 **Azure Pipelines**
+
+Sign up for an Azure DevOps organization and Azure Pipelines to begin managing CI/CD to deploy your code with high-performance pipelines. This sequence walks you through the sign-up process.
 
 1. From the [Azure website](https://azure.microsoft.com/services/devops/pipelines/), select **Start free with Azure Pipelines**.
 
