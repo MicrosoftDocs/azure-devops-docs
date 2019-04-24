@@ -2,7 +2,7 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
-  - name: Manage projects
+  - name: Collaborate
     tocHref: /azure/devops/organizations/projects/
     topicHref: /azure/devops/organizations/projects/index
     items:
@@ -12,6 +12,12 @@
     - name: Wikis
       tocHref: /azure/devops/project/wiki/
       topicHref: /azure/devops/project/wiki/index
+    - name: Notifications
+      tocHref: /azure/devops/notifications/
+      topicHref: /azure/devops/notifications/index
+    - name: Public Projects
+      tocHref: /azure/devops/organizations/public/
+      topicHref: /azure/devops/organizations/public/index
     - name: Search
       tocHref: /azure/devops/project/search/
       topicHref: /azure/devops/project/search/index
@@ -143,9 +149,7 @@
     - name: All settings
       tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/index
-    - name: Notifications
-      tocHref: /azure/devops/notifications/
-      topicHref: /azure/devops/notifications/index
+
     - name: Teams
       tocHref: /azure/devops/organizations/settings/scale/
       topicHref: /azure/devops/organizations/settings/scale/index
@@ -162,9 +166,7 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
-  - name: Public Projects
-    tocHref: /azure/devops/organizations/public/
-    topicHref: /azure/devops/organizations/public/index
+
   - name: Azure Boards
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
