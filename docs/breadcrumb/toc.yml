@@ -137,7 +137,7 @@
     - name: SharePoint Dashboards (Deprecated)
       tocHref: /azure/devops/report/sharepoint-dashboards/
       topicHref: /azure/devops/report/sharepoint-dashboards/index
-  - name: Manage
+  - name: Manage & Configure Resources
     tocHref: /azure/devops/organizations/settings/
     topicHref: /azure/devops/organizations/index
     items:
