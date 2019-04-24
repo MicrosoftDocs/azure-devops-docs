@@ -24,21 +24,28 @@
     - name: Feedback
       tocHref: /azure/devops/project/feedback/
       topicHref: /azure/devops/project/feedback/index
+  - name: Marketplace & Extensibility
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/marketplace/index-me
+    items:
+    - name: Discover & Manage Extensions
+      tocHref: /azure/devops/marketplace/
+      topicHref: /azure/devops/marketplace/index
+    - name: Develop extensions
+      tocHref: /azure/devops/extend/
+      topicHref: /azure/devops/extend/index
+    - name: Integrate extensions
+      tocHref: /azure/devops/integrate/
+      topicHref: /azure/devops/integrate/index
+    - name: Visual Studio extensions
+      tocHref: /azure/devops/integrate/ide/extensions/
+      topicHref: /azure/devops/integrate/ide/extensions/overview
+    - name: Service Hooks
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/service-hooks/index
   - name: Start using Azure DevOps
     tocHref: /azure/devops/user-guide/
     topicHref: /azure/devops/user-guide/index
-  - name: Discover extensions
-    tocHref: /azure/devops/marketplace/
-    topicHref: https://marketplace.visualstudio.com/
-  - name: Build extensions
-    tocHref: /azure/devops/extend/
-    topicHref: /azure/devops/extend/index
-  - name: Visual Studio extensions
-    tocHref: /azure/devops/integrate/ide/extensions/
-    topicHref: /azure/devops/integrate/ide/extensions/overview
-  - name: Integrate
-    tocHref: /azure/devops/integrate/
-    topicHref: /azure/devops/integrate/index
   - name: Java 
     tocHref: /azure/devops/java/
     topicHref: /azure/devops/java/index 
@@ -149,19 +156,12 @@
     - name: All settings
       tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/index
-
     - name: Teams
       tocHref: /azure/devops/organizations/settings/scale/
       topicHref: /azure/devops/organizations/settings/scale/index
     - name: Customization
       tocHref: /azure/devops/reference/
       topicHref: /azure/devops/reference/index
-    - name: Manage extensions
-      tocHref: /azure/devops/marketplace/
-      topicHref: /azure/devops/marketplace/index
-    - name: Service hooks
-      tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/service-hooks/index
 - name: Azure DevOps Services
   tocHref: /azure/devops/
   topicHref: /azure/devops/index

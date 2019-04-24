@@ -2,9 +2,9 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Extensibility
+  - name: Marketplace & Extensibility
     tocHref: /azure/devops/
-    topicHref: /azure/devops/extend/index
+    topicHref: /azure/devops/marketplace/index-me
     items: 
     - name: Integrate
       tocHref: /azure/devops/integrate/

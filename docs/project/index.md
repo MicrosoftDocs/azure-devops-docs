@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps Documentation 
-titleSuffix: Azure DevOps Services
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps 
+title: Azure DevOps Collaborate Documentation 
+titleSuffix: Azure DevOps
+description: Share information and use collaboration tools provided with Azure DevOps 
 layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
@@ -68,19 +68,19 @@ Share information, get notified, integrate with productivity tools and Azure Dev
                     <div class="cardText">
                         <h3>Navigation</h3>
                         <p>
-                            <a href="/project/navigation/index">Web portal navigation</a>
+                            <a href="/azure/devops/project/navigation/index">Web portal navigation</a>
                         </p>
                         <p>
-                            <a href="/project/navigation/go-to-service-page">Open a service, page, or settings</a>
+                            <a href="/azure/devops/project/navigation/go-to-service-page">Open a service, page, or settings</a>
                         </p>
                         <p>
-                            <a href="/project/navigation/add-artifact-team">Add an artifact or team artifacts</a>
+                            <a href="/azure/devops/project/navigation/add-artifact-team">Add an artifact or team artifacts</a>
                         </p>
                         <p>
-                            <a href="/project/navigation/set-favorites">Work with favorites</a>
+                            <a href="/azure/devops/project/navigation/set-favorites">Work with favorites</a>
                         </p>
                         <p>
-                            <a href="/project/navigation/preview-features">Enable a preview feature</a>
+                            <a href="/azure/devops/project/navigation/preview-features">Enable a preview feature</a>
                         </p>
                     </div>
                 </div>
@@ -152,7 +152,7 @@ Share information, get notified, integrate with productivity tools and Azure Dev
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/common/i_search.svg" alt="Search icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_search.svg" alt="Search icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -187,16 +187,13 @@ Share information, get notified, integrate with productivity tools and Azure Dev
                     <div class="cardText">
                         <h3>Feedback</h3>
                         <p>
-                            <a href="/azure/devops/test/request-stakeholder-feedback">Request stakeholder feedback: Test & Feedback extension</a>
+                            <a href="/azure/devops/test/request-stakeholder-feedback">Test & Feedback extension</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/test/request-stakeholder-feedback">Provide feedback: Test & Feedback extension</a>
+                            <a href="/azure/devops/project/search/code-search">Request feedback</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/search/code-search">Request feedback: Work tracking</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/feedback/give-feedback">Give feedback: Microsoft feedback client</a>
+                            <a href="/azure/devops/project/feedback/give-feedback">Microsoft feedback client</a>
                         </p>
                     </div>
                 </div>
