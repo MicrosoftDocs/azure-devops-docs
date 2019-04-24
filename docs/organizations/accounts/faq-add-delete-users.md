@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/05/2019
+ms.date: 04/24/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -74,22 +74,27 @@ A: If no other access levels are available, users can [work as stakeholders](../
 
 ### Q: What happened to Visual Studio Online Professional?
 
-A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Users are transitioned automatically to the subscription.
+A: On December 1, 2015, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly).
 
-Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, we haven't determined when users are transitioned systematically. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
+Although a Visual Studio Online Professional purchase now appears on your monthly invoice as a Visual Studio Professional monthly subscription, you need to transition manually to get the new offering. The transition provides an upgrade by offering access to unlimited organizations (not just one organization) like Visual Studio Online Professional.
 
 The rest stays the same. You get monthly access to the Visual Studio Professional IDE. Pricing remains the same at $45 per user, per month. Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
 If you're purchasing user access to Visual Studio Professional for a specific organization (possible only if you purchased before November 2015) and want to upgrade, do the following:
 
-1. Before the last day of the calendar month, sign in to the [Azure portal](https://portal.azure.com). Reduce the number of paid Visual Studio Online Professional users to 0. 
+1. Before the last day of the calendar month, sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+  
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Billing**.
+
+   ![Select Billing tab in Organization settings](../billing/_img/_shared/select-billing-organization-settings.png)
+4. Reduce the number of paid Visual Studio Online Professional users to 0.
 
 	This change takes effect on the first day of the next month. For the rest of the current calendar month, you aren't billed for any Visual Studio Online Professional users.
 
-1. On the first day of the next calendar month, [go to Visual Studio Marketplace Subscriptions > Visual Studio Professional - monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
-
-   > [!NOTE]
-   > If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/billing-faq.md).
+5. On the first day of the next calendar month, [go to Visual Studio Marketplace Subscriptions > Visual Studio Professional - monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly), and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
 
 ## User access
 
