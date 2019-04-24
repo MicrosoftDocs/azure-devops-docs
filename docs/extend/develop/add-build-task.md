@@ -112,7 +112,7 @@ tsc --init
 ```
 
 In addition, for this example we want to compile to the ES6 standard instead of ES5.
-To ensure this happens, open the newly generated ```tsconfig.ts``` and update the ```target``` field to "es6".
+To ensure this happens, open the newly generated ```tsconfig.json``` and update the ```target``` field to "es6".
 
 >[!NOTE]
 >To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
