@@ -1,0 +1,202 @@
+---
+title: Azure DevOps Documentation 
+titleSuffix: Azure DevOps Services
+description: Discover, manage, develop extensions and widgets for integration with Azure DevOps 
+layout: LandingPage
+hide_bc: true
+ms.topic: landing-page
+ms.prod: devops 
+robots: NOINDEX, NOFOLLOW
+ms.technology: devops-new-user
+ms.assetid:  
+ms.manager: jillfra 
+ms.author: kaelli 
+ms.date: 04/30/2019
+featureFlags:
+- clicktale 
+---
+
+
+ 
+
+# Marketplace & Extensibility
+
+Discover, manage, develop extensions and widgets for integration with Azure DevOps. 
+
+
+<ul class="panelContent cardsF">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                             <img src="https://docs.microsoft.com/media/common/i_extensions.svg" alt="Extensions icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Discover & Manage Extensions</h3>
+                        <p>
+                            <a href="/azure/devops/marketplace/overview">Discover extensions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/marketplace/request-extensions">Request extensions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/marketplace/install-extension">Install extensions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/marketplace/assign-paid-extensions">Assign paid extensions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_build.svg" alt="Build icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Develop extensions</h3>
+                        <p>
+                            <a href="/azure/devops/extend/overview">What are extensions?</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/extend/get-started/node">Develop a web extension </a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/extend/develop/samples-overview">Extension samples</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/extend/reference/targets/overview">Extensibility points</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_api.svg" alt="API icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Integrate</h3>
+                        <p>
+                            <a href="/azure/devops/integrate">Integration overview</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/integrate/get-started/authentication/authentication-guidance">Choose the right authentication mechanism</a>
+                        </p>
+                        <p>
+                            <a href="/rest/api/azure/devops/">REST API reference</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_service-hooks.svg" alt="Service Hooks icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Service Hooks</h3>
+                        <p>
+                            <a href="/azure/devops/service-hooks/overview">Integrate with service hooks</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/service-hooks/services/slack">Create a service hook with Slack</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/service-hooks/services/teams">Create a service hook with Microsoft Teams</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/service-hooks/services/webhooks">Create a service hook with Web Hooks</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com//media/common/i_multi-connect.svg" alt=" " />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Related resources</h3>
+                        <p>
+                            <a href="/azure/devops/learn/">DevOps Resource Center</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops-projects/">Azure DevOps Projects</a>
+                        </p>
+                        <p>
+                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
+                        </p>
+                        <p>
+                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li> 
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_support.svg" alt=" " />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Community and support</h3>
+                        <p>
+                            <a href="https://twitter.com/AzureDevOps">@AzureDevOps on Twitter</a>
+                        </p>
+                        <p>
+                            <a href="https://devblogs.microsoft.com/devops/">Azure DevOps Blog</a>
+                        </p>
+                        <p>
+                            <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
+                        </p>
+                        <p>
+                            <a href="https://stackoverflow.com/questions/tagged/azure-devops">Azure DevOps stackoverflow</a>
+                        </p>
+                        <p>
+                            <a href="https://status.dev.azure.com/">Azure DevOps Service Status</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li> 
+
+
+</ul>
