@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps Settings Documentation 
-titleSuffix: Azure DevOps Services
+title: Manage & Configure Resources 
+titleSuffix: Azure DevOps
 description: Configure user preferences, and project, collection, and organization resources to support your business needs. 
 ms.custom: seodec18 
 layout: HubPage 
@@ -16,11 +16,11 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Settings</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Manage & Configure Resources</p>
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure DevOps Settings Documentation</h1>
-        <p>Manage resources for an organization, project, or team. </p>
+        <h1>Manage & Configure Resources</h1>
+        <p>Configure resources and manage settings for an organization, project, team, or user. </p>
         <p style="height: 30px;">&nbsp;</p>
         <ul class="pivots">
             <li>
@@ -252,8 +252,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Technical articles</h3>
-                                                            <p>Access white papers on data migration, branching strategies, and continuous integration and delivery.</p>
+                                                            <h3>Migration & Import</h3>
+                                                            <p>Migrate data from on-premises Azure DevOps Server or TFS to Azure DevOps Services.</p>
                                                         </div>
                                                     </div>
                                                 </div>

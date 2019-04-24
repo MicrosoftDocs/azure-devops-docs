@@ -91,7 +91,7 @@
     href: project/search/index.md 
   - name: Feedback
     href: project/feedback/index.md 
-- name: Manage
+- name: Manage & Configure Resources
   items:
   - name: Teams
     href: organizations/settings/scale/index.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json 
@@ -105,9 +105,9 @@
     href: organizations/billing/index.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json 
   - name: All settings
     href: organizations/settings/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
-- name: Extensibility
+- name: Marketplace & Extensibility
   items:
-  - name: Discover extensions
+  - name: Discover & manage extensions
     href: marketplace/index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
   - name: Develop extensions
     href: extend/index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json 
