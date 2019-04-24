@@ -2,9 +2,9 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Settings
-    tocHref: /azure/devops/organizations/
-    topicHref: /azure/devops/organizations/index
+  - name: Collaborate
+    tocHref: /azure/devops/project/
+    topicHref: /azure/devops/project/index
     items:
     - name: Notifications
       tocHref: /azure/devops/notifications/
