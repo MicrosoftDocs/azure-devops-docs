@@ -4,7 +4,7 @@
 - task: VSTest@2
   inputs:
     #testSelector: 'testAssemblies' # Options: testAssemblies, testPlan, testRun
-    #testAssemblyVer2: '**\*test*.dll!**\*TestAdapter.dll!**\obj\**' # Required when testSelector == TestAssemblies
+    #testAssemblyVer2: "**\\*test*.dll\n!**\\*TestAdapter.dll\n!**\\obj\\**" # Required when testSelector == TestAssemblies
     #testPlan: # Required when testSelector == TestPlan
     #testSuite: # Required when testSelector == TestPlan
     #testConfiguration: # Required when testSelector == TestPlan
