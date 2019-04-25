@@ -115,7 +115,6 @@ Share information, get notified, and integrate with productivity tools and Azure
             </div>
         </div>
     </li>
-::: moniker range="azure-devops"
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -144,7 +143,6 @@ Share information, get notified, and integrate with productivity tools and Azure
             </div>
         </div>
     </li>
-::: moniker-end
     <li>
         <div class="cardSize">
             <div class="cardPadding">
