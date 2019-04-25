@@ -287,8 +287,8 @@ Use this index to quickly access information on adding and updating work items&m
 <li>[Visual Studio work item experience](set-work-item-experience-vs.md)</li>
 <br/>
 <li>[Work item fields](guidance/work-item-field.md)</li>
-<li>[work item form](about-work-items.md#work-item-form)</li>
-<li>[work item templates](about-work-items.md#use-work-item-templates-to-quickly-fill-in-forms)</li>
+<li>[Work item form](about-work-items.md#work-item-form)</li>
+<li>[Work item templates](about-work-items.md#use-work-item-templates-to-quickly-fill-in-forms)</li>
 <li>[Work item types](about-work-items.md#work-item-types-wits)</li>
 <li>[Workflow ](workflow-and-state-categories.md)</li>
 </ul>

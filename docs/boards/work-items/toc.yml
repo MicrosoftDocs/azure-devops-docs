@@ -111,6 +111,8 @@
     href: ../../reference/process/new-work-item-experience.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
 - name: Samples
   items:
+  - name: Sample work item templates
+    href: work-item-template-examples.md
   - name: Query by title or ID
     href: ../queries/titles-ids-descriptions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Query by assignment or workflow 
