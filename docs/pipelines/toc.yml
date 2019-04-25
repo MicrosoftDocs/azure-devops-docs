@@ -207,14 +207,16 @@
     href: build/triggers.md
   - name: Variables
     href: process/variables.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: End-to-end CI/CD
     items:
-    - name: Java to Linux web App
+    - name: Java to web App
       href: languages/java-webapp.md
     - name: Java to Azure Function
       href: languages/java-function.md
+    - name: Python to web app
+      href: languages/python-webapp.md
   - name: Build
     items:
     - name: Cross-platform scripts
@@ -530,6 +532,8 @@
         href: tasks/deploy/azure-resource-group-deployment.md
       - name: Azure SQL Database Deployment
         href: tasks/deploy/sql-azure-dacpac-deployment.md
+      - name: Azure Web App
+        href: tasks/deploy/azure-rm-web-app.md
       - name: Azure VM Scale Set Deployment
         href: tasks/deploy/azure-vmss-deployment.md
       - name: Azure Web App for Container
