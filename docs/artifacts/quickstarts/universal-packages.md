@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
+ms.author: midenn
+author: mitchdenny
 ms.date: 09/25/2018
 monikerRange: 'azure-devops'
 ---
@@ -34,6 +34,11 @@ Create a new directory, and copy the files you want to publish as a package into
 ## Create a feed
 
 If you don't already have a Azure Artifacts feed, [create one now](../feeds/create-feed.md) and note its name. If you already have a feed, just note the name.
+
+
+*Already have a feed? [Skip to the next step](#publish-a-package).*
+
+[!INCLUDE [](../_shared/create-feed.md)]
 
 ## Log in to Azure DevOps
 
@@ -69,6 +74,7 @@ az devops configure --defaults organization=https://[your-organization].visualst
 
 ---
 
+<a name="publish-a-package"></a>
 ## Publish a Universal Package
 
 Publish a package with `az artifacts universal publish`. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
