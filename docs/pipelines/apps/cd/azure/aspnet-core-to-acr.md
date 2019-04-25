@@ -26,7 +26,7 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 ## Prerequisites
 
-[!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
+* You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.  (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
