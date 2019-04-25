@@ -23,9 +23,7 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
-
-* You need a GitHub account, where you can create a repository.
+[!INCLUDE [include](_shared/prerequisites.md)]
 
 ## Get the sample code
 

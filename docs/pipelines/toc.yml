@@ -209,6 +209,12 @@
     href: process/variables.md
 - name: How-to Guides
   items:
+  - name: End-to-end CI/CD
+    items:
+    - name: Java to Linux web App
+      href: languages/java-webapp.md
+    - name: Java to Azure Function
+      href: languages/java-function.md
   - name: Build
     items:
     - name: Cross-platform scripts
