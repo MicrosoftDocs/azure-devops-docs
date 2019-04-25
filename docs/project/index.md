@@ -21,7 +21,7 @@ featureFlags:
 
 # Collaborate 
 
-Share information, get notified, integrate with productivity tools and Azure DevOps.
+Share information, get notified, and integrate with productivity tools and Azure DevOps.
 
 
 <ul class="panelContent cardsF">
@@ -115,7 +115,7 @@ Share information, get notified, integrate with productivity tools and Azure Dev
             </div>
         </div>
     </li>
-
+::: moniker range="azure-devops"
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -144,8 +144,7 @@ Share information, get notified, integrate with productivity tools and Azure Dev
             </div>
         </div>
     </li>
-
-
+::: moniker-end
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -164,7 +163,7 @@ Share information, get notified, integrate with productivity tools and Azure Dev
                             <a href="/azure/devops/project/search/code-search">Code search</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/search/work-item-search">Work item search</a>
+                            <a href="/azure/devops/project/search/work-item-search">Work item search</a>
                         </p>
                         <p>
                             <a href="/azure/devops/project/wiki/search-wiki">Wiki search</a>
@@ -190,7 +189,7 @@ Share information, get notified, integrate with productivity tools and Azure Dev
                             <a href="/azure/devops/test/request-stakeholder-feedback">Test & Feedback extension</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/search/code-search">Request feedback</a>
+                            <a href="/azure/devops/project/feedback/get-feedback">Request feedback</a>
                         </p>
                         <p>
                             <a href="/azure/devops/project/feedback/give-feedback">Microsoft feedback client</a>
@@ -200,7 +199,6 @@ Share information, get notified, integrate with productivity tools and Azure Dev
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
