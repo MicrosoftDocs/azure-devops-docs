@@ -207,14 +207,16 @@
     href: build/triggers.md
   - name: Variables
     href: process/variables.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: End-to-end CI/CD
     items:
-    - name: Java to Linux web App
+    - name: Java to web App
       href: languages/java-webapp.md
     - name: Java to Azure Function
       href: languages/java-function.md
+    - name: Python to web app
+      href: languages/python-webapp.md
   - name: Build
     items:
     - name: Cross-platform scripts
