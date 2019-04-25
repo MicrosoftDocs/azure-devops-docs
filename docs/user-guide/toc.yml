@@ -70,7 +70,7 @@
 - name: How-to guides
   items:
   - name: Sign in to the web or a client
-    href: connect-team-projects.md 
+    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
