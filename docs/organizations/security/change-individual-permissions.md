@@ -10,30 +10,30 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 04/25/2019
 ---
 
 
-# Tutorial: Change individual or group permissions, grant select access to specific functions
+# Change individual or group permissions
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The standard way for permissions to accrue to individuals are by adding user accounts to one or more built-in security groups. However, in certain instances, you'll want to grant additional permissions to select individuals, but perhaps not all permissions assigned to the security group. For example, you might want to grant several individuals the ability to add or edit area and iteration paths, but not have all permissions available to members of the Project Administrators group.
+The standard way to set permissions is by adding them to one or more built-in security groups. However, sometimes you may want to grant additional permissions to select users, where not all permissions are assigned to the security group. For example, if you want to give some users the ability to add or edit area and iteration paths, but don't want them to have all permissions available to members of the Project Administrators group.
 
-The three ways to change permissions for an individual are:
+You can change individual permissions in one of the following three ways:
 
 - Create a custom Azure DevOps security group, define permissions for that group, add the user account to the group
 - For object-level permissions: Add the user account and set permissions
 - For project or collection-level permissions: Search for the user account and selectively change their permission assignments
 
-In this article you learn how to do the following:
+In this article you learn how to do the following tasks:
 > [!div class="checklist"]
 > * Create a custom security group 
 > * Set permissions for a custom security group 
 > * Add members to a custom security group 
-> * Change the permission assignments for an individual user account  
+> * Change the permission assignments for an individual user 
 
-If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+If you're new to managing permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
 
 [!INCLUDE [temp](../../_shared/image-differences.md)]
 
@@ -95,7 +95,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 ## Set permissions for a custom security group
 
-1. To set permissions for the custom group you just created, choose the group name and then set one or more permissions.
+1. To set permissions for the custom group you  created, choose the group name and then set one or more permissions.
 
 	> [!div class="mx-imgBorder"]
 	> ![Set permissions for a project-level custom security group](_img/change-individual-permissions/team-admin-group-set-permissions.png)  
@@ -115,23 +115,21 @@ You add members to a custom security group in the same way you add users to a bu
 	> [!div class="mx-imgBorder"]
 	> ![Security>Members page, Add member](_img/change-individual-permissions/team-admin-group-add-members.png)  
 
-1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
+1. Enter the user identity into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
     ![Add users and group dialog](_img/project-level-permissions-add-a-user.png) 
 
     > [!NOTE]
     > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-## Change the permission assignments for an individual
+## Change individual permission at the project-level
 
-### To change the permission at a project-level
-
-1. From the project-level **Security** page, enter the name of the user account in the **Filter users and groups** box and select the account whose permissions you want to change.
+1. From the project-level **Security** page, enter the user identity in the **Filter users and groups** box. Then, select the account whose permissions you want to change.
 
 	> [!div class="mx-imgBorder"]
 	> ![Filter and select a user account](_img/change-individual-permissions/filter-user-account.png)  
 
-2. Change the permissions for the account, setting a permission as **Allow** or **Deny**.
+2. Change the permission, setting a permission as **Allow** or **Deny**.
 
     ![Set permissions for a single user account](_img/change-individual-permissions/set-individual-permissions.png)  
 
@@ -139,15 +137,15 @@ You add members to a custom security group in the same way you add users to a bu
 
 3. Choose **Save changes**.
 
-### To change the permission at a collection level
+### Change individual permission at the collection-level
 
-1. Open the account-level or collection-level **Security** admin page and follow the instructions provided in the previous section for project-level permissions.
+1. Open the user-level or collection-level **Security** admin page and follow the instructions provided in the previous section for project-level permissions.
 
     For a description of each collection-level permission, see [Permissions and groups reference, collection-level permissions](permissions.md#collection-level).
 
-### To change the permission at an object-level
+### Change individual permission at an object-level
 
-From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see these topics:
+From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles:
 
 
 <table width="80%">
@@ -191,19 +189,19 @@ From the web portal, open the Security dialog for the object whose permissions y
 </tbody>
 </table>
 
-0. From the Security dialog, choose **Add** to add a user account. 
+1. From the Security dialog, choose **Add**. 
 
 	<img src="_img/change-individual-permissions/security-dialog-add-user-account-button.png" alt="Open the Add users or group permissions dialog" style="border: 1px solid #C3C3C3;" />
 
-0. Type the name of the user account, choose search, and select the account you want.
+2. Enter the user ID, choose search, and then make your selection in the left pane.
 
-0. Select the user name from the left pane and then update the permission assignments, setting **Allow** or **Deny** for specific permissions. 
+3. Update the permission setting to **Allow** or **Deny** for specific permissions. 
 
     <img src="_img/change-individual-permissions/set-permissions-individual-object-level.png" alt="Set permissions for a single user account" style="border: 1px solid #C3C3C3;" />
 
-    For a description of a specific permission, see [Permissions and groups reference](permissions.md).
+    For a description of specific permissions, see [Permissions and groups reference](permissions.md).
 
-0. Choose **Save changes**.
+4. Choose **Save changes**.
 
 ## Next steps
 
