@@ -1,6 +1,6 @@
 ---
-title: Create, configure a new organization
-titleSuffix: Azure DevOps Services
+title: Create a new organization, project collection
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Create your organization with a personal Microsoft account or a work or school account
 ms.prod: devops
@@ -11,14 +11,30 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.date: 04/26/2019
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2013'
 ---
 
-# Create an organization
+# Create an organization or project collection
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to create an organization. You can use a personal Microsoft account or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
+::: moniker range="= azure-devops"
+
+In this quickstart, you learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+## Create a project collection
+
+A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to them. 
+
+For more information about how to create a project collection, see [create a project collection](https://docs.microsoft.com/en-us/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
+
+::: moniker-end
+
+::: moniker range="= azure-devops"
 
 <a name="how-sign-up"></a>
 
@@ -73,6 +89,8 @@ To sign in to your organization at any time, go to (https://dev.azure.com/{youro
 
 > [!NOTE]
 > If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Azure DevOps as a benefit, learn [how to add your work or school account](../../billing/link-msdn-subscription-to-organizational-account-vs.md) to your subscription so that you can use your subscriber benefits in Azure DevOps.
+
+::: moniker-end
 
 ## Next steps
 
