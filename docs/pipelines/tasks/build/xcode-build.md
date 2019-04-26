@@ -7,6 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
 ms.manager: jillfra
 ms.author: dastahel
+author: davidstaheli
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
