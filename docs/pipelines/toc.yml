@@ -295,6 +295,8 @@
         href: packages/jenkins.md
   - name: Integrate
     items:
+    - name: Microsoft Teams
+      href: integrations/microsoft-teams.md
     - name: Slack
       href: integrations/slack.md
   - name: Migrate
