@@ -21,7 +21,7 @@ featureFlags:
 
 # Collaborate 
 
-Share information, get notified, and integrate with productivity tools and Azure DevOps.
+Share information, configure alerts,  create public projects, and collaborate with team members in Azure DevOps.
 
 
 <ul class="panelContent cardsF">
