@@ -29,7 +29,7 @@
   items:
   - name: Sign up for Azure DevOps
     href: sign-up-invite-teammates.md
-  - name: Create organizations
+  - name: Create an organization or project collection
     href: ../organizations/accounts/create-organization.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Manage your project
     href: project-admin-tutorial.md
