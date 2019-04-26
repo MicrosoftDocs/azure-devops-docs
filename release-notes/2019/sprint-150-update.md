@@ -25,7 +25,7 @@ General:
 Azure Boards:
 
 - [Query work based on Azure Active Directory groups](#query-work-based-on-azure-active-directory-groups)
-- [Share you team’s board using a badge](#share-you-teams-board-using-a-badge)
+- [Share your team’s board using a badge](#share-your-teams-board-using-a-badge)
 - [Query for work relative to the start of the day, week, month, or year](#query-for-work-relative-to-the-start-of-the-day-week-month-or-year)
 - [Export query results to a CSV file](#export-query-results-to-a-csv-file)
 
@@ -82,9 +82,9 @@ See the [query operators]( https://docs.microsoft.com/en-us/azure/devops/boards/
 > [!div class="mx-imgBorder"]
 ![Badge](_img/150_04.png "Query for work based")
 
-### Share you team’s board using a badge
+### Share your team’s board using a badge
 
-The repository’s README is often the home that your project team turns to for information about how to contribute to and use your solution. Now, like you can with a build or deployment status in Azure Pipelines, you can add a badge for your team’s board in Azure Boards to your README. The badge can be configured to show only the **In Progress** columns or all columns, and even be made visible publicly if your project is open source.
+The repository’s README is often the home that your project team turns to for information about how to contribute to and use your solution. Now, like you can with a build or deployment status in Azure Pipelines, you can add to your README a badge for your team’s board in Azure Boards. You can configure the badge to show only the **In Progress** columns or all columns, and even make the badge visible publicly if your project is open source.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/150_29.png "Share your team's boards using badge")

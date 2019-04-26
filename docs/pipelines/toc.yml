@@ -207,14 +207,16 @@
     href: build/triggers.md
   - name: Variables
     href: process/variables.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: End-to-end CI/CD
     items:
-    - name: Java to Linux web App
+    - name: Java to web App
       href: languages/java-webapp.md
     - name: Java to Azure Function
       href: languages/java-function.md
+    - name: Python to web app
+      href: languages/python-webapp.md
   - name: Build
     items:
     - name: Cross-platform scripts
@@ -237,6 +239,8 @@
       href: apps/cd/deploy-webdeploy-webapps.md
     - name: Azure Kubernetes Service
       href: apps/cd/deploy-aks.md
+    - name: Azure Container to IoT edge
+      href: release/deploy-iot-using-azure-pipelines.md
     - name: Set up a multi-stage release
       href: release/define-multistage-release-process.md
     - name: Use approvals and gates
@@ -530,6 +534,8 @@
         href: tasks/deploy/azure-resource-group-deployment.md
       - name: Azure SQL Database Deployment
         href: tasks/deploy/sql-azure-dacpac-deployment.md
+      - name: Azure Web App
+        href: tasks/deploy/azure-rm-web-app.md
       - name: Azure VM Scale Set Deployment
         href: tasks/deploy/azure-vmss-deployment.md
       - name: Azure Web App for Container
