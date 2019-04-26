@@ -16,6 +16,8 @@
   items:
   - name: Create your first pipeline
     href: create-first-pipeline.md
+  - name: Customize your pipeline
+    href: customize-pipeline.md
 - name: Languages
   items: 
   - name: Anaconda
