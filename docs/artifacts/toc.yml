@@ -96,6 +96,8 @@
       href: maven/publish.md
     - name: Install a Maven artifact
       href: maven/install.md
+    - name: Use packages from Maven Central
+      href: maven/upstream-sources.md
   - name: Gradle
     items:
     - name: Install a Maven artifact using Gradle
