@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.custom: seodec18
 ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
