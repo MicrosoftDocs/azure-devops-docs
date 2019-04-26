@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/24/2019
+ms.date: 04/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -37,7 +37,7 @@ To delete your organization, you need organization owner permissions. [How do I 
 
 ## Prerequisites
 
-If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md) before you can delete your organization in Azure DevOps.
+If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before you can delete your organization in Azure DevOps.
 
 ## Delete organization
 
