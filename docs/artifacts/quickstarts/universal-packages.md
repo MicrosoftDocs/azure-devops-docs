@@ -33,12 +33,38 @@ Create a new directory, and copy the files you want to publish as a package into
 
 ## Create a feed
 
-If you don't already have a Azure Artifacts feed, [create one now](../feeds/create-feed.md) and note its name. If you already have a feed, just note the name.
+A feed is a container for packages.
+You consume and publish packages through a particular feed.
 
+If you don't already have an Azure Artifacts feed, create one now and note its name. If you already have a feed, just note the name and [Skip to the next step](#publish-a-package).
 
-*Already have a feed? [Skip to the next step](#publish-a-package).*
+1. Go to **Azure Artifacts**:
 
-[!INCLUDE [](../_shared/create-feed.md)]
+   > [!div class="mx-imgBorder"] 
+   > ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
+
+1. Select **+ New feed**:
+
+   > [!div class="mx-imgBorder"] 
+   > ![New feed button](../_shared/_img/new-feed-button-azure-devops-newnav.png)
+
+1. In the dialog box:
+
+   - Give the feed a name.
+   - Choose who can read and contribute (or update) packages in your feed.
+   - Choose the upstream sources for your feed.
+   - When you're done, select **Create**.
+
+   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
+
+   > [!div class="mx-imgBorder"] 
+   > ![New feed dialog box](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+
+You can change these settings later by editing the feed. With your feed selected, select **Edit feed** (the gear icon).
+
+> [!div class="mx-imgBorder"] 
+> ![Edit feed button](../_shared/_img/editfeed-azure-devops-newnav.png)
+
 
 ## Log in to Azure DevOps
 
@@ -99,7 +125,8 @@ az artifacts universal publish --organization https://fabrikam.visualstudio.com 
 
 To see the package that you just published, go to the organization that you specified in the publish command, select any project, and then select the **Packages** page under the **Build & Release** page group. Or, if you've enabled the [new navigation preview](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/), just select **Packages** on the left side.
 
-![Universal Package listing in a sample feed](_img/universal-in-feed.png)
+> [!div class="mx-imgBorder"] 
+> ![Universal Package listing in a sample feed](_img/universal-in-feed.png)
 
 ## Download a Universal Package
 
