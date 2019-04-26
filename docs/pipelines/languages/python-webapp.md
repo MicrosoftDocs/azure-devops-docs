@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
-ms.manager: jillfra
+ms.manager: douge
 ms.author: kraigb
 author: kraigb
 ms.reviewer: alewis
-ms.date: 04/25/2019
+ms.date: 04/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -48,7 +48,7 @@ python -m flask run
 
 ## Provision the target Azure App Service
 
-The quickest means to create an App Service instance is to use the Azure command-line interface (CLI) through the interactive Azure Cloud Shell, as described in the following steps.
+The quickest means to create an App Service instance is to use the Azure command-line interface (CLI) through the interactive Azure Cloud Shell. In the following steps, you use the `az webapp up` command that both provisioning the App Service and performs an initial deployment of your app.
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 
@@ -62,35 +62,39 @@ The quickest means to create an App Service instance is to use the Azure command
 
     ![Azure Cloud Shell appearance](../_img/azure-cloud-shell-interface.png)
 
-1. In the Cloud Shell, enter the following command to create a resource group named `flaskpipelines-rg` in your Azure subscription (you can set a different location for the resource group by changing the `-l westus` argument). JSON output appears in the Cloud Shell as when the command completes successfully.
+1. In the Cloud Shell, clone your repository using `git clone`. If you're using the example app mentioned earlier, use `git clone https://github.com/your-handle/python-sample-vscode-flask-tutorial/`, replacing `your-handle` with the name of the GitHub account where you forked that repository.
+    
+    > [!Tip]
+    > The Cloud Shell is backed by an Azure Storage account in a resource group called "cloud-shell-storage-centralus" (or a variant appropriate to your location). That storage account contains an image of the Cloud Shell's file system, which stores the cloned repository. 
+
+1. In the Cloud Shell, use the [`az webapp up`](https://docs.microsoft.com/cli/azure/webapp?view=azure-cli-latest#az-webapp-up) command to create an App Service and initially deploy your app (`--sku B1` specifies the lowest price compute tier):
 
     ```bash
-    az group create -l westus -n flaskpipelines-rg
-    ```
+    # Change the value of the -n argument to a specific name for your app service.
+    # Names must be unique across azure, as the URL becomes <name>.azurewebsites.net.
 
-    A resource group is a collection of related Azure resources. By creating a group, it's easy to delete all those resources together when you no longer need them.
+    az webapp up -n msdocs-flaskpipelines --sku B1 --launch-browser
+    ```
 
     > [!Tip]
     > Although the Cloud Shell interface doesn't support keystrokes like Ctrl+v to paste, you can right-click and select **Paste** from the popup menu.
 
-1. An App Service runs inside a virtual machine defined by an App Service Plan. Run the following command to create a plan named `flaskpipelines-plan` in the `flaskpipelines-rg` resource group:
+1. After the command completes, a browser should automatically open (by virtue of the `--launch-browser` argument) to the URL `<app-name>.azurewebsites.net` where you can see the running app.
 
-    ```bash
-    az appservice plan create -g flaskpipelines-rg -n flaskpipelines-plan --is-linux --sku B1
-    ```
+1. If your app requires a custom startup command, like the the python-sample-vscode-flask-tutorial app, you must set that property using the [`az webapp config set`](https://docs.microsoft.com/cli/azure/webapp/config?view=azure-cli-latest#az-webapp-config-set). For example, the python-sample-vscode-flask-tutorial app contains a file named *startup.txt* that contains its specific startup command, in which case the property is set to that filename.
 
-    Again, you see JSON output in the Cloud Shell when the command completes successfully. The plan created here uses the minimal B1 basic compute tier for the virtual machine (which has an associated cost). You can easily delete the plan when you delete the resource group at the end of this article.
+    1. In the first line of output from the `az webapp up` command, copy the name of the resource group it created, which is similar to "yourname_rg_Linux_centralus'.
 
-1. Finally, run the following command to create the App Service instance in the plan, replacing `<unique-name>` with an app name that's unique across Azure. (Typically, you use a personal or company name along with an app identifier, such as "msdocs-flaskpipelines"; the command fails if the name is already in use.) By assigning the App Service to the same resource group as the plan, it's easy to clean up all the resources together.
+    1. Enter the following command, using the resource name from the previous step, the app service name used with the `az webapp up` command, and your specific startup file or command after the `--startup-file` argument: 
 
-    ```bash
-    az webapp create -g flaskpipelines-rg -p flaskpipelines-plan -n <unique-name> --runtime "Python|3.6"
-    ```
+        ```bash
+        # Customize with your resource group, app name, and startup command
 
-    > [!Tip]
-    > If you see the error message "The plan (name) doesn't exist", and you're sure that the plan name is correct, check that the spelling of the resource group specified with the -g argument is also correct and that the plan you identify is part of that resource group. If you misspell the resource group name, the command won't find the plan in that non-existent resource group and thus gives this particular error.
+        az webapp config set -g yourname_rg_Linux_centralus -n msdocs-flaskpipelines2 --startup-file startup.txt
+        ```
 
-1. To confirm that the App Service is running with a default site, visit the URL `<unique-name>.azurewebsites.net`, replacing `<unique_name>` with the name you gave to the `az webpp create` command. This default site is replaced once you deploy your own code through a pipeline later in this article.
+> [!Note]
+> For a detailed description of the specific tasks performed by the `az webapp up` command, see [Provisioning an App Service with discrete commands](#provisioning-an-app-service-with-discrete-commands) at the end of this article.
 
 ## Sign into Azure DevOps, create a DevOps project, and connect to Azure
 
@@ -266,6 +270,7 @@ In this section you replace the steps in the starter pipeline with specific step
 
         # The following parameter is specific to the Flask example code. You may
         # or may not need a startup command for your own app.
+
         StartupCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
     ```
 
@@ -322,6 +327,7 @@ In this section you replace the steps in the starter pipeline with specific step
 
         # The following command is specific to the python-sample-vscode-flask-tutorial code.
         # You may or may not need a startup command for your own app.
+
         StartupCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
     ```
 
@@ -346,7 +352,7 @@ In this section you replace the steps in the starter pipeline with specific step
 
 ## Run a post-deployment script
 
-Within the `AzureRMWebAppDeployment" step, you can run a post-deployment script by using the following entries after `StartupCommand:`:
+Within the `AzureRMWebAppDeployment` step, you can run a post-deployment script by using the following entries after `StartupCommand:`:
 
 - Inline script:
 
@@ -386,6 +392,61 @@ When using Django, you typically want to migrate the data models using `manage.p
     ```yaml
     ScriptType: File Path
     ScriptPath: 'post-deployment.sh'
+
+## Provisioning an App Service with discrete commands
+
+The `az webapp up` command used earlier in this article is a convenient method to provision the App Service and initially deploy your app in a single step. If you want more control over the process, however, you can use discrete commands to accomplish the same tasks. For example, you might want to use a specific name for the resource group. You might also want to create an App Service within an existing App Service plan.
+
+The following steps perform the equivalent of the `az webapp up` command:
+
+1. In the Cloud Shell, run the following command to create a resource group in your Azure subscription (you can set a different location for the resource group by changing the `-l westus` argument). JSON output appears in the Cloud Shell as when the command completes successfully.
+
+    ```bash
+    # Change the resource group name as desired.
+
+    az group create -l westus -n flaskpipelines-rg
+    ```
+
+    A resource group is a collection of related Azure resources. By creating a group, it's easy to delete all those resources together when you no longer need them.
+
+1. An App Service runs inside a virtual machine defined by an App Service Plan. Run the following command to create a plan named `flaskpipelines-plan` in the `flaskpipelines-rg` resource group:
+
+    ```bash
+    # --is-linux is required for Python deployments
+
+    az appservice plan create -g flaskpipelines-rg -n flaskpipelines-plan --is-linux --sku B1
+    ```
+
+    Again, you see JSON output in the Cloud Shell when the command completes successfully. The plan created here uses the minimal B1 basic compute tier for the virtual machine (which has an associated cost). You can easily delete the plan when you delete the resource group.
+
+1. Run the following command to create the App Service instance in the plan, replacing `<app-name>` with an app name that's unique across Azure. (Typically, you use a personal or company name along with an app identifier, such as "msdocs-flaskpipelines"; the command fails if the name is already in use.) By assigning the App Service to the same resource group as the plan, it's easy to clean up all the resources together.
+
+    ```bash
+    az webapp create -g flaskpipelines-rg -p flaskpipelines-plan -n <app-name> --runtime "Python|3.6"
+    ```
+
+    > [!Tip]
+    > If you see the error message "The plan (name) doesn't exist", and you're sure that the plan name is correct, check that the spelling of the resource group specified with the -g argument is also correct and that the plan you identify is part of that resource group. If you misspell the resource group name, the command won't find the plan in that non-existent resource group and thus gives this particular error.
+
+1. The App Service at this point contains only default app code. You can now use Azure Pipelines to deploy your specific app code.
+
+    If you want to deploy your code when creating the app service, you can use the `--deployment-source-url` and `--deployment-source-branch` arguments with the `az webapp create` command in the previous step. For more information, see [`az webapp create`](https://docs.microsoft.com/cli/azure/webapp?view=azure-cli-latest#az-webapp-create)
+
+    If your app also requires a custom startup command, use the `az webapp config set` command, as described earlier under [Provision the target Azure App Service](#provision-the-target-azure-app-service). For example:
+
+    ```bash
+    # Customize with your resource group, app name, and startup command
+
+    az webapp config set -g yourname_rg_Linux_centralus -n msdocs-flaskpipelines2 --startup-file startup.txt
+    ```
+
+## Clean up resources
+
+To avoid incurring ongoing charges for Azure resources you created in thus tutorial, you can simply delete the resource group that contains the App Service and the App Service plan. You can delete the resource group in the Azure Portal by selecting **Resource groups** on the left-side navigation pane. In the list that appears, select **...** on the right side of the resource group, then select **Delete resource group** and follow the prompts.
+
+You can also use the [`az group delete`](https://docs.microsoft.com/cli/azure/group?view=azure-cli-latest#az-group-delete) command in the Cloud Shell.
+
+By starting the Cloud Shell, you also created a storage account to maintain the file system image for the shell. This storage account does incur a minimal monthly charge. You can delete it by deleting the resource group that begins with "cloud-shell-storage-".
 
 ## Next steps
 
