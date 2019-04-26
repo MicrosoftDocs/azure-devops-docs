@@ -239,6 +239,8 @@
       href: apps/cd/deploy-webdeploy-webapps.md
     - name: Azure Kubernetes Service
       href: apps/cd/deploy-aks.md
+    - name: Azure Container to IoT edge
+      href: release/deploy-iot-using-azure-pipelines.md
     - name: Set up a multi-stage release
       href: release/define-multistage-release-process.md
     - name: Use approvals and gates
@@ -293,6 +295,8 @@
         href: packages/jenkins.md
   - name: Integrate
     items:
+    - name: Microsoft Teams
+      href: integrations/microsoft-teams.md
     - name: Slack
       href: integrations/slack.md
   - name: Migrate
