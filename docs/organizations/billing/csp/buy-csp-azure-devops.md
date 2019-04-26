@@ -21,7 +21,7 @@ your customers. This purchase includes users (who get Basic features), Test Mana
 Hosted Pipelines.
 
 >[!Note]
->[Azure DevOps Services was previously called Visual Studio Team Services or VSTS](../../../user-guide/what-happened-vsts.md).
+>[Azure DevOps Services was previously called Visual Studio Team Services or VSTS](../../../user-guide/what-is-azure-devops.md#vsts).
 
 ## Prerequisites
 
