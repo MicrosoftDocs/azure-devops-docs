@@ -122,7 +122,7 @@ This service changes the StringStoresCompatibilityLevel to 1100 for the **Work I
 
 1. From the Warehouse Control Web Service, choose **ProcessDimensionsForExpandedCapacity**.  
 
-2. Enter the name of the dimension. From the above error message, the dimension name is ```dimWorkItem```.  
+2. Enter the name of the dimension. From the above error message, the dimension name is ```vDimWorkItemOverlay```.  
  
 3. The service returns **True** when it successfully resets the value to 1100. 
 
