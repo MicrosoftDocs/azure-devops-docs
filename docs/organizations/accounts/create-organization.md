@@ -10,23 +10,22 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 04/26/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Create an organization
+# Create an organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to create an organization with a personal Microsoft account or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure AD.
+In this quickstart, you learn how to create an organization. You can use a personal Microsoft account or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
 
 <a name="how-sign-up"></a>
 
 ## Prerequisites
 
 1. Read and understand how to [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
-2. Do either of the following:
-   * Complete the following steps to use only Microsoft accounts with your organization.
+2. Complete the following steps if you want to use only Microsoft accounts with your organization.
 
      Without Azure AD, you're solely responsible for controlling organization access. And all users must sign in with their Microsoft account. 
      [What are other differences?](faq-create-organization.md#SignInOrganizationDifferences)
@@ -35,7 +34,7 @@ In this quickstart, you learn how to create an organization with a personal Micr
 
      - Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your organization with a Microsoft account.
 
-   * Complete the following steps to authenticate users and control organization access through your Azure AD.
+3. Complete the following steps if you want to authenticate users and control organization access through your Azure AD.
 
       - You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
       - To use existing on-premises identities, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
@@ -43,7 +42,7 @@ In this quickstart, you learn how to create an organization with a personal Micr
 
 <a name="SignIn"></a>
 
-## Create an organization
+## Create organization
 
 1. Go to [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137), and use either a Microsoft or Azure AD account to sign in. Choose **Next**.
 
@@ -51,9 +50,7 @@ In this quickstart, you learn how to create an organization with a personal Micr
 
 	  [Got browser problems?](faq-create-organization.md#browser-problems)
 
-	  [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
-
-	  If you were previously signed up for Azure DevOps, select **New organization**.
+	  If you previously signed up for Azure DevOps, select **New organization**.
 
       ![Select New organization](_img/_shared/create-new-organization.png)
 
@@ -62,9 +59,6 @@ In this quickstart, you learn how to create an organization with a personal Micr
    ![Create your organization in Azure DevOps](_img/_shared/create-organization.png)
 
    ![Taking you to your organization notification](_img/_shared/taking-you-to-your-azure-devops-organization.png)
-   
-   Congratulations, you're now an organization owner! You are prompted to [create a project](../projects/create-project.md) to get started.
-   ![Create your first project screen in Azure DevOps](_img/_shared/create-project-screen.png)
 
 3. Select **Organization settings** and **Overview**. Confirm or change your organization settings.
 
@@ -73,6 +67,7 @@ In this quickstart, you learn how to create an organization with a personal Micr
    ![Confirm organization settings, Azure AD-backed](_img/_shared/organization-settings-azure-ad-backed.png)
 
    If you're using an **Azure AD account**, confirm the directory that you're connected to. If you belong to multiple directories, ensure that you want to connect this directory to your organization. Changing the directory now is easier than [changing the directory later](faq-create-organization.md#ChangeDirectory).
+
 
 To sign in to your organization at any time, go to (https://dev.azure.com/{yourorganization}).
 
