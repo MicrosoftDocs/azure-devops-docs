@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---

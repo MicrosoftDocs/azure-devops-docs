@@ -11322,12 +11322,22 @@
     },
     {
       "source_path": "docs/organizations/accounts/about-vsts-tfs.md",
-      "redirect_url": "/azure/devops/organizations/user-guide/about-azure-devops-services-tfs",
+      "redirect_url": "/azure/devops/user-guide/about-azure-devops-services-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/what-is-vsts.md",
-      "redirect_url": "/azure/devops/organizations/user-guide/what-is-azure-devops-services",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/what-is-azure-devops-services.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/what-is-azure-devops-server.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
       "redirect_document_id": false
     },
     {
@@ -11688,6 +11698,11 @@
     {
       "source_path": "docs/organizations/billing/reduce-cancel-paid-users.md",
       "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users#decrease-amount-of-paid-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/what-happened-vsts.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops#vsts",
       "redirect_document_id": false
     }
   ]
