@@ -96,15 +96,15 @@ What rules should you apply to highlight work items? Here are a few examples and
 > [!div class="mx-tdCol2BreakAll"]
 > | Work items | Criteria |
 > |------------|------------|
-> | High priority items | ```Priority = 1``` |
-> | High effort items | ```Effort 20 ``` or ```Story Points 20 ``` |
-> | Stale items unchanged in the last 5 days | ```Changed Date @Today-5``` |
-> |Title contains a key word | ```Title Contains Yes``` |
-> |Severity 1 bugs | ```Severity = 1 - Critical   AND   Work Item Type = Bug``` |
-> |High value business items | ```Business Value 50``` |
-> |Items assigned to specific feature area  | ```Area Path Under Fabrikam Fiber\Phone``` |
-> |Contains specific tag   | ```Tags Contain RTM``` |
-> |Blocked tasks (Scrum process only) | ```Blocked = Yes``` |
+> | High priority items | `Priority = 1` |
+> | High effort items | `Effort 20` or `Story Points 20` |
+> | Stale items unchanged in the last 5 days | `Changed Date @Today-5` |
+> |Title contains a key word | `Title Contains Yes` |
+> |Severity 1 bugs | `Severity = 1 - Critical   AND   Work Item Type = Bug` |
+> |High value business items | `Business Value 50` |
+> |Items assigned to specific feature area  | `Area Path Under Fabrikam Fiber\Phone` |
+> |Contains specific tag   | `Tags Contain RTM` |
+> |Blocked tasks (Scrum process only) | `Blocked = Yes` |
 
 
 <a id="kanban-board" > </a>

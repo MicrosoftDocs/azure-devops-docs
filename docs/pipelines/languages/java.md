@@ -34,8 +34,6 @@ To get started using a sample Java project, fork this repository in GitHub, or i
 https://github.com/MicrosoftDocs/pipelines-java
 ```
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the project.
-
 Follow instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample project.
 
 The rest of this topic describes ways to customize your Java build pipeline.

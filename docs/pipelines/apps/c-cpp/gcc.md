@@ -24,7 +24,7 @@ Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable c
 
 ## Prerequisites
 
-[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
+* You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.  (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
 
 * While the simplest way to try this quickstart is to use an Azure DevOps organization, you can also use a TFS server instead of an Azure DevOps organization. Make sure that you have [configured a build agent](../../agents/agents.md) for your project, and that you have GCC installed on the agent machine.
 

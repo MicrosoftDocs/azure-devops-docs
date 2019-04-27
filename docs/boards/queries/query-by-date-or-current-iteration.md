@@ -12,7 +12,7 @@ author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 04/08/2019
---- 
+---
 
 # Query by date or current iteration
 

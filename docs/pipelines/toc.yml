@@ -5,10 +5,10 @@
   items:
   - name: What is Azure Pipelines?
     href: get-started/what-is-azure-pipelines.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
-  - name: How to use Azure Pipelines
-    href: get-started/pipelines-get-started.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
   - name: Sign up for Azure Pipelines
     href: get-started/pipelines-sign-up.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+  - name: How to use Azure Pipelines
+    href: get-started/pipelines-get-started.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
   - name: Key concepts
     href: get-started/key-pipelines-concepts.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
 - name: Quickstarts
@@ -16,6 +16,8 @@
   items:
   - name: Create your first pipeline
     href: create-first-pipeline.md
+  - name: Customize your pipeline
+    href: customize-pipeline.md
 - name: Languages
   items: 
   - name: Anaconda
@@ -207,8 +209,16 @@
     href: build/triggers.md
   - name: Variables
     href: process/variables.md
-- name: How-to Guides
+- name: How-to guides
   items:
+  - name: End-to-end CI/CD
+    items:
+    - name: Java to web App
+      href: languages/java-webapp.md
+    - name: Java to Azure Function
+      href: languages/java-function.md
+    - name: Python to web app
+      href: languages/python-webapp.md
   - name: Build
     items:
     - name: Cross-platform scripts
@@ -231,6 +241,8 @@
       href: apps/cd/deploy-webdeploy-webapps.md
     - name: Azure Kubernetes Service
       href: apps/cd/deploy-aks.md
+    - name: Azure Container to IoT edge
+      href: release/deploy-iot-using-azure-pipelines.md
     - name: Set up a multi-stage release
       href: release/define-multistage-release-process.md
     - name: Use approvals and gates
@@ -285,6 +297,8 @@
         href: packages/jenkins.md
   - name: Integrate
     items:
+    - name: Microsoft Teams
+      href: integrations/microsoft-teams.md
     - name: Slack
       href: integrations/slack.md
   - name: Migrate
@@ -524,6 +538,8 @@
         href: tasks/deploy/azure-resource-group-deployment.md
       - name: Azure SQL Database Deployment
         href: tasks/deploy/sql-azure-dacpac-deployment.md
+      - name: Azure Web App
+        href: tasks/deploy/azure-rm-web-app.md
       - name: Azure VM Scale Set Deployment
         href: tasks/deploy/azure-vmss-deployment.md
       - name: Azure Web App for Container
@@ -546,8 +562,10 @@
         href: tasks/deploy/iis-web-app-deployment-on-machine-group.md
       - name: IIS Web App Manage (Machine Group)
         href: tasks/deploy/iis-web-app-management-on-machine-group.md
-      - name: Kubernetes (kubectl)
+      - name: Kubectl task
         href: tasks/deploy/kubernetes.md
+      - name: Kubernetes manifest task
+        href: tasks/deploy/kubernetes-manifest.md
       - name: PowerShell on Target Machines
         href: tasks/deploy/powershell-on-target-machines.md
       - name: Service Fabric App Deployment
@@ -572,6 +590,8 @@
         href: tasks/tool/helm-installer.md
       - name: Java Tool Installer
         href: tasks/tool/java-tool-installer.md
+      - name: Kubectl Installer
+        href: tasks/tool/kubectl-installer.md
       - name: Node.js Tool Installer
         href: tasks/tool/node-js.md
       - name: NuGet Tool Installer

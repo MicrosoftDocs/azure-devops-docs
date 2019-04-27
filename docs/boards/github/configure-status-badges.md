@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
-# Configure status badges to appear on GitHub repositories 
+# Configure status badges to add to GitHub README files 
 
 [!INCLUDE[temp](../_shared/version-vsts-only.md)] 
  

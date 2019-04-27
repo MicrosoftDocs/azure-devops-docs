@@ -111,6 +111,8 @@
     href: ../../reference/process/new-work-item-experience.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
 - name: Samples
   items:
+  - name: Sample work item templates
+    href: work-item-template-examples.md
   - name: Query by title or ID
     href: ../queries/titles-ids-descriptions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Query by assignment or workflow 
@@ -159,9 +161,10 @@
     href: ../queries/link-type-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
-  - name: Work item field index
-    href: guidance/work-item-field.md
+  - name: Field reference
     items:
+    - name: Work item field index
+      href: guidance/work-item-field.md
     - name: "Code review & feedback fields"
       href: guidance/guidance-code-review-feedback-field-reference.md
     - name: "Bugs, issues, & risks fields"

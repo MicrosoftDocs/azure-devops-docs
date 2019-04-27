@@ -506,7 +506,7 @@ The following WITs are added to all processes except the Basic process.
 
 Teams create and work with these types using the corresponding tool: 
 
-*   Test Plan, Test Suite, Test Case Shared Steps, and Shared Parameters: Microsoft Test Manger.
+*   Test Plan, Test Suite, Test Case Shared Steps, and Shared Parameters: Microsoft Test Manager.
 *   Feedback Request and Feedback Response: Request feedback.  
 *   Code Review Request and Code Review Response: My Work (from Team Explorer) and Code Review Request.  
 
