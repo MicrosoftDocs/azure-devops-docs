@@ -17,292 +17,90 @@ featureFlags:
 ---
 
 <p><a href="/azure/devops/index">Azure DevOps</a>  /  Manage & Configure Resources</p>
-<div id="main" class="v2">
-    <div class="container">
-        <h1>Manage & Configure Resources</h1>
-        <p>Configure resources and manage settings for an organization, project, team, or user. </p>
-        <p style="height: 30px;">&nbsp;</p>
-        <ul class="pivots">
-            <li>
-                <a href="#index"></a>
-                <ul id="index">
-                    <li class="panelItem" data-index="0">
-                        <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
-                        <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
-                            <li class="fullSpan">
-                                <a href="#index1"></a>
-                                <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
-                                    <li>
-                                        <a href="/azure/devops/organizations/projects/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="Management icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Manage projects</h3>
-                                                            <p>Add, structure, and manage projects to support your organization and teams. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/organizations/security/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security & identity icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Security &amp; identity</h3>
-                                                            <p>Manage permissions and access to your projects and repositories.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/organizations/accounts/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_account-management.svg" alt="manage organizations icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Manage organizations</h3>
-                                                            <p>Setup and manage your organization and connection to Azure Active Directory.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/organizations/settings/work/inheritance-process-model">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Process customization</h3>
-                                                            <p>Customize work tracking and Agile tools.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/organizations/settings/scale/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_configure-teams.svg" alt="Scale and configure team icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Scale & configure team</h3>
-                                                            <p>Add teams and team administrators; configure team settings.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/organizations/billing/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_billing.svg" alt="Billing icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Billing</h3>
-                                                            <p>Manage subscriptions and extension purchases.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/marketplace/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_extensions.svg" alt="Extensions icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Manage extensions</h3>
-                                                            <p>Install or remove Marketplace extensions.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/notifications/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_alert.svg" alt="Notifications icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Notifications</h3>
-                                                            <p>Manage personal, team, project, or collection-level notifications.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/organizations/public/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="Public projects icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Public projects</h3>
-                                                            <p>Create a public project or make a private project public.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/service-hooks/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="/azure/devops/_img/index/i_service-hooks.svg" alt="Service hooks icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Service hooks</h3>
-                                                            <p>Create subscriptions and configure the integration of Azure DevOps with third-party apps.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/organizations/settings/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_setup.svg" alt="All settings icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>All settings</h3>
-                                                            <p>Learn about all settings you can make as an individual, organization owner, or team, project, or collection administrator.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/migrate/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="Article icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Migration & Import</h3>
-                                                            <p>Migrate data from on-premises Azure DevOps Server or TFS to Azure DevOps Services.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#index2"></a>
-                                <h2 style="float: left; display: flex;">Additional resources</h2>
-                                <ul id="index2" class="cardsL cols cols4" style="float: left; display: flex; width: 100%;">
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="Library icon" />Index</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="Video icon" />DevOps at Microsoft</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <a class="barLink"  href="/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="Azure DevOps icon" />Azure DevOps resource center</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+
+
+# Manage & Configure Resources 
+
+Configure resources and manage settings for an organization, project, team, or user.
+
+
+<ul class="panelContent cardsF">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="../_img/index/i_agile.svg" alt="Agile at scale icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Teams</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/about-teams-and-settings">About teams and Agile tools</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/manage-teams">Manage and configure team tools</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops//organizations/settings/set-area-paths">Define area paths and assign to a team</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops//organizations/settings/set-iteration-paths-sprints">Configure team iterations</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/add-teams">Add a team</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/add-team-administrator">Add a team administrator</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/security/add-users-team-project">Add users to a project or specific team</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="../_img/index/i_agile.svg" alt="Agile at scale icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Projects</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/projects/about-projects">About projects and scaling your organization</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/projects/create-project">Create a project</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/user-guide/project-admin-tutorial?toc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Fbreadcrumb%2Ftoc.json">Manage your project</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/set-area-paths?toc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Fbreadcrumb%2Ftoc.json">Define area paths</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/set-iteration-paths-sprints?toc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Fbreadcrumb%2Ftoc.json">Define iterations</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/security/set-project-collection-level-permissions?toc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Fbreadcrumb%2Ftoc.json">Add project administrators or set project-level permissions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/security/add-users-team-project?toc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fprojects%2Fbreadcrumb%2Ftoc.json">Add users to a project</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/projects/connect-to-projects">Connect to a project</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+</ul>

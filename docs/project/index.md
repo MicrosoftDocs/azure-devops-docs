@@ -6,12 +6,11 @@ layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
 ms.prod: devops 
-robots: NOINDEX, NOFOLLOW
 ms.technology: devops-new-user
 ms.assetid:  
 ms.manager: jillfra 
 ms.author: kaelli 
-ms.date: 04/30/2019
+ms.date: 05/6/2019
 featureFlags:
 - clicktale 
 ---

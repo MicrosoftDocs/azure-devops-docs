@@ -5,6 +5,7 @@ description: Collaborate on software development through version control, work t
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
+robots: NOINDEX, NOFOLLOW
 ms.prod: devops 
 ms.technology: devops-new-user
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
