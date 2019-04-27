@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps Collaborate Documentation 
 titleSuffix: Azure DevOps
-description: Share information and use collaboration tools provided with Azure DevOps 
+description: Share information, configure alerts,  create public projects, and collaborate with team members in Azure DevOps
 layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
@@ -62,25 +62,22 @@ Share information, configure alerts,  create public projects, and collaborate wi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="web portal" />
+                            <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="Public projects icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Navigation</h3>
+                        <h3>Public Projects</h3>
                         <p>
-                            <a href="/azure/devops/project/navigation/index">Web portal navigation</a>
+                            <a href="/azure/devops/organizations/public/about-public-projects">What is a public project?</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/go-to-service-page">Open a service, page, or settings</a>
+                            <a href="/azure/devops/organizations/public/create-public-project">Create a public project</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/add-artifact-team">Add an artifact or team artifacts</a>
+                            <a href="/azure/devops/organizations/public/make-project-public">Make a project public</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/set-favorites">Work with favorites</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/navigation/preview-features">Enable a preview feature</a>
+                            <a href="/azure/devops/organizations/public/migration-checklist">Private-to-public migration checklist</a>
                         </p>
                     </div>
                 </div>
@@ -115,34 +112,7 @@ Share information, configure alerts,  create public projects, and collaborate wi
             </div>
         </div>
     </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="Public projects icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Public Projects</h3>
-                        <p>
-                            <a href="/azure/devops/organizations/public/about-public-projects">What is a public project?</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/public/create-public-project">Create a public project</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/public/make-project-public">Make a project public</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/public/migration-checklist">Private-to-public migration checklist</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
+
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -197,68 +167,4 @@ Share information, configure alerts,  create public projects, and collaborate wi
             </div>
         </div>
     </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com//media/common/i_multi-connect.svg" alt=" " />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Related resources</h3>
-                        <p>
-                            <a href="/azure/devops/learn/">DevOps Resource Center</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops-projects/">Azure DevOps Projects</a>
-                        </p>
-                        <p>
-                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
-                        </p>
-                        <p>
-                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
-                        </p>
-                        <p>
-                            <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li> 
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_support.svg" alt=" " />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Community and support</h3>
-                        <p>
-                            <a href="https://twitter.com/AzureDevOps">@AzureDevOps on Twitter</a>
-                        </p>
-                        <p>
-                            <a href="https://devblogs.microsoft.com/devops/">Azure DevOps Blog</a>
-                        </p>
-                        <p>
-                            <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
-                        </p>
-                        <p>
-                            <a href="https://stackoverflow.com/questions/tagged/azure-devops">Azure DevOps stackoverflow</a>
-                        </p>
-                        <p>
-                            <a href="https://status.dev.azure.com/">Azure DevOps Service Status</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li> 
-
-
 </ul>
