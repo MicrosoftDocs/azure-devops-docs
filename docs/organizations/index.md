@@ -2,16 +2,15 @@
 title: Manage & Configure Resources 
 titleSuffix: Azure DevOps
 description: Configure user preferences, and project, collection, and organization resources to support your business needs. 
-ms.custom: seodec18 
-layout: HubPage 
+layout: LandingPage
 hide_bc: true
-ms.topic: hub-page
+ms.topic: landing-page
 ms.prod: devops 
-ms.technology: devops-settings
+ms.technology: devops-new-user
 ms.assetid:  
 ms.manager: jillfra 
 ms.author: kaelli 
-ms.date: 09/05/2018
+ms.date: 05/6/2019
 featureFlags:
 - clicktale 
 ---
