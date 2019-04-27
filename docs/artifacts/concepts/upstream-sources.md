@@ -18,12 +18,13 @@ monikerRange: '>= tfs-2017'
 
 Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or enterprise). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com, nuget.org, and Maven Central) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or enterprise). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
 - [Use nuget.org as an upstream](../nuget/upstream-sources.md)
 - [Use npmjs.com as an upstream](../npm/upstream-sources.md)
+- [Use Maven Central as an upstream](../maven/upstream-sources.md)
 
 > [!NOTE]
 > Custom upstream sources are currently only supported for npm.

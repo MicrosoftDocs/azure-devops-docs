@@ -10,7 +10,7 @@ ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 08/31/2018
+ms.date: 04/24/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -22,31 +22,29 @@ This guidance explains how to automatically build and test Go projects.
 
 ## Example
 
-To get started using a sample Go project, fork this repository in GitHub, or import it into Azure Repos or TFS:
+The following code is a simple Go project. To get started, fork this repo in GitHub, or import it into Azure Repos.
 
 ```
 https://github.com/MicrosoftDocs/pipelines-go
 ```
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
+Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a pipeline for the sample app. When you're done with that topic, you'll have a working YAML file (`azure-pipeines.yml`) in your repository that you can continue to modify by following the instructions in this topic. To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
 
-Follow instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample project.
-
-The rest of this topic describes ways to customize your Go build pipeline.
+> [!Tip]
+> To make changes to the YAML file as described in this topic, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
 
 ## Build environment
 
-You can use Azure Pipelines to build your Go projects without needing to set up any infrastructure of your own. Modern versions of Go are preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
+You can use Azure Pipelines to build your Go projects without needing to set up any infrastructure of your own. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact versions of Go that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
-
-Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
+Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/go
 pool:
-  vmImage: 'ubuntu-16.04' # Other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
 ```
+
+Modern versions of Go are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact versions of Go that are pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
 ## Set up a Go workspace
 
@@ -113,16 +111,6 @@ Use `dep ensure` if your project uses dep to download dependencies imported in y
   displayName: 'Download dep and run `dep ensure`'
 ```
 
-## Test
-
-Use `go test` to test your go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
-
-```yaml
-- script: go test -v ./...
-  workingDirectory: '$(modulePath)'
-  displayName: 'Run tests'
-```
-
 ## Build
 
 Use `go build` to build your Go project. Add the following snippet to your `azure-pipelines.yml` file:
@@ -131,6 +119,16 @@ Use `go build` to build your Go project. Add the following snippet to your `azur
 - script: go build -v .
   workingDirectory: '$(modulePath)'
   displayName: 'Build'
+```
+
+## Test
+
+Use `go test` to test your go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
+
+```yaml
+- script: go test -v ./...
+  workingDirectory: '$(modulePath)'
+  displayName: 'Run tests'
 ```
 
 ## Build a container image

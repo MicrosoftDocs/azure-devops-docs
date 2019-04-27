@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 04/22/2019
 ---
 
 # Get started as a Stakeholder
@@ -33,13 +33,13 @@ With Stakeholder access, you can add and modify work items. You can check projec
 
 ::: moniker-end  
 
-Use this topic to learn:
+Use this tutorial to learn how to do the following tasks:
 
 > [!div class="checklist"]
-> * How to sign-in to a project
-> * How to add a work item
-> * How to view the product backlog and add new work to it
-> * How to view work in progress on the Kanban board
+> * Sign in to a project
+> * Add a work item
+> * View the product backlog and add new work to it
+> * View work in progress on the Kanban board
 > * Find work assigned to you, or query for other work items
 
 For information about working with pipelines, see these articles: 
@@ -58,7 +58,7 @@ For information about working with pipelines, see these articles:
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, enter ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
 
-2.  Enter your credentials. If you aren't able to sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
+2.  Enter your credentials. If you can't sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
 
 
 <a id="create-work-item">  </a>
@@ -69,12 +69,12 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 ::: moniker range=">= azure-devops-2019"
-0. (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
+0. (1) Check that you have selected the right project, then (2) choose **Boards** > **Work Items**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Boards>Work Items](../../boards/work-items/_img/view-add/open-work-items-agile.png)
 
-0. Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next.  
+0. Within the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots, as described next.  
 	<table>
 	<tbody valign="top">
 	<tr>
@@ -86,7 +86,7 @@ You can start viewing and adding work items once you connect to a project.
 	<li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
 	<li>**Following**: lists work items that you've elected to [follow](../../boards/work-items/follow-work-items.md). </li>
 	<li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
-	<li>**My activity**: lists work items that you have recently viewed or updated.</li>
+	<li>**My activity**: lists work items that you've recently viewed or updated.</li>
 	<li>**Recently updated**: lists work items recently updated in the project. </li>
 	<li>**Recently completed**: lists work items completed or closed in the project.</li>
 	<li>**Recently created**: lists work items created within the last 30 days in the project.</li>
@@ -96,7 +96,7 @@ You can start viewing and adding work items once you connect to a project.
 	</tbody>
 	</table>
 
-0. To add a work item, simply choose the work item type from the **New Work Item** drop down menu.  
+0. To add a work item, choose the work item type from the **New Work Item** drop down menu.  
 
 	For example, here we choose User Story. 
 
@@ -131,7 +131,7 @@ You can start viewing and adding work items once you connect to a project.
 
 0. Choose **Work>Queries**, choose a work item from the **New** drop down menu.
 
-	![TFS 2015, TFS 2013-Queries page, Add a work item](_img/stakholder-add-work-item-tfs-queries-page.png)  
+	![Azure DevOps Server 2015, Azure DevOps Server 2013-Queries page, Add a work item](_img/stakholder-add-work-item-tfs-queries-page.png)  
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
@@ -147,7 +147,7 @@ For descriptions of each field, see [Work item field index](../../boards/work-it
 
 Tags are useful for filtering backlogs, boards, and queries
 
-All users granted Stakeholder access for a private project can only [add existing tags to work items](../../boards/queries/add-tags-to-work-items.md), not add new tags. Even if the **Create tag definition** permission for the user is set to Allow. This is part of the Stakeholder access settings. 
+All users granted Stakeholder access for a private project can only [add existing tags to work items](../../boards/queries/add-tags-to-work-items.md), not add new tags. Even if the **Create tag definition** permission for the user is set to Allow, per the Stakeholder access settings. 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services users granted Stakeholder access for a public project can add new and existing tags to work items. 
@@ -160,7 +160,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. (1) Check that you selected the right project, (2) choose **Boards** >  **Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Boards>Backlogs, for a team](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -184,7 +184,7 @@ Work appears in the backlog in priority order. Work item types may include bugs 
 
 0. To view or edit a work item, select it and choose **Enter**.
 
-0. To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
+0. To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title, and then press the Enter key or choose **Add to top**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Add a product backlog item](../../boards/backlogs/_img/create-backlog/add-new-items-agile.png) 
@@ -246,7 +246,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
+0. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu. 
 
 	![Open your Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)  
 
@@ -303,7 +303,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 0. Your Kanban board displays. 
 	 
 	> [!div class="mx-imgBorder"]  
-	> ![TFS 2015, Kanban board, Agile template](../../boards/boards/_img/overview/kanban-basics-intro-tfs.png)       
+	> ![Azure DevOps Server 2015, Kanban board, Agile template](../../boards/boards/_img/overview/kanban-basics-intro-tfs.png)       
 	
 ::: moniker-end   
 
@@ -347,6 +347,7 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 - [Add work items](../../boards/backlogs/add-work-items.md)  
 - [Create your backlog](../../boards/backlogs/create-your-backlog.md)
 - [Kanban quickstart](../../boards/boards/kanban-quickstart.md) 
-- [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md) 
+- [Access levels](access-levels.md#stakeholder-access)
 
-If you want to provide a group of users access to provide feedback, then you don't need to give them Stakeholder access. Instead, simply [give reviewers permissions to provide feedback](../../project/feedback/give-permissions-feedback.md). 
+
+If you want to provide a group of users access to provide feedback, then you don't need to give them Stakeholder access. Instead, [give reviewers permissions to provide feedback](../../project/feedback/give-permissions-feedback.md). 

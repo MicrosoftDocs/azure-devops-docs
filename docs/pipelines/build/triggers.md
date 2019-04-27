@@ -260,7 +260,7 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
-> YAML PR triggers are only supported in GitHub and BitBucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
 
 ::: moniker-end
 
