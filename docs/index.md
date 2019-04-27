@@ -6,12 +6,11 @@ layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
 ms.prod: devops 
-robots: NOINDEX, NOFOLLOW
 ms.technology: devops-new-user
 ms.assetid:  
 ms.manager: jillfra 
 ms.author: kaelli 
-ms.date: 04/30/2019
+ms.date: 05/6/2019
 featureFlags:
 - clicktale 
 ---
@@ -217,41 +216,43 @@ Azure DevOps provides development collaboration tools including high-performance
                     <div class="cardText">
                         <h3>Build and deploy apps</h3>
                         <p>
-                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a> / <a href="/azure/devops/pipelines/languages/anaconda">Anaconda</a> / <a href="/azure/devops/pipelines/languages/android">Android</a>
+                          <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a>
                         </p>
                         <p>
-                          <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">ASP.NET</a> / <a href="/azure/devops/pipelines/apps/c-cpp/gcc">C/C++ with GCC</a> 
+                          <a href="/azure/devops/pipelines/languages/anaconda">Anaconda</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/apps/windows/cpp">C/C++ with VC++</a> / <a href="/azure/devops/pipelines/languages/docker">Docker</a> / <a href="/azure/devops/pipelines/languages/go">Go</a> 
+                          <a href="/azure/devops/pipelines/languages/android">Android</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/java">Java</a> / <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a>   
+                          <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">ASP.NET</a>
                         </p>
                         <p>
-                           <a href="/azure/devops/pipelines/languages/php">PHP</a> / <a href="/azure/devops/pipelines/languages/python">Python</a> / <a href="/azure/devops/pipelines/languages/ruby">Ruby</a> 
+                          <a href="/azure/devops/pipelines/apps/c-cpp/gcc">C/C++ with GCC</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/apps/windows/universal">UWP</a> / <a href="/azure/devops/pipelines/languages/xamarin">Xamarin</a> / <a href="/azure/devops/pipelines/languages/xcode">XCode</a>
+                            <a href="/azure/devops/pipelines/apps/windows/cpp">C/C++ with VC++</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/apps/cd/deploy-aks">Azure Kubernetes Service</a> / <a href="/azure/devops/pipelines/targets/azure-stack">Azure Stack</a>
+                            <a href="/azure/devops/pipelines/languages/docker">Docker</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/targets/azure-sqldb">Azure SQL database</a> / <a href="/azure/devops/pipelines/targets/webapp">Azure Web Apps</a>
+                            <a href="/azure/devops/pipelines/languages/go">Go</a> 
                         </p>
                         <p>
-                            <a href="/azure/devops//pipelines/targets/scvmm">Virtual Machine Manager</a> / <a href="/azure/devops//pipelines/targets/vmware">VMware</a> 
+                            <a href="/azure/devops/pipelines/languages/java">Java</a>
                         </p>
                         <p>
-                            <a href="/azure/devops//pipelines/apps/cd/deploy-docker-webapp">Web App for Containers</a> / <a href="/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups">Windows VM</a>
+                            <a href="/azure/devops/pipelines/languages/javascript">JavaScript and Node.js</a>   
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/index">...plus more</a>   
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
