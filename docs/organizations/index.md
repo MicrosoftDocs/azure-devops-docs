@@ -37,25 +37,25 @@ Configure resources and manage settings for an organization, project, team, or u
                     <div class="cardText">
                         <h3>Teams</h3>
                         <p>
-                            <a href="/azure/devops/organizations/settings/about-teams-and-settings">About teams and Agile tools</a>
+                            <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">About teams and Agile tools</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/manage-teams">Manage and configure team tools</a>
+                            <a href="/azure/devops/organizations/settings/manage-teams?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Manage and configure team tools</a>
                         </p>
                         <p>
-                            <a href="/azure/devops//organizations/settings/set-area-paths">Define area paths and assign to a team</a>
+                            <a href="/azure/devops//organizations/settings/set-area-paths?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Define area paths and assign to a team</a>
                         </p>
                         <p>
-                            <a href="/azure/devops//organizations/settings/set-iteration-paths-sprints">Configure team iterations</a>
+                            <a href="/azure/devops//organizations/settings/set-iteration-paths-sprints?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Configure team iterations</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/add-teams">Add a team</a>
+                            <a href="/azure/devops/organizations/settings/add-teams?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Add a team</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/add-team-administrator">Add a team administrator</a>
+                            <a href="/azure/devops/organizations/settings/add-team-administrator?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Add a team administrator</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/security/add-users-team-project">Add users to a project or specific team</a>
+                            <a href="/azure/devops/organizations/security/add-users-team-project?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Add users to a project or specific team</a>
                         </p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../_img/index/i_agile.svg" alt="Agile at scale icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="Management icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -102,5 +102,35 @@ Configure resources and manage settings for an organization, project, team, or u
             </div>
         </div>
     </li>
-
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/azure/devops/_img/index/i_account-management.svg" alt="manage organizations icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Organizations</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/accounts/organization-management">About organizations</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/accounts/create-organization">Create an organization</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/accounts/connect-organization-to-azure-ad">Connect your organization to Azure Active Directory</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/marketplace/install-extension?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json">Install extensions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/marketplace/approve-extensions?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json">Approve extension requests</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
 </ul>
