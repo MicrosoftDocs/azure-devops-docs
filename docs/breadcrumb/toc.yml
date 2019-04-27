@@ -6,9 +6,6 @@
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
     items:
-    - name: Web portal navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
     - name: Wikis
       tocHref: /azure/devops/project/wiki/
       topicHref: /azure/devops/project/wiki/index
@@ -46,6 +43,9 @@
   - name: Start using Azure DevOps
     tocHref: /azure/devops/user-guide/
     topicHref: /azure/devops/user-guide/index
+  - name: Web portal navigation
+    tocHref: /azure/devops/project/navigation/
+    topicHref: /azure/devops/project/navigation/index
   - name: Java 
     tocHref: /azure/devops/java/
     topicHref: /azure/devops/java/index 
