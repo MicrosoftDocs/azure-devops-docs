@@ -5,10 +5,10 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
-ms.manager: alewis
+ms.manager: jillfra
 ms.custom: seodec18
 ms.author: dastahel
-ms.reviewer: dastahel
+author: davidstaheli
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---

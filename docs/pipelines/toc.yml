@@ -562,8 +562,10 @@
         href: tasks/deploy/iis-web-app-deployment-on-machine-group.md
       - name: IIS Web App Manage (Machine Group)
         href: tasks/deploy/iis-web-app-management-on-machine-group.md
-      - name: Kubernetes (kubectl)
+      - name: Kubectl task
         href: tasks/deploy/kubernetes.md
+      - name: Kubernetes manifest task
+        href: tasks/deploy/kubernetes-manifest.md
       - name: PowerShell on Target Machines
         href: tasks/deploy/powershell-on-target-machines.md
       - name: Service Fabric App Deployment
@@ -588,6 +590,8 @@
         href: tasks/tool/helm-installer.md
       - name: Java Tool Installer
         href: tasks/tool/java-tool-installer.md
+      - name: Kubectl Installer
+        href: tasks/tool/kubectl-installer.md
       - name: Node.js Tool Installer
         href: tasks/tool/node-js.md
       - name: NuGet Tool Installer
