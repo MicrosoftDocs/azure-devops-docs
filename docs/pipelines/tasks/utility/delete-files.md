@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: alewis
-author: andyjlewis
+ms.author: macoope
+author: vtbassmatt
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
