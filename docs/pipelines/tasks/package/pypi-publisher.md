@@ -7,6 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52
 ms.manager: madhurig
 ms.author: brcrista
+author: brcrista
 ms.reviewer: dastahel
 ms.date: 5/7/2018
 monikerRange: 'azure-devops'

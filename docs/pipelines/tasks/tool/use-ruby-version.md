@@ -7,6 +7,7 @@ ms.assetid: 0b9f5626-08ec-45a3-8a39-aff5b3394398
 ms.manager: madhurig
 ms.custom: seodec18
 ms.author: dastahel
+author: davidstaheli
 ms.reviewer: lukillgo
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'

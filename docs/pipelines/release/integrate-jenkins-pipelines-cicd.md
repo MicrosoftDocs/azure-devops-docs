@@ -4,7 +4,7 @@ description: Set up continuous integration (CI) and continuous deployment (CD) f
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.author: ahomer
+ms.author: ronai
 author: mlearned
 ms.reviewer: vijayma
 ms.manager: jillfra
