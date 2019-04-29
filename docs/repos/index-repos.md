@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
 layout: HubPage 
 hide_bc: true
+robots: NOINDEX, NOFOLLOW
 ms.topic: hub-page
 ms.prod: devops 
 ms.technology: devops-code-git

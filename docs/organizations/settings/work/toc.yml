@@ -61,11 +61,11 @@
       href: ../../security/permissions-access.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
     - name: Work tracking object limits
       href: object-limits.md
-    - name: REST APIS: Processes
+    - name: Processes (REST APIS)
       href: /rest/api/vsts/processes/processes
-    - name: REST APIs: Work Item Types
+    - name: Work Item Types (REST APIS)
       href: /rest/api/vsts/processdefinitions/work%20item%20types
-    - name: REST APIs: Add a custom control to a form
+    - name: Add a custom control to a form (REST APIS)
       href: ../../../extend/develop/custom-control.md
 - name: Resources
   items:

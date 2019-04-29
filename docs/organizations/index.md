@@ -1,5 +1,5 @@
 ---
-title: Manage & Configure Resources 
+title: Manage & Configure Resources Documentation
 titleSuffix: Azure DevOps
 description: Configure user preferences, and project, collection, and organization resources to support your business needs. 
 layout: LandingPage
