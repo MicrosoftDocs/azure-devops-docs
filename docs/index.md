@@ -50,6 +50,12 @@ Azure DevOps provides development collaboration tools including high-performance
                         <p>
                             <a href="/azure/devops/pipelines/get-started/index">Azure Pipelines</a>
                         </p>
+                        <p>
+                            <a href="/azure/devops/project/navigation/index">Web portal navigation</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/search/index">Search</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -146,12 +152,6 @@ Azure DevOps provides development collaboration tools including high-performance
                         </p>
                         <p>
                             <a href="/azure/devops/organizations/settings/scale/index">Scale</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/boards/get-started/manage-boards">Settings</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/customize-process">Customization</a>
                         </p>
                         <p>
                             <a href="https://www.azuredevopslabs.com/labs/azuredevops/agile/">Online lab</a>
@@ -268,16 +268,16 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/test/overview">What is Azure Test Plans?</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/test/index">Exploratory/manual testing</a>
+                            <a href="/azure/devops/test/index">Manual testing</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/feedback/index">Exploratory testing & stakeholder feedback</a>
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a>
                         </p>
                         <p>
                             <a href="/visualstudio/test/unit-test-your-code">Unit and functional testing</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/feedback/index">Stakeholder feedback</a>
                         </p>
                         <p>
                             <a href="https://www.azuredevopslabs.com/labs/azuredevops/testmanagement/">Online lab</a>
@@ -347,7 +347,7 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/server/admin/admin-quick-ref">Manage</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/migrate/index">Migrate</a>
+                            <a href="/azure/devops/migrate/index">Migrate & Import</a>
                         </p>
                     </div>
                 </div>
@@ -430,16 +430,7 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/project/wiki/index">Wikis</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/index">Navigation</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/notifications/index">Notifications</a>
-                        </p>
-                        <p>
                             <a href="/azure/devops/organizations/public/index">Public projects</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/search/index">Search</a>
                         </p>
                         <p>
                             <a href="/azure/devops/project/feedback/index">Feedback</a>

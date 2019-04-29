@@ -8,10 +8,12 @@
     href: https://devblogs.microsoft.com/devops/
 - name: Get started
   items:
-  - name: Azure DevOps
+  - name: Azure DevOps Services
     href: /azure/devops/user-guide/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
   - name: Web Portal Navigation
     href: /azure/devops/project/navigation/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+  - name: Search
+    href: /azure/devops/project/search/index?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json 
 - name: GitHub Integration
   items:
   - name: GitHub & Azure Pipelines
@@ -81,14 +83,10 @@
   items:
   - name: Wikis
     href: project/wiki/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
-  - name: Navigation
-    href: project/navigation/index.md?toc=/azure/devops/project/navigation//toc.json&bc=/azure/devops/project/navigation//breadcrumb/toc.json 
   - name: Notifications
     href: notifications/index.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json 
   - name: Public projects
     href: organizations/public/index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json 
-  - name: Search
-    href: project/search/index.md 
   - name: Feedback
     href: project/feedback/index.md 
 - name: Manage & Configure Resources
@@ -101,19 +99,22 @@
     href: organizations/accounts/index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json 
   - name: Security
     href: organizations/security/index.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
-  - name: Process customization
-    href: organizations/settings/work/index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/settings/work/breadcrumb/toc.json 
+  - name: Process Customization (Inheritance)
+    topicHref: /azure/devops/organizations/settings/work/index?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/settings/work/breadcrumb/toc.json 
+  - name: Work Tracking Customization 
+    tocHref: /azure/devops/reference/
+    topicHref: /azure/devops/reference/index?toc=/azure/devops/reference/work/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
   - name: Billing
     href: organizations/billing/index.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json 
   - name: All settings
     href: organizations/settings/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json 
 - name: Marketplace & Extensibility
   items:
-  - name: Discover & manage extensions
+  - name: Discover & Manage Extensions
     href: marketplace/index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
-  - name: Develop extensions
+  - name: Develop Extensions
     href: extend/index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json 
-  - name: Integrate applications
+  - name: Integrate Applications
     href: integrate/index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json 
   - name: Service Hooks
     href: service-hooks/index.md?toc=/azure/devops/service-hooks/toc.json&bc=/azure/devops/service-hooks/breadcrumb/toc.json 

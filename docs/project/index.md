@@ -89,35 +89,6 @@ Share information, configure alerts,  create public projects, and collaborate wi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_search.svg" alt="Search icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Search</h3>
-                        <p>
-                            <a href="/azure/devops/project/search/overview">Search across all your code, wiki and work items</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/search/code-search">Code search</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/search/work-item-search">Work item search</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/wiki/search-wiki">Wiki search</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                            <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="Feedback icon" />
                         </div>
                     </div>
