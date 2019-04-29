@@ -58,7 +58,7 @@ Add and manage fields](customize-process-field.md)
 ## Reference
 
 - [Default permissions & access](../../security/permissions-access.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json)
-- [Work tracking object limits](object-limits)
+- [Work tracking object limits](object-limits.md)
 - [REST APIS: Processes](/rest/api/vsts/processes/processes)
 
 ## Resources
