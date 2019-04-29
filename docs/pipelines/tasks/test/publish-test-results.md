@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: pbora
+author: pboraMSFT
 ms.date: 01/08/2019
 monikerRange: '>= tfs-2015'
 ---

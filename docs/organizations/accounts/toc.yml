@@ -8,7 +8,7 @@
     href: access-with-azure-ad.md
 - name: Quickstarts
   items:
-  - name: Create your organization
+  - name: Create your organization or project collection
     href: create-organization.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
