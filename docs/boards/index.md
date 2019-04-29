@@ -166,34 +166,6 @@ Plan, track, and discuss work across your teams.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../_img/index/i_backlog.svg" alt="Backlogs icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Backlogs</h3>
-                        <p>
-                            <a href="/azure/devops/boards/backlogs/backlogs-overview">Backlogs, portfolios, and Agile project management</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/boards/backlogs/create-your-backlog">Create your product backlog</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/boards/backlogs/define-features-epics">Define features and epics</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/boards/backlogs/organize-backlog">Organize your backlog</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                             <img src="../_img/index/i_scrum.svg" alt="Sprints icon" />
                         </div>
                     </div>

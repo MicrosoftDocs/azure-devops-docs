@@ -138,7 +138,7 @@
       tocHref: /azure/devops/report/sharepoint-dashboards/
       topicHref: /azure/devops/report/sharepoint-dashboards/index
   - name: Manage & Configure Resources
-    tocHref: /azure/devops/organizations/settings/
+    tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
     items:
     - name: Manage projects

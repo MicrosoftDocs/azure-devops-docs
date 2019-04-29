@@ -89,35 +89,6 @@ Share information, configure alerts,  create public projects, and collaborate wi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="Alert icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Notifications</h3>
-                        <p>
-                            <a href="/azure/devops/notifications/about-notifications">About notifications</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/notifications/concepts-events-and-notifications">Events, subscriptions, and notifications</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/notifications/howto-manage-personal-notifications">Manage personal notifications</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/notifications/howto-manage-team-notifications">Manage notifications for a team</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                             <img src="https://docs.microsoft.com/media/common/i_search.svg" alt="Search icon" />
                         </div>
                     </div>
