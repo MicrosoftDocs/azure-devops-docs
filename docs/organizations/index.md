@@ -22,6 +22,7 @@ featureFlags:
 
 Configure resources and manage settings for an organization, project, team, or user.
 
+::: moniker range="azure-devops"
 
 <ul class="panelContent cardsF">
     <li>
@@ -194,6 +195,40 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
+                            <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Process customization</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process overview</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/work/add-custom-field">Add a custom field</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/work/add-custom-wit">Add a custom work item type</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/work/customize-process">Customize a project</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process overview</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/work/manage-process">Create and manage a process</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
                             <img src="https://docs.microsoft.com/media/common/i_billing.svg" alt="Billing icon" />
                         </div>
                     </div>
@@ -229,6 +264,34 @@ Configure resources and manage settings for an organization, project, team, or u
                         </p>
                         <p>
                             <a href="/azure/devops/marketplace/install-extension">Install extensions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_setup.svg" alt="All settings icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>All Settings</h3>
+                        <p>
+                            <a href="/organizations/settings/about-settings">About settings</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/user-guide/project-admin-tutorial?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json">Manage your project</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/navigation/preview-features?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json">Enable preview features (organization)</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/set-services">Change service visibility</a>
                         </p>
                     </div>
                 </div>
@@ -295,3 +358,11 @@ Configure resources and manage settings for an organization, project, team, or u
         </div>
     </li>
 </ul>
+
+::: moniker-end
+
+
+::: moniker range="<= azure-devops-2019"
+   
+
+::: moniker-end
