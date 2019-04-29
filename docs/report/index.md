@@ -46,7 +46,7 @@ featureFlags:
                             <a href="/azure/devops/report/dashboards/dashboards">Add dashboards</a>
                         </p>
                         <p>
-                            <a href="devops/report/dashboards/add-widget-to-dashboard">Add widgets to a dashboard</a>
+                            <a href="/azure/devops/report/dashboards/add-widget-to-dashboard">Add a widget to a dashboard</a>
                         </p>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ featureFlags:
                     <div class="cardText">
                         <h3>Power BI Integration</h3>
                         <p>
-                            <a href="devops/report/powerbi/overview">About Power BI integration</a>
+                            <a href="/azure/devops/report/powerbi/overview">About Power BI integration</a>
                         </p>
                         <p>
                             <a href="/azure/devops/report/powerbi/create-quick-report">Create a Power BI report</a>
@@ -125,9 +125,6 @@ featureFlags:
                         </p>
                         <p>
                             <a href="/azure/devops/extend/develop/add-chart">Add a chart</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/report/dashboards">Configure personal notifications</a>
                         </p>
                     </div>
                 </div>
