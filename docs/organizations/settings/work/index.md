@@ -40,10 +40,11 @@ With Azure DevOps Server 2019, you have a choice of using the Inheritance proces
 
 - [Customize a project](customize-process.md)
 - [Create and manage a process](manage-process.md)
-- 
+
 ## Concepts
 
-- [Process customization](inheritance-process-model.md)
+- [Hosted XML process overview](hosted-xml-process-model.md)
+- [Differences between process models](import-process/differences.md) 
 
 ## How-to guides
   

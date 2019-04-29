@@ -1,6 +1,6 @@
 ---
 title: Azure Test Plans Documentation
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps 
 description: Test your software using manual, exploratory, cloud, and load testing tools to improve your overall code quality. 
 layout: LandingPage
 hide_bc: true
@@ -53,7 +53,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Exploratory & Manual Testing</h3>
+                        <h3>Manual Testing</h3>
                         <p>
                             <a href="/azure/devops/test/overview">Testing scenarios and capabilities</a>
                         </p>
@@ -81,7 +81,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Stakeholder Feedback</h3>
+                        <h3>Exploratory Testing & Stakeholder Feedback</h3>
                         <p>
                             <a href="/azure/devops/test/perform-exploratory-tests">Install the Test & Feedback extension</a>
                         </p>
@@ -92,7 +92,7 @@ featureFlags:
                             <a href="/azure/devops/test/provide-stakeholder-feedback">Provide feedback</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/test/track-stakeholder-feedback">Track stakeholder feedback</a>
+                            <a href="/azure/devops/test/track-stakeholder-feedback">Track feedback</a>
                         </p>
                     </div>
                 </div>

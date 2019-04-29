@@ -251,19 +251,29 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_extensions.svg" alt="Extensions icon" />
+                            <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Manage extensions</h3>
+                        <h3>Work Tracking Customization</h3>
                         <p>
-                            <a href="/azure/devops/marketplace/overview">Discover extensions</a>
+                            <a href="/azure/devops/reference/customize-work">About work tracking customization</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/marketplace/request-extensions">Request extensions</a>
+                            <a href="/azure/devops/reference/on-premises-xml-process-model">On-premises XML process model</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/marketplace/install-extension">Install extensions</a>
+                            <a href="/azure/devops/reference/add-modify-field">Add or modify a field</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/add-modify-wit">Add or modify a work item type</a>
+                        </p>
+
+                        <p>
+                            <a href="/azure/devops/reference/xml/xml-element-reference">XML element reference</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/overview-process-template-files">Process template and plug-in files</a>
                         </p>
                     </div>
                 </div>
@@ -320,37 +330,6 @@ Configure resources and manage settings for an organization, project, team, or u
                         </p>
                         <p>
                             <a href="/azure/devops/notifications/howto-manage-team-notifications">Manage notifications for a team</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_service-hooks.svg" alt="Service Hooks icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Service Hooks</h3>
-                        <p>
-                            <a href="/azure/devops/service-hooks/overview">Integrate with service hooks</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/service-hooks/services/webhooks">Web Hooks</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/service-hooks/services/slack">Integrate with Slack</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/service-hooks/services/teams">Integrate with Microsoft Teams</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/service-hooks/services/trello">Integrate with Trello</a>
                         </p>
                     </div>
                 </div>
