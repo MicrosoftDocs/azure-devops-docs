@@ -1,0 +1,76 @@
+- name: Process Customization (Inheritance)
+  href: index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
+- name: Overview
+  expanded: true
+  items:
+    - name: About the inheritance process 
+      href: inheritance-process-model.md
+- name: Quickstarts
+  items:
+    - name: Add a custom field
+      href: add-custom-field.md
+    - name: Add a custom work item type
+      href: add-custom-wit.md
+- name: Tutorials
+  items:
+    - name: Customize a project
+      href: customize-process.md
+    - name: Create and manage a process
+      href: manage-process.md
+- name: Concepts
+  items:
+    - name: "Area & iteration paths"
+      href: about-areas-iterations.md
+- name: How-to guides
+  items:
+    - name: Add and manage fields
+      href: customize-process-field.md
+    - name: Add and manage work item types
+      href: customize-process-wit.md
+    - name: Customize a web form
+      href: customize-process-form.md
+    - name: Customize a workflow
+      href: customize-process-workflow.md
+    - name: Add a custom rule
+      href: custom-rules.md
+    - name: Add a custom control
+      href: custom-controls-process.md
+    - name: Customize backlogs & boards
+      href: customize-process-backlogs-boards.md
+    - name: Hosted XML process model
+      items:
+        - name: Hosted XML process overview
+          href: hosted-xml-process-model.md
+        - name: Customize a Hosted XML process
+          href: import-process/customize-process.md
+        - name: Import a process
+          href: import-process/import-process.md
+        - name: Customize form layout
+          href: ../../../reference/customize-wit-form.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
+        - name: Migrate Hosted XML to inherited
+          items:
+            - name: Supported clone operations
+              href: upgrade-support-hosted-to-inherited.md
+            - name: Clone a Hosted XML process to Inheritance
+              href: upgrade-hosted-to-inherited.md
+            - name: Change a project from Hosted XML to Inheritance
+              href: change-process-from-hosted-to-inherited.md
+- name: Reference
+  items:
+    - name: "Default permissions & access"
+      href: ../../security/permissions-access.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
+    - name: Work tracking object limits
+      href: object-limits.md
+    - name: REST APIS: Processes
+      href: /rest/api/vsts/processes/processes
+    - name: REST APIs: Work Item Types
+      href: /rest/api/vsts/processdefinitions/work%20item%20types
+    - name: REST APIs: Add a custom control to a form
+      href: ../../../extend/develop/custom-control.md
+- name: Resources
+  items:
+    - name: Manage projects
+      href: ../../projects/index.md
+    - name: Migrate & Import
+      href: ../../../migrate/index.md
+
