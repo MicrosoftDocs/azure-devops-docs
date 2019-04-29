@@ -2,6 +2,7 @@
 title: Azure Test Plans Documentation 
 description: Test your software using manual, exploratory, cloud, and load testing tools to improve your overall code quality. 
 ms.custom: seodec18
+robots: NOINDEX, NOFOLLOW
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page

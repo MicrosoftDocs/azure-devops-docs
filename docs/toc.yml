@@ -32,10 +32,6 @@
     href: /azure/devops/boards/queries/index?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
   - name: Plans
     href: /azure/devops/boards/plans/index?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
-  - name: Settings
-    href: /azure/devops/organizations/settings/scale/index?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json 
-  - name: Customize
-    href: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
 - name: Azure Repos
   items:
   - name: Get started
