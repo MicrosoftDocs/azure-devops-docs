@@ -1,12 +1,11 @@
 ---
-title: Azure DevOps Documentation 
+title: Azure DevOps Marketplace & Extensibility Documentation 
 titleSuffix: Azure DevOps Services
 description: Discover, manage, develop extensions and widgets for integration with Azure DevOps 
 layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
 ms.prod: devops 
-robots: NOINDEX, NOFOLLOW
 ms.technology: devops-new-user
 ms.assetid:  
 ms.manager: jillfra 
@@ -135,68 +134,4 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
             </div>
         </div>
     </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com//media/common/i_multi-connect.svg" alt=" " />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Related resources</h3>
-                        <p>
-                            <a href="/azure/devops/learn/">DevOps Resource Center</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops-projects/">Azure DevOps Projects</a>
-                        </p>
-                        <p>
-                            <a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a>
-                        </p>
-                        <p>
-                            <a href="https://marketplace.visualstudio.com/">Azure DevOps Marketplace</a>
-                        </p>
-                        <p>
-                            <a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos on YouTube</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li> 
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_support.svg" alt=" " />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Community and support</h3>
-                        <p>
-                            <a href="https://twitter.com/AzureDevOps">@AzureDevOps on Twitter</a>
-                        </p>
-                        <p>
-                            <a href="https://devblogs.microsoft.com/devops/">Azure DevOps Blog</a>
-                        </p>
-                        <p>
-                            <a href="https://azure.microsoft.com/en-us/support/devops/">Azure DevOps support</a>
-                        </p>
-                        <p>
-                            <a href="https://stackoverflow.com/questions/tagged/azure-devops">Azure DevOps stackoverflow</a>
-                        </p>
-                        <p>
-                            <a href="https://status.dev.azure.com/">Azure DevOps Service Status</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li> 
-
-
 </ul>

@@ -7,7 +7,11 @@
   - name: Azure DevOps Blog
     href: https://devblogs.microsoft.com/devops/
 - name: Get started
-  href: /azure/devops/user-guide/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+  items:
+  - name: Azure DevOps
+    href: /azure/devops/user-guide/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+  - name: Web Portal Navigation
+    href: /azure/devops/project/navigation/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: GitHub Integration
   items:
   - name: GitHub & Azure Pipelines
@@ -97,6 +101,8 @@
     href: organizations/accounts/index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json 
   - name: Security
     href: organizations/security/index.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json 
+  - name: Process customization
+    href: organizations/settings/work/index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/settings/work/breadcrumb/toc.json 
   - name: Billing
     href: organizations/billing/index.md?toc=/azure/devops/organizations/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json 
   - name: All settings
@@ -109,7 +115,7 @@
     href: extend/index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json 
   - name: Integrate applications
     href: integrate/index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json 
-  - name: Service hooks
+  - name: Service Hooks
     href: service-hooks/index.md?toc=/azure/devops/service-hooks/toc.json&bc=/azure/devops/service-hooks/breadcrumb/toc.json 
 - name: Developer resources
   items:

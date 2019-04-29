@@ -1,6 +1,7 @@
 - name: SQL Reports (Legacy)
   href: index.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Overview
+  expanded: true
   items:
   - name: Reporting Services Reports
     href: reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json

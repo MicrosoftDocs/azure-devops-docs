@@ -26,20 +26,20 @@
     topicHref: /azure/devops/marketplace-extensibility/index
     items:
     - name: Discover & Manage Extensions
-      tocHref: /azure/devops/marketplace/
-      topicHref: /azure/devops/marketplace/index
+      tocHref: /azure/devops/
+      topicHref: /azure/devops/marketplace-extensibility/index
     - name: Develop extensions
       tocHref: /azure/devops/extend/
       topicHref: /azure/devops/extend/index
     - name: Integrate extensions
       tocHref: /azure/devops/integrate/
       topicHref: /azure/devops/integrate/index
-    - name: Visual Studio extensions
-      tocHref: /azure/devops/integrate/ide/extensions/
-      topicHref: /azure/devops/integrate/ide/extensions/overview
     - name: Service Hooks
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/index
+    - name: Visual Studio extensions
+      tocHref: /azure/devops/integrate/ide/extensions/
+      topicHref: /azure/devops/integrate/ide/extensions/overview
   - name: Start using Azure DevOps
     tocHref: /azure/devops/user-guide/
     topicHref: /azure/devops/user-guide/index
@@ -109,13 +109,16 @@
     tocHref: /azure/devops/test/
     topicHref: /azure/devops/test/index-tp
     items:
-    - name: Exploratory & manual testing
+    - name: Manual testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/test/index
+    - name: Exploratory testing
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index
     - name: Continuous testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/pipelines/languages/dotnet-core.md#run-your-tests
-    - name: Unit testing
+    - name: Unit & Functional Testing (Visual Studio)
       tocHref: /visualstudio/test/improve-code-quality/
       topicHref: /visualstudio/test/unit-test-your-code
   - name: Reporting
