@@ -26,7 +26,7 @@ Customizations you make occur at one of three levels:
 - **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
 
 > [!NOTE]    
->If you're new to the work tracking system, see [Get started with Agile tools to plan and track work](../boards/get-started/what-is-azure-boards.md). 
+> If you're new to the work tracking system, see [Get started with Agile tools to plan and track work](../boards/get-started/what-is-azure-boards.md). 
 
 
 

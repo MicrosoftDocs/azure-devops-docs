@@ -5,6 +5,8 @@
   items:
     - name: About the inheritance process 
       href: inheritance-process-model.md
+    - name: Customize your work tracking experience
+      href: ../../../reference/customize-work.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
 - name: Quickstarts
   items:
     - name: Add a custom field
@@ -19,8 +21,10 @@
       href: manage-process.md
 - name: Concepts
   items:
-    - name: "Area & iteration paths"
-      href: about-areas-iterations.md
+     - name: Hosted XML process overview
+       href: hosted-xml-process-model.md
+     - name: Differences between process models
+       href: import-process/differences.md 
 - name: How-to guides
   items:
     - name: Add and manage fields
@@ -39,8 +43,6 @@
       href: customize-process-backlogs-boards.md
     - name: Hosted XML process model
       items:
-        - name: Hosted XML process overview
-          href: hosted-xml-process-model.md
         - name: Customize a Hosted XML process
           href: import-process/customize-process.md
         - name: Import a process
