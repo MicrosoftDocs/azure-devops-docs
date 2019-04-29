@@ -30,19 +30,47 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../_img/index/i_agile.svg" alt="Agile at scale icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_benefits.svg" alt="Benefits icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>User preferences</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/set-your-preferences">Set user preferences</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/navigation/preview-features">Enable preview features</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/project/navigation/set-favorites">Set personal favorites</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/notifications/howto-manage-personal-notifications">Configure personal notifications</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_configure-teams.svg" alt="Configure teams icon" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Teams</h3>
                         <p>
-                            <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">About teams and Agile tools</a>
+                            <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Teams and Agile tools</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/manage-teams?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Manage and configure team tools</a>
+                            <a href="/azure/devops/organizations/settings/manage-teams?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Configure team tools</a>
                         </p>
                         <p>
-                            <a href="/azure/devops//organizations/settings/set-area-paths?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Define area paths and assign to a team</a>
+                            <a href="/azure/devops//organizations/settings/set-area-paths?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Define team area paths</a>
                         </p>
                         <p>
                             <a href="/azure/devops//organizations/settings/set-iteration-paths-sprints?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Configure team iterations</a>
@@ -54,7 +82,7 @@ Configure resources and manage settings for an organization, project, team, or u
                             <a href="/azure/devops/organizations/settings/add-team-administrator?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Add a team administrator</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/security/add-users-team-project?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Add users to a project or specific team</a>
+                            <a href="/azure/devops/organizations/security/add-users-team-project?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Add users to a team</a>
                         </p>
                     </div>
                 </div>
@@ -126,6 +154,140 @@ Configure resources and manage settings for an organization, project, team, or u
                         </p>
                         <p>
                             <a href="/azure/devops/marketplace/approve-extensions?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json">Approve extension requests</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security & identity icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Security & Identity</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/security/about-security-identity">About security & identity</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/security/permissions-access">Default permissions & access</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/security/view-permissions">View permissions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/security/change-individual-permissions">Change individual or group permissions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_billing.svg" alt="Billing icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Billing</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/billing/overview">Billing overview</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs">Set up billing</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_extensions.svg" alt="Extensions icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Manage extensions</h3>
+                        <p>
+                            <a href="/azure/devops/marketplace/overview">Discover extensions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/marketplace/request-extensions">Request extensions</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/marketplace/install-extension">Install extensions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="Alert icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Notifications</h3>
+                        <p>
+                            <a href="/azure/devops/notifications/about-notifications">About notifications</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/notifications/concepts-events-and-notifications">Events, subscriptions, and notifications</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/notifications/howto-manage-personal-notifications">Manage personal notifications</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/notifications/howto-manage-team-notifications">Manage notifications for a team</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_service-hooks.svg" alt="Service Hooks icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Service Hooks</h3>
+                        <p>
+                            <a href="/azure/devops/service-hooks/overview">Integrate with service hooks</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/service-hooks/services/webhooks">Web Hooks</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/service-hooks/services/slack">Integrate with Slack</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/service-hooks/services/teams">Integrate with Microsoft Teams</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/service-hooks/services/trello">Integrate with Trello</a>
                         </p>
                     </div>
                 </div>
