@@ -6,8 +6,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
-ms.manager: dastahel
-ms.author: dastahel
+ms.manager: jillfra
+ms.author: shasb
+author: shashankbarsin
 ms.date: 01/18/2019
 monikerRange: 'azure-devops'
 ---

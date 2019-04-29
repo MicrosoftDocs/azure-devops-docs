@@ -24,7 +24,7 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## 5-minute quickstarts
 
-* [Create your organization](create-organization.md)
+* [Create your organization or project collection](create-organization.md)
 * [Try extensions for free](../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * [Add a team admin](../settings/add-team-administrator.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)

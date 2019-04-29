@@ -10,18 +10,18 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/19/2019
+ms.date: 04/26/2019
 ---
 
-# Tutorial: Grant or restrict access to select features and functions
+# Grant or restrict access
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can grant or restrict access to resources that you manage in Azure DevOps. Depending on your project needs, you may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
+You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
-If you are new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+If you're new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
 
-Use this topic you learn how to do the following: 
+In this article you learn how to do the following tasks: 
 
 > [!div class="checklist"]
 > * Recommended method for granting and restricting permissions
@@ -39,21 +39,21 @@ Use this topic you learn how to do the following:
 
 For maintenance purposes, we recommend you use either the built-in security groups or [custom security groups to manage permissions](change-individual-permissions.md). 
 
-You can't change the permission settings for the Project Administrators group or the Project Collection Administrators group. This is by design. However, for all other groups, you can change the permissions. 
+You can't change the permission settings for the Project Administrators group or the Project Collection Administrators group, which is by design. However, for all other groups, you can change the permissions. 
 
-If you manage a small number of users, then you may find changing individual permissions a valid option. However, custom security groups allows you to better track roles and permissions assigned to those roles.  
+If you manage a small number of users, then you may find changing individual permissions a valid option. However, custom security groups allow you to better track roles and permissions assigned to those roles.  
 
 
 ## Delegate tasks to specific roles
 
-As an administrator or account owner, it's a good idea to delegate administrative tasks to those team members who lead or manage an area. Several of the main built-in roles which come with default permissions and role assignments are:
+As an administrator or account owner, it's a good idea to delegate administrative tasks to those team members who lead or manage an area. Several of the main built-in roles that come with default permissions and role assignments are:
 - Readers 
 - Contributors 
 - Team Administrator (role) 
 - Project Administrators
 - Project Collection Administrators  
 
-For a summary of permissions provided to the above roles, see [Default permissions and access](permissions-access.md), or for the Project Collection Administrators, see [Add administrators](set-project-collection-level-permissions.md) 
+For a summary of permissions for the above roles, see [Default permissions and access](permissions-access.md), or for the Project Collection Administrators, see [Add administrators](set-project-collection-level-permissions.md) 
 
 To delegate tasks to other members within your organization, consider creating a custom security group and then granting permissions as indicated in the following table.  
 
@@ -143,7 +143,7 @@ For an account or collection, Edit instance-level (or collection-level) informat
 
 ## Restrict access to view or modify objects  
 
-Azure DevOps is designed to enable all valid users to be able to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
+Azure DevOps is designed to enable all valid users to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
 
 
 <table>
@@ -179,6 +179,7 @@ See [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md
 
 </table>
 
+::: moniker range="<= azure-devops-2019"
 
 ## Restrict modification of work items based on a user or group  
 
@@ -186,14 +187,15 @@ For [On-premises XML process model](../../reference/on-premises-xml-process-mode
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-You achieve this by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
+You can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
 
 > [!NOTE]   
 > These restriction types aren't available for organizations in Azure DevOps and the [Inheritance process model](../settings/work/inheritance-process-model.md). 
 
-
+::: moniker-end
  
-## Try this next
+## Next steps
+
 > [!div class="nextstepaction"]
 > [Remove user accounts](remove-users-prohibit-access.md)
 
