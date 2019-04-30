@@ -38,31 +38,31 @@ Currently, you can access the following data from the Analytics Service. This in
 </tr>
 <tbody valign="top">
 <tr>
-<td>[Boards](https://azure.microsoft.com/en-us/services/devops/boards/)</td>
+<td>[Boards](https://azure.microsoft.com/services/devops/boards/)</td>
 <td>[Widgets](../dashboards/analytics-widgets.md), [OData](../extend-analytics/index.md), [Power BI](overview.md)</td>
 <td>Same as Azure DevOps</td>
 <td>Rollup - Q2, CY 2019</td>
 </tr>
 <tr>
-<td>[Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)</td>
+<td>[Pipelines](https://azure.microsoft.com/services/devops/pipelines/)</td>
 <td>[Test Analytics](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops)</td>
 <td>Same as Azure DevOps</td>
 <td>Build/Release - CY 2019</td>
 </tr>
 <tr>
-<td>[Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/)</td>
+<td>[Test Plans](https://azure.microsoft.com/services/devops/test-plans/)</td>
 <td>None</td>
 <td>None</td>
 <td>Q2, CY 2019</td>
 </tr>
 <tr>
-<td>[Repos](https://azure.microsoft.com/en-us/services/devops/repos/)</td>
+<td>[Repos](https://azure.microsoft.com/services/devops/repos/)</td>
 <td>None</td>
 <td>None</td>
 <td>Under investigation</td>
 </tr>
 <tr>
-<td>[Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/)</td>
+<td>[Artifacts](https://azure.microsoft.com/services/devops/artifacts/)</td>
 <td>None</td>
 <td>None</td>
 <td>Under investigation</td>

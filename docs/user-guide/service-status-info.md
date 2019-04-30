@@ -47,7 +47,7 @@ service broadly unavailable. These events are reflected as "Degraded" in the ser
 [Azure DevOps](https://azure.microsoft.com/services/devops/) is a product suite of service offerings.
 Refer to our [pricing and acquisition page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 for more information on how to access different services in the suite.
-The [geographic region](https://azure.microsoft.com/en-us/global-infrastructure/geographies/) is indicative of where the
+The [geographic region](https://azure.microsoft.com/global-infrastructure/geographies/) is indicative of where the
 user's account is hosted in the cloud and the data residency, sovereignty, compliance
 and resilience requirements are honored within the geographical boundaries.
 

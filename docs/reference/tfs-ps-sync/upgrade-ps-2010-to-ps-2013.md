@@ -31,7 +31,7 @@ You can upgrade to Microsoft Project Server 2013 from a Project Server 2010 depl
   
 -   If you have moved from Windows authentication to Claims Based Authentication, synchronize the Active Directory security groups with Project Server.  
   
-     For instructions, see [Manage security group synchronization with Active Directory in Project Server 2013](http://technet.microsoft.com/library/gg750243.aspx).  
+     For instructions, see [Manage security group synchronization with Active Directory in Project Server 2013](https://technet.microsoft.com/library/gg750243.aspx).  
   
 #### Set or verify database permissions  
   

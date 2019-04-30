@@ -342,7 +342,7 @@ To view the team's progress, open the Kanban board. To view or edit a work item,
 
 ## Related articles
 
-For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://azure.microsoft.com/en-us/services/devops/compare-features/). See also these quickstart guides: 
+For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://azure.microsoft.com/services/devops/compare-features/). See also these quickstart guides: 
 
 - [Add work items](../../boards/backlogs/add-work-items.md)  
 - [Create your backlog](../../boards/backlogs/create-your-backlog.md)

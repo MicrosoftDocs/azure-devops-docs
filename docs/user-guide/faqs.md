@@ -36,7 +36,7 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 
 ## How do I get started on-premises?
 
-- Download and install [Azure DevOps Server](https://azure.microsoft.com/en-us/services/devops/server/)
+- Download and install [Azure DevOps Server](https://azure.microsoft.com/services/devops/server/)
 
 ::: moniker-end
 
@@ -66,9 +66,9 @@ Go to one of the following pages to download a version of Visual Studio or clien
 
 See the following links for pricing:
 
-- [Azure DevOps Services pricing](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)
-- [Azure DevOps on-premises pricing](https://azure.microsoft.com/en-us/pricing/details/devops/on-premises/)
-- [Azure Pipelines only pricing](https://azure.microsoft.com/en-us/pricing/details/devops/azure-pipelines/)
+- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps on-premises pricing](https://azure.microsoft.com/pricing/details/devops/on-premises/)
+- [Azure Pipelines only pricing](https://azure.microsoft.com/pricing/details/devops/azure-pipelines/)
 
 ## How do I share code?
 

@@ -101,7 +101,7 @@ Microsoft-hosted agents do not offer:
 
 * The ability to log on.
 * The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
-* The ability to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx).
+* The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
 * Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 
 If Microsoft-hosted agents don't meet your needs, then you can [deploy your own self-hosted agents](agents.md#install).

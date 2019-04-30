@@ -28,7 +28,7 @@ For users, if you want to create or revoke your own PATs, see [Create or revoke 
 
 ## Revoke PATs
 
-1. To revoke the OAuth authorizations, including PATs, for your organization's users, see [Token revocations - Revoke authorizations](https://docs.microsoft.com/en-us/rest/api/azure/devops/tokenadministration/token%20revocations/revoke%20authorizations?view=azure-devops-rest-5.0).
+1. To revoke the OAuth authorizations, including PATs, for your organization's users, see [Token revocations - Revoke authorizations](https://docs.microsoft.com/rest/api/azure/devops/tokenadministration/token%20revocations/revoke%20authorizations?view=azure-devops-rest-5.0).
 2. Use this [PowerShell script](https://github.com/Microsoft/vsts-script-samples/tree/master/PowerShell/TokenAdmin) to automate calling the new REST API by passing a list of user principal names (UPNs). If you don't know the UPN of the user who created the PAT, use this script, however it must be based on a date range.
 
 > [!NOTE]
