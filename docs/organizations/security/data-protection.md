@@ -290,14 +290,14 @@ to learn more about conditional access policy (CAP).  Azure DevOps now enforces 
 In addition to this white paper, there are other resources available for
 your review and education. These include:
 
-- [Azure DevOps home page](https://azure.microsoft.com/en-us/services/devops/)
+- [Azure DevOps home page](https://azure.microsoft.com/services/devops/)
 - [Azure DevOps status](https://blogs.msdn.com/b/vsoservice/)
 - [Azure DevOps credential storage](credential-storage.md)
 - [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
-- [Azure DevOps support](https://azure.microsoft.com/en-us/support/devops/)
+- [Azure DevOps support](https://azure.microsoft.com/support/devops/)
 - [Developer Services Agreement](/azure/devops/user-guide/services)
-- [Azure trust center](http://azure.microsoft.com/support/trust-center/)
+- [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)
 - [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)
 - [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)

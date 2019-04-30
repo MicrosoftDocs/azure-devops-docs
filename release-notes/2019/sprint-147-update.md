@@ -61,7 +61,7 @@ In order to enhance the work item mentioning experience, we’ve added more info
 > [!div class="mx-imgBorder"]
 ![Badge](_img/147_11.png)
 
-This experience can also be used in Wiki pages as described [here](#show-work-item-status-in-wiki-pages), as well as in pull request comments. For more details, see the documentation on using #ID to link to work items [here](https://docs.microsoft.com/en-us/azure/devops/notifications/add-links-to-work-items?view=azure-devops).
+This experience can also be used in Wiki pages as described [here](#show-work-item-status-in-wiki-pages), as well as in pull request comments. For more details, see the documentation on using #ID to link to work items [here](https://docs.microsoft.com/azure/devops/notifications/add-links-to-work-items?view=azure-devops).
 
 ## Azure Repos
 
@@ -105,7 +105,7 @@ You can also abbreviate the `/AzurePipelines` moniker as `/azp`. For more detail
 
 ### Limit pull request validation builds to authorized team members
 
-It's a good practice to protect the quality of a branch by implementing [pull request validation builds](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azdevops#pull-request-validation). Until now, those validation builds were triggered automatically by any GitHub pull request, which could be risky since the build would start without your review.
+It's a good practice to protect the quality of a branch by implementing [pull request validation builds](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azdevops#pull-request-validation). Until now, those validation builds were triggered automatically by any GitHub pull request, which could be risky since the build would start without your review.
 
 With this update, you can require pull request validation builds to be authorized by your team. To do so, select the Triggers tab in your pipeline's settings. Then, under Pull request validation, enable **Only trigger builds for collaborators' pull request comments** and save the pipeline.
 
@@ -141,18 +141,18 @@ The two contribution points are:
 
 Until now, many Artifacts-related build tasks didn't provide full support for Azure Pipelines' proxy infrastructure, which led to challenges using the tasks from on-premises agents. With this update, we've added support for proxies to the following tasks:
 
-- [npm](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/npm?view=azdevops)
-- [NuGet](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/nuget?view=azdevops) - restore and push commands only
-- [.NET Core CLI](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azdevops) - restore and NuGet push commands only
-- [Universal Packages](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/universal-packages?view=azdevops&tabs=yaml)
-- [npm Authenticate](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/npm-authenticate?view=azdevops), [Pip Authenticate](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/pip-authenticate?view=azdevops), [Twine Upload Authenticate](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/package/twine-authenticate?view=azdevops)
+- [npm](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/npm?view=azdevops)
+- [NuGet](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget?view=azdevops) - restore and push commands only
+- [.NET Core CLI](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azdevops) - restore and NuGet push commands only
+- [Universal Packages](https://docs.microsoft.com/azure/devops/pipelines/artifacts/universal-packages?view=azdevops&tabs=yaml)
+- [npm Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/npm-authenticate?view=azdevops), [Pip Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/pip-authenticate?view=azdevops), [Twine Upload Authenticate](https://docs.microsoft.com/azure/devops/pipelines/tasks/package/twine-authenticate?view=azdevops)
     > [!NOTE]
     > These tasks do not configure the proxy for the underlying tool (npm, pip, twine). They support proxies during the acquisition of auth tokens, but it is still necessary to configure any subsequent tasks/scripts/tools to also use the proxy.
-- [.NET Core Tool Installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azdevops), [NuGet Tool Installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/nuget?view=azdevops), [Node.js Tool Installer](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/node-js?view=azdevops)
+- [.NET Core Tool Installer](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azdevops), [NuGet Tool Installer](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/nuget?view=azdevops), [Node.js Tool Installer](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js?view=azdevops)
 
 ### Delegate who can manage feeds
 
-In Azure Artifacts, [Project Collection Administrators](https://docs.microsoft.com/en-us/azure/devops/organizations/security/set-project-collection-level-permissions?view=azdevops&tabs=new-nav) (PCAs) have always been able to administer all feeds in an Azure DevOps organization. With this update, PCAs can also give this ability to other users and groups, thus delegating the ability to manage any feed.
+In Azure Artifacts, [Project Collection Administrators](https://docs.microsoft.com/azure/devops/organizations/security/set-project-collection-level-permissions?view=azdevops&tabs=new-nav) (PCAs) have always been able to administer all feeds in an Azure DevOps organization. With this update, PCAs can also give this ability to other users and groups, thus delegating the ability to manage any feed.
 
 ## Reporting
 
@@ -199,7 +199,7 @@ This feature was prioritized based on [this](https://visualstudio.uservoice.com/
 
 ### All users now on New Navigation
 
-With this sprint all users have been moved to the New Navigation. We’ve removed the preview feature toggle that allowed users to return to the previous navigation model. To learn more about navigating in the web portal, see [Web portal navigation in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/project/navigation/index?view=azure-devops&tabs=new-nav). 
+With this sprint all users have been moved to the New Navigation. We’ve removed the preview feature toggle that allowed users to return to the previous navigation model. To learn more about navigating in the web portal, see [Web portal navigation in Azure DevOps](https://docs.microsoft.com/azure/devops/project/navigation/index?view=azure-devops&tabs=new-nav). 
 
 ## Next steps
 

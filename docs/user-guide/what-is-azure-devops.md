@@ -51,9 +51,9 @@ Sign up for free by creating an organization. Then, either upload your code to s
 
 You can use all the services included with Azure DevOps, or choose just what you need to complement your existing workflows. 
 
-- <strong>[Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/)</strong> - plan, track, and discuss work across your teams
-- <strong>[Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)</strong> - continuously build, test, and deploy to any platform and cloud
-- <strong>[Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/)</strong> - get unlimited, cloud-hosted private Git repos for your project
+- <strong>[Azure Boards](https://azure.microsoft.com/services/devops/boards/)</strong> - plan, track, and discuss work across your teams
+- <strong>[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)</strong> - continuously build, test, and deploy to any platform and cloud
+- <strong>[Azure Repos](https://azure.microsoft.com/services/devops/repos/)</strong> - get unlimited, cloud-hosted private Git repos for your project
 
 ## Choose Azure DevOps Server
 

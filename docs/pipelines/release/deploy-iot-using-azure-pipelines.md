@@ -30,11 +30,11 @@ In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) so
 
 1. [Docker CE](https://docs.docker.com/install/).
 
-1. Create an [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal).
+1. Create an [Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).
 
 ## Create an IoT Edge project
 
-The following steps creates an [IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module#create-an-iot-edge-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
+The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-an-iot-edge-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
 
 1. In the VS Code, select **View > Command Palette** to open the VS Code command palette.
 
@@ -101,7 +101,7 @@ If your workspace isn't under Git source control, you can easily create a Git re
 
 ## Create a build pipeline
 
-You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
+You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
 1. Navigate to your team project on Azure DevOps.
 
