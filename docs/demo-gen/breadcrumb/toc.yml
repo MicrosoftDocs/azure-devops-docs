@@ -3,7 +3,6 @@
   topicHref: /azure/devops/index
   items:
   - name: Developer Resources
-    tocHref: /azure/devops/
     topicHref: /azure/devops/dev-resources/index
     items:
     - name: Demo Generator
