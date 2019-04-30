@@ -36,7 +36,7 @@ monikerRange: 'tfs-2013'
 <li>[Rebase a topic branch in Visual Studio](rebase.md)</li>
 <li>[Work from the Git command prompt](command-prompt.md)</li>
 <li>[Rename a Git repository](repo-rename.md)</li>
-<li>[Learn about Git permissions](http://msdn.microsoft.com/library/ms252587.aspx#git)</li>
+<li>[Learn about Git permissions](https://msdn.microsoft.com/library/ms252587.aspx#git)</li>
 </ul>
 </td>
 </tr>

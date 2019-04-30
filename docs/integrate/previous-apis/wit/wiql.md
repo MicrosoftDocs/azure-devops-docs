@@ -45,7 +45,7 @@ Content-type: application/json
 | api-version   | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | timePrecision | boolean | false   | True if time precision is allowed in the date time comparisons.
 | Body
-| query         | string  |         | The [query string](http://msdn.microsoft.com/library/bb130306.aspx) to run.
+| query         | string  |         | The [query string](https://msdn.microsoft.com/library/bb130306.aspx) to run.
 
 #### Sample request
 

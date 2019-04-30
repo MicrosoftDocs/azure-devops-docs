@@ -186,7 +186,7 @@ When a deployment to a stage fails, **Azure Pipelines** can now automatically re
 
 ### PyPI public preview
 
-Azure Artifacts can now host Python packages. This includes packages that you produce and upstream packages saved from the public PyPI. For more details, see the [announcement blog post](https://azure.microsoft.com/en-us/blog/python-package-pypi-support-for-azure-artifacts-now-in-preview/) and the [documentation](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/python-packages?view=azure-devops&tabs=new-nav).
+Azure Artifacts can now host Python packages. This includes packages that you produce and upstream packages saved from the public PyPI. For more details, see the [announcement blog post](https://azure.microsoft.com/blog/python-package-pypi-support-for-azure-artifacts-now-in-preview/) and the [documentation](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/python-packages?view=azure-devops&tabs=new-nav).
 
 Now, you can host all of your NuGet, npm, Maven, Python, and Universal packages in the same feed.
 

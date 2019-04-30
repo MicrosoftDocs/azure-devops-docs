@@ -52,7 +52,7 @@ This action sends a generic, template notification to the specified Azure Notifi
    * Required: **Yes**
  * **tagsExpression**
    * Tags
-   * The tags expression (for targeting specific sets of devices). [Learn more](http://msdn.microsoft.com/library/windowsazure/dn530749.aspx).
+   * The tags expression (for targeting specific sets of devices). [Learn more](https://msdn.microsoft.com/library/windowsazure/dn530749.aspx).
    * Data type: **string**
    * Required: **No**
 
