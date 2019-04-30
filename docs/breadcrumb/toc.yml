@@ -37,7 +37,7 @@
     items:
     - name: Discover & Manage Extensions
       tocHref: /azure/devops/
-      topicHref: /azure/devops/marketplace-extensibility/index
+      topicHref: /azure/devops/marketplace/index
     - name: Develop extensions
       tocHref: /azure/devops/extend/
       topicHref: /azure/devops/extend/index
@@ -47,14 +47,6 @@
     - name: Service Hooks
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/index
-    - name: Visual Studio extensions
-      tocHref: /azure/devops/integrate/ide/extensions/
-      topicHref: /azure/devops/integrate/ide/extensions/overview
-
-  - name: Azure DevOps demo generator
-    tocHref: /azure/devops/demo-gen/
-    topicHref: /azure/devops/demo-gen/index  
-
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
@@ -171,27 +163,20 @@
     - name: All settings
       tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/index
-- name: Azure DevOps Services
+  - name: Developer Resources
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/dev-resources/index
+    items:
+    - name: Azure DevOps demo generator
+      tocHref: /azure/devops/demo-gen/
+      topicHref: /azure/devops/demo-gen/index  
+- name: Azure DevOps Server
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
-  - name: Azure Boards
-    tocHref: /azure/devops/boards/
-    topicHref: /azure/devops/boards/index
-    items:
-    - name: Start using Azure Boards (Basic process)
-      topicHref: /azure/devops/boards/get-started/index
-    - name: Start using Azure Boards (Agile process)
-      topicHref: /azure/devops/boards/get-started/index-agile
-    - name: GitHub and Azure Boards
-      topicHref: /azure/devops/boards/github/index
-- name: Azure DevOps Server
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/server/index
-  items:
-  - name: Administration
+  - name: Azure DevOps Server Administration
     tocHref: /azure/devops/server/
-    topicHref: /azure/devops/server/server/index
+    topicHref: /azure/devops/server/admin/admin-quick-ref
   - name: Project Server integration (Deprecated)
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index

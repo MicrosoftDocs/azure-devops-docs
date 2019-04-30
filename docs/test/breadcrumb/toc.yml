@@ -3,9 +3,9 @@
   topicHref: /azure/devops/index
   items: 
   - name: Azure Test Plans
-    tocHref: /azure/devops/test/
-    topicHref: /azure/devops/test/index-tp
+    tocHref: /azure/devops/test-plans/
+    topicHref: /azure/devops/test-plans/index
     items:
-    - name: Exploratory and manual testing
+    - name: Manual Testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/test/index

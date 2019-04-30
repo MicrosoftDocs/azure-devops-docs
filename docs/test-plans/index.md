@@ -17,32 +17,9 @@ featureFlags:
 
 <p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Test Plans</p>
 
+Improve your overall code quality by using manual and exploratory testing services for your apps.
+
 <ul class="panelContent cardsF">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Start using Azure Test Plans</h3>
-                        <p>
-                            <a href="/azure/devops/test/overview">Testing scenarios and capabilities</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/repos/get-started/sign-up-invite-teammates">Sign up and invite some teammates</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/repos/get-started/code-with-git">Code with Git</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">

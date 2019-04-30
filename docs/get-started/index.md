@@ -36,7 +36,7 @@ Sign up for Azure DevOps Services, start coding, or tracking work in Azure DevOp
                     <div class="cardText">
                         <h3>Start using Azure DevOps</h3>
                         <p>
-                            <a href="azure/devops/user-guide/what-is-azure-devops">What is Azure DevOps?</a>
+                            <a href="/azure/devops/user-guide/what-is-azure-devops">What is Azure DevOps?</a>
                         </p>
                         <p>
                             <a href="/azure/devops/user-guide/services">Services overview</a>
