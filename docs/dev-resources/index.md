@@ -33,7 +33,7 @@ Use command line tools, REST APIS, client SDKs and more to interface wtih Azure 
                     <div class="cardText">
                         <h3>Command Line Interface</h3>
                         <p>
-                            <a href="/cli/azure/ext/azure-devops/index">azure-devops commands</a>
+                            <a href="/cli/azure/ext/azure-devops/index">Azure DevOps commands</a>
                         </p>
                         <p>
                             <a href="/cli/azure/install-azure-cli">Install the Azure CLI</a>
@@ -93,90 +93,6 @@ Use command line tools, REST APIS, client SDKs and more to interface wtih Azure 
                         </p>
                         <p>
                             <a href="/azure/devops/demo-gen/use-demo-generator-v2">Get started</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_img/index/i_continuous-testing.svg" alt="Continuous testing icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Continuous Testing</h3>
-                        <p>
-                            <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Run tests, .NET Core</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/languages/docker#integrate-build-and-test-tasks">Integrate build and test tasks, Docker</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/languages/go#test">Run tests, Go</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/languages/python#run-tests">Run tests, Python</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/test/test-analytics">Analyze test results</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_img/index/i_unit-testing.svg" alt="Unit and functional testing icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Unit &amp; Functional Testing (Visual Studio)</h3>
-                        <p>
-                            <a href="/visualstudio/test/unit-test-your-code">Unit test your code</a>
-                        </p>
-                        <p>
-                            <a href="/visualstudio/test/create-a-unit-test-project">Create a unit test project</a>
-                        </p>
-                        <p>
-                            <a href="/visualstudio/test/run-unit-tests-with-test-explorer">Run unit tests with Test Explorer</a>
-                        </p>
-                        <p>
-                            <a href="/visualstudio/test/live-unit-testing-start">Get started with Live Unit Testing</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="Settings icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Test Settings</h3>
-                        <p>
-                            <a href="/azure/devops/test/how-long-to-keep-test-results">Test retention policies</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/security/set-project-collection-level-permissions">Configure permissions</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path">Set area path test permissions</a>
                         </p>
                     </div>
                 </div>

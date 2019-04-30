@@ -251,6 +251,34 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="Alert icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Notifications</h3>
+                        <p>
+                            <a href="/azure/devops/notifications/about-notifications">About notifications</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/notifications/concepts-events-and-notifications">Events, subscriptions, and notifications</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/notifications/howto-manage-personal-notifications">Manage personal notifications</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/notifications/howto-manage-team-notifications">Manage notifications for a team</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
                             <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
                         </div>
                     </div>
@@ -302,34 +330,6 @@ Configure resources and manage settings for an organization, project, team, or u
                         </p>
                         <p>
                             <a href="/azure/devops/organizations/settings/set-services">Change service visibility</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="Alert icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Notifications</h3>
-                        <p>
-                            <a href="/azure/devops/notifications/about-notifications">About notifications</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/notifications/concepts-events-and-notifications">Events, subscriptions, and notifications</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/notifications/howto-manage-personal-notifications">Manage personal notifications</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/notifications/howto-manage-team-notifications">Manage notifications for a team</a>
                         </p>
                     </div>
                 </div>
