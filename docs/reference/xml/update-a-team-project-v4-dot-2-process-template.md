@@ -72,7 +72,7 @@ For more information, see [Add administrators, set permissions at the project-le
  To minimize the amount of customizations you need to make, and to comply with future updates to the Agile process template, you should rename the Scenario work item type to User Story.  
   
 > [!NOTE]   
->  Of course, renaming the Scenario work item type will require you to update existing reports and queries that reference the Scenario work item type. However, because of the schema changes made to the data warehouse with the upgrade to TFS 2010, the pre-existing or pre-upgrade reports need to be rewritten to work with the new schema. See [Locating reports after the upgrade to TFS 2010](http://msdn.microsoft.com/library/ff452588%28v=vs.100%29.aspx).  
+>  Of course, renaming the Scenario work item type will require you to update existing reports and queries that reference the Scenario work item type. However, because of the schema changes made to the data warehouse with the upgrade to TFS 2010, the pre-existing or pre-upgrade reports need to be rewritten to work with the new schema. See [Locating reports after the upgrade to TFS 2010](https://msdn.microsoft.com/library/ff452588%28v=vs.100%29.aspx).  
   
  Perform this task for each project that you want to update.  
   
@@ -271,8 +271,8 @@ After you have completed the upgrade tasks that are described earlier in this to
   
 -   [Team Foundation Server 2010 Key Concepts](http://blogs.msdn.com/b/bharry/archive/2009/04/19/team-foundation-server-2010-key-concepts.aspx) (blog post)   
 -   [Update a customized process template to access new features](../update-customized-process-template.md)    
--    [Locating reports after the upgrade to TFS 2010](http://msdn.microsoft.com/library/ff452588%28v=vs.100%29.aspx)    
--   [Changes and Additions to the Schema for the Analysis Services Cube](http://msdn.microsoft.com/library/ff472574%28v=vs.100%29.aspx)     
+-    [Locating reports after the upgrade to TFS 2010](https://msdn.microsoft.com/library/ff452588%28v=vs.100%29.aspx)    
+-   [Changes and Additions to the Schema for the Analysis Services Cube](https://msdn.microsoft.com/library/ff472574%28v=vs.100%29.aspx)     
 -   [Changes made to process templates](../../boards/work-items/guidance/changes-to-process-templates.md)   
   
 ## Related articles
