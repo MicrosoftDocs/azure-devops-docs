@@ -17,7 +17,7 @@ featureFlags:
 
 <p><a href="/azure/devops/index">Azure DevOps</a>  /  Developer Resources</p>
 
-Use command line tools, REST APIS, client SDKs and more to interface wtih Azure DevOps programmatically. 
+Use command line tools, REST APIS, client SDKs and more to interface with Azure DevOps programmatically. 
 
 
 <ul class="panelContent cardsF">
