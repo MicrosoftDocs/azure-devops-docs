@@ -133,6 +133,7 @@ Although most of the time the import is successful, the following conditions can
 * [Can I import from previous versions of Team Foundation Server?](#can-i-import-from-previous-versions-of-team-foundation-server)
 * [Can I use MSA based credentials?](#can-i-use-msa-based-credentials)
 * [Can I import from TFVC?](#can-i-import-from-tfvc)
+* [What if my source repository contains Git LFS objects?](#what-if-my-source-repository-contains-git-lfs-objects)
 
 ### What if my source repository is behind two-factor authentication?
 
@@ -168,6 +169,21 @@ git clone https://<<username>>:<<password>>@<<remaining clone Url>>
 ### Can I import from TFVC?
 
 You can migrate code from an existing TFVC repository to a new Git repository within the same account. While migrating to Git has many benefits, it is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. For more information, see [Import from TFVC to Git](import-from-tfvc.md).
+
+### What if my source repository contains Git LFS objects?
+
+Git import will not import Git LFS objects.
+
+LFS objects can be moved using the following steps:
+-	Import the repository using import repository feature into Azure DevOps.
+	This will copy over all the Git objects from source to Azure DevOps (this will also import the LFS pointers which are Git objects but not the LFS files)
+
+To move over the LFS files (you will need both Git.exe and LFS client in the same box and access to both source repository and destination repository)
+-	Clone the imported repository from Azure DevOps to local system, clone will work but it will fail while performing checkout of LFS files
+-	Add the source repository as remote (say ‘source’)
+-	Perform “git lfs fetch source –all”  (this will bring over all LFS files from source to your local repository)
+-	Assuming the destination VSTS repository is your ‘target’ remote 
+-	Perform “git lfs push target –all”
 
 ::: moniker-end
 
