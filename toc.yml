@@ -171,9 +171,9 @@
       href: /docs/setup-admin/team-services/try-additional-features-vs
     - name: Get more features for Azure DevOps
       href: /docs/marketplace/get-vsts-extensions
-    - name: Pricing: Azure DevOps
+    - name: "Pricing: Azure DevOps"
       href: https://visualstudio.microsoft.com/team-services/pricing/
-    - name: Pricing: TFS
+    - name: "Pricing: TFS"
       href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Collaborate with Microsoft Teams
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams
