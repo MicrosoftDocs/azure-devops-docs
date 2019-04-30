@@ -130,7 +130,7 @@
   - name: TypeScript APIs
     href: /azure/devops/extend/reference/client/core-sdk
   - name: Azure DevOps Demo Generator
-    href: /azure/devops/demo-gen/index.md?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
+    href: /azure/devops/demo-gen/index?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
 - name: Related resources
   items:
   - name: DevOps Resource Center

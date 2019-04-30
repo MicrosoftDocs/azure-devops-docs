@@ -75,9 +75,8 @@
       topicHref: /azure/devops/repos/tfvc/index
   - name: Azure Artifacts
     tocHref: /azure/devops/artifacts/
-    topicHref: /azure/devops/artifacts/index-a
+    topicHref: /azure/devops/artifacts/index
   - name: Azure Test Plans
-    tocHref: /azure/devops/test/
     topicHref: /azure/devops/test-plans/index
     items:
     - name: Manual testing
@@ -140,7 +139,6 @@
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/index
   - name: Manage & Configure Resources
-    tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
     items:
     - name: Teams
@@ -171,7 +169,6 @@
       tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/index
   - name: Developer Resources
-    tocHref: /azure/devops/
     topicHref: /azure/devops/dev-resources/index
     items:
     - name: Azure DevOps demo generator
