@@ -2,8 +2,16 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
+  - name: Azure DevOps Server Administration
+    tocHref: /azure/devops/server/
+    topicHref: /azure/devops/server/admin/admin-quick-ref
+  - name: Project Server integration (Deprecated)
+    tocHref: /azure/devops/reference/tfs-ps-sync/
+    topicHref: /azure/devops/reference/tfs-ps-sync/index
+  - name: SharePoint integration (Deprecated)
+    tocHref: /azure/devops/report/sharepoint-dashboards/
+    topicHref: /azure/devops/report/sharepoint-dashboards/index
   - name: Get Started
-    tocHref: /azure/devops/
     topicHref: /azure/devops/get-started/index
     items:
     - name: Start using Azure DevOps
@@ -18,35 +26,6 @@
     - name: Migrate & Import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/index
-  - name: Collaborate
-    tocHref: /azure/devops/project/
-    topicHref: /azure/devops/project/index
-    items:
-    - name: Wikis
-      tocHref: /azure/devops/project/wiki/
-      topicHref: /azure/devops/project/wiki/index
-    - name: Public Projects
-      tocHref: /azure/devops/organizations/public/
-      topicHref: /azure/devops/organizations/public/index
-    - name: Feedback
-      tocHref: /azure/devops/project/feedback/
-      topicHref: /azure/devops/project/feedback/index
-  - name: Marketplace & Extensibility
-    tocHref: /azure/devops/
-    topicHref: /azure/devops/marketplace-extensibility/index
-    items:
-    - name: Discover & Manage Extensions
-      tocHref: /azure/devops/
-      topicHref: /azure/devops/marketplace/index
-    - name: Develop extensions
-      tocHref: /azure/devops/extend/
-      topicHref: /azure/devops/extend/index
-    - name: Integrate extensions
-      tocHref: /azure/devops/integrate/
-      topicHref: /azure/devops/integrate/index
-    - name: Service Hooks
-      tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/service-hooks/index
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
@@ -132,6 +111,34 @@
     - name: SharePoint Dashboards (Deprecated)
       tocHref: /azure/devops/report/sharepoint-dashboards/
       topicHref: /azure/devops/report/sharepoint-dashboards/index
+  - name: Collaborate
+    tocHref: /azure/devops/project/
+    topicHref: /azure/devops/project/index
+    items:
+    - name: Wikis
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/wiki/index
+    - name: Public Projects
+      tocHref: /azure/devops/organizations/public/
+      topicHref: /azure/devops/organizations/public/index
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index
+  - name: Marketplace & Extensibility
+    topicHref: /azure/devops/marketplace-extensibility/index
+    items:
+    - name: Discover & Manage Extensions
+      tocHref: /azure/devops/marketplace/
+      topicHref: /azure/devops/marketplace/index
+    - name: Develop extensions
+      tocHref: /azure/devops/extend/
+      topicHref: /azure/devops/extend/index
+    - name: Integrate extensions
+      tocHref: /azure/devops/integrate/
+      topicHref: /azure/devops/integrate/index
+    - name: Service Hooks
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/service-hooks/index
   - name: Manage & Configure Resources
     tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
@@ -170,16 +177,4 @@
     - name: Azure DevOps demo generator
       tocHref: /azure/devops/demo-gen/
       topicHref: /azure/devops/demo-gen/index  
-- name: Azure DevOps Server
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items:
-  - name: Azure DevOps Server Administration
-    tocHref: /azure/devops/server/
-    topicHref: /azure/devops/server/admin/admin-quick-ref
-  - name: Project Server integration (Deprecated)
-    tocHref: /azure/devops/reference/tfs-ps-sync/
-    topicHref: /azure/devops/reference/tfs-ps-sync/index
-  - name: SharePoint integration (Deprecated)
-    tocHref: /azure/devops/report/sharepoint-dashboards/
-    topicHref: /azure/devops/report/sharepoint-dashboards/index
+
