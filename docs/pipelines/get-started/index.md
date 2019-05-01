@@ -16,11 +16,11 @@ monikerRange: 'azure-devops'
 ms.date: 05/06/2019
 ---
 
+
 # Azure Pipelines
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
 
- 
 ## Videos 
         <div style="float:left;margin-right:40px">
             <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
@@ -43,17 +43,32 @@ ms.date: 05/06/2019
 
 ## Concepts 
       
-
+- [Build and release agents](../agents/agents.md)
+- [Agent pools](../agents/pools-queues.md)
+- [Microsoft-hosted agents](../agents/hosted.md)
 
 
 ## How-to Guides
 
+- [Java to web App](../languages/java-webapp.md)
+- [Java to Azure Function](../languages/java-function.md)
+- [Cross-platform scripts](../scripts/cross-platform-scripting.md)
+- [Run a PowerShell script](../scripts/powershell.md)
+- [Run Git commands](../scripts/git-commands.md)
+
+## Troubleshooting
+
+- [Troubleshoot build and release](../troubleshooting.md)
+- [Debug deployment issues](../release/variables.md#debug-mode)
+- [Troubleshoot Azure connections](../release/azure-rm-endpoint.md)
 
 ## Reference 
 
+- [YAML schema](../yaml-schema.md)
+- [Tasks](../tasks/index.md)
 
 
 ## Resources 
 
-- [Azure Repos](../repos/index.md)
-- [Azure Pipelines](../pipelines/index.md)
+- [Azure Repos](../../repos/index.md)
+- [Azure Artifacts](../../artifacts/index.md)
