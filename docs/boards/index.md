@@ -18,7 +18,7 @@ featureFlags:
 
 
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Boards</p>
+<a href="/azure/devops/index">Azure DevOps</a>  /  Azure Boards
 
 # Azure Boards Documentation
 
