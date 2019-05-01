@@ -26,15 +26,14 @@ Azure Pipelines is a fully featured continuous integration (CI) and continuous d
 Use Azure Pipelines to configure and automate your build and delivery tools and environments in YAML (as configuration as code). Or you can use the classic editor in the Azure DevOps web portal at [https://dev.azure.com](https://dev.azure.com). Azure Pipelines documentation shows you both approaches.
 
 ## Videos 
-        <div style="float:left;margin-right:40px">
-            <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
-            <h3>Build and deploy your code with Azure Pipelines</h3>
-        </div>
-        <div style="float:left">
-            <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
-            <h3>Continuously build GitHub projects with Azure Pipelines</h3>
-        </div>
-        <div style="clear:left"></div>
+
+#### Build and deploy your code with Azure Pipelines
+
+> [! VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player] 
+
+#### Continuously build GitHub projects with Azure Pipelines
+
+> [! VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player]
 
 
 ## 5-Minute Quickstarts  

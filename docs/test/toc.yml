@@ -154,7 +154,5 @@
       href: https://social.msdn.microsoft.com/Search?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
   - name: Plug-ins for Visual Studio
     href: http://go.microsoft.com/fwlink/?LinkID=246630
-  - name: Continuous testing
-    href: ../pipelines/index.md
   - name: Unit testing
     href: /visualstudio/test/unit-test-your-code
