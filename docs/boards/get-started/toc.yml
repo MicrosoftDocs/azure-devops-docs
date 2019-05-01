@@ -10,30 +10,30 @@
   href: customize-boards.md 
 - name: Manage your project
   href: manage-boards.md
-  - name: Reference
-    items:
-    - name: Basic fields reference
-      href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
-    - name: Key concepts
-      href: key-concepts.md
-    - name: Best tool for the job
-      href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
-    - name: Default permissions & access (Security)
-      href: permissions-access-boards.md
-    - name: "Why use Azure Boards?"
-      href: why-use-azure-boards.md
-    - name: Connect a project to GitHub  
-      href: ../github/connect-to-github.md
-  - name: Resources
-    items:
-    - name: Web portal navigation
-      href: ../../project/navigation/index.md
-    - name: Azure Boards & GitHub
-      href: ../github/index.md
-    - name: Work items
-      href: ../work-items/index.md
-    - name: Sprints (Scrum)
-      href: ../sprints/index.md
+- name: Reference
+  items:
+  - name: Basic fields reference
+    href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
+  - name: Key concepts
+    href: key-concepts.md
+  - name: Best tool for the job
+    href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
+  - name: Default permissions & access (Security)
+    href: permissions-access-boards.md
+  - name: "Why use Azure Boards?"
+    href: why-use-azure-boards.md
+  - name: Connect a project to GitHub  
+    href: ../github/install-github-app.md
+- name: Resources
+  items:
+  - name: Web portal navigation
+    href: ../../project/navigation/index.md
+  - name: Azure Boards & GitHub
+    href: ../github/index.md
+  - name: Work items
+    href: ../work-items/index.md
+  - name: Sprints (Scrum)
+    href: ../sprints/index.md
 
 
 

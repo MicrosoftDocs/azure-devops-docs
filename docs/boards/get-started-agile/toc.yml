@@ -24,7 +24,7 @@
     - name: "Why use Azure Boards?"
       href: ../get-started/why-use-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
     - name: Connect a project to GitHub  
-      href: ../github/connect-to-github.md 
+      href: ../github/install-github-app.md 
   - name: Resources
     items:
     - name: Web portal navigation

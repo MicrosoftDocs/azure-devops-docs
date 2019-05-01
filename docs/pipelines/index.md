@@ -19,6 +19,9 @@ monikerRange: '>= tfs-2013'
 
 
 
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Pipelines</p>
+
+
 ::: moniker range=">= azure-devops-2019"
 
 # Azure Pipelines Documentation
@@ -228,7 +231,7 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ## Build your app
 
-        <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+<ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="languages/dotnet-core.md">
                     <div class="cardSize">
@@ -517,12 +520,12 @@ Tutorials, references, and other documentation show you how to configure and man
                     </div>
                 </a>
             </li>
-        </ul>
+</ul>
 
 ## Deploy your app
 
-        <a href="#index3"></a>
-        <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+<a href="#index3"></a>
+<ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="apps/cd/deploy-aks.md">
                     <div class="cardSize">
@@ -721,9 +724,7 @@ Tutorials, references, and other documentation show you how to configure and man
                     </div>
                 </a>
             </li>
-        </ul>
-
-
+</ul>
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
