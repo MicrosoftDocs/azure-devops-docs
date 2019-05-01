@@ -20,7 +20,7 @@ featureFlags:
 
 <p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Boards</p>
 
-# Azure Boards 
+# Azure Boards Documentation
 
 Plan, track, and discuss work across your teams. 
 

@@ -18,7 +18,8 @@ featureFlags:
 
 <p><a href="/azure/devops/index">Azure DevOps</a>  /  Collaborate</p>
 
-# Collaborate 
+
+# Azure DevOps Collaborate Documentation 
 
 Share information, create public projects, and collaborate with team members and stakeholders in Azure DevOps.
 

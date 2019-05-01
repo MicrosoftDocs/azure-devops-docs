@@ -3,7 +3,7 @@
   topicHref: /azure/devops/index
   items: 
   - name: Manage & Configure Resources
-    tocHref: /azure/devops/organizations/
+    tocHref: /azure/devops/
     topicHref: /azure/devops/organizations/index
     items:
     - name: Process Customization

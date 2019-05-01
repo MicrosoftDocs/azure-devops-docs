@@ -88,9 +88,6 @@
     - name: Continuous testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/pipelines/languages/dotnet-core.md#run-your-tests
-    - name: Unit & Functional Testing (Visual Studio)
-      tocHref: /visualstudio/test/improve-code-quality/
-      topicHref: /visualstudio/test/unit-test-your-code
   - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
@@ -139,6 +136,7 @@
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/index
   - name: Manage & Configure Resources
+    tocHref: /azure/devops/
     topicHref: /azure/devops/organizations/index
     items:
     - name: Teams

@@ -31,7 +31,7 @@ featureFlags:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                           <img src="../_img/index/DevOpsIconRepos40.svg" />
+                           <img src="../_img/index/DevOpsIconArtifacts40.svg" />
                         </div>
                     </div>
                     <div class="cardText">
