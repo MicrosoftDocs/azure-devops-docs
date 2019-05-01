@@ -225,16 +225,9 @@ Tutorials, references, and other documentation show you how to configure and man
     </li>
 </ul>
 
-<div id="main" class="v2">
-    <div class="container">
-        <ul class="pivots">
-            <li>
-                <a href="#index"></a>
-                <ul id="index">
-                    <li class="panelItem" data-index="0">
-                        <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
-        <a href="#index2"></a>
-        <h2 style="float: left; display: flex;">Build your app</h2>
+
+## Build your app
+
         <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="languages/dotnet-core.md">
@@ -525,8 +518,10 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
         </ul>
+
+## Deploy your app
+
         <a href="#index3"></a>
-        <h2 style="float: left; display: flex;">Deploy your app</h2>
         <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="apps/cd/deploy-aks.md">
@@ -727,84 +722,7 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
         </ul>
-        <a href="#index4"></a>
-        <h2 style="float: left; display: flex;">Test your app</h2>
-        <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
-            <li>
-                <a href="test/review-continuous-test-results-after-build.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_code-quality.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Test reports icon" src="../_img/index/i_code-quality.svg" data-linktype="external" data-hoverimage="../_img/index/i_code-quality.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Test Reports</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="test/test-analytics.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_analytics.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Test Analytics icon" src="../_img/index/i_analytics.svg" data-linktype="external" data-hoverimage="../_img/index/i_analytics.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Test Analytics</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="test/parallel-testing-any-test-runner.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_load-testing.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Parallel testing icon" src="../_img/index/i_load-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_load-testing.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Parallel testing for efficient pipelines</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="test/continuous-test-selenium.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_unit-testing.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Test icon" src="../_img/index/i_unit-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_unit-testing.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Run Selenium tests</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
+
 
 ::: moniker-end
 
@@ -1305,133 +1223,6 @@ Tutorials, references, and other documentation show you how to configure and man
                         </div>
                     </div>
                 </a>
-            </li>
-        </ul>
-        <a href="#index4"></a>
-        <h2 style="float: left; display: flex;">Test your app</h2>
-        <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
-            <li>
-                <a href="test/review-continuous-test-results-after-build.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_code-quality.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Test reports icon" src="../_img/index/i_code-quality.svg" data-linktype="external" data-hoverimage="../_img/index/i_code-quality.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Test Reports</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="test/test-analytics.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_analytics.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Test Analytics icon" src="../_img/index/i_analytics.svg" data-linktype="external" data-hoverimage="../_img/index/i_analytics.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Test Analytics</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="test/parallel-testing-any-test-runner.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_load-testing.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Parallel testing icon" src="../_img/index/i_load-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_load-testing.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Parallel testing for efficient pipelines</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="test/continuous-test-selenium.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card ready x-hidden-focus">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage" style='background-position: -50px 0px; background-image: url("../_img/index/i_unit-testing.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="Test icon" src="../_img/index/i_unit-testing.svg" data-linktype="external" data-hoverimage="../_img/index/i_unit-testing.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Run Selenium tests</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <h2> More information</h2>
-        <ul class="panelContent cardsF cols cols3" style="float: left; display: flex;">
-            <li>
-                <div class="cardSize">
-                    <div class="cardPadding">
-                        <div class="card">
-                            <div class="cardText">
-                                <h3>Step-by-step tutorials</h3>
-                                <p>
-                                    <a href="repos/github.md">Build GitHub repositories</a><br />
-                                    <a href="build/ci-build-git.md">Build multiple branches</a><br />
-                                    <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cardSize">
-                    <div class="cardPadding">
-                        <div class="card">
-                            <div class="cardText">
-                                <h3>Concepts</h3>
-                                <p>
-                                    <a href="agents/agents.md">Build and release agents</a><br />
-                                    <a href="licensing/concurrent-jobs.md">Parallel jobs</a><br />
-                                    <a href="release/index.md">Release pipelines</a><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cardSize">
-                    <div class="cardPadding">
-                        <div class="card">
-                            <div class="cardText">
-                                <h3>Reference</h3>
-                                <p>
-                                    <a href="yaml-schema.md">YAML schema</a><br />
-                                    <a href="process/tasks.md">Build and release tasks</a><br />
-                                    <a href="policies/permissions.md">Permissions &amp; security roles</a><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </li>
         </ul>
     </div>
