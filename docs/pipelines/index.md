@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Pipelines</p>
+<a href="/azure/devops/index">Azure DevOps</a>  /  Azure Pipelines
 
 
 ::: moniker range=">= azure-devops-2019"

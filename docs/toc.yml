@@ -11,7 +11,7 @@
   - name: Azure DevOps Services
     href: /azure/devops/user-guide/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
   - name: Web Portal Navigation
-    href: /azure/devops/project/navigation/index?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
+    href: /azure/devops/project/navigation/index?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   - name: Search
     href: /azure/devops/project/search/index?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json 
   - name: Migrate & Import
@@ -38,7 +38,7 @@
     href: /azure/devops/boards/sprints/index?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json 
   - name: Queries
     href: /azure/devops/boards/queries/index?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
-  - name: Plans
+  - name: Plans & Agile at Scale
     href: /azure/devops/boards/plans/index?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
 - name: Azure Repos
   items:
@@ -69,9 +69,9 @@
   - name: Administration
     href: /azure/devops/server/admin/admin-quick-ref
   - name: SharePoint integration (Deprecated)
-    href: report/sharepoint-dashboards/index.md 
+    href: report/sharepoint-dashboards/index.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
   - name: Project Server integration (Deprecated)
-    href: reference/tfs-ps-sync/index.md
+    href: reference/tfs-ps-sync/index.md?toc=/azure/devops/reference/tfs-ps-sync/toc.json&bc=/azure/devops/reference/tfs-ps-sync/breadcrumb/toc.json 
 - name: Reporting
   items:
   - name: Dashboards, Charts, Reports, & Widgets
@@ -89,7 +89,7 @@
   - name: Public projects
     href: organizations/public/index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Feedback
-    href: project/feedback/index.md 
+    href: project/feedback/index.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json 
 - name: Manage & Configure Resources
   items:
   - name: Teams
