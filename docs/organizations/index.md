@@ -18,7 +18,7 @@ featureFlags:
 <p><a href="/azure/devops/index">Azure DevOps</a>  /  Manage & Configure Resources</p>
 
 
-# Manage & Configure Resources 
+# Azure DevOps Manage & Configure Resources Documentation
 
 Configure resources and manage settings for an organization, project, team, or user.
 
