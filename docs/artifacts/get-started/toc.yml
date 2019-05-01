@@ -141,7 +141,7 @@
 - name: Resources
   items: 
   - name: Azure Repos
-    href: ../../repos/index.md
+    href: /azure/devops/repos 
   - name: Azure Pipelines
-    href: ../../pipelines/index.md
+    href: /azure/devops/pipelines 
 
