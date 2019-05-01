@@ -3,7 +3,6 @@
   topicHref: /azure/devops/index
   items: 
   - name: Marketplace & Extensibility
-    tocHref: /azure/devops/
     topicHref: /azure/devops/marketplace-extensibility/index
     items: 
     - name: Develop Extensions

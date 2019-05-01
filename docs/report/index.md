@@ -102,7 +102,7 @@ Reporting in Azure DevOps enables software development teams to make data driven
                             <a href="/azure/devops/report/extend-analytics/account-scoped-queries">Project and organization-scoped queries</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/eport/powerbi/data-available-in-analytics">Data available from the Analytics Service</a>
+                            <a href="/azure/devops/report/powerbi/data-available-in-analytics">Data available from the Analytics Service</a>
                         </p>
                     </div>
                 </div>
