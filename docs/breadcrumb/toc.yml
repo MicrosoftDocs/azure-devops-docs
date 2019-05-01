@@ -136,7 +136,6 @@
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/index
   - name: Manage & Configure Resources
-    tocHref: /azure/devops/
     topicHref: /azure/devops/organizations/index
     items:
     - name: Teams
