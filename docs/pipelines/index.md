@@ -32,7 +32,7 @@ Tutorials, references, and other documentation show you how to configure and man
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2015 <= tfs-2018"
 
 # Build and Release Documentation
 
@@ -51,7 +51,7 @@ Tutorials, references, and other documentation show you how to configure and man
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 
 <ul class="panelContent cardsF">
@@ -122,7 +122,7 @@ Tutorials, references, and other documentation show you how to configure and man
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common//media/common/i_agent.svg" alt="Agent icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_agent.svg" alt="Agent icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -729,66 +729,92 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-<div id="main" class="v2">
-    <div class="container">
-        <ul class="pivots">
-            <li>
-                <a href="#index"></a>
-                <ul id="index">
-                    <li class="panelItem" data-index="0">
-                        <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
-                        <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
-                            <li class="fullSpan">
-                                <a href="#index1"></a>
-                                <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex;">
-                                    <li>
-                                        <a href="overview.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/devopsiconpipelines96.svg" alt="Azure Pipelines logo" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Start using Build and Release</h3>
-                                                            <p>Get an overview of continuous integration (CI) and continuous delivery (CD)</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="create-first-pipeline.md">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="../_img/index/i_kanban.svg" alt="designer" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Create your first pipeline</h3>
-                                                            <p>Learn the basics of using the classic editor to add and customize tasks.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <a href="#index2"></a>
-        <h2 style="float: left; display: flex;">Build your app</h2>
-        <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+
+<ul class="panelContent cardsF">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Start using Azure Pipelines</h3>
+                        <p>
+                            <a href="/azure/devops/pipelines/overview">What is Build and Release?</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/create-first-pipeline">Create your first pipeline</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Overview icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Concepts</h3>
+                        <p>
+                            <a href="/azure/devops/pipelines/get-started/key-pipelines-concepts">Key Concepts</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/release/index">Release pipelines</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/agents/agents">Build and release agents</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/licensing/concurrent-jobs">Parallel jobs</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/repos/index">Repositories</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="Reference icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Reference</h3>
+                        <p>
+                            <a href="/azure/devops/pipelines/process/tasks">Build and release tasks</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/policies/permissions">Permissions & security roles</a>
+                        </p>
+                        <p>
+                            <a href="/rest/api/vsts/pipelines">REST API Reference</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+
+## Build your app
+
+<ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="languages/dotnet-core.md">
                     <div class="cardSize">
@@ -1059,10 +1085,11 @@ Tutorials, references, and other documentation show you how to configure and man
                     </div>
                 </a>
             </li>
-        </ul>
-        <a href="#index3"></a>
-        <h2 style="float: left; display: flex;">Deploy your app</h2>
-        <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
+</ul>
+
+## Deploy your app</h2>
+
+<ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="targets/azure-sqldb.md">
                     <div class="cardSize">
@@ -1225,9 +1252,7 @@ Tutorials, references, and other documentation show you how to configure and man
                     </div>
                 </a>
             </li>
-        </ul>
-    </div>
-</div>
+</ul>
 
 ::: moniker-end
 

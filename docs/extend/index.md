@@ -19,6 +19,7 @@ Extensions are simple add-ons that can be used to customize and extend your DevO
 <a name ="customApps"/>
 
 ## 5-minute Quickstarts 
+
 Check out the quick starts to get you started:
 * [Write your first extension](get-started/node.md)
 
