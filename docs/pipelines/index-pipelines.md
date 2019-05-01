@@ -2,36 +2,38 @@
 title: Azure Pipelines Documentation
 titleSuffix: Azure DevOps Services
 description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines and Team Foundation Server (TFS). Includes tutorials, references, and other documentation.
-layout: LandingPage
-hide_bc: true
-ms.topic: landing-page
 ms.prod: devops
 ms.technology: devops-cicd
+ms.topic: conceptual
+layout: HubPage 
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
-ms.manager: jillfra 
+ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/6/2019
-featureFlags:
-- clicktale 
-monikerRange: '>= tfs-2013'
+ms.reviewer: vijayma
+ms.date: 05/06/2019
+monikerRange: '<= azure-devops-2019 || azure-devops'
 ---
 
+::: moniker range="azure-devops"
+# Azure Pipelines
+::: moniker-end
 
+::: moniker range="< azure-devops"
+# Build and release
+::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-# Azure Pipelines Documentation
-
+::: moniker range="azure-devops"
 Azure Pipelines helps you implement a build, test, and deployment pipeline for any app.
+Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+Azure Pipelines helps you implement a build, test, and deployment pipeline for any app that you maintain in Azure DevOps Server.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
 
 ::: moniker-end
-
-
-::: moniker range="<= tfs-2018"
-# Build and Release Documentation
-::: moniker-end
-
 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"
 
@@ -40,132 +42,7 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker-end
 
-
-::: moniker range="tfs-2013"
-
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
-
-::: moniker-end
-
-
-::: moniker range=">= azure-devops"
-
-
-<ul class="panelContent cardsF">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Start using Azure Pipelines</h3>
-                        <p>
-                            <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines">What is Azure Pipelines?</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/get-started/pipelines-sign-up">Sign up and invite some teammates</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/get-started/pipelines-get-started">How to use Azure Pipelines</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/get-started/key-pipelines-concepts">Key concepts</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Build Pipelines</h3>
-                        <p>
-                            <a href="/azure/devops/pipelines/create-first-pipeline">Create your first pipeline</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/customize-pipeline">Customize your pipeline</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/get-started-multiplatform">Create a multi-platform pipeline</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/yaml-schema">YAML schema</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-
-
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Build Pipelines</h3>
-                        <p>
-                            <a href="/azure/devops/pipelines/create-first-pipeline">Create your first pipeline</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/customize-pipeline">Customize your pipeline</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/get-started-multiplatform">Create a multi-platform pipeline</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_continuous-testing.svg" alt="Continuous testing icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Test your app</h3>
-                        <p>
-                            <a href="/azure/devops/pipelines/test/review-continuous-test-results-after-build">Test reports</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/test/test-analytics">Test analytics</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/test/parallel-testing-any-test-runner">Parallel testings for efficient pipelines</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/test/continuous-test-selenium">Run selenium tests</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+::: moniker range="azure-devops"
 
 <div id="main" class="v2">
     <div class="container">
@@ -175,6 +52,93 @@ Tutorials, references, and other documentation show you how to configure and man
                 <ul id="index">
                     <li class="panelItem" data-index="0">
                         <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
+                        <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
+                            <li class="fullSpan">
+                                <a href="#index1"></a>
+                                <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex;">
+                                    <li>
+                                        <a href="get-started/index.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="../_img/index/devopsiconpipelines96.svg" alt="Azure Pipelines logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Start using Azure Pipelines</h3>
+                                                            <p>Sign up and get started using Azure Pipelines</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="create-first-pipeline.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="GetHub logo" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Create your first pipeline</h3>
+                                                            <p>Get started configuring your pipeline as a YAML file in your repo alongside your code.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="get-started-multiplatform.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="../_img/index/i_responsive.svg" alt="Multi platform image" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Create a multi-platform pipeline</h3>
+                                                            <p>Use Azure Pipelines to build an app written in any language, on multiple platforms.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="yaml-schema.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="../_img/index/i_kanban.svg" alt="designer" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>YAML schema</h3>
+                                                            <p>Detailed reference guide to YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
         <a href="#index2"></a>
         <h2 style="float: left; display: flex;">Build your app</h2>
         <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
@@ -745,7 +709,16 @@ Tutorials, references, and other documentation show you how to configure and man
                 </a>
             </li>
         </ul>
-
+        <h2> Videos</h2>
+        <div style="float:left;margin-right:40px">
+            <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+            <h3>Build and deploy your code with Azure Pipelines</h3>
+        </div>
+        <div style="float:left">
+            <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+            <h3>Continuously build GitHub projects with Azure Pipelines</h3>
+        </div>
+        <div style="clear:left"></div>
         <h2> More information</h2>
         <ul class="panelContent cardsF cols cols3" style="float: left; display: flex;">
             <li>
@@ -805,7 +778,7 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 <div id="main" class="v2">
     <div class="container">
@@ -1436,6 +1409,8 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker-end
 
+::: moniker range="tfs-2013"
 
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
-
+::: moniker-end

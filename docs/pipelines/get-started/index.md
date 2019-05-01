@@ -1,35 +1,78 @@
 ---
-title: Get started with Azure Pipelines 
-ms.custom: seodec18
-description: Sign up and get started with Azure Pipelines 
+title: Learn how to build and deploy your apps 
+titleSuffix: Azure Pipelines
+description: Use Azure Pipelines to build and deploy your apps
 ms.prod: devops
-ms.technology: devops-new-user
+ms.technology: devops-cicd
+ms.assetid:  
+ms.manager: jillfra
+ms.author: elbatk
+author: elbatk
 ms.topic: overview
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 monikerRange: 'azure-devops'
-ms.date: 09/05/2018
+ms.date: 05/06/2019
 ---
 
-# Get started with Azure Pipelines  
+# Azure Pipelines
 
-**Azure Pipelines**
+[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
 
-Azure Pipelines is a fully featured continuous integration (CI) and continuous delivery (CD) service. It works with your preferred Git provider and can deploy to most major cloud services, which include Azure services. Start with your code on GitHub, GitHub Enterprise Server, GitLab, Bitbucket Cloud, or [Azure Repos](/azure/devops/repos/index). Then you can automate the build, testing, and deployment of your code to Microsoft Azure, Google Cloud Platform, or Amazon Web Services.
+ 
+## Videos 
+        <div style="float:left;margin-right:40px">
+            <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+            <h3>Build and deploy your code with Azure Pipelines</h3>
+        </div>
+        <div style="float:left">
+            <iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+            <h3>Continuously build GitHub projects with Azure Pipelines</h3>
+        </div>
+        <div style="clear:left"></div>
 
-Use Azure Pipelines to configure and automate your build and delivery tools and environments in YAML (as configuration as code). Or you can use the classic editor in the Azure DevOps web portal at [https://dev.azure.com](https://dev.azure.com). Azure Pipelines documentation shows you both approaches.
 
-Follow the links in this short guide to sign up and use Azure Pipelines.
+## 5-Minute Quickstarts  
 
-## What is Azure Pipelines?
+- [NuGet](../get-started-nuget.md)
+- [npm](../get-started-npm.md)
+- [Maven](../get-started-maven.md)
+- [Python](../quickstarts/python-packages.md)
+- [Universal](../quickstarts/universal-packages.md)
 
-For more information on Azure Pipelines, see [What is Azure Pipelines?](what-is-azure-pipelines.md). See how you can use it to automate and streamline the build, test, and deployment of your code projects.
+## Step-by-Step Tutorials
 
-## Use Azure Pipelines
+- [Create a private PowerShell repository](../tutorials/private-powershell-library.md)
+- [Protect OSS packages with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Communicate quality with release views](../feeds/views.md)
+- [Move your packages to the cloud](../nuget/move-from-fileshares.md)
 
-Quickly learn the different ways you can [use Azure Pipelines](pipelines-get-started.md) to automate your builds and releases.
+## Concepts 
+      
+- [Best practices](../concepts/best-practices.md)
+- [Views](../concepts/views.md)
+- [Upstream sources](../concepts/upstream-sources.md)
+- [Complete graphs](../concepts/package-graph.md)
+- [Symbols](../concepts/symbols.md)
 
-## Key concepts for Azure Pipelines
 
-The [Key concepts for Azure Pipelines guide](key-pipelines-concepts.md) explains how Azure Pipelines works. It also explains key terms and concepts.  
+## How-to Guides
+
+- [Publish a NuGet package](../nuget/publish.md)
+- [Consume NuGet packages](../nuget/consume.md)
+- [Use packages from npmjs.com](../npm/upstream-sources.md)
+- [Publish an npm package](../npm/publish.md)
+- [Publish a Maven artifact](../maven/publish.md)
+- [Install a Maven artifact](../maven/install.md)
+
+## Reference 
+
+- [Collaborate with packages](../collaborate-with-packages.md)
+- [Upgrading a legacy feed](../reference/feed-upgrade-learn-more.md)
+- [Limits on package sizes and counts](../reference/limits.md)
+
+## Resources 
+
+- [Azure Repos](../repos/index.md)
+- [Azure Pipelines](../pipelines/index.md)
