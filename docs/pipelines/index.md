@@ -20,6 +20,7 @@ monikerRange: '>= tfs-2013'
 
 
 ::: moniker range=">= azure-devops-2019"
+
 # Azure Pipelines Documentation
 
 Azure Pipelines helps you implement a build, test, and deployment pipeline for any app.
@@ -29,11 +30,8 @@ Tutorials, references, and other documentation show you how to configure and man
 
 
 ::: moniker range="<= tfs-2018"
+
 # Build and Release Documentation
-::: moniker-end
-
-
-::: moniker range=">= tfs-2015 < azure-devops-2019"
 
 Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
 Tutorials, references, and other documentation show you how to configure and manage continuous integration and continuous delivery (CI/CD) for the app and platform of your choice.
@@ -42,6 +40,8 @@ Tutorials, references, and other documentation show you how to configure and man
 
 
 ::: moniker range="tfs-2013"
+
+# Build and Release Documentation
 
 **TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
@@ -72,9 +72,6 @@ Tutorials, references, and other documentation show you how to configure and man
                         <p>
                             <a href="/azure/devops/pipelines/get-started/pipelines-get-started">How to use Azure Pipelines</a>
                         </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/get-started/key-pipelines-concepts">Key concepts</a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -87,7 +84,7 @@ Tutorials, references, and other documentation show you how to configure and man
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_build.svg" alt="Build icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -102,7 +99,13 @@ Tutorials, references, and other documentation show you how to configure and man
                             <a href="/azure/devops/pipelines/get-started-multiplatform">Create a multi-platform pipeline</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/yaml-schema">YAML schema</a>
+                            <a href="/azure/devops/pipelines/create-first-pipeline">Build GitHub repositories</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/repos/github">Build Azure Repos Git repositories</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/build/ci-build-git">Build multiple branches</a>
                         </p>
                     </div>
                 </div>
@@ -110,14 +113,13 @@ Tutorials, references, and other documentation show you how to configure and man
         </div>
     </li>
 
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Get started icon" />
+                            <img src="https://docs.microsoft.com/media/common//media/common/i_agent.svg" alt="Agent icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -159,6 +161,62 @@ Tutorials, references, and other documentation show you how to configure and man
                         </p>
                         <p>
                             <a href="/azure/devops/pipelines/test/continuous-test-selenium">Run selenium tests</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Overview icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Concepts</h3>
+                        <p>
+                            <a href="/azure/devops/pipelines/get-started/key-pipelines-concepts">Key Concepts</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/release/index">Release pipelines</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/agents/agents">Build and release agents</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/licensing/concurrent-jobs">Parallel jobs</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/repos/index">Repositories</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="Reference icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Reference</h3>
+                        <p>
+                            <a href="/azure/devops/pipelines/process/tasks">Build and release tasks</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/policies/permissions">Permissions & security roles</a>
+                        </p>
+                        <p>
+                            <a href="/rest/api/vsts/pipelines">REST API Reference</a>
                         </p>
                     </div>
                 </div>
@@ -743,61 +801,6 @@ Tutorials, references, and other documentation show you how to configure and man
                         </div>
                     </div>
                 </a>
-            </li>
-        </ul>
-
-        <h2> More information</h2>
-        <ul class="panelContent cardsF cols cols3" style="float: left; display: flex;">
-            <li>
-                <div class="cardSize">
-                    <div class="cardPadding">
-                        <div class="card">
-                            <div class="cardText">
-                                <h3>Step-by-step tutorials</h3>
-                                <p>
-                                    <a href="repos/github.md">Build GitHub repositories</a><br />
-                                    <a href="repos/azure-repos-git.md">Build Azure Repos Git repositories</a><br />
-                                    <a href="build/ci-build-git.md">Build multiple branches</a><br />
-                                    <a href="release/define-multistage-release-process.md">Set up a multi-stage release</a><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cardSize">
-                    <div class="cardPadding">
-                        <div class="card">
-                            <div class="cardText">
-                                <h3>Concepts</h3>
-                                <p>
-                                    <a href="agents/agents.md">Build and release agents</a><br />
-                                    <a href="licensing/concurrent-jobs.md">Parallel jobs</a><br />
-                                    <a href="release/index.md">Release pipelines</a><br />
-                                    <a href="repos/index.md">Repositories</a><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="cardSize">
-                    <div class="cardPadding">
-                        <div class="card">
-                            <div class="cardText">
-                                <h3>Reference</h3>
-                                <p>
-                                    <a href="yaml-schema.md">YAML schema</a><br />
-                                    <a href="process/tasks.md">Build and release tasks</a><br />
-                                    <a href="policies/permissions.md">Permissions &amp; security roles</a><br />
-                                    <a href="/rest/api/vsts">REST API Reference</a><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </li>
         </ul>
     </div>

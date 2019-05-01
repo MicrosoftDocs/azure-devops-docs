@@ -313,7 +313,7 @@
     - name: Migrate from Lab Management
       href: ../targets/create-virtual-network.md
     - name: Use Build & Release for automated testing
-      href: visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
+      href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
 
 - name: Troubleshooting
   items:
