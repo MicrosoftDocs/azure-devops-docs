@@ -21,7 +21,7 @@
   - name: Python
     href: ../quickstarts/python-packages.md
   - name: Universal
-    href: vquickstarts/universal-packages.md
+    href: ../quickstarts/universal-packages.md
 - name: Tutorials
   items:
   - name: Create a private PowerShell repository
@@ -141,7 +141,7 @@
 - name: Resources
   items: 
   - name: Azure Repos
-    href: ../repos/index.md
+    href: ../../repos/index.md
   - name: Azure Pipelines
-    href: ../pipelines/index.md
+    href: ../../pipelines/index.md
 

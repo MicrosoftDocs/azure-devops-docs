@@ -15,7 +15,7 @@ ms.date: 05/06/2019
 
 # Azure Artifacts
 
-[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
 
 With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private source swith teams of any size. You can 
 add fully integrated package management to your continuous integration/continuous delivery (CI/CD) pipelines with a single click.  
@@ -63,5 +63,5 @@ Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server
 
 ## Resources 
 
-- [Azure Repos](../repos/index.md)
-- [Azure Pipelines](../pipelines/index.md)
+- [Azure Repos](../../repos/index.md)
+- [Azure Pipelines](../../pipelines/index.md)
