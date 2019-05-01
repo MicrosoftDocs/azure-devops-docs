@@ -17,8 +17,7 @@ featureFlags:
 ---
 
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Reporting</p>
-<div id="main" class="v2">
+<a href="/azure/devops/index">Azure DevOps</a>  /  Reporting
 
 # Azure DevOps Reporting Documentation 
 
