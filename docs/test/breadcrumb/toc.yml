@@ -3,7 +3,6 @@
   topicHref: /azure/devops/index
   items: 
   - name: Azure Test Plans
-    tocHref: /azure/devops/
     topicHref: /azure/devops/test-plans/index
     items:
     - name: Manual Testing
