@@ -50,7 +50,7 @@ Plan, track, and discuss work across your teams.
                             <a href="/azure/devops/boards/get-started/manage-boards">Manage your Azure Boards project</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/boards/work-items/best-tool-add-update-link-work-items">Best tool for the job</a>
+                            <a href="/azure/devops/boards/work-items/best-tool-add-update-link-work-items?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json">Best tool for the job</a>
                         </p>
                     </div>
                 </div>
@@ -94,13 +94,13 @@ Plan, track, and discuss work across your teams.
                     <div class="cardText">
                         <h3>Work items</h3>
                         <p>
-                            <a href="/azure/devops/boards/get-started/what-is-azure-boards">About work items</a>
+                            <a href="/azure/devops/boards/work-items/about-work-items">About work items</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/boards/get-started/sign-up-invite-teammates">Quick reference</a>
+                            <a href="/azure/devops/boards/work-items/quick-ref">Quick reference</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/boards/get-started/track-issues-tasks">View and add work items</a>
+                            <a href="/azure/devops/boards/work-items/view-add-work-items">View and add work items</a>
                         </p>
                     </div>
                 </div>
@@ -228,10 +228,10 @@ Plan, track, and discuss work across your teams.
                     <div class="cardText">
                         <h3>Plans and Agile at scale</h3>
                         <p>
-                            <a href="/azure/devops/organizations/settings/about-teams-and-settings">About teams and Agile tools</a>
+                            <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json">About teams and Agile tools</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/manage-teams">Manage and configure team tools</a>
+                            <a href="/azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json">Manage and configure team tools</a>
                         </p>
                         <p>
                             <a href="/azure/devops/boards/plans/portfolio-management">Portfolio management</a>
