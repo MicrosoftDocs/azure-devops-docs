@@ -18,7 +18,7 @@ ms.date: 05/06/2019
 
 # Azure Pipelines
 
-[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
 
  
 ## Videos 
@@ -35,42 +35,23 @@ ms.date: 05/06/2019
 
 ## 5-Minute Quickstarts  
 
-- [NuGet](../get-started-nuget.md)
-- [npm](../get-started-npm.md)
-- [Maven](../get-started-maven.md)
-- [Python](../quickstarts/python-packages.md)
-- [Universal](../quickstarts/universal-packages.md)
+- [Create your first pipeline](../create-first-pipeline.md)
+- [Customize your pipeline](../customize-pipeline.md)
 
 ## Step-by-Step Tutorials
 
-- [Create a private PowerShell repository](../tutorials/private-powershell-library.md)
-- [Protect OSS packages with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
-- [Communicate quality with release views](../feeds/views.md)
-- [Move your packages to the cloud](../nuget/move-from-fileshares.md)
 
 ## Concepts 
       
-- [Best practices](../concepts/best-practices.md)
-- [Views](../concepts/views.md)
-- [Upstream sources](../concepts/upstream-sources.md)
-- [Complete graphs](../concepts/package-graph.md)
-- [Symbols](../concepts/symbols.md)
+
 
 
 ## How-to Guides
 
-- [Publish a NuGet package](../nuget/publish.md)
-- [Consume NuGet packages](../nuget/consume.md)
-- [Use packages from npmjs.com](../npm/upstream-sources.md)
-- [Publish an npm package](../npm/publish.md)
-- [Publish a Maven artifact](../maven/publish.md)
-- [Install a Maven artifact](../maven/install.md)
 
 ## Reference 
 
-- [Collaborate with packages](../collaborate-with-packages.md)
-- [Upgrading a legacy feed](../reference/feed-upgrade-learn-more.md)
-- [Limits on package sizes and counts](../reference/limits.md)
+
 
 ## Resources 
 
