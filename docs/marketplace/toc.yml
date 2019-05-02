@@ -1,4 +1,4 @@
-- name: Extension management
+- name: Discover & Manage Extensions
   href: index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
 - name: Overview
   items:

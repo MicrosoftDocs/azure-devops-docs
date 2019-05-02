@@ -101,15 +101,6 @@ Tutorials, references, and other documentation show you how to configure and man
                         <p>
                             <a href="/azure/devops/pipelines/get-started-multiplatform">Create a multi-platform pipeline</a>
                         </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/create-first-pipeline">Build GitHub repositories</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/repos/github">Build Azure Repos Git repositories</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/pipelines/build/ci-build-git">Build multiple branches</a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -126,15 +117,18 @@ Tutorials, references, and other documentation show you how to configure and man
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Build Pipelines</h3>
-                        <p>
-                            <a href="/azure/devops/pipelines/create-first-pipeline">Create your first pipeline</a>
+                        <h3>Build & Rekease tutorials</h3>
+                         <p>
+                            <a href="/azure/devops/pipelines/repos/github">Build GitHub repositories</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/customize-pipeline">Customize your pipeline</a>
+                            <a href="/azure/devops/pipelines/repos/azure-repos-git">Build Azure Repos Git repositories</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/get-started-multiplatform">Create a multi-platform pipeline</a>
+                            <a href="/azure/devops/pipelines/build/ci-build-git">Build multiple branches</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/pipelines/get-started-multiplatform">Set up a multi-stage release</a>
                         </p>
                     </div>
                 </div>
