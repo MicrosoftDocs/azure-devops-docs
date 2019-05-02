@@ -1,5 +1,5 @@
 - name: Azure DevOps Get Started Documentation 
-  href: ../../get-started/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+  href: ../get-started/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 - name: Start using Azure DevOps
   href: index.yml?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Overview
