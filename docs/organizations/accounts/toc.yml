@@ -1,3 +1,5 @@
+- name: Azure DevOps Manage & Configure Resources Documentation
+  href: ../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: "Manage organizations"
   href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Overview

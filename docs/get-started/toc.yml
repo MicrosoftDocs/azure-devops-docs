@@ -1,0 +1,10 @@
+- name: Azure DevOps Get Started Documentation
+  href: index.md
+- name: Start Using Azure DevOps
+  href: ../user-guide/toc.yml
+- name: Web Portal Navigation
+  href: ../project/navigation/toc.yml 
+- name: Search Across Azure DevOps
+  href: ../project/search/toc.yml 
+- name: Migrate & Import
+  href: ../migrate/toc.yml 

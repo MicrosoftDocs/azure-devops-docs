@@ -1,0 +1,9 @@
+- name: Azure DevOps Get Started Documentation
+  href: index.md
+- name: Start Using Azure Repos
+  href: get-started/toc.yml
+- name: Git
+  href: git/toc.yml 
+- name: Team Foundation version control
+  href: tfvc/toc.yml 
+

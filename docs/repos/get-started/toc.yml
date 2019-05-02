@@ -1,3 +1,5 @@
+- name: Azure Repos Documentation
+  href: ../index.md
 - name: Start using Azure Repos
   href: index.md?toc=/azure/devops/repos/get-started/toc.json&bc=/azure/devops/repos/get-started/breadcrumb/toc.json 
 - name: "What is Azure Repos?"

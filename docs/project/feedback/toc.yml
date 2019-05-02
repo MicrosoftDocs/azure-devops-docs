@@ -1,3 +1,5 @@
+- name: Azure DevOps Collaborate Documentation
+  href: ../index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
 - name: Feedback 
   href: index.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json
 - name: How-to Guides

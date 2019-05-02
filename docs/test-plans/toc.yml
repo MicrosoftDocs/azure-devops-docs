@@ -1,0 +1,7 @@
+- name: Azure Test Plans Documentation
+  href: index.md
+- name: Exploratory & Manual Testing
+  href: ../test/toc.yml
+- name: Request stakeholder feedback
+  href: ../project/feedback/toc.yml
+

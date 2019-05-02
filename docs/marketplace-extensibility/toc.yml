@@ -1,0 +1,10 @@
+- name: Azure DevOps Marketplace & Extensibility Documentation
+  href: index.md
+- name: Discover & Manage Extensions
+  href: ../marketplace/toc.yml
+- name: Develop extensions
+  href: ../extend/toc.yml 
+- name: Integrate Applications
+  href: ../integrate/toc.yml 
+- name: Service Hooks
+  href: ../service-hooks/toc.yml

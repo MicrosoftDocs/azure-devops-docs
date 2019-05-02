@@ -1,3 +1,5 @@
+- name: Azure DevOps Marketplace & Extensibility Documentation
+  href: ../marketplace-extensibility/index.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Discover & Manage Extensions
   href: index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
 - name: Overview

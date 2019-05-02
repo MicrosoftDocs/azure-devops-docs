@@ -2,9 +2,9 @@
 title: Azure DevOps Documentation 
 titleSuffix: Azure DevOps Services
 description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps 
-layout: LandingPage
+layout: HubPage 
 hide_bc: true
-ms.topic: landing-page
+ms.topic: hub-page
 ms.prod: devops 
 ms.technology: devops-new-user
 ms.assetid:  
@@ -15,8 +15,6 @@ featureFlags:
 - clicktale 
 ---
 
-
- 
 
 # Azure DevOps Documentation 
 

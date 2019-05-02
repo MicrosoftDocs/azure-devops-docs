@@ -1,0 +1,20 @@
+- name: Azure DevOps Manage & Configure Resources Documentation
+  href: index.md
+- name: Teams
+  href: settings/scale/toc.yml
+- name: Projects
+  href: projects/toc.yml
+- name: Organizations
+  href: accounts/toc.yml
+- name: "Security & identity"
+  href: security/toc.yml
+- name: Billing
+  href: billing//toc.yml
+- name: Process Customization (Inheritance)
+  href: settings/work/toc.yml
+- name: Work Tracking Customization (Inheritance)
+  href: reference/toc.yml
+- name: Notifications
+  href: ../notifications/toc.yml
+- name: All settings
+  href: settings/toc.yml
