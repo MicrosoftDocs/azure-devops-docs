@@ -32,7 +32,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Get started</h3>
+                        <h3><a href="/azure/devops/get-started/index">Get started</a></h3>
                         <p>
                             <a href="/azure/devops/user-guide/what-is-azure-devops">What is Azure DevOps?</a>
                         </p>
@@ -52,7 +52,7 @@ Azure DevOps provides development collaboration tools including high-performance
                             <a href="/azure/devops/project/navigation/index">Web portal navigation</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/search/index">Search</a>
+                            <a href="/azure/devops/project/search/index">Search across Azure DevOps</a>
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Repos</h3>
+                        <h3><a href="/azure/devops/repos/index">Azure Repos</a></h3>
                         <p>
                             <a href="/azure/devops/repos/get-started/what-is-repos">What is Azure Repos?</a>
                         </p>
@@ -126,7 +126,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Boards</h3>
+                        <h3><a href="/azure/devops/boards/index">Azure Boards</a></h3>
                         <p>
                             <a href="/azure/devops/boards/get-started/what-is-azure-boards">What is Azure Boards?</a>
                         </p>
@@ -171,7 +171,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Pipelines</h3>
+                        <h3><a href="/azure/devops/pipelines/index">Azure Pipelines</a></h3>
                         <p>
                             <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines">What is Azure Pipelines?</a>
                         </p>
@@ -212,7 +212,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Build and deploy apps</h3>
+                        <h3><a href="/azure/devops/pipelines/index">Build and deploy apps</a></h3>
                         <p>
                           <a href="/azure/devops/pipelines/languages/dotnet-core">.NET Core</a>
                         </p>
@@ -261,7 +261,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Test Plans</h3>
+                        <h3><a href="/azure/devops/test-plans/index">Azure Test Plans</a></h3>
                         <p>
                             <a href="/azure/devops/test/overview">What is Azure Test Plans?</a>
                         </p>
@@ -296,7 +296,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Artifacts</h3>
+                        <h3><a href="/azure/devops/artifacts/index">Azure Artifacts</a></h3>
                         <p>
                             <a href="/azure/devops/artifacts/overview">What is Azure Artifacts?</a>
                         </p>
@@ -334,7 +334,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure DevOps Server</h3>
+                        <h3><a href="/azure/devops/server/admin/admin-quick-ref">Azure DevOps Server</a></h3>
                         <p>
                             <a href="/azure/devops/server/install/get-started">Install</a>
                         </p>
@@ -390,7 +390,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Reporting</h3>
+                        <h3><a href="/azure/devops/report/index">Reporting</a></h3>
                         <p>
                             <a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, & Widgets</a>
                         </p>
@@ -423,7 +423,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Collaborate</h3>
+                        <h3><a href="/azure/devops/project/index">Collaborate</a></h3>
                         <p>
                             <a href="/azure/devops/project/wiki/index">Wikis</a>
                         </p>
@@ -450,9 +450,9 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Manage</h3>
+                        <h3><a href="/azure/devops/organizations/settings/index">Manage & Configure Resources</a></h3>
                         <p>
-                            <a href="/azure/devops//organizations/settings/scale/index">Teams</a>
+                            <a href="/azure/devops/organizations/settings/scale/index">Teams</a>
                         </p>
                         <p>
                             <a href="/azure/devops/organizations/projects/index">Projects</a>
@@ -488,7 +488,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Extensibility</h3>
+                        <h3><a href="/azure/devops/marketplace-extensibility/index">Marketplace & Extensibility</a></h3>
                         <p>
                             <a href="/azure/devops/marketplace">Discover extensions</a>
                         </p>
@@ -516,7 +516,7 @@ Azure DevOps provides development collaboration tools including high-performance
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Developer resources</h3>
+                        <h3><a href="/azure/devops/dev-resources/index">Developer Resources</a></h3>
                         <p>
                             <a href="/cli/azure/ext/azure-devops/?view=azure-cli-latest">Command Line Interface</a>
                         </p>
