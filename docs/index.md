@@ -548,6 +548,9 @@ Azure DevOps provides development collaboration tools including high-performance
                     <div class="cardText">
                         <h3>Related resources</h3>
                         <p>
+                            <a href="/azure/devops/learn/">Azure DevOps Index Documentation</a>
+                        </p>
+                        <p>
                             <a href="/azure/devops/learn/">DevOps Resource Center</a>
                         </p>
                         <p>
