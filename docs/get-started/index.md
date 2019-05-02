@@ -42,7 +42,7 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                             <a href="/azure/devops/user-guide/services">Services overview</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/user-guide/sign-up-invite-teammates">Sign up & invite team mates</a>
+                            <a href="/azure/devops/user-guide/sign-up-invite-teammates">Sign up & invite teammates</a>
                         </p>
                         <p>
                             <a href="/azure/devops/user-guide/code-with-git">Code with Git</a>

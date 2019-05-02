@@ -42,7 +42,7 @@ uninstall the deployment agent._
    where you will install the agent. You must also be a member of the 
    **Release Manager** role in Release Management.
 
-   ***Tip:*** _Do you need to add team mates to the **Release Manager** role 
+   ***Tip:*** _Do you need to add teammates to the **Release Manager** role 
    in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
 
 1. If you have not already downloaded the deployment agent, 
