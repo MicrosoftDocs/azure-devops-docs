@@ -3,7 +3,7 @@
   topicHref: /azure/devops/index
   items: 
   - name: Marketplace & Extensibility
-    tocHref: /azure/devops/
+    tocHref: /azure/devops/service-hooks/
     topicHref: /azure/devops/marketplace-extensibility/index
     items: 
     - name: Service Hooks

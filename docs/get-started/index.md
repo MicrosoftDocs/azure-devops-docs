@@ -16,11 +16,11 @@ featureFlags:
 ---
 
 
-<p><a href="/azure/devops/index">Azure DevOps</a>  /  Get Started</p>
+<a href="/azure/devops/index">Azure DevOps</a>  /  Get Started
 
 # Get Started 
 
-Sign up for Azure DevOps Services, start coding, or tracking work in Azure DevOps.
+Start using Azure DevOps to code, build and deploy apps, or track work.
 
 
 <ul class="panelContent cardsF">

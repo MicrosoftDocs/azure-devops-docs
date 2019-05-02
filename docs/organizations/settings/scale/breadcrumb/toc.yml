@@ -3,7 +3,7 @@
   topicHref: /azure/devops/index
   items: 
   - name: Manage & Configure Resources
-    tocHref: /azure/devops/
+    tocHref: /azure/devops/organizations/settings/scale/
     topicHref: /azure/devops/organizations/index
     items:
     - name: Manage Teams

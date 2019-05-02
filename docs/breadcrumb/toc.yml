@@ -114,6 +114,7 @@
       tocHref: /azure/devops/project/feedback/
       topicHref: /azure/devops/project/feedback/index
   - name: Marketplace & Extensibility
+    tocHref: /azure/devops/marketplace/
     topicHref: /azure/devops/marketplace-extensibility/index
     items:
     - name: Discover & Manage Extensions
