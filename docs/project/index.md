@@ -46,10 +46,10 @@ Share information, create public projects, and collaborate with team members and
                             <a href="/azure/devops/project/wiki/publish-repo-to-wiki">Publish code to a Wiki</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/markdown-guidance">Markdown guidance</a>
+                            <a href="/azure/devops/project/wiki/markdown-guidance">Basic Markdown reference</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/wiki-markdown-guidance">Wiki markdown guidance</a>
+                            <a href="/azure/devops/project/wiki/wiki-markdown-guidance">Advanced markdown reference</a>
                         </p>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ Share information, create public projects, and collaborate with team members and
                             <a href="/azure/devops/organizations/public/create-public-project">Create a public project</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/public/make-project-public">Make a project public</a>
+                            <a href="/azure/devops/organizations/public/make-project-public">Manage project visibility</a>
                         </p>
                         <p>
                             <a href="/azure/devops/organizations/public/migration-checklist">Private-to-public migration checklist</a>
