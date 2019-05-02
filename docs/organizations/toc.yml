@@ -13,7 +13,7 @@
 - name: Process Customization (Inheritance)
   href: settings/work/toc.yml
 - name: Work Tracking Customization (Inheritance)
-  href: reference/toc.yml
+  href: ../reference/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
 - name: All settings
