@@ -7,7 +7,7 @@ hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
 ms.technology: devops-new-user
-ms.assetid:  
+ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: jillfra 
 ms.author: kaelli 
 ms.date: 05/6/2019
@@ -15,13 +15,12 @@ featureFlags:
 - clicktale 
 ---
 
+<div id="main" class="v2">
+    <div class="container">
+        <h1>Azure DevOps Documentation</h1>
+        <p>Azure DevOps provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and continuous testing capabilities. You can access these tools through our cloud service, Azure DevOps Services, or on-premises platform, Azure DevOps Server (previously named Visual Studio Team Foundation Server).</p> 
 
-# Azure DevOps Documentation 
-
-Azure DevOps provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and continuous testing capabilities. You can access these tools through our cloud service, Azure DevOps Services, or on-premises platform, Azure DevOps Server (previously named Visual Studio Team Foundation Server).
-
-
-<ul class="panelContent cardsF">
+<ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -59,8 +58,6 @@ Azure DevOps provides development collaboration tools including high-performance
             </div>
         </div>
     </li>
-
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -86,7 +83,6 @@ Azure DevOps provides development collaboration tools including high-performance
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -115,7 +111,6 @@ Azure DevOps provides development collaboration tools including high-performance
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -159,8 +154,6 @@ Azure DevOps provides development collaboration tools including high-performance
             </div>
         </div>
     </li>
-
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -201,7 +194,6 @@ Azure DevOps provides development collaboration tools including high-performance
             </div>
         </div>
     </li>
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -602,3 +594,5 @@ Azure DevOps provides development collaboration tools including high-performance
 
 
 </ul>
+    </div>
+</div>
