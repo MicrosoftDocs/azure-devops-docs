@@ -1,3 +1,5 @@
+- name: Azure Boards Documentation
+  href: ../index.md
 - name: Backlogs
   href: index.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Overview

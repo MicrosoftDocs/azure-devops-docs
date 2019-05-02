@@ -1,3 +1,5 @@
+- name: Azure Boards Documentation
+  href: ../index.md
 - name: Work items
   href: index.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
 - name: Overview
