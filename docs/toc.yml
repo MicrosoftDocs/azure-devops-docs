@@ -133,6 +133,8 @@
     href: /azure/devops/demo-gen/index?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
 - name: Related resources
   items:
+  - name: Azure DevOps Documentation Index
+    href: /azure/devops/index-all
   - name: DevOps Resource Center
     href: /azure/devops/learn
   - name: Azure DevOps Projects

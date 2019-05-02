@@ -12,6 +12,9 @@
     - name: Start using Azure DevOps
       tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/index
+    - name: Web Portal Navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
     - name: Search
       tocHref: /azure/devops/project/search/
       topicHref: /azure/devops/project/search/index
@@ -69,14 +72,12 @@
     tocHref: /azure/devops/artifacts/
     topicHref: /azure/devops/artifacts/index
   - name: Azure Test Plans
+    tocHref: /azure/devops/test/
     topicHref: /azure/devops/test-plans/index
     items:
-    - name: Manual testing
+    - name: Exploratory & Manual testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/test/index
-    - name: Exploratory testing
-      tocHref: /azure/devops/project/feedback/
-      topicHref: /azure/devops/project/feedback/index
     - name: Continuous testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/pipelines/languages/dotnet-core.md#run-your-tests
