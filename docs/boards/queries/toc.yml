@@ -1,3 +1,5 @@
+- name: Azure Boards Documentation
+  href: ../index.md
 - name: Queries
   href: index.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
 - name: Overview

@@ -1,0 +1,24 @@
+- name: Azure Boards Documentation
+  href: index.md
+- name: Get started (Basic)
+  href: get-started/toc.yml
+- name: Get started (Agile)
+  href: get-started-agile/toc.yml 
+- name: Azure Boards & GitHub
+  href: github/toc.yml 
+- name: Work Items
+  href: work-items/toc.yml 
+- name: Boards
+  href: boards/toc.yml 
+- name: Backlogs
+  href: backlogs/toc.yml 
+- name: Sprints
+  href: sprints/toc.yml 
+- name: Queries
+  href: queries/toc.yml 
+- name: Plans & Agile at Scale
+  href: plans/toc.yml 
+- name: Process Customization (Inheritance)
+  href: ../organizations/settings/work/toc.yml 
+- name: Work Tracking Customization 
+  href: ../reference/toc.yml 
