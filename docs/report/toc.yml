@@ -5,7 +5,7 @@
 - name: Power BI Integration
   href: powerbi/toc.yml 
 - name: Extend Analytics with OData
-  href: .extend-analytics/toc.yml 
+  href: extend-analytics/toc.yml 
 - name: SQL Reports (Legacy)
   href: sql-reports/toc.yml
 
