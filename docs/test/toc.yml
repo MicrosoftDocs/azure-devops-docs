@@ -1,4 +1,6 @@
-- name: Azure Test Plans
+- name: Azure Test Plans Documentation
+  href: index.md?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test-plans/breadcrumb/toc.json
+- name: Exploratory & Manual Testing 
   href: index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: Overview
   items:

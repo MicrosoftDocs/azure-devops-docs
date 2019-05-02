@@ -1,4 +1,6 @@
-- name: TFVC
+- name: Azure Repos Documentation
+  href: ../index.md
+- name: Team Foundation version control
   href: index.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json 
 - name: Overview
   items:

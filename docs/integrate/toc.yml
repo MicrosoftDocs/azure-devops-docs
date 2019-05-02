@@ -1,4 +1,6 @@
-- name: "Integrate"
+- name: Azure DevOps Marketplace & Extensibility Documentation
+  href: ../marketplace-extensibility/index.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+- name: Integrate Applications
   href: index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
 - name: Quickstarts
   items:

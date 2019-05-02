@@ -1,3 +1,5 @@
+- name: Azure DevOps Manage & Configure Resources Documentation
+  href: ../../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Process Customization (Inheritance)
   href: index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
 - name: Overview

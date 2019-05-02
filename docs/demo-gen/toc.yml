@@ -1,3 +1,5 @@
+- name: Azure DevOps Developer Resources Documentation
+  href: ../dev-resources/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
 - name: Demo Generator
   href: index.md?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
 - name: Overview

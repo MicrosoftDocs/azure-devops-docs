@@ -1,3 +1,5 @@
+- name: Azure DevOps Collaborate Documentation
+  href: ../index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
 - name: Wikis
   href: index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
 - name: Overview
