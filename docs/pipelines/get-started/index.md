@@ -29,12 +29,12 @@ Use Azure Pipelines to configure and automate your build and delivery tools and 
 
 #### Build and deploy your code with Azure Pipelines
 
-> [! VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player] 
+<iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+
 
 #### Continuously build GitHub projects with Azure Pipelines
 
-> [! VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player]
-
+<iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A102/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
 
 ## 5-Minute Quickstarts  
 

@@ -1,6 +1,7 @@
 - name: Azure Pipelines
   href: index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
 - name: Overview
+  expanded: true
   items:
   - name: Overview
     href: overview.md
