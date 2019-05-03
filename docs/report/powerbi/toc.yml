@@ -1,5 +1,3 @@
-- name: Azure DevOps Reporting Documentation
-  href: ../index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Power BI Integration
   href: index.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
 - name: Overview
