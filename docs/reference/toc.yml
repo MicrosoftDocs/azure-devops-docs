@@ -17,3 +17,6 @@
   items:
   - name: Azure Boards
     href: /azure/devops/boards/index
+
+  - name: "Workflow states & categories"
+    href: workflow-and-state-categories.md

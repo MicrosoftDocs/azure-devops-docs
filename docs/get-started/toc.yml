@@ -1,5 +1,3 @@
-- name: Azure DevOps Get Started Documentation
-  href: index.md
 - name: Start Using Azure DevOps
   href: ../user-guide/toc.yml
 - name: Web Portal Navigation
@@ -8,3 +6,60 @@
   href: ../project/search/toc.yml 
 - name: Migrate & Import
   href: ../migrate/toc.yml 
+- name: Reference
+  items:
+  - name: "Permissions and access (Security)"
+    href: ../organizations/security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+  - name: About access levels
+    href: ../organizations/security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
+  - name: Navigate in Team Explorer
+    href: ../user-guide/work-team-explorer.md  
+  - name: FAQs
+    href: ../user-guide/faqs.md
+  - name: Service status  
+    href: ../user-guide/service-status-info.md
+- name: REST API Reference
+  items:
+  - name: Search
+    href: https://docs.microsoft.com/rest/api/vsts/search/?view=vsts-rest-4.1
+- name: Related Resources
+  items:
+  - name: Set your preferences  
+    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+  - name: Manage projects 
+    href: ../organizations/projects/index.md
+  - name: Permissions, Security, & Identity 
+    href: ../organizations/security/index.md
+  - name: Marketplace & Extensibility
+    href: ../marketplace-extensibility/index.md
+  - name: Visual Studio IDE
+    href: https://visualstudio.microsoft.com/vs/
+  - name: Visual Studio Code 
+    href: https://code.visualstudio.com/docs
+  - name: Visual Studio for Mac
+    href: https://visualstudio.microsoft.com/vs/mac/
+  - name: Search your Wiki
+    href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
+  - name: Code Search Video
+    href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+  - name: Code Search on Marketplace
+    href: https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search
+- name: Azure DevOps Services status & security
+  items: 
+  - name: Service status  
+    href: ../user-guide/service-status-info.md
+  - name: Azure DevOps data protection
+    href: ../organizations/security/data-protection.md
+  - name: Azure DevOps data location
+    href: ../organizations/security/data-location.md
+  - name: Azure DevOps credential storage
+    href: ../organizations/security/credential-storage.md
+- name: Journey articles
+  items:
+    - name: Agile
+      href: /azure/devops/learn/agile/what-is-agile
+    - name: DevOps
+      href: /azure/devops/learn/what-is-devops
+    - name: Git at Scale
+      href: /azure/devops/learn/git/git-at-scale
+

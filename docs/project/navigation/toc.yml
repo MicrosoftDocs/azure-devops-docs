@@ -1,5 +1,3 @@
-- name: Azure DevOps Get Started Documentation 
-  href: ../../get-started/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 - name: Web portal navigation 
   href: index.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
 - name: Open a service, page, or setting 
@@ -18,28 +16,13 @@
   href: filter-basics.md
 - name: Search your repo, work items, or wiki 
   href: search-basics.md   
-- name: Settings
-  items:
-  - name: Enable a preview feature  
-    href: preview-features.md  
-  - name: Set your preferences  
-    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+- name: Enable a preview feature  
+  href: preview-features.md  
 - name: Reference
   items:
   - name: Glossary
     href: glossary.md  
   - name: Go mobile 
     href: mobile-work.md  
-- name: Resources
-  items:
-  - name: Dashboards   
-    href: ../../report/dashboards/index.md  
-  - name: Wiki 
-    href: ../wiki/index.md  
-  - name: Notifications 
-    href: ../../notifications/index.md
-  - name: Manage projects 
-    href: ../../organizations/projects/index.md
-  - name: Settings 
-    href: ../../organizations/settings/index.md
+
  
