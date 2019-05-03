@@ -1,5 +1,3 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
-  href: ../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: All settings
   href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Overview
@@ -227,15 +225,8 @@
           href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Resources
   items:
-    - name: Manage projects
-      href: ../projects/index.md
-    - name: Security & identity
-      href: ../security/index.md
-    - name: READMEs & Wikis
-      href: ../../project/wiki/index.md
-    - name: "Manage extensions (Marketplace)"
-      href: ../../marketplace/index.md
-    - name: Manage organizations
-      href: ../accounts/index.md
-    - name: Billing
-      href: ../billing/index.md
+    - name: Collaborate  
+      href: ../../project/index.md
+    - name: Marketplace & Extensibility  
+      href: ../../marketplace-extensibility/index.md
+

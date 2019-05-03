@@ -7,15 +7,15 @@
   href: projects/toc.yml
 - name: Organizations
   href: accounts/toc.yml
-- name: "Security & identity"
+- name: Security & Identity
   href: security/toc.yml
 - name: Billing
-  href: billing//toc.yml
-- name: Process Customization (Inheritance)
-  href: settings/work/toc.yml
-- name: Work Tracking Customization (Inheritance)
-  href: ../reference/toc.yml
+  href: billing/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
 - name: All settings
   href: settings/toc.yml
+- Related Resources
+  items:
+  - name: Process Customization
+    href: /azure/devops/reference/index

@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 02/22/2019
 ---
 
-# Security & identity
+# Security & Identity
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -65,12 +65,12 @@ For anyone to access a project, you must add them to a security group. For a qui
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)  
 - [Azure DevOps Services data protection](data-protection.md)
-
+- [Authentication guidance for REST APIs](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json)
+- 
 ## Resources
- 
-- [Account Management (Azure DevOps)](../accounts/index.md)
-- [Server Administration (on-premises)](/azure/devops/server/index)
-- [Billing](../../billing/index.md)
-- [Authentication guidance for REST APIs](../../integrate/get-started/authentication/authentication-guidance.md)
+
+- [REST API, Permissions](/rest/api/vsts/security/permissions)
+- [Server Administration (on-premises)](/azure/devops/server/server/index)
+
 
 

@@ -1,6 +1,4 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
-  href: ../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Manage projects
+- name: Manage Projects
   href: index.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
 - name: Overview
   items:
@@ -90,15 +88,11 @@
     href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/project/toc.json&bc=/azure/devops/organizations/project/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Start using Azure DevOps
-    href: ../../user-guide/index.yml
-  - name: "Security & identity"
-    href: ../security/index.md
-  - name: Notifications
-    href: ../../notifications/index.md
+  - name: Get Started using Azure DevOps
+    href: ../../get-started/index.md
+  - name: Marketplace & Extensibility  
+    href: ../../marketplace-extensibility/index.md
   - name: Public projects
     href: ../public/index.md
-  - name: All settings
-    href: ../settings/index.md
-  - name: Migration & Import
-    href: ../../migrate/index.md
+
+

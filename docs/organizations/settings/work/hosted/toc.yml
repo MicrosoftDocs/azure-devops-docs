@@ -1,0 +1,34 @@
+- name: Hosted XML Process
+  href: index.md?toc=/azure/devops/organizations/settings/work/hosted/toc.json&bc=/azure/devops/organizations/settings/work/hosted/breadcrumb/toc.json
+- name: Overview
+  items:
+    - name: Hosted XML process overview
+      href: ../hosted-xml-process-model.md
+    - name: Differences between process models
+      href: ../import-process/differences.md 
+- name: How-to guides
+  items:
+    - name: Hosted XML process model
+      items:
+    - name: Customize a Hosted XML process
+      href: ../import-process/customize-process.md
+    - name: Import a process
+      href: ../import-process/import-process.md
+    - name: Migrate Hosted XML to inherited
+      items:
+      - name: Supported clone operations
+        href: ../upgrade-support-hosted-to-inherited.md
+      - name: Clone a Hosted XML process to Inheritance
+        href: ../upgrade-hosted-to-inherited.md
+      - name: Change a project from Hosted XML to Inheritance
+        href: ../change-process-from-hosted-to-inherited.md
+- name: Reference
+  items:
+    - name: Work tracking object limits
+      href: ../object-limits.md
+    - name: Processes (REST APIS)
+      href: /rest/api/vsts/processes/processes
+    - name: Work Item Types (REST APIS)
+      href: /rest/api/vsts/processdefinitions/work%20item%20types
+
+

@@ -1,4 +1,5 @@
 - name: Azure DevOps Reporting Documentation
+  expanded: false
   href: index.md
 - name: Dashboards, Charts, Reports, & Widgets
   href: dashboards/toc.yml

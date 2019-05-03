@@ -31,25 +31,19 @@ Share information, create public projects, and collaborate with team members and
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="Wikis icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_config-tools.svg" alt="Configuration icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wikis</h3>
+                        <h3>Inheritance Process</h3>
                         <p>
-                            <a href="/azure/devops/project/wiki/provisioned-vs-published-wiki">Provisioned vs published wikis</a>
+                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">About process customization and inherited processes</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/wiki-create-repo">Create a Wiki for your project</a>
+                            <a href="/azure/devops/organizations/settings/work/customize-process-field">Add and manage fields</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/publish-repo-to-wiki">Publish code to a Wiki</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/wiki/markdown-guidance">Basic Markdown reference</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/wiki/wiki-markdown-guidance">Advanced markdown reference</a>
+                            <a href="/azure/devops/organizations/settings/work/customize-process-wit">Add and manage work item types</a>
                         </p>
                     </div>
                 </div>
@@ -62,22 +56,25 @@ Share information, create public projects, and collaborate with team members and
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="Public projects icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="Tools icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Public Projects</h3>
+                        <h3><a href="/azure/devops/reference/xml/index">On-premises XML Process</a></h3>
                         <p>
-                            <a href="/azure/devops/organizations/public/about-public-projects">What is a public project?</a>
+                            <a href="/azure/devops/reference/on-premises-xml-process-model">On-premises XML process model</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/public/create-public-project">Create a public project</a>
+                            <a href="/azure/devops/reference/add-modify-field">Add or modify a field</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/public/make-project-public">Manage project visibility</a>
+                            <a href="/azure/devops/reference/add-modify-wit">Add or modify a work item type</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/public/migration-checklist">Private-to-public migration checklist</a>
+                            <a href="/azure/devops/reference/xml/xml-element-reference">XML element reference</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work">witadmin command line tool</a>
                         </p>
                     </div>
                 </div>
@@ -90,19 +87,69 @@ Share information, create public projects, and collaborate with team members and
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                           <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="Feedback icon" />
+                           <img src="https://docs.microsoft.com/media/common/i_package.svg" alt="Package icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Feedback</h3>
+                        <h3><a href="/azure/devops/organizations/settings/work/hosted/index">Hosted XML Process</a></h3>
                         <p>
-                            <a href="/azure/devops/test/request-stakeholder-feedback">Test & Feedback extension</a>
+                            <a href="/azure/devops/organizations/settings/work/hosted-xml-process-model">Hosted XML process model</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/feedback/get-feedback">Request feedback</a>
+                            <a href="/azure/devops/organizations/settings/work/import-process/customize-process">Customize a Hosted XML process</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/feedback/give-feedback">Microsoft feedback client</a>
+                            <a href="/azure/devops/organizations/settings/work/change-process-from-hosted-to-inherited">Change a project from Hosted XML to an inherited process</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                           <img src="https://docs.microsoft.com/media/common/i_template.svg" alt="Template icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3><a href="/azure/devops/reference/process-templates/index">Process Templates</a></h3>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/customize-process">Customize a process template</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/overview-process-template-files">Process template and plug-in files</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/boards/work-items/guidance/manage-process-templates">Upload or download a process template</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index">Index to XML element definitions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                           <img src="https://docs.microsoft.com/media/common/i_form.svg" alt="Form icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3><a href="/azure/devops/reference/mapping/index">Microsoft Project Mapping File (Deprecated)</a></h3>
+                        <p>
+                            <a href="/azure/devops/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields">Add or change how Microsoft Project fields map to TFS fields</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file">Upload or download the Microsoft Project Mapping file</a>
                         </p>
                     </div>
                 </div>

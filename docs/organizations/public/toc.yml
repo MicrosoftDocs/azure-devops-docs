@@ -1,6 +1,4 @@
-- name: Azure DevOps Collaborate Documentation
-  href: ../../project/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
-- name: Public projects
+- name: Public Projects
   href: index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
 - name: Overview
   items:
@@ -58,12 +56,11 @@
     href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Git Repositories
-    href: ../../repos/git/index.md
-  - name: Work Items
-    href: ../../boards/work-items/index.md 
-  - name: Manage projects
-    href: ../projects/index.md 
-  - name: Process Customization
-    href: ../settings/work/customize-process.md 
+  - name: Manage Projects
+    href: /azure/devops/organizations/projects/index
+  - name: Azure Repos
+    href: /azure/devops/repos/index
+  - name: Azure Boards
+    href: /azure/devops/boards/index
+
 

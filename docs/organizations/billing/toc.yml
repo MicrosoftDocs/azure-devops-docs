@@ -1,5 +1,3 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
-  href: ../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Billing
   href: index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Overview
