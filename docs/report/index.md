@@ -86,11 +86,11 @@ Reporting in Azure DevOps enables software development teams to make data driven
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_extensions.svg" alt="Extend Analytics with OData" />
+                            <img src="https://docs.microsoft.com/media/common/i_extensions.svg" alt="Extendsibility icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Power BI Integration</h3>
+                        <h3>Extend Analytics with OData (Preview)</h3>
                         <p>
                             <a href="/azure/devops/report/extend-analytics/quick-ref">Quick reference</a>
                         </p>

@@ -1,5 +1,3 @@
-- name: Azure DevOps Reporting Documentation
-  href: ../index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: SQL Reports (Legacy)
   href: index.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Overview
