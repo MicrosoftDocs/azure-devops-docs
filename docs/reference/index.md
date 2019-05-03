@@ -24,7 +24,7 @@ featureFlags:
 
 # Azure DevOps Process Customization Documentation 
 
-Customizing your work tracking experience.
+Customize your work tracking experience. For Azure DevOps Services, choose the Inheritance process model. For Azure DevOps Server, choose either Inheritance or On-premises XML process model depending on what was selected for your project collection. For Team Foundation Server deployments, choose On-premises XML process model. 
 
 
 <ul class="panelContent cardsF">
@@ -40,19 +40,19 @@ Customizing your work tracking experience.
                     <div class="cardText">
                         <h3>Inheritance Process</h3>
                         <p>
-                            <a href="/azure/devops/project/wiki/provisioned-vs-published-wiki">Provisioned vs published wikis</a>
+                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process model</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/wiki-create-repo">Create a Wiki for your project</a>
+                            <a href="/azure/devops/organizations/settings/work/customize-process">Customize a project</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/publish-repo-to-wiki">Publish code to a Wiki</a>
+                            <a href="/azure/devops/organizations/settings/work/manage-process">Create and manage a process</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/markdown-guidance">Basic Markdown reference</a>
+                            <a href="/azure/devops/organizations/settings/work/add-custom-field">Add a custom field</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/wiki-markdown-guidance">Advanced markdown reference</a>
+                            <a href="/azure/devops/organizations/settings/work/add-custom-wit">Add a custom work item type</a>
                         </p>
                     </div>
                 </div>
@@ -65,22 +65,22 @@ Customizing your work tracking experience.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="Public projects icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="Tools icon" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>On-Premises XML Process</h3>
                         <p>
-                            <a href="/azure/devops/organizations/public/about-public-projects">What is a public project?</a>
+                            <a href="/azure/devops/reference/on-premises-xml-process-model">On-premises XML process model</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/public/create-public-project">Create a public project</a>
+                            <a href="/azure/devops/reference/add-modify-field">Add or modify a field</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/public/make-project-public">Manage project visibility</a>
+                            <a href="/azure/devops/reference/add-modify-wit">Add or modify a work item type</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/public/migration-checklist">Private-to-public migration checklist</a>
+                            <a href="/azure/devops/reference/xml/xml-element-reference">XML element reference</a>
                         </p>
                     </div>
                 </div>
@@ -93,19 +93,72 @@ Customizing your work tracking experience.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                           <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="Feedback icon" />
+                           <img src="https://docs.microsoft.com/media/common/i_vmm-cloud.svg" alt="Cloud icon" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Hosted XML Process</h3>
                         <p>
-                            <a href="/azure/devops/test/request-stakeholder-feedback">Test & Feedback extension</a>
+                            <a href="/azure/devops/organizations/settings/work/hosted-xml-process-model">Hosted XML process model</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/feedback/get-feedback">Request feedback</a>
+                            <a href="/azure/devops/organizations/settings/work/import-process/customize-process">Customize a Hosted XML process</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/feedback/give-feedback">Microsoft feedback client</a>
+                            <a href="/azure/devops/organizations/settings/work/change-process-from-hosted-to-inherited">Change a project from Hosted XML to Inheritance</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_template.svg" alt="Template icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Process Templates</h3>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/overview-process-template-files">Process template files</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/customize-process">Customize a process template</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/boards/work-items/guidance/manage-process-templates">Upload/download process templates</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index">XML element reference</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common//i_form.svg" alt="Form icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Project Mapping File (Deprecated)</h3>
+                        <p>
+                            <a href="/azure/devops/reference/mapping/index.md">Microsoft Project Mapping File</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file"> Upload/download the Project mapping file</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/xml/customize-project-field-mapping-file">Customize the Project field mapping</a>
                         </p>
                     </div>
                 </div>
@@ -113,3 +166,5 @@ Customizing your work tracking experience.
         </div>
     </li>
 </ul>
+ 
+ 

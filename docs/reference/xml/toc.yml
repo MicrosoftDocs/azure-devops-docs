@@ -73,7 +73,7 @@
         - name: Use categories to group work item types
           href: use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     - name: "Manage permissions (Security)"
-      href: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Troubleshooting
   items:
     - name: Resolve validation errors
