@@ -6,7 +6,7 @@
 - name: Inheritance process
   href: ../organizations/settings/work/toc.yml
 - name: Hosted process
-  href: projects/toc.yml
+  href: ../organizations/settings/work/hosted/toc.yml
 - name: On-premises XML
   href: xml/toc.yml
 - name: Process templates
