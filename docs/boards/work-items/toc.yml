@@ -7,23 +7,17 @@
     href: about-work-items.md
   - name: Quick reference
     href: quick-ref.md
-  - name: Start using Azure Boards
-    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: "View & add work items"
     displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
     href: view-add-work-items.md 
   - name: "Add & update a work item"    
-    displayName: Visual Studio 2019, follow, update status, Discussion  
+    displayName: follow, update status, Discussion  
     href: ../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Drive Git development
     displayName: create branch, new branch 
     href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Define area paths
-    href: ../../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
-  - name: Define iteration paths
-    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
 - name: Tutorials
   items:
   - name: Follow work
@@ -40,8 +34,6 @@
     href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Copy/clone 
     href: ../backlogs/copy-clone-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
-  - name: Work as a Stakeholder
-    href: ../../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Choose a process
@@ -107,8 +99,6 @@
     href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: "Workflow states & categories"
     href: workflow-and-state-categories.md
-  - name: New work item experience
-    href: ../../reference/process/new-work-item-experience.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
 - name: Samples
   items:
   - name: Sample work item templates
@@ -121,13 +111,11 @@
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+  - name: Use work item templates
+    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
   - name: Share information  
     href: ../queries/share-plans.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
     displayName: rich text, attach files, storyboard, social tools
-  - name: Bulk add or modify (Excel)
-    href: ../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
-  - name: Use work item templates
-    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
   - name: Go mobile
     href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Email/print work items
@@ -137,8 +125,6 @@
     href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Switch project or team focus
-    href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Set the Work Items experience (Visual Studio)
     href: set-work-item-experience-vs.md
 - name: Reference
@@ -165,13 +151,6 @@
       href: guidance/cmmi/guidance-requirements-field-reference-cmmi.md
     - name: Review meeting fields
       href: guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
-  - name: "Default permissions (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Changes made to process templates
-    href: guidance/changes-to-process-templates.md
-  - name: Client support for work tracking
-    href: ../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
-  - name: REST API, Work Items
-    href: /rest/api/vsts/wit/work%20items
+
 
 

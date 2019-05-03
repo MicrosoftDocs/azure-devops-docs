@@ -18,16 +18,55 @@
 - name: Queries
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
-  href: plans/toc.yml 
+  href: plans/toc.yml
+- name: REST API Reference
+  items:
+  - name: Work Items
+    href: /rest/api/vsts/wit/work%20items
+  - name: Boards
+    href: /rest/api/vsts/work/boards/set%20board%20options
+  - name: Plans
+    href: /rest/api/vsts/boards/plans 
+  - name: REST API, Queries
+    href: /rest/api/vsts/wit/queries 
+  - name: REST API, Wiql
+    href: /rest/api/vsts/wit/wiql 
+- name: Marketplace Resources
+  items:
+  - name: Wiql Editor (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
+  - name: Enhanced Export (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export
+- name: Azure DevOps Learn Resources
+  items:
+  - name: What is Agile?
+    href: /azure/devops/agile/what-is-agile
+  - name: What is Agile development?
+    href: /azure/devops/agile/what-is-agile-development
+  - name: Agile culture
+    href: /azure/devops/agile/agile-culture
+  - name: Creating productive teams
+    href: /azure/devops/agile/productive-teams
+  - name: What is Scrum?
+    href: /azure/devops/agile/what-is-scrum
 - name: Related Resources
   items:
-  - name: Web portal navigation
-    href: ../../project/navigation/index.md
-  - name: Manage teams and configure team tools
-    href: ../../organizations/settings/manage-teams.md 
-  - name: Add and manage dashboards
-    href: ../../report/dashboards/dashboards.md 
   - name: "Default permissions (Security)"
     href: ../organizations/security/permissions-access-work-tracking.md 
+  - name: Define area paths
+    href: ../organizations/settings/set-area-paths.md
+  - name: Define iteration paths
+    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Manage teams and configure team tools
+    href: ../organizations/settings/manage-teams.md 
+  - name: Dashboards, Charts, Reports, & Widgets
+    href: ../report/dashboards/dashboards.md 
+  - name: Work as a Stakeholder
+    href: ../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Process Customization 
     href: ../reference/index.md
+  - name: Client support for work tracking
+    href: ../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+  - name: Azure DevOps CLI
+    href: /cli/azure/ext/azure-devops/boards
+

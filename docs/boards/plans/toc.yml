@@ -1,9 +1,8 @@
 - name: Plans (Agile at scale)
   href: index.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
-- name: Overview
-  expanded: true
   items:
 - name: Tutorials
+  expanded: true
   items:
   - name: Portfolio management
     href: portfolio-management.md
@@ -23,22 +22,11 @@
   items:
   - name: Edit plan permissions 
     href: edit-delivery-plan-permissions.md
-  - name: Use work item templates
-    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
 - name: Reference
   items:
   - name: Delivery plan keyboard shortcuts
     href: delivery-plan-keyboard-shortcuts.md
-  - name: REST API, Plans
-    href: /rest/api/vsts/boards/plans 
-- name: Resources
-  items:
-  - name: Agile culture
-    href: /azure/devops/agile/agile-culture
-  - name: Scale Agile to large teams
-    href: /azure/devops/agile/scale-agile-large-teams
-  - name: Creating productive teams
-    href: /azure/devops/agile/productive-teams
+
 
