@@ -1,6 +1,4 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
-  href: ../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: "Security & identity"
+- name: "Security & Identity"
   href: index.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
 - name: Overview
   items:
@@ -136,14 +134,10 @@
       displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
   - name: TFSSecurity command
     href: /azure/devops/server/ref/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
-  - name: REST API, Permissions
-    href: /rest/api/vsts/security/permissions 
+  - name: REST API authentication guidance
+    href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: All settings
-    href: ../settings/index.md
-  - name: Manage organizations 
-    href: ../accounts/index.md
-  - name: REST API authentication guidance
-    href: ../../integrate/get-started/authentication/authentication-guidance.md
+  - name: REST API, Permissions
+    href: /rest/api/vsts/security/permissions 
 

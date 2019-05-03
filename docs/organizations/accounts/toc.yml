@@ -1,6 +1,4 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
-  href: ../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: "Manage organizations"
+- name: Manage Organizations
   href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Overview
   items:
@@ -140,16 +138,9 @@
     href: ../../migrate/migrate-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Start using Azure DevOps
-    href: ../../user-guide/index.yml
-  - name: Manage projects
-    href: ../projects/index.md
-  - name: "Security & identity"
-    href: ../../organizations/security/index.md
-  - name: Billing
-    href: ../billing/index.md
-  - name: Manage extensions
-    href: ../../marketplace/index.md
-  - name: Service hooks
-    href: ../../service-hooks/index.md
+  - name: Get Started using Azure DevOps
+    href: ../../get-started/index.md
+  - name: Marketplace & Extensibility  
+    href: ../../marketplace-extensibility/index.md
+ 
 

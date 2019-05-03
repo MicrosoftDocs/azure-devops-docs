@@ -1,14 +1,9 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
-  href: ../../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Process Customization (Inheritance)
+- name: Inheritance Process  
   href: index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
 - name: Overview
-  expanded: true
   items:
     - name: About the inheritance process 
       href: inheritance-process-model.md
-    - name: Customize your work tracking experience
-      href: ../../../reference/customize-work.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
 - name: Quickstarts
   items:
     - name: Add a custom field
@@ -21,12 +16,6 @@
       href: customize-process.md
     - name: Create and manage a process
       href: manage-process.md
-- name: Concepts
-  items:
-     - name: Hosted XML process overview
-       href: hosted-xml-process-model.md
-     - name: Differences between process models
-       href: import-process/differences.md 
 - name: How-to guides
   items:
     - name: Add and manage fields
@@ -43,22 +32,6 @@
       href: custom-controls-process.md
     - name: Customize backlogs & boards
       href: customize-process-backlogs-boards.md
-    - name: Hosted XML process model
-      items:
-        - name: Customize a Hosted XML process
-          href: import-process/customize-process.md
-        - name: Import a process
-          href: import-process/import-process.md
-        - name: Customize form layout
-          href: ../../../reference/customize-wit-form.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
-        - name: Migrate Hosted XML to inherited
-          items:
-            - name: Supported clone operations
-              href: upgrade-support-hosted-to-inherited.md
-            - name: Clone a Hosted XML process to Inheritance
-              href: upgrade-hosted-to-inherited.md
-            - name: Change a project from Hosted XML to Inheritance
-              href: change-process-from-hosted-to-inherited.md
 - name: Reference
   items:
     - name: "Default permissions & access"
@@ -71,10 +44,5 @@
       href: /rest/api/vsts/processdefinitions/work%20item%20types
     - name: Add a custom control to a form (REST APIS)
       href: ../../../extend/develop/custom-control.md
-- name: Resources
-  items:
-    - name: Manage projects
-      href: ../../projects/index.md
-    - name: Migrate & Import
-      href: ../../../migrate/index.md
+
 

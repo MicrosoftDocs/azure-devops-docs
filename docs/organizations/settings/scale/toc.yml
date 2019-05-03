@@ -1,5 +1,3 @@
-- name: Azure DevOps Manage & Configure Resources Documentation
-  href: ../../index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Manage teams
   href: index.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
 - name: Overview
@@ -64,8 +62,4 @@
   items:
   - name: Web portal navigation
     href: ../../../project/navigation/index.md
-  - name: Manage projects
-    href: ../../projects/index.md
-  - name: Security & identity
-    href: ../../security/index.md
 

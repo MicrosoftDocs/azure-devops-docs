@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 05/06/2019
 ---
 
-# Inheritance Process 
+# Process Customization (Inheritance)
 
 [!INCLUDE [temp](../../../_shared/version-azure-devops.md)]
 
@@ -41,9 +41,14 @@ With Azure DevOps Server 2019, you have a choice of using the Inheritance proces
 - [Customize a project](customize-process.md)
 - [Create and manage a process](manage-process.md)
 
+## Concepts
+
+- [Hosted XML process overview](hosted-xml-process-model.md)
+- [Differences between process models](import-process/differences.md) 
+
 ## How-to guides
   
-- [Add and manage fields](customize-process-field.md)
+Add and manage fields](customize-process-field.md)
 - [Add and manage work item types](customize-process-wit.md)
 - [Customize a web form](customize-process-form.md)
 - [Customize a workflow](customize-process-workflow.md)
@@ -56,4 +61,9 @@ With Azure DevOps Server 2019, you have a choice of using the Inheritance proces
 - [Default permissions & access](../../security/permissions-access.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json)
 - [Work tracking object limits](object-limits.md)
 - [REST APIS: Processes](/rest/api/vsts/processes/processes)
+
+## Resources
+
+- [Manage projects](../../projects/index.md)
+- [Migrate & Import](../../../migrate/index.md)
 

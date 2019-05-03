@@ -1,0 +1,86 @@
+- name: Process Templates
+  href: index.md?toc=/azure/devops/reference/process-templates/toc.json&bc=/azure/devops/reference/process-templates/breadcrumb/toc.json
+- name: Overview
+  items:
+    - name: Process template overview
+      href: ../../boards/work-items/guidance/choose-a-process.md?toc=/azure/devops/reference/process-templates/toc.json&bc=/azure/devops/reference/process-templates/breadcrumb/toc.json
+- name: Concepts
+  items:
+    - name: "Workflow states & state categories"
+      href: ../../boards/work-items/workflow-and-state-categories.md
+    - name: Rollup of work and other fields
+      href: support-rollup-of-work-and-other-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    - name: New features added through feature enablement
+      href: new-features-added.md
+- name: How-to Guides
+  items:
+    - name: Upload/download process templates
+      href: ../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    - name: Customize a process template
+      href: ./process-templates/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    - name: Configure features after an upgrade
+      href: ../configure-features-after-upgrade.md
+    - name: Add features manually
+      href: ../add-features-manually.md
+    - name: Additional configuration options
+      href: ../additional-configuration-options.md
+    - name: Update a customized process template to access new features
+      href: ../update-customized-process-template.md
+    - name: When upgrading from TFS 2008 or TFS 2010
+      href: ../upgrade-tfs-2008-or-2010.md
+- name: Reference
+  items:
+    - name: Changes made to process templates
+      href: ../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    - name: Process template XML elements
+      items:
+        - name: XML element index
+          href: process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Process template files
+          href: overview-process-template-files.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define root tasks
+          href: define-root-tasks-process-template-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Process template XML elements
+          href: process-template-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define tasks and task group dependencies
+          href: define-dependencies-plug-ins-groups-tasks.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define tasks to process
+          href: define-tasks-to-process-a-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Classification plug-in
+          href: define-classification-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Portal plug-in
+          href: define-project-portal-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Reporting plug-in
+          href: add-reports-to-the-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: "Configure initial groups, teams, members, and permissions"
+          href: configure-initial-groups-teams-members-permissions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Groups and Permissions plug-in
+          href: define-groups-teams-permissions-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    - name: Define work item tracking plug-ins
+      items:
+        - name: Define the work item tracking plug-in
+          href: define-objects-track-work-items-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Add work item types
+          href: add-wit-definitions-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Add link types
+          href: add-link-type-definitions-to-a-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Add categories
+          href: add-type-wit-category-definitions-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Add work item queries
+          href: add-work-item-queries-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define a work item query
+          href: define-work-item-query-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Add a work item instance
+          href: add-work-item-instance-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    - name: Functional areas and permissions
+      items:
+        - name: Control access to functional areas
+          href: control-access-to-functional-areas.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Version Control plug-in
+          href: define-initial-configuration-version-control.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Test Management plug-in
+          href: define-initial-configuration-test-manager.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Build plug-in
+          href: define-initial-configuration-build.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        - name: Define the Lab Management plug-in
+          href: define-initial-configuration-lab-management.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json

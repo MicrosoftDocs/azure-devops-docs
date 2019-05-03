@@ -13,7 +13,8 @@ author: chcomley
 ms.date: 03/05/2019
 monikerRange: '>= tfs-2015'
 ---
-# Billing management for Azure DevOps
+
+# Billing 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -54,21 +55,21 @@ You can also make some purchases for Azure DevOps Server on your monthly Azure b
 
 ## How-to guides
 
-Billing management
+#### Billing management
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
 * [Change the number of paid users on your organization](buy-basic-access-add-users.md)
 * [Billing FAQ](billing-faq.md)
 
-Marketplace extension management
+#### Marketplace extension management
 
 * [Change the number of paid users for an extension](change-number-paid-extension-users.md)
 * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=azure-devops)
 
-Guidance for Cloud Solution Providers
+#### Guidance for Cloud Solution Providers
 
 * [Set up your customer](csp/set-up-csp-customer.md)
 * [Buy Azure DevOps for your customers](csp/buy-csp-azure-devops.md)
@@ -86,8 +87,8 @@ Guidance for Cloud Solution Providers
 
 ## Other resources
 
-* [Start using Azure DevOps](../../user-guide/index.yml)
-* [Manage organizations](../accounts/index.md)
-* [Azure DevOps Server Administration documentation](/azure/devops/server/index?view=azure-devops)
+- [Get Started using Azure DevOps](../../get-started/index.md)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+* [Azure DevOps Server Administration](/azure/devops/server/server/index)
 * [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)
