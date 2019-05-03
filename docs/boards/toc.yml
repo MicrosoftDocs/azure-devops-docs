@@ -19,17 +19,23 @@
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
   href: plans/toc.yml
+- name: Best tool for the job
+  href: work-items/best-tool-add-update-link-work-items.md
 - name: REST API Reference
   items:
   - name: Work Items
     href: /rest/api/vsts/wit/work%20items
+  - name: Fields
+    href: /rest/api/azure/devops/wit/fields
   - name: Boards
-    href: /rest/api/vsts/work/boards/set%20board%20options
+    href: /rest/api/vsts/work/boards
+  - name: Backlogs
+    href: /rest/api/azure/devops/work/backlogs
+  - name: Queries
+    href: /rest/api/azure/devops/wit/queries
   - name: Plans
     href: /rest/api/vsts/boards/plans 
-  - name: REST API, Queries
-    href: /rest/api/vsts/wit/queries 
-  - name: REST API, Wiql
+  - name: Wiql
     href: /rest/api/vsts/wit/wiql 
 - name: Marketplace Resources
   items:
