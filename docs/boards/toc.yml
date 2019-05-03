@@ -21,6 +21,13 @@
   href: plans/toc.yml 
 - name: Related Resources
   items:
+  - name: Web portal navigation
+    href: ../../project/navigation/index.md
+  - name: Manage teams and configure team tools
+    href: ../../organizations/settings/manage-teams.md 
+  - name: Add and manage dashboards
+    href: ../../report/dashboards/dashboards.md 
+  - name: "Default permissions (Security)"
+    href: ../organizations/security/permissions-access-work-tracking.md 
   - name: Process Customization 
     href: ../reference/index.md
-

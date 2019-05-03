@@ -1,5 +1,3 @@
-- name: Azure Boards Documentation
-  href: ../index.md
 - name: Backlogs
   href: index.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Overview
@@ -107,20 +105,8 @@
     href: backlogs-keyboard-shortcuts.md
   - name: Link types 
     href: ../queries/link-type-reference.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: "Permissions & access (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
 - name: Resources
   items:
-  - name: Work Items
-    href: ../work-items/index.md
-  - name: Boards (Kanban)
-    href: ../boards/index.md
-  - name: Sprints (Scrum)
-    href: ../sprints/index.md
-  - name: Queries
-    href: ../queries/index.md
-  - name: Customization
-    href: ../../reference/index.md
   - name: What is Agile?
     href: /azure/devops/agile/what-is-agile
   - name: What is Agile development?

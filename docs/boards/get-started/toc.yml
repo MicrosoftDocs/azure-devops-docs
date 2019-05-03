@@ -24,18 +24,7 @@
     href: permissions-access-boards.md
   - name: "Why use Azure Boards?"
     href: why-use-azure-boards.md
-  - name: Connect a project to GitHub  
-    href: ../github/install-github-app.md
-- name: Resources
-  items:
-  - name: Web portal navigation
-    href: ../../project/navigation/index.md
-  - name: Azure Boards & GitHub
-    href: ../github/index.md
-  - name: Work items
-    href: ../work-items/index.md
-  - name: Sprints (Scrum)
-    href: ../sprints/index.md
+
 
 
 
