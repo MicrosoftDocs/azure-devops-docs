@@ -19,7 +19,8 @@
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
   href: plans/toc.yml 
-- name: Process Customization (Inheritance)
-  href: ../organizations/settings/work/toc.yml 
-- name: Work Tracking Customization 
-  href: ../reference/toc.yml 
+- name: Related Resources
+  items:
+  - name: Process Customization 
+    href: ../reference/index.md
+
