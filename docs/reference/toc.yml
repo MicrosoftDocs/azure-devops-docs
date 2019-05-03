@@ -13,7 +13,7 @@
   href: process-templates/toc.yml
 - name: Microsoft Project Mapping file
   href: mapping/toc.yml
-- Related Resources
+- name: Related Resources
   items:
   - name: Azure Boards
     href: /azure/devops/boards/index

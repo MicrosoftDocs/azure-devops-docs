@@ -15,7 +15,7 @@
   href: ../notifications/toc.yml
 - name: All settings
   href: settings/toc.yml
-- Related Resources
+- name: Related Resources
   items:
   - name: Process Customization
     href: /azure/devops/reference/index
