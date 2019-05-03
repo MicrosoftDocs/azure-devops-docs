@@ -12,8 +12,6 @@
       href: ../../boards/work-items/workflow-and-state-categories.md
     - name: Rollup of work and other fields
       href: support-rollup-of-work-and-other-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: New features added through feature enablement
-      href: new-features-added.md
 - name: How-to Guides
   items:
     - name: Define a custom link type
@@ -167,7 +165,7 @@
         - name: "Import, export, and manage work item types"
           href: ../witadmin/witadmin-import-export-manage-wits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Manage global lists for work item types
-          href: ./witadmin/manage-global-lists-for-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          href: ../witadmin/manage-global-lists-for-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Manage link types
           href: ../witadmin/manage-link-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: Manage work item fields
