@@ -1,16 +1,12 @@
-- name: Azure Boards Documentation
-  href: ../index.md
 - name: Start using Azure Boards (Agile process)
   href: ../get-started/index-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json
-  items:
-  - name: "What is Azure Boards?"
-    href: ../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
-  - name: Sign up and invite some teammates 
-    href: ../get-started/sign-up-invite-teammates.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
-  - name: Plan and track work
-    href: ../get-started/plan-track-work.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
-  - name: Customize your boards
-    href: ../get-started/customize-boards-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
-  - name: Manage your project
-    href: ../get-started/manage-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+- name: "What is Azure Boards?"
+  href: ../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+- name: Sign up and invite some teammates 
+  href: ../get-started/sign-up-invite-teammates.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+- name: Plan and track work
+  href: ../get-started/plan-track-work.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+- name: Customize your boards
+  href: ../get-started/customize-boards-agile.md?toc=/azure/devops/boards/get-started-agile/toc.json&bc=/azure/devops/boards/get-started-agile/breadcrumb/toc.json  
+
 

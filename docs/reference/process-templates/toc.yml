@@ -3,7 +3,7 @@
 - name: Overview
   items:
     - name: Process template overview
-      href: ../../boards/work-items/guidance/choose-a-process.md?toc=/azure/devops/reference/process-templates/toc.json&bc=/azure/devops/reference/process-templates/breadcrumb/toc.json
+      href: ../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/process-templates/toc.json&bc=/azure/devops/reference/process-templates/breadcrumb/toc.json
 - name: Concepts
   items:
     - name: "Workflow states & state categories"
@@ -11,7 +11,7 @@
     - name: Rollup of work and other fields
       href: ../xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     - name: New features added through feature enablement
-      href: ./new-features-added.md
+      href: ../new-features-added.md
 - name: How-to Guides
   items:
     - name: Upload/download process templates

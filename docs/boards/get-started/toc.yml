@@ -17,9 +17,7 @@
   - name: Basic fields reference
     href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
   - name: Key concepts
-    href: key-concepts.md
-  - name: Best tool for the job
-    href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
+    href: key-concepts.md 
   - name: Default permissions & access (Security)
     href: permissions-access-boards.md
   - name: "Why use Azure Boards?"

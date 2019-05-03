@@ -31,10 +31,6 @@
     href: best-practices-kanban.md
   - name: Kanban key concepts
     href: kanban-key-concepts.md
-  - name: "Workflow states & state categories"
-    href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
-  - name: About teams and Agile tools
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
 - name: How-to guides 
   items:
   - name: Add or edit columns
@@ -63,5 +59,4 @@
     href: kanban-board-controls.md
   - name: Boards (Kanban) board keyboard shortcuts
     href: kanban-board-keyboard-shortcuts.md
-  - name: REST API, Boards
-    href: /rest/api/vsts/work/boards/set%20board%20options
+
