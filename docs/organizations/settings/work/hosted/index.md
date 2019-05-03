@@ -20,7 +20,7 @@ ms.date: 05/06/2019
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. 
 
-A select few customers use the Hosted XML process model, which requires that they have opted into this method. This model relies on updating XML files and then importing the process template of these files. To learn more, see [Customize your work tracking experience](hosted-xml-process-model.md).  
+A select few customers use the Hosted XML process model, which requires that they have opted into this method. This model relies on updating XML files and then importing the process template of these files. To learn more, see [Customize your work tracking experience](../hosted-xml-process-model.md).  
 
 ## How-to guides
   
@@ -29,7 +29,7 @@ TBD
 
 ## Reference
 
-- [Work tracking object limits](object-limits.md)
+- [Work tracking object limits](../object-limits.md)
 - [REST APIS: Processes](/rest/api/vsts/processes/processes)
 
 

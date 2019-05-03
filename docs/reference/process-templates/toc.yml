@@ -9,15 +9,15 @@
     - name: "Workflow states & state categories"
       href: ../../boards/work-items/workflow-and-state-categories.md
     - name: Rollup of work and other fields
-      href: support-rollup-of-work-and-other-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      href: ../xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     - name: New features added through feature enablement
-      href: new-features-added.md
+      href: ./new-features-added.md
 - name: How-to Guides
   items:
     - name: Upload/download process templates
       href: ../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     - name: Customize a process template
-      href: ./process-templates/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      href: customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     - name: Configure features after an upgrade
       href: ../configure-features-after-upgrade.md
     - name: Add features manually
@@ -31,7 +31,7 @@
 - name: Reference
   items:
     - name: Changes made to process templates
-      href: ../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      href: ../../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     - name: Process template XML elements
       items:
         - name: XML element index
