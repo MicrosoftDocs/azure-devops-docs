@@ -1,5 +1,3 @@
-- name: Azure Boards Documentation
-  href: ../index.md
 - name: Work items
   href: index.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
 - name: Overview
@@ -115,21 +113,13 @@
   items:
   - name: Sample work item templates
     href: work-item-template-examples.md
-  - name: Query by title or ID
-    href: ../queries/titles-ids-descriptions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Query by assignment or workflow 
-    href: ../queries/query-by-workflow-changes.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
-  - name: Query by area or iteration 
-    href: ../queries/query-by-area-iteration-path.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json   
-  - name: Query history
-    href: ../queries/history-and-auditing.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
 - name: How-to Guides
   items:
   - name: "Use @mentions in discussions" 
     href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: "Use #ID to link to work items"
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Add tags 
+  - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Share information  
     href: ../queries/share-plans.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
@@ -151,8 +141,6 @@
     href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Set the Work Items experience (Visual Studio)
     href: set-work-item-experience-vs.md
-  - name: "Manage permissions (Security)"
-    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: Work item form controls
@@ -185,17 +173,5 @@
     href: ../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: REST API, Work Items
     href: /rest/api/vsts/wit/work%20items
-- name: Resources
-  items:
-  - name: Boards (Kanban)
-    href: ../boards/index.md
-  - name: Backlogs
-    href: ../backlogs/index.md
-  - name: "Sprints (Scrum)"
-    href: ../sprints/index.md
-  - name: Queries
-    href: ../queries/index.md
-  - name: Customization
-    href: ../../reference/index.md
-  - name: What is Agile?
-    href: /azure/devops/agile/what-is-agile
+
+

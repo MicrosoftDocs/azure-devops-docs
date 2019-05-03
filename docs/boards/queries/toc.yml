@@ -1,5 +1,3 @@
-- name: Azure Boards Documentation
-  href: ../index.md
 - name: Queries
   href: index.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
 - name: Overview
@@ -23,12 +21,8 @@
     href: using-queries.md
   - name: Triage work items  
     href: triage-work-items.md
-  - name: Bulk modify work items
-    href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Work item fields
-    href: ../work-items/work-item-fields.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Linking & traceability
     href: link-work-items-support-traceability.md
 - name: Samples
@@ -68,16 +62,6 @@
     href: organize-queries.md
   - name: Set query permissions (Security) 
     href: set-query-permissions.md
-  - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
-  - name: Add tags to work items
-    href: add-tags-to-work-items.md
-  - name: Use work item templates
-    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
-  - name: "Filter backlogs & queries"
-    href: ../backlogs/filter-backlogs.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
-  - name: Copy list of work items 
-    href: ../backlogs/copy-list.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
 - name: Reference
@@ -86,26 +70,16 @@
     href: query-operators-variables.md
   - name: Query keyboard shortcuts
     href: queries-keyboard-shortcuts.md
-  - name: Work item field index
-    href: ../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
   - name: WIQL syntax
     href: wiql-syntax.md
   - name: Link types 
     href: ../queries/link-type-reference.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json 
-  - name: "Default permissions (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: REST API, Queries
     href: /rest/api/vsts/wit/queries 
   - name: REST API, Wiql
     href: /rest/api/vsts/wit/wiql 
 - name: Resources
   items:
-  - name: Work Items
-    href: ../work-items/index.md
-  - name: Backlogs
-    href: ../backlogs/index.md
-  - name: Customization
-    href: ../../reference/index.md
   - name: Wiql Editor (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
   - name: Enhanced Export (Marketplace extension)
