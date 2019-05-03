@@ -70,30 +70,7 @@
   items:
   - name: Markdown guidance
     href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-  - name: What is the Analytics service?
-    href: ../powerbi/what-is-analytics.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-  - name: Data available
-    href: ../powerbi/data-available-in-analytics.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-  - name: Performance and latency
-    href: ../powerbi/performance-latency.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
-  - name: Reporting roadmap
-    href: ../powerbi/reporting-roadmap.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Power BI Integration
-    href: ../powerbi/index.md
-  - name: Extend Analytics with OData
-    href: ../extend-analytics/index.md
-  - name: Azure Pipelines
-    href: /azure/devops/pipelines/index
-  - name: Azure Boards
-    href: /azure/devops/boards/index
-  - name: Azure Test Plans
-    href: /azure/devops/test/index-tp 
-  - name: REST API, Dashboards
-    href: /rest/api/vsts/dashboard/
-  - name: Marketplace widgets
-    href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
+
 

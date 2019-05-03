@@ -32,7 +32,7 @@ Improve your overall code quality by using manual and exploratory testing servic
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Manual Testing</h3>
+                        <h3>Exploratory & Manual Testing</h3>
                         <p>
                             <a href="/azure/devops/test/overview">Testing scenarios and capabilities</a>
                         </p>
@@ -60,7 +60,7 @@ Improve your overall code quality by using manual and exploratory testing servic
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Exploratory Testing & Stakeholder Feedback</h3>
+                        <h3>Stakeholder Feedback</h3>
                         <p>
                             <a href="/azure/devops/test/perform-exploratory-tests">Install the Test & Feedback extension</a>
                         </p>
@@ -137,6 +137,7 @@ Improve your overall code quality by using manual and exploratory testing servic
             </div>
         </div>
     </li>
+<!---
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -162,4 +163,5 @@ Improve your overall code quality by using manual and exploratory testing servic
             </div>
         </div>
     </li>
+-->
 </ul>

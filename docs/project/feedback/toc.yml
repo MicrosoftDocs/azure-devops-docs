@@ -1,5 +1,3 @@
-- name: Azure DevOps Collaborate Documentation
-  href: ../index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
 - name: Feedback 
   href: index.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json
 - name: How-to Guides
@@ -26,14 +24,12 @@
   items:
   - name: "Default permissions (Security)" 
     href: ../../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-  - name: Give us feedback, get support
-    href: ../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
 - name: Resources 
   items:
   - name: Azure Boards
     href: /azure/devops/boards/index
   - name: Azure Test Plans
-    href: /azure/devops/test/index-tp
+    href: /azure/devops/test/index
   - name: UserVoice Integration (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
   - name: UserVoice UI (Marketplace extension)
