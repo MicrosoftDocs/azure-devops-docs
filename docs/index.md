@@ -430,8 +430,6 @@ featureFlags:
             </div>
         </div>
     </li>
-
-
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -459,9 +457,6 @@ featureFlags:
                             <a href="/azure/devops/organizations/security/index">Security</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Process customization</a>
-                        </p>
-                        <p>
                             <a href="/azure/devops/organizations/settings/index">All settings</a>
                         </p>
                     </div>
@@ -469,7 +464,34 @@ featureFlags:
             </div>
         </div>
     </li>
-
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com//media/common/i_config-tools.svg" alt="Configure icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3><a href="/azure/devops/reference/index">Process Customization</a></h3>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/work/index">Inheritance Process</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/xml/index">On-premises XML Process</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops//organizations/settings/work/hosted/index">Hosted XML Process</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/reference/process-templates/index">Process Templates</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
