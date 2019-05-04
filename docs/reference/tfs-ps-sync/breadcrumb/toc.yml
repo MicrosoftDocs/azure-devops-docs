@@ -1,6 +1,6 @@
 - name: Azure DevOps Server
   tocHref: /azure/devops/server/
-  topicHref: /azure/devops/server/index
+  topicHref: /azure/devops/server/server/index
   items: 
   - name: Project Server integration (Deprecated)
     tocHref: /azure/devops/reference/tfs-ps-sync/
