@@ -45,6 +45,9 @@ featureFlags:
                         <p>
                             <a href="/azure/devops/artifacts/concepts/best-practices">Best practices for using Azure Artifacts</a>
                         </p>
+                        <p>
+                            <a href="/azure/devops/artifacts/concepts/upstream-sources">Consume packages from public sources</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -65,7 +68,7 @@ featureFlags:
                             <a href="/azure/devops/artifacts/get-started-nuget">Get started with NuGet packages</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/artifacts/nuget">Publish to NuGet feeds</a>
+                            <a href="/azure/devops/pipelines/artifacts/nuget">Set up Azure Pipelines and NuGet</a>
                         </p>
                         <p>
                             <a href="/azure/devops/artifacts/nuget/publish">Publish a NuGet package</a>
@@ -131,6 +134,9 @@ featureFlags:
                         </p>
                         <p>
                             <a href="/azure/devops/artifacts/maven/install">Install Maven artifacts</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/artifacts/maven/upstream-sources">Use packages from Maven Central</a>
                         </p>
                     </div>
                 </div>

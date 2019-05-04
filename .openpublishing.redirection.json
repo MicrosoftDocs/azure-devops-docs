@@ -11704,6 +11704,11 @@
       "source_path": "docs/user-guide/what-happened-vsts.md",
       "redirect_url": "/azure/devops/user-guide/what-is-azure-devops#vsts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md",
+      "redirect_url": "/azure/devops/reference/mapping/index",
+      "redirect_document_id": false
     }
   ]
 }
