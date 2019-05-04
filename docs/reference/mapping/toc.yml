@@ -1,13 +1,11 @@
 - name: Microsoft Project Mapping File
-  href: index.md?toc=/azure/devops/reference/mapping/toc.json&bc=/azure/devops/reference/mapping/breadcrumb/toc.json
-- name: Project integration field mapping
-  href: ../xml/add-or-change-how-project-fields-map-to-tfs-fields.md?toc=/azure/devops/reference/mapping/toc.json&bc=/azure/devops/reference/mapping/breadcrumb/toc.json
-- name: Upload/download the Project mapping file
-  href: ../xml/upload-or-download-the-microsoft-project-mapping-file.md?toc=/azure/devops/reference/mapping/toc.json&bc=/azure/devops/reference/mapping/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Customize the Project field mapping
-  href: ../xml/customize-project-field-mapping-file.md?toc=/azure/devops/reference/mapping/toc.json&bc=/azure/devops/reference/mapping/breadcrumb/toc.json
+  href: ../xml/customize-project-field-mapping-file.md
+- name: Upload/download the Project mapping file
+  href: ../xml/upload-or-download-the-microsoft-project-mapping-file.md
 - name: Map Project fields
-  href: ../xml/map-microsoft-project-fields-to-tf-fields.md?toc=/azure/devops/reference/mapping/toc.json&bc=/azure/devops/reference/mapping/breadcrumb/toc.json
+  href: ../xml/map-microsoft-project-fields-to-tf-fields.md
 - name: Project field mappings
-  href: ../xml/field-mappings-in-microsoft-project.md?toc=/azure/devops/reference/mapping/toc.json&bc=/azure/devops/reference/mapping/breadcrumb/toc.json
+  href: ../xml/field-mappings-in-microsoft-project.md
 

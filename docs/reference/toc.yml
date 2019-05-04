@@ -3,11 +3,11 @@
   href: index.md
 - name: About process (work tracking) customization
   href: customize-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Inheritance process
+- name: Inheritance Process Model 
   href: ../organizations/settings/work/toc.yml
-- name: On-premises XML
+- name: On-premises XML Process Model 
   href: xml/toc.yml
-- name: Hosted process
+- name: Hosted XML Process Model 
   href: ../organizations/settings/work/hosted/toc.yml
 - name: Process templates
   href: process-templates/toc.yml
@@ -17,6 +17,8 @@
   items:
   - name: Configure features after an upgrade
     href: configure-features-after-upgrade.md
+  - name: New features added through feature enablement
+    href: new-features-added.md
   - name: Add features manually
     href: add-features-manually.md
   - name: Additional configuration options
@@ -60,3 +62,12 @@
 
 
 
+    - name: Changes made to process templates
+      href: ../../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+
+- name: Overview of system processes
+  href: ../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/process-templates/toc.json&bc=/azure/devops/reference/process-templates/breadcrumb/toc.json
+- name: How-to Guides
+  items:
+    - name: Upload/download process templates
+      href: ../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
