@@ -167,6 +167,28 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_billing.svg" alt="Billing icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Billing</h3>
+                        <p>
+                            <a href="/azure/devops/organizations/billing/overview">Billing overview</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs">Set up billing</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
                             <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security & identity icon" />
                         </div>
                     </div>
@@ -183,62 +205,6 @@ Configure resources and manage settings for an organization, project, team, or u
                         </p>
                         <p>
                             <a href="/azure/devops/organizations/security/change-individual-permissions">Change individual or group permissions</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Process customization</h3>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process overview</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/add-custom-field">Add a custom field</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/add-custom-wit">Add a custom work item type</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/customize-process">Customize a project</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process overview</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/manage-process">Create and manage a process</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_billing.svg" alt="Billing icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Billing</h3>
-                        <p>
-                            <a href="/azure/devops/organizations/billing/overview">Billing overview</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs">Set up billing</a>
                         </p>
                     </div>
                 </div>

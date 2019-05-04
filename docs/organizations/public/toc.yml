@@ -1,9 +1,7 @@
 - name: Public Projects
   href: index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
-- name: Overview
-  items:
-  - name: What is a public project? 
-    href: about-public-projects.md
+- name: What is a public project? 
+  href: about-public-projects.md
 - name: Quickstarts
   items:
   - name: Build OSS repositories - 
@@ -54,13 +52,6 @@
     href: ../../extend/develop/public-project.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Data protection overview
     href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Manage Projects
-    href: /azure/devops/organizations/projects/index
-  - name: Azure Repos
-    href: /azure/devops/repos/index
-  - name: Azure Boards
-    href: /azure/devops/boards/index
+
 
 

@@ -1,6 +1,30 @@
 - name: Azure DevOps Manage & Configure Resources Documentation
   expanded: false
   href: index.md
+- name: Get started as an administrator
+  href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: User Preferences
+  items:
+  - name: Set user preferences
+    href: settings/set-your-preferences.md
+  - name: Set user preferences
+    href: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Set personal favorites
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Configure personal notifications
+    href: ../notifications/howto-manage-personal-notification.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Add an alternate account to your Visual Studio subscription
+    href: /visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Authentication
+    items:
+    - name: Authenticate access with personal access tokens
+      href: accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+    - name: Authorize access to REST APIs with OAuth 2.0
+      href: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+    - name: Use SSH key authentication
+      href: ../git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+    - name: Revoke users' PATs - for admins
+      href: accounts/admin-revoke-user-pats.md
 - name: Teams
   href: settings/scale/toc.yml
 - name: Projects
@@ -15,7 +39,43 @@
   href: ../notifications/toc.yml
 - name: All settings
   href: settings/toc.yml
-- name: Related Resources
+- name: Reference
   items:
+  - name: Features index
+    href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+  - name: "Default permissions & access"
+    href: security/permissions-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+  - name: "Permission lookup guide"
+    href: security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+  - name: Data protection overview
+    href: security/data-protection.md?toc=/azure/devops/organizations/project/toc.json&bc=/azure/devops/organizations/project/breadcrumb/toc.json
+- name: REST API Reference
+  items:
+  - name: Area and Iteration Paths
+    href: /rest/api/vsts/wit/classification%20nodes
+  - name: Authentication guidance
+    href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+  - name: Teams
+    href: /rest/api/azure/devops/core/teams
+  - name: Projects
+    href: /rest/api/azure/devops/core/projects
+  - name: Teams
+    href: /rest/api/vsts/core/teams
+  - name: Organizations
+    href: /rest/api/azure/devops/account/accounts
+  - name: Security
+    href: /rest/api/azure/devops/security/
+  - name: Permissions
+    href: /rest/api/vsts/security/permissions 
+  - name: Processes
+    href: /rest/api/vsts/processes/processes
+- name: Resources
+  items:
+  - name: Marketplace & Extensibility  
+    href: ../marketplace-extensibility/index.md
+  - name: Public projects
+    href: public/index.md
   - name: Process Customization
     href: /azure/devops/reference/index
+  - name: Web Portal Navigation
+    href: ../project/navigation/index.md

@@ -13,10 +13,15 @@
   href: process-templates/toc.yml
 - name: Microsoft Project Mapping file
   href: mapping/toc.yml
-- name: Related Resources
+- name: REST API Reference
+  items:
+  - name: Work Item Types
+    href: /rest/api/azure/devops/processDefinitions/Work%20Item%20Types
+  - name: Add a custom control to a form
+    href: ../../extend/develop/custom-control.md
+- name: Resources
   items:
   - name: Azure Boards
     href: /azure/devops/boards/index
-
   - name: "Workflow states & categories"
     href: workflow-and-state-categories.md

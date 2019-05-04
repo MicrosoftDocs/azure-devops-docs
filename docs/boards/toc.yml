@@ -55,13 +55,13 @@
     href: /azure/devops/agile/productive-teams
   - name: What is Scrum?
     href: /azure/devops/agile/what-is-scrum
-- name: Related Resources
+- name: Resources
   items:
   - name: "Default permissions (Security)"
     href: ../organizations/security/permissions-access-work-tracking.md 
   - name: Define area paths
     href: ../organizations/settings/set-area-paths.md
-  - name: Define iteration paths
+  - name: Define iteration paths (aka sprints)
     href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Manage teams and configure team tools
     href: ../organizations/settings/manage-teams.md 
