@@ -1,3 +1,5 @@
+- name: Azure DevOps Get Started Documentation
+  href: index.md
 - name: Start Using Azure DevOps
   href: ../user-guide/toc.yml
 - name: Web Portal Navigation
@@ -22,28 +24,18 @@
   items:
   - name: Search
     href: https://docs.microsoft.com/rest/api/vsts/search/?view=vsts-rest-4.1
-- name: Related Resources
+- name: IDE Client Resources
   items:
-  - name: Set your preferences  
-    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
-  - name: Manage projects 
-    href: ../organizations/projects/index.md
-  - name: Permissions, Security, & Identity 
-    href: ../organizations/security/index.md
-  - name: Marketplace & Extensibility
-    href: ../marketplace-extensibility/index.md
   - name: Visual Studio IDE
-    href: https://visualstudio.microsoft.com/vs/
+    href: ../organizations/accounts/set-up-vs.md
   - name: Visual Studio Code 
     href: https://code.visualstudio.com/docs
   - name: Visual Studio for Mac
-    href: https://visualstudio.microsoft.com/vs/mac/
-  - name: Search your Wiki
-    href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
-  - name: Code Search Video
-    href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
-  - name: Code Search on Marketplace
-    href: https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search
+    href: /visualstudio/mac
+  - name: Eclipse
+    href: /azure/devops/java/download-eclipse-plug-in
+  - name: IntelliJ IDEA
+    href: /azure/devops/java/download-intellij-plug-in
 - name: Azure DevOps Services status & security
   items: 
   - name: Service status  
@@ -62,4 +54,19 @@
       href: /azure/devops/learn/what-is-devops
     - name: Git at Scale
       href: /azure/devops/learn/git/git-at-scale
+- name: Resources
+  items:
+  - name: Set your preferences  
+    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+  - name: Manage projects 
+    href: ../organizations/projects/index.md
+  - name: Permissions, Security, & Identity 
+    href: ../organizations/security/index.md
+  - name: Marketplace & Extensibility
+    href: ../marketplace-extensibility/index.md
+  - name: Search your Wiki
+    href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
+  - name: Code Search Video
+    href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+
 

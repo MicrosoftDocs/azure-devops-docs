@@ -1,4 +1,4 @@
-- name: Azure DevOps Get Started Documentation
+- name: Azure Repos Documentation
   href: index.md
 - name: Start Using Azure Repos
   href: get-started/toc.yml
@@ -42,7 +42,7 @@
     href: /azure/devops/learn/git/migrate-from-tfvc-to-git
   - name: Migrate from Subversion (SVN) to Git
     href: git/perform-migration-from-svn-to-git.md
-- name: Related Resources
+- name: Resources
   items:
   - name: GitHub & Azure Boards 
     href: ../boards/github/index.md

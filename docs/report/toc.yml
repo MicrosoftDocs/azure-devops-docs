@@ -2,7 +2,7 @@
   expanded: false
   href: index.md
 - name: Reporting roadmap
-  href: reporting-roadmap.md
+  href: powerbi/reporting-roadmap.md
 - name: Dashboards, Charts, Reports, & Widgets
   href: dashboards/toc.yml
 - name: Power BI Integration
