@@ -2,6 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Get Started
-    tocHref: /azure/devops/user-guide/
-    topicHref: /azure/devops/user-guide/index
+  - name: Manage & Configure Resources
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/organizations/index

@@ -6,6 +6,6 @@
     tocHref: /azure/devops/organizations/settings/work/
     topicHref: /azure/devops/reference/index
     items:
-    - name: Inheritance Process
+    - name: Hosted XML Process
       tocHref: /azure/devops/organizations/settings/work/
-      topicHref: /azure/devops/organizations/settings/work/index
+      topicHref: /azure/devops/organizations/settings/work/hosted/index
