@@ -43,12 +43,6 @@
   items:
   - name: Features index
     href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Default permissions & access"
-    href: security/permissions-access.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: "Permission lookup guide"
-    href: security/permissions-lookup-guide.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Data protection overview
-    href: security/data-protection.md?toc=/azure/devops/organizations/project/toc.json&bc=/azure/devops/organizations/project/breadcrumb/toc.json
 - name: REST API Reference
   items:
   - name: Area and Iteration Paths

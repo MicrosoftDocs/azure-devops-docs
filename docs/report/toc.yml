@@ -1,16 +1,16 @@
 - name: Azure DevOps Reporting Documentation
   expanded: false
-  href: index.md
-- name: Reporting roadmap
-  href: powerbi/reporting-roadmap.md
+  href: index.md  
+- name: Reporting roadmap 
+  href: powerbi/reporting-roadmap.md  
 - name: Dashboards, Charts, Reports, & Widgets
-  href: dashboards/toc.yml
+  href: dashboards/toc.yml  
 - name: Power BI Integration
-  href: powerbi/toc.yml 
+  href: powerbi/toc.yml  
 - name: Extend Analytics with OData
-  href: extend-analytics/toc.yml 
-- name: SQL Reports (Legacy)
-  href: sql-reports/toc.yml
+  href: extend-analytics/toc.yml  
+- name: SQL Server Reports (Legacy)
+  href: sql-reports/toc.yml 
 - name: REST API Reference
   items:
   - name: Dashboards
@@ -23,14 +23,14 @@
     href: /rest/api/azure/devops/build/report
 - name: Resources
   items:
-  - name: Azure Boards
+  - name: Azure Boards  
     href: /azure/devops/boards/index
-  - name: Azure Test Plans
+  - name: Azure Test Plans  
     href: /azure/devops/test-plans/index
-  - name: Azure Pipelines
+  - name: Azure Pipelines  
     href: /azure/devops/pipelines/index
-  - name: Work item field index
-    href: ../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+  - name: Work item field index  
+    href: ../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
   - name: Power BI Documentation
