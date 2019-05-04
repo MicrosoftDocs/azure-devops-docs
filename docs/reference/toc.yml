@@ -35,14 +35,14 @@
     href: /rest/api/azure/devops/processadmin/processes
   - name: Work Item Types
     href: /rest/api/azure/devops/processDefinitions/Work%20Item%20Types
-  - name: API SDK reference (Deprecated)
-    items:
-    - name: IProcessTemplates.AddUpdateTemplate
-      href: api-ref/iprocess-templates-add-update-template.md
-    - name: WorkItem.Open method
-      href: api-ref/open.md
-    - name: WorkItem.PartialOpen method
-      href: api-ref/partialopen.md
+- name: API SDK reference (Deprecated)
+  items:
+  - name: IProcessTemplates.AddUpdateTemplate
+    href: api-ref/iprocess-templates-add-update-template.md
+  - name: WorkItem.Open method
+    href: api-ref/open.md
+  - name: WorkItem.PartialOpen method
+    href: api-ref/partialopen.md
 - name: Resources
   items:
   - name: "Workflow states & categories"
