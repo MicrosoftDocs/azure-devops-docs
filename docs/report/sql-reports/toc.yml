@@ -1,10 +1,7 @@
 - name: SQL Reports (Legacy)
   href: index.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-- name: Overview
-  expanded: true
-  items:
-  - name: Reporting Services Reports
-    href: reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+- name: Reporting Services Reports
+  href: reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
@@ -21,8 +18,6 @@
   items:
   - name: Add reports to a team project
     href: ../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-  - name: Change reporting attributes
-    href: ../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
     items:
     - name: Add a report server
       href: ../admin/add-a-report-server.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
@@ -158,9 +153,9 @@
     href: ../admin/resolve-schema-conflicts.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Reporting roadmap
-    href: ../powerbi/reporting-roadmap.md
-  - name: SharePoint Integration
+  - name: Change reporting attributes
+    href: ../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+  - name: SharePoint Integration (Deprecated)
     href: ../sharepoint-dashboards/index.md
   - name: Server Administration 
-    href: /azure/devops/server/index
+    href: /azure/devops/server/server/index

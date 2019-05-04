@@ -1,7 +1,7 @@
 - name: All settings
   href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: About settings
- href: about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  href: about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Service hooks
