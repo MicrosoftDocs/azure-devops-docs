@@ -38,7 +38,7 @@ Customize your work tracking experience. For Azure DevOps Services, choose the I
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Inheritance Process</h3>
+                        <h3><a href="/azure/devops/organizations/settings/work/index">Inheritance Process</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process model</a>
                         </p>
@@ -69,7 +69,7 @@ Customize your work tracking experience. For Azure DevOps Services, choose the I
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>On-Premises XML Process</h3>
+                        <h3><a href="/azure/devops/reference/xml/index">On-Premises XML Process</a></h3>
                         <p>
                             <a href="/azure/devops/reference/on-premises-xml-process-model">On-premises XML process model</a>
                         </p>
@@ -97,7 +97,7 @@ Customize your work tracking experience. For Azure DevOps Services, choose the I
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Hosted XML Process</h3>
+                        <h3><a href="/azure/devops/organizations/settings/work/hosted/index">Hosted XML Process</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/work/hosted-xml-process-model">Hosted XML process model</a>
                         </p>
@@ -122,7 +122,7 @@ Customize your work tracking experience. For Azure DevOps Services, choose the I
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Process Templates</h3>
+                        <h3><a href="/azure/devops/reference/process-templates/index">Process Templates</a></h3>
                         <p>
                             <a href="/azure/devops/reference/process-templates/overview-process-template-files">Process template files</a>
                         </p>
@@ -146,14 +146,11 @@ Customize your work tracking experience. For Azure DevOps Services, choose the I
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common//i_form.svg" alt="Form icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_form.svg" alt="Form icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft Project Mapping File (Deprecated)</h3>
-                        <p>
-                            <a href="/azure/devops/reference/mapping/index.md">Microsoft Project Mapping File</a>
-                        </p>
+                        <h3><a href="/azure/devops/reference/mapping/index">Microsoft Project Mapping File (Deprecated)</a></h3>
                         <p>
                             <a href="/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file"> Upload/download the Project mapping file</a>
                         </p>

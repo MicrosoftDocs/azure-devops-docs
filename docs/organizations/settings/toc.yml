@@ -1,37 +1,29 @@
-- name: All settings
+- name: Additional settings
   href: index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: About settings
-  href: about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-- name: How-to guides
+- name: Build and release
   items:
-  - name: Service hooks
-    href: ../../service-hooks/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-  - name: Set dashboard permissions
-    href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-  - name: Build and release
-    items:
-    - name: Agent pools & queues
-      href: ../../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Service endpoints
-      href: ../../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Retention & limits
-      href: ../../pipelines/policies/retention.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Deployment pools & groups
-      href: ../../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-  - name: Code
-    items:
-    - name: Create & manage Git repositories
-      href: ../../git/create-new-repo.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Manage Git branch policies
-      href: ../../git/branch-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Manage repository permissions
-      href: ../security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-    - name: Add TFVC Check-In Policies
-      href: ../../tfvc/add-check-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
-  - name: Test
-    items:
-    - name: Set test retention policies
-      href: ../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Agent pools & queues
+    href: ../../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Service endpoints
+    href: ../../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Retention & limits
+    href: ../../pipelines/policies/retention.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Deployment pools & groups
+    href: ../../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+- name: Code
+  items:
+  - name: Create & manage Git repositories
+    href: ../../git/create-new-repo.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Manage Git branch policies
+    href: ../../git/branch-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Manage repository permissions
+    href: ../security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+  - name: Add TFVC Check-In Policies
+    href: ../../tfvc/add-check-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+- name: Test
+  items:
+  - name: Set test retention policies
+    href: ../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 
 
 

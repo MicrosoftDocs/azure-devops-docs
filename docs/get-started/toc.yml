@@ -57,7 +57,7 @@
 - name: Resources
   items:
   - name: Set your preferences  
-    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   - name: Manage projects 
     href: ../organizations/projects/index.md
   - name: Permissions, Security, & Identity 

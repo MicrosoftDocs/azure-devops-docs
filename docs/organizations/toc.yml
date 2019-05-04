@@ -1,6 +1,8 @@
 - name: Azure DevOps Manage & Configure Resources Documentation
   expanded: false
   href: index.md
+- name: About settings
+  href: settings/about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: User Preferences
@@ -12,7 +14,7 @@
   - name: Set personal favorites
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Configure personal notifications
-    href: ../notifications/howto-manage-personal-notification.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add an alternate account to your Visual Studio subscription
     href: /visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
   - name: Authentication
@@ -31,13 +33,13 @@
   href: projects/toc.yml
 - name: Organizations
   href: accounts/toc.yml
-- name: Security & Identity
-  href: security/toc.yml
 - name: Billing
   href: billing/toc.yml
+- name: Security & Identity
+  href: security/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
-- name: All settings
+- name: Additional Settings
   href: settings/toc.yml
 - name: Reference
   items:
@@ -48,7 +50,7 @@
   - name: Area and Iteration Paths
     href: /rest/api/vsts/wit/classification%20nodes
   - name: Authentication guidance
-    href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+    href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
   - name: Teams
     href: /rest/api/azure/devops/core/teams
   - name: Projects
@@ -63,13 +65,21 @@
     href: /rest/api/vsts/security/permissions 
   - name: Processes
     href: /rest/api/vsts/processes/processes
+  - name: Notifications
+    href: /rest/api/azure/devops/notification
 - name: Resources
   items:
   - name: Marketplace & Extensibility  
     href: ../marketplace-extensibility/index.md
+  - name: Git
+    href: ../repos/git/index.md
+  - name: Work items
+    href: ../boards/work-items/index.md
   - name: Public projects
     href: public/index.md
   - name: Process Customization
     href: /azure/devops/reference/index
+  - name: Service Hooks
+    href: ../service-hooks/index.md
   - name: Web Portal Navigation
     href: ../project/navigation/index.md

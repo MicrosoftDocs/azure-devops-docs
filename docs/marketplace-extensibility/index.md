@@ -10,7 +10,7 @@ ms.technology: devops-new-user
 ms.assetid:  
 ms.manager: jillfra 
 ms.author: kaelli 
-ms.date: 04/30/2019
+ms.date: 05/06/2019
 featureFlags:
 - clicktale 
 ---
@@ -96,9 +96,6 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                         </p>
                         <p>
                             <a href="/azure/devops/integrate/get-started/authentication/authentication-guidance">Choose the right authentication mechanism</a>
-                        </p>
-                        <p>
-                            <a href="/rest/api/azure/devops/">REST API reference</a>
                         </p>
                     </div>
                 </div>
