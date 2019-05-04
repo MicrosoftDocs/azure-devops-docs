@@ -85,7 +85,7 @@ Use command line tools, REST APIS, client SDKs and more to interface with Azure 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="Feedback icon" />
+                            <img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="DevOps icon" />
                         </div>
                     </div>
                     <div class="cardText">

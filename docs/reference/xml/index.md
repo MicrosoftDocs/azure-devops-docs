@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 05/06/2019
 ---
 
 # On-premises XML Process 
@@ -33,19 +33,17 @@ With Azure DevOps Server 2019, you have a choice of using the Inheritance proces
 Team Foundation Server uses the On-premises XML process model to support customizations. This model relies on updating and importing XML files using the **witadmin** command line tool. For details, see [On-premises XML process model](../on-premises-xml-process-model.md).
 ::: moniker-end  
 
-## 5-Minute Quickstarts  
-
-
-## Tutorials 
-
 
 ## Concepts
 
-- [On-premises XML process model](../on-premises-xml-process-model.md)  
-
+- [Workflow states & state categories](../../boards/work-items/workflow-and-state-categories.md)
+- [Rollup of work and other fields](support-rollup-of-work-and-other-fields.md)
 
 ## How-to Guides
-
+- [Add or modify a field](../add-modify-field.md)
+- [Apply a field rule](apply-rule-work-item-field.md)
+- [Add or modify a work item type](../add-modify-wit.md)
+- [Design the work item form](design-work-item-form.md)
 
 ## Reference  
   
@@ -55,4 +53,5 @@ Team Foundation Server uses the On-premises XML process model to support customi
 - [All WORKFLOW XML elements reference](all-workflow-xml-elements-reference.md) 
 - [WebLayout and Control elements](weblayout-xml-elements.md)
 - [Process configuration XML element reference](process-configuration-xml-element.md)
+- [witAdmin command line reference](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 

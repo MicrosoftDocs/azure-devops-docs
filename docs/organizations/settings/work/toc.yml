@@ -1,9 +1,7 @@
 - name: Inheritance Process  
   href: index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
-- name: Overview
-  items:
-    - name: About the inheritance process 
-      href: inheritance-process-model.md
+  - name: About the inheritance process 
+    href: inheritance-process-model.md
 - name: Quickstarts
   items:
     - name: Add a custom field
@@ -34,15 +32,8 @@
       href: customize-process-backlogs-boards.md
 - name: Reference
   items:
-    - name: "Default permissions & access"
-      href: ../../security/permissions-access.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
     - name: Work tracking object limits
       href: object-limits.md
-    - name: Processes (REST APIS)
-      href: /rest/api/vsts/processes/processes
-    - name: Work Item Types (REST APIS)
-      href: /rest/api/vsts/processdefinitions/work%20item%20types
-    - name: Add a custom control to a form (REST APIS)
-      href: ../../../extend/develop/custom-control.md
+
 
 

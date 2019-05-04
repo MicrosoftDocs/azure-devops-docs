@@ -1,5 +1,3 @@
-- name: Azure DevOps Marketplace & Extensibility Documentation
-  href: ../marketplace-extensibility/index.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Integrate Applications
   href: index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
 - name: Quickstarts
@@ -352,16 +350,8 @@
               href: previous-apis/xamlbuild/queues.md
             - name: Requests
               href: previous-apis/xamlbuild/requests.md
-
 - name: Troubleshooting
   items:
     - name: IIS Basic Authentication and PATs
       href: get-started/authentication/iis-basic-auth.md
-- name: REST API reference
-  href: /rest/api/vsts/
-- name: .NET client libraries reference
-  href: https://docs.microsoft.com/dotnet/api/index?view=azure-devops-dotnet
-- name: How to get help
-  href: ../extend/support/help.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
-- name: Visual Studio extensions
-  href: ide/extensions/overview.md
+
