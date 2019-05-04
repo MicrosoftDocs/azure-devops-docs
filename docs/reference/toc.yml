@@ -59,15 +59,5 @@
     href: ../integrate/concepts/wit-client-om-deprecation.md
   - name: Azure Boards
     href: /azure/devops/boards/index
-
-
-
-    - name: Changes made to process templates
-      href: ../../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-
-- name: Overview of system processes
-  href: ../../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/process-templates/toc.json&bc=/azure/devops/reference/process-templates/breadcrumb/toc.json
-- name: How-to Guides
-  items:
-    - name: Upload/download process templates
-      href: ../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Changes made to process templates
+    href: ../../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
