@@ -125,6 +125,8 @@ Select **true** to delete the repository folder.
 
 ::: moniker range=">= tfs-2015"
 
+## Label sources
+
 [!INCLUDE [include](_shared/label-sources.md)]
 
 The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
@@ -165,6 +167,16 @@ If your sources are in GitHub, then this option publishes the status of your bui
 ### Other types of Git remote repositories
 
 If your source is in any other type of remote repository, then you cannot use Azure Pipelines or TFS to automatically publish the build status to that repository. However, you can use a [build badge](../build/options.md) as a way to integrate and show build status within your version control experiences.
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+## Checkout path
+
+By default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+
+Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
 ::: moniker-end
 

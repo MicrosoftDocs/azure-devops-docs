@@ -10,43 +10,47 @@ ms.author: dastahel
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 08/31/2018
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ---
 
 # Build, test, and deploy Android apps
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
-
 This guidance explains how to automatically build, test, and deploy Android apps.
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-> [!NOTE]
-> 
-> This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
-::: moniker-end
-
-Before this guidance, see [Create your first pipeline](../create-first-pipeline.md).
 
 ## Get started
 
-You can build Android projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Android. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
+Follow these instructions to set up a pipeline for a sample Android app.
 
-### Sample code
+1. The code in the following repository is a simple Android app. To get started, fork this repo to your GitHub account.
 
-To get started using a sample Android project, fork this repository in GitHub, or import it into Azure Repos or TFS:
+    ```
+    https://github.com/MicrosoftDocs/pipelines-android
+    ```
 
-```
-https://github.com/MicrosoftDocs/pipelines-android
-```
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-### Your code
+1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-To get started using your own code, add the following YAML to a file named **azure-pipelines.yml** in the root of your repository.
-Change values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When the list of repositories appears, select your Java sample repository.
+
+1. Azure Pipelines will analyze the code in your repository and recommend starter templates for your pipeline. Select the `Android` template.
+
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+
+1. A new run is started. Wait for the run to finish.
+
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+
+> [!TIP]
+> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+## Gradle
+
+Gradle is a common build tool used for building Android projects. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android

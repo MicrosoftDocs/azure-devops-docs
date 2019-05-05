@@ -25,7 +25,7 @@ Use this task in a build or release pipeline to invoke a HTTP triggered function
 
 ## Demands
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="azure-devops"
 ## YAML snippet

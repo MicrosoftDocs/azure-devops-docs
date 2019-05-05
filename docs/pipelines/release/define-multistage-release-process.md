@@ -84,7 +84,7 @@ In this section, you will check that the triggers you need for continuous deploy
 
 In this section, you will add a new stage to the release pipeline. The two stages will deploy your app to the
 "QA" and the "Production" targets (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a
-live or production server. Each [stage](environments.md)
+live or production server. Each [stage](../process/stages.md)
 represents one deployment target, though that target could be a physical or virtual server,
 a groups of servers, or any other legitimate physical or virtual deployment target.
 

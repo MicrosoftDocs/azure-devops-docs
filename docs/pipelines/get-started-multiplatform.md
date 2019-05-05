@@ -122,7 +122,7 @@ Now that you've configured your GitHub repo with a pipeline, you're ready to bui
 
 You've just learned the basics of using multiple platforms with Azure Pipelines. From here, you can learn more about:
 
-* Running [multiple jobs](process/multiple-phases.md?tabs=yaml)
+* [Jobs](process/phases.md?tabs=yaml)
 * [Cross-platform scripting](scripts/cross-platform-scripting.md)
 * [Templates](process/templates.md) to remove the duplication
 * Building [Node.js](languages/javascript.md) apps

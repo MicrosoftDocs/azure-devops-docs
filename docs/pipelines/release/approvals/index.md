@@ -65,7 +65,7 @@ though service management methodologies such as ITIL. For more details, see [Rel
 * [Gates](gates.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [ServiceNow release and deployment control](servicenow.md)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](index.md)
 

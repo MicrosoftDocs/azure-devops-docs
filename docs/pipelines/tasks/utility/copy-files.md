@@ -166,7 +166,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](_img/copy-files.png) **Utility: Copy Files**
 
@@ -251,7 +251,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](_img/copy-files.png) **Utility: Copy Files**
 
