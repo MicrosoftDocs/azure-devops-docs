@@ -18,7 +18,7 @@ For a while now, one of the [top customer requests](http://visualstudio.uservoic
 
 **Important:** Unfortunately, we do not yet support linking an existing VS Online account to AAD, and therefore there’s no way to use your AD credentials to log into an account you’ve already created. However, that scenario is next on our list and we are hard at work and will enable it as soon as we can.
 
-[Find out more about Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
+[Find out more about Azure Active Directory](https://azure.microsoft.com/documentation/services/active-directory/)
 
 ###Create a new account and connect it to Azure Active Directory
 

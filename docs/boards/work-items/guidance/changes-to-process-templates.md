@@ -10,33 +10,34 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 04/11/2019
 ---
 
 # Changes made to process templates  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
+To support the addition of new features, changes are introduced periodically to the core system processes or process template&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md). A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
+
 > [!NOTE]    
->this article describes changes made to the core system processes&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both Azure Boards and TFS. 
->
-> Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on an on-premises TFS may require running the Configure Feature Wizard after updating to a later version of TFS.       
-
-To support the addition of new features, changes are introduced periodically to the core system processes or process template. A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
-
-If you've customized your project and haven't upgraded TFS for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you update TFS](../../../reference/new-features-added.md) for a description of each feature added with the updates. 
-
+> This article describes changes made to the core system processes with updates made to the on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version.  The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.        
+If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](../../../reference/new-features-added.md) for a description of each feature added with the updates. 
 
 
 <table>
 <tbody valign="top">
 <tr>
-<th width="15%">
-<p>TFS update</p>
-</th>
-<th>
-<p>Changes introduced</p>
-</th>
+<th width="22%">Version</th>
+<th width="78%">Changes introduced</th>
+</tr>
+
+<tr>
+<td>
+<p>Azure DevOps Server 2019</p>
+</td>
+<td>
+<p>Predefined Shared Queries are no longer created upon project creation. The definitions for Shared Queries have been removed from the process template. Shared Queries defined in custom process templates are created. You can also add Shared Queries to a process template as described in [Add work item queries to a process template](../../../reference/process-templates/add-work-item-queries-process-template.md).</p>
+</td>
 </tr>
 
 <tr>

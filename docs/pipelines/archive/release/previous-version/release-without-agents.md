@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -103,7 +103,7 @@ for any computer you plan on using in your environment.
 
 Microsoft Azure makes it easy to set up VMs to use as servers 
 in your environment. Azure adds your VMs to
-**[cloud services](http://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**.
+**[cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**.
 You'll need a Microsoft Azure account to create your VMs.
 If you don't have one yet, sign up for free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 

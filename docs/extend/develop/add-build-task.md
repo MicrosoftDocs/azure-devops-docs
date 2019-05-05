@@ -112,7 +112,7 @@ tsc --init
 ```
 
 In addition, for this example we want to compile to the ES6 standard instead of ES5.
-To ensure this happens, open the newly generated ```tsconfig.ts``` and update the ```target``` field to "es6".
+To ensure this happens, open the newly generated ```tsconfig.json``` and update the ```target``` field to "es6".
 
 >[!NOTE]
 >To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
@@ -437,7 +437,7 @@ After you have your packaged extension in a .vsix file, you're ready to publish 
 All extensions, including those from Microsoft, are identified as being provided by a publisher.
 If you aren't already a member of an existing publisher, you'll create one.
 
-1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher)
+1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage)
 2. If you are not already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
  * Specify an identifier for your publisher, for example: `mycompany-myteam`
     * This will be used as the value for the `publisher` attribute in your extensions' manifest file.

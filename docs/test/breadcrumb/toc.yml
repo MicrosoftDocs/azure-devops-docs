@@ -6,6 +6,6 @@
     tocHref: /azure/devops/test/
     topicHref: /azure/devops/test/index-tp
     items:
-    - name: Test
+    - name: Exploratory and manual testing
       tocHref: /azure/devops/test/
       topicHref: /azure/devops/test/index

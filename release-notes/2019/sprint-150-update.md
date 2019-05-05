@@ -25,7 +25,7 @@ General:
 Azure Boards:
 
 - [Query work based on Azure Active Directory groups](#query-work-based-on-azure-active-directory-groups)
-- [Share you team’s board using a badge](#share-you-teams-board-using-a-badge)
+- [Share your team’s board using a badge](#share-your-teams-board-using-a-badge)
 - [Query for work relative to the start of the day, week, month, or year](#query-for-work-relative-to-the-start-of-the-day-week-month-or-year)
 - [Export query results to a CSV file](#export-query-results-to-a-csv-file)
 
@@ -77,14 +77,14 @@ Last October, we released the public preview of the dark theme as part of the ne
 
 With the increased adoption of Azure Active Directory and prevalence of using groups to manage security, teams have increasingly been looking for ways to leverage those groups in Azure Boards. Now, in addition to querying work items which have been assigned or changed by specific people using the **In Group** or **Not In Group** operators, you can also use Azure Active Directory groups directly.
 
-See the [query operators]( https://docs.microsoft.com/en-us/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops#team-or-group-membership-queries) documentation for more information.
+See the [query operators]( https://docs.microsoft.com/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops#team-or-group-membership-queries) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/150_04.png "Query for work based")
 
-### Share you team’s board using a badge
+### Share your team’s board using a badge
 
-The repository’s README is often the home that your project team turns to for information about how to contribute to and use your solution. Now, like you can with a build or deployment status in Azure Pipelines, you can add a badge for your team’s board in Azure Boards to your README. The badge can be configured to show only the **In Progress** columns or all columns, and even be made visible publicly if your project is open source.
+The repository’s README is often the home that your project team turns to for information about how to contribute to and use your solution. Now, like you can with a build or deployment status in Azure Pipelines, you can add to your README a badge for your team’s board in Azure Boards. You can configure the badge to show only the **In Progress** columns or all columns, and even make the badge visible publicly if your project is open source.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/150_29.png "Share your team's boards using badge")
@@ -103,7 +103,7 @@ While teams often focus on work within the context of what’s coming up next or
 * @StartOfWeek
 * @StartOfDay
 
-Each of these macros also accepts a new modifier string that lets you shift the data by different date units. For example, you can write a query to find all work items completed in the first quarter of this year by querying on State Change Date >= @StartOfYear and State Change Date <= @StartOfYear(“+3M”). See the [query macros](https://docs.microsoft.com/en-us/azure/devops/boards/queries/query-operators-variables?view=azure-devops#query-macros-or-variables) documentation for more information.
+Each of these macros also accepts a new modifier string that lets you shift the data by different date units. For example, you can write a query to find all work items completed in the first quarter of this year by querying on State Change Date >= @StartOfYear and State Change Date <= @StartOfYear(“+3M”). See the [query macros](https://docs.microsoft.com/azure/devops/boards/queries/query-operators-variables?view=azure-devops#query-macros-or-variables) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/150_26.png "Query for work relative to the start of the day, week, month, or year" )
@@ -286,12 +286,12 @@ Azure PowerShell provides a set of cmdlets that you can use to manage Azure reso
 
 Previously, we didn’t provide support for the Azure PowerShell Az module in our hosted agents. With the new Azure PowerShell task version 4.* in build and release pipelines, we have added support for the new Az module for all platforms. Azure PowerShell task version 3.* will continue to support the AzureRM module. However, to keep up with the latest Azure services and features, we recommend that you switch to the Azure PowerShell task version 4.* as soon as possible.
 
-The Az module has a compatibility mode to help you use existing scripts while you update them to use the new syntax. To enable compatibility for the Az module, use the `Enable-AzureRmAlias` command. Aliases let you use the old cmdlet names with Az module. You can get more details on migrating from the Azure RM module to the Azure PowerShell Az module [here](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-1.5.0#migrate-existing-scripts-to-az).
+The Az module has a compatibility mode to help you use existing scripts while you update them to use the new syntax. To enable compatibility for the Az module, use the `Enable-AzureRmAlias` command. Aliases let you use the old cmdlet names with Az module. You can get more details on migrating from the Azure RM module to the Azure PowerShell Az module [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.5.0#migrate-existing-scripts-to-az).
 
 > [!NOTE]
 > You need to install the Az module on your agent machine if you are using private agents.
 
-For more information on the Azure PowerShell Az module, see the documentation [here](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-1.4.0&viewFallbackFrom=azps-1.3.0#the-future-of-support-for-azurerm).
+For more information on the Azure PowerShell Az module, see the documentation [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.4.0&viewFallbackFrom=azps-1.3.0#the-future-of-support-for-azurerm).
 
 ### Resource authorization improvements
 
@@ -341,53 +341,53 @@ It is important to have metrics and insights to continuously improve the through
 
 We're excited to announce that the following Analytics features will be included in Azure DevOps at no additional cost. 
 
-1. The [Analytics Widgets](https://docs.microsoft.com/en-us/azure/devops/report/analytics/analytics-widgets?view=azure-devops) are configurable modules that display data on a dashboard and help you monitor the progress of your work. The widgets included are the following:
+1. The [Analytics Widgets](https://docs.microsoft.com/azure/devops/report/analytics/analytics-widgets?view=azure-devops) are configurable modules that display data on a dashboard and help you monitor the progress of your work. The widgets included are the following:
 
-    * [Burndown and Burnup](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/configure-burndown-burnup-widgets?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) charts monitor the progress of a set of scoped work over a period of time.
+    * [Burndown and Burnup](https://docs.microsoft.com/azure/devops/report/dashboards/configure-burndown-burnup-widgets?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) charts monitor the progress of a set of scoped work over a period of time.
 
         > [!div class="mx-imgBorder"]
         > ![Badge](_img/150_16.png "Burndown and burnup charts")
 
-    * [Cycle Time and Lead Time](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) to visualize how work moves through your team's development cycle
+    * [Cycle Time and Lead Time](https://docs.microsoft.com/azure/devops/report/dashboards/cycle-time-and-lead-time?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) to visualize how work moves through your team's development cycle
 
         > [!div class="mx-imgBorder"]
         > ![Badge](_img/150_17.png "Cycle Time and Lead Time")
 
-    * [Cumulative Flow Diagram (CFD)](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/cumulative-flow?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) tracks work items as they progress through various states.
+    * [Cumulative Flow Diagram (CFD)](https://docs.microsoft.com/azure/devops/report/dashboards/cumulative-flow?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) tracks work items as they progress through various states.
 
         > [!div class="mx-imgBorder"]
         > ![Badge](_img/150_18.png "Cumulative Flow Diagram")
 
-    * [Velocity](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/team-velocity?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) track how a team is delivering value over multiple sprints.
+    * [Velocity](https://docs.microsoft.com/azure/devops/report/dashboards/team-velocity?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops) track how a team is delivering value over multiple sprints.
 
         > [!div class="mx-imgBorder"]
         > ![Badge](_img/150_19.png "Velocity chart")
 
-    * [Test Results Trend](https://docs.microsoft.com/en-us/azure/devops/report/dashboards/configure-test-results-trend?view=azure-devops) to monitor test trends, detect failure and duration patterns for tests over single or multiple pipelines.
+    * [Test Results Trend](https://docs.microsoft.com/azure/devops/report/dashboards/configure-test-results-trend?view=azure-devops) to monitor test trends, detect failure and duration patterns for tests over single or multiple pipelines.
 
         > [!div class="mx-imgBorder"]
         > ![Badge](_img/150_20.png "Test results trend")
 
-2. In the product we are including the [top failing test report](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops#view-test-analytics-for-builds) to get insights about top failing tests in your pipeline to help improve pipeline reliability and reduce test debt.
+2. In the product we are including the [top failing test report](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops#view-test-analytics-for-builds) to get insights about top failing tests in your pipeline to help improve pipeline reliability and reduce test debt.
 
     > [!div class="mx-imgBorder"]
     > ![Badge](_img/150_21.png "Test failure report")
 
-We will also continue to offer [Power BI integration through analytics views](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/index?view=azure-devops) and direct access to our [OData endpoint](https://docs.microsoft.com/en-us/azure/devops/report/extend-analytics/index?view=azure-devops) in preview for all Azure DevOps Services customers.
+We will also continue to offer [Power BI integration through analytics views](https://docs.microsoft.com/azure/devops/report/powerbi/index?view=azure-devops) and direct access to our [OData endpoint](https://docs.microsoft.com/azure/devops/report/extend-analytics/index?view=azure-devops) in preview for all Azure DevOps Services customers.
 
 If you are using the Analytics marketplace extension, you can continue to use Analytics as you did before and do not need to follow any additional steps. This means that we will deprecate the [Analytics marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) for hosted customers.
 
 The Azure DevOps Analytics offering is the future of reporting and we will continue to invest in new features driven by Analytics. You can find more information about Analytics in the links below.
 
-* [Analytics overview documentation](https://docs.microsoft.com/en-us/azure/devops/report/analytics/what-is-analytics?view=azure-devops)
+* [Analytics overview documentation](https://docs.microsoft.com/azure/devops/report/analytics/what-is-analytics?view=azure-devops)
 
-* [Analytics widgets](https://docs.microsoft.com/en-us/azure/devops/report/analytics/analytics-widgets?view=azure-devops)
+* [Analytics widgets](https://docs.microsoft.com/azure/devops/report/analytics/analytics-widgets?view=azure-devops)
 
-* [Top failing test report](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops#view-test-analytics-for-builds)
+* [Top failing test report](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json&view=azure-devops#view-test-analytics-for-builds)
 
-* [Power BI integration](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/index?view=azure-devops)
+* [Power BI integration](https://docs.microsoft.com/azure/devops/report/powerbi/index?view=azure-devops)
 
-* [OData endpoint](https://docs.microsoft.com/en-us/azure/devops/report/extend-analytics/index?view=azure-devops)
+* [OData endpoint](https://docs.microsoft.com/azure/devops/report/extend-analytics/index?view=azure-devops)
 
 * [Azure DevOps Analytics](https://channel9.msdn.com/Events/connect/2017/T251)
 
@@ -400,7 +400,7 @@ Until now, you didn't have a way of knowing when the content on a  wiki page was
 > [!div class="mx-imgBorder"]
 ![Badge](_img/150_03.png "Wiki page")
 
-This feature has been prioritized based on [this](https://developercommunity.visualstudio.com/content/idea/379604/wiki-notifications.html) suggestion ticket. To learn more, see our documentation [here](https://docs.microsoft.com/en-us/azure/devops/project/wiki/follow-notifications-wiki-pages?view=azure-devops).
+This feature has been prioritized based on [this](https://developercommunity.visualstudio.com/content/idea/379604/wiki-notifications.html) suggestion ticket. To learn more, see our documentation [here](https://docs.microsoft.com/azure/devops/project/wiki/follow-notifications-wiki-pages?view=azure-devops).
 
 ## Administration
 

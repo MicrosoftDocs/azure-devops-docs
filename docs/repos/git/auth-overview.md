@@ -28,7 +28,7 @@ Limit the scope of access and revoke these credentials from the web when they ar
 | Authentication Type | When to use | Secure? | Ease of setup | Additional tooling required |   
 |---------------------|:-------------:|:------------:|:---------------------|-------------|   
 | Personal access tokens | When you need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | Optional ([Git credential managers](set-up-credential-managers.md)) |   
-| SSH | When you already have SSH keys set up | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |    
+| SSH | When you already have SSH keys set up, or are on macOS or Linux | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |
 | Alternate credentials | When you can't use personal access tokens or SSH |  Least secure | Easy | No |
 
 ## Personal access tokens

@@ -4,7 +4,7 @@ description: Set up continuous integration (CI) and continuous deployment (CD) f
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.author: ahomer
+ms.author: ronai
 author: mlearned
 ms.reviewer: vijayma
 ms.manager: jillfra
@@ -60,7 +60,7 @@ In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 If you are not familiar with the general concepts in this section, see
-[Accessing your project settings](https://docs.microsoft.com/en-us/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
+[Accessing your project settings](https://docs.microsoft.com/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).
 
 

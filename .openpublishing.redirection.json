@@ -8232,7 +8232,7 @@
     },
     {
       "source_path": "docs/accounts/add-basic-or-vs-subscription-users.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-basic-or-vs-subscription-users",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
       "redirect_document_id": false
     },
     {
@@ -11322,12 +11322,22 @@
     },
     {
       "source_path": "docs/organizations/accounts/about-vsts-tfs.md",
-      "redirect_url": "/azure/devops/organizations/user-guide/about-azure-devops-services-tfs",
+      "redirect_url": "/azure/devops/user-guide/about-azure-devops-services-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/what-is-vsts.md",
-      "redirect_url": "/azure/devops/organizations/user-guide/what-is-azure-devops-services",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/what-is-azure-devops-services.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/what-is-azure-devops-server.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops",
       "redirect_document_id": false
     },
     {
@@ -11551,6 +11561,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/articles/phase-features-with-feature-flags.md",
+      "redirect_url": "/azure/devops/migrate/phase-features-with-feature-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/security-validation-cicd-pipeline.md",
+      "redirect_url": "/azure/devops/migrate/security-validation-cicd-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/phase-rollout-with-rings.md",
+      "redirect_url": "/azure/devops/migrate/phase-rollout-with-rings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/articles/service-status-info.md",
+      "redirect_url": "/azure/devops/user-guide/service-status-info",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/build/ci-build-github.md",
       "redirect_url": "/azure/devops/pipelines/get-started-designer",
       "redirect_document_id": false
@@ -11653,6 +11683,26 @@
     {
       "source_path": "docs/pipelines/get-started-yaml.md",
       "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/service-status-info.md",
+      "redirect_url": "/azure/devops/user-guide/service-status-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/add-basic-or-vs-subscription-users.md",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/reduce-cancel-paid-users.md",
+      "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users#decrease-amount-of-paid-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/what-happened-vsts.md",
+      "redirect_url": "/azure/devops/user-guide/what-is-azure-devops#vsts",
       "redirect_document_id": false
     }
   ]

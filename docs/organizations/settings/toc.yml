@@ -4,7 +4,7 @@
   expanded: true
   items:
     - name: About settings
-      href: about-settings.md
+      href: about-settings.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: When to add a team or project
       href: ../projects/about-projects.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
 - name: Quickstarts
@@ -83,9 +83,10 @@
       href: ../public/make-project-public.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
     - name: Change service visibility
       href: set-services.md
-    - name: Manage teams and configure team tools
-      href: manage-teams.md
+    - name: Manage teams 
       items:
+        - name: Manage teams and configure team tools
+          href: manage-teams.md
         - name: Use work item templates
           href: ../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
         - name: Customize cards on boards
@@ -149,8 +150,9 @@
         - name: Customize backlogs & boards
           href: ./work/customize-process-backlogs-boards.md
         - name: Hosted XML process model
-          href: ./work/hosted-xml-process-model.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
           items:
+            - name: Hosted XML process overview
+              href: ./work/hosted-xml-process-model.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
             - name: Customize a Hosted XML process
               href: ./work/import-process/customize-process.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
             - name: Import a process
@@ -208,8 +210,9 @@
     - name: Work tracking object limits
       href: ./work/object-limits.md
     - name: REST APIs
-      href: /rest/api/vsts
       items:
+        - name: Azure DevOps REST APIs
+          href: /rest/api/vsts
         - name: Area and Iteration Paths
           href: /rest/api/vsts/wit/classification%20nodes
         - name: Processes

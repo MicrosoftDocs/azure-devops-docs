@@ -19,17 +19,36 @@ ms.date: 03/05/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
 
-Use this guide to connect Azure Boards with one or more GitHub repositories. If you need to sign up for Azure Boards, see our [Get started guide for Azure Boards](../get-started/index.md).  
-
+Use this guide to connect Azure Boards with one or more GitHub repositories.  
+ 
 [!INCLUDE[temp](../../_shared/version-selector-minimize.md)]
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.  
 
 [!INCLUDE[temp](../_shared/github-platform-support.md)]
 
-Integration steps include: 
-- [Connect Azure Boards to GitHub](connect-to-github.md)  
+
+::: moniker range="azure-devops"
+
+To connect Azure Boards to GitHub.com, [install and configure the Azure Boards app from GitHub](install-github-app.md). Or, alternatively [connect and configure from Azure Boards](connect-to-github.md). The first method is the recommended method as it provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. 
+
+To connect Azure Boards to a GitHub Enterprise Server, see  [connect from Azure Boards](connect-to-github.md). 
+
+Once you've configured the connection, you can then exercise these features:
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
+- [Configure status badges](configure-status-badges.md)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Integration steps include: 
+- [Connect Azure Boards to GitHub Enterprise Server](connect-to-github.md)
+- [Link GitHub commits and pull requests to work items](link-to-from-github.md)
+- [Configure status badges](configure-status-badges.md)
+
+::: moniker-end
+
 
 ### Videos
 

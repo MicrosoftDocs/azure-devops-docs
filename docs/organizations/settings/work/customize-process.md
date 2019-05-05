@@ -11,14 +11,27 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 11/19/2018
+ms.date: 04/22/2019
 ---
 
 # Customize a project using an inherited process
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
+
+::: moniker range="azure-devops"
+
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Basic](/azure/devops/boards/get-started/track-issues-tasks), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
 Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
+
+::: moniker-end
+
+
 You can only customize inherited processes.  Any changes you make to the inherited process automatically appears in the projects that use that process. 
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]

@@ -11,7 +11,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/20/2018
+ms.date: 04/11/2019
 ---
 
 # CMMI process
@@ -24,32 +24,21 @@ The CMMI process supports the following work item types (WITs) to plan and track
 
 <img src="_img/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
 
-In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional .  
+In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
-::: moniker range="azure-devops"
-> [!NOTE]  
-> You can customize the work tracking system for your project based on the CMMI process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-> [!NOTE]  
-> The latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../../reference/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
->
->The following WITs are available as follows: Epic, TFS 2015 and later versions; 
->Shared Parameters, TFS 2013.2 and later versions; 
->and Test Plan and Test Suite, TFS 2013.3 and later versions.   
->
->Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a project from TFS. Other resource requirements apply. 
-::: moniker-end
+[!INCLUDE [temp](../../_shared/process-customize.md)] 
 
 <a id="start-using" />
+
 ## Plan and track work with CMMI
+
 <meta name="description" content="CMMI project management" />
+
 Teams plan their project by capturing features and requirements. When teams work in sprints, they define tasks and link them to requirements. To gain insight into a rollup of requirements across teams, program managers link requirements to a feature. Blocking issues are tracked using issues. For details on using these WITs, see [CMMI process work item types and workflow](cmmi-process-workflow.md)
 
 The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../../get-started/what-is-azure-boards.md).  
 
-*Click on one of the following images to go to the linked article.*
+*Click one of the following images to go to the linked article.*
 
 [![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
@@ -58,21 +47,23 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 
 <a id="shared-queries"></a> 
+
 ## List work items
-You can use shared work item queries to list work items based on their type, such as change requests, bugs, tasks, and requirements.  
+
+You can use work item queries to list work items based on their type, such as change requests, bugs, tasks, and requirements.  
+
+[!INCLUDE [temp](../../_shared/shared-queries.md)] 
+
+
+::: moniker range="<= tfs-2018"
+
+Or, use one of the shared queries that the CMMI process provides.
 
 ![CMMI shared queries](_img/IC667909.png)
 
 [Descriptions of predefined queries](#predefined-queries) are listed later in this article.  
 
-You can open a query from the work items page and then use the [query editor to apply different filter criteria](../../queries/using-queries.md). Also, you can [add queries to team dashboards](../../../report/dashboards.md).  
-
-
->[!TIP]  
->Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../queries/query-by-date-or-current-iteration.md).  
-
-
-From Team Explorer, you can open any [work item query in Excel](../../backlogs/office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
+::: moniker-end
 
 [!INCLUDE [temp](../../_shared/quick-tips-shared-query.md)] 
 
@@ -87,9 +78,8 @@ To get started, you can open a shared query and create a chart based on your tra
 [![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 
-::: moniker range=">= azure-devops-2019"
 [!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
-::: moniker-end
+
 
 ::: moniker range="<= azure-devops-2019"
 <a id="reports"></a>
@@ -118,11 +108,12 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 ### CMMI process versions  
 
-As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
+As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the Azure DevOps on-premises process templates. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
+> | Azure DevOps Server 2019 | CMMI | 17 |
 > | TFS 2018 | CMMI | 16 |
 > | TFS 2017 | CMMI | 15 |
 > | TFS 2015 | CMMI | 7 |
@@ -149,78 +140,88 @@ Using the CMMI template and guidance can help you achieve the aims of CMMI if yo
 
 
 <a id="predefined-queries" />
+
+::: moniker range="<= tfs-2018"
+
 ### CMMI process predefined queries  
 
 #### Query for items assigned to you
 
 You can find the work items that are assigned to you by using one of the shared queries that the following table describes.
 
-| Shared query | Description |
-|---|---|
-| My Test Cases | Lists all test cases that are not closed and that are assigned to the team member who is running the query. Test cases are sorted by priority and then ID. |
-| My Work Items | Lists all work items, excluding shared steps, that are not closed and that are assigned to the team member who is running the query. Work items are sorted by rank, priority, type, and ID. |
+> [!div class="mx-tdCol2BreakAll"]
+> | Shared query | Description |
+> |---|---|
+> | My Test Cases | Lists all test cases that are not closed and that are assigned to the team member who is running the query. Test cases are sorted by priority and then ID. |
+> | My Work Items | Lists all work items, excluding shared steps, that are not closed and that are assigned to the team member who is running the query. Work items are sorted by rank, priority, type, and ID. |
 
 #### Development and test queries
 
 Team members can use the shared queries that are described in the following table to track the status of development and test tasks and active and resolved bugs.
 
-| Shared query | Description |
-|---|---|
-| Active Bugs | Lists all active bugs and sorts them by rank, priority, and severity. |
-| Development Tasks | Lists all tasks whose **Discipline** is set to **Development**. Tasks are sorted by ID. |
-| My Test Cases | Lists all test cases that are not closed and that are assigned to the team member who is running the query. Test cases are sorted by priority and then ID. |
-| Open Tasks | Lists all tasks that are not closed, sorted by rank, priority, and then ID. |
-| Open Test Cases | Lists all test cases that are not closed, sorted by priority and then ID. |
-| Resolved Bugs | Lists all resolved bugs that are defined for the project, sorted by rank, priority, and severity. |
-| Test Tasks | Lists all tasks whose **Discipline** is set to **Test**, sorted by ID. |
+> [!div class="mx-tdCol2BreakAll"]
+> | Shared query | Description |
+> |---|---|
+> | Active Bugs | Lists all active bugs and sorts them by rank, priority, and severity. |
+> | Development Tasks | Lists all tasks whose **Discipline** is set to **Development**. Tasks are sorted by ID. |
+> | My Test Cases | Lists all test cases that are not closed and that are assigned to the team member who is running the query. Test cases are sorted by priority and then ID. |
+> | Open Tasks | Lists all tasks that are not closed, sorted by rank, priority, and then ID. |
+> | Open Test Cases | Lists all test cases that are not closed, sorted by priority and then ID. |
+> | Resolved Bugs | Lists all resolved bugs that are defined for the project, sorted by rank, priority, and severity. |
+> | Test Tasks | Lists all tasks whose **Discipline** is set to **Test**, sorted by ID. |
 
 #### Backlog management queries
 
 Product owners can use the shared queries that are described in the following table to track the status of requirements and untriaged work.
 
-| Shared query | Description |
-|---|---|
-| Customer Requirements | Lists all requirements, sorted by ID, that have been identified as Scenario or Quality of Service work items. |
-| Product Requirements | Lists all requirements, sorted by ID, that have been identified as Functional, Operational, Security, Safety, or a Feature. |
-| Open Requirements | Lists all requirements that are not closed, sorted by iteration ID, priority, and then work item ID. |
-| Open Requirements without Test Cases | Lists all requirements that are not closed and that do not have a Tested By link to a test case, sorted by work item ID. |
-| Open Work Items | Lists all work items except shared steps that are not closed. Work items are sorted by rank, priority, type, and then ID. |
-| Proposed Work Items | Lists all proposed work items, sorted by rank, priority, iteration, area, triage, and then work item ID. |
-| Reviews | Lists all reviews, sorted by work item ID. |
-| Untriaged Work Items | Lists all requirements, tasks, change requests, bugs, and issues that have not been closed or triaged. The Triage field for these work items is set to Pending, More Info, or Info Received.<br /><br />Work items are sorted by state, triage, rank, priority, iteration, and area. |
-| Work Breakdown | Lists all requirements that are not closed and their child requirements or tasks. |
-| Work Items With Summary Values | Lists all tasks that have child tasks and that contain non-zero values for the Remaining Work or Completed Work fields. This query is designed to find tasks that report work effort that is already accounted for in their child tasks. For the hours to be counted only once, summary tasks should not be assigned any hours.<br /><br />For more information, see [Address inaccuracies published for summary values](https://msdn.microsoft.com/library/dd997572). |
+> [!div class="mx-tdCol2BreakAll"]
+> | Shared query | Description |
+> |---|---|
+> | Customer Requirements | Lists all requirements, sorted by ID, that have been identified as Scenario or Quality of Service work items. |
+> | Product Requirements | Lists all requirements, sorted by ID, that have been identified as Functional, Operational, Security, Safety, or a Feature. |
+> | Open Requirements | Lists all requirements that are not closed, sorted by iteration ID, priority, and then work item ID. |
+> | Open Requirements without Test Cases | Lists all requirements that are not closed and that do not have a Tested By link to a test case, sorted by work item ID. |
+> | Open Work Items | Lists all work items except shared steps that are not closed. Work items are sorted by rank, priority, type, and then ID. |
+> | Proposed Work Items | Lists all proposed work items, sorted by rank, priority, iteration, area, triage, and then work item ID. |
+> | Reviews | Lists all reviews, sorted by work item ID. |
+> | Untriaged Work Items | Lists all requirements, tasks, change requests, bugs, and issues that have not been closed or triaged. The Triage field for these work items is set to Pending, More Info, or Info Received.<br /><br />Work items are sorted by state, triage, rank, priority, iteration, and area. |
+> | Work Breakdown | Lists all requirements that are not closed and their child requirements or tasks. |
+> | Work Items With Summary Values | Lists all tasks that have child tasks and that contain non-zero values for the Remaining Work or Completed Work fields. This query is designed to find tasks that report work effort that is already accounted for in their child tasks. For the hours to be counted only once, summary tasks should not be assigned any hours.<br /><br />For more information, see [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md). |
 
 #### Change management queries
 
 Product owners can use the shared queries that are described in the following table to track change requests and dependencies that have been identified between change requests and requirements.
 
-| Shared query | Description |
-|---|---|
-| Change Requests | Lists all change requests, sorted by ID. |
-| Open Change Requests with Requirements | Lists change requests that are not closed and their linked requirements, sorted by ID. Only change requests that are linked to a requirement with a link type of Affects appears in the list. |
-| Requirements with Open Change Requests | Lists requirements and the change requests that are not closed and that depend on them, sorted by ID. Only requirements that are linked to a change request with a link type of Affected By are listed. |
+> [!div class="mx-tdCol2BreakAll"]
+> | Shared query | Description |
+> |---|---|
+> | Change Requests | Lists all change requests, sorted by ID. |
+> | Open Change Requests with Requirements | Lists change requests that are not closed and their linked requirements, sorted by ID. Only change requests that are linked to a requirement with a link type of Affects appears in the list. |
+> | Requirements with Open Change Requests | Lists requirements and the change requests that are not closed and that depend on them, sorted by ID. Only requirements that are linked to a change request with a link type of Affected By are listed. |
 
 #### Troubleshooting queries
 
 Product owners can use the shared queries that are described in the following table to troubleshoot issues and risks to the product schedule.
 
-| Shared query | Lists |
-|---|---|
-| Blocked Work Items | Lists all work items where the **Blocked** field is set to **Yes**.<br /><br />Only requirements, tasks, bugs, issues, and change requests can be blocked. |
-| Corrective Action Status | Lists all tasks whose **Task Type** is set to **Corrective Action**. |
-| Mitigation Actions | Lists all tasks whose **Task Type** is set to **Mitigation Action**. |
-| Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](https://msdn.microsoft.com/library/ee461548) references this query. |
-| Risks | Lists all risks, sorted by ID. |
+> [!div class="mx-tdCol2BreakAll"]
+> | Shared query | Lists |
+> |---|---|
+> | Blocked Work Items | Lists all work items where the **Blocked** field is set to **Yes**.<br /><br />Only requirements, tasks, bugs, issues, and change requests can be blocked. |
+> | Corrective Action Status | Lists all tasks whose **Task Type** is set to **Corrective Action**. |
+> | Mitigation Actions | Lists all tasks whose **Task Type** is set to **Mitigation Action**. |
+> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](https://msdn.microsoft.com/library/ee461548) references this query. |
+> | Risks | Lists all risks, sorted by ID. |
 
+::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="<= tfs-2017"
+
 ### Workbooks
 
-You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. Each workbook references a shared query.  
+You can use Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. Each workbook references a shared query.  
 
--   The [Issues workbook](https://msdn.microsoft.com/library/ee461548.aspx) uses the Open Issues shared query  
--   The [Triage workbook](https://msdn.microsoft.com/library/ee461525.aspx) uses the Untriaged Work Items shared query  
+-  The [Issues workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Open Issues shared query
+-  The [Triage workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Untriaged Work Items shared query  
 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
  

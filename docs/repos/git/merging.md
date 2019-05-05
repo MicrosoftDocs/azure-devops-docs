@@ -109,13 +109,13 @@ Resolve merge conflicts on the command line:
 
 0. Update the conflicted files listed in `git status`. Git adds markers to files that have conflicts. These markers look like:   
    
-    ```
-    <<<<<<< HEAD
+    <pre>
+    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
     console.log("Writing changes to dev console");
     =======
     debug("Writing changes to debug module);
-    >>>>>>> dev-updates
-    ```
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; dev-updates
+    </pre>
 
     The `<<<<<<<` section are the changes from one commit, the `=======` separates the changes, and `>>>>>>>` for the other conflicting commit.   
 

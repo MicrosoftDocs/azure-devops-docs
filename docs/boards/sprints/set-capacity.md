@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 04/15/2019
 ---
 
 <a id="set-capacity">  </a>
@@ -92,18 +92,21 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 <a id="set-team-capacity">  </a> 
 ## Set capacity for the team and team members 
 
-From the **Capacity** page, you can enter the team time off, and set capacity and days off for each member of your team. If your team tracks capacity by activity, then also select the Activity for each team member.  
+From the **Capacity** page, you can add team members, enter the team time off, and set capacity and days off for each team member. If your team tracks capacity by activity, then also select the <strong>Activity</strong> for each team member.  
 
 ::: moniker range=">= azure-devops-2019"
 
-0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![ ](../../_img/icons/actions-icon.png) action icon and select <strong>Add all team members</strong>. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members.png) 
 
-0. If you need to add other contributors to your project, choose the ![ ](../../_img/icons/blue-add-icon.png) **Add user**.  
+	> [!NOTE]  
+	> The <strong>Add all team members</strong> action will retrieve a maximum of 100 team members. If you have more team members to add, then you can add them one by one by choosing <strong>Add user</strong>.
 
-0. Next, set any time off that the team will take. Choose the **0 days** link as shown.  
+0. If you need to add other contributors to your project, choose the ![ ](../../_img/icons/blue-add-icon.png) <strong>Add user</strong>.  
+
+0. Next, set any time off that the team will take. Choose the <strong>0 days</strong> link as shown.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/team-members-added-set-team-days-off.png) 

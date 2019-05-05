@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 04/09/2019
+ms.date: 04/17/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -25,7 +25,7 @@ Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a
 > After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="< azure-devops"
 > To learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
 ::: moniker-end
 
@@ -1028,7 +1028,19 @@ run. If left unspecified, pull requests to every branch will trigger a build.
 Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pull-request-validation)
 and how to specify them.
 
-Note that `pr` is valid for GitHub, not any other Git provider.
+::: moniker range="azure-devops"
+
+> [!IMPORTANT]
+> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!IMPORTANT]
+> YAML PR triggers are only supported in GitHub. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+
+::: moniker-end
 
 # [Schema](#tab/schema)
 

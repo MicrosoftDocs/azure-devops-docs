@@ -7,7 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: 94A74903-F93F-4075-884F-DC11F34058B4
 ms.manager: dastahel
 ms.custom: seodec18
-ms.author: dastahel
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---

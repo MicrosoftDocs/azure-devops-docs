@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
 ms.manager: jillfra
-ms.author: alewis
+ms.author: macoope
 author: vtbassmatt
 ms.date: 12/14/2018
 monikerRange: 'azure-devops'
@@ -21,9 +21,7 @@ This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, 
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
-
-* You need a GitHub account, where you can create a repository.
+[!INCLUDE [include](_shared/prerequisites.md)]
 
 ## Get the sample code
 

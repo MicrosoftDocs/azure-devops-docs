@@ -209,7 +209,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 **A**: Currently, only test runs can be deleted, and only by the user that created that test run. The load test itself cannot be deleted because the data resides at the subscription level.
 
-----------
+---
 
 <a name="qavisualstudio"></a>
 ## Visual Studio load testing
@@ -250,7 +250,7 @@ and [coded UI tests](/visualstudio/test/use-ui-automation-to-test-your-code).
 
 **A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
 
-----------
+---
 
 <a name="qaazure"></a>
 ## Azure load testing
@@ -315,7 +315,7 @@ features and services help your team collaborate more easily and deploy continuo
 
 **A**: Yes, see [Profiling live Azure web apps with Application Insights](/azure/application-insights/app-insights-profiler).
 
-----------
+---
 
 <a name="set-up-tests"></a>
 ## Setting up tests
@@ -397,7 +397,7 @@ add WebDeploy_x64_en-US.msi to Deployment window. The setup.cmd will look like t
 
 `%DeploymentDirectory%\WebDeploy_x64_en-US.msi /passive`
 
-----------
+---
 
 <a name="jmeter-tests"></a>
 ## Apache JMeter tests
@@ -422,7 +422,7 @@ when you set up the test, and it will be applied when the load test runs.
 
 **A**: Custom listeners are not currently supported.
 
-----------
+---
 
 <a name="run-monitor-tests"></a>
 ## Running and monitoring load tests
@@ -489,7 +489,7 @@ For better performance as you download more reports, use SQL Server.
     </dependentAssembly>
     ```
 
-----------
+---
 
 <a name="recordreplay"></a>
 ## Recording and replaying tests
@@ -518,7 +518,7 @@ API and the details required to create your test.
 allows you to run cloud-based load tests. See 
 [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/05/09/trying-out-the-cloud-load-testing-service-using-visual-studio-enterprise-trial/).
 
-----------
+---
 
 <a name="qaappinsights"></a>
 ## Application Insights
@@ -579,7 +579,7 @@ for your app there. If you see data collected there, report your issue to
 
 If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
-----------
+---
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
@@ -688,7 +688,7 @@ was changed from AllIndividualDetails to None. If you want to collect the indivi
 you must specifically set TimingDetailsStorage property to be AllIndividualDetails. 
 See [Load Test Run Settings Properties](/visualstudio/test/load-test-run-settings-properties).
 
-----------
+---
 
 <a name="errors"></a>
 ## Errors
@@ -740,7 +740,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 **A**: See [Visual Studio Cloud Load Testing error codes](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/21/visual-studio-cloud-load-testing-amp-error-codes.aspx) to find more details about other errors and their resolutions, where applicable.
 
-----------
+---
 
 <a name="qalinks"></a>
 ## Links to useful resources
@@ -783,6 +783,6 @@ To fix this problem, create another load test. Delete the failed test run.
 * [Sample code for REST APIs (Test Execution)](https://code.msdn.microsoft.com/windowsdesktop/Cloud-Load-Testing-API-b333e778)
 * [Sample code for REST APIs (Importing Results)](https://code.msdn.microsoft.com/windowsdesktop/Importing-Load-Test-Results-b577864b)
 
------------------
+---
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

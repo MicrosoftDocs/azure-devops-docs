@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -21,7 +21,7 @@ monikerRange: '> tfs-2018'
 is an extension of Azure that enables the agility and fast-paced innovation of cloud computing
 through a hybrid cloud and on-premises environment.
 
-> In addition to supporting Azure AD, Azure DevOps Server 2019 can be used to deploy to Azure stack with [Active Directory Federation Services](/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs) (AD FS) using a [service principal with certificate](https://docs.microsoft.com/en-us/tfs/release-notes/azuredevops2019#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate).
+> In addition to supporting Azure AD, Azure DevOps Server 2019 can be used to deploy to Azure stack with [Active Directory Federation Services](/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs) (AD FS) using a [service principal with certificate](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate).
 
 To enable connection to an Azure Stack, you specify it as the **Environment** parameter when you create an
 [Azure Resource Manager service connection](../library/connect-to-azure.md).

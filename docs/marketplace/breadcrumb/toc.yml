@@ -2,6 +2,10 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Manage extensions
+  - name: Extensibility
     tocHref: /azure/devops/
-    topicHref: /azure/devops/marketplace/index
+    topicHref: /azure/devops/extend/index
+    items: 
+    - name: Discover extensions
+      tocHref: /azure/devops/
+      topicHref: /azure/devops/marketplace/index

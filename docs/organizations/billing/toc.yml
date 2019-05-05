@@ -1,9 +1,9 @@
 - name: Billing
-  href: index.md
+  href: index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Overview
   items:
   - name: Billing overview 
-    href: overview.md
+    href: overview.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Set up billing
@@ -29,7 +29,7 @@
     - name: Change Azure subscription
       href: change-azure-subscription.md
     - name: Change number of paid users
-      href: reduce-cancel-paid-users.md
+      href: buy-basic-access-add-users.md
     - name: Buy Azure DevOps Server CALs or Test
       href: buy-access-tfs-test-hub.md
     - name: Billing FAQ

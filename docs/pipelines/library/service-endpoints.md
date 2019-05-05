@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -309,13 +309,23 @@ Ensure you protect your connection to the Docker host. [Learn more](https://docs
 
 <h3 id="sep-docreg">Docker Registry service connection</h3>
 
-Defines and secures a connection to a Docker registry.
+Defines a connection to a container registry.
+
+**Azure Container Registry**
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription**, **endpoint**, or the equivalent name value in the script. |
-| Docker Registry | Required. The URL of the Docker registry. A default value is provided. |
-| Docker ID | Required. The identifier of the Docker account user. For Azure Container Registry, this is likely to be a service principal. |
+| Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
+| Azure subscription | Required. The Azure subscription containing the container registry to be used for service connection creation. |
+| Azure Container Registry | Required. The Azure Container Registry to be used for creation of service connection. |
+
+**Docker Hub or Others**
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
+| Docker Registry | Required. The URL of the Docker registry. |
+| Docker ID | Required. The identifier of the Docker account user. |
 | Password | Required. The password for the account user identified above. |
 | Email | Optional. An email address to receive notifications. |
 
@@ -449,14 +459,62 @@ and [Artifact sources](../release/artifacts.md#jenkinssource).
 
 <h3 id="sep-kuber">Kubernetes service connection</h3>
 
-Defines and secures a connection to a [Kubernetes](https://kubernetes.io/docs/home/) automation account.
+Defines a connection to a Kubernetes cluster.
+
+**Azure subscription option**
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Server URL | Required. The URL of the Kubernetes automation service. |
-| Kubeconfig | The contents of the kubectl configuration file. |
-<p />
+| Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
+| Azure subscription | Required. The Azure subscription containing the cluster to be used for service connection creation.  |
+| Cluster | Name of the Azure Kubernetes Service cluster. |
+| Namespace | Namespace within the cluster. |
+
+For an RBAC enabled cluster, a ServiceAccount is created in the chosen namespace along with RoleBinding object so that the created ServiceAccount is able to perform actions only on the chosen namespace.
+
+For an RBAC disabled cluster, a ServiceAccount is created in the chosen namespace. But the created ServiceAccount has cluster-wide privileges (across namespaces).
+
+**Service account option**
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
+| Server URL | Required. Cluster's API server URL.  |
+| Token | Token used for authentication. |
+| Certificate | Used for verifying the serving certificate of the API server. |
+
+The following command can be used to fetch Server URL - 
+
+```
+kubectl config view --minify -o jsonpath='{.clusters[0].cluster.server}'
+```
+
+Use the following sequence of commands (substituting the appropriate values in <>) to locate token and certificate - 
+
+Fetch the name of the secret associated with the service
+```
+kubectl get serviceaccounts <service-account-name> -n <namespace> -o jsonpath='{.secrets[0].name}'
+```
+
+Use the output value of the above command, the secret-name, in these commands - 
+
+For token:
+```
+kubectl get secret <secret-name> -n <namespace> -o jsonpath='{.data.token}'
+```
+
+For certificate:
+```
+kubectl get secret <secret-name> -n <namespace> -o jsonpath='{.data.ca\.crt}'
+```
+
+**Kubeconfig option**
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
+| Kubeconfig | Required. Contents of the kubeconfig file  |
+| Context | Context within the kubeconfig file that is to be used for identifying the cluster |
 
 [How do I create a new service connection?](#create-new)
 

@@ -199,25 +199,8 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 From the web portal, you can sort your view by one of the column fields that you select from the **Column Options** dialog. For details, see [Change column options](../backlogs/set-column-options.md).
 
-## Capture comments in the Discussion section 
+[!INCLUDE [temp](../_shared/discussion-tip.md)] 
 
-Use the **Discussion** section in the work item form to add and review comments about the work under development. 
-
-> [!div class="mx-imgBorder"]  
-> ![Discussion section within a work item form](/azure/devops/boards/backlogs/_img/discussion-section.png)   
-
-Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. Or, bring a group into the discussion by typing **@** and the group name, such as a team or security group. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
-
-::: moniker range="azure-devops"
-
-The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
-
-> [!div class="mx-imgBorder"]  
-> ![Discussion section, Rich Text Editor toolbar](../queries/_img/share-plans/discussion-rich-text-editor-toolbar.png)  
-
-Use the icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-ID, and ![ ](../../_img/icons/pr-id.png) pull-request ID &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've previously selected. 
-
-::: moniker-end
 
 ## Copy selected items to the clipboard or email them
 

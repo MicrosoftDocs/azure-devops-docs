@@ -172,7 +172,7 @@ Choose the package from **Azure Artifacts** and select _Delete latest_ from the 
 
 Over time, the number of versions for each package being hosted in Azure Artifacts or Team Foundation Server (TFS) can grow quickly. You can configure retention policies to automatically delete old packages in Azure DevOps Services or TFS to improve client performance and release storage space.
 
-With retention policies, you can set the **maximum number of versions** to retain per package, once that number is hit the oldest version of the package will be deleted. You can also set the number of **days to keep recently downloaded packages**. Packages will only be deleted by retention policies if they have existed longer than the number of days set.
+With retention policies, you can set the **maximum number of versions** to retain per package, once that number is hit the oldest version of the package will be deleted. You can also set the number of **days to keep recently downloaded packages**. Packages will only be deleted by retention policies if they have not been downloaded within the number of days set.
 
 If you'd like to retain a package version indefinitely, you can promote it to a view. Versions that are promoted to views are exempt from retention policies and do not count towards the maximum number of versions retention policy. Retention policies will not delete any version that has been promoted to a view.
 

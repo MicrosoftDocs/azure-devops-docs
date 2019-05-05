@@ -9,7 +9,7 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 02/19/2019 
+ms.date: 04/24/2019 
 monikerRange: '>= tfs-2013'
 ---
 
@@ -47,7 +47,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 	<pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
 	::: moniker-end
 
-	::: moniker range=">= tfs-2013 <= tfs-2018" 
+	::: moniker range=">= tfs-2013 <= azure-devops-2019" 
 	<pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
     For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/**.
@@ -59,27 +59,43 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 
     > [!TIP]
     > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
+
+4. Choose your project, team, or page of interest.
+
+    ::: moniker range=">= azure-devops-2019"
+
+    From the project summary page, hover over a service and then choose the desired page. To choose another project, choose the ![Azure DevOps logo](../../_img/icons/project-icon.png) Azure DevOps logo.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose a service page, horizontal nav](_img/connect-projects/project-summary-page-choose-app-vert.png)  
+
+    ::: moniker-end
  
-::: moniker range=">= tfs-2017"   
-0. From the project summary page, hover over a service and then choose the page of interest. To choose another project, choose the ![Azure DevOps logo](../../_img/icons/project-icon.png) Azure DevOps logo.  
+    ::: moniker range=">= tfs-2017 <=tfs-2018"
+
+    From the project summary page, hover over a service and then choose the desired page. To choose another project, choose the ![Azure DevOps logo](../../_img/icons/project-icon.png) Azure DevOps logo.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](_img/connect-projects/project-summary-page-choose-app-horz.png)  
 
-::: moniker-end  
+    ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"   
-0.  Choose your project or team from the set of available links, or choose Browse to access all projects and teams.   
+    ::: moniker range=">= tfs-2013 <= tfs-2015"
+
+    Choose your project or team from the set of available links, or choose Browse to access all projects and teams.
 
 	![Web portal, TFS, Overview](_img/connect-tp-tfs-web-portal.png) 
-::: moniker-end   
+
+    ::: moniker-end
 
 To learn more about each page and the tasks you can perform, see [Web portal navigation](../../project/navigation/index.md).
 
 
 <a name="logindifferentcred"></a>
 
-### Log on with different credentials
+### Sign in with different credentials
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
 1.  Open Windows Security from the context menu associated with your name.
 
@@ -88,6 +104,20 @@ To learn more about each page and the tasks you can perform, see [Web portal nav
 2.  Enter your credentials.
 
     ![Enter user name and password to access TFS](_img/connect-projects-tfs/IC657077.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+1.  Open your profile menu and choose **Sign out**.
+
+    > [!div class="mx-imgBorder"]  
+	> ![Sign out](_img/sign-out.png)
+
+2.  Choose Sign in and enter the new credentials.
+
+::: moniker-end
+
 
 ### Open the web portal from Team Explorer
 
@@ -199,28 +229,13 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 ::: moniker-end
 
-
-### Change sign-in credentials
-
 To run Visual Studio under sign-in credentials that are different from your signed-in Windows account, open the context menu for **devenv.exe** to access your run as options.
 
 ![Context menu for Visual Studio devenv.exe](_img/connect-projects-tfs/IC719959.png)
 
 You can locate the executable in the following folder: *Drive*:\\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\.
 
-
-## Related articles
-
-- [Work in web portal](../../project/navigation/index.md)  
-- [Work in Team Explorer](../../user-guide/work-team-explorer.md) 
-- [Work in Office Excel or Project](../../boards/backlogs/office/track-work.md)   
-- [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)  
-
-If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
-
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md). 
-
-### User accounts and licensing
+### User accounts and licensing for Visual Studio
 
 To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
@@ -277,3 +292,15 @@ See [Feedback and support](../../user-guide/provide-feedback.md#platform-version
 
 
 
+## Next steps
+
+Learn more about how to:
+
+- [Work in web portal](../../project/navigation/index.md)  
+- [Work in Team Explorer](../../user-guide/work-team-explorer.md) 
+- [Work in Office Excel or Project](../../boards/backlogs/office/track-work.md)   
+- [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)  
+
+If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
+
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md). 

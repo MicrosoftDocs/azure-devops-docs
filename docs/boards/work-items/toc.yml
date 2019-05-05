@@ -1,14 +1,12 @@
 - name: Work items
-  href: index.md
+  href: index.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
   - name: About work items
     href: about-work-items.md
-  - name: "What is Azure Boards?"
-    href: ../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
-  - name: Best tool for the job
-    href: best-tool-add-update-link-work-items.md 
+  - name: Quick reference
+    href: quick-ref.md
   - name: Start using Azure Boards
     href: ../get-started/index.md
 - name: Quickstarts
@@ -53,6 +51,8 @@
     items:
     - name: Agile workflow
       href: guidance/agile-process-workflow.md
+  - name: Basic process guidance
+    href: ../get-started/track-issues-tasks.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Scrum process guidance
     href: guidance/scrum-process.md
     items:
@@ -111,6 +111,8 @@
     href: ../../reference/process/new-work-item-experience.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json  
 - name: Samples
   items:
+  - name: Sample work item templates
+    href: work-item-template-examples.md
   - name: Query by title or ID
     href: ../queries/titles-ids-descriptions.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Query by assignment or workflow 
@@ -127,8 +129,9 @@
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Add tags 
     href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
-  - name: Share information in work items
+  - name: Share information  
     href: ../queries/share-plans.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
+    displayName: rich text, attach files, storyboard, social tools
   - name: Bulk add or modify (Excel)
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
   - name: Use work item templates
@@ -137,6 +140,7 @@
     href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Email/print work items
     href: email-work-items.md  
+    displayName: export, cvs 
   - name: Delete test artifacts
     href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json
   - name: Change column options
@@ -157,9 +161,10 @@
     href: ../queries/link-type-reference.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json toc.json  
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
-  - name: Work item field index
-    href: guidance/work-item-field.md
+  - name: Field reference
     items:
+    - name: Work item field index
+      href: guidance/work-item-field.md
     - name: "Code review & feedback fields"
       href: guidance/guidance-code-review-feedback-field-reference.md
     - name: "Bugs, issues, & risks fields"

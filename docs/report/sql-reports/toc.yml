@@ -1,9 +1,9 @@
-- name: SQL Server Reporting 
-  href: index.md
+- name: SQL Reports (Legacy)
+  href: index.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Overview
   items:
   - name: Reporting Services Reports
-    href: reporting-services-reports.md
+    href: reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
@@ -43,20 +43,21 @@
       href: ../admin/change-a-process-control-setting.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
     - name: Rebuild the data warehouse and cube
       href: ../admin/rebuild-data-warehouse-and-cube.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-  - name: Create and manage Reporting Services reports
-    href: create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+  - name: Manage Reporting Services reports
     items:
+    - name: Create and manage Reporting Services reports
+      href: create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
     - name: Create a Report Server Project
       href: create-a-report-server-project.md
-    - name: Create a Detailed Report
+    - name: Create a detailed report
       href: create-a-detailed-report-using-report-designer.md
     - name: Create an aggregate report
       href: create-aggregate-report-report-designer-analysis-services-cube.md
-    - name: "View, organize, and configure reports using Report Manager"
+    - name: View, organize, & configure reports
       href: ../admin/view-organize-configure-reports-using-report-manager.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-    - name: "View, upload, and organize Reporting Services reports"
+    - name: View, upload, & organize reports 
       href: ../admin/view-upload-organize-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-  - name: Disable the Data Warehouse
+  - name: Disable the data warehouse
     href: ../admin/disable-data-warehouse.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
 - name: Reference
   items:

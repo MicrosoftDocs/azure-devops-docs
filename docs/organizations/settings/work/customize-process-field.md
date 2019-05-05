@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 11/19/2018
+ms.date: 04/22/2019
 ---
 
 # Add and manage fields for an inherited process   
@@ -55,12 +55,16 @@ Fields listed correspond to all those defined for the organization. For descript
 
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
-0. Open **Settings>Work>Process**.  For details, see [Open Settings>Process](add-custom-wit.md#open-process-wit).
+1. From the **Process** page of the selected inherited process, choose the work item type you want to add the custom field to. 
 
-	> [!IMPORTANT]  
-	>If you don't see the **Organization settings** option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).
-	
-0. With the WIT selected, click the ![add new field icon](_img/process/new-field-icon.png) (New Field icon).  
+	Here we choose the Bug WIT. Note the breadcrumb links that allow you to move back to <strong>All Processes</strong> and <strong>MyAgile</strong> process page.
+
+	> [!div class="mx-imgBorder"]  
+	> ![All Processes-Process-WIT breadcrumb links](_img/field/breadcrumbs-bug-wit.png) 
+
+	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+
+1. With the WIT selected, choose the ![ ](_img/process/new-field-icon.png) <strong>New field</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png) 
@@ -75,12 +79,12 @@ You can add fields and specify the group and page where they should appear. Also
     <img src="_img/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
 	<a id="options">  </a>
-0.	(Optional) On the Options tab, indicate if the field is required and specify a default value. Or leave these blank. By making a field Required, users must specify a value for the field in order to save it. The default value you specified is set when you create a work item as well as every time a work item is opened and the field is empty.
+0.	(Optional) On the <strong>Options</strong> tab, indicate if the field is required and specify a default value. Or leave these blank. By making a field Required, users must specify a value for the field in order to save it. The default value you specified is set when you create a work item as well as every time a work item is opened and the field is empty.
 
 	<img src="_img/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
 
 	<a id="layout">  </a>
-0.	(Optional) On the Layout tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.
+0.	(Optional) On the <strong>Layout</strong> tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
@@ -89,7 +93,7 @@ You can add fields and specify the group and page where they should appear. Also
 	> [!NOTE]    
 	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
-0.	Click **Add field** to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
+0.	Choose <strong>Add field</strong> to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
 
 0.	When you've completed making all your changes, open a work item of the type you've just customized. 
 
@@ -102,17 +106,17 @@ You can add fields and specify the group and page where they should appear. Also
 <a id="pick-list">  </a>
 ### Add a picklist  
 
-1. Start by clicking ![add new field icon](_img/process/new-field-icon.png) (New Field), then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press Enter to add another item.
+1. Start by choosing ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press Enter to add another item. Add the items in the order you want them to appear in the list.
 
 	<img src="_img/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../_img/icons/delete_icon.png) delete icon.  
 
-2. (Optional) Click the Options tab to define the field as required, specify  a default, or allow users to enter their own values. 
+2. (Optional) Choose the <strong>Options</strong> tab to define the field as required, specify a default, or allow users to enter their own values. 
 
 	<img src="_img/process/add-a-field-pick-list-options.png" alt="Allow values in a custom picklist" style="border: 1px solid #C3C3C3;" />  
 
-3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
+3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (<strong>Layout</strong>  tab). 
  
 <!---
 2. To reorder the list, simply drag the item to where you want it in the list. 
@@ -128,7 +132,7 @@ You can add fields and specify the group and page where they should appear. Also
 Azure Active Directory (Azure AD)
 Use the Identity field to add a field similar to the Assigned To field. Identity fields act in the same way as the Assigned To field, providing a search and identity picker function. If your organization manages users with Azure Active Directory (Azure AD), then the system synchronizes Identity fields with the names defined in Azure AD and are valid users of the project. 
 
-1. Start by clicking ![add new field icon](_img/process/new-field-icon.png) (New Field), then the field name, Identity type, and optionally a description. 
+1. Start by choosing ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>, then the field name, Identity type, and optionally a description. 
 
 	![Add a custom picklist](_img/process/cpfield-identity.png)  
 
@@ -139,7 +143,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 ### Add a rich-text, HTML field 
 
-1. Just as before, choose the WIT you want to add the field to and then click the ![add new field icon](_img/process/new-field-icon.png) (New Field icon).  
+1. Just as before, choose the WIT you want to add the field to and then choose the ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>.  
 
 2. Choose Text (multiple lines) as the type. Here we label the field as Customer request to capture customer verbatims.   
 
@@ -154,20 +158,20 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 ### Add a checkbox field  
 
-1. Just as before, choose the WIT you want to add the field to and then click ![add icon](../../../_img/icons/green_plus_icon.png) New Field.  
+1. Just as before, choose the WIT you want to add the field to and then choose ![add icon](../../../_img/icons/green_plus_icon.png) <strong>New field</strong>.  
 
 2. Choose Boolean as the type, and give it a label. Here we label the field as Triaged to track the triage state of the bug.  
 
 	<img src="_img/process/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" style="border: 1px solid #C3C3C3;" />   
 
-3. (Optional) Open the Options tab and specify if the field should be required. 
+3. (Optional) Open the <strong>Options</strong> tab and specify if the field should be required. 
 
 	![Set options for boolean field](_img/process/cpfield-edit-boolean-field-options-up1.png)
 
-4. By default, the field is added to the last group defined in the second column. Open the Layout tab to drag and drop the field to another group on the form.  
+4. By default, the field is added to the last group defined in the second column. Open the <strong>Layout</strong> tab to drag and drop the field to another group on the form.  
 
 	> [!NOTE]    
-	>The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Task board, then the field values of True and False display (not a checkbox).
+	> The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Task board, then the field values of True and False display (not a checkbox).
 
 <a id="add-existing-field">  </a>
 
@@ -187,6 +191,7 @@ Optionally, specify the [Required/Default values](#options) and [placement withi
 <a id="rename-field">  </a>
 
 ## Relabel a field   
+
 Renaming a field or changing the field type aren't supported actions. However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
 
 Here, we relabel the Customer Ticket field to Ticket Number.   

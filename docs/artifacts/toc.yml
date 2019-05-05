@@ -1,9 +1,9 @@
 - name: Azure Artifacts
-  href: index.md
+  href: index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Overview
   items:
   - name: What is Azure Artifacts?
-    href: overview.md
+    href: overview.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
   # - name: Sign up for Azure Artifacts
   #   href: tbd
   - name: License Azure Artifacts
@@ -96,6 +96,8 @@
       href: maven/publish.md
     - name: Install a Maven artifact
       href: maven/install.md
+    - name: Use packages from Maven Central
+      href: maven/upstream-sources.md
   - name: Gradle
     items:
     - name: Install a Maven artifact using Gradle

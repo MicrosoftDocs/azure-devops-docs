@@ -26,7 +26,7 @@ Version control has a general workflow that most developers use when writing cod
 
 These steps are:
 
-----
+---
 0. Get a local copy of code if they don't have one yet.
 0. Make changes to code to fix bugs or add new features.
 0. Once the code is ready, make it available for review by your team.

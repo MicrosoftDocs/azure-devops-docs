@@ -1,6 +1,6 @@
 ---
 title: Add, run, update inline tests
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to add, run, and quickly update manual test cases
 ms.technology: devops-new-user
@@ -9,18 +9,18 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 04/23/2019
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2017'
 ---
 
-# Quickstart: Add, run, and update inline tests
+# Add, run, and update inline tests
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../_shared/version-tfs-2017-through-vsts.md)]
 
-In this quickstart, you learn how to add, run, and update inline tests in Azure DevOps Services.
+In this quickstart, you learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 
-A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you also can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md).
+A quick way to start manual testing is to add the test to the user story or bug that you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests for a backlog item. You also can run these tests and update their status. If you're new to working with the Kanban board, see the [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
@@ -70,7 +70,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 2. If you have a number of tests to add, enter each title and select **Enter**.
 
-   ![Work item add more test cases](_img/work-item-add-more-test-cases.png)
+   ![Work item, add more test cases](_img/work-item-add-more-test-cases.png)
 
 	To add details to the test case, open it. You can select the title, double-select the inline item, or open the context menu and choose **Open**.
 
@@ -78,7 +78,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
-Prior to running the test, you must add details.
+Before you run the test, you must add details.
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Prior to running the test, you must add details.
 
 To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
-Prior to running the test, you must add details.
+Before you run the test, you must add details.
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ When you update the status of tests, you can [track test results](../test/track-
 
 ::: moniker range=">= azure-devops-2019"
 
-When you first open the Kanban board, you'll see an un-expanded view of checklists and tests.
+When you first open the Kanban board, you'll see an unexpanded view of checklists and tests.
 
    ![Inline tests collapsed](_img/azure-devops-boards-board.png)
 
@@ -170,7 +170,7 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 
 ::: moniker range="<= tfs-2018"  
 
-When you first open the Kanban board, you'll see an un-expanded view of checklists.
+When you first open the Kanban board, you'll see an unexpanded view of checklists.
 
    ![Inline tests collapsed](../boards/boards/_img/i-test-open-board-collapsed-tests.png)
 
@@ -181,12 +181,12 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 ::: moniker-end
 
 ## Next steps
-
-Use inline tests for lightweight traceability and to manage manual tests for user stories or other backlog items that they support.
   
 > [!div class="nextstepaction"]
 > [Learn more about test case management](../test/create-test-cases.md)
 > [Kanban quickstart](../boards/boards/kanban-quickstart.md)
 
-To initiate web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see how to [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
+To begin web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see how to [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
+
+
 
