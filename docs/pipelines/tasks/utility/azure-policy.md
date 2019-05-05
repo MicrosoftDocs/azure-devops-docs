@@ -7,15 +7,15 @@ ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 03/12/2019
 monikerRange: '> tfs-2018'
 ---
 
 # Security and Compliance Assessment task
 
-[Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/) allows you to assess and enforce resource compliance against defined IT policies.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/) allows you to assess and enforce resource compliance against defined IT policies.
 Use this task in a gate to identify, analyse and evaluate the security risks,
 and determine the mitigation measures required to reduce the risks.
 

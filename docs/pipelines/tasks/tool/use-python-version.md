@@ -7,8 +7,9 @@ ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
 ms.custom: seodec18
 ms.author: brcrista
+author: brcrista
 ms.reviewer: dastahel
-ms.date: 12/13/2018
+ms.date: 04/25/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -43,6 +44,12 @@ This task will fail if no Python versions are found in Agent.ToolsDirectory. Ava
 | Version spec | Version range or exact version of a Python version to use. | 3.x |
 | Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. | true |
 | Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. | x64 |
+
+::: moniker range="> azure-devops-2019"
+
+As of version 0.150 of the task, version spec will also accept `pypy2` or `pypy3`.
+
+::: moniker-end
 
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 

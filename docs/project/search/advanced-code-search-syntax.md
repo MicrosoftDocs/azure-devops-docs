@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
+ms.date: 04/15/2019
 ---
 
 # How To: Use Code Search
@@ -38,6 +38,10 @@ By using Code Search you can:
   that text across all your projects and files. Easily trace how your code works 
   by using the shortcut menu to search for related items such as definitions and 
   references - directly from inside a file.<p />
+
+> [!NOTE]
+> You cannot search code in forked repositories. 
+
 
 <a name="syntaxdetails"></a>
 ## Syntax for simple and compound searches

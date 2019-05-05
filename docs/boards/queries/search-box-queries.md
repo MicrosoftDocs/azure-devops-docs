@@ -277,7 +277,7 @@ To find work items based on a keyword or phrase contained within other text stri
 |Cut user stories.|`T:Story Reason=Cut`<br/>Or<br/>`T="User Story" System.Reason=Cut`|  
 |Resolved by Peter.|`"Resolved By":Peter` <br/>Or<br/>`Microsoft.VSTS.Common.ResolvedBy:Peter` |  
 |Modified today.|`"Changed Date"=@Today`|  
-|Created yesterday as a test activity.|`"Created Date"=@Today-1 Activity=Test `|  
+|Created yesterday as a test activity.|`"Created Date"=@Today-1 Activity=Test`|  
 
 > [!NOTE]     
 > Some fields, such as **History** and **Description**, do not support partial word text searches. For example, if the **History** field contains the phrase `reproducible behavior` and you search for `History:repro` the work item will not be found. However, if you search for the complete string `History:reproducible` the work item will be found.

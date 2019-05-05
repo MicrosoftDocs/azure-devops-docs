@@ -6,7 +6,8 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: jillfra
-ms.author: elbatk
+ms.author: dastahel
+author: davidstaheli
 ms.date: 10/31/2018
 monikerRange: 'azure-devops'
 ---

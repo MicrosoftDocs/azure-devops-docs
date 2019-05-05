@@ -16,14 +16,23 @@ ms.date: 04/04/2019
 # Connect Azure Boards to GitHub  
 
 [!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)] 
+
 ::: moniker range="azure-devops"
 
 By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.  
+
+> [!NOTE]   
+> We recommend that you use the [Azure Boards app for GitHub](install-github-app.md) to configure and manage your connections to GitHub.com. The app provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. Once you have configured your connection, you can manage the connected repositories either from Azure Boards or GitHub.com. 
+
+
+When you make the connection from GitHub.com, the list of repositories correspond to ones that you allow the Azure Boards app to access. When you make the connection from Azure Boards, the list of repositories correspond to some or all of the repos from the first selection that you make to associate to a particular project. In the first instance, you can limit what the app can access overall, and limit what a particular project can access or split the management of work across different Azure Boards projects.
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 By connecting your Azure DevOps Server project with your GitHub Enterprise Server repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub Enterprise for software development while using Azure Boards to plan and track your work. 
+
 ::: moniker-end
 
 [!INCLUDE[temp](../_shared/github-platform-support.md)]
@@ -37,7 +46,7 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 * You must be an administrator or owner of the GitHub repository you'll be connecting to.  
 
 > [!IMPORTANT]  
-> You can connect to multiple repositories so long as you are an administrator for those repositories. 
+> You can connect to multiple GitHub repositories so long as you are an administrator for those repositories. 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -415,7 +424,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub sign in dialog](_img/github-ent/ads-add-ghe-user-name.png)  
 
-0. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between <strong>Mine</strong> and  <strong>All</strong> to determine if others appear, and then check the ones that you want to add. Choose <strong>Save</strong> when done.
+0. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between <strong>Mine</strong> and <strong>All</strong> to determine if others appear, and then check the ones that you want to add. Choose <strong>Save</strong> when done.
 
 	> [!div class="mx-imgBorder"]  
 	> ![New GitHub Enterprise connection, OAuth dialog](_img/github-ent/ads-add-ghe-repositories.png)  
@@ -446,4 +455,6 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 ## Related articles
 
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
+- [Install and configure the Azure Boards app for GitHub](install-github-app.md)
+- [Configure status badges to add to GitHub README files](configure-status-badges.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

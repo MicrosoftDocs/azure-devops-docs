@@ -10,12 +10,12 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
+ms.date: 04/24/2019
 monikerRange: 'azure-devops'
 ---
 
 
-# Quickstart: Sign up for a free organization
+# Sign up for a free organization
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
@@ -27,7 +27,6 @@ In this quickstart, you learn how to sign up for a free organization with a Micr
 
 [!INCLUDE [sign-up-msft-account](../_shared/sign-up-msft-account.md)]
 
-[!INCLUDE [welcome-page](../_shared/welcome-project-page.md)]
 
 <a id="invite-others" />
 

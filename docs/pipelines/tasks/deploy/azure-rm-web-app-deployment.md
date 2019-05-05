@@ -7,7 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: 6D557DD5-9373-47AD-AA2E-72B6DE264F66
 ms.manager: dastahel
 ms.custom: seodec18
-ms.author: dastahel
+ms.author: ronai
+author: RoopeshNair
 ms.date: 03/26/2019
 monikerRange: '> tfs-2018'
 ---
@@ -33,7 +34,7 @@ The task can be used to deploy to a range of Azure App Services such as:
 * [Web Apps on both Windows and Linux](https://azure.microsoft.com/documentation/articles/app-service-web-overview/)
 * [Web Apps for Containers](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro)
 * [Function Apps on both Windows and Linux](https://docs.microsoft.com/azure/azure-functions/)
-* [Function Apps for Containers](https://docs.microsoft.com/en-us/azure/azure-functions/)
+* [Function Apps for Containers](https://docs.microsoft.com/azure/azure-functions/)
 * [WebJobs](https://azure.microsoft.com/blog/webjobs-goes-into-full-production/)
 * Apps configured under [Azure App Service Environments](https://docs.microsoft.com/azure/app-service/environment/intro)
 

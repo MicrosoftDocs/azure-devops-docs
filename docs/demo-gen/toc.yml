@@ -1,6 +1,6 @@
 - name: Demo Generator
-  href: index.md
+  href: index.md?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: Get started
-    href: use-demo-generator-v2.md
+    href: use-demo-generator-v2.md?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json 

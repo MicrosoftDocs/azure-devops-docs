@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 04/11/2019
 ---
 
 
@@ -50,6 +50,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 0. Choose a folder within a breadcrumb to open a query folder. 
 	> [!div class="mx-imgBorder"]  
 	> ![queries breadcrumb example](_img/example-queries/queries-breadcrumb-example.png)
+
 ::: moniker-end
 
 
@@ -85,6 +86,7 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 	Or, you can select from any of your favorited items by choosing the ![ ](../../_img/icons/inbox.png) inbox icon and choose **Favorites**.  
 
 	![queries selector](_img/example-queries/favorites-selector.png)  
+
 ### How do I quickly navigate to queries within the same query folder?  
 
 When viewing a query, you can use the queries breadcrumb selector (![ ](../../_img/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![ ](../../_img/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 

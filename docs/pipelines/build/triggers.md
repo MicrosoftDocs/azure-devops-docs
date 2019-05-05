@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 04/02/2019
+ms.date: 04/17/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -79,7 +79,7 @@ trigger:
       refs/tags/{othertagname}
 ```
 
-If you don't specify any branch triggers, the default is as if you wrote:
+If you don't specify any triggers, the default is as if you wrote:
 
 ```yaml
 trigger:
@@ -87,6 +87,8 @@ trigger:
     include:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
+
+When you specify a trigger, this default no longer applies.
 
 ::: moniker-end
 
@@ -143,6 +145,8 @@ trigger:
     exclude:
     - docs/README.md
 ```
+
+When you specify paths, you also need to explicitly specify branches or tags to trigger on.
 
 ### Opting out of CI builds
 
@@ -250,6 +254,24 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 > [!NOTE]
 > New pipelines automatically override YAML PR triggers with a setting in the UI.
 > To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!IMPORTANT]
+> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!IMPORTANT]
+> YAML PR triggers are only supported in GitHub. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:

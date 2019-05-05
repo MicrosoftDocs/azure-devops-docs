@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
 ms.date: 10/31/2018
-monikerRange: '>= tfs-2018'
+monikerRange: '=azure-devops'
 ---
 
 # Get started with Python packages in Azure Artifacts
@@ -26,8 +26,6 @@ Each organization gets five free licenses. If you need more than five licenses, 
 
 Assign your licenses by following these instructions:
 
-::: moniker range=">= azure-devops-2019"
-
 1. Go to your organization and select **Admin settings** on the lower left of the UX.
 2. Select **Users**.
 3. Select the user or users you want to assign the Azure Artifacts extension to, and select **Manage extensions**.
@@ -35,16 +33,6 @@ Assign your licenses by following these instructions:
 
 If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Go to your account, go to the **Users** page, and select **Package Management**.
-2. Select **Assign**, type the users you want to assign licenses to, and then select **Ok**.
-
-If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
-::: moniker-end
 
 ## Step 2: Create a feed
 
@@ -56,19 +44,9 @@ In the dialog box:
 * **Packages from public sources**: Selecting **Use packages from public sources through this feed** will add the public npm, NuGet, and PyPI registries as upstreams to your feed. When upstreams are enabled, your client will be able to fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed will be created without connectivity to public registries. You can connect them later if you want.
 * When you're done, select **Create**.
 
-::: moniker range=">= azure-devops-2019"
-
 > [!div class="mx-imgBorder"] 
 >![New feed dialog box](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
 > 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-![New feed dialog box](../_shared/_img/new-feed-dialog.png)
-
-::: moniker-end
 
 You can change these settings later by [editing the feed](../feeds/edit-feed.md).
 
@@ -76,19 +54,9 @@ You can change these settings later by [editing the feed](../feeds/edit-feed.md)
 
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 
-   ::: moniker range=">= azure-devops-2019"
-
    > [!div class="mx-imgBorder"] 
    >![Connect to feed button on the upper right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
    > 
-
-   ::: moniker-end
-
-   ::: moniker range="<= tfs-2018"
-
-   ![Connect to feed button on the upper right of the page](../_shared/_img/connect-to-feed.png)
-
-   ::: moniker-end
 
 2. When the **Connect to feed** dialog box opens, choose Python from the left menu. 
 

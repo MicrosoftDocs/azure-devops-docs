@@ -8,7 +8,7 @@ ms.assetid: 74f21c5c-76a0-4b0f-9cdf-d599f7a08eeb
 ms.author: kaelliauthor: KathrynEE
 ms.manager: jillfra
 ms.topic: reference
-ms.date: 02/24/2017
+ms.date: 04/11/2019
 ---
 
 
@@ -18,11 +18,24 @@ ms.date: 02/24/2017
 
 By adding work item queries to your process template, you can define the initial set of shared queries and query folder structure for a project. All team members use queries to find the bugs, tasks, and other work items on which they must take action.  
   
- Work item queries specify criteria for generating a list of work items, such as a list of active bugs or closed tasks. Files for work item queries have a .wiq extension and are stored in the Queries subfolder of the WorkItem Tracking folder for the default process templates.  
-  
+Work item queries specify criteria for generating a list of work items, such as a list of active bugs or closed tasks. Files for work item queries have a .wiq extension and are stored in the Queries subfolder of the WorkItem Tracking folder for the default process templates.  
+
+
+::: moniker range="azure-devops-2019"
+
+> [!IMPORTANT]  
+> The default process templates define a few queries that appear under My Queries on the Queries page. They no no longer define Shared Queries. You can always define shared queries and add them to a custom process template. Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 > [!IMPORTANT]  
 > The default process templates define several queries which differ based on the process&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md). Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
-  
+
+::: moniker-end
+
+
  You specify the query definitions to upload as a task within the WorkItemTracking plug-in. This task may be required because several artifacts in a process template may depend on a query. In addition, the task to upload queries depends on the successful completion of the task for uploading work item types. You specify each query file to upload within the **taskXml** element.  
   
   After a project is created from the process template, you can add, remove, and change queries by using the Query Editor. For more information, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md).  

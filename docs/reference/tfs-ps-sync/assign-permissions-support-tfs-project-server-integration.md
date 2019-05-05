@@ -54,14 +54,14 @@ ms.date: 03/16/2017
   
      Project Server permission mode provides a set of customizable security groups and other functionality that is distinct from SharePoint groups. This security platform operates independent from the SharePoint permissions in the farm and allows you to fine tune the permission levels for Project Web App users. This is the same permission mode that was available in Project Server 2010.  
   
-     For a comparison of features supported in each security mode, see [Plan user access in Project Server 2013](http://technet.microsoft.com/library/fp161361\(v=office.15\).aspx).  
+     For a comparison of features supported in each security mode, see [Plan user access in Project Server 2013](https://technet.microsoft.com/library/fp161361\(v=office.15\).aspx).  
   
      If you're not sure which Permission mode is set, or you need to switch Permission modes, [jump to this section](#perm2013).  
   
 ###  <a name="windows_groups"></a> Have you created Windows groups to effectively manage user accounts?  
  To minimize manually adding users to TFS and Project Server, create Windows or Active Directory groups. You can then add these groups to TFS groups, Project Server, and SharePoint sites which have pre-defined permissions. Also, you can synchronize resources with Active Directory across multiple domains and forests.  
   
- For more information, see [Manage security group synchronization with Active Directory in Project Server 2013](http://technet.microsoft.com/library/gg750243.aspx).  
+ For more information, see [Manage security group synchronization with Active Directory in Project Server 2013](https://technet.microsoft.com/library/gg750243.aspx).  
   
 ##  <a name="accounts"></a> 1. Identify all the service and user accounts that you need to assign permissions to  
  Identify the service accounts, user accounts, or Active Directory groups that have been configured and will need access to the resources that support data synchronization between TFS and Project Server.  
@@ -276,7 +276,7 @@ ms.date: 03/16/2017
   
 5.  Repeat steps 3 and 4, this time add the service account for Service account for the Project Server Event Handler.  If there is more than one service account, make sure you add it.  
   
- For more information, see [Restrict or enable access to a service application](http://technet.microsoft.com/library/ff463596.aspx).  
+ For more information, see [Restrict or enable access to a service application](https://technet.microsoft.com/library/ff463596.aspx).  
   
 ###  <a name="site_collection"></a> 3-2. Add TFS service account to the Site Collection Administrators group  
  **Required for:** ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
@@ -402,7 +402,7 @@ vice account for the Project Server Event Handler|[Connect permissions to the Pr
 rs of Project Professional|[Project Manager group for each PWA instance](#pwa)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode")|![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|PWA|  
 ||[TFS Readers group](#add_twa)||![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|TFS web portal |  
 |Users assigned as project resources or have TFS work items assigned to them|[Team Members for the PWA App group](#pwa)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode")|![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|PWA|  
-||[Plan groups, categories, and RBS in Project Server 2013 (Note 2)](http://msdn.microsoft.com/library/cc197354.aspx) (Note 2)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode")|![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")||PWA|  
+||[Plan groups, categories, and RBS in Project Server 2013 (Note 2)](https://msdn.microsoft.com/library/cc197354.aspx) (Note 2)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode")|![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")||PWA|  
 ||[Enterprise project pool and to the project resource pool for the project plan](#pool)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode")|![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|PWA|  
 ||[TFS Contributors group](#add_twa)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode")|![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|TFS web portal |  
   
@@ -422,7 +422,7 @@ rs of Project Professional|[Project Manager group for each PWA instance](#pwa)|!
   
  ![PWA 2010 Authentication](_img/alm_tfsps_pwa_2010_authentication.png "ALM_TFSPS_PWA_2010_Authentication")  
   
- If it isn't, you'll need to [create a new PWA instance that uses Windows-Classic authentication](http://technet.microsoft.com/library/gg276326.aspx).  
+ If it isn't, you'll need to [create a new PWA instance that uses Windows-Classic authentication](https://technet.microsoft.com/library/gg276326.aspx).  
   
 <a name="perm2013"></a> 
 ###  Q: How do I determine the Permission mode in SharePoint 2013?  
@@ -443,14 +443,14 @@ rs of Project Professional|[Project Manager group for each PWA instance](#pwa)|!
   
  If you switch from SharePoint permission mode to classic Project Server permission mode, you have to manually configure your security permissions structure in Project Server 2013.  Switching between SharePoint permission mode and Project Server permission mode deletes all security-related settings.  
   
- To switch permission mode, see [Set-SPProjectPermissionMode](http://technet.microsoft.com/library/jj219486.aspx).  
+ To switch permission mode, see [Set-SPProjectPermissionMode](https://technet.microsoft.com/library/jj219486.aspx).  
   
 ### Q: What other resources are available?  
  **A**: You might find answers to additional questions from the following resources:  
   
 |Project Server 2010|Microsoft Project Server 2013|  
 |-------------------------|-----------------------------------|  
-|-   [Manage users in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=207275)<br />-   [Plan for administrative and service accounts (Project Server 2010)](http://go.microsoft.com/fwlink/?LinkId=207273)<br />-   [Plan groups, categories, and RBS in Project Server 2010](http://technet.microsoft.com/library/cc197354.aspx)<br />-   [Manage security groups in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=207274)<br />-   [Project Server 2010 global permissions](http://go.microsoft.com/fwlink/?LinkId=207276)<br />-   [Project Server 2010 default group permissions](http://go.microsoft.com/fwlink/?LinkId=207277)<br />-   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](http://technet.microsoft.com/library/gg982985.aspx)|-   [Plan user access in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262117)<br />-   [Plan for administrative and service accounts (Project Server 2013)](http://go.microsoft.com/fwlink/?LinkId=262110)<br />-   [Plan groups, categories, and RBS in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262111)<br />-   [Manage security groups in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262112)<br />-   [Manage security group synchronization with Active Directory in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262113)<br />-   [Manage users in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262114)<br />-   [Manage Active Directory Resource Pool synchronization in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262115)<br />-   [Default group permissions in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262116)|  
+|-   [Manage users in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=207275)<br />-   [Plan for administrative and service accounts (Project Server 2010)](http://go.microsoft.com/fwlink/?LinkId=207273)<br />-   [Plan groups, categories, and RBS in Project Server 2010](https://technet.microsoft.com/library/cc197354.aspx)<br />-   [Manage security groups in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=207274)<br />-   [Project Server 2010 global permissions](http://go.microsoft.com/fwlink/?LinkId=207276)<br />-   [Project Server 2010 default group permissions](http://go.microsoft.com/fwlink/?LinkId=207277)<br />-   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356)<br />-   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](https://technet.microsoft.com/library/gg982985.aspx)|-   [Plan user access in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262117)<br />-   [Plan for administrative and service accounts (Project Server 2013)](http://go.microsoft.com/fwlink/?LinkId=262110)<br />-   [Plan groups, categories, and RBS in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262111)<br />-   [Manage security groups in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262112)<br />-   [Manage security group synchronization with Active Directory in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262113)<br />-   [Manage users in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262114)<br />-   [Manage Active Directory Resource Pool synchronization in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262115)<br />-   [Default group permissions in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262116)|  
   
 ## Related articles  
  [Configuration quick reference](configuration-quick-reference.md)   

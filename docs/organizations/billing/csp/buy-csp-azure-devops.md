@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2018
+ms.date: 04/10/2019
 monikerRange: 'azure-devops'
 ---
 # Cloud Solution Providers: Buy Azure DevOps resources for your customers
@@ -17,21 +17,20 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-vsts-only](../../../_shared/version-vsts-only.md)]
 
 Partners in the Cloud Solution Provider (CSP) program can purchase [Azure DevOps resources](https://visualstudio.microsoft.com/team-services/pricing) for
-your customers, including users (who get Basic features), Test Manager, Azure Artifacts, Private Pipelines, and
+your customers. This purchase includes users (who get Basic features), Test Manager, Azure Artifacts, Private Pipelines, and
 Hosted Pipelines.
 
 >[!Note]
->[Azure DevOps Services was previously called Visual Studio Team Services or VSTS](../../../user-guide/what-happened-vsts.md).
+>[Azure DevOps Services was previously called Visual Studio Team Services or VSTS](../../../user-guide/what-is-azure-devops.md#vsts).
 
 ## Prerequisites
 
-To set up billing for a customer who's already created an organization by using a Microsoft account identity
-(in other words, not an identity in their Azure Active Directory), your customer must do the following:
+Your customer must complete the following tasks to set up billing. This customer must have already created an organization by using a Microsoft account identity. In other words, not an identity in their Azure Active Directory.
 
 1. [Change their organization to be backed by their Azure Active Directory](../../accounts/access-with-azure-ad.md).
-2. [Remove the link to the existing Azure subscription that's used for billing on their organization](../change-azure-subscription.md), if they had previously set up billing.
+2. [...](../change-azure-subscription.md), if they had previously set up billing.
 
-Make sure your identity hasn't been added into the customer's Azure Active Directory. If it has, you need to have the identity removed before you can go through the purchasing steps for your customer.
+Make sure your identity hasn't been added into the customer's Azure Active Directory. If it has, you must remove the identity before you go through the purchasing steps for your customer.
 
 ## Buy resources for customers
 
@@ -41,8 +40,8 @@ Make sure your identity hasn't been added into the customer's Azure Active Direc
 >Azure DevOps Services was previously called Visual Studio Team Services (VSTS).
 
 1. Sign in to the [Partner Center](https://partnercenter.microsoft.com).
-2. Choose the customer for whom you're purchasing.
-3. Choose **Service Management**.
+2. Select the customer you're purchasing for.
+3. Choose **classic deployment model**.
 4. Choose **Visual Studio Marketplace**.
 5. Make sure you're in the **Azure DevOps** tab
 

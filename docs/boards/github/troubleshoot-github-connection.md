@@ -13,7 +13,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 03/05/2019
 ---
 
-# Troubleshoot GitHub & Azure Boards integration 
+# Troubleshoot GitHub & Azure Boards connection 
 
 [!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
 
@@ -36,13 +36,17 @@ The access by Azure Boards to the GitHub repositories can be revoked in several 
 
 ::: moniker range="azure-devops"
 <a id="integrate-repo-to-several-organizations" />
+
 ## Unexpected results when linking to projects defined in two or more Azure DevOps organizations
 
 If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you may get unexpected results when using **AB#** mentions to link to work items. This problem occurs because work item IDs are not unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. So, when a work item is mentioned in a commit message or pull request, both organizations will attempt to create a link to a work item with a matching ID (if one exists). 
 
 In general, a user intends an **AB#** mention to link to a single work item in one of the projects. However, if a work item of the same ID exists in both accounts, then links are created for both work items, likely causing confusion.
 
-Currently, there is no way to work around this issue, so we recommend that you connect a single GitHub repository only to a single Azure DevOps organization.  
+Currently, there is no way to work around this issue, so we recommend that you connect a single GitHub repository only to a single Azure DevOps organization. 
+
+> [!NOTE]  
+> When making the connection using the Azure Boards app for GitHub, the app prevents you from connecting to two different organizations. If a GitHub repository is incorrectly connected to the wrong Azure DevOps organization, you'll need to contact the owner of that organization to remove the connection before you'll be able to add the repository to the correct Azure DevOps organization.  
 
 ::: moniker-end
 

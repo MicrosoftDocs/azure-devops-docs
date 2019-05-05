@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.custom: seodec18
 ms.date: 08/28/2018
 monikerRange: 'azure-devops'

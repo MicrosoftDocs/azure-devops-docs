@@ -1,5 +1,5 @@
 - name: Boards (Kanban) 
-  href: index.md
+  href: index.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
@@ -53,6 +53,8 @@
     href: split-columns.md
   - name: Definition of done
     href: definition-of-done.md
+  - name: Configure status badges
+    href: ../github/configure-status-badges.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json 
   - name: Reorder cards
     href: ../../boards/boards/reorder-cards.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json
   - name: Filter your Kanban board

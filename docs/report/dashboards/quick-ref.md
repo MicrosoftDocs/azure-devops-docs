@@ -23,7 +23,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 [!INCLUDE [temp](../../_shared/version-selector-minimize.md)] 
 
 ## Tasks
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 <table valign="top">
 <tbody valign="top">
@@ -74,6 +74,69 @@ Use this index to quickly access information on tasks for configuring or accessi
 <ul>
 <li>[Power BI reports](../../boards/sprints/sprint-burndown.md)</li>
 <li>[OData](../extend-analytics/index.md) </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+---
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+<table valign="top">
+<tbody valign="top">
+<tr>
+<td width="50%"> 
+**Dashboards**
+<ul>
+<li>[Add a dashboard](dashboards.md)</li>
+<li>[Add a chart to a dashboard](add-charts-to-dashboard.md)</li>
+<li>[Add a widget to a dashboard](add-widget-to-dashboard.md)</li>
+<li>[Add a work-tracking query chart](charts.md)</li>
+<li>[Add a test status or progress chart](charts.md)</li>
+<li>[Add Markdown to a dashboard](add-markdown-to-dashboard.md)</li>
+<br/>
+<li>[Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)
+<li>[Delete a dashboard](dashboards.md)</li>
+<li>[Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete) </li>
+<li>[Edit a dashboard](dashboards.md)</li>
+<li>[Enable auto-refresh](dashboards.md)</li>
+<li>[Favorite a dashboard](dashboards.md)</li>
+<li>[Filter a dashboard](dashboards.md)</li>
+<br/> 
+<li>[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)</li>
+<li>[Open a dashboard](dashboards.md)</li><br/> 
+<li>[Rename a dashboard](dashboards.md)</li>
+<li>[Refresh a dashboard](dashboards.md)</li>
+<li>[Set dashboard permissions](dashboard-permissions.md)</li> 
+<li>[View a dashboard](dashboards.md)</li>
+</ul>
+</td>
+<td width="50%"> 
+**Charts**
+<ul>
+<li>[Work-tracking query chart](charts.md)</li>
+<li>[Test status or progress chart](charts.md)</li>
+</ul>
+**Widgets**
+<ul>
+<li>[Configure a widget](add-widget-to-dashboard.md#configure) 
+<li>[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md) 
+<li>[Configure the Cumulative Flow widget](cumulative-flow.md) 
+<li>[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md) 
+<li>[Configure the Velocity widget](team-velocity.md) 
+<li>[Configure the Test Results widget](configure-test-results-trend.md)</li>
+<li>[Resize a widget](add-widget-to-dashboard.md)</li>
+</ul>
+**Reports**
+<ul>
+<li>[Power BI reports](../../boards/sprints/sprint-burndown.md)</li>
+<li>[OData](../extend-analytics/index.md) </li>
+<li>[SQL Server reports](../../report/sql-reports/index.md)</li>
+<li>[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)</li>
 </ul>
 </td>
 </tr>

@@ -62,13 +62,13 @@ The following widgets are organized under the service they support. Widgets that
 <li>[Chart for build history](#build-history-widget)</li>
 <li>[Deployment status](#deployment-status-widget)</li>
 <li>[Release pipeline overview](#release-definition-widget)</li>
+<li>[Test results trend (Advanced)](#test-trend-results-advanced) (Analytics)</li>
 <li>[Requirements quality](#requirements-quality-widget)</li>
 </ul>
 <br/>
 **Test Plans**
 <li>[Chart for test plans](#chart-test-plan-widget)</li>
-<li>[Test results trend](#test-results-widget)</li>
-<li>[Test results trend (Advanced)](#test-trend-results-advanced) (Analytics)</li>
+
 </ul>
 </td>
 <td width="28%">
@@ -359,7 +359,7 @@ Displays the lead time of work items closed in a specified timeframe for a singl
 
 Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer.
 
-To learn more, see [ Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
+To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
   
 ----
 

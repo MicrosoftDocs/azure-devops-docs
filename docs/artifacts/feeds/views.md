@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 
 Views filter the feed to a subset of packages that meet criteria defined by the view.
 
-Right now, the only [kind of view](#views-for-other-scenarios) is a *release view*. Release views contain the subset of the feed's package-versions that have been *promoted* into that view. Release views work with NuGet and npm packages.
+Right now, the only [kind of view](#views-for-other-scenarios) is a *release view*. Release views contain the subset of the feed's package-versions that have been *promoted* into that view. Release views work with NuGet, npm, and Maven packages.
 
 *If you've never used release views, read more about [why and how they're useful for package continuous integration and delivery](../concepts/views.md) before getting started.*
 
@@ -52,7 +52,7 @@ Once a package-version is in a release view, you can connect your package client
 
 ![Connect to view dialog with view URL](_img/connect-to-view.png)
 
-For more details, see [Consume NuGet packages in Visual Studio](../nuget/consume.md) or [Install npm modules](../get-started-npm.md).
+For more details, see [Consume NuGet packages in Visual Studio](../nuget/consume.md), [Install npm modules](../get-started-npm.md), or [Install Maven artifacts](../maven/install.md).
 
 If you have a release process with more steps or differently-named steps, you can [customize your views](#managing-views). 
 

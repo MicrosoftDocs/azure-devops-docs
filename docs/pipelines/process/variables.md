@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/01/2019
+ms.date: 04/10/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -188,22 +188,35 @@ This does not update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
 ```yaml
-pool:
-  vmImage: 'ubuntu-16.04'
-
 steps:
 
-# Create a variable or a secret variable
+# Create a variable
 - script: |
     echo '##vso[task.setvariable variable=sauce]crushed tomatoes'
-    echo '##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic'
 
-# Print the variable
+# Use the variable
+# "$(sauce)" is replaced by the contents of the `sauce` variable by Azure Pipelines
+# before handing the body of the script to the shell.
 - script: |
-    echo my variable is $(sauce)
+    echo my pipeline variable is $(sauce)
 ```
 
-[!INCLUDE [include](_shared/set-variables-in-scripts.md)]
+Subsequent steps will also have the pipeline variable added to their environment.
+
+```yaml
+steps:
+
+# Create a variable
+# Note that this does _not_ update the environment of the current script.
+- script: |
+    echo '##vso[task.setvariable variable=sauce]crushed tomatoes'
+
+# An environment variable called `SAUCE` has been added to all downstream steps
+- bash: |
+    echo my environment variable is $SAUCE
+- pwsh: |
+    Write-Host "my environment variable is $env:SAUCE"
+```
 
 ### Set a multi-job output variable
 
@@ -309,9 +322,17 @@ YAML is not supported in TFS.
 
 # [Designer](#tab/designer)
 
-You cannot pass a variable from one job to another job of a build pipeline, unless you use YAML.
+### Set a job-scoped variable from a script
+
+To set a variable from a script, you use the `task.setvariable` logging command.
+This does not update the environment variables, but it does make the new
+variable available to downstream steps within the same job.
 
 [!INCLUDE [include](_shared/set-variables-in-scripts.md)]
+
+### Set a multi-job output variable
+
+You cannot pass a variable from one job to another job of a build pipeline unless you use YAML.
 
 ---
 

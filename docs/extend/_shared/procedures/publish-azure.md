@@ -1,5 +1,5 @@
 1. If you don't have an Azure subscription, create one.
-You can use the [free trial](http://azure.microsoft.com/pricing/free-trial/).
+You can use the [free trial](https://azure.microsoft.com/pricing/free-trial/).
 
 1. Create a web app in Microsoft Azure to host your extension.
 

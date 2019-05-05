@@ -1,9 +1,9 @@
 - name: "Develop Extensions"
-  href: index.md
+  href: index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Overview
   items:
     - name: What are extensions?
-      href: ./overview.md
+      href: ./overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Develop a web extension
@@ -12,6 +12,8 @@
   items:
   - name: Create a custom pipelines task
     href: develop/add-build-task.md
+  - name: Use a pipeline decorator
+    href: develop/add-pipeline-decorator.md
 - name: Samples
   items:
   - name: Sample extensions
@@ -114,6 +116,8 @@
     href: develop/manifest.md
   - name: Integrate a Pipelines task into an extension
     href: develop/integrate-build-task.md
+  - name: Pipeline decorator context
+    href: develop/pipeline-decorator-context.md
   - name: Endpoint authentication schemes
     href: develop/auth-schemes.md
   - name: Content hosting

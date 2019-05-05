@@ -9,7 +9,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 3/25/2019
+ms.date: 4/24/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -23,9 +23,7 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
-
-* You need a GitHub account, where you can create a repository.
+[!INCLUDE [include](_shared/prerequisites.md)]
 
 ## Get the sample code
 
@@ -47,15 +45,9 @@ You should now have a sample app in your GitHub account.
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose **New, New build pipeline**.
-
-   > [!div class="mx-imgBorder"]
-   ![New pipelines](_img/get-started-yaml/new-pipeline-button.png)
+1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
-
-   > [!div class="mx-imgBorder"]
-   ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
@@ -63,26 +55,23 @@ You should now have a sample app in your GitHub account.
 
 1. Azure Pipelines will analyze your repository.
 
-  - If your repository already contains an `azure-pipelines.yml` file (which is the case for the sample repositories in this article), then that file will be used, and you'll see a **Run** button. Click it to start a build.
-  - If your repository doesn't have a YAML file, Azure Pipelines recommends a starter template based on the code in your repository. You'll see a **Save and run** button instead of **Run**. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+  - Azure Pipelines recommends a starter template based on the code in your repository. If you see multiple recommendations, pick the first one. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+  - If your repository already contains an `azure-pipelines.yml` file, then that file will be used, and you'll see a **Run** button. Select **Run**.
 
-1. Wait for the build to finish.
+1. A new build is started. Wait for the build to finish.
 
 <a name="get-the-status-badge"></a>
 ## Add a CI status badge to your repository
 
-Many developers like to show that they're keeping their code quality high by displaying a CI build status badge in their repo.
+Many developers like to show that they're keeping their code quality high by displaying a status badge in their repo.
 
 ![Status badge shows Azure pipeline succeeded](_img/get-started-yaml/azure-pipelines-succeeded.png)
 
 To copy the status badge to your clipboard:
 
-1. In Azure Pipelines, go to the **Builds** page to view the list of pipelines. Select the pipeline you created in the previous section.
+1. In Azure Pipelines, go to the **Pipelines** page to view the list of pipelines. Select the pipeline you created in the previous section.
 
 1. In the context menu for the pipeline, select **Status badge**.
-
-   > [!div class="mx-imgBorder"]
-   ![Status badge](_img/get-started-yaml/status-badge.png)
 
 1. Copy the sample Markdown from the status badge panel.
 
@@ -96,7 +85,7 @@ Now with the badge Markdown in your clipboard, take the following steps in GitHu
 
 1. Notice that the status badge appears in the description of your repository.
 
-Because you just changed the `Readme.md` file in this repository, Azure Pipelines automatically builds your code, according to the configuration in the `azure-pipelines.yml` file at the root of your repository. Back in Azure Pipelines, observe that a new build appears. Each time you make an edit, Azure Pipelines queues a new build.
+Because you just changed the `Readme.md` file in this repository, Azure Pipelines automatically builds your code, according to the configuration in the `azure-pipelines.yml` file at the root of your repository. Back in Azure Pipelines, observe that a new build appears. Each time you make an edit, Azure Pipelines starts a new build.
 
 ## Next steps
 

@@ -2,7 +2,7 @@
 title: Buy cloud-based load testing - Azure DevOps
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18 Services
-description: Purchase and enable cloud-based load testing in Azure DevOps via the Azure portal.
+description: Purchase and enable cloud-based load testing in Azure DevOps.
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
@@ -10,17 +10,15 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 04/10/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Buy cloud-based load testing for Azure DevOps
+# Buy cloud-based load testing for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
-
-## Azure DevOps
 
 In this quickstart, you learn how to enable paid load testing in Azure DevOps.
 
@@ -38,26 +36,21 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 ## Enable paid load testing
 
-### Azure portal
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-1. [Sign in to the Azure portal](https://portal.azure.com/).
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-    > [!NOTE]
-    > If you experience browser problems with Azure, make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-2. Select **All services**, choose **Azure DevOps organizations**, and select your organization.
+3. Select **Billing**.
 
-   ![Azure DevOps organizations, select your organization](../accounts/_img/_shared/azure-portal-team-services-administration.png)
+   ![Select Billing from Organization settings](_img/_shared/select-billing-organization-settings.png)
 
-3. Select **Cloud-based load testing** on the right side of your screen.
-
-    ![Settings, select cloud-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
-
-4. Move the toggle key to **PAID** to turn on paid load testing.
+4. Select the dropdown menu for Cloud-based load testing, and then select **On**.
 
     You can set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** drop-down menu. When you're done, choose **Save**.
 
-    ![Choose PAID and select an optional monthly limit](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
+   ![Select an amount from the PAID LOAD TESTING LIMIT drop-down menu](_img/_shared/paid-load-testing-limit.png)
 
 Cloud-based load testing is enabled for your organization.
 
@@ -69,7 +62,7 @@ You're charged for only the virtual user minutes of cloud-based load testing use
 
 * Visual Studio subscriptions don't include any additional virtual user minutes. The free amounts are per organization, not per user.
 
-* For cloud-based load testing, you're charged for each 
+* For cloud-based load testing, you're charged for each
    [virtual user minute](../../test/load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
 
 * Graduated discounts for cloud-based load testing are calculated based on your Azure subscription billing cycle.
@@ -77,10 +70,6 @@ You're charged for only the virtual user minutes of cloud-based load testing use
 ## Limits on load test runs
 
 There's a limit on the duration for each test run. For cloud-based load testing, the limit depends on where you run your test. For details, see [this Q&A](../../test/load-test/reference-qa.md#test-limits).
-
-## Clean up resources
-
-To turn off paid cloud-based load testing, go to your organization in the Azure portal. Choose **Cloud-based load testing**. Move the toggle key from **PAID** to **FREE**. Then choose **Save**.
 
 ## Next steps
 

@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/28/2019
+ms.date: 04/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -42,7 +42,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) abo
 
 Make sure all Azure DevOps users are in Azure AD by completing the following steps.  
 
-Note that a user who isn't in your Azure AD is a "historic" user and can't sign in. However, the user's history is retained. [Create a support ticket](https://azure.microsoft.com/en-us/support/devops/) to gain access to user history.
+Note that a user who isn't in your Azure AD is a "historic" user and can't sign in. However, the user's history is retained. [Create a support ticket](https://azure.microsoft.com/support/devops/) to gain access to user history.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
@@ -139,7 +139,7 @@ See the following questions that are most frequently asked about connecting your
 
 ## Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 
-* If you want to retain the work history of the user, then [contact Support](https://azure.microsoft.com/en-us/support/devops/) to map the current identity to the new identity in Azure AD. If you have the latest version of the feature, select **Resolve** to map identities or invite the MSA users into your tenant as guests, instead of calling Support.
+* If you want to retain the work history of the user, then [contact Support](https://azure.microsoft.com/support/devops/) to map the current identity to the new identity in Azure AD.
 * If you don’t need to save work history, have the user start using the new Azure AD identity to sign in to the organization.
 
 ## I got an error message when mapping. What should I do?
@@ -166,11 +166,13 @@ Clear your browser cache, and delete any cookies for the session. Close your bro
 
 ## What if my email account isn't found in Azure AD?
 
-Talk to the administrator of your company's Azure Active Directory to get your email account (fabrikamfiber12@hotmail.com) added to that directory. Or, they can give you a new Azure AD account - if you get a new Azure AD account, [contact support](https://azure.microsoft.com/en-us/support/devops/) for mapping.
+Talk to the administrator of your company's Azure Active Directory to get your email account (fabrikamfiber12@hotmail.com) added to that directory. Or, they can give you a new Azure AD account - if you get a new Azure AD account, [contact support](https://azure.microsoft.com/support/devops/) for mapping.
 
 ## What if I get a warning about members who will lose access to the organization?
 
-You can still connect to Azure AD, but [contact support](https://azure.microsoft.com/en-us/support/devops/) afterward to resolve this issue. You can also select the bolded text to see which users are affected. ![Show disconnected users](_img/connect-organization-to-aad/show-disconnected-users.png)
+You can still connect to Azure AD, but [contact support](https://azure.microsoft.com/support/devops/) afterward to resolve this issue. You can also select the bolded text to see which users are affected. 
+
+![Show disconnected users](_img/connect-organization-to-aad/show-disconnected-users.png)
 
 ## Next steps
 

@@ -1,9 +1,9 @@
 - name: SharePoint Integration
-  href: index.md
+  href: index.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: About SharePoint integration
-    href: about-sharepoint-integration.md 
+    href: about-sharepoint-integration.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json 
   - name: Discontinue the TFS 2017 (and earlier) SharePoint integration
     href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
 - name: Quickstarts
@@ -125,9 +125,10 @@
       href: ../../report/excel/test-case-readiness-excel-report.md 
     - name: Test Plan Progress
       href: ../../report/excel/test-plan-progress-excel-report.md 
-    - name: Test management reports
-      href: ../../report/excel/test-management-reports.md 
+    - name: Test management
       items:
+      - name: Test management reports
+        href: ../../report/excel/test-management-reports.md 
       - name: Testing Gaps (Agile)
         href: ../../report/excel/testing-gaps-excel-report-agile.md 
       - name: Test Team Progress
@@ -146,10 +147,8 @@
       href: ../../report/excel/testing-gaps-excel-report-cmmi.md 
     - name: Excel reports (CMMI)
       href: ../../report/excel/excel-reports-cmmi.md  
-  - name: Excel workbooks 
-    items:
-    - name: Issues and Triage workbooks
-      href: ../guidance/workbooks.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json
+  - name: Issues & Triage Excel workbooks
+    href: ../guidance/workbooks.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Microsoft Teams

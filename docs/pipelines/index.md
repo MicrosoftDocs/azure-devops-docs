@@ -419,7 +419,7 @@ Tutorials, references, and other documentation show you how to configure and man
                             <div class="card ready x-hidden-focus">
                                 <div class="cardImageOuter">
                                     <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="XCode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                        <img style="display: none;" alt="Xcode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -1099,7 +1099,7 @@ Tutorials, references, and other documentation show you how to configure and man
                             <div class="card ready x-hidden-focus">
                                 <div class="cardImageOuter">
                                     <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                        <img style="display: none;" alt="XCode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                        <img style="display: none;" alt="Xcode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -1411,6 +1411,6 @@ Tutorials, references, and other documentation show you how to configure and man
 
 ::: moniker range="tfs-2013"
 
-**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
+**TFS 2013:** We recommend that you [Migrate from XAML builds to new builds](build/migrate-from-xaml-builds.md). If you're not yet ready to do that, then see [XAML builds](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
 ::: moniker-end

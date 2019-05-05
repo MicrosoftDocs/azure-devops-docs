@@ -15,6 +15,7 @@ ms.date: 04/05/2019
 ---
 
 # Track progress by creating status and trend query-based charts 
+
 [!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
@@ -29,6 +30,8 @@ For example, the following image illustrates two different charts created from t
 
 > [!div class="mx-imgBorder"]  
 > ![[Active bug charts added to dashboards](_img/overview/active-bug-charts-on-dashboards-2019.png)   
+
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -65,21 +68,26 @@ By default, users with **Basic** access or higher can create charts from a flat 
 
 
 ::: moniker range="tfs-2015"
+
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 - You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
+
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
+
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+
 ::: moniker-end
 
 To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
 
 
 ## Create a query-based chart  
+
 1.	From **Queries**, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
 
 	::: moniker range=">= azure-devops-2019"  
@@ -120,6 +128,7 @@ Charts automatically update when you edit the query or refresh the query results
 
 
 ### Stacked bar chart  
+
 A stacked bar chart lets you track progress against two field values. Node Name will display the last leaf within the hierarchy of area paths. Use this when you want to show data across teams.  
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
@@ -130,6 +139,7 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 ::: moniker-end  
 
 ### Trend chart  
+
 Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year (earlier versions of TFS may have limited selections).  
 
 ::: moniker range=">= azure-devops-2019"  
@@ -144,6 +154,7 @@ Trend data is extracted from the work tracking data store. Like most data stores
 
 
 ### Burndown chart  
+
 Choose the **Sum** operator for **Remaining Work** to view a burndown chart of tasks. 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
@@ -158,6 +169,7 @@ Choose the **Sum** operator for **Remaining Work** to view a burndown chart of t
 To add a chart to your team's home page, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
 
 Choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the chart you want to add, and select **Add to dashboard**.  
+
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Chart context menu, Add to dashboard option](_img/charts/add-chart-to-dashboard-qe.png)   
@@ -168,6 +180,7 @@ In the dialog that opens, select the team dashboard to add the chart to.
 > ![Select a dashboard dialog](_img/charts/select-dashboard-dialog.png)  
 
 ::: moniker-end  
+
 ::: moniker range="<= tfs-2018"  
 ![Chart context menu, add to a team dashboard](_img/pin-chart-to-a-dashboard.png)
 ::: moniker-end  
@@ -175,12 +188,14 @@ In the dialog that opens, select the team dashboard to add the chart to.
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
  
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 > [!NOTE]  
-><b>Feature availability: </b> For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
+> For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 <a id="add-chart-widget"></a> 
+
 ## Add chart widget to a dashboard   
  
 If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a team dashboard using the *Chart for work items* widget.  
@@ -257,6 +272,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 
 ## Related articles
+
 Now you know how to create status and trend charts for work items. A few things to keep in mind...
 
 - To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)    
@@ -277,11 +293,13 @@ Also, from the web portal, you can view the following charts:
 [!INCLUDE [temp](../../boards/_shared/image-differences-with-wits.md)]
 
 ### Fields that show up in the chart editor
+
 For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 
 
 You can't select fields for groupings that aren't supported, such as ID, Title, Tags, date-time fields, Description, Repro Steps, and other HTML and long text fields.  
 
 ### Charts and the display of areas and iterations
+
 When you select **Area Path** or **Iteration Path**, only the leaf node appears in the chart. The leaf node is the last node of the full path. For example, ```Phone``` is the leaf node of ```FabrikamFiber/Fabrikam Website/Phone```. If your query contains a mixed level of leaf nodes, your chart might not reflect expected results.  
 
 Use ```Node Name```, the area path leaf node, to see if that improves your results. 
@@ -289,13 +307,16 @@ Use ```Node Name```, the area path leaf node, to see if that improves your resul
 Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Internet Explorer 9 and Internet Explorer 10, Chrome, Firefox and Safari on Mac. Charts have not been optimized for mobile or touch displays. 
 
 ### Why some charts don't show all the field values in the results 
+
 When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
 
 ![Other category groups data beyond 7 set series](_img/tfs-vso-remaining-category-consolidation-chart.png)  
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ### Widgets and the Analytics Service 
+
 The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../dashboards/analytics-widgets.md).  
  
 ::: moniker-end

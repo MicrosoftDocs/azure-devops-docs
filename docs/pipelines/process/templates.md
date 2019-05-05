@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: jillfra
-ms.author: alewis
+ms.author: macoope
 author: vtbassmatt
 ms.date: 03/22/2019
 monikerRange: 'azure-devops'

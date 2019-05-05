@@ -50,10 +50,10 @@ To run the **witadmin** commands you must be a member of the Team Foundation Adm
 > Upgrading to TFS 2017 removes the **TFSAdmin** command line tool. In order to have a list of all mapped elements to remove in procedures 3 through 6, you'll want to perform the following steps. 
 
 1. To get a list of all mapped collections, run this command on the application tier server for TFS:  
-	```TfsAdmin ProjectServer /GetMappedCollections /tfs:tfsUrl ```  
+	```TfsAdmin ProjectServer /GetMappedCollections /tfs:tfsUrl```  
 
 2. To get a list of all mapped projects, run this command on each mapped collection:  
-	```TfsAdmin ProjectServer /GetMappedProjects /collection:tpcUrl ```
+	```TfsAdmin ProjectServer /GetMappedProjects /collection:tpcUrl```
 
 3. To get a list of all mapped WITs, run this command on each mapped project:  
 	```TfsAdmin ProjectServer /GetMappedWorkItemTypes /collection:tpcUrl teamProject:TeamProjectName```
@@ -90,7 +90,7 @@ To remove the Project Server tab and associated fields, run **witadmin** to expo
 	a. `<Group Label="Publish">`  
 	b. `<Group Label="Mapped Fields (Project Plan)">`  
 	c. `<Group Label="Mapped Fields (Project Plan : Work Item)">`  
-	d. Remaining `<Control>` elements with `FieldName="Microsoft.Sync.ProjSrv.*" or FieldName="Mirror.*" `  
+	d. Remaining `<Control>` elements with `FieldName="Microsoft.Sync.ProjSrv.*" or FieldName="Mirror.*"`  
 
 5. Import the updated WIT xml file. 
 

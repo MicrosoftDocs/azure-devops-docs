@@ -396,9 +396,9 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
 -   **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  &&`
 
-    `"Previous State Before Edit/New" == "FromState" `
+    `"Previous State Before Edit/New" == "FromState"`
 
     `&& "MyField Value" != NULL`
 
@@ -406,7 +406,7 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
     `Reason field == "MyReason" &&`
 
-    `State field value == "ToState"  && `
+    `State field value == "ToState"  &&`
 
     `"Previous State Before Edit/New" == "FromState" && "MyField Value" != NULL`
 

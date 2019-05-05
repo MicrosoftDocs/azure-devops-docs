@@ -142,8 +142,7 @@ For example, you have configured an agent (see above) with the name `our-osx-age
 
 * Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `vsts.agent.fabrikam.our-osx-agent`
 
-* TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `
-vsts.agent.our-server.our-osx-agent`
+* TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `vsts.agent.our-server.our-osx-agent`
 
 ### Commands
 
@@ -286,15 +285,15 @@ When you install the service, some service files are put in place.
 
 A .plist service file is created:
 
-`
+```
 ~/Library/LaunchAgents/vsts.agent.{tfs-name}.{agent-name}.plist
-`
+```
 
 For example:
 
-`
+```
 ~/Library/LaunchAgents/vsts.agent.fabrikam.our-osx-agent.plist
-`
+```
 
 `sudo ./svc.sh install` generates this file from this template: `./bin/vsts.agent.plist.template`
 
