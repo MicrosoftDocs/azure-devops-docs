@@ -9,7 +9,7 @@ ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 08/31/2018
+ms.date: 04/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -17,20 +17,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-This guidance explains how to automatically build, test, and deploy Python apps or scripts.
-
-## Example
-
-For a working example of how to build a Python app with Django, import into Azure Repos or fork (into GitHub) this repo:
-
-```
-https://github.com/MicrosoftDocs/pipelines-python-django
-```
-
-The sample code includes an `azure-pipelines.yml` file at the root of the repository.
-You can use this file to build the project.
-
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample project.
+This guidance explains different aspects of an Azure Pipeline to build, test, and deploy Python apps or scripts. For a detailed walkthrough for web apps, see [Quickstart - Build and deploy Python web apps](python-webapp.md)
 
 ## Build environment
 
@@ -56,7 +43,7 @@ steps:
 
 ### Use multiple Python versions
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many parallel jobs are available.
+To run a pipeline with multiple Python versions, perhaps to test a package against those versions, define a *job* with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **maxParallel** value to simultaneously run the job for all versions in the matrix, depending on how many parallel jobs are available.
 
 ```yaml
 # https://aka.ms/yaml
@@ -89,15 +76,13 @@ See [Run pipelines with Anaconda environments](./anaconda.md).
 
 ## Run a Python script
 
-If you have a Python script checked into the repo, you can run it using **script**.
-Add the following YAML to run a Python file named `example.py`.
+To run other Python script in your repository, use a `script` element and specify the filename:
 
 ```yaml
 - script: python src/example.py
 ```
 
-If you want to write a Python script inline in the YAML file, use the [Python Script](../tasks/utility/python-script.md) task.
-Set the **targetType** to `inline` and put your code in the **script** section.
+You can also run inline Python scripts with the [Python Script](../tasks/utility/python-script.md) task:
 
 ```yaml
 - task: PythonScript@0
@@ -132,7 +117,9 @@ After updating `pip` and friends, a typical next step is to install from `requir
 
 See [Run pipelines with Anaconda environments](./anaconda.md).
 
-## Test
+<a name="test"></a>
+
+## Run tests
 
 ### Run lint tests with Flake8
 
@@ -184,9 +171,7 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
 
 ### Run tests with Tox
 
-When running tests with Tox, you can run parallel jobs to split up the work.
-This is somewhat different from how you would run Tox on your development machine, where you would run all of your test environments in series.
-In the sample below, note the use of `tox -e py` to run whichever version of Python is active for the current job.
+When running tests with Tox, you can run parallel jobs to split up the work. This is somewhat different from how you would run Tox on your development machine, where you would run all of your test environments in series. In the sample below, note the use of `tox -e py` to run whichever version of Python is active for the current job.
 
 ```yaml
 - job:
@@ -244,8 +229,7 @@ You can also build and publish a Docker container image for your app. For more i
 
 ## Related extensions
 
-- [Python Build Tools (for Windows)](https://marketplace.visualstudio.com/items?itemName=stevedower.python) (Steve Dower)  
 - [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)  
+- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
 - [Azure Pipelines Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
-- [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (Microsoft)  
+- [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  

@@ -1,11 +1,18 @@
-- name: GitHub & Azure Boards
+- name: GitHub and Azure Boards
   href: index.md?toc=/azure/devops/boards/github/toc.json&bc=/azure/devops/boards/github/breadcrumb/toc.json
   items:
-  - name: Connect Azure Boards to GitHub  
-    href: connect-to-github.md
+  - name: Connect Azure Boards with GitHub  
+    expanded: true
+    items:
+    - name: Install and configure from GitHub
+      href: install-github-app.md
+    - name: Connect from Azure Boards  
+      href: connect-to-github.md
   - name: Link GitHub commits and pull requests
     href: link-to-from-github.md
-  - name: Troubleshoot GitHub repository connection
+  - name: Configure status badges
+    href: configure-status-badges.md
+  - name: Troubleshoot GitHub connection
     href: troubleshoot-github-connection.md
   - name: Resources
     items:

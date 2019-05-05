@@ -64,7 +64,7 @@ sections:
           title: Azure DevOps
           alt: DevOps logo 
           src: https://docs.microsoft.com/media/common/i_dev-ops.svg
-        title: Create organizations
+        title: Create an organization or project collection
       - href: ../organizations/projects/create-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
         html: <p></p>
         image:
@@ -207,6 +207,13 @@ sections:
           alt: Configure teams logo
           src: https://docs.microsoft.com/media/common/i_configure-teams.svg
         title: Software development roles
+      - href: what-is-azure-devops.md
+        html: <p></p>
+        image:
+          title: What is Azure DevOps?
+          alt: Article logo
+          src: https://docs.microsoft.com/media/common/i_article.svg
+        title: "What is Azure DevOps?"
       - href: about-azure-devops-services-tfs.md
         html: <p></p>
         image:

@@ -53,7 +53,7 @@ With the Code Churn report, you can analyze how source files are changing over t
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
-     For more information, see [Code Coverage configuration using Test Settings is deprecated](https://msdn.microsoft.com/library/dd504821.aspx) and [(NIB) How to: Gather Code-Coverage Data with Generic Tests](http://msdn.microsoft.com/164f5cb9-9dad-4a0b-83e3-68e83ca99431).  
+     For more information, see [Code Coverage configuration using Test Settings is deprecated](https://msdn.microsoft.com/library/dd504821.aspx) and [(NIB) How to: Gather Code-Coverage Data with Generic Tests](https://msdn.microsoft.com/164f5cb9-9dad-4a0b-83e3-68e83ca99431).  
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   

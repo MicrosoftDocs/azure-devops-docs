@@ -1,14 +1,12 @@
 - name: Start using Azure DevOps
-  href: index.yml
+  href: index.yml?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
   - name: What is Azure DevOps?
-    href: what-is-azure-devops-services.md
-  - name: Overview of Services
+    href: what-is-azure-devops.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
+  - name: Overview of services
     href: services.md
-  - name: Where's VSTS?
-    href: what-happened-vsts.md
   - name: Azure DevOps Services vs. Azure DevOps Server
     href: about-azure-devops-services-tfs.md  
 - name: Quickstarts for users
@@ -27,7 +25,7 @@
   items:
   - name: Sign up for Azure DevOps
     href: sign-up-invite-teammates.md
-  - name: Create organizations
+  - name: Create an organization or project collection
     href: ../organizations/accounts/create-organization.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Manage your project
     href: project-admin-tutorial.md
@@ -68,7 +66,7 @@
 - name: How-to guides
   items:
   - name: Sign in to the web or a client
-    href: connect-team-projects.md 
+    href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
@@ -91,6 +89,8 @@
     href: work-team-explorer.md  
   - name: FAQs
     href: faqs.md
+  - name: Service status  
+    href: service-status-info.md
   - name: Data protection overview
     href: ../organizations/security/data-protection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Resources

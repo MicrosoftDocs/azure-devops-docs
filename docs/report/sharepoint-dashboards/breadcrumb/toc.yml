@@ -1,4 +1,4 @@
-- name: Team Foundation Server
+- name: Azure DevOps Server
   tocHref: /azure/devops/
   topicHref: /azure/devops/server/index
   items: 

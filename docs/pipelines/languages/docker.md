@@ -47,7 +47,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 ::: moniker range="azure-devops"
 
 Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a pipeline for the sample app.
-When you're done, you'll have a working YAML file (`azure-pipeines.yml`) in your repository that's ready for your to customize.
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for your to customize.
 
 > [!TIP]
 > To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.

@@ -21,6 +21,8 @@ ms.date: 01/08/2018
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 
 
+If you're just getting started, read [Track work with user stories, issues, bugs, features, and epics](about-work-items.md). For a quick reference to work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
+
 
 ## 5-Minute Quickstarts  
 
@@ -65,12 +67,26 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ## Concepts 
 
+::: moniker range="azure-devops"
+
+- [Choose a process](guidance/choose-process.md)  
+- [Agile process guidance](guidance/agile-process.md)  
+- [Basic process guidance](../get-started/track-issues-tasks.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)  
+- [CMMI process guidance](guidance/cmmi-process.md)  
+- [Scrum process guidance](guidance/scrum-process.md)         
+- [Agile glossary](agile-glossary.md) 
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 - [Choose a process](guidance/choose-process.md)  
 - [Agile process guidance](guidance/agile-process.md)  
 - [CMMI process guidance](guidance/cmmi-process.md)  
 - [Scrum process guidance](guidance/scrum-process.md)         
 - [Agile glossary](agile-glossary.md) 
 
+::: moniker-end
 
 ## How-to Guides
 ::: moniker range=">= tfs-2015"

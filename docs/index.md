@@ -224,6 +224,25 @@ featureFlags:
                                             </div>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="/cli/azure/ext/azure-devops">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_cligeneric.svg" alt="CLI" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Command Line Interface</h3>
+                                                            <p>Use the Azure DevOps cross-platform command-line extension to manage repositories, pipelines, boards, and more.  </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <a href="#index2"></a>
                                 <h2 style="float: left; display: flex;">Create pipelines to build and deploy applications to any platform, cloud, or app store.</h2>
@@ -505,7 +524,7 @@ featureFlags:
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="XCode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+                                                                <img style="display: none;" alt="Xcode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">

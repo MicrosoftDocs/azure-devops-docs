@@ -11,14 +11,24 @@ author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 04/26/2019
 ---
 
-# Quickstart: Plan and track your work
+# Plan and track your work
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to add work items from the web portal and view work items that you've created for your project. Use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.
+In this quickstart, you learn how to do the following tasks:
+- add and view work items for your project from the web portal
+- use different types of work items to track different types of work&mdash;such as:
+   - user stories or product backlog items
+   - tasks
+   - bugs
+   - issues
+- describe the work to be done
+- assign work
+- track status
+- coordinate efforts within your team
 
 <a id="define-new-work">  </a>
 
@@ -34,7 +44,7 @@ You can add work items after you connect to a project. If you don't have an orga
 
 	The web browser URL follows this pattern: ```https://dev.azure.com/{yourorganization}/{yourproject}```  
 
-	You can use this URL to quickly open the project. Replace {yourorganization} and {yourproject} with your specific organization and project name, and remove the braces.
+	You can use this URL to quickly open the project. Replace {yourorganization} and {yourproject} with your specific organization and project name, and then remove the braces.
 
 	If you don't see the project that you want, choose the ![Azure DevOps icon](../_img/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
@@ -117,11 +127,9 @@ For more information on how to use the **Work Items** page, see [View and add wo
 > [!div class="nextstepaction"]
 > [Add and run manual tests](add-run-manual-tests.md)
 
-To quickly add backlog items, such as user stories or requirements, see these articles:  
-> [!div class="nextstepaction"]
-> [Create your backlog](../boards/backlogs/create-your-backlog.md)
-> [Kanban quickstart](../boards/boards/kanban-quickstart.md)
-
 ## Related articles
 
-- Learn more about [planning and tracking work](../boards/work-items/index.md).
+To quickly add backlog items, such as user stories or requirements, see the following articles:  
+- [Create your backlog](../boards/backlogs/create-your-backlog.md)
+- [Kanban quickstart](../boards/boards/kanban-quickstart.md)
+- Learn more about [planning and tracking work](../boards/work-items/index.md)

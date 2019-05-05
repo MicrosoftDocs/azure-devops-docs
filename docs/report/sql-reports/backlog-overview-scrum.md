@@ -61,7 +61,7 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
 ### Required activities to track the backlog  
  To populate the report with useful data, the team performs the following activities:  
   
--   Define PBIs and tasks. Make sure that tasks are linked to their parent PBIs through a **Child** link. Also, create a **Child** link from any subtasks to its parent task. For more information, see [Define the tasks required to implement PBIs and bugs](http://msdn.microsoft.com/34c866ea-a130-4371-bfc4-a3d9f87dccca).  
+-   Define PBIs and tasks. Make sure that tasks are linked to their parent PBIs through a **Child** link. Also, create a **Child** link from any subtasks to its parent task. For more information, see [Define the tasks required to implement PBIs and bugs](https://msdn.microsoft.com/34c866ea-a130-4371-bfc4-a3d9f87dccca).  
   
      If you subdivide a task into subtasks, specify hours only for the subtasks. Hours are roll up as summary values for the parent task and PBI.  
   

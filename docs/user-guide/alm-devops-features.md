@@ -1879,19 +1879,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <ul>
 <li>[English](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
-<li>[Brazilian Portuguese](https://msdn.microsoft.com/pt-br/library/fda2bad5.aspx)</li>
+<li>[Brazilian Portuguese](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
 <li>[Chinese Simplified](https://msdn.microsoft.com/v/library/fda2bad5.aspx)</li>
-<li>[Chinese Traditional](https://msdn.microsoft.com/zh-tw/library/fda2bad5.aspx)</li>
-<li>[Czech](https://msdn.microsoft.com/cs-cz/library/fda2bad5.aspx)</li>
-<li>[German](https://msdn.microsoft.com/de-de/library/fda2bad5.aspx)</li>
-<li>[French](https://msdn.microsoft.com/fr-fr/library/fda2bad5.aspx)</li>
-<li>[Italian](https://msdn.microsoft.com/it-it/library/fda2bad5.aspx)</li>
-<li>[Japanese](https://msdn.microsoft.com/ja-jp/library/fda2bad5.aspx)</li>
-<li>[Korean](https://msdn.microsoft.com/ko-kr/library/fda2bad5.aspx)</li>
-<li>[Polish](https://msdn.microsoft.com/pl-pl/library/fda2bad5.aspx)</li>
-<li>[Russian](https://msdn.microsoft.com/ru-ru/library/fda2bad5.aspx)</li>
-<li>[Spanish](https://msdn.microsoft.com/es-es/library/fda2bad5.aspx)</li>
-<li>[Turkish](https://msdn.microsoft.com/tr-tr/library/fda2bad5.aspx)</li>
+<li>[Chinese Traditional](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Czech](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[German](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[French](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Italian](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Japanese](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Korean](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Polish](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Russian](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Spanish](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
+<li>[Turkish](https://msdn.microsoft.com/library/fda2bad5.aspx)</li>
 </ul>
 
 <br/>
@@ -1903,20 +1903,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Visual Studio language pack</b></p>
 <p>Install the [language pack](http://www.microsoft.com/download/details.aspx?id=48157) to [switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx).  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
-<li><a href="http://msdn.microsoft.com/library/dd831853.aspx">English</a></li>
-<li><a href="http://msdn.microsoft.com/pt-br/library/dd831853.aspx">Brazilian Portuguese</a></li>
-<li><a href="http://msdn.microsoft.com/zh-cn/library/dd831853.aspx">Chinese Simplified</a></li>
-<li><a href="http://msdn.microsoft.com/zh-tw/library/dd831853.aspx">Chinese Traditional</a></li>
-<li><a href="http://msdn.microsoft.com/cs-cz/library/dd831853.aspx">Czech</a></li>
-<li><a href="http://msdn.microsoft.com/de-de/library/dd831853.aspx">German</a></li>
-<li><a href="http://msdn.microsoft.com/fr-fr/library/dd831853.aspx">French</a></li>
-<li><a href="http://msdn.microsoft.com/it-it/library/dd831853.aspx">Italian</a></li>
-<li><a href="http://msdn.microsoft.com/ja-jp/library/dd831853.aspx">Japanese</a></li>
-<li><a href="http://msdn.microsoft.com/ko-kr/library/dd831853.aspx">Korean</a></li>
-<li><a href="http://msdn.microsoft.com/pl-pl/library/dd831853.aspx">Polish</a></li>
-<li><a href="http://msdn.microsoft.com/ru-ru/library/dd831853.aspx">Russian</a></li>
-<li><a href="http://msdn.microsoft.com/es-es/library/dd831853.aspx">Spanish</a></li>
-<li><a href="http://msdn.microsoft.com/tr-tr/library/dd831853.aspx">Turkish</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">English</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Brazilian Portuguese</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Simplified</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Traditional</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Czech</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">German</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">French</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Italian</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Japanese</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Korean</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Polish</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Russian</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Spanish</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Turkish</a></li>
 </ul>
 <br/>
 
@@ -1947,7 +1947,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is Application Insights</b></p>
-<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can [detect and diagnose performance issues, and understand what users actually do with your app](https://azure.microsoft.com/en-in/documentation/articles/app-insights-overview/). </p>
+<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can [detect and diagnose performance issues, and understand what users actually do with your app](https://azure.microsoft.com/documentation/articles/app-insights-overview/). </p>
 
 
 <p><b>Web site availability monitoring </b></p>
@@ -1982,7 +1982,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Gain a clear view of [where your users are coming from and how they use your app ](https://azure.microsoft.com/documentation/articles/app-insights-overview-usage/). Add custom instrumentation to determine usage patterns and next version investment areas.  </p>
 
 <p><b>Diagnose dependency issues</b></p>
-<p>See how long your application [waits for dependencies and how often a dependency call fails](https://azure.microsoft.com/en-in/documentation/articles/app-insights-dependencies/). Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
+<p>See how long your application [waits for dependencies and how often a dependency call fails](https://azure.microsoft.com/documentation/articles/app-insights-dependencies/). Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
 
 
 <p><b>Custom data collectors </b></p>
@@ -2188,7 +2188,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Quick work item search</b></p>
-<p>Find work items based on [ID, assignment, changed date, or keyword](http://msdn.microsoft.com/library/cc668120.aspx). </p>
+<p>Find work items based on [ID, assignment, changed date, or keyword](https://msdn.microsoft.com/library/cc668120.aspx). </p>
 ![Search work item box](_img/features/alm-index-search-work-items-vsts.png)  
 <br/>
 
@@ -2198,7 +2198,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 
 <p><b>CodeLens search</b></p>
-<p>[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](http://msdn.microsoft.com/library/dn269218.aspx).</p>
+<p>[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](https://msdn.microsoft.com/library/dn269218.aspx).</p>
 
 <p><b>Work item queries</b></p>
 <p>Open shared queries or create your own query using the query editor [to list work items or show hierarchical or dependent items](../boards/queries/using-queries.md).  </p>

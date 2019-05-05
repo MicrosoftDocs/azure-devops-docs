@@ -53,7 +53,7 @@ Published test results can be viewed in the **Tests** tab in a build or release 
 
 ## Surface test results in the Tests tab 
 
-Tests results can be surfaced in the **Tests** tab using one of the following options:
+Test results can be surfaced in the **Tests** tab using one of the following options:
 
 * **Automatically  inferred  test  results**.  By default, your pipeline can automatically infer the test output for a few popular test runners.
   This is done by parsing the error logs generated during the build operation and then checking for signatures of test failures.
@@ -63,7 +63,7 @@ Tests results can be surfaced in the **Tests** tab using one of the following op
   - Python- Unittest
  
   **Note**: This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
-  [(more details)](#automatically_inferred_tests). Also see:  
+  [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
   - [Publishing fully-formed test reports for JavaScript test runners](../languages/javascript.md#run-unit-tests)
   - [Publishing fully-formed test reports for Python test runners](../languages/python.md#test)

@@ -1,7 +1,7 @@
 ---
 ms.prod: devops
 title: Running the agent in Docker
-ms.topic: howto
+ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
 ms.technology: devops-cicd
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19

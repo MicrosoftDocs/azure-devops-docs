@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -24,9 +24,9 @@ To automate your deployments, deploy the same way to multiple environments,
 and run deployment and validation scripts, follow these steps.
 For less complex scenarios, such as deploying to Azure websites or cloud services, 
 follow steps to set up continuous deployment from 
-**[TFVC](http://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/)** 
+**[TFVC](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/)** 
 or 
-**[Git](http://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso-git/)** 
+**[Git](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso-git/)** 
 instead.
 
 Before you start, you'll need:
@@ -34,9 +34,9 @@ Before you start, you'll need:
 * **An Azure DevOps organization**.
 * **A project**.
 * **Azure VMs**. If you need to create them, 
-  **[here's how](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
+  **[here's how](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
 * **An Azure storage account.** Create one 
-  **[here](http://azure.microsoft.com/documentation/articles/storage-create-storage-account/)**.
+  **[here](https://azure.microsoft.com/documentation/articles/storage-create-storage-account/)**.
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
 * **A deployment script.**  Find out how to set up and check-in this script 

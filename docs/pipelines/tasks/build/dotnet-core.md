@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
 ms.manager: jillfra
-ms.author: amullans
+ms.author: puagarw
+author: pulkitaggarwl
 ms.date: 05/16/2018
 monikerRange: '>= tfs-2017'
 ---

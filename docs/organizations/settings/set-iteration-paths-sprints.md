@@ -10,23 +10,24 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 04/15/2019
 ---
 
-# Define iteration paths (aka sprints) and configure team iterations 
+# Define Iteration Paths (aka sprints) and configure team iterations 
 
 [!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
 
-You add iteration paths to support teams perform sprint planning and to group work items based on a time-box interval or sprint. You define iteration paths at the project level and then each team selects the one to be active for them under the team configuration. You can create a flat iteration path structure or a hierarchy of it paths to support releases, sub-releases, and sprints. 
+You add Iteration Paths to support teams who implement Scrum or use sprint planning to group work items based on a time-box interval or sprint. You define Iteration Paths at the project level and then each team selects the ones they want to be active for them under the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
-Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
+Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected Iteration Paths or sprints. Most teams choose one Area Path and several Iteration Paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several Area Paths to appear on their backlogs and boards. 
 
-Newly created projects contain a single, root area that corresponds to the project name. You add iteration paths under this root. Each project typically specifies a predefined set of iterations to help you get started tracking your work. All you need to do is specify the dates. 
+Newly created projects contain a single, root Area Path that corresponds to the project name. You add Area Paths under this root. Also, each project typically specifies a predefined set of Iteration Paths to help you get started tracking your work. All you need to do is specify the dates. 
 
 [!INCLUDE [temp](../../_shared/version-selector.md)]
 
 
 ## Prerequisites
+
 <a name="permissions"></a>
 
 - You add Iteration Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
@@ -124,6 +125,7 @@ From the web portal, choose the ![ ](../../_img/icons/gear_icon.png) gear icon t
 
 
 <a id="iterations"></a>  
+
 ## Add iterations and set iteration dates
 
 From **Iterations**, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
@@ -182,6 +184,7 @@ For Scrum-based projects, you'll see the following set of sprints.
 ::: moniker-end
 
 <a id="open-team-settings" />
+
 ## Open team settings  
 
 You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
@@ -222,6 +225,7 @@ You open team settings from the top navigation bar. Select the team you want and
 
 
 <a id="activate">  </a>
+
 ## Select team sprints and default iteration path  
 
 You [define sprints for the project](../../boards/sprints/define-sprints.md) and then select them to be active for each team. You assign the default iteration to use when creating new work items. 
@@ -381,9 +385,11 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 ## Q & A 
 
 ### Q: Do I have to assign iteration paths to a team?  
+
 **A:** If your team doesn't use sprints to plan and track work, then no. You can leave the defaults assigned to the team as they are. You can then use the product and portfolio backlogs and boards, however you won't be able to gain much use of sprint planning tools. 
 
 ## Related articles 
+
 As you can see, iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these articles: 
 
 *	[About areas and iterations](about-areas-iterations.md)  

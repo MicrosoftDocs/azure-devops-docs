@@ -1,4 +1,4 @@
-- name: Scale & configure teams
+- name: Manage teams
   href: index.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
 - name: Overview
   items:
@@ -30,9 +30,10 @@
     href: ../about-areas-iterations.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
 - name: How-to Guides
   items:    
-  - name: Manage teams and configure team tools
-    href: ../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json  
+  - name: Manage teams
     items:
+    - name: Configure team tools
+      href: ../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json  
     - name: Use work item templates
       href: ../../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
     - name: Customize cards on boards

@@ -11,20 +11,23 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 04/14/2019
 ---
 
 
 ::: moniker range=">= azure-devops-2019"
+
 # Move, change, or delete work items 
 
 [!INCLUDE [temp](../_shared/azure-boards.md)]
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
+
 # Delete or restore work items 
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
@@ -48,6 +51,8 @@ In this article you'll learn:
 > * What permissions are required to delete work items   
 
 ::: moniker-end
+
+[!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -273,6 +278,7 @@ To learn more, see [Set permissions and access for work tracking](../../organiza
 ::: moniker range=">= azure-devops-2019"
 
 <a id="change-type"> </a>  
+
 ## Change the work item type 
 
 Changing the work item type refreshes the work item form with the fields defined for the type selected. For example, you can change a bug to a task and the form will refresh with the fields defined for a task. 
@@ -315,6 +321,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 ::: moniker range=">= azure-devops-2019"
 
 <a id="move"> </a>  
+
 ## Move a work item to another project  
 
 When you discover that a work item belongs to a different project within your organization or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
@@ -328,7 +335,7 @@ You can only move work items from one project to another project within the orga
 
 	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type. 
 
-	Click ![actions icon](../_img/icons/actions-icon.png) to open the context menu of one of the selected work items, and choose the ![Move work item icon](../_img/icons/change-team-project-icon.png) **Move&hellip;** option. 
+	Choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the context menu of one of the selected work items, and choose the ![Move work item icon](../_img/icons/change-team-project-icon.png) **Move&hellip;** option. 
 
 2. Select the destination project and optionally enter a comment.  
 
@@ -340,39 +347,58 @@ You can only move work items from one project to another project within the orga
 
 
 <a id="remove"> </a>  
+
 ## Remove work items
 
-By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and taskboards).
+By changing the **State** of a work item to <em>Removed</em>, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and taskboards).
 
 > [!div class="mx-imgBorder"]  
 > ![Change State to Removed](_img/move-change-delete/remove-state.png)  
 
 To cause removed items to not show up in queries, you must add a clause that filters on the **State** field. 
 
+::: moniker range="azure-devops"
+
+> [!NOTE]  
+> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. 
+
+::: moniker-end
 
 <a id="delete"> </a> 
 ::: moniker range=">= azure-devops-2019"
 
 ## Delete work items  
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
-0. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
+0. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
 
+	To delete a single work item, open the work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+
+	> [!div class="mx-imgBorder"]
+	> ![work item form, actions menu, Delete](_img/move-change-delete/delete-work-item.png)  
+	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the ![ ](../_img/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+
+	> [!div class="mx-imgBorder"]
+	> ![List of work items, actions menu, Delete](_img/move-change-delete/multi-delete.png) 
+
+	To delete a work item from your Kanban or taskboard, choose the ![ ](../_img/icons/actions-icon.png) actions icon of the card and select <strong>Delete</strong>. 
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
+	>
 0. Confirm you want to actually delete the item(s).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)  
 
-0. You can also delete work items from your Kanban or taskboard. 
- 
-	> [!div class="mx-imgBorder"]  
-	> ![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-## Delete work items  
+
+## Delete work items 
+ 
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"  
@@ -382,9 +408,25 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
+
+	To delete a single work item, open the work item, choose the ![ ](../_img/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+
+	> [!div class="mx-imgBorder"]
+	> ![work item form, actions menu, Delete](_img/move-change-delete/delete-work-item.png)  
+
+	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the ![ ](../_img/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+
+	> [!div class="mx-imgBorder"]
+	> ![List of work items, actions menu, Delete](_img/move-change-delete/multi-delete.png)  
+
+	You can also delete work items from your Kanban or taskboard. 
+ 
+	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
+
+	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from the **Work** hub. 
 
 2. Confirm you want to actually delete the item(s).  
 
@@ -393,19 +435,12 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	> [!NOTE]    
 	> The Delete work items confirmation dialog for on-premises TFS may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 
-3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
-
-4. You can also delete work items from your Kanban or taskboard. 
- 
-	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
-
-	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from **Work**. 
-
 ::: moniker-end
 
 <a id="restore" />
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Restore or permanently delete work items   
 
 You restore deleted work items from the web portal Recycle bin. 
@@ -420,7 +455,6 @@ You restore deleted work items from the web portal Recycle bin.
 2.	Select the items you want to restore and then choose **Restore**.  
  
 	![Restore selected items](_img/move-change-delete/restore-from-recycle-bin.png) 
-
 	> [!NOTE] 
 	> You can't open work items that have been moved to the Recycle bin.  
 
@@ -440,19 +474,19 @@ You restore deleted work items from the web portal Recycle bin.
 ## Restore or permanently delete work items   
 
 You restore deleted work items from the web portal Recycle bin. 
+
 ::: moniker-end  
+
 ::: moniker range="tfs-2015"  
+
 > [!NOTE]  
-> **Feature availability**: The Delete and Recycle bin features require TFS 2015.2 or later version.  
+> The <strong>Delete</strong> and <strong>Recycle bin</strong> features require TFS 2015.2 or later version.  
+
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015"
-0. Choose **Work>Work Items** and then choose the **Recycle bin**.  
- 
-	> [!div class="mx-imgBorder"]  
-	> ![Boards>Work Items page, Open Recycle bin](_img/move-change-delete/open-recycle-bin-new-nav.png)
 
-	Or, from a backlog or query, open the Recycle bin.  
+0. Choose <strong>Work>Backlogs</strong> or <strong>Work>Queries</strong> and then choose the <strong>Recycle bin</strong>.  
  
 	![Open Recycle bin](_img/move-change-delete/open-recycle-bin.png)
 
@@ -474,6 +508,7 @@ You restore deleted work items from the web portal Recycle bin.
 
 <a id="perm-delete" />
 ::: moniker range="<= tfs-2018"
+
 ## Permanently delete work items (command line)  
 
 To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
@@ -581,20 +616,25 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Create a test plan](../../test/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
+
 ::: moniker-end
 
 ::: moniker range="tfs-2017"  
+
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Add, update, and follow a work item](../backlogs/add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+
 ::: moniker-end
 
 
 ::: moniker range="<= tfs-2015"  
+
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Add and update a work item](../backlogs/add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+
 ::: moniker-end
 
 
@@ -603,6 +643,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ### Delete and restore actions performed under the hood  
 
 #### Delete work items 
+
 When you delete a work item, the following actions occur:  
 
 - Generates a new revision of the work item  
@@ -615,6 +656,7 @@ When you delete a work item, the following actions occur:
 - Removes the work item from the data warehouse/cube similar to as if it was permanently removed.  
 
 #### Restore work items
+
 When you restore a work item, the following actions occur:   
 
 - Causes a new revision of the work item to be made  

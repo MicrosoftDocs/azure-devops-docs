@@ -5,9 +5,10 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: EF087383-EE5E-42C7-9A53-AB56C98420F9
-ms.manager: dastahel
+ms.manager: jillfra
 ms.custom: seodec18
-ms.author: dastahel
+ms.author: pbora
+author: pboraMSFT
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
@@ -80,9 +81,9 @@ The vstest demand can be satisfied in two ways:
 <tr><td><b>configuration</b><br>Build configuration</td><td>(Optional) Build configuration against which the tests should be reported. If you have defined a variable for configuration in your build task, use that here.</td></tr>
 <tr><td><b>publishRunAttachments</b><br>Upload test attachments</td><td>(Optional) Opt in/out of publishing run level attachments.</td></tr>
 <tr><td><b>rerunFailedTests</b><br>Rerun failed tests</td><td>(Optional) Selecting this option will rerun any failed tests until they pass or the maximum # of attempts is reached.</td></tr>
-<tr><td><b>rerunType</b><br>Do not rerun if test failures exceed specified threshold</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures.<br>You can specify % failures or # of failed tests as a threshold.</td></tr>
-<tr><td><b>rerunFailedThreshold</b><br>% failure</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures.</td></tr>
-<tr><td><b>rerunFailedTestCasesMaxLimit</b><br># of failed tests</td><td>(Optional) Use this option to avoid rerunning tests when number of failed test cases crosses specified limit. This is applicable if any environment issues leads to massive failures.</td></tr>
+<tr><td><b>rerunType</b><br>Do not rerun if test failures exceed specified threshold</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures.<br>You can specify % failures with `basedOnTestFailurePercentage` or # of failed tests as a threshold with `basedOnTestFailureCount`.</td></tr>
+<tr><td><b>rerunFailedThreshold</b><br>% failure</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures and if `rerunType` is `basedOnTestFailurePercentage`.</td></tr>
+<tr><td><b>rerunFailedTestCasesMaxLimit</b><br># of failed tests</td><td>(Optional) Use this option to avoid rerunning tests when number of failed test cases crosses specified limit. This is applicable if any environment issues leads to massive failures and if `rerunType` is `rerunFailedTestCasesMaxLimit`.</td></tr>
 <tr><td><b>rerunMaxAttempts</b><br>Maximum # of attempts</td><td>(Optional) Specify the maximum # of times a failed test should be retried. If a test passes before the maximum # of attempts is reached, it will not be rerun further.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>

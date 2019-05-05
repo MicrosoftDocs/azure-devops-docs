@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
-ms.date: 03/16/2017
+ms.date: 04/11/2019
 ---
 
 # Configure features after an upgrade
@@ -21,7 +21,7 @@ After upgrading your Team Foundation Server (TFS), you'll want to use the new fe
 > [!IMPORTANT] 
 > The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions. Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index).  
 
-For information on upgrading your on-premises deployment, see [Upgrade get started guide](/azure/devops/server/upgrade/get-started). 
+For information on upgrading your on-premises deployment, see [Upgrade get started guide](/azure/devops/server/upgrade/get-started). For updates made to process templates, see [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md). 
 
 > [!NOTE]    
 > If you're upgrading from TFS 2010 or an earlier version, review the steps outlined in [When upgrading from TFS 2008 or TFS 2010](upgrade-tfs-2008-or-2010.md). <br/>

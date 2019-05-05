@@ -1,9 +1,9 @@
 - name: Search
-  href: index.md
+  href: index.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About Search
-    href: overview.md
+    href: overview.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Search code

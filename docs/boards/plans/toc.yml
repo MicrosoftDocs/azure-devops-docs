@@ -1,5 +1,5 @@
 - name: Plans (Agile at scale)
-  href: index.md
+  href: index.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
@@ -43,10 +43,11 @@
     href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
   - name: Manage team notifications
     href: ../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json   
-  - name: Manage teams and configure team tools
-    href: ../../organizations/settings/configure-team-settings.md 
+  - name: Team settings
     items:
-    - name: Select backlog levels
+    - name: Configure team tools
+      href: ../../organizations/settings/configure-team-settings.md 
+    - name: Set backlog levels
       href: ../../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 
     - name: "Show bugs on backlogs & boards"
       href: ../../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json 

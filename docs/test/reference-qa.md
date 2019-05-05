@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: jillfra
 ms.author: ahomer
 author: alexhomer1
-ms.date: 12/01/2018
+ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -51,9 +51,11 @@ Drag and drop tests to reorder them.
 for example, all tests that have Priority=1. The suite will automatically include 
 every test case that is returned by the query that you define.
 
+<a name="copyclonetce"></a>
+
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. For test plans, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the standard UI in future releases.
+**A:** Yes. For test plans, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the out-of-box UI in a future release.
 
 ### Q: Can I export the test plan to share or review offline?
 
@@ -155,12 +157,6 @@ just the ones that you want to bulk edit using the grid.
 
 To return to the test suite view, switch the view 
 from Grid back to List.
-
-<a name="copyclonetce"></a>
-
-### Q: Can I copy, clone, and move test plans and test suites?
-
-**A:** Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
 
 ### Q: Can I copy test cases and test steps from an existing Excel worksheet?
 

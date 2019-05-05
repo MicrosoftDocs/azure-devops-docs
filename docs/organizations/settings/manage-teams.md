@@ -8,18 +8,20 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 02/20/2019
+ms.date: 04/25/2019
 ---
 
 # Manage and configure team tools
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]  
 
-While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role. Users assigned as a team administrator, are able to configure and manage all team tools. Specifically, when a team is added to a project, a project admin should [add one or more team administrators](add-team-administrator.md). 
+In this article, learn how to configure team tools and manage teams in Azure DevOps.
 
-Then, those team admins should look at performing these specific tasks: 
+Most permissions are governed by security groups or defined at the object level. Team settings are managed by the team administrator role. Users assigned as a team administrator can configure and manage all team tools. Specifically, when a team is added to a project, a project admin should [add one or more team administrators](add-team-administrator.md). 
+
+Then, those team admins should look at doing the following specific tasks: 
 - Add team members 
 - Configure area and iteration paths
 - Configure backlogs and other common team settings
@@ -57,7 +59,7 @@ Optional tasks to consider include:
 	> ![Team members](../../project/navigation/_img/breadcrumbs/team-profile-members.png)
 
 - To view or change the team configuration, choose **Team Settings**.  
-	You can then perform the following tasks: 
+	You can then complete the following tasks: 
 	- Add [team members](../security/add-users-team-project.md#add-team-members)
 	- Add [team admins](add-team-administrator.md)
 	- Navigate to [team notifications](../../notifications/howto-manage-team-notifications.md)
@@ -69,7 +71,7 @@ Optional tasks to consider include:
 
 ## Add users to a team
  
-Several tools, such as capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the users that have been added as members of a team to support planning activities or sending alerts. 
+Several tools, such as capacity planning, team alerts, and dashboard widgets, are team-scoped. These tools automatically reference the users that are as members of a team to support planning activities or sending alerts. 
 
 To add users to a team, see [Add users to a project or specific team](../security/add-users-team-project.md). 
 
@@ -81,7 +83,7 @@ If team members don't have access to all the features they want, check that they
 
 ## Configure team areas and iterations 
 
-A number of Agile tools depend on the area and iteration paths configured for the team as described in [About teams and Agile tools](about-teams-and-settings.md). 
+Many Agile tools depend on the area and iteration paths that are configured for the team. To learn more about configuring team areas and iterations, see [About teams and Agile tools](about-teams-and-settings.md). 
 
 Once project administrators have [added Area Paths](set-area-paths.md) and [Iteration Paths](set-iteration-paths-sprints.md) for a project, team administrators can select the area and iteration paths associated with their team. These settings affect a number of Agile tools available to the team. 
 
@@ -92,8 +94,8 @@ These include making the following associations for each team:
 - **Select team iteration paths or sprints** 
 	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. 
  
-For details, see [Define area paths and assign to a team](set-area-paths.md) and 
-[Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md). 
+To learn more, see [Define area paths and assign to a team](set-area-paths.md) and 
+[Define iteration paths and configure team iterations](set-iteration-paths-sprints.md). 
 
 ## Configure team backlogs and other common settings 
 
@@ -116,7 +118,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range=">= azure-devops-2019"  
 
-1. (1) Check that you have selected the right project, (2) choose Boards>Boards, and then (3) select the correct team from the team selector menu.
+1. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
@@ -132,7 +134,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
 
-0. Choose a tab under any of the sections&mdash;**Cards**,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
+0. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
@@ -189,9 +191,65 @@ You can configure most of your team settings from the common configuration dialo
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017"  
+For details on each configuration option, see one of the following articles:  
 
-For details on each configuration option, see one of these topics:  
+::: moniker range="azure-devops"  
+
+<table width="80%">
+<tbody valign="top">
+<tr>
+<th width="35%">Area</th>
+<th width="65%">Configuration task</th>
+</tr>
+<tr>
+<td>Cards  </td>
+<td>
+<ul>
+<li>[Add fields](../../boards/boards/customize-cards.md)</li>
+<li>[Define styles](../../boards/boards/customize-cards.md#style-rule)</li>
+<li>[Add tag colors](../../boards/boards/customize-cards.md#color-tags)</li>
+<li>[Enable annotations](../../boards/boards/customize-cards.md#annotations)</li>
+<li>[Configure inline tests](../../boards/boards/customize-cards.md#tests) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Boards </td>
+<td>
+<ul>
+<li>[Add columns](../../boards/boards/add-columns.md)</li>
+<li>[Add swimlanes](../../boards/boards/expedite-work.md)</li>
+<li>[Card reordering](../../boards/boards/reorder-cards.md) </li>
+<li>[Configure status badges](../../boards/github/configure-status-badges.md) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Chart</td>
+<td>
+<ul>
+<li>[Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure) </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>General  </td>
+<td>
+<ul>
+<li>[Backlogs](select-backlog-navigation-levels.md)</li>
+<li>[Working days](set-working-days.md)</li>
+<li>[Working with bugs](show-bugs-on-backlog.md) </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+
 
 <table width="80%">
 <tbody valign="top">
@@ -247,7 +305,7 @@ For details on each configuration option, see one of these topics:
 
 ::: moniker range="tfs-2015"    
 
-For details on each configuration option, see one of these topics:  
+For details on each configuration option, see one of the following articles:  
 
 <table width="80%">
 <tbody valign="top">
@@ -318,6 +376,7 @@ Additional elements you can configure include:
 ## Add and manage team dashboards   
 
 ::: moniker-end
+
 ::: moniker range=">= azure-devops-2019"
 By default, all team members can add and edit team dashboards. In addition, team administrators can manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
 ::: moniker-end  

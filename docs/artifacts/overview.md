@@ -39,14 +39,15 @@ If you haven't used packages before, see the [conceptual introduction](index.md)
 
 Some Azure Artifacts services are compatible with only specific versions of TFS. Check out the following table to see compatibility.
 
-| Feature                        | Azure DevOps Services          | TFS                         |
-|------------------------------- |---------------|-----------------------------|
-| **NuGet**                      | Yes           | TFS 2017                    |
-| **npm**                        | Yes           | TFS 2017 Update 1 and newer |
-| **NuGet.org upstream source**  | Yes           | TFS 2018 Update 2 and newer |
-| **Maven**                      | Yes           | TFS 2018                    |
-| **Python**                     | Yes           | No                          |
-| **Universal Packages**         | Yes           | No                          |
+| Feature                             | Azure DevOps Services     | TFS                         |
+|------------------------------------ |---------------------------|-----------------------------|
+| **NuGet**                           | Yes                       | TFS 2017 and newer          |
+| **npm**                             | Yes                       | TFS 2017 Update 1 and newer |
+| **NuGet.org upstream source**       | Yes                       | TFS 2018 Update 2 and newer |
+| **Maven**                           | Yes                       | TFS 2018 and newer          |
+| **Maven Central upstream source**   | Yes                       | No                          |
+| **Python**                          | Yes                       | No                          |
+| **Universal Packages**              | Yes                       | No                          |
 
 ## Other package types
 

@@ -1,5 +1,5 @@
 - name: Deploy to Azure
-  href: index.md
+  href: index.md?toc=/azure/devops/deploy-azure/toc.json&bc=/azure/devops/deploy-azure/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About Deploying to Azure

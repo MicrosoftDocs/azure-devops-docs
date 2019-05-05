@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2013'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx) in TFS 2013.
+We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx) in TFS 2013.
 
 After that we sought to expand beyond .NET and Windows and add support for other kinds of apps that are based on operating systems such as macOS and Linux. It became clear that we needed to switch to a more open, flexible, web-based foundation for our build automation engine. In early 2015 in Azure Pipelines, and then in TFS 2015, we introduced a simpler task- and script-driven cross-platform build system.
 

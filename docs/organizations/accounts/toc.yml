@@ -1,14 +1,14 @@
 - name: "Manage organizations"
-  href: index.md
+  href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About managing organizations
-    href: organization-management.md
+    href: organization-management.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
   - name: Access with Azure AD
     href: access-with-azure-ad.md
 - name: Quickstarts
   items:
-  - name: Create your organization
+  - name: Create your organization or project collection
     href: create-organization.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
@@ -28,8 +28,8 @@
   items:
   - name: Plan your org structure
     href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
-  - name: Add a subscription user
-    href: add-basic-or-vs-subscription-users.md
+  - name: Add a Basic user
+    href: ../billing/buy-basic-access-add-users.md
   - name: Project member resources
     href: resources-granted-to-project-members.md
   - name: Glossary
@@ -52,8 +52,8 @@
       href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
     - name: Change organization location
       href: change-organization-location.md
-    - name: Add privacy URL
-      href: add-privacy-url.md
+    - name: Add privacy policy URL
+      href: add-privacy-policy-url.md
   - name: Manage access
     items:
     - name: Add users to your organization

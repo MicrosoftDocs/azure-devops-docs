@@ -58,7 +58,7 @@ Billing management
 
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
-* [Change the number of paid users on your organization](reduce-cancel-paid-users.md)
+* [Change the number of paid users on your organization](buy-basic-access-add-users.md)
 * [Billing FAQ](billing-faq.md)
 
 Marketplace extension management

@@ -103,7 +103,7 @@ See the following topics to make the indicated customizations:
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
-<a id="resizing">  </a>  
+<a id="resizing"></a>  
 ## Layout and resizing 
 
 The new web form resizes depending on the width available and the number of sections defined. At maximum width, in most web browsers, each section within a page will display within its own column. As the display width decreases, each section resizes proportionally as follows: 
@@ -116,7 +116,34 @@ The new web form resizes depending on the width available and the number of sect
 
 When the display width won't accommodate the columnar display of each section, sections appear stacked within a column. 
 
+<a id="globallists"></a>  
+## Global lists
 
+Global lists are managed differently in Hosted XML than they are on Azure DevOps Server (and TFS). For starters, witadmin is not supported, so a seperate global list file does not exist. In Hosted XML they are attached to an existing work item type. Here is an example...
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<witd:WITD xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef" application="Work item type editor" version="1.0">
+  <WORKITEMTYPE name="Shared Steps" refname="Custom.SharedSteps">
+    <DESCRIPTION>Server-side data for reusable set of test steps. Version: B.02</DESCRIPTION>
+    <GLOBALLISTS>
+      <GLOBALLIST name="Foo">
+        <LISTITEM value="No" />
+        <LISTITEM value="Yes" />
+        <LISTITEM value="Maybe" />
+        <LISTITEM value="Not Sure" />
+      </GLOBALLIST>
+      <GLOBALLIST name="Bar">
+        <LISTITEM value="Open" />
+        <LISTITEM value="Closed" />
+      </GLOBALLIST>
+     </GLOBALLISTS>  
+     ...
+```
+
+By default the global lists will be attached to the Shared Steps work item type.
+
+<a id="related"></a> 
 ## Related articles  
 
 If you're new to WIT customization, see [Add and modify a WIT](add-modify-wit.md). 

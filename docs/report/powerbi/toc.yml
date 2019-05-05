@@ -1,10 +1,10 @@
 - name: Power BI Integration
-  href: index.md
+  href: index.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
   - name: About Power BI integration
-    href: overview.md
+    href: overview.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: What is the Analytics service?
     href: what-is-analytics.md
   - name: What are Analytics views?

@@ -1,11 +1,11 @@
 - name: "Integrate"
-  href: ./index.md
+  href: index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
 - name: Quickstarts
   items:
     - name: Create a bug
-      href: quickstarts/create-bug-quickstart.md
+      href: quickstarts/create-bug-quickstart.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
     - name: Query work items
-      href: quickstarts/work-item-quickstart.md
+      href: quickstarts/work-item-quickstart.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
 - name: Samples
   items:
     - name: Samples
