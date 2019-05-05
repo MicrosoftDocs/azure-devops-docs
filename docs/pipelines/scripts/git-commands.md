@@ -96,7 +96,7 @@ steps:
 
 Learn more about [`checkout`](../yaml-schema.md#checkout).
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
 
@@ -131,7 +131,7 @@ steps:
   clean: true
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 * On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 

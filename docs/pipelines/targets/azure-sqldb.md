@@ -51,7 +51,7 @@ YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
@@ -171,7 +171,7 @@ YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure powershell scripts to configure firewall rules are part of the build artifact.
 
@@ -238,7 +238,7 @@ YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 In your release pipeline you can implement various checks and conditions to control the deployment.
 

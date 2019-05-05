@@ -23,12 +23,6 @@ This is a step-by-step guide on common ways to customize your pipeline.
 
 Follow instructions in [Create your first pipeline](create-first-pipeline.md) to create a working pipeline.
 
-While you can use any of the sample repositories mentioned in [Create your first pipeline](create-first-pipeline.md) to complete this quickstart, we recommend using the sample Java project as some of the instructions in this topic are based on that sample repo.
-
-```
-https://github.com/MicrosoftDocs/pipelines-java
-```
-
 ## Understand the `azure-pipelines.yml` file
 
 A pipeline is defined using a YAML file in your repo. Usually, this file is named `azure-pipelines.yml` and is located at the root of your repo.
@@ -56,9 +50,9 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
           goals: 'package'
    ```
 
-> [!Note]
-> The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
-
+   > [!Note]
+   > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
+    
 This pipeline runs whenever your team pushes a change to the master branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
 
 ## Change the platform to build on

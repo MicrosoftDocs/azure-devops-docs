@@ -13,7 +13,7 @@ ms.date: 03/19/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Deploy an agent on macOS
+# Self-hosted macOS agents
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > Before you begin:
-> * If your build and release pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private macOS agent.
+> * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
 > *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]

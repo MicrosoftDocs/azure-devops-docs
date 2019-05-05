@@ -1,9 +1,9 @@
 ---
 ms.prod: devops
-title: Build and Release Agents
+title: Azure Pipelines Agents
 ms.topic: conceptual
 ms.custom: seodec18
-description: Learn about building your code or deploying your software using build and release agents in Azure Pipelines and Team Foundation Server
+description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: jillfra
@@ -13,7 +13,7 @@ ms.date: 04/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Build and release agents
+# Azure Pipelines agents
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -21,10 +21,10 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more.
+To build your code or deploy your software using Azure Pipelines you need at least one agent. As you add more code and people, you'll eventually need more.
 
-When your build or deployment runs, the system begins one or more jobs.
-An agent is installable software that runs one build or deployment job at a time.
+When your pipeline runs, the system begins one or more jobs.
+An agent is installable software that runs one job at a time.
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host](../process/phases.md) or [in a container](../process/container-phases.md).
@@ -42,7 +42,7 @@ Jobs can be run [directly on the host](../process/phases.md) or [in a container]
 
 <h2 id="install">Self-hosted agents</h2>
 
-An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**.
+An agent that you set up and manage on your own to run jobs is a **self-hosted agent**.
 You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS).
 Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
@@ -76,7 +76,7 @@ You can install the agent on Linux, macOS, or Windows machines. You can also ins
 
 ::: moniker-end
 
-After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
+After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
 
 ::: moniker range="azure-devops"
 
@@ -100,11 +100,16 @@ You might need more parallel jobs to use multiple agents at the same time:
 
 <h2 id="capabilities">Capabilities</h2>
 
-Every agent has a set of capabilities that indicate what it can do. Capabilities are name-value pairs that are either automatically discovered by the agent software, in which case they are called **system capabilities**, or those that you define, in which case they are called **user capabilities**.
+Every self-hosted agent has a set of capabilities that indicate what it can do. Capabilities are name-value pairs that are either automatically discovered by the agent software, in which case they are called **system capabilities**, or those that you define, in which case they are called **user capabilities**.
 
 The agent software automatically determines various system capabilities such as the name of the machine, type of operating system, and versions of certain software installed on the machine. Also, environment variables defined in the machine automatically appear in the list of system capabilities.
 
-When you author a build or release pipeline, or when you queue a build or deployment, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the demands [specified in the pipeline](../build/options.md). As a result, agent capabilities allow you to direct builds and deployments to specific agents.
+When you author a pipeline you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the demands [specified in the pipeline](../build/options.md). As a result, agent capabilities allow you to direct jobs to specific agents.
+
+> [!NOTE]
+>
+> Demands and capabilities apply only to self-hosted agents. When using Microsoft-hosted agents, you select an image for the hosted agent. 
+> You cannot use capabilities with hosted agents.
 
 You can view the system capabilities of an agent, and manage its user capabilities by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
@@ -112,7 +117,7 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 > [!TIP]
 >
-> After you install new software on a agent, you must restart the agent for the new capability to show up.
+> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up.
 
 <h2 id="communication">Communication</h2>
 
@@ -152,7 +157,7 @@ Here is a common communication pattern between the agent and Azure Pipelines or 
 
 3. Once the job is completed, the agent discards the job-specific OAuth token and goes back to checking if there is a new job request using the listener OAuth token.
 
-The payload of the messages exchanged between the agent and Azure Pipelines/TFS are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in build pipelines, release pipelines, or variable groups are secured as they are exchanged with the agent.
+The payload of the messages exchanged between the agent and Azure Pipelines/TFS are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in pipelines or variable groups are secured as they are exchanged with the agent.
 
 ::: moniker-end
 
@@ -241,7 +246,7 @@ To use this method of authentication, you must configure your TFS server as foll
 
 <h2 id="interactive-or-service">Interactive vs. service</h2>
 
-You can run your agent as either a service or an interactive process.
+You can run your self-hosted agent as either a service or an interactive process.
 After you've configured the agent, we recommend you first try it
 in interactive mode to make sure it works. Then, for production use,
 we recommend you run the agent in one of the following modes so
@@ -339,7 +344,7 @@ You can view the version of an agent by navigating to **Agent pools** and select
 
 In many cases, yes. Specifically:
 
-* If you use a self-hosted agent you can run incremental builds. For example, you define a CI build pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release pipeline is completed.
+* If you use a self-hosted agent you can run incremental builds. For example, you define a pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release pipeline is completed.
 
 * A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
 

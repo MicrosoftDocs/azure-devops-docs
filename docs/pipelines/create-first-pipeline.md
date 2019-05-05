@@ -27,21 +27,15 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Get the sample code
 
-You can use Azure Pipelines to build an app written in any language.
-Select a sample repository of your choice from the following languages and fork it into your own GitHub user account:
+You can use Azure Pipelines to build an app written in any language. For this quickstart, we will use Java.
 
-| Programming language | Repository with a sample app |
-|----------------------|----------------------------|
-| Docker | https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker |
-| .NET Core | https://github.com/MicrosoftDocs/pipelines-dotnet-core |
-| Go | https://github.com/MicrosoftDocs/pipelines-go |
-| Java | https://github.com/MicrosoftDocs/pipelines-java |
-| Node.js | https://github.com/MicrosoftDocs/pipelines-javascript |
-| Python | https://github.com/MicrosoftDocs/pipelines-python-django |
+To get started, fork the following repository into your GitHub account.
 
-You should now have a sample app in your GitHub account.
+```
+https://github.com/MicrosoftDocs/pipelines-java
+```
 
-## Get your first build
+## Get your first run
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -53,15 +47,12 @@ You should now have a sample app in your GitHub account.
 
 1. When the list of repositories appears, select your desired sample app repository.
 
-1. Azure Pipelines will analyze your repository.
+1. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
-  - Azure Pipelines recommends a starter template based on the code in your repository. If you see multiple recommendations, pick the first one. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
-  - If your repository already contains an `azure-pipelines.yml` file, then that file will be used, and you'll see a **Run** button. Select **Run**.
-
-1. A new build is started. Wait for the build to finish.
+1. A new run is started. Wait for the run to finish.
 
 <a name="get-the-status-badge"></a>
-## Add a CI status badge to your repository
+## Add a status badge to your repository
 
 Many developers like to show that they're keeping their code quality high by displaying a status badge in their repo.
 
@@ -85,11 +76,11 @@ Now with the badge Markdown in your clipboard, take the following steps in GitHu
 
 1. Notice that the status badge appears in the description of your repository.
 
-Because you just changed the `Readme.md` file in this repository, Azure Pipelines automatically builds your code, according to the configuration in the `azure-pipelines.yml` file at the root of your repository. Back in Azure Pipelines, observe that a new build appears. Each time you make an edit, Azure Pipelines starts a new build.
+Because you just changed the `Readme.md` file in this repository, Azure Pipelines automatically builds your code, according to the configuration in the `azure-pipelines.yml` file at the root of your repository. Back in Azure Pipelines, observe that a new run appears. Each time you make an edit, Azure Pipelines starts a new run.
 
 ## Next steps
 
-You've just learned the basics of using Azure Pipelines. Now you're ready to further configure your pipeline to run tests, publish test results, create container images, or even deploy the app to a cloud service. Follow a track for the language of your choice:
+You've just learned how to create your first Azure Pipeline. Now you're ready to configure a pipeline for the language of your choice:
 
 * [.NET Core](languages/dotnet-core.md)
 * [Docker](languages/docker.md)
@@ -98,7 +89,7 @@ You've just learned the basics of using Azure Pipelines. Now you're ready to fur
 * [Node.js](languages/javascript.md)
 * [Python](languages/python.md)
 
-To adjust the timeout of your job, see [Timeouts](process/phases.md#timeouts).
+Or, you can proceed to [customize the pipeline](customize-pipeline.md) you just created.
 
 To run your pipeline in a container, see [Container jobs](process/container-phases.md).
 
@@ -1079,7 +1070,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * Add and modify some [variables](build/variables.md).
 
-* Add [demands](build/options.md#demands).
+* Add [demands](process/demands.md).
 
 * In a Git repository
 
