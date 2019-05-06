@@ -60,4 +60,4 @@
   - name: Azure Boards
     href: /azure/devops/boards/index
   - name: Changes made to process templates
-    href: ../../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    href: ../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json

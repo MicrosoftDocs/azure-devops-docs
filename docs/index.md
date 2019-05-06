@@ -457,7 +457,10 @@ featureFlags:
                             <a href="/azure/devops/organizations/security/index">Security</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/settings/index">All settings</a>
+                            <a href="/azure/devops/notifications/index">Notifications</a>
+                        </p>
+                        <p>
+                            <a href="/azure/devops/organizations/settings/index">DevOps settings</a>
                         </p>
                     </div>
                 </div>

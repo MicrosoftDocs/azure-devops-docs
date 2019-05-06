@@ -6,6 +6,6 @@
     tocHref: /azure/devops/integrate/
     topicHref: /azure/devops/marketplace-extensibility/index
     items: 
-    - name: Integrate
+    - name: Integrate Applications
       tocHref: /azure/devops/integrate/
       topicHref: /azure/devops/integrate/index

@@ -76,10 +76,10 @@
   - name: Work items
     href: ../boards/work-items/index.md
   - name: Public projects
-    href: public/index.md
+    href: public/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Process Customization
-    href: /azure/devops/reference/index
+    href: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Service Hooks
     href: ../service-hooks/index.md
   - name: Web Portal Navigation
-    href: ../project/navigation/index.md
+    href: ../project/navigation/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json

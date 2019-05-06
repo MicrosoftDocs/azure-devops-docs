@@ -90,19 +90,19 @@ Improve your overall code quality by using manual and exploratory testing servic
                     <div class="cardText">
                         <h3>Continuous Testing</h3>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Run tests, .NET Core</a>
+                            <a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test/breadcrumb/toc.json">Run tests, .NET Core</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/docker#integrate-build-and-test-tasks">Integrate build and test tasks, Docker</a>
+                            <a href="/azure/devops/pipelines/languages/docker#integrate-build-and-test-tasks?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test/breadcrumb/toc.json">Integrate build and test tasks, Docker</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/go#test">Run tests, Go</a>
+                            <a href="/azure/devops/pipelines/languages/go#test?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test/breadcrumb/toc.json">Run tests, Go</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/languages/python#run-tests">Run tests, Python</a>
+                            <a href="/azure/devops/pipelines/languages/python#run-tests?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test/breadcrumb/toc.json">Run tests, Python</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/pipelines/test/test-analytics">Analyze test results</a>
+                            <a href="/azure/devops/pipelines/test/test-analytics?toc=/azure/devops/test-plans/toc.json&bc=/azure/devops/test/breadcrumb/toc.json">Analyze test results</a>
                         </p>
                     </div>
                 </div>
