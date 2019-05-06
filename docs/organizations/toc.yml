@@ -9,7 +9,7 @@
   items:
   - name: Set user preferences
     href: settings/set-your-preferences.md
-  - name: Set user preferences
+  - name: Enable preview features
     href: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set personal favorites
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
