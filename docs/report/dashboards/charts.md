@@ -29,14 +29,14 @@ You can quickly view the status of work in progress by charting the results of a
 For example, the following image illustrates two different charts created from the same flat-list query. The pie chart groups the 19 bugs by state, and the bar chart groups the bugs by assignment and their current status.
 
 > [!div class="mx-imgBorder"]  
-> ![[Active bug charts added to dashboards](_img/overview/active-bug-charts-on-dashboards-2019.png)   
+> ![Active bug charts added to dashboards](_img/overview/active-bug-charts-on-dashboards-2019.png)   
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
-
+  
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
 ::: moniker-end

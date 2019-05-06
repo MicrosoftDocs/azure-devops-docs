@@ -1,4 +1,4 @@
-- name: ---
+- name: Dashboards, Charts, Reports, & Widgets
   href: index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
 - name: Overview
   expanded: true

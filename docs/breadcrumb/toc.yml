@@ -13,7 +13,7 @@
       tocHref: /azure/devops/reference/tfs-ps-sync/
       topicHref: /azure/devops/reference/tfs-ps-sync/index
   - name: Get Started
-    tocHref: /azure/devops/
+    tocHref: /azure/devops/get-started/
     topicHref: /azure/devops/get-started/index
     items:
     - name: Start using Azure DevOps
@@ -79,7 +79,7 @@
     tocHref: /azure/devops/artifacts/
     topicHref: /azure/devops/artifacts/index
   - name: Azure Test Plans
-    tocHref: /azure/devops/test/
+    tocHref: /azure/devops/test-plans/
     topicHref: /azure/devops/test-plans/index
     items:
     - name: Exploratory & Manual testing
@@ -92,6 +92,9 @@
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
     items:
+    - name: Dashboards, Charts, Reports, & Widgets
+      tocHref: /azure/devops/report/dashboards/
+      topicHref: /azure/devops/report/dashboards/index
     - name: Power BI Integration
       tocHref: /azure/devops/report/powerbi/
       topicHref: /azure/devops/report/powerbi/index
@@ -115,7 +118,7 @@
       tocHref: /azure/devops/project/feedback/
       topicHref: /azure/devops/project/feedback/index
   - name: Marketplace & Extensibility
-    tocHref: /azure/devops/marketplace/
+    tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
     items:
     - name: Discover & Manage Extensions
@@ -131,6 +134,7 @@
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/index
   - name: Manage & Configure Resources
+    tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
     items:
     - name: Teams
@@ -174,6 +178,7 @@
       tocHref: /azure/devops/reference/mapping/
       topicHref: /azure/devops/reference/mapping/index
   - name: Developer Resources
+    tocHref: /azure/devops/dev-resources/
     topicHref: /azure/devops/dev-resources/index
     items:
     - name: Azure DevOps demo generator
