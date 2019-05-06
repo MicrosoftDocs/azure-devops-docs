@@ -38,7 +38,7 @@ as your development environment, you can create your organization when you
 
 Your organization includes five free users
 with Basic access, plus unlimited Visual Studio
-subscribers and stakeholders at no extra charge.
+subscribers and Stakeholders at no extra charge.
 Your organization also includes free monthly amounts
 of additional services such as build and deployment.
 

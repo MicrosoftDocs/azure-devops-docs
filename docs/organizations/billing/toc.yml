@@ -32,6 +32,8 @@
       href: buy-basic-access-add-users.md
     - name: Buy Azure DevOps Server CALs or Test
       href: buy-access-tfs-test-hub.md
+    - name: Sign up for Azure Artifacts
+      href: ../../artifacts/sign-up-azure-artifacts.md
     - name: Billing FAQ
       href: billing-faq.md
   - name: Manage extensions (Marketplace)
