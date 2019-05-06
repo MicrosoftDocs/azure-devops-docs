@@ -124,10 +124,10 @@
     - name: Discover & Manage Extensions
       tocHref: /azure/devops/marketplace/
       topicHref: /azure/devops/marketplace/index
-    - name: Develop extensions
+    - name: Develop Extensions
       tocHref: /azure/devops/extend/
       topicHref: /azure/devops/extend/index
-    - name: Integrate extensions
+    - name: Integrate Applications
       tocHref: /azure/devops/integrate/
       topicHref: /azure/devops/integrate/index
     - name: Service Hooks
@@ -151,22 +151,34 @@
     - name: Billing
       tocHref: /azure/devops/organizations/billing/
       topicHref: /azure/devops/organizations/billing/index
-    - name: Process Customization (Inheritance)
-      tocHref: /azure/devops/organizations/settings/work/
-      topicHref: /azure/devops/organizations/settings/work/index
-    - name: Work Tracking Customization (Inheritance)
-      tocHref: /azure/devops/reference/
-      topicHref: /azure/devops/reference/index
     - name: Notifications
       tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/index
-    - name: All settings
+    - name: DevOps Settings
       tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/index
+  - name: Process Customization
+    tocHref: /azure/devops/reference/
+    topicHref: /azure/devops/reference/index
+    items:
+    - name: Inheritance Process 
+      tocHref: /azure/devops/organizations/settings/work/
+      topicHref: /azure/devops/organizations/settings/work/index
+    - name: On-premises XML Process
+      tocHref: /azure/devops/reference/xml/
+      topicHref: /azure/devops/reference/xml/index
+    - name: Hosted XML Process
+      tocHref: /azure/devops/organizations/settings/work/
+      topicHref: /azure/devops/organizations/settings/work/hosted/index
+    - name: Process Templates
+      tocHref: /azure/devops/reference/process-templates/
+      topicHref: /azure/devops/reference/process-templates/index
+    - name: Microsoft Project File Mapping (Deprecated)
+      tocHref: /azure/devops/reference/mapping/
+      topicHref: /azure/devops/reference/mapping/index
   - name: Developer Resources
     topicHref: /azure/devops/dev-resources/index
     items:
     - name: Azure DevOps demo generator
       tocHref: /azure/devops/demo-gen/
       topicHref: /azure/devops/demo-gen/index  
-

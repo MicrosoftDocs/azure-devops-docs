@@ -20,7 +20,7 @@ This quickstart guides you through using npm to store JavaScript packages in Azu
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
-## License the Azure Artifacts extension
+## ## Step 1: License the Azure Artifacts extension
 
 ### Install Azure Artifacts in TFS
 
@@ -74,7 +74,9 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 ::: moniker-end
 
-## Create a feed
+<a id="step-2-create a feed" />
+
+## Step 2: Create a feed
 
 On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Click the **+ New feed** button.
 
@@ -99,7 +101,9 @@ In the dialog box:
 
 You can change these settings later by [editing the feed](./feeds/edit-feed.md).
 
-## Set up your .npmrc files
+<a id="step-3-set-up-your-npmrc-files" />
+
+## Step 3: Set up your .npmrc files
 
 All Azure Artifacts feeds require authentication. You'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
