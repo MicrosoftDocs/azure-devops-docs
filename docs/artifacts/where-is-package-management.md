@@ -6,7 +6,7 @@ ms.technology: devops-artifacts
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 11/20/2018
+ms.date: 05/06/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -24,7 +24,7 @@ Before the UI update, your Package Management home was in the **Packages** hub o
 
 > If you're still using the previous navigation, or TFS, this is still how you would access your packages. 
 
-The new update has introduced a new, top-level area that is the home of Package Management in Azure DevOps Services. This area is known as **Azure Artifacts** and can be reached simply by clicking on the _Artifacts_ button on the left of the UI:
+The new update has introduced a new, top-level area that is the home of Package Management in Azure DevOps Services. This area is known as **Azure Artifacts** and can be reached simply by selecting the _Artifacts_ button on the left of the UI:
 
 ![Go to Azure Artifacts](_shared/_img/goto-feed-hub-azure-devops-newnav.png)
 
