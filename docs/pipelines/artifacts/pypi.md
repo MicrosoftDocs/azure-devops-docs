@@ -42,7 +42,7 @@ First, you'll need to run `pip install twine` to ensure the build agent has `twi
 
 Check out the [script YAML task reference](../yaml-schema.md#script) for the schema for this command.
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](../tasks/utility/_img/powershell.png) **Utility: Powershell**
 
@@ -77,7 +77,7 @@ To authenticate with `twine`, add the following snippet to your _azure-pipelines
 * **artifactFeeds**: the name of one or more Azure Artifacts feeds within your organization
 * **externalFeeds**: the name of one or more [external connection endpoints](/azure/devops/pipelines/library/service-endpoints), including PyPI or feeds in other organizations in Azure DevOps
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](../tasks/package/_img/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
 
@@ -103,7 +103,7 @@ After you've set up authentication with the preceding snippet, you can use `twin
 
 Check out the [script YAML task reference](../yaml-schema.md#script) for the schema for this command.
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](../tasks/utility/_img/powershell.png) **Utility: Powershell**
 

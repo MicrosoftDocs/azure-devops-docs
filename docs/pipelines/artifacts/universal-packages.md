@@ -52,7 +52,7 @@ To publish a Universal Package to your feed, add the following snippet to your a
 
 To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [personal access token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 To publish the files that you assembled previously as a Universal Package, add the **Universal Package** task and configure these options:
 
@@ -95,7 +95,7 @@ In the **Universal Packages** snippet that you added previously, add the `versio
     packagePublishDescription: '<Package description>'
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 In the **Universal Packages** task that you configured previously, choose the appropriate **Version** increment option.
 
@@ -151,7 +151,7 @@ steps:
 | versionDownloadExternal        | Version of the package to be downloaded.        |
 | [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 To download a Universal Package, add the **Universal Package** task and configure these options:
 

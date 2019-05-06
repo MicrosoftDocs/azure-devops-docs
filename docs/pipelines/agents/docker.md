@@ -1,6 +1,6 @@
 ---
 ms.prod: devops
-title: Running the agent in Docker
+title: Running a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
 ms.technology: devops-cicd
@@ -12,9 +12,9 @@ ms.date: 04/02/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Running the agent in Docker
+# Running a self-hosted agent in Docker
 
-You can set up an Azure Pipelines agent to run inside an Ubuntu container with Docker.
+You can set up an Azure Pipelines self-hosted agent to run inside an Ubuntu container with Docker.
 This is useful when you want to run agents with some kind of outer orchestration, such as [Azure Container Instances](/azure/container-instances/).
 We'll walk through a complete container example, including handling agent self-update.
 

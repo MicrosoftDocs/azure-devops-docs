@@ -43,7 +43,7 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "searchScope": ["Azure DevOps Services", "Azure DevOps", "VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
+      "searchScope": ["Azure DevOps Services"],
       "author": "thomps23",
       "ms.author": "jillfra",
       "ms.date": "09/05/2018",
@@ -53,8 +53,7 @@
       "ms.prodfamily": "ALM",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/vsts-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
-      "toc_preview": true  
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"
     },
     "fileMetadata": {
       "titleSuffix": {

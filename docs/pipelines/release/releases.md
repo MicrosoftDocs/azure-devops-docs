@@ -21,11 +21,16 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. If you author your pipelines using YAML, see [runs](../process/runs.md).
+::: moniker-end
+
 A **release** is the package or container that holds a versioned set of artifacts
 specified in a [release pipeline](index.md) in your DevOps CI/CD processes.
 It includes a snapshot of all the information required to carry out all the tasks
 and actions in the release pipeline, such as the
-[stages](environments.md),
+[stages](../process/stages.md),
 the tasks for each one, the values of task parameters
 and variables, and the release policies such as triggers, approvers, and release
 queuing options. There can be multiple releases from one released pipeline, and information
@@ -69,7 +74,7 @@ or immediately start a deployment. For example:
   For example, it may specify that the release is deployed only as far as the QA stage
   and not to the production stage.   
 
-* There may be [queuing policies](environments.md#queuing-policies)
+* There may be [queuing policies](../process/stages.md#queuing-policies)
   defined for an stage, which specify which of multiple deployments will occur,
   or the order in which releases are deployed.
 

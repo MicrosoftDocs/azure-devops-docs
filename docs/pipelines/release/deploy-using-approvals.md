@@ -132,7 +132,7 @@ Intervention** task in your pipeline.
    ![Adding an Agentless job to the task list](_img/deploy-using-approvals/add-agentless-phase.png)
 
    Several tasks, including the **Manual Intervention** task, can be used only in an
-   [agentless job](../process/server-phases.md).
+   [agentless job](../process/phases.md#server-jobs).
 
 1. Drag and drop the new agentless job to the start of the QA process, before the existing agent job.
    Then choose **+** in the **Agentless job** bar and add a **Manual Intervention** task to the job.

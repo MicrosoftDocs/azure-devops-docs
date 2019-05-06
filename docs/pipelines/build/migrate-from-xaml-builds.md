@@ -226,7 +226,7 @@ The new build pipeline offers you some new options. See:
 
 * [Agent capabilities](../agents/agents.md#capabilities)
 
-* [Build number format](../build/options.md#build-number-format)
+* [Build number format](../process/run-number.md)
 
 ### Retention Policy tab
 
