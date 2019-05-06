@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2019
+ms.date: 05/06/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -148,3 +148,4 @@ When your team's needs for build or release capacity change, you can change the 
 * [Azure Pipelines: Parallel jobs](../../pipelines/licensing/concurrent-jobs.md)
 * [Azure DevOps Server: Pipelines](../../pipelines/licensing/concurrent-pipelines-tfs.md)
 * [Pricing for Azure Pipelines](https://visualstudio.microsoft.com/team-services/pricing)
+* [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
