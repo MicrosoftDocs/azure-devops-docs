@@ -207,7 +207,7 @@ an absolute path in the container.
 Service containers share the same container resources as container jobs. This means that you can use the same
 [additional options](container-phases.md?tabs=yaml#other-settings).
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Service containers are not yet supported in the designer.
 

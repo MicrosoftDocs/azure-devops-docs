@@ -280,7 +280,7 @@ The final image will be published to Docker or Azure Container Registry
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. Create a new build pipeline using the **Empty job**.
 

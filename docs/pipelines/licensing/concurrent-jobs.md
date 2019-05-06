@@ -16,13 +16,13 @@ monikerRange: '>= azure-devops'
 
 **Azure Pipelines | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
-You can use a _parallel job_ in Azure Pipelines to run a single build job or a single release job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
+You can use a _parallel job_ in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
 
 ## Microsoft-hosted CI/CD
 
-If you want to run your builds and releases on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs run on our pool of [Microsoft-hosted agents](../agents/hosted.md).
+If you want to run your jobs on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs run on our pool of [Microsoft-hosted agents](../agents/hosted.md).
 
-We provide a *free tier* of service by default in your organization:
+We provide a *free tier* of service by default in every organization:
 
 - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
 - Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
@@ -31,6 +31,9 @@ When the free tier is no longer sufficient:
 
 - Public project: [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
 - Private project: You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+
+> [!NOTE]
+> When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization still stays at 1. This purchase only removes the limits on the free parallel job that you have. To be able to run two jobs concurrently, you will need to purchase two parallel jobs. 
 
 ## Self-hosted CI/CD
 
@@ -48,11 +51,17 @@ When the free tier is no longer sufficient:
 
 There are no time limits on self-hosted jobs.
 
-## How a parallel job is consumed by a build or release
+## How a parallel job is consumed by a pipeline
 
-For example, consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one build or release job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
+For example, consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
 
-A release consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+> [!NOTE] 
+> If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+
+
+> [!NOTE] 
+> When you run a [server job](../process/phases.md#server-jobs) or deploy to a [deployment group](../process/deployment-group-phases.md) using release pipelines, you don't consume any parallel jobs.
+
 
 ![Simple example of parallel jobs](_img/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
 
@@ -66,11 +75,9 @@ A release consumes a parallel job only when it's being actively deployed to a st
 
 The term *job* can refer to multiple concepts, and its meaning depends on the context:
 
-* When you define a build or release, you can define it as a collection of [jobs](../process/phases.md). When a build or release runs, you can run multiple jobs as part of that build or release.
+* When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline.
 
 * Each job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
-
-* When you run a [server job](../process/server-phases.md) or deploy to a [deployment group](../process/deployment-group-phases.md), you don't consume any parallel jobs.
 
 ## Determine how many parallel jobs you need
 
@@ -89,9 +96,9 @@ A simple rule of thumb: Estimate that you'll need one parallel job for every fou
 
 In the following scenarios, you might need multiple parallel jobs:
 
-* If you have multiple teams, and if each of them require a CI build, you'll likely need a parallel job for each team.
+* If you have multiple teams, and if each of them require CI, you'll likely need a parallel job for each team.
 
-* If your CI build trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
+* If your CI trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
 
 * If you develop multiple applications by using one organization or server, you'll likely need additional parallel jobs: one to deploy each application at the same time.
 
@@ -113,9 +120,9 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 1. You purchase two parallel jobs in your organization.
 
-1. You queue two builds in the first project, and both the parallel jobs are consumed.
+1. You start two runs in the first project, and both the parallel jobs are consumed.
 
-1. You queue a build in the second project. That build won't start until one of the builds in your first project is completed.
+1. You start a run in the second project. That run won't start until one of the runs in your first project is completed.
 
 ## Q&A
 

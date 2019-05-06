@@ -1055,7 +1055,7 @@ process, or multiple releases may be queued up on a
 production environment awaiting approval after they
 have passed QA. Queuing policies allow you to deploy in
 parallel, deploy in sequence, or just deploy the latest one.
-See [Queuing policies](../../release/environments.md#queuing-policies)
+See [Queuing policies](../../process/stages.md#queuing-policies)
 
 ![Configuring queuing policies](_img/rm-archived/release-notes-04.png)
 
