@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2019
+ms.date: 05/06/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -20,13 +20,9 @@ monikerRange: 'azure-devops'
 
 Set up billing when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), on the Azure DevOps tab.
 
-The Free tier includes:
+The *free tier* includes:
 
-* Five Azure DevOps users (Basic).
-* Five Azure Artifacts users.
-* Free Tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month).
-* One self-hosted CI/CD concurrent job.
-* 20,000 virtual user minutes of cloud-based load testing.
+[!INCLUDE [free-tier](../../_shared/free-tier.md)]
 
 > During your first purchase for your organization, you're prompted to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All services are billed via Azure. You aren't required to pay for or use any other Azure services.
 > 

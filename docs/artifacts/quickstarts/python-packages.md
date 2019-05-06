@@ -15,26 +15,7 @@ monikerRange: '=azure-devops'
 
 This quickstart guides you through using Azure Artifacts to consume and publish Python packages in Azure DevOps Services. It covers license assigning and setup.
 
-> [!NOTE]
-> Python package functionality in Azure Artifacts is currently in public preview.
-
-## Step 1: License the Azure Artifacts extension
-
-### Assign Azure Artifacts in Azure DevOps Services
-
-Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
-
-Assign your licenses by following these instructions:
-
-1. Go to your organization and select **Admin settings** on the lower left of the UX.
-2. Select **Users**.
-3. Select the user or users you want to assign the Azure Artifacts extension to, and select **Manage extensions**.
-4. If you're selecting multiple users, select **Assign extensions** and choose the Azure Artifacts extension. If you're selecting only one user, select the Azure Artifacts box under **Extensions** and select **Save changes**.
-
-If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
-
-## Step 2: Create a feed
+## Create a feed
 
 On your first visit to Azure Artifacts, you're welcomed with an image that prompts you to create a new feed. Select the **+ New feed** button.
 
@@ -50,7 +31,7 @@ In the dialog box:
 
 You can change these settings later by [editing the feed](../feeds/edit-feed.md).
 
-## Step 3: Connect to your feed
+## Connect to your feed
 
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 

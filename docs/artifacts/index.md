@@ -136,7 +136,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Package management overview</h3>
+                                                            <h3>Azure Artifacts overview</h3>
                                                             <p>Use multiple feeds to organize and control access to your packages.</p>
                                                         </div>
                                                     </div>

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2019
+ms.date: 05/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,11 +24,7 @@ Make sure to review [Azure DevOps pricing](https://azure.microsoft.com/pricing/d
 
 You need to set up billing when you need more than the *free tier* of resources in your organization:
 
-* Five Azure DevOps users (Basic)
-* Five Azure Artifacts users
-* Free tier of Microsoft-hosted continuous integration/continuous development (CI/CD) (1 concurrent job, up to 30 hours per month)
-* One self-hosted CI/CD concurrent job
-* 20,000 virtual user minutes of cloud-based load testing
+[!INCLUDE [free-tier](../../_shared/free-tier.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
@@ -103,7 +99,7 @@ When you increase the paid quantity later, we also prorate the increased units t
 
 ### Q: How do reductions or cancellations work?
 
-A: When you reduce or cancel user charges or CI/CD charges, you're canceling automatic renewal. The features and/or CI/CD capacity continue through the end of the current calendar month, taking effect on the fist day of the next month.
+A: When you reduce or cancel user charges or CI/CD charges, you're canceling automatic renewal. The features and/or CI/CD capacity continue through the end of the current calendar month, taking effect on the first day of the next month.
 
 ## Changes in Azure subscription status
 

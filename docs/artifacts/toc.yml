@@ -8,6 +8,8 @@
   #   href: tbd
   - name: License Azure Artifacts
     href: license-azure-artifacts.md #remove after update
+  - name: Sign up for Azure Artifacts
+    href: sign-up-azure-artifacts.md
   - name: Key concepts
     href: artifacts-key-concepts.md
 - name: Quickstarts

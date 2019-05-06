@@ -42,7 +42,7 @@ A: To access and manage users, you must have Azure DevOps [project collection ad
 
 A: Assign this access level to users who have active, valid [Visual Studio subscriptions](#EligibleMSDNSubscriptions). Azure DevOps automatically recognizes and validates Visual Studio subscribers who have Azure DevOps as a benefit. You need the email address that's associated with the subscription.
 
-For example, if a user selects **Visual Studio/MSDN Subscriber** but the user doesn't have a valid, active Visual Studio subscription, the user can work only [as a stakeholder](../../organizations/security/get-started-stakeholder.md).
+For example, if a user selects **Visual Studio/MSDN Subscriber** but the user doesn't have a valid, active Visual Studio subscription, the user can work only [as a Stakeholder](../../organizations/security/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
@@ -68,7 +68,7 @@ A: Azure DevOps recognizes Visual Studio subscribers. Azure DevOps automatically
 
 ### Q: What happens if a user's subscription expires?
 
-A: If no other access levels are available, users can [work as stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
+A: If no other access levels are available, users can [work as Stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
 
 <a name="extension-transition"></a>
 
@@ -114,9 +114,9 @@ The value in **Last Access** is the last date a user accessed any resources or s
 
 ### Q: Why does a user lose access to some features?
 
-A: This might happen for different reasons (although the user can continue to [work as a stakeholder](../../organizations/security/get-started-stakeholder.md)):
+A: This might happen for different reasons (although the user can continue to [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md)):
 
-*	The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
+*	The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
 
 *	The Azure subscription used for billing is no longer active. This affects all purchases made with this subscription, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 
