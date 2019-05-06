@@ -105,7 +105,7 @@ az devops configure --defaults organization=https://[your-organization].visualst
 
 Publish a package with `az artifacts universal publish`. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
 
-Update these values as desired, and use the feed name that you noted earlier. You must use [Semantic Versioning (SemVer)](https://semver.org) for the version. Package names must be lowercase and can use only letters, numbers, and dashes (`-`).
+Update these values as desired, and use the feed name that you noted earlier. You must use [Semantic Versioning (SemVer)](https://semver.org/spec/v1.0.0.html) for the version. Package names must be lowercase and can use only letters, numbers, and dashes (`-`).
 
 # [New URLs](#tab/azuredevops)
 
