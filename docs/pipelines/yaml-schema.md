@@ -162,7 +162,7 @@ steps: [ script | bash | pwsh | powershell | checkout | task | templateReference
 # [Example](#tab/example)
 
 ```yaml
-name: $(Date:yyyyMMdd).$(Rev:.r)
+name: $(Date:yyyyMMdd)$(Rev:.r)
 variables:
   var1: value1
 jobs:
