@@ -11712,6 +11712,11 @@
       "source_path": "docs/pipelines/release/environments.md",
       "redirect_url": "/azure/devops/pipelines/process/stages",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md",
+      "redirect_url": "/azure/devops/reference/mapping/index",
+      "redirect_document_id": false
     }
   ]
 }
