@@ -60,7 +60,7 @@ steps:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You can allow scripts and tasks to access System.AccessToken at the job level.
 

@@ -56,7 +56,7 @@ The NuGet task supports a number of options. The following list describes some o
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Add the **NuGet** task to your build in order to create a NuGet package. Make sure to add this task below the task that builds your application and above any tasks that require the packages you build.
 
@@ -121,7 +121,7 @@ For a list of other possible values for `versioningScheme`, see the [NuGet task]
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 In the **NuGet** task, select **Pack options** and select one of the values for **Automatic package versioning**.
 
@@ -174,7 +174,7 @@ To publish a package to a NuGet feed, add the following snippet to your `azure-p
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 To publish NuGet packages created by your build, add the **NuGet** task and configure these options:
 

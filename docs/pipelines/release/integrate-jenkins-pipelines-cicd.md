@@ -117,7 +117,7 @@ YAML builds aren't yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. In the **Tasks** page of your release pipeline, choose the **+**
   (plus sign) in the **Agent job** section.
@@ -177,7 +177,7 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 # See also
 
 * [Artifacts](artifacts.md)
-* [Stages](environments.md)
+* [Stages](../process/stages.md)
 * [Triggers](triggers.md)
 * [YAML schema reference](../yaml-schema.md)
 

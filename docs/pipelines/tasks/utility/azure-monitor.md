@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 
 Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
