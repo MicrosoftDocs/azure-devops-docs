@@ -173,10 +173,10 @@ jobs:
 
 ---
 
-Learn more about [multi-job pipelines](process/multiple-phases.md?tabs=yaml),
+Learn more about [multi-job pipelines](process/phases.md?tabs=yaml),
 using [containers](#container-resource) and [repositories](#repository-resource) in pipelines,
 [triggers](#triggers), [variables](process/variables.md?tabs=yaml), and
-[build number formats](build/options.md#build-number-format).
+[build number formats](process/run-number.md).
 
 ::: moniker range="> azure-devops-2019"
 ## Stage
@@ -245,8 +245,8 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and [variables](#
 
 A [job](process/phases.md?tabs=yaml) is a collection of [steps](#steps) to be run by an
 [agent](agents/agents.md) or, in some cases, on the server. Jobs can be
-run [conditionally](process/multiple-phases.md?tabs=yaml#conditions), and they
-may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
+run [conditionally](process/phases.md?tabs=yaml#conditions), and they
+may [depend on earlier jobs](process/phases.md?tabs=yaml#dependencies).
 
 # [Schema](#tab/schema)
 
@@ -1175,7 +1175,7 @@ pool:
 
 ## Server
 
-`server` specifies a [server job](process/server-phases.md).
+`server` specifies a [server job](process/phases.md#server-jobs).
 
 # [Schema](#tab/schema)
 
@@ -1415,6 +1415,7 @@ steps:
   fetchDepth: number  # the depth of commits to ask Git to fetch
   lfs: boolean  # whether to download Git-LFS files
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules
+  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1)
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
@@ -1433,6 +1434,7 @@ steps:
   clean: false
   fetchDepth: 5
   lfs: true
+  path: PutMyCodeHere
 ```
 
 ---

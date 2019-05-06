@@ -95,6 +95,8 @@ If you select **True** then the build pipeline performs an undo of any changes a
 
 Select **true** to delete the repository folder.
 
+## Label sources
+
 [!INCLUDE [include](_shared/label-sources.md)]
 
 The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).

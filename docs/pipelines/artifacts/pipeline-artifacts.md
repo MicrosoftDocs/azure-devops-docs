@@ -24,7 +24,7 @@ monikerRange: 'azure-devops'
 
 Pipeline artifacts help you store build outputs and move intermediate files between stages in your pipelines. Artifacts are the files that you want your build to produce. They can be anything that your team needs to test or deploy your app.
 
-You’ll see the most benefit from pipeline artifacts if you have a build that produces large build outputs. If you’re an existing Azure DevOps user, pipeline artifacts are automatically enabled for you.
+You’ll see the most benefit from pipeline artifacts if you have a build that produces large build outputs. If you’re an existing Azure Pipelines user, pipeline artifacts are automatically enabled for you.
 
 ## Publish a pipeline artifact
 
@@ -40,7 +40,7 @@ steps:
     targetPath: 'src/MyWebApp/bin/Release/netcoreapp2.0/linux-x64/publish'
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](../tasks/utility/_img/publish-pipeline-artifact.png) **Utility: Publish Pipeline Artifact**
 
@@ -72,7 +72,7 @@ steps:
     targetPath: $(System.DefaultWorkingDirectory)
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Utility: Download Pipeline Artifact**
 
@@ -109,13 +109,6 @@ In other words, with an `.artifactignore` file like this:
 !*.exe
 ```
 
-This build task will archive up all of the `.exe` files and nothing else:
-
-```yaml
-steps:
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'artifactName'
-```
+This build task will archive up all of the `.exe` files and nothing else.
 
 More details about how to use these files are available at [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) or [.gitignore Documentation](https://git-scm.com/docs/gitignore).

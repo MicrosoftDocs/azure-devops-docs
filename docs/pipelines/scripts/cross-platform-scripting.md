@@ -38,7 +38,7 @@ steps:
     npm test
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. Add a **Command Line** task to your pipeline.
 
@@ -78,7 +78,7 @@ steps:
 - script: echo The value passed in is $(Example)
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. Add a **Command Line** task to your pipeline.
 
@@ -120,7 +120,7 @@ steps:
   displayName: Hello world
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. Add a **Bash** task to your pipeline.
 
@@ -178,7 +178,7 @@ steps:
     echo The IP address is $(IP_ADDR)
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 First, add a Linux script.
 

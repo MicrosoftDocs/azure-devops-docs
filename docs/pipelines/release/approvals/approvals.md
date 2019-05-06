@@ -95,7 +95,7 @@ where the user can approve or reject the release.
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

@@ -13,20 +13,20 @@ ms.date: 11/28/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Tasks for builds and releases
+# Tasks
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 A **task** is the building block for defining automation in a
-build pipeline, or in a stage of a release pipeline.
+pipeline.
 A task is simply a packaged script or procedure that has been
 abstracted with a set of inputs. 
 
-When you add a task to your build or release pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
+When you add a task to your pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
-When you queue a build or a deployment, all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+When you run a [job](phases.md), all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
 
 ## Custom tasks
 
@@ -87,7 +87,7 @@ YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Each task in a pipeline has a **Version** selector to let you choose the version you want.
 
@@ -141,7 +141,7 @@ YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ### Enabled
 
@@ -172,7 +172,7 @@ Select the condition for running this task:
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
-> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../build/options.md#job-cancel-timeout).
+> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../process/phases.md#timeouts).
 
 ### TFS 2015 and newer options
 
@@ -236,7 +236,7 @@ YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 #### Tasks tab
 

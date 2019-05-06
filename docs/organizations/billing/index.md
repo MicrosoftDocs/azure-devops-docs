@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2019
+ms.date: 05/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -60,6 +60,7 @@ You can also make some purchases for Azure DevOps Server on your monthly Azure b
 * [Add user to make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription your organization uses for billing](change-azure-subscription.md)
 * [Change the number of paid users on your organization](buy-basic-access-add-users.md)
+* [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
 * [Billing FAQ](billing-faq.md)
 
 #### Marketplace extension management

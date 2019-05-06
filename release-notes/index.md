@@ -2,7 +2,7 @@
 title: Azure DevOps Features Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 03/21/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -28,11 +28,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-            <td rowspan="43">**2019 Q2**</td>
+            <td rowspan="42">**2019 Q2**</td>
             <td>[Instant search for work items](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502555)</td><td>Boards</td><td>TBD</td>
         <tr><td>[Improve built-in charts: Sprint Burndown, CFD, and Velocity](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510189)</td><td>Boards</td><td>TBD</td></tr>
         <tr><td>[Azure Boards app for Slack](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1515751)</td><td>Boards</td><td>TBD</td></tr>
-        <tr><td>[Display Rollup on Azure Boards – Backlogs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510190)</td><td>Boards</td><td>TBD</td></tr>
         <tr><td>[Display Rollup on Azure Boards – Backlogs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184)</td><td>Boards</td><td>TBD</td></tr>
         <tr><td>[VFS for Git - Public Preview of macOS support](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221136)</td><td>Repos</td><td>N/A</td></tr>
         <tr><td>[Better support for branch policy administration across repos & projects](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728)</td><td>Repos</td><td>TBD</td></tr>
@@ -61,7 +60,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td>[Updated Test Plans page](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1424603)</td><td>Test Plans</td><td>TBD</td></tr>
         <tr><td>[Search across package feeds](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1415324)</td><td>Artifacts</td><td>TBD</td></tr>
         <tr><td>[Public (unauthenticated) feeds](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458316)</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td>[Expanded NuGet metadata, and other suggestions](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458327)</td><td>Artifacts</td><td>TBD</td></tr>
+        <tr><td>[Expanded NuGet metadata, and other suggestions](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458327)</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>[Universal Packages feature updates](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833)</td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td>[Improved Dashboard performance](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510183)</td><td>Reporting</td><td>2019.1</td></tr>
         <tr><td>[Improve built-in charts: Sprint Burndown, CFD, and Velocity](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510185)</td><td>Reporting</td><td>TBD</td></tr>
@@ -111,6 +110,16 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="6">[30 April 2019](2019/sprint-151-update.md)</td>
+            <td>Add Azure Boards from the GitHub Marketplace</td><td>Boards</td><td>N/A</td>
+        </tr>
+        <tr><td>Accept and execute on issues in GitHub while planning in Azure Boards</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Taskboard people switcher</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Repository creation extension point</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Improved encoding support</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Azure Pipelines app for Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr>        
         <tr>
             <td rowspan="26">[8 April 2019](2019/sprint-150-update.md)</td>
             <td>Dark theme general availability</td><td>General</td><td>Future</td>

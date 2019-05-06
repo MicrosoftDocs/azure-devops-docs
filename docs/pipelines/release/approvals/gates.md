@@ -110,7 +110,7 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
 * [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 ## See also
