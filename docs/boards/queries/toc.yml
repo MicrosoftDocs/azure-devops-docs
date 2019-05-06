@@ -21,6 +21,8 @@
     href: using-queries.md
   - name: Triage work items  
     href: triage-work-items.md
+  - name: Link work items
+    href: ../backlogs/add-link.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
   - name: Bulk modify work items
     href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
 - name: Concepts
