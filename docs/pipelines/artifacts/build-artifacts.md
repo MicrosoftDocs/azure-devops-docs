@@ -25,10 +25,6 @@ monikerRange: '>= tfs-2015'
 
 Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app.
 
-Azure Pipelines can pick up and use your build artifacts as part of a continuous integration/continuous deployment (CI/CD) pipeline. In this scenario, you're automatically building a web app with each commit using your CI build. Your CD release pipeline picks up the .zip (ASP.NET or Node.js) or .war (Java) web deployment file. Your changes are automatically deployed to a test environment in Azure.
-
-You can publish your artifacts to other tasks in your pipeline. You can then add onto, build, test, or even deploy those artifacts.
-
 ## How do I publish artifacts?
 
 Artifacts can be published at any stage of pipeline. You can use two methods for configuring what to publish as an artifact and when to publish it: alongside your code with **YAML**, or in the Azure Pipelines UI with the **classic editor**.
@@ -52,7 +48,7 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 > [!TIP]
 > If you want to try this and you don't already have a Git repo with an **environment-variables.txt** file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
@@ -101,7 +97,7 @@ YAML is not supported in TFS.
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You can create multiple artifact items. For example:
 
@@ -169,7 +165,7 @@ The completed build delivers two sets of artifacts.
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](../tasks/utility/_img/copy-files.png) **Utility: Copy Files**
 
@@ -211,13 +207,13 @@ YAML is not supported in TFS.
 
 ## How do I consume artifacts?
 
-### Consume artifacts in Azure Pipelines
+### Consume artifacts in release pipelines
 
-You can download artifacts to Azure Pipelines and deploy them to the target of your choice.
+You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice. At present, you cannot download artifact produced by a YAML pipeline in another YAML pipeline.
 
-### Consume an artifact in the next job of your build
+### Consume an artifact in the next job of your pipeline
 
-You can consume an artifact from your build in a subsequent step of the build. This can be useful to build or test your artifact. 
+You can consume an artifact produced by one job in a subsequent job of the pipeline, even when that job is in a different stage (YAML pipelines). This can be useful to test your artifact. 
 
 ### Download to debug
 
@@ -243,7 +239,7 @@ You can download an artifact directly from a pipeline for use in debugging.
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ![icon](../tasks/utility/_img/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
 

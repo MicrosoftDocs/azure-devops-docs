@@ -249,7 +249,7 @@ For on-premises TFS, each user account must have a TFS client access license (CA
 
 ::: moniker-end
 
-In addition, you can provide access to stakeholders in your organization who have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
+In addition, you can provide access to Stakeholders in your organization who have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md).
 
 <a name="proxy"></a>
 

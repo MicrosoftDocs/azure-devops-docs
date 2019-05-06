@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2019
+ms.date: 05/06/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -56,9 +56,13 @@ Cloud-based load testing is enabled for your organization.
 
 ## Billing and free monthly usage
 
-You're charged for only the virtual user minutes of cloud-based load testing used above the free tier of 20,000 virtual user minutes per month.
+You're charged for only the virtual user minutes of cloud-based load testing used above the *free tier* of user minutes per month. The *free tier* includes:
 
-* The free tier resets on the first day of the month.
+[!INCLUDE [free-tier](../../_shared/free-tier.md)]
+
+
+
+* The *free tier* resets on the first day of the month.
 
 * Visual Studio subscriptions don't include any additional virtual user minutes. The free amounts are per organization, not per user.
 

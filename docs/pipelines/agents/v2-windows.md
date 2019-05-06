@@ -1,7 +1,7 @@
 ---
-title: Deploy a build and release agent on Windows
+title: Deploy a Azure Pipelines agent on Windows
 ms.custom: seodec18
-description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
+description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,14 +13,14 @@ ms.date: 03/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy an agent on Windows
+# Self-hosted Windows agents
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
-> * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Windows agent.
+> * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 

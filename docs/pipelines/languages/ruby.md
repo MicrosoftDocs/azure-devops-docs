@@ -19,18 +19,36 @@ monikerRange: 'azure-devops'
 
 This guidance explains how to automatically build Ruby projects.
 
-## Example
+## Get started
 
-For a working example of how to build a Ruby project, import into Azure Repos or fork (into GitHub) this repo:
+Follow these instructions to set up a pipeline for a Ruby app.
 
-```
-https://github.com/MicrosoftDocs/pipelines-ruby
-```
+1. The code in the following repository is a simple Ruby app. To get started, fork this repo to your GitHub account.
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository.
-You can use this file to build the project.
+    ```
+    https://github.com/MicrosoftDocs/pipelines-ruby
+    ```
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample project.
+1. Sign in to your Azure DevOps organization and navigate to your project.
+
+1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When the list of repositories appears, select your Ruby sample repository.
+
+1. Azure Pipelines will analyze the code in your repository and recommend `Ruby` template for your pipeline. Select that template.
+
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+
+1. A new run is started. Wait for the run to finish.
+
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+
+> [!TIP]
+> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 ## Build environment
 

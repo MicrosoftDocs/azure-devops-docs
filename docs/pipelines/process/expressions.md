@@ -1,7 +1,7 @@
 ---
 title: Expressions
 ms.custom: seodec18
-description: Learn about how you can write custom conditions for running your task in Azure Pipelines or Team Foundation Server (TFS).
+description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 03/25/2019
+ms.date: 04/29/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -21,17 +21,38 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Expressions let you describe decisions the system should make, such as whether to run a step or the value of a variable.
-The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
-Expressions are typically a nested set of functions evaluated from the innermost function out.
+Expressions can be used wherever you need to specify a string, boolean, or number value when authoring a pipeline.
+The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
-## Types
+::: moniker range=">= azure-devops-2019"
+```yaml
+# Expressions are used to define conditions for a step, job, or stage
+steps:
+- task: ...
+  condition: <expression>
+```
+
+Another common use of expressions is in defining variables, whose value should be evaluated at run time.
+
+```yaml
+# Expressions are used to define variables, whose value should be evaluated at run time. 
+# Note the syntax $[] to evaluate these expressions.
+variables:
+  a: $[<expression>]
+```
+::: moniker-end
+
+An expression can be a literal, a reference to a variable, a reference to a dependency, a function, or a valid nested combination of these.
+
+## Literals
+
+As part of an expression, you can use boolean, null, number, string, or version literals.
 
 ### Boolean
-`True` and `False`
+`True` and `False` are boolean literal expressions.
 
 ### Null
-Null is a special type that's returned from a dictionary miss only, e.g. (`variables['noSuch']`).
+Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`).
 
 ### Number
 Starts with '-', '.', or '0' through '9'.
@@ -47,77 +68,28 @@ A version number with up to four segments.
 Must start with a number and contain two or three period (`.`) characters.
 For example: `1.2.3.4`.
 
-## Type Casting
-
-### Conversion chart
-Detailed conversion rules are listed further below.
-
-|          |             | To          |             |             |             |             |
-| -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|          |             | **Boolean** | **Null**    | **Number**  | **String**  | **Version** |
-| **From** | **Boolean** | -           | -           | Yes         | Yes         | -           |
-|          | **Null**    | Yes         | -           | Yes         | Yes         | -           |
-|          | **Number**  | Yes         | -           | -           | Yes         | Partial     |
-|          | **String**  | Yes         | Partial     | Partial     | -           | Partial     |
-|          | **Version** | Yes         | -           | -           | Yes         | -           |
-
-### Boolean
-
-To number:
-* `False` &rarr; `0`
-* `True` &rarr; `1`
-
-To string:
-* `False` &rarr; `'false'`
-* `True` &rarr; `'true'`
-
-### Null
-
-* To Boolean: `False`
-* To number: `0`
-* To string: `''` (the empty string)
-
-### Number
-
-* To Boolean: `0` &rarr; `False`, any other number &rarr; `True`
-* To version: Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
-* To string:
-Converts the number to a string with no thousands separator and no decimal separator.
-
-### String
-
-* To Boolean: `''` (the empty string) &rarr; `False`, any other string &rarr; `True`
-* To null: `''` (the empty string) &rarr; `Null`, any other string not convertible
-* To number: `''` (the empty string) &rarr; 0, otherwise, runs C#'s `Int32.TryParse` using [InvariantCulture](https://msdn.microsoft.com/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx) and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If `TryParse` fails, then it's not convertible.
-* To version:
-runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum. If `TryParse` fails, then it's not convertible.
-
-### Version
-
-* To Boolean: `True`
-* To string: Major.Minor or Major.Minor.Build or Major.Minor.Build.Revision.
-
 ## Variables
 
-Depending on the execution context, different variables are available.
-For instance, in a condition on a pipeline, [Build](../build/variables.md) or [Release](../release/variables.md) variables are available.
-
-You may access variables using one of two syntaxes:
+As part of an expression, you may access variables using one of two syntaxes:
 
 * Index syntax: `variables['MyVar']`
-* Property dereference syntax: `variables.MyVar`.
+* Property dereference syntax: `variables.MyVar`
 
 In order to use property dereference syntax, the property name must:
 - Start with `a-Z` or `_`
 - Be followed by `a-Z` `0-9` or `_`
 
+Depending on the execution context, different variables are available.
+- If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
+- If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
+- If you create release pipelines using classic editor, then [release variables](../release/variables.md) variables are available.
+
 ## Functions
 
-Expressions may include functions. These functions are always available.
-Depending on context, other functions may be available as well.
+The following built-in functions can be used in expressions.
 
 ### and
-* Evaluates `True` if all parameters are `True`
+* Evaluates to `True` if all parameters are `True`
 * Min parameters: 2. Max parameters: N
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `False`
@@ -142,6 +114,55 @@ Depending on context, other functions may be available as well.
 * If the left parameter is an array, converts each item to match the type of the right parameter. If the left parameter is an object, converts the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after the first match
+
+::: moniker range=">= azure-devops-2019"
+
+### counter
+* This function can only be used in an expression that defines a variable. It cannot be used as part of a condition for a step, job, or stage.
+* Evaluates a number that is incremented with each run of a pipeline.
+* Parameters: 2. `prefix` and `seed`.
+* Prefix is a string expression. A separate value of counter is tracked for each unique value of prefix
+* Seed is the starting value of the counter
+
+You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here is an example that demonstrates this.
+
+```yaml
+variables:
+  major: 1
+  # define b as a counter with the prefix as variable a, and seed as 100.
+  minor: $[counter(variables[`major`], 100)]
+
+steps:
+    - bash: echo $(minor)
+```
+
+The value of `minor` in the above example in the first run of the pipeline will be 100. In the second run it will be 101, provided the value of `major` is still 1.
+
+If you edit the YAML file, and update the value of the variable `major` to be 2, then in the next run of the pipeline, the value of `minor` will be 100. Subsequent runs will increment the counter to 101, 102, 103, ...
+
+Later, if you edit the YAML file, and set the value of `major` back to 1, then the value of the counter resumes where it left off for that prefix. In this example, it resumes at 102.
+
+Here is another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
+
+```yaml
+jobs:
+- job:
+  variables:
+    a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
+  steps:
+    - bash: echo $(a)
+``` 
+
+Here is an example of having a counter that maintains a separate value for PRs and CI runs.
+
+```yaml
+variables:
+  patch: $[counter(variables['build.reason'], 0)]
+```
+
+Counters are scoped to a pipeline. In other words, its value is incremented for each run of that pipeline. There are no project-scoped counters.
+
+::: moniker-end
 
 ### endsWith
 * Evaluates `True` if left parameter String ends with right parameter
@@ -241,6 +262,105 @@ Depending on context, other functions may be available as well.
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to Boolean for evaluation
 
+
+<h2 id="job-status-functions">Job status check functions</h2>
+
+You can use the following status check functions as expressions in conditions, but not in variable definitions.
+
+<h3 id="always">always</h3>
+* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
+
+### canceled
+* Evaluates to `True` if the pipeline was canceled.
+
+### failed
+* For a step, equivalent to `eq(variables['Agent.JobStatus'], 'Failed')`.
+* For a job:
+ * With no arguments, evaluates to `True` only if any previous job in the dependency graph failed.
+ * With job names as arguments, evaluates to `True` only if any of those jobs failed.
+
+### succeeded
+* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
+* For a job:
+ * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+ * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
+
+### succeededOrFailed
+* For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`
+* For a job:
+ * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
+ * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
+
+ > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
+
+## Dependencies
+
+For jobs which depend on other jobs, expressions may also use context about previous jobs in the dependency graph.
+The context is called `dependencies` and works much like variables.
+
+Structurally, the `dependencies` object is a map of job names to `results` and `outputs`.
+Expressed as JSON, it would look like:
+
+```json
+"dependencies": {
+  "<JOB_NAME>" : {
+    "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
+    "outputs": { // only variables explicitly made outputs will appear here
+      "variable1": "value1",
+      "variable2": "value2"
+    }
+  },
+  "...": {
+    // another job
+  }
+}
+```
+
+::: moniker range="azure-devops"
+
+For instance, in a YAML pipeline, you could check output variables:
+
+```yaml
+jobs:
+- job: A
+  steps:
+  - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+    name: printvar
+
+- job: B
+  condition: and(succeeded(), ne(dependencies.A.outputs['printvar.skipsubsequent'], 'true'))
+  dependsOn: A
+  steps:
+  - script: echo hello from B
+```
+
+Or you can check job status. In this example, Job A will always be skipped and Job B will run.
+Job C will run, since all of its dependencies either succeed or are skipped.
+
+```yaml
+jobs:
+- job: a
+  condition: false
+  steps:
+  - script: echo Job A
+- job: b
+  steps:
+  - script: echo Job B
+- job: c
+  dependsOn:
+  - a
+  - b
+  condition: |
+    and
+    (
+      in(dependencies.a.result, 'Succeeded', 'SucceededWithIssues', 'Skipped'),
+      in(dependencies.b.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+    )
+  steps:
+  - script: Job C
+```
+::: moniker-end
+
 ## Filtered arrays
 
 When operating on a collection of items you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
@@ -266,3 +386,53 @@ This would return:
 ```json
 [ 1, 2, 3 ]
 ```
+
+## Type Casting
+
+Values in an expression may be converted from one type to another. Detailed conversion rules are listed further below.
+
+|          |             | To          |             |             |             |             |
+| -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+|          |             | **Boolean** | **Null**    | **Number**  | **String**  | **Version** |
+| **From** | **Boolean** | -           | -           | Yes         | Yes         | -           |
+|          | **Null**    | Yes         | -           | Yes         | Yes         | -           |
+|          | **Number**  | Yes         | -           | -           | Yes         | Partial     |
+|          | **String**  | Yes         | Partial     | Partial     | -           | Partial     |
+|          | **Version** | Yes         | -           | -           | Yes         | -           |
+
+### Boolean
+
+To number:
+* `False` &rarr; `0`
+* `True` &rarr; `1`
+
+To string:
+* `False` &rarr; `'false'`
+* `True` &rarr; `'true'`
+
+### Null
+
+* To Boolean: `False`
+* To number: `0`
+* To string: `''` (the empty string)
+
+### Number
+
+* To Boolean: `0` &rarr; `False`, any other number &rarr; `True`
+* To version: Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
+* To string:
+Converts the number to a string with no thousands separator and no decimal separator.
+
+### String
+
+* To Boolean: `''` (the empty string) &rarr; `False`, any other string &rarr; `True`
+* To null: `''` (the empty string) &rarr; `Null`, any other string not convertible
+* To number: `''` (the empty string) &rarr; 0, otherwise, runs C#'s `Int32.TryParse` using [InvariantCulture](https://msdn.microsoft.com/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx) and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If `TryParse` fails, then it's not convertible.
+* To version:
+runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum. If `TryParse` fails, then it's not convertible.
+
+### Version
+
+* To Boolean: `True`
+* To string: Major.Minor or Major.Minor.Build or Major.Minor.Build.Revision.
+
