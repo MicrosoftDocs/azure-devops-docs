@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 04/22/2019
+ms.date: 05/06/2019
 ---
 
 
@@ -20,22 +20,43 @@ ms.date: 04/22/2019
 
 <a id="link-type-guidance"></a>
 
-::: moniker range="azure-devops"
-Four link types are supported. A specific field maintains a count of links for each of these link types. 
+Different link types are used to manage the different relationships that you can make among work items or between work items and other artifacts, such as builds, commits, pull requests, and more. 
 
-- [**Work link types**](#work-link-types) support creating relationships among work items including select test case management work items
-- [**Remote work link types**](#remote-work-link-types) support creating relationships among work items that are defined in different organizations
-- [**Hyperlink**](#hyperlink) supports linking a work item to any URL or network share
-- [**External link types**](#external-link-types) supports connecting a work item to an external object, such as a code object, build, or wiki page.   
+You can link work items to other work items or artifacts using the following link types.
+
+::: moniker range="azure-devops"
+
+- [**Work link types**](#work-link-types): links work items including select test case management work items
+- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
+- [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or wiki page
+- [**Remote work link types**](#remote-work-link-types): connects work items that are defined in different organizations
+- [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit, issue, or pull request.
+
+   
+A specific field maintains a count of links for the first four link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, <em>External Link Count</em>, and <em>Remote Link Count</em>.  
 
 ::: moniker-end 
 
-::: moniker range="<= azure-devops-2019"  
-Three link types are supported. A specific field maintains a count of links for each of these link types. 
+::: moniker range="azure-devops-2019"  
 
-- [**Work link types**](#work-link-types) support creating relationships among work items including select test case management work items
-- [**Hyperlink**](#hyperlink) supports linking a work item to any URL or network share
-- [**External link types**](#external-link-types) supports connecting a work item to an external object, such as a code object, build, or storyboard.   
+- [**Work link types**](#work-link-types): links work items including select test case management work items
+- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
+- [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or wiki page
+- [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit or pull request.     
+
+
+A specific field maintains a count of links for the first three link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.  
+
+::: moniker-end 
+
+
+::: moniker range="<= tfs-2018"  
+
+- [**Work link types**](#work-link-types): links work items including select test case management work items
+- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
+- [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or storyboard.   
+
+A specific field maintains a count of links for each of these link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.  
 
 ::: moniker-end 
 
@@ -43,6 +64,7 @@ Link types you use to link work items are subject to certain restrictions based 
 
 
 <a id="work-link-types">  </a>
+
 ## Work link types
 
 Work link types are system-defined, process-defined, or user-defined (custom). The links listed in the following table are system defined. 
@@ -55,10 +77,13 @@ Each work link type defines the link labels, topology type, and restrictions tha
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+
 The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
+
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
+
 The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
 
 ::: moniker-end  
@@ -156,10 +181,12 @@ Link category: System-defined</p></td>
 </td>
 <td><p>System.LinkTypes.Dependency</p>
 <p>Topology type: Dependency<br/>
-Link category: System-defined</p></td>
-<td><p>Use this directional link to create links between any set of work items, but not ones that would create closed loops. Use to track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in Azure Boards. Typically used to track work that must be completed prior to beginning work on predecessor items. </p>
+Link category: System-defined</p>
+<p>Choose <strong>Predecessor</strong> link type when linking to a work item that should be completed <em>prior</em> to the work item you are linking from. Choose <strong>Successor</strong> link type when linking to a work item that should be completed <em>after</em> to the work item you are linking from.</p>
+</td>
+<td><p>Use this directional link to create links between any set of work items, but not ones that would create closed loops. Use to track tasks that must be completed before others can be started. When you plan work using Microsoft Project, linked tasks are represented as predecessor-successor links in Azure Boards. Typically used to track work that must be completed prior to beginning work on predecessor items. </p>
 <ul><li><p>Track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in TFS.</p></li><li><p>Supports one-to-many relationships.</p></li><li><p>Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.</p></li></ul>Restrictions and recommendations:<ul><li><p>An error appears when you attempt to create links that define circular relationships.</p></li><li><p>Create predecessor-successor links only to work items that are within the same project.<br />
-You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported into the Team Foundation client.</p></li></ul> </td>
+You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.</p></li></ul> </td>
 </tr>
 
 <tr>
@@ -197,58 +224,6 @@ Link category: Process-defined</p></td>
 
 
 
-::: moniker range="azure-devops"   
-
-<a id= "remote-work-link-types" />
-## Remote work link types
-
-Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.  
-
-A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
-
-<table width="100%"> 
-<tbody valign="top">
-
-<tr>
-<th width="20%">Name</th>
-<th width="17%">Reference name</th>
-<th width="63%">Usage</th>
-</tr>
-<tr>
-<td>**Consumes From-Produced For**<br/>(Dependency topology)<br/>  
-![Consumes From topology image](_img/link-work-items-support-traceability/affected-by-cmmi.png)
-![Produced For topology image](_img/link-work-items-support-traceability/affects-cmmi.png)  
-</td>
-<td><p>Microsoft.VSTS.Common.ProducedFor.Forward<br/>
-Microsoft.VSTS.Common.ConsumesFrom.Reverse</p>
-<p>Topology type: Dependency<br/>
-Link category: System-defined</p>
-</td>
-<td>
-<p>Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Azure Active Directory. Typically used to track change requests made to requirements.</p>
- </td>
-</tr>
-
-<tr>
-<td>**Remote Related**<br/>
-![Remote Related topology image](_img/link-work-items-support-traceability/related-network.png) 
-</td>
-<td><p>System.LinkTypes.RemoteRelated</p>
-<p>Topology type: Network<br/>
-Link category: System-defined</p>
-</td>
-
-<td>Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.   
-</td>
-</tr>
-
-
-</tbody>
-</table>
-
-
-::: moniker-end  
-
 <a id="hyperlink">  </a>
 ## Hyperlink type
 
@@ -277,6 +252,9 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 
 </tbody>
 </table>
+
+
+
 
 <a id="external-link-types">  </a>
 ## External link types
@@ -415,6 +393,163 @@ The following table describes the external link types you can choose when adding
 </tbody>
 </table>
 
+
+<a id="github-link-types">  </a>
+
+::: moniker range=">= azure-devops-2019"
+
+## GitHub link types
+
+GitHub link types are system-defined link types. They support linking work items to GitHub objects as shown in the following image.  
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![GitHub link types, conceptual image](_img/link-type-reference/linkscontrol-github-link-types.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![GitHub link types, conceptual image](_img/link-type-reference/linkscontrol-github-link-types-onprem.png) 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops"
+> [!IMPORTANT]  
+> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+> [!IMPORTANT]  
+> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md).
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+The following table describes the GitHub link types you can choose when adding a link type from a work item. 
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+<table width="100%"> 
+<tbody valign="top">
+<tr>
+<th width="25%">Link name</th>
+<th width="35%">Artifact type</th>
+<th width="40%">Usage</th>
+</tr>
+<tr>
+<td>GitHub Commit </td>
+<td>GitHub repository commit </td>
+<td>Used to link a work item to a GitHub commit.</td>
+</tr>
+
+<tr>
+<td>GitHub Issue</td>
+<td>GitHub repository issue</td>
+<td>Used to link a work item to a GitHub issue. </td>
+</tr>
+
+<tr>
+<td>GitHub Pull Request</td>
+<td>GitHub repository pull request</td>
+<td>Used to link a work item to a GitHub pull request. </td>
+</tr>
+
+</tbody>
+</table>
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+<table width="100%"> 
+<tbody valign="top">
+<tr>
+<th width="25%">Link name</th>
+<th width="35%">Artifact type</th>
+<th width="40%">Usage</th>
+</tr>
+<tr>
+<td>GitHub Commit </td>
+<td>GitHub repository commit </td>
+<td>Used to link a work item to a GitHub commit.</td>
+</tr>
+
+<tr>
+<td>GitHub Pull Request</td>
+<td>GitHub repository pull request</td>
+<td>Used to link a work item to a GitHub pull request. </td>
+</tr>
+
+</tbody>
+</table>
+
+::: moniker-end
+
+
+
+::: moniker range="azure-devops"   
+
+<a id= "remote-work-link-types" />
+## Remote work link types
+
+Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.  
+
+A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
+
+<table width="100%"> 
+<tbody valign="top">
+
+<tr>
+<th width="20%">Name</th>
+<th width="17%">Reference name</th>
+<th width="63%">Usage</th>
+</tr>
+<tr>
+<td>**Consumes From-Produced For**<br/>(Dependency topology)<br/>  
+![Consumes From topology image](_img/link-work-items-support-traceability/affected-by-cmmi.png)
+![Produced For topology image](_img/link-work-items-support-traceability/affects-cmmi.png)  
+</td>
+<td><p>Microsoft.VSTS.Common.ProducedFor.Forward<br/>
+Microsoft.VSTS.Common.ConsumesFrom.Reverse</p>
+<p>Topology type: Dependency<br/>
+Link category: System-defined</p>
+</td>
+<td>
+<p>Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Azure Active Directory. Typically used to track change requests made to requirements.</p>
+ </td>
+</tr>
+
+<tr>
+<td>**Remote Related**<br/>
+![Remote Related topology image](_img/link-work-items-support-traceability/related-network.png) 
+</td>
+<td><p>System.LinkTypes.RemoteRelated</p>
+<p>Topology type: Network<br/>
+Link category: System-defined</p>
+</td>
+
+<td>Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.   
+</td>
+</tr>
+
+
+</tbody>
+</table>
+
+
+::: moniker-end  
+
 ::: moniker range="<= azure-devops-2019" 
 ## Custom link types
 
@@ -426,6 +561,7 @@ You can create custom link types; export and import definitions of link types; a
 
 
 ## Related articles
+
 - [Link work items to track dependencies](link-work-items-support-traceability.md)    
 - [Add link to multiple work items](../backlogs/add-link.md)  
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
