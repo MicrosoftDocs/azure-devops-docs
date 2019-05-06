@@ -1,7 +1,7 @@
 ---
 title: Learn how to connect/integrate GitHub with Azure Boards
 titleSuffix: Azure Boards
-description: Manage code in GitHub and track issues and link to GitHub commits and pull requests in Azure Boards
+description: Manage code in GitHub and link to GitHub commits, pull requests, and issues in Azure Boards
 ms.custom: boards-get-started 
 ms.custom: seodec18
 ms.prod: devops
@@ -11,11 +11,12 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 03/05/2019
+monikerRange: '>= azure-devops-2019'
+ms.date: 05/06/2019
 ---
 
 
-# GitHub & Azure Boards 
+# Azure Boards & GitHub 
 
 [!INCLUDE [temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
 
@@ -23,7 +24,20 @@ Use this guide to connect Azure Boards with one or more GitHub repositories.
  
 [!INCLUDE[temp](../../_shared/version-selector-minimize.md)]
 
+
+::: moniker range="azure-devops"
+
+By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.  
+
+::: moniker-end
+
+
 
 [!INCLUDE[temp](../_shared/github-platform-support.md)]
 

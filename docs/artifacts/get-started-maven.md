@@ -19,9 +19,13 @@ monikerRange: '>= tfs-2018'
 
 ## Before you start
 
+::: moniker range="tfs-2018"
+
 This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
 
 > Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer (Maven is only available in 2018 or newer), if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+
+::: moniker-end
 
 ### Prerequisites
 

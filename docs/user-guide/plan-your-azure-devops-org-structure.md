@@ -41,14 +41,15 @@ You need to have at least one organization, which may represent your company, yo
 
 An organization in Azure DevOps is a mechanism for organizing and connecting groups of related projects. Examples are business divisions, regional divisions, or other enterprise structure. You can choose one organization for your entire company, or separate organizations for specific business units, or an organization just for you.
 
-Each organization gets its own free tier of services (up to five users for each service type) as follows. You can use all the services, or choose just what you need to complement your existing workflows.
+Each organization gets its own *free tier* of services (up to five users for each service type) as follows. You can use all the services, or choose just what you need to complement your existing workflows.
 
 * [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
 * [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
 * [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
 * [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
 * Load testing (20,000 VUMs per month)
-* Unlimited stakeholders
+* Unlimited Stakeholders
+[!INCLUDE [free-tier](../_shared/free-tier.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../test/_shared/loadtest-deprecated-include.md)]
 
