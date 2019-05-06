@@ -26,7 +26,7 @@ You can use Azure Functions to run small pieces of code in the cloud with the ov
 
 ## Get the code
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-java-function

@@ -9,8 +9,7 @@ ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.custom: seodec18
-ms.date: 03/27/2019
+ms.date: 5/5/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to automatically build and test .NET Core projects, and then deploy or publish to various targets.
+Use a pipeline to automatically build and test your .NET Core projects. After those steps are done, you can then deploy or publish your project.
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -30,22 +29,39 @@ This guidance explains how to automatically build and test .NET Core projects, a
 
 ::: moniker-end
 
-## Get started
-
-Follow these instructions to set up a pipeline for your .NET Core app.
+## Create your first pipeline
 
 ::: moniker range="azure-devops"
 
+> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+
+::: moniker-end
 
 ### Get the code
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
+::: moniker range="azure-devops"
 
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Import this repo into your Git repo in Azure DevOps Server 2019:
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+Import this repo into your Git repo in TFS:
+
+::: moniker-end
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
+
+::: moniker range="azure-devops"
 
 ### Sign in to Azure Pipelines
 
@@ -53,40 +69,46 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 [!INCLUDE [include](_shared/create-project.md)]
 
-### Create a pipeline
+::: moniker-end
+
+### Create the pipeline
+
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **ASP.NET Core**. Your new pipeline appears.
+> When the **Configure** tab appears, select **ASP.NET Core**.
 
-1. Take a look at the pipeline YAML file to see what it does.
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-1. After you've looked at what the pipeline does, select **Save and run** to see the pipeline in action.
+ > [!div class="mx-imgBorder"] 
+ > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
 
-1. Select **Save and run**, after which you're prompted for a commit message because Azure Pipelines adds the *azure-pipelines.yml* file to your repository. After editing the message, select **Save and run** again.
+1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
-> You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container-to-acr.yml) template.
+ If you want to watch your pipeline in action, select the build job.
 
-When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+ > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
 
-> [!TIP]
-> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+ You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+1. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. The code in the following repository is a simple ASP.NET Core MVC project. To get started, fork this repo to your GitHub account.
+1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **ASP.NET Core**. This template automatically adds the tasks you need to build the code in the sample repository.
 
-    ```
-    https://github.com/MicrosoftDocs/pipelines-dotnet-core
-    ```
+1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
-1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
+ You now have a working pipeline that's ready for you to customize!
 
-1. Save the pipeline and queue a build to see it in action.
+1. When you're ready to make changes to your pipeline, **Edit** it.
 
-Read through the rest of this topic to learn some of the common ways to customize your .NET Core pipeline.
+1. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
