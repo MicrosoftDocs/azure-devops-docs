@@ -2,10 +2,14 @@
   expanded: false
   href: index.md  
 - name: Reporting roadmap 
-  href: powerbi/reporting-roadmap.md  
+  href: powerbi/reporting-roadmap.md
+- name: Dashboards, Charts, Reports, & Widgets   
   href: dashboards/toc.yml  
+- name: Power BI Integration 
   href: powerbi/toc.yml  
+- name: Extend Analytics with OData (Preview)  
   href: extend-analytics/toc.yml  
+- name: SQL Server Reporting (Legacy)  
   href: sql-reports/toc.yml 
 - name: REST API Reference
   items:
