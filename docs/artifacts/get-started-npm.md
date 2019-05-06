@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2017'
 
 This quickstart guides you through using npm to store JavaScript packages in Azure DevOps Services or Team Foundation Server (TFS). It covers installation, license assigning, and setup.
 
-## Step 1: License the Azure Artifacts extension
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
-::: moniker range="< azure-devops-2019" 
+## License the Azure Artifacts extension
 
 ### Install Azure Artifacts in TFS
 
@@ -30,9 +30,9 @@ Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Art
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="azure-devops-2019" 
 
-### Assign Azure Artifacts in Azure DevOps Services
+## Assign Azure Artifacts in Azure DevOps Services
 
 Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
 
@@ -52,7 +52,7 @@ If you have a Visual Studio Enterprise license, you already have access to Packa
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019" 
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
 ### Assign licenses in TFS
 
@@ -74,7 +74,7 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 ::: moniker-end
 
-## Step 2: Create a feed
+## Create a feed
 
 On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Click the **+ New feed** button.
 
@@ -99,7 +99,7 @@ In the dialog box:
 
 You can change these settings later by [editing the feed](./feeds/edit-feed.md).
 
-## Step 3: Set up your .npmrc files
+## Set up your .npmrc files
 
 All Azure Artifacts feeds require authentication. You'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 

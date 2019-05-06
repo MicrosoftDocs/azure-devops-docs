@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]
 
-When you're viewing a public project, you're able to view work items defined for that project. If you're a contributor or stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
+When you're viewing a public project, you're able to view work items defined for that project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
 [!INCLUDE [temp](_shared/anon-user.md)]
 
