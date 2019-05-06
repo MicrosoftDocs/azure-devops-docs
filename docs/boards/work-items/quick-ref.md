@@ -77,7 +77,7 @@ Use this index to quickly access information on adding and updating work items&m
 <br/>
 <li>[Link to cross-organization work items](../backlogs/add-link.md)</li>
 <li>[Link to development objects](../backlogs/add-link.md)</li>
-<li>[Link to GitHub commits and pull requests ](../github/link-to-from-github.md)</li>
+<li>[Link to GitHub commits and pull requests](../github/link-to-from-github.md)</li>
 <li>[Link to work items from a wiki](../../project/wiki/wiki-markdown-guidance.md)</li>
 <li>[Link work items](../backlogs/add-link.md)</li>
 <li>[List work items](../queries/using-queries.md)</li>
