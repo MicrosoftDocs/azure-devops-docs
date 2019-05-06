@@ -30,7 +30,7 @@ Select the runtime you want to use.
 
 # [Tomcat](#tab/java-tomcat)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-petclinic/spring-framework-petclinic
@@ -38,7 +38,7 @@ https://github.com/spring-petclinic/spring-framework-petclinic
 
 # [Wildfly](#tab/java-wildfly)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-petclinic/spring-framework-petclinic
