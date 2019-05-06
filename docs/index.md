@@ -440,7 +440,7 @@ featureFlags:
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="/azure/devops/organizations/settings/index">Manage & Configure Resources</a></h3>
+                        <h3><a href="/azure/devops/organizations/index">Manage & Configure Resources</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/scale/index">Teams</a>
                         </p>
