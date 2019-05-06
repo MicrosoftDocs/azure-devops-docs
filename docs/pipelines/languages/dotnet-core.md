@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to automatically build and test .NET Core projects, and then deploy or publish to targets.
+This guidance explains how to automatically build and test .NET Core projects, and then deploy or publish to various targets.
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -30,29 +30,61 @@ This guidance explains how to automatically build and test .NET Core projects, a
 
 ::: moniker-end
 
-## Example
+## Get started
 
-The following code is a simple ASP.NET Core MVC project. To get started, fork this repo in GitHub, or import it into Azure Repos.
+Follow these instructions to set up a pipeline for your .NET Core app.
+
+::: moniker range="azure-devops"
+
+
+### Get the code
+
+If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
+
+However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-::: moniker range="azure-devops"
+### Sign in to Azure Pipelines
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a pipeline for the sample app.
-When you're done with that topic, you'll have a working YAML file (`azure-pipeines.yml`) in your repository that you can continue to modify by following the instructions in this topic. To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
+[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
 
-> [!Tip]
-> To make changes to the YAML file as described in this topic, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
+[!INCLUDE [include](_shared/create-project.md)]
+
+### Create a pipeline
+
+[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+
+When the **Configure** tab appears, select **ASP.NET Core**. Your new pipeline appears.
+
+1. Take a look at the pipeline YAML file to see what it does.
+
+1. After you've looked at what the pipeline does, select **Save and run** to see the pipeline in action.
+
+1. Select **Save and run**, after which you're prompted for a commit message because Azure Pipelines adds the *azure-pipelines.yml* file to your repository. After editing the message, select **Save and run** again.
+
+> You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container-to-acr.yml) template.
+
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+
+> [!TIP]
+> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
+1. The code in the following repository is a simple ASP.NET Core MVC project. To get started, fork this repo to your GitHub account.
 
-* Save the pipeline and queue a build to see it in action.
+    ```
+    https://github.com/MicrosoftDocs/pipelines-dotnet-core
+    ```
+
+1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
+
+1. Save the pipeline and queue a build to see it in action.
 
 Read through the rest of this topic to learn some of the common ways to customize your .NET Core pipeline.
 

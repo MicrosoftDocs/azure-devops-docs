@@ -18,8 +18,8 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 Use a variable group to store values that you want to control and make available across
-multiple pipelines. Variable groups are defined and managed in the **Library** tab of the
-**Pipelines** hub.
+multiple pipelines. Variable groups are defined and managed in the **Library** page under
+**Pipelines**.
 
 ::: moniker range="< tfs-2018"
 > [!NOTE]
@@ -99,7 +99,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 To use a variable group, open your pipeline, select the **Variables**
 tab, select **Variable groups**, and then choose **Link variable group**.
@@ -179,7 +179,7 @@ For more information about precedence of variables, see the topic on [variables]
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
 

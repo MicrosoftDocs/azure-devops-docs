@@ -58,7 +58,7 @@ trigger:
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Follow the steps below to create a CI trigger that will run a build for feature branches.
 
@@ -106,7 +106,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. Locate the build pipeline that services your master branch. Select **Edit**.
 1. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](../tasks/utility/publish-build-artifacts.md) task.
@@ -155,7 +155,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. Navigate to your project in Azure Pipelines or TFS. Select **Pipelines**, and then select **Builds**. Locate your build, and select **Edit**.
 1. Select **Triggers**. Enable the **Pull request validation** trigger. Ensure you include the **master branch** under **Branch filters**.

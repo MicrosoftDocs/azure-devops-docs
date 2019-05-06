@@ -59,7 +59,7 @@ For a list of other options, see the [npm task](../tasks/package/npm.md).
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 To publish an npm package to a Package Management feed, add the **npm** task. Then, configure these options:
 

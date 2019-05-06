@@ -26,31 +26,85 @@ monikerRange: '>= tfs-2017'
 
 This guidance explains how to automatically build Java projects. (If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).)
 
-## Example
+## Get started
 
-To get started using a sample Java project, fork this repository in GitHub, or import it into Azure Repos or TFS:
+Follow these instructions to set up a pipeline for a sample .NET Core app.
 
-```
-https://github.com/MicrosoftDocs/pipelines-java
-```
+::: moniker range="azure-devops"
 
-Follow instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample project.
+1. The code in the following repository is a simple Java app. To get started, fork this repo to your GitHub account.
 
-The rest of this topic describes ways to customize your Java build pipeline.
+    ```
+    https://github.com/MicrosoftDocs/pipelines-java
+    ```
 
-## Choose an agent
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-You can use Azure Pipelines to build your Java projects on [Microsoft-hosted agents](../agents/hosted.md) that include modern JDKs and other tools for Java. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools that you need.
+1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When the list of repositories appears, select your Java sample repository.
+
+1. Azure Pipelines will analyze the code in your repository and recommend `Maven` template for your pipeline. Select that template.
+
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+
+1. A new run is started. Wait for the run to finish.
+
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+
+> [!TIP]
+> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+1. The code in the following repository is a simple Java app. To get started, fork this repo to your GitHub account.
+
+    ```
+    https://github.com/MicrosoftDocs/pipelines-java
+    ```
+
+1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **Maven** template. This selection automatically adds the tasks required to build the code in the sample repository.
+
+1. Save the pipeline and queue a build to see it in action.
+
+Read through the rest of this topic to learn some of the common ways to customize your Java pipeline.
+
+::: moniker-end
+
+## Build environment
+
+::: moniker range="azure-devops"
+
+You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or MacOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
+
+Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
 pool:
-  vmImage: 'ubuntu-16.04' # Other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
-## Build your code with Maven
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
+
+As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Java installed on the agent.
+
+::: moniker-end
+
+## Build your code
+
+### Maven
 
 To build with Maven, add the following snippet to your `azure-pipelines.yml` file. Change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](../tasks/build/maven.md) task for more about these options.
 
@@ -68,8 +122,6 @@ steps:
     goals: 'package'
 ```
 
-### Customize Maven
-
 #### Customize the build path
 
 Adjust the `mavenPomFile` value if your `pom.xml` file isn't in the root of the repository. The file path value should be relative to the root of the repository, such as `IdentityService/pom.xml` or `$(system.defaultWorkingDirectory)/IdentityService/pom.xml`.
@@ -80,7 +132,7 @@ Set the **goals** value to a space-separated list of goals for Maven to execute,
 
 For details about common Java phases and goals, see [Apache's Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html).
 
-## Build your code with Gradle
+### Gradle
 
 To build with Gradle, add the following snippet to your `azure-pipelines.yml` file. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
@@ -99,8 +151,6 @@ steps:
     tasks: 'build'
 ```
 
-### Customize Gradle
-
 #### Choose the version of Gradle
 
 The version of Gradle installed on the agent machine will be used unless your repository's `gradle/wrapper/gradle-wrapper.properties` file has a `distributionUrl` property that specifies a different Gradle version to download and use during the build.
@@ -118,7 +168,7 @@ Adjust the **tasks** value for the tasks that Gradle should execute, such as `bu
 
 For details about common Java Plugin tasks for Gradle, see [Gradle's documentation](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java_tasks).
 
-## Build your code with Ant
+### Ant
 
 To build with Ant, add the following snippet to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file, to match your project configuration. See the [Ant](../tasks/build/ant.md) task for more about these options.
 
@@ -135,11 +185,11 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
 ```
 
-## Build your code using a command line or script
+### Script
 
 To build with a command line or script, add one of the following snippets to your `azure-pipelines.yml` file.
 
-### Inline script
+#### Inline script
 
 The `script:` step runs an inline script using Bash on Linux and macOS and Command Prompt on Windows. For details, see the [Bash](../tasks/utility/bash.md) or [Command line](../tasks/utility/powershell.md) task.
 
@@ -151,7 +201,7 @@ steps:
   displayName: 'Build with Maven'
 ```
 
-### Script file
+#### Script file
 
 This snippet runs a script file that is in your repository. For details, see the [Shell Script](../tasks/utility/shell-script.md), [Batch script](../tasks/utility/batch-script.md), or [PowerShell](../tasks/utility/powershell.md) task.
 
