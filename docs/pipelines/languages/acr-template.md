@@ -25,7 +25,7 @@ In this step-by-step guide you'll learn how to create a pipeline that continuous
 [!INCLUDE [include](../_shared/azure-prerequisites.md)]
 
 ## Get the code
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
