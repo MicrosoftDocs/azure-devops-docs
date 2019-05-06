@@ -80,6 +80,8 @@
       href: languages/acr-template.md
     - name: Azure Kubernetes Service
       href: languages/aks-template.md
+    - name: Azure Machine Learning
+      href: targets/azure-machine-learning.md
     - name: Java to web App
       href: languages/java-webapp.md
     - name: Java to Azure Function
