@@ -12,11 +12,11 @@ author: yukom
 
 #Application Insights - save search page, pause export and alerts on export fail - Mar 27
 
-We release updates to [Visual Studio Application Insights](http://azure.microsoft.com/documentation/articles/app-insights-get-started/) every week. You'll find these updates already in place today.
+We release updates to [Visual Studio Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-get-started/) every week. You'll find these updates already in place today.
 
 ##Save search pages
 
-After you've carefully configured a [Diagnostic Search](http://azure.microsoft.com/documentation/articles/app-insights-diagnostic-search/) page with some filters, a search string and time range, you don't want to have to go through all that every time you re-open the Search blade.
+After you've carefully configured a [Diagnostic Search](https://azure.microsoft.com/documentation/articles/app-insights-diagnostic-search/) page with some filters, a search string and time range, you don't want to have to go through all that every time you re-open the Search blade.
 
 Now you can save it as a named favorite and re-open it later. And if you like, you can share it with your team.
 To save the search page you made, click **Favorites** and give it a name:
@@ -41,7 +41,7 @@ When you enable it again, export starts from the next telemetry that arrives. Te
 
 ##Continuous Export: email notification when export fails
 
-If [Continuous Export](http://azure.microsoft.com/documentation/articles/app-insights-export-telemetry/) can’t send events to the chosen destination, Application Insights sends email notification to Subscription admins, with suggestions for fixing the problem.
+If [Continuous Export](https://azure.microsoft.com/documentation/articles/app-insights-export-telemetry/) can’t send events to the chosen destination, Application Insights sends email notification to Subscription admins, with suggestions for fixing the problem.
 
 ![Sample alert email](_img/3_27_05.png)
 

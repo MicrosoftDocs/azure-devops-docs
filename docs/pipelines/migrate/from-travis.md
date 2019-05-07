@@ -554,7 +554,7 @@ trigger:
 Travis supports caching dependencies and intermediate build output to improve
 build times.  Azure Pipelines does not support caching intermediate build
 output, but does offer integration with
-[Azure Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/)
+[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/)
 for dependency storage.
 
 ## Git submodules

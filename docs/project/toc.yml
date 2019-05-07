@@ -1,0 +1,38 @@
+- name: Azure DevOps Collaborate Documentation
+  href: index.md
+- name: Wikis
+  href: wiki/toc.yml
+- name: Public Projects
+  href: ../organizations/public/toc.yml 
+- name: Feedback
+  href: feedback/toc.yml 
+- name: REST API Reference
+  items:
+  - name: Projects
+    href: /rest/api/azure/devops/core/projects
+  - name: Wikis
+    href: /rest/api/vsts/wiki/wikis 
+  - name: Fetch Wiki Search Results
+    href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
+  - name: Get Project Metrics
+    href: /rest/api/azure/devops/build/metrics/get%20project%20metrics
+- name: Marketplace Resources
+  items:
+  - name: UserVoice Integration (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
+  - name: UserVoice UI (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui
+- name: Resources
+  items:
+  - name: Manage Projects
+    href: /azure/devops/organizations/projects/index
+  - name: Azure Repos
+    href: /azure/devops/repos/index
+  - name: Azure Boards
+    href: /azure/devops/boards/index
+  - name: Azure DevOps Reporting
+    href: /azure/devops/report/index
+  - name: Get Started
+    href: /azure/devops/get-started/index
+
+

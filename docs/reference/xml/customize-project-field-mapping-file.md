@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
 ms.author: kaelliauthor: KathrynEE
 ms.manager: jillfra
-ms.date: 09/08/2017
+monikerRange: '<= tfs-2018'
+ms.date: 05/06/2019
 ---
 
 
@@ -16,12 +17,15 @@ ms.date: 09/08/2017
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 You can customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project, and you can change how specific fields are published. Project includes predefined fields, such as Task Name, and custom fields. When you publish or refresh work item data in Project, the field map determines which fields in the work item database match the fields in Project.  
-  
- For information on using Project and TFS to track work, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
+
+[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+
+For information on using Project and TFS to track work, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
   
  To modify the field mappings for a project, you [export and then import the Microsoft Project Mapping File using the TFSFieldMapping command line tool](upload-or-download-the-microsoft-project-mapping-file.md).  
   
 <a name="FieldMappings"></a> 
+
 ## Mapping element  
  To specify a mapping between a work item field and a project column, you use the `Mapping` element.  
   
@@ -165,4 +169,3 @@ The following table indicates whether a work item that is not a summary or paren
   
 ## Related articles
 -  [LinkTypes](link-type-element-reference.md)   
--  [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)

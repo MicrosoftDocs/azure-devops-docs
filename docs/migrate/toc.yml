@@ -1,29 +1,18 @@
-- name: Migration & Import
-  href: index.md
-  items:
-  - name: Migrate data from TFS to Azure DevOps Services
-    href: migration-overview.md
-  - name: Migrate options
-    href: migrate-from-tfs.md
-  - name: Import
-    href: migration-import.md
-  - name: Process templates
-    href: migration-processtemplates.md
-  - name: Post-import
-    href: migration-post-import.md
-  - name: Troubleshooting
-    href: migration-troubleshooting.md
-- name: Azure DevOps Services status & security
-  items: 
-  - name: Service status  
-    href: ../user-guide/service-status-info.md
-  - name: Azure DevOps data protection
-    href: ../organizations/security/data-protection.md
-  - name: Azure DevOps data location
-    href: ../organizations/security/data-location.md
-  - name: Azure DevOps credential storage
-    href: ../organizations/security/credential-storage.md
-- name: DevOps articles
+- name: Migrate & Import
+  href: index.md?toc=/azure/devops/migrate/toc.json&bc=/azure/devops/migrate/breadcrumb/toc.json
+- name: Migrate data from TFS to Azure DevOps Services
+  href: migration-overview.md
+- name: Migrate options
+  href: migrate-from-tfs.md
+- name: Import
+  href: migration-import.md
+- name: Process templates
+  href: migration-processtemplates.md
+- name: Post-import
+  href: migration-post-import.md
+- name: Troubleshooting
+  href: migration-troubleshooting.md
+- name: Azure DevOps articles
   items:
     - name: Add Continuous Security Validation to your CICD Pipeline 
       href: security-validation-cicd-pipeline.md  
@@ -33,17 +22,3 @@
       href: phase-features-with-feature-flags.md
     - name: Progressively expose your releases using deployment rings
       href: phase-rollout-with-rings.md
-- name: Journey articles
-  items:
-    - name: Agile
-      href: /azure/devops/learn/agile/what-is-agile
-    - name: DevOps
-      href: /azure/devops/learn/what-is-devops
-    - name: Git at Scale
-      href: /azure/devops/learn/git/git-at-scale
-- name: Version control 
-  items:
-  - name: Git repos
-    href: /azure/devops/repos/git/index
-  - name: TFVC repos
-    href: /azure/devops/repos/tfvc/index

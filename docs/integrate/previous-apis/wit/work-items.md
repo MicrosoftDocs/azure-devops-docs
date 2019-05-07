@@ -99,7 +99,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={versio
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | ids				| string                                                            |         | A comma-separated list of up to 200 IDs of the work items to get.
 | fields	    	| string                                                            |         | A comma-separated list of up to 100 fields to get with each work item.<br/>If not specified, all fields with values are returned. Calculated fields such as Attached File Count must be specifically queried for using this parameter.
-| asOf				| [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) |         | Gets the work items as they existed at this time.
+| asOf				| [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Gets the work items as they existed at this time.
 | $expand			| enum { all, relations, none }										| none    | Gets work item relationships (work item links, hyperlinks, file attachments, etc.).
 | ErrorPolicy		| string { throw, omit }                                            | throw   | Determines if the call will throw an error when encountering a work item (default behavior) that doesn't exist or simply omit it.
 
@@ -135,7 +135,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&ap
         "System.Title": "Customer can sign in using their Microsoft Account",
         "Microsoft.VSTS.Scheduling.Effort": 8,
         "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-        "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+        "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297"
     },
@@ -350,7 +350,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&$e
         "Microsoft.VSTS.Scheduling.Effort": 8,
         "WEF_6CB513B6E70E43499D9FC94E5BBFB784_System.ExtensionMarker": true,
         "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-        "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+        "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
       },
       "relations": [
         {
@@ -618,7 +618,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?api-version=1.
     "System.Title": "Customer can sign in using their Microsoft Account",
     "Microsoft.VSTS.Scheduling.Effort": 8,
     "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
   },
   "_links": {
     "self": {
@@ -681,7 +681,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?$expand=relati
     "System.Title": "Customer can sign in using their Microsoft Account",
     "Microsoft.VSTS.Scheduling.Effort": 8,
     "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
   },
   "relations": [
     {
@@ -770,7 +770,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?$expand=all&ap
     "Microsoft.VSTS.Scheduling.Effort": 8,
     "WEF_6CB513B6E70E43499D9FC94E5BBFB784_System.ExtensionMarker": true,
     "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+    "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
   },
   "relations": [
     {

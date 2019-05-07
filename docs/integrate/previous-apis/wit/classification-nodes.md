@@ -19,7 +19,7 @@ ms.date: 08/04/2016
 [!INCLUDE [API_version](../_data/version.md)]
 
 All work items have an area and an iteration field. 
-The values that these fields can have are defined in the [classification hierarchies](http://msdn.microsoft.com/library/ms181692.aspx). 
+The values that these fields can have are defined in the [classification hierarchies](https://msdn.microsoft.com/library/ms181692.aspx). 
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
