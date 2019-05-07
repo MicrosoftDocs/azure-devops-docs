@@ -37,8 +37,8 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | repository | string   |         | ID or name of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| fromDate   | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) |         | Start date to search from.
-| toDate     | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) |         | End date to search to.
+| fromDate   | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Start date to search from.
+| toDate     | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | End date to search to.
 | pusherId   | guid     |         | Identity of the person who submitted the push.
 | refName    | string   |         | Branch name to consider.
 | includeRefUpdates| bool	| false		| If `true`, include the list of refs that were updated by the push.

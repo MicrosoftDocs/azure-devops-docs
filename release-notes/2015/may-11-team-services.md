@@ -12,13 +12,13 @@ author: yukom
 
 #Application Insights: Public Preview; iOS and Android; performance counters and unhandled exceptions for Java apps; and time range selection
 
-Application Insights is now in Public Preview, and what a journey it has been getting here. [Public Preview was announced](http://azure.microsoft.com/blog/2015/04/29/announcing-application-insights-public-preview-2/) at //Build/, along with our [Pricing Plans](http://azure.microsoft.com/pricing/details/application-insights/).
+Application Insights is now in Public Preview, and what a journey it has been getting here. [Public Preview was announced](https://azure.microsoft.com/blog/2015/04/29/announcing-application-insights-public-preview-2/) at //Build/, along with our [Pricing Plans](https://azure.microsoft.com/pricing/details/application-insights/).
 
 During the last sprint we wrapped up some features, while preparing for conference season and the announcement of Public Preview. The new release of Visual Studio 2015 RC has some improvements in how we integrate with the NuGet package manager. It supports additional project types, including Windows 10.
 
 ##iOS and Android support
 
-Our [iOS](http://azure.microsoft.com/documentation/articles/app-insights-ios/) and [Android](http://azure.microsoft.com/documentation/articles/app-insights-android/) SDKs are now released, together with supporting overview pages in the portal. They provide usage insights and crash diagnostics, thanks to the powerful capabilities we are integrating from [HockeyApp](http://blogs.msdn.com/b/somasegar/archive/2014/12/11/microsoft-acquires-hockeyapp-leading-mobile-crash-analytics-and-beta-distribution-service-for-ios-android-and-windows-phone.aspx).
+Our [iOS](https://azure.microsoft.com/documentation/articles/app-insights-ios/) and [Android](https://azure.microsoft.com/documentation/articles/app-insights-android/) SDKs are now released, together with supporting overview pages in the portal. They provide usage insights and crash diagnostics, thanks to the powerful capabilities we are integrating from [HockeyApp](http://blogs.msdn.com/b/somasegar/archive/2014/12/11/microsoft-acquires-hockeyapp-leading-mobile-crash-analytics-and-beta-distribution-service-for-ios-android-and-windows-phone.aspx).
 
 ##Performance counters for Java applications
 

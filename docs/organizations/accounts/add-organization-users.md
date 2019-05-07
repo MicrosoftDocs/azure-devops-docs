@@ -21,9 +21,9 @@ monikerRange: 'azure-devops'
 Learn how to add users to your organization, and specify the level of features they can use, such as Basic or Stakeholder.
 The following types of users can join your organization for free:
 
-* Five users who get [Basic features](https://azure.microsoft.com/en-us/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
-* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/en-us/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/en-us/services/devops/compare-features/) who also get Basic features, and in some cases, additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+* Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
+* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features, and in some cases, additional features with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 

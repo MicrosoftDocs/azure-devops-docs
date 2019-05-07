@@ -73,7 +73,7 @@ Once you type a "/", you'll see the expanded search box:
 
 ### Azure Policy compliance and security validations in Pipelines
 
-We want ensure stability and security of software early in the development process while bringing development, security, and operations together. ​​ To do so, we have added support for [Azure Policy](https://azure.microsoft.com/en-in/services/azure-policy/). 
+We want ensure stability and security of software early in the development process while bringing development, security, and operations together. ​​ To do so, we have added support for [Azure Policy](https://azure.microsoft.com/services/azure-policy/). 
 ​
 Azure Policy helps you manage and prevent IT issues with policy definitions that enforce rules and effects for your resources. When you use Azure Policy, resources stay compliant with your corporate standards and service level agreements.​
 ​

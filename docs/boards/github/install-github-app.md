@@ -37,7 +37,7 @@ This article walks you through the following 5 minute installation and configure
 	- In Azure Boards, add links to the GitHub commit and pull request to the work item; choose the GitHub pull request link to open the pull request in GitHub.com
 	- In GitHub.com, complete the pull request and view the badge added to your GitHub repo  
 
-You can learn more about the Azure Boards app from the [GitHub Marketplace](https://github.com/marketplace/azure-boards), and Azure Boards from [Azure DevOps Services>Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/).
+You can learn more about the Azure Boards app from the [GitHub Marketplace](https://github.com/marketplace/azure-boards), and Azure Boards from [Azure DevOps Services>Azure Boards](https://azure.microsoft.com/services/devops/boards/).
 
 ## Prerequisites 
 

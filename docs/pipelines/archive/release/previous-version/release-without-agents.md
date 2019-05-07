@@ -103,7 +103,7 @@ for any computer you plan on using in your environment.
 
 Microsoft Azure makes it easy to set up VMs to use as servers 
 in your environment. Azure adds your VMs to
-**[cloud services](http://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**.
+**[cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**.
 You'll need a Microsoft Azure account to create your VMs.
 If you don't have one yet, sign up for free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
