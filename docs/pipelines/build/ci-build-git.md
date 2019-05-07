@@ -45,12 +45,12 @@ A common workflow with Git is to create temporary branches from your master bran
 
 ::: moniker range="azure-devops"
 
-Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `features/*` branches to be automatically built.
+Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `feature/*` branches to be automatically built.
 
 ```yaml
 trigger:
 - master
-- features/*
+- feature/*
 ```
 ::: moniker-end
 
@@ -66,7 +66,7 @@ Follow the steps below to create a CI trigger that will run a build for feature 
 2. Locate the build pipeline that services your master branch. Select **Edit**.
 3. Select the **Triggers** menu for your build.  Ensure you have **Continuous integration** enabled.
 4. Select the **+ Add** icon under **Branch filters**.
-5. Under the **Branch specification** dropdown, type `features/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch. Note that the filtered list of branches may not populate as you type `*`. You can still press **Enter** and save the branch filter.
+5. Under the **Branch specification** dropdown, type `feature/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch. Note that the filtered list of branches may not populate as you type `*`. You can still press **Enter** and save the branch filter.
 6. Select the **Save & queue** menu and then Select **Save**.
 
 ---
@@ -78,7 +78,7 @@ Your are now ready for CI for both the master branch and future feature branches
 Follow the steps below to edit a file and create a new topic branch.
 
 1. Navigate to your code in Azure Repos, TFS, or GitHub.
-1. Create a new branch for your code that starts with `features/`, e.g., `features/feature-123`.
+1. Create a new branch for your code that starts with `feature/`, e.g., `feature/feature-123`.
 1. Make a change to your code in the feature branch and commit the change.
 1. Navigate to the **Pipelines** menu in Azure Pipelines or TFS and select **Builds**.
 1. Select the build pipeline for this repo. You should now see a new build executing for the topic branch. This build was initiated by the trigger you created earlier. Wait for the build to finish.
@@ -138,12 +138,12 @@ Use policies to protect your branches by requiring successful builds before merg
 
 Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds. 
-For example, to run the build only for pull requests that target: `master` and `features/*`:
+For example, to run the build only for pull requests that target: `master` and `feature/*`:
 
 ```yaml
 pr:
 - master
-- features/*
+- feature/*
 ```
 
 For more details, see [Triggers](../build/triggers.md).
@@ -197,7 +197,7 @@ Retention policies allow you to control and automate the cleanup of your various
 
     ![Retention menu](_img/ci-build-git/retentionpolicy.png)
 
-5.  Type **features/*** in the **Branch specification** dropdown.  This ensures any feature branches matching the wildcard will use the policy.
+5.  Type **feature/*** in the **Branch specification** dropdown.  This ensures any feature branches matching the wildcard will use the policy.
 6.  Set **Days to keep** to 1 and **Minimum to keep** to 1.
 7.  Select the **Save & queue** menu and then Select **Save**.  
 
