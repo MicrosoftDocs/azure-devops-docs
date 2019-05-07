@@ -1,7 +1,7 @@
 - name: Dashboards, Charts, Reports, & Widgets
   href: index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
 - name: Overview
-  expanded: true
+
   items:
   - name: About dashboards and reports
     href: overview.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
@@ -13,7 +13,7 @@
   - name: Analytics-based widgets
     href: analytics-widgets.md
 - name: Quickstarts
-  expanded: true
+
   items:
   - name: "Add, rename, & delete dashboards"
     href: dashboards.md

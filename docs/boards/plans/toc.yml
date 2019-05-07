@@ -2,7 +2,7 @@
   href: index.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json
   items:
 - name: Tutorials
-  expanded: true
+
   items:
   - name: Portfolio management
     href: portfolio-management.md

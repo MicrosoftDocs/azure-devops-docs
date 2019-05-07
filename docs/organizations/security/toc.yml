@@ -3,7 +3,7 @@
 - name: About security and identity  
   href: about-security-identity.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
 - name: Quickstart
-  expanded: true
+
   items:
   - name: View permissions 
     href: view-permissions.md

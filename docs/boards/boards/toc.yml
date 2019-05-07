@@ -1,7 +1,7 @@
 - name: Boards (Kanban) 
   href: index.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json
 - name: Overview
-  expanded: true
+
   items:
   - name: About boards & Kanban
     href: kanban-overview.md
