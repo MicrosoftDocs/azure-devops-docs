@@ -9,7 +9,7 @@
 - name: Create a Power BI report
   href: create-quick-report.md
 - name: Tutorials
-  expanded: true
+
   items:
   - name: Create an Analytics view
     href: analytics-views-create.md?

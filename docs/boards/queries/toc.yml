@@ -1,7 +1,7 @@
 - name: Queries
   href: index.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json
 - name: Overview
-  expanded: true
+
   items:
   - name: About managed queries
     href: example-queries.md
@@ -22,7 +22,7 @@
   - name: Triage work items  
     href: triage-work-items.md
 - name: Samples
-  expanded: true
+
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 
