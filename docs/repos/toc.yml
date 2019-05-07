@@ -45,15 +45,15 @@
 - name: Resources
   items:
   - name: GitHub & Azure Boards 
-    href: ../boards/github/index.md
+    href: /azure/devops/boards/github/index
   - name: Manage projects
-    href: ../organizations/projects/index.md
+    href: /azure/devops/organizations/projects/index
   - name: "Default Git permissions (Security)"
-    href: ../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/get-started/toc.json&bc=/azure/devops/repos/get-started/breadcrumb/toc.json
+    href: /azure/devops/organizations/security/default-git-permissions
   - name: "Default TFVC permissions (Security)"
-    href: ../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
+    href: /azure/devops/organizations/security/default-tfvc-permissions
   - name: "Set permissions (Security)"
-    href: ../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
+    href: /azure/devops/organizations/security/set-git-tfvc-repository-permissions
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
 

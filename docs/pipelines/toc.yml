@@ -637,7 +637,7 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
-- name: Resources
+- name: Developer Resources
   items:
   - name: REST API reference
     href: /rest/api/vsts/

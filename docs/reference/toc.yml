@@ -47,17 +47,17 @@
     href: api-ref/partialopen.md
 - name: Resources
   items:
-  - name: "Workflow states & categories"
-    href: ../boards/work-items/workflow-and-state-categories.md
-  - name: Add a custom control to a form
-    href: ../extend/develop/custom-control.md
-  - name: "Manage permissions (Security)"
-    href: ../organizations/security/set-permissions-access-work-tracking.md 
-  - name: Naming restrictions
-    href: ../organizations/settings/naming-restrictions.md 
-  - name: Deprecation of WIT & Test Client OM
-    href: ../integrate/concepts/wit-client-om-deprecation.md
   - name: Azure Boards
     href: /azure/devops/boards/index
+  - name: "Workflow states & categories"
+    href: /azure/devops/boards/work-items/workflow-and-state-categories
+  - name: Add a custom control to a form
+    href: /azure/devops/extend/develop/custom-control
+  - name: Permissions, Security, & Identity
+    href: /azure/devops/organizations/security/index
+  - name: Naming restrictions
+    href: /azure/devops/organizations/settings/naming-restrictions 
+  - name: Deprecation of WIT & Test Client OM
+    href: /azure/devops/integrate/concepts/wit-client-om-deprecation
   - name: Changes made to process templates
-    href: ../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
