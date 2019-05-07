@@ -1,0 +1,11 @@
+- name: Azure DevOps
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
+  items: 
+  - name: Process Customization
+    tocHref: /azure/devops/reference/
+    topicHref: /azure/devops/reference/index
+    items:
+    - name: Process Templates
+      tocHref: /azure/devops/reference/process-templates/
+      topicHref: /azure/devops/reference/process-templates/index

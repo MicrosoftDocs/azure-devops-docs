@@ -1,11 +1,9 @@
-- name: Azure Test Plans
+- name: Exploratory & Manual Testing 
   href: index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-- name: Overview
-  items:
-  - name: About exploratory and manual testing
-    href: overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-  - name: About load testing
-    href: load-test/overview.md
+- name: About exploratory and manual testing
+  href: overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+- name: About load testing
+  href: load-test/overview.md
 - name: Quickstarts
   items:
   - name: Manual testing
@@ -14,9 +12,9 @@
       href: create-a-test-plan.md
     - name: Create test cases
       href: create-test-cases.md
-    - name: Execute manual tests
+    - name: Run manual tests
       href: run-manual-tests.md
-  - name: Exploratory testing (Test & Feedback extension)
+  - name: "Test & Feedback extension"
     items:
     - name: Install the extension
       href: perform-exploratory-tests.md
@@ -64,7 +62,7 @@
       href: associate-automated-test-with-test-case.md
     - name: Run tests from test plans
       href: run-automated-tests-from-test-hub.md
-  - name: Exploratory testing (Test & Feedback extension)
+  - name: "Test & Feedback extension"
     items:
     - name: Explore work items
       href: explore-workitems-exploratory-testing.md
@@ -94,53 +92,17 @@
       href: load-test/clt-with-private-machines.md
     - name: Install certificates and software
       href: load-test/install-certs-and-software.md
-    - name: Create custom code & plug-ins
-      href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
-  - name: Microsoft Test Manager
-    items:
-    - name: Guidance for MTM usage
-      href: mtm/guidance-mtm-usage.md
-    - name: Connect to a team project
-      href: mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md
-    - name: Plan tests with MTM
-      href: mtm/plan-manual-tests-with-microsoft-test-manager.md
-    - name: Run manual tests with MTM
-      href: mtm/run-manual-tests-with-microsoft-test-manager.md
-    - name: Run automated tests with MTM
-      href: mtm/run-automated-tests-with-microsoft-test-manager.md
-    - name: Record and play back tests
-      href: mtm/record-play-back-manual-tests.md
-    - name: Explore your app
-      href: mtm/exploratory-testing-using-microsoft-test-manager.md
-    - name: Share steps between test cases
-      href: mtm/share-steps-between-test-cases.md
-    - name: Copy test suites and cases
-      href: mtm/copying-and-cloning-test-suites-and-test-cases.md
-    - name: Test different configurations
-      href: mtm/test-configurations-specifying-test-platforms.md
-    - name: Collect more diagnostic data
-      href: mtm/collect-more-diagnostic-data-in-manual-tests.md
-    - name: Test Microsoft Store apps
-      href: mtm/testing-microsoft-store-apps.md
-    - name: Using Microsoft Test Manager
-      href: https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx
 - name: Reference
   items:
   - name: Manual testing FAQs
     href: reference-qa.md
-  - name: Test Management Reporting FAQs
-    href: reference-tcm.md
   - name: Load testing FAQs
-    href: load-test/reference-qa.md  
+    href: load-test/reference-qa.md
+  - name: TCM Reporting FAQs
+    href: reference-tcm.md
+  - name: Unable to connect
+    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json
   - name: Default permissions (Security)
     href: manual-test-permissions.md
-  - name: Unable to connect
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json  
-- name: Resources
-  items:
-  - name: Get Stakeholder feedback
-    href: ../project/feedback/index.md   
-  - name: REST APIs for test management
-    href: ../integrate/index.md
-  - name: Continuous testing
-    href: ../pipelines/index.md
+
+

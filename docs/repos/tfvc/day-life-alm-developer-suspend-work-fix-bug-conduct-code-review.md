@@ -130,7 +130,7 @@ The test now passes:
 
 ## Request a code review
 
-Peter is satisfied with his fix for the bug, but he does not check in his work yet. His team uses code reviews to increase overall code quality and reduce the risk of creating more bugs, so Peter uses Team Explorer to request a code review from his team mates Julia and Adam.
+Peter is satisfied with his fix for the bug, but he does not check in his work yet. His team uses code reviews to increase overall code quality and reduce the risk of creating more bugs, so Peter uses Team Explorer to request a code review from his teammates Julia and Adam.
 
 ### To request a code review
 

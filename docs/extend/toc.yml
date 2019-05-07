@@ -1,29 +1,27 @@
-- name: "Develop Extensions"
+- name: Develop Extensions
   href: index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
-- name: Overview
-  items:
-    - name: What are extensions?
-      href: ./overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+- name: What are extensions?
+  href: ./overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Develop a web extension
-    href: get-started/node.md
+    href: get-started/node.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Create a custom pipelines task
-    href: develop/add-build-task.md
+    href: develop/add-build-task.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
   - name: Use a pipeline decorator
-    href: develop/add-pipeline-decorator.md
+    href: develop/add-pipeline-decorator.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Samples
   items:
-  - name: Sample extensions
-    href: develop/samples-overview.md
+  - name: C# client library extension samples
+    href: develop/samples-overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Extensibility points
-    href: reference/targets/overview.md
+    href: reference/targets/overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
   - name: Contribution model
-    href: develop/contributions-overview.md
+    href: develop/contributions-overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Develop
@@ -187,13 +185,6 @@
       href: reference/client/controls/waitcontrol.md
     - name: How to get help
       href: support/help.md
-- name: Resources
-  items:
-  - name: Visual Studio Marketplace
-    href: https://marketplace.visualstudio.com/
-  - name: Manage Extensions
-    href: ../marketplace/index.md
-  - name: Build Visual Studio extensions
-    href: /azure/devops/integrate/ide/extensions/overview
+
 
 

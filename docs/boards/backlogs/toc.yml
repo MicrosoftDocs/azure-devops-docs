@@ -1,70 +1,36 @@
 - name: Backlogs
   href: index.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Overview
-  expanded: true
+
   items:
   - name: About backlogs 
     href: backlogs-overview.md
-  - name: "Backlogs, boards, & plans"
-    href: backlogs-boards-plans.md
-  - name: Best tool for the job
-    href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Start using Azure Boards
-    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: Create your backlog
     href: create-your-backlog.md
   - name: Drive Git development
     href: connect-work-items-to-git-dev-ops.md
-  - name: Define area paths
-    href: ../../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Define iteration paths
-    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: "Define features & epics"
     href: define-features-epics.md
   - name: Organize your backlog (map or reparent)
     href: organize-backlog.md
-  - name: Bulk modify (web)
-    href: bulk-modify-work-items.md 
-  - name: Link work items
-    href: add-link.md
-  - name: "Move, change, or delete"
-    href: remove-delete-work-items.md
-  - name: Forecast work
-    href: ../sprints/forecast.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: About teams and Agile tools
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Refine your backlog
     href: best-practices-product-backlog.md
-  - name: Linking & traceability
-    href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: "Workflow states & state categories"
-    href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Work in Excel or Project
     href: office/track-work.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Schedule projects using Project
     href: office/schedule-projects-using-microsoft-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Agile glossary
-    href: ../work-items/agile-glossary.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
 - name: How-to Guides
   items:
-  - name: Add tags to work items
-    href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: "Filter backlogs & queries"
     href: filter-backlogs.md
   - name: Copy list
     href: copy-list.md 
-  - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: Share information in work items
-    href: ../queries/share-plans.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
-  - name: Use work item templates
-    href: work-item-template.md
   - name: Excel, Project, PowerPoint
     items:
     - name: Bulk add or modify (Excel)
@@ -75,14 +41,8 @@
       href: office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
     - name: Add and share storyboard shapes
       href: office/add-share-storyboard-shapes.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
-  - name: Switch project or team focus
-    href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
-  - name: "Manage permissions & access (Security)"
-    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: Set up your backlogs and boards
-    href: set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: resolve-backlog-reorder-issues.md
   - name: TFS-Office integration issues
@@ -97,35 +57,10 @@
     href: office/resolve-excel-invalid-links-tree-list.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
 - name: Reference
   items:
-  - name: Work item field index
-    href: ../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
   - name: Product backlog controls
     href: product-backlog-controls.md 
   - name: Backlog keyboard shortcuts
     href: backlogs-keyboard-shortcuts.md
-  - name: Link types 
-    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-  - name: "Permissions & access (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json 
-- name: Resources
-  items:
-  - name: Work Items
-    href: ../work-items/index.md
-  - name: Boards (Kanban)
-    href: ../boards/index.md
-  - name: Sprints (Scrum)
-    href: ../sprints/index.md
-  - name: Queries
-    href: ../queries/index.md
-  - name: Customization
-    href: ../../reference/index.md
-  - name: What is Agile?
-    href: /azure/devops/agile/what-is-agile
-  - name: What is Agile development?
-    href: /azure/devops/agile/what-is-agile-development
-  - name: Agile culture
-    href: /azure/devops/agile/agile-culture
-  - name: Creating productive teams
-    href: /azure/devops/agile/productive-teams
+
 
 

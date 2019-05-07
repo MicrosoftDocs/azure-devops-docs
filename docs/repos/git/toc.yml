@@ -10,8 +10,6 @@
     href: branch-policies-overview.md
   - name: Learn about forks
     href: forks-overview.md 
-  - name: Start using Azure Repos
-    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: Create repo - Web
@@ -61,8 +59,8 @@
     href: review-history.md
 - name: Samples
   items:
-  - name: VSTS Samples for .NET
-    href: https://github.com/Microsoft/vsts-dotnet-samples
+  - name: Azure DevOps Samples for .NET
+    href: https://github.com/Microsoft/azure-devops-dotnet-samples
 - name: Concepts
   items:
   - name: History in Git
@@ -131,8 +129,6 @@
       href: create-a-readme.md
     - name: Git and TFVC repos
       href: team-projects.md
-    - name: "Set Git permissions (Security)"
-      href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
     - name: Move Git repositories between Team Projects
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
@@ -183,37 +179,5 @@
     href: limits.md
 - name: Resources
   items:
-  - name: What is Git?
-    href: /azure/devops/learn/git/what-is-git
-  - name: What is version control?
-    href: /azure/devops/learn/git/what-is-version-control
-  - name: GitHub & Azure Boards 
-    href: ../../boards/github/index.md
-  - name: Plan your migration to Git
-    href: /azure/devops/learn/git/centralized-to-git
-  - name: Migrate from TFVC to Git
-    href: /azure/devops/learn/git/migrate-from-tfvc-to-git
-  - name: Migrate from Subversion (SVN) to Git
-    href: perform-migration-from-svn-to-git.md
-  - name: Git REST APIs
-    href: https://visualstudio.com/docs/integrate/api/repos/git/overview
   - name: Pro Git
     href: https://www.git-scm.com/book/en/v2
-    name: Learn Git
-    href: /azure/devops/learn/git/learn-git-with-team-services/
-  - name: Git at Scale
-    href: /azure/devops/learn/git/git-at-scale
-  - name: How we use Git at Microsoft
-    href: /azure/devops/learn/devops-at-microsoft/use-git-microsoft
-  - name: Marketplace extensions
-    href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
-  - name: IDE integration and extension
-    items:
-    - name: Visual Studio
-      href: ../../organizations/accounts/set-up-vs.md
-    - name: Visual Studio Code
-      href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
-    - name: Eclipse
-      href: /azure/devops/java/download-eclipse-plug-in
-    - name: IntelliJ IDEA
-      href: /azure/devops/java/download-intellij-plug-in

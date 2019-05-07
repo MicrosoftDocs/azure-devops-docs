@@ -1,0 +1,34 @@
+- name: Azure DevOps Marketplace & Extensibility Documentation
+  href: index.md
+- name: Discover & Manage Extensions
+  href: ../marketplace/toc.yml
+- name: Develop extensions
+  href: ../extend/toc.yml 
+- name: Integrate Applications
+  href: ../integrate/toc.yml 
+- name: Service Hooks
+  href: ../service-hooks/toc.yml
+- name: REST API and Client Reference
+  items:
+  - name: REST APIs
+    href: /rest/api/azure/devops/
+  - name: .NET client libraries reference
+    href: /dotnet/api/index?view=azure-devops-dotnet
+- name: Marketplace Extensions
+  items:
+  - name: Visual Studio Marketplace
+    href: https://marketplace.visualstudio.com/
+  - name: Find and use Visual Studio extensions
+    href: /visualstudio/ide/finding-and-using-visual-studio-extensions
+  - name: Install Visual Studio Code extensions
+    href: https://code.visualstudio.com/docs/editor/extension-gallery
+- name: Resources
+  items:
+  - name: How to buy TFS CALs
+    href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
+  - name: Billing 
+    href: /azure/devops/organizations/billing/index
+  - name: Manage & Configure Resources
+    href: /azure/devops/organizations/index
+  - name: Build Visual Studio extensions
+    href: /visualstudio/extensibility/shipping-visual-studio-extensions

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Azure Artifacts in Azure DevOps Services and Azure DevOps Server
 
-**Azure DevOps Services** | **Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
+[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
 
 Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server. It comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019, and Team Foundation Server (TFS) 2017 and 2018.
 
