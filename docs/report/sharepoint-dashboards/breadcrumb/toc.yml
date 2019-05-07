@@ -3,7 +3,7 @@
   topicHref: /azure/devops/index
   items:
   - name: Azure DevOps Server Administration
-    tocHref: /azure/devops/server/
+    tocHref: /azure/devops/report/sharepoint-dashboards/
     topicHref: /azure/devops/server/admin/admin-quick-ref
     items:
     - name: SharePoint Integration

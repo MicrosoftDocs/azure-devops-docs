@@ -1,5 +1,3 @@
-- name: Azure Boards Documentation
-  href: ../index.md
 - name: Start using Azure Boards (Basic process) 
   href: index.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json
 - name: "What is Azure Boards?"
