@@ -14,9 +14,9 @@
       href: create-a-test-plan.md
     - name: Create test cases
       href: create-test-cases.md
-    - name: Run manual tests
+    - name: Execute manual tests
       href: run-manual-tests.md
-  - name: "Test & Feedback extension"
+  - name: Exploratory testing (Test & Feedback extension)
     items:
     - name: Install the extension
       href: perform-exploratory-tests.md
@@ -64,7 +64,7 @@
       href: associate-automated-test-with-test-case.md
     - name: Run tests from test plans
       href: run-automated-tests-from-test-hub.md
-  - name: "Test & Feedback extension"
+  - name: Exploratory testing (Test & Feedback extension)
     items:
     - name: Explore work items
       href: explore-workitems-exploratory-testing.md
@@ -94,6 +94,8 @@
       href: load-test/clt-with-private-machines.md
     - name: Install certificates and software
       href: load-test/install-certs-and-software.md
+    - name: Create custom code & plug-ins
+      href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
   - name: Microsoft Test Manager
     items:
     - name: Guidance for MTM usage
@@ -120,41 +122,25 @@
       href: mtm/collect-more-diagnostic-data-in-manual-tests.md
     - name: Test Microsoft Store apps
       href: mtm/testing-microsoft-store-apps.md
+    - name: Using Microsoft Test Manager
+      href: https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx
 - name: Reference
   items:
   - name: Manual testing FAQs
     href: reference-qa.md
-  - name: Load testing FAQs
-    href: load-test/reference-qa.md
-  - name: TCM Reporting FAQs
+  - name: Test Management Reporting FAQs
     href: reference-tcm.md
-  - name: Unable to connect
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json
+  - name: Load testing FAQs
+    href: load-test/reference-qa.md  
   - name: Default permissions (Security)
     href: manual-test-permissions.md
+  - name: Unable to connect
+    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json  
 - name: Resources
   items:
   - name: Get Stakeholder feedback
-    href: ../project/feedback/index.md 
-  - name: Using Microsoft Test Manager
-    href: https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx
-  - name: Create custom code & plug-ins
-    href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
-  - name: REST API for test management
+    href: ../project/feedback/index.md   
+  - name: REST APIs for test management
     href: ../integrate/index.md
-  - name: ALM Blog posts
-    items:
-    - name: Manual test posts
-      href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
-    - name: Test management posts
-      href: https://blogs.msdn.microsoft.com/devops/?s=test+management
-    - name: "Test & Feedback posts"
-      href: https://social.msdn.microsoft.com/Search?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
-    - name: Load test posts
-      href: https://social.msdn.microsoft.com/Search?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
-  - name: Plug-ins for Visual Studio
-    href: http://go.microsoft.com/fwlink/?LinkID=246630
   - name: Continuous testing
     href: ../pipelines/index.md
-  - name: Unit testing
-    href: /visualstudio/test/unit-test-your-code

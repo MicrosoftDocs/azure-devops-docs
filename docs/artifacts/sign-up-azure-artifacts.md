@@ -59,7 +59,7 @@ Each organization gets five free licenses. If you need more than five licenses, 
  
    ![Select Billing from Organization settings](../organizations/billing/_img/_shared/select-billing-organization-settings.png)
  
-4. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**.
+4. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You will only be charged for the storage you use, up to the limit. 
 
    ![Increase artifacts beyond the free tier with the dropdown menu](_shared/_img/increase-artifacts-beyond-free-tier.png)
 
@@ -84,7 +84,5 @@ For more information on how to set the feed retention policy, see how to [automa
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
 A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, they’ll be charged under the new storage model.
-
-![customers-before-may-6-2019.png](../_img/customers-before-may-6-2019.png)
 
 
