@@ -70,16 +70,16 @@
 - name: Resources
   items:
   - name: Marketplace & Extensibility  
-    href: ../marketplace-extensibility/index.md
+    href: /azure/devops/marketplace-extensibility/index
   - name: Git
-    href: ../repos/git/index.md
+    href: /azure/devops/repos/git/index
   - name: Work items
-    href: ../boards/work-items/index.md
+    href: /azure/devops/boards/work-items/index
   - name: Public projects
-    href: public/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: /azure/devops/organizations/public/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Process Customization
     href: /azure/devops/reference/index?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Service Hooks
-    href: ../service-hooks/index.md
+    href: /azure/devops/service-hooks/index
   - name: Web Portal Navigation
-    href: ../project/navigation/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+    href: /azure/devops/project/navigation/index?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json

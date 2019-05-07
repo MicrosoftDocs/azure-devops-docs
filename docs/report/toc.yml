@@ -30,7 +30,7 @@
   - name: Azure Pipelines  
     href: /azure/devops/pipelines/index
   - name: Work item field index  
-    href: ../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+    href: /azure/devops/boards/work-items/guidance/work-item-field?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
   - name: Power BI Documentation

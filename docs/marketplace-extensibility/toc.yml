@@ -27,8 +27,8 @@
   - name: How to buy TFS CALs
     href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Billing 
-    href: ../organizations/billing/index.md
+    href: /azure/devops/organizations/billing/index
   - name: Manage & Configure Resources
-    href: ../organizations/index.md
+    href: /azure/devops/organizations/index
   - name: Build Visual Studio extensions
     href: /visualstudio/extensibility/shipping-visual-studio-extensions
