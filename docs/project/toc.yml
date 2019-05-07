@@ -31,8 +31,8 @@
   - name: Azure Boards
     href: /azure/devops/boards/index
   - name: Azure DevOps Reporting
-    href: ../report/index.md
-  - name: Web Portal Navigation
-    href: navigation/index.md
+    href: /azure/devops/report/index
+  - name: Get Started
+    href: /azure/devops/get-started/index
 
 

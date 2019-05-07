@@ -57,13 +57,13 @@
 - name: Resources
   items:
   - name: Set your preferences  
-    href: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+    href: /azure/devops/organizations/settings/set-your-preferences
   - name: Manage projects 
-    href: ../organizations/projects/index.md
+    href: /azure/devops/organizations/projects/index
   - name: Permissions, Security, & Identity 
-    href: ../organizations/security/index.md
+    href: /azure/devops/organizations/security/index
   - name: Marketplace & Extensibility
-    href: ../marketplace-extensibility/index.md
+    href: /azure/devops/marketplace-extensibility/index
   - name: Search your Wiki
     href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
   - name: Code Search Video

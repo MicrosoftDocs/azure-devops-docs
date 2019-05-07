@@ -48,10 +48,10 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                             <a href="/azure/devops/user-guide/code-with-git">Code with Git</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/boards/get-started/plan-track-work?toc=%2Fazure%2Fdevops%2Fuser-guide%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fuser-guide%2Fbreadcrumb%2Ftoc.json">Track user stories, tasks, and features</a>
+                            <a href="/azure/devops/boards/get-started/plan-track-work?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Track user stories, tasks, and features</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/organizations/security/get-started-stakeholder?toc=%2Fazure%2Fdevops%2Fuser-guide%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fuser-guide%2Fbreadcrumb%2Ftoc.json">Get started as a Stakeholder</a>
+                            <a href="/azure/devops/organizations/security/get-started-stakeholder?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Get started as a Stakeholder</a>
                         </p>
                     </div>
                 </div>
@@ -70,19 +70,19 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                     <div class="cardText">
                         <h3>Navigation</h3>
                         <p>
-                            <a href="/azure/devops/project/navigation/index">Web portal navigation</a>
+                            <a href="/azure/devops/project/navigation/index?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Web portal navigation</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/go-to-service-page">Open a service, page, or settings</a>
+                            <a href="/azure/devops/project/navigation/go-to-service-page?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Open a service, page, or settings</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/add-artifact-team">Add an artifact or team artifacts</a>
+                            <a href="/azure/devops/project/navigation/add-artifact-team?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Add an artifact or team artifacts</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/set-favorites">Work with favorites</a>
+                            <a href="/azure/devops/project/navigation/set-favorites?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Work with favorites</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/navigation/preview-features">Enable a preview feature</a>
+                            <a href="/azure/devops/project/navigation/preview-features?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Enable a preview feature</a>
                         </p>
                     </div>
                 </div>
@@ -101,16 +101,16 @@ Start using Azure DevOps to code, build and deploy apps, or track work.
                     <div class="cardText">
                         <h3>Search</h3>
                         <p>
-                            <a href="/azure/devops/project/search/overview">Search across all your code, wiki and work items</a>
+                            <a href="/azure/devops/project/search/overview?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Search across all your code, wiki and work items</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/search/code-search">Code search</a>
+                            <a href="/azure/devops/project/search/code-search?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Code search</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/search/work-item-search">Work item search</a>
+                            <a href="/azure/devops/project/search/work-item-search?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Work item search</a>
                         </p>
                         <p>
-                            <a href="/azure/devops/project/wiki/search-wiki">Wiki search</a>
+                            <a href="/azure/devops/project/wiki/search-wiki?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json">Wiki search</a>
                         </p>
                     </div>
                 </div>
