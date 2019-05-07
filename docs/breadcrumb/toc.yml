@@ -35,33 +35,6 @@
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
     items:
-    - name: Get started (Basic)
-      tocHref: /azure/devops/boards/get-started/
-      topicHref: /azure/devops/boards/get-started/index
-    - name: Get started (Agile)
-      tocHref: /azure/devops/boards/get-started-agile/
-      topicHref: /azure/devops/boards/get-started-agile/index
-    - name: GitHub and Azure Boards
-      tocHref: /azure/devops/boards/github/
-      topicHref: /azure/devops/boards/github/index
-    - name: Boards (Kanban) 
-      tocHref: /azure/devops/boards/boards/
-      topicHref: /azure/devops/boards/boards/index
-    - name: Backlogs
-      tocHref: /azure/devops/boards/backlogs/
-      topicHref: /azure/devops/boards/backlogs/index
-    - name: Sprints (Scrum)
-      tocHref: /azure/devops/boards/sprints/
-      topicHref: /azure/devops/boards/sprints/index
-    - name: Work items
-      tocHref: /azure/devops/boards/work-items/
-      topicHref: /azure/devops/boards/work-items/index
-    - name: Queries
-      tocHref: /azure/devops/boards/queries/
-      topicHref: /azure/devops/boards/queries/index
-    - name: Plans (Agile at Scale)
-      tocHref: /azure/devops/boards/plans/
-      topicHref: /azure/devops/boards/plans/index
   - name: Azure Repos
     tocHref: /azure/devops/repos/
     topicHref: /azure/devops/repos/index
