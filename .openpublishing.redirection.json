@@ -6647,16 +6647,23 @@
     },
     {
       "source_path": "docs/build-release/concepts/process/multiple-phases.md",
-      "redirect_url": "/azure/devops/pipelines/process/phases",
+      "redirect_url": "/azure/devops/pipelines/process/phases",      
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/process/multiple-phases.md",
+      "redirect_url": "/azure/devops/pipelines/process/phases",      
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/concepts/process/phases.md",
       "redirect_url": "/azure/devops/pipelines/process/phases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/server-phases.md",
       "redirect_url": "/azure/devops/pipelines/process/phases",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/tasks.md",
