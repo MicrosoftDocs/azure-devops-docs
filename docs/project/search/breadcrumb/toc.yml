@@ -2,9 +2,9 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
-  - name: Manage Projects
-    tocHref: /azure/devops/organizations/projects/
-    topicHref: /azure/devops/organizations/projects/index
+  - name: Get Started
+    tocHref: /azure/devops/project/search/
+    topicHref: /azure/devops/get-started/index
     items: 
     - name: Search
       tocHref: /azure/devops/project/search/
