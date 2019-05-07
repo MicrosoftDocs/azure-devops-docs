@@ -1,9 +1,7 @@
-- name: Extension management
+- name: Discover & Manage Extensions
   href: index.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
-- name: Overview
-  items:
-  - name: Discover extensions in the Marketplace
-    href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
+- name: Discover Marketplace extensions 
+  href: overview.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Install free Azure DevOps Services extensions
@@ -16,10 +14,6 @@
     href: assign-paid-extensions.md
   - name: Install extensions on-premises
     href: get-tfs-extensions.md
-- name: Concepts
-  items:
-  - name: Extension reporting
-    href: extension-report.md
 - name: How-to Guides
   items:
   - name: Manage extension permissions (Security)
@@ -28,8 +22,6 @@
     href: request-extensions.md
   - name: Approve extension requests
     href: approve-extensions.md
-  - name: Respond to Marketplace extension reviews
-    href: ../extend/publish/manage-ratings-reviews.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
   - name: Uninstall or disable extensions
     href: uninstall-disable-extensions.md
   - name: Change number of paid users for extensions for TFS
@@ -42,21 +34,4 @@
     href: marketplace-billing-qa.md
   - name: FAQs about TFS extensions
     href: tfs-extension-faqs.md
-- name: Resources
-  items:
-  - name: Extensions for Visual Studio
-    href: ../integrate/ide/extensions/overview.md
-  - name: Extensions for VS Code
-    href: https://code.visualstudio.com/docs/editor/extension-gallery
-  - name: Recommended extensions
-    items:
-    - name: Code search extension
-      href: ../project/search/overview.md
-    - name: Azure Artifacts extension
-      href: ../artifacts/overview.md
-    - name: Work item search extension
-      href: ../project/search/work-item-search.md
-  - name: Build extensions
-    href: ../extend/index.md
-  - name: How to buy TFS CALs
-    href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
+

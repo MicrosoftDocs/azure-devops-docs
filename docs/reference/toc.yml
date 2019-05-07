@@ -1,369 +1,63 @@
-- name: Customization
-  href: index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Overview
+- name: Azure DevOps Process Customization Documentation
+  expanded: false
+  href: index.md
+- name: About process (work tracking) customization
+  href: customize-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: Inheritance Process Model 
+  href: ../organizations/settings/work/toc.yml
+- name: On-premises XML Process Model 
+  href: xml/toc.yml
+- name: Hosted XML Process Model 
+  href: ../organizations/settings/work/hosted/toc.yml
+- name: Process templates
+  href: process-templates/toc.yml
+- name: Microsoft Project Mapping file (Deprecated)
+  href: mapping/toc.yml
+- name: Configure Features Wizard (Deprecated)
   items:
-    - name: About work tracking customization
-      href: customize-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Quickstarts
+  - name: Configure features after an upgrade
+    href: configure-features-after-upgrade.md
+  - name: New features added through feature enablement
+    href: new-features-added.md
+  - name: Add features manually
+    href: add-features-manually.md
+  - name: Additional configuration options
+    href: additional-configuration-options.md
+  - name: Update a customized process template to access new features
+    href: update-customized-process-template.md
+  - name: When upgrading from TFS 2008 or TFS 2010
+    href: upgrade-tfs-2008-or-2010.md
+- name: REST API Reference
   items:
-    - name: Define area paths
-      href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Define iteration paths or sprints
-      href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Add a custom field
-      href: ../organizations/settings/work/add-custom-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Add a custom work item type
-      href: ../organizations/settings/work/add-custom-wit.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Tutorials
+  - name: Area and Iteration Paths
+    href: /rest/api/azure/devops/wit/Classification%20Nodes
+  - name: Processes
+    href: /rest/api/azure/devops/processes/processes
+  - name: Process Templates
+    href: /rest/api/azure/devops/processadmin/processes
+  - name: Work Item Types
+    href: /rest/api/azure/devops/processDefinitions/Work%20Item%20Types
+- name: API SDK reference (Deprecated)
   items:
-    - name: Customize a project
-      href: ../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Create and manage a process
-      href: ../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Concepts
-  items:
-    - name: "About areas & iterations"
-      href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Differences between process models
-      href: ../organizations/settings/work/import-process/differences.md
-    - name: "Workflow states & state categories"
-      href: ../boards/work-items/workflow-and-state-categories.md
-    - name: Rollup of work and other fields
-      href: ./xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Agile glossary
-      href: ../boards/work-items/agile-glossary.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: How-to Guides
-  items:
-    - name: Team settings
-      items:
-        - name: Configure team settings
-          href: ../organizations/settings/configure-team-settings.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize cards on boards
-          href: ../boards/boards/customize-cards.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Reorder cards
-          href: ../boards/boards/reorder-cards.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Select backlog levels
-          href: ../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: "Show bugs on backlogs & boards"
-          href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Set working days
-          href: ../organizations/settings/set-working-days.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Inheritance process model
-      items:
-        - name: About inherited processes
-          href: ../organizations/settings/work/inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Add and manage fields
-          href: ../organizations/settings/work/customize-process-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Add and manage work item types
-          href: ../organizations/settings/work/customize-process-wit.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize the web layout
-          href: ../organizations/settings/work/customize-process-form.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize a workflow
-          href: ../organizations/settings/work/customize-process-workflow.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Add a custom rule
-          href: ../organizations/settings/work/custom-rules.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Add a custom control
-          href: ../organizations/settings/work/custom-controls-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize backlogs & boards
-          href: ../organizations/settings/work/customize-process-backlogs-boards.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Hosted XML process model
-      items:
-        - name: About the Hosted XML process model
-          href: ../organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize a Hosted XML process
-          href: ../organizations/settings/work/import-process/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Import a process
-          href: ../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize form layout
-          href: customize-wit-form.md
-        - name: Migrate Hosted XML to inherited (Preview)
-          items:
-            - name: Supported clone operations
-              href: ../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Clone a Hosted XML process to Inheritance
-              href: ../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Change a project from Hosted XML to Inheritance
-              href: ../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: On-premises XML process model
-      href: on-premises-xml-process-model.md
-      items:
-        - name: About the On-premises XML process model
-          href: on-premises-xml-process-model.md
-        - name: Manage roll out of the new web form
-          href: manage-new-form-rollout.md
-        - name: Configure features after an upgrade
-          href: configure-features-after-upgrade.md
-        - name: Add features manually
-          href: add-features-manually.md
-        - name: Additional configuration options
-          href: additional-configuration-options.md
-        - name: New features added through feature enablement
-          href: new-features-added.md
-        - name: Update a customized process template to access new features
-          href: update-customized-process-template.md
-        - name: When upgrading from TFS 2008 or TFS 2010
-          href: upgrade-tfs-2008-or-2010.md
-        - name: Define a custom link type
-          href: ./xml/define-custom-link-type.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Change the maximum attachment size for work items
-          href: ./xml/change-maximum-attachment-size-work-items.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Use team fields instead of area paths
-          href: use-team-fields-instead-area-paths.md
-    - name: Fields
-      items:
-        - name: Add or modify a field
-          href: add-modify-field.md
-        - name: Apply a field rule
-          href: ./xml/apply-rule-work-item-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define pick lists
-          href: ./xml/define-pick-lists.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Expand list and exclude groups
-          href: ./xml/expand-list-items-and-exclude-groups-from-lists.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Combine list types
-          href: ./xml/combine-list-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Change the workflow
-      href: ./xml/change-workflow-wit.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Work item type or form
-      items:
-        - name: Add or modify a work item type
-          href: add-modify-wit.md
-        - name: Design the work item form
-          href: ./xml/design-work-item-form.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Add the Attachments control
-          href: ./xml/add-the-attachments-control.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: "Provide help text, hyperlinks, or web content"
-          href: ./xml/provide-help-text-hyperlinks-web-content-form.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Add web content to a form
-          href: ./xml/edit-wit-definition-add-web-content-form.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Change the work item form layout
-          href: ./xml/change-work-item-form-layout.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Specify work item form controls
-          href: ./xml/specify-work-item-form-controls.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define link controls
-          href: ./xml/define-link-controls.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Backlogs and boards
-      items:
-        - name: Add work item types
-          href: add-wits-to-backlogs-and-boards.md
-        - name: Add portfolio backlogs
-          href: add-portfolio-backlogs.md
-        - name: Use categories to group work item types
-          href: ./xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Process templates
-      items:
-        - name: Upload/download process templates
-          href: ../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize a process template
-          href: ./process-templates/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: "Manage permissions (Security)"
-      href: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Troubleshooting
-  items:
-    - name: Resolve validation errors
-      href: ../organizations/settings/work/import-process/resolve-errors.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Resolve process configuration issues
-      href: troubleshoot-process-configuration.md
-- name: Reference
-  items:
-    - name: "Default permissions & access (Security)"
-      href: ../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Changes made to process templates
-      href: ../boards/work-items/guidance/changes-to-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Work tracking object limits
-      href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Naming restrictions
-      href: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Work tracking XML element reference
-      items:
-        - name: XML element reference
-          href: ./xml/xml-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: All WITD elements
-          href: ./xml/all-witd-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Localization and globalization XML elements
-          href: ./xml/localization-and-globalization-of-witd-child-elements.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: FIELD (Definition) elements
-          items:
-            - name: All FIELD (Definition) elements
-              href: ./xml/all-field-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: FIELD (Definition)
-              href: ./xml/field-definition-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: "COPY, DEFAULT, and SERVERDEFAULT"
-              href: ./xml/define-default-copy-value-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: GLOBALLIST XML element reference
-              href: ./xml/define-global-lists.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Global workflow XML element reference
-              href: ./xml/global-workflow-xml-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Apply pattern matching
-              href: ./xml/apply-pattern-matching-to-string-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Conditional rules
-              href: ./xml/assign-conditional-based-values-and-rules.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: WORKFLOW elements
-          items:
-            - name: WORKFLOW elements
-              href: ./xml/all-workflow-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: FIELD (Workflow)
-              href: ./xml/field-workflow-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: ACTION
-              href: ./xml/automate-field-assignments-state-transition-reason.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: TRANSITION
-              href: ./xml/transition-xml-element.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: FORM elements
-          items:
-            - name: All FORM elements
-              href: ./xml/all-form-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: New web form layout
-              items:
-                - name: WebLayout and Control elements
-                  href: ./xml/weblayout-xml-elements.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-                - name: LinksControlOptions (web)
-                  href: ./xml/linkscontroloptions-xml-elements.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Old (web and client) form layout
-              items:
-                - name: Layout
-                  href: ./xml/layout-xml-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-                - name: Control
-                  href: ./xml/control-xml-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-                - name: Tab
-                  href: ./xml/tab-xml-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-                - name: LinksControlOptions (web/client)
-                  href: ./xml/linkscontroloptions-elements.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: LabelText and Text
-              href: ./xml/labeltext-and-text-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Link and Param
-              href: ./xml/link-param-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: WebpageControlOptions
-              href: ./xml/webpagecontroloptions-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: LinkTypes elements reference
-              href: ./xml/link-type-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: CATEGORIES XML reference
-          href: ./xml/categories-xml-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: ProcessConfiguration XML reference
-          href: ./xml/process-configuration-xml-element.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Process template
-      items:
-        - name: XML element index
-          href: ./process-templates/process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Process template files
-          href: ./process-templates/overview-process-template-files.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define root tasks
-          href: ./process-templates/define-root-tasks-process-template-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Process template XML elements
-          href: ./process-templates/process-template-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define tasks and task group dependencies
-          href: ./process-templates/define-dependencies-plug-ins-groups-tasks.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define tasks to process
-          href: ./process-templates/define-tasks-to-process-a-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define the Classification plug-in
-          href: ./process-templates/define-classification-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define the Portal plug-in
-          href: ./process-templates/define-project-portal-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define the Reporting plug-in
-          href: ./process-templates/add-reports-to-the-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: "Configure initial groups, teams, members, and permissions"
-          href: ./process-templates/configure-initial-groups-teams-members-permissions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-          items:
-            - name: Define the Groups and Permissions plug-in
-              href: ./process-templates/define-groups-teams-permissions-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Define the work item tracking plug-in
-          href: ./process-templates/define-objects-track-work-items-plug-in.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-          items:
-            - name: Add work item types
-              href: ./process-templates/add-wit-definitions-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Add link types
-              href: ./process-templates/add-link-type-definitions-to-a-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Add categories
-              href: ./process-templates/add-type-wit-category-definitions-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Add work item queries
-              href: ./process-templates/add-work-item-queries-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Define a work item query
-              href: ./process-templates/define-work-item-query-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Add a work item instance
-              href: ./process-templates/add-work-item-instance-process-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Functional areas and permissions
-          items:
-            - name: Control access to functional areas
-              href: ./process-templates/control-access-to-functional-areas.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Define the Version Control plug-in
-              href: ./process-templates/define-initial-configuration-version-control.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Define the Test Management plug-in
-              href: ./process-templates/define-initial-configuration-test-manager.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Define the Build plug-in
-              href: ./process-templates/define-initial-configuration-build.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-            - name: Define the Lab Management plug-in
-              href: ./process-templates/define-initial-configuration-lab-management.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: witAdmin commands
-      items:
-        - name: witAdmin command line reference
-          href: ./witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Import and export categories
-          href: ./witadmin/witadmin-import-export-categories.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Import and export global workflow
-          href: ./witadmin/witadmin-import-export-global-workflow.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Import and export process configuration
-          href: ./witadmin/witadmin-import-export-process-configuration.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: "Import, export, and manage work item types"
-          href: ./witadmin/witadmin-import-export-manage-wits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Manage global lists for work item types
-          href: ./witadmin/manage-global-lists-for-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Manage link types
-          href: ./witadmin/manage-link-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Manage work item fields
-          href: ./witadmin/manage-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Rebuild the client cache
-          href: ./witadmin/rebuild-client-cache.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Remove work items permanently
-          href: ./witadmin/remove-work-items-permanently.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Project integration
-      items:
-        - name: Project integration field mapping
-          href: ./xml/add-or-change-how-project-fields-map-to-tfs-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize the Project field mapping
-          href: ./xml/customize-project-field-mapping-file.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Map Project fields
-          href: ./xml/map-microsoft-project-fields-to-tf-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Project field mappings
-          href: ./xml/field-mappings-in-microsoft-project.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Upload/download the Project mapping file
-          href: ./xml/upload-or-download-the-microsoft-project-mapping-file.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: On-premises only
-      items:
-        - name: Reportable fields reference 
-          href: ./xml/reportable-fields-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Change reporting attributes 
-          href: ./xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize and manage the test experience
-          href: ./witadmin/tcm-customize-manage-test-experience.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: Deprecation of WIT & Test Client OM
-      href: ../integrate/concepts/wit-client-om-deprecation.md
-    - name: API SDK reference
-      items:
-        - name: IProcessTemplates.AddUpdateTemplate
-          href: ./api-ref/iprocess-templates-add-update-template.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: WorkItem.Open method
-          href: ./api-ref/open.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: WorkItem.PartialOpen method
-          href: ./api-ref/partialopen.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: REST APIs
-      items:
-        - name: Area and Iteration Paths
-          href: /rest/api/azure/devops/wit/Classification%20Nodes
-        - name: Processes
-          href: /rest/api/azure/devops/processes/processes
-        - name: Process Template
-          href: /rest/api/azure/devops/processadmin/processes
-        - name: Work Item Types
-          href: /rest/api/azure/devops/processdefinitions/work%20item%20types
-        - name: Add a custom control to a form
-          href: ../extend/develop/custom-control.md
+  - name: IProcessTemplates.AddUpdateTemplate
+    href: api-ref/iprocess-templates-add-update-template.md
+  - name: WorkItem.Open method
+    href: api-ref/open.md
+  - name: WorkItem.PartialOpen method
+    href: api-ref/partialopen.md
 - name: Resources
   items:
-    - name: Work items
-      href: ../boards/work-items/index.md
-    - name: "Scale & Configure Teams"
-      href: ../organizations/settings/scale/index.md
-    - name: Manage projects
-      href: ../organizations/projects/index.md
-    - name: Marketplace extensions
-      href: ../marketplace/get-vsts-extensions.md
-    - name: Extensibility and REST APIs
-      href: ../extend/overview.md
+  - name: Azure Boards
+    href: /azure/devops/boards/index
+  - name: "Workflow states & categories"
+    href: /azure/devops/boards/work-items/workflow-and-state-categories
+  - name: Add a custom control to a form
+    href: /azure/devops/extend/develop/custom-control
+  - name: Permissions, Security, & Identity
+    href: /azure/devops/organizations/security/index
+  - name: Naming restrictions
+    href: /azure/devops/organizations/settings/naming-restrictions 
+  - name: Deprecation of WIT & Test Client OM
+    href: /azure/devops/integrate/concepts/wit-client-om-deprecation
+  - name: Changes made to process templates
+    href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
