@@ -63,12 +63,12 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 ## Agile tools, category requirements, and restrictions  
  When assigning WITs to categories, consider the following operational notes:  
   
--   To use the [backlog](http://msdn.microsoft.com/70a01e94-2dc9-4090-823c-71ee8e156e74) and [task](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) boards, you must assign at least one WIT to the Requirements Category and one WIT to the Task Category.  
+-   To use the [backlog](https://msdn.microsoft.com/70a01e94-2dc9-4090-823c-71ee8e156e74) and [task](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) boards, you must assign at least one WIT to the Requirements Category and one WIT to the Task Category.  
   
 -   You cannot assign the same WIT to both the Requirements Category and to the Task Category.   
 -   If you include more than one WIT in the Requirements Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Agile backlog and board pages.   
 -   WITs that belong to a category which defines a backlog in the ProcessConfiguration file must have start, closing, and at least one intermediate  workflow state napped to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).   
--   WITs that you assign to the Bug Category can be configured to [show up on backlogs and boards for each team](http://msdn.microsoft.com/49b374e0-1700-4650-bacf-759e7eee4580). You set the default behavior by [defining the property for BugsBehavior in the ProcessConfiguration file](process-configuration-xml-element.md).  
+-   WITs that you assign to the Bug Category can be configured to [show up on backlogs and boards for each team](https://msdn.microsoft.com/49b374e0-1700-4650-bacf-759e7eee4580). You set the default behavior by [defining the property for BugsBehavior in the ProcessConfiguration file](process-configuration-xml-element.md).  
   
 ## Example  
  The following example lists the default categories XML file for the Scrum process template.  

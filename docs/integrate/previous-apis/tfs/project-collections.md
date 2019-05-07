@@ -20,7 +20,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
 
-[Project collections](http://msdn.microsoft.com/library/dd236915.aspx) contain [projects](./projects.md) that have source code, work items, and other resources.
+[Project collections](https://msdn.microsoft.com/library/dd236915.aspx) contain [projects](./projects.md) that have source code, work items, and other resources.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 

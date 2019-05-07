@@ -43,10 +43,10 @@ An organization in Azure DevOps is a mechanism for organizing and connecting gro
 
 Each organization gets its own *free tier* of services (up to five users for each service type) as follows. You can use all the services, or choose just what you need to complement your existing workflows.
 
-* [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
-* [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/): Work item tracking and Kanban boards
-* [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/): Unlimited private Git repos
-* [Azure Artifacts](https://azure.microsoft.com/en-us/services/devops/artifacts/): Package management
+* [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
+* [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
+* [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
+* [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
 * Load testing (20,000 VUMs per month)
 * Unlimited Stakeholders
 [!INCLUDE [free-tier](../_shared/free-tier.md)]
@@ -163,7 +163,7 @@ Starting with a single project containing multiple repos is reasonable, especial
 
 If the products stored in multiple repos are working on independent schedules or processes, you can split them into multiple projects. Git repo portability makes it easy to move a repo between projects and still keep full-fidelity commit history. Other history, such as pull requests or build history. are not easily migrated.
 
-Your decision for one vs. many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [Git at Scale](https://docs.microsoft.com/en-us/azure/devops/learn/git/git-at-scale) articles. If you have many disconnected services, one repo per service can be a good strategy.  
+Your decision for one vs. many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [Git at Scale](https://docs.microsoft.com/azure/devops/learn/git/git-at-scale) articles. If you have many disconnected services, one repo per service can be a good strategy.  
 
 > [!Note]
 > Consider [managing your permissions](../organizations/security/permissions.md) so not everyone in your organization can [create a repo](../repos/git/create-new-repo.md). One of the big challenges a growing team or company faces is the rapid proliferation of repos. If you have too many of them, it's very hard to keep track of who owns what code or other content stored in those repos.

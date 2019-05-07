@@ -39,7 +39,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ## Prerequisites
 
-* You must be a member of the Administrators group. If you aren't a member, [get added now](https://docs.microsoft.com/en-us/azure/devops/server/admin/add-administrator?view=azure-devops).
+* You must be a member of the Administrators group. If you aren't a member, [get added now](https://docs.microsoft.com/azure/devops/server/admin/add-administrator?view=azure-devops).
 * <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
 
 > [!NOTE]  

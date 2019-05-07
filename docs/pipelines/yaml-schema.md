@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 04/17/2019
+ms.date: 05/06/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -162,7 +162,7 @@ steps: [ script | bash | pwsh | powershell | checkout | task | templateReference
 # [Example](#tab/example)
 
 ```yaml
-name: $(Date:yyyyMMdd).$(Rev:.r)
+name: $(Date:yyyyMMdd)$(Rev:.r)
 variables:
   var1: value1
 jobs:

@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version.md)]
 
-[Categories](http://msdn.microsoft.com/library/dd695775.aspx) define the set of work item types that are used in a specific role in your project.
+[Categories](https://msdn.microsoft.com/library/dd695775.aspx) define the set of work item types that are used in a specific role in your project.
 For example, work item types in the "requirements" category show up in your backlog.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
