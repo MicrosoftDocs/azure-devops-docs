@@ -198,7 +198,7 @@ Configuring the Integration of Team Foundation Server and Project Server
   
 -   **For Project Server 2010**:  
   
-    -   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](http://technet.microsoft.com/library/gg982985.aspx)  
+    -   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](https://technet.microsoft.com/library/gg982985.aspx)  
   
     -   [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=203359)  
   

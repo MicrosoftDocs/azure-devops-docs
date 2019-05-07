@@ -66,7 +66,7 @@ We cleaned up multiple work item transition rules that have been inconsistent ac
 
 ### Azure Boards GitHub Enterprise support
 
-Teams can now connect Azure Boards projects to repositories hosted in GitHub Enterprise Server instances. When connecting using OAuth, follow the steps in the documentation for [Registering an OAuth application](https://docs.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops-2019) before creating a connection to your repositories.
+Teams can now connect Azure Boards projects to repositories hosted in GitHub Enterprise Server instances. When connecting using OAuth, follow the steps in the documentation for [Registering an OAuth application](https://docs.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops-2019) before creating a connection to your repositories.
 
 ### Edit and delete comments in work item
 
@@ -136,7 +136,7 @@ Until now, Slack users have had limited capabilities to manage release deploymen
 > [!div class="mx-imgBorder"]
 ![Badge](_img/149_03.png)
 
-For more detailed on Azure Pipelines and Slack see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/integrations/slack?view=azure-devops).
+For more detailed on Azure Pipelines and Slack see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/integrations/slack?view=azure-devops).
 
 ### All source providers included in the new build pipeline wizard
 
@@ -147,7 +147,7 @@ Until now, source providers like GitHub, Azure Repos, and Bitbucket Cloud were s
 
 ### GitHub comments trigger optimizations
 
-We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops#trigger-builds-using-github-pull-request-comments). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
+We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops#trigger-builds-using-github-pull-request-comments). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/149_07.png)
@@ -159,7 +159,7 @@ With this update, we’ve added support to publish test results from a [CTest]( 
 > [!div class="mx-imgBorder"]
 ![Badge](_img/149_11.png)
 
-In addition, we included publishing for [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
+In addition, we included publishing for [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
 
 ## Azure Artifacts
 
@@ -192,7 +192,7 @@ The following list includes the entity sets that will be migrated to version 3.0
 * ReleaseStages
 * BuildPipelines
 
-For more information on using the OData endpoint with the Analytics service see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/report/extend-analytics/odata-api-version?view=azure-devops).
+For more information on using the OData endpoint with the Analytics service see the documentation [here](https://docs.microsoft.com/azure/devops/report/extend-analytics/odata-api-version?view=azure-devops).
 
 ## Administration
 
@@ -202,7 +202,7 @@ With our Sprint 148 update we gave you the ability to connect your organization 
 
 There are two steps to restore disconnected members. First, the current identities of those members are mapped to identities in the newly connected Azure AD. Since some disconnected members may not have matching identities in the Azure AD, the second step is to invite those remaining members as guests to the Azure AD. This update provides an interface to take both steps right from the Azure AD settings page in the Azure DevOps portal.
 
-Look for updates in our documentation [here](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops).
+Look for updates in our documentation [here](https://docs.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops).
 
 ## Next steps
 

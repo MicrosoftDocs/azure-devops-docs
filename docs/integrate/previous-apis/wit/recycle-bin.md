@@ -116,7 +116,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.
       "System.Title": "First Workitem",
       "Microsoft.VSTS.Scheduling.Effort": 8,
       "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-      "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/library/live/hh826547.aspx"
+      "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
     },
     "_links": {
       "self": {

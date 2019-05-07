@@ -228,7 +228,7 @@ The Process Editor provides a user interface that you can use to customize the f
     -   Review files to be uploaded and their folder structure    
     -   Add files to be uploaded.  
 
-You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](http://msdn.microsoft.com/80a9c78f-f495-4f54-99a1-b5e907afa319).  
+You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](https://msdn.microsoft.com/80a9c78f-f495-4f54-99a1-b5e907afa319).  
  
 
  

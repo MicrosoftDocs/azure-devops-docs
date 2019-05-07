@@ -30,7 +30,7 @@ and [Create and manage policies to enforce compliance](https://docs.microsoft.co
 ## Prepare
 
 1. Create an [Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) in the Azure portal.
-   There are several [pre-defined sample policies](https://docs.microsoft.com/en-gb/azure/governance/policy/samples/)
+   There are several [pre-defined sample policies](https://docs.microsoft.com/azure/governance/policy/samples/)
    that can be applied to a management group, subscription, and resource group.
 
 1. In Azure DevOps create a release pipeline that contains at least one stage, or open an existing release pipeline.
