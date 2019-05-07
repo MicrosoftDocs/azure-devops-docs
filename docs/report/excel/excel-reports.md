@@ -177,7 +177,7 @@ Default Excel reports require that your team project is configured with SharePoi
   
      To authenticate viewers of enterprise dashboards by using Single Sign-On, you must perform the following actions:  
   
-    -   You must configure the SharePoint web application to use Single Sign-on. For more information about how to configure Single Sign-on, see [Configure authentication infrastructure in SharePoint 2013](http://msdn.microsoft.com/library/jj219795.aspx).  
+    -   You must configure the SharePoint web application to use Single Sign-on. For more information about how to configure Single Sign-on, see [Configure authentication infrastructure in SharePoint 2013](https://msdn.microsoft.com/library/jj219795.aspx).  
   
     -   You must add dashboard viewers to a group that is granted access to the Single Sign-on enterprise application definition.  
   

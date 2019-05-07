@@ -1,4 +1,4 @@
-* An Azure account. If you don't have one, you can [create one for free](https://azure.microsoft.com/en-us/free/).
+* An Azure account. If you don't have one, you can [create one for free](https://azure.microsoft.com/free/).
 
  > [!TIP]
  >
