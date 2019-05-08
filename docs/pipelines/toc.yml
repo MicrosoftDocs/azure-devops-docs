@@ -1,16 +1,20 @@
-- name: Azure Pipelines
+- name: Azure Pipelines Documentation
   href: index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
-- name: Overview
+- name: Azure Pipelines
   href: get-started/index.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json
+- name: Overview
+  expanded: true
   items:
+  - name: Overview
+    href: get-started/overview.md
   - name: What is Azure Pipelines?
-    href: get-started/what-is-azure-pipelines.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+    href: get-started/what-is-azure-pipelines.md
   - name: Sign up for Azure Pipelines
-    href: get-started/pipelines-sign-up.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+    href: get-started/pipelines-sign-up.md
   - name: How to use Azure Pipelines
-    href: get-started/pipelines-get-started.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+    href: get-started/pipelines-get-started.md
   - name: Key concepts
-    href: get-started/key-pipelines-concepts.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/boards/pipelines/breadcrumb/toc.json 
+    href: get-started/key-pipelines-concepts.md
 - name: Quickstarts
   expanded: true
   items:
@@ -633,5 +637,9 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
+- name: Developer Resources
+  items:
   - name: REST API reference
     href: /rest/api/vsts/
+  - name: Azure DevOps CLI
+    href: /cli/azure/ext/azure-devops/pipelines

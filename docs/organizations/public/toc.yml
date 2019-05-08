@@ -1,13 +1,11 @@
-- name: Public projects
-  href: index.md
-- name: Overview
-  items:
-  - name: What is a public project? 
-    href: about-public-projects.md
+- name: Public Projects
+  href: index.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
+- name: What is a public project? 
+  href: about-public-projects.md
 - name: Quickstarts
   items:
-  - name: Build OSS repositories
-    href: ../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
+  - name: Build OSS repositories - 
+    href: /azure/devops/pipelines/repos/index?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Create a public project
     href: create-public-project.md
   - name: Invite users to contribute 
@@ -54,14 +52,6 @@
     href: ../../extend/develop/public-project.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Data protection overview
     href: ../../organizations/security/data-protection.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Git Repositories
-    href: ../../repos/git/index.md
-  - name: Work Items
-    href: ../../boards/work-items/index.md 
-  - name: Manage projects
-    href: ../projects/index.md 
-  - name: Process Customization
-    href: ../settings/work/customize-process.md 
+
+
 

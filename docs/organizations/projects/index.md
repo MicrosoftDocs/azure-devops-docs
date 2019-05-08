@@ -14,7 +14,7 @@ ms.date: 03/11/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Manage projects in Azure DevOps
+# Manage Projects
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -74,7 +74,7 @@ Structure your projects by adding area paths, iteration paths, and teams.
 
 ## Resources
 
-- [Azure DevOps Services user guide](../../user-guide/index.yml)
+- [Get Started using Azure DevOps](../../get-started/index.md)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
 - [Public Projects](../public/index.md)
-- [Security & identity](../../organizations/security/index.md)
 - [Migrate from Azure DevOps Server to Azure DevOps Services](../../migrate/migrate-from-tfs.md)

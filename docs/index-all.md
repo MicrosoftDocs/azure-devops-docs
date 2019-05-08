@@ -17,7 +17,7 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure DevOps Index</h1>
+        <h1>Azure DevOps Documentation Index</h1>
         <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
         <p style="height: 30px;">&nbsp;</p>
         <ul class="pivots">

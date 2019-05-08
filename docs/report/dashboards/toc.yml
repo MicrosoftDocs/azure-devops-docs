@@ -1,10 +1,11 @@
 - name: Dashboards, Charts, Reports, & Widgets
   href: index.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
 - name: Overview
-  expanded: true
+
   items:
   - name: About dashboards and reports
     href: overview.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
   - name: Quick reference
     href: quick-ref.md
   - name: Widget catalog
@@ -12,46 +13,60 @@
   - name: Analytics-based widgets
     href: analytics-widgets.md
 - name: Quickstarts
-  expanded: true
+
   items:
   - name: "Add, rename, & delete dashboards"
     href: dashboards.md
+    displayname: filter, dashboard, auto-refresh, add widget, delete widget
   - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
+    displayname: select dashboard, add widget, configure widget, move widget, delete widget, copy widget, widget size, disabled widget 
   - name: Add markdown to a dashboard
     href: add-markdown-to-dashboard.md
+    displayname: markdown widget 
 - name: Tutorials
   items:
   - name: View the built-in velocity chart  
     href: velocity-chart-data-store.md
-  - name: Monitor sprint burndown
-    href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-  - name: Configure a Burndown or Burnup widget
-    href: configure-burndown-burnup-widgets.md
-  - name: Configure a Cumulative flow diagram widget
-    href: cumulative-flow.md
-  - name: Configure a Lead/Cycle time widget
-    href: cycle-time-and-lead-time.md
+    displayname: in-context 
   - name: Configure a Velocity widget
     href: team-velocity.md
+    displayname: planned, completed, completed late, incomplete 
+  - name: Monitor sprint burndown
+    href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    displayname: sprint backlog, current, past
+  - name: Configure a Burndown or Burnup widget
+    href: configure-burndown-burnup-widgets.md
+    displayname: release burndown, burndown widget, burndown metrics, burnup metrics, scope, date range, main metric, % completed, average burndown, items not estimated, total scope increase, projected completion, orginal scope, total scope, calculate burndown, time period, plotting interval 
+  - name: Configure a Cumulative flow diagram widget
+    href: cumulative-flow.md
+    displayname: cfd, built-in 
+  - name: Configure a Lead/Cycle time widget
+    href: cycle-time-and-lead-time.md
+    displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation, 
   - name: Configure a Test Results Trend widget
     href: configure-test-results-trend.md
 - name: Concepts
   items:
   - name: Burndown guidance
     href: burndown-guidance.md
+    displayname: scope increase, scope creep, risk
   - name: "Cumulative flow & lead/cycle time guidance"
     href: cumulative-flow-cycle-lead-time-guidance.md 
+    displayname: lead time, cycle time, work in progress, scope, scope change, work in progress, process issues, 
   - name: Velocity guidance
     href: velocity-guidance.md
   - name: Visibility across teams & projects
     href: ../../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    displayname: delivery plans, calendar, portfolio backlogs, multi-teams
 - name: How-to Guides
   items:
   - name: Create work tracking charts
     href: charts.md
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line 
   - name: Create test result charts
     href: ../../test/track-test-status.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
+    displayname: progress, trend, pie, bar, column, stacked bar, pivot table, test case
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
   - name: Install the Analytics extension
@@ -70,30 +85,7 @@
   items:
   - name: Markdown guidance
     href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-  - name: What is the Analytics service?
-    href: ../powerbi/what-is-analytics.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-  - name: Data available
-    href: ../powerbi/data-available-in-analytics.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-  - name: Performance and latency
-    href: ../powerbi/performance-latency.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
   - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
-  - name: Reporting roadmap
-    href: ../powerbi/reporting-roadmap.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Power BI Integration
-    href: ../powerbi/index.md
-  - name: Extend Analytics with OData
-    href: ../extend-analytics/index.md
-  - name: Azure Pipelines
-    href: /azure/devops/pipelines/index
-  - name: Azure Boards
-    href: /azure/devops/boards/index
-  - name: Azure Test Plans
-    href: /azure/devops/test/index-tp 
-  - name: REST API, Dashboards
-    href: /rest/api/vsts/dashboard/
-  - name: Marketplace widgets
-    href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
+
 

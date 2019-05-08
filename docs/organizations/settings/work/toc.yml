@@ -1,0 +1,39 @@
+- name: Inheritance Process  
+  href: index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
+- name: About the inheritance process 
+  href: inheritance-process-model.md
+- name: Quickstarts
+  items:
+  - name: Add a custom field
+    href: add-custom-field.md
+  - name: Add a custom work item type
+    href: add-custom-wit.md
+- name: Tutorials
+  items:
+  - name: Customize a project
+    href: customize-process.md
+  - name: Create and manage a process
+    href: manage-process.md
+- name: How-to guides
+  items:
+  - name: Add and manage fields
+    href: customize-process-field.md
+  - name: Add and manage work item types
+    href: customize-process-wit.md
+  - name: Customize a web form
+    href: customize-process-form.md
+  - name: Customize a workflow
+    href: customize-process-workflow.md
+  - name: Add a custom rule
+    href: custom-rules.md
+  - name: Add a custom control
+    href: custom-controls-process.md
+  - name: Customize backlogs & boards
+    href: customize-process-backlogs-boards.md
+- name: Reference
+  items:
+  - name: Work tracking object limits
+    href: object-limits.md
+
+
+
