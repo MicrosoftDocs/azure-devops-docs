@@ -39,9 +39,6 @@ Azure Repos:
 
 ### Add Azure Boards from the GitHub Marketplace
 
-> [!IMPORTANT]
-> The Azure Boards app for GitHub is in preview. Watch for public availability in the [GitHub Marketplace](https://github.com/marketplace/category/project-management) and announcement in our [release notes](/azure/devops/release-notes/) and [blog](https://devblogs.microsoft.com/devops/) soon.
-
 The new **Azure Boards** app in the [GitHub Marketplace](https://aka.ms/azureboardsgithub/install) streamlines the acquisition and configuration of Azure Boards for your GitHub repositories. 
 
 Previously, you could enable a connection with GitHub repositories through OAuth or personal access token authentication. Using OAuth or PAT, Azure Boards uses **an individual's GitHub identity** to monitor and link code activity with work items. However, since the members of your team may change over time, it can be less desirable to use an individual's GitHub identity and permissions. By installing the Azure Boards app, you can authorize **the app** to perform actions instead. 
