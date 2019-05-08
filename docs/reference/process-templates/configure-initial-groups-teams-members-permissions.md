@@ -273,6 +273,6 @@ The following table describes the permissions that you can assign to control acc
 - [Control access to functional areas](control-access-to-functional-areas.md)   
 - [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)   
 - [Permission reference](/azure/devops/repos/tfvc/permission-command)
-- [Change groups and permissions with TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd)
+- [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
 - [tf permission Command](../../repos/tfvc/permission-command.md).  
   

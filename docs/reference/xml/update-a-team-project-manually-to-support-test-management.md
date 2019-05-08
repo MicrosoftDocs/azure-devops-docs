@@ -147,9 +147,9 @@ The following steps provide support for the test experience available with TFS 2
         TFSConfig TCM /upgradeStatus /collectionName:CollectionName /TeamProject:TeamProjectName  
         ```  
 
- After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](/azure/devops/server/ref/command-line/tfsconfig-cmd#tcm).  
+ After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](/azure/devops/server/command-line/tfsconfig-cmd#tcm).  
   
  For information about how to access the new WIT-based test plans and test suites in the web portal, see [Create a test plan](../../test/create-a-test-plan.md).
 
 ## Related articles
-- [Manage TFS server configuration with TFSConfig](/azure/devops/server/ref/command-line/tfsconfig-cmd)
+- [Manage TFS server configuration with TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)
