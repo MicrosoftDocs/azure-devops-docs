@@ -24,7 +24,8 @@ The system will replace the variable with its current value during the pipeline'
 
 Some variables are automatically set by the system.
 As a pipeline author or end user, you cannot change the value of such variables.
-See the comprehensive lists of systems variables available as [build variables](../build/variables.md) and [release variables](../release/variables.md).
+* If you use classic build pipelines or use YAML to author your pipeline, then see [build variables](../build/variables.md) for a comprehensive list of system variables.
+* If you use classic release pipelines, then see [release variables](../release/variables.md).
 
 In this topic, we discuss user-defined variables. Names of these variables consist of letters, numbers, `.`, and `_` characters.
 

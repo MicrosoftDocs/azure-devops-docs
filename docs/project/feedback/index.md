@@ -1,6 +1,6 @@
 ---
 title: Feedback index to content
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps 
 description: Index to topics for requesting and providing feedback in Azure DevOps & Team Foundation Server  
 ms.technology: devops-collab
 ms.prod: devops
@@ -28,6 +28,7 @@ To provide feedback about Azure DevOps Services or TFS, see [Provide product and
 
 
 ## How-to Guides
+
 - [Request feedback (Test & Feedback extension)](/azure/devops/test/request-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json )
 - [Get feedback (Work tracking)](get-feedback.md) 
 - [Provide feedback with the Test & Feedback extension](/azure/devops/test/provide-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json )  
@@ -35,6 +36,7 @@ To provide feedback about Azure DevOps Services or TFS, see [Provide product and
 - [Set feedback permissions](give-permissions-feedback.md)  
 
 ## Reference
+
 - [Default permissions and access set for collaboration tools](..//wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/notifications/project/feedback/toc.json) 
 - [Give us feedback, get support](../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json) 
 

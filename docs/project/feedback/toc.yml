@@ -1,38 +1,22 @@
 - name: Feedback 
   href: index.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json
-- name: How-to Guides
-  items:
-  - name: Request feedback (Test & Feedback extension) 
-    href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-  - name: Request feedback (Work tracking)
-    href: get-feedback.md  
-  - name: Provide feedback (Test & Feedback extension)
-    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-  - name: Provide feedback (Feedback client)
-    href: give-feedback.md
-  - name: Track feedback (Test & Feedback extension)
-    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-  - name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
-    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-  - name: "Set feedback permissions (Security)"
-    href: give-permissions-feedback.md
-  - name: Enable remote audio capture
-    href: enable-remote-audio-capture.md
-  - name: Change the audio device or annotation tool
-    href: change-audio-device-annotation-tool.md
-- name: Reference
-  items:
-  - name: "Default permissions (Security)" 
-    href: ../../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-  - name: Give us feedback, get support
-    href: ../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-- name: Resources 
-  items:
-  - name: Azure Boards
-    href: /azure/devops/boards/index
-  - name: Azure Test Plans
-    href: /azure/devops/test/index-tp
-  - name: UserVoice Integration (Marketplace extension)
-    href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
-  - name: UserVoice UI (Marketplace extension)
-    href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui
+- name: Request feedback (Test & Feedback extension) 
+  href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
+- name: Request feedback (Work tracking)
+  href: get-feedback.md  
+- name: Provide feedback (Test & Feedback extension)
+  href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
+- name: Provide feedback (Feedback client)
+  href: give-feedback.md
+- name: Track feedback (Test & Feedback extension)
+  href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
+- name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
+  href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
+- name: "Set feedback permissions (Security)"
+  href: give-permissions-feedback.md
+- name: Enable remote audio capture
+  href: enable-remote-audio-capture.md
+- name: Change the audio device or annotation tool
+  href: change-audio-device-annotation-tool.md
+
+

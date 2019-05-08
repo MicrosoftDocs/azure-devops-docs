@@ -1,7 +1,6 @@
 - name: Start using Azure DevOps
   href: index.yml?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Overview
-  expanded: true
   items:
   - name: What is Azure DevOps?
     href: what-is-azure-devops.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
@@ -33,8 +32,6 @@
     href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/breadcrumb/toc.json&bc=/azure/devops/breadcrumb/toc.json 
   - name: Manage teams and configure team tools
     href: ../organizations/settings/manage-teams.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-  - name: Install a Marketplace extension
-    href: ../marketplace/install-extension.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
 - name: Tutorials for users
   items:
   - name: Set favorites
@@ -55,14 +52,10 @@
     href: plan-your-azure-devops-org-structure.md
   - name: Source control 
     href: source-control.md
-  - name: Backlogs, boards, and Agile tools
-    href: ../boards/get-started/what-is-azure-boards.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
   - name: Clients and tools
     href: tools.md  
   - name: Software development roles
     href: roles.md
-  - name: Glossary
-    href: ../project/navigation/glossary.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json   
 - name: How-to guides
   items:
   - name: Sign in to the web or a client
@@ -77,38 +70,4 @@
     href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
   - name: Get support or provide feedback
     href: provide-feedback.md
-- name: Reference
-  items:
-  - name: "Permissions and access (Security)"
-    href: ../organizations/security/permissions-access.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: About access levels
-    href: ../organizations/security/access-levels.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Keyboard shortcuts
-    href: ../project/navigation/keyboard-shortcuts.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json  
-  - name: Navigate in Team Explorer
-    href: work-team-explorer.md  
-  - name: FAQs
-    href: faqs.md
-  - name: Service status  
-    href: service-status-info.md
-  - name: Data protection overview
-    href: ../organizations/security/data-protection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Web portal navigation
-    href: ../project/navigation/index.md
-  - name: Manage projects
-    href: ../organizations/projects/index.md
-  - name: Manage organizations
-    href: ../organizations/accounts/index.md
-  - name: Security and identity
-    href: ../organizations/security/index.md
-  - name: Billing
-    href: ../organizations/billing/index.md
-  - name: Visual Studio IDE
-    href: https://visualstudio.microsoft.com/vs/
-  - name: Visual Studio Code 
-    href: https://code.visualstudio.com/docs
-  - name: Visual Studio for Mac
-    href: https://visualstudio.microsoft.com/vs/mac/
-  
+
