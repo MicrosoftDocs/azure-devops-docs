@@ -62,7 +62,7 @@ TFS 2010 | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows Shar
 
 NTLM is the recommended authentication provider. Team Foundation Server Extensions for SharePoint Products doesn't support Basic authentication or anonymous authentication.  In SharePoint Server 2013, Microsoft deprecated Windows classic authentication to move to claims-based authentication. TFS supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS supports only NTLM-based claims.
 
-You can configure the TFS extension for SharePoint Products on your SharePoint server in the [TFS administration console](/azure/devops/server/ref/command-line/open-admin-console).
+You can configure the TFS extension for SharePoint Products on your SharePoint server in the [TFS administration console](/azure/devops/server/command-line/open-admin-console).
 
 > [!TIP]
 > If you plan to install SharePoint, make sure that the SharePoint version you want to install is compatible with the server operating system you're using. Support for server operating systems in TFS is more amenable than in SharePoint.

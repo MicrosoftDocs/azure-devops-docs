@@ -14,6 +14,8 @@
     href: assign-paid-extensions.md
   - name: Install extensions on-premises
     href: get-tfs-extensions.md
+  - name: Trusting offerings in Marketplace
+    href: trust.md
 - name: How-to Guides
   items:
   - name: Manage extension permissions (Security)
@@ -34,4 +36,3 @@
     href: marketplace-billing-qa.md
   - name: FAQs about TFS extensions
     href: tfs-extension-faqs.md
-
