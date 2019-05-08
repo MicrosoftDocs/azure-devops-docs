@@ -8,15 +8,15 @@ ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+ms.date: 05/08/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 #  Discover extensions in the Marketplace
 
 In the Visual Studio Marketplace you can do the following:
 
-- Discover and install extensions for Visual Studio, **Azure DevOps Services**, **Team Foundation Server (TFS)**, and Visual Studio Code
+- Discover and install extensions for Azure DevOps, Visual Studio and Visual Studio Code.
 - Purchase subscriptions for Visual Studio or Xamarin University
 
 ![Extensions Marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
@@ -52,23 +52,9 @@ You must have administrative permissions to upload or install extensions.
 
 | Product | Topics |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Azure DevOps Services | [Get extensions for Azure DevOps Services](install-extension.md) <br/> [Develop extensions for Azure DevOps Services](https://aka.ms/vsoextensions) |
-| Team Foundation Server | [Get extensions for TFS](get-tfs-extensions.md) <br/> [Develop extensions for Team Foundation Server](https://aka.ms/vsoextensions) |
+| Azure DevOps | [Get extensions for Azure DevOps](install-extension.md) <br/> [Develop extensions for Azure DevOps](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](https://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |
-
-
-## Free extensions
-
-There are many free extensions available in the Marketplace, too numerous to list. However, the following extensions are listed as they quickly add a lot of value and are easily installed.
-
-- [Work Item Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search)   
-- [Campfire integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-campfire)   
-- [Hipchat integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-hipchat)   
-- [Slack integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack)   
-- [Microsoft Teams integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)    
-
-Browse the [Marketplace](https://marketplace.visualstudio.com/) to find additional extensions.
 
 
 

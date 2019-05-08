@@ -92,7 +92,7 @@
       href: publish/overview.md
     - name: Package and publish integrations
       href: publish/integration.md
-    - name: Make your listing public
+    - name: Make listing public and Top Publisher program
       href: publish/publicize.md
     - name: Publish via command line
       href: publish/command-line.md
@@ -185,6 +185,3 @@
       href: reference/client/controls/waitcontrol.md
     - name: How to get help
       href: support/help.md
-
-
-
