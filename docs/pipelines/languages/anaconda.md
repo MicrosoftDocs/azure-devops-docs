@@ -19,6 +19,35 @@ monikerRange: 'azure-devops'
 
 This guidance explains how to set up and use Anaconda environments in your pipelines.
 
+## Get started
+
+Follow these instructions to set up a pipeline for a sample Python app with Anaconda environment.
+
+1. The code in the following repository is a simple Python app. To get started, fork this repo to your GitHub account.
+
+    ```
+    https://github.com/MicrosoftDocs/pipelines-anaconda
+    ```
+
+1. Sign in to your Azure DevOps organization and navigate to your project.
+
+1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When the list of repositories appears, select your Java sample repository.
+
+1. Azure Pipelines will analyze the code in your repository and detect an existing `azure-pipelines.yml` file.
+
+1. Select **Run**.
+
+1. A new run is started. Wait for the run to finish.
+
+> [!TIP]
+> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
 ## Add conda to your system path
 
 On hosted agents, conda is left out of `PATH` by default to keep its Python version from conflicting with other installed versions. The `task.prependpath` agent command will make it available to all subsequent steps.

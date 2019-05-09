@@ -128,7 +128,7 @@ To set a specific Xamarin SDK version to use on the Microsoft-hosted macOS agent
 
 ## Build Xamarin.Android and Xamarin.iOS apps with one pipeline
 
-You can build and test your Xamarin.Android app, Xamarin.iOS app, and related apps in the same pipeline by defining [multiple jobs](../process/multiple-phases.md) in `azure-pipelines.yml`. These jobs can run in parallel to save time. The following complete example builds a Xamarin.Android app on Windows, and a Xamarin.iOS app on macOS, using two jobs.
+You can build and test your Xamarin.Android app, Xamarin.iOS app, and related apps in the same pipeline by defining multiple [jobs](../process/phases.md) in `azure-pipelines.yml`. These jobs can run in parallel to save time. The following complete example builds a Xamarin.Android app on Windows, and a Xamarin.iOS app on macOS, using two jobs.
 
 ```yaml
 # https://docs.microsoft.com/vsts/pipelines/languages/xamarin

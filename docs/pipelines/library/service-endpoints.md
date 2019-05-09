@@ -13,7 +13,7 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Service connections for builds and releases
+# Service connections
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 You will typically need to connect to external and remote services to execute tasks
-for a build or deployment. For example, you may need to connect to your Microsoft Azure
+in a job. For example, you may need to connect to your Microsoft Azure
 subscription, to a different build server or file server, to an online continuous
 integration environment, or to services you install on remote computers.
 

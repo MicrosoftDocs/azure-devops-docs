@@ -20,7 +20,7 @@ You can use the Requirement Test Status report to help determine gaps in test co
  For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
->  You can view the Requirement Test Status report from the Test dashboard. You can access this dashboard only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Dashboards (CMMI)](http://msdn.microsoft.com/c149b78b-1803-4dc0-aefe-35dbb13a5de0).  
+>  You can view the Requirement Test Status report from the Test dashboard. You can access this dashboard only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Dashboards (CMMI)](https://msdn.microsoft.com/c149b78b-1803-4dc0-aefe-35dbb13a5de0).  
   
  **Required permissions**  
   

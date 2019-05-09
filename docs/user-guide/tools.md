@@ -160,10 +160,10 @@ You can perform many code development and administrative tasks by using command-
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
 
 ::: moniker range=">= tfs-2013 < azure-devops"
-- [TFSConfig](/azure/devops/server/ref/command-line/tfsconfig-cmd)
-- [TFSDeleteProject](/azure/devops/server/ref/command-line/tfsdeleteproject-cmd)
-- [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd)
-- [TFSServiceControl](/azure/devops/server/ref/command-line/tfsservicecontrol-cmd)
+- [TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)
+- [TFSDeleteProject](/azure/devops/server/command-line/tfsdeleteproject-cmd)
+- [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
+- [TFSServiceControl](/azure/devops/server/command-line/tfsservicecontrol-cmd)
 - [witadmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 ::: moniker-end
 

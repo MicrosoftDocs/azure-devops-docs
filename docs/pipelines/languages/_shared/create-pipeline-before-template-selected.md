@@ -9,7 +9,7 @@
 
  > [!NOTE]
  >
- > If this is not what you see, then [make sure the New YAML pipeline creation experience is turned on](../../../project/navigation/preview-features.md).
+ > If this is not what you see, then [make sure the Multi-stage pipelines experience is turned on](../../../project/navigation/preview-features.md).
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 

@@ -21,6 +21,11 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. To understand artifacts in YAML pipelines, see [artifacts](../artifacts/artifacts-overview.md).
+::: moniker-end
+
 A release is a collection of artifacts in your DevOps CI/CD processes. An **artifact** is a deployable
 component of your application. Azure Pipelines can
 deploy artifacts that are produced by a
@@ -551,6 +556,6 @@ information about each of these. For a list of all pre-defined artifact variable
 ## Related topics
 
 * [Release pipelines](index.md)
-* [Stages](environments.md)
+* [Stages](../process/stages.md)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

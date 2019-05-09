@@ -1,7 +1,7 @@
 ---
-title: Set build and release permissions
+title: Add users to Azure Pipelines
 ms.custom: seodec18
-description: Grant or restrict access to build-release, library, task group, and variable group functions in Azure Pipelines or Team Foundation Server
+description: Add users to Azure Pipelines, Azure DevOps Server, or TFS
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.prod: devops
 ms.technology: devops-cicd
@@ -9,19 +9,17 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 11/1/2018
+ms.date: 05/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Set build and release permissions
+# Add users to Azure Pipelines
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 ::: moniker range="> tfs-2018"
-
-## Add your teammates
 
 If your teammates want to edit pipelines, then have an administrator add them to your project:
 

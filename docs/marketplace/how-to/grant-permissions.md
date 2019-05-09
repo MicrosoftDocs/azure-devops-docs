@@ -40,7 +40,7 @@ Add users or update permission settings:
 
 ## Grant publish and update permissions on TFS
 
-To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/azure/devops/server/ref/command-line/tfssecurity-cmd#permissions) command-line tool.
+To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#permissions) command-line tool.
 
 0.	At the server level, create a group, for example, "TFS Extension Publishers":
 

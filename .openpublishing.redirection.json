@@ -3397,7 +3397,7 @@
     },
     {
       "source_path": "docs/release/author-release-definition/understanding-environments.md",
-      "redirect_url": "/azure/devops/pipelines/release/environments",
+      "redirect_url": "/azure/devops/pipelines/process/stages",
       "redirect_document_id": false
     },
     {
@@ -3612,7 +3612,7 @@
     },
     {
       "source_path": "docs/release/getting-started/understand-rm.md",
-      "redirect_url": "/azure/devops/pipelines/release/what-is-release-management",
+      "redirect_url": "/azure/devops/pipelines/release/index",
       "redirect_document_id": false
     },
     {
@@ -6372,18 +6372,18 @@
     },
     {
       "source_path": "docs/build-release/archive/preview/new-release-landing-page.md",
-      "redirect_url": "/azure/devops/pipelines/preview/new-release-landing-page",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/preview/new-release-summary.md",
-      "redirect_url": "/azure/devops/pipelines/preview/new-release-summary",
+      "redirect_url": "/azure/devops/pipelines",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/archive/release/index.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/overview-rm2013.md",
@@ -6527,13 +6527,13 @@
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/environments.md",
-      "redirect_url": "/azure/devops/pipelines/release/environments",
+      "redirect_url": "/azure/devops/pipelines/process/stages",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/index.md",
       "redirect_url": "/azure/devops/pipelines/release/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/triggers.md",
@@ -6547,7 +6547,7 @@
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/what-is-release-management.md",
-      "redirect_url": "/azure/devops/pipelines/release/what-is-release-management",
+      "redirect_url": "/azure/devops/pipelines/release/index",
       "redirect_document_id": true
     },
     {
@@ -6647,18 +6647,23 @@
     },
     {
       "source_path": "docs/build-release/concepts/process/multiple-phases.md",
-      "redirect_url": "/azure/devops/pipelines/process/multiple-phases",
+      "redirect_url": "/azure/devops/pipelines/process/phases",      
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/process/multiple-phases.md",
+      "redirect_url": "/azure/devops/pipelines/process/phases",      
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/concepts/process/phases.md",
       "redirect_url": "/azure/devops/pipelines/process/phases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/server-phases.md",
-      "redirect_url": "/azure/devops/pipelines/process/server-phases",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/process/phases",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/tasks.md",
@@ -7402,7 +7407,7 @@
     },
     {
       "source_path": "docs/build-release/actions/ci-build-git.md",
-      "redirect_url": "/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "/azure/devops/pipelines/customize-pipeline",
       "redirect_document_id": true
     },
     {
@@ -7412,7 +7417,7 @@
     },
     {
       "source_path": "docs/build-release/actions/ci-build-github.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-yaml",
+      "redirect_url": "/azure/devops/pipelines/customize-pipeline",
       "redirect_document_id": false
     },
     {
@@ -11582,7 +11587,7 @@
     },
     {
       "source_path": "docs/pipelines/build/ci-build-github.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-designer",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
     },
     {
@@ -11703,6 +11708,21 @@
     {
       "source_path": "docs/user-guide/what-happened-vsts.md",
       "redirect_url": "/azure/devops/user-guide/what-is-azure-devops#vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/preview/new-release-summary.md",
+      "redirect_url": "/azure/devops/pipelines/release/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/release/environments.md",
+      "redirect_url": "/azure/devops/pipelines/process/stages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md",
+      "redirect_url": "/azure/devops/reference/mapping/index",
       "redirect_document_id": false
     }
   ]

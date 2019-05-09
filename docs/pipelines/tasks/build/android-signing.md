@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to sign and align Android APK files.
+Use this task in a pipeline to sign and align Android APK files.
 
 ## Demands
 
@@ -56,19 +56,19 @@ The build agent must have the following capabilities:
 <tr>
 <td>Sign the APK</td>
 <td>
-Select this option to sign the APK with a provided keystore file. Unsigned APKs can only run in an emulator. APKs must be signed to run on a device.
+Select this option to sign the APK with a provided Android Keystore file. Unsigned APKs can only run in an emulator. APKs must be signed to run on a device.
 </td>
 </tr>
 <tr>
 <td>Keystore File</td>
 <td>
-Enter the file path to the keystore file that should be used to sign the APK. It can either be checked into source control or placed on the build machine directly by an administrator. It is recommended to encrypt the keystore file in source control and use the **Decrypt File** task to decrypt the file during the build.
+Select or enter the name of the Android Keystore file that should be used to sign the APK. This file must be uploaded to the [secure files](../../library/secure-files.md) library where it is securely stored with encryption. The Android Keystore file will be used to sign the APK, but will be removed from the agent machine when the pipeline completes.
 </td>
 </tr>
 <tr>
 <td>Keystore Password</td>
 <td>
-<p>Enter the password for the provided keystore file.</p>
+<p>Enter the password for the provided Android Keystore file.</p>
 <blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../process/variables.md#secret-variables).
 </blockquote>
 </td>
@@ -76,13 +76,13 @@ Enter the file path to the keystore file that should be used to sign the APK. It
 <tr>
 <td>Alias</td>
 <td>
-Enter the alias that identifies the public/private key pair to be used in the keystore file.
+Enter the alias that identifies the public/private key pair to be used in the Android Keystore file.
 </td>
 </tr>
 <tr>
 <td>Key Password</td>
 <td>
-Enter the key password for the alias and keystore file.
+Enter the key password for the alias and Android Keystore file.
 <blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../process/variables.md#secret-variables).
 </blockquote>
 </td>

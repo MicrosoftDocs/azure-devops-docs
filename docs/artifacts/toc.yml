@@ -1,5 +1,7 @@
-- name: Azure Artifacts
+- name: Azure Artifacts Documentation
   href: index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+- name: Azure Artifacts
+  href: get-started/index.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Overview
   items:
   - name: What is Azure Artifacts?
@@ -8,6 +10,8 @@
   #   href: tbd
   - name: License Azure Artifacts
     href: license-azure-artifacts.md #remove after update
+  - name: Sign up for Azure Artifacts
+    href: sign-up-azure-artifacts.md
   - name: Key concepts
     href: artifacts-key-concepts.md
 - name: Quickstarts
@@ -58,6 +62,8 @@
     href: concepts/package-graph.md
   - name: Symbols
     href: concepts/symbols.md
+  - name: Where is Package Management?
+    href: where-is-package-management.md
 - name: How-to
   items:
   - name: NuGet
@@ -138,5 +144,8 @@
     href: reference/artifactignore.md
 - name: Resources
   items: 
-  - name: Where is Package Management?
-    href: where-is-package-management.md
+  - name: Azure Repos
+    href: /azure/devops/repos 
+  - name: Azure Pipelines
+    href: /azure/devops/pipelines 
+

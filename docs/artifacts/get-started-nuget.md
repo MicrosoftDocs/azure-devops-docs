@@ -16,8 +16,12 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
+::: moniker range=">=tfs-2017 <= tfs-2018"
+
 ## Before you start
 This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+
+::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops"
 

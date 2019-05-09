@@ -1,16 +1,10 @@
 - name: Sprints (Scrum) 
   href: index.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
 - name: Overview
-  expanded: true
+
   items:
   - name: About sprints and Scrum
     href: scrum-overview.md
-  - name: "Backlogs, boards, & plans"
-    href: ../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Best tool for the job
-    href: ../work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Start using Azure Boards
-    href: ../get-started/index.md
 - name: Quickstarts
   items:
   - name: Schedule sprints
@@ -43,52 +37,7 @@
     href: scrum-key-concepts.md
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
-  - name: About areas and iterations
-    href: ../../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: "Workflow states & state categories"
-    href: ../work-items/workflow-and-state-categories.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: About teams and Agile tools
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-- name: How-to Guides
-  items:
-  - name: "Filter backlogs & queries"
-    href: ../backlogs/filter-backlogs.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Copy list
-    href: ../backlogs/copy-list.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Bulk add or modify (Web)
-    href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Switch project or team focus
-    href: ../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: "Manage permissions & access (Security)"
-    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-- name: Troubleshooting
-  items:
-  - name: Set up your backlogs and boards
-    href: ../backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/boards/toc.json&bc=/azure/devops/boards/boards/breadcrumb/toc.json  
-- name: Reference
-  items:
-  - name: "Default permissions & access (Security)"
-    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Work item field index
-    href: ../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-  - name: Backlog keyboard shortcuts
-    href: ../backlogs/backlogs-keyboard-shortcuts.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Work Items
-    href: ../work-items/index.md
-  - name: Backlogs
-    href: ../backlogs/index.md
-  - name: Boards
-    href: ../boards/index.md
-  - name: Queries
-    href: ../queries/index.md
-  - name: Customization
-    href: ../../reference/index.md
-  - name: What is Scrum?
-    href: /azure/devops/agile/what-is-scrum
+
 
 
 

@@ -13,12 +13,17 @@ ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Release, branch, and stage triggers
+# Release triggers
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. To understand triggers in YAML pipelines, see [pipeline triggers](../build/triggers.md).
 ::: moniker-end
 
 You can configure when releases should be created, and when those releases should be deployed to stages,

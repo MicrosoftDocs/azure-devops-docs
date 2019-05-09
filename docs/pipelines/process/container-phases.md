@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: macoope
-ms.date: 03/19/2019
+ms.date: 05/06/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -16,9 +16,9 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines**
 
-By default, jobs run on the host machine where the [agent](../agents/agents.md)
+By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
-This is convenient and typically well-suited for projects that are just beginning to adopt continuous integration (CI).
+This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the stage where your tasks run.
 
 <!-- this appears to be identical to the topic monikerRange, but there are build warnings without it -->
@@ -37,7 +37,7 @@ Then, each step of the job will run inside the container.
 ### Linux-based containers
 
 The Azure Pipelines system requires a few things in Linux-based containers:
-- Bash (for the `bash` step / task, which most container pipelines will use)
+- Bash
 - glibc-based
 - Can run Node.js (which the agent provides)
 - Does not define an `ENTRYPOINT`
@@ -109,7 +109,7 @@ steps:
 
 ## Multiple jobs
 
-Containers are also useful for running the same steps in [multiple jobs](multiple-phases.md).
+Containers are also useful for running the same steps in multiple [jobs](phases.md).
 In the following example, the same steps run in multiple versions of Ubuntu Linux.
 (And we don't have to mention the `jobs` keyword, since there's only a single job defined.)
 
@@ -213,7 +213,7 @@ jobs:
     - script: printenv
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Container jobs are not yet supported in the designer.
 

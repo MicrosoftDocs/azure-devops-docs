@@ -60,7 +60,7 @@ In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 If you are not familiar with the general concepts in this section, see
-[Accessing your project settings](https://docs.microsoft.com/en-us/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
+[Accessing your project settings](https://docs.microsoft.com/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).
 
 
@@ -117,7 +117,7 @@ YAML builds aren't yet available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 1. In the **Tasks** page of your release pipeline, choose the **+**
   (plus sign) in the **Agent job** section.
@@ -177,7 +177,7 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 # See also
 
 * [Artifacts](artifacts.md)
-* [Stages](environments.md)
+* [Stages](../process/stages.md)
 * [Triggers](triggers.md)
 * [YAML schema reference](../yaml-schema.md)
 

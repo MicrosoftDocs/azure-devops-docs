@@ -3149,7 +3149,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>[29 April 2015](http://azure.microsoft.com/blog/2015/04/29/announcing-application-insights-public-preview-2/)</td>
+            <td>[29 April 2015](https://azure.microsoft.com/blog/2015/04/29/announcing-application-insights-public-preview-2/)</td>
             <td>Application Insights Public Commercial Preview</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3245,7 +3245,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>[9 Mar 2015](http://azure.microsoft.com/documentation/articles/app-insights-java-get-started/)</td>
+            <td>[9 Mar 2015](https://azure.microsoft.com/documentation/articles/app-insights-java-get-started/)</td>
             <td>Application Insights support for Java</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3272,7 +3272,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>[29 Jan 2015](http://azure.microsoft.com/updates/application-insights-support-for-windows-phone-and-windows-store/)</td>
+            <td>[29 Jan 2015](https://azure.microsoft.com/updates/application-insights-support-for-windows-phone-and-windows-store/)</td>
             <td>Application Insights support for Windows Phone and Windows Store Applications</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3325,11 +3325,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td rowspan="2">11 Dec 2014</td>
-            <td>[Application Insights Status Monitor and SDK updates](http://azure.microsoft.com/updates/application-insights-status-monitor-and-sdk-updated/)</td>
+            <td>[Application Insights Status Monitor and SDK updates](https://azure.microsoft.com/updates/application-insights-status-monitor-and-sdk-updated/)</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>[Application Insights includes telemetry export and segmentation editing](http://azure.microsoft.com/updates/application-insights-adds-telemetry-export-and-segmentation-chart-editing/)</td>
+            <td>[Application Insights includes telemetry export and segmentation editing](https://azure.microsoft.com/updates/application-insights-adds-telemetry-export-and-segmentation-chart-editing/)</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>

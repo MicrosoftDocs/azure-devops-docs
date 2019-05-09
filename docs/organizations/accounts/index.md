@@ -13,7 +13,9 @@ author: chcomley
 ms.date: 02/22/2019
 monikerRange: '>= tfs-2013'
 ---
-# Organization management in Azure DevOps
+
+
+# Manage Organizations  
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -88,9 +90,5 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Resources
 
-* [Start using Azure DevOps](../../user-guide/index.yml)
-* [Manage projects](../projects/index.md)
-* [Billing](../billing/index.md)
-* [Security and identity](../../organizations/security/index.md)
-* [Manage extensions](../../marketplace/index.md)
-* [Service hooks](../../service-hooks/index.md)
+- [Get Started using Azure DevOps](../../get-started/index.md)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)

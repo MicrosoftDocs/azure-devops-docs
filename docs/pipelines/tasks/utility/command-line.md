@@ -98,7 +98,7 @@ steps:
     aVarFromYaml: someValue
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 On the Build tab of a build pipeline, add these tasks:
 

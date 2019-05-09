@@ -28,9 +28,9 @@ Common restrictions include not exceeding the character length for a name, not c
 <a id="CommonRestrictions">   </a>
 ### Common considerations 
 
-The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these count as two characters against the length restriction. For details, see [About Unicode and Character Sets](http://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
+The length restrictions in this topic are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters and these count as two characters against the length restriction. For details, see [About Unicode and Character Sets](https://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
 
-As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](http://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
+As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 

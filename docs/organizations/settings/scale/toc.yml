@@ -1,11 +1,9 @@
 - name: Manage teams
   href: index.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-- name: Overview
-  items:
-  - name: When to add a team or project
-    href: ../../projects/about-projects.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-  - name: "About teams & Agile tools"
-    href: ../about-teams-and-settings.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+- name: When to add a team or project
+  href: ../../projects/about-projects.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+- name: "About teams & Agile tools"
+  href: ../about-teams-and-settings.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Define area paths & assign to a team 
@@ -30,40 +28,16 @@
     href: ../about-areas-iterations.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
 - name: How-to Guides
   items:    
-  - name: Manage teams
-    items:
-    - name: Configure team tools
-      href: ../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json  
-    - name: Use work item templates
-      href: ../../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-    - name: Customize cards on boards
-      href: ../../../boards/boards/customize-cards.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-    - name: Reorder cards
-      href: ../../../boards/boards/reorder-cards.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-    - name: Select backlog levels
-      href: ../select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-    - name: Show bugs on backlogs & boards
-      href: ../show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-    - name: Set working days
-      href: ../set-working-days.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-  - name: Switch team context
-    href: ../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+  - name: Configure team tools
+    href: ../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json  
+  - name: Select backlog levels
+    href: ../select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+  - name: Show bugs on backlogs & boards
+    href: ../show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+  - name: Set working days
+    href: ../set-working-days.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
   - name: Manage team notifications
     href: ../../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
   - name: Set team favorites
     href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-- name: Reference
-  items:
-  - name: "Default permissions & access"
-    href: ../../security/permissions-access.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-  - name: REST APIs, Teams
-    href: /rest/api/vsts/core/teams
-- name: Resources
-  items:
-  - name: Web portal navigation
-    href: ../../../project/navigation/index.md
-  - name: Manage projects
-    href: ../../projects/index.md
-  - name: Security & identity
-    href: ../../security/index.md
 

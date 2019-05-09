@@ -70,7 +70,7 @@ Our example development team came up with these stages as essential to their pro
 
 You can always revisit these initial stages later and adjust. 
 
-Another idea, capture the list of items your team identifies as critical-to-complete for each stage. You can use that later to fill out the [Definition of Done](http://msdn.microsoft.com/library/dn914589.aspx) for each column. 
+Another idea, capture the list of items your team identifies as critical-to-complete for each stage. You can use that later to fill out the [Definition of Done](https://msdn.microsoft.com/library/dn914589.aspx) for each column. 
 
 ## Update status and handoff items
 

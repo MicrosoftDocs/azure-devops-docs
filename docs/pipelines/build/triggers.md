@@ -191,7 +191,7 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Select this trigger if you want the build to run whenever someone checks in code.
 
@@ -357,7 +357,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ### GitHub, GitHub Enterprise Server, Subversion, and Bitbucket Cloud
 
@@ -386,7 +386,7 @@ Pull request triggers are not available for Other/external Git repos.
 
 ### Trigger builds using GitHub pull request comments
 
-If your team uses GitHub pull requests, you can manually trigger pipelines using pull request comments. See details [here](../repos/github.md#trigger-builds-using-github-pull-request-comments).
+If your team uses GitHub pull requests, you can manually trigger pipelines using pull request comments. See details [here](../repos/github.md#comment-triggers).
 
 ::: moniker-end
 
@@ -405,7 +405,7 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Select the days and times when you want to run the build.
 
@@ -492,7 +492,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 Build completion triggers are not yet supported in YAML syntax.
 After you create your YAML build pipeline, you can use the designer to specify a build completion trigger.
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Large products have several components that are dependent on each other.
 These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.

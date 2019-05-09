@@ -38,7 +38,7 @@ You can select specific sets of servers from a deployment group to receive the d
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You add a deployment group job in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a release pipeline. The properties for the deployment group job are displayed when you select the job in the editor.
 
@@ -56,6 +56,4 @@ Use the job timeout to specify the timeout in minutes for jobs in this job. A ze
 ## Related topics
 
 * [Jobs](phases.md)
-* [Server jobs](server-phases.md)
-* [Multiple jobs](multiple-phases.md)
-* [Specify conditions](conditions.md)
+* [Conditions](conditions.md)

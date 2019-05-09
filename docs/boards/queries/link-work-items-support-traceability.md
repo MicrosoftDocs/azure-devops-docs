@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 05/06/2019
 ---
 
 # Linking, traceability, and managing dependencies  
@@ -28,13 +28,10 @@ In a nutshell, you can:
 - Link work items to a web address or to a storyboard or a document on a network share 
 - Link work items to architecture diagrams (requires Visual Studio Enterprise edition).      
 
-
-Below, you can learn how to link objects and which link types to use. You can link objects from the web portal or Visual Studio Team Explorer.  
+This article describes the link types available for your use. You can link objects from the web portal or Visual Studio Team Explorer. For details on linking work items and deleting links, see [Add link to work items](../backlogs/add-link.md). 
 
 > [!NOTE]    
 > Work item forms and features available to you can differ depending on whether you open the form from the web portal or Visual Studio Team Explorer. 
-
-this article describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
 
 <a id="link-work-items">  </a>
 ## Work items linked to work items
@@ -222,16 +219,33 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 ::: moniker-end
 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
+
 <a id="link-github">  </a>
-## Work items linked to GitHub commits and pull requests  
+
+## Work items linked to GitHub artifacts    
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. 
 
-The link types used are **GitHub Commit** and **GitHub Pull Request**.
+::: moniker-end 
 
-To learn more, see [GitHub & Azure Boards](../github/index.md). 
-::: moniker-end    
+::: moniker range="azure-devops"
+
+The link types supported include <strong>GitHub Commit</strong>, <strong>GitHub Issue</strong> and <strong>GitHub Pull Request</strong>.
+
+> [!IMPORTANT]  
+> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+The link types supported include <strong>GitHub Commit</strong> and <strong>GitHub Pull Request</strong>.
+
+> [!IMPORTANT]  
+> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md).
+
+::: moniker-end
 
 
 ## Work items linked to TFVC code development  
