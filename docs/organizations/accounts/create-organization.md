@@ -2,7 +2,7 @@
 title: Create a new organization, project collection
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Create your organization with a personal Microsoft account or a work or school account
+description: Create your organization with a personal Microsoft account, GitHub account, or work or school account
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/26/2019
+ms.date: 05/06/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="= azure-devops"
 
-In this quickstart, you learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
+In this quickstart, learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
 
 ::: moniker-end
 
@@ -58,23 +58,7 @@ For more information about how to create a project collection, see [create a pro
 
 <a name="SignIn"></a>
 
-## Create organization
-
-1. Go to [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137), and use either a Microsoft or Azure AD account to sign in. Choose **Next**.
-
-	  ![Enter your email address](_img/_shared/sign-in-to-azure-devops.png)
-
-	  [Got browser problems?](faq-create-organization.md#browser-problems)
-
-	  If you previously signed up for Azure DevOps, select **New organization**.
-
-      ![Select New organization](_img/_shared/create-new-organization.png)
-
-2. Enter the name of your organization and select the location to host your projects from the dropdown menu. Choose **Continue**.
-
-   ![Create your organization in Azure DevOps](_img/_shared/create-organization.png)
-
-   ![Taking you to your organization notification](_img/_shared/taking-you-to-your-azure-devops-organization.png)
+[!INCLUDE [create-organization](../../_shared/create-organization.md)]
 
 3. Select **Organization settings** and **Overview**. Confirm or change your organization settings.
 
@@ -83,12 +67,6 @@ For more information about how to create a project collection, see [create a pro
    ![Confirm organization settings, Azure AD-backed](_img/_shared/organization-settings-azure-ad-backed.png)
 
    If you're using an **Azure AD account**, confirm the directory that you're connected to. If you belong to multiple directories, ensure that you want to connect this directory to your organization. Changing the directory now is easier than [changing the directory later](faq-create-organization.md#ChangeDirectory).
-
-
-To sign in to your organization at any time, go to (https://dev.azure.com/{yourorganization}).
-
-> [!NOTE]
-> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Azure DevOps as a benefit, learn [how to add your work or school account](../../billing/link-msdn-subscription-to-organizational-account-vs.md) to your subscription so that you can use your subscriber benefits in Azure DevOps.
 
 ::: moniker-end
 

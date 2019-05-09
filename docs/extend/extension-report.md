@@ -14,7 +14,7 @@ ms.date: 04/13/2018
 
 # Extension reporting hub
 
-Now that your extension is available in the [Visual Studio Marketplace](https://review.docs.microsoft.com/en-us/vsts/extend/extension-report) you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
+Now that your extension is available in the [Visual Studio Marketplace](/azure/devops/extend/extension-report) you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or click **Reports** link on the extension details page.
 
 ## Acquisition 
