@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../../_shared/version-team-services.md)]
 
-Use the Azure Function App task to deploy [Functions](https://docs.microsoft.com/en-us/azure/azure-functions/) to Azure. 
+Use the Azure Function App task to deploy [Functions](/azure/azure-functions/) to Azure. 
 
 ## Arguments
 
