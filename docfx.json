@@ -37,7 +37,7 @@
     "externalReference": [],
     "globalMetadata": {
       "brand": "azure-devops",
-      "searchScope": ["Azure DevOps" "VSTS", "Team Services"],
+      "searchScope": ["Azure DevOps", "VSTS", "Team Services"],
       "author": "erickson-doug",
       "ms.author": "jillfra",
       "ms.topic": "conceptual",
