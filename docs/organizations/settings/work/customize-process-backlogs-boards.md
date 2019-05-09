@@ -23,11 +23,9 @@ You can customize your backlogs to add more levels or add custom work item types
 > [!div class="mx-imgBorder"]  
 > ![Changes made to the backlog levels](_img/process/process-backlog-boards-intro.png) 
 
-Your project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
-
+Your project defines two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
 
 
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../../boards/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  

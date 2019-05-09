@@ -35,7 +35,7 @@ Share information, create public projects, and collaborate with team members and
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wikis</h3>
+                        <h3><a href="/azure/devops/project/wiki/index">Wikis</a></h3>
                         <p>
                             <a href="/azure/devops/project/wiki/provisioned-vs-published-wiki">Provisioned vs published wikis</a>
                         </p>
@@ -67,6 +67,7 @@ Share information, create public projects, and collaborate with team members and
                     </div>
                     <div class="cardText">
                         <h3>Public Projects</h3>
+                        <h3><a href="/azure/devops/organizations/public/index">Public Projects</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/public/about-public-projects">What is a public project?</a>
                         </p>
@@ -94,7 +95,7 @@ Share information, create public projects, and collaborate with team members and
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Feedback</h3>
+                        <h3><a href="/azure/devops/project/feedback/index">Feedback</a></h3>
                         <p>
                             <a href="/azure/devops/test/request-stakeholder-feedback">Test & Feedback extension</a>
                         </p>

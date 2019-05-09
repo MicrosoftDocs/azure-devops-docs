@@ -18,7 +18,6 @@ ms.date: 04/22/2019
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
-
 Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories. 
 
 Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
@@ -27,8 +26,6 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
