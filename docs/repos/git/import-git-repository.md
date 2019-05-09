@@ -113,6 +113,12 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
     git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ``` 
 
+0. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
+
+    ```
+    git lfs fetch origin --all
+    git lfs push --all https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
+    ```
 0. Delete the temporary folder by running the following commands.
 
     ```
