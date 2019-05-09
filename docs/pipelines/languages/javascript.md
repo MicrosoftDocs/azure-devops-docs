@@ -30,22 +30,48 @@ This guidance explains how to automatically build and test JavaScript and Node.j
 
 ::: moniker-end
 
-## Example
+## Get started
 
-The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub, or import it into Azure Repos.
-
-```
-https://github.com/MicrosoftDocs/pipelines-javascript
-```
+Follow these instructions to set up a pipeline for a sample Node app.
 
 ::: moniker range="azure-devops"
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a pipeline for the sample app.
-When you're done with that topic, you'll have a working YAML file (`azure-pipeines.yml`) in your repository that you can continue to modify by following the instructions in this topic. To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
+1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
+
+    ```
+    https://github.com/MicrosoftDocs/pipelines-javascript
+    ```
+
+1. Sign in to your Azure DevOps organization and navigate to your project.
+
+1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When the list of repositories appears, select your Java sample repository.
+
+1. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
+
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+
+1. A new run is started. Wait for the run to finish.
+
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+
+> [!TIP]
+> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
+1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
+
+    ```
+    https://github.com/MicrosoftDocs/pipelines-javascript
+    ```
 
 1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **Empty process** template.
 

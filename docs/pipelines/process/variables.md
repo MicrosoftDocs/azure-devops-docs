@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 04/10/2019
+ms.date: 04/29/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,7 +24,8 @@ The system will replace the variable with its current value during the pipeline'
 
 Some variables are automatically set by the system.
 As a pipeline author or end user, you cannot change the value of such variables.
-See the comprehensive lists of systems variables available as [build variables](../build/variables.md) and [release variables](../release/variables.md).
+* If you use classic build pipelines or use YAML to author your pipeline, then see [build variables](../build/variables.md) for a comprehensive list of system variables.
+* If you use classic release pipelines, then see [release variables](../release/variables.md).
 
 In this topic, we discuss user-defined variables. Names of these variables consist of letters, numbers, `.`, and `_` characters.
 
@@ -97,7 +98,7 @@ jobs:
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You can set a variable for a build pipeline by following these steps:
 
@@ -159,7 +160,7 @@ It is recommended that you use the script's environment in order to pass secrets
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 [!INCLUDE [temp](_shared/set-secrets.md)]
 
@@ -320,7 +321,7 @@ jobs:
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ### Set a job-scoped variable from a script
 
@@ -369,7 +370,7 @@ For more information about counters and other expressions, see [expressions](exp
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You can use any of the supported expressions for setting a variable. Here is an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
@@ -395,7 +396,7 @@ You can set a default value in the editor, and that value can be overridden by t
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
 To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at queue time**.
@@ -486,7 +487,7 @@ If the variable `a` is an output variable from a previous job, then you can use 
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
 

@@ -1,21 +1,15 @@
 - name: Power BI Integration
   href: index.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-- name: Overview
-  expanded: true
-  items:
-  - name: About Power BI integration
-    href: overview.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-  - name: What is the Analytics service?
-    href: what-is-analytics.md
-  - name: What are Analytics views?
-    href: what-are-analytics-views.md
-- name: Quickstarts
-  expanded: true
-  items:
-  - name: Create a Power BI report
-    href: create-quick-report.md
+- name: About Power BI integration
+  href: overview.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+- name: What is the Analytics service?
+  href: what-is-analytics.md
+- name: What are Analytics views?
+  href: what-are-analytics-views.md
+- name: Create a Power BI report
+  href: create-quick-report.md
 - name: Tutorials
-  expanded: true
+
   items:
   - name: Create an Analytics view
     href: analytics-views-create.md?
@@ -29,8 +23,6 @@
     href: analytics-historical-filtering.md
 - name: How-to Guides
   items:
-  - name: Install the Analytics extension (on-premises)
-    href: ../dashboards/analytics-extension.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Connect using Data Connector 
     href: data-connector-connect.md
   - name: Access data through Excel 
@@ -63,25 +55,8 @@
     href: troubleshooting-views.md
 - name: Reference
   items:
-  - name: Work item field index
-    href: ../../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
   - name: Data available
     href: data-available-in-analytics.md
   - name: Dataset design 
     href: data-connector-dataset.md
-  - name: Reporting roadmap
-    href: reporting-roadmap.md
-  - name: Analytics OData v4 endpoint
-    href: ../extend-analytics/data-model-analytics-service.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Dashboards, Charts, Reports, & Widgets
-    href: ../dashboards/index.md
-  - name: Extend Analytics with OData
-    href: ../extend-analytics/index.md
-  - name: Power BI Desktop
-    href: /power-bi/desktop-getting-started
-  - name: Power BI Documentation
-    href: /power-bi/
-  - name: "Developer Community: Power BI support forum"
-    href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI
+

@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2017'
 
 This quickstart guides you through using npm to store JavaScript packages in Azure DevOps Services or Team Foundation Server (TFS). It covers installation, license assigning, and setup.
 
-## Step 1: License the Azure Artifacts extension
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
-::: moniker range="< azure-devops-2019" 
+## License the Azure Artifacts extension
 
 ### Install Azure Artifacts in TFS
 
@@ -30,9 +30,9 @@ Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Art
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019" 
+::: moniker range="azure-devops-2019" 
 
-### Assign Azure Artifacts in Azure DevOps Services
+## Assign Azure Artifacts in Azure DevOps Services
 
 Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
 
@@ -52,7 +52,7 @@ If you have a Visual Studio Enterprise license, you already have access to Packa
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019" 
+::: moniker range=">=tfs-2017 <= tfs-2018"
 
 ### Assign licenses in TFS
 
@@ -74,7 +74,7 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 ::: moniker-end
 
-## Step 2: Create a feed
+## Create a feed
 
 On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Click the **+ New feed** button.
 
@@ -97,9 +97,11 @@ In the dialog box:
 
 ::: moniker-end
 
-You can change these settings later by [editing the feed](./feeds/edit-feed.md).
+You can change these settings later by editing the feed.
 
-## Step 3: Set up your .npmrc files
+[!INCLUDE [edit-feed](_shared/edit-feed.md)]
+
+## Set up your .npmrc files
 
 All Azure Artifacts feeds require authentication. You'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
@@ -316,9 +318,9 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. After setting up your **npm Authenticate** task, you can add other build tasks for your task runner, like **Gulp**.
 
-## Step 4: Use packages from npmjs.com
+## Use packages from npmjs.com
 
-In addition to packages that you publish, you can use packages from [www.npmjs.com](https://www.npmjs.com/) through this feed via *upstream sources*. Because this feed was created with public registries enabled (see [Step 2](#step-2-create-a-feed)), you should be able to use packages from an upstream source. To try it, run an `npm install` command (for example, `npm install lodash`) in a shell opened to your project's folder. Learn more about upstream sources on the [upstream sources concepts page](concepts/upstream-sources.md).
+In addition to packages that you publish, you can use packages from [www.npmjs.com](https://www.npmjs.com/) through this feed via *upstream sources*. Because this feed was created with public registries enabled (see [Create a feed](#create-a-feed)), you should be able to use packages from an upstream source. To try it, run an `npm install` command (for example, `npm install lodash`) in a shell opened to your project's folder. Learn more about upstream sources on the [upstream sources concepts page](concepts/upstream-sources.md).
 
 You can choose to enable or disable upstream sources on the **Settings** > **Upstream sources** tab:
 
@@ -335,11 +337,11 @@ You can choose to enable or disable upstream sources on the **Settings** > **Ups
 
 ::: moniker-end
 
-## Step 5: Build your project
+## Build your project
 
-At this point, your project should have a package.json file and an .npmrc file adjacent to each other. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Step 2](#step-2-create-a-feed).
+At this point, your project should have a package.json file and an .npmrc file adjacent to each other. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#create-a-feed).
 
-## Step 6: Publish an npm package
+## Publish an npm package
 
 You can now publish the npm package:
 
@@ -347,7 +349,7 @@ You can now publish the npm package:
 
 1. Run `npm publish`.
 
-> The `npm publish` command will work because of the credentials that you acquired in [Step 3: Set up your .npmrc files](#step-3-set-up-your-npmrc-files).
+> The `npm publish` command will work because of the credentials that you acquired in [Set up your .npmrc files](#set-up-your-npmrc-files).
 
 If you have followed all of the steps up to this point, package publishing should simply work.
 

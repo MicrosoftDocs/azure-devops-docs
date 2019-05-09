@@ -1,5 +1,5 @@
 ---
-title: Build and release permissions and security roles
+title: Pipeline permissions and security roles
 ms.topic: conceptual
 ms.custom: seodec18
 description: Understand how permissions and roles are used to securely manage build and release operations in Azure Pipelines and Team Foundation Server (TFS).
@@ -13,15 +13,15 @@ ms.date: 02/12/18
 monikerRange: '>= tfs-2015'
 ---
 
-# Build and release permissions and security roles
+# Pipeline permissions and security roles
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
-To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** in the web portal, either from the user or admin context.
+To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** in the web portal, either from the user or admin context.
 
-This topic provides a description of the permissions and roles used to secure operations. To learn how to set permissions or add a user or group to a role, see [Set build and release permissions](set-permissions.md).
+This topic provides a description of the permissions and roles used to secure operations. To learn how to add a user or group to Azure Pipelines, see [Users](set-permissions.md).
 
 For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and groups](../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md).
 
@@ -44,16 +44,15 @@ and [service connection](../library/service-endpoints.md#security).
 Membership of these roles can be configured hierarchically, as well
 as at either project level or individual entity level.
 
-## Build permissions
+## Pipeline permissions
 
-Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build pipeline.
+Build and YAML pipeline permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build pipeline.
 
-To set the permissions at project level for all build pipelines in a project, choose **Security** from the action bar on the main page of Builds hub.
+To set the permissions at project level for all pipelines in a project, choose **Security** from the action bar on the main page of Builds hub.
 
-To set or override the permissions for a specific build pipeline, choose **Security** from the context menu of the build pipeline.
+To set or override the permissions for a specific pipeline, choose **Security** from the context menu of the pipeline.
 
-The following permissions are defined in Build. All of these can be set at both the levels.
-
+The following permissions are defined for pipelines. All of these can be set at both the levels.
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description |
@@ -93,7 +92,7 @@ When it comes to security, there are different best practices and levels of perm
 
 ## Release permissions
 
-Permissions for releases follow a hierarchical model.
+Permissions for release pipelines follow a hierarchical model.
 Defaults for all the permissions can be set at the project
 level and can be overridden on an individual release pipeline.
 Some of the permissions can also be overridden on a specific

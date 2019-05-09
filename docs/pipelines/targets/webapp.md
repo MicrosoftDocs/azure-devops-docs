@@ -53,7 +53,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ::: moniker range="< azure-devops"
 
@@ -152,7 +152,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** task.
 This task is automatically added to the release pipeline when you select one of the prebuilt deployment templates for Azure App Service deployment.
@@ -185,7 +185,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 ::: moniker range="azure-devops"
 
@@ -225,7 +225,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 By default, your deployment happens to the root application in the Azure Web App. If you want to deploy to a specific virtual application,
 enter its name in the **Virtual Application** property of the **Azure App Service Deploy** task.
@@ -266,7 +266,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
@@ -326,10 +326,10 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 If you want to deploy to multiple web apps, add stages to your release pipeline.
-You can control the order of deployment. To learn more, see [Stages](../release/environments.md).
+You can control the order of deployment. To learn more, see [Stages](../process/stages.md).
 
 ---
 
@@ -379,7 +379,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 To change `connectionString` by using variable substitution:
 
@@ -423,7 +423,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 In your release pipeline, you can implement various checks and conditions to control the deployment:
 

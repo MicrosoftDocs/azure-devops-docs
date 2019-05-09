@@ -37,8 +37,8 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versio
 | queues        | string   | A comma-delimited list of queue IDs.
 | buildNumber   | string   | Filters to builds with build numbers that start with this value.
 | type          | enum { build, xaml } | The type of builds to retrieve.
-| minFinishTime | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) | Builds that finished after this time.
-| maxFinishTime | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) | Builds that finished before this time.
+| minFinishTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Builds that finished after this time.
+| maxFinishTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Builds that finished before this time.
 | requestedFor  | string   | Builds requested by this user<br/>Alias of the user. `fabrikamfiber4@hotmail.com`, for example.
 | reasonFilter  | enum { manual, individualCI, batchedCI, schedule, userCreated, validateShelveset, checkInShelveset, triggered, all } | The reason the build was created.
 | resultFilter  | enum { succeeded, partiallySucceeded, failed, canceled } | The build result
@@ -2966,8 +2966,8 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId
 | Body
 | keepForever | boolean | Whether to exclude the build from retention policies.
 | buildNumber | string  | The build number.
-| startTime   | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) | The start time. This can only be set once.
-| finishTime  | [DateTime](http://msdn.microsoft.com/library/az4se3k1.aspx) | The finish time. This can only be set once.
+| startTime   | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | The start time. This can only be set once.
+| finishTime  | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | The finish time. This can only be set once.
 | status      | enum { inProgress, completed, cancelling, postponed, notStarted, all } | The build status. Once this is "completed", it can no longer be changed.
 | sourceVersion | string | The source version.
 | result      | enum { succeeded, partiallySucceeded, failed, canceled } | The build result.

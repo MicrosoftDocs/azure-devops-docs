@@ -17,13 +17,13 @@ monikerRange: 'azure-devops'
 > [!NOTE]
 > Universal Packages are currently in public preview.
 
-Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest). 
+Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest). 
 
 This quickstart shows you how to publish your first Universal Package by using the CLI, and how to download it by using the CLI. To see your package, you can go to your feed in Azure Artifacts.
 
 ## Prerequisites
 
-1. Download and install the latest [build](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) of the Azure CLI.
+1. Download and install the latest [build](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) of the Azure CLI.
 2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
 3. Install the Azure DevOps extension for the Azure CLI using the command ```az extension add --name azure-devops```
 
@@ -105,7 +105,7 @@ az devops configure --defaults organization=https://[your-organization].visualst
 
 Publish a package with `az artifacts universal publish`. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
 
-Update these values as desired, and use the feed name that you noted earlier. You must use [Semantic Versioning (SemVer)](https://semver.org) for the version. Package names must be lowercase and can use only letters, numbers, and dashes (`-`).
+Update these values as desired, and use the feed name that you noted earlier. You must use [Semantic Versioning (SemVer)](https://semver.org/spec/v1.0.0.html) for the version. Package names must be lowercase and can use only letters, numbers, and dashes (`-`).
 
 # [New URLs](#tab/azuredevops)
 

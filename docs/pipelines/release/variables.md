@@ -1,5 +1,5 @@
 ---
-title: Release variables  and debugging
+title: Release variables and debugging
 ms.custom: seodec18
 description: Understand release variables in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
@@ -13,12 +13,17 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Default and custom release variables and debugging
+# Release variables and debugging
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. To understand variables in YAML pipelines, see [variables](../process/variables.md).
 ::: moniker-end
 
 As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
@@ -30,7 +35,7 @@ and the value of this variable can be changed from one stage
 to another. These are **custom variables**.
 
 * Use information about the context of the particular release,
-[stage](environments.md), [artifacts](artifacts.md), or
+[stage](../process/stages.md), [artifacts](artifacts.md), or
 [agent](../agents/agents.md) in which the deployment pipeline is
 being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the

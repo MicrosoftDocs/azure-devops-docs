@@ -9,7 +9,7 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 07/20/2018
+ms.date: 05/09/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -60,7 +60,7 @@ steps:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 You can allow scripts and tasks to access System.AccessToken at the job level.
 

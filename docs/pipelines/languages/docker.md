@@ -36,18 +36,51 @@ This guidance explains how to automatically build Docker images and push them to
 ::: moniker-end
 
 <a name="example"></a>
-## Example
+## Get started
 
-The code in the following repository is a project with a Dockerfile that you can use to follow along. Import this repo into Azure Repos or fork it into GitHub.
+Follow these instructions to set up a pipeline for a sample Docker application.
+
+::: moniker range="azure-devops"
+
+### Get the code
+
+If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
+
+However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 ```
 
-::: moniker range="azure-devops"
+### Create an Azure Container Registry
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a pipeline for the sample app.
-When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for your to customize.
+Create an [Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal) if you do not have one already.
+
+### Sign in to Azure Pipelines
+
+[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](_shared/create-project.md)]
+
+### Create a pipeline
+
+[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+
+When the **Configure** tab appears, select **Docker**. The Docker template requires additional inputs. 
+
+1. Select the Azure subscription to push the image to. Then, select the Azure container registry that you created above.
+
+1. Select **Validate and configure** to generate the YAML file.
+
+1. Take a look at the pipeline YAML file to see what it does.
+
+1. After you've looked at what the pipeline does, select **Save and run** to see the pipeline in action.
+
+1. Select **Save and run**, after which you're prompted for a commit message because Azure Pipelines adds the *azure-pipelines.yml* file to your repository. After editing the message, select **Save and run** again.
+
+> You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Docker](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml) template.
+
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
 
 > [!TIP]
 > To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
@@ -55,6 +88,12 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
+1. The code in the following repository is a project with a Dockerfile that you can use to follow along. Fork this repo into your GitHub account.
+
+    ```
+    https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
+    ```
 
 1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **Empty** template. (Do **not** select the **Docker** template.)
 
@@ -87,9 +126,9 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 1. Save the pipeline and queue a build to see it in action.
 
-::: moniker-end
+Read through the rest of this topic to learn some of the common ways to customize your Docker pipeline.
 
-Now that you've run a Docker build pipeline, you're ready to learn some of the common changes that people make to customize their Docker build.
+::: moniker-end
 
 ## Build environment
 
@@ -313,6 +352,12 @@ When you use Microsoft-hosted Linux agents, you create Linux container images fo
    ```
 
 ::: moniker-end
+
+<!--
+## Deploy to Kubernetes
+
+After you have built and tested your app, you can deploy your containers to Kubernetes. See [Azure Kuberenetes Service](../targets/aks.md) for more information.
+-->
 
 <a name="troubleshooting"></a>
 ## Troubleshooting

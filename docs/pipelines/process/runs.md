@@ -38,7 +38,7 @@ To turn a pipeline into a run, Azure Pipelines goes through several steps in thi
 1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md#template-expressions).
 2. Next, evaluate dependencies at the stage level to pick the first stage(s) to run.
 <!-- TODO: link to new content on stages once that's available. -->
-3. For each stage selected to run, evaluate [dependencies at the job level](multiple-phases.md#dependencies) to pick the first job(s) to run.
+3. For each stage selected to run, evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
 4. For each job selected to run, expand [multi-configs](phases.md#multi-configuration) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
 6. [Request an agent](#request-an-agent) for each eligible runtime job.
@@ -55,7 +55,7 @@ After step 1, template parameters have been completely resolved and no longer ex
 ## Request an agent
 
 Whenever Azure Pipelines needs to run a job, it will ask the [pool](../agents/pools-queues.md) for an [agent](../agents/agents.md).
-([Server jobs](server-phases.md) are an exception, since they run on the Azure Pipelines server itself.)
+([Server jobs](phases.md#server-jobs) are an exception, since they run on the Azure Pipelines server itself.)
 [Microsoft-hosted](../agents/hosted.md) and [self-hosted](../agents/pools-queues.md) agent pools work slightly differently.
 
 ### Microsoft-hosted agent pool requests
@@ -80,7 +80,7 @@ If there are no available parallel slots, the job has to wait on a slot to free 
 
 Once a parallel slot is available, the self-hosted pool is examined for a compatible agent.
 Self-hosted agents offer [capabilities](../agents/agents.md#capabilities), which are strings indicating that particular software is installed or settings are configured.
-The pipeline has [demands](../build/options.md#demands), which are the capabilities required to run the job.
+The pipeline has [demands](demands.md), which are the capabilities required to run the job.
 If a free agent whose capabilities match the pipeline's demands cannot be found, the job will continue waiting.
 If there are no agents in the pool whose capabilities match the demands, the job will fail.
 

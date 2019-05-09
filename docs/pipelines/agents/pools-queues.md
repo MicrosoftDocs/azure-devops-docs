@@ -21,79 +21,115 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of Team Foundation Server (TFS); so you can share an agent pool across project collections and projects. In Azure Pipelines, agent pools are scoped to the Azure DevOps organization; so you can share an agent pool across projects.
+::: moniker range="<= tfs-2018"
 
-A **project agent pool** provides access to an **organization agent pool**. When you create a build or release pipeline, you specify which pool it uses. Pools are scoped to your project in TFS 2017 and newer and in Azure Pipelines, so you can only use them across build and release pipelines within a project.
+Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
 
-To share an agent pool with multiple projects, in each of those projects, you create a project agent pool pointing to an organization agent pool. While multiple pools across projects can use the same organization agent pool, multiple pools within a project cannot use the same organization agent pool. Also, each project agent pool can use only one organization agent pool.
+An **agent queue** provides access to an **agent pool** within a project. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer, so you can only use them across build and release pipelines within a project.
 
-::: moniker range=">= tfs-2017"
+To share an agent pool with multiple projects, in each of those projects, you create an agent queue pointing to the same agent pool. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the agent pool. Also, each agent queue can use only one agent pool.
 
-#### Azure Pipelines and TFS 2017 and newer
+::: moniker-end
 
-![TFS 2017 and newer build system architecture](_img/build-system-architecture.png)
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+![TFS 2017 and TFS 2018 build system architecture](_img/build-system-architecture.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-#### TFS 2015
-
-In TFS 2015 agent pools are scoped to project collections.
+Agent pools are scoped to project collections.
 
 ![TFS 2015 build system architecture](_img/build-system-architecture-tfs-2015.png)
 
-You create and manage organization agent pools from the agent pools tab in admin settings.
+::: moniker-end
 
-[!INCLUDE [agent-pools](_shared/agent-pools-tab.md)]
+::: moniker range=">= azure-devops-2019"
 
-You create and manage project agent pools from the agent pools tab in project settings.
+Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In Azure Pipelines, pools are scoped to the entire organization; so you can share the agent machines across projects. In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections.
 
-[!INCLUDE [agent-pools](_shared/agent-queues-tab.md)]
+When you create a pipeline, you specify which pool it uses.
 
 ::: moniker-end
 
+::: moniker range="<= tfs-2018"
+You create and manage agent pools from the agent pools tab in admin settings.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
+::: moniker-end
+
+[!INCLUDE [agent-pools](_shared/agent-pools-tab.md)]
+
+::: moniker range="<= tfs-2018"
+You create and manage agent queues from the agent queues tab in project settings.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+If you are a project team member, you create and manage agent pools from the agent pools tab in project settings.
+::: moniker-end
+
+[!INCLUDE [agent-pools](_shared/agent-queues-tab.md)]
+
 ## Default agent pools
 
-The following organization agent pools are provided by default:
+The following agent pools are provided by default:
 
 * **Default** pool: Use it to register [self-hosted agents](agents.md) that you've set up.
 
 ::: moniker range="azure-devops"
 
-* **Hosted Ubuntu 1604** pool (Azure Pipelines only): Enables you to build and release on
-  Linux machines without having to configure a self-hosted Linux agent. Agents in this pool do not
+* **Hosted** pool with the following images:
+
+    * **Ubuntu 1604**: Enables you to build and release on
+  Ubuntu 1604 machines without having to configure a self-hosted Linux agent. Agents in this pool do not
   run in a container, but the Docker tools are available for you to use if you want to
   run [container jobs](../process/container-phases.md).
 
-* **Hosted macOS** pool (Azure Pipelines only): Enables you to build and release on
-  macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
+    * **macOS**: Enables you to build and release on
+  Mojave macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
-* **Hosted VS2017** pool (Azure Pipelines only): The **Hosted VS2017** pool is another built-in pool in Azure Pipelines. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
+    * **macOS High Sierra**: Enables you to build and release on
+  High Sierra macOS without having to configure a self-hosted macOS agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/trustcenter/privacy/vsts-location)
 
-* **Hosted** pool (Azure Pipelines only): The **Hosted** pool is the built-in pool that is a collection of Microsoft-hosted agents. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md).
+    * **Windows 2019 with VS2019**: These machines have Visual Studio 2019 installed on Windows Server 2019 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
 
-* **Hosted Windows Container** pool (Azure Pipelines only): Enabled you to build and release
+    * **VS2017**: These machines have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
+
+    * **Hosted**: These machines have older versions of Visual Studio installed on Windows Server 2012 R2 operating system. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md).
+    * **Windows Container**: Enables you to run jobs
   inside [Windows containers](/virtualization/windowscontainers/about/). Unless you're building
-  using containers, Windows builds should run in the **Hosted VS2017** or **Hosted** pools.
+  using containers, Windows builds should run in the **Hosted Windows 2019**, **Hosted VS2017** or **Hosted** pools.
 
-Each of these Microsoft-hosted organization agent pools is exposed to each project through a corresponding project agent pool. By default, all contributors in a project are members of the **User** role on each hosted pool. This allows every contributor in a project to author and run build and release pipelines using Microsoft-hosted pools.
+By default, all contributors in a project are members of the **User** role on hosted pools. This allows every contributor in a project to author and run pipelines using Microsoft-hosted pools.
 
 ::: moniker-end
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 
-If you've got a lot of agents intended for different teams or purposes, you might want to create additional pools as explained below.
+If you've got a lot of self-hosted agents intended for different teams or purposes, you might want to create additional pools as explained below.
 
 ## Creating agent pools
 
-Here are some typical situations when you might want to create agent pools:
+Here are some typical situations when you might want to create self-hosted agent pools:
 
+::: moniker range="azure-devops"
+* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you've the permissions to create pools in your project by selecting **Security** on the agent pools page in your project settings. You must have **Administrator** role to be able to create new pools. Next, select **Add pool** and select the option to create a **new** pool at the organization level. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+
+* You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All agent pools** with the **Administrator** role by navigating to agent pools page in your organization settings. Next create a **New agent pool** and select the option to **Auto-provision corresponding agent pools in all projects** while creating the pool. This setting ensures all projects have access to this agent pool. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+
+* You want to share a set of agent machines with multiple projects, but not all of them. First, navigate to the settings for one of the projects, add an agent pool, and select the option to create a **new** pool at the organization level. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing agent pool from the organization**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 * You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First, make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New project agent pool** in your project settings and select the option to **Create a new organization agent pool**. As a result, both an organization and project-level agent pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You're a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New organization agent pool** in your admin settings and select the option to **Auto-provision corresponding project agent pools in all projects** while creating the pool. This setting ensures all projects have a pool pointing to the organization agent pool. The system creates a pool for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
 * You want to share a set of agent machines with multiple projects, but not all of them. First create a project agent pool in one of the projects and select the option to **Create a new organization agent pool** while creating that pool. Next, go to each of the other projects, and create a pool in each of them while selecting the option to **Use an existing organization agent pool**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
+::: moniker-end
 
 <h2 id="security">Security of agent pools</h2>
 
@@ -101,27 +137,35 @@ Understanding how security works for agent pools helps you control sharing and u
 
 ::: moniker range=">= tfs-2017"
 
-### Azure Pipelines and TFS 2017 and newer
+**Roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
 
-In Azure Pipelines and TFS 2017 and newer, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
-
-| Role on an organization agent pool | Purpose |
+| Role on an agent pool in organization settings | Purpose |
 |------|---------|
-| Reader | Members of this role can view the organization agent pool as well as agents. You typically use this to add operators that are responsible for monitoring the agents and their health.  |
+| Reader | Members of this role can view the agent pool as well as agents. You typically use this to add operators that are responsible for monitoring the agents and their health.  |
 | Service Account | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the guidelines above for creating new project agent pools, you typically do not have to add any members here. |
 | Administrator | In addition to all the above permissions, members of this role can register or unregister agents from the organization agent pool. They can also refer to the organization agent pool when creating a project agent pool in a project. Finally, they can also manage membership for all roles of the organization agent pool. The user that created the organization agent pool is automatically added to the Administrator role for that pool. |
 
 The **All agent pools** node in the Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the 'All agent pools' node. By default, TFS administrators are also administrators of the 'All agent pools' node.
 
-Roles are also defined on each organization agent pool, and memberships in these roles govern what operations you can perform on an agent pool.
+Roles are also defined on each project agent pool, and memberships in these roles govern what operations you can perform on an agent pool at the project level.
 
-| Role on a project agent pool | Purpose |
+| Role on a agent pool in project settings | Purpose |
 |------|---------|
 | Reader | Members of this role can view the project agent pool. You typically use this to add operators that are responsible for monitoring the build and deployment jobs in that project agent pool.  |
-| User | Members of this role can use the project agent pool when authoring build or release pipelines. |
+| User | Members of this role can use the project agent pool when authoring pipelines. |
 | Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the project agent pool. The user that created the pool is automatically added to the Administrator role for that pool.
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 The **All agent pools** node in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from those of the 'All agent pools' node. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+The **Security** action in the Agent pools tab is used to control the security of _all_ project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from what you define here. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
 ::: moniker-end
 

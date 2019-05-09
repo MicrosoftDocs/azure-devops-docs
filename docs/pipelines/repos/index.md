@@ -74,6 +74,8 @@ See details about building specific repository types:
 > [!NOTE]
 > To build code from Subversion, you must install a Subversion client (`svn`) on your [self-hosted build agents](../agents/agents.md#install) or use [Microsoft-hosted build agents](../agents/hosted.md).
 
+## Options for Git repositories
+
 [!INCLUDE [temp](_shared/pipeline-options-for-git.md)]
 
 ## Q & A
