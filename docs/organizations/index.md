@@ -20,7 +20,7 @@ featureFlags:
 
 # Azure DevOps Manage & Configure Resources Documentation
 
-Configure resources and manage settings for an organization, project, team, or user.
+Configure resources and manage settings for an organization, project, team, or user. For information on customizing Azure Boards and Agile tools&mdash;such as backlogs, boards, and work tracking artifacts&mdash;see, [Process Customization](/azure/devops/reference/index).
 
 ::: moniker range="azure-devops"
 
@@ -63,7 +63,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Teams</h3>
+                        <h3><a href="/azure/devops/organizations/settings/scale/index?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Teams</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Teams and Agile tools</a>
                         </p>
@@ -100,7 +100,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Projects</h3>
+                        <h3><a href="/azure/devops/organizations/projects/index?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json">Projects</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/projects/about-projects">About projects and scaling your organization</a>
                         </p>
@@ -140,7 +140,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Organizations</h3>
+                        <h3><a href="/azure/devops/organizations/projects/index?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json">Organizations</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/accounts/organization-management">About organizations</a>
                         </p>
@@ -149,12 +149,6 @@ Configure resources and manage settings for an organization, project, team, or u
                         </p>
                         <p>
                             <a href="/azure/devops/organizations/accounts/connect-organization-to-azure-ad">Connect your organization to Azure Active Directory</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/marketplace/install-extension?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json">Install extensions</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/marketplace/approve-extensions?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json">Approve extension requests</a>
                         </p>
                     </div>
                 </div>
@@ -171,7 +165,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Billing</h3>
+                        <h3><a href="/azure/devops/organizations/billing/index?toc=/azure/devops/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json">Billing</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/billing/overview">Billing overview</a>
                         </p>
@@ -193,7 +187,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Security & Identity</h3>
+                        <h3><a href="/azure/devops/organizations/security/index?toc=/azure/devops/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json">Permissions, Security, & Identity</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/security/about-security-identity">About security & identity</a>
                         </p>
@@ -221,7 +215,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Notifications</h3>
+                        <h3><a href="/azure/devops/notifications/index?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json">Notifications</a></h3>
                         <p>
                             <a href="/azure/devops/notifications/about-notifications">About notifications</a>
                         </p>
@@ -249,15 +243,12 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>All Settings</h3>
+                        <h3><a href="/azure/devops/organizations/settings/index?toc=/azure/devops/security/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json">DevOps Settings</a></h3>
                         <p>
                             <a href="/organizations/settings/about-settings">About settings</a>
                         </p>
                         <p>
                             <a href="/azure/devops/user-guide/project-admin-tutorial?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json">Manage your project</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/project/navigation/preview-features?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json">Enable preview features (organization)</a>
                         </p>
                         <p>
                             <a href="/azure/devops/organizations/settings/set-services">Change service visibility</a>
@@ -311,7 +302,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Teams</h3>
+                        <h3><a href="/azure/devops/organizations/settings/scale/index?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Teams</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Teams and Agile tools</a>
                         </p>
@@ -348,7 +339,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Projects</h3>
+                        <h3><a href="/azure/devops/organizations/projects/index?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json">Projects</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/projects/about-projects">About projects and scaling your deployment</a>
                         </p>
@@ -388,7 +379,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Security & Identity</h3>
+                        <h3><a href="/azure/devops/organizations/security/index?toc=/azure/devops/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json">Permissions, Security, & Identity</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/security/about-security-identity">About security & identity</a>
                         </p>
@@ -412,45 +403,11 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Process customization</h3>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process overview</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/add-custom-field">Add a custom field</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/add-custom-wit">Add a custom work item type</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/customize-process">Customize a project</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/inheritance-process-model">Inheritance process overview</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/organizations/settings/work/manage-process">Create and manage a process</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                             <img src="https://docs.microsoft.com/media/common/i_billing.svg" alt="Billing icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Billing</h3>
+                        <h3><a href="/azure/devops/organizations/billing/index?toc=/azure/devops/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json">Billing</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/billing/overview">Billing overview</a>
                         </p>
@@ -472,7 +429,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Notifications</h3>
+                        <h3><a href="/azure/devops/notifications/index?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json">Notifications</a></h3>
                         <p>
                             <a href="/azure/devops/notifications/about-notifications">About notifications</a>
                         </p>
@@ -496,46 +453,11 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Work Tracking Customization</h3>
-                        <p>
-                            <a href="/azure/devops/reference/customize-work">About work tracking customization</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/on-premises-xml-process-model">On-premises XML process model</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/add-modify-field">Add or modify a field</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/add-modify-wit">Add or modify a work item type</a>
-                        </p>
-
-                        <p>
-                            <a href="/azure/devops/reference/xml/xml-element-reference">XML element reference</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/process-templates/overview-process-template-files">Process template and plug-in files</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                             <img src="https://docs.microsoft.com/media/common/i_setup.svg" alt="All settings icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>All Settings</h3>
+                        <h3><a href="/azure/devops/organizations/settings/index?toc=/azure/devops/security/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json">DevOps Settings</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/about-settings">About settings</a>
                         </p>
@@ -591,7 +513,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Teams</h3>
+                        <h3><a href="/azure/devops/organizations/settings/scale/index?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Teams</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/settings/about-teams-and-settings?toc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fsettings%2Fscale%2Fbreadcrumb%2Ftoc.json">Teams and Agile tools</a>
                         </p>
@@ -628,7 +550,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Projects</h3>
+                        <h3><a href="/azure/devops/organizations/projects/index?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json">Projects</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/projects/about-projects">About projects and scaling your deployment</a>
                         </p>
@@ -668,7 +590,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Security & Identity</h3>
+                        <h3><a href="/azure/devops/organizations/security/index?toc=/azure/devops/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json">Permissions, Security, & Identity</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/security/about-security-identity">About security & identity</a>
                         </p>
@@ -696,7 +618,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Billing</h3>
+                        <h3><a href="/azure/devops/organizations/billing/index?toc=/azure/devops/billing/toc.json&bc=/azure/devops/organizations/billing/breadcrumb/toc.json">Billing</a></h3>
                         <p>
                             <a href="/azure/devops/organizations/billing/overview">Billing overview</a>
                         </p>
@@ -718,7 +640,7 @@ Configure resources and manage settings for an organization, project, team, or u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Notifications</h3>
+                        <h3><a href="/azure/devops/notifications/index?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/organizations/notifications/breadcrumb/toc.json">Notifications</a></h3>
                         <p>
                             <a href="/azure/devops/notifications/about-notifications">About notifications</a>
                         </p>
@@ -742,46 +664,11 @@ Configure resources and manage settings for an organization, project, team, or u
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/azure/devops/_img/index/i_config-tools.svg" alt="Process customization icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Work Tracking Customization</h3>
-                        <p>
-                            <a href="/azure/devops/reference/customize-work">About work tracking customization</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/on-premises-xml-process-model">On-premises XML process model</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/add-modify-field">Add or modify a field</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/add-modify-wit">Add or modify a work item type</a>
-                        </p>
-
-                        <p>
-                            <a href="/azure/devops/reference/xml/xml-element-reference">XML element reference</a>
-                        </p>
-                        <p>
-                            <a href="/azure/devops/reference/process-templates/overview-process-template-files">Process template and plug-in files</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
                             <img src="https://docs.microsoft.com/media/common/i_setup.svg" alt="All settings icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>All Settings</h3>
+                        <h3><a href="/azure/devops/organizations/settings/index?toc=/azure/devops/security/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json">DevOps Settings</a></h3>
                         <p>
                             <a href="/azure/devops//organizations/settings/about-settings">About settings</a>
                         </p>
