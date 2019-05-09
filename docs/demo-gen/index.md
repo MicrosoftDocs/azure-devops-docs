@@ -12,7 +12,7 @@ ms.date: 05/09/2018
 
 # About the Azure DevOps Services Demo Generator
 
-The Azure DevOps Services Demo Generator is a service helps you provision projects in your organization with pre-populated sample content that includes source code, work items, iterations, service connections, build and release pipelines based on a template you choose.
+The Azure DevOps Services Demo Generator is a service which helps you provision projects in your organization with pre-populated sample content that includes source code, work items, iterations, service connections, and build and release pipelines based on a template you choose.
 
 > [!div class="mx-imgBorder"]
 ![Image of Demo Generator main screen](_img/3.png)

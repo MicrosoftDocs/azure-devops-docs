@@ -20,12 +20,11 @@ ms.date: 04/22/2019
 
 You can add a custom field to support tracking additional data requirements or modify select attributes of an ![inherited icon](_img/process/inherited-icon.png) inherited field. For example, you can add a custom field or change the label that appears in the work item form for an inherited field.  
 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
 For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
-
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 

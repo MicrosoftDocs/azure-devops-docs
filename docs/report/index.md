@@ -34,7 +34,7 @@ Reporting in Azure DevOps enables software development teams to make data driven
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dashboards, Charts, Reports & Widgets</h3>
+                        <h3><a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports & Widgets</a></h3>
                         <p>
                             <a href="/azure/devops/report/dashboards/overview">Dashboards overview</a>
                         </p>
@@ -65,7 +65,7 @@ Reporting in Azure DevOps enables software development teams to make data driven
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Power BI Integration</h3>
+                        <h3><a href="/azure/devops/report/powerbi/index">Power BI Integration</a></h3>
                         <p>
                             <a href="/azure/devops/report/powerbi/overview">About Power BI integration</a>
                         </p>
@@ -90,7 +90,7 @@ Reporting in Azure DevOps enables software development teams to make data driven
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Extend Analytics with OData (Preview)</h3>
+                        <h3><a href="/azure/devops/report/extend-analytics/index">Extend Analytics with OData (Preview)</a></h3>
                         <p>
                             <a href="/azure/devops/report/extend-analytics/quick-ref">Quick reference</a>
                         </p>
@@ -143,7 +143,7 @@ Reporting in Azure DevOps enables software development teams to make data driven
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>SQL Server Reporting (Legacy)</h3>
+                        <h3><a href="/azure/devops/report/sql-reports/index">SQL Server Reporting (Legacy)</a></h3>
                         <p>
                             <a href="/azure/devops/report/sql-reports/">Reporting Services Reports</a>
                         </p>
