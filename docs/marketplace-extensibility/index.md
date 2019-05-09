@@ -35,6 +35,7 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                     </div>
                     <div class="cardText">
                         <h3>Discover & Manage Extensions</h3>
+                        <h3><a href="/azure/devops/marketplace/index">Discover & Manage Extensions</a></h3>
                         <p>
                             <a href="/azure/devops/marketplace/overview">Discover extensions</a>
                         </p>
@@ -62,7 +63,7 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Develop extensions</h3>
+                        <h3><a href="/azure/devops/extend/index">Develop Extensions</a></h3>
                         <p>
                             <a href="/azure/devops/extend/overview">What are extensions?</a>
                         </p>
@@ -90,7 +91,7 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Integrate</h3>
+                        <h3><a href="/azure/devops/integrate/index">Integrate Applications</a></h3>
                         <p>
                             <a href="/azure/devops/integrate">Integration overview</a>
                         </p>
@@ -113,7 +114,7 @@ Discover, manage, develop extensions and widgets for integration with Azure DevO
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Service Hooks</h3>
+                        <h3><a href="/azure/devops/service-hooks/index">Service Hooks</a></h3>
                         <p>
                             <a href="/azure/devops/service-hooks/overview">Integrate with service hooks</a>
                         </p>
