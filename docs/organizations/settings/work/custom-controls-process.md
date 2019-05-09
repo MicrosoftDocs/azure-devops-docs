@@ -27,8 +27,6 @@ The fourth type, action-level contributions, on the other hand, appear in the co
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
-
-
 You add all contributions by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Or, you can [create your own custom control](../../../extend/get-started/node.md).
 
 For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown.

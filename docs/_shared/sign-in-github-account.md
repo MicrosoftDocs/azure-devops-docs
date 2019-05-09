@@ -7,9 +7,6 @@ ms.topic: include
 > [!IMPORTANT]
 > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
 
-> [!TIP]
-> Only newly created organizations offer the capability of signing in with GitHub, as existing organizations don't. Only GitHub users in these organizations have this capability, not Microsoft account (MSA) users.  
-
 1. From the [Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137) site, select **Start free with GitHub**. If you're already part of an Azure DevOps organization, select **Sign in to Azure DevOps**.
 
    ![Sign up for Azure DevOps](_img/azure-devops-start-free.png)
