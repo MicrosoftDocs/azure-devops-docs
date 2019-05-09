@@ -20,6 +20,8 @@ ms.date: 04/22/2019
 
 Work items are the backbone for planning and tracking work. As such, you'll want to make sure that each work item type (WIT) is tracking the data that your team needs. 
 
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+
 To support your work tracking requirements, you can customize each WIT to add custom groups to collect custom fields that you add under a common section. You can organize your forms by placing logically related groups and HTML fields on separate pages within a form to minimize clutter on any one page within the form.  
 
 For example, the following form shows that two custom pages have been added, **Impact** and **Mitigation**. In addition, several new groups and fields have been added to the Details page.  
@@ -27,9 +29,6 @@ For example, the following form shows that two custom pages have been added, **I
 <img src="_img/process/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 1px solid #C3C3C3;" /> 
 
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
-
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
