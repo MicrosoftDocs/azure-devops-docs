@@ -31,8 +31,7 @@ Each project is based on a process that defines the building blocks for tracking
 
 ::: moniker-end
 
-
-You can only customize inherited processes.  Any changes you make to the inherited process automatically appears in the projects that use that process. 
+You can only customize inherited processes. Any changes you make to the inherited process automatically appears in the projects that use that process. 
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 

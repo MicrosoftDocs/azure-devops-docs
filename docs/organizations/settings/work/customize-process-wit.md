@@ -18,15 +18,12 @@ ms.date: 04/22/2019
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
-
-For example, you may want to capture customer issues in a custom Ticket WIT.   
+You can add custom work item types (WITs) or modify existing WITs to add fields, remove or hide fields, add custom rules, and more. For example, you may want to capture customer issues in a custom Ticket WIT.   
 
 > [!div class="mx-imgBorder"]  
 > ![Custom Ticket work item form](_img/process/custom-wit-new-ticket-form.png) 
 
 [!INCLUDE [temp](../_shared/note-on-prem-link.md)]
-
-
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 

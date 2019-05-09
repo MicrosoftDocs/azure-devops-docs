@@ -21,8 +21,7 @@ ms.date: 04/22/2019
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
 
-> [!NOTE]     
-> You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
+[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
 With a custom rule, you can define a number of actions based on specific conditions. For example, you can apply a rule to support these types of scenarios: 
 
@@ -32,11 +31,11 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
 
 
+> [!NOTE]     
+> You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
 
- 
 
 ## Rule composition  
 
