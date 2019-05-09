@@ -1,5 +1,5 @@
 ---
-title: Sign up, invite teammates
+title: Sign up, sign in, invite teammates
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18  
 description: Quickstart guide to signing up and inviting others to join a project in Azure DevOps
@@ -10,16 +10,16 @@ ms.assetid:
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/24/2019
+ms.date: 05/06/2019
 monikerRange: 'azure-devops'
 ---
 
 
-# Sign up for a free organization
+# Sign up, sign in to Azure DevOps
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to sign up for a free organization with a Microsoft account. You also learn how to invite your teammates.
+In this quickstart, you learn how to sign up for free and sign in to Azure DevOps with either a Microsoft or GitHub account. Azure DevOps is a cloud-hosted service. You'll also create an organization and learn how to invite your teammates.
 
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 
@@ -27,6 +27,9 @@ In this quickstart, you learn how to sign up for a free organization with a Micr
 
 [!INCLUDE [sign-up-msft-account](../_shared/sign-up-msft-account.md)]
 
+<a name="GitHubAccount"></a>
+
+[!INCLUDE [sign-in-github-account](../_shared/sign-in-github-account.md)]
 
 <a id="invite-others" />
 

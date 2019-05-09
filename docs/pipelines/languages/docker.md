@@ -54,7 +54,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 ### Create an Azure Container Registry
 
-Create an [Azure container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal) if you do not have one already.
+Create an [Azure container registry](/azure/container-registry/container-registry-get-started-portal) if you do not have one already.
 
 ### Sign in to Azure Pipelines
 
