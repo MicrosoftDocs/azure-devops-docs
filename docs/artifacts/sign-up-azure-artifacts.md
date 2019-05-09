@@ -25,7 +25,7 @@ Azure Artifacts is a service where you can create package feeds to publish and c
 
 ## Billing and free monthly usage
 
-Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn’t billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you are billed for. Once the maximum usage limit is reached, you can no longer upload artifacts. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/en-us/pricing/).
+Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn’t billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you are billed for. Once the maximum usage limit is reached, you can no longer upload artifacts. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/).
 
 ## View storage used
 
@@ -47,7 +47,7 @@ See and manage what your overall storage use is for Azure Artifacts.
 
 ## Pay for Artifacts
 
-Each organization gets five free licenses. If you need more than five licenses, complete the following steps.
+Each organization gets Azure Artifacts for free, up until they hit 2GB of storage. If you need more than that, complete the following steps to set up billing.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
  
@@ -85,4 +85,10 @@ For more information on how to set the feed retention policy, see how to [automa
 
 A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, they’ll be charged under the new storage model.
 
+### Q: Which artifacts count towards my storage total
 
+A: Currently, the following get counted towards your storage total:
+* All npm, NuGet, Python, Maven, and universal packages (including those stored from upstream sources)
+* All symbols
+
+Pipeline Artifacts, Build Artifacts, and Pipeline Caching are included in Azure Pipelines and do not count towards your storage total in Azure Artifacts as of today. 

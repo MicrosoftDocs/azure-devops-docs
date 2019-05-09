@@ -395,6 +395,19 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 </table>
 
+## Pipeline variables
+
+<table>
+<tr><th>Variable</th><th>Description</th></tr>
+
+<tr>
+<td>Pipeline.Workspace</td>
+<td>Workspace directory for a particular pipeline.<br><br>
+For example, `c:\agent\_work\1`.</td>
+</tr>
+
+</table>
+
 ## System variables
 
 <table>
