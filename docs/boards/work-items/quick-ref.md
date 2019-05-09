@@ -1,34 +1,33 @@
 ---
 title: Quick index to work item tasks and key concepts
 titleSuffix: Azure Boards
-description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
-ms.assetid:  
-ms.topic: reference  
+ms.assetid:
+ms.topic: reference
 ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/10/2019
---- 
+---
 
-# Work items quick reference 
+# Work items quick reference
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs&mdash; and concepts related to work items.
 
-## Work item tasks 
-
+## Work item tasks
 
 ::: moniker range=">= azure-devops-2019"
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="33%"> 
+<td width="33%">
 <ul>
 <li>[Add a work item](../backlogs/add-work-items.md)</li>
 <li>[Add a custom field (Inheritance)](../../organizations/settings/work/customize-process-field.md)</li>
@@ -134,7 +133,7 @@ Use this index to quickly access information on adding and updating work items&m
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="33%"> 
+<td width="33%">
 <ul>
 <li>[Add a work item](../backlogs/add-work-items.md)</li>
 <li>[Add a custom field (Inheritance)](../../organizations/settings/work/customize-process-field.md)</li>
@@ -242,7 +241,7 @@ Use this index to quickly access information on adding and updating work items&m
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="33%"> 
+<td width="33%">
 <ul>
 <li>[Agile glossary](agile-glossary.md)</li>
 <li>[Agile process](guidance/agile-process.md)</li>
@@ -298,10 +297,8 @@ Use this index to quickly access information on adding and updating work items&m
 </tbody>
 </table>
 
-
-
-
 ## Related articles
-- [Query quick reference](../queries/query-index-quick-ref.md)  
-- [Work item field index](../work-items/guidance/work-item-field.md) 
+
+- [Query quick reference](../queries/query-index-quick-ref.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
 - [Best tools for adding, updating, and linking work items ](best-tool-add-update-link-work-items.md)
