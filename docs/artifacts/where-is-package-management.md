@@ -6,7 +6,7 @@ ms.technology: devops-artifacts
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 05/06/2019
+ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -27,5 +27,9 @@ Before the UI update, your Package Management home was in the **Packages** hub o
 The new update has introduced a new, top-level area that is the home of Package Management in Azure DevOps Services. This area is known as **Azure Artifacts** and can be reached simply by selecting the _Artifacts_ button on the left of the UI:
 
 ![Go to Azure Artifacts](_shared/_img/goto-feed-hub-azure-devops-newnav.png)
+
+## Azure Artifacts billing model
+
+Azure Artifacts bills you on a consumption-basis and licenses are no longer required for Azure DevOps Services customers. For more information, see [Billing and free monthly usage for Azure Artifacts](sign-up-azure-artifacts.md#billing-and-free-monthly-usage) and [What about customers who were using Artifacts before May 6, 2019 under the previous per user model](sign-up-azure-artifacts.md#q-what-about-customers-who-were-using-artifacts-before-may-6-2019-under-the-previous-per-user-model)?
 
 

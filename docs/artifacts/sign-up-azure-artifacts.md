@@ -83,7 +83,7 @@ For more information on how to set the feed retention policy, see how to [automa
 
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
-A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, they’ll be charged under the new storage model.
+A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, you’re charged under the new storage model.
 
 ### Q: Which artifacts count towards my storage total
 
