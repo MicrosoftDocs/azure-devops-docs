@@ -294,16 +294,20 @@
     - name: Releases
       href: release/releases.md
   - name: Repositories
-    href: repos/index.md
     items:
+    - name: Repositories
+      href: repos/index.md
+      displayName: supported repository types
     - name: Azure Repos Git
       href: repos/azure-repos-git.md
     - name: GitHub
       href: repos/github.md
+      displayName: public project, private project, github organization, repository permissions, github app, trigger, ci trigger, push trigger, pr trigger, comment trigger, checkout path, submodules, shallow fetch, sync sources, status badge, github checks
     - name: TFVC
       href: repos/tfvc.md
     - name: Pipeline options for Git
       href: repos/pipeline-options-for-git.md
+      displayName: branch, clean, label sources, tag sources, checkout path, checkout submodules, checkout files from LFS, clone a second repo, sync sources, shallow fetch
   - name: Resources
     href: process/resources.md
   - name: Retention policy
