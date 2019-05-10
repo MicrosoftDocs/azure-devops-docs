@@ -201,7 +201,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test summary access to stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting Stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -424,7 +424,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test summary access to stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting Stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
@@ -641,7 +641,7 @@ read wiki pages. </td>
 </tr>
 
 <tr>
-<td align="left"><strong>Test summary access to stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes [performing user acceptance testing](../../test/user-acceptance-testing.md) and [requesting Stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>

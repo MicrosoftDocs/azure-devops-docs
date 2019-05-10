@@ -9,9 +9,7 @@
   - name: Share your project vision
     href: project-vision-status.md
   - name: Connect a project to GitHub  
-    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
-  - name: Add admins or set project-level permissions
-    href: ../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../../boards/github/install-github-app.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Resources granted to members
@@ -27,9 +25,9 @@
   - name: Restore a project
     href: restore-project.md
   - name: Change service visibility
-    href: ../settings/set-services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../settings/set-services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set project visibility
-    href: ../public/make-project-public.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+    href: ../public/make-project-public.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Save project data
     href: save-project-data.md
   - name: Connect to projects
@@ -41,10 +39,10 @@
   - name: Rename a project
     href: faq-rename-project.md
   - name: Add administrators
-    href: ../accounts/faq-add-administrators.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../accounts/faq-add-administrators.md
   - name: Set up Visual Studio
-    href: ../accounts/faq-set-up-vs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../accounts/faq-set-up-vs.md
   - name: Troubleshoot connection
-    href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
-    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

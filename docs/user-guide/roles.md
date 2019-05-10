@@ -72,9 +72,9 @@ To get started, see the overviews in [Azure Pipelines](../pipelines/overview.md)
 
 ### Stakeholders
 
-With stakeholder access, anyone in your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools.
+With Stakeholder access, anyone in your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools.
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a stakeholder](../organizations/security/get-started-stakeholder.md).
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md).
 
 <a id="admin-roles">  </a>
 
