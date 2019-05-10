@@ -16,15 +16,15 @@
   - name: Configure personal notifications
     href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add an alternate account to your Visual Studio subscription
-    href: /visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+    href: /visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Authentication
     items:
     - name: Authenticate access with personal access tokens
-      href: accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+      href: accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Authorize access to REST APIs with OAuth 2.0
-      href: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+      href: ../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Use SSH key authentication
-      href: ../git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json
+      href: ../git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Revoke users' PATs - for admins
       href: accounts/admin-revoke-user-pats.md
 - name: Teams
@@ -44,13 +44,13 @@
 - name: Reference
   items:
   - name: Features index
-    href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json
+    href: ../user-guide/alm-devops-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: REST API Reference
   items:
   - name: Area and Iteration Paths
     href: /rest/api/vsts/wit/classification%20nodes
   - name: Authentication guidance
-    href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json
+    href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Teams
     href: /rest/api/azure/devops/core/teams
   - name: Projects
