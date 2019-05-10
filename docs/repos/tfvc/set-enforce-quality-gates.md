@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Set and Enforce Quality Gates
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Check-in policies are a mechanism for enforcing development practices across your development team. Check-in notes are a communication mechanism for collecting data from team members during the check-in process. Both of these are customizable to meet the needs of a team. This section explains the purpose of these items and also describes how to configure them.
 

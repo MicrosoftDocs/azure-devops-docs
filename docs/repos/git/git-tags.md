@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Working with Git tags
 
-#### Azure Repos | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
 
 Azure DevOps Services and TFS support both annotated and lightweight tags. Lightweight tags are a pointer to specific commit, while annotated tags contain more information such as the tagger, message, and date. You can create annotated tags using the web portal, and starting with Visual Studio 2017 Update 6, you can create both lightweight and annotated tags from within Visual Studio. For more information on Git tags, see [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) from the Pro Git book.
 

@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Azure Repos Plugin for IntelliJ IDEA and Android Studio
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
 The Azure Repos Plugin for IntelliJ allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.
