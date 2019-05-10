@@ -86,15 +86,15 @@ See [Administrator roles](roles.md#administrator-roles).
 
 See [Requirements and compatibility](/azure/devops/server/requirements).  
 
-## Can stakeholders who don't use Visual Studio participate on our team?
+## Can Stakeholders who don't use Visual Studio participate on our team?
 
-Yes. You can provide access to stakeholders who have no client access license for the following activities:  
+Yes. You can provide access to Stakeholders who have no client access license for the following activities:  
 
 - **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).  
   
-     To grant stakeholders access, add them to the [Stakeholder access group](../organizations/security/change-access-levels.md).  
+     To grant Stakeholders access, add them to the [Stakeholder access group](../organizations/security/change-access-levels.md).  
   
-- **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).  
+- **Provide feedback**: To allow your Stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).  
 
 ::: moniker range="<= tfs-2018"
 

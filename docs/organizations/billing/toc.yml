@@ -22,21 +22,15 @@
     href: add-backup-billing-managers.md
   - name: Change Azure subscription
     href: change-azure-subscription.md
-  - name: Buy basic access for users
-    href: buy-basic-access-add-users.md
   - name: Buy Azure DevOps Server CALs or Test
     href: buy-access-tfs-test-hub.md
   - name: Billing FAQ
     href: billing-faq.md
-  - name: Change number of paid users
-    href: change-number-paid-extension-users.md
   - name: Buy Azure DevOps Server CALs or Test  
     href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
     items:
-    - name: "CSPs: Set up your customer"
-      href: csp/set-up-csp-customer.md
-    - name: "CSPs: Buy Azure DevOps for your customers"
+    - name: "CSPs: Buy Azure DevOps"
       href: csp/buy-csp-azure-devops.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
       href: /visualstudio/subscriptions/vscloud-csp

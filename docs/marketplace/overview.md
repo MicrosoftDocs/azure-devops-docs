@@ -8,7 +8,7 @@ ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: jillfra
 ms.author: elbatk
 author: elbatk
-ms.date: 05/08/2019
+ms.date: 05/09/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: '>= azure-devops-2019'
 In the Visual Studio Marketplace you can do the following:
 
 - Discover and install extensions for Azure DevOps, Visual Studio and Visual Studio Code.
-- Purchase subscriptions for Visual Studio or Xamarin University
+- Purchase Visual Studio subscriptions
 
 ![Extensions Marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
 
@@ -26,7 +26,6 @@ In the Visual Studio Marketplace you can do the following:
 > - [Azure DevOps Services billing overview](../organizations/billing/overview.md)
 > - [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
 > - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
-> - [How to buy Xamarin University](../organizations/billing/xamarin-univ.md)
 
 ## What are extensions?
 

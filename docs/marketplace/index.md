@@ -32,7 +32,7 @@ Extensions for Azure DevOps and Team Foundation Server (TFS) can be installed th
 * [Request extensions](request-extensions.md)
 * [Approve extension requests](approve-extensions.md)
 * [Uninstall or disable extensions](uninstall-disable-extensions.md)
-* [Change the number of paid users for an extension](../organizations/billing/change-number-paid-extension-users.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json )
+* [Change the number of paid users for an extension](../organizations/billing/buy-basic-access-add-users.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json )
 
 ## Troubleshooting
 
