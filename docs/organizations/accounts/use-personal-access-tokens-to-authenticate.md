@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 01/25/2019
+ms.date: 05/10/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -25,6 +25,16 @@ Azure DevOps use enterprise-grade authentication to help protect and secure your
 For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
 [!INCLUDE [personal-access-tokens-procedure](../../repos/git/_shared/personal-access-tokens.md)]
+
+See the following examples of using your PAT.
+
+Username: `anything`
+Password: `your PAT here`
+
+or
+
+`git clone https://anything:<PAT>@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+`
 
 To learn more about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
 

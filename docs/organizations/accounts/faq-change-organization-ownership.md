@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2017
+ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -54,6 +54,10 @@ A: Your organization can have only one owner. Only organization owners can [perf
 A: If our Terms of Service have changed since you last signed in, you might be asked to agree and confirm that your information is up to date.
 
 <a name="owner-differences"></a>
+
+#### Q: When I change ownership from myself (as PCA) to a different user, my own account is removed from the PCA group. Is this a bug?
+
+A: This is not a bug and is how it has been implemented. We hope to address this soon.
 
 #### Q: What makes the organization owner different from other organization users?
 
