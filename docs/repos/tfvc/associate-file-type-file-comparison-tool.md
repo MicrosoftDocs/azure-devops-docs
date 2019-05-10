@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Associate a file type with a file-comparison tool
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 You can compare text files by using the default file-comparison tool integrated with Visual Studio, the [Diff window](compare-files.md). However, you can, for file types that you specify, enable the file-comparison tool that you prefer to use. You can use any comparison tool that supports, as command-line arguments, the full paths of the two files that you want to compare.
 

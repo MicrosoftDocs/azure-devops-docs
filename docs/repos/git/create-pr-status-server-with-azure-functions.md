@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
 ms.author: yohasna
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Use Azure Functions to create custom branch policies
 
-#### Azure Repos | TFS 2018
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
 

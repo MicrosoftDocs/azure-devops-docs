@@ -7,7 +7,7 @@ ms.prod: devops
 ms.topic: quickstart
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.date: 05/06/2018
 monikerRange: 'azure-devops'
 ---

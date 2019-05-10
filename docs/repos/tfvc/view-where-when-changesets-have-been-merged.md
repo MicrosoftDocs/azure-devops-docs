@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # View where and when changesets have been merged
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Branching your code base can be a useful way to isolate concurrent development efforts and to take snapshots. However, when your team members are working in a branched code base, they may have trouble finding information about which branches have received a particular set of changes and when those changes were merged.
 

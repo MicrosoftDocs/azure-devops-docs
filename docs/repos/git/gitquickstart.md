@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md)   
    
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017  
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017  
 
 This guide covers the basics so you can get up and running using Git with code already in Azure DevOps Services or Team Foundation Server (TFS). 
 Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 

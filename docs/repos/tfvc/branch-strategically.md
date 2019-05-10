@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-tfvc
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch strategically
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Source code is an important asset in your development effort. But it can be a challenge to effectively manage and evolve source files when multiple developers work concurrently on file updates. You can use a version control system to store source code in shared repositories, to isolate parallel development efforts, to integrate code changes, and to recover previous file versions. A key element in version control is branching that enables simultaneous development. If you branch strategically, you can maintain the order and consistency of multiple versions of your software.
 
