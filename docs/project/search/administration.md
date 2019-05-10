@@ -79,7 +79,8 @@ Code Search is an opt-in feature, and can be installed later from the Local Gall
 To do this, go to **Local Gallery** (`http://{Server}/tfs/_gallery`) as an administrator.
 Non-administrative users can also go here to request the extension be added to TFS or Azure DevOps Server. 
 
-For more details, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Marketplace documentation.
+For more details, see [Install an extension](../../marketplace/get-tfs-extensions.md#install-azure-devops-server-extensions-from-the-local-gallery) 
+in the Local gallery documentation.
 
 <a name="config-tfs"></a>
 ## Configure Search in Azure DevOps Server or TFS
@@ -275,14 +276,20 @@ Consider the following when configuring Search:
     This will cause all Search indexes for all collections to be re-created which,
     depending on the size of each collection, might take some time.<p />
     
-* If you are **detaching a collection** from one Azure DevOps Server or TFS instance in order to attach it to another instance, ensure that:
+* If you are **detaching a collection** from one Azure DevOps Server or TFS instance in order to attach it to another 
+  instance, follow the below sequence:
 
-  - Search has been configured on the target Azure DevOps Server or TFS instance.
+  - Detach the collection from source Azure DevOps Server or TFS instance.
 
-  - Before you detach the collection, you have uninstalled the Search extension (Code, Work Item, or Wiki) for that collection from the **Manage Extensions** page of your source server instance.
+  - Configure Search on the target Azure DevOps Server or TFS instance (if not yet done already).
 
-  - After you attach the collection to the target Azure DevOps Server or TFS instance, you install the Search extension (Code, Work Item, or Wiki) for that collection from the Local Gallery by
-    browsing to it from that Azure DevOps Server or TFS instance.
+  - Attach the collection to the target Azure DevOps Server or TFS instance
+
+  - Uninstall all the Search extensions (Code, Work Item, or Wiki) for that collection from the **Local Gallery** 
+    page of your source Azure DevOps Server or TFS instance.
+
+  - Install the Search extension (Code, Work Item, or Wiki) for that collection from the **Local Gallery** by
+    browsing to it from your target Azure DevOps Server or TFS instance.
 
 <a name="separate-server"></a>
 ### Installing or updating Search on a separate server

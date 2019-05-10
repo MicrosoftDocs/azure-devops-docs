@@ -100,6 +100,7 @@ However, the file is actually not destroyed because you used the **/preview** op
 
 For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 
+
 ### Effects of /keephistory on Other Version Control Operations
 
 If you specify the **/keephistory** option to retain the history of destroyed files, the files are treated as destroyed by the following Team Foundation version control operations:
@@ -111,6 +112,12 @@ If you specify the **/keephistory** option to retain the history of destroyed fi
 ### Destroying Previously Deleted Items
 
 If an item has already been deleted, a deletion ID is attached to it and results in a filename change.
+
+### Effects of TF DESTROY on TFVC repo Code Search
+
+Code Search does not handle TF DESTROY notifications and so using TF DESTROY for TFVC repos will not automatically delete files in the Search index.
+As a result, these files appear in the code search results. To avoid these ghost files scenario, users are recommended to delete files before TF DESTROY operation. 
+
 ## Examples
 ### Description
 
