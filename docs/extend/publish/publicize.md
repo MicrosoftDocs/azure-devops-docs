@@ -56,21 +56,22 @@ Once your publisher is verified, you need to set the [public flag](../develop/ma
 > **Important**: Once your publisher is verified, you will not be able to change its display name without contacting Microsoft.
 
 
-## Top Publisher
-**The Top Publisher is only applicable for publishers with one or more public Azure DevOps extensions or integrations.**
+## Top Publisher <img src="_img/top-publisher.png" alt="Top Publisher badge" width="30"/>
+> The Top Publisher program is only available for publishers with one or more public Azure DevOps extensions or integrations. It is not applicable for Visual Studio IDE and Visual Studio Code extension publishers.
 
 The Top Publisher program recognizes publishers who have shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support. Once marked so, all of their public Azure DevOps offerings (extensions and integrations) will display the Top Publisher badge. This helps customers feel more confident in evaluating and acquiring their offerings.
-<br><img src="_img/top-publisher.png" alt="Top Publisher badge" width="30"/>
 
 ### Requirements
 
 1. For each public Azure DevOps offering under the publisher, ensure the presence of following:
 
-   * Comprehensive and up-to-date privacy policy: refer to [extension manifest](../develop/manifest.md) on how to add one.
-   * Comprehensive and up-to-date license i.e. end user license agreement: Refer to [extension manifest](../develop/manifest.md) on how to add one.
-   * Comprehensive and up-to-date support policy: refer to [extension manifest](../develop/manifest.md) on how to add one. Your customers should be able to access your support URL and see a clear way to get support from you: file a ticket, email your support team, or other ways to contact you. Preferably offer support for about 8 hours a day for all business days in your local time zone for all your offerings. And a documented low response time for paid offerings for critical issues.
+   * Comprehensive and up-to-date privacy policy
+   * Comprehensive and up-to-date license i.e. end user license agreement
+   * Comprehensive and up-to-date support policy. Your customers should be able to access your support URL and see a clear way to get support from you: file a ticket, email your support team, or other ways to contact you. Preferably offer support for about 8 hours a day for all business days in your local time zone for all your offerings. And a documented low response time for paid offerings for critical issues.
    * Comprehensive and high quality documentation: this could be hosted in your domain, be within your offering, or hosted in a public GitHub repo. Customers should ideally get an overview, quickstart and how-to-guides.
    * Timely and satisfactory responses to valid questions under the Q&A section: answer all valid questions under the Q&A section timely (roughly within a week) and satisfactorily. Responses to reviews are welcome too.
+
+   Refer the [extension manifest](../develop/manifest.md) on how to add policies to your offering.
 
 2. Update your publisher profile
 

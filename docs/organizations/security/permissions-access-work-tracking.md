@@ -249,9 +249,9 @@ The following table summarizes a subset of the default permissions assigned to t
 
 ## Stakeholder access
 
-Stakeholder access supports business owners and analysts and other team members who don't contribute to code, build, and test activities. They contribute by adding ideas to the backlog, adding context and information to work items, and reviewing status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. To learn more about stakeholder access, see [Work as a stakeholder](get-started-stakeholder.md). 
+Stakeholder access supports business owners and analysts and other team members who don't contribute to code, build, and test activities. They contribute by adding ideas to the backlog, adding context and information to work items, and reviewing status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. To learn more about Stakeholder access, see [Work as a stakeholder](get-started-stakeholder.md). 
 
-For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://azure.microsoft.com/services/devops/compare-features/).
+For a comparison chart of Stakeholder versus basic access, see the [Feature Matrix](https://azure.microsoft.com/services/devops/compare-features/).
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
 - **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
