@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 05/09/2019
+ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
 # Cloud Solution Providers: Buy Azure DevOps
@@ -29,12 +29,12 @@ When your customer gains access to the CSP-based Azure subscription, they can [s
 
 ## Change billing to CSP Azure subscription
 
-### CSP action
+### CSP steps
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home) as CSP.
-2. Grant your selected user Contributor access to the CSP Azure subscription.
+2. Assign your selected user Contributor access to the CSP Azure subscription.
 
-### Customer action
+### Customer steps
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../../_img/icons/gear-icon.png) **Organization settings**.
