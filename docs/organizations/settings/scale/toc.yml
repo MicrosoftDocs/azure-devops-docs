@@ -7,37 +7,35 @@
 - name: Quickstarts
   items:
   - name: Define area paths & assign to a team 
-    href: ../set-area-paths.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../set-area-paths.md
   - name: Define iteration paths (sprints) & configure team iterations 
-    href: ../set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../set-iteration-paths-sprints.md
   - name: Add a team
-    href: ../add-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../add-teams.md
   - name: Add a team administrator
-    href: ../add-team-administrator.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../add-team-administrator.md
   - name: Add users to a project or team 
-    href: ../../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../../security/add-users-team-project.md
 - name: Tutorials
   items:
   - name: Portfolio management
-    href: ../../../boards/plans/portfolio-management.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../../../boards/plans/portfolio-management.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Configure a hierarchy of teams
-    href: ../../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: "Area & iteration paths"
-    href: ../about-areas-iterations.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../about-areas-iterations.md
 - name: How-to Guides
   items:    
   - name: Configure team tools
-    href: ../manage-teams.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json  
+    href: ../manage-teams.md
   - name: Select backlog levels
-    href: ../select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../select-backlog-navigation-levels.md
   - name: Show bugs on backlogs & boards
-    href: ../show-bugs-on-backlog.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../show-bugs-on-backlog.md
   - name: Set working days
-    href: ../set-working-days.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
-  - name: Manage team notifications
-    href: ../../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../set-working-days.md
   - name: Set team favorites
-    href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/settings/scale/toc.json&bc=/azure/devops/organizations/settings/scale/breadcrumb/toc.json
+    href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 

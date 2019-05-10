@@ -1,7 +1,7 @@
 ---
-title: Buy and manage Azure DevOps resources for Cloud Solution Providers
+title: Buy Azure DevOps for Cloud Solution Providers
 titleSuffix: Azure DevOps Services
-description: Cloud Solution Provider (CSP) partners can purchase and manage resources in Azure DevOps for customers
+description: Cloud Solution Provider (CSP) partners can purchase Azure DevOps for customers
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
@@ -9,56 +9,45 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2019
+ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
-# Cloud Solution Providers: Buy Azure DevOps resources for your customers
+# Cloud Solution Providers: Buy Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../../_shared/version-vsts-only.md)]
 
-Partners in the Cloud Solution Provider (CSP) program can purchase [Azure DevOps resources](https://visualstudio.microsoft.com/team-services/pricing) for
-your customers. This purchase includes users (who get Basic features), Test Manager, Azure Artifacts, Private Pipelines, and
-Hosted Pipelines.
-
->[!Note]
->[Azure DevOps Services was previously called Visual Studio Team Services or VSTS](../../../user-guide/what-is-azure-devops.md#vsts).
+Partners in the Cloud Solution Provider (CSP) program can enable their customers to [pay for Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) by using a CSP-based Azure subscription.
 
 ## Prerequisites
 
-Your customer must complete the following tasks to set up billing. This customer must have already created an organization by using a Microsoft account identity. In other words, not an identity in their Azure Active Directory.
+To enable your customer to purchase Azure DevOps by using a CSP-based Azure subscription, confirm the following statements are true:
 
-1. [Change their organization to be backed by their Azure Active Directory](../../accounts/access-with-azure-ad.md).
-2. [...](../change-azure-subscription.md), if they had previously set up billing.
+•	The customer has [Project Collection Administrator (PCA) or organization Owner permissions](../../accounts/faq-add-delete-users.md)
+•	The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription 
 
-Make sure your identity hasn't been added into the customer's Azure Active Directory. If it has, you must remove the identity before you go through the purchasing steps for your customer.
+When your customer gains access to the CSP-based Azure subscription, they can [set up billing](../set-up-billing-for-your-organization-vs.md) or [change billing](../change-azure-subscription.md) for their Azure DevOps organization and further charges are billed to the CSP subscription.
 
-## Buy resources for customers
+## Change billing to CSP Azure subscription
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-VSTS/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+### CSP steps
 
->[!Note]
->Azure DevOps Services was previously called Visual Studio Team Services (VSTS).
+1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home) as CSP.
+2. Assign your selected user Contributor access to the CSP Azure subscription.
 
-1. Sign in to the [Partner Center](https://partnercenter.microsoft.com).
-2. Select the customer you're purchasing for.
-3. Choose **classic deployment model**.
-4. Choose **Visual Studio Marketplace**.
-5. Make sure you're in the **Azure DevOps** tab
+### Customer steps
 
-   ![Visual Studio Marketplace, Azure DevOps](../_img/_shared/extensions-marketplace.png)
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../../_img/icons/gear-icon.png) **Organization settings**.
 
-6. Search for and choose **Azure DevOps Services Users**.
+   ![Open Organization settings](../../../_shared/_img/settings/open-admin-settings-vert.png)
 
-   ![Marketplace, Azure DevOps Services Users](../_img/buy-more-basic-access/marketplace-choose-get.png)
+3. Select **Billing**.
 
-7. Select **Get** and move through the purchase process.
-    
-    a. Choose the organization that needs more users.
+   ![Select Billing from Organization settings](../_img/_shared/select-billing-organization-settings.png)
+4. Select **Change billing**.
 
-    b. Choose the Azure subscription to bill for the purchase.
-    
-    c. Enter the number of users that your customer needs.
-    
-    d. Review the order and complete it.
+   ![Change billing button](../_img/_shared/select-change-billing.png)
 
-You can buy other items the same way. After choosing **Visual Studio Marketplace**, go to the **Azure DevOps** tab, search for **Test Manager**, **Azure Artifacts**, **Hosted Pipelines**, and so on.
+5. Select your CSP Azure subscription that you want to be billed with, and then select **Save**.
+
+
