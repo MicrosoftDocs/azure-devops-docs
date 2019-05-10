@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2018'
 
 ::: moniker range="tfs-2018"
 
-#### Azure Repos | TFS 2018
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 ::: moniker-end
 
