@@ -208,7 +208,7 @@ With test features, you gain access to the following features:
 - Criteria-based test selection with query-based test suites
 - Excel-like interface with the grid for easy creation of test cases  
 - Reusable test steps and test data with shared steps and shared parameters
-- Sharable test plans, test suites, and test cases for reviewing with stakeholders  
+- Sharable test plans, test suites, and test cases for reviewing with Stakeholders  
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity
 

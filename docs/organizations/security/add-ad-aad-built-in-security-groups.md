@@ -46,7 +46,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 0. Open **Security** and under the **Groups** section, choose one of the following:
     - To add users who require read-only access to the project, choose **Readers**.
-    - To add users who need to contribute fully to the project or who have been granted stakeholder access, choose **Contributors**.
+    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
     - For users who need to administrate the project, choose **Project Administrators**.
 
 0. Next, choose the **Members** tab.
@@ -82,7 +82,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 0. Open **Security** and under the **Groups** section, choose one of the following:
     - To add users who require read-only access to the project, choose **Readers**.
-    - To add users who need to contribute fully to the project or who have been granted stakeholder access, choose **Contributors**.
+    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
     - For users who need to administrate the project, choose **Project Administrators**. 
 
 0. Next, choose the **Members** tab.

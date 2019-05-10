@@ -80,7 +80,7 @@ Access levels control which features are available to users. Permissions control
 
 ## Related articles
 
-* [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
+* [Change number of paid extension users](../billing/buy-basic-access-add-users.md)
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
 * [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
