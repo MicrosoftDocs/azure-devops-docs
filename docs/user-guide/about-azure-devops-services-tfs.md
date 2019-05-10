@@ -136,7 +136,7 @@ As users are added and removed in AD, they also gain and lose access to Azure De
 
 ## Manage user access
 
-In both Azure DevOps Services and Azure DevOps Server, you manage access to features by assigning users to an [access level](../organizations/security/access-levels.md). All users must be assigned to a single access level. In both the cloud and on-premises offerings, you can give free access to work item features to an unlimited number of stakeholders. Also, an unlimited number of Visual Studio subscribers can have access to all Basic features at no additional charge. You pay only for other users who need access.
+In both Azure DevOps Services and Azure DevOps Server, you manage access to features by assigning users to an [access level](../organizations/security/access-levels.md). All users must be assigned to a single access level. In both the cloud and on-premises offerings, you can give free access to work item features to an unlimited number of Stakeholders. Also, an unlimited number of Visual Studio subscribers can have access to all Basic features at no additional charge. You pay only for other users who need access.
 
 In Azure DevOps Services, you must [assign an access level](../organizations/accounts/add-organization-users.md)
 to each user in your organization. Azure DevOps Services validates Visual Studio subscribers as they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions.
