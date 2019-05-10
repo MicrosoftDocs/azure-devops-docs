@@ -13,7 +13,7 @@
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage personal notifications
     href: howto-manage-personal-notifications.md
   - name: Manage team and group notifications
@@ -55,7 +55,7 @@
   - name: Events
     href: oob-supported-event-types.md
   - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: FAQs 
     href: faq-notifications.md 
 
