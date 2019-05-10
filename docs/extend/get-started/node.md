@@ -263,6 +263,24 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 3. Navigate to the Code area and then to the hub contributed by your extension (**My Hub**):
 
    ![My hub](_img/my-hub.png)
+   
+## Debugging your extension
+
+In order to debug the extension using Visual Studio or Browser Developer Tools and speed up the development without re-deploying extension each time you change source code, you need change manifest adding `baseUri` property:
+```json
+{
+	...
+	"baseUri": "https://localhost:44300",
+	...
+}
+```		
+
+This tells Azure DevOps Services to load the extension from your local web server instance (e.g. IISExpress in Visual Studio).
+After changing manifest you need to deploy and install this debugging extension only once.
+
+    >[!NOTE]
+    >You have to run local web server in SSL mode, because Azure DevOps Services demands that web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
+
 
 ## Next steps
 
