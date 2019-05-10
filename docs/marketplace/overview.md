@@ -17,7 +17,7 @@ monikerRange: '>= azure-devops-2019'
 In the Visual Studio Marketplace you can do the following:
 
 - Discover and install extensions for Azure DevOps, Visual Studio and Visual Studio Code.
-- Purchase subscriptions for Visual Studio
+- Purchase Visual Studio subscriptions
 
 ![Extensions Marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
 
