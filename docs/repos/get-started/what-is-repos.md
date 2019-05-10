@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.date: 09/19/2018
 ms.topic: overview
 layout: LandingPage

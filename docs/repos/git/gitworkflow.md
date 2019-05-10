@@ -6,7 +6,7 @@ ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Azure Repos Git tutorial
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 

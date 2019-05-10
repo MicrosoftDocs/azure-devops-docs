@@ -7,7 +7,7 @@ ms.topic: article
 ms.technology: devops-whitepapers
 ms.date: 03/08/2018
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ---

@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 11/05/2018
 monikerRange: '>= tfs-2015'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Authentication overview
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 Update 3
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 Update 3
 
 Choose a method to securely login and access the code in your Azure Repos/TFS Git repo.
 Use these credentials with Git on the command line or from any Git client that supports HTTPS or SSH authentication.

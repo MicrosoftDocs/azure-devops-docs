@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: quickstart
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 
 # Import a Git repo
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
 
