@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.prod: devops
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 monikerRange: 'azure-devops'
 ms.date: 09/10/2018  

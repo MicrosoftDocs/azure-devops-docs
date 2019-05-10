@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Set branch permissions
 
-#### Azure Repos | TFS 2018 | TFS 2017 Update 1
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
 
 ## Overview
 

@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Clone an existing Git repo
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Create a complete local copy of an existing Git repo by cloning it. 
 Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the existing repo you cloned.

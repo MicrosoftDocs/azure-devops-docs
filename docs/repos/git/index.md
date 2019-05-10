@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: jillfra
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: overview
 layout: LandingPage
 ms.date: 09/10/2018
