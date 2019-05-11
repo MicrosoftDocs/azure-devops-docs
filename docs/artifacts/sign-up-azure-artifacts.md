@@ -92,3 +92,7 @@ A: Currently, the following get counted towards your storage total:
 * All symbols
 
 Pipeline Artifacts, Build Artifacts, and Pipeline Caching are included in Azure Pipelines and do not count towards your storage total in Azure Artifacts as of today. 
+
+### Why do I see 0GB of storage, even though I am storing artifacts?
+
+A: Currently, the billing page only shows integers of storage (0GB, 1GB, 2GB, etc.). It is likely that even though you have artifacts stored, you haven't gotten to 1GB yet, which is our lowest granularity right now. In the next version of Artifacts billing, we are looking to add decimals (0.2GB, 9.8GB, etc.). 
