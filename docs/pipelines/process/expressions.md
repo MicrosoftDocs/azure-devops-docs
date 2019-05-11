@@ -130,7 +130,7 @@ You can create a counter that is automatically incremented by one in each execut
 variables:
   major: 1
   # define b as a counter with the prefix as variable a, and seed as 100.
-  minor: $[counter(variables[`major`], 100)]
+  minor: $[counter(variables['major'], 100)]
 
 steps:
     - bash: echo $(minor)
