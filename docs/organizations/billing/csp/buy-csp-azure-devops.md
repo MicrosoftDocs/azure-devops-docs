@@ -22,8 +22,8 @@ Partners in the Cloud Solution Provider (CSP) program can enable their customers
 
 To enable your customer to purchase Azure DevOps by using a CSP-based Azure subscription, confirm the following statements are true:
 
-•	The customer has [Project Collection Administrator (PCA) or organization Owner permissions](../../accounts/faq-add-delete-users.md)
-•	The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription 
+- The customer has [Project Collection Administrator (PCA) or organization Owner permissions](../../accounts/faq-add-delete-users.md)
+- The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription
 
 When your customer gains access to the CSP-based Azure subscription, they can [set up billing](../set-up-billing-for-your-organization-vs.md) or [change billing](../change-azure-subscription.md) for their Azure DevOps organization and further charges are billed to the CSP subscription.
 

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -50,7 +50,7 @@ To continue, you'll need at least Basic access and organization owner permission
 
    ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. In the Policy tab, review your application connection settings. Change these settings, based on your security policies.
+3. In the Policies tab, review your application connection settings. Change these settings, based on your security policies.
 
    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/application-connection-policy-settings.png)
 

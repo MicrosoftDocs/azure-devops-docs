@@ -68,23 +68,6 @@ Each organization gets Azure Artifacts for free, up until they hit 2GB of storag
 
 ## FAQs
 
-### Q: How long does it take for deleted artifacts to affect the amount of used storage?
-
-A: Deletion of artifacts doesn't register immediately. It can take up to 24 hours for the usage level to be updated. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts, and then reduce the level once the storage metrics are updated.
-
-Usage is updated once per day, so when you delete Artifacts, it may not reflect immediately.
-For more information, see [Delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md).
-
-### Q: How can I control how long artifacts are stored?
-
-A: Azure Artifacts retention is controlled by feed retention policy settings. Symbols also contribute to Azure Artifacts storage usage. Symbols retention is controlled by build retention policy.
-
-For more information on how to set the feed retention policy, see how to [automatically delete old package versions with retention policies](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
-
-### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
-
-A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, you’re charged under the new storage model.
-
 ### Q: Which artifacts count towards my storage total
 
 A: Currently, the following get counted towards your storage total:
@@ -92,3 +75,27 @@ A: Currently, the following get counted towards your storage total:
 * All symbols
 
 Pipeline Artifacts, Build Artifacts, and Pipeline Caching are included in Azure Pipelines and do not count towards your storage total in Azure Artifacts as of today. 
+
+### Q: Why do I see 0GB of storage, even though I am storing artifacts?
+
+A: Currently, the billing page only shows integers of storage (0GB, 1GB, 2GB, etc.). It is likely that even though you have artifacts stored, you haven't gotten to 1GB yet, which is our lowest granularity right now.
+
+### Q: How can I control how long artifacts are stored?
+
+A: Azure Artifacts retention is controlled by feed retention policy settings. Symbols also contribute to Azure Artifacts storage usage. Symbols retention is controlled by build retention policy.
+
+For more information on how to set the feed retention policy, see how to [automatically delete old package versions with retention policies](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
+
+### Q: How long does it take for deleted artifacts to affect the amount of used storage?
+
+A: Deletion of artifacts doesn't register immediately. It can take up to 24 hours for the usage level to be updated. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts, and then reduce the level once the storage metrics are updated.
+
+Usage is updated once per day, so when you delete Artifacts, it may not reflect immediately.
+For more information, see [Delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md).
+
+### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
+
+A: Customers before May 6, 2019 won’t be charged for Artifacts storage until May 6, 2020. These customers can opt in to the new storage model by setting a paid limit above the amount of storage they are currently using. Then, starting on May 6, 2020, you’re charged under the new storage model.
+
+
+
