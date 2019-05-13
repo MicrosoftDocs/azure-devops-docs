@@ -14,9 +14,6 @@ monikerRange: 'azure-devops'
 
 # Publish and then download a Universal Package
 
-> [!NOTE]
-> Universal Packages are currently in public preview.
-
 Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest). 
 
 This quickstart shows you how to publish your first Universal Package by using the CLI, and how to download it by using the CLI. To see your package, you can go to your feed in Azure Artifacts.
@@ -123,7 +120,7 @@ az artifacts universal publish --organization https://fabrikam.visualstudio.com 
 
 ## View the package in your feed
 
-To see the package that you just published, go to the organization that you specified in the publish command, select any project, and then select the **Packages** page under the **Build & Release** page group. Or, if you've enabled the [new navigation preview](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/), just select **Packages** on the left side.
+To see the package that you just published, go to the organization that you specified in the publish command, select any project, and then select the **Artifacts** icon on the left side naviation.
 
 > [!div class="mx-imgBorder"] 
 > ![Universal Package listing in a sample feed](_img/universal-in-feed.png)
