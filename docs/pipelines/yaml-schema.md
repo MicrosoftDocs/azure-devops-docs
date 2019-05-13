@@ -934,7 +934,7 @@ for authorization.
 
 A trigger specifies what branches will cause a continuous integration build to
 run. If left unspecified, pushes to every branch will trigger a build.
-Learn more about [triggers](build/triggers.md?tabs=yaml#continuous-integration-ci)
+Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers)
 and how to specify them.
 
 # [Schema](#tab/schema)
@@ -1025,7 +1025,7 @@ trigger:
 
 A pull request trigger specifies what branches will cause a pull request build to
 run. If left unspecified, pull requests to every branch will trigger a build.
-Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pull-request-validation)
+Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pr-triggers)
 and how to specify them.
 
 ::: moniker range="azure-devops"
