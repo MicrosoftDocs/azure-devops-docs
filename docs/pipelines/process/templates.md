@@ -213,6 +213,10 @@ jobs:
     vmImage: 'vs2017-win2016'
 ```
 
+For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
+For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
+The project must be in the same organization; cross-organization references are not supported.
+
 Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used for the duration of the pipeline.
 Only the template files are used.
