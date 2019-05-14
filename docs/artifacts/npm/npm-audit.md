@@ -38,7 +38,7 @@ steps:
     customCommand: 'audit --registry=https://registry.npmjs.org/'
 ```
 
-# [Designer](#tab/designer)
+# [Classic](#tab/classic)
 
 Adding the **npm** task and select _custom_ as the Command:
 

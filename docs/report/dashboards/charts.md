@@ -106,7 +106,9 @@ To learn more about default groups, see [About permissions and groups](../../org
 	::: moniker range="<= tfs-2018"  
 	<img src="_img/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" />  
 	::: moniker-end  
-	If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). You can group by any field except date-time and free-form text fields. For example: 
+	If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregration** options depend on the fields used in the query or those selected from the **Column Options**.  
+
+	You can group by any field except date-time and free-form text fields. For example: 
 	- To group by work assignments, include the **Assigned To** in the query or column options   
 	- To group by sprints or iterations, include the **Iteration Path** in the query or column options    
 	- To group by team, include the **Area Path** or **Node Name** in the query or column options  
