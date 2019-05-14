@@ -9,12 +9,15 @@ ms.manager: jillfra
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel
-ms.date: 11/01/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2013'
 ---
 
 
 # Visual Studio Team Explorer Everywhere for Eclipse (Azure DevOps Services and TFS)
+
+> [!NOTE]
+> The Team Explorer Everywhere plugin works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
 Visual Studio Team Explorer Everywhere (TEE) is a plug-in for [Eclipse](https://www.eclipse.org/) that enables
 you to work with Team Foundation Server (TFS) and Azure DevOps using both Team Foundation Version Control (TFVC) 
@@ -23,6 +26,7 @@ and Git version control systems.
 For information on connecting to an Azure DevOps Services Git repo from Eclipse with TEE, read [Share your code with Eclipse and Azure DevOps Services Git](/azure/devops/repos/git/share-your-code-in-git-eclipse).
 
 ## Eclipse Update Site for Latest Release
+
 The latest release of [TEE](https://marketplace.eclipse.org/content/team-explorer-everywhere) can always be installed in Eclipse using this update site URL:
 
 * **https://dl.microsoft.com/eclipse**
