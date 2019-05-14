@@ -1188,7 +1188,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Release environments</b></p>
-<p>[Define and clone release environments](../pipelines/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
+<p>[Define and clone release environments](../pipelines/process/stages.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
 
 
 <p><b>Artifacts</b></p>
