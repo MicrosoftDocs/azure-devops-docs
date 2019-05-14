@@ -9,7 +9,6 @@
 - name: Create a Power BI report
   href: create-quick-report.md
 - name: Tutorials
-
   items:
   - name: Create an Analytics view
     href: analytics-views-create.md?
@@ -21,6 +20,8 @@
     href: analytics-default-views.md
   - name: Filters applied to historical data
     href: analytics-historical-filtering.md
+  - name: Performance & latency
+    href: performance-latency.md
 - name: How-to Guides
   items:
   - name: Connect using Data Connector 

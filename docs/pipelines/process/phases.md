@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: vijayma
 author: vijayma
-ms.date: 04/29/2019
+ms.date: 05/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -632,6 +632,11 @@ jobs:
         Location: Europe
         Browser: Chrome
 ```
+
+> [!NOTE]
+> Matrix configuration names (like `US_IE` above) must contain only basic Latin alphabet letters (A-Z, a-z), numbers, and underscores (`_`).
+> They must start with a letter.
+> Also, they must be 100 characters or less.
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"

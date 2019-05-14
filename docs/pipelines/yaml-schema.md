@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/06/2019
+ms.date: 05/14/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -363,6 +363,11 @@ For each `string1` in the matrix, a copy of the job will be generated. `string1`
 is the copy's name and will be appended to the name of the job. For each
 `string2`, a variable called `string2` with the value `string3` will be available 
 to the job.
+
+> [!NOTE]
+> Matrix configuration names must contain only basic Latin alphabet letters (A-Z, a-z), numbers, and underscores (`_`).
+> They must start with a letter.
+> Also, they must be 100 characters or less.
 
 # [Example](#tab/example)
 
