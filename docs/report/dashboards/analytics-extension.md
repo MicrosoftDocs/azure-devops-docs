@@ -56,37 +56,30 @@ The Analytics extension is shipped within the on-premises installer. Installing 
 
 	![Open Collection>Admin settings>Extensions](_img/install-analytics/open-collection-admin-extensions.png) 
 
-2. Choose <strong>Browse Marketplace</strong>. Or, if your server is disconnected from the Internet, choose <strong>Browse local extensions</strong>. ([How do I know that I'm disconnected from the Internet?](#disconnected)). 
+2. Choose <strong>Browse local extensions</strong>.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Browse marketplace](_img/install-analytics/browse-marketplace.png)   
+	> ![Browse local marketplace](_img/install-analytics/browse-marketplace.png)   
 
 	> [!NOTE]    
 	> Installing the extension from the local marketplace is identical to installing from the hosted marketplace. The only difference is the hosted marketplace shows extension ratings and user comments.
 
-3. The Marketplace opens in a new browser tab. Choose the Analytics extension card.  
+3. The local Marketplace opens in a new browser tab. Choose the Analytics extension card.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics extension card](_img/install-analytics/analytics-extension-card.png)   
+	> ![Analytics extension card](_img/install-analytics/local-marketplace.png)   
 
-	If the Analytics card doesn't appear, then you can search for it.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Search for Analytics](_img/install-analytics/azure-devops-marketplace-search-analytics.png)  
-
-	Or, copy the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) link into your web browser. 
-
-4. Choose <strong>Get it free</strong> to be redirected to the web portal and install for the selected collection.  
+4. Choose <strong>Get it free</strong>. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Get it free](_img/install-analytics/choose-get-it-free.png)   
 
-4. Verify the selected collection and then choose <strong>Install</strong>.  
+5. Select the project collection and then choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Get it free](_img/install-analytics/install-on-collection.png)   
+	> ![Select the project collection](_img/install-analytics/select-collection.png) 
 
-5. Upon completion of install, you'll see an image similar to the following. Choose <strong>Proceed to collection</strong> to return to the web portal for your collection.  
+6. Upon completion of install, you'll see an image similar to the following. Choose <strong>Proceed to collection</strong> to return to the web portal for your collection.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Get it free](_img/install-analytics/success-install.png)   
@@ -96,6 +89,8 @@ The Analytics extension is shipped within the on-premises installer. Installing 
 <a name="disconnected"></a>
 
 ## How to determine if your server is disconnected?
+
+If you're server is disconnected from the Internet, you must install Analytics from the local marketplace. 
 
 You can determine if your Azure DevOps Server is in a disconnected state by checking to see if the connected icon and server name appear at the top when browsing the hosted marketplace. 
 
@@ -136,4 +131,19 @@ To resolve this issue, you can install the extension from a machine that hosts t
 - [Developing extensions](http://aka.ms/vsoextensions) 
 - [Publishing extensions](http://aka.ms/vsmarketplace-publish)
 
+<!---
 
+	If the Analytics card doesn't appear, then you can search for it.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Search for Analytics](_img/install-analytics/azure-devops-marketplace-search-analytics.png)  
+
+	Or, copy the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) link into your web browser. 
+
+
+4. Verify the selected collection and then choose <strong>Install</strong>.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Get it free](_img/install-analytics/install-on-collection.png)   
+
+-->
