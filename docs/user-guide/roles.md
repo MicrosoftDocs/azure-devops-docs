@@ -10,7 +10,7 @@ ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -34,7 +34,7 @@ Developers use Visual Studio or other [tools](tools.md) to develop their applica
 
 - To get started with using Git, see one of these resources: 
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
-	- [Share your code in Git by using Eclipses](../repos/git/share-your-code-in-git-eclipse.md)
+	- [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 	- [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
 	- [Share your code in Git by using IntelliJ](/../java/download-intellij-plug-in.md)
 	- [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
