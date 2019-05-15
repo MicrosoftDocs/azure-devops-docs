@@ -284,7 +284,7 @@ If your TFS deployment is integrated with a SharePoint product or SQL Server Rep
 
 ## Try this next 
 
-Once you've created a team, you'll want to configure your Agile tools to support how your team works. Also, consider adding one or more users as team administrators. Team admins have the necessary permissions to add team members, add a picture to the team profile , and configure and manage all team features.  
+Once you've created a team, you'll want to configure your Agile tools to support how your team works. Also, consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members, add a picture to the team profile, and configure and manage all team features.  
 
 > [!div class="nextstepaction"]
 > [Add team administrator](add-team-administrator.md)

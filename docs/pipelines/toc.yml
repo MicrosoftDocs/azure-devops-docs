@@ -271,8 +271,6 @@
     href: policies/permissions.md
   - name: Pipelines (licensing)
     href: licensing/concurrent-pipelines-tfs.md
-  - name: Predefined variables
-    href: build/variables.md
   - name: Release pipelines (classic)
     items:
     - name: Release pipelines
@@ -341,6 +339,8 @@
     href: library/variable-groups.md
   - name: Variables
     href: process/variables.md
+  - name: Variables, predefined
+    href: build/variables.md
 
 - name: Troubleshooting
   items:

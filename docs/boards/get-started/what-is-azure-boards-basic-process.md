@@ -93,7 +93,7 @@ Add epics to track significant features or requirements. Use issues to track use
 
 If you use Azure Boards connected with GitHub, you can also do the following tasks:
 
-- From GitHub, use #AB to link GitHub commits and pull requests to your issues and tasks
+- From GitHub, use AB# to link GitHub commits and pull requests to your issues and tasks
 - From Azure Boards issues and tasks, link to GitHub commits and pull requests.
 
 To learn more, see [GitHub & Azure Boards](../github/index.md).  
