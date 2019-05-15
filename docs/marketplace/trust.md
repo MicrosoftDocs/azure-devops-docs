@@ -20,7 +20,7 @@ The Marketplace provides you with the following resources to make an informed de
 | Activity | Implication |
 |:---------|:------------|
 | Look for the Top Publisher badge <img src="../extend/publish/_img/top-publisher.png" alt="Top Publisher badge" width="25"/> | If present, it indicates that publisher has shown commitment to its customers and the Marketplace through exemplary policies, quality, reliability and support. Note: the Top Publisher program is currently only applicable to publishers of Azure DevOps offerings (extensions/integrations).|
-| Read the ratings and reviews | They tell you how others precieve the offering. |
+| Read the ratings and reviews | They tell you how others percieve the offering. |
 | Read the Q&A section | It may answer the questions you have and is a good mechanism to engage with the extension’s publisher(s) to have a meaningful dialogue to make yourself comfortable. You may also leverage it to understand/ask the development, testing and security practices the publisher follows. It will also give you a sense of the publisher's responsiveness. |
 | Read the privacy, license, and support policies | See if the publisher has provided them and if they meet your needs/concerns. |
 

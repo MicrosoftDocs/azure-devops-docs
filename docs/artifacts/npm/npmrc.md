@@ -82,7 +82,7 @@ You should have a project specific **_.npmrc_** containing only your feed's regi
 
 ### Windows
 
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_~/.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
+If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_%USERPROFILE%\\.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
 
 ```json
 "scripts": {

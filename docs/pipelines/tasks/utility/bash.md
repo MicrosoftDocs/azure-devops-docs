@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/07/2018
+ms.date: 05/15/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -49,11 +49,11 @@ The Bash task also has a shortcut syntax in YAML:
 <tr>
 <td>Env[ironment variables]</td>
 <td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
-```yaml
+<pre><code class="lang-yaml">
 - script: echo $MYSECRET
   env:
     MySecret: $(Foo)
-```
+</code></pre>
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
