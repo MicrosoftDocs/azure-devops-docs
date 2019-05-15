@@ -224,9 +224,10 @@ In this section you replace the steps in the starter pipeline with specific step
     # The | symbol is a continuation character, indicating a multi-line script.
     # A single-line script can immediately follows "- script:" without the |.
     - script: |
-        # antenv is the virtual environment name that App Service expects
-        python3.6 -m venv antenv
-        source antenv/bin/activate
+        # antenv3.6 is the virtual environment name that App Service expects with
+        # Python 3.6; use "antenv" for Python 3.7.
+        python3.6 -m venv antenv3.6
+        source antenv3.6/bin/activate
         pip3.6 install setuptools
         pip3.6 install -r requirements.txt
 
@@ -299,8 +300,8 @@ In this section you replace the steps in the starter pipeline with specific step
         architecture: 'x64'
 
     - script: |
-        python3.6 -m venv antenv
-        source antenv/bin/activate
+        python3.6 -m venv antenv3.6
+        source antenv3.6/bin/activate
         pip3.6 install setuptools
         pip3.6 install -r requirements.txt
 
