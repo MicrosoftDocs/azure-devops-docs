@@ -51,10 +51,10 @@ Once your publisher is verified, you need to set the [public flag](../develop/ma
 > **Important**: Once your publisher is verified, you will not be able to change its display name without contacting Microsoft.
 
 
-## Top Publisher <img src="_img/top-publisher.png" alt="Top Publisher badge" width="30"/>
+## Top Publisher 
 > The Top Publisher program is only available for publishers with one or more public Azure DevOps extensions or integrations. It is not applicable for Visual Studio IDE and Visual Studio Code extension publishers.
 
-The Top Publisher program recognizes publishers who have shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support. Once marked so, all of their public Azure DevOps offerings (extensions and integrations) will display the Top Publisher badge. This helps customers feel more confident in evaluating and acquiring their offerings.
+The Top Publisher program <img src="_img/top-publisher.png" alt="Top Publisher badge" width="25"/> recognizes publishers who have shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support. Once marked so, all of their public Azure DevOps offerings (extensions and integrations) will display the Top Publisher badge. This helps customers feel more confident in evaluating and acquiring their offerings.
 
 ### Requirements
 
@@ -82,7 +82,7 @@ The Top Publisher program recognizes publishers who have shown commitment to the
 
 * Sign in to http://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
 * Select the publisher and navigate to its **Top Publisher** tab. Note: you need to have one or more public Azure DevOps (Server/Service) extension or integration for the tab to appear.  
-* If you meet the requirements stated above and are the publisher's owner, you will see an option to apply for the program. On application, an email will sent to the Marketplace team to review your case. They will respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
+* If you meet part of the requirements stated above and are the publisher's owner, you will see an option to apply for the program. On application, an email will sent to the Marketplace team to review your case. They will respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
 
 > The team will likely look at additional parameters such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. <br> Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
 
