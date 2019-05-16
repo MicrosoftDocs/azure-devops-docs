@@ -340,7 +340,7 @@ You can use the macros described in the following table to filter your queries b
 </tbody> 
 </table>
  
-####Notes:
+#### Notes:
 1. The <strong>@CurrentIteration</strong> macro is supported for Azure Boards and TFS 2015 and later versions. 
 1. The <strong>@CurrentIteration +/- n</strong> macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions,  and only when run from the web portal. 
 1. The <strong>@Follows</strong> macro is supported for Azure Boards and TFS 2017 and later versions.
