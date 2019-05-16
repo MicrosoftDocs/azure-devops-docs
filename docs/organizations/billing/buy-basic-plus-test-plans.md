@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this article, learn how to pay for more users who need access to [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/), [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/), and [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/).  
+In this article learn how to pay for more users who need access to [Azure Repos](https://azure.microsoft.com/en-us/services/devops/repos/), [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/), and [Azure Test Plans](https://azure.microsoft.com/en-us/services/devops/test-plans/).  
 [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/) and [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/) subscribers have Basic + Test Plans included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time. 
 
 ## Prerequisites
@@ -47,11 +47,6 @@ Ensure the following is true:
 
    ![Select Confirm purchase to add more Basic users](_img/buy-more-basic-access/select-confirm-purchase.png)
 
-6. In **Organization settings**, select **Users**.
-
-The number of users to whom you can assign Basic + Test Plans or Test Manager appears on the right side of your screen.
-
-[NEED SCREENSHOT]
 
 <a name="transitioning-test-manager-to-basic-plus-test-plans"></a>
 

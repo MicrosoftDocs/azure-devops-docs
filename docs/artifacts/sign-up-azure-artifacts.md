@@ -37,7 +37,7 @@ See and manage what your overall storage use is for Azure Artifacts.
  
 2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**. 
  
-   ![Open Organization settings](../_img/open-admin-settings-vert.png) 
+   ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png) 
  
 3. Select **Billing**. 
  
@@ -70,7 +70,7 @@ Each organization gets Azure Artifacts for free, up until they hit 2GB of storag
 
 ## FAQs
 
-### Q: Which artifacts count towards my storage total
+### Q: Which artifacts count towards my storage total?
 
 A: Currently, the following get counted towards your storage total:
 * All npm, NuGet, Python, Maven, and universal packages (including those stored from upstream sources)
