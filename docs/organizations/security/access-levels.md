@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/22/2019
+ms.date: 05/16/2019
 ---
 
 
@@ -110,7 +110,7 @@ The following table indicates those features available for each supported access
 <tr>
 <td align="left"><strong>[Artifacts](../../artifacts/overview.md)</strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (previously referred to as package management)</td>
 <td> </td>
-<td> </td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
@@ -333,7 +333,7 @@ The following table indicates those features available for each supported access
 <tr>
 <td align="left"><strong>[Artifacts](../../artifacts/overview.md)</strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
 <td> </td>
-<td> </td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>

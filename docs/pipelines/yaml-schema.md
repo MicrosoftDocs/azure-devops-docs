@@ -9,7 +9,7 @@ ms.manager: jillfra
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: macoope
-ms.date: 05/14/2019
+ms.date: 05/16/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -560,6 +560,9 @@ variables:
 ---
 
 ## Template references
+
+> [!NOTE]
+> Be sure to see the full [template expression syntax](process/templates.md#template-expressions) (all forms of `${{ }}`).
 
 ::: moniker range="> azure-devops-2019"
 

@@ -65,10 +65,11 @@ The *free tier* is one parallel job. In addition, you get one free parallel job 
 
 ## Prerequisites
 
-Ensure the following is true for the user who's setting up billing for the first time:
+Ensure the following is true:
 
-* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
-* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
+* [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
+* You have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* You have [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
 
